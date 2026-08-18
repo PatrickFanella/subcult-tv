@@ -1,3 +1,4 @@
+import { inputClass } from '@/components/ui/TextInput';
 import { useState, type FormEvent } from 'react';
 import { subscribe } from '@/lib/api';
 
@@ -50,8 +51,7 @@ export default function NewsletterSignup() {
           onChange={(e) => setEmail(e.target.value)}
           required
           placeholder="you@signal.freq"
-          className="w-full min-w-0 flex-1 bg-void border border-fog text-chalk font-mono text-sm px-3 py-2
-                     focus:border-signal outline-none focus-visible:outline-2 focus-visible:outline-signal focus-visible:outline-offset-2 transition-colors duration-200"
+          className={`min-w-0 flex-1 ${inputClass}`}
         />
         <button
           type="submit"

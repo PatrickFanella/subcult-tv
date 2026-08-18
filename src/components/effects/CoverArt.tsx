@@ -33,7 +33,7 @@ function hexToRgb(hex: string): { r: number; g: number; b: number } {
         g: parseInt(result[2], 16),
         b: parseInt(result[3], 16),
       }
-    : { r: 255, g: 51, b: 51 };
+    : { r: 139, g: 91, b: 246 };
 }
 
 export default function CoverArt({ color, pattern, name, className = '' }: CoverArtProps) {

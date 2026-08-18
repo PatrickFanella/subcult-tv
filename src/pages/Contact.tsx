@@ -1,3 +1,4 @@
+import { inputClass } from '@/components/ui/TextInput';
 import { useState, type FormEvent } from 'react';
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
@@ -148,7 +149,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-soot border border-fog text-chalk font-mono text-sm px-4 py-2.5 focus:border-signal outline-none focus-visible:outline-2 focus-visible:outline-signal focus-visible:outline-offset-2 transition-colors duration-200"
+                    className={inputClass}
                     placeholder="your name"
                   />
                 </div>
@@ -166,7 +167,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-soot border border-fog text-chalk font-mono text-sm px-4 py-2.5 focus:border-signal outline-none focus-visible:outline-2 focus-visible:outline-signal focus-visible:outline-offset-2 transition-colors duration-200"
+                    className={inputClass}
                     placeholder="you@example.com"
                   />
                 </div>
@@ -183,7 +184,7 @@ export default function Contact() {
                     id="subject"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full bg-soot border border-fog text-chalk font-mono text-sm px-4 py-2.5 focus:border-signal outline-none focus-visible:outline-2 focus-visible:outline-signal focus-visible:outline-offset-2 transition-colors duration-200"
+                    className={inputClass}
                     placeholder="what's this about?"
                   />
                 </div>
@@ -201,7 +202,7 @@ export default function Contact() {
                     rows={6}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full bg-soot border border-fog text-chalk font-mono text-sm px-4 py-2.5 focus:border-signal outline-none focus-visible:outline-2 focus-visible:outline-signal focus-visible:outline-offset-2 transition-colors duration-200 resize-y"
+                    className={inputClass + ' resize-y'}
                     placeholder="your message..."
                   />
                 </div>

@@ -6,6 +6,7 @@ import {
   type APIContact,
   type PaginatedResponse,
 } from '@/lib/api';
+import { AdminHeader, AdminError, AdminPagination } from '@/components/admin/crud';
 
 export default function AdminContacts() {
   const [contactsPage, setContactsPage] = useState<PaginatedResponse<APIContact> | null>(null);
@@ -43,21 +44,15 @@ export default function AdminContacts() {
 
   return (
     <div>
-      <div className="mb-6">
-        <p className="font-mono text-xs text-dust mb-1">&gt; INCOMING SIGNALS</p>
-        <h1 className="text-2xl">Contact Submissions</h1>
-        {contactsPage && (
-          <p className="font-mono text-xs text-dust mt-1">
-            {contactsPage.total} total · page {contactsPage.page}/{contactsPage.total_pages}
-          </p>
-        )}
-      </div>
+      <AdminHeader overline="INCOMING SIGNALS" title="Contact Submissions" />
 
-      {error && (
-        <div className="mb-4 p-3 bg-ash border border-signal font-mono text-xs text-signal">
-          ERR: {error}
-        </div>
+      {contactsPage && (
+        <p className="font-mono text-xs text-dust mb-4">
+          {contactsPage.total} total · page {contactsPage.page}/{contactsPage.total_pages}
+        </p>
       )}
+
+      <AdminError error={error} />
 
       <div className="space-y-3">
         {contactsPage?.data.map((c) => (
@@ -115,30 +110,11 @@ export default function AdminContacts() {
         )}
       </div>
 
-      {/* Pagination */}
-      {contactsPage && contactsPage.total_pages > 1 && (
-        <div className="flex justify-center gap-2 mt-6">
-          <button
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
-            disabled={page <= 1}
-            className="px-3 py-1 bg-ash border border-fog font-mono text-xs text-chalk
-                       hover:border-signal transition-colors duration-200 cursor-pointer disabled:opacity-30"
-          >
-            ← PREV
-          </button>
-          <span className="px-3 py-1 font-mono text-xs text-dust">
-            {page} / {contactsPage.total_pages}
-          </span>
-          <button
-            onClick={() => setPage((p) => Math.min(contactsPage.total_pages, p + 1))}
-            disabled={page >= contactsPage.total_pages}
-            className="px-3 py-1 bg-ash border border-fog font-mono text-xs text-chalk
-                       hover:border-signal transition-colors duration-200 cursor-pointer disabled:opacity-30"
-          >
-            NEXT →
-          </button>
-        </div>
-      )}
+      <AdminPagination
+        page={page}
+        totalPages={contactsPage?.total_pages ?? 1}
+        onChange={setPage}
+      />
     </div>
   );
 }

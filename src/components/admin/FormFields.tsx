@@ -1,7 +1,6 @@
 import { useId } from 'react';
-
-const inputCls =
-  'w-full bg-void border border-fog text-chalk font-mono text-sm px-3 py-2 focus:border-signal outline-none focus-visible:outline-2 focus-visible:outline-signal focus-visible:outline-offset-2 transition-colors duration-200';
+import { inputClass as inputCls } from '@/components/ui/TextInput';
+import { statusColors } from '@/lib/project-utils';
 
 export function Field({
   label,
@@ -78,13 +77,10 @@ export function Select({
 }
 
 export function StatusBadge({ status }: { status: string }) {
-  const colors: Record<string, string> = {
-    active: 'text-static',
-    incubating: 'text-flicker',
-    archived: 'text-dust',
-  };
   return (
-    <span className={`font-mono text-xs ${colors[status] || 'text-dust'}`}>
+    <span
+      className={`font-mono text-xs ${statusColors[status as keyof typeof statusColors] ?? 'text-dust'}`}
+    >
       {status.toUpperCase()}
     </span>
   );

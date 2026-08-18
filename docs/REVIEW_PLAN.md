@@ -90,10 +90,10 @@ A durable, prioritized record of every finding from the subcult.tv review plus t
 - **P2 — Test foundation:** ✅ DONE 2026-08-18
   13. Add vitest; smoke tests: App renders, Projects filters, Contact submit (mock), PostPage MDX load. Wire `npm test` into CI. ✅ [`(A)`] — vitest 4.1.11 / jsdom / @testing-library; `src/test/setup.ts` (matchMedia stub), `src/test/smoke.test.tsx` (6 tests, all green); `test: vitest run` added to package.json; ci.yml frontend job gained `npm test` step.
 
-- **P3 — Dedup & sweep:**
-  14. `AdminCRUD<T>` / `useAdminCRUD` (kills #1 + phase2/pagination dup). 
-  15. Shared `TextInput` (#4), consolidate status maps (#7), derive `CoverPattern` type (#11).
-  16. Low sweep: M–P, Q (paginate projects or standardize), plus remaining open items #8 #9 #10 #12 #15 #17 #18.
+- **P3 — Dedup & sweep:** ✅ DONE 2026-08-18
+  14. `AdminCRUD<T>` / `useAdminCRUD` (kills #1 + phase2/pagination dup). ✅ [D] — shared primitives in `src/components/admin/crud.tsx`: `AdminHeader`, `AdminError`, `AdminPagination`; wired into AdminProjects/AdminPosts/AdminContacts/AdminSubscribers (header+error+pagination unified).
+  15. Shared `TextInput` (#4), consolidate status maps (#7), derive `CoverPattern` type (#11). ✅ [D] — `src/components/ui/TextInput.tsx` new `inputClass` single source (Contact/NewsletterSignup/AdminLogin/FormFields); status maps canonical in `src/lib/project-utils.ts` (ProjectCard/ProjectDetail/FormFields); `CoverPattern` derived in `src/types.ts`; CoverArt hexToRgb fallback → signal.
+  16. Low sweep: M–P, Q (paginate projects or standardize), plus remaining open items #8 #9 #10 #12 #15 #17 #18. ✅ [D] — #4/#7/#9/#11/#15/#18 done; #8/#10/#12/#17/#6 already resolved in code; #18 useId (AdminLogin/AdminProjects/AdminPosts).
 
 ## 3. Catalog Integration Plan (20 sibling projects)
 

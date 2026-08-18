@@ -1,4 +1,4 @@
-import { useState, useEffect, type FormEvent } from 'react';
+import { useState, useEffect, useId, type FormEvent } from 'react';
 import {
   listProjects,
   createProject,
@@ -7,6 +7,7 @@ import {
   type APIProject,
 } from '@/lib/api';
 import { Field, Select, StatusBadge } from '@/components/admin/FormFields';
+import { AdminHeader, AdminError } from '@/components/admin/crud';
 
 type ProjectForm = Omit<APIProject, 'id' | 'stars' | 'last_updated' | 'created_at' | 'updated_at'>;
 
@@ -25,6 +26,7 @@ const emptyForm: ProjectForm = {
 
 export default function AdminProjects() {
   const [projects, setProjects] = useState<APIProject[]>([]);
+  const id = useId();
   const [editing, setEditing] = useState<APIProject | null>(null);
   const [showForm, setShowForm] = useState(false);
   const [form, setForm] = useState<ProjectForm>(emptyForm);
@@ -98,25 +100,21 @@ export default function AdminProjects() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <p className="font-mono text-xs text-dust mb-1">&gt; PROJECT REGISTRY</p>
-          <h1 className="text-2xl">Projects</h1>
-        </div>
-        <button
-          onClick={openNew}
-          className="px-4 py-2 bg-signal text-void font-mono text-sm font-bold tracking-wider
-                     hover:bg-signal-dim transition-colors duration-200 cursor-pointer"
-        >
-          + NEW PROJECT
-        </button>
-      </div>
+      <AdminHeader
+        overline="PROJECT REGISTRY"
+        title="Projects"
+        action={
+          <button
+            onClick={openNew}
+            className="px-4 py-2 bg-signal text-void font-mono text-sm font-bold tracking-wider
+                       hover:bg-signal-dim transition-colors duration-200 cursor-pointer"
+          >
+            + NEW PROJECT
+          </button>
+        }
+      />
 
-      {error && (
-        <div className="mb-4 p-3 bg-ash border border-signal font-mono text-xs text-signal">
-          ERR: {error}
-        </div>
-      )}
+      <AdminError error={error} />
 
       {/* ── Form Modal ──────────────────────────────────────── */}
       {showForm && (
@@ -229,12 +227,12 @@ export default function AdminProjects() {
               <div className="flex items-center gap-2 pt-6">
                 <input
                   type="checkbox"
-                  id="featured"
+                  id={`${id}-featured`}
                   checked={form.featured}
                   onChange={(e) => setForm({ ...form, featured: e.target.checked })}
                   className="accent-signal"
                 />
-                <label htmlFor="featured" className="font-mono text-sm text-chalk">
+                <label htmlFor={`${id}-featured`} className="font-mono text-sm text-chalk">
                   Featured
                 </label>
               </div>

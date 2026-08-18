@@ -1,6 +1,7 @@
-import { useState, useEffect, type FormEvent } from 'react';
+import { useState, useEffect, useId, type FormEvent } from 'react';
 import { listPosts, createPost, updatePost, deletePost, type APIPost } from '@/lib/api';
 import { Field } from '@/components/admin/FormFields';
+import { AdminHeader, AdminError } from '@/components/admin/crud';
 
 type PostForm = Omit<APIPost, 'id' | 'created_at' | 'updated_at'>;
 
@@ -16,6 +17,7 @@ const emptyForm: PostForm = {
 
 export default function AdminPosts() {
   const [posts, setPosts] = useState<APIPost[]>([]);
+  const id = useId();
   const [editing, setEditing] = useState<APIPost | null>(null);
   const [showForm, setShowForm] = useState(false);
   const [form, setForm] = useState<PostForm>(emptyForm);
@@ -82,25 +84,21 @@ export default function AdminPosts() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <p className="font-mono text-xs text-dust mb-1">&gt; TRANSMISSION LOG</p>
-          <h1 className="text-2xl">Posts</h1>
-        </div>
-        <button
-          onClick={openNew}
-          className="px-4 py-2 bg-signal text-void font-mono text-sm font-bold tracking-wider
-                     hover:bg-signal-dim transition-colors duration-200 cursor-pointer"
-        >
-          + NEW POST
-        </button>
-      </div>
+      <AdminHeader
+        overline="TRANSMISSION LOG"
+        title="Posts"
+        action={
+          <button
+            onClick={openNew}
+            className="px-4 py-2 bg-signal text-void font-mono text-sm font-bold tracking-wider
+                       hover:bg-signal-dim transition-colors duration-200 cursor-pointer"
+          >
+            + NEW POST
+          </button>
+        }
+      />
 
-      {error && (
-        <div className="mb-4 p-3 bg-ash border border-signal font-mono text-xs text-signal">
-          ERR: {error}
-        </div>
-      )}
+      <AdminError error={error} />
 
       {/* ── Form ────────────────────────────────────────────── */}
       {showForm && (
@@ -164,12 +162,12 @@ export default function AdminPosts() {
             <div className="flex items-center gap-2">
               <input
                 type="checkbox"
-                id="published"
+                id={`${id}-published`}
                 checked={form.published}
                 onChange={(e) => setForm({ ...form, published: e.target.checked })}
                 className="accent-signal"
               />
-              <label htmlFor="published" className="font-mono text-sm text-chalk">
+              <label htmlFor={`${id}-published`} className="font-mono text-sm text-chalk">
                 Published
               </label>
             </div>
