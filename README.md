@@ -143,14 +143,14 @@ All API routes are prefixed with `/api/v1`.
 | `GET`    | `/api/v1/posts/:slug`               | Get post by slug                     |
 | `POST`   | `/api/v1/contacts`                  | Submit contact form                  |
 | `POST`   | `/api/v1/newsletter/subscribe`      | Subscribe to newsletter              |
-| `GET`    | `/api/v1/newsletter/confirm/:token` | Confirm subscription                 |
-| `DELETE` | `/api/v1/newsletter/unsubscribe`    | Unsubscribe                          |
+| `POST`   | `/api/v1/newsletter/unsubscribe`    | Unsubscribe using a token            |
 
 ### Protected (requires `Authorization: Bearer <token>`)
 
 | Method   | Endpoint                         | Description                  |
 | -------- | -------------------------------- | ---------------------------- |
 | `POST`   | `/api/v1/auth/login`             | Login → returns JWT          |
+| `POST`   | `/api/v1/auth/logout`            | Revoke current user's tokens |
 | `GET`    | `/api/v1/auth/me`                | Current user info            |
 | `POST`   | `/api/v1/projects`               | Create project               |
 | `PUT`    | `/api/v1/projects/:id`           | Update project               |

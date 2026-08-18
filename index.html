@@ -51,6 +51,23 @@
       rel="stylesheet"
     />
 
+  <!-- Umami analytics (self-hosted, privacy-first). Injected only when configured:
+        copy .env.example → .env and set VITE_UMAMI_URL + VITE_UMAMI_WEBSITE_ID. -->
+    <script>
+      (function () {
+        var u = '%VITE_UMAMI_URL%';
+        var id = '%VITE_UMAMI_WEBSITE_ID%';
+        if (!id || id.indexOf('VITE_UMAMI_WEBSITE_ID') !== -1) return;
+        if (u.indexOf('VITE_UMAMI_URL') !== -1) u = '';
+        var s = document.createElement('script');
+        s.defer = true;
+        s.src = u + '/script.js';
+        s.setAttribute('data-website-id', id);
+        if (u) s.setAttribute('data-host-url', u);
+        document.head.appendChild(s);
+      })();
+    </script>
+
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>

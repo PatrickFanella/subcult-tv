@@ -1,192 +1,146 @@
 package handlers
-package handlers
 
 import (
 	"bytes"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}	return req	req.Header.Set("Content-Type", "application/json")	req := httptest.NewRequest(method, path, &buf)	}		}			t.Fatalf("failed to encode request body: %v", err)		if err := json.NewEncoder(&buf).Encode(body); err != nil {	if body != nil {	var buf bytes.Buffer	t.Helper()func newJSONRequest(t *testing.T, method, path string, body interface{}) *http.Request {// Helper to create a test request with JSON body.}	}		t.Errorf("expected body %s, got %s", expected, recorder.Body.String())	if recorder.Body.String() != expected {	expected := `{"status":"ok"}`	}		t.Errorf("expected status %d, got %d", http.StatusOK, recorder.Code)	if recorder.Code != http.StatusOK {	handler.ServeHTTP(recorder, req)	recorder := httptest.NewRecorder()	req := httptest.NewRequest(http.MethodGet, "/healthz", nil)	})		w.Write([]byte(`{"status":"ok"}`))		w.Header().Set("Content-Type", "application/json")	handler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {func TestHealthEndpoint(t *testing.T) {// This is a placeholder showing the testing pattern.// TestHealthEndpoint tests that a simple health check can be implemented.}	}		}			t.Errorf("totalPages(%d, %d) = %d, expected %d", tt.total, tt.perPage, result, tt.expected)		if result != tt.expected {		result := totalPages(tt.total, tt.perPage)	for _, tt := range tests {	}		{101, 20, 6},		{100, 20, 5},		{21, 20, 2},		{20, 20, 1},		{10, 20, 1},		{0, 20, 0},	}{		expected int		perPage  int		total    int64	tests := []struct {func TestTotalPages(t *testing.T) {// TestTotalPages tests the total pages calculation.}	}		})			}				t.Errorf("expected offset %d, got %d", tt.expectedOffset, offset)			if offset != tt.expectedOffset {			}				t.Errorf("expected perPage %d, got %d", tt.expectedPerPage, perPage)			if perPage != tt.expectedPerPage {			}				t.Errorf("expected page %d, got %d", tt.expectedPage, page)			if page != tt.expectedPage {			page, perPage, offset := pagination(req)			req := httptest.NewRequest(http.MethodGet, "/?"+tt.query, nil)		t.Run(tt.name, func(t *testing.T) {	for _, tt := range tests {	}		},			expectedOffset:  0,			expectedPerPage: 20, // exceeds 100, so uses default			expectedPage:    1,			query:           "per_page=500",			name:            "per_page capped at 100",		{		},			expectedOffset:  0,			expectedPerPage: 20,			expectedPage:    1,			query:           "page=-1",			name:            "invalid page defaults to 1",		{		},			expectedOffset:  20,			expectedPerPage: 10,			expectedPage:    3,			query:           "page=3&per_page=10",			name:            "page 3 with per_page 10",		{		},			expectedOffset:  0,			expectedPerPage: 50,			expectedPage:    1,			query:           "page=1&per_page=50",			name:            "custom per_page",		{		},			expectedOffset:  20,			expectedPerPage: 20,			expectedPage:    2,			query:           "page=2",			name:            "page 2",		{		},			expectedOffset:  0,			expectedPerPage: 20,			expectedPage:    1,			query:           "",			name:            "defaults",		{	}{		expectedOffset  int		expectedPerPage int		expectedPage    int		query           string		name            string	tests := []struct {func TestPagination(t *testing.T) {// TestPagination tests the pagination helper.}	}		t.Errorf("expected code %d, got %v", http.StatusBadRequest, result["code"])	if result["code"].(float64) != float64(http.StatusBadRequest) {	}		t.Errorf("expected error 'validation failed', got '%v'", result["error"])	if result["error"] != "validation failed" {	}		t.Fatalf("failed to decode response: %v", err)	if err := json.NewDecoder(recorder.Body).Decode(&result); err != nil {	var result map[string]interface{}	}		t.Errorf("expected status %d, got %d", http.StatusBadRequest, recorder.Code)	if recorder.Code != http.StatusBadRequest {	writeError(recorder, http.StatusBadRequest, "validation failed")	recorder := httptest.NewRecorder()func TestWriteError(t *testing.T) {// TestWriteError tests the error response helper.}	}		t.Errorf("expected message 'test', got '%s'", result["message"])	if result["message"] != "test" {	}		t.Fatalf("failed to decode response: %v", err)	if err := json.NewDecoder(recorder.Body).Decode(&result); err != nil {	var result map[string]string	}		t.Errorf("expected Content-Type application/json, got %s", contentType)	if contentType != "application/json" {	contentType := recorder.Header().Get("Content-Type")	}		t.Errorf("expected status %d, got %d", http.StatusOK, recorder.Code)	if recorder.Code != http.StatusOK {	writeJSON(recorder, http.StatusOK, data)	data := map[string]string{"message": "test"}	recorder := httptest.NewRecorder()func TestWriteJSON(t *testing.T) {// TestWriteJSON tests the JSON response helper.)	"testing"	"net/http/httptest"	"net/http"	"encoding/json"
+	"encoding/json"
+	"net/http"
+	"net/http/httptest"
+	"testing"
+)
+
+// Helper to create a test request with JSON body.
+func newJSONRequest(t *testing.T, method, path string, body interface{}) *http.Request {
+	t.Helper()
+	var buf bytes.Buffer
+	if body != nil {
+		if err := json.NewEncoder(&buf).Encode(body); err != nil {
+			t.Fatalf("failed to encode request body: %v", err)
+		}
+	}
+	req := httptest.NewRequest(method, path, &buf)
+	req.Header.Set("Content-Type", "application/json")
+	return req
+}
+
+// TestHealthEndpoint tests that a simple health check can be implemented.
+// This is a placeholder showing the testing pattern.
+func TestHealthEndpoint(t *testing.T) {
+	handler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "application/json")
+		w.Write([]byte(`{"status":"ok"}`))
+	})
+
+	req := httptest.NewRequest(http.MethodGet, "/healthz", nil)
+	recorder := httptest.NewRecorder()
+
+	handler.ServeHTTP(recorder, req)
+
+	if recorder.Code != http.StatusOK {
+		t.Errorf("expected status %d, got %d", http.StatusOK, recorder.Code)
+	}
+
+	expected := `{"status":"ok"}`
+	if recorder.Body.String() != expected {
+		t.Errorf("expected body %s, got %s", expected, recorder.Body.String())
+	}
+}
+
+// TestWriteJSON tests the JSON response helper.
+func TestWriteJSON(t *testing.T) {
+	data := map[string]string{"message": "test"}
+	recorder := httptest.NewRecorder()
+
+	writeJSON(recorder, http.StatusOK, data)
+
+	if recorder.Code != http.StatusOK {
+		t.Errorf("expected status %d, got %d", http.StatusOK, recorder.Code)
+	}
+	if contentType := recorder.Header().Get("Content-Type"); contentType != "application/json" {
+		t.Errorf("expected Content-Type application/json, got %s", contentType)
+	}
+	var result map[string]string
+	if err := json.NewDecoder(recorder.Body).Decode(&result); err != nil {
+		t.Fatalf("failed to decode response: %v", err)
+	}
+	if result["message"] != "test" {
+		t.Errorf("expected message 'test', got '%s'", result["message"])
+	}
+}
+
+// TestWriteError tests the error response helper.
+func TestWriteError(t *testing.T) {
+	recorder := httptest.NewRecorder()
+
+	writeError(recorder, http.StatusBadRequest, "validation failed")
+
+	if recorder.Code != http.StatusBadRequest {
+		t.Errorf("expected status %d, got %d", http.StatusBadRequest, recorder.Code)
+	}
+	var result map[string]interface{}
+	if err := json.NewDecoder(recorder.Body).Decode(&result); err != nil {
+		t.Fatalf("failed to decode response: %v", err)
+	}
+	if result["error"] != "validation failed" {
+		t.Errorf("expected error 'validation failed', got '%v'", result["error"])
+	}
+	if result["code"].(float64) != float64(http.StatusBadRequest) {
+		t.Errorf("expected code %d, got %v", http.StatusBadRequest, result["code"])
+	}
+}
+
+// TestTotalPages tests the total pages calculation.
+func TestTotalPages(t *testing.T) {
+	tests := []struct {
+		total    int64
+		perPage  int
+		expected int
+	}{
+		{0, 20, 0},
+		{10, 20, 1},
+		{20, 20, 1},
+		{21, 20, 2},
+		{100, 20, 5},
+		{101, 20, 6},
+	}
+
+	for _, tt := range tests {
+		result := totalPages(tt.total, tt.perPage)
+		if result != tt.expected {
+			t.Errorf("totalPages(%d, %d) = %d, expected %d", tt.total, tt.perPage, result, tt.expected)
+		}
+	}
+}
+
+// TestPagination tests the pagination helper.
+func TestPagination(t *testing.T) {
+	tests := []struct {
+		name            string
+		query           string
+		expectedPage    int
+		expectedPerPage int
+		expectedOffset  int
+	}{
+		{"defaults", "", 1, 20, 0},
+		{"page 2", "page=2", 2, 20, 20},
+		{"custom per_page", "page=1&per_page=50", 1, 50, 0},
+		{"page 3 with per_page 10", "page=3&per_page=10", 3, 10, 20},
+		{"invalid page defaults to 1", "page=-1", 1, 20, 0},
+		{"per_page capped at 100", "per_page=500", 1, 20, 0},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			req := httptest.NewRequest(http.MethodGet, "/?"+tt.query, nil)
+			page, perPage, offset := pagination(req)
+			if page != tt.expectedPage {
+				t.Errorf("expected page %d, got %d", tt.expectedPage, page)
+			}
+			if perPage != tt.expectedPerPage {
+				t.Errorf("expected perPage %d, got %d", tt.expectedPerPage, perPage)
+			}
+			if offset != tt.expectedOffset {
+				t.Errorf("expected offset %d, got %d", tt.expectedOffset, offset)
+			}
+		})
+	}
+}

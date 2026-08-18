@@ -10,11 +10,17 @@ import (
 
 type contextKey string
 
-const UserIDKey contextKey = "user_id"
-const UsernameKey contextKey = "username"
+const (
+	UserIDKey   contextKey = "user_id"
+	UsernameKey contextKey = "username"
+	RoleKey     contextKey = "role"
+)
 
 // Auth returns middleware that validates JWT tokens.
-func Auth(secret string) func(http.Handler) http.Handler {
+// revoked, when non-nil, is consulted to reject tokens invalidated by
+// server-side logout: it is called with the token subject and its issued-at
+// timestamp and must return true to reject the token.
+func Auth(secret string, revoked func(userID string, iat int64) bool) func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			// Get token from Authorization header
@@ -31,12 +37,15 @@ func Auth(secret string) func(http.Handler) http.Handler {
 			}
 
 			tokenStr := parts[1]
-			token, err := jwt.Parse(tokenStr, func(t *jwt.Token) (interface{}, error) {
-				if _, ok := t.Method.(*jwt.SigningMethodHMAC); !ok {
-					return nil, jwt.ErrSignatureInvalid
-				}
-				return []byte(secret), nil
-			})
+			token, err := jwt.Parse(tokenStr,
+				func(t *jwt.Token) (interface{}, error) {
+					return []byte(secret), nil
+				},
+				// Lock the algorithm to guard against alg-confusion attacks,
+				// and require an `exp` claim so expiry is always validated.
+				jwt.WithValidMethods([]string{jwt.SigningMethodHS256.Alg()}),
+				jwt.WithExpirationRequired(),
+			)
 			if err != nil || !token.Valid {
 				http.Error(w, `{"error":"invalid or expired token","code":401}`, http.StatusUnauthorized)
 				return
@@ -50,9 +59,27 @@ func Auth(secret string) func(http.Handler) http.Handler {
 
 			userID, _ := claims["sub"].(string)
 			username, _ := claims["username"].(string)
+			role, _ := claims["role"].(string)
+
+			if userID == "" {
+				http.Error(w, `{"error":"invalid token subject","code":401}`, http.StatusUnauthorized)
+				return
+			}
+
+			iat, _ := claims.GetIssuedAt()
+			issuedAt := int64(0)
+			if iat != nil {
+				issuedAt = iat.Unix()
+			}
+
+			if revoked != nil && revoked(userID, issuedAt) {
+				http.Error(w, `{"error":"token revoked","code":401}`, http.StatusUnauthorized)
+				return
+			}
 
 			ctx := context.WithValue(r.Context(), UserIDKey, userID)
 			ctx = context.WithValue(ctx, UsernameKey, username)
+			ctx = context.WithValue(ctx, RoleKey, role)
 			next.ServeHTTP(w, r.WithContext(ctx))
 		})
 	}

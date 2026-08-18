@@ -4,12 +4,13 @@ import { EffectsContext } from './effectsContextDef';
 
 export function EffectsProvider({ children }: { children: ReactNode }) {
   const [effectLevel, setEffectLevel] = useState<EffectLevel>(() => {
-    if (typeof window === 'undefined') return 'full';
+    if (typeof window === 'undefined') return 'mild';
     const saved = localStorage.getItem('subcult-effects');
     if (saved === 'clean' || saved === 'mild' || saved === 'full') return saved;
     // Respect prefers-reduced-motion
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return 'clean';
-    return 'full';
+    // Mild is the documented default (see README Effects section)
+    return 'mild';
   });
 
   const [highContrast, setHighContrast] = useState(() => {

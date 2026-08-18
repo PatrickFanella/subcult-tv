@@ -189,8 +189,16 @@ export async function getMe() {
   return apiFetch<APIUser>('/api/v1/auth/me');
 }
 
-export function logout() {
-  clearToken();
+export async function logout() {
+  // Best-effort server-side token revocation (P1.12): fire and forget.
+  // If it fails we still clear the local token; the JWT will expire on its own.
+  try {
+    await apiFetch('/api/v1/auth/logout', { method: 'POST' });
+  } catch {
+    // ignore — client logout proceeds regardless
+  } finally {
+    clearToken();
+  }
 }
 
 // ── Projects ─────────────────────────────────────────────────

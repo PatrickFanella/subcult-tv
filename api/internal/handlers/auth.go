@@ -39,6 +39,9 @@ func (h *Handler) Login(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Fresh login supersedes any earlier server-side logout.
+	h.logoutBefore.Delete(user.ID.String())
+
 	// Generate JWT
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"sub":      user.ID.String(),
@@ -78,5 +81,24 @@ func (h *Handler) Me(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Enforce authorization on role (P1.12): the admin surface is admin-only.
+	if user.Role != "admin" {
+		writeError(w, http.StatusForbidden, "insufficient permissions")
+		return
+	}
+
 	writeJSON(w, http.StatusOK, user)
+}
+
+// Logout revokes the current user's tokens server-side, so existing JWTs are
+// rejected even though they are stateless. The cut-off is the logout time.
+func (h *Handler) Logout(w http.ResponseWriter, r *http.Request) {
+	userID := r.Context().Value(middleware.UserIDKey)
+	if userID == nil {
+		writeError(w, http.StatusUnauthorized, "not authenticated")
+		return
+	}
+
+	h.logoutBefore.Store(userID.(string), time.Now().Unix())
+	writeJSON(w, http.StatusOK, map[string]string{"message": "logged out"})
 }

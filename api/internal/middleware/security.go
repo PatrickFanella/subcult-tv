@@ -1,29 +1,45 @@
 package middleware
 
-import "net/http"
+import (
+	"net/http"
+	"strings"
+)
 
-// SecurityHeaders adds essential security headers to all responses.
-func SecurityHeaders(next http.Handler) http.Handler {
-	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		// Prevent clickjacking
-		w.Header().Set("X-Frame-Options", "DENY")
+// SecurityHeaders returns a middleware that adds essential security headers.
+// connectOrigins lists specifically-allowed cross-origin hosts for connect-src
+// (e.g. a separate API origin or a self-hosted Umami), so the CSP stays strict
+// without breaking analytics or cross-origin API calls.
+func SecurityHeaders(connectOrigins []string) func(http.Handler) http.Handler {
+	connect := "connect-src 'self'"
+	for _, o := range connectOrigins {
+		if o = strings.TrimSpace(o); o != "" {
+			connect += " " + o
+		}
+	}
+	csp := "default-src 'self'; " + connect + "; frame-ancestors 'none'"
 
-		// Prevent MIME type sniffing
-		w.Header().Set("X-Content-Type-Options", "nosniff")
+	return func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			// Prevent clickjacking
+			w.Header().Set("X-Frame-Options", "DENY")
 
-		// XSS protection for older browsers
-		w.Header().Set("X-XSS-Protection", "1; mode=block")
+			// Prevent MIME type sniffing
+			w.Header().Set("X-Content-Type-Options", "nosniff")
 
-		// Referrer policy - don't leak URLs
-		w.Header().Set("Referrer-Policy", "strict-origin-when-cross-origin")
+			// XSS protection for older browsers
+			w.Header().Set("X-XSS-Protection", "1; mode=block")
 
-		// Permissions policy - disable unnecessary features
-		w.Header().Set("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
+			// Referrer policy - don't leak URLs
+			w.Header().Set("Referrer-Policy", "strict-origin-when-cross-origin")
 
-		// Content Security Policy - basic restrictive policy
-		// Note: Adjust this based on your actual frontend requirements
-		w.Header().Set("Content-Security-Policy", "default-src 'self'; frame-ancestors 'none'")
+			// Permissions policy - disable unnecessary features
+			w.Header().Set("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
 
-		next.ServeHTTP(w, r)
-	})
+			// Content Security Policy - strict by default, with an explicit
+			// connect-src allow-list for API and analytics origins.
+			w.Header().Set("Content-Security-Policy", csp)
+
+			next.ServeHTTP(w, r)
+		})
+	}
 }

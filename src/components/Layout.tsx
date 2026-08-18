@@ -1,8 +1,16 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import GlitchFrame from '@/components/effects/GlitchFrame';
+
+function RouteFallback() {
+  return (
+    <div className="min-h-[40vh] flex items-center justify-center">
+      <span className="font-mono text-dust text-sm cursor-blink">&gt; loading signal...</span>
+    </div>
+  );
+}
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -16,7 +24,9 @@ export default function Layout() {
     <GlitchFrame enableScanlines enableNoise className="min-h-screen flex flex-col">
       <Nav />
       <main id="main-content" className="flex-1 scroll-mt-14" tabIndex={-1}>
-        <Outlet />
+        <Suspense fallback={<RouteFallback />}>
+          <Outlet />
+        </Suspense>
       </main>
       <Footer />
     </GlitchFrame>

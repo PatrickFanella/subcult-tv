@@ -4,13 +4,25 @@ import Card from '@/components/ui/Card';
 import TerminalPanel from '@/components/effects/TerminalPanel';
 import { Target } from 'lucide-react';
 import { getPatreonCampaign } from '@/lib/api';
+import { getCuratedProjects } from '@/lib/github';
 
-// Baseline metrics - update these values manually or fetch from API
+// Live-derived metric: public repo count = catalog size (single source of truth).
+const REPO_COUNT = getCuratedProjects().length;
+
+function nextSunday(): string {
+  const d = new Date();
+  const day = d.getDay();
+  const daysUntilSunday = day === 0 ? 7 : 7 - day;
+  d.setDate(d.getDate() + daysUntilSunday);
+  return d.toISOString().slice(0, 10);
+}
+
+// Baseline metrics - these are updated manually; supporters come from the Patreon API.
 const METRICS = {
-  lastUpdated: '2026-02-15',
+  lastUpdated: '2026-08-18',
   nextMilestone: {
-    date: '2026-02-17',
-    description: 'Monday public launch',
+    date: nextSunday(),
+    description: 'Next weekly metrics update',
   },
   stats: [
     {
@@ -37,7 +49,7 @@ const METRICS = {
     {
       key: 'repos',
       label: 'Public Repositories',
-      value: 5,
+      value: REPO_COUNT,
       unit: '',
       trend: null,
     },

@@ -117,9 +117,9 @@ export default function OnePagerBrand() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
                   { name: 'subcult.tv', desc: 'Portfolio + zine hub' },
-                  { name: 'clpr', desc: 'Clipboard mgr for devs' },
-                  { name: 'Cutroom', desc: 'Media production pipe' },
-                  { name: 'Subcorp', desc: 'Self-hosted infra kit' },
+                  { name: 'clpr', desc: 'Twitch clip curation' },
+                  { name: 'Cutroom', desc: 'AI video pipeline' },
+                  { name: 'Subcorp', desc: 'Multi-agent system' },
                 ].map((p) => (
                   <div key={p.name}>
                     <p className="text-glow text-xs font-bold">{p.name}</p>

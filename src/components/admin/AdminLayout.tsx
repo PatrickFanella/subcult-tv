@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { Navigate, Outlet, NavLink } from 'react-router-dom';
 import { useAuth } from '@/context/useAuth';
 
@@ -67,7 +68,13 @@ export default function AdminLayout() {
       {/* ── Main content ─────────────────────────────────────── */}
       <main className="flex-1 overflow-auto">
         <div className="p-6 lg:p-8">
-          <Outlet />
+          <Suspense
+            fallback={
+              <div className="font-mono text-dust text-sm cursor-blink">&gt; loading signal...</div>
+            }
+          >
+            <Outlet />
+          </Suspense>
         </div>
       </main>
     </div>

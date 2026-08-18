@@ -1,67 +1,83 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import ErrorBoundary from '@/components/ErrorBoundary';
 import Layout from '@/components/Layout';
-import Home from '@/pages/Home';
-import Projects from '@/pages/Projects';
-import ProjectDetail from '@/pages/ProjectDetail';
-import Patreon from '@/pages/Patreon';
-import About from '@/pages/About';
-import Zine from '@/pages/Zine';
-import PostPage from '@/pages/PostPage';
-import Contact from '@/pages/Contact';
-import PressKit from '@/pages/PressKit';
-import NotFound from '@/pages/NotFound';
-import Memo from '@/pages/Memo';
-import Invest from '@/pages/Invest';
-import Metrics from '@/pages/Metrics';
-import Links from '@/pages/Links';
-import PitchDeck from '@/pages/PitchDeck';
-import OnePager from '@/pages/OnePager';
-import PitchDeckBrand from '@/pages/PitchDeckBrand';
-import OnePagerBrand from '@/pages/OnePagerBrand';
 
-// Admin pages
-import AdminLogin from '@/pages/admin/AdminLogin';
-import AdminLayout from '@/components/admin/AdminLayout';
-import AdminDashboard from '@/pages/admin/AdminDashboard';
-import AdminProjects from '@/pages/admin/AdminProjects';
-import AdminPosts from '@/pages/admin/AdminPosts';
-import AdminContacts from '@/pages/admin/AdminContacts';
-import AdminSubscribers from '@/pages/admin/AdminSubscribers';
+// Public pages (code-split)
+const Home = lazy(() => import('@/pages/Home'));
+const Projects = lazy(() => import('@/pages/Projects'));
+const ProjectDetail = lazy(() => import('@/pages/ProjectDetail'));
+const Patreon = lazy(() => import('@/pages/Patreon'));
+const About = lazy(() => import('@/pages/About'));
+const Zine = lazy(() => import('@/pages/Zine'));
+const PostPage = lazy(() => import('@/pages/PostPage'));
+const Contact = lazy(() => import('@/pages/Contact'));
+const PressKit = lazy(() => import('@/pages/PressKit'));
+const NotFound = lazy(() => import('@/pages/NotFound'));
+const Memo = lazy(() => import('@/pages/Memo'));
+const Invest = lazy(() => import('@/pages/Invest'));
+const Metrics = lazy(() => import('@/pages/Metrics'));
+const Links = lazy(() => import('@/pages/Links'));
+const PitchDeck = lazy(() => import('@/pages/PitchDeck'));
+const OnePager = lazy(() => import('@/pages/OnePager'));
+const PitchDeckBrand = lazy(() => import('@/pages/PitchDeckBrand'));
+const OnePagerBrand = lazy(() => import('@/pages/OnePagerBrand'));
+
+// Admin pages (code-split)
+const AdminLogin = lazy(() => import('@/pages/admin/AdminLogin'));
+const AdminLayout = lazy(() => import('@/components/admin/AdminLayout'));
+const AdminDashboard = lazy(() => import('@/pages/admin/AdminDashboard'));
+const AdminProjects = lazy(() => import('@/pages/admin/AdminProjects'));
+const AdminPosts = lazy(() => import('@/pages/admin/AdminPosts'));
+const AdminContacts = lazy(() => import('@/pages/admin/AdminContacts'));
+const AdminSubscribers = lazy(() => import('@/pages/admin/AdminSubscribers'));
+
+function RouteFallback() {
+  return (
+    <div className="min-h-[40vh] flex items-center justify-center">
+      <span className="font-mono text-dust text-sm cursor-blink">&gt; loading signal...</span>
+    </div>
+  );
+}
 
 export default function App() {
   return (
-    <Routes>
-      {/* Public site */}
-      <Route element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="projects/:slug" element={<ProjectDetail />} />
-        <Route path="support" element={<Patreon />} />
-        <Route path="about" element={<About />} />
-        <Route path="zine" element={<Zine />} />
-        <Route path="zine/:slug" element={<PostPage />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="press" element={<PressKit />} />
-        <Route path="memo" element={<Memo />} />
-        <Route path="invest" element={<Invest />} />
-        <Route path="metrics" element={<Metrics />} />
-        <Route path="links" element={<Links />} />
-        <Route path="deck" element={<PitchDeck />} />
-        <Route path="onepager" element={<OnePager />} />
-        <Route path="deck/brand" element={<PitchDeckBrand />} />
-        <Route path="onepager/brand" element={<OnePagerBrand />} />
-        <Route path="*" element={<NotFound />} />
-      </Route>
+    <ErrorBoundary>
+      <Suspense fallback={<RouteFallback />}>
+        <Routes>
+          {/* Public site */}
+          <Route element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="projects/:slug" element={<ProjectDetail />} />
+            <Route path="support" element={<Patreon />} />
+            <Route path="about" element={<About />} />
+            <Route path="zine" element={<Zine />} />
+            <Route path="zine/:slug" element={<PostPage />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="press" element={<PressKit />} />
+            <Route path="memo" element={<Memo />} />
+            <Route path="invest" element={<Invest />} />
+            <Route path="metrics" element={<Metrics />} />
+            <Route path="links" element={<Links />} />
+            <Route path="deck" element={<PitchDeck />} />
+            <Route path="onepager" element={<OnePager />} />
+            <Route path="deck/brand" element={<PitchDeckBrand />} />
+            <Route path="onepager/brand" element={<OnePagerBrand />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
 
-      {/* Admin */}
-      <Route path="admin/login" element={<AdminLogin />} />
-      <Route path="admin" element={<AdminLayout />}>
-        <Route index element={<AdminDashboard />} />
-        <Route path="projects" element={<AdminProjects />} />
-        <Route path="posts" element={<AdminPosts />} />
-        <Route path="contacts" element={<AdminContacts />} />
-        <Route path="subscribers" element={<AdminSubscribers />} />
-      </Route>
-    </Routes>
+          {/* Admin */}
+          <Route path="admin/login" element={<AdminLogin />} />
+          <Route path="admin" element={<AdminLayout />}>
+            <Route index element={<AdminDashboard />} />
+            <Route path="projects" element={<AdminProjects />} />
+            <Route path="posts" element={<AdminPosts />} />
+            <Route path="contacts" element={<AdminContacts />} />
+            <Route path="subscribers" element={<AdminSubscribers />} />
+          </Route>
+        </Routes>
+      </Suspense>
+    </ErrorBoundary>
   );
 }

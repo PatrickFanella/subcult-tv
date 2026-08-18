@@ -29,6 +29,7 @@ const SOCIAL_LINKS = [
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [usedMailtoFallback, setUsedMailtoFallback] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [formData, setFormData] = useState({
@@ -51,7 +52,8 @@ export default function Contact() {
       });
       setSubmitted(true);
     } catch (err) {
-      // Fallback to mailto if API is unavailable
+      // Fallback to mailto if API is unavailable.
+      // Do NOT claim success — surface it as a relayed message instead.
       const mailtoUrl = `mailto:info@subcult.tv?subject=${encodeURIComponent(
         formData.subject || 'Contact from subcult.tv',
       )}&body=${encodeURIComponent(
@@ -61,6 +63,7 @@ export default function Contact() {
       setError(
         err instanceof Error ? err.message : 'API unavailable — opened email client instead',
       );
+      setUsedMailtoFallback(true);
       setSubmitted(true);
     } finally {
       setSubmitting(false);
@@ -94,25 +97,42 @@ export default function Contact() {
             </h2>
 
             {submitted ? (
-              <TerminalPanel title="message.sent">
-                <div>
-                  <span className="text-static">✓ Signal received.</span>
-                  <br />
-                  <span className="text-chalk">
-                    Your message has been transmitted successfully.
-                  </span>
-                  {error && (
-                    <>
-                      <br />
-                      <span className="text-signal">⚠ {error}</span>
-                    </>
-                  )}
-                  <br />
-                  <span className="text-dust"># we'll respond when we can.</span>
-                  <br />
-                  <span className="text-dust"># no auto-responders. just humans.</span>
-                </div>
-              </TerminalPanel>
+              usedMailtoFallback ? (
+                <TerminalPanel title="message.relayed">
+                  <div>
+                    <span className="text-flicker">⚠ Signal relayed via email client.</span>
+                    <br />
+                    <span className="text-chalk">
+                      The API is unreachable, so we opened your email client instead. Send the
+                      draft to{' '}
+                      <span className="text-static">info@subcult.tv</span> and we&apos;ll get back
+                      to you.
+                    </span>
+                    {error && (
+                      <>
+                        <br />
+                        <span className="text-signal">ERR: {error}</span>
+                      </>
+                    )}
+                    <br />
+                    <span className="text-dust"># no auto-responders. just humans.</span>
+                  </div>
+                </TerminalPanel>
+              ) : (
+                <TerminalPanel title="message.sent">
+                  <div>
+                    <span className="text-static">✓ Signal received.</span>
+                    <br />
+                    <span className="text-chalk">
+                      Your message has been transmitted successfully.
+                    </span>
+                    <br />
+                    <span className="text-dust"># we'll respond when we can.</span>
+                    <br />
+                    <span className="text-dust"># no auto-responders. just humans.</span>
+                  </div>
+                </TerminalPanel>
+              )
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>

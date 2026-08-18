@@ -85,9 +85,9 @@ export default function OnePager() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {[
                 { name: 'subcult.tv', desc: 'Portfolio + zine hub' },
-                { name: 'clpr', desc: 'Clipboard manager for devs' },
-                { name: 'Cutroom', desc: 'Media production pipeline' },
-                { name: 'Subcorp', desc: 'Self-hosted infra toolkit' },
+                { name: 'clpr', desc: 'Twitch clip curation platform' },
+                { name: 'Cutroom', desc: 'AI video production pipeline' },
+                { name: 'Subcorp', desc: 'Self-hosted multi-agent system' },
               ].map((p) => (
                 <div key={p.name} className="bg-ash border border-fog p-3">
                   <p className="font-mono text-xs text-glow mb-1">{p.name}</p>

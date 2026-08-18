@@ -22,6 +22,16 @@ const (
 	RateLimitWindow  = time.Minute
 )
 
+// cspConnectOrigins returns origins permitted for browser connect-src requests:
+// the configured CORS origins (API calls) plus a self-hosted Umami when set.
+func cspConnectOrigins(cfg *config.Config) []string {
+	origins := append([]string{}, cfg.CORSOrigins...)
+	if cfg.UmamiURL != "" {
+		origins = append(origins, cfg.UmamiURL)
+	}
+	return origins
+}
+
 // New creates a configured Chi router with all API routes.
 func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 	r := chi.NewRouter()
@@ -37,7 +47,7 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 	r.Use(middleware.Logger)
 	r.Use(chimw.Recoverer)
 	r.Use(chimw.Compress(5))
-	r.Use(middleware.SecurityHeaders)
+	r.Use(middleware.SecurityHeaders(cspConnectOrigins(cfg)))
 	r.Use(middleware.LimitBody)
 	r.Use(middleware.RateLimit(generalLimiter))
 
@@ -80,9 +90,10 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 
 		// ── Protected (admin) routes ────────────────────────
 		api.Group(func(admin chi.Router) {
-			admin.Use(middleware.Auth(cfg.JWTSecret))
+			admin.Use(middleware.Auth(cfg.JWTSecret, h.TokenRevoked))
 
 			admin.Get("/auth/me", h.Me)
+			admin.Post("/auth/logout", h.Logout)
 
 			// Admin dashboard
 			admin.Get("/admin/stats", h.DashboardStats)

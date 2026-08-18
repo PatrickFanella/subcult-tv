@@ -1,55 +1,12 @@
 import SEOHead from '@/components/SEOHead';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
-
-const WHAT_WE_BUILD = [
-  {
-    label: 'Developer Tools',
-    desc: 'CLI utilities, workflow automation, dev-first infrastructure',
-  },
-  { label: 'Self-Hosted Software', desc: 'Privacy-respecting alternatives you own and control' },
-  { label: 'Media Pipelines', desc: 'Audio, video, and publishing toolchains for creators' },
-  { label: 'Privacy Alternatives', desc: 'Replacements for surveillance-economy defaults' },
-  { label: 'Educational Content', desc: 'Technical docs, zines, and hands-on guides' },
-  { label: 'Community Platforms', desc: 'Spaces for builders, not engagement metrics' },
-];
-
-const ACTIVE_PROJECTS = [
-  {
-    name: 'subcult.tv',
-    desc: 'Business hub, portfolio, and zine platform for the collective.',
-    stack: ['React', 'TypeScript', 'Tailwind', 'Go API'],
-  },
-  {
-    name: 'clpr',
-    desc: 'Clipboard manager and snippet tool for developers.',
-    stack: ['Go', 'CLI', 'SQLite'],
-  },
-  {
-    name: 'Cutroom',
-    desc: 'Media production pipeline for video and audio workflows.',
-    stack: ['FFmpeg', 'Node.js', 'Automation'],
-  },
-  {
-    name: 'Subcorp',
-    desc: 'Self-hosted infrastructure and deployment toolkit.',
-    stack: ['Docker', 'Terraform', 'Ansible'],
-  },
-];
-
-const ROADMAP = [
-  { q: 'Q1 2026', item: 'Public launch + Zine series release' },
-  { q: 'Q2 2026', item: 'First commercial tool beta + paid tiers' },
-  { q: 'Q3 2026', item: 'Media production suite v1 launch' },
-  { q: 'Q4 2026', item: 'Platform expansion + partnership pilots' },
-];
-
-const FUND_ALLOCATION = [
-  { label: 'Engineering', pct: 60 },
-  { label: 'Infrastructure', pct: 20 },
-  { label: 'Community', pct: 10 },
-  { label: 'Operations', pct: 10 },
-];
+import {
+  WHAT_WE_BUILD,
+  ACTIVE_PROJECTS,
+  ROADMAP,
+  FUND_ALLOCATION,
+} from '@/lib/investor-content';
 
 export default function PitchDeck() {
   return (

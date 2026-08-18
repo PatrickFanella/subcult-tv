@@ -83,11 +83,10 @@ func (rl *RateLimiter) Allow(ip string) bool {
 func RateLimit(limiter *RateLimiter) func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			// chi's RealIP middleware (installed first in router.go) already rewrites
+			// RemoteAddr from trusted proxy headers. Trusting X-Forwarded-For directly
+			// here would let clients spoof their IP and bypass the limit.
 			ip := r.RemoteAddr
-			// Use X-Forwarded-For if behind proxy (chi's RealIP middleware should handle this)
-			if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
-				ip = forwarded
-			}
 
 			if !limiter.Allow(ip) {
 				w.Header().Set("Content-Type", "application/json")
