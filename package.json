@@ -6,7 +6,7 @@
   "description": "subcult.tv — business + portfolio hub for Subculture Collective / SUBCULT",
   "scripts": {
     "dev": "vite --port 5175",
-    "build": "tsc -b && npm run generate-rss && vite build",
+    "build": "tsc -b && npm run generate-rss && npm run generate-sitemap && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,md,mdx}\"",
@@ -15,6 +15,7 @@
     "test": "vitest run",
     "check:catalog": "tsx scripts/check-catalog.ts",
     "generate-rss": "tsx scripts/generate-rss.ts",
+    "generate-sitemap": "tsx scripts/generate-sitemap.ts",
     "generate-pdfs": "tsx scripts/generate-pdfs.ts"
   },
   "dependencies": {
