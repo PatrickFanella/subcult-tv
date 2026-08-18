@@ -34,6 +34,9 @@ jobs:
       - name: Test
         run: npm test
 
+      - name: Catalog check
+        run: npm run check:catalog
+
       - name: Build
         run: npm run build
 

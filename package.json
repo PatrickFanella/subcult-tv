@@ -13,6 +13,7 @@
     "format:check": "prettier --check \"src/**/*.{ts,tsx,css,md,mdx}\"",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "check:catalog": "tsx scripts/check-catalog.ts",
     "generate-rss": "tsx scripts/generate-rss.ts",
     "generate-pdfs": "tsx scripts/generate-pdfs.ts"
   },
