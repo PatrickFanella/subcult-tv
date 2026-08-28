@@ -3,47 +3,36 @@ import SEOHead from '@/components/SEOHead';
 import Card from '@/components/ui/Card';
 import TerminalPanel from '@/components/effects/TerminalPanel';
 import { Target } from 'lucide-react';
-import { getPatreonCampaign } from '@/lib/api';
+import { getPatreonCampaign, getPublicStats } from '@/lib/api';
 import { getCuratedProjects } from '@/lib/github';
 
 // Live-derived metric: public repo count = catalog size (single source of truth).
 const REPO_COUNT = getCuratedProjects().length;
 
-function nextSunday(): string {
-  const d = new Date();
-  const day = d.getDay();
-  const daysUntilSunday = day === 0 ? 7 : 7 - day;
-  d.setDate(d.getDate() + daysUntilSunday);
-  return d.toISOString().slice(0, 10);
-}
-
-// Baseline metrics - these are updated manually; supporters come from the Patreon API.
-const METRICS = {
-  lastUpdated: '2026-08-18',
+// Baseline metrics - updated manually; supporters come from the Patreon API,
+// subscribers come from the public /api/v1/stats endpoint.
+const BASELINE = {
   nextMilestone: {
-    date: nextSunday(),
     description: 'Next weekly metrics update',
   },
   stats: [
     {
       key: 'subscribers',
       label: 'Newsletter Subscribers',
-      value: 0,
       unit: '',
       trend: null,
     },
     {
       key: 'supporters',
       label: 'Patreon Supporters',
-      value: 0,
       unit: '',
       trend: null,
     },
     {
       key: 'shipped',
-      label: 'Proof Shipped (This Week)',
+      label: 'Core Public Counts',
       value: 3,
-      unit: 'items',
+      unit: 'sources',
       trend: null,
     },
     {
@@ -56,31 +45,102 @@ const METRICS = {
   ],
 };
 
+function nextSunday(): string {
+  const d = new Date();
+  const day = d.getDay();
+  const daysUntilSunday = day === 0 ? 7 : 7 - day;
+  d.setDate(d.getDate() + daysUntilSunday);
+  return d.toISOString().slice(0, 10);
+}
+
+function formatUpdatedAt(iso: string): string {
+  return new Date(iso).toISOString().slice(0, 10);
+}
+
+type RemoteSource<T> =
+  { status: 'loading' } | { status: 'available'; data: T } | { status: 'unavailable' };
+
 export default function Metrics() {
-  const [patronCount, setPatronCount] = useState<number | null>(null);
+  const [patreon, setPatreon] = useState<RemoteSource<{ supporters: number }>>({
+    status: 'loading',
+  });
+  const [publicStats, setPublicStats] = useState<
+    RemoteSource<{ subscribers: number; lastUpdated: string }>
+  >({ status: 'loading' });
 
   useEffect(() => {
     getPatreonCampaign()
       .then((data) => {
         if (data.campaign) {
-          setPatronCount(data.campaign.patron_count);
+          setPatreon({
+            status: 'available',
+            data: { supporters: data.campaign.patron_count },
+          });
+        } else {
+          setPatreon({ status: 'unavailable' });
         }
       })
       .catch(() => {
-        // Silent fallback — keep default value
+        setPatreon({ status: 'unavailable' });
+      });
+
+    getPublicStats()
+      .then((stats) =>
+        setPublicStats({
+          status: 'available',
+          data: { subscribers: stats.subscribers, lastUpdated: stats.last_updated },
+        }),
+      )
+      .catch(() => {
+        setPublicStats({ status: 'unavailable' });
       });
   }, []);
 
-  const stats = METRICS.stats.map((s) =>
-    s.key === 'supporters' && patronCount !== null ? { ...s, value: patronCount } : s,
-  );
+  const stats = BASELINE.stats.map((s) => {
+    if (s.key === 'supporters') {
+      return {
+        ...s,
+        value:
+          patreon.status === 'available'
+            ? patreon.data.supporters
+            : patreon.status === 'loading'
+              ? 'Loading…'
+              : 'Unavailable',
+      };
+    }
+    if (s.key === 'subscribers') {
+      return {
+        ...s,
+        value:
+          publicStats.status === 'available'
+            ? publicStats.data.subscribers
+            : publicStats.status === 'loading'
+              ? 'Loading…'
+              : 'Unavailable',
+      };
+    }
+    return s;
+  });
+
+  const publicStatsStatus =
+    publicStats.status === 'available'
+      ? `Updated ${formatUpdatedAt(publicStats.data.lastUpdated)}`
+      : publicStats.status === 'loading'
+        ? 'Loading…'
+        : 'Unavailable';
+  const patreonStatus =
+    patreon.status === 'available'
+      ? 'Available'
+      : patreon.status === 'loading'
+        ? 'Loading…'
+        : 'Unavailable';
 
   return (
     <>
       <SEOHead
         title="Metrics"
         noIndex
-        description="SUBCULT transparency dashboard. Real numbers, updated weekly. No vanity metrics."
+        description="SUBCULT dashboard for public repository, newsletter, and Patreon counts."
         path="/metrics"
       />
 
@@ -90,15 +150,14 @@ export default function Metrics() {
           <p className="font-mono text-xs text-dust mb-3">&gt; TELEMETRY.report()</p>
           <h1 className="mb-6">Metrics Dashboard</h1>
           <p className="text-bone max-w-2xl mx-auto text-lg leading-relaxed">
-            Real numbers. No vanity metrics. We publish what we track.
+            Public repository counts and live newsletter and Patreon data when the APIs are online.
           </p>
         </div>
 
         {/* Update Notice */}
         <div className="text-center mb-12">
-          <p className="font-mono text-xs text-fog">
-            Last updated: {METRICS.lastUpdated} • Updated every Sunday
-          </p>
+          <p className="font-mono text-xs text-fog">Newsletter/public stats: {publicStatsStatus}</p>
+          <p className="font-mono text-xs text-fog">Patreon: {patreonStatus}</p>
         </div>
 
         {/* Main Stats Grid */}
@@ -137,8 +196,8 @@ export default function Metrics() {
             <div className="flex items-center gap-4">
               <Target className="w-10 h-10 text-signal" aria-hidden="true" />
               <div>
-                <p className="font-mono text-sm text-cyan">{METRICS.nextMilestone.date}</p>
-                <p className="text-lg text-glow">{METRICS.nextMilestone.description}</p>
+                <p className="font-mono text-sm text-cyan">{nextSunday()}</p>
+                <p className="text-lg text-glow">{BASELINE.nextMilestone.description}</p>
               </div>
             </div>
           </Card>
@@ -148,23 +207,25 @@ export default function Metrics() {
         <div className="mb-16">
           <TerminalPanel title="transparency.policy" className="max-w-2xl mx-auto">
             <div>
-              <span className="text-dust"># why we publish metrics:</span>
+              <span className="text-dust"># what this page reports:</span>
               <br />
               <br />
               <span className="text-chalk">1. </span>
-              <span className="text-bone">accountability — we track what matters</span>
+              <span className="text-bone">public counts from named sources</span>
               <br />
               <span className="text-chalk">2. </span>
-              <span className="text-bone">honesty — zeros are fine if true</span>
+              <span className="text-bone">
+                unavailable sources are labeled unavailable, never zero
+              </span>
               <br />
               <span className="text-chalk">3. </span>
-              <span className="text-bone">no vanity — downloads ≠ users ≠ value</span>
+              <span className="text-bone">repository counts are not user counts</span>
               <br />
               <span className="text-chalk">4. </span>
-              <span className="text-bone">open source ethos — transparency by default</span>
+              <span className="text-bone">source and update state shown on the page</span>
               <br />
               <br />
-              <span className="text-dust"># we'll add more metrics as they become meaningful.</span>
+              <span className="text-dust"># new metrics require a reliable source.</span>
             </div>
           </TerminalPanel>
         </div>
@@ -178,9 +239,10 @@ export default function Metrics() {
             <br />
             <span className="text-static">✓</span> Supporters (people who pay monthly)
             <br />
-            <span className="text-static">✓</span> Shipped work (PRs merged, releases published)
+            <span className="text-static">✓</span> Core counts (newsletter, Patreon, project
+            catalog)
             <br />
-            <span className="text-signal">✗</span> Page views, impressions, or other noise
+            <span className="text-signal">✗</span> Page views and impressions
           </p>
         </div>
       </div>

@@ -17,8 +17,8 @@ const SOCIAL_LINKS = [
     handle: 'subcult',
   },
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/subcult_tv',
+    name: 'X',
+    url: 'https://x.com/subcult_tv',
     handle: '@subcult_tv',
   },
   {
@@ -30,7 +30,6 @@ const SOCIAL_LINKS = [
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
-  const [usedMailtoFallback, setUsedMailtoFallback] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [formData, setFormData] = useState({
@@ -39,6 +38,11 @@ export default function Contact() {
     subject: '',
     message: '',
   });
+  const mailtoUrl = `mailto:info@subcult.tv?subject=${encodeURIComponent(
+    formData.subject || 'Contact from subcult.tv',
+  )}&body=${encodeURIComponent(
+    `From: ${formData.name} (${formData.email})\n\n${formData.message}`,
+  )}`;
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -52,20 +56,8 @@ export default function Contact() {
         message: formData.message,
       });
       setSubmitted(true);
-    } catch (err) {
-      // Fallback to mailto if API is unavailable.
-      // Do NOT claim success — surface it as a relayed message instead.
-      const mailtoUrl = `mailto:info@subcult.tv?subject=${encodeURIComponent(
-        formData.subject || 'Contact from subcult.tv',
-      )}&body=${encodeURIComponent(
-        `From: ${formData.name} (${formData.email})\n\n${formData.message}`,
-      )}`;
-      window.open(mailtoUrl, '_blank');
-      setError(
-        err instanceof Error ? err.message : 'API unavailable — opened email client instead',
-      );
-      setUsedMailtoFallback(true);
-      setSubmitted(true);
+    } catch {
+      setError('We could not send your message. Your entries are preserved.');
     } finally {
       setSubmitting(false);
     }
@@ -75,7 +67,7 @@ export default function Contact() {
     <>
       <SEOHead
         title="Contact"
-        description="Get in touch with the Subculture Collective. Collaborations, questions, project leads, and bug reports welcome."
+        description="Contact SUBCULT about collaborations, project questions, or bug reports."
         path="/contact"
       />
 
@@ -84,8 +76,8 @@ export default function Contact() {
           <p className="font-mono text-xs text-dust mb-3">&gt; ping subcult.tv</p>
           <h1 className="mb-4">Contact</h1>
           <p className="text-bone max-w-2xl">
-            Have a question, a collaboration idea, or a bug to report? Open a channel. We respond to
-            genuine signals — especially around the curated projects and tools catalog.
+            Send a collaboration idea, project question, or bug report. For project bugs, include
+            the project name and what happened.
           </p>
         </div>
 
@@ -94,46 +86,21 @@ export default function Contact() {
           <div>
             <h2 className="mb-6">
               <span className="text-dust font-mono text-sm mr-3">//</span>
-              Send a Signal
+              Send a message
             </h2>
 
             {submitted ? (
-              usedMailtoFallback ? (
-                <TerminalPanel title="message.relayed">
-                  <div>
-                    <span className="text-flicker">⚠ Signal relayed via email client.</span>
-                    <br />
-                    <span className="text-chalk">
-                      The API is unreachable, so we opened your email client instead. Send the
-                      draft to{' '}
-                      <span className="text-static">info@subcult.tv</span> and we&apos;ll get back
-                      to you.
-                    </span>
-                    {error && (
-                      <>
-                        <br />
-                        <span className="text-signal">ERR: {error}</span>
-                      </>
-                    )}
-                    <br />
-                    <span className="text-dust"># no auto-responders. just humans.</span>
-                  </div>
-                </TerminalPanel>
-              ) : (
-                <TerminalPanel title="message.sent">
-                  <div>
-                    <span className="text-static">✓ Signal received.</span>
-                    <br />
-                    <span className="text-chalk">
-                      Your message has been transmitted successfully.
-                    </span>
-                    <br />
-                    <span className="text-dust"># we'll respond when we can.</span>
-                    <br />
-                    <span className="text-dust"># no auto-responders. just humans.</span>
-                  </div>
-                </TerminalPanel>
-              )
+              <TerminalPanel title="message.sent">
+                <div>
+                  <span className="text-static">✓ Message received.</span>
+                  <br />
+                  <span className="text-chalk">Your message reached the collective.</span>
+                  <br />
+                  <span className="text-dust"># we'll respond when we can.</span>
+                  <br />
+                  <span className="text-dust"># no auto-reply. a human reads it.</span>
+                </div>
+              </TerminalPanel>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
@@ -209,16 +176,19 @@ export default function Contact() {
 
                 {error && !submitted && (
                   <div className="p-3 bg-signal/10 border border-signal text-signal font-mono text-xs">
-                    ⚠ {error}
+                    <p>⚠ {error}</p>
+                    <a href={mailtoUrl} className="inline-block mt-2 text-glow underline">
+                      Open your message as an email draft
+                    </a>
                   </div>
                 )}
 
                 <Button type="submit" size="lg" className="w-full" disabled={submitting}>
-                  {submitting ? 'Transmitting...' : 'Transmit Message'}
+                  {submitting ? 'Sending...' : 'Send message'}
                 </Button>
 
                 <p className="font-mono text-xs text-fog text-center mt-2">
-                  Your message is sent directly to the collective. We read everything.
+                  Your message goes to the collective. No tracking.
                 </p>
               </form>
             )}
@@ -228,7 +198,7 @@ export default function Contact() {
           <div>
             <h2 className="mb-6">
               <span className="text-dust font-mono text-sm mr-3">//</span>
-              Direct Channels
+              Direct channels
             </h2>
 
             <div className="space-y-4 mb-8">
@@ -268,7 +238,7 @@ export default function Contact() {
                 <span className="text-static">zero</span>
                 <br />
                 <br />
-                <span className="text-dust"># genuine signals only.</span>
+                <span className="text-dust"># project questions and collaborations welcome.</span>
                 <br />
                 <span className="text-dust"># spam gets /dev/null'd.</span>
               </div>

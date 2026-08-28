@@ -335,3 +335,16 @@ export async function listSubscribers(opts?: { page?: number; perPage?: number }
 export async function getDashboardStats() {
   return apiFetch<DashboardStats>('/api/v1/admin/stats');
 }
+
+// ── Public metrics ──────────────────────────────────────────
+
+export interface PublicStats {
+  projects: number;
+  posts: number;
+  subscribers: number;
+  last_updated: string;
+}
+
+export async function getPublicStats() {
+  return apiFetch<PublicStats>('/api/v1/stats');
+}

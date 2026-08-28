@@ -12,7 +12,7 @@ function PostNotFound({ slug }: { slug?: string }) {
       <SEOHead title="Post Not Found" path={`/zine/${slug ?? ''}`} />
       <p className="font-mono text-signal mb-4">&gt; ERROR 404: transmission not found</p>
       <p className="text-bone mb-6">
-        This signal was lost in the static. The post you're looking for doesn't exist.
+        We could not find this post. Browse the zine to choose another dispatch.
       </p>
       <Button as="link" to="/zine" variant="secondary">
         ← Back to the Zine
@@ -30,29 +30,30 @@ export default function PostPage() {
 
   const nextPost = useMemo(() => (slug ? getNextInSeries(slug) : undefined), [slug]);
 
-  const [MDXContent, setMDXContent] = useState<React.ComponentType | null>(null);
-  const [mdxStatus, setMdxStatus] = useState<'idle' | 'loaded'>('idle');
+  const [loadedMDX, setLoadedMDX] = useState<{
+    slug: string;
+    Content: React.ComponentType | null;
+  } | null>(null);
 
   useEffect(() => {
     if (!slug || !post) return;
 
     let cancelled = false;
     const loader = getPostMDX(slug);
-    if (loader) {
-      loader()
-        .then((mod) => {
-          if (!cancelled) {
-            setMDXContent(() => mod.default);
-            setMdxStatus('loaded');
-          }
-        })
-        .catch(() => {
-          if (!cancelled) {
-            setMDXContent(null);
-            setMdxStatus('loaded');
-          }
-        });
-    }
+    const load = loader ? loader() : Promise.resolve(null);
+
+    load
+      .then((mod) => {
+        if (!cancelled) {
+          setLoadedMDX({ slug, Content: mod?.default ?? null });
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setLoadedMDX({ slug, Content: null });
+        }
+      });
+
     return () => {
       cancelled = true;
     };
@@ -62,7 +63,9 @@ export default function PostPage() {
     return <PostNotFound slug={slug} />;
   }
 
-  if (mdxStatus === 'idle') {
+  const MDXContent = loadedMDX?.slug === slug ? loadedMDX.Content : undefined;
+
+  if (MDXContent === undefined) {
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <p className="font-mono text-dust">
@@ -73,7 +76,7 @@ export default function PostPage() {
     );
   }
 
-  if (!MDXContent) {
+  if (MDXContent === null) {
     return <PostNotFound slug={slug} />;
   }
 
@@ -115,17 +118,23 @@ export default function PostPage() {
         <footer className="mt-16 pt-8 border-t border-fog">
           {post.series && (
             <p className="font-mono text-xs text-dust mb-6">
-              {post.series.name} Series — Week {post.series.week} of {post.series.total}
+              {post.series.name} Series | Week {post.series.week} of {post.series.total}
             </p>
           )}
 
           {nextPost && (
-            <div className="mb-8">
-              <p className="font-mono text-sm text-bone mb-1">
+            <Link
+              to={`/zine/${nextPost.slug}`}
+              aria-label={`Read next post: ${nextPost.title}`}
+              className="group block mb-8 -mx-3 p-3 border border-transparent hover:border-fog hover:bg-ash focus-visible:outline-2 focus-visible:outline-signal focus-visible:outline-offset-2 transition-colors"
+            >
+              <p className="font-mono text-sm text-bone mb-1 group-hover:text-signal group-focus-visible:text-signal transition-colors">
                 Next: <span className="text-glow">{nextPost.title}</span>
               </p>
-              <p className="text-sm text-dust">{nextPost.excerpt}</p>
-            </div>
+              <p className="text-sm text-dust group-hover:text-bone group-focus-visible:text-bone transition-colors">
+                {nextPost.excerpt}
+              </p>
+            </Link>
           )}
 
           <a
@@ -134,7 +143,7 @@ export default function PostPage() {
             rel="noopener noreferrer"
             className="font-mono text-sm text-bone hover:text-signal transition-colors"
           >
-            Join the conversation →
+            Discuss this post →
           </a>
         </footer>
       </article>

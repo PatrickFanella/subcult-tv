@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import NewsletterSignup from '@/components/NewsletterSignup';
 
 const FOOTER_LINKS = [
-  { to: '/projects', label: 'Work' },
+  { to: '/projects', label: 'Projects' },
   { to: '/zine', label: 'Field Notes' },
   { to: '/about', label: 'About' },
   { to: '/support', label: 'Support' },
@@ -94,11 +94,11 @@ export default function Footer() {
 
             <div className="mt-6 pt-4 border-t border-fog">
               <p className="font-mono text-xs text-fog">
-                &gt; No advertising profiles. No data brokerage.
+                &gt; No ad profiles. No brokered data.
                 <br />
-                &gt; Projects are documented in a public catalog.
+                &gt; Project documentation lives in the public catalog.
                 <br />
-                &gt; Source tracked in self-hosted Gitea.
+                &gt; Repository links live in the catalog.
               </p>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function Footer() {
           <p className="font-mono text-xs text-fog">
             © {new Date().getFullYear()} Subculture Collective. All signals reserved.
           </p>
-          <p className="font-mono text-xs text-fog">EST. 2026 — Broadcasting from the static</p>
+          <p className="font-mono text-xs text-fog">EST. 2026 // BROADCASTING FROM THE STATIC</p>
         </div>
       </div>
     </footer>

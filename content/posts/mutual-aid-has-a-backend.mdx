@@ -1,47 +1,37 @@
-# Mutual Aid Has a Backend: Trust, Moderation, and the Infrastructure Beneath Care
+# Mutual aid has a backend: trust, moderation, and the infrastructure beneath care
 
-Mutual aid is not a vibe.
+The spreadsheet works until two people edit the same request, an old offer gets recirculated, and the coordinator who knows what happened goes offline.
 
-It is a logistics problem wrapped in a trust problem wrapped in a political commitment.
+Nobody planned to make that coordinator the database. Urgent work kept arriving, and someone cared enough to remember. Over time, everyone depended on that person.
 
-Someone needs something. Someone else can provide it. A network has to carry the request without exposing the requester to unnecessary harm. Information has to be searchable without becoming extractive. Moderation has to prevent abuse without reproducing platform paternalism. The system has to move quickly, but not so quickly that it becomes easy to manipulate.
+Group chats, pinned posts, and shared sheets can carry mutual aid. People clean duplicates, verify offers, update requests, and absorb the strain of keeping a rough system humane. Eventually that labor becomes too much for a few volunteers.
 
-The warm language matters. So does the backend.
+Formal software can spread the load, though it can also harden bad rules. The task is to add structure without making care answer to platform logic.
 
-A spreadsheet can hold a network for a while. A group chat can coordinate urgent needs. A pinned post can become a temporary hub. These forms work because people make them work. But the labor piles up. Someone cleans duplicates. Someone verifies offers. Someone remembers which request is still open. Someone answers the same question again. Someone quietly absorbs the emotional load of making the system feel humane.
+Patchwork is active work on that problem. It uses the AT Protocol and includes a web client, a query API, an ingestion and indexing pipeline, and a moderation worker.
 
-Eventually, the informal system either formalizes or burns out.
+Those components support specific jobs. Needs and offers must be findable. A request needs state such as open, fulfilled, stale, disputed, or withdrawn. Old records need expiration. Sensitive requests need visibility controls.
 
-The problem is formalizing it without killing the thing that made it worth protecting.
+Moderators need to record their actions too. People should be able to understand what changed and challenge a decision. Quiet, unaccountable intervention may remove immediate abuse while corroding trust in the network.
 
-Patchwork starts from that tension: mutual aid needs networks that can be searched, moderated, and trusted without becoming extractive. That phrase contains the whole problem. Search, because needs and offers must be findable. Moderation, because open systems attract bad actors. Trust, because coordination without confidence becomes hesitation. Non-extraction, because the people most in need of mutual aid should not become data sources for someone else’s growth model.
+Provenance helps people judge a request: where it came from, who can vouch for it, and what changed after posting. It cannot prove that a person deserves help. The software should never pretend otherwise.
 
-Most platforms solve trust by centralizing authority.
+Centralized platforms often turn trust into a score owned by the operator. That approach invites a caste system, especially when people cannot inspect or contest the inputs.
 
-A mutual-aid system should be more careful.
+A mutual-aid network needs room for local judgment. History and context matter, and neither fits cleanly into a global reputation number.
 
-It needs provenance: where did this request come from, who can vouch for it, what has changed since it was posted? It needs state: open, fulfilled, stale, disputed, withdrawn. It needs expiration, because old requests create confusion. It needs visibility controls, because not every need should be public to the whole internet. It needs moderation trails, because trust collapses when decisions feel arbitrary.
+Shared queues and visible state keep coordinators from becoming permanent points of failure. They make work easier to hand off. Clear moderation trails reduce the need to reconstruct decisions from memory.
 
-These are boring words.
+These systems can cause harm. Verification may become gatekeeping. Public records may expose hardship. Automation may delay an urgent request because it does not fit the expected path.
 
-They are also the infrastructure of care.
+The system should collect only what coordination requires. Asking for help already carries risk. Its operators have no right to turn that moment into content, training data, or a growth metric.
 
-The political mistake is assuming that care becomes less real when it becomes structured. The opposite is often true. Structure can protect care from becoming dependent on a few exhausted coordinators. It can turn invisible labor into shared process. It can make the difference between "someone should handle this" and "this is how this gets handled."
+This changes the product questions. How many requests remain abandoned? Where does moderation stall? Can a requester limit who sees a need? Can a volunteer step away without taking the whole process with them?
 
-But structure has failure modes. Too much process can make urgency wait in line. Too much visibility can expose vulnerable people. Too much verification can become gatekeeping. Too much automation can remove judgment from situations that require it.
-
-The backend needs judgment.
-
-A good mutual-aid tool should ask different questions than a marketplace. Not "how do we maximize transaction volume?" but "how do we reduce abandoned requests?" Not "how do we rank reliable users?" but "how do we distribute trust without creating caste?" Not "how do we increase engagement?" but "how do we resolve needs with the least unnecessary exposure?"
-
-That last phrase matters: unnecessary exposure.
-
-A person asking for help is already making themselves visible. The system should not demand more visibility than coordination requires. It should not turn hardship into content. It should not reward performative need or performative generosity. It should make the exchange possible and then let dignity return.
+Success may mean less activity inside the app: a need resolved, a record closed, and no reason to keep someone engaged.
 
 > Care needs infrastructure, but infrastructure must know when to get out of the way.
 
-Mutual aid will always exceed software. It should. No backend can replace trust, history, local knowledge, or the strange grace of people showing up for each other.
+Software cannot supply trust, local knowledge, or the person who arrives with groceries. It can lower the clerical cost paid by people who do.
 
-But software can reduce the tax on showing up.
-
-That is enough reason to build it carefully.
+Build for the handoff, then let the exchange belong to them.

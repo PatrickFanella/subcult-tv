@@ -10,13 +10,7 @@ export function AdminHeader({
   action?: ReactNode;
 }) {
   return (
-    <div
-      className={
-        action
-          ? 'flex items-center justify-between mb-6'
-          : 'mb-6'
-      }
-    >
+    <div className={action ? 'flex items-center justify-between mb-6' : 'mb-6'}>
       <div>
         <p className="font-mono text-xs text-dust mb-1">&gt; {overline}</p>
         <h1 className="text-2xl">{title}</h1>

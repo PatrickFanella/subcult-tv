@@ -1,63 +1,29 @@
-# Argument Machines: Markets, Courts, and the Usefulness of Structured Disagreement
+# Argument machines: markets, courts, and the usefulness of structured disagreement
 
-A bad autonomous system acts too quickly.
+Before an autonomous system spends money or changes a shared resource, somebody should be able to stop it. That sounds obvious. In software, the objection often arrives after execution, dressed up as a log entry.
 
-It receives a signal, interprets it, chooses an action, and executes. The system looks efficient because there is no friction. But the missing friction was doing work. It was where disagreement, context, risk, and uncertainty were supposed to enter.
+The omission is easy to miss at full speed. A signal comes in, a model interprets it, and an action goes out. The clean path looks efficient because context and doubt have nowhere to enter.
 
-The point is not to slow everything down.
+Markets and courts offer useful procedures for this problem. A market lets people act on incompatible beliefs through bids and offers. A court assigns roles, admits evidence, hears objections, and records a decision.
 
-The point is to put argument in the right place.
+Both give disagreement authority and consequence. That is what makes them argument machines.
 
-Markets understand this better than most software teams. Prices are only the surface. Underneath, a market is disagreement made liquid. Buyers and sellers do not need to share a worldview. They need a procedure for acting despite incompatible beliefs. Courts understand a related principle. A courtroom does not assume truth appears because everyone is sincere. It gives conflict a shape: claims, evidence, roles, objections, deliberation, verdict.
+Several Subcult projects test this idea in different settings. augr runs market analysis through debate before execution. JuryRigged gives a courtroom simulation fixed phases and jury voting.
 
-These are argument machines.
+Subcorp is still incubating. Its design explores roundtable conversations and autonomous workflows in a self-hosted multi-agent system. It should be read as work in progress, not as proof that every governance problem has been solved.
 
-They do not eliminate disagreement. They make disagreement usable.
+Adding another agent does little on its own. An objection matters only when the system knows who can raise it, what evidence supports it, and whether it can pause the next action.
 
-That frame explains why multi-agent systems keep appearing across Subcult projects. Augr treats trading as analysis, debate, and execution rather than a single automated impulse. JuryRigged turns argument into a courtroom simulation with roles and phases. Subcorp uses roundtables, vetoes, governance proposals, and agent personalities because decisions get better when disagreement has a protocol.
+The answer depends on the stakes. A trading workflow may need exposure limits before an order. A courtroom simulation needs a coherent route from testimony to verdict. An autonomous office needs a way to catch mission drift.
 
-The shared lesson is simple: if the system can act, it needs a way to argue with itself before it acts.
+The review should fit the decision. Some actions need a risk check. Others need a dissenting recommendation or a human approval. Afterward, the system needs enough history to compare the prediction with the result.
 
-This is especially true when the environment is noisy. Markets are noisy. Social systems are noisy. AI outputs are noisy. Human intentions are noisy. A single agent with a confident answer can become a liability if there is no structured resistance inside the loop.
+Those pauses are part of the work. They keep a confident output from passing as a settled decision, and they leave a record when the minority view turns out to be right.
 
-A second agent saying "I disagree" is not enough. Disagreement needs authority, timing, and consequences.
-
-Who gets to object?
-
-When does objection pause execution?
-
-What counts as evidence?
-
-Who resolves the conflict?
-
-What happens when the dissenting position is right later?
-
-These are governance questions disguised as product design.
-
-In a trading system, the cost of bad action may be money. In a courtroom simulation, the cost may be incoherent judgment. In an autonomous office, the cost may be mission drift, exposure, or compounding bad assumptions. The domain changes. The structural problem remains: action needs adversarial input without becoming paralyzed by it.
-
-A useful argument machine has phases. Analysis before recommendation. Risk before execution. Dissent before commitment. Audit after outcome. Memory after audit. Each phase catches a different class of error.
-
-Analysis catches misunderstanding.
-
-Risk catches exposure.
-
-Dissent catches consensus theater.
-
-Execution catches vagueness.
-
-Audit catches self-deception.
-
-Memory catches repetition.
-
-This is not bureaucracy for its own sake. It is a way of preserving agency inside automation. The more power a system has to act, the more explicit its internal conflict should be.
+This is governance inside product design. More power to act calls for clearer routes to object.
 
 > Autonomy without disagreement is just automation with better branding.
 
-The lesson from courts and markets is not that software should imitate their surface forms. It is that serious action requires procedures for incompatible interpretations.
+Leave the gavels and trading floor where they are. Software needs a decision procedure that takes incompatible interpretations seriously before an irreversible step.
 
-Build the argument machine before you trust the execution machine.
-
-Let the system fight with itself where it matters.
-
-Then make it remember who was right.
+Execution can stay fast where the stakes are low. Where the stakes rise, the argument belongs in the path, with enough memory to show whose judgment held up.

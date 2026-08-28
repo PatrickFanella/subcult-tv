@@ -31,8 +31,7 @@ export default function PressKit() {
           <p className="font-mono text-xs text-dust mb-3">&gt; ls /press-kit/</p>
           <h1 className="mb-4">Press Kit</h1>
           <p className="text-bone max-w-2xl">
-            Brand assets, color palette, typography, and usage guidelines for Subculture Collective
-            / SUBCULT.
+            Names, colors, typefaces, and usage rules for Subculture Collective and SUBCULT.
           </p>
         </div>
 
@@ -95,7 +94,7 @@ export default function PressKit() {
               <span className="font-mono text-xs text-dust block mb-2">Display Font</span>
               <span className="font-display text-3xl text-glow block mb-2">Oswald</span>
               <p className="text-sm text-bone">
-                Used for headings, nav, and brand text. Bold, uppercase, tight tracking.
+                Use for headings, navigation, and brand text. Set it bold and uppercase.
               </p>
             </div>
             <div className="bg-ash border border-fog p-6">
@@ -107,14 +106,14 @@ export default function PressKit() {
                 Libre Baskerville
               </span>
               <p className="text-sm text-bone">
-                Used for body text, descriptions, and long-form content. Elegant, readable serif.
+                Use for body text, descriptions, and long-form copy.
               </p>
             </div>
             <div className="bg-ash border border-fog p-6">
               <span className="font-mono text-xs text-dust block mb-2">Mono Font</span>
               <span className="font-mono text-3xl text-glow block mb-2">JetBrains Mono</span>
               <p className="text-sm text-bone">
-                Used for code, terminal output, labels, and system text. Clean, technical.
+                Use for code, terminal output, labels, and system text.
               </p>
             </div>
           </div>
@@ -168,7 +167,8 @@ export default function PressKit() {
           </h2>
           <div className="bg-ash border border-fog p-6">
             <p className="text-bone mb-4">
-              Asset pack coming soon. For now, contact us directly for brand materials.
+              These asset files are not yet included. Request current brand materials through the
+              contact form.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
               {[
@@ -189,9 +189,11 @@ export default function PressKit() {
 
         {/* Contact for press */}
         <div className="text-center py-8 border-t border-fog">
-          <p className="text-bone mb-4">Need brand materials or have press inquiries?</p>
+          <p className="text-bone mb-4">
+            For brand materials or press inquiries, use the contact form.
+          </p>
           <Button as="link" to="/contact" variant="secondary">
-            Get In Touch
+            Contact form
           </Button>
         </div>
       </div>

@@ -8,10 +8,10 @@ import type { Post } from '@/types';
 export const posts: Post[] = [
   {
     slug: 'boot-sequence',
-    title: 'Boot Sequence: Why We\u2019re Building Subculture Collective',
+    title: "Boot sequence: why we're building Subculture Collective",
     date: '2026-02-17',
     excerpt:
-      'There are already too many places to post. What the internet lacks is durable infrastructure for culture.',
+      'Subculture Collective is building searchable archives and collaboration tools that help communities preserve work when platforms change.',
     tags: ['foundations', 'mission', 'infrastructure'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/boot-sequence.mdx'),
@@ -19,10 +19,10 @@ export const posts: Post[] = [
   },
   {
     slug: 'against-metrics',
-    title: 'Against Metrics',
+    title: 'Against metrics',
     date: '2026-02-24',
     excerpt:
-      'Measurement is necessary. Metrics are dangerous. Why the numbers we worship quietly reshape culture.',
+      'Teams should choose metrics for specific decisions and remove numbers that rank participants or confuse attention with cultural value.',
     tags: ['foundations', 'metrics', 'culture'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/against-metrics.mdx'),
@@ -30,21 +30,21 @@ export const posts: Post[] = [
   },
   {
     slug: 'the-feed-without-the-feed',
-    title: 'The Feed Without the Feed: Reclaiming Discovery',
+    title: 'The feed without the feed: reclaiming discovery',
     date: '2026-03-03',
     excerpt:
-      'The infinite scroll promises discovery but delivers retention. What happens when we build for retrieval instead?',
-    tags: ['foundations', 'discovery', 'clipper'],
+      'clpr helps people discover, organize, collect, and share clips from a catalog without waiting for a feed to resurface them.',
+    tags: ['foundations', 'discovery', 'clpr'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/the-feed-without-the-feed.mdx'),
     series: { name: 'Foundations', week: 3, total: 8 },
   },
   {
     slug: 'search-is-governance',
-    title: 'Search Is Governance',
+    title: 'Search is governance',
     date: '2026-03-10',
     excerpt:
-      'The order of search results encodes judgment. Search is governance by algorithm.',
+      'Teams choose how exact matches, similarity, recency, and popularity rank search results, and communities should be able to inspect those choices.',
     tags: ['foundations', 'search', 'governance'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/search-is-governance.mdx'),
@@ -52,10 +52,10 @@ export const posts: Post[] = [
   },
   {
     slug: 'moderation-is-infrastructure',
-    title: 'Moderation Is Infrastructure',
+    title: 'Moderation is infrastructure',
     date: '2026-03-17',
     excerpt:
-      'Moderation is not a patch. It is architecture. Every system encodes assumptions about behavior.',
+      'Communities should establish clear rules and accountable moderation procedures before conflict overwhelms volunteers.',
     tags: ['foundations', 'moderation', 'community'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/moderation-is-infrastructure.mdx'),
@@ -63,10 +63,10 @@ export const posts: Post[] = [
   },
   {
     slug: 'digital-zines-as-resistance',
-    title: 'Digital Zines as Resistance',
+    title: 'Digital zines as resistance',
     date: '2026-03-24',
     excerpt:
-      'Before algorithmic feeds, there were zines. They were not optimized. They were intentional.',
+      'A digital zine keeps related work in a maker-controlled archive, where readers can return to its original sequence and context.',
     tags: ['foundations', 'zines', 'publishing'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/digital-zines-as-resistance.mdx'),
@@ -74,10 +74,10 @@ export const posts: Post[] = [
   },
   {
     slug: 'how-we-work-without-burning-out',
-    title: 'How We Work Without Burning Out',
+    title: 'How we work without burning out',
     date: '2026-03-31',
     excerpt:
-      'Most collaborative projects fail because of exhaustion. Sustainability is a design constraint.',
+      'Small, reversible changes and clear expectations let contributors step back without making a project depend on heroic workloads.',
     tags: ['foundations', 'process', 'sustainability'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/how-we-work-without-burning-out.mdx'),
@@ -85,21 +85,21 @@ export const posts: Post[] = [
   },
   {
     slug: 'the-shape-of-a-community',
-    title: 'The Shape of a Community',
+    title: 'The shape of a community',
     date: '2026-04-07',
     excerpt:
-      'Every community has a shape. These shapes determine how information travels, how conflict spreads, and how innovation emerges.',
-    tags: ['foundations', 'community', 'graphmap'],
+      'clustr visualizes connections between groups and can reveal fragile bridges or isolated members without treating reach as human worth.',
+    tags: ['foundations', 'community', 'clustr'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/the-shape-of-a-community.mdx'),
     series: { name: 'Foundations', week: 8, total: 8 },
   },
   {
     slug: 'the-signal-tower',
-    title: 'The Signal Tower: Why Every Collective Needs a Place to Broadcast From',
+    title: 'The signal tower: why every collective needs a place to broadcast from',
     date: '2026-06-04',
     excerpt:
-      'A website is not just a brochure. It is where a collective decides what persists, what gets framed, and what refuses to disappear into the feed.',
+      'A collective website gives projects and essays a stable address, with context and history that remain available after a social platform stops promoting them.',
     tags: ['field-systems', 'homepage', 'archives'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/the-signal-tower.mdx'),
@@ -107,10 +107,10 @@ export const posts: Post[] = [
   },
   {
     slug: 'maps-without-leaderboards',
-    title: 'Maps Without Leaderboards: Making Communities Legible Without Ranking Them',
+    title: 'Maps without leaderboards: making communities legible without ranking them',
     date: '2026-06-11',
     excerpt:
-      'Community analytics usually become status machines. The harder and more interesting problem is making structure visible without turning people into scores.',
+      'Community maps can expose isolated groups and overloaded connectors, but consent and privacy must limit what data they collect and display.',
     tags: ['field-systems', 'community', 'mapping'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/maps-without-leaderboards.mdx'),
@@ -118,10 +118,11 @@ export const posts: Post[] = [
   },
   {
     slug: 'search-is-a-memory-machine',
-    title: 'Search Is a Memory Machine: Clips, Transcripts, Fingerprints, and the Fight Against Amnesia',
+    title:
+      'Search is a memory machine: clips, transcripts, fingerprints, and the fight against amnesia',
     date: '2026-06-18',
     excerpt:
-      'Discovery is usually treated as convenience. For cultural work, it is closer to memory: the ability to find the artifact after the platform has stopped caring.',
+      'The essay treats consent and retention limits as design requirements for search projects that pair transcripts with provenance.',
     tags: ['field-systems', 'search', 'memory'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/search-is-a-memory-machine.mdx'),
@@ -129,10 +130,10 @@ export const posts: Post[] = [
   },
   {
     slug: 'mutual-aid-has-a-backend',
-    title: 'Mutual Aid Has a Backend: Trust, Moderation, and the Infrastructure Beneath Care',
+    title: 'Mutual aid has a backend: trust, moderation, and the infrastructure beneath care',
     date: '2026-06-25',
     excerpt:
-      'Mutual aid is often described as emotion and intention. At scale, it also needs schemas, search, moderation, and procedures that protect people without turning care into bureaucracy.',
+      'The essay treats searchable request states and accountable moderation records as design requirements for mutual-aid coordination.',
     tags: ['field-systems', 'mutual-aid', 'moderation'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/mutual-aid-has-a-backend.mdx'),
@@ -140,10 +141,10 @@ export const posts: Post[] = [
   },
   {
     slug: 'argument-machines',
-    title: 'Argument Machines: Markets, Courts, and the Usefulness of Structured Disagreement',
+    title: 'Argument machines: markets, courts, and the usefulness of structured disagreement',
     date: '2026-07-02',
     excerpt:
-      'Autonomous systems fail when they collapse debate into execution. Sometimes the safest path forward is to make disagreement procedural before action is allowed.',
+      'Autonomous systems should route high-stakes actions through a review procedure that can stop execution and preserve dissent.',
     tags: ['field-systems', 'governance', 'ai'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/argument-machines.mdx'),
@@ -151,10 +152,10 @@ export const posts: Post[] = [
   },
   {
     slug: 'tiny-worlds-for-real-life',
-    title: 'Tiny Worlds for Real Life: Place, Memory, and Simulation as Interfaces',
+    title: 'Tiny worlds for real life: place, memory, and simulation as interfaces',
     date: '2026-07-09',
     excerpt:
-      'Not every interface should be a dashboard. Sometimes the better representation of a life, a place, or a community is a world that changes over time.',
+      'The essay argues that retention control should be a design requirement for simulated worlds that reflect personal habits and community memories.',
     tags: ['field-systems', 'simulation', 'memory'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/tiny-worlds-for-real-life.mdx'),
@@ -162,10 +163,10 @@ export const posts: Post[] = [
   },
   {
     slug: 'media-without-a-studio',
-    title: 'Media Without a Studio: Small-Crew Production in the Age of Assembly Lines',
+    title: 'Media without a studio: small-crew production in the age of assembly lines',
     date: '2026-07-16',
     excerpt:
-      'The future of independent media is not one creator doing everything alone. It is small teams and agentic pipelines that make production legible without turning art into factory work.',
+      'Cutroom and One Block Cinema explore production workflows that help small crews finish films while keeping authorship and editorial control.',
     tags: ['field-systems', 'media', 'production'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/media-without-a-studio.mdx'),
@@ -173,10 +174,10 @@ export const posts: Post[] = [
   },
   {
     slug: 'the-workshop-after-the-manifesto',
-    title: 'The Workshop After the Manifesto: Building a Collective Without Becoming a Platform',
+    title: 'The workshop after the manifesto: building a collective without becoming a platform',
     date: '2026-07-23',
     excerpt:
-      'The hard part is not declaring values. The hard part is encoding them into tools, templates, queues, archives, defaults, and the small operations that decide what the collective becomes.',
+      'Portable formats and replaceable tools let a collective preserve its archive and continue working when a service changes or disappears.',
     tags: ['field-systems', 'operations', 'infrastructure'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/the-workshop-after-the-manifesto.mdx'),

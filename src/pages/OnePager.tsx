@@ -19,17 +19,16 @@ export default function OnePager() {
             <p className="text-lg text-bone">
               Tools, media, and infrastructure for the counterculture.
             </p>
-            <p className="font-mono text-xs text-dust mt-2">subcult.tv — February 2026</p>
+            <p className="font-mono text-xs text-dust mt-2">subcult.tv | August 2026</p>
           </div>
 
           {/* What We Do */}
           <div className="mb-6">
             <h2 className="text-lg mb-2 border-b border-fog pb-1">What We Do</h2>
             <p className="text-sm text-bone">
-              SUBCULT builds open-source developer tools, self-hosted software, and media production
-              pipelines. Everything we ship is privacy-first, community-funded, and built in the
-              open. We serve developers, creators, and anyone who refuses to be optimized by
-              surveillance-economy defaults.
+              SUBCULT builds developer tools, self-hosted software, media pipelines, and community
+              software. The public catalog links to repositories and records whether each project is
+              active or incubating.
             </p>
           </div>
 
@@ -41,19 +40,19 @@ export default function OnePager() {
                 <li className="flex items-start gap-2">
                   <span className="text-signal font-mono mt-0.5">-</span>
                   <span>
-                    Creator and dev tools are surveillance machines that monetize your workflow data
+                    Hosted tools can collect workflow data and tie core work to vendor accounts
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-signal font-mono mt-0.5">-</span>
                   <span>
-                    Infrastructure is consolidated under a few corporations — lock-in is the default
+                    Hosted infrastructure can make migration and independent operation difficult
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-signal font-mono mt-0.5">-</span>
                   <span>
-                    Open source powers the internet but is underfunded and running on burnout
+                    Public software requires ongoing engineering, documentation, and hosting
                   </span>
                 </li>
               </ul>
@@ -63,31 +62,33 @@ export default function OnePager() {
               <ul className="space-y-2 text-sm text-bone">
                 <li className="flex items-start gap-2">
                   <span className="text-static font-mono mt-0.5">+</span>
-                  <span>Privacy-first, open-source tools — no telemetry, no tracking, no ads</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-static font-mono mt-0.5">+</span>
-                  <span>Community-funded via Patreon and commercial tiers — not VC extraction</span>
+                  <span>
+                    Public repositories and self-hosted options where each project supports them
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-static font-mono mt-0.5">+</span>
                   <span>
-                    Ship weekly with public roadmap — trust is earned through transparent execution
+                    Patreon support funds public work without private access or roadmap control
                   </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-static font-mono mt-0.5">+</span>
+                  <span>Current project states and planned work are published on subcult.tv</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Active Projects */}
+          {/* Selected Projects */}
           <div className="mb-6">
-            <h2 className="text-lg mb-2 border-b border-fog pb-1">Active Projects</h2>
+            <h2 className="text-lg mb-2 border-b border-fog pb-1">Selected Projects</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {[
-                { name: 'subcult.tv', desc: 'Portfolio + zine hub' },
-                { name: 'clpr', desc: 'Twitch clip curation platform' },
-                { name: 'Cutroom', desc: 'AI video production pipeline' },
-                { name: 'Subcorp', desc: 'Self-hosted multi-agent system' },
+                { name: 'subcult.tv', desc: 'Active: site, catalog, and zine' },
+                { name: 'clpr', desc: 'Active: Twitch clip curation' },
+                { name: 'Cutroom', desc: 'Incubating: video pipeline' },
+                { name: 'Subcorp', desc: 'Incubating: multi-agent system' },
               ].map((p) => (
                 <div key={p.name} className="bg-ash border border-fog p-3">
                   <p className="font-mono text-xs text-glow mb-1">{p.name}</p>
@@ -100,23 +101,23 @@ export default function OnePager() {
           {/* Traction / Business Model */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
-              <h2 className="text-lg mb-2 border-b border-fog pb-1">Traction</h2>
+              <h2 className="text-lg mb-2 border-b border-fog pb-1">Project Snapshot</h2>
               <div className="grid grid-cols-2 gap-2">
                 <div className="bg-ash border border-fog p-2 text-center">
-                  <p className="font-display text-lg text-glow">5+</p>
-                  <p className="font-mono text-[10px] text-dust">Public Repos</p>
+                  <p className="font-display text-lg text-glow">37</p>
+                  <p className="font-mono text-[10px] text-dust">Catalogued Repos</p>
                 </div>
                 <div className="bg-ash border border-fog p-2 text-center">
-                  <p className="font-display text-lg text-glow">Weekly</p>
-                  <p className="font-mono text-[10px] text-dust">Ship Cadence</p>
+                  <p className="font-display text-lg text-glow">Active</p>
+                  <p className="font-mono text-[10px] text-dust">Current Work</p>
                 </div>
                 <div className="bg-ash border border-fog p-2 text-center">
-                  <p className="font-display text-lg text-glow">[TBD]</p>
-                  <p className="font-mono text-[10px] text-dust">Newsletter</p>
+                  <p className="font-display text-lg text-glow">Incubating</p>
+                  <p className="font-mono text-[10px] text-dust">Earlier-Stage Work</p>
                 </div>
                 <div className="bg-ash border border-fog p-2 text-center">
-                  <p className="font-display text-lg text-glow">[TBD]</p>
-                  <p className="font-mono text-[10px] text-dust">Patreon</p>
+                  <p className="font-display text-lg text-glow">Public</p>
+                  <p className="font-mono text-[10px] text-dust">Repository Links</p>
                 </div>
               </div>
             </div>
@@ -127,7 +128,7 @@ export default function OnePager() {
                   <span className="font-mono text-xs bg-static text-void px-1.5 py-0.5">
                     ACTIVE
                   </span>
-                  <span>Patreon community funding</span>
+                  <span>Patreon funding for public work</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="font-mono text-xs bg-flicker text-void px-1.5 py-0.5">
@@ -153,23 +154,23 @@ export default function OnePager() {
 
           {/* Roadmap */}
           <div className="mb-6">
-            <h2 className="text-lg mb-2 border-b border-fog pb-1">Roadmap 2026</h2>
+            <h2 className="text-lg mb-2 border-b border-fog pb-1">Roadmap</h2>
             <div className="flex flex-wrap gap-x-6 gap-y-1 font-mono text-xs">
               <span>
-                <span className="text-signal">Q1</span>{' '}
-                <span className="text-bone">Public launch + Zine series</span>
+                <span className="text-signal">Current</span>{' '}
+                <span className="text-bone">Maintain active projects and catalog</span>
               </span>
               <span>
-                <span className="text-signal">Q2</span>{' '}
-                <span className="text-bone">Commercial tool beta</span>
+                <span className="text-signal">Next</span>{' '}
+                <span className="text-bone">Advance incubating projects</span>
               </span>
               <span>
-                <span className="text-signal">Q3</span>{' '}
-                <span className="text-bone">Media suite v1</span>
+                <span className="text-signal">Next</span>{' '}
+                <span className="text-bone">Evaluate commercial services</span>
               </span>
               <span>
-                <span className="text-signal">Q4</span>{' '}
-                <span className="text-bone">Platform expansion</span>
+                <span className="text-signal">Later</span>{' '}
+                <span className="text-bone">Project sponsorships and partnerships</span>
               </span>
             </div>
           </div>
@@ -192,7 +193,7 @@ export default function OnePager() {
                 </Button>
               </div>
             </div>
-            <p className="font-mono text-[10px] text-dust mt-2">invest@subcult.tv — subcult.tv</p>
+            <p className="font-mono text-[10px] text-dust mt-2">invest@subcult.tv | subcult.tv</p>
           </div>
         </div>
       </div>

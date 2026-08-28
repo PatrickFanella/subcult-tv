@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const PRIMARY_LINKS = [
   {
     to: '/zine',
-    label: 'The Zine',
-    description: 'Season 0 — Read the founding documents',
+    label: 'Read the Zine',
+    description: 'Season 0 founding documents',
     external: false,
   },
   {
@@ -17,8 +17,8 @@ const PRIMARY_LINKS = [
   },
   {
     to: '/support',
-    label: 'Support the Signal',
-    description: 'Become a patron',
+    label: 'Support SUBCULT',
+    description: 'Become a supporter',
     external: false,
   },
 ];
@@ -40,7 +40,7 @@ export default function Links() {
     <>
       <SEOHead
         title="Links"
-        description="All SUBCULT links in one place — curated projects, tools, zine, newsletter, support, and social profiles."
+        description="Open SUBCULT projects, field notes, updates, support, and social profiles from one page."
         path="/links"
       />
 
@@ -53,7 +53,7 @@ export default function Links() {
           >
             SUBCULT
           </Link>
-          <p className="font-mono text-xs text-dust mt-2">&gt; link_hub.index()</p>
+          <p className="font-mono text-xs text-dust mt-2">&gt; choose_destination()</p>
         </div>
 
         {/* Primary Links */}

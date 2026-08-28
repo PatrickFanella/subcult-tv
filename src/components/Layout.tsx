@@ -7,7 +7,7 @@ import GlitchFrame from '@/components/effects/GlitchFrame';
 function RouteFallback() {
   return (
     <div className="min-h-[40vh] flex items-center justify-center">
-      <span className="font-mono text-dust text-sm cursor-blink">&gt; loading signal...</span>
+      <span className="font-mono text-dust text-sm cursor-blink">&gt; fetching signal...</span>
     </div>
   );
 }

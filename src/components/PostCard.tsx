@@ -14,12 +14,10 @@ export default function PostCard({ post, disabled }: PostCardProps) {
         <span className="font-mono text-xs text-dust">{post.date}</span>
         {!disabled && (
           <span className="font-mono text-xs text-signal opacity-0 group-hover:opacity-100 transition-opacity">
-            READ →
+            OPEN POST →
           </span>
         )}
-        {disabled && (
-          <span className="font-mono text-xs text-dust">INCOMING</span>
-        )}
+        {disabled && <span className="font-mono text-xs text-dust">NOT YET PUBLISHED</span>}
       </div>
 
       <h3 className="font-display text-xl uppercase tracking-wider text-glow group-hover:text-signal transition-colors mb-2">

@@ -1,8 +1,9 @@
 import { inputClass } from '@/components/ui/TextInput';
-import { useState, type FormEvent } from 'react';
+import { useId, useState, type FormEvent } from 'react';
 import { subscribe } from '@/lib/api';
 
 export default function NewsletterSignup() {
+  const emailInputId = useId();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
@@ -34,19 +35,17 @@ export default function NewsletterSignup() {
     <div className="bg-ash border border-fog p-6">
       <div className="text-center mb-4">
         <p className="font-mono text-xs text-dust mb-2">&gt; SIGNAL BROADCAST</p>
-        <h3 className="text-lg mb-1">Stay in the Loop</h3>
-        <p className="text-sm text-bone">
-          Get notified when we ship new projects or drop new zine entries.
-        </p>
+        <h3 className="text-lg mb-1">Receive the signal</h3>
+        <p className="text-sm text-bone">Get project releases and new field notes by email.</p>
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
-        <label htmlFor="newsletter-email" className="sr-only">
+        <label htmlFor={emailInputId} className="sr-only">
           Email address
         </label>
         <input
           type="email"
-          id="newsletter-email"
+          id={emailInputId}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -68,7 +67,7 @@ export default function NewsletterSignup() {
       )}
 
       <p className="font-mono text-xs text-fog text-center mt-3">
-        No spam. No tracking. Unsubscribe anytime.
+        No spam or tracking. Unsubscribe anytime.
       </p>
     </div>
   );

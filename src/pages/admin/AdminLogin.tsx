@@ -58,7 +58,10 @@ export default function AdminLogin() {
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor={usernameInputId} className="block font-mono text-xs text-bone uppercase mb-1">
+                <label
+                  htmlFor={usernameInputId}
+                  className="block font-mono text-xs text-bone uppercase mb-1"
+                >
                   &gt; IDENT
                 </label>
                 <input
@@ -74,7 +77,10 @@ export default function AdminLogin() {
               </div>
 
               <div>
-                <label htmlFor={passwordInputId} className="block font-mono text-xs text-bone uppercase mb-1">
+                <label
+                  htmlFor={passwordInputId}
+                  className="block font-mono text-xs text-bone uppercase mb-1"
+                >
                   &gt; PASSKEY
                 </label>
                 <input
@@ -100,7 +106,10 @@ export default function AdminLogin() {
 
             {/* Bottom text */}
             <div className="mt-6 text-center">
-              <a href="/" className="font-mono text-xs text-dust hover:text-bone transition-colors duration-200">
+              <a
+                href="/"
+                className="font-mono text-xs text-dust hover:text-bone transition-colors duration-200"
+              >
                 ← return to subcult.tv
               </a>
             </div>

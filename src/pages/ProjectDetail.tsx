@@ -19,7 +19,7 @@ export default function ProjectDetail() {
         <SEOHead title="Project Not Found" path={`/projects/${slug}`} />
         <p className="font-mono text-signal mb-4">&gt; ERROR 404: project not found</p>
         <p className="text-bone mb-6">
-          The signal was lost. This project doesn't exist or has been archived into the void.
+          No project exists at this address. It may have been removed or archived.
         </p>
         <Button as="link" to="/projects" variant="secondary">
           ← Back to Projects
@@ -118,38 +118,40 @@ export default function ProjectDetail() {
             <div className="bg-ash border border-fog p-6">
               <h4 className="font-mono text-xs text-bone uppercase mb-4">// Actions</h4>
               <div className="space-y-3">
-                <Button
-                  as="a"
-                  href={project.repoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variant="secondary"
-                  className="w-full"
-                >
-                  View Repository ↗
-                </Button>
                 {project.url && (
                   <Button
                     as="a"
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    variant="ghost"
+                    variant="primary"
                     className="w-full"
                   >
-                    Live Demo ↗
+                    Visit Project ↗
                   </Button>
                 )}
                 <Button
                   as="a"
-                  href="https://www.patreon.com/subcult"
+                  href={project.repoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  variant="signal"
+                  variant={project.url ? 'secondary' : 'primary'}
                   className="w-full"
                 >
-                  Support This Project ↗
+                  View Repository ↗
                 </Button>
+                <div className="pt-5 mt-5 border-t border-fog">
+                  <Button
+                    as="a"
+                    href="https://www.patreon.com/subcult"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="ghost"
+                    className="w-full"
+                  >
+                    Support the Work ↗
+                  </Button>
+                </div>
               </div>
             </div>
 

@@ -45,7 +45,7 @@ export default function Zine() {
     <>
       <SEOHead
         title="The Zine"
-        description="Two complete serialized zine series from Subculture Collective: Foundations and Field Systems. Philosophy, process, and dispatches from the workshop."
+        description="Read Foundations and Field Systems, two complete zine series about building tools and practices for independent culture."
         path="/zine"
       />
 
@@ -55,11 +55,11 @@ export default function Zine() {
           <p className="font-mono text-xs text-dust mb-3">&gt; cat /zine/index</p>
           <h1 className="mb-4">The Zine</h1>
           <p className="font-mono text-sm text-flicker mb-6">
-            Two complete series — sixteen dispatches from the workshop
+            Two complete series. Sixteen dispatches from the workshop.
           </p>
           <p className="text-bone max-w-2xl mx-auto text-lg leading-relaxed">
-            Foundations lays out the collective&rsquo;s operating principles. Field Systems follows
-            those principles into the tools, interfaces, and habits that make cultural work durable.
+            Start with Foundations to learn how the collective works. Then read Field Systems to see
+            those principles applied to the tools and habits that keep cultural work going.
           </p>
         </div>
 
@@ -79,8 +79,8 @@ export default function Zine() {
                   Start here
                 </h2>
                 <p className="text-bone text-base leading-relaxed max-w-xl">
-                  The original 8-post arc on mission, metrics, discovery, moderation, and the
-                  operating principles behind Subculture Collective.
+                  Eight posts on the mission, metrics, discovery, moderation, and operating
+                  principles behind Subculture Collective. Begin here.
                 </p>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 text-center">
@@ -120,8 +120,8 @@ export default function Zine() {
                   Field Systems
                 </h2>
                 <p className="text-bone text-base leading-relaxed max-w-xl">
-                  The complete 8-post arc on community legibility, search, memory, structured
-                  disagreement, media, and the infrastructure beneath care.
+                  Eight posts on community legibility, search, memory, structured disagreement,
+                  media, and the infrastructure communities use to coordinate care.
                 </p>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 text-center">
@@ -170,8 +170,8 @@ export default function Zine() {
 
                 {isFieldSystems && (
                   <p className="max-w-2xl text-sm text-bone mb-4">
-                    The complete series traces how a collective turns its values into durable tools,
-                    interfaces, archives, and operating practices.
+                    Read how a collective turns its values into tools, interfaces, archives, and
+                    working practices that last.
                   </p>
                 )}
 
@@ -215,14 +215,14 @@ export default function Zine() {
 
         {/* Bottom */}
         <div className="text-center py-12 mt-12 border-t border-fog">
-          <h2 className="mb-4">Stay Updated</h2>
+          <h2 className="mb-4">Read What Comes Next</h2>
           <p className="text-bone max-w-xl mx-auto mb-8">
-            Foundations and Field Systems are complete. Subscribe to the memo for the next series
-            and new dispatches from the workshop.
+            You can read both series now. Subscribe to the monthly memo to get the next series and
+            new workshop dispatches in your inbox.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button as="link" to="/memo" size="lg">
-              Subscribe to Memo
+              Subscribe to the Memo
             </Button>
             <Button as="link" to="/support" variant="secondary" size="lg">
               Support the Collective

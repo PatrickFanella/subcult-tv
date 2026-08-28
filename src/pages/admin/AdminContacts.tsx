@@ -110,11 +110,7 @@ export default function AdminContacts() {
         )}
       </div>
 
-      <AdminPagination
-        page={page}
-        totalPages={contactsPage?.total_pages ?? 1}
-        onChange={setPage}
-      />
+      <AdminPagination page={page} totalPages={contactsPage?.total_pages ?? 1} onChange={setPage} />
     </div>
   );
 }

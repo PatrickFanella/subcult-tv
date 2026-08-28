@@ -1,43 +1,37 @@
-# The Feed Without the Feed: Reclaiming Discovery
+# The feed without the feed: reclaiming discovery
 
-The infinite scroll is one of the most successful behavioral designs ever made. It is also one of the most corrosive.
+We started clpr after failing to find things we knew we had seen.
 
-The feed promises discovery, but what it delivers is retention. Its job is not to help you find what matters. It is to keep you there.
-
----
-
-When we started building Clipper, we were not trying to create another social platform. We were reacting to a simple irritation: it was easier to consume endless content than to find one specific moment again.
-
-Think about a live-streamed event. A clip appears: a spontaneous reaction, a narrow victory, an unexpected confession. It circulates briefly, picks up engagement, then sinks under new material. Days later, you try to find it. Unless you remember the exact title or the account that shared it, you are stuck.
-
-The feed is not built for retrieval. It is built for replacement.
-
-Clipper began with a counter-assumption: discovery should be queryable. If a clip exists, you should be able to describe it in ordinary language and find it. Not because an algorithm predicts you will like it, but because you asked for it.
-
-A recommendation engine predicts what you might want. A search system waits for you to ask. The former nudges behavior. The latter gives some of that control back.
+The familiar case was a live-streamed event. A clip caught a reaction, a narrow victory, or an unexpected confession. It circulated for a day and then disappeared under newer posts.
 
 ---
 
-Building this kind of system means dealing with the tension between semantic flexibility and deterministic clarity. Too literal, and search becomes brittle. Too abstract, and results feel like guesswork.
+Finding it later meant remembering an exact title or the account that posted it. Often we remembered neither. The feed still had plenty to show us, just not the thing we wanted.
 
-But the deeper question is simple: what kind of relationship do we want people to have with platforms?
+That irritation shaped clpr. Discovery comes first. A person can browse and organize clips instead of waiting for a feed to bring one back.
 
-Most platforms assume you want to stay forever. Time-on-site gets treated like proof that something is working. But that metric is misaligned with how people actually want to spend their attention. Sometimes you want to go deep, with sustained research or real conversation. Sometimes you want one thing and then you want out. A tool that helps you do that and leaves you alone respects your time.
+Feeds excel at replacement. Each new item pushes the last one farther away. Infinite scroll makes that process feel effortless, which is useful when the business wants another minute of attention.
 
-Clipper foregrounds search, filters, and contextual signals rather than infinite recommendations. It encourages curation and collections instead of endless autoplay. It treats memory as something worth keeping.
+Search starts with a request. That small difference matters. The person chooses the subject and can revise the query when the results miss.
 
-This does not mean it rejects social interaction. Voting, comments, and shared libraries provide context. But these mechanisms serve retrieval, not retention.
+---
 
-When discovery becomes legible, communities gain leverage. They can trace patterns, surface overlooked contributions, and build their own archives instead of relying on opaque ranking systems.
+The implementation involves judgment. clpr keeps clips in a catalog where people can organize, collect, and share them instead of relying on a feed to resurface them.
+
+That technical choice points back to attention. Many products count time on site as success. We would rather help someone locate a clip and leave satisfied.
+
+Other visits take longer. Someone may be building a collection or tracing related moments. Duration has meaning only in relation to what that person came to do.
+
+clpr puts discovery, organization, collection, and sharing ahead of autoplay. Those tools do not need to manufacture an endless session.
+
+With those tools, a community can recover overlooked contributions and keep an archive on its own terms. It has less reason to trust whatever an opaque ranking system happens to surface today.
 
 > There is a quiet dignity in a platform that does not try to monopolize your attention.
 
-Systems like this feel unusual at first. Users used to algorithmic nudging may read the absence of constant prompts as emptiness. But emptiness can be deliberate. It makes room for an actual choice.
+The quieter screen may feel sparse to someone used to constant prompts. Good. The open space leaves room to decide what comes next.
 
-The feed collapses time into an ever-refreshing present. Search brings memory back.
+An archive matters only when people can retrieve what it holds. Organized collections give old clips another route into the present, one chosen by the person looking.
 
-If culture is going to last, it has to be retrievable. Moments have to be locatable. Conversations have to be traceable. Otherwise we get perpetual amnesia with the occasional viral spike.
-
-Clipper is a proof of concept: platforms can prioritize agency over addiction.
+clpr is our working case for a modest idea. A platform can help people find and remember things without treating their attention as raw material.
 
 Discovery should feel like using a tool, not surviving a casino.

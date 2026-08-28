@@ -9,7 +9,7 @@ export default function OnePagerBrand() {
       <SEOHead
         title="One-Pager (Brand Edition)"
         noIndex
-        description="SUBCULT executive summary — brand edition. Tools, media, and infrastructure for the counterculture."
+        description="SUBCULT executive summary, brand edition. Tools, media, and infrastructure for the counterculture."
         path="/onepager/brand"
       />
 
@@ -32,7 +32,7 @@ export default function OnePagerBrand() {
               <p className="text-lg text-bone">
                 Tools, media, and infrastructure for the counterculture.
               </p>
-              <p className="font-mono text-xs text-dust mt-2">&gt; subcult.tv — February 2026</p>
+              <p className="font-mono text-xs text-dust mt-2">&gt; subcult.tv | August 2026</p>
             </div>
           </GlitchFrame>
 
@@ -42,10 +42,9 @@ export default function OnePagerBrand() {
               <span className="text-dust text-xs mr-2">//</span>What We Do
             </h2>
             <p className="text-sm text-bone">
-              SUBCULT builds open-source developer tools, self-hosted software, and media production
-              pipelines. Everything we ship is privacy-first, community-funded, and built in the
-              open. We serve developers, creators, and anyone who refuses to be optimized by
-              surveillance-economy defaults.
+              SUBCULT builds developer tools, self-hosted software, media pipelines, and community
+              software. The public catalog links to repositories and records whether each project is
+              active or incubating.
             </p>
           </div>
 
@@ -60,19 +59,20 @@ export default function OnePagerBrand() {
                   <li className="flex items-start gap-2">
                     <span className="text-scan font-mono mt-0.5">[!]</span>
                     <span>
-                      Creator and dev tools are surveillance machines that monetize your workflow
-                      data
+                      Hosted tools can collect workflow data and tie core work to vendor accounts
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-scan font-mono mt-0.5">[!]</span>
                     <span>
-                      Infrastructure consolidated under a few corps — lock-in is the default
+                      Hosted infrastructure can make migration and independent operation difficult
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-scan font-mono mt-0.5">[!]</span>
-                    <span>Open source powers the internet but is underfunded and burning out</span>
+                    <span>
+                      Public software requires ongoing engineering, documentation, and hosting
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -86,40 +86,38 @@ export default function OnePagerBrand() {
                   <li className="flex items-start gap-2">
                     <span className="text-static font-mono mt-0.5">[+]</span>
                     <span>
-                      Privacy-first, open-source tools — no telemetry, no tracking, no ads
+                      Public repositories and self-hosted options where each project supports them
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-static font-mono mt-0.5">[+]</span>
                     <span>
-                      Community-funded via Patreon and commercial tiers — not VC extraction
+                      Patreon support funds public work without private access or roadmap control
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-static font-mono mt-0.5">[+]</span>
-                    <span>
-                      Ship weekly with public roadmap — trust earned through transparent execution
-                    </span>
+                    <span>Current project states and planned work are published on subcult.tv</span>
                   </li>
                 </ul>
               </div>
             </GlitchFrame>
           </div>
 
-          {/* Active Projects */}
+          {/* Selected Projects */}
           <div className="mb-6">
             <div className="torn-edge-top bg-smoke pt-4 pb-1 px-3 mb-3">
               <h2 className="text-lg font-mono uppercase tracking-wider text-center chromatic-mild">
-                Active Projects
+                Selected Projects
               </h2>
             </div>
             <TerminalPanel title="ls -la /projects/" prompt="$ ">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
-                  { name: 'subcult.tv', desc: 'Portfolio + zine hub' },
-                  { name: 'clpr', desc: 'Twitch clip curation' },
-                  { name: 'Cutroom', desc: 'AI video pipeline' },
-                  { name: 'Subcorp', desc: 'Multi-agent system' },
+                  { name: 'subcult.tv', desc: 'Active: site, catalog, and zine' },
+                  { name: 'clpr', desc: 'Active: Twitch clip curation' },
+                  { name: 'Cutroom', desc: 'Incubating: video pipeline' },
+                  { name: 'Subcorp', desc: 'Incubating: multi-agent system' },
                 ].map((p) => (
                   <div key={p.name}>
                     <p className="text-glow text-xs font-bold">{p.name}</p>
@@ -136,24 +134,24 @@ export default function OnePagerBrand() {
             <GlitchFrame enableScanlines>
               <div>
                 <h2 className="text-lg mb-2 border-b border-signal pb-1 font-mono uppercase tracking-wider chromatic-mild">
-                  <span className="text-dust text-xs mr-2">//</span>Traction
+                  <span className="text-dust text-xs mr-2">//</span>Project Snapshot
                 </h2>
                 <div className="grid grid-cols-2 gap-2">
                   <div className="bg-ash border border-signal p-2 text-center">
-                    <p className="font-display text-lg text-signal">5+</p>
-                    <p className="font-mono text-[10px] text-dust">Public Repos</p>
+                    <p className="font-display text-lg text-signal">37</p>
+                    <p className="font-mono text-[10px] text-dust">Catalogued Repos</p>
                   </div>
                   <div className="bg-ash border border-signal p-2 text-center">
-                    <p className="font-display text-lg text-signal">Weekly</p>
-                    <p className="font-mono text-[10px] text-dust">Ship Cadence</p>
+                    <p className="font-display text-lg text-signal">Active</p>
+                    <p className="font-mono text-[10px] text-dust">Current Work</p>
                   </div>
                   <div className="bg-ash border border-fog p-2 text-center">
-                    <p className="font-display text-lg text-glow">[TBD]</p>
-                    <p className="font-mono text-[10px] text-dust">Newsletter</p>
+                    <p className="font-display text-lg text-glow">Incubating</p>
+                    <p className="font-mono text-[10px] text-dust">Earlier-Stage Work</p>
                   </div>
                   <div className="bg-ash border border-fog p-2 text-center">
-                    <p className="font-display text-lg text-glow">[TBD]</p>
-                    <p className="font-mono text-[10px] text-dust">Patreon</p>
+                    <p className="font-display text-lg text-glow">Public</p>
+                    <p className="font-mono text-[10px] text-dust">Repository Links</p>
                   </div>
                 </div>
               </div>
@@ -165,7 +163,7 @@ export default function OnePagerBrand() {
               <ul className="space-y-1.5 text-sm text-bone">
                 <li className="flex items-center gap-2">
                   <span className="font-mono text-xs bg-static text-void px-1.5 py-0.5">LIVE</span>
-                  <span>Patreon community funding</span>
+                  <span>Patreon funding for public work</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="font-mono text-xs bg-flicker text-void px-1.5 py-0.5">NEXT</span>
@@ -176,7 +174,9 @@ export default function OnePagerBrand() {
                   <span>Implementation consulting</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="font-mono text-xs bg-flicker text-void px-1.5 py-0.5">NEXT</span>
+                  <span className="font-mono text-xs bg-flicker text-void px-1.5 py-0.5">
+                    LATER
+                  </span>
                   <span>Project sponsorships</span>
                 </li>
               </ul>
@@ -186,24 +186,24 @@ export default function OnePagerBrand() {
           {/* Roadmap */}
           <div className="mb-6">
             <h2 className="text-lg mb-2 border-b border-signal pb-1 font-mono uppercase tracking-wider chromatic-mild">
-              <span className="text-dust text-xs mr-2">//</span>Roadmap 2026
+              <span className="text-dust text-xs mr-2">//</span>Roadmap
             </h2>
             <div className="flex flex-wrap gap-x-6 gap-y-1 font-mono text-xs">
               <span>
-                <span className="text-cyan font-bold">Q1</span>{' '}
-                <span className="text-bone">Public launch + Zine</span>
+                <span className="text-cyan font-bold">Current</span>{' '}
+                <span className="text-bone">Maintain active projects and catalog</span>
               </span>
               <span>
-                <span className="text-cyan font-bold">Q2</span>{' '}
-                <span className="text-bone">Commercial beta</span>
+                <span className="text-cyan font-bold">Next</span>{' '}
+                <span className="text-bone">Advance incubating projects</span>
               </span>
               <span>
-                <span className="text-cyan font-bold">Q3</span>{' '}
-                <span className="text-bone">Media suite v1</span>
+                <span className="text-cyan font-bold">Next</span>{' '}
+                <span className="text-bone">Evaluate commercial services</span>
               </span>
               <span>
-                <span className="text-cyan font-bold">Q4</span>{' '}
-                <span className="text-bone">Platform expansion</span>
+                <span className="text-cyan font-bold">Later</span>{' '}
+                <span className="text-bone">Project sponsorships and partnerships</span>
               </span>
             </div>
           </div>
@@ -233,7 +233,7 @@ export default function OnePagerBrand() {
                 </div>
               </div>
               <p className="font-mono text-[10px] text-dust mt-2">
-                &gt; invest@subcult.tv — subcult.tv — END TRANSMISSION
+                &gt; invest@subcult.tv | subcult.tv | END TRANSMISSION
               </p>
             </div>
           </GlitchFrame>

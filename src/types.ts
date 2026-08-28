@@ -10,12 +10,7 @@ export interface Project {
   longDescription?: string;
   whyItExists?: string;
   status: 'active' | 'incubating' | 'archived';
-  type:
-    | ('software' | 'media' | 'tools' | 'social')[]
-    | 'software'
-    | 'media'
-    | 'tools'
-    | 'social';
+  type: ('software' | 'media' | 'tools' | 'social')[] | 'software' | 'media' | 'tools' | 'social';
   stack: string[];
   topics: string[];
   url?: string;

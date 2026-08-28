@@ -4,7 +4,7 @@ import { useEffects } from '@/context/useEffects';
 import type { EffectLevel } from '@/types';
 
 const NAV_LINKS = [
-  { to: '/projects', label: 'Work' },
+  { to: '/projects', label: 'Projects' },
   { to: '/zine', label: 'Field Notes' },
   { to: '/about', label: 'About' },
   { to: '/support', label: 'Support' },
@@ -65,7 +65,7 @@ export default function Nav() {
             <button
               onClick={cycleEffects}
               className="font-mono text-xs px-2 py-1 border border-fog text-dust hover:text-static hover:border-static transition-colors duration-200 cursor-pointer"
-              aria-label={`Visual effects: ${EFFECT_LABELS[effectLevel]}. Click to cycle.`}
+              aria-label={`Visual effects: ${EFFECT_LABELS[effectLevel]}. Select to cycle.`}
               title={`Effects: ${EFFECT_LABELS[effectLevel]}`}
             >
               FX:{EFFECT_LABELS[effectLevel]}
@@ -117,7 +117,7 @@ export default function Nav() {
               <button
                 onClick={cycleEffects}
                 className="font-mono text-xs px-2 py-1 border border-fog text-dust cursor-pointer"
-                aria-label={`Visual effects: ${EFFECT_LABELS[effectLevel]}. Click to cycle.`}
+                aria-label={`Visual effects: ${EFFECT_LABELS[effectLevel]}. Select to cycle.`}
               >
                 FX:{EFFECT_LABELS[effectLevel]}
               </button>

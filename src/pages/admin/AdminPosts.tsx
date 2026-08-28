@@ -205,7 +205,10 @@ export default function AdminPosts() {
           </thead>
           <tbody>
             {posts.map((p) => (
-              <tr key={p.id} className="border-b border-fog/50 hover:bg-ash transition-colors duration-200">
+              <tr
+                key={p.id}
+                className="border-b border-fog/50 hover:bg-ash transition-colors duration-200"
+              >
                 <td className="py-3 px-3">
                   <div className="text-chalk font-medium">{p.title}</div>
                   <div className="font-mono text-xs text-dust">{p.slug}</div>

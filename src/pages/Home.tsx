@@ -6,16 +6,22 @@ import PostCard from '@/components/PostCard';
 import TerminalPanel from '@/components/effects/TerminalPanel';
 import GlitchFrame from '@/components/effects/GlitchFrame';
 import { useEffects } from '@/context/useEffects';
-import { getCuratedProjects, getFeaturedProjects } from '@/lib/github';
+import { getCuratedProjects } from '@/lib/github';
 import { getLatestPosts } from '@/lib/posts';
 
 export default function Home() {
   const { effectLevel } = useEffects();
   const latestPosts = getLatestPosts(3);
 
+  const frontPageProjectSlugs = ['clpr', 'patchwork', 'hasanara'];
+
   const projects = getCuratedProjects();
 
-  const featuredProjects = getFeaturedProjects(projects);
+  const featuredProjects = frontPageProjectSlugs
+    .map((slug) => projects.find((project) => project.slug === slug))
+    .filter((project): project is NonNullable<ReturnType<typeof projects.find>> =>
+      Boolean(project),
+    );
 
   return (
     <>
@@ -42,21 +48,20 @@ export default function Home() {
 
               {/* Positioning */}
               <p className="text-lg md:text-xl text-bone leading-relaxed mb-8 max-w-2xl animate-fade-in-up animation-delay-200">
-                Open-source tools for culture that shouldn't belong to platforms.
+                Open-source tools for culture outside the platforms.
               </p>
               <p className="text-base text-dust leading-relaxed mb-8 max-w-2xl animate-fade-in-up animation-delay-200">
-                We design and operate software for underground scenes, mutual aid, archives, and
-                independent media — built to be understood, self-hosted, and changed by the people
-                who use it.
+                We build and run software for underground scenes, mutual aid, archives, and
+                independent media so the people who use it can understand, self-host, and change it.
               </p>
 
               {/* CTAs */}
               <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-300">
                 <Button as="link" to="/projects" size="lg">
-                  Explore the Work
+                  Inspect projects
                 </Button>
                 <Button as="link" to="/zine" variant="secondary" size="lg">
-                  Read the Field Notes
+                  Read field notes
                 </Button>
               </div>
             </div>
@@ -90,15 +95,14 @@ export default function Home() {
       <section className="bg-soot torn-edge-bottom">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="mb-6">Independent by Design</h2>
+            <h2 className="mb-6">Independent on purpose</h2>
             <p className="text-bone leading-relaxed mb-4">
-              SUBCULT is an independent software studio. We build focused tools where commercial
-              platforms flatten communities, capture their history, or make participation depend on
-              surveillance.
+              SUBCULT is an independent software studio. We build tools where commercial platforms
+              flatten communities, capture their history, or tie participation to surveillance.
             </p>
             <p className="text-bone leading-relaxed mb-6">
-              Our work is public, documented, and honest about its current state. Some projects are
-              deployed; others are active experiments. We label the difference.
+              We publish our work and document its current state. The catalog marks projects as
+              active, incubating, or archived.
             </p>
             <TerminalPanel title="subcult.status" className="text-left max-w-md mx-auto">
               <div>
@@ -109,7 +113,7 @@ export default function Home() {
                 <span className="text-flicker">INDEPENDENT CULTURE</span>
                 <br />
                 <span className="text-chalk">method: </span>
-                <span className="text-cyan">BUILD // DOCUMENT // SHARE</span>
+                <span className="text-cyan">BUILD // TEST // DOCUMENT // PUBLISH STATUS</span>
               </div>
             </TerminalPanel>
           </div>
@@ -122,7 +126,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-8">
             <h2>
               <span className="text-dust font-mono text-sm mr-3">//</span>
-              Selected Work
+              Selected projects
             </h2>
             <Link
               to="/projects"
@@ -146,7 +150,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-8">
             <h2>
               <span className="text-dust font-mono text-sm mr-3">//</span>
-              Latest Field Notes
+              Latest field notes
             </h2>
             <Link
               to="/zine"
@@ -168,10 +172,10 @@ export default function Home() {
       <section className="py-16 md:py-24 border-t border-fog">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="font-mono text-xs text-dust mb-4">&gt; KEEP THE WORK INDEPENDENT</p>
-          <h2 className="mb-6">Support the Work</h2>
+          <h2 className="mb-6">Support the work</h2>
           <p className="text-bone max-w-2xl mx-auto mb-8 leading-relaxed">
-            Contributions help cover hosting, research, and the unglamorous maintenance that keeps
-            public software useful. The code stays open whether or not you contribute.
+            Contributions help pay for hosting, research, and maintenance. The code stays open
+            whether or not you contribute.
           </p>
           <Button
             as="a"

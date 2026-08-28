@@ -31,7 +31,9 @@ export default class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBo
     return (
       <div className="min-h-[50vh] flex items-center justify-center p-8 bg-void">
         <div className="max-w-xl w-full bg-soot border-2 border-signal p-8 shadow-brutal text-center">
-          <p className="font-mono text-signal text-sm mb-4">&gt; ERROR {this.state.error ? '500' : 'unknown'}</p>
+          <p className="font-mono text-signal text-sm mb-4">
+            &gt; ERROR {this.state.error ? '500' : 'unknown'}
+          </p>
           <h2 className="font-display uppercase text-chalk text-2xl mb-4">
             {this.props.fallbackTitle ?? 'SIGNAL DIED'}
           </h2>

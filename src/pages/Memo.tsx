@@ -7,23 +7,23 @@ import { Radio, Rocket, Film, Sparkles } from 'lucide-react';
 const WHAT_YOU_GET = [
   {
     icon: Radio,
-    label: 'Monthly Infrastructure Memo',
-    detail: 'What shipped, what broke, what we learned. Unfiltered build logs.',
+    label: 'A monthly workshop report',
+    detail: "Read a clear record of each month's releases and failures, with lessons from repairs.",
   },
   {
     icon: Rocket,
-    label: 'Early Access Alerts',
-    detail: 'Be first to know when new tools or projects drop.',
+    label: 'New release alerts',
+    detail: 'Hear when a new tool or project is ready to use.',
   },
   {
     icon: Film,
-    label: 'Behind-the-Scenes',
-    detail: 'Process notes, experiments, and prototypes before they go public.',
+    label: 'Work in progress',
+    detail: 'See process notes, experiments, and prototypes before publication.',
   },
   {
     icon: Sparkles,
-    label: 'Roadmap Previews',
-    detail: "See what's coming next. Sometimes vote on priorities.",
+    label: 'Roadmap notes',
+    detail: 'See what we plan to build next. Some memos invite you to vote on priorities.',
   },
 ];
 
@@ -31,8 +31,8 @@ export default function Memo() {
   return (
     <>
       <SEOHead
-        title="Memo — Newsletter"
-        description="Subscribe to the Subcult Infrastructure Memo. Monthly updates on what shipped, what's coming, and lessons from the workshop."
+        title="Memo | Newsletter"
+        description="Subscribe to the monthly Subcult Infrastructure Memo for build reports, release alerts, and workshop notes."
         path="/memo"
       />
 
@@ -42,8 +42,8 @@ export default function Memo() {
           <p className="font-mono text-xs text-dust mb-3">&gt; BROADCAST.subscribe()</p>
           <h1 className="mb-6">Subcult Infrastructure Memo</h1>
           <p className="text-bone max-w-2xl mx-auto text-lg leading-relaxed">
-            A monthly transmission from the workshop. What shipped, what broke, what we learned. No
-            marketing fluff. No growth hacks. Just signal.
+            Subscribe for one plain monthly email from the workshop. Each issue covers recent
+            releases and failures. It also shows the next work on the bench.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export default function Memo() {
         <div className="mb-16">
           <h2 className="text-center mb-8">
             <span className="text-dust font-mono text-sm mr-3">//</span>
-            What You'll Receive
+            What You Will Receive
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
@@ -87,9 +87,9 @@ export default function Memo() {
               <span className="text-cyan">one-click, always</span>
               <br />
               <br />
-              <span className="text-dust"># we respect your inbox.</span>
+              <span className="text-dust"># we do not sell your address.</span>
               <br />
-              <span className="text-dust"># no spam. no sell. no surveillance.</span>
+              <span className="text-dust"># no tracking or spam.</span>
             </div>
           </TerminalPanel>
         </div>

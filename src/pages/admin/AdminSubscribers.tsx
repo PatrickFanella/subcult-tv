@@ -23,7 +23,8 @@ export default function AdminSubscribers() {
 
       {subscribers && (
         <p className="font-mono text-xs text-dust mb-4">
-          {subscribers.total} active subscribers · page {subscribers.page}/{subscribers.total_pages || 1}
+          {subscribers.total} active subscribers · page {subscribers.page}/
+          {subscribers.total_pages || 1}
         </p>
       )}
 
@@ -40,7 +41,10 @@ export default function AdminSubscribers() {
           </thead>
           <tbody>
             {subscribers?.data.map((s) => (
-              <tr key={s.id} className="border-b border-fog/50 hover:bg-ash transition-colors duration-200">
+              <tr
+                key={s.id}
+                className="border-b border-fog/50 hover:bg-ash transition-colors duration-200"
+              >
                 <td className="py-3 px-3 font-mono text-sm text-chalk">{s.email}</td>
                 <td className="py-3 px-3">
                   <span
@@ -65,11 +69,7 @@ export default function AdminSubscribers() {
         </table>
       </div>
 
-      <AdminPagination
-        page={page}
-        totalPages={subscribers?.total_pages ?? 1}
-        onChange={setPage}
-      />
+      <AdminPagination page={page} totalPages={subscribers?.total_pages ?? 1} onChange={setPage} />
     </div>
   );
 }

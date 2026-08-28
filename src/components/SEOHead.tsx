@@ -16,13 +16,13 @@ interface SEOHeadProps {
  */
 export default function SEOHead({
   title,
-  description = 'SUBCULT is an independent studio building open-source tools for underground scenes, mutual aid, archives, and independent media.',
+  description = 'SUBCULT builds open-source tools for underground scenes, mutual aid, archives, and independent media.',
   path = '/',
   image = '/og-image.png',
   noIndex = false,
 }: SEOHeadProps) {
   const fullTitle =
-    title === 'Home' ? 'SUBCULT — Open-source tools for independent culture' : `${title} — SUBCULT`;
+    title === 'Home' ? 'SUBCULT | Open-source tools for independent culture' : `${title} | SUBCULT`;
   const url = `${SITE_URL}${path}`;
   const absoluteImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
 

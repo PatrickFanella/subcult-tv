@@ -4,36 +4,34 @@ import Card from '@/components/ui/Card';
 import TerminalPanel from '@/components/effects/TerminalPanel';
 
 const WHAT_WE_BUILD = [
-  'Open-source developer tools and infrastructure',
+  'Developer tools and infrastructure with public repositories',
   'Self-hosted productivity and creative software',
-  'Media production pipelines (audio, video, publishing)',
-  'Privacy-first alternatives to surveillance tech',
-  'Educational content and technical documentation',
-  'Community platforms for builders and creators',
+  'Audio, video, transcription, and publishing tools',
+  'Data, research, and source-tracing tools',
+  'Technical documentation and zines',
+  'Software for events, governance, mutual aid, and community discovery',
 ];
 
 const WHY_NOW = [
   {
-    title: 'Market Timing',
-    detail:
-      'Growing demand for privacy-respecting, self-hosted solutions as trust in big tech erodes.',
+    title: 'Public Work',
+    detail: 'The project catalog links to working repositories and records each project state.',
   },
   {
-    title: 'Technical Foundation',
-    detail:
-      'Core infrastructure already built. Shipping weekly. Public roadmap with demonstrated execution.',
+    title: 'Operating Model',
+    detail: 'Patreon support funds public work. It does not buy private access or roadmap control.',
   },
   {
-    title: 'Community Traction',
-    detail: 'Active open-source contributors and early supporters. Real users, not vanity metrics.',
+    title: 'Funding Use',
+    detail: 'Funds are allocated to engineering, infrastructure, community work, and operations.',
   },
 ];
 
 const WHATS_NEXT = [
-  { milestone: 'Q1 2026', item: 'Public launch + Zine series release' },
-  { milestone: 'Q2 2026', item: 'First commercial tool beta + paid tiers' },
-  { milestone: 'Q3 2026', item: 'Media production suite v1 launch' },
-  { milestone: 'Q4 2026', item: 'Platform expansion + partnership pilots' },
+  { milestone: 'Current', item: 'Maintain active projects and the public project catalog' },
+  { milestone: 'Next', item: 'Move incubating projects toward usable releases' },
+  { milestone: 'Next', item: 'Evaluate commercial tiers and implementation consulting' },
+  { milestone: 'Later', item: 'Fund project work through sponsorships and partnerships' },
 ];
 
 export default function Invest() {
@@ -42,7 +40,7 @@ export default function Invest() {
       <SEOHead
         title="Invest"
         noIndex
-        description="Partner with SUBCULT. We're building open-source tools and infrastructure for the counterculture. View our investor materials and get in touch."
+        description="SUBCULT investor materials covering public repositories, project states, funding, and planned work."
         path="/invest"
       />
 
@@ -52,8 +50,8 @@ export default function Invest() {
           <p className="font-mono text-xs text-dust mb-3">&gt; PARTNERSHIP.inquiry()</p>
           <h1 className="mb-6">Partner with SUBCULT</h1>
           <p className="text-bone max-w-2xl mx-auto text-lg leading-relaxed">
-            We're building tools and infrastructure for creators, developers, and anyone who refuses
-            to be optimized. Here's what we're doing and how you can be part of it.
+            Review the public repositories, current project states, operating model, and planned use
+            of funds.
           </p>
         </div>
 
@@ -80,7 +78,7 @@ export default function Invest() {
         <div className="mb-16">
           <h2 className="mb-6">
             <span className="text-dust font-mono text-sm mr-3">//</span>
-            Why Now
+            Current Position
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -100,7 +98,7 @@ export default function Invest() {
             What's Next
           </h2>
 
-          <TerminalPanel title="roadmap.2026" className="max-w-2xl">
+          <TerminalPanel title="roadmap.current" className="max-w-2xl">
             <div className="space-y-2">
               {WHATS_NEXT.map((item, i) => (
                 <div key={i}>
@@ -125,23 +123,30 @@ export default function Invest() {
               <h4 className="font-mono text-sm text-glow mb-1">Pitch Deck</h4>
               <p className="text-[10px] text-dust font-mono mb-2">STANDARD</p>
               <p className="text-xs text-bone mb-4">
-                Full overview: vision, market, product, traction, and the ask. Clean, professional
-                format.
+                Public work, current project states, operating model, roadmap, and use of funds.
               </p>
               <div className="flex gap-2">
-                <Button as="link" to="/deck" variant="primary" size="sm" className="flex-1">
-                  View
+                <Button
+                  as="link"
+                  to="/deck"
+                  aria-label="View standard deck"
+                  variant="primary"
+                  size="sm"
+                  className="flex-1"
+                >
+                  View standard
                 </Button>
                 <Button
                   as="a"
                   href="/press-kit/subcult-deck.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Download standard deck PDF"
                   variant="ghost"
                   size="sm"
                   className="flex-1"
                 >
-                  PDF ↗
+                  Standard PDF ↗
                 </Button>
               </div>
             </Card>
@@ -149,23 +154,29 @@ export default function Invest() {
             <Card className="p-5">
               <h4 className="font-mono text-sm text-glow mb-1">Pitch Deck</h4>
               <p className="text-[10px] text-dust font-mono mb-2">BRAND EDITION</p>
-              <p className="text-xs text-bone mb-4">
-                Same content, full SUBCULT aesthetic. Glitch effects, terminal panels, zine margins.
-              </p>
+              <p className="text-xs text-bone mb-4">The same facts in the SUBCULT visual style.</p>
               <div className="flex gap-2">
-                <Button as="link" to="/deck/brand" variant="signal" size="sm" className="flex-1">
-                  View
+                <Button
+                  as="link"
+                  to="/deck/brand"
+                  aria-label="View brand deck"
+                  variant="signal"
+                  size="sm"
+                  className="flex-1"
+                >
+                  View brand
                 </Button>
                 <Button
                   as="a"
                   href="/press-kit/subcult-deck-brand.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Download brand deck PDF"
                   variant="ghost"
                   size="sm"
                   className="flex-1"
                 >
-                  PDF ↗
+                  Brand PDF ↗
                 </Button>
               </div>
             </Card>
@@ -174,22 +185,30 @@ export default function Invest() {
               <h4 className="font-mono text-sm text-glow mb-1">One-Pager</h4>
               <p className="text-[10px] text-dust font-mono mb-2">STANDARD</p>
               <p className="text-xs text-bone mb-4">
-                Executive summary. Compact single-page overview for quick sharing.
+                Concise brief on projects, funding, and planned work.
               </p>
               <div className="flex gap-2">
-                <Button as="link" to="/onepager" variant="primary" size="sm" className="flex-1">
-                  View
+                <Button
+                  as="link"
+                  to="/onepager"
+                  aria-label="View standard one-pager"
+                  variant="primary"
+                  size="sm"
+                  className="flex-1"
+                >
+                  View standard
                 </Button>
                 <Button
                   as="a"
                   href="/press-kit/subcult-onepager.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Download standard one-pager PDF"
                   variant="ghost"
                   size="sm"
                   className="flex-1"
                 >
-                  PDF ↗
+                  Standard PDF ↗
                 </Button>
               </div>
             </Card>
@@ -198,28 +217,30 @@ export default function Invest() {
               <h4 className="font-mono text-sm text-glow mb-1">One-Pager</h4>
               <p className="text-[10px] text-dust font-mono mb-2">BRAND EDITION</p>
               <p className="text-xs text-bone mb-4">
-                Zine-style executive summary with full SUBCULT visual treatment.
+                The same concise brief in the SUBCULT visual style.
               </p>
               <div className="flex gap-2">
                 <Button
                   as="link"
                   to="/onepager/brand"
+                  aria-label="View brand one-pager"
                   variant="signal"
                   size="sm"
                   className="flex-1"
                 >
-                  View
+                  View brand
                 </Button>
                 <Button
                   as="a"
                   href="/press-kit/subcult-onepager-brand.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Download brand one-pager PDF"
                   variant="ghost"
                   size="sm"
                   className="flex-1"
                 >
-                  PDF ↗
+                  Brand PDF ↗
                 </Button>
               </div>
             </Card>
@@ -228,23 +249,21 @@ export default function Invest() {
 
         {/* Contact CTA */}
         <div className="text-center py-12 border-t border-fog">
-          <h2 className="mb-4">Let's Talk</h2>
+          <h2 className="mb-4">Investor Contact</h2>
           <p className="text-bone max-w-xl mx-auto mb-8">
-            Interested in partnering? Have questions? We'd love to hear from you.
+            For funding or partnership questions, email invest@subcult.tv or use the contact form.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button as="a" href="mailto:invest@subcult.tv" size="lg">
-              Email Us ↗
+              Email invest@subcult.tv ↗
             </Button>
             <Button as="link" to="/contact" variant="secondary" size="lg">
-              Contact Us
+              Contact form
             </Button>
           </div>
 
-          <p className="font-mono text-xs text-dust mt-6">
-            invest@subcult.tv — We respond within 48 hours.
-          </p>
+          <p className="font-mono text-xs text-dust mt-6">invest@subcult.tv</p>
         </div>
       </div>
     </>

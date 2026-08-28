@@ -1,18 +1,25 @@
-# Press Kit Assets
+# Press kit assets
 
-This directory contains brand assets for Subculture Collective / SUBCULT.
+This directory is reserved for Subculture Collective and SUBCULT brand assets.
 
-## Contents (placeholders — replace with final assets)
+## Current investor materials
 
-- `subcult-logo.svg` — Primary logo mark (SVG)
-- `subcult-logo.png` — Primary logo mark (PNG, 512x512)
-- `subcult-banner-wide.png` — Wide banner (1200x400)
-- `subcult-banner-square.png` — Square banner (800x800)
-- `subcult-wordmark.svg` — Text-only wordmark
+- `subcult-deck.pdf`: Standard pitch deck
+- `subcult-deck-brand.pdf`: Brand-edition pitch deck
+- `subcult-onepager.pdf`: Standard concise brief
+- `subcult-onepager-brand.pdf`: Brand-edition concise brief
 
-## Color Usage
+## Planned logo and banner assets
 
-See the Press Kit page at https://subcult.tv/press for full color palette and usage guidelines.
+- `subcult-logo.svg`: Primary logo mark in SVG format
+- `subcult-logo.png`: Primary logo mark in PNG format, 512x512
+- `subcult-banner-wide.png`: Wide banner, 1200x400
+- `subcult-banner-square.png`: Square banner, 800x800
+- `subcult-wordmark.svg`: Text-only wordmark
+
+## Color usage
+
+See https://subcult.tv/press for the color palette and usage rules.
 
 ## Typography
 

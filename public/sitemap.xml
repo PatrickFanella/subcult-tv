@@ -94,12 +94,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://subcult.tv/projects/changemaker</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://subcult.tv/projects/clpr</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -136,15 +130,9 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://subcult.tv/projects/dsa-slate</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://subcult.tv/projects/echo-trails</loc>
     <lastmod>2026-08-18</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -184,26 +172,32 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://subcult.tv/projects/llama-line</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://subcult.tv/projects/magic-playlists</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://subcult.tv/projects/nearbody</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://subcult.tv/projects/ocq</loc>
-    <lastmod>2026-08-18</lastmod>
+    <loc>https://subcult.tv/projects/obsidian-plugin-metronome-tuner</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/projects/omarchy-plugin-shelfish</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/projects/omarchy-plugin-superproductivity</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/projects/omarchy-plugin-topbar</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -214,12 +208,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://subcult.tv/projects/open-pilot</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://subcult.tv/projects/paqr</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -228,7 +216,7 @@
   <url>
     <loc>https://subcult.tv/projects/patchwork</loc>
     <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -264,7 +252,7 @@
   <url>
     <loc>https://subcult.tv/projects/subcorp</loc>
     <lastmod>2026-08-18</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -288,7 +276,7 @@
   <url>
     <loc>https://subcult.tv/projects/subcults</loc>
     <lastmod>2026-08-18</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>

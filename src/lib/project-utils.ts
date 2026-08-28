@@ -8,6 +8,6 @@ export const statusColors: Record<Project['status'], string> = {
 
 export const statusLabels: Record<Project['status'], string> = {
   active: '● ACTIVE',
-  incubating: '◐ IN DEVELOPMENT',
+  incubating: '◐ INCUBATING',
   archived: '○ ARCHIVED',
 };

@@ -6,7 +6,7 @@ export default function About() {
     <>
       <SEOHead
         title="About"
-        description="SUBCULT is an independent studio building open-source tools for underground scenes, mutual aid, archives, and independent media."
+        description="How SUBCULT builds open-source tools for underground scenes, mutual aid, archives, and independent media."
         path="/about"
       />
 
@@ -14,9 +14,9 @@ export default function About() {
         {/* Header */}
         <div className="mb-16">
           <p className="font-mono text-xs text-dust mb-3">&gt; cat /about/README.md</p>
-          <h1 className="mb-6">About // Studio</h1>
+          <h1 className="mb-6">About // studio</h1>
           <p className="text-bone max-w-3xl text-lg leading-relaxed">
-            SUBCULT is an independent software studio building open-source tools for underground
+            SUBCULT is an independent software studio. We build open-source tools for underground
             scenes, mutual aid, archives, and independent media.
           </p>
         </div>
@@ -30,24 +30,22 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-bone leading-relaxed">
               <p>
-                We work where commercial platforms are a poor fit: small communities, local scenes,
-                shared memory, and cooperation that should not depend on surveillance or algorithmic
-                reach.
+                We work with small communities, local scenes, shared memory, and mutual aid. This
+                work should not depend on surveillance or algorithmic reach.
               </p>
               <p>
-                The software is developed in public whenever practical. Repositories, documentation,
-                and project status are available so people can inspect the work and judge it on the
-                evidence.
+                When practical, we develop the software in public. Repositories, documentation, and
+                project status let people inspect the work and judge the evidence.
               </p>
               <p>
-                Our mission is simple:{' '}
+                Our mission:{' '}
                 <span className="text-signal font-bold">
                   give independent culture tools it can understand, host, adapt, and keep.
                 </span>
               </p>
               <p>
-                That means making smaller claims, documenting limitations, and treating maintenance
-                as part of the work rather than an afterthought.
+                We make bounded claims, document limitations, and treat maintenance as part of the
+                work.
               </p>
             </div>
           </div>
@@ -62,15 +60,15 @@ export default function About() {
               {[
                 {
                   label: 'Privacy by default',
-                  detail: 'Collect less, explain what remains, and make consent meaningful.',
+                  detail: 'Collect less data. Explain what remains. Ask for clear consent.',
                 },
                 {
                   label: 'Open source as baseline',
-                  detail: 'Not a marketing strategy. A principle.',
+                  detail: 'Source access is part of the work.',
                 },
                 {
                   label: 'Evidence over hype',
-                  detail: 'Status, limitations, and outcomes stay clear.',
+                  detail: 'Publish project status, limitations, and outcomes.',
                 },
                 {
                   label: 'Self-hosting as independence',
@@ -80,7 +78,7 @@ export default function About() {
                   label: 'Documentation is a feature',
                   detail: "If it's not documented, it doesn't exist.",
                 },
-                { label: 'Ugly-beautiful design', detail: 'Communicates first. Decorates second.' },
+                { label: 'Ugly-beautiful design', detail: 'Communication comes first.' },
               ].map((v) => (
                 <li key={v.label} className="border-l-2 border-signal pl-4">
                   <span className="font-mono text-sm text-glow block">{v.label}</span>
@@ -96,7 +94,7 @@ export default function About() {
           <div className="bg-ash border border-fog p-6">
             <h3 className="text-static mb-4">
               <span className="font-mono text-sm mr-2">✓</span>
-              What We Build
+              What we build
             </h3>
             <ul className="space-y-2 text-sm text-bone">
               <li>→ Privacy-respecting software</li>
@@ -111,7 +109,7 @@ export default function About() {
           <div className="bg-ash border border-fog p-6">
             <h3 className="text-signal mb-4">
               <span className="font-mono text-sm mr-2">✗</span>
-              What We Won't Build
+              What we won't build
             </h3>
             <ul className="space-y-2 text-sm text-bone">
               <li>→ Surveillance disguised as analytics</li>
@@ -128,7 +126,7 @@ export default function About() {
         <div className="mt-16">
           <h2 className="mb-6">
             <span className="text-dust font-mono text-sm mr-3">//</span>
-            How We Work
+            How we work
           </h2>
 
           <TerminalPanel title="subcult.practice" className="max-w-2xl">
@@ -156,10 +154,10 @@ export default function About() {
         {/* Philosophy */}
         <div className="mt-16 py-12 border-t border-fog text-center">
           <blockquote className="text-lg text-bone italic max-w-2xl mx-auto">
-            "The best software is software that lets you forget it exists. It does its job, respects
-            your time, and gets out of the way."
+            "Check the public catalog before you take our word for it. It shows project status and
+            links to available source and documentation."
           </blockquote>
-          <p className="font-mono text-xs text-dust mt-4">— Subculture Collective</p>
+          <p className="font-mono text-xs text-dust mt-4">&gt; next: open /projects</p>
         </div>
       </div>
     </>

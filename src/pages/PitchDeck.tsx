@@ -1,12 +1,7 @@
 import SEOHead from '@/components/SEOHead';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
-import {
-  WHAT_WE_BUILD,
-  ACTIVE_PROJECTS,
-  ROADMAP,
-  FUND_ALLOCATION,
-} from '@/lib/investor-content';
+import { WHAT_WE_BUILD, ACTIVE_PROJECTS, ROADMAP, FUND_ALLOCATION } from '@/lib/investor-content';
 
 export default function PitchDeck() {
   return (
@@ -28,7 +23,7 @@ export default function PitchDeck() {
           <p className="text-xl text-bone max-w-2xl leading-relaxed mb-4">
             Tools, media, and infrastructure for the counterculture.
           </p>
-          <p className="font-mono text-sm text-dust">subcult.tv — February 2026</p>
+          <p className="font-mono text-sm text-dust">subcult.tv | August 2026</p>
         </section>
 
         {/* Slide 2: Problem */}
@@ -38,22 +33,22 @@ export default function PitchDeck() {
             <Card className="p-6 h-full flex flex-col">
               <h4 className="text-signal font-mono text-sm mb-3">Surveillance Tools</h4>
               <p className="text-bone text-sm flex-1">
-                Creator and developer tools are built on surveillance economics. Your workflow data
-                funds someone else's ad business. Privacy is an afterthought.
+                Hosted tools can collect workflow data and tie core work to vendor accounts and
+                policies.
               </p>
             </Card>
             <Card className="p-6 h-full flex flex-col">
               <h4 className="text-signal font-mono text-sm mb-3">Consolidated Infrastructure</h4>
               <p className="text-bone text-sm flex-1">
-                A handful of corporations control the platforms, hosting, and distribution channels.
-                Lock-in is the default. Portability is a fantasy.
+                Hosted infrastructure can make migration, independent operation, and long-term
+                access difficult.
               </p>
             </Card>
             <Card className="p-6 h-full flex flex-col">
               <h4 className="text-signal font-mono text-sm mb-3">Underfunded Open Source</h4>
               <p className="text-bone text-sm flex-1">
-                The open-source ecosystem powers the internet but runs on burnout and good will.
-                Sustainable funding models are rare and poorly distributed.
+                Public software requires ongoing engineering, documentation, maintenance, and
+                hosting.
               </p>
             </Card>
           </div>
@@ -68,30 +63,30 @@ export default function PitchDeck() {
                 <div className="flex items-start gap-4">
                   <span className="font-mono text-signal text-lg">01</span>
                   <div>
-                    <h4 className="text-glow font-mono text-sm mb-1">Privacy-First, Open Source</h4>
+                    <h4 className="text-glow font-mono text-sm mb-1">Public and Self-Hosted</h4>
                     <p className="text-bone text-sm">
-                      Every tool we ship is open source. No telemetry, no tracking, no ads. You own
-                      your data and your workflow.
+                      The catalog links to public repositories. Projects offer self-hosting where
+                      their current implementation supports it.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <span className="font-mono text-signal text-lg">02</span>
                   <div>
-                    <h4 className="text-glow font-mono text-sm mb-1">Community-Funded</h4>
+                    <h4 className="text-glow font-mono text-sm mb-1">Public-Work Funding</h4>
                     <p className="text-bone text-sm">
-                      Funded by the people who use the tools. Patreon, commercial tiers, and
-                      consulting — not VC extraction loops.
+                      Patreon support funds public work. It does not buy private access or roadmap
+                      control. Commercial services remain planned.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <span className="font-mono text-signal text-lg">03</span>
                   <div>
-                    <h4 className="text-glow font-mono text-sm mb-1">Ship Weekly</h4>
+                    <h4 className="text-glow font-mono text-sm mb-1">Published Project States</h4>
                     <p className="text-bone text-sm">
-                      Public roadmap, weekly releases, transparent development. We build in the open
-                      because trust is earned.
+                      The public catalog records active and incubating work. Repository history
+                      shows the work behind each listed project.
                     </p>
                   </div>
                 </div>
@@ -113,9 +108,9 @@ export default function PitchDeck() {
           </div>
         </section>
 
-        {/* Slide 5: Active Projects */}
+        {/* Slide 5: Selected Projects */}
         <section className="deck-slide py-20">
-          <h2 className="mb-10 text-center">Active Projects</h2>
+          <h2 className="mb-10 text-center">Selected Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {ACTIVE_PROJECTS.map((proj) => (
               <Card key={proj.name} className="p-6 h-full flex flex-col">
@@ -138,52 +133,47 @@ export default function PitchDeck() {
 
         {/* Slide 6: Market Opportunity */}
         <section className="deck-slide py-20">
-          <h2 className="mb-10 text-center">Market Opportunity</h2>
+          <h2 className="mb-10 text-center">Operating Model</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <Card className="p-6 text-center">
-              <p className="text-3xl font-display text-signal mb-2">$32B+</p>
+              <p className="text-3xl font-display text-signal mb-2">Public</p>
               <p className="font-mono text-xs text-dust uppercase">
-                Open Source Software Market (2026)
+                Repositories Linked in Catalog
               </p>
             </Card>
             <Card className="p-6 text-center">
-              <p className="text-3xl font-display text-signal mb-2">40%</p>
-              <p className="font-mono text-xs text-dust uppercase">
-                YoY Growth in Self-Hosted Solutions
-              </p>
+              <p className="text-3xl font-display text-signal mb-2">Mixed</p>
+              <p className="font-mono text-xs text-dust uppercase">Active and Incubating Work</p>
             </Card>
             <Card className="p-6 text-center">
-              <p className="text-3xl font-display text-signal mb-2">68%</p>
-              <p className="font-mono text-xs text-dust uppercase">
-                Developers Prefer Privacy-First Tools
-              </p>
+              <p className="text-3xl font-display text-signal mb-2">Four Uses</p>
+              <p className="font-mono text-xs text-dust uppercase">Defined Funding Allocation</p>
             </Card>
           </div>
           <p className="text-center text-xs text-dust font-mono">
-            * Market estimates based on industry reports. Privacy survey data from developer
-            community polls.
+            Project states come from the public catalog. Funding uses are listed in this deck.
           </p>
         </section>
 
         {/* Slide 7: Traction */}
         <section className="deck-slide py-20">
-          <h2 className="mb-10 text-center">Traction</h2>
+          <h2 className="mb-10 text-center">Project Evidence</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <Card className="p-5 text-center">
-              <p className="text-2xl font-display text-glow mb-1">5+</p>
-              <p className="font-mono text-xs text-dust">Public Repos</p>
+              <p className="text-2xl font-display text-glow mb-1">37</p>
+              <p className="font-mono text-xs text-dust">Catalogued Repos</p>
             </Card>
             <Card className="p-5 text-center">
-              <p className="text-2xl font-display text-glow mb-1">Weekly</p>
-              <p className="font-mono text-xs text-dust">Shipping Cadence</p>
+              <p className="text-2xl font-display text-glow mb-1">Active</p>
+              <p className="font-mono text-xs text-dust">Current Work</p>
             </Card>
             <Card className="p-5 text-center">
-              <p className="text-2xl font-display text-glow mb-1">[TBD]</p>
-              <p className="font-mono text-xs text-dust">Newsletter Subs</p>
+              <p className="text-2xl font-display text-glow mb-1">Incubating</p>
+              <p className="font-mono text-xs text-dust">Earlier-Stage Work</p>
             </Card>
             <Card className="p-5 text-center">
-              <p className="text-2xl font-display text-glow mb-1">[TBD]</p>
-              <p className="font-mono text-xs text-dust">Patreon Members</p>
+              <p className="text-2xl font-display text-glow mb-1">Public</p>
+              <p className="font-mono text-xs text-dust">Repository Links</p>
             </Card>
           </div>
           <div className="mt-8">
@@ -192,9 +182,7 @@ export default function PitchDeck() {
               <ul className="space-y-2 text-sm text-bone">
                 <li className="flex items-start gap-2">
                   <span className="text-static">+</span>
-                  <span>
-                    Fully operational website with portfolio, zine, and investor materials
-                  </span>
+                  <span>Public website with project catalog, zine, and investor materials</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-static">+</span>
@@ -203,7 +191,7 @@ export default function PitchDeck() {
                 <li className="flex items-start gap-2">
                   <span className="text-static">+</span>
                   <span>
-                    Active development across multiple projects with public commit history
+                    Project catalog with active and incubating states and repository links
                   </span>
                 </li>
               </ul>
@@ -221,8 +209,7 @@ export default function PitchDeck() {
                 <h4 className="font-mono text-sm text-glow">Patreon</h4>
               </div>
               <p className="text-sm text-bone flex-1">
-                Community funding via Patreon tiers. Members get early access, behind-the-scenes
-                updates, and input on the roadmap.
+                Support funds public work. It does not buy private access or roadmap control.
               </p>
             </Card>
             <Card className="p-6 h-full flex flex-col">
@@ -240,8 +227,7 @@ export default function PitchDeck() {
                 <h4 className="font-mono text-sm text-glow">Consulting</h4>
               </div>
               <p className="text-sm text-bone flex-1">
-                Implementation consulting for organizations adopting open-source infrastructure and
-                privacy-first tooling.
+                Implementation consulting for organizations adopting open-source infrastructure.
               </p>
             </Card>
             <Card className="p-6 h-full flex flex-col">
@@ -250,8 +236,7 @@ export default function PitchDeck() {
                 <h4 className="font-mono text-sm text-glow">Sponsorships</h4>
               </div>
               <p className="text-sm text-bone flex-1">
-                Project and content sponsorships from aligned companies. No surveillance sponsors,
-                no dark patterns.
+                Project and content sponsorships reviewed against the scope of the public work.
               </p>
             </Card>
           </div>
@@ -295,19 +280,19 @@ export default function PitchDeck() {
           </div>
 
           <div className="text-center py-8 border-t border-fog">
-            <h3 className="mb-4">Let's Talk</h3>
+            <h3 className="mb-4">Investor Contact</h3>
             <p className="text-bone max-w-xl mx-auto mb-8 text-sm">
-              Interested in partnering? We'd love to hear from you.
+              For funding or partnership questions, email invest@subcult.tv or use the contact form.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button as="a" href="mailto:invest@subcult.tv" size="lg">
-                Email Us
+                Email invest@subcult.tv
               </Button>
               <Button as="link" to="/contact" variant="secondary" size="lg">
-                Contact Us
+                Contact form
               </Button>
             </div>
-            <p className="font-mono text-xs text-dust mt-6">invest@subcult.tv — subcult.tv</p>
+            <p className="font-mono text-xs text-dust mt-6">invest@subcult.tv | subcult.tv</p>
           </div>
         </section>
       </div>

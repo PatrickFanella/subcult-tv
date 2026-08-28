@@ -6,21 +6,21 @@ import TerminalPanel from '@/components/effects/TerminalPanel';
 const SUPPORT_OUTCOMES = [
   {
     icon: Server,
-    label: 'Give public work a stable home',
+    label: 'Pay the infrastructure bills',
     detail:
-      'Contributions cover domains, storage, hosting, and the infrastructure behind software people can inspect and use.',
+      'Contributions pay for domains, storage, hosting, and the services that keep public software available.',
   },
   {
     icon: Wrench,
-    label: 'Make maintenance possible',
+    label: 'Fund maintenance time',
     detail:
-      'Shipping is the beginning. Support creates time for bug fixes, security updates, documentation, and careful releases.',
+      'Support pays for the hours spent fixing bugs, applying security updates, writing documentation, and preparing releases.',
   },
   {
     icon: FlaskConical,
-    label: 'Create room to experiment',
+    label: 'Test useful ideas',
     detail:
-      'Early research can follow a community need before it has a business model or a polished product pitch.',
+      'Support gives early research time to answer a community need before the idea has a business model.',
   },
 ];
 
@@ -55,12 +55,12 @@ const FAQS = [
   {
     question: 'Does payment unlock the software?',
     answer:
-      'No. The useful parts stay public. Support pays for the work; it does not turn public software into a gated product.',
+      'No. The software and useful project materials stay public. A payment funds the work and never unlocks a private-access tier.',
   },
   {
     question: 'What do supporters receive?',
     answer:
-      'The same honest project updates, releases, repositories, and field notes available to the public. We are not selling artificial access or a private status tier.',
+      'Supporters receive the same project updates, releases, repositories, and field notes as everyone else. Patreon support does not buy exclusive content, early access, or private status.',
   },
   {
     question: 'Can I help without spending money?',
@@ -82,7 +82,7 @@ export default function Patreon() {
     <>
       <SEOHead
         title="Support Independent Open-Source Work"
-        description="Help SUBCULT maintain public infrastructure, document open-source tools, and explore software for independent culture."
+        description="Fund SUBCULT's hosting, maintenance, documentation, and research. Patreon support keeps the resulting work public."
         path="/support"
       />
 
@@ -93,16 +93,16 @@ export default function Patreon() {
               <div className="min-w-0">
                 <p className="font-mono text-xs text-dust mb-4">&gt; MEMBERSHIP_WITHOUT_A_GATE</p>
                 <h1 className="mb-6 max-w-4xl text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.98] break-words">
-                  Keep Independent Tools Independent
+                  Fund Public Tools for Independent Culture
                 </h1>
                 <p className="text-bone max-w-3xl text-lg md:text-xl leading-relaxed mb-5">
                   SUBCULT builds software for communities that commercial platforms overlook,
-                  flatten, or exploit. Monthly support gives that work time, infrastructure, and a
-                  future without putting the useful parts behind a paywall.
+                  flatten, or exploit. Monthly support pays hosting bills and funds maintenance,
+                  documentation, and research. The resulting work stays public.
                 </p>
                 <p className="text-dust max-w-2xl leading-relaxed mb-8">
-                  You are not buying exclusive access. You are helping public work remain public—and
-                  making careful maintenance possible after the launch announcement disappears.
+                  Patreon has no private-access tier. Every supporter funds the same public work
+                  that anyone can inspect and use.
                 </p>
                 <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
                   <Button
@@ -142,7 +142,7 @@ export default function Patreon() {
                   <span className="text-cyan">REPOS // RELEASES // NOTES</span>
                   <br />
                   <br />
-                  <span className="text-dust"># support the work, not a velvet rope.</span>
+                  <span className="text-dust"># contributions fund public work.</span>
                 </div>
               </TerminalPanel>
             </div>
@@ -154,11 +154,10 @@ export default function Patreon() {
             <p className="font-mono text-xs text-dust pt-2">// 01 · WHY SUPPORT</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
-                <h2 className="mb-4">Fund the Part After the Idea</h2>
+                <h2 className="mb-4">Where Your Contribution Goes</h2>
                 <p className="text-bone leading-relaxed">
-                  Ideas are cheap. Dependable public software requires hosting, testing,
-                  documentation, security work, and repeated attention. That is where contributions
-                  go.
+                  Contributions pay direct infrastructure costs and working time. That keeps the
+                  software online and funds maintenance, documentation, and security updates.
                 </p>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -181,8 +180,7 @@ export default function Patreon() {
           <div className={`${SHELL} ${RAIL}`}>
             <p className="font-mono text-xs text-signal pt-2">// 02 · CONTRACT</p>
             <blockquote className="min-w-0 font-display text-3xl md:text-5xl uppercase tracking-wide text-glow leading-tight break-words">
-              The code stays open. The limitations stay visible. The contribution makes more work
-              possible.
+              Supporters fund public work. They do not buy a private-access tier.
             </blockquote>
           </div>
         </section>
@@ -192,7 +190,7 @@ export default function Patreon() {
             <p className="font-mono text-xs text-dust pt-2">// 03 · CONTRIBUTE</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
-                <h2 className="mb-4">Other Ways to Move the Work Forward</h2>
+                <h2 className="mb-4">Other Ways to Help</h2>
                 <p className="text-bone leading-relaxed">
                   A useful bug report, a documentation fix, or an honest introduction can matter as
                   much as a subscription. Choose the contribution you can sustain.
@@ -257,10 +255,10 @@ export default function Patreon() {
           <div className={`${SHELL} ${RAIL}`}>
             <p className="font-mono text-xs text-dust pt-2">// 05 · ACT</p>
             <div className="min-w-0 max-w-3xl">
-              <h2 className="mb-5">Help Build the Next Useful Thing</h2>
+              <h2 className="mb-5">Fund Ongoing Public Work</h2>
               <p className="text-bone leading-relaxed mb-8 max-w-2xl">
-                If this approach matters to you, become a monthly supporter. If money is tight, use
-                the work and tell us what would make it better.
+                Become a monthly supporter to fund infrastructure and maintenance. If you cannot
+                contribute money, use the work and report what needs improvement.
               </p>
               <Button
                 as="a"

@@ -3,15 +3,17 @@ import type { Project } from '@/types';
 
 type ProjectType = 'software' | 'media' | 'tools' | 'social';
 
-const FLAGSHIP_SLUGS = [
-  'augr',
-  'clpr',
+const CURRENT_FOCUS_SLUGS = [
+  'productivity-suite',
+  'dsa-seats',
   'echo-trails',
-  'edda',
   'subcorp',
   'subcults',
-  'patchwork',
 ] as const;
+
+const PRODUCTION_SLUGS = ['clpr', 'hasanara', 'edda', 'augr', 'patchwork'] as const;
+
+const PROJECT_GROUP_SLUGS: string[] = [...CURRENT_FOCUS_SLUGS, ...PRODUCTION_SLUGS];
 
 function sortProjects(projects: Project[]): Project[] {
   return [...projects].sort((a, b) => {
@@ -32,13 +34,22 @@ export function isToolProject(project: Project): boolean {
 }
 
 export function getFeaturedProjects(projects: Project[] = CURATED_PROJECTS): Project[] {
-  return FLAGSHIP_SLUGS.map((slug) => projects.find((project) => project.slug === slug)).filter(
+  return CURRENT_FOCUS_SLUGS.map((slug) =>
+    projects.find((project) => project.slug === slug),
+  ).filter((project): project is Project => Boolean(project));
+}
+
+export function getProductionProjects(projects: Project[] = CURATED_PROJECTS): Project[] {
+  return PRODUCTION_SLUGS.map((slug) => projects.find((project) => project.slug === slug)).filter(
     (project): project is Project => Boolean(project),
   );
 }
 
 export function getToolProjects(projects: Project[] = CURATED_PROJECTS): Project[] {
-  return projects.filter((project) => isToolProject(project) && !project.featured);
+  const projectGroupSet = new Set(PROJECT_GROUP_SLUGS);
+  return projects.filter(
+    (project) => isToolProject(project) && !project.featured && !projectGroupSet.has(project.slug),
+  );
 }
 
 export function getCuratedProjects(): Project[] {
