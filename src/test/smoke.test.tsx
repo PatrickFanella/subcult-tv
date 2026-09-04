@@ -103,6 +103,21 @@ describe('smoke: app shell', () => {
     renderApp('/projects/definitely-not-a-project');
     expect(await screen.findByText(/ERROR 404: project not found/i)).toBeInTheDocument();
   });
+
+  it('presents the conference demo and verified Bluesky profile on the links page', async () => {
+    renderApp('/links');
+
+    const main = within(screen.getByRole('main'));
+
+    expect(await main.findByRole('link', { name: /Try Patchwork/i })).toHaveAttribute(
+      'href',
+      'https://patchwork.subcult.tv',
+    );
+    expect(main.getByRole('link', { name: 'Bluesky ↗' })).toHaveAttribute(
+      'href',
+      'https://bsky.app/profile/subcult.tv',
+    );
+  });
 });
 
 describe('smoke: contact', () => {

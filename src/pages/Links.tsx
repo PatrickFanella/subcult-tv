@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 
 const PRIMARY_LINKS = [
   {
+    to: 'https://patchwork.subcult.tv',
+    label: 'Try Patchwork',
+    description: 'Join the live federated social demo',
+    external: true,
+  },
+  {
     to: '/zine',
     label: 'Read the Zine',
     description: 'Season 0 founding documents',
@@ -31,6 +37,7 @@ const SITE_LINKS = [
 ];
 
 const SOCIAL_LINKS = [
+  { href: 'https://bsky.app/profile/subcult.tv', label: 'Bluesky' },
   { href: 'https://git.subcult.tv/subculture-collective', label: 'Gitea' },
   { href: 'https://www.patreon.com/subcult', label: 'Patreon' },
 ];
@@ -94,7 +101,7 @@ export default function Links() {
         {/* Site Navigation */}
         <div className="w-full max-w-sm mb-8">
           <p className="font-mono text-xs text-dust text-center mb-3">// Site</p>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-2 gap-2">
             {SITE_LINKS.map((link) => (
               <Button
                 key={link.to}

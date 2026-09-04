@@ -13,6 +13,11 @@ const FOOTER_LINKS = [
 
 const SOCIAL_LINKS = [
   {
+    href: 'https://bsky.app/profile/subcult.tv',
+    label: 'Bluesky',
+    external: true,
+  },
+  {
     href: 'https://git.subcult.tv/subculture-collective',
     label: 'Gitea',
     external: true,
