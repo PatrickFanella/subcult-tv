@@ -2,11 +2,12 @@ import { Code2, FlaskConical, HeartHandshake, Server, ShieldCheck, Wrench } from
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
 import TerminalPanel from '@/components/effects/TerminalPanel';
+import { PATREON_URL } from '@/lib/links';
 
 const SUPPORT_OUTCOMES = [
   {
     icon: Server,
-    label: 'Pay the infrastructure bills',
+    label: 'Pay for hosting',
     detail:
       'Contributions pay for domains, storage, hosting, and the services that keep public software available.',
   },
@@ -21,6 +22,26 @@ const SUPPORT_OUTCOMES = [
     label: 'Test useful ideas',
     detail:
       'Support pays for early research into a community need before the idea has a business model.',
+  },
+];
+
+// Mirrors the Patreon tiers; keep in step with the live creator page.
+const TIERS = [
+  {
+    name: 'Free follow',
+    price: '$0',
+    includes: ['Public updates and occasional previews', 'Invitations to try new work and respond'],
+  },
+  {
+    name: 'Backer',
+    price: '$10 / month',
+    includes: [
+      'One field note a week from the workshop',
+      'A monthly studio ledger: what shipped, changed, stalled, and comes next',
+      'Selected early previews and drafts when they exist',
+      'Occasional advisory questions, with their scope stated up front',
+      'The supporter archive',
+    ],
   },
 ];
 
@@ -55,12 +76,17 @@ const FAQS = [
   {
     question: 'Does payment unlock the software?',
     answer:
-      'No. The software and useful project materials stay public. A payment funds the work and never unlocks a private-access tier.',
+      'No. The products, repositories, and releases stay public. Backers get the workshop behind them: field notes, the ledger, and early previews.',
   },
   {
-    question: 'What do supporters receive?',
+    question: 'What does support not include?',
     answer:
-      'The same project updates, releases, and repositories as everyone else. Patreon support does not buy exclusive content, early access, or private status.',
+      'Ownership, governance, a release schedule, or private consulting. Advisory questions are input, and each one says what it can and cannot change.',
+  },
+  {
+    question: 'Can I follow without paying?',
+    answer:
+      'Yes. Follow SUBCULT for free on Patreon, or get the monthly newsletter by email at the bottom of any page.',
   },
   {
     question: 'Can I help without spending money?',
@@ -87,25 +113,25 @@ export default function Patreon() {
           <div className={`${SHELL} py-16 md:py-24`}>
             <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_22rem] gap-10 lg:gap-16 items-center">
               <div className="min-w-0">
-                <p className="font-mono text-xs text-dust mb-4">&gt; MEMBERSHIP_WITHOUT_A_GATE</p>
+                <p className="font-mono text-xs text-dust mb-4">&gt; SUPPORT / THE_WORKSHOP</p>
                 <h1 className="mb-6 max-w-4xl text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.98] break-words">
-                  Fund public tools for independent culture
+                  Support the workshop behind the products
                 </h1>
                 <p className="text-bone max-w-3xl text-lg md:text-xl leading-relaxed mb-8">
-                  Support CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow. Monthly
-                  support pays hosting bills and funds maintenance, documentation, and research. The
-                  resulting work stays public.
+                  CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow stay public. Patreon
+                  is the workshop behind them: weekly field notes, a monthly studio ledger, and
+                  early previews. Follow for free, or back the work at $10 a month.
                 </p>
                 <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
                   <Button
                     as="a"
-                    href="https://www.patreon.com/subcult"
+                    href={PATREON_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     size="lg"
                     className="w-full sm:w-auto"
                   >
-                    Support monthly ↗
+                    Join on Patreon ↗
                   </Button>
                   <Button
                     as="link"
@@ -121,8 +147,11 @@ export default function Patreon() {
 
               <TerminalPanel title="support.status" className="min-w-0 w-full">
                 <div className="break-words">
-                  <span className="text-chalk">access: </span>
+                  <span className="text-chalk">products: </span>
                   <span className="text-static">PUBLIC</span>
+                  <br />
+                  <span className="text-chalk">workshop: </span>
+                  <span className="text-signal">PATREON</span>
                   <br />
                   <span className="text-chalk">funding: </span>
                   <span className="text-flicker">COMMUNITY SUPPORTED</span>
@@ -131,7 +160,7 @@ export default function Patreon() {
                   <span className="text-cyan">REPOS // RELEASES // NOTES</span>
                   <br />
                   <br />
-                  <span className="text-dust"># contributions fund public work.</span>
+                  <span className="text-dust"># support funds the work; it buys no control.</span>
                 </div>
               </TerminalPanel>
             </div>
@@ -165,18 +194,52 @@ export default function Patreon() {
           </div>
         </section>
 
+        <section className="border-b border-fog py-16 md:py-24">
+          <div className={`${SHELL} ${RAIL}`}>
+            <p className="font-mono text-xs text-dust pt-2">// 02 · WHAT YOU GET</p>
+            <div className="min-w-0">
+              <div className="max-w-3xl mb-10">
+                <h2 className="mb-4">Two ways in</h2>
+                <p className="text-bone leading-relaxed">
+                  Start by following for free. Back the work when the process is useful to you.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                {TIERS.map((tier) => (
+                  <article key={tier.name} className="min-w-0 bg-ash border border-fog p-6 md:p-7">
+                    <div className="flex items-baseline justify-between gap-4 mb-5">
+                      <h3 className="text-xl break-words">{tier.name}</h3>
+                      <span className="font-mono text-sm text-signal shrink-0">{tier.price}</span>
+                    </div>
+                    <ul className="space-y-2 text-sm text-bone leading-relaxed">
+                      {tier.includes.map((item) => (
+                        <li key={item} className="flex gap-2">
+                          <span className="text-static" aria-hidden="true">
+                            +
+                          </span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="border-b border-fog py-14 md:py-20">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-signal pt-2">// 02 · CONTRACT</p>
+            <p className="font-mono text-xs text-signal pt-2">// 03 · CONTRACT</p>
             <blockquote className="min-w-0 font-display text-3xl md:text-5xl uppercase tracking-wide text-glow leading-tight break-words">
-              Supporters fund public work. They do not buy a private-access tier.
+              The products stay public. Support pays for the work and opens the workshop.
             </blockquote>
           </div>
         </section>
 
         <section className="py-16 md:py-24">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">// 03 · CONTRIBUTE</p>
+            <p className="font-mono text-xs text-dust pt-2">// 04 · CONTRIBUTE</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
                 <h2 className="mb-4">Other ways to help</h2>
@@ -222,7 +285,7 @@ export default function Patreon() {
 
         <section className="bg-soot border-y border-fog py-16 md:py-24">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">// 04 · FAQ</p>
+            <p className="font-mono text-xs text-dust pt-2">// 05 · FAQ</p>
             <div className="min-w-0">
               <h2 className="mb-10">Before you contribute</h2>
               <div className="divide-y divide-fog border-y border-fog">
@@ -242,22 +305,22 @@ export default function Patreon() {
 
         <section className="py-16 md:py-24">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">// 05 · ACT</p>
+            <p className="font-mono text-xs text-dust pt-2">// 06 · ACT</p>
             <div className="min-w-0 max-w-3xl">
               <h2 className="mb-5">Keep the work going</h2>
               <p className="text-bone leading-relaxed mb-8 max-w-2xl">
-                Become a monthly supporter to fund infrastructure and maintenance. If you cannot
-                contribute money, use the work and report what needs improvement.
+                Follow for free or back the workshop on Patreon. If you can’t contribute money, use
+                the work and tell us what needs fixing.
               </p>
               <Button
                 as="a"
-                href="https://www.patreon.com/subcult"
+                href={PATREON_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 size="lg"
                 className="w-full sm:w-auto"
               >
-                Support SUBCULT on Patreon ↗
+                Go to Patreon ↗
               </Button>
             </div>
           </div>

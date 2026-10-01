@@ -354,6 +354,26 @@
   font-size: 28px;
   margin-bottom: 16px;
 }
+.landing-support {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px 48px;
+  padding: 48px 0;
+  border-top: 1px solid var(--lp-line);
+}
+.landing-support > div:first-child {
+  max-width: 640px;
+}
+.landing-support h2 {
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+  margin-bottom: 12px;
+}
+.landing-support p:not(.landing-eyebrow) {
+  color: var(--lp-muted);
+  line-height: 1.7;
+}
 .landing-faq details {
   border-bottom: 1px solid var(--lp-line);
 }

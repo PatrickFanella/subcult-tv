@@ -5,6 +5,7 @@
  */
 import { getShowcaseProducts, type ShowcaseProduct } from '@/lib/showcase';
 import { getProductPath } from '@/lib/product-paths';
+import { PATREON_URL } from '@/lib/links';
 
 export const SITE_URL = 'https://subcult.tv';
 export const SITE_NAME = 'SUBCULT';
@@ -14,7 +15,7 @@ const DEFAULT_IMAGE_ALT = 'SUBCULT: Tools for the culture we build together.';
 const SOCIAL_PROFILES = [
   'https://bsky.app/profile/subcult.tv',
   'https://x.com/subcult_tv',
-  'https://www.patreon.com/subcult',
+  PATREON_URL,
   'https://git.subcult.tv/subculture-collective',
 ];
 
@@ -106,9 +107,9 @@ const STATIC_PAGES: PageMeta[] = [
   },
   {
     path: '/support',
-    title: fullTitle('Support independent open-source work'),
+    title: fullTitle('Support the workshop'),
     description:
-      "Fund SUBCULT's hosting, maintenance, documentation, and research. Patreon support keeps the resulting work public.",
+      'The products stay public. Back SUBCULT on Patreon for weekly field notes, a monthly studio ledger, and early previews, or follow for free.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },

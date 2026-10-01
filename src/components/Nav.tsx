@@ -7,6 +7,7 @@ import { useEffects } from '@/context/useEffects';
 const NAV_LINKS = [
   { to: '/products', label: 'Products' },
   { to: '/about', label: 'Studio' },
+  { to: '/support', label: 'Support' },
   { to: '/contact', label: 'Contact' },
 ];
 
