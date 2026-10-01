@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
 import ProductShowcase from '@/components/ProductShowcase';
+import Teasers from '@/components/Teasers';
 import { getShowcaseProducts } from '@/lib/showcase';
 
 export default function Home() {
@@ -49,6 +50,7 @@ export default function Home() {
           <span className="font-mono text-xs text-bone">MEDIA / COMMUNITY / LIVE CULTURE</span>
         </div>
         <ProductShowcase products={products} />
+        <Teasers headingId="home-teasers" />
       </section>
       <section className="border-t border-fog bg-soot">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-12">

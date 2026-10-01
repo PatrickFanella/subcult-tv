@@ -3,19 +3,10 @@ import type { EffectLevel } from '@/types';
 import { EffectsContext } from './effectsContextDef';
 
 export function EffectsProvider({ children }: { children: ReactNode }) {
+  // VHS is opt-in: the site starts clean unless the visitor turned VHS on.
   const [effectLevel, setEffectLevel] = useState<EffectLevel>(() => {
-    if (typeof window === 'undefined') return 'mild';
-    const saved = localStorage.getItem('subcult-effects');
-    if (saved === 'clean' || saved === 'mild' || saved === 'full') return saved;
-    // Respect prefers-reduced-motion
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return 'clean';
-    // Mild is the documented default (see README Effects section)
-    return 'mild';
-  });
-
-  const [highContrast, setHighContrast] = useState(() => {
-    if (typeof window === 'undefined') return false;
-    return localStorage.getItem('subcult-contrast') === 'high';
+    if (typeof window === 'undefined') return 'clean';
+    return localStorage.getItem('subcult-effects') === 'full' ? 'full' : 'clean';
   });
 
   useEffect(() => {
@@ -23,17 +14,11 @@ export function EffectsProvider({ children }: { children: ReactNode }) {
     document.documentElement.setAttribute('data-effects', effectLevel);
   }, [effectLevel]);
 
-  useEffect(() => {
-    localStorage.setItem('subcult-contrast', highContrast ? 'high' : 'normal');
-    document.documentElement.setAttribute('data-contrast', highContrast ? 'high' : 'normal');
-  }, [highContrast]);
-
-  const toggleHighContrast = () => setHighContrast((prev) => !prev);
+  const vhs = effectLevel === 'full';
+  const toggleVhs = () => setEffectLevel(vhs ? 'clean' : 'full');
 
   return (
-    <EffectsContext.Provider
-      value={{ effectLevel, setEffectLevel, highContrast, toggleHighContrast }}
-    >
+    <EffectsContext.Provider value={{ effectLevel, setEffectLevel, vhs, toggleVhs }}>
       {children}
     </EffectsContext.Provider>
   );
