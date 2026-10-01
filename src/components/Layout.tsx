@@ -2,7 +2,6 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { Suspense, useEffect } from 'react';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import GlitchFrame from '@/components/effects/GlitchFrame';
 
 function RouteFallback() {
   return (
@@ -21,14 +20,14 @@ export default function Layout() {
   }, [pathname]);
 
   return (
-    <GlitchFrame enableScanlines enableNoise className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Nav />
-      <main id="main-content" className="flex-1 scroll-mt-14" tabIndex={-1}>
+      <main id="main-content" className="flex-1 scroll-mt-28" tabIndex={-1}>
         <Suspense fallback={<RouteFallback />}>
           <Outlet />
         </Suspense>
       </main>
       <Footer />
-    </GlitchFrame>
+    </div>
   );
 }

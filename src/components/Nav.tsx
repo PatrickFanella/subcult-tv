@@ -1,32 +1,18 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { getShowcaseProducts } from '@/lib/showcase';
+import { getProductPath } from '@/lib/product-paths';
 import { useEffects } from '@/context/useEffects';
-import type { EffectLevel } from '@/types';
 
 const NAV_LINKS = [
-  { to: '/projects', label: 'Projects' },
-  { to: '/zine', label: 'Field Notes' },
-  { to: '/about', label: 'About' },
-  { to: '/support', label: 'Support' },
+  { to: '/products', label: 'Products' },
+  { to: '/about', label: 'Studio' },
+  { to: '/contact', label: 'Contact' },
 ];
-
-const EFFECT_LABELS: Record<EffectLevel, string> = {
-  clean: 'CLEAN',
-  mild: 'GLITCH',
-  full: 'VHS',
-};
-
-const EFFECT_CYCLE: EffectLevel[] = ['clean', 'mild', 'full'];
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { effectLevel, setEffectLevel, highContrast, toggleHighContrast } = useEffects();
-
-  const cycleEffects = () => {
-    const currentIndex = EFFECT_CYCLE.indexOf(effectLevel);
-    const next = EFFECT_CYCLE[(currentIndex + 1) % EFFECT_CYCLE.length];
-    setEffectLevel(next);
-  };
+  const { highContrast, toggleHighContrast } = useEffects();
 
   return (
     <nav
@@ -61,16 +47,6 @@ export default function Nav() {
               </NavLink>
             ))}
 
-            {/* Effect toggle */}
-            <button
-              onClick={cycleEffects}
-              className="font-mono text-xs px-2 py-1 border border-fog text-dust hover:text-static hover:border-static transition-colors duration-200 cursor-pointer"
-              aria-label={`Visual effects: ${EFFECT_LABELS[effectLevel]}. Select to cycle.`}
-              title={`Effects: ${EFFECT_LABELS[effectLevel]}`}
-            >
-              FX:{EFFECT_LABELS[effectLevel]}
-            </button>
-
             {/* Contrast toggle */}
             <button
               onClick={toggleHighContrast}
@@ -94,6 +70,17 @@ export default function Nav() {
         </div>
       </div>
 
+      <div className="product-shortcuts" aria-label="Product shortcuts">
+        {getShowcaseProducts().map(({ project }) => (
+          <NavLink
+            key={project.slug}
+            to={getProductPath(project.slug)}
+            onClick={() => setMobileOpen(false)}
+          >
+            {project.name}
+          </NavLink>
+        ))}
+      </div>
       {/* Mobile dropdown */}
       {mobileOpen && (
         <div className="md:hidden border-t border-fog bg-soot">
@@ -114,13 +101,6 @@ export default function Nav() {
               </NavLink>
             ))}
             <div className="flex gap-2 pt-2 border-t border-fog">
-              <button
-                onClick={cycleEffects}
-                className="font-mono text-xs px-2 py-1 border border-fog text-dust cursor-pointer"
-                aria-label={`Visual effects: ${EFFECT_LABELS[effectLevel]}. Select to cycle.`}
-              >
-                FX:{EFFECT_LABELS[effectLevel]}
-              </button>
               <button
                 onClick={toggleHighContrast}
                 className="font-mono text-xs px-2 py-1 border border-fog text-dust cursor-pointer"

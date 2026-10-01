@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { getProductPath } from '@/lib/product-paths';
 import type { Project } from '@/types';
 import Tag from '@/components/ui/Tag';
 import CoverArt from '@/components/effects/CoverArt';
@@ -59,7 +60,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   );
 
   return (
-    <Link to={`/projects/${project.slug}`} className="no-underline">
+    <Link to={getProductPath(project.slug)} className="no-underline">
       {card}
     </Link>
   );

@@ -10,20 +10,20 @@
 
 ## Stack
 
-| Layer         | Choice                                      | Why                                                                    |
-| ------------- | ------------------------------------------- | ---------------------------------------------------------------------- |
-| **Frontend**  | Vite + React 19                             | Fast builds, HMR, modern ESM-first bundling                            |
-| **Language**  | TypeScript + Go                             | Type safety on both sides                                              |
-| **Styling**   | Tailwind CSS v4                             | Utility-first with custom design tokens in CSS                         |
-| **Routing**   | React Router v7                             | Client-side SPA routing with nested layouts                            |
-| **Content**   | MDX (via @mdx-js/rollup)                    | Markdown + JSX for zine posts with rich components                     |
-| **API**       | Go + Chi v5                                 | Lightweight, idiomatic HTTP router with middleware                     |
-| **Database**  | PostgreSQL 16                               | Relational storage for projects, posts, contacts, subscribers          |
-| **Auth**      | JWT (HMAC SHA256)                           | Stateless auth with bcrypt password hashing                            |
-| **Analytics** | Umami                                       | Self-hosted, privacy-first analytics                                   |
-| **Data**      | Curated local JSON + DB                     | Manual project catalog, edited locally, synced via self-hosted Gitea    |
-| **Fonts**     | Oswald / Libre Baskerville / JetBrains Mono | Display / body / mono — punk + editorial + terminal                    |
-| **Infra**     | Docker Compose                              | PostgreSQL, Go API, and Umami in containers                            |
+| Layer         | Choice                                      | Why                                                                  |
+| ------------- | ------------------------------------------- | -------------------------------------------------------------------- |
+| **Frontend**  | Vite + React 19                             | Fast builds, HMR, modern ESM-first bundling                          |
+| **Language**  | TypeScript + Go                             | Type safety on both sides                                            |
+| **Styling**   | Tailwind CSS v4                             | Utility-first with custom design tokens in CSS                       |
+| **Routing**   | React Router v7                             | Client-side SPA routing with nested layouts                          |
+| **Content**   | MDX (via @mdx-js/rollup)                    | Markdown + JSX for zine posts with rich components                   |
+| **API**       | Go + Chi v5                                 | Lightweight, idiomatic HTTP router with middleware                   |
+| **Database**  | PostgreSQL 16                               | Relational storage for projects, posts, contacts, subscribers        |
+| **Auth**      | JWT (HMAC SHA256)                           | Stateless auth with bcrypt password hashing                          |
+| **Analytics** | Umami                                       | Self-hosted, privacy-first analytics                                 |
+| **Data**      | Curated local JSON + DB                     | Manual project catalog, edited locally, synced via self-hosted Gitea |
+| **Fonts**     | Oswald / Libre Baskerville / JetBrains Mono | Display / body / mono — punk + editorial + terminal                  |
+| **Infra**     | Docker Compose                              | PostgreSQL, Go API, and Umami in containers                          |
 
 ## Quick Start
 
@@ -105,17 +105,16 @@ VITE_API_URL=                                # Override API base URL (defaults t
 
 ### Public Pages
 
-| Route             | Page           | Description                                                                      |
-| ----------------- | -------------- | -------------------------------------------------------------------------------- |
-| `/`               | Home           | Hero, featured projects, tools strip, manifesto, latest posts, Patreon CTA      |
-| `/projects`       | Projects       | Featured projects + tools sections, with type + status filters                   |
-| `/projects/:slug` | Project Detail | Full project page with cover art, description, stack, links, CTA                 |
-| `/support`        | Patreon        | Tier blocks, what support funds, shipping cadence, CTA                           |
-| `/about`          | About / Studio | Mission, values, what we build/won't build, toolchain                            |
-| `/zine`           | Zine           | Index of all MDX posts                                                           |
-| `/zine/:slug`     | Post           | Individual MDX post with full content                                            |
-| `/contact`        | Contact        | API-backed contact form with mailto fallback, social links                       |
-| `/press`          | Press Kit      | Brand identity, color palette, typography, usage rules                           |
+| Route             | Page               | Description                                                                        |
+| ----------------- | ------------------ | ---------------------------------------------------------------------------------- |
+| `/`               | Home               | Product showcase for CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow |
+| `/products`       | Products           | Directory of the six featured products                                             |
+| `/products/:slug` | Product            | Product landing page using its own design system                                   |
+| `/about`          | Studio             | The studio and the products it builds                                              |
+| `/contact`        | Contact            | Product questions, collaborations, and bug reports                                 |
+| `/support`        | Support            | Contributions toward hosting and maintenance                                       |
+| `/projects`       | Redirect           | Redirects to `/products`                                                           |
+| `/projects/:slug` | Legacy product URL | Redirects for the six retained products; other slugs return not found              |
 
 ### Admin Pages
 
@@ -134,16 +133,16 @@ All API routes are prefixed with `/api/v1`.
 
 ### Public
 
-| Method   | Endpoint                            | Description                          |
-| -------- | ----------------------------------- | ------------------------------------ |
-| `GET`    | `/api/health`                       | Health check                         |
-| `GET`    | `/api/v1/projects`                  | List projects (`?status=`, `?type=`) — backed by curated local data |
-| `GET`    | `/api/v1/projects/:slug`            | Get project by slug                  |
-| `GET`    | `/api/v1/posts`                     | List published posts (paginated)     |
-| `GET`    | `/api/v1/posts/:slug`               | Get post by slug                     |
-| `POST`   | `/api/v1/contacts`                  | Submit contact form                  |
-| `POST`   | `/api/v1/newsletter/subscribe`      | Subscribe to newsletter              |
-| `POST`   | `/api/v1/newsletter/unsubscribe`    | Unsubscribe using a token            |
+| Method | Endpoint                         | Description                                                         |
+| ------ | -------------------------------- | ------------------------------------------------------------------- |
+| `GET`  | `/api/health`                    | Health check                                                        |
+| `GET`  | `/api/v1/projects`               | List projects (`?status=`, `?type=`) — backed by curated local data |
+| `GET`  | `/api/v1/projects/:slug`         | Get project by slug                                                 |
+| `GET`  | `/api/v1/posts`                  | List published posts (paginated)                                    |
+| `GET`  | `/api/v1/posts/:slug`            | Get post by slug                                                    |
+| `POST` | `/api/v1/contacts`               | Submit contact form                                                 |
+| `POST` | `/api/v1/newsletter/subscribe`   | Subscribe to newsletter                                             |
+| `POST` | `/api/v1/newsletter/unsubscribe` | Unsubscribe using a token                                           |
 
 ### Protected (requires `Authorization: Bearer <token>`)
 
@@ -193,9 +192,7 @@ subcult_tv/
 │   ├── favicon.svg
 │   ├── og-image.svg
 │   ├── robots.txt
-│   ├── sitemap.xml
-│   └── press-kit/
-│       └── README.md
+│   └── sitemap.xml
 ├── src/
 │   ├── components/
 │   │   ├── admin/                # AdminLayout
@@ -309,3 +306,33 @@ Navigate to `/admin/login` to access the admin dashboard.
 ## License
 
 MIT — do what you want, credit appreciated.
+
+## Product showcase and working branding
+
+The homepage features six products, with HasanAra linked to the shared transcript
+archive application. Rekolekt is the working name for Transcript Creator; its
+repository remains `transcript-create`; its public landing page is `/products/rekolekt`. See the
+[Rekolekt identity direction](docs/branding/rekolekt.md) and
+[concept sheet](docs/branding/rekolekt-concept.svg).
+
+## Product landing pages
+
+The six featured products have dedicated pages at `/products/clpr`,
+`/products/patchwork`, `/products/hasanara`, `/products/rekolekt`,
+`/products/subcult-os`, and `/products/undertow`. Their earlier `/projects/:slug`
+addresses redirect to the corresponding product page. Products outside this set
+are no longer listed and their old detail URLs return the not-found page.
+
+Landing content is in `src/lib/product-landings.ts`; route mapping is in
+`src/lib/product-paths.ts`. The pages use scoped adaptations of each product's
+source design tokens in `src/styles/product-landings.css`, including CLPR's
+Barlow typography, Patchwork's paper and moss palette, HasanAra's lime archive
+palette, Subcult OS's amber and serif system, Undertow's default Neon system,
+and Rekolekt's working identity. Interface previews use existing screenshots;
+illustrations are labeled as concepts.
+
+### Public site scope
+
+The public site centers on CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow. The homepage, directory, global navigation, footer, studio page, and contact links all lead to these products. Only these six entries remain in the public project catalog.
+
+The broader catalog, zine, memo, investor pages, decks, one-pagers, metrics dashboard, press placeholders, link hub, generated PDFs, and RSS feed have been removed from the public site. Existing article source and admin tools remain available in the repository. The build generates a sitemap for the eleven current public pages.

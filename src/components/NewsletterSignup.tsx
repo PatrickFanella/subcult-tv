@@ -34,9 +34,9 @@ export default function NewsletterSignup() {
   return (
     <div className="bg-ash border border-fog p-6">
       <div className="text-center mb-4">
-        <p className="font-mono text-xs text-dust mb-2">&gt; SIGNAL BROADCAST</p>
-        <h3 className="text-lg mb-1">Receive the signal</h3>
-        <p className="text-sm text-bone">Get project releases and new field notes by email.</p>
+        <p className="font-mono text-xs text-dust mb-2">SUBCULT / PRODUCT UPDATES</p>
+        <h3 className="text-lg mb-1">Follow the products</h3>
+        <p className="text-sm text-bone">Get product releases and development updates by email.</p>
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
@@ -49,7 +49,7 @@ export default function NewsletterSignup() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          placeholder="you@signal.freq"
+          placeholder="you@example.com"
           className={`min-w-0 flex-1 ${inputClass}`}
         />
         <button
@@ -66,9 +66,7 @@ export default function NewsletterSignup() {
         <p className="font-mono text-xs text-signal text-center mt-2">ERR: {message}</p>
       )}
 
-      <p className="font-mono text-xs text-fog text-center mt-3">
-        No spam or tracking. Unsubscribe anytime.
-      </p>
+      <p className="font-mono text-xs text-fog text-center mt-3">Unsubscribe anytime.</p>
     </div>
   );
 }

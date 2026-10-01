@@ -38,7 +38,7 @@ export default class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBo
             {this.props.fallbackTitle ?? 'SIGNAL DIED'}
           </h2>
           <p className="font-mono text-bone text-sm mb-6">
-            The requested view crashed. Try reloading the page, then return to the home signal.
+            This page ran into an error. Retry, or go back to the homepage.
           </p>
           {this.state.error && (
             <pre className="bg-void border border-fog p-4 text-xs text-flicker font-mono mb-6 overflow-auto text-left whitespace-pre-wrap break-all">
