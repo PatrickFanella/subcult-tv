@@ -80,11 +80,7 @@ const RAIL = 'grid grid-cols-1 md:grid-cols-[10rem_minmax(0,1fr)] gap-6 md:gap-1
 export default function Patreon() {
   return (
     <>
-      <SEOHead
-        title="Support Independent Open-Source Work"
-        description="Fund SUBCULT's hosting, maintenance, documentation, and research. Patreon support keeps the resulting work public."
-        path="/support"
-      />
+      <SEOHead path="/support" />
 
       <div className="overflow-x-clip">
         <section className="border-b border-fog">

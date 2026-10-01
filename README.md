@@ -190,7 +190,8 @@ subcult_tv/
 │   └── postgres/init.sql         # Creates umami database
 ├── public/
 │   ├── favicon.svg
-│   ├── og-image.svg
+│   ├── og-image.png              # Default social preview (npm run capture-og-images)
+│   ├── og/                       # Per-product social previews
 │   ├── robots.txt
 │   └── sitemap.xml
 ├── src/

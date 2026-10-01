@@ -1,10 +1,15 @@
 package handlers
 
 import (
+	"context"
 	"encoding/json"
+	"fmt"
+	"log/slog"
 	"net/http"
+	"time"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/subculture-collective/subcult-tv/api/internal/brevo"
 	"github.com/subculture-collective/subcult-tv/api/internal/models"
 )
 
@@ -32,6 +37,8 @@ func (h *Handler) SubmitContact(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusInternalServerError, "failed to save contact submission")
 		return
 	}
+
+	h.notifyContact(c)
 
 	writeJSON(w, http.StatusCreated, map[string]interface{}{
 		"message": "signal received",
@@ -110,4 +117,33 @@ func (h *Handler) DeleteContact(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusNoContent)
+}
+
+// notifyContact emails a saved submission to the studio inbox. The message
+// is already stored, so a delivery failure is logged and never returned.
+func (h *Handler) notifyContact(c models.Contact) {
+	if h.Mail == nil {
+		return
+	}
+	subject := "Website message"
+	if c.Subject != nil && *c.Subject != "" {
+		subject = *c.Subject
+	}
+	email := brevo.Email{
+		Sender:  h.MailCfg.From,
+		To:      []brevo.Address{h.MailCfg.ContactTo},
+		ReplyTo: &brevo.Address{Name: c.Name, Email: c.Email},
+		Subject: "[subcult.tv] " + subject,
+		TextContent: fmt.Sprintf(
+			"From: %s <%s>\nReceived: %s\n\n%s\n\nReply to this email to answer %s directly.",
+			c.Name, c.Email, c.CreatedAt.UTC().Format(time.RFC1123), c.Message, c.Name,
+		),
+	}
+	go func() {
+		ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
+		defer cancel()
+		if err := h.Mail.SendEmail(ctx, email); err != nil {
+			slog.Error("contact notification failed", "contact_id", c.ID, "error", err)
+		}
+	}()
 }

@@ -1,14 +1,22 @@
 package handlers
 
 import (
+	"context"
 	"encoding/json"
+	"log/slog"
 	"net/http"
+	"net/mail"
+	"strings"
+	"time"
 
 	"github.com/google/uuid"
 	"github.com/subculture-collective/subcult-tv/api/internal/models"
 )
 
-// Subscribe adds an email to the newsletter (public).
+// Subscribe records a newsletter sign-up (public). When Brevo double
+// opt-in is configured, Brevo emails a confirmation link and adds the
+// address to the list only after it is clicked; the local row stays
+// unconfirmed. Without Brevo, sign-ups are stored locally as before.
 func (h *Handler) Subscribe(w http.ResponseWriter, r *http.Request) {
 	var req models.SubscribeRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
@@ -16,27 +24,39 @@ func (h *Handler) Subscribe(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if req.Email == "" {
-		writeError(w, http.StatusBadRequest, "email is required")
+	email, ok := normalizeEmail(req.Email)
+	if !ok {
+		writeError(w, http.StatusBadRequest, "a valid email is required")
 		return
 	}
 
-	unsubToken := uuid.New().String()
+	doubleOptIn := h.Mail != nil && h.Mail.NewsletterEnabled()
+	if doubleOptIn {
+		ctx, cancel := context.WithTimeout(r.Context(), 20*time.Second)
+		defer cancel()
+		if err := h.Mail.RequestDoubleOptIn(ctx, email); err != nil {
+			slog.Error("newsletter confirmation email failed", "error", err)
+			writeError(w, http.StatusBadGateway, "could not send the confirmation email, please try again")
+			return
+		}
+	}
 
 	_, err := h.DB.Exec(r.Context(),
 		`INSERT INTO subscribers (email, unsubscribe_token, confirmed)
-		 VALUES ($1, $2, true)
+		 VALUES ($1, $2, $3)
 		 ON CONFLICT (email) DO UPDATE SET unsubscribed_at = NULL`,
-		req.Email, unsubToken,
+		email, uuid.New().String(), !doubleOptIn,
 	)
 	if err != nil {
 		writeError(w, http.StatusInternalServerError, "failed to subscribe")
 		return
 	}
 
-	writeJSON(w, http.StatusCreated, map[string]string{
-		"message": "subscribed — welcome to the signal",
-	})
+	message := "Subscribed. You'll get product updates by email."
+	if doubleOptIn {
+		message = "Check your inbox and confirm your subscription."
+	}
+	writeJSON(w, http.StatusCreated, map[string]string{"message": message})
 }
 
 // Unsubscribe removes an email from the newsletter using a token (public).
@@ -52,18 +72,38 @@ func (h *Handler) Unsubscribe(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	tag, err := h.DB.Exec(r.Context(),
-		`UPDATE subscribers SET unsubscribed_at = NOW() WHERE unsubscribe_token = $1 AND unsubscribed_at IS NULL`,
+	var email string
+	err := h.DB.QueryRow(r.Context(),
+		`UPDATE subscribers SET unsubscribed_at = NOW()
+		 WHERE unsubscribe_token = $1 AND unsubscribed_at IS NULL
+		 RETURNING email`,
 		req.Token,
-	)
-	if err != nil || tag.RowsAffected() == 0 {
+	).Scan(&email)
+	if err != nil {
 		writeError(w, http.StatusNotFound, "invalid token or already unsubscribed")
 		return
 	}
 
+	if h.Mail != nil && h.Mail.NewsletterEnabled() {
+		ctx, cancel := context.WithTimeout(r.Context(), 20*time.Second)
+		defer cancel()
+		if err := h.Mail.RemoveFromNewsletter(ctx, email); err != nil {
+			slog.Error("newsletter list removal failed", "error", err)
+		}
+	}
+
 	writeJSON(w, http.StatusOK, map[string]string{
-		"message": "unsubscribed — signal dropped",
+		"message": "Unsubscribed. You won't get more product updates.",
 	})
+}
+
+// normalizeEmail trims and lowercases an address and checks its syntax.
+func normalizeEmail(raw string) (string, bool) {
+	addr, err := mail.ParseAddress(strings.TrimSpace(raw))
+	if err != nil || addr.Name != "" {
+		return "", false
+	}
+	return strings.ToLower(addr.Address), true
 }
 
 // ListSubscribers returns all active subscribers (admin only).

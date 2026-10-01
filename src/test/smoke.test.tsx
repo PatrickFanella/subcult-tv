@@ -123,6 +123,29 @@ describe('smoke: app shell', () => {
     expect(await screen.findByRole('heading', { name: 'SIGNAL LOST' })).toBeInTheDocument();
   });
 
+  it('keeps 404 pages out of search', async () => {
+    renderApp('/projects/definitely-not-a-project');
+    await screen.findByRole('heading', { name: 'SIGNAL LOST' });
+    expect(document.title).toBe('Page not found | SUBCULT');
+    expect(document.querySelector('meta[name="robots"]')).toHaveAttribute(
+      'content',
+      'noindex, nofollow',
+    );
+    expect(document.querySelector('link[rel="canonical"]')).toBeNull();
+  });
+
+  it('sets product metadata and structured data on a landing page', async () => {
+    renderApp('/products/hasanara');
+    await screen.findByRole('heading', { name: 'HasanAra', level: 1 });
+    expect(document.title).toBe('HasanAra: Find the passage. Keep the context | SUBCULT');
+    expect(document.querySelector('meta[property="og:image"]')).toHaveAttribute(
+      'content',
+      'https://subcult.tv/og/hasanara.jpg',
+    );
+    const ld = JSON.parse(document.querySelector('script#ld-json')!.textContent!);
+    expect(ld['@graph'][0]).toMatchObject({ '@type': 'SoftwareApplication', name: 'HasanAra' });
+  });
+
   it.each([
     ['clpr', 'clpr'],
     ['patchwork', 'Patchwork'],

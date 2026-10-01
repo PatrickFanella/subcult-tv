@@ -3,10 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "subcult.tv \u2014 product showcase for Subculture Collective",
+  "description": "subcult.tv — product showcase for Subculture Collective",
   "scripts": {
     "dev": "vite --port 5175",
-    "build": "tsc -b && npm run generate-sitemap && vite build",
+    "build": "tsc -b && npm run generate-sitemap && vite build && npm run prerender-meta",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,md,mdx}\"",
@@ -15,7 +15,10 @@
     "test": "vitest run",
     "check:catalog": "tsx scripts/check-catalog.ts",
     "capture-screenshots": "tsx scripts/capture-screenshots.ts",
-    "generate-sitemap": "tsx scripts/generate-sitemap.ts"
+    "generate-sitemap": "tsx scripts/generate-sitemap.ts",
+    "prerender-meta": "tsx --tsconfig tsconfig.app.json scripts/prerender-meta.ts",
+    "sync-index-meta": "tsx --tsconfig tsconfig.app.json scripts/prerender-meta.ts --sync-index",
+    "capture-og-images": "tsx scripts/capture-og-images.ts"
   },
   "dependencies": {
     "@mdx-js/react": "^3.1.1",

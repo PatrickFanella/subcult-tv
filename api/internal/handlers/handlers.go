@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"context"
 	"encoding/json"
 	"math"
 	"net/http"
@@ -9,14 +10,32 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
+	"github.com/subculture-collective/subcult-tv/api/internal/brevo"
 	"github.com/subculture-collective/subcult-tv/api/internal/patreon"
 )
 
+// Mailer sends email and manages newsletter consent. *brevo.Client
+// implements it; a nil Mailer disables email.
+type Mailer interface {
+	SendEmail(ctx context.Context, e brevo.Email) error
+	NewsletterEnabled() bool
+	RequestDoubleOptIn(ctx context.Context, email string) error
+	RemoveFromNewsletter(ctx context.Context, email string) error
+}
+
+// MailSettings are the addresses used for site email.
+type MailSettings struct {
+	From      brevo.Address
+	ContactTo brevo.Address
+}
+
 // Handler bundles dependencies for all HTTP handlers.
 type Handler struct {
-	DB       *pgxpool.Pool
+	DB        *pgxpool.Pool
 	JWTSecret string
-	Patreon  *patreon.Client
+	Patreon   *patreon.Client
+	Mail      Mailer
+	MailCfg   MailSettings
 
 	// logoutBefore tracks server-side logout cut-offs per user (userID → iat epoch).
 	// Tokens issued before the cut-off are rejected by TokenRevoked.
@@ -30,8 +49,8 @@ const (
 )
 
 // New creates a new Handler.
-func New(db *pgxpool.Pool, jwtSecret string, patreonClient *patreon.Client) *Handler {
-	return &Handler{DB: db, JWTSecret: jwtSecret, Patreon: patreonClient}
+func New(db *pgxpool.Pool, jwtSecret string, patreonClient *patreon.Client, mail Mailer, mailCfg MailSettings) *Handler {
+	return &Handler{DB: db, JWTSecret: jwtSecret, Patreon: patreonClient, Mail: mail, MailCfg: mailCfg}
 }
 
 // TokenRevoked reports whether a token issued at iat for userID was issued

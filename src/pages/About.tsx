@@ -6,11 +6,7 @@ import { getProductPath } from '@/lib/product-paths';
 export default function About() {
   return (
     <>
-      <SEOHead
-        title="Studio"
-        description="SUBCULT is the independent studio behind CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow."
-        path="/about"
-      />
+      <SEOHead path="/about" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <header className="max-w-3xl mb-16">
           <p className="showcase-eyebrow">THE STUDIO BEHIND THE PRODUCTS</p>

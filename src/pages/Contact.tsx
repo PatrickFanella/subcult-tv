@@ -75,11 +75,7 @@ export default function Contact() {
 
   return (
     <>
-      <SEOHead
-        title="Contact"
-        description="Contact SUBCULT about collaborations, product questions, or bug reports."
-        path="/contact"
-      />
+      <SEOHead path="/contact" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <div className="mb-12">
