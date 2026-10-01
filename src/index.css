@@ -213,14 +213,11 @@ pre,
   }
 }
 
-.vhs-tracking {
-  position: relative;
-  overflow: hidden;
-}
-
+/* The tracking bar is fixed so it sweeps the viewport on long pages
+   without clipping the page or breaking the sticky nav. */
 .vhs-tracking::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -390,30 +387,6 @@ pre,
   color: var(--color-signal);
   font-style: normal;
   font-weight: bold;
-}
-
-/* ═══════════════ HIGH CONTRAST MODE ═══════════════════════════ */
-[data-contrast='high'] body {
-  background-color: #000;
-  color: #fff;
-}
-
-[data-contrast='high'] h1,
-[data-contrast='high'] h2,
-[data-contrast='high'] h3,
-[data-contrast='high'] h4 {
-  color: #fff;
-}
-
-[data-contrast='high'] .chromatic,
-[data-contrast='high'] .chromatic-mild {
-  text-shadow: none;
-}
-
-[data-contrast='high'] .scanlines::after,
-[data-contrast='high'] .noise-overlay::before,
-[data-contrast='high'] .vhs-tracking::before {
-  display: none;
 }
 
 /* ═══════════════ EFFECT LEVELS ═══════════════════════════════ */
@@ -894,6 +867,9 @@ pre,
 .showcase-product:last-child {
   border-bottom: 0;
 }
+.showcase-product:nth-child(even) {
+  grid-template-columns: 1.25fr 1fr;
+}
 .showcase-product:nth-child(even) .showcase-product-copy {
   order: 2;
 }
@@ -973,76 +949,83 @@ pre,
   color: var(--color-chalk);
 }
 .showcase-product-visual {
+  container-type: inline-size;
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--color-fog);
   background: var(--color-soot);
 }
-.showcase-screenshot {
+/* Every product visual shares the 16:10 ratio of the 1440×900 captures. */
+.showcase-screenshot,
+.product-illustration {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 10;
+}
+.showcase-screenshot {
   display: block;
+  object-fit: cover;
+  object-position: top;
 }
 .product-illustration {
-  min-height: 350px;
-  padding: 1.5rem;
+  overflow: hidden;
+  padding: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* Sized from the frame's width (16px at 640px wide) so the drawing
+     scales with its 16:10 frame; everything inside is in em. */
+  font-size: calc(100cqi / 40);
 }
 .illustration-caption {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6em;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--product-accent);
 }
 .archive-illustration {
-  padding: 1.5rem 0 0.5rem;
+  padding: 1em 0 0;
 }
 .archive-wave {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  height: 80px;
-  margin-bottom: 1.5rem;
+  gap: 0.3125em;
+  height: 5em;
+  margin-bottom: 1.5em;
 }
 .archive-wave i {
-  width: 5px;
+  width: 0.3125em;
   background: var(--product-accent);
   opacity: 0.8;
 }
 .archive-line {
-  font-size: 0.95rem;
+  font-size: 0.95em;
   color: var(--color-bone);
-  padding: 0.6rem;
+  padding: 0.55em 0.6em;
 }
 .archive-line span {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
-  margin-right: 1rem;
+  font-size: 0.65em;
+  margin-right: 1em;
 }
 .archive-highlight {
   background: color-mix(in srgb, var(--product-accent) 15%, transparent);
-  border-left: 2px solid var(--product-accent);
+  border-left: 0.125em solid var(--product-accent);
   color: var(--color-chalk);
 }
 .archive-foot {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.6em;
   color: var(--product-accent);
-  margin-top: 2rem;
+  margin-top: 1.5em;
 }
 .illustration-hasanara {
   background: #161616;
 }
-.illustration-transcript-create {
-  background: #101b20;
-}
 .illustration-transcript-create .archive-line {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 .illustration-subcult-os {
   background: #0d1117;
@@ -1051,28 +1034,28 @@ pre,
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: center;
-  gap: 1.8rem;
-  padding: 2rem 0.5rem 0.5rem;
+  gap: 1.8em;
+  padding: 0.5em 0.5em 0.5em;
 }
 .event-ticket {
   background: #7c3aed;
   color: #ffffff;
-  padding: 1.25rem;
+  padding: 1.25em;
   transform: rotate(-4deg);
 }
 .event-ticket > span {
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.55em;
 }
 .event-ticket strong {
   display: block;
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: 2.9em;
   line-height: 1.05;
-  margin: 1.5rem 0;
+  margin: 0.45em 0;
 }
 .ticket-bars {
-  height: 35px;
+  height: 2.2em;
   background: repeating-linear-gradient(
     90deg,
     currentColor 0 2px,
@@ -1084,9 +1067,9 @@ pre,
 .event-stages {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.5em;
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.65em;
   color: #a0aec0;
 }
 .showcase-index a:focus-visible,
@@ -1096,7 +1079,8 @@ pre,
   outline-offset: 5px;
 }
 @media (max-width: 900px) {
-  .showcase-product {
+  .showcase-product,
+  .showcase-product:nth-child(even) {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 3rem 0;
@@ -1112,22 +1096,111 @@ pre,
     gap: 0.5rem 1.25rem;
   }
 }
-@media (max-width: 420px) {
-  .product-illustration {
-    padding: 1rem;
-    min-height: 310px;
-  }
-  .archive-line {
-    font-size: 0.78rem;
-  }
-  .illustration-transcript-create .archive-line {
-    font-size: 0.65rem;
-  }
-  .archive-line span {
-    margin-right: 0.4rem;
-  }
-  .event-illustration {
-    gap: 1rem;
+/* In-development teasers: unnamed work, same 16:10 frame as the products. */
+.teasers {
+  padding: 4rem 0;
+}
+.teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+}
+.teaser-art {
+  container-type: inline-size;
+  overflow: hidden;
+  border: 1px dashed var(--color-fog);
+  background: var(--color-soot);
+}
+.teaser-image,
+.teaser-audio {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+}
+.teaser-image {
+  object-fit: cover;
+}
+.teaser-label {
+  margin: 0.5rem 0 0.75rem;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+.teaser-status {
+  margin-top: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-dust);
+}
+.teaser-audio {
+  font-size: calc(100cqi / 40);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 2em 3em;
+  background: radial-gradient(circle at 50% 40%, #17151c, #0a0a0c 70%);
+}
+.teaser-call-tile {
+  position: relative;
+  height: 11em;
+  border: 1px solid #2c2a33;
+  background: linear-gradient(#1b1a20, #121116);
+  overflow: hidden;
+}
+.teaser-call-window {
+  position: absolute;
+  top: 1.6em;
+  left: 58%;
+  width: 4.5em;
+  height: 5em;
+  border: 0.2em solid #2a2830;
+  background: linear-gradient(160deg, #2f3446, #1a1d27);
+  opacity: 0.8;
+}
+.teaser-call-chair {
+  position: absolute;
+  bottom: 0;
+  left: 22%;
+  width: 3.6em;
+  height: 5.5em;
+  border: 0.25em solid #26242c;
+  border-bottom: 0;
+  border-radius: 0.4em 0.4em 0 0;
+}
+.teaser-call-rec {
+  position: absolute;
+  top: 0.8em;
+  left: 0.9em;
+  font-family: var(--font-mono);
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+  color: #ff5252;
+}
+.teaser-call-name {
+  position: absolute;
+  bottom: 0.7em;
+  left: 0.9em;
+  padding: 0.15em 0.5em;
+  font-family: var(--font-mono);
+  font-size: 0.6em;
+  color: #c9c6d1;
+  background: rgb(0 0 0 / 55%);
+}
+.teaser-audio-wave {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  height: 2.5em;
+}
+.teaser-audio-wave i {
+  flex: 1;
+  background: #8a8794;
+  opacity: 0.7;
+}
+@media (max-width: 767px) {
+  .teaser-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1136,26 +1209,26 @@ pre,
   background: #16201b;
 }
 .illustration-transcript-create .archive-wave {
-  height: 45px;
-  margin: 1rem 0;
+  height: 2.8em;
+  margin: 0.75em 0;
 }
 .illustration-transcript-create .archive-wave i {
-  max-height: 38px;
+  max-height: 2.4em;
 }
 .rekolekt-lockup {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding-bottom: 1rem;
+  gap: 1em;
+  padding-bottom: 0.25em;
 }
 .rekolekt-lockup img {
-  width: 58px;
-  height: 58px;
+  width: 3.6em;
+  height: 3.6em;
 }
 .rekolekt-lockup strong {
   display: block;
   font-family: Arial, sans-serif;
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: 3em;
   font-weight: 800;
   letter-spacing: -0.06em;
   line-height: 1;
@@ -1164,10 +1237,10 @@ pre,
 .rekolekt-lockup span {
   display: block;
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.55em;
   letter-spacing: 0.2em;
   color: #b8df72;
-  margin-top: 0.6rem;
+  margin-top: 1.1em;
 }
 #transcript-create .product-name {
   text-transform: lowercase;
@@ -1215,14 +1288,10 @@ pre,
   text-decoration: none;
 }
 .product-directory-visual {
+  container-type: inline-size;
   overflow: hidden;
   border: 1px solid var(--color-fog);
   background: var(--color-soot);
-}
-.product-directory-visual .showcase-screenshot {
-  height: 350px;
-  object-fit: cover;
-  object-position: top;
 }
 html {
   scroll-padding-top: 8rem;

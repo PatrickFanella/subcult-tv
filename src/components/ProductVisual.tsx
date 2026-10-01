@@ -38,7 +38,7 @@ export default function ProductVisual({
           )}
           <div className="archive-wave">
             {Array.from({ length: 32 }, (_, i) => (
-              <i key={i} style={{ height: `${16 + ((i * 13) % 48)}px` }} />
+              <i key={i} style={{ height: `${(16 + ((i * 13) % 48)) / 16}em` }} />
             ))}
           </div>
           <p className="archive-line">

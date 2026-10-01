@@ -2,6 +2,7 @@ import type { CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import ProductVisual from '@/components/ProductVisual';
+import Teasers from '@/components/Teasers';
 import { getShowcaseProducts } from '@/lib/showcase';
 import { getProductPath } from '@/lib/product-paths';
 
@@ -16,7 +17,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <header className="mb-12 max-w-3xl">
           <p className="showcase-eyebrow">SUBCULT / INDEPENDENT SOFTWARE</p>
-          <h1 className="mb-5">Find your tool.</h1>
+          <h1 className="mb-5">Products</h1>
           <p className="text-bone text-lg">
             From a clip worth keeping to a night worth putting on: six products, each built for a
             different part of independent culture.
@@ -48,6 +49,7 @@ export default function Projects() {
             </article>
           ))}
         </div>
+        <Teasers headingId="products-teasers" />
       </div>
     </>
   );

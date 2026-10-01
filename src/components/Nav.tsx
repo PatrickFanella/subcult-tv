@@ -12,7 +12,7 @@ const NAV_LINKS = [
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { highContrast, toggleHighContrast } = useEffects();
+  const { vhs, toggleVhs } = useEffects();
 
   return (
     <nav
@@ -47,14 +47,16 @@ export default function Nav() {
               </NavLink>
             ))}
 
-            {/* Contrast toggle */}
+            {/* VHS effects toggle */}
             <button
-              onClick={toggleHighContrast}
+              type="button"
+              onClick={toggleVhs}
               className="font-mono text-xs px-2 py-1 border border-fog text-dust hover:text-flicker hover:border-flicker transition-colors duration-200 cursor-pointer"
-              aria-label={`High contrast: ${highContrast ? 'on' : 'off'}`}
-              title={`Contrast: ${highContrast ? 'HIGH' : 'NORMAL'}`}
+              aria-pressed={vhs}
+              aria-label="VHS effects"
+              title={`VHS effects: ${vhs ? 'on' : 'off'}`}
             >
-              {highContrast ? 'HC:ON' : 'HC:OFF'}
+              {vhs ? 'VHS:ON' : 'VHS:OFF'}
             </button>
           </div>
 
@@ -102,11 +104,13 @@ export default function Nav() {
             ))}
             <div className="flex gap-2 pt-2 border-t border-fog">
               <button
-                onClick={toggleHighContrast}
+                type="button"
+                onClick={toggleVhs}
                 className="font-mono text-xs px-2 py-1 border border-fog text-dust cursor-pointer"
-                aria-label={`High contrast: ${highContrast ? 'on' : 'off'}`}
+                aria-pressed={vhs}
+                aria-label="VHS effects"
               >
-                {highContrast ? 'HC:ON' : 'HC:OFF'}
+                {vhs ? 'VHS:ON' : 'VHS:OFF'}
               </button>
             </div>
           </div>

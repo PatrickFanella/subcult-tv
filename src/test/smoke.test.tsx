@@ -82,9 +82,12 @@ describe('smoke: app shell', () => {
 
   it('redirects the old catalog to the six-product directory', async () => {
     renderApp('/projects');
-    await screen.findByRole('heading', { name: 'Find your tool.' });
+    await screen.findByRole('heading', { name: 'Products', level: 1 });
     const main = within(screen.getByRole('main'));
-    expect(main.getAllByRole('article')).toHaveLength(6);
+    const teasers = within(main.getByRole('region', { name: 'In development' }));
+    const articles = main.getAllByRole('article');
+    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(6);
+    expect(teasers.getAllByRole('article')).toHaveLength(2);
     expect(main.getByRole('link', { name: 'Explore Rekolekt' })).toHaveAttribute(
       'href',
       '/products/rekolekt',
@@ -184,6 +187,29 @@ describe('smoke: app shell', () => {
       expect(nav.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
       expect(footer.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
     }
+  });
+
+  it('shows unnamed in-development teasers without links', async () => {
+    renderApp('/');
+    const teasers = within(await screen.findByRole('region', { name: 'In development' }));
+    expect(teasers.getByRole('heading', { name: 'Untitled game' })).toBeInTheDocument();
+    expect(teasers.getByRole('heading', { name: 'Untitled audio show' })).toBeInTheDocument();
+    expect(teasers.queryAllByRole('link')).toHaveLength(0);
+  });
+
+  it('starts with VHS effects off and toggles them from the navigation', async () => {
+    const user = userEvent.setup();
+    renderApp('/');
+    const nav = within(await screen.findByRole('navigation', { name: 'Main navigation' }));
+    const toggle = nav.getByRole('button', { name: 'VHS effects' });
+    expect(toggle).toHaveAttribute('aria-pressed', 'false');
+    expect(document.querySelector('.scanlines')).toBeNull();
+
+    await user.click(toggle);
+    expect(toggle).toHaveAttribute('aria-pressed', 'true');
+    expect(document.documentElement).toHaveAttribute('data-effects', 'full');
+    expect(document.querySelector('.scanlines.noise-overlay.vhs-tracking')).not.toBeNull();
+    expect(store.get('subcult-effects')).toBe('full');
   });
 });
 
