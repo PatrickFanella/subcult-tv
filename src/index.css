@@ -1252,13 +1252,12 @@ pre,
 /* Product-led site navigation and directory */
 .product-shortcuts {
   display: flex;
-  gap: 1.75rem;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.75rem;
   max-width: 80rem;
   margin: auto;
   padding: 0.85rem 2rem;
-  overflow-x: auto;
   border-top: 1px solid var(--color-fog);
-  scrollbar-width: thin;
 }
 .product-shortcuts a {
   flex-shrink: 0;
@@ -1302,7 +1301,10 @@ html {
     gap: 3rem;
   }
   .product-shortcuts {
-    padding-inline: 1rem;
-    gap: 1.5rem;
+    padding: 0.4rem 1rem;
+    gap: 0 1.25rem;
+  }
+  .product-shortcuts a {
+    padding-block: 0.45rem;
   }
 }

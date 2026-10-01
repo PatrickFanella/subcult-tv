@@ -4,7 +4,7 @@ import Button from '@/components/ui/Button';
 export default function NotFound() {
   return (
     <>
-      <SEOHead title="404 | Signal Lost" path="/404" />
+      <SEOHead path="/404" notFound />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center">
         <p className="font-mono text-xs text-bone mb-4">&gt; ERROR 404</p>

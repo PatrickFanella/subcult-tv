@@ -9,11 +9,7 @@ import { getProductPath } from '@/lib/product-paths';
 export default function Projects() {
   return (
     <>
-      <SEOHead
-        title="Products"
-        description="Six products for independent media, mutual aid, archives, live events, and music. Explore the software built by SUBCULT."
-        path="/products"
-      />
+      <SEOHead path="/products" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <header className="mb-12 max-w-3xl">
           <p className="showcase-eyebrow">SUBCULT / INDEPENDENT SOFTWARE</p>

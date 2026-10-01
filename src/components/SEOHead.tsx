@@ -1,42 +1,43 @@
 import { useEffect } from 'react';
-
-const SITE_URL = 'https://subcult.tv';
+import {
+  absoluteUrl,
+  getPageMeta,
+  jsonLdDocument,
+  metaTags,
+  NOT_FOUND_META,
+  type PageMeta,
+} from '@/lib/seo';
 
 interface SEOHeadProps {
-  title: string;
-  description?: string;
-  path?: string;
-  image?: string;
-  noIndex?: boolean;
+  /** Route path; its title, description, and image come from src/lib/seo.ts. */
+  path: string;
+  /** Use the not-found metadata (noindex) instead of the route's. */
+  notFound?: boolean;
 }
 
 /**
- * Lightweight head manager — updates document title and meta tags.
- * No react-helmet needed for React 19.
+ * Applies a route's metadata to the document head on navigation. The same
+ * tags are written into static HTML at build time (scripts/prerender-meta.ts).
  */
-export default function SEOHead({
-  title,
-  description = 'Explore CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow. Open-source software for media, mutual aid, archives, and live events.',
-  path = '/',
-  image = '/og-image.png',
-  noIndex = false,
-}: SEOHeadProps) {
-  const fullTitle =
-    title === 'Home' ? 'SUBCULT | Open-source tools for independent culture' : `${title} | SUBCULT`;
-  const url = `${SITE_URL}${path}`;
-  const absoluteImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
+export default function SEOHead({ path, notFound = false }: SEOHeadProps) {
+  const meta: PageMeta = (!notFound && getPageMeta(path)) || NOT_FOUND_META;
 
   useEffect(() => {
-    document.title = fullTitle;
-    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.rel = 'canonical';
-      document.head.appendChild(canonical);
-    }
-    canonical.href = url;
+    document.title = meta.title;
 
-    const setMeta = (attr: 'name' | 'property', key: string, content: string) => {
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (meta.noIndex) {
+      canonical?.remove();
+    } else {
+      if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.rel = 'canonical';
+        document.head.appendChild(canonical);
+      }
+      canonical.href = absoluteUrl(meta.path);
+    }
+
+    for (const { attr, key, content } of metaTags(meta)) {
       let el = document.querySelector(`meta[${attr}="${key}"]`);
       if (!el) {
         el = document.createElement('meta');
@@ -44,28 +45,22 @@ export default function SEOHead({
         document.head.appendChild(el);
       }
       el.setAttribute('content', content);
-    };
+    }
 
-    setMeta('name', 'description', description);
-    setMeta('name', 'robots', noIndex ? 'noindex, nofollow' : 'index, follow');
-
-    // OpenGraph
-    setMeta('property', 'og:title', fullTitle);
-    setMeta('property', 'og:description', description);
-    setMeta('property', 'og:url', url);
-    setMeta('property', 'og:image', absoluteImage);
-    setMeta('property', 'og:image:width', '1200');
-    setMeta('property', 'og:image:height', '630');
-    setMeta('property', 'og:site_name', 'SUBCULT');
-    setMeta('property', 'og:type', 'website');
-
-    // Twitter
-    setMeta('name', 'twitter:card', 'summary_large_image');
-    setMeta('name', 'twitter:site', '@subcult_tv');
-    setMeta('name', 'twitter:title', fullTitle);
-    setMeta('name', 'twitter:description', description);
-    setMeta('name', 'twitter:image', absoluteImage);
-  }, [fullTitle, description, url, absoluteImage, noIndex]);
+    const ld = jsonLdDocument(meta);
+    let script = document.querySelector<HTMLScriptElement>('script#ld-json');
+    if (!ld) {
+      script?.remove();
+    } else {
+      if (!script) {
+        script = document.createElement('script');
+        script.id = 'ld-json';
+        script.type = 'application/ld+json';
+        document.head.appendChild(script);
+      }
+      script.textContent = ld;
+    }
+  }, [meta]);
 
   return null;
 }

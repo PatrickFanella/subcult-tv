@@ -14,6 +14,7 @@ import (
 	"github.com/joho/godotenv"
 	"golang.org/x/crypto/bcrypt"
 
+	"github.com/subculture-collective/subcult-tv/api/internal/brevo"
 	"github.com/subculture-collective/subcult-tv/api/internal/config"
 	"github.com/subculture-collective/subcult-tv/api/internal/database"
 	"github.com/subculture-collective/subcult-tv/api/internal/handlers"
@@ -65,8 +66,25 @@ func main() {
 		slog.Warn("patreon credentials not set, campaign endpoint will return empty data")
 	}
 
+	// ── Email (Brevo) ───────────────────────────────────────
+	var mail handlers.Mailer
+	if mailClient := brevo.New(cfg.BrevoAPIKey, brevo.Newsletter{
+		ListID:      cfg.BrevoNewsletterListID,
+		TemplateID:  cfg.BrevoDOITemplateID,
+		RedirectURL: cfg.NewsletterConfirmedURL,
+	}); mailClient != nil {
+		mail = mailClient
+		slog.Info("brevo email enabled", "newsletter_double_opt_in", mailClient.NewsletterEnabled())
+	} else {
+		slog.Warn("BREVO_API_KEY not set, contact notifications and newsletter email are off")
+	}
+	mailCfg := handlers.MailSettings{
+		From:      brevo.Address{Name: cfg.MailFromName, Email: cfg.MailFromEmail},
+		ContactTo: brevo.Address{Email: cfg.ContactNotifyEmail},
+	}
+
 	// ── Router ───────────────────────────────────────────────
-	h := handlers.New(pool, cfg.JWTSecret, patreonClient)
+	h := handlers.New(pool, cfg.JWTSecret, patreonClient, mail, mailCfg)
 	r := router.New(cfg, h)
 
 	srv := &http.Server{

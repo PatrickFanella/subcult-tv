@@ -20,11 +20,7 @@ export default function ProductLanding() {
 
   return (
     <div className="product-landing" data-product={project.slug}>
-      <SEOHead
-        title={`${project.name} — ${product.headline}`}
-        description={product.summary}
-        path={getProductPath(project.slug)}
-      />
+      <SEOHead path={getProductPath(project.slug)} />
       <div className="landing-container">
         <nav className="landing-product-nav" aria-label="Product navigation">
           <Link to="/products">All products</Link>

@@ -25,7 +25,7 @@ export default function NewsletterSignup() {
   if (status === 'success') {
     return (
       <div className="bg-ash border border-static p-6 text-center">
-        <div className="font-mono text-sm text-static mb-1">✓ SUBSCRIBED</div>
+        <div className="font-mono text-sm text-static mb-1">✓ THANKS</div>
         <p className="font-mono text-xs text-dust">{message}</p>
       </div>
     );

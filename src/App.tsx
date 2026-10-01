@@ -12,6 +12,7 @@ const Patreon = lazy(() => import('@/pages/Patreon'));
 const About = lazy(() => import('@/pages/About'));
 const Contact = lazy(() => import('@/pages/Contact'));
 const NotFound = lazy(() => import('@/pages/NotFound'));
+const NewsletterConfirmed = lazy(() => import('@/pages/NewsletterConfirmed'));
 
 // Admin pages (code-split)
 const AdminLogin = lazy(() => import('@/pages/admin/AdminLogin'));
@@ -45,6 +46,7 @@ export default function App() {
             <Route path="support" element={<Patreon />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="newsletter/confirmed" element={<NewsletterConfirmed />} />
             <Route path="*" element={<NotFound />} />
           </Route>
 

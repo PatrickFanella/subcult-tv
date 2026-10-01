@@ -9,7 +9,7 @@ export default function Home() {
   const products = getShowcaseProducts();
   return (
     <>
-      <SEOHead title="Home" path="/" />
+      <SEOHead path="/" />
       <section className="showcase-hero">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="showcase-eyebrow">SUBCULTURE COLLECTIVE / INDEPENDENT SOFTWARE</p>
