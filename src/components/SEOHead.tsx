@@ -16,7 +16,7 @@ interface SEOHeadProps {
  */
 export default function SEOHead({
   title,
-  description = 'SUBCULT builds open-source tools for underground scenes, mutual aid, archives, and independent media.',
+  description = 'Explore CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow. Open-source software for media, mutual aid, archives, and live events.',
   path = '/',
   image = '/og-image.png',
   noIndex = false,
@@ -28,6 +28,13 @@ export default function SEOHead({
 
   useEffect(() => {
     document.title = fullTitle;
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = url;
 
     const setMeta = (attr: 'name' | 'property', key: string, content: string) => {
       let el = document.querySelector(`meta[${attr}="${key}"]`);

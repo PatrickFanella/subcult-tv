@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Rekolekt mark</title>
+  <path d="M17 9H7V55H17M47 9H57V55H47" stroke="#b8df72" stroke-width="4"/>
+  <path d="M23 23V41M32 15V49M41 23V41" stroke="#b8df72" stroke-width="5"/>
+  <path d="M23 44V49M41 44V49" stroke="#b8df72" stroke-width="5"/>
+</svg>

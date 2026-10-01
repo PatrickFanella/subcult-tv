@@ -60,7 +60,7 @@ const FAQS = [
   {
     question: 'What do supporters receive?',
     answer:
-      'Supporters receive the same project updates, releases, repositories, and field notes as everyone else. Patreon support does not buy exclusive content, early access, or private status.',
+      'Supporters receive the same project updates, releases, repositories as everyone else. Patreon support does not buy exclusive content, early access, or private status.',
   },
   {
     question: 'Can I help without spending money?',
@@ -70,7 +70,7 @@ const FAQS = [
   {
     question: 'How can I verify where the effort goes?',
     answer:
-      'Follow the public project catalog, repositories, release history, and field notes. We would rather show the work than publish a vague promise about transparency.',
+      'Follow the product pages, repositories and release history. We would rather show the work than publish a vague promise about transparency.',
   },
 ];
 
@@ -96,9 +96,9 @@ export default function Patreon() {
                   Fund Public Tools for Independent Culture
                 </h1>
                 <p className="text-bone max-w-3xl text-lg md:text-xl leading-relaxed mb-5">
-                  SUBCULT builds software for communities that commercial platforms overlook,
-                  flatten, or exploit. Monthly support pays hosting bills and funds maintenance,
-                  documentation, and research. The resulting work stays public.
+                  Support CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow. Monthly
+                  support pays hosting bills and funds maintenance, documentation, and research. The
+                  resulting work stays public.
                 </p>
                 <p className="text-dust max-w-2xl leading-relaxed mb-8">
                   Patreon has no private-access tier. Every supporter funds the same public work
@@ -117,7 +117,7 @@ export default function Patreon() {
                   </Button>
                   <Button
                     as="link"
-                    to="/projects"
+                    to="/products"
                     variant="secondary"
                     size="lg"
                     className="w-full sm:w-auto"

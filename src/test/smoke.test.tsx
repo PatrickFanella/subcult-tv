@@ -7,7 +7,6 @@ import { AuthProvider } from '@/context/AuthContext';
 import { EffectsProvider } from '@/context/EffectsContext';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import App from '@/App';
-import type { APIPatreonData, PublicStats } from '@/lib/api';
 
 // Deterministic localStorage for EffectsContext/AuthContext.
 const store = new Map<string, string>();
@@ -42,48 +41,65 @@ describe('smoke: app shell', () => {
 
   it('renders the home hero', async () => {
     renderApp('/');
-    expect(await screen.findByRole('heading', { name: 'SUBCULT' })).toBeInTheDocument();
+    expect(
+      await screen.findByRole('heading', { name: /Tools for the culture/ }),
+    ).toBeInTheDocument();
     expect(screen.getByRole('navigation').textContent).toContain('SUBCULT');
   });
 
-  it('renders the projects grid and filters it', async () => {
+  it('showcases all six products and connects HasanAra to its shared application', async () => {
     const user = userEvent.setup();
+    renderApp('/');
+    const showcase = await screen.findByRole('region', { name: 'The products' });
+    const products = within(showcase);
+    for (const name of ['clpr', 'Patchwork', 'HasanAra', 'Rekolekt', 'Subcult OS', 'Undertow']) {
+      expect(products.getByRole('heading', { name })).toBeInTheDocument();
+    }
+    expect(products.getByRole('link', { name: 'Explore clpr ↗' })).toHaveAttribute(
+      'href',
+      'https://clpr.tv',
+    );
+    const hasanara = products.getByRole('article', { name: 'HasanAra' });
+    const core = within(hasanara).getByRole('link', { name: 'Rekolekt →' });
+    await user.click(core);
+    expect(await screen.findByRole('heading', { name: 'Rekolekt', level: 1 })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /View Repository/i })).toHaveAttribute(
+      'href',
+      'https://git.subcult.tv/subculture-collective/transcript-create',
+    );
+  });
+
+  it('opens Undertow from its showcase with the supplied repository destination', async () => {
+    const user = userEvent.setup();
+    renderApp('/');
+    await user.click(await screen.findByRole('link', { name: 'About Undertow' }));
+    expect(await screen.findByRole('heading', { name: 'Undertow', level: 1 })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /View Repository/i })).toHaveAttribute(
+      'href',
+      'https://git.subcult.tv/subculture-collective/undertow',
+    );
+  });
+
+  it('redirects the old catalog to the six-product directory', async () => {
     renderApp('/projects');
-
-    const heading = await screen.findByRole('heading', { name: 'Projects' });
-    expect(heading).toBeInTheDocument();
-
-    expect(screen.getByRole('heading', { name: /Current Focus/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /More projects/i })).toBeInTheDocument();
-    const ungroupedProject = screen.getByRole('heading', { name: 'clustr' });
-    expect(ungroupedProject.closest('a')).toHaveAttribute('href', '/projects/clustr');
-
-    const allTypes = screen.getByRole('button', { name: 'All project types' });
-    const allStatuses = screen.getByRole('button', { name: 'All project statuses' });
-    expect(allTypes).toHaveAttribute('aria-pressed', 'true');
-    expect(allStatuses).toHaveAttribute('aria-pressed', 'true');
-
-    // Apply TYPE: software + STATUS: active filters.
-    const software = screen.getByRole('button', { name: 'Project type: software' });
-    const active = screen.getByRole('button', { name: 'Project status: active' });
-    await user.click(software);
-    await user.click(active);
-
-    expect(software).toHaveAttribute('aria-pressed', 'true');
-    expect(active).toHaveAttribute('aria-pressed', 'true');
-    expect(allTypes).toHaveAttribute('aria-pressed', 'false');
-    expect(allStatuses).toHaveAttribute('aria-pressed', 'false');
-    expect(screen.getByRole('heading', { name: 'clpr' })).toBeInTheDocument();
-    expect(screen.queryByRole('heading', { name: 'blacktower' })).not.toBeInTheDocument();
-
-    const count = await screen.findByText(/(\d+) projects? found/);
-    expect(count).toBeInTheDocument();
+    await screen.findByRole('heading', { name: 'Find your tool.' });
+    const main = within(screen.getByRole('main'));
+    expect(main.getAllByRole('article')).toHaveLength(6);
+    expect(main.getByRole('link', { name: 'Explore Rekolekt' })).toHaveAttribute(
+      'href',
+      '/products/rekolekt',
+    );
+    expect(main.queryByText('clustr')).not.toBeInTheDocument();
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
+      'href',
+      'https://subcult.tv/products',
+    );
   });
 
   it('renders a project detail page from the catalog', async () => {
     renderApp('/projects/clpr');
     expect(await screen.findByRole('heading', { name: 'clpr', level: 1 })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'projects' })).toHaveAttribute('href', '/projects');
+    expect(screen.getByRole('link', { name: 'All products' })).toHaveAttribute('href', '/products');
 
     const visitProject = screen.getByRole('link', { name: /Visit Project/i });
     const viewRepository = screen.getByRole('link', { name: /View Repository/i });
@@ -101,26 +117,82 @@ describe('smoke: app shell', () => {
 
   it('renders 404 for unknown projects', async () => {
     renderApp('/projects/definitely-not-a-project');
-    expect(await screen.findByText(/ERROR 404: project not found/i)).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: 'SIGNAL LOST' })).toBeInTheDocument();
   });
 
-  it('presents the conference demo and verified Bluesky profile on the links page', async () => {
-    renderApp('/links');
-
-    const main = within(screen.getByRole('main'));
-
-    expect(await main.findByRole('link', { name: /Try Patchwork/i })).toHaveAttribute(
+  it.each([
+    ['clpr', 'clpr'],
+    ['patchwork', 'Patchwork'],
+    ['hasanara', 'HasanAra'],
+    ['rekolekt', 'Rekolekt'],
+    ['subcult-os', 'Subcult OS'],
+    ['undertow', 'Undertow'],
+  ])('renders the %s landing page with product details and working FAQs', async (slug, name) => {
+    const user = userEvent.setup();
+    renderApp(`/products/${slug}`);
+    expect(await screen.findByRole('heading', { name, level: 1 })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'How it works' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /View Repository/ })).toHaveAttribute(
       'href',
-      'https://patchwork.subcult.tv',
+      expect.stringContaining('git.subcult.tv/'),
     );
-    expect(main.getByRole('link', { name: 'Bluesky ↗' })).toHaveAttribute(
+    const question = document.querySelector('details summary')!;
+    const details = question.closest('details')!;
+    expect(details.open).toBe(false);
+    await user.click(question);
+    expect(details.open).toBe(true);
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
       'href',
-      'https://bsky.app/profile/subcult.tv',
+      `https://subcult.tv/products/${slug}`,
     );
+  });
+
+  it('rejects unknown product pages', async () => {
+    renderApp('/products/clustr');
+    expect(await screen.findByRole('heading', { name: 'SIGNAL LOST' })).toBeInTheDocument();
+  });
+
+  it.each([
+    '/projects/clustr',
+    '/invest',
+    '/metrics',
+    '/deck',
+    '/onepager',
+    '/press',
+    '/memo',
+    '/links',
+    '/zine',
+    '/zine/boot-sequence',
+  ])('removes the unrelated public route %s', async (route) => {
+    renderApp(route);
+    expect(await screen.findByRole('heading', { name: 'SIGNAL LOST' })).toBeInTheDocument();
+  });
+
+  it('makes every product available from the shared navigation and footer', async () => {
+    renderApp('/about');
+    await screen.findByRole('heading', { name: 'Built by SUBCULT.' });
+    const nav = within(screen.getByRole('navigation', { name: 'Main navigation' }));
+    const footer = within(screen.getByRole('contentinfo'));
+    for (const [name, slug] of [
+      ['clpr', 'clpr'],
+      ['Patchwork', 'patchwork'],
+      ['HasanAra', 'hasanara'],
+      ['Rekolekt', 'rekolekt'],
+      ['Subcult OS', 'subcult-os'],
+      ['Undertow', 'undertow'],
+    ]) {
+      expect(nav.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
+      expect(footer.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
+    }
   });
 });
 
 describe('smoke: contact', () => {
+  it('carries a product question into the contact form', async () => {
+    renderApp('/contact?product=transcript-create');
+    expect(await screen.findByLabelText('Subject')).toHaveValue('Rekolekt question');
+  });
+
   it('submits the form via the API', async () => {
     const api = await import('@/lib/api');
     const submit = vi.fn().mockResolvedValue({ message: 'signal received' });
@@ -178,24 +250,6 @@ describe('smoke: contact', () => {
   });
 });
 
-describe('smoke: zine post', () => {
-  it('navigates to and replaces the post with the next article', async () => {
-    const user = userEvent.setup();
-    renderApp('/zine/boot-sequence');
-    const oldHeading = await screen.findByRole('heading', {
-      name: "Boot sequence: why we're building Subculture Collective",
-    });
-    const nextPost = screen.getByRole('link', { name: 'Read next post: Against metrics' });
-    expect(nextPost).toHaveAttribute('href', '/zine/against-metrics');
-
-    await user.click(nextPost);
-
-    expect(await screen.findByRole('heading', { name: 'Against metrics' })).toBeInTheDocument();
-    expect(await screen.findByText('The metric becomes the narrative.')).toBeInTheDocument();
-    expect(oldHeading).not.toBeInTheDocument();
-  });
-});
-
 describe('NewsletterSignup', () => {
   it('uses a distinct email input ID for each instance', () => {
     render(
@@ -215,58 +269,5 @@ describe('NewsletterSignup', () => {
     expect(emailInputs[0].labels?.[0].htmlFor).toBe(emailInputs[0].id);
     expect(emailInputs[1].labels?.[0].htmlFor).toBe(emailInputs[1].id);
     expect(emailInputs[0].labels?.[0]).not.toBe(emailInputs[1].labels?.[0]);
-  });
-});
-
-describe('smoke: metrics', () => {
-  function getMetricCard(label: string) {
-    const card = screen.getByText(label).parentElement;
-    if (!card) throw new Error(`Missing metric card for ${label}`);
-    return card;
-  }
-
-  it('shows unavailable rather than zero when metric APIs fail', async () => {
-    const api = await import('@/lib/api');
-    vi.spyOn(api, 'getPatreonCampaign').mockRejectedValue(new Error('Patreon unavailable'));
-    vi.spyOn(api, 'getPublicStats').mockRejectedValue(new Error('Public stats unavailable'));
-
-    renderApp('/metrics');
-    await screen.findByRole('heading', { name: 'Metrics Dashboard' });
-
-    const newsletterCard = getMetricCard('Newsletter Subscribers');
-    const patreonCard = getMetricCard('Patreon Supporters');
-    expect(await within(newsletterCard).findByText('Unavailable')).toBeInTheDocument();
-    expect(await within(patreonCard).findByText('Unavailable')).toBeInTheDocument();
-    expect(within(newsletterCard).queryByText('0')).not.toBeInTheDocument();
-    expect(within(patreonCard).queryByText('0')).not.toBeInTheDocument();
-  });
-
-  it('shows legitimate zero values returned by metric APIs', async () => {
-    const api = await import('@/lib/api');
-    const patreonResponse: APIPatreonData = {
-      campaign: {
-        patron_count: 0,
-        creation_name: 'SUBCULT',
-        url: 'https://www.patreon.com/subcult',
-      },
-      tiers: [],
-      cached_at: '2026-08-28T00:00:00.000Z',
-    };
-    const publicStatsResponse: PublicStats = {
-      projects: 0,
-      posts: 0,
-      subscribers: 0,
-      last_updated: '2026-08-28T00:00:00.000Z',
-    };
-    vi.spyOn(api, 'getPatreonCampaign').mockResolvedValue(patreonResponse);
-    vi.spyOn(api, 'getPublicStats').mockResolvedValue(publicStatsResponse);
-
-    renderApp('/metrics');
-    await screen.findByRole('heading', { name: 'Metrics Dashboard' });
-
-    expect(
-      await within(getMetricCard('Newsletter Subscribers')).findByText('0'),
-    ).toBeInTheDocument();
-    expect(await within(getMetricCard('Patreon Supporters')).findByText('0')).toBeInTheDocument();
   });
 });

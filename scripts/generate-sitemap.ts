@@ -9,7 +9,7 @@
 
 import { writeFileSync, mkdirSync, readFileSync } from 'fs';
 import { join } from 'path';
-import { getPublishedPosts } from '../src/lib/posts.js';
+import { getProductPath } from '../src/lib/product-paths.js';
 
 // @content alias is not resolved under tsx, so read the catalog directly.
 type CatalogProject = {
@@ -39,20 +39,10 @@ interface SitemapEntry {
 // Static routes (SHELL-level pages, column order unchanged from public/sitemap.xml)
 const STATIC_ROUTES: SitemapEntry[] = [
   { loc: '/', changefreq: 'weekly', priority: '1.0' },
-  { loc: '/projects', changefreq: 'weekly', priority: '0.9' },
-  { loc: '/zine', changefreq: 'weekly', priority: '0.9' },
-  { loc: '/support', changefreq: 'monthly', priority: '0.8' },
+  { loc: '/products', changefreq: 'weekly', priority: '0.9' },
   { loc: '/about', changefreq: 'monthly', priority: '0.6' },
-  { loc: '/memo', changefreq: 'monthly', priority: '0.6' },
   { loc: '/contact', changefreq: 'monthly', priority: '0.6' },
-  { loc: '/press', changefreq: 'monthly', priority: '0.4' },
-  { loc: '/links', changefreq: 'monthly', priority: '0.6' },
-  { loc: '/metrics', changefreq: 'monthly', priority: '0.3' },
-  { loc: '/invest', changefreq: 'monthly', priority: '0.3' },
-  { loc: '/deck', changefreq: 'monthly', priority: '0.3' },
-  { loc: '/onepager', changefreq: 'monthly', priority: '0.3' },
-  { loc: '/deck/brand', changefreq: 'monthly', priority: '0.2' },
-  { loc: '/onepager/brand', changefreq: 'monthly', priority: '0.2' },
+  { loc: '/support', changefreq: 'monthly', priority: '0.5' },
 ];
 
 /**
@@ -102,21 +92,10 @@ function main() {
   for (const p of projects) {
     const lastmod = p.lastUpdated?.split('T')[0];
     entries.push({
-      loc: `/projects/${p.slug}`,
+      loc: getProductPath(p.slug),
       lastmod,
       changefreq: p.status === 'active' ? 'weekly' : 'monthly',
       priority: p.featured ? '0.8' : '0.6',
-    });
-  }
-
-  // Zine post pages
-  const published = getPublishedPosts();
-  for (const post of published) {
-    entries.push({
-      loc: `/zine/${post.slug}`,
-      lastmod: post.date,
-      changefreq: 'yearly',
-      priority: '0.7',
     });
   }
 
@@ -131,7 +110,7 @@ function main() {
   writeFileSync(sitemapPath, sitemapXml, 'utf-8');
 
   console.log(`✅ Sitemap generated: ${sitemapPath}`);
-  console.log(`📊 ${entries.length} URLs included (${projects.length} projects, ${published.length} posts)`);
+  console.log(`📊 ${entries.length} URLs included (${projects.length} projects, 0 posts)`);
 }
 
 // Run the script

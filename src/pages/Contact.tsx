@@ -2,7 +2,8 @@ import { inputClass } from '@/components/ui/TextInput';
 import { useState, type FormEvent } from 'react';
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
-import TerminalPanel from '@/components/effects/TerminalPanel';
+import { useSearchParams } from 'react-router-dom';
+import { getShowcaseProducts } from '@/lib/showcase';
 import { submitContact } from '@/lib/api';
 
 const SOCIAL_LINKS = [
@@ -29,13 +30,17 @@ const SOCIAL_LINKS = [
 ];
 
 export default function Contact() {
+  const [searchParams] = useSearchParams();
+  const product = getShowcaseProducts().find(
+    ({ project }) => project.slug === searchParams.get('product'),
+  )?.project;
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
+    subject: product ? `${product.name} question` : '',
     message: '',
   });
   const mailtoUrl = `mailto:info@subcult.tv?subject=${encodeURIComponent(
@@ -73,10 +78,10 @@ export default function Contact() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <div className="mb-12">
-          <p className="font-mono text-xs text-dust mb-3">&gt; ping subcult.tv</p>
+          <p className="font-mono text-xs text-dust mb-3">SUBCULT / LET’S TALK</p>
           <h1 className="mb-4">Contact</h1>
           <p className="text-bone max-w-2xl">
-            Send a collaboration idea, project question, or bug report. For project bugs, include
+            Ask about a product, discuss a collaboration, or report a bug. For bug reports, include
             the project name and what happened.
           </p>
         </div>
@@ -90,17 +95,12 @@ export default function Contact() {
             </h2>
 
             {submitted ? (
-              <TerminalPanel title="message.sent">
-                <div>
-                  <span className="text-static">✓ Message received.</span>
-                  <br />
-                  <span className="text-chalk">Your message reached the collective.</span>
-                  <br />
-                  <span className="text-dust"># we'll respond when we can.</span>
-                  <br />
-                  <span className="text-dust"># no auto-reply. a human reads it.</span>
-                </div>
-              </TerminalPanel>
+              <div className="border border-static p-6" role="status">
+                <h3 className="mb-3">Message received</h3>
+                <p className="text-bone">
+                  Thanks for getting in touch. We’ll reply to the email address you provided.
+                </p>
+              </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
@@ -188,7 +188,7 @@ export default function Contact() {
                 </Button>
 
                 <p className="font-mono text-xs text-fog text-center mt-2">
-                  Your message goes to the collective. No tracking.
+                  Your message goes to Subculture Collective.
                 </p>
               </form>
             )}
@@ -221,28 +221,13 @@ export default function Contact() {
               ))}
             </div>
 
-            <TerminalPanel title="contact.policy">
-              <div>
-                <span className="text-dust"># how we handle contact:</span>
-                <br />
-                <span className="text-chalk">response_time: </span>
-                <span className="text-flicker">1-5 business days</span>
-                <br />
-                <span className="text-chalk">auto_reply: </span>
-                <span className="text-signal">none</span>
-                <br />
-                <span className="text-chalk">data_stored: </span>
-                <span className="text-static">message only</span>
-                <br />
-                <span className="text-chalk">tracking: </span>
-                <span className="text-static">zero</span>
-                <br />
-                <br />
-                <span className="text-dust"># project questions and collaborations welcome.</span>
-                <br />
-                <span className="text-dust"># spam gets /dev/null'd.</span>
-              </div>
-            </TerminalPanel>
+            <div className="border-t border-fog pt-6">
+              <h3 className="mb-3">Product questions</h3>
+              <p className="text-bone">
+                Tell us which product you’re using and what you want to do. Include a link or steps
+                to reproduce if something isn’t working.
+              </p>
+            </div>
           </div>
         </div>
       </div>
