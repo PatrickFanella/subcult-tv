@@ -9,38 +9,37 @@ export interface LandingContent {
 
 export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
   clpr: {
-    audience: 'For viewers, curators, and the communities around a stream.',
+    audience: 'For viewers, clip curators, and the communities around a stream.',
     introduction:
-      'A great clip should be easy to find again. CLPR gives Twitch moments a place to be discovered, collected, and passed around.',
+      'Twitch makes clips easy to create and hard to find again. CLPR collects them in one place where you can browse, save, and pass them along.',
     features: [
       {
         title: 'Find the good moments',
         description:
-          'Discover Twitch clips and browse beyond the one link someone dropped in chat.',
+          'Browse trending clips by creator, topic, and tag instead of relying on a link someone dropped in chat.',
       },
       {
-        title: 'Give your favorites a home',
-        description: 'Organize saved clips into collections you can return to.',
+        title: 'Keep your favorites',
+        description: 'Save clips and organize them into playlists you can come back to.',
       },
       {
-        title: 'Share your taste',
-        description: 'Share favorites with other viewers and help a moment find its next audience.',
+        title: 'Pass them along',
+        description: 'Share a clip or a playlist and help a moment find its next audience.',
       },
     ],
     steps: [
-      { title: 'Discover', description: 'Browse clips and find something worth watching.' },
-      { title: 'Collect', description: 'Save your favorites in an organized collection.' },
-      { title: 'Share', description: 'Pass a clip or collection along to other viewers.' },
+      { title: 'Browse', description: 'Start with what is trending or follow a creator or topic.' },
+      { title: 'Save', description: 'Keep the clips you like in a playlist.' },
+      { title: 'Share', description: 'Send a clip or playlist to other viewers.' },
     ],
     faqs: [
       {
         question: 'What kind of clips is CLPR for?',
-        answer: 'CLPR is built around Twitch clips and the viewers who curate them.',
+        answer: 'Twitch clips, and the viewers who collect and share them.',
       },
       {
-        question: 'Can I look at the source code?',
-        answer:
-          'Yes. The repository is linked below, so you can inspect the application and follow its development.',
+        question: 'Can I read the source code?',
+        answer: 'Yes. The repository is linked below.',
       },
     ],
     closing: 'Find your next favorite clip.',
@@ -48,140 +47,145 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
   patchwork: {
     audience: 'For neighbors, mutual aid groups, and people looking to help.',
     introduction:
-      'Community needs are easy to lose in a feed. Patchwork makes mutual aid requests searchable and brings coordination onto an open network.',
+      'Requests for help get lost in group chats and feeds. Patchwork puts local needs, offers, and resources in one place without publishing anyone’s exact location.',
     features: [
       {
-        title: 'Find a request',
-        description: 'Search mutual aid requests to find a need you can respond to.',
+        title: 'See what’s needed nearby',
+        description:
+          'Browse requests and resources on a map and in a feed. Public views show approximate areas, never exact addresses.',
       },
       {
-        title: 'Connect around a need',
-        description:
-          'Use a shared place for discovering requests and coordinating community support.',
+        title: 'Ask for help or offer it',
+        description: 'Post a request, respond to one, or offer what you can.',
       },
       {
-        title: 'Build on an open network',
+        title: 'Built on an open network',
         description:
-          'Patchwork uses AT Protocol, with search and moderation tools supporting the network.',
+          'Patchwork uses AT Protocol, the open protocol behind Bluesky, so you sign in with your Bluesky account.',
       },
     ],
     steps: [
-      { title: 'Look for a need', description: 'Start with a search for community requests.' },
+      { title: 'Look for a need', description: 'Browse requests and resources near you.' },
       {
-        title: 'Read the context',
+        title: 'Read the details',
         description: 'Understand what someone is asking for before you respond.',
       },
-      { title: 'Connect', description: 'Find a way to contribute or coordinate support.' },
+      {
+        title: 'Work it out together',
+        description: 'Use private coordination tools to arrange the details with the other person.',
+      },
     ],
     faqs: [
       {
-        question: 'What is Patchwork built on?',
-        answer: 'Patchwork is built on AT Protocol, the open protocol also used by Bluesky.',
+        question: 'Can I use Patchwork for real requests today?',
+        answer:
+          'Not yet. Patchwork is a pre-alpha prototype and the public site is a demonstration environment. Use it to see how it works, not to arrange real help.',
       },
       {
-        question: 'Does finding a request guarantee help?',
+        question: 'What is Patchwork built on?',
+        answer: 'AT Protocol, the open protocol also used by Bluesky.',
+      },
+      {
+        question: 'Does posting a request guarantee help?',
         answer:
-          'Patchwork helps people discover and coordinate around requests. Whether help is available depends on the people and groups responding.',
+          'No. Patchwork helps people find and coordinate around requests. Whether help comes depends on the people and groups who respond.',
       },
     ],
     closing: 'Start with a need. Find a connection.',
   },
   hasanara: {
-    audience: 'For viewers, researchers, and anyone trying to find what was said.',
+    audience: 'For viewers, researchers, and anyone trying to find what was said on stream.',
     introduction:
-      'Long recordings contain moments you want to revisit. HasanAra lets you search the transcript, find a passage, and keep the original recording close at hand.',
+      'Years of broadcasts hold moments people want to find again. HasanAra searches HasanAbi’s VOD transcripts and takes you from a result to the exact point in the recording.',
     features: [
       {
         title: 'Search what was said',
-        description: 'Find words and passages across the archive through searchable transcripts.',
+        description: 'Search transcripts by topic or exact phrase across the whole archive.',
       },
       {
-        title: 'Return to the recording',
-        description: 'Follow timestamps back to the moment in the source video.',
+        title: 'Go back to the recording',
+        description: 'Follow a timestamp from the transcript to that moment in the VOD.',
       },
       {
         title: 'Keep the passage',
-        description:
-          'Save or share a passage with the context needed to understand where it came from.',
+        description: 'Save or share a passage with a link to its source.',
       },
     ],
     steps: [
       {
         title: 'Search the archive',
-        description: 'Look for a phrase, subject, or moment in the transcripts.',
+        description: 'Look for a phrase or a subject.',
       },
       {
         title: 'Check the context',
-        description: 'Read the surrounding passage and return to the original timestamp.',
+        description: 'Read the surrounding transcript and open the original timestamp.',
       },
       {
         title: 'Save or share',
-        description: 'Keep the passage or send it along with its source attached.',
+        description: 'Keep the passage or send it with its source attached.',
       },
     ],
     faqs: [
       {
         question: 'How are HasanAra and Rekolekt connected?',
-        answer:
-          'HasanAra is an archive experience powered by Rekolekt, the shared application for searchable recordings and passages.',
+        answer: 'HasanAra runs on Rekolekt, the shared software for searchable recording archives.',
       },
       {
-        question: 'Should I check the original recording?',
+        question: 'Should I check the original recording before quoting it?',
         answer:
-          'Yes. Transcripts make recordings searchable, but transcription can contain errors. Use the timestamp and surrounding context to check a quotation.',
+          'Yes. Transcripts are generated automatically and can contain errors. Use the timestamp to check the recording before you quote it.',
       },
     ],
     closing: 'Find the moment you were looking for.',
   },
   'transcript-create': {
-    audience: 'For archivists, creators, and people maintaining recorded collections.',
+    audience: 'For archivists, creators, and anyone maintaining a collection of recordings.',
     introduction:
-      'Rekolekt turns long-form recordings into a collection people can explore. Searchable text, timestamps, and saved passages bring the archive within reach.',
+      'Hours of recordings are hard to search. Rekolekt transcribes them with timestamps so people can search the collection, cite a passage, and jump back to the source.',
     features: [
       {
         title: 'Turn recordings into text',
-        description: 'Ingest recordings and create timestamped transcripts for your collection.',
+        description: 'Ingest videos and produce timestamped transcripts.',
       },
       {
-        title: 'Make the archive useful',
+        title: 'Search and cite',
         description:
-          'Browse and search the archive, then save and share passages with source context.',
+          'Search and browse the archive, then save and share passages with their source attached.',
       },
       {
-        title: 'Make it your archive',
+        title: 'Keep your own identity',
         description:
-          'Use your own archive identity and branding while running the shared application core.',
+          'Each archive supplies its own name, branding, and assets while running the same software.',
       },
     ],
     steps: [
       {
         title: 'Bring in recordings',
-        description: 'Ingest the long-form material you want people to find.',
+        description: 'Add the long-form material you want people to find.',
       },
       {
         title: 'Build the archive',
-        description: 'Store timestamped transcripts and make the collection searchable.',
+        description: 'Rekolekt stores timestamped transcripts and makes them searchable.',
       },
       {
         title: 'Put passages to work',
-        description: 'Help readers find, save, and share moments with their sources attached.',
+        description: 'Readers find, save, and share moments with the source attached.',
       },
     ],
     faqs: [
       {
-        question: 'Can the archive use its own branding?',
+        question: 'Can an archive use its own branding?',
         answer:
-          'Yes. Each deployment can supply its own public profile and assets while using the same application core.',
+          'Yes. Each deployment supplies its own public profile and assets. Changing the branding does not require forking or rebuilding the application.',
       },
       {
-        question: 'Where can I see an archive using it?',
-        answer:
-          'HasanAra is built on the shared application. Follow the HasanAra link below to explore that archive.',
+        question: 'Where can I see it running?',
+        answer: 'HasanAra runs on Rekolekt. Follow the HasanAra link below to explore it.',
       },
       {
-        question: 'Why does the repository say transcript-create?',
+        question: 'Why is the repository called transcript-create?',
         answer:
-          'Rekolekt is the working product name for Transcript Creator. The repository remains transcript-create.',
+          'Rekolekt is a working product name. The code still lives in the transcript-create repository.',
       },
     ],
     closing: 'Give your recordings a searchable home.',
@@ -189,95 +193,97 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
   'subcult-os': {
     audience: 'For independent promoters, hosts, and the people running the door.',
     introduction:
-      'Putting on a night means keeping the plan, guest list, door, and schedule in sync. Subcult OS brings those jobs into a shared event workspace.',
+      'Putting on a night means keeping the plan, the staff, the tickets, and the door in sync. Subcult OS keeps them in one shared workspace.',
     features: [
       {
         title: 'Plan the night',
         description:
-          'Organize the event and its run of show so the team can work from the same plan.',
+          'Set up the event, its schedule, and its run of show where the whole team can see them.',
       },
       {
-        title: 'Keep the guest list close',
-        description: 'Manage invites and guest information alongside the event.',
+        title: 'Staff it',
+        description: 'Invite your team and assign roles before doors open.',
       },
       {
         title: 'Run the door',
-        description: 'Use mobile ticket scanning and door tools when guests arrive.',
+        description:
+          'Take ticket reservations, then check guests in by name or ticket code on a phone.',
       },
     ],
     steps: [
-      { title: 'Make the plan', description: 'Set up the event and prepare the running order.' },
+      { title: 'Make the plan', description: 'Create the event and set the running order.' },
       {
-        title: 'Coordinate the team',
-        description: 'Bring guest lists, invites, and event information into the workspace.',
+        title: 'Bring in the team',
+        description: 'Invite staff and give each person a role.',
       },
       {
         title: 'Open the doors',
-        description: 'Use the door and scanning tools to welcome people in.',
+        description: 'Check guests in as they arrive, then close out with an end-of-night report.',
       },
     ],
     faqs: [
       {
-        question: 'Who is Subcult OS designed for?',
+        question: 'Who is Subcult OS for?',
         answer:
-          'It is designed for people putting on small live events who need planning, guest lists, schedules, and door tools together.',
+          'People putting on small live events who want planning, staffing, tickets, and the door in one place.',
       },
       {
-        question: 'Where can I learn about running it?',
+        question: 'How do I start using it?',
         answer:
-          'Start with the repository for the current code and setup documentation. Contact SUBCULT if you want to discuss using it for your events.',
+          'The repository has the current code and setup documentation. If you want to use it for your events, contact SUBCULT.',
       },
     ],
     closing: 'Keep the team together. Put on the night.',
   },
   undertow: {
-    audience: 'For independent musicians, labels, and people making visuals for sound.',
+    audience: 'For independent musicians, labels, and anyone making visuals for a release.',
     introduction:
-      'Turn a track into something people can watch. Undertow combines audio-reactive visuals, artwork, lyrics, and video in a layered music visualizer editor.',
+      'A release needs video for every platform. Undertow is a layered visualizer editor: build the video once, adjust it for each format, and render it on your own computer.',
     features: [
       {
         title: 'Compose in layers',
         description:
-          'Combine visualizers, images, text, video backgrounds, and particles in one composition.',
+          'Stack Milkdrop visuals, spectrum and VU meters, artwork, text, looping video, and particles, or start from one of six templates.',
       },
       {
         title: 'Bring the lyrics in',
-        description: 'Use timed lyrics to connect the words with the music.',
+        description: 'Import LRC, SRT, or VTT lyrics, including word-by-word timing for karaoke.',
       },
       {
-        title: 'Export for the release',
+        title: 'Export every format',
         description:
-          'Create landscape, portrait, and square layouts, then export MP4 videos locally in your browser.',
+          'Each layer keeps its own position in 16:9, 9:16, and 1:1. Export H.264 MP4 from 720p to 4K, several formats at once.',
       },
     ],
     steps: [
       {
         title: 'Start with your track',
-        description: 'Bring in the audio and choose a starting layout.',
+        description: 'Add the song, your artwork, and a template.',
       },
       {
         title: 'Build the visual',
-        description: 'Layer artwork, audio-reactive effects, and timed lyrics.',
+        description: 'Adjust layers, sync the lyrics, and check each format.',
       },
       {
         title: 'Export your video',
-        description: 'Adapt the layout to your chosen format and render an MP4.',
+        description: 'Render MP4s in the browser, or a 15-second preview first.',
       },
     ],
     faqs: [
       {
         question: 'Does a local export upload my media?',
         answer:
-          'Local analysis, rendering, and MP4 encoding happen in your browser, keeping the media on your device.',
+          'No. Audio analysis, rendering, and MP4 encoding happen in your browser, so the media stays on your device.',
       },
       {
-        question: 'How is cloud rendering different?',
+        question: 'What about cloud rendering?',
         answer:
-          'Cloud exports upload the files needed for the render and delete those inputs when the job ends. Optional accounts and cloud rendering are separate from the local export workflow.',
+          'Paid plans can render on the server instead. Cloud exports upload the files the render needs and delete them when the job ends.',
       },
       {
-        question: 'Which formats can I design for?',
-        answer: 'Undertow supports landscape 16:9, portrait 9:16, and square 1:1 layouts.',
+        question: 'Do I need an account?',
+        answer:
+          'No. Accounts are optional. They save projects and defaults such as your artist name, socials, and fonts.',
       },
     ],
     closing: 'Make the track a visual release.',

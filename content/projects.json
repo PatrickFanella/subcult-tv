@@ -15,7 +15,7 @@
     "screenshot": "/screenshots/clpr-home-1440.webp",
     "featured": true,
     "order": 0,
-    "coverColor": "#9146ff",
+    "coverColor": "#8c5cff",
     "coverPattern": "grid"
   },
   "patchwork": {
@@ -34,7 +34,7 @@
     "screenshot": "/screenshots/patchwork-home-1440.webp",
     "featured": true,
     "order": 1,
-    "coverColor": "#ec4899",
+    "coverColor": "#9ec5ad",
     "coverPattern": "sigil"
   },
   "hasanara": {
@@ -60,9 +60,10 @@
     "url": "https://hasanara.tv",
     "repoUrl": "https://git.subcult.tv/subculture-collective/hasanara",
     "lastUpdated": "2026-08-18T00:00:00Z",
+    "screenshot": "/screenshots/hasanara-home-1440.webp",
     "featured": true,
     "order": 2,
-    "coverColor": "#f59e0b",
+    "coverColor": "#ff5b52",
     "coverPattern": "waves"
   },
   "transcript-create": {
@@ -96,7 +97,7 @@
     "lastUpdated": "2026-08-18T00:00:00Z",
     "featured": true,
     "order": 4,
-    "coverColor": "#00ff88",
+    "coverColor": "#00ffff",
     "coverPattern": "sigil"
   },
   "undertow": {
@@ -111,9 +112,10 @@
     "topics": ["music", "visualizers", "video", "browser"],
     "repoUrl": "https://git.subcult.tv/subculture-collective/undertow",
     "lastUpdated": "2026-10-01T00:00:00Z",
+    "screenshot": "/screenshots/undertow-editor-1440.webp",
     "featured": true,
     "order": 5,
-    "coverColor": "#fb923c",
+    "coverColor": "#ff9fe0",
     "coverPattern": "waves"
   }
 }

@@ -16,39 +16,36 @@ export default function About() {
           <p className="showcase-eyebrow">THE STUDIO BEHIND THE PRODUCTS</p>
           <h1 className="mb-6">Built by SUBCULT.</h1>
           <p className="text-bone text-lg leading-relaxed">
-            Subculture Collective is an independent software studio. We build tools for the people
-            collecting media, preserving memory, organizing support, and making live culture happen.
+            Subculture Collective is an independent software studio. We build tools for people who
+            collect clips, keep archives, organize mutual aid, and put on live events.
           </p>
         </header>
         <section className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
-            <h2 className="mb-5">A practice, expressed in products.</h2>
+            <h2 className="mb-5">Each product starts with a specific job.</h2>
             <p className="text-bone leading-relaxed">
               A stream produces moments worth keeping. A recording holds a conversation worth
               finding again. A neighborhood needs a way to coordinate help. An event needs someone
-              to run the door. Our products start with those concrete needs.
+              to run the door. We build for one of those jobs at a time.
             </p>
           </div>
           <div className="space-y-6 text-bone">
             <div>
               <h3 className="text-glow mb-2">Source you can inspect</h3>
               <p>
-                Each product links to its repository, so you can follow its development and see how
-                it works.
+                Each product links to its repository, so you can see how it works and follow its
+                development.
               </p>
             </div>
             <div>
-              <h3 className="text-glow mb-2">Identity that fits the work</h3>
-              <p>
-                Every product has its own visual language, shaped around the people and workflows it
-                serves.
-              </p>
+              <h3 className="text-glow mb-2">A design of its own</h3>
+              <p>Each product has its own look, designed around the people who use it.</p>
             </div>
             <div>
-              <h3 className="text-glow mb-2">Care beyond the release</h3>
+              <h3 className="text-glow mb-2">Maintained after release</h3>
               <p>
-                Maintenance, documentation, and useful feedback are part of building software people
-                can keep using.
+                We keep fixing bugs, updating documentation, and answering feedback after a product
+                ships.
               </p>
             </div>
           </div>
@@ -73,8 +70,8 @@ export default function About() {
         <section className="border-t border-fog mt-12 pt-12">
           <h2 className="mb-5">Have a use for one of these?</h2>
           <p className="text-bone mb-6 max-w-2xl">
-            Talk to us about your archive, community, event, or creative workflow. Product
-            questions, contributions, and collaborations are welcome.
+            Tell us about your archive, community, event, or creative project. We also welcome
+            product questions, contributions, and collaborations.
           </p>
           <Link to="/contact" className="showcase-text-link">
             Get in touch →

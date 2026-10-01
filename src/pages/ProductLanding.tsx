@@ -58,7 +58,7 @@ export default function ProductLanding() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {project.url ? `Open ${project.name}` : 'Explore the code'} ↗
+                {project.url ? (product.liveLabel ?? `Open ${project.name}`) : 'Explore the code'} ↗
               </a>
               <a className="landing-secondary" href="#features">
                 See what it does ↓
@@ -117,8 +117,8 @@ export default function ProductLanding() {
               </h2>
               <p>
                 {project.slug === 'hasanara'
-                  ? 'Rekolekt is the shared application for building searchable archives with their own identity.'
-                  : 'HasanAra brings the shared application to a video archive with its own identity and community.'}
+                  ? 'Rekolekt is the shared software for searchable recording archives. HasanAra is one archive built on it.'
+                  : 'HasanAra runs Rekolekt on an archive of HasanAbi broadcasts, under its own name and design.'}
               </p>
             </div>
             <Link className="landing-button" to={getProductPath(related.project.slug)}>
@@ -129,7 +129,7 @@ export default function ProductLanding() {
         <section className="landing-section landing-faq" aria-labelledby="faq-title">
           <div>
             <p className="landing-eyebrow">A FEW DETAILS</p>
-            <h2 id="faq-title">Questions, answered.</h2>
+            <h2 id="faq-title">Common questions</h2>
           </div>
           <div>
             {content.faqs.map((faq) => (
@@ -151,7 +151,7 @@ export default function ProductLanding() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Visit Project ↗
+                {product.liveLabel ?? 'Visit Project'} ↗
               </a>
             )}
             <a

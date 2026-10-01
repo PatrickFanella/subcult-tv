@@ -22,8 +22,8 @@ export default function Home() {
             </div>
             <div>
               <p className="text-bone text-lg leading-relaxed mb-6">
-                Collect the clips. Search the archive. Find mutual aid. Put on the night. Software
-                from SUBCULT, made for people doing things together.
+                Save Twitch clips. Search a broadcast archive. Coordinate mutual aid. Run the door
+                at your next show. SUBCULT builds open-source software for each of these.
               </p>
               <Button as="a" href="#products" variant="secondary">
                 Explore the products ↓
@@ -54,10 +54,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-12">
           <div>
             <p className="showcase-eyebrow">BUILT BY SUBCULT</p>
-            <h2 className="mb-5">Independent on purpose.</h2>
+            <h2 className="mb-5">Built in the open.</h2>
             <p className="text-bone max-w-lg mb-6">
-              We build open-source software for independent media, community organizing, and live
-              scenes. Explore the code, follow the work, or talk to us about your project.
+              Every product links to its source code. Read it, follow the work, or talk to us about
+              your own project.
             </p>
             <Link to="/about" className="showcase-text-link">
               Meet the studio →
@@ -69,7 +69,7 @@ export default function Home() {
                 Build something with us →
               </Link>
               <p className="text-sm text-bone mt-2">
-                Have an archive, a community, or an event in mind? Get in touch.
+                Have an archive, a community, or an event that needs software? Get in touch.
               </p>
             </div>
           </div>

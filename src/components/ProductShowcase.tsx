@@ -42,7 +42,7 @@ export default function ProductShowcase({ products }: { products: ShowcaseProduc
                     rel="noopener noreferrer"
                     className="product-primary-link"
                   >
-                    Explore {project.name} ↗
+                    {product.liveLabel ?? `Explore ${project.name}`} ↗
                   </a>
                 ) : (
                   <a

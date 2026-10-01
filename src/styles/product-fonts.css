@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'Alegreya Sans';
+  font-family: 'Newsreader';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 800;
   font-display: swap;
-  src: url(/brand/fonts/alegreya-sans-400.ttf) format('truetype');
+  src: url(/brand/fonts/newsreader-latin.woff2) format('woff2');
 }
 @font-face {
-  font-family: 'Alegreya Sans';
+  font-family: 'Inter Tight';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400 700;
   font-display: swap;
-  src: url(/brand/fonts/alegreya-sans-700.ttf) format('truetype');
+  src: url(/brand/fonts/inter-tight-latin.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Fraunces';
@@ -32,4 +32,18 @@
   font-weight: 700;
   font-display: swap;
   src: url(/brand/fonts/public-sans-700.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/brand/fonts/space-mono-400.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/brand/fonts/space-mono-700.woff2) format('woff2');
 }

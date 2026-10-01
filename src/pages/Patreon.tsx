@@ -20,7 +20,7 @@ const SUPPORT_OUTCOMES = [
     icon: FlaskConical,
     label: 'Test useful ideas',
     detail:
-      'Support gives early research time to answer a community need before the idea has a business model.',
+      'Support pays for early research into a community need before the idea has a business model.',
   },
 ];
 
@@ -60,7 +60,7 @@ const FAQS = [
   {
     question: 'What do supporters receive?',
     answer:
-      'Supporters receive the same project updates, releases, repositories as everyone else. Patreon support does not buy exclusive content, early access, or private status.',
+      'The same project updates, releases, and repositories as everyone else. Patreon support does not buy exclusive content, early access, or private status.',
   },
   {
     question: 'Can I help without spending money?',
@@ -70,7 +70,7 @@ const FAQS = [
   {
     question: 'How can I verify where the effort goes?',
     answer:
-      'Follow the product pages, repositories and release history. We would rather show the work than publish a vague promise about transparency.',
+      'Follow the product pages, repositories, and release history. The work is public, so you can check it yourself.',
   },
 ];
 
@@ -93,16 +93,12 @@ export default function Patreon() {
               <div className="min-w-0">
                 <p className="font-mono text-xs text-dust mb-4">&gt; MEMBERSHIP_WITHOUT_A_GATE</p>
                 <h1 className="mb-6 max-w-4xl text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.98] break-words">
-                  Fund Public Tools for Independent Culture
+                  Fund public tools for independent culture
                 </h1>
-                <p className="text-bone max-w-3xl text-lg md:text-xl leading-relaxed mb-5">
+                <p className="text-bone max-w-3xl text-lg md:text-xl leading-relaxed mb-8">
                   Support CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow. Monthly
                   support pays hosting bills and funds maintenance, documentation, and research. The
                   resulting work stays public.
-                </p>
-                <p className="text-dust max-w-2xl leading-relaxed mb-8">
-                  Patreon has no private-access tier. Every supporter funds the same public work
-                  that anyone can inspect and use.
                 </p>
                 <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
                   <Button
@@ -113,7 +109,7 @@ export default function Patreon() {
                     size="lg"
                     className="w-full sm:w-auto"
                   >
-                    Support Monthly ↗
+                    Support monthly ↗
                   </Button>
                   <Button
                     as="link"
@@ -122,7 +118,7 @@ export default function Patreon() {
                     size="lg"
                     className="w-full sm:w-auto"
                   >
-                    See the Work First
+                    See the work first
                   </Button>
                 </div>
               </div>
@@ -134,9 +130,6 @@ export default function Patreon() {
                   <br />
                   <span className="text-chalk">funding: </span>
                   <span className="text-flicker">COMMUNITY SUPPORTED</span>
-                  <br />
-                  <span className="text-chalk">advertising: </span>
-                  <span className="text-signal">NONE</span>
                   <br />
                   <span className="text-chalk">proof: </span>
                   <span className="text-cyan">REPOS // RELEASES // NOTES</span>
@@ -154,10 +147,10 @@ export default function Patreon() {
             <p className="font-mono text-xs text-dust pt-2">// 01 · WHY SUPPORT</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
-                <h2 className="mb-4">Where Your Contribution Goes</h2>
+                <h2 className="mb-4">Where your money goes</h2>
                 <p className="text-bone leading-relaxed">
-                  Contributions pay direct infrastructure costs and working time. That keeps the
-                  software online and funds maintenance, documentation, and security updates.
+                  Contributions cover two costs: keeping the software online, and the time it takes
+                  to maintain it.
                 </p>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -190,7 +183,7 @@ export default function Patreon() {
             <p className="font-mono text-xs text-dust pt-2">// 03 · CONTRIBUTE</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
-                <h2 className="mb-4">Other Ways to Help</h2>
+                <h2 className="mb-4">Other ways to help</h2>
                 <p className="text-bone leading-relaxed">
                   A useful bug report, a documentation fix, or an honest introduction can matter as
                   much as a subscription. Choose the contribution you can sustain.
@@ -235,7 +228,7 @@ export default function Patreon() {
           <div className={`${SHELL} ${RAIL}`}>
             <p className="font-mono text-xs text-dust pt-2">// 04 · FAQ</p>
             <div className="min-w-0">
-              <h2 className="mb-10">Before You Contribute</h2>
+              <h2 className="mb-10">Before you contribute</h2>
               <div className="divide-y divide-fog border-y border-fog">
                 {FAQS.map((item) => (
                   <div
@@ -255,7 +248,7 @@ export default function Patreon() {
           <div className={`${SHELL} ${RAIL}`}>
             <p className="font-mono text-xs text-dust pt-2">// 05 · ACT</p>
             <div className="min-w-0 max-w-3xl">
-              <h2 className="mb-5">Fund Ongoing Public Work</h2>
+              <h2 className="mb-5">Keep the work going</h2>
               <p className="text-bone leading-relaxed mb-8 max-w-2xl">
                 Become a monthly supporter to fund infrastructure and maintenance. If you cannot
                 contribute money, use the work and report what needs improvement.

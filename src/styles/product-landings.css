@@ -33,7 +33,9 @@
   --lp-body: Arial, sans-serif;
   --lp-display: Arial, sans-serif;
   --lp-mono: ui-monospace, monospace;
-  --product-accent: var(--lp-accent);
+  --lp-accent-text: var(--lp-accent);
+  --lp-focus: var(--lp-accent);
+  --product-accent: var(--lp-accent-text);
   background: var(--lp-bg);
   color: var(--lp-text);
   font-family: var(--lp-body);
@@ -66,46 +68,47 @@
   --lp-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
 }
 .product-landing[data-product='hasanara'] {
-  --lp-bg: #101014;
-  --lp-panel: #17171d;
-  --lp-text: #f1f1f4;
-  --lp-muted: #9a9aaa;
-  --lp-line: #343441;
-  --lp-accent: #b7ff3c;
-  --lp-on-accent: #101014;
-  --lp-radius: 8px;
-  --lp-body: 'Alegreya Sans', 'Segoe UI', sans-serif;
-  --lp-display: 'Alegreya Sans', 'Segoe UI', sans-serif;
-  background-image:
-    linear-gradient(rgb(127 127 145 / 3.5%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(127 127 145 / 3.5%) 1px, transparent 1px);
-  background-size: 32px 32px;
+  --lp-bg: #0f0f0f;
+  --lp-panel: #161616;
+  --lp-text: #eeeae1;
+  --lp-muted: #b5afa3;
+  --lp-line: #2f2f2f;
+  --lp-accent: #ff5b52;
+  --lp-on-accent: #1a0403;
+  --lp-radius: 2px;
+  --lp-body: 'Inter Tight', system-ui, 'Segoe UI', sans-serif;
+  --lp-display: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --lp-mono: 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace;
 }
 .product-landing[data-product='subcult-os'] {
-  --lp-bg: #09090b;
-  --lp-panel: #18181b;
-  --lp-text: #fafafa;
-  --lp-muted: #d4d4d8;
-  --lp-line: #45454d;
-  --lp-accent: #fbbf24;
-  --lp-on-accent: #09090b;
-  --lp-radius: 1.375rem;
-  --lp-shadow: 0 1.5rem 4rem rgb(0 0 0 / 32%);
-  --lp-body: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
-  --lp-display: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --lp-bg: #000000;
+  --lp-panel: #0d1117;
+  --lp-text: #ffffff;
+  --lp-muted: #a0aec0;
+  --lp-line: #465264;
+  --lp-accent: #7c3aed;
+  --lp-accent-text: #00ffff;
+  --lp-on-accent: #ffffff;
+  --lp-focus: #00ffff;
+  --lp-radius: 0px;
+  --lp-body: 'Space Mono', 'Courier New', monospace;
+  --lp-display: 'Space Mono', 'Courier New', monospace;
+  --lp-mono: 'Space Mono', 'Courier New', monospace;
 }
 .product-landing[data-product='undertow'] {
-  --lp-bg: #07060d;
-  --lp-panel: #0d0b17;
-  --lp-text: #f2eeff;
-  --lp-muted: #a59fc2;
-  --lp-line: #40366e;
-  --lp-accent: #ff2bd6;
-  --lp-on-accent: #07060d;
-  --lp-radius: 12px;
-  --lp-shadow: 0 0 0 1px #2c2450, 0 18px 60px rgb(0 0 0 / 70%);
-  --lp-body: system-ui, sans-serif;
-  --lp-display: Futura, 'Avenir Next', 'Century Gothic', sans-serif;
+  --lp-bg: #0f0c1c;
+  --lp-panel: #171429;
+  --lp-text: #f7f3ff;
+  --lp-muted: #bdb4dc;
+  --lp-line: #4b4378;
+  --lp-accent: #ff9fe0;
+  --lp-on-accent: #110e1f;
+  --lp-focus: #9cecff;
+  --lp-radius: 0px;
+  --lp-shadow: 6px 6px 0 #6a5fb0;
+  --lp-body: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --lp-display: ui-monospace, 'SF Mono', Menlo, monospace;
+  --lp-mono: ui-monospace, 'SF Mono', Menlo, monospace;
 }
 .landing-container {
   max-width: 1280px;
@@ -123,7 +126,7 @@
   text-decoration: none;
 }
 .product-landing :is(a, summary):focus-visible {
-  outline: 3px solid var(--lp-accent);
+  outline: 3px solid var(--lp-focus);
   outline-offset: 5px;
 }
 .product-landing ::selection {
@@ -150,7 +153,7 @@
 }
 .landing-product-nav a:hover,
 .landing-product-nav a[aria-current] {
-  color: var(--lp-accent);
+  color: var(--lp-accent-text);
   text-decoration: underline;
   text-underline-offset: 6px;
 }
@@ -248,7 +251,7 @@
 }
 .product-landing .illustration-caption,
 .product-landing .archive-foot {
-  color: var(--lp-accent);
+  color: var(--lp-accent-text);
 }
 .product-landing .archive-line {
   color: var(--lp-muted);
@@ -259,23 +262,13 @@
 .product-landing .event-ticket {
   background: var(--lp-accent);
   color: var(--lp-on-accent);
-  border-radius: 12px;
+  border-radius: var(--lp-radius);
+}
+.product-landing .event-ticket strong {
+  font-family: var(--lp-display);
 }
 .product-landing .event-stages {
   color: var(--lp-muted);
-}
-.product-landing .undertow-illustration strong {
-  color: var(--lp-text);
-  font-family: var(--lp-display);
-  font-style: normal;
-  letter-spacing: 0.08em;
-  font-size: clamp(1.8rem, 3.4vw, 3rem);
-}
-.product-landing .undertow-lines i {
-  background: linear-gradient(90deg, #ff2bd6, #8b5cff 55%, #00e5ff);
-}
-.product-landing .undertow-illustration > span {
-  color: #7ff2ff;
 }
 .landing-section {
   padding: 64px 0;
@@ -302,7 +295,7 @@
 }
 .landing-number {
   font: 12px var(--lp-mono);
-  color: var(--lp-accent);
+  color: var(--lp-accent-text);
 }
 .landing-features h3 {
   margin: 24px 0 16px;
@@ -335,7 +328,7 @@
   padding: 0 0 24px 12px;
 }
 .landing-workflow li::marker {
-  color: var(--lp-accent);
+  color: var(--lp-accent-text);
   font-family: var(--lp-mono);
 }
 .landing-workflow h3 {
@@ -398,14 +391,65 @@
   font-weight: 800;
   letter-spacing: -0.06em;
 }
+/* Undertow "Glitch": neubrutal slabs, mono caps, and a sky/pink colour split. */
+.product-landing[data-product='undertow'] :is(h1, h3) {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-shadow:
+    -1.5px 0 0 #9cecff,
+    1.5px 0 0 #ff9fe0;
+}
 .product-landing[data-product='undertow'] .landing-wordmark h1 {
   font-size: clamp(2.5rem, 5vw, 4.4rem);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
 }
 .product-landing[data-product='undertow'] .landing-button {
-  background: linear-gradient(90deg, #ff2bd6, #00e5ff);
-  border: none;
+  border: 2px solid #110e1f;
+  font: 800 14px var(--lp-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  box-shadow: 3px 3px 0 #9cecff;
+}
+.product-landing[data-product='undertow'] :is(.landing-visual, .landing-features article) {
+  border-width: 2px;
+}
+/* CLPR "Tally": uppercase condensed headings and controls. */
+.product-landing[data-product='clpr'] :is(h2, h3) {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.product-landing[data-product='clpr'] .landing-button {
+  font: 700 15px var(--lp-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+/* Patchwork buttons use a smaller leaf corner and a hard offset shadow. */
+.product-landing[data-product='patchwork'] .landing-button {
+  border-color: var(--lp-text);
+  border-radius: 3px 12px 3px 12px;
+  box-shadow: 2px 2px 0 rgb(23 32 25 / 22%);
+}
+/* Subcult OS terminal foundations: square, monospace, uppercase actions. */
+.product-landing[data-product='subcult-os'] :is(h1, h2, h3) {
+  letter-spacing: 0;
+}
+.product-landing[data-product='subcult-os'] .landing-button {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* HasanAra "Broadsheet": heavy ink rules and ruled columns instead of cards. */
+.product-landing[data-product='hasanara'] :is(.landing-section, .landing-closing) {
+  border-top: 3px solid var(--lp-text);
+}
+.product-landing[data-product='hasanara'] .landing-wordmark h1 {
+  font-weight: 700;
+}
+.product-landing[data-product='hasanara'] .landing-features article {
+  border: 0;
+  border-top: 1px solid var(--lp-line);
+  background: transparent;
+  padding-left: 0;
 }
 @media (max-width: 900px) {
   .landing-hero {

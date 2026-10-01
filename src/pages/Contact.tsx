@@ -18,6 +18,11 @@ const SOCIAL_LINKS = [
     handle: 'subcult',
   },
   {
+    name: 'Bluesky',
+    url: 'https://bsky.app/profile/subcult.tv',
+    handle: '@subcult.tv',
+  },
+  {
     name: 'X',
     url: 'https://x.com/subcult_tv',
     handle: '@subcult_tv',
@@ -72,7 +77,7 @@ export default function Contact() {
     <>
       <SEOHead
         title="Contact"
-        description="Contact SUBCULT about collaborations, project questions, or bug reports."
+        description="Contact SUBCULT about collaborations, product questions, or bug reports."
         path="/contact"
       />
 
@@ -81,8 +86,7 @@ export default function Contact() {
           <p className="font-mono text-xs text-dust mb-3">SUBCULT / LET’S TALK</p>
           <h1 className="mb-4">Contact</h1>
           <p className="text-bone max-w-2xl">
-            Ask about a product, discuss a collaboration, or report a bug. For bug reports, include
-            the project name and what happened.
+            Ask about a product, propose a collaboration, or report a bug.
           </p>
         </div>
 
@@ -222,10 +226,10 @@ export default function Contact() {
             </div>
 
             <div className="border-t border-fog pt-6">
-              <h3 className="mb-3">Product questions</h3>
+              <h3 className="mb-3">Reporting a problem</h3>
               <p className="text-bone">
-                Tell us which product you’re using and what you want to do. Include a link or steps
-                to reproduce if something isn’t working.
+                Tell us which product you’re using, what you expected, and what happened instead. A
+                link or the steps to reproduce it help us find the cause.
               </p>
             </div>
           </div>

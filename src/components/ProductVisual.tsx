@@ -71,17 +71,7 @@ export default function ProductVisual({
             <span>03 / SHOW</span>
           </div>
         </div>
-      ) : (
-        <div className="undertow-illustration">
-          <strong>UNDERTOW</strong>
-          <div className="undertow-lines">
-            {Array.from({ length: 7 }, (_, i) => (
-              <i key={i} />
-            ))}
-          </div>
-          <span>AUDIO → VISUAL → VIDEO</span>
-        </div>
-      )}
+      ) : null}
     </div>
   );
 }

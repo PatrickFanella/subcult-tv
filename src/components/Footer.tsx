@@ -16,7 +16,7 @@ export default function Footer() {
               SUBCULT
             </Link>
             <p className="text-sm text-bone mt-4 mb-6">
-              Independent software for media, communities, and live culture.
+              Open-source software for independent media, mutual aid, archives, and live events.
             </p>
             <ul className="space-y-2 text-sm">
               <li>

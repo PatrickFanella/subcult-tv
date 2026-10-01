@@ -8,6 +8,8 @@ export interface ShowcaseProduct {
   summary: string;
   highlights: string[];
   relatedSlug?: string;
+  /** Label for links to the live site when "Open <name>" would overstate it. */
+  liveLabel?: string;
 }
 
 const selections = [
@@ -16,23 +18,24 @@ const selections = [
     category: 'Clips & curation',
     headline: 'Keep the moments worth watching.',
     summary:
-      'Find Twitch clips, collect your favorites, and share them with other viewers. Give the good moments a life beyond the stream.',
-    highlights: ['Discover clips', 'Build collections', 'Share favorites'],
+      'Browse Twitch clips by creator, topic, and tag, save the good ones to playlists, and share them with other viewers.',
+    highlights: ['Browse clips', 'Build playlists', 'Share favorites'],
   },
   {
     slug: 'patchwork',
     category: 'Mutual aid',
     headline: 'Find help. Find a way to help.',
     summary:
-      'Search mutual aid requests and connect with community needs on AT Protocol. An open network for practical solidarity.',
-    highlights: ['Search requests', 'Coordinate support', 'Built on AT Protocol'],
+      'Ask neighbors for help, offer what you can, and find local resources. Public views show approximate areas, never exact addresses. Patchwork is a pre-alpha prototype built on AT Protocol.',
+    highlights: ['Find nearby needs', 'Ask for help', 'Approximate locations only'],
+    liveLabel: 'Try the demo',
   },
   {
     slug: 'hasanara',
     category: 'Searchable archives',
     headline: 'Find the passage. Keep the context.',
     summary:
-      'Search a video archive through its transcripts, return to the original moment, and save or share passages with their source attached.',
+      'Search years of HasanAbi broadcasts by topic or exact phrase, jump to the moment in the VOD, and save or share passages with their source attached.',
     highlights: ['Search transcripts', 'Save passages', 'Link to the source'],
     relatedSlug: 'transcript-create',
   },
@@ -41,8 +44,8 @@ const selections = [
     category: 'Archives / Rekolekt by SUBCULT',
     headline: 'Make a recording into an archive.',
     summary:
-      'Rekolekt turns long-form recordings into timestamped, searchable text. Run the shared application with your own archive identity and branding.',
-    highlights: ['Ingest recordings', 'Keep the context', 'Your own archive'],
+      'Rekolekt turns long-form recordings into timestamped, searchable transcripts. Each archive runs the same software under its own name and branding.',
+    highlights: ['Transcribe recordings', 'Search and cite', 'Your own branding'],
     relatedSlug: 'hasanara',
   },
   {
@@ -50,16 +53,16 @@ const selections = [
     category: 'Live events',
     headline: 'From the first plan to the last guest.',
     summary:
-      'Bring event planning, guest lists, ticket scanning, and the run of show into one workspace for the people putting on the night.',
-    highlights: ['Plan the event', 'Manage the door', 'Run the show'],
+      'Plan the event, staff it, take ticket reservations, and check guests in at the door, all from one workspace for the people putting on the night.',
+    highlights: ['Plan and staff', 'Reserve tickets', 'Check in at the door'],
   },
   {
     slug: 'undertow',
     category: 'Music & moving image',
-    headline: 'Give your sound something to be seen.',
+    headline: 'Turn a track into a music video.',
     summary:
-      'Build a music video from audio-reactive visuals, artwork, and timed lyrics. Compose in layers, adapt to different formats, and export an MP4 right in your browser.',
-    highlights: ['Layer your visuals', 'Sync the lyrics', 'Export locally'],
+      'Layer a Milkdrop visualizer, spectrum, artwork, timed lyrics, and particles. Lay it out once for landscape, portrait, and square, then export MP4s in your browser.',
+    highlights: ['Start from a template', 'Sync the lyrics', 'Export in your browser'],
   },
 ] satisfies Array<Omit<ShowcaseProduct, 'project'> & { slug: string }>;
 

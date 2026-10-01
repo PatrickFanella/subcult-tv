@@ -11,6 +11,8 @@ self-hosted so the app does not depend on a third-party font request.
 
 The full licence text is in `OFL.txt`.
 
-Landing pages additionally self-host Alegreya Sans, Fraunces, and Public Sans
-from Google Fonts. Their full SIL Open Font License texts are included as
-`alegreyasans-OFL.txt`, `fraunces-OFL.txt`, and `publicsans-OFL.txt`.
+Landing pages additionally self-host Fraunces, Public Sans, Newsreader, Inter
+Tight, and Space Mono from Google Fonts. Newsreader and Inter Tight are the
+variable Latin subsets. Their full SIL Open Font License texts are included as
+`fraunces-OFL.txt`, `publicsans-OFL.txt`, `newsreader-OFL.txt`,
+`intertight-OFL.txt`, and `spacemono-OFL.txt`.
