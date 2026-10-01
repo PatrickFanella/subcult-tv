@@ -1,7 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { existsSync } from 'fs';
-import { join } from 'path';
 import { getAllPageMeta, jsonLdDocument, metaTags } from '@/lib/seo';
+
+// Files in public/, keyed like '../../public/og/clpr.jpg'.
+const publicImages = new Set(
+  Object.keys(import.meta.glob('../../public/**/*.{png,jpg}')).map((key) =>
+    key.replace('../../public', ''),
+  ),
+);
 
 describe('page metadata', () => {
   const pages = getAllPageMeta();
@@ -20,7 +25,7 @@ describe('page metadata', () => {
       expect(meta.title.length).toBeLessThanOrEqual(60);
       expect(meta.description.length).toBeGreaterThan(40);
       expect(meta.description.length).toBeLessThanOrEqual(160);
-      expect(existsSync(join(process.cwd(), 'public', meta.image))).toBe(true);
+      expect(publicImages.has(meta.image)).toBe(true);
     },
   );
 
