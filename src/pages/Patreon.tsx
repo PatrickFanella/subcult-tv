@@ -1,4 +1,7 @@
 import { Code2, FlaskConical, HeartHandshake, Server, ShieldCheck, Wrench } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { getPatreonCampaign } from '@/lib/api';
+import { publishedTiers } from '@/lib/patreon-tiers';
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
 import TerminalPanel from '@/components/effects/TerminalPanel';
@@ -25,7 +28,7 @@ const SUPPORT_OUTCOMES = [
   },
 ];
 
-// Mirrors the Patreon tiers; keep in step with the live creator page.
+// Reviewed fallback for an unavailable Patreon API.
 const TIERS = [
   {
     name: 'Free follow',
@@ -104,6 +107,20 @@ const SHELL = 'max-w-6xl mx-auto px-4 sm:px-6 lg:px-8';
 const RAIL = 'grid grid-cols-1 md:grid-cols-[10rem_minmax(0,1fr)] gap-6 md:gap-10';
 
 export default function Patreon() {
+  const [tiers, setTiers] = useState<typeof TIERS | null>(null);
+  useEffect(() => {
+    let active = true;
+    getPatreonCampaign()
+      .then((data) => {
+        if (active && data.campaign) setTiers(publishedTiers(data.tiers));
+      })
+      .catch(() => {
+        /* Keep the reviewed fallback when the provider is unavailable. */
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
   return (
     <>
       <SEOHead path="/support" />
@@ -199,13 +216,21 @@ export default function Patreon() {
             <p className="font-mono text-xs text-dust pt-2">// 02 · WHAT YOU GET</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
-                <h2 className="mb-4">Two ways in</h2>
+                <h2 className="mb-4">Membership options</h2>
                 <p className="text-bone leading-relaxed">
                   Start by following for free. Back the work when the process is useful to you.
                 </p>
               </div>
+              {tiers === null && (
+                <p className="font-mono text-xs text-dust mb-5">
+                  Reference benefits shown below. Check Patreon for the current offer.
+                </p>
+              )}
+              {tiers?.length === 0 && (
+                <p>No published tiers are available. Visit Patreon for membership details.</p>
+              )}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                {TIERS.map((tier) => (
+                {(tiers ?? TIERS).map((tier) => (
                   <article key={tier.name} className="min-w-0 bg-ash border border-fog p-6 md:p-7">
                     <div className="flex items-baseline justify-between gap-4 mb-5">
                       <h3 className="text-xl break-words">{tier.name}</h3>
