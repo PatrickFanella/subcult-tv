@@ -4,13 +4,13 @@ type: work
 status: active
 stage: plan
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 timezone: America/Chicago
 ---
 
 # Timely posting plan
 
-The goal is frequent, useful posts with room for current happenings, discoveries and good conversations. Keep the six products as the studio focus. A timely discovery does not need a forced sales pitch. The Common House stays an occasional teaser.
+The goal is frequent, useful posts with room for current happenings, discoveries and good conversations. Keep the seven products as the studio focus. A timely discovery does not need a forced sales pitch. The Common House stays an occasional teaser.
 
 [[Social Posting Automation Plan]] governs accounts, evidence and approval. The weekly bank supplies durable material. This lane supplies short-lived opportunities; it does not turn trends into an automatic posting trigger.
 
@@ -33,7 +33,7 @@ The installed timely checks are 08:45, 13:45 and 18:15 Chicago every day. A morn
 - `Timely Sources.json`: operator-captured URLs and context for cool discoveries, current happenings and original X posts. Captured text is an input to review, not independently verified source truth. This is an intake file, not a second approved bank.
 - Native web search: at most two searches in a drafting pass, used to check captured material. Indexed public information is incomplete; it does not provide a comprehensive X timeline, trend feed or engagement ranking.
 
-The confirmed watch topics cover the six products, independent culture, music/creative tools, archives, open-source software and left politics, alongside privacy and community. Route general political commentary primarily to Patrick. SUBCULT can cover a concrete independent-culture, studio or community connection; CLPR stays focused on its product and Twitch context. Verify factual political claims against original sources and current context. Do not invent the user's specific positions, personal experience or endorsements.
+The confirmed watch topics cover the six products (Kork was added as a seventh on October 2 and still needs the owner's confirmation), independent culture, music/creative tools, archives, open-source software and left politics, alongside privacy and community. Route general political commentary primarily to Patrick. SUBCULT can cover a concrete independent-culture, studio or community connection; CLPR stays focused on its product and Twitch context. Verify factual political claims against original sources and current context. Do not invent the user's specific positions, personal experience or endorsements.
 
 Political discovery keywords are installed, but no dedicated political feed or list of accounts/publications has been selected. Current discovery remains bounded HN reads, operator-captured URLs and source-checking web searches; it does not provide comprehensive political or X trend coverage.
 

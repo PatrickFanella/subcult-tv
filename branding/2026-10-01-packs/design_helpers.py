@@ -168,6 +168,30 @@ def cork_stack(d,x,y,w,h):
  s+=pinned_card(d,x+w*.26,y+h*.5,w*.36,h*.5,-2,[],qr=True)
  return s
 
+def docking_mark(d,x,y,size):
+ # Prichal docking node: sphere, perspective equator and four flanged collars.
+ # The red flange is the occupied port. No centre dot or ring: with the cross of
+ # ports that reads as a gun sight. Geometry matches the prichal repository.
+ mono=d.get('mono');ink=d['fg'];flange=ink if mono else d['accent'];field='none' if mono else d['bg']
+ def port(angle,colour):return f'<g transform="rotate({angle} 256 256)"><rect x="218" y="62" width="76" height="70" fill="{ink}"/><rect x="196" y="36" width="120" height="34" fill="{colour}"/></g>'
+ s=port(0,ink)+port(180,ink)+port(270,ink)+port(90,flange)
+ s+=f'<circle cx="256" cy="256" r="134" fill="{field}" stroke="{ink}" stroke-width="26"/>'
+ s+=f'<path d="M 122 256 A 134 44 0 0 0 390 256" fill="none" stroke="{ink}" stroke-width="14"/>'
+ s+=f'<path d="M 122 256 A 134 44 0 0 1 390 256" fill="none" stroke="{ink}" stroke-width="6" stroke-dasharray="14 12"/>'
+ return f'<g transform="translate({x} {y}) scale({size/512})">{s}</g>'
+def drawing_ticks(x,y,length,colour,step=24):
+ # Engineering-drawing scale: short ticks with a longer one every fourth.
+ return ''.join(rect(x,y+p,18 if i%4==0 else 9,2,colour) for i,p in enumerate(range(0,int(length)+1,step)))
+def port_strip(d,x,y,size=16):return txt(x,y,'PORT 01 · 02 · 03 · 04 · 05 · 06',size,d['safe_label'],d['label'])
+def docking_ports(d,x,y,w,h):
+ # Six numbered ports; the red one is occupied.
+ s='';gap=w*.03;cw=(w-gap*5)/6
+ for i in range(6):
+  xx=x+i*(cw+gap);taken=i==3
+  s+=rect(xx,y,cw,h,d['accent'] if taken else 'none',0,None if taken else d['fg'])
+  s+=txt(xx+cw*.12,y+h*.62,f'0{i+1}',h*.32,d['bg'] if taken else d['fg'],d['label'])
+ return f'<g data-art="docking-ports">{s}</g>'
+
 def mark(d,x,y,size):
  m=d['mode'];a=d['accent'];f=d['fg'];s=''
  if m=='patrick-wave' and (R/'references/patrick-variations/primary-outlined.svg').exists():return patrick_mark(d,x,y,size)
@@ -186,6 +210,7 @@ def mark(d,x,y,size):
  if m=='clpr':
   s=txt(12,95,'c',132,f,'Barlow Condensed',700)+f'<circle cx="128" cy="65" r="14" fill="{a}"/>'
  elif m=='corkboard':return corkboard_mark(d,x,y,size)
+ elif m=='docking':return docking_mark(d,x,y,size)
  elif m=='patchwork':return patchwork_mark(d,x,y,size)
  elif m=='hasanara':s=image('hasanara-logo.svg',0,30,160,100)
  elif m=='undertow':s=image('undertow-favicon.svg',0,0,160,160)
@@ -205,7 +230,12 @@ def mark(d,x,y,size):
  return f'<g transform="translate({x} {y}) scale({size/160})">{s}</g>'
 def banner(d):
  bg,fg,a,b=d['bg'],d['fg'],d['accent'],d['secondary'];m=d['mode'];s=rect(0,0,1200,400,bg)+(patch_paper(1200,400) if m=='patchwork' else '')+(cork_texture(1200,400) if m=='corkboard' else '')
- if m=='corkboard':
+ if m=='docking':
+  s+=drawing_ticks(18,40,320,'#c9c4b6')+docking_mark(d,60,88,224)
+  s+=txt(330,110,'ПРИЧАЛ · ACCOUNT HOSTING',17,d['safe_label'],d['label'])+txt(330,232,'PRICHAL',128,fg,d['display'],700,maxw=560)
+  s+=rect(330,256,180,6,a)+txt(330,312,d['headline'][0].capitalize()+' '+d['headline'][1].capitalize(),30,fg,d['body'],maxw=800)
+  s+=line(40,348,1160,348,'#c9c4b6',2)+port_strip(d,40,378)+txt(1160,378,d['url'],16,d['safe_label'],d['label']).replace('<text ','<text text-anchor="end" ')
+ elif m=='corkboard':
   s+=txt(44,62,d['tag'],17,d['safe_label'],d['label'])+line(44,82,640,82,fg,3)
   for i,h in enumerate(d['headline']):s+=txt(44,178+i*86,h,78,fg,d['display'],700,maxw=600)
   s+=txt(44,355,d['url'],20,fg,d['label'])
@@ -251,14 +281,18 @@ def banner(d):
  elif m=='subcult-catalogue':
   s+=txt(44,63,'SUBCULT',30,a,'Libre Baskerville',700)+txt(785,63,'SOFTWARE & CULTURE',17,fg,'JetBrains Mono')+line(44,83,1156,83,a)
   s+=txt(44,175,'Independent tools.',56,fg,'Libre Baskerville')+txt(44,246,'A shared culture.',56,fg,'Libre Baskerville')+mark(d,986,142,145)
-  for i,t in enumerate(['CLPR','PATCHWORK','HASANARA','REKOLEKT','SUBCULT OS','UNDERTOW']):s+=txt(44+i*184,349,t,14,a,'JetBrains Mono')
+  for i,t in enumerate(['CLPR','PATCHWORK','HASANARA','REKOLEKT','SUBCULT OS','UNDERTOW','KORK']):s+=txt(44+i*160,349,t,14,a,'JetBrains Mono')
  else:
   s+=rect(0,0,14,400,a)+txt(40,55,'SUBCULT.TV / INDEPENDENT SOFTWARE',18,fg,'JetBrains Mono')+txt(40,189,'BUILD',130,fg,'Oswald',700)+txt(40,333,'TOGETHER.',130,fg,'Oswald',700,maxw=925)+rect(1050,78,94,94,a)+line(1097,58,1097,192,fg)+line(1030,125,1164,125,fg)
  return s
 def post(d):
  bg,fg,a,b=d['bg'],d['fg'],d['accent'],d['secondary'];m=d['mode'];s=rect(0,0,600,600,bg)+(patch_paper(600,600) if m=='patchwork' else '')+(cork_texture(600,600) if m=='corkboard' else '')
  s+=txt(36,49,d['tag'],14,d['safe_label'] if m=='os' else d.get('tag_color',a),'Space Mono' if m=='os' else 'JetBrains Mono',maxw=526)
- if m=='corkboard':
+ if m=='docking':
+  s+=docking_mark(d,36,86,150)+txt(208,186,'PRICHAL',58,fg,d['display'],700,maxw=356)
+  for i,h in enumerate(['DOCK YOUR','ACCOUNT.']):s+=txt(36,322+i*72,h,66,fg,d['display'],700,maxw=528)
+  s+=rect(36,410,150,6,a)+docking_ports(d,36,446,528,62)
+ elif m=='corkboard':
   s+=txt(36,140,'PIN IT UP.',66,fg,d['display'],700,maxw=528)+txt(36,190,'Share one link for everything.',26,fg,d['body'],maxw=528)
   s+=cork_stack(d,40,232,520,270)
  elif m=='clpr':
@@ -304,7 +338,7 @@ def post(d):
   s+=txt(239,356,'OPEN SOFTWARE',17,b,'JetBrains Mono')+txt(239,398,'INDEPENDENT CULTURE',17,b,'JetBrains Mono',maxw=325)
  elif m=='subcult-catalogue':
   s+=txt(36,132,'The catalogue.',43,fg,'Libre Baskerville')+line(36,167,564,167,a)
-  for i,t in enumerate(['CLPR','Patchwork','HasanAra','Rekolekt','Subcult OS','Undertow']):s+=txt(36,218+i*44,f'0{i+1}',16,a,'JetBrains Mono')+txt(108,218+i*44,t,24,fg,'Public Sans')
+  for i,t in enumerate(['CLPR','Patchwork','HasanAra','Rekolekt','Subcult OS','Undertow','Kork']):s+=txt(36,214+i*44,f'0{i+1}',16,a,'JetBrains Mono')+txt(108,214+i*44,t,24,fg,'Public Sans')
  else:
   s+=txt(36,177,'CULTURE',97,fg,'Oswald',700)+txt(36,292,'NEEDS',97,fg,'Oswald',700)+rect(31,330,538,117,a)+txt(44,428,'TOOLS.',97,fg,'Oswald',700)
  s+=line(36,540,564,540,a)+txt(36,572,d.get('url') or d['brand'].lower()+' / by SUBCULT',16,fg,d['body'],maxw=528)

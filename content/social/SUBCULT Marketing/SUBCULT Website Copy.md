@@ -3,7 +3,7 @@ title: SUBCULT Website Copy
 type: documentation
 status: reference
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-02
 tags:
 - topic/publishing
 ---
@@ -21,3 +21,5 @@ Patchwork privacy copy: “Requests use approximate areas; approved public resou
 Undertow should point to https://undertow.subcult.tv/ for the public editor. Local editing and exports are available; cloud rendering is being tested and live paid billing is disabled.
 
 A separate subcult-tv worktree contains these source changes. They are not deployed. The public catalog still needs that publication step. Patchwork's own home copy needs a separate app correction for the same privacy overstatement.
+
+Kork launched October 2, 2026 at https://kork.subcult.tv. As observed that day, the live catalog lists six products and has no Kork entry. Adding Kork needs a subcult-tv change: a catalog card, a product landing and "seven products" in the introduction. Use the C-KORK description in [[Product Claims Register]]; leave out custom domains, paid plans and prices.

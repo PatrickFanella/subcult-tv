@@ -5,7 +5,7 @@ work-type: publishing-system
 status: active
 stage: plan
 created: 2026-09-30
-updated: 2026-10-01
+updated: 2026-10-02
 timezone: America/Chicago
 tags:
 - domain/content
@@ -17,7 +17,7 @@ tags:
 
 ## Purpose and state
 
-One plan, one candidate bank and one claims register govern the social workflow. Focus on clpr, Patchwork, HasanAra, Rekolekt, Subcult OS and Undertow, with occasional Common House teasers. [[Publishing History and Cleanup]] records the superseded schedules and removed artifacts.
+One plan, one candidate bank and one claims register govern the social workflow. Focus on clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow and Kork, with occasional Common House teasers. Kork, SUBCULT's link-page service, joined the rotation at its October 2, 2026 launch. [[Publishing History and Cleanup]] records the superseded schedules and removed artifacts.
 
 The plan, bank and claims register were adopted in the canonical vault September 30, preserving dirty user work. The unattended planning runtime on Kvant passed its first background run October 1: it read the correct Buffer workspace, all three channels and relevant Super Productivity projects, then prepared the October 5–11 weekly drafts. No post was created, scheduled or published, and no account schedule or recurrence was changed. Dispatch remains unimplemented. The unused January CLPR placeholder draft was backed up and removed. Instagram and Patreon publishing connections remain unverified.
 
@@ -35,7 +35,7 @@ Patrick and SUBCULT can share a source with distinct final copy. The CLPR accoun
 
 ## Weekly cadence
 
-The higher-volume direction adopted October 1 adds [[Timely Posting Plan]]. The user confirmed starting account capacities of up to two Patrick posts/day, one SUBCULT post/day and a target of three to five CLPR posts/week, with a hard ceiling of five. Weekly preparation aims for 7–12 strong base drafts, leaving capacity for discoveries and current conversations. These replace the former three-post total as the preparation target; the named product-anchor slots below remain useful starting points. Adjust capacities after observing results. The timely lane also watches left politics, primarily for Patrick commentary, alongside the six products, independent culture, music/creative tools, archives and open-source software. No slot authorizes publication.
+The higher-volume direction adopted October 1 adds [[Timely Posting Plan]]. The user confirmed starting account capacities of up to two Patrick posts/day, one SUBCULT post/day and a target of three to five CLPR posts/week, with a hard ceiling of five. Weekly preparation aims for 7–12 strong base drafts, leaving capacity for discoveries and current conversations. These replace the former three-post total as the preparation target; the named product-anchor slots below remain useful starting points. Adjust capacities after observing results. The timely lane also watches left politics, primarily for Patrick commentary, alongside the seven products, independent culture, music/creative tools, archives and open-source software. No slot authorizes publication.
 
 All times are America/Chicago. Patreon preparation and Sunday review fit the existing Review Cadence Calendar; these are editorial windows, not newly installed task recurrences. Publication times are fixed starting points for a six-week pilot, not claims about optimal reach.
 
@@ -79,7 +79,7 @@ Use [[Publishing History and Cleanup]] for the retired campaigns. Recommission a
 | Source | Responsibility |
 | --- | --- |
 | [[Product Claims Register]] | Product scope, checked evidence, maturity and claims to avoid |
-| [[SUBCULT Marketing/SUBCULT Social Content Idea Pool]] | Single inventory of 20 candidates; none is approved |
+| [[SUBCULT Marketing/SUBCULT Social Content Idea Pool]] | Single inventory of 23 candidates; none is approved |
 | [[001 Projects/Works/Patreon/Software Project Patreon Story Bank]] | Depth angles from the same candidates |
 | [[Social Posts Workbench]] | Current focus, first pilot preparation and deferred work |
 | Super Productivity | Work commitments and blockers; publication needs proof or an explicit skip |
@@ -105,7 +105,7 @@ The workspace reports limits of three channels, ten scheduled posts per channel,
 
 ## Product rotation
 
-Across six pilot weeks, aim for one anchor each from clpr, Patchwork, HasanAra, Rekolekt, Subcult OS and Undertow. Choose by current proof and readiness; reorder or skip a product rather than force filler. These are rotation goals, not six weekly quotas.
+Across the six pilot weeks, aim for one anchor each from clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow and Kork. With seven products, one week can carry two anchors or one product can wait for the next cycle. Choose by current proof and readiness; reorder or skip a product rather than force filler. These are rotation goals, not weekly quotas. Kork launch drafts are in [[Kork Launch Drafts]].
 
 The Common House may replace one Friday post at most once per calendar month when an original spoiler-safe asset is ready. It adds no posting obligation. Start fresh from the first full pilot week, October 5–11; do not backfill old campaigns.
 

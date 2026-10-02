@@ -4,7 +4,7 @@ Private source repository for SUBCULT branding, media and social production. Stu
 
 ## Contents
 
-- `branding/2026-10-01-packs/`: current ten-brand library, editable masters, fonts and licenses, generators, selected alternatives, textures, preview pages and audit reports.
+- `branding/2026-10-01-packs/`: current eleven-brand library, editable masters, fonts and licenses, generators, selected alternatives, textures, preview pages and audit reports.
 - `branding/2026-10-01-review/`: earlier design comparisons.
 - `media/library/`: social media catalog, original captures, generated artwork, video masters, edits and recipes.
 - `content/social/`: plans, content bank, claims, guidance, watchlists and draft records.
@@ -41,6 +41,6 @@ See `docs/MIGRATION.md` for migration evidence and recovery instructions.
 
 ## Admin and public-site exports
 
-Run `python scripts/export_studio.py --output /absolute/private/studio-bundle --site-root /absolute/subcult-tv-checkout`. The private bundle contains the brands listed in `brands.json`, their previews/guides/outlined logos, and the nine catalogued media assets. It excludes social drafts, account config, runner source and runtime state. The separate public selection contains only SUBCULT marks and licensed fonts, with source hashes recorded in the site repository.
+Run `python scripts/export_studio.py --output /absolute/private/studio-bundle --site-root /absolute/subcult-tv-checkout`. The private bundle contains the brands listed in `brands.json`, their previews/guides/outlined logos, and every media asset in `media/library/catalog.json` (17 as of October 2, 2026). It excludes social drafts, account config, runner source and runtime state. The separate public selection contains only SUBCULT marks and licensed fonts, with source hashes recorded in the site repository.
 
 The site API consumes the bundle through `STUDIO_ROOT`. Its authenticated `/admin/studio` interface is implemented in the companion `subcult-tv` source. An optional read-only `latest.json` receipt directory supplies past-run status. See the site's `docs/STUDIO.md` for configuration and rollback. The export and admin integration preserve the documented preparation-job cutover; a generated bundle is deployment input and does not switch runtime paths.

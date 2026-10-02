@@ -4,12 +4,12 @@ type: work
 status: active
 stage: library
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 ---
 
 # Social media library
 
-A local library for the six products and occasional Common House material, governed by [[Posting Best Practices]] and [[Social Posting Automation Plan]]. The authoritative catalog is `Media Library/catalog.json` beside this note. Originals live in `Media Library/files/`; the generated `Media Library/index.html` is an offline visual gallery. No paid storage service or image API key was added.
+A local library for the seven products and occasional Common House material, governed by [[Posting Best Practices]] and [[Social Posting Automation Plan]]. The authoritative catalog is `Media Library/catalog.json` beside this note. Originals live in `Media Library/files/`; the generated `Media Library/index.html` is an offline visual gallery. No paid storage service or image API key was added.
 
 ## First original assets
 

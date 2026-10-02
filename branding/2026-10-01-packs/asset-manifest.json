@@ -1,8 +1,8 @@
 [
   {
     "path": "README.md",
-    "bytes": 6682,
-    "sha256": "0c779e01fb5de06f0a2e7f937b493c761339a56dad8bd5a42a090477d7b7011a"
+    "bytes": 8211,
+    "sha256": "fec0046964a06dc6fb681cf5c93b59ee7739cda522f6a66f84b4db63a1133496"
   },
   {
     "path": "audit_patchwork_contrast.py",
@@ -3441,13 +3441,13 @@
   },
   {
     "path": "brands.json",
-    "bytes": 8574,
-    "sha256": "3c2eb583dfa66c9b648d722def2bcd660c80785c7e1c7c6a7b9b1beb2ac26bd1"
+    "bytes": 9543,
+    "sha256": "e53a871d125599336bf17d9cf411b3adfc0cd4ba990a012fe4afa9552a5447ee"
   },
   {
     "path": "build_packs.py",
-    "bytes": 30976,
-    "sha256": "1defb627aea9d4601b39c170c6efbaed4bec9d88daa429ff2c219c4dd4bcf29f"
+    "bytes": 32757,
+    "sha256": "757dbf05897fbe576c450f7edd2057481353b35e919f3b5ee948ad6ca53de154"
   },
   {
     "path": "clpr-directions/comparison.png",
@@ -4061,8 +4061,8 @@
   },
   {
     "path": "design_helpers.py",
-    "bytes": 20258,
-    "sha256": "f82d7198c8adcd3a0c2dc8efe707c1da0cce2cbc22c7d0516f6de0db868bd64e"
+    "bytes": 26932,
+    "sha256": "929143166f168716712b9621b3c3c08d26901c39cb9f03afecc4aebde9373ea3"
   },
   {
     "path": "fontconfig.xml",
@@ -4321,8 +4321,8 @@
   },
   {
     "path": "index.html",
-    "bytes": 15301,
-    "sha256": "f392f2832207975a2fa99f0da8e570a9dfcda3c45a09b001051d7493c1e11ba3"
+    "bytes": 16176,
+    "sha256": "9e9b09eb029902cc2d4d2c9fd3531f656f69c6d1d04157f5e00bcee78e8350cc"
   },
   {
     "path": "patchwork.zip",
@@ -4671,8 +4671,8 @@
   },
   {
     "path": "selected-directions.json",
-    "bytes": 1636,
-    "sha256": "116ff40d67f0b793da1a7527897c87b77b4f26f7af7eb2aa35a8f059474c2e6a"
+    "bytes": 1877,
+    "sha256": "21b0bc7f4b74ef4c51ce8fb0ff4459c2e678a0519c7c8b17f59b6e20d154738c"
   },
   {
     "path": "starter-template/README.md",
@@ -4971,8 +4971,8 @@
   },
   {
     "path": "verification.json",
-    "bytes": 7738,
-    "sha256": "96e1e5022c2aaa819c9b82685d441a6d08e19bf2e7c7c94982fec5b390a7ec9c"
+    "bytes": 11106,
+    "sha256": "873f3c37f31d35bcd5c98803217301156c9eae67cb1c1bea2a43d593c768f295"
   },
   {
     "path": "brands/subcult-os/fonts/Space-Mono-0.ttf",
@@ -5448,5 +5448,455 @@
     "path": "brands/left-field/product/og.jpg",
     "bytes": 45974,
     "sha256": "8873cd8edc983d18bf6a9798406fd6779ff4eb63060fc3924b28068a62e8b46a"
+  },
+  {
+    "path": "brands/kork/asset-manifest.json",
+    "bytes": 15350,
+    "sha256": "150ff422e91093274467c71f99e5404b72fd26cb778a2e891c7415d4b67ab281"
+  },
+  {
+    "path": "brands/kork/launch/README.md",
+    "bytes": 443,
+    "sha256": "42e8da18e81ca6ce17e01f83eccf75f08799af3afec4a567a03c5665c64ab8a8"
+  },
+  {
+    "path": "brands/kork/launch/launch-landscape.png",
+    "bytes": 211866,
+    "sha256": "70425e778378e3943de903a8bd887ca5f5b40df3305ffe4559421ba559c8c704"
+  },
+  {
+    "path": "brands/kork/launch/launch-landscape.svg",
+    "bytes": 124774,
+    "sha256": "41082196522f99e44386676ac904d092a2c037f9945738666664109a14932e03"
+  },
+  {
+    "path": "brands/kork/launch/launch-square.png",
+    "bytes": 236725,
+    "sha256": "513f428164d9a5294f8e595bf6bc7beace9e652ce6502a54416912fb361a1bd2"
+  },
+  {
+    "path": "brands/kork/launch/launch-square.svg",
+    "bytes": 5669,
+    "sha256": "18cfd92f2818cb4bbefa04e8b23208265eb72612b470eca237201feaec1e7787"
+  },
+  {
+    "path": "brands/kork/launch/launch-story.png",
+    "bytes": 212910,
+    "sha256": "15f9dbe2ae1da260fca4560ab103a3377831df956f5d7785cfdc7b24a990fc46"
+  },
+  {
+    "path": "brands/kork/launch/launch-story.svg",
+    "bytes": 6356,
+    "sha256": "7590283804ebe8de2e12588d9d4a6e7eb9aaa67ae37bc3cc648332a9d662942f"
+  },
+  {
+    "path": "brands/prichal/GUIDE.md",
+    "bytes": 5777,
+    "sha256": "3d424ce1397278f3f083689f9cda8729b525ed12126d23f7cb334807c3a9d7d5"
+  },
+  {
+    "path": "brands/prichal/alt-text.md",
+    "bytes": 602,
+    "sha256": "c2c8ac73d7f302cba7c21377ff6a7b1551cafd7cdaa516fe1bb26e923166eb43"
+  },
+  {
+    "path": "brands/prichal/asset-manifest.json",
+    "bytes": 14149,
+    "sha256": "bc3e39fbd8ec5e38510971fa0f93d29d22e2a7180d8160ca4b83689a19c20a4e"
+  },
+  {
+    "path": "brands/prichal/fonts/JetBrains-Mono-0.ttf",
+    "bytes": 112172,
+    "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+  },
+  {
+    "path": "brands/prichal/fonts/JetBrains-Mono-1.ttf",
+    "bytes": 112092,
+    "sha256": "a1d92abc6b02a87faed23d98067ab1027e8e95242fd7c9978a072ea383b89d1a"
+  },
+  {
+    "path": "brands/prichal/fonts/Oswald-0.ttf",
+    "bytes": 86068,
+    "sha256": "bd6ff5a83bcdc92d7aac6dbb16e4dd2b0b0320bec6402bb81f5dd9735b500e46"
+  },
+  {
+    "path": "brands/prichal/fonts/Oswald-1.ttf",
+    "bytes": 86416,
+    "sha256": "a6ee8b91ec269a6f48631ba4ba1a3ab7e5039e5482dda8dc9672ee4620d7bd68"
+  },
+  {
+    "path": "brands/prichal/fonts/Public-Sans-0.ttf",
+    "bytes": 56172,
+    "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546"
+  },
+  {
+    "path": "brands/prichal/fonts/Public-Sans-1.ttf",
+    "bytes": 56364,
+    "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a"
+  },
+  {
+    "path": "brands/prichal/fonts/jetbrainsmono-OFL.txt",
+    "bytes": 4399,
+    "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+  },
+  {
+    "path": "brands/prichal/fonts/oswald-OFL.txt",
+    "bytes": 4483,
+    "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652"
+  },
+  {
+    "path": "brands/prichal/fonts/publicsans-OFL.txt",
+    "bytes": 4390,
+    "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-dark-outlined.svg",
+    "bytes": 4176,
+    "sha256": "1dc42da4d98846101ed8e59a5b985437ff6db6bacf0adf46f896b20a24d2d3d3"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-dark.png",
+    "bytes": 12386,
+    "sha256": "100ab880834aaba9aeef973dfc1db2718c76751d07c7f1b8804f9c3c3cb44680"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-dark.svg",
+    "bytes": 1215,
+    "sha256": "69fa88f9e3618d50553abdbc0c9147965c8cec72adf44d5d579db7aae2108689"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-light-outlined.svg",
+    "bytes": 4177,
+    "sha256": "7bbddec00ad3390ddec1d464c9fc3420e58d0ed57b7c0b257837da7ce1806c9d"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-light.png",
+    "bytes": 12301,
+    "sha256": "a9ddec84688bfa15daf03f9345fb25179d884e26917756735aa4342751350785"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-light.svg",
+    "bytes": 1216,
+    "sha256": "cf19c57aa1070870dc40ba7f2a6e8f51cd5b5a8c9e6026412375c37e13ad258d"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-mono-dark-outlined.svg",
+    "bytes": 4178,
+    "sha256": "976548822f8c48db0b9eabb2cdf86ce6330e3d15089a54313f2eab4626d1d1cc"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-mono-dark.png",
+    "bytes": 9095,
+    "sha256": "a0ba33c4b1453f91e78f433e7aec5fc7028f7dc5f5d19849a32358d8429318ed"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-mono-dark.svg",
+    "bytes": 1217,
+    "sha256": "53bc2eb5bc6339d8a7b5b8d00470c136ee1ad208632f4fbfe3c1e5b2713804e4"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-mono-light-outlined.svg",
+    "bytes": 4179,
+    "sha256": "71f166522649cfd0b7fb41da9ffe71cd19fafe21a3a254ecc03371e5554f349b"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-mono-light.png",
+    "bytes": 11694,
+    "sha256": "093fd0a8d4136ec7e946b074f8cd5b09c6cb3e1d07f9bcadbac29e40f057132d"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-mono-light.svg",
+    "bytes": 1218,
+    "sha256": "30122e469a2ba71b603fb18cd92288ec0da451e33706f75d1ee51e075621860f"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-primary-outlined.svg",
+    "bytes": 4179,
+    "sha256": "45e137dc9c779000c35b5c31bf73f11f99f3aa471d341b2f787786bac4443e53"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-primary.png",
+    "bytes": 12448,
+    "sha256": "d4ce23609dcf00eddd1f19c2be56bb0cb02348aeda4a1f6b3af164e0649a32a7"
+  },
+  {
+    "path": "brands/prichal/logos/lockup-primary.svg",
+    "bytes": 1218,
+    "sha256": "283372e9918bc83eb7286e1de4c1288df57ab0196458306ce00a1e11b9012406"
+  },
+  {
+    "path": "brands/prichal/logos/mark-dark-outlined.svg",
+    "bytes": 2212,
+    "sha256": "cdb7daabb7f4f732ded3c36b30b0eeb32b346ef804313616987094ddd3cec229"
+  },
+  {
+    "path": "brands/prichal/logos/mark-dark.png",
+    "bytes": 5885,
+    "sha256": "998af41a83debf3ff9e0559ec88500fa8af46c1d575aa7d0d4650814383c2022"
+  },
+  {
+    "path": "brands/prichal/logos/mark-dark.svg",
+    "bytes": 1106,
+    "sha256": "882d9b2ba2d21528bfadc949d564f3db35a9aaf8032de91eeec3b0f10101b8f0"
+  },
+  {
+    "path": "brands/prichal/logos/mark-light-outlined.svg",
+    "bytes": 2213,
+    "sha256": "6bda145cc5a99a71045ccd0c209740d84983b33f40696fc4a833779abd5fd32b"
+  },
+  {
+    "path": "brands/prichal/logos/mark-light.png",
+    "bytes": 6060,
+    "sha256": "013669caa3c62b395bb9ed60651597afd761696bdc0d09b2ebec05ad89c8f9b1"
+  },
+  {
+    "path": "brands/prichal/logos/mark-light.svg",
+    "bytes": 1107,
+    "sha256": "69ea999215d75a1cfc20bc28b291099f4b463852be4aefc445db9cf513436210"
+  },
+  {
+    "path": "brands/prichal/logos/mark-mono-dark-outlined.svg",
+    "bytes": 2214,
+    "sha256": "2ab2349cf2ee5249ab63b20236ff2d78fa18f331cef10c83016073933c1223f6"
+  },
+  {
+    "path": "brands/prichal/logos/mark-mono-dark.png",
+    "bytes": 3833,
+    "sha256": "341c0ade7a401c11dbb62a8ba7dc228b0ffc917a6e839c75b49e73c242f5248f"
+  },
+  {
+    "path": "brands/prichal/logos/mark-mono-dark.svg",
+    "bytes": 1108,
+    "sha256": "03fc68a31e3e3dad32e04b6b7958edf897d111eaa86e96910fc8e09a553a9c02"
+  },
+  {
+    "path": "brands/prichal/logos/mark-mono-light-outlined.svg",
+    "bytes": 2215,
+    "sha256": "19195800e6099787caab995c2c9876a71143675ec1b93a147098c1a535063971"
+  },
+  {
+    "path": "brands/prichal/logos/mark-mono-light.png",
+    "bytes": 5553,
+    "sha256": "bba491137360c415a01230d416c00b206921daa4d1804b9d7d83fca400dd5a44"
+  },
+  {
+    "path": "brands/prichal/logos/mark-mono-light.svg",
+    "bytes": 1109,
+    "sha256": "edb811741289fe1349e403a3e468e66e99477732aac6c8cfa75ee5c8a0f94599"
+  },
+  {
+    "path": "brands/prichal/logos/mark-primary-outlined.svg",
+    "bytes": 2215,
+    "sha256": "3d18a3dc5d9e3463882bbbed7f93169c7f53313796d78a59c0702d1cecc4f332"
+  },
+  {
+    "path": "brands/prichal/logos/mark-primary.png",
+    "bytes": 6092,
+    "sha256": "40e7669efdb084b191d095f43719724293fc4d388a6587a245bf66a31e31e4a3"
+  },
+  {
+    "path": "brands/prichal/logos/mark-primary.svg",
+    "bytes": 1109,
+    "sha256": "200d39af11eb537876271c2da17fedb51fa3638ea841ddfd951173ae38ca238a"
+  },
+  {
+    "path": "brands/prichal/pack-preview.png",
+    "bytes": 150278,
+    "sha256": "b2ea180a968086e4d42c8f5cac4ad5c751af24b0bf1595bcdc0731e71cd55f1b"
+  },
+  {
+    "path": "brands/prichal/pack-preview.svg",
+    "bytes": 33271,
+    "sha256": "f35211e071b143d0cf5081a76eb957a8ac273948920331d83f2f9da413b73e09"
+  },
+  {
+    "path": "brands/prichal/product/README.md",
+    "bytes": 245,
+    "sha256": "63c3315b3968e1bc47462a6eae229e12afeea6a9542bfde108a4f752aefdff86"
+  },
+  {
+    "path": "brands/prichal/product/apple-touch-icon.png",
+    "bytes": 4914,
+    "sha256": "6de77f6a3879f7893ea6394fc4649713d5d5dfdd274bbec835bbe15f14403a05"
+  },
+  {
+    "path": "brands/prichal/product/favicon.svg",
+    "bytes": 2216,
+    "sha256": "15f42ef42d8f7423c96e1f1a1a13259f6a1a24cd50991f99f64d6aa31a4516f4"
+  },
+  {
+    "path": "brands/prichal/product/hero.svg",
+    "bytes": 12522,
+    "sha256": "c003a28c0ee6fbec337c11eef40306b80c9919804758959a045236b4584a8726"
+  },
+  {
+    "path": "brands/prichal/product/og.png",
+    "bytes": 54222,
+    "sha256": "7d21a51a278e8221011bc54f95c30021aaff7f5084d49e2767ffa041bbaac0a3"
+  },
+  {
+    "path": "brands/prichal/social/avatar.png",
+    "bytes": 12222,
+    "sha256": "c11321418a0de9b5a9904d7a06427da72e27934928caa36d79888d077f45e25c"
+  },
+  {
+    "path": "brands/prichal/social/avatar.svg",
+    "bytes": 2275,
+    "sha256": "8f1bc74a1c405550f69c8084cbfa5a882ddfa1002a31ffcce9f417e29eab0704"
+  },
+  {
+    "path": "brands/prichal/social/banner-tall-master.png",
+    "bytes": 46604,
+    "sha256": "83d01b73eb33ea5c71f212d20038f68a29df26d570e18fae511cc64c0f7838c8"
+  },
+  {
+    "path": "brands/prichal/social/banner-tall-master.svg",
+    "bytes": 4383,
+    "sha256": "dbdccd94f91d35b27e9be8d8afcc70087e578cb05294fb1240677791d6f2b524"
+  },
+  {
+    "path": "brands/prichal/social/banner-x-bluesky.png",
+    "bytes": 45651,
+    "sha256": "6695fda661555b34f032db8e900eb874d9d9196f7caabc820d506dec33868ff9"
+  },
+  {
+    "path": "brands/prichal/social/banner-x-bluesky.svg",
+    "bytes": 2899,
+    "sha256": "066028e3f6ed66251207230dd2ef45de373d552c8a8bbc2662506ae156eaab4f"
+  },
+  {
+    "path": "brands/prichal/social/landscape-template.png",
+    "bytes": 51283,
+    "sha256": "cc7b3f80aef81e8028e5b2f5792da3fa8f2a2c68024f4cd1339b063311f7a144"
+  },
+  {
+    "path": "brands/prichal/social/landscape-template.svg",
+    "bytes": 4017,
+    "sha256": "efa087fee50ba0a4d40947ffce1e82ef92a418303f0ff3b82d79286ac38d0e72"
+  },
+  {
+    "path": "brands/prichal/social/quote-template.png",
+    "bytes": 46630,
+    "sha256": "389749bec877e91b8894f54cc1f16942c112d1a29f00979efc9a3d95dca00171"
+  },
+  {
+    "path": "brands/prichal/social/quote-template.svg",
+    "bytes": 3871,
+    "sha256": "eba6f776fe171f6c52b2a0e4bd72215005f52c145a152b269380a3b203d35bab"
+  },
+  {
+    "path": "brands/prichal/social/release-template.png",
+    "bytes": 53542,
+    "sha256": "bc1d9f7bab48e22654709689b1c16835b3f9cf0c5e1fa820a253f04760e9d605"
+  },
+  {
+    "path": "brands/prichal/social/release-template.svg",
+    "bytes": 4679,
+    "sha256": "bc0967c21c6c56310a3981a2a28759fd7ec9e85370f3e46449f68f3234f74c5b"
+  },
+  {
+    "path": "brands/prichal/social/screenshot-frame.png",
+    "bytes": 39085,
+    "sha256": "7e86208362fbb03c2fcd4c52c037e2e40805c3accd6dbe4bbab15578a1200e23"
+  },
+  {
+    "path": "brands/prichal/social/screenshot-frame.svg",
+    "bytes": 3333,
+    "sha256": "ecc8476f3b01aa8669d44dfcda2780c2da0e47d8bdb57e3fbe6040feeb60b07a"
+  },
+  {
+    "path": "brands/prichal/social/square-post.png",
+    "bytes": 62077,
+    "sha256": "11489e48a07e9af38e5707fe4502e6a317e71385040836b98d7b5c82b2a0fc34"
+  },
+  {
+    "path": "brands/prichal/social/square-post.svg",
+    "bytes": 3227,
+    "sha256": "6f7f13346884b79caca3ea2e3c9a95485c83b92f484c6da2eaba536e48729e4d"
+  },
+  {
+    "path": "brands/prichal/social/story-template.png",
+    "bytes": 77932,
+    "sha256": "ed2b102419dbd64a5b61587477c073f71da2c638c638d969489e604a05186295"
+  },
+  {
+    "path": "brands/prichal/social/story-template.svg",
+    "bytes": 8465,
+    "sha256": "1c8dbd5f261c421303530e0da6e75e094645b9106139cc5b13a6ab817f29d9cd"
+  },
+  {
+    "path": "brands/prichal/tokens.css",
+    "bytes": 236,
+    "sha256": "b8ce59465b6175c89e7cc36cae10d156582acc6010d46691a1e4e9a0671c94bf"
+  },
+  {
+    "path": "brands/prichal/tokens.json",
+    "bytes": 719,
+    "sha256": "5647667d9335ef1493a7159d36609a101e03c38361c4771a2d090c2c4977c0dc"
+  },
+  {
+    "path": "brands/prichal/video/captions.ass",
+    "bytes": 632,
+    "sha256": "43d1dcfe955b3281e52410424bd48ca5ef08f1d60ff1d9c8e1ea2789302ad734"
+  },
+  {
+    "path": "brands/prichal/video/end-card.png",
+    "bytes": 30761,
+    "sha256": "afd2b8b07013f9da6b10291eb5b10b843595bdb820575d78b520a52169b23a9e"
+  },
+  {
+    "path": "brands/prichal/video/end-card.svg",
+    "bytes": 4158,
+    "sha256": "41e5449548059204c663b27609d19448f4f5e5e7b501e0406ca449457983c115"
+  },
+  {
+    "path": "brands/prichal/video/lower-third.png",
+    "bytes": 27218,
+    "sha256": "4d8276ef4aee0f915606fdfc66f12950309964c2387f4dd19ee08ca341fea93c"
+  },
+  {
+    "path": "brands/prichal/video/lower-third.svg",
+    "bytes": 1499,
+    "sha256": "a8c7fdf3c41fa1b9adcb495fda5c7d21d26da2b02ceaf9ab8363fcd8a249613f"
+  },
+  {
+    "path": "brands/prichal/video/template-preview.mp4",
+    "bytes": 75236,
+    "sha256": "6f9df81c656d6a20b4b0e0f03cfea8137020b3c19f463d6aa2c5ebd165c5a0b2"
+  },
+  {
+    "path": "brands/prichal/video/thumbnail.png",
+    "bytes": 41991,
+    "sha256": "1ce6dac9ece73a71386fb68553170c456771e9e980ee165b6b0682bc6bb8b779"
+  },
+  {
+    "path": "brands/prichal/video/thumbnail.svg",
+    "bytes": 4212,
+    "sha256": "5f9116ba45000ccfdcf88defa8738fdbcdc49edc8c9eb1fc4cff092e92397e2a"
+  },
+  {
+    "path": "brands/prichal/video/title-card.png",
+    "bytes": 41950,
+    "sha256": "a88d6c1f51c112ea23496451dd7fd0d3fc68bbcf364da75db7669e6af0c5ad30"
+  },
+  {
+    "path": "brands/prichal/video/title-card.svg",
+    "bytes": 4214,
+    "sha256": "78a0d421e28ade8ff00975a54cb99dd0fcd16b4ac256ebf75cd079ee5eba740d"
+  },
+  {
+    "path": "kork_launch_assets.py",
+    "bytes": 6358,
+    "sha256": "b28bc5095ab9b2fe6537de57621cf06ea7c6a1ae683ef7baa8c0dec9a6f22c7b"
+  },
+  {
+    "path": "prichal_product_assets.py",
+    "bytes": 2680,
+    "sha256": "ad356439eccaa55d167830e2c71bb38bc64a08534d7d8cbd3cfe2fa354249ae0"
+  },
+  {
+    "path": "references/kork-demo-page-mobile.png",
+    "bytes": 89656,
+    "sha256": "43cbc92b89d28839380ea45c9602d22fb6f1b098ef09ceb9c6107fc725fb5706"
   }
 ]

@@ -247,6 +247,33 @@
     "direction_selection": "user"
   },
   {
+    "id": "prichal-a",
+    "brand": "Prichal",
+    "variant": "A",
+    "name": "Docking node / engineering drawing",
+    "bg": "#f4f1e9",
+    "fg": "#1c2230",
+    "accent": "#b23a26",
+    "secondary": "#5d6675",
+    "display": "Oswald",
+    "body": "Public Sans",
+    "headline": [
+      "YOUR SERVER.",
+      "WE KEEP IT RUNNING."
+    ],
+    "tag": "ACCOUNT HOSTING / BY SUBCULT",
+    "description": "A docking node on paper: one red occupied port, engineering-drawing rules and a port strip. Managed account servers for the open social web.",
+    "mode": "docking",
+    "url": "prichal.subcult.tv",
+    "source": "Identity for Prichal, managed AT Protocol PDS hosting (subculture-collective/prichal); name, palette, mark and messaging selected with the user October 1\u20132, 2026",
+    "slug": "prichal",
+    "label": "JetBrains Mono",
+    "safe_label": "#5d6675",
+    "tag_color": "#5d6675",
+    "selected_by_user": true,
+    "direction_selection": "user"
+  },
+  {
     "id": "left-field-a",
     "brand": "Left Field",
     "variant": "A",
