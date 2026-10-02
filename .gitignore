@@ -10,3 +10,5 @@ config.local.json
 runtime/
 state/
 .cache/
+
+.companion/

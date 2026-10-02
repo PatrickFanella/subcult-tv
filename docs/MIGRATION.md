@@ -16,6 +16,8 @@ Verification: 37 disposable automation tests passed; the media audit validated n
 
 Stop the four social timers and confirm their services are idle before changing runtime paths. Preserve any edits made after cutover. Use the receipt to replace only the listed compatibility links with their retired originals, reconciling newer Studio edits first. Restore the saved unit files and installed-runtime files from the recovery root, preserving current SQLite state and credentials. Run systemctl --user daemon-reload, verify effective paths and configuration, then resume the saved schedules. Do not restore unrelated vault files or discard Studio history. This recovery procedure is documented; a destructive rollback was not performed.
 
-## Remaining product work
+## Admin integration implementation
 
-The planned /admin/studio interface belongs in subcult-tv. This migration establishes its source repository; it does not implement the interface or a publication dispatcher.
+The companion `subcult-tv` source implements authenticated brand/media browsing at `/admin/studio` and an optional read-only runner receipt view. `scripts/export_studio.py` exports the current brand catalog and media library into a bounded private bundle, then copies an explicit SUBCULT mark/font selection to the public site with source hashes.
+
+The admin source is merged in site PR #13, with follow-up changes in PR #14. Public deployment remains held for the October 6 release. This integration does not add a publication dispatcher or change the preparation-job cutover, schedules, protected state, or recovery procedure described above.
