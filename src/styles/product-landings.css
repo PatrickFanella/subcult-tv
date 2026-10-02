@@ -110,6 +110,21 @@
   --lp-display: ui-monospace, 'SF Mono', Menlo, monospace;
   --lp-mono: ui-monospace, 'SF Mono', Menlo, monospace;
 }
+.product-landing[data-product='prichal'] {
+  --lp-bg: #f4f1e9;
+  --lp-panel: #fffdf8;
+  --lp-text: #1c2230;
+  --lp-muted: #4f5866;
+  --lp-line: #c9c4b6;
+  --lp-accent: #1c2230;
+  --lp-accent-text: #b23a26;
+  --lp-on-accent: #f4f1e9;
+  --lp-focus: #1c2230;
+  --lp-radius: 0px;
+  --lp-body: 'Public Sans', 'Segoe UI', sans-serif;
+  --lp-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --lp-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
 .landing-container {
   max-width: 1280px;
   padding: 0 32px;
@@ -508,4 +523,27 @@
   .landing-summary {
     font-size: 17px;
   }
+}
+/* Prichal "Docking node": paper and ink, uppercase Oswald titles, signal-red rules. */
+.product-landing[data-product='prichal'] :is(h1, h3) {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.product-landing[data-product='prichal'] .landing-headline {
+  font-family: var(--lp-body);
+  letter-spacing: -0.03em;
+}
+.product-landing[data-product='prichal'] .landing-wordmark h1::after {
+  content: '';
+  display: block;
+  width: 3.2em;
+  height: 0.12em;
+  margin-top: 0.18em;
+  background: #b23a26;
+}
+.product-landing[data-product='prichal'] .landing-button {
+  font: 400 13px var(--lp-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }

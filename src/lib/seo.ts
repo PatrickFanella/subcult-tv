@@ -44,6 +44,8 @@ const ORGANIZATION = {
 const META_DESCRIPTIONS: Record<string, string> = {
   patchwork:
     'Ask neighbors for help, offer what you can, and find local resources without sharing exact addresses. A pre-alpha mutual aid prototype on AT Protocol.',
+  prichal:
+    'Prichal runs your own server on the open network Bluesky runs on and keeps it online. A private preview of managed account hosting from SUBCULT.',
   undertow:
     'Layer Milkdrop visuals, spectrum, artwork, lyrics, and particles, then export landscape, portrait, and square MP4s in your browser.',
 };
@@ -56,6 +58,7 @@ const APPLICATION_CATEGORY: Record<string, string> = {
   'transcript-create': 'ReferenceApplication',
   'subcult-os': 'BusinessApplication',
   undertow: 'MultimediaApplication',
+  prichal: 'SocialNetworkingApplication',
 };
 
 function fullTitle(title: string) {
@@ -85,7 +88,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/products',
     title: fullTitle('Products'),
     description:
-      'Six open-source products from SUBCULT for Twitch clips, mutual aid, searchable archives, live events, and music video.',
+      'Seven products from SUBCULT for Twitch clips, mutual aid, searchable archives, live events, music video, and account hosting.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
