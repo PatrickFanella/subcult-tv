@@ -4,7 +4,7 @@ Private source repository for SUBCULT branding, media and social production. Stu
 
 ## Contents
 
-- `branding/2026-10-01-packs/`: current eleven-brand library, editable masters, fonts and licenses, generators, selected alternatives, textures, preview pages and audit reports.
+- `branding/2026-10-01-packs/`: current twelve-brand library, editable masters, fonts and licenses, generators, selected alternatives, textures, preview pages and audit reports.
 - `branding/2026-10-01-review/`: earlier design comparisons.
 - [Patrick__Eff selected Patch system](branding/2026-10-02-patrick-site-direction/README.md): site-derived palette/type, original routing artwork, selected production assets and seven approved open-frame waveform logo treatments (01, 02, 03, 04, 06, 07 and 08). Lavender is the default; Light is the counterpart for light backgrounds.
 - `media/library/`: social media catalog, original captures, generated artwork, video masters, edits and recipes.

@@ -1,0 +1,41 @@
+{
+  "source_repository": "subculture-collective/dedhed",
+  "source_path": "docs/design/",
+  "source_checkout": "/home/onnwee/.t3/worktrees/dedhed/t3code-859bfaaf",
+  "source_head": "e5843b17fd33d2e09c88fe3e5022153a0c9e8adc",
+  "source_docs_committed": true,
+  "copied_at": "2026-10-02",
+  "inspiration": "docs/inspo/ in the same repository (eleven cassette photographs, commit e5843b1)",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "85d1f5e4769683119161f6a10b9595d18e7fae0ca3b0af4128bc5cef8936e2b7",
+      "bytes": 6679
+    },
+    {
+      "path": "examples/01-specimen.html",
+      "sha256": "07f0f0f48d17c19a96e65d27f70c262d387e00837fc7f28723f8402fadfe139a",
+      "bytes": 10985
+    },
+    {
+      "path": "examples/02-rack.html",
+      "sha256": "443855595d307c0dacba0abd85cce3f1dcae62c9688d2720ce320b0001b0022b",
+      "bytes": 9812
+    },
+    {
+      "path": "examples/03-jcard.html",
+      "sha256": "3ab12d8de9504fc4c6f88843aff7bb7ef944c3b5acbae96a8a71a3c414f03389",
+      "bytes": 9715
+    },
+    {
+      "path": "examples/04-deck.html",
+      "sha256": "6f55deba2ceb00856935fe630869d2405093ef2a344bf78e1ced58870ebb99f2",
+      "bytes": 8196
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "48b98672966bed5f524bc2bbb14f483449ea1561f115840d26c4da7ace6bedb2",
+      "bytes": 12788
+    }
+  ]
+}

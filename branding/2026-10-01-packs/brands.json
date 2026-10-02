@@ -304,5 +304,32 @@
     "slug": "left-field",
     "selected_by_user": true,
     "direction_selection": "user"
+  },
+  {
+    "id": "dedhed-a",
+    "brand": "Dedhed",
+    "variant": "A",
+    "name": "The tape shelf",
+    "bg": "#efe9d8",
+    "fg": "#1f1d1a",
+    "accent": "#c8102e",
+    "secondary": "#c58b4e",
+    "display": "Liberation Serif",
+    "body": "Public Sans",
+    "label": "Liberation Mono",
+    "support": "Barlow Condensed",
+    "safe_label": "#4c4842",
+    "headline": [
+      "Find your way",
+      "into a show."
+    ],
+    "tag": "LIVE TAPES / SHARED AIR",
+    "description": "Cream label paper, black shells, red brand tabs and a pine rack: a taper's cassette shelf for concert recordings and one shared radio station.",
+    "mode": "tape-shelf",
+    "url": null,
+    "source": "Dedhed design proposal docs/design/ in subculture-collective/dedhed (branch t3code/859bfaaf, head e5843b1, proposal files uncommitted on 2026-10-02), derived from the eleven cassette photographs in docs/inspo/; cream backdrop and shared masthead approved by the user on October 2, 2026",
+    "slug": "dedhed",
+    "selected_by_user": true,
+    "direction_selection": "user"
   }
 ]
