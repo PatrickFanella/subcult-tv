@@ -43,6 +43,7 @@ export default function ProductLanding() {
               {project.slug === 'transcript-create' && (
                 <img src="/brand/rekolekt-mark.svg" alt="" />
               )}
+              {project.slug === 'left-field' && <img src="/brand/left-field/mark.svg" alt="" />}
               <h1 id="product-title">{project.name}</h1>
             </div>
             <h2 className="landing-headline">{product.headline}</h2>

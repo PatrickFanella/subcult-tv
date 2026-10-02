@@ -64,6 +64,14 @@ const selections = [
       'Layer a Milkdrop visualizer, spectrum, artwork, timed lyrics, and particles. Lay it out once for landscape, portrait, and square, then export MP4s in your browser.',
     highlights: ['Start from a template', 'Sync the lyrics', 'Export in your browser'],
   },
+  {
+    slug: 'left-field',
+    category: 'Election research / in development',
+    headline: 'Read the field. Trace the evidence.',
+    summary:
+      'Explore sourced seat records, compare provisional research scores, and inspect the inputs behind each brief. Left Field is in active development; scores are research tools, not election predictions.',
+    highlights: ['Inspect seat records', 'Compare provisional scores', 'Trace the sources'],
+  },
 ] satisfies Array<Omit<ShowcaseProduct, 'project'> & { slug: string }>;
 
 export function getShowcaseProducts(): ShowcaseProduct[] {

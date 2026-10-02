@@ -880,6 +880,12 @@ pre,
   color: var(--product-accent);
   margin-right: 0.7rem;
 }
+#left-field .product-number {
+  color: #eaa28b;
+}
+#left-field .product-primary-link:hover {
+  color: #f4f0e6;
+}
 .product-name {
   font-size: clamp(2.4rem, 4.5vw, 4rem);
   letter-spacing: -0.01em;

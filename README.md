@@ -108,13 +108,13 @@ VITE_API_URL=                                # Override API base URL (defaults t
 | Route             | Page               | Description                                                                        |
 | ----------------- | ------------------ | ---------------------------------------------------------------------------------- |
 | `/`               | Home               | Product showcase for CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow |
-| `/products`       | Products           | Directory of the six featured products                                             |
+| `/products`       | Products           | Directory of the seven featured products                                             |
 | `/products/:slug` | Product            | Product landing page using its own design system                                   |
 | `/about`          | Studio             | The studio and the products it builds                                              |
 | `/contact`        | Contact            | Product questions, collaborations, and bug reports                                 |
 | `/support`        | Support            | Contributions toward hosting and maintenance                                       |
 | `/projects`       | Redirect           | Redirects to `/products`                                                           |
-| `/projects/:slug` | Legacy product URL | Redirects for the six retained products; other slugs return not found              |
+| `/projects/:slug` | Legacy product URL | Redirects for the seven retained products; other slugs return not found              |
 
 ### Admin Pages
 
@@ -310,7 +310,7 @@ MIT — do what you want, credit appreciated.
 
 ## Product showcase and working branding
 
-The homepage features six products, with HasanAra linked to the shared transcript
+The homepage features seven products, with HasanAra linked to the shared transcript
 archive application. Rekolekt is the shared archive application. Its repository was renamed from
 `transcript-create` to [`rekolekt`](https://git.subcult.tv/subculture-collective/rekolekt);
 its public landing page is `/products/rekolekt`. The internal catalog key remains
@@ -320,9 +320,9 @@ its public landing page is `/products/rekolekt`. The internal catalog key remain
 
 ## Product landing pages
 
-The six featured products have dedicated pages at `/products/clpr`,
+The seven featured products have dedicated pages at `/products/clpr`,
 `/products/patchwork`, `/products/hasanara`, `/products/rekolekt`,
-`/products/subcult-os`, and `/products/undertow`. Their earlier `/projects/:slug`
+`/products/subcult-os`, `/products/undertow`, and `/products/left-field`. Their earlier `/projects/:slug`
 addresses redirect to the corresponding product page. Products outside this set
 are no longer listed and their old detail URLs return the not-found page.
 
@@ -331,11 +331,21 @@ Landing content is in `src/lib/product-landings.ts`; route mapping is in
 source design tokens in `src/styles/product-landings.css`, including CLPR's
 Barlow typography, Patchwork's paper and moss palette, HasanAra's lime archive
 palette, Subcult OS's amber and serif system, Undertow's default Neon system,
-and Rekolekt's working identity. Interface previews use existing screenshots;
+Rekolekt's working identity, and Left Field's paper, ink, and rust field ledger. Interface previews use existing screenshots;
 illustrations are labeled as concepts.
 
 ### Public site scope
 
-The public site centers on CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow. The homepage, directory, global navigation, footer, studio page, and contact links all lead to these products. Only these six entries remain in the public project catalog.
+The public site centers on CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, and Left Field. The homepage, directory, global navigation, footer, studio page, and contact links all lead to these products. Only these seven entries remain in the public project catalog.
 
-The broader catalog, zine, memo, investor pages, decks, one-pagers, metrics dashboard, press placeholders, link hub, generated PDFs, and RSS feed have been removed from the public site. Existing article source and admin tools remain available in the repository. The build generates a sitemap for the eleven current public pages.
+The broader catalog, zine, memo, investor pages, decks, one-pagers, metrics dashboard, press placeholders, link hub, generated PDFs, and RSS feed have been removed from the public site. Existing article source and admin tools remain available in the repository. The build generates a sitemap for the twelve current public pages.
+
+### Left Field assets
+
+Left Field is listed as in development and links to its public source repository.
+Its approved LF mark, outlined hero illustration, social preview and bundled
+fonts come from SUBCULT Studio. Source hashes and the Studio revision are in
+`docs/left-field-brand-provenance.json`. Re-export with Studio’s
+`python scripts/export_left_field.py --site-root /path/to/subcult-tv`. The hero
+is brand artwork, not an interface screenshot. Scores are described as
+provisional research outputs; no public app URL is asserted.

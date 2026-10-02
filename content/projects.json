@@ -117,5 +117,22 @@
     "order": 5,
     "coverColor": "#ff9fe0",
     "coverPattern": "waves"
+  },
+  "left-field": {
+    "slug": "left-field",
+    "name": "Left Field",
+    "description": "Sourced seat records and transparent, provisional research scores.",
+    "longDescription": "Left Field organizes election, incumbent, campaign-finance and geography evidence into seat records, priority briefs and a source ledger. Scores are versioned and provisional; missing evidence stays visible.",
+    "whyItExists": "Election research is scattered across agencies and reports. Left Field brings seat records and their source context together for inspection.",
+    "status": "incubating",
+    "type": ["software", "tools"],
+    "stack": ["Next.js", "TypeScript", "PostgreSQL", "PostGIS"],
+    "topics": ["elections", "research", "public-data", "provenance"],
+    "repoUrl": "https://git.subcult.tv/subculture-collective/left-field",
+    "lastUpdated": "2026-10-02T00:00:00Z",
+    "featured": true,
+    "order": 6,
+    "coverColor": "#a33c26",
+    "coverPattern": "grid"
   }
 }

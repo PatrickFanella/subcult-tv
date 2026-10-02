@@ -115,6 +115,29 @@
   padding: 0 32px;
   margin: auto;
 }
+.product-landing[data-product='left-field'] {
+  --lp-bg: #f4f0e6;
+  --lp-panel: #e5eadc;
+  --lp-text: #16221f;
+  --lp-muted: #4b5952;
+  --lp-line: #aeb4a5;
+  --lp-accent: #a33c26;
+  --lp-on-accent: #f4f0e6;
+  --lp-radius: 0px;
+  --lp-body: 'Public Sans', Arial, sans-serif;
+  --lp-display: 'Liberation Serif', Georgia, serif;
+  --lp-mono: 'Left Field Mono', monospace;
+}
+.product-landing[data-product='left-field'] .landing-wordmark h1 {
+  font-family: var(--lp-body);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.product-landing[data-product='left-field'] .landing-features article {
+  border-top: 4px solid var(--lp-accent);
+}
 .product-landing :is(h1, h2, h3) {
   color: var(--lp-text);
   font-family: var(--lp-display);

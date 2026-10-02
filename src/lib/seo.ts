@@ -42,6 +42,8 @@ const ORGANIZATION = {
 
 // Search snippets show about 155 characters; these replace longer summaries.
 const META_DESCRIPTIONS: Record<string, string> = {
+  'left-field':
+    'Explore sourced seat records, provisional research scores, and the evidence behind each brief. Left Field is in active development.',
   patchwork:
     'Ask neighbors for help, offer what you can, and find local resources without sharing exact addresses. A pre-alpha mutual aid prototype on AT Protocol.',
   undertow:
@@ -56,6 +58,7 @@ const APPLICATION_CATEGORY: Record<string, string> = {
   'transcript-create': 'ReferenceApplication',
   'subcult-os': 'BusinessApplication',
   undertow: 'MultimediaApplication',
+  'left-field': 'ReferenceApplication',
 };
 
 function fullTitle(title: string) {
@@ -65,9 +68,9 @@ function fullTitle(title: string) {
 const STATIC_PAGES: PageMeta[] = [
   {
     path: '/',
-    title: 'SUBCULT | Open-source tools for independent culture',
+    title: 'SUBCULT | Tools for independent culture',
     description:
-      'Open-source software for clips, archives, mutual aid, live events, and music video: CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow.',
+      'Software for clips, archives, mutual aid, events, music video, and election research. Explore seven products from SUBCULT.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [
@@ -85,7 +88,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/products',
     title: fullTitle('Products'),
     description:
-      'Six open-source products from SUBCULT for Twitch clips, mutual aid, searchable archives, live events, and music video.',
+      'Seven products from SUBCULT for clips, mutual aid, archives, live events, music video, and sourced election research.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -93,7 +96,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/about',
     title: fullTitle('Studio'),
     description:
-      'SUBCULT is the independent studio behind CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow.',
+      'SUBCULT is the independent studio behind CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, and Left Field.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [ORGANIZATION],
