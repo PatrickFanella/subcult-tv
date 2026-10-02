@@ -132,9 +132,9 @@ export default function Patreon() {
               </div>
               <div className="min-w-0">
                 <p className="text-bone text-lg leading-relaxed mb-6">
-                  CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow stay public. Patreon
-                  is the workshop behind them: weekly field notes, a monthly studio ledger, and
-                  early previews. Follow for free, or back the work at $10 a month.
+                  The products stay public. Patreon opens the workshop: weekly field notes, a
+                  monthly studio ledger, and early previews. Follow for free, or back the work at
+                  $10 a month.
                 </p>
                 <div className="flex flex-wrap items-center gap-5">
                   <Button
