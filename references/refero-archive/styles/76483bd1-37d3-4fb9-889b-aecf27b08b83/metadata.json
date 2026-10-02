@@ -1,0 +1,29 @@
+{
+  "styleId": "76483bd1-37d3-4fb9-889b-aecf27b08b83",
+  "sourceUrl": "https://styles.refero.design/style/76483bd1-37d3-4fb9-889b-aecf27b08b83",
+  "fetchedAt": "2026-10-02T21:44:10.594034+00:00",
+  "extractedAt": "2026-10-02T21:44:10.655691+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Woven — Style Reference",
+  "htmlSha256": "d35bd50c1fffe57aeba9dd37ade2d43412fca4840285effc514ccb128cec02d8",
+  "cache": ".cache/76483bd1-37d3-4fb9-889b-aecf27b08b83.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c3898e9ac6045b2d0114942a6b69017d81210ee01f434b3f2fb6105742130866",
+      "bytes": 21272,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e7f788ea-a63a-4484-b479-6aeccadd15f9.jpg",
+    "fetchedAt": "2026-10-02T21:44:11.578441+00:00",
+    "sha256": "6c333a80f58ff33020e41b9f1864860d7a4dd7b786cc6a143f0767b324ee3bd0",
+    "bytes": 135833,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

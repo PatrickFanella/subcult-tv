@@ -1,0 +1,29 @@
+{
+  "styleId": "4080f6e4-e61c-4d3c-ab93-de74a1b5dfc2",
+  "sourceUrl": "https://styles.refero.design/style/4080f6e4-e61c-4d3c-ab93-de74a1b5dfc2",
+  "fetchedAt": "2026-10-02T21:40:57.491977+00:00",
+  "extractedAt": "2026-10-02T21:40:57.514743+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ryan Stephen — Style Reference",
+  "htmlSha256": "524bece473a4b4ece3920cfe0277053395d03d460dbda3ea795e9ed49e1552a2",
+  "cache": ".cache/4080f6e4-e61c-4d3c-ab93-de74a1b5dfc2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6a477edf9217593ad2189dacad3562ae233cbbdaa4fcc3c90b5d7cf1cd51c6df",
+      "bytes": 11038,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ea1703e1-46b4-4f35-a6d7-a42e26e501ae.jpg",
+    "fetchedAt": "2026-10-02T21:40:59.529444+00:00",
+    "sha256": "5677dd26f8cea50b7f44f0ad3346f21e1ca3bb4e1a3df435a6dc5b9382e22705",
+    "bytes": 130952,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "12b3e1b6-31b9-4843-9b3b-8f39c9dd1474",
+  "sourceUrl": "https://styles.refero.design/style/12b3e1b6-31b9-4843-9b3b-8f39c9dd1474",
+  "fetchedAt": "2026-10-02T21:53:38.221993+00:00",
+  "extractedAt": "2026-10-02T21:53:38.279562+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "TWOMUCH.STUDIO — Style Reference",
+  "htmlSha256": "daec3f2dedbe2b290e1d33c2ba257c3a804166a952366719be6e5b91c563c7db",
+  "cache": ".cache/12b3e1b6-31b9-4843-9b3b-8f39c9dd1474.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8ede2f6dfea1682a877975099be8b42fec9b8c4bcc89c5b7ad6d4abd424b6755",
+      "bytes": 18222,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/022f291a-a2d0-40f2-b417-1129b914a166.jpg",
+    "fetchedAt": "2026-10-02T21:53:40.275894+00:00",
+    "sha256": "66769381f420a7b39e137a8676bdc0441ea10254af6cffd9a77ad2c867203853",
+    "bytes": 154239,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "ffd5932b-c78c-491b-b03e-78ebeb6b0a1b",
+  "sourceUrl": "https://styles.refero.design/style/ffd5932b-c78c-491b-b03e-78ebeb6b0a1b",
+  "fetchedAt": "2026-10-02T21:28:02.012324+00:00",
+  "extractedAt": "2026-10-02T21:28:02.121549+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Basha-Franklin — Style Reference",
+  "htmlSha256": "e518b4fa250b048a95221ea3601ecffa2310ef047b80905b6001cd30ac0ad7cf",
+  "cache": ".cache/ffd5932b-c78c-491b-b03e-78ebeb6b0a1b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f7db9abdc08a0cfeaafd014d7e8077aa4bfe51022efa02702ae65f9c43db1c73",
+      "bytes": 16137,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d515a655-c1ab-4d8d-b942-626f6a9be932.jpg",
+    "fetchedAt": "2026-10-02T21:28:04.056559+00:00",
+    "sha256": "d13871d0d3612e52a9a6b8fd0049aca7ae2b7faaaf99c2d011e6b0f702095501",
+    "bytes": 302454,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "d211aaa4-e09b-4ef9-a9bf-f6fa8495de73",
+  "sourceUrl": "https://styles.refero.design/style/d211aaa4-e09b-4ef9-a9bf-f6fa8495de73",
+  "fetchedAt": "2026-10-02T21:37:45.994547+00:00",
+  "extractedAt": "2026-10-02T21:37:46.430960+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "My Brentano — Style Reference",
+  "htmlSha256": "58f387d54294e1fac3f8770ab6dfa4f3b2f9ad4d15a044b79dca833e71a2453b",
+  "cache": ".cache/d211aaa4-e09b-4ef9-a9bf-f6fa8495de73.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c6289f22e99b59cc5f187afdfaf1ff066cf8ab291b40d53793967a1f4fff69ea",
+      "bytes": 14994,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/87c656e8-3c23-4a93-abd4-c59b4330ee6e.jpg",
+    "fetchedAt": "2026-10-02T21:37:48.082597+00:00",
+    "sha256": "cf4ba8a67d17ed6acf0d6ee1992d608d4f1a2c40e6fbd5392a219209355d01f2",
+    "bytes": 75688,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "2ab2f666-6da7-4cd8-bc91-52a28bd560ad",
+  "sourceUrl": "https://styles.refero.design/style/2ab2f666-6da7-4cd8-bc91-52a28bd560ad",
+  "fetchedAt": "2026-10-02T21:41:57.783810+00:00",
+  "extractedAt": "2026-10-02T21:41:57.813778+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Shelby Kay — Style Reference",
+  "htmlSha256": "03e83a7c3bb4756384d32805d039d823c9e80c0f153759802d44c88653443977",
+  "cache": ".cache/2ab2f666-6da7-4cd8-bc91-52a28bd560ad.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "72975153254fb895d9dc39d73f77906bc7a49f8ab1d0b5dd1a68016f35caaa40",
+      "bytes": 19363,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cc757b50-1c45-4f03-a22b-a1f06f0cca19.jpg",
+    "fetchedAt": "2026-10-02T21:41:59.541537+00:00",
+    "sha256": "623efd9c6a3e01cf48979716f183046d14bf32b01d750cfe14d81e1a11a86717",
+    "bytes": 64456,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "4a248569-2b5a-4416-bb2a-c78890218b9f",
+  "sourceUrl": "https://styles.refero.design/style/4a248569-2b5a-4416-bb2a-c78890218b9f",
+  "fetchedAt": "2026-10-02T21:51:01.559468+00:00",
+  "extractedAt": "2026-10-02T21:51:01.611681+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Zipline — Style Reference",
+  "htmlSha256": "c316fc72eca3000b674768b004b85938e4d8643c1c77e1f336e7482fc492946b",
+  "cache": ".cache/4a248569-2b5a-4416-bb2a-c78890218b9f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d2a583ffa0e1d957d6575e24781cc06cac0e6dc81029342b37304cb6accf8463",
+      "bytes": 17939,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3469c5b5-a723-497d-ad85-382c1986e82d.jpg",
+    "fetchedAt": "2026-10-02T21:51:03.585157+00:00",
+    "sha256": "2c995e48f0570cb0f5aee91a49208a09ff21b0844b3ee08eeff021d94676aab8",
+    "bytes": 187540,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

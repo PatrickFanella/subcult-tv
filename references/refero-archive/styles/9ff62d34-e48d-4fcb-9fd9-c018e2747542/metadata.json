@@ -1,0 +1,29 @@
+{
+  "styleId": "9ff62d34-e48d-4fcb-9fd9-c018e2747542",
+  "sourceUrl": "https://styles.refero.design/style/9ff62d34-e48d-4fcb-9fd9-c018e2747542",
+  "fetchedAt": "2026-10-02T21:38:18.026178+00:00",
+  "extractedAt": "2026-10-02T21:38:18.058814+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lovable — Style Reference",
+  "htmlSha256": "50dc0e6f50624e0eb5b3de3b186dcd2c42b96f654c8ef1e0172d76bf6862e302",
+  "cache": ".cache/9ff62d34-e48d-4fcb-9fd9-c018e2747542.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fa34f8092a9d8e59ea74eca3598d2e3d7863bbce6b0d9bb086092872a43d6d63",
+      "bytes": 22938,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/26ea5d76-f1ea-498a-8128-b1e3d7446688.jpg",
+    "fetchedAt": "2026-10-02T21:38:19.981142+00:00",
+    "sha256": "6007f91eacae36fac03e64a8bdc17d9db958d00188c2103bef2b0b58d23db335",
+    "bytes": 62057,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

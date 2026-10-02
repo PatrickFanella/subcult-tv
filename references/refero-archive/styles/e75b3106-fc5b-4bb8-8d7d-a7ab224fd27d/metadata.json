@@ -1,0 +1,29 @@
+{
+  "styleId": "e75b3106-fc5b-4bb8-8d7d-a7ab224fd27d",
+  "sourceUrl": "https://styles.refero.design/style/e75b3106-fc5b-4bb8-8d7d-a7ab224fd27d",
+  "fetchedAt": "2026-10-02T21:56:26.725598+00:00",
+  "extractedAt": "2026-10-02T21:56:26.749786+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Duties.xyz — Style Reference",
+  "htmlSha256": "f8d3b849399b34bcebbbcad91cbb9f3bf33ba66b7e35803866784706d9487d10",
+  "cache": ".cache/e75b3106-fc5b-4bb8-8d7d-a7ab224fd27d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "39858fbb4f96a4e0928322e5a135b733d0f92fce50334f669ac80b50ced975d1",
+      "bytes": 18488,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a7ac1db2-6715-4531-a473-ae9628365b02.jpg",
+    "fetchedAt": "2026-10-02T21:56:28.208701+00:00",
+    "sha256": "27adbc9577a0804d7af5bf921309c36b5c8b1fa08b0f9e0b6fd5dc9451838150",
+    "bytes": 79641,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

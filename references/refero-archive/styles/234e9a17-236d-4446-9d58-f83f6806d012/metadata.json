@@ -1,0 +1,29 @@
+{
+  "styleId": "234e9a17-236d-4446-9d58-f83f6806d012",
+  "sourceUrl": "https://styles.refero.design/style/234e9a17-236d-4446-9d58-f83f6806d012",
+  "fetchedAt": "2026-10-02T21:59:50.216114+00:00",
+  "extractedAt": "2026-10-02T21:59:50.267124+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Acne Studios — Style Reference",
+  "htmlSha256": "3dd465d30f74fc468d8a2a41416785fe2ae3c898ccecde2aff8e0b16b362d945",
+  "cache": ".cache/234e9a17-236d-4446-9d58-f83f6806d012.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "54fccae38f697bb9af2e6e25c5d31358a2fc1d81b74e27eb1eb1198c9dcecacb",
+      "bytes": 14605,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/442d36d5-2368-4b74-993e-88909ec7eaf6.jpg",
+    "fetchedAt": "2026-10-02T21:59:52.233327+00:00",
+    "sha256": "9d84c44f62dceb530cae564b21ac9e5451a7d91613eb6a868d0f41b1c76ae857",
+    "bytes": 90869,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

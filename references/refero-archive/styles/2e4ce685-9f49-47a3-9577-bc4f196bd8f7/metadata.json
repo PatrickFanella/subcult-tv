@@ -1,0 +1,29 @@
+{
+  "styleId": "2e4ce685-9f49-47a3-9577-bc4f196bd8f7",
+  "sourceUrl": "https://styles.refero.design/style/2e4ce685-9f49-47a3-9577-bc4f196bd8f7",
+  "fetchedAt": "2026-10-02T21:48:57.868202+00:00",
+  "extractedAt": "2026-10-02T21:48:57.918612+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Glein — Style Reference",
+  "htmlSha256": "94be270ac4e6fd43aa67e5eacc5e54a9bc04aa0f1be2417e0961f614fe817621",
+  "cache": ".cache/2e4ce685-9f49-47a3-9577-bc4f196bd8f7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9f358c1de958461d4e48c4be5771edbb8946e8affd516577e9d3568f381df402",
+      "bytes": 16026,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/44fe7898-2d0b-4a19-8b88-4629cd827f0a.jpg",
+    "fetchedAt": "2026-10-02T21:48:59.556751+00:00",
+    "sha256": "de43d028758a515d6a6bb79af1e6ef6505b57bc1385cd715400ed6a5bf6ecf2c",
+    "bytes": 123692,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

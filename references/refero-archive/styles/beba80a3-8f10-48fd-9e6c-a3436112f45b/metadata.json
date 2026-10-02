@@ -1,0 +1,29 @@
+{
+  "styleId": "beba80a3-8f10-48fd-9e6c-a3436112f45b",
+  "sourceUrl": "https://styles.refero.design/style/beba80a3-8f10-48fd-9e6c-a3436112f45b",
+  "fetchedAt": "2026-10-02T21:42:49.814622+00:00",
+  "extractedAt": "2026-10-02T21:42:49.879841+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Zelt — Style Reference",
+  "htmlSha256": "855bb3e40c46de33410112504a8cac6255c726c66f4de29b717965111910bb75",
+  "cache": ".cache/beba80a3-8f10-48fd-9e6c-a3436112f45b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "438453ec281f02330fbfab9bc4ebc07151799fdbd6c5f1f755ed64cfba4ab771",
+      "bytes": 18916,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bc23c4d3-33c7-4e1a-a4da-24ff7a53267d.jpg",
+    "fetchedAt": "2026-10-02T21:42:51.545545+00:00",
+    "sha256": "e399831d9c55d2e61f3b9df5793c3a300d73c9760c41dd00c43f7e5f10720192",
+    "bytes": 56392,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

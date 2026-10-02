@@ -1,0 +1,29 @@
+{
+  "styleId": "196dc658-219f-4ea0-b150-f9af17cd4c3f",
+  "sourceUrl": "https://styles.refero.design/style/196dc658-219f-4ea0-b150-f9af17cd4c3f",
+  "fetchedAt": "2026-10-02T21:26:42.037720+00:00",
+  "extractedAt": "2026-10-02T21:26:42.088555+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Captions — Style Reference",
+  "htmlSha256": "30daa3dd47d638c422e996af3acddd00be0d6ab4b950ede976fda4fffac0b3c6",
+  "cache": ".cache/196dc658-219f-4ea0-b150-f9af17cd4c3f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fcaf79e502325fc3a9b684cfa196b5adcc97e47cf14eb3f288bbb8e27364c117",
+      "bytes": 22033,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/84cf592f-103b-4569-bb0c-af7115638fbc.jpg",
+    "fetchedAt": "2026-10-02T21:26:44.035008+00:00",
+    "sha256": "705936cd3309f558a538dd7ebf02117df30a385626b52f68f18498d740c543ea",
+    "bytes": 167353,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

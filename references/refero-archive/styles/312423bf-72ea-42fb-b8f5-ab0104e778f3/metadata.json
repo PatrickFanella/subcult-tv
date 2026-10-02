@@ -1,0 +1,29 @@
+{
+  "styleId": "312423bf-72ea-42fb-b8f5-ab0104e778f3",
+  "sourceUrl": "https://styles.refero.design/style/312423bf-72ea-42fb-b8f5-ab0104e778f3",
+  "fetchedAt": "2026-10-02T21:34:18.090564+00:00",
+  "extractedAt": "2026-10-02T21:34:18.119113+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Adaline — Style Reference",
+  "htmlSha256": "384c86e4ead70772a851bc4586841ea169096086c706725977a0963e69c0a6ce",
+  "cache": ".cache/312423bf-72ea-42fb-b8f5-ab0104e778f3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5601fac859c7aa634c1a078c6ac8c668abe8753f7ac0fbf929949565f4eb3a26",
+      "bytes": 23618,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e3b2cbcf-7130-4c23-ae4a-c6da64d8c277.jpg",
+    "fetchedAt": "2026-10-02T21:34:20.026752+00:00",
+    "sha256": "3af0ba28d6fdd02ca90cb4cd0b57f1ab4bed8d14f7e3708d3e48e2de8b0b8ead",
+    "bytes": 76397,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

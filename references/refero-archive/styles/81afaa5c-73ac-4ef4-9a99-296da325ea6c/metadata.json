@@ -1,0 +1,29 @@
+{
+  "styleId": "81afaa5c-73ac-4ef4-9a99-296da325ea6c",
+  "sourceUrl": "https://styles.refero.design/style/81afaa5c-73ac-4ef4-9a99-296da325ea6c",
+  "fetchedAt": "2026-10-02T21:32:05.996732+00:00",
+  "extractedAt": "2026-10-02T21:32:06.018843+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Perplexity AI — Style Reference",
+  "htmlSha256": "1b35e4f57c2c586d0a15a44ff5fb361a7a605f6f65452fd92693b940f6d05d3f",
+  "cache": ".cache/81afaa5c-73ac-4ef4-9a99-296da325ea6c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9062aedb8cc9fe232736681883dd3408a2ac47619ed78a58b062d955e313492f",
+      "bytes": 14848,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9406cb52-01b9-437e-88fc-a1db4d0c9c80.jpg",
+    "fetchedAt": "2026-10-02T21:32:07.975326+00:00",
+    "sha256": "71821730fdfa3b855e203a203dd87637153ca7620826f91e2eb33e61e5bebb1c",
+    "bytes": 38781,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

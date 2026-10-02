@@ -1,0 +1,29 @@
+{
+  "styleId": "a3161c3c-26d4-425b-aaa3-4fc3f06b77ee",
+  "sourceUrl": "https://styles.refero.design/style/a3161c3c-26d4-425b-aaa3-4fc3f06b77ee",
+  "fetchedAt": "2026-10-02T21:31:34.080673+00:00",
+  "extractedAt": "2026-10-02T21:31:34.105362+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Revolut — Style Reference",
+  "htmlSha256": "5f3fc05c2708c307d9569ba523e4d8a2bfae4c40fccaafb9fead98e89bb7c2f7",
+  "cache": ".cache/a3161c3c-26d4-425b-aaa3-4fc3f06b77ee.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "dc158e98c4008fae484524b393f311d8cb2317f8ca2b5be63c61f4d00fc1fee7",
+      "bytes": 18971,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2ba9e3e1-2843-4f5a-ae00-5c0fd6f7fb15.jpg",
+    "fetchedAt": "2026-10-02T21:31:36.045402+00:00",
+    "sha256": "b260088f471103ef77efdfdd3cf4d5184b6b9c35fd362eb4792f20b606b7515b",
+    "bytes": 95594,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

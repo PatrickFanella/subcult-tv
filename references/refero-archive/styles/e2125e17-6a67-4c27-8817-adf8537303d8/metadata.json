@@ -1,0 +1,29 @@
+{
+  "styleId": "e2125e17-6a67-4c27-8817-adf8537303d8",
+  "sourceUrl": "https://styles.refero.design/style/e2125e17-6a67-4c27-8817-adf8537303d8",
+  "fetchedAt": "2026-10-02T21:19:13.301120+00:00",
+  "extractedAt": "2026-10-02T21:19:13.377890+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hopper — Style Reference",
+  "htmlSha256": "0d4c86ee9a8cd813f226e537d515815a03480b821d613f75365a8fb16e1091fb",
+  "cache": ".cache/e2125e17-6a67-4c27-8817-adf8537303d8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "877a15edf8de17f3b1638e2b3e7fe4bfd08e6a24faf46c041aed3493f7c28b1d",
+      "bytes": 16424,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9424cebe-5855-46a4-b043-c451e7792d76.jpg",
+    "fetchedAt": "2026-10-02T21:26:20.096671+00:00",
+    "sha256": "1f0a24961753ccfbf7285e4eaf99a05db16f8541f95ff337c595fceb21e7b82f",
+    "bytes": 193441,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "004f4856-4b01-4c23-a9fb-866303d5013b",
+  "sourceUrl": "https://styles.refero.design/style/004f4856-4b01-4c23-a9fb-866303d5013b",
+  "fetchedAt": "2026-10-02T21:43:37.505068+00:00",
+  "extractedAt": "2026-10-02T21:43:37.574231+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "David Kirschberg — Style Reference",
+  "htmlSha256": "dbf8e4547bbdc7581e4c9c07b73e9f79be1b8ee0e2e8639f9811aada2c6f90db",
+  "cache": ".cache/004f4856-4b01-4c23-a9fb-866303d5013b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8fd78d2e87fb22a92f5c4e55d9ef48e1a0b22b7e90ff86f9f343348051d37205",
+      "bytes": 14618,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5b0b64c7-bbc1-4935-8d9a-99b610e3b321.jpg",
+    "fetchedAt": "2026-10-02T21:43:39.564174+00:00",
+    "sha256": "b340ca3fcd477504fdf868a0c04e5eba58038d0165945e60b5f83ce2b13e1d9c",
+    "bytes": 125962,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

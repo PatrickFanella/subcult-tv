@@ -1,0 +1,29 @@
+{
+  "styleId": "fdc72952-9b36-443a-9e0c-20b366aee29f",
+  "sourceUrl": "https://styles.refero.design/style/fdc72952-9b36-443a-9e0c-20b366aee29f",
+  "fetchedAt": "2026-10-02T21:40:45.484452+00:00",
+  "extractedAt": "2026-10-02T21:40:45.517536+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Flecto — Style Reference",
+  "htmlSha256": "c4429c83fdc7962b712d32bac3ee0593fd27c58263c0cec87542cb14e73a1f89",
+  "cache": ".cache/fdc72952-9b36-443a-9e0c-20b366aee29f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bf28880763f2079e4589a677bb9baf24f91cc12fe66a734f38e1ff41eb63db5c",
+      "bytes": 20293,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c9ead6df-a8ef-4aa6-b665-1e4ece6ddbe2.jpg",
+    "fetchedAt": "2026-10-02T21:40:47.470135+00:00",
+    "sha256": "e2907efbcee43de6c64b382d0fcd4130a821886290026a083e61c1f522c5252d",
+    "bytes": 31298,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

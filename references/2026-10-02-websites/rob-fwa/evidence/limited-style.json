@@ -1,0 +1,208 @@
+{
+  "bodyText": "ROB FWA\nSPECTRAL FIELD\nFFT 2048 · CLIENT-SIDE\nSPECTRAL FIELD\n\nTap to play — 37 tracks, shuffled.\nEach draws its own artwork as it plays. Keep the ones you like.\n\nUSE YOUR OWN TRACK\n\nOnly use music you own or have the rights to.\nName the file Artist Name - Track Name so the artwork is credited correctly.\n\nSOUNDCLOUD\nSPOTIFY\nAPPLE MUSIC\nYOUTUBE\nINSTAGRAM\n—\n⌂\n⇄\n⏭\n▶\n⇥\n0:00 / 0:00\nLow\nMid\nHi\n⤓\n⤢\nARTWORK COMPLETE\n—\nDOWNLOAD PNG\nDOWNLOAD SVG\nNEXT ▸\nLIKE YOUR PIECE? TIP THE ARTIST ♡",
+  "capturedAt": "2026-10-02T20:33:26.193Z",
+  "samples": [
+    {
+      "background": "rgb(0, 0, 0)",
+      "color": "rgb(127, 138, 160)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "normal",
+      "size": "16px",
+      "tag": "BODY",
+      "text": "\n  \n\n  \n    \n    \n\n    \n      Rob FWA\n      Spectral Field\n      FFT 2048 · CLIENT-SIDE\n    \n\n    \n ",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(205, 214, 230)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "3.38px",
+      "size": "13px",
+      "tag": "H1",
+      "text": "Spectral Field",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(127, 138, 160)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "1.1px",
+      "size": "11px",
+      "tag": "P",
+      "text": "Tap to play — 37 tracks, shuffled.Each draws its own artwork as it plays. Keep the ones you like.",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(127, 138, 160)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "0.6px",
+      "size": "10px",
+      "tag": "P",
+      "text": "Only use music you own or have the rights to.Name the file Artist Name - Track Name so the artwork i",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(127, 138, 160)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "1.4px",
+      "size": "10px",
+      "tag": "A",
+      "text": "SoundCloud",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(127, 138, 160)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "1.4px",
+      "size": "10px",
+      "tag": "A",
+      "text": "Spotify",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(127, 138, 160)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "1.4px",
+      "size": "10px",
+      "tag": "A",
+      "text": "Apple Music",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(127, 138, 160)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "1.4px",
+      "size": "10px",
+      "tag": "A",
+      "text": "YouTube",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(127, 138, 160)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "1.4px",
+      "size": "10px",
+      "tag": "A",
+      "text": "Instagram",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(205, 214, 230)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "normal",
+      "size": "12px",
+      "tag": "BUTTON",
+      "text": "⌂",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(205, 214, 230)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "normal",
+      "size": "12px",
+      "tag": "BUTTON",
+      "text": "⇄",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(205, 214, 230)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "normal",
+      "size": "12px",
+      "tag": "BUTTON",
+      "text": "⏭",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(205, 214, 230)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "normal",
+      "size": "12px",
+      "tag": "BUTTON",
+      "text": "▶",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(205, 214, 230)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "normal",
+      "size": "12px",
+      "tag": "BUTTON",
+      "text": "⇥",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(205, 214, 230)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "normal",
+      "size": "12px",
+      "tag": "BUTTON",
+      "text": "⤓",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(205, 214, 230)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "normal",
+      "size": "12px",
+      "tag": "BUTTON",
+      "text": "⤢",
+      "weight": "400"
+    },
+    {
+      "background": "rgb(244, 184, 96)",
+      "color": "rgb(10, 10, 10)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "1.54px",
+      "size": "11px",
+      "tag": "BUTTON",
+      "text": "Download PNG",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(7, 8, 11, 0.62)",
+      "color": "rgb(205, 214, 230)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "1.54px",
+      "size": "11px",
+      "tag": "BUTTON",
+      "text": "Download SVG",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(7, 8, 11, 0.62)",
+      "color": "rgb(205, 214, 230)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "1.54px",
+      "size": "11px",
+      "tag": "BUTTON",
+      "text": "Next ▸",
+      "weight": "400"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(127, 138, 160)",
+      "font": "ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "letterSpacing": "1.4px",
+      "size": "10px",
+      "tag": "A",
+      "text": "Like your piece? Tip the artist ♡",
+      "weight": "400"
+    }
+  ],
+  "title": "Spectral Field · Rob FWA",
+  "url": "https://www.robfwa.com/"
+}

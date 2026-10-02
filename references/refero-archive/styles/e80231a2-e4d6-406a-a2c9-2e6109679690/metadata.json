@@ -1,0 +1,29 @@
+{
+  "styleId": "e80231a2-e4d6-406a-a2c9-2e6109679690",
+  "sourceUrl": "https://styles.refero.design/style/e80231a2-e4d6-406a-a2c9-2e6109679690",
+  "fetchedAt": "2026-10-02T21:35:02.185763+00:00",
+  "extractedAt": "2026-10-02T21:35:02.214594+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Authkit — Style Reference",
+  "htmlSha256": "d81bb5673770174ed0065304cd52daae99fd306c86f300c14effd55586f2812e",
+  "cache": ".cache/e80231a2-e4d6-406a-a2c9-2e6109679690.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "380300d93fa0080c01386696b3ff8547a73eafe8d588285c25ed32e923069189",
+      "bytes": 27857,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/aa0b09c6-2f87-41f9-8024-e804ecab8199.jpg",
+    "fetchedAt": "2026-10-02T21:35:03.955101+00:00",
+    "sha256": "000dc76573507cef299e48e05140d55ff8802edd2e1b8feb48ae6cce971b3eea",
+    "bytes": 49955,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

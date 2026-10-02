@@ -1,0 +1,29 @@
+{
+  "styleId": "0ab4c544-6147-4998-8365-3a0f6191e54f",
+  "sourceUrl": "https://styles.refero.design/style/0ab4c544-6147-4998-8365-3a0f6191e54f",
+  "fetchedAt": "2026-10-02T21:30:34.024243+00:00",
+  "extractedAt": "2026-10-02T21:30:34.055860+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Workable — Style Reference",
+  "htmlSha256": "778b118546625cc5396a9cb86e9ef8da4048c4b5017010e4a6ae284c0a3f0a49",
+  "cache": ".cache/0ab4c544-6147-4998-8365-3a0f6191e54f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f71cd657c4df7c3345087e36582cf014a5fb66ff05fb65323ab3992173918b1f",
+      "bytes": 19744,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/17af07cd-9350-4acf-bdbf-8754e7cca52d.jpg",
+    "fetchedAt": "2026-10-02T21:30:36.081119+00:00",
+    "sha256": "26fe7fc0c8b3ea3b3a6a89c7d0246aeed1cb8cd51b53b4c01304a27e2ca6b096",
+    "bytes": 105728,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

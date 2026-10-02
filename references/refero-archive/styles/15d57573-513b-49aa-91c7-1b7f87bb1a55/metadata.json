@@ -1,0 +1,29 @@
+{
+  "styleId": "15d57573-513b-49aa-91c7-1b7f87bb1a55",
+  "sourceUrl": "https://styles.refero.design/style/15d57573-513b-49aa-91c7-1b7f87bb1a55",
+  "fetchedAt": "2026-10-02T21:38:30.141285+00:00",
+  "extractedAt": "2026-10-02T21:38:30.171916+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Wemakethings — Style Reference",
+  "htmlSha256": "f6ffdf4bf184d5437c5a560aef4863448da2119b83579daa8e0a2a9d6313239c",
+  "cache": ".cache/15d57573-513b-49aa-91c7-1b7f87bb1a55.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a31bf6a32e7fc39baf89a7ce5128ab5cea832c52f9f76ab00b419614478f6343",
+      "bytes": 14360,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fda76f3e-7488-4a4a-b39f-ca72837780a6.jpg",
+    "fetchedAt": "2026-10-02T21:38:32.124263+00:00",
+    "sha256": "f5029a42885042d20ddb9b6c09b847f14029fed0060a72e460830dcb568e2b6c",
+    "bytes": 159028,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

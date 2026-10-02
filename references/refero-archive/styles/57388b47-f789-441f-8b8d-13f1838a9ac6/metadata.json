@@ -1,0 +1,29 @@
+{
+  "styleId": "57388b47-f789-441f-8b8d-13f1838a9ac6",
+  "sourceUrl": "https://styles.refero.design/style/57388b47-f789-441f-8b8d-13f1838a9ac6",
+  "fetchedAt": "2026-10-02T22:00:18.170119+00:00",
+  "extractedAt": "2026-10-02T22:00:18.203271+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "INO — Style Reference",
+  "htmlSha256": "2b2ea1b73c249a0d7c679fa183693b206324b6aa553f38acf7ddb1a55fe332b3",
+  "cache": ".cache/57388b47-f789-441f-8b8d-13f1838a9ac6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e0b9707196d370c52af51c9ede79d23b6db51c99c0e44d975fe70b5923062811",
+      "bytes": 19222,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/54747278-358b-49e0-a888-01273803d3df.jpg",
+    "fetchedAt": "2026-10-02T22:00:20.221614+00:00",
+    "sha256": "0b9aaffca26d7dbf2b53941cd39f3cd87cd634df1b27fa21e6ee78bb678a998e",
+    "bytes": 95336,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

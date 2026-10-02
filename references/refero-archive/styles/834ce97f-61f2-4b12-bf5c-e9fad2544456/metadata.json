@@ -1,0 +1,29 @@
+{
+  "styleId": "834ce97f-61f2-4b12-bf5c-e9fad2544456",
+  "sourceUrl": "https://styles.refero.design/style/834ce97f-61f2-4b12-bf5c-e9fad2544456",
+  "fetchedAt": "2026-10-02T21:55:58.300756+00:00",
+  "extractedAt": "2026-10-02T21:55:58.326364+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "HashiCorp — Style Reference",
+  "htmlSha256": "a4fe7bcd4b2eeeed1f2c8f24ba6452322156d77361e0ab408d107bc700e8c5c0",
+  "cache": ".cache/834ce97f-61f2-4b12-bf5c-e9fad2544456.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d67ba27113098fc02663ab9137c65bfaa7bb19d208bc729107fa21cdde2e5b6d",
+      "bytes": 23860,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/41e81b82-ee2a-4013-abbc-88cabcd36c15.jpg",
+    "fetchedAt": "2026-10-02T21:56:00.185946+00:00",
+    "sha256": "4ee5d99ea77362f1660211b819997cf7ba912ce8ebf0cb90338d3c6d2a9d0c3a",
+    "bytes": 71007,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

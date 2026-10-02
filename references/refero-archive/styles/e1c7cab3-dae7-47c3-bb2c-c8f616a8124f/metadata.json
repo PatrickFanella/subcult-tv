@@ -1,0 +1,29 @@
+{
+  "styleId": "e1c7cab3-dae7-47c3-bb2c-c8f616a8124f",
+  "sourceUrl": "https://styles.refero.design/style/e1c7cab3-dae7-47c3-bb2c-c8f616a8124f",
+  "fetchedAt": "2026-10-02T22:00:10.347855+00:00",
+  "extractedAt": "2026-10-02T22:00:10.393643+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Wrike — Style Reference",
+  "htmlSha256": "a2d9f992f4fd156a088bfd268b302e0ec8e19fd4147fdd48398630ef7102ea88",
+  "cache": ".cache/e1c7cab3-dae7-47c3-bb2c-c8f616a8124f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f7c3adfc5cca11acdd10de27d508513218256fa1057198e96bd66ebf294f7c4e",
+      "bytes": 22072,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8c45fb28-1b46-407a-aa87-e83314f52dc5.jpg",
+    "fetchedAt": "2026-10-02T22:00:12.295422+00:00",
+    "sha256": "cd27d8669cd47457e6765c0497b02b97bf4c79330c9f85cc56c7097a02e90ca3",
+    "bytes": 102708,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

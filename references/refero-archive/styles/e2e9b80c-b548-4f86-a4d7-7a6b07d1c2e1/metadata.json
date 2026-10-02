@@ -1,0 +1,29 @@
+{
+  "styleId": "e2e9b80c-b548-4f86-a4d7-7a6b07d1c2e1",
+  "sourceUrl": "https://styles.refero.design/style/e2e9b80c-b548-4f86-a4d7-7a6b07d1c2e1",
+  "fetchedAt": "2026-10-02T21:42:57.520237+00:00",
+  "extractedAt": "2026-10-02T21:42:57.580395+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Josh Warner — Style Reference",
+  "htmlSha256": "f56c08af2b7a8e2e9bd26d6e950d55944eb7d828902c95e817c987cef46451de",
+  "cache": ".cache/e2e9b80c-b548-4f86-a4d7-7a6b07d1c2e1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "81ada5028f5fb9788c4653cab290e05dd4f7ea995760d41c0e862aedf50c41b3",
+      "bytes": 18653,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e706ea3a-5c5c-42fb-abb8-d248e051fa26.jpg",
+    "fetchedAt": "2026-10-02T21:42:59.525096+00:00",
+    "sha256": "99a64d34d404269725f83ab102e293f37b0cbf888053ebee3c9b00cac0cc19b7",
+    "bytes": 130552,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

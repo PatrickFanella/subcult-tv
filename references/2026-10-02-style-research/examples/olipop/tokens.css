@@ -1,0 +1,11 @@
+/* Observed values, not canonical brand roles. See DESIGN.md and tokens.json. */
+:root {
+  --observed-color-01: rgb(3, 70, 56);
+  --observed-color-02: rgba(255, 255, 255, 0);
+  --observed-color-03: rgb(58, 58, 58);
+  --observed-color-04: rgb(20, 67, 61);
+  --observed-color-05: rgb(255, 255, 255);
+  --observed-color-06: rgb(24, 99, 220);
+  --observed-font-01: Ano;
+  --observed-font-02: Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "9b9b0ca1-5067-4115-b62f-ee0e43d1f37f",
+  "sourceUrl": "https://styles.refero.design/style/9b9b0ca1-5067-4115-b62f-ee0e43d1f37f",
+  "fetchedAt": "2026-10-02T21:56:54.421956+00:00",
+  "extractedAt": "2026-10-02T21:56:54.450874+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Liveblocks — Style Reference",
+  "htmlSha256": "7594d384e39360d05806fda1ddf215bad2b6e54b20d47805a3071880e76a95cf",
+  "cache": ".cache/9b9b0ca1-5067-4115-b62f-ee0e43d1f37f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6974686d93f3b5cc75b2f8b711542f6bfcdd1e35e7d35b60de3dee0fbd550274",
+      "bytes": 22387,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3dcf4448-8cda-4c66-ac0f-e94d35b3dbd2.jpg",
+    "fetchedAt": "2026-10-02T21:56:56.471178+00:00",
+    "sha256": "266807e09e281089918263a35255b1a4fef4a16bc414c67ee5c29342521a4f55",
+    "bytes": 105212,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

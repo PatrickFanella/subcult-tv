@@ -1,0 +1,29 @@
+{
+  "styleId": "7967c6d9-e50c-42b5-b4d1-74003ba41781",
+  "sourceUrl": "https://styles.refero.design/style/7967c6d9-e50c-42b5-b4d1-74003ba41781",
+  "fetchedAt": "2026-10-02T21:33:25.996990+00:00",
+  "extractedAt": "2026-10-02T21:33:26.019746+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Seline Analytics — Style Reference",
+  "htmlSha256": "1c320574771ad3bcf03f54e0e6cc5c78d909a9a1568322da0df1c042264f18f7",
+  "cache": ".cache/7967c6d9-e50c-42b5-b4d1-74003ba41781.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8c6eac0afca146d216143f3b2ecd0ff36aea32aa6604ed5920bc4e9ab0a7c521",
+      "bytes": 20580,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/63c771cd-7c46-40cb-a960-05d2fe09bc98.jpg",
+    "fetchedAt": "2026-10-02T21:33:28.077248+00:00",
+    "sha256": "71aefc6c07e9c6efd417102cd2274a1cebbae5840e2d6146ffeabe286bb606c9",
+    "bytes": 102107,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

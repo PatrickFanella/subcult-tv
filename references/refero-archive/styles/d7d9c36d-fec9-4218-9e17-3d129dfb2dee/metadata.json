@@ -1,0 +1,29 @@
+{
+  "styleId": "d7d9c36d-fec9-4218-9e17-3d129dfb2dee",
+  "sourceUrl": "https://styles.refero.design/style/d7d9c36d-fec9-4218-9e17-3d129dfb2dee",
+  "fetchedAt": "2026-10-02T21:56:30.373092+00:00",
+  "extractedAt": "2026-10-02T21:56:30.396741+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "NEON Rated — Style Reference",
+  "htmlSha256": "f6f7f00f9926c9336f59a30ccef8043f8974184119cba2c8da6fde614894ceb9",
+  "cache": ".cache/d7d9c36d-fec9-4218-9e17-3d129dfb2dee.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e862f0209482776c8d452b7721f091ee0de1e13362a53e2b88fb14caa79a24d1",
+      "bytes": 22081,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9eb44a03-03fa-48f9-bb6a-b1efde140f08.jpg",
+    "fetchedAt": "2026-10-02T21:56:32.239688+00:00",
+    "sha256": "5b737ea060debef4f2d53238a26c27f0c54082f3d7ce81b88f2f56a43ca20a6b",
+    "bytes": 93303,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

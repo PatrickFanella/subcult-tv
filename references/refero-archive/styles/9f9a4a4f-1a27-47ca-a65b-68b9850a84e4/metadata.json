@@ -1,0 +1,29 @@
+{
+  "styleId": "9f9a4a4f-1a27-47ca-a65b-68b9850a84e4",
+  "sourceUrl": "https://styles.refero.design/style/9f9a4a4f-1a27-47ca-a65b-68b9850a84e4",
+  "fetchedAt": "2026-10-02T21:33:58.817946+00:00",
+  "extractedAt": "2026-10-02T21:33:58.840532+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Antimetal — Style Reference",
+  "htmlSha256": "b6ebed4de0343ffd7d2bb84f14ec60cbd36da3c77595cc73c41d96491c983af4",
+  "cache": ".cache/9f9a4a4f-1a27-47ca-a65b-68b9850a84e4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cad6cdc1cdc76d86df26cfad8eb58a799433157a2f1f4c84645a4acb1c924a5a",
+      "bytes": 24629,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7c78b0dc-58e3-4207-b529-626a4764cee8.jpg",
+    "fetchedAt": "2026-10-02T21:33:59.979391+00:00",
+    "sha256": "a266e9696da8f1aa9925ece4a4b52c530054e3d151e90ab7b6e21da5d78b2234",
+    "bytes": 49229,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

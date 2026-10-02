@@ -1,0 +1,29 @@
+{
+  "styleId": "51752cfb-4fd4-464f-8b78-ecbc813830e1",
+  "sourceUrl": "https://styles.refero.design/style/51752cfb-4fd4-464f-8b78-ecbc813830e1",
+  "fetchedAt": "2026-10-02T21:57:54.163192+00:00",
+  "extractedAt": "2026-10-02T21:57:54.187755+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Deta Surf — Style Reference",
+  "htmlSha256": "a07323a4c1f6058f190e999b49973d7050e5d920fb90c3da161f841949c2c8d4",
+  "cache": ".cache/51752cfb-4fd4-464f-8b78-ecbc813830e1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "de691cc15ee770af66eae0587108e82d1a744efdcf8f1c2c0343f781ea30e8e3",
+      "bytes": 24596,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3cd10bea-f36d-4a69-8e96-883be0972475.jpg",
+    "fetchedAt": "2026-10-02T21:57:56.234213+00:00",
+    "sha256": "a6cd1a67fc5fc349450ea49e6f7d545de678a43f442522a3ebb4134a6d53af69",
+    "bytes": 76193,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

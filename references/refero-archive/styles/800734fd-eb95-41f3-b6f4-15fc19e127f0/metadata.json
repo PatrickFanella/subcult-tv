@@ -1,0 +1,29 @@
+{
+  "styleId": "800734fd-eb95-41f3-b6f4-15fc19e127f0",
+  "sourceUrl": "https://styles.refero.design/style/800734fd-eb95-41f3-b6f4-15fc19e127f0",
+  "fetchedAt": "2026-10-02T21:30:38.033601+00:00",
+  "extractedAt": "2026-10-02T21:30:38.074405+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Brainfish — Style Reference",
+  "htmlSha256": "3e04f8198e46c83e9ff21b49a7bd9af9adcbf4bcc62f66737607d582e8379ede",
+  "cache": ".cache/800734fd-eb95-41f3-b6f4-15fc19e127f0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1c0edf508b46dd5e68d5383c73806c556c47e45331361530a8078ea275704668",
+      "bytes": 24175,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5826d7e7-8d4e-4109-a9be-9cc5912a3272.jpg",
+    "fetchedAt": "2026-10-02T21:30:40.150770+00:00",
+    "sha256": "351007952b2fcb7ac31043107b46efefefabc34160068586fe090968dd64cd4a",
+    "bytes": 89939,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

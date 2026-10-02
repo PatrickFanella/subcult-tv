@@ -1,0 +1,29 @@
+{
+  "styleId": "898f0127-d235-4832-bf33-ab21104f0529",
+  "sourceUrl": "https://styles.refero.design/style/898f0127-d235-4832-bf33-ab21104f0529",
+  "fetchedAt": "2026-10-02T21:53:54.230749+00:00",
+  "extractedAt": "2026-10-02T21:53:54.276458+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "HBO Max — Style Reference",
+  "htmlSha256": "7a4ad41e7e131066589afef6257382ef471d67d9e1965c252e19c95cef6a56c2",
+  "cache": ".cache/898f0127-d235-4832-bf33-ab21104f0529.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1828675e073ef330e8364188d8417cf01d3abcf4b34cf2e55eb237f2e3bf5b32",
+      "bytes": 17499,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0cf1c633-46e2-45b4-b37b-db9831b90ae7.jpg",
+    "fetchedAt": "2026-10-02T21:53:56.263790+00:00",
+    "sha256": "466dad4ed53717e912459ed97928df31f4fcd7f89a4e64529ce36e792647479b",
+    "bytes": 138691,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

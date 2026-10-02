@@ -1,0 +1,88 @@
+{
+  "site": "gigantic-media",
+  "source": "https://giganticmedia.net/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:15:57.577Z",
+      "url": "https://giganticmedia.net/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "scrolled",
+      "observation": "evidence/scrolled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:22:29.216Z",
+      "url": "https://giganticmedia.net/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:22:23.469Z",
+      "url": "https://giganticmedia.net/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "c1d9adbe56f8888d6cc748d5b23901b0e93b5e283d79a0a29a0a3b379e3ce324",
+      "bytes": 5362
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "73b80e3477d68add3eec2e9d61295f09be3910549a330bd7b50d2765fea59a37",
+      "bytes": 1301
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "08342aa7a50b530c11513313f474d9c3291d58204165c9d509c9dcfb41771d83",
+      "bytes": 33868
+    },
+    {
+      "path": "evidence/scrolled.json",
+      "sha256": "0fe6be0c4beecb548c67ce8c25c5fd3b59671bb378a94edcda2ebdeb19507f8c",
+      "bytes": 33362
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "81e489fec8bfcb41c559cbfdf8901521941cfe95ef4a1524e672101fa7b893a8",
+      "bytes": 33392
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "2f47a14f7458d177978f385c74087a21d224463d1a7c1224ff9b67222485d0c5",
+      "bytes": 55146
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "47b9076b4703fc054c369031222dbfc6f67125f8b7fc0f120fa1d92d65a1cb9b",
+      "bytes": 281
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "05801679d5b4adc2f05dd47bedd80ed6aa6375f84ed4a669dec6edf6cfe5221e",
+      "bytes": 13812
+    }
+  ]
+}

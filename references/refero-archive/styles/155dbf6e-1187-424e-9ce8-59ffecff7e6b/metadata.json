@@ -1,0 +1,29 @@
+{
+  "styleId": "155dbf6e-1187-424e-9ce8-59ffecff7e6b",
+  "sourceUrl": "https://styles.refero.design/style/155dbf6e-1187-424e-9ce8-59ffecff7e6b",
+  "fetchedAt": "2026-10-02T21:46:17.552813+00:00",
+  "extractedAt": "2026-10-02T21:46:17.596769+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Pixso — Style Reference",
+  "htmlSha256": "872a8fbfc2f066ced13ac3ac1d194ba8dd74a0192a7fcd5ce790adfae3e68e5c",
+  "cache": ".cache/155dbf6e-1187-424e-9ce8-59ffecff7e6b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d314f3ddb65b5f6111e0c1142f013a9ff12c003125938d87bac613ef5b1604d9",
+      "bytes": 19190,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1f66f657-b495-4c20-8c90-ea3b6b6f04de.jpg",
+    "fetchedAt": "2026-10-02T21:46:20.023677+00:00",
+    "sha256": "e65b39de32eee8afcee7bd96c9a3b557491b5837cc900437ca3ae98047802f10",
+    "bytes": 89927,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

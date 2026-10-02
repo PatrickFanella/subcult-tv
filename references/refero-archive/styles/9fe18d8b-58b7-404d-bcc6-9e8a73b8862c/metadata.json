@@ -1,0 +1,29 @@
+{
+  "styleId": "9fe18d8b-58b7-404d-bcc6-9e8a73b8862c",
+  "sourceUrl": "https://styles.refero.design/style/9fe18d8b-58b7-404d-bcc6-9e8a73b8862c",
+  "fetchedAt": "2026-10-02T21:39:34.042960+00:00",
+  "extractedAt": "2026-10-02T21:39:34.091487+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Thomas Hedger — Style Reference",
+  "htmlSha256": "7d35722f2202b4065613a07bbb4839b6f73e345ab5c46213eaa47760eb0f28d4",
+  "cache": ".cache/9fe18d8b-58b7-404d-bcc6-9e8a73b8862c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "583caa629f3ddd4ba930694fd055a5bbb6201240f73e8bf42bc7a1e26b005bb1",
+      "bytes": 12931,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b02e5863-f056-458a-bdab-64c58fbe48d4.jpg",
+    "fetchedAt": "2026-10-02T21:39:36.105955+00:00",
+    "sha256": "99e37d0c4d51a1a913712f70e1da1599d63a46cbea2adb2bb3c8d442dfc4afd5",
+    "bytes": 146005,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

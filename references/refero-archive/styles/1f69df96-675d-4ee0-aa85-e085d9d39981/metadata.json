@@ -1,0 +1,29 @@
+{
+  "styleId": "1f69df96-675d-4ee0-aa85-e085d9d39981",
+  "sourceUrl": "https://styles.refero.design/style/1f69df96-675d-4ee0-aa85-e085d9d39981",
+  "fetchedAt": "2026-10-02T21:48:21.807750+00:00",
+  "extractedAt": "2026-10-02T21:48:21.858562+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Splice — Style Reference",
+  "htmlSha256": "3d9998f7460c7104430aedf889290dbf2d69adc38402fb74acd418f2524e03a7",
+  "cache": ".cache/1f69df96-675d-4ee0-aa85-e085d9d39981.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9f7063301d04f7365b852c14aa00b87989de41e8b2781e4826c050146b39180e",
+      "bytes": 20231,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/64800698-52f7-4813-a50c-fcdbea7bf567.jpg",
+    "fetchedAt": "2026-10-02T21:48:23.530557+00:00",
+    "sha256": "24b03a1f7f5f05007b18be02d800745180381e72f74b722a4ef34ed544ae4d2b",
+    "bytes": 128300,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "bf523387-03fc-4243-86ca-25af34daa0ce",
+  "sourceUrl": "https://styles.refero.design/style/bf523387-03fc-4243-86ca-25af34daa0ce",
+  "fetchedAt": "2026-10-02T21:56:38.283894+00:00",
+  "extractedAt": "2026-10-02T21:56:38.306327+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Heart Aerospace — Style Reference",
+  "htmlSha256": "7c7363f11e50cb6e73858376c3e4554504bb62cf6cb1bf15d55985703b136199",
+  "cache": ".cache/bf523387-03fc-4243-86ca-25af34daa0ce.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8f01faea332e55be40b85f81a02ca85b7d97907b5ad94e08e754178fe3297f84",
+      "bytes": 17049,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/23e307f4-6053-4c1e-a145-73957273defe.jpg",
+    "fetchedAt": "2026-10-02T21:56:40.128017+00:00",
+    "sha256": "281e90b4c90eb7eb3133067abc1d655fa64e92d4c7d4b95c3de727781303d0f2",
+    "bytes": 64618,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

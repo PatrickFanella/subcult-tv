@@ -1,0 +1,29 @@
+{
+  "styleId": "91939ad3-9e22-4256-a396-a1716a064ac4",
+  "sourceUrl": "https://styles.refero.design/style/91939ad3-9e22-4256-a396-a1716a064ac4",
+  "fetchedAt": "2026-10-02T21:46:37.626960+00:00",
+  "extractedAt": "2026-10-02T21:46:37.669489+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Transform — Style Reference",
+  "htmlSha256": "325ddec3119cd2f0c855e71492986b8d162366e24864f341db8565bd7b5c1e73",
+  "cache": ".cache/91939ad3-9e22-4256-a396-a1716a064ac4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a7fd1eb1a609107772fadf141bbebd41dfc90d52d37eee3164b4b7f8d87add00",
+      "bytes": 17944,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5664f512-6c55-45ac-9640-f94ec100a730.jpg",
+    "fetchedAt": "2026-10-02T21:46:39.586653+00:00",
+    "sha256": "90c7cc80abe92716247bd438ece1996f75b7e15822e1015ae52fea023c3870cc",
+    "bytes": 125135,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

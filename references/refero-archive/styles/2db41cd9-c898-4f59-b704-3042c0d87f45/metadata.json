@@ -1,0 +1,29 @@
+{
+  "styleId": "2db41cd9-c898-4f59-b704-3042c0d87f45",
+  "sourceUrl": "https://styles.refero.design/style/2db41cd9-c898-4f59-b704-3042c0d87f45",
+  "fetchedAt": "2026-10-02T21:54:38.346968+00:00",
+  "extractedAt": "2026-10-02T21:54:38.379622+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ditto — Style Reference",
+  "htmlSha256": "0f212b5c8485d5e56cc17bd6a485f9976e8b14efc343fdac11aaa0577d3da9f8",
+  "cache": ".cache/2db41cd9-c898-4f59-b704-3042c0d87f45.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c4b57fdf1336b9b60d814cfc237ca42a40a9e95ecfdd58ec41656de1835fbb90",
+      "bytes": 24782,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4b147390-0577-4af9-9419-0b1e3f49b11f.jpg",
+    "fetchedAt": "2026-10-02T21:54:40.248532+00:00",
+    "sha256": "e46b82e2a6a3c1fc6d193f811ea14681e245f9953f4df3f898b0f299d4036130",
+    "bytes": 90759,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

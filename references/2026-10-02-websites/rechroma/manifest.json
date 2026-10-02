@@ -1,0 +1,70 @@
+{
+  "site": "rechroma",
+  "source": "https://rechroma.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:16:05.856Z",
+      "url": "https://rechroma.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:24:02.209Z",
+      "url": "https://rechroma.com/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "31fce9ec1ba563779f88158f11670bd87dd1ec6cf8561cce560fecb18fc9dcbb",
+      "bytes": 5084
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "1566a783b4317ce0ea60c4772d8b1ea3349fbcbbc78286f0698a72b3fec2a4cb",
+      "bytes": 1210
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "85dbe906e56eac600bdf236f8c407431e28685c53f809ee40c2d17bb5a7a9abb",
+      "bytes": 58013
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "5919c55f6d7af46831f9207f4da0f4c8abf672967eba28fc00869785b3075a72",
+      "bytes": 57609
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "f15ec0b7099c90bcb54d797a40e5f1144a19a8993bbd33228d7ad5a87c06daac",
+      "bytes": 8494
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "6c00aa6864505e37314e36e2035c32443cc72f79498c652a62c798e896d5bffc",
+      "bytes": 263
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "d0d3996accef2f2684e7f36751412f886c817c677f32b4d17a4962aac098fcae",
+      "bytes": 34093
+    }
+  ]
+}

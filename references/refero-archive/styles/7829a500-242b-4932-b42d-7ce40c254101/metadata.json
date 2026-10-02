@@ -1,0 +1,29 @@
+{
+  "styleId": "7829a500-242b-4932-b42d-7ce40c254101",
+  "sourceUrl": "https://styles.refero.design/style/7829a500-242b-4932-b42d-7ce40c254101",
+  "fetchedAt": "2026-10-02T21:58:34.201994+00:00",
+  "extractedAt": "2026-10-02T21:58:34.247529+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hey Low — Style Reference",
+  "htmlSha256": "a4fd408d969753f79f1be701c7079c1056ce617d0562386a02a2555ad747ac46",
+  "cache": ".cache/7829a500-242b-4932-b42d-7ce40c254101.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "11e4f9eebbd82d70e9b57c5ca6fdcd24b33e48856561492d847674246557833b",
+      "bytes": 23535,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9f6a85e1-4247-47d0-a924-6d6ecd06ecf8.jpg",
+    "fetchedAt": "2026-10-02T21:58:36.209734+00:00",
+    "sha256": "2714774d4a733434ae009e5382cac82ffadc44673142b36e22ccd52ce6341cbc",
+    "bytes": 71838,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

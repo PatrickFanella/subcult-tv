@@ -1,0 +1,29 @@
+{
+  "styleId": "e9a1c1e1-2c35-47c0-864f-d1e9fea57579",
+  "sourceUrl": "https://styles.refero.design/style/e9a1c1e1-2c35-47c0-864f-d1e9fea57579",
+  "fetchedAt": "2026-10-02T21:27:38.178133+00:00",
+  "extractedAt": "2026-10-02T21:27:38.523180+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Devin — Style Reference",
+  "htmlSha256": "65b8400814d1ce0103d943e40c6fde58965839a1c14188e531a7cbda7f014cb8",
+  "cache": ".cache/e9a1c1e1-2c35-47c0-864f-d1e9fea57579.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "871c0e76b02307461ffd8eda3d20657c51753b0c23c4a8460d72b0f03a03bc96",
+      "bytes": 19122,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/600c0448-f392-423c-b27a-c989c83ccdd4.jpg",
+    "fetchedAt": "2026-10-02T21:27:40.036042+00:00",
+    "sha256": "e9b8534d6d3c4e31a313fdeaafde7bcc4e0feaee4ac815c942173d724cb56af0",
+    "bytes": 124092,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

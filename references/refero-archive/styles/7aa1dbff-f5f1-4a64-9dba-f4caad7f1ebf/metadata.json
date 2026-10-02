@@ -1,0 +1,29 @@
+{
+  "styleId": "7aa1dbff-f5f1-4a64-9dba-f4caad7f1ebf",
+  "sourceUrl": "https://styles.refero.design/style/7aa1dbff-f5f1-4a64-9dba-f4caad7f1ebf",
+  "fetchedAt": "2026-10-02T21:27:18.009729+00:00",
+  "extractedAt": "2026-10-02T21:27:18.074087+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "1X Tech — Style Reference",
+  "htmlSha256": "b7294ba5be498e043e9a36634438492d2c9cd9c38d87d4676049d03ce888edca",
+  "cache": ".cache/7aa1dbff-f5f1-4a64-9dba-f4caad7f1ebf.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "85ef5791ff2304b6eab93ad03e7b6d57b11087971971bc9b62d6d54cb631344e",
+      "bytes": 19487,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/12eca495-d8a2-403a-a592-852828002ce4.jpg",
+    "fetchedAt": "2026-10-02T21:27:20.046246+00:00",
+    "sha256": "927dd7da42210938fc34919c81c66aae691d54851b23802c13566487f3f4eb97",
+    "bytes": 223799,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "10654184-eb92-4b75-a7af-bd92bc6cdc5c",
+  "sourceUrl": "https://styles.refero.design/style/10654184-eb92-4b75-a7af-bd92bc6cdc5c",
+  "fetchedAt": "2026-10-02T21:57:26.181397+00:00",
+  "extractedAt": "2026-10-02T21:57:26.203868+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Doppler — Style Reference",
+  "htmlSha256": "08c4948f7042059affef966210160fde59eeb4eac1b581f750a29d5c109580f3",
+  "cache": ".cache/10654184-eb92-4b75-a7af-bd92bc6cdc5c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1d0db3e5eac4e847e2f676bc7a97c6cbf65f30c57ab85245630d3b25284a65ba",
+      "bytes": 21013,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/eec1d1aa-2b07-40d0-9171-b76c4f9b5099.jpg",
+    "fetchedAt": "2026-10-02T21:57:28.235037+00:00",
+    "sha256": "5b7843d1aa006869a3ecb79054d5ee3959e8715ac372b065608d49cf39122c34",
+    "bytes": 104955,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

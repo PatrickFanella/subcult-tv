@@ -1,0 +1,29 @@
+{
+  "styleId": "e85a82b1-c70e-42de-8c42-4bd95dd5e047",
+  "sourceUrl": "https://styles.refero.design/style/e85a82b1-c70e-42de-8c42-4bd95dd5e047",
+  "fetchedAt": "2026-10-02T21:43:29.614582+00:00",
+  "extractedAt": "2026-10-02T21:43:29.656005+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Zoox — Style Reference",
+  "htmlSha256": "e03e8eb4e2b9548459d53469403bd1b429da45108f353b9fa0a603a94c764e7e",
+  "cache": ".cache/e85a82b1-c70e-42de-8c42-4bd95dd5e047.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f2b0f32065d6907c32e317194819ac5bdfa0a6295e8dba19aca0123049babea0",
+      "bytes": 20392,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/51bf44d2-0555-4bcf-bedf-77eee38ab5a4.jpg",
+    "fetchedAt": "2026-10-02T21:43:31.583370+00:00",
+    "sha256": "03bb6e6568a2d33c7deedb8cc36e5b573c155a771ee322a0a530298392045ffa",
+    "bytes": 151691,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

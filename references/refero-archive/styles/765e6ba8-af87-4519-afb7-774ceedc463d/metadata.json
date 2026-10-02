@@ -1,0 +1,29 @@
+{
+  "styleId": "765e6ba8-af87-4519-afb7-774ceedc463d",
+  "sourceUrl": "https://styles.refero.design/style/765e6ba8-af87-4519-afb7-774ceedc463d",
+  "fetchedAt": "2026-10-02T21:50:49.512522+00:00",
+  "extractedAt": "2026-10-02T21:50:49.565115+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aplós — Style Reference",
+  "htmlSha256": "fe371450302e198edbbb90ef38900701f5438c3946e222caa8c8f84e61b43b9d",
+  "cache": ".cache/765e6ba8-af87-4519-afb7-774ceedc463d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c91e74ba46c71c03ca27ac561eeb743a7a62534808b7ed5138367d26498e9a2e",
+      "bytes": 17306,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/eb121d99-089b-4ca2-a946-f73b2f1bf5db.jpg",
+    "fetchedAt": "2026-10-02T21:50:51.584344+00:00",
+    "sha256": "e660c9202dafee0554119f2c3b82c633b79ebf9dc6c2ecfed66e9fb2c335b4b5",
+    "bytes": 107493,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

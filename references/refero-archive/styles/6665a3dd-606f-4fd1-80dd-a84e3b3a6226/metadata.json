@@ -1,0 +1,29 @@
+{
+  "styleId": "6665a3dd-606f-4fd1-80dd-a84e3b3a6226",
+  "sourceUrl": "https://styles.refero.design/style/6665a3dd-606f-4fd1-80dd-a84e3b3a6226",
+  "fetchedAt": "2026-10-02T21:45:09.506288+00:00",
+  "extractedAt": "2026-10-02T21:45:09.539458+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hyper Tria — Style Reference",
+  "htmlSha256": "24a5a6d6d4576052469ad2680367cf49c439e01dd71b1edcb8e8e5bcdd8315fd",
+  "cache": ".cache/6665a3dd-606f-4fd1-80dd-a84e3b3a6226.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fb7d38590d29f76518d823f76995131ba393aab1e3d59514a5981581d21958be",
+      "bytes": 21387,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d80ebc8d-4656-47eb-a277-b535ed9a37ee.jpg",
+    "fetchedAt": "2026-10-02T21:45:11.604182+00:00",
+    "sha256": "e74d91434db7428ba43c3884d66ac949fbb1edd2c9b2426d59948acf51668f00",
+    "bytes": 152846,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

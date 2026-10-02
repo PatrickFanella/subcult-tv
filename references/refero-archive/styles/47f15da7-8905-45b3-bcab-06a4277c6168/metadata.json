@@ -1,0 +1,29 @@
+{
+  "styleId": "47f15da7-8905-45b3-bcab-06a4277c6168",
+  "sourceUrl": "https://styles.refero.design/style/47f15da7-8905-45b3-bcab-06a4277c6168",
+  "fetchedAt": "2026-10-02T21:54:18.221043+00:00",
+  "extractedAt": "2026-10-02T21:54:18.266879+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hungry Tiger — Style Reference",
+  "htmlSha256": "cc131ec679b2cac1a5c518c8d57d1c076e813cffd0c3ec45aa8d584004690a16",
+  "cache": ".cache/47f15da7-8905-45b3-bcab-06a4277c6168.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b5ec6f08218ce7fbfc124ceb69ef8779f172bd42b9ef73e6852f7c55e0dc226b",
+      "bytes": 18790,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b465c17d-9622-4925-ac45-524e25a75563.jpg",
+    "fetchedAt": "2026-10-02T21:54:20.239760+00:00",
+    "sha256": "6c78ca94282784c6cd37674908b3e9c853f31032b6c16cf4d229cff744d14457",
+    "bytes": 139406,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

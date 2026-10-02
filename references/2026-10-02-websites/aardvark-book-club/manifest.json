@@ -1,0 +1,98 @@
+{
+  "site": "aardvark-book-club",
+  "source": "https://www.aardvarkbookclub.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:14:50.181Z",
+      "url": "https://www.aardvarkbookclub.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "scrolled",
+      "observation": "evidence/scrolled.json",
+      "image": "images/scrolled.png",
+      "capturedAt": "2026-10-02T20:20:06.749Z",
+      "url": "https://www.aardvarkbookclub.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": "images/settled.png",
+      "capturedAt": "2026-10-02T20:20:05.605Z",
+      "url": "https://www.aardvarkbookclub.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "d4a2272cff5aab2b705aad602b01b841e4ceca205bd29081989c44a6a4a583e2",
+      "bytes": 5588
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "ff0be59295ddf28c3fd63cee15846b15d700922b052d6758ad30c49f0ae94901",
+      "bytes": 1320
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "7d62abbb27fb06f8f74ad69c566f2ff9ba67c99ac0a0e037534fd7b8974c3574",
+      "bytes": 46688
+    },
+    {
+      "path": "evidence/scrolled.json",
+      "sha256": "fe4e1f7d9a37866358fc83519c9a90f86b50cc66a9d4d1b24dbd6e915ceae95e",
+      "bytes": 45973
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "74b6c63ebb1fcd702772a695dcd1f09fa56cc8e2c3c89a7216124697eafb0d7e",
+      "bytes": 46003
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "5764b4bec8868d7677325dd439aa2f00c91ab41fe376e15201c242e3b2c08a0a",
+      "bytes": 10194
+    },
+    {
+      "path": "images/scrolled.png",
+      "sha256": "9f64ea6bddfa281fd0f4761ea7130356c76e3294a19003dcb950f25412ea6fd8",
+      "bytes": 15749
+    },
+    {
+      "path": "images/settled.png",
+      "sha256": "8a4bf635da12c713059a02858061041b232033648a14a935bff26a7d67c1ec26",
+      "bytes": 7991
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "da69cd9b9d92bec765220404c91f7c8f1cf5e122bcd6498975c58c8c8e155c86",
+      "bytes": 153
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "0366dbd9269bb984432796ad99da7fde67e061bdf9568e55412945078822b13a",
+      "bytes": 11641
+    }
+  ]
+}

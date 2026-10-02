@@ -1,0 +1,29 @@
+{
+  "styleId": "11cfc460-807b-42c5-b10a-7b042c60f3e8",
+  "sourceUrl": "https://styles.refero.design/style/11cfc460-807b-42c5-b10a-7b042c60f3e8",
+  "fetchedAt": "2026-10-02T21:58:10.410991+00:00",
+  "extractedAt": "2026-10-02T21:58:10.471557+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Websmith Studio — Style Reference",
+  "htmlSha256": "ea72a8032a358d1707b2684d27384763bc3dd2ca0fdcba86ce513ab0e32b867a",
+  "cache": ".cache/11cfc460-807b-42c5-b10a-7b042c60f3e8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "dd1a84e9567dfdeb90e05b036a50707ce7c1b61c6a1c6e9a01ecc6df4d6e8bc2",
+      "bytes": 17704,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6f587608-ed1f-4476-ac9c-f8407715f2c4.jpg",
+    "fetchedAt": "2026-10-02T21:58:12.223822+00:00",
+    "sha256": "27249391c08bddfff50558963e0afb4e95b6a8cfc695fae812fdf1a3666a4b54",
+    "bytes": 89651,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

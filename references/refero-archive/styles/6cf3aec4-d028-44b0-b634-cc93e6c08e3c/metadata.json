@@ -1,0 +1,29 @@
+{
+  "styleId": "6cf3aec4-d028-44b0-b634-cc93e6c08e3c",
+  "sourceUrl": "https://styles.refero.design/style/6cf3aec4-d028-44b0-b634-cc93e6c08e3c",
+  "fetchedAt": "2026-10-02T21:38:26.023435+00:00",
+  "extractedAt": "2026-10-02T21:38:26.056445+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "WGSN — Style Reference",
+  "htmlSha256": "5fc5992d7dc95964c4cf25f11905e457e006ef582b8893fa60ac0470040c0c66",
+  "cache": ".cache/6cf3aec4-d028-44b0-b634-cc93e6c08e3c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "98698dc30af3ea3588130f372501b43897dee515cdc60eb7adc8c949d645f84e",
+      "bytes": 25179,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7003ba5a-3051-4c5d-b32d-087dcf310d66.jpg",
+    "fetchedAt": "2026-10-02T21:38:28.061916+00:00",
+    "sha256": "f3c87ff9195a7bfa1c67c6431ff2c7c228eab4aecd3319bd42868cbc08fd9916",
+    "bytes": 101735,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

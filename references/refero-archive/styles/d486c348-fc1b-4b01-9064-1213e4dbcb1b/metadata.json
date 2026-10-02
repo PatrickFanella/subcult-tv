@@ -1,0 +1,29 @@
+{
+  "styleId": "d486c348-fc1b-4b01-9064-1213e4dbcb1b",
+  "sourceUrl": "https://styles.refero.design/style/d486c348-fc1b-4b01-9064-1213e4dbcb1b",
+  "fetchedAt": "2026-10-02T21:40:26.036203+00:00",
+  "extractedAt": "2026-10-02T21:40:26.060073+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Doo — Style Reference",
+  "htmlSha256": "3f4f9354dbdf9e82bf7fb9adc8818e46c140b29e1c90745d03ba63c3c1b93261",
+  "cache": ".cache/d486c348-fc1b-4b01-9064-1213e4dbcb1b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "262f68570b065034b9b705162591c22d6466b50dd97db6161a47533a15fc448b",
+      "bytes": 16973,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3bedebd8-b4c4-47b3-af68-6ff14aa1bc6f.jpg",
+    "fetchedAt": "2026-10-02T21:40:27.991649+00:00",
+    "sha256": "4474431f032eb48f2f4f230a02f30c06b7f9221d020a36e2319a387fcda9873d",
+    "bytes": 44335,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

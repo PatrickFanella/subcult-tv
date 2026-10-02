@@ -1,0 +1,29 @@
+{
+  "styleId": "f24daf3a-d43f-4dec-85a9-8ac1d5148a03",
+  "sourceUrl": "https://styles.refero.design/style/f24daf3a-d43f-4dec-85a9-8ac1d5148a03",
+  "fetchedAt": "2026-10-02T21:32:26.064303+00:00",
+  "extractedAt": "2026-10-02T21:32:26.085709+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vercel — Style Reference",
+  "htmlSha256": "3b0d3a430e813cceb16c9678c45ca81785ab16844d1343bb70bd60ffae31beed",
+  "cache": ".cache/f24daf3a-d43f-4dec-85a9-8ac1d5148a03.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5eeceef1cadda378984df7a078b2313014b252cabf337891189ffc2e6ed75ac8",
+      "bytes": 21396,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7cc65532-d148-43e4-be5a-c50a0e13dc16.jpg",
+    "fetchedAt": "2026-10-02T21:32:27.955194+00:00",
+    "sha256": "efc42fc8c7f49565866f757cc205a16b623c6c70f9e5c1eddb205fc5c8172c61",
+    "bytes": 42196,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

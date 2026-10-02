@@ -1,0 +1,29 @@
+{
+  "styleId": "4bcd0728-0d28-4835-ba9f-d61554f797b1",
+  "sourceUrl": "https://styles.refero.design/style/4bcd0728-0d28-4835-ba9f-d61554f797b1",
+  "fetchedAt": "2026-10-02T21:46:29.532593+00:00",
+  "extractedAt": "2026-10-02T21:46:29.585280+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dot Inc. — Style Reference",
+  "htmlSha256": "2a3d4b0ab8caa856ad4fd3640eb8187acfcc5d28958fe25f8db4d9e21911bfde",
+  "cache": ".cache/4bcd0728-0d28-4835-ba9f-d61554f797b1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "94133350e75a0ebdf6c768481f1987175b327e7d233f9da6a5e3c33de0b1a6d7",
+      "bytes": 17431,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/37538068-4f2b-4be9-b23b-920875b25a4f.jpg",
+    "fetchedAt": "2026-10-02T21:46:31.580605+00:00",
+    "sha256": "267ebe65a0107506d73b44c33aae16f378101d8e0ed4704dd32f10b42be8d459",
+    "bytes": 83342,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

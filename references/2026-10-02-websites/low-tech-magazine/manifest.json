@@ -1,0 +1,52 @@
+{
+  "site": "low-tech-magazine",
+  "source": "https://solar.lowtechmagazine.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:14:44.589Z",
+      "url": "chrome-error://chromewebdata/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Browser error page; not site design"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "8c4494e86f70fce85968cb1d577e617ee18666dc00798f90798508284e074979",
+      "bytes": 3763
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "6e12edec4040cacc088ee1e6db0ebbd6303d5c7e08088f94b3ca752d52f17304",
+      "bytes": 1557
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "35696df99b0a73b17f4271c7d2698fb12d291bdee64c4a586c3522b009afa58c",
+      "bytes": 1633
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "da93b9272a19f39954c54c26dcc74aaeeb5c2ab40009a7b77475bdaae1f9c151",
+      "bytes": 4667
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "da69cd9b9d92bec765220404c91f7c8f1cf5e122bcd6498975c58c8c8e155c86",
+      "bytes": 153
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "4f90035e42df25c269474b32bc7a2271c233275627ea51905e8fc79995ba5580",
+      "bytes": 1594
+    }
+  ]
+}

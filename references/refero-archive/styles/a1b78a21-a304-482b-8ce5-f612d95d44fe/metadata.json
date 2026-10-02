@@ -1,0 +1,29 @@
+{
+  "styleId": "a1b78a21-a304-482b-8ce5-f612d95d44fe",
+  "sourceUrl": "https://styles.refero.design/style/a1b78a21-a304-482b-8ce5-f612d95d44fe",
+  "fetchedAt": "2026-10-02T21:36:02.105236+00:00",
+  "extractedAt": "2026-10-02T21:36:02.148451+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ciridae — Style Reference",
+  "htmlSha256": "f14047d79aeaba1f2b71154952032e0322538e88a73936da2c249c223977aa2b",
+  "cache": ".cache/a1b78a21-a304-482b-8ce5-f612d95d44fe.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8f81a7363ee7acff2e7b9c5e028fef56af96e4ac9cd37c683e543b137fb2392b",
+      "bytes": 21858,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7e256b4f-1581-4013-bc62-e0e2c17472e8.jpg",
+    "fetchedAt": "2026-10-02T21:36:03.994609+00:00",
+    "sha256": "554b48d1bd24d8b9d07d654c80655656eb7b04494cb57802faac4222e7808af4",
+    "bytes": 45906,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

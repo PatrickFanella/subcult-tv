@@ -1,0 +1,10 @@
+/* Observed values, not canonical brand roles. See DESIGN.md and tokens.json. */
+:root {
+  --observed-color-01: rgb(21, 153, 87);
+  --observed-color-02: rgb(21, 87, 153);
+  --observed-color-03: rgba(255, 255, 255, 0.8);
+  --observed-color-04: rgba(255, 255, 255, 0.08);
+  --observed-color-05: rgb(255, 255, 255);
+  --observed-color-06: rgb(96, 108, 113);
+  --observed-font-01: "SF Pro Display", -apple-system, "system-ui", "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+}

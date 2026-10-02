@@ -1,0 +1,29 @@
+{
+  "styleId": "4887c681-d4e6-41d3-b83c-5650cf925ee9",
+  "sourceUrl": "https://styles.refero.design/style/4887c681-d4e6-41d3-b83c-5650cf925ee9",
+  "fetchedAt": "2026-10-02T21:47:45.524372+00:00",
+  "extractedAt": "2026-10-02T21:47:45.576453+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vanmoof — Style Reference",
+  "htmlSha256": "34cc56bb21e2fb014b912553575cd00f080e9ece371306598b5678653029ad98",
+  "cache": ".cache/4887c681-d4e6-41d3-b83c-5650cf925ee9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ea4c508b634d75579a4e0a7533cfe337ad6eebdadfb24cbda514c7ea31e00d34",
+      "bytes": 22202,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1741da89-0373-4275-9792-174bef1a9136.jpg",
+    "fetchedAt": "2026-10-02T21:47:47.540670+00:00",
+    "sha256": "9f485e717f7b6ee152fe7f07e686049b9ce2beea184d1752d77752b64e1c8a8a",
+    "bytes": 102406,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

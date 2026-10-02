@@ -1,0 +1,29 @@
+{
+  "styleId": "e8eda526-d686-4e45-a60d-61b6503a8eda",
+  "sourceUrl": "https://styles.refero.design/style/e8eda526-d686-4e45-a60d-61b6503a8eda",
+  "fetchedAt": "2026-10-02T21:51:25.641876+00:00",
+  "extractedAt": "2026-10-02T21:51:25.690450+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Daniël van der Winden — Style Reference",
+  "htmlSha256": "f9dc835640bc26fae55dd82230e99cbcd2f45d5d71a9d46f4381fad2d4e289af",
+  "cache": ".cache/e8eda526-d686-4e45-a60d-61b6503a8eda.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "06277d3c032622944d4a4bb0856c3dc6a78a005562996bbd227020fd07e6c5c9",
+      "bytes": 16672,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/52a53832-06d7-47f2-8b33-6505699eeaac.jpg",
+    "fetchedAt": "2026-10-02T21:51:27.603908+00:00",
+    "sha256": "fe8ad6f36e34928e8e520aedc2401ed70a7929a9f3e10cfad89b64c9eeea2966",
+    "bytes": 104578,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "8ce08850-085e-4954-a2f0-16acfb8dce23",
+  "sourceUrl": "https://styles.refero.design/style/8ce08850-085e-4954-a2f0-16acfb8dce23",
+  "fetchedAt": "2026-10-02T21:54:02.460811+00:00",
+  "extractedAt": "2026-10-02T21:54:02.494114+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tapbots — Style Reference",
+  "htmlSha256": "6e81417353dc755fffb88424a61207cee61aa986d7bcd56767b8b900426d7d81",
+  "cache": ".cache/8ce08850-085e-4954-a2f0-16acfb8dce23.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9c8ec5dad23ffeb8441678b18ced9f78b348e58172626da40d36190c35803454",
+      "bytes": 20556,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/796dcb54-7d35-4889-990d-0da4998fd461.jpg",
+    "fetchedAt": "2026-10-02T21:54:04.250980+00:00",
+    "sha256": "2c084d80e91fe8415ebaa81215ba7b9bb58ede6b0bb427870d4e206ca52af820",
+    "bytes": 90796,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

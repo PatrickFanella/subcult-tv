@@ -1,0 +1,70 @@
+{
+  "site": "yuta-abe",
+  "source": "https://yutaabe.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:17:31.949Z",
+      "url": "https://yutaabe.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:25:55.198Z",
+      "url": "https://yutaabe.com/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "e74b0fde27584b3236c81d3020517605903a7863002d01c41327c579a1eab5b5",
+      "bytes": 4311
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "9693d2e16e741418496afaa352e5e271451c8c5f4a1c6b2e281e7625c0e66029",
+      "bytes": 1198
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "1153bc577d10e86476bdec3399cdc484086df5611e0ee39f8702e234e8b18b67",
+      "bytes": 6245
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "7d9019e1e2ee4ddf5ee44e12a6d372f26c2bb007c4f59f8998c70dc5582bd9c5",
+      "bytes": 5854
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "e548cea951c03742a3e8a71c295051097af94e72553be0d6a61713d114875726",
+      "bytes": 4001
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "2ec00c413317c89931bf412c2fa534f5cb133c7c4de4875b15afc5c82e924f2c",
+      "bytes": 302
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "45686a26c1bd12c0e673cac0b65e19f933c435bb0edc7a30b6d261358eb16cd5",
+      "bytes": 5368
+    }
+  ]
+}

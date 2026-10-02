@@ -1,0 +1,29 @@
+{
+  "styleId": "bce52fd3-ac16-4e67-a45f-78bfc2350aad",
+  "sourceUrl": "https://styles.refero.design/style/bce52fd3-ac16-4e67-a45f-78bfc2350aad",
+  "fetchedAt": "2026-10-02T21:36:50.057479+00:00",
+  "extractedAt": "2026-10-02T21:36:50.098807+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tripolis-Park™ — Style Reference",
+  "htmlSha256": "1c4a5d9de59a39aae78e4d2a49aa09b1b1e59867b1eecbf33ba313cd5023fa98",
+  "cache": ".cache/bce52fd3-ac16-4e67-a45f-78bfc2350aad.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "36b345c675e762682d61694b3cd8cf183801d4f0b0071b6b49d1f8b78c0107b2",
+      "bytes": 18484,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/06324554-a8cc-4b27-bc53-ce256ead8469.jpg",
+    "fetchedAt": "2026-10-02T21:36:52.056102+00:00",
+    "sha256": "5fc18e03001845c2de09df1332d548daf614f060239e700edbd3dd3f094df713",
+    "bytes": 42090,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

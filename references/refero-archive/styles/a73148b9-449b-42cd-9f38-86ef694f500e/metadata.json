@@ -1,0 +1,29 @@
+{
+  "styleId": "a73148b9-449b-42cd-9f38-86ef694f500e",
+  "sourceUrl": "https://styles.refero.design/style/a73148b9-449b-42cd-9f38-86ef694f500e",
+  "fetchedAt": "2026-10-02T21:27:10.033472+00:00",
+  "extractedAt": "2026-10-02T21:27:10.079037+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Apple — Style Reference",
+  "htmlSha256": "0c718b8363f0604865c4e7cf2f631fa0858d1da8a05779993cc72bf15357dbf9",
+  "cache": ".cache/a73148b9-449b-42cd-9f38-86ef694f500e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a0de8225fb315bc27b15cf9b8df17667a21e6007c83e45dd123be66b6bd9f5dd",
+      "bytes": 22019,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b7eb04ff-0f43-46d9-bac8-0c010837a0b6.jpg",
+    "fetchedAt": "2026-10-02T21:27:12.116674+00:00",
+    "sha256": "0827d8fcd5e8544060f28383f3b474252c41b337ac6aebf09cff905e71cf7058",
+    "bytes": 104818,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

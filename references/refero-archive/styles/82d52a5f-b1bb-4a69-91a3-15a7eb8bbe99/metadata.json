@@ -1,0 +1,29 @@
+{
+  "styleId": "82d52a5f-b1bb-4a69-91a3-15a7eb8bbe99",
+  "sourceUrl": "https://styles.refero.design/style/82d52a5f-b1bb-4a69-91a3-15a7eb8bbe99",
+  "fetchedAt": "2026-10-02T21:30:22.023762+00:00",
+  "extractedAt": "2026-10-02T21:30:22.074433+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ThoughtLab — Style Reference",
+  "htmlSha256": "ea0b72627ce0d8f9930adb084e8719ef57c29ead70c5f71e904f8faa7540e139",
+  "cache": ".cache/82d52a5f-b1bb-4a69-91a3-15a7eb8bbe99.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "217eefc18f5732addc49a9f2a8310927adce7273f8320b843e635b9157685209",
+      "bytes": 16677,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2de089ec-c0c2-475f-8c62-75b5b81933a5.jpg",
+    "fetchedAt": "2026-10-02T21:30:24.277598+00:00",
+    "sha256": "ae7cc545e600d0d6b99fb40699a9e66e7804f3034d0c2870404e112fe146f08b",
+    "bytes": 81326,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "47cb86b6-cb2d-41c8-94ba-8607cd7c41cd",
+  "sourceUrl": "https://styles.refero.design/style/47cb86b6-cb2d-41c8-94ba-8607cd7c41cd",
+  "fetchedAt": "2026-10-02T21:32:54.010856+00:00",
+  "extractedAt": "2026-10-02T21:32:54.031702+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Claude — Style Reference",
+  "htmlSha256": "3b5ad6b51dd319ea299624b562835d0b98893aeb8382d409c6284e56fc3f2229",
+  "cache": ".cache/47cb86b6-cb2d-41c8-94ba-8607cd7c41cd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "582f4cb82fc2df321fd83b4fad33bc7ca9a96a369241d34309dd309b8c7c9f42",
+      "bytes": 19799,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/faab4ca5-166c-49b3-893b-fd2eb8f0647d.jpg",
+    "fetchedAt": "2026-10-02T21:32:56.139882+00:00",
+    "sha256": "3231abcb32a81bfe8678930c5e1566a924bde82622a0bb195d670eb7f0e01767",
+    "bytes": 103087,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

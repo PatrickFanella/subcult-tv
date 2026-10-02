@@ -1,0 +1,29 @@
+{
+  "styleId": "0057e55a-8a66-4ffc-9c21-f0b757e580b3",
+  "sourceUrl": "https://styles.refero.design/style/0057e55a-8a66-4ffc-9c21-f0b757e580b3",
+  "fetchedAt": "2026-10-02T21:50:13.547680+00:00",
+  "extractedAt": "2026-10-02T21:50:13.582254+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Haus Otto — Style Reference",
+  "htmlSha256": "c5f368c54e2cafd3efcc1eed480b388e3369bd9545ee2c29c20c5a65b9c3420e",
+  "cache": ".cache/0057e55a-8a66-4ffc-9c21-f0b757e580b3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6503a9d8b65badd8d15f48f1d8bc1b846e78feee04808f292b07c7d5a0842428",
+      "bytes": 12696,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d31d3fc2-8c8f-41b2-8824-789cb63090f2.jpg",
+    "fetchedAt": "2026-10-02T21:50:15.464373+00:00",
+    "sha256": "cc1973c1a80661a1d42c3377a020743cea59d877891f4a2ce82b3ce013696ebf",
+    "bytes": 42661,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

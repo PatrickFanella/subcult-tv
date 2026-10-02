@@ -1,0 +1,29 @@
+{
+  "styleId": "52a007ed-ad1b-46a6-bd44-b76f91df6d0c",
+  "sourceUrl": "https://styles.refero.design/style/52a007ed-ad1b-46a6-bd44-b76f91df6d0c",
+  "fetchedAt": "2026-10-02T21:35:54.024234+00:00",
+  "extractedAt": "2026-10-02T21:35:54.129270+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ChatGPT — Style Reference",
+  "htmlSha256": "59b57679bf9e792d68745bfee550f24823753be90bc2df60053d842bf775b6f0",
+  "cache": ".cache/52a007ed-ad1b-46a6-bd44-b76f91df6d0c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bf148a745ed97a2b9ffab56686c036a53c45c891b6742376cad10fc7e0f05bbb",
+      "bytes": 15485,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0973664d-af5d-482b-b722-779b5921eb5e.jpg",
+    "fetchedAt": "2026-10-02T21:35:55.987870+00:00",
+    "sha256": "044d24d2a27367d0d1db28676650d152724562ec31591beec8952c5232c85b23",
+    "bytes": 54545,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

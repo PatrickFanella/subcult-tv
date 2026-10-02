@@ -1,0 +1,29 @@
+{
+  "styleId": "1cb31aee-608e-4dec-a44d-5745e4fd6bab",
+  "sourceUrl": "https://styles.refero.design/style/1cb31aee-608e-4dec-a44d-5745e4fd6bab",
+  "fetchedAt": "2026-10-02T21:56:02.385901+00:00",
+  "extractedAt": "2026-10-02T21:56:02.406927+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "601 Inc. — Style Reference",
+  "htmlSha256": "17709f59758521b5c43dfef653b692047703252f96a3cf252ca7d5fa9905172a",
+  "cache": ".cache/1cb31aee-608e-4dec-a44d-5745e4fd6bab.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "47c72b2704b9956bbf5bfe7d31104a29e8353883a14d5bed61e79531cf9b826e",
+      "bytes": 14057,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0ed174f0-b63d-4fb4-8d05-4dabcc3f171d.jpg",
+    "fetchedAt": "2026-10-02T21:56:04.192205+00:00",
+    "sha256": "913b5602178f9fc29231d372ccca63cd7238805db39efb9ffd14978d0325f50d",
+    "bytes": 52698,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

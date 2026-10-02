@@ -1,0 +1,98 @@
+{
+  "site": "huuuuue",
+  "source": "https://www.huuuuue.agency/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:14:56.525Z",
+      "url": "https://www.huuuuue.agency/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "scrolled",
+      "observation": "evidence/scrolled.json",
+      "image": "images/scrolled.png",
+      "capturedAt": "2026-10-02T20:20:24.213Z",
+      "url": "https://www.huuuuue.agency/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": "images/settled.png",
+      "capturedAt": "2026-10-02T20:20:22.967Z",
+      "url": "https://www.huuuuue.agency/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "bd74555a54e197cc9329b6e4fbf053ae79bd7e02725eb7094266c879ca3665db",
+      "bytes": 5582
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "7f0bed35b1fc17fdff9d870f6abb83a41064d2886b931beb8d638a05074a2a4a",
+      "bytes": 1300
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "6543c6554be4cc01ee22d03a5110bc64eb133c2f19bd4d6563723ff8c3b56dfd",
+      "bytes": 39442
+    },
+    {
+      "path": "evidence/scrolled.json",
+      "sha256": "c578fdf6ee58022c3dc8c6fcaa6674a0341735383421e3cdc3789378b24f4e7e",
+      "bytes": 39051
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "f03b6505e91e5de2cb026ab62b843dec6cbc81a40fe2723e64e918de5b2e4fad",
+      "bytes": 39081
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "ece2fb67bce77e26df2abe67ba46c42c226f86c6efccc04b127dc237e4d341d4",
+      "bytes": 3942
+    },
+    {
+      "path": "images/scrolled.png",
+      "sha256": "de1b7963473aafcdceec1280fcc4da7a0fbc00ba606c879e06a82dc5e8a25ad5",
+      "bytes": 16087
+    },
+    {
+      "path": "images/settled.png",
+      "sha256": "0f87ab9fcc7b3ee3997ff4da9a21ff5848a1eb9a168454fed02f182d3e6f6f6a",
+      "bytes": 40838
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "0e0638d37e7eb9fb29091be88d14ff13f50383cd3c6555773007ceef5e8ce1aa",
+      "bytes": 276
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "961cc7d56bc611bff28cf119d0683a4e9fd2f3502afa81d873f6a0224c1ec33f",
+      "bytes": 12739
+    }
+  ]
+}

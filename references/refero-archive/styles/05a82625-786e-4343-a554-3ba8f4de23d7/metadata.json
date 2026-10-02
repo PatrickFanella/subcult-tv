@@ -1,0 +1,29 @@
+{
+  "styleId": "05a82625-786e-4343-a554-3ba8f4de23d7",
+  "sourceUrl": "https://styles.refero.design/style/05a82625-786e-4343-a554-3ba8f4de23d7",
+  "fetchedAt": "2026-10-02T21:48:09.771033+00:00",
+  "extractedAt": "2026-10-02T21:48:09.812188+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "NEVERHACK — Style Reference",
+  "htmlSha256": "51c4228124e2295d37ff6f3079b69f2ae6e66b3abdb71436ddaa5f708ed23280",
+  "cache": ".cache/05a82625-786e-4343-a554-3ba8f4de23d7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e3dc9e7ae0f89bf3f410f1e364b73d7e494acfd539939baa85499b331dd729f0",
+      "bytes": 27507,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/afb9a424-dc1e-4de2-bb5e-7adffe22c381.jpg",
+    "fetchedAt": "2026-10-02T21:48:11.538891+00:00",
+    "sha256": "201300208e7e470a1ba928671fd98096872714a6bce38e5070b2ef279a3ff91d",
+    "bytes": 79022,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

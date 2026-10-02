@@ -1,0 +1,29 @@
+{
+  "styleId": "e8c4206d-9a2a-4c08-9524-6f14a25e792f",
+  "sourceUrl": "https://styles.refero.design/style/e8c4206d-9a2a-4c08-9524-6f14a25e792f",
+  "fetchedAt": "2026-10-02T21:57:34.166883+00:00",
+  "extractedAt": "2026-10-02T21:57:34.192967+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "The Verge — Style Reference",
+  "htmlSha256": "00fa2c3803b3d883f37d918fd4f4c9b70eada4f9228f04da37f7e477c497791e",
+  "cache": ".cache/e8c4206d-9a2a-4c08-9524-6f14a25e792f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "479a9ff1143890086dba232468c00fcbfdaf8d94edff7f5543f3d1212f02c6ad",
+      "bytes": 23091,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/288ca6f0-265e-43d1-b2ac-6e5f70f4adca.jpg",
+    "fetchedAt": "2026-10-02T21:57:36.252875+00:00",
+    "sha256": "bc2f0e8019fd910c47db9ff260f74fa1232af7ea7d8fd8fe3105c5729c30678f",
+    "bytes": 140887,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

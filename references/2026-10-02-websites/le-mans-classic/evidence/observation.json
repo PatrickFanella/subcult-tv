@@ -1,0 +1,642 @@
+{
+  "id": "le-mans-classic",
+  "name": "Le Mans Classic",
+  "requestedUrl": "https://lemansclassic.richardmille.com/en",
+  "navigation": {
+    "available": true,
+    "visible": false,
+    "tabId": "tab_g",
+    "url": "https://lemansclassic.richardmille.com/en",
+    "title": "Le Mans Classic",
+    "loading": false,
+    "viewportSetting": {
+      "_tag": "freeform",
+      "width": 1280,
+      "height": 800
+    },
+    "viewport": {
+      "width": 1402,
+      "height": 876
+    }
+  },
+  "screenshotPath": "/home/onnwee/.t3/userdata/browser-artifacts/browser-screenshot-lemansclassic-richardmille-com-muremqkl-5cd4f36a.png",
+  "bodyText": "BELOW THE LINE\nBELOW THE LINE\nA PHOTOGRAPHIC TALE\nA CLASSIC BOOTLEG\nAT LE MANS CLASSIC 2025\nBY HEREME CHRONICLES\n(ABOUT)\n(FR)\nBELOW THE LINE\n(SOUND: OFF)\n(CHAPTERS)\n(01)\nMORNING\nA11 MOTORWAY\n\nParis fades into the mist in the rear-view mirror. My gear's in the boot: two Canon cameras, four lenses, a cobra flash, a gold reflector I'll never use.\n\nAnd my laminated, gold accreditation card, the photo showing an unshaven me with the eyes of a guy who went to bed at 3am.\n\nSCROLL TO DISCOVER\n\n\"\nOFFICIAL\nPHOTOGRAPHER\n—\nALL\nAREA\nACCESS\n\"\nFIRST CONTACT\nWITH\nTHE ORGANISERS\n\n\"Insurance problem, sir. Your accreditation doesn't cover track access. Sorry about that.\"\n\nA three-hour drive only to end up with the tourists behind the barriers.\n\nThe 'official' photographers are already in the pits.\n\nME?\n\nI'M IN THE SHIT\n\nFIRST\n\nA red Ferrari, number 9, doing 125 mph past the stands.\n\nSHOT\n\nClassic, predictable. But I see something else in my viewfinder. A spectator in his vintage '70s helmet, absolute concentration on his weathered face.\n\nHe looks more authentic than all the drivers put together. More passion in his eyes than in a thousand press releases.\n\n9:15\n(07)\nCHANGE\n\nI decide that if I can't photograph the race, I'm at least going to shoot what's happening behind the scenes and the people behind all those machines.\n\nFIRST LESSON OF THE DAY\n\nSOMETIMES IT'S WHEN THEY WON'T LET YOU IN THAT YOU FIND THE GOOD STORIES.\n\nAND SOMETIMES IT'S WHEN EVERYTHING GOES PEAR-SHAPED THAT YOU GET THE BEST SHOTS.",
+  "canvas": [],
+  "capturedAt": "2026-10-02T20:17:22.545Z",
+  "colors": [
+    [
+      "rgb(22, 22, 22)",
+      16
+    ],
+    [
+      "rgb(255, 229, 0)",
+      4
+    ],
+    [
+      "rgb(255, 255, 255)",
+      2
+    ]
+  ],
+  "fontFaces": [
+    "@font-face { font-display: swap; font-family: Arges-Condensed; font-style: normal; font-weight: 400; src: url(\"../fonts/Arges-Condensed/Arges-CondensedBlack.woff2\") format(\"woff2\"), url(\"../fonts/Arges-Condensed/Arges-CondensedBlack.woff\") format(\"woff\"); }",
+    "@font-face { font-display: swap; font-family: DieGroteskB; font-style: normal; font-weight: 400; src: url(\"../fonts/DieGrotesk/die-grotesk-b-regular.woff2\") format(\"woff2\"); }",
+    "@font-face { font-display: swap; font-family: DieGroteskC; font-style: normal; font-weight: 400; src: url(\"../fonts/DieGrotesk/die-grotesk-c-regular.woff2\") format(\"woff2\"); }",
+    "@font-face { font-display: swap; font-family: DieGroteskC; font-style: italic; font-weight: 400; src: url(\"../fonts/DieGrotesk/die-grotesk-c-italic.woff2\") format(\"woff2\"); }",
+    "@font-face { font-display: swap; font-family: DieGroteskC; font-style: italic; font-weight: 250; src: url(\"../fonts/DieGrotesk/die-grotesk-c-thin-italic.woff2\") format(\"woff2\"); }"
+  ],
+  "fonts": [
+    [
+      "DieGroteskC, sans-serif",
+      19
+    ],
+    [
+      "Arges-Condensed, sans-serif",
+      2
+    ]
+  ],
+  "images": [
+    {
+      "alt": "/medias/loader-2.jpg",
+      "url": "https://lemansclassic.richardmille.com/.netlify/images?w=2000&h=1000&fm=webp&url=%2Fmedias%2Floader-2.jpg"
+    },
+    {
+      "alt": "/medias/loader-3.jpg",
+      "url": "https://lemansclassic.richardmille.com/.netlify/images?w=2000&h=1000&fm=webp&url=%2Fmedias%2Floader-3.jpg"
+    },
+    {
+      "alt": "/medias/loader-4.jpg",
+      "url": "https://lemansclassic.richardmille.com/.netlify/images?w=2000&h=1000&fm=webp&url=%2Fmedias%2Floader-4.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://lemansclassic.richardmille.com/.netlify/images?w=3456&h=2160&fm=webp&url=%2Fmedias%2Fchapters%2Fdeparture%2Fi0.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://lemansclassic.richardmille.com/.netlify/images?w=1728&fm=webp&url=%2Fmedias%2Fchapters%2Fdeparture%2Fi1.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://lemansclassic.richardmille.com/.netlify/images?h=1080&fm=webp&url=%2Fmedias%2Fchapters%2Fdeparture%2Fi2-1.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://lemansclassic.richardmille.com/.netlify/images?h=2160&fm=webp&url=%2Fmedias%2Fchapters%2Fdeparture%2Fi2-2.jpg"
+    }
+  ],
+  "links": [
+    {
+      "text": "(FR)",
+      "url": "https://lemansclassic.richardmille.com/"
+    },
+    {
+      "text": "BELOW THE LINE",
+      "url": "https://lemansclassic.richardmille.com/"
+    }
+  ],
+  "mediaQueries": [
+    "(max-width: 768px)",
+    "(min-width: 768px)",
+    "(max-width: 767px)",
+    "(min-width: 1200px)",
+    "(prefers-reduced-motion: no-preference)",
+    "(min-width: 460px)",
+    "(min-width: 640px)",
+    "(min-width: 1024px)",
+    "(pointer: coarse)"
+  ],
+  "reducedMotion": [
+    "@media (prefers-reduced-motion: no-preference) {\n  :root { --transition-easing: cubic-bezier(.38,.005,.215,1); --transition-translate: 2rem; --transition-duration: .8s; --transition-delay: 0s; --transition-stagger-delay: .1s; }\n  .-a-no-translate { --transition-translate: 0; }\n  .u-anim_item { opacity: 0; transform: translateY(var(--transition-translate)); transition: transform var(--transition-duration) var(--transition-easing),opacity var(--transition-duration) var(--transition-easing); }\n  .u-anim:not(.-landing).is-inview .u-anim_item, html.is-ready .u-anim.-landing .u-anim_item { opacity: 1; transform: translateY(0px); transition-delay: calc(var(--item-index)*var(--transition-stagger-delay) + var(--transition-delay, 0s)); }\n  .u-anim-stagger-lines { --transition-stagger-delay: 75ms; }\n  .u-anim-stagger-lines .word { display: inline-block; opacity: 0; transform: translate3d(0px, 120%, 0px); transition-behavior: normal, normal; transition-duration: 1s, 1s; transition-timing-function:"
+  ],
+  "rootVariables": {
+    "--accent-color": "#ffe500",
+    "--ar": "calc(100vw/100vh - 1.6)",
+    "--bg-color": "#fff",
+    "--border-color": "rgba(16,16,16,.25)",
+    "--column-spacing": "1.5rem",
+    "--container-width": "100vw",
+    "--ease-in-circ": "cubic-bezier(.6,.04,.98,.335)",
+    "--ease-in-cubic": "cubic-bezier(.55,.055,.675,.19)",
+    "--ease-in-expo": "cubic-bezier(.95,.05,.795,.035)",
+    "--ease-in-out-circ": "cubic-bezier(.785,.135,.15,.86)",
+    "--ease-in-out-cubic": "cubic-bezier(.645,.045,.355,1)",
+    "--ease-in-out-expo": "cubic-bezier(1,0,0,1)",
+    "--ease-in-out-quad": "cubic-bezier(.455,.03,.515,.955)",
+    "--ease-in-out-quart": "cubic-bezier(.77,0,.175,1)",
+    "--ease-in-out-quint": "cubic-bezier(.86,0,.07,1)",
+    "--ease-in-quad": "cubic-bezier(.55,.085,.68,.53)",
+    "--ease-in-quart": "cubic-bezier(.895,.03,.685,.22)",
+    "--ease-in-quint": "cubic-bezier(.755,.05,.855,.06)",
+    "--ease-out-circ": "cubic-bezier(.075,.82,.165,1)",
+    "--ease-out-cubic": "cubic-bezier(.215,.61,.355,1)",
+    "--ease-out-expo": "cubic-bezier(.19,1,.22,1)",
+    "--ease-out-quad": "cubic-bezier(.25,.46,.45,.94)",
+    "--ease-out-quart": "cubic-bezier(.165,.84,.44,1)",
+    "--ease-out-quint": "cubic-bezier(.23,1,.32,1)",
+    "--layout-column-width": "calc((var(--layout-width) - ((var(--layout-columns-count) - 1)*var(--layout-columns-gap)))/var(--layout-columns-count))",
+    "--layout-columns-count": "12",
+    "--layout-columns-gap": "calc(var(--vw, 1vw)*1.38889)",
+    "--layout-margin": "calc(var(--vw, 1vw)*2.77778)",
+    "--layout-width": "calc(var(--container-width) - var(--layout-margin)*2)",
+    "--margin-reset-container": "calc((100vw + 2rem - r(1200px))/-2)",
+    "--text-color": "#161616",
+    "--transition-delay": "0s",
+    "--transition-duration": ".8s",
+    "--transition-easing": "cubic-bezier(.38,.005,.215,1)",
+    "--transition-stagger-delay": ".1s",
+    "--transition-translate": "2rem",
+    "--vh": "1vh"
+  },
+  "samples": [
+    {
+      "background": "rgb(255, 229, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 11200,
+      "letterSpacing": "normal",
+      "lineHeight": "23.375px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "15.5833px",
+      "tag": "BODY",
+      "text": "BELOW THE LINE\nBELOW THE LINE\nA PHOTOGRAPHIC TALE\nA CLASSIC BOOTLEG\nAT LE MANS CLASSIC 2025\nBY HEREM",
+      "weight": "400",
+      "width": 1403
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "c-header -hidden",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 98,
+      "letterSpacing": "normal",
+      "lineHeight": "23.375px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "fixed",
+      "radius": "0px",
+      "size": "15.5833px",
+      "tag": "HEADER",
+      "text": "(ABOUT)\n(FR)\nBELOW THE LINE\n(SOUND: OFF)\n(CHAPTERS)",
+      "weight": "400",
+      "width": 1403
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "c-about-button c-header_item cursor-pointer o-header-color-item",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 12,
+      "letterSpacing": "normal",
+      "lineHeight": "11.6833px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "11.6833px",
+      "tag": "BUTTON",
+      "text": "(ABOUT)",
+      "weight": "400",
+      "width": 45
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "c-sound-toggler c-header_item cursor-pointer o-header-color-item",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 12,
+      "letterSpacing": "normal",
+      "lineHeight": "11.6833px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "11.6833px",
+      "tag": "BUTTON",
+      "text": "(SOUND: OFF)",
+      "weight": "400",
+      "width": 70
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "c-chapters-button c-header_item cursor-pointer o-header-color-item",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 12,
+      "letterSpacing": "normal",
+      "lineHeight": "11.6833px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "11.6833px",
+      "tag": "BUTTON",
+      "text": "(CHAPTERS)",
+      "weight": "400",
+      "width": 64
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 11200,
+      "letterSpacing": "normal",
+      "lineHeight": "23.375px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "15.5833px",
+      "tag": "MAIN",
+      "text": "(01)\nMORNING\nA11 MOTORWAY\n\nParis fades into the mist in the rear-view mirror. My gear's in the boot:",
+      "weight": "400",
+      "width": 1403
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "p1 -indent whitespace-pre-wrap",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 105,
+      "letterSpacing": "normal",
+      "lineHeight": "26.2875px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26.2875px",
+      "tag": "P",
+      "text": "Paris fades into the mist in the rear-view mirror. My gear's in the boot: two Canon cameras, four le",
+      "weight": "400",
+      "width": 555
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "p1 whitespace-pre-wrap",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 79,
+      "letterSpacing": "normal",
+      "lineHeight": "26.2875px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26.2875px",
+      "tag": "P",
+      "text": "And my laminated, gold accreditation card, the photo showing an unshaven me with the eyes of a guy w",
+      "weight": "400",
+      "width": 555
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "p1 whitespace-pre-wrap",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 26,
+      "letterSpacing": "normal",
+      "lineHeight": "26.2875px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26.2875px",
+      "tag": "P",
+      "text": "SCROLL TO DISCOVER",
+      "weight": "400",
+      "width": 555
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "",
+      "color": "rgb(255, 255, 255)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 164,
+      "letterSpacing": "normal",
+      "lineHeight": "23.3667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "15.5778px",
+      "tag": "P",
+      "text": "\"Insurance problem, sir. Your accreditation doesn't cover track access. Sorry about that.\"\n\nA three-",
+      "weight": "400",
+      "width": 327
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "text-xl lg:text-3xl leading-none uppercase text-center",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 35,
+      "letterSpacing": "normal",
+      "lineHeight": "35.0625px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "29.2188px",
+      "tag": "P",
+      "text": "I'M IN THE SHIT",
+      "weight": "400",
+      "width": 563
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "cdf_title text-yellow font-title uppercase w-full flex justify-between",
+      "color": "rgb(255, 229, 0)",
+      "font": "Arges-Condensed, sans-serif",
+      "gap": "normal",
+      "height": 312,
+      "letterSpacing": "normal",
+      "lineHeight": "311.556px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "311.556px",
+      "tag": "H2",
+      "text": "FIRST\n\nA red Ferrari, number 9, doing 125 mph past the stands.\n\nSHOT",
+      "weight": "400",
+      "width": 1130
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "",
+      "color": "rgb(255, 255, 255)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 44,
+      "letterSpacing": "normal",
+      "lineHeight": "21.8089px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "15.5778px",
+      "tag": "P",
+      "text": "A red Ferrari, number 9, doing 125 mph past the stands.",
+      "weight": "400",
+      "width": 297
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "",
+      "color": "rgb(255, 229, 0)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 76,
+      "letterSpacing": "normal",
+      "lineHeight": "25.3139px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "25.3139px",
+      "tag": "P",
+      "text": "Classic, predictable. But I see something else in my viewfinder. A spectator in his vintage '70s hel",
+      "weight": "400",
+      "width": 574
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "",
+      "color": "rgb(255, 229, 0)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 76,
+      "letterSpacing": "normal",
+      "lineHeight": "25.3139px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "25.3139px",
+      "tag": "P",
+      "text": "He looks more authentic than all the drivers put together. More passion in his eyes than in a thousa",
+      "weight": "400",
+      "width": 536
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "p1 -indent",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 79,
+      "letterSpacing": "normal",
+      "lineHeight": "26.2875px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26.2875px",
+      "tag": "P",
+      "text": "I decide that if I can't photograph the race, I'm at least going to shoot what's happening behind th",
+      "weight": "400",
+      "width": 555
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "cai_t1 font-title",
+      "color": "rgb(22, 22, 22)",
+      "font": "Arges-Condensed, sans-serif",
+      "gap": "normal",
+      "height": 312,
+      "letterSpacing": "normal",
+      "lineHeight": "311.556px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "311.556px",
+      "tag": "P",
+      "text": "FIRST LESSON OF THE DAY",
+      "weight": "400",
+      "width": 901
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(229, 231, 235)",
+      "class": "",
+      "color": "rgb(22, 22, 22)",
+      "font": "DieGroteskC, sans-serif",
+      "gap": "normal",
+      "height": 203,
+      "letterSpacing": "normal",
+      "lineHeight": "25.3139px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "25.3139px",
+      "tag": "P",
+      "text": "SOMETIMES IT'S WHEN THEY WON'T LET YOU IN THAT YOU FIND THE GOOD STORIES.\n\nAND SOMETIMES IT'S WHEN E",
+      "weight": "400",
+      "width": 370
+    }
+  ],
+  "scrollHeight": 11200,
+  "styleSheets": [
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": "https://lemansclassic.richardmille.com/_nuxt/entry.8J1snZfQ.css"
+    },
+    {
+      "readable": true,
+      "url": "https://lemansclassic.richardmille.com/_nuxt/ChapterWrapper.BY8gGNOb.css"
+    },
+    {
+      "readable": true,
+      "url": "https://lemansclassic.richardmille.com/_nuxt/default.CfXEnQTG.css"
+    }
+  ],
+  "title": "Le Mans Classic",
+  "url": "https://lemansclassic.richardmille.com/en",
+  "viewport": {
+    "dpr": 0.800000011920929,
+    "height": 876,
+    "width": 1402
+  }
+}

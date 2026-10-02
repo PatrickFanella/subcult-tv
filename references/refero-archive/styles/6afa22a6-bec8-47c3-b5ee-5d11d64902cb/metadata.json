@@ -1,0 +1,29 @@
+{
+  "styleId": "6afa22a6-bec8-47c3-b5ee-5d11d64902cb",
+  "sourceUrl": "https://styles.refero.design/style/6afa22a6-bec8-47c3-b5ee-5d11d64902cb",
+  "fetchedAt": "2026-10-02T21:48:05.593921+00:00",
+  "extractedAt": "2026-10-02T21:48:05.680507+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "A24 — Style Reference",
+  "htmlSha256": "93f457acdfaed9a09a15f568b0d2582e18d3fde158d2fe1c9f9fdea12c4369a8",
+  "cache": ".cache/6afa22a6-bec8-47c3-b5ee-5d11d64902cb.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "262135f3a4e1de4d8f2197a8852b3c501108ef3124573d85bb8bd463816007e2",
+      "bytes": 18341,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8eb10bbb-5b18-449f-8e0a-ce5f63c41959.jpg",
+    "fetchedAt": "2026-10-02T21:48:07.480330+00:00",
+    "sha256": "c0af05aff771c3beb59dd26ffba663e6bf0029cf0252130020f495d523c69c35",
+    "bytes": 60613,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

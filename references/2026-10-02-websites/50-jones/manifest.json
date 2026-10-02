@@ -1,0 +1,70 @@
+{
+  "site": "50-jones",
+  "source": "https://50jones.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:18:20.711Z",
+      "url": "https://50jones.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:26:54.194Z",
+      "url": "https://50jones.com/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "690e11208a44e020a146d6cab52ad242c98835d22df198bf1dedd13f5b5edd20",
+      "bytes": 4885
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "19b90bf1e35e1db7c4dbe9adc91790c326274c3210a7cc1c1e2bc82a2e442479",
+      "bytes": 1168
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "70886bf2c2b37184a5ef1dab2a184a7feb7c74d534932d4abe50146595e126b8",
+      "bytes": 34143
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "daa4e0e230ff871ea3151b266911e771d1a746ced9dd0cb11fee726c96f00460",
+      "bytes": 29187
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "07f8f5cae44f6eeb6b9066ff9a6cdf2ce86e2e8024714aef9689848e744f1b03",
+      "bytes": 394382
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "0fc74b6a418765fa170242c6837264a52fd064233176016bc67ba4bedaa57622",
+      "bytes": 269
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "6e0241878eecc77cd46849c43240d88f25fe409f80b50a2ca61a5a9e04a1b2a7",
+      "bytes": 14643
+    }
+  ]
+}

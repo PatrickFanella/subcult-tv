@@ -1,0 +1,11 @@
+{
+  "id": "gumroad",
+  "category": "Neo-Brutalism",
+  "name": "Gumroad",
+  "live": "https://gumroad.com/",
+  "fetchedDate": "2026-10-02",
+  "referenceImageCaptureDate": "unknown",
+  "evidence": "Official site/documentation and live computed styles",
+  "liveStyleObservation": true,
+  "newLiveScreenshot": false
+}

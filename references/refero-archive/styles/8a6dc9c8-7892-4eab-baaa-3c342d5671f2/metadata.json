@@ -1,0 +1,29 @@
+{
+  "styleId": "8a6dc9c8-7892-4eab-baaa-3c342d5671f2",
+  "sourceUrl": "https://styles.refero.design/style/8a6dc9c8-7892-4eab-baaa-3c342d5671f2",
+  "fetchedAt": "2026-10-02T21:45:53.454062+00:00",
+  "extractedAt": "2026-10-02T21:45:53.503503+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "INVERSA — Style Reference",
+  "htmlSha256": "98bbf061a2e7643444b27fd67a9b750025f4b0197a82b258eb4e97dcf1152298",
+  "cache": ".cache/8a6dc9c8-7892-4eab-baaa-3c342d5671f2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "555e83084adbec41b916d2b95651e310981c9e572c50210202c80e254774dbac",
+      "bytes": 16541,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/85674942-d84e-4b4e-967a-95abd119f7ec.jpg",
+    "fetchedAt": "2026-10-02T21:45:55.603161+00:00",
+    "sha256": "74389b6c9848419962712ff63b97fa85f5e9a23974d55c3186c5afa8e203b01a",
+    "bytes": 188751,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "f53b2759-5b4a-4509-9311-51ab74238326",
+  "sourceUrl": "https://styles.refero.design/style/f53b2759-5b4a-4509-9311-51ab74238326",
+  "fetchedAt": "2026-10-02T21:47:57.555979+00:00",
+  "extractedAt": "2026-10-02T21:47:57.603746+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ethereum.org — Style Reference",
+  "htmlSha256": "e472a09d19a32a339b80a77694d729a7d082193efe7196882d36273eef6912c7",
+  "cache": ".cache/f53b2759-5b4a-4509-9311-51ab74238326.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "97ff2f8c08c7d1b2408d2d6b1b70a502d2ef63c99d463dbdd15a7c5255f78068",
+      "bytes": 20688,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1a00f2de-1209-4fa5-bb40-289e82a13620.jpg",
+    "fetchedAt": "2026-10-02T21:47:59.626131+00:00",
+    "sha256": "22ed0976154a9b7ef00694d6dff529099e4aa40b696f4516910c6a175b5db798",
+    "bytes": 220830,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

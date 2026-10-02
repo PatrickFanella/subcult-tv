@@ -1,0 +1,29 @@
+{
+  "styleId": "c2325884-4391-4688-85cd-e143f5107517",
+  "sourceUrl": "https://styles.refero.design/style/c2325884-4391-4688-85cd-e143f5107517",
+  "fetchedAt": "2026-10-02T21:32:50.055889+00:00",
+  "extractedAt": "2026-10-02T21:32:50.078688+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Airbnb — Style Reference",
+  "htmlSha256": "43b1f434fad346dbde052bc3dcfd5ead9a10c07a415fd98532df2d05669889f0",
+  "cache": ".cache/c2325884-4391-4688-85cd-e143f5107517.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4d3da1dc2c8acfaef77cf53d5c86389bb080968376993099931abdfe2c108a36",
+      "bytes": 21100,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/47c626f2-5207-457e-8b54-875a641cb1a1.jpg",
+    "fetchedAt": "2026-10-02T21:32:52.063501+00:00",
+    "sha256": "6cc331472489badeb43a2a772450bce1b6cb1826d8d5c73d3c197298f1b9cd49",
+    "bytes": 169934,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

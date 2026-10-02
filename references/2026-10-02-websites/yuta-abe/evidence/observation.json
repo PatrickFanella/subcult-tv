@@ -1,0 +1,202 @@
+{
+  "id": "yuta-abe",
+  "name": "Yuta Abe",
+  "requestedUrl": "https://yutaabe.com/",
+  "navigation": {
+    "available": true,
+    "visible": false,
+    "tabId": "tab_g",
+    "url": "https://yutaabe.com/",
+    "title": "Yuta Abe - Code, Interactive Design",
+    "loading": false,
+    "viewportSetting": {
+      "_tag": "freeform",
+      "width": 1280,
+      "height": 800
+    },
+    "viewport": {
+      "width": 1402,
+      "height": 876
+    }
+  },
+  "screenshotPath": "/home/onnwee/.t3/userdata/browser-artifacts/browser-screenshot-yutaabe-com-muremxup-cf1f641d.png",
+  "bodyText": "045\n\nLIGHTS OUT, PRESS SHIFT!\n\nYuta Abe — Creative Developer / Interactive Design",
+  "canvas": [
+    {
+      "height": 701,
+      "width": 1121
+    }
+  ],
+  "capturedAt": "2026-10-02T20:17:31.949Z",
+  "colors": [
+    [
+      "rgb(240, 237, 232)",
+      5
+    ],
+    [
+      "rgb(8, 8, 8)",
+      1
+    ]
+  ],
+  "fontFaces": [
+    "@font-face { font-family: mango-grotesque; src: url(\"/fonts/MangoGrotesque-Bold.woff2\") format(\"woff2\"); font-weight: 700; font-style: normal; }",
+    "@font-face { font-family: Syne; src: url(\"/fonts/syne-variable.woff2\") format(\"woff2-variations\"); font-weight: 400 800; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Space Mono\"; src: url(\"/fonts/space-mono-400-normal.woff2\") format(\"woff2\"); font-weight: 400; font-style: normal; font-display: swap; }",
+    "@font-face { font-family: \"Space Mono\"; src: url(\"/fonts/space-mono-400-italic.woff2\") format(\"woff2\"); font-weight: 400; font-style: italic; font-display: swap; }",
+    "@font-face { font-family: \"Space Mono\"; src: url(\"/fonts/space-mono-700-normal.woff2\") format(\"woff2\"); font-weight: 700; font-style: normal; font-display: swap; }"
+  ],
+  "fonts": [
+    [
+      "\"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo",
+      3
+    ],
+    [
+      "\"Space Mono\", monospace",
+      2
+    ]
+  ],
+  "images": [],
+  "links": [],
+  "mediaQueries": [
+    "screen and (min-width: 1441px)",
+    "screen and (min-width: 980px) and (max-width: 1440px)",
+    "screen and (max-width: 980px)",
+    "print and (hover: hover) and (pointer: fine), screen and (hover: hover) and (pointer: fine) and (min-width: 981px)",
+    "(prefers-reduced-motion)"
+  ],
+  "reducedMotion": [
+    "@media (prefers-reduced-motion) {\n  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: auto ease 0s 1 normal none running none !important; }\n  [data-astro-transition-scope] { animation: auto ease 0s 1 normal none running none !important; }\n}"
+  ],
+  "rootVariables": {
+    "--about-accent2": "#006aaa",
+    "--about-border": "#191513",
+    "--about-fg": "#efebe4",
+    "--about-fg-dim": "#585551",
+    "--col-black": "#080808",
+    "--col-blue": "#30b8ff",
+    "--col-white": "#F0EDE8",
+    "--font-mango-grotesque": "\"mango-grotesque\", sans-serif",
+    "--font-space-mono": "\"Space Mono\", monospace",
+    "--font-syne": "\"Syne\", sans-serif"
+  },
+  "samples": [
+    {
+      "background": "rgb(8, 8, 8)",
+      "border": "0px none rgb(240, 237, 232)",
+      "class": "",
+      "color": "rgb(240, 237, 232)",
+      "font": "\"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo",
+      "gap": "normal",
+      "height": 876,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16.83px",
+      "tag": "BODY",
+      "text": "045\n\nLIGHTS OUT, PRESS SHIFT!\n\nYuta Abe — Creative Developer / Interactive Design",
+      "weight": "400",
+      "width": 1403
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(240, 237, 232)",
+      "class": "",
+      "color": "rgb(240, 237, 232)",
+      "font": "\"Space Mono\", monospace",
+      "gap": "normal",
+      "height": 20,
+      "letterSpacing": "1.93208px",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "absolute",
+      "radius": "0px",
+      "size": "13.8006px",
+      "tag": "P",
+      "text": "LIGHTS OUT, PRESS SHIFT!",
+      "weight": "700",
+      "width": 1403
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(240, 237, 232)",
+      "class": "",
+      "color": "rgb(240, 237, 232)",
+      "font": "\"Space Mono\", monospace",
+      "gap": "normal",
+      "height": 8,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "absolute",
+      "radius": "0px",
+      "size": "16.83px",
+      "tag": "P",
+      "text": "",
+      "weight": "400",
+      "width": 1403
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(240, 237, 232)",
+      "class": "l-main lenis",
+      "color": "rgb(240, 237, 232)",
+      "font": "\"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo",
+      "gap": "normal",
+      "height": 876,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16.83px",
+      "tag": "MAIN",
+      "text": "Yuta Abe — Creative Developer / Interactive Design",
+      "weight": "400",
+      "width": 1403
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(240, 237, 232)",
+      "class": "sr-only",
+      "color": "rgb(240, 237, 232)",
+      "font": "\"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo",
+      "gap": "normal",
+      "height": 1,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "absolute",
+      "radius": "0px",
+      "size": "16.83px",
+      "tag": "H1",
+      "text": "Yuta Abe — Creative Developer / Interactive Design",
+      "weight": "400",
+      "width": 1
+    }
+  ],
+  "scrollHeight": 876,
+  "styleSheets": [
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    }
+  ],
+  "title": "Yuta Abe - Code, Interactive Design",
+  "url": "https://yutaabe.com/",
+  "viewport": {
+    "dpr": 0.800000011920929,
+    "height": 876,
+    "width": 1402
+  }
+}

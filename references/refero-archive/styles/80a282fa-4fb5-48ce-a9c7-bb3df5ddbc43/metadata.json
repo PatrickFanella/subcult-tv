@@ -1,0 +1,29 @@
+{
+  "styleId": "80a282fa-4fb5-48ce-a9c7-bb3df5ddbc43",
+  "sourceUrl": "https://styles.refero.design/style/80a282fa-4fb5-48ce-a9c7-bb3df5ddbc43",
+  "fetchedAt": "2026-10-02T21:28:29.991979+00:00",
+  "extractedAt": "2026-10-02T21:28:30.041043+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bejamas — Style Reference",
+  "htmlSha256": "51532751a5de2329a54c8ca4a8dfed1dc01e21028224bb740c24caa3cd0411d4",
+  "cache": ".cache/80a282fa-4fb5-48ce-a9c7-bb3df5ddbc43.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1d9f13c1851c7d9c83f871ca16f478cc8d806bb73a6797a21e017ed72f8f22bd",
+      "bytes": 18198,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6182c22d-33ca-4652-b1ab-e11e96969743.jpg",
+    "fetchedAt": "2026-10-02T21:28:31.996769+00:00",
+    "sha256": "2ebbbab5a3dbaaf8bdd7511cccc3ec3de6e0791ce239d8509ec43c5955dfa98f",
+    "bytes": 55701,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

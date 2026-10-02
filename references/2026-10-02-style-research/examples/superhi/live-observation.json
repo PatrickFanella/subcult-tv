@@ -1,0 +1,192 @@
+{
+  "canvas": 1,
+  "capturedAt": "2026-10-02T20:58:09.200Z",
+  "samples": [
+    {
+      "background": "rgb(255, 255, 255)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotText_7ea857, __haasGrotText_Fallback_7ea857",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BODY",
+      "text": "Skip to main content\nSUPERHI FM\nWe use essent"
+    },
+    {
+      "background": "rgb(39, 39, 230)",
+      "border": "0px outset rgb(39, 39, 230)",
+      "color": "rgb(255, 255, 255)",
+      "font": "__haasGrotText_7ea857, __haasGrotText_Fallback_7ea857",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "BUTTON",
+      "text": "Skip to main content"
+    },
+    {
+      "background": "rgb(0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "font": "__haasGrotText_7ea857, __haasGrotText_Fallback_7ea857",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "Essential cookies only"
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "__haasGrotText_7ea857, __haasGrotText_Fallback_7ea857",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "Sure thing"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "font": "__haasGrotText_7ea857, __haasGrotText_Fallback_7ea857",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "GET 50% OFF ALL COURSES AND WORKSHOPS!\nGET 50"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "__haasGrotText_7ea857, __haasGrotText_Fallback_7ea857",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotText_7ea857, __haasGrotText_Fallback_7ea857",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "BUTTON",
+      "text": "Catalog"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "A",
+      "text": "Catalog"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "BUTTON",
+      "text": "About"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "A",
+      "text": "About"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "A",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "BUTTON",
+      "text": "Cart -"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "A",
+      "text": "Cart -"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "BUTTON",
+      "text": "Sign in"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "A",
+      "text": "Sign in"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(17, 17, 24)",
+      "color": "rgb(17, 17, 24)",
+      "font": "__haasGrotDisp_332926, __haasGrotDisp_Fallback_332926",
+      "shadow": "none",
+      "size": "92px",
+      "tag": "H1",
+      "text": "Curate your own creative career"
+    }
+  ],
+  "title": "Online code, design, and project management courses • SuperHi",
+  "url": "https://www.superhi.com/",
+  "viewport": {
+    "height": 800,
+    "width": 1280
+  }
+}

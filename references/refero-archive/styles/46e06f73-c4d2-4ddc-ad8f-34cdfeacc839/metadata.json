@@ -1,0 +1,29 @@
+{
+  "styleId": "46e06f73-c4d2-4ddc-ad8f-34cdfeacc839",
+  "sourceUrl": "https://styles.refero.design/style/46e06f73-c4d2-4ddc-ad8f-34cdfeacc839",
+  "fetchedAt": "2026-10-02T21:28:18.151829+00:00",
+  "extractedAt": "2026-10-02T21:28:18.221326+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "B150 — Style Reference",
+  "htmlSha256": "9a7e5219e5ffccbaedf770dd6d461680bd0c134cb09d3f6e7a8dc165082a71eb",
+  "cache": ".cache/46e06f73-c4d2-4ddc-ad8f-34cdfeacc839.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1d5fd281d8ecbbe6721c0db1a97ec51b7b274e39cf834a133f46c0598a763666",
+      "bytes": 19114,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/15588a7c-7bf3-4011-a53f-e3242bdf1425.jpg",
+    "fetchedAt": "2026-10-02T21:28:20.043415+00:00",
+    "sha256": "82685a5fc06407e9ef8e3301f6ff0c8be0db4101e95aedf63e77263bda0007f1",
+    "bytes": 135298,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "ba07accb-b2cc-4ad9-a25f-c50b0f90f34e",
+  "sourceUrl": "https://styles.refero.design/style/ba07accb-b2cc-4ad9-a25f-c50b0f90f34e",
+  "fetchedAt": "2026-10-02T21:43:53.505559+00:00",
+  "extractedAt": "2026-10-02T21:43:53.554920+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Mage — Style Reference",
+  "htmlSha256": "8b70408eb69b1ab862be46ddfd19b788877ce6d3ee4c20fc5b1a30915c24a9fd",
+  "cache": ".cache/ba07accb-b2cc-4ad9-a25f-c50b0f90f34e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "52580229f5717aa9265386545d9bc9c65ae20693a95ed6940f61eeb81fa725c5",
+      "bytes": 21696,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6d7c8da3-4b27-4902-9ada-4d4db454955f.jpg",
+    "fetchedAt": "2026-10-02T21:43:55.603297+00:00",
+    "sha256": "9f930968365698b0ea290ec9d69700e6ff6902fb0bfac117c5fffef35d9156a1",
+    "bytes": 117446,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "cfab7b43-ed24-41e9-9272-c858700b865b",
+  "sourceUrl": "https://styles.refero.design/style/cfab7b43-ed24-41e9-9272-c858700b865b",
+  "fetchedAt": "2026-10-02T21:52:42.172255+00:00",
+  "extractedAt": "2026-10-02T21:52:42.215154+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Windsurf — Style Reference",
+  "htmlSha256": "3ff0086a572bfd90fd39b086622f3cd37746abad2bf4d18669fd3f3f824f45a2",
+  "cache": ".cache/cfab7b43-ed24-41e9-9272-c858700b865b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fa874bc91ea863632c0c1f0243bb9795ac1a939e3ae231849461b55452fd752b",
+      "bytes": 25407,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d1210920-680e-4169-8898-7ca0df3472ea.jpg",
+    "fetchedAt": "2026-10-02T21:52:44.415339+00:00",
+    "sha256": "6ba6f27e7e798f070fe44373a1ea23574c2bd0a8bb80b1c3fc9f4ba2524250f7",
+    "bytes": 105425,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

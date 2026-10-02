@@ -1,0 +1,29 @@
+{
+  "styleId": "7afd842e-44d4-4f01-9ef5-683c31d820c9",
+  "sourceUrl": "https://styles.refero.design/style/7afd842e-44d4-4f01-9ef5-683c31d820c9",
+  "fetchedAt": "2026-10-02T21:45:29.534150+00:00",
+  "extractedAt": "2026-10-02T21:45:29.585044+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bpowell — Style Reference",
+  "htmlSha256": "e2f83587c6da2ed853f9966d7c09f73094adec040f6dac0e10e68ae5a10e8608",
+  "cache": ".cache/7afd842e-44d4-4f01-9ef5-683c31d820c9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4b4049a3b26789c0f101971c1231bad092589cb51360689f967ce23c5ad36636",
+      "bytes": 17920,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d6a73377-5ad4-44f1-8e10-3a968159f205.jpg",
+    "fetchedAt": "2026-10-02T21:45:31.505291+00:00",
+    "sha256": "50547f1604f90d8806137a2a5152a8eafc653829140263c6c744a32e05544af3",
+    "bytes": 56942,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

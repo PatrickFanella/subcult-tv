@@ -1,0 +1,29 @@
+{
+  "styleId": "80164adf-a898-4f7c-bce7-12f3f62e1649",
+  "sourceUrl": "https://styles.refero.design/style/80164adf-a898-4f7c-bce7-12f3f62e1649",
+  "fetchedAt": "2026-10-02T21:30:42.072491+00:00",
+  "extractedAt": "2026-10-02T21:30:42.123806+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ferrari — Style Reference",
+  "htmlSha256": "36df3a1cde743d1bcfc7f108f82748bc90be6d908dfcad64c064748b16587822",
+  "cache": ".cache/80164adf-a898-4f7c-bce7-12f3f62e1649.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3297eefe81c0f979b9bcbe6db478c46ff998d08008221bf0b327ae370017418a",
+      "bytes": 18900,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7b8ceaa4-f9c1-43a9-8030-71de18b93589.jpg",
+    "fetchedAt": "2026-10-02T21:30:43.978135+00:00",
+    "sha256": "59c2ebfe26a7ca022d09cb6a225a022b3f1fcc7e227be554ccf45c11bf75ada6",
+    "bytes": 42982,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

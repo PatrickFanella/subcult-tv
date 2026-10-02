@@ -1,0 +1,29 @@
+{
+  "styleId": "3e397dc6-0e68-435f-9dee-1966a9d245d3",
+  "sourceUrl": "https://styles.refero.design/style/3e397dc6-0e68-435f-9dee-1966a9d245d3",
+  "fetchedAt": "2026-10-02T21:36:34.036799+00:00",
+  "extractedAt": "2026-10-02T21:36:34.097255+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Riptype Foundry — Style Reference",
+  "htmlSha256": "73418fac258db9ba1244276db5227e7074c7fc42ea67499764ab7b4771a44893",
+  "cache": ".cache/3e397dc6-0e68-435f-9dee-1966a9d245d3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "13b563fa4a5b618cb6296b319cf94fe1a9a75195a1f9ed2904ff7637bf2c03d9",
+      "bytes": 14522,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/43425023-234c-4f24-8654-910aae9c6b8a.jpg",
+    "fetchedAt": "2026-10-02T21:36:36.151346+00:00",
+    "sha256": "528bb1b2fe301900d0221f704eb31659cf88a65d007feef5bc9212c7faa9fe1c",
+    "bytes": 150853,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

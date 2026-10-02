@@ -1,0 +1,29 @@
+{
+  "styleId": "e80c5b4a-fd03-460e-a577-49928a4ab5db",
+  "sourceUrl": "https://styles.refero.design/style/e80c5b4a-fd03-460e-a577-49928a4ab5db",
+  "fetchedAt": "2026-10-02T21:54:58.362082+00:00",
+  "extractedAt": "2026-10-02T21:54:58.396063+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bareis + Nicolaus — Style Reference",
+  "htmlSha256": "668b2d634405d43b5840b9d998acd170337c5c5f7ae490a516a9dddec061538b",
+  "cache": ".cache/e80c5b4a-fd03-460e-a577-49928a4ab5db.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5aa2da59f821d626aae0f57def3365f0aaea7c0d76759ca0b8db10d41186b010",
+      "bytes": 16130,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a718095a-435a-4813-aa24-5603724f71dd.jpg",
+    "fetchedAt": "2026-10-02T21:55:00.350250+00:00",
+    "sha256": "824cd1188c2f9d60143dbe47cb6c745e9b498205eb1703fce9ec39c5d34beb14",
+    "bytes": 206619,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "391bd401-06d7-4444-8243-8573e96eab24",
+  "sourceUrl": "https://styles.refero.design/style/391bd401-06d7-4444-8243-8573e96eab24",
+  "fetchedAt": "2026-10-02T21:58:06.201906+00:00",
+  "extractedAt": "2026-10-02T21:58:06.259963+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "D.S. & DURGA — Style Reference",
+  "htmlSha256": "b905d5c84fc386c0e13d20a87c01fa77961c3c7c2e737e20d63f63dbd38288ed",
+  "cache": ".cache/391bd401-06d7-4444-8243-8573e96eab24.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f1ff774b147b4eacebd4714dbc2ff11db1e24595e914d77ead7c18768c29187f",
+      "bytes": 20010,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f08b0ba8-46a1-41e1-8dbd-b40304e96aa9.jpg",
+    "fetchedAt": "2026-10-02T21:58:08.252249+00:00",
+    "sha256": "a57c13b14dcd4892fb7f2671b991ced2e3fef768be7a0e84276b058c825c0b9d",
+    "bytes": 153929,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

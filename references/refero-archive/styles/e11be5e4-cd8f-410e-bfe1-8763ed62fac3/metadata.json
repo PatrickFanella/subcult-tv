@@ -1,0 +1,29 @@
+{
+  "styleId": "e11be5e4-cd8f-410e-bfe1-8763ed62fac3",
+  "sourceUrl": "https://styles.refero.design/style/e11be5e4-cd8f-410e-bfe1-8763ed62fac3",
+  "fetchedAt": "2026-10-02T21:37:14.156675+00:00",
+  "extractedAt": "2026-10-02T21:37:14.207976+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Eduardo del Fraile — Style Reference",
+  "htmlSha256": "497082a44efe3827cfc56ef7038e9a63c531a66614e5637fc1bdd5a0afd1ba6e",
+  "cache": ".cache/e11be5e4-cd8f-410e-bfe1-8763ed62fac3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7327863eaa5b55eb611d3e5633810fa6b466f05b6275c21079da3e68168dda11",
+      "bytes": 12234,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a807accf-652f-4800-abec-0f031d44203c.jpg",
+    "fetchedAt": "2026-10-02T21:37:15.985360+00:00",
+    "sha256": "d11e27206a7b49094f509f113706aa31f8d7defa2f1816ae868280f9f6e650c8",
+    "bytes": 47904,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

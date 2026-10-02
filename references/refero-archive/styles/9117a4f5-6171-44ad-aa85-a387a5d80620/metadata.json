@@ -1,0 +1,29 @@
+{
+  "styleId": "9117a4f5-6171-44ad-aa85-a387a5d80620",
+  "sourceUrl": "https://styles.refero.design/style/9117a4f5-6171-44ad-aa85-a387a5d80620",
+  "fetchedAt": "2026-10-02T21:46:13.499108+00:00",
+  "extractedAt": "2026-10-02T21:46:13.544041+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Promly — Style Reference",
+  "htmlSha256": "f5c85e527f5d297ba6ae26883298517dfe8270ad3eca42ec2d2eb11ac46ba3e5",
+  "cache": ".cache/9117a4f5-6171-44ad-aa85-a387a5d80620.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a919bc039c9805df6019917941a63d49cdc1ac03d475c078741d441696fb2db7",
+      "bytes": 21861,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b12a6796-f070-439d-867a-4e30ae5c83a5.jpg",
+    "fetchedAt": "2026-10-02T21:46:15.606820+00:00",
+    "sha256": "831a32d3db1fd86c2c2f9c2dad20626fb52cde1a72b3e69e88b6da03f203b72b",
+    "bytes": 149616,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

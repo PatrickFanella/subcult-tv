@@ -1,0 +1,29 @@
+{
+  "styleId": "8e1c35bf-f0e8-4889-b869-d9883bb76767",
+  "sourceUrl": "https://styles.refero.design/style/8e1c35bf-f0e8-4889-b869-d9883bb76767",
+  "fetchedAt": "2026-10-02T21:59:02.204239+00:00",
+  "extractedAt": "2026-10-02T21:59:02.309265+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Beautiful™ — Style Reference",
+  "htmlSha256": "95fa3b48b6a130660ece1d6ae8d4ac7fe954cb562f958ec1d785a4ad7693b044",
+  "cache": ".cache/8e1c35bf-f0e8-4889-b869-d9883bb76767.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b4c429352e5a61d73584fa0a79b940d3a98a024c4aeae2f35e3be1f71a046930",
+      "bytes": 25587,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9ed56f00-de7e-49d8-8ae2-c01b5910cd53.jpg",
+    "fetchedAt": "2026-10-02T21:59:04.253376+00:00",
+    "sha256": "4cbc8a6caed9f2e2e603ee299a1e567d810ce47978f15ff91c2a9adff7f57cad",
+    "bytes": 115462,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "597355de-6167-4f37-8f14-b3897919a94c",
+  "sourceUrl": "https://styles.refero.design/style/597355de-6167-4f37-8f14-b3897919a94c",
+  "fetchedAt": "2026-10-02T21:54:10.161261+00:00",
+  "extractedAt": "2026-10-02T21:54:10.208337+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Exhibition Magazine — Style Reference",
+  "htmlSha256": "f0cbd2f4cd4e52bef4b9ee071d9df747cca49a775457a6c195bc477e1c4c9ba4",
+  "cache": ".cache/597355de-6167-4f37-8f14-b3897919a94c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "34e3de15a12477a7e5418aa175c2324b1196c4daf5ef585dd601a7b541ee7bbc",
+      "bytes": 19900,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/94728854-cadb-4988-a66c-e49d57ac0b6a.jpg",
+    "fetchedAt": "2026-10-02T21:54:12.187403+00:00",
+    "sha256": "20387b5e6223870ab97761c7bb6285b21253a94e1dd2b6b49a251c77fbe05554",
+    "bytes": 105137,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

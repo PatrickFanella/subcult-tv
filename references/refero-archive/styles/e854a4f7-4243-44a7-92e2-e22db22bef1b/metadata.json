@@ -1,0 +1,29 @@
+{
+  "styleId": "e854a4f7-4243-44a7-92e2-e22db22bef1b",
+  "sourceUrl": "https://styles.refero.design/style/e854a4f7-4243-44a7-92e2-e22db22bef1b",
+  "fetchedAt": "2026-10-02T21:41:05.509883+00:00",
+  "extractedAt": "2026-10-02T21:41:05.541099+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Kalstore® — Style Reference",
+  "htmlSha256": "eb6918e0a995c4e564dc13d49daf08f72095982c3579e04c22d84d12e69962cb",
+  "cache": ".cache/e854a4f7-4243-44a7-92e2-e22db22bef1b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "35ef7a82e1ef42442102cda62701d13ed62851603ec72da6327228ac834da146",
+      "bytes": 22100,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9f6b904b-92a0-42ab-9ac9-c2ca325569b0.jpg",
+    "fetchedAt": "2026-10-02T21:41:07.544791+00:00",
+    "sha256": "335b555f0c8b0402c2f6a2f8e6def7a6fb98e09c912b6de5ac519045c8166787",
+    "bytes": 113107,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

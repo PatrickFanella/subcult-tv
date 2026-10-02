@@ -1,0 +1,29 @@
+{
+  "styleId": "14efe0a8-5abf-441c-919d-add271317bf9",
+  "sourceUrl": "https://styles.refero.design/style/14efe0a8-5abf-441c-919d-add271317bf9",
+  "fetchedAt": "2026-10-02T21:57:18.357395+00:00",
+  "extractedAt": "2026-10-02T21:57:18.414593+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hartzler Family Dairy — Style Reference",
+  "htmlSha256": "bb14052158a0e7671b1bfd23e79b7c5ddca7b174be6f1dcd7a0842fb9e80a55b",
+  "cache": ".cache/14efe0a8-5abf-441c-919d-add271317bf9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7a006168702369c441ef2899a2b021b453930e8a81287980ef062f00475bd781",
+      "bytes": 20359,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/78cb41fe-b4bb-4265-a2e2-5a963cc6f541.jpg",
+    "fetchedAt": "2026-10-02T21:57:20.214854+00:00",
+    "sha256": "b0acebb70b775decae63b1ef11731cd04933113fc4136b449fea6eedff1e1f18",
+    "bytes": 118159,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

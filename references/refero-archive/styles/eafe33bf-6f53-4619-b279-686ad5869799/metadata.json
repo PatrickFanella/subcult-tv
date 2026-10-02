@@ -1,0 +1,29 @@
+{
+  "styleId": "eafe33bf-6f53-4619-b279-686ad5869799",
+  "sourceUrl": "https://styles.refero.design/style/eafe33bf-6f53-4619-b279-686ad5869799",
+  "fetchedAt": "2026-10-02T21:44:37.504105+00:00",
+  "extractedAt": "2026-10-02T21:44:37.558774+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "큰그림컴퍼니 — Style Reference",
+  "htmlSha256": "6f6d45da6245488e6879a23f91ee18f1d08a7469058ef62f6b451b080a82f23f",
+  "cache": ".cache/eafe33bf-6f53-4619-b279-686ad5869799.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f461c3683fcbba7f0b001604871c8100522f25cb6165b0245a3e17733e8d3451",
+      "bytes": 18243,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3c8c55ae-5ebb-48c2-abc9-12036d6534df.jpg",
+    "fetchedAt": "2026-10-02T21:44:39.573818+00:00",
+    "sha256": "74a9c92e82f11b46677df822040b7311c8e74e77da8195b6cec2a0aca2a36c34",
+    "bytes": 88541,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

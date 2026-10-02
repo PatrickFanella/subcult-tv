@@ -1,0 +1,29 @@
+{
+  "styleId": "deccaba1-8d53-4a82-b4c7-e2b99a3dc326",
+  "sourceUrl": "https://styles.refero.design/style/deccaba1-8d53-4a82-b4c7-e2b99a3dc326",
+  "fetchedAt": "2026-10-02T21:45:42.176811+00:00",
+  "extractedAt": "2026-10-02T21:45:42.266145+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Yinka Ilori Studio — Style Reference",
+  "htmlSha256": "4cf80464da2a291aa0d8d66d6aa5d63f3b6c28a61b206950d697890ccf413366",
+  "cache": ".cache/deccaba1-8d53-4a82-b4c7-e2b99a3dc326.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "aac96b06cb00e0ccbf0810f02d9a260b3c4c88848299b3425f1ae67190dc5634",
+      "bytes": 15857,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b27edf4f-7450-44f9-b31f-37bb827b96de.jpg",
+    "fetchedAt": "2026-10-02T21:45:43.528214+00:00",
+    "sha256": "7820fce1d271a9b7e00fd6fde5b7e8ef5aece45335b456dc27d0f0c713cb18fa",
+    "bytes": 86010,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

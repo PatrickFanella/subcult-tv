@@ -1,0 +1,29 @@
+{
+  "styleId": "6d64a4da-ef40-453e-86f7-4bfabc0c9051",
+  "sourceUrl": "https://styles.refero.design/style/6d64a4da-ef40-453e-86f7-4bfabc0c9051",
+  "fetchedAt": "2026-10-02T21:40:41.483823+00:00",
+  "extractedAt": "2026-10-02T21:40:41.508005+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Pangram Pangram Foundry — Style Reference",
+  "htmlSha256": "e7bf5b0a67188c01fbf67060e31bcb8f988e8f56de608f717774a36098b0d0c5",
+  "cache": ".cache/6d64a4da-ef40-453e-86f7-4bfabc0c9051.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "47e7fcc9ce346cad71ed1b6d9b653f7577c557bfb33c86476fd3322d6ca995d9",
+      "bytes": 27839,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5b429c1c-f2ff-47b2-a74c-b0a54432141a.jpg",
+    "fetchedAt": "2026-10-02T21:40:43.551961+00:00",
+    "sha256": "66d9cc460cc8df0176b4242d360c1a33e326d640c78e892033165da8b9a853e7",
+    "bytes": 126447,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

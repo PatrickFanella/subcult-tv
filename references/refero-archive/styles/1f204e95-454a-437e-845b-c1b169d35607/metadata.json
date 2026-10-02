@@ -1,0 +1,29 @@
+{
+  "styleId": "1f204e95-454a-437e-845b-c1b169d35607",
+  "sourceUrl": "https://styles.refero.design/style/1f204e95-454a-437e-845b-c1b169d35607",
+  "fetchedAt": "2026-10-02T21:35:18.060167+00:00",
+  "extractedAt": "2026-10-02T21:35:18.088217+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ORYZO AI — Style Reference",
+  "htmlSha256": "ffd39a981365979be9e360f7d432d3421b4c609fc8674a331d45ee1fe36d7cd0",
+  "cache": ".cache/1f204e95-454a-437e-845b-c1b169d35607.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "509fa78f1d10c186d8e24da1ac80fad48572f6020d43101e39132be35927e169",
+      "bytes": 19975,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6c446c82-1117-4dee-98f3-15bac18efceb.jpg",
+    "fetchedAt": "2026-10-02T21:35:20.177804+00:00",
+    "sha256": "41140092543504c7deb3f2c8bef6ad51feb348bf336e6b1b70152f8fadb7cd64",
+    "bytes": 150230,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

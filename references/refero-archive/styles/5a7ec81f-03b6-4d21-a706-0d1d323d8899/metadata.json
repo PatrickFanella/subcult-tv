@@ -1,0 +1,29 @@
+{
+  "styleId": "5a7ec81f-03b6-4d21-a706-0d1d323d8899",
+  "sourceUrl": "https://styles.refero.design/style/5a7ec81f-03b6-4d21-a706-0d1d323d8899",
+  "fetchedAt": "2026-10-02T21:56:22.199869+00:00",
+  "extractedAt": "2026-10-02T21:56:22.232180+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Turso — Style Reference",
+  "htmlSha256": "309a6406ace67b131c30d9a1cec216fd06023f044c12937817bb09a2b99ea92e",
+  "cache": ".cache/5a7ec81f-03b6-4d21-a706-0d1d323d8899.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5d499c32e1a240933098034d2780ef9a41842214fae190ce8e372affe09f1802",
+      "bytes": 19682,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/69e9d322-d28a-4bc2-a222-1886e2c0058d.jpg",
+    "fetchedAt": "2026-10-02T21:56:24.204183+00:00",
+    "sha256": "8987be93ddb1f923c52d570d448af54d8ebe008a4aefbc2bd7b4e954970a53f4",
+    "bytes": 83307,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "6845a075-8573-4bdc-9346-58cb09b83547",
+  "sourceUrl": "https://styles.refero.design/style/6845a075-8573-4bdc-9346-58cb09b83547",
+  "fetchedAt": "2026-10-02T21:55:10.196635+00:00",
+  "extractedAt": "2026-10-02T21:55:10.228561+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Overflow — Style Reference",
+  "htmlSha256": "6065e8ebc42c90ac0433c15971fb98dc34e1793eede2eeafa0b84bb2f029ff47",
+  "cache": ".cache/6845a075-8573-4bdc-9346-58cb09b83547.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "761493907f51c458e77ec992908613aa1204ab3604c4935de4d0bbbe99a887c2",
+      "bytes": 20805,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f9c44cec-4e1e-4dbf-a409-adf6efa31d8d.jpg",
+    "fetchedAt": "2026-10-02T21:55:12.311425+00:00",
+    "sha256": "a2fa9b4d02de77f2961e663d50646de1a555d4e4b71a8f228a7af9aeb8879cd1",
+    "bytes": 71746,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

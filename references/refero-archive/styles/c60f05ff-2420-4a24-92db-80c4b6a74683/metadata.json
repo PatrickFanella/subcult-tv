@@ -1,0 +1,29 @@
+{
+  "styleId": "c60f05ff-2420-4a24-92db-80c4b6a74683",
+  "sourceUrl": "https://styles.refero.design/style/c60f05ff-2420-4a24-92db-80c4b6a74683",
+  "fetchedAt": "2026-10-02T21:31:21.985488+00:00",
+  "extractedAt": "2026-10-02T21:31:22.007844+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Origin Financial — Style Reference",
+  "htmlSha256": "d92054940741c1a6c801dea5150a2ad5f9af8aa9ffac53ed34559b393345fde5",
+  "cache": ".cache/c60f05ff-2420-4a24-92db-80c4b6a74683.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c86711112b921beb250dfa8cd61a9a11613cad5bc2f762f066ad6b9efbb95414",
+      "bytes": 25205,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cb0a0caf-5094-4769-9447-8e34302fde76.jpg",
+    "fetchedAt": "2026-10-02T21:31:24.084656+00:00",
+    "sha256": "a90d3ba654749ed2ae2065effc09987a033b4232343f63aecade87e208c81ef2",
+    "bytes": 77038,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

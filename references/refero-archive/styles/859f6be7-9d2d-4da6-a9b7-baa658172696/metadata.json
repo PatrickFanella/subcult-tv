@@ -1,0 +1,29 @@
+{
+  "styleId": "859f6be7-9d2d-4da6-a9b7-baa658172696",
+  "sourceUrl": "https://styles.refero.design/style/859f6be7-9d2d-4da6-a9b7-baa658172696",
+  "fetchedAt": "2026-10-02T21:30:13.991935+00:00",
+  "extractedAt": "2026-10-02T21:30:14.039468+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "mono — Style Reference",
+  "htmlSha256": "5d7fa6facbfa01d2145de77515c8239a01496310ead934a4f9ecbe9b686beb97",
+  "cache": ".cache/859f6be7-9d2d-4da6-a9b7-baa658172696.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f8cdafe23ee512f7237f76fb51fc8dfb6fda021bd4bbc06140c347a532117b10",
+      "bytes": 16745,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1dc0a18b-ace1-4689-a1fe-49afa3318fbb.jpg",
+    "fetchedAt": "2026-10-02T21:30:16.073618+00:00",
+    "sha256": "0a993f809fcab652a9ca3855af4c05cdf0c4c413ba5c3f71902391804a404aea",
+    "bytes": 166701,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}
