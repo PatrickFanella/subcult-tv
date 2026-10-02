@@ -3,7 +3,7 @@ title: Social Posts Workbench
 type: documentation
 status: active
 created: 2026-09-30
-updated: 2026-10-01
+updated: 2026-10-02
 tags:
 - topic/publishing
 ---
@@ -15,19 +15,23 @@ tags:
 - [[Social Posting Automation Plan]] — the single cadence, routing and automation contract.
 - [[Timely Posting Plan]] — current happenings, discoveries, quote candidates and the daily checks.
 - [[Product Claims Register]] — checked descriptions, maturity and claims to avoid.
-- [[SUBCULT Marketing/SUBCULT Social Content Idea Pool]] — 20 product/teaser candidates, all awaiting final proof and approval.
+- [[SUBCULT Marketing/SUBCULT Social Content Idea Pool]] — 23 product/teaser candidates, all awaiting final proof and approval.
 - [[001 Projects/Works/Patreon/Software Project Patreon Story Bank]] — deeper angles from the same candidates.
 - [[Publishing History and Cleanup]] — retired plans, expired campaigns and recovery location.
 
 ## Active focus
 
-clpr, Patchwork, HasanAra, Rekolekt, Subcult OS and Undertow. The Common House is an occasional development teaser. The confirmed starting cadence is up to two Patrick posts/day, one SUBCULT post/day and three to five CLPR posts/week (ceiling five). The timely lane includes left politics, primarily for Patrick, alongside products, independent culture, music/creative tools, archives and open-source software. Prepare 7–12 useful weekly base drafts and leave room for timely opportunities; these capacities create no filler obligation. Instagram and Patreon adapt ready material.
+clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow and Kork. The Common House is an occasional development teaser. The confirmed starting cadence is up to two Patrick posts/day, one SUBCULT post/day and three to five CLPR posts/week (ceiling five). The timely lane includes left politics, primarily for Patrick, alongside products, independent culture, music/creative tools, archives and open-source software. Prepare 7–12 useful weekly base drafts and leave room for timely opportunities; these capacities create no filler obligation. Instagram and Patreon adapt ready material.
 
 ## First full pilot week: October 5–11
 
 The October 1 background run prepared nine unapproved base drafts in [[2026-W41 Content Posts]], anchored on CLPR discovery with Patchwork and Rekolekt/HasanAra supporting material. Assets and live checks remain explicit in the note. Monday preparation can refresh an unchanged generated section. Native Changemaker now supplies cited recent product activity; daily timely checks prepare distinct short-lived notes under `Timely Drafts`. Draft preparation is not publication.
 
 The bank currently has no approved post. The old CLPR placeholder in Buffer was backed up and removed. No new post was created, scheduled or published; account queue schedules were unchanged.
+
+## Kork launch: October 2
+
+Kork, the link-page service, launched at https://kork.subcult.tv on October 2, 2026. [[Kork Launch Drafts]] holds unapproved launch copy, three draft graphics and real captures. Claims: C-KORK in [[Product Claims Register]]. Nothing was scheduled or published.
 
 ## Deferred material
 
