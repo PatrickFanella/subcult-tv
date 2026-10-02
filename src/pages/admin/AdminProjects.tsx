@@ -15,7 +15,7 @@ const emptyForm: ProjectForm = {
   slug: '',
   name: '',
   description: '',
-  type: 'software',
+  type: ['software'],
   status: 'active',
   stack: [],
   topics: [],
@@ -154,11 +154,11 @@ export default function AdminProjects() {
               textarea
             />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-              <Select
-                label="Type"
-                value={form.type}
-                onChange={(v) => setForm({ ...form, type: v })}
-                options={['software', 'media', 'tools', 'social']}
+              <Field
+                label="Types (comma-separated)"
+                value={form.type.join(', ')}
+                onChange={(v) => setForm({ ...form, type: v.split(',').map((s) => s.trim()).filter(Boolean) })}
+                required
               />
               <Select
                 label="Status"

@@ -37,7 +37,7 @@ type Project struct {
 	Description     string     `json:"description"`
 	LongDescription *string    `json:"long_description,omitempty"`
 	WhyItExists     *string    `json:"why_it_exists,omitempty"`
-	Type            string     `json:"type"`
+	Type            []string   `json:"type"`
 	Status          string     `json:"status"`
 	Stack           []string   `json:"stack"`
 	Topics          []string   `json:"topics"`
@@ -59,7 +59,7 @@ type CreateProjectRequest struct {
 	Description     string   `json:"description"`
 	LongDescription *string  `json:"long_description,omitempty"`
 	WhyItExists     *string  `json:"why_it_exists,omitempty"`
-	Type            string   `json:"type"`
+	Type            []string `json:"type"`
 	Status          string   `json:"status"`
 	Stack           []string `json:"stack"`
 	Topics          []string `json:"topics"`

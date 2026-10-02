@@ -84,7 +84,7 @@ export interface APIProject {
   description: string;
   long_description?: string;
   why_it_exists?: string;
-  type: string;
+  type: string[];
   status: string;
   stack: string[];
   topics: string[];

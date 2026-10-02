@@ -45,7 +45,7 @@ func (h *Handler) ListProjects(w http.ResponseWriter, r *http.Request) {
 		argN++
 	}
 	if typeFilter != "" {
-		query += ` AND type = $` + strconv.Itoa(argN)
+		query += ` AND $` + strconv.Itoa(argN) + ` = ANY(type)`
 		args = append(args, typeFilter)
 		argN++
 	}
@@ -70,6 +70,10 @@ func (h *Handler) ListProjects(w http.ResponseWriter, r *http.Request) {
 		projects = append(projects, p)
 	}
 
+	if err := rows.Err(); err != nil {
+		writeError(w, http.StatusInternalServerError, "failed to read projects")
+		return
+	}
 	if projects == nil {
 		projects = []models.Project{}
 	}
@@ -109,6 +113,10 @@ func (h *Handler) CreateProject(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusBadRequest, "slug and name are required")
 		return
 	}
+	if len(req.Type) == 0 {
+		writeError(w, http.StatusBadRequest, "at least one project type is required")
+		return
+	}
 	if req.Stack == nil {
 		req.Stack = []string{}
 	}
@@ -146,6 +154,10 @@ func (h *Handler) UpdateProject(w http.ResponseWriter, r *http.Request) {
 	var req models.UpdateProjectRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 		writeError(w, http.StatusBadRequest, "invalid request body")
+		return
+	}
+	if len(req.Type) == 0 {
+		writeError(w, http.StatusBadRequest, "at least one project type is required")
 		return
 	}
 	if req.Stack == nil {
