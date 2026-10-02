@@ -4,7 +4,7 @@ Selected direction: **A / Broadcast archive**. Status: local production pack v1.
 
 The live red-and-paper theme, Newsreader headlines and current PBS mark.
 
-Match the current hasanara.tv red/PBS theme. Use Newsreader for editorial headings, Inter Tight for body copy and JetBrains Mono for metadata. Keep the actual PBS artwork. The local older lime theme is not this pack’s reference. Quotes need their original passage, attribution and timestamp.
+Match the current hasanara.tv red/PBS theme. Use Newsreader for editorial headings, Inter Tight for body copy and JetBrains Mono for metadata. Keep the actual PBS artwork. The local older lime theme is not this pack’s reference. Quotes need their original passage, attribution and timestamp. The application owns the site interface: [the website design specification](WEBSITE.md) records the deployed pages, colour and type roles, components and assets, and lists where the site differs from this pack (a paper edition, its own home headline, hosted variable fonts). `tokens.json` lists the site roles under `product_interface`.
 
 ## Color roles
 
