@@ -2,7 +2,7 @@
 
 `/admin/studio` uses the existing site login. The Go API reads a private exported bundle from `STUDIO_ROOT`. It serves brand/media metadata and allowlisted asset IDs through authenticated routes. It never serves the Studio repository as a public directory.
 
-The interface reads the exported brand catalog, its guides and outlined logos, plus the nine catalogued media assets. The Studio catalog includes ten brands once the Prichal pack (subcult-studio PR 3) is merged and the bundle is re-exported. Media review status, rights and source descriptions remain visible. This interface does not edit masters or approve, schedule or publish social posts.
+The brand library reads the exported catalog, guides, fonts, tokens, logos, social templates, video assets and artwork. The current source export contains eleven brands and seventeen media assets, including the seven approved Patrick__Eff waveform treatments. Asset search, category filters, preview backgrounds and authenticated downloads are available. Media review status, rights and source descriptions remain visible. This interface does not edit masters or approve, schedule or publish social posts.
 
 ## Prepare the bundle
 
@@ -31,3 +31,16 @@ Verification covers the frontend build/lint/tests, Go tests, and a real local lo
 ## Rollback
 
 Revert the site implementation and selected public assets together. Remove the optional Studio Compose overlays/environment entries to disconnect the private library. Existing social services and the documented Studio cutover require no rollback because this site implementation does not change them. Preserve the previous bundle until the replacement has been verified.
+
+
+## Posts operations dashboard
+
+`/admin/posts` opens the automation dashboard. The **Site articles** tab preserves the existing blog editor and its publishing behavior. Social preparation remains read-only: draft copy, account cadence, configured timer definitions, receipt history, media requirements and open checks are displayed separately from approval, scheduling and delivery.
+
+From Studio, run `python scripts/export_studio.py --output /absolute/private/studio-bundle --posting-state /absolute/private/social-posting-state`. This reads successful receipt-bearing `runs/*/result.json`, `latest.json` and `radar-latest.json` into a bounded `posting.json`. It omits prompts, events, provider traces, receipt filesystem paths and runtime credentials. The export never modifies runner state, jobs, timers or drafts. Refresh the exported bundle after new preparation runs; refreshing the browser reloads the bundle and does not run a job. Configured calendars describe intended starts and are not live systemd health checks.
+
+The authenticated `GET /api/v1/admin/studio/posting` endpoint reads that snapshot through the same read-only Studio root. It validates the observation timestamp, marks snapshots older than 24 hours stale, and labels every draft unapproved. Missing or malformed snapshots return a retryable unavailable state. Delivery remains unverified because preparation results contain no provider delivery receipts. Copying a draft does not approve or submit it.
+
+The brand asset route also serves catalog-listed font, license, CSS and token files as downloads. Their exact content-addressed paths remain constrained to the export root. Private assets are fetched with the existing admin token; the UI never places credentials in download URLs.
+
+Local verification: Studio's `make check-studio`, the site's `npm test`, `npm run lint`, `npm run build`, and `cd api && go test ./...`. Use a disposable PostgreSQL database and local review account for browser checks. Deployment needs both the site implementation and a freshly exported private bundle; no production service or timer is switched by these source changes.
