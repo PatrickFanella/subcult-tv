@@ -4,7 +4,7 @@ Private source repository for SUBCULT branding, media and social production. Stu
 
 ## Contents
 
-- `branding/2026-10-01-packs/`: current ten-brand library, editable masters, fonts and licenses, generators, selected alternatives, textures, preview pages and audit reports.
+- `branding/2026-10-01-packs/`: current eleven-brand library, editable masters, fonts and licenses, generators, selected alternatives, textures, preview pages and audit reports.
 - `branding/2026-10-01-review/`: earlier design comparisons.
 - `media/library/`: social media catalog, original captures, generated artwork, video masters, edits and recipes.
 - `content/social/`: plans, content bank, claims, guidance, watchlists and draft records.

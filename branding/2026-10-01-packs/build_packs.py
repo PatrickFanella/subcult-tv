@@ -5,6 +5,7 @@ R=Path(__file__).resolve().parent
 os.environ['FONTCONFIG_FILE']=str(R/'fontconfig.xml')
 import design_helpers as H
 import clpr_directions as C
+import left_field_assets as LF
 BRANDS=json.loads((R/'brands.json').read_text())
 T=H.txt;rect=H.rect;line=H.line
 
@@ -16,6 +17,7 @@ def contrast(a,b):
  l=sorted([luminance(a),luminance(b)]);return (l[1]+.05)/(l[0]+.05)
 def embed_svg(text,x,y,w,h):return f'<image x="{x}" y="{y}" width="{w}" height="{h}" href="data:image/svg+xml;base64,{base64.b64encode(text.encode()).decode()}"/>'
 def source_mark(d,x,y,size,variant='color'):
+ if d['slug']=='left-field':return LF.mark(d,x,y,size)
  if d['slug']=='clpr':return C.logo(d,x,y,size,size,True)
  if d['slug']=='rekolekt':return H.rekolekt_mark(d,x,y,size)
  if d['slug']=='patchwork':return H.patchwork_mark(d,x,y,size,variant=='mono')
@@ -40,6 +42,7 @@ def source_mark(d,x,y,size,variant='color'):
  return embed_svg(ET.tostring(root,encoding='unicode'),x,y,size,size)
 def wordmark(d,x,y,maxw=730):
  if d['slug']=='clpr':return C.logo(d,x,y-130,min(374,maxw),172)
+ if d['slug']=='left-field':return T(x,y,'LEFT FIELD',84,d['fg'],d['body'],700,maxw=maxw)
  name={'patrick__eff':'PATRICK__EFF','rekolekt':'rekolekt','subcult':'SUBCULT','subcult-os':'Subcult OS','hasanara':'HasanAra','undertow':'UNDERTOW','patchwork':'Patchwork','kork':'kork','prichal':'PRICHAL'}[d['slug']]
  return T(x,y,name,91,d['fg'],d['display'],700,maxw=maxw)
 def write_svg(dest,name,body,w,h,exportw=None,outlined=False):
@@ -53,7 +56,7 @@ def write_svg(dest,name,body,w,h,exportw=None,outlined=False):
 
 def label(d,x,y,s,size=18,maxw=None):return T(x,y,s,size,d['safe_label'],d['label'],400,maxw=maxw)
 def base(d,w,h):return rect(0,0,w,h,d['bg'])+(H.patch_paper(w,h) if d['slug']=='patchwork' else '')+(H.cork_texture(w,h) if d['slug']=='kork' else '')+(H.drawing_ticks(18,48,h-120,'#c9c4b6') if d['slug']=='prichal' else '')
-def footer(d,w,h):return line(48,h-86,w-48,h-86,d['safe_label'],2)+T(48,h-43,d.get('url') or 'rekolekt / by SUBCULT',20,d['fg'],d['body'])
+def footer(d,w,h):return line(48,h-86,w-48,h-86,d['safe_label'],2)+T(48,h-43,d.get('url') or (d['brand']+' / by SUBCULT' if d['slug']=='left-field' else 'rekolekt / by SUBCULT'),20,d['fg'],d['body'])
 def filmstrip(d,x,y,w,h):
  a=d['accent'];f=d['fg'];s=rect(x,y,w,h,'#17141f',0,'#27222f')
  for i in range(14):
@@ -86,9 +89,10 @@ def poster(d,w,h,kind):
   elif d['slug']=='rekolekt':s+=H.rekolekt_transcript(d,m,1095,w-96,285)
   elif d['slug']=='undertow':s+=H.wave(m,1150,w-96,240,d['accent'],41)
   elif d['slug']=='kork':s+=H.cork_stack(d,m,1040,w-96,400)
+  elif d['slug']=='left-field':s+=LF.ledger(d,m,1095,w-96,285)
   elif d['slug']=='prichal':s+=H.docking_ports(d,m,1150,w-96,150)
   else:s+=line(m,1120,w-48,1120,d['accent'],12)
-  s+=T(m,1500,'YOUR NOTE OR INVITATION',31,d['fg'],d['body'],700,maxw=w-96)+T(m,1560,'Replace this line with approved copy.',25,d['fg'],d['body'],maxw=w-96)+T(m,1652,d.get('url') or 'Rekolekt by SUBCULT',25,d['fg'],d['body'])
+  s+=T(m,1500,'YOUR NOTE OR INVITATION',31,d['fg'],d['body'],700,maxw=w-96)+T(m,1560,'Replace this line with approved copy.',25,d['fg'],d['body'],maxw=w-96)+T(m,1652,d.get('url') or d['brand']+' by SUBCULT',25,d['fg'],d['body'])
  elif kind=='landscape':
   if d['slug']=='clpr':s+=filmstrip(d,w-524,177,476,293)+timeline(d,w-524,505,476,102)
   else:s+=source_mark(d,w-314,205,218)
@@ -116,7 +120,7 @@ def video(d,kind):
  if kind=='lower-third':
   s=rect(96,823,1728,174,d['bg'])+rect(96,823,12,174,d['accent'])+source_mark(d,128,847,113)+T(278,892,'TITLE / SPEAKER',46,d['fg'],d['display'],700,maxw=1400)+T(278,950,'One short line of context.',30,d['fg'],d['body'])
  elif kind=='end-card':
-  s=base(d,w,h)+source_mark(d,160,313,260)+wordmark(d,499,489,1240)+T(499,615,d.get('url') or 'Rekolekt by SUBCULT',40,d['fg'],d['body'])+line(160,825,1760,825,d['accent'],4)
+  s=base(d,w,h)+source_mark(d,160,313,260)+wordmark(d,499,489,1240)+T(499,615,d.get('url') or d['brand']+' by SUBCULT',40,d['fg'],d['body'])+line(160,825,1760,825,d['accent'],4)
  else:
   s=base(d,w,h)+label(d,96,123,d['brand'].upper()+' / '+kind.upper(),28)
   for i,htext in enumerate(['ADD A CLEAR TITLE','One useful idea.']):s+=T(96,400+i*140,htext,102 if i==0 else 70,d['fg'],d['display'] if i==0 else d['body'],700 if i==0 else 400,maxw=1728)
@@ -145,6 +149,7 @@ def guide(d,dest):
  'patchwork':'Warm paper and green are the base; bright tomato marks decorative patches and yellow marks highlights. Use darker action tomato (#b33e28) behind paper-colored button labels: 5.03:1 contrast. Keep the logo and decorative patches at their original tomato (#e85d3f). Use Fraunces for headings and Public Sans for body text. Stitched shapes are supporting artwork. Use the carried-forward P glyph in a tomato stitched patch. The mark, supporting patches, buttons and their offset shadows share the same asymmetric corner shape. Use larger, mildly uneven stitches, faint paper grain and a low-opacity fabric weave. The browser sample uses responsive SVG stitching with a dashed CSS fallback. Use soft green ink (#365448) for headings/body copy and a muted sage (#b2bba1) shadow. `components.html` shows working stitched buttons; `patch-components.css` keeps face and shadow corners identical. Product captures must preserve approximate public locations and omit private addresses.',
  'hasanara':'Match the current hasanara.tv red/PBS theme. Use Newsreader for editorial headings, Inter Tight for body copy and JetBrains Mono for metadata. Keep the actual PBS artwork. The local older lime theme is not this pack’s reference. Quotes need their original passage, attribution and timestamp.',
  'subcult-os':'Matches the live os.subcult.tv design system (the Subcults terminal foundation, selected by the user on September 30, 2026; source of truth: subcult-os contracts/design/tokens.json). Space Mono is the only typeface: bold for headings, buttons and labels, regular for body copy, uppercase with wide tracking for labels. Bold is the heaviest weight. Corners are square everywhere; panels separate with visible borders, not shadows. Purple is the action and artwork color: purple fills carry white text (5.7:1), but purple text on black is below the small-text target, so labels use cyan. Cyan also marks focus. Status colors (green, amber, red, cyan) mark states and always come with words. Event artwork stays immersive and black. The OS lettermark with a cyan cursor block is a pack mark; the site itself uses the plain wordmark.',
+ 'left-field':'Use Left Field in prose, LEFT FIELD for the wordmark, and left-field for repository/package identifiers. Keep the app palette: paper #f4f0e6, ink #16221f, rust #a33c26 and wash #e5eadc. Liberation Serif is a bundled portable editorial alternative to the app Georgia stack; Public Sans replaces Arial in pack exports, while JetBrains Mono carries source labels. The original geometric LF monogram combines a left-anchored L and an open F on the same baseline. A rust-red square fills their intersection. The square is not a ballot, result or certification symbol. Source rows are abstract graphic motifs without scores or counts. Show actual rankings only with their version, scope, date, limitations and source. Never turn a provisional score into an election prediction or imply DSA endorsement. The user approved the field-ledger direction and LF mark with the F reaching the L baseline and the red square at their intersection. No public domain has been asserted. Dark variants use paper ink; light and primary variants use dark ink. Use the monochrome mark when color reproduction is uncertain. Preserve database names, receipt namespaces and historical source identifiers.',
  'kork':'Identity for the self-serve links-page service, code name zelda. On October 2, 2026 the user selected direction A (pinned card) and the name Kork over Corkboard; the comparison is in corkboard-directions/. A services marketplace also trades as Kork (kork.app); this was noted to the user, who chose the name anyway. The mark is an original pinned paper card: two link rows on a tilted card under a cobalt pushpin. It stays legible at 32 pixels because the rows and pin are solid shapes. Cork (#d4a56c) is the field, ink (#1b130c) carries all text, paper (#fbf6ec) fills cards, and cobalt (#2340e8) is reserved for pins and large emphasis: cobalt on cork is 3.2:1, so never use it for small text. Archivo Black sets the wordmark and headlines, Atkinson Hyperlegible Next carries body copy and JetBrains Mono carries labels, the shared SUBCULT cue. Pinned cards carry placeholder destinations (@yourname, $yourname, a decorative QR glyph that encodes nothing); do not show third-party platform logos in brand artwork. Cards tilt between -7 and +7 degrees with a hard ink shadow; keep at least one card straight enough to read. The product page itself lets users pick any theme, so this identity applies to the service, not to user pages.',
  'prichal':'Identity for Prichal, managed AT Protocol PDS hosting (repository subculture-collective/prichal). The user chose the name Prichal on October 1, 2026: Russian for pier or berth, and the ISS docking node where Soyuz ships attach. The pronunciation is the Russian one (pree-CHAHL); copy never explains or corrects it. The mark is a docking node: a sphere with its equator in perspective and four flanged collars. The red flange on the right is the occupied port, the customer account. Never rotate it, recolor single collars, or add a centre dot or ring: with the cross of ports that reads as a gun sight. Mono variants turn the flange to ink. Paper (#f4f1e9) is the field, ink (#1c2230) carries text and the mark, signal red (#b23a26, 5.28:1 on paper) marks the occupied port, rules and large emphasis, and steel (#5d6675, 5.14:1) carries labels. In product interfaces red is reserved for the mark so it never reads as an error. Oswald Bold sets the uppercase wordmark and display headings, Public Sans carries body copy and JetBrains Mono carries labels and the port strip. The Cyrillic ПРИЧАЛ is a small secondary label, never a replacement for the Latin name. Engineering-drawing details (tick scale, hairlines, PORT 01–06 strip) stay light. Tagline: Your server. We keep it running. Call to action: Dock your account. We handle the rest. Do not market leaving, privacy, censorship resistance or unverified capabilities; Prichal is a private preview at prichal.subcult.tv and not open for sign-up. Messaging by audience and the plain-language table live in the product repository at brand/GUIDE.md.',
  'undertow':'Use the active editor theme: pink/cyan/lilac on dark violet, square geometry and hard offsets. Keep the existing spectrum favicon. Liberation Mono is the bundled portable alternative to the site’s system monospace stack. Chromatic offsets are for large titles, never body copy.'
@@ -197,7 +202,7 @@ The video templates use a 1920×1080 canvas and a 96-pixel outer margin. Keep ca
 
 Use verified product claims and exact approved copy. Quote/release template text is placeholder content and must be replaced. Describe the completed image in alt text, including the visible message; do not describe a screenshot placeholder as a working feature. `alt-text.md` supplies starter descriptions for the completed sample artwork.
 
-Reference: {d['source']}. Site/asset observations were made October 1, 2026. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
+Reference: {d['source']}. Source/asset observation dates are recorded in the reference above. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
 '''
  (dest/'GUIDE.md').write_text(doc)
  (dest/'alt-text.md').write_text(f'''# {d['brand']} — Alt text starters
@@ -240,7 +245,7 @@ for d in BRANDS:
   # Preserve the user's exact editable master at its original pack path.
   shutil.copy2(R/'references/subcult-mark-master.svg',dest/'logos/mark-primary-outlined.svg')
   subprocess.run(['rsvg-convert','-o',str(dest/'logos/mark-primary.png'),str(dest/'logos/mark-primary-outlined.svg')],check=True)
- banner=clpr_banner(d) if d['slug']=='clpr' else H.banner(d)
+ banner=LF.banner(d) if d['slug']=='left-field' else clpr_banner(d) if d['slug']=='clpr' else H.banner(d)
  if d['slug']=='patrick__eff':banner=ET.tostring(ET.parse(R/'references/patrick-banner-cascadia.svg').getroot(),encoding='unicode')
  if d['slug']=='subcult' and (R/'references/subcult-edited-layouts/banner-x-bluesky.svg').exists():banner=ET.tostring(ET.parse(R/'references/subcult-edited-layouts/banner-x-bluesky.svg').getroot(),encoding='unicode')
  write_svg(dest/'social','banner-x-bluesky',banner,1200,400,1500);write_svg(dest/'social','banner-tall-master',base(d,1500,600)+f'<g transform="translate(0 50) scale(1.25)">{banner}</g>',1500,600)
@@ -252,7 +257,7 @@ for d in BRANDS:
  if d['slug']=='patrick__eff' and (R/'references/patrick-banner-tall-user-master.svg').exists():
   shutil.copy2(R/'references/patrick-banner-tall-user-master.svg',dest/'social/banner-tall-master.svg')
   subprocess.run(['rsvg-convert','-w','1500','-o',str(dest/'social/banner-tall-master.png'),str(dest/'social/banner-tall-master.svg')],check=True)
- po=clpr_post(d) if d['slug']=='clpr' else H.post(d)
+ po=LF.post(d) if d['slug']=='left-field' else clpr_post(d) if d['slug']=='clpr' else H.post(d)
  if d['slug']=='subcult' and (R/'references/subcult-edited-layouts/square-post.svg').exists():po=ET.tostring(ET.parse(R/'references/subcult-edited-layouts/square-post.svg').getroot(),encoding='unicode')
  if d['slug']=='patrick__eff':po=po.replace('fill="#8a00c7">PATRICK__EFF','fill="#66ff00">PATRICK__EFF')
  if d['slug']=='subcult':po=po.replace('fill="#00ff88">SUBCULT.TV','fill="#100b19">SUBCULT.TV')

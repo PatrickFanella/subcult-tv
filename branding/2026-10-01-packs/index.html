@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SUBCULT — Selected brand packs</title><style>
 @font-face{font-family:Oswald;src:url(fonts/Oswald-1.ttf);font-weight:700}@font-face{font-family:Grotesk;src:url(fonts/Space-Grotesk-0.ttf)}*{box-sizing:border-box}body{margin:0;background:#f0ece4;color:#17131d;font:16px/1.5 Grotesk,Arial,sans-serif}a{color:#56308e}button{font:inherit;padding:9px 15px;color:inherit;background:transparent;border:1px solid #aaa08f;cursor:pointer}button[aria-pressed=true]{background:#17131d;color:#f0ece4}button:focus-visible,a:focus-visible{outline:3px solid #6335a1;outline-offset:4px}header{padding:24px 32px;background:#8b5cf6;color:#100b19;border-bottom:10px solid #00ff88}header h1{font:700 clamp(42px,6vw,84px)/1.08 Oswald,Arial,sans-serif;margin:4px 0 14px;text-transform:uppercase}header p{max-width:950px;margin:8px 0}.kicker{font:13px monospace;letter-spacing:.06em}.download{display:inline-block;padding:12px 18px;background:#100b19;color:#f0ece4;text-decoration:none;margin:15px 0 8px}nav{padding:24px 32px;display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid #b9b0a1}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 28px;padding:28px 32px}.grid.single{grid-template-columns:1fr;max-width:1200px}article{min-width:0;border-top:2px solid #17131d;padding-top:16px}h2{margin:4px 0;font-size:27px}.note{font-size:14px;color:#62576b}.board{display:block;width:100%;height:auto;margin:16px 0}.links{display:flex;flex-wrap:wrap;gap:14px;font-size:14px}details{margin:20px 0}summary{cursor:pointer}video{width:100%;margin-top:12px;background:#17131d}.template{margin:24px 32px;padding:28px 0;border-top:2px solid #17131d;display:grid;grid-template-columns:1fr 1fr;gap:32px}.template img{width:100%}footer{padding:24px 32px;border-top:1px solid #b9b0a1;font-size:14px}code{background:#e1dbd0;padding:3px 5px}@media(max-width:700px){header,nav,footer{padding-left:18px;padding-right:18px}.grid{grid-template-columns:1fr;padding:24px 18px}.template{margin:18px;grid-template-columns:1fr}}
-</style></head><body><header><div class="kicker">SUBCULT / BRAND LIBRARY / V1</div><h1>Brand & asset packs.</h1><p>Patrick A · Rekolekt A · SUBCULT C. Five product themes carried forward. CLPR uses Clip stack with a single-clip square post.</p><p>Editable and outlined logos, social layouts, screenshot frames, video templates, fonts and design tokens for all eight brands, plus Kork (direction A, selected October 2, 2026; <a href="corkboard-directions/index.html">compare directions</a>) and Prichal (docking node, added October 2, 2026).</p><a class="download" href="subcult-brand-asset-packs-v1.zip">Download all eight packs + starter kit</a></header><nav id="filters" aria-label="Choose a brand"></nav><main><div class="grid" id="grid"></div><section class="template"><div><div class="kicker">THE NEXT BRAND</div><h2>Reusable starter kit</h2><p>Edit the brand name, palette, type and destination in <code>brand.json</code>. Generate fourteen editable layouts, tokens, a source register and a file manifest.</p><p><a href="starter-template.zip">Download starter kit</a> · <a href="starter-template/README.md">Instructions</a> · <a href="starter-template/brand.json">Configuration</a></p><p class="note">The generator checks text contrast, validates colors and refuses to overwrite an existing pack. Its initials are placeholders for an original mark.</p></div><div><img src="starter-template/example/social/banner.png" width="1500" height="500" alt="Starter example: New Brand, One clear idea, example.com"></div></section></main><footer><p><a href="README.md">Library guide</a> · <a href="selected-directions.json">Direction record</a> · <a href="verification.json">Validation record</a></p><p>Local asset production. Site and profile changes are separate. Template copy and screenshots must be replaced with verified material before publication. The original asset library is preserved.</p></footer><script>
+</style></head><body><header><div class="kicker">SUBCULT / BRAND LIBRARY / V1</div><h1>Brand & asset packs.</h1><p>Patrick A · Rekolekt A · SUBCULT C. Five product themes carried forward. CLPR uses Clip stack with a single-clip square post.</p><p>Editable and outlined logos, social layouts, screenshot frames, video templates, fonts and design tokens for all eleven brands, including Kork, Prichal and Left Field.</p><a class="download" href="subcult-brand-asset-packs-v1.zip">Download all packs + starter kit</a></header><nav id="filters" aria-label="Choose a brand"></nav><main><div class="grid" id="grid"></div><section class="template"><div><div class="kicker">THE NEXT BRAND</div><h2>Reusable starter kit</h2><p>Edit the brand name, palette, type and destination in <code>brand.json</code>. Generate fourteen editable layouts, tokens, a source register and a file manifest.</p><p><a href="starter-template.zip">Download starter kit</a> · <a href="starter-template/README.md">Instructions</a> · <a href="starter-template/brand.json">Configuration</a></p><p class="note">The generator checks text contrast, validates colors and refuses to overwrite an existing pack. Its initials are placeholders for an original mark.</p></div><div><img src="starter-template/example/social/banner.png" width="1500" height="500" alt="Starter example: New Brand, One clear idea, example.com"></div></section></main><footer><p><a href="README.md">Library guide</a> · <a href="selected-directions.json">Direction record</a> · <a href="verification.json">Validation record</a></p><p>Local asset production. Site and profile changes are separate. Template copy and screenshots must be replaced with verified material before publication. The original asset library is preserved.</p></footer><script>
 const BRANDS=[
   {
     "id": "subcult-c",
@@ -267,11 +267,37 @@ const BRANDS=[
     "description": "A docking node on paper: one red occupied port, engineering-drawing rules and a port strip. Managed account servers for the open social web.",
     "mode": "docking",
     "url": "prichal.subcult.tv",
-    "source": "Identity for Prichal, managed AT Protocol PDS hosting (subculture-collective/prichal); name, palette, mark and messaging selected with the user October 1–2, 2026",
+    "source": "Identity for Prichal, managed AT Protocol PDS hosting (subculture-collective/prichal); name, palette, mark and messaging selected with the user October 1\u20132, 2026",
     "slug": "prichal",
     "label": "JetBrains Mono",
     "safe_label": "#5d6675",
     "tag_color": "#5d6675",
+    "selected_by_user": true,
+    "direction_selection": "user"
+  },
+  {
+    "id": "left-field-a",
+    "brand": "Left Field",
+    "variant": "A",
+    "name": "The field ledger",
+    "bg": "#f4f0e6",
+    "fg": "#16221f",
+    "accent": "#a33c26",
+    "secondary": "#e5eadc",
+    "display": "Liberation Serif",
+    "body": "Public Sans",
+    "label": "JetBrains Mono",
+    "safe_label": "#a33c26",
+    "headline": [
+      "Read the field.",
+      "Trace the evidence."
+    ],
+    "tag": "SEAT RESEARCH / SOURCE CONTEXT",
+    "description": "Warm paper, dark green ink and rust-red annotations: an editorial system for seat research and its source records.",
+    "mode": "left-field",
+    "url": null,
+    "source": "Left Field source checkout at abcf90fdd833adfb9fc6ba568d2e661742ff2538, src/app/globals.css and src/components/presentational.tsx; observed 2026-10-02. New original LF monogram. LF baseline/intersection revision approved by the user in this thread.",
+    "slug": "left-field",
     "selected_by_user": true,
     "direction_selection": "user"
   }
