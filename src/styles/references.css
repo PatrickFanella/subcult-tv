@@ -1,0 +1,456 @@
+.references-page {
+  --reference-border: #ffffff20;
+}
+.reference-back {
+  display: inline-block;
+  color: var(--color-dust, #aaa);
+  margin-bottom: 1.5rem;
+}
+.reference-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+.reference-filter-panel {
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-right: 1.5rem;
+  border-right: 1px solid var(--reference-border);
+}
+.reference-filter-panel label,
+.reference-filter-panel legend {
+  font-size: 0.85rem;
+}
+.reference-filter-panel form {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.reference-search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--reference-border);
+  padding: 0.6rem;
+}
+.reference-search-box input {
+  background: transparent;
+  width: 100%;
+  min-width: 0;
+  outline: none;
+  font-size: 0.85rem;
+}
+.reference-search-box:focus-within {
+  outline: 2px solid var(--color-acid, #c7ff00);
+  outline-offset: 2px;
+}
+.references-page select {
+  background: #17151c;
+  color: #f2f2f2;
+  padding: 0.65rem;
+  border: 1px solid var(--reference-border);
+  width: 100%;
+}
+.reference-filter-panel fieldset {
+  border: 0;
+  margin-top: 1rem;
+  min-width: 0;
+}
+.reference-filter-panel legend {
+  margin-bottom: 0.75rem;
+}
+.reference-filter-panel legend small {
+  display: block;
+  color: #aaa;
+  margin-top: 0.25rem;
+}
+.reference-tag-options {
+  display: grid;
+  gap: 0.2rem;
+  max-height: 48vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+.reference-tag-options label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.4rem 0;
+  cursor: pointer;
+}
+.reference-tag-options small {
+  margin-left: auto;
+  color: #aaa;
+}
+.reference-tag-options input {
+  accent-color: var(--color-acid, #c7ff00);
+}
+.reference-view-switch {
+  display: flex;
+  gap: 0.35rem;
+}
+.reference-view-switch button,
+.reference-active-tags button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.reference-result-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--reference-border);
+  margin-bottom: 1.25rem;
+}
+.reference-result-toolbar p {
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+.reference-result-toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+}
+.reference-result-toolbar select {
+  width: auto;
+}
+.reference-active-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+.reference-cards {
+  display: grid;
+  gap: 1.25rem;
+}
+.reference-grid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.reference-cards article {
+  min-width: 0;
+  border: 1px solid var(--reference-border);
+  background: #ffffff03;
+}
+.studio-page .reference-card-open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  height: 100%;
+}
+.studio-page .reference-card-open:hover {
+  background: #ffffff07;
+}
+.reference-card-open:hover h2 {
+  color: var(--color-acid, #c7ff00);
+}
+.reference-thumbnail {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #25222c;
+  border-bottom: 1px solid var(--reference-border);
+}
+.reference-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.reference-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+  font-family: monospace;
+  color: #bbb;
+}
+.reference-placeholder small {
+  font-size: 0.7rem;
+}
+.reference-card-copy {
+  padding: 1rem;
+}
+.reference-card-copy h2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  margin: 0.5rem 0 0.75rem;
+}
+.reference-card-copy h2 svg {
+  flex-shrink: 0;
+}
+.reference-card-summary {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #bbb;
+}
+.reference-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.85rem;
+}
+.reference-tags span {
+  font-family: monospace;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.45rem;
+  border: 1px solid #ffffff25;
+  color: #bbb;
+}
+.reference-list {
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+.reference-list .reference-card-open {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+}
+.reference-list .reference-thumbnail {
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 160px;
+  border-bottom: 0;
+  border-right: 1px solid var(--reference-border);
+}
+.reference-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+}
+.studio-page button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.reference-empty {
+  padding: 4rem 1rem;
+  text-align: center;
+  border: 1px dashed var(--reference-border);
+}
+.reference-empty h2 {
+  margin-bottom: 0.75rem;
+}
+.reference-empty button {
+  margin-top: 1rem;
+}
+.reference-dialog {
+  --reference-border: #ffffff20;
+  width: min(1100px, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  margin: auto;
+  padding: 2rem;
+  background: #141218;
+  color: #eee;
+  border: 1px solid #ffffff35;
+  overflow-y: auto;
+}
+.reference-dialog::backdrop {
+  background: #000b;
+  backdrop-filter: blur(4px);
+}
+.reference-dialog-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--reference-border);
+  padding-bottom: 1rem;
+}
+.reference-dialog-header h2 {
+  font-size: 1.75rem;
+  margin-top: 0.4rem;
+}
+.reference-dialog-header button {
+  flex-shrink: 0;
+}
+.reference-lede {
+  margin: 1.25rem 0 0;
+  color: #ccc;
+  line-height: 1.7;
+}
+.reference-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 1.25rem 0;
+  color: var(--color-acid, #c7ff00);
+}
+.reference-screenshots > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.reference-screenshots figure {
+  background: #25222c;
+  padding: 0.75rem;
+}
+.reference-screenshots img {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  object-position: top;
+}
+.reference-screenshots button {
+  margin-top: 0.75rem;
+}
+.reference-evidence dl div {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 1rem;
+  margin: 0.75rem 0;
+  font-size: 0.85rem;
+}
+.reference-evidence dt {
+  color: #aaa;
+  text-transform: capitalize;
+}
+.reference-evidence dd {
+  overflow-wrap: anywhere;
+}
+.reference-document {
+  margin: 2rem 0;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.reference-document h1 {
+  font-size: 1.75rem;
+}
+.reference-document h2 {
+  font-size: 1.4rem;
+  border-top: 1px solid var(--reference-border);
+  padding-top: 1rem;
+  margin: 2rem 0 1rem;
+}
+.reference-document h3 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.75rem;
+}
+.reference-document p,
+.reference-document ul,
+.reference-document ol {
+  margin: 0.75rem 0;
+}
+.reference-document ul,
+.reference-document ol {
+  padding-left: 1.5rem;
+}
+.reference-document ul {
+  list-style: disc;
+}
+.reference-document ol {
+  list-style: decimal;
+}
+.reference-document blockquote {
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-acid, #c7ff00);
+  color: #bbb;
+}
+.reference-document a {
+  color: var(--color-acid, #c7ff00);
+  text-decoration: underline;
+}
+.reference-document table {
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+.reference-document th,
+.reference-document td {
+  border: 1px solid var(--reference-border);
+  padding: 0.6rem;
+  text-align: left;
+  min-width: 100px;
+}
+.reference-document pre {
+  overflow-x: auto;
+  padding: 1rem;
+  background: #ffffff07;
+  font-size: 0.8rem;
+}
+.reference-document code {
+  color: #ddd;
+  font-family: monospace;
+}
+.reference-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+@media (max-width: 900px) {
+  .reference-layout {
+    grid-template-columns: 1fr;
+  }
+  .reference-filter-panel {
+    position: static;
+    border-right: 0;
+    padding: 0;
+  }
+  .reference-tag-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    max-height: 160px;
+  }
+  .reference-tag-options label {
+    min-height: 36px;
+  }
+}
+@media (max-width: 540px) {
+  .reference-grid {
+    grid-template-columns: 1fr;
+  }
+  .reference-list .reference-card-open {
+    grid-template-columns: 90px minmax(0, 1fr);
+  }
+  .reference-list .reference-thumbnail {
+    min-height: 140px;
+  }
+  .reference-list .reference-card-summary {
+    -webkit-line-clamp: 2;
+  }
+  .reference-result-toolbar {
+    align-items: start;
+    flex-direction: column;
+  }
+  .reference-dialog {
+    padding: 1rem;
+    width: calc(100% - 1rem);
+  }
+  .reference-dialog-header h2 {
+    font-size: 1.4rem;
+  }
+  .reference-evidence dl div {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+  .reference-pagination {
+    font-size: 0.75rem;
+    gap: 0.35rem;
+  }
+}

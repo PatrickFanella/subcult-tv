@@ -391,6 +391,39 @@ export interface StudioJobs {
 }
 export const getStudioCatalog = () => apiFetch<StudioCatalog>('/api/v1/admin/studio');
 export const getStudioJobs = () => apiFetch<StudioJobs>('/api/v1/admin/studio/jobs');
+
+export interface StudioReference {
+  id: string;
+  name: string;
+  url: string;
+  collection: string;
+  summary: string;
+  preview: string;
+  tags: string[];
+  guide?: string;
+  images?: string[];
+  attachments?: { name: string; asset: string }[];
+  provenance?: Record<string, string>;
+}
+export interface ReferenceResults {
+  items: StudioReference[];
+  total: number;
+  page: number;
+  per_page: number;
+  total_pages: number;
+}
+export interface ReferenceFacets {
+  tags: { name: string; count: number }[];
+  collections: { name: string; count: number }[];
+}
+export const getStudioReferences = (params: URLSearchParams, signal?: AbortSignal) =>
+  apiFetch<ReferenceResults>(`/api/v1/admin/studio/references?${params}`, { signal });
+export const getStudioReferenceFacets = (signal?: AbortSignal) =>
+  apiFetch<ReferenceFacets>('/api/v1/admin/studio/references/facets', { signal });
+export const getStudioReference = (id: string, signal?: AbortSignal) =>
+  apiFetch<StudioReference>(`/api/v1/admin/studio/references/${encodeURIComponent(id)}`, {
+    signal,
+  });
 export async function getStudioAsset(id: string, signal?: AbortSignal): Promise<Blob> {
   const token = getToken();
   const response = await fetch(`${API_BASE}/api/v1/admin/studio/assets/${encodeURIComponent(id)}`, {

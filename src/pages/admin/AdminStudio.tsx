@@ -60,7 +60,10 @@ export default function AdminStudio() {
           <h1 id="studio-heading">Brand & asset library</h1>
           <p>Selected identities. Editable exports. Media ready for review.</p>
         </div>
-        <button onClick={refresh}>Refresh library</button>
+        <div className="studio-switch">
+          <Link to="/admin/studio/references">Design references →</Link>
+          <button onClick={refresh}>Refresh library</button>
+        </div>
       </header>
       <div className="production-rail">
         <span>01 / Find the right asset</span>

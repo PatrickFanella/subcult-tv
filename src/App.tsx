@@ -18,6 +18,7 @@ const NewsletterConfirmed = lazy(() => import('@/pages/NewsletterConfirmed'));
 const AdminLogin = lazy(() => import('@/pages/admin/AdminLogin'));
 const AdminLayout = lazy(() => import('@/components/admin/AdminLayout'));
 const AdminStudio = lazy(() => import('@/pages/admin/AdminStudio'));
+const AdminReferences = lazy(() => import('@/pages/admin/AdminReferences'));
 const AdminDashboard = lazy(() => import('@/pages/admin/AdminDashboard'));
 const AdminProjects = lazy(() => import('@/pages/admin/AdminProjects'));
 const AdminPosts = lazy(() => import('@/pages/admin/AdminPosts'));
@@ -56,6 +57,7 @@ export default function App() {
           <Route path="admin" element={<AdminLayout />}>
             <Route index element={<AdminDashboard />} />
             <Route path="studio" element={<AdminStudio />} />
+            <Route path="studio/references" element={<AdminReferences />} />
             <Route path="projects" element={<AdminProjects />} />
             <Route path="posts" element={<AdminPosts />} />
             <Route path="contacts" element={<AdminContacts />} />

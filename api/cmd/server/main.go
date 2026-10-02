@@ -90,6 +90,18 @@ func main() {
 	h.BrevoNewsletterListID = cfg.BrevoNewsletterListID
 	h.StudioRoot = os.Getenv("STUDIO_ROOT")
 	h.StudioStateRoot = os.Getenv("STUDIO_STATE_ROOT")
+	if h.StudioRoot != "" {
+		indexCtx, cancel := context.WithTimeout(ctx, 5*time.Minute)
+		count, indexErr := h.SyncStudioReferences(indexCtx)
+		cancel()
+		if indexErr != nil && !os.IsNotExist(indexErr) {
+			slog.Error("studio reference index", "error", indexErr)
+			os.Exit(1)
+		}
+		if indexErr == nil {
+			slog.Info("studio references indexed", "count", count)
+		}
+	}
 	r := router.New(cfg, h)
 
 	srv := &http.Server{

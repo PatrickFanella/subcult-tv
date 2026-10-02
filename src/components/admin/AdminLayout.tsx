@@ -6,6 +6,7 @@ import { useAuth } from '@/context/useAuth';
 const NAV_ITEMS = [
   { to: '/admin', label: 'Dashboard', icon: '◈' },
   { to: '/admin/studio', label: 'Brand library', icon: '◩' },
+  { to: '/admin/studio/references', label: 'References', icon: '▦' },
   { to: '/admin/projects', label: 'Projects', icon: '▣' },
   { to: '/admin/posts', label: 'Posts', icon: '▤' },
   { to: '/admin/contacts', label: 'Contacts', icon: '▧' },
@@ -48,7 +49,7 @@ export default function AdminLayout() {
             <NavLink
               key={item.to}
               to={item.to}
-              end={item.to === '/admin'}
+              end={item.to === '/admin' || item.to === '/admin/studio'}
               className={({ isActive }) =>
                 `flex items-center gap-3 px-3 py-2.5 font-mono text-sm no-underline transition-colors ${
                   isActive
