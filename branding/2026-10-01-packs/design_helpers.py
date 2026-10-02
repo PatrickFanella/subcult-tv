@@ -121,6 +121,53 @@ def patchwork_mark(d,x,y,size,mono=False):
  body+='<g transform="scale(2.5)"><path d="M18 48V16h16.5c8.2 0 13.5 4.4 13.5 11.5S42.7 39 34.5 39H27v9h-9Zm9-17h7c3.3 0 5-1.2 5-3.5S37.3 24 34 24h-7v7Z" fill="'+glyph+'"/></g>'
  return f'<g transform="translate({x} {y}) scale({size/160})">{body}</g>'
 
+
+# Corkboard: original artwork drawn for this pack (October 2, 2026).
+CORK_INK='#1b130c'
+def cork_texture(w,h):
+ # Deterministic cork grain: small dark and light specks at low opacity.
+ dots=''.join(f'<circle cx="{(i*37+11)%96}" cy="{(i*53+5)%96}" r="{.8+(i%4)*.45}" fill="{"#7a5228" if i%3 else "#f3d2a2"}"/>' for i in range(46))
+ return f'<defs><pattern id="cork-grain" width="96" height="96" patternUnits="userSpaceOnUse">{dots}</pattern></defs><rect width="{w}" height="{h}" fill="url(#cork-grain)" opacity=".42"/>'
+def pushpin(cx,cy,r,color,shine):
+ return f'<circle cx="{cx+r*.18}" cy="{cy+r*.3}" r="{r}" fill="{CORK_INK}" opacity=".22"/><circle cx="{cx}" cy="{cy}" r="{r}" fill="{color}"/><circle cx="{cx-r*.34}" cy="{cy-r*.34}" r="{r*.3}" fill="{shine}"/>'
+def qr_glyph(x,y,size,ink):
+ # Decorative QR-like grid with three finder squares; it does not encode data.
+ n=9;c=size/n;s=''
+ for fx,fy in [(0,0),(6,0),(0,6)]:
+  s+=rect(x+fx*c,y+fy*c,3*c,3*c,'none',0)+f'<rect x="{x+fx*c+c*.25}" y="{y+fy*c+c*.25}" width="{c*2.5}" height="{c*2.5}" fill="none" stroke="{ink}" stroke-width="{c*.5}"/>'+rect(x+fx*c+c,y+fy*c+c,c,c,ink)
+ for i,j in [(4,0),(4,2),(3,4),(5,4),(7,4),(4,6),(6,6),(8,5),(5,8),(7,8),(8,7),(4,4),(6,3),(2,4)]:s+=rect(x+i*c,y+j*c,c,c,ink)
+ return s
+def pinned_card(d,x,y,w,h,rot,lines=(),qr=False):
+ # A paper card pinned to the board: hard shadow, ink rule border, pushpin.
+ paper=d['secondary'] if not d.get('mono') else 'none';ink=CORK_INK if not d.get('mono') else d['fg']
+ cx=x+w/2;cy=y+h/2;s=f'<g transform="rotate({rot} {cx} {cy})">'
+ if not d.get('mono'):s+=rect(x+7,y+9,w,h,CORK_INK,4)[:-2]+' opacity=".28"/>'
+ s+=f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="4" fill="{paper}" stroke="{ink}" stroke-width="3"/>'
+ if qr:
+  q=min(w,h)-46;s+=qr_glyph(x+(w-q)/2,y+30,q,ink)
+ ty=y+h*.5
+ for text,size,font,weight in lines:
+  s+=txt(x+22,ty,text,size,ink,font,weight,maxw=w-44);ty+=size*1.6
+ pin_c=d['accent'] if not d.get('mono') else d['fg']
+ s+=pushpin(cx,y+4,max(9,w*.06),pin_c,d['secondary'] if not d.get('mono') else d['bg'])+'</g>'
+ return s
+def corkboard_mark(d,x,y,size):
+ mono=d.get('mono');ink=CORK_INK if not mono else d['fg'];paper=d['secondary'] if not mono else 'none'
+ s='<g transform="rotate(-7 80 88)">'
+ if not mono:s+='<rect x="29" y="40" width="112" height="108" rx="10" fill="'+CORK_INK+'" opacity=".28"/>'
+ s+=f'<rect x="22" y="32" width="112" height="108" rx="10" fill="{paper}" stroke="{ink}" stroke-width="7"/>'
+ s+=rect(42,74,72,15,ink,7.5)+rect(42,100,48,15,ink,7.5)+'</g>'
+ pin_c=d['accent'] if not mono else d['fg']
+ s+=f'<circle cx="80" cy="32" r="19" fill="{pin_c}"/><circle cx="73.5" cy="25.5" r="6" fill="{d["secondary"] if not mono else d["bg"]}"/>'
+ return f'<g transform="translate({x} {y}) scale({size/160})">{s}</g>'
+def cork_stack(d,x,y,w,h):
+ # Three pinned destinations: a handle, a tip jar and a QR card.
+ L,B=d['label'],d['body'];cw=w*.46;ch=h*.42
+ s=pinned_card(d,x+w*.02,y+h*.06,cw,ch,-4,[('@yourname',ch*.2,B,700),('SOCIAL',ch*.11,L,400)])
+ s+=pinned_card(d,x+w*.5,y,cw,ch,5,[('$yourname',ch*.2,B,700),('TIPS',ch*.11,L,400)])
+ s+=pinned_card(d,x+w*.26,y+h*.5,w*.36,h*.5,-2,[],qr=True)
+ return s
+
 def mark(d,x,y,size):
  m=d['mode'];a=d['accent'];f=d['fg'];s=''
  if m=='patrick-wave' and (R/'references/patrick-variations/primary-outlined.svg').exists():return patrick_mark(d,x,y,size)
@@ -138,6 +185,7 @@ def mark(d,x,y,size):
   return f'<image x="{x}" y="{y}" width="{size}" height="{size}" href="data:image/svg+xml;base64,{base64.b64encode(artwork.encode()).decode()}"/>'
  if m=='clpr':
   s=txt(12,95,'c',132,f,'Barlow Condensed',700)+f'<circle cx="128" cy="65" r="14" fill="{a}"/>'
+ elif m=='corkboard':return corkboard_mark(d,x,y,size)
  elif m=='patchwork':return patchwork_mark(d,x,y,size)
  elif m=='hasanara':s=image('hasanara-logo.svg',0,30,160,100)
  elif m=='undertow':s=image('undertow-favicon.svg',0,0,160,160)
@@ -156,8 +204,13 @@ def mark(d,x,y,size):
   s='<g transform="translate(3 2) scale(.9)">'+txt(7,120,'S_',112,f,'Oswald',700)+c+rect(148,65,18,18,a)+'</g>'
  return f'<g transform="translate({x} {y}) scale({size/160})">{s}</g>'
 def banner(d):
- bg,fg,a,b=d['bg'],d['fg'],d['accent'],d['secondary'];m=d['mode'];s=rect(0,0,1200,400,bg)+(patch_paper(1200,400) if m=='patchwork' else '')
- if m=='clpr':
+ bg,fg,a,b=d['bg'],d['fg'],d['accent'],d['secondary'];m=d['mode'];s=rect(0,0,1200,400,bg)+(patch_paper(1200,400) if m=='patchwork' else '')+(cork_texture(1200,400) if m=='corkboard' else '')
+ if m=='corkboard':
+  s+=txt(44,62,d['tag'],17,d['safe_label'],d['label'])+line(44,82,640,82,fg,3)
+  for i,h in enumerate(d['headline']):s+=txt(44,178+i*86,h,78,fg,d['display'],700,maxw=600)
+  s+=txt(44,355,d['url'],20,fg,d['label'])
+  s+=pinned_card(d,705,58,215,128,-5,[('@yourname',27,d['body'],700),('SOCIAL',15,d['label'],400)])+pinned_card(d,950,92,200,124,6,[('$yourname',26,d['body'],700),('TIPS',15,d['label'],400)])+pinned_card(d,800,222,150,150,-3,[],qr=True)+pinned_card(d,985,250,170,104,4,[('WATCH',24,d['body'],700),('LATEST VIDEO',13,d['label'],400)])
+ elif m=='clpr':
   s+=line(40,40,1160,40,a,3)+txt(44,76,'CLIP INDEX / 01',17,b,'IBM Plex Mono')+image('clpr-wordmark.svg',45,89,360,193)
   s+=txt(480,153,'THE CLIP.',79,fg,d['display'],700)+txt(480,238,'THE MOMENT.',79,fg,d['display'],700)+rect(480,272,550,2,a)+txt(480,312,'Clip discovery + curation',26,fg,d['body'])+txt(480,352,'clpr.tv',18,a,'IBM Plex Mono')
  elif m=='patchwork':
@@ -203,9 +256,12 @@ def banner(d):
   s+=rect(0,0,14,400,a)+txt(40,55,'SUBCULT.TV / INDEPENDENT SOFTWARE',18,fg,'JetBrains Mono')+txt(40,189,'BUILD',130,fg,'Oswald',700)+txt(40,333,'TOGETHER.',130,fg,'Oswald',700,maxw=925)+rect(1050,78,94,94,a)+line(1097,58,1097,192,fg)+line(1030,125,1164,125,fg)
  return s
 def post(d):
- bg,fg,a,b=d['bg'],d['fg'],d['accent'],d['secondary'];m=d['mode'];s=rect(0,0,600,600,bg)+(patch_paper(600,600) if m=='patchwork' else '')
- s+=txt(36,49,d['tag'],14,d['safe_label'] if m=='os' else a,'Space Mono' if m=='os' else 'JetBrains Mono',maxw=526)
- if m=='clpr':
+ bg,fg,a,b=d['bg'],d['fg'],d['accent'],d['secondary'];m=d['mode'];s=rect(0,0,600,600,bg)+(patch_paper(600,600) if m=='patchwork' else '')+(cork_texture(600,600) if m=='corkboard' else '')
+ s+=txt(36,49,d['tag'],14,d['safe_label'] if m=='os' else d.get('tag_color',a),'Space Mono' if m=='os' else 'JetBrains Mono',maxw=526)
+ if m=='corkboard':
+  s+=txt(36,140,'PIN IT UP.',66,fg,d['display'],700,maxw=528)+txt(36,190,'Share one link for everything.',26,fg,d['body'],maxw=528)
+  s+=cork_stack(d,40,232,520,270)
+ elif m=='clpr':
   s+=rect(35,86,529,210,'#17141f')+wave(67,184,462,125,a,35)+rect(48,271,117,24,a)+txt(59,289,'CLIP / 001',13,bg,'IBM Plex Mono',700)
   s+=txt(36,373,'Keep the moment.',53,fg,'Barlow Condensed',700)+txt(36,433,'Find the next one.',53,fg,'Barlow Condensed',700)
  elif m=='patchwork':

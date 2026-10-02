@@ -218,5 +218,32 @@
     "label": "JetBrains Mono",
     "safe_label": "#ff9fe0",
     "selected_by_user": false
+  },
+  {
+    "id": "corkboard-a",
+    "brand": "Corkboard",
+    "variant": "A",
+    "name": "Pinned / flyer wall",
+    "bg": "#d4a56c",
+    "fg": "#1b130c",
+    "accent": "#2340e8",
+    "secondary": "#fbf6ec",
+    "display": "Archivo Black",
+    "body": "Atkinson Hyperlegible Next",
+    "headline": [
+      "EVERY LINK.",
+      "ONE BOARD."
+    ],
+    "tag": "LINK PAGES / BY SUBCULT",
+    "description": "A cork field, paper cards and cobalt pushpins: every destination pinned to one board.",
+    "mode": "corkboard",
+    "url": "corkboard.subcult.tv",
+    "source": "New identity for the self-serve links-page service (code name zelda), proposed October 2, 2026",
+    "slug": "corkboard",
+    "label": "JetBrains Mono",
+    "safe_label": "#1b130c",
+    "tag_color": "#1b130c",
+    "selected_by_user": false,
+    "direction_selection": "proposed; awaiting user review"
   }
 ]
