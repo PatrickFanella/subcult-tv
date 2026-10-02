@@ -44,7 +44,10 @@ func (h *Handler) Subscribe(w http.ResponseWriter, r *http.Request) {
 	_, err := h.DB.Exec(r.Context(),
 		`INSERT INTO subscribers (email, unsubscribe_token, confirmed)
 		 VALUES ($1, $2, $3)
-		 ON CONFLICT (email) DO UPDATE SET unsubscribed_at = NULL`,
+		 ON CONFLICT (email) DO UPDATE SET
+       confirmed = CASE WHEN subscribers.unsubscribed_at IS NOT NULL THEN EXCLUDED.confirmed ELSE subscribers.confirmed END,
+       subscribed_at = CASE WHEN subscribers.unsubscribed_at IS NOT NULL THEN NOW() ELSE subscribers.subscribed_at END,
+       unsubscribed_at = NULL`,
 		email, uuid.New().String(), !doubleOptIn,
 	)
 	if err != nil {
@@ -74,7 +77,7 @@ func (h *Handler) Unsubscribe(w http.ResponseWriter, r *http.Request) {
 
 	var email string
 	err := h.DB.QueryRow(r.Context(),
-		`UPDATE subscribers SET unsubscribed_at = NOW()
+		`UPDATE subscribers SET confirmed = FALSE, unsubscribed_at = NOW(), provider_event_at = NOW()
 		 WHERE unsubscribe_token = $1 AND unsubscribed_at IS NULL
 		 RETURNING email`,
 		req.Token,

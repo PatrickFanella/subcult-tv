@@ -84,6 +84,7 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 		api.With(middleware.RateLimit(publicFormLimiter)).Post("/contacts", h.SubmitContact)
 
 		api.Get("/patreon/campaign", h.GetPatreonCampaign)
+		api.Post("/webhooks/brevo", h.BrevoNewsletterWebhook)
 
 		api.Get("/stats", h.Stats)
 
