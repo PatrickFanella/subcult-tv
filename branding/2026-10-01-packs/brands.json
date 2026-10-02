@@ -294,7 +294,7 @@
     "description": "Warm paper, dark green ink and rust-red annotations: an editorial system for seat research and its source records.",
     "mode": "left-field",
     "url": null,
-    "source": "Left Field main dbc17f65f3ad71a40a6932fd9835c6bd8706bc95, src/app/globals.css and src/components/presentational.tsx, serving seats.dsaslate.com; observed 2026-10-02. New original LF monogram. LF baseline/intersection revision approved by the user in this thread.",
+    "source": "Left Field main 1b071f2e5691a2359d11978c7d7850c0c43104fa, src/app/globals.css and src/components/presentational.tsx, serving seats.dsaslate.com; observed 2026-10-02. New original LF monogram. LF baseline/intersection revision approved by the user in this thread.",
     "slug": "left-field",
     "selected_by_user": true,
     "direction_selection": "user"

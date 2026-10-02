@@ -1,8 +1,9 @@
 """Left Field's site interface roles, observed from the product repository.
 
 Source: subculture-collective/left-field, src/app/globals.css and src/components/presentational.tsx at main
-dbc17f6 (observed October 2, 2026), the revision serving seats.dsaslate.com. The pack carries the same
-paper, ink, rust and wash; the site adds muted text, rule and status colours and uses system fonts.
+1b071f2 (observed October 2, 2026), the revision serving seats.dsaslate.com. The pack carries the same
+paper, ink, rust and wash; the site adds muted text, rule and status colours and uses system fonts. The
+site carries the pack's icons, share card, banner and LF mark.
 brands/left-field/WEBSITE.md describes how the site uses them.
 """
 INTERFACE={
@@ -17,8 +18,9 @@ INTERFACE={
  'fonts':{'reading':'Georgia, "Times New Roman", serif','labels_and_controls':'Arial, sans-serif','delivery':'system fonts; the site loads no font files'},
  'page_width_px':{'default':1320,'priority_index':1440},'breakpoints_px':[1000,800,700],
  'index_page_size':50,'default_minimum_inputs':2,
+ 'pack_assets':{'icon':'product/favicon.svg','apple_icon':'product/apple-touch-icon.png','manifest_icons':['product/icon-192.png','product/icon-512.png'],'share_card':'product/og.png','about_banner':'product/hero-outlined.svg','masthead_mark':'logos/mark-primary.svg, redrawn inline','record':'docs/brand/site-assets.json in the product repository'},
  'public_url':'https://seats.dsaslate.com/',
- 'source':'left-field src/app/globals.css at main dbc17f6',
+ 'source':'left-field src/app/globals.css at main 1b071f2',
 }
 
-GUIDE_NOTE=' The product owns the site interface: [the website design specification](WEBSITE.md) records the deployed pages, copy rules and components, and lists where the site differs from this pack (system fonts, no LF mark yet). `tokens.json` lists the site roles under `product_interface`.'
+GUIDE_NOTE=' The product owns the site interface: [the website design specification](WEBSITE.md) records the deployed pages, copy rules and components, and lists the pack files the site carries and where the site differs from this pack (system fonts). `tokens.json` lists the site roles under `product_interface`.'
