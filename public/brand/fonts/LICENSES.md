@@ -16,3 +16,8 @@ Tight, and Space Mono from Google Fonts. Newsreader and Inter Tight are the
 variable Latin subsets. Their full SIL Open Font License texts are included as
 `fraunces-OFL.txt`, `publicsans-OFL.txt`, `newsreader-OFL.txt`,
 `intertight-OFL.txt`, and `spacemono-OFL.txt`.
+
+The Kork landing uses Archivo Black (`archivo-black-400.ttf`, Copyright 2017 The
+Archivo Black Project Authors), copied unchanged from the subcult-studio Kork
+brand pack (`branding/2026-10-01-packs/fonts/ArchivoBlack-Regular.ttf`). Its SIL
+Open Font License text is `archivoblack-OFL.txt`.

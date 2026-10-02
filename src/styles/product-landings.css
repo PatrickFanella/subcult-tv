@@ -125,6 +125,26 @@
   --lp-display: 'Oswald', 'Arial Narrow', sans-serif;
   --lp-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
+
+.product-landing[data-product='kork'] {
+  --lp-bg: #d4a56c;
+  --lp-panel: #fbf6ec;
+  --lp-text: #1b130c;
+  --lp-muted: #3d2b18;
+  --lp-line: #1b130c;
+  --lp-accent: #2340e8;
+  --lp-accent-text: #1b130c;
+  --lp-on-accent: #fbf6ec;
+  --lp-focus: #2340e8;
+  --lp-radius: 4px;
+  --lp-shadow: 6px 6px 0 rgb(27 19 12 / 28%);
+  --lp-body: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', system-ui, sans-serif;
+  --lp-display: 'Archivo Black', 'Arial Black', sans-serif;
+  --lp-mono: 'JetBrains Mono', ui-monospace, monospace;
+  /* Cork specks behind the whole page. */
+  background-image: radial-gradient(rgb(27 19 12 / 16%) 1px, transparent 1.5px);
+  background-size: 22px 22px;
+}
 .landing-container {
   max-width: 1280px;
   padding: 0 32px;
@@ -447,6 +467,61 @@
 }
 .product-landing[data-product='undertow'] :is(.landing-visual, .landing-features article) {
   border-width: 2px;
+}
+/* Kork "Pinned card": paper cards with ink borders and cobalt pins on a cork field.
+   Cobalt is 3.2:1 on cork, so it is used only for pins and large controls. */
+.product-landing[data-product='kork'] :is(h1, h2, h3) {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+/* The mark carries its own clear space; trim it so the pin sits beside the name. */
+.product-landing[data-product='kork'] .landing-wordmark img {
+  width: 84px;
+  height: 84px;
+  margin: -12px -6px -12px -14px;
+}
+.product-landing[data-product='kork'] .landing-wordmark h1 {
+  text-transform: lowercase;
+}
+.product-landing[data-product='kork'] .landing-headline {
+  text-transform: uppercase;
+  text-wrap: balance;
+  line-height: 1.05;
+}
+.product-landing[data-product='kork'] .landing-button {
+  border: 3px solid var(--lp-text);
+  box-shadow: 4px 4px 0 var(--lp-text);
+  font: 700 16px var(--lp-body);
+}
+.product-landing[data-product='kork'] :is(.landing-visual, .landing-features article) {
+  position: relative;
+  overflow: visible;
+  border: 3px solid var(--lp-text);
+}
+.product-landing[data-product='kork'] .landing-visual img {
+  border-radius: var(--lp-radius) var(--lp-radius) 0 0;
+}
+.product-landing[data-product='kork'] .landing-visual figcaption {
+  border-top-width: 3px;
+}
+.product-landing[data-product='kork'] :is(.landing-visual, .landing-features article)::before {
+  content: '';
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  margin-left: -13px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 34% 34%, #fbf6ec 0 3px, #2340e8 3.5px);
+  box-shadow: 2px 3px 0 rgb(27 19 12 / 35%);
+  z-index: 1;
+}
+.product-landing[data-product='kork'] .landing-features article:nth-child(1) {
+  transform: rotate(-1.2deg);
+}
+.product-landing[data-product='kork'] .landing-features article:nth-child(3) {
+  transform: rotate(1deg);
 }
 /* CLPR "Tally": uppercase condensed headings and controls. */
 .product-landing[data-product='clpr'] :is(h2, h3) {

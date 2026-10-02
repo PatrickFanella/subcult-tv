@@ -136,5 +136,24 @@
     "order": 6,
     "coverColor": "#b23a26",
     "coverPattern": "circuit"
+  },
+  "kork": {
+    "slug": "kork",
+    "name": "Kork",
+    "description": "Themed link pages for every social, payment, and contact link.",
+    "longDescription": "Kork is a self-serve link-in-bio service. Build one themed page with 92 catalog services, links, embeds, QR codes, a contact card, and an email sign-up, then share a single link. Payment buttons go straight to the creator's own accounts, and analytics are anonymous daily totals.",
+    "whyItExists": "A bio has room for one link. Kork puts the socials, tip jars, music, video, and contact details behind it on one page, without trackers and without taking a cut of tips or sales.",
+    "status": "active",
+    "type": ["software"],
+    "stack": ["Go", "PostgreSQL", "React", "TypeScript", "Vite"],
+    "topics": ["link-in-bio", "link-pages", "creators", "privacy"],
+    "url": "https://kork.subcult.tv",
+    "repoUrl": "https://git.subcult.tv/subculture-collective/kork",
+    "lastUpdated": "2026-10-02T00:00:00Z",
+    "screenshot": "/screenshots/kork-editor-1440.webp",
+    "featured": true,
+    "order": 7,
+    "coverColor": "#d4a56c",
+    "coverPattern": "dots"
   }
 }
