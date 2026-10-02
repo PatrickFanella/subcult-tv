@@ -1,0 +1,20 @@
+{
+  "name": "New Brand",
+  "slug": "new-brand",
+  "initials": "NB",
+  "tagline": "One clear idea.",
+  "website": "example.com",
+  "colors": {
+    "background": "#f0ece4",
+    "text": "#17131d",
+    "accent": "#7042bd",
+    "secondary": "#71685a"
+  },
+  "fonts": {
+    "display": "Space Grotesk",
+    "body": "Public Sans",
+    "label": "JetBrains Mono"
+  },
+  "mark_status": "Temporary initials. Replace with an original mark.",
+  "motif": "rule"
+}

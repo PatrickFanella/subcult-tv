@@ -1,0 +1,41 @@
+/* Patchwork stitched shape: face and shadow share the same outline. */
+:root {
+  --patchwork-ink: #365448;
+  --patchwork-paper: #f2efe7;
+  --patchwork-green: #12664f;
+  --patchwork-tomato: #e85d3f;
+  --patchwork-action-tomato: #b33e28;
+  --patchwork-shadow: #b2bba1;
+  --patchwork-corners: 2px 22px 2px 22px;
+}
+.patchwork-button {
+  position: relative;
+  isolation: isolate;
+  border: 0;
+  border-radius: var(--patchwork-corners);
+  padding: 21px 28px;
+  background: var(--patchwork-green);
+  color: var(--patchwork-paper);
+  font: 700 20px/1.2 "Public Sans", sans-serif;
+  cursor: pointer;
+  box-shadow: 5px 6px 0 var(--patchwork-shadow);
+}
+.patchwork-button::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  pointer-events: none;
+  border: 1.5px dashed var(--patchwork-paper);
+  border-radius: 2px 14px 2px 14px;
+}
+.patchwork-button--tomato { background: var(--patchwork-action-tomato); }
+.patchwork-button:focus-visible { outline: 3px solid var(--patchwork-ink); outline-offset: 9px; }
+
+/* Texture tiles contain their own low opacity; keep their base colors opaque. */
+body { background-image: url("textures/paper.svg"); }
+.patchwork-button::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; background-image: url("textures/fabric.svg"); pointer-events: none; }
+.patchwork-button::after { border-width: 2.4px; }
+.patchwork-button.has-stitches::after { display: none; }
+.patchwork-stitches { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; color: var(--patchwork-paper); }
+.sewing-details { display:flex; gap:24px; flex-wrap:wrap; margin:36px 0; }
+.sewing-details img { width:120px; height:120px; }

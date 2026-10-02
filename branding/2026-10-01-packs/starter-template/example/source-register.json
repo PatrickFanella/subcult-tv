@@ -1,0 +1,13 @@
+{
+  "status": "starter",
+  "mark": "Temporary initials. Replace with an original mark.",
+  "assets": [],
+  "required_fields": [
+    "path",
+    "source",
+    "creator",
+    "rights",
+    "verified_at",
+    "intended_use"
+  ]
+}

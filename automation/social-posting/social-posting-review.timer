@@ -1,0 +1,11 @@
+[Unit]
+Description=Sunday SUBCULT publishing review at 4pm Chicago
+
+[Timer]
+OnCalendar=Sun *-*-* 16:00:00 America/Chicago
+Persistent=true
+AccuracySec=1min
+Unit=social-posting-review.service
+
+[Install]
+WantedBy=timers.target

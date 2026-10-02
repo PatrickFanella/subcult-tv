@@ -1,0 +1,117 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "summary",
+    "drafts",
+    "open_checks"
+  ],
+  "properties": {
+    "summary": {
+      "type": "string"
+    },
+    "open_checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "drafts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "account",
+          "kind",
+          "text",
+          "due_at",
+          "expires_at",
+          "source_ids",
+          "quote_url",
+          "evidence",
+          "next_check",
+          "media"
+        ],
+        "properties": {
+          "account": {
+            "type": "string",
+            "enum": [
+              "patrick",
+              "subcult",
+              "clpr"
+            ]
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "current",
+              "discovery",
+              "quote"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "due_at": {
+            "type": "string"
+          },
+          "expires_at": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "quote_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "next_check": {
+            "type": "string"
+          },
+          "media": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "mode",
+              "asset_ids",
+              "brief",
+              "alt_text"
+            ],
+            "properties": {
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "library",
+                  "generate",
+                  "capture"
+                ]
+              },
+              "asset_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "brief": {
+                "type": "string"
+              },
+              "alt_text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

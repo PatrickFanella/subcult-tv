@@ -1,0 +1,224 @@
+{
+  "date": "2026-10-01",
+  "svg_parse": "passed",
+  "outlined_logos": 80,
+  "png_files": 192,
+  "lower_third_transparency": "all eight passed",
+  "original_files_checked": 228,
+  "errors": [],
+  "browser": {
+    "desktop_gallery": "Eight cards loaded, CLPR filter returned one card, no horizontal overflow",
+    "mobile": "not verified",
+    "clpr_video_metadata": {
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "video_previews": [
+    {
+      "brand": "subcult",
+      "codec": "h264",
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "brand": "patrick__eff",
+      "codec": "h264",
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "brand": "clpr",
+      "codec": "h264",
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "brand": "patchwork",
+      "codec": "h264",
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "brand": "hasanara",
+      "codec": "h264",
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "brand": "rekolekt",
+      "codec": "h264",
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "brand": "subcult-os",
+      "codec": "h264",
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "brand": "undertow",
+      "codec": "h264",
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "starter_checks": [
+    "Fourteen SVG/PNG layouts rendered",
+    "Existing output refused",
+    "Low text contrast refused",
+    "Invalid hex color refused"
+  ],
+  "caption_styles": "All eight parsed and rendered by ffmpeg",
+  "rebuild_sources": "Captured marks and fonts bundled; Python syntax checks passed",
+  "patchwork_refinement": {
+    "header_sizes": "Wordmark 39 to 45; banner headline 63 to 68; post headline 46 to 50",
+    "ink": "#365448",
+    "shadow": "#b2bba1",
+    "shape": "2px 22px 2px 22px",
+    "browser": "Green/tomato button faces verified; native box-shadow follows the 2px 22px 2px 22px border radius; no desktop overflow",
+    "svg_png": "Revised Patchwork SVGs parse and PNGs decode"
+  },
+  "subcult_lettermark": {
+    "master": "references/subcult-mark-master.svg",
+    "sha256": "f3d146fa2bd5e5ab409b3f16191a85aff8e9eaef8336dfaf79ae1585947dd140",
+    "primary_preserved_byte_for_byte": true,
+    "svg_parse": 36,
+    "png_decode": 24,
+    "visual": "User master, purple avatar and monochrome mark inspected",
+    "monochrome": "Accent block outlined to preserve letter visibility"
+  },
+  "subcult_edited_layouts": {
+    "masters_preserved_byte_for_byte": true,
+    "assets": [
+      "banner-x-bluesky",
+      "banner-x-bluesky-logo",
+      "square-post"
+    ],
+    "exports": "Banners 1500x500, square post 1080x1080",
+    "svg_png": "Parsed and decoded",
+    "square_post_revision": "Latest user edit captured and exported; SVG source matches exactly"
+  },
+  "patrick_cascadia": {
+    "fonts": "Official Microsoft Cascadia Mono, bold and regular, bundled with OFL",
+    "banner": "Original user artwork retained; derived font revision used for export",
+    "wordmark": "0.08em separation between underscores",
+    "svg_png": "All Patrick SVGs parse and PNGs decode",
+    "visual": "Banner and square post rendered and inspected"
+  },
+  "patrick_logo_variations": {
+    "edited_sources": "Five original SVG variations preserved byte for byte",
+    "production_fonts": "Nerd Font alias normalized to bundled Cascadia Mono; production masters outlined",
+    "primary": "PF, brackets, waveform and colored offset layers",
+    "alternate": "Clean signal and tall display variants exported",
+    "mono": "Simplified bracketed PF and dot; embedded master fully outlined",
+    "style": "Standalone waveforms and large headings: warm white front, lime lower-left, purple upper-right; small copy stays flat",
+    "svg_parse": 61,
+    "png_decode": 34,
+    "visual": "Avatar, banner, square post, story and monochrome mark inspected",
+    "video": "Eight seconds, 1920x1080",
+    "browser": "Preview HTML served; native screenshot failed, so rendered HTML not qualified"
+  },
+  "patrick_banner_revision": {
+    "proportions": "Latest user-edited SVG preserved as generation source",
+    "white": "PF mark already #f3f0ed; YouTube triangle changed from #ffffff to #f3f0ed",
+    "png": "1500x500; no pure-white pixels; muted-white pixels confirmed"
+  },
+  "clpr_banner_completion": {
+    "source": "Original user edits preserved; completed SVG is generation source",
+    "logo": "User-edited play triangle retained as editable paths",
+    "filmstrip": "29 evenly spaced perforations per row; equal 28-unit side margins",
+    "layout": "Logo, headline and timeline columns; labels clear of perforations",
+    "export": "1500x500 banner; taller master and contact sheet refreshed",
+    "visual": "Completed PNG inspected"
+  },
+  "clpr_layout_directions": {
+    "logo": "User play-triangle wordmark and icon applied to all working assets",
+    "directions": [
+      "Focus frame",
+      "Clip stack",
+      "Play field"
+    ],
+    "working_direction": "User selected Clip stack for main layouts, Focus frame for square post",
+    "svg_parse": 78,
+    "png_decode": 67,
+    "lower_third": "Transparent corner verified",
+    "video": "Updated eight-second preview",
+    "visual": "Working banner, avatar, lockup and three-direction board inspected",
+    "review_exports": "Three downloadable sets of editable social and video layouts",
+    "selection_checks": "Stack transforms found in banner and story; square has focus frame without stack rotations; exports parse and decode"
+  },
+  "rekolekt_transcript_revision": {
+    "mark": "Original captured logo restored",
+    "story": "Transcript rows replace decorative waveform",
+    "original_pack_pixel_comparison": "All PNGs match except story-template.png and pack-preview.png"
+  },
+  "gallery_script_repair": {
+    "javascript_syntax": "passed",
+    "dom_check": "8 cards and 9 filters passed",
+    "browser_automation": "navigation and snapshot unavailable"
+  },
+  "patrick_banner_master_revision": {
+    "source": "references/patrick-banner-tall-user-master.svg",
+    "master_bytes": "Offset correction applied; current reference and production master match",
+    "standard_banner": "derived from nested master artwork; render compared",
+    "gallery_syntax": "passed"
+  },
+  "patrick_banner_offsets": {
+    "heading_layer_geometry": "identical",
+    "purple_translation": [
+      2.124,
+      -2.124
+    ],
+    "lime_translation": [
+      -2.124,
+      2.124
+    ],
+    "render": "inspected"
+  },
+  "clpr_single_clip_square": {
+    "construction": "shared with stack front card",
+    "render": "inspected",
+    "png_comparison": "only square post and pack preview changed",
+    "gallery_syntax": "passed"
+  },
+  "patrick_selected_banner": {
+    "primary": "White mark with purple waveform",
+    "standard_export": "matches selected option exactly",
+    "alternates": [
+      "solid purple without waveform",
+      "solid white without waveform",
+      "original three-color"
+    ],
+    "gallery_syntax": "passed"
+  },
+  "patchwork_contrast_fix": {
+    "action_tomato": "#b33e28",
+    "paper_text_contrast": 5.025794071423445,
+    "svg_text_elements": 56,
+    "AA_normal_all_checked_pairs": "passed",
+    "original_logo_png_comparison": "unchanged"
+  },
+  "patchwork_texture_revision": {
+    "svg_parse": "passed",
+    "png_decode": "passed",
+    "responsive_stitches": [
+      "220x66",
+      "340x66",
+      "520x88"
+    ],
+    "conservative_text_contrast_min": 4.7067,
+    "sewing_assets": "original editable vectors",
+    "browser_render": "T3 preview open timed out; not qualified"
+  }
+}

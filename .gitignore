@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.font-cache/
+*.lock
+*.zip
+.env
+.env.*
+!.env.example
+config.local.json
+automation/social-posting/config.json
+runtime/
+state/
+.cache/

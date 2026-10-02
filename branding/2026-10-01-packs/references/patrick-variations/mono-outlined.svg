@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 160 160"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <title
+     id="title1">Patrick__eff — Signal in brackets — editable master</title>
+  <desc
+     id="desc1">Option 1. Transparent background. Separate editable layers for angle brackets, slash, waveform bars and lime dot.</desc>
+  <g
+     id="left-bracket"
+     stroke-linecap="square"
+     stroke-linejoin="miter" />
+  <g
+     id="status-dot"
+     stroke-linecap="square"
+     stroke-linejoin="miter" />
+  <g
+     id="slash"
+     stroke-linecap="square"
+     stroke-linejoin="miter" />
+  <g
+     id="right-bracket"
+     stroke-linecap="square"
+     stroke-linejoin="miter">
+    <g
+       id="g4"
+       transform="matrix(1.0548391,0,0,1.0582725,3.8413575,-4.5720975)"
+       style="display:inline">
+      <path
+         id="left-bracket-path"
+         d="M 27,47 7,80 27,113"
+         fill="none"
+         stroke="#f3f0ed"
+         stroke-width="5" />
+      <g
+         id="g1"
+         style="stroke-linecap:square;stroke-linejoin:miter"
+         transform="translate(-11.923077,-3)" />
+      <circle
+         id="dot"
+         cx="96.064514"
+         cy="56.796329"
+         r="6"
+         fill="#f3f0ed" />
+      <path
+         id="slash-path"
+         d="M 109.575,53.938231 93.206416,105.20974"
+         fill="none"
+         stroke="#f3f0ed"
+         stroke-width="3.60614"
+         style="stroke-width:5;stroke-dasharray:none" />
+      <path
+         id="right-bracket-path"
+         d="m 115.31727,46.863601 22,33 -22,32.999989"
+         fill="none"
+         stroke="#f3f0ed"
+         stroke-width="5" />
+    </g>
+  </g>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Patrick__eff — Signal in brackets — editable master</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="M 41.659668,89.672363 V 82.90918 h 5.427246 q 3.645996,0 5.62207,-2.003907 2.003907,-2.003906 2.003907,-5.594238 0,-3.395508 -2.003907,-5.232422 -1.976074,-1.836914 -5.62207,-1.836914 h -5.315918 v -6.763183 h 5.315918 q 7.431152,0 11.494629,3.506836 4.063477,3.479003 4.063477,9.852539 0,7.069336 -4.063477,10.96582 -4.063477,3.868652 -11.494629,3.868652 z M 34.97998,101 V 61.478516 h 7.347657 V 101 Z m 33.955079,0 V 61.478516 h 7.347656 V 101 Z m 0,-14.723145 v -6.818847 h 21.625488 v 6.818847 z m 0,-18.035156 v -6.763183 h 27.108398 v 6.763183 z"
+     id="text1"
+     style="font-weight:700;font-size:57px;font-family:'Cascadia Mono';font-variant-ligatures:none;fill:#f3f0ed"
+     aria-label="PF" />
+</svg>

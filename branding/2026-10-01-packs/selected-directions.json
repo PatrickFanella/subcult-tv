@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-01",
+  "selected_by": "user",
+  "directions": {
+    "Patrick__eff": "A / Signal",
+    "Rekolekt": "A / Index",
+    "SUBCULT": "C / Culture"
+  },
+  "clpr_correction": "Filmstrip and editing timeline in place of waveform",
+  "established_theme_examples": [
+    "CLPR",
+    "Patchwork",
+    "HasanAra",
+    "Subcult OS",
+    "Undertow"
+  ],
+  "status": "local asset packs v1",
+  "clpr": {
+    "main": "Clip stack",
+    "square_post": "Single clip card from the stack",
+    "selected_by_user": true
+  },
+  "rekolekt_mark": {
+    "direction": "Original logo restored",
+    "status": "Requested by user",
+    "story_illustration": "Transcript rows and timestamps replace the decorative waveform only"
+  },
+  "patrick_banner_logo": {
+    "primary": "White mark with purple waveform",
+    "alternates": [
+      "Solid purple without waveform",
+      "Solid warm white without waveform",
+      "Original white/purple/green"
+    ],
+    "scope": "Banner only; logo system elsewhere retains its current styling",
+    "selected_by_user": true
+  }
+}

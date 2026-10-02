@@ -1,0 +1,377 @@
+{
+  "brand": "CLPR",
+  "direction": "Play / Clip stack + single-clip square",
+  "status": "local production pack v1",
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "bytes": 4698,
+      "sha256": "802f62a16cdbab31f71ee74df970badda520703feb49124d7e6f2034f6bb2b14"
+    },
+    {
+      "path": "alt-text.md",
+      "bytes": 586,
+      "sha256": "1666ff086f3842bd91734313f730a85299c060967935ca3dace78e472da7cb11"
+    },
+    {
+      "path": "fonts/Barlow-0.ttf",
+      "bytes": 82624,
+      "sha256": "a35caa4687f434d66453c1fe423d7074cfa9fd7ab80c19b0780f3862887d2fc9"
+    },
+    {
+      "path": "fonts/Barlow-1.ttf",
+      "bytes": 85776,
+      "sha256": "74103fd6d41bc32c63aa2e6eb3db619ddb80ce9ca1b1420d5548a23b8ee5d154"
+    },
+    {
+      "path": "fonts/Barlow-Condensed-0.ttf",
+      "bytes": 80968,
+      "sha256": "c82d65280835cb3cd1b499863cf68cae8c6193c45ffae9495d28d01f749a9ae2"
+    },
+    {
+      "path": "fonts/Barlow-Condensed-1.ttf",
+      "bytes": 87120,
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7"
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-0.ttf",
+      "bytes": 128812,
+      "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2"
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-1.ttf",
+      "bytes": 131040,
+      "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6"
+    },
+    {
+      "path": "fonts/barlow-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "fonts/barlowcondensed-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "fonts/ibmplexmono-OFL.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "logos/lockup-dark-outlined.svg",
+      "bytes": 4732,
+      "sha256": "b459e011a4da32e5fbbc330819927019e35bc35418bbc64278532308567d9ae2"
+    },
+    {
+      "path": "logos/lockup-dark.png",
+      "bytes": 13734,
+      "sha256": "51f1155782ead358a5b024636902f4eabbc9ff205012340f204fe3a9029f0d4f"
+    },
+    {
+      "path": "logos/lockup-dark.svg",
+      "bytes": 4495,
+      "sha256": "cf703f453146112228be8085c9b2072a34b30da2db52842d7bc50713a78d1f2f"
+    },
+    {
+      "path": "logos/lockup-light-outlined.svg",
+      "bytes": 4733,
+      "sha256": "11957c6bb1d5604d4ec3ef1f73f296a2f534771c07070279cf5d84485423a2d0"
+    },
+    {
+      "path": "logos/lockup-light.png",
+      "bytes": 13663,
+      "sha256": "382c465449df0441b976c5094bc0cbaa035fc9111007b447b6e007e191379dd8"
+    },
+    {
+      "path": "logos/lockup-light.svg",
+      "bytes": 4496,
+      "sha256": "d81a85371b26e3961f648b09d9c67e6761a80a8d305b827c860c9e7f95966260"
+    },
+    {
+      "path": "logos/lockup-mono-dark-outlined.svg",
+      "bytes": 4737,
+      "sha256": "077d5636301ac5a93bfe6f6b904b2e7fd0c5e2f5cdc206ee7e96371bf3bb21a7"
+    },
+    {
+      "path": "logos/lockup-mono-dark.png",
+      "bytes": 8747,
+      "sha256": "93f3dfddde23847140c03ad39fb2de7ec44acc1a050ef758e2542dd6bf18363a"
+    },
+    {
+      "path": "logos/lockup-mono-dark.svg",
+      "bytes": 4500,
+      "sha256": "66de31a8e1187c8eb29302b71a7555fe713493959e3c01a2eba3d674b6a7e002"
+    },
+    {
+      "path": "logos/lockup-mono-light-outlined.svg",
+      "bytes": 4738,
+      "sha256": "2173240be455c9512c55ebcabec2f0a847c7d6880416c518abc02135eae4ce40"
+    },
+    {
+      "path": "logos/lockup-mono-light.png",
+      "bytes": 10979,
+      "sha256": "8acfa1aef4efe6730a57459e3d4f7648f32ff987a6dddb6e33f1d1a87a13901b"
+    },
+    {
+      "path": "logos/lockup-mono-light.svg",
+      "bytes": 4501,
+      "sha256": "08b91d930f4b061ac505416fd5cc72ddb29e68245d2a37f772c25a25032704ad"
+    },
+    {
+      "path": "logos/lockup-primary-outlined.svg",
+      "bytes": 4735,
+      "sha256": "398bb2d5e66d543f14e4cee178672149748e310158c701f5f49bff6c72414c17"
+    },
+    {
+      "path": "logos/lockup-primary.png",
+      "bytes": 13700,
+      "sha256": "afd2e2c43e1334487e96522698f0db3d09a5258ee0ea7885ce17a1b9bb072b53"
+    },
+    {
+      "path": "logos/lockup-primary.svg",
+      "bytes": 4498,
+      "sha256": "b9fea15c793512d10a478878416a170df3040e2a5fa5e725b8072d8ed3ac1ffd"
+    },
+    {
+      "path": "logos/mark-dark-outlined.svg",
+      "bytes": 2550,
+      "sha256": "e38691e31f458acea79a59c3f44d0c90fa2b975a51bc779601f0e7e469785770"
+    },
+    {
+      "path": "logos/mark-dark.png",
+      "bytes": 5707,
+      "sha256": "57e52c2e3fc7e4504d03cbecce35baaa2926a8deaae5885f89c71e11cf722eb8"
+    },
+    {
+      "path": "logos/mark-dark.svg",
+      "bytes": 2313,
+      "sha256": "5ef0b4b7af05baa0a7e32a4d31c2b9359a217d1ffbe1c3b6e61ba00b74aaa886"
+    },
+    {
+      "path": "logos/mark-light-outlined.svg",
+      "bytes": 2551,
+      "sha256": "7c8fffdfa154566c08e79aae307525b65894b6d45bc37982fd4bacbd93f0da07"
+    },
+    {
+      "path": "logos/mark-light.png",
+      "bytes": 5707,
+      "sha256": "57e52c2e3fc7e4504d03cbecce35baaa2926a8deaae5885f89c71e11cf722eb8"
+    },
+    {
+      "path": "logos/mark-light.svg",
+      "bytes": 2314,
+      "sha256": "99301d53f982b3a87916a6e7ab1e52834c801c027faf7a43618e976a69852836"
+    },
+    {
+      "path": "logos/mark-mono-dark-outlined.svg",
+      "bytes": 2555,
+      "sha256": "93db23f6565c25fdbee819bda4f44eed15f157d017e502e6310eabd2d5f62564"
+    },
+    {
+      "path": "logos/mark-mono-dark.png",
+      "bytes": 2820,
+      "sha256": "ab256dc73b709a9a1f081ec484607ac7959adae4ece950f262f22d062466dc4a"
+    },
+    {
+      "path": "logos/mark-mono-dark.svg",
+      "bytes": 2318,
+      "sha256": "d9101e0d114e6658151fdae20a55bb1a83f80cf16f8f93869164e85975ef9453"
+    },
+    {
+      "path": "logos/mark-mono-light-outlined.svg",
+      "bytes": 2556,
+      "sha256": "0180032a1c25be526446857e5b9d2b6552553b30fb8c9dc4c10daa252c903d0d"
+    },
+    {
+      "path": "logos/mark-mono-light.png",
+      "bytes": 3539,
+      "sha256": "b3628d6bc91dc411bb7afbed76b74f56d92aaf36406051ad34265091d3c6a840"
+    },
+    {
+      "path": "logos/mark-mono-light.svg",
+      "bytes": 2319,
+      "sha256": "8ef99c2bce8e2e0ae4a021a3f30639a71814caf8bf307c3c38270f3533d382eb"
+    },
+    {
+      "path": "logos/mark-primary-outlined.svg",
+      "bytes": 2553,
+      "sha256": "3e2610121784e39caaa2bf73aefd56bb1a16fc75b552fd30d2c05d31e4ca4520"
+    },
+    {
+      "path": "logos/mark-primary.png",
+      "bytes": 5707,
+      "sha256": "57e52c2e3fc7e4504d03cbecce35baaa2926a8deaae5885f89c71e11cf722eb8"
+    },
+    {
+      "path": "logos/mark-primary.svg",
+      "bytes": 2316,
+      "sha256": "266beddfd165026b6e4fd3735da6b5af887d80871f9f1efaee72ec0318fbcaf5"
+    },
+    {
+      "path": "pack-preview.png",
+      "bytes": 138434,
+      "sha256": "792689d1de70af0ba97016c92ea7d50bfdb14f51a09061689533ea52acd96bd3"
+    },
+    {
+      "path": "pack-preview.svg",
+      "bytes": 50915,
+      "sha256": "d6d838650271f4f06ed56bc6a6e80fedbf2fa6c85df085814be0b1707ea5297f"
+    },
+    {
+      "path": "social/avatar.png",
+      "bytes": 10790,
+      "sha256": "868c39c78c8ccae4c4d758487b6fb1b0d591a13712052c7a85d07919cfd04082"
+    },
+    {
+      "path": "social/avatar.svg",
+      "bytes": 2376,
+      "sha256": "d020d84e4be7c0cc3e0fda7de2b4cb9de8d9e7d13594c4983b95fb32e3237e2c"
+    },
+    {
+      "path": "social/banner-tall-master.png",
+      "bytes": 48171,
+      "sha256": "47bfd618d70903452ffdc8ce69012ae02a9fa60d54e24f68ec6b13c29b619ed0"
+    },
+    {
+      "path": "social/banner-tall-master.svg",
+      "bytes": 8093,
+      "sha256": "34b31ce5746567373ac6033c92905aa48b4e106d197346b2ac1d9f3e17e37f6b"
+    },
+    {
+      "path": "social/banner-x-bluesky-original.svg",
+      "bytes": 12669,
+      "sha256": "3439f5fb1debd2d96e7200688b716e87aea7da48550547bc59fdc6d6de98879b"
+    },
+    {
+      "path": "social/banner-x-bluesky.png",
+      "bytes": 47183,
+      "sha256": "f1cd381bae3d1fae2645708fb93dbe37667d119049b4176f90234ecc0a7c2aa9"
+    },
+    {
+      "path": "social/banner-x-bluesky.svg",
+      "bytes": 7980,
+      "sha256": "ac4861dc1f313a2d473371f72bd47262966f7d8c263635e02516a0c97fa8365b"
+    },
+    {
+      "path": "social/landscape-template.png",
+      "bytes": 46317,
+      "sha256": "fd8c14a73ae98756e78826197c2e0b01c24d99e8ecee1a262d8f82dd960cc9c9"
+    },
+    {
+      "path": "social/landscape-template.svg",
+      "bytes": 7843,
+      "sha256": "cfb9461878838483c3878e26d9d9f5f7558d77d6c3c11e44fc42efce6affcea4"
+    },
+    {
+      "path": "social/quote-template.png",
+      "bytes": 49925,
+      "sha256": "d6dcefeddce1b48fb74633588baf68eebcf682a5a46a72b478c95aaa3ab46088"
+    },
+    {
+      "path": "social/quote-template.svg",
+      "bytes": 7862,
+      "sha256": "f2ab00a7abcc10ef11b676291915ae84f9a7948cd27b48eec117f574ebe956b2"
+    },
+    {
+      "path": "social/release-template.png",
+      "bytes": 54625,
+      "sha256": "5aa9184ea3368c34d1acf01051aaa76e61275ee581aa4792a4ca10249488e1e0"
+    },
+    {
+      "path": "social/release-template.svg",
+      "bytes": 7963,
+      "sha256": "964598448d5552e7c62f1f64669a7ec65041fc8a66a6b16dc6ffcca0d1786b89"
+    },
+    {
+      "path": "social/screenshot-frame.png",
+      "bytes": 33904,
+      "sha256": "fc615f94a1ffb0be433296f3429326d38e6fe6dd6b0821d7fe40fdb7d4d52e3d"
+    },
+    {
+      "path": "social/screenshot-frame.svg",
+      "bytes": 1118,
+      "sha256": "a26e3d9c69276dfca0d9be981af785a6ca9405d44b204d1fb1d26a106afa1850"
+    },
+    {
+      "path": "social/square-post.png",
+      "bytes": 45279,
+      "sha256": "de375c6ecfbef0264f32192f028f385b2e26093f581b153d9e2df4edf1d8678e"
+    },
+    {
+      "path": "social/square-post.svg",
+      "bytes": 7305,
+      "sha256": "60655674bdab00160a7754b283cbe8be4f5ccf994a1cae907897a9345cea3705"
+    },
+    {
+      "path": "social/story-template.png",
+      "bytes": 64139,
+      "sha256": "6289b44a0588f7ca44f16b98345a19db17f60859636d08051c334fa41f59cf5c"
+    },
+    {
+      "path": "social/story-template.svg",
+      "bytes": 7974,
+      "sha256": "66d370eb4f5c162bcccbfa1369d4b83c2d5d7354d60c1e09f84c2a63ab41fd57"
+    },
+    {
+      "path": "tokens.css",
+      "bytes": 240,
+      "sha256": "485a65b250c3f9ccef5439b6c23a531e762aa433c0baa07818d4c863ce2c9f49"
+    },
+    {
+      "path": "tokens.json",
+      "bytes": 687,
+      "sha256": "7d749c51a8437398d2287c60d0343663ed0338fd9c708f9e859f53edb44a069b"
+    },
+    {
+      "path": "video/captions.ass",
+      "bytes": 624,
+      "sha256": "b4c2b19fbba3c9c11ae898bae13f6b0c2bcad6bf8c681115fe6814ae369fa292"
+    },
+    {
+      "path": "video/end-card.png",
+      "bytes": 46404,
+      "sha256": "70cc6354c7136b3bad5abdca3a66a429de7457ffc31bbbebbfe72c3b59ddc01d"
+    },
+    {
+      "path": "video/end-card.svg",
+      "bytes": 7606,
+      "sha256": "e79f690bfaf8979115289899a16d6f4fd28f7cbc8d2429ad6ee56020c5915f79"
+    },
+    {
+      "path": "video/lower-third.png",
+      "bytes": 27866,
+      "sha256": "4c1c0bea77420764e0c6914126c803325299e0c55f7e69fa0460e54d36b08d2e"
+    },
+    {
+      "path": "video/lower-third.svg",
+      "bytes": 4885,
+      "sha256": "9a5f22e5576d6a868aa559dead99d4dcbc220796f8cc0695a2ab8f5e262e4360"
+    },
+    {
+      "path": "video/template-preview.mp4",
+      "bytes": 55675,
+      "sha256": "2c63719364f96cefc89d42d421cac286e360df90ca71378f007084ea9b518d2b"
+    },
+    {
+      "path": "video/thumbnail.png",
+      "bytes": 53456,
+      "sha256": "248004ed76662b2cf81af7ca13ff340ed4cb409db3c8242d0f95ced5a0c1f2b6"
+    },
+    {
+      "path": "video/thumbnail.svg",
+      "bytes": 7610,
+      "sha256": "b82cd0f36ad4b4fc42b5c0033b6f8bbd516a3ef4cb31f009b7e7e38ec5fa92df"
+    },
+    {
+      "path": "video/title-card.png",
+      "bytes": 53456,
+      "sha256": "248004ed76662b2cf81af7ca13ff340ed4cb409db3c8242d0f95ced5a0c1f2b6"
+    },
+    {
+      "path": "video/title-card.svg",
+      "bytes": 7611,
+      "sha256": "7d338ff604be962a0350969671224be44c5874330966e5227d7fa76d54dc2748"
+    }
+  ]
+}

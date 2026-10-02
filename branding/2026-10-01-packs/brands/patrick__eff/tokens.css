@@ -1,0 +1,14 @@
+:root {
+  --brand-bg: #161616;
+  --brand-fg: #f3f0ed;
+  --brand-accent: #8a00c7;
+  --brand-secondary: #66ff00;
+  --brand-safe-label: #66ff00;
+  --font-display: "Cascadia Mono";
+  --font-body: "Cascadia Mono";
+  --font-label: "JetBrains Mono";
+  --font-support: "Space Grotesk";
+}
+
+.brand-display { text-shadow: 1.5px -.75px var(--brand-accent), -1.5px 1.5px var(--brand-secondary); }
+.brand-body, .brand-label { text-shadow: none; }

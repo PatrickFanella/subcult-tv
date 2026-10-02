@@ -1,0 +1,10 @@
+:root {
+  --brand-bg: #09090b;
+  --brand-fg: #fafafa;
+  --brand-accent: #fbbf24;
+  --brand-secondary: #22d3ee;
+  --brand-safe-label: #fbbf24;
+  --font-display: "Georgia";
+  --font-body: "JetBrains Mono";
+  --font-label: "JetBrains Mono";
+}

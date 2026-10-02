@@ -1,0 +1,112 @@
+[
+  {
+    "family": "Barlow Condensed",
+    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2_3E.ttf",
+    "css": "@font-face {\n  font-family: 'Barlow Condensed';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTx3L3I-JCGChYJ8VI-L6OO_au7B2xY.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Barlow Condensed';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2_3E.ttf) format('truetype');\n}\n",
+    "files": [
+      "Barlow-Condensed-0.ttf",
+      "Barlow-Condensed-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/OFL.txt"
+  },
+  {
+    "family": "Barlow",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3t-4c4A.ttf",
+    "css": "@font-face {\n  font-family: 'Barlow';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7EPCw.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Barlow';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3t-4c4A.ttf) format('truetype');\n}\n",
+    "files": [
+      "Barlow-0.ttf",
+      "Barlow-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlow/OFL.txt"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3pQP8lc.ttf",
+    "css": "@font-face {\n  font-family: 'IBM Plex Mono';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n5ig.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'IBM Plex Mono';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3pQP8lc.ttf) format('truetype');\n}\n",
+    "files": [
+      "IBM-Plex-Mono-0.ttf",
+      "IBM-Plex-Mono-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexmono/OFL.txt"
+  },
+  {
+    "family": "Fraunces",
+    "source": "https://fonts.gstatic.com/s/fraunces/v38/6NUh8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib1603gg7S2nfgRYIcUByjDg.ttf",
+    "css": "@font-face {\n  font-family: 'Fraunces';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/fraunces/v38/6NUh8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib1603gg7S2nfgRYIctxujDg.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Fraunces';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/fraunces/v38/6NUh8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib1603gg7S2nfgRYIcUByjDg.ttf) format('truetype');\n}\n",
+    "files": [
+      "Fraunces-0.ttf",
+      "Fraunces-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/fraunces/OFL.txt"
+  },
+  {
+    "family": "Public Sans",
+    "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww.ttf",
+    "css": "@font-face {\n  font-family: 'Public Sans';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5ww.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Public Sans';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww.ttf) format('truetype');\n}\n",
+    "files": [
+      "Public-Sans-0.ttf",
+      "Public-Sans-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/publicsans/OFL.txt"
+  },
+  {
+    "family": "Newsreader",
+    "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438wn4jADA.ttf",
+    "css": "@font-face {\n  font-family: 'Newsreader';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/newsreader/v26/cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438weI_ADA.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Newsreader';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/newsreader/v26/cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438wn4jADA.ttf) format('truetype');\n}\n",
+    "files": [
+      "Newsreader-0.ttf",
+      "Newsreader-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt"
+  },
+  {
+    "family": "Inter Tight",
+    "source": "https://fonts.gstatic.com/s/intertight/v9/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mj6AiqXA.ttf",
+    "css": "@font-face {\n  font-family: 'Inter Tight';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/intertight/v9/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mjDw-qXA.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Inter Tight';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/intertight/v9/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mj6AiqXA.ttf) format('truetype');\n}\n",
+    "files": [
+      "Inter-Tight-0.ttf",
+      "Inter-Tight-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/intertight/OFL.txt"
+  },
+  {
+    "family": "Oswald",
+    "source": "https://fonts.gstatic.com/s/oswald/v57/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUE.ttf",
+    "css": "@font-face {\n  font-family: 'Oswald';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/oswald/v57/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvgUE.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Oswald';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/oswald/v57/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUE.ttf) format('truetype');\n}\n",
+    "files": [
+      "Oswald-0.ttf",
+      "Oswald-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/oswald/OFL.txt"
+  },
+  {
+    "family": "JetBrains Mono",
+    "source": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8L6tjPQ.ttf",
+    "css": "@font-face {\n  font-family: 'JetBrains Mono';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPQ.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'JetBrains Mono';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8L6tjPQ.ttf) format('truetype');\n}\n",
+    "files": [
+      "JetBrains-Mono-0.ttf",
+      "JetBrains-Mono-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/jetbrainsmono/OFL.txt"
+  },
+  {
+    "family": "Libre Baskerville",
+    "source": "https://fonts.gstatic.com/s/librebaskerville/v24/kmKUZrc3Hgbbcjq75U4uslyuy4kn0olVQ-LglH6T17ujFgkSCQ.ttf",
+    "css": "@font-face {\n  font-family: 'Libre Baskerville';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/librebaskerville/v24/kmKUZrc3Hgbbcjq75U4uslyuy4kn0olVQ-LglH6T17uj8Q4SCQ.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Libre Baskerville';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/librebaskerville/v24/kmKUZrc3Hgbbcjq75U4uslyuy4kn0olVQ-LglH6T17ujFgkSCQ.ttf) format('truetype');\n}\n",
+    "files": [
+      "Libre-Baskerville-0.ttf",
+      "Libre-Baskerville-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/librebaskerville/OFL.txt"
+  },
+  {
+    "family": "Space Grotesk",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVksj.ttf",
+    "css": "@font-face {\n  font-family: 'Space Grotesk';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUsj.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Space Grotesk';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVksj.ttf) format('truetype');\n}\n",
+    "files": [
+      "Space-Grotesk-0.ttf",
+      "Space-Grotesk-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/spacegrotesk/OFL.txt"
+  }
+]

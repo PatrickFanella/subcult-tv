@@ -1,0 +1,221 @@
+{
+  "status": "starter",
+  "brand": "New Brand",
+  "files": [
+    {
+      "path": "fontconfig.xml",
+      "sha256": "0af04c82e1d9a40f601faff041612ca47ad77eb84f738f0aa8f22f914dd46b4b",
+      "bytes": 286
+    },
+    {
+      "path": "brand.json",
+      "sha256": "5973f390134ef9c905038782d7dd041c33fbd8f1ba4624427d542c46b3c1bfdd",
+      "bytes": 448
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "5c6ca9a98a2e4183bdf367ed6b839283e8019edadae23d42cc0dea4009c7c9ed",
+      "bytes": 332
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "59545850d6c15d68cd819cd32f34f894f62d171c81a16a349d37a22ba7b00369",
+      "bytes": 123
+    },
+    {
+      "path": "source-register.json",
+      "sha256": "1b925f9ec7c97994b9dbee729093aa3c7ab45e3788c749e63f116282272d5ad0",
+      "bytes": 226
+    },
+    {
+      "path": "GUIDE.md",
+      "sha256": "603403ae14c48e2ac9e6c19ef11a074cfbb89b0b9ec71237c80089ab3798f17f",
+      "bytes": 457
+    },
+    {
+      "path": "fonts/Space-Grotesk-0.ttf",
+      "sha256": "ec926d5065eaca49a48f96e312bbae0bbc5733c24215cf5dfabbdccee926fef7",
+      "bytes": 69360
+    },
+    {
+      "path": "fonts/Space-Grotesk-1.ttf",
+      "sha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85",
+      "bytes": 69308
+    },
+    {
+      "path": "fonts/Public-Sans-0.ttf",
+      "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+      "bytes": 56172
+    },
+    {
+      "path": "fonts/Public-Sans-1.ttf",
+      "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+      "bytes": 56364
+    },
+    {
+      "path": "fonts/JetBrains-Mono-0.ttf",
+      "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3",
+      "bytes": 112172
+    },
+    {
+      "path": "fonts/JetBrains-Mono-1.ttf",
+      "sha256": "a1d92abc6b02a87faed23d98067ab1027e8e95242fd7c9978a072ea383b89d1a",
+      "bytes": 112092
+    },
+    {
+      "path": "fonts/spacegrotesk-OFL.txt",
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+      "bytes": 4495
+    },
+    {
+      "path": "fonts/publicsans-OFL.txt",
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+      "bytes": 4390
+    },
+    {
+      "path": "fonts/jetbrainsmono-OFL.txt",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+      "bytes": 4399
+    },
+    {
+      "path": "logos/lockup.svg",
+      "sha256": "fdb99fbd40a3df12b961e237ce35a2358c5697da94f078fe4134bcd0e6b75aa3",
+      "bytes": 220
+    },
+    {
+      "path": "logos/lockup.png",
+      "sha256": "a034a9af0c5834707d77aec1872fdb4e62be89c9a339e943555544e696946075",
+      "bytes": 12594
+    },
+    {
+      "path": "logos/mark.svg",
+      "sha256": "35eaa31ce3aa701a351719225f86882cc74e74f6e2af020cb34037183ffde964",
+      "bytes": 210
+    },
+    {
+      "path": "logos/mark.png",
+      "sha256": "4759c08254546277e63ea279329c84160600197af4656980b9b69365cc94cac5",
+      "bytes": 5924
+    },
+    {
+      "path": "social/banner.svg",
+      "sha256": "f149abd0a7e5352e13d2e56b0eeebefe9c8c45a8e6cf6eaf4031bfa1b20c8d61",
+      "bytes": 666
+    },
+    {
+      "path": "social/banner.png",
+      "sha256": "e19570e516fc0d78068e0024ae77d40dfe5a3d2116e439b61cb744333bafa71b",
+      "bytes": 23551
+    },
+    {
+      "path": "social/banner-tall.svg",
+      "sha256": "b9316d150d6ba101a895985ad3b2921c11114c2ec3af4a8644764ef2a7e6549a",
+      "bytes": 671
+    },
+    {
+      "path": "social/banner-tall.png",
+      "sha256": "e8c0f05a0fd14ee0dee4795ccec42da16638f1a6ac04f7bc5cfa825ecc25dbf8",
+      "bytes": 24250
+    },
+    {
+      "path": "social/square-post.svg",
+      "sha256": "9faa2fc05cc3f43f8672936d76257db08c17bccaae497a546265134185922e7d",
+      "bytes": 698
+    },
+    {
+      "path": "social/square-post.png",
+      "sha256": "3792d9e1ca0ba2461f7ba45b3a462758d410c0375a92097227273d70da180e5e",
+      "bytes": 25267
+    },
+    {
+      "path": "social/landscape-post.svg",
+      "sha256": "fa92f5ca504e47eeb269ef86fc2754b55b3375eb3a034a17061e10b5508fcc9e",
+      "bytes": 675
+    },
+    {
+      "path": "social/landscape-post.png",
+      "sha256": "15f63b282cf232426cdcd77ccfaa433445303173534a5df9dd303278aa572a08",
+      "bytes": 27090
+    },
+    {
+      "path": "social/story.svg",
+      "sha256": "84957968c929347f8ee08e4db4c08e8f97bd25fb5c07018a0147571bc7ac1066",
+      "bytes": 687
+    },
+    {
+      "path": "social/story.png",
+      "sha256": "af687774057065178a06e2b23221e67a2aa705bd5e382b9cd6660ed19eded299",
+      "bytes": 29928
+    },
+    {
+      "path": "social/quote.svg",
+      "sha256": "3b676bec82c924c0094ff79690039d2ff81491b53bdd1ad7dc175f3d693d5a2e",
+      "bytes": 845
+    },
+    {
+      "path": "social/quote.png",
+      "sha256": "e054ebdde15f6631e4c2f82972df65b8ba73acab034c067fa51b91531d8157da",
+      "bytes": 35315
+    },
+    {
+      "path": "social/release.svg",
+      "sha256": "c438375f777fda66a62419816787a7e8194614e3e33c9ebcb2f7b7916eb4bf95",
+      "bytes": 849
+    },
+    {
+      "path": "social/release.png",
+      "sha256": "3b350585080aa62773963e458cebcde1b19e773aeaca57b96e269af9502e74b4",
+      "bytes": 37634
+    },
+    {
+      "path": "social/screenshot-frame.svg",
+      "sha256": "f4603e166b1a4050e3a392584202c1e1b973d6a8aca7bd4d647aeac887471cf8",
+      "bytes": 929
+    },
+    {
+      "path": "social/screenshot-frame.png",
+      "sha256": "765be3b304b73659312379084665f81d3a6e45c7e94e9354f84bccbe9b91efbd",
+      "bytes": 38218
+    },
+    {
+      "path": "video/title-card.svg",
+      "sha256": "6dec6603588e8c978124f2b69ba2719898257e922f818adf84ab765bc9761915",
+      "bytes": 620
+    },
+    {
+      "path": "video/title-card.png",
+      "sha256": "0cc4f6680afaf88fe69a8bcb61f5a349a5f2a13e69d1beda30c9d615549ba8a5",
+      "bytes": 29747
+    },
+    {
+      "path": "video/thumbnail.svg",
+      "sha256": "40d43d6a63ead340d95f81e59726802695848509139ed293516b139d2fb3ff37",
+      "bytes": 619
+    },
+    {
+      "path": "video/thumbnail.png",
+      "sha256": "0cc4f6680afaf88fe69a8bcb61f5a349a5f2a13e69d1beda30c9d615549ba8a5",
+      "bytes": 29747
+    },
+    {
+      "path": "video/end-card.svg",
+      "sha256": "f34b34b7445abd0f976f37d960d76bc19d8fcd7c673285047dd6c3f8dd85864e",
+      "bytes": 618
+    },
+    {
+      "path": "video/end-card.png",
+      "sha256": "0cc4f6680afaf88fe69a8bcb61f5a349a5f2a13e69d1beda30c9d615549ba8a5",
+      "bytes": 29747
+    },
+    {
+      "path": "video/lower-third.svg",
+      "sha256": "38d9b57021f0fb95f7ec22e85f8781961f3d5e65921be32320b6b30541255404",
+      "bytes": 483
+    },
+    {
+      "path": "video/lower-third.png",
+      "sha256": "0ee21a593a1d557c9a8b0cb0d995dd900b73323c7c84d8a71a28f3a7f8b29309",
+      "bytes": 21965
+    }
+  ]
+}
