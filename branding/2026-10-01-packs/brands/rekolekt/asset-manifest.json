@@ -5,8 +5,13 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "bytes": 4479,
-      "sha256": "430e46f33ef768af46608a40405451930230a9caf0450abb8431e5c43575ce11"
+      "bytes": 4664,
+      "sha256": "cab2420f5818a93c4ed15e8c903a75413b9eb103b63e344e7be43e05f8400645"
+    },
+    {
+      "path": "WEBSITE.md",
+      "bytes": 7997,
+      "sha256": "f2803592ddf8d621541518d21ca261a4cf55ac4abf2dd4e58c77101a06462b3c"
     },
     {
       "path": "alt-text.md",
