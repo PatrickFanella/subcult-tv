@@ -76,7 +76,7 @@
     "type": ["software", "tools", "media"],
     "stack": ["Python", "FastAPI", "PostgreSQL", "React"],
     "topics": ["transcription", "archives", "search", "self-hosting"],
-    "repoUrl": "https://git.subcult.tv/subculture-collective/transcript-create",
+    "repoUrl": "https://git.subcult.tv/subculture-collective/rekolekt",
     "lastUpdated": "2026-10-01T00:00:00Z",
     "featured": true,
     "order": 3,

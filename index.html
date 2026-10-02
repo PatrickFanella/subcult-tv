@@ -33,22 +33,7 @@
     <script id="ld-json" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://subcult.tv/#organization","name":"SUBCULT","alternateName":"Subculture Collective","url":"https://subcult.tv","logo":"https://subcult.tv/brand/subcult/mark.png","email":"info@subcult.tv","sameAs":["https://bsky.app/profile/subcult.tv","https://x.com/subcult_tv","https://support.subcult.tv","https://git.subcult.tv/subculture-collective"]},{"@type":"WebSite","@id":"https://subcult.tv/#website","name":"SUBCULT","url":"https://subcult.tv","publisher":{"@id":"https://subcult.tv/#organization"}}]}</script>
     <!-- seo:end -->
 
-    <!-- Umami analytics (self-hosted, privacy-first). Injected only when configured:
-        copy .env.example → .env and set VITE_UMAMI_URL + VITE_UMAMI_WEBSITE_ID. -->
-    <script>
-      (function () {
-        var u = '%VITE_UMAMI_URL%';
-        var id = '%VITE_UMAMI_WEBSITE_ID%';
-        if (!id || id.indexOf('VITE_UMAMI_WEBSITE_ID') !== -1) return;
-        if (u.indexOf('VITE_UMAMI_URL') !== -1) u = '';
-        var s = document.createElement('script');
-        s.defer = true;
-        s.src = u + '/script.js';
-        s.setAttribute('data-website-id', id);
-        if (u) s.setAttribute('data-host-url', u);
-        document.head.appendChild(s);
-      })();
-    </script>
+    <!-- Production analytics is injected by the same-origin umami-site-proxy. -->
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>

@@ -1,0 +1,13 @@
+# Newsletter feedback
+
+`POST /api/v1/webhooks/brevo` accepts authenticated, single-event Brevo marketing payloads for `BREVO_NEWSLETTER_LIST_ID`. Configure `BREVO_WEBHOOK_SECRET` with at least 32 random characters. Set the same value in Brevo's `X-Brevo-Webhook-Secret` custom header. Requests without a matching secret receive 401; a missing or short configured secret disables the route with 404. Bodies are limited to 64 KiB.
+
+Register marketing events `listAddition` and `unsubscribed`. Their payload event names are `list_addition` and `unsubscribe`, respectively; both include `list_id`. See [Brevo's marketing payloads](https://developers.brevo.com/docs/marketing-webhooks) and [webhook registration](https://developers.brevo.com/reference/create-webhook). Enable delivery only after the API route and secret are deployed. Keep credentials and provider configuration responses private.
+
+Migration `002_newsletter_feedback` adds `provider_event_at`. List addition confirms an existing local subscriber. Unsubscribe clears confirmation and records its time. Events never create subscribers. Older events are ignored, duplicate events are harmless, and unsubscribe wins when timestamps are equal. Events before the most recent local signup cannot change its consent. Local unsubscribe also clears confirmation. A renewed signup after unsubscribe remains pending when DOI is enabled.
+
+On October 2, the three pre-DOI signups were returned from the legacy auto-confirmed state to pending. No matching contacts were found in Brevo list 2 and no documented consent was found in the bounded audit. Their original records are backed up privately under the NUC operator's `~/.local/state/subcult-tv/newsletter-consent/`. The fourth signup was already pending. No addresses were imported and no emails were sent. The decision is to import only when an address's existing consent is documented; a local timestamp alone does not establish double opt-in. The user thinks the earlier addresses are their own test signups; ownership was not independently verified.
+
+Tests run migrations in an isolated schema on a disposable PostgreSQL database and cover confirmation, unsubscribe, wrong-list isolation, unknown addresses, duplicate and stale delivery, and authentication rejection. At release, verify an actual confirmation click and email-footer unsubscribe against the local admin state before closing issue #10. Provider registration and end-to-end delivery are still pending.
+
+Rollback can disable the route by removing the secret and disabling its Brevo webhook. Keep the additive migration and consent records; dropping event history can allow stale events to change consent. Restore legacy flags only after reviewing the private backup and documented consent.

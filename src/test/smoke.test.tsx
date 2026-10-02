@@ -65,7 +65,7 @@ describe('smoke: app shell', () => {
     expect(await screen.findByRole('heading', { name: 'Rekolekt', level: 1 })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /View Repository/i })).toHaveAttribute(
       'href',
-      'https://git.subcult.tv/subculture-collective/transcript-create',
+      'https://git.subcult.tv/subculture-collective/rekolekt',
     );
   });
 

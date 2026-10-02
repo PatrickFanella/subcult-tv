@@ -18,6 +18,7 @@ type Config struct {
 	PatreonCampaignID string
 
 	// Brevo email. Without BREVO_API_KEY no email is sent.
+	BrevoWebhookSecret     string
 	BrevoAPIKey            string
 	BrevoNewsletterListID  int64
 	BrevoDOITemplateID     int64
@@ -64,6 +65,7 @@ func Load() (*Config, error) {
 		PatreonToken:      os.Getenv("PATREON_TOKEN"),
 		PatreonCampaignID: os.Getenv("PATREON_CAMPAIGN_ID"),
 
+		BrevoWebhookSecret:     os.Getenv("BREVO_WEBHOOK_SECRET"),
 		BrevoAPIKey:            os.Getenv("BREVO_API_KEY"),
 		BrevoNewsletterListID:  envInt("BREVO_NEWSLETTER_LIST_ID"),
 		BrevoDOITemplateID:     envInt("BREVO_DOI_TEMPLATE_ID"),

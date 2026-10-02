@@ -86,6 +86,8 @@ func main() {
 
 	// ── Router ───────────────────────────────────────────────
 	h := handlers.New(pool, cfg.JWTSecret, patreonClient, mail, mailCfg)
+	h.BrevoWebhookSecret = cfg.BrevoWebhookSecret
+	h.BrevoNewsletterListID = cfg.BrevoNewsletterListID
 	h.StudioRoot = os.Getenv("STUDIO_ROOT")
 	h.StudioStateRoot = os.Getenv("STUDIO_STATE_ROOT")
 	r := router.New(cfg, h)

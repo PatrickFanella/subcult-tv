@@ -1,6 +1,7 @@
 import { inputClass } from '@/components/ui/TextInput';
 import { useId, useState, type FormEvent } from 'react';
 import { subscribe } from '@/lib/api';
+import { trackCampaignEvent } from '@/lib/analytics';
 
 export default function NewsletterSignup() {
   const emailInputId = useId();
@@ -14,6 +15,7 @@ export default function NewsletterSignup() {
     try {
       const res = await subscribe(email);
       setStatus('success');
+      trackCampaignEvent('newsletter-signup');
       setMessage(res.message);
       setEmail('');
     } catch (err) {

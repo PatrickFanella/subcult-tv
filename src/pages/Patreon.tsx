@@ -1,31 +1,29 @@
-import { Code2, FlaskConical, HeartHandshake, Server, ShieldCheck, Wrench } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { getPatreonCampaign } from '@/lib/api';
+import { publishedTiers } from '@/lib/patreon-tiers';
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
-import TerminalPanel from '@/components/effects/TerminalPanel';
 import { PATREON_URL } from '@/lib/links';
 
 const SUPPORT_OUTCOMES = [
   {
-    icon: Server,
     label: 'Pay for hosting',
     detail:
       'Contributions pay for domains, storage, hosting, and the services that keep public software available.',
   },
   {
-    icon: Wrench,
     label: 'Fund maintenance time',
     detail:
       'Support pays for the hours spent fixing bugs, applying security updates, writing documentation, and preparing releases.',
   },
   {
-    icon: FlaskConical,
     label: 'Test useful ideas',
     detail:
       'Support pays for early research into a community need before the idea has a business model.',
   },
 ];
 
-// Mirrors the Patreon tiers; keep in step with the live creator page.
+// Reviewed fallback for an unavailable Patreon API.
 const TIERS = [
   {
     name: 'Free follow',
@@ -47,7 +45,6 @@ const TIERS = [
 
 const OTHER_WAYS = [
   {
-    icon: Code2,
     label: 'Contribute to the code',
     detail: 'Read the source, open an issue, improve the documentation, or send a patch.',
     href: 'https://git.subcult.tv/subculture-collective',
@@ -55,7 +52,6 @@ const OTHER_WAYS = [
     external: true,
   },
   {
-    icon: ShieldCheck,
     label: 'Use it and report what breaks',
     detail: 'Real-world feedback is more useful than applause. Tell us where the work falls short.',
     href: '/contact',
@@ -63,7 +59,6 @@ const OTHER_WAYS = [
     external: false,
   },
   {
-    icon: HeartHandshake,
     label: 'Back a specific project',
     detail: 'Organizations and individuals can discuss supporting a defined piece of public work.',
     href: '/contact',
@@ -100,76 +95,82 @@ const FAQS = [
   },
 ];
 
-const SHELL = 'max-w-6xl mx-auto px-4 sm:px-6 lg:px-8';
+const SHELL = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8';
 const RAIL = 'grid grid-cols-1 md:grid-cols-[10rem_minmax(0,1fr)] gap-6 md:gap-10';
 
 export default function Patreon() {
+  const [tiers, setTiers] = useState<typeof TIERS | null>(null);
+  useEffect(() => {
+    let active = true;
+    getPatreonCampaign()
+      .then((data) => {
+        if (active && data.campaign) setTiers(publishedTiers(data.tiers));
+      })
+      .catch(() => {
+        /* Keep the reviewed fallback when the provider is unavailable. */
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
   return (
     <>
       <SEOHead path="/support" />
 
-      <div className="overflow-x-clip">
-        <section className="border-b border-fog">
-          <div className={`${SHELL} py-16 md:py-24`}>
-            <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_22rem] gap-10 lg:gap-16 items-center">
+      <div className="support-page overflow-x-clip">
+        <section className="showcase-hero support-hero">
+          <div className={SHELL}>
+            <img src="/brand/subcult/master.svg" alt="" className="subcult-hero-mark" />
+            <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-20 items-end">
               <div className="min-w-0">
-                <p className="font-mono text-xs text-dust mb-4">&gt; SUPPORT / THE_WORKSHOP</p>
-                <h1 className="mb-6 max-w-4xl text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.98] break-words">
-                  Support the workshop behind the products
+                <p className="showcase-eyebrow">SUBCULT / THE WORKSHOP</p>
+                <h1 className="showcase-title">
+                  Support the workshop
+                  <br />
+                  <span>behind the products.</span>
                 </h1>
-                <p className="text-bone max-w-3xl text-lg md:text-xl leading-relaxed mb-8">
+              </div>
+              <div className="min-w-0">
+                <p className="text-bone text-lg leading-relaxed mb-6">
                   CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, and Undertow stay public. Patreon
                   is the workshop behind them: weekly field notes, a monthly studio ledger, and
                   early previews. Follow for free, or back the work at $10 a month.
                 </p>
-                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
+                <div className="flex flex-wrap items-center gap-5">
                   <Button
                     as="a"
                     href={PATREON_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    size="lg"
-                    className="w-full sm:w-auto"
+                    className="support-primary"
                   >
                     Join on Patreon ↗
                   </Button>
-                  <Button
-                    as="link"
-                    to="/products"
-                    variant="secondary"
-                    size="lg"
-                    className="w-full sm:w-auto"
-                  >
-                    See the work first
-                  </Button>
+                  <a href="/products" className="support-secondary font-mono text-sm">
+                    See the work first →
+                  </a>
                 </div>
               </div>
-
-              <TerminalPanel title="support.status" className="min-w-0 w-full">
-                <div className="break-words">
-                  <span className="text-chalk">products: </span>
-                  <span className="text-static">PUBLIC</span>
-                  <br />
-                  <span className="text-chalk">workshop: </span>
-                  <span className="text-signal">PATREON</span>
-                  <br />
-                  <span className="text-chalk">funding: </span>
-                  <span className="text-flicker">COMMUNITY SUPPORTED</span>
-                  <br />
-                  <span className="text-chalk">proof: </span>
-                  <span className="text-cyan">REPOS // RELEASES // NOTES</span>
-                  <br />
-                  <br />
-                  <span className="text-dust"># support funds the work; it buys no control.</span>
-                </div>
-              </TerminalPanel>
             </div>
+          </div>
+          <div className="subcult-product-bar">
+            <nav className={`showcase-index ${SHELL}`} aria-label="Support sections">
+              <a href="#memberships">
+                <span>01</span> Memberships
+              </a>
+              <a href="#support-work">
+                <span>02</span> What support funds
+              </a>
+              <a href="#support-questions">
+                <span>03</span> Before you contribute
+              </a>
+            </nav>
           </div>
         </section>
 
-        <section className="bg-soot border-b border-fog py-16 md:py-24">
+        <section id="support-work" className="border-b border-fog py-12 md:py-16">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">// 01 · WHY SUPPORT</p>
+            <p className="font-mono text-xs text-dust pt-2">01 / WHY SUPPORT</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
                 <h2 className="mb-4">Where your money goes</h2>
@@ -180,10 +181,9 @@ export default function Patreon() {
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
                 {SUPPORT_OUTCOMES.map((item, index) => (
-                  <article key={item.label} className="min-w-0 bg-ash border border-fog p-6 md:p-7">
+                  <article key={item.label} className="support-item min-w-0">
                     <div className="flex items-center justify-between mb-6">
-                      <item.icon className="w-7 h-7 text-signal" aria-hidden="true" />
-                      <span className="font-mono text-xs text-fog">0{index + 1}</span>
+                      <span className="font-mono text-sm text-static">0{index + 1}</span>
                     </div>
                     <h3 className="text-xl mb-3 break-words">{item.label}</h3>
                     <p className="text-sm text-bone leading-relaxed">{item.detail}</p>
@@ -194,22 +194,30 @@ export default function Patreon() {
           </div>
         </section>
 
-        <section className="border-b border-fog py-16 md:py-24">
+        <section id="memberships" className="border-b border-fog py-12 md:py-16">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">// 02 · WHAT YOU GET</p>
+            <p className="font-mono text-xs text-dust pt-2">02 / MEMBERSHIPS</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
-                <h2 className="mb-4">Two ways in</h2>
+                <h2 className="mb-4">Membership options</h2>
                 <p className="text-bone leading-relaxed">
                   Start by following for free. Back the work when the process is useful to you.
                 </p>
               </div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                {TIERS.map((tier) => (
-                  <article key={tier.name} className="min-w-0 bg-ash border border-fog p-6 md:p-7">
-                    <div className="flex items-baseline justify-between gap-4 mb-5">
+              {tiers === null && (
+                <p className="font-mono text-xs text-dust mb-5">
+                  Reference benefits shown below. Check Patreon for the current offer.
+                </p>
+              )}
+              {tiers?.length === 0 && (
+                <p>No published tiers are available. Visit Patreon for membership details.</p>
+              )}
+              <div className="support-tiers">
+                {(tiers ?? TIERS).map((tier) => (
+                  <article key={tier.name} className="support-tier min-w-0">
+                    <div className="support-tier-heading">
                       <h3 className="text-xl break-words">{tier.name}</h3>
-                      <span className="font-mono text-sm text-signal shrink-0">{tier.price}</span>
+                      <span className="font-mono text-lg text-static">{tier.price}</span>
                     </div>
                     <ul className="space-y-2 text-sm text-bone leading-relaxed">
                       {tier.includes.map((item) => (
@@ -228,18 +236,18 @@ export default function Patreon() {
           </div>
         </section>
 
-        <section className="border-b border-fog py-14 md:py-20">
+        <section className="support-agreement py-12 md:py-16">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-signal pt-2">// 03 · CONTRACT</p>
+            <p className="font-mono text-xs text-signal pt-2">03 / THE AGREEMENT</p>
             <blockquote className="min-w-0 font-display text-3xl md:text-5xl uppercase tracking-wide text-glow leading-tight break-words">
               The products stay public. Support pays for the work and opens the workshop.
             </blockquote>
           </div>
         </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-12 md:py-16">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">// 04 · CONTRIBUTE</p>
+            <p className="font-mono text-xs text-dust pt-2">04 / CONTRIBUTE</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
                 <h2 className="mb-4">Other ways to help</h2>
@@ -250,11 +258,7 @@ export default function Patreon() {
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
                 {OTHER_WAYS.map((item) => (
-                  <article
-                    key={item.label}
-                    className="min-w-0 flex flex-col bg-ash border border-fog p-6"
-                  >
-                    <item.icon className="w-7 h-7 text-static mb-5" aria-hidden="true" />
+                  <article key={item.label} className="support-item min-w-0 flex flex-col">
                     <h3 className="text-xl mb-3 break-words">{item.label}</h3>
                     <p className="text-sm text-bone leading-relaxed mb-6 flex-1">{item.detail}</p>
                     {item.external ? (
@@ -283,9 +287,9 @@ export default function Patreon() {
           </div>
         </section>
 
-        <section className="bg-soot border-y border-fog py-16 md:py-24">
+        <section id="support-questions" className="border-y border-fog py-12 md:py-16">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">// 05 · FAQ</p>
+            <p className="font-mono text-xs text-dust pt-2">05 / QUESTIONS</p>
             <div className="min-w-0">
               <h2 className="mb-10">Before you contribute</h2>
               <div className="divide-y divide-fog border-y border-fog">
@@ -303,9 +307,9 @@ export default function Patreon() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-12 md:py-16">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">// 06 · ACT</p>
+            <p className="font-mono text-xs text-dust pt-2">06 / FOLLOW THE WORK</p>
             <div className="min-w-0 max-w-3xl">
               <h2 className="mb-5">Keep the work going</h2>
               <p className="text-bone leading-relaxed mb-8 max-w-2xl">

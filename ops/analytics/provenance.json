@@ -1,0 +1,9 @@
+{
+  "source_host": "almaz",
+  "authoritative_source": "/opt/server/management/umami-sites/bootstrap.js",
+  "observed_at": "2026-10-02",
+  "source_sha256": "fd9bdad367975f09536e1f6ec37f77b96946454d38abe81232b8349393d74b37",
+  "candidate_sha256": "f10e1567fc4743f686190cb23547e32f89f911cba0ece6e486f94b0a37b2f669",
+  "status": "prepared; not installed",
+  "changes": "Allow only patreon-outbound and newsletter-signup on subcult.tv; exclude admin and foreign-origin paths; preserve other sites."
+}

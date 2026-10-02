@@ -1,8 +1,10 @@
 # Rekolekt — working identity
 
-Status: proposed name and visual direction for Transcript Creator. This showcase
-uses Rekolekt as a working brand; the source repository and product route remain
-`transcript-create`. No application deployment or repository rename is included.
+Status: proposed visual direction for the shared archive application. The source
+repository was renamed from `transcript-create` to
+[`rekolekt`](https://git.subcult.tv/subculture-collective/rekolekt) on October 1, 2026.
+The public route is `/products/rekolekt`; the internal catalog key remains
+`transcript-create`. This showcase does not deploy the proposed identity to the app.
 
 ## Name and relationship
 
@@ -44,7 +46,9 @@ that becomes a passage.
 | Paper / primary text | `#f2eee5` |
 | Index / accent       | `#b8df72` |
 
-The green accent distinguishes the application from HasanAra's warm amber.
+The proposed green accent differs from HasanAra's current red (`#ff5b52`).
+The shipped shared application uses blue (`#93c5fd`); the green system shown here
+is a proposal for review and does not describe its current UI.
 Screens and copy should make the archive and recordings prominent. The SUBCULT
 endorsement stays secondary.
 
