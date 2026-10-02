@@ -1,24 +1,46 @@
-/* SUBCULT Studio: Culture / poster press. Public asset hashes are in docs/subcult-brand-provenance.json. */
+/* SUBCULT Studio: Culture / poster press. Public asset hashes are in docs/subcult-brand-provenance.json.
+   Each family is static: -0 is the regular cut and -1 the bold cut. */
 @font-face {
   font-family: 'Oswald';
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 100 500;
   font-display: swap;
   src: url('/brand/subcult/fonts/Oswald-0.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+  src: url('/brand/subcult/fonts/Oswald-1.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Space Grotesk';
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 100 500;
   font-display: swap;
   src: url('/brand/subcult/fonts/Space-Grotesk-0.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+  src: url('/brand/subcult/fonts/Space-Grotesk-1.ttf') format('truetype');
+}
+@font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 100 500;
   font-display: swap;
   src: url('/brand/subcult/fonts/JetBrains-Mono-0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+  src: url('/brand/subcult/fonts/JetBrains-Mono-1.ttf') format('truetype');
 }
 .subcult-nav-brand {
   display: flex;
