@@ -10,8 +10,8 @@
     },
     {
       "path": "WEBSITE.md",
-      "bytes": 10424,
-      "sha256": "2c61689d9dbb4fd3ef95b499c9323e1eb80762f1f6bbb8ff0be3783c933cc9f0"
+      "bytes": 10704,
+      "sha256": "edbef2717ee9953c217e411b9b551252221b2e3fe3755d24f0cbf235b87f2d6d"
     },
     {
       "path": "alt-text.md",
@@ -386,7 +386,7 @@
     {
       "path": "tokens.json",
       "bytes": 2090,
-      "sha256": "8865aa4ddc2a9d2479fa05e8ac5b1ebd407ac56ae6d5879aa7474bc0a80980ea"
+      "sha256": "3d6c4d96fe0293a5d856fc478e52f2e3c4c4420eeed043010ab5770d4ab2e3cd"
     },
     {
       "path": "video/captions.ass",
