@@ -1,0 +1,19 @@
+{
+  "geometry": "open frame with original thirteen-bar waveform behind PF",
+  "approved_by": "owner, 2026-10-02",
+  "approved_variations": [
+    "01-lavender",
+    "02-pink",
+    "03-green",
+    "04-green-frame",
+    "06-light",
+    "07-quiet",
+    "08-echo"
+  ],
+  "default": "01-lavender",
+  "light_background": "06-light",
+  "default_basis": "implementation default; owner approved all seven treatments",
+  "unapproved_variations": [
+    "05-pink-frame"
+  ]
+}

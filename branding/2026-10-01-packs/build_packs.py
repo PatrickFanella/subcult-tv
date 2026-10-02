@@ -1,7 +1,8 @@
 from pathlib import Path
 import base64,copy,html,json,os,shutil,subprocess,hashlib,zipfile,xml.etree.ElementTree as ET
 R=Path(__file__).resolve().parent
-(R/'fontconfig.xml').write_text('<?xml version="1.0"?><fontconfig><dir>'+str(R/'fonts')+'</dir><cachedir>'+str(R/'.font-cache')+'</cachedir><alias><family>Georgia</family><prefer><family>Liberation Serif</family></prefer></alias></fontconfig>')
+if os.environ.get('BRAND_ONLY')!='patrick__eff':
+ (R/'fontconfig.xml').write_text('<?xml version="1.0"?><fontconfig><dir>'+str(R/'fonts')+'</dir><cachedir>'+str(R/'.font-cache')+'</cachedir><alias><family>Georgia</family><prefer><family>Liberation Serif</family></prefer></alias></fontconfig>')
 os.environ['FONTCONFIG_FILE']=str(R/'fontconfig.xml')
 import design_helpers as H
 import clpr_directions as C
@@ -218,6 +219,10 @@ Replace these starters when copy or imagery changes. Describe a screenshot’s a
 # Captured source marks are bundled under references/.
 for d in BRANDS:
  if os.environ.get('BRAND_ONLY') and d['slug']!=os.environ['BRAND_ONLY']:continue
+ if d['slug']=='patrick__eff' and d.get('mode')=='patrick-patch':
+  import patrick_patch
+  patrick_patch.build(d)
+  continue
  dest=R/'brands'/d['slug'];dest.mkdir(parents=True,exist_ok=True);(dest/'fonts').mkdir(exist_ok=True)
  for name in font_files(d):shutil.copy2(R/'fonts'/name,dest/'fonts'/name)
  tokens={'brand':d['brand'],'direction':d['name'],'status':'local production pack v1','colors':{k:d[k] for k in ['bg','fg','accent','secondary','safe_label']},'fonts':{k:d[k] for k in ['display','body','label','support'] if k in d},'spacing':[8,16,24,32,48,64,96],'mark_clear_space':'25% of mark height','mark_min_width_px':32,'source':d['source'],'direction_selection':d.get('direction_selection') or ('user' if d['selected_by_user'] else 'established-theme example')}

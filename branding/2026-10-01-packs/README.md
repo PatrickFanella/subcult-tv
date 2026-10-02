@@ -1,6 +1,6 @@
 # SUBCULT brand and asset library — v1
 
-The user selected Patrick A, Rekolekt A and SUBCULT C on October 1, 2026. CLPR now uses the user-edited play-triangle logo, with user-selected Clip stack layouts and a single-clip square post. This folder contains those three selected systems and five packs based on the established product themes.
+The user selected Rekolekt A and SUBCULT C on October 1, 2026, and replaced Patrick with Patch / routed signal on October 2, 2026. CLPR now uses the user-edited play-triangle logo, with user-selected Clip stack layouts and a single-clip square post. This folder contains those three selected systems and five packs based on the established product themes.
 
 Open `index.html` for the offline gallery, or use the local preview at http://localhost:18769/. Each brand has a separate ZIP; `subcult-brand-asset-packs-v1.zip` includes the full library and starter kit. The earlier direction review remains in `../2026-10-01-review`.
 
@@ -18,7 +18,7 @@ The guides explain color roles and contrast, typography, mark clear space and mi
 
 The site references and selected marks are captured in the earlier review’s source notes. HasanAra follows the live red/PBS theme. Undertow’s system monospace stack uses bundled Liberation Mono for these portable exports. Subcult OS was rebuilt on October 2, 2026 to match the live https://os.subcult.tv terminal system: Space Mono (bundled from google/fonts), black canvas, purple actions, cyan labels and focus, square frames. Its OS lettermark with a cyan cursor block is a pack mark; the site itself uses the plain wordmark.
 
-The 228 original asset files were checked against the review inventory and preserved. Legacy CLPR and industrial SUBCULT material is not promoted to the selected systems. The earlier CLPR filmstrip and timeline artwork is preserved as history; current layout alternatives use crop corners, clip cards and play fields. Patrick retains the waveform. Rekolekt retains its original logo, palette and typography. Only the story template’s decorative waveform is replaced with transcript rows and timestamps.
+The 228 original asset files were checked against the review inventory and preserved. Legacy CLPR and industrial SUBCULT material is not promoted to the selected systems. The earlier CLPR filmstrip and timeline artwork is preserved as history; current layout alternatives use crop corners, clip cards and play fields. Patrick uses routing paths and spectrum artwork in the selected Patch system. Rekolekt retains its original logo, palette and typography. Only the story template’s decorative waveform is replaced with transcript rows and timestamps.
 
 ## Rebuild and bootstrap
 
@@ -32,9 +32,9 @@ SUBCULT uses the user-authored `references/subcult-mark-master.svg` as its maste
 
 SUBCULT layout masters: the user-edited banner, logo banner and square post live in `references/subcult-edited-layouts/`. Rebuilds preserve their SVG bytes and regenerate their PNGs, the taller banner and the gallery contact sheet.
 
-Patrick uses Cascadia Mono for display and body type, with a 0.08em gap between the wordmark underscores. The original user banner stays in `references/patrick-banner-master.svg`; its font revision is `references/patrick-banner-cascadia.svg`. The user-edited PF and bracketed waveform variations now govern the Patrick pack. Original concepts remain in `patrick-logo-study/` as historical drafts.
+Patrick now uses the owner-selected Patch / routed signal system, based on patrickfanella.co: charcoal #282a36, lavender #bd93f9, pink #ff79c6, green #50fa7b, Space Grotesk display, Inter body and JetBrains Mono labels. The identity line is **Software. Sound. Culture.**, with equal phrase sizes. Flat type, routing paths and spectrum artwork replace the earlier offset-heading treatment. The current PF mark remains selected while new logo studies are reviewed.
 
-Patrick variation update: originals are preserved in `references/patrick-variations/` and bundled in `brands/patrick__eff/logos/source-variations/`. Primary marks use PF; clean waveform and tall variants remain available. Large headings and standalone waveforms use a warm-white face with lime/purple offsets. Small text stays flat. `brands/patrick__eff/components.html` shows the CSS treatment; `logos/variations.html` lists editable and production marks.
+The authoritative source is [Patch](../2026-10-02-patrick-site-direction/README.md). The normal `brands/patrick__eff/` paths, gallery, manifest and ZIP expose the selected system. Rebuild only Patrick with `BRAND_ONLY=patrick__eff python build_packs.py`, then the same filter for `render_video_previews.py`. The complete previous Signal pack is preserved at `history/branding/patrick-signal-2026-10-02/` from the Studio root. Original banners and mark masters remain in `references/`. [Logo development options](../2026-10-02-patrick-site-direction/logo-options/index.html) are proposals, not a selected replacement.
 
 CLPR selection: Clip stack for the main layouts; single clip card for the square post. clpr.tv has applied the pack since October 2, 2026; `brands/clpr/GUIDE.md` records how the site uses the logo, icons, link preview and crop corners. The comparison packs remain available under `clpr-directions/`; the main `clpr.zip` contains the selected combination.
 

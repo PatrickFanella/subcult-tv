@@ -29,42 +29,48 @@ const BRANDS=[
   },
   {
     "id": "patrick-a",
-    "brand": "Patrick__eff",
-    "variant": "A",
-    "name": "Signal / current banner",
-    "bg": "#161616",
-    "fg": "#f3f0ed",
-    "accent": "#8a00c7",
-    "secondary": "#66ff00",
-    "display": "Cascadia Mono",
-    "body": "Cascadia Mono",
+    "brand": "Patrick__Eff",
+    "variant": "B",
+    "name": "Patch / routed signal",
+    "bg": "#282a36",
+    "fg": "#f8f8f2",
+    "accent": "#bd93f9",
+    "secondary": "#50fa7b",
+    "display": "Space Grotesk",
+    "body": "Inter",
     "headline": [
-      "Software. Sound.",
-      "Independent culture."
+      "Software.",
+      "Sound.",
+      "Culture."
     ],
     "tag": "PATRICK__EFF",
-    "description": "Cascadia Mono with separated underscores; bracketed PF and waveform marks; lime and purple offset accents on charcoal.",
-    "mode": "patrick-wave",
+    "description": "Website charcoal, lavender, pink and green; equally sized Software, Sound and Culture headings; flat sans-serif type, routing paths and spectrum artwork.",
+    "mode": "patrick-patch",
     "url": "patrickfanella.co",
-    "source": "User-edited references/patrick-variations/ masters",
+    "source": "Live patrickfanella.co palette/type; Patch selected by the owner October 2, 2026; authoritative source branding/2026-10-02-patrick-site-direction/; open frame with original waveform approved in treatments 01, 02, 03, 04, 06, 07 and 08 by the owner October 2, 2026",
     "slug": "patrick__eff",
     "label": "JetBrains Mono",
-    "safe_label": "#66ff00",
+    "safe_label": "#50fa7b",
     "selected_by_user": true,
-    "support": "Space Grotesk",
+    "support": "Inter",
     "mark_styles": {
-      "primary": "PF with lime/purple offset layers",
-      "alternate": "Clean bracketed waveform",
-      "display": "Tall waveform and tall PF variants",
-      "heading_effect": "Lime lower-left and purple upper-right offsets",
-      "body_effect": "None"
+      "primary": "Open frame with original waveform, Lavender (01) default",
+      "approved_variations": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "06",
+        "07",
+        "08"
+      ],
+      "light_background": "06",
+      "monochrome": "Plain open frame"
     },
-    "banner_logo": "White PF, brackets, slash and dot; purple waveform; smaller size",
-    "banner_alternates": [
-      "Solid purple without waveform",
-      "Solid warm white without waveform",
-      "Original white/purple/green"
-    ]
+    "banner_logo": "Warm-white PF with separate routing artwork",
+    "banner_alternates": [],
+    "pink": "#ff79c6",
+    "direction_selection": "user"
   },
   {
     "id": "clpr",
@@ -85,7 +91,7 @@ const BRANDS=[
     "description": "Clip stack layouts with one matching clip card on the square post and the play-triangle logo.",
     "mode": "clpr",
     "url": "clpr.tv",
-    "source": "User-edited CLPR logo; working graphic direction awaiting selection",
+    "source": "User-edited CLPR logo; Clip stack direction selected by the user on October 1, 2026; applied to clpr.tv on October 2, 2026",
     "slug": "clpr",
     "label": "IBM Plex Mono",
     "safe_label": "#8c5cff",
@@ -117,7 +123,8 @@ const BRANDS=[
     "slug": "patchwork",
     "label": "JetBrains Mono",
     "safe_label": "#12664f",
-    "selected_by_user": false
+    "selected_by_user": false,
+    "action_tomato": "#b33e28"
   },
   {
     "id": "hasanara",
@@ -301,5 +308,5 @@ const BRANDS=[
     "selected_by_user": true,
     "direction_selection": "user"
   }
-];let active='All';const grid=document.querySelector('#grid');function el(tag,text){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e}function draw(){grid.replaceChildren();grid.classList.toggle('single',active!=='All');document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-pressed',b.textContent===active));for(const b of BRANDS.filter(b=>active==='All'||b.brand===active)){const article=el('article');article.append(el('div',b.brand+' / '+b.variant),el('h2',b.name));const desc=el('p',b.description);desc.className='note';article.append(desc);const open=el('a');open.href='brands/'+b.slug+'/pack-preview.png';open.target='_blank';const img=el('img');img.src=open.href+(b.slug==='patchwork'?'?revision=fabric-r4':b.slug==='subcult'?'?revision=user-layouts-r3':b.slug==='patrick__eff'?'?revision=patrick-banner-selected-r9':b.slug==='clpr'?'?revision=clpr-single-clip-r5':b.slug==='rekolekt'?'?revision=story-transcript-r3':'');img.className='board';img.alt=b.brand+' pack: banner, square post, story, screenshot frame, video title and transparent lower-third.';img.width=1600;img.height=1800;img.loading='lazy';open.append(img);article.append(open);const links=el('div');links.className='links';for(const [name,file] of [['Download pack',b.slug+'.zip'],['Brand guide','brands/'+b.slug+'/GUIDE.md'],['Logo','brands/'+b.slug+'/logos/lockup-primary-outlined.svg'],['Banner','brands/'+b.slug+'/social/banner-x-bluesky.png'],['Tokens','brands/'+b.slug+'/tokens.json'],...(b.slug==='patrick__eff'?[['Logo variations','brands/patrick__eff/logos/variations.html'],['Style examples','brands/patrick__eff/components.html'],['Selected banner alternatives','brands/patrick__eff/social/banner-selected-options/index.html'],['Mono font options','patrick-mono-study.html']]:[]),...(b.slug==='clpr'?[['Compare directions','clpr-directions/index.html']]:[]),...(b.slug==='subcult'?[['Banner with logo','brands/subcult/social/banner-x-bluesky-logo.png']]:[]),...(b.slug==='patchwork'?[['Stitched buttons','brands/patchwork/components.html']]:[])]){const a=el('a',name);a.href=file;links.append(a)}article.append(links);const details=el('details');details.append(el('summary','Watch the eight-second template preview'));const v=el('video');v.controls=true;v.preload='none';v.poster='brands/'+b.slug+'/video/title-card.png';v.src='brands/'+b.slug+'/video/template-preview.mp4';details.append(v);article.append(details);grid.append(article)}}for(const brand of ['All',...BRANDS.map(b=>b.brand)]){const button=el('button',brand);button.setAttribute('aria-pressed',brand===active);button.onclick=()=>{active=brand;draw()};document.querySelector('nav').append(button)}draw();
+];let active='All';const grid=document.querySelector('#grid');function el(tag,text){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e}function draw(){grid.replaceChildren();grid.classList.toggle('single',active!=='All');document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-pressed',b.textContent===active));for(const b of BRANDS.filter(b=>active==='All'||b.brand===active)){const article=el('article');article.append(el('div',b.brand+' / '+b.variant),el('h2',b.name));const desc=el('p',b.description);desc.className='note';article.append(desc);const open=el('a');open.href='brands/'+b.slug+'/pack-preview.png';open.target='_blank';const img=el('img');img.src=open.href+(b.slug==='patchwork'?'?revision=fabric-r4':b.slug==='subcult'?'?revision=user-layouts-r3':b.slug==='patrick__eff'?'?revision=patrick-waveform-approved-r2':b.slug==='clpr'?'?revision=clpr-single-clip-r5':b.slug==='rekolekt'?'?revision=story-transcript-r3':'');img.className='board';img.alt=b.brand+' pack: banner, square post, story, screenshot frame, video title and transparent lower-third.';img.width=b.slug==='patrick__eff'?1800:1600;img.height=b.slug==='patrick__eff'?1940:1800;img.loading='lazy';open.append(img);article.append(open);const links=el('div');links.className='links';for(const [name,file] of [['Download pack',b.slug+'.zip'],['Brand guide','brands/'+b.slug+'/GUIDE.md'],['Logo','brands/'+b.slug+'/logos/lockup-primary-outlined.svg'],['Banner','brands/'+b.slug+'/social/banner-x-bluesky.png'],['Tokens','brands/'+b.slug+'/tokens.json'],...(b.slug==='patrick__eff'?[['Logo variations','brands/patrick__eff/logos/variations.html'],['Style examples','brands/patrick__eff/components.html'],['Approved logo colors','../2026-10-02-patrick-site-direction/waveform-variations/index.html']]:[]),...(b.slug==='clpr'?[['Compare directions','clpr-directions/index.html']]:[]),...(b.slug==='subcult'?[['Banner with logo','brands/subcult/social/banner-x-bluesky-logo.png']]:[]),...(b.slug==='patchwork'?[['Stitched buttons','brands/patchwork/components.html']]:[])]){const a=el('a',name);a.href=file;links.append(a)}article.append(links);const details=el('details');details.append(el('summary','Watch the eight-second template preview'));const v=el('video');v.controls=true;v.preload='none';v.poster='brands/'+b.slug+'/video/title-card.png';v.src='brands/'+b.slug+'/video/template-preview.mp4';details.append(v);article.append(details);grid.append(article)}}for(const brand of ['All',...BRANDS.map(b=>b.brand)]){const button=el('button',brand);button.setAttribute('aria-pressed',brand===active);button.onclick=()=>{active=brand;draw()};document.querySelector('nav').append(button)}draw();
 </script></body></html>
