@@ -7,12 +7,14 @@ import { installCampaignLinkTracking, trackCampaignEvent } from '@/lib/analytics
 afterEach(() => {
   vi.unstubAllGlobals();
   document.body.innerHTML = '';
+  delete window.umami;
 });
 describe('campaign analytics', () => {
   it('counts the Patreon redirect link without user properties', () => {
     const track = vi.fn();
     window.umami = { track };
     const remove = installCampaignLinkTracking();
+    document.addEventListener('click', (event) => event.preventDefault(), { once: true });
     document.body.innerHTML =
       '<a href="https://support.subcult.tv"><span>Support</span></a><a href="https://example.com">Other</a>';
     document.querySelector('span')!.click();
