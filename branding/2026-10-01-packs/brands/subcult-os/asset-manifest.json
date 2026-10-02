@@ -25,8 +25,8 @@
     },
     {
       "path": "GUIDE.md",
-      "sha256": "62bfc1f9028059d2b61d521bd62fefdd2e5f42fe9b87eaa553d5db08b237784e",
-      "bytes": 6025
+      "sha256": "02bc9ed0d8b2a4806a73347c7c1fbd0ade85feab50994e590e741e500c6ac7e8",
+      "bytes": 6112
     },
     {
       "path": "pack-preview.png",
@@ -416,17 +416,47 @@
       "bytes": 502
     },
     {
+      "path": "product/mark-tight-outlined.svg",
+      "sha256": "c2b95c9de6593206ee4ab57a718220d8fe07af9fc9dce03c48fa8cb78da00de7",
+      "bytes": 2267
+    },
+    {
+      "path": "product/app-icon.svg",
+      "sha256": "9ae5e105703dfd981dcfbf86e06867fd1c35d2ede49e47db75d2fafe83c6b87c",
+      "bytes": 574
+    },
+    {
+      "path": "product/apple-touch-icon.svg",
+      "sha256": "e98c1072b9090c2c33884c574ac7115c032a37de5637462deed4c1b38ceb4160",
+      "bytes": 582
+    },
+    {
+      "path": "product/android-adaptive-foreground.svg",
+      "sha256": "ea2928daee2fd027214e0a108d5729fe93ff62c7db9363e9e52636a3987bba12",
+      "bytes": 525
+    },
+    {
+      "path": "product/android-adaptive-monochrome.svg",
+      "sha256": "ca10a405c1a9430fe957686d8a7607d0b2f0d79e8a28192d034999616da522c6",
+      "bytes": 522
+    },
+    {
+      "path": "product/splash-icon.svg",
+      "sha256": "a03e6cdcba592b60e38cd45b15c1cff2ca29bfb1f21972c2a96f6c0a97d68832",
+      "bytes": 509
+    },
+    {
+      "path": "product/og.svg",
+      "sha256": "22756bb3e6b2ae92599d90639e2f4084a22df2a8223baeced93716b930556154",
+      "bytes": 2157
+    },
+    {
       "path": "product/mark-tight.png",
       "sha256": "5043949ac79229d1696629962c590cff4a6d5baf7c17b7fa4e2dfa25beda9524",
       "bytes": 3167,
       "width": 156,
       "height": 156,
       "mode": "RGB"
-    },
-    {
-      "path": "product/mark-tight-outlined.svg",
-      "sha256": "c2b95c9de6593206ee4ab57a718220d8fe07af9fc9dce03c48fa8cb78da00de7",
-      "bytes": 2267
     },
     {
       "path": "product/favicon-32.png",
@@ -445,22 +475,12 @@
       "mode": "RGB"
     },
     {
-      "path": "product/app-icon.svg",
-      "sha256": "9ae5e105703dfd981dcfbf86e06867fd1c35d2ede49e47db75d2fafe83c6b87c",
-      "bytes": 574
-    },
-    {
       "path": "product/app-icon.png",
       "sha256": "bc6ae94014fb82d329530cb2a0e3c5093153f350652f3e458511e4de59f06786",
       "bytes": 14963,
       "width": 1024,
       "height": 1024,
       "mode": "RGB"
-    },
-    {
-      "path": "product/apple-touch-icon.svg",
-      "sha256": "e98c1072b9090c2c33884c574ac7115c032a37de5637462deed4c1b38ceb4160",
-      "bytes": 582
     },
     {
       "path": "product/apple-touch-icon.png",
@@ -471,22 +491,12 @@
       "mode": "RGB"
     },
     {
-      "path": "product/android-adaptive-foreground.svg",
-      "sha256": "ea2928daee2fd027214e0a108d5729fe93ff62c7db9363e9e52636a3987bba12",
-      "bytes": 525
-    },
-    {
       "path": "product/android-adaptive-foreground.png",
       "sha256": "f5830d996c5377edee71a7c302a968bfba92674eea40cc4638f09d6333327233",
       "bytes": 14349,
       "width": 1024,
       "height": 1024,
       "mode": "RGBA"
-    },
-    {
-      "path": "product/android-adaptive-monochrome.svg",
-      "sha256": "ca10a405c1a9430fe957686d8a7607d0b2f0d79e8a28192d034999616da522c6",
-      "bytes": 522
     },
     {
       "path": "product/android-adaptive-monochrome.png",
@@ -497,22 +507,12 @@
       "mode": "RGBA"
     },
     {
-      "path": "product/splash-icon.svg",
-      "sha256": "a03e6cdcba592b60e38cd45b15c1cff2ca29bfb1f21972c2a96f6c0a97d68832",
-      "bytes": 509
-    },
-    {
       "path": "product/splash-icon.png",
       "sha256": "a2b0b09320fb5065d0b7d05ad97ab610694309ab539a4c76dbee8244d9d28492",
       "bytes": 18573,
       "width": 1024,
       "height": 1024,
       "mode": "RGBA"
-    },
-    {
-      "path": "product/og.svg",
-      "sha256": "22756bb3e6b2ae92599d90639e2f4084a22df2a8223baeced93716b930556154",
-      "bytes": 2157
     },
     {
       "path": "product/og.png",
