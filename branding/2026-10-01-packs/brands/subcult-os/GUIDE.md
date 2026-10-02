@@ -36,6 +36,19 @@ Editable SVG text needs the included fonts. Install them for editing, or use the
 
 The story artwork keeps the main message between y=250 and y=1670 on a 1080×1920 canvas. Check the destination’s current overlay and crop behavior in its composer. Keep critical banner content away from the bottom-left avatar area. These are layout guides, not a guarantee of every platform crop.
 
+`product/` contains exports at their final sizes for the Subcult OS site and app. Copy them as they are; do not crop, resize or recolor them downstream.
+
+| File | Use |
+| --- | --- |
+| `mark-tight.svg`, `mark-tight-outlined.svg` | The mark cropped to its frame, for favicons and for placement beside live text. Add the quarter-height clear space in layout. |
+| `favicon-32.png`, `favicon-48.png` | Raster favicons for the site and for Expo web. |
+| `app-icon.png` | 1024×1024 opaque store and iOS icon. |
+| `apple-touch-icon.png` | 180×180 opaque home-screen icon for the site. |
+| `android-adaptive-foreground.png` | 1024×1024 transparent adaptive-icon foreground. Pair it with the base color #000000 as the adaptive background. |
+| `android-adaptive-monochrome.png` | 1024×1024 single-color layer for Android themed icons. |
+| `splash-icon.png` | 1024×1024 transparent mark for a splash screen on the base color. |
+| `og.png` | 1200×630 link preview: the X/Bluesky banner centered on the base color. Its headline needs owner approval before it ships on a site (subcult-os issue 201). |
+
 ## Screenshots and video
 
 Replace the screenshot placeholder with a real capture of a verified workflow. Show enough interface to establish context; crop credentials, private dashboards, unpublished material and personal data. Keep original recordings separately from edited exports.
@@ -46,4 +59,4 @@ The video templates use a 1920×1080 canvas and a 96-pixel outer margin. Keep ca
 
 Use verified product claims and exact approved copy. Quote/release template text is placeholder content and must be replaced. Describe the completed image in alt text, including the visible message; do not describe a screenshot placeholder as a working feature. `alt-text.md` supplies starter descriptions for the completed sample artwork.
 
-Reference: Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02. Site/asset observations were made October 1, 2026. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
+Reference: Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02. Source/asset observation dates are recorded in the reference above. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
