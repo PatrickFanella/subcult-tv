@@ -530,7 +530,7 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
-.product-landing[data-product='prichal'] .landing-headline {
+.product-landing[data-product='prichal'] :is(.landing-headline, #features-title) {
   font-family: var(--lp-body);
   letter-spacing: -0.03em;
 }
