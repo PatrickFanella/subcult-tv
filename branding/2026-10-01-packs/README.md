@@ -57,3 +57,5 @@ Studio root. The exporter verifies source hashes and writes destination
 provenance. The full pack remains in Studio.
 
 Rekolekt website (updated October 2, 2026): [website design specification](brands/rekolekt/WEBSITE.md) records the implemented landing page, real transcript evidence, interaction states and responsive checks. The [brand guide](brands/rekolekt/GUIDE.md) retains the selected Index identity and links to this maintained specification.
+
+Patchwork website (updated October 2, 2026): [website design specification](brands/patchwork/WEBSITE.md) records the web app after the interface audit: page structure, copy rules, components, interaction states and where the site differs from the Neighbourhood fabric pack. `patchwork_product.py` holds the site's interface roles, which `tokens.json` lists under `product_interface`. The [brand guide](brands/patchwork/GUIDE.md) keeps the selected direction for promotional artwork.
