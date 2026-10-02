@@ -1,0 +1,192 @@
+/* Dedhed design tokens — "The Tape Shelf"
+   Source material: docs/inspo/ (taper cassette collections, blank-tape shells, wooden racks).
+   System fonts only; nothing is fetched. */
+
+:root {
+  /* ---- Surfaces: shells, labels, racks ---------------------------------- */
+  --shell-black: #1b1a18;        /* TDK SA90 / black Maxell shell */
+  --shell-smoke: #2b2a27;        /* lifted black for panels */
+  --shell-clear: #c9c6bb;        /* clear polystyrene case, slightly grey */
+  --shell-clear-edge: #a9a69b;
+  --paper: #efe9d8;              /* stock Maxell cream label */
+  --paper-bright: #f6f3ea;       /* fresh white label */
+  --paper-aged: #e6d7a7;         /* yellowed UR label */
+  --paper-kraft: #c9a56b;        /* index-card / cardboard sleeve */
+  --rack-pine: #c58b4e;          /* wooden cassette rack */
+  --rack-pine-dark: #8f6132;     /* rack slot shadow */
+  --rack-slot: #6b4a27;
+
+  /* ---- Ink ---------------------------------------------------------------- */
+  --ink: #1f1d1a;                /* Sharpie black / typewriter ribbon */
+  --ink-soft: #4c4842;
+  --ink-faint: #8a857a;
+  --ink-blue: #27408b;           /* ballpoint blue */
+  --ink-red: #b3261e;            /* red Sharpie, Maxell red stripe */
+  --ink-paper: var(--paper);     /* text on black shells */
+
+  /* ---- Label stock (the coloured 1985 typed labels) ----------------------- */
+  --stock-sky: #8fb7d6;
+  --stock-cobalt: #3f6fa8;
+  --stock-yellow: #e9c53a;
+  --stock-red: #c43a2b;
+  --stock-green: #7fa56a;
+  --stock-pink: #e4a6a9;
+  --stock-orange: #d8692a;
+  --stock-teal: #4f9a8e;
+  --stock-grey: #bfc1bb;
+
+  /* ---- Brand marks (end-tabs) -------------------------------------------- */
+  --tab-red: #c8102e;            /* Maxell / TDK red */
+  --tab-gold: #c99a3a;           /* XLII gold foil */
+  --tab-chrome: #dcdcd4;
+
+  /* ---- Status (live / recording / warning) ------------------------------- */
+  --rec-red: #e1452f;            /* deck REC lamp */
+  --live-amber: #e8a24a;         /* VU meter amber */
+  --vu-green: #7bc97a;
+  --vu-red: #ff5a3c;
+  --warn: #b85c1a;
+
+  /* ---- Type --------------------------------------------------------------- */
+  --font-typed: "Times New Roman", Times, Georgia, serif;             /* typed spine labels */
+  --font-mono: "Courier New", "Courier Prime", ui-monospace, monospace; /* typewriter / counters */
+  --font-ui: Arial, Helvetica, "Liberation Sans", sans-serif;          /* interface */
+  --font-spine: "Arial Narrow", "Liberation Sans Narrow", "Helvetica Neue", Arial, sans-serif; /* condensed commercial spines */
+
+  --text-xs: 10px;
+  --text-sm: 12px;
+  --text-md: 14px;
+  --text-lg: 18px;
+  --text-xl: 24px;
+  --text-2xl: 34px;
+  --text-3xl: clamp(40px, 6vw, 72px);
+  --tracking-label: 0.14em;
+  --leading-tight: 1.05;
+  --leading-body: 1.55;
+
+  /* ---- Geometry ----------------------------------------------------------- */
+  --spine-h: 44px;               /* a cassette spine is ~10 × 1 */
+  --spine-h-sm: 36px;
+  --tab-w: 54px;
+  --radius-shell: 3px;           /* cassette corners are barely rounded */
+  --radius-reel: 50%;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+
+  /* ---- Depth: stacked plastic ------------------------------------------- */
+  --shadow-case: 0 1px 0 rgba(255,255,255,.55) inset, 0 -1px 0 rgba(0,0,0,.18) inset, 0 1px 2px rgba(0,0,0,.25);
+  --shadow-stack: 0 2px 0 var(--shell-clear-edge), 0 4px 6px rgba(0,0,0,.25);
+  --shadow-window: inset 0 2px 6px rgba(0,0,0,.6);
+
+  /* ---- Motion: mechanical, not springy ---------------------------------- */
+  --ease-mech: cubic-bezier(.2, .9, .2, 1);
+  --dur-click: 90ms;
+  --dur-slide: 180ms;
+  --reel-rpm: 2.4s;
+
+  /* ---- Focus -------------------------------------------------------------- */
+  --focus: 3px solid var(--ink-red);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --reel-rpm: 0s; --dur-slide: 0ms; }
+}
+
+/* Base ----------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--paper); color: var(--ink); font: var(--text-md)/var(--leading-body) var(--font-ui); -webkit-font-smoothing: antialiased; }
+body { margin: 0; }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: default; opacity: .45; }
+a { color: inherit; }
+:is(button, a, input, select, summary, [tabindex]):focus-visible { outline: var(--focus); outline-offset: 3px; }
+
+/* Shared primitives ----------------------------------------------------------- */
+
+/* Masthead: the same strip on every page. Wordmark, one line, live sticker. */
+.masthead { display: flex; align-items: center; gap: var(--space-5); padding: var(--space-3) var(--space-5); background: var(--shell-black); color: var(--paper); border-bottom: 4px solid var(--tab-red); }
+.masthead .wordmark { font: 700 26px/1 var(--font-spine); letter-spacing: .04em; text-transform: uppercase; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+.masthead .wordmark i { width: 10px; height: 10px; border-radius: 50%; background: var(--tab-red); }
+.masthead .eyebrow { color: var(--ink-faint); }
+.masthead .sticker.live { margin-left: auto; text-decoration: none; }
+@media (max-width: 640px) { .masthead .eyebrow { display: none; } }
+
+/* Eyebrow: letter-spaced typewriter caps, used for section labels and status */
+.eyebrow { font: 700 var(--text-xs)/1 var(--font-mono); letter-spacing: var(--tracking-label); text-transform: uppercase; color: var(--ink-soft); margin: 0; }
+
+/* Spine: the core list item. A long, thin plastic case with a label in the middle and a brand tab at the end. */
+.spine { display: grid; grid-template-columns: var(--tab-w) 1fr auto; align-items: center; min-height: var(--spine-h); width: 100%; padding: 0; border: 1px solid var(--shell-clear-edge); border-radius: var(--radius-shell); background: var(--shell-clear); box-shadow: var(--shadow-case); text-align: left; color: var(--ink); transition: transform var(--dur-slide) var(--ease-mech), box-shadow var(--dur-slide) var(--ease-mech); }
+.spine:hover { transform: translateX(6px); }
+.spine[aria-pressed="true"], .spine.is-selected { transform: translateX(14px); box-shadow: var(--shadow-stack); }
+.spine .tab { align-self: stretch; display: flex; align-items: center; justify-content: center; font: 700 9px/1 var(--font-spine); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-paper); background: var(--shell-black); border-right: 1px solid rgba(0,0,0,.35); border-radius: var(--radius-shell) 0 0 var(--radius-shell); }
+.spine .tab.gold { background: var(--tab-gold); color: var(--ink); }
+.spine .tab.red { background: var(--tab-red); }
+.spine .tab.chrome { background: var(--tab-chrome); color: var(--ink); }
+.spine .label { align-self: stretch; display: flex; align-items: center; gap: var(--space-4); padding: 0 var(--space-3); margin: 3px 0; background: var(--paper); border-top: 1px solid rgba(0,0,0,.08); border-bottom: 1px solid rgba(0,0,0,.08); min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.spine .label > * { overflow: hidden; text-overflow: ellipsis; }
+.spine .label.stock-sky { background: var(--stock-sky); }
+.spine .label.stock-cobalt { background: var(--stock-cobalt); color: var(--paper-bright); }
+.spine .label.stock-yellow { background: var(--stock-yellow); }
+.spine .label.stock-red { background: var(--stock-red); color: var(--paper-bright); }
+.spine .label.stock-green { background: var(--stock-green); }
+.spine .label.stock-pink { background: var(--stock-pink); }
+.spine .label.stock-orange { background: var(--stock-orange); }
+.spine .label.stock-aged { background: var(--paper-aged); }
+.spine .label.stock-grey { background: var(--stock-grey); }
+.spine .band { font: 700 var(--text-md)/1 var(--font-typed); }
+.spine .date { font: var(--text-md)/1 var(--font-typed); }
+.spine .set { font: 700 var(--text-sm)/1 var(--font-typed); }
+.spine .venue { font: var(--text-sm)/1 var(--font-typed); color: inherit; opacity: .85; }
+.spine .end { padding: 0 var(--space-3); font: var(--text-xs)/1 var(--font-mono); letter-spacing: .06em; color: var(--ink-soft); white-space: nowrap; }
+
+/* Side marker: the "A"/"B" box in the top-left of a label */
+.side { display: inline-grid; place-items: center; width: 22px; height: 22px; border: 2px solid currentColor; font: 700 13px/1 var(--font-ui); border-radius: 2px; }
+
+/* Buttons: deck keys. Square-ish, pressed in, no gradients. */
+.key { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); min-height: 40px; padding: 0 var(--space-4); border: 1px solid var(--shell-clear-edge); border-radius: var(--radius-shell); background: var(--shell-clear); color: var(--ink); font: 700 var(--text-sm)/1 var(--font-ui); letter-spacing: .04em; text-transform: uppercase; box-shadow: var(--shadow-case); transition: transform var(--dur-click) var(--ease-mech), box-shadow var(--dur-click) var(--ease-mech); }
+.key:active { transform: translateY(1px); box-shadow: inset 0 2px 3px rgba(0,0,0,.35); }
+.key.primary { background: var(--tab-red); color: var(--paper-bright); border-color: #8d0b20; }
+.key.dark { background: var(--shell-black); color: var(--paper); border-color: #000; }
+.key.ghost { background: transparent; box-shadow: none; border-color: var(--ink-soft); }
+.key.round { width: 48px; min-height: 48px; padding: 0; border-radius: 50%; font-size: 16px; }
+
+/* Inputs: a single typed line on label paper */
+.field { display: flex; flex-direction: column; gap: var(--space-1); }
+.field > span { font: var(--text-xs)/1 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.field input, .field select { padding: 9px var(--space-2); border: 0; border-bottom: 2px solid var(--ink); background: var(--paper-bright); font: var(--text-md)/1.2 var(--font-mono); border-radius: 2px 2px 0 0; }
+
+/* Badges: small typed stickers and the red "synthetic" tab */
+.sticker { display: inline-block; padding: 3px 6px; font: 700 var(--text-xs)/1 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; background: var(--paper-bright); border: 1px solid var(--ink-faint); border-radius: 2px; transform: rotate(-1deg); }
+.sticker.red { background: var(--tab-red); color: var(--paper-bright); border-color: var(--tab-red); }
+.sticker.warn { background: var(--paper-aged); border-color: var(--warn); color: var(--warn); }
+.sticker.live { background: var(--shell-black); color: var(--live-amber); border-color: var(--shell-black); }
+.sticker.live::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: var(--rec-red); box-shadow: 0 0 6px var(--rec-red); animation: blink 1.4s steps(2, start) infinite; }
+@keyframes blink { to { visibility: hidden; } }
+
+/* Reel: the hub seen through the window. Spins when .is-playing. */
+.reel { width: 56px; height: 56px; border-radius: 50%; background: radial-gradient(circle, var(--shell-clear) 0 16%, var(--shell-black) 17% 24%, transparent 25%), repeating-conic-gradient(var(--shell-black) 0 18deg, transparent 18deg 60deg); border: 4px solid var(--shell-black); box-shadow: 0 0 0 2px var(--shell-clear-edge); }
+.is-playing .reel { animation: spin var(--reel-rpm) linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Tape counter: three-digit mechanical counter */
+.counter { display: inline-flex; gap: 2px; padding: 3px; background: var(--shell-black); border-radius: 2px; }
+.counter span { display: inline-grid; place-items: center; width: 16px; height: 22px; background: var(--paper-bright); color: var(--ink); font: 700 var(--text-md)/1 var(--font-mono); }
+
+/* Rack: pine frame with a slot per spine */
+.rack { padding: var(--space-3); background: linear-gradient(180deg, var(--rack-pine), #b67d44); border: 6px solid var(--rack-pine-dark); border-radius: 4px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.2), 0 6px 14px rgba(0,0,0,.35); }
+.rack .slot { padding: 3px 0; border-bottom: 2px solid var(--rack-slot); }
+.rack .slot:last-child { border-bottom: 0; }
+.rack .slot.empty { height: calc(var(--spine-h) + 6px); background: repeating-linear-gradient(90deg, transparent 0 10px, rgba(0,0,0,.12) 10px 11px); }
+
+/* VU meter */
+.vu { height: 10px; background: var(--shell-black); border-radius: 2px; overflow: hidden; position: relative; }
+.vu > i { position: absolute; inset: 0; width: var(--level, 0%); background: linear-gradient(90deg, var(--vu-green) 0 70%, var(--live-amber) 70% 88%, var(--vu-red) 88%); transition: width 120ms linear; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

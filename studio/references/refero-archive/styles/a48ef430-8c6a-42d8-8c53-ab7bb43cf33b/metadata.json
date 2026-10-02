@@ -1,0 +1,29 @@
+{
+  "styleId": "a48ef430-8c6a-42d8-8c53-ab7bb43cf33b",
+  "sourceUrl": "https://styles.refero.design/style/a48ef430-8c6a-42d8-8c53-ab7bb43cf33b",
+  "fetchedAt": "2026-10-02T21:31:10.087212+00:00",
+  "extractedAt": "2026-10-02T21:31:10.113065+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Apple (España) — Style Reference",
+  "htmlSha256": "f057b70177ea5b9640ed2a3ef07814537f1afe23334d59fc37c4278cd7071431",
+  "cache": ".cache/a48ef430-8c6a-42d8-8c53-ab7bb43cf33b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4374f9506f59ece1ecd6e05362f4bccde2b892785a3e44a3ed6c236ee217ad2f",
+      "bytes": 23585,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/17cbd626-01b9-4b38-9aca-08daef55a7ea.jpg",
+    "fetchedAt": "2026-10-02T21:31:11.948185+00:00",
+    "sha256": "f196d9779eb6ce915edc38e6bc7942c7343834a47cbe20758764a0cbec9b2a38",
+    "bytes": 25980,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

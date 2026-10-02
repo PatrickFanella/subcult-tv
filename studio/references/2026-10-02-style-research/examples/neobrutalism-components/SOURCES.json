@@ -1,0 +1,11 @@
+{
+  "id": "neobrutalism-components",
+  "category": "Neo-Brutalism",
+  "name": "Neobrutalism components",
+  "live": "https://www.neobrutalism.dev/",
+  "fetchedDate": "2026-10-02",
+  "referenceImageCaptureDate": "unknown",
+  "evidence": "Official site/documentation and live computed styles",
+  "liveStyleObservation": true,
+  "newLiveScreenshot": false
+}

@@ -1,0 +1,105 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "week",
+    "summary",
+    "observations",
+    "drafts",
+    "open_checks"
+  ],
+  "properties": {
+    "week": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "drafts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidate_id",
+          "account",
+          "text",
+          "due_at",
+          "evidence",
+          "next_check",
+          "media"
+        ],
+        "properties": {
+          "candidate_id": {
+            "type": "string"
+          },
+          "account": {
+            "type": "string",
+            "enum": [
+              "patrick",
+              "subcult",
+              "clpr"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "due_at": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "next_check": {
+            "type": "string"
+          },
+          "media": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "mode",
+              "asset_ids",
+              "brief",
+              "alt_text"
+            ],
+            "properties": {
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "library",
+                  "generate",
+                  "capture"
+                ]
+              },
+              "asset_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "brief": {
+                "type": "string"
+              },
+              "alt_text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

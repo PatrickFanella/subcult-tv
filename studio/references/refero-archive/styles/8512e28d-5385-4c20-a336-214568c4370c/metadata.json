@@ -1,0 +1,29 @@
+{
+  "styleId": "8512e28d-5385-4c20-a336-214568c4370c",
+  "sourceUrl": "https://styles.refero.design/style/8512e28d-5385-4c20-a336-214568c4370c",
+  "fetchedAt": "2026-10-02T21:35:10.009941+00:00",
+  "extractedAt": "2026-10-02T21:35:10.032204+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Awesomic — Style Reference",
+  "htmlSha256": "0d0b00ebc6621204a1eed1b190302610ce6c53546d7cb6d05eac3643b06f3f52",
+  "cache": ".cache/8512e28d-5385-4c20-a336-214568c4370c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9ab4799dff412bcf7ef051708c3be27f3ffd62a22dfe8b3841684070e620e765",
+      "bytes": 21573,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0a0869ba-8188-4085-a16c-c2f864f39379.jpg",
+    "fetchedAt": "2026-10-02T21:35:12.080073+00:00",
+    "sha256": "2126305cf31e32df926a8c320636d35b897dfd3d27cfa4b0108a764f78299ddc",
+    "bytes": 128507,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

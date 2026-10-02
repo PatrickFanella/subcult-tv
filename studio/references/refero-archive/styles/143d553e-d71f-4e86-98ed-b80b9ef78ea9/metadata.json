@@ -1,0 +1,29 @@
+{
+  "styleId": "143d553e-d71f-4e86-98ed-b80b9ef78ea9",
+  "sourceUrl": "https://styles.refero.design/style/143d553e-d71f-4e86-98ed-b80b9ef78ea9",
+  "fetchedAt": "2026-10-02T21:55:26.397311+00:00",
+  "extractedAt": "2026-10-02T21:55:26.418124+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "AREA 17 — Style Reference",
+  "htmlSha256": "e68031c41540e8d8caa0f14f2b6fca6cc922552c9718ef7614ffaa0533a8be8a",
+  "cache": ".cache/143d553e-d71f-4e86-98ed-b80b9ef78ea9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2c810ea4fffb0841de58e5048d3df5c27b75b5467d1f88ba9616bb325d9b012b",
+      "bytes": 19837,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0f89e62e-4510-49b8-a125-7a195ceba6fc.jpg",
+    "fetchedAt": "2026-10-02T21:55:28.381136+00:00",
+    "sha256": "354b5821b2ddc955facfe35bb8025826b5389067f27671c343ff078ce1d88ee5",
+    "bytes": 74830,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

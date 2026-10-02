@@ -1,0 +1,29 @@
+{
+  "styleId": "f63bf016-5b53-4ddf-9f8c-da43f75a9e2b",
+  "sourceUrl": "https://styles.refero.design/style/f63bf016-5b53-4ddf-9f8c-da43f75a9e2b",
+  "fetchedAt": "2026-10-02T21:55:50.358887+00:00",
+  "extractedAt": "2026-10-02T21:55:50.386311+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "VALIENTE BRANDS — Style Reference",
+  "htmlSha256": "2bbc26bf9230b6ba59209d8b4873cddc2d7ab449e56172a7a79ce792b8b9b7ed",
+  "cache": ".cache/f63bf016-5b53-4ddf-9f8c-da43f75a9e2b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1ca9014fcd768bb3e7211287c13f8e20458deda191b317f30e796c8fd8a1a4c9",
+      "bytes": 19208,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e4d449ed-fa14-4dc7-978f-95f8350d7589.jpg",
+    "fetchedAt": "2026-10-02T21:55:52.295930+00:00",
+    "sha256": "aa57e63b4590537a502f1a21666ef5778fb43af6cbabb8e548d7c163db75eaea",
+    "bytes": 59320,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

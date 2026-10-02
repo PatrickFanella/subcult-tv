@@ -1,0 +1,29 @@
+{
+  "styleId": "e99ae628-89df-4de9-ab80-9885b1be4dc0",
+  "sourceUrl": "https://styles.refero.design/style/e99ae628-89df-4de9-ab80-9885b1be4dc0",
+  "fetchedAt": "2026-10-02T21:40:37.608162+00:00",
+  "extractedAt": "2026-10-02T21:40:37.636826+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Altason — Style Reference",
+  "htmlSha256": "98d6f2e7ea212d16f8a20fa877a738780ac823300762c6e748689f7cb27019c7",
+  "cache": ".cache/e99ae628-89df-4de9-ab80-9885b1be4dc0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "07cd14eca422fb88979b348b382e64e605ebbc3e71f396110bbd8d96a5d31112",
+      "bytes": 18729,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/93dfe343-5700-4bba-8f44-aa879eaf249d.jpg",
+    "fetchedAt": "2026-10-02T21:40:39.648418+00:00",
+    "sha256": "e0f4d2b6d5d08c591229606762fdce004187a573eb2d0a6b947dd3751600e121",
+    "bytes": 101315,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

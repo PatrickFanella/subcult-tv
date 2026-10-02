@@ -1,0 +1,29 @@
+{
+  "styleId": "9ff03bd9-2ce0-474c-8c73-1905dbacc23b",
+  "sourceUrl": "https://styles.refero.design/style/9ff03bd9-2ce0-474c-8c73-1905dbacc23b",
+  "fetchedAt": "2026-10-02T21:48:49.602636+00:00",
+  "extractedAt": "2026-10-02T21:48:49.666465+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SICK AGENCY — Style Reference",
+  "htmlSha256": "b9294d22f095c7220c8b5634338db2d9546766e7d76a90f2da51a14679318bf3",
+  "cache": ".cache/9ff03bd9-2ce0-474c-8c73-1905dbacc23b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4023e90651ff37ebd6e4a4c007b41aea32ff9db499b06408b2e8f7a3c1b878a1",
+      "bytes": 21377,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f1606287-43ef-4061-8d02-8622b79a1ab7.jpg",
+    "fetchedAt": "2026-10-02T21:48:51.544697+00:00",
+    "sha256": "e5fc9020e623df248dfd5aa5a468bd49bce24f2ed449d2096d7e98f5e263bd09",
+    "bytes": 177440,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

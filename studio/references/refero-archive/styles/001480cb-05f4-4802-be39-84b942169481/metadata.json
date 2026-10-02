@@ -1,0 +1,29 @@
+{
+  "styleId": "001480cb-05f4-4802-be39-84b942169481",
+  "sourceUrl": "https://styles.refero.design/style/001480cb-05f4-4802-be39-84b942169481",
+  "fetchedAt": "2026-10-02T21:57:58.217447+00:00",
+  "extractedAt": "2026-10-02T21:57:58.248378+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "pampam.city — Style Reference",
+  "htmlSha256": "f6bbc525b4c0582844449adf85cb691d0103e7fa79e3a844ec8aa276b7b685bd",
+  "cache": ".cache/001480cb-05f4-4802-be39-84b942169481.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0a37a26bd6b1628c378caa39f31d417f6bcf1a060a0edd8c015930268e68bb62",
+      "bytes": 22915,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f74e89e9-fad2-4c9d-983e-49b1b48ce4dc.jpg",
+    "fetchedAt": "2026-10-02T21:58:00.256944+00:00",
+    "sha256": "f8f8d53239b62f8c84b93113b981e2318b2170409b37b4bb0ec95ccae84879de",
+    "bytes": 74437,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

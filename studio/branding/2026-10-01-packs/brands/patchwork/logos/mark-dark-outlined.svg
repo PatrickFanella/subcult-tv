@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   role="img"
+   version="1.1"
+   id="svg59"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs59" />
+  <title
+     id="title1">mark-dark</title>
+  <g
+     transform="translate(48 48) scale(1.0)"
+     id="g59">
+    <path
+       d="M2 0H138Q160 0 160 22V158Q160 160 158 160H22Q0 160 0 138V2Q0 0 2 0Z"
+       fill="#e85d3f"
+       id="path1" />
+    <g
+       transform="translate(0 0)"
+       opacity=".035"
+       id="g57">
+      <defs
+         id="defs2">
+        <clipPath
+           id="fabric-0afa8ac906fd">
+          <path
+             d="M2 0H138Q160 0 160 22V158Q160 160 158 160H22Q0 160 0 138V2Q0 0 2 0Z"
+             fill="white"
+             id="path2" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#fabric-0afa8ac906fd)"
+         id="g56">
+        <path
+           d="M0 2 L160 2"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path3" />
+        <path
+           d="M0 8 L160 8"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path4" />
+        <path
+           d="M0 14 L160 14"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path5" />
+        <path
+           d="M0 20 L160 20"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path6" />
+        <path
+           d="M0 26 L160 26"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path7" />
+        <path
+           d="M0 32 L160 32"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path8" />
+        <path
+           d="M0 38 L160 38"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path9" />
+        <path
+           d="M0 44 L160 44"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path10" />
+        <path
+           d="M0 50 L160 50"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path11" />
+        <path
+           d="M0 56 L160 56"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path12" />
+        <path
+           d="M0 62 L160 62"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path13" />
+        <path
+           d="M0 68 L160 68"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path14" />
+        <path
+           d="M0 74 L160 74"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path15" />
+        <path
+           d="M0 80 L160 80"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path16" />
+        <path
+           d="M0 86 L160 86"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path17" />
+        <path
+           d="M0 92 L160 92"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path18" />
+        <path
+           d="M0 98 L160 98"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path19" />
+        <path
+           d="M0 104 L160 104"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path20" />
+        <path
+           d="M0 110 L160 110"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path21" />
+        <path
+           d="M0 116 L160 116"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path22" />
+        <path
+           d="M0 122 L160 122"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path23" />
+        <path
+           d="M0 128 L160 128"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path24" />
+        <path
+           d="M0 134 L160 134"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path25" />
+        <path
+           d="M0 140 L160 140"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path26" />
+        <path
+           d="M0 146 L160 146"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path27" />
+        <path
+           d="M0 152 L160 152"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path28" />
+        <path
+           d="M0 158 L160 158"
+           stroke="white"
+           stroke-width="0.55"
+           fill="none"
+           id="path29" />
+        <path
+           d="M2 0 L2 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path30" />
+        <path
+           d="M8 0 L8 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path31" />
+        <path
+           d="M14 0 L14 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path32" />
+        <path
+           d="M20 0 L20 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path33" />
+        <path
+           d="M26 0 L26 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path34" />
+        <path
+           d="M32 0 L32 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path35" />
+        <path
+           d="M38 0 L38 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path36" />
+        <path
+           d="M44 0 L44 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path37" />
+        <path
+           d="M50 0 L50 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path38" />
+        <path
+           d="M56 0 L56 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path39" />
+        <path
+           d="M62 0 L62 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path40" />
+        <path
+           d="M68 0 L68 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path41" />
+        <path
+           d="M74 0 L74 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path42" />
+        <path
+           d="M80 0 L80 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path43" />
+        <path
+           d="M86 0 L86 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path44" />
+        <path
+           d="M92 0 L92 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path45" />
+        <path
+           d="M98 0 L98 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path46" />
+        <path
+           d="M104 0 L104 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path47" />
+        <path
+           d="M110 0 L110 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path48" />
+        <path
+           d="M116 0 L116 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path49" />
+        <path
+           d="M122 0 L122 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path50" />
+        <path
+           d="M128 0 L128 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path51" />
+        <path
+           d="M134 0 L134 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path52" />
+        <path
+           d="M140 0 L140 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path53" />
+        <path
+           d="M146 0 L146 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path54" />
+        <path
+           d="M152 0 L152 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path55" />
+        <path
+           d="M158 0 L158 160"
+           stroke="white"
+           stroke-width="0.4"
+           fill="none"
+           id="path56" />
+      </g>
+    </g>
+    <path
+       data-texture="stitches"
+       d="M14.00 9.50L23.00 8.50 M31.00 8.30L42.00 9.70 M51.00 9.30L59.00 8.70 M66.00 9.80L76.00 8.20 M86.00 8.60L95.50 9.40 M104.00 9.50L113.00 8.50 M121.00 8.30L132.00 9.70 M140.84 9.61L148.06 12.73 M149.90 19.33L151.80 29.27 M151.40 39.29L150.60 48.79 M150.50 57.29L151.50 66.29 M151.70 74.29L150.30 85.29 M150.70 94.29L151.30 102.29 M150.20 109.29L151.80 119.29 M151.40 129.29L150.60 138.79 M150.75 146.86L144.79 151.43 M136.54 151.70L125.54 150.30 M116.54 150.70L108.54 151.30 M101.54 150.20L91.54 151.80 M81.54 151.40L72.04 150.60 M63.54 150.50L54.54 151.50 M46.54 151.70L35.54 150.30 M26.55 150.70L18.55 150.87 M13.18 147.14L8.30 138.52 M8.60 128.25L9.40 118.75 M9.50 110.25L8.50 101.25 M8.30 93.25L9.70 82.25 M9.30 73.25L8.70 65.25 M9.80 58.25L8.20 48.25 M8.60 38.25L9.40 28.75 M9.50 20.25L8.50 11.25"
+       fill="none"
+       stroke="#14111a"
+       stroke-width="2.4"
+       stroke-linecap="round"
+       id="path57" />
+    <g
+       transform="scale(2.5)"
+       id="g58">
+      <path
+         d="M18 48V16h16.5c8.2 0 13.5 4.4 13.5 11.5S42.7 39 34.5 39H27v9h-9Zm9-17h7c3.3 0 5-1.2 5-3.5S37.3 24 34 24h-7v7Z"
+         fill="#14111a"
+         id="path58" />
+    </g>
+  </g>
+</svg>

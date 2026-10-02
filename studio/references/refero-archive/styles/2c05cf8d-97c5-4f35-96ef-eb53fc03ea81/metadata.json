@@ -1,0 +1,29 @@
+{
+  "styleId": "2c05cf8d-97c5-4f35-96ef-eb53fc03ea81",
+  "sourceUrl": "https://styles.refero.design/style/2c05cf8d-97c5-4f35-96ef-eb53fc03ea81",
+  "fetchedAt": "2026-10-02T21:45:57.530060+00:00",
+  "extractedAt": "2026-10-02T21:45:57.577058+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Varo Bank — Style Reference",
+  "htmlSha256": "0c8b842b11e2b6860f967812e454c27253d422387b66c701dec09a0654dc5ca0",
+  "cache": ".cache/2c05cf8d-97c5-4f35-96ef-eb53fc03ea81.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b49799b0bb0ea730ba4066ab4b1a73b2b40e507834e5efb68b4d120ab21bbad9",
+      "bytes": 23266,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c87b2a01-4079-4c35-b9aa-4a8805e9f108.jpg",
+    "fetchedAt": "2026-10-02T21:45:59.529047+00:00",
+    "sha256": "ddd4cf2c37082fca9410faa2e98ece4996111e537b402a363a90ae8e878f82d8",
+    "bytes": 106913,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

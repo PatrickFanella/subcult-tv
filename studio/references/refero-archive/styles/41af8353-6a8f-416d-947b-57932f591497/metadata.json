@@ -1,0 +1,29 @@
+{
+  "styleId": "41af8353-6a8f-416d-947b-57932f591497",
+  "sourceUrl": "https://styles.refero.design/style/41af8353-6a8f-416d-947b-57932f591497",
+  "fetchedAt": "2026-10-02T21:49:49.510378+00:00",
+  "extractedAt": "2026-10-02T21:49:49.585575+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Programa — Style Reference",
+  "htmlSha256": "b904baa76fe220af68c69b94f043e70ae75019169ebfd882d6138aa6aa2f84d8",
+  "cache": ".cache/41af8353-6a8f-416d-947b-57932f591497.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6efe948f47804829667f52e15f6a2163b1b017aa729c7b0f06cffd4354821e52",
+      "bytes": 16567,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/804cc691-712f-463a-9b4f-790d7c391d36.jpg",
+    "fetchedAt": "2026-10-02T21:49:51.518937+00:00",
+    "sha256": "d1dae11b0fd746f3ab0b2091490d501b16215fabd55b7cafc5914070dc72a822",
+    "bytes": 90416,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

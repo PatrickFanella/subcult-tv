@@ -1,0 +1,9 @@
+/* Observed values, not canonical brand roles. See DESIGN.md and tokens.json. */
+:root {
+  --observed-color-01: rgb(17, 17, 24);
+  --observed-color-02: rgb(255, 255, 255);
+  --observed-color-03: rgb(0, 0, 0);
+  --observed-color-04: rgb(39, 39, 230);
+  --observed-font-01: __haasGrotDisp_332926, __haasGrotDisp_Fallback_332926;
+  --observed-font-02: __haasGrotText_7ea857, __haasGrotText_Fallback_7ea857;
+}

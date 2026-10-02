@@ -1,0 +1,29 @@
+{
+  "styleId": "45080e55-1fbe-4726-be23-4c9f54e442aa",
+  "sourceUrl": "https://styles.refero.design/style/45080e55-1fbe-4726-be23-4c9f54e442aa",
+  "fetchedAt": "2026-10-02T21:57:46.259409+00:00",
+  "extractedAt": "2026-10-02T21:57:46.292009+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "FeedHive — Style Reference",
+  "htmlSha256": "bb471b54f504df202e9bf9f8c0e1912de59b4873aeed0f445d6cec0029c78dae",
+  "cache": ".cache/45080e55-1fbe-4726-be23-4c9f54e442aa.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "53095405be240ebfa350ea88d8d712ed78c48612e59b50e9c93c1662f5230045",
+      "bytes": 18734,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/605052fb-156a-41f7-95a4-019a4b936d95.jpg",
+    "fetchedAt": "2026-10-02T21:57:48.255079+00:00",
+    "sha256": "8ddb037ab7ffb6728f77c8bb8a0c4122d6b8801d202da8d2ed7c9bb1158d3ce4",
+    "bytes": 121691,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "site": "podium",
+  "source": "https://podium.global/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:16:43.471Z",
+      "url": "https://podium.global/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:24:59.866Z",
+      "url": "https://podium.global/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "d1f7d86b6a85e8905a56960ebefe0d94ee2779063131d1576df1cb70647649a5",
+      "bytes": 4952
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "31c91103d06d3a255577cf0c4ca6f4cd5549729f599d420b01873f8e876d772c",
+      "bytes": 1193
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "043a35ce6074db56019ffe7958c00443925214e65b42ea426cbe2a98a7227b07",
+      "bytes": 37165
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "4ca8ec6ab99dd8380b90c7ac8998557988f5d6f067bbe0dff65d12fd9dcf88c2",
+      "bytes": 36744
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "b544bdaf430c9e451bef620d8207c3abca04524cbf78d7bf601704c2c00d722a",
+      "bytes": 5043
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "7c0389ab18e0db9a3b4229c9ca7e4f6330494ff1fed4acaf98fbd45fc70dfb29",
+      "bytes": 279
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "47d22694914f6e225a1fd93fa049ca4b228bb63dfa5b79b7899d7738d80b2f43",
+      "bytes": 14152
+    }
+  ]
+}

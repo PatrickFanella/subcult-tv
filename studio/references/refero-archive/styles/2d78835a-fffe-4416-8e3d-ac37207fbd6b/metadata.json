@@ -1,0 +1,29 @@
+{
+  "styleId": "2d78835a-fffe-4416-8e3d-ac37207fbd6b",
+  "sourceUrl": "https://styles.refero.design/style/2d78835a-fffe-4416-8e3d-ac37207fbd6b",
+  "fetchedAt": "2026-10-02T21:28:22.059648+00:00",
+  "extractedAt": "2026-10-02T21:28:22.108525+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "AWE — Style Reference",
+  "htmlSha256": "523c3bae399fea22d8ee457a0b55b94e1c75a1a5e54618579c08f704c1733102",
+  "cache": ".cache/2d78835a-fffe-4416-8e3d-ac37207fbd6b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1308bee0b40710d5e78a3c450952eb0d90d4c60288a5bda01063abdc78ab3ea9",
+      "bytes": 19238,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ee4a7367-a03b-4377-9cee-6029b9de89ac.jpg",
+    "fetchedAt": "2026-10-02T21:28:24.194229+00:00",
+    "sha256": "fa2daed6d9a99e70b62eecda2637826babc0404849ad0f724de5cfa0c1b80ba4",
+    "bytes": 111937,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

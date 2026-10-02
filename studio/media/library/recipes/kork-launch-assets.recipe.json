@@ -1,0 +1,28 @@
+{
+  "generator": "branding/2026-10-01-packs/kork_launch_assets.py",
+  "generator_sha256": "b28bc5095ab9b2fe6537de57621cf06ea7c6a1ae683ef7baa8c0dec9a6f22c7b",
+  "inputs": {
+    "design_helpers.py": "042f8b17018e50f2266609d099af0dcf759143ca8505d4ad6852a13cc2c70e76",
+    "brands.json": "89a00001e2efc95f75d97d7992d44e521209c5c71fbc513d06361c19723c0a0e",
+    "references/kork-demo-page-mobile.png": "43cbc92b89d28839380ea45c9602d22fb6f1b098ef09ceb9c6107fc725fb5706"
+  },
+  "command": "cd branding/2026-10-01-packs && python3 kork_launch_assets.py",
+  "renderer": "rsvg-convert with fontconfig.xml (bundled pack fonts)",
+  "outputs": {
+    "launch-square": {
+      "svg_sha256": "18cfd92f2818cb4bbefa04e8b23208265eb72612b470eca237201feaec1e7787",
+      "png_sha256": "513f428164d9a5294f8e595bf6bc7beace9e652ce6502a54416912fb361a1bd2"
+    },
+    "launch-landscape": {
+      "svg_sha256": "41082196522f99e44386676ac904d092a2c037f9945738666664109a14932e03",
+      "png_sha256": "70425e778378e3943de903a8bd887ca5f5b40df3305ffe4559421ba559c8c704"
+    },
+    "launch-story": {
+      "svg_sha256": "7590283804ebe8de2e12588d9d4a6e7eb9aaa67ae37bc3cc648332a9d662942f",
+      "png_sha256": "15f9dbe2ae1da260fca4560ab103a3377831df956f5d7785cfdc7b24a990fc46"
+    }
+  },
+  "claims": "C-KORK (Product Claims Register, checked 2026-10-02)",
+  "created": "2026-10-02",
+  "publishing_enabled": false
+}

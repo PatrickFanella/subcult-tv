@@ -1,0 +1,29 @@
+{
+  "styleId": "bab94db1-25ec-459d-8c81-5905a0324b65",
+  "sourceUrl": "https://styles.refero.design/style/bab94db1-25ec-459d-8c81-5905a0324b65",
+  "fetchedAt": "2026-10-02T21:44:57.449351+00:00",
+  "extractedAt": "2026-10-02T21:44:57.495264+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ARTWORLD — Style Reference",
+  "htmlSha256": "999f39424db44932bb2f1292609ee00bb0ba3a5194d3a949c948be172634c60c",
+  "cache": ".cache/bab94db1-25ec-459d-8c81-5905a0324b65.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2a52c677a9e409f00c0dc8014e888bd5dbb45b4d59acf6b0059444b4966a05f3",
+      "bytes": 18061,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/97806353-46b4-492b-9441-607f7ed395ce.jpg",
+    "fetchedAt": "2026-10-02T21:44:59.625124+00:00",
+    "sha256": "cb194153316cb516e3b2a663848d9d986ef9be5dca24aa538917404efde570eb",
+    "bytes": 159272,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

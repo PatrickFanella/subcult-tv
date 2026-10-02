@@ -1,0 +1,29 @@
+{
+  "styleId": "ab7996ed-e0ed-40a0-81a5-d37f19ef35b0",
+  "sourceUrl": "https://styles.refero.design/style/ab7996ed-e0ed-40a0-81a5-d37f19ef35b0",
+  "fetchedAt": "2026-10-02T21:49:09.929707+00:00",
+  "extractedAt": "2026-10-02T21:49:09.978444+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Mr. Pops — Style Reference",
+  "htmlSha256": "cfbbc584273fc456aca667aa32e152719476c41261e5f137eb611b36cd98a0e8",
+  "cache": ".cache/ab7996ed-e0ed-40a0-81a5-d37f19ef35b0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3136c123d5eb68d7f71fb03a5bb559c11ffe1ae60f076ef33c0c00b712a7bb6e",
+      "bytes": 17561,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0e9ba53c-0b3e-4bde-baf3-5a7426756b41.jpg",
+    "fetchedAt": "2026-10-02T21:49:11.601366+00:00",
+    "sha256": "075d66c60d7fbfc48b7b35aa59c64b5b4c2d755befbfc646531cb6e31e8c1074",
+    "bytes": 100286,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

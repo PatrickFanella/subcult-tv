@@ -1,0 +1,11 @@
+[Unit]
+Description=Monday SUBCULT social preparation at 10am Chicago
+
+[Timer]
+OnCalendar=Mon *-*-* 10:00:00 America/Chicago
+Persistent=true
+AccuracySec=1min
+Unit=social-posting-plan.service
+
+[Install]
+WantedBy=timers.target

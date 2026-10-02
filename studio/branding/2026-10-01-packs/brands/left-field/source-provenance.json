@@ -1,0 +1,50 @@
+{
+  "observed_at": "2026-10-02",
+  "source_repository": "https://git.subcult.tv/subculture-collective/left-field",
+  "source_revision": "5f41c5fd5cc5441ded34f8efe3a1fab6ce2c9707",
+  "source_files": [
+    {
+      "path": "src/app/globals.css",
+      "sha256": "40b0189f28eae147f99a6a0eed7fc5d519b30733bf660f822c719d0267bcc8ce"
+    },
+    {
+      "path": "src/components/presentational.tsx",
+      "sha256": "5b408a08532a486f9fd6c8604d62a7511c29d622bf68217d0c55c85b15253f10"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "sha256": "94cc505f32be65cd7d5b1829363607492862ccfefdd6006e0dd1ebdb2807ca1c"
+    },
+    {
+      "path": "src/app/icon.svg",
+      "sha256": "2180ea7aef2fbb5c56bad64ec0743fa4c0cdf6b4826aa2db91d2d8e4313ab67e"
+    }
+  ],
+  "studio_baseline": "cb3cfbd",
+  "mark": {
+    "author": "Codex, generated for the user request",
+    "master": "left_field_assets.py:mark",
+    "status": "user-approved original vector geometry",
+    "revision": "User-requested revision: F extended to the L baseline; 26\u00d726 rust square at their intersection.",
+    "approval": "User said perfect after the baseline/intersection revision; approved 2026-10-02."
+  },
+  "palette": "Captured from src/app/globals.css. Paper, ink, rust and wash are unchanged; the site muted text colour moved from #64706a to #5c6862 in PR 54.",
+  "type": "Liberation Serif and Public Sans are portable export alternatives to Georgia and Arial; JetBrains Mono follows Studio label conventions",
+  "public_domain": "left-field.subcult.tv",
+  "publication": "not performed",
+  "deployment": {
+    "observed_at": "2026-10-02",
+    "public_url": "https://left-field.subcult.tv/",
+    "revision": "5f41c5fd5cc5441ded34f8efe3a1fab6ce2c9707",
+    "source_tree_sha256": "daf521354e48713c1ab9ce61758484ee57f700fa1e2a40eb3e10531965846542",
+    "app_started_utc": "2026-10-02T23:05:00Z",
+    "previous_revision": "1b071f2e5691a2359d11978c7d7850c0c43104fa",
+    "factual_release": "rel_full_20260804_v2",
+    "priority_index_model": "v1.14",
+    "pull_request": "https://git.subcult.tv/subculture-collective/left-field/pulls/57",
+    "website_specification": "WEBSITE.md",
+    "pack_assets_installed": true,
+    "pack_asset_record": "docs/brand/site-assets.json",
+    "former_public_url": "https://seats.dsaslate.com/ (301 redirect)"
+  }
+}

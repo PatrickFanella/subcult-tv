@@ -1,0 +1,83 @@
+[
+  {
+    "option": "A",
+    "slug": "solid-green",
+    "face": "green",
+    "upper_right": "green",
+    "lower_left_and_dot": "green",
+    "scale": 0.62,
+    "solid": true
+  },
+  {
+    "option": "B",
+    "slug": "solid-purple",
+    "face": "purple",
+    "upper_right": "purple",
+    "lower_left_and_dot": "purple",
+    "scale": 0.62,
+    "solid": true
+  },
+  {
+    "option": "C",
+    "slug": "solid-white",
+    "face": "white",
+    "upper_right": "white",
+    "lower_left_and_dot": "white",
+    "scale": 0.62,
+    "solid": true
+  },
+  {
+    "option": "D",
+    "slug": "mix-green-purple-white",
+    "face": "green",
+    "upper_right": "purple",
+    "lower_left_and_dot": "white",
+    "scale": 0.62,
+    "solid": false
+  },
+  {
+    "option": "E",
+    "slug": "mix-green-white-purple",
+    "face": "green",
+    "upper_right": "white",
+    "lower_left_and_dot": "purple",
+    "scale": 0.62,
+    "solid": false
+  },
+  {
+    "option": "F",
+    "slug": "mix-purple-green-white",
+    "face": "purple",
+    "upper_right": "green",
+    "lower_left_and_dot": "white",
+    "scale": 0.62,
+    "solid": false
+  },
+  {
+    "option": "G",
+    "slug": "mix-purple-white-green",
+    "face": "purple",
+    "upper_right": "white",
+    "lower_left_and_dot": "green",
+    "scale": 0.62,
+    "solid": false
+  },
+  {
+    "option": "H",
+    "slug": "mix-white-green-purple",
+    "face": "white",
+    "upper_right": "green",
+    "lower_left_and_dot": "purple",
+    "scale": 0.62,
+    "solid": false
+  },
+  {
+    "option": "I",
+    "slug": "mix-white-purple-green",
+    "face": "white",
+    "upper_right": "purple",
+    "lower_left_and_dot": "green",
+    "scale": 0.62,
+    "solid": false
+  }
+]

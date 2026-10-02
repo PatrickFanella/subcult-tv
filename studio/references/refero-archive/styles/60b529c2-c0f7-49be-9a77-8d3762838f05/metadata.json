@@ -1,0 +1,29 @@
+{
+  "styleId": "60b529c2-c0f7-49be-9a77-8d3762838f05",
+  "sourceUrl": "https://styles.refero.design/style/60b529c2-c0f7-49be-9a77-8d3762838f05",
+  "fetchedAt": "2026-10-02T21:54:14.187513+00:00",
+  "extractedAt": "2026-10-02T21:54:14.223369+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Jp — Style Reference",
+  "htmlSha256": "c81151309040b5998197da4f188cf179a75605466dda0372564094639f4146f2",
+  "cache": ".cache/60b529c2-c0f7-49be-9a77-8d3762838f05.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a42d25455386a50e98a3355afdacff7a31349f2a0e9de244513b4dd222f3b2c7",
+      "bytes": 17289,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/473f345a-9f34-47d0-b1b1-1ea6fa47fd6c.jpg",
+    "fetchedAt": "2026-10-02T21:54:16.252736+00:00",
+    "sha256": "a1d25bd36aa4149a720bed51bf5496ba3dff1aeac8fa6b50e26d3813b229a3a5",
+    "bytes": 105136,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

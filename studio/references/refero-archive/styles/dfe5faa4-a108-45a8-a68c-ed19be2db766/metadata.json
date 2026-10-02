@@ -1,0 +1,29 @@
+{
+  "styleId": "dfe5faa4-a108-45a8-a68c-ed19be2db766",
+  "sourceUrl": "https://styles.refero.design/style/dfe5faa4-a108-45a8-a68c-ed19be2db766",
+  "fetchedAt": "2026-10-02T21:42:53.479579+00:00",
+  "extractedAt": "2026-10-02T21:42:53.565934+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vectary — Style Reference",
+  "htmlSha256": "c2ec6aac67dce98a15d49b69228b0db775003b10413e97cf27ca77d72be25657",
+  "cache": ".cache/dfe5faa4-a108-45a8-a68c-ed19be2db766.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "057c2b5ba2f6f9b04e682359170e69f165b21d453298609fb63301ace8442120",
+      "bytes": 15100,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/021db147-0ea4-47df-97c5-747ebccf1b3b.jpg",
+    "fetchedAt": "2026-10-02T21:42:55.672781+00:00",
+    "sha256": "c27bfca9ea754de0807f5e2951c1715b626bff32605f25c0c646c75d9078c805",
+    "bytes": 84562,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

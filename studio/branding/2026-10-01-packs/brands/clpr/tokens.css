@@ -1,0 +1,10 @@
+:root {
+  --brand-bg: #0e0c13;
+  --brand-fg: #eeedf7;
+  --brand-accent: #8c5cff;
+  --brand-secondary: #3ddc97;
+  --brand-safe-label: #8c5cff;
+  --font-display: "Barlow Condensed";
+  --font-body: "Barlow";
+  --font-label: "IBM Plex Mono";
+}

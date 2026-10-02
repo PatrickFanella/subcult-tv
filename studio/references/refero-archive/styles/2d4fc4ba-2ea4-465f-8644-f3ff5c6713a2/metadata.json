@@ -1,0 +1,29 @@
+{
+  "styleId": "2d4fc4ba-2ea4-465f-8644-f3ff5c6713a2",
+  "sourceUrl": "https://styles.refero.design/style/2d4fc4ba-2ea4-465f-8644-f3ff5c6713a2",
+  "fetchedAt": "2026-10-02T21:50:29.583069+00:00",
+  "extractedAt": "2026-10-02T21:50:29.630669+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Freytag Anderson — Style Reference",
+  "htmlSha256": "32f8c83078557fe34bd4cef3363acb998e72df8686ee3d6973d33b59997e0afe",
+  "cache": ".cache/2d4fc4ba-2ea4-465f-8644-f3ff5c6713a2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b9b6f51a14e696a3f740297e7da333dd49bf3eda3f66f2e86004070745246c18",
+      "bytes": 17711,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8df36adb-0a60-4376-a056-e30c131775f6.jpg",
+    "fetchedAt": "2026-10-02T21:50:31.526175+00:00",
+    "sha256": "7eaf8675eea8bb01635738da1f49637d6502d911023049e9ade3ae5503c31e4a",
+    "bytes": 83446,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "87da9872-f6cc-4354-bf6a-1c02f0394d45",
+  "sourceUrl": "https://styles.refero.design/style/87da9872-f6cc-4354-bf6a-1c02f0394d45",
+  "fetchedAt": "2026-10-02T21:51:42.170521+00:00",
+  "extractedAt": "2026-10-02T21:51:42.217263+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Enter GmbH — Style Reference",
+  "htmlSha256": "d99a1a53481a4a6f4f95f103517a975a6a0819a287b93fea8a0b920653144ee6",
+  "cache": ".cache/87da9872-f6cc-4354-bf6a-1c02f0394d45.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "efc5f63810269eb1bc72f08fbcb2f8944295545df84a894f746bf4deb1da018b",
+      "bytes": 15879,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/317c7354-baf3-42e5-bcfe-e9cbe7f7d4ce.jpg",
+    "fetchedAt": "2026-10-02T21:51:44.192796+00:00",
+    "sha256": "12b4dbe73f28431f195ba938e6ae33cd015d4632475c1e4b8d4526a66f271ae8",
+    "bytes": 30481,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

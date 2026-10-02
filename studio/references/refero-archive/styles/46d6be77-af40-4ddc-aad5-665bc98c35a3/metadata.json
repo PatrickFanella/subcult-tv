@@ -1,0 +1,29 @@
+{
+  "styleId": "46d6be77-af40-4ddc-aad5-665bc98c35a3",
+  "sourceUrl": "https://styles.refero.design/style/46d6be77-af40-4ddc-aad5-665bc98c35a3",
+  "fetchedAt": "2026-10-02T21:28:25.989633+00:00",
+  "extractedAt": "2026-10-02T21:28:26.053303+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "AYOCIN — Style Reference",
+  "htmlSha256": "f68d8d8e00cff233eaa5e6451c549978522618c2fc2da06a4d53f28a199f3bf1",
+  "cache": ".cache/46d6be77-af40-4ddc-aad5-665bc98c35a3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ea0617b6a9f2ee4eee6770f08fd35324eb3a9e734b41bf8d2548e3c2f86ad351",
+      "bytes": 19242,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/648d96f1-775f-4f86-bfd2-04b983cc31d7.jpg",
+    "fetchedAt": "2026-10-02T21:28:28.031602+00:00",
+    "sha256": "27cc58463994aa8d3595a67eaf90021b66eed28b881d1449153c0a320deee3aa",
+    "bytes": 90327,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

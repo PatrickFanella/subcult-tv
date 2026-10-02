@@ -1,0 +1,29 @@
+{
+  "styleId": "67c60ee4-ac38-41ee-834e-ed2a92146417",
+  "sourceUrl": "https://styles.refero.design/style/67c60ee4-ac38-41ee-834e-ed2a92146417",
+  "fetchedAt": "2026-10-02T21:54:26.344541+00:00",
+  "extractedAt": "2026-10-02T21:54:26.479391+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sigmaphoto — Style Reference",
+  "htmlSha256": "dabdf0ea96892fd14722d223ba471feabf012df431093c0cd0feb3814ef5cb97",
+  "cache": ".cache/67c60ee4-ac38-41ee-834e-ed2a92146417.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "51433483a32885f417828232af3fd992f35daa2cd78c33c1bffabd732ec984c6",
+      "bytes": 19856,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4259bb1c-e63f-48ba-a80b-745f8871a0b9.jpg",
+    "fetchedAt": "2026-10-02T21:54:28.244520+00:00",
+    "sha256": "6abd608ab2d7eda9d7a07f7c1c197efae0f98f0533b70f127f79e977a8032382",
+    "bytes": 50960,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

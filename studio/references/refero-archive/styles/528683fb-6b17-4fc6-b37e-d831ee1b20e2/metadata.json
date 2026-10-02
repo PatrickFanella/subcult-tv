@@ -1,0 +1,29 @@
+{
+  "styleId": "528683fb-6b17-4fc6-b37e-d831ee1b20e2",
+  "sourceUrl": "https://styles.refero.design/style/528683fb-6b17-4fc6-b37e-d831ee1b20e2",
+  "fetchedAt": "2026-10-02T21:36:38.051373+00:00",
+  "extractedAt": "2026-10-02T21:36:38.098164+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Myrch Club — Style Reference",
+  "htmlSha256": "b89ddb1b9a59fdf68b9220c2e6ed0c5e199e774328f64775da6764efa822cb1e",
+  "cache": ".cache/528683fb-6b17-4fc6-b37e-d831ee1b20e2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ce677606c396b1df808b16d434b1475b872324a839506f2b4f17cb1803e38757",
+      "bytes": 15948,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b066222b-258c-4554-b35a-a20fea40124b.jpg",
+    "fetchedAt": "2026-10-02T21:36:40.088820+00:00",
+    "sha256": "35a331dd3074f80a7589855f2585b65f1087d188e26c0d5d2501ec007f5fdf50",
+    "bytes": 85250,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

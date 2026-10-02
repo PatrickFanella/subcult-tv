@@ -1,0 +1,29 @@
+{
+  "styleId": "68c15685-5db9-4869-b71d-27240568c9d8",
+  "sourceUrl": "https://styles.refero.design/style/68c15685-5db9-4869-b71d-27240568c9d8",
+  "fetchedAt": "2026-10-02T21:30:50.012887+00:00",
+  "extractedAt": "2026-10-02T21:30:50.061812+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Modal — Style Reference",
+  "htmlSha256": "59bbb12cc864fc7fd4eaf035ab86b394d5251e91a07f16b8a435c8c2cd554294",
+  "cache": ".cache/68c15685-5db9-4869-b71d-27240568c9d8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "44a566b5a9d15fa0569c5889d479a896205122ae212be5ed00b505880bc30bd4",
+      "bytes": 26811,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e758f5e6-d3be-440a-912f-0089cf81465f.jpg",
+    "fetchedAt": "2026-10-02T21:30:52.111827+00:00",
+    "sha256": "53f37452475b221cd1d0b8ae26e2a5138124f692d136d6c7c6944ab90a4ca1a5",
+    "bytes": 79440,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "88b02f2c-d82e-495a-8fb6-e750a0fb1211",
+  "sourceUrl": "https://styles.refero.design/style/88b02f2c-d82e-495a-8fb6-e750a0fb1211",
+  "fetchedAt": "2026-10-02T21:49:45.575220+00:00",
+  "extractedAt": "2026-10-02T21:49:45.653237+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Secure and powerful crypto wallet | Ctrl Wallet — Style Reference",
+  "htmlSha256": "19e20468bfd60e5d219e26d6a3b01b7152ef30693d1dc66806a2a5b1afa54679",
+  "cache": ".cache/88b02f2c-d82e-495a-8fb6-e750a0fb1211.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1f0258ac2534901ef87f0ae97908560626c21b0edc875fc504f9f38b616327b1",
+      "bytes": 19167,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a150cac6-c664-4d45-bd68-bfe7827d069b.jpg",
+    "fetchedAt": "2026-10-02T21:49:47.891658+00:00",
+    "sha256": "24f33b3340002250b83c698d9b7218155a310ad3a3c30684fce09a3e80f2d88f",
+    "bytes": 57685,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

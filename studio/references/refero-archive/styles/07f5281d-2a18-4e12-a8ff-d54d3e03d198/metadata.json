@@ -1,0 +1,29 @@
+{
+  "styleId": "07f5281d-2a18-4e12-a8ff-d54d3e03d198",
+  "sourceUrl": "https://styles.refero.design/style/07f5281d-2a18-4e12-a8ff-d54d3e03d198",
+  "fetchedAt": "2026-10-02T21:45:17.473338+00:00",
+  "extractedAt": "2026-10-02T21:45:17.529376+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Essie Wine — Style Reference",
+  "htmlSha256": "cf6ae1744b16a373cd06bd4811dc1480a2320643e8c48ae5dc13a664e3da7b24",
+  "cache": ".cache/07f5281d-2a18-4e12-a8ff-d54d3e03d198.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2a1df50c1b98cc44f0bd7b18df57a64f8b9b24a8d9f80e2f86d3168bd08b322a",
+      "bytes": 19090,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ce38dce2-2b52-4fcd-add3-72a34de009d9.jpg",
+    "fetchedAt": "2026-10-02T21:45:19.574913+00:00",
+    "sha256": "555e1126752d6b6f7220e3a07e756f98ecdf1ccc769617b37747d384aa82e167",
+    "bytes": 97546,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,1288 @@
+{
+  "scope": "Local Patchwork branding SVG text and stitched-button CSS; deployed site and caption rendering excluded",
+  "colors": {
+    "paper": "#f2efe7",
+    "ink": "#365448",
+    "green": "#12664f",
+    "tomato": "#e85d3f",
+    "action_tomato": "#b33e28",
+    "shadow": "#b2bba1",
+    "yellow": "#f2c14e",
+    "sage": "#9ec5ad"
+  },
+  "matrix": [
+    {
+      "foreground": "paper",
+      "background": "ink",
+      "ratio": 7.256511192743905,
+      "AA_normal": true,
+      "AA_large_or_nontext": true,
+      "AAA_normal": true,
+      "AAA_large": true
+    },
+    {
+      "foreground": "paper",
+      "background": "green",
+      "ratio": 6.013467408037532,
+      "AA_normal": true,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": true
+    },
+    {
+      "foreground": "paper",
+      "background": "tomato",
+      "ratio": 3.011521695711362,
+      "AA_normal": false,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "paper",
+      "background": "action_tomato",
+      "ratio": 5.025794071423445,
+      "AA_normal": true,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": true
+    },
+    {
+      "foreground": "paper",
+      "background": "shadow",
+      "ratio": 1.7379573449407117,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "paper",
+      "background": "yellow",
+      "ratio": 1.4605052472508122,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "paper",
+      "background": "sage",
+      "ratio": 1.654868954311254,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "ink",
+      "background": "green",
+      "ratio": 1.206709989488749,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "ink",
+      "background": "tomato",
+      "ratio": 2.4095829039112466,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "ink",
+      "background": "action_tomato",
+      "ratio": 1.4438536656335104,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "ink",
+      "background": "shadow",
+      "ratio": 4.175310293930978,
+      "AA_normal": false,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "ink",
+      "background": "yellow",
+      "ratio": 4.968493749956207,
+      "AA_normal": true,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": true
+    },
+    {
+      "foreground": "ink",
+      "background": "sage",
+      "ratio": 4.384946115424601,
+      "AA_normal": false,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "green",
+      "background": "tomato",
+      "ratio": 1.996820217699634,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "green",
+      "background": "action_tomato",
+      "ratio": 1.1965208527404607,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "green",
+      "background": "shadow",
+      "ratio": 3.460077674255391,
+      "AA_normal": false,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "green",
+      "background": "yellow",
+      "ratio": 4.117388430720812,
+      "AA_normal": false,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "green",
+      "background": "sage",
+      "ratio": 3.633802780801033,
+      "AA_normal": false,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "tomato",
+      "background": "action_tomato",
+      "ratio": 1.6688553426596797,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "tomato",
+      "background": "shadow",
+      "ratio": 1.732793790640527,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "tomato",
+      "background": "yellow",
+      "ratio": 2.0619725272333747,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "tomato",
+      "background": "sage",
+      "ratio": 1.8197946658348778,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "action_tomato",
+      "background": "shadow",
+      "ratio": 2.8917821752379624,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "action_tomato",
+      "background": "yellow",
+      "ratio": 3.4411338684908994,
+      "AA_normal": false,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "action_tomato",
+      "background": "sage",
+      "ratio": 3.0369740506221223,
+      "AA_normal": false,
+      "AA_large_or_nontext": true,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "shadow",
+      "background": "yellow",
+      "ratio": 1.1899699423964156,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "shadow",
+      "background": "sage",
+      "ratio": 1.0502084412261143,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    },
+    {
+      "foreground": "yellow",
+      "background": "sage",
+      "ratio": 1.1330797731992426,
+      "AA_normal": false,
+      "AA_large_or_nontext": false,
+      "AAA_normal": false,
+      "AAA_large": false
+    }
+  ],
+  "svg_text_checks": [
+    {
+      "file": "social/banner-tall-master.svg",
+      "text": "Patchwork",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 45.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/banner-tall-master.svg",
+      "text": "MUTUAL AID, BLOCK BY BLOCK",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 16.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/banner-tall-master.svg",
+      "text": "A little help,",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 68.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/banner-tall-master.svg",
+      "text": "from a friend.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 68.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/banner-tall-master.svg",
+      "text": "patchwork.subcult.tv",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 19.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/banner-x-bluesky.svg",
+      "text": "Patchwork",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 45.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/banner-x-bluesky.svg",
+      "text": "MUTUAL AID, BLOCK BY BLOCK",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 16.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/banner-x-bluesky.svg",
+      "text": "A little help,",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 68.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/banner-x-bluesky.svg",
+      "text": "from a friend.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 68.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/banner-x-bluesky.svg",
+      "text": "patchwork.subcult.tv",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 19.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/landscape-template.svg",
+      "text": "MUTUAL AID, BLOCK BY BLOCK",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 19.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/landscape-template.svg",
+      "text": "A little help,",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 87.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/landscape-template.svg",
+      "text": "from a friend.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 87.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/landscape-template.svg",
+      "text": "YOUR APPROVED CAPTION",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 26.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/landscape-template.svg",
+      "text": "patchwork.subcult.tv",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 20.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/quote-template.svg",
+      "text": "MUTUAL AID, BLOCK BY BLOCK",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 19.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/quote-template.svg",
+      "text": "\u201c",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 150.0,
+      "bold": true,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/quote-template.svg",
+      "text": "Add the exact quote.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 67.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/quote-template.svg",
+      "text": "Keep its context.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 67.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/quote-template.svg",
+      "text": "SOURCE / SPEAKER / DATE",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 24.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/quote-template.svg",
+      "text": "ORIGINAL URL / TIMESTAMP",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 22.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/quote-template.svg",
+      "text": "patchwork.subcult.tv",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 20.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/release-template.svg",
+      "text": "MUTUAL AID, BLOCK BY BLOCK",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 19.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/release-template.svg",
+      "text": "WHAT CHANGED",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 78.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/release-template.svg",
+      "text": "01 / A verified change",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 32.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/release-template.svg",
+      "text": "02 / A useful consequence",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 32.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/release-template.svg",
+      "text": "03 / A direct destination",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 32.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/release-template.svg",
+      "text": "patchwork.subcult.tv",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 20.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/screenshot-frame.svg",
+      "text": "PATCHWORK / WORKFLOW CAPTURE",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 20.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/screenshot-frame.svg",
+      "text": "PLACE A VERIFIED SCREENSHOT HERE",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 36.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/screenshot-frame.svg",
+      "text": "Crop private data. Keep interface text legible.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 28.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/screenshot-frame.svg",
+      "text": "patchwork.subcult.tv",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 20.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/square-post.svg",
+      "text": "MUTUAL AID, BLOCK BY BLOCK",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 14.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/square-post.svg",
+      "text": "A small ask.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 50.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/square-post.svg",
+      "text": "A local offer.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 50.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/square-post.svg",
+      "text": "HELP A NEIGHBOUR",
+      "foreground": "#f2efe7",
+      "background": "#12664f",
+      "svg_font_size": 20.0,
+      "bold": true,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/square-post.svg",
+      "text": "PASS IT ON",
+      "foreground": "#f2efe7",
+      "background": "#b33e28",
+      "svg_font_size": 20.0,
+      "bold": true,
+      "ratio": 5.025794071423445,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/square-post.svg",
+      "text": "Mutual aid, block by block.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 22.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/square-post.svg",
+      "text": "patchwork.subcult.tv",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 16.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/story-template.svg",
+      "text": "MUTUAL AID, BLOCK BY BLOCK",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 19.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/story-template.svg",
+      "text": "Patchwork",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 64.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/story-template.svg",
+      "text": "A little help,",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 88.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/story-template.svg",
+      "text": "from a friend.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 88.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/story-template.svg",
+      "text": "YOUR NOTE OR INVITATION",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 31.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/story-template.svg",
+      "text": "Replace this line with approved copy.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 25.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "social/story-template.svg",
+      "text": "patchwork.subcult.tv",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 25.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "video/end-card.svg",
+      "text": "Patchwork",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 91.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "video/end-card.svg",
+      "text": "patchwork.subcult.tv",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 40.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "video/lower-third.svg",
+      "text": "TITLE / SPEAKER",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 46.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "video/lower-third.svg",
+      "text": "One short line of context.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 30.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "video/thumbnail.svg",
+      "text": "PATCHWORK / THUMBNAIL",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 28.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "video/thumbnail.svg",
+      "text": "ADD A CLEAR TITLE",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 102.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "video/thumbnail.svg",
+      "text": "One useful idea.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 70.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "video/title-card.svg",
+      "text": "PATCHWORK / TITLE-CARD",
+      "foreground": "#12664f",
+      "background": "#f2efe7",
+      "svg_font_size": 28.0,
+      "bold": false,
+      "ratio": 6.013467408037532,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "video/title-card.svg",
+      "text": "ADD A CLEAR TITLE",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 102.0,
+      "bold": true,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    },
+    {
+      "file": "video/title-card.svg",
+      "text": "One useful idea.",
+      "foreground": "#365448",
+      "background": "#f2efe7",
+      "svg_font_size": 70.0,
+      "bold": false,
+      "ratio": 7.256511192743905,
+      "AA_at_native_svg_scale": true,
+      "AA_at_any_scale": true
+    }
+  ],
+  "normal_text_threshold": 4.5,
+  "all_svg_text_pairs_pass_AA_normal": true,
+  "action_tomato_ratio": 5.025794071423445,
+  "decorative_tomato_unchanged": true,
+  "texture_bounds": {
+    "paper_black_opacity": 0.025,
+    "fabric_white_opacity": 0.035,
+    "checks": [
+      {
+        "file": "social/banner-tall-master.svg",
+        "text": "Patchwork",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/banner-tall-master.svg",
+        "text": "MUTUAL AID, BLOCK BY BLOCK",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/banner-tall-master.svg",
+        "text": "A little help,",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/banner-tall-master.svg",
+        "text": "from a friend.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/banner-tall-master.svg",
+        "text": "patchwork.subcult.tv",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/banner-x-bluesky.svg",
+        "text": "Patchwork",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/banner-x-bluesky.svg",
+        "text": "MUTUAL AID, BLOCK BY BLOCK",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/banner-x-bluesky.svg",
+        "text": "A little help,",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/banner-x-bluesky.svg",
+        "text": "from a friend.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/banner-x-bluesky.svg",
+        "text": "patchwork.subcult.tv",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/landscape-template.svg",
+        "text": "MUTUAL AID, BLOCK BY BLOCK",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/landscape-template.svg",
+        "text": "A little help,",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/landscape-template.svg",
+        "text": "from a friend.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/landscape-template.svg",
+        "text": "YOUR APPROVED CAPTION",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/landscape-template.svg",
+        "text": "patchwork.subcult.tv",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/quote-template.svg",
+        "text": "MUTUAL AID, BLOCK BY BLOCK",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/quote-template.svg",
+        "text": "\u201c",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/quote-template.svg",
+        "text": "Add the exact quote.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/quote-template.svg",
+        "text": "Keep its context.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/quote-template.svg",
+        "text": "SOURCE / SPEAKER / DATE",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/quote-template.svg",
+        "text": "ORIGINAL URL / TIMESTAMP",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/quote-template.svg",
+        "text": "patchwork.subcult.tv",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/release-template.svg",
+        "text": "MUTUAL AID, BLOCK BY BLOCK",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/release-template.svg",
+        "text": "WHAT CHANGED",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/release-template.svg",
+        "text": "01 / A verified change",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/release-template.svg",
+        "text": "02 / A useful consequence",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/release-template.svg",
+        "text": "03 / A direct destination",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/release-template.svg",
+        "text": "patchwork.subcult.tv",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/screenshot-frame.svg",
+        "text": "PATCHWORK / WORKFLOW CAPTURE",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/screenshot-frame.svg",
+        "text": "PLACE A VERIFIED SCREENSHOT HERE",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/screenshot-frame.svg",
+        "text": "Crop private data. Keep interface text legible.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/screenshot-frame.svg",
+        "text": "patchwork.subcult.tv",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/square-post.svg",
+        "text": "MUTUAL AID, BLOCK BY BLOCK",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/square-post.svg",
+        "text": "A small ask.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/square-post.svg",
+        "text": "A local offer.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/square-post.svg",
+        "text": "HELP A NEIGHBOUR",
+        "worst_background": "#1b6c56",
+        "ratio": 5.494867898038219,
+        "AA_normal": true
+      },
+      {
+        "file": "social/square-post.svg",
+        "text": "PASS IT ON",
+        "worst_background": "#b64530",
+        "ratio": 4.706724350068154,
+        "AA_normal": true
+      },
+      {
+        "file": "social/square-post.svg",
+        "text": "Mutual aid, block by block.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/square-post.svg",
+        "text": "patchwork.subcult.tv",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/story-template.svg",
+        "text": "MUTUAL AID, BLOCK BY BLOCK",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "social/story-template.svg",
+        "text": "Patchwork",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/story-template.svg",
+        "text": "A little help,",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/story-template.svg",
+        "text": "from a friend.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/story-template.svg",
+        "text": "YOUR NOTE OR INVITATION",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/story-template.svg",
+        "text": "Replace this line with approved copy.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "social/story-template.svg",
+        "text": "patchwork.subcult.tv",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "video/end-card.svg",
+        "text": "Patchwork",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "video/end-card.svg",
+        "text": "patchwork.subcult.tv",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "video/lower-third.svg",
+        "text": "TITLE / SPEAKER",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "video/lower-third.svg",
+        "text": "One short line of context.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "video/thumbnail.svg",
+        "text": "PATCHWORK / THUMBNAIL",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "video/thumbnail.svg",
+        "text": "ADD A CLEAR TITLE",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "video/thumbnail.svg",
+        "text": "One useful idea.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "video/title-card.svg",
+        "text": "PATCHWORK / TITLE-CARD",
+        "worst_background": "#ebe9e1",
+        "ratio": 5.684197725759085,
+        "AA_normal": true
+      },
+      {
+        "file": "video/title-card.svg",
+        "text": "ADD A CLEAR TITLE",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      },
+      {
+        "file": "video/title-card.svg",
+        "text": "One useful idea.",
+        "worst_background": "#ebe9e1",
+        "ratio": 6.859178177902716,
+        "AA_normal": true
+      }
+    ],
+    "minimum_ratio": 4.706724350068154
+  }
+}

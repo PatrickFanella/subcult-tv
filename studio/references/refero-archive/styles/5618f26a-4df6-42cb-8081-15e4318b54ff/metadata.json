@@ -1,0 +1,29 @@
+{
+  "styleId": "5618f26a-4df6-42cb-8081-15e4318b54ff",
+  "sourceUrl": "https://styles.refero.design/style/5618f26a-4df6-42cb-8081-15e4318b54ff",
+  "fetchedAt": "2026-10-02T21:44:21.515894+00:00",
+  "extractedAt": "2026-10-02T21:44:21.556709+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dropmark — Style Reference",
+  "htmlSha256": "99b23b181220f3b385462e6ea680eec19d5d77711e1e7e2117c1fd1d08f68fde",
+  "cache": ".cache/5618f26a-4df6-42cb-8081-15e4318b54ff.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d67b7a408dea59112446bdb8edfb8d94e8cf0ec55a190a8a77d47206668cc6f8",
+      "bytes": 19498,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e3120ea3-ccb0-4a69-871a-f524b6b4faf4.jpg",
+    "fetchedAt": "2026-10-02T21:44:23.534441+00:00",
+    "sha256": "367512e1c4dc9e96cbe257fc26711241e91be137f788439bc1e3f36c9250717d",
+    "bytes": 84523,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "b376d42c-b2cb-4a52-8cec-ebf19cf1883f",
+  "sourceUrl": "https://styles.refero.design/style/b376d42c-b2cb-4a52-8cec-ebf19cf1883f",
+  "fetchedAt": "2026-10-02T21:51:54.193833+00:00",
+  "extractedAt": "2026-10-02T21:51:54.239426+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "UY Studio — Style Reference",
+  "htmlSha256": "97e86e90f74c1a226c77d3cdb4180f3c04e6eb8ae2e0b7bb8443bfcf64759ffd",
+  "cache": ".cache/b376d42c-b2cb-4a52-8cec-ebf19cf1883f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "38a5bf8e42493996766827aa8518a08de9ddf9dfb7ebe60b1529a3f770723297",
+      "bytes": 18300,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/792739cf-37cb-499f-bda0-b675720c13e9.jpg",
+    "fetchedAt": "2026-10-02T21:51:56.287383+00:00",
+    "sha256": "234a5010561657a262735f7ea348b82985438754305f4a5ce761a5c08012cf35",
+    "bytes": 123098,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

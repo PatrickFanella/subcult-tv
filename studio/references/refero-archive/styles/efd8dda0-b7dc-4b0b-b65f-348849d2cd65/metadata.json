@@ -1,0 +1,29 @@
+{
+  "styleId": "efd8dda0-b7dc-4b0b-b65f-348849d2cd65",
+  "sourceUrl": "https://styles.refero.design/style/efd8dda0-b7dc-4b0b-b65f-348849d2cd65",
+  "fetchedAt": "2026-10-02T21:54:34.353051+00:00",
+  "extractedAt": "2026-10-02T21:54:34.398292+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Glossier — Style Reference",
+  "htmlSha256": "5ff41a3e4a40a1c34a1f11502ee7b2bab0418fca2afcaf37a464a89fb492580e",
+  "cache": ".cache/efd8dda0-b7dc-4b0b-b65f-348849d2cd65.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e44365f24defb41202c0a776a91175f7ed9f648839d0a133906e514bc0a3e077",
+      "bytes": 18620,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/38966590-168f-4a1a-a24c-febf75d252ea.jpg",
+    "fetchedAt": "2026-10-02T21:54:36.246444+00:00",
+    "sha256": "2d05ac9c0d8b251725e065603e67837b2d9758b4cdef5188cfdc40d030300743",
+    "bytes": 138315,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

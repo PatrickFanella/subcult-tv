@@ -1,0 +1,191 @@
+{
+  "id": "wrapped-party",
+  "name": "Wrapped Party",
+  "requestedUrl": "https://wrapped-party.activetheory.dev/",
+  "navigation": {
+    "available": true,
+    "visible": false,
+    "tabId": "tab_g",
+    "url": "https://wrapped-party.activetheory.dev/en",
+    "title": "Wrapped Party",
+    "loading": false,
+    "viewportSetting": {
+      "_tag": "freeform",
+      "width": 1280,
+      "height": 800
+    },
+    "viewport": {
+      "width": 1402,
+      "height": 876
+    }
+  },
+  "screenshotPath": "/home/onnwee/.t3/userdata/browser-artifacts/browser-screenshot-wrapped-party-activetheory-dev-murelr1k-30d2343f.png",
+  "bodyText": "Wrapped Party by Spotify.\n62",
+  "canvas": [],
+  "capturedAt": "2026-10-02T20:16:36.500Z",
+  "colors": [
+    [
+      "rgb(245, 245, 245)",
+      2
+    ],
+    [
+      "rgb(239, 239, 234)",
+      1
+    ],
+    [
+      "rgb(149, 201, 13)",
+      1
+    ]
+  ],
+  "fontFaces": [
+    "@font-face { font-family: SpotifyMixWide; font-weight: 800; src: url(\"assets/fonts/SpotifyMixWide/SpotifyMixWide-Extrabold.woff2\") format(\"woff2\"); unicode-range: U+20-7E, U+A0-AC, U+AE-137, U+139-148, U+14A-17E, U+18F, U+1A0-1A1, U+1AF-1B0, U+1CD-1D4, U+1E6-1E7, U+1F4-1F5, U+1FA-1FF, U+218-21B, U+226-227, U+232-233, U+237, U+259, U+2BC, U+2C6-2C7, U+2D8-2DD, U+300-304, U+306-30C, U+312, U+31B, U+323, U+326-328, U+335-338, U+E3F, U+1E0C-1E0D, U+1E20-1E21, U+1E24-1E25, U+1E36-1E37, U+1E44-1E45, U+1E56-1E57, U+1E62-1E63, U+1E6C-1E6D, U+1E80-1E85, U+1E8A-1E8D, U+1E92-1E93, U+1E9E, U+1EA0-1EF9, U+2002-2003, U+2009-200A, U+2010-2011, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089, U+20A6, U+20A9-20AA, U+20AC, U+20B4, U+20B8-20BA, U+20BD, U+20BF, U+2113, U+2116-2117, U+2122, U+2126, U+2160-2169, U+216C-216F",
+    "@font-face { font-family: SpotifyMixWide; font-weight: 500; src: url(\"assets/fonts/SpotifyMixWide/SpotifyMixWide-Medium.woff2\") format(\"woff2\"); unicode-range: U+20-7E, U+A0-AC, U+AE-137, U+139-148, U+14A-17E, U+18F, U+1A0-1A1, U+1AF-1B0, U+1CD-1D4, U+1E6-1E7, U+1F4-1F5, U+1FA-1FF, U+218-21B, U+226-227, U+232-233, U+237, U+259, U+2BC, U+2C6-2C7, U+2D8-2DD, U+300-304, U+306-30C, U+312, U+31B, U+323, U+326-328, U+335-338, U+E3F, U+1E0C-1E0D, U+1E20-1E21, U+1E24-1E25, U+1E36-1E37, U+1E44-1E45, U+1E56-1E57, U+1E62-1E63, U+1E6C-1E6D, U+1E80-1E85, U+1E8A-1E8D, U+1E92-1E93, U+1E9E, U+1EA0-1EF9, U+2002-2003, U+2009-200A, U+2010-2011, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089, U+20A6, U+20A9-20AA, U+20AC, U+20B4, U+20B8-20BA, U+20BD, U+20BF, U+2113, U+2116-2117, U+2122, U+2126, U+2160-2169, U+216C-216F, U",
+    "@font-face { font-family: SpotifyMixWide; font-weight: 400; src: url(\"assets/fonts/SpotifyMixWide/SpotifyMixWide-Regular.woff2\") format(\"woff2\"); unicode-range: U+20-7E, U+A0-AC, U+AE-137, U+139-148, U+14A-17E, U+18F, U+1A0-1A1, U+1AF-1B0, U+1CD-1D4, U+1E6-1E7, U+1F4-1F5, U+1FA-1FF, U+218-21B, U+226-227, U+232-233, U+237, U+259, U+2BC, U+2C6-2C7, U+2D8-2DD, U+300-304, U+306-30C, U+312, U+31B, U+323, U+326-328, U+335-338, U+E3F, U+1E0C-1E0D, U+1E20-1E21, U+1E24-1E25, U+1E36-1E37, U+1E44-1E45, U+1E56-1E57, U+1E62-1E63, U+1E6C-1E6D, U+1E80-1E85, U+1E8A-1E8D, U+1E92-1E93, U+1E9E, U+1EA0-1EF9, U+2002-2003, U+2009-200A, U+2010-2011, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089, U+20A6, U+20A9-20AA, U+20AC, U+20B4, U+20B8-20BA, U+20BD, U+20BF, U+2113, U+2116-2117, U+2122, U+2126, U+2160-2169, U+216C-216F, ",
+    "@font-face { font-family: SpotifyMixNarrow; font-weight: 800; src: url(\"assets/fonts/SpotifyMixNarrow/SpotifyMixNarrow-Extrabold.woff2\") format(\"woff2\"); unicode-range: U+20-7E, U+A0-AC, U+AE-137, U+139-148, U+14A-17E, U+18F, U+1A0-1A1, U+1AF-1B0, U+1CD-1D4, U+1E6-1E7, U+1F4-1F5, U+1FA-1FF, U+218-21B, U+226-227, U+232-233, U+237, U+259, U+2BC, U+2C6-2C7, U+2D8-2DD, U+300-304, U+306-30C, U+312, U+31B, U+323, U+326-328, U+335-338, U+E3F, U+1E0C-1E0D, U+1E20-1E21, U+1E24-1E25, U+1E36-1E37, U+1E44-1E45, U+1E56-1E57, U+1E62-1E63, U+1E6C-1E6D, U+1E80-1E85, U+1E8A-1E8D, U+1E92-1E93, U+1E9E, U+1EA0-1EF9, U+2002-2003, U+2009-200A, U+2010-2011, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089, U+20A6, U+20A9-20AA, U+20AC, U+20B4, U+20B8-20BA, U+20BD, U+20BF, U+2113, U+2116-2117, U+2122, U+2126, U+2160-2169, U+216",
+    "@font-face { font-family: SpotifyMix; font-weight: 500; src: url(\"assets/fonts/SpotifyMix/SpotifyMix-Medium.woff2\") format(\"woff2\"); unicode-range: U+20-7E, U+A0-AC, U+AE-137, U+139-148, U+14A-17E, U+18F, U+1A0-1A1, U+1AF-1B0, U+1CD-1D4, U+1E6-1E7, U+1F4-1F5, U+1FA-1FF, U+218-21B, U+226-227, U+232-233, U+237, U+259, U+2BC, U+2C6-2C7, U+2D8-2DD, U+300-304, U+306-30C, U+312, U+31B, U+323, U+326-328, U+335-338, U+E3F, U+1E0C-1E0D, U+1E20-1E21, U+1E24-1E25, U+1E36-1E37, U+1E44-1E45, U+1E56-1E57, U+1E62-1E63, U+1E6C-1E6D, U+1E80-1E85, U+1E8A-1E8D, U+1E92-1E93, U+1E9E, U+1EA0-1EF9, U+2002-2003, U+2009-200A, U+2010-2011, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089, U+20A6, U+20A9-20AA, U+20AC, U+20B4, U+20B8-20BA, U+20BD, U+20BF, U+2113, U+2116-2117, U+2122, U+2126, U+2160-2169, U+216C-216F, U+2190-2193, ",
+    "@font-face { font-family: SpotifyMix; font-weight: 700; src: url(\"assets/fonts/SpotifyMix/SpotifyMix-Bold.woff2\") format(\"woff2\"); unicode-range: U+20-7E, U+A0-AC, U+AE-137, U+139-148, U+14A-17E, U+18F, U+1A0-1A1, U+1AF-1B0, U+1CD-1D4, U+1E6-1E7, U+1F4-1F5, U+1FA-1FF, U+218-21B, U+226-227, U+232-233, U+237, U+259, U+2BC, U+2C6-2C7, U+2D8-2DD, U+300-304, U+306-30C, U+312, U+31B, U+323, U+326-328, U+335-338, U+E3F, U+1E0C-1E0D, U+1E20-1E21, U+1E24-1E25, U+1E36-1E37, U+1E44-1E45, U+1E56-1E57, U+1E62-1E63, U+1E6C-1E6D, U+1E80-1E85, U+1E8A-1E8D, U+1E92-1E93, U+1E9E, U+1EA0-1EF9, U+2002-2003, U+2009-200A, U+2010-2011, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089, U+20A6, U+20A9-20AA, U+20AC, U+20B4, U+20B8-20BA, U+20BD, U+20BF, U+2113, U+2116-2117, U+2122, U+2126, U+2160-2169, U+216C-216F, U+2190-2193, U+",
+    "@font-face { font-family: SpotifyMix; font-weight: 800; src: url(\"assets/fonts/SpotifyMix/SpotifyMix-Extrabold.woff2\") format(\"woff2\"); unicode-range: U+20-7E, U+A0-AC, U+AE-137, U+139-148, U+14A-17E, U+18F, U+1A0-1A1, U+1AF-1B0, U+1CD-1D4, U+1E6-1E7, U+1F4-1F5, U+1FA-1FF, U+218-21B, U+226-227, U+232-233, U+237, U+259, U+2BC, U+2C6-2C7, U+2D8-2DD, U+300-304, U+306-30C, U+312, U+31B, U+323, U+326-328, U+335-338, U+E3F, U+1E0C-1E0D, U+1E20-1E21, U+1E24-1E25, U+1E36-1E37, U+1E44-1E45, U+1E56-1E57, U+1E62-1E63, U+1E6C-1E6D, U+1E80-1E85, U+1E8A-1E8D, U+1E92-1E93, U+1E9E, U+1EA0-1EF9, U+2002-2003, U+2009-200A, U+2010-2011, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089, U+20A6, U+20A9-20AA, U+20AC, U+20B4, U+20B8-20BA, U+20BD, U+20BF, U+2113, U+2116-2117, U+2122, U+2126, U+2160-2169, U+216C-216F, U+2190-219",
+    "@font-face { font-family: CircularSp-Arab; font-weight: 800; src: url(\"assets/fonts/CircularSp-Arab/CircularSp-Arab-Black.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Arab/CircularSp-Arab-Black.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+A0, U+A4, U+B6-B7, U+1C4-1C6, U+1F1-1F3, U+2BB-2BC, U+600-603, U+60B-60C, U+610, U+61B, U+61F, U+621-63A, U+640-659, U+660-671, U+679-681, U+683-68A, U+68C-68D, U+68F, U+691, U+693, U+696, U+698-69A, U+6A1, U+6A4, U+6A6, U+6A9-6AB, U+6AF, U+6B1, U+6B3, U+6BA-6BC, U+6BE, U+6C0-6C3, U+6CC-6CD, U+6D0, U+6D2-6D5, U+6F0-6F9, U+6FD-6FE, U+2002-2003, U+2009, U+200C-200F, U+25CC, U+FB50-FB85, U+FB88-FBBB, U+FBBD-FBC1, U+FBE4-FBE9, U+FBFC-FBFF, U+FC48, U+FC5E-FC63, U+FD3E-FD3F, U+FDF2, U+FDFC, U+FE80-FEFC, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Arab; font-weight: 700; src: url(\"assets/fonts/CircularSp-Arab/CircularSp-Arab-Bold.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Arab/CircularSp-Arab-Bold.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+A0, U+A4, U+B6-B7, U+1C4-1C6, U+1F1-1F3, U+2BB-2BC, U+600-603, U+60B-60C, U+610, U+61B, U+61F, U+621-63A, U+640-659, U+660-671, U+679-681, U+683-68A, U+68C-68D, U+68F, U+691, U+693, U+696, U+698-69A, U+6A1, U+6A4, U+6A6, U+6A9-6AB, U+6AF, U+6B1, U+6B3, U+6BA-6BC, U+6BE, U+6C0-6C3, U+6CC-6CD, U+6D0, U+6D2-6D5, U+6F0-6F9, U+6FD-6FE, U+2002-2003, U+2009, U+200C-200F, U+25CC, U+FB50-FB85, U+FB88-FBBB, U+FBBD-FBC1, U+FBE4-FBE9, U+FBFC-FBFF, U+FC48, U+FC5E-FC63, U+FD3E-FD3F, U+FDF2, U+FDFC, U+FE80-FEFC, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Arab; font-weight: 400; src: url(\"assets/fonts/CircularSp-Arab/CircularSp-Arab-Book.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Arab/CircularSp-Arab-Book.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+A0, U+A4, U+B6-B7, U+1C4-1C6, U+1F1-1F3, U+2BB-2BC, U+600-603, U+60B-60C, U+610, U+61B, U+61F, U+621-63A, U+640-659, U+660-671, U+679-681, U+683-68A, U+68C-68D, U+68F, U+691, U+693, U+696, U+698-69A, U+6A1, U+6A4, U+6A6, U+6A9-6AB, U+6AF, U+6B1, U+6B3, U+6BA-6BC, U+6BE, U+6C0-6C3, U+6CC-6CD, U+6D0, U+6D2-6D5, U+6F0-6F9, U+6FD-6FE, U+2002-2003, U+2009, U+200C-200F, U+25CC, U+FB50-FB85, U+FB88-FBBB, U+FBBD-FBC1, U+FBE4-FBE9, U+FBFC-FBFF, U+FC48, U+FC5E-FC63, U+FD3E-FD3F, U+FDF2, U+FDFC, U+FE80-FEFC, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Grek; font-weight: 800; src: url(\"assets/fonts/CircularSp-Grek/CircularSp-Grek-Black.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Grek/CircularSp-Grek-Black.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+A0, U+A4, U+B6-B7, U+375, U+37A, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3CF, U+3D7, U+2126, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Grek; font-weight: 700; src: url(\"assets/fonts/CircularSp-Grek/CircularSp-Grek-Bold.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Grek/CircularSp-Grek-Bold.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+A0, U+A4, U+B6-B7, U+375, U+37A, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3CF, U+3D7, U+2126, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Grek; font-weight: 400; src: url(\"assets/fonts/CircularSp-Grek/CircularSp-Grek-Book.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Grek/CircularSp-Grek-Book.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+A0, U+A4, U+B6-B7, U+375, U+37A, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3CF, U+3D7, U+2126, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Hebr; font-weight: 800; src: url(\"assets/fonts/CircularSp-Hebr/CircularSp-Hebr-Black.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Hebr/CircularSp-Hebr-Black.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+30-39, U+A0, U+A4, U+B6-B7, U+1C4-1C6, U+1F1-1F3, U+2BB-2BC, U+5B0-5C4, U+5D0-5EA, U+5F0-5F4, U+200E-200F, U+20AA, U+FB2A-FB36, U+FB38-FB3C, U+FB3E, U+FB40-FB41, U+FB43-FB44, U+FB46-FB4F, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Hebr; font-weight: 700; src: url(\"assets/fonts/CircularSp-Hebr/CircularSp-Hebr-Bold.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Hebr/CircularSp-Hebr-Bold.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+30-39, U+A0, U+A4, U+B6-B7, U+1C4-1C6, U+1F1-1F3, U+2BB-2BC, U+5B0-5C4, U+5D0-5EA, U+5F0-5F4, U+200E-200F, U+20AA, U+FB2A-FB36, U+FB38-FB3C, U+FB3E, U+FB40-FB41, U+FB43-FB44, U+FB46-FB4F, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Hebr; font-weight: 400; src: url(\"assets/fonts/CircularSp-Hebr/CircularSp-Hebr-Book.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Hebr/CircularSp-Hebr-Book.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+30-39, U+A0, U+A4, U+B6-B7, U+1C4-1C6, U+1F1-1F3, U+2BB-2BC, U+5B0-5C4, U+5D0-5EA, U+5F0-5F4, U+200E-200F, U+20AA, U+FB2A-FB36, U+FB38-FB3C, U+FB3E, U+FB40-FB41, U+FB43-FB44, U+FB46-FB4F, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Cyrl; font-weight: 800; src: url(\"assets/fonts/CircularSp-Cyrl/CircularSp-Cyrl-Black.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Cyrl/CircularSp-Cyrl-Black.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+A0, U+A4, U+B6-B7, U+400-45F, U+462-463, U+472-475, U+490-493, U+49A-49B, U+4A2-4A3, U+4AE-4B3, U+4BA-4BB, U+4D8-4D9, U+4E8-4E9, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Cyrl; font-weight: 700; src: url(\"assets/fonts/CircularSp-Cyrl/CircularSp-Cyrl-Bold.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Cyrl/CircularSp-Cyrl-Bold.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+A0, U+A4, U+B6-B7, U+400-45F, U+462-463, U+472-475, U+490-493, U+49A-49B, U+4A2-4A3, U+4AE-4B3, U+4BA-4BB, U+4D8-4D9, U+4E8-4E9, U+FFFF; }",
+    "@font-face { font-family: CircularSp-Cyrl; font-weight: 400; src: url(\"assets/fonts/CircularSp-Cyrl/CircularSp-Cyrl-Book.woff2\") format(\"woff2\"), url(\"assets/fonts/CircularSp-Cyrl/CircularSp-Cyrl-Book.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+A0, U+A4, U+B6-B7, U+400-45F, U+462-463, U+472-475, U+490-493, U+49A-49B, U+4A2-4A3, U+4AE-4B3, U+4BA-4BB, U+4D8-4D9, U+4E8-4E9, U+FFFF; }",
+    "@font-face { font-family: KoreanSWGI; font-weight: 300; src: url(\"assets/fonts/KoreanSWGI/KoreanSWGI-Spotify-Light.woff2\") format(\"woff2\"), url(\"assets/fonts/KoreanSWGI/KoreanSWGI-Spotify-Light.woff\") format(\"woff\"); unicode-range: U+0, U+D, U+20, U+A0, U+A4, U+B6-B7, U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7AF, U+D7B0-D7FF, U+FFFF; }"
+  ],
+  "fonts": [
+    [
+      "\"Times New Roman\"",
+      2
+    ],
+    [
+      "SpotifyMixWide, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, NotoSansThai, KoreanSWGI, \"Noto Sans SC\", \"Noto Sans TC\", UDShinGoPro, \"Helvetica Neue\", helvetica, arial, \"Hiragino Kaku Gothic ProN\", Meiryo, \"MS Gothic\", sans-serif",
+      1
+    ]
+  ],
+  "images": [],
+  "links": [],
+  "mediaQueries": [
+    "(max-width: 320px)",
+    "(max-width: 430px)",
+    "(max-width: 768px)",
+    "(max-width: 960px)",
+    "(max-width: 1280px)",
+    "(max-width: 1920px)",
+    "(--css:variables) and (padding:env(safe-area-inset-bottom))",
+    "(hover: hover) and (pointer: fine)",
+    "(max-height: 700px)",
+    "(grid-template-columns:subgrid)",
+    "(min-width: 475px)",
+    "(max-width: 400px)",
+    "(max-width: 340px)",
+    "(min-width: 460px)",
+    "(max-width: 420px)",
+    "(prefers-reduced-motion: reduce)",
+    "(min-width: 768px)",
+    "(min-width: 960px)",
+    "(max-height: 740px)",
+    "(max-height: 687px)",
+    "(max-height: 768px)",
+    "(min-width: 1280px)"
+  ],
+  "reducedMotion": [
+    "@media (prefers-reduced-motion: reduce) {\n  .GlobalHeader .controls-dynamic .editPartyNameContainer { transition: transform; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .Menu .drawer { transition: opacity 0.3s cubic-bezier(0.32, 0.72, 0, 1); }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .XText.block-line .line::after { transition-duration: 0s; transition-delay: 0.4s; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .XText.underline .line::before { transition-duration: 0s; transition-delay: 0.2s; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .XText.block-root::after { transition-duration: 0s; transition-delay: 0.2s; }\n}"
+  ],
+  "rootVariables": {
+    "--inline-direction-scalar": "1",
+    "--primary-color": "#f5f5f5",
+    "--sab": "env(safe-area-inset-bottom,0)",
+    "--secondary-color": "#121212"
+  },
+  "samples": [
+    {
+      "background": "rgb(239, 239, 234)",
+      "border": "0px none rgb(245, 245, 245)",
+      "class": "",
+      "color": "rgb(245, 245, 245)",
+      "font": "\"Times New Roman\"",
+      "gap": "normal",
+      "height": 876,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "10px",
+      "tag": "BODY",
+      "text": "Wrapped Party by Spotify.\n62",
+      "weight": "400",
+      "width": 1403
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(245, 245, 245)",
+      "class": "",
+      "color": "rgb(245, 245, 245)",
+      "font": "\"Times New Roman\"",
+      "gap": "normal",
+      "height": 23,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "absolute",
+      "radius": "0px",
+      "size": "20px",
+      "tag": "H1",
+      "text": "Wrapped Party by Spotify.",
+      "weight": "400",
+      "width": 212
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(149, 201, 13)",
+      "class": "title stroke-large text-108-wide-extra-bold",
+      "color": "rgb(149, 201, 13)",
+      "font": "SpotifyMixWide, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, NotoSansThai, KoreanSWGI, \"Noto Sans SC\", \"Noto Sans TC\", UDShinGoPro, \"Helvetica Neue\", helvetica, arial, \"Hiragino Kaku Gothic ProN\", Meiryo, \"MS Gothic\", sans-serif",
+      "gap": "normal",
+      "height": 108,
+      "letterSpacing": "-8.64px",
+      "lineHeight": "108px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "108px",
+      "tag": "H1",
+      "text": "62",
+      "weight": "800",
+      "width": 182
+    }
+  ],
+  "scrollHeight": 876,
+  "styleSheets": [
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    }
+  ],
+  "title": "Wrapped Party",
+  "url": "https://wrapped-party.activetheory.dev/en",
+  "viewport": {
+    "dpr": 0.800000011920929,
+    "height": 876,
+    "width": 1402
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "b8ce0a90-40c6-4518-940c-8c97ccf9c1a0",
+  "sourceUrl": "https://styles.refero.design/style/b8ce0a90-40c6-4518-940c-8c97ccf9c1a0",
+  "fetchedAt": "2026-10-02T21:57:06.298541+00:00",
+  "extractedAt": "2026-10-02T21:57:06.321238+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dribbble — Style Reference",
+  "htmlSha256": "e152065ae083b39abb9c3e4fb83bdcbbaef582d1db8685826f689306e842cb13",
+  "cache": ".cache/b8ce0a90-40c6-4518-940c-8c97ccf9c1a0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "dab2e4f3b396699ddce2d53516ab1f881b12ddbddc5d3fee5cd37906e93d9ff1",
+      "bytes": 18848,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5f47f3e7-df6a-4da1-a53c-e7ea33ca7331.jpg",
+    "fetchedAt": "2026-10-02T21:57:08.261465+00:00",
+    "sha256": "738be0be5ffa0d4d600c49232d67c551c8d8cedf17c29bd00d0efab1baf40804",
+    "bytes": 98803,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "ab650279-aa18-43e5-a998-34190d7bedc7",
+  "sourceUrl": "https://styles.refero.design/style/ab650279-aa18-43e5-a998-34190d7bedc7",
+  "fetchedAt": "2026-10-02T21:52:54.175867+00:00",
+  "extractedAt": "2026-10-02T21:52:54.221831+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fable — Style Reference",
+  "htmlSha256": "284328d9e39cefbec589406ec6b108f324a2314fa1c1f919d174197d523c59d7",
+  "cache": ".cache/ab650279-aa18-43e5-a998-34190d7bedc7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9d4ae85f00999740d03fc3e1051d7e5b46e130f28d64fe2bd38d948a67046d1d",
+      "bytes": 22482,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b60c2639-131b-4baf-9544-ff328ce19db0.jpg",
+    "fetchedAt": "2026-10-02T21:52:56.385494+00:00",
+    "sha256": "d5fef2e24cd997d43a29211c68e746e08193c74a085aa2a6983819c1c7400b63",
+    "bytes": 227944,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

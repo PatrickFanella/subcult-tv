@@ -1,0 +1,29 @@
+{
+  "styleId": "6778ff21-44eb-40f3-ba85-2ee7de935f8f",
+  "sourceUrl": "https://styles.refero.design/style/6778ff21-44eb-40f3-ba85-2ee7de935f8f",
+  "fetchedAt": "2026-10-02T21:39:22.032961+00:00",
+  "extractedAt": "2026-10-02T21:39:22.065728+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Arthursimonini — Style Reference",
+  "htmlSha256": "637f95c743a8e74ad41a5fa21946c6dc22f859384d6ffb87cf5022173418adaa",
+  "cache": ".cache/6778ff21-44eb-40f3-ba85-2ee7de935f8f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d94316351075fb95d61ca4891a09e51898d5b35f92d3abe4da00997c0759563f",
+      "bytes": 15493,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8e412893-a5b2-4dc5-a188-20d1e5254ee9.jpg",
+    "fetchedAt": "2026-10-02T21:39:24.199623+00:00",
+    "sha256": "6ec94d596153cf472dbfc1f3f4352cfcc2ca63e14d2303de740f25b93a64d7a9",
+    "bytes": 180746,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

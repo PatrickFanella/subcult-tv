@@ -1,0 +1,12 @@
+:root {
+  --brand-bg: #f2efe7;
+  --brand-fg: #365448;
+  --brand-accent: #12664f;
+  --brand-secondary: #e85d3f;
+  --brand-safe-label: #12664f;
+  --font-display: "Fraunces";
+  --font-body: "Public Sans";
+  --font-label: "JetBrains Mono";
+}
+
+:root { --brand-action-tomato: #b33e28; }

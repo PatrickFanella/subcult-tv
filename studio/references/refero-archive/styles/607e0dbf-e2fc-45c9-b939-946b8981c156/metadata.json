@@ -1,0 +1,29 @@
+{
+  "styleId": "607e0dbf-e2fc-45c9-b939-946b8981c156",
+  "sourceUrl": "https://styles.refero.design/style/607e0dbf-e2fc-45c9-b939-946b8981c156",
+  "fetchedAt": "2026-10-02T21:32:13.999704+00:00",
+  "extractedAt": "2026-10-02T21:32:14.024825+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Giga — Style Reference",
+  "htmlSha256": "58e2d53f2b92ec25ef6dbf743807652c39de56a78c0c35f115335c7f6976ee2f",
+  "cache": ".cache/607e0dbf-e2fc-45c9-b939-946b8981c156.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "025cb113b043c3ac3d2764aa300d0c76ac891b58ceebc669707a3c113538e6d6",
+      "bytes": 23991,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/878416ad-49c6-45c2-831f-e14dc8ad6981.jpg",
+    "fetchedAt": "2026-10-02T21:32:16.082599+00:00",
+    "sha256": "f2068b487f22f86ee6088289838cbe2ea6a69b77e2d7a616cc2a85b050579b60",
+    "bytes": 80927,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

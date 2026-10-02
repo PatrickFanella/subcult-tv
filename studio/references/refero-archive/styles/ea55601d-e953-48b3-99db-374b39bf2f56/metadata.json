@@ -1,0 +1,29 @@
+{
+  "styleId": "ea55601d-e953-48b3-99db-374b39bf2f56",
+  "sourceUrl": "https://styles.refero.design/style/ea55601d-e953-48b3-99db-374b39bf2f56",
+  "fetchedAt": "2026-10-02T21:37:26.012572+00:00",
+  "extractedAt": "2026-10-02T21:37:26.059804+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Waka Waka — Style Reference",
+  "htmlSha256": "3ab52d20f23f525b9a2f78a8faaef40213895c44e5d760cb501a409e2a8e350d",
+  "cache": ".cache/ea55601d-e953-48b3-99db-374b39bf2f56.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5c502b65bd5ad2b9364b75ae7a2a82d133e3ff6130c776e8cc12781a4989fd64",
+      "bytes": 14318,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/41f3fcc9-ae56-44b9-9f53-d797f78bf732.jpg",
+    "fetchedAt": "2026-10-02T21:37:27.977755+00:00",
+    "sha256": "b61ac6f5015082133f0c4630bd6a1f6356e352605b0b8c35f972f25fad99714b",
+    "bytes": 47168,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "e7b37c82-239c-48d5-b293-79a2bfa235cc",
+  "sourceUrl": "https://styles.refero.design/style/e7b37c82-239c-48d5-b293-79a2bfa235cc",
+  "fetchedAt": "2026-10-02T21:44:01.640773+00:00",
+  "extractedAt": "2026-10-02T21:44:01.686050+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "IKEA — Style Reference",
+  "htmlSha256": "c51f124a6d0cb470f288049205947e9328341416f4fefbd2e9790bfcd558bfc1",
+  "cache": ".cache/e7b37c82-239c-48d5-b293-79a2bfa235cc.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b6a561b184ac34bb370ce9f1eda954e2ba2f05c91aa12e46c303e290ae1121b2",
+      "bytes": 16451,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2427d8df-674c-4e2e-8145-c8b852d97993.jpg",
+    "fetchedAt": "2026-10-02T21:44:03.516319+00:00",
+    "sha256": "7d9f79c7eb53f9c69ec41075d7788284fc156c38aa23c1655275daa22adb2ee3",
+    "bytes": 106158,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

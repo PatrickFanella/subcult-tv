@@ -1,0 +1,29 @@
+{
+  "styleId": "ffb945f9-2d70-45e8-9024-492900318fa8",
+  "sourceUrl": "https://styles.refero.design/style/ffb945f9-2d70-45e8-9024-492900318fa8",
+  "fetchedAt": "2026-10-02T21:40:02.025939+00:00",
+  "extractedAt": "2026-10-02T21:40:02.058823+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Freelance frontend UI developer and designer, Rou Hun Fan — Style Reference",
+  "htmlSha256": "88e405ce43794dd17b60e3c2ca157350ac15636a9d5a97998a8a57d14a51e6bf",
+  "cache": ".cache/ffb945f9-2d70-45e8-9024-492900318fa8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "28938e2e01b07a6417873d290ce16b01e78c4e5a17684c2925fbef2a83de1065",
+      "bytes": 15970,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bbeb6748-9d65-4e22-86cf-210bd17353ee.jpg",
+    "fetchedAt": "2026-10-02T21:40:04.126700+00:00",
+    "sha256": "a79dd0c5127901f9cc107c3205bf7527f40757d0d0ff27e213dba615b73b18a7",
+    "bytes": 98515,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

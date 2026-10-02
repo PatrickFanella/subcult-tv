@@ -1,0 +1,103 @@
+{
+  "patrick": {
+    "handle": "patrick.subcult.tv",
+    "display_name": "Patrick Fanella",
+    "bio": "Software, music and left politics. Building SUBCULT and tools for independent culture. American (derogatory). https://patrickfanella.co",
+    "website": "https://patrickfanella.co",
+    "headline": "PATRICK__EFF",
+    "tagline": "Software. Sound. Independent culture.",
+    "topics": "BUILDING SUBCULT  /  MUSIC  /  LEFT POLITICS",
+    "accent": "#f9735b",
+    "background": "#161616",
+    "banner": "patrick-banner.png",
+    "banner_source": "patrick-banner.svg",
+    "status": "banner_revised_locally_not_applied",
+    "bio_characters": 135,
+    "avatar": "patrick-avatar.jpg",
+    "avatar_source": "Existing public patrick.subcult.tv avatar, captured 2026-10-01; original bytes preserved",
+    "files": {
+      "avatar": {
+        "path": "patrick-avatar.jpg",
+        "sha256": "0c7a33e558ba7bfb263c5829aa354162a21581b06a9e351be96ecc67d9fb3ac8",
+        "bytes": 30846
+      },
+      "banner": {
+        "path": "patrick-banner.png",
+        "sha256": "476c0d97b990e811de5d73ba3a509b167ea07e3c166c2368389480ff3fa65ca2",
+        "bytes": 69501
+      }
+    },
+    "did": "did:plc:ejcntv5r7vlj4nf2tsxijdnh",
+    "verified_at": "2026-10-01T17:46:31.067657+00:00",
+    "public_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ejcntv5r7vlj4nf2tsxijdnh/bafkreiegqvtgpav5ncbkryqfoxtisnjet27e3h6pg47vxm75raghcf7xsa",
+    "public_banner": "https://cdn.bsky.app/img/banner/plain/did:plc:ejcntv5r7vlj4nf2tsxijdnh/bafkreiel7sgpm76xz2zjwqgcutirhsbn7retgktsrmt2znw3fxxctqo6b4",
+    "banner_revision": "Latest user layout corrected for spacing, alignment and accent consistency; previous public URLs describe the older applied banner."
+  },
+  "subcult": {
+    "handle": "subcult.tv",
+    "display_name": "SUBCULT",
+    "bio": "Software for independent culture. Building CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS and Undertow. https://subcult.tv",
+    "website": "https://subcult.tv",
+    "headline": "SUBCULT",
+    "tagline": "Software for independent culture.",
+    "topics": "CREATIVE TOOLS  /  ARCHIVES  /  COMMUNITY",
+    "accent": "#8b5cf6",
+    "background": "#0a0a0a",
+    "banner": "subcult-banner.png",
+    "banner_source": "subcult-banner.svg",
+    "status": "applied_and_publicly_verified",
+    "bio_characters": 123,
+    "avatar": "subcult-avatar.png",
+    "avatar_source": "/home/onnwee/Work/Subcult/subcult-tv/public/favicon.svg",
+    "files": {
+      "avatar": {
+        "path": "subcult-avatar.png",
+        "sha256": "03c506d16a15e97a3768f0da533b8464dc808759abca5bb596462c303c238fdc",
+        "bytes": 5534
+      },
+      "banner": {
+        "path": "subcult-banner.png",
+        "sha256": "9c20aa54a08c022be9f565f8521e28bfd9263e53dee2c6c7e292c05e24701505",
+        "bytes": 42967
+      }
+    },
+    "did": "did:plc:lxw2hm6sbsloliijglqvgj7d",
+    "verified_at": "2026-10-01T17:46:31.201139+00:00",
+    "public_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lxw2hm6sbsloliijglqvgj7d/bafkreib34b332xlrpwila6dlswdeyndkkwyrjhy4xza6efwic7m2vzcu2e",
+    "public_banner": "https://cdn.bsky.app/img/banner/plain/did:plc:lxw2hm6sbsloliijglqvgj7d/bafkreihgfr2wktwyfxgyeib6nhkki4vhvm7pbwl3mfbgr65t2dljdi4pla"
+  },
+  "clpr": {
+    "handle": "clpr.subcult.tv",
+    "display_name": "CLPR",
+    "bio": "Discover Twitch clips by creator, topic and tag. Save favorites, build playlists and return to the moments worth sharing. https://clpr.tv",
+    "website": "https://clpr.tv",
+    "headline": "clpr",
+    "tagline": "Find a moment worth keeping.",
+    "topics": "TWITCH CLIPS  /  DISCOVERY  /  PLAYLISTS",
+    "accent": "#8c5cff",
+    "background": "#0e0c13",
+    "banner": "clpr-banner.png",
+    "banner_source": "clpr-banner.svg",
+    "status": "banner_revised_locally_not_applied",
+    "bio_characters": 137,
+    "avatar": "clpr-avatar.png",
+    "avatar_source": "/home/onnwee/Work/Subcult/clpr/frontend/public/icons/icon.svg",
+    "files": {
+      "avatar": {
+        "path": "clpr-avatar.png",
+        "sha256": "ae598919c3d349b70705b79f6f7791557c0fa61dfd4dc783435990b6fd486f79",
+        "bytes": 8976
+      },
+      "banner": {
+        "path": "clpr-banner.png",
+        "sha256": "90eb3830de17b0c6eb9bfbac69445a922ed0d4f579e59e694a1f3c139c034ce8",
+        "bytes": 61091
+      }
+    },
+    "did": "did:plc:7fggonbgx2l7n3yvvadaeigt",
+    "verified_at": "2026-10-01T17:46:36.451531+00:00",
+    "public_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7fggonbgx2l7n3yvvadaeigt/bafkreigwr3ehpo4miw674agxg4wvoeuq4nisafumkklhu3x3afu2gpjoke",
+    "public_banner": "https://cdn.bsky.app/img/banner/plain/did:plc:7fggonbgx2l7n3yvvadaeigt/bafkreid2766vmehuzzvgc7bt3efvzsw46jdmxftrcnbjwvvah5cocslqey",
+    "banner_revision": "Latest user layout corrected for spacing, alignment and accent consistency; previous public URLs describe the older applied banner."
+  }
+}

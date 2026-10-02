@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dedhed design system — 01 Specimen sheet</title>
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  main { max-width: 1120px; margin: 0 auto; padding: var(--space-7) var(--space-5) var(--space-8); }
+  main > header { display: flex; align-items: baseline; gap: var(--space-4); border-bottom: 2px solid var(--ink); padding-bottom: var(--space-3); margin-bottom: var(--space-6); }
+  main > header h1 { font: 700 var(--text-2xl)/1 var(--font-typed); letter-spacing: -.02em; margin: 0; }
+  main > header .eyebrow { margin-left: auto; }
+  section { margin-bottom: var(--space-7); }
+  h2 { font: 700 var(--text-lg)/1 var(--font-typed); margin: 0 0 var(--space-4); padding-bottom: var(--space-2); border-bottom: 1px solid var(--shell-clear-edge); }
+  h2 small { font: var(--text-xs)/1 var(--font-mono); letter-spacing: .1em; color: var(--ink-faint); margin-left: var(--space-3); }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--space-3); }
+  .swatch { border: 1px solid var(--shell-clear-edge); border-radius: var(--radius-shell); overflow: hidden; background: var(--paper-bright); }
+  .swatch i { display: block; height: 56px; }
+  .swatch b { display: block; padding: 6px 8px 0; font: 700 var(--text-sm)/1.2 var(--font-mono); }
+  .swatch span { display: block; padding: 2px 8px 8px; font: var(--text-xs)/1.2 var(--font-mono); color: var(--ink-faint); }
+  .type { display: grid; grid-template-columns: 180px 1fr; gap: var(--space-2) var(--space-5); align-items: baseline; }
+  .type .eyebrow { color: var(--ink-faint); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .stack { display: flex; flex-direction: column; gap: 6px; }
+  .note { font: var(--text-sm)/var(--leading-body) var(--font-ui); color: var(--ink-soft); max-width: 60ch; margin: var(--space-3) 0 0; }
+  .states { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-4); }
+  .state { padding: var(--space-4); border: 1px dashed var(--shell-clear-edge); border-radius: var(--radius-shell); }
+  .state .eyebrow { margin-bottom: var(--space-2); }
+  .state p { margin: 0; font-size: var(--text-sm); }
+  @media (max-width: 640px) { .type { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <a class="wordmark" href="02-rack.html"><i aria-hidden="true"></i>dedhed</a>
+  <span class="eyebrow">Live tapes / shared air</span>
+  <a class="sticker live" href="04-deck.html">On air · 5/8/77 II</a>
+</header>
+<main>
+  <header><h1>The Tape Shelf</h1><span class="eyebrow">Dedhed design system · specimen 01</span></header>
+
+  <section aria-labelledby="c">
+    <h2 id="c">Colour <small>shells, label stock, ink, tabs</small></h2>
+    <div class="swatches">
+      <div class="swatch"><i style="background:var(--shell-black)"></i><b>shell-black</b><span>SA90 / UD90 shell</span></div>
+      <div class="swatch"><i style="background:var(--shell-clear)"></i><b>shell-clear</b><span>clear case, greyed</span></div>
+      <div class="swatch"><i style="background:var(--paper)"></i><b>paper</b><span>cream Maxell label</span></div>
+      <div class="swatch"><i style="background:var(--paper-aged)"></i><b>paper-aged</b><span>yellowed UR label</span></div>
+      <div class="swatch"><i style="background:var(--paper-kraft)"></i><b>paper-kraft</b><span>index card</span></div>
+      <div class="swatch"><i style="background:var(--rack-pine)"></i><b>rack-pine</b><span>wooden rack</span></div>
+      <div class="swatch"><i style="background:var(--stock-sky)"></i><b>stock-sky</b><span>1985 typed label</span></div>
+      <div class="swatch"><i style="background:var(--stock-cobalt)"></i><b>stock-cobalt</b><span>Set II blue</span></div>
+      <div class="swatch"><i style="background:var(--stock-yellow)"></i><b>stock-yellow</b><span>Greek Theater</span></div>
+      <div class="swatch"><i style="background:var(--stock-red)"></i><b>stock-red</b><span>June 16 red</span></div>
+      <div class="swatch"><i style="background:var(--stock-green)"></i><b>stock-green</b><span>Richmond green</span></div>
+      <div class="swatch"><i style="background:var(--stock-pink)"></i><b>stock-pink</b><span>Greek pink</span></div>
+      <div class="swatch"><i style="background:var(--stock-orange)"></i><b>stock-orange</b><span>Nov 1 orange</span></div>
+      <div class="swatch"><i style="background:var(--ink)"></i><b>ink</b><span>Sharpie black</span></div>
+      <div class="swatch"><i style="background:var(--ink-blue)"></i><b>ink-blue</b><span>ballpoint</span></div>
+      <div class="swatch"><i style="background:var(--tab-red)"></i><b>tab-red</b><span>Maxell / TDK</span></div>
+      <div class="swatch"><i style="background:var(--tab-gold)"></i><b>tab-gold</b><span>XLII foil</span></div>
+      <div class="swatch"><i style="background:var(--live-amber)"></i><b>live-amber</b><span>VU meter</span></div>
+      <div class="swatch"><i style="background:var(--rec-red)"></i><b>rec-red</b><span>REC lamp</span></div>
+    </div>
+    <p class="note">Label stock colours are for grouping on the shelf, by year or by source type. They are never the only carrier of meaning: every coloured label still prints its text.</p>
+  </section>
+
+  <section aria-labelledby="t">
+    <h2 id="t">Type <small>three voices, all system fonts</small></h2>
+    <div class="type">
+      <span class="eyebrow">typed label</span><span style="font:700 var(--text-xl)/1.1 var(--font-typed)">The Grateful Dead &nbsp; April 27, 1985 Set II</span>
+      <span class="eyebrow">typed venue</span><span style="font:var(--text-lg)/1.1 var(--font-typed)">Frost Amphitheater, Palo Alto, California</span>
+      <span class="eyebrow">typewriter / counters</span><span style="font:var(--text-md)/1.2 var(--font-mono);letter-spacing:.04em">SBD &gt; MASTER CASSETTE &gt; DAT &gt; CD &gt; FLAC &nbsp; 0 4 2</span>
+      <span class="eyebrow">eyebrow</span><span class="eyebrow" style="font-size:var(--text-xs)">Shared radio · now playing</span>
+      <span class="eyebrow">commercial spine</span><span style="font:700 var(--text-lg)/1 var(--font-spine);letter-spacing:.02em;text-transform:uppercase;background:var(--shell-black);color:var(--paper-bright);padding:6px 10px;display:inline-block">Grateful Dead — Skeletons From The Closet</span>
+      <span class="eyebrow">interface body</span><span style="font:var(--text-md)/var(--leading-body) var(--font-ui);max-width:50ch">Interface text is plain Arial. It explains, it never performs. The typed and typewriter voices are reserved for things a taper would have written on the tape.</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="s">
+    <h2 id="s">Spines <small>the list item</small></h2>
+    <div class="stack">
+      <button class="spine"><span class="tab">TDK<br>SA90</span><span class="label"><span class="band">Grateful Dead</span><span class="date">2/13/70</span><span class="set">I</span><span class="venue">Fillmore East, N.Y.C.</span></span><span class="end">46:12</span></button>
+      <button class="spine" aria-pressed="true"><span class="tab gold">XL II</span><span class="label stock-aged"><span class="band">Grateful Dead</span><span class="date">4/17/71</span><span class="set">II</span><span class="venue">Princeton, N.J.</span></span><span class="end">selected</span></button>
+      <button class="spine"><span class="tab chrome">UR</span><span class="label stock-sky"><span class="band">The Grateful Dead</span><span class="date">April 14, 1985 Set I</span><span class="venue">Irvine Meadows Amphitheatre, Laguna Hills</span></span><span class="end">1:12:40</span></button>
+      <button class="spine"><span class="tab red">maxell</span><span class="label stock-yellow"><span class="band">The Grateful Dead</span><span class="date">June 16, 1985 Set II</span><span class="venue">Greek Theater, Berkeley</span></span><span class="end">58:03</span></button>
+      <button class="spine" disabled><span class="tab">TDK<br>SA90</span><span class="label stock-grey"><span class="band">Test tones</span><span class="date">0000-00-00</span><span class="venue">synthetic development recording</span></span><span class="end"><span class="sticker red">synthetic</span></span></button>
+    </div>
+    <p class="note">Hover slides the case out of the rack by 6px. Selected slides it 14px and gains a stacked-plastic shadow. Order on the shelf is the order in the catalog; the spine never reorders itself on hover.</p>
+  </section>
+
+  <section aria-labelledby="k">
+    <h2 id="k">Keys, fields, stickers, hardware</h2>
+    <div class="row" style="margin-bottom:var(--space-4)">
+      <button class="key primary">▶ Play set</button>
+      <button class="key dark">Tune in ↗</button>
+      <button class="key">Full recording</button>
+      <button class="key ghost">Previous</button>
+      <button class="key round" aria-label="Play">▶</button>
+      <button class="key" disabled>Next</button>
+    </div>
+    <div class="row" style="margin-bottom:var(--space-4);align-items:flex-end">
+      <label class="field" style="min-width:260px"><span>Find a show</span><input type="search" placeholder="Date, venue, city…"></label>
+      <label class="field" style="width:120px"><span>Year</span><input inputmode="numeric" placeholder="All"></label>
+      <label class="field"><span>Sort</span><select><option>Shelf order</option><option>Date</option><option>Venue</option></select></label>
+    </div>
+    <div class="row" style="margin-bottom:var(--space-4)">
+      <span class="sticker">SBD</span><span class="sticker">AUD</span><span class="sticker">Matrix</span><span class="sticker warn">Set boundaries unreviewed</span><span class="sticker red">Synthetic</span><span class="sticker live">On air</span>
+    </div>
+    <div class="row is-playing">
+      <span class="reel" aria-hidden="true"></span>
+      <span class="counter" aria-label="Tape counter 042"><span>0</span><span>4</span><span>2</span></span>
+      <span class="side">A</span><span class="side">B</span>
+      <div style="width:220px" class="vu"><i style="--level:72%"></i></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="st">
+    <h2 id="st">States <small>same voice in every condition</small></h2>
+    <div class="states">
+      <div class="state"><p class="eyebrow">Loading</p><p>Pulling the tape shelf…</p></div>
+      <div class="state"><p class="eyebrow">Empty</p><p>No shows match this search. Try another date or venue.</p></div>
+      <div class="state"><p class="eyebrow" style="color:var(--ink-red)">Error</p><p>Audio source unavailable. Retry or choose another recording.</p></div>
+      <div class="state"><p class="eyebrow" style="color:var(--warn)">Uncertain</p><p>Set boundaries on this tape are unreviewed. You can play the whole recording, but not a single set.</p></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

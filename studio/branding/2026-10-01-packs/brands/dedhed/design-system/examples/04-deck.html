@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dedhed design system — 04 The deck (shared radio and player)</title>
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  body { min-height: 100vh; padding-bottom: 150px; }
+  main { max-width: 980px; margin: 0 auto; padding: var(--space-7) var(--space-5); }
+  .radio { display: grid; grid-template-columns: 1.1fr 1fr; gap: var(--space-6); align-items: start; }
+  .radio h1 { font: 700 var(--text-3xl)/var(--leading-tight) var(--font-typed); letter-spacing: -.02em; margin: var(--space-3) 0; }
+  .radio .lede { font-size: var(--text-lg); color: var(--ink-soft); max-width: 36ch; margin: 0 0 var(--space-5); }
+  .schedule { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .schedule li { display: grid; grid-template-columns: 64px 1fr auto; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--shell-clear-edge); font: var(--text-sm)/1.4 var(--font-mono); align-items: baseline; }
+  .schedule li b { font: 700 var(--text-md)/1.3 var(--font-typed); display: block; }
+  .schedule li.now { background: var(--paper-aged); margin: 0 calc(-1 * var(--space-3)); padding-left: var(--space-3); padding-right: var(--space-3); }
+  .schedule .when { color: var(--ink-faint); }
+  .onair { background: var(--shell-black); color: var(--paper); padding: var(--space-5); border-radius: 6px; box-shadow: 0 1px 0 #444 inset, 0 12px 28px rgba(0,0,0,.4); }
+  .onair .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4); }
+  .onair h2 { font: 700 var(--text-xl)/1.1 var(--font-typed); margin: var(--space-2) 0 var(--space-1); }
+  .onair p { margin: 0 0 var(--space-4); color: var(--shell-clear); font-size: var(--text-sm); }
+  .meters { display: grid; grid-template-columns: 14px 1fr; gap: var(--space-2) var(--space-3); align-items: center; margin-bottom: var(--space-4); font: var(--text-xs)/1 var(--font-mono); color: var(--ink-faint); }
+  .scale { grid-column: 2; display: flex; justify-content: space-between; font-size: 9px; color: var(--ink-faint); padding: 0 1px; }
+  .listeners { display: flex; gap: var(--space-4); font: var(--text-xs)/1.4 var(--font-mono); color: var(--ink-faint); margin-top: var(--space-3); }
+  .listeners b { display: block; font: 700 var(--text-xl)/1 var(--font-mono); color: var(--live-amber); }
+
+  /* Fixed player bar — the tape deck */
+  .deck { position: fixed; left: 0; right: 0; bottom: 0; background: var(--shell-black); color: var(--paper); border-top: 4px solid var(--tab-red); box-shadow: 0 -8px 24px rgba(0,0,0,.35); z-index: 5; }
+  .deck .inner { max-width: 1240px; margin: 0 auto; padding: var(--space-3) var(--space-5); display: grid; grid-template-columns: auto auto 1fr auto auto; gap: var(--space-5); align-items: center; }
+  .deck .window { display: flex; align-items: center; gap: 6px; padding: 6px 8px; background: #000; border-radius: 3px; box-shadow: var(--shadow-window); }
+  .deck .window .reel { width: 34px; height: 34px; border-width: 3px; }
+  .deck .window .tape { width: 28px; height: 10px; background: repeating-linear-gradient(90deg, #5a3d1e 0 2px, #3b2814 2px 4px); }
+  .deck .keys { display: flex; gap: 4px; }
+  .deck .keys .key { min-width: 46px; min-height: 36px; padding: 0 10px; background: var(--shell-smoke); color: var(--paper); border-color: #000; box-shadow: 0 1px 0 #555 inset, 0 2px 0 #000; }
+  .deck .keys .key[aria-pressed="true"] { background: var(--tab-red); box-shadow: inset 0 2px 3px rgba(0,0,0,.5); }
+  .now { min-width: 0; }
+  .now .eyebrow { color: var(--live-amber); }
+  .now strong { display: block; font: 700 var(--text-lg)/1.2 var(--font-typed); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .now small { font: var(--text-xs)/1.3 var(--font-mono); color: var(--shell-clear); }
+  .transport { display: grid; grid-template-columns: auto 1fr auto; gap: var(--space-2); align-items: center; font: var(--text-xs)/1 var(--font-mono); min-width: 280px; }
+  .transport input[type=range] { width: 100%; accent-color: var(--live-amber); }
+  .transport .return { grid-column: 1 / -1; justify-self: end; background: transparent; border: 1px solid var(--ink-faint); color: var(--live-amber); font: var(--text-xs)/1 var(--font-mono); padding: 4px 8px; border-radius: 2px; }
+  .volume { display: flex; flex-direction: column; gap: 4px; font: var(--text-xs)/1 var(--font-mono); color: var(--ink-faint); width: 90px; }
+  .volume input { accent-color: var(--live-amber); }
+  @media (max-width: 900px) { .radio { grid-template-columns: 1fr; } .deck .inner { grid-template-columns: auto 1fr; gap: var(--space-3); } .deck .window, .volume { display: none; } .transport { grid-column: 1 / -1; min-width: 0; } }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <a class="wordmark" href="02-rack.html"><i aria-hidden="true"></i>dedhed</a>
+  <span class="eyebrow">Live tapes / shared air</span>
+  <a class="sticker live" href="04-deck.html">On air · 5/8/77 II</a>
+</header>
+<main>
+  <section class="radio" aria-label="Shared radio">
+    <div>
+      <p class="eyebrow">Shared radio · one station · the same moment</p>
+      <h1>Already in<br>progress.</h1>
+      <p class="lede">Everyone who tunes in hears the same tape at the same point. There is no skip. If you miss a song, it was played.</p>
+      <p class="eyebrow">Tonight's reels</p>
+      <ol class="schedule">
+        <li><span class="when">19:00</span><span><b>5/8/77 · Barton Hall, Ithaca, N.Y.</b>Set I · SBD · Betty Boards</span><span class="when">played</span></li>
+        <li class="now"><span class="when">20:14</span><span><b>5/8/77 · Barton Hall, Ithaca, N.Y.</b>Set II · SBD · Betty Boards</span><span class="sticker live">On air</span></li>
+        <li><span class="when">21:38</span><span><b>4/17/71 · Dillon Gym, Princeton, N.J.</b>Set I · SBD</span><span class="when">up next</span></li>
+        <li><span class="when">22:40</span><span><b>10/31/71 · Columbus, Ohio</b>Full recording · set boundaries unreviewed</span><span class="when">later</span></li>
+      </ol>
+    </div>
+    <aside class="onair is-playing">
+      <div class="head"><span class="sticker live">On air</span><span class="counter" aria-label="Tape counter 318"><span>3</span><span>1</span><span>8</span></span></div>
+      <p class="eyebrow">Now on the station</p>
+      <h2>Scarlet Begonias &gt; Fire On The Mountain</h2>
+      <p>5/8/77 · Barton Hall · Set II · 24:11 elapsed</p>
+      <div class="meters" aria-hidden="true">
+        <span>L</span><div class="vu"><i style="--level:78%"></i></div>
+        <span>R</span><div class="vu"><i style="--level:66%"></i></div>
+        <div class="scale"><span>-20</span><span>-10</span><span>-5</span><span>-3</span><span>0</span><span>+3</span></div>
+      </div>
+      <button class="key primary" style="width:100%">Tune in ↗</button>
+      <div class="listeners"><span><b>14</b>listening now</span><span><b>1:02:08</b>left on this reel</span></div>
+    </aside>
+  </section>
+</main>
+
+<section class="deck is-playing" aria-label="Audio player">
+  <div class="inner">
+    <div class="window" aria-hidden="true"><span class="reel"></span><span class="tape"></span><span class="reel"></span></div>
+    <div class="keys" role="group" aria-label="Transport">
+      <button class="key" aria-label="Previous track">◀◀</button>
+      <button class="key" aria-pressed="true" aria-label="Pause">Ⅱ</button>
+      <button class="key" aria-label="Next track">▶▶</button>
+    </div>
+    <div class="now">
+      <p class="eyebrow">Radio · shared radio</p>
+      <strong>Scarlet Begonias &gt; Fire On The Mountain</strong>
+      <small>5/8/77 · Barton Hall, Ithaca, N.Y. · Set II</small>
+    </div>
+    <div class="transport">
+      <span>24:11</span>
+      <input type="range" min="0" max="4931" value="1451" aria-label="Playback position">
+      <span>1:22:12</span>
+      <button class="return">Return to live</button>
+    </div>
+    <label class="volume">Volume<input type="range" min="0" max="1" step="0.05" value="0.7"></label>
+  </div>
+</section>
+</body>
+</html>

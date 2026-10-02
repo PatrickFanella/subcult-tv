@@ -1,0 +1,29 @@
+{
+  "styleId": "41c479a9-7b41-445b-9ea7-c7a6331828f0",
+  "sourceUrl": "https://styles.refero.design/style/41c479a9-7b41-445b-9ea7-c7a6331828f0",
+  "fetchedAt": "2026-10-02T21:49:57.510970+00:00",
+  "extractedAt": "2026-10-02T21:49:57.561808+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Signal Messenger — Style Reference",
+  "htmlSha256": "8425b34f0992a63fef417a3478cc3b1c4299413395b85f94dfce98e84d4a6993",
+  "cache": ".cache/41c479a9-7b41-445b-9ea7-c7a6331828f0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4c0c20292107e4181c360e87db78d5eb7c8f5938b3fceb1902a2b7c0b189965a",
+      "bytes": 20759,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c686eeb8-0fb8-4d82-8ea3-f5b2427db479.jpg",
+    "fetchedAt": "2026-10-02T21:49:59.566648+00:00",
+    "sha256": "8210035b8ed9b782ae10bcb3a5f46dd3e9e4a54e1ab1f83842ede33940cf3da2",
+    "bytes": 126788,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

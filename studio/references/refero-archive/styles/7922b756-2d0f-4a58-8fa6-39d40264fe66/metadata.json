@@ -1,0 +1,29 @@
+{
+  "styleId": "7922b756-2d0f-4a58-8fa6-39d40264fe66",
+  "sourceUrl": "https://styles.refero.design/style/7922b756-2d0f-4a58-8fa6-39d40264fe66",
+  "fetchedAt": "2026-10-02T21:53:22.241414+00:00",
+  "extractedAt": "2026-10-02T21:53:22.286068+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "COS — Style Reference",
+  "htmlSha256": "a71d5683842447c7ea8274453c2b8dc31fdb54aa91a7a71f67f46b1448b73829",
+  "cache": ".cache/7922b756-2d0f-4a58-8fa6-39d40264fe66.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c9c677060189356040147be52b7105f8af9457126ae0c15f6f3c02249cae3a31",
+      "bytes": 15548,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c7e4fc0a-6057-43de-a4cf-1ad963ff0fef.jpg",
+    "fetchedAt": "2026-10-02T21:53:24.317910+00:00",
+    "sha256": "95fba9a4400a84d7d4771c1db686a06a6fc86b68b206e7de3f15c65f5e072345",
+    "bytes": 89926,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,25 @@
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="512" height="512" viewBox="0 0 160 160" version="1.1" id="svg1">
+  <ns0:defs id="defs1" />
+  <ns0:title id="title1">Patrick__eff — Signal in brackets — editable master</ns0:title>
+  <ns0:desc id="desc1">Option 1. Transparent background. Separate editable layers for angle brackets, slash, waveform bars and lime dot.</ns0:desc>
+  <ns0:g id="left-bracket" stroke-linecap="square" stroke-linejoin="miter" />
+  <ns0:g id="status-dot" stroke-linecap="square" stroke-linejoin="miter" />
+  <ns0:g id="slash" stroke-linecap="square" stroke-linejoin="miter" />
+  <ns0:g id="right-bracket" stroke-linecap="square" stroke-linejoin="miter">
+    <ns0:g id="g4" transform="matrix(1.0548391,0,0,1.0582725,3.8413575,-4.5720975)" style="display:inline">
+      <ns0:path id="left-bracket-path" d="M 27,47 7,80 27,113" fill="none" stroke="#f3f0ed" stroke-width="5" />
+      <ns0:g id="g1" style="stroke-linecap:square;stroke-linejoin:miter" transform="translate(-11.923077,-3)">
+        </ns0:g>
+      <ns0:circle id="dot" cx="96.064514" cy="56.796329" r="6" fill="#f3f0ed" />
+      <ns0:path id="slash-path" d="M 109.575,53.938231 93.206416,105.20974" fill="none" stroke="#f3f0ed" stroke-width="3.60614" style="stroke-width:5;stroke-dasharray:none" />
+      <ns0:path id="right-bracket-path" d="m 115.31727,46.863601 22,33 -22,32.999989" fill="none" stroke="#f3f0ed" stroke-width="5" />
+    </ns0:g>
+  </ns0:g>
+  <ns0:metadata id="metadata5">
+    <rdf:RDF>
+      <ns2:Work rdf:about="">
+        <dc:title>Patrick__eff — Signal in brackets — editable master</dc:title>
+      </ns2:Work>
+    </rdf:RDF>
+  </ns0:metadata>
+<ns0:text x="31" y="101" font-family="Cascadia Mono" font-size="57" font-weight="700" fill="#f3f0ed" style="font-variant-ligatures:none">PF</ns0:text></ns0:svg>

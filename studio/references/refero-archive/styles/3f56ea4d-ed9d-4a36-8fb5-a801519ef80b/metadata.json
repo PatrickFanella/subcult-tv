@@ -1,0 +1,29 @@
+{
+  "styleId": "3f56ea4d-ed9d-4a36-8fb5-a801519ef80b",
+  "sourceUrl": "https://styles.refero.design/style/3f56ea4d-ed9d-4a36-8fb5-a801519ef80b",
+  "fetchedAt": "2026-10-02T21:47:13.658891+00:00",
+  "extractedAt": "2026-10-02T21:47:13.702573+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Leif Products — Style Reference",
+  "htmlSha256": "36a30f8f79e43f551b565adf783bd4d90b9e9453bf9a0d199172d1eaa2adeea4",
+  "cache": ".cache/3f56ea4d-ed9d-4a36-8fb5-a801519ef80b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0c48f71655f016308ffe78767c966a55719ada9bf0b41deb66d6687d20405335",
+      "bytes": 23048,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0f4186b9-a3e1-4ba5-a810-48481895f0a7.jpg",
+    "fetchedAt": "2026-10-02T21:47:15.602972+00:00",
+    "sha256": "6312939338073340b61b4ccf9784852306ce53b2563adad081ff0a18a046b961",
+    "bytes": 111862,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

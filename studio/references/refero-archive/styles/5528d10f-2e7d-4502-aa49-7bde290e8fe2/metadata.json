@@ -1,0 +1,29 @@
+{
+  "styleId": "5528d10f-2e7d-4502-aa49-7bde290e8fe2",
+  "sourceUrl": "https://styles.refero.design/style/5528d10f-2e7d-4502-aa49-7bde290e8fe2",
+  "fetchedAt": "2026-10-02T21:57:42.503926+00:00",
+  "extractedAt": "2026-10-02T21:57:42.528342+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Diabla — Style Reference",
+  "htmlSha256": "5012c902c8f674de54f85b2a0d83c6c77fcce8dd30b4e18f019f7b026955fe50",
+  "cache": ".cache/5528d10f-2e7d-4502-aa49-7bde290e8fe2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "14802f76c97f99e5f6e801bb229723a4746c83a6b1b3bcd313d8fffb3de2a609",
+      "bytes": 18828,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/62f07e5b-f60e-4a1b-b2bb-52023f277c90.jpg",
+    "fetchedAt": "2026-10-02T21:57:44.305324+00:00",
+    "sha256": "a789ac726f72b761f8beb0a646e811ba985f57f73f353d93ad3c88bb7f55fd0e",
+    "bytes": 122978,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

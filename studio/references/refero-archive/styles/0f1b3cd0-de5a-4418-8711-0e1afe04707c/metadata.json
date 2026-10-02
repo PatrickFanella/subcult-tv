@@ -1,0 +1,29 @@
+{
+  "styleId": "0f1b3cd0-de5a-4418-8711-0e1afe04707c",
+  "sourceUrl": "https://styles.refero.design/style/0f1b3cd0-de5a-4418-8711-0e1afe04707c",
+  "fetchedAt": "2026-10-02T21:55:38.197903+00:00",
+  "extractedAt": "2026-10-02T21:55:38.220073+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Daniela and Moe Wedding 2019 — Style Reference",
+  "htmlSha256": "3af24f6ad1e19126edd68410accd66653714db9e6a60e876b2a4367e1de2942b",
+  "cache": ".cache/0f1b3cd0-de5a-4418-8711-0e1afe04707c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "022468c686abfed96da060ae4ab875736cc0826cb501eaeee007925da5dcdb95",
+      "bytes": 17953,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/61e07060-9895-4188-b531-e54872779c05.jpg",
+    "fetchedAt": "2026-10-02T21:55:40.216342+00:00",
+    "sha256": "8e2baa9cd25567e0234da3388e5eef0964130cbf0201dc33eb5888f9c40fd667",
+    "bytes": 66304,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

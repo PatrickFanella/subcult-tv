@@ -1,0 +1,7 @@
+/* Reference observations, not an official or production design system.
+   See GUIDE.md and tokens.json for evidence and visibility limits. */
+:root {
+  --reference-bg: lab(3.00194 -1.54356 1.16237);
+  --reference-fg: lab(59.9846 5.79539 2.11821);
+  --reference-font-body: Inter, "Inter Fallback";
+}

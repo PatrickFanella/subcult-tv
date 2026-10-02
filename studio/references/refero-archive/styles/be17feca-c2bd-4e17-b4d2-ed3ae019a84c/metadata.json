@@ -1,0 +1,29 @@
+{
+  "styleId": "be17feca-c2bd-4e17-b4d2-ed3ae019a84c",
+  "sourceUrl": "https://styles.refero.design/style/be17feca-c2bd-4e17-b4d2-ed3ae019a84c",
+  "fetchedAt": "2026-10-02T21:42:21.502113+00:00",
+  "extractedAt": "2026-10-02T21:42:21.551186+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sandland Sleep — Style Reference",
+  "htmlSha256": "d7809a360ba983c4890602c7868c6bcc1ee3615dc05b394ebf9a53024d0be6b5",
+  "cache": ".cache/be17feca-c2bd-4e17-b4d2-ed3ae019a84c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a049d2cc193cec9d161dd42ee1eb81aa958d7072f14bcc8cbcfdbc4c5880e901",
+      "bytes": 22584,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c21e9ae3-e2bd-4d86-a8bb-c7d00df52674.jpg",
+    "fetchedAt": "2026-10-02T21:42:23.426466+00:00",
+    "sha256": "bc48aaf7cb51fe0dd8f5aefd526a03aefc64af1fcdf5bcc8d1ca10149cd1bd43",
+    "bytes": 114440,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

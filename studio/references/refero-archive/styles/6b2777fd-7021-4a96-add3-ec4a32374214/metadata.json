@@ -1,0 +1,29 @@
+{
+  "styleId": "6b2777fd-7021-4a96-add3-ec4a32374214",
+  "sourceUrl": "https://styles.refero.design/style/6b2777fd-7021-4a96-add3-ec4a32374214",
+  "fetchedAt": "2026-10-02T21:50:21.467749+00:00",
+  "extractedAt": "2026-10-02T21:50:21.694244+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Mews — Style Reference",
+  "htmlSha256": "db675939562a1c8675017d4659fef0941cbeb188e61201e05f825151a7ea8111",
+  "cache": ".cache/6b2777fd-7021-4a96-add3-ec4a32374214.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "992fa7bae04e4084d6897aa953902f5708b08418e91a3288baccfa8a7cff2191",
+      "bytes": 20604,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/af13b13e-fa90-4fe9-a1f4-dda06e0aa69a.jpg",
+    "fetchedAt": "2026-10-02T21:50:23.547705+00:00",
+    "sha256": "73f45cb3276241098d5758c80a739ddd104985f562bc9a47c9ad4c30f49af067",
+    "bytes": 111025,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

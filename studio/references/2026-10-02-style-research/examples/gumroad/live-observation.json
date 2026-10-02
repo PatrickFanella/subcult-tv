@@ -1,0 +1,192 @@
+{
+  "canvas": 0,
+  "capturedAt": "2026-10-02T20:57:57.202Z",
+  "samples": [
+    {
+      "background": "rgb(36, 36, 35)",
+      "border": "0px solid rgb(221, 221, 221)",
+      "color": "rgb(221, 221, 221)",
+      "font": "\"ABC Favorit\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BODY",
+      "text": "9.7K\nDiscover\nBlog\nPricing\nFeatures\nAbout\nGum"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.35)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "9.7K"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "Discover"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "Blog"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "Pricing"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "Features"
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "border": "1px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "About"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "Gumclaw"
+    },
+    {
+      "background": "rgb(0, 0, 0)",
+      "border": "",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "Log in"
+    },
+    {
+      "background": "rgb(255, 144, 232)",
+      "border": "",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "Start selling"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "96px",
+      "tag": "H1",
+      "text": "Go from 0 to $1"
+    },
+    {
+      "background": "rgb(255, 144, 232)",
+      "border": "1px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "20px",
+      "tag": "A",
+      "text": "Start selling"
+    },
+    {
+      "background": "rgb(36, 36, 35)",
+      "border": "1px solid rgb(36, 36, 35)",
+      "color": "rgb(255, 255, 255)",
+      "font": "Arial",
+      "shadow": "none",
+      "size": "13.3333px",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "GitHub"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "48px",
+      "tag": "H2",
+      "text": "We want you to try them, lots of them, and fi"
+    },
+    {
+      "background": "rgb(255, 144, 232)",
+      "border": "1px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "20px",
+      "tag": "A",
+      "text": "Find out how"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"ABC Favorit\"",
+      "shadow": "none",
+      "size": "192px",
+      "tag": "H1",
+      "text": "$1,964,052"
+    }
+  ],
+  "title": "Earn your first dollar online with Gumroad",
+  "url": "https://gumroad.com/",
+  "viewport": {
+    "height": 800,
+    "width": 1280
+  }
+}

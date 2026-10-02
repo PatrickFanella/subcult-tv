@@ -1,0 +1,11 @@
+{
+  "id": "roughjs",
+  "category": "Hand drawn",
+  "name": "Rough.js",
+  "live": "https://roughjs.com/",
+  "fetchedDate": "2026-10-02",
+  "referenceImageCaptureDate": "unknown",
+  "evidence": "Official site/documentation and live computed styles",
+  "liveStyleObservation": true,
+  "newLiveScreenshot": false
+}

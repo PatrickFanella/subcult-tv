@@ -1,0 +1,29 @@
+{
+  "styleId": "0a2bcda6-b5b9-463d-bc8d-2c7ccaa2b776",
+  "sourceUrl": "https://styles.refero.design/style/0a2bcda6-b5b9-463d-bc8d-2c7ccaa2b776",
+  "fetchedAt": "2026-10-02T21:39:50.671238+00:00",
+  "extractedAt": "2026-10-02T21:39:50.703105+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Wallpaper Projects — Style Reference",
+  "htmlSha256": "049510f6c609458fcab45f45a239f97230316e9fe9fb42927b1e813de1b117bc",
+  "cache": ".cache/0a2bcda6-b5b9-463d-bc8d-2c7ccaa2b776.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6fff103fc3938ed5ba1ab3076341cfc0cae8a7673aa652d922b11393e3549aa2",
+      "bytes": 18681,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/83138082-0a7f-4802-8936-b3a76c6e8ddf.jpg",
+    "fetchedAt": "2026-10-02T21:39:51.995619+00:00",
+    "sha256": "ceb8a974fc91602199d5cca21396f8025c93e07621f1180d97b6e007434631d6",
+    "bytes": 63382,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "draft",
+  "brand": "Your brand",
+  "formats": [
+    "banner",
+    "square-post",
+    "story",
+    "landscape-post",
+    "avatar"
+  ],
+  "source": "brand.json",
+  "mark_status": "Add an original SVG mark after direction approval",
+  "alt_text": "Describe the completed artwork and its visible text before publishing."
+}

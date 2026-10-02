@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-01",
+  "directions": 14,
+  "brands": 8,
+  "svg_xml": "all parsed",
+  "png_dimensions": "all 56 concept exports correct",
+  "javascript_syntax": "passed node --check",
+  "native_browser": {
+    "desktop": {
+      "boards": 14,
+      "filters": 9,
+      "all_images_loaded": true,
+      "horizontal_overflow": false,
+      "filter_result": 3,
+      "comparison": true,
+      "selection_saved_and_cleared": true
+    },
+    "narrow_viewport": "preview resize timed out; not verified"
+  },
+  "merge_main": "b78344cd3610c70b79138713cfa01891dc8d11ca",
+  "social_runner_tests": 35,
+  "documentation_audit": "passed",
+  "broader_source_drift_entries": 468,
+  "original_assets": "preserved"
+}

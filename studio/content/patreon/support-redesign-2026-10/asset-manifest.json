@@ -1,0 +1,146 @@
+{
+  "prepared_at": "2026-10-02",
+  "status": "review-draft",
+  "source_revision": "784a1ac0706779a02ab51deb2ad93c936c621660",
+  "mark_policy": "Existing outlined mark nested intact; placement and uniform scaling only",
+  "sources": [
+    {
+      "path": "branding/2026-10-01-packs/brands/subcult/GUIDE.md",
+      "sha256": "215ee277c7b5b4b7faf6666d05d1cb38dba1d723ac2e45b8df42049de452801a"
+    },
+    {
+      "path": "branding/2026-10-01-packs/brands/subcult/tokens.json",
+      "sha256": "a10678e3faa3e6385a815ebf6191a5e247d66e84b3d584355b73cfb3689a5091"
+    },
+    {
+      "path": "branding/2026-10-01-packs/brands/subcult/logos/mark-primary-outlined.svg",
+      "sha256": "f3d146fa2bd5e5ab409b3f16191a85aff8e9eaef8336dfaf79ae1585947dd140"
+    },
+    {
+      "path": "branding/2026-10-01-packs/brands/subcult/logos/master.svg",
+      "sha256": "f3d146fa2bd5e5ab409b3f16191a85aff8e9eaef8336dfaf79ae1585947dd140"
+    },
+    {
+      "path": "branding/2026-10-01-packs/brands/subcult/fonts/JetBrains-Mono-0.ttf",
+      "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+    },
+    {
+      "path": "branding/2026-10-01-packs/brands/subcult/fonts/JetBrains-Mono-1.ttf",
+      "sha256": "a1d92abc6b02a87faed23d98067ab1027e8e95242fd7c9978a072ea383b89d1a"
+    },
+    {
+      "path": "branding/2026-10-01-packs/brands/subcult/fonts/Oswald-0.ttf",
+      "sha256": "bd6ff5a83bcdc92d7aac6dbb16e4dd2b0b0320bec6402bb81f5dd9735b500e46"
+    },
+    {
+      "path": "branding/2026-10-01-packs/brands/subcult/fonts/Oswald-1.ttf",
+      "sha256": "a6ee8b91ec269a6f48631ba4ba1a3ab7e5039e5482dda8dc9672ee4620d7bd68"
+    },
+    {
+      "path": "branding/2026-10-01-packs/brands/subcult/fonts/Space-Grotesk-0.ttf",
+      "sha256": "ec926d5065eaca49a48f96e312bbae0bbc5733c24215cf5dfabbdccee926fef7"
+    },
+    {
+      "path": "branding/2026-10-01-packs/brands/subcult/fonts/Space-Grotesk-1.ttf",
+      "sha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85"
+    },
+    {
+      "path": "content/patreon/support-redesign-2026-10/build_assets.py",
+      "sha256": "6862aecb29c51cc3ef2bc6ff55b64f18655ec22e117f3b751ce5938069524d97"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/avatar.svg",
+      "sha256": "0678abc6924e046189b6bc55845a7d646b660352d911795d43c75cdef110ca71"
+    },
+    {
+      "path": "assets/cover.svg",
+      "sha256": "698816a1935b35562b64370a3dfa03e5c041609e54fe86dac345ff67df1dffbb"
+    },
+    {
+      "path": "assets/support-post.svg",
+      "sha256": "0cb01bfd9f5b5d6babcbb72656ac014c28d3b0631be6ef5044714efac5e42e08"
+    },
+    {
+      "path": "assets/tier-backer.svg",
+      "sha256": "0e58635e0b5c7525e559df0aacf0f79aff35d087eb4e64e31292b351028b7865"
+    },
+    {
+      "path": "assets/tier-groceries.svg",
+      "sha256": "709fecb03fdca119b7acd6f9614ed4903e9aaef16fbc85c6eab29a3731c93722"
+    },
+    {
+      "path": "assets/tier-patron.svg",
+      "sha256": "82e6f7e01ecd1f105c217b707a639c8bf4746f2f036720066391339308d99597"
+    },
+    {
+      "path": "assets/tier-rent.svg",
+      "sha256": "a6ad5ae612ce0b6a1e3c3df97ff92178400a3d5179d9fa45072fc7960c078954"
+    },
+    {
+      "path": "assets/tier-supporter.svg",
+      "sha256": "cc38244e4c34154b2a0fa1605012cce78c9a526382dc0b72d1543ca24e4252ff"
+    },
+    {
+      "path": "assets/avatar.png",
+      "sha256": "e34f8e3476f94c25951cb86510a6931398088884da84094f3eaa13693b8141ed",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "assets/cover-legacy.png",
+      "sha256": "5550018e7e0a6b8861b985dd38e8405a778be4ca03cf1dac9349acbb788ac859",
+      "width": 1600,
+      "height": 400
+    },
+    {
+      "path": "assets/cover.png",
+      "sha256": "ae540edcd6edc0c7b02429b294d024af2b4a2f3f445101484c8595cff51db49b",
+      "width": 2500,
+      "height": 625
+    },
+    {
+      "path": "assets/review-sheet.png",
+      "sha256": "59daecedec388d71f33ba4db9528ad07a1ceab86c10fb1145ccc60b887381e09",
+      "width": 1440,
+      "height": 1360
+    },
+    {
+      "path": "assets/support-post.png",
+      "sha256": "d81835617496d0fd5db5b17600c919181a2a9d88fd79f2afa17de5729aebb74b",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/tier-backer.png",
+      "sha256": "8dcd3c1c5435873ba98e5ca6b0ec518f93fa2db9b1ebf4fe49b324e769d28e9f",
+      "width": 920,
+      "height": 400
+    },
+    {
+      "path": "assets/tier-groceries.png",
+      "sha256": "b0fff15e15e0a701e0886bab87a6774de013c7c0d18a39204633fa053644de96",
+      "width": 920,
+      "height": 400
+    },
+    {
+      "path": "assets/tier-patron.png",
+      "sha256": "7d4146acc6d59d9236eb5571ee965a2870a9e70c74aa013b20f586927f794cf5",
+      "width": 920,
+      "height": 400
+    },
+    {
+      "path": "assets/tier-rent.png",
+      "sha256": "ddff3a7c1b7d1939088e266d5e5cd019213281a65a616c70e4f2712186948501",
+      "width": 920,
+      "height": 400
+    },
+    {
+      "path": "assets/tier-supporter.png",
+      "sha256": "dadfa376ece6e8f70587750e19baf087310c11280a21c6280fe6ef795fb24fa8",
+      "width": 920,
+      "height": 400
+    }
+  ]
+}

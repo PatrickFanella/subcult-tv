@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dedhed — Live tapes, shared air</title>
+<meta name="description" content="Dedhed is a private concert-tape library and shared radio station for Grateful Dead recordings. Play a set, play a full show, or tune in to the same moment as everyone else.">
+<link rel="icon" href="product/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="product/apple-touch-icon.png">
+<link rel="stylesheet" href="design-system/tokens.css">
+<style>
+  a.key, .masthead a { text-decoration: none; }
+  main { max-width: 1120px; margin: 0 auto; padding: 0 var(--space-5) var(--space-8); }
+  .hero { display: grid; grid-template-columns: 1.15fr 1fr; gap: var(--space-6); align-items: center; padding: var(--space-8) 0 var(--space-7); }
+  .hero h1 { font: 700 var(--text-3xl)/var(--leading-tight) var(--font-typed); letter-spacing: -.02em; margin: var(--space-3) 0; }
+  .hero .lede { font-size: var(--text-lg); color: var(--ink-soft); max-width: 38ch; margin: 0 0 var(--space-5); }
+  .hero .row { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+  .hero img { width: 100%; height: auto; display: block; }
+  .ruled { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .ruled li { display: grid; grid-template-columns: 56px 1fr; gap: var(--space-4); padding: var(--space-5) 0; border-bottom: 1px solid var(--shell-clear-edge); }
+  .ruled h2 { font: 700 var(--text-xl)/1.15 var(--font-typed); margin: 0 0 var(--space-2); }
+  .ruled p { margin: 0; max-width: 60ch; color: var(--ink-soft); }
+  .ruled .n { font: 700 var(--text-sm)/1 var(--font-mono); color: var(--ink-faint); padding-top: 6px; }
+  section { margin-top: var(--space-8); }
+  section > .eyebrow { margin-bottom: var(--space-4); }
+  .rack-demo { display: grid; grid-template-columns: 1fr 300px; gap: var(--space-6); align-items: start; }
+  .rack .spine .venue { flex: 1; }
+  .station { background: var(--shell-black); color: var(--paper); padding: var(--space-4); border-radius: var(--radius-shell); }
+  .station h2 { font: 700 var(--text-lg)/1.1 var(--font-typed); margin: var(--space-2) 0; }
+  .station p { margin: 0 0 var(--space-3); font-size: var(--text-sm); color: var(--shell-clear); }
+  .boundary { background: var(--paper-kraft); padding: var(--space-5); border-radius: 2px; box-shadow: 0 2px 0 #8a6a3d, 0 6px 12px rgba(0,0,0,.25); max-width: 70ch; }
+  .boundary h2 { font: 700 var(--text-lg)/1.1 var(--font-typed); margin: var(--space-2) 0; }
+  .boundary p { margin: 0 0 var(--space-3); font: var(--text-sm)/1.5 var(--font-mono); }
+  footer { border-top: 1px solid var(--shell-clear-edge); margin-top: var(--space-8); padding-top: var(--space-4); display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; font: var(--text-sm)/1.5 var(--font-typed); }
+  footer span { font: var(--text-xs)/1.5 var(--font-mono); color: var(--ink-soft); }
+  .sample { font: var(--text-xs)/1.4 var(--font-mono); color: var(--ink-faint); margin-top: var(--space-3); }
+  @media (max-width: 820px) { .hero, .rack-demo { grid-template-columns: 1fr; } .hero { padding-top: var(--space-6); } .spine .end { display: none; } }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <a class="wordmark" href="#"><i aria-hidden="true"></i>dedhed</a>
+  <span class="eyebrow">Live tapes / shared air</span>
+  <span class="sticker live">On air · sample</span>
+</header>
+<main>
+  <section class="hero" aria-label="Introduction">
+    <div>
+      <p class="eyebrow">The Grateful Dead archive · private pilot</p>
+      <h1>Find your way<br>into a show.</h1>
+      <p class="lede">Choose a night. Play a set or the whole tape. Or tune in and hear what everyone else is hearing, at the same moment.</p>
+      <div class="row"><a class="key primary" href="#rack">Browse the rack</a><a class="key dark" href="#radio">Tune in ↗</a></div>
+    </div>
+    <img src="product/hero.svg" width="720" height="440" alt="A pine rack of five cassette spines. Each label is typed with the band, a show date, a set number and a venue.">
+  </section>
+
+  <section aria-label="What Dedhed does">
+    <ol class="ruled">
+      <li><span class="n">01</span><div><h2>Sets and full shows, on demand.</h2><p>Every tape on the shelf can be played as a set or as the complete recording. Track order is kept as the source published it.</p></div></li>
+      <li><span class="n">02</span><div><h2>One station. The same moment.</h2><p>The shared radio plays a scheduled tape for everyone at once. Tune in and you land where the station is, not at the start.</p></div></li>
+      <li><span class="n">03</span><div><h2>Credits stay with every tape.</h2><p>Taper, transferer and source lineage travel with each recording. Where set boundaries are unreviewed, the tape says so.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="rack" aria-label="The rack">
+    <p class="eyebrow">The rack · sample tapes</p>
+    <div class="rack-demo">
+      <div class="rack" role="list">
+        <div class="slot" role="listitem"><button class="spine"><span class="tab">TDK<br>SA90</span><span class="label"><span class="band">Grateful Dead</span><span class="date">2/13/70</span><span class="set">I · II</span><span class="venue">Fillmore East, N.Y.C.</span><span class="sticker">SBD</span></span><span class="end">2:41:05</span></button></div>
+        <div class="slot" role="listitem"><button class="spine" aria-pressed="true"><span class="tab gold">XL II</span><span class="label"><span class="band">Grateful Dead</span><span class="date">4/17/71</span><span class="set">I · II</span><span class="venue">Dillon Gym, Princeton, N.J.</span><span class="sticker">SBD</span></span><span class="end">2:12:40</span></button></div>
+        <div class="slot" role="listitem"><button class="spine"><span class="tab">TDK<br>SA90</span><span class="label stock-grey"><span class="band">Columbus, Ohio</span><span class="date">10/31/71</span><span class="venue">Veterans Memorial Auditorium</span><span class="sticker warn">sets unreviewed</span></span><span class="end">2:20:15</span></button></div>
+        <div class="slot" role="listitem"><button class="spine"><span class="tab red">maxell</span><span class="label stock-sky"><span class="band">The Grateful Dead</span><span class="date">April 27, 1985 Set II</span><span class="venue">Frost Amphitheater, Palo Alto, California</span></span><span class="end">1:22:51</span></button></div>
+        <div class="slot" role="listitem"><button class="spine"><span class="tab red">maxell</span><span class="label stock-yellow"><span class="band">The Grateful Dead</span><span class="date">June 16, 1985 Set II</span><span class="venue">Greek Theater, Berkeley, California</span></span><span class="end">1:09:12</span></button></div>
+        <div class="slot empty" aria-hidden="true"></div>
+      </div>
+      <aside class="station" id="radio" aria-label="Shared radio">
+        <span class="sticker live">On air · sample</span>
+        <h2>5/8/77 · Barton Hall</h2>
+        <p>Set II is playing for everyone right now. Tune in and you'll land on the same moment.</p>
+        <a class="key dark" style="width:100%;border-color:var(--ink-faint)" href="#">Tune in ↗</a>
+      </aside>
+    </div>
+    <p class="sample">The tapes and the station above are samples drawn from the design proposal. The catalog in the running pilot is what counts.</p>
+  </section>
+
+  <section aria-label="Where it runs">
+    <div class="boundary">
+      <p class="eyebrow">Where it runs</p>
+      <h2>A private pilot, on purpose.</h2>
+      <p>Dedhed runs on a loopback address for its operator. There is no public domain and no public relay. That a recording is available from its source does not make it ours to broadcast.</p>
+      <p>Acquired audio, snapshots and credentials stay outside the repository. The design system that this page uses is kept in the product repository under docs/design.</p>
+    </div>
+  </section>
+
+  <footer>For the nights that keep going.<span>Dedhed / by SUBCULT · source credits stay with every tape</span></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "site": "wrapped-party",
+  "source": "https://wrapped-party.activetheory.dev/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:16:36.500Z",
+      "url": "https://wrapped-party.activetheory.dev/en",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:24:38.719Z",
+      "url": "https://wrapped-party.activetheory.dev/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "1b8b12958f259481429bf6580e9e7307a9f5dc207a071a26647dd353e0aef586",
+      "bytes": 4695
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "b3f696f8d8a8847d7eabc58b3c6e1df70d3f4d5205be96a0cf08442e51042a86",
+      "bytes": 1247
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "02eaf94c24029a9b39fafafcdcb413f3fcc493fc6558323de3aa466c6171e75f",
+      "bytes": 17967
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "6da4b2499cdc5a8afc8cfcbfbab72bb98d6f3049814e1d28fccd6be17663c153",
+      "bytes": 21479
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "a7cb490c4ba8024017b578af78464194e6d197c90965557f4c250123085a5ea0",
+      "bytes": 10604
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "d7d31c5d8a4912c2ab1b12e189775e57fe67e7d228232f3fbe67dc2ff09576ef",
+      "bytes": 261
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "f82a49cde86bda96fd2b5abe012c276f7b50f676ae38107d3d6ae859687633c0",
+      "bytes": 7301
+    }
+  ]
+}

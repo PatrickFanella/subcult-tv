@@ -1,0 +1,29 @@
+{
+  "styleId": "e287e026-3433-4a1d-9b23-9a65f8b9c138",
+  "sourceUrl": "https://styles.refero.design/style/e287e026-3433-4a1d-9b23-9a65f8b9c138",
+  "fetchedAt": "2026-10-02T21:39:58.119744+00:00",
+  "extractedAt": "2026-10-02T21:39:58.153149+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Stink Studios — Style Reference",
+  "htmlSha256": "d9b1a0b05a3618e12849e646119976182f012ef40f93b24127df20c9106ce5d5",
+  "cache": ".cache/e287e026-3433-4a1d-9b23-9a65f8b9c138.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "59aafcf59a7b8eabd59cc7c691e41a786a045ad9cce70c06b877e65b8a036e2a",
+      "bytes": 18456,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2816e23a-c45b-474e-84aa-9fde2925924a.jpg",
+    "fetchedAt": "2026-10-02T21:40:00.085847+00:00",
+    "sha256": "35732eb8a4b5170f6a602ded2591fad5618ff26602821bf079099b2ac164f242",
+    "bytes": 107211,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

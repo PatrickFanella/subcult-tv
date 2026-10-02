@@ -1,0 +1,29 @@
+{
+  "styleId": "1b44386e-31a8-40b0-a577-27c088b51264",
+  "sourceUrl": "https://styles.refero.design/style/1b44386e-31a8-40b0-a577-27c088b51264",
+  "fetchedAt": "2026-10-02T22:00:46.282817+00:00",
+  "extractedAt": "2026-10-02T22:00:46.331333+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lusion — Style Reference",
+  "htmlSha256": "7ceb7188f3222842fc91e313f80d653df65daf5d3517a1eea12c16bd86c02a9c",
+  "cache": ".cache/1b44386e-31a8-40b0-a577-27c088b51264.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4b13d8871cd5ba60fc080d7e522c0aed2183ac7ba9370f0065d9f1078adeecc3",
+      "bytes": 19493,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e28b104f-6c0d-42ea-ae8e-60d3ff044aed.jpg",
+    "fetchedAt": "2026-10-02T22:00:48.198023+00:00",
+    "sha256": "96974fc2b25d72d4417754e737e2faab83cd510edc6fcb5ba3c2460950b68522",
+    "bytes": 68350,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

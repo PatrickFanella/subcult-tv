@@ -1,0 +1,29 @@
+{
+  "styleId": "ebac84e6-b22c-4d21-845f-9165158af844",
+  "sourceUrl": "https://styles.refero.design/style/ebac84e6-b22c-4d21-845f-9165158af844",
+  "fetchedAt": "2026-10-02T21:54:42.257914+00:00",
+  "extractedAt": "2026-10-02T21:54:42.308376+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "mishmash® — Style Reference",
+  "htmlSha256": "df3ee5fe4efbfacf1a940aad8c4f81bed5d6e3a3f602caee86aa905280833c00",
+  "cache": ".cache/ebac84e6-b22c-4d21-845f-9165158af844.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a7c557d6d0f9d38336c0f582da80216149ea2e00feb15877a8500df5eecd10b6",
+      "bytes": 17949,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6a3177c5-0b7c-4d71-9baf-ceffc7d8b2d6.jpg",
+    "fetchedAt": "2026-10-02T21:54:44.257248+00:00",
+    "sha256": "570d50a80ae6da77c9c47a5f57eadeb3d0c515f9d0367a33b3a44086dc83cd74",
+    "bytes": 111959,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

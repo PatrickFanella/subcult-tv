@@ -1,0 +1,7 @@
+/* Reference observations, not an official or production design system.
+   See GUIDE.md and tokens.json for evidence and visibility limits. */
+:root {
+  --reference-bg: rgb(168, 148, 116);
+  --reference-fg: rgb(44, 40, 36);
+  --reference-font-body: "KTF Metro Blueline", Arial, sans-serif;
+}

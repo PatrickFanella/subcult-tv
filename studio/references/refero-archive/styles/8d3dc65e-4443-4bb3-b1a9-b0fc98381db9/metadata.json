@@ -1,0 +1,29 @@
+{
+  "styleId": "8d3dc65e-4443-4bb3-b1a9-b0fc98381db9",
+  "sourceUrl": "https://styles.refero.design/style/8d3dc65e-4443-4bb3-b1a9-b0fc98381db9",
+  "fetchedAt": "2026-10-02T21:52:34.191596+00:00",
+  "extractedAt": "2026-10-02T21:52:34.235958+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Empower — Style Reference",
+  "htmlSha256": "e983d7ff1b1b3d709038571e147b6deb3c604841545cd0cc917b61d6c627130b",
+  "cache": ".cache/8d3dc65e-4443-4bb3-b1a9-b0fc98381db9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1d5b1e1b2673e502a3eb8b3ca98bb33cef098be15444f48b8a73653d061eb7d4",
+      "bytes": 23108,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8d7a433b-2130-495c-bfd4-7a6c4fd03180.jpg",
+    "fetchedAt": "2026-10-02T21:52:36.298059+00:00",
+    "sha256": "cbd47222701c1587c2548f8749b40feadfd96382db23522f786a683ffe08c82a",
+    "bytes": 124380,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

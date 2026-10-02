@@ -1,0 +1,29 @@
+{
+  "styleId": "12b20c12-27f8-4938-89ba-569404d36fe8",
+  "sourceUrl": "https://styles.refero.design/style/12b20c12-27f8-4938-89ba-569404d36fe8",
+  "fetchedAt": "2026-10-02T21:38:34.448783+00:00",
+  "extractedAt": "2026-10-02T21:38:34.481565+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sing-sing — Style Reference",
+  "htmlSha256": "a4209b15d623b91b8c2e777e40b7ef248a837f3bff2f1d43a44b60bfbbcd1c55",
+  "cache": ".cache/12b20c12-27f8-4938-89ba-569404d36fe8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f0ecd29ef19629742207076443a137d0ebaa66c3e4f64b5a42db4de174d69738",
+      "bytes": 14747,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d3be5386-94b7-49a4-b622-fe3d2752ea29.jpg",
+    "fetchedAt": "2026-10-02T21:38:36.081462+00:00",
+    "sha256": "5b4128d2e648cdb317823a4e470b539eea60f9975cf0e0ac7681a0e8f0cdf0d1",
+    "bytes": 154188,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

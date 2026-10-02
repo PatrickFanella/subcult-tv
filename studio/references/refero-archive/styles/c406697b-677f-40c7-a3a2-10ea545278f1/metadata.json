@@ -1,0 +1,29 @@
+{
+  "styleId": "c406697b-677f-40c7-a3a2-10ea545278f1",
+  "sourceUrl": "https://styles.refero.design/style/c406697b-677f-40c7-a3a2-10ea545278f1",
+  "fetchedAt": "2026-10-02T21:41:09.536248+00:00",
+  "extractedAt": "2026-10-02T21:41:09.561712+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "International Magic — Style Reference",
+  "htmlSha256": "78468c7f1473ed192cb0391fec72e9c850d92982206aa33c20f72cfcbb8ba9fd",
+  "cache": ".cache/c406697b-677f-40c7-a3a2-10ea545278f1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bcd86ff72a29c341f61d41f010e6bd57aa096a74f64a3fef04e8dd1723107828",
+      "bytes": 15199,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7412f5a5-24ab-4381-9f67-16db8f51c00e.jpg",
+    "fetchedAt": "2026-10-02T21:41:11.446752+00:00",
+    "sha256": "62f13bf7595cc48260665ca2f835a9129f7d9307c1aa79478b653ce9ae2abc56",
+    "bytes": 22507,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

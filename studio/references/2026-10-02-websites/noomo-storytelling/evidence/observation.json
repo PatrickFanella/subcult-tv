@@ -1,0 +1,365 @@
+{
+  "id": "noomo-storytelling",
+  "name": "Noomo Storytelling",
+  "requestedUrl": "https://storytelling.noomoagency.com/",
+  "navigation": {
+    "available": true,
+    "visible": true,
+    "tabId": "tab_g",
+    "url": "https://storytelling.noomoagency.com/",
+    "title": "Noomo | The power of digital Storytelling",
+    "loading": false,
+    "viewportSetting": {
+      "_tag": "freeform",
+      "width": 1280,
+      "height": 800
+    },
+    "viewport": {
+      "width": 1402,
+      "height": 876
+    }
+  },
+  "screenshotPath": "/home/onnwee/.t3/userdata/browser-artifacts/browser-screenshot-storytelling-noomoagency-com-murem91e-3e6b3e13.png",
+  "bodyText": "The power\nof digital\nstorytelling\nTap to explore\n\nReimagine Phoenix\n\nScroll to explore\n\nLet us help you tell your story the way it was meant\n\nhello@noomoagency.com\nxInstagramLinkedIn >\nAgency Labs Contact\n\nMenu\n\nHomeAgencyLabsContact\nInstagramxLinkedin",
+  "canvas": [],
+  "capturedAt": "2026-10-02T20:16:59.769Z",
+  "colors": [
+    [
+      "rgb(0, 0, 238)",
+      15
+    ],
+    [
+      "rgb(0, 0, 0)",
+      7
+    ],
+    [
+      "rgb(253, 235, 253)",
+      1
+    ]
+  ],
+  "fontFaces": [],
+  "fonts": [
+    [
+      "\"Times New Roman\"",
+      22
+    ],
+    [
+      "TheSeasons, serif",
+      1
+    ]
+  ],
+  "images": [
+    {
+      "alt": "star",
+      "url": "https://storytelling.noomoagency.com/images/svg/buttonStar.svg"
+    },
+    {
+      "alt": "star",
+      "url": "https://storytelling.noomoagency.com/images/svg/buttonStar.svg"
+    },
+    {
+      "alt": "bird",
+      "url": "https://storytelling.noomoagency.com/images/text_icons/pixelBird.png"
+    },
+    {
+      "alt": "noomo logo",
+      "url": "https://storytelling.noomoagency.com/images/svg/logoSimple.svg"
+    },
+    {
+      "alt": "noomo logo",
+      "url": "https://storytelling.noomoagency.com/images/svg/logoSimple.svg"
+    },
+    {
+      "alt": "Noomo Agency Logo",
+      "url": "https://storytelling.noomoagency.com/images/svg/logo.svg"
+    },
+    {
+      "alt": "Noomo Agency Logo",
+      "url": "https://storytelling.noomoagency.com/images/svg/logo2.svg"
+    },
+    {
+      "alt": "close",
+      "url": "https://storytelling.noomoagency.com/images/svg/close.svg"
+    },
+    {
+      "alt": "loader",
+      "url": "https://storytelling.noomoagency.com/images/loader.gif"
+    }
+  ],
+  "links": [
+    {
+      "text": "hello@noomoagency.com",
+      "url": "mailto:hello@noomoagency.com"
+    },
+    {
+      "text": "x",
+      "url": "https://x.com/noomoagency"
+    },
+    {
+      "text": "Instagram",
+      "url": "https://www.instagram.com/noomoagency/"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/noomoagency"
+    },
+    {
+      "text": "",
+      "url": "https://storytelling.noomoagency.com/"
+    },
+    {
+      "text": "Agency ",
+      "url": "https://noomoagency.com/"
+    },
+    {
+      "text": "Labs ",
+      "url": "https://labs.noomoagency.com/"
+    },
+    {
+      "text": "Contact",
+      "url": "https://storytelling.noomoagency.com/contacts"
+    },
+    {
+      "text": "Home",
+      "url": "https://storytelling.noomoagency.com/"
+    },
+    {
+      "text": "Agency",
+      "url": "https://noomoagency.com/"
+    },
+    {
+      "text": "Labs",
+      "url": "https://labs.noomoagency.com/"
+    },
+    {
+      "text": "Contact",
+      "url": "https://storytelling.noomoagency.com/contacts"
+    },
+    {
+      "text": "Instagram",
+      "url": "https://www.instagram.com/noomoagency/"
+    },
+    {
+      "text": "x",
+      "url": "https://x.com/noomoagency"
+    },
+    {
+      "text": "Linkedin",
+      "url": "https://www.linkedin.com/company/noomoagency"
+    }
+  ],
+  "mediaQueries": [
+    "(min-width: 1024px)",
+    "(max-width: 767px)"
+  ],
+  "reducedMotion": [],
+  "rootVariables": {},
+  "samples": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"Times New Roman\"",
+      "gap": "normal",
+      "height": 1756,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "BODY",
+      "text": "The power\nof digital\nstorytelling\nTap to explore\n\nReimagine Phoenix\n\nScroll to explore\n\nLet us help ",
+      "weight": "400",
+      "width": 1368
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "lg:text-sans-66 xs:text-sans-38 text-brand-black",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"Times New Roman\"",
+      "gap": "normal",
+      "height": 55,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "24px",
+      "tag": "H2",
+      "text": "The power\nof digital",
+      "weight": "700",
+      "width": 1277
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(253, 235, 253)",
+      "class": "pointer-events-none",
+      "color": "rgb(253, 235, 253)",
+      "font": "TheSeasons, serif",
+      "gap": "normal",
+      "height": 273,
+      "letterSpacing": "-1.4025px",
+      "lineHeight": "273.487px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "273.487px",
+      "tag": "H1",
+      "text": "storytelling",
+      "weight": "400",
+      "width": 1368
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "label text-sans-18 text-brand-black select-none",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"Times New Roman\"",
+      "gap": "normal",
+      "height": 19,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "P",
+      "text": "Reimagine Phoenix",
+      "weight": "400",
+      "width": 1368
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "flex xs:pb-0 lg:pb-30 flex-col justify-between xs:h-full lg:h-screen py-30 xs:px-20 lg:px-38 w-full fixed z-9 top-0 left-0 pointer-events-none transit",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"Times New Roman\"",
+      "gap": "normal",
+      "height": 91,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "FOOTER",
+      "text": "Let us help you tell your story the way it was meant\n\nhello@noomoagency.com\nxInstagramLinkedIn >",
+      "weight": "400",
+      "width": 1368
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "xs:text-sans-16 xs:max-w-261 lg:max-w-350 lg:text-sans-26 mt-10 text-white text-center",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"Times New Roman\"",
+      "gap": "normal",
+      "height": 19,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "P",
+      "text": "Let us help you tell your story the way it was meant",
+      "weight": "400",
+      "width": 1368
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "fixed z-10 w-full xs:pt-20 lg:pt-38 top-0",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"Times New Roman\"",
+      "gap": "normal",
+      "height": 163,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "HEADER",
+      "text": "Agency Labs Contact\n\nMenu\n\nHomeAgencyLabsContact\nInstagramxLinkedin",
+      "weight": "400",
+      "width": 1368
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "text-sans-18 transition-all duration-500 ease-in-out text-brand-black",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"Times New Roman\"",
+      "gap": "normal",
+      "height": 19,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "P",
+      "text": "Menu",
+      "weight": "400",
+      "width": 1368
+    }
+  ],
+  "scrollHeight": 1783,
+  "styleSheets": [
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": false,
+      "url": "https://storytelling.noomoagency.com/_nuxt/entry.BEbxiOYI.css"
+    },
+    {
+      "readable": false,
+      "url": "https://storytelling.noomoagency.com/_nuxt/index.CeGRoErV.css"
+    }
+  ],
+  "title": "Noomo | The power of digital Storytelling",
+  "url": "https://storytelling.noomoagency.com/",
+  "viewport": {
+    "dpr": 0.800000011920929,
+    "height": 876,
+    "width": 1402
+  }
+}

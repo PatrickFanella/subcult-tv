@@ -1,0 +1,29 @@
+{
+  "styleId": "78ac71e1-cd4c-4b4d-bac5-e7e6c65cd3fa",
+  "sourceUrl": "https://styles.refero.design/style/78ac71e1-cd4c-4b4d-bac5-e7e6c65cd3fa",
+  "fetchedAt": "2026-10-02T21:55:42.189049+00:00",
+  "extractedAt": "2026-10-02T21:55:42.209106+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Face Formula — Style Reference",
+  "htmlSha256": "2107230019676c966e1897ed13fa74d1f31ed5a6f0e9bd39c62a516392d58110",
+  "cache": ".cache/78ac71e1-cd4c-4b4d-bac5-e7e6c65cd3fa.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "52d71e91e1bb79faa21015fb38aa28b0d90dfebae1c4627674aeb94e8e5430bf",
+      "bytes": 21366,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a6937c47-a3bd-4b38-87e3-ae1db6d3dba0.jpg",
+    "fetchedAt": "2026-10-02T21:55:44.257882+00:00",
+    "sha256": "6d0c9f875e9cf6af98ece012aacb330f31ed95ea1a1e83d78a3fb76a85546bf2",
+    "bytes": 198568,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

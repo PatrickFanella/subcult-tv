@@ -1,0 +1,29 @@
+{
+  "styleId": "29567671-da1e-4f85-ae52-8b611fecc384",
+  "sourceUrl": "https://styles.refero.design/style/29567671-da1e-4f85-ae52-8b611fecc384",
+  "fetchedAt": "2026-10-02T21:58:46.217152+00:00",
+  "extractedAt": "2026-10-02T21:58:46.273384+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Amie — Style Reference",
+  "htmlSha256": "3e610b667ab2178c5ece377bbf67439037fa3928bba34723bbb77206409e2e34",
+  "cache": ".cache/29567671-da1e-4f85-ae52-8b611fecc384.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2eac4b39c5dae352a8e685bb557ed81c95ca70eec1860edc67f3f5c9c41e67ba",
+      "bytes": 21936,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/574b4dcd-b43f-4ac5-9adf-fe0c26decb06.jpg",
+    "fetchedAt": "2026-10-02T21:58:48.281672+00:00",
+    "sha256": "19c88b3924a9778e64f05143cda921071239af575971984d91e486b936a45235",
+    "bytes": 85431,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

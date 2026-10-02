@@ -1,0 +1,29 @@
+{
+  "styleId": "34baa524-5d5b-4165-bbab-d01f05e6d6b9",
+  "sourceUrl": "https://styles.refero.design/style/34baa524-5d5b-4165-bbab-d01f05e6d6b9",
+  "fetchedAt": "2026-10-02T21:36:13.993752+00:00",
+  "extractedAt": "2026-10-02T21:36:14.038161+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "General Intelligence Company — Style Reference",
+  "htmlSha256": "39d47e57410cc73972096b519dd4599c00cf46b0ae4eceaa57681b760b16b1d1",
+  "cache": ".cache/34baa524-5d5b-4165-bbab-d01f05e6d6b9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2d621e28fcbf6bac73d280c5cdd02172138e5ca7a89bdd44d515a7cbf1821553",
+      "bytes": 21612,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/10681cb3-8a8a-41c9-9386-317598b50f12.jpg",
+    "fetchedAt": "2026-10-02T21:36:16.086569+00:00",
+    "sha256": "e53d251d0ef2d4e13474f6b0747eaaef5ada908558ebd7d0211d2bf047f9d40c",
+    "bytes": 163169,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

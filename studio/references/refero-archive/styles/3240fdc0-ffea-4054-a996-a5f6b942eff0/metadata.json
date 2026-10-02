@@ -1,0 +1,29 @@
+{
+  "styleId": "3240fdc0-ffea-4054-a996-a5f6b942eff0",
+  "sourceUrl": "https://styles.refero.design/style/3240fdc0-ffea-4054-a996-a5f6b942eff0",
+  "fetchedAt": "2026-10-02T21:41:33.495978+00:00",
+  "extractedAt": "2026-10-02T21:41:33.523693+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aaron Poe & Co — Style Reference",
+  "htmlSha256": "5e1845a36dc2f9a40fa4e319f429e37f81bcd73d0850f1dcadf88ffca698e531",
+  "cache": ".cache/3240fdc0-ffea-4054-a996-a5f6b942eff0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9033c4fd7bc3f7df0598c818bbd2a6155898187442584996a5f6fee64802ccb4",
+      "bytes": 18280,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1737b130-dd6c-4d45-b646-5a2df6714d2d.jpg",
+    "fetchedAt": "2026-10-02T21:41:35.478948+00:00",
+    "sha256": "553538862b5012c73c63eac92bed98d3e4488847dc83c919ffc7d10b56f5cf40",
+    "bytes": 38686,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

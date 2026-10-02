@@ -1,0 +1,29 @@
+{
+  "styleId": "14f10100-a102-427a-88d1-7cc80cbb332d",
+  "sourceUrl": "https://styles.refero.design/style/14f10100-a102-427a-88d1-7cc80cbb332d",
+  "fetchedAt": "2026-10-02T21:55:34.270248+00:00",
+  "extractedAt": "2026-10-02T21:55:34.297465+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Daniel Triendl — Style Reference",
+  "htmlSha256": "5868041f22d2e84f3ca567301572ffcabb37d05a2c04f87815fd37a800f3a726",
+  "cache": ".cache/14f10100-a102-427a-88d1-7cc80cbb332d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ce0df9e55af1955035ef6b43d4bfe3a5a0d04d53d2ee1c6194dedb4798b4a402",
+      "bytes": 16891,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/704726a1-a0f5-40ad-a15b-c1f6d875126f.jpg",
+    "fetchedAt": "2026-10-02T21:55:36.364883+00:00",
+    "sha256": "2a20731b57b07acbcff82d4b65aff31d6fb65717d56868422f35b8d290cbbd3c",
+    "bytes": 278945,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

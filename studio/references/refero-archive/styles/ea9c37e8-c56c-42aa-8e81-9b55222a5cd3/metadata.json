@@ -1,0 +1,29 @@
+{
+  "styleId": "ea9c37e8-c56c-42aa-8e81-9b55222a5cd3",
+  "sourceUrl": "https://styles.refero.design/style/ea9c37e8-c56c-42aa-8e81-9b55222a5cd3",
+  "fetchedAt": "2026-10-02T21:36:25.978505+00:00",
+  "extractedAt": "2026-10-02T21:36:26.027794+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Stark — Style Reference",
+  "htmlSha256": "2c3f9e38622733e829f418050b8ef4d1e5b36f07d11493b6aedc52b4eab3932a",
+  "cache": ".cache/ea9c37e8-c56c-42aa-8e81-9b55222a5cd3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c6c22fcc2c898919d3eb65227660ffe2be559ac7e0f35812d69b62f4d4e84aa0",
+      "bytes": 22766,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a554517d-7151-4537-8c89-364105ada06f.jpg",
+    "fetchedAt": "2026-10-02T21:36:28.139688+00:00",
+    "sha256": "55166f1ad1daf7b44ea3b36acbce393f90701b9c3525f0661504f427feee75d1",
+    "bytes": 120469,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

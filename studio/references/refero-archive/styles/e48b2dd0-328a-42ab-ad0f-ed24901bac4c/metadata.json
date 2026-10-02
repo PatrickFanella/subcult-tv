@@ -1,0 +1,29 @@
+{
+  "styleId": "e48b2dd0-328a-42ab-ad0f-ed24901bac4c",
+  "sourceUrl": "https://styles.refero.design/style/e48b2dd0-328a-42ab-ad0f-ed24901bac4c",
+  "fetchedAt": "2026-10-02T21:49:41.500849+00:00",
+  "extractedAt": "2026-10-02T21:49:41.836266+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Adcker — Style Reference",
+  "htmlSha256": "19a2eebc76c18b74260b293aa3d9f0db107742150b0d804362d585db3169036e",
+  "cache": ".cache/e48b2dd0-328a-42ab-ad0f-ed24901bac4c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "75831734c066c61ef02c26298bb1c6fe6dc8cb7f7ee7afc4728cadfb0902cb5c",
+      "bytes": 17266,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0b933da1-b9b2-4f69-9893-2eedc42d9afe.jpg",
+    "fetchedAt": "2026-10-02T21:49:43.861232+00:00",
+    "sha256": "8256bb40f640f57657f718b797e10bde313c7c2047debe3fa02ab1874318e284",
+    "bytes": 64025,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "bd395e2e-58a8-4626-acfa-9be8d6cdf604",
+  "sourceUrl": "https://styles.refero.design/style/bd395e2e-58a8-4626-acfa-9be8d6cdf604",
+  "fetchedAt": "2026-10-02T21:38:06.021983+00:00",
+  "extractedAt": "2026-10-02T21:38:06.057556+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "OPX Studio — Style Reference",
+  "htmlSha256": "7f3211b64fec61d80449a36e89219b9920aed0ba8f9b93c9b91a9b7a26db7a37",
+  "cache": ".cache/bd395e2e-58a8-4626-acfa-9be8d6cdf604.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c55efc99f940cda7cce16bcb791863ea16aab55596da2da9d2305e5dfc221003",
+      "bytes": 17447,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4f8f898d-e3b5-4a43-8fab-996c2b8b9824.jpg",
+    "fetchedAt": "2026-10-02T21:38:07.981895+00:00",
+    "sha256": "c5bfd2f647d3d831071eb1971ab1f8cf2db9ad9defa7f8f7a5221ad6539efdd3",
+    "bytes": 54192,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

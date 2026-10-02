@@ -1,0 +1,29 @@
+{
+  "styleId": "f58e99d1-940d-4254-8822-5d856bba6505",
+  "sourceUrl": "https://styles.refero.design/style/f58e99d1-940d-4254-8822-5d856bba6505",
+  "fetchedAt": "2026-10-02T21:39:42.075408+00:00",
+  "extractedAt": "2026-10-02T21:39:42.119470+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Notion — Style Reference",
+  "htmlSha256": "ae269cf7293361b803b1a11701a69611fd58d5263b9da3b6ff184f4d3d835fc2",
+  "cache": ".cache/f58e99d1-940d-4254-8822-5d856bba6505.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ef18b84877190687e9497f0dae1f860901db3ff459f9c6e5df542298f2f4356b",
+      "bytes": 24030,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/60304547-55e0-40f0-b099-5fa97cc2f714.jpg",
+    "fetchedAt": "2026-10-02T21:39:44.097745+00:00",
+    "sha256": "3752844ce2cf641451287651d345fb6977db4fdd111ba4707875054eff9dbb88",
+    "bytes": 114067,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

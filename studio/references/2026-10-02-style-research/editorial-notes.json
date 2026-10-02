@@ -1,0 +1,146 @@
+{
+  "desktop-fm": [
+    "Strong Y2K reference",
+    "A silver compact disc, green laser lines and a tiny desktop-window panel establish late-1990s/early-2000s digital nostalgia. The quiet gray interface keeps the object readable.",
+    "Separate scene/material tokens from controls; specify the compact window and CTA independently.",
+    "The supplied image supports the CD and window motifs. The live page yielded few text samples; motion remains unverified."
+  ],
+  "gt-planar": [
+    "Y2K-adjacent / sci-fi typography",
+    "The supplied image puts a warp-speed field beneath an instrument-like navigation strip. Outlined rectangular controls and sparse warning colors carry the futuristic register.",
+    "Study how a type specimen becomes an interface; provide a still, readable alternative to the moving field.",
+    "This is a futuristic/HUD branch of the brief, rather than a universal example of Y2K. Image evidence is a single state."
+  ],
+  "hyper-tria": [
+    "Secondary candidate; verify hero",
+    "The reference image shows a white, two-column gallery with a futuristic project render and italic explanatory copy. It does not show the chrome-letter hero described in Refero.",
+    "Use the image/text composition as a portfolio reference; obtain a matching hero capture before selecting it for Y2K.",
+    "Refero's prose describes a different state from the supplied image. The chrome/Y2K claim is not visually established here."
+  ],
+  "evoke": [
+    "Memphis-adjacent / graphic portfolio",
+    "Three equal project tiles mix photography, flat geometry and character illustration above an enormous black wordmark. Bright color comes largely from displayed work.",
+    "Study modular project presentation and the separation of brand typography from project-specific palettes.",
+    "The image is not proof of a full Memphis interface. Classification applies to geometric/color influence, with portfolio artwork kept distinct."
+  ],
+  "superhi": [
+    "Strong contemporary Memphis-influenced reference",
+    "Oversized circles, polygons and a starburst sit asymmetrically around centered content. A pale ground, simple typography and capsule actions keep the decorative shapes from obscuring the task.",
+    "Define a limited shape vocabulary, safe areas around copy and a separate action palette.",
+    "The current live heading uses a generated Haas Grotesk Display family at 92px. Motion and small-screen placement remain untested."
+  ],
+  "composer": [
+    "Bauhaus / Memphis-adjacent",
+    "A faint grid organizes colored rectangular blocks behind an oversized headline. The palette behaves like a composition system rather than a single accent.",
+    "Study rules for colored modules, alignment and text overlap; keep decorative blocks out of interactive hit areas.",
+    "Bauhaus geometry is the closer label. The image provides useful comparison to Memphis but lacks its characteristic squiggle/pattern layer."
+  ],
+  "programa": [
+    "Search-match discrepancy; not a primary Swiss example",
+    "The supplied image centers a large serif headline above a product window, with small floating object cards. It differs from the austere sans-serif Swiss description.",
+    "Useful for interior-design software art direction, but not the first choice for studying a strict typographic grid.",
+    "Do not map Refero's sans-serif description onto this screenshot without finding a matching state."
+  ],
+  "spacelab": [
+    "Strong Swiss-influenced reference",
+    "A left index rail and a broad right content column create an asymmetric, aligned composition. A single sans-serif heading and architecture photograph dominate the white field.",
+    "Document column proportions, shared left edges, index hierarchy and the relationship between captions and images.",
+    "Current live samples confirm HelveticaNeue and an approximately 55.3px heading at the recorded desktop viewport; this is not a universal type scale."
+  ],
+  "fora": [
+    "Swiss grid with an editorial serif identity",
+    "A strict mosaic partitions identity, copy, news and photographs into discrete panels. Terracotta and lilac occupy entire cells; the large serif mark adds a contrasting identity role.",
+    "Study a grid whose cells perform different jobs without adding card borders or shadows.",
+    "The serif mark is visually prominent despite the source summary emphasizing sans-serif type. Treat this as a hybrid, not orthodox Swiss typography."
+  ],
+  "frankys": [
+    "Strong retro arcade reference",
+    "Checkerboard scenery, pixel-like controls, compact product cards and scanline texture turn commerce into a small arcade cabinet.",
+    "Separate the product viewer, AR action, cart state and arcade decoration so the shopping task remains explicit.",
+    "The current live page requests frankysDailySlab rather than the Arcade family reported for the reference. This entry records a historical image, not an unchanged current system."
+  ],
+  "olipop": [
+    "Strong retro packaging / commerce reference",
+    "A heavy, rounded display serif gives the promotion a vintage soda-shop voice. Saturated seasonal imagery sits beside a readable copy panel, with calmer product surfaces below.",
+    "Study a stable typographic identity paired with campaign-specific colors rather than declaring a single universal hero palette.",
+    "The supplied campaign image is much more colorful than Refero's cream/teal summary. Do not flatten seasonal artwork into brand-role tokens."
+  ],
+  "little-amps": [
+    "Strong analog retro reference",
+    "A record player fills the opening image, with warm yellow framing, an expressive serif title and a ruled monospace navigation band below.",
+    "Study warm framing, documentary media and the display/metadata role split.",
+    "Playback and shopping states are untested. The reference image's original capture date is not supplied."
+  ],
+  "mike-matas": [
+    "Strong minimalist portfolio reference",
+    "Small identity and social links sit in a wide white field above large device images. Most color belongs to the work, giving the interface a quiet supporting role.",
+    "Specify whitespace, image sequence and caption placement as the main system rules; avoid mistaking sparse UI for absent hierarchy.",
+    "The live page has limited semantic text samples. The reference supports composition, not complete component or mobile coverage."
+  ],
+  "everlane": [
+    "Minimalist editorial commerce reference",
+    "Thin navigation, a centered wordmark and large fashion photography create a lookbook. Text actions carry little visual weight; promotion is isolated in a horizontal band.",
+    "Study how product imagery, category navigation and promotional bands can have distinct priorities.",
+    "This is one campaign state. Search, cart, catalog filtering and checkout were not inspected."
+  ],
+  "teenage-engineering": [
+    "Industrial minimalism; scene-specific evidence",
+    "The supplied image gives almost all space to a photographed device. A yellow triangular consent panel is conspicuous and uses the visual language of a warning sign.",
+    "Study product presentation separately from navigation and consent components; a necessary utility can still have a distinctive shape.",
+    "The screenshot does not show the white catalog layout described in the text. Thin font-weight recommendations need independent legibility checks."
+  ],
+  "slush": [
+    "Innovative / sculptural typography and stickers",
+    "Huge black letters overlap a textured blue tubular form, while outlined sticker illustrations and pill navigation sit in front. The layers are strong enough to identify the site without a conventional photo hero.",
+    "Specify background object, display type, foreground stickers and controls as separate layers with legible resting states.",
+    "Reference image and interpreted guide reviewed; application/wallet behavior and motion not tested."
+  ],
+  "steep": [
+    "Innovative / editorial analytics",
+    "A serif headline sits among detached chart cards and a composer field. The screenshot uses a soft colored glow and small shadows to keep the fragments distinct.",
+    "Study how isolated product evidence can explain an analytics tool without placing the entire dashboard in the hero.",
+    "The image visibly contains glow and shadows despite prose emphasizing near-flat surfaces. Exact effects require source inspection."
+  ],
+  "wise": [
+    "Distinctive / economical brand roles",
+    "Heavy display letters and a lime action sit in a broad near-white field; a globe image provides the larger visual metaphor. Navigation remains compact.",
+    "Study whether a small, consistent action palette can carry a strong identity across light and dark surfaces.",
+    "This is a design reference, not a review of financial claims or account flows. Region-specific pages may differ."
+  ],
+  "cursor": [
+    "Distinctive / warm developer-tool presentation",
+    "A modest left-aligned introduction sits above a large product window on a painterly background. Dark capsule actions stand out without a giant hero headline.",
+    "Study a restrained marketing shell that gives most visual attention to the working product.",
+    "The image's rounded actions need distinguishing from the sharp/small-radius recommendation in Refero. Product UI and marketing UI are separate scopes."
+  ],
+  "notion": [
+    "Hand-drawn accent layer within a product site",
+    "Illustrated faces and small doodled objects surround otherwise conventional typography and product screenshots. Selective colored backgrounds make the line drawings feel like annotations.",
+    "Define illustration stroke, fills, scale and placement separately from ordinary controls; do not make every interface element appear hand-written.",
+    "The reference supports the illustration layer. It does not establish a hand-drawn application UI or the motion timing claimed in the source."
+  ],
+  "neobrutalism-components": [
+    "Strong Neo-Brutalism component reference",
+    "Current computed styles show 2px black borders and hard black shadows offset 4px horizontally and vertically with zero blur. The primary action uses a bright blue fill.",
+    "Study reusable button, input, card and chart states; preserve the hard edge while making hover, focus and pressed states distinguishable.",
+    "Live styles were captured but T3 screenshot capture remains unavailable. This is a component library rather than a commercial product case study."
+  ],
+  "gumroad": [
+    "Historical association; current style match unconfirmed",
+    "The current live heading samples are large ABC Favorit type with white text. Sampled links and headings do not establish the thick borders and hard offset shadows that define the requested direction.",
+    "Keep Gumroad as a comparison/revisit candidate; prefer the measured component library for a verified Neo-Brutalism recipe.",
+    "Do not assume an older Gumroad redesign remains current. No successful new screenshot was captured, and absence in this sample is not proof of absence site-wide."
+  ],
+  "excalidraw": [
+    "Hand-drawn output with conventional controls",
+    "The application is a useful reference for sketch-style diagram output alongside a regular tool palette. Rough.js names Excalidraw as a supporting project with a hand-drawn diagram feel.",
+    "Document drawing primitives and output styles independently of buttons, tool selection and collaboration controls.",
+    "The live canvas was not modified. No drawing, save, share or account action was performed; the default Times H1 is not treated as a visual brand token."
+  ],
+  "roughjs": [
+    "Hand-drawn graphics implementation reference",
+    "The official examples demonstrate irregular outlines and patterned fills on ordinary geometric primitives. The site's own navigation is conventional; the output is the design reference.",
+    "Study roughness, bowing, stroke width and hatch spacing as controllable rules for generated sketch graphics.",
+    "This is a library/demo source rather than a wholly hand-drawn website. No current package version or performance claim is inferred."
+  ]
+}

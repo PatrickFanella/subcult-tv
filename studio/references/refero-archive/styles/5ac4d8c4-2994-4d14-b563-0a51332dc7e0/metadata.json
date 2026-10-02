@@ -1,0 +1,29 @@
+{
+  "styleId": "5ac4d8c4-2994-4d14-b563-0a51332dc7e0",
+  "sourceUrl": "https://styles.refero.design/style/5ac4d8c4-2994-4d14-b563-0a51332dc7e0",
+  "fetchedAt": "2026-10-02T21:26:49.999921+00:00",
+  "extractedAt": "2026-10-02T21:26:50.074234+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "bunny.net — Style Reference",
+  "htmlSha256": "e9e6a9162bc235e4e2179775716083822d1bd669f6952aeb165f8450f7fe757d",
+  "cache": ".cache/5ac4d8c4-2994-4d14-b563-0a51332dc7e0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c5d452980249fc5988c89fa412e5e5fb161b23e3ea66a6dd53150997658a35ce",
+      "bytes": 21311,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/be25ebcb-947b-4ee1-80b9-cd2ad8233b65.jpg",
+    "fetchedAt": "2026-10-02T21:26:52.003555+00:00",
+    "sha256": "ba18a711d05ce04fa22ce1fb0538d1c18a86d6d5a37349170ebca90bf2e8908f",
+    "bytes": 163208,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

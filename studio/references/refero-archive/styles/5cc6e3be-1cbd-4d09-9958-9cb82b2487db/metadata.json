@@ -1,0 +1,29 @@
+{
+  "styleId": "5cc6e3be-1cbd-4d09-9958-9cb82b2487db",
+  "sourceUrl": "https://styles.refero.design/style/5cc6e3be-1cbd-4d09-9958-9cb82b2487db",
+  "fetchedAt": "2026-10-02T21:53:58.267426+00:00",
+  "extractedAt": "2026-10-02T21:53:58.339411+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "BEHAVE Candy — Style Reference",
+  "htmlSha256": "a6af77cf15263d67488ae6684aa5015150ab8d8de471f4c03bbb7db1dbc9ca76",
+  "cache": ".cache/5cc6e3be-1cbd-4d09-9958-9cb82b2487db.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ae2ceb3bdab0906ce43400612aa049b2f4a99633d3643fabcd2d009f9ccfd249",
+      "bytes": 19807,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bf77e4f1-c722-4269-99d0-af4ba5b1b3bc.jpg",
+    "fetchedAt": "2026-10-02T21:54:00.268149+00:00",
+    "sha256": "cae9547df23eee89ef2afb59996844d2127a4b124bd0fe749a9c16059e8cb5fe",
+    "bytes": 147181,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "131d07b0-f71b-4bd2-8046-f61485ed545c",
+  "sourceUrl": "https://styles.refero.design/style/131d07b0-f71b-4bd2-8046-f61485ed545c",
+  "fetchedAt": "2026-10-02T21:53:10.193942+00:00",
+  "extractedAt": "2026-10-02T21:53:10.256120+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Locomotive — Style Reference",
+  "htmlSha256": "f896b4a3b4a68d27fc5be377241b254e85a88a80cc96ee9c8cd91092e96b75dd",
+  "cache": ".cache/131d07b0-f71b-4bd2-8046-f61485ed545c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "981f8ff11c557abb8c5df392bc3afcb6defc96eaf49dc658bf776fb20c2fb3cc",
+      "bytes": 14569,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/04c608bb-c7f1-4ca3-b288-c4e48dfc1c84.jpg",
+    "fetchedAt": "2026-10-02T21:53:12.219928+00:00",
+    "sha256": "74ee5e6aba94c8920e557abf04728cecc30ac93186da725585306a04d0931391",
+    "bytes": 99997,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

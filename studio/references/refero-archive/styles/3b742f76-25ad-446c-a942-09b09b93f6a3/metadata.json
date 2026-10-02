@@ -1,0 +1,29 @@
+{
+  "styleId": "3b742f76-25ad-446c-a942-09b09b93f6a3",
+  "sourceUrl": "https://styles.refero.design/style/3b742f76-25ad-446c-a942-09b09b93f6a3",
+  "fetchedAt": "2026-10-02T21:40:14.016264+00:00",
+  "extractedAt": "2026-10-02T21:40:14.050036+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Symbol Audio — Style Reference",
+  "htmlSha256": "1f7bf8490da96971204e2d3782677890872ab7f3404f9b39f7da1624ccda8940",
+  "cache": ".cache/3b742f76-25ad-446c-a942-09b09b93f6a3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c5661b3ed6d33a26fc8a25bd907eacc474cf39c2ab415e6a119b99faed52c1ec",
+      "bytes": 19070,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/441dd27c-2a3d-43b2-a76c-d0ff538afb8a.jpg",
+    "fetchedAt": "2026-10-02T21:40:16.094999+00:00",
+    "sha256": "933b4b3ca63a065c9f273a7b3c53c4c96b9aedb059720d326eeccfa1df13e233",
+    "bytes": 172604,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

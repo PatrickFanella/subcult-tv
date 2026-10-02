@@ -1,0 +1,29 @@
+{
+  "styleId": "f1a2100a-7cda-4787-b8af-5c5edcfcdff0",
+  "sourceUrl": "https://styles.refero.design/style/f1a2100a-7cda-4787-b8af-5c5edcfcdff0",
+  "fetchedAt": "2026-10-02T21:56:10.281055+00:00",
+  "extractedAt": "2026-10-02T21:56:10.304226+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Somos incansáveis pra você não precisar ser | Nubank — Style Reference",
+  "htmlSha256": "5b81676b94c04373110d0d259203d89e42eb1133a598e1581de4dbe6733a0f3f",
+  "cache": ".cache/f1a2100a-7cda-4787-b8af-5c5edcfcdff0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9efd7bc5ca4a84ccf98ce1422ab3b98a204bb2a5a2d79de7f95c01e68c674ae3",
+      "bytes": 17758,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ff29b033-a81d-46ac-935a-9a13d1dec47d.jpg",
+    "fetchedAt": "2026-10-02T21:56:12.273081+00:00",
+    "sha256": "d21b906b774482d22e679208d10b000a886c7f238316fdbdd96f02a23d2bdbce",
+    "bytes": 167457,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

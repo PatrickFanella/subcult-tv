@@ -1,0 +1,29 @@
+{
+  "styleId": "4e1ac04c-02ae-41cf-b588-3f6226a882f8",
+  "sourceUrl": "https://styles.refero.design/style/4e1ac04c-02ae-41cf-b588-3f6226a882f8",
+  "fetchedAt": "2026-10-02T21:59:22.237609+00:00",
+  "extractedAt": "2026-10-02T21:59:22.315573+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "FlutterFlow — Style Reference",
+  "htmlSha256": "47e34cb8524988cc29d864caf79b81442587a8f8be005f84f86917afe55b2d8c",
+  "cache": ".cache/4e1ac04c-02ae-41cf-b588-3f6226a882f8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b20932467d00f6cd0e1b73f0520df43943a10652bd55f3999a851b90620fffaf",
+      "bytes": 21686,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1e94c934-eb85-4f57-a00c-ce7cd87c1177.jpg",
+    "fetchedAt": "2026-10-02T21:59:24.235294+00:00",
+    "sha256": "056d2834e5e4460c108002461f1de4d1d6135100771faabe569d9f3ee064c6d9",
+    "bytes": 95835,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

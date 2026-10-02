@@ -1,0 +1,29 @@
+{
+  "styleId": "127a4efb-685c-42c3-83eb-72bb410a8429",
+  "sourceUrl": "https://styles.refero.design/style/127a4efb-685c-42c3-83eb-72bb410a8429",
+  "fetchedAt": "2026-10-02T21:39:02.016729+00:00",
+  "extractedAt": "2026-10-02T21:39:02.049408+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Felt — Style Reference",
+  "htmlSha256": "ce71846c26cd9d1bf8002bbed34f7ca448f7843efecba9aaed3ac15fb7d65a16",
+  "cache": ".cache/127a4efb-685c-42c3-83eb-72bb410a8429.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b9f37275662a9764ba3c780d40d4fa706e2723fc25d32e928ae543975e8d19fe",
+      "bytes": 21462,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/19660a2d-c26a-4c74-b427-6f91d2f92841.jpg",
+    "fetchedAt": "2026-10-02T21:39:04.121566+00:00",
+    "sha256": "ad3392a202fee241f327dd42705c237875dcecf30a541464959fef2616cbf95a",
+    "bytes": 95249,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

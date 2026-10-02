@@ -1,0 +1,29 @@
+{
+  "styleId": "48e5de76-05d5-4c4e-a269-c7c245b291ec",
+  "sourceUrl": "https://styles.refero.design/style/48e5de76-05d5-4c4e-a269-c7c245b291ec",
+  "fetchedAt": "2026-10-02T21:35:06.023849+00:00",
+  "extractedAt": "2026-10-02T21:35:06.055408+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Stripe — Style Reference",
+  "htmlSha256": "0860f999227578a50ce0c6860ab09f3a130f7b8a4dc189bf37d62f06ce94f30d",
+  "cache": ".cache/48e5de76-05d5-4c4e-a269-c7c245b291ec.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "818577e750deb2f38731d2a0d286f264adc4f85947b7ac7ca24201cff69961fa",
+      "bytes": 22050,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2d6df304-37d6-483f-9f0a-02c7ee1e06ef.jpg",
+    "fetchedAt": "2026-10-02T21:35:08.175592+00:00",
+    "sha256": "c8841136dc27c7d7321282d2073da0d38fb43673725fe275dc159b8136309b5b",
+    "bytes": 116731,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

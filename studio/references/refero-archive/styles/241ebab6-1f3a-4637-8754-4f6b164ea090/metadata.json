@@ -1,0 +1,29 @@
+{
+  "styleId": "241ebab6-1f3a-4637-8754-4f6b164ea090",
+  "sourceUrl": "https://styles.refero.design/style/241ebab6-1f3a-4637-8754-4f6b164ea090",
+  "fetchedAt": "2026-10-02T22:00:06.227073+00:00",
+  "extractedAt": "2026-10-02T22:00:06.277013+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Drive Capital — Style Reference",
+  "htmlSha256": "434a4f3f2d74324253bdd1ed38494eda1edc0108a1ca4b2b054fce1d4d37e274",
+  "cache": ".cache/241ebab6-1f3a-4637-8754-4f6b164ea090.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8e143b78e1544e57a5333bcf77733c594060af4c5de399a6f451d45a0366ee44",
+      "bytes": 14685,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bddec99b-2c01-4380-9ada-8304c55e6e29.jpg",
+    "fetchedAt": "2026-10-02T22:00:08.236388+00:00",
+    "sha256": "33b14c63a2f1c7adfa4b876255010ab39f067718c654fc200786ad9a8e948b43",
+    "bytes": 131909,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

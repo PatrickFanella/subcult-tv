@@ -1,0 +1,29 @@
+{
+  "styleId": "2ffd50d4-93b7-4acf-9bc2-e86e61b63f27",
+  "sourceUrl": "https://styles.refero.design/style/2ffd50d4-93b7-4acf-9bc2-e86e61b63f27",
+  "fetchedAt": "2026-10-02T21:33:18.095416+00:00",
+  "extractedAt": "2026-10-02T21:33:18.121855+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Geniestudio — Style Reference",
+  "htmlSha256": "6b6860c63d3f40e043ffbc2f44502e3b18ad1b81f44aa7f6fd9e7ce5ef1e6e32",
+  "cache": ".cache/2ffd50d4-93b7-4acf-9bc2-e86e61b63f27.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4715c6242a71fb0944bb9ab0af1901ee62e2f28d48b5754fdf8f40d69be040a6",
+      "bytes": 23311,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/16996f45-fd96-4770-aa3a-e405fb504821.jpg",
+    "fetchedAt": "2026-10-02T21:33:19.957806+00:00",
+    "sha256": "f81194c99af81cb80d85f0b05a16cbf8fb76316f61b3945259bf83da078706b6",
+    "bytes": 44664,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

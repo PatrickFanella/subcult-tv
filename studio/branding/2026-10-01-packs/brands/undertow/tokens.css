@@ -1,0 +1,10 @@
+:root {
+  --brand-bg: #0f0c1c;
+  --brand-fg: #f7f3ff;
+  --brand-accent: #ff9fe0;
+  --brand-secondary: #9cecff;
+  --brand-safe-label: #ff9fe0;
+  --font-display: "Liberation Mono";
+  --font-body: "Public Sans";
+  --font-label: "JetBrains Mono";
+}

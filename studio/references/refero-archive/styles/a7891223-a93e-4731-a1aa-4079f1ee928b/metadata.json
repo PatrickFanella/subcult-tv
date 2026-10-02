@@ -1,0 +1,29 @@
+{
+  "styleId": "a7891223-a93e-4731-a1aa-4079f1ee928b",
+  "sourceUrl": "https://styles.refero.design/style/a7891223-a93e-4731-a1aa-4079f1ee928b",
+  "fetchedAt": "2026-10-02T21:56:46.403084+00:00",
+  "extractedAt": "2026-10-02T21:56:46.430097+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Max Yinger — Style Reference",
+  "htmlSha256": "8d4017658f7b912d9a924ec530f4a960ccc91ccf50e8c3842d557869475d45b6",
+  "cache": ".cache/a7891223-a93e-4731-a1aa-4079f1ee928b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "39d0472f0945274f98ccbd811b855401eb414264a0f8922ef6c53b0b24854d08",
+      "bytes": 15075,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c540c82c-d6ad-49f7-b940-d82feba87b97.jpg",
+    "fetchedAt": "2026-10-02T21:56:48.153112+00:00",
+    "sha256": "680df3437ac72d43d1767fbb58cfef278c6bafc0d6e52d5167cc8ee8e2966d5e",
+    "bytes": 51963,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

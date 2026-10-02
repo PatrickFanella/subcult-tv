@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   role="img"
+   aria-labelledby="t"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="clpr-avatar.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   inkscape:export-filename="clpr-avatar.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="315.80004"
+       y="384.66609"
+       width="548.46891"
+       height="58.536144"
+       id="rect10" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2070312"
+     inkscape:cx="255.58576"
+     inkscape:cy="256.82848"
+     inkscape:window-width="1266"
+     inkscape:window-height="691"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <sodipodi:guide
+       position="0,512"
+       orientation="0,512"
+       id="guide11"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="358.84132,180.92802"
+       orientation="512,0"
+       id="guide12"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="222.95652,119.104"
+       orientation="0,-512"
+       id="guide13"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-512,0"
+       id="guide14"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <title
+     id="t">clpr</title>
+  <rect
+     width="512"
+     height="512"
+     fill="#0E0C13"
+     id="rect1" />
+  <g
+     id="g14"
+     transform="translate(1.7049182,1.2445927)">
+    <path
+       fill="#eeedf7"
+       d="m 50.877727,303.58081 v -97.65083 q 0,-40.73138 27.937535,-65.53574 27.937548,-24.80437 77.024078,-24.80437 49.08651,0 76.76297,24.54327 27.67642,24.54327 27.67642,64.23024 v 11.48833 q 0,2.611 -1.82767,4.43868 -1.82769,1.82769 -4.43869,1.82769 l -74.15197,3.13318 q -6.26638,0 -6.26638,-6.26637 v -7.83296 q 0,-8.87735 -4.96086,-15.14371 -4.96086,-6.26636 -12.79382,-6.26636 -8.35516,0 -13.31603,6.26636 -4.96087,6.26636 -4.96087,16.71031 v 84.07372 q 0,10.44395 4.96087,16.71031 4.96087,6.26637 13.31603,6.26637 7.83296,0 12.79382,-6.26637 4.96086,-6.26636 4.96086,-15.66592 v -7.83295 q 0,-2.61098 1.8277,-4.43868 1.8277,-1.82769 4.43868,-1.82769 l 74.15197,0.52221 q 2.611,0 4.43869,1.82769 1.82767,1.82768 1.82767,4.43867 v 14.09932 q 0,42.29797 -27.41532,65.79684 -27.41535,23.49886 -77.02407,23.49886 -49.60873,0 -77.285178,-23.75995 Q 50.877727,346.401 50.877727,303.58081 Z"
+       id="path1"
+       style="stroke-width:1.16906" />
+    <circle
+       cx="358.84131"
+       cy="254.7554"
+       r="76.316582"
+       fill="#8c5cff"
+       fill-opacity="0.24"
+       id="circle1"
+       style="stroke-width:1.16906" />
+    <circle
+       cx="358.84131"
+       cy="254.7554"
+       r="50.877716"
+       fill="#8c5cff"
+       id="circle2"
+       style="stroke-width:1.16906" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;font-family:'Space Grotesk';-inkscape-font-specification:'Space Grotesk, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:3px;writing-mode:lr-tb;direction:ltr;white-space:pre;inline-size:125.675;display:inline;fill:#c5aaf6;stroke:#ff2bc2;stroke-width:0"
+       x="292.68073"
+       y="375.31998"
+       id="text9"
+       transform="matrix(1.7416505,0,0,1.7416505,-252.03406,-270.90178)"><tspan
+         x="292.68073"
+         y="375.31998"
+         id="tspan1">clpr.tv</tspan></text>
+  </g>
+</svg>

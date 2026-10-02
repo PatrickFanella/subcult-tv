@@ -1,0 +1,29 @@
+{
+  "styleId": "dd646da4-36f5-42b1-83dd-6a1c90cf8983",
+  "sourceUrl": "https://styles.refero.design/style/dd646da4-36f5-42b1-83dd-6a1c90cf8983",
+  "fetchedAt": "2026-10-02T21:41:53.475752+00:00",
+  "extractedAt": "2026-10-02T21:41:53.499714+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Specht Studio — Style Reference",
+  "htmlSha256": "3b73d15b3bfde6e6116ed04117388a5e3c8b982198c94be751348594daf5fe94",
+  "cache": ".cache/dd646da4-36f5-42b1-83dd-6a1c90cf8983.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1083a31fe490a001a91fadd374a51f05177991c8ec34e4d5e9f2c5bd654a44df",
+      "bytes": 13421,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/31a19b95-ec1f-43d4-999f-1b8461412f43.jpg",
+    "fetchedAt": "2026-10-02T21:41:55.598553+00:00",
+    "sha256": "8f2522427b1550dfcf740253f6c8f0426249639de612c66d1040f6a4d62786e4",
+    "bytes": 225158,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

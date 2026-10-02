@@ -1,0 +1,1370 @@
+[
+  {
+    "path": "one-sheet-template-templater-dataview.md",
+    "bytes": 2665,
+    "sha256": "b38c2bce732b5d74b54eb5ab619a1630a2e7fce8379bcdd4a18c0b93394274ff",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "one-sheet-template.md",
+    "bytes": 2010,
+    "sha256": "67d8338954bcc4f71583b8e8c456001ec3de657ca2e75790451bb0a5fb186c99",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "patrick-brief-note.md",
+    "bytes": 1724,
+    "sha256": "125e26b0d4f84a0804b2bebd3bfcd96dac8c716b71daf22500811f1044b8703a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "2026-01-23-clprtv---our-first-release-promo-card (2).png",
+    "bytes": 458872,
+    "sha256": "5590bca73db9011585179b4f9223e8c6d2d2b4694b8e11b16df954d3b443a688",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "ChatGPT Image Dec 14, 2025, 01_54_12 AM.png",
+    "bytes": 1056577,
+    "sha256": "cb16b09d5374fcbe13e9db5056dad282c1664951451dec41506d1e24624eef5b",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "ChatGPT Image Dec 14, 2025, 01_56_27 AM.png",
+    "bytes": 1163299,
+    "sha256": "0ba42523069c8280afaba254f0f04622fb4a3fe6117ce2b104c6984d1ba27079",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-500px.png",
+    "bytes": 188777,
+    "sha256": "d75fc27c2e7999c0d1a4a785cf5758359ff41c26b5648dd16b18a54a9582a473",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-alt-500px.png",
+    "bytes": 155893,
+    "sha256": "bed57173d93174d32b99c5662f99f83c427291c5b084740f747207250a81a4c4",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-alt-banner-500px.png",
+    "bytes": 110977,
+    "sha256": "19c7d2ce75706106d4ca558d5f3e9b288a5c393d868530b3074bb8aa96078b41",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-alt-banner-1021px.png",
+    "bytes": 679906,
+    "sha256": "0b62e4d8d012bee97da7d2565536f96ad85eb6df7729ef9b56e24e71bba7db86",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-banner-500px.png",
+    "bytes": 145263,
+    "sha256": "3bdeff50f52c5225666663b32f31f440083ff55dc3bc94d5779d3de5fd3b0a54",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-banner-1021px.png",
+    "bytes": 771814,
+    "sha256": "e2e26a6799374bd30787332dddd409607921d02ddffe12c8f1c8f8dace733d06",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-play-300px.png",
+    "bytes": 143800,
+    "sha256": "26a19bcb2a799501fd3c5d9456880ef2bd58e05ed214817046f99753cc15e54b",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clprtv-ourfirstrelease-preview.png",
+    "bytes": 733932,
+    "sha256": "4fbfc917273f077b072f85d7a29ab1ed8e7185cf18a2f9c0da5f9186ffb20cef",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clprtv-ourfirstrelease-preview (1).png",
+    "bytes": 733932,
+    "sha256": "4fbfc917273f077b072f85d7a29ab1ed8e7185cf18a2f9c0da5f9186ffb20cef",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clprtv-ourfirstrelease-preview (2).png",
+    "bytes": 458872,
+    "sha256": "5590bca73db9011585179b4f9223e8c6d2d2b4694b8e11b16df954d3b443a688",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clprtv-ourfirstrelease-preview (3).png",
+    "bytes": 458872,
+    "sha256": "5590bca73db9011585179b4f9223e8c6d2d2b4694b8e11b16df954d3b443a688",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clprtv-ourfirstrelease-preview (4).png",
+    "bytes": 458872,
+    "sha256": "5590bca73db9011585179b4f9223e8c6d2d2b4694b8e11b16df954d3b443a688",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "favicon_io.zip",
+    "bytes": 542771,
+    "sha256": "23becf4ce44bc0cf7f2981699b417ef403513975353f9d8411786cc614f314b2",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "terminal.png",
+    "bytes": 123083,
+    "sha256": "c0173dbc783a73ae9cd512c4f671db88efd651b4670f8c25dbdbebd741c668fd",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clustr-visual-contact-final.png",
+    "bytes": 1202498,
+    "sha256": "b8d2d2a4f10b4f61f317cb647dd35f2718966c329f9924fdd5b073f0c20fbf88",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clustr-visual-contact.png",
+    "bytes": 1002076,
+    "sha256": "76fb09e7457ea1e849c48d635b109cd395af020355c572fa2b79c62ad5bcc3c6",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clustr-visual-contact-fixed.png",
+    "bytes": 923093,
+    "sha256": "a99e72917df05cd22b0f3759d2eb28828f08514eda9c67ff3b95de99673b3107",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-final-768.png",
+    "bytes": 282674,
+    "sha256": "75c039695446275a7bb02646a8b637611be83be67649160e926093c4fdae9675",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-768.png",
+    "bytes": 276360,
+    "sha256": "9872f4271c522f7ccd9876a428f28536d344e6b5588d19202af8c38da2f41fb8",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-430.png",
+    "bytes": 161058,
+    "sha256": "93b3f89311bc23cf2086f28b2325eb901abe1ffa6ff6a96ea7bd53028cb03728",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-mobile-feed-release-390.png",
+    "bytes": 154582,
+    "sha256": "4abaced2b8c98cb85c36d052db17db65f7e7ceb568a2f6779c063a13ba7aa34d",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-final-polish-390.png",
+    "bytes": 154203,
+    "sha256": "9f628495e4c5c66b849980502df0011617b987fd774834afaebc49e034c11060",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-final-430.png",
+    "bytes": 136318,
+    "sha256": "e9b2615a16dda27f4f49f74ea4352c819f88ef2323d36d2782ba63f687006bfc",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-374.png",
+    "bytes": 132140,
+    "sha256": "b15bd833735da2dd9514c6aa98f2cf30a8ad7077e035c2721079d7f26e97edc3",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-390.png",
+    "bytes": 130378,
+    "sha256": "709e0d18cef67ac19c07ea62aba645fa7c9124670f2dae8270dc376f71193527",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-375.png",
+    "bytes": 127669,
+    "sha256": "8c850c5fc15703f44a16f111cb35b5328fa91e0f582436aeb72b4760e95e2706",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-final-390.png",
+    "bytes": 122789,
+    "sha256": "599d4c8df74639046809c96c02f67e6522b07eded261ce801f4cf2be2ab544b8",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-final-375.png",
+    "bytes": 121231,
+    "sha256": "f21809008211d0bac88401c43df0ed6ee6fb6ff0364bed21cb96dc5dbd71f9f3",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-final-374.png",
+    "bytes": 121168,
+    "sha256": "6051667ac6d84efab5a799efc1b02edbf754cee1c054aecc7c5d3afd2515ed96",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clustr-dashboard-node-count.png",
+    "bytes": 109681,
+    "sha256": "f419db57e1a01fd41dc7f1a6d1a39078f8881c64c933f1c8630af8a6ce02afa8",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-redesign-final-320.png",
+    "bytes": 93383,
+    "sha256": "de5234a9ff23cddf6cd43ba05c15e4c91fc92e82ca258d406942a270c86271aa",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clustr-production-desktop.png",
+    "bytes": 91564,
+    "sha256": "0ec25e597dbadb09f15282425e514c897f8dcb7478322f4d3f3e1f11eb76172d",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clustr-large-debug.png",
+    "bytes": 84007,
+    "sha256": "7b3b3e4c393541761c7b95613073d7620b174f7f9ca916346b7eb09125933964",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clustr-production-mobile.png",
+    "bytes": 58298,
+    "sha256": "a7cc749a908c831ae50765613db5153465349570dcd248be6a2df124cf288bc3",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr-production-mobile-390.png",
+    "bytes": 42601,
+    "sha256": "f2b4e739bfdcfcde1d85c3f6c8c82f36cdc90dd1f1ba1c7e8712411e9ec3ffc9",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/9ax3ui.jpg",
+    "bytes": 84354,
+    "sha256": "9a82217de57c3f456d249114acf93b334a7741609c8433bc1219fe5e9ef33849",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 16, 2025, 05_56_29 PM.png",
+    "bytes": 1187576,
+    "sha256": "9415ef65d499911098fd836c1c6bcbe6d92a025bd85d3c0834b627bd78011799",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 16, 2025, 05_56_35 PM.png",
+    "bytes": 1362549,
+    "sha256": "08eea3473523ee8ec33e67f111b4b24054f11cd2dc1b869f9ab47c67b26cb556",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 26, 2025, 02_59_47 PM.png",
+    "bytes": 2179117,
+    "sha256": "d456ecff780bedc2ceee3f211d44d35b929c085310268b9718a36697cb750027",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 26, 2025, 03_02_38 PM.png",
+    "bytes": 2333036,
+    "sha256": "630dd543cde0eb98562dd53bcfefe56a5a9d747593d79f52acb807c8a0c7598b",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 26, 2025, 03_02_40 PM.png",
+    "bytes": 2253501,
+    "sha256": "7493de3d56df31cf3fb1825e66d44dc08c2e9b04fb37dc628a81af7bf75348d7",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 26, 2025, 03_06_48 PM.png",
+    "bytes": 2620037,
+    "sha256": "34e3395379a954f13428bb3e343b9520d9fdfe28b97eecbb652858db77a2eead",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 26, 2025, 03_08_23 PM.png",
+    "bytes": 2080920,
+    "sha256": "f570942b65fa76a9dd22cfcde3c034767658b738a76a43ccbc5076f97c674822",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 26, 2025, 03_12_07 PM.png",
+    "bytes": 2217750,
+    "sha256": "94d4c8035ca4f12a49ac855a853510f1352c0ca398684aae5de9972c8347521e",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 26, 2025, 03_13_15 PM.png",
+    "bytes": 2166815,
+    "sha256": "6c816b4a4425ad546ea3197d9063804ed7db45c888053a8a6af2250745e0a534",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 26, 2025, 03_45_01 PM.png",
+    "bytes": 3376758,
+    "sha256": "d0ab3f44afac12561c0ba8c2dd7b5b9cbe66e2cbc9a337ace6f648e3130198c5",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/ChatGPT Image May 26, 2025, 10_30_50 PM.png",
+    "bytes": 2604854,
+    "sha256": "4dc96ea15c235613c30b8e2966371e2df32e48bd18806a2e9c4ff154a44fff56",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/catlogo.png",
+    "bytes": 3283885,
+    "sha256": "968b75f5e7e523432f5d99a1f0a583ba68dc145e2d93a7cf5f820b7682cbf62e",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "onnwee/onnwee-avatar.png",
+    "bytes": 471199,
+    "sha256": "7e22b1de84e222697fd4b1d91e4d301b9a0f65204da7637fdc53c56be14a0983",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "jury-rigged/jury-rigged-logo.png",
+    "bytes": 1506709,
+    "sha256": "e1c0bff9128d20d8c178fdbe7b5a754e7086dcfa2fc925863ab0a685bc5ce189",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "jury-rigged/client_secret_797211942169-rk7877vm5japramn0d4asmblvnl28bp6.apps.googleusercontent.com.json",
+    "bytes": 413,
+    "sha256": "1004efbfdda5773c22fcfd793166ee162fe6591275d468d21759f1737fcde4fb",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "hasanara/Gemini_Generated_Image_m3ssarm3ssarm3ss.png",
+    "bytes": 1559766,
+    "sha256": "dfab6362461d7ea5430cffa0fe4169b6f60cc41743b1d4b3cf1c8975330eb112",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "hasanara/Gemini_Generated_Image_bjwmftbjwmftbjwm.png",
+    "bytes": 1503477,
+    "sha256": "31f0d89996446b62a5b4ff98871c0da2015c84d793a1b32b17c2762ec85c2cd0",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr/clpr-logo.svg",
+    "bytes": 5758,
+    "sha256": "b6b3c925aa22f7dca2c0add2f0f42f1c35565ce81ee74d1cfeab7dd7cc6ec16a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr/clpr-logo-c.svg",
+    "bytes": 3451,
+    "sha256": "5b3834da72765550cb8720aa8092b98fc7668ddfca0ee7cbc7f653b441249595",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr/clpr-logo.xcf",
+    "bytes": 55999,
+    "sha256": "4262c63fe2f5f58a676ab648e0bc2e5d264d0e04279d3b6c7e8cc8a48fbbcce7",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr/one-sheet-clpr.md",
+    "bytes": 4985,
+    "sha256": "a77d4016375be8e972261ea3f285f55914ce9d5531bb4e6e2a5c35d24b7d6f26",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr/clpr-logo-high.png",
+    "bytes": 7316,
+    "sha256": "dcc3493bc1c8d0d2955b32dbe33f051bc9bc4c494b36ab05542f0f370a8cddf6",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "clpr/clpr-logo-c-medium.png",
+    "bytes": 2069,
+    "sha256": "ac470ceee68339872ba9e01ae4e6ef3d7ee4a79c83e5b39399af94f95508ea52",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/compass_artifact_wf-bb2260a7-d233-4f8d-902b-9b298ac6bf17_text_markdown.md",
+    "bytes": 19862,
+    "sha256": "400533b90d2d85fb320a1ec8b5fa2fe191ce97ab36c2b71a09bbce454e3b3864",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/compass_artifact_wf-df5c4ab8-859a-46e7-9aee-8ecd92dd2d3c_text_markdown.md",
+    "bytes": 33779,
+    "sha256": "20ed6ec2ee7ad00506df329b6a86afb599378fbc5e23fe4b835e0b4227d290f7",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/deep-research-report.md",
+    "bytes": 18903,
+    "sha256": "83274ffc2641216aa22537b8f79e561dfea2fa8cdee43941a6309e5b1a829827",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/deep-research-report (1).md",
+    "bytes": 32163,
+    "sha256": "bbf75ff6788e63e010f96b70c17378b8fabb65e5f8cb3c6f39ac2a243763b216",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/ChatGPT Image Feb 11, 2026, 08_20_04 PM.png",
+    "bytes": 525007,
+    "sha256": "68ca25598c6c2dfc434d344524ed2fc0046831f417652a16772fa16a5722d34f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/ChatGPT Image Feb 11, 2026, 08_20_11 PM.png",
+    "bytes": 1194354,
+    "sha256": "3f9e3083b53646031743bb1cf5740729f9f03fea8e9fa4648112d6d7273c23a9",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/ChatGPT Image Feb 11, 2026, 08_20_18 PM.png",
+    "bytes": 1617685,
+    "sha256": "e41561b8451bce50571b78399f553152773e90f46a241e09d7d7a4110f5e474b",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/ChatGPT Image Feb 11, 2026, 08_20_22 PM.png",
+    "bytes": 1555183,
+    "sha256": "e155461f374c89b2d43f4f7462e0dfc5a81a72080df6d8cafd3f2d08319ccbad",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/ChatGPT_Image_Feb_11__2026__08_20_04_PM-removebg-preview.png",
+    "bytes": 234641,
+    "sha256": "d0125859a1200698bc7175ec5c18b67842f842137f108f26d82af0d08ade46f6",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/do-rfk-jrs-brain-worms-also-wear-jeans.mp3",
+    "bytes": 9381860,
+    "sha256": "fca1c7322ce4c0633e4e53bf2df1ecc4caa600e12609fc9ab8e3d89aa3c2c21e",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/A_Stutter_in_the_Marrow.mp3",
+    "bytes": 4242930,
+    "sha256": "9eec5765d2f1c314cbf0af1378f136729fed7e7bfde2db7228917128cc87da57",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_1o5yy21o5yy21o5y.png",
+    "bytes": 10100669,
+    "sha256": "f6b5e6f34108aa9470f378c06a1c3be534f1b9cf5feeccdc25a87321c7b2a0cd",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_8v3uo68v3uo68v3u.png",
+    "bytes": 2189732,
+    "sha256": "192bd982a3f3202ab7af4b618b9a5f8846489d6d4955411be8820249fdb78898",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_8ywtqu8ywtqu8ywt.png",
+    "bytes": 2433592,
+    "sha256": "c94a553e244784aab291db89c7b40581ec392617b6b6fccb5f51b2ee765ea657",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_9lg42n9lg42n9lg4.png",
+    "bytes": 2345385,
+    "sha256": "456a079c6c449263750f8da5b0bd9d0c3e08e31212d8bc33720fc11842c43abc",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_dhz4uxdhz4uxdhz4.png",
+    "bytes": 2190736,
+    "sha256": "f2ec443ba0d49d8b8a059bd6b926e8e12bfc7c809050a9b45734c0987ed9c0e8",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_dpafr0dpafr0dpaf.png",
+    "bytes": 9081369,
+    "sha256": "56d57335204086c0e311369288ff90ac3e62463ced7ab07f94d4732607adec6c",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_fty92ofty92ofty9.png",
+    "bytes": 2373388,
+    "sha256": "21eebb0567fae4fc492f7aeb35992bc48bf28c6b8ea9fe65ed422622a07482df",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_gx4xlgx4xlgx4xlg.png",
+    "bytes": 9463853,
+    "sha256": "9f747defe1e9a14cde1cc0508e5c46d48ac7f6e424c190561cb7ab7320d6c899",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_jbtliyjbtliyjbtl.png",
+    "bytes": 10170402,
+    "sha256": "ed0c119aa8715a475dfed6d2e25a9c6fc114938a72cb8636b8bcb869c9bf240b",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_lpqfw6lpqfw6lpqf.png",
+    "bytes": 8948270,
+    "sha256": "7eb327df9e633d76d3d785ebc1c784fd2b739290078431517d7128b19e00ca44",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_mc5ew7mc5ew7mc5e.png",
+    "bytes": 10143651,
+    "sha256": "366d2bddd72a74d3a0204ecb634f1a3ca94a49d7c15eee0ec5fbd4001d8e4702",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_oidp92oidp92oidp.png",
+    "bytes": 2182917,
+    "sha256": "da43b7bca5a498b79b9e905643821bf4bac8fd4b8d064e8f0649e4272ebeca5c",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_u8ri3eu8ri3eu8ri.png",
+    "bytes": 2473337,
+    "sha256": "366f31162b7417db3a3d887408b5c7055a97ef88c9b7ade5fb92097b6fdd8823",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_vve6wbvve6wbvve6.png",
+    "bytes": 9950872,
+    "sha256": "396c9e45862516e08b7f2c254c655c9d7ec455ee0736f8eb28177fa717097664",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_wpsxnqwpsxnqwpsx.png",
+    "bytes": 9700483,
+    "sha256": "480488c173fb53ff2a64b16bf7611486257a827f19ddb0d27e876da9700986f8",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/Gemini_Generated_Image_xxsul0xxsul0xxsu.png",
+    "bytes": 9849902,
+    "sha256": "83107f8a01ad1a2646216f001458c0fa77d2c70b8e28e2e817cc4baea2de7b1d",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/IDENTITY.md",
+    "bytes": 1995,
+    "sha256": "7a38d557e7b861eda61627f630a476b052f87be6ede0f193af11fff3c58f9244",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/praxis.png",
+    "bytes": 598019,
+    "sha256": "c41a60fcf65838162e9a1fb943a3fe2b1f171d591183efb88824ebef5018a012",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/SOUL.md",
+    "bytes": 990,
+    "sha256": "4b3b891dabcc4a053ea1585b9fed260f51c610ccae38c45ad59032ff154fa1cc",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/subcorp-banner.svg",
+    "bytes": 139854,
+    "sha256": "a4a2b0439746ca936233b6c15a7216554ba70b9dfeacef675bcffdecbbe7e0e2",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/subcorp-ceo.png",
+    "bytes": 412619,
+    "sha256": "4785598921dec48896f6a2de15d681d9782154faf401a950f44d7f6c2b2bba2f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcorp/SUBCORP \u2014 Transcript.pdf",
+    "bytes": 114122,
+    "sha256": "d9784ffa2de4e494e8d7e4fcbd57e78669ec5b18038ba7debdafd122ef8016de",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "favicon_io/apple-touch-icon.png",
+    "bytes": 57756,
+    "sha256": "ae4afe50d728ef86091e33be7cc3aca10d7f4b504f7c91ae221591a41b88023b",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "favicon_io/favicon-32x32.png",
+    "bytes": 2471,
+    "sha256": "a9ee5b191bcffe3cb907043b1b47bc53218c15ec78a942c60500890f722d3cff",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "favicon_io/favicon-16x16.png",
+    "bytes": 826,
+    "sha256": "147e98bb6958455781acf935f1aeb825d1751e8db75a65d6af23ef3a128025ae",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "favicon_io/favicon.ico",
+    "bytes": 15406,
+    "sha256": "dc05a2af0d88b47bab28fbdc8428acd5ed28d8450376bdd24becb7e256c53f5f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "favicon_io/site.webmanifest",
+    "bytes": 263,
+    "sha256": "7a9e07ce1f7386689917602ddc5a75750ad842e605ff764f67173529c181bf04",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "favicon_io/android-chrome-192x192.png",
+    "bytes": 64705,
+    "sha256": "967b72e26d327651b7f8f0924c8c82b0adacac86ec4797a09d1026201ed0eb71",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "favicon_io/android-chrome-512x512.png",
+    "bytes": 400524,
+    "sha256": "7c1623fd0ab35dc958da0321ddb3ff59af12d463e10eb4847f1c1c9bd62af82d",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/001-from-openclaw-to-subcult-corp-humanized.md",
+    "bytes": 14188,
+    "sha256": "07764d81afe54eb6e26ee8906d086a6538367b20537c2752f0753cbe2caa610e",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/001-from-openclaw-to-subcult-corp.md",
+    "bytes": 14188,
+    "sha256": "f4228cfc719bf3c80d62a282bbbeab91dd32c94fd7e8b249df4560e7f4659535",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/002-six-agents-who-read-marx-humanized.md",
+    "bytes": 11705,
+    "sha256": "f4c32862d9d1f328bc975e8f312829f699e69b6a06e049fb1d6ed9a1244816a1",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/002-six-agents-who-read-marx.md",
+    "bytes": 11718,
+    "sha256": "077df964f86fa45d5768d94c36de41f1404391bd3c28b17590a4965a23273ad4",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/003-the-office-that-runs-itself-humanized.md",
+    "bytes": 10425,
+    "sha256": "7b593b8a345cb1de962ef33e713719697c043e93d5e3d6f674e1e93ae1b82c9e",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/003-the-office-that-runs-itself.md",
+    "bytes": 10522,
+    "sha256": "7ee8e1763f5d4179debfaffadf19e4105d7b3f1eb774cf8a048ce07d3360216e",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/004-watching-the-machines-work-humanized.md",
+    "bytes": 11039,
+    "sha256": "3325487bf7a67110eba14b7d31dedb52379a9ded8d9214bff303a6dd1102748c",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/004-watching-the-machines-work.md",
+    "bytes": 11043,
+    "sha256": "f5a196fc035a183f7b9fc00cd3c1f953b7768eda2333983c0e40878584a2a761",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/005-the-loop-that-feeds-itself-humanized.md",
+    "bytes": 12768,
+    "sha256": "328494f7218d2a484fb42f67225462e3b225544ef0e89cd59455d9cab16c913f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/005-the-loop-that-feeds-itself.md",
+    "bytes": 12768,
+    "sha256": "d654bd2372aa418cb880d4602428c2a15c02c41aa71d72a2f697ed66c3903ef8",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/006-nine-tools-not-ninety-skills-humanized.md",
+    "bytes": 10444,
+    "sha256": "774a696fddad3d9a84a6ee95c5b2d8dac242143e8e322bf4a0e24a9323d0d6da",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/006-nine-tools-not-ninety-skills.md",
+    "bytes": 10572,
+    "sha256": "0d936215a8cc6ae4734f82d2bf65bbae86555da82cf878a5f608580448ae0e8d",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/007-building-with-the-tools-you-are-building-humanized.md",
+    "bytes": 12143,
+    "sha256": "d204566a9293bbfb04823febad3864629c9ed4bc1c5b56772bbe68136045e4bc",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/007-building-with-the-tools-you-are-building.md",
+    "bytes": 12214,
+    "sha256": "4d640cde7d55248b1fcf0299d9f853244137994899210bdcccea497b4fecf383",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/seo-metadata.md",
+    "bytes": 2911,
+    "sha256": "6ffe920eb5927559a729faef308c1a38e83d22e0d24190e7972c9b25871c9097",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/blog/subcult_blog_posts.zip",
+    "bytes": 7421,
+    "sha256": "7d9ec9b9b90a92c88f541157c81fd9a135d2b5b070a79dba0ec5805a5f141d17",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/04a5d01f-fd45-442f-98ed-99e1d6ba1d75.png",
+    "bytes": 2318731,
+    "sha256": "95e2851b198a1249fc10989dae5c31c7628fe9d565beeb34dd70556753a3842c",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/35bc1094-9ace-4202-ac7b-2828f8d7b0bd.png",
+    "bytes": 1667516,
+    "sha256": "a34227f3189cd1201d3449eb301b1075c46950ff2f1771b19179c7ea1f3c8eea",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/59863f56-edba-4c93-ab7a-c7be24c30c77.png",
+    "bytes": 1566603,
+    "sha256": "c9e9b07f04ef84ead22122623a6d7fcf2034b495a7eca4dbd5f2fe34be8f2acb",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 02_19_04 PM.png",
+    "bytes": 1781154,
+    "sha256": "c264fafd58045e0368e144c20de376a6309b81c290be1c2381c352b517e4a73a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 02_20_19 PM.png",
+    "bytes": 2436900,
+    "sha256": "e8a1fd8c8099861f34aa858630fe9d19fdfc8d1df44c9bbdc813f66c1775f9d2",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 02_22_02 PM.png",
+    "bytes": 2453981,
+    "sha256": "7d0b8439c69c423900ef3594a3c2b64e459fa561a5c9817239d920dc0e5c89a9",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 02_23_50 PM.png",
+    "bytes": 2348807,
+    "sha256": "7fcbb169d1109ce84b15cd4b3ff4a22cdd6424c770106ac58cad102c46c79183",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 02_24_53 PM.png",
+    "bytes": 1605690,
+    "sha256": "f7e06a4a63013e9754848323e9f273ec4d1077177d683ca02b1ae86ed8ee9ec5",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 07_41_26 PM.png",
+    "bytes": 2552032,
+    "sha256": "321118462f0dfd5f841339879019d7c032b99f069278c3c7adcd81d8dfc9c5f8",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 07_41_32 PM.png",
+    "bytes": 1939876,
+    "sha256": "a4bd43dbc281d10753a53dcbabb78a63479e16dedfc72eb412c01dd5a82ce229",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 07_41_37 PM.png",
+    "bytes": 1853166,
+    "sha256": "13f4f7e1ee6438e9b93dabf00617beb6905ba9d664ce13ac0b9a4eb642f40a3a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 08_51_05 PM.png",
+    "bytes": 2483262,
+    "sha256": "838ad060449aa146505285213fc334fdfbd850df1ef3e4e40716458d75d2514a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 08_51_07 PM.png",
+    "bytes": 1853488,
+    "sha256": "9f2b9d7fc7b8016027b6a25c6164ca295e74a87293ab3f8e295ea4a10cc36a04",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 08_51_11 PM.png",
+    "bytes": 1927771,
+    "sha256": "518a8a5448ec83fac690446cd7c090687b0c18d59934089d49f2c146df560ccb",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 09_36_28 PM.png",
+    "bytes": 1493946,
+    "sha256": "a690c3622e760fd31cbf71461ad879c973173946fd2197d3bbe4b6500f2c0dd5",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 09_37_28 PM.png",
+    "bytes": 1961175,
+    "sha256": "2dbdf1e892cfe23d0923a9c665b067b080de481a7508ba1e2ad9f8b4bc61f438",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 4, 2026, 09_39_16 PM.png",
+    "bytes": 1458930,
+    "sha256": "4ad8c37e8e687d8668ff2b1039ba8b7ed66ee19c61f89f4f2237cbd2ac9caf25",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 05_28_08 PM.png",
+    "bytes": 1495842,
+    "sha256": "47c359273cfb6f2ec38eb626837f1097e341c76137a34bc58e8681e16ca04421",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 05_33_23 PM.png",
+    "bytes": 1961175,
+    "sha256": "2dbdf1e892cfe23d0923a9c665b067b080de481a7508ba1e2ad9f8b4bc61f438",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 10_56_53 PM.png",
+    "bytes": 2483262,
+    "sha256": "838ad060449aa146505285213fc334fdfbd850df1ef3e4e40716458d75d2514a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 10_56_55 PM.png",
+    "bytes": 1853488,
+    "sha256": "9f2b9d7fc7b8016027b6a25c6164ca295e74a87293ab3f8e295ea4a10cc36a04",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 10_56_59 PM.png",
+    "bytes": 1927771,
+    "sha256": "518a8a5448ec83fac690446cd7c090687b0c18d59934089d49f2c146df560ccb",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 10_57_06 PM.png",
+    "bytes": 2552032,
+    "sha256": "321118462f0dfd5f841339879019d7c032b99f069278c3c7adcd81d8dfc9c5f8",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 10_57_12 PM.png",
+    "bytes": 1939876,
+    "sha256": "a4bd43dbc281d10753a53dcbabb78a63479e16dedfc72eb412c01dd5a82ce229",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 11_51_15 PM.png",
+    "bytes": 1799246,
+    "sha256": "008c6dc467f56e4f9478c513e8b29e7f0cc27ecc172f5d02314c7d39f64d5803",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 11_53_08 PM.png",
+    "bytes": 2378840,
+    "sha256": "23eef7e23b423757d3f1736fceacbcd4ac99e2a1a9a975c6aeb5be805cf1ddcd",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 11_55_24 PM.png",
+    "bytes": 2332350,
+    "sha256": "67db175e82fb86104bdde600c55a66b676c2bd3aac3002b8abaacf052228a94e",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Feb 5, 2026, 11_57_07 PM.png",
+    "bytes": 1704271,
+    "sha256": "61e7b1506fb7e5ae72ed0f065a2339c18103812eb252b01ea0760e4adfbf02ad",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Jan 30, 2026, 06_58_27 PM.png",
+    "bytes": 2122015,
+    "sha256": "c0420a745014570880e20c978ec4840c332f496f3742794d348dc35cf4b2132b",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Jan 30, 2026, 07_11_39 PM.png",
+    "bytes": 2151636,
+    "sha256": "0fae8abeede7db52a7b80dd14dc17a7ae0bbfdc1f4c62835f3bbbcd7c23bf0f1",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/ChatGPT Image Jan 30, 2026, 08_48_42 PM.png",
+    "bytes": 1728714,
+    "sha256": "ec02bd0f7f38102ab9c9faf7ff3333b4461dfc78f98c3435db4d6b23d4d53159",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/chora-avatar-face.png",
+    "bytes": 400394,
+    "sha256": "87f417b187dc97ff50a9cd180573fe5d9c1868cfb1014ee5e494c46b40f89aee",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/chora-avatar-logo.png",
+    "bytes": 388781,
+    "sha256": "b0210ccbc9c68dfbe59c6b30f9aa31c028edb3b3e84bd0544c7d4747e0d8cf66",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/chora-banner-text.png",
+    "bytes": 534554,
+    "sha256": "94818ca6b1c789866b60ff093f9785d06b6c5cd5c854b2817b5c5849d97a574d",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/mux-avatar-face.png",
+    "bytes": 398194,
+    "sha256": "7554798ca6282262b3604d2afcd2757dc1bc00fc6fdedce7bbba173e1ab6c972",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/mux-avatar-logo.png",
+    "bytes": 356369,
+    "sha256": "ac3eee37680e474bd4ab21e98732f3cb2c40c4b79a1ae401a148e5e9a0fa07b9",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/mux-banner-text.png",
+    "bytes": 478424,
+    "sha256": "7647d7df53366438a28082dfbe0192cf8d4a1c1acd6850a5e7994360247e8a69",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/mux-telegram.png",
+    "bytes": 344099,
+    "sha256": "c9586d05e2f681f3b75cddd0328afc3e3fb29905b0372819a0e62d2732a368f1",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/praxis-avatar-face.png",
+    "bytes": 502488,
+    "sha256": "8d64241db3f241df61743fec2b834dfb433d4e507ef167fdae50669fe24080ab",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/praxis-avatar-logo.png",
+    "bytes": 475336,
+    "sha256": "d6ff35c50ba7fe54967388248c0265beedbb98f3cf738b6637d40fb1ca59c151",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/praxis-banner-text.png",
+    "bytes": 653648,
+    "sha256": "1f87ec363fba63e9a843292e37aa7e46bd65a2909fac9b9c6cbe1f420b9ae6f2",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/subrosa-avatar-face.png",
+    "bytes": 455053,
+    "sha256": "5a861b7b12066d04c02a1915f6df939608b6ddcf9d94d541ad3221c527af8011",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/subrosa-avatar-logo.png",
+    "bytes": 431472,
+    "sha256": "8fc48b58f0610b989916d750ad4751acfb910a1ac5230e3ff0191aa93305689a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/subrosa-banner-logo.png",
+    "bytes": 655048,
+    "sha256": "602fcc1223b566c0f0f761b80744f457d375fc910e04e9b51dd252fb3c9a91f8",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/subrosa-banner-text.png",
+    "bytes": 609656,
+    "sha256": "edfd8538e247f452b17d5234ea36f4fcf62a5c1e8895e474d845f0d931968a3a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/thaum-avatar-face.png",
+    "bytes": 469244,
+    "sha256": "0635f1a432eba63a0f0190a7e700aa090573e035a90a2faef81a9506598ddada",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/thaum-avatar-logo.png",
+    "bytes": 489027,
+    "sha256": "e53a18efdaefbb7e41c07e5fb5eb9f6e82df0953b1844c9a63664cee84f11924",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/agents/thaum-banner-text.png",
+    "bytes": 664223,
+    "sha256": "c298e01729c4a42ff7e556a6268f303f44335ed912c1d75cabcfebb0e32a9234",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult_seal.svg",
+    "bytes": 567,
+    "sha256": "14c789a1f1f7237292367680a368db3c36d627269cf464b518410c33e6ec8edd",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult_sigil_broadcast.png",
+    "bytes": 10992,
+    "sha256": "fa8dcb1a2706a404a58b54ba076fd14dafc6beb0be1a23597517327720fe6315",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult_sigil_master.png",
+    "bytes": 10881,
+    "sha256": "d7ebe23bdffd36be5ccfc6818e5ec4062370f50ff1cad5d58a46514ca6ae61bc",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult_sigil_master.svg",
+    "bytes": 671,
+    "sha256": "9cc77d8dbe42e8b1477f46f70c8ecb56e5761a8553d6d41a97fdd27e251e6d98",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-glyph.png",
+    "bytes": 183083,
+    "sha256": "deaa5c3d70b8891e9bfc7ea64e737dc3be4f990ce6a8d39a0df70afb55def471",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-wordmark.png",
+    "bytes": 127770,
+    "sha256": "c838e2926c213a62c90d07075bd34fa07d05ffba9120898f62e9d8388a091f06",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/mothman.png",
+    "bytes": 278916,
+    "sha256": "9e2bc8f23e15f300ebab072f99431fb12c302dfb643ab848955fcb0fb6273209",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/sigil1.png",
+    "bytes": 409856,
+    "sha256": "f0290ef1a95adf43ffbb9b4da69b31ed284a62da52d266e1141c36668d78a381",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/sigil2.png",
+    "bytes": 2005660,
+    "sha256": "1896b0f324d607526e19d60730228878520e0fd20d2d16b22be64f6fe85c8bfb",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/sigil3.png",
+    "bytes": 2139571,
+    "sha256": "9adb4926bfc481285a7a19470de80e7b768af0bdc636dfee7eaa9276e8959ab3",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/sigil3scaled.png",
+    "bytes": 494821,
+    "sha256": "270ace75c9f0d3fe6b027db970c00fed48f884a3f27d3949698073700bdc86ec",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/terminal.png",
+    "bytes": 123083,
+    "sha256": "c0173dbc783a73ae9cd512c4f671db88efd651b4670f8c25dbdbebd741c668fd",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/alert_box.png",
+    "bytes": 1271468,
+    "sha256": "78f1c09f779fd3a0b4bc027eb3ef449595b3a88e721f71790b9087b96ed33057",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/stream_frame.png",
+    "bytes": 1685936,
+    "sha256": "b59932b72d71dbe24a9da14b94b0f27f13adf8471f16f9db0ff1ce6fa3361cee",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/ChatGPT Image Apr 28, 2026, 09_00_44 PM.png",
+    "bytes": 2155700,
+    "sha256": "2b9bae744a5837f5a126090f9100e6d4295cbb921742b011ffc47fd66ec7217f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/ChatGPT Image Apr 28, 2026, 09_06_44 PM.png",
+    "bytes": 1703101,
+    "sha256": "9dccc23775c806fd0428420507c1c0b93f28066967e50522464a3b97d8117b0f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/ChatGPT Image Apr 28, 2026, 09_10_03 PM.svg",
+    "bytes": 884510,
+    "sha256": "08477ec0bf5ce32a9bc706598324b4627095a7cbc229066f4e1d68736813f50e",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/og-image.png",
+    "bytes": 34802,
+    "sha256": "a5326096369a423ea7fe7cf57e438b0388566dc23ef8caec524dcfe621a74d61",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/sigil-logo-trans.png",
+    "bytes": 1703101,
+    "sha256": "9dccc23775c806fd0428420507c1c0b93f28066967e50522464a3b97d8117b0f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/sigil-transparent.png",
+    "bytes": 1314222,
+    "sha256": "8b14e648ab221cd55e32cb4193fa1434c16fa2c4354665e0ef4aace1ffd5a4b9",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/solid-sigil.png",
+    "bytes": 1719975,
+    "sha256": "006550080f58ee276e4445e47a6cb6751934749519bc3a6e77eed76c49119a53",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/solid-sigil.xcf",
+    "bytes": 290999,
+    "sha256": "0cc6e8fb9418ebdec89562df1184f21ae0be328cde341c326e00c0327c3d46cf",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/solid-sigil (2).png",
+    "bytes": 100939,
+    "sha256": "7ce512eefbb25511d28598fcf3050eab3e7a9562c9ea74d48ad1e6a606d583df",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/stock-vector-bold-modern-font-crafted-for-impactful-headlines-clean-sleek-and-precise-for-contemporary-modern-2392520229.jpg",
+    "bytes": 101380,
+    "sha256": "829ccbbf882d865514736a440b5119c32bc8bfe66aca83716bb916b8feab2014",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcorp-banner.png",
+    "bytes": 196309,
+    "sha256": "342700babb97f1499e98b7d563f19f7d1e958c6377af4715c92c666abdf8a2f9",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-avatar-logo.png",
+    "bytes": 450037,
+    "sha256": "031f35548d3dbe702a2c3abe8daedd2d322ff241cd003682a434a4d6225d532f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-avatar-logo-text.png",
+    "bytes": 482061,
+    "sha256": "f58b40c7dad7d63773b3e55c834641dc25a9c5afaf88637400dafccec7af442f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-banner-text.png",
+    "bytes": 601317,
+    "sha256": "ccb9134e3da80c32ac69942f09763991a39a264dede6ccf0b69a9e3ec294f36f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-wordmark (2).png",
+    "bytes": 38106,
+    "sha256": "50552b6e72f7d35ecdd725a3915b630d7dff15c18599ce1732f4c86cdc8c18fc",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/bumps/subcult-collage.mp4",
+    "bytes": 78530875,
+    "sha256": "1e67c1d241ad026563e728e794777c9f2aadfd4e43d9bff3fa16347c638451a5",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/bumps/subcult-cross.mp4",
+    "bytes": 2705637,
+    "sha256": "50d81f1d4397246f86c08b542097647301fad1a2e5207ba598538a8b463d20f2",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/bumps/subcult-cross-shadow.mp4",
+    "bytes": 2713973,
+    "sha256": "982e7ddc6aaf84a2d00003babb3ac27f4558b3fe4346d1843709586e30e06908",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/bumps/subcult-ferris.mp4",
+    "bytes": 30401476,
+    "sha256": "4384611bae75111295a7acf053e16983fec426371959aa4d48e2fce3aae04e9a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/bumps/subcult-top-secret.mp4",
+    "bytes": 9732637,
+    "sha256": "8c13ffde07d29c0491cd7a5d56738b3e443ae35e93d05f92ca16604e3f41e67a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/bumps/subcult-ufo.mp4",
+    "bytes": 39192753,
+    "sha256": "7afef192b4f555c665a81e5e2683da3937d9acb4f1328754cd7932219102f5a4",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/bumps/top-secret.mp4",
+    "bytes": 9237078,
+    "sha256": "fdf48d1244baa0bcc96ea69bb6d918f5f4baa89c20193ac0b395b543b4301a8f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/bumps/UFO.mp4",
+    "bytes": 3406639,
+    "sha256": "ec9fff988f9e535443d0cc2e9aad3fa616dcf140be03112d5d1f1655f6691da4",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/docs/one-sheet-subcult.md",
+    "bytes": 4924,
+    "sha256": "cb826ca23ba3a4cc6fd76e68ce3f426d880b5cf938d8268e0d00592bfacd776a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/docs/one-sheet-subcult (1).md",
+    "bytes": 4924,
+    "sha256": "cb826ca23ba3a4cc6fd76e68ce3f426d880b5cf938d8268e0d00592bfacd776a",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/docs/Subcult_Aesthetic_Guide.md",
+    "bytes": 4152,
+    "sha256": "a5255f0391753443f97447b7a084c3d96b335fdf912ca9b63c49fb0936eb44ff",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/docs/Subcult_Brand_Manual_v1.pdf",
+    "bytes": 4184,
+    "sha256": "65cb381774b6225bebe2968fe08e6423e16bb9056db789f1765f12115215358f",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/docs/Subcult-Cast-Packet-Wordy.pdf",
+    "bytes": 17757,
+    "sha256": "ca98031de54fa054d1d169d843274ac41f352078479074a092bec100ed87f77c",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/docs/Subcult Ops \u2014 Transcript.pdf",
+    "bytes": 154352,
+    "sha256": "6ea57b635db27851f338bf1085f36b69ae872fe8417cd67849ad62b49e31b517",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/docs/subcvlt_network_manifest.md",
+    "bytes": 7167,
+    "sha256": "a076eec97b364ea5076af3c567c6f333b8a1dbb08fc6b9974ef1ea6d3aceb8b2",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-visual-starter-kit-v7/icons/mothman.png",
+    "bytes": 278916,
+    "sha256": "9e2bc8f23e15f300ebab072f99431fb12c302dfb643ab848955fcb0fb6273209",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-visual-starter-kit-v7/icons/sigil1.png",
+    "bytes": 409856,
+    "sha256": "f0290ef1a95adf43ffbb9b4da69b31ed284a62da52d266e1141c36668d78a381",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-visual-starter-kit-v7/icons/sigil2.png",
+    "bytes": 2005660,
+    "sha256": "1896b0f324d607526e19d60730228878520e0fd20d2d16b22be64f6fe85c8bfb",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-visual-starter-kit-v7/icons/sigil3.png",
+    "bytes": 2139571,
+    "sha256": "9adb4926bfc481285a7a19470de80e7b768af0bdc636dfee7eaa9276e8959ab3",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-visual-starter-kit-v7/icons/terminal.png",
+    "bytes": 123083,
+    "sha256": "c0173dbc783a73ae9cd512c4f671db88efd651b4670f8c25dbdbebd741c668fd",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-visual-starter-kit-v7/logos/subcult-glyph.png",
+    "bytes": 183083,
+    "sha256": "deaa5c3d70b8891e9bfc7ea64e737dc3be4f990ce6a8d39a0df70afb55def471",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "subcult/assets/subcult-visual-starter-kit-v7/logos/subcult-wordmark.png",
+    "bytes": 127770,
+    "sha256": "c838e2926c213a62c90d07075bd34fa07d05ffba9120898f62e9d8388a091f06",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/screenshots/augr-after-loop-07.png",
+    "bytes": 347390,
+    "sha256": "0d66caf8452f9d824e23c0ebf6ec312a47f23ef9011b0bb75e0f3ef12f90e9ee",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/screenshots/augr-automation-03.png",
+    "bytes": 302393,
+    "sha256": "3aa6b568c9d8c18cc7ab6d66a9f026ff56b9a31d9f07f227b66085b2a6fe411b",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/screenshots/augr-dashboard-00.png",
+    "bytes": 347338,
+    "sha256": "ac1788fff695d0b2d8d5ea160a20efc6c7e1e443f5d9e01100f9c610b304e439",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/screenshots/augr-orders-05.png",
+    "bytes": 246531,
+    "sha256": "e26f12506a6e77c1cdea7133ff4932d5a2d07bfff1f12e4afd64c4610c99dbc4",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/screenshots/augr-portfolio-01.png",
+    "bytes": 226848,
+    "sha256": "4d54229e0edd138b089469b5164820fe1454a73510db20003e26adf5a60b1595",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/screenshots/augr-risk-02.png",
+    "bytes": 236739,
+    "sha256": "ab41ad3a5f4c58b574e3220e7e314a5fe5eab7de989ff56a811e4f0356f966b3",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/screenshots/augr-runs-04.png",
+    "bytes": 330888,
+    "sha256": "d15f00155c0558d3b24ee38451e3385f5cd990fe8f1fe27874905593558b1a1c",
+    "review": "Reference only; not selected for this review"
+  },
+  {
+    "path": "augr/screenshots/augr-trades-06.png",
+    "bytes": 346732,
+    "sha256": "9c4ca6e0854a30cac56258b5f4d2707a3a7568c99d52e7832f2362430cd50b99",
+    "review": "Reference only; not selected for this review"
+  }
+]

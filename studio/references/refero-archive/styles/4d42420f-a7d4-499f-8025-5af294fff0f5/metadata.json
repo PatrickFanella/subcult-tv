@@ -1,0 +1,29 @@
+{
+  "styleId": "4d42420f-a7d4-499f-8025-5af294fff0f5",
+  "sourceUrl": "https://styles.refero.design/style/4d42420f-a7d4-499f-8025-5af294fff0f5",
+  "fetchedAt": "2026-10-02T21:19:11.297392+00:00",
+  "extractedAt": "2026-10-02T21:19:11.347240+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "High Protein — Style Reference",
+  "htmlSha256": "1b5d01b1cb88710cee91f759272c10b835d5735b210df4c6a9a4911b038a1a7a",
+  "cache": ".cache/4d42420f-a7d4-499f-8025-5af294fff0f5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9bfe8fb519c8eb9ecbd65543ef035be7d6d52614300a58860f88038ca2260fc0",
+      "bytes": 23367,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ee91fc80-2847-419b-abb4-0eb03f9c78dd.jpg",
+    "fetchedAt": "2026-10-02T21:26:18.046858+00:00",
+    "sha256": "41ed18bf3c4eca93745405ec82e73e2326e88191b1edcdcad9bb6184dec065ae",
+    "bytes": 254700,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

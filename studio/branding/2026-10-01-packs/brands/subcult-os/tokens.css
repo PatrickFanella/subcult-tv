@@ -1,0 +1,10 @@
+:root {
+  --brand-bg: #000000;
+  --brand-fg: #ffffff;
+  --brand-accent: #7c3aed;
+  --brand-secondary: #00ffff;
+  --brand-safe-label: #00ffff;
+  --font-display: "Space Mono";
+  --font-body: "Space Mono";
+  --font-label: "Space Mono";
+}

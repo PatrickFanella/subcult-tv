@@ -1,0 +1,29 @@
+{
+  "styleId": "8875b14e-c59a-492f-8780-8027a480f21c",
+  "sourceUrl": "https://styles.refero.design/style/8875b14e-c59a-492f-8780-8027a480f21c",
+  "fetchedAt": "2026-10-02T21:33:37.998511+00:00",
+  "extractedAt": "2026-10-02T21:33:38.023827+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vivid+Co — Style Reference",
+  "htmlSha256": "af89851091b00662f088fe9836adbe29dd2e75dec5af7b4c2deb00fe2c893dc7",
+  "cache": ".cache/8875b14e-c59a-492f-8780-8027a480f21c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bd6223e56fb8e687187b635b94f2ac47c49793b8547900af78647320365d3155",
+      "bytes": 18055,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6b5cfb90-537c-42fd-8864-fc215967b690.jpg",
+    "fetchedAt": "2026-10-02T21:33:40.022927+00:00",
+    "sha256": "0571e8d657c3fe78d3df73f6da28368dde26e836617b4a7797b545d241fbfae8",
+    "bytes": 79926,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

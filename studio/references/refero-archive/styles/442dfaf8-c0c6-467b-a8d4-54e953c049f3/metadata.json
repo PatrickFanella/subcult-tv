@@ -1,0 +1,29 @@
+{
+  "styleId": "442dfaf8-c0c6-467b-a8d4-54e953c049f3",
+  "sourceUrl": "https://styles.refero.design/style/442dfaf8-c0c6-467b-a8d4-54e953c049f3",
+  "fetchedAt": "2026-10-02T21:39:30.047304+00:00",
+  "extractedAt": "2026-10-02T21:39:30.080707+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "CHAIBOY — Style Reference",
+  "htmlSha256": "5bd816210480452082355d12af5b9c0bcc0c7826a8dd7102d012b4981dedf4b4",
+  "cache": ".cache/442dfaf8-c0c6-467b-a8d4-54e953c049f3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ba45466433c9c5faedcb7d389c34f01ae7aa68bd2efa9945551f25938f0765f7",
+      "bytes": 16313,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4ec64977-0a58-4a91-a773-77bbf6fa974e.jpg",
+    "fetchedAt": "2026-10-02T21:39:31.999491+00:00",
+    "sha256": "b28316b643ce35da933308138a96995840d50f6998a8e666b569946b92bafdbf",
+    "bytes": 57687,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

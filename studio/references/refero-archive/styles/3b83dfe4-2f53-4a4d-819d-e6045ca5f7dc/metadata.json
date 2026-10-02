@@ -1,0 +1,29 @@
+{
+  "styleId": "3b83dfe4-2f53-4a4d-819d-e6045ca5f7dc",
+  "sourceUrl": "https://styles.refero.design/style/3b83dfe4-2f53-4a4d-819d-e6045ca5f7dc",
+  "fetchedAt": "2026-10-02T21:33:50.026014+00:00",
+  "extractedAt": "2026-10-02T21:33:50.053814+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "xAI — Style Reference",
+  "htmlSha256": "d0977403e9fa567ba53e1d428801e73bda680d8fc0784444cba0233ff6ac8963",
+  "cache": ".cache/3b83dfe4-2f53-4a4d-819d-e6045ca5f7dc.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e23644125112d0d62b1b5ad61f02ad235d00a5348cdf06a162217f1a54b244f8",
+      "bytes": 22826,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a55953ac-b3cb-476c-bff4-199403160bae.jpg",
+    "fetchedAt": "2026-10-02T21:33:52.072046+00:00",
+    "sha256": "5686c4a21fa2b6f3d5141b29627e14e18184d7f0d6393a76c7f13eabce950866",
+    "bytes": 87623,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

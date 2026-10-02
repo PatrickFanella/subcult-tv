@@ -1,0 +1,29 @@
+{
+  "styleId": "31903c2b-99bf-4fa8-8c92-238858f3563c",
+  "sourceUrl": "https://styles.refero.design/style/31903c2b-99bf-4fa8-8c92-238858f3563c",
+  "fetchedAt": "2026-10-02T21:52:18.356001+00:00",
+  "extractedAt": "2026-10-02T21:52:18.427206+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Walden — Style Reference",
+  "htmlSha256": "9153d0ad70cb208e49e0b06caa501c55fe2749e31281fcfbc36b76f49380dd07",
+  "cache": ".cache/31903c2b-99bf-4fa8-8c92-238858f3563c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9dc50347099fef42cd6620b4bea31ab7eb8c001e29bf9d270981472ab8bac2e6",
+      "bytes": 19414,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9300de65-0019-4e40-bb0d-289061a45ece.jpg",
+    "fetchedAt": "2026-10-02T21:52:20.249487+00:00",
+    "sha256": "57e8b70ad29a6b12ae3b7e3f823241ec3435140097d497091c3619d2558fc232",
+    "bytes": 236746,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

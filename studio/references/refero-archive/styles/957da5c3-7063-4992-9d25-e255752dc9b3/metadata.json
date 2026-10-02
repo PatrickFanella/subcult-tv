@@ -1,0 +1,29 @@
+{
+  "styleId": "957da5c3-7063-4992-9d25-e255752dc9b3",
+  "sourceUrl": "https://styles.refero.design/style/957da5c3-7063-4992-9d25-e255752dc9b3",
+  "fetchedAt": "2026-10-02T21:50:09.585914+00:00",
+  "extractedAt": "2026-10-02T21:50:09.636666+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fidèle Editions — Style Reference",
+  "htmlSha256": "25f27ef03be17915957a53a988effdaefce6cb7bebbfc7ef9f1547635b7808a3",
+  "cache": ".cache/957da5c3-7063-4992-9d25-e255752dc9b3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d938951205057252d8ac38b374985af6aa3549f1aa105feed052d81164b76c4b",
+      "bytes": 21307,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2f0a7a7e-5a5e-4104-90d9-847618654ba8.jpg",
+    "fetchedAt": "2026-10-02T21:50:11.545806+00:00",
+    "sha256": "7efff2389cd93c815088012172a7c532ac4891e1d6d5e543c1262f1ee096aea8",
+    "bytes": 142179,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

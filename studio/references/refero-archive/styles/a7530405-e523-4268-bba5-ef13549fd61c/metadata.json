@@ -1,0 +1,29 @@
+{
+  "styleId": "a7530405-e523-4268-bba5-ef13549fd61c",
+  "sourceUrl": "https://styles.refero.design/style/a7530405-e523-4268-bba5-ef13549fd61c",
+  "fetchedAt": "2026-10-02T21:59:38.527819+00:00",
+  "extractedAt": "2026-10-02T21:59:38.576960+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Datalands — Style Reference",
+  "htmlSha256": "1fde8e949ef5b926d2e0b94c1e89a7b6f046b8faddcc02591ed68d67f4e673e4",
+  "cache": ".cache/a7530405-e523-4268-bba5-ef13549fd61c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "92501541d83091cfedff686edd928555c8192fb1795586321402513e1de11d41",
+      "bytes": 25679,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f176976c-2a20-403f-9e2e-3448c1195802.jpg",
+    "fetchedAt": "2026-10-02T21:59:40.156931+00:00",
+    "sha256": "c2fecbfb5d1e52dddf153ef2ac95f773e2d2d1dc690f2a1343229b1285f5205a",
+    "bytes": 66990,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

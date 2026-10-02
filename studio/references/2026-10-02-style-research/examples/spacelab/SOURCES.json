@@ -1,0 +1,13 @@
+{
+  "id": "spacelab",
+  "category": "Swiss",
+  "name": "Spacelab",
+  "refero": "https://styles.refero.design/style/7fdcf5eb-4d65-49a2-b887-60119bca4edc",
+  "live": "https://spacelab.co.uk/",
+  "referenceImage": "https://images.refero.design/styles/refero.design/image/195e5250-9b68-4030-9bdd-eebc1cbf5c29.jpg",
+  "fetchedDate": "2026-10-02",
+  "referenceImageCaptureDate": "unknown",
+  "evidence": "Refero-supplied screenshot visually reviewed; interpreted source summary reviewed",
+  "liveStyleObservation": true,
+  "newLiveScreenshot": false
+}

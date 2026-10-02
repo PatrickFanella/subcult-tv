@@ -1,0 +1,29 @@
+{
+  "styleId": "fbc60c55-da20-4684-a279-0ed86590272e",
+  "sourceUrl": "https://styles.refero.design/style/fbc60c55-da20-4684-a279-0ed86590272e",
+  "fetchedAt": "2026-10-02T21:30:30.007264+00:00",
+  "extractedAt": "2026-10-02T21:30:30.038913+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Contractbook — Style Reference",
+  "htmlSha256": "fb3dd324f961fe3e12627f6f94a63bf856a461aa497861acf168d8380976d98f",
+  "cache": ".cache/fbc60c55-da20-4684-a279-0ed86590272e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "59e8ffce567021dc996d6d2fb914dfa89cc93a9bf920ecad8a0c365d745bdcfe",
+      "bytes": 20873,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4fa9af5b-eb72-4dd7-aaf6-6cae62c387b1.jpg",
+    "fetchedAt": "2026-10-02T21:30:32.082410+00:00",
+    "sha256": "bcdd36dd297ab4d8d01075c2fa229ad5e87efe75f1b777cac26fd72b02c516a0",
+    "bytes": 123395,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

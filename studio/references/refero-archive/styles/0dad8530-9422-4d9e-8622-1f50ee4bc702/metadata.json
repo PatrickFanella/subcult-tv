@@ -1,0 +1,29 @@
+{
+  "styleId": "0dad8530-9422-4d9e-8622-1f50ee4bc702",
+  "sourceUrl": "https://styles.refero.design/style/0dad8530-9422-4d9e-8622-1f50ee4bc702",
+  "fetchedAt": "2026-10-02T21:37:10.052899+00:00",
+  "extractedAt": "2026-10-02T21:37:10.100396+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Klim — Style Reference",
+  "htmlSha256": "bf3173ee372da1a1eb247fde62bc3f42f6f2136ad8b5a9d271a3be3de5cb7045",
+  "cache": ".cache/0dad8530-9422-4d9e-8622-1f50ee4bc702.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "96424684b8ac559ea3704e160a32b114a3c0c262cb4495cc115fd1d4989f7ef2",
+      "bytes": 20257,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b3caeb1e-041d-4fe9-83a4-d64e379c650c.jpg",
+    "fetchedAt": "2026-10-02T21:37:12.089556+00:00",
+    "sha256": "085ade937280ebc770b7576b807cc74d1f93b6b7b93892f8891c2f2d5ddfccd1",
+    "bytes": 90021,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

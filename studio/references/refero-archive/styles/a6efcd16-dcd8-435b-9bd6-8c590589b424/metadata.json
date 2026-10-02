@@ -1,0 +1,29 @@
+{
+  "styleId": "a6efcd16-dcd8-435b-9bd6-8c590589b424",
+  "sourceUrl": "https://styles.refero.design/style/a6efcd16-dcd8-435b-9bd6-8c590589b424",
+  "fetchedAt": "2026-10-02T21:29:22.264654+00:00",
+  "extractedAt": "2026-10-02T21:29:22.310627+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Zellerfeld — Style Reference",
+  "htmlSha256": "dbbe991efeb4a9a04105fe1c9aafaf9088d87265bb969bc5553bb06a932e20fe",
+  "cache": ".cache/a6efcd16-dcd8-435b-9bd6-8c590589b424.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5e2886089a7a79d9b1ec1ddea6485f4854298747ee63a9cd3a78a0328512c390",
+      "bytes": 21414,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f851754d-03a1-4a86-b885-2c43c3914caf.jpg",
+    "fetchedAt": "2026-10-02T21:29:24.070445+00:00",
+    "sha256": "fac15a0771d840142ed52af4e6bc437f421a8b7c8370002ba9afc4cea731273d",
+    "bytes": 108395,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

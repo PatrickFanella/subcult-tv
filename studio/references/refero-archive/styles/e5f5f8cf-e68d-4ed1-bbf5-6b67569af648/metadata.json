@@ -1,0 +1,29 @@
+{
+  "styleId": "e5f5f8cf-e68d-4ed1-bbf5-6b67569af648",
+  "sourceUrl": "https://styles.refero.design/style/e5f5f8cf-e68d-4ed1-bbf5-6b67569af648",
+  "fetchedAt": "2026-10-02T21:35:29.996284+00:00",
+  "extractedAt": "2026-10-02T21:35:30.033970+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Your workplace has the answer. Just ask Dala for it. — Style Reference",
+  "htmlSha256": "f48b72fbfb7104f37c7fe897f8324122b2d56ad7a4ee9d474f17a41b0c154285",
+  "cache": ".cache/e5f5f8cf-e68d-4ed1-bbf5-6b67569af648.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "108d1fc9cb388c76a9993062f93ab888ee50572eb8503129d1ca69dc8d6b5b08",
+      "bytes": 19756,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/59d150a6-2378-48fd-94b5-b5e103569bc7.jpg",
+    "fetchedAt": "2026-10-02T21:35:32.016637+00:00",
+    "sha256": "e4e158753b30f1f6de26b860c11edc8c5f31b554ac97dbc99649750980028fe3",
+    "bytes": 273790,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

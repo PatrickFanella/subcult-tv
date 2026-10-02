@@ -1,0 +1,6 @@
+/* Observed values, not canonical brand roles. See DESIGN.md and tokens.json. */
+:root {
+  --observed-color-01: rgb(237, 236, 236);
+  --observed-color-02: rgb(20, 18, 11);
+  --observed-font-01: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,70 @@
+{
+  "site": "bamco",
+  "source": "https://www.bamco.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:18:05.327Z",
+      "url": "https://www.bamco.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:26:31.257Z",
+      "url": "https://www.bamco.com/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "e7f1014bca5f6c600a28e83768afe3deb0caf5ccdbd2811faf23efc56bf38efe",
+      "bytes": 5045
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "22beb6a534dd26b726def1d6a172096597a7eb24174a54a5939d27cabc067324",
+      "bytes": 1150
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "19c5fc57461207aff16fcbcba967e7c1afd6b252c5a4d3d6b72ac36260cbdf3f",
+      "bytes": 55948
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "c89ea429af6039e52007d17b8ced53633bf6dd47ea27041b9011ce1ed7b70d01",
+      "bytes": 55548
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "bc664cbb40ce0c528f35451b44495cc4f65e9313f35fe33e7967f549f9fffb4b",
+      "bytes": 179831
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "19638d797df6498dcd31bc91363bcf0535f10b32f48a24909de45179f3ccc94f",
+      "bytes": 266
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "91f9bd0199289995bdf874d7d93cf80bfc551f2f0e313d519265d4967c892e6d",
+      "bytes": 13437
+    }
+  ]
+}

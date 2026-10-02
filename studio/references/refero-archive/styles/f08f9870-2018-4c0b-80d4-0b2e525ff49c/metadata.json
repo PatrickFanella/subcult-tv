@@ -1,0 +1,29 @@
+{
+  "styleId": "f08f9870-2018-4c0b-80d4-0b2e525ff49c",
+  "sourceUrl": "https://styles.refero.design/style/f08f9870-2018-4c0b-80d4-0b2e525ff49c",
+  "fetchedAt": "2026-10-02T21:58:26.168767+00:00",
+  "extractedAt": "2026-10-02T21:58:26.203729+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Join Parker — Style Reference",
+  "htmlSha256": "495560c2e67e45dfbfda6015b1a88f4877d9c8412bd160abd8457478139a362c",
+  "cache": ".cache/f08f9870-2018-4c0b-80d4-0b2e525ff49c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ebbcae5317408cdad5604a6f72df4da874680393ee44ca77c301d0c60efcf584",
+      "bytes": 21134,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e794a635-977e-4259-80d5-47cfdc95bb4d.jpg",
+    "fetchedAt": "2026-10-02T21:58:28.244636+00:00",
+    "sha256": "21694126e990f24cb3596bcdb911e4f880a4cb2c950ac6d3dca884b14d822518",
+    "bytes": 116398,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

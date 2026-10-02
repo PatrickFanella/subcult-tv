@@ -1,0 +1,29 @@
+{
+  "styleId": "d3289fe7-a85e-42d8-96b7-eb7faa62a104",
+  "sourceUrl": "https://styles.refero.design/style/d3289fe7-a85e-42d8-96b7-eb7faa62a104",
+  "fetchedAt": "2026-10-02T21:33:33.986951+00:00",
+  "extractedAt": "2026-10-02T21:33:34.016733+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Air — Style Reference",
+  "htmlSha256": "a5cb22a92fe3d1679eeade4381a8e5a2d3f297a15afd1be976dd2864200dccae",
+  "cache": ".cache/d3289fe7-a85e-42d8-96b7-eb7faa62a104.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c0a879346452999762c4a622314df2a2212b917380b9c11759e6f8c54caed7a8",
+      "bytes": 16467,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c598f40b-56bc-4318-8542-6ae4016d7ab1.jpg",
+    "fetchedAt": "2026-10-02T21:33:35.938995+00:00",
+    "sha256": "3aeca17b263b281550cff9d4fd4ab7dcded81392dc41f8838f95c53318e4b921",
+    "bytes": 33602,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

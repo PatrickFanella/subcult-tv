@@ -1,0 +1,29 @@
+{
+  "styleId": "e1f18a7e-5af1-46b3-8f89-bce6c78b80d4",
+  "sourceUrl": "https://styles.refero.design/style/e1f18a7e-5af1-46b3-8f89-bce6c78b80d4",
+  "fetchedAt": "2026-10-02T21:32:03.626983+00:00",
+  "extractedAt": "2026-10-02T21:32:03.648543+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "dope.security — Style Reference",
+  "htmlSha256": "5d4c92333af4d8c6e8558f1aef0e5181f6cfadf85a6b4a81dd991554a19781b8",
+  "cache": ".cache/e1f18a7e-5af1-46b3-8f89-bce6c78b80d4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "40b4be4636600e13ad3d98c918a1b053fb0740f84bcafb08b7729573ff08df58",
+      "bytes": 23510,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/feafb142-af24-46e6-afb6-79ffd120a124.jpg",
+    "fetchedAt": "2026-10-02T21:32:04.030094+00:00",
+    "sha256": "28a4fce3f0f4485f249352030a69440eab38cb7f284c1cced5e083b7b04704df",
+    "bytes": 118201,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

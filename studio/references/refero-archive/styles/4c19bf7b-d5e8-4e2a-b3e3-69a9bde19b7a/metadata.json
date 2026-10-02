@@ -1,0 +1,29 @@
+{
+  "styleId": "4c19bf7b-d5e8-4e2a-b3e3-69a9bde19b7a",
+  "sourceUrl": "https://styles.refero.design/style/4c19bf7b-d5e8-4e2a-b3e3-69a9bde19b7a",
+  "fetchedAt": "2026-10-02T21:51:09.676118+00:00",
+  "extractedAt": "2026-10-02T21:51:09.725711+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Channel Studio — Style Reference",
+  "htmlSha256": "564d5f9041aec536cbed3ea9e616fbf280fa15709709ef3f3aed328f34bcf5e3",
+  "cache": ".cache/4c19bf7b-d5e8-4e2a-b3e3-69a9bde19b7a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c34c72ff939e53a62f08fabe9ecbe02242d18b537a92724fd26e05e7dd56d346",
+      "bytes": 15290,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/17181c35-a203-4510-a3ac-3a943ddc50d5.jpg",
+    "fetchedAt": "2026-10-02T21:51:11.467755+00:00",
+    "sha256": "16c2c91ea6214c9723c3b9d8bc85071941eaa666c0b1105c8e30e47790547a5e",
+    "bytes": 44268,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

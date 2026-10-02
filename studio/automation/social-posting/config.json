@@ -1,0 +1,202 @@
+{
+  "state": "/home/onnwee/.local/state/social-posting",
+  "codex": "/home/onnwee/.local/bin/codex",
+  "model": "gpt-6.1-sol",
+  "sp_command": "/home/onnwee/.local/bin/sp-mcp",
+  "sp_data": "/home/onnwee/.local/share/super-productivity-mcp",
+  "organization_id": "695ca7c0b9aa5378e4b99613",
+  "first_week": "2026-W41",
+  "timezone": "America/Chicago",
+  "cadence": {
+    "patrick": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "times": [
+        "09:11",
+        "16:41"
+      ],
+      "weekly_cap": 14
+    },
+    "subcult": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "times": [
+        "11:22"
+      ],
+      "weekly_cap": 7
+    },
+    "clpr": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "times": [
+        "10:34"
+      ],
+      "weekly_cap": 5
+    }
+  },
+  "switchyard": {
+    "env_file": "/home/onnwee/Work/Tools/switchyard/.env"
+  },
+  "discovery": {
+    "inbox": "/home/onnwee/Work/Subcult/subcult-studio/content/social/Timely Sources.json",
+    "hn_scan_limit": 12,
+    "keywords": [
+      "open source",
+      "open-source",
+      "music",
+      "audio",
+      "video",
+      "archive",
+      "creative",
+      "privacy",
+      "local-first",
+      "Twitch",
+      "Bluesky",
+      "community",
+      "transcript",
+      "independent",
+      "self-host",
+      "left politics",
+      "labor",
+      "labour",
+      "union",
+      "workers",
+      "housing",
+      "tenant",
+      "mutual aid",
+      "public goods",
+      "organizing"
+    ]
+  },
+  "media_library": "media/library",
+  "editorial_guide": "content/social/Posting Best Practices.md",
+  "channels": {
+    "patrick": "6abdd7a8ea19ca0bde3dbbd3",
+    "subcult": "695ca843457dae6a34e18809",
+    "clpr": "697290bb1214300f603edb2d"
+  },
+  "projects": [
+    "_k67HUz0G7703G71hxlne",
+    "8JT8sr32874Xnq7zjH-eR",
+    "8bZ2VVWHV8k9lFaLNxEQy"
+  ],
+  "notes": [
+    "content/social/Social Posting Automation Plan.md",
+    "content/social/Product Claims Register.md",
+    "content/social/SUBCULT Marketing/SUBCULT Social Content Idea Pool.md",
+    "content/patreon/Software Project Patreon Story Bank.md"
+  ],
+  "repositories": [
+    {
+      "product": "clpr",
+      "path": "/home/onnwee/Work/Subcult/clpr",
+      "remote": "origin",
+      "documents": [
+        "README.md",
+        "docs/LAUNCH_FEATURE_INVENTORY.md"
+      ]
+    },
+    {
+      "product": "Patchwork",
+      "path": "/home/onnwee/Work/Subcult/patchwork",
+      "remote": "origin",
+      "documents": [
+        "README.md",
+        "docs/architecture/current-state-matrix.md"
+      ]
+    },
+    {
+      "product": "HasanAra",
+      "path": "/home/onnwee/Work/Subcult/hasanara",
+      "remote": "gitea",
+      "documents": [
+        "README.md"
+      ]
+    },
+    {
+      "product": "Rekolekt",
+      "path": "/home/onnwee/Work/Subcult/transcript-create",
+      "remote": "origin",
+      "documents": [
+        "README.md",
+        "docs/product/passage-sharing.md"
+      ]
+    },
+    {
+      "product": "Subcult OS",
+      "path": "/home/onnwee/Work/Subcult/subcult-os",
+      "remote": "origin",
+      "documents": [
+        "README.md"
+      ]
+    },
+    {
+      "product": "Undertow",
+      "path": "/home/onnwee/.local/share/social-posting/source-cache/undertow",
+      "remote": "origin",
+      "url": "https://git.subcult.tv/subculture-collective/undertow.git",
+      "documents": [
+        "README.md"
+      ]
+    },
+    {
+      "product": "Kork",
+      "path": "/home/onnwee/Work/Subcult/zelda",
+      "remote": "origin",
+      "documents": [
+        "README.md"
+      ]
+    },
+    {
+      "product": "The Common House",
+      "path": "/home/onnwee/Work/Subcult/the-common-house",
+      "remote": "origin",
+      "documents": [
+        "README.md"
+      ]
+    }
+  ],
+  "bluesky": {
+    "delivery": "direct_atproto_planned",
+    "publishing_enabled": false,
+    "accounts": {
+      "patrick": {
+        "handle": "patrick.subcult.tv",
+        "did": "did:plc:ejcntv5r7vlj4nf2tsxijdnh",
+        "state": "identity_verified_auth_pending"
+      },
+      "subcult": {
+        "handle": "subcult.tv",
+        "state": "identity_and_brand_profile_verified_auth_pending",
+        "did": "did:plc:lxw2hm6sbsloliijglqvgj7d"
+      },
+      "clpr": {
+        "handle": "clpr.subcult.tv",
+        "state": "identity_verified_auth_pending",
+        "did": "did:plc:7fggonbgx2l7n3yvvadaeigt",
+        "pds_url": "https://pds.subcult.tv"
+      }
+    }
+  },
+  "content_root": ".",
+  "social_folder": "content/social"
+}

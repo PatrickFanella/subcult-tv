@@ -1,0 +1,29 @@
+{
+  "styleId": "19f92be1-65ac-4432-a82b-0aa1e685d97d",
+  "sourceUrl": "https://styles.refero.design/style/19f92be1-65ac-4432-a82b-0aa1e685d97d",
+  "fetchedAt": "2026-10-02T21:58:42.399766+00:00",
+  "extractedAt": "2026-10-02T21:58:42.444037+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SST — Style Reference",
+  "htmlSha256": "ad0136998079492d35b562ac3496eed25d8f77bdc066b017b238ea990e338ed0",
+  "cache": ".cache/19f92be1-65ac-4432-a82b-0aa1e685d97d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f26ff6e3c3c1695d3d036c7eb0f3e40877d310597ab7a9cdd0706077c77d8556",
+      "bytes": 17540,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/51bdee76-b1c6-4aaa-a039-454582d7e10b.jpg",
+    "fetchedAt": "2026-10-02T21:58:44.182374+00:00",
+    "sha256": "2c500d0733575e3849769d37608268689b2ce44c716fa1e357c42522493e613b",
+    "bytes": 61899,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

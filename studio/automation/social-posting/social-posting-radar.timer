@@ -1,0 +1,13 @@
+[Unit]
+Description=Check timely social material three times daily in Chicago
+
+[Timer]
+OnCalendar=*-*-* 08:45:00 America/Chicago
+OnCalendar=*-*-* 13:45:00 America/Chicago
+OnCalendar=*-*-* 18:15:00 America/Chicago
+Persistent=true
+AccuracySec=1min
+Unit=social-posting-radar.service
+
+[Install]
+WantedBy=timers.target

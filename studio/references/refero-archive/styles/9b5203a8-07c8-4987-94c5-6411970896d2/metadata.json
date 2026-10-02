@@ -1,0 +1,29 @@
+{
+  "styleId": "9b5203a8-07c8-4987-94c5-6411970896d2",
+  "sourceUrl": "https://styles.refero.design/style/9b5203a8-07c8-4987-94c5-6411970896d2",
+  "fetchedAt": "2026-10-02T21:49:53.495649+00:00",
+  "extractedAt": "2026-10-02T21:49:53.542281+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "alet — Style Reference",
+  "htmlSha256": "8da261f389505a661f26b169292a7377ba31f924ebdbd3167724e531217854d6",
+  "cache": ".cache/9b5203a8-07c8-4987-94c5-6411970896d2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "94c43ea81fb9ff38ce2ba109bb2982e1806e4b79f9be9f4b5f562ce32dbd68a5",
+      "bytes": 16681,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1d5074e4-ec13-411d-966d-38b8eeadfbde.jpg",
+    "fetchedAt": "2026-10-02T21:49:55.544442+00:00",
+    "sha256": "a76fa8714462d2c74c544ba8ceb79d56c337aac333eb3a121f3415c3ef672d7c",
+    "bytes": 81968,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}
