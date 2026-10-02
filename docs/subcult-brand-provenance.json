@@ -70,6 +70,21 @@
       "source": "branding/2026-10-01-packs/brands/subcult/fonts/spacegrotesk-OFL.txt",
       "target": "public/brand/subcult/fonts/spacegrotesk-OFL.txt",
       "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
+    },
+    {
+      "source": "branding/2026-10-01-packs/brands/kork/logos/mark-primary.svg",
+      "target": "public/brand/kork-mark.svg",
+      "sha256": "4ea977a2b935796ba1956cbd6a7bf62ff24ba839c07af7cc38f4b5d8b6a469ad"
+    },
+    {
+      "source": "branding/2026-10-01-packs/fonts/ArchivoBlack-Regular.ttf",
+      "target": "public/brand/fonts/archivo-black-400.ttf",
+      "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180"
+    },
+    {
+      "source": "branding/2026-10-01-packs/fonts/archivoblack-OFL.txt",
+      "target": "public/brand/fonts/archivoblack-OFL.txt",
+      "sha256": "3173acd82f8c6159b5b1037b539fcbd4edff68e65c2ea8b9412b5a5ca97b08ff"
     }
   ]
 }
