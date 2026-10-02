@@ -1,3 +1,5 @@
+> Historical Studio migration/review record. For the current repository layout and consumer activation, see [Repository consolidation](../../docs/REPOSITORY-CONSOLIDATION.md). Paths and verification claims below describe their original observation.
+
 # Admin production workspace
 
 The selected SUBCULT Culture / poster press system now styles the companion site's authenticated admin workspace. Purple headers use dark ink, with acid-green actions, paper text and charcoal work surfaces. The site implementation lives in the isolated `studio-admin-posting-dashboard` branch of `subcult-tv`; this Studio worktree's companion checkout is `.companion/subcult-tv/`.

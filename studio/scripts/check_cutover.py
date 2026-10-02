@@ -7,7 +7,10 @@ receipts = json.loads((repo / 'docs/cutover-receipt.json').read_text())
 for item in receipts:
     old = Path(item['old_path'])
     assert old.is_symlink(), old
-    assert old.resolve() == Path(item['authoritative_path']).resolve(), old
+    # The original receipt is historical provenance; resolve its source suffix
+    # against this checkout to verify the new consumer destination.
+    suffix = Path(item['authoritative_path']).relative_to('/home/onnwee/Work/Subcult/subcult-studio')
+    assert old.resolve() == (repo / suffix).resolve(), old
     assert Path(item['recovery_copy']).is_dir(), item['recovery_copy']
 for unit in (repo / 'automation/social-posting').glob('social-posting-*'):
     if unit.suffix in {'.service', '.timer'}:

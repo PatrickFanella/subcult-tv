@@ -7,6 +7,7 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+REPOSITORY_ROOT = ROOT.parent
 PACK = ROOT / "branding/2026-10-01-packs"
 
 
@@ -16,8 +17,8 @@ def digest(path):
 
 def export(destination, site=None, posting_state=None):
     destination = destination.resolve()
-    if destination == ROOT or ROOT in destination.parents and destination.parts[len(ROOT.parts)] != "runtime":
-        raise ValueError("Private exports inside the source tree must be under runtime/")
+    if destination.is_relative_to(REPOSITORY_ROOT) and not destination.is_relative_to(ROOT / "runtime"):
+        raise ValueError("Private exports inside the repository must be under studio/runtime/")
     destination.mkdir(parents=True, exist_ok=True)
     files = {}
 
@@ -101,8 +102,8 @@ def export(destination, site=None, posting_state=None):
             output = site / target
             output.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source, output)
-            provenance.append({"source": str(source.relative_to(ROOT)), "target": target, "sha256": digest(source)})
-        (site / "docs/subcult-brand-provenance.json").write_text(json.dumps({"repository": "subculture-collective/subcult-studio", "files": provenance}, indent=2) + "\n")
+            provenance.append({"source": str(source.relative_to(REPOSITORY_ROOT)), "target": target, "sha256": digest(source)})
+        (site / "docs/subcult-brand-provenance.json").write_text(json.dumps({"repository": "subculture-collective/subcult-tv", "files": provenance}, indent=2) + "\n")
     return catalog
 
 

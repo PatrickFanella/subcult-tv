@@ -89,3 +89,18 @@ db-reset: ## Drop and recreate the database (data loss!)
 clean: ## Remove build artifacts
 	rm -rf dist api/server
 	@echo "✓ Clean."
+
+# Studio production sources share this repository; runtime activation is separate.
+.PHONY: check-studio check-studio-automation studio-export studio-export-left-field
+
+check-studio: ## Check private exports, source hashes and snapshot redaction
+	$(MAKE) -C studio check-studio
+
+check-studio-automation: ## Test preparation jobs with disposable state
+	$(MAKE) -C studio check-automation
+
+studio-export: ## Export the private bundle and approved public SUBCULT assets
+	python3 studio/scripts/export_studio.py --site-root "$(CURDIR)"
+
+studio-export-left-field: ## Export approved public Left Field assets
+	python3 studio/scripts/export_left_field.py --site-root "$(CURDIR)"

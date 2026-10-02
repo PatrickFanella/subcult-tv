@@ -1,3 +1,5 @@
+> Historical Studio migration/review record. For the current repository layout and consumer activation, see [Repository consolidation](../../docs/REPOSITORY-CONSOLIDATION.md). Paths and verification claims below describe their original observation.
+
 # Source and runtime migration
 
 Studio is the maintained source for branding, media, social plans, Patreon materials and social preparation automation. The initial import preserved canonical vault edits and differing review-worktree files. `import-manifest.json` records the initial bytes; `history/` and early design comparisons are dated references, not editing masters.

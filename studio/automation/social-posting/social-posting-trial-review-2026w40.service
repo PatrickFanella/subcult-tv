@@ -4,8 +4,8 @@ OnFailure=social-posting-failure.service
 
 [Service]
 Type=oneshot
-WorkingDirectory=/home/onnwee/Work/Subcult/subcult-studio
-ExecStart=/usr/bin/python3 /home/onnwee/Work/Subcult/subcult-studio/automation/social-posting/runner.py review --week 2026-W40
+WorkingDirectory=/home/onnwee/Work/Subcult/subcult-tv/studio
+ExecStart=/usr/bin/python3 /home/onnwee/Work/Subcult/subcult-tv/studio/automation/social-posting/runner.py review --week 2026-W40
 TimeoutStartSec=20min
 KillMode=control-group
 UMask=0077

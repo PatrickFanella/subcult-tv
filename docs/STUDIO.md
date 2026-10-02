@@ -6,10 +6,10 @@ The brand library reads the exported catalog, guides, fonts, tokens, logos, soci
 
 ## Prepare the bundle
 
-Run from the `subcult-studio` checkout:
+Run from this repository’s root:
 
 ```sh
-rtk proxy python scripts/export_studio.py --output /absolute/private/studio-bundle --site-root /absolute/subcult-tv-checkout
+rtk proxy python3 studio/scripts/export_studio.py --output /absolute/private/studio-bundle --site-root /absolute/subcult-tv-checkout
 ```
 
 The private bundle contains `catalog.json` and content-addressed assets. The site selection copies only SUBCULT marks and licensed fonts into `public/`, with hashes in `docs/subcult-brand-provenance.json`. Imported masters remain unchanged. Re-export after an intentional source change; review the public selection diff separately. Resolve Git LFS media before exporting.
@@ -18,7 +18,7 @@ Set `STUDIO_ROOT` for the API, or add `docker-compose.studio.yml` to the existin
 
 ## Design references
 
-`/admin/studio/references` adds a searchable grid/list library to Studio. The source files belong to `subcult-studio/references/`. Its private exporter adds `references.json` and content-addressed screenshots, design documents, tokens and measurement files to the existing bundle.
+`/admin/studio/references` adds a searchable grid/list library to Studio. The source files belong to `studio/references/`. Its private exporter adds `references.json` and content-addressed screenshots, design documents, tokens and measurement files to the existing bundle.
 
 Migration `004_studio_references` creates reference records, normalized tags, reference/tag links and an import receipt table. A generated PostgreSQL search vector covers names, summaries, guide text and tags, with a GIN index. Collection, update-time and tag lookup indexes support filters and sorting. Search uses bound parameters; multiple tags use AND matching. Results are paginated and omit full documents until a detail is opened.
 
@@ -56,10 +56,16 @@ Revert the site implementation and selected public assets together. Remove the o
 
 `/admin/posts` opens the automation dashboard. The **Site articles** tab preserves the existing blog editor and its publishing behavior. Social preparation remains read-only: draft copy, account cadence, configured timer definitions, receipt history, media requirements and open checks are displayed separately from approval, scheduling and delivery.
 
-From Studio, run `python scripts/export_studio.py --output /absolute/private/studio-bundle --posting-state /absolute/private/social-posting-state`. This reads successful receipt-bearing `runs/*/result.json`, `latest.json` and `radar-latest.json` into a bounded `posting.json`. It omits prompts, events, provider traces, receipt filesystem paths and runtime credentials. The export never modifies runner state, jobs, timers or drafts. Refresh the exported bundle after new preparation runs; refreshing the browser reloads the bundle and does not run a job. Configured calendars describe intended starts and are not live systemd health checks.
+From Studio, run `python3 studio/scripts/export_studio.py --output /absolute/private/studio-bundle --posting-state /absolute/private/social-posting-state`. This reads successful receipt-bearing `runs/*/result.json`, `latest.json` and `radar-latest.json` into a bounded `posting.json`. It omits prompts, events, provider traces, receipt filesystem paths and runtime credentials. The export never modifies runner state, jobs, timers or drafts. Refresh the exported bundle after new preparation runs; refreshing the browser reloads the bundle and does not run a job. Configured calendars describe intended starts and are not live systemd health checks.
 
 The authenticated `GET /api/v1/admin/studio/posting` endpoint reads that snapshot through the same read-only Studio root. It validates the observation timestamp, marks snapshots older than 24 hours stale, and labels every draft unapproved. Missing or malformed snapshots return a retryable unavailable state. Delivery remains unverified because preparation results contain no provider delivery receipts. Copying a draft does not approve or submit it.
 
 The brand asset route also serves catalog-listed font, license, CSS and token files as downloads. Their exact content-addressed paths remain constrained to the export root. Private assets are fetched with the existing admin token; the UI never places credentials in download URLs.
 
 Local verification: Studio's `make check-studio`, the site's `npm test`, `npm run lint`, `npm run build`, and `cd api && go test ./...`. Use a disposable PostgreSQL database and local review account for browser checks. Deployment needs both the site implementation and a freshly exported private bundle; no production service or timer is switched by these source changes.
+
+## Combined repository
+
+Studio sources now live under `studio/` in this private repository. `make studio-export` prepares the private bundle and explicit public SUBCULT selection in one checkout. The default bundle is `studio/runtime/studio/`; set `STUDIO_ROOT` or `STUDIO_BUNDLE_ROOT` to its absolute path when configuring an API environment. `make check-studio check-studio-automation` verifies the source/export integration.
+
+The frontend Docker context excludes Studio sources. Vite denies direct development-server requests to Studio and runtime files. Authentication and the catalog allowlist remain the private library boundary. Importing sources does not switch installed timers, database state, the deployed bundle or the live website. See [consolidation activation and recovery](REPOSITORY-CONSOLIDATION.md).

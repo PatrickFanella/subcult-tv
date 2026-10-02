@@ -57,7 +57,7 @@
     "env_file": "/home/onnwee/Work/Tools/switchyard/.env"
   },
   "discovery": {
-    "inbox": "/home/onnwee/Work/Subcult/subcult-studio/content/social/Timely Sources.json",
+    "inbox": "/home/onnwee/Work/Subcult/subcult-tv/studio/content/social/Timely Sources.json",
     "hn_scan_limit": 12,
     "keywords": [
       "open source",

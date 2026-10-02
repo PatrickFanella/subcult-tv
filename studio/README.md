@@ -1,6 +1,6 @@
 # SUBCULT Studio
 
-Private source repository for SUBCULT branding, media and social production. Studio is the source of truth for these materials and the scheduled preparation jobs. The authenticated `/admin/studio` interface belongs to the separate `subcult-tv` repository. `scripts/export_studio.py` prepares its private browsing bundle and an explicit public SUBCULT asset selection.
+Private production sources for SUBCULT branding, media and social production, inside the combined `subcult-tv` repository. The authenticated `/admin/studio` interface lives at the repository root. Installed preparation consumers still use the original Studio checkout until the [consolidation cutover](../docs/REPOSITORY-CONSOLIDATION.md) is completed. `scripts/export_studio.py` prepares its private browsing bundle and an explicit public SUBCULT asset selection.
 
 ## Contents
 
@@ -29,7 +29,7 @@ Brand generation: `cd branding/2026-10-01-packs && BRAND_ONLY=patchwork python b
 
 ## Runtime boundary
 
-The live jobs run directly from `automation/social-posting/` with the tracked, credential-free `config.json`. User unit files and former installed runtime paths are symlinks to this repository. SQLite, locks, receipts and provider credentials remain in their existing protected locations outside Git. Publication remains disabled.
+Before consolidation activation, live jobs continue to run from the original Studio checkout. The unit sources in this directory are prepared for `/home/onnwee/Work/Subcult/subcult-tv/studio/automation/social-posting/`, using the tracked, credential-free `config.json`. User unit files and former installed runtime paths are symlinks to this repository. SQLite, locks, receipts and provider credentials remain in their existing protected locations outside Git. Publication remains disabled.
 
 The Social Posts, Patreon and social-posting script directories in Ars Malefica are symlinks to Studio. The former Documents branding directory also links here. Editing through those paths edits the same physical source. These absolute compatibility links are specific to Kvant; another host must clone Studio and configure its own paths.
 
@@ -42,9 +42,9 @@ See `docs/MIGRATION.md` for migration evidence and recovery instructions.
 
 ## Admin and public-site exports
 
-Run `python scripts/export_studio.py --output /absolute/private/studio-bundle --site-root /absolute/subcult-tv-checkout`. The private bundle contains the brands listed in `brands.json`, their previews/guides/outlined logos, the selected brand assets and seven approved Patrick__Eff waveform logo variants, and every media asset in `media/library/catalog.json` (17 as of October 2, 2026). It excludes social drafts, account config, runner source and runtime state. The separate public selection contains only SUBCULT marks and licensed fonts, with source hashes recorded in the site repository.
+From this directory, run `python scripts/export_studio.py --output /absolute/private/studio-bundle --site-root ..`. The private bundle contains the brands listed in `brands.json`, their previews/guides/outlined logos, the selected brand assets and seven approved Patrick__Eff waveform logo variants, and every media asset in `media/library/catalog.json` (17 as of October 2, 2026). It excludes social drafts, account config, runner source and runtime state. The separate public selection contains only SUBCULT marks and licensed fonts, with source hashes recorded in the site repository.
 
-The site API consumes the bundle through `STUDIO_ROOT`. Its authenticated `/admin/studio` interface is implemented in the companion `subcult-tv` source. An optional read-only `latest.json` receipt directory supplies past-run status. See the site's `docs/STUDIO.md` for configuration and rollback. The export and admin integration preserve the documented preparation-job cutover; a generated bundle is deployment input and does not switch runtime paths.
+The site API consumes the bundle through `STUDIO_ROOT`. Its authenticated `/admin/studio` interface is implemented in this repository’s root source. An optional read-only `latest.json` receipt directory supplies past-run status. See the site's `docs/STUDIO.md` for configuration and rollback. The export and admin integration preserve the documented preparation-job cutover; a generated bundle is deployment input and does not switch runtime paths.
 
 
 ## Patrick__Eff design system
@@ -54,6 +54,6 @@ The selected [Patch source](branding/2026-10-02-patrick-site-direction/README.md
 The private Studio exporter includes these approved SVGs in Patrick's existing `logos` catalog field, alongside the standard outlined marks and lockups. Option 05 is excluded. It also exports the current Patch preview, guide and tokens. Run `make check-studio` to verify catalog hashes, approved logo inclusion and the private export boundary and posting snapshot redaction. Run `python scripts/export_studio.py` to prepare the bundle under ignored `runtime/studio/`; publishing that bundle to the authenticated site is a separate deployment step.
 
 
-The Posts operations dashboard in the companion site reads `posting.json` from the private bundle. Include `--posting-state /absolute/private/social-posting-state` when exporting to show the weekly/timely draft queue, media requirements, open checks and run history. Only receipt-bearing completed runs supply draft copy. The snapshot is observation data; browser refresh does not start a job, approve a draft or publish a post. Re-export after new runs to update it.
+The Posts operations dashboard in the site reads `posting.json` from the private bundle. Include `--posting-state /absolute/private/social-posting-state` when exporting to show the weekly/timely draft queue, media requirements, open checks and run history. Only receipt-bearing completed runs supply draft copy. The snapshot is observation data; browser refresh does not start a job, approve a draft or publish a post. Re-export after new runs to update it.
 
 See [Admin production workspace](docs/ADMIN-PRODUCTION.md) for the implemented library and posting dashboard, cleanup scope, local review and deployment boundary.

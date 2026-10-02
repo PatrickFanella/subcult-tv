@@ -59,8 +59,9 @@ class StudioExportChecks(unittest.TestCase):
         self.assertEqual({p.name for p in self.destination.iterdir()}, {'catalog.json', 'posting.json', 'references.json', 'assets'})
         expected = {b['slug'] for b in json.loads((PACK/'brands.json').read_text())}
         self.assertEqual({b['slug'] for b in self.catalog['brands']}, expected)
-        with self.assertRaises(ValueError):
-            export(ROOT/'content/disallowed-export')
+        for destination in (ROOT/'content/disallowed-export', ROOT.parent/'public/studio', ROOT.parent/'src/studio', ROOT.parent):
+            with self.subTest(destination=destination), self.assertRaises(ValueError):
+                export(destination)
 
 
 if __name__ == '__main__':

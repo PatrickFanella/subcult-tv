@@ -7,6 +7,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+REPOSITORY_ROOT = ROOT.parent
 PACK = ROOT / 'branding/2026-10-01-packs/brands/left-field'
 
 
@@ -33,8 +34,8 @@ def export(site):
         dest=site/target
         dest.parent.mkdir(parents=True,exist_ok=True)
         shutil.copyfile(path,dest)
-        files.append({'source':str(path.relative_to(ROOT)),'target':target,'sha256':digest})
-    provenance={'repository':'https://git.subcult.tv/subculture-collective/subcult-studio',
+        files.append({'source':str(path.relative_to(REPOSITORY_ROOT)),'target':target,'sha256':digest})
+    provenance={'repository':'https://git.subcult.tv/subculture-collective/subcult-tv',
                 'revision':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
                 'brand':'Left Field','direction':'The field ledger',
                 'approval':'User approved the LF baseline/intersection revision on 2026-10-02',
