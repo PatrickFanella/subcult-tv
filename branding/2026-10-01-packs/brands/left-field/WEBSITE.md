@@ -1,6 +1,6 @@
 # Left Field — Website design specification
 
-Updated 2 October 2026 from the site at [seats.dsaslate.com](https://seats.dsaslate.com/), revision [`dbc17f65f3ad71a40a6932fd9835c6bd8706bc95`](https://git.subcult.tv/subculture-collective/left-field/src/commit/dbc17f65f3ad71a40a6932fd9835c6bd8706bc95/src/app). The app container has run this revision since 2 October 2026, 18:31 UTC. It replaced `afa0b7d`, built 9 August 2026, which served Priority Index model v0.8 for 430 House seats. The release carried 79 commits, five database migrations, and the interface originality audit merged as [PR 54](https://git.subcult.tv/subculture-collective/left-field/pulls/54). The published factual release is unchanged: `rel_full_20260804_v2`.
+Updated 2 October 2026 from the site at [seats.dsaslate.com](https://seats.dsaslate.com/), revision [`1b071f2e5691a2359d11978c7d7850c0c43104fa`](https://git.subcult.tv/subculture-collective/left-field/src/commit/1b071f2e5691a2359d11978c7d7850c0c43104fa/src/app). The app container has run this revision since 2 October 2026, 21:23 UTC. Two releases went out that day. The first, `dbc17f6` at 18:31 UTC, replaced `afa0b7d`, built 9 August 2026, which served Priority Index model v0.8 for 430 House seats; it carried 79 commits, five database migrations, and the interface originality audit merged as [PR 54](https://git.subcult.tv/subculture-collective/left-field/pulls/54). The second installed the pack assets and rebuilt the About page ([PR 55](https://git.subcult.tv/subculture-collective/left-field/pulls/55)) with no database change. The published factual release is unchanged: `rel_full_20260804_v2`.
 
 The product repository owns the interface rules. `src/app/globals.css` holds the values and `src/components/presentational.tsx` holds the shared shell, formatters and status labels. Change the product first, then update this file and the `product_interface` block in `tokens.json` through `left_field_product.py`.
 
@@ -10,7 +10,7 @@ Left Field is a research index of seats in Congress, governorships and state leg
 
 | Element | Implemented copy or destination |
 | --- | --- |
-| Wordmark | LEFT FIELD, set in text; links to the Priority Index |
+| Wordmark | The LF mark, then LEFT FIELD set in text; links to the Priority Index |
 | Primary navigation | Priority index, Browse, Sources, Method |
 | Index headline | Where the field bends. |
 | Index lede | 430 House seats, 100 Senate seats, 50 governorships, and 5,146 state-legislative seats in 36 states, ordered by how much reason the retained evidence gives to investigate each one. A score is a research priority, not a forecast. |
@@ -19,6 +19,7 @@ Left Field is a research index of seats in Congress, governorships and state leg
 | Sources headline | What we have, and what we do not. |
 | Method headline | How the Priority Index works |
 | About headline | Who publishes this |
+| About banner | The pack share artwork: Read the field. Trace the evidence. |
 | Release strip | FACTUAL FEDERAL RECORD · nationwide release scope, then the release label, status and source cutoff. Shown on Browse, seat records, Sources and Method. |
 | Footer | LEFT FIELD · Seat research for Congress, governorships, and state legislatures · Published by SUBCULT, subcult.tv. Links: Priority index, Method, Source ledger, Corrections, About. |
 | Not found | Page not found |
@@ -59,22 +60,33 @@ The site is a printed ledger: warm paper, dark green ink, rust annotations, rule
 
 The site uses system fonts and loads no font files, analytics or third-party scripts.
 
+### Pack assets on the site
+
+The site carries these pack files unchanged. `docs/brand/site-assets.json` in the product repository records each file's source path and hash and the Studio revision they came from. Replace them from Studio; do not edit them in the product.
+
+| Pack file | Site use |
+| --- | --- |
+| `product/favicon.svg` | `src/app/icon.svg`, the browser icon |
+| `product/apple-touch-icon.png` | `src/app/apple-icon.png` |
+| `product/icon-192.png`, `product/icon-512.png` | `public/icons/`, listed in the web manifest |
+| `product/og.png` | `src/app/opengraph-image.png` and `twitter-image.png`, the share card on every page, with alt text |
+| `product/hero-outlined.svg` | `public/brand/left-field-hero.svg`, the About banner |
+| `logos/mark-primary.svg` | Redrawn inline in the masthead and on About, with the page's ink and rust, so it needs no extra request |
+
 ### Differences from the promotional pack
 
 | Item | Pack | Site |
 | --- | --- | --- |
 | Display face | Liberation Serif | Georgia |
 | Body and label faces | Public Sans and JetBrains Mono | Arial; browser monospace for identifiers |
-| Mark | LF monogram | Not used. The header is the text wordmark. |
-| Favicon and app icons | `product/favicon.svg`, touch and app icons | The site's earlier `src/app/icon.svg` |
-| Share card and hero | `product/og.*`, `product/hero.*` | Not installed; pages declare no share image |
+| Fonts | Bundled font files | None loaded. Pack type appears only inside the share card and the About banner, as outlines or pixels. |
 | Extra colours | None | Muted text, rule, status and route-tag colours listed above |
 
 Paper `#f4f0e6`, ink `#16221f`, rust `#a33c26` and wash `#e5eadc` are the same in both.
 
 ## Page structure
 
-- **Shell.** A skip link, then the masthead with the wordmark and four navigation links. Pages that read the factual release add the release strip. The footer names the publisher.
+- **Shell.** A skip link, then the masthead with the LF mark, the wordmark and four navigation links. Pages that read the factual release add the release strip. The footer names the publisher.
 - **Priority Index (`/`).** Headline, lede and note beside two totals: seats scored, and seats with two or more inputs. A filter form follows: search, state, chamber, next election, route and evidence. Four figures summarise the current view: seats in view, score range, seats with three or more inputs, and Republican-held seats. The list shows 50 seats per page with previous and next links.
 - **Index row.** Index rank and score, with the tie size when shared. Seat label and the incumbent's name, which links to the brief. One bar per measured input. The route tag and the measured-input count. “Why it ranks here” opens the score and district explanations.
 - **Brief (`/priorities/<seat>`).** Name, summary and the score seal with rank, total and tie size. Two columns give the member record and the district or state facts. Score anatomy has one column per input. Then recorded service, the formula, and links to Method, Sources and, for House and Senate seats, the factual seat record.
@@ -82,7 +94,7 @@ Paper `#f4f0e6`, ink `#16221f`, rust `#a33c26` and wash `#e5eadc` are the same i
 - **Seat record (`/seats/<seat>`).** Identity, the release-pinned district boundary drawn from published GeoJSON, the presidential margin and cash on hand with their lineage, then member, election, district, finance and source sections, and a correction link.
 - **Sources (`/sources`).** Three totals, the seven House inputs with their coverage and one context card, then release coverage and the retained snapshots behind disclosure rows.
 - **Method (`/methodology`).** Three principles, the weight matrix, the two routes with formulas, the component dictionary as a table, missing-data rules, chamber sections, worked examples, score bands and limits.
-- **About (`/about`).** Publisher, purpose, what the site collects, and contact.
+- **About (`/about`).** The banner, the publisher statement, and three current figures: index model, publication date and seats scored. Then what the index is, how to read a score, what the site collects, a note on the mark, and contact.
 - **Lookup and Corrections.** Both are off in this deployment. Each page says so and shows no form.
 - **Not found.** Unknown addresses return 404 with links to the index and Browse.
 
@@ -98,7 +110,7 @@ The shell, release strip, status label, lineage line, notice and route-state pag
 - A seat missing from the release shows “Seat not in this release”. An invalid filter shows “Request not available”.
 - The boundary map says when a boundary is loading, missing or unavailable.
 - Keyboard focus is a 3px rust outline on links, buttons, fields and disclosure controls.
-- At 390px the index, Browse, Sources and Method do not scroll sideways.
+- At 390px no page scrolls sideways. Long snapshot identifiers on a seat record wrap.
 
 ## Audit changes, 2 October 2026
 
@@ -113,14 +125,21 @@ The shell, release strip, status label, lineage line, notice and route-state pag
 9. A skip link, a consistent focus outline, a pinned first column in Browse and fixes for overflow at 390px were added.
 10. The footer names SUBCULT, and the About page was added.
 
+## Asset release, 2 October 2026
+
+1. The LF favicon and touch icon replaced the earlier app icon, and a web manifest lists the 192px and 512px icons.
+2. Every page declares the pack share card, with alt text, for Open Graph and Twitter previews.
+3. The LF mark joined the wordmark in the masthead.
+4. About gained the banner, the current index figures, a guide to reading a score and a note on the mark.
+5. Snapshot identifiers in a seat record's source list wrap, which removed the sideways scroll at 390px.
+6. The pack's `favicon.svg`, `og.svg` and `hero.svg` were re-serialized without an `ns0:` prefix, which Next rejected as an app icon. Geometry and rendered output are unchanged.
+
 ## Verification and limits
 
-The product's checks passed on the merged revision: typecheck, lint, the fast unit lane (131 tests), the production contract, source-lock verification, the production build, and both hosted CI jobs on PR 54. After the release, six routes were loaded from the live site at 1280px: each rendered, none logged a console error, and an axe WCAG A/AA scan of each found no violations. The district map drew on a live House seat record. The production monitor passed after the switch, and a full backup was taken before it.
+The product's checks passed on each merged revision: typecheck, lint, the fast unit lane (131 tests), the production contract, source-lock verification, the production build, and both hosted CI jobs on PR 54 and PR 55. On PR 55 the static job failed once on a focus-timing test of the lookup form, which the change does not touch, and passed when rerun. After the second release, six routes were loaded from the live site at 1280px and 390px: each rendered with the mark in the masthead, none scrolled sideways, none logged a console error, and an axe WCAG A/AA scan of each found no violations. The icon, touch icon, share card, manifest, manifest icon and banner each returned 200, and the share-card tags carry the public address and alt text. The district map drew on a live House seat record. The production monitor passed after each switch, and a full backup was taken before the first.
 
 Known limits on the live site:
 
-- Seat records scroll sideways at 390px because long snapshot identifiers in the source list do not wrap. The previous build did the same.
 - Address lookup and correction intake are off, so their forms have not been exercised on the live site.
 - The About page gives subcult.tv as the contact. It lists no email address.
-- The pack's LF mark, favicon, app icons and share card are not installed.
 - The repository's Caddy example still names `seats.dsaslate.us`, which does not resolve. The public address is `seats.dsaslate.com`.

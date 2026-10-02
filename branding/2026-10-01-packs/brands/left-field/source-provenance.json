@@ -1,23 +1,23 @@
 {
   "observed_at": "2026-10-02",
   "source_repository": "https://git.subcult.tv/subculture-collective/left-field",
-  "source_revision": "dbc17f65f3ad71a40a6932fd9835c6bd8706bc95",
+  "source_revision": "1b071f2e5691a2359d11978c7d7850c0c43104fa",
   "source_files": [
     {
       "path": "src/app/globals.css",
-      "sha256": "185f92202ccac0693651cee7cb183334860c8722c266abe24a71dddb4fd938d1"
+      "sha256": "40b0189f28eae147f99a6a0eed7fc5d519b30733bf660f822c719d0267bcc8ce"
     },
     {
       "path": "src/components/presentational.tsx",
-      "sha256": "a991a597582809bdf6a0fc10e44a39b9b009b71af0840d16f3135b32b50495d5"
+      "sha256": "5b408a08532a486f9fd6c8604d62a7511c29d622bf68217d0c55c85b15253f10"
     },
     {
       "path": "src/app/layout.tsx",
-      "sha256": "b23917508f6b11db92070c3ff3a663837e4295a77ebc0828edce9bb366ae0586"
+      "sha256": "2df038d945abf88ca289a61e01f10031f1841d049a4e82824650120cd692ec3d"
     },
     {
       "path": "src/app/icon.svg",
-      "sha256": "48f66ef6a2a1365492fd4b2ac9d33755797ed2e3c69dcd81eb8d731949468288"
+      "sha256": "2180ea7aef2fbb5c56bad64ec0743fa4c0cdf6b4826aa2db91d2d8e4313ab67e"
     }
   ],
   "studio_baseline": "cb3cfbd",
@@ -35,14 +35,15 @@
   "deployment": {
     "observed_at": "2026-10-02",
     "public_url": "https://seats.dsaslate.com/",
-    "revision": "dbc17f65f3ad71a40a6932fd9835c6bd8706bc95",
-    "source_tree_sha256": "7ea8f2dcfd166a7ed8c567a7d6fdda433f9cf13872c23de9637682d3b1ad3f72",
-    "app_started_utc": "2026-10-02T18:31:32Z",
-    "previous_revision": "afa0b7da14687d84d2315673bcbd6caf119dd216",
+    "revision": "1b071f2e5691a2359d11978c7d7850c0c43104fa",
+    "source_tree_sha256": "21f9819ab1b30a426b1f574f547b063980c024758f74d25b8d74ce69b7bfae07",
+    "app_started_utc": "2026-10-02T21:23:46Z",
+    "previous_revision": "dbc17f65f3ad71a40a6932fd9835c6bd8706bc95",
     "factual_release": "rel_full_20260804_v2",
     "priority_index_model": "v1.14",
-    "pull_request": "https://git.subcult.tv/subculture-collective/left-field/pulls/54",
+    "pull_request": "https://git.subcult.tv/subculture-collective/left-field/pulls/55",
     "website_specification": "WEBSITE.md",
-    "pack_assets_installed": false
+    "pack_assets_installed": true,
+    "pack_asset_record": "docs/brand/site-assets.json"
   }
 }
