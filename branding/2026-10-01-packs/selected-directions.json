@@ -34,5 +34,12 @@
     ],
     "scope": "Banner only; logo system elsewhere retains its current styling",
     "selected_by_user": true
+  },
+  "kork": {
+    "date": "2026-10-02",
+    "selected_by_user": true,
+    "direction": "A / Pinned card",
+    "name": "Kork (chosen over Corkboard; renamed from code name zelda)",
+    "alternatives": "corkboard-directions/"
   }
 }

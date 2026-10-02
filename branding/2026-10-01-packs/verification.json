@@ -239,9 +239,9 @@
     },
     "visual": "Pack preview, lockups (primary, light, dark, mono), avatar, square, story, quote, release, landscape, screenshot frame, title card, lower third and end card inspected; light-variant mark letters fixed to stay white on the dark panel"
   },
-  "corkboard": {
+  "kork": {
     "date": "2026-10-02",
-    "status": "proposed pack; visual direction awaiting user review",
+    "status": "direction A selected by the user under the name Kork",
     "files": 72,
     "svg_parse": "34/34 SVGs parse",
     "outlined_logos": "10 outlined logo SVGs contain no <text> elements",
@@ -258,6 +258,7 @@
       "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
       "license": "SIL OFL 1.1 (fonts/archivoblack-OFL.txt)"
     },
-    "rebuild": "BRAND_ONLY=corkboard python3 build_packs.py && BRAND_ONLY=corkboard python3 render_video_previews.py; other brands were not rebuilt"
+    "rebuild": "BRAND_ONLY=kork python3 build_packs.py && BRAND_ONLY=kork python3 render_video_previews.py; other brands were not rebuilt",
+    "directions": "corkboard-directions/ compares A Kork, B Wheatpaste, C Night board, D Index card (corkboard_directions.py)"
   }
 }

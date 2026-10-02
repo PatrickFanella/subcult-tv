@@ -220,8 +220,8 @@
     "selected_by_user": false
   },
   {
-    "id": "corkboard-a",
-    "brand": "Corkboard",
+    "id": "kork-a",
+    "brand": "Kork",
     "variant": "A",
     "name": "Pinned / flyer wall",
     "bg": "#d4a56c",
@@ -237,13 +237,13 @@
     "tag": "LINK PAGES / BY SUBCULT",
     "description": "A cork field, paper cards and cobalt pushpins: every destination pinned to one board.",
     "mode": "corkboard",
-    "url": "corkboard.subcult.tv",
-    "source": "New identity for the self-serve links-page service (code name zelda), proposed October 2, 2026",
-    "slug": "corkboard",
+    "url": "kork.subcult.tv",
+    "source": "Identity for the self-serve links-page service (code name zelda); direction A selected by the user October 2, 2026",
+    "slug": "kork",
     "label": "JetBrains Mono",
     "safe_label": "#1b130c",
     "tag_color": "#1b130c",
-    "selected_by_user": false,
-    "direction_selection": "proposed; awaiting user review"
+    "selected_by_user": true,
+    "direction_selection": "user"
   }
 ]
