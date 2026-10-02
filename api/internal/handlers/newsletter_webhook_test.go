@@ -117,6 +117,19 @@ func TestBrevoWebhookConsentSequence(t *testing.T) {
 	}
 	send("list_addition", email, 2, 35)
 	check(false, true)
+	// Re-subscription requests fresh DOI; old confirmations cannot confirm it.
+	h.Mail = &fakeMailer{}
+	r := httptest.NewRequest("POST", "/", strings.NewReader(`{"email":"consent@example.invalid"}`))
+	w := httptest.NewRecorder()
+	h.Subscribe(w, r)
+	if w.Code != 201 {
+		t.Fatalf("resubscribe got %d", w.Code)
+	}
+	check(false, false)
+	send("list_addition", email, 2, 50)
+	check(false, false)
+	send("list_addition", email, 2, time.Now().Unix()-at.Unix())
+	check(true, false)
 	send("list_addition", "unknown@example.invalid", 2, 50)
 	var count int
 	if err = db.QueryRow(ctx, "SELECT count(*) FROM subscribers").Scan(&count); err != nil || count != 1 {
