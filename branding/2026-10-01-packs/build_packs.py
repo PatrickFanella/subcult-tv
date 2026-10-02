@@ -154,6 +154,7 @@ def guide(d,dest):
  'prichal':'Identity for Prichal, managed AT Protocol PDS hosting (repository subculture-collective/prichal). The user chose the name Prichal on October 1, 2026: Russian for pier or berth, and the ISS docking node where Soyuz ships attach. The pronunciation is the Russian one (pree-CHAHL); copy never explains or corrects it. The mark is a docking node: a sphere with its equator in perspective and four flanged collars. The red flange on the right is the occupied port, the customer account. Never rotate it, recolor single collars, or add a centre dot or ring: with the cross of ports that reads as a gun sight. Mono variants turn the flange to ink. Paper (#f4f1e9) is the field, ink (#1c2230) carries text and the mark, signal red (#b23a26, 5.28:1 on paper) marks the occupied port, rules and large emphasis, and steel (#5d6675, 5.14:1) carries labels. In product interfaces red is reserved for the mark so it never reads as an error. Oswald Bold sets the uppercase wordmark and display headings, Public Sans carries body copy and JetBrains Mono carries labels and the port strip. The Cyrillic ПРИЧАЛ is a small secondary label, never a replacement for the Latin name. Engineering-drawing details (tick scale, hairlines, PORT 01–06 strip) stay light. Tagline: Your server. We keep it running. Call to action: Dock your account. We handle the rest. Do not market leaving, privacy, censorship resistance or unverified capabilities; Prichal is a private preview at prichal.subcult.tv and not open for sign-up. Messaging by audience and the plain-language table live in the product repository at brand/GUIDE.md.',
  'undertow':'Use the active editor theme: pink/cyan/lilac on dark violet, square geometry and hard offsets. Keep the existing spectrum favicon. Liberation Mono is the bundled portable alternative to the site’s system monospace stack. Chromatic offsets are for large titles, never body copy.'
  }[slug]
+ product='`product/` contains exports at their final sizes for the Subcult OS site and app. Copy them as they are; do not crop, resize or recolor them downstream.\n\n| File | Use |\n| --- | --- |\n| `mark-tight.svg`, `mark-tight-outlined.svg` | The mark cropped to its frame, for favicons and for placement beside live text. Add the quarter-height clear space in layout. |\n| `favicon-32.png`, `favicon-48.png` | Raster favicons for the site and for Expo web. |\n| `app-icon.png` | 1024×1024 opaque store and iOS icon. |\n| `apple-touch-icon.png` | 180×180 opaque home-screen icon for the site. |\n| `android-adaptive-foreground.png` | 1024×1024 transparent adaptive-icon foreground. Pair it with the base color #000000 as the adaptive background. |\n| `android-adaptive-monochrome.png` | 1024×1024 single-color layer for Android themed icons. |\n| `splash-icon.png` | 1024×1024 transparent mark for a splash screen on the base color. |\n| `og.png` | 1200×630 link preview: the X/Bluesky banner centered on the base color. Its headline needs owner approval before it ships on a site (subcult-os issue 201). |\n\n' if slug=='subcult-os' else ''
  doc=f'''# {d['brand']} — Brand and asset guide
 
 Selected direction: **{d['variant']} / {d['name']}**. Status: local production pack v1. Direction selection is not permission to publish a post or change a profile.
@@ -192,7 +193,7 @@ Editable SVG text needs the included fonts. Install them for editing, or use the
 
 The story artwork keeps the main message between y=250 and y=1670 on a 1080×1920 canvas. Check the destination’s current overlay and crop behavior in its composer. Keep critical banner content away from the bottom-left avatar area. These are layout guides, not a guarantee of every platform crop.
 
-## Screenshots and video
+{product}## Screenshots and video
 
 Replace the screenshot placeholder with a real capture of a verified workflow. Show enough interface to establish context; crop credentials, private dashboards, unpublished material and personal data. Keep original recordings separately from edited exports.
 
@@ -274,6 +275,21 @@ for d in BRANDS:
  write_svg(dest/'social','screenshot-frame',screenshot(d),1600,1000)
  for kind in ['title-card','thumbnail','end-card','lower-third']:write_svg(dest/'video',kind,video(d,kind),1920,1080)
  (dest/'video/captions.ass').write_text('[Script Info]\nTitle: '+d['brand']+' captions\nScriptType: v4.00+\nPlayResX: 1920\nPlayResY: 1080\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Default,'+d['body']+',48,&H00FFFFFF,&H00FFFFFF,&H001A1114,&HBE1A1114,0,0,0,0,100,100,0,0,3,2,0,2,120,120,90,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\nDialogue: 0,0:00:00.00,0:00:04.00,Default,,0,0,0,,Replace with the actual spoken words.\n')
+ if d['slug']=='subcult-os':
+  # Product exports are final sizes: consumers copy these bytes and do not crop, resize or recolor the mark.
+  prod=dest/'product';mono=copy.deepcopy(d);mono.update(fg='#ffffff',accent='#ffffff',secondary='#ffffff',mono=True)
+  write_svg(prod,'mark-tight',source_mark(d,-2,-2,160),156,156,outlined=True)
+  for size in [32,48]:subprocess.run(['rsvg-convert','-w',str(size),'-o',str(prod/f'favicon-{size}.png'),str(prod/'mark-tight-outlined.svg')],check=True)
+  icon=base(d,1024,1024)+source_mark(d,192,192,640)
+  write_svg(prod,'app-icon',icon,1024,1024);write_svg(prod,'apple-touch-icon',icon,1024,1024,180)
+  # Android masks the layers to a circle 66/108 of the canvas wide; a 448 px mark keeps its corners inside it.
+  write_svg(prod,'android-adaptive-foreground',source_mark(d,288,288,448),1024,1024)
+  write_svg(prod,'android-adaptive-monochrome',source_mark(mono,288,288,448,'mono'),1024,1024)
+  write_svg(prod,'splash-icon',source_mark(d,192,192,640),1024,1024)
+  write_svg(prod,'og',base(d,1200,630)+f'<g transform="translate(0 115)">{banner}</g>',1200,630)
+  for name in ['app-icon','apple-touch-icon','og']:
+   from PIL import Image
+   Image.open(prod/(name+'.png')).convert('RGB').save(prod/(name+'.png'),optimize=True)
  guide(d,dest);sh=''
  for i,(folder,name) in enumerate([('social','banner-x-bluesky'),('social','square-post'),('social','story-template'),('social','screenshot-frame'),('video','title-card'),('video','lower-third')]):
   x=(i%2)*800;y=(i//2)*600;sh+=rect(x,y,800,600,'#eae6de')+T(x+24,y+36,name,19,'#242226','Space Grotesk',700)+embed_svg((dest/folder/(name+'.svg')).read_text(),x+24,y+60,752,506)
