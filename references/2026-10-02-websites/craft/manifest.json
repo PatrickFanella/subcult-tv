@@ -1,0 +1,98 @@
+{
+  "site": "craft",
+  "source": "https://craft.wild.as/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:15:11.460Z",
+      "url": "https://craft.wild.as/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "scrolled",
+      "observation": "evidence/scrolled.json",
+      "image": "images/scrolled.png",
+      "capturedAt": "2026-10-02T20:20:58.051Z",
+      "url": "https://craft.wild.as/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": "images/settled.png",
+      "capturedAt": "2026-10-02T20:20:55.882Z",
+      "url": "https://craft.wild.as/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "93092e11adb01401fe6e828cb64c53e2bd5a30732b6b690baf2645802c8c2128",
+      "bytes": 5551
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "3a63f17d7e780d99065e3b6546ce1fc5b51550b11b62a853cefe1b9c9959458a",
+      "bytes": 1297
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "bb137d835e27a259b439f53963d9150a7c7fa07dd0477801aac73dfb1887a2b3",
+      "bytes": 46118
+    },
+    {
+      "path": "evidence/scrolled.json",
+      "sha256": "1fd9e965eafa91bf4d4b6c6fd34ba8ba344a0d53ab17863d3005b937cb2c0a33",
+      "bytes": 45761
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "7b4103e7c172fcfb5de8b5535b75c0eb7aa2593a68ef389775acb7849191e1d5",
+      "bytes": 45791
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "b64c333308b4b5397f8b28f9853398506a641a631a03485a482be4a16871809c",
+      "bytes": 234780
+    },
+    {
+      "path": "images/scrolled.png",
+      "sha256": "afe49260a3050f3f618f4292f56dbf6a16372079b8c06e52bd363f7c767cacde",
+      "bytes": 315612
+    },
+    {
+      "path": "images/settled.png",
+      "sha256": "8e262e6714dff72546dc41c6e109a2dc9361a42b6f13ee569b72ff13e9a83447",
+      "bytes": 179954
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "1df43aa8832fc06b280d7d5fdf868949657c16b6b62b354e93cad64817d9b213",
+      "bytes": 306
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "16b00c487d56e52c1e02a810ea1a9af7530ec6f25e8581fcda9d0d0581c0a170",
+      "bytes": 10198
+    }
+  ]
+}

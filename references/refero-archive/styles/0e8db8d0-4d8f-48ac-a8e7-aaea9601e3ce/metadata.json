@@ -1,0 +1,29 @@
+{
+  "styleId": "0e8db8d0-4d8f-48ac-a8e7-aaea9601e3ce",
+  "sourceUrl": "https://styles.refero.design/style/0e8db8d0-4d8f-48ac-a8e7-aaea9601e3ce",
+  "fetchedAt": "2026-10-02T21:43:41.727735+00:00",
+  "extractedAt": "2026-10-02T21:43:41.827905+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Martin Laxenaire — Style Reference",
+  "htmlSha256": "78d06777c1f2ee50baaa4a6a509e9d2dacaef35302b6859b7b0809436347abd4",
+  "cache": ".cache/0e8db8d0-4d8f-48ac-a8e7-aaea9601e3ce.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "845b24a3e1e8db92f9ecf0ed609b7d5bb7af10ef8976f83462c10ca66749026e",
+      "bytes": 19594,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f7a25a8c-1cb5-48b5-ac8f-412a14d8d07e.jpg",
+    "fetchedAt": "2026-10-02T21:43:43.516147+00:00",
+    "sha256": "4efa0f335387c600aa90d61e10bedffb9f5e2e3719ce8f9868bd69c26b217db2",
+    "bytes": 113932,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

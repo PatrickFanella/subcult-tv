@@ -1,0 +1,29 @@
+{
+  "styleId": "51b5d80e-d898-4d70-bd16-9e50406e014c",
+  "sourceUrl": "https://styles.refero.design/style/51b5d80e-d898-4d70-bd16-9e50406e014c",
+  "fetchedAt": "2026-10-02T21:46:25.598981+00:00",
+  "extractedAt": "2026-10-02T21:46:25.666027+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cards Against Humanity — Style Reference",
+  "htmlSha256": "76daa7dee483cd342c5eeb347fc40d2c80ae97872950fcdae6f59f488b543a01",
+  "cache": ".cache/51b5d80e-d898-4d70-bd16-9e50406e014c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "beaf2d23be3a130e25cb56aa6ed1e2c2c9ea5a37e134a8a680ec6706019456da",
+      "bytes": 19977,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0ef20175-78e9-406d-908b-8c8e12e01993.jpg",
+    "fetchedAt": "2026-10-02T21:46:27.544445+00:00",
+    "sha256": "b3e8a455b7b5f94271f9a67366c810cc899b34803fa3d2a2a43726d97a58dde6",
+    "bytes": 114381,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

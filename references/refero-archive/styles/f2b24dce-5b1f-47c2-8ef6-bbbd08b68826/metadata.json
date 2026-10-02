@@ -1,0 +1,29 @@
+{
+  "styleId": "f2b24dce-5b1f-47c2-8ef6-bbbd08b68826",
+  "sourceUrl": "https://styles.refero.design/style/f2b24dce-5b1f-47c2-8ef6-bbbd08b68826",
+  "fetchedAt": "2026-10-02T21:39:38.072770+00:00",
+  "extractedAt": "2026-10-02T21:39:38.112610+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Studio Thomas — Style Reference",
+  "htmlSha256": "fa9c4c43b8d698b8e2249c8ff2a89176740bd0541c98e8edbf378aae0faf648c",
+  "cache": ".cache/f2b24dce-5b1f-47c2-8ef6-bbbd08b68826.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e5fa165d4f13f587eea2df1ee66f933e4ecb2a6a2b4c4a8f3bde7b6b5318d4a7",
+      "bytes": 15729,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c19f3979-3537-400d-a59a-a30bc4a9438e.jpg",
+    "fetchedAt": "2026-10-02T21:39:39.974314+00:00",
+    "sha256": "3f2f2bb4b2069b8856aa7babe4795d35c9ffd5140b78b8f46e4972299c9de83d",
+    "bytes": 50677,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

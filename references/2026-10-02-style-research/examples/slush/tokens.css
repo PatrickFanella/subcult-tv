@@ -1,0 +1,9 @@
+/* Observed values, not canonical brand roles. See DESIGN.md and tokens.json. */
+:root {
+  --observed-color-01: rgb(0, 0, 0);
+  --observed-color-02: rgb(255, 255, 255);
+  --observed-color-03: rgb(233, 204, 255);
+  --observed-color-04: rgb(92, 74, 222);
+  --observed-font-01: "Aeonik Pro", Arial, sans-serif;
+  --observed-font-02: Lateral, Impact, sans-serif;
+}

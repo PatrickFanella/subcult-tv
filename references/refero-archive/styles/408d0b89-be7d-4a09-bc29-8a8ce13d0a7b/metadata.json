@@ -1,0 +1,29 @@
+{
+  "styleId": "408d0b89-be7d-4a09-bc29-8a8ce13d0a7b",
+  "sourceUrl": "https://styles.refero.design/style/408d0b89-be7d-4a09-bc29-8a8ce13d0a7b",
+  "fetchedAt": "2026-10-02T21:37:38.006482+00:00",
+  "extractedAt": "2026-10-02T21:37:38.057181+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Wizz — Style Reference",
+  "htmlSha256": "83e35c0954b4cc270fc201854182c86f1739091f042a3a2d3bb768adf0eae399",
+  "cache": ".cache/408d0b89-be7d-4a09-bc29-8a8ce13d0a7b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d2619b2b3a5b247f9ce457c0658c94e207b93e305bc7b4d46079d3df366c02eb",
+      "bytes": 23734,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/97924ac0-f928-4001-afb5-ec8f6efaa2b1.jpg",
+    "fetchedAt": "2026-10-02T21:37:40.043661+00:00",
+    "sha256": "8b79f2c864cde75c3ebda21797f36bb5f19cb220dde08c2676d363e2884966a6",
+    "bytes": 72438,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "ec17bdec-c8fa-4221-abd6-da717bf38d96",
+  "sourceUrl": "https://styles.refero.design/style/ec17bdec-c8fa-4221-abd6-da717bf38d96",
+  "fetchedAt": "2026-10-02T22:00:30.189651+00:00",
+  "extractedAt": "2026-10-02T22:00:30.655542+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Egstad — Style Reference",
+  "htmlSha256": "0fd5a5fac6170f1e0c013d3183b45f31f3f4f31bbd9c1e5a1447fe37a7f4dd4f",
+  "cache": ".cache/ec17bdec-c8fa-4221-abd6-da717bf38d96.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "990a48c35e7617c6c69839ed9ed5e7153692e036e587d80b87f613f1edd93699",
+      "bytes": 16097,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/97566806-44f0-448a-8be8-d7dff30469c5.jpg",
+    "fetchedAt": "2026-10-02T22:00:32.245843+00:00",
+    "sha256": "4ec9adbc6a486aba63b4755e8b09855dc4d19631eb517beb5ea72d0eac179980",
+    "bytes": 88405,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

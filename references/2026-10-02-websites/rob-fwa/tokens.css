@@ -1,0 +1,7 @@
+/* Reference observations, not an official or production design system.
+   See GUIDE.md and tokens.json for evidence and visibility limits. */
+:root {
+  --reference-bg: rgb(0, 0, 0);
+  --reference-fg: rgb(127, 138, 160);
+  --reference-font-body: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}

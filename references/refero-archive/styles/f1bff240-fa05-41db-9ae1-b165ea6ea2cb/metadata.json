@@ -1,0 +1,29 @@
+{
+  "styleId": "f1bff240-fa05-41db-9ae1-b165ea6ea2cb",
+  "sourceUrl": "https://styles.refero.design/style/f1bff240-fa05-41db-9ae1-b165ea6ea2cb",
+  "fetchedAt": "2026-10-02T21:54:54.309060+00:00",
+  "extractedAt": "2026-10-02T21:54:54.358878+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cohere — Style Reference",
+  "htmlSha256": "007d6f0d51c10842be63e3ed256a5243614dfa8b3c4a7987fd51819c733b160d",
+  "cache": ".cache/f1bff240-fa05-41db-9ae1-b165ea6ea2cb.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a69a9267e8b67de57b8c75162837313100db5c0a9ed8e2e850a7c2ff5b815323",
+      "bytes": 22617,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/efccd02f-9fef-496c-861b-42908f8a9254.jpg",
+    "fetchedAt": "2026-10-02T21:54:56.304762+00:00",
+    "sha256": "cae848a4e3540993af712cb69bebd4dd30427f4d476ea3c4f37c50b77008718c",
+    "bytes": 106110,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

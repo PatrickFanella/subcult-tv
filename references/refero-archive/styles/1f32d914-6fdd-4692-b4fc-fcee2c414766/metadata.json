@@ -1,0 +1,29 @@
+{
+  "styleId": "1f32d914-6fdd-4692-b4fc-fcee2c414766",
+  "sourceUrl": "https://styles.refero.design/style/1f32d914-6fdd-4692-b4fc-fcee2c414766",
+  "fetchedAt": "2026-10-02T21:32:46.006895+00:00",
+  "extractedAt": "2026-10-02T21:32:46.033495+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Jeton — Style Reference",
+  "htmlSha256": "f2ae0c8cde72a80d4f912a1b175baa81db507bd0042184e1ebe9b1176a2ffab0",
+  "cache": ".cache/1f32d914-6fdd-4692-b4fc-fcee2c414766.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "80854e3005a0aa19e83029c8aa7134a6ad5b6a3520bd169d6e2dfff25b4bbdd0",
+      "bytes": 19319,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a296b261-df5a-484f-b657-3b24fa6ad0dd.jpg",
+    "fetchedAt": "2026-10-02T21:32:47.983813+00:00",
+    "sha256": "704ed6a5667c4913b43e43e4d0dca00ca229bee9a8a9d7c3762469e85ef60aed",
+    "bytes": 68296,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

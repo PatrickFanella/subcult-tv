@@ -1,0 +1,29 @@
+{
+  "styleId": "7368cfab-6313-4e50-97e5-c3318c52e7fe",
+  "sourceUrl": "https://styles.refero.design/style/7368cfab-6313-4e50-97e5-c3318c52e7fe",
+  "fetchedAt": "2026-10-02T21:19:17.335442+00:00",
+  "extractedAt": "2026-10-02T21:19:17.392162+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Heptabase — Style Reference",
+  "htmlSha256": "da00f3598a1c354fb35b219515bb8c93d912d0b0669f1c8769c6f5bc40ba921a",
+  "cache": ".cache/7368cfab-6313-4e50-97e5-c3318c52e7fe.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d3579b38658e91977e2ef06f94b36ddd483756fc9f6b95fd3bd8f77695ab4eaf",
+      "bytes": 22803,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ee7af08d-e65a-4613-87d7-a14c3854c028.jpg",
+    "fetchedAt": "2026-10-02T21:26:24.033558+00:00",
+    "sha256": "08edda597d71c1f3d47db81c0cee286621d3fcb4443ef3f9129220e8e6d7d72b",
+    "bytes": 116960,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

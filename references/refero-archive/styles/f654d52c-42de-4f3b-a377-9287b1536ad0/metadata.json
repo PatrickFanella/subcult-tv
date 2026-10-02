@@ -1,0 +1,29 @@
+{
+  "styleId": "f654d52c-42de-4f3b-a377-9287b1536ad0",
+  "sourceUrl": "https://styles.refero.design/style/f654d52c-42de-4f3b-a377-9287b1536ad0",
+  "fetchedAt": "2026-10-02T21:49:01.586466+00:00",
+  "extractedAt": "2026-10-02T21:49:01.637629+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "NCDA — Style Reference",
+  "htmlSha256": "ccb5d0f81911622cde92b45e39f1c3c2b5a2beb24ee08ecf887a3ad3919f153a",
+  "cache": ".cache/f654d52c-42de-4f3b-a377-9287b1536ad0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c78c6e8ddc3207af781a7891d4a4e4be046f1221cc6fddd5e18da751b95f162f",
+      "bytes": 16897,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f9fe88ba-1adb-4c11-8d06-71dd182c3856.jpg",
+    "fetchedAt": "2026-10-02T21:49:03.466137+00:00",
+    "sha256": "d53ab55208eb2acad4a47cbdde0d184ce5d900599480fca2e816c4d8332151ef",
+    "bytes": 54170,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

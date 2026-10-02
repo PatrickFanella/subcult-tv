@@ -15,6 +15,7 @@ Private source repository for SUBCULT branding, media and social production. Stu
 - `preview/legacy-branding/`: earlier banners and social-link pages.
 - `history/review-worktree/`: differing review-worktree files, preserved separately from the canonical vault import.
 - `docs/import-manifest.json`: source paths and SHA-256 hashes.
+- `references/`: copied design studies, tokens, screenshots, measurements and completed Refero exports. Its catalog feeds the authenticated design reference page; see [reference library instructions](references/USAGE.md).
 
 SVG, code and metadata use ordinary Git. PNG, JPEG, WebP, video and fonts use Git LFS. ZIPs, caches, credentials and runtime state are excluded. Generated exports are retained in this initial migration for review; future export policy can be refined without losing the imported source.
 

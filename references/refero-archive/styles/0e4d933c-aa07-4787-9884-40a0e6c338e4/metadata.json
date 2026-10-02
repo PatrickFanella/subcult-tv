@@ -1,0 +1,29 @@
+{
+  "styleId": "0e4d933c-aa07-4787-9884-40a0e6c338e4",
+  "sourceUrl": "https://styles.refero.design/style/0e4d933c-aa07-4787-9884-40a0e6c338e4",
+  "fetchedAt": "2026-10-02T21:36:46.013762+00:00",
+  "extractedAt": "2026-10-02T21:36:46.044585+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Netflix Spain — Style Reference",
+  "htmlSha256": "03195ad1b51f63e510166f7fefeaa06ad447a18702cec5026804372257e98310",
+  "cache": ".cache/0e4d933c-aa07-4787-9884-40a0e6c338e4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d565e8ee0d585747ff23e6ea82207b7b3439eef6d7f846ce280aa93d47c42132",
+      "bytes": 19706,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0064b8f1-c049-46ab-af2a-02bb3f066893.jpg",
+    "fetchedAt": "2026-10-02T21:36:48.082956+00:00",
+    "sha256": "bf53d89b238d2f8c50227d41e26f3be3bb6270b90bf702a238b9699ec821040f",
+    "bytes": 133135,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

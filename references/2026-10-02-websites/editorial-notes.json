@@ -1,0 +1,372 @@
+{
+  "nts": {
+    "category": "Editorial / radio",
+    "status": "visual",
+    "direction": "Black-and-white broadcast chrome gives photographs and music metadata the largest share of attention.",
+    "layout": "Persistent navigation and two live-channel strips; broad feature image beside a narrow mixtape rail; four-column show cards below.",
+    "components": "Square play controls, genre chips, dates and locations separated by thin rules.",
+    "typography": "Univers-Condensed for compact navigation and titles; Arial fallback.",
+    "adaptation": "Treat the player and archive as separate component families. The useful reference is metadata density and a stable player shell.",
+    "limits": "Playback, search, supporter states and mobile layouts remain untested."
+  },
+  "the-creative-independent": {
+    "category": "Editorial / culture",
+    "status": "visual",
+    "direction": "Courier typography and colored text cards make the site feel like an annotated publishing index.",
+    "layout": "Pixel snail identity; compact category controls and search; four-column square cards with dates anchored near the bottom.",
+    "components": "Outlined filters, article cards, date labels and a restrained monospace reading hierarchy.",
+    "typography": "Courier / Courier New throughout the captured page.",
+    "adaptation": "Study how one font supports navigation, cards and editorial copy. Keep the color assignment rules separate from article content.",
+    "limits": "Article pages and filter behavior remain untested; the #home route avoids an anniversary entry screen."
+  },
+  "arena": {
+    "category": "Community / knowledge",
+    "status": "visual",
+    "direction": "The current landing page uses a narrow column of quiet text on black, followed by product imagery.",
+    "layout": "Centered text column around 619 CSS pixels; compact account actions; large rounded product screenshot with a phone overlay.",
+    "components": "Paired signup actions, fine dividers and a screenshot presentation frame.",
+    "typography": "Custom areal stack; introductory text sampled at 19.2px with 27.84px line height.",
+    "adaptation": "Use the landing page to study paced explanations and restrained actions. The authenticated block/channel interface requires its own guide.",
+    "limits": "This documents the public landing page. Account creation and the application grid were not inspected."
+  },
+  "walker-art-center": {
+    "category": "Culture / institution",
+    "status": "visual",
+    "direction": "Large artwork photography and an understated white navigation bar organize the institution's many programs.",
+    "layout": "Centered WALKER identity between navigation groups; outlined ticket action; edge-aligned hero title and metadata; paired imagery below.",
+    "components": "Ticket pill, program captions, image-led features and upcoming-program marquee.",
+    "typography": "ABC Walker; a regular hero heading sampled at 72px.",
+    "adaptation": "Study the relationship between institutional navigation and exhibition-specific photography.",
+    "limits": "Some images appeared blurred while loading. Ticket flow, program details and mobile navigation remain untested."
+  },
+  "new-models": {
+    "category": "Editorial / culture",
+    "status": "visual",
+    "direction": "A black opening field, red statement and central photograph lead into a dense editorial grid.",
+    "layout": "Generous opening negative space; three-column article layout below; thin rules; theme selector.",
+    "components": "Ellipsis menu, thumbnail-and-metadata entries, highlighted membership links and CLEAR / DARK / ARCHIVE selector.",
+    "typography": "Helvetica; compact metadata rather than a large type palette.",
+    "adaptation": "Separate theme behavior, membership actions and editorial indexing before adapting the system.",
+    "limits": "Theme switching and membership were not exercised. Some computed text colors need a cascade check against their actual backgrounds."
+  },
+  "low-tech-magazine": {
+    "category": "Editorial / sustainability",
+    "status": "source-only",
+    "direction": "The current homepage could not be rendered. This entry preserves that failure and points to the publisher's documented approach.",
+    "layout": "The publisher's earlier low-tech website article describes a static, lightweight publication with dithered imagery and default browser fonts.",
+    "components": "Historical reference topics: category-tinted images, simple text navigation and energy-aware delivery.",
+    "typography": "No current font tokens extracted; the browser error page is excluded.",
+    "adaptation": "Use this as a performance and content-delivery study after a successful live capture.",
+    "limits": "Current visual system is unverified. The historical source is from 2018; current availability and the reason for the failed load are unknown."
+  },
+  "aardvark-book-club": {
+    "category": "Commerce / books",
+    "status": "partial",
+    "direction": "A purple branded loader was visible; styled page content behind it suggests a playful, oversized book-club identity.",
+    "layout": "Circular aardvark loader; underlying large, tightly led display title and softer supporting text.",
+    "components": "Book selection, membership and hand-drawn accent treatments are candidates from styled content, pending a clear page render.",
+    "typography": "Champ bold display; Degular body; Hello Organichand accent. H1 sampled at 116.875px / 93.5px.",
+    "adaptation": "Study the three-font role split only after the loader clears; preserve the distinction between intro and shopping states.",
+    "limits": "Repeated captures retained the loader. Main-page composition and purchasing states are unverified."
+  },
+  "razed-mods": {
+    "category": "Creative / games",
+    "status": "visual",
+    "direction": "Atmospheric game imagery sits behind a huge lowercase wordmark and very small technical labels.",
+    "layout": "Full-screen lighthouse scene; project/game index at the top; oversized bottom wordmark; narrative copy revealed further down.",
+    "components": "Project index, image scenes, compact technical labels and large mod/project titles.",
+    "typography": "Jetbrainsmono labels, Anton display and Switzer narrative copy.",
+    "adaptation": "The useful split is cinematic media versus precise project metadata; define image transitions separately from text tokens.",
+    "limits": "The changing scene was observed in stills. Downloads, motion timing and video controls remain untested."
+  },
+  "huuuuue": {
+    "category": "Agency / creative",
+    "status": "visual",
+    "direction": "The supplied HUUUUUE URL currently presents HUE&CRY, with bold black display type and pink italic emphasis.",
+    "layout": "White opening field; extremely large headline; tiny tracked navigation; black pill action; client ticker below.",
+    "components": "Pill CTA, oversized mixed-font headline, client ticker and service blocks.",
+    "typography": "Archivo Black display, Instrument Serif italic emphasis, Inter body.",
+    "adaptation": "Document emphasis as a deliberate typographic role rather than a second arbitrary heading font.",
+    "limits": "Current branding differs from the supplied name. Service details, motion timing and mobile layouts remain untested."
+  },
+  "duyu-care": {
+    "category": "Commerce / product",
+    "status": "partial",
+    "direction": "A white loading scene shows the duyu identity and a rotating dark jar, with mint and charcoal in the styled content.",
+    "layout": "Corner statements, central product scene and an italic percentage counter; underlying hero title sampled at 88px.",
+    "components": "Product render, small corner labels, percentage loader and contrasting editorial type.",
+    "typography": "Modern Gothic Next-generated family names and Plantin MT italic.",
+    "adaptation": "Separate loader tokens from the product storefront before adapting the mint/charcoal direction.",
+    "limits": "The visible loader stayed at 0%. Main-page and commerce states are unverified."
+  },
+  "craft": {
+    "category": "Agency / creative",
+    "status": "visual",
+    "direction": "A fine grid makes the page feel like a working canvas, with a colorful cellular artwork interrupting the restrained black typography.",
+    "layout": "Split introductory row; large left headline and right proposition; grid-aligned three-project carousel.",
+    "components": "Fine grid rules, project tiles, small captions and a generative canvas.",
+    "typography": "Sneak display; opening heading sampled around 72.93px.",
+    "adaptation": "Study the grid and project-card grammar. Canvas artwork needs a separate media specification because its colors are absent from DOM styles.",
+    "limits": "Canvas colors are visual observations, not extracted CSS tokens. Carousel behavior and mobile adaptation remain untested."
+  },
+  "no-football-colors": {
+    "category": "Editorial / commerce",
+    "status": "visual",
+    "direction": "An issue-based football publication combines immersive photographs with very tall condensed white titles.",
+    "layout": "Full-screen stadium photo; framed menu/logo block; bag control; issue-number cells and editorial actions.",
+    "components": "Issue badge, square utility buttons, framed CTA and image-led stories.",
+    "typography": "Obviously Narrow display sampled at 120px; Polymath Text body.",
+    "adaptation": "Study issue metadata and editorial-to-commerce transitions as component relationships.",
+    "limits": "Photographic colors are excluded from brand tokens. Bag, issue navigation and purchasing states remain untested."
+  },
+  "inngest": {
+    "category": "Developer / product",
+    "status": "visual",
+    "direction": "A charcoal surface, coral actions and code-oriented demonstrations make the product explanation feel operational.",
+    "layout": "Two-column headline and workflow demonstration; outlined display-word treatment; client logos and persistent navigation.",
+    "components": "Announcement strip, coral CTA, code panel and green completion / red retry badges.",
+    "typography": "Whyte display sampled at 72px, CircularXX body and WhyteMono technical labels.",
+    "adaptation": "Study code-state visualization and action hierarchy; distinguish semantic status colors from marketing accents.",
+    "limits": "A scrolled capture showed an animation-dependent blank area. Execution demos and responsive behavior are unverified."
+  },
+  "monolayer": {
+    "category": "Developer / product",
+    "status": "visual",
+    "direction": "Light gray surfaces, large lowercase sentences and black scanline graphics form a spare technical identity.",
+    "layout": "Large 70px introductory sentence; small navigation; black graphic field; thin dividers and bracketed links.",
+    "components": "Bracket links, technical label blocks and large explanatory paragraphs.",
+    "typography": "PPFrama; later explanatory paragraph sampled around 52.59px.",
+    "adaptation": "Study scale contrast and punctuation as interface framing; keep generated graphics separate from UI tokens.",
+    "limits": "Interactive graphic behavior, inner pages and mobile states remain untested."
+  },
+  "sondaven": {
+    "category": "Architecture / property",
+    "status": "visual",
+    "direction": "Warm resort imagery, brown typography and an irregular striped identity frame an investment project.",
+    "layout": "Full-scene render; sparse upper navigation; small investment metadata; circular outlined investment action.",
+    "components": "Striped mark, image captions, circular action and quiet navigation.",
+    "typography": "KTF Metro Roman display and KTF Metro Blueline labels; display sample around 54.54px.",
+    "adaptation": "Study image-led hierarchy and caption placement rather than assuming every large mark is a text heading.",
+    "limits": "Main page loaded on the later pass. Investment flow, language switching and mobile states remain untested."
+  },
+  "gigantic-media": {
+    "category": "Agency / creative",
+    "status": "partial",
+    "direction": "A coral entry screen and enormous black GIGANTIC MEDIA title introduce an experience-driven agency site.",
+    "layout": "Large entry typography, circular crosshair and an Enter the experience action; later styled content exists without a new screenshot.",
+    "components": "Entry gate, target-like graphic and compact agency metadata.",
+    "typography": "Suisseintl; later H1 sampled around 51.7px.",
+    "adaptation": "Keep the entry experience and ordinary portfolio navigation as separate state models.",
+    "limits": "Later screenshots failed after the browser client changed. The inner experience is not visually verified."
+  },
+  "hey-nesh": {
+    "category": "Portfolio / creative",
+    "status": "visual",
+    "direction": "A cutout portrait over huge yellow lettering creates the identity, while compact navigation stays out of its way.",
+    "layout": "Taupe field; portrait overlapping the NESH lettering; white display text across the dark shirt; small navigation.",
+    "components": "Portrait composition, translucent badge and minimal navigation labels.",
+    "typography": "TR3A display and PPNeueMontreal book supporting text.",
+    "adaptation": "Study compositing and text-image overlap as an art-direction rule, with a legible small-screen alternative.",
+    "limits": "The first opening image is available; later screenshots failed. Project interactions and mobile composition remain untested."
+  },
+  "rechroma": {
+    "category": "Creative / tools",
+    "status": "partial",
+    "direction": "The initial capture showed a black pixel-style loading identity; later styles reveal a monochrome interface and generated artwork.",
+    "layout": "Pixel display heading and compact mono labels; canvas-based output alongside interface text.",
+    "components": "Generator controls and canvas output are candidates from page content, pending visual verification.",
+    "typography": "Geist Pixel display around 50px, Geist body and GeistMono labels.",
+    "adaptation": "Separate the grayscale interface palette from colors generated by the tool.",
+    "limits": "A main-interface screenshot is missing. Generated palettes, input behavior and export states were not exercised."
+  },
+  "hobro-digital": {
+    "category": "Agency / creative",
+    "status": "partial",
+    "direction": "The site remained on a dark loading screen while styled portfolio content was present in the document.",
+    "layout": "Black-and-white shell; condensed metadata and italic accent content inferred from computed styles.",
+    "components": "Loading status, portfolio labels and editorial accent type.",
+    "typography": "PPNeueMontreal, AkkuratMonoLLWeb, FreigBigProLigIta; Kamerik205 also appears.",
+    "adaptation": "Confirm the actual rendered hierarchy before treating split-text parent measurements as heading sizes.",
+    "limits": "Loading persisted. Main layout, typography scale and motion behavior are unverified."
+  },
+  "i-creativ": {
+    "category": "Agency / creative",
+    "status": "partial",
+    "direction": "The first image was largely blank; later styled content suggests a dark site with oversized condensed headings.",
+    "layout": "Dark surface and large animated-letter heading structure, with canvas content.",
+    "components": "Split-letter title treatment, service sections and canvas scene.",
+    "typography": "Peridot PE Variable supporting text and BebasNeue display sampled at 117px.",
+    "adaptation": "Define the readable resting state of animated headings before specifying motion.",
+    "limits": "Main-page visual composition is unverified. Computed styles alone do not prove visible text or animation completion."
+  },
+  "wembi": {
+    "category": "Technology / product",
+    "status": "visual",
+    "direction": "A lime opening field and large simple statement introduce a digital-twin product, with numbered explanations in later content.",
+    "layout": "Centered opening statement; numbered What / How / Why / Where overview; large recap headings.",
+    "components": "Numbered navigation, large statement blocks and a cookie overlay.",
+    "typography": "HaasUnicaSH-Regular; opening display around 73px and later headings around 95px.",
+    "adaptation": "Study numbered explanations as an information architecture device; distinguish intro lime from later pale surfaces.",
+    "limits": "Cookie controls were not used. Product/demo flow and later sections lack a fresh screenshot."
+  },
+  "wrapped-party": {
+    "category": "Interactive / campaign",
+    "status": "partial",
+    "direction": "The captured Spotify-themed loading scene uses cream, lime and wide outlined display type.",
+    "layout": "Large percentage counter; later DOM exposes party-editing and menu controls without a clear finished-app screenshot.",
+    "components": "Progress counter, outlined lettering and party-editing controls.",
+    "typography": "SpotifyMixWide display around 108px in the loader; later fallback samples require verification.",
+    "adaptation": "Model loader, editor and completed-party states independently.",
+    "limits": "No party was created and no Spotify account was connected. Finished interface and fallback-font causes remain unverified."
+  },
+  "benjamin-creative": {
+    "category": "Portfolio / creative",
+    "status": "partial",
+    "direction": "An orange opening screen with a centered Be® identity leads into styled black portfolio content.",
+    "layout": "Horizontal black identity band in the opening frame; later large white headings and multiple canvases.",
+    "components": "Intro identity, oversized portfolio titles and canvas-based graphics.",
+    "typography": "PPNeueMontrealMedium; H1 sampled at 72px with roughly -5px tracking.",
+    "adaptation": "Treat the orange intro and black portfolio as distinct surfaces in the guide.",
+    "limits": "Opening frame is captured; main portfolio screenshot, canvas interactions and mobile states are unverified."
+  },
+  "podium": {
+    "category": "Agency / sports",
+    "status": "partial",
+    "direction": "A white percentage loader was captured; later content suggests an image-led sports creative portfolio.",
+    "layout": "Central circular loader; project naming and compact labels in the styled document.",
+    "components": "Project labels, portfolio imagery and canvas presentation.",
+    "typography": "Futura project headings sampled at 24px and Univers Condensed labels.",
+    "adaptation": "Confirm the project-grid resting layout before extracting a reusable card system.",
+    "limits": "Initial loader showed 2%. Main portfolio imagery and project transitions lack visual verification."
+  },
+  "charmer-studio": {
+    "category": "Agency / creative",
+    "status": "partial",
+    "direction": "A near-black intro pairs warm white serif text with a progress counter, followed by project/grid controls in the document.",
+    "layout": "Centered editorial title, progress percentage and later grid/list options.",
+    "components": "Serif statement, mono project metadata, grid/list switch and loading scene.",
+    "typography": "WilliamSubheadLC serif sampled at 40px; EvenMono labels.",
+    "adaptation": "Study serif-plus-mono contrast after confirming the portfolio's stable state.",
+    "limits": "The later observation still showed 66% loading; a broken image was visible initially. Main portfolio remains unverified."
+  },
+  "noomo-storytelling": {
+    "category": "Interactive / creative",
+    "status": "partial",
+    "direction": "The first render missed intended styles; the later document restored a lilac, navy and pale-pink storytelling direction.",
+    "layout": "Large display title and framed interactive scene; intended layout only partly supported by the initial screenshot.",
+    "components": "Story frame, very large title and interactive scene.",
+    "typography": "TTNeoris supporting type and TheSeasons display sampled at 273px after styles loaded.",
+    "adaptation": "Use the later styled evidence for typography; exclude the first render's default Times and blue links from tokens.",
+    "limits": "A styled screenshot is missing. Scroll narrative, interaction and font-loading behavior need a revisit."
+  },
+  "a-better-lou": {
+    "category": "Service / wellness",
+    "status": "visual",
+    "direction": "An outdoor portrait and warm cream typography create a personal introduction, with amber actions standing out.",
+    "layout": "Full-page photograph; transparent navigation; large left-aligned copy; three fine-bordered information cells.",
+    "components": "Amber pill actions, circular arrow CTA and bordered information cells.",
+    "typography": "PPNeueMontreal; H1 around 67px and H2 around 57.5px.",
+    "adaptation": "Study trust-building through photography, restrained metadata and a clear contact hierarchy.",
+    "limits": "Service claims were not evaluated. Booking/contact flows and mobile behavior remain untested."
+  },
+  "le-mans-classic": {
+    "category": "Interactive / campaign",
+    "status": "partial",
+    "direction": "A small grayscale image on black was captured during loading; later styled content uses huge condensed type and yellow accents.",
+    "layout": "Photographic narrative with a large BELOW THE LINE title in the styled document.",
+    "components": "Chapter-like scenes, display title and compact controls.",
+    "typography": "Arges display sampled at 311px; DieGroteskC controls around 16px.",
+    "adaptation": "Keep cinematic chapter states separate from persistent controls.",
+    "limits": "Main narrative screenshot, motion timing and chapter transitions remain unverified."
+  },
+  "rob-fwa": {
+    "category": "Interactive / art",
+    "status": "visual",
+    "direction": "A red spectral artwork occupies the black field while tiny technical labels and gold actions frame the controls.",
+    "layout": "Central generated artwork; tracked corner labels; compact playback controls and download actions.",
+    "components": "Player controls, spectrum labels, upload action and PNG/SVG download actions.",
+    "typography": "System monospace stack; title 13px with 3.38px tracking and supporting labels around 10–11px.",
+    "adaptation": "Study the separation between generated artwork and compact control chrome.",
+    "limits": "Audio playback, file upload and export were not exercised. Simplified style capture succeeded after the broader extraction failed."
+  },
+  "yuta-abe": {
+    "category": "Portfolio / interactive",
+    "status": "partial",
+    "direction": "The initial black loading scene progressed in later text to LIGHTS OUT and PRESS SHIFT.",
+    "layout": "Canvas-based opening state; sparse text controls; numbered progress.",
+    "components": "Loading count and keyboard-prompt entry treatment.",
+    "typography": "Space Mono and Japanese Hiragino fallback stacks; split/hidden text prevents a reliable display-size claim.",
+    "adaptation": "Document keyboard access and an understandable resting state before adopting the immersive opening.",
+    "limits": "The post-loader canvas lacks a screenshot. Shift interaction and portfolio content remain unverified."
+  },
+  "aramco-shoot-for-the-future": {
+    "category": "Corporate / campaign",
+    "status": "visual",
+    "direction": "A pale field with a modular green court scene connects corporate identity with an interactive sports campaign.",
+    "layout": "Large campaign headline; small upper-right corporate identity; circular menu and language controls; 3D court scene.",
+    "components": "Circular controls, campaign statement and modular court tiles.",
+    "typography": "Ghawar body and Beta Manifa Advertising display sampled at 102px.",
+    "adaptation": "Study persistent campaign controls and modular scene composition independently.",
+    "limits": "Campaign claims were not checked. Game interactions, language states and cookie controls were not used."
+  },
+  "sakazuki": {
+    "category": "Creative / collective",
+    "status": "partial",
+    "direction": "Warm amber macro imagery and large manifesto words introduce the collective.",
+    "layout": "Full-scene opening media; oversized statement; cream/red/black styled interface content.",
+    "components": "Manifesto typography, collective navigation and immersive media.",
+    "typography": "Hagrid display sampled at 124px and HagridText body.",
+    "adaptation": "Study tactile imagery and manifesto pacing; separate media colors from interface accents.",
+    "limits": "Opening image is available, but later composition and canvas interactions lack a fresh screenshot."
+  },
+  "creative-glu": {
+    "category": "Technology / creative",
+    "status": "visual",
+    "direction": "White oversized type sits over an iridescent chrome form on a grainy black field.",
+    "layout": "Centered 109px-scale headline; rounded translucent navigation and actions; small supporting copy.",
+    "components": "Glass-like pill controls, hero sculpture and small supporting labels.",
+    "typography": "Inter bold display and Inter supporting text.",
+    "adaptation": "Study foreground legibility over complex media and consistency across translucent controls.",
+    "limits": "Cookie consent was left untouched. Product/signup interactions and mobile layouts remain untested."
+  },
+  "bamco": {
+    "category": "Agency / creative",
+    "status": "visual",
+    "direction": "Lime, cream and gold frame an arched produce photograph and delicate uppercase display type.",
+    "layout": "Left-aligned thin headline; central arch-masked photograph; floating dot; cream navigation pill.",
+    "components": "Arch media mask, pill navigation, gold contact action and thin display headings.",
+    "typography": "PP Hatton Light display sampled around 67px; NoiGrotesk regular/light body.",
+    "adaptation": "Study the image mask and quiet display weight as compositional rules, with pill controls kept consistent.",
+    "limits": "Contact flow, project details and motion behavior remain untested."
+  },
+  "rob-mills": {
+    "category": "Architecture / property",
+    "status": "visual",
+    "direction": "A full-bleed wave scene and centered RMA identity establish an architecture practice through imagery.",
+    "layout": "White navigation over media; centered sculptural identity and modest introduction; quieter neutral surfaces in later content.",
+    "components": "Overlay navigation, image scenes, compact section titles and project imagery.",
+    "typography": "Bau supporting text around 22px; later H2 around 28px with tracking.",
+    "adaptation": "Study image sequencing and caption hierarchy; keep photographic texture separate from the neutral UI palette.",
+    "limits": "Video controls, project navigation and mobile overlays remain untested."
+  },
+  "ortiz-leon": {
+    "category": "Architecture / property",
+    "status": "visual",
+    "direction": "An off-white shell and dark-gray text create a restrained frame for architecture photography and news.",
+    "layout": "Horizontal navigation and language labels; framed large project photo; news headings and project grid.",
+    "components": "Language controls, project imagery, news entries and simple navigation.",
+    "typography": "GalanoGrotesqueAlt; news heading sampled at 36px.",
+    "adaptation": "Study project/news hierarchy and multilingual navigation. Cookie vendor colors are separate from the practice palette.",
+    "limits": "Language switching and project details remain untested. The blue cookie-control color is excluded from brand-role tokens."
+  },
+  "50-jones": {
+    "category": "Architecture / property",
+    "status": "visual",
+    "direction": "Interior media and a thin centered identity lead into warm cream surfaces and copper section titles.",
+    "layout": "Full-screen interior scene; hamburger at left; outlined apartment action at right; editorial amenity sections below.",
+    "components": "Outlined leasing action, media control, amenity section labels and warm display headings.",
+    "typography": "Lato body, HendersonSansBasic uppercase labels around 14px and Optima H2 around 30px.",
+    "adaptation": "Study the hierarchy from atmospheric introduction to practical leasing actions.",
+    "limits": "Apartment search, leasing forms, media controls and mobile menu remain untested."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "5c4eb249-fa38-4254-81e0-a32ee22766e2",
+  "sourceUrl": "https://styles.refero.design/style/5c4eb249-fa38-4254-81e0-a32ee22766e2",
+  "fetchedAt": "2026-10-02T21:42:37.540368+00:00",
+  "extractedAt": "2026-10-02T21:42:37.591703+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Zora — Style Reference",
+  "htmlSha256": "ed44b8fd9b7233ac15eab52f1abb9be92f2876694950b8f545b93e49a52ce8ef",
+  "cache": ".cache/5c4eb249-fa38-4254-81e0-a32ee22766e2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bc6b9993ecac53441309229449f367e4818c858cb9b9e20c298f36febb5b68cd",
+      "bytes": 16266,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b7cc3525-f1ab-4b8d-ac74-f19b1efc088f.jpg",
+    "fetchedAt": "2026-10-02T21:42:39.537892+00:00",
+    "sha256": "39df09a276247219b8344fef7a64ae834a972288ae8c9130a589c8a45f9f50d2",
+    "bytes": 141207,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

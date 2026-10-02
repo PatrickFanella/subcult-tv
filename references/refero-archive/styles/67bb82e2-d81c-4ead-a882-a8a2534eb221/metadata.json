@@ -1,0 +1,29 @@
+{
+  "styleId": "67bb82e2-d81c-4ead-a882-a8a2534eb221",
+  "sourceUrl": "https://styles.refero.design/style/67bb82e2-d81c-4ead-a882-a8a2534eb221",
+  "fetchedAt": "2026-10-02T21:19:21.563773+00:00",
+  "extractedAt": "2026-10-02T21:19:21.614435+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Glyphs — Style Reference",
+  "htmlSha256": "22e35d18782c2c5208f8885e51c3d1538151c2163e16e601438396794e9e9b00",
+  "cache": ".cache/67bb82e2-d81c-4ead-a882-a8a2534eb221.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "61c18cd28a192791aa5b3e613f0a858d1a3cd4149f22b57a1d6d7aa47145beba",
+      "bytes": 19652,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/04ea3de4-3c1b-41c5-b88d-c3200f3ded08.jpg",
+    "fetchedAt": "2026-10-02T21:26:27.990664+00:00",
+    "sha256": "9be9afcc58ff67df432f3aa1df28011b34f905343fd5e54b619eed75b2dbfe4e",
+    "bytes": 73905,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

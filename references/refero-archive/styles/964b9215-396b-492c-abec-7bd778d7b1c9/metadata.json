@@ -1,0 +1,29 @@
+{
+  "styleId": "964b9215-396b-492c-abec-7bd778d7b1c9",
+  "sourceUrl": "https://styles.refero.design/style/964b9215-396b-492c-abec-7bd778d7b1c9",
+  "fetchedAt": "2026-10-02T21:32:22.314117+00:00",
+  "extractedAt": "2026-10-02T21:32:22.335175+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Titan — Style Reference",
+  "htmlSha256": "5528a8bf539c69ce2299bfd3370e137926c7cb1dfb825ff2423a38afcbbf0458",
+  "cache": ".cache/964b9215-396b-492c-abec-7bd778d7b1c9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c547f2e7dcc4c2e34b695655d31559d8677008df17a1949706bd4477d2cb9d69",
+      "bytes": 20274,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f3032863-236e-460b-b7c5-23b8a1a6a3b8.jpg",
+    "fetchedAt": "2026-10-02T21:32:24.072097+00:00",
+    "sha256": "673455f526c8c2d12718679e9f669e2f7e8ed3787d7841dfff5250cca183605e",
+    "bytes": 91009,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

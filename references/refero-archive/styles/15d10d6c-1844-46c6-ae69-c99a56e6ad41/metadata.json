@@ -1,0 +1,29 @@
+{
+  "styleId": "15d10d6c-1844-46c6-ae69-c99a56e6ad41",
+  "sourceUrl": "https://styles.refero.design/style/15d10d6c-1844-46c6-ae69-c99a56e6ad41",
+  "fetchedAt": "2026-10-02T21:48:13.524376+00:00",
+  "extractedAt": "2026-10-02T21:48:13.568359+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Swap — Style Reference",
+  "htmlSha256": "b91454e60c886d1d87b9a051f229a3f18be48ef8f1022c059e300ca9d31f5c04",
+  "cache": ".cache/15d10d6c-1844-46c6-ae69-c99a56e6ad41.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8b5855495464b51e1a77ad9c51abdd2ee7411865ec8b888ab31b2a36be4383d5",
+      "bytes": 22894,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4ec42fa5-30be-4352-a2f0-212c106d1f89.jpg",
+    "fetchedAt": "2026-10-02T21:48:15.471713+00:00",
+    "sha256": "4b329424d04e176294021d7e4afbc339b916865fd4bf65fb70c710643cb221f1",
+    "bytes": 62293,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

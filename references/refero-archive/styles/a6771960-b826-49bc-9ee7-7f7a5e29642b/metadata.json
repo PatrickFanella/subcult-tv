@@ -1,0 +1,29 @@
+{
+  "styleId": "a6771960-b826-49bc-9ee7-7f7a5e29642b",
+  "sourceUrl": "https://styles.refero.design/style/a6771960-b826-49bc-9ee7-7f7a5e29642b",
+  "fetchedAt": "2026-10-02T21:58:50.205890+00:00",
+  "extractedAt": "2026-10-02T21:58:50.256189+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "PlanetScale — Style Reference",
+  "htmlSha256": "752aa99cf9467407c01269904bd0e0e7233bd8e84907bd528b453088f71f9291",
+  "cache": ".cache/a6771960-b826-49bc-9ee7-7f7a5e29642b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cdc5cafe25894c0991cac1f2bfc5cc923e3a49fb6e8506e477ef5780fb30ddb6",
+      "bytes": 15506,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6b212d38-243e-43fa-9715-1c68ddea5cf6.jpg",
+    "fetchedAt": "2026-10-02T21:58:52.320371+00:00",
+    "sha256": "5484641a1897c58e4e4e0f84bfd6f09b410152dcf2eadd2154b79d14b518ef9c",
+    "bytes": 143179,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

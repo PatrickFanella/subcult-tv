@@ -1,0 +1,29 @@
+{
+  "styleId": "3b6a17f0-3bdf-418c-a95e-0b89e5a8b2f8",
+  "sourceUrl": "https://styles.refero.design/style/3b6a17f0-3bdf-418c-a95e-0b89e5a8b2f8",
+  "fetchedAt": "2026-10-02T21:34:50.000252+00:00",
+  "extractedAt": "2026-10-02T21:34:50.024690+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Raycast — Style Reference",
+  "htmlSha256": "381e85b5d5271dba10db43b66ee43e722d3403826de757029845e39d008dd066",
+  "cache": ".cache/3b6a17f0-3bdf-418c-a95e-0b89e5a8b2f8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8c478cfbd4a9547f550229985c057707cac5b70586008ad838b861a14fb201ed",
+      "bytes": 31387,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ee40e139-0b24-47a0-9ea0-98372d317c5b.jpg",
+    "fetchedAt": "2026-10-02T21:34:52.084443+00:00",
+    "sha256": "ffd4e336ca5e240c3edc54322ecf05151fb0a2bc4a6d03da3f02b2d7712e3c97",
+    "bytes": 79956,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

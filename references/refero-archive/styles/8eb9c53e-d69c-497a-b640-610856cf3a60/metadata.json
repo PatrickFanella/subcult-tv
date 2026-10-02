@@ -1,0 +1,29 @@
+{
+  "styleId": "8eb9c53e-d69c-497a-b640-610856cf3a60",
+  "sourceUrl": "https://styles.refero.design/style/8eb9c53e-d69c-497a-b640-610856cf3a60",
+  "fetchedAt": "2026-10-02T21:34:58.096733+00:00",
+  "extractedAt": "2026-10-02T21:34:58.124422+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hyperstudio — Style Reference",
+  "htmlSha256": "083e366cc01fbdce623d66c34017feb4fb9b62c86c50c5042f452f1d8fdd7a23",
+  "cache": ".cache/8eb9c53e-d69c-497a-b640-610856cf3a60.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e0b180f8821a318e9dc80bee014e055c54e40e7c5f757065a5973e108d7c303d",
+      "bytes": 17653,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7ceab868-0c06-49c2-b088-f8de11a2e110.jpg",
+    "fetchedAt": "2026-10-02T21:35:00.111798+00:00",
+    "sha256": "f2c72e7cf62cc096493ac5c90cb382e0b5be871d1ba07436783306d757432296",
+    "bytes": 177184,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

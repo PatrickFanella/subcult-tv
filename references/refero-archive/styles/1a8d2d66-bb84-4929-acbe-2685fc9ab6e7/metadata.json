@@ -1,0 +1,29 @@
+{
+  "styleId": "1a8d2d66-bb84-4929-acbe-2685fc9ab6e7",
+  "sourceUrl": "https://styles.refero.design/style/1a8d2d66-bb84-4929-acbe-2685fc9ab6e7",
+  "fetchedAt": "2026-10-02T21:40:53.466511+00:00",
+  "extractedAt": "2026-10-02T21:40:53.491309+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Daniellelevitt — Style Reference",
+  "htmlSha256": "6c35b56008ad33a7bd395e1b904170d6faa249ad7ee759bf9a363f629baec56f",
+  "cache": ".cache/1a8d2d66-bb84-4929-acbe-2685fc9ab6e7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2b59bec52ab4736c6c1edeb91678aafd65e3179289e6c4431e7d173741b17ade",
+      "bytes": 16710,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8d6f6a6d-b3a2-4e11-8f57-0051c110b55d.jpg",
+    "fetchedAt": "2026-10-02T21:40:55.503657+00:00",
+    "sha256": "410dddd4068bdbc3c5ada9c1c10f07c47c9d9faf264230b2dc7470dbf76d82ec",
+    "bytes": 94843,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

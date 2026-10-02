@@ -1,0 +1,29 @@
+{
+  "styleId": "ba0e947f-0ffa-4ea9-b483-86c981a42464",
+  "sourceUrl": "https://styles.refero.design/style/ba0e947f-0ffa-4ea9-b483-86c981a42464",
+  "fetchedAt": "2026-10-02T21:53:30.305489+00:00",
+  "extractedAt": "2026-10-02T21:53:30.352787+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Advene — Style Reference",
+  "htmlSha256": "007e71d0e36e0bace12f6f7865757630b334f6f24a9534f935917e4d6aef19d3",
+  "cache": ".cache/ba0e947f-0ffa-4ea9-b483-86c981a42464.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "346d8d83228b6a1a6dc43f9eb5aadd88ca19ebb812cdf95c8d97686a250766f3",
+      "bytes": 23185,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bd190a61-0aeb-4fd8-850d-08a9d0c8f846.jpg",
+    "fetchedAt": "2026-10-02T21:53:32.187788+00:00",
+    "sha256": "055631e59b2c55aae479de72434c6018fc8721100bbd71851b028ccdb942fe59",
+    "bytes": 70776,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

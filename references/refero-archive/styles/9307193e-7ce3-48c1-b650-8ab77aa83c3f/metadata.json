@@ -1,0 +1,29 @@
+{
+  "styleId": "9307193e-7ce3-48c1-b650-8ab77aa83c3f",
+  "sourceUrl": "https://styles.refero.design/style/9307193e-7ce3-48c1-b650-8ab77aa83c3f",
+  "fetchedAt": "2026-10-02T21:59:54.179301+00:00",
+  "extractedAt": "2026-10-02T21:59:54.227960+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Redbrick Coffee — Style Reference",
+  "htmlSha256": "853bac1d936236752038c43bf2659adb58765c95eb346ef73ef630760331224f",
+  "cache": ".cache/9307193e-7ce3-48c1-b650-8ab77aa83c3f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "60c3f6d60421189c8d1fbc7334e80e189e8616eb647e96e3c661fed0e5fa6c3a",
+      "bytes": 20368,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3e4ec7ed-2435-4794-bb6f-d692eb2d19a8.jpg",
+    "fetchedAt": "2026-10-02T21:59:56.341021+00:00",
+    "sha256": "7c0cd802f0314b234774fa0cd0a505ccedc8cde8190bbacbe5aabbf8501e3308",
+    "bytes": 136501,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

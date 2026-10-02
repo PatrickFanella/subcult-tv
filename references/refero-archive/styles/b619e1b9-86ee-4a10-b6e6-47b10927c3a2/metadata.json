@@ -1,0 +1,29 @@
+{
+  "styleId": "b619e1b9-86ee-4a10-b6e6-47b10927c3a2",
+  "sourceUrl": "https://styles.refero.design/style/b619e1b9-86ee-4a10-b6e6-47b10927c3a2",
+  "fetchedAt": "2026-10-02T21:39:54.617968+00:00",
+  "extractedAt": "2026-10-02T21:39:54.665494+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Zeus Jones — Style Reference",
+  "htmlSha256": "c07729a4e8e769749f316e641e747942808f8aa3d5fb074e56cf47c7f747e0a1",
+  "cache": ".cache/b619e1b9-86ee-4a10-b6e6-47b10927c3a2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6abea29e32981f2900c0c99c13565f9e4cfa2284efba6173e02ac7743f77a6ef",
+      "bytes": 20828,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/80787af2-b825-47ba-931b-963eed593786.jpg",
+    "fetchedAt": "2026-10-02T21:39:56.074277+00:00",
+    "sha256": "d9518d276de0dc437b70b633a21aa4886db4004db4b749ae9a0b8fce303c637a",
+    "bytes": 115431,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

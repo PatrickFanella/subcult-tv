@@ -1,0 +1,29 @@
+{
+  "styleId": "01d6013d-a176-4a22-b7dd-fbd113592956",
+  "sourceUrl": "https://styles.refero.design/style/01d6013d-a176-4a22-b7dd-fbd113592956",
+  "fetchedAt": "2026-10-02T21:56:50.516346+00:00",
+  "extractedAt": "2026-10-02T21:56:50.540294+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Oevra — Style Reference",
+  "htmlSha256": "fa7f96fb563f45a1670c07471a657d7e84e65ef87d690acf67283af9612c43f9",
+  "cache": ".cache/01d6013d-a176-4a22-b7dd-fbd113592956.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d8fc32cc3ec77078e1e8a556336a96ae5f29c4d8e4c3b9fab8592772bd5b117b",
+      "bytes": 20794,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6dc46fae-021a-4957-b244-ccba949d43e2.jpg",
+    "fetchedAt": "2026-10-02T21:56:52.200511+00:00",
+    "sha256": "bb11a702acbdc45b000ee32942b8dcb1aa37b44497461b9767f8e93a5ba13b1e",
+    "bytes": 34118,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

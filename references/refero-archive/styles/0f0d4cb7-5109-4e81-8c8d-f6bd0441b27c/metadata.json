@@ -1,0 +1,29 @@
+{
+  "styleId": "0f0d4cb7-5109-4e81-8c8d-f6bd0441b27c",
+  "sourceUrl": "https://styles.refero.design/style/0f0d4cb7-5109-4e81-8c8d-f6bd0441b27c",
+  "fetchedAt": "2026-10-02T21:51:34.250880+00:00",
+  "extractedAt": "2026-10-02T21:51:34.295637+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Coda — Style Reference",
+  "htmlSha256": "e58835d42507bd5f6df68ed2c388a371a91d89ba642bd13eacbbf41f695a41c8",
+  "cache": ".cache/0f0d4cb7-5109-4e81-8c8d-f6bd0441b27c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c39bf5b75386ea16c8212c1ff2a047cae1f1cc3f2e3539b83704c03182ccb7f4",
+      "bytes": 22254,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/965e1a7e-ee1f-40a2-9474-cd40b5f0eaff.jpg",
+    "fetchedAt": "2026-10-02T21:51:36.301664+00:00",
+    "sha256": "75ebbd3b035d4e0d1943c63faf5c4b91ec4bc539148d84bffdcbb53a53fcd5cc",
+    "bytes": 96930,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

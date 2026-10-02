@@ -1,0 +1,192 @@
+{
+  "canvas": 2,
+  "capturedAt": "2026-10-02T20:58:00.199Z",
+  "samples": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "Times",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BODY",
+      "text": "Excalidraw\nYour drawings are saved in your br"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "Times",
+      "shadow": "none",
+      "size": "32px",
+      "tag": "H1",
+      "text": "Excalidraw"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "color": "rgb(153, 153, 153)",
+      "font": "Arial",
+      "shadow": "none",
+      "size": "14px",
+      "tag": "BUTTON",
+      "text": "Open\nCmd+O"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "color": "rgb(153, 153, 153)",
+      "font": "Arial",
+      "shadow": "none",
+      "size": "14px",
+      "tag": "BUTTON",
+      "text": "Help\n?"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "color": "rgb(153, 153, 153)",
+      "font": "Arial",
+      "shadow": "none",
+      "size": "14px",
+      "tag": "BUTTON",
+      "text": "Live collaboration..."
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "color": "rgb(153, 153, 153)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "14px",
+      "tag": "A",
+      "text": "Sign up"
+    },
+    {
+      "background": "rgb(236, 236, 244)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 1px",
+      "size": "13.3328px",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "H2",
+      "text": "Shapes"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "V"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "R"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "D"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "O"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "A"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "L"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "P"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(27, 27, 31)",
+      "color": "rgb(27, 27, 31)",
+      "font": "Assistant, system-ui, \"system-ui\", -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "T"
+    }
+  ],
+  "title": "Excalidraw Whiteboard",
+  "url": "https://excalidraw.com/",
+  "viewport": {
+    "height": 800,
+    "width": 1280
+  }
+}

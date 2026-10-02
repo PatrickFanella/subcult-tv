@@ -1,0 +1,29 @@
+{
+  "styleId": "6144c3ae-fc57-4efe-b6ed-2b5eab2dc108",
+  "sourceUrl": "https://styles.refero.design/style/6144c3ae-fc57-4efe-b6ed-2b5eab2dc108",
+  "fetchedAt": "2026-10-02T21:50:37.532522+00:00",
+  "extractedAt": "2026-10-02T21:50:37.579075+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Phantom — Style Reference",
+  "htmlSha256": "f118a3a2d5157cf2ca9ab43e0480c75477d8a73dbb4e6d70c20bcacdc7379ec0",
+  "cache": ".cache/6144c3ae-fc57-4efe-b6ed-2b5eab2dc108.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7fe072e222ae4feaab1f63650da5b036761bb422a40ed4dd09b0439a6833011c",
+      "bytes": 18400,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b10c1ac3-159e-4f68-ab42-12f73ed0a917.jpg",
+    "fetchedAt": "2026-10-02T21:50:39.585893+00:00",
+    "sha256": "db3f2415de0fc1003d4f74fa9513324ec2c9e79412db214f8c509185ba2854c8",
+    "bytes": 88588,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

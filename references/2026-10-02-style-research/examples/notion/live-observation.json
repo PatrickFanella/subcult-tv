@@ -1,0 +1,28 @@
+{
+  "canvas": 0,
+  "capturedAt": "2026-10-02T21:16:41.234Z",
+  "samples": [
+    {
+      "background": "rgb(25, 25, 25)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "sans-serif",
+      "gap": "normal",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "padding": "0px",
+      "radius": "0px",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BODY",
+      "text": "",
+      "weight": "400"
+    }
+  ],
+  "title": "Notion",
+  "url": "https://www.notion.so/login",
+  "viewport": {
+    "height": 800,
+    "width": 1280
+  }
+}

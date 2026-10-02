@@ -1,0 +1,9 @@
+/* Observed values, not canonical brand roles. See DESIGN.md and tokens.json. */
+:root {
+  --observed-color-01: rgb(26, 25, 22);
+  --observed-color-02: rgb(123, 115, 108);
+  --observed-color-03: rgb(26, 26, 26);
+  --observed-color-04: rgb(255, 255, 255);
+  --observed-font-01: Inter, "Inter Fallback", system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --observed-font-02: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}

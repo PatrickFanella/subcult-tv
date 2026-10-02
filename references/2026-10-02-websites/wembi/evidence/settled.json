@@ -1,0 +1,1225 @@
+{
+  "id": "wembi",
+  "name": "Wembi",
+  "requestedUrl": "https://www.wembi.ai/en",
+  "screenshotUnavailable": "T3 snapshot failed after browser client changed; initial screenshot retained",
+  "bodyText": "What\nHow\nWhy\nWhere\nOverview\nRecap\nLogin\nContact\nN°001\nThe Digital Twin of Everything\nWembi instantly\nimproves the\nperformance of any\ndevice, machine, or digital\nsystem by creating its\nvirtual replica.\nN.001\nWHAT\nN.001\nN°001The Digital Twin of Everything\nAn intelligent Digital Twin that can be fully managed remotely and in real time. It uses predictive analysis to identify the best possible future scenario.\nN.002\nHOW\nN.002\nDigital Twin\nFunctioning\n01\nDigital Twin\nData\nDevice\nApplication\n\nAcquisition and normalization of data from\nfield devices: collection, analysis, and\nvisualization.\n\nRemote management of physical\nequipment: control, predictive\nmaintenance, optimization, and integration.\n\nUsage rules and logic: automation,\nefficiency improvement, simulation,\nprediction, and AI integration.\n\n02\nFunctioning\nData Acquisition\nFull Control\nPrediction\n\nReal-time conversion of the equipment's\nphysical behavior into useful digital data\nand information.\n\nInterpretation and validation of the\noperating status of the entire system,\nenabling complete management.\n\nAnticipating the future: what may happen\nto the system if an event does or does not\noccur.\n\nN.003\nWHY\nN.003\nEffective\nSustainable\nEfficient\nFree\nN.004\nWHERE\nN.004\nIndustrial\nEnergy\nAerospace\nMedical\nN.005\nQUESTIONS\nN.005\nFAQ\nTo make everything easier, we have collected answers to the most frequently asked questions here.\nN°01\nN°02\nN°03\nN°04\nN°05\nWembi is a web platform that lets users view and manage any equipment with a digital—or digitizable—interface from a single dashboard tailored to their needs, for both analytical and predictive purposes.\nAny machine, physical device, sensor, or asset that has, or can potentially have, a digital interface. Today, that means practically any physical device that connects to a power outlet—and many others besides.\nWembi integrates with a distributed, fully open-source OT-IT architecture, so there are no additional constraints arising from license fees, recurring charges, or vendor lock-in. Once the initial integration needed to activate the service is complete, users can access the dashboard on a fully pay-per-use basis.\nCompared with other IoT Edge and Edge AI platforms, it simplifies solution adoption and onboarding, user experience, integration, and interoperability. It improves equipment efficiency after deployment, delivers substantial savings through predictive maintenance, increases production throughput, and reduces environmental impact.\nCreating a virtual replica of a physical system enables analysis and full management of its component devices, the data flowing through it, and the applications in use. This makes it possible to simulate its behavior, condition, and performance; monitor it easily; anticipate potential problems; optimize and test without risk; and simulate scenarios that increase production and improve energy efficiency.\nDomanda\nWhat exactly is Wembi?\nWhat types of equipment can be\nconnected to Wembi?\nWhat constraints apply once\nequipment is connected to\nWembi?\n. What tangible value does Wembi\nadd?\nWhy should I create Digital Twins\nof my equipment?\nRead answer\nN.006\nCONTACT\nN.006\nYour transformation starts here. Contact us.\nMail\nPhone\nHeadquarter\nVia Cotonificio, 45\n\n33010 - Feletto Umberto\n\nUdine - Italy\nContact\nPhone - +39 351 609 7589\nMail - info@wembi.ai\nP.IVA & C.F. 03148630308\nWembi powered by Innoverse Group\nCookie\nPrivacy\nCredits\nLanguage\nIta\n·\nEng\n\nNoi (www.wembi.ai/) e terze parti selezionate (1) raccogliamo informazioni personali come specificato nella privacy policy e utilizziamo cookie o tecnologie simili per finalità tecniche e, con il tuo consenso, anche per le finalità di misurazione come specificato nella cookie policy.\n\nPuoi liberamente prestare, rifiutare o revocare il tuo consenso, in qualsiasi momento, accedendo al pannello delle preferenze. Il rifiuto del consenso può rendere non disponibili le relative funzioni.\n\nUsa il pulsante “Accetta” per acconsentire. Usa il pulsante “Rifiuta” per continuare senza accettare.\n\nScopri di più e personalizza\nRifiuta\nAccetta",
+  "canvas": [],
+  "capturedAt": "2026-10-02T20:24:32.199Z",
+  "colors": [
+    [
+      "rgb(0, 0, 0)",
+      63
+    ],
+    [
+      "rgb(255, 255, 255)",
+      9
+    ],
+    [
+      "rgb(237, 232, 232)",
+      5
+    ],
+    [
+      "rgb(190, 255, 139)",
+      5
+    ],
+    [
+      "rgb(192, 223, 233)",
+      2
+    ],
+    [
+      "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      1
+    ],
+    [
+      "rgb(56, 56, 56)",
+      1
+    ]
+  ],
+  "fontFaces": [
+    "@font-face { font-display: swap; font-family: HaasUnicaSH-Medium; font-style: normal; src: url(\"../fonts/HaasUnicaSH-Medium.woff2\") format(\"woff2\"), url(\"../fonts/HaasUnicaSH-Medium.woff\") format(\"woff\"), url(\"../fonts/HaasUnicaSH-Medium.otf\") format(\"opentype\"); unicode-range: U+0-2A, U+2C-3F, U+41-FFFF; }",
+    "@font-face { font-display: swap; font-family: HaasUnicaSH-Regular; font-style: normal; src: url(\"../fonts/HaasUnicaSH-Regular.woff2\") format(\"woff2\"), url(\"../fonts/HaasUnicaSH-Regular.woff\") format(\"woff\"), url(\"../fonts/HaasUnicaSH-Regular.otf\") format(\"opentype\"); unicode-range: U+0-2A, U+2C-3F, U+41-FFFF; }",
+    "@font-face { font-display: swap; font-family: ductile; font-style: normal; src: url(\"../fonts/ductile.woff2\") format(\"woff2\"), url(\"../fonts/ductile.woff\") format(\"woff\"), url(\"/fonts/ductile.otf\") format(\"opentype\"); unicode-range: U+0-2A, U+2C-3F, U+41-FFFF; }"
+  ],
+  "fonts": [
+    [
+      "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      39
+    ],
+    [
+      "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      23
+    ],
+    [
+      "-apple-system, sans-serif",
+      8
+    ]
+  ],
+  "images": [
+    {
+      "alt": "",
+      "url": "https://www.wembi.ai/cms/uploads/1_HEADER_WEMBI_42e842a611.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://www.wembi.ai/cms/uploads/2_HOW_WEMBI_32815ecf42.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://www.wembi.ai/cms/uploads/3_A_Digital_Twin_08a265d77f.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://www.wembi.ai/cms/uploads/3_B_Digital_Twin_56b0bea44e.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://www.wembi.ai/cms/uploads/3_C_Application_4b8a514fd1.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://www.wembi.ai/cms/uploads/4_A_Functioning_Acquisizione_6a2a16989e.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://www.wembi.ai/cms/uploads/4_B_Functioning_Controllo_d73a25880c.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://www.wembi.ai/cms/uploads/4_C_Functioning_Prediction_51a31c4019.jpg"
+    },
+    {
+      "alt": "",
+      "url": "https://www.wembi.ai/cms/uploads/5_WHY_WEMBI_704253f0b4.jpg"
+    }
+  ],
+  "links": [
+    {
+      "text": "Login",
+      "url": "http://app.wembi.ai/"
+    },
+    {
+      "text": "",
+      "url": "https://www.awwwards.com/sites/wembi"
+    },
+    {
+      "text": "Mail",
+      "url": "mailto:info@wembi.ai"
+    },
+    {
+      "text": "Phone",
+      "url": "tel:+393516097589"
+    },
+    {
+      "text": "Via Cotonificio, 45\n\n33010 - Feletto Umberto\n\nUdine - Italy",
+      "url": "https://maps.app.goo.gl/KidxgpAS2TgGTrXc7"
+    },
+    {
+      "text": "Phone - +39 351 609 7589",
+      "url": "mailto:info@wembi.ai"
+    },
+    {
+      "text": "Mail - info@wembi.ai",
+      "url": "tel:+393516097589"
+    },
+    {
+      "text": "P.IVA & C.F. 03148630308",
+      "url": ""
+    },
+    {
+      "text": "Wembi powered by Innoverse Group",
+      "url": "https://innoversegroup.it/"
+    },
+    {
+      "text": "Cookie",
+      "url": "https://www.iubenda.com/privacy-policy/80665257/cookie-policy"
+    },
+    {
+      "text": "Privacy",
+      "url": "https://www.iubenda.com/privacy-policy/80665257"
+    },
+    {
+      "text": "Credits",
+      "url": "https://www.e-t.studio/"
+    },
+    {
+      "text": "Ita",
+      "url": "https://www.wembi.ai/"
+    },
+    {
+      "text": "Eng",
+      "url": "https://www.wembi.ai/en"
+    },
+    {
+      "text": "privacy policy",
+      "url": "https://www.iubenda.com/privacy-policy/80665257/legal?an=no&s_ck=false&newmarkup=yes"
+    },
+    {
+      "text": "cookie policy",
+      "url": "https://www.iubenda.com/privacy-policy/80665257/cookie-policy?an=no&s_ck=false&newmarkup=yes"
+    }
+  ],
+  "mediaQueries": [
+    "screen and (min-width: 768px)",
+    "screen and (min-width: 1024px)",
+    "screen and (max-width: 1023.8px)",
+    "screen and (max-width: 767.8px)",
+    "(prefers-reduced-motion: reduce)",
+    "screen and (min-width: 768px) and (max-width: 1023.8px)",
+    "screen and (max-height: 300px)",
+    "(min-width: 640px)",
+    "(max-width: 639px)",
+    "(max-width: 991px)",
+    "(min-width: 992px)",
+    "(min-width: 480px)",
+    "screen and (max-width: 480px)",
+    "(min-width: 320px)"
+  ],
+  "reducedMotion": [
+    "@media (prefers-reduced-motion: reduce) {\n  html:focus-within { scroll-behavior: auto; }\n  *, ::after, ::before { transition-behavior: normal; transition-timing-function: ease; transition-delay: 0s; transition-property: none; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }\n}"
+  ],
+  "rootVariables": {
+    "--c-accent": "#beff8b",
+    "--c-bg": "#ede8e8",
+    "--c-bg-brand": "#9dbbc5",
+    "--c-dark": "#000",
+    "--c-light": "#fff",
+    "--c-placeholder": "#c0dfe9",
+    "--c-secondary": "#d5bafb",
+    "--c-text": "#000",
+    "--col": "calc((var(--width) - (var(--columns) - 1)*var(--gutter))/var(--columns))",
+    "--col-1": "calc(var(--col)*1 + var(--gutter)*0)",
+    "--col-10": "calc(var(--col)*10 + var(--gutter)*9)",
+    "--col-2": "calc(var(--col)*2 + var(--gutter)*1)",
+    "--col-3": "calc(var(--col)*3 + var(--gutter)*2)",
+    "--col-4": "calc(var(--col)*4 + var(--gutter)*3)",
+    "--col-5": "calc(var(--col)*5 + var(--gutter)*4)",
+    "--col-6": "calc(var(--col)*6 + var(--gutter)*5)",
+    "--col-7": "calc(var(--col)*7 + var(--gutter)*6)",
+    "--col-8": "calc(var(--col)*8 + var(--gutter)*7)",
+    "--col-9": "calc(var(--col)*9 + var(--gutter)*8)",
+    "--columns": "10",
+    "--gutter": "4rem",
+    "--gutter-double": "calc(var(--gutter)*2)",
+    "--gutter-half": "calc(var(--gutter)/2)",
+    "--header-height": "calc(var(--offset-double) + var(--offset))",
+    "--height": "100svh",
+    "--offset": "calc((100vw - var(--width))/2)",
+    "--offset-double": "calc(100vw - var(--width))",
+    "--offset-half": "calc((100vw - var(--width))/4)",
+    "--radius": "1.4rem",
+    "--radius-s": "1rem",
+    "--size": "1920",
+    "--top-offset": "25svh",
+    "--width": "calc(100vw - 5rem)",
+    "--y": "0%"
+  },
+  "samples": [
+    {
+      "background": "rgb(237, 232, 232)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 18916,
+      "letterSpacing": "normal",
+      "lineHeight": "10.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "10.6667px",
+      "tag": "BODY",
+      "text": "What\nHow\nWhy\nWhere\nOverview\nRecap\nLogin\nContact\nN°001\nThe Digital Twin of Everything\nWembi instantly",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "nav__button fs-base",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 27,
+      "letterSpacing": "normal",
+      "lineHeight": "11.7333px",
+      "maxWidth": "none",
+      "padding": "0px 20px",
+      "position": "static",
+      "radius": "0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "What",
+      "weight": "400",
+      "width": 66
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "nav__button fs-base",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 27,
+      "letterSpacing": "normal",
+      "lineHeight": "11.7333px",
+      "maxWidth": "none",
+      "padding": "0px 20px",
+      "position": "static",
+      "radius": "0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "How",
+      "weight": "400",
+      "width": 62
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "nav__button fs-base",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 27,
+      "letterSpacing": "normal",
+      "lineHeight": "11.7333px",
+      "maxWidth": "none",
+      "padding": "0px 20px",
+      "position": "static",
+      "radius": "0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "Why",
+      "weight": "400",
+      "width": 62
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "nav__button fs-base",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 27,
+      "letterSpacing": "normal",
+      "lineHeight": "11.7333px",
+      "maxWidth": "none",
+      "padding": "0px 20px",
+      "position": "static",
+      "radius": "0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "Where",
+      "weight": "400",
+      "width": 73
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "nav__button",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 27,
+      "letterSpacing": "normal",
+      "lineHeight": "11.7333px",
+      "maxWidth": "none",
+      "padding": "0px 20px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "Overview",
+      "weight": "400",
+      "width": 86
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "nav__button",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 27,
+      "letterSpacing": "normal",
+      "lineHeight": "11.7333px",
+      "maxWidth": "none",
+      "padding": "0px 20px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "Recap",
+      "weight": "400",
+      "width": 70
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "nav__button",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 27,
+      "letterSpacing": "normal",
+      "lineHeight": "11.7333px",
+      "maxWidth": "none",
+      "padding": "0px 20px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "Contact",
+      "weight": "400",
+      "width": 78
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "is-desktop",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 18916,
+      "letterSpacing": "normal",
+      "lineHeight": "10.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "10.6667px",
+      "tag": "MAIN",
+      "text": "N°001\nThe Digital Twin of Everything\nWembi instantly\nimproves the\nperformance of any\ndevice, machine",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "steps__heading steps__title__col",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 90,
+      "letterSpacing": "normal",
+      "lineHeight": "86.6667px",
+      "maxWidth": "none",
+      "padding": "0px 0px 3.2586px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "86.6667px",
+      "tag": "H2",
+      "text": "Digital Twin",
+      "weight": "400",
+      "width": 610
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "is-active steps__description ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 110,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "P",
+      "text": "Acquisition and normalization of data from\nfield devices: collection, analysis, and\nvisualization.",
+      "weight": "400",
+      "width": 610
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "steps__description ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 110,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "P",
+      "text": "Remote management of physical\nequipment: control, predictive\nmaintenance, optimization, and integrat",
+      "weight": "400",
+      "width": 610
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "steps__description ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 110,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "P",
+      "text": "Usage rules and logic: automation,\nefficiency improvement, simulation,\nprediction, and AI integratio",
+      "weight": "400",
+      "width": 610
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "steps__heading steps__title__col",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 90,
+      "letterSpacing": "normal",
+      "lineHeight": "86.6667px",
+      "maxWidth": "none",
+      "padding": "0px 0px 3.2586px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "86.6667px",
+      "tag": "H2",
+      "text": "Functioning",
+      "weight": "400",
+      "width": 610
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "is-active steps__description ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 110,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "P",
+      "text": "Real-time conversion of the equipment's\nphysical behavior into useful digital data\nand information.",
+      "weight": "400",
+      "width": 610
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "steps__description ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 110,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "P",
+      "text": "Interpretation and validation of the\noperating status of the entire system,\nenabling complete manage",
+      "weight": "400",
+      "width": 610
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "steps__description ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 110,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "P",
+      "text": "Anticipating the future: what may happen\nto the system if an event does or does not\noccur.",
+      "weight": "400",
+      "width": 610
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "accordion__item__title",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 120,
+      "letterSpacing": "normal",
+      "lineHeight": "104px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "86.6667px",
+      "tag": "BUTTON",
+      "text": "Industrial",
+      "weight": "400",
+      "width": 360
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "accordion__item__title",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 120,
+      "letterSpacing": "normal",
+      "lineHeight": "104px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "86.6667px",
+      "tag": "BUTTON",
+      "text": "Energy",
+      "weight": "400",
+      "width": 297
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "accordion__item__title",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 120,
+      "letterSpacing": "normal",
+      "lineHeight": "104px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "86.6667px",
+      "tag": "BUTTON",
+      "text": "Aerospace",
+      "weight": "400",
+      "width": 449
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "accordion__item__title",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 120,
+      "letterSpacing": "normal",
+      "lineHeight": "104px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "86.6667px",
+      "tag": "BUTTON",
+      "text": "Medical",
+      "weight": "400",
+      "width": 321
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "fs-130 sp-60 ff-regular ta-c col-6-d",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 95,
+      "letterSpacing": "normal",
+      "lineHeight": "95.3333px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "86.6667px",
+      "tag": "H3",
+      "text": "FAQ",
+      "weight": "400",
+      "width": 737
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "border": "",
+      "class": "is-checked tabs__label__wrap",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 53,
+      "letterSpacing": "normal",
+      "lineHeight": "10.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "6.66667px 6.66667px 0px 0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "N°01",
+      "weight": "400",
+      "width": 130
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "tabs__label ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "10px",
+      "height": 52,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "10px 20px 4px 13.3333px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "LABEL",
+      "text": "N°01",
+      "weight": "400",
+      "width": 128
+    },
+    {
+      "background": "rgb(237, 232, 232)",
+      "border": "1px solid rgb(0, 0, 0)",
+      "class": "tabs__label__wrap",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 53,
+      "letterSpacing": "normal",
+      "lineHeight": "10.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "6.66667px 6.66667px 0px 0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "N°02",
+      "weight": "400",
+      "width": 117
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "tabs__label ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "3.33333px",
+      "height": 51,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "10px 20px 4px 0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "LABEL",
+      "text": "N°02",
+      "weight": "400",
+      "width": 115
+    },
+    {
+      "background": "rgb(237, 232, 232)",
+      "border": "1px solid rgb(0, 0, 0)",
+      "class": "tabs__label__wrap",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 53,
+      "letterSpacing": "normal",
+      "lineHeight": "10.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "6.66667px 6.66667px 0px 0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "N°03",
+      "weight": "400",
+      "width": 118
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "tabs__label ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "3.33333px",
+      "height": 51,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "10px 20px 4px 0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "LABEL",
+      "text": "N°03",
+      "weight": "400",
+      "width": 116
+    },
+    {
+      "background": "rgb(237, 232, 232)",
+      "border": "1px solid rgb(0, 0, 0)",
+      "class": "tabs__label__wrap",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 53,
+      "letterSpacing": "normal",
+      "lineHeight": "10.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "6.66667px 6.66667px 0px 0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "N°04",
+      "weight": "400",
+      "width": 119
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "tabs__label ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "3.33333px",
+      "height": 51,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "10px 20px 4px 0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "LABEL",
+      "text": "N°04",
+      "weight": "400",
+      "width": 117
+    },
+    {
+      "background": "rgb(237, 232, 232)",
+      "border": "1px solid rgb(0, 0, 0)",
+      "class": "tabs__label__wrap",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 53,
+      "letterSpacing": "normal",
+      "lineHeight": "10.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "6.66667px 6.66667px 0px 0px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "N°05",
+      "weight": "400",
+      "width": 118
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "tabs__label ff-regular fs-50",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "3.33333px",
+      "height": 51,
+      "letterSpacing": "normal",
+      "lineHeight": "36.6667px",
+      "maxWidth": "none",
+      "padding": "10px 20px 4px 0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "33.3333px",
+      "tag": "LABEL",
+      "text": "N°05",
+      "weight": "400",
+      "width": 116
+    },
+    {
+      "background": "rgb(190, 255, 139)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "tabs__controls__cta",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 59,
+      "letterSpacing": "normal",
+      "lineHeight": "11.7333px",
+      "maxWidth": "none",
+      "padding": "0px 13.3333px",
+      "position": "static",
+      "radius": "3.33333px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "Read answer",
+      "weight": "400",
+      "width": 573
+    },
+    {
+      "background": "rgb(190, 255, 139)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "tabs__controls__nav is-prev",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 59,
+      "letterSpacing": "normal",
+      "lineHeight": "11.7333px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "3.33333px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "",
+      "weight": "400",
+      "width": 59
+    },
+    {
+      "background": "rgb(190, 255, 139)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "tabs__controls__nav",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 59,
+      "letterSpacing": "normal",
+      "lineHeight": "11.7333px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "3.33333px",
+      "size": "10.6667px",
+      "tag": "BUTTON",
+      "text": "",
+      "weight": "400",
+      "width": 59
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "contact__title col-8-d col-5-m ta-c br fs-130 sp-100 ff-regular",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Regular, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 191,
+      "letterSpacing": "normal",
+      "lineHeight": "95.3333px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "86.6667px",
+      "tag": "H3",
+      "text": "Your transformation starts here. Contact us.",
+      "weight": "400",
+      "width": 992
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "footer",
+      "color": "rgb(0, 0, 0)",
+      "font": "HaasUnicaSH-Medium, Helvetica, sans-serif",
+      "gap": "normal",
+      "height": 362,
+      "letterSpacing": "normal",
+      "lineHeight": "10.6667px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "10.6667px",
+      "tag": "FOOTER",
+      "text": "Headquarter\nVia Cotonificio, 45\n\n33010 - Feletto Umberto\n\nUdine - Italy\nContact\nPhone - +39 351 609 ",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "class": "iub-p",
+      "color": "rgb(255, 255, 255)",
+      "font": "-apple-system, sans-serif",
+      "gap": "normal",
+      "height": 98,
+      "letterSpacing": "normal",
+      "lineHeight": "19.6px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "14px",
+      "tag": "P",
+      "text": "Noi (www.wembi.ai/) e terze parti selezionate (1) raccogliamo informazioni personali come specificat",
+      "weight": "300",
+      "width": 416
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "class": "iub-p",
+      "color": "rgb(255, 255, 255)",
+      "font": "-apple-system, sans-serif",
+      "gap": "normal",
+      "height": 78,
+      "letterSpacing": "normal",
+      "lineHeight": "19.6px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "14px",
+      "tag": "P",
+      "text": "Puoi liberamente prestare, rifiutare o revocare il tuo consenso, in qualsiasi momento, accedendo al ",
+      "weight": "300",
+      "width": 416
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "class": "iub-p",
+      "color": "rgb(255, 255, 255)",
+      "font": "-apple-system, sans-serif",
+      "gap": "normal",
+      "height": 39,
+      "letterSpacing": "normal",
+      "lineHeight": "19.6px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "14px",
+      "tag": "P",
+      "text": "Usa il pulsante “Accetta” per acconsentire. Usa il pulsante “Rifiuta” per continuare senza accettare",
+      "weight": "300",
+      "width": 416
+    },
+    {
+      "background": "rgb(56, 56, 56)",
+      "border": "0px none rgb(255, 255, 255)",
+      "class": "iubenda-cs-customize-btn",
+      "color": "rgb(255, 255, 255)",
+      "font": "-apple-system, sans-serif",
+      "gap": "normal",
+      "height": 36,
+      "letterSpacing": "normal",
+      "lineHeight": "19.6px",
+      "maxWidth": "none",
+      "padding": "8px 32px",
+      "position": "static",
+      "radius": "64px",
+      "size": "14px",
+      "tag": "BUTTON",
+      "text": "Scopri di più e personalizza",
+      "weight": "700",
+      "width": 416
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "iubenda-cs-reject-btn iubenda-cs-btn-primary",
+      "color": "rgb(0, 0, 0)",
+      "font": "-apple-system, sans-serif",
+      "gap": "normal",
+      "height": 36,
+      "letterSpacing": "normal",
+      "lineHeight": "19.6px",
+      "maxWidth": "none",
+      "padding": "8px 32px",
+      "position": "static",
+      "radius": "64px",
+      "size": "14px",
+      "tag": "BUTTON",
+      "text": "Rifiuta",
+      "weight": "700",
+      "width": 204
+    },
+    {
+      "background": "rgb(190, 255, 139)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "iubenda-cs-accept-btn iubenda-cs-btn-primary",
+      "color": "rgb(0, 0, 0)",
+      "font": "-apple-system, sans-serif",
+      "gap": "normal",
+      "height": 36,
+      "letterSpacing": "normal",
+      "lineHeight": "19.6px",
+      "maxWidth": "none",
+      "padding": "8px 32px",
+      "position": "static",
+      "radius": "64px",
+      "size": "14px",
+      "tag": "BUTTON",
+      "text": "Accetta",
+      "weight": "700",
+      "width": 204
+    }
+  ],
+  "scrollHeight": 18932,
+  "styleSheets": [
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": "https://www.wembi.ai/_nuxt/entry.BBRjptry.css"
+    },
+    {
+      "readable": true,
+      "url": "https://www.wembi.ai/_nuxt/index.8XIeZprK.css"
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    }
+  ],
+  "title": "Wembi • Instant Digital Twin of Everything",
+  "url": "https://www.wembi.ai/en",
+  "viewport": {
+    "dpr": 2,
+    "height": 800,
+    "width": 1280
+  }
+}

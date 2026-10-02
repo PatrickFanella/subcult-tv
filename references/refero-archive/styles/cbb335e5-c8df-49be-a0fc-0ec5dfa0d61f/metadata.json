@@ -1,0 +1,29 @@
+{
+  "styleId": "cbb335e5-c8df-49be-a0fc-0ec5dfa0d61f",
+  "sourceUrl": "https://styles.refero.design/style/cbb335e5-c8df-49be-a0fc-0ec5dfa0d61f",
+  "fetchedAt": "2026-10-02T21:58:14.272265+00:00",
+  "extractedAt": "2026-10-02T21:58:14.321075+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lattice — Style Reference",
+  "htmlSha256": "8a61dcbece6f134b05d5877a7ac92dcda4b6a86f18389f62c8016b583472e9a9",
+  "cache": ".cache/cbb335e5-c8df-49be-a0fc-0ec5dfa0d61f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "65adf4695de21ea913554e368816adff1162bbda5cdc06dc04f70893c538e423",
+      "bytes": 25199,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/18e84d53-5cb3-4ed5-b66a-17f80016be53.jpg",
+    "fetchedAt": "2026-10-02T21:58:16.233893+00:00",
+    "sha256": "bd124b534d5067eebe43829d51f2b921f69bd03ca1997b48fd384c6e79174ddf",
+    "bytes": 103798,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

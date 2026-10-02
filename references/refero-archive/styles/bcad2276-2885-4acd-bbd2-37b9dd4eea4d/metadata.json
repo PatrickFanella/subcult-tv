@@ -1,0 +1,29 @@
+{
+  "styleId": "bcad2276-2885-4acd-bbd2-37b9dd4eea4d",
+  "sourceUrl": "https://styles.refero.design/style/bcad2276-2885-4acd-bbd2-37b9dd4eea4d",
+  "fetchedAt": "2026-10-02T21:28:14.636232+00:00",
+  "extractedAt": "2026-10-02T21:28:14.693381+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "AXEL ARIGATO — Style Reference",
+  "htmlSha256": "a76bc1ecf9665673237dd4eefe663a9a8563bcf5077af301dbc138a3dfd8b343",
+  "cache": ".cache/bcad2276-2885-4acd-bbd2-37b9dd4eea4d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7164c079db9760a64334064fb37517509a646a297a32d0512fc0fc29145db8c6",
+      "bytes": 15616,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ee662151-38cd-4a2c-86ba-c906ae0df632.jpg",
+    "fetchedAt": "2026-10-02T21:28:16.110795+00:00",
+    "sha256": "115ee4fc8c34cff6939cd45af2d4942bb1c32ec86933fffc6aa8ab5e62179a15",
+    "bytes": 215478,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

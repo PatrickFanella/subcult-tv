@@ -1,0 +1,29 @@
+{
+  "styleId": "3043d3b9-6bcc-472b-b339-1013c37ef4ab",
+  "sourceUrl": "https://styles.refero.design/style/3043d3b9-6bcc-472b-b339-1013c37ef4ab",
+  "fetchedAt": "2026-10-02T21:28:06.021222+00:00",
+  "extractedAt": "2026-10-02T21:28:06.068832+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bedouin's Daughter — Style Reference",
+  "htmlSha256": "dda7375c05935ebd37323c85c2956a52443efe9bc63f1c9fd221795cb5c09e35",
+  "cache": ".cache/3043d3b9-6bcc-472b-b339-1013c37ef4ab.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "feee0afc0aa678e03aea9a1c5f1c84d1821ae394009717090606c296085ce1ce",
+      "bytes": 19175,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1a839b9e-c546-4123-9e04-fa07aaa5016c.jpg",
+    "fetchedAt": "2026-10-02T21:28:08.006715+00:00",
+    "sha256": "b24af8576234bc5bc6cc40a7184ae01ef1eefa2b851b881083a0b359564e4eb6",
+    "bytes": 89274,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

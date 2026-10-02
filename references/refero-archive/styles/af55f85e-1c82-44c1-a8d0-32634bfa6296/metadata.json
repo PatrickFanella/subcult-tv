@@ -1,0 +1,29 @@
+{
+  "styleId": "af55f85e-1c82-44c1-a8d0-32634bfa6296",
+  "sourceUrl": "https://styles.refero.design/style/af55f85e-1c82-44c1-a8d0-32634bfa6296",
+  "fetchedAt": "2026-10-02T21:48:01.513581+00:00",
+  "extractedAt": "2026-10-02T21:48:01.567017+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Reducto — Style Reference",
+  "htmlSha256": "f2adde2370505666b72b1095f77aba2a3d0d0e386238a0e338e8013b8785ee83",
+  "cache": ".cache/af55f85e-1c82-44c1-a8d0-32634bfa6296.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7e0572afd3a5523e850b6543f830f19b0170f37d630ea4c7d3d789c0d757fe90",
+      "bytes": 25799,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/14297253-4eb0-46a5-aa23-c8c896f7dff0.jpg",
+    "fetchedAt": "2026-10-02T21:48:03.541508+00:00",
+    "sha256": "c663a944430191808efb6850397ce07d8bb5a8c6062643c106a458e59f130a45",
+    "bytes": 86746,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

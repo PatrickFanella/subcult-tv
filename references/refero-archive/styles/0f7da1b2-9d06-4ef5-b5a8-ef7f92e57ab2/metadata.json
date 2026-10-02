@@ -1,0 +1,29 @@
+{
+  "styleId": "0f7da1b2-9d06-4ef5-b5a8-ef7f92e57ab2",
+  "sourceUrl": "https://styles.refero.design/style/0f7da1b2-9d06-4ef5-b5a8-ef7f92e57ab2",
+  "fetchedAt": "2026-10-02T21:32:30.016891+00:00",
+  "extractedAt": "2026-10-02T21:32:30.038046+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Augen Pro — Style Reference",
+  "htmlSha256": "02017dc3c28f880db3d63decfe027e2270885d1e5f15c7e2dc0a80c3b0f10eea",
+  "cache": ".cache/0f7da1b2-9d06-4ef5-b5a8-ef7f92e57ab2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "65180298c790add936f6de641dc2072ae0c9a9e6abe3bdbb281617042d3154e4",
+      "bytes": 17756,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/38093eb9-9725-4024-aa95-9a29402990df.jpg",
+    "fetchedAt": "2026-10-02T21:32:31.961822+00:00",
+    "sha256": "3635513634420c1f205264cda94c310447a500458386676b086ab14db0b83fec",
+    "bytes": 33890,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

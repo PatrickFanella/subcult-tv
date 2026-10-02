@@ -1,0 +1,29 @@
+{
+  "styleId": "297f65f7-0fbd-4521-ab91-a5f6e17175d9",
+  "sourceUrl": "https://styles.refero.design/style/297f65f7-0fbd-4521-ab91-a5f6e17175d9",
+  "fetchedAt": "2026-10-02T21:43:33.561004+00:00",
+  "extractedAt": "2026-10-02T21:43:33.657735+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Electronic Materials Office® — Style Reference",
+  "htmlSha256": "70a6693f946565b2b3ac969324efae194317b7cdb11bb74cc4d731139edb913d",
+  "cache": ".cache/297f65f7-0fbd-4521-ab91-a5f6e17175d9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "caebe2699f15e63a3150153ae0c4d12eaf4c43986296e62e38a0848927d1c0e8",
+      "bytes": 19590,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8bd96e37-9352-45d1-b54f-bcb7e29ff8a3.jpg",
+    "fetchedAt": "2026-10-02T21:43:35.703895+00:00",
+    "sha256": "fb0d43e60bb97b825fcba99aefa8dc5cfbbd324a119dc558ed57547bd1e05d0e",
+    "bytes": 114146,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

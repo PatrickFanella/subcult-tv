@@ -1,0 +1,29 @@
+{
+  "styleId": "6120469b-a1c8-46d3-b7fd-8aa6dc22c0d9",
+  "sourceUrl": "https://styles.refero.design/style/6120469b-a1c8-46d3-b7fd-8aa6dc22c0d9",
+  "fetchedAt": "2026-10-02T21:43:01.587865+00:00",
+  "extractedAt": "2026-10-02T21:43:01.636733+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Franco Maria Ricci Editore — Style Reference",
+  "htmlSha256": "d95d340089587f2c481f868209b16116b6be1ba1c45c7eab28015922aa601660",
+  "cache": ".cache/6120469b-a1c8-46d3-b7fd-8aa6dc22c0d9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "13cdcc99a930b75264b6c12c5105e05d78ff5bb12d60967618639eb234aa3408",
+      "bytes": 21754,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fc9da25d-2101-4c9f-ad18-08ca0ffae11f.jpg",
+    "fetchedAt": "2026-10-02T21:43:03.604575+00:00",
+    "sha256": "a7e107acf27b24c7a2bb0c0764f79e18a6de22cd53075c1dc617093c405db9f3",
+    "bytes": 79880,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -67,9 +67,24 @@ def export(destination, site=None, posting_state=None):
         record["asset"] = asset(source)
         media.append(record)
     catalog = {"version": 1, "brands": brands, "media": media, "files": files}
+    reference_source = ROOT / "references/catalog.json"
+    if reference_source.exists():
+        references = json.loads(reference_source.read_text())
+        for record in references["entries"]:
+            folder = ROOT / "references"
+            document = folder / record.pop("document")
+            record["guide"] = document.read_text()
+            record["images"] = [asset(folder / path) for path in record["images"]]
+            record["preview"] = record["images"][0] if record["images"] else ""
+            record["attachments"] = [{"name": Path(path).name, "asset": asset(folder / path)}
+                                     for path in record["attachments"]]
+        reference_output = destination / "references.json.tmp"
+        reference_output.write_text(json.dumps(references, indent=2) + "\n")
     (destination / "catalog.json").write_text(json.dumps(catalog, indent=2) + "\n")
     from export_posting import snapshot
     (destination / "posting.json").write_text(json.dumps(snapshot(posting_state), indent=2) + "\n")
+    if reference_source.exists():
+        reference_output.replace(destination / "references.json")
     if site:
         site = site.resolve()
         selected = {

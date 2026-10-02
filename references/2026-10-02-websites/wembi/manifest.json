@@ -1,0 +1,70 @@
+{
+  "site": "wembi",
+  "source": "https://www.wembi.ai/en",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:16:28.562Z",
+      "url": "https://www.wembi.ai/en",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:24:32.199Z",
+      "url": "https://www.wembi.ai/en",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "fbd77c7419786189a63b58cc99ddc29b9cf975aa5dac202d35497ee0ce9e2a2b",
+      "bytes": 5270
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "1e72cd429153c9386b56d8de9e50a4f412febf0a4dfbb45f8136a91f4be9f8fd",
+      "bytes": 1177
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "e139038be597fa558f552d7491611443981487436848073d8db0dc67b27cb786",
+      "bytes": 39545
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "3ca1c7dad48e1d834c4b800bce1b74005c10b6e78f7bf04605573335a1feccff",
+      "bytes": 38368
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "4e117b98bc6be155f44ab4f6c4c13d77c4bf8f79d75638e50f82e8d4cb0d8de9",
+      "bytes": 58570
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "43c2c1c1e0361367450037687b2e6e734e9c26fffebcd567db6a74d42432eef3",
+      "bytes": 291
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "f7a714777ea6089df851657d5aeebbe6cc0543bccd956213165f71bfdee28190",
+      "bytes": 10775
+    }
+  ]
+}

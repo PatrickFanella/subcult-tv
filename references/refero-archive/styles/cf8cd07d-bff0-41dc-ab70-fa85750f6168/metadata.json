@@ -1,0 +1,29 @@
+{
+  "styleId": "cf8cd07d-bff0-41dc-ab70-fa85750f6168",
+  "sourceUrl": "https://styles.refero.design/style/cf8cd07d-bff0-41dc-ab70-fa85750f6168",
+  "fetchedAt": "2026-10-02T21:57:14.183648+00:00",
+  "extractedAt": "2026-10-02T21:57:14.208157+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "FLORA — Style Reference",
+  "htmlSha256": "75c192ad61c83848058eb1102bb4eb0eed675763d5424ab3024a42b775abc6fe",
+  "cache": ".cache/cf8cd07d-bff0-41dc-ab70-fa85750f6168.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a3d140edad64cb6ac9cc707a86045a31a195c56a6a904aa93138f7fb98a12b2e",
+      "bytes": 22863,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6967ade9-0a43-4977-a53d-cace1d810673.jpg",
+    "fetchedAt": "2026-10-02T21:57:16.211387+00:00",
+    "sha256": "d80e1b2af81f7daaebb10eecfb443eafde3ea2800ae2d5e3975835f9104246db",
+    "bytes": 94005,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

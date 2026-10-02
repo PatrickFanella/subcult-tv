@@ -1,0 +1,192 @@
+{
+  "canvas": 0,
+  "capturedAt": "2026-10-02T20:58:02.201Z",
+  "samples": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(96, 108, 113)",
+      "color": "rgb(96, 108, 113)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "BODY",
+      "text": "Rough.js\nCreate graphics with a hand-drawn, s"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "40px",
+      "tag": "H1",
+      "text": "Rough.js"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "24px",
+      "tag": "H2",
+      "text": "Create graphics with a hand-drawn, sketchy, a"
+    },
+    {
+      "background": "rgba(255, 255, 255, 0.08)",
+      "border": "1px solid rgba(255, 255, 255, 0.2)",
+      "color": "rgba(255, 255, 255, 0.8)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "14.4px",
+      "tag": "A",
+      "text": "View on GitHub"
+    },
+    {
+      "background": "rgba(255, 255, 255, 0.08)",
+      "border": "1px solid rgba(255, 255, 255, 0.2)",
+      "color": "rgba(255, 255, 255, 0.8)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "14.4px",
+      "tag": "A",
+      "text": "Full API"
+    },
+    {
+      "background": "rgba(255, 255, 255, 0.08)",
+      "border": "1px solid rgba(255, 255, 255, 0.2)",
+      "color": "rgba(255, 255, 255, 0.8)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "14.4px",
+      "tag": "A",
+      "text": "Twitter"
+    },
+    {
+      "background": "rgba(255, 255, 255, 0.08)",
+      "border": "1px solid rgba(255, 255, 255, 0.2)",
+      "color": "rgba(255, 255, 255, 0.8)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "14.4px",
+      "tag": "A",
+      "text": "Sponsor this project"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 87, 153)",
+      "color": "rgb(21, 87, 153)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "Star"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 153, 87)",
+      "color": "rgb(21, 153, 87)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "28px",
+      "tag": "H2",
+      "text": "Rough.js"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 87, 153)",
+      "color": "rgb(21, 87, 153)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "SVG paths"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 87, 153)",
+      "color": "rgb(21, 87, 153)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "Canvas"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 87, 153)",
+      "color": "rgb(21, 87, 153)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "SVG"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 153, 87)",
+      "color": "rgb(21, 153, 87)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "28px",
+      "tag": "H2",
+      "text": "Install"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 153, 87)",
+      "color": "rgb(21, 153, 87)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "28px",
+      "tag": "H2",
+      "text": "Usage"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 87, 153)",
+      "color": "rgb(21, 87, 153)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "A",
+      "text": "Full Rough.js API"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 153, 87)",
+      "color": "rgb(21, 153, 87)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "28px",
+      "tag": "H2",
+      "text": "Lines and Ellipses"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 153, 87)",
+      "color": "rgb(21, 153, 87)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "28px",
+      "tag": "H2",
+      "text": "Filling"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(21, 153, 87)",
+      "color": "rgb(21, 153, 87)",
+      "font": "\"SF Pro Display\", -apple-system, \"system-ui\", \"San Francisco\", \"Helvetica Neue\", Helvetica, Ubuntu, Roboto, Noto, \"Segoe UI\", Arial, sans-serif",
+      "shadow": "none",
+      "size": "28px",
+      "tag": "H2",
+      "text": "Sketching style"
+    }
+  ],
+  "title": "Rough.js",
+  "url": "https://roughjs.com/",
+  "viewport": {
+    "height": 800,
+    "width": 1280
+  }
+}

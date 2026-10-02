@@ -1,0 +1,767 @@
+{
+  "id": "noomo-storytelling",
+  "name": "Noomo Storytelling",
+  "requestedUrl": "https://storytelling.noomoagency.com/",
+  "screenshotUnavailable": "T3 snapshot failed after browser client changed; initial screenshot retained",
+  "bodyText": "The power\nof digital\nstorytelling\n\nIn a world that’s\n\nconstantly shifting,\n\n\nwhat\n\nguides\n\nus through\n\nchange,\n\nreinvention,\n\nand the unknown–\n\n\nStories emerge\nthrough\n\n\nThe best stories\n\ndon’t just\n\nspeak to\n\nus.\nThey\n\ninvite us inside.\n\n\nStorytelling is much\nmore than words.\n\nIt is how a spark\n\nbecomes a fire.\n\n\nStorytelling is what you\n\nsee, feel, hear, interactwith.\n\nis narrative.\n\n\nLight\n\nSpirit\n\nSound\n\nHow can the story live at the\nheart of the experience?\n\nStart with clarity\nKnow what you’re trying to say.\nWhether it’s launching a product or\nbuilding emotional connections,\nthe goal needs to be clear.\n\nLet the story guide design\nEvery animation, interaction,\nand visual should serve the\nnarrative. If it doesn’t help\ntell the story, it’s not needed.\n\nExperiment and iterate\nSome of the best ideas came from\nsimply trying things out, seeing\nwhat clicked, and refining from there.\n\nMake it personal\nThe best stories create emotional\nconnections. Whether through AI\npersonalization or custom design\nelements, find ways to make the\nexperience unique for each user.\n\nWhere stories\nbecome experiences\n\nReimagine Phoenix\n\nScroll to explore\n\nLet us help you tell your story the way it was meant\n\nhello@noomoagency.com\nx\nInstagram\nLinkedIn\n>\nClick to start\nClick to start\nAgency\nLabs\nContact\nHome\nAgency\nLabs\nContact\nInstagram\nx\nLinkedin",
+  "canvas": [
+    {
+      "height": 1600,
+      "width": 2560
+    }
+  ],
+  "capturedAt": "2026-10-02T20:25:16.195Z",
+  "colors": [
+    [
+      "rgb(255, 255, 255)",
+      22
+    ],
+    [
+      "rgb(0, 0, 0)",
+      8
+    ],
+    [
+      "rgb(41, 52, 90)",
+      8
+    ],
+    [
+      "rgb(196, 197, 241)",
+      1
+    ],
+    [
+      "rgb(253, 235, 253)",
+      1
+    ]
+  ],
+  "fontFaces": [
+    "@font-face { font-display: swap; font-family: TheSeasons; font-style: italic; font-weight: 400; src: url(\"./fonnts.com-theseasons-it.CUCq9ttA.otf\"); }",
+    "@font-face { font-display: swap; font-family: TTNeoris; font-style: normal; font-weight: 400; src: url(\"./TTNeorisTrialRegular.CykOY4gR.ttf\"); }"
+  ],
+  "fonts": [
+    [
+      "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      34
+    ],
+    [
+      "TheSeasons, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", serif",
+      4
+    ],
+    [
+      "TheSeasons, serif",
+      1
+    ]
+  ],
+  "images": [
+    {
+      "alt": "bird",
+      "url": "https://storytelling.noomoagency.com/images/text_icons/pixelBird.png"
+    },
+    {
+      "alt": "noomo logo",
+      "url": "https://storytelling.noomoagency.com/images/svg/logoSimple.svg"
+    },
+    {
+      "alt": "noomo logo",
+      "url": "https://storytelling.noomoagency.com/images/svg/logoSimple.svg"
+    },
+    {
+      "alt": "circle",
+      "url": "https://storytelling.noomoagency.com/images/svg/soundBorder.svg"
+    },
+    {
+      "alt": "Noomo Agency Logo",
+      "url": "https://storytelling.noomoagency.com/images/svg/logo.svg"
+    },
+    {
+      "alt": "Noomo Agency Logo",
+      "url": "https://storytelling.noomoagency.com/images/svg/logo2.svg"
+    },
+    {
+      "alt": "loader",
+      "url": "https://storytelling.noomoagency.com/images/loader.gif"
+    }
+  ],
+  "links": [
+    {
+      "text": "hello@noomoagency.com",
+      "url": "mailto:hello@noomoagency.com"
+    },
+    {
+      "text": "x",
+      "url": "https://x.com/noomoagency"
+    },
+    {
+      "text": "Instagram",
+      "url": "https://www.instagram.com/noomoagency/"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/noomoagency"
+    },
+    {
+      "text": "",
+      "url": "https://storytelling.noomoagency.com/"
+    },
+    {
+      "text": "Agency",
+      "url": "https://noomoagency.com/"
+    },
+    {
+      "text": "Labs",
+      "url": "https://labs.noomoagency.com/"
+    },
+    {
+      "text": "Contact",
+      "url": "https://storytelling.noomoagency.com/contacts"
+    },
+    {
+      "text": "Home",
+      "url": "https://storytelling.noomoagency.com/"
+    },
+    {
+      "text": "Agency",
+      "url": "https://noomoagency.com/"
+    },
+    {
+      "text": "Labs",
+      "url": "https://labs.noomoagency.com/"
+    },
+    {
+      "text": "Contact",
+      "url": "https://storytelling.noomoagency.com/contacts"
+    },
+    {
+      "text": "Instagram",
+      "url": "https://www.instagram.com/noomoagency/"
+    },
+    {
+      "text": "x",
+      "url": "https://x.com/noomoagency"
+    },
+    {
+      "text": "Linkedin",
+      "url": "https://www.linkedin.com/company/noomoagency"
+    }
+  ],
+  "mediaQueries": [
+    "(min-width: 1024px)",
+    "(max-width: 767px)",
+    "((-webkit-hyphens:none) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b))))",
+    "(not (-webkit-appearance:-apple-pay-button)) or (contain-intrinsic-size:1px)",
+    "(color:color-mix(in lab,red,red))",
+    "(max-width: 1024px)",
+    "(min-width: 320px)",
+    "(min-width: 410px)",
+    "(min-width: 768px)",
+    "(min-width: 1280px)",
+    "(min-width: 1440px)",
+    "(hover: hover)",
+    "(prefers-reduced-motion: reduce)"
+  ],
+  "reducedMotion": [
+    "@media (prefers-reduced-motion: reduce) {\n  .hero-title { animation: auto ease 0s 1 normal none running none; transition: color 0.25s ease-out, text-shadow 0.25s ease-out; }\n  .hero-title-char { animation: auto ease 0s 1 normal none running none; opacity: 1; transform: none; }\n  .hero-title-hot { text-shadow: rgba(255, 90, 31, 0.5) 0px 0px 8px; }\n}"
+  ],
+  "rootVariables": {
+    "--blur-2xl": "40px",
+    "--blur-lg": "16px",
+    "--blur-sm": "8px",
+    "--blur-xs": "4px",
+    "--color-black": "#000",
+    "--color-brand-black": "#29345a",
+    "--color-brand-blue": "#3762be",
+    "--color-brand-blue-200": "#88aeff",
+    "--color-brand-blue-300": "#062969",
+    "--color-brand-blue-500": "#143a8a",
+    "--color-brand-blue-600": "#00276e",
+    "--color-brand-rose-200": "#6248a4",
+    "--color-brand-white": "#f5f5f5",
+    "--color-dark-400": "#060b1d",
+    "--color-dark-500": "#051125",
+    "--color-white": "#fff",
+    "--container-padding": "2rem",
+    "--container-padding-xs": "1.6rem",
+    "--default-font-family": "var(--font-sans)",
+    "--default-mono-font-family": "var(--font-mono)",
+    "--default-transition-duration": ".15s",
+    "--default-transition-timing-function": "cubic-bezier(.4,0,.2,1)",
+    "--ease-in-out": "cubic-bezier(.65,.05,.36,1)",
+    "--ease-linear": "linear",
+    "--font-mono": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
+    "--font-sans": "ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
+    "--font-sans-regular": "\"TTNeoris\",ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
+    "--font-serif": "\"TheSeasons\",ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
+    "--font-weight-300": "300",
+    "--opacity-0": "0",
+    "--opacity-100": "1",
+    "--opacity-70": ".7",
+    "--radius": "2.4rem",
+    "--radius-7": ".7rem",
+    "--radius-full": "9999px",
+    "--radius-xs": ".4rem",
+    "--spacing": ".1rem",
+    "--spacing-0": "0",
+    "--spacing-134": "13.4rem",
+    "--spacing-14": "1.4rem",
+    "--spacing-145": "14.5rem",
+    "--spacing-16": "1.6rem",
+    "--spacing-20": "2rem",
+    "--spacing-24": "2.4rem",
+    "--spacing-26": "2.6rem",
+    "--spacing-28": "2.8rem",
+    "--spacing-30": "3rem",
+    "--spacing-32": "3.2rem",
+    "--spacing-33": "3.3rem",
+    "--spacing-40": "4rem",
+    "--spacing-46": "4.6rem",
+    "--spacing-60": "6rem",
+    "--spacing-66": "6.6rem",
+    "--spacing-available": "calc(100svh - var(--spacing))",
+    "--text-145": "14.5rem",
+    "--text-16": "1.6rem",
+    "--text-18": "1.8rem",
+    "--text-208": "20.8rem",
+    "--text-26": "2.6rem",
+    "--text-38": "3.8rem",
+    "--text-50": "5rem",
+    "--text-66": "6.6rem",
+    "--tracking-1-": "-.01em",
+    "--tracking-2-": "-.02em",
+    "--tracking-3-": "-.03em",
+    "--z-index-1": "1",
+    "--z-index-10": "10",
+    "--z-index-2": "2",
+    "--z-index-20": "20",
+    "--z-index-3": "3",
+    "--z-index-4": "4",
+    "--z-index-5": "5",
+    "--z-index-9": "9"
+  },
+  "samples": [
+    {
+      "background": "rgb(196, 197, 241)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "class": "",
+      "color": "rgb(0, 0, 0)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 34640,
+      "letterSpacing": "normal",
+      "lineHeight": "15px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "10px",
+      "tag": "BODY",
+      "text": "The power\nof digital\nstorytelling\n\nIn a world that’s\n\nconstantly shifting,\n\n\nwhat\n\nguides\n\nus throug",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(41, 52, 90)",
+      "class": "lg:text-sans-66 xs:text-sans-38 text-brand-black",
+      "color": "rgb(41, 52, 90)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 129,
+      "letterSpacing": "-1.98px",
+      "lineHeight": "60px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "66px",
+      "tag": "H2",
+      "text": "The power\nof digital",
+      "weight": "400",
+      "width": 1157
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(253, 235, 253)",
+      "class": "pointer-events-none",
+      "color": "rgb(253, 235, 253)",
+      "font": "TheSeasons, serif",
+      "gap": "normal",
+      "height": 275,
+      "letterSpacing": "-1.28px",
+      "lineHeight": "249.6px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "249.6px",
+      "tag": "H1",
+      "text": "storytelling",
+      "weight": "400",
+      "width": 1240
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(41, 52, 90)",
+      "class": "lg:text-sans-50 xs:text-sans-30 text-center",
+      "color": "rgb(41, 52, 90)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 158,
+      "letterSpacing": "-1px",
+      "lineHeight": "46px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "50px",
+      "tag": "P",
+      "text": "In a world that’s\n\nconstantly shifting,",
+      "weight": "400",
+      "width": 500
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(41, 52, 90)",
+      "class": "lg:text-sans-50 xs:text-sans-30 text-right",
+      "color": "rgb(41, 52, 90)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 297,
+      "letterSpacing": "-1px",
+      "lineHeight": "46px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "50px",
+      "tag": "P",
+      "text": "what\n\nguides\n\nus through\n\nchange,\n\nreinvention,\n\nand the unknown–",
+      "weight": "400",
+      "width": 623
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(41, 52, 90)",
+      "class": "lg:text-sans-50 xs:text-sans-30 text-center",
+      "color": "rgb(41, 52, 90)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 162,
+      "letterSpacing": "-1px",
+      "lineHeight": "46px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "50px",
+      "tag": "P",
+      "text": "Stories emerge\nthrough",
+      "weight": "400",
+      "width": 320
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-38 lg:text-sans-50 text-center",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 373,
+      "letterSpacing": "-1px",
+      "lineHeight": "46px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "50px",
+      "tag": "P",
+      "text": "The best stories\n\ndon’t just\n\nspeak to\n\nus.\nThey\n\ninvite us inside.",
+      "weight": "400",
+      "width": 323
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-18 lg:text-sans-26 text-center",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 60,
+      "letterSpacing": "normal",
+      "lineHeight": "30px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26px",
+      "tag": "P",
+      "text": "Storytelling is much\nmore than words.",
+      "weight": "400",
+      "width": 219
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-38 lg:text-sans-66 text-center",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 133,
+      "letterSpacing": "-1.98px",
+      "lineHeight": "60px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "66px",
+      "tag": "P",
+      "text": "It is how a spark\n\nbecomes a fire.",
+      "weight": "400",
+      "width": 700
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-38 lg:text-sans-66  text-center xs:w-[100vw] lg:w-auto xs:px-0 lg:px-0",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 193,
+      "letterSpacing": "-1.98px",
+      "lineHeight": "60px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "66px",
+      "tag": "P",
+      "text": "Storytelling is what you\n\nsee, feel, hear, interactwith.",
+      "weight": "400",
+      "width": 700
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "class": "xs:text-serif-80 lg:text-serif-200 text-center whitespace-nowrap",
+      "color": "rgb(0, 0, 0)",
+      "font": "TheSeasons, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", serif",
+      "gap": "normal",
+      "height": 307,
+      "letterSpacing": "-4.16px",
+      "lineHeight": "134px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "208px",
+      "tag": "P",
+      "text": "is narrative.",
+      "weight": "400",
+      "width": 940
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "class": "xs:text-serif-100 whitespace-nowrap lg:text-serif-200 text-center gradient-text gradient-text-big",
+      "color": "rgb(0, 0, 0)",
+      "font": "TheSeasons, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", serif",
+      "gap": "normal",
+      "height": 307,
+      "letterSpacing": "-4.16px",
+      "lineHeight": "134px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "208px",
+      "tag": "P",
+      "text": "Light",
+      "weight": "400",
+      "width": 477
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "class": "xs:text-serif-100 whitespace-nowrap lg:text-serif-200 text-center gradient-text gradient-text-big",
+      "color": "rgb(0, 0, 0)",
+      "font": "TheSeasons, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", serif",
+      "gap": "normal",
+      "height": 307,
+      "letterSpacing": "-4.16px",
+      "lineHeight": "134px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "208px",
+      "tag": "P",
+      "text": "Spirit",
+      "weight": "400",
+      "width": 508
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "class": "xs:text-serif-100 whitespace-nowrap lg:text-serif-200 text-center gradient-text gradient-text-big",
+      "color": "rgb(0, 0, 0)",
+      "font": "TheSeasons, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", serif",
+      "gap": "normal",
+      "height": 307,
+      "letterSpacing": "-4.16px",
+      "lineHeight": "134px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "208px",
+      "tag": "P",
+      "text": "Sound",
+      "weight": "400",
+      "width": 561
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-18 lg:text-sans-26 text-center",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 251,
+      "letterSpacing": "normal",
+      "lineHeight": "30px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26px",
+      "tag": "P",
+      "text": "How can the story live at the\nheart of the experience?",
+      "weight": "400",
+      "width": 640
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-18 lg:text-sans-26 text-left",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 198,
+      "letterSpacing": "normal",
+      "lineHeight": "30px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26px",
+      "tag": "P",
+      "text": "Start with clarity\nKnow what you’re trying to say.\nWhether it’s launching a product or\nbuilding emot",
+      "weight": "400",
+      "width": 410
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-18 lg:text-sans-26 text-right",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 198,
+      "letterSpacing": "normal",
+      "lineHeight": "30px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26px",
+      "tag": "P",
+      "text": "Let the story guide design\nEvery animation, interaction,\nand visual should serve the\nnarrative. If i",
+      "weight": "400",
+      "width": 410
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-18 lg:text-sans-26 text-left",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 168,
+      "letterSpacing": "normal",
+      "lineHeight": "30px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26px",
+      "tag": "P",
+      "text": "Experiment and iterate\nSome of the best ideas came from\nsimply trying things out, seeing\nwhat clicke",
+      "weight": "400",
+      "width": 410
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-18 lg:text-sans-26 text-right",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 228,
+      "letterSpacing": "normal",
+      "lineHeight": "30px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26px",
+      "tag": "P",
+      "text": "Make it personal\nThe best stories create emotional\nconnections. Whether through AI\npersonalization o",
+      "weight": "400",
+      "width": 410
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-38 lg:text-sans-66 text-center",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 129,
+      "letterSpacing": "-1.98px",
+      "lineHeight": "60px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "66px",
+      "tag": "P",
+      "text": "Where stories\nbecome experiences",
+      "weight": "400",
+      "width": 546
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(41, 52, 90)",
+      "class": "label text-sans-18 text-brand-black select-none",
+      "color": "rgb(41, 52, 90)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 20,
+      "letterSpacing": "-0.18px",
+      "lineHeight": "20px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "18px",
+      "tag": "P",
+      "text": "Reimagine Phoenix",
+      "weight": "400",
+      "width": 143
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "class": "flex xs:pb-0 lg:pb-30 flex-col justify-between xs:h-full lg:h-screen py-30 xs:px-20 lg:px-38 w-full fixed z-9 top-0 left-0 pointer-events-none transit",
+      "color": "rgb(0, 0, 0)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 800,
+      "letterSpacing": "normal",
+      "lineHeight": "15px",
+      "maxWidth": "none",
+      "padding": "30px 38px",
+      "position": "fixed",
+      "radius": "0px",
+      "size": "10px",
+      "tag": "FOOTER",
+      "text": "Let us help you tell your story the way it was meant\n\nhello@noomoagency.com\nx\nInstagram\nLinkedIn\n>",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(255, 255, 255)",
+      "class": "xs:text-sans-16 xs:max-w-261 lg:max-w-350 lg:text-sans-26 mt-10 text-white text-center",
+      "color": "rgb(255, 255, 255)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 60,
+      "letterSpacing": "normal",
+      "lineHeight": "30px",
+      "maxWidth": "350px",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "26px",
+      "tag": "P",
+      "text": "Let us help you tell your story the way it was meant",
+      "weight": "400",
+      "width": 350
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "class": "fixed z-10 w-full xs:pt-20 lg:pt-38 top-0",
+      "color": "rgb(0, 0, 0)",
+      "font": "TTNeoris, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+      "gap": "normal",
+      "height": 78,
+      "letterSpacing": "normal",
+      "lineHeight": "15px",
+      "maxWidth": "none",
+      "padding": "38px 0px 0px",
+      "position": "fixed",
+      "radius": "0px",
+      "size": "10px",
+      "tag": "HEADER",
+      "text": "Agency\nLabs\nContact\nHome\nAgency\nLabs\nContact\nInstagram\nx\nLinkedin",
+      "weight": "400",
+      "width": 1280
+    }
+  ],
+  "scrollHeight": 34640,
+  "styleSheets": [
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": "https://storytelling.noomoagency.com/_nuxt/entry.BEbxiOYI.css"
+    },
+    {
+      "readable": true,
+      "url": "https://storytelling.noomoagency.com/_nuxt/index.CeGRoErV.css"
+    }
+  ],
+  "title": "Noomo | The power of digital Storytelling",
+  "url": "https://storytelling.noomoagency.com/",
+  "viewport": {
+    "dpr": 2,
+    "height": 800,
+    "width": 1280
+  }
+}

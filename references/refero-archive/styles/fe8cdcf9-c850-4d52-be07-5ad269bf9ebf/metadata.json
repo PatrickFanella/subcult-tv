@@ -1,0 +1,29 @@
+{
+  "styleId": "fe8cdcf9-c850-4d52-be07-5ad269bf9ebf",
+  "sourceUrl": "https://styles.refero.design/style/fe8cdcf9-c850-4d52-be07-5ad269bf9ebf",
+  "fetchedAt": "2026-10-02T21:33:10.008628+00:00",
+  "extractedAt": "2026-10-02T21:33:10.030541+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Caldera — Style Reference",
+  "htmlSha256": "78c9f0f26916071d5fb082585a959cd7f434d60e3dfcac55ceb24770aecfb970",
+  "cache": ".cache/fe8cdcf9-c850-4d52-be07-5ad269bf9ebf.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4b7a6e64d2010406afcd697660b9834d93288e453b3eeb81a42dd993107992c0",
+      "bytes": 20956,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/76a78b50-1f76-4192-a182-be4eb285821c.jpg",
+    "fetchedAt": "2026-10-02T21:33:12.095998+00:00",
+    "sha256": "a11f6ea6ac00eeee346bab23d2569373ca39337bab62dd3436aedcf6f927eaed",
+    "bytes": 227835,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "c70a9990-bc4b-4a64-a69b-aeb7b344fb74",
+  "sourceUrl": "https://styles.refero.design/style/c70a9990-bc4b-4a64-a69b-aeb7b344fb74",
+  "fetchedAt": "2026-10-02T21:36:18.019524+00:00",
+  "extractedAt": "2026-10-02T21:36:18.114835+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Microsoft — Style Reference",
+  "htmlSha256": "771fb3998179589a7a8de85c2e8c537f30bfa5a3d41ca2e23a2001b0c659ec7d",
+  "cache": ".cache/c70a9990-bc4b-4a64-a69b-aeb7b344fb74.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1bdde7e8d40e7a702fbe1a2f96f69e07db2cb46ec83b47edec77d15dee7e9d92",
+      "bytes": 15970,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/47a4e304-46d1-48cd-a851-784d2f847fff.jpg",
+    "fetchedAt": "2026-10-02T21:36:20.088143+00:00",
+    "sha256": "e28ba121c678e69dbc85e3de1bd52bb7fd6008ff207f95c935a7a3a59be9e59a",
+    "bytes": 86082,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

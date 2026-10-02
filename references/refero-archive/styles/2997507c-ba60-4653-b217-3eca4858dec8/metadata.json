@@ -1,0 +1,29 @@
+{
+  "styleId": "2997507c-ba60-4653-b217-3eca4858dec8",
+  "sourceUrl": "https://styles.refero.design/style/2997507c-ba60-4653-b217-3eca4858dec8",
+  "fetchedAt": "2026-10-02T21:27:22.036823+00:00",
+  "extractedAt": "2026-10-02T21:27:22.124853+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "FigureAI — Style Reference",
+  "htmlSha256": "edfec308d6e93cfd1c4092e32f36c12847027387604e336f2190acc6d4445630",
+  "cache": ".cache/2997507c-ba60-4653-b217-3eca4858dec8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "52bc9a4ade027e505eba5e05f9430d9c677d4839866fb627c63625ebe014cab1",
+      "bytes": 17818,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4013ec3f-e325-4df2-913f-66143c1ad1d3.jpg",
+    "fetchedAt": "2026-10-02T21:27:24.043379+00:00",
+    "sha256": "79db55c14e099616a80215a4b51994b94665caa01b3aa36c1f23e3d9483a0dc5",
+    "bytes": 87130,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "65b8df27-36a3-47a6-be53-735d1f6a485d",
+  "sourceUrl": "https://styles.refero.design/style/65b8df27-36a3-47a6-be53-735d1f6a485d",
+  "fetchedAt": "2026-10-02T21:46:49.670268+00:00",
+  "extractedAt": "2026-10-02T21:46:49.710069+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "REKKI — Style Reference",
+  "htmlSha256": "9f531115151090ee689a20ba112a8f8b34fcf193fa20fbf22c400b7d4e824e6f",
+  "cache": ".cache/65b8df27-36a3-47a6-be53-735d1f6a485d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9e489606c590c421a9ae6c253ed24744da70f4c12824529bb7c1878cc11d4d39",
+      "bytes": 22531,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b9035146-c486-49d0-bdc2-dfa55b90a959.jpg",
+    "fetchedAt": "2026-10-02T21:46:51.543917+00:00",
+    "sha256": "3bf4b96907b0e1808463bd3c664c21199b40b4d603c3144aa1b457df0864c4d7",
+    "bytes": 94765,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

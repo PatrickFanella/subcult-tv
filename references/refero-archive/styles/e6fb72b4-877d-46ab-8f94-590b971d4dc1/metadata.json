@@ -1,0 +1,29 @@
+{
+  "styleId": "e6fb72b4-877d-46ab-8f94-590b971d4dc1",
+  "sourceUrl": "https://styles.refero.design/style/e6fb72b4-877d-46ab-8f94-590b971d4dc1",
+  "fetchedAt": "2026-10-02T21:58:22.218943+00:00",
+  "extractedAt": "2026-10-02T21:58:22.283151+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Telescope — Style Reference",
+  "htmlSha256": "d64f3c62dc4e83da0c47bb31d5c40395523697ccaa90b00782852803181dd74f",
+  "cache": ".cache/e6fb72b4-877d-46ab-8f94-590b971d4dc1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "19cc9b41a5beb905c909b1e68df669b2741f46cb7f0c7a43c1f41e704eca7add",
+      "bytes": 20576,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5654bd2d-d2ec-4480-95ca-341e253d07f4.jpg",
+    "fetchedAt": "2026-10-02T21:58:24.223516+00:00",
+    "sha256": "6fadf52a6b56850db0770491c602f132d3670ef17524e4075a872a1b1777c4c4",
+    "bytes": 80355,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

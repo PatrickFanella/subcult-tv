@@ -1,0 +1,29 @@
+{
+  "styleId": "190d4a0b-0353-4fc8-be09-affa6e977146",
+  "sourceUrl": "https://styles.refero.design/style/190d4a0b-0353-4fc8-be09-affa6e977146",
+  "fetchedAt": "2026-10-02T21:48:17.504646+00:00",
+  "extractedAt": "2026-10-02T21:48:17.566574+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "OFFFICE : — Style Reference",
+  "htmlSha256": "19b6a7fd238ce1396741fd52c4192497eef3f1f07a7a856bb782a7528785c9e6",
+  "cache": ".cache/190d4a0b-0353-4fc8-be09-affa6e977146.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "855a787adfbac0661dc6db1b2d0edda52e7c8aa56d9956dc141a448b2677fc6f",
+      "bytes": 16512,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/932ad98f-190e-4bc0-b0e3-2105ff6eb99d.jpg",
+    "fetchedAt": "2026-10-02T21:48:19.546616+00:00",
+    "sha256": "c01f8c78c4fb091f9ba3d2da1337e2830153c58b32845b955c89acc67c7932c0",
+    "bytes": 73146,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

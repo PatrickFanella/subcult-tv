@@ -1,0 +1,29 @@
+{
+  "styleId": "4244637b-e27b-4962-b586-cb3ac605e5aa",
+  "sourceUrl": "https://styles.refero.design/style/4244637b-e27b-4962-b586-cb3ac605e5aa",
+  "fetchedAt": "2026-10-02T21:58:18.194562+00:00",
+  "extractedAt": "2026-10-02T21:58:18.249744+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Moffitt.Moffitt. - — Style Reference",
+  "htmlSha256": "169f1499f38de914cf6bcfd02211830af83acfff7fb80634b4f27fa71e7c633e",
+  "cache": ".cache/4244637b-e27b-4962-b586-cb3ac605e5aa.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "78819f0787775ed65df9a977abb5ad1b27363bf79bdd8ddfaa259c0a397b800b",
+      "bytes": 15355,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/95499e8d-9f7b-4664-b360-8fffe9f74ea2.jpg",
+    "fetchedAt": "2026-10-02T21:58:20.247876+00:00",
+    "sha256": "149582cfb8904e66fac5c2f0c79ab6fdc5769cca93ecba2909407b378a061187",
+    "bytes": 117679,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

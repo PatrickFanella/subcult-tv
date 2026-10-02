@@ -1,0 +1,29 @@
+{
+  "styleId": "adc127f5-c6ec-4892-984d-5445c2b6104e",
+  "sourceUrl": "https://styles.refero.design/style/adc127f5-c6ec-4892-984d-5445c2b6104e",
+  "fetchedAt": "2026-10-02T21:48:29.689858+00:00",
+  "extractedAt": "2026-10-02T21:48:29.742427+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "July Fund — Style Reference",
+  "htmlSha256": "b39ff7f5935bcfccabc738e5c44e05084cb72e1ba8ce3b77880fd61a4f4bc395",
+  "cache": ".cache/adc127f5-c6ec-4892-984d-5445c2b6104e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "eb42a3e1d07421b23d6cfbfccbabd8c5a534b6d2f503d7689653b4d15ca84f19",
+      "bytes": 22024,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ab4c89dd-3d14-473e-89a7-493d2216cffd.jpg",
+    "fetchedAt": "2026-10-02T21:48:31.539659+00:00",
+    "sha256": "fd77bdada06bd2400f792a191e93cec243d24494e8aa2f25900299ba278622a6",
+    "bytes": 40358,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

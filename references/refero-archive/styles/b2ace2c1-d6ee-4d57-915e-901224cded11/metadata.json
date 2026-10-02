@@ -1,0 +1,29 @@
+{
+  "styleId": "b2ace2c1-d6ee-4d57-915e-901224cded11",
+  "sourceUrl": "https://styles.refero.design/style/b2ace2c1-d6ee-4d57-915e-901224cded11",
+  "fetchedAt": "2026-10-02T21:43:13.538893+00:00",
+  "extractedAt": "2026-10-02T21:43:13.620629+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Alison Roman — Style Reference",
+  "htmlSha256": "344d2533d7d29230b8d724c21cb2f697dc7932ce693e8d8fff9da31657677979",
+  "cache": ".cache/b2ace2c1-d6ee-4d57-915e-901224cded11.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0649e7b6dbd14c3a59b22d64f97d13dc7ff352c68e3f8b7dc1d7dd59c8825384",
+      "bytes": 18706,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0c301d44-fc42-4d71-bcd1-96a83b9a8dea.jpg",
+    "fetchedAt": "2026-10-02T21:43:15.639084+00:00",
+    "sha256": "a5f76273989a0fefa4b96ac901a8b48dbcef3e82e44e43bb042fd0f437a2c2c6",
+    "bytes": 102338,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

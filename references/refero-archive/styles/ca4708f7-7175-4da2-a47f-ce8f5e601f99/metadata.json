@@ -1,0 +1,29 @@
+{
+  "styleId": "ca4708f7-7175-4da2-a47f-ce8f5e601f99",
+  "sourceUrl": "https://styles.refero.design/style/ca4708f7-7175-4da2-a47f-ce8f5e601f99",
+  "fetchedAt": "2026-10-02T21:50:01.519715+00:00",
+  "extractedAt": "2026-10-02T21:50:01.565947+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Honk — Style Reference",
+  "htmlSha256": "96616bcf5c9734dfe4c3e21dc7c855e55da28128f0814ab3f35b0747bc064a3a",
+  "cache": ".cache/ca4708f7-7175-4da2-a47f-ce8f5e601f99.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ee7e47f3b0c3a1476f4e5af28aa75c36553c64e0a2c548034218644b90021800",
+      "bytes": 17718,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7fef6caa-90c9-41b3-aac2-af77852c75d7.jpg",
+    "fetchedAt": "2026-10-02T21:50:03.480432+00:00",
+    "sha256": "13249bfdccdab81b59405eead4b7c16b5ed03165e46255c493e77e863cf43ea3",
+    "bytes": 66054,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

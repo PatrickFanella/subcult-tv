@@ -1,0 +1,29 @@
+{
+  "styleId": "7f6799d9-0733-4523-9a94-036b9ad3bf28",
+  "sourceUrl": "https://styles.refero.design/style/7f6799d9-0733-4523-9a94-036b9ad3bf28",
+  "fetchedAt": "2026-10-02T21:49:21.838522+00:00",
+  "extractedAt": "2026-10-02T21:49:21.992666+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Charlie Phipps — Style Reference",
+  "htmlSha256": "539213b26502efb28b8b25afed5d96e14fd11e61176febfbf10a1d5b6f86e530",
+  "cache": ".cache/7f6799d9-0733-4523-9a94-036b9ad3bf28.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4f8979db2ef019e31efbd436bfc4e33cd196089028327596a3c33ebf56780fa8",
+      "bytes": 21017,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/725900c6-0ea7-4e2b-bdea-1e339df742bf.jpg",
+    "fetchedAt": "2026-10-02T21:49:23.665694+00:00",
+    "sha256": "96e0780feece64d4179ae9dd1ded1152c14a525d5463c80934565c5a54f12948",
+    "bytes": 128833,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

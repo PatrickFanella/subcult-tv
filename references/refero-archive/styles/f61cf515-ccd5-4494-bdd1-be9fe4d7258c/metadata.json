@@ -1,0 +1,29 @@
+{
+  "styleId": "f61cf515-ccd5-4494-bdd1-be9fe4d7258c",
+  "sourceUrl": "https://styles.refero.design/style/f61cf515-ccd5-4494-bdd1-be9fe4d7258c",
+  "fetchedAt": "2026-10-02T21:33:06.029922+00:00",
+  "extractedAt": "2026-10-02T21:33:06.053423+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hyer Aviation — Style Reference",
+  "htmlSha256": "bc7e77dbc36e162a18e31c41d990f013563e658d14dd2b0804d3845578953ef2",
+  "cache": ".cache/f61cf515-ccd5-4494-bdd1-be9fe4d7258c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2c341d911d3214144f1b2fec0044df60f288ffaac1f5ec83082a8f8218b1d82a",
+      "bytes": 19083,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/253487ec-b111-4906-b110-2f28603cbc59.jpg",
+    "fetchedAt": "2026-10-02T21:33:07.975082+00:00",
+    "sha256": "83c9712c82dfbf8b18674b78bca73b64adec9eb4e47db9910ade23ffc4e557f7",
+    "bytes": 64578,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

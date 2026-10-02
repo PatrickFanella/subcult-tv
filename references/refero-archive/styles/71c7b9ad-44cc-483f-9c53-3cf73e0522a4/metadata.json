@@ -1,0 +1,29 @@
+{
+  "styleId": "71c7b9ad-44cc-483f-9c53-3cf73e0522a4",
+  "sourceUrl": "https://styles.refero.design/style/71c7b9ad-44cc-483f-9c53-3cf73e0522a4",
+  "fetchedAt": "2026-10-02T21:47:53.694276+00:00",
+  "extractedAt": "2026-10-02T21:47:53.769099+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Reclaim — Style Reference",
+  "htmlSha256": "0503a5ab390fea41004e1e83435312ca8b2841500a7bb02a3cd1615fb28e8f50",
+  "cache": ".cache/71c7b9ad-44cc-483f-9c53-3cf73e0522a4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c27211e01cf7d8eb35266108f3a887db4d5913edbf4ab0f0d1a84e0355f24c54",
+      "bytes": 21103,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/15ee006f-9a4c-4c53-8d4a-e68099d3b71f.jpg",
+    "fetchedAt": "2026-10-02T21:47:55.531999+00:00",
+    "sha256": "2a222829e365ae5e3206add304db2cac5b87a835274f770d435ea062c1d7321d",
+    "bytes": 78790,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

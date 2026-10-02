@@ -1,0 +1,29 @@
+{
+  "styleId": "eb804e3a-1b75-446c-8374-114bbabaf0cd",
+  "sourceUrl": "https://styles.refero.design/style/eb804e3a-1b75-446c-8374-114bbabaf0cd",
+  "fetchedAt": "2026-10-02T21:29:30.078570+00:00",
+  "extractedAt": "2026-10-02T21:29:30.132025+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cosmos — Style Reference",
+  "htmlSha256": "c64f9e4045f33da8ed560a820e42470f7da4a47d3e5add807a531b61ff07c0c1",
+  "cache": ".cache/eb804e3a-1b75-446c-8374-114bbabaf0cd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "84d0f6e0335fa774aeed4f165c731ed17cfbfbdf7a79a86af233e95f8b790ebb",
+      "bytes": 20117,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/41cc1089-58a3-4498-89be-3937007bc2c1.jpg",
+    "fetchedAt": "2026-10-02T21:29:32.045687+00:00",
+    "sha256": "7c0d6a119f92a24959109aadf11b06f74d760a3a305c8dfbf2cbb1b217bb9568",
+    "bytes": 76924,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

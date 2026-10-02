@@ -1,0 +1,29 @@
+{
+  "styleId": "4782832c-1c23-4fe3-997c-2a08d7b6c5d1",
+  "sourceUrl": "https://styles.refero.design/style/4782832c-1c23-4fe3-997c-2a08d7b6c5d1",
+  "fetchedAt": "2026-10-02T21:49:25.546612+00:00",
+  "extractedAt": "2026-10-02T21:49:25.594537+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Gamma — Style Reference",
+  "htmlSha256": "fabecf7ac68cfef8999fbd9fe0a9e77876596c17ffd795c3aaa9cd4589610e66",
+  "cache": ".cache/4782832c-1c23-4fe3-997c-2a08d7b6c5d1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "595c8ef6bd54543b8502ee19ce87f0795702004c621af3cf27ad3d3e1ef14466",
+      "bytes": 20516,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/09dbf734-2aab-481b-9e69-bb5e1e6f7d09.jpg",
+    "fetchedAt": "2026-10-02T21:49:28.107594+00:00",
+    "sha256": "12bb73844e632a2db1a81e9b03604fb81ba61067c3c037f608914a6f58068bb5",
+    "bytes": 126614,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

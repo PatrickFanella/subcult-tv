@@ -1,0 +1,29 @@
+{
+  "styleId": "8618f649-6d1c-45ca-aff8-e7f04928d8dd",
+  "sourceUrl": "https://styles.refero.design/style/8618f649-6d1c-45ca-aff8-e7f04928d8dd",
+  "fetchedAt": "2026-10-02T22:00:54.261103+00:00",
+  "extractedAt": "2026-10-02T22:00:54.302980+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Squarespace — Style Reference",
+  "htmlSha256": "3c4285b79816789760465ca80fd1937ddd7d45f7d64f750170984865e464b81f",
+  "cache": ".cache/8618f649-6d1c-45ca-aff8-e7f04928d8dd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af301e108fe0b2fc69d70c46e477c333787edc28500d9b22b3a5e1c0e4f4ee7b",
+      "bytes": 18194,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/348f74c3-32e0-458e-9d76-8f49a15ff517.jpg",
+    "fetchedAt": "2026-10-02T22:00:56.257710+00:00",
+    "sha256": "9195ad5d706aebfe28fb3075e2a29514c8eea5f8b08d394d714c215bd506005b",
+    "bytes": 119603,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

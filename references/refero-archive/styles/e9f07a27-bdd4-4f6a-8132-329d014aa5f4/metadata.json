@@ -1,0 +1,29 @@
+{
+  "styleId": "e9f07a27-bdd4-4f6a-8132-329d014aa5f4",
+  "sourceUrl": "https://styles.refero.design/style/e9f07a27-bdd4-4f6a-8132-329d014aa5f4",
+  "fetchedAt": "2026-10-02T21:57:10.211107+00:00",
+  "extractedAt": "2026-10-02T21:57:10.241694+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "The online bank — Style Reference",
+  "htmlSha256": "5bbadb6161785faa64c30ea2cebce519fbd0bdd953a8e9d9080330c99e4e247a",
+  "cache": ".cache/e9f07a27-bdd4-4f6a-8132-329d014aa5f4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "223ee68f9c620e3120dbf50c390e8ab4175d18684848c88c7d3a3276c5085868",
+      "bytes": 18811,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/567a545e-c264-4e8f-90ea-d896cf363a04.jpg",
+    "fetchedAt": "2026-10-02T21:57:12.240160+00:00",
+    "sha256": "1f725a314d7d7c2f11978c0c41ec38db1a239f1d07d631d7727d8f690c3419d5",
+    "bytes": 162746,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

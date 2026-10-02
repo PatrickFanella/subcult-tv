@@ -1,0 +1,29 @@
+{
+  "styleId": "96845df2-7ddb-420a-814e-c339f95a6554",
+  "sourceUrl": "https://styles.refero.design/style/96845df2-7ddb-420a-814e-c339f95a6554",
+  "fetchedAt": "2026-10-02T21:59:34.224159+00:00",
+  "extractedAt": "2026-10-02T21:59:34.256685+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dyson — Style Reference",
+  "htmlSha256": "a81974af1553a1db6fd5cb87e268b59329b99c9abed533281103de80e8b8740d",
+  "cache": ".cache/96845df2-7ddb-420a-814e-c339f95a6554.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "585227101bfb94362f032ad215aab9253390b13894d1ba257f3fa59e0b8ba590",
+      "bytes": 19709,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5f29e2bd-ac4e-4b02-bf66-98a6ae5023a9.jpg",
+    "fetchedAt": "2026-10-02T21:59:36.221198+00:00",
+    "sha256": "b1f12a84aef328569a7981f00b24c8d7fb601f1091e7a3d7e85388629c53c18c",
+    "bytes": 85800,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "e8c604cc-1c8d-42a3-aeca-fcfc25e70344",
+  "sourceUrl": "https://styles.refero.design/style/e8c604cc-1c8d-42a3-aeca-fcfc25e70344",
+  "fetchedAt": "2026-10-02T21:46:57.507395+00:00",
+  "extractedAt": "2026-10-02T21:46:57.588100+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Astro — Style Reference",
+  "htmlSha256": "5e86e1afb1726e1796e6430db36689e62dd7fbc441fa2f9726a54015f13b7a2d",
+  "cache": ".cache/e8c604cc-1c8d-42a3-aeca-fcfc25e70344.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a50f6cb7863f389a2a6dfb97820bd4b49be404ff6fa1cfa45104cbbf0c5e855e",
+      "bytes": 22521,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/01af1277-ba6a-4a47-ba98-e689fe734c2c.jpg",
+    "fetchedAt": "2026-10-02T21:46:59.520205+00:00",
+    "sha256": "8eac5a8c9a06f45e46a612915ab9bc921af726c7c64be9af811d6c5421c233dd",
+    "bytes": 85457,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

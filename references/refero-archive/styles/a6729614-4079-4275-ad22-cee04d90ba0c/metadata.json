@@ -1,0 +1,29 @@
+{
+  "styleId": "a6729614-4079-4275-ad22-cee04d90ba0c",
+  "sourceUrl": "https://styles.refero.design/style/a6729614-4079-4275-ad22-cee04d90ba0c",
+  "fetchedAt": "2026-10-02T21:53:18.274580+00:00",
+  "extractedAt": "2026-10-02T21:53:18.361206+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Spécialiste Belge — Style Reference",
+  "htmlSha256": "3244f33cff0ec3af4fdf10fe1cde18c3c105d49e65cb19e2e341543f631e45bb",
+  "cache": ".cache/a6729614-4079-4275-ad22-cee04d90ba0c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "442c001216b9d26c44fc13fa9ccd974210cb9661fe4f9fceeff9461ee4cb7789",
+      "bytes": 17465,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5d291c2a-e188-4fc4-b0ec-02ad23f717e1.jpg",
+    "fetchedAt": "2026-10-02T21:53:20.265718+00:00",
+    "sha256": "71be8c72bb283edb77ecaaf8245ca555ff310916e60d756a036a3b7b5e99e4da",
+    "bytes": 89833,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

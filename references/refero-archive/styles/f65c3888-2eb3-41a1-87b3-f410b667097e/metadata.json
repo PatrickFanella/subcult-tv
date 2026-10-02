@@ -1,0 +1,29 @@
+{
+  "styleId": "f65c3888-2eb3-41a1-87b3-f410b667097e",
+  "sourceUrl": "https://styles.refero.design/style/f65c3888-2eb3-41a1-87b3-f410b667097e",
+  "fetchedAt": "2026-10-02T21:44:25.627043+00:00",
+  "extractedAt": "2026-10-02T21:44:25.681253+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Valo — Style Reference",
+  "htmlSha256": "72b78cefdaa2b4bb3346212530c15762704c0bb0d086c0605ddb1c1eca6d0c7d",
+  "cache": ".cache/f65c3888-2eb3-41a1-87b3-f410b667097e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9c29e58b0973be6f03f48e2d6c12350b76de894ef5cdc71af867dd753840d395",
+      "bytes": 19555,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a0646f31-171a-48ae-aadb-6242603db017.jpg",
+    "fetchedAt": "2026-10-02T21:44:27.532967+00:00",
+    "sha256": "294705c15c777986dc46250dfc412338a4d587a8745c7f3a02c992c2a2513dd8",
+    "bytes": 87710,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "56cd3725-3ff0-459e-894d-5da58d1fc549",
+  "sourceUrl": "https://styles.refero.design/style/56cd3725-3ff0-459e-894d-5da58d1fc549",
+  "fetchedAt": "2026-10-02T21:30:54.016133+00:00",
+  "extractedAt": "2026-10-02T21:30:54.064656+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "PostHog — Style Reference",
+  "htmlSha256": "bc69449c68c5cc2d00faa5c8c9627e1c52b0a923a3ae9f6b90ac2b8ab15681d3",
+  "cache": ".cache/56cd3725-3ff0-459e-894d-5da58d1fc549.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3cda9fdabc8503ee1309d02137d56cb783d9ff15e97610c9c1faba7c6f8a970d",
+      "bytes": 26356,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bd04688d-46dd-44e0-a509-658db474bedd.jpg",
+    "fetchedAt": "2026-10-02T21:30:56.121206+00:00",
+    "sha256": "42b43fe6338af437712afd02569d4d18ca9160430bf9dac6f01ff9938d9143a3",
+    "bytes": 253644,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "3a4d1008-0bd1-4ebb-9efe-0c146c45a99b",
+  "sourceUrl": "https://styles.refero.design/style/3a4d1008-0bd1-4ebb-9efe-0c146c45a99b",
+  "fetchedAt": "2026-10-02T21:27:06.008289+00:00",
+  "extractedAt": "2026-10-02T21:27:06.411983+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Kagi — Style Reference",
+  "htmlSha256": "68f6fba2960735105b4d8797c5363c370a8e95649ea63ca3d82574a950c2410f",
+  "cache": ".cache/3a4d1008-0bd1-4ebb-9efe-0c146c45a99b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3daa80ae68315482540c0dbd48bb04828d3c358268fc03247bc241da59135c90",
+      "bytes": 21692,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b37f3ada-c7a7-4e9d-9474-c6553e787ed5.jpg",
+    "fetchedAt": "2026-10-02T21:27:08.019339+00:00",
+    "sha256": "bb2998fdd8e2948233b2377789e356399ca1f512e442e7adf6177cb683c8a287",
+    "bytes": 87370,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

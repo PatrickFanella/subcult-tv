@@ -1,0 +1,29 @@
+{
+  "styleId": "29bde513-4351-4279-b4e9-7e94eb0605b6",
+  "sourceUrl": "https://styles.refero.design/style/29bde513-4351-4279-b4e9-7e94eb0605b6",
+  "fetchedAt": "2026-10-02T21:29:10.235365+00:00",
+  "extractedAt": "2026-10-02T21:29:10.334016+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "AVNIER — Style Reference",
+  "htmlSha256": "31fc75f294af12ad2cbe0feb7d1d2042781cb9474a6a1e23e0b5d14a2656a67d",
+  "cache": ".cache/29bde513-4351-4279-b4e9-7e94eb0605b6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6ea50a2e6e150d1bc5dd52e30cac8f6549b776f9b97331aa22836cb26c4c7e4e",
+      "bytes": 18743,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fda9d03d-4ae9-47b4-b698-fa62efe2f177.jpg",
+    "fetchedAt": "2026-10-02T21:29:12.041437+00:00",
+    "sha256": "2bef67f86707b4b7f3944f2092aaa3a3b3cea52a3d399bd9f46b9967c5eea6fe",
+    "bytes": 112621,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

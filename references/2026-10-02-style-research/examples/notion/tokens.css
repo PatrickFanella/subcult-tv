@@ -1,0 +1,6 @@
+/* Observed values, not canonical brand roles. See DESIGN.md and tokens.json. */
+:root {
+  --observed-color-01: rgb(0, 0, 0);
+  --observed-color-02: rgb(25, 25, 25);
+  --observed-font-01: sans-serif;
+}

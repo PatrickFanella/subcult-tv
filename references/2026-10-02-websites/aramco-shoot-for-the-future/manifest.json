@@ -1,0 +1,70 @@
+{
+  "site": "aramco-shoot-for-the-future",
+  "source": "https://sponsorships.aramco.com/cba/shoot-for-the-future/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:17:42.247Z",
+      "url": "https://sponsorships.aramco.com/cba/shoot-for-the-future/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:26:05.213Z",
+      "url": "https://sponsorships.aramco.com/cba/shoot-for-the-future/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "27ec72258ed26f203b183b60b04e67e0a0957fe0f8630e8147f2c0b3ced507e9",
+      "bytes": 5454
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "57fb0b2f118f0df011831587216f14bdc1623713fce0b9e1169c014720eed627",
+      "bytes": 1274
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "8e3c09e900fbe195666466cc1109b442e514a289ca8dcfc9f600a7244f825b23",
+      "bytes": 47777
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "6961700581d07f07b60abfe02909e8e1873396fa1d04df85d57eaa7be0048ec3",
+      "bytes": 47331
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "11ab837102bac36667f5a81ea5ab6efc4c22c81307725be58d8437c30a46eddf",
+      "bytes": 114473
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "0329d455cca182f69e61275b96ef101252a333e38efb9b7e0a6b4dc6e193dcc1",
+      "bytes": 271
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "3d8c9da03ed4e7f468f579de5d44c75b011dc25f28de16068947c740a2a6b441",
+      "bytes": 9855
+    }
+  ]
+}

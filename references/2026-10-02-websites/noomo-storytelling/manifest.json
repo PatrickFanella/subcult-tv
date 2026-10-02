@@ -1,0 +1,70 @@
+{
+  "site": "noomo-storytelling",
+  "source": "https://storytelling.noomoagency.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:16:59.769Z",
+      "url": "https://storytelling.noomoagency.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:25:16.195Z",
+      "url": "https://storytelling.noomoagency.com/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "bc78723aecd60c0ee848b734f0e9f1f15a195b5aa670a5440bb0e56cab8be26b",
+      "bytes": 5922
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "5c6cee15fb9c89044f1023f2be909d2258dc1ec9eef16b0e71af1665230797b7",
+      "bytes": 1237
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "7105edd93403c209cdbfd7c0faeeb57d948105b2be789d174e2c5a48533d88c6",
+      "bytes": 9464
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "ca0a375106277af1975f85c631ce4eade59f60ad61331493ecebc02dcfbb5f24",
+      "bytes": 27012
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "914211f05adb7f5f621ba9a15c3f076f75c21ac0c8e0fc859834c0465c55bee0",
+      "bytes": 45324
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "584a6dd487b5932e237d300b389c84834303ca8cdc4704c39417cf8e41b66e27",
+      "bytes": 386
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "d590dd9aa7bce4ddfc057069ab10d54e7254ca6ee20f6deafc394840b944e754",
+      "bytes": 12854
+    }
+  ]
+}

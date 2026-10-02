@@ -1,0 +1,70 @@
+{
+  "site": "i-creativ",
+  "source": "https://i-creativ.net/en",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:16:22.907Z",
+      "url": "https://i-creativ.net/en",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:24:22.196Z",
+      "url": "https://i-creativ.net/en",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "036ba1d22af7330db8db8aa86cce655d52c9e7c497dab68991da78eee05d7b12",
+      "bytes": 6094
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "ab148953215df50548e2fb09e4f037d54e1ddb32ada5101601d320fc81945fe8",
+      "bytes": 1219
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "cb7a14e4f7dc7f6e861c08e079ceabbdefbf5efe19c95311479cc65d14859262",
+      "bytes": 21131
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "fc480f83dab6a1c85a20178a65a67753ee24166d61d4e89c129ea3fdc9d20f31",
+      "bytes": 20562
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "5661c1e4bc457d3340ecec77ae34abd38b0f0dda3ca3554ef86606fc9bde9b03",
+      "bytes": 3855
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "f54ba5c8fd84c83bf87fb398b0033765e4a0355c16346fe2256e9330cdb1f87b",
+      "bytes": 409
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "634921ddb6d752358f01539f78d64983223e0bc01bf41f85259dbc538b29323f",
+      "bytes": 12819
+    }
+  ]
+}

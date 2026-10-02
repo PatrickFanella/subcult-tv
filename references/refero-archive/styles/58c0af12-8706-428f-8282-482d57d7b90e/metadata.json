@@ -1,0 +1,29 @@
+{
+  "styleId": "58c0af12-8706-428f-8282-482d57d7b90e",
+  "sourceUrl": "https://styles.refero.design/style/58c0af12-8706-428f-8282-482d57d7b90e",
+  "fetchedAt": "2026-10-02T21:39:26.023354+00:00",
+  "extractedAt": "2026-10-02T21:39:26.055772+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Josephmark — Style Reference",
+  "htmlSha256": "3d3551ffb8515bca549bea871c277806a2c87f08a13566e07bf724b0ca943cbb",
+  "cache": ".cache/58c0af12-8706-428f-8282-482d57d7b90e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a76da13548907b1a4bd51be38531e85b914e9b6b8baaef33e9ad6f18f480efd0",
+      "bytes": 18856,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/be1caff6-3308-4c1b-872e-fbd8bda2ddfe.jpg",
+    "fetchedAt": "2026-10-02T21:39:27.980016+00:00",
+    "sha256": "6873bd7179cee2544e1a779e423e25a3ed1a6d6bf9a855b808f362684c0c6dd3",
+    "bytes": 70322,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

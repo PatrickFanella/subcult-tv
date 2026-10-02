@@ -1,0 +1,29 @@
+{
+  "styleId": "8f623d19-51f6-4da2-bc45-05573cc98283",
+  "sourceUrl": "https://styles.refero.design/style/8f623d19-51f6-4da2-bc45-05573cc98283",
+  "fetchedAt": "2026-10-02T21:55:54.236680+00:00",
+  "extractedAt": "2026-10-02T21:55:54.258536+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Runway — Style Reference",
+  "htmlSha256": "3baff751c962b143a815a30830577187ed17e8c42f9a0922c31065895584e25b",
+  "cache": ".cache/8f623d19-51f6-4da2-bc45-05573cc98283.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "aa3995715d8f82fedaed9f18af185929cc334486f0fea444a349e47ac767d3b2",
+      "bytes": 20359,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0ac53a8d-e21e-4c7c-95ef-cb9b1fa438a2.jpg",
+    "fetchedAt": "2026-10-02T21:55:56.253099+00:00",
+    "sha256": "3ac48672d14ee0703e43c7cb6c51fa358db423ddb53490f3516eae0ee34912d5",
+    "bytes": 133121,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

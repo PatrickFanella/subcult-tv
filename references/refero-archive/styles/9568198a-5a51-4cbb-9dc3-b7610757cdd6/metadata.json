@@ -1,0 +1,29 @@
+{
+  "styleId": "9568198a-5a51-4cbb-9dc3-b7610757cdd6",
+  "sourceUrl": "https://styles.refero.design/style/9568198a-5a51-4cbb-9dc3-b7610757cdd6",
+  "fetchedAt": "2026-10-02T21:48:25.565220+00:00",
+  "extractedAt": "2026-10-02T21:48:25.619809+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Elva — Style Reference",
+  "htmlSha256": "d85b31b0337704b528042c8e3ebaa8f0ff229d118fe94cd15913a2d529c8c4fa",
+  "cache": ".cache/9568198a-5a51-4cbb-9dc3-b7610757cdd6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bc6eaa1cc4cef7e10fb96251c48ffee57aafdca8cbfb11965d46b3369fc8b56b",
+      "bytes": 18615,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/51b3bf02-da1d-4f55-85bb-fdf058816532.jpg",
+    "fetchedAt": "2026-10-02T21:48:27.554730+00:00",
+    "sha256": "21a90238d23e3080e9d0a46d3a7678fff59f9551d21b6354b0c6acd7b25b046b",
+    "bytes": 85574,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

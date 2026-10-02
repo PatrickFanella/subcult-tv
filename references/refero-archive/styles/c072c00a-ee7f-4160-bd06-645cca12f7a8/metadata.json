@@ -1,0 +1,29 @@
+{
+  "styleId": "c072c00a-ee7f-4160-bd06-645cca12f7a8",
+  "sourceUrl": "https://styles.refero.design/style/c072c00a-ee7f-4160-bd06-645cca12f7a8",
+  "fetchedAt": "2026-10-02T21:40:49.569885+00:00",
+  "extractedAt": "2026-10-02T21:40:49.596806+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "DNCO — Style Reference",
+  "htmlSha256": "fcbfd6752d8e72945a30aff503778b6ad19676bb8b1cfdf61bc2bb7db324146e",
+  "cache": ".cache/c072c00a-ee7f-4160-bd06-645cca12f7a8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6b78b410d74a4df8dbeb9c82ad6bc67e2ee3c4c0fdd8eeb634225d9f5d4d0a3e",
+      "bytes": 14497,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ff5aa988-25a2-4535-82cb-51e739ff7b5c.jpg",
+    "fetchedAt": "2026-10-02T21:40:51.442222+00:00",
+    "sha256": "1e38c90b068f1e26e5d7f15b037276dbf840597843a8bb0a1760881f0298f3b3",
+    "bytes": 41354,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

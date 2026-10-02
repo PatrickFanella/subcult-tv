@@ -1,0 +1,29 @@
+{
+  "styleId": "9929101b-90d4-4306-bc4a-4d8f65b527f5",
+  "sourceUrl": "https://styles.refero.design/style/9929101b-90d4-4306-bc4a-4d8f65b527f5",
+  "fetchedAt": "2026-10-02T21:43:17.502175+00:00",
+  "extractedAt": "2026-10-02T21:43:17.553813+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "FORA — Style Reference",
+  "htmlSha256": "01b5658c69fc3daa08f58152c4fcac92b2121ff955d3d018f178cc3a8c3a16d3",
+  "cache": ".cache/9929101b-90d4-4306-bc4a-4d8f65b527f5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1c453c43fec32479baaa94f93f9af1f17d9fb7dc9d48fb307343f088ad27401e",
+      "bytes": 16664,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/959d9036-7095-4e0c-9017-84965444c36c.jpg",
+    "fetchedAt": "2026-10-02T21:43:19.528640+00:00",
+    "sha256": "a4ca610824760049a7a6338030ab3d69d9da970a6ea637ef702ef26db277059b",
+    "bytes": 89498,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

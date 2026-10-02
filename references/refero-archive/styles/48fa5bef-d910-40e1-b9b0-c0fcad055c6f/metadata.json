@@ -1,0 +1,29 @@
+{
+  "styleId": "48fa5bef-d910-40e1-b9b0-c0fcad055c6f",
+  "sourceUrl": "https://styles.refero.design/style/48fa5bef-d910-40e1-b9b0-c0fcad055c6f",
+  "fetchedAt": "2026-10-02T21:38:14.657339+00:00",
+  "extractedAt": "2026-10-02T21:38:14.689221+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Holiday 100 — Style Reference",
+  "htmlSha256": "24026af61fa1b7890704774cc89ae9703e6f44449a736785e432eafa9701f50e",
+  "cache": ".cache/48fa5bef-d910-40e1-b9b0-c0fcad055c6f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "820bd399b8b3fa03a1a4723f3cd24bcb0d438b24fe200630385476e1023144cf",
+      "bytes": 21886,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c7f2dcc5-09df-4893-b6d3-032b51917b90.jpg",
+    "fetchedAt": "2026-10-02T21:38:16.067638+00:00",
+    "sha256": "ca935b8e64fe30194d571a2447d77af602cb1c84dec7740ea69bdcfec652e30d",
+    "bytes": 109007,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

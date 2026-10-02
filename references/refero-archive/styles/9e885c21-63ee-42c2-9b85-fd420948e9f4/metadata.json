@@ -1,0 +1,29 @@
+{
+  "styleId": "9e885c21-63ee-42c2-9b85-fd420948e9f4",
+  "sourceUrl": "https://styles.refero.design/style/9e885c21-63ee-42c2-9b85-fd420948e9f4",
+  "fetchedAt": "2026-10-02T21:27:30.016029+00:00",
+  "extractedAt": "2026-10-02T21:27:30.083567+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Shortverse — Style Reference",
+  "htmlSha256": "99765fa8e85e44b7d6337b4754b82f0f8d148dd18198e2993ef73acc490b5c3b",
+  "cache": ".cache/9e885c21-63ee-42c2-9b85-fd420948e9f4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c53aeda88c086160de3648d53b94cf85329cf9da0080ecf2d7e87407de184410",
+      "bytes": 18983,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ea4e2c91-2830-43fa-8ae1-53925b272a79.jpg",
+    "fetchedAt": "2026-10-02T21:27:32.067199+00:00",
+    "sha256": "83233d52072c5ce2579f8415f0fafeb969dee3d101b4881e975269967e468228",
+    "bytes": 169631,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

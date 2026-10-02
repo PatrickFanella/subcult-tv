@@ -1,0 +1,29 @@
+{
+  "styleId": "274e85fb-a34d-4e41-9369-be03065b971b",
+  "sourceUrl": "https://styles.refero.design/style/274e85fb-a34d-4e41-9369-be03065b971b",
+  "fetchedAt": "2026-10-02T21:51:46.562984+00:00",
+  "extractedAt": "2026-10-02T21:51:46.611638+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Raw Materials — Style Reference",
+  "htmlSha256": "bb70765ae2ad6fe75b4f197500eec6c2a86c82fcea7b7b3bcf93a343f6749533",
+  "cache": ".cache/274e85fb-a34d-4e41-9369-be03065b971b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d01173e1409930d3317b085bf2a47a158990998e0e6e52b1513c513e9f9af358",
+      "bytes": 27975,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fc1cc2a8-1acf-44ea-81d3-6b710fef9c3a.jpg",
+    "fetchedAt": "2026-10-02T21:51:48.227806+00:00",
+    "sha256": "2072fc161d7a83cbf92fae74a3ef474a4e580dd8d7dea0fead080c3d872fcae2",
+    "bytes": 79151,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

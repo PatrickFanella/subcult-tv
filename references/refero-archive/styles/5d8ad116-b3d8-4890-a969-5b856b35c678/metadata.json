@@ -1,0 +1,29 @@
+{
+  "styleId": "5d8ad116-b3d8-4890-a969-5b856b35c678",
+  "sourceUrl": "https://styles.refero.design/style/5d8ad116-b3d8-4890-a969-5b856b35c678",
+  "fetchedAt": "2026-10-02T21:55:02.266802+00:00",
+  "extractedAt": "2026-10-02T21:55:02.303922+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Campsite — Style Reference",
+  "htmlSha256": "f93e9473a523ce4ff12414f1a01ffc2ed99eddce499926a61fc9e21d0987069c",
+  "cache": ".cache/5d8ad116-b3d8-4890-a969-5b856b35c678.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bbfab98e5b8aead7bfb2c7fdee7a02212d8a76ad2272bec2ff4546c6c3ceb810",
+      "bytes": 20265,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/766e5476-a87a-4676-807b-ba9612bd648c.jpg",
+    "fetchedAt": "2026-10-02T21:55:04.273592+00:00",
+    "sha256": "3dd80a985b635aa40bbfef61270634d8faca2f7bc01fee2492b0583d705265f9",
+    "bytes": 84467,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

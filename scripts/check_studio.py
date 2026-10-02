@@ -44,13 +44,19 @@ class StudioExportChecks(unittest.TestCase):
                 self.assertIn(key, self.catalog['files'])
         for item in self.catalog['media']:
             self.assertIn(item['asset'], self.catalog['files'])
+        references = json.loads((self.destination/'references.json').read_text())
+        for entry in references['entries']:
+            for key in [*entry['images'], *(item['asset'] for item in entry['attachments'])]:
+                self.assertIn(key, self.catalog['files'])
+            self.assertIn('guide', entry)
+            self.assertNotIn('document', entry)
 
     def test_export_boundary(self):
         names = {row['name'] for row in self.catalog['files'].values()}
         self.assertNotIn('config.json', names)
         self.assertNotIn('logo-selection.json', names)
         self.assertNotIn('selection.json', names)
-        self.assertEqual({p.name for p in self.destination.iterdir()}, {'catalog.json', 'posting.json', 'assets'})
+        self.assertEqual({p.name for p in self.destination.iterdir()}, {'catalog.json', 'posting.json', 'references.json', 'assets'})
         expected = {b['slug'] for b in json.loads((PACK/'brands.json').read_text())}
         self.assertEqual({b['slug'] for b in self.catalog['brands']}, expected)
         with self.assertRaises(ValueError):

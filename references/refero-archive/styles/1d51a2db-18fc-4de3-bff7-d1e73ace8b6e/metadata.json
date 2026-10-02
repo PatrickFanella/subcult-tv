@@ -1,0 +1,29 @@
+{
+  "styleId": "1d51a2db-18fc-4de3-bff7-d1e73ace8b6e",
+  "sourceUrl": "https://styles.refero.design/style/1d51a2db-18fc-4de3-bff7-d1e73ace8b6e",
+  "fetchedAt": "2026-10-02T21:59:46.183525+00:00",
+  "extractedAt": "2026-10-02T21:59:46.230978+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dovetail — Style Reference",
+  "htmlSha256": "f4737dc94f6c75c78216d37253237adaba1c2d58d01974280076134c650e08e3",
+  "cache": ".cache/1d51a2db-18fc-4de3-bff7-d1e73ace8b6e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f9ba4b7e7bccb66e70adaec89713082e3248b737997bd766c1db7fa569784fea",
+      "bytes": 17216,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cd785534-e594-4365-b443-fc63e293c467.jpg",
+    "fetchedAt": "2026-10-02T21:59:48.209289+00:00",
+    "sha256": "f23c2d4f54c1059f43948523a2d448b8bf34a4bc805d3333387bdb8228be46e3",
+    "bytes": 83074,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

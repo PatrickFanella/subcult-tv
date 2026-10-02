@@ -1,0 +1,29 @@
+{
+  "styleId": "7fdcf5eb-4d65-49a2-b887-60119bca4edc",
+  "sourceUrl": "https://styles.refero.design/style/7fdcf5eb-4d65-49a2-b887-60119bca4edc",
+  "fetchedAt": "2026-10-02T21:59:18.205584+00:00",
+  "extractedAt": "2026-10-02T21:59:18.247237+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Spacelab — Style Reference",
+  "htmlSha256": "237cc02414a907fe3e87329c3e1abece611d6f4696bd643e545c05daf296533e",
+  "cache": ".cache/7fdcf5eb-4d65-49a2-b887-60119bca4edc.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0184b8b0f384059a490dfe93f57aafe4574bfbbfa33339187149140bc0935c8b",
+      "bytes": 16427,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/195e5250-9b68-4030-9bdd-eebc1cbf5c29.jpg",
+    "fetchedAt": "2026-10-02T21:59:20.268943+00:00",
+    "sha256": "b044601becfc4233691bda438d3bfa92f5dcd39881a240158969a1dfee663551",
+    "bytes": 159047,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

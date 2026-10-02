@@ -1,0 +1,29 @@
+{
+  "styleId": "66e7b131-d68c-4751-954c-f5d0d8869647",
+  "sourceUrl": "https://styles.refero.design/style/66e7b131-d68c-4751-954c-f5d0d8869647",
+  "fetchedAt": "2026-10-02T21:53:42.214671+00:00",
+  "extractedAt": "2026-10-02T21:53:42.295585+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Le Puzz — Style Reference",
+  "htmlSha256": "1cab80d27a955efadd1e83dc0000b18d74943c6d30b9fc0f0a670491f5f2984a",
+  "cache": ".cache/66e7b131-d68c-4751-954c-f5d0d8869647.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8e0ccefd78ce20a2451cd1251b5771d926495b743561731e156a1cdcc49d7233",
+      "bytes": 19381,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2f5fe6ec-97de-4289-9cc8-6fc29a7f2ee7.jpg",
+    "fetchedAt": "2026-10-02T21:53:44.237055+00:00",
+    "sha256": "f6466736d59ddf52fdd109e1ef86aba0f04060758cc1b214fc5fc87a14584bb4",
+    "bytes": 256386,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

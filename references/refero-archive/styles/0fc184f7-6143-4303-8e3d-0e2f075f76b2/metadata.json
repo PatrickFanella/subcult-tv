@@ -1,0 +1,29 @@
+{
+  "styleId": "0fc184f7-6143-4303-8e3d-0e2f075f76b2",
+  "sourceUrl": "https://styles.refero.design/style/0fc184f7-6143-4303-8e3d-0e2f075f76b2",
+  "fetchedAt": "2026-10-02T21:38:50.050721+00:00",
+  "extractedAt": "2026-10-02T21:38:50.083108+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "A-dam — Style Reference",
+  "htmlSha256": "6ec0c739d2930a72b542aeb216a03365b2b8d26aaee47c05470d577eeba23da7",
+  "cache": ".cache/0fc184f7-6143-4303-8e3d-0e2f075f76b2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a889bc5460c44be15e2e55f837a003f468d7ac0c319f3bc64ad1dde558e67d79",
+      "bytes": 21298,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3b872822-cd7d-4466-8319-575f886135f8.jpg",
+    "fetchedAt": "2026-10-02T21:38:52.062056+00:00",
+    "sha256": "9d9d99109ce7010fa26a69d61df9666d5aaf50c2406ae9fbb3558e0130f386d6",
+    "bytes": 233033,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

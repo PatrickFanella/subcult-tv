@@ -1,0 +1,98 @@
+{
+  "site": "the-creative-independent",
+  "source": "https://thecreativeindependent.com/#home",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:14:07.530Z",
+      "url": "https://thecreativeindependent.com/#home",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "scrolled",
+      "observation": "evidence/scrolled.json",
+      "image": "images/scrolled.png",
+      "capturedAt": "2026-10-02T20:19:22.639Z",
+      "url": "https://thecreativeindependent.com/#home",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": "images/settled.png",
+      "capturedAt": "2026-10-02T20:19:21.034Z",
+      "url": "https://thecreativeindependent.com/#home",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "181a3ee3b22d0781632f36d5fa87e490add26fff937f78f670c9fff6268a1c2e",
+      "bytes": 4900
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "223fc0f1cecf9cc389babc3c3afff8abb0be97c0fbc8134bd65a7e9f3b235606",
+      "bytes": 1334
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "f4d9535e4c88698fbd4a4def84d83f7e49332cfbc0c82051355f053de8996bc3",
+      "bytes": 41066
+    },
+    {
+      "path": "evidence/scrolled.json",
+      "sha256": "218dd0007d5231a64d2e43b8eb17c72788b9c88b65f264aa4cc3d44bd8be06d0",
+      "bytes": 40694
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "bbc4dbb0908cccbe35089b6fb528d2cd1ceaa413c38755c3ad106a46487a4849",
+      "bytes": 40724
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "25031bec40091d2ac351ac343ec0a7311ee8c3e850ef02ccb503131bdcf2d7c2",
+      "bytes": 80435
+    },
+    {
+      "path": "images/scrolled.png",
+      "sha256": "c5275867581be5c6c72bbed5518d3f3066282cfc79dc23d856fb269412c44e46",
+      "bytes": 107013
+    },
+    {
+      "path": "images/settled.png",
+      "sha256": "25031bec40091d2ac351ac343ec0a7311ee8c3e850ef02ccb503131bdcf2d7c2",
+      "bytes": 80435
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "f3099a3a2fcf526b4613e20396f0ab6ed23580183ed099565de69a543d1612f2",
+      "bytes": 283
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "62b8a0cea1bcd5218f6613c35bd77f48daa1fd32b38fc62fbf1615832b374ae8",
+      "bytes": 6831
+    }
+  ]
+}

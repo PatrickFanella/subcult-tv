@@ -1,0 +1,29 @@
+{
+  "styleId": "271172f7-9f6d-4d6f-9baa-91a41648d8be",
+  "sourceUrl": "https://styles.refero.design/style/271172f7-9f6d-4d6f-9baa-91a41648d8be",
+  "fetchedAt": "2026-10-02T21:29:42.121588+00:00",
+  "extractedAt": "2026-10-02T21:29:42.165082+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tech Barcelona — Style Reference",
+  "htmlSha256": "41a16a5503745db3de616d633d763456b7f6a153b21f45e7e485ef1a822a7a9d",
+  "cache": ".cache/271172f7-9f6d-4d6f-9baa-91a41648d8be.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0e6b93ed96a78242587a8cf5080129b85c5f4dee713843f42c1576fc81baf7e8",
+      "bytes": 17837,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9a226129-c20f-4d03-ace9-883017a6ce94.jpg",
+    "fetchedAt": "2026-10-02T21:29:44.051318+00:00",
+    "sha256": "bf052a37ee4fbc67ffb8f9201de5f62e362b0029698c5df0544766b1fc5adfe9",
+    "bytes": 141316,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

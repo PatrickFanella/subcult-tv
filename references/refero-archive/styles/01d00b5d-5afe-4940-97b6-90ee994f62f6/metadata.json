@@ -1,0 +1,29 @@
+{
+  "styleId": "01d00b5d-5afe-4940-97b6-90ee994f62f6",
+  "sourceUrl": "https://styles.refero.design/style/01d00b5d-5afe-4940-97b6-90ee994f62f6",
+  "fetchedAt": "2026-10-02T21:29:06.032480+00:00",
+  "extractedAt": "2026-10-02T21:29:06.074486+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Azione — Style Reference",
+  "htmlSha256": "eee2e15e5d2f40b002b84cb3019d2806e1dc98afc8cbc0e11930d3fd7f2e5d0b",
+  "cache": ".cache/01d00b5d-5afe-4940-97b6-90ee994f62f6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0515e0d4866ed3b06c73ba0c3509d0ea11d3c19008e0db5b11ad929c2a6f51f7",
+      "bytes": 19570,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/96cb2729-6bea-48b9-bcbc-548a1c9bf5b7.jpg",
+    "fetchedAt": "2026-10-02T21:29:08.065519+00:00",
+    "sha256": "9d93b638b91db9ee55622ec147ae2acfbc3dcaa3d5a0a2938bfee544448a6392",
+    "bytes": 111565,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}
