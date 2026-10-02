@@ -1,6 +1,6 @@
 # Patchwork — Website design specification
 
-Updated 2 October 2026 from the web app at [patchwork.subcult.tv](https://patchwork.subcult.tv/), revision [`7a5f29b9e83eff1918a0458782eeee07d6ade615`](https://git.subcult.tv/subculture-collective/patchwork/src/commit/7a5f29b9e83eff1918a0458782eeee07d6ade615/apps/web). The web service has run this revision since 2 October 2026, 17:17 UTC; the API, indexer and moderation services were not changed by that release. This document records the implemented interface and the changes from the interface originality audit merged as [PR 119](https://git.subcult.tv/subculture-collective/patchwork/pulls/119). The [brand guide](GUIDE.md) governs marks, promotional artwork and asset editing.
+Updated 2 October 2026 from the web app at [patchwork.subcult.tv](https://patchwork.subcult.tv/), revision [`c1adb374306ae3d4d0f75cdc6fda18b002012d1c`](https://git.subcult.tv/subculture-collective/patchwork/src/commit/c1adb374306ae3d4d0f75cdc6fda18b002012d1c/apps/web). The web service has run this revision since 2 October 2026, 17:38 UTC. The audit changes first went live at 17:17 UTC as `7a5f29b`; neither release changed the API, indexer or moderation services. This document records the implemented interface and the changes from the interface originality audit, merged as [PR 119](https://git.subcult.tv/subculture-collective/patchwork/pulls/119) with a font follow-up in [PR 120](https://git.subcult.tv/subculture-collective/patchwork/pulls/120). The [brand guide](GUIDE.md) governs marks, promotional artwork and asset editing.
 
 The product repository owns the interface rules. `docs/design-system.md` states them and `apps/web/src/styles/tokens.css` holds the values. Change the product first, then update this file and the `product_interface` block in `tokens.json` through `patchwork_product.py`.
 
@@ -48,7 +48,7 @@ The site is an editorial neighbourhood bulletin: heavy serif headlines, ink outl
 | Outline and depth | 1.5px ink outline. Flat offset shadows of 2, 4 and 7px with no blur. |
 | Motion | 150ms transitions; hover lifts a button 1px; everything stops under reduced motion. |
 
-The three typefaces ship with the app through `@fontsource-variable` packages. No page contacts a third-party font host, and the content security policy allows fonts from the site only. At this revision one small JetBrains Mono subset (Cyrillic extended) is inlined and blocked by that policy; no visible text uses it, and [PR 120](https://git.subcult.tv/subculture-collective/patchwork/pulls/120) keeps font files out of data URIs.
+The three typefaces ship with the app through `@fontsource-variable` packages. No page contacts a third-party font host, and the content security policy allows fonts from the site only. Font files are never inlined as data URIs, which that policy would block, and a browser test fails on any policy violation.
 
 ### Differences from the promotional pack
 
@@ -105,9 +105,10 @@ Map tiles use a paper-toned flavour so the basemap recedes behind pine markers: 
 9. Distances moved from kilometres to miles.
 10. The basemap took the paper flavour.
 11. Every `Panel`, `Card` and hand-written route header moved to `Surface` and `PageHeader`; raw colours outside the token file were replaced with tokens.
+12. Follow-up: the first release inlined one small JetBrains Mono subset as a data URI, which the font policy blocked on every page. PR 120 keeps font files as files.
 
 ## Verification and limits
 
-The product's checks passed on the merged revision: unit tests, 204 browser tests with 16 skipped, and 14 visual baselines at 390px and 1280px that now render the bundled fonts. Signed-out routes were reviewed on screen at both widths. Signed-in routes are covered by the browser tests and were not reviewed on screen. After the release, ten signed-out routes were loaded from the live site at both widths: each showed its heading and the bundled fonts, and none requested a third-party host.
+The product's checks passed on the merged revision: unit tests, 204 browser tests with 16 skipped, and 14 visual baselines at 390px and 1280px that now render the bundled fonts. Signed-out routes were reviewed on screen at both widths. Signed-in routes are covered by the browser tests and were not reviewed on screen. After the second release, ten signed-out routes were loaded from the live site at both widths: each showed its heading and the bundled fonts, none requested a third-party host, and none logged a console error apart from the expected anonymous session check.
 
 The demo feed has no example requests yet, so the home card shows places only. The directory lists every area until a visitor chooses one. Terms, privacy and community guidelines are unapproved drafts.

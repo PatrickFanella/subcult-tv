@@ -1,7 +1,7 @@
 """Patchwork's site interface roles, observed from the product repository.
 
 Source: subculture-collective/patchwork, apps/web/src/styles/tokens.css and docs/design-system.md at main
-7a5f29b (observed October 2, 2026). The promotional pack keeps its own softer ink and stitched shapes;
+c1adb37 (observed October 2, 2026). The promotional pack keeps its own softer ink and stitched shapes;
 these values belong to the site. brands/patchwork/WEBSITE.md describes how the site uses them.
 """
 INTERFACE={
@@ -12,7 +12,7 @@ INTERFACE={
  'outline':'1.5px solid #172019','shadow_offsets_px':[2,4,7],'shadow':'ink at 16-22% opacity, no blur',
  'fonts':{'display':'Fraunces','body':'Public Sans','label':'JetBrains Mono','delivery':'bundled with the app; no third-party font host'},
  'distance_unit':'miles',
- 'source':'patchwork apps/web/src/styles/tokens.css at main 7a5f29b',
+ 'source':'patchwork apps/web/src/styles/tokens.css at main c1adb37',
 }
 
 GUIDE_NOTE=' The product owns the site interface: [the website design specification](WEBSITE.md) records the deployed pages, copy rules and components, and lists where the site differs from this pack (darker ink, no stitching). `tokens.json` lists the site roles under `product_interface`.'
