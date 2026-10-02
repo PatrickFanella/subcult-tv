@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 import type { ShowcaseProduct } from '@/lib/showcase';
-import { getCuratedProjectBySlug } from '@/lib/github';
+import { getCuratedProjectBySlug } from '@/lib/project-catalog';
 import ProductVisual from '@/components/ProductVisual';
 import { getProductPath } from '@/lib/product-paths';
 

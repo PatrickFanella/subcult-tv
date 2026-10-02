@@ -6,18 +6,18 @@ The latest snapshot contains 590 records: 62 curated site/style studies and 528 
 
 ## Refresh from later downloads
 
-From the Studio repository:
+From the combined repository root:
 
 ```sh
-rtk proxy python scripts/import_references.py
-rtk proxy python scripts/export_studio.py --output /absolute/private/studio-bundle
+rtk proxy python3 studio/scripts/import_references.py
+rtk proxy python3 studio/scripts/export_studio.py --output /absolute/private/studio-bundle
 ```
 
 The importer reads the downloader's atomically written manifest once and verifies each completed export and screenshot against that snapshot. It does not modify or stop the downloader. Reimporting copies later completed records; it does not prune earlier files. Curated collections are copied with their evidence, supporting files and collection indexes.
 
 The export produces `references.json` alongside the existing private `catalog.json`. Documents, tokens and screenshots become content-addressed assets. Keep the entire export private. Reference assets are not added to the public brand selection.
 
-The companion `subcult-tv` API applies migration `004_studio_references` and indexes this export on startup when `STUDIO_ROOT` is configured. To update a running API's database without restarting it, run from the site's `api/` directory with its database connection and private bundle path configured:
+The Go API in this repository applies migration `004_studio_references` and indexes this export on startup when `STUDIO_ROOT` is configured. To update a running API's database without restarting it, run from the site's `api/` directory with its database connection and private bundle path configured:
 
 ```sh
 rtk proxy go run ./cmd/studio-index

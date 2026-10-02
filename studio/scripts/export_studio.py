@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY_ROOT = ROOT.parent
-PACK = ROOT / "branding/2026-10-01-packs"
+PACK = ROOT / "branding/library"
 
 
 def digest(path):

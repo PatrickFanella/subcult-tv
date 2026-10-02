@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-01",
+  "selected_by": "user",
+  "directions": {
+    "Patrick__eff": "Patch / routed signal",
+    "Rekolekt": "A / Index",
+    "SUBCULT": "C / Culture"
+  },
+  "clpr_correction": "Filmstrip and editing timeline in place of waveform",
+  "established_theme_examples": [
+    "CLPR",
+    "Patchwork",
+    "HasanAra",
+    "Subcult OS",
+    "Undertow"
+  ],
+  "status": "current production selections",
+  "clpr": {
+    "main": "Clip stack",
+    "square_post": "Single clip card from the stack",
+    "selected_by_user": true
+  },
+  "rekolekt_mark": {
+    "direction": "Original logo restored",
+    "status": "Requested by user",
+    "story_illustration": "Transcript rows and timestamps replace the decorative waveform only"
+  },
+  "patrick_banner_logo": {
+    "status": "superseded Signal banner choices; see docs/history/selected-directions-2026-10-01.json"
+  },
+  "kork": {
+    "date": "2026-10-02",
+    "selected_by_user": true,
+    "direction": "A / Pinned card",
+    "name": "Kork (chosen over Corkboard; renamed from code name zelda)",
+    "alternatives": "corkboard-directions/"
+  },
+  "prichal": {
+    "date": "2026-10-02",
+    "selected_by_user": true,
+    "direction": "A / Docking node",
+    "name": "Prichal (chosen October 1, 2026; Russian for pier or berth)",
+    "source": "subculture-collective/prichal brand/"
+  },
+  "left_field": {
+    "date": "2026-10-02",
+    "name": "Left Field",
+    "name_requested_by": "user",
+    "direction": "A / The field ledger",
+    "mark_status": "user-approved LF baseline/intersection revision",
+    "direction_selected_by_user": true,
+    "basis": "existing app palette and editorial layout",
+    "publication": "not performed"
+  },
+  "dedhed": {
+    "date": "2026-10-02",
+    "name": "Dedhed",
+    "direction": "A / The tape shelf",
+    "direction_selected_by_user": true,
+    "basis": "taper cassette photographs in the product's docs/inspo/; design proposal in docs/design/",
+    "backdrop": "cream paper approved by the user over dark and clear-case alternatives",
+    "publication": "not performed; private pilot with no public domain"
+  }
+}

@@ -211,10 +211,6 @@ export async function listProjects(filters?: { status?: string; type?: string })
   return apiFetch<APIProject[]>(`/api/v1/projects${qs ? '?' + qs : ''}`);
 }
 
-export async function getProject(slug: string) {
-  return apiFetch<APIProject>(`/api/v1/projects/${slug}`);
-}
-
 export async function createProject(
   data: Omit<APIProject, 'id' | 'stars' | 'last_updated' | 'created_at' | 'updated_at'>,
 ) {
@@ -247,10 +243,6 @@ export async function listPosts(opts?: { page?: number; perPage?: number; all?: 
   if (opts?.all) params.set('all', 'true');
   const qs = params.toString();
   return apiFetch<PaginatedResponse<APIPost>>(`/api/v1/posts${qs ? '?' + qs : ''}`);
-}
-
-export async function getPost(slug: string) {
-  return apiFetch<APIPost>(`/api/v1/posts/${slug}`);
 }
 
 export async function createPost(data: Omit<APIPost, 'id' | 'created_at' | 'updated_at'>) {
@@ -313,13 +305,6 @@ export async function subscribe(email: string) {
   });
 }
 
-export async function unsubscribe(token: string) {
-  return apiFetch<{ message: string }>('/api/v1/newsletter/unsubscribe', {
-    method: 'POST',
-    body: JSON.stringify({ token }),
-  });
-}
-
 export async function listSubscribers(opts?: { page?: number; perPage?: number }) {
   const params = new URLSearchParams();
   if (opts?.page) params.set('page', String(opts.page));
@@ -337,17 +322,6 @@ export async function getDashboardStats() {
 }
 
 // ── Public metrics ──────────────────────────────────────────
-
-export interface PublicStats {
-  projects: number;
-  posts: number;
-  subscribers: number;
-  last_updated: string;
-}
-
-export async function getPublicStats() {
-  return apiFetch<PublicStats>('/api/v1/stats');
-}
 
 export interface StudioBrand {
   slug: string;

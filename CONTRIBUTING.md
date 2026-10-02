@@ -1,142 +1,31 @@
-# Contributing to subcult.tv
+# Working on SUBCULT
 
-Thanks for your interest in contributing to the Subculture Collective. We welcome contributions of all kinds — bug reports, feature ideas, documentation improvements, and code.
+Create a branch in this private repository. Keep source and consumer changes in the same PR. Read `AGENTS.md` and, for production materials, `studio/AGENTS.md`. Preserve unrelated edits and active worktrees.
 
-## Code of Conduct
+## Development
 
-Be excellent to each other. No jerks.
+Follow [development setup](docs/DEVELOPMENT.md). `make setup` installs the lockfile dependencies; `make dev` uses an explicit local Compose profile. Production Compose and NUC bindings are separate.
 
-## Getting Started
+Run the checks for the areas you change:
 
-1. **Fork the repository** and clone your fork
-2. **Copy `.env.example`** to `.env` and fill in values
-3. **Install dependencies:**
-   ```bash
-   make setup
-   ```
-4. **Start development:**
-   ```bash
-   make dev
-   ```
-
-## Development Workflow
-
-### Frontend (TypeScript/React)
-
-```bash
-npm run dev          # Start Vite dev server
-npm run lint         # Run ESLint
-npm run typecheck    # Run TypeScript checks
-npm run format       # Format with Prettier
+```sh
+rtk proxy make check
+rtk proxy make test
+rtk proxy make build
 ```
 
-### Backend (Go)
+Go database integration requires a disposable `TEST_DATABASE_URL`; hosted CI supplies one. Studio preparation tests create disposable state and do not run jobs against installed schedules. `make -C studio check-cutover` is a host-specific activation check, not a portable test.
 
-```bash
-cd api
-go run ./cmd/server  # Run API server
-go vet ./...         # Static analysis
-go test ./...        # Run tests
-```
+## Source changes
 
-### Docker
+Edit branding masters and their generators together. Render only affected brands, then refresh their manifests. Preserve owner-edited SVG geometry and layers. Keep required fonts and licenses in standalone packs. Media additions need rights, provenance, hashes and alt text. See [asset policy](docs/ASSETS.md).
 
-```bash
-make docker-up       # Start all services
-make docker-down     # Stop all services
-make docker-logs     # Tail logs
-make db-shell        # Open psql shell
-```
+Public assets need an explicit exporter selection. Never place Studio drafts, account configuration or private browsing bundles under `public/` or `dist/`. Runtime state and credentials stay outside Git.
 
-## Pull Request Process
+Keep generated archives, caches and build output in their documented ignored directories. Retired source studies belong under `studio/branding/archive/`; remove obsolete generated previews and unused code after checking their consumers. Do not rewrite historical import receipts to make current source checks pass.
 
-1. **Create a feature branch** from `main`:
+## Review
 
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
+Describe the concrete change and resulting behavior. Include the commands that passed, any skipped integration checks and remaining runtime work. Use a merge commit for the initial repository consolidation so Studio’s imported history remains reachable. Later changes can follow the repository’s normal merge policy.
 
-2. **Make your changes** in small, logical commits
-
-3. **Ensure all checks pass:**
-
-   ```bash
-   make check          # Frontend lint + typecheck
-   cd api && go vet ./... && go test ./...
-   ```
-
-4. **Push your branch** and create a Pull Request
-
-5. **Wait for review** — we'll respond as soon as we can
-
-## Commit Messages
-
-Use conventional commit format:
-
-```
-type(scope): description
-
-[optional body]
-```
-
-Types:
-
-- `feat` — New feature
-- `fix` — Bug fix
-- `docs` — Documentation only
-- `style` — Formatting, no code change
-- `refactor` — Code change that neither fixes a bug nor adds a feature
-- `test` — Adding tests
-- `chore` — Maintenance tasks
-
-Examples:
-
-```
-feat(api): add rate limiting to login endpoint
-fix(ui): correct button alignment on mobile
-docs: update deployment instructions
-```
-
-## Project Structure
-
-```
-subcult_tv/
-├── api/              # Go backend
-│   ├── cmd/server/   # Entry point
-│   └── internal/     # Internal packages
-├── src/              # React frontend
-│   ├── components/   # UI components
-│   ├── context/      # React contexts
-│   ├── lib/          # Utilities
-│   └── pages/        # Page components
-├── content/          # MDX posts, project data
-├── public/           # Static assets
-└── docs/             # Documentation
-```
-
-## Security
-
-- **Never commit secrets** — Use `.env` files
-- **Report vulnerabilities privately** — Email security@subcult.tv
-
-## Style Guide
-
-### Go
-
-- Follow [Effective Go](https://golang.org/doc/effective_go)
-- Run `go vet` and `go fmt` before committing
-- Write tests for new functionality
-
-### TypeScript/React
-
-- Use functional components with hooks
-- Follow existing component patterns
-- Run ESLint and Prettier before committing
-
-## Questions?
-
-Open an issue or reach out via the contact form at [subcult.tv/contact](https://subcult.tv/contact).
-
----
-
-_"We build tools, media, and infrastructure for the counterculture."_
+Apply the project’s prose rules to docs and public copy. Claims about production, provider delivery or scheduled jobs need evidence from that destination; local tests establish local behavior.

@@ -1,106 +1,104 @@
-# ═══════════════════════════════════════════════════════════
-# SUBCULT — subcult.tv
-# ═══════════════════════════════════════════════════════════
+# Website, API and Studio development from one checkout.
+.DEFAULT_GOAL := help
+DEV_PROJECT ?= subcult-dev-$(shell printf '%s' "$(CURDIR)" | sha256sum | cut -c1-10)
+DEV_COMPOSE = docker compose --env-file /dev/null -p $(DEV_PROJECT) -f compose.dev.yml
 
-.PHONY: help dev dev-api dev-frontend build build-api build-frontend \
-        docker-up docker-down docker-logs docker-rebuild \
-        lint typecheck format check test clean setup db-shell db-reset
+.PHONY: help setup dev dev-up dev-down dev-logs dev-api dev-frontend \
+        docker-up docker-down docker-logs docker-rebuild build build-api build-frontend \
+        lint typecheck format check check-catalog check-studio check-studio-automation \
+        check-library check-import test test-frontend test-api test-studio \
+        studio-export studio-export-left-field studio-package studio-preview db-shell clean
 
-# Default target
-help: ## Show this help
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
-		awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
+help: ## List available commands
+	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "%-24s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-# ── Setup ─────────────────────────────────────────────────
-
-setup: ## Install all dependencies (frontend + Go)
-	npm install
+setup: ## Install locked frontend and Go dependencies
+	npm ci
 	cd api && go mod download
-	@echo ""
-	@echo "✓ Dependencies installed."
-	@echo "  Copy .env.example → .env and fill in values."
 
-# ── Development ───────────────────────────────────────────
+dev: dev-up ## Start local database/API, then the Vite frontend
+	DEV_API_TARGET=http://127.0.0.1:$${DEV_API_PORT:-18085} npm run dev -- --host 127.0.0.1
 
-dev: ## Run everything (Docker services + Vite dev server)
-	$(MAKE) docker-up
-	@sleep 2
-	$(MAKE) dev-frontend
+dev-up: ## Start this checkout's local database and API
+	mkdir -p studio/runtime/studio
+	$(DEV_COMPOSE) up -d --build --wait
 
-dev-frontend: ## Start Vite dev server only
-	npx vite --host
+dev-down: ## Stop this checkout's local services, retaining its database
+	$(DEV_COMPOSE) down
 
-dev-api: ## Start Go API server locally (no Docker)
+dev-logs: ## Follow this checkout's local service logs
+	$(DEV_COMPOSE) logs -f
+
+dev-api: ## Run the Go API with an explicitly configured database
 	cd api && go run ./cmd/server
 
-# ── Docker ────────────────────────────────────────────────
+dev-frontend: ## Run only the loopback Vite frontend
+	npm run dev -- --host 127.0.0.1
 
-docker-up: ## Start all Docker services (postgres, api, umami)
-	docker compose up -d
+# Compatibility aliases now use the explicit local development profile.
+docker-up: dev-up ## Alias for dev-up
+docker-down: dev-down ## Alias for dev-down
+docker-logs: dev-logs ## Alias for dev-logs
+docker-rebuild: dev-up ## Rebuild this checkout's local API
 
-docker-down: ## Stop all Docker services
-	docker compose down
+build: build-api build-frontend ## Build the API and frontend
 
-docker-logs: ## Tail Docker logs
-	docker compose logs -f
-
-docker-rebuild: ## Rebuild and restart Docker services
-	docker compose up -d --build
-
-# ── Build ─────────────────────────────────────────────────
-
-build: build-api build-frontend ## Build everything for production
-
-build-frontend: ## Build frontend for production
-	npx vite build
-
-build-api: ## Build Go API binary
+build-api: ## Build the Go server
 	cd api && CGO_ENABLED=0 go build -o server ./cmd/server
 
-# ── Quality ───────────────────────────────────────────────
+build-frontend: ## Typecheck and build public frontend output
+	npm run build
 
-lint: ## Run ESLint on frontend
-	npx eslint src/
+lint: ## Lint frontend source
+	npm run lint
 
-typecheck: ## Run TypeScript type checking
-	npx tsc -b
+typecheck: ## Check all TypeScript project references
+	npm run typecheck
 
-format: ## Format code with Prettier
-	npx prettier --write "src/**/*.{ts,tsx,css}" "content/**/*.mdx"
+format: ## Format frontend code and public content
+	npm run format
 
-check: lint typecheck ## Run all quality checks
-	@echo "✓ All checks passed."
+check-catalog: ## Validate the public product catalog
+	npm run check:catalog
 
-test: ## Run tests (Go backend)
-	cd api && go test ./...
+check: lint typecheck check-catalog check-library check-studio ## Run portable source checks
 
-# ── Database ──────────────────────────────────────────────
+check-library: ## Validate current production asset manifests and SVGs
+	python3 studio/scripts/check_library.py
 
-db-shell: ## Open psql shell to the database
-	docker compose exec postgres psql -U subcult -d subcult_db
+check-import: ## Verify the immutable original Studio import in Git history
+	$(MAKE) -C studio check-import
 
-db-reset: ## Drop and recreate the database (data loss!)
-	docker compose down -v
-	docker compose up -d postgres
-	@echo "Database reset. Run 'make docker-up' to restart services."
-
-# ── Cleanup ───────────────────────────────────────────────
-
-clean: ## Remove build artifacts
-	rm -rf dist api/server
-	@echo "✓ Clean."
-
-# Studio production sources share this repository; runtime activation is separate.
-.PHONY: check-studio check-studio-automation studio-export studio-export-left-field
-
-check-studio: ## Check private exports, source hashes and snapshot redaction
+check-studio: ## Check private exports and posting snapshot redaction
 	$(MAKE) -C studio check-studio
 
 check-studio-automation: ## Test preparation jobs with disposable state
 	$(MAKE) -C studio check-automation
+
+test: test-frontend test-api test-studio ## Run frontend, API and Studio tests
+
+test-frontend: ## Run frontend regression tests
+	npm test
+
+test-api: ## Run Go tests; DB integration requires TEST_DATABASE_URL
+	cd api && go test ./...
+
+test-studio: check-studio check-studio-automation ## Run Studio tests
 
 studio-export: ## Export the private bundle and approved public SUBCULT assets
 	python3 studio/scripts/export_studio.py --site-root "$(CURDIR)"
 
 studio-export-left-field: ## Export approved public Left Field assets
 	python3 studio/scripts/export_left_field.py --site-root "$(CURDIR)"
+
+studio-package: ## Create brand ZIPs under ignored studio/runtime/packages
+	$(MAKE) -C studio package
+
+studio-preview: ## Preview private Studio source galleries on loopback
+	$(MAKE) -C studio preview
+
+db-shell: ## Open this checkout's local development database
+	$(DEV_COMPOSE) exec postgres psql -U subcult_dev -d subcult_dev
+
+clean: ## Remove frontend/API build output; retain source, bundles and databases
+	rm -rf dist api/server

@@ -31,7 +31,7 @@ Kork, SUBCULT's link-page service, launched at https://kork.subcult.tv on Octobe
 | Published page / editor, placeholder handles | MEDIA-43cbc92b89d28839, MEDIA-265fdbf0a35a8bdf | Product proof; local build of kork 22477c1, not a live page. The editor shows kork.subcult.tv/yourname through a local host mapping; that page does not exist on the live service |
 | Share image, 1200 × 630 | MEDIA-1ad9fefcdaeaa2bc | Link preview or fallback image |
 
-Graphics sources: `branding/2026-10-01-packs/kork_launch_assets.py` and `brands/kork/launch/`. Alt text for each asset is in `media/library/catalog.json`. All assets are `needs_review`.
+Graphics sources: `branding/library/kork_launch_assets.py` and `brands/kork/launch/`. Alt text for each asset is in `media/library/catalog.json`. All assets are `needs_review`.
 
 ## KORK-01 / subcult / X
 

@@ -1,4 +1,4 @@
-import { getCuratedProjectBySlug } from '@/lib/github';
+import { getCuratedProjectBySlug } from '@/lib/project-catalog';
 import type { Project } from '@/types';
 
 export interface ShowcaseProduct {
