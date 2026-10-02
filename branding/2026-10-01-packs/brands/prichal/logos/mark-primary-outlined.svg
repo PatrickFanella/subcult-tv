@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   role="img"
+   version="1.1"
+   id="svg9"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <title
+     id="title1">mark-primary</title>
+  <g
+     transform="translate(48 48) scale(0.3125)"
+     id="g9">
+    <g
+       transform="rotate(0 256 256)"
+       id="g2">
+      <rect
+         x="218"
+         y="62"
+         width="76"
+         height="70"
+         fill="#1c2230"
+         id="rect1" />
+      <rect
+         x="196"
+         y="36"
+         width="120"
+         height="34"
+         fill="#1c2230"
+         id="rect2" />
+    </g>
+    <g
+       transform="rotate(180 256 256)"
+       id="g4">
+      <rect
+         x="218"
+         y="62"
+         width="76"
+         height="70"
+         fill="#1c2230"
+         id="rect3" />
+      <rect
+         x="196"
+         y="36"
+         width="120"
+         height="34"
+         fill="#1c2230"
+         id="rect4" />
+    </g>
+    <g
+       transform="rotate(270 256 256)"
+       id="g6">
+      <rect
+         x="218"
+         y="62"
+         width="76"
+         height="70"
+         fill="#1c2230"
+         id="rect5" />
+      <rect
+         x="196"
+         y="36"
+         width="120"
+         height="34"
+         fill="#1c2230"
+         id="rect6" />
+    </g>
+    <g
+       transform="rotate(90 256 256)"
+       id="g8">
+      <rect
+         x="218"
+         y="62"
+         width="76"
+         height="70"
+         fill="#1c2230"
+         id="rect7" />
+      <rect
+         x="196"
+         y="36"
+         width="120"
+         height="34"
+         fill="#b23a26"
+         id="rect8" />
+    </g>
+    <circle
+       cx="256"
+       cy="256"
+       r="134"
+       fill="#f4f1e9"
+       stroke="#1c2230"
+       stroke-width="26"
+       id="circle8" />
+    <path
+       d="M 122 256 A 134 44 0 0 0 390 256"
+       fill="none"
+       stroke="#1c2230"
+       stroke-width="14"
+       id="path8" />
+    <path
+       d="M 122 256 A 134 44 0 0 1 390 256"
+       fill="none"
+       stroke="#1c2230"
+       stroke-width="6"
+       stroke-dasharray="14 12"
+       id="path9" />
+  </g>
+</svg>
