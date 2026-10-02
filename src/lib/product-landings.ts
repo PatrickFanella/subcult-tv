@@ -339,4 +339,68 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     ],
     closing: 'Your server. We keep it running.',
   },
+  kork: {
+    audience: 'For creators, musicians, small shops, and anyone who shares one link in a bio.',
+    introduction:
+      'A bio has room for one link. Kork turns it into a page with your socials, tip jars, music and video, QR codes, and contact card, in a theme you choose.',
+    features: [
+      {
+        title: 'Pin every service',
+        description:
+          'Choose from 92 services with brand icons and handle checks, from Instagram and Bluesky to Bandcamp, Cash App, Ko-fi, and Bitcoin.',
+      },
+      {
+        title: 'Keep every tip',
+        description:
+          'Payment buttons link straight to your own Cash App, PayPal, Venmo, or Ko-fi. Kork never takes a cut of tips or sales.',
+      },
+      {
+        title: 'Make it yours',
+        description:
+          'Start from ten theme presets, then set your own colors, fonts, buttons, and background. Stack the links or number them as a ledger.',
+      },
+    ],
+    steps: [
+      {
+        title: 'Sign up',
+        description:
+          'Create an account and confirm your email. New accounts can publish after 24 hours.',
+      },
+      {
+        title: 'Build the page',
+        description:
+          'Add services, links, embeds, QR codes, tour dates, or an email sign-up, or import an existing Linktree page.',
+      },
+      {
+        title: 'Share one link',
+        description: 'Publish at kork.subcult.tv/yourname and put it in every bio.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What does Kork cost?',
+        answer:
+          'Kork is free to use. A paid Kork Pro plan is planned, and its price has not been set.',
+      },
+      {
+        question: 'Does Kork track my visitors?',
+        answer:
+          'No. Analytics are anonymous daily totals of views, clicks, referrer domains, and countries. Kork stores no visitor IP addresses, cookies, or user agents.',
+      },
+      {
+        question: 'Can I move my page from Linktree?',
+        answer:
+          'Yes. Import from Linktree or another link page. Kork also fetches link titles and thumbnails for you.',
+      },
+      {
+        question: 'Can I use my own domain?',
+        answer: 'Not yet. Custom domain support is written but has not been rolled out.',
+      },
+      {
+        question: 'Can I take my data with me?',
+        answer: 'Yes. Download your account as a ZIP file, or delete it, from your settings.',
+      },
+    ],
+    closing: 'Pin every link to one page.',
+  },
 };

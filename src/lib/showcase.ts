@@ -73,6 +73,14 @@ const selections = [
     highlights: ['Your own server', 'Your name as your username', 'Kept running for you'],
     liveLabel: 'See the preview',
   },
+  {
+    slug: 'kork',
+    category: 'Link pages',
+    headline: 'Every link. One board.',
+    summary:
+      'Put your socials, tip jars, music and video players, QR codes, and contact card on one themed page. Payment buttons go straight to your own accounts, and Kork takes no cut.',
+    highlights: ['92 services', 'Ten themes', 'No trackers'],
+  },
 ] satisfies Array<Omit<ShowcaseProduct, 'project'> & { slug: string }>;
 
 export function getShowcaseProducts(): ShowcaseProduct[] {
