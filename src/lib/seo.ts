@@ -42,6 +42,8 @@ const ORGANIZATION = {
 
 // Search snippets show about 155 characters; these replace longer summaries.
 const META_DESCRIPTIONS: Record<string, string> = {
+  'left-field':
+    'Explore sourced seat records, provisional research scores, and the evidence behind each brief. Left Field is in active development.',
   patchwork:
     'Ask neighbors for help, offer what you can, and find local resources without sharing exact addresses. A pre-alpha mutual aid prototype on AT Protocol.',
   prichal:
@@ -53,6 +55,7 @@ const META_DESCRIPTIONS: Record<string, string> = {
 
 // schema.org applicationCategory for each product.
 const APPLICATION_CATEGORY: Record<string, string> = {
+  'left-field': 'ReferenceApplication',
   clpr: 'MultimediaApplication',
   patchwork: 'SocialNetworkingApplication',
   hasanara: 'ReferenceApplication',
@@ -70,9 +73,9 @@ function fullTitle(title: string) {
 const STATIC_PAGES: PageMeta[] = [
   {
     path: '/',
-    title: 'SUBCULT | Open-source tools for independent culture',
+    title: 'SUBCULT | Tools for independent culture',
     description:
-      'Clips, archives, mutual aid, events, music video, account hosting, and link pages: CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, and Kork.',
+      'Software for clips, archives, mutual aid, events, music video, hosting, link pages, and election research. Explore nine products from SUBCULT.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [
@@ -90,7 +93,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/products',
     title: fullTitle('Products'),
     description:
-      'Eight products from SUBCULT for Twitch clips, mutual aid, searchable archives, live events, music video, account hosting, and link pages.',
+      'Nine products from SUBCULT for clips, mutual aid, archives, events, music video, account hosting, link pages, and sourced election research.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -98,7 +101,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/about',
     title: fullTitle('Studio'),
     description:
-      'SUBCULT is the independent studio behind CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, and Kork.',
+      'SUBCULT is the independent studio behind CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork, and Left Field.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [ORGANIZATION],

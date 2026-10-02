@@ -47,7 +47,7 @@ describe('smoke: app shell', () => {
     expect(screen.getByRole('navigation').textContent).toContain('SUBCULT');
   });
 
-  it('showcases all eight products and connects HasanAra to its shared application', async () => {
+  it('showcases all nine products and connects HasanAra to its shared application', async () => {
     const user = userEvent.setup();
     renderApp('/');
     const showcase = await screen.findByRole('region', { name: 'The products' });
@@ -61,6 +61,7 @@ describe('smoke: app shell', () => {
       'Undertow',
       'Prichal',
       'Kork',
+      'Left Field',
     ]) {
       expect(products.getByRole('heading', { name })).toBeInTheDocument();
     }
@@ -127,13 +128,13 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('redirects the old catalog to the eight-product directory', async () => {
+  it('redirects the old catalog to the nine-product directory', async () => {
     renderApp('/projects');
     await screen.findByRole('heading', { name: 'Products', level: 1 });
     const main = within(screen.getByRole('main'));
     const teasers = within(main.getByRole('region', { name: 'In development' }));
     const articles = main.getAllByRole('article');
-    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(8);
+    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(9);
     expect(teasers.getAllByRole('article')).toHaveLength(2);
     expect(main.getByRole('link', { name: 'Explore Rekolekt' })).toHaveAttribute(
       'href',
@@ -202,6 +203,7 @@ describe('smoke: app shell', () => {
     ['undertow', 'Undertow'],
     ['prichal', 'Prichal'],
     ['kork', 'Kork'],
+    ['left-field', 'Left Field'],
   ])('renders the %s landing page with product details and working FAQs', async (slug, name) => {
     const user = userEvent.setup();
     renderApp(`/products/${slug}`);
@@ -219,6 +221,31 @@ describe('smoke: app shell', () => {
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
       'href',
       `https://subcult.tv/products/${slug}`,
+    );
+  });
+
+  it('presents Left Field with approved artwork, source links, and research limits', async () => {
+    renderApp('/products/left-field');
+    await screen.findByRole('heading', { name: 'Left Field', level: 1 });
+    expect(screen.getByRole('link', { name: 'Explore the code ↗' })).toHaveAttribute(
+      'href',
+      'https://git.subcult.tv/subculture-collective/left-field',
+    );
+    expect(screen.getByRole('link', { name: 'Discuss using it →' })).toHaveAttribute(
+      'href',
+      '/contact?product=left-field',
+    );
+    expect(screen.getByRole('img', { name: /LF mark on warm paper/ })).toHaveAttribute(
+      'src',
+      '/brand/left-field/hero.svg',
+    );
+    expect(
+      screen.getByText(/scores are research tools, not election predictions/),
+    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Inspect the score' })).toBeInTheDocument();
+    expect(document.querySelector('.product-landing')).toHaveAttribute(
+      'data-product',
+      'left-field',
     );
   });
 
@@ -258,6 +285,7 @@ describe('smoke: app shell', () => {
       ['Undertow', 'undertow'],
       ['Prichal', 'prichal'],
       ['Kork', 'kork'],
+      ['Left Field', 'left-field'],
     ]) {
       expect(nav.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
       expect(footer.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);

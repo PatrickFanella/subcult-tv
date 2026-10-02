@@ -81,6 +81,14 @@ const selections = [
       'Put your socials, tip jars, music and video players, QR codes, and contact card on one themed page. Payment buttons go straight to your own accounts, and Kork takes no cut.',
     highlights: ['92 services', 'Ten themes', 'No trackers'],
   },
+  {
+    slug: 'left-field',
+    category: 'Election research / in development',
+    headline: 'Read the field. Trace the evidence.',
+    summary:
+      'Explore sourced seat records, compare provisional research scores, and inspect the inputs behind each brief. Left Field is in active development; scores are research tools, not election predictions.',
+    highlights: ['Inspect seat records', 'Compare provisional scores', 'Trace the sources'],
+  },
 ] satisfies Array<Omit<ShowcaseProduct, 'project'> & { slug: string }>;
 
 export function getShowcaseProducts(): ShowcaseProduct[] {

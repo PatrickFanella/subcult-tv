@@ -8,6 +8,57 @@ export interface LandingContent {
 }
 
 export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
+  'left-field': {
+    audience: 'For researchers and organizers who want to inspect the evidence behind a seat.',
+    introduction:
+      'Seat research starts with scattered records. Left Field brings election, incumbent, campaign-finance, and geography evidence together with their sources and coverage limits.',
+    features: [
+      {
+        title: 'Read the seat record',
+        description:
+          'Inspect incumbent, election, and finance records with dates and source context. Coverage varies by seat and evidence type.',
+      },
+      {
+        title: 'Inspect the score',
+        description:
+          'Explore priority briefs and their score components. Scores are provisional and versioned; missing inputs stay visible rather than becoming invented facts.',
+      },
+      {
+        title: 'Follow the source trail',
+        description:
+          'Use the source ledger and methodology notes to see where a claim came from, how it was interpreted, and what remains unresolved.',
+      },
+    ],
+    steps: [
+      { title: 'Choose a seat', description: 'Start with a seat record or the priority index.' },
+      {
+        title: 'Read its context',
+        description: 'Inspect the brief, component scores, dates, and stated coverage limits.',
+      },
+      {
+        title: 'Check the evidence',
+        description: 'Return to the source records and methodology before drawing a conclusion.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I use a public app today?',
+        answer:
+          'Left Field is in active development. This page links to its public source repository; a public app destination has not been announced here.',
+      },
+      {
+        question: 'Do the scores predict an election result?',
+        answer:
+          'No. They are provisional research scores from a versioned method. Coverage gaps and unresolved evidence limit how they can be interpreted.',
+      },
+      {
+        question: 'Does Left Field profile individual voters?',
+        answer:
+          'No. The project works with seat-level public records. Individual voter profiling, inferred political beliefs, and demographic persuasion targeting are outside its scope.',
+      },
+    ],
+    closing: 'Keep the source beside the claim.',
+  },
   clpr: {
     audience: 'For viewers, clip curators, and the communities around a stream.',
     introduction:

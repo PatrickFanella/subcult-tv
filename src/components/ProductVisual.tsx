@@ -8,6 +8,18 @@ export default function ProductVisual({
   priority?: boolean;
 }) {
   const { project } = product;
+  if (project.slug === 'left-field') {
+    return (
+      <img
+        src="/brand/left-field/hero.svg"
+        alt="Left Field: Read the field. Trace the evidence. LF mark on warm paper."
+        loading={priority ? 'eager' : 'lazy'}
+        fetchPriority={priority ? 'high' : 'auto'}
+        decoding="async"
+        className="showcase-screenshot"
+      />
+    );
+  }
   if (project.screenshot) {
     return (
       <img

@@ -1,4 +1,25 @@
 @font-face {
+  font-family: 'Liberation Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/brand/left-field/fonts/LiberationSerif-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Liberation Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/brand/left-field/fonts/LiberationSerif-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Left Field Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/brand/left-field/fonts/JetBrains-Mono-0.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Newsreader';
   font-style: normal;
   font-weight: 400 800;

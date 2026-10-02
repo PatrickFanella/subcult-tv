@@ -7,6 +7,7 @@ export const PRODUCT_ROUTES: Record<string, string> = {
   undertow: 'undertow',
   prichal: 'prichal',
   kork: 'kork',
+  'left-field': 'left-field',
 };
 
 export function getProductPath(slug: string): string {

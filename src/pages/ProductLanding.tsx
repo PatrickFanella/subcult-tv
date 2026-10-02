@@ -10,6 +10,7 @@ import '@/styles/product-fonts.css';
 
 // Brand marks shown beside the product name; other products use the name alone.
 const PRODUCT_MARKS: Record<string, string> = {
+  'left-field': '/brand/left-field/mark.svg',
   'transcript-create': '/brand/rekolekt-mark.svg',
   kork: '/brand/kork-mark.svg',
 };

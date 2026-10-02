@@ -25,7 +25,8 @@ export default function Home() {
             <div>
               <p className="text-bone text-lg leading-relaxed mb-6">
                 Save Twitch clips. Search a broadcast archive. Coordinate mutual aid. Run the door
-                at your next show. SUBCULT builds open-source software for each of these.
+                at your next show. Research an election seat. SUBCULT builds software for each of
+                these.
               </p>
               <Button as="a" href="#products" variant="secondary">
                 Explore the products ↓
