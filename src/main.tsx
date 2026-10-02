@@ -4,8 +4,11 @@ import { BrowserRouter } from 'react-router-dom';
 import { EffectsProvider } from '@/context/EffectsContext';
 import { AuthProvider } from '@/context/AuthContext';
 import App from '@/App';
+import { installCampaignLinkTracking } from '@/lib/analytics';
 import '@/index.css';
 import '@/styles/subcult-brand.css';
+
+installCampaignLinkTracking();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

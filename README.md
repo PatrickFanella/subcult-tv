@@ -274,7 +274,7 @@ npm i -g vercel && vercel --prod
 Set environment variables in Vercel dashboard:
 
 - `VITE_API_URL` — Your API server URL (e.g., `https://api.subcult.tv`)
-- `VITE_UMAMI_URL` — Optional if you self-host Umami elsewhere
+- Production analytics is injected by the same-origin edge proxy; see [campaign analytics](ops/analytics/README.md).
 
 ### Frontend Only (Cloudflare Pages)
 

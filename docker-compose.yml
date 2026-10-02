@@ -35,8 +35,6 @@ services:
       dockerfile: Dockerfile
       args:
         VITE_API_URL: ${VITE_API_URL}
-        VITE_UMAMI_URL: ${VITE_UMAMI_URL}
-        VITE_UMAMI_WEBSITE_ID: ${VITE_UMAMI_WEBSITE_ID}
     container_name: subcult-tv-frontend
     networks: [projects]
     labels:
