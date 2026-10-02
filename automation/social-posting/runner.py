@@ -15,6 +15,7 @@ import subprocess
 import tempfile
 from zoneinfo import ZoneInfo
 from sources import changemaker_context
+import paths
 import media
 import bluesky
 
@@ -107,7 +108,7 @@ def verify_evidence(events: list[dict], cfg: dict) -> dict:
 
 
 def source_context(cfg: dict, directory: Path) -> dict:
-    vault = Path(cfg['vault'])
+    vault = paths.root(cfg)
     notes = {rel: (vault/rel).read_text() for rel in cfg['notes']}
     snapshots = []
     for repo in cfg['repositories']:
@@ -241,7 +242,7 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
         previous = database.execute('SELECT status FROM runs WHERE mode=? AND week=? ORDER BY started DESC LIMIT 1', (mode, week)).fetchone()
         if previous and previous[0] == 'success' and not force:
             return {'status': 'already_complete', 'mode': mode, 'week': week}
-        vault = Path(cfg['vault']);folder = vault/'001 Projects/Works/Social Posts'
+        vault = paths.root(cfg);folder = paths.social(cfg)
         target = folder/(week+' Content Posts.md') if mode == 'plan' else folder/(week+' Publishing Review.md')
         if mode == 'review' and not (folder/(week+' Content Posts.md')).exists():
             return {'status': 'no_weekly_plan', 'mode': mode, 'week': week}

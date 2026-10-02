@@ -6,7 +6,7 @@ PlayResY: 1080
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Default,JetBrains Mono,48,&H00FFFFFF,&H00FFFFFF,&H001A1114,&HBE1A1114,0,0,0,0,100,100,0,0,3,2,0,2,120,120,90,1
+Style: Default,Space Mono,48,&H00FFFFFF,&H00FFFFFF,&H001A1114,&HBE1A1114,0,0,0,0,100,100,0,0,3,2,0,2,120,120,90,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text

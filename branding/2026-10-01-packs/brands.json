@@ -172,27 +172,27 @@
   {
     "id": "subcult-os",
     "brand": "Subcult OS",
-    "variant": "A",
-    "name": "The event ledger",
-    "bg": "#09090b",
-    "fg": "#fafafa",
-    "accent": "#fbbf24",
-    "secondary": "#22d3ee",
-    "display": "Georgia",
-    "body": "JetBrains Mono",
+    "variant": "B",
+    "name": "The terminal ledger",
+    "bg": "#000000",
+    "fg": "#ffffff",
+    "accent": "#7c3aed",
+    "secondary": "#00ffff",
+    "display": "Space Mono",
+    "body": "Space Mono",
     "headline": [
       "From the plan",
       "to the last ticket."
     ],
     "tag": "PLAN / COORDINATE / RUN DOOR / SETTLE / ARCHIVE",
-    "description": "Serif-led event operations, amber and cyan from the current web source.",
+    "description": "Subcults terminal system: Space Mono, square frames, purple actions and cyan focus on a black canvas, matching the live site.",
     "mode": "os",
-    "url": null,
-    "source": "Web source styles; no live destination verified",
+    "url": "os.subcult.tv",
+    "source": "Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02",
     "slug": "subcult-os",
-    "label": "JetBrains Mono",
-    "safe_label": "#fbbf24",
-    "selected_by_user": false
+    "label": "Space Mono",
+    "safe_label": "#00ffff",
+    "selected_by_user": true
   },
   {
     "id": "undertow",
@@ -218,5 +218,32 @@
     "label": "JetBrains Mono",
     "safe_label": "#ff9fe0",
     "selected_by_user": false
+  },
+  {
+    "id": "kork-a",
+    "brand": "Kork",
+    "variant": "A",
+    "name": "Pinned / flyer wall",
+    "bg": "#d4a56c",
+    "fg": "#1b130c",
+    "accent": "#2340e8",
+    "secondary": "#fbf6ec",
+    "display": "Archivo Black",
+    "body": "Atkinson Hyperlegible Next",
+    "headline": [
+      "EVERY LINK.",
+      "ONE BOARD."
+    ],
+    "tag": "LINK PAGES / BY SUBCULT",
+    "description": "A cork field, paper cards and cobalt pushpins: every destination pinned to one board.",
+    "mode": "corkboard",
+    "url": "kork.subcult.tv",
+    "source": "Identity for the self-serve links-page service (code name zelda); direction A selected by the user October 2, 2026",
+    "slug": "kork",
+    "label": "JetBrains Mono",
+    "safe_label": "#1b130c",
+    "tag_color": "#1b130c",
+    "selected_by_user": true,
+    "direction_selection": "user"
   }
 ]

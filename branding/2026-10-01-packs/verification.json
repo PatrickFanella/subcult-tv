@@ -220,5 +220,45 @@
     "conservative_text_contrast_min": 4.7067,
     "sewing_assets": "original editable vectors",
     "browser_render": "T3 preview open timed out; not qualified"
+  },
+  "subcult_os_terminal_rebuild": {
+    "date": "2026-10-02",
+    "source": "https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme)",
+    "fonts": "Space Mono 400/700 from google/fonts ofl/spacemono; previous Liberation Serif and JetBrains Mono removed from the pack",
+    "svg_parse": 34,
+    "contrast": {
+      "text_on_base": "21.00:1",
+      "label_cyan_on_base": "16.75:1",
+      "accent_purple_on_base": "3.69:1 (fills and artwork only; white on purple 5.7:1)"
+    },
+    "video_preview": {
+      "codec": "h264",
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    },
+    "visual": "Pack preview, lockups (primary, light, dark, mono), avatar, square, story, quote, release, landscape, screenshot frame, title card, lower third and end card inspected; light-variant mark letters fixed to stay white on the dark panel"
+  },
+  "kork": {
+    "date": "2026-10-02",
+    "status": "direction A selected by the user under the name Kork",
+    "files": 72,
+    "svg_parse": "34/34 SVGs parse",
+    "outlined_logos": "10 outlined logo SVGs contain no <text> elements",
+    "contrast": {
+      "text_on_base": "8.21:1",
+      "label_on_base": "8.21:1",
+      "accent_on_base": "3.16:1 (decorative and large text only)"
+    },
+    "mark_32px": "checked on all five variants; card, rows and pin remain distinct",
+    "video_preview": "h264 1920x1080, 8.0 s",
+    "font_added": {
+      "family": "Archivo Black",
+      "file": "fonts/ArchivoBlack-Regular.ttf",
+      "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+      "license": "SIL OFL 1.1 (fonts/archivoblack-OFL.txt)"
+    },
+    "rebuild": "BRAND_ONLY=kork python3 build_packs.py && BRAND_ONLY=kork python3 render_video_previews.py; other brands were not rebuilt",
+    "directions": "corkboard-directions/ compares A Kork, B Wheatpaste, C Night board, D Index card (corkboard_directions.py)"
   }
 }

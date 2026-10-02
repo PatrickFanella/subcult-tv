@@ -4,8 +4,8 @@ OnFailure=social-posting-failure.service
 
 [Service]
 Type=oneshot
-WorkingDirectory=/home/onnwee/Documents/ars-malefica
-ExecStart=/usr/bin/python3 /home/onnwee/.local/share/social-posting/runner.py plan --refresh
+WorkingDirectory=/home/onnwee/Work/Subcult/subcult-studio
+ExecStart=/usr/bin/python3 /home/onnwee/Work/Subcult/subcult-studio/automation/social-posting/runner.py plan --refresh
 TimeoutStartSec=20min
 KillMode=control-group
 UMask=0077

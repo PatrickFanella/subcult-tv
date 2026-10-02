@@ -22,7 +22,7 @@ def source_mark(d,x,y,size,variant='color'):
  files={'clpr':'clpr-icon.svg','patchwork':'patchwork-icon.svg','hasanara':'hasanara-logo.svg','undertow':'undertow-favicon.svg','rekolekt':'rekolekt-mark.svg'}
  if d['slug'] not in files:
   body=H.mark(d,x,y,size)
-  if variant=='mono' and d['slug']=='subcult-os':body=body.replace('fill="#18181b"','fill="none"')
+  if variant=='mono' and d['slug']=='subcult-os':body=body.replace('fill="#0d1117"','fill="none"')
   return body
  text=(R/'references'/files[d['slug']]).read_text();root=ET.fromstring(text)
  if d['slug']=='rekolekt':
@@ -40,7 +40,7 @@ def source_mark(d,x,y,size,variant='color'):
  return embed_svg(ET.tostring(root,encoding='unicode'),x,y,size,size)
 def wordmark(d,x,y,maxw=730):
  if d['slug']=='clpr':return C.logo(d,x,y-130,min(374,maxw),172)
- name={'patrick__eff':'PATRICK__EFF','rekolekt':'rekolekt','subcult':'SUBCULT','subcult-os':'Subcult OS','hasanara':'HasanAra','undertow':'UNDERTOW','patchwork':'Patchwork'}[d['slug']]
+ name={'patrick__eff':'PATRICK__EFF','rekolekt':'rekolekt','subcult':'SUBCULT','subcult-os':'Subcult OS','hasanara':'HasanAra','undertow':'UNDERTOW','patchwork':'Patchwork','kork':'kork'}[d['slug']]
  return T(x,y,name,91,d['fg'],d['display'],700,maxw=maxw)
 def write_svg(dest,name,body,w,h,exportw=None,outlined=False):
  if 'patrick__eff' in dest.parts and not name.startswith('mark-') and 'mono' not in name:body=H.patrick_style(body)
@@ -52,7 +52,7 @@ def write_svg(dest,name,body,w,h,exportw=None,outlined=False):
  return p
 
 def label(d,x,y,s,size=18,maxw=None):return T(x,y,s,size,d['safe_label'],d['label'],400,maxw=maxw)
-def base(d,w,h):return rect(0,0,w,h,d['bg'])+(H.patch_paper(w,h) if d['slug']=='patchwork' else '')
+def base(d,w,h):return rect(0,0,w,h,d['bg'])+(H.patch_paper(w,h) if d['slug']=='patchwork' else '')+(H.cork_texture(w,h) if d['slug']=='kork' else '')
 def footer(d,w,h):return line(48,h-86,w-48,h-86,d['safe_label'],2)+T(48,h-43,d.get('url') or 'rekolekt / by SUBCULT',20,d['fg'],d['body'])
 def filmstrip(d,x,y,w,h):
  a=d['accent'];f=d['fg'];s=rect(x,y,w,h,'#17141f',0,'#27222f')
@@ -85,6 +85,7 @@ def poster(d,w,h,kind):
   elif d['slug']=='patrick__eff':s+=H.patrick_wave(m,1150,w-96,240,d,41)
   elif d['slug']=='rekolekt':s+=H.rekolekt_transcript(d,m,1095,w-96,285)
   elif d['slug']=='undertow':s+=H.wave(m,1150,w-96,240,d['accent'],41)
+  elif d['slug']=='kork':s+=H.cork_stack(d,m,1040,w-96,400)
   else:s+=line(m,1120,w-48,1120,d['accent'],12)
   s+=T(m,1500,'YOUR NOTE OR INVITATION',31,d['fg'],d['body'],700,maxw=w-96)+T(m,1560,'Replace this line with approved copy.',25,d['fg'],d['body'],maxw=w-96)+T(m,1652,d.get('url') or 'Rekolekt by SUBCULT',25,d['fg'],d['body'])
  elif kind=='landscape':
@@ -105,7 +106,7 @@ def poster(d,w,h,kind):
 def screenshot(d):
  if d['slug']=='clpr':return C.screenshot(d)
  w,h=1600,1000;s=base(d,w,h)+label(d,48,65,d['brand'].upper()+' / WORKFLOW CAPTURE',20)
- s+=rect(48,110,1504,738,'none',8 if d['slug'] in ['patchwork','subcult-os'] else 0,d['safe_label'])+T(104,465,'PLACE A VERIFIED SCREENSHOT HERE',36,d['fg'],d['label'],maxw=1350)+T(104,519,'Crop private data. Keep interface text legible.',28,d['fg'],d['body'])+footer(d,w,h)
+ s+=rect(48,110,1504,738,'none',8 if d['slug']=='patchwork' else 0,d['safe_label'])+T(104,465,'PLACE A VERIFIED SCREENSHOT HERE',36,d['fg'],d['label'],maxw=1350)+T(104,519,'Crop private data. Keep interface text legible.',28,d['fg'],d['body'])+footer(d,w,h)
  return s
 
 def video(d,kind):
@@ -142,7 +143,8 @@ def guide(d,dest):
  'clpr':'The user-edited play-triangle logo governs the assets. The user selected Clip stack for the main layouts and single clip card for the square post. The comparison variations remain available. These layouts replace the filmstrip and timeline motifs. Keep the muted-white wordmark, purple play triangle, dark field and green details. Earlier banners are preserved in references/. Use the captured play wordmark and play icon. Barlow Condensed sets titles; Barlow carries body copy; IBM Plex Mono carries labels. Crop corners, overlapping clip cards and purple play fields are the three graphic alternatives. Keep their geometry separate from screenshots of the product.',
  'patchwork':'Warm paper and green are the base; bright tomato marks decorative patches and yellow marks highlights. Use darker action tomato (#b33e28) behind paper-colored button labels: 5.03:1 contrast. Keep the logo and decorative patches at their original tomato (#e85d3f). Use Fraunces for headings and Public Sans for body text. Stitched shapes are supporting artwork. Use the carried-forward P glyph in a tomato stitched patch. The mark, supporting patches, buttons and their offset shadows share the same asymmetric corner shape. Use larger, mildly uneven stitches, faint paper grain and a low-opacity fabric weave. The browser sample uses responsive SVG stitching with a dashed CSS fallback. Use soft green ink (#365448) for headings/body copy and a muted sage (#b2bba1) shadow. `components.html` shows working stitched buttons; `patch-components.css` keeps face and shadow corners identical. Product captures must preserve approximate public locations and omit private addresses.',
  'hasanara':'Match the current hasanara.tv red/PBS theme. Use Newsreader for editorial headings, Inter Tight for body copy and JetBrains Mono for metadata. Keep the actual PBS artwork. The local older lime theme is not this pack’s reference. Quotes need their original passage, attribution and timestamp.',
- 'subcult-os':'The reference is the current web source, not a verified live deployment. Use serif headings, dark rounded panels and amber/cyan accents. Georgia is the source stack; bundled Liberation Serif is the portable rendering fallback. The S/OS mark is a pack proposal; it was not found as an existing site logo.',
+ 'subcult-os':'Matches the live os.subcult.tv design system (the Subcults terminal foundation, selected by the user on September 30, 2026; source of truth: subcult-os contracts/design/tokens.json). Space Mono is the only typeface: bold for headings, buttons and labels, regular for body copy, uppercase with wide tracking for labels. Bold is the heaviest weight. Corners are square everywhere; panels separate with visible borders, not shadows. Purple is the action and artwork color: purple fills carry white text (5.7:1), but purple text on black is below the small-text target, so labels use cyan. Cyan also marks focus. Status colors (green, amber, red, cyan) mark states and always come with words. Event artwork stays immersive and black. The OS lettermark with a cyan cursor block is a pack mark; the site itself uses the plain wordmark.',
+ 'kork':'Identity for the self-serve links-page service, code name zelda. On October 2, 2026 the user selected direction A (pinned card) and the name Kork over Corkboard; the comparison is in corkboard-directions/. A services marketplace also trades as Kork (kork.app); this was noted to the user, who chose the name anyway. The mark is an original pinned paper card: two link rows on a tilted card under a cobalt pushpin. It stays legible at 32 pixels because the rows and pin are solid shapes. Cork (#d4a56c) is the field, ink (#1b130c) carries all text, paper (#fbf6ec) fills cards, and cobalt (#2340e8) is reserved for pins and large emphasis: cobalt on cork is 3.2:1, so never use it for small text. Archivo Black sets the wordmark and headlines, Atkinson Hyperlegible Next carries body copy and JetBrains Mono carries labels, the shared SUBCULT cue. Pinned cards carry placeholder destinations (@yourname, $yourname, a decorative QR glyph that encodes nothing); do not show third-party platform logos in brand artwork. Cards tilt between -7 and +7 degrees with a hard ink shadow; keep at least one card straight enough to read. The product page itself lets users pick any theme, so this identity applies to the service, not to user pages.',
  'undertow':'Use the active editor theme: pink/cyan/lilac on dark violet, square geometry and hard offsets. Keep the existing spectrum favicon. Liberation Mono is the bundled portable alternative to the site’s system monospace stack. Chromatic offsets are for large titles, never body copy.'
  }[slug]
  doc=f'''# {d['brand']} — Brand and asset guide
@@ -210,7 +212,7 @@ for d in BRANDS:
  if os.environ.get('BRAND_ONLY') and d['slug']!=os.environ['BRAND_ONLY']:continue
  dest=R/'brands'/d['slug'];dest.mkdir(parents=True,exist_ok=True);(dest/'fonts').mkdir(exist_ok=True)
  for name in font_files(d):shutil.copy2(R/'fonts'/name,dest/'fonts'/name)
- tokens={'brand':d['brand'],'direction':d['name'],'status':'local production pack v1','colors':{k:d[k] for k in ['bg','fg','accent','secondary','safe_label']},'fonts':{k:d[k] for k in ['display','body','label','support'] if k in d},'spacing':[8,16,24,32,48,64,96],'mark_clear_space':'25% of mark height','mark_min_width_px':32,'source':d['source'],'direction_selection':'user' if d['selected_by_user'] else 'established-theme example'}
+ tokens={'brand':d['brand'],'direction':d['name'],'status':'local production pack v1','colors':{k:d[k] for k in ['bg','fg','accent','secondary','safe_label']},'fonts':{k:d[k] for k in ['display','body','label','support'] if k in d},'spacing':[8,16,24,32,48,64,96],'mark_clear_space':'25% of mark height','mark_min_width_px':32,'source':d['source'],'direction_selection':d.get('direction_selection') or ('user' if d['selected_by_user'] else 'established-theme example')}
  if d['slug']=='subcult':
   shutil.copy2(R/'references/subcult-mark-master.svg',dest/'logos/master.svg')
   tokens['mark_master']={'path':'logos/master.svg','sha256':hashlib.sha256((R/'references/subcult-mark-master.svg').read_bytes()).hexdigest(),'construction':'User-authored SVG; preserve geometry and layer order'}

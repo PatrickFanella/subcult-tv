@@ -2,14 +2,14 @@
 
 This runner prepares weekly X drafts from the canonical social plan, product claims register, candidate bank, current repository scope documents, Super Productivity tasks and Buffer queues. It also reads Switchyard's native Changemaker artifacts, prepares timely discovery/quote candidates, and reviews the weekly and timely notes against delivery evidence. It cannot create, schedule or publish posts, approve drafts, or change tasks.
 
-The maintained source is `/home/onnwee/Documents/ars-malefica/scripts/social-posting`. Installed files are under `/home/onnwee/.local/share/social-posting`; user systemd units are under `~/.config/systemd/user`. Edit the source and deploy the reviewed files together. The T3 worktree is a review copy.
+The maintained source is `/home/onnwee/Work/Subcult/subcult-studio/automation/social-posting`. Jobs execute it directly. Former vault/runtime paths and user units are compatibility symlinks to Studio. The tracked config owns content paths; credentials, receipts and SQLite state remain outside Git. See `../../docs/MIGRATION.md` for the October 2 cutover and recovery.
 
 ## Schedule and output
 
-- `social-posting-plan.timer`: Monday 10:00 America/Chicago. Writes `001 Projects/Works/Social Posts/YYYY-Www Content Posts.md` in the canonical vault.
+- `social-posting-plan.timer`: Monday 10:00 America/Chicago. Writes `content/social/YYYY-Www Content Posts.md` in Studio.
 - `social-posting-review.timer`: Sunday 16:00 America/Chicago. Writes a separate `YYYY-Www Publishing Review.md`. Before the October 5–11 pilot starts, review returns `pilot_not_started` without a model call.
-- `social-posting-radar.timer`: every day at 08:45, 13:45 and 18:15 America/Chicago. Writes separate timestamped notes under `001 Projects/Works/Social Posts/Timely Drafts`. No suitable new sources means no model call. Timely discovery can run before the weekly pilot begins.
-- Both timers are persistent. Missed starts can run when Kvant returns; the runner chooses the current local week rather than accumulating old posting debt.
+- `social-posting-radar.timer`: every day at 08:45, 13:45 and 18:15 America/Chicago. Writes separate timestamped notes under `content/social/Timely Drafts`. No suitable new sources means no model call. Timely discovery can run before the weekly pilot begins.
+- The preparation timers are persistent. Missed starts can run when Kvant returns; the runner chooses the current local week rather than accumulating old posting debt.
 
 Kvant must be powered on with network access. User lingering permits jobs while logged out. The Super Productivity bridge must be available; unavailable providers cause failure rather than an invented update. Desktop notifications are requested on failure; the private receipt and systemd journal remain the dependable evidence when no desktop session is present.
 
@@ -86,6 +86,6 @@ Both preparation jobs read the dated `Posting Best Practices.md` and local media
 
 The media library now supports real screenshots and recording masters alongside generated illustrations. `edit_video.py` makes a silent captioned H.264 short while preserving the source and storing a hash-bound recipe. Use a new output path; it refuses replacement. See [[Social Media Production]] in the canonical vault for the produced assets and editorial checks. Captures with unresolved third-party content scope stay excluded from automatic selection.
 
-`bluesky.py` writes unapproved platform variants to each plan/radar run's `bluesky-drafts.json`. It checks conservative text limits, flags X mentions and tweet links for platform review, and selects compatible sub-1-MB image derivatives through their original parent IDs. It performs no network writes or authentication. Destination identity states live in config and the canonical [[Bluesky Posting Plan]]. The user approved repurposing onnwee.bsky.social for the main SUBCULT account; the subcult.tv handle/name/bio change is publicly verified, while authenticated unattended delivery is pending. Patrick's public identity is verified; CLPR account creation is pending.
+`bluesky.py` writes unapproved platform variants to each plan/radar run's `bluesky-drafts.json`. It checks conservative text limits, flags X mentions and tweet links for platform review, and selects compatible sub-1-MB image derivatives through their original parent IDs. It performs no network writes or authentication. Destination identity states live in config and the canonical [[Bluesky Posting Plan]]. The user approved repurposing onnwee.bsky.social for the main SUBCULT account; the subcult.tv handle/name/bio change is publicly verified, while authenticated unattended delivery is pending. Patrick's public identity is verified; CLPR account creation was completed by the user; unattended delivery remains pending.
 
 The installed scheduled jobs prepare those variants automatically after an ordinary successful run. This is preparation only: no native Bluesky quote embed, media upload, dispatcher, account mutation or publication is provided by the local export module.

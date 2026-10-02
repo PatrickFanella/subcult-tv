@@ -16,7 +16,7 @@ The guides explain color roles and contrast, typography, mark clear space and mi
 
 ## Sources and limits
 
-The site references and selected marks are captured in the earlier review’s source notes. HasanAra follows the live red/PBS theme. Subcult OS follows its web source; a live deployment was not verified. Undertow’s system monospace stack uses bundled Liberation Mono for these portable exports. Subcult OS’s Georgia stack uses bundled Liberation Serif. The Subcult OS lettermark remains a proposed pack mark.
+The site references and selected marks are captured in the earlier review’s source notes. HasanAra follows the live red/PBS theme. Undertow’s system monospace stack uses bundled Liberation Mono for these portable exports. Subcult OS was rebuilt on October 2, 2026 to match the live https://os.subcult.tv terminal system: Space Mono (bundled from google/fonts), black canvas, purple actions, cyan labels and focus, square frames. Its OS lettermark with a cyan cursor block is a pack mark; the site itself uses the plain wordmark.
 
 The 228 original asset files were checked against the review inventory and preserved. Legacy CLPR and industrial SUBCULT material is not promoted to the selected systems. The earlier CLPR filmstrip and timeline artwork is preserved as history; current layout alternatives use crop corners, clip cards and play fields. Patrick retains the waveform. Rekolekt retains its original logo, palette and typography. Only the story template’s decorative waveform is replaced with transcript rows and timestamps.
 
@@ -37,3 +37,5 @@ Patrick uses Cascadia Mono for display and body type, with a 0.08em gap between 
 Patrick variation update: originals are preserved in `references/patrick-variations/` and bundled in `brands/patrick__eff/logos/source-variations/`. Primary marks use PF; clean waveform and tall variants remain available. Large headings and standalone waveforms use a warm-white face with lime/purple offsets. Small text stays flat. `brands/patrick__eff/components.html` shows the CSS treatment; `logos/variations.html` lists editable and production marks.
 
 CLPR selection: Clip stack for the main layouts; single clip card for the square post. The comparison packs remain available under `clpr-directions/`; the main `clpr.zip` contains the selected combination.
+
+Kork (added October 2, 2026): identity for the self-serve links-page service, code name zelda. The user compared four directions in `corkboard-directions/` and selected A, the pinned card, under the name Kork. The pack uses an original pinned-card mark, a cork field, paper cards, cobalt pushpins, Archivo Black headlines, Atkinson Hyperlegible Next body copy and JetBrains Mono labels. Archivo Black was added to `fonts/` with its OFL license. Rebuild it alone with `BRAND_ONLY=kork python3 build_packs.py`, then `BRAND_ONLY=kork python3 render_video_previews.py`. Card destinations and the QR glyph are placeholders; the glyph encodes nothing.

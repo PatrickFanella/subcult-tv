@@ -1,0 +1,10 @@
+:root {
+  --brand-bg: #d4a56c;
+  --brand-fg: #1b130c;
+  --brand-accent: #2340e8;
+  --brand-secondary: #fbf6ec;
+  --brand-safe-label: #1b130c;
+  --font-display: "Archivo Black";
+  --font-body: "Atkinson Hyperlegible Next";
+  --font-label: "JetBrains Mono";
+}

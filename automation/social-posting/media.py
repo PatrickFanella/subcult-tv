@@ -1,3 +1,4 @@
+import paths
 #!/usr/bin/env python3
 """Local social media catalog. No network uploads or publication."""
 import argparse
@@ -55,7 +56,7 @@ def read_catalog(library):
 
 
 def context(cfg):
-    library = Path(cfg['vault'])/cfg.get('media_library', LIBRARY)
+    library = paths.root(cfg)/cfg.get('media_library', LIBRARY)
     catalog = read_catalog(library)
     return {'library':str(library), 'assets':[a for a in catalog['assets']
         if a['status'] != 'retired' and a['rights'] != 'unknown'],
@@ -184,7 +185,7 @@ def main():
     sub.add_parser('gallery')
     args = parser.parse_args()
     cfg = json.loads(Path(__file__).with_name('config.json').read_text())
-    library = args.library or Path(cfg['vault'])/cfg.get('media_library',LIBRARY)
+    library = args.library or paths.root(cfg)/cfg.get('media_library',LIBRARY)
     if args.command == 'add':
         asset = add(library,args.source,title=args.title,products=args.products.split(','),accounts=args.accounts.split(','),
             platforms=args.platforms.split(','),source_ref=args.source_ref,alt_text=args.alt_text,
