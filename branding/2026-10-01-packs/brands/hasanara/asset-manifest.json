@@ -5,8 +5,13 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "bytes": 4245,
-      "sha256": "7b5f7274342820b8be5c2094f721eb35a4cd6111c739886d9e76d778d645a63d"
+      "bytes": 4582,
+      "sha256": "43448c013951c69ec4d20562fbe6268079fa65bc1dcc400f548cb8bfc7d4ccb4"
+    },
+    {
+      "path": "WEBSITE.md",
+      "bytes": 10243,
+      "sha256": "f223500b8b34f5bc5a970788484bd25a0e4146560f6595c21f9ad016dc30a809"
     },
     {
       "path": "alt-text.md",
@@ -355,8 +360,8 @@
     },
     {
       "path": "tokens.json",
-      "bytes": 587,
-      "sha256": "fd70fc5e522156fb1d1cb04d861f176c77a23e894cca6cd3ef59d84415a42fbb"
+      "bytes": 3050,
+      "sha256": "cda227a242661e073f4837ada890c29d1c46e3ef04deab6aea4a1f1ea8f28adc"
     },
     {
       "path": "video/captions.ass",
