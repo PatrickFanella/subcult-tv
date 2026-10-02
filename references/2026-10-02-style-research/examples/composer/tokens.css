@@ -1,0 +1,7 @@
+/* Observed values, not canonical brand roles. See DESIGN.md and tokens.json. */
+:root {
+  --observed-color-01: rgb(0, 0, 0);
+  --observed-color-02: rgb(255, 255, 255);
+  --observed-font-01: neue-haas-grotesk-display, system-ui, sans-serif;
+  --observed-font-02: neue-haas-grotesk-display, sans-serif;
+}

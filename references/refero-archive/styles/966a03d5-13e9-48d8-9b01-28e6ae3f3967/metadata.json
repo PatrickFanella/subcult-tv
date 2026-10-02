@@ -1,0 +1,29 @@
+{
+  "styleId": "966a03d5-13e9-48d8-9b01-28e6ae3f3967",
+  "sourceUrl": "https://styles.refero.design/style/966a03d5-13e9-48d8-9b01-28e6ae3f3967",
+  "fetchedAt": "2026-10-02T21:36:58.001321+00:00",
+  "extractedAt": "2026-10-02T21:36:58.051524+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Maze — Style Reference",
+  "htmlSha256": "2a2e2c32e1b72afbd07f91f95f34b6bb7647ca393d7e2c4f55309c679dea7f87",
+  "cache": ".cache/966a03d5-13e9-48d8-9b01-28e6ae3f3967.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2f3288a00725e8fd6db56a7fd7ee3b664f92cfe9386eb99086748e04ac31e7bb",
+      "bytes": 20184,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9a603f98-a045-4aba-9c42-78e1605ae3c6.jpg",
+    "fetchedAt": "2026-10-02T21:37:00.060142+00:00",
+    "sha256": "df8587ddf9166d2c9c4ccc8d1c7879d277b83fdcf3c9f68da9ffe63fb25d4b0b",
+    "bytes": 141234,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

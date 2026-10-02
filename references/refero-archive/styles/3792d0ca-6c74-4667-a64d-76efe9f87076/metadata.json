@@ -1,0 +1,29 @@
+{
+  "styleId": "3792d0ca-6c74-4667-a64d-76efe9f87076",
+  "sourceUrl": "https://styles.refero.design/style/3792d0ca-6c74-4667-a64d-76efe9f87076",
+  "fetchedAt": "2026-10-02T21:53:50.210754+00:00",
+  "extractedAt": "2026-10-02T21:53:50.247577+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Xbox.com — Style Reference",
+  "htmlSha256": "32cf89179c9297694219c9d88a78b29ec2590f1fac204ce2b97623a505e138f6",
+  "cache": ".cache/3792d0ca-6c74-4667-a64d-76efe9f87076.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "706753919eec93a0d63d96a4513fb856d4fad9714172db8c4a6d85d491335525",
+      "bytes": 21441,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/190969d6-51e5-45db-b688-a223873e3fbb.jpg",
+    "fetchedAt": "2026-10-02T21:53:52.304407+00:00",
+    "sha256": "19fda4a485936d0dd629f1662d2fc55b3d33de460a7aabe488c213cf74edd17a",
+    "bytes": 143880,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

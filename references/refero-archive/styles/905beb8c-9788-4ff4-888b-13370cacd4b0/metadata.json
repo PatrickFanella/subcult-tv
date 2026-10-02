@@ -1,0 +1,29 @@
+{
+  "styleId": "905beb8c-9788-4ff4-888b-13370cacd4b0",
+  "sourceUrl": "https://styles.refero.design/style/905beb8c-9788-4ff4-888b-13370cacd4b0",
+  "fetchedAt": "2026-10-02T21:43:09.532508+00:00",
+  "extractedAt": "2026-10-02T21:43:09.577543+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "CHELSEA — Style Reference",
+  "htmlSha256": "c93ff1370506a26077e3e2213c8ac60e82bf4c16f0f50badb492e832b1919696",
+  "cache": ".cache/905beb8c-9788-4ff4-888b-13370cacd4b0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6fd8ddb28e2d4ba8f129e911c85b7d183108161efb4f2c4fdf5464261dd5f4f9",
+      "bytes": 14727,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/85ce424c-016c-4351-a0b2-6e03657031b3.jpg",
+    "fetchedAt": "2026-10-02T21:43:11.549512+00:00",
+    "sha256": "6a75892c5a4ed5c92550cee2903c0f27d5f92075ac4437173c03cd6a5b89116b",
+    "bytes": 93740,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

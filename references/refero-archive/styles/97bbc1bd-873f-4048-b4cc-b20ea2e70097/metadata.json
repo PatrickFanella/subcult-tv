@@ -1,0 +1,29 @@
+{
+  "styleId": "97bbc1bd-873f-4048-b4cc-b20ea2e70097",
+  "sourceUrl": "https://styles.refero.design/style/97bbc1bd-873f-4048-b4cc-b20ea2e70097",
+  "fetchedAt": "2026-10-02T21:36:30.027454+00:00",
+  "extractedAt": "2026-10-02T21:36:30.069980+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Flutterwave Design — Style Reference",
+  "htmlSha256": "4778e39f79b4a43c3c69b844ba82909f783f6d0590cfbd38521aa90f2dcd38e2",
+  "cache": ".cache/97bbc1bd-873f-4048-b4cc-b20ea2e70097.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af9dc3ef0d59e9c3f5f1213876adb47d4997003c3f89e23ebd283a31347bcfd8",
+      "bytes": 20582,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c536bd26-f869-4ba6-9d8f-7bfb9a4cb459.jpg",
+    "fetchedAt": "2026-10-02T21:36:32.063840+00:00",
+    "sha256": "72b88ebd46208d34327feab0b742b1031dec7a7a8ba0b332c8b443c4a007cb6c",
+    "bytes": 124420,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

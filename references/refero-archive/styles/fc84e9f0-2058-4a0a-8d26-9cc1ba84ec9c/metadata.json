@@ -1,0 +1,29 @@
+{
+  "styleId": "fc84e9f0-2058-4a0a-8d26-9cc1ba84ec9c",
+  "sourceUrl": "https://styles.refero.design/style/fc84e9f0-2058-4a0a-8d26-9cc1ba84ec9c",
+  "fetchedAt": "2026-10-02T21:33:30.080602+00:00",
+  "extractedAt": "2026-10-02T21:33:30.102011+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Monad — Style Reference",
+  "htmlSha256": "9328d0679481cd0b420af010e5df5608035314cee1a49015f361c54e3bf75acf",
+  "cache": ".cache/fc84e9f0-2058-4a0a-8d26-9cc1ba84ec9c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9de3b3324f63cd7b3a30afbf1c424ba9f8381b6a504d7cb15a84d3d7228617d4",
+      "bytes": 22343,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/81fa27c5-9e29-4571-a5db-0539bc4c8bce.jpg",
+    "fetchedAt": "2026-10-02T21:33:32.087148+00:00",
+    "sha256": "e68dedb4ac2d05a4a1c393e0cc8a664e70360fa0355ede23479acdb7a9752f65",
+    "bytes": 97043,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

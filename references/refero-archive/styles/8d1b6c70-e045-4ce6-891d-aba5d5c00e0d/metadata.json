@@ -1,0 +1,29 @@
+{
+  "styleId": "8d1b6c70-e045-4ce6-891d-aba5d5c00e0d",
+  "sourceUrl": "https://styles.refero.design/style/8d1b6c70-e045-4ce6-891d-aba5d5c00e0d",
+  "fetchedAt": "2026-10-02T21:49:37.548407+00:00",
+  "extractedAt": "2026-10-02T21:49:37.592310+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Daniel Sun — Style Reference",
+  "htmlSha256": "d7412d904954896c3cf4ede5f21116e416ad895449e82586823e6d4ad630dd88",
+  "cache": ".cache/8d1b6c70-e045-4ce6-891d-aba5d5c00e0d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "30499b2dda9b4a343bf69121cc63c84a69158759df5fb48b4daa7703191ec961",
+      "bytes": 25465,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/57c49e73-663a-4330-be9f-5d693a82de46.jpg",
+    "fetchedAt": "2026-10-02T21:49:39.460303+00:00",
+    "sha256": "f419e9c7cad50c0d9fe3db6fdc82b8262ff91bb13b4ff41a4e325227a48eedba",
+    "bytes": 65778,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

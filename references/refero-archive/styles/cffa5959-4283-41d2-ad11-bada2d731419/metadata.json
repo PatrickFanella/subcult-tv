@@ -1,0 +1,29 @@
+{
+  "styleId": "cffa5959-4283-41d2-ad11-bada2d731419",
+  "sourceUrl": "https://styles.refero.design/style/cffa5959-4283-41d2-ad11-bada2d731419",
+  "fetchedAt": "2026-10-02T21:39:10.064261+00:00",
+  "extractedAt": "2026-10-02T21:39:10.108568+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Erno Forsström — Style Reference",
+  "htmlSha256": "f232677340ac7b3ad0fbba82e1aabf8b62348030f14d15e894bd1a25b582f299",
+  "cache": ".cache/cffa5959-4283-41d2-ad11-bada2d731419.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1ccecd5ad7e9f7196f807499b26a37d6f94f48bd5da2f3f4d0dbea8f1c86a5d6",
+      "bytes": 14541,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0eed064b-187a-4f16-a0b7-c8012cfc98ff.jpg",
+    "fetchedAt": "2026-10-02T21:39:12.022552+00:00",
+    "sha256": "5323d5f55ac150a73708344461a6038f31ce5c1796ad4d738b4dfd136e3b9d00",
+    "bytes": 94562,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

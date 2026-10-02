@@ -1,0 +1,29 @@
+{
+  "styleId": "24c54bfb-959d-4ca3-b274-e76ba823f3c0",
+  "sourceUrl": "https://styles.refero.design/style/24c54bfb-959d-4ca3-b274-e76ba823f3c0",
+  "fetchedAt": "2026-10-02T21:44:45.482856+00:00",
+  "extractedAt": "2026-10-02T21:44:45.532579+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Doug–Alves — Style Reference",
+  "htmlSha256": "bffbea350f56afa5b5d83e2a86b3b96046b850a468bd397c0f030b5f9dbb1d97",
+  "cache": ".cache/24c54bfb-959d-4ca3-b274-e76ba823f3c0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "80ee097c51b7f28d33ab0352048715bdea77ecf0082375438c6552a03551b137",
+      "bytes": 19444,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9e12bad7-33dd-402d-a9fb-cd5dbc99cff5.jpg",
+    "fetchedAt": "2026-10-02T21:44:47.450321+00:00",
+    "sha256": "74da5b442c999cd59a2cd35319f8f2391da710ee581fd2fde66eebc5bb0b789f",
+    "bytes": 55351,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

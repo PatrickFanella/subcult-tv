@@ -1,0 +1,29 @@
+{
+  "styleId": "ee403055-480e-4bd4-9216-07c9ae2dde2e",
+  "sourceUrl": "https://styles.refero.design/style/ee403055-480e-4bd4-9216-07c9ae2dde2e",
+  "fetchedAt": "2026-10-02T21:33:54.532104+00:00",
+  "extractedAt": "2026-10-02T21:33:54.554134+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "AI for Business — Style Reference",
+  "htmlSha256": "417cbb346af900bb8dd095bf29fb54daf3330e9911a915c5a5c7c01d63aca8c0",
+  "cache": ".cache/ee403055-480e-4bd4-9216-07c9ae2dde2e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b7087cbad9f71b018de1b27564983c8437b931cede7e85ec4914ab72d32c4d95",
+      "bytes": 19295,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2017ab1b-5d33-4775-90c0-94083be69d85.jpg",
+    "fetchedAt": "2026-10-02T21:33:56.054418+00:00",
+    "sha256": "de8bf97b96586a014e643f5258b33dc44e27c44a2057c0ab860133f5bb69d4db",
+    "bytes": 97397,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

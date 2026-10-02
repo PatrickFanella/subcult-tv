@@ -1,0 +1,29 @@
+{
+  "styleId": "2f0a053b-0596-4212-a4f4-8a7b580acb90",
+  "sourceUrl": "https://styles.refero.design/style/2f0a053b-0596-4212-a4f4-8a7b580acb90",
+  "fetchedAt": "2026-10-02T21:44:17.529397+00:00",
+  "extractedAt": "2026-10-02T21:44:17.574773+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "KeepGrading — Style Reference",
+  "htmlSha256": "da4f1767936e367779fcce73768a9a3368f14111e6dfd05c8fa803aba75cf81b",
+  "cache": ".cache/2f0a053b-0596-4212-a4f4-8a7b580acb90.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7392ef5db273598b434afde6fae9998926b8d825a2083451780d940f5500150f",
+      "bytes": 14561,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/72ee2371-293c-4370-91f6-f16496942b2a.jpg",
+    "fetchedAt": "2026-10-02T21:44:19.581884+00:00",
+    "sha256": "2e4b6c4b073b46102fa6ab063f472ec91b6f4b64155c9754b861c28dd064277a",
+    "bytes": 71685,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

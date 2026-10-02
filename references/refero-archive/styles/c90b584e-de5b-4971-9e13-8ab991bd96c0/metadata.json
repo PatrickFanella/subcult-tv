@@ -1,0 +1,29 @@
+{
+  "styleId": "c90b584e-de5b-4971-9e13-8ab991bd96c0",
+  "sourceUrl": "https://styles.refero.design/style/c90b584e-de5b-4971-9e13-8ab991bd96c0",
+  "fetchedAt": "2026-10-02T21:59:06.198917+00:00",
+  "extractedAt": "2026-10-02T21:59:06.242335+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Eindhoven Design District — Style Reference",
+  "htmlSha256": "bdfc146405588bfad93610da4d4304ecdb566eb7d3b680707de4b80048993a5e",
+  "cache": ".cache/c90b584e-de5b-4971-9e13-8ab991bd96c0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c8a3927d0d149959973d79b72b2e9a9cdaafb9ce0929308acdbd418e1559de19",
+      "bytes": 21055,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2ac2b9fb-673a-48fa-9c51-4ab26979a05f.jpg",
+    "fetchedAt": "2026-10-02T21:59:08.208343+00:00",
+    "sha256": "639ad35f2248aac966c4bbb09b11dee7de4cce687bd21a97a1c1b6e5a9332aa2",
+    "bytes": 122443,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

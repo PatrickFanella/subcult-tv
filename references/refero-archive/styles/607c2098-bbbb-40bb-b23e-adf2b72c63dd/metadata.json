@@ -1,0 +1,29 @@
+{
+  "styleId": "607c2098-bbbb-40bb-b23e-adf2b72c63dd",
+  "sourceUrl": "https://styles.refero.design/style/607c2098-bbbb-40bb-b23e-adf2b72c63dd",
+  "fetchedAt": "2026-10-02T21:30:10.075418+00:00",
+  "extractedAt": "2026-10-02T21:30:10.143746+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Slite — Style Reference",
+  "htmlSha256": "e02b63eb23101acf6ddfef461af1c6e5803e25ff295c2896d2c0975077e39498",
+  "cache": ".cache/607c2098-bbbb-40bb-b23e-adf2b72c63dd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "101c7156bc76aa89d3f7607a1eeacf28f137025ec32dd4e9e718fa7ea59b464e",
+      "bytes": 25507,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0d01dede-63ee-4e52-a864-a1bb911f6418.jpg",
+    "fetchedAt": "2026-10-02T21:30:12.052379+00:00",
+    "sha256": "850d72fdf7a520d67a12a6b7b19a27ac119ccca55d486bff6613ab25fdd32e1e",
+    "bytes": 99686,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "63c0e759-3175-4f62-a8e3-b9e285f9e998",
+  "sourceUrl": "https://styles.refero.design/style/63c0e759-3175-4f62-a8e3-b9e285f9e998",
+  "fetchedAt": "2026-10-02T21:55:22.169178+00:00",
+  "extractedAt": "2026-10-02T21:55:22.203488+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lens — Style Reference",
+  "htmlSha256": "dee2712a0fd98d590e0ffa425040cdf7ac257e9bfd6ade4a55a4ae905cc37002",
+  "cache": ".cache/63c0e759-3175-4f62-a8e3-b9e285f9e998.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9e475dcb43ab853224a528c5fa6cf0c59ae9a4fe4c4623f8cddccc4df416c5a5",
+      "bytes": 19830,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/dce15c58-e927-476d-9014-833f48a56000.jpg",
+    "fetchedAt": "2026-10-02T21:55:24.226619+00:00",
+    "sha256": "fa0a2bca264174c32b4e8af23a3058379614e2dff442ac6df854d98acca5eda8",
+    "bytes": 78732,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

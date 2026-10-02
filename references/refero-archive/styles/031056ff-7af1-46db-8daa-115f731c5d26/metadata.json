@@ -1,0 +1,29 @@
+{
+  "styleId": "031056ff-7af1-46db-8daa-115f731c5d26",
+  "sourceUrl": "https://styles.refero.design/style/031056ff-7af1-46db-8daa-115f731c5d26",
+  "fetchedAt": "2026-10-02T21:35:38.023580+00:00",
+  "extractedAt": "2026-10-02T21:35:38.052681+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ElevenLabs — Style Reference",
+  "htmlSha256": "e9bbda6998a1f3b9843d199f207c73b4d426d06831b0ab28191b6062229880a5",
+  "cache": ".cache/031056ff-7af1-46db-8daa-115f731c5d26.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9d152d841dcef850f9696108597c1daa0f8f352fb9c7c70eeb1eacda27eea1a3",
+      "bytes": 22083,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7511d371-6004-4a8b-8fb7-6852a267c010.jpg",
+    "fetchedAt": "2026-10-02T21:35:39.987357+00:00",
+    "sha256": "d1a636ba04e7e9fd6f9614c327466a26089036295869aa608c4b6dc7faea0b96",
+    "bytes": 69643,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

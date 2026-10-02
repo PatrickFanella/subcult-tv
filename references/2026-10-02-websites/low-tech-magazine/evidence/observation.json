@@ -1,0 +1,75 @@
+{
+  "id": "low-tech-magazine",
+  "name": "Low-tech Magazine",
+  "requestedUrl": "https://solar.lowtechmagazine.com/",
+  "navigation": {
+    "available": true,
+    "visible": false,
+    "tabId": "tab_g",
+    "url": "https://solar.lowtechmagazine.com/",
+    "title": "solar.lowtechmagazine.com",
+    "loading": false,
+    "viewportSetting": {
+      "_tag": "freeform",
+      "width": 1280,
+      "height": 800
+    },
+    "viewport": {
+      "width": 1402,
+      "height": 876
+    }
+  },
+  "screenshotPath": "/home/onnwee/.t3/userdata/browser-artifacts/browser-screenshot-chromewebdata-murejcpw-50029a1a.png",
+  "bodyText": "",
+  "canvas": [],
+  "capturedAt": "2026-10-02T20:14:44.589Z",
+  "colors": [
+    [
+      "rgb(0, 0, 0)",
+      1
+    ]
+  ],
+  "fontFaces": [],
+  "fonts": [
+    [
+      "\"Times New Roman\"",
+      1
+    ]
+  ],
+  "images": [],
+  "links": [],
+  "mediaQueries": [],
+  "reducedMotion": [],
+  "rootVariables": {},
+  "samples": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "",
+      "color": "rgb(0, 0, 0)",
+      "font": "\"Times New Roman\"",
+      "gap": "normal",
+      "height": 860,
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "BODY",
+      "text": "",
+      "weight": "400",
+      "width": 1387
+    }
+  ],
+  "scrollHeight": 876,
+  "styleSheets": [],
+  "title": "",
+  "url": "chrome-error://chromewebdata/",
+  "viewport": {
+    "dpr": 0.800000011920929,
+    "height": 876,
+    "width": 1402
+  }
+}

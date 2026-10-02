@@ -1,0 +1,29 @@
+{
+  "styleId": "c47654a9-7d7a-4b2c-8e0a-cd9296719c69",
+  "sourceUrl": "https://styles.refero.design/style/c47654a9-7d7a-4b2c-8e0a-cd9296719c69",
+  "fetchedAt": "2026-10-02T21:57:22.303529+00:00",
+  "extractedAt": "2026-10-02T21:57:22.327129+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Haley Park — Style Reference",
+  "htmlSha256": "6f90793286d30b60f8598e9e6ceae75a6207ab964403e1f171ebb17add7f4838",
+  "cache": ".cache/c47654a9-7d7a-4b2c-8e0a-cd9296719c69.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "324b2ade5e961fcb48259fcfb3986fd61ebfcf35f89562beb1626fa7a8e11a06",
+      "bytes": 25427,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d191fec5-6921-4b15-b531-e6cc93a188f5.jpg",
+    "fetchedAt": "2026-10-02T21:57:24.337548+00:00",
+    "sha256": "cbf9d86c03a0c7df88ecca34e30942157a3bcc54953c459d4b6e93922e4f86fe",
+    "bytes": 98203,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

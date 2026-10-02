@@ -1,0 +1,29 @@
+{
+  "styleId": "7eed2626-ab11-472c-b04a-603476ff8957",
+  "sourceUrl": "https://styles.refero.design/style/7eed2626-ab11-472c-b04a-603476ff8957",
+  "fetchedAt": "2026-10-02T21:54:06.234202+00:00",
+  "extractedAt": "2026-10-02T21:54:06.290500+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Qatalog — Style Reference",
+  "htmlSha256": "66fd6f59d953ffb7fb2177e0edee538dd5b1f364114bbc2e80a34845086cf12b",
+  "cache": ".cache/7eed2626-ab11-472c-b04a-603476ff8957.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fa177cc94594d33dcb41545992d43a04308d7b263526e2ba9e5f619cfc6cf278",
+      "bytes": 20972,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0d22639f-275f-4b22-942c-25acb2f6d9e5.jpg",
+    "fetchedAt": "2026-10-02T21:54:08.316673+00:00",
+    "sha256": "1fa7f6187c91d75c1efb402dd5e904258afbc7b114a2cb37086ff1162f7d9ff0",
+    "bytes": 91214,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

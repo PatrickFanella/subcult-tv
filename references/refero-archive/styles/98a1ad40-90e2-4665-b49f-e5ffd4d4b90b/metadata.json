@@ -1,0 +1,29 @@
+{
+  "styleId": "98a1ad40-90e2-4665-b49f-e5ffd4d4b90b",
+  "sourceUrl": "https://styles.refero.design/style/98a1ad40-90e2-4665-b49f-e5ffd4d4b90b",
+  "fetchedAt": "2026-10-02T21:38:22.047372+00:00",
+  "extractedAt": "2026-10-02T21:38:22.078779+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Stellar — Style Reference",
+  "htmlSha256": "1f914e09c6e5fa6b5d4eb741320dcbe7de6ed607603216e14a95e8a22166e3a8",
+  "cache": ".cache/98a1ad40-90e2-4665-b49f-e5ffd4d4b90b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bb8902aa1539105e2ce3c7e81c65342cbac1e4e671008d613e2b2d9be478a906",
+      "bytes": 20015,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3c55001d-13e0-4963-af6f-d1aaf43f8e2e.jpg",
+    "fetchedAt": "2026-10-02T21:38:24.124921+00:00",
+    "sha256": "90de0b1c33426b744e0dd9888fcc7ee1c7b6177ebdcd19fd74bc13ed42815ff7",
+    "bytes": 103402,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

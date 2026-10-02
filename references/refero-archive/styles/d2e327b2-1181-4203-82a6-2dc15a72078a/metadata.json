@@ -1,0 +1,29 @@
+{
+  "styleId": "d2e327b2-1181-4203-82a6-2dc15a72078a",
+  "sourceUrl": "https://styles.refero.design/style/d2e327b2-1181-4203-82a6-2dc15a72078a",
+  "fetchedAt": "2026-10-02T21:56:42.283449+00:00",
+  "extractedAt": "2026-10-02T21:56:42.306861+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Munro Partners — Style Reference",
+  "htmlSha256": "377319ef713fa49f2d79cb51e196fafe32882e2bf0bb038969acf115593faa1d",
+  "cache": ".cache/d2e327b2-1181-4203-82a6-2dc15a72078a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "17e28fef0e902a66d19dc71eca8df9a52a5dd5e0307088c8223b0d1c6b24bacd",
+      "bytes": 22641,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d24d3594-e05d-48c1-a778-4a002c1d8957.jpg",
+    "fetchedAt": "2026-10-02T21:56:44.297941+00:00",
+    "sha256": "9f666b41e1edc6d4929a2fe3c60f9f4fe368ea475545ec34de30ec89902dc1c9",
+    "bytes": 209710,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

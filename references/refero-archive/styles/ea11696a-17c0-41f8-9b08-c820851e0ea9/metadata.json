@@ -1,0 +1,29 @@
+{
+  "styleId": "ea11696a-17c0-41f8-9b08-c820851e0ea9",
+  "sourceUrl": "https://styles.refero.design/style/ea11696a-17c0-41f8-9b08-c820851e0ea9",
+  "fetchedAt": "2026-10-02T21:47:29.562066+00:00",
+  "extractedAt": "2026-10-02T21:47:29.609842+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "BlueYard Capital — Style Reference",
+  "htmlSha256": "62e52fd0744b79753301611904fe6ac78358bff2b94bd88a1749fe02d294a17f",
+  "cache": ".cache/ea11696a-17c0-41f8-9b08-c820851e0ea9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7bcfb1a0d0e031f7f1c936bff650bbec4bcae541e0aa3bc7f8326a297fc65eea",
+      "bytes": 18124,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e216ac53-6749-4b89-856f-436bed9c7ed3.jpg",
+    "fetchedAt": "2026-10-02T21:47:32.128658+00:00",
+    "sha256": "acd8ed085db94636a8338f3cae3aa5490925c827fe71456cf4e68b05965d634b",
+    "bytes": 78707,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

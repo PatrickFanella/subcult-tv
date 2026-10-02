@@ -1,0 +1,29 @@
+{
+  "styleId": "0769ff4c-f719-4865-98df-de2f44c694a6",
+  "sourceUrl": "https://styles.refero.design/style/0769ff4c-f719-4865-98df-de2f44c694a6",
+  "fetchedAt": "2026-10-02T21:37:06.376707+00:00",
+  "extractedAt": "2026-10-02T21:37:06.432340+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Nornorm — Style Reference",
+  "htmlSha256": "1d3e7f182706529355c11fc51a59692298e4acf8b143a6d27cbd65d30c035a57",
+  "cache": ".cache/0769ff4c-f719-4865-98df-de2f44c694a6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1c41ba9b341b2c349a1ae35c5a306c910271dda4469bc3a2edeaeb7f0aa02ca2",
+      "bytes": 18730,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/578c0c2a-a96e-448f-8f8a-c6a9b2a47a9c.jpg",
+    "fetchedAt": "2026-10-02T21:37:08.145493+00:00",
+    "sha256": "fb761807a15871d4b1ce0967ec07af09d04d2a54230d2bca09ab2dabe07efed3",
+    "bytes": 160298,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

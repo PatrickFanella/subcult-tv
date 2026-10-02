@@ -1,0 +1,29 @@
+{
+  "styleId": "a5c06875-c374-4af3-923b-6e66a5d58493",
+  "sourceUrl": "https://styles.refero.design/style/a5c06875-c374-4af3-923b-6e66a5d58493",
+  "fetchedAt": "2026-10-02T21:28:09.998377+00:00",
+  "extractedAt": "2026-10-02T21:28:10.070859+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Basis Theory — Style Reference",
+  "htmlSha256": "d7fe67007568af402d134830c70ae55b5d60b74405362fe0156586fc0f3f3ffe",
+  "cache": ".cache/a5c06875-c374-4af3-923b-6e66a5d58493.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8fd9822d2394ef617a85f6822e82c7d7e7e15209edb7e8dc2c7be68b9b258dcc",
+      "bytes": 23733,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3cfb3a78-a08f-4ac1-b66c-a2272d2c86e4.jpg",
+    "fetchedAt": "2026-10-02T21:28:12.051434+00:00",
+    "sha256": "8dff3dbaa3106f0d55da30ff743be0b96ca42ec96bbcc46228ad471c3c991dad",
+    "bytes": 106951,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,11 @@
+/* Observed values, not canonical brand roles. See DESIGN.md and tokens.json. */
+:root {
+  --observed-color-01: rgb(255, 255, 255);
+  --observed-color-02: rgb(0, 0, 0);
+  --observed-color-03: rgb(255, 144, 232);
+  --observed-color-04: rgb(36, 36, 35);
+  --observed-color-05: rgb(221, 221, 221);
+  --observed-font-01: "ABC Favorit";
+  --observed-font-02: "ABC Favorit", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+  --observed-font-03: Arial;
+}

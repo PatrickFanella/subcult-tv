@@ -1,0 +1,29 @@
+{
+  "styleId": "837ba115-568f-4ada-8182-3dc100c8b3e4",
+  "sourceUrl": "https://styles.refero.design/style/837ba115-568f-4ada-8182-3dc100c8b3e4",
+  "fetchedAt": "2026-10-02T21:57:30.486707+00:00",
+  "extractedAt": "2026-10-02T21:57:30.511245+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Photographer — Style Reference",
+  "htmlSha256": "5932e9561b0460b2c9c3405a07de4bf04156052136c9e06b3319f95db61edb08",
+  "cache": ".cache/837ba115-568f-4ada-8182-3dc100c8b3e4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b873da00cbf5e106633d161a2a4de2f6c1095d019704c1b9a98792e358ab94c7",
+      "bytes": 16955,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c9219c93-55f5-4961-82c2-abdff078bb57.jpg",
+    "fetchedAt": "2026-10-02T21:57:32.201386+00:00",
+    "sha256": "405c2dc14ea5c8dbef7b7a8b321662523a0f6a34695fca832e389391ca4d174f",
+    "bytes": 169904,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

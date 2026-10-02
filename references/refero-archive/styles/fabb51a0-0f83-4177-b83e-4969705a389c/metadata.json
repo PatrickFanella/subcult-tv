@@ -1,0 +1,29 @@
+{
+  "styleId": "fabb51a0-0f83-4177-b83e-4969705a389c",
+  "sourceUrl": "https://styles.refero.design/style/fabb51a0-0f83-4177-b83e-4969705a389c",
+  "fetchedAt": "2026-10-02T21:44:49.468729+00:00",
+  "extractedAt": "2026-10-02T21:44:49.518186+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Uniswap Cup — Style Reference",
+  "htmlSha256": "b2cbe9e2b812b68c17715d35ad5a7ad31e543afbfaac724369a20d6f782c74c7",
+  "cache": ".cache/fabb51a0-0f83-4177-b83e-4969705a389c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "213aa0deaa16e64cffe652bac022d3ed20f23f070ba1124cf41216ac3e33bdaa",
+      "bytes": 16160,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d5c4d32f-1493-4326-8382-79ed869bf35e.jpg",
+    "fetchedAt": "2026-10-02T21:44:51.624241+00:00",
+    "sha256": "f3c7e0996b322eda1e2a77c39cd1e596a27119651c645ffa1f9c859d3f4394f9",
+    "bytes": 87345,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

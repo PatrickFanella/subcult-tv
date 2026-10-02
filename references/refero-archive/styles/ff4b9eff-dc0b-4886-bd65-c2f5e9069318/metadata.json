@@ -1,0 +1,29 @@
+{
+  "styleId": "ff4b9eff-dc0b-4886-bd65-c2f5e9069318",
+  "sourceUrl": "https://styles.refero.design/style/ff4b9eff-dc0b-4886-bd65-c2f5e9069318",
+  "fetchedAt": "2026-10-02T22:00:34.176977+00:00",
+  "extractedAt": "2026-10-02T22:00:34.222144+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Henry — Style Reference",
+  "htmlSha256": "44c73b97f427c68da2c2dae8ed198d588d1e0eb2959a9305825733e0f8b28373",
+  "cache": ".cache/ff4b9eff-dc0b-4886-bd65-c2f5e9069318.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "085dc0e98ec7ce86357454adea360808add9904145a9dec8126652b85ab296c6",
+      "bytes": 20397,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d438ed5a-624b-4ca6-becd-ebf6b29f0109.jpg",
+    "fetchedAt": "2026-10-02T22:00:36.277508+00:00",
+    "sha256": "9615f80432ea46f562f733576c8f3983cf7970dfadec55c800dc7223090c4057",
+    "bytes": 133393,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

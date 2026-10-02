@@ -1,0 +1,770 @@
+{
+  "id": "50-jones",
+  "name": "50 Jones",
+  "requestedUrl": "https://50jones.com/",
+  "screenshotUnavailable": "T3 snapshot failed after browser client changed; initial screenshot retained",
+  "bodyText": "Skip to content\n50 Jones\nFIND AN APARTMENT\nMUTE/UNMUTE VIDEO\n50 Jones Luxury Apartments in Downtown San Francisco, CA, Now Open.\n\n\nSF’s urban oasis lives at Jones + Market\nAmongst the hustle and bustle of Mid-Market, one of San Francisco's hottest emerging neighborhoods, sits an oasis for everyday living at 50 Jones. With Muni and BART out your front door and SoMa and downtown a short walk away, your day starts with convenience at our upscale apartments in Downtown San Francisco, CA. When you come home, multiple relaxing designer spaces, from the solarium to the rooftops to the secluded courtyard Oasis, including The Oasis, a landscaped courtyard with a fire pit, social and relaxing spaces, and Sky Terrace features social seating and amazing views, help you leave your worries outside. Your dreams of city living and respite come together at 50 Jones. Contact us to schedule a tour.\n\n\n\nGALLERY\nmodern design +\nrich history\n\nThis storied entertainment neighborhood is alive again, with renewed focus. 50 Jones embraces the history, while moving it forward with modern comforts for today’s living.\n\nVIEW GALLERY +\nAMENITIES\nrefined finishes +\nrelaxing amenities\n\nCarefully considered, but never uptight, 50 Jones offers the perfect place to come home to. Whether it’s watching movies in the courtyard Oasis, or soaking up the sun with friends on the roof deck, our attention to detail makes a long day that much easier.\n\nSEE AMENITIES +\nNEIGHBORHOOD\nsecluded oasis +\ncentral location\n\nExperience living with everything you need right around the corner. From dining, to shopping, to a quick commute to work, 50 Jones provides the best of both worlds conveniently located near SoMa and Union Square.\n\nEXPLORE SF'S MID MARKET +\nNOW OPEN\nguided +\nvirtual tours available\n\nWe are excited to announce our leasing office is now open and offering partially self-guided tours, by appointment only. Not able to swing by? We also have virtual tours available online.\n\nCONTACT US TO SCHEDULE A TOUR +",
+  "canvas": [],
+  "capturedAt": "2026-10-02T20:26:54.194Z",
+  "colors": [
+    [
+      "rgb(149, 101, 62)",
+      14
+    ],
+    [
+      "rgb(33, 37, 41)",
+      13
+    ],
+    [
+      "rgb(102, 102, 102)",
+      8
+    ],
+    [
+      "rgb(0, 0, 0)",
+      5
+    ],
+    [
+      "rgb(255, 255, 255)",
+      2
+    ],
+    [
+      "rgb(252, 249, 245)",
+      1
+    ],
+    [
+      "rgba(0, 0, 0, 0.5)",
+      1
+    ]
+  ],
+  "fontFaces": [
+    "@font-face { font-family: \"Font Awesome 6 Brands\"; font-style: normal; font-weight: 400; font-display: swap; src: url(\"https://50jones.com/wp-content/themes/50-jones/css/fontawesome/webfonts/Brands-Regular-400.otf\") format(\"opentype\"); }",
+    "@font-face { font-family: \"Font Awesome 6 Pro\"; font-style: normal; font-weight: 400; font-display: swap; src: url(\"https://50jones.com/wp-content/themes/50-jones/css/fontawesome/webfonts/fa-brands-400.otf\") format(\"opentype\"); }",
+    "@font-face { font-family: \"Font Awesome 5 Brands\"; font-display: swap; font-weight: 400; src: url(\"https://50jones.com/wp-content/themes/50-jones/css/fontawesome/webfonts/Brands-Regular-400.otf\") format(\"opentype\"); }",
+    "@font-face { font-family: \"Font Awesome 5 Pro\"; font-display: swap; font-weight: 400; src: url(\"https://50jones.com/wp-content/themes/50-jones/css/fontawesome/webfonts/Brands-Regular-400.otf\") format(\"opentype\"); }",
+    "@font-face { font-family: FontAwesome; font-display: swap; src: url(\"https://50jones.com/wp-content/themes/50-jones/css/fontawesome/webfonts/fa-brands-400.otf\") format(\"opentype\"); }",
+    "@font-face { font-family: FontAwesome; font-display: swap; src: url(\"https://50jones.com/wp-content/themes/50-jones/css/fontawesome/webfonts/fa-brands-400.otf\") format(\"opentype\"); unicode-range: U+F003, U+F006, U+F014, U+F016-F017, U+F01A-F01B, U+F01D, U+F022, U+F03E, U+F044, U+F046, U+F05C-F05D, U+F06E, U+F070, U+F087-F088, U+F08A, U+F094, U+F096-F097, U+F09D, U+F0A0, U+F0A2, U+F0A4-F0A7, U+F0C5, U+F0C7, U+F0E5-F0E6, U+F0EB, U+F0F6-F0F8, U+F10C, U+F114-F115, U+F118-F11A, U+F11C-F11D, U+F133, U+F147, U+F14E, U+F150-F152, U+F185-F186, U+F18E, U+F190-F192, U+F196, U+F1C1-F1C9, U+F1D9, U+F1DB, U+F1E3, U+F1EA, U+F1F7, U+F1F9, U+F20A, U+F247-F248, U+F24A, U+F24D, U+F255-F25B, U+F25D, U+F271-F274, U+F278, U+F27B, U+F28C, U+F28E, U+F29C, U+F2B5, U+F2B7, U+F2BA, U+F2BC, U+F2BE, U+F2C0-F2C1, U+F2C3, U+F2D0, U+F2D2, U+F2D4, U+F2DC; }",
+    "@font-face { font-family: Lato; font-style: normal; font-weight: 400; font-display: swap; src: url(\"https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2\") format(\"woff2\"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }",
+    "@font-face { font-family: Lato; font-style: normal; font-weight: 700; font-display: swap; src: url(\"https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2\") format(\"woff2\"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }",
+    "@font-face { font-family: Lato; font-style: normal; font-weight: 900; font-display: swap; src: url(\"https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh50XSwiPGQ.woff2\") format(\"woff2\"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }",
+    "@font-face { font-display: swap; font-family: Optima; src: url(\"https://50jones.com/wp-content/themes/50-jones/fonts/optima/e843ecbd-4830-44a4-a280-c2500c9d3fdb.woff2\") format(\"woff2\"), url(\"https://50jones.com/wp-content/themes/50-jones/fonts/optima/fc030506-195b-41d1-b305-50c3a5ebd5a2.woff\") format(\"woff\"); font-weight: 400; }",
+    "@font-face { font-family: henderson-sans-basic; src: url(\"https://use.typekit.net/af/e26116/00000000000000003b9ae045/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3\") format(\"woff2\"), url(\"https://use.typekit.net/af/e26116/00000000000000003b9ae045/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3\") format(\"woff\"), url(\"https://use.typekit.net/af/e26116/00000000000000003b9ae045/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3\") format(\"opentype\"); font-display: swap; font-style: normal; font-weight: 600; font-stretch: normal; }"
+  ],
+  "fonts": [
+    [
+      "Lato, sans-serif",
+      32
+    ],
+    [
+      "henderson-sans-basic, sans-serif",
+      9
+    ],
+    [
+      "Optima, sans-serif",
+      1
+    ]
+  ],
+  "images": [
+    {
+      "alt": "",
+      "url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E"
+    },
+    {
+      "alt": "",
+      "url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%201019'%3E%3C/svg%3E"
+    },
+    {
+      "alt": "",
+      "url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%201019'%3E%3C/svg%3E"
+    },
+    {
+      "alt": "",
+      "url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%201019'%3E%3C/svg%3E"
+    },
+    {
+      "alt": "SRG Residential logo and SRG Residential website",
+      "url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20250%200'%3E%3C/svg%3E"
+    },
+    {
+      "alt": "Equal Housing Opportunity and SRG Residential Statement",
+      "url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%200'%3E%3C/svg%3E"
+    },
+    {
+      "alt": "Accessible community and SRG Residential Statement",
+      "url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%200'%3E%3C/svg%3E"
+    },
+    {
+      "alt": "Pet-friendly",
+      "url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%200'%3E%3C/svg%3E"
+    }
+  ],
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://50jones.com/#content"
+    },
+    {
+      "text": "50 Jones",
+      "url": "https://50jones.com/"
+    },
+    {
+      "text": "FIND AN APARTMENT",
+      "url": "https://50jones.com/floor-plans/?availability-tabs=apartments-tab"
+    },
+    {
+      "text": "short walk away",
+      "url": "https://50jones.com/mid-market-sf/"
+    },
+    {
+      "text": "schedule a tour",
+      "url": "https://50jones.com/contact/"
+    },
+    {
+      "text": "VIEW GALLERY +",
+      "url": "https://50jones.com/gallery/"
+    },
+    {
+      "text": "SEE AMENITIES +",
+      "url": "https://50jones.com/amenities/"
+    },
+    {
+      "text": "EXPLORE SF'S MID MARKET +",
+      "url": "https://50jones.com/mid-market-sf/"
+    },
+    {
+      "text": "CONTACT US TO SCHEDULE A TOUR +",
+      "url": "https://50jones.com/contact/"
+    },
+    {
+      "text": "",
+      "url": "https://goo.gl/maps/yTWiXwvGDyBs6Bs67"
+    },
+    {
+      "text": "",
+      "url": "tel:866-974-9243"
+    },
+    {
+      "text": "",
+      "url": "https://www.facebook.com/50JonesApartments/"
+    },
+    {
+      "text": "",
+      "url": "https://www.instagram.com/50jonesapts/"
+    },
+    {
+      "text": "",
+      "url": "https://www.srgliving.com/"
+    },
+    {
+      "text": "",
+      "url": "https://www.srgliving.com/privacy-policy/"
+    },
+    {
+      "text": "",
+      "url": "javascript:void(0);"
+    },
+    {
+      "text": "",
+      "url": "https://50jones.com/#"
+    },
+    {
+      "text": "",
+      "url": "https://www.srgliving.com/accessibility-statement/"
+    },
+    {
+      "text": "",
+      "url": "https://privacyportal.onetrust.com/webform/c485392c-9ffa-408e-80f2-3b9bdc8de724/0b23fc21-9c92-4464-af60-fa0f6936192c"
+    },
+    {
+      "text": "",
+      "url": "javascript:void(0)"
+    }
+  ],
+  "mediaQueries": [
+    "(min-resolution: 192dpi)",
+    "screen and (max-width: 600px)",
+    "(min-width: 576px)",
+    "(min-width: 768px)",
+    "(min-width: 992px)",
+    "(min-width: 1200px)",
+    "(min-width: 1400px)",
+    "(prefers-reduced-motion: reduce)",
+    "(position:sticky)",
+    "print",
+    "screen and (min-width: 0)",
+    "screen and (min-width: 768px)",
+    "(max-width: 767.98px)",
+    "(max-width: 575.98px)",
+    "(min-width: 1200px) and (max-width: 1399.98px)",
+    "(min-width: 992px) and (max-width: 1199.98px)",
+    "(min-width: 768px) and (max-width: 991.98px)",
+    "(min-width: 576px) and (max-width: 767.98px)",
+    "only screen and (max-width: 600px)",
+    "(min-width: 480px)",
+    "(max-width: 640px)",
+    "(max-width: 800px)",
+    "(max-width: 480px)"
+  ],
+  "reducedMotion": [
+    "@media (prefers-reduced-motion: reduce) {\n  .form-control { transition: none; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .btn { transition: none; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .fade { transition: none; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .collapsing { transition: none; }\n  .modal.fade .modal-dialog { transition: none; }\n}",
+    "@media (prefers-reduced-motion: reduce) {\n  .carousel-item { transition: none; }\n  .carousel-indicators li { transition: none; }\n}"
+  ],
+  "rootVariables": {
+    "--blue": "#007bff",
+    "--breakpoint-lg": "992px",
+    "--breakpoint-md": "768px",
+    "--breakpoint-sm": "576px",
+    "--breakpoint-xl": "1200px",
+    "--breakpoint-xs": "0",
+    "--breakpoint-xxl": "1400px",
+    "--cyan": "#17a2b8",
+    "--danger": "#dc3545",
+    "--dark": "#343a40",
+    "--fa-font-brands": "normal 400 1em/1 'Font Awesome 6 Brands'",
+    "--fa-font-duotone": "normal 900 1em/1 'Font Awesome 6 Duotone'",
+    "--fa-font-light": "normal 300 1em/1 'Font Awesome 6 Pro'",
+    "--fa-font-regular": "normal 400 1em/1 'Font Awesome 6 Pro'",
+    "--fa-font-solid": "normal 900 1em/1 'Font Awesome 6 Pro'",
+    "--fa-font-thin": "normal 100 1em/1 'Font Awesome 6 Pro'",
+    "--fa-style-family-brands": "'Font Awesome 6 Brands'",
+    "--fa-style-family-classic": "'Font Awesome 6 Pro'",
+    "--fa-style-family-duotone": "'Font Awesome 6 Duotone'",
+    "--font-family-monospace": "SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
+    "--font-family-sans-serif": "\"Lato\",sans-serif",
+    "--gray": "#6c757d",
+    "--gray-dark": "#343a40",
+    "--green": "#28a745",
+    "--indigo": "#6610f2",
+    "--info": "#17a2b8",
+    "--light": "#fcf9f5",
+    "--orange": "#fd7e14",
+    "--pink": "#e83e8c",
+    "--primary": "#3d5b58",
+    "--purple": "#6f42c1",
+    "--red": "#dc3545",
+    "--secondary": "#95653e",
+    "--success": "#28a745",
+    "--teal": "#20c997",
+    "--warning": "#ffc107",
+    "--white": "#fff",
+    "--wp--preset--aspect-ratio--16-9": "16/9",
+    "--wp--preset--aspect-ratio--2-3": "2/3",
+    "--wp--preset--aspect-ratio--3-2": "3/2",
+    "--wp--preset--aspect-ratio--3-4": "3/4",
+    "--wp--preset--aspect-ratio--4-3": "4/3",
+    "--wp--preset--aspect-ratio--9-16": "9/16",
+    "--wp--preset--aspect-ratio--square": "1",
+    "--wp--preset--color--black": "#000000",
+    "--wp--preset--color--cyan-bluish-gray": "#abb8c3",
+    "--wp--preset--color--light-green-cyan": "#7bdcb5",
+    "--wp--preset--color--luminous-vivid-amber": "#fcb900",
+    "--wp--preset--color--luminous-vivid-orange": "#ff6900",
+    "--wp--preset--color--pale-cyan-blue": "#8ed1fc",
+    "--wp--preset--color--pale-pink": "#f78da7",
+    "--wp--preset--color--vivid-cyan-blue": "#0693e3",
+    "--wp--preset--color--vivid-green-cyan": "#00d084",
+    "--wp--preset--color--vivid-purple": "#9b51e0",
+    "--wp--preset--color--vivid-red": "#cf2e2e",
+    "--wp--preset--color--white": "#ffffff",
+    "--wp--preset--font-size--huge": "42px",
+    "--wp--preset--font-size--large": "36px",
+    "--wp--preset--font-size--medium": "20px",
+    "--wp--preset--font-size--normal": "16px",
+    "--wp--preset--font-size--small": "13px",
+    "--wp--preset--font-size--x-large": "42px",
+    "--wp--preset--gradient--blush-bordeaux": "linear-gradient(135deg,rgb(254, 205, 165) 0%,rgb(254, 45, 45) 50%,rgb(107, 0, 62) 100%)",
+    "--wp--preset--gradient--blush-light-purple": "linear-gradient(135deg,rgb(255, 206, 236) 0%,rgb(152, 150, 240) 100%)",
+    "--wp--preset--gradient--cool-to-warm-spectrum": "linear-gradient(135deg,rgb(74, 234, 220) 0%,rgb(151, 120, 209) 20%,rgb(207, 42, 186) 40%,rgb(238, 44, 130) 60%,rgb(251, 105, 98) 80%,rgb(254, 248, 76) 100%)",
+    "--wp--preset--gradient--electric-grass": "linear-gradient(135deg,rgb(202, 248, 128) 0%,rgb(113, 206, 126) 100%)",
+    "--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan": "linear-gradient(135deg,rgb(122, 220, 180) 0%,rgb(0, 208, 130) 100%)",
+    "--wp--preset--gradient--luminous-dusk": "linear-gradient(135deg,rgb(255, 203, 112) 0%,rgb(199, 81, 192) 50%,rgb(65, 88, 208) 100%)",
+    "--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange": "linear-gradient(135deg,rgb(252, 185, 0) 0%,rgb(255, 105, 0) 100%)",
+    "--wp--preset--gradient--luminous-vivid-orange-to-vivid-red": "linear-gradient(135deg,rgb(255, 105, 0) 0%,rgb(207, 46, 46) 100%)",
+    "--wp--preset--gradient--midnight": "linear-gradient(135deg,rgb(2, 3, 129) 0%,rgb(40, 116, 252) 100%)",
+    "--wp--preset--gradient--pale-ocean": "linear-gradient(135deg,rgb(255, 245, 203) 0%,rgb(182, 227, 212) 50%,rgb(51, 167, 181) 100%)",
+    "--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray": "linear-gradient(135deg,rgb(238, 238, 238) 0%,rgb(169, 184, 195) 100%)",
+    "--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple": "linear-gradient(135deg,rgb(6, 147, 227) 0%,rgb(155, 81, 224) 100%)",
+    "--wp--preset--shadow--crisp": "6px 6px 0px rgb(0, 0, 0)",
+    "--wp--preset--shadow--deep": "12px 12px 50px rgba(0, 0, 0, .4)",
+    "--wp--preset--shadow--natural": "6px 6px 9px rgba(0, 0, 0, .2)",
+    "--wp--preset--shadow--outlined": "6px 6px 0px -3px rgb(255, 255, 255),6px 6px rgb(0, 0, 0)",
+    "--wp--preset--shadow--sharp": "6px 6px 0px rgba(0, 0, 0, .2)",
+    "--wp--preset--spacing--20": "0.44rem",
+    "--wp--preset--spacing--30": "0.67rem",
+    "--wp--preset--spacing--40": "1rem",
+    "--wp--preset--spacing--50": "1.5rem",
+    "--wp--preset--spacing--60": "2.25rem",
+    "--wp--preset--spacing--70": "3.38rem",
+    "--wp--preset--spacing--80": "5.06rem",
+    "--wp-admin-border-width-focus": "1.5px",
+    "--wp-admin-theme-color": "#007cba",
+    "--wp-admin-theme-color--rgb": "0,124,186",
+    "--wp-admin-theme-color-darker-10": "#006ba1",
+    "--wp-admin-theme-color-darker-10--rgb": "0,107,160.5",
+    "--wp-admin-theme-color-darker-20": "#005a87",
+    "--wp-admin-theme-color-darker-20--rgb": "0,90,135",
+    "--wp-block-synced-color": "#7a00df",
+    "--wp-block-synced-color--rgb": "122,0,223",
+    "--wp-bound-block-color": "var(--wp-block-synced-color)",
+    "--wp-editor-canvas-background": "#ddd",
+    "--yellow": "#ffc107"
+  },
+  "samples": [
+    {
+      "background": "rgb(252, 249, 245)",
+      "border": "0px none rgb(33, 37, 41)",
+      "class": "home wp-singular page-template page-template-page-templates page-template-home page-template-page-templateshome-php page page-id-7 wp-embed-responsive",
+      "color": "rgb(33, 37, 41)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 800,
+      "letterSpacing": "normal",
+      "lineHeight": "24px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "BODY",
+      "text": "Skip to content\n50 Jones\nFIND AN APARTMENT\nMUTE/UNMUTE VIDEO\n50 Jones Luxury Apartments in Downtown ",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(33, 37, 41)",
+      "class": "hamburger hamburger--spin",
+      "color": "rgb(33, 37, 41)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 18,
+      "letterSpacing": "normal",
+      "lineHeight": "0px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "",
+      "weight": "400",
+      "width": 26
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(33, 37, 41)",
+      "class": "site-main",
+      "color": "rgb(33, 37, 41)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 3430,
+      "letterSpacing": "normal",
+      "lineHeight": "24px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "MAIN",
+      "text": "MUTE/UNMUTE VIDEO\n50 Jones Luxury Apartments in Downtown San Francisco, CA, Now Open.\n\n\nSF’s urban o",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "class": "btn mute-btn",
+      "color": "rgb(255, 255, 255)",
+      "font": "henderson-sans-basic, sans-serif",
+      "gap": "normal",
+      "height": 62,
+      "letterSpacing": "3.2px",
+      "lineHeight": "36px",
+      "maxWidth": "none",
+      "padding": "12px 15px",
+      "position": "absolute",
+      "radius": "0px",
+      "size": "32px",
+      "tag": "BUTTON",
+      "text": "MUTE/UNMUTE VIDEO",
+      "weight": "600",
+      "width": 71
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(149, 101, 62)",
+      "class": "t-title",
+      "color": "rgb(149, 101, 62)",
+      "font": "Optima, sans-serif",
+      "gap": "normal",
+      "height": 72,
+      "letterSpacing": "normal",
+      "lineHeight": "36px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "30px",
+      "tag": "H2",
+      "text": "50 Jones Luxury Apartments in Downtown San Francisco, CA, Now Open.",
+      "weight": "500",
+      "width": 892
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "t-intro",
+      "color": "rgb(0, 0, 0)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 270,
+      "letterSpacing": "normal",
+      "lineHeight": "27px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "18px",
+      "tag": "P",
+      "text": "SF’s urban oasis lives at Jones + Market\nAmongst the hustle and bustle of Mid-Market, one of San Fra",
+      "weight": "400",
+      "width": 892
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "",
+      "class": "t-all-caps-head-2-rule",
+      "color": "rgb(149, 101, 62)",
+      "font": "henderson-sans-basic, sans-serif",
+      "gap": "normal",
+      "height": 28,
+      "letterSpacing": "normal",
+      "lineHeight": "18.004px",
+      "maxWidth": "none",
+      "padding": "8px 0px 0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "14px",
+      "tag": "H3",
+      "text": "GALLERY",
+      "weight": "500",
+      "width": 82
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(33, 37, 41)",
+      "class": "",
+      "color": "rgb(33, 37, 41)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 96,
+      "letterSpacing": "normal",
+      "lineHeight": "24px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "P",
+      "text": "This storied entertainment neighborhood is alive again, with renewed focus. 50 Jones embraces the hi",
+      "weight": "400",
+      "width": 322
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "",
+      "class": "t-all-caps-head-2-rule",
+      "color": "rgb(149, 101, 62)",
+      "font": "henderson-sans-basic, sans-serif",
+      "gap": "normal",
+      "height": 28,
+      "letterSpacing": "normal",
+      "lineHeight": "18.004px",
+      "maxWidth": "none",
+      "padding": "8px 0px 0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "14px",
+      "tag": "H3",
+      "text": "AMENITIES",
+      "weight": "500",
+      "width": 98
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(33, 37, 41)",
+      "class": "",
+      "color": "rgb(33, 37, 41)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 144,
+      "letterSpacing": "normal",
+      "lineHeight": "24px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "P",
+      "text": "Carefully considered, but never uptight, 50 Jones offers the perfect place to come home to. Whether ",
+      "weight": "400",
+      "width": 322
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "",
+      "class": "t-all-caps-head-2-rule",
+      "color": "rgb(149, 101, 62)",
+      "font": "henderson-sans-basic, sans-serif",
+      "gap": "normal",
+      "height": 28,
+      "letterSpacing": "normal",
+      "lineHeight": "18.004px",
+      "maxWidth": "none",
+      "padding": "8px 0px 0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "14px",
+      "tag": "H3",
+      "text": "NEIGHBORHOOD",
+      "weight": "500",
+      "width": 144
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(33, 37, 41)",
+      "class": "",
+      "color": "rgb(33, 37, 41)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 144,
+      "letterSpacing": "normal",
+      "lineHeight": "24px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "P",
+      "text": "Experience living with everything you need right around the corner. From dining, to shopping, to a q",
+      "weight": "400",
+      "width": 322
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "",
+      "class": "t-all-caps-head-2-rule",
+      "color": "rgb(149, 101, 62)",
+      "font": "henderson-sans-basic, sans-serif",
+      "gap": "normal",
+      "height": 28,
+      "letterSpacing": "normal",
+      "lineHeight": "18.004px",
+      "maxWidth": "none",
+      "padding": "8px 0px 0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "14px",
+      "tag": "H3",
+      "text": "NOW OPEN",
+      "weight": "500",
+      "width": 96
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(33, 37, 41)",
+      "class": "",
+      "color": "rgb(33, 37, 41)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 120,
+      "letterSpacing": "normal",
+      "lineHeight": "24px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "P",
+      "text": "We are excited to announce our leasing office is now open and offering partially self-guided tours, ",
+      "weight": "400",
+      "width": 322
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(33, 37, 41)",
+      "class": "site-footer font-t3",
+      "color": "rgb(33, 37, 41)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 268,
+      "letterSpacing": "normal",
+      "lineHeight": "24px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "FOOTER",
+      "text": "",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(33, 37, 41)",
+      "class": "",
+      "color": "rgb(33, 37, 41)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 18,
+      "letterSpacing": "normal",
+      "lineHeight": "24px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "HEADER",
+      "text": "",
+      "weight": "400",
+      "width": 322
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(149, 101, 62)",
+      "class": "t-all-caps-head-3",
+      "color": "rgb(149, 101, 62)",
+      "font": "henderson-sans-basic, sans-serif",
+      "gap": "normal",
+      "height": 18,
+      "letterSpacing": "normal",
+      "lineHeight": "18px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "12px",
+      "tag": "H2",
+      "text": "",
+      "weight": "500",
+      "width": 322
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(149, 101, 62)",
+      "class": "t-all-caps-head-3",
+      "color": "rgb(149, 101, 62)",
+      "font": "henderson-sans-basic, sans-serif",
+      "gap": "normal",
+      "height": 18,
+      "letterSpacing": "normal",
+      "lineHeight": "18px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "12px",
+      "tag": "H2",
+      "text": "",
+      "weight": "500",
+      "width": 322
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(33, 37, 41)",
+      "class": "officehoures",
+      "color": "rgb(33, 37, 41)",
+      "font": "Lato, sans-serif",
+      "gap": "normal",
+      "height": 48,
+      "letterSpacing": "normal",
+      "lineHeight": "24px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "16px",
+      "tag": "P",
+      "text": "",
+      "weight": "400",
+      "width": 322
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(149, 101, 62)",
+      "class": "t-all-caps-head-3",
+      "color": "rgb(149, 101, 62)",
+      "font": "henderson-sans-basic, sans-serif",
+      "gap": "normal",
+      "height": 18,
+      "letterSpacing": "normal",
+      "lineHeight": "18px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "12px",
+      "tag": "H2",
+      "text": "",
+      "weight": "500",
+      "width": 322
+    }
+  ],
+  "scrollHeight": 3430,
+  "styleSheets": [
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    },
+    {
+      "readable": true,
+      "url": null
+    }
+  ],
+  "title": "Luxury Apartments in Downtown San Francisco, CA | 50 Jones",
+  "url": "https://50jones.com/",
+  "viewport": {
+    "dpr": 2,
+    "height": 800,
+    "width": 1280
+  }
+}

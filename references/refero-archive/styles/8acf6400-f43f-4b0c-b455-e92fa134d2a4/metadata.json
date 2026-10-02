@@ -1,0 +1,29 @@
+{
+  "styleId": "8acf6400-f43f-4b0c-b455-e92fa134d2a4",
+  "sourceUrl": "https://styles.refero.design/style/8acf6400-f43f-4b0c-b455-e92fa134d2a4",
+  "fetchedAt": "2026-10-02T21:28:54.000766+00:00",
+  "extractedAt": "2026-10-02T21:28:54.045144+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Baba — Style Reference",
+  "htmlSha256": "b710c14b11b2961ba2fba99a79d27a9f4a186a37a166e6e27d1a6ec96a67ad12",
+  "cache": ".cache/8acf6400-f43f-4b0c-b455-e92fa134d2a4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "facde9d2485af5998aa6fc1891903ce36b208258f91819c0e3c094b73789537c",
+      "bytes": 21458,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/42064fab-eb77-4704-884d-02d78dc2b156.jpg",
+    "fetchedAt": "2026-10-02T21:28:56.009526+00:00",
+    "sha256": "7122c2faf8b2f4b257c0c1f3391b312b1b39f3feb25d5725e936867bf45af663",
+    "bytes": 101685,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

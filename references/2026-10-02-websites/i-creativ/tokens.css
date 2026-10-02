@@ -1,0 +1,7 @@
+/* Reference observations, not an official or production design system.
+   See GUIDE.md and tokens.json for evidence and visibility limits. */
+:root {
+  --reference-bg: oklch(0.2014 0.0101 276.52);
+  --reference-fg: oklch(0.8846 0.0046 259.33);
+  --reference-font-body: peridot-pe-variable, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Oxygen, Cantarell, sans-serif;
+}

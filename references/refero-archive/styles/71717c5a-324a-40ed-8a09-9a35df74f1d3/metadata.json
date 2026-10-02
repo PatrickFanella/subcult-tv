@@ -1,0 +1,29 @@
+{
+  "styleId": "71717c5a-324a-40ed-8a09-9a35df74f1d3",
+  "sourceUrl": "https://styles.refero.design/style/71717c5a-324a-40ed-8a09-9a35df74f1d3",
+  "fetchedAt": "2026-10-02T21:44:05.586286+00:00",
+  "extractedAt": "2026-10-02T21:44:05.630116+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Anna Jóna — Style Reference",
+  "htmlSha256": "d2e9064ea97ff38019c1c3d3a18edf02dd0fde0e3c1c3c491ec24f5eb38be27f",
+  "cache": ".cache/71717c5a-324a-40ed-8a09-9a35df74f1d3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e15a97f988037299e5ecd6c09a8ac0baa89d52bc485e604f08d9fee678762004",
+      "bytes": 17210,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/41b6a01d-4734-4c9a-a711-a63a309555e4.jpg",
+    "fetchedAt": "2026-10-02T21:44:07.503405+00:00",
+    "sha256": "99b3d49db0d5c62801c10c259d869e5a9a1241b501375107bc4ae7275c5443eb",
+    "bytes": 67814,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

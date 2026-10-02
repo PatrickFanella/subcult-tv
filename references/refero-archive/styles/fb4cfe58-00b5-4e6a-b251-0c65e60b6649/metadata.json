@@ -1,0 +1,29 @@
+{
+  "styleId": "fb4cfe58-00b5-4e6a-b251-0c65e60b6649",
+  "sourceUrl": "https://styles.refero.design/style/fb4cfe58-00b5-4e6a-b251-0c65e60b6649",
+  "fetchedAt": "2026-10-02T21:58:30.181517+00:00",
+  "extractedAt": "2026-10-02T21:58:30.223297+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cassette — Style Reference",
+  "htmlSha256": "cb134223b0a544aff9ace29f41d712fe7320d81cd476f004c2c499ad83644beb",
+  "cache": ".cache/fb4cfe58-00b5-4e6a-b251-0c65e60b6649.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e2dc8217acae6251ac295e0c03af9ed547daf267348fdfd37e1a0d847bebc4f7",
+      "bytes": 17721,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bcb5c660-9856-4e76-acc3-96990d332946.jpg",
+    "fetchedAt": "2026-10-02T21:58:32.261911+00:00",
+    "sha256": "6a84f31cb9ea632018a4c3c19f860fd6aa0e0a7334e84b25724d11adfaf51634",
+    "bytes": 79267,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

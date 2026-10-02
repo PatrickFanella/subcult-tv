@@ -1,0 +1,29 @@
+{
+  "styleId": "d8e01e43-d260-4fa3-8f42-ae39e5c6ac84",
+  "sourceUrl": "https://styles.refero.design/style/d8e01e43-d260-4fa3-8f42-ae39e5c6ac84",
+  "fetchedAt": "2026-10-02T21:51:29.779056+00:00",
+  "extractedAt": "2026-10-02T21:51:29.824364+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Poly — Style Reference",
+  "htmlSha256": "f3d0c2f200deb49373e8c17b48667b8c42163fceed7428f58adfa3f6fdedc707",
+  "cache": ".cache/d8e01e43-d260-4fa3-8f42-ae39e5c6ac84.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "54d6cc1d050dbff6d79fd00315ee4f36340bee53e9f9e6ace55857f8533f5b67",
+      "bytes": 18805,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/13be913b-ae36-47a0-bf73-e523f65c965f.jpg",
+    "fetchedAt": "2026-10-02T21:51:33.891626+00:00",
+    "sha256": "88c19399a2db51f787e29e4ac60ac70c59aa4ca2bf5b719224fa10bba76e6525",
+    "bytes": 156099,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

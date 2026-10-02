@@ -1,0 +1,29 @@
+{
+  "styleId": "5076959f-f849-4b50-8f8a-2040d4756f98",
+  "sourceUrl": "https://styles.refero.design/style/5076959f-f849-4b50-8f8a-2040d4756f98",
+  "fetchedAt": "2026-10-02T21:41:01.584573+00:00",
+  "extractedAt": "2026-10-02T21:41:01.630134+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Daylit — Style Reference",
+  "htmlSha256": "569df1bc2293279bef5dc60c4dc2b59eee7a8e34061396e8ef273890d1f3a68d",
+  "cache": ".cache/5076959f-f849-4b50-8f8a-2040d4756f98.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7ca5803b7f1abc09303986de92f5935a5d5864a349f192be0178c8cdad362ff2",
+      "bytes": 22723,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b2c2d69f-6709-43eb-adce-97297297623c.jpg",
+    "fetchedAt": "2026-10-02T21:41:03.516693+00:00",
+    "sha256": "ac8d0daf156d3c84e356c5d8a16dcb028cda7ff9f31f3adce3609c3133be840d",
+    "bytes": 72188,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

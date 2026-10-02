@@ -1,0 +1,98 @@
+{
+  "site": "razed-mods",
+  "source": "https://razed-mods.webflow.io/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:14:55.838Z",
+      "url": "https://razed-mods.webflow.io/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "scrolled",
+      "observation": "evidence/scrolled.json",
+      "image": "images/scrolled.png",
+      "capturedAt": "2026-10-02T20:20:15.651Z",
+      "url": "https://razed-mods.webflow.io/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": "images/settled.png",
+      "capturedAt": "2026-10-02T20:20:14.454Z",
+      "url": "https://razed-mods.webflow.io/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "1450723734f849d5071878bcd656284d67c090dc8315402bdfba7c950bd8ce0b",
+      "bytes": 4926
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "cf487147ffa308a4384db56233cb33d55d4ccadbddb4891ade88623cc00a4e82",
+      "bytes": 1297
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "c4f8fa8813247932e04e2b86d6b3723ad5940f15333b91177e4803eb8f8c46b2",
+      "bytes": 29848
+    },
+    {
+      "path": "evidence/scrolled.json",
+      "sha256": "ee711b518e33e36f62ecf12068f8a745deaaa2ac34d87561463289901f50312a",
+      "bytes": 30682
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "a3e25f8429cb33ee9c20f23a15995b86715e1025f2c129dac9cb72c41236c536",
+      "bytes": 30712
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "7e238d4d0d2d01e91a611df5ba7a26255068f746d1392fd79c05bf4d6cb74d5d",
+      "bytes": 3609
+    },
+    {
+      "path": "images/scrolled.png",
+      "sha256": "cc1f5c6aa2b7edb89c3fb45ac16e97cde9fee1c02df998e85b001d3c592c83b6",
+      "bytes": 241174
+    },
+    {
+      "path": "images/settled.png",
+      "sha256": "c0b44386ec7618fde7e7a7380822b987ebfccbabe431b3b2ac72e4e30b378c47",
+      "bytes": 259850
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "7f3c04bc2bc5ce87eb974d3c3ab03798fd333d9e6da39e275a16ba19858fc540",
+      "bytes": 282
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "55aa6993ae5642d87766723dce4dae7c2e33602e3ab4655eb916ed61e810c8cc",
+      "bytes": 8130
+    }
+  ]
+}

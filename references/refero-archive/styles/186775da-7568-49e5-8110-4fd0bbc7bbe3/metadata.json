@@ -1,0 +1,29 @@
+{
+  "styleId": "186775da-7568-49e5-8110-4fd0bbc7bbe3",
+  "sourceUrl": "https://styles.refero.design/style/186775da-7568-49e5-8110-4fd0bbc7bbe3",
+  "fetchedAt": "2026-10-02T22:00:26.188936+00:00",
+  "extractedAt": "2026-10-02T22:00:26.239981+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "AI Product Generation — Style Reference",
+  "htmlSha256": "f805afaced8854f04372e94b5305371a50f6a127aeb0ae88207bf2eddfbcee3d",
+  "cache": ".cache/186775da-7568-49e5-8110-4fd0bbc7bbe3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "763f46c9284382a3a6a01abb8fc39b8afcaf177add552db6355a316181cf4b80",
+      "bytes": 21356,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d2ec599b-0c38-4ab6-a670-d483152f35ad.jpg",
+    "fetchedAt": "2026-10-02T22:00:28.280736+00:00",
+    "sha256": "71d54ed06ccc68d94e199488c7efbcd4a7e514b907b84bf1e1beb75e33f88785",
+    "bytes": 139839,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

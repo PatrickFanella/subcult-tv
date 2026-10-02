@@ -1,0 +1,29 @@
+{
+  "styleId": "7cae43cd-dd0e-4658-86e6-d66935cfb213",
+  "sourceUrl": "https://styles.refero.design/style/7cae43cd-dd0e-4658-86e6-d66935cfb213",
+  "fetchedAt": "2026-10-02T21:49:05.708617+00:00",
+  "extractedAt": "2026-10-02T21:49:05.760729+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Palmer — Style Reference",
+  "htmlSha256": "d83c4748ffec3066503ae35fadaaade69db9ad684955fa013fa3bdd34b6dabc4",
+  "cache": ".cache/7cae43cd-dd0e-4658-86e6-d66935cfb213.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7ba0e8e242e39bf09c57da4354ef6b5232e59c2c5e8a4c1c1aeff111f5cfeac4",
+      "bytes": 15020,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/885d30fc-749b-4a36-aba5-35fda6ec8a91.jpg",
+    "fetchedAt": "2026-10-02T21:49:07.501362+00:00",
+    "sha256": "d93a8b65a2776ba51b81498c64addd345be75b632ebb4e8a4a5d8657f61300bf",
+    "bytes": 64735,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "9836e7c2-ac8e-453d-bdef-2677eb078d59",
+  "sourceUrl": "https://styles.refero.design/style/9836e7c2-ac8e-453d-bdef-2677eb078d59",
+  "fetchedAt": "2026-10-02T21:50:53.561323+00:00",
+  "extractedAt": "2026-10-02T21:50:53.663992+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Busy Bee Honey — Style Reference",
+  "htmlSha256": "fa3567b2e0370c2557521a39898f01377ba7d61c41e5cfe7462c6a584d043421",
+  "cache": ".cache/9836e7c2-ac8e-453d-bdef-2677eb078d59.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7ee6d856e845f8e36ca7c145eb303c6cc27992817354f23638f8a13f4423abc0",
+      "bytes": 21855,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5181f789-3312-40e6-9b27-f7959042ecb3.jpg",
+    "fetchedAt": "2026-10-02T21:50:55.567888+00:00",
+    "sha256": "53d7d0426d5280e973699e5a00dcd0bc8d1a0d7deaf691b29cbc3804abf921d0",
+    "bytes": 98464,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

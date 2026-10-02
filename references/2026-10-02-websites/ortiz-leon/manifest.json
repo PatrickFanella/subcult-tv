@@ -1,0 +1,70 @@
+{
+  "site": "ortiz-leon",
+  "source": "https://www.ortizleon.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:18:16.665Z",
+      "url": "https://www.ortizleon.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:26:47.218Z",
+      "url": "https://www.ortizleon.com/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "f74ed61e7c1ed40b186c41ee8815d14f1e6ffcc4f63960b736822498c70a1a8b",
+      "bytes": 5243
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "7effc8c01cbf0b3072f6bc2e22ff4dbfc5a542e1d0971859042f9490ca3bcab5",
+      "bytes": 1221
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "214e506672333688e1d9b8a5e9d22b1762841cc9d2978f0cbfe06d06513e83ff",
+      "bytes": 38432
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "1a1d3a327c6830f544068a17dae1aa2fe474e24d994f4ff4fbd5ec29e516f2ab",
+      "bytes": 34914
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "a2c9d305212527117713025c1703179e41652c1f29070d58ed9fbe712b82ac49",
+      "bytes": 1003821
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "6931319c990851e7bf8b5751f66728f3fdd74c046cbad970b6ae434a07d93c66",
+      "bytes": 275
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "bbb0b73d7fdc91679b23d8e908bb8fd9ed19691b03be0c94c3091555a1c9498a",
+      "bytes": 16003
+    }
+  ]
+}

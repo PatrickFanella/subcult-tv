@@ -1,0 +1,29 @@
+{
+  "styleId": "73359194-de93-436e-af53-81d4029f5e7a",
+  "sourceUrl": "https://styles.refero.design/style/73359194-de93-436e-af53-81d4029f5e7a",
+  "fetchedAt": "2026-10-02T21:38:10.173427+00:00",
+  "extractedAt": "2026-10-02T21:38:10.207074+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Clase bcn — Style Reference",
+  "htmlSha256": "a07e68c9f73f347fbf19874ccaef01465e7ddd248fb67fe2125c79563562c822",
+  "cache": ".cache/73359194-de93-436e-af53-81d4029f5e7a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f69ca39868f6c294f08002e66508bf0018e25482c3ed29bf7b7987aa78b5c0d9",
+      "bytes": 15091,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ec20ca9d-a102-49b9-96db-896f2750499e.jpg",
+    "fetchedAt": "2026-10-02T21:38:12.132975+00:00",
+    "sha256": "b0dd5058ea28e87a39bfba9ef75831b89ddd2576f9c90af6fe986132b42200e0",
+    "bytes": 130888,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

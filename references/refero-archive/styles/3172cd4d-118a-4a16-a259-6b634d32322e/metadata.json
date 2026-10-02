@@ -1,0 +1,29 @@
+{
+  "styleId": "3172cd4d-118a-4a16-a259-6b634d32322e",
+  "sourceUrl": "https://styles.refero.design/style/3172cd4d-118a-4a16-a259-6b634d32322e",
+  "fetchedAt": "2026-10-02T21:35:34.010644+00:00",
+  "extractedAt": "2026-10-02T21:35:34.045302+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Mercury — Style Reference",
+  "htmlSha256": "76c9300a21c3852317e2f41bb60f2592a349a5b5b59279d051c7fc22d1586842",
+  "cache": ".cache/3172cd4d-118a-4a16-a259-6b634d32322e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ce3d37986922c30b1062203141f3596f8d267a65cdaa40e79f1c577136e71ce5",
+      "bytes": 20266,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0ca7b304-01bd-43a7-b5a9-06f22714d05d.jpg",
+    "fetchedAt": "2026-10-02T21:35:36.027510+00:00",
+    "sha256": "a12bec8166538b27e348690014146bc871bde220e560ef7ef8c004f8e2c29271",
+    "bytes": 106037,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

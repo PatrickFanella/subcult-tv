@@ -1,0 +1,29 @@
+{
+  "styleId": "0e8e546b-004c-46b6-a960-5dd88968ae07",
+  "sourceUrl": "https://styles.refero.design/style/0e8e546b-004c-46b6-a960-5dd88968ae07",
+  "fetchedAt": "2026-10-02T21:47:41.578349+00:00",
+  "extractedAt": "2026-10-02T21:47:41.625633+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ddna — Style Reference",
+  "htmlSha256": "43bfd1a93cb662b2570022b9513093706aa1d2e0341b7f3ad5cf149aee99a883",
+  "cache": ".cache/0e8e546b-004c-46b6-a960-5dd88968ae07.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a9aead8c99cf40e85460d8a93ae098c8659ce56c2d50aa99869d93faf1c85e40",
+      "bytes": 14828,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7997e5fe-4f7f-45d5-9962-95ea7b33c33e.jpg",
+    "fetchedAt": "2026-10-02T21:47:43.511143+00:00",
+    "sha256": "3b78ba33fd7094e8cf5405b90a0164f5825bff57712b796c9fd92294f41e28f6",
+    "bytes": 62942,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

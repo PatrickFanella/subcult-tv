@@ -1,0 +1,29 @@
+{
+  "styleId": "626ae2de-c402-4805-b859-2c6adca41022",
+  "sourceUrl": "https://styles.refero.design/style/626ae2de-c402-4805-b859-2c6adca41022",
+  "fetchedAt": "2026-10-02T21:47:37.546497+00:00",
+  "extractedAt": "2026-10-02T21:47:37.596418+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Limitless — Style Reference",
+  "htmlSha256": "4651414cc75bec974b46dc5283389afa3c404b610aa6a72a088f1d1af7158239",
+  "cache": ".cache/626ae2de-c402-4805-b859-2c6adca41022.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "731f65b6476c1a5674e523766377777b113d3f82fc7d80ac0dae0fd2f771d84a",
+      "bytes": 15884,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0cb4abc3-b992-45d8-87b6-96e49935a504.jpg",
+    "fetchedAt": "2026-10-02T21:47:39.589550+00:00",
+    "sha256": "3906dc65f351b7ce7e6cae37d3a4a277e4107ccee4f946df85cc3d3fa695a47f",
+    "bytes": 73803,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

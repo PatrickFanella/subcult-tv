@@ -1,0 +1,29 @@
+{
+  "styleId": "813be405-c2b9-41be-9864-7b53d66483dc",
+  "sourceUrl": "https://styles.refero.design/style/813be405-c2b9-41be-9864-7b53d66483dc",
+  "fetchedAt": "2026-10-02T21:46:05.630963+00:00",
+  "extractedAt": "2026-10-02T21:46:05.674935+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Toggl Track — Style Reference",
+  "htmlSha256": "0b4d3b46b82ed05103db630baded5f80fd5c94f2918f27ff0ab5ca44c2e5a962",
+  "cache": ".cache/813be405-c2b9-41be-9864-7b53d66483dc.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "788bcf4f4ee45487f612986ae613badbcbbf6abb0ede24b545d80dc12f0f75d7",
+      "bytes": 22487,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5e010e52-48b9-42d6-b162-86d96682005f.jpg",
+    "fetchedAt": "2026-10-02T21:46:07.591790+00:00",
+    "sha256": "7a89e714cd3e379de18a251e7e4800da49a16d47013c1d4bc806631a69175533",
+    "bytes": 108381,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

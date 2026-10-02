@@ -1,0 +1,29 @@
+{
+  "styleId": "b1e82907-d1cf-46cd-8ae7-3561c5b15fd0",
+  "sourceUrl": "https://styles.refero.design/style/b1e82907-d1cf-46cd-8ae7-3561c5b15fd0",
+  "fetchedAt": "2026-10-02T21:29:46.005140+00:00",
+  "extractedAt": "2026-10-02T21:29:46.053245+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dylanbrouwer — Style Reference",
+  "htmlSha256": "4ea32fd0e32836121dc830c44c772be92f60b69f2e1f7610f03077e2d00f84a0",
+  "cache": ".cache/b1e82907-d1cf-46cd-8ae7-3561c5b15fd0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "83346a4af4f9384847793703eb78c808b3c032e682a41747c8d0aee2b4127a88",
+      "bytes": 24733,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4077aeac-a01a-4abd-902a-574501ed8a22.jpg",
+    "fetchedAt": "2026-10-02T21:29:47.992299+00:00",
+    "sha256": "2f056b24467e4be32e72a03e05762b13fcfe8705e0fb38ee0a2ad158cf92b735",
+    "bytes": 63845,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

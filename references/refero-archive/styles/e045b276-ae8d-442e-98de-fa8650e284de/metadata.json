@@ -1,0 +1,29 @@
+{
+  "styleId": "e045b276-ae8d-442e-98de-fa8650e284de",
+  "sourceUrl": "https://styles.refero.design/style/e045b276-ae8d-442e-98de-fa8650e284de",
+  "fetchedAt": "2026-10-02T21:43:57.602638+00:00",
+  "extractedAt": "2026-10-02T21:43:57.649590+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Studio Oker — Style Reference",
+  "htmlSha256": "ca3ebdfe183863f2c53cd58bfc04bcc1a8815d287112f2092b0e5a44bc629692",
+  "cache": ".cache/e045b276-ae8d-442e-98de-fa8650e284de.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0f66d7ddfd38717ba42044ca2a64a25708547ef5d4c967fa618dccf79f3ea3bf",
+      "bytes": 18169,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c47608c9-77ef-48c2-89ee-32cfc9486554.jpg",
+    "fetchedAt": "2026-10-02T21:43:59.623343+00:00",
+    "sha256": "1f8d1218573dd01a2d2e4243bb02ff9b3adf6ce569f8e08e6bc0fb50fee1d1c9",
+    "bytes": 124175,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

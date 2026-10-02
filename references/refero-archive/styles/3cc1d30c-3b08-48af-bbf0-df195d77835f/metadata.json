@@ -1,0 +1,29 @@
+{
+  "styleId": "3cc1d30c-3b08-48af-bbf0-df195d77835f",
+  "sourceUrl": "https://styles.refero.design/style/3cc1d30c-3b08-48af-bbf0-df195d77835f",
+  "fetchedAt": "2026-10-02T21:37:49.990044+00:00",
+  "extractedAt": "2026-10-02T21:37:50.030549+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Piet Oudolf — Style Reference",
+  "htmlSha256": "41dbeee3b33573a6596c5b846df53dbef9c0a463f92b026c7ee92450c7d4c37a",
+  "cache": ".cache/3cc1d30c-3b08-48af-bbf0-df195d77835f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af7d6ba092c7cdfb0cd45758d25102ef690622816219a11325f211beabca8e63",
+      "bytes": 14154,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0e303380-7c04-41c3-b7af-558ab7e61501.jpg",
+    "fetchedAt": "2026-10-02T21:37:52.170565+00:00",
+    "sha256": "8ef755bd580b18d51c1e28e5a3c7f8e898e1179e771c2856e699e224a30375e7",
+    "bytes": 148418,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "b458ca1a-70f0-4f85-b745-f879a4d08457",
+  "sourceUrl": "https://styles.refero.design/style/b458ca1a-70f0-4f85-b745-f879a4d08457",
+  "fetchedAt": "2026-10-02T21:34:30.020378+00:00",
+  "extractedAt": "2026-10-02T21:34:30.047185+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dia Browser — Style Reference",
+  "htmlSha256": "04ab9328c32006e7e4420d036405527789ca1f96998156380cb48f4f7ea30a27",
+  "cache": ".cache/b458ca1a-70f0-4f85-b745-f879a4d08457.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af86fba5160803746b665181003d6f427b4e77c8c88ac89f6e09dc8055b1db92",
+      "bytes": 28276,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/09e072d3-5a8e-40d6-b96f-2b442ca84256.jpg",
+    "fetchedAt": "2026-10-02T21:34:32.083676+00:00",
+    "sha256": "33ea2463390320761a9fd483a77bc8f9f05c6a1b1c5e106857e4adf3204cb4b8",
+    "bytes": 51849,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

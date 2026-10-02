@@ -1,0 +1,29 @@
+{
+  "styleId": "5d273906-0110-48cf-99cd-63a72eb9c586",
+  "sourceUrl": "https://styles.refero.design/style/5d273906-0110-48cf-99cd-63a72eb9c586",
+  "fetchedAt": "2026-10-02T22:00:02.195510+00:00",
+  "extractedAt": "2026-10-02T22:00:02.242034+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "GTE — Style Reference",
+  "htmlSha256": "89846aa82785e46153e10dc13ff970e931e39ccb8754d904fa54725722ccf6f0",
+  "cache": ".cache/5d273906-0110-48cf-99cd-63a72eb9c586.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "10366bd8471d6ac1c3b25b27e4ede2c2793f6dd2ddcee4d009bf4d45c2695a1b",
+      "bytes": 20281,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2412abfb-abf1-421c-97c4-5a3efd637797.jpg",
+    "fetchedAt": "2026-10-02T22:00:04.254763+00:00",
+    "sha256": "b039f5be9358ebb71eff3b72301304b9882d29d58a9ba809bf906cff9de840f3",
+    "bytes": 61413,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "537641a0-5a24-4203-ae9b-cd29516aa3f8",
+  "sourceUrl": "https://styles.refero.design/style/537641a0-5a24-4203-ae9b-cd29516aa3f8",
+  "fetchedAt": "2026-10-02T21:58:02.234768+00:00",
+  "extractedAt": "2026-10-02T21:58:02.271802+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Atoms — Style Reference",
+  "htmlSha256": "dbe0ccb954e7a22840d4431539c588c357b5b0d846534ed6a39411fb51b05cfa",
+  "cache": ".cache/537641a0-5a24-4203-ae9b-cd29516aa3f8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "821ceb70a6b67222a88048989b662e5720ea9cbe219a6da7a443245cada5f0bf",
+      "bytes": 21129,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c092dc50-3673-4bce-957c-d8bdc662ac69.jpg",
+    "fetchedAt": "2026-10-02T21:58:04.129682+00:00",
+    "sha256": "de7e135c8c0cde4cca829e01b53c9fe481658c8212cd5176b2a5c380e715aa95",
+    "bytes": 47037,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

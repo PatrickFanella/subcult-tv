@@ -1,0 +1,29 @@
+{
+  "styleId": "22e11001-8786-4af7-bdb9-f9419ce8ad1a",
+  "sourceUrl": "https://styles.refero.design/style/22e11001-8786-4af7-bdb9-f9419ce8ad1a",
+  "fetchedAt": "2026-10-02T21:44:13.515902+00:00",
+  "extractedAt": "2026-10-02T21:44:13.562475+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Gigantic — Style Reference",
+  "htmlSha256": "fe5c64febb24277f47c0b2e19f14eae71cec5b1287814e1f2199e779bf064cd4",
+  "cache": ".cache/22e11001-8786-4af7-bdb9-f9419ce8ad1a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1ae5ef2e122006e7146bbd77b6f89635bf162af586d1a0a11a5f6c78ee4a4816",
+      "bytes": 20791,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2cfad922-8401-45cc-bcef-53a38c79180f.jpg",
+    "fetchedAt": "2026-10-02T21:44:15.466630+00:00",
+    "sha256": "bdf9b69a7a7216022f4442f89d78d6e470bae067398b2e68f90729b213991e18",
+    "bytes": 39626,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

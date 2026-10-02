@@ -1,0 +1,29 @@
+{
+  "styleId": "2eab438d-32cd-40c2-b160-1e4127dac569",
+  "sourceUrl": "https://styles.refero.design/style/2eab438d-32cd-40c2-b160-1e4127dac569",
+  "fetchedAt": "2026-10-02T21:33:22.040689+00:00",
+  "extractedAt": "2026-10-02T21:33:22.062768+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Gleap — Style Reference",
+  "htmlSha256": "d5a3558eedee47f2fdd67d8c6cea1a7b29cc0d9fe5ab4c69057975f3379421c9",
+  "cache": ".cache/2eab438d-32cd-40c2-b160-1e4127dac569.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a504659328d18ce4016b0f1666533b3f9878805b5346d03d115904eef6a0e4d5",
+      "bytes": 22374,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cc24bd0c-dbcf-49e7-93a6-df65f163b754.jpg",
+    "fetchedAt": "2026-10-02T21:33:24.039239+00:00",
+    "sha256": "9e8dd9aa79482237d282aadc2eed94bc2a94ec7e4855be2d7943d6092433d088",
+    "bytes": 85746,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

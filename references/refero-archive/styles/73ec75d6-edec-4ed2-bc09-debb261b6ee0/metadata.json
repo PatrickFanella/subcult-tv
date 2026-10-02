@@ -1,0 +1,29 @@
+{
+  "styleId": "73ec75d6-edec-4ed2-bc09-debb261b6ee0",
+  "sourceUrl": "https://styles.refero.design/style/73ec75d6-edec-4ed2-bc09-debb261b6ee0",
+  "fetchedAt": "2026-10-02T21:19:07.295108+00:00",
+  "extractedAt": "2026-10-02T21:19:07.354150+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Mollie — Style Reference",
+  "htmlSha256": "96d047d601dea69c14c1f2c1ad309127675b1f3007c227717e3bb07109698d6e",
+  "cache": ".cache/73ec75d6-edec-4ed2-bc09-debb261b6ee0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ca43d768a87864989a982330e6bbc3725a0758f9b1ad2fe2f16fdcc4960386e2",
+      "bytes": 26398,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b770aba0-aa77-45bf-8a43-b78e9c4d5ba8.jpg",
+    "fetchedAt": "2026-10-02T21:26:14.024370+00:00",
+    "sha256": "f8d9acba7fdfab82d40130d83830c211ba0cecff0032a382175b1f700be37b22",
+    "bytes": 106898,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

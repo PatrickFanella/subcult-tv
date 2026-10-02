@@ -1,0 +1,29 @@
+{
+  "styleId": "b8fd5772-ac2b-4bfd-b5e5-d182261b09c5",
+  "sourceUrl": "https://styles.refero.design/style/b8fd5772-ac2b-4bfd-b5e5-d182261b09c5",
+  "fetchedAt": "2026-10-02T21:56:18.178739+00:00",
+  "extractedAt": "2026-10-02T21:56:18.199560+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "destroytoday.com — Style Reference",
+  "htmlSha256": "c7bd5e7455110ae69a1e1169f553062cdacd8ddbd8165fd37dbdef5513c868df",
+  "cache": ".cache/b8fd5772-ac2b-4bfd-b5e5-d182261b09c5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "12001bf8524e45f2e2d9c80ae6acb92f4f9f53ed615a1499ab5a09676771d333",
+      "bytes": 16601,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1fb10e60-5d2b-4baa-9c98-4765dc575bc0.jpg",
+    "fetchedAt": "2026-10-02T21:56:20.225797+00:00",
+    "sha256": "2e7432099a697fec4ab01d4ef412422ac66608b29c05d0267a273d1936c72235",
+    "bytes": 73026,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "e8a1d114-6924-4f03-acd2-996dd30f15a6",
+  "sourceUrl": "https://styles.refero.design/style/e8a1d114-6924-4f03-acd2-996dd30f15a6",
+  "fetchedAt": "2026-10-02T21:47:05.517963+00:00",
+  "extractedAt": "2026-10-02T21:47:05.561709+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Monzo — Style Reference",
+  "htmlSha256": "8ee578802be6858d9add9dc8c85d2152e5a21741b4b30ded555e689171fc0a90",
+  "cache": ".cache/e8a1d114-6924-4f03-acd2-996dd30f15a6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c1794432390376f0c79ee1c2d0af6869f598cf39b868821192b3663639be5d4d",
+      "bytes": 20825,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b905956e-d3bd-4c5e-a5e2-c51047ad9bfb.jpg",
+    "fetchedAt": "2026-10-02T21:47:07.592422+00:00",
+    "sha256": "39fc25329a6eb8029c5a6fe0acef486fc9953db3b0e887974ef11dc9349d0130",
+    "bytes": 120067,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

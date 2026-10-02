@@ -1,0 +1,29 @@
+{
+  "styleId": "19d4103a-9f4a-49f0-ad7d-af6588bab904",
+  "sourceUrl": "https://styles.refero.design/style/19d4103a-9f4a-49f0-ad7d-af6588bab904",
+  "fetchedAt": "2026-10-02T21:50:45.586239+00:00",
+  "extractedAt": "2026-10-02T21:50:45.641046+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Handsome Frank — Style Reference",
+  "htmlSha256": "db25f354aacb9b79a5e6be020e1b4ce49a92ed4f4c6d9ae8f26eb8872c1b24eb",
+  "cache": ".cache/19d4103a-9f4a-49f0-ad7d-af6588bab904.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0d1e6db3e8742d26e644ef32446bc2a95bc72a037297426ee1477c396c8ee2f8",
+      "bytes": 23797,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/439626c8-8eb5-4916-ae87-53e7bffcd5d9.jpg",
+    "fetchedAt": "2026-10-02T21:50:47.542033+00:00",
+    "sha256": "ff3187e635fc2fa2febad3bbcf79affe3c89a61d4613957814c8b10ad4d15144",
+    "bytes": 83418,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

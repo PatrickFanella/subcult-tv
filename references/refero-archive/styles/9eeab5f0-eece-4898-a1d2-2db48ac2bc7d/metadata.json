@@ -1,0 +1,29 @@
+{
+  "styleId": "9eeab5f0-eece-4898-a1d2-2db48ac2bc7d",
+  "sourceUrl": "https://styles.refero.design/style/9eeab5f0-eece-4898-a1d2-2db48ac2bc7d",
+  "fetchedAt": "2026-10-02T21:41:45.490640+00:00",
+  "extractedAt": "2026-10-02T21:41:45.518708+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Whop — Style Reference",
+  "htmlSha256": "f05621d2ef8abbaf65e98bca25a6d5c850a81250a82e0c4142ad71faa29add3b",
+  "cache": ".cache/9eeab5f0-eece-4898-a1d2-2db48ac2bc7d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ea36ae0ec8c3804d30d073a71a3c952157593c1b3a233b5200dbfc7c9cdb5dcf",
+      "bytes": 18028,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/613d30dc-a53a-4a13-995f-518062a6437b.jpg",
+    "fetchedAt": "2026-10-02T21:41:47.440574+00:00",
+    "sha256": "756f7cd9c23afbb263df2232b893f88addd3bc69d245a2f37333ac63b20556f3",
+    "bytes": 32292,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

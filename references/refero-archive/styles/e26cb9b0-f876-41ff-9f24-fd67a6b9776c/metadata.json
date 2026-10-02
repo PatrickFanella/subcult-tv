@@ -1,0 +1,29 @@
+{
+  "styleId": "e26cb9b0-f876-41ff-9f24-fd67a6b9776c",
+  "sourceUrl": "https://styles.refero.design/style/e26cb9b0-f876-41ff-9f24-fd67a6b9776c",
+  "fetchedAt": "2026-10-02T21:31:42.300254+00:00",
+  "extractedAt": "2026-10-02T21:31:42.322061+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Slack — Style Reference",
+  "htmlSha256": "5dcff7ccdaad84373e2e786bb3b6094cc61c6648599c98228740fb9bf66c5622",
+  "cache": ".cache/e26cb9b0-f876-41ff-9f24-fd67a6b9776c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6fd4ee81aec5403587c7347518a3c2edd42534f209210f428062bf4386ea8ee5",
+      "bytes": 25387,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/355dd21c-9752-40ec-b176-2988c7112962.jpg",
+    "fetchedAt": "2026-10-02T21:31:44.116163+00:00",
+    "sha256": "bbd3247a6fda4eaf34d1105bd1632f7874cb8d74283b0742f8e7621b1313d584",
+    "bytes": 106522,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

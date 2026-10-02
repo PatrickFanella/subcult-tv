@@ -1,0 +1,29 @@
+{
+  "styleId": "75fdb89f-ca64-41b3-af36-7a78bd09448e",
+  "sourceUrl": "https://styles.refero.design/style/75fdb89f-ca64-41b3-af36-7a78bd09448e",
+  "fetchedAt": "2026-10-02T21:35:46.021519+00:00",
+  "extractedAt": "2026-10-02T21:35:46.085136+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Steep — Style Reference",
+  "htmlSha256": "06b459bf218da6756ad46919606153600381b1844a39f2f6797066def80831b6",
+  "cache": ".cache/75fdb89f-ca64-41b3-af36-7a78bd09448e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "77baec6b45db51d2ec9750e6c7138ad8b993269ead09b54c0e7980840352a1fe",
+      "bytes": 22136,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0e848f7e-22b2-49ec-ab39-e2016858cf61.jpg",
+    "fetchedAt": "2026-10-02T21:35:48.034483+00:00",
+    "sha256": "38802ce06525dbbc2c8b07df32e1141ddb8f04d404675350968e54d2d6efac26",
+    "bytes": 86014,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

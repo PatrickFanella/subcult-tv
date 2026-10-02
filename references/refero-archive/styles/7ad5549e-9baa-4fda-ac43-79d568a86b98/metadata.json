@@ -1,0 +1,29 @@
+{
+  "styleId": "7ad5549e-9baa-4fda-ac43-79d568a86b98",
+  "sourceUrl": "https://styles.refero.design/style/7ad5549e-9baa-4fda-ac43-79d568a86b98",
+  "fetchedAt": "2026-10-02T21:31:54.026285+00:00",
+  "extractedAt": "2026-10-02T21:31:54.047800+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Scheduling — Style Reference",
+  "htmlSha256": "b10403877ee781fb459011cfd13573010ad33b63ac1cc46657fb39412b9eb1e8",
+  "cache": ".cache/7ad5549e-9baa-4fda-ac43-79d568a86b98.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "51573723c642fc6aeeec7126e8d259847b5504650a7147532fd8e8229f59d25a",
+      "bytes": 22061,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a9a097ac-8e37-484c-bd03-cacecc43d8d5.jpg",
+    "fetchedAt": "2026-10-02T21:31:56.103276+00:00",
+    "sha256": "8a182ba3d690a74ac08d3239e53c1bc29a7847e02fe11d283d7c85063cf1b86c",
+    "bytes": 136200,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

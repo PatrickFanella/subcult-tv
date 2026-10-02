@@ -1,0 +1,29 @@
+{
+  "styleId": "7de578bc-9fbd-4664-a731-6223515bb601",
+  "sourceUrl": "https://styles.refero.design/style/7de578bc-9fbd-4664-a731-6223515bb601",
+  "fetchedAt": "2026-10-02T21:52:06.171649+00:00",
+  "extractedAt": "2026-10-02T21:52:06.224890+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "HNST Studio — Style Reference",
+  "htmlSha256": "483199583f1bb169ec14d8399b4ff6f478621fec073e9163d7caa7bbe1ca2a25",
+  "cache": ".cache/7de578bc-9fbd-4664-a731-6223515bb601.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "82915802538c2909d0fa7d28a48f16233e7567a8732694ee0965f9039c988693",
+      "bytes": 21152,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/be062fbf-98a8-4d75-8d4d-a047f5f7e5d8.jpg",
+    "fetchedAt": "2026-10-02T21:52:08.212791+00:00",
+    "sha256": "7951cb65a6da9fbf810a6039f3e2e9561701a640f0c40226a91d293c52026fe4",
+    "bytes": 101041,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

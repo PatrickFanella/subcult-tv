@@ -1,0 +1,29 @@
+{
+  "styleId": "736830b5-90b1-47b0-99dd-d79454a0d22a",
+  "sourceUrl": "https://styles.refero.design/style/736830b5-90b1-47b0-99dd-d79454a0d22a",
+  "fetchedAt": "2026-10-02T21:56:34.235532+00:00",
+  "extractedAt": "2026-10-02T21:56:34.259743+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "7shifts — Style Reference",
+  "htmlSha256": "1aab092140d746910e03b24ed0d041f9732495c7c1a362f9d612b48af55e4804",
+  "cache": ".cache/736830b5-90b1-47b0-99dd-d79454a0d22a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1caa6e34dbf01b6ffe16ca19e1fb027e94de4a31b6ad967bcb29f4df45bad1d0",
+      "bytes": 25469,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bb9bb5d9-b00b-471d-8022-ac31487c4d13.jpg",
+    "fetchedAt": "2026-10-02T21:56:36.261984+00:00",
+    "sha256": "95019e3326facb49b7570ea14758ee5baaaf201ccb7da44fb7601d674a07d11f",
+    "bytes": 101393,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

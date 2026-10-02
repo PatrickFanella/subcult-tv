@@ -1,0 +1,29 @@
+{
+  "styleId": "75c06591-34d2-493a-bd49-70551b5e4a53",
+  "sourceUrl": "https://styles.refero.design/style/75c06591-34d2-493a-bd49-70551b5e4a53",
+  "fetchedAt": "2026-10-02T21:30:58.049448+00:00",
+  "extractedAt": "2026-10-02T21:30:58.102127+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Perk — Style Reference",
+  "htmlSha256": "fa392a518fdf8b79f9d28df4ee37c5583327d3d2a4ed4d384c37850b6986452f",
+  "cache": ".cache/75c06591-34d2-493a-bd49-70551b5e4a53.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e2d1829d13eed3c80c83179566519ef05e8b147566e1b2fc66f82245dc91f638",
+      "bytes": 18288,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9607b0aa-66e5-434b-8a47-08d83f4bacfa.jpg",
+    "fetchedAt": "2026-10-02T21:31:00.025901+00:00",
+    "sha256": "22f97c983307c1c01b436de05fcf70341bbace45f4eea374b17e15ac4c29d47e",
+    "bytes": 114100,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

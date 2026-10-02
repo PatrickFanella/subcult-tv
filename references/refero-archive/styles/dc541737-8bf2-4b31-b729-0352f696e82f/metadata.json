@@ -1,0 +1,29 @@
+{
+  "styleId": "dc541737-8bf2-4b31-b729-0352f696e82f",
+  "sourceUrl": "https://styles.refero.design/style/dc541737-8bf2-4b31-b729-0352f696e82f",
+  "fetchedAt": "2026-10-02T21:30:02.002655+00:00",
+  "extractedAt": "2026-10-02T21:30:02.051807+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "OpenAI — Style Reference",
+  "htmlSha256": "92d465a9b222dda1e87771985a0d63ca70159846e7c3bc5761529ea856b5b7b1",
+  "cache": ".cache/dc541737-8bf2-4b31-b729-0352f696e82f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "214fa0c8ad270e7f980dfcf7e3d6e436c4bcf51ca88e26dbb5712fbdbbaaeb01",
+      "bytes": 18992,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/909f4957-99d3-41e1-ab83-5ffca21f075b.jpg",
+    "fetchedAt": "2026-10-02T21:30:04.172017+00:00",
+    "sha256": "6093aee26dc2c6380e026e1012526f87ddb81e1242f888cfeaaead6abc741ab6",
+    "bytes": 58929,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "bd62b51f-e1be-4e4f-b3d9-e9b91f817625",
+  "sourceUrl": "https://styles.refero.design/style/bd62b51f-e1be-4e4f-b3d9-e9b91f817625",
+  "fetchedAt": "2026-10-02T21:42:33.647129+00:00",
+  "extractedAt": "2026-10-02T21:42:33.699159+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Little Troop — Style Reference",
+  "htmlSha256": "05a75a3ed6a79fbae6569d7b9f716403d4fedf273d4db9a2aaec87f2f77ff6f9",
+  "cache": ".cache/bd62b51f-e1be-4e4f-b3d9-e9b91f817625.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b7a8462401432afe8d61c5fc980f4ea91d54f355d5956518fad77c38e24bc51e",
+      "bytes": 15666,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fc54aec5-2977-4cdd-913c-c17e28b1bbff.jpg",
+    "fetchedAt": "2026-10-02T21:42:35.459745+00:00",
+    "sha256": "b82dbc80b25723ca0a50f68cc30df7231577aaed90d72b0af74438a8d5bde32d",
+    "bytes": 64422,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "38c8a8c9-4d2e-462a-bff0-80c9d9619ef2",
+  "sourceUrl": "https://styles.refero.design/style/38c8a8c9-4d2e-462a-bff0-80c9d9619ef2",
+  "fetchedAt": "2026-10-02T21:40:30.522078+00:00",
+  "extractedAt": "2026-10-02T21:40:30.550044+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Rains INT — Style Reference",
+  "htmlSha256": "80e4ffca1802fecf89066b12e6b8792fc26cb0206e19e7a4db339af39f637285",
+  "cache": ".cache/38c8a8c9-4d2e-462a-bff0-80c9d9619ef2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8275ea7871bfaf682eb7ca0947f26e121a0c2b9a59dd47c703a0637fe1fa9795",
+      "bytes": 17908,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f0b62a9e-1558-4c81-996e-835815c16acd.jpg",
+    "fetchedAt": "2026-10-02T21:40:37.243707+00:00",
+    "sha256": "93fbd4b9e829c1bba7335056772b94ce316b75a3a0b2fc49247938b6c644bec5",
+    "bytes": 90364,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

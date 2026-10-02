@@ -1,0 +1,29 @@
+{
+  "styleId": "d5017f8f-fa0f-4241-9319-527b0751f66f",
+  "sourceUrl": "https://styles.refero.design/style/d5017f8f-fa0f-4241-9319-527b0751f66f",
+  "fetchedAt": "2026-10-02T21:29:38.069763+00:00",
+  "extractedAt": "2026-10-02T21:29:38.120069+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bécane — Style Reference",
+  "htmlSha256": "a5b5646dc532de9d396742647018a9f47b9c517c0eb4ce55168978f9bcd1eea4",
+  "cache": ".cache/d5017f8f-fa0f-4241-9319-527b0751f66f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4e49e115a7c53da89b71f7f18ecaaa219d412de0a72712f591c2180fdee70bf4",
+      "bytes": 13650,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/02081c7f-f99f-44c1-9415-e39c52dae51a.jpg",
+    "fetchedAt": "2026-10-02T21:29:39.990001+00:00",
+    "sha256": "6476292aa5972a084b2ac841bfed6c736bbd6e188371f26acfd1ae38209e5941",
+    "bytes": 44695,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

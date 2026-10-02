@@ -1,0 +1,29 @@
+{
+  "styleId": "2b9e90ad-51d9-4f29-8f7e-a343dc741eab",
+  "sourceUrl": "https://styles.refero.design/style/2b9e90ad-51d9-4f29-8f7e-a343dc741eab",
+  "fetchedAt": "2026-10-02T21:49:13.532597+00:00",
+  "extractedAt": "2026-10-02T21:49:13.584859+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Laura Monin — Style Reference",
+  "htmlSha256": "cf3ecb7603678eea9ce27608deb8692d1514b6e43fc97b1b7d419df1b7f2f010",
+  "cache": ".cache/2b9e90ad-51d9-4f29-8f7e-a343dc741eab.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a21baad617044e7140e2e3053f0f198b3f43986d26fcb043dd73866a74411afa",
+      "bytes": 15974,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/74d1ae97-27a7-4666-bfce-3ad3dbd11b2d.jpg",
+    "fetchedAt": "2026-10-02T21:49:15.533814+00:00",
+    "sha256": "b6d3102725164fd832f43fae4691c8ab23ced265f5248ec75f25f2d612f50a86",
+    "bytes": 150590,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "rob-fwa",
+  "name": "Rob FWA",
+  "requestedUrl": "https://www.robfwa.com/",
+  "screenshotUnavailable": "T3 snapshot failed after browser client changed; initial screenshot retained",
+  "error": "Preview automation evaluate failed on client preview-103871ddea445975277a082ff6188edc."
+}

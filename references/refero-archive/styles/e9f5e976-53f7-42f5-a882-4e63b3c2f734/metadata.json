@@ -1,0 +1,29 @@
+{
+  "styleId": "e9f5e976-53f7-42f5-a882-4e63b3c2f734",
+  "sourceUrl": "https://styles.refero.design/style/e9f5e976-53f7-42f5-a882-4e63b3c2f734",
+  "fetchedAt": "2026-10-02T21:36:10.659866+00:00",
+  "extractedAt": "2026-10-02T21:36:10.703884+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ease Health — Style Reference",
+  "htmlSha256": "9a39dc2d83fc987b433a164065d5c784527560f5a50cc744ff7c5a730c6bef2f",
+  "cache": ".cache/e9f5e976-53f7-42f5-a882-4e63b3c2f734.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d260acd079545470f906cc585a0a2af10534e72550b84e2278a70fe505620567",
+      "bytes": 18039,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b5f2b721-6392-44bf-98c2-b7de9cecd6c8.jpg",
+    "fetchedAt": "2026-10-02T21:36:12.192206+00:00",
+    "sha256": "ae561d395eb5d7701e9d18593fb3f9d9da923457f320864364a6caf2c66f3f9f",
+    "bytes": 86814,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

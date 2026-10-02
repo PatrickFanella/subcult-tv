@@ -1,0 +1,29 @@
+{
+  "styleId": "c0717d1a-b446-4166-a445-6497fe287fea",
+  "sourceUrl": "https://styles.refero.design/style/c0717d1a-b446-4166-a445-6497fe287fea",
+  "fetchedAt": "2026-10-02T21:26:58.051361+00:00",
+  "extractedAt": "2026-10-02T21:26:58.101805+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bevel — Style Reference",
+  "htmlSha256": "915df5b6ebabb13874d550235e358e45c92a1e60c1f8834970b621a7f7019137",
+  "cache": ".cache/c0717d1a-b446-4166-a445-6497fe287fea.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "36b5c21a083eca96115b8d68704466a81434662ab7e2d22cdee5cfd915236e1a",
+      "bytes": 19356,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/79911cac-ed44-411d-b72b-569f9ebefa88.jpg",
+    "fetchedAt": "2026-10-02T21:27:00.005248+00:00",
+    "sha256": "b2c334bacf9fb9cbdc5984f29c87534e6df305f77918404ad14376a209ae9e48",
+    "bytes": 94703,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

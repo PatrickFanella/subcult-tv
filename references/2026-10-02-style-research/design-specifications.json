@@ -1,0 +1,586 @@
+{
+  "desktop-fm": {
+    "layout": "The reference uses an almost empty field with one central disc and a small action window near the bottom. The object establishes identity; the window provides the task. Treat them as independently positioned layers rather than one flattened hero image.",
+    "components": [
+      [
+        "Scene",
+        "Disc, laser paths and background form one media layer. Keep essential copy outside the effect."
+      ],
+      [
+        "Action window",
+        "A compact title, optional utility controls and one primary action. Its bounds should remain predictable while the scene moves."
+      ],
+      [
+        "Primary action",
+        "A wide dark control within the window; use a distinct disabled/loading treatment for submission."
+      ]
+    ],
+    "color": "Neutral gray is the visual ground; reflected silver and neon belong to the scene. Reserve high contrast for the action window and its control.",
+    "type": "Use a compact, heavy sans role for identity and actions, with a smaller supporting role. Confirm actual font loading before promoting a family.",
+    "media": "Keep a static disc poster and a lighter mobile scene. Scene materials should be a separate art-direction specification from ordinary UI colors.",
+    "states": "Verify scene loading/failure, keyboard access to the window, waiting-list feedback and a reduced-motion still state."
+  },
+  "gt-planar": {
+    "layout": "An instrument-like strip spans the top of a full-screen graphic field. Navigation, warnings and specimen controls must remain legible while the background changes.",
+    "components": [
+      [
+        "Instrument strip",
+        "Rectangular grouped labels with consistent outline thickness and alignment."
+      ],
+      [
+        "Type specimen",
+        "The face being demonstrated should have explicit size, weight and text-input states."
+      ],
+      [
+        "HUD scene",
+        "Warp lines and instrument details form the media layer; they must not obscure navigation."
+      ]
+    ],
+    "color": "Use the black/white scene as the main field. Separate warning, action and specimen-highlight colors rather than calling all bright hues an accent.",
+    "type": "Typography is both content and interface. Record the specimen face separately from small navigation and status text.",
+    "media": "The reference supports a single warp-field state. Document rendering cost, load poster and contrast-safe control backgrounds before adapting it.",
+    "states": "Verify text entry, specimen settings, focus outlines, scene pause and reduced-motion behavior."
+  },
+  "hyper-tria": {
+    "layout": "The supplied state is a white portfolio spread: navigation above an image/copy pair, with an identity badge near the lower corner. Refero describes an additional chrome hero that is not pictured here.",
+    "components": [
+      [
+        "Project spread",
+        "Pair one dominant image with a controlled copy measure; maintain aligned edges."
+      ],
+      [
+        "Identity badge",
+        "Treat the circular mark as supplied art, with clear space and a static fallback if animated."
+      ],
+      [
+        "Portfolio navigation",
+        "Keep current project and agency-level destinations distinguishable."
+      ]
+    ],
+    "color": "The pictured white/black shell is distinct from the colored project rendering. Additional hero colors require a matching capture.",
+    "type": "Use a navigation role, an editorial project-description role and a supplied identity role. The pictured italic copy should not automatically become the universal body style.",
+    "media": "Preserve project image ratios and captions. Do not redraw the mark or promote image colors to brand tokens.",
+    "states": "Verify project selection, language navigation, long-copy wrapping and the unpictured hero transition."
+  },
+  "evoke": {
+    "layout": "A repeated three-column work strip precedes a very large identity wordmark. The work tiles carry varied visual languages while the page frame remains simple.",
+    "components": [
+      [
+        "Work tile",
+        "A consistent slot for a project image, destination and accessible name; the project art may vary."
+      ],
+      [
+        "Work strip",
+        "Define column count, gutter and overflow behavior rather than hard-coding one screenshot width."
+      ],
+      [
+        "Wordmark band",
+        "Identity artwork has its own scale and crop rules."
+      ]
+    ],
+    "color": "Separate site colors from project-specific photography, illustration and licensed character art. A colorful tile is not evidence of a global interface role.",
+    "type": "Use a stable small navigation/caption role around a dramatically larger identity role.",
+    "media": "Image and illustration assets need attribution, aspect-ratio rules and fallback handling; a reference screenshot grants no reuse rights.",
+    "states": "Verify work-tile focus/hover, captions, project detail navigation and how the wordmark scales on narrow screens."
+  },
+  "superhi": {
+    "layout": "The centered message has a protected reading area surrounded by large asymmetrically cropped shapes. Navigation and paired actions use calmer, repeatable surfaces.",
+    "components": [
+      [
+        "Shape field",
+        "Choose a small vocabulary of circles, polygons and starbursts with placement and crop rules."
+      ],
+      [
+        "Hero statement",
+        "Set a controlled line length with a clear supporting paragraph."
+      ],
+      [
+        "Action pair",
+        "Primary and secondary actions use distinct fills and a shared capsule grammar."
+      ],
+      [
+        "Course/navigation surface",
+        "Keep transactional controls predictable even when the decoration changes."
+      ]
+    ],
+    "color": "Separate decorative shape colors from action and text roles. The reference's bright geometric layer should not compete with the CTA.",
+    "type": "Large sans display text carries the statement; smaller supporting text and navigation provide continuity. The sampled live heading family is evidence for that viewport only.",
+    "media": "Flat shapes can be vector assets with simple crop rules. Record any shape motion independently from hover and navigation transitions.",
+    "states": "Verify the two actions, catalog navigation, offer-strip dismissal, shape reflow and reduced-motion behavior."
+  },
+  "composer": {
+    "layout": "A faint structural grid supports a large headline and colored rectangular modules. Copy and the action sit on a stable left edge while the modules build a separate visual rhythm.",
+    "components": [
+      [
+        "Grid field",
+        "Define column and row alignment; the visual grid should not imply every module is interactive."
+      ],
+      [
+        "Color module",
+        "A bounded fill may support emphasis, pattern or media, with a declared purpose."
+      ],
+      [
+        "Display block",
+        "Large text needs line-break and overlap rules."
+      ],
+      [
+        "Action group",
+        "Separate product entry from editorial navigation."
+      ]
+    ],
+    "color": "The reference uses several saturated blocks over a neutral field. Define which blocks communicate information and which are decorative.",
+    "type": "Use an oversized sans display role and a quieter UI role. Avoid shrinking the entire desktop display composition to fit mobile.",
+    "media": "A modular pattern should have a simple static form. Product imagery and charts require their own semantic labels and accessible explanations.",
+    "states": "Verify display wrapping, module overlap, primary action and whether any pattern animation conveys information."
+  },
+  "programa": {
+    "layout": "The supplied screenshot has a centered serif introduction, floating material/object cards and a large product frame below. That composition differs from the source's more austere Swiss description.",
+    "components": [
+      [
+        "Introduction",
+        "Separate display serif, supporting copy and paired actions."
+      ],
+      [
+        "Object card",
+        "Small image-based accents should have consistent bounds and avoid obscuring text."
+      ],
+      [
+        "Product frame",
+        "An application screenshot needs a caption or explanation when it demonstrates workflow."
+      ],
+      [
+        "Trust strip",
+        "Keep supporting logos/review marks subordinate."
+      ]
+    ],
+    "color": "Use calm surfaces and reserve highlights for meaningful emphasis. Do not infer a full palette from product screenshots or material cards.",
+    "type": "The pictured serif display is a distinct role from navigation and product UI. A pure Swiss sans hierarchy is not established by this image.",
+    "media": "Product frames may have different rules from decorative cards. Keep both separate from real interactive application controls.",
+    "states": "Verify object movement, product-demo transitions, CTA focus and narrow-screen ordering before selecting this direction."
+  },
+  "spacelab": {
+    "layout": "A narrow left index and a broad right story column create the main asymmetric grid. The heading and photograph share a strong content edge.",
+    "components": [
+      [
+        "Index rail",
+        "Category links need an active state, consistent alignment and a clear mobile replacement."
+      ],
+      [
+        "Story block",
+        "Heading, image and caption form one editorial unit."
+      ],
+      [
+        "Photo region",
+        "Use large architectural imagery without decorative card chrome."
+      ],
+      [
+        "Utility navigation",
+        "Keep contact/about distinct from content filters."
+      ]
+    ],
+    "color": "White space and dark text form the main system. Project photographs supply most variation; a sparse accent should have a declared action role.",
+    "type": "A restrained sans hierarchy supports display, paragraph and index text. Current samples identify HelveticaNeue; no global scale is inferred.",
+    "media": "Use consistent architectural image ratios and meaningful descriptions; preserve the relationship between image and story context.",
+    "states": "Verify selected category, index focus, long heading wraps, story pagination and mobile rail collapse."
+  },
+  "fora": {
+    "layout": "A strict mosaic divides identity, positioning, team, news and projects into independently useful cells. Color can establish a cell's role without extra card framing.",
+    "components": [
+      [
+        "Mosaic cell",
+        "Declare permitted content types and a minimum useful height for each."
+      ],
+      [
+        "Identity cell",
+        "The large serif mark is supplied identity art with its own placement rules."
+      ],
+      [
+        "News cell",
+        "Allow variable copy length and a visible destination."
+      ],
+      [
+        "Image cell",
+        "Pair a full-bleed photograph with a small section action or caption."
+      ]
+    ],
+    "color": "Large terracotta and lilac panels work as section surfaces. Text and action contrast must be checked per surface rather than inherited indiscriminately.",
+    "type": "Keep the serif identity distinct from sans content and small navigation. This hybrid can use a Swiss grid without requiring exclusively sans identity.",
+    "media": "Images should fit declared cell ratios and preserve the intended crop at each breakpoint.",
+    "states": "Verify mosaic reordering, long news copy, focus states inside colored cells and image loading/failure."
+  },
+  "frankys": {
+    "layout": "The older reference splits a large product viewer from a tight product grid and anchors purchase information below. Checkerboard imagery and pixel-like texture provide the historical arcade direction.",
+    "components": [
+      [
+        "Product viewer",
+        "Image/3D/AR states belong to one media component with explicit controls."
+      ],
+      [
+        "Product card",
+        "Keep price, availability and add-to-cart treatment consistent."
+      ],
+      [
+        "Purchase band",
+        "Primary action and selected product information stay adjacent."
+      ],
+      [
+        "Announcement strip",
+        "The marquee should have a readable, pausable/static form."
+      ]
+    ],
+    "color": "Separate cream/dark UI surfaces and buy/availability roles from checkerboard texture and colored products.",
+    "type": "The reference's pixel-like lettering and current frankysDailySlab samples represent different evidence states. Choose the dated direction before mapping production font roles.",
+    "media": "Provide a conventional image fallback for 3D/AR and keep product color choices usable without the immersive viewer.",
+    "states": "Verify selected product, out-of-stock, cart feedback, 3D/AR entry, texture legibility and reduced-motion behavior."
+  },
+  "olipop": {
+    "layout": "Campaign artwork occupies one half of a promotion while headline, copy and action occupy the other. Calmer product-card sections follow the expressive campaign.",
+    "components": [
+      [
+        "Campaign split",
+        "Define image/copy proportions and a sensible stacked order."
+      ],
+      [
+        "Product card",
+        "Keep flavor, format, price and shopping action independent from promotional imagery."
+      ],
+      [
+        "Promotional badge",
+        "A starburst or label has crop and text-length limits."
+      ],
+      [
+        "Action",
+        "Shopping controls retain a stable grammar across campaigns."
+      ]
+    ],
+    "color": "Distinguish stable brand roles from seasonal hero and packaging colors. The vivid berry promotion should not redefine every interface surface.",
+    "type": "Expressive rounded serif display type provides nostalgia, with a simpler supporting and commerce hierarchy.",
+    "media": "Packaging and campaign imagery need text alternatives; preserve product information outside decorative artwork.",
+    "states": "Verify campaign reflow, carousel navigation, flavor selection, cart feedback and text contrast over promotional colors."
+  },
+  "little-amps": {
+    "layout": "A broad documentary media scene establishes the opening, followed by a ruled navigation strip. Warm framing makes the media and interface feel related.",
+    "components": [
+      [
+        "Media opener",
+        "One image/video with a reliable poster and readable identity overlay."
+      ],
+      [
+        "Ruled navigation",
+        "Group commerce, informational destinations and utilities without relying only on dividers."
+      ],
+      [
+        "Product listing",
+        "Keep prices and options readable in the label typography."
+      ],
+      [
+        "Community/editorial block",
+        "Dates and categories can use the same metadata grammar."
+      ]
+    ],
+    "color": "Warm framing and dark supporting text are separate from photographed wood, records and coffee. Image colors are not the whole UI palette.",
+    "type": "Use expressive serif display alongside compact monospace labels. Long copy needs a deliberate reading role.",
+    "media": "Documentary images should retain captions/context; moving media needs a still fallback and pause control where applicable.",
+    "states": "Verify overlay contrast, navigation focus, shop/cart states and narrow-screen navigation order."
+  },
+  "mike-matas": {
+    "layout": "A small identity block and compact link list sit above large work images with generous empty space. The work, rather than ornamental interface elements, creates visual variation.",
+    "components": [
+      [
+        "Identity block",
+        "Name/date or introduction needs stable placement and text wrapping."
+      ],
+      [
+        "Link list",
+        "Quiet links must still expose focus and hover states."
+      ],
+      [
+        "Work image",
+        "Device mockups and screenshots form the main content unit."
+      ],
+      [
+        "Project context",
+        "Add enough caption/destination information to explain each image."
+      ]
+    ],
+    "color": "Keep the UI palette restrained and separate it from colors shown inside project screenshots.",
+    "type": "A small, consistent hierarchy can carry identity, links and project descriptions; very thin text should be checked at real display sizes.",
+    "media": "Large work images need loading, crop and aspect-ratio rules. Avoid flattening all project descriptions into image pixels.",
+    "states": "Verify project destinations, keyboard order, image failure, captions and the spacing rhythm at narrow widths."
+  },
+  "everlane": {
+    "layout": "Compact navigation and a centered identity frame full-width fashion photography. Promotion appears in a separate horizontal band, keeping its urgency distinct from the lookbook.",
+    "components": [
+      [
+        "Catalog navigation",
+        "Separate category, search and account/cart utilities."
+      ],
+      [
+        "Editorial hero",
+        "Set explicit safe areas for overlay text."
+      ],
+      [
+        "Promotion band",
+        "One offer with clear destinations and a bounded height."
+      ],
+      [
+        "Product tile",
+        "Product imagery, names and price must remain usable without hover."
+      ]
+    ],
+    "color": "A restrained shell allows campaign imagery to dominate. Promotional hues should have a distinct temporary role.",
+    "type": "Track short labels deliberately while keeping longer supporting text readable. Identity and product labels have different responsibilities.",
+    "media": "Define crop/focal-point rules for people and apparel; preserve product details in text rather than relying on lifestyle images.",
+    "states": "Verify search, category selection, product-card alternatives, cart feedback and contrast across changing hero photographs."
+  },
+  "teenage-engineering": {
+    "layout": "The supplied state is an immersive product photograph rather than a catalog grid. The product and a conspicuous triangular consent panel are separate components with different purposes.",
+    "components": [
+      [
+        "Product scene",
+        "Give hardware imagery space without hiding the route to specifications or purchase."
+      ],
+      [
+        "Catalog/specification unit",
+        "Technical information needs a repeatable hierarchy independent from the hero."
+      ],
+      [
+        "Consent panel",
+        "A distinctive shape still requires clear settings and accept controls."
+      ],
+      [
+        "Product navigation",
+        "Compact controls should remain discoverable on media-heavy pages."
+      ]
+    ],
+    "color": "Separate product material/color, neutral interface roles and warning-like consent art. A yellow consent panel does not establish a universal brand accent.",
+    "type": "Record the custom requested families as observations; do not adopt ultra-thin text without testing actual size and contrast.",
+    "media": "A product scene needs a poster/fallback and a clear path to technical content. Photograph colors are art direction rather than CSS tokens.",
+    "states": "Verify consent without changing it during research, product navigation, media loading, specifications and mobile discoverability."
+  },
+  "slush": {
+    "layout": "A large display word acts as a foreground shape over a textured blue tube. Stickers sit above both; a conventional nav and paired actions preserve the task hierarchy.",
+    "components": [
+      [
+        "Display layer",
+        "Specify scale, line breaks and overlap regions."
+      ],
+      [
+        "Ribbon layer",
+        "A signature textured object is media, not a button surface."
+      ],
+      [
+        "Sticker layer",
+        "Use bounded illustration sizes and avoid covering actions."
+      ],
+      [
+        "Navigation/action layer",
+        "Pill controls retain conventional labels and consistent focus feedback."
+      ]
+    ],
+    "color": "Keep saturated illustration colors distinct from semantic actions and status. High-contrast outlines connect stickers and controls visually.",
+    "type": "The massive condensed display role should not spread into body copy or controls. Supporting sans text needs a clear scale contrast.",
+    "media": "Raster/3D ribbon artwork and vector stickers need independent responsive rules and fallback assets.",
+    "states": "Verify display overlap, sticker placement, nav overflow, app-entry actions and reduced-motion/resting states."
+  },
+  "steep": {
+    "layout": "A centered editorial statement is surrounded by detached charts, metric cards and a composer field. The fragments explain a product without requiring a full dashboard frame.",
+    "components": [
+      [
+        "Editorial statement",
+        "Serif display and selective italic emphasis need controlled wrapping."
+      ],
+      [
+        "Metric artifact",
+        "Value, label, context and chart should remain a coherent unit."
+      ],
+      [
+        "Composer artifact",
+        "Distinguish demonstration art from a real input."
+      ],
+      [
+        "Action pair",
+        "Provide clear product-entry and demo-request priorities."
+      ]
+    ],
+    "color": "A warm/glowing media ground and chart accents are separate from basic text/action surfaces. The screenshot's shadows need measurement before creating global elevation tokens.",
+    "type": "Pair an editorial serif display with practical sans labels and metrics. Preserve numeric readability and meaning.",
+    "media": "Chart fragments should have explanations and sensible static arrangements when animation is disabled.",
+    "states": "Verify demo versus interactive input, chart meaning, focus states, fragment reflow and actual shadow/glow values."
+  },
+  "wise": {
+    "layout": "Heavy display text, a concise explanation and a small action group lead into a larger globe/media metaphor. Navigation occupies a compact band above.",
+    "components": [
+      [
+        "Display statement",
+        "Specify line breaks and minimum readable sizes for the heavy face."
+      ],
+      [
+        "Action group",
+        "A filled primary and quieter alternative need distinct roles."
+      ],
+      [
+        "Region/navigation control",
+        "Language/location changes should be explicit."
+      ],
+      [
+        "Media metaphor",
+        "The globe illustrates the message without becoming essential control chrome."
+      ]
+    ],
+    "color": "The lime/dark pairing can provide identity through a small number of roles. Separate decorative globe colors from account/action and feedback colors.",
+    "type": "Use the heavy display face sparingly; supporting copy and functional controls need a less emphatic hierarchy.",
+    "media": "A globe scene should have a still fallback. Its implied service coverage is content, not a design-system claim.",
+    "states": "Verify region differences, light/dark surface inversion, action focus and media pause. Account/financial behavior is outside this study."
+  },
+  "cursor": {
+    "layout": "A restrained introduction precedes a large product-window image over a painterly field. The marketing shell and the depicted application have distinct component vocabularies.",
+    "components": [
+      [
+        "Introduction",
+        "Keep one primary message and bounded supporting copy."
+      ],
+      [
+        "Action group",
+        "Download and demo/contact roles need a clear hierarchy."
+      ],
+      [
+        "Product window",
+        "Use a repeatable frame and caption for the working application."
+      ],
+      [
+        "Background art",
+        "Painterly scenery supports the product image rather than UI controls."
+      ]
+    ],
+    "color": "Warm neutral marketing surfaces should not be confused with syntax colors or application statuses inside screenshots.",
+    "type": "Map marketing headline/body/labels separately from the application's code and editorial content; confirm actual font roles from source.",
+    "media": "Window frames may overlap, but their key content should remain readable. Provide a simpler product still on narrow screens.",
+    "states": "Verify platform download labels, product-demo motion, foreground/background contrast and which radius rules belong to each surface."
+  },
+  "notion": {
+    "layout": "A product message and actions occupy the center; illustrated faces and doodled objects add personality around the edges. A large product example follows.",
+    "components": [
+      [
+        "Illustration motif",
+        "Define line, fill, scale and safe placement rules."
+      ],
+      [
+        "Verb highlight",
+        "A colored emphasis capsule should be separate from an actionable button."
+      ],
+      [
+        "Action pair",
+        "Signup and demo actions retain ordinary controls."
+      ],
+      [
+        "Product example",
+        "Screenshot content needs explanation independent from decorative figures."
+      ]
+    ],
+    "color": "Use selective illustration and highlight fills rather than giving every control a hand-drawn treatment. Keep action roles consistent.",
+    "type": "Use a clear sans hierarchy for product copy and controls; illustration lettering belongs to artwork rather than the general reading system.",
+    "media": "Illustration and product screenshots have separate ownership and accessibility needs. Drawn styling does not establish how an asset was produced.",
+    "states": "Verify rotating emphasis, illustration movement, signup/demo focus, screenshot scaling and reduced-motion behavior."
+  },
+  "neobrutalism-components": {
+    "layout": "A practical component-library shell combines navigation/search with a large introductory statement and example controls. The repeated border/shadow recipe is more important than a one-off hero scene.",
+    "components": [
+      [
+        "Button",
+        "A bordered, hard-shadowed surface with explicit hover, pressed, disabled and focus states."
+      ],
+      [
+        "Search",
+        "A compact command/search trigger that exposes a predictable dialog or input."
+      ],
+      [
+        "Card",
+        "Apply the same edge grammar without making every card interactive."
+      ],
+      [
+        "Chart",
+        "Preserve chart labels and semantic colors while using the surrounding border language."
+      ]
+    ],
+    "color": "Bright fills and dark outlines should have separate semantic roles. State colors must remain understandable beyond the aesthetic.",
+    "type": "Current samples request DM Sans. Use a clear display/body/label hierarchy instead of assuming thick outlines require novelty type.",
+    "media": "Geometric star/shape assets can support identity, but should not replace labels or status indicators.",
+    "states": "Verify pressed shadow displacement, focus rings, disabled appearance, dark-mode contrast and chart keyboard/reading alternatives."
+  },
+  "gumroad": {
+    "layout": "The current sample establishes large Favorit headings and a commercial navigation structure. It does not establish the old pink/yellow hard-shadow system often shown in historical examples.",
+    "components": [
+      [
+        "Marketing statement",
+        "Large display copy with one primary selling action."
+      ],
+      [
+        "Marketplace search",
+        "A real search control needs results, empty and error states."
+      ],
+      [
+        "Creator/product unit",
+        "Keep creator identity, product information and action separate."
+      ],
+      [
+        "Commercial navigation",
+        "Pricing, feature discovery and account entry need clear roles."
+      ]
+    ],
+    "color": "Do not import historical pink/yellow values as current brand roles without a matching source state.",
+    "type": "ABC Favorit is observed in current heading samples. Other roles remain unconfirmed.",
+    "media": "Creator illustrations and product art should be separated from permanent interface assets.",
+    "states": "Verify current control borders/shadows, search feedback and cart/account entry before classifying the current site as Neo-Brutalism."
+  },
+  "excalidraw": {
+    "layout": "The working canvas is the main content surface, with tool controls and property settings around it. The sketch aesthetic belongs mainly to the drawing output.",
+    "components": [
+      [
+        "Canvas",
+        "Selection, drawing and viewport movement are distinct interaction modes."
+      ],
+      [
+        "Tool selector",
+        "Active tool and shortcuts must remain understandable without drawn decoration."
+      ],
+      [
+        "Property controls",
+        "Stroke, fill, text and geometry settings need consistent feedback."
+      ],
+      [
+        "Document actions",
+        "Save/export/share actions require clear scope and destination."
+      ]
+    ],
+    "color": "Separate drawing colors from tool selection, focus and error roles. A user's canvas palette is not the application brand palette.",
+    "type": "Keep handwriting/sketch text options distinct from ordinary interface labels. The sampled default Times heading is not treated as a brand role.",
+    "media": "Drawing primitives, rendered output and UI controls are separate artifacts; preserve editability and meaningful export choices.",
+    "states": "Verify selection, undo, text entry, zoom, export and collaboration in a dedicated interaction pass. No canvas content was changed in this review."
+  },
+  "roughjs": {
+    "layout": "A documentation page introduces the library, then demonstrates geometric primitives and fill styles. Its conventional website shell differs from the generated sketch output.",
+    "components": [
+      [
+        "Sketch primitive",
+        "Line, polygon, ellipse and path output need stable parameters."
+      ],
+      [
+        "Fill pattern",
+        "Hatching, solid and other patterns should have independent spacing/weight rules."
+      ],
+      [
+        "Example block",
+        "Pair a rendered result with concise explanatory code."
+      ],
+      [
+        "Documentation navigation",
+        "Keep API destinations distinct from sponsorship/project links."
+      ]
+    ],
+    "color": "Drawing colors are input parameters, not a site-wide semantic palette. Specify stroke and fill independently.",
+    "type": "The documentation's sans typography is separate from any sketch-like lettering an application adds.",
+    "media": "Treat roughness, bowing, hatch gap and stroke width as drawing-system parameters. Canvas and SVG output have different accessibility/editing implications.",
+    "states": "Verify deterministic rendering where required, small-scale legibility, pattern density and the consuming application's interaction states."
+  }
+}

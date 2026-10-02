@@ -1,0 +1,29 @@
+{
+  "styleId": "fb6ac216-c11a-47c3-88e8-0423541da69c",
+  "sourceUrl": "https://styles.refero.design/style/fb6ac216-c11a-47c3-88e8-0423541da69c",
+  "fetchedAt": "2026-10-02T22:01:02.191359+00:00",
+  "extractedAt": "2026-10-02T22:01:02.223722+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Monte — Style Reference",
+  "htmlSha256": "b1d7f7f89a3d81216fb8e29bd0231d7b34fbf46c2edd90dd4c41804c2242d27a",
+  "cache": ".cache/fb6ac216-c11a-47c3-88e8-0423541da69c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ed0b735b68a3f30391d5470ef688a9237885a8d6a376bd7a6efa4ddf3c4596b7",
+      "bytes": 19515,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4664fda1-dcb7-4cd2-847a-13294ae4c486.jpg",
+    "fetchedAt": "2026-10-02T22:01:04.153132+00:00",
+    "sha256": "7bb8352294260cac97303033a903891cb60c592871577b66b66eed57477ad8c2",
+    "bytes": 53898,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

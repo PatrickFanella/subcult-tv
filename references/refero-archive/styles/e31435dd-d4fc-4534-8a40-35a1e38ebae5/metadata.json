@@ -1,0 +1,29 @@
+{
+  "styleId": "e31435dd-d4fc-4534-8a40-35a1e38ebae5",
+  "sourceUrl": "https://styles.refero.design/style/e31435dd-d4fc-4534-8a40-35a1e38ebae5",
+  "fetchedAt": "2026-10-02T21:27:14.010005+00:00",
+  "extractedAt": "2026-10-02T21:27:14.061182+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Digit 5 — Style Reference",
+  "htmlSha256": "f4c5e928b2db3b311d95ee8bf03c1cb496d24ac9e656113dc0ec03f9d6d467f4",
+  "cache": ".cache/e31435dd-d4fc-4534-8a40-35a1e38ebae5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4a09850ecf86843f0e379aeaeb95aebcb8398e4657c7c25724905aebe0a1f0b2",
+      "bytes": 19711,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a04e59f8-9b20-4e68-8897-dfcd11ad974d.jpg",
+    "fetchedAt": "2026-10-02T21:27:15.991520+00:00",
+    "sha256": "19a6608c56c345310356787a96d1bb71d8e6c07ee2e677f9f9f8eca3d99a357d",
+    "bytes": 55040,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

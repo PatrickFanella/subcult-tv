@@ -1,0 +1,29 @@
+{
+  "styleId": "7bbbf1bc-e375-4200-8d71-e373a3c78654",
+  "sourceUrl": "https://styles.refero.design/style/7bbbf1bc-e375-4200-8d71-e373a3c78654",
+  "fetchedAt": "2026-10-02T21:57:02.294806+00:00",
+  "extractedAt": "2026-10-02T21:57:02.324008+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dub Links — Style Reference",
+  "htmlSha256": "ed07988d14928a6daf5a23738c813f9ebe10849d72e592833b0d3dc43a5dac9e",
+  "cache": ".cache/7bbbf1bc-e375-4200-8d71-e373a3c78654.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "837303399558adc4f0c3ca7674635ff72308ca9837f1b5b1b934a0b1ebcc961a",
+      "bytes": 20301,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b9dd8a89-e626-42ce-92e9-dd248b7b463c.jpg",
+    "fetchedAt": "2026-10-02T21:57:04.198817+00:00",
+    "sha256": "e409be29a962e8a96d58de7b36a0372a9dfb673a42eef6882d865233f00447b7",
+    "bytes": 63964,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

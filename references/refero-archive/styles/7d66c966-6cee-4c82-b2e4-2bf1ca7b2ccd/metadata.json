@@ -1,0 +1,29 @@
+{
+  "styleId": "7d66c966-6cee-4c82-b2e4-2bf1ca7b2ccd",
+  "sourceUrl": "https://styles.refero.design/style/7d66c966-6cee-4c82-b2e4-2bf1ca7b2ccd",
+  "fetchedAt": "2026-10-02T21:42:29.552189+00:00",
+  "extractedAt": "2026-10-02T21:42:29.605427+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Iad-lab — Style Reference",
+  "htmlSha256": "086c97df35ad449576eb603e6a1c6931b082b7f720f01225966c962d213cc578",
+  "cache": ".cache/7d66c966-6cee-4c82-b2e4-2bf1ca7b2ccd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "94959ffe5d56db26e3d65bc49898f3b1c4c4796f2aa93359293bf7a4c3521aab",
+      "bytes": 16746,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6b32a8b6-ce41-4aa2-9c71-98df5522e6ba.jpg",
+    "fetchedAt": "2026-10-02T21:42:31.467407+00:00",
+    "sha256": "8a47c546e677817cdf2e852170628dc0b6f433fd8b62e254d68d1e4f2b82da31",
+    "bytes": 42761,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

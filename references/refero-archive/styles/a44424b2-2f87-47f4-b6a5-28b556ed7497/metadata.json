@@ -1,0 +1,29 @@
+{
+  "styleId": "a44424b2-2f87-47f4-b6a5-28b556ed7497",
+  "sourceUrl": "https://styles.refero.design/style/a44424b2-2f87-47f4-b6a5-28b556ed7497",
+  "fetchedAt": "2026-10-02T21:27:25.998797+00:00",
+  "extractedAt": "2026-10-02T21:27:26.049225+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Linearity — Style Reference",
+  "htmlSha256": "e0f6b975cbb69855e414eebd09e4d7cef22757d747232d59cfc8b56fbe04c5f1",
+  "cache": ".cache/a44424b2-2f87-47f4-b6a5-28b556ed7497.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e938be423b3bf58121d76fa8e58b5199b8c5465c28727512d530c9c9b7c9a489",
+      "bytes": 22183,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3a3dbadd-a35b-4981-ac67-f991672296ba.jpg",
+    "fetchedAt": "2026-10-02T21:27:27.991439+00:00",
+    "sha256": "8fffc4fa55efad805c9b3fc11e6a60edbb8cc7a6c10651fc1822450fb098dec7",
+    "bytes": 53288,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

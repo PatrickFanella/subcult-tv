@@ -1,0 +1,186 @@
+[
+  {
+    "id": "desktop-fm",
+    "category": "Y2K",
+    "name": "Desktop.fm",
+    "refero": "https://styles.refero.design/style/cb266ff9-f168-4a42-a522-f0e84508f90f",
+    "live": "https://desktop.fm/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/39100670-cd23-49fc-a6a1-1ae9c4d8132b.jpg"
+  },
+  {
+    "id": "gt-planar",
+    "category": "Y2K",
+    "name": "Gt-planar",
+    "refero": "https://styles.refero.design/style/3f22028a-05d4-4648-a6d1-591134af06a4",
+    "live": "https://gt-planar.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/4b19dc05-341b-442c-b82e-ac9f480947c3.jpg"
+  },
+  {
+    "id": "hyper-tria",
+    "category": "Y2K",
+    "name": "Hyper Tria",
+    "refero": "https://styles.refero.design/style/6665a3dd-606f-4fd1-80dd-a84e3b3a6226",
+    "live": "https://hypertria.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/d80ebc8d-4656-47eb-a277-b535ed9a37ee.jpg"
+  },
+  {
+    "id": "evoke",
+    "category": "Memphis",
+    "name": "EVOKE",
+    "refero": "https://styles.refero.design/style/a69de146-6ff1-4ea8-b4a4-9d182ca2de31",
+    "live": "https://studioevoke.co.uk/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/2a3edbc1-ad90-4bec-aec7-6da2e9f2f62b.jpg"
+  },
+  {
+    "id": "superhi",
+    "category": "Memphis",
+    "name": "SuperHi",
+    "refero": "https://styles.refero.design/style/90b8631c-4e2c-407e-86a3-d2bff456dc93",
+    "live": "https://superhi.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/49ee1679-50df-4241-adc0-719841e2ca9e.jpg"
+  },
+  {
+    "id": "composer",
+    "category": "Memphis",
+    "name": "Composer",
+    "refero": "https://styles.refero.design/style/1e675740-7935-4a49-b4c8-e5aa9fda06dd",
+    "live": "https://www.composer.trade/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/980ebd6f-5cc8-4964-a835-ed5996897871.jpg"
+  },
+  {
+    "id": "programa",
+    "category": "Swiss",
+    "name": "Programa",
+    "refero": "https://styles.refero.design/style/41af8353-6a8f-416d-947b-57932f591497",
+    "live": "https://programa.design/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/804cc691-712f-463a-9b4f-790d7c391d36.jpg"
+  },
+  {
+    "id": "spacelab",
+    "category": "Swiss",
+    "name": "Spacelab",
+    "refero": "https://styles.refero.design/style/7fdcf5eb-4d65-49a2-b887-60119bca4edc",
+    "live": "https://spacelab.co.uk/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/195e5250-9b68-4030-9bdd-eebc1cbf5c29.jpg"
+  },
+  {
+    "id": "fora",
+    "category": "Swiss",
+    "name": "FORA",
+    "refero": "https://styles.refero.design/style/9929101b-90d4-4306-bc4a-4d8f65b527f5",
+    "live": "https://fora-concept.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/959d9036-7095-4e0c-9017-84965444c36c.jpg"
+  },
+  {
+    "id": "frankys",
+    "category": "Retro",
+    "name": "FRANKY'S",
+    "refero": "https://styles.refero.design/style/7c84da5d-b7a0-436f-bfaa-68d0a14f8e86",
+    "live": "https://frankys-hats.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/1de242de-6ae1-4994-919d-0748ba503e1b.jpg"
+  },
+  {
+    "id": "olipop",
+    "category": "Retro",
+    "name": "OLIPOP",
+    "refero": "https://styles.refero.design/style/c6ec55c7-0bd9-47c5-a4d2-669b7790c9cc",
+    "live": "https://drinkolipop.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/a0276da1-f0a8-41e3-9a7e-745bdfe661e0.jpg"
+  },
+  {
+    "id": "little-amps",
+    "category": "Retro",
+    "name": "Little Amps",
+    "refero": "https://styles.refero.design/style/ca522706-03ed-48cb-acb3-1bb2a22f2eda",
+    "live": "https://littleampscoffee.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/d12abb20-f05a-41be-bbe3-2c0be8195cfe.jpg"
+  },
+  {
+    "id": "mike-matas",
+    "category": "Minimalist",
+    "name": "Mike Matas",
+    "refero": "https://styles.refero.design/style/04f6cb02-de90-4d78-9c5f-0eb52f826484",
+    "live": "https://mikematas.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/bf83bf87-f03d-43cf-b847-527db9cc3f41.jpg"
+  },
+  {
+    "id": "everlane",
+    "category": "Minimalist",
+    "name": "Everlane",
+    "refero": "https://styles.refero.design/style/34b4856c-cc2b-4164-ab90-1b87cf8e0213",
+    "live": "https://everlane.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/1da79de9-d08a-434f-9968-e021a7bc9c7d.jpg"
+  },
+  {
+    "id": "teenage-engineering",
+    "category": "Minimalist",
+    "name": "teenage engineering",
+    "refero": "https://styles.refero.design/style/aecf9dda-5cba-4dc7-9e73-59b65d895cdf",
+    "live": "https://teenage.engineering/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/b6870b08-d599-4a3a-bb77-b77546c386de.jpg"
+  },
+  {
+    "id": "slush",
+    "category": "Innovative",
+    "name": "Slush",
+    "refero": "https://styles.refero.design/style/8b6b547f-a357-4f1b-9842-4579c62dd42b",
+    "live": "https://slush.app/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/5bb564c4-e5ce-47c4-b5d5-fd0371d83d8c.jpg"
+  },
+  {
+    "id": "steep",
+    "category": "Innovative",
+    "name": "Steep",
+    "refero": "https://styles.refero.design/style/75fdb89f-ca64-41b3-af36-7a78bd09448e",
+    "live": "https://steep.app/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/0e848f7e-22b2-49ec-ab39-e2016858cf61.jpg"
+  },
+  {
+    "id": "wise",
+    "category": "Innovative",
+    "name": "Wise",
+    "refero": "https://styles.refero.design/style/367c0c6e-73a7-441c-a8ff-91d139ac60dc",
+    "live": "https://wise.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/0a49ddce-cf42-499f-8439-629f62b58fa7.jpg"
+  },
+  {
+    "id": "cursor",
+    "category": "Innovative",
+    "name": "Cursor",
+    "refero": "https://styles.refero.design/style/4e3b4717-84c8-4599-baaf-a343c3d619b6",
+    "live": "https://cursor.com/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/2d14afc2-9e2e-4a6c-b360-8da8845a70a6.jpg"
+  },
+  {
+    "id": "notion",
+    "category": "Hand drawn",
+    "name": "Notion",
+    "refero": "https://styles.refero.design/style/2bf4c61f-de10-4614-ba1b-20c0453bd2a9",
+    "live": "https://notion.so/",
+    "referenceImage": "https://images.refero.design/styles/refero.design/image/c764716e-5d17-4e8d-8ad8-cb93511e743d.jpg"
+  },
+  {
+    "id": "neobrutalism-components",
+    "category": "Neo-Brutalism",
+    "name": "Neobrutalism components",
+    "live": "https://www.neobrutalism.dev/"
+  },
+  {
+    "id": "gumroad",
+    "category": "Neo-Brutalism",
+    "name": "Gumroad",
+    "live": "https://gumroad.com/"
+  },
+  {
+    "id": "excalidraw",
+    "category": "Hand drawn",
+    "name": "Excalidraw",
+    "live": "https://excalidraw.com/"
+  },
+  {
+    "id": "roughjs",
+    "category": "Hand drawn",
+    "name": "Rough.js",
+    "live": "https://roughjs.com/"
+  }
+]

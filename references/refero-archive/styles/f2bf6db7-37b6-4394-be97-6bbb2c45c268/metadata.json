@@ -1,0 +1,29 @@
+{
+  "styleId": "f2bf6db7-37b6-4394-be97-6bbb2c45c268",
+  "sourceUrl": "https://styles.refero.design/style/f2bf6db7-37b6-4394-be97-6bbb2c45c268",
+  "fetchedAt": "2026-10-02T22:00:42.163069+00:00",
+  "extractedAt": "2026-10-02T22:00:42.207694+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "MAKR — Style Reference",
+  "htmlSha256": "062222659a1cb0f65d61ad5cfa395d4eca4d4a903b8268305c26e1631f84daad",
+  "cache": ".cache/f2bf6db7-37b6-4394-be97-6bbb2c45c268.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fcf1aa0c47751a09fb6866557a739091dc819af981c87e0d8eebe07fc11983d8",
+      "bytes": 17744,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9cec4e9d-e998-4410-bfb8-983caa4cda4e.jpg",
+    "fetchedAt": "2026-10-02T22:00:44.135597+00:00",
+    "sha256": "7850de29b167f2620e0db1a246e7b7c71fc7e72fcbe2e601e2a77643f1f4aaa0",
+    "bytes": 68140,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

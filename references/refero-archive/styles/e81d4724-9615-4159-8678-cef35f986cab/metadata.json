@@ -1,0 +1,29 @@
+{
+  "styleId": "e81d4724-9615-4159-8678-cef35f986cab",
+  "sourceUrl": "https://styles.refero.design/style/e81d4724-9615-4159-8678-cef35f986cab",
+  "fetchedAt": "2026-10-02T21:31:18.072496+00:00",
+  "extractedAt": "2026-10-02T21:31:18.094053+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Scale — Style Reference",
+  "htmlSha256": "ab515dde27b3f7d1e206ac6e0107d305dc06fd9166290d74e1507064859e89c3",
+  "cache": ".cache/e81d4724-9615-4159-8678-cef35f986cab.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "439e29deb226c6564c2ad4c7088d6643aa1975c389412d3a35160c6a77c6c06f",
+      "bytes": 21328,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c36628f3-1bf3-4572-bf2b-dfe5cc91b04e.jpg",
+    "fetchedAt": "2026-10-02T21:31:20.133047+00:00",
+    "sha256": "737f6b8683021530740bd667fd1d589b209f7e73d32d99901f5cc3ae57a96606",
+    "bytes": 172287,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

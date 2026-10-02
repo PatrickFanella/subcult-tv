@@ -1,0 +1,29 @@
+{
+  "styleId": "4fa67bd1-f01d-454a-b522-4a0359ff9815",
+  "sourceUrl": "https://styles.refero.design/style/4fa67bd1-f01d-454a-b522-4a0359ff9815",
+  "fetchedAt": "2026-10-02T21:31:38.009882+00:00",
+  "extractedAt": "2026-10-02T21:31:38.031580+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Shop — Style Reference",
+  "htmlSha256": "e8d2fe171165eec5e08fd45b7e69a07c18eadda7aed1f0f3dbef8067c44f1a69",
+  "cache": ".cache/4fa67bd1-f01d-454a-b522-4a0359ff9815.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a3de63fa3b13cec082dd908d9d9f33b796fc8edcb6c6e1d562ef65fc7c070595",
+      "bytes": 22761,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9510f0eb-3e68-480a-8a89-0ed57eba517d.jpg",
+    "fetchedAt": "2026-10-02T21:31:40.166033+00:00",
+    "sha256": "a7d961077adfdaa704ad5136f5c0ba4a74d8602b34cda6042a2538bec8ddb607",
+    "bytes": 130677,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

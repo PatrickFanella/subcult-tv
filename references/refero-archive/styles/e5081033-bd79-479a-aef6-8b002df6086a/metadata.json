@@ -1,0 +1,29 @@
+{
+  "styleId": "e5081033-bd79-479a-aef6-8b002df6086a",
+  "sourceUrl": "https://styles.refero.design/style/e5081033-bd79-479a-aef6-8b002df6086a",
+  "fetchedAt": "2026-10-02T21:48:41.607088+00:00",
+  "extractedAt": "2026-10-02T21:48:41.648416+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ableton — Style Reference",
+  "htmlSha256": "be51b3199885b21eb66b4f7659af95b554560a41f4e5008b0bcfce309675fb13",
+  "cache": ".cache/e5081033-bd79-479a-aef6-8b002df6086a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "923013e7fd940fe9aba9d9c568cd541c2eccc1fb6622785ca65075d9e636c69b",
+      "bytes": 17041,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1751aebd-7792-4112-b541-353572194dff.jpg",
+    "fetchedAt": "2026-10-02T21:48:43.556540+00:00",
+    "sha256": "1b061181991f79b0384df1252adcb6b5d022669c58259c5879bc051d278edae8",
+    "bytes": 119318,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

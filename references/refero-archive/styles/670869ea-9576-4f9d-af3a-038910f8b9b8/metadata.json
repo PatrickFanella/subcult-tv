@@ -1,0 +1,29 @@
+{
+  "styleId": "670869ea-9576-4f9d-af3a-038910f8b9b8",
+  "sourceUrl": "https://styles.refero.design/style/670869ea-9576-4f9d-af3a-038910f8b9b8",
+  "fetchedAt": "2026-10-02T21:43:25.490956+00:00",
+  "extractedAt": "2026-10-02T21:43:25.581654+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Studio Emmerer — Style Reference",
+  "htmlSha256": "e60fa14a06111fa668300e012130f2688e89758eae4d8b99c068065951701dd3",
+  "cache": ".cache/670869ea-9576-4f9d-af3a-038910f8b9b8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8e80dd2822f1ead46cd098814895ec962f5b6b8e086fa4a9d0d28001f6ebe10b",
+      "bytes": 14080,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ea3c02eb-d690-4407-8e05-8e25e19a9278.jpg",
+    "fetchedAt": "2026-10-02T21:43:27.585701+00:00",
+    "sha256": "df5ab973ac2a58e2b7a2988c01bfec749b8457e232fb1dbad70f10d1732c8495",
+    "bytes": 162835,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

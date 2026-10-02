@@ -1,0 +1,29 @@
+{
+  "styleId": "7b0f403f-5428-49dc-9ae3-addbe64261ae",
+  "sourceUrl": "https://styles.refero.design/style/7b0f403f-5428-49dc-9ae3-addbe64261ae",
+  "fetchedAt": "2026-10-02T21:54:22.172891+00:00",
+  "extractedAt": "2026-10-02T21:54:22.215395+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Shuttle — Style Reference",
+  "htmlSha256": "b073b81b546be739b35e6853e894f26e534846f1e45c1525e65ecfa756737a67",
+  "cache": ".cache/7b0f403f-5428-49dc-9ae3-addbe64261ae.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c96b2f469dbb70c0a69a8e35e14ee7c155b3acb8eadd70ba3d507193f348d250",
+      "bytes": 18796,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4fe918b1-43b0-4dfc-9331-f26bfd1f6f2a.jpg",
+    "fetchedAt": "2026-10-02T21:54:24.179256+00:00",
+    "sha256": "0013e5cd66e6810426d432284bccea70edc2a60eaa6e8cf63062951a7fc2c708",
+    "bytes": 52759,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

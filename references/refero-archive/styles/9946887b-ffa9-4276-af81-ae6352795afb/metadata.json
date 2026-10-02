@@ -1,0 +1,29 @@
+{
+  "styleId": "9946887b-ffa9-4276-af81-ae6352795afb",
+  "sourceUrl": "https://styles.refero.design/style/9946887b-ffa9-4276-af81-ae6352795afb",
+  "fetchedAt": "2026-10-02T21:32:18.181699+00:00",
+  "extractedAt": "2026-10-02T21:32:18.202776+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Calendly.com — Style Reference",
+  "htmlSha256": "48d306d4cbcefd8f1b9ecb72662ed1fefe0213f0285b6289b584d3febf0de98d",
+  "cache": ".cache/9946887b-ffa9-4276-af81-ae6352795afb.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f4d4dfd7a9b52dfbe58ad6fc5154ea50f2fcb6dc9ee6477aa56ae660d4614aa6",
+      "bytes": 20429,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/aa18b126-f1de-41cb-8c8b-c0ac4fbc8926.jpg",
+    "fetchedAt": "2026-10-02T21:32:20.033215+00:00",
+    "sha256": "c0a8649a62adad359859cd49f935491c7a07d11051bb6fecb365b17b70bd5915",
+    "bytes": 105331,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

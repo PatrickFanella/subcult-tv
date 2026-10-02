@@ -1,0 +1,29 @@
+{
+  "styleId": "4e3aa524-b146-416c-907f-382c079ea80c",
+  "sourceUrl": "https://styles.refero.design/style/4e3aa524-b146-416c-907f-382c079ea80c",
+  "fetchedAt": "2026-10-02T21:58:58.180948+00:00",
+  "extractedAt": "2026-10-02T21:58:58.225045+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tally Forms — Style Reference",
+  "htmlSha256": "05d00f67a7e749f12caad2a7602a5c40a4d17aac6fcc24c1737b4979fbe2b2c2",
+  "cache": ".cache/4e3aa524-b146-416c-907f-382c079ea80c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3dde76cd725d2e97c8b96f7a28d7fb3808a84de98c76ab689575977ed5744d7e",
+      "bytes": 22429,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2e807183-d98d-4c6f-941f-5ccc3f17c484.jpg",
+    "fetchedAt": "2026-10-02T21:59:00.253033+00:00",
+    "sha256": "cff7482504587dc859aec6008bca1da19ef03ff1c039f679ba23e47b755a2958",
+    "bytes": 83584,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

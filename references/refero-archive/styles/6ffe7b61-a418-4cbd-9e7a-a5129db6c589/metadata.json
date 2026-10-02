@@ -1,0 +1,29 @@
+{
+  "styleId": "6ffe7b61-a418-4cbd-9e7a-a5129db6c589",
+  "sourceUrl": "https://styles.refero.design/style/6ffe7b61-a418-4cbd-9e7a-a5129db6c589",
+  "fetchedAt": "2026-10-02T21:44:29.488382+00:00",
+  "extractedAt": "2026-10-02T21:44:29.522935+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "MetaMusic — Style Reference",
+  "htmlSha256": "7efd261b7c603bbc11c212bde3a1b4e8b60605a7db50d6206e729592a2c8a0c8",
+  "cache": ".cache/6ffe7b61-a418-4cbd-9e7a-a5129db6c589.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2854af7caef179749621a33dba489f91ccd5db18c5ddc860a4393d9e09e438e4",
+      "bytes": 23315,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/041e1942-e75d-4fab-b4f6-bbc404ea65af.jpg",
+    "fetchedAt": "2026-10-02T21:44:31.589162+00:00",
+    "sha256": "641057d133701bd7fd5e8f3dfe900f99193c60be42761eb308e553b8bf97c1d2",
+    "bytes": 93436,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

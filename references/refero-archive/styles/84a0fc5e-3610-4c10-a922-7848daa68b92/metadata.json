@@ -1,0 +1,29 @@
+{
+  "styleId": "84a0fc5e-3610-4c10-a922-7848daa68b92",
+  "sourceUrl": "https://styles.refero.design/style/84a0fc5e-3610-4c10-a922-7848daa68b92",
+  "fetchedAt": "2026-10-02T21:28:37.999016+00:00",
+  "extractedAt": "2026-10-02T21:28:38.044677+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bee — Style Reference",
+  "htmlSha256": "9252b5e138163e8d49512a671d740e7d0f3537067f353789ce3dd92bccd033e7",
+  "cache": ".cache/84a0fc5e-3610-4c10-a922-7848daa68b92.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4326487b15986bb12e57e4539f249164a52f13b0d9bc06b8846093ceb404e1d9",
+      "bytes": 18943,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bfb82879-d012-4ecc-8d7f-613242a6444b.jpg",
+    "fetchedAt": "2026-10-02T21:28:40.107977+00:00",
+    "sha256": "e48f1b2519cc271565b4f44b18b9c8e4d73be53fe1bebe08fa918f3d69593ff5",
+    "bytes": 178951,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

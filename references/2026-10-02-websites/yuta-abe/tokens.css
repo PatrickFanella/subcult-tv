@@ -1,0 +1,7 @@
+/* Reference observations, not an official or production design system.
+   See GUIDE.md and tokens.json for evidence and visibility limits. */
+:root {
+  --reference-bg: rgb(8, 8, 8);
+  --reference-fg: rgb(240, 237, 232);
+  --reference-font-body: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo;
+}

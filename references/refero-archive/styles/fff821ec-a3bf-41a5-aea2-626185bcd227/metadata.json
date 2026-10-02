@@ -1,0 +1,29 @@
+{
+  "styleId": "fff821ec-a3bf-41a5-aea2-626185bcd227",
+  "sourceUrl": "https://styles.refero.design/style/fff821ec-a3bf-41a5-aea2-626185bcd227",
+  "fetchedAt": "2026-10-02T21:59:26.182287+00:00",
+  "extractedAt": "2026-10-02T21:59:26.230745+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "VEED — Style Reference",
+  "htmlSha256": "c522a96731da57b18429fd9b481819569417e53fb36b55b3205ee1c39da1a22c",
+  "cache": ".cache/fff821ec-a3bf-41a5-aea2-626185bcd227.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d3206f2c503802d3fc0f391b3c6829faebde576e77111aaeb78ae390ceafd5f0",
+      "bytes": 21363,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/be44b501-1734-4dc8-af01-bed95ad08174.jpg",
+    "fetchedAt": "2026-10-02T21:59:28.271583+00:00",
+    "sha256": "dee2ba3c03698eddcd2a9dc27d9d118a6ea87b9b427b952b141ab2b037f986e3",
+    "bytes": 164778,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

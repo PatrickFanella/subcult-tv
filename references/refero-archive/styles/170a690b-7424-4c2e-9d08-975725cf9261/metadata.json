@@ -1,0 +1,29 @@
+{
+  "styleId": "170a690b-7424-4c2e-9d08-975725cf9261",
+  "sourceUrl": "https://styles.refero.design/style/170a690b-7424-4c2e-9d08-975725cf9261",
+  "fetchedAt": "2026-10-02T21:49:33.538671+00:00",
+  "extractedAt": "2026-10-02T21:49:33.733572+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "TWOTWO — Style Reference",
+  "htmlSha256": "641d18013c42ae9e560d061388e14a769ca99b697f19fc34fb11159ff352b45e",
+  "cache": ".cache/170a690b-7424-4c2e-9d08-975725cf9261.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a8116622baf82d439df5a4e4dd398c7ba9e62f1e14d33ff821530540698ce106",
+      "bytes": 22670,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d23772b0-8750-4050-b9d3-40b0bb5b250e.jpg",
+    "fetchedAt": "2026-10-02T21:49:35.774863+00:00",
+    "sha256": "4acd26844cc8308a8e47f77b1f118f1c8b98bedf82e947f18a953fa008b71599",
+    "bytes": 62078,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

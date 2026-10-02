@@ -1,0 +1,29 @@
+{
+  "styleId": "1e93f444-0b01-4412-aa2b-877be5ef08d7",
+  "sourceUrl": "https://styles.refero.design/style/1e93f444-0b01-4412-aa2b-877be5ef08d7",
+  "fetchedAt": "2026-10-02T21:50:25.538464+00:00",
+  "extractedAt": "2026-10-02T21:50:25.583768+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Emmalewisham — Style Reference",
+  "htmlSha256": "8b4421a19c0730285118f65e90ffe5708920cd988ba767276914ca3bc99c057c",
+  "cache": ".cache/1e93f444-0b01-4412-aa2b-877be5ef08d7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4ee01d30c77c794e1ca3f1591164f463ff26f4bab31e11ce9871cf54d9ab0394",
+      "bytes": 19370,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f943efd2-e84f-4354-b880-1123707293c3.jpg",
+    "fetchedAt": "2026-10-02T21:50:27.541315+00:00",
+    "sha256": "131c67afeda7b383cc112bf36537a2e5d66b458104499073abf06b61c660c506",
+    "bytes": 115696,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

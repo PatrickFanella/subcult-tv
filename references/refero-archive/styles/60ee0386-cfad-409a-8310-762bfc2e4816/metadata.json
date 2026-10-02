@@ -1,0 +1,29 @@
+{
+  "styleId": "60ee0386-cfad-409a-8310-762bfc2e4816",
+  "sourceUrl": "https://styles.refero.design/style/60ee0386-cfad-409a-8310-762bfc2e4816",
+  "fetchedAt": "2026-10-02T21:52:14.163361+00:00",
+  "extractedAt": "2026-10-02T21:52:14.216336+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cosmos Network — Style Reference",
+  "htmlSha256": "c478dd07656dfad118909334e7ddb598acb91a3dd8a82b80db9af738bfd6d428",
+  "cache": ".cache/60ee0386-cfad-409a-8310-762bfc2e4816.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c1caa09a1bb112e05de7580380293e0827fe00f53a6bfde46726d72ee9160d77",
+      "bytes": 18731,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6c29bed9-8cba-4bab-8d3e-0aef2d7d9ad3.jpg",
+    "fetchedAt": "2026-10-02T21:52:16.211150+00:00",
+    "sha256": "09d6e44b165a634901ecb3af20a4a01ffc9bfab0480dda8170805a2fd615da38",
+    "bytes": 99026,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

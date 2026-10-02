@@ -1,0 +1,98 @@
+{
+  "site": "duyu-care",
+  "source": "https://duyucare.dops.agency/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:15:07.508Z",
+      "url": "https://duyucare.dops.agency/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "scrolled",
+      "observation": "evidence/scrolled.json",
+      "image": "images/scrolled.png",
+      "capturedAt": "2026-10-02T20:20:47.183Z",
+      "url": "https://duyucare.dops.agency/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": "images/settled.png",
+      "capturedAt": "2026-10-02T20:20:45.943Z",
+      "url": "https://duyucare.dops.agency/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "51085fa76a4e3450de9c652fc201cee13d72fd0adf0fd006232482e356889d75",
+      "bytes": 5618
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "f7ee1754fd75637e08f324c4543afe7a81fefd1fbf7f62d3be559438f6de048e",
+      "bytes": 1278
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "912d041a576b42c58a5b09bd679a5d4b645a1208c43df8187c32482658af43c5",
+      "bytes": 49679
+    },
+    {
+      "path": "evidence/scrolled.json",
+      "sha256": "683821f01fbd85b1784fe373cd8be1284e873e187a5f61f5d2c40b9edf7fdcf6",
+      "bytes": 49331
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "d7b0600334aeb6edb599c14c7171ce539644d075603fa3c3b826deb9077dab97",
+      "bytes": 49363
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "f77236931b72ab0f168a5437daf0ecedb5dadc41a1995873a315c615ce4da03a",
+      "bytes": 64840
+    },
+    {
+      "path": "images/scrolled.png",
+      "sha256": "38016332ee14672c3c31a9374eace8e67c22950154e0fab99b81e45b8c939d98",
+      "bytes": 63228
+    },
+    {
+      "path": "images/settled.png",
+      "sha256": "432303c7cb117fe71d8038470a9ba8dfbea55aca7075134feb8d89f0ed2d821b",
+      "bytes": 15364
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "55ba3b8ab2ac6e3720e6de8186d0f23c3413da59df544213345289ecb959d76d",
+      "bytes": 270
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "b69738c1cd92d212c75c3583cc3f228bf542a71f16567d60c912faa1f215df43",
+      "bytes": 10989
+    }
+  ]
+}

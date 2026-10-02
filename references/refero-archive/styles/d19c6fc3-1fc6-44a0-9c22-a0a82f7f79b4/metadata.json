@@ -1,0 +1,29 @@
+{
+  "styleId": "d19c6fc3-1fc6-44a0-9c22-a0a82f7f79b4",
+  "sourceUrl": "https://styles.refero.design/style/d19c6fc3-1fc6-44a0-9c22-a0a82f7f79b4",
+  "fetchedAt": "2026-10-02T22:00:22.230820+00:00",
+  "extractedAt": "2026-10-02T22:00:22.295545+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "HyperAktiv — Style Reference",
+  "htmlSha256": "3ea89240472bfc1497462d946fa6bf8ec9f8820f9c9843bf08d179d0a9be5955",
+  "cache": ".cache/d19c6fc3-1fc6-44a0-9c22-a0a82f7f79b4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "72be9fb4ea393ba050544d3cfcc8004efefcda32e63901fa8fada19ee3a9dbb8",
+      "bytes": 17337,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4444d00e-51d9-43f6-8445-39d978104ee6.jpg",
+    "fetchedAt": "2026-10-02T22:00:24.264875+00:00",
+    "sha256": "853588d95484ebf69e7b2b7ae38c5316ff1af014c556237f9dad4f1e869c2387",
+    "bytes": 252275,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

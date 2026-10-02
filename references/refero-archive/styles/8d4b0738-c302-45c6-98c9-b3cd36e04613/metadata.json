@@ -1,0 +1,29 @@
+{
+  "styleId": "8d4b0738-c302-45c6-98c9-b3cd36e04613",
+  "sourceUrl": "https://styles.refero.design/style/8d4b0738-c302-45c6-98c9-b3cd36e04613",
+  "fetchedAt": "2026-10-02T21:46:33.639592+00:00",
+  "extractedAt": "2026-10-02T21:46:33.689457+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Podcorn — Style Reference",
+  "htmlSha256": "1c375fce6bffacb2fe877567c2bc26fc89a21775bcbe55ad9ca6d9887de9d298",
+  "cache": ".cache/8d4b0738-c302-45c6-98c9-b3cd36e04613.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8740fe9b5e11091d2d51007448c8a1f4d07652d2eea6cb514f5fc50405b40e43",
+      "bytes": 19075,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bf2b7e25-2917-4d65-8026-639afe63bee1.jpg",
+    "fetchedAt": "2026-10-02T21:46:35.651034+00:00",
+    "sha256": "f474b43f3db190204795ac807c2ef88ba6c56211b7cd667140687253ee61ff9a",
+    "bytes": 84491,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

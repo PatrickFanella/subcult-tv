@@ -1,0 +1,29 @@
+{
+  "styleId": "75eb47d6-2526-4936-b15a-7474cf4cdc69",
+  "sourceUrl": "https://styles.refero.design/style/75eb47d6-2526-4936-b15a-7474cf4cdc69",
+  "fetchedAt": "2026-10-02T21:47:21.522904+00:00",
+  "extractedAt": "2026-10-02T21:47:21.571325+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Quicken — Style Reference",
+  "htmlSha256": "17e09cca4127013ad96b98030b3be38abec722be48f74e6cf025f28bc2829b2a",
+  "cache": ".cache/75eb47d6-2526-4936-b15a-7474cf4cdc69.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af257eb4fbae1c8fc84919e1ead74d7c9199ab0b64ad29e48370730a00ceee03",
+      "bytes": 19216,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/948df6cb-1e28-40ec-b43b-a49d68465142.jpg",
+    "fetchedAt": "2026-10-02T21:47:23.590405+00:00",
+    "sha256": "e1610eeac5173347ca5f5120ef350c944be0b98b62952f6f05cafcec9391801f",
+    "bytes": 146359,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}
