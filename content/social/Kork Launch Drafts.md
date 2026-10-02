@@ -28,7 +28,7 @@ Kork, SUBCULT's link-page service, launched at https://kork.subcult.tv on Octobe
 | Launch landscape with a real page capture, 1600 × 900 | MEDIA-70425e778378e394 | X, Bluesky |
 | Launch story, 1080 × 1920 | MEDIA-15f9dbe2ae1da260 | Instagram or Bluesky story-format image |
 | Public landing, desktop / phone | MEDIA-7737213742695f96, MEDIA-e9e40cfc33921aef | Product proof; live page, logged out |
-| Published page / editor, placeholder handles | MEDIA-43cbc92b89d28839, MEDIA-631300b9fc74f9ce | Product proof; local build of kork 22477c1, not a live page |
+| Published page / editor, placeholder handles | MEDIA-43cbc92b89d28839, MEDIA-265fdbf0a35a8bdf | Product proof; local build of kork 22477c1, not a live page. The editor shows kork.subcult.tv/yourname through a local host mapping; that page does not exist on the live service |
 | Share image, 1200 × 630 | MEDIA-1ad9fefcdaeaa2bc | Link preview or fallback image |
 
 Graphics sources: `branding/2026-10-01-packs/kork_launch_assets.py` and `brands/kork/launch/`. Alt text for each asset is in `media/library/catalog.json`. All assets are `needs_review`.
@@ -75,7 +75,7 @@ Media: MEDIA-513f428164d9a529 (feed) or MEDIA-15f9dbe2ae1da260 (story).
 
 - [ ] Recheck https://kork.subcult.tv and the C-KORK claims on the day of approval. Refresh "is live" launch wording if posting after October 9.
 - [ ] Confirm custom domains, paid plans and link screening are still unavailable, or update the claims register first.
-- [ ] Review each asset (crop, alt text, account fit). Crop or caption the localhost address in MEDIA-631300b9fc74f9ce if it is used.
+- [ ] Review each asset (crop, alt text, account fit). If MEDIA-265fdbf0a35a8bdf is used, caption it as a demonstration page, because kork.subcult.tv/yourname is not a live page.
 - [ ] Confirm that the framed product screenshot in the launch landscape may show third-party service icons; the Kork guide keeps platform logos out of brand artwork.
 - [ ] Choose the account, platform and window, then approve the exact version.
 

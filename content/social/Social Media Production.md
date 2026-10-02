@@ -31,7 +31,7 @@ The gallery now contains nine files including the two original generated illustr
 | Kork landing, desktop, MEDIA-7737213742695f96 | Screenshot, 1280 × 800 PNG | Live public landing at kork.subcult.tv, logged out, headless Chromium; needs editorial review |
 | Kork landing, phone, MEDIA-e9e40cfc33921aef | Screenshot, 780 × 1688 PNG (390 × 844 at 2x) | Same live landing; needs editorial review |
 | Kork published page, MEDIA-43cbc92b89d28839 | Screenshot, 780 × 1688 PNG | Local build of kork 22477c1 with a disposable database and placeholder handles; not a live page |
-| Kork page editor, MEDIA-631300b9fc74f9ce | Screenshot, 1440 × 900 PNG | Same local build; the page address shows localhost:8099, so crop it or caption the image as a local demonstration |
+| Kork page editor, MEDIA-265fdbf0a35a8bdf | Screenshot, 1440 × 900 PNG | Same local build, served as kork.subcult.tv through a local Chromium host mapping. The editor shows kork.subcult.tv/yourname, which is not a live page; caption it as a demonstration |
 | Kork share image, MEDIA-1ad9fefcdaeaa2bc | 1200 × 630 PNG | Kork pack render (`brands/kork/product/og.png`) |
 | Kork launch square, landscape and story, MEDIA-513f428164d9a529, MEDIA-70425e778378e394, MEDIA-15f9dbe2ae1da260 | 1080 × 1080, 1600 × 900 and 1080 × 1920 PNG | Rendered by `kork_launch_assets.py` from the pack artwork; copy limited to C-KORK; recipe `recipes/kork-launch-assets.recipe.json` |
 

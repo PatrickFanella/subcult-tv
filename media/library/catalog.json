@@ -412,11 +412,11 @@
       }
     },
     {
-      "id": "MEDIA-631300b9fc74f9ce",
+      "id": "MEDIA-265fdbf0a35a8bdf",
       "title": "Kork page editor with placeholder handles",
-      "file": "files/MEDIA-631300b9fc74f9ce.png",
-      "sha256": "631300b9fc74f9ce7e4679bd28734bf0ea8293818a22597f2e3b8d1647cdcafa",
-      "bytes": 126967,
+      "file": "files/MEDIA-265fdbf0a35a8bdf.png",
+      "sha256": "265fdbf0a35a8bdf6f191f957ef70df5fdc32b39b9aa0dbd9955eda4d3733e7c",
+      "bytes": 126632,
       "products": [
         "Kork"
       ],
@@ -431,11 +431,11 @@
       ],
       "rights": "user_owned",
       "kind": "screenshot",
-      "source": "Local Kork build of subculture-collective/kork 22477c1 (origin/main, 2026-10-02), custom domains disabled; demo account demo@example.com and placeholder handles only; editor /app/pages/<id> captured 2026-10-02 with headless Chromium at 1440x900. The page address shows localhost:8099. Service icons are Simple Icons (CC0); the marks belong to their owners.",
-      "alt_text": "Kork editor for a page called Your Name: a list of nine blocks (Instagram, Bluesky, YouTube, a Tips heading, Cash App, Ko-fi, an Elsewhere heading, a website link and a contact card) with show, move, edit and delete controls, beside a live phone preview of the published page.",
+      "source": "Local Kork build of subculture-collective/kork 22477c1 with a disposable Postgres, ZELDA_BASE_URL=http://kork.subcult.tv and custom domains disabled; Chromium resolved kork.subcult.tv to the local server (--host-resolver-rules=MAP kork.subcult.tv 127.0.0.1:8099). Demo account demo@example.com and placeholder handles only. Editor /app/pages/<id> captured 2026-10-02T08:09:52Z with headless Chromium at 1440x900. The address kork.subcult.tv/yourname shown in the editor is the local page; no such page exists on the live service. Service icons are Simple Icons (CC0); the marks belong to their owners.",
+      "alt_text": "Kork editor for a page called Your Name at kork.subcult.tv/yourname: a list of nine blocks (Instagram, Bluesky, YouTube, a Tips heading, Cash App, Ko-fi, an Elsewhere heading, a website link and a contact card) with show, move, edit and delete controls, beside a live phone preview of the published page.",
       "generation_prompt": "",
       "status": "needs_review",
-      "created_at": "2026-10-02T08:04:09.727511+00:00",
+      "created_at": "2026-10-02T08:10:12.137186+00:00",
       "attribution": "",
       "uses": [],
       "width": 1440,
@@ -443,7 +443,7 @@
       "duration_seconds": 0.0,
       "visual_review": {
         "checked_at": "2026-10-02",
-        "result": "Viewed capture; local build with placeholder account and handles. The localhost:8099 address is visible; crop or caption it as a local demonstration.",
+        "result": "Viewed capture; local build with placeholder account and handles, shown at the address kork.subcult.tv/yourname through a local host mapping. No real person data.",
         "boundary": "Asset review only; no copy, account or schedule approval."
       }
     },
