@@ -1,0 +1,37 @@
+[
+  {
+    "old_path": "/home/onnwee/Documents/ars-malefica/001 Projects/Works/Social Posts",
+    "authoritative_path": "/home/onnwee/Work/Subcult/subcult-studio/content/social",
+    "recovery_copy": "/home/onnwee/.local/state/subcult-studio-cutover-20261002T001421/retired/vault-social"
+  },
+  {
+    "old_path": "/home/onnwee/Documents/ars-malefica/001 Projects/Works/Patreon",
+    "authoritative_path": "/home/onnwee/Work/Subcult/subcult-studio/content/patreon",
+    "recovery_copy": "/home/onnwee/.local/state/subcult-studio-cutover-20261002T001421/retired/vault-patreon"
+  },
+  {
+    "old_path": "/home/onnwee/Documents/ars-malefica/scripts/social-posting",
+    "authoritative_path": "/home/onnwee/Work/Subcult/subcult-studio/automation/social-posting",
+    "recovery_copy": "/home/onnwee/.local/state/subcult-studio-cutover-20261002T001421/retired/vault-runner"
+  },
+  {
+    "old_path": "/home/onnwee/.t3/worktrees/ars-malefica/t3code-77dddd84/001 Projects/Works/Social Posts",
+    "authoritative_path": "/home/onnwee/Work/Subcult/subcult-studio/content/social",
+    "recovery_copy": "/home/onnwee/.local/state/subcult-studio-cutover-20261002T001421/retired/worktree-social"
+  },
+  {
+    "old_path": "/home/onnwee/.t3/worktrees/ars-malefica/t3code-77dddd84/001 Projects/Works/Patreon",
+    "authoritative_path": "/home/onnwee/Work/Subcult/subcult-studio/content/patreon",
+    "recovery_copy": "/home/onnwee/.local/state/subcult-studio-cutover-20261002T001421/retired/worktree-patreon"
+  },
+  {
+    "old_path": "/home/onnwee/.t3/worktrees/ars-malefica/t3code-77dddd84/scripts/social-posting",
+    "authoritative_path": "/home/onnwee/Work/Subcult/subcult-studio/automation/social-posting",
+    "recovery_copy": "/home/onnwee/.local/state/subcult-studio-cutover-20261002T001421/retired/worktree-runner"
+  },
+  {
+    "old_path": "/home/onnwee/Documents/subculture-collective/branding",
+    "authoritative_path": "/home/onnwee/Work/Subcult/subcult-studio/branding",
+    "recovery_copy": "/home/onnwee/.local/state/subcult-studio-cutover-20261002T001421/retired/documents-branding"
+  }
+]
