@@ -183,9 +183,9 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
         answer: 'HasanAra runs on Rekolekt. Follow the HasanAra link below to explore it.',
       },
       {
-        question: 'Why is the repository called transcript-create?',
+        question: 'Where is the shared application maintained?',
         answer:
-          'Rekolekt is a working product name. The code still lives in the transcript-create repository.',
+          'The shared application is maintained in the subculture-collective/rekolekt repository. Each archive can use its own name and branding.',
       },
     ],
     closing: 'Give your recordings a searchable home.',

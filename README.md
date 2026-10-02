@@ -311,8 +311,10 @@ MIT — do what you want, credit appreciated.
 ## Product showcase and working branding
 
 The homepage features six products, with HasanAra linked to the shared transcript
-archive application. Rekolekt is the working name for Transcript Creator; its
-repository remains `transcript-create`; its public landing page is `/products/rekolekt`. See the
+archive application. Rekolekt is the shared archive application. Its repository was renamed from
+`transcript-create` to [`rekolekt`](https://git.subcult.tv/subculture-collective/rekolekt);
+its public landing page is `/products/rekolekt`. The internal catalog key remains
+`transcript-create` for compatibility. See the
 [Rekolekt identity direction](docs/branding/rekolekt.md) and
 [concept sheet](docs/branding/rekolekt-concept.svg).
 
