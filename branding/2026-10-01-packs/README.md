@@ -36,7 +36,7 @@ Patrick uses Cascadia Mono for display and body type, with a 0.08em gap between 
 
 Patrick variation update: originals are preserved in `references/patrick-variations/` and bundled in `brands/patrick__eff/logos/source-variations/`. Primary marks use PF; clean waveform and tall variants remain available. Large headings and standalone waveforms use a warm-white face with lime/purple offsets. Small text stays flat. `brands/patrick__eff/components.html` shows the CSS treatment; `logos/variations.html` lists editable and production marks.
 
-CLPR selection: Clip stack for the main layouts; single clip card for the square post. The comparison packs remain available under `clpr-directions/`; the main `clpr.zip` contains the selected combination.
+CLPR selection: Clip stack for the main layouts; single clip card for the square post. clpr.tv has applied the pack since October 2, 2026; `brands/clpr/GUIDE.md` records how the site uses the logo, icons, link preview and crop corners. The comparison packs remain available under `clpr-directions/`; the main `clpr.zip` contains the selected combination.
 
 Kork (added October 2, 2026): identity for the self-serve links-page service, code name zelda. The user compared four directions in `corkboard-directions/` and selected A, the pinned card, under the name Kork. The pack uses an original pinned-card mark, a cork field, paper cards, cobalt pushpins, Archivo Black headlines, Atkinson Hyperlegible Next body copy and JetBrains Mono labels. Archivo Black was added to `fonts/` with its OFL license. Rebuild it alone with `BRAND_ONLY=kork python3 build_packs.py`, then `BRAND_ONLY=kork python3 render_video_previews.py`. Card destinations and the QR glyph are placeholders; the glyph encodes nothing.
 
