@@ -288,6 +288,57 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     ],
     closing: 'Make the track a visual release.',
   },
+  prichal: {
+    audience: 'For creators and organizations who want their own place on the open social web.',
+    introduction:
+      'Your account on the open network Bluesky runs on lives on a server. Prichal runs that server for you, so your name, posts and followers sit somewhere that is yours without you administering a machine.',
+    features: [
+      {
+        title: 'Your own server',
+        description:
+          'Each account gets a personal data server (PDS) on the open network. Keep posting from Bluesky like always.',
+      },
+      {
+        title: 'Your name as your username',
+        description:
+          'Use a domain you own as your handle, such as @yourband.com, so people know the account is really you.',
+      },
+      {
+        title: 'Room for your community',
+        description:
+          'Organizations will be able to invite members onto their server. Member accounts are in development and not available yet.',
+      },
+    ],
+    steps: [
+      { title: 'Dock your account', description: 'Create your account on a Prichal server.' },
+      {
+        title: 'Post as usual',
+        description: 'Use Bluesky or any app on the open network with the same account.',
+      },
+      {
+        title: 'We handle the rest',
+        description: 'Prichal keeps the server online and up to date.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sign up today?',
+        answer:
+          'Not yet. Prichal is a private preview while hosting, backups and recovery are tested.',
+      },
+      {
+        question: 'Are my posts private?',
+        answer:
+          'No. Posts on the open network are public, wherever your server runs. Prichal changes who runs the server, not who can read your posts.',
+      },
+      {
+        question: 'What happens to my account if I leave?',
+        answer:
+          'Accounts on the open network can move to another host. Prichal will document how before it opens.',
+      },
+    ],
+    closing: 'Your server. We keep it running.',
+  },
   kork: {
     audience: 'For creators, musicians, small shops, and anyone who shares one link in a bio.',
     introduction:

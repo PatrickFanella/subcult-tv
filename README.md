@@ -105,16 +105,16 @@ VITE_API_URL=                                # Override API base URL (defaults t
 
 ### Public Pages
 
-| Route             | Page               | Description                                                                              |
-| ----------------- | ------------------ | ---------------------------------------------------------------------------------------- |
-| `/`               | Home               | Product showcase for CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, and Kork |
-| `/products`       | Products           | Directory of the seven featured products                                                 |
-| `/products/:slug` | Product            | Product landing page using its own design system                                         |
-| `/about`          | Studio             | The studio and the products it builds                                                    |
-| `/contact`        | Contact            | Product questions, collaborations, and bug reports                                       |
-| `/support`        | Support            | Contributions toward hosting and maintenance                                             |
-| `/projects`       | Redirect           | Redirects to `/products`                                                                 |
-| `/projects/:slug` | Legacy product URL | Redirects for the seven retained products; other slugs return not found                  |
+| Route             | Page               | Description                                                                                       |
+| ----------------- | ------------------ | ------------------------------------------------------------------------------------------------- |
+| `/`               | Home               | Product showcase for CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, and Kork |
+| `/products`       | Products           | Directory of the eight featured products                                                          |
+| `/products/:slug` | Product            | Product landing page using its own design system                                                  |
+| `/about`          | Studio             | The studio and the products it builds                                                             |
+| `/contact`        | Contact            | Product questions, collaborations, and bug reports                                                |
+| `/support`        | Support            | Contributions toward hosting and maintenance                                                      |
+| `/projects`       | Redirect           | Redirects to `/products`                                                                          |
+| `/projects/:slug` | Legacy product URL | Redirects for the eight retained products; other slugs return not found                           |
 
 ### Admin Pages
 
@@ -310,7 +310,7 @@ MIT — do what you want, credit appreciated.
 
 ## Product showcase and working branding
 
-The homepage features seven products, with HasanAra linked to the shared transcript
+The homepage features eight products, with HasanAra linked to the shared transcript
 archive application. Rekolekt is the shared archive application. Its repository was renamed from
 `transcript-create` to [`rekolekt`](https://git.subcult.tv/subculture-collective/rekolekt);
 its public landing page is `/products/rekolekt`. The internal catalog key remains
@@ -320,9 +320,9 @@ its public landing page is `/products/rekolekt`. The internal catalog key remain
 
 ## Product landing pages
 
-The seven featured products have dedicated pages at `/products/clpr`,
+The eight featured products have dedicated pages at `/products/clpr`,
 `/products/patchwork`, `/products/hasanara`, `/products/rekolekt`,
-`/products/subcult-os`, `/products/undertow`, and `/products/kork`. Their earlier `/projects/:slug`
+`/products/subcult-os`, `/products/undertow`, `/products/prichal`, and `/products/kork`. Their earlier `/projects/:slug`
 addresses redirect to the corresponding product page. Products outside this set
 are no longer listed and their old detail URLs return the not-found page.
 
@@ -337,6 +337,6 @@ illustrations are labeled as concepts.
 
 ### Public site scope
 
-The public site centers on CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, and Kork. The homepage, directory, global navigation, footer, studio page, and contact links all lead to these products. Only these seven entries remain in the public project catalog.
+The public site centers on CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, and Kork. The homepage, directory, global navigation, footer, studio page, and contact links all lead to these products. Only these eight entries remain in the public project catalog.
 
 The broader catalog, zine, memo, investor pages, decks, one-pagers, metrics dashboard, press placeholders, link hub, generated PDFs, and RSS feed have been removed from the public site. Existing article source and admin tools remain available in the repository. The build generates a sitemap for the twelve current public pages.

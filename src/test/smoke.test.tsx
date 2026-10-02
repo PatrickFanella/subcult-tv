@@ -47,7 +47,7 @@ describe('smoke: app shell', () => {
     expect(screen.getByRole('navigation').textContent).toContain('SUBCULT');
   });
 
-  it('showcases all seven products and connects HasanAra to its shared application', async () => {
+  it('showcases all eight products and connects HasanAra to its shared application', async () => {
     const user = userEvent.setup();
     renderApp('/');
     const showcase = await screen.findByRole('region', { name: 'The products' });
@@ -59,6 +59,7 @@ describe('smoke: app shell', () => {
       'Rekolekt',
       'Subcult OS',
       'Undertow',
+      'Prichal',
       'Kork',
     ]) {
       expect(products.getByRole('heading', { name })).toBeInTheDocument();
@@ -88,6 +89,20 @@ describe('smoke: app shell', () => {
     );
   });
 
+  it('opens Prichal from its showcase with the preview and repository destinations', async () => {
+    const user = userEvent.setup();
+    renderApp('/');
+    await user.click(await screen.findByRole('link', { name: 'About Prichal' }));
+    expect(await screen.findByRole('heading', { name: 'Prichal', level: 1 })).toBeInTheDocument();
+    for (const link of screen.getAllByRole('link', { name: /See the preview/i })) {
+      expect(link).toHaveAttribute('href', 'https://prichal.subcult.tv');
+    }
+    expect(screen.getByRole('link', { name: /View Repository/i })).toHaveAttribute(
+      'href',
+      'https://git.subcult.tv/subculture-collective/prichal',
+    );
+  });
+
   it('opens Kork from its showcase with the live service and repository', async () => {
     const user = userEvent.setup();
     renderApp('/');
@@ -112,13 +127,13 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('redirects the old catalog to the seven-product directory', async () => {
+  it('redirects the old catalog to the eight-product directory', async () => {
     renderApp('/projects');
     await screen.findByRole('heading', { name: 'Products', level: 1 });
     const main = within(screen.getByRole('main'));
     const teasers = within(main.getByRole('region', { name: 'In development' }));
     const articles = main.getAllByRole('article');
-    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(7);
+    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(8);
     expect(teasers.getAllByRole('article')).toHaveLength(2);
     expect(main.getByRole('link', { name: 'Explore Rekolekt' })).toHaveAttribute(
       'href',
@@ -185,6 +200,7 @@ describe('smoke: app shell', () => {
     ['rekolekt', 'Rekolekt'],
     ['subcult-os', 'Subcult OS'],
     ['undertow', 'Undertow'],
+    ['prichal', 'Prichal'],
     ['kork', 'Kork'],
   ])('renders the %s landing page with product details and working FAQs', async (slug, name) => {
     const user = userEvent.setup();
@@ -240,6 +256,7 @@ describe('smoke: app shell', () => {
       ['Rekolekt', 'rekolekt'],
       ['Subcult OS', 'subcult-os'],
       ['Undertow', 'undertow'],
+      ['Prichal', 'prichal'],
       ['Kork', 'kork'],
     ]) {
       expect(nav.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);

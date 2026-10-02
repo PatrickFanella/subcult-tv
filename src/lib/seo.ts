@@ -44,6 +44,8 @@ const ORGANIZATION = {
 const META_DESCRIPTIONS: Record<string, string> = {
   patchwork:
     'Ask neighbors for help, offer what you can, and find local resources without sharing exact addresses. A pre-alpha mutual aid prototype on AT Protocol.',
+  prichal:
+    'Prichal runs your own server on the open network Bluesky runs on and keeps it online. A private preview of managed account hosting from SUBCULT.',
   undertow:
     'Layer Milkdrop visuals, spectrum, artwork, lyrics, and particles, then export landscape, portrait, and square MP4s in your browser.',
   kork: 'Free themed link pages with 92 services, tip buttons, embeds, QR codes, and anonymous analytics. Kork takes no cut of tips or sales.',
@@ -57,6 +59,7 @@ const APPLICATION_CATEGORY: Record<string, string> = {
   'transcript-create': 'ReferenceApplication',
   'subcult-os': 'BusinessApplication',
   undertow: 'MultimediaApplication',
+  prichal: 'SocialNetworkingApplication',
   kork: 'SocialNetworkingApplication',
 };
 
@@ -69,7 +72,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/',
     title: 'SUBCULT | Open-source tools for independent culture',
     description:
-      'Software for clips, archives, mutual aid, live events, music video, and link pages: CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, and Kork.',
+      'Clips, archives, mutual aid, events, music video, account hosting, and link pages: CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, and Kork.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [
@@ -87,7 +90,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/products',
     title: fullTitle('Products'),
     description:
-      'Seven products from SUBCULT for Twitch clips, mutual aid, searchable archives, live events, music video, and link pages.',
+      'Eight products from SUBCULT for Twitch clips, mutual aid, searchable archives, live events, music video, account hosting, and link pages.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -95,7 +98,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/about',
     title: fullTitle('Studio'),
     description:
-      'SUBCULT is the independent studio behind CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, and Kork.',
+      'SUBCULT is the independent studio behind CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, and Kork.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [ORGANIZATION],

@@ -65,6 +65,15 @@ const selections = [
     highlights: ['Start from a template', 'Sync the lyrics', 'Export in your browser'],
   },
   {
+    slug: 'prichal',
+    category: 'Account hosting',
+    headline: 'Your server. We keep it running.',
+    summary:
+      'Prichal runs your account’s home server on the open network Bluesky runs on, so your name, posts and followers live somewhere that is yours. Private preview; not open for sign-up yet.',
+    highlights: ['Your own server', 'Your name as your username', 'Kept running for you'],
+    liveLabel: 'See the preview',
+  },
+  {
     slug: 'kork',
     category: 'Link pages',
     headline: 'Every link. One board.',
