@@ -1,0 +1,35 @@
+{
+  "observed_at": "2026-10-02",
+  "source_repository": "https://git.subcult.tv/subculture-collective/left-field",
+  "source_revision": "abcf90fdd833adfb9fc6ba568d2e661742ff2538",
+  "source_files": [
+    {
+      "path": "src/app/globals.css",
+      "sha256": "5173cba337dc6637b0976856241a1ec0d373e578844aa57271613ff57d484688"
+    },
+    {
+      "path": "src/components/presentational.tsx",
+      "sha256": "835c42e32c9a9bc34179deaefaad55422bae1ae3ee06c2a0161ffac6fb9ce50b"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "sha256": "402668944e208200eac1b06d3f7015ff64a41f9033ab69dae4c705c6f95d58fb"
+    },
+    {
+      "path": "src/app/icon.svg",
+      "sha256": "48f66ef6a2a1365492fd4b2ac9d33755797ed2e3c69dcd81eb8d731949468288"
+    }
+  ],
+  "studio_baseline": "cb3cfbd",
+  "mark": {
+    "author": "Codex, generated for the user request",
+    "master": "left_field_assets.py:mark",
+    "status": "user-approved original vector geometry",
+    "revision": "User-requested revision: F extended to the L baseline; 26\u00d726 rust square at their intersection.",
+    "approval": "User said perfect after the baseline/intersection revision; approved 2026-10-02."
+  },
+  "palette": "Captured from src/app/globals.css; unchanged",
+  "type": "Liberation Serif and Public Sans are portable export alternatives to Georgia and Arial; JetBrains Mono follows Studio label conventions",
+  "public_domain": null,
+  "publication": "not performed"
+}

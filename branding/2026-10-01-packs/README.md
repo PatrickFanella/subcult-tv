@@ -39,3 +39,15 @@ Patrick variation update: originals are preserved in `references/patrick-variati
 CLPR selection: Clip stack for the main layouts; single clip card for the square post. The comparison packs remain available under `clpr-directions/`; the main `clpr.zip` contains the selected combination.
 
 Kork (added October 2, 2026): identity for the self-serve links-page service, code name zelda. The user compared four directions in `corkboard-directions/` and selected A, the pinned card, under the name Kork. The pack uses an original pinned-card mark, a cork field, paper cards, cobalt pushpins, Archivo Black headlines, Atkinson Hyperlegible Next body copy and JetBrains Mono labels. Archivo Black was added to `fonts/` with its OFL license. Rebuild it alone with `BRAND_ONLY=kork python3 build_packs.py`, then `BRAND_ONLY=kork python3 render_video_previews.py`. Card destinations and the QR glyph are placeholders; the glyph encodes nothing.
+
+Left Field (added October 2, 2026): user-approved field-ledger identity based on the
+app’s paper, dark-ink and rust palette. Includes an original LF mark, editorial
+source-row layouts and web assets. The user approved the direction and revised LF mark. Rebuild with `BRAND_ONLY=left-field python build_packs.py`,
+then the same filter for `render_video_previews.py`, then
+`python finalize_left_field.py`. Its source observations and validation are
+inside `brands/left-field/`. No Left Field site assets have been replaced.
+
+For the public site, export only the approved Left Field assets with
+`python scripts/export_left_field.py --site-root /path/to/subcult-tv` from the
+Studio root. The exporter verifies source hashes and writes destination
+provenance. The full pack remains in Studio.

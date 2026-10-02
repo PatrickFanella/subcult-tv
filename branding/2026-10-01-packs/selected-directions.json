@@ -41,5 +41,15 @@
     "direction": "A / Pinned card",
     "name": "Kork (chosen over Corkboard; renamed from code name zelda)",
     "alternatives": "corkboard-directions/"
+  },
+  "left_field": {
+    "date": "2026-10-02",
+    "name": "Left Field",
+    "name_requested_by": "user",
+    "direction": "A / The field ledger",
+    "mark_status": "user-approved LF baseline/intersection revision",
+    "direction_selected_by_user": true,
+    "basis": "existing app palette and editorial layout",
+    "publication": "not performed"
   }
 }

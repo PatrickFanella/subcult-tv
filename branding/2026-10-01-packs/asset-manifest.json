@@ -1,8 +1,8 @@
 [
   {
     "path": "README.md",
-    "bytes": 5124,
-    "sha256": "77f2dc2ba14bdc1ca6d8c1ab0cd227a58bbd65cb1ce2ad9140245260735f699c"
+    "bytes": 6682,
+    "sha256": "0c779e01fb5de06f0a2e7f937b493c761339a56dad8bd5a42a090477d7b7011a"
   },
   {
     "path": "audit_patchwork_contrast.py",
@@ -3441,13 +3441,13 @@
   },
   {
     "path": "brands.json",
-    "bytes": 6740,
-    "sha256": "19878e79f2d20ef1f9b773ac911ca7ec51ec0e333154671c2ed82cab2fcfc563"
+    "bytes": 8574,
+    "sha256": "3c2eb583dfa66c9b648d722def2bcd660c80785c7e1c7c6a7b9b1beb2ac26bd1"
   },
   {
     "path": "build_packs.py",
-    "bytes": 27964,
-    "sha256": "b45df320f6df560c40eb9af3e013d9d52fbebf8f5c2cfcda9065fce8a5521208"
+    "bytes": 30976,
+    "sha256": "1defb627aea9d4601b39c170c6efbaed4bec9d88daa429ff2c219c4dd4bcf29f"
   },
   {
     "path": "clpr-directions/comparison.png",
@@ -4321,8 +4321,8 @@
   },
   {
     "path": "index.html",
-    "bytes": 13338,
-    "sha256": "63414c91707f944670f98f2eee57842dddf131ebe1392aa2aab21b785481ebce"
+    "bytes": 15301,
+    "sha256": "f392f2832207975a2fa99f0da8e570a9dfcda3c45a09b001051d7493c1e11ba3"
   },
   {
     "path": "patchwork.zip",
@@ -4671,8 +4671,8 @@
   },
   {
     "path": "selected-directions.json",
-    "bytes": 1057,
-    "sha256": "67190a74e7d384cb57a5927aa1e114f7d0c86dfc0f813d2535f1b143de5a1f2e"
+    "bytes": 1636,
+    "sha256": "116ff40d67f0b793da1a7527897c87b77b4f26f7af7eb2aa35a8f059474c2e6a"
   },
   {
     "path": "starter-template/README.md",
@@ -5003,5 +5003,450 @@
     "path": "fonts/spacemono-OFL.txt",
     "bytes": 4392,
     "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f"
+  },
+  {
+    "path": "brands/left-field/GUIDE.md",
+    "bytes": 5844,
+    "sha256": "6d63e22aa9c1cfae08812e3ce995eda412643e205a21df15643d8ce01a755039"
+  },
+  {
+    "path": "brands/left-field/alt-text.md",
+    "bytes": 596,
+    "sha256": "c627fd01567b8b385e1e6aed94e32cd0e7176e2c1cde0ba9276ca454be9b9a4f"
+  },
+  {
+    "path": "brands/left-field/asset-manifest.json",
+    "bytes": 15569,
+    "sha256": "c95dd960a962cdd41d15340a874309991c33ed6e917257ec2cdcc9fc1087a7d5"
+  },
+  {
+    "path": "brands/left-field/fonts/JetBrains-Mono-0.ttf",
+    "bytes": 112172,
+    "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+  },
+  {
+    "path": "brands/left-field/fonts/JetBrains-Mono-1.ttf",
+    "bytes": 112092,
+    "sha256": "a1d92abc6b02a87faed23d98067ab1027e8e95242fd7c9978a072ea383b89d1a"
+  },
+  {
+    "path": "brands/left-field/fonts/Liberation-LICENSE.txt",
+    "bytes": 4414,
+    "sha256": "93fed46019c38bbe566b479d22148e2e8a1e85ada614accb0211c37b2c61c19b"
+  },
+  {
+    "path": "brands/left-field/fonts/LiberationSerif-Bold.ttf",
+    "bytes": 370196,
+    "sha256": "28f2d4300ee366d1ff9ca95df967a27e77987c87857fad0d9c85034405aae39d"
+  },
+  {
+    "path": "brands/left-field/fonts/LiberationSerif-Regular.ttf",
+    "bytes": 393692,
+    "sha256": "86b9ea1c2f41bed9d7c09ccad4abc2894b33df5de60e5bbbece5d48610911870"
+  },
+  {
+    "path": "brands/left-field/fonts/Public-Sans-0.ttf",
+    "bytes": 56172,
+    "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546"
+  },
+  {
+    "path": "brands/left-field/fonts/Public-Sans-1.ttf",
+    "bytes": 56364,
+    "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a"
+  },
+  {
+    "path": "brands/left-field/fonts/jetbrainsmono-OFL.txt",
+    "bytes": 4399,
+    "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+  },
+  {
+    "path": "brands/left-field/fonts/publicsans-OFL.txt",
+    "bytes": 4390,
+    "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-dark-outlined.svg",
+    "bytes": 1928,
+    "sha256": "978339c360f18a73462bf2d08d94f9bee215d664d866554cb49e5b7352831e81"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-dark.png",
+    "bytes": 3796,
+    "sha256": "a18f203905fdd6bc9e8ba1e52856df764fe457af11f4722926b021b2c5ece404"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-dark.svg",
+    "bytes": 444,
+    "sha256": "5030380f74f58c85898a50a8e0679437fe8aadbc418d7afa6a8e76385fc8447a"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-light-outlined.svg",
+    "bytes": 1929,
+    "sha256": "ae10bd4103195859611f3ded034f9748f66b4c59a07e873c0391ff74d20f915f"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-light.png",
+    "bytes": 3793,
+    "sha256": "f6929a96fcfc7229f8a3b5d7d68623dc457cf5e8213b90ef2c070fb7bc9c0c74"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-light.svg",
+    "bytes": 445,
+    "sha256": "3f3f17a3b062e5b993698090be73888b03f49b04e0fb5281dbe9ae6ec2646395"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-mono-dark-outlined.svg",
+    "bytes": 1933,
+    "sha256": "1cd7a27f52107df1850a071cffc781374edea673a5f648765b988ce4a9509de1"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-mono-dark.png",
+    "bytes": 3217,
+    "sha256": "5eb3f0b5ea49c7089bbbeb7bcedb8dd1cc2a966bd658015514046b48214acb96"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-mono-dark.svg",
+    "bytes": 449,
+    "sha256": "c6ba468ffbf705bfa9a074b68ec21a3700e8b54a4aa2057396ed298e9104835a"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-mono-light-outlined.svg",
+    "bytes": 1934,
+    "sha256": "b7657bfd573848d4be4ef8cdfee07c98cf8e0e168a2ad79c1167e69a5765136f"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-mono-light.png",
+    "bytes": 3779,
+    "sha256": "dbaf685c488c6a97176dc6e77ec18779878dc4e95f0aeb1c5db48040891f40c8"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-mono-light.svg",
+    "bytes": 450,
+    "sha256": "48a7c8fd71e737f71c16a711423b10abf3ff3dd060907bfccd15b4a20857383c"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-primary-outlined.svg",
+    "bytes": 1931,
+    "sha256": "3ff058e357bd03d2398ddb34a4ce04789a03ebee8ffed987b6fd1221e4a05835"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-primary.png",
+    "bytes": 3829,
+    "sha256": "52d0e863eebb93deade043e825f3f4bd5446838feb6824f44c724462c797fe1f"
+  },
+  {
+    "path": "brands/left-field/logos/lockup-primary.svg",
+    "bytes": 447,
+    "sha256": "04df273a6a973ea9b5089f6ce8c5e064e20b27d9c74f7fe791a0c9d83b3dd7a3"
+  },
+  {
+    "path": "brands/left-field/logos/mark-dark-outlined.svg",
+    "bytes": 646,
+    "sha256": "b7cef4caaedf5ca82f7bf90a8490093d6241f1cee742ff4021f20c97ce4db422"
+  },
+  {
+    "path": "brands/left-field/logos/mark-dark.png",
+    "bytes": 693,
+    "sha256": "f441684f4b19c45920f8d125c013bdca56442fcc92ecf275ac949842ae114f4f"
+  },
+  {
+    "path": "brands/left-field/logos/mark-dark.svg",
+    "bytes": 327,
+    "sha256": "484ecd9d0876a9922687bf57abc39064c881c324036eed479e984445987a4fcd"
+  },
+  {
+    "path": "brands/left-field/logos/mark-light-outlined.svg",
+    "bytes": 647,
+    "sha256": "4df331b326b038d6d279612dbe144b544230053c3c81058b85beff86d142b8f4"
+  },
+  {
+    "path": "brands/left-field/logos/mark-light.png",
+    "bytes": 703,
+    "sha256": "1ab773a793350b0a243e046d11655cbbe21e92e021003e2c5d5af5fde66d24ac"
+  },
+  {
+    "path": "brands/left-field/logos/mark-light.svg",
+    "bytes": 328,
+    "sha256": "ee944f1741c693af9d9007811b8faed59f8912ce8b73f0383f35a8432a910d6f"
+  },
+  {
+    "path": "brands/left-field/logos/mark-mono-dark-outlined.svg",
+    "bytes": 651,
+    "sha256": "ee001b7ca5e6f9dd7ba7314fb09d8beaa60c5a9f651b4618e6d49efedd316f20"
+  },
+  {
+    "path": "brands/left-field/logos/mark-mono-dark.png",
+    "bytes": 671,
+    "sha256": "a2b649457c958e4ccb2321f4d9e38633c982d4360610375741f77f10cfaf0b0d"
+  },
+  {
+    "path": "brands/left-field/logos/mark-mono-dark.svg",
+    "bytes": 332,
+    "sha256": "d52c6d621d49b56eda999151690616c412310bfc005195c723b117c77b788086"
+  },
+  {
+    "path": "brands/left-field/logos/mark-mono-light-outlined.svg",
+    "bytes": 652,
+    "sha256": "82f75246549d06f2501477dff29e676d4639846fc8693d3cdc2423251e4a6fb8"
+  },
+  {
+    "path": "brands/left-field/logos/mark-mono-light.png",
+    "bytes": 684,
+    "sha256": "6b84cbe5cf2d17a3514361c570e7dd0b300aa21a5270e288bffd767371918311"
+  },
+  {
+    "path": "brands/left-field/logos/mark-mono-light.svg",
+    "bytes": 333,
+    "sha256": "e8f229e7c8760a81241da158357932a9151fb98cd48bfe66fee6d6d55e54c6c7"
+  },
+  {
+    "path": "brands/left-field/logos/mark-primary-outlined.svg",
+    "bytes": 649,
+    "sha256": "90e94c7fea0a6b172e94de4851a798d7a0de450c935f772163a86691e21fe26c"
+  },
+  {
+    "path": "brands/left-field/logos/mark-primary.png",
+    "bytes": 701,
+    "sha256": "41f77343202d28b78157e44d360111fa1b8c8b2e69834f1fc57ee1c95808ac23"
+  },
+  {
+    "path": "brands/left-field/logos/mark-primary.svg",
+    "bytes": 330,
+    "sha256": "625dbd7ddb55bb65f32c3b0310898a70236fd1269609613a3d24da2c8f9c372f"
+  },
+  {
+    "path": "brands/left-field/pack-preview.png",
+    "bytes": 139732,
+    "sha256": "fcdd6e04b1f98a0b65db66d679c3c39d9ad75e13f503e31fedd81ea10ac83cac"
+  },
+  {
+    "path": "brands/left-field/pack-preview.svg",
+    "bytes": 11771,
+    "sha256": "ebd910e9fd018435098378d19f4cc7de89debf29d2eeeb913dfd2e9dc21580bc"
+  },
+  {
+    "path": "brands/left-field/product/README.md",
+    "bytes": 290,
+    "sha256": "3e98e89e21af17cf169047755bf0d4e0d6f809a25cb92ba50a05acbc3a22b2d5"
+  },
+  {
+    "path": "brands/left-field/product/apple-touch-icon.png",
+    "bytes": 808,
+    "sha256": "5273f7dcd8b684e9cca5920021c219e6f8fdabb3f731eea0966b9a775e127293"
+  },
+  {
+    "path": "brands/left-field/product/favicon.svg",
+    "bytes": 368,
+    "sha256": "582a6636cf740f2fb240a181d8dd67be126a16692d57c33e8c08b1dcfde970da"
+  },
+  {
+    "path": "brands/left-field/product/icon-192.png",
+    "bytes": 742,
+    "sha256": "c5fa7930497d36e50bc577474838e17912a4bdaf1c6c07cfb10f1f9cf1076f76"
+  },
+  {
+    "path": "brands/left-field/product/icon-512.png",
+    "bytes": 1995,
+    "sha256": "ebecf2a2d9228713cf83b8965492cc89b8ff2ca81300533c561304589ed484f6"
+  },
+  {
+    "path": "brands/left-field/product/og.png",
+    "bytes": 32246,
+    "sha256": "f1168fe804c48620e0d1377b81aa5f8a72ec0c9720c803a0b71a5ed7722c0874"
+  },
+  {
+    "path": "brands/left-field/product/og.svg",
+    "bytes": 1298,
+    "sha256": "e11902f3607439d960f4195415bc003c7e6cf34d4f496d5a4ba3f44b6712b05a"
+  },
+  {
+    "path": "brands/left-field/social/avatar.png",
+    "bytes": 1995,
+    "sha256": "ebecf2a2d9228713cf83b8965492cc89b8ff2ca81300533c561304589ed484f6"
+  },
+  {
+    "path": "brands/left-field/social/avatar.svg",
+    "bytes": 390,
+    "sha256": "912e110783ae3ea830e0a2d2538a93fc3225156ebba7baa78b7c21f335e5259c"
+  },
+  {
+    "path": "brands/left-field/social/banner-tall-master.png",
+    "bytes": 38652,
+    "sha256": "8a109a8ab2fb3aea21cb1891f0606b90b026998be985cb1963e22e83694c89ba"
+  },
+  {
+    "path": "brands/left-field/social/banner-tall-master.svg",
+    "bytes": 1229,
+    "sha256": "083d4f75f6f1a944d0b59c0f42fc9fceacac4a5a55a696806146d88375ff1cd3"
+  },
+  {
+    "path": "brands/left-field/social/banner-x-bluesky.png",
+    "bytes": 37875,
+    "sha256": "b13afed5d8820186134d3157ecda3e5a9439f65f5ded16359203f88b529cd6c7"
+  },
+  {
+    "path": "brands/left-field/social/banner-x-bluesky.svg",
+    "bytes": 1113,
+    "sha256": "d47f44d12eb9b56c8af5fea37f765c293319fe9a5407c970971408c0daee426f"
+  },
+  {
+    "path": "brands/left-field/social/landscape-template.png",
+    "bytes": 49589,
+    "sha256": "b24a80e3c49368374c1653841ac6d087813d90cc5aa058382ece42ce849f2881"
+  },
+  {
+    "path": "brands/left-field/social/landscape-template.svg",
+    "bytes": 1116,
+    "sha256": "9d8cbf2c372cd2a86871d590111b481ff122eca77c9afc3ad4d3be277f45c8fc"
+  },
+  {
+    "path": "brands/left-field/social/quote-template.png",
+    "bytes": 51785,
+    "sha256": "3341a31bd30e1cc1991cb3525dab353c1674e16212f240a02961d91b15b50ccb"
+  },
+  {
+    "path": "brands/left-field/social/quote-template.svg",
+    "bytes": 1234,
+    "sha256": "6758901e14cba3e30489b0e71c09472d0eff9a607133780fbdae075e32caf931"
+  },
+  {
+    "path": "brands/left-field/social/release-template.png",
+    "bytes": 54150,
+    "sha256": "097385b37812f8c0746b1f988e0f63003ea37b629e06364bf8e703a744e2c92b"
+  },
+  {
+    "path": "brands/left-field/social/release-template.svg",
+    "bytes": 1242,
+    "sha256": "c779fd435e178a1560baaa93d967da09f7d759696b385f1afc43d04b785c393d"
+  },
+  {
+    "path": "brands/left-field/social/screenshot-frame.png",
+    "bytes": 39196,
+    "sha256": "d7121cc324a0856c0e18bbd403048df7133864f0936038ffee6a51c905ae2869"
+  },
+  {
+    "path": "brands/left-field/social/screenshot-frame.svg",
+    "bytes": 929,
+    "sha256": "d62cb86cf3e94a682dee5e747eb6006f5f4c3fc13c0dd1118842e965aa428d3b"
+  },
+  {
+    "path": "brands/left-field/social/square-post.png",
+    "bytes": 60561,
+    "sha256": "243634f3eb344fe8721a9fcccbfc97f6c531a6d8adb5e4b5fec86ee494707bfe"
+  },
+  {
+    "path": "brands/left-field/social/square-post.svg",
+    "bytes": 1859,
+    "sha256": "77934700df049c4d09233d0dd9d742475660df9e320350481ee5360798967b5f"
+  },
+  {
+    "path": "brands/left-field/social/story-template.png",
+    "bytes": 75138,
+    "sha256": "e8fd7ff99238ea3b3a6f99797f9c443081313b270c79456f1d14586960f6d762"
+  },
+  {
+    "path": "brands/left-field/social/story-template.svg",
+    "bytes": 2110,
+    "sha256": "c7d84cccbfb7427afefa8c6f0b6b8b1eb41db1a7bd4edfee79dc8e21457a27a3"
+  },
+  {
+    "path": "brands/left-field/source-provenance.json",
+    "bytes": 1438,
+    "sha256": "6faa3ee9aae4e20bf774e2be91c2263c1b69f16502fef2a46e210b8bf51369da"
+  },
+  {
+    "path": "brands/left-field/tokens.css",
+    "bytes": 246,
+    "sha256": "831824504ee1461aa6720faeaa703415a585b51ff8235c91f55ad7e943feff5b"
+  },
+  {
+    "path": "brands/left-field/tokens.json",
+    "bytes": 796,
+    "sha256": "3a12e530e05d8b52be844cd5ddf8b93fa6be16182b9d8bccdf46e5801f7ec50f"
+  },
+  {
+    "path": "brands/left-field/verification.json",
+    "bytes": 383,
+    "sha256": "7fb5b283dd81d4df1920911854c5de48cd42e3a3474637dd7493dc29e2346b47"
+  },
+  {
+    "path": "brands/left-field/video/captions.ass",
+    "bytes": 635,
+    "sha256": "5ce37f4c629571d82f23617d815725aa35416003664ae32bad7856a130c3b5b3"
+  },
+  {
+    "path": "brands/left-field/video/end-card.png",
+    "bytes": 20235,
+    "sha256": "5a2b7281a184c3bf0ed1c63018c36969520c39da1f7dc8dff63c377bffe20ea6"
+  },
+  {
+    "path": "brands/left-field/video/end-card.svg",
+    "bytes": 715,
+    "sha256": "32f75ad11603509eab2ea3dca53dd0f7bb3303f50fbacef702a474e3c16d00ce"
+  },
+  {
+    "path": "brands/left-field/video/lower-third.png",
+    "bytes": 25643,
+    "sha256": "055624bdce75d589dbde234076423feea375a0652cca9140ff4fa53bd4b16d2f"
+  },
+  {
+    "path": "brands/left-field/video/lower-third.svg",
+    "bytes": 729,
+    "sha256": "40942259e741b2a486a1434c6a237e81aeac2a9bed5bf6bd61e35e46669ad449"
+  },
+  {
+    "path": "brands/left-field/video/template-preview.mp4",
+    "bytes": 59696,
+    "sha256": "e8107be1201349f27afffbd8ec45783c6cb1ef2580ae2ccc2a223c0fe36e4d4e"
+  },
+  {
+    "path": "brands/left-field/video/thumbnail.png",
+    "bytes": 40934,
+    "sha256": "c6da01a20c63313c25c4ddae96c7708d3579d5d9d825abaf02d18eb3ed709180"
+  },
+  {
+    "path": "brands/left-field/video/thumbnail.svg",
+    "bytes": 772,
+    "sha256": "eb15d347737cb65597f8055465d83e543c4c4a080d084553939b25da400d63c5"
+  },
+  {
+    "path": "brands/left-field/video/title-card.png",
+    "bytes": 40684,
+    "sha256": "090923cb44e3f6fd41a1a68c2a24e4146e4393c2adfe4a48c8f16ac71e2aa4ff"
+  },
+  {
+    "path": "brands/left-field/video/title-card.svg",
+    "bytes": 774,
+    "sha256": "85ceca8a495fe9525caf64e0d53bb204ecada6196f6317723a4f889eb8a8c510"
+  },
+  {
+    "path": "finalize_left_field.py",
+    "bytes": 6777,
+    "sha256": "d976465961940924ed7c902e374f0bc88c8d78152c42996927bd2110f44f10af"
+  },
+  {
+    "path": "left_field_assets.py",
+    "bytes": 1963,
+    "sha256": "2d28bf6fffa1731548fa278d05de0a33feaebf01a4c9febe7f1191413d364c13"
+  },
+  {
+    "path": "brands/left-field/product/hero-outlined.svg",
+    "bytes": 28868,
+    "sha256": "b9754d6f38e437e999b057fe001c164ed9f9018bac3747885b8534c4bf0711b6"
+  },
+  {
+    "path": "brands/left-field/product/hero.png",
+    "bytes": 45638,
+    "sha256": "8e1daed8575736f97ecb955dc3b208935dfc3bddcda32f3f9e53c950411d9c36"
+  },
+  {
+    "path": "brands/left-field/product/hero.svg",
+    "bytes": 1299,
+    "sha256": "4755ce707a113462ca4b6479918c03dcb2d392a55d00379c9d884995ba1146cb"
+  },
+  {
+    "path": "brands/left-field/product/og.jpg",
+    "bytes": 45974,
+    "sha256": "8873cd8edc983d18bf6a9798406fd6779ff4eb63060fc3924b28068a62e8b46a"
   }
 ]

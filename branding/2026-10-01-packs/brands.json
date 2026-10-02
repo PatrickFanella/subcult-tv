@@ -245,5 +245,31 @@
     "tag_color": "#1b130c",
     "selected_by_user": true,
     "direction_selection": "user"
+  },
+  {
+    "id": "left-field-a",
+    "brand": "Left Field",
+    "variant": "A",
+    "name": "The field ledger",
+    "bg": "#f4f0e6",
+    "fg": "#16221f",
+    "accent": "#a33c26",
+    "secondary": "#e5eadc",
+    "display": "Liberation Serif",
+    "body": "Public Sans",
+    "label": "JetBrains Mono",
+    "safe_label": "#a33c26",
+    "headline": [
+      "Read the field.",
+      "Trace the evidence."
+    ],
+    "tag": "SEAT RESEARCH / SOURCE CONTEXT",
+    "description": "Warm paper, dark green ink and rust-red annotations: an editorial system for seat research and its source records.",
+    "mode": "left-field",
+    "url": null,
+    "source": "Left Field source checkout at abcf90fdd833adfb9fc6ba568d2e661742ff2538, src/app/globals.css and src/components/presentational.tsx; observed 2026-10-02. New original LF monogram. LF baseline/intersection revision approved by the user in this thread.",
+    "slug": "left-field",
+    "selected_by_user": true,
+    "direction_selection": "user"
   }
 ]
