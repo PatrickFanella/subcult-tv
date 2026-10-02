@@ -118,6 +118,44 @@
     "coverColor": "#ff9fe0",
     "coverPattern": "waves"
   },
+  "prichal": {
+    "slug": "prichal",
+    "name": "Prichal",
+    "description": "Managed account servers for the open social web, in private preview.",
+    "longDescription": "Prichal runs a personal data server (PDS) for your account on the open network Bluesky runs on: your posts, media and identity live on a server that is yours, and Prichal keeps it running. It is a private preview and not open for sign-up yet.",
+    "whyItExists": "Running your own server on the open network means keeping a machine online and up to date. Prichal does that work so creators and organizations can own their place on the network without administering it.",
+    "status": "incubating",
+    "type": ["software", "social"],
+    "stack": ["Go", "PostgreSQL", "React", "AT Protocol"],
+    "topics": ["at-protocol", "bluesky", "hosting", "identity"],
+    "url": "https://prichal.subcult.tv",
+    "repoUrl": "https://git.subcult.tv/subculture-collective/prichal",
+    "lastUpdated": "2026-10-02T00:00:00Z",
+    "screenshot": "/screenshots/prichal-home-1440.webp",
+    "featured": true,
+    "order": 6,
+    "coverColor": "#b23a26",
+    "coverPattern": "circuit"
+  },
+  "kork": {
+    "slug": "kork",
+    "name": "Kork",
+    "description": "Themed link pages for every social, payment, and contact link.",
+    "longDescription": "Kork is a self-serve link-in-bio service. Build one themed page with 92 catalog services, links, embeds, QR codes, a contact card, and an email sign-up, then share a single link. Payment buttons go straight to the creator's own accounts, and analytics are anonymous daily totals.",
+    "whyItExists": "A bio has room for one link. Kork puts the socials, tip jars, music, video, and contact details behind it on one page, without trackers and without taking a cut of tips or sales.",
+    "status": "active",
+    "type": ["software"],
+    "stack": ["Go", "PostgreSQL", "React", "TypeScript", "Vite"],
+    "topics": ["link-in-bio", "link-pages", "creators", "privacy"],
+    "url": "https://kork.subcult.tv",
+    "repoUrl": "https://git.subcult.tv/subculture-collective/kork",
+    "lastUpdated": "2026-10-02T00:00:00Z",
+    "screenshot": "/screenshots/kork-editor-1440.webp",
+    "featured": true,
+    "order": 7,
+    "coverColor": "#d4a56c",
+    "coverPattern": "dots"
+  },
   "left-field": {
     "slug": "left-field",
     "name": "Left Field",
@@ -131,7 +169,7 @@
     "repoUrl": "https://git.subcult.tv/subculture-collective/left-field",
     "lastUpdated": "2026-10-02T00:00:00Z",
     "featured": true,
-    "order": 6,
+    "order": 8,
     "coverColor": "#a33c26",
     "coverPattern": "grid"
   }

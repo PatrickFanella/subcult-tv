@@ -68,3 +68,10 @@
   font-display: swap;
   src: url(/brand/fonts/space-mono-700.woff2) format('woff2');
 }
+@font-face {
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/brand/fonts/archivo-black-400.ttf) format('truetype');
+}

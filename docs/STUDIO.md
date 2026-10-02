@@ -2,7 +2,7 @@
 
 `/admin/studio` uses the existing site login. The Go API reads a private exported bundle from `STUDIO_ROOT`. It serves brand/media metadata and allowlisted asset IDs through authenticated routes. It never serves the Studio repository as a public directory.
 
-The interface reads the exported brand catalog, its guides and outlined logos, plus the nine catalogued media assets. The current Studio catalog includes nine brands following the Kork addition. Media review status, rights and source descriptions remain visible. This interface does not edit masters or approve, schedule or publish social posts.
+The interface reads the exported brand catalog, its guides and outlined logos, plus the nine catalogued media assets. The Studio catalog includes ten brands once the Prichal pack (subcult-studio PR 3) is merged and the bundle is re-exported. Media review status, rights and source descriptions remain visible. This interface does not edit masters or approve, schedule or publish social posts.
 
 ## Prepare the bundle
 

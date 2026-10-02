@@ -65,6 +65,23 @@ const selections = [
     highlights: ['Start from a template', 'Sync the lyrics', 'Export in your browser'],
   },
   {
+    slug: 'prichal',
+    category: 'Account hosting',
+    headline: 'Your server. We keep it running.',
+    summary:
+      'Prichal runs your account’s home server on the open network Bluesky runs on, so your name, posts and followers live somewhere that is yours. Private preview; not open for sign-up yet.',
+    highlights: ['Your own server', 'Your name as your username', 'Kept running for you'],
+    liveLabel: 'See the preview',
+  },
+  {
+    slug: 'kork',
+    category: 'Link pages',
+    headline: 'Every link. One board.',
+    summary:
+      'Put your socials, tip jars, music and video players, QR codes, and contact card on one themed page. Payment buttons go straight to your own accounts, and Kork takes no cut.',
+    highlights: ['92 services', 'Ten themes', 'No trackers'],
+  },
+  {
     slug: 'left-field',
     category: 'Election research / in development',
     headline: 'Read the field. Trace the evidence.',

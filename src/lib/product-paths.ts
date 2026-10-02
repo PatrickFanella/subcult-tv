@@ -5,6 +5,8 @@ export const PRODUCT_ROUTES: Record<string, string> = {
   'transcript-create': 'rekolekt',
   'subcult-os': 'subcult-os',
   undertow: 'undertow',
+  prichal: 'prichal',
+  kork: 'kork',
   'left-field': 'left-field',
 };
 

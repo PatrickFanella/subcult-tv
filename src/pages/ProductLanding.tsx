@@ -8,6 +8,13 @@ import NotFound from '@/pages/NotFound';
 import '@/styles/product-landings.css';
 import '@/styles/product-fonts.css';
 
+// Brand marks shown beside the product name; other products use the name alone.
+const PRODUCT_MARKS: Record<string, string> = {
+  'left-field': '/brand/left-field/mark.svg',
+  'transcript-create': '/brand/rekolekt-mark.svg',
+  kork: '/brand/kork-mark.svg',
+};
+
 export default function ProductLanding() {
   const { slug } = useParams<{ slug: string }>();
   const products = getShowcaseProducts();
@@ -40,10 +47,7 @@ export default function ProductLanding() {
           <div className="landing-hero-copy">
             <p className="landing-eyebrow">{product.category}</p>
             <div className="landing-wordmark">
-              {project.slug === 'transcript-create' && (
-                <img src="/brand/rekolekt-mark.svg" alt="" />
-              )}
-              {project.slug === 'left-field' && <img src="/brand/left-field/mark.svg" alt="" />}
+              {PRODUCT_MARKS[project.slug] && <img src={PRODUCT_MARKS[project.slug]} alt="" />}
               <h1 id="product-title">{project.name}</h1>
             </div>
             <h2 className="landing-headline">{product.headline}</h2>

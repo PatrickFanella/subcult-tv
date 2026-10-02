@@ -339,4 +339,119 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     ],
     closing: 'Make the track a visual release.',
   },
+  prichal: {
+    audience: 'For creators and organizations who want their own place on the open social web.',
+    introduction:
+      'Your account on the open network Bluesky runs on lives on a server. Prichal runs that server for you, so your name, posts and followers sit somewhere that is yours without you administering a machine.',
+    features: [
+      {
+        title: 'Your own server',
+        description:
+          'Each account gets a personal data server (PDS) on the open network. Keep posting from Bluesky like always.',
+      },
+      {
+        title: 'Your name as your username',
+        description:
+          'Use a domain you own as your handle, such as @yourband.com, so people know the account is really you.',
+      },
+      {
+        title: 'Room for your community',
+        description:
+          'Organizations will be able to invite members onto their server. Member accounts are in development and not available yet.',
+      },
+    ],
+    steps: [
+      { title: 'Dock your account', description: 'Create your account on a Prichal server.' },
+      {
+        title: 'Post as usual',
+        description: 'Use Bluesky or any app on the open network with the same account.',
+      },
+      {
+        title: 'We handle the rest',
+        description: 'Prichal keeps the server online and up to date.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sign up today?',
+        answer:
+          'Not yet. Prichal is a private preview while hosting, backups and recovery are tested.',
+      },
+      {
+        question: 'Are my posts private?',
+        answer:
+          'No. Posts on the open network are public, wherever your server runs. Prichal changes who runs the server, not who can read your posts.',
+      },
+      {
+        question: 'What happens to my account if I leave?',
+        answer:
+          'Accounts on the open network can move to another host. Prichal will document how before it opens.',
+      },
+    ],
+    closing: 'Your server. We keep it running.',
+  },
+  kork: {
+    audience: 'For creators, musicians, small shops, and anyone who shares one link in a bio.',
+    introduction:
+      'A bio has room for one link. Kork turns it into a page with your socials, tip jars, music and video, QR codes, and contact card, in a theme you choose.',
+    features: [
+      {
+        title: 'Pin every service',
+        description:
+          'Choose from 92 services with brand icons and handle checks, from Instagram and Bluesky to Bandcamp, Cash App, Ko-fi, and Bitcoin.',
+      },
+      {
+        title: 'Keep every tip',
+        description:
+          'Payment buttons link straight to your own Cash App, PayPal, Venmo, or Ko-fi. Kork never takes a cut of tips or sales.',
+      },
+      {
+        title: 'Make it yours',
+        description:
+          'Start from ten theme presets, then set your own colors, fonts, buttons, and background. Stack the links or number them as a ledger.',
+      },
+    ],
+    steps: [
+      {
+        title: 'Sign up',
+        description:
+          'Create an account and confirm your email. New accounts can publish after 24 hours.',
+      },
+      {
+        title: 'Build the page',
+        description:
+          'Add services, links, embeds, QR codes, tour dates, or an email sign-up, or import an existing Linktree page.',
+      },
+      {
+        title: 'Share one link',
+        description: 'Publish at kork.subcult.tv/yourname and put it in every bio.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What does Kork cost?',
+        answer:
+          'Kork is free to use. A paid Kork Pro plan is planned, and its price has not been set.',
+      },
+      {
+        question: 'Does Kork track my visitors?',
+        answer:
+          'No. Analytics are anonymous daily totals of views, clicks, referrer domains, and countries. Kork stores no visitor IP addresses, cookies, or user agents.',
+      },
+      {
+        question: 'Can I move my page from Linktree?',
+        answer:
+          'Yes. Import from Linktree or another link page. Kork also fetches link titles and thumbnails for you.',
+      },
+      {
+        question: 'Can I use my own domain?',
+        answer: 'Not yet. Custom domain support is written but has not been rolled out.',
+      },
+      {
+        question: 'Can I take my data with me?',
+        answer: 'Yes. Download your account as a ZIP file, or delete it, from your settings.',
+      },
+    ],
+    closing: 'Pin every link to one page.',
+  },
 };
