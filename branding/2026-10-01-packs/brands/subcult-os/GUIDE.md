@@ -1,28 +1,28 @@
 # Subcult OS — Brand and asset guide
 
-Selected direction: **A / The event ledger**. Status: local production pack v1. Direction selection is not permission to publish a post or change a profile.
+Selected direction: **B / The terminal ledger**. Status: local production pack v1. Direction selection is not permission to publish a post or change a profile.
 
-Serif-led event operations, amber and cyan from the current web source.
+Subcults terminal system: Space Mono, square frames, purple actions and cyan focus on a black canvas, matching the live site.
 
-The reference is the current web source, not a verified live deployment. Use serif headings, dark rounded panels and amber/cyan accents. Georgia is the source stack; bundled Liberation Serif is the portable rendering fallback. The S/OS mark is a pack proposal; it was not found as an existing site logo.
+Matches the live os.subcult.tv design system (the Subcults terminal foundation, selected by the user on September 30, 2026; source of truth: subcult-os contracts/design/tokens.json). Space Mono is the only typeface: bold for headings, buttons and labels, regular for body copy, uppercase with wide tracking for labels. Bold is the heaviest weight. Corners are square everywhere; panels separate with visible borders, not shadows. Purple is the action and artwork color: purple fills carry white text (5.7:1), but purple text on black is below the small-text target, so labels use cyan. Cyan also marks focus. Status colors (green, amber, red, cyan) mark states and always come with words. Event artwork stays immersive and black. The OS lettermark with a cyan cursor block is a pack mark; the site itself uses the plain wordmark.
 
 ## Color roles
 
 | Role | Color | Use |
 | --- | --- | --- |
-| Base | #09090b | Main canvas |
-| Text | #fafafa | Headlines and body text |
-| Accent | #fbbf24 | Signature artwork and emphasis |
-| Secondary | #22d3ee | Supporting artwork |
-| Small label | #fbbf24 | Metadata on the main canvas |
+| Base | #000000 | Main canvas |
+| Text | #ffffff | Headlines and body text |
+| Accent | #7c3aed | Signature artwork and emphasis |
+| Secondary | #00ffff | Supporting artwork |
+| Small label | #00ffff | Metadata on the main canvas |
 
-Measured text/base contrast: **19.06:1**. Small-label/base contrast: **11.92:1**. Accent/base contrast: **11.92:1**. Use at least 4.5:1 for ordinary text and 3:1 for large text. Swatches are roles, not interchangeable text colors.
+Measured text/base contrast: **21.00:1**. Small-label/base contrast: **16.75:1**. Accent/base contrast: **3.69:1**. Use at least 4.5:1 for ordinary text and 3:1 for large text. Swatches are roles, not interchangeable text colors.
 
 ## Typography and spacing
 
-- Display: Georgia, bold for headlines.
-- Body: JetBrains Mono, regular and bold.
-- Labels: JetBrains Mono, regular.
+- Display: Space Mono, bold for headlines.
+- Body: Space Mono, regular and bold.
+- Labels: Space Mono, regular.
 - Layout spacing: 8, 16, 24, 32, 48, 64, 96 pixels.
 - Use one clear headline, one supporting point and one destination per promotional asset.
 - Keep at least one quarter of the mark height clear on all sides. Minimum mark width: 32 pixels on screen. Minimum horizontal lockup width: 220 pixels. Use the mark alone below that size.
@@ -46,4 +46,4 @@ The video templates use a 1920×1080 canvas and a 96-pixel outer margin. Keep ca
 
 Use verified product claims and exact approved copy. Quote/release template text is placeholder content and must be replaced. Describe the completed image in alt text, including the visible message; do not describe a screenshot placeholder as a working feature. `alt-text.md` supplies starter descriptions for the completed sample artwork.
 
-Reference: Web source styles; no live destination verified. Site/asset observations were made October 1, 2026. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
+Reference: Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02. Site/asset observations were made October 1, 2026. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.

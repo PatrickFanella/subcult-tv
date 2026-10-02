@@ -16,7 +16,7 @@ The guides explain color roles and contrast, typography, mark clear space and mi
 
 ## Sources and limits
 
-The site references and selected marks are captured in the earlier review’s source notes. HasanAra follows the live red/PBS theme. Subcult OS follows its web source; a live deployment was not verified. Undertow’s system monospace stack uses bundled Liberation Mono for these portable exports. Subcult OS’s Georgia stack uses bundled Liberation Serif. The Subcult OS lettermark remains a proposed pack mark.
+The site references and selected marks are captured in the earlier review’s source notes. HasanAra follows the live red/PBS theme. Undertow’s system monospace stack uses bundled Liberation Mono for these portable exports. Subcult OS was rebuilt on October 2, 2026 to match the live https://os.subcult.tv terminal system: Space Mono (bundled from google/fonts), black canvas, purple actions, cyan labels and focus, square frames. Its OS lettermark with a cyan cursor block is a pack mark; the site itself uses the plain wordmark.
 
 The 228 original asset files were checked against the review inventory and preserved. Legacy CLPR and industrial SUBCULT material is not promoted to the selected systems. The earlier CLPR filmstrip and timeline artwork is preserved as history; current layout alternatives use crop corners, clip cards and play fields. Patrick retains the waveform. Rekolekt retains its original logo, palette and typography. Only the story template’s decorative waveform is replaced with transcript rows and timestamps.
 

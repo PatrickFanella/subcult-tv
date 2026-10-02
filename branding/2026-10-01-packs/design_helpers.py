@@ -141,7 +141,7 @@ def mark(d,x,y,size):
  elif m=='patchwork':return patchwork_mark(d,x,y,size)
  elif m=='hasanara':s=image('hasanara-logo.svg',0,30,160,100)
  elif m=='undertow':s=image('undertow-favicon.svg',0,0,160,160)
- elif m=='os':s=rect(4,4,152,152,'#18181b',25)+txt(21,72,'S',54,f,'Georgia')+txt(62,122,'OS',48,a,'JetBrains Mono',700)
+ elif m=='os':s=rect(6,6,148,148,'#0d1117')+f'<rect x="6" y="6" width="148" height="148" fill="none" stroke="{a}" stroke-width="8"/>'+txt(24,105,'OS',62,f if d.get('mono') else '#ffffff','Space Mono',700)+rect(108,64,22,46,d['secondary'])
  elif m=='patrick-wave':s=wave(14,80,140,110,a,13)+f'<circle cx="139" cy="22" r="8" fill="{d["secondary"]}"/>'
  elif m=='patrick-record':s=f'<circle cx="80" cy="80" r="70" stroke="{a}" stroke-width="2" fill="none"/><circle cx="80" cy="80" r="49" stroke="{a}" stroke-width="2" fill="none"/><circle cx="80" cy="80" r="7" fill="{a}"/>'+txt(31,96,'pf',52,f,'Space Grotesk',700)
  elif m=='patrick-paper':s=txt(13,108,'pf.',98,a,'Libre Baskerville',700)
@@ -171,10 +171,10 @@ def banner(d):
   s+=txt(44,222,d['headline'][0],65,fg,'Newsreader',700)+txt(44,297,d['headline'][1],65,fg,'Newsreader',700)
   s+=image('hasanara-logo.svg',934,173,190,112)+txt(941,327,'PBS',17,b,'JetBrains Mono')+txt(44,359,'Search / passages / original context',18,'#b5afa3','Inter Tight')
  elif m=='os':
-  s+=mark(d,995,58,155)+txt(44,67,'Subcult OS',35,fg,'Georgia')
-  for i,h in enumerate(d['headline']):s+=txt(44,160+i*75,h,67,fg,'Georgia')
+  s+=mark(d,995,58,155)+txt(44,67,'Subcult OS',35,fg,'Space Mono',700)+txt(44,99,'> os.subcult.tv',17,b,'Space Mono')
+  for i,h in enumerate(d['headline']):s+=txt(44,178+i*68,h,56,fg,'Space Mono',700)
   for i,h in enumerate(['PLAN','COORDINATE','RUN DOOR','SETTLE','ARCHIVE']):
-   x=44+i*224;s+=rect(x,302,208,58,'#18181b',16)+txt(x+16,338,h,17,a if i==2 else b,'JetBrains Mono')
+   x=44+i*224;s+=rect(x,302,208,58,a if i==2 else '#0d1117',0,None if i==2 else '#465264')+txt(x+16,338,h,17,fg if i==2 else b,'Space Mono',700)
  elif m=='undertow':
   s+=txt(40,66,'UNDERTOW',31,a,'Liberation Mono',700)+txt(40,119,'AUDIO / LAYERS / MOTION',16,b,'JetBrains Mono')
   for i,h in enumerate(d['headline']):
@@ -204,7 +204,7 @@ def banner(d):
  return s
 def post(d):
  bg,fg,a,b=d['bg'],d['fg'],d['accent'],d['secondary'];m=d['mode'];s=rect(0,0,600,600,bg)+(patch_paper(600,600) if m=='patchwork' else '')
- s+=txt(36,49,d['tag'],14,a,'JetBrains Mono',maxw=526)
+ s+=txt(36,49,d['tag'],14,d['safe_label'] if m=='os' else a,'Space Mono' if m=='os' else 'JetBrains Mono',maxw=526)
  if m=='clpr':
   s+=rect(35,86,529,210,'#17141f')+wave(67,184,462,125,a,35)+rect(48,271,117,24,a)+txt(59,289,'CLIP / 001',13,bg,'IBM Plex Mono',700)
   s+=txt(36,373,'Keep the moment.',53,fg,'Barlow Condensed',700)+txt(36,433,'Find the next one.',53,fg,'Barlow Condensed',700)
@@ -218,9 +218,9 @@ def post(d):
   s+=rect(36,326,528,130,'#161616')+txt(58,365,'SOURCE / TIMESTAMP / CONTEXT',16,a,'JetBrains Mono')
   for i,w in enumerate([459,419,324]):s+=rect(58,389+i*19,w,5,'#b5afa3')
  elif m=='os':
-  s+=txt(36,134,'The door opens.',41,fg,'Georgia')+txt(36,193,'The plan holds.',41,fg,'Georgia')
-  for i,label in enumerate(['01   Plan the event','02   Run the door','03   Settle and archive']):
-   y=270+i*70;s+=rect(36,y,528,56,'#18181b',17)+txt(58,y+35,label,19,a if i==1 else b,'JetBrains Mono')
+  s+=txt(36,134,'The door opens.',38,fg,'Space Mono',700)+txt(36,190,'The plan holds.',38,fg,'Space Mono',700)
+  for i,label in enumerate(['01   PLAN THE EVENT','02   RUN THE DOOR','03   SETTLE AND ARCHIVE']):
+   y=270+i*70;s+=rect(36,y,528,56,a if i==1 else '#0d1117',0,None if i==1 else '#465264')+txt(58,y+35,label,18,fg if i==1 else b,'Space Mono',700)
  elif m=='undertow':
   s+=txt(36,130,'MAKE IT',53,fg,'Liberation Mono',700)+txt(36,194,'MOVE.',75,a,'Liberation Mono',700)
   s+=rect(42,245,522,222,'#6a5fb0')+rect(36,239,522,222,'#171429',0,b)+wave(61,350,480,184,a,43)

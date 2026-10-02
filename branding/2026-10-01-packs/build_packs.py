@@ -22,7 +22,7 @@ def source_mark(d,x,y,size,variant='color'):
  files={'clpr':'clpr-icon.svg','patchwork':'patchwork-icon.svg','hasanara':'hasanara-logo.svg','undertow':'undertow-favicon.svg','rekolekt':'rekolekt-mark.svg'}
  if d['slug'] not in files:
   body=H.mark(d,x,y,size)
-  if variant=='mono' and d['slug']=='subcult-os':body=body.replace('fill="#18181b"','fill="none"')
+  if variant=='mono' and d['slug']=='subcult-os':body=body.replace('fill="#0d1117"','fill="none"')
   return body
  text=(R/'references'/files[d['slug']]).read_text();root=ET.fromstring(text)
  if d['slug']=='rekolekt':
@@ -105,7 +105,7 @@ def poster(d,w,h,kind):
 def screenshot(d):
  if d['slug']=='clpr':return C.screenshot(d)
  w,h=1600,1000;s=base(d,w,h)+label(d,48,65,d['brand'].upper()+' / WORKFLOW CAPTURE',20)
- s+=rect(48,110,1504,738,'none',8 if d['slug'] in ['patchwork','subcult-os'] else 0,d['safe_label'])+T(104,465,'PLACE A VERIFIED SCREENSHOT HERE',36,d['fg'],d['label'],maxw=1350)+T(104,519,'Crop private data. Keep interface text legible.',28,d['fg'],d['body'])+footer(d,w,h)
+ s+=rect(48,110,1504,738,'none',8 if d['slug']=='patchwork' else 0,d['safe_label'])+T(104,465,'PLACE A VERIFIED SCREENSHOT HERE',36,d['fg'],d['label'],maxw=1350)+T(104,519,'Crop private data. Keep interface text legible.',28,d['fg'],d['body'])+footer(d,w,h)
  return s
 
 def video(d,kind):
@@ -142,7 +142,7 @@ def guide(d,dest):
  'clpr':'The user-edited play-triangle logo governs the assets. The user selected Clip stack for the main layouts and single clip card for the square post. The comparison variations remain available. These layouts replace the filmstrip and timeline motifs. Keep the muted-white wordmark, purple play triangle, dark field and green details. Earlier banners are preserved in references/. Use the captured play wordmark and play icon. Barlow Condensed sets titles; Barlow carries body copy; IBM Plex Mono carries labels. Crop corners, overlapping clip cards and purple play fields are the three graphic alternatives. Keep their geometry separate from screenshots of the product.',
  'patchwork':'Warm paper and green are the base; bright tomato marks decorative patches and yellow marks highlights. Use darker action tomato (#b33e28) behind paper-colored button labels: 5.03:1 contrast. Keep the logo and decorative patches at their original tomato (#e85d3f). Use Fraunces for headings and Public Sans for body text. Stitched shapes are supporting artwork. Use the carried-forward P glyph in a tomato stitched patch. The mark, supporting patches, buttons and their offset shadows share the same asymmetric corner shape. Use larger, mildly uneven stitches, faint paper grain and a low-opacity fabric weave. The browser sample uses responsive SVG stitching with a dashed CSS fallback. Use soft green ink (#365448) for headings/body copy and a muted sage (#b2bba1) shadow. `components.html` shows working stitched buttons; `patch-components.css` keeps face and shadow corners identical. Product captures must preserve approximate public locations and omit private addresses.',
  'hasanara':'Match the current hasanara.tv red/PBS theme. Use Newsreader for editorial headings, Inter Tight for body copy and JetBrains Mono for metadata. Keep the actual PBS artwork. The local older lime theme is not this pack’s reference. Quotes need their original passage, attribution and timestamp.',
- 'subcult-os':'The reference is the current web source, not a verified live deployment. Use serif headings, dark rounded panels and amber/cyan accents. Georgia is the source stack; bundled Liberation Serif is the portable rendering fallback. The S/OS mark is a pack proposal; it was not found as an existing site logo.',
+ 'subcult-os':'Matches the live os.subcult.tv design system (the Subcults terminal foundation, selected by the user on September 30, 2026; source of truth: subcult-os contracts/design/tokens.json). Space Mono is the only typeface: bold for headings, buttons and labels, regular for body copy, uppercase with wide tracking for labels. Bold is the heaviest weight. Corners are square everywhere; panels separate with visible borders, not shadows. Purple is the action and artwork color: purple fills carry white text (5.7:1), but purple text on black is below the small-text target, so labels use cyan. Cyan also marks focus. Status colors (green, amber, red, cyan) mark states and always come with words. Event artwork stays immersive and black. The OS lettermark with a cyan cursor block is a pack mark; the site itself uses the plain wordmark.',
  'undertow':'Use the active editor theme: pink/cyan/lilac on dark violet, square geometry and hard offsets. Keep the existing spectrum favicon. Liberation Mono is the bundled portable alternative to the site’s system monospace stack. Chromatic offsets are for large titles, never body copy.'
  }[slug]
  doc=f'''# {d['brand']} — Brand and asset guide
