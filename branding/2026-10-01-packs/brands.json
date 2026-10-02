@@ -26,42 +26,48 @@
   },
   {
     "id": "patrick-a",
-    "brand": "Patrick__eff",
-    "variant": "A",
-    "name": "Signal / current banner",
-    "bg": "#161616",
-    "fg": "#f3f0ed",
-    "accent": "#8a00c7",
-    "secondary": "#66ff00",
-    "display": "Cascadia Mono",
-    "body": "Cascadia Mono",
+    "brand": "Patrick__Eff",
+    "variant": "B",
+    "name": "Patch / routed signal",
+    "bg": "#282a36",
+    "fg": "#f8f8f2",
+    "accent": "#bd93f9",
+    "secondary": "#50fa7b",
+    "display": "Space Grotesk",
+    "body": "Inter",
     "headline": [
-      "Software. Sound.",
-      "Independent culture."
+      "Software.",
+      "Sound.",
+      "Culture."
     ],
     "tag": "PATRICK__EFF",
-    "description": "Cascadia Mono with separated underscores; bracketed PF and waveform marks; lime and purple offset accents on charcoal.",
-    "mode": "patrick-wave",
+    "description": "Website charcoal, lavender, pink and green; equally sized Software, Sound and Culture headings; flat sans-serif type, routing paths and spectrum artwork.",
+    "mode": "patrick-patch",
     "url": "patrickfanella.co",
-    "source": "User-edited references/patrick-variations/ masters",
+    "source": "Live patrickfanella.co palette/type; Patch selected by the owner October 2, 2026; authoritative source branding/2026-10-02-patrick-site-direction/; open frame with original waveform approved in treatments 01, 02, 03, 04, 06, 07 and 08 by the owner October 2, 2026",
     "slug": "patrick__eff",
     "label": "JetBrains Mono",
-    "safe_label": "#66ff00",
+    "safe_label": "#50fa7b",
     "selected_by_user": true,
-    "support": "Space Grotesk",
+    "support": "Inter",
     "mark_styles": {
-      "primary": "PF with lime/purple offset layers",
-      "alternate": "Clean bracketed waveform",
-      "display": "Tall waveform and tall PF variants",
-      "heading_effect": "Lime lower-left and purple upper-right offsets",
-      "body_effect": "None"
+      "primary": "Open frame with original waveform, Lavender (01) default",
+      "approved_variations": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "06",
+        "07",
+        "08"
+      ],
+      "light_background": "06",
+      "monochrome": "Plain open frame"
     },
-    "banner_logo": "White PF, brackets, slash and dot; purple waveform; smaller size",
-    "banner_alternates": [
-      "Solid purple without waveform",
-      "Solid warm white without waveform",
-      "Original white/purple/green"
-    ]
+    "banner_logo": "Warm-white PF with separate routing artwork",
+    "banner_alternates": [],
+    "pink": "#ff79c6",
+    "direction_selection": "user"
   },
   {
     "id": "clpr",

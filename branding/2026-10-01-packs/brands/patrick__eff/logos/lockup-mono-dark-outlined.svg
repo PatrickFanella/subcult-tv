@@ -5,32 +5,99 @@
    viewBox="0 0 1000 260"
    role="img"
    version="1.1"
-   id="svg1"
+   id="svg2"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
-     id="defs1" />
+     id="defs2" />
   <title
-     id="title1">lockup-mono-dark</title>
-  <image
-     x="40"
-     y="50"
-     width="160"
-     height="160"
-     href="data:image/svg+xml;base64,PG5zMDpzdmcgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpuczA9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpuczI9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDE2MCAxNjAiIHZlcnNpb249IjEuMSIgaWQ9InN2ZzEiPgogIDxuczA6ZGVmcyBpZD0iZGVmczEiIC8+CiAgPG5zMDp0aXRsZSBpZD0idGl0bGUxIj5QYXRyaWNrX19lZmYg4oCUIFNpZ25hbCBpbiBicmFja2V0cyDigJQgZWRpdGFibGUgbWFzdGVyPC9uczA6dGl0bGU+CiAgPG5zMDpkZXNjIGlkPSJkZXNjMSI+T3B0aW9uIDEuIFRyYW5zcGFyZW50IGJhY2tncm91bmQuIFNlcGFyYXRlIGVkaXRhYmxlIGxheWVycyBmb3IgYW5nbGUgYnJhY2tldHMsIHNsYXNoLCB3YXZlZm9ybSBiYXJzIGFuZCBsaW1lIGRvdC48L25zMDpkZXNjPgogIDxuczA6ZyBpZD0ibGVmdC1icmFja2V0IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiAvPgogIDxuczA6ZyBpZD0ic3RhdHVzLWRvdCIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgLz4KICA8bnMwOmcgaWQ9InNsYXNoIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiAvPgogIDxuczA6ZyBpZD0icmlnaHQtYnJhY2tldCIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciI+CiAgICA8bnMwOmcgaWQ9Imc0IiB0cmFuc2Zvcm09Im1hdHJpeCgxLjA1NDgzOTEsMCwwLDEuMDU4MjcyNSwzLjg0MTM1NzUsLTQuNTcyMDk3NSkiIHN0eWxlPSJkaXNwbGF5OmlubGluZSI+CiAgICAgIDxuczA6cGF0aCBpZD0ibGVmdC1icmFja2V0LXBhdGgiIGQ9Ik0gMjcsNDcgNyw4MCAyNywxMTMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSI1IiAvPgogICAgICA8bnMwOmcgaWQ9ImcxIiBzdHlsZT0ic3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1saW5lam9pbjptaXRlciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExLjkyMzA3NywtMykiIC8+CiAgICAgIDxuczA6Y2lyY2xlIGlkPSJkb3QiIGN4PSI5Ni4wNjQ1MTQiIGN5PSI1Ni43OTYzMjkiIHI9IjYiIGZpbGw9IiNmZmZmZmYiIC8+CiAgICAgIDxuczA6cGF0aCBpZD0ic2xhc2gtcGF0aCIgZD0iTSAxMDkuNTc1LDUzLjkzODIzMSA5My4yMDY0MTYsMTA1LjIwOTc0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMy42MDYxNCIgc3R5bGU9InN0cm9rZS13aWR0aDo1O3N0cm9rZS1kYXNoYXJyYXk6bm9uZSIgLz4KICAgICAgPG5zMDpwYXRoIGlkPSJyaWdodC1icmFja2V0LXBhdGgiIGQ9Im0gMTE1LjMxNzI3LDQ2Ljg2MzYwMSAyMiwzMyAtMjIsMzIuOTk5OTg5IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNSIgLz4KICAgIDwvbnMwOmc+CiAgPC9uczA6Zz4KICA8bnMwOm1ldGFkYXRhIGlkPSJtZXRhZGF0YTUiPgogICAgPHJkZjpSREY+CiAgICAgIDxuczI6V29yayByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPlBhdHJpY2tfX2VmZiDigJQgU2lnbmFsIGluIGJyYWNrZXRzIOKAlCBlZGl0YWJsZSBtYXN0ZXI8L2RjOnRpdGxlPgogICAgICA8L25zMjpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbnMwOm1ldGFkYXRhPgogIDxuczA6cGF0aCBkPSJNIDQxLjY1OTY2OCw4OS42NzIzNjMgViA4Mi45MDkxOCBoIDUuNDI3MjQ2IHEgMy42NDU5OTYsMCA1LjYyMjA3LC0yLjAwMzkwNyAyLjAwMzkwNywtMi4wMDM5MDYgMi4wMDM5MDcsLTUuNTk0MjM4IDAsLTMuMzk1NTA4IC0yLjAwMzkwNywtNS4yMzI0MjIgLTEuOTc2MDc0LC0xLjgzNjkxNCAtNS42MjIwNywtMS44MzY5MTQgaCAtNS4zMTU5MTggdiAtNi43NjMxODMgaCA1LjMxNTkxOCBxIDcuNDMxMTUyLDAgMTEuNDk0NjI5LDMuNTA2ODM2IDQuMDYzNDc3LDMuNDc5MDAzIDQuMDYzNDc3LDkuODUyNTM5IDAsNy4wNjkzMzYgLTQuMDYzNDc3LDEwLjk2NTgyIC00LjA2MzQ3NywzLjg2ODY1MiAtMTEuNDk0NjI5LDMuODY4NjUyIHogTSAzNC45Nzk5OCwxMDEgViA2MS40Nzg1MTYgaCA3LjM0NzY1NyBWIDEwMSBaIG0gMzMuOTU1MDc5LDAgViA2MS40Nzg1MTYgaCA3LjM0NzY1NiBWIDEwMSBaIG0gMCwtMTQuNzIzMTQ1IHYgLTYuODE4ODQ3IGggMjEuNjI1NDg4IHYgNi44MTg4NDcgeiBtIDAsLTE4LjAzNTE1NiB2IC02Ljc2MzE4MyBoIDI3LjEwODM5OCB2IDYuNzYzMTgzIHoiIGlkPSJ0ZXh0MSIgc3R5bGU9ImZvbnQtd2VpZ2h0OjcwMDtmb250LXNpemU6NTdweDtmb250LWZhbWlseTonQ2FzY2FkaWEgTW9ubyc7Zm9udC12YXJpYW50LWxpZ2F0dXJlczpub25lO2ZpbGw6I2ZmZmZmZiIgYXJpYS1sYWJlbD0iUEYiIC8+CjwvbnMwOnN2Zz4="
-     id="image1" />
-  <g
-     id="text1"
-     style="font-weight:700;font-size:91px;font-family:'Cascadia Mono';font-variant-ligatures:none;fill:#ffffff"
-     aria-label="PATRICK__EFF">
+     id="title1">Patrick__Eff lockup</title>
+  <svg
+     width="200"
+     height="200"
+     viewBox="0 0 160 160"
+     version="1.1"
+     id="svg1"
+     x="30"
+     y="30">
+    <defs
+       id="defs1" />
+    <title
+       id="title2">Patrick__eff — Signal in brackets — editable master</title>
+    <desc
+       id="desc1">Option 1. Transparent background. Separate editable layers for angle brackets, slash, waveform bars and lime dot.</desc>
+    <g
+       id="left-bracket"
+       stroke-linecap="square"
+       stroke-linejoin="miter" />
+    <g
+       id="status-dot"
+       stroke-linecap="square"
+       stroke-linejoin="miter" />
+    <g
+       id="slash"
+       stroke-linecap="square"
+       stroke-linejoin="miter" />
+    <g
+       id="right-bracket"
+       stroke-linecap="square"
+       stroke-linejoin="miter">
+      <g
+         id="g4"
+         transform="matrix(1.0548391,0,0,1.0582725,3.8413575,-4.5720975)"
+         style="display:inline">
+        <path
+           id="left-bracket-path"
+           d="M 27,47 7,80 27,113"
+           fill="none"
+           stroke="#f8f8f2"
+           stroke-width="5" />
+        <g
+           id="g1"
+           style="stroke-linecap:square;stroke-linejoin:miter"
+           transform="translate(-11.923077,-3)" />
+        <circle
+           id="dot"
+           cx="96.064514"
+           cy="56.796329"
+           r="6"
+           fill="#f8f8f2" />
+        <path
+           id="slash-path"
+           d="M 109.575,53.938231 93.206416,105.20974"
+           fill="none"
+           stroke="#f8f8f2"
+           stroke-width="3.60614"
+           style="stroke-width:5;stroke-dasharray:none" />
+        <path
+           id="right-bracket-path"
+           d="m 115.31727,46.863601 22,33 -22,32.999989"
+           fill="none"
+           stroke="#f8f8f2"
+           stroke-width="5" />
+      </g>
+    </g>
+    <metadata
+       id="metadata5">
+      <rdf:RDF>
+        <cc:Work
+           rdf:about="">
+          <dc:title>Patrick__eff — Signal in brackets — editable master</dc:title>
+        </cc:Work>
+      </rdf:RDF>
+    </metadata>
     <path
-       d="m 267.01807,144.91553 v -10.79737 h 8.66455 q 5.8208,0 8.97558,-3.19921 3.19922,-3.19922 3.19922,-8.93116 0,-5.4209 -3.19922,-8.35351 -3.15478,-2.93262 -8.97558,-2.93262 H 267.1958 V 99.904297 h 8.48682 q 11.86377,0 18.35107,5.598633 6.48731,5.5542 6.48731,15.72949 0,11.28613 -6.48731,17.50684 -6.4873,6.17627 -18.35107,6.17627 z M 256.354,163 V 99.904297 h 11.73047 V 163 Z m 48.21045,0 18.21778,-63.095703 h 14.39648 L 355.39648,163 h -12.66357 l -12.35254,-47.67725 h -0.7998 L 317.22803,163 Z m 9.19776,-11.95264 v -10.84179 h 31.99218 v 10.84179 z M 377.43555,163 V 99.904297 h 11.73047 V 163 Z M 359.43994,110.70166 V 99.904297 h 47.72168 v 10.797363 z m 67.09473,29.19287 v -10.79736 h 11.33056 q 4.08789,0 6.35401,-2.39942 2.26611,-2.44384 2.26611,-6.79834 0,-4.39892 -2.26611,-6.79834 -2.26612,-2.39941 -6.35401,-2.39941 H 426.7124 L 425.646,99.904297 h 12.21923 q 10.1753,0 15.7295,4.976563 5.5542,4.97656 5.5542,14.12988 0,9.90869 -5.5542,15.41846 -5.5542,5.46533 -15.7295,5.46533 z M 415.42627,163 V 99.904297 h 11.73047 V 163 Z m 32.03662,0 -11.9082,-29.68164 h 12.35254 L 461.45947,163 Z m 36.56885,0 V 99.904297 h 11.73047 V 163 Z m -14.04102,0 v -10.5752 h 39.90137 V 163 Z m 0,-52.56494 V 99.904297 h 39.90137 v 10.530763 z m 79.84717,53.45361 q -30.17041,0 -30.17041,-32.52539 0,-15.41846 7.59814,-23.86084 7.59815,-8.486815 21.50586,-8.486815 6.26514,0 11.1084,2.043945 4.84326,1.99951 7.33155,5.73193 l -6.57618,8.62012 q -1.99951,-2.48828 -5.10986,-3.82129 -3.06592,-1.37744 -6.66504,-1.37744 -7.64258,0 -12.26367,5.4209 -4.57666,5.37646 -4.57666,15.28516 0,21.77246 19.32861,21.77246 6.44287,0 12.70801,-2.66602 l 2.04395,10.8418 q -7.73145,3.02148 -16.2627,3.02148 z m 32.34766,-20.97265 0.7998,-11.77491 q 6.30957,0 10.88623,-2.62158 4.6211,-2.62158 7.59815,-7.06494 3.02148,-4.44336 4.44336,-9.99756 1.4663,-5.59863 1.4663,-11.552733 h 11.90821 q 0,8.397953 -2.48828,16.129393 -2.48828,7.73145 -7.28711,13.81885 -4.7544,6.04297 -11.6416,9.55322 -6.88721,3.51026 -15.68506,3.51026 z M 575.83154,163 V 99.904297 h 11.73047 V 163 Z m 31.99219,0 -12.66357,-27.94873 10.93066,-4.53223 L 622.30908,163 Z m 19.86182,11.1084 V 163 h 44.43359 v 11.1084 z"
-       id="path1" />
-    <path
-       d="M 688.28586,174.1084 V 163 h 44.43359 v 11.1084 z"
-       id="path2" />
-    <path
-       d="M 743.51682,163 V 99.904297 h 11.73046 V 163 Z m 0,0 v -10.79736 h 43.27832 V 163 Z m 0,-26.17139 v -10.84179 h 35.28027 v 10.84179 z m 0,-26.12695 V 99.904297 h 43.27832 V 110.70166 Z M 797.72583,163 V 99.904297 H 809.4563 V 163 Z m 0,-23.50537 V 128.6084 h 34.5249 v 10.88623 z m 0,-28.79297 V 99.904297 h 43.27832 V 110.70166 Z M 851.04614,163 V 99.904297 h 11.73047 V 163 Z m 0,-23.50537 V 128.6084 h 34.5249 v 10.88623 z m 0,-28.79297 V 99.904297 h 43.27832 v 10.797363 z"
-       id="path3" />
-  </g>
+       d="M 41.659668,89.672363 V 82.90918 h 5.427246 q 3.645996,0 5.62207,-2.003907 2.003907,-2.003906 2.003907,-5.594238 0,-3.395508 -2.003907,-5.232422 -1.976074,-1.836914 -5.62207,-1.836914 h -5.315918 v -6.763183 h 5.315918 q 7.431152,0 11.494629,3.506836 4.063477,3.479003 4.063477,9.852539 0,7.069336 -4.063477,10.96582 -4.063477,3.868652 -11.494629,3.868652 z M 34.97998,101 V 61.478516 h 7.347657 V 101 Z m 33.955079,0 V 61.478516 h 7.347656 V 101 Z m 0,-14.723145 v -6.818847 h 21.625488 v 6.818847 z m 0,-18.035156 v -6.763183 h 27.108398 v 6.763183 z"
+       id="text1"
+       style="font-weight:700;font-size:57px;font-family:'Cascadia Mono';font-variant-ligatures:none;fill:#f8f8f2"
+       aria-label="PF" />
+  </svg>
+  <path
+     d="m 269.148,157 v -54.6 h 22.464 q 5.148,0 9.048,2.106 3.978,2.028 6.162,5.772 2.262,3.744 2.262,8.892 v 1.092 q 0,5.07 -2.34,8.892 -2.262,3.744 -6.24,5.85 -3.9,2.028 -8.892,2.028 H 279.444 V 157 Z m 10.296,-29.328 h 11.154 q 3.666,0 5.928,-2.028 2.262,-2.028 2.262,-5.538 v -0.78 q 0,-3.51 -2.262,-5.538 -2.262,-2.028 -5.928,-2.028 h -11.154 z m 27.29994,29.328 14.352,-54.6 h 17.94 l 14.352,54.6 h -10.608 l -2.964,-12.012 h -19.5 l -2.964,12.012 z m 15.99,-21.528 h 14.664 l -6.63,-26.598 h -1.404 z M 366.02407,157 v -45.24 h -15.912 v -9.36 h 42.12 v 9.36 h -15.912 V 157 Z m 31.66795,0 v -54.6 h 23.712 q 5.148,0 8.97,1.794 3.822,1.794 5.928,5.07 2.106,3.276 2.106,7.722 v 0.936 q 0,4.914 -2.34,7.956 -2.34,3.042 -5.772,4.446 v 1.404 q 3.12,0.156 4.836,2.184 1.716,1.95 1.716,5.226 V 157 h -10.296 v -16.38 q 0,-1.872 -1.014,-3.042 -0.936,-1.17 -3.198,-1.17 h -14.352 V 157 Z m 10.296,-29.952 h 12.324 q 3.666,0 5.694,-1.95 2.106,-2.028 2.106,-5.304 v -0.78 q 0,-3.276 -2.028,-5.226 -2.028,-2.028 -5.772,-2.028 h -12.324 z M 445.42801,157 v -54.6 h 10.296 V 157 Z m 39.78,1.092 q -10.14,0 -16.068,-5.616 -5.928,-5.694 -5.928,-16.224 v -13.104 q 0,-10.53 5.928,-16.146 5.928,-5.694 16.068,-5.694 10.062,0 15.522,5.538 5.538,5.46 5.538,15.054 v 0.468 h -10.14 v -0.78 q 0,-4.836 -2.73,-7.956 -2.652,-3.12 -8.19,-3.12 -5.46,0 -8.58,3.354 -3.12,3.354 -3.12,9.126 v 13.416 q 0,5.694 3.12,9.126 3.12,3.354 8.58,3.354 5.538,0 8.19,-3.12 2.73,-3.198 2.73,-7.956 v -1.404 h 10.14 v 1.092 q 0,9.594 -5.538,15.132 -5.46,5.46 -15.522,5.46 z M 513.13193,157 v -54.6 h 10.296 v 21.684 h 1.404 l 17.706,-21.684 h 13.182 l -22.776,26.91 23.556,27.69 h -13.572 l -18.096,-22.152 h -1.404 V 157 Z m 47.18996,12.636 v -8.892 h 38.22 v 8.892 z m 46.80008,0 v -8.892 h 38.22 v 8.892 z M 654.00002,157 v -54.6 h 35.1 v 9.36 h -24.804 v 13.026 h 22.62 v 9.36 h -22.62 v 13.494 h 25.272 V 157 Z m 41.65207,0 v -54.6 h 34.32 v 9.36 h -24.024 v 13.182 h 22.152 v 9.36 h -22.152 V 157 Z m 40.09204,0 v -54.6 h 34.32 v 9.36 h -24.024 v 13.182 h 22.152 v 9.36 h -22.152 V 157 Z"
+     id="text2"
+     style="font-weight:700;font-size:78px;font-family:'Space Grotesk';letter-spacing:-0.02em;fill:#f8f8f2"
+     aria-label="PATRICK__EFF" />
 </svg>

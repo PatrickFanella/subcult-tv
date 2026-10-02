@@ -1,7 +1,9 @@
-# Patrick__eff — Alt text starters
+# Patrick__Eff — alt text
 
-- Banner: Patrick__eff branding in the Signal / current banner direction. Visible headline: “Software. Sound. Independent culture.”.
-- Square sample: Describe the visible headline, brand mark and supporting illustration in `social/square-post.png`.
-- Avatar: Patrick__eff mark on the selected brand background.
+Banner: Software. Sound. Culture. Patrick__Eff PF mark with lavender, pink and green cable paths.
 
-Replace these starters when copy or imagery changes. Describe a screenshot’s actual task and visible result. For a quoted passage, include the visible words and attribution. Empty templates are editing aids and should not be published as finished assets.
+Square identity: Software. Sound. Culture, above colored cable paths.
+
+Avatar: Warm-white open-frame PF with a lavender waveform behind the initials, surrounded by colored cable paths on charcoal.
+
+Templates: replace sample text before publication and describe the actual completed artwork. Decorative spectrum bars are not measured audio.

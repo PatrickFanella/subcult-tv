@@ -12,3 +12,7 @@ package:
 
 check-cutover:
 	python scripts/check_cutover.py
+
+check-studio:
+	python scripts/check_studio.py
+	python -m unittest discover -s scripts -p 'test_export_posting.py'

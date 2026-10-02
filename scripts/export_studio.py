@@ -14,7 +14,7 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def export(destination, site=None):
+def export(destination, site=None, posting_state=None):
     destination = destination.resolve()
     if destination == ROOT or ROOT in destination.parents and destination.parts[len(ROOT.parts)] != "runtime":
         raise ValueError("Private exports inside the source tree must be under runtime/")
@@ -33,11 +33,30 @@ def export(destination, site=None):
     brands = []
     for brand in json.loads((PACK / "brands.json").read_text()):
         folder = PACK / "brands" / brand["slug"]
+        selection = {"approved_variations": []}
+        logos = sorted((folder / "logos").glob("*-outlined.svg"))
+        variants = folder / "logos/waveform"
+        if (variants / "selection.json").exists():
+            selection = json.loads((variants / "selection.json").read_text())
+            for slug in selection["approved_variations"]:
+                source = (variants / (slug + ".svg")).resolve()
+                source.relative_to(variants.resolve())
+                logos.append(source)
+        library = []
+        allowed = {'.svg', '.png', '.jpg', '.jpeg', '.webp', '.mp4', '.ttf', '.woff2', '.txt', '.css'}
+        for source in sorted(folder.rglob('*')):
+            relative = source.relative_to(folder)
+            if source.is_file() and source.suffix.lower() in allowed and relative.parts[0] in ('logos','social','video','artwork','fonts'):
+                if relative.parts[:2] == ('logos','waveform') and source.stem.split('-avatar')[0] not in selection['approved_variations']:
+                    continue
+                library.append({'id':asset(source), 'name':str(relative), 'category':relative.parts[0]})
+        library.append({'id':asset(folder/'tokens.json'), 'name':'tokens.json', 'category':'tokens'})
+        library.append({'id':asset(folder/'tokens.css'), 'name':'tokens.css', 'category':'tokens'})
         brands.append({"slug": brand["slug"], "name": brand["brand"],
                        "direction": brand["name"], "tokens": json.loads((folder / "tokens.json").read_text()),
                        "guide": (folder / "GUIDE.md").read_text(),
                        "preview": asset(folder / "pack-preview.png"),
-                       "logos": [asset(f) for f in sorted((folder / "logos").glob("*-outlined.svg"))]})
+                       "assets": library, "logos": [asset(f) for f in logos]})
     media = []
     for item in json.loads((ROOT / "media/library/catalog.json").read_text())["assets"]:
         record = {k: item.get(k) for k in ("id", "title", "products", "rights", "kind", "status", "alt_text", "width", "height", "duration_seconds", "source")}
@@ -62,6 +81,8 @@ def export(destination, site=None):
         reference_output = destination / "references.json.tmp"
         reference_output.write_text(json.dumps(references, indent=2) + "\n")
     (destination / "catalog.json").write_text(json.dumps(catalog, indent=2) + "\n")
+    from export_posting import snapshot
+    (destination / "posting.json").write_text(json.dumps(snapshot(posting_state), indent=2) + "\n")
     if reference_source.exists():
         reference_output.replace(destination / "references.json")
     if site:
@@ -89,6 +110,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=ROOT / "runtime/studio")
     parser.add_argument("--site-root", type=Path)
+    parser.add_argument("--posting-state", type=Path, help="Read-only runner state for the private dashboard snapshot")
     args = parser.parse_args()
-    catalog = export(args.output, args.site_root)
+    catalog = export(args.output, args.site_root, args.posting_state)
     print(f"Exported {len(catalog['brands'])} brands, {len(catalog['media'])} media assets")

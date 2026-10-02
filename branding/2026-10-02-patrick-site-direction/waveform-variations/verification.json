@@ -1,0 +1,26 @@
+{
+  "approved_variations": [
+    "01-lavender",
+    "02-pink",
+    "03-green",
+    "04-green-frame",
+    "06-light",
+    "07-quiet",
+    "08-echo"
+  ],
+  "default": "01-lavender",
+  "svg_parsing": true,
+  "png_integrity": true,
+  "production_hashes": true,
+  "patrick_zip_integrity": true,
+  "equal_identity_phrase_sizes": true,
+  "plain_monochrome_fallbacks": true,
+  "original_masters": "read only; derivative provenance records hashes",
+  "browser": {
+    "approved_cards": 7,
+    "all_images_loaded": true,
+    "desktop_overflow": false,
+    "390px_iframe_overflow": false
+  },
+  "publication": "local production sources only"
+}

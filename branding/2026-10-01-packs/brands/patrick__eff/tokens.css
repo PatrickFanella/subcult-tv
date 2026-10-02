@@ -1,14 +1,21 @@
 :root {
-  --brand-bg: #161616;
-  --brand-fg: #f3f0ed;
-  --brand-accent: #8a00c7;
-  --brand-secondary: #66ff00;
-  --brand-safe-label: #66ff00;
-  --font-display: "Cascadia Mono";
-  --font-body: "Cascadia Mono";
-  --font-label: "JetBrains Mono";
-  --font-support: "Space Grotesk";
+  --pf-base: #282a36;
+  --pf-panel: #21222c;
+  --pf-line: #44475a;
+  --pf-paper: #f8f8f2;
+  --pf-body: #d7d7eb;
+  --pf-muted: #a5a6b5;
+  --pf-purple: #bd93f9;
+  --pf-pink: #ff79c6;
+  --pf-green: #50fa7b;
 }
 
-.brand-display { text-shadow: 1.5px -.75px var(--brand-accent), -1.5px 1.5px var(--brand-secondary); }
-.brand-body, .brand-label { text-shadow: none; }
+:root {
+ --brand-bg: #282a36;
+ --brand-fg: #f8f8f2;
+ --brand-accent: #bd93f9;
+ --brand-secondary: #50fa7b;
+ --brand-safe-label: #50fa7b;
+ --font-display: "Space Grotesk"; --font-body: "Inter"; --font-label: "JetBrains Mono";
+}
+.brand-display,.brand-body,.brand-label {text-shadow:none}
