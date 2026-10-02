@@ -1,0 +1,29 @@
+{
+  "styleId": "ac53825c-1e06-4ae0-8489-cace5c5e0339",
+  "sourceUrl": "https://styles.refero.design/style/ac53825c-1e06-4ae0-8489-cace5c5e0339",
+  "fetchedAt": "2026-10-02T21:30:45.991573+00:00",
+  "extractedAt": "2026-10-02T21:30:46.046385+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Wispr Flow — Style Reference",
+  "htmlSha256": "229e72dc6973480d57537212a6e8136e33164e070a87d972e79feb377b8c1924",
+  "cache": ".cache/ac53825c-1e06-4ae0-8489-cace5c5e0339.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6742412e34a0c22f5329659de7c21e8ce37401626be3cc761eb892ded7181f83",
+      "bytes": 21873,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/eb947489-2d54-4746-85ab-e3035fe79d76.jpg",
+    "fetchedAt": "2026-10-02T21:30:48.049319+00:00",
+    "sha256": "6b2b31724b7363cbd2f9e803836848345593eeb81b6e540a7ca02944c37d72dc",
+    "bytes": 81529,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

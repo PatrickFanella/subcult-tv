@@ -1,0 +1,29 @@
+{
+  "styleId": "fdc0f631-442c-466d-ab79-e1fff2bfdb7d",
+  "sourceUrl": "https://styles.refero.design/style/fdc0f631-442c-466d-ab79-e1fff2bfdb7d",
+  "fetchedAt": "2026-10-02T21:46:01.614013+00:00",
+  "extractedAt": "2026-10-02T21:46:01.656751+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ragged Edge — Style Reference",
+  "htmlSha256": "b8bcad1574855a9c3fe799949a9db5e748314e321275cfdcab47a566ceffbe82",
+  "cache": ".cache/fdc0f631-442c-466d-ab79-e1fff2bfdb7d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fbcf40ea476ea6b9f786bca526a13dda3eee03c12950c94c94544209eb62f48b",
+      "bytes": 20332,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/809a4ce9-aa81-49d8-8ebb-a64024b9d69b.jpg",
+    "fetchedAt": "2026-10-02T21:46:03.474435+00:00",
+    "sha256": "ed5e50614fa33fc08a3a525375372655afa8c73edf75404d52b674854bbad3e1",
+    "bytes": 63560,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

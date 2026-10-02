@@ -1,0 +1,29 @@
+{
+  "styleId": "8b6b547f-a357-4f1b-9842-4579c62dd42b",
+  "sourceUrl": "https://styles.refero.design/style/8b6b547f-a357-4f1b-9842-4579c62dd42b",
+  "fetchedAt": "2026-10-02T21:52:38.258684+00:00",
+  "extractedAt": "2026-10-02T21:52:38.331336+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Slush — Style Reference",
+  "htmlSha256": "250d440d6ae3b2215d8ad3aac471a0887f1db20ac8cc257006a234dfae14ca00",
+  "cache": ".cache/8b6b547f-a357-4f1b-9842-4579c62dd42b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a4ae23f42bab473e37c6b28ef95084cd7fcfc883f7f762cd4862e0610ff1fa61",
+      "bytes": 20825,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5bb564c4-e5ce-47c4-b5d5-fd0371d83d8c.jpg",
+    "fetchedAt": "2026-10-02T21:52:40.118357+00:00",
+    "sha256": "68a429f58b3779c30a430872b96727ef157e8e798c7b007ab26de6e9a40e2018",
+    "bytes": 206104,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

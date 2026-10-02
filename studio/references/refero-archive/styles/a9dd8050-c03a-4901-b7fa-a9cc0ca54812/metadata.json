@@ -1,0 +1,29 @@
+{
+  "styleId": "a9dd8050-c03a-4901-b7fa-a9cc0ca54812",
+  "sourceUrl": "https://styles.refero.design/style/a9dd8050-c03a-4901-b7fa-a9cc0ca54812",
+  "fetchedAt": "2026-10-02T21:52:46.279217+00:00",
+  "extractedAt": "2026-10-02T21:52:46.328928+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Monarch — Style Reference",
+  "htmlSha256": "e846bdfa17d55298ebc78af16aac991f4f7d1bd1e1818a5491fd8736d927db97",
+  "cache": ".cache/a9dd8050-c03a-4901-b7fa-a9cc0ca54812.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2232373e917c3c7ec258a26c60eef09abf164d20e5902c2e94899e67952aada9",
+      "bytes": 19432,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/03d9abea-0639-46f7-9d05-77e5fc47472c.jpg",
+    "fetchedAt": "2026-10-02T21:52:48.206976+00:00",
+    "sha256": "b2466103768764d0a779b85ce7d28da868f4ac24ac95a79ee0dccf591d6f0a38",
+    "bytes": 112280,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

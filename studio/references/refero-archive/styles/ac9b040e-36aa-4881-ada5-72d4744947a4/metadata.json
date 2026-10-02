@@ -1,0 +1,29 @@
+{
+  "styleId": "ac9b040e-36aa-4881-ada5-72d4744947a4",
+  "sourceUrl": "https://styles.refero.design/style/ac9b040e-36aa-4881-ada5-72d4744947a4",
+  "fetchedAt": "2026-10-02T21:45:49.605019+00:00",
+  "extractedAt": "2026-10-02T21:45:49.670828+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Kinfolk — Style Reference",
+  "htmlSha256": "6e42f7bfc48ad310a0c1a934ca8b20f65ec0c1eb097bfa0e8ce9fb53b250bf7d",
+  "cache": ".cache/ac9b040e-36aa-4881-ada5-72d4744947a4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ead8d9934e54b3ee1a01e1f0fbf6e8f459227840db048b8e7d2cb9ebb353c850",
+      "bytes": 21960,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4ed3ccd7-b7d4-4c8a-90bf-1b6ec72dd3e8.jpg",
+    "fetchedAt": "2026-10-02T21:45:51.466430+00:00",
+    "sha256": "a61efdef1576805e0f48b7c3b2fe2a65100ba3952855f66db2811064b435847f",
+    "bytes": 61474,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

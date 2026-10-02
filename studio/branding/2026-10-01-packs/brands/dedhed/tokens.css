@@ -1,0 +1,11 @@
+:root {
+  --brand-bg: #efe9d8;
+  --brand-fg: #1f1d1a;
+  --brand-accent: #c8102e;
+  --brand-secondary: #c58b4e;
+  --brand-safe-label: #4c4842;
+  --font-display: "Liberation Serif";
+  --font-body: "Public Sans";
+  --font-label: "Liberation Mono";
+  --font-support: "Barlow Condensed";
+}

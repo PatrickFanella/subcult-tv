@@ -1,0 +1,29 @@
+{
+  "styleId": "c08ebca5-87d4-4c19-a5d7-ae5e670dae11",
+  "sourceUrl": "https://styles.refero.design/style/c08ebca5-87d4-4c19-a5d7-ae5e670dae11",
+  "fetchedAt": "2026-10-02T21:36:42.004936+00:00",
+  "extractedAt": "2026-10-02T21:36:42.095113+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Atlassian — Style Reference",
+  "htmlSha256": "61f3e4136a56e823e0fa310b4255e3f2d87fdfb96134ba417750b626eb8032e2",
+  "cache": ".cache/c08ebca5-87d4-4c19-a5d7-ae5e670dae11.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c87457339e73c95e32d05cf87cb82f87adf47dce509c3124565378841320c08d",
+      "bytes": 21620,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cae7cc8a-7a78-4058-b7bc-86358fe280af.jpg",
+    "fetchedAt": "2026-10-02T21:36:44.077252+00:00",
+    "sha256": "6abc719707b471a0628eac28154f5144df001a85767a750aca5cb665844c927e",
+    "bytes": 100899,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

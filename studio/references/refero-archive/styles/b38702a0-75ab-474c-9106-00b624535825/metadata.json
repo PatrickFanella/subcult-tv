@@ -1,0 +1,29 @@
+{
+  "styleId": "b38702a0-75ab-474c-9106-00b624535825",
+  "sourceUrl": "https://styles.refero.design/style/b38702a0-75ab-474c-9106-00b624535825",
+  "fetchedAt": "2026-10-02T21:29:53.999432+00:00",
+  "extractedAt": "2026-10-02T21:29:54.051651+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ramp — Style Reference",
+  "htmlSha256": "29b2d47ef5a90ef5d405f133543025b3307c5c638e4ebc5e171eaf4ecaa6a7d7",
+  "cache": ".cache/b38702a0-75ab-474c-9106-00b624535825.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4678b86a2f417af3dd226f34bc33d0fb9a03ef4200a6f5dc5b4df40d122e6707",
+      "bytes": 19307,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/23a03607-9a2f-454a-80e2-181f383cf041.jpg",
+    "fetchedAt": "2026-10-02T21:29:56.085094+00:00",
+    "sha256": "46998277f963bd35de3d6b791a913150502072ba512d3ef7c84524c3f2deba5e",
+    "bytes": 88496,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

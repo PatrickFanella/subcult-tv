@@ -1,3 +1,5 @@
+<!-- Repository scope: website and private Studio production sources. -->
+
 # subcult.tv
 
 > **SUBCULT — Subculture Collective**
@@ -350,3 +352,11 @@ fonts come from SUBCULT Studio. Source hashes and the Studio revision are in
 `python scripts/export_left_field.py --site-root /path/to/subcult-tv`. The hero
 is brand artwork, not an interface screenshot. Scores are described as
 provisional research outputs; no public app URL is asserted.
+
+## Studio production sources
+
+This private repository now includes the website, API and Studio sources. `studio/` holds branding masters and generators, media, design references, social/Patreon materials and preparation automation. A source and its consuming interface can change together in one PR.
+
+Run `make check-studio check-studio-automation` for Studio validation. `make studio-export` prepares an ignored private bundle under `studio/runtime/studio/` and copies the explicit public SUBCULT asset selection. `make studio-export-left-field` exports the approved Left Field selection. Other brands are not regenerated. Private bundles are served through the authenticated API, outside the public frontend.
+
+The initial import preserves Studio's Git history and LFS media. Consumer activation and retirement of the old repository are tracked in [the consolidation procedure](docs/REPOSITORY-CONSOLIDATION.md).

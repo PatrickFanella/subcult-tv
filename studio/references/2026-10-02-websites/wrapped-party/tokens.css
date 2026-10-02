@@ -1,0 +1,7 @@
+/* Reference observations, not an official or production design system.
+   See GUIDE.md and tokens.json for evidence and visibility limits. */
+:root {
+  --reference-bg: rgb(239, 239, 234);
+  --reference-fg: rgb(245, 245, 245);
+  --reference-font-body: Times;
+}

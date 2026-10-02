@@ -1,0 +1,29 @@
+{
+  "styleId": "c6e55968-fa2d-47c9-b833-2c4ad1e74906",
+  "sourceUrl": "https://styles.refero.design/style/c6e55968-fa2d-47c9-b833-2c4ad1e74906",
+  "fetchedAt": "2026-10-02T21:45:13.517992+00:00",
+  "extractedAt": "2026-10-02T21:45:13.566739+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "BUTT STUDIO — Style Reference",
+  "htmlSha256": "1f0fbe88ca5c0e718a297dee09c3394e83aeb9e9c818b2e2057e9d32b1d739db",
+  "cache": ".cache/c6e55968-fa2d-47c9-b833-2c4ad1e74906.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a81443292516acf26234715a012c761a4a5f88af4982950f98778d23467cfbf9",
+      "bytes": 16359,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/64575f74-0931-4d37-add9-e7241c5f878e.jpg",
+    "fetchedAt": "2026-10-02T21:45:15.545095+00:00",
+    "sha256": "8ca8bea246fca4a029385e86aba78ebb675c587d91c106c40c93a58c9bd47577",
+    "bytes": 148765,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "3b3fa99e-cee4-41f3-ac26-777b4b6a8b12",
+  "sourceUrl": "https://styles.refero.design/style/3b3fa99e-cee4-41f3-ac26-777b4b6a8b12",
+  "fetchedAt": "2026-10-02T21:41:29.532529+00:00",
+  "extractedAt": "2026-10-02T21:41:29.560494+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Krisp — Style Reference",
+  "htmlSha256": "118a4d2088ef841bc1bee55b1fb9e439d119508e544ab113cbcc1625dba25095",
+  "cache": ".cache/3b3fa99e-cee4-41f3-ac26-777b4b6a8b12.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "833ef375c78eb29fa279316883aa16f9ed6e6ca68ccc52f8d56292e5949662e4",
+      "bytes": 22609,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bd48d618-5e26-4354-b281-7075856cbc31.jpg",
+    "fetchedAt": "2026-10-02T21:41:31.544798+00:00",
+    "sha256": "559fa63b1b44a5937a32a91e4be4d4abef2845c231c1578aac43f02d8891ad99",
+    "bytes": 109174,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "7d6a8722-a6f4-40de-a761-16ea479630a9",
+  "sourceUrl": "https://styles.refero.design/style/7d6a8722-a6f4-40de-a761-16ea479630a9",
+  "fetchedAt": "2026-10-02T21:48:53.551033+00:00",
+  "extractedAt": "2026-10-02T21:48:53.593075+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Instagram Sans Typeface — Style Reference",
+  "htmlSha256": "bcb4bb4b0417d8a09c77b04c00a19c96018ba5d19ea8b13ef5d0a31483e9998a",
+  "cache": ".cache/7d6a8722-a6f4-40de-a761-16ea479630a9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e54b54b77458f65f02c950fb090deb257e1ba0287d7816eb634054eb7a14a31f",
+      "bytes": 20771,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7557db4a-21dc-4709-9a57-dddea3631eb5.jpg",
+    "fetchedAt": "2026-10-02T21:48:55.476489+00:00",
+    "sha256": "187530c555fbce40cd62024983c4dd56616ac2ff361885738fd3d66955be6132",
+    "bytes": 54581,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

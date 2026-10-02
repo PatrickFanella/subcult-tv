@@ -1,0 +1,29 @@
+{
+  "styleId": "145e70b3-e0a4-4fbd-8d9e-23bd93dd0021",
+  "sourceUrl": "https://styles.refero.design/style/145e70b3-e0a4-4fbd-8d9e-23bd93dd0021",
+  "fetchedAt": "2026-10-02T21:38:02.000785+00:00",
+  "extractedAt": "2026-10-02T21:38:02.039045+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "North Kingdom — Style Reference",
+  "htmlSha256": "43b3a6fe0502dcb986acf2ae89dac9ea4a3e463bc1a36deed59eb6e8b7e3be97",
+  "cache": ".cache/145e70b3-e0a4-4fbd-8d9e-23bd93dd0021.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7423cfe73a7e47512f9d7125221c922a5915af38a7976d900515d4cdf78ab561",
+      "bytes": 17026,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1ce6e98b-c97b-49a0-8da0-7802cfcec1ee.jpg",
+    "fetchedAt": "2026-10-02T21:38:03.969628+00:00",
+    "sha256": "ad184db7f876a841ed3ac189c2cf29fb45272ee5c1bd7c84c6a2a21e878be797",
+    "bytes": 57449,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

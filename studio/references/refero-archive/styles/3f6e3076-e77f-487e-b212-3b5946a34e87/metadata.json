@@ -1,0 +1,29 @@
+{
+  "styleId": "3f6e3076-e77f-487e-b212-3b5946a34e87",
+  "sourceUrl": "https://styles.refero.design/style/3f6e3076-e77f-487e-b212-3b5946a34e87",
+  "fetchedAt": "2026-10-02T21:53:26.175472+00:00",
+  "extractedAt": "2026-10-02T21:53:26.228292+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Miranda — Style Reference",
+  "htmlSha256": "4a67b365cabafc1c893a5e096fd8a84419fb1e0ebddf75e21b8b12a90a89cfaa",
+  "cache": ".cache/3f6e3076-e77f-487e-b212-3b5946a34e87.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6ceb68d573e3e36cff3082d3137caa98c7e99754103bc123a7eca326e01c8a6c",
+      "bytes": 19237,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c14cbc49-f910-47e0-ae17-043801691f46.jpg",
+    "fetchedAt": "2026-10-02T21:53:28.273614+00:00",
+    "sha256": "3e3368458a1a7bc6b1b272c8feb23c416399c61d0c7858f0edcba041a35dca9c",
+    "bytes": 115715,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

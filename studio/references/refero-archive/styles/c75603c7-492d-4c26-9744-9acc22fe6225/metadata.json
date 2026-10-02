@@ -1,0 +1,29 @@
+{
+  "styleId": "c75603c7-492d-4c26-9744-9acc22fe6225",
+  "sourceUrl": "https://styles.refero.design/style/c75603c7-492d-4c26-9744-9acc22fe6225",
+  "fetchedAt": "2026-10-02T21:53:46.222284+00:00",
+  "extractedAt": "2026-10-02T21:53:46.269051+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "AngelList — Style Reference",
+  "htmlSha256": "1d67992e31bf638a9db43f7943dd1267bd55ed5b5c2602454b4e3d0b4ce784b6",
+  "cache": ".cache/c75603c7-492d-4c26-9744-9acc22fe6225.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8c2d1ec0cc88048d1e9d2adb3b6fa8cf1835b554242eea9088a6da4ef0dd79e9",
+      "bytes": 21685,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6572945d-9e2f-453a-b4aa-fb7676a00f2b.jpg",
+    "fetchedAt": "2026-10-02T21:53:48.386419+00:00",
+    "sha256": "91989c39aa7d021ecaa30150c26c48f120eab0b5b6ced7022a32d695da86f9fd",
+    "bytes": 97185,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

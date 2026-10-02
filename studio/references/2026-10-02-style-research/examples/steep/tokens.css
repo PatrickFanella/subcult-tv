@@ -1,0 +1,12 @@
+/* Observed values, not canonical brand roles. See DESIGN.md and tokens.json. */
+:root {
+  --observed-color-01: rgb(23, 25, 28);
+  --observed-color-02: rgb(0, 0, 0);
+  --observed-color-03: rgb(255, 255, 255);
+  --observed-color-04: rgb(76, 76, 76);
+  --observed-color-05: oklab(0 0 0 / 0.04);
+  --observed-color-06: rgb(93, 42, 26);
+  --observed-color-07: rgba(4, 23, 43, 0.05);
+  --observed-font-01: Sohne, ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --observed-font-02: Signifier, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}

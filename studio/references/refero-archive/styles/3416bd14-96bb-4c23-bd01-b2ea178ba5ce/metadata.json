@@ -1,0 +1,29 @@
+{
+  "styleId": "3416bd14-96bb-4c23-bd01-b2ea178ba5ce",
+  "sourceUrl": "https://styles.refero.design/style/3416bd14-96bb-4c23-bd01-b2ea178ba5ce",
+  "fetchedAt": "2026-10-02T21:32:34.377074+00:00",
+  "extractedAt": "2026-10-02T21:32:34.398562+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Active Theory — Style Reference",
+  "htmlSha256": "994d05161877dda93ff1b8fdd9e0f9373329378a18cd041af5fd30ef8edc483a",
+  "cache": ".cache/3416bd14-96bb-4c23-bd01-b2ea178ba5ce.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9020c1cffe8737e023b389033f611d643f6f311cac70938bfa9cf0d5a5b64d67",
+      "bytes": 19238,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a7546dc3-de03-490c-bab0-3d1194b4e03b.jpg",
+    "fetchedAt": "2026-10-02T21:32:35.991852+00:00",
+    "sha256": "dc07574a5a538e98d68baad4e8a302288c9a5715cbe1d565d27554bc8d0c6df3",
+    "bytes": 26852,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

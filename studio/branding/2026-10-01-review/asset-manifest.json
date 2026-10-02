@@ -1,0 +1,1123 @@
+{
+  "status": "direction review with recorded choices",
+  "date": "2026-10-01",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4935,
+      "sha256": "0f97997b81c42d1620e27f47af7038d4857cac0f9975bfcfd98187873d5b1493"
+    },
+    {
+      "path": "bootstrap-template/README.md",
+      "bytes": 975,
+      "sha256": "0f02d0d7cf4a6287f4de1182e944584bfd460d5c4c8b14197654d5b29081a45e"
+    },
+    {
+      "path": "bootstrap-template/bootstrap.py",
+      "bytes": 1999,
+      "sha256": "960ce5cbe97e9c39e256e2b2e6fcfed1e470bbcc346273262f9357a67ac47b34"
+    },
+    {
+      "path": "bootstrap-template/brand.json",
+      "bytes": 424,
+      "sha256": "8752c55bd420f83e9a95816d5fc7b66ce34099b58f23e3f4bdfd62fb627effe0"
+    },
+    {
+      "path": "bootstrap-template/example/avatar.png",
+      "bytes": 12025,
+      "sha256": "7aa2861c5014e7702145ebae52eb30dc101b497ea1476685040d3e8c547d23fa",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "bootstrap-template/example/avatar.svg",
+      "bytes": 564,
+      "sha256": "d2b704625bda963b24c73489fe265efb7ae4050eb27676d8395c515e4ab335c2"
+    },
+    {
+      "path": "bootstrap-template/example/banner.png",
+      "bytes": 21575,
+      "sha256": "ed9df885824d9e133bfa2b97f28cb32f82a8d2e32e4ae40e6092c9ca40b3d565",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "bootstrap-template/example/banner.svg",
+      "bytes": 560,
+      "sha256": "b492a2fcbb81d508fb0cedd481e47c9d848d22b3d5a6e0e64b0d3451de089628"
+    },
+    {
+      "path": "bootstrap-template/example/brand.json",
+      "bytes": 424,
+      "sha256": "8752c55bd420f83e9a95816d5fc7b66ce34099b58f23e3f4bdfd62fb627effe0"
+    },
+    {
+      "path": "bootstrap-template/example/landscape-post.png",
+      "bytes": 38455,
+      "sha256": "2b2748185d1052b9a3b066a10bcd30989e0ac86352e3f1434e9906d57092b7b8",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "path": "bootstrap-template/example/landscape-post.svg",
+      "bytes": 570,
+      "sha256": "9aec8d2be7341d6757682835578f885601ff26a72113364d9c9a497f63bf2274"
+    },
+    {
+      "path": "bootstrap-template/example/square-post.png",
+      "bytes": 28208,
+      "sha256": "3eaedcd42e3ca500e174afa09d10aad7b855709c0503c637bef43e1c0093031f",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "bootstrap-template/example/square-post.svg",
+      "bytes": 589,
+      "sha256": "f23f0554260b4f86fd30bef800e7e7749e3799a5404b3d1a54680f3e77f1e98e"
+    },
+    {
+      "path": "bootstrap-template/example/story.png",
+      "bytes": 33121,
+      "sha256": "49c471b5e85e5bb0ec216ea14a63023f2b29b45e23acb7ecd305d337c2d59e0d",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "bootstrap-template/example/story.svg",
+      "bytes": 597,
+      "sha256": "e1072b2b516fcc4fe89cf81e68adee622c1c16c828af98eeed94f4b5b8767bf7"
+    },
+    {
+      "path": "build_review.py",
+      "bytes": 20302,
+      "sha256": "971ed286e74c95a37744f761d86f9d998fb8b478dd58bf856ea749f130449051"
+    },
+    {
+      "path": "catalogue.json",
+      "bytes": 8276,
+      "sha256": "96d7fddb53d51bf2b169b7b04171156e27c89bdeaa5450135d63a488dc9c17f2"
+    },
+    {
+      "path": "concepts/clpr/avatar.png",
+      "bytes": 6749,
+      "sha256": "37458e0e1feb15708fed93504227200802610994fe8355451653049508d8dd8a",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/clpr/avatar.svg",
+      "bytes": 423,
+      "sha256": "f20a9ab40a26c1bc7d821134598670f341d6b4ba230b992657172f950a56cba4"
+    },
+    {
+      "path": "concepts/clpr/banner.png",
+      "bytes": 37412,
+      "sha256": "978d777292917f41d8a9e16caa603a4e70288151d21c60322d8b17eac4896951",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/clpr/banner.svg",
+      "bytes": 3470,
+      "sha256": "98363191c11e62e62697b6300a5bad02b875fb5e1c22c07bae098189216b8183"
+    },
+    {
+      "path": "concepts/clpr/board.png",
+      "bytes": 85350,
+      "sha256": "83671410457e040d9cc06875b4d7122bc6683fc0c3035677bc71a069e9438c2a",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/clpr/board.svg",
+      "bytes": 10417,
+      "sha256": "fc7c87398081ad434472bfa805b45d026b32dbb3a37700615778233f0743f63e"
+    },
+    {
+      "path": "concepts/clpr/post.png",
+      "bytes": 41055,
+      "sha256": "cf1fb75d09be01f8917cf882129189fec0fe79b997ba0d5189c78570df296f41",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/clpr/post.svg",
+      "bytes": 4928,
+      "sha256": "645119d872aca66041e901adbe0c13538e220297b16e310be0753dd5a6cbe1b3"
+    },
+    {
+      "path": "concepts/clpr/tokens.json",
+      "bytes": 261,
+      "sha256": "2c6972a9c740b1ac6092dc102d2e816b16186e852ef7c5f72f5f4b6f614b40e8"
+    },
+    {
+      "path": "concepts/hasanara/avatar.png",
+      "bytes": 15861,
+      "sha256": "dff96b91eba0853f51421bdaebc7d504c9151474c2430928ece6610589e582de",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/hasanara/avatar.svg",
+      "bytes": 24649,
+      "sha256": "2bd8b98318ef3fbad5593b6e3d4b9fbe12a04b2e9ed0ffc5e62f6bdf19df7d22"
+    },
+    {
+      "path": "concepts/hasanara/banner.png",
+      "bytes": 67801,
+      "sha256": "bc77f3657ca04ef43816c4a6c6f4b9c4627ffee80ab085f7c5749a0b7b71a83f",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/hasanara/banner.svg",
+      "bytes": 25396,
+      "sha256": "c3d0a14f521b30fee574beb1805f91568c3be6f966c2f4eb6d3efdcb085ac2ba"
+    },
+    {
+      "path": "concepts/hasanara/board.png",
+      "bytes": 124227,
+      "sha256": "677acf6ee25e7b20635bf75e5d9defba5d6a551a465df906e8fcb8a728e4dd48",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/hasanara/board.svg",
+      "bytes": 52979,
+      "sha256": "a4b30c961a2f362d74858ecf0857401ebdd415172230bc25881b5937fcd2d919"
+    },
+    {
+      "path": "concepts/hasanara/post.png",
+      "bytes": 61345,
+      "sha256": "49a4e7c647798dfc46dc05051b584b97dc97191b7a019f14323c67436902fb14",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/hasanara/post.svg",
+      "bytes": 1350,
+      "sha256": "0c8461501e584228a8b561a7a841426a4cef8748c930be77f78896a19ea18d68"
+    },
+    {
+      "path": "concepts/hasanara/tokens.json",
+      "bytes": 254,
+      "sha256": "763eeb815990e3adb33b89d7e14af87ea7351edb6087320b33b788ec766492b9"
+    },
+    {
+      "path": "concepts/patchwork/avatar.png",
+      "bytes": 6949,
+      "sha256": "5c4ddc15e783b208dd7d67ac1b701ba13b392e7a57bbda8ce81005f77b48a534",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/patchwork/avatar.svg",
+      "bytes": 704,
+      "sha256": "973a50ff913fd387ae3bca3fe1cc5f8d0897f9c272b5bba99823dded406e1328"
+    },
+    {
+      "path": "concepts/patchwork/banner.png",
+      "bytes": 50467,
+      "sha256": "c0b35bbeac1bfafea3a5be0d484d4980a2f91d90df5e6f786d247e504256176a",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/patchwork/banner.svg",
+      "bytes": 1542,
+      "sha256": "00c16c24c93c652c7208b028fff11cb7f9c5177a5251e8a530ecc99f57871283"
+    },
+    {
+      "path": "concepts/patchwork/board.png",
+      "bytes": 108834,
+      "sha256": "f8e0987d45247e8e7678b9794444bd6944abf27d02e400314cce6bc9e4568f72",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/patchwork/board.svg",
+      "bytes": 5216,
+      "sha256": "a43edc6304609fa22ff1815627f28d34da50a75e4be1c6fe7c697851d8dfdf9b"
+    },
+    {
+      "path": "concepts/patchwork/post.png",
+      "bytes": 67363,
+      "sha256": "6cd85b67369216de84eca782e43b39a06bc10e0aad6a52ccd84642ea3ff13a82",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/patchwork/post.svg",
+      "bytes": 1407,
+      "sha256": "f9391cf2bac1209455148d36db14c8788e2c6e350632017e4f8b6d3eaf341526"
+    },
+    {
+      "path": "concepts/patchwork/tokens.json",
+      "bytes": 247,
+      "sha256": "71228f922e6aa998419a92abcec5ad9badeae5f1513337906a7643483e9bc90e"
+    },
+    {
+      "path": "concepts/patrick-a/avatar.png",
+      "bytes": 3581,
+      "sha256": "035fd6f314ecce77fc3494ae2a3b3cd61aff4809c349c50eb233154da2e0f163",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/patrick-a/avatar.svg",
+      "bytes": 2203,
+      "sha256": "a503fd045d28a344bb3104b2db5b64da4363c1120003b65743ecd25ec8c61248"
+    },
+    {
+      "path": "concepts/patrick-a/banner.png",
+      "bytes": 41057,
+      "sha256": "0165e38a9dcc8c6a41046cd3e296ce172e600bc943622002e6e62c3841d61b10",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/patrick-a/banner.svg",
+      "bytes": 3506,
+      "sha256": "d8f6a7f055542feaff9c44d60714a5d8088139b7a7f023f213d861e9037b3d4a"
+    },
+    {
+      "path": "concepts/patrick-a/board.png",
+      "bytes": 101431,
+      "sha256": "9e04f04e0171e0b77e10574a0ec7ca4e2b907cb0361dd6df54a5519e52c9617c",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/patrick-a/board.svg",
+      "bytes": 14520,
+      "sha256": "f100e445cced73112b76d8965eef686262ebcc3562386c4964946286dac0fb5c"
+    },
+    {
+      "path": "concepts/patrick-a/post.png",
+      "bytes": 50514,
+      "sha256": "b0b26f63f54cc82c8e08e69cd19ce816b1210b29bcabfff0b0eba279b3090b67",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/patrick-a/post.svg",
+      "bytes": 7233,
+      "sha256": "68b9ecec1e6c49c0a09e6589ba98f19cf45e969b4e0303d2bb479a6b8c89cb05"
+    },
+    {
+      "path": "concepts/patrick-a/tokens.json",
+      "bytes": 276,
+      "sha256": "cf9f4f03d0e8c006b7e46de0eb26eb9e3f3676765b821df13725735403771ca0"
+    },
+    {
+      "path": "concepts/patrick-b/avatar.png",
+      "bytes": 22160,
+      "sha256": "5954e5e8b656281ce9defce2ac3218d3d6dc0c5fe798fec4b4d5b2f5d99a1209",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/patrick-b/avatar.svg",
+      "bytes": 584,
+      "sha256": "bb6f3136a60d7906bc225b9f25c9b454993c0a42ad127bc3cc25c70edb47dca6"
+    },
+    {
+      "path": "concepts/patrick-b/banner.png",
+      "bytes": 78403,
+      "sha256": "618f41c695972f457be7cad913e22153f07370c3a9b154f51589558e4465046a",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/patrick-b/banner.svg",
+      "bytes": 1174,
+      "sha256": "b6eecdaca67312df0ca0ae8746bd10a16163510c187bb313080086fd098439f2"
+    },
+    {
+      "path": "concepts/patrick-b/board.png",
+      "bytes": 144154,
+      "sha256": "521af9b13d533668654035ec0f3463f1837f1bd97d3093028382880d0c818799",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/patrick-b/board.svg",
+      "bytes": 4857,
+      "sha256": "71cd45c3ed37c6380dfacff36f0064e84a87c8162420e3ef89609c58d570317b"
+    },
+    {
+      "path": "concepts/patrick-b/post.png",
+      "bytes": 69130,
+      "sha256": "45d240733a898a39864adab5cc059b425fc16e4bbab241fc01edec711631f635",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/patrick-b/post.svg",
+      "bytes": 1496,
+      "sha256": "7f95f8af6fd3fd125751b3cee172c193fa3f31d85cfa7e6f57d17b08dbd44b3b"
+    },
+    {
+      "path": "concepts/patrick-b/tokens.json",
+      "bytes": 281,
+      "sha256": "988195d3a53e998c49a1721e9f74df677515f1e7dc59bab3a701be475f857c1d"
+    },
+    {
+      "path": "concepts/patrick-c/avatar.png",
+      "bytes": 8960,
+      "sha256": "e72aa26c9afb4fda916ffa499ce4b36171ffbb5bf312c0ee8bb729d3c63c42b9",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/patrick-c/avatar.svg",
+      "bytes": 399,
+      "sha256": "52ca38ecd45786c8907fa558f364844dc4ac867480b20b80f31e50c80f9af00c"
+    },
+    {
+      "path": "concepts/patrick-c/banner.png",
+      "bytes": 212028,
+      "sha256": "34f53770b69d669e67d730042977bd0a842cac07772c8b75b3c19b2824a006ed",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/patrick-c/banner.svg",
+      "bytes": 42165,
+      "sha256": "bc0e0100e3bb7741e1bac768053177e84a0417fc562df40a2d9a64403e6cca24"
+    },
+    {
+      "path": "concepts/patrick-c/board.png",
+      "bytes": 232957,
+      "sha256": "a46472cbbaf1bd7b5eeae469bcef14566e849c9925d0482216e0d5f7c9076027",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/patrick-c/board.svg",
+      "bytes": 45514,
+      "sha256": "f8728d6c6cda9bdf260118b2b3c91c7059e67c08e904d803943b11cdd6d12765"
+    },
+    {
+      "path": "concepts/patrick-c/post.png",
+      "bytes": 61683,
+      "sha256": "3a755898874b553d5a4034c5424417c8a58b56b05f850379f275c77013432336",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/patrick-c/post.svg",
+      "bytes": 1355,
+      "sha256": "427233c948c04022fd24e079bf8d9b736f0be945198ec3e04617b17ecf507b7b"
+    },
+    {
+      "path": "concepts/patrick-c/tokens.json",
+      "bytes": 300,
+      "sha256": "3549d675162e21192025d743619cf87d58d78fc849b6d7a61971ebb0eb6f58cc"
+    },
+    {
+      "path": "concepts/rekolekt-a/avatar.png",
+      "bytes": 2075,
+      "sha256": "ecbb437c942af7f6f2305bd62eaad273b877ff80619e97c1f6968ac2fe84c3e6",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/rekolekt-a/avatar.svg",
+      "bytes": 795,
+      "sha256": "3d44b0bed9ac6f4762b8e74939012fb773b27286bb794497a6dd244c99ee5540"
+    },
+    {
+      "path": "concepts/rekolekt-a/banner.png",
+      "bytes": 41252,
+      "sha256": "46965f58a046cfbd37a2604fe01f9ab28d6ca6b88bca1b9448bc2052763b36c3",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/rekolekt-a/banner.svg",
+      "bytes": 1474,
+      "sha256": "5b01bc5a6b468aae6486cce761d2a580c5e92b947968e3857b029d82518e193d"
+    },
+    {
+      "path": "concepts/rekolekt-a/board.png",
+      "bytes": 101763,
+      "sha256": "429f14f1be1b8541407c681751490dd470febcbd95816300c8946656dded957e",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/rekolekt-a/board.svg",
+      "bytes": 5556,
+      "sha256": "c1ec15ba690a4275875ce8a0fbcced0eb7fe7ccf7ca9abcf3f84510e9784a6d1"
+    },
+    {
+      "path": "concepts/rekolekt-a/post.png",
+      "bytes": 55026,
+      "sha256": "72dc9eb110179c8457bdeae37bad027c73fa4a6f40cb374de984b84d31c4dfac",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/rekolekt-a/post.svg",
+      "bytes": 1699,
+      "sha256": "8f48e36a38706ebeac11e2a1b98395e7e9f7fd40c8729d6fd1971ffbde9d71b6"
+    },
+    {
+      "path": "concepts/rekolekt-a/tokens.json",
+      "bytes": 273,
+      "sha256": "5fb0b71f92e3b889e53bf73d742322e5f32f037468f0c503991844b7d67201b9"
+    },
+    {
+      "path": "concepts/rekolekt-b/avatar.png",
+      "bytes": 2033,
+      "sha256": "c81120dc53a382437a30ddd210325659c863f8b0730fcce85bb41ce3e91c9a39",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/rekolekt-b/avatar.svg",
+      "bytes": 401,
+      "sha256": "2a652feff01a548b0db39617aa60e65a6d411895d69c0c9612b7fad51581cd1c"
+    },
+    {
+      "path": "concepts/rekolekt-b/banner.png",
+      "bytes": 50755,
+      "sha256": "b0f787733fdf9c6e12e893303f51fdafa27bc8f15460338595ffdf32500bab58",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/rekolekt-b/banner.svg",
+      "bytes": 1076,
+      "sha256": "f7874459a5c005d051696dd5bc3a4c61945c8c8af88738d552233ec3ab1f003d"
+    },
+    {
+      "path": "concepts/rekolekt-b/board.png",
+      "bytes": 106366,
+      "sha256": "c43594c5af9268d71417d13c99f420a37395c4c85c155c5b0c9586b383677c4a",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/rekolekt-b/board.svg",
+      "bytes": 4345,
+      "sha256": "67fb2ec752f34c37c3343aba5f506b7ea45d089183b66ce02fbf0bc0f6d68822"
+    },
+    {
+      "path": "concepts/rekolekt-b/post.png",
+      "bytes": 54834,
+      "sha256": "2d709d84ae5c582030504c48c8d0041e531e9b272b828eef095cbfc3325dd93d",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/rekolekt-b/post.svg",
+      "bytes": 1302,
+      "sha256": "a4563ea7c211bf268567d94f72b1a3464b550a5f3a46ac6032818a1ee4a22213"
+    },
+    {
+      "path": "concepts/rekolekt-b/tokens.json",
+      "bytes": 266,
+      "sha256": "d3f699589fa7cf990e000e549416908bbca0dcdae5364fae52a44a5f74526e5a"
+    },
+    {
+      "path": "concepts/rekolekt-c/avatar.png",
+      "bytes": 2026,
+      "sha256": "8517b0857752186709f2c05772d1e775aba1a3f548e40609f74bc9f6913bda97",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/rekolekt-c/avatar.svg",
+      "bytes": 403,
+      "sha256": "235cf9acb40209dc3076eefe3e1c8874a632d9b13dc7aac3c11bf74a6ccd56aa"
+    },
+    {
+      "path": "concepts/rekolekt-c/banner.png",
+      "bytes": 43164,
+      "sha256": "1924a54bea3125c367351255ad93e3171d414cf5fed854cc376a6cfefad36831",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/rekolekt-c/banner.svg",
+      "bytes": 1090,
+      "sha256": "f4cec67711943681d2365dbe7afbb32b7fb3ab27c8e83707ba588e66478b5df3"
+    },
+    {
+      "path": "concepts/rekolekt-c/board.png",
+      "bytes": 99597,
+      "sha256": "e063621b98d52a52099672b45d5a5cd047e5aca9cac22ad3afaf0bb1021a9609",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/rekolekt-c/board.svg",
+      "bytes": 4274,
+      "sha256": "56907da0da28a73a58eb4bb14f3f902a3aa007624ef45881c11b437f2f2d5af6"
+    },
+    {
+      "path": "concepts/rekolekt-c/post.png",
+      "bytes": 44326,
+      "sha256": "2c52ba6d24459d30f9ca1afbe51d62da73d5e61ca7848e1991fd84fc0d7bce61",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/rekolekt-c/post.svg",
+      "bytes": 1194,
+      "sha256": "a65b144903241dd0bf139823f5085104ef5afc7d548ebb162610d17bc7079ab0"
+    },
+    {
+      "path": "concepts/rekolekt-c/tokens.json",
+      "bytes": 269,
+      "sha256": "0590f444220136c5aa6b1da46c61a278b24be9ee3a5b7cf8241d3d7b4454c27f"
+    },
+    {
+      "path": "concepts/subcult-a/avatar.png",
+      "bytes": 8593,
+      "sha256": "19e56d89ba2c6222deeeee214af999b7017ea718066619b4cf6be5fcaeaf0ee3",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/subcult-a/avatar.svg",
+      "bytes": 515,
+      "sha256": "b70ef6f441f48baefe19b76e643382dbe943bfde54706b519cc06eb16fee6e4b"
+    },
+    {
+      "path": "concepts/subcult-a/banner.png",
+      "bytes": 41962,
+      "sha256": "874ee80f38df460fdce9a696a7455346df222406e0c14850ca3ad745084b66c2",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/subcult-a/banner.svg",
+      "bytes": 1070,
+      "sha256": "db2b2b25a82b57ec7fdc4b29dc2061632199d95fdb8b4defa5c08f706f1f59c4"
+    },
+    {
+      "path": "concepts/subcult-a/board.png",
+      "bytes": 103974,
+      "sha256": "f01b99458a55556b73f49ff4f58ab5130644a50ae2d96caf713996d2fad30127",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/subcult-a/board.svg",
+      "bytes": 4472,
+      "sha256": "1620bba82d20d2fcb1c3c3136a620999f98741d80115f20669da0a2a2fcd8248"
+    },
+    {
+      "path": "concepts/subcult-a/post.png",
+      "bytes": 52191,
+      "sha256": "8f3d7496071f6d20671bb20dc44b2f5b8ff4a2f3e0914ced48ab218f019afcd6",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/subcult-a/post.svg",
+      "bytes": 1287,
+      "sha256": "19bceb351df89a9dd19c3f40fc654207a2319323f9221e4229a0555754fdd59a"
+    },
+    {
+      "path": "concepts/subcult-a/tokens.json",
+      "bytes": 283,
+      "sha256": "9ad49774723fa97939feaa3c3f52fd2a5e1800b5bbf4705890b9917d1719bc90"
+    },
+    {
+      "path": "concepts/subcult-b/avatar.png",
+      "bytes": 2011,
+      "sha256": "62bb46190a25d5dcda4cada49f1d71d136f989938a5940714283eac0f9d1586f",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/subcult-b/avatar.svg",
+      "bytes": 472,
+      "sha256": "d62db90614c87af07b8f10593ac787c2d2dd389297154d4cd3ca03b36e5d1181"
+    },
+    {
+      "path": "concepts/subcult-b/banner.png",
+      "bytes": 54148,
+      "sha256": "fef471503ef39e5432b72fbf80e941bc0a257ea92a9ea7c89f355d00fc145115",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/subcult-b/banner.svg",
+      "bytes": 1728,
+      "sha256": "99983d15a96c5026dfb8eb0389fe9746d6cab9a2d3e5da289f639cb7cf69b1a6"
+    },
+    {
+      "path": "concepts/subcult-b/board.png",
+      "bytes": 117514,
+      "sha256": "70b6c80f7b4eba683d8820b776a033eef4261cf570c94d1ef03494a3053e883e",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/subcult-b/board.svg",
+      "bytes": 5866,
+      "sha256": "895291c7112efe0c7aefb92dae88d53658366a5d3b0912ffa3063018f274f179"
+    },
+    {
+      "path": "concepts/subcult-b/post.png",
+      "bytes": 66206,
+      "sha256": "04c02a26bdfd614fc6bf243ddc48a0681a8b0a92e0bfdc8960ed14b9c806aa55",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/subcult-b/post.svg",
+      "bytes": 2054,
+      "sha256": "17c55ee7bc022338d79e94fd5c3cb2f4e0f70de26a17cc397fb38747efa66978"
+    },
+    {
+      "path": "concepts/subcult-b/tokens.json",
+      "bytes": 297,
+      "sha256": "7c149b66de94214cb5647935f032a60dfa6723e3ae17c64a5d15dd5daf975e55"
+    },
+    {
+      "path": "concepts/subcult-c/avatar.png",
+      "bytes": 7671,
+      "sha256": "6877ac62ae1144fa05dee2415eccdcd5072196d5746ed9e5630b238871b13907",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/subcult-c/avatar.svg",
+      "bytes": 440,
+      "sha256": "97698b55917e9b86df95c5e5270efe06bb7572ab4ae430383b3870528258b6d7"
+    },
+    {
+      "path": "concepts/subcult-c/banner.png",
+      "bytes": 24315,
+      "sha256": "e18f3b303d7a72a17479b044af107cd662e9f4a1f4459e009c6248541aaed64c",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/subcult-c/banner.svg",
+      "bytes": 862,
+      "sha256": "015ef97ec902a07763d6add9748f3b1fed6cb80178710f187998203289515d05"
+    },
+    {
+      "path": "concepts/subcult-c/board.png",
+      "bytes": 82242,
+      "sha256": "38c3b14ecd885d65479bbd80aa33729e4cd8edf3bafabc27356906e9302dbc07",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/subcult-c/board.svg",
+      "bytes": 3799,
+      "sha256": "103967d1e1c349e3d0f1e124e9d783fb9f0f3006bc17a55b7652a0ae1c3c9494"
+    },
+    {
+      "path": "concepts/subcult-c/post.png",
+      "bytes": 36734,
+      "sha256": "9432f0af80bc1a614fcc550ab04406300be9558416ec412c2bf0cf87a90b1e78",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/subcult-c/post.svg",
+      "bytes": 904,
+      "sha256": "c957afa3e082989e67b07da8929a9bb49f5c3f435ff3bd108b32d729391a9380"
+    },
+    {
+      "path": "concepts/subcult-c/tokens.json",
+      "bytes": 283,
+      "sha256": "5586a7f15682eb9813c08e72d753b5e85d1d2754ceec3494d4c4bf28f9f8bede"
+    },
+    {
+      "path": "concepts/subcult-os/avatar.png",
+      "bytes": 10163,
+      "sha256": "ed4e4d0fcd9669662d97066047d40bfafdc7fd9758f5aeca546caca2faa7dbe5",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/subcult-os/avatar.svg",
+      "bytes": 542,
+      "sha256": "c56442488ae78164c15af3367cd5af4190c0388c4cd7202524abadb7ecb9db13"
+    },
+    {
+      "path": "concepts/subcult-os/banner.png",
+      "bytes": 43498,
+      "sha256": "f51613b0195869acedc97b85c1f2a94fe84da79fc726d99a50cc3991ef0f5a16",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/subcult-os/banner.svg",
+      "bytes": 1798,
+      "sha256": "f4a328882192874736ff9f4710afaa37ec938ed45505cccc2047681eeee4d860"
+    },
+    {
+      "path": "concepts/subcult-os/board.png",
+      "bytes": 108647,
+      "sha256": "ffac4ab47d2dca7585cd176f50d66d98a5c5fa537e89725ea1a2183561bc4787",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/subcult-os/board.svg",
+      "bytes": 5326,
+      "sha256": "c81f9fde6e26e771b17bd617aa3a09b2c3230eb2b965f9e4235e800b183371a6"
+    },
+    {
+      "path": "concepts/subcult-os/post.png",
+      "bytes": 64423,
+      "sha256": "9bf832a1d5d5411adf0d281b8b14d3960f92e57c015068b4dc5c6c0daf126d19",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/subcult-os/post.svg",
+      "bytes": 1381,
+      "sha256": "ed15b4d070a77a71a2810018aec3dcd9a3bbbe9d0195c5d36259d29089efe0a5"
+    },
+    {
+      "path": "concepts/subcult-os/tokens.json",
+      "bytes": 277,
+      "sha256": "d92d1f1d5e64891a2a2ab2fc29f52bae781ce7bd1678a5424fe2f337f22df5c3"
+    },
+    {
+      "path": "concepts/undertow/avatar.png",
+      "bytes": 11926,
+      "sha256": "a8e5b4e60903f57730382445da87841b42e58fe18a3f00f6ceb3d6c99bf2d12e",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "concepts/undertow/avatar.svg",
+      "bytes": 1289,
+      "sha256": "9e9edbe41e5bfafdecc5fcabc4bde158b90e74e8b26497f4dd9794348c0314b4"
+    },
+    {
+      "path": "concepts/undertow/banner.png",
+      "bytes": 44252,
+      "sha256": "6795525834bcc498902f95105ae90a6a5873af2acb46721008bfabca0fff9c8a",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "concepts/undertow/banner.svg",
+      "bytes": 10521,
+      "sha256": "8d0a44a3e62cd59ac845ed2bf3fe296a624989543473f55959d0833ddcc1d792"
+    },
+    {
+      "path": "concepts/undertow/board.png",
+      "bytes": 98339,
+      "sha256": "10d658eff056f36b1b5fb49c6b89fd52e14302ad1d7f98ace249aa21d0666c3a",
+      "width": 1200,
+      "height": 1040
+    },
+    {
+      "path": "concepts/undertow/board.svg",
+      "bytes": 20693,
+      "sha256": "996d36cf3d033265a4ce98e8e97624b16da0eb0928b272cc9b3bdd832561eda2"
+    },
+    {
+      "path": "concepts/undertow/post.png",
+      "bytes": 37343,
+      "sha256": "1257b2aab8f053144aae7b81dc799cb2a35b85c8db0a52bc175a8d7631f5ac74",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "concepts/undertow/post.svg",
+      "bytes": 7298,
+      "sha256": "f582aa93aa34605b4798534521765e7e53f334046ad9ee458d5a1fbdbd6800d9"
+    },
+    {
+      "path": "concepts/undertow/tokens.json",
+      "bytes": 272,
+      "sha256": "7f6ee93b3fa4a7801a58f2ce4dd98b2c81720135038f4b875133008e6c26b520"
+    },
+    {
+      "path": "fontconfig.xml",
+      "bytes": 333,
+      "sha256": "173deae8635fb1c4ea0671e492adb755e98d320744c4be32584c35e3964b7c2d"
+    },
+    {
+      "path": "fonts/Barlow-0.ttf",
+      "bytes": 82624,
+      "sha256": "a35caa4687f434d66453c1fe423d7074cfa9fd7ab80c19b0780f3862887d2fc9"
+    },
+    {
+      "path": "fonts/Barlow-1.ttf",
+      "bytes": 85776,
+      "sha256": "74103fd6d41bc32c63aa2e6eb3db619ddb80ce9ca1b1420d5548a23b8ee5d154"
+    },
+    {
+      "path": "fonts/Barlow-Condensed-0.ttf",
+      "bytes": 80968,
+      "sha256": "c82d65280835cb3cd1b499863cf68cae8c6193c45ffae9495d28d01f749a9ae2"
+    },
+    {
+      "path": "fonts/Barlow-Condensed-1.ttf",
+      "bytes": 87120,
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7"
+    },
+    {
+      "path": "fonts/Fraunces-0.ttf",
+      "bytes": 71580,
+      "sha256": "3eb6cf0a14feb1876cc464fa093af4e0c5b05dc46dec65619c1d95f2a1ab5aa7"
+    },
+    {
+      "path": "fonts/Fraunces-1.ttf",
+      "bytes": 71588,
+      "sha256": "f0a9d39b9f14079c55070189562da36c794f824cbcf514b50a0ad0ef20c69379"
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-0.ttf",
+      "bytes": 128812,
+      "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2"
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-1.ttf",
+      "bytes": 131040,
+      "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6"
+    },
+    {
+      "path": "fonts/Inter-Tight-0.ttf",
+      "bytes": 298260,
+      "sha256": "27350bc95b961b9b4e1a80d872f49e903fe727f290f6b2a079e67ceb1685fb1f"
+    },
+    {
+      "path": "fonts/Inter-Tight-1.ttf",
+      "bytes": 302808,
+      "sha256": "98272f3512338c52940816f5db61966ca1cdbc3cdb3c0d981da22612723da59e"
+    },
+    {
+      "path": "fonts/JetBrains-Mono-0.ttf",
+      "bytes": 112172,
+      "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+    },
+    {
+      "path": "fonts/JetBrains-Mono-1.ttf",
+      "bytes": 112092,
+      "sha256": "a1d92abc6b02a87faed23d98067ab1027e8e95242fd7c9978a072ea383b89d1a"
+    },
+    {
+      "path": "fonts/Libre-Baskerville-0.ttf",
+      "bytes": 106728,
+      "sha256": "f5bc4341f15de5e877d8d95b6b14b33e9a3da1f8fef4ed0700ed407f096cffb6"
+    },
+    {
+      "path": "fonts/Libre-Baskerville-1.ttf",
+      "bytes": 106752,
+      "sha256": "8b008ffdae31b314657cb8e28d822da09893035d06bad9b1ab53ea762549cbd1"
+    },
+    {
+      "path": "fonts/Newsreader-0.ttf",
+      "bytes": 109472,
+      "sha256": "b8f5e0a8bdd6a12c722ca5635d9da87e77ccbb2d0172112e34e00c4e55f2cd5a"
+    },
+    {
+      "path": "fonts/Newsreader-1.ttf",
+      "bytes": 111520,
+      "sha256": "81d90be46eec4aefac9cf507352f96c4890dbbcb0f7a390091545c1df06f16c6"
+    },
+    {
+      "path": "fonts/Oswald-0.ttf",
+      "bytes": 86068,
+      "sha256": "bd6ff5a83bcdc92d7aac6dbb16e4dd2b0b0320bec6402bb81f5dd9735b500e46"
+    },
+    {
+      "path": "fonts/Oswald-1.ttf",
+      "bytes": 86416,
+      "sha256": "a6ee8b91ec269a6f48631ba4ba1a3ab7e5039e5482dda8dc9672ee4620d7bd68"
+    },
+    {
+      "path": "fonts/Public-Sans-0.ttf",
+      "bytes": 56172,
+      "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546"
+    },
+    {
+      "path": "fonts/Public-Sans-1.ttf",
+      "bytes": 56364,
+      "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a"
+    },
+    {
+      "path": "fonts/Space-Grotesk-0.ttf",
+      "bytes": 69360,
+      "sha256": "ec926d5065eaca49a48f96e312bbae0bbc5733c24215cf5dfabbdccee926fef7"
+    },
+    {
+      "path": "fonts/Space-Grotesk-1.ttf",
+      "bytes": 69308,
+      "sha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85"
+    },
+    {
+      "path": "fonts/barlow-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "fonts/barlowcondensed-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "fonts/fraunces-OFL.txt",
+      "bytes": 4391,
+      "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b"
+    },
+    {
+      "path": "fonts/ibmplexmono-OFL.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "fonts/intertight-OFL.txt",
+      "bytes": 4383,
+      "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58"
+    },
+    {
+      "path": "fonts/jetbrainsmono-OFL.txt",
+      "bytes": 4399,
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+    },
+    {
+      "path": "fonts/librebaskerville-OFL.txt",
+      "bytes": 4542,
+      "sha256": "3624eddd4c8f8a908130a417ae7cd089c9da69899c4e0ca1a5217d0a6fae16fd"
+    },
+    {
+      "path": "fonts/newsreader-OFL.txt",
+      "bytes": 4394,
+      "sha256": "fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8"
+    },
+    {
+      "path": "fonts/oswald-OFL.txt",
+      "bytes": 4483,
+      "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652"
+    },
+    {
+      "path": "fonts/publicsans-OFL.txt",
+      "bytes": 4390,
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac"
+    },
+    {
+      "path": "fonts/sources.json",
+      "bytes": 9044,
+      "sha256": "3b5afe3526387402d2e6aac2cb6c4f4fd771f80e9bbcf4edcc382278478819eb"
+    },
+    {
+      "path": "fonts/spacegrotesk-OFL.txt",
+      "bytes": 4495,
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
+    },
+    {
+      "path": "index.html",
+      "bytes": 17979,
+      "sha256": "de5edd4ed91a2dc5948cad77a1da25dc7bb9706e14095d43bdbd9d7447a82def"
+    },
+    {
+      "path": "overview.png",
+      "bytes": 351575,
+      "sha256": "e458988c71aea113fd0762c6ddb19ef3e47319a91e0b2ad18b845111ec7e83ab",
+      "width": 1200,
+      "height": 2080
+    },
+    {
+      "path": "overview.svg",
+      "bytes": 1110847,
+      "sha256": "0968ebdf7b8607b1d4700430b449e0b94bb9ed58cbeef9aa1576e7332f944bf5"
+    },
+    {
+      "path": "patrick-comparison.png",
+      "bytes": 185608,
+      "sha256": "4866363ddb4df2b593d139a07467e3c2ff359d07b5200bd1ad852b4773fe68f2",
+      "width": 1800,
+      "height": 520
+    },
+    {
+      "path": "patrick-comparison.svg",
+      "bytes": 638433,
+      "sha256": "dd423f193131985c92455a111bfced2fbaa01c9c978f5344597df88a7e9437f5"
+    },
+    {
+      "path": "references/asset-inventory.json",
+      "bytes": 52542,
+      "sha256": "fbf242fda42760c389bc533701847d9139bfbda7505de78297930b74b0009829"
+    },
+    {
+      "path": "references/clpr-wordmark.svg",
+      "bytes": 1826,
+      "sha256": "a2b07d413d029f5e690e8681dc4296eeb68465a4f16095fb48572d62846084d0"
+    },
+    {
+      "path": "references/gallery-desktop.png",
+      "bytes": 177749,
+      "sha256": "e3a583894bd05f3a35366cb2ffbf6a4e8a74ec4ac27d7040e6c74813d5128c2f",
+      "width": 1122,
+      "height": 701
+    },
+    {
+      "path": "references/hasanara-logo.svg",
+      "bytes": 18225,
+      "sha256": "2eb086f7bcd5e52a6ce1609dae7a1edc2d43fbdba07f98de8beaa6e5ba396ee4"
+    },
+    {
+      "path": "references/patchwork-icon.svg",
+      "bytes": 263,
+      "sha256": "96e4b14051b5fa483da0d7813ae81454565a7a8c9057f556d9ebf813b148808f"
+    },
+    {
+      "path": "references/patrick-avatar.jpg",
+      "bytes": 30846,
+      "sha256": "0c7a33e558ba7bfb263c5829aa354162a21581b06a9e351be96ecc67d9fb3ac8"
+    },
+    {
+      "path": "references/rekolekt-mark.svg",
+      "bytes": 330,
+      "sha256": "0d9141fa95c5fb53448dfc67d68adbdbf48bbc51e97c692bfb58da42f30f7f7a"
+    },
+    {
+      "path": "references/undertow-favicon.svg",
+      "bytes": 698,
+      "sha256": "ebf41c1cc1ceeb6907d3b9d292fd83e9aca7065a321009a90930c93cc597390d"
+    },
+    {
+      "path": "rekolekt-comparison.png",
+      "bytes": 119397,
+      "sha256": "7bd23f56ab902a35f9dd71ca6e5e45bc40b4ad919041505056e15764011c63cc",
+      "width": 1800,
+      "height": 520
+    },
+    {
+      "path": "rekolekt-comparison.svg",
+      "bytes": 410674,
+      "sha256": "76884813e5d9188b845737ff1c44734d64a6745309a5c2a406cbbda5e2e4d89e"
+    },
+    {
+      "path": "selected-directions.json",
+      "bytes": 422,
+      "sha256": "7d37afadb97a56f38a396a42911f1ee954b27037099ef8e3d56d71d35b729705"
+    },
+    {
+      "path": "subcult-comparison.png",
+      "bytes": 119939,
+      "sha256": "8a778745065f3e7f81fae8b7a75b86de0f47266d95cd528d3f32e50a31dd97bf",
+      "width": 1800,
+      "height": 520
+    },
+    {
+      "path": "subcult-comparison.svg",
+      "bytes": 405345,
+      "sha256": "36fd6c8e390338005cdcbcbe5b57d39343f2bdf4efd5cc238a00c66f9072c0c6"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 703,
+      "sha256": "71174082c07bd66aa25f238cdd77d95c50c7f7687608e6f894f39b63c8685369"
+    }
+  ]
+}

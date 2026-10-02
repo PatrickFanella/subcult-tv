@@ -1,0 +1,29 @@
+{
+  "styleId": "4fc7a535-3c99-4ffe-8365-7d025d33274e",
+  "sourceUrl": "https://styles.refero.design/style/4fc7a535-3c99-4ffe-8365-7d025d33274e",
+  "fetchedAt": "2026-10-02T21:42:41.496315+00:00",
+  "extractedAt": "2026-10-02T21:42:41.543954+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Surfshark — Style Reference",
+  "htmlSha256": "a1a0d2333bd8d8dbe3ac23437deb1f94ae383b2e80d156703895c470e55c0e89",
+  "cache": ".cache/4fc7a535-3c99-4ffe-8365-7d025d33274e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3f28eca9b46e1210240563dd8e380b5c0fd4ead89280611159ea73295048b863",
+      "bytes": 17264,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/220fe25c-b036-4bdd-83fa-3ce6e57bb88f.jpg",
+    "fetchedAt": "2026-10-02T21:42:43.594782+00:00",
+    "sha256": "d82321c30791f02d60794882476b88f1ac476a006f75dcbf10199fae2471d005",
+    "bytes": 114093,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

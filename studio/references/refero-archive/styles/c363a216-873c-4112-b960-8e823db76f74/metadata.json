@@ -1,0 +1,29 @@
+{
+  "styleId": "c363a216-873c-4112-b960-8e823db76f74",
+  "sourceUrl": "https://styles.refero.design/style/c363a216-873c-4112-b960-8e823db76f74",
+  "fetchedAt": "2026-10-02T21:52:58.178567+00:00",
+  "extractedAt": "2026-10-02T21:52:58.221763+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Stable Audio — Style Reference",
+  "htmlSha256": "04dd8fbc2f0176910c6050739520f63944160cdeeed5ca2e1274bf3b10ac71b0",
+  "cache": ".cache/c363a216-873c-4112-b960-8e823db76f74.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bc9915a0c7ee905a17df038668aba69bdce5c9e68be645ef328ea56fd8f2c5e4",
+      "bytes": 17761,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4325fc0b-0c41-46ce-b5e6-43bafe6a4f79.jpg",
+    "fetchedAt": "2026-10-02T21:53:00.152883+00:00",
+    "sha256": "53e864fa4d0794018f8d7deb2009ea13f514ef14299567e0417802ec87a5ba0e",
+    "bytes": 62765,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

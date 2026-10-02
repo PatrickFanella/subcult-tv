@@ -1,0 +1,29 @@
+{
+  "styleId": "8b6970fa-3478-4c1b-aadf-41ffe1ef68e6",
+  "sourceUrl": "https://styles.refero.design/style/8b6970fa-3478-4c1b-aadf-41ffe1ef68e6",
+  "fetchedAt": "2026-10-02T22:00:58.206057+00:00",
+  "extractedAt": "2026-10-02T22:00:58.241958+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Twocreate — Style Reference",
+  "htmlSha256": "9f753940f45891bf5e42d9983be22dafe6c4087ca6e70c6442536d2f88e584da",
+  "cache": ".cache/8b6970fa-3478-4c1b-aadf-41ffe1ef68e6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ed4d0ea810dd5ae11819b98f8b17cdb529a66152bfdc5749300b7db57111ee1d",
+      "bytes": 15940,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1f3c5f0d-380e-4189-9607-6b92d4742fa2.jpg",
+    "fetchedAt": "2026-10-02T22:01:00.330563+00:00",
+    "sha256": "1ed0a4843522f0de4851cefec3fc863a07fa3e7f55708d57df0f10f833eee3d7",
+    "bytes": 76099,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,21 @@
+:root {
+  --pf-base: #282a36;
+  --pf-panel: #21222c;
+  --pf-line: #44475a;
+  --pf-paper: #f8f8f2;
+  --pf-body: #d7d7eb;
+  --pf-muted: #a5a6b5;
+  --pf-purple: #bd93f9;
+  --pf-pink: #ff79c6;
+  --pf-green: #50fa7b;
+}
+
+:root {
+ --brand-bg: #282a36;
+ --brand-fg: #f8f8f2;
+ --brand-accent: #bd93f9;
+ --brand-secondary: #50fa7b;
+ --brand-safe-label: #50fa7b;
+ --font-display: "Space Grotesk"; --font-body: "Inter"; --font-label: "JetBrains Mono";
+}
+.brand-display,.brand-body,.brand-label {text-shadow:none}

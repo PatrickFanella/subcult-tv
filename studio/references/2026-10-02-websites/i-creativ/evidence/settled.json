@@ -1,0 +1,506 @@
+{
+  "id": "i-creativ",
+  "name": "I-Creativ",
+  "requestedUrl": "https://i-creativ.net/en",
+  "screenshotUnavailable": "T3 snapshot failed after browser client changed; initial screenshot retained",
+  "bodyText": "Design & Web Development by\nD\ni\ng\ni\nt\na\nl\n \na\nr\nt\ni\ns\na\nn\ns\nWe are based in the creative district \"Kapana\" of Plovdiv\nT\nH\nE\n \nE\nU\nR\nO\nP\nE\nA\nN\n \nC\nA\nP\nI\nT\nA\nL\n \nO\nF\n \nC\nU\nL\nT\nU\nR\nE\nfor 2019\n\nSince 2006 we've been working with startups and established companies, helping them rediscover their essence and strengthen their digital presence. Our approach is simple: custom‑made craft — design and development shaped around the idea, not the other way around.\n\nSEE OUR SELECTED PROJECTS\nSEE MORE ABOUT US\n\n© Urban Fossils — photo by I‑C\n\nS\nt\nu\nd\ni\no\n \nH\ni\ng\nh\nl\ni\nn\ne\n\nA curated highlight from our recent work — a project that reflects our approach to design, identity and digital craft. Each Highline selection showcases a different facet of our practice: clarity in concept, precision in execution, and a strong visual narrative shaped around the client's world.\n\nA project where WebGL, motion and typography merge into a single narrative space.\n\nP\n.\n \nT\na\nn\nc\nh\ne\nv\n \n-\n \nS\nc\ne\nn\no\ng\nr\na\np\nh\ny\n\nAn interactive portfolio for one of Bulgaria's leading digital scenographers. Awarded Site of the Year CS 2025, BGWEB 2025 and GSAP Site of the Day.\n\nSEE MORE ABOUT THE PROJECT\n\nWeb Design FAQ Visual & Copyright About cookies\n\n\nContact\nBulgaria, Plovdiv 4000 35 Georgi Benkovski str.\noffice@i-creativ.net\nFacebook Instagram Behance LinkedIn\n(C) 2026 I-CREATIV STUDIO | 20+ YEARS OF DIGITAL ARTISTRY\nThis website uses cookies to ensure you get the best experience on our website.\nABOUT COOKIES. I AGREE",
+  "canvas": [
+    {
+      "height": 1440,
+      "width": 1920
+    }
+  ],
+  "capturedAt": "2026-10-02T20:24:22.196Z",
+  "colors": [
+    [
+      "oklch(0.8846 0.0046 259.33)",
+      32
+    ],
+    [
+      "oklch(0.2014 0.0101 276.52)",
+      1
+    ],
+    [
+      "rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "rgba(255, 255, 255, 0.65)",
+      1
+    ]
+  ],
+  "fontFaces": [
+    "@font-face { font-family: peridot-pe-variable; src: url(\"https://use.typekit.net/af/ef62e5/0000000000000000774ee020/31/l?primer=433fdf3ba7e6263f758ff2bfb379392b39aed677a61ce36b1479e520f512e2a1&fvd=n4&v=3\") format(\"woff2\"), url(\"https://use.typekit.net/af/ef62e5/0000000000000000774ee020/31/d?primer=433fdf3ba7e6263f758ff2bfb379392b39aed677a61ce36b1479e520f512e2a1&fvd=n4&v=3\") format(\"woff\"), url(\"https://use.typekit.net/af/ef62e5/0000000000000000774ee020/31/a?primer=433fdf3ba7e6263f758ff2bfb379392b39aed677a61ce36b1479e520f512e2a1&fvd=n4&v=3\") format(\"opentype\"); font-display: swap; font-style: normal; font-weight: 100 950; font-stretch: normal; }",
+    "@font-face { font-family: BebasNeue; src: url(\"../fonts/BebasNeue-Bold.woff2\") format(\"woff2\"); font-weight: 700; font-style: normal; font-display: swap; }"
+  ],
+  "fonts": [
+    [
+      "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      33
+    ],
+    [
+      "BebasNeue, Impact, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      1
+    ]
+  ],
+  "images": [],
+  "links": [
+    {
+      "text": "",
+      "url": "https://i-creativ.net/en"
+    },
+    {
+      "text": "SEE OUR SELECTED PROJECTS",
+      "url": "https://i-creativ.net/en/projects"
+    },
+    {
+      "text": "SEE MORE ABOUT US",
+      "url": "https://i-creativ.net/en/about"
+    },
+    {
+      "text": "",
+      "url": "https://i-creativ.net/en/projects/238-p-tanchev-scenography"
+    },
+    {
+      "text": "SEE MORE ABOUT THE PROJECT",
+      "url": "https://i-creativ.net/en/projects/238-p-tanchev-scenography"
+    },
+    {
+      "text": "Web Design FAQ",
+      "url": "https://i-creativ.net/en/web-design-plovdiv"
+    },
+    {
+      "text": "Visual & Copyright",
+      "url": "https://i-creativ.net/en/visual-concept-copyright"
+    },
+    {
+      "text": "About cookies",
+      "url": "https://i-creativ.net/en/cookie-policy"
+    },
+    {
+      "text": "Bulgaria, Plovdiv 4000 35 Georgi Benkovski str.",
+      "url": "https://maps.app.goo.gl/RGxgJzSxRbJ3gzuu5"
+    },
+    {
+      "text": "Facebook",
+      "url": "https://www.facebook.com/icreativ.studio/"
+    },
+    {
+      "text": "Instagram",
+      "url": "https://www.instagram.com/icreativ_studio/"
+    },
+    {
+      "text": "Behance",
+      "url": "https://www.behance.net/yohannes"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/i-creativ-studio"
+    },
+    {
+      "text": "ABOUT COOKIES.",
+      "url": "https://i-creativ.net/en/cookie-policy"
+    }
+  ],
+  "mediaQueries": [
+    "(color: oklch(0.2014 0.0101 276.52))",
+    "screen and (max-width: 2900px)",
+    "screen and (max-width: 1280px)",
+    "screen and (max-width: 1024px)",
+    "screen and (max-width: 768px)",
+    "screen and (orientation: portrait)",
+    "screen and (orientation: portrait) and (min-aspect-ratio: 60 / 100) and (max-aspect-ratio: 80 / 100)",
+    "screen and (max-width: 500px)",
+    "screen and (max-width: 359.98px)",
+    "print, (prefers-reduced-motion: reduce)"
+  ],
+  "reducedMotion": [
+    "@media print, (prefers-reduced-motion: reduce) {\n  *, ::before, ::after { transition-property: none !important; transition-duration: 0s !important; animation: auto ease 0s 1 normal none running none !important; }\n}"
+  ],
+  "rootVariables": {
+    "--accent-size": "clamp(0.95rem, 1.35vw, 1.12rem)",
+    "--accent-title-size": "clamp(1.125rem, 1.2vw + 1rem, 1.55rem)",
+    "--base-font-size": "16px",
+    "--bg-color": "oklch(0.2014 0.0101 276.52)",
+    "--darkalpha-color": "oklch(0.2014 0.0101 276.52 / 75%)",
+    "--darkalphasolid-color": "oklch(0.8642 0.0056 274.96)",
+    "--font-heading": "\"BebasNeue\", Impact, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+    "--font-main": "\"peridot-pe-variable\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+    "--grey-dark-color": "oklch(0.5068 0 0)",
+    "--h1-size": "clamp(1.6rem, 10vw + 1rem, 7.32rem)",
+    "--h1-strong-size": "3rem",
+    "--h1em-size": "clamp(14px, 0.5vw + 1rem, 1.55rem)",
+    "--h2-size": "clamp(1.2rem, 3vw + 1rem, 3rem)",
+    "--h3-size": "clamp(1.125rem, 1.2vw + 1rem, 1.55rem)",
+    "--h4-size": "clamp(1.1rem, 1.2vw + 1rem, 1.375rem)",
+    "--h5-size": "clamp(0.938rem, 2vw + 1rem, 1.063rem)",
+    "--h6-size": "14px",
+    "--header-h": "calc(var(--vh, 1vh) * 65)",
+    "--lightalpha-color": "oklch(0.8705 0.0204 100.62)",
+    "--m-pose": "calc(var(--scrollY, 1vh) / 10)",
+    "--marquee-size": "clamp(1.125rem, 2.2vw + 1rem, 1.75rem)",
+    "--marquee-width": "var(--size-vw100)",
+    "--menu-size": "clamp(14px, 1vw + 0.5rem, 15px)",
+    "--move-final": "calc(-48% + var(--offset))",
+    "--move-initial": "calc(0 + var(--offset))",
+    "--mtitle-size": "clamp(1.2rem, 3vw + 1rem, 4rem)",
+    "--offset": "20vw",
+    "--p-size": "clamp(0.95rem, 1vw + 0.5rem, 0.98rem)",
+    "--size-vh100": "calc(var(--vh, 1vh) * 100)",
+    "--size-vh12": "calc(var(--vh, 1vh) * 12)",
+    "--size-vh25": "calc(var(--vh, 1vh) * 25)",
+    "--size-vh4": "calc(var(--vh, 1vh) * 4)",
+    "--size-vh50": "calc(var(--vh, 1vh) * 50)",
+    "--size-vh60": "calc(var(--vh, 1vh) * 60)",
+    "--size-vh8": "calc(var(--vh, 1vh) * 8)",
+    "--size-vh80": "calc(var(--vh, 1vh) * 80)",
+    "--size-vw100": "calc(var(--vw, 1vw) * 100)",
+    "--size-vw2": "calc(var(--vh, 1vh) * 2)",
+    "--size-vw25": "calc(var(--vh, 1vh) * 25)",
+    "--size-vw4": "calc(var(--vh, 1vh) * 4)",
+    "--size-vw60": "calc(var(--vw, 1vh) * 60)",
+    "--size-vw8": "calc(var(--vh, 1vh) * 8)",
+    "--sub-size": "13px",
+    "--text-color": "oklch(0.8846 0.0046 259.33)"
+  },
+  "samples": [
+    {
+      "background": "oklch(0.2014 0.0101 276.52)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "isLoading",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 4572,
+      "letterSpacing": "normal",
+      "lineHeight": "21.952px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "15.68px",
+      "tag": "BODY",
+      "text": "Design & Web Development by\nD\ni\ng\ni\nt\na\nl\n \na\nr\nt\ni\ns\na\nn\ns\nWe are based in the creative district \"K",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "class": "mobile-nav-trigger trigger-menu-overlay js-trigger-menu-overlay flex-wrapper",
+      "color": "rgb(0, 0, 0)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 40,
+      "letterSpacing": "normal",
+      "lineHeight": "0px",
+      "maxWidth": "none",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "0px",
+      "tag": "BUTTON",
+      "text": "",
+      "weight": "400",
+      "width": 40
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "all-content-wrapper  hideOnLoad  margin-auto",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 4572,
+      "letterSpacing": "normal",
+      "lineHeight": "21.952px",
+      "maxWidth": "2900px",
+      "padding": "0px",
+      "position": "static",
+      "radius": "0px",
+      "size": "15.68px",
+      "tag": "MAIN",
+      "text": "Design & Web Development by\nD\ni\ng\ni\nt\na\nl\n \na\nr\nt\ni\ns\na\nn\ns\nWe are based in the creative district \"K",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "main-header ",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 632,
+      "letterSpacing": "normal",
+      "lineHeight": "21.952px",
+      "maxWidth": "2900px",
+      "padding": "51.2px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "15.68px",
+      "tag": "HEADER",
+      "text": "Design & Web Development by\nD\ni\ng\ni\nt\na\nl\n \na\nr\nt\ni\ns\na\nn\ns",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "BebasNeue, Impact, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 323,
+      "letterSpacing": "normal",
+      "lineHeight": "161.626px",
+      "maxWidth": "100%",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "117.12px",
+      "tag": "H1",
+      "text": "Design & Web Development by\nD\ni\ng\ni\nt\na\nl\n \na\nr\nt\ni\ns\na\nn\ns",
+      "weight": "700",
+      "width": 1178
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 220,
+      "letterSpacing": "normal",
+      "lineHeight": "66.24px",
+      "maxWidth": "100%",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "48px",
+      "tag": "H2",
+      "text": "We are based in the creative district \"Kapana\" of Plovdiv\nT\nH\nE\n \nE\nU\nR\nO\nP\nE\nA\nN\n \nC\nA\nP\nI\nT\nA\nL\n \n",
+      "weight": "700",
+      "width": 755
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "in-stage-obv block",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 100,
+      "letterSpacing": "0.4704px",
+      "lineHeight": "25.088px",
+      "maxWidth": "752.64px",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "15.68px",
+      "tag": "P",
+      "text": "Since 2006 we've been working with startups and established companies, helping them rediscover their",
+      "weight": "400",
+      "width": 753
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.65)",
+      "class": "in-stage-obv block",
+      "color": "rgba(255, 255, 255, 0.65)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 20,
+      "letterSpacing": "1.3px",
+      "lineHeight": "19.5px",
+      "maxWidth": "624px",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "13px",
+      "tag": "P",
+      "text": "© Urban Fossils — photo by I‑C",
+      "weight": "400",
+      "width": 227
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "intro-text",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 451,
+      "letterSpacing": "normal",
+      "lineHeight": "21.952px",
+      "maxWidth": "none",
+      "padding": "102.4px 0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "15.68px",
+      "tag": "HEADER",
+      "text": "S\nt\nu\nd\ni\no\n \nH\ni\ng\nh\nl\ni\nn\ne\n\nA curated highlight from our recent work — a project that reflects ou",
+      "weight": "400",
+      "width": 589
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 66,
+      "letterSpacing": "normal",
+      "lineHeight": "66.24px",
+      "maxWidth": "100%",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "48px",
+      "tag": "H2",
+      "text": "S\nt\nu\nd\ni\no\n \nH\ni\ng\nh\nl\ni\nn\ne",
+      "weight": "700",
+      "width": 589
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "in-stage-obv block",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 131,
+      "letterSpacing": "0.5184px",
+      "lineHeight": "26.2656px",
+      "maxWidth": "829.44px",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "17.28px",
+      "tag": "P",
+      "text": "A curated highlight from our recent work — a project that reflects our approach to design, identity ",
+      "weight": "400",
+      "width": 589
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "in-stage-obv block",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 50,
+      "letterSpacing": "0.4704px",
+      "lineHeight": "25.088px",
+      "maxWidth": "calc(25% + 1003.52px)",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "15.68px",
+      "tag": "P",
+      "text": "A project where WebGL, motion and typography merge into a single narrative space.",
+      "weight": "400",
+      "width": 538
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "in-stage-obv block",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 75,
+      "letterSpacing": "0.4704px",
+      "lineHeight": "25.088px",
+      "maxWidth": "calc(25% + 1003.52px)",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "15.68px",
+      "tag": "P",
+      "text": "An interactive portfolio for one of Bulgaria's leading digital scenographers. Awarded Site of the Ye",
+      "weight": "400",
+      "width": 538
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "in-stage-obv block",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 99,
+      "letterSpacing": "0.4704px",
+      "lineHeight": "25.088px",
+      "maxWidth": "calc(25% + 1003.52px)",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "15.68px",
+      "tag": "P",
+      "text": "SEE MORE ABOUT THE PROJECT",
+      "weight": "400",
+      "width": 538
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "css-grid-wrapper ",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "0px",
+      "height": 1293,
+      "letterSpacing": "normal",
+      "lineHeight": "21.952px",
+      "maxWidth": "none",
+      "padding": "400px 0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "15px",
+      "tag": "FOOTER",
+      "text": "Web Design FAQ Visual & Copyright About cookies\n\n\nContact\nBulgaria, Plovdiv 4000 35 Georgi Benkovski",
+      "weight": "400",
+      "width": 1280
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none oklch(0.8846 0.0046 259.33)",
+      "class": "",
+      "color": "oklch(0.8846 0.0046 259.33)",
+      "font": "peridot-pe-variable, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", Oxygen, Cantarell, sans-serif",
+      "gap": "normal",
+      "height": 66,
+      "letterSpacing": "normal",
+      "lineHeight": "66.24px",
+      "maxWidth": "100%",
+      "padding": "0px",
+      "position": "relative",
+      "radius": "0px",
+      "size": "48px",
+      "tag": "H2",
+      "text": "Contact",
+      "weight": "700",
+      "width": 1178
+    }
+  ],
+  "scrollHeight": 4572,
+  "styleSheets": [
+    {
+      "readable": true,
+      "url": "https://i-creativ.net/resource_builds/c704b55095c9222954c902f454638cf21782801196.css"
+    },
+    {
+      "readable": true,
+      "url": "https://i-creativ.net/resource_builds/65f1c9a7fa78ce8270087a2d3594c66619551387633.css"
+    }
+  ],
+  "title": "Design & Web Development Studio | Digital Artisans | I-Creativ Studio - Web Design and Development",
+  "url": "https://i-creativ.net/en",
+  "viewport": {
+    "dpr": 2,
+    "height": 800,
+    "width": 1280
+  }
+}

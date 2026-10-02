@@ -1,0 +1,29 @@
+{
+  "styleId": "1eee9aa2-1e23-4675-9f6e-fb98c93969bd",
+  "sourceUrl": "https://styles.refero.design/style/1eee9aa2-1e23-4675-9f6e-fb98c93969bd",
+  "fetchedAt": "2026-10-02T21:51:38.193685+00:00",
+  "extractedAt": "2026-10-02T21:51:38.246524+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Getharvest — Style Reference",
+  "htmlSha256": "5c7053919a431131193db8692ff42f6bc3bec3215c1cf615c10b453ce4e17055",
+  "cache": ".cache/1eee9aa2-1e23-4675-9f6e-fb98c93969bd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c0b2e7d859189088e69910d127a4f26924e2c99fd776b8e26a38c6b6800e56a4",
+      "bytes": 21550,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1527046d-003e-4f92-8242-0208b26ff89c.jpg",
+    "fetchedAt": "2026-10-02T21:51:40.294597+00:00",
+    "sha256": "d28e2b02849daaac6d555e14a7b3a2b997f96cfc597b9a464c006fb9479c58d9",
+    "bytes": 84380,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "canvas": 0,
+  "capturedAt": "2026-10-02T20:57:55.201Z",
+  "samples": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BODY",
+      "text": "N\nDocs\nComponents\nNEW\nStyling\nNEW\nCharts\nStar"
+    },
+    {
+      "background": "rgb(82, 148, 255)",
+      "border": "2px solid rgb(0, 0, 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "none",
+      "size": "22px",
+      "tag": "A",
+      "text": "N"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "Docs"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "Components\nNEW"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "Styling\nNEW"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "Charts"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "Stars"
+    },
+    {
+      "background": "oklch(1 0 0)",
+      "border": "2px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0 0 0) 4px 4px 0px 0px",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "Search\n⌘ K"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "none",
+      "size": "18px",
+      "tag": "H2",
+      "text": "Search documentation"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "2px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0 0 0) 4px 4px 0px 0px",
+      "size": "16px",
+      "tag": "A",
+      "text": "5.4k"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "2px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0 0 0) 4px 4px 0px 0px",
+      "size": "16px",
+      "tag": "A",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "none",
+      "size": "60px",
+      "tag": "H1",
+      "text": "Build bold \nneobrutalism\n layouts in minutes."
+    },
+    {
+      "background": "rgb(82, 148, 255)",
+      "border": "2px solid oklch(0 0 0)",
+      "color": "oklch(0 0 0)",
+      "font": "\"DM Sans\", sans-serif",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0 0 0) 4px 4px 0px 0px",
+      "size": "20px",
+      "tag": "A",
+      "text": "Get started"
+    }
+  ],
+  "title": "Neobrutalism components - Start making neobrutalism layouts today",
+  "url": "https://www.neobrutalism.dev/",
+  "viewport": {
+    "height": 800,
+    "width": 1280
+  }
+}

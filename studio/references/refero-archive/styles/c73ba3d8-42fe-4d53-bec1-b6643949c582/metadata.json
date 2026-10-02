@@ -1,0 +1,29 @@
+{
+  "styleId": "c73ba3d8-42fe-4d53-bec1-b6643949c582",
+  "sourceUrl": "https://styles.refero.design/style/c73ba3d8-42fe-4d53-bec1-b6643949c582",
+  "fetchedAt": "2026-10-02T21:37:30.965590+00:00",
+  "extractedAt": "2026-10-02T21:37:31.013533+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Beau — Style Reference",
+  "htmlSha256": "24539975595223d401b9ca298b15ee0128542dbe03caed5f96ec0549fa444eb1",
+  "cache": ".cache/c73ba3d8-42fe-4d53-bec1-b6643949c582.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bb237b5fa66a769d1aa85fbf542b23681c0b81bd657b81e5effaece6e4ee8d89",
+      "bytes": 17832,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bc42c25e-eef5-4a87-a1e7-93ab517349e7.jpg",
+    "fetchedAt": "2026-10-02T21:37:32.055420+00:00",
+    "sha256": "97880aab8d31382a7a804d84750e3a86bb6e921e7ca7a751659470cfab900dad",
+    "bytes": 85191,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

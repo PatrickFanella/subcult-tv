@@ -1,0 +1,29 @@
+{
+  "styleId": "b753dfda-cbe1-41e4-b341-b98d69c8422f",
+  "sourceUrl": "https://styles.refero.design/style/b753dfda-cbe1-41e4-b341-b98d69c8422f",
+  "fetchedAt": "2026-10-02T21:29:49.993960+00:00",
+  "extractedAt": "2026-10-02T21:29:50.035539+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Amrit Palace — Style Reference",
+  "htmlSha256": "e3f19631ad8e772e8150a0656200409adb41d20ebd3c3c5d3fb5ae7e6280779e",
+  "cache": ".cache/b753dfda-cbe1-41e4-b341-b98d69c8422f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "63f51b15084c1013d76e2eb73295c7394cea40a795652b96ca92e36dcb789d4c",
+      "bytes": 20191,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b2929477-996a-409a-a7a3-666ba613183c.jpg",
+    "fetchedAt": "2026-10-02T21:29:52.090402+00:00",
+    "sha256": "0fe4d89e5814986dfe4a4125e80ea366c53ba4b6d14c2496a1392804a7d6b9b9",
+    "bytes": 115303,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

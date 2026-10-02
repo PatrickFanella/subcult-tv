@@ -1,0 +1,29 @@
+{
+  "styleId": "35f89ccd-614d-4f8f-9cce-bb94309df237",
+  "sourceUrl": "https://styles.refero.design/style/35f89ccd-614d-4f8f-9cce-bb94309df237",
+  "fetchedAt": "2026-10-02T21:56:06.238045+00:00",
+  "extractedAt": "2026-10-02T21:56:06.260572+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SoundCloud — Style Reference",
+  "htmlSha256": "ba07589633ebd3092943a953430408fee7749a1269b9465d350054426e8591ed",
+  "cache": ".cache/35f89ccd-614d-4f8f-9cce-bb94309df237.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "159e3a5aad90a9c75bed1dafefd294284598175601fb5d124055b6f3b2ea8e68",
+      "bytes": 18769,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/134c9137-de48-481a-af69-0a71bbb2d309.jpg",
+    "fetchedAt": "2026-10-02T21:56:08.415427+00:00",
+    "sha256": "7c70aeefe8f7c781386d9b9e7e0fac2d5c490f7c5e1b64246346c9fd6dc88815",
+    "bytes": 131082,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "cc59e195-fed0-4928-96d1-303752786073",
+  "sourceUrl": "https://styles.refero.design/style/cc59e195-fed0-4928-96d1-303752786073",
+  "fetchedAt": "2026-10-02T21:36:22.019765+00:00",
+  "extractedAt": "2026-10-02T21:36:22.063229+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Spotify — Style Reference",
+  "htmlSha256": "23c37ef6e905f3d0310827563c5514770baac855de27bca178df0f16058abf24",
+  "cache": ".cache/cc59e195-fed0-4928-96d1-303752786073.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "68a3bdf2552eb884c058d8286fd9cb6dd65c4d2e1553ccf51dbe58b32a373900",
+      "bytes": 19951,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6ba14e5d-21c0-4420-8996-d43a7c466cd5.jpg",
+    "fetchedAt": "2026-10-02T21:36:24.114879+00:00",
+    "sha256": "e8b407467516a640972056edf7f84e4dd3496a9d723cc25792873b46f961c653",
+    "bytes": 166628,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

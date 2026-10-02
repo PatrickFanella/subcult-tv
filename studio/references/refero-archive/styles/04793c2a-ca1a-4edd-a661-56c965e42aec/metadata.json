@@ -1,0 +1,29 @@
+{
+  "styleId": "04793c2a-ca1a-4edd-a661-56c965e42aec",
+  "sourceUrl": "https://styles.refero.design/style/04793c2a-ca1a-4edd-a661-56c965e42aec",
+  "fetchedAt": "2026-10-02T21:57:50.281583+00:00",
+  "extractedAt": "2026-10-02T21:57:50.307218+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Grain — Style Reference",
+  "htmlSha256": "0c76c6efa99559cfb174427da9a56463c35a3d448def2d75793950020ed42f01",
+  "cache": ".cache/04793c2a-ca1a-4edd-a661-56c965e42aec.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1a081dfd913bebdff2c2ad8bc7702054e1e7d8fd1d43a01f348b58e25eeba0b6",
+      "bytes": 22962,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b666d0d9-fbd7-40f6-a686-e96cda0312c7.jpg",
+    "fetchedAt": "2026-10-02T21:57:52.347185+00:00",
+    "sha256": "33a27bb6de7c93980f9fb32bc4a265c36fd8ffea5caf6f3d1ea1559d94e5c3ca",
+    "bytes": 96096,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

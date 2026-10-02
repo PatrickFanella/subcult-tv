@@ -1,0 +1,18 @@
+{
+  "svg_parse": "passed",
+  "svg_count": 38,
+  "png_count": 29,
+  "outlined_logo_text": "none",
+  "lower_third_transparency": "passed",
+  "contrast": {
+    "ink_on_paper": 14.386157902235986,
+    "rust_on_paper": 5.710197400401469,
+    "ink_on_wash": 13.357791527496108
+  },
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "duration_seconds": 8.0
+  }
+}

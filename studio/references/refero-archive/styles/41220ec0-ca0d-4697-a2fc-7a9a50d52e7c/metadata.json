@@ -1,0 +1,29 @@
+{
+  "styleId": "41220ec0-ca0d-4697-a2fc-7a9a50d52e7c",
+  "sourceUrl": "https://styles.refero.design/style/41220ec0-ca0d-4697-a2fc-7a9a50d52e7c",
+  "fetchedAt": "2026-10-02T21:56:58.241893+00:00",
+  "extractedAt": "2026-10-02T21:56:58.275794+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Good Glyphs — Style Reference",
+  "htmlSha256": "d0bf48e23f2af4cb27fe109880e9f781b35aecd301c5d948ada43e34c7eed13e",
+  "cache": ".cache/41220ec0-ca0d-4697-a2fc-7a9a50d52e7c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "70b7224970bab13ec783cf3b194fe56709e717c9742f114589f8572b273f599e",
+      "bytes": 14898,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/46c0504b-2ad6-4cf1-9317-e20d8bcb0d91.jpg",
+    "fetchedAt": "2026-10-02T21:57:00.458199+00:00",
+    "sha256": "927f60eac6a6a7ac8cc8d8506d5638dd57a047e00ea741ce64652941c14c5b00",
+    "bytes": 142071,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

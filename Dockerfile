@@ -5,7 +5,11 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 
-COPY . .
+COPY index.html vite.config.ts tsconfig*.json ./
+COPY src ./src
+COPY content ./content
+COPY public ./public
+COPY scripts ./scripts
 
 ARG VITE_API_URL
 ENV VITE_API_URL=$VITE_API_URL

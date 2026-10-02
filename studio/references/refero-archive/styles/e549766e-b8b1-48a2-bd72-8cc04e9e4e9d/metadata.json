@@ -1,0 +1,29 @@
+{
+  "styleId": "e549766e-b8b1-48a2-bd72-8cc04e9e4e9d",
+  "sourceUrl": "https://styles.refero.design/style/e549766e-b8b1-48a2-bd72-8cc04e9e4e9d",
+  "fetchedAt": "2026-10-02T21:29:18.055099+00:00",
+  "extractedAt": "2026-10-02T21:29:18.105293+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Shade — Style Reference",
+  "htmlSha256": "451257c58a4f5cebe179ebfc21a2d645644730a0bfb4945055b1de1180773491",
+  "cache": ".cache/e549766e-b8b1-48a2-bd72-8cc04e9e4e9d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b4defbcab028416ab64ea0cd677c48dc67015ea7fbdfaf21226769a75c6c0743",
+      "bytes": 20908,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fdba9915-e71c-45e3-acb4-3d516eb3247a.jpg",
+    "fetchedAt": "2026-10-02T21:29:20.168384+00:00",
+    "sha256": "3f11caf93393ee32fa51b527bdb2b9f539cdca7bd7734bd4e3af50706e52dd65",
+    "bytes": 92472,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

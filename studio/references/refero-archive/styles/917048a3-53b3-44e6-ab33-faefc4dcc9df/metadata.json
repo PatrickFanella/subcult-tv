@@ -1,0 +1,29 @@
+{
+  "styleId": "917048a3-53b3-44e6-ab33-faefc4dcc9df",
+  "sourceUrl": "https://styles.refero.design/style/917048a3-53b3-44e6-ab33-faefc4dcc9df",
+  "fetchedAt": "2026-10-02T21:43:05.680907+00:00",
+  "extractedAt": "2026-10-02T21:43:05.726829+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Kippo — Style Reference",
+  "htmlSha256": "69b599a84b88c4f2a7c3472bb602831cdfa541c708fb251c7fecead1694c4d7e",
+  "cache": ".cache/917048a3-53b3-44e6-ab33-faefc4dcc9df.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b9852101ef00cc8212352fede76df69bf1cebde32148172824f82ae6ed455ed8",
+      "bytes": 18690,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/72fbff04-1fe7-4f98-a226-350ec30760f7.jpg",
+    "fetchedAt": "2026-10-02T21:43:07.489366+00:00",
+    "sha256": "57d34ff4515afc9d2d0ef35e79b21299145e660e9884e53ef1e30d8a73a9d374",
+    "bytes": 68323,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

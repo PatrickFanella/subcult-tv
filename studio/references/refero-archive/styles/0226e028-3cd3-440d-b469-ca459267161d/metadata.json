@@ -1,0 +1,29 @@
+{
+  "styleId": "0226e028-3cd3-440d-b469-ca459267161d",
+  "sourceUrl": "https://styles.refero.design/style/0226e028-3cd3-440d-b469-ca459267161d",
+  "fetchedAt": "2026-10-02T21:51:13.495746+00:00",
+  "extractedAt": "2026-10-02T21:51:13.542390+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Grafik — Style Reference",
+  "htmlSha256": "c06d5777e45e3bf97484579db4c6bf436496ec0487545072ff1e6c064370b9d6",
+  "cache": ".cache/0226e028-3cd3-440d-b469-ca459267161d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "92e33e84eaa4c3c63de2a6cbb9bf84ce54665bab8b4b49e2995b1b0c4e443826",
+      "bytes": 13770,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/971db252-45b3-4d51-9fb5-0605ef6919e6.jpg",
+    "fetchedAt": "2026-10-02T21:51:15.590151+00:00",
+    "sha256": "174e824327f726ce7a2f5bbbf0671ad8779afeaf8bd8c3bf76f8561cb93cf698",
+    "bytes": 118643,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

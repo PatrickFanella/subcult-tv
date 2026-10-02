@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-02",
+  "status": "source_import_prepared_consumers_not_activated",
+  "repository": "https://git.subcult.tv/subculture-collective/subcult-tv",
+  "source_repository": "https://git.subcult.tv/subculture-collective/subcult-studio",
+  "site_base": "0acf50a1b472a2eda6ec2fbf228f6638e0c54926",
+  "studio_source": "acd4021582da3eacb35a06e1ac4436718b90f32d",
+  "import_commit": "83f418f9671dd1bd782043ebbf1161d6782ad75b",
+  "imported_tree": "69d4a24f2a016382731bdf21859e39109a13ec8b",
+  "prefix": "studio/",
+  "gitea_private_verified": true,
+  "github_private_verified": true,
+  "live_consumers_changed": false,
+  "dirty_primary_checkouts_preserved": true
+}

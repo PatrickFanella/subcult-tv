@@ -1,0 +1,596 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "MEDIA-5e7870f5bc934f2b",
+      "title": "Archive context — coral thread",
+      "file": "files/MEDIA-5e7870f5bc934f2b.png",
+      "sha256": "5e7870f5bc934f2b9bb13ba00f2362d3bb64432306cf2e913dd5a6f695665605",
+      "bytes": 3459530,
+      "products": [
+        "HasanAra",
+        "Rekolekt"
+      ],
+      "accounts": [
+        "patrick",
+        "subcult"
+      ],
+      "platforms": [
+        "x",
+        "instagram",
+        "patreon"
+      ],
+      "rights": "generated",
+      "kind": "illustration",
+      "source": "Built-in image_gen generation, October 1, 2026; original exec-a287a3c0-c781-4e1e-8276-3095d8b51cec.png",
+      "alt_text": "Screenprinted collage of archival cards, waveforms and landscape fragments connected by a coral thread and spool.",
+      "generation_prompt": "Use case: stylized-concept. Create an original editorial illustration for a Subcult social post about searchable broadcast archives and preserving context, usable for HasanAra or Rekolekt. Landscape 3:2 composition. A tactile screenprinted paper collage: a luminous coral-red thread runs through layered charcoal and cream archival cards, small timestamp-like tick marks, waveform fragments and a round spool, visually connecting a highlighted passage to the surrounding material. Warm off-white paper texture, near-black ink, coral and restrained electric violet accents. Bold clear silhouette readable at phone size, distinctive independent-culture zine aesthetic, generous margin. No text, letters, numbers, logos, real people, actual product screenshots, fake UI, news imagery, watermarks or promotional slogans. This is a conceptual illustration, not evidence of product functionality.",
+      "status": "needs_review",
+      "created_at": "2026-10-01T16:12:04.979154+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1536,
+      "height": 1024,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-10-01",
+        "result": "Viewed original and gallery; usable concept illustration, pending editorial selection.",
+        "boundary": "No UI or documentary verification implied."
+      }
+    },
+    {
+      "id": "MEDIA-12c8b3fbf77f61af",
+      "title": "CLPR — a selected moment",
+      "file": "files/MEDIA-12c8b3fbf77f61af.png",
+      "sha256": "12c8b3fbf77f61af17e1129ad1245e5b728c926d11d5b85d99ce0ad5a67b81e2",
+      "bytes": 2574538,
+      "products": [
+        "clpr"
+      ],
+      "accounts": [
+        "clpr",
+        "patrick",
+        "subcult"
+      ],
+      "platforms": [
+        "x",
+        "instagram",
+        "patreon"
+      ],
+      "rights": "generated",
+      "kind": "illustration",
+      "source": "Built-in image_gen generation, October 1, 2026; original exec-6ab40f47-9e07-4c37-a1b8-e53b849cc0df.png",
+      "alt_text": "A coral play triangle overlays three textured landscape frames, with lime tabs and a bookmark above a violet waveform.",
+      "generation_prompt": "Use case: stylized-concept. Create an original square 1:1 editorial illustration for CLPR, an independent Twitch clip discovery and curation product. Tactile screenprinted zine collage on near-black paper: a bold coral play triangle nested inside three overlapping irregular paper frames, electric-lime indexing tabs and tiny violet waveform fragments guide the eye toward one selected moment. Confident graphic silhouette, high contrast, handmade print texture, asymmetrical balanced composition, generous margins, readable at phone size. Make it feel like selecting and saving an interesting moment, not watching an advertisement. Strictly no words, letters, numbers, logos, human figures, faces, streamer likenesses, real broadcast frames, news imagery, fabricated app screens, watermarks, charts, metrics or claims. This is conceptual artwork, not a screenshot or proof of product functionality.",
+      "status": "needs_review",
+      "created_at": "2026-10-01T16:12:05.031726+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1254,
+      "height": 1254,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-10-01",
+        "result": "Viewed original and gallery; usable concept illustration, pending editorial selection.",
+        "boundary": "No UI or documentary verification implied."
+      }
+    },
+    {
+      "id": "MEDIA-899878915b7cb292",
+      "title": "HasanAra public archive home",
+      "file": "files/MEDIA-899878915b7cb292.png",
+      "sha256": "899878915b7cb2925b3194fa00807fd002c2575e272b3a903a55823f6e50f12d",
+      "bytes": 504411,
+      "products": [
+        "HasanAra",
+        "Rekolekt"
+      ],
+      "accounts": [
+        "patrick",
+        "subcult"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "user_owned",
+      "kind": "screenshot",
+      "source": "Public product UI captured 2026-10-01 with T3 browser; https://hasanara.tv/ or https://clpr.tv/; logged out.",
+      "alt_text": "HasanAra archive homepage with search entry and archive counters.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-01T16:27:47.368928+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0
+    },
+    {
+      "id": "MEDIA-199c5eb66379bf70",
+      "title": "CLPR public discovery screen",
+      "file": "files/MEDIA-199c5eb66379bf70.png",
+      "sha256": "199c5eb66379bf70ea2694d4bf02a6ccd5bddb953cb699ba01621a0d71dce442",
+      "bytes": 312376,
+      "products": [
+        "clpr"
+      ],
+      "accounts": [
+        "clpr",
+        "patrick",
+        "subcult"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "unknown",
+      "kind": "screenshot",
+      "source": "Public product UI captured 2026-10-01 with T3 browser; https://hasanara.tv/ or https://clpr.tv/; logged out.",
+      "alt_text": "CLPR public discovery interface with creator and topic navigation.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-01T16:27:47.413327+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "rights_notes": "Product UI capture includes third-party thumbnails, transcript text or footage. Clearance/editorial scope is pending; excluded from automatic media choices."
+    },
+    {
+      "id": "MEDIA-7003233f283440b5",
+      "title": "HasanAra home to search recording master",
+      "file": "files/MEDIA-7003233f283440b5.mp4",
+      "sha256": "7003233f283440b56d137ac320d58a36f0d9872ee3533b38d6935b0991a95f1f",
+      "bytes": 1117184,
+      "products": [
+        "HasanAra",
+        "Rekolekt"
+      ],
+      "accounts": [
+        "patrick",
+        "subcult"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "unknown",
+      "kind": "video",
+      "source": "Public product UI captured 2026-10-01 with T3 browser; https://hasanara.tv/ or https://clpr.tv/; logged out.",
+      "alt_text": "Screen recording moves from the HasanAra home page to labor search results.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-01T16:27:47.457716+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1402,
+      "height": 876,
+      "duration_seconds": 14.834367,
+      "rights_notes": "Product UI capture includes third-party thumbnails, transcript text or footage. Clearance/editorial scope is pending; excluded from automatic media choices."
+    },
+    {
+      "id": "MEDIA-05051f6dac434aa8",
+      "title": "HasanAra search to VOD recording master",
+      "file": "files/MEDIA-05051f6dac434aa8.mp4",
+      "sha256": "05051f6dac434aa8c1252b17d96e4413a6f26f70054da40e4f85d221c841d13f",
+      "bytes": 1325352,
+      "products": [
+        "HasanAra",
+        "Rekolekt"
+      ],
+      "accounts": [
+        "patrick",
+        "subcult"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "unknown",
+      "kind": "video",
+      "source": "Public product UI captured 2026-10-01 with T3 browser; https://hasanara.tv/ or https://clpr.tv/; logged out.",
+      "alt_text": "Screen recording opens a cited search result in the VOD and transcript interface.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-01T16:27:47.504309+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1402,
+      "height": 876,
+      "duration_seconds": 11.6191,
+      "rights_notes": "Product UI capture includes third-party thumbnails, transcript text or footage. Clearance/editorial scope is pending; excluded from automatic media choices."
+    },
+    {
+      "id": "MEDIA-04c8ad3729cd9c55",
+      "title": "HasanAra search demo — eight-second captioned edit",
+      "file": "files/MEDIA-04c8ad3729cd9c55.mp4",
+      "sha256": "04c8ad3729cd9c5586eeaffe7c18b3abe4e673155ea09f61760ecade75ed8a20",
+      "bytes": 304078,
+      "products": [
+        "HasanAra",
+        "Rekolekt"
+      ],
+      "accounts": [
+        "patrick",
+        "subcult"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "unknown",
+      "kind": "video",
+      "source": "Public product UI captured 2026-10-01 with T3 browser; https://hasanara.tv/ or https://clpr.tv/; logged out.",
+      "alt_text": "Captioned screen recording shows searching labor and inspecting timestamped transcript matches. No audio.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-01T16:27:47.543825+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 8.0,
+      "rights_notes": "Product UI capture includes third-party thumbnails, transcript text or footage. Clearance/editorial scope is pending; excluded from automatic media choices.",
+      "recipe": "recipes/hasanara-search-short.recipe.json",
+      "caption": "HasanAra: search a topic and inspect timestamped matches."
+    },
+    {
+      "id": "MEDIA-991fc8ba846e0e1d",
+      "title": "Archive context — coral thread — Bluesky JPEG",
+      "file": "files/MEDIA-991fc8ba846e0e1d.jpg",
+      "sha256": "991fc8ba846e0e1ddab321ad3aad7cd8a96d11914e49dbdcbeb53d38f7145123",
+      "bytes": 495416,
+      "products": [
+        "HasanAra",
+        "Rekolekt"
+      ],
+      "accounts": [
+        "patrick",
+        "subcult"
+      ],
+      "platforms": [
+        "bluesky"
+      ],
+      "rights": "generated",
+      "kind": "illustration",
+      "source": "JPEG delivery derivative of MEDIA-5e7870f5bc934f2b; original retained.",
+      "alt_text": "Screenprinted collage of archival cards, waveforms and landscape fragments connected by a coral thread and spool.",
+      "generation_prompt": "Use case: stylized-concept. Create an original editorial illustration for a Subcult social post about searchable broadcast archives and preserving context, usable for HasanAra or Rekolekt. Landscape 3:2 composition. A tactile screenprinted paper collage: a luminous coral-red thread runs through layered charcoal and cream archival cards, small timestamp-like tick marks, waveform fragments and a round spool, visually connecting a highlighted passage to the surrounding material. Warm off-white paper texture, near-black ink, coral and restrained electric violet accents. Bold clear silhouette readable at phone size, distinctive independent-culture zine aesthetic, generous margin. No text, letters, numbers, logos, real people, actual product screenshots, fake UI, news imagery, watermarks or promotional slogans. This is a conceptual illustration, not evidence of product functionality.",
+      "status": "needs_review",
+      "created_at": "2026-10-01T16:27:47.675359+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1536,
+      "height": 1024,
+      "duration_seconds": 0.04,
+      "parent_id": "MEDIA-5e7870f5bc934f2b"
+    },
+    {
+      "id": "MEDIA-1d7fa4896e1067c1",
+      "title": "CLPR — a selected moment — Bluesky JPEG",
+      "file": "files/MEDIA-1d7fa4896e1067c1.jpg",
+      "sha256": "1d7fa4896e1067c113787da5e2d7f801e6709447fb6086a9500d8d4bb1e4dbc3",
+      "bytes": 304578,
+      "products": [
+        "clpr"
+      ],
+      "accounts": [
+        "clpr",
+        "patrick",
+        "subcult"
+      ],
+      "platforms": [
+        "bluesky"
+      ],
+      "rights": "generated",
+      "kind": "illustration",
+      "source": "JPEG delivery derivative of MEDIA-12c8b3fbf77f61af; original retained.",
+      "alt_text": "A coral play triangle overlays three textured landscape frames, with lime tabs and a bookmark above a violet waveform.",
+      "generation_prompt": "Use case: stylized-concept. Create an original square 1:1 editorial illustration for CLPR, an independent Twitch clip discovery and curation product. Tactile screenprinted zine collage on near-black paper: a bold coral play triangle nested inside three overlapping irregular paper frames, electric-lime indexing tabs and tiny violet waveform fragments guide the eye toward one selected moment. Confident graphic silhouette, high contrast, handmade print texture, asymmetrical balanced composition, generous margins, readable at phone size. Make it feel like selecting and saving an interesting moment, not watching an advertisement. Strictly no words, letters, numbers, logos, human figures, faces, streamer likenesses, real broadcast frames, news imagery, fabricated app screens, watermarks, charts, metrics or claims. This is conceptual artwork, not a screenshot or proof of product functionality.",
+      "status": "needs_review",
+      "created_at": "2026-10-01T16:27:47.802708+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1254,
+      "height": 1254,
+      "duration_seconds": 0.04,
+      "parent_id": "MEDIA-12c8b3fbf77f61af"
+    },
+    {
+      "id": "MEDIA-7737213742695f96",
+      "title": "Kork public landing, desktop",
+      "file": "files/MEDIA-7737213742695f96.png",
+      "sha256": "7737213742695f964f9b1caf0701091b13a8e9a5d6ab9da7ac3b297158548a5b",
+      "bytes": 132996,
+      "products": [
+        "Kork"
+      ],
+      "accounts": [
+        "subcult",
+        "patrick"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "user_owned",
+      "kind": "screenshot",
+      "source": "Public product UI captured 2026-10-02T08:00:52Z with headless Chromium (playwright-core), 1280x800 viewport, logged out; https://kork.subcult.tv/ (HTTP 200).",
+      "alt_text": "Kork landing page on a cork background: the headline Every link. One board., a Make your page button, pinned cards for @yourname, $yourname and a QR code, and five cards listing 92 services, payments and tips, QR codes, themes and no trackers.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-02T08:04:09.436973+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-10-02",
+        "result": "Viewed capture; public landing as served October 2, logged out, no personal data.",
+        "boundary": "Asset review only; no copy, account or schedule approval."
+      }
+    },
+    {
+      "id": "MEDIA-e9e40cfc33921aef",
+      "title": "Kork public landing, phone",
+      "file": "files/MEDIA-e9e40cfc33921aef.png",
+      "sha256": "e9e40cfc33921aefd88ef2a8deef24466e1e9283049af2fbca9512ca9e20ba68",
+      "bytes": 159998,
+      "products": [
+        "Kork"
+      ],
+      "accounts": [
+        "subcult",
+        "patrick"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "user_owned",
+      "kind": "screenshot",
+      "source": "Public product UI captured 2026-10-02T08:00:55Z with headless Chromium (playwright-core), 390x844 viewport at 2x, logged out; https://kork.subcult.tv/ (HTTP 200).",
+      "alt_text": "Kork landing page on a phone: the kork logo, the headline Every link. One board., a short description of what a page can hold, a Make your page button and pinned placeholder cards.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-02T08:04:09.531738+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 780,
+      "height": 1688,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-10-02",
+        "result": "Viewed capture; public landing as served October 2 on a phone-sized viewport, logged out, no personal data.",
+        "boundary": "Asset review only; no copy, account or schedule approval."
+      }
+    },
+    {
+      "id": "MEDIA-43cbc92b89d28839",
+      "title": "Kork published page with placeholder handles, phone",
+      "file": "files/MEDIA-43cbc92b89d28839.png",
+      "sha256": "43cbc92b89d28839380ea45c9602d22fb6f1b098ef09ceb9c6107fc725fb5706",
+      "bytes": 89656,
+      "products": [
+        "Kork"
+      ],
+      "accounts": [
+        "subcult",
+        "patrick"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "user_owned",
+      "kind": "screenshot",
+      "source": "Local Kork build of subculture-collective/kork 22477c1 (origin/main, 2026-10-02) with a disposable Postgres; demo account demo@example.com and placeholder handles only; Signal theme preset; page /yourname captured 2026-10-02 with headless Chromium, 390x844 at 2x. Not a live kork.subcult.tv page. Service icons are Simple Icons (CC0); the marks belong to their owners.",
+      "alt_text": "A Kork link page in the dark Signal theme for Your Name, with numbered rows for Instagram, Bluesky and YouTube, a Tips section with Cash App and a Show QR code control, Ko-fi, and an Elsewhere section with a website link and Save contact.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-02T08:04:09.628302+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 780,
+      "height": 1688,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-10-02",
+        "result": "Viewed capture; local build with placeholder account and handles, no real person data.",
+        "boundary": "Asset review only; no copy, account or schedule approval."
+      }
+    },
+    {
+      "id": "MEDIA-265fdbf0a35a8bdf",
+      "title": "Kork page editor with placeholder handles",
+      "file": "files/MEDIA-265fdbf0a35a8bdf.png",
+      "sha256": "265fdbf0a35a8bdf6f191f957ef70df5fdc32b39b9aa0dbd9955eda4d3733e7c",
+      "bytes": 126632,
+      "products": [
+        "Kork"
+      ],
+      "accounts": [
+        "subcult",
+        "patrick"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "user_owned",
+      "kind": "screenshot",
+      "source": "Local Kork build of subculture-collective/kork 22477c1 with a disposable Postgres, ZELDA_BASE_URL=http://kork.subcult.tv and custom domains disabled; Chromium resolved kork.subcult.tv to the local server (--host-resolver-rules=MAP kork.subcult.tv 127.0.0.1:8099). Demo account demo@example.com and placeholder handles only. Editor /app/pages/<id> captured 2026-10-02T08:09:52Z with headless Chromium at 1440x900. The address kork.subcult.tv/yourname shown in the editor is the local page; no such page exists on the live service. Service icons are Simple Icons (CC0); the marks belong to their owners.",
+      "alt_text": "Kork editor for a page called Your Name at kork.subcult.tv/yourname: a list of nine blocks (Instagram, Bluesky, YouTube, a Tips heading, Cash App, Ko-fi, an Elsewhere heading, a website link and a contact card) with show, move, edit and delete controls, beside a live phone preview of the published page.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-02T08:10:12.137186+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1440,
+      "height": 900,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-10-02",
+        "result": "Viewed capture; local build with placeholder account and handles, shown at the address kork.subcult.tv/yourname through a local host mapping. No real person data.",
+        "boundary": "Asset review only; no copy, account or schedule approval."
+      }
+    },
+    {
+      "id": "MEDIA-1ad9fefcdaeaa2bc",
+      "title": "Kork share image",
+      "file": "files/MEDIA-1ad9fefcdaeaa2bc.png",
+      "sha256": "1ad9fefcdaeaa2bc014c0e4ae32fd14d7632606e72010ce12f9ebb54d7bf8e2a",
+      "bytes": 103962,
+      "products": [
+        "Kork"
+      ],
+      "accounts": [
+        "subcult",
+        "patrick"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "user_owned",
+      "kind": "image",
+      "source": "Kork pack render: branding/2026-10-01-packs/brands/kork/product/og.png, generated by kork_product_assets.py from the selected direction A artwork (commit 1a43028, 2026-10-02). URL-free 1200x630 link-preview image; text outlined.",
+      "alt_text": "Kork share image on a cork background: the kork logo, the headline Every link. One board., the line Socials, payments, QR codes and more on one page, and pinned placeholder cards for @yourname, $yourname and a QR code.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-02T08:04:22.112488+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1200,
+      "height": 630,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-10-02",
+        "result": "Viewed render; pack artwork with placeholder card text and verified headline copy.",
+        "boundary": "Asset review only; no copy, account or schedule approval."
+      }
+    },
+    {
+      "id": "MEDIA-513f428164d9a529",
+      "title": "Kork launch square (draft)",
+      "file": "files/MEDIA-513f428164d9a529.png",
+      "sha256": "513f428164d9a5294f8e595bf6bc7beace9e652ce6502a54416912fb361a1bd2",
+      "bytes": 236725,
+      "products": [
+        "Kork"
+      ],
+      "accounts": [
+        "subcult",
+        "patrick"
+      ],
+      "platforms": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "rights": "user_owned",
+      "kind": "image",
+      "source": "Generated by branding/2026-10-01-packs/kork_launch_assets.py from the Kork pack artwork, 2026-10-02; master brands/kork/launch/launch-square.svg. See recipes/kork-launch-assets.recipe.json. Launch draft; copy limited to C-KORK claims.",
+      "alt_text": "Kork launch graphic on cork: Now live, link pages by SUBCULT. Every link. One board. Free link pages from SUBCULT. Three pinned cards read 92 services (socials, payments, crypto), 10 themes (plus your own colors) and No cut of your tips or sales. Footer: kork.subcult.tv.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-02T08:04:22.211948+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1080,
+      "height": 1080,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-10-02",
+        "result": "Viewed render; copy limited to C-KORK claims.",
+        "boundary": "Asset review only; no copy, account or schedule approval."
+      },
+      "recipe": "recipes/kork-launch-assets.recipe.json"
+    },
+    {
+      "id": "MEDIA-70425e778378e394",
+      "title": "Kork launch landscape with real page capture (draft)",
+      "file": "files/MEDIA-70425e778378e394.png",
+      "sha256": "70425e778378e3943de903a8bd887ca5f5b40df3305ffe4559421ba559c8c704",
+      "bytes": 211866,
+      "products": [
+        "Kork"
+      ],
+      "accounts": [
+        "subcult",
+        "patrick"
+      ],
+      "platforms": [
+        "x",
+        "bluesky"
+      ],
+      "rights": "user_owned",
+      "kind": "image",
+      "source": "Generated by branding/2026-10-01-packs/kork_launch_assets.py, 2026-10-02; master brands/kork/launch/launch-landscape.svg embeds the real local capture MEDIA-43cbc92b89d28839 (placeholder handles). See recipes/kork-launch-assets.recipe.json. Launch draft; copy limited to C-KORK claims.",
+      "alt_text": "Kork launch graphic: the kork logo, Now live, link pages by SUBCULT, the headline Every link. One board., and the lines Socials, payments, QR codes and more on one page. Free to use. Kork never takes a cut of tips or sales. kork.subcult.tv. On the right, a pinned screenshot of a Kork page for Your Name with placeholder Instagram, Bluesky, YouTube, Cash App and Ko-fi rows, labeled Real page, placeholder handles.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-02T08:04:22.312124+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1600,
+      "height": 900,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-10-02",
+        "result": "Viewed render; copy limited to C-KORK claims. Embedded capture shows third-party service icons as they appear in the product; the Kork guide keeps platform logos out of brand artwork, so confirm this framed-screenshot use.",
+        "boundary": "Asset review only; no copy, account or schedule approval."
+      },
+      "recipe": "recipes/kork-launch-assets.recipe.json"
+    },
+    {
+      "id": "MEDIA-15f9dbe2ae1da260",
+      "title": "Kork launch story (draft)",
+      "file": "files/MEDIA-15f9dbe2ae1da260.png",
+      "sha256": "15f9dbe2ae1da260fca4560ab103a3377831df956f5d7785cfdc7b24a990fc46",
+      "bytes": 212910,
+      "products": [
+        "Kork"
+      ],
+      "accounts": [
+        "subcult",
+        "patrick"
+      ],
+      "platforms": [
+        "instagram",
+        "bluesky"
+      ],
+      "rights": "user_owned",
+      "kind": "image",
+      "source": "Generated by branding/2026-10-01-packs/kork_launch_assets.py, 2026-10-02; master brands/kork/launch/launch-story.svg. See recipes/kork-launch-assets.recipe.json. Launch draft; copy limited to C-KORK claims.",
+      "alt_text": "Vertical Kork launch graphic on cork: the kork logo, Now live, link pages by SUBCULT, Every link. One board., Free link pages from SUBCULT, three pinned cards reading 92 services, 10 themes and No cut of your tips or sales, and kork.subcult.tv.",
+      "generation_prompt": "",
+      "status": "needs_review",
+      "created_at": "2026-10-02T08:04:22.415006+00:00",
+      "attribution": "",
+      "uses": [],
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-10-02",
+        "result": "Viewed render; copy limited to C-KORK claims.",
+        "boundary": "Asset review only; no copy, account or schedule approval."
+      },
+      "recipe": "recipes/kork-launch-assets.recipe.json"
+    }
+  ]
+}

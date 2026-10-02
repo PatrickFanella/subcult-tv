@@ -1,0 +1,11 @@
+{
+  "source": "/home/onnwee/.t3/userdata/attachments/236ddb7c-b661-4ee2-b52f-59b906eca438-5baaf69c-53e7-4886-b03b-d47f0c3775a0-mp4.mp4",
+  "source_sha256": "7003233f283440b56d137ac320d58a36f0d9872ee3533b38d6935b0991a95f1f",
+  "start_seconds": 0,
+  "requested_duration_seconds": 8.0,
+  "caption": "HasanAra: search a topic and inspect timestamped matches.",
+  "audio": "removed",
+  "format": "1280x800 H.264 MP4, 30 fps",
+  "output_sha256": "04c8ad3729cd9c5586eeaffe7c18b3abe4e673155ea09f61760ecade75ed8a20",
+  "publishing_enabled": false
+}

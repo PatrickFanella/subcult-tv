@@ -1,0 +1,192 @@
+{
+  "canvas": 0,
+  "capturedAt": "2026-10-02T20:58:17.210Z",
+  "samples": [
+    {
+      "background": "rgb(255, 255, 255)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "BODY",
+      "text": "All stories\nWork\nNews\nExploration\nAbout\nConta"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "All stories"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(178, 180, 177)",
+      "color": "rgb(178, 180, 177)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "Work"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(178, 180, 177)",
+      "color": "rgb(178, 180, 177)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "News"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(178, 180, 177)",
+      "color": "rgb(178, 180, 177)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "Exploration"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(178, 180, 177)",
+      "color": "rgb(178, 180, 177)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "About"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(178, 180, 177)",
+      "color": "rgb(178, 180, 177)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "Contact"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "55.3154px",
+      "tag": "H1",
+      "text": "We are an exploratory\narchitectural design st"
+    },
+    {
+      "background": "rgb(220, 170, 170)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "UNTIL Wellness\n\nYY Building, Canary Wharf"
+    },
+    {
+      "background": "rgb(220, 170, 170)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "Clockwise, Exeter\n\nFlexible serviced and priv"
+    },
+    {
+      "background": "rgb(220, 170, 170)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "Ralph Lauren\n\nBond Street\n\nWork"
+    },
+    {
+      "background": "rgb(220, 170, 170)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "Lowie Bricks\n\nShowroom\n\nWork"
+    },
+    {
+      "background": "rgb(220, 170, 170)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "VCCP\n\nBerners Street\n\nWork"
+    },
+    {
+      "background": "rgba(255, 255, 255, 0.85)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "UNTIL\n\nFlexible Wellness Workspace\n\nExplorati"
+    },
+    {
+      "background": "rgb(73, 84, 114)",
+      "border": "0px none rgb(255, 255, 255)",
+      "color": "rgb(255, 255, 255)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "New year, new studio\n\n19th May 2025\n\nNews"
+    },
+    {
+      "background": "rgb(220, 170, 170)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "MOSS\n\nEncircling the magic\n\nWork"
+    },
+    {
+      "background": "rgb(220, 170, 170)",
+      "border": "0px none rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "HelveticaNeue",
+      "shadow": "none",
+      "size": "18.6624px",
+      "tag": "A",
+      "text": "BSQ\n\nOld Building, new energy\n\nWork"
+    }
+  ],
+  "title": "Spacelab - Home",
+  "url": "https://spacelab.co.uk/",
+  "viewport": {
+    "height": 800,
+    "width": 1280
+  }
+}

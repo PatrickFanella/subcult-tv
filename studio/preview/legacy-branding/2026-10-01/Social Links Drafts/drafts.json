@@ -1,0 +1,96 @@
+{
+  "patrick": {
+    "source_sha256": "cf476d75874f3f732e9a2e361e527b6eedc645fd1510af0a4b76218410ada547",
+    "links": [
+      {
+        "label": "@patrick__eff",
+        "url": "https://x.com/patrick__eff",
+        "icon": "x.svg"
+      },
+      {
+        "label": "patrick.subcult.tv",
+        "url": "https://bsky.app/profile/patrick.subcult.tv",
+        "icon": "bluesky.svg"
+      },
+      {
+        "label": "patrickfanella",
+        "url": "https://github.com/patrickfanella",
+        "icon": "github-icon.svg"
+      },
+      {
+        "label": "@patrick__eff",
+        "url": "https://www.instagram.com/patrick__eff/",
+        "icon": "instagram-icon.svg",
+        "source": "user supplied"
+      },
+      {
+        "label": "@patrick__eff",
+        "url": "https://www.tiktok.com/@patrick__eff",
+        "icon": "tiktok-icon.svg",
+        "source": "user supplied"
+      },
+      {
+        "label": "patrick__eff",
+        "url": "https://www.twitch.tv/patrick__eff",
+        "icon": "twitch.svg",
+        "source": "user supplied"
+      }
+    ],
+    "state": "draft_not_uploaded",
+    "top_links": "patrickfanella.co / subcult.tv"
+  },
+  "subcult": {
+    "source_sha256": "d10075c172b3820de06614858195b7bc65d84ea0c241afb526430fd605e7118e",
+    "links": [
+      {
+        "label": "@subcult_tv",
+        "url": "https://x.com/subcult_tv",
+        "icon": "x.svg"
+      },
+      {
+        "label": "subcult.tv",
+        "url": "https://bsky.app/profile/subcult.tv",
+        "icon": "bluesky.svg"
+      },
+      {
+        "label": "/subcult",
+        "url": "https://www.patreon.com/subcult",
+        "icon": "patreon.svg"
+      },
+      {
+        "label": "@subcult.tv",
+        "url": "https://www.instagram.com/subcult.tv/",
+        "icon": "instagram-icon.svg",
+        "source": "user supplied"
+      },
+      {
+        "label": "subcult_tv",
+        "url": "https://www.twitch.tv/subcult_tv",
+        "icon": "twitch.svg",
+        "source": "user supplied"
+      }
+    ],
+    "state": "draft_not_uploaded",
+    "top_links": "subcult.tv",
+    "pending": [
+      "TikTok account: user intends to create; handle not yet supplied"
+    ]
+  },
+  "clpr": {
+    "source_sha256": "9d3018a05bb0ce19b202a729bb9dd71d93c1613df6f83d25d71db84eef7c5358",
+    "links": [
+      {
+        "label": "@clpr_tv",
+        "url": "https://x.com/clpr_tv",
+        "icon": "x.svg"
+      },
+      {
+        "label": "clpr.subcult.tv",
+        "url": "https://bsky.app/profile/clpr.subcult.tv",
+        "icon": "bluesky.svg"
+      }
+    ],
+    "state": "draft_not_uploaded",
+    "top_links": "clpr.tv / support.subcult.tv"
+  }
+}

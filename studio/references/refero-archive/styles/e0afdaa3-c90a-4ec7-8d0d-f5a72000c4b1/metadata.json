@@ -1,0 +1,29 @@
+{
+  "styleId": "e0afdaa3-c90a-4ec7-8d0d-f5a72000c4b1",
+  "sourceUrl": "https://styles.refero.design/style/e0afdaa3-c90a-4ec7-8d0d-f5a72000c4b1",
+  "fetchedAt": "2026-10-02T21:29:14.204291+00:00",
+  "extractedAt": "2026-10-02T21:29:14.247465+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Avoice — Style Reference",
+  "htmlSha256": "a3c120de5976625879fac53cfbc6dadac6bdac39a672353acbad5882f23ef8a9",
+  "cache": ".cache/e0afdaa3-c90a-4ec7-8d0d-f5a72000c4b1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f92e64f2ffece0b084f500b411bc36ebc35268bed30de6358fb7685212d820c9",
+      "bytes": 22930,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0a0ff709-7bb9-4881-940b-a9cf50cf27b5.jpg",
+    "fetchedAt": "2026-10-02T21:29:15.999974+00:00",
+    "sha256": "44751a55c8e94bdbcf1191dea62857ecf12b40353af34e156abe43adc5c93caf",
+    "bytes": 134074,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,6 @@
+[Unit]
+Description=Notify the owner about a failed social preparation job
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/notify-send --urgency=critical "Social posting runner failed" "Check systemctl --user status social-posting-plan.service social-posting-review.service and ~/.local/state/social-posting/latest.json. Your drafts were not published."

@@ -1,0 +1,29 @@
+{
+  "styleId": "6eb778ca-6808-4cc6-ac8a-7beea5a25c36",
+  "sourceUrl": "https://styles.refero.design/style/6eb778ca-6808-4cc6-ac8a-7beea5a25c36",
+  "fetchedAt": "2026-10-02T21:50:41.708590+00:00",
+  "extractedAt": "2026-10-02T21:50:41.739178+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "EPIC agency — Style Reference",
+  "htmlSha256": "729f3f93847a316c31a88f2a40fea334a448119e904100b9bf7e215f11205aa1",
+  "cache": ".cache/6eb778ca-6808-4cc6-ac8a-7beea5a25c36.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "429ce6cfa568d828b1fc735d1206d85a859aaeeca18ba165816ed4889fbe0af9",
+      "bytes": 18615,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3ea04743-d76c-4c31-b0ef-3700b98a2db1.jpg",
+    "fetchedAt": "2026-10-02T21:50:43.591244+00:00",
+    "sha256": "499665fafb797806df055c2d7395bb7fa54aa58f5e5c4bafb0513603a07340d9",
+    "bytes": 74845,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

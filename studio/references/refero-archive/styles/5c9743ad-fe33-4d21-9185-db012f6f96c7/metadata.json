@@ -1,0 +1,29 @@
+{
+  "styleId": "5c9743ad-fe33-4d21-9185-db012f6f96c7",
+  "sourceUrl": "https://styles.refero.design/style/5c9743ad-fe33-4d21-9185-db012f6f96c7",
+  "fetchedAt": "2026-10-02T21:47:01.721478+00:00",
+  "extractedAt": "2026-10-02T21:47:01.786943+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Co Projects — Style Reference",
+  "htmlSha256": "f784f64304df0004949ff97c302573bed56c3276032e9a4ac7873eea3fadc40c",
+  "cache": ".cache/5c9743ad-fe33-4d21-9185-db012f6f96c7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1e9f8ba2a91708d55bdcd2b3f93269cb95f37710a302512928371a70c9d52b02",
+      "bytes": 15821,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b95ac49a-5565-4cbd-86a0-7b5c8290d508.jpg",
+    "fetchedAt": "2026-10-02T21:47:03.461843+00:00",
+    "sha256": "34e1247f7e282eda68c1df1e842026389b82141994c104d28e03fa53b8e32021",
+    "bytes": 44770,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

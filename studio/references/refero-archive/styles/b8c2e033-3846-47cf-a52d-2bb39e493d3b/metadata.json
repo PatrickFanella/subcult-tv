@@ -1,0 +1,29 @@
+{
+  "styleId": "b8c2e033-3846-47cf-a52d-2bb39e493d3b",
+  "sourceUrl": "https://styles.refero.design/style/b8c2e033-3846-47cf-a52d-2bb39e493d3b",
+  "fetchedAt": "2026-10-02T21:28:42.020501+00:00",
+  "extractedAt": "2026-10-02T21:28:42.070193+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bauhaus Clock — Style Reference",
+  "htmlSha256": "ab91a9317eb1675acd86ddd0d992cff6bfcfdd6a934b38a470a34d2bbf4a3612",
+  "cache": ".cache/b8c2e033-3846-47cf-a52d-2bb39e493d3b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "514f5f69cc05783970b05fcc7b6da92bac2029aaf6d4ad2151ac4a3e01c29858",
+      "bytes": 23712,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/52a08ea0-e7c5-45b5-aa1a-f8c784e14da8.jpg",
+    "fetchedAt": "2026-10-02T21:28:44.005699+00:00",
+    "sha256": "be037ca3681ddd8be53dfb0e05a6c500e534acaa48fb80a506ed19b4db4a1565",
+    "bytes": 57028,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

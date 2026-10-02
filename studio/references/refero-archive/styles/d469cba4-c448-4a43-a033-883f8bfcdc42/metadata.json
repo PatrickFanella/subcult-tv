@@ -1,0 +1,29 @@
+{
+  "styleId": "d469cba4-c448-4a43-a033-883f8bfcdc42",
+  "sourceUrl": "https://styles.refero.design/style/d469cba4-c448-4a43-a033-883f8bfcdc42",
+  "fetchedAt": "2026-10-02T21:34:06.027561+00:00",
+  "extractedAt": "2026-10-02T21:34:06.056253+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Anthropic — Style Reference",
+  "htmlSha256": "fb24355f3b0fa0539622963883a5ae881e44440567c44b21eedaaed4ee03a008",
+  "cache": ".cache/d469cba4-c448-4a43-a033-883f8bfcdc42.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1f45611d379a80f38e9184574ae423dda68bc6ed6362a6a9f703107ad880821c",
+      "bytes": 19367,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/88915535-2c5c-4c3e-bafc-d3649c236f4c.jpg",
+    "fetchedAt": "2026-10-02T21:34:08.035789+00:00",
+    "sha256": "824b1a447700bfc5e3688fa9ae33f46135078a1bc6152892389d0d85c8734fed",
+    "bytes": 97379,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

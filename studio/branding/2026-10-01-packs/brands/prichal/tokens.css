@@ -1,0 +1,10 @@
+:root {
+  --brand-bg: #f4f1e9;
+  --brand-fg: #1c2230;
+  --brand-accent: #b23a26;
+  --brand-secondary: #5d6675;
+  --brand-safe-label: #5d6675;
+  --font-display: "Oswald";
+  --font-body: "Public Sans";
+  --font-label: "JetBrains Mono";
+}

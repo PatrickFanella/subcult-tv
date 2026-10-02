@@ -1,0 +1,29 @@
+{
+  "styleId": "5b405eec-67ba-4dd0-8dab-ace000151a78",
+  "sourceUrl": "https://styles.refero.design/style/5b405eec-67ba-4dd0-8dab-ace000151a78",
+  "fetchedAt": "2026-10-02T21:52:50.170121+00:00",
+  "extractedAt": "2026-10-02T21:52:50.216653+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Michael Wandelmaier — Style Reference",
+  "htmlSha256": "3062a68fb13b18c716b66e7ab153cd120c4a775bd2d9d7a7f135d9a8df8fafb2",
+  "cache": ".cache/5b405eec-67ba-4dd0-8dab-ace000151a78.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fcf97ebc10e125822b4c0555312ed914977b8e6f5b4d16b62f7ab9a874c3f1fe",
+      "bytes": 21048,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e07a05b2-4a9a-4ac9-89df-3f2717438001.jpg",
+    "fetchedAt": "2026-10-02T21:52:52.291057+00:00",
+    "sha256": "fff35859d6a21cfef0851e470a79dfa48becb9646cdd680c05979fbd9e11d039",
+    "bytes": 78967,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "577eb7d8-3555-4378-83df-0cebebc4782f",
+  "sourceUrl": "https://styles.refero.design/style/577eb7d8-3555-4378-83df-0cebebc4782f",
+  "fetchedAt": "2026-10-02T21:47:33.651178+00:00",
+  "extractedAt": "2026-10-02T21:47:33.697485+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Pietrastudio — Style Reference",
+  "htmlSha256": "c232a339f733c92c3b0fb64a69c8bf54c31adbaa6dab4fc94b83bb865c212029",
+  "cache": ".cache/577eb7d8-3555-4378-83df-0cebebc4782f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7435a7f8eb359e062808a6998bb92e93b07bcc0a25830fa7bdd5a35cbff87a7e",
+      "bytes": 28308,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7de6151d-d2e0-450e-8a34-119540837f40.jpg",
+    "fetchedAt": "2026-10-02T21:47:35.594713+00:00",
+    "sha256": "d106f2f129defd3fb8efb67a87ef11dcf60346d13b004b7558e2908e4715113c",
+    "bytes": 94876,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

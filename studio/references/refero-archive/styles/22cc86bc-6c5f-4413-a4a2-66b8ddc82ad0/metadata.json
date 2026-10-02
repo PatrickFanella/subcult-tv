@@ -1,0 +1,29 @@
+{
+  "styleId": "22cc86bc-6c5f-4413-a4a2-66b8ddc82ad0",
+  "sourceUrl": "https://styles.refero.design/style/22cc86bc-6c5f-4413-a4a2-66b8ddc82ad0",
+  "fetchedAt": "2026-10-02T21:48:45.870802+00:00",
+  "extractedAt": "2026-10-02T21:48:45.918891+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Yellowbird® — Style Reference",
+  "htmlSha256": "2612c06a20de751dc5d7d834d645873c3237dde5132726d69ad47e3ca9d10165",
+  "cache": ".cache/22cc86bc-6c5f-4413-a4a2-66b8ddc82ad0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "755e561c9139a0dbc9f71a9cc9dad3dd9ac2a9ed775b3a5390d7cdc3aba89383",
+      "bytes": 20819,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a5f74dd0-0766-46ca-b7c6-d92e6fe072f2.jpg",
+    "fetchedAt": "2026-10-02T21:48:47.545446+00:00",
+    "sha256": "1a0ab61b4e3b3edf0ae176e889f7836fbbe37339624374de68c18aa41e8369ff",
+    "bytes": 120970,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

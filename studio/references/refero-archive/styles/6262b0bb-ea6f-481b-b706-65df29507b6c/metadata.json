@@ -1,0 +1,29 @@
+{
+  "styleId": "6262b0bb-ea6f-481b-b706-65df29507b6c",
+  "sourceUrl": "https://styles.refero.design/style/6262b0bb-ea6f-481b-b706-65df29507b6c",
+  "fetchedAt": "2026-10-02T21:50:05.552717+00:00",
+  "extractedAt": "2026-10-02T21:50:05.598496+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "INK — Style Reference",
+  "htmlSha256": "c496109192e8c4c3803d5c734ec5b54a5ff559c5ed5a07a6e22434fa20c61808",
+  "cache": ".cache/6262b0bb-ea6f-481b-b706-65df29507b6c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "89888abe505247e775df139bd873ac10b8dfb6c833306738b01d27c61fe013b4",
+      "bytes": 14023,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9d1f88cf-0ff6-4561-ba0b-ede10bf54bc0.jpg",
+    "fetchedAt": "2026-10-02T21:50:07.532695+00:00",
+    "sha256": "0222e0ca60d9114102144d29373d819a7bb4ab8e1960745de6d00a93179a43bd",
+    "bytes": 59094,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "329075e8-97ed-4722-8952-d9bf001de233",
+  "sourceUrl": "https://styles.refero.design/style/329075e8-97ed-4722-8952-d9bf001de233",
+  "fetchedAt": "2026-10-02T21:43:45.505787+00:00",
+  "extractedAt": "2026-10-02T21:43:45.579992+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Craft — Style Reference",
+  "htmlSha256": "99e3faa374053026229f3d0092adea5b0b9b97a00afd6381996678d0503a555f",
+  "cache": ".cache/329075e8-97ed-4722-8952-d9bf001de233.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "34cb1d4f7fce92834246ec833c749e34f66a7d04156f8631ef9769d12b560cc1",
+      "bytes": 22431,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e956b019-297e-46dc-9681-dc8e872fa993.jpg",
+    "fetchedAt": "2026-10-02T21:43:47.504167+00:00",
+    "sha256": "a7dac5e40a98dfe6158af63250f9781105f81b7fbcc03a1e5b1a992eda9cf100",
+    "bytes": 69246,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

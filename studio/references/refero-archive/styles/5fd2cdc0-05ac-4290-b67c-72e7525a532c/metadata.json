@@ -1,0 +1,29 @@
+{
+  "styleId": "5fd2cdc0-05ac-4290-b67c-72e7525a532c",
+  "sourceUrl": "https://styles.refero.design/style/5fd2cdc0-05ac-4290-b67c-72e7525a532c",
+  "fetchedAt": "2026-10-02T21:46:09.553456+00:00",
+  "extractedAt": "2026-10-02T21:46:09.602415+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Alt–Border — Style Reference",
+  "htmlSha256": "de54332d23816beedc26b27f6a20208cdbe591840e42bcb4289900b6113f7fb5",
+  "cache": ".cache/5fd2cdc0-05ac-4290-b67c-72e7525a532c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0872a9c2ad9ed5a0f036cdce4845d811bb6a1eccc2ec67da42f63e8a1713ccdd",
+      "bytes": 16336,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7f468a54-8f6d-4d0c-96e1-4b68b5085dbe.jpg",
+    "fetchedAt": "2026-10-02T21:46:11.558290+00:00",
+    "sha256": "5fbec2cf3bf5bc7eb4ba586a45f82d51ae0656a7e18b67e4bb87da897587f7e5",
+    "bytes": 170487,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

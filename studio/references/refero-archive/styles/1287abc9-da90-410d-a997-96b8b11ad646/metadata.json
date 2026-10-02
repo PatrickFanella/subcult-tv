@@ -1,0 +1,29 @@
+{
+  "styleId": "1287abc9-da90-410d-a997-96b8b11ad646",
+  "sourceUrl": "https://styles.refero.design/style/1287abc9-da90-410d-a997-96b8b11ad646",
+  "fetchedAt": "2026-10-02T21:54:30.345516+00:00",
+  "extractedAt": "2026-10-02T21:54:30.395322+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Readymag — Style Reference",
+  "htmlSha256": "3650d52ab0d717b88c363994a7efba3162e2c1c4a8145414ea3a04f76e717bff",
+  "cache": ".cache/1287abc9-da90-410d-a997-96b8b11ad646.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ffeb79e3d87b2014938ea9300c363c57e96da053b798113a393bbf79a4b71153",
+      "bytes": 26979,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b747c74f-b760-421b-a900-5a0e6aff6c1f.jpg",
+    "fetchedAt": "2026-10-02T21:54:32.267608+00:00",
+    "sha256": "993a40178482ab369e41037874d7ad29755368a95a0f986ff8f1ab18e4a4d03e",
+    "bytes": 167300,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

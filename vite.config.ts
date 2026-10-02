@@ -25,6 +25,9 @@ export default defineConfig({
     },
   },
   server: {
+    fs: {
+      deny: ['**/.git/**', '**/.env*', '**/*.{crt,pem}', '**/studio/**', '**/runtime/**'],
+    },
     proxy: {
       '/api': {
         target: process.env.DEV_API_TARGET || 'http://localhost:8080',
@@ -38,6 +41,7 @@ export default defineConfig({
     },
   },
   test: {
+    exclude: ['**/node_modules/**', '**/.git/**', 'studio/**'],
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],
     css: false,

@@ -1,0 +1,29 @@
+{
+  "styleId": "586b97ac-f687-46ba-bbf7-31031cfcc110",
+  "sourceUrl": "https://styles.refero.design/style/586b97ac-f687-46ba-bbf7-31031cfcc110",
+  "fetchedAt": "2026-10-02T21:26:46.011911+00:00",
+  "extractedAt": "2026-10-02T21:26:46.118137+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Capacities — Style Reference",
+  "htmlSha256": "cbe49d72bfb232c99980c28f67fa9051c444e71c974a9d8c1ac13ba97f07eb12",
+  "cache": ".cache/586b97ac-f687-46ba-bbf7-31031cfcc110.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8d6e69013c27cbbdd912312dec33a1fc5b03ded358e24593cef4cb862daf4cbf",
+      "bytes": 22938,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/82a8e27e-32ee-4511-a175-41a21e4f1c87.jpg",
+    "fetchedAt": "2026-10-02T21:26:48.015448+00:00",
+    "sha256": "c3945a70829f8e9fa8daec36f3fad14d9402f2fa794fe4e43b9258edb679c328",
+    "bytes": 103301,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

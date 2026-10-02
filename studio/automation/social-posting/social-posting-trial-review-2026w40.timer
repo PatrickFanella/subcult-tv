@@ -1,0 +1,10 @@
+[Unit]
+Description=One-time Sunday review for the October 1-4 social trial
+
+[Timer]
+OnCalendar=2026-10-04 16:00:00 America/Chicago
+Persistent=true
+Unit=social-posting-trial-review-2026w40.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,29 @@
+{
+  "styleId": "10b9e7bb-9ffb-43eb-9360-5628d8390107",
+  "sourceUrl": "https://styles.refero.design/style/10b9e7bb-9ffb-43eb-9360-5628d8390107",
+  "fetchedAt": "2026-10-02T21:37:42.006107+00:00",
+  "extractedAt": "2026-10-02T21:37:42.077588+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Studio HEED — Style Reference",
+  "htmlSha256": "0c3d7b91fb3a33364ebd078b8ef7c84cbe23929cb3fd6f6fcbe7d60ce49114dc",
+  "cache": ".cache/10b9e7bb-9ffb-43eb-9360-5628d8390107.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "aaf8ee952d7c40b6cda7e5b3beea6ca79fd5b3fdb8a0e5443e59b994d1b0fb69",
+      "bytes": 15832,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/37486463-fac0-480f-80bb-57efc199be7b.jpg",
+    "fetchedAt": "2026-10-02T21:37:44.032339+00:00",
+    "sha256": "e90a2f0306589f4ea14a2b7ce850099ba078974c27b18cd23c5750e35204b045",
+    "bytes": 88244,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

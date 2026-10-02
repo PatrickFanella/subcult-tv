@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.font-cache/
+*.lock
+*.zip
+.env
+.env.*
+!.env.example
+config.local.json
+runtime/
+state/
+.cache/
+
+.companion/

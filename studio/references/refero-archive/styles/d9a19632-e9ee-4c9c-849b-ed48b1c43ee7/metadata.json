@@ -1,0 +1,29 @@
+{
+  "styleId": "d9a19632-e9ee-4c9c-849b-ed48b1c43ee7",
+  "sourceUrl": "https://styles.refero.design/style/d9a19632-e9ee-4c9c-849b-ed48b1c43ee7",
+  "fetchedAt": "2026-10-02T21:19:05.310999+00:00",
+  "extractedAt": "2026-10-02T21:19:05.361648+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Nuxt — Style Reference",
+  "htmlSha256": "fdee56afd03d3fff63bc16caa3ec1d6cea6803e21fd18e7cb53dcebba0d984a7",
+  "cache": ".cache/d9a19632-e9ee-4c9c-849b-ed48b1c43ee7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f12442bc97541f41ca310d1b760519b08e1a301495a1176b67387db885260574",
+      "bytes": 21364,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3e2e24b1-0679-44cc-9b8f-e6befeefa4f0.jpg",
+    "fetchedAt": "2026-10-02T21:26:12.100388+00:00",
+    "sha256": "a94baba7718250f52a86a4b3b3e6d847df171dcc24b411b52e62722e05290036",
+    "bytes": 105963,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

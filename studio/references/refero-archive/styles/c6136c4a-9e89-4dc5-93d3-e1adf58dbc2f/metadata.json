@@ -1,0 +1,29 @@
+{
+  "styleId": "c6136c4a-9e89-4dc5-93d3-e1adf58dbc2f",
+  "sourceUrl": "https://styles.refero.design/style/c6136c4a-9e89-4dc5-93d3-e1adf58dbc2f",
+  "fetchedAt": "2026-10-02T21:54:50.399861+00:00",
+  "extractedAt": "2026-10-02T21:54:50.443584+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Invisibletech — Style Reference",
+  "htmlSha256": "dd25094cea3e67d8c33f644dcb99cb80d1256240c0da0b1fad529754e760d28a",
+  "cache": ".cache/c6136c4a-9e89-4dc5-93d3-e1adf58dbc2f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e1eab609713b134c662fc5bc78a55255108949a1e653fd6e724fd8fb7ef31f78",
+      "bytes": 22749,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d699f3fa-84cd-4059-aa28-dca4bc7de305.jpg",
+    "fetchedAt": "2026-10-02T21:54:52.266911+00:00",
+    "sha256": "f8715483a7ab282d0338ca95678b7930206d655ad991ba723f402ec1c25d4e15",
+    "bytes": 81254,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

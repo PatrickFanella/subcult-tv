@@ -1,0 +1,98 @@
+{
+  "site": "new-models",
+  "source": "https://www.newmodels.io/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:14:32.410Z",
+      "url": "https://www.newmodels.io/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "scrolled",
+      "observation": "evidence/scrolled.json",
+      "image": "images/scrolled.png",
+      "capturedAt": "2026-10-02T20:19:58.281Z",
+      "url": "https://www.newmodels.io/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": "images/settled.png",
+      "capturedAt": "2026-10-02T20:19:57.324Z",
+      "url": "https://www.newmodels.io/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "bb45e4e29b006590be1c2ec7ace1ecaa8232c2243b40a8a747da9fe0b7641d95",
+      "bytes": 4260
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "6c267164aeb7a36433af45912924e5851b395a80335941e269609c81c8982fa7",
+      "bytes": 1320
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "7b7337da7f5ad9549906959b71f7611daec47f32621a27d92c5e574a7ffba691",
+      "bytes": 44836
+    },
+    {
+      "path": "evidence/scrolled.json",
+      "sha256": "531059843519724288768d729ee3f519a78a4087e04e2132b515d94e2e9c962d",
+      "bytes": 45211
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "6d93b9dfb44a5a98b8eef3dc9947dbc696bb19d4f0d3fe83ed751dd0b038eff1",
+      "bytes": 45241
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "6c750c69ffb14d5b083d5716463d90e4e4e2a576a5cae001f3c53995b6853c20",
+      "bytes": 242308
+    },
+    {
+      "path": "images/scrolled.png",
+      "sha256": "a6ebb7a2e5b3151cc037a2284ad0e35bb962a7896331f68d4d5d51550656e01f",
+      "bytes": 145434
+    },
+    {
+      "path": "images/settled.png",
+      "sha256": "52d3b6715d4bb6f8032649f96515af8c79b8b02183c9d2de894ee04b8e03ef9a",
+      "bytes": 238281
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "f2c6e454e6930836f839b73ee6784aaba21c51c1c8523c9a2336734398372fa9",
+      "bytes": 233
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "cc4efb1ed3450bf89626183e843813500fcdb444970655f3658a513f37f4bbf3",
+      "bytes": 5387
+    }
+  ]
+}

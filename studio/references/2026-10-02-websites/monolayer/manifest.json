@@ -1,0 +1,98 @@
+{
+  "site": "monolayer",
+  "source": "https://www.monolayer.dev/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:15:40.302Z",
+      "url": "https://www.monolayer.dev/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "scrolled",
+      "observation": "evidence/scrolled.json",
+      "image": "images/scrolled.png",
+      "capturedAt": "2026-10-02T20:21:48.597Z",
+      "url": "https://www.monolayer.dev/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": "images/settled.png",
+      "capturedAt": "2026-10-02T20:21:45.558Z",
+      "url": "https://www.monolayer.dev/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "3321433b2f4b9b8306f611aa8587b4000bd6dc5874c65edb5cd7f55f2677752e",
+      "bytes": 5236
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "0a379c75032372a42d3943b036509694ba4af3a1a06bd77b5202ec5cf0a07f96",
+      "bytes": 1264
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "f6fe1e5500d028cf0797616ab2755434d8a5efe8c0624ed5fdeb92a9c6cac880",
+      "bytes": 50949
+    },
+    {
+      "path": "evidence/scrolled.json",
+      "sha256": "38fa32f5e9f81bf8e6657a5ed75825712ebad6b9d3bd3cfc974c2932cb0fa541",
+      "bytes": 50564
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "eeae8e608416e88dc1902f23cf8231ffb60778bd269c8b13c2b6da95294cadb0",
+      "bytes": 50594
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "c92f1f95974ef76c049f11abfe8e7f45944ad5aa478a0b1d07a77486d2fdd2f2",
+      "bytes": 92446
+    },
+    {
+      "path": "images/scrolled.png",
+      "sha256": "ff8c371d460b2d9a398f86c8afa096aa307ced1c5932bb4e94e741714fe9910d",
+      "bytes": 100026
+    },
+    {
+      "path": "images/settled.png",
+      "sha256": "d6e2a4a1e50a7ad3c2dc6d3d19402be8dddc8b713fe5e8543ff48bab995310a4",
+      "bytes": 59216
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "e20a67db6b854bb62409691db7baf927632fda9435691a482b333f008100fb2d",
+      "bytes": 276
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "ad817f0cef04d073058db84b59a7018ba4495173a5c0ecfd5743b9f2d1a3bb19",
+      "bytes": 22178
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dedhed design system — 03 The J-card (concert detail)</title>
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  main { max-width: 1080px; margin: 0 auto; padding: var(--space-6) var(--space-5) var(--space-8); }
+  .back { font: var(--text-xs)/1 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; display: inline-block; margin-bottom: var(--space-4); }
+
+  /* The cassette itself: a landscape shell with window and label */
+  .cassette { background: var(--shell-black); color: var(--paper); border-radius: 6px; padding: var(--space-4) var(--space-5); box-shadow: 0 1px 0 #444 inset, 0 10px 24px rgba(0,0,0,.45); display: grid; grid-template-columns: 1fr auto; gap: var(--space-5); align-items: center; }
+  .face { background: var(--paper); color: var(--ink); border-radius: 3px; padding: var(--space-3) var(--space-4); border-bottom: 10px solid var(--tab-red); display: grid; grid-template-columns: auto 1fr auto; gap: var(--space-3) var(--space-4); align-items: center; }
+  .face h1 { grid-column: 2; font: 700 var(--text-xl)/1.1 var(--font-typed); margin: 0; }
+  .face .stamp { text-align: right; font: var(--text-xs)/1.4 var(--font-mono); letter-spacing: .06em; color: var(--ink-soft); }
+  .face .stamp b { display: block; font-size: var(--text-md); color: var(--ink); }
+  .window { grid-column: 1 / -1; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: var(--space-3); padding: var(--space-2) var(--space-3); background: var(--shell-black); border-radius: 3px; box-shadow: var(--shadow-window); }
+  .window .tape { height: 18px; background: repeating-linear-gradient(90deg, #5a3d1e 0 2px, #3b2814 2px 4px); border-radius: 2px; }
+  .face .line { grid-column: 1 / -1; font: var(--text-sm)/1.4 var(--font-typed); color: var(--ink-soft); }
+  .face .line b { color: var(--ink); }
+  .controls { display: flex; flex-direction: column; gap: var(--space-2); min-width: 180px; }
+
+  /* The J-card folds out below: Side A / Side B */
+  .jcard { margin-top: var(--space-5); background: var(--paper-bright); border: 1px solid var(--shell-clear-edge); border-radius: 2px; display: grid; grid-template-columns: 1fr 1fr; box-shadow: 0 2px 0 var(--shell-clear-edge), 0 8px 16px rgba(0,0,0,.18); background-image: repeating-linear-gradient(180deg, transparent 0 27px, rgba(39,64,139,.12) 27px 28px); background-position: 0 58px; }
+  .side-panel { padding: var(--space-5) var(--space-5) var(--space-6); }
+  .side-panel + .side-panel { border-left: 1px dashed var(--shell-clear-edge); }
+  .side-head { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-3); padding-bottom: var(--space-2); border-bottom: 2px solid var(--ink); }
+  .side-head h2 { font: 700 var(--text-lg)/1 var(--font-typed); margin: 0; flex: 1; }
+  .side-head .key { min-height: 32px; }
+  .tracks { list-style: none; margin: 0; padding: 0; counter-reset: t; }
+  .tracks li { counter-increment: t; }
+  .tracks button { width: 100%; display: grid; grid-template-columns: 28px 1fr auto; align-items: baseline; gap: var(--space-2); padding: 5px 0; background: transparent; border: 0; text-align: left; font: var(--text-md)/1.4 var(--font-typed); color: var(--ink); line-height: 28px; }
+  .tracks button::before { content: counter(t) "."; font: var(--text-xs)/28px var(--font-mono); color: var(--ink-faint); }
+  .tracks button:hover .t { text-decoration: underline; }
+  .tracks button small { font: var(--text-xs)/28px var(--font-mono); color: var(--ink-soft); }
+  .tracks .seg { font: 700 var(--text-sm)/1 var(--font-mono); color: var(--ink-faint); margin-left: 4px; }
+  .tracks li.now button { background: var(--paper-aged); margin: 0 calc(-1 * var(--space-2)); padding: 5px var(--space-2); border-radius: 2px; }
+  .tracks li.now button::before { content: "▶"; color: var(--ink-red); }
+
+  /* Spine of the J-card: credits, lineage, warnings */
+  .credits { grid-column: 1 / -1; border-top: 1px solid var(--shell-clear-edge); background: var(--paper); padding: var(--space-4) var(--space-5); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .credits dl { margin: 0; font: var(--text-sm)/1.5 var(--font-mono); }
+  .credits dt { font-size: var(--text-xs); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); }
+  .credits dd { margin: 0 0 var(--space-2); overflow-wrap: anywhere; }
+  .credits .warn-box { grid-column: 1 / -1; display: flex; gap: var(--space-3); align-items: flex-start; padding: var(--space-3); border: 1px solid var(--warn); border-radius: 2px; background: var(--paper-aged); font: var(--text-sm)/1.5 var(--font-ui); }
+  .credits a { font: var(--text-sm)/1.5 var(--font-ui); }
+  @media (max-width: 760px) { .cassette { grid-template-columns: 1fr; } .jcard { grid-template-columns: 1fr; } .side-panel + .side-panel { border-left: 0; border-top: 1px dashed var(--shell-clear-edge); } .face { grid-template-columns: auto 1fr; } .face .stamp { grid-column: 1 / -1; text-align: left; } }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <a class="wordmark" href="02-rack.html"><i aria-hidden="true"></i>dedhed</a>
+  <span class="eyebrow">Live tapes / shared air</span>
+  <a class="sticker live" href="04-deck.html">On air · 5/8/77 II</a>
+</header>
+<main>
+  <a class="back" href="02-rack.html">← Back to the rack</a>
+
+  <article class="cassette is-playing" aria-label="Recording">
+    <div class="face">
+      <span class="side">A</span>
+      <h1>Grateful Dead &nbsp;·&nbsp; 4/17/71 &nbsp;·&nbsp; Dillon Gym, Princeton, N.J.</h1>
+      <div class="stamp">SBD<b>2:12:40</b></div>
+      <div class="window" aria-hidden="true"><span class="reel"></span><span class="tape"></span><span class="reel"></span></div>
+      <p class="line">Soundboard · <b>Taped by</b> unknown · <b>Transferred by</b> Charlie Miller · Set boundaries reviewed</p>
+    </div>
+    <div class="controls">
+      <button class="key primary">▶ Play Set I</button>
+      <button class="key">▶ Play Set II</button>
+      <button class="key ghost" style="color:var(--paper);border-color:var(--ink-faint)">Full recording · 2:12:40</button>
+    </div>
+  </article>
+
+  <section class="jcard" aria-label="Sets and tracks">
+    <div class="side-panel">
+      <div class="side-head"><span class="side">A</span><h2>Set I</h2><span class="eyebrow">58:10</span><button class="key">Play</button></div>
+      <ol class="tracks">
+        <li><button><span class="t">Bertha</span><small>5:52</small></button></li>
+        <li><button><span class="t">Me And My Uncle</span><small>3:14</small></button></li>
+        <li><button><span class="t">Loser</span><small>6:40</small></button></li>
+        <li><button><span class="t">Playing In The Band</span><small>4:58</small></button></li>
+        <li><button><span class="t">Beat It On Down The Line</span><small>3:20</small></button></li>
+        <li><button><span class="t">Hard To Handle</span><small>7:35</small></button></li>
+        <li><button><span class="t">Cumberland Blues</span><small>5:41</small></button></li>
+        <li><button><span class="t">Next Time You See Me</span><small>4:12</small></button></li>
+        <li><button><span class="t">China Cat Sunflower <span class="seg">&gt;</span></span><small>5:08</small></button></li>
+        <li><button><span class="t">I Know You Rider</span><small>5:30</small></button></li>
+        <li><button><span class="t">Casey Jones</span><small>5:50</small></button></li>
+      </ol>
+    </div>
+    <div class="side-panel">
+      <div class="side-head"><span class="side">B</span><h2>Set II</h2><span class="eyebrow">1:14:30</span><button class="key">Play</button></div>
+      <ol class="tracks">
+        <li><button><span class="t">Truckin' <span class="seg">&gt;</span></span><small>8:40</small></button></li>
+        <li class="now"><button aria-current="true"><span class="t">Drums <span class="seg">&gt;</span></span><small>4:02</small></button></li>
+        <li><button><span class="t">The Other One <span class="seg">&gt;</span></span><small>14:55</small></button></li>
+        <li><button><span class="t">Wharf Rat <span class="seg">&gt;</span></span><small>9:21</small></button></li>
+        <li><button><span class="t">Dark Star <span class="seg">&gt;</span></span><small>12:18</small></button></li>
+        <li><button><span class="t">Sugar Magnolia</span><small>7:12</small></button></li>
+        <li><button><span class="t">Not Fade Away <span class="seg">&gt;</span></span><small>5:30</small></button></li>
+        <li><button><span class="t">Goin' Down The Road Feeling Bad <span class="seg">&gt;</span></span><small>6:55</small></button></li>
+        <li><button><span class="t">Not Fade Away</span><small>2:48</small></button></li>
+        <li><button><span class="t">Uncle John's Band</span><small>6:49</small></button></li>
+      </ol>
+    </div>
+    <div class="credits">
+      <dl><dt>Taped by</dt><dd>Not recorded</dd><dt>Transferred by</dt><dd>Charlie Miller</dd></dl>
+      <dl><dt>Source lineage</dt><dd>SBD &gt; Master Reel &gt; Cassette &gt; DAT &gt; CD &gt; EAC &gt; SHN &gt; FLAC</dd></dl>
+      <dl><dt>Original</dt><dd><a href="#" rel="noreferrer">Internet Archive ↗</a></dd><dt>Review</dt><dd>Grouping confirmed 2026-09-30</dd></dl>
+      <div class="warn-box"><span class="sticker warn">Note</span><span>The track list follows the source as published. "Drums &gt; The Other One" is one continuous file on the source; the split shown here is the reviewer's, not the taper's.</span></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

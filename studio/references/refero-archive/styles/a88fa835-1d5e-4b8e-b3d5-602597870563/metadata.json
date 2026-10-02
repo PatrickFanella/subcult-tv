@@ -1,0 +1,29 @@
+{
+  "styleId": "a88fa835-1d5e-4b8e-b3d5-602597870563",
+  "sourceUrl": "https://styles.refero.design/style/a88fa835-1d5e-4b8e-b3d5-602597870563",
+  "fetchedAt": "2026-10-02T21:38:54.049056+00:00",
+  "extractedAt": "2026-10-02T21:38:54.086387+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Koto — Style Reference",
+  "htmlSha256": "ed2a74f50ff0fb4f6b2e4e2de1f8a09ccfaf453cae6d8be808c0bd726ff9744b",
+  "cache": ".cache/a88fa835-1d5e-4b8e-b3d5-602597870563.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0abea61afd051df7dd8b229d50e0121a0ee8b8ce9ed7323743cde564be11ada2",
+      "bytes": 14524,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cd2ed291-108a-4343-9c87-87bdc2c5337b.jpg",
+    "fetchedAt": "2026-10-02T21:38:56.072900+00:00",
+    "sha256": "7e68f9a546fa0ffdc9acaeb7540c257cf9a660bb94b6cdc4288ed1986b23dc91",
+    "bytes": 108580,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

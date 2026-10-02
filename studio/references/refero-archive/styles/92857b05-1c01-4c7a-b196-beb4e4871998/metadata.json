@@ -1,0 +1,29 @@
+{
+  "styleId": "92857b05-1c01-4c7a-b196-beb4e4871998",
+  "sourceUrl": "https://styles.refero.design/style/92857b05-1c01-4c7a-b196-beb4e4871998",
+  "fetchedAt": "2026-10-02T21:39:14.034960+00:00",
+  "extractedAt": "2026-10-02T21:39:14.100031+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Julia Krantz — Style Reference",
+  "htmlSha256": "9ec431245438cddaef70ed8b88b2d4a1ae5dc5b5582d8977077f670f0ba4aa1f",
+  "cache": ".cache/92857b05-1c01-4c7a-b196-beb4e4871998.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f362887613155d92cf2dbae87709f1d09ce508b54fd436f40e8cac5b515385e2",
+      "bytes": 17903,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/14d44c3c-9f52-45c2-9e55-c3d7246cba74.jpg",
+    "fetchedAt": "2026-10-02T21:39:16.075148+00:00",
+    "sha256": "437fddaeb1ca29a7136c587fda638cf03b78c6f5b57d3e40dcd43871a7f7f30d",
+    "bytes": 150112,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

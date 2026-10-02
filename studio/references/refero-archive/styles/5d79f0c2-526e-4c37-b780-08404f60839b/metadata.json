@@ -1,0 +1,29 @@
+{
+  "styleId": "5d79f0c2-526e-4c37-b780-08404f60839b",
+  "sourceUrl": "https://styles.refero.design/style/5d79f0c2-526e-4c37-b780-08404f60839b",
+  "fetchedAt": "2026-10-02T21:41:21.488358+00:00",
+  "extractedAt": "2026-10-02T21:41:21.513945+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Art In DUMBO — Style Reference",
+  "htmlSha256": "60fe3908cad9a7901d624319e347895a91b1a94c880324ff951b0de3d3833e64",
+  "cache": ".cache/5d79f0c2-526e-4c37-b780-08404f60839b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e67f33b627c27fedc1665f46a09142f53a5107b2c2c7c6b94a705cad25729740",
+      "bytes": 16808,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b5f9fd7e-03e7-4dd6-8dca-9e95ae607029.jpg",
+    "fetchedAt": "2026-10-02T21:41:23.626139+00:00",
+    "sha256": "2d7bbcf86c7e5ec20ab905366790b98b4fcae397a2e5d6a193cbd529079b8dbf",
+    "bytes": 131786,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

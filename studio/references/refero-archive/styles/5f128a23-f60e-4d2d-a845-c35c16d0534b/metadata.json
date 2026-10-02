@@ -1,0 +1,29 @@
+{
+  "styleId": "5f128a23-f60e-4d2d-a845-c35c16d0534b",
+  "sourceUrl": "https://styles.refero.design/style/5f128a23-f60e-4d2d-a845-c35c16d0534b",
+  "fetchedAt": "2026-10-02T21:29:02.014800+00:00",
+  "extractedAt": "2026-10-02T21:29:02.071018+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "AZAK — Style Reference",
+  "htmlSha256": "1880d6fb931605d134b4920770c268b5d4ec0bfe42ae861891b71b0ac5e29351",
+  "cache": ".cache/5f128a23-f60e-4d2d-a845-c35c16d0534b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "640d16def965799472b72a7caea72f7130fa8567f4e888a6c2fd8a67475a79a2",
+      "bytes": 14867,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a413f402-6ef0-4e7a-bee1-274090020b65.jpg",
+    "fetchedAt": "2026-10-02T21:29:03.950055+00:00",
+    "sha256": "9d0c401dc7f44750704e5612569af56b7b58dacfcab6c7405876575e4bf97cb0",
+    "bytes": 45018,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

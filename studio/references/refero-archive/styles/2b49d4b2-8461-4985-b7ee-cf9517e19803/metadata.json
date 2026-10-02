@@ -1,0 +1,29 @@
+{
+  "styleId": "2b49d4b2-8461-4985-b7ee-cf9517e19803",
+  "sourceUrl": "https://styles.refero.design/style/2b49d4b2-8461-4985-b7ee-cf9517e19803",
+  "fetchedAt": "2026-10-02T21:52:02.238462+00:00",
+  "extractedAt": "2026-10-02T21:52:02.292424+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sleeve — Style Reference",
+  "htmlSha256": "1947e0d732c31d352b41b3c3f31d0e0ade3e834e0cd5c0cfa4c9eb2e5edc8396",
+  "cache": ".cache/2b49d4b2-8461-4985-b7ee-cf9517e19803.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "82d5e3267b79c808067ebb34cf684fc177efbbb1e08d8280735034b83831167d",
+      "bytes": 26062,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d71f8609-ba5e-4b30-8599-63c66b22442b.jpg",
+    "fetchedAt": "2026-10-02T21:52:04.165327+00:00",
+    "sha256": "b08f4ee1bb101cdfedb49d3407f1cac6064f88aeb17383d741580f2d20ca6be5",
+    "bytes": 75552,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

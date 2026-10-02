@@ -1,0 +1,10 @@
+:root {
+  --brand-bg: #0f0f0f;
+  --brand-fg: #eeeae1;
+  --brand-accent: #ff3333;
+  --brand-secondary: #ff6633;
+  --brand-safe-label: #ff3333;
+  --font-display: "Newsreader";
+  --font-body: "Inter Tight";
+  --font-label: "JetBrains Mono";
+}

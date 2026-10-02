@@ -1,0 +1,29 @@
+{
+  "styleId": "a6284fcd-fa69-4469-ac40-4239e5b84a39",
+  "sourceUrl": "https://styles.refero.design/style/a6284fcd-fa69-4469-ac40-4239e5b84a39",
+  "fetchedAt": "2026-10-02T21:49:29.575223+00:00",
+  "extractedAt": "2026-10-02T21:49:29.632949+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Freshman — Style Reference",
+  "htmlSha256": "8af6a8bac7f61aac1f2674a9e8fed393a754a79715d552d8b29512afe0bd3335",
+  "cache": ".cache/a6284fcd-fa69-4469-ac40-4239e5b84a39.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "07a6da4a9ac871ad5e1381ddb208033c3238951f6089b305345a307af91f5937",
+      "bytes": 15643,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/537f3938-5eca-45ef-93e5-9e7d728c2b5f.jpg",
+    "fetchedAt": "2026-10-02T21:49:31.531394+00:00",
+    "sha256": "88d4d284e61b047429a94a420dd859016368e641e17a5ae1874c0083a5b1a5db",
+    "bytes": 90667,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

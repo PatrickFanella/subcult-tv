@@ -1,0 +1,29 @@
+{
+  "styleId": "03e0e30c-4c0f-4879-948a-9b501e530207",
+  "sourceUrl": "https://styles.refero.design/style/03e0e30c-4c0f-4879-948a-9b501e530207",
+  "fetchedAt": "2026-10-02T21:19:03.257960+00:00",
+  "extractedAt": "2026-10-02T21:19:03.354682+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Grafana Labs — Style Reference",
+  "htmlSha256": "78aed6c9d31621e2652393ce4c88c2069881aa2f19509cabe0cef3b820f04387",
+  "cache": ".cache/03e0e30c-4c0f-4879-948a-9b501e530207.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "132c973ae873c455ab60f46601905946a8b08613b47096e8a13b92f9d4ea1167",
+      "bytes": 22499,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/60e80158-85bc-4295-ba81-603628556a91.jpg",
+    "fetchedAt": "2026-10-02T21:26:10.027098+00:00",
+    "sha256": "f19fc5be2117525f1742b78ed2d1cb3bda8aa6611911b6a7fd865d939450e064",
+    "bytes": 117922,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

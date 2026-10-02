@@ -1,0 +1,7 @@
+/* Reference observations, not an official or production design system.
+   See GUIDE.md and tokens.json for evidence and visibility limits. */
+:root {
+  --reference-bg: rgb(255, 229, 0);
+  --reference-fg: rgb(22, 22, 22);
+  --reference-font-body: DieGroteskC, sans-serif;
+}

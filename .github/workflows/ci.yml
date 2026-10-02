@@ -26,7 +26,7 @@ jobs:
           LFS_TOKEN: ${{ github.token }}
         run: |
           git lfs install --local
-          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull
+          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull --include="public/**"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -84,7 +84,7 @@ jobs:
           LFS_TOKEN: ${{ github.token }}
         run: |
           git lfs install --local
-          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull
+          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull --include="public/**"
 
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -146,7 +146,25 @@ jobs:
           LFS_TOKEN: ${{ github.token }}
         run: |
           git lfs install --local
-          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull
+          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull --include="public/**"
 
       - name: Build API image
         run: docker build -t subcult-api ./api
+
+  studio:
+    name: Studio Sources
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Fetch Studio LFS objects
+        env:
+          LFS_TOKEN: ${{ github.token }}
+        run: |
+          git lfs install --local
+          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull --include="studio/**"
+
+      - name: Check private exports and preparation jobs
+        run: make check-studio check-studio-automation

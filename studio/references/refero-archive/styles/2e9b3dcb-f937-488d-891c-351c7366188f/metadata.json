@@ -1,0 +1,29 @@
+{
+  "styleId": "2e9b3dcb-f937-488d-891c-351c7366188f",
+  "sourceUrl": "https://styles.refero.design/style/2e9b3dcb-f937-488d-891c-351c7366188f",
+  "fetchedAt": "2026-10-02T21:19:09.332785+00:00",
+  "extractedAt": "2026-10-02T21:19:09.381263+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Modern Treasury — Style Reference",
+  "htmlSha256": "331a543d4fdde4dbf71d2f91d6cf54e3d9a7d77ad7de72d7d54ee0ec8a6a6f84",
+  "cache": ".cache/2e9b3dcb-f937-488d-891c-351c7366188f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d723b80b6b99e79fb120da1d6090a6d8efdb778600071e711bc3d4e44fc4d6f4",
+      "bytes": 21938,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/942e62e7-e877-40db-8a53-8d3d7fdd6cd0.jpg",
+    "fetchedAt": "2026-10-02T21:26:16.019820+00:00",
+    "sha256": "d834162013f7366b1bc5ee27a485a89fd9ccff5d84f02866641a54185f1a722e",
+    "bytes": 76905,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

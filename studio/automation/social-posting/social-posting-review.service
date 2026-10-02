@@ -1,0 +1,13 @@
+[Unit]
+Description=Review weekly SUBCULT delivery evidence without posting
+OnFailure=social-posting-failure.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/onnwee/Work/Subcult/subcult-tv/studio
+ExecStart=/usr/bin/python3 /home/onnwee/Work/Subcult/subcult-tv/studio/automation/social-posting/runner.py review --refresh
+TimeoutStartSec=20min
+KillMode=control-group
+UMask=0077
+Environment=PATH=/home/onnwee/.local/bin:/usr/local/bin:/usr/bin:/bin
+UnsetEnvironment=OPENAI_API_KEY CODEX_API_KEY OPENAI_BASE_URL

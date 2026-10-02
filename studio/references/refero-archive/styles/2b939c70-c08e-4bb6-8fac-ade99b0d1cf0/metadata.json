@@ -1,0 +1,29 @@
+{
+  "styleId": "2b939c70-c08e-4bb6-8fac-ade99b0d1cf0",
+  "sourceUrl": "https://styles.refero.design/style/2b939c70-c08e-4bb6-8fac-ade99b0d1cf0",
+  "fetchedAt": "2026-10-02T21:59:42.646499+00:00",
+  "extractedAt": "2026-10-02T21:59:42.693934+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lazy — Style Reference",
+  "htmlSha256": "cd52db35805ef9000e10dbdc951cb4e316c6f7d304798e32df85dc6c5b36110d",
+  "cache": ".cache/2b939c70-c08e-4bb6-8fac-ade99b0d1cf0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "435291d580d865a705a8fff88ae85b3c3c3ff8d4f0e6b24ee937df5fbb7d24cf",
+      "bytes": 19103,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/95137127-90c3-41ef-9edf-3a3da5a1d893.jpg",
+    "fetchedAt": "2026-10-02T21:59:44.153405+00:00",
+    "sha256": "d986332af6bafe18f3a0085821df0202b287be5156364d9053a91c33434b06d4",
+    "bytes": 51023,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "site": "a-better-lou",
+  "source": "https://abetterlou.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:17:08.889Z",
+      "url": "https://abetterlou.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:25:23.214Z",
+      "url": "https://abetterlou.com/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "61a2ce741bb8f1a0338ce8406c1510e45c237daff9aaff6283149cc445f76d93",
+      "bytes": 5007
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "28e5dfdf4d7310691125882aa428fde5a7e0f8c9b14b600167e893a4390486b3",
+      "bytes": 1192
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "b2d7806aed949e51f5f04d4c537f335e5cc811b6bab508959ae74e6cc64069a6",
+      "bytes": 28365
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "bddba3bd1b89d0ea20b27886ff941df9847106737db161c010f535dd14167792",
+      "bytes": 27799
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "85b8d672307cccfcbc07659c1e9fc4188c66e1fb02bb7d8c881d54d34e0326a6",
+      "bytes": 571758
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "6118b8488ff38ea2a0d55a5c4dc1294483fe297e7f663d1ce0a14c9315508aba",
+      "bytes": 285
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "f759030db22c7d04f395529d1faf2a76d313718da114653bc21b6999e0fef354",
+      "bytes": 8463
+    }
+  ]
+}

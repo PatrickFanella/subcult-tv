@@ -1,0 +1,29 @@
+{
+  "styleId": "a59e7f31-1fca-46c1-a6b0-8d1294b33a7c",
+  "sourceUrl": "https://styles.refero.design/style/a59e7f31-1fca-46c1-a6b0-8d1294b33a7c",
+  "fetchedAt": "2026-10-02T21:41:13.655404+00:00",
+  "extractedAt": "2026-10-02T21:41:13.681384+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Raad Cycling — Style Reference",
+  "htmlSha256": "dfef2d0df816d55c4b0bfab283da090a850acba8d9b9ef35e509bbaa83705abf",
+  "cache": ".cache/a59e7f31-1fca-46c1-a6b0-8d1294b33a7c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "09292338ce20254f166c0336042bdc3685792eda8bc86590fcaea0e4bce3b684",
+      "bytes": 20144,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/612b8c72-ff21-4d3e-a266-f5babfc7fbaa.jpg",
+    "fetchedAt": "2026-10-02T21:41:15.450051+00:00",
+    "sha256": "bb18baf2d34b3c78f8e600b7f2c35a792b82043e0694be4434e97b4c1b7f5cd3",
+    "bytes": 68702,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

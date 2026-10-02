@@ -1,0 +1,29 @@
+{
+  "styleId": "b63cc4ca-52c6-4b70-9a5a-cb04bae15edb",
+  "sourceUrl": "https://styles.refero.design/style/b63cc4ca-52c6-4b70-9a5a-cb04bae15edb",
+  "fetchedAt": "2026-10-02T21:36:54.050996+00:00",
+  "extractedAt": "2026-10-02T21:36:54.099202+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "LogoArchive — Style Reference",
+  "htmlSha256": "fe70efc86078ce66128caf08d826245194cfcffd48dad67c25e80e4a982eebdd",
+  "cache": ".cache/b63cc4ca-52c6-4b70-9a5a-cb04bae15edb.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "95241f28171637adcbb43f853f47eca2ba40d1f9dca998aa0e771038ac49044f",
+      "bytes": 17011,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4a7536aa-2c00-47fe-bf5a-3b28064309b7.jpg",
+    "fetchedAt": "2026-10-02T21:36:56.133934+00:00",
+    "sha256": "43af952f3e11e23dc8c07ae0253223317c8c6fb04244731b81fd6b9d4f18d15e",
+    "bytes": 72113,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

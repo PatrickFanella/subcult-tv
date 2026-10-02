@@ -34,3 +34,7 @@ api/tmp/
 
 # Generated RSS feed
 public/feed.xml
+
+# Local migration workspaces and generated private bundles
+.companion/
+runtime/

@@ -1,0 +1,29 @@
+{
+  "styleId": "679f08af-741f-4b04-bb44-0a9b97e96ad3",
+  "sourceUrl": "https://styles.refero.design/style/679f08af-741f-4b04-bb44-0a9b97e96ad3",
+  "fetchedAt": "2026-10-02T21:26:38.006469+00:00",
+  "extractedAt": "2026-10-02T21:26:38.042181+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "CleanShot X — Style Reference",
+  "htmlSha256": "9784d2185542f332ab744e4ee395de151d9e3d399e14dae6ca2c01b9e95e19f6",
+  "cache": ".cache/679f08af-741f-4b04-bb44-0a9b97e96ad3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ba368bd1dc2dd34d352a040ae401c8711f3ba2a1e41c92bcbb549a77fd36b81f",
+      "bytes": 21085,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/01590fbe-8d1f-4845-a55c-4a0aed996e19.jpg",
+    "fetchedAt": "2026-10-02T21:26:40.024522+00:00",
+    "sha256": "cd3013f0f0573af126608df3ebfc7bbae2780d1507700487a8d1689c4f76db05",
+    "bytes": 105672,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

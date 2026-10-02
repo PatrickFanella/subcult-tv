@@ -1,0 +1,29 @@
+{
+  "styleId": "643f90ba-dc30-428b-a145-26f02fe70551",
+  "sourceUrl": "https://styles.refero.design/style/643f90ba-dc30-428b-a145-26f02fe70551",
+  "fetchedAt": "2026-10-02T21:55:46.575815+00:00",
+  "extractedAt": "2026-10-02T21:55:46.598350+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sneak in Peace — Style Reference",
+  "htmlSha256": "27e989488c464fac013b7f6301112bf3dbdfda8ee0952121a6271b3ea80c48cf",
+  "cache": ".cache/643f90ba-dc30-428b-a145-26f02fe70551.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4645bf1c984443380c089053ef064967d25e455939a058a1338164a1fc5aae9a",
+      "bytes": 18431,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8018b270-0c6a-4f9e-bba0-9c0e7bd3f6f6.jpg",
+    "fetchedAt": "2026-10-02T21:55:48.453582+00:00",
+    "sha256": "d1dd1b063ea74f77e15bbe23d087bcfd5138190825cfde9e4f4e88a89f6def64",
+    "bytes": 75267,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

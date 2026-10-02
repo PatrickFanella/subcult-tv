@@ -1,0 +1,29 @@
+{
+  "styleId": "d1ca41ff-1bcc-4081-b1fd-bdcf380ba749",
+  "sourceUrl": "https://styles.refero.design/style/d1ca41ff-1bcc-4081-b1fd-bdcf380ba749",
+  "fetchedAt": "2026-10-02T21:46:41.499120+00:00",
+  "extractedAt": "2026-10-02T21:46:41.540306+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Koox — Style Reference",
+  "htmlSha256": "36f7d18621e5f0e1c78855207a446832d6b9f319f4a43067613f609af6a9448a",
+  "cache": ".cache/d1ca41ff-1bcc-4081-b1fd-bdcf380ba749.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c0412d5fe192e87fb11f765b57ad65dff81f91c520ee37ce722a74fdc44ed1f0",
+      "bytes": 18680,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0db21e9e-87c5-46d2-912b-7543cc82bfda.jpg",
+    "fetchedAt": "2026-10-02T21:46:43.452448+00:00",
+    "sha256": "faef59ba909da5e95d5608d1fb24f85aa45b71490821b53ed61a80939815c30b",
+    "bytes": 37076,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

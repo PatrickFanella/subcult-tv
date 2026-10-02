@@ -1,0 +1,29 @@
+{
+  "styleId": "da087e69-8832-418a-aa1b-42e1acabb39e",
+  "sourceUrl": "https://styles.refero.design/style/da087e69-8832-418a-aa1b-42e1acabb39e",
+  "fetchedAt": "2026-10-02T21:46:54.058408+00:00",
+  "extractedAt": "2026-10-02T21:46:54.096485+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Metalab — Style Reference",
+  "htmlSha256": "e91fd8d4764b53701fae76270c2586e3dbccc75da65101904ce183ff0fd6699a",
+  "cache": ".cache/da087e69-8832-418a-aa1b-42e1acabb39e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "21c6df6c434caec509b642d1f194e795b9f3a82f8c3413ba4cb924f862a12def",
+      "bytes": 15890,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b47cb87d-d425-4dc1-a026-9889b153d510.jpg",
+    "fetchedAt": "2026-10-02T21:46:55.491666+00:00",
+    "sha256": "076e6f74759055497372d3d392918aae485fdd6177910a74844375e074515907",
+    "bytes": 46710,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

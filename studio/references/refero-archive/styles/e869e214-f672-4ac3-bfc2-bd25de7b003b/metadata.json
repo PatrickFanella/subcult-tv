@@ -1,0 +1,29 @@
+{
+  "styleId": "e869e214-f672-4ac3-bfc2-bd25de7b003b",
+  "sourceUrl": "https://styles.refero.design/style/e869e214-f672-4ac3-bfc2-bd25de7b003b",
+  "fetchedAt": "2026-10-02T21:32:10.090685+00:00",
+  "extractedAt": "2026-10-02T21:32:10.114353+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Base44 — Style Reference",
+  "htmlSha256": "0cf78b7f65cfda92902e05bd3256b554babbd17adedc52be901e2183b32ab1c6",
+  "cache": ".cache/e869e214-f672-4ac3-bfc2-bd25de7b003b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "709e58b27b19f12a38fd27f572b55343e138773a171347f9243426eab618b9d4",
+      "bytes": 23058,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cb4991d6-b00f-4df1-9d8b-24b717c5d98e.jpg",
+    "fetchedAt": "2026-10-02T21:32:11.977635+00:00",
+    "sha256": "68e75f25bce9f2ed32546a91bda97abefdad5572b3bbc58d514ff9744684a849",
+    "bytes": 62022,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

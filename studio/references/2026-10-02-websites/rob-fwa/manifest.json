@@ -1,0 +1,76 @@
+{
+  "site": "rob-fwa",
+  "source": "https://www.robfwa.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "limited-style",
+      "observation": "evidence/limited-style.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:33:26.193Z",
+      "url": "https://www.robfwa.com/",
+      "viewport": null,
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": null,
+      "url": null,
+      "viewport": null,
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": null,
+      "url": null,
+      "viewport": null,
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "56f0120bb803719776367ed72e9d1c4851b06c5a0aa27f688c46b290ea29d6ef",
+      "bytes": 4952
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "ebbccc527667c6e2ce2229d37e95727413b5cf9f750fe705f89b33a18ad9786d",
+      "bytes": 1310
+    },
+    {
+      "path": "evidence/limited-style.json",
+      "sha256": "c6bc08da2148d6326b11dd0ea65803b3f795d028b540e38a8e06f0d502b29d6e",
+      "bytes": 7427
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "1a50da857ec9f77d91b1f3ac8b0077923d44a06115d87eaea08af675d0b658c5",
+      "bytes": 668
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "e5b3cefb36c7e6b2d879fc701d0785711dfa28436e395aedb47a4931c8484873",
+      "bytes": 296
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "262f4199a8365a76e0afeae2b1ed3375612cc284c7f7e003f174a4d6ccd994d6",
+      "bytes": 93637
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "bca840624a6009d19a9c8b10b6477e5f30f6eb2ac9ceb797756f55a674e7af4f",
+      "bytes": 336
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "6bed9ebccbecf6be15258b1f09b716eac992479a13d0a3decf2459de5bcf08b9",
+      "bytes": 4402
+    }
+  ]
+}

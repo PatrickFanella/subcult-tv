@@ -1,0 +1,29 @@
+{
+  "styleId": "6b2e2cb8-b217-4395-a664-8795b6002315",
+  "sourceUrl": "https://styles.refero.design/style/6b2e2cb8-b217-4395-a664-8795b6002315",
+  "fetchedAt": "2026-10-02T21:48:33.485827+00:00",
+  "extractedAt": "2026-10-02T21:48:33.534962+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Marylou Faure — Style Reference",
+  "htmlSha256": "eb5a905a0f732d4b24b7e11f351b942bc8200c32164d0f2baef2fa49c74db171",
+  "cache": ".cache/6b2e2cb8-b217-4395-a664-8795b6002315.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5e9b3a535eb39bc4757feb771603bcc6dd18b997b43451b42ee5e49c8b2eb73f",
+      "bytes": 16728,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f9a6fa1f-88f9-4b42-9a42-0f4d4a1bee17.jpg",
+    "fetchedAt": "2026-10-02T21:48:35.565531+00:00",
+    "sha256": "250829691a6a1d15ecad0f5d6e022103068232cb529d94141d784a78f353c073",
+    "bytes": 153742,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

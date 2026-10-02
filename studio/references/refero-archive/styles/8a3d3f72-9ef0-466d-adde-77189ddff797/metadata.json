@@ -1,0 +1,29 @@
+{
+  "styleId": "8a3d3f72-9ef0-466d-adde-77189ddff797",
+  "sourceUrl": "https://styles.refero.design/style/8a3d3f72-9ef0-466d-adde-77189ddff797",
+  "fetchedAt": "2026-10-02T21:47:49.814172+00:00",
+  "extractedAt": "2026-10-02T21:47:49.860455+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sackville & Co. — Style Reference",
+  "htmlSha256": "f6dbfd09029c6efac79870290ab8e3fb0c63fdd16529b2a459ac8f91db73ef87",
+  "cache": ".cache/8a3d3f72-9ef0-466d-adde-77189ddff797.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "be243202421696a72f7c2b6ef19665325215d6cedd3ca12fdc02bcc74d737753",
+      "bytes": 23574,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cb208b4f-ced2-49bf-bbe3-cce7ec984ced.jpg",
+    "fetchedAt": "2026-10-02T21:47:51.610391+00:00",
+    "sha256": "a4953eda3f566a324e065b542045d786799b207ecf314886fec38eb580c45230",
+    "bytes": 133200,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

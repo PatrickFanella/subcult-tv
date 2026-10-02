@@ -1,0 +1,29 @@
+{
+  "styleId": "a6bf8730-6515-4a47-9d5f-927e1e0c67d5",
+  "sourceUrl": "https://styles.refero.design/style/a6bf8730-6515-4a47-9d5f-927e1e0c67d5",
+  "fetchedAt": "2026-10-02T21:39:46.005509+00:00",
+  "extractedAt": "2026-10-02T21:39:46.043196+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Kajabi — Style Reference",
+  "htmlSha256": "c0b0668563f3b3125439968017efa3bb9ac8d8fba7a5af8cb988d34889bf0b6d",
+  "cache": ".cache/a6bf8730-6515-4a47-9d5f-927e1e0c67d5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "18178982bab7049d001f05277c8251d3f5fd6b2019a20eef084240e3e85a4545",
+      "bytes": 17377,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/89149fa5-d518-4893-84b4-2663785655b3.jpg",
+    "fetchedAt": "2026-10-02T21:39:48.055073+00:00",
+    "sha256": "d09ed21e27b5e8a07c6094f821ec62b9a09390a3ee4551773bf367f77f09c6e3",
+    "bytes": 112010,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

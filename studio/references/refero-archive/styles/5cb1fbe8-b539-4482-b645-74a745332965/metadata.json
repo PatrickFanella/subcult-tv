@@ -1,0 +1,29 @@
+{
+  "styleId": "5cb1fbe8-b539-4482-b645-74a745332965",
+  "sourceUrl": "https://styles.refero.design/style/5cb1fbe8-b539-4482-b645-74a745332965",
+  "fetchedAt": "2026-10-02T21:42:13.481076+00:00",
+  "extractedAt": "2026-10-02T21:42:13.526665+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Swwim — Style Reference",
+  "htmlSha256": "2fbb14fcab4d442886729d2eb8e1006a0abaed5c6bf625644ad0a45bfce1de15",
+  "cache": ".cache/5cb1fbe8-b539-4482-b645-74a745332965.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ccbc70e9ed2f06bcbfce9d82feb1ceb2155c5e392baf5c82b8a66b0818e6775a",
+      "bytes": 17400,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7d54004d-d751-4c1f-8a12-0b866b634691.jpg",
+    "fetchedAt": "2026-10-02T21:42:15.564694+00:00",
+    "sha256": "b725f51e88bb59c9554516a4c4bc7c88bfb53acd6672e8ae9c2f6bc1814846f4",
+    "bytes": 174219,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

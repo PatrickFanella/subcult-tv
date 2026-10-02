@@ -1,0 +1,29 @@
+{
+  "styleId": "71db2a51-118e-42b1-879d-29872d52142f",
+  "sourceUrl": "https://styles.refero.design/style/71db2a51-118e-42b1-879d-29872d52142f",
+  "fetchedAt": "2026-10-02T21:42:05.585858+00:00",
+  "extractedAt": "2026-10-02T21:42:05.636713+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "NaN — Style Reference",
+  "htmlSha256": "660ed10e912f08393d957e6a087044054b144be955ab085ec788b6f39ca486dd",
+  "cache": ".cache/71db2a51-118e-42b1-879d-29872d52142f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cfe6964fa4c0967ac9838b4ab422fe8f6a593d5a59af2adf037e6770b274b713",
+      "bytes": 29017,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0a10dfa6-3c14-4c93-9b3d-6d9d216747b7.jpg",
+    "fetchedAt": "2026-10-02T21:42:07.664223+00:00",
+    "sha256": "0ba8f2d4920b7ad1b1b41e7e174eb37753fd8f7ef19283ada1d73bb370813db5",
+    "bytes": 123821,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

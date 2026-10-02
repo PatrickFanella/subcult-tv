@@ -1,0 +1,29 @@
+{
+  "styleId": "6b4e6620-5c06-4dc1-931b-82265116f6f2",
+  "sourceUrl": "https://styles.refero.design/style/6b4e6620-5c06-4dc1-931b-82265116f6f2",
+  "fetchedAt": "2026-10-02T21:51:05.646355+00:00",
+  "extractedAt": "2026-10-02T21:51:06.042318+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Stryds — Style Reference",
+  "htmlSha256": "0c84a3d269ed0fd82161800361b4b500fee95120975c0a08b7749901afe6e1f4",
+  "cache": ".cache/6b4e6620-5c06-4dc1-931b-82265116f6f2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1cb0f90b974ef2388c24135cb48672779e457457c97589b48c757a47ab4e18ca",
+      "bytes": 20572,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/15b4853a-c706-4f02-a4d8-66549ed9019a.jpg",
+    "fetchedAt": "2026-10-02T21:51:07.500100+00:00",
+    "sha256": "80aa647d5505380f11da614572e8b00b19fff629c3a441043efedfe905429643",
+    "bytes": 64199,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

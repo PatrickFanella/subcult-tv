@@ -1,0 +1,29 @@
+{
+  "styleId": "21cfe0c1-778d-4613-9f47-a5718eb929b3",
+  "sourceUrl": "https://styles.refero.design/style/21cfe0c1-778d-4613-9f47-a5718eb929b3",
+  "fetchedAt": "2026-10-02T21:34:10.004536+00:00",
+  "extractedAt": "2026-10-02T21:34:10.033412+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Auros — Style Reference",
+  "htmlSha256": "22676f7e1db2ef814e7554e065e158c8b361e88657f0fed7584982f111ee3c9f",
+  "cache": ".cache/21cfe0c1-778d-4613-9f47-a5718eb929b3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8a795863135c3ce821747656f50669407647918b978a25e6f796cef30e25e924",
+      "bytes": 21378,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3758d41c-ba25-4aad-9f7f-cca79e3469ef.jpg",
+    "fetchedAt": "2026-10-02T21:34:12.109128+00:00",
+    "sha256": "08964d095f80d59f27e11a9f4230c56b8bb3075354dca341701173f34b8e0149",
+    "bytes": 132698,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

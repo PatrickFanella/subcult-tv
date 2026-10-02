@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dedhed design system — 02 The rack (concert library)</title>
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  main { max-width: 1240px; margin: 0 auto; padding: var(--space-6) var(--space-5) var(--space-8); display: grid; grid-template-columns: 1fr 300px; gap: var(--space-6); }
+  .shelf-head { display: flex; align-items: flex-end; gap: var(--space-4); margin-bottom: var(--space-4); flex-wrap: wrap; }
+  .shelf-head h1 { font: 700 var(--text-2xl)/1 var(--font-typed); margin: 0; letter-spacing: -.01em; }
+  .shelf-head h1 small { font: var(--text-sm)/1 var(--font-mono); color: var(--ink-soft); margin-left: var(--space-2); }
+  .filters { display: flex; gap: var(--space-3); margin-left: auto; align-items: flex-end; }
+  .years { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 var(--space-4); padding: 0; list-style: none; }
+  .years button { padding: 5px 9px; font: 700 var(--text-xs)/1 var(--font-mono); background: var(--paper-bright); color: var(--ink); border: 1px solid var(--shell-clear-edge); border-radius: 2px; }
+  .years button[aria-pressed="true"] { background: var(--shell-black); color: var(--paper); border-color: var(--shell-black); }
+  .rack .spine { color: var(--ink); }
+  .rack .spine .label { gap: var(--space-3); }
+  .rack .spine .venue { flex: 1; }
+  aside { position: sticky; top: var(--space-5); align-self: start; display: flex; flex-direction: column; gap: var(--space-4); }
+  .card { background: var(--paper-kraft); color: var(--ink); padding: var(--space-4); border-radius: 2px; box-shadow: 0 2px 0 #8a6a3d, 0 6px 12px rgba(0,0,0,.4); transform: rotate(.6deg); }
+  .card h2 { font: 700 var(--text-lg)/1.1 var(--font-typed); margin: 0 0 var(--space-2); }
+  .card p { margin: 0 0 var(--space-3); font: var(--text-sm)/1.5 var(--font-mono); }
+  .card .meta { display: grid; grid-template-columns: auto 1fr; gap: 2px var(--space-3); font: var(--text-xs)/1.5 var(--font-mono); margin-bottom: var(--space-3); }
+  .card .meta dt { color: var(--ink-soft); text-transform: uppercase; letter-spacing: .08em; }
+  .card .meta dd { margin: 0; }
+  .card .row { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+  .station { background: var(--shell-black); border: 1px solid #000; padding: var(--space-4); border-radius: var(--radius-shell); }
+  .station { color: var(--paper); }
+  .station h2 { font: 700 var(--text-lg)/1.1 var(--font-typed); margin: var(--space-2) 0; }
+  .station p { margin: 0 0 var(--space-3); font-size: var(--text-sm); color: var(--shell-clear); }
+  .pager { display: flex; justify-content: space-between; align-items: center; margin-top: var(--space-4); font: var(--text-xs)/1 var(--font-mono); color: var(--ink-soft); }
+  @media (max-width: 900px) { .spine .label .sticker { display: none; } main { grid-template-columns: 1fr; } aside { position: static; } .filters { margin-left: 0; width: 100%; } .filters .field:first-child { flex: 1; } .spine .end { display: none; } }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <a class="wordmark" href="02-rack.html"><i aria-hidden="true"></i>dedhed</a>
+  <span class="eyebrow">Live tapes / shared air</span>
+  <a class="sticker live" href="04-deck.html">On air · 5/8/77 II</a>
+</header>
+<main>
+  <section aria-label="Concert library">
+    <div class="shelf-head">
+      <h1>The rack <small>38 tapes</small></h1>
+      <div class="filters">
+        <label class="field"><span>Find a show</span><input type="search" placeholder="Date, venue, city…"></label>
+        <label class="field" style="width:100px"><span>Year</span><input inputmode="numeric" placeholder="All"></label>
+      </div>
+    </div>
+    <ul class="years" aria-label="Years on the shelf">
+      <li><button aria-pressed="true">All</button></li><li><button>1970</button></li><li><button>1971</button></li><li><button>1972</button></li><li><button>1977</button></li><li><button>1985</button></li><li><button>1989</button></li>
+    </ul>
+    <div class="rack" role="list">
+      <div class="slot" role="listitem"><button class="spine"><span class="tab">TDK<br>SA90</span><span class="label"><span class="band">Grateful Dead</span><span class="date">1/10/70</span><span class="set">I</span><span class="venue">Community Concourse, San Diego</span><span class="sticker">AUD</span></span><span class="end">44:10</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab">TDK<br>SA90</span><span class="label"><span class="band">Grateful Dead</span><span class="date">2/13/70</span><span class="set">I · II</span><span class="venue">Fillmore East, N.Y.C.</span><span class="sticker">SBD</span></span><span class="end">2:41:05</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab gold">XL II</span><span class="label stock-aged"><span class="band">Grateful Dead</span><span class="date">4/3/70</span><span class="set">II</span><span class="venue">Cincinnati, Ohio</span></span><span class="end">52:33</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab gold">XL II</span><span class="label"><span class="band">Grateful Dead</span><span class="date">2/21/71</span><span class="set">I</span><span class="venue">Capitol Theatre, Port Chester, N.Y.</span><span class="sticker">SBD</span></span><span class="end">1:04:48</span></button></div>
+      <div class="slot" role="listitem"><button class="spine" aria-pressed="true"><span class="tab gold">XL II</span><span class="label"><span class="band">Grateful Dead</span><span class="date">4/17/71</span><span class="set">I · II</span><span class="venue">Dillon Gym, Princeton, N.J.</span><span class="sticker">SBD</span></span><span class="end">2:12:40</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab chrome">UR</span><span class="label stock-aged"><span class="band">Grateful Dead</span><span class="date">4/28/71</span><span class="set">II</span><span class="venue">Fillmore East, N.Y.C.</span></span><span class="end">1:18:02</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab">TDK<br>SA90</span><span class="label stock-grey"><span class="band">Columbus, Ohio</span><span class="date">10/31/71</span><span class="venue">Veterans Memorial Auditorium</span><span class="sticker warn">sets unreviewed</span></span><span class="end">2:20:15</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab red">maxell</span><span class="label stock-sky"><span class="band">The Grateful Dead</span><span class="date">April 27, 1985 Set II</span><span class="venue">Frost Amphitheater, Palo Alto, California</span></span><span class="end">1:22:51</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab red">maxell</span><span class="label stock-yellow"><span class="band">The Grateful Dead</span><span class="date">June 16, 1985 Set II</span><span class="venue">Greek Theater, Berkeley, California</span></span><span class="end">1:09:12</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab red">maxell</span><span class="label stock-red"><span class="band">The Grateful Dead</span><span class="date">June 16, 1985 Set I</span><span class="venue">Greek Theater, Berkeley, California</span></span><span class="end">58:40</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab red">maxell</span><span class="label stock-green"><span class="band">The Grateful Dead</span><span class="date">November 1, 1985 Set I</span><span class="venue">Coliseum, Richmond, Virginia</span></span><span class="end">1:01:27</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab red">maxell</span><span class="label stock-orange"><span class="band">The Grateful Dead</span><span class="date">November 1, 1985 Set II</span><span class="venue">Coliseum, Richmond, Virginia</span></span><span class="end">1:24:03</span></button></div>
+      <div class="slot" role="listitem"><button class="spine"><span class="tab gold">XL II</span><span class="label"><span class="band">Grateful Dead</span><span class="date">12/10/89</span><span class="set">II</span><span class="venue">Great Western Forum, Inglewood, CA</span></span><span class="end">1:11:30</span></button></div>
+      <div class="slot empty" aria-hidden="true"></div>
+      <div class="slot empty" aria-hidden="true"></div>
+    </div>
+    <nav class="pager" aria-label="Catalog pages"><button class="key ghost" disabled>← Previous</button><span>Shelf 1 of 2</span><button class="key ghost">Next →</button></nav>
+  </section>
+
+  <aside>
+    <article class="card" aria-label="Selected tape">
+      <p class="eyebrow">Pulled from the rack</p>
+      <h2>Dillon Gym, Princeton, N.J.</h2>
+      <p>4/17/71 · Sets I &amp; II</p>
+      <dl class="meta"><dt>Source</dt><dd>SBD</dd><dt>Taped by</dt><dd>Unknown</dd><dt>Transfer</dd><dd>Master reel &gt; DAT &gt; FLAC</dd><dt>Length</dt><dd>2:12:40</dd></dl>
+      <div class="row"><button class="key primary">▶ Set I</button><button class="key">Set II</button><button class="key ghost">Full show</button></div>
+    </article>
+    <section class="station" aria-label="Shared radio">
+      <span class="sticker live">On air</span>
+      <h2>5/8/77 · Barton Hall</h2>
+      <p>Set II is playing for everyone right now. Tune in and you'll land on the same moment.</p>
+      <button class="key dark" style="width:100%;border-color:var(--ink-faint)">Tune in ↗</button>
+    </section>
+  </aside>
+</main>
+</body>
+</html>

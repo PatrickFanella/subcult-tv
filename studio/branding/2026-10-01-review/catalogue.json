@@ -1,0 +1,296 @@
+[
+  {
+    "id": "clpr",
+    "brand": "CLPR",
+    "variant": "A",
+    "name": "Tally / Ultraviolet",
+    "bg": "#0e0c13",
+    "fg": "#eeedf7",
+    "accent": "#8c5cff",
+    "secondary": "#3ddc97",
+    "display": "Barlow Condensed",
+    "body": "Barlow",
+    "headline": [
+      "The clip.",
+      "The moment."
+    ],
+    "tag": "CLIP DISCOVERY + CURATION",
+    "description": "Condensed display type, ultraviolet markers and the existing outlined wordmark.",
+    "mode": "clpr",
+    "url": "clpr.tv",
+    "source": "Live site + current design system"
+  },
+  {
+    "id": "patchwork",
+    "brand": "Patchwork",
+    "variant": "A",
+    "name": "Neighbourhood fabric",
+    "bg": "#f2efe7",
+    "fg": "#172019",
+    "accent": "#12664f",
+    "secondary": "#e85d3f",
+    "display": "Fraunces",
+    "body": "Public Sans",
+    "headline": [
+      "A little help,",
+      "from a friend."
+    ],
+    "tag": "MUTUAL AID, BLOCK BY BLOCK",
+    "description": "Warm paper, stitched corners, Fraunces and Public Sans from the current site.",
+    "mode": "patchwork",
+    "url": "patchwork.subcult.tv",
+    "source": "Live site tokens"
+  },
+  {
+    "id": "hasanara",
+    "brand": "HasanAra",
+    "variant": "A",
+    "name": "Broadcast archive",
+    "bg": "#0f0f0f",
+    "fg": "#eeeae1",
+    "accent": "#ff3333",
+    "secondary": "#ff6633",
+    "display": "Newsreader",
+    "body": "Inter Tight",
+    "headline": [
+      "Find the passage.",
+      "Keep the context."
+    ],
+    "tag": "PIKER BROADCASTING SERVICE",
+    "description": "The live red-and-paper theme, Newsreader headlines and current PBS mark.",
+    "mode": "hasanara",
+    "url": "hasanara.tv",
+    "source": "Live site tokens and logo"
+  },
+  {
+    "id": "subcult-os",
+    "brand": "Subcult OS",
+    "variant": "A",
+    "name": "The event ledger",
+    "bg": "#09090b",
+    "fg": "#fafafa",
+    "accent": "#fbbf24",
+    "secondary": "#22d3ee",
+    "display": "Georgia",
+    "body": "JetBrains Mono",
+    "headline": [
+      "From the plan",
+      "to the last ticket."
+    ],
+    "tag": "PLAN / COORDINATE / RUN DOOR / SETTLE / ARCHIVE",
+    "description": "Serif-led event operations, amber and cyan from the current web source.",
+    "mode": "os",
+    "url": null,
+    "source": "Web source styles; no live destination verified"
+  },
+  {
+    "id": "undertow",
+    "brand": "Undertow",
+    "variant": "A",
+    "name": "Glitch / Sound into motion",
+    "bg": "#0f0c1c",
+    "fg": "#f7f3ff",
+    "accent": "#ff9fe0",
+    "secondary": "#9cecff",
+    "display": "Liberation Mono",
+    "body": "Public Sans",
+    "headline": [
+      "SOUND",
+      "INTO MOTION."
+    ],
+    "tag": "MUSIC VISUALS / LYRICS / LOCAL EXPORT",
+    "description": "Square controls, hard shadows, pink/cyan offsets and the existing spectrum favicon.",
+    "mode": "undertow",
+    "url": "undertow.subcult.tv",
+    "source": "Live editor theme and favicon"
+  },
+  {
+    "id": "patrick-a",
+    "brand": "Patrick__eff",
+    "variant": "A",
+    "name": "Signal / current banner",
+    "bg": "#161616",
+    "fg": "#f3f0ed",
+    "accent": "#8a00c7",
+    "secondary": "#66ff00",
+    "display": "Oswald",
+    "body": "Space Grotesk",
+    "headline": [
+      "Software. Sound.",
+      "Independent culture."
+    ],
+    "tag": "PATRICK__EFF",
+    "description": "Builds on your latest purple/lime banner and waveform. A sharper condensed wordmark.",
+    "mode": "patrick-wave",
+    "url": "patrickfanella.co",
+    "source": "Latest personal banner; proposed system"
+  },
+  {
+    "id": "patrick-b",
+    "brand": "Patrick__eff",
+    "variant": "B",
+    "name": "Side A / studio notes",
+    "bg": "#161616",
+    "fg": "#f3f0ed",
+    "accent": "#f9735b",
+    "secondary": "#aaa6b1",
+    "display": "Space Grotesk",
+    "body": "Space Grotesk",
+    "headline": [
+      "Making things.",
+      "Making noise."
+    ],
+    "tag": "PATRICK FANELLA / PATRICK__EFF",
+    "description": "Coral, record-label geometry and plain spoken studio notes. Engineering and music share the page.",
+    "mode": "patrick-record",
+    "url": "patrickfanella.co",
+    "source": "Earlier coral identity; proposed system"
+  },
+  {
+    "id": "patrick-c",
+    "brand": "Patrick__eff",
+    "variant": "C",
+    "name": "Field notes / personal editorial",
+    "bg": "#eee9df",
+    "fg": "#211b27",
+    "accent": "#6335a1",
+    "secondary": "#bbb19e",
+    "display": "Libre Baskerville",
+    "body": "Public Sans",
+    "headline": [
+      "Notes from",
+      "the workbench."
+    ],
+    "tag": "PATRICK FANELLA",
+    "description": "A warmer personal identity: your existing photo, serif headings and small purple annotations.",
+    "mode": "patrick-paper",
+    "url": "patrickfanella.co",
+    "source": "Existing personal photograph; proposed system"
+  },
+  {
+    "id": "rekolekt-a",
+    "brand": "Rekolekt",
+    "variant": "A",
+    "name": "Index / original concept",
+    "bg": "#16201b",
+    "fg": "#f2eee5",
+    "accent": "#b8df72",
+    "secondary": "#8d9e8a",
+    "display": "Space Grotesk",
+    "body": "Public Sans",
+    "headline": [
+      "A recording.",
+      "An archive."
+    ],
+    "tag": "REKOLEKT BY SUBCULT",
+    "description": "Retains the bracketed waveform and index-green palette from the working concept.",
+    "mode": "rekolekt-index",
+    "url": null,
+    "source": "Existing proposed Rekolekt concept"
+  },
+  {
+    "id": "rekolekt-b",
+    "brand": "Rekolekt",
+    "variant": "B",
+    "name": "Folio / the reading archive",
+    "bg": "#f2eee5",
+    "fg": "#28261e",
+    "accent": "#59603a",
+    "secondary": "#ab633c",
+    "display": "Newsreader",
+    "body": "Public Sans",
+    "headline": [
+      "Worth finding.",
+      "Worth keeping."
+    ],
+    "tag": "REKOLEKT BY SUBCULT",
+    "description": "An archive as a reading room: paper, olive index tabs and a new folio mark.",
+    "mode": "rekolekt-folio",
+    "url": null,
+    "source": "Alternative proposed system"
+  },
+  {
+    "id": "rekolekt-c",
+    "brand": "Rekolekt",
+    "variant": "C",
+    "name": "Passage / source bracket",
+    "bg": "#101b29",
+    "fg": "#ecf1f4",
+    "accent": "#91c9ef",
+    "secondary": "#a8b7c6",
+    "display": "Space Grotesk",
+    "body": "JetBrains Mono",
+    "headline": [
+      "Keep the source",
+      "in the story."
+    ],
+    "tag": "REKOLEKT BY SUBCULT",
+    "description": "A precise media archive: blue passage brackets, transcript lines and large restrained type.",
+    "mode": "rekolekt-passage",
+    "url": null,
+    "source": "Alternative proposed system"
+  },
+  {
+    "id": "subcult-a",
+    "brand": "SUBCULT",
+    "variant": "A",
+    "name": "Signal / current site",
+    "bg": "#0a0a0a",
+    "fg": "#f0ece4",
+    "accent": "#8b5cf6",
+    "secondary": "#00ff88",
+    "display": "Oswald",
+    "body": "Libre Baskerville",
+    "headline": [
+      "Tools for the culture",
+      "we build together."
+    ],
+    "tag": "SUBCULT.TV",
+    "description": "Formalizes the current site: black, purple, Oswald and editorial serif text.",
+    "mode": "subcult-signal",
+    "url": "subcult.tv",
+    "source": "Live site palette and typography; proposed system"
+  },
+  {
+    "id": "subcult-b",
+    "brand": "SUBCULT",
+    "variant": "B",
+    "name": "Collective / open catalogue",
+    "bg": "#f0ece4",
+    "fg": "#17131d",
+    "accent": "#7042bd",
+    "secondary": "#a69a83",
+    "display": "Libre Baskerville",
+    "body": "Public Sans",
+    "headline": [
+      "Independent tools.",
+      "A shared culture."
+    ],
+    "tag": "SUBCULT / SOFTWARE & CULTURE",
+    "description": "A paper-based studio catalogue with numbered products and an interlocking collective mark.",
+    "mode": "subcult-catalogue",
+    "url": "subcult.tv",
+    "source": "Alternative proposed system anchored in site palette"
+  },
+  {
+    "id": "subcult-c",
+    "brand": "SUBCULT",
+    "variant": "C",
+    "name": "Culture / poster press",
+    "bg": "#8b5cf6",
+    "fg": "#100b19",
+    "accent": "#00ff88",
+    "secondary": "#f0ece4",
+    "display": "Oswald",
+    "body": "Space Grotesk",
+    "headline": [
+      "BUILD",
+      "TOGETHER."
+    ],
+    "tag": "SUBCULT.TV",
+    "description": "A louder poster system: condensed black type, purple fields and acid-green registrations.",
+    "mode": "subcult-poster",
+    "url": "subcult.tv",
+    "source": "Alternative proposed system anchored in site palette"
+  }
+]

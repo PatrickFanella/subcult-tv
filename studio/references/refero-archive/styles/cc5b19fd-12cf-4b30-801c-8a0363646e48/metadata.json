@@ -1,0 +1,29 @@
+{
+  "styleId": "cc5b19fd-12cf-4b30-801c-8a0363646e48",
+  "sourceUrl": "https://styles.refero.design/style/cc5b19fd-12cf-4b30-801c-8a0363646e48",
+  "fetchedAt": "2026-10-02T21:39:18.064223+00:00",
+  "extractedAt": "2026-10-02T21:39:18.138520+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vucko — Style Reference",
+  "htmlSha256": "21c7d59b7792b5231071321767292dcb1e90fa305a0f82077cbe1249cd6728c6",
+  "cache": ".cache/cc5b19fd-12cf-4b30-801c-8a0363646e48.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "30b9df8b80da5e21a1de3eb3c658c2497e6a49d26d5c1c1c8f1c6f43815a5fcd",
+      "bytes": 18374,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8a8cf651-a7bd-4378-9ae8-ea79432013ad.jpg",
+    "fetchedAt": "2026-10-02T21:39:20.045469+00:00",
+    "sha256": "1b95b23f463eb5691163db4cd356d91d1550116245a6f50db90bdadb12c03e8e",
+    "bytes": 80205,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

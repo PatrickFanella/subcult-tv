@@ -1,0 +1,29 @@
+{
+  "styleId": "c7fe6b78-9ce3-4d69-a3f0-b8310c779e7a",
+  "sourceUrl": "https://styles.refero.design/style/c7fe6b78-9ce3-4d69-a3f0-b8310c779e7a",
+  "fetchedAt": "2026-10-02T21:49:17.752682+00:00",
+  "extractedAt": "2026-10-02T21:49:17.816298+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Goodnotes — Style Reference",
+  "htmlSha256": "12e82b7b6eb983c43bccbcac99394aa4eceb010cdb56c0f8744db40136c8ab07",
+  "cache": ".cache/c7fe6b78-9ce3-4d69-a3f0-b8310c779e7a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6bbf02d53b73f005b07102f0572dcfdb3d075b216d916f5adf486b71b99721a4",
+      "bytes": 20421,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/338c12c9-e158-4217-9783-9022b9295fed.jpg",
+    "fetchedAt": "2026-10-02T21:49:19.584579+00:00",
+    "sha256": "cc9b354018741c0bea6bc71ada92928a44ac45e050c26318d1f63c8ebb546db0",
+    "bytes": 102085,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

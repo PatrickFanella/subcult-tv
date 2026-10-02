@@ -1,0 +1,88 @@
+{
+  "site": "hey-nesh",
+  "source": "https://heynesh.com/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:16:00.864Z",
+      "url": "https://heynesh.com/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "scrolled",
+      "observation": "evidence/scrolled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:22:46.157Z",
+      "url": "https://heynesh.com/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:22:40.213Z",
+      "url": "https://heynesh.com/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "9b3d7021ef5c974343b176b40bf267ccf036fb80bdd86ce650fbad4183a72e2f",
+      "bytes": 5517
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "3718d3cacb9dcd921ab3d6a676816249b5a985dad85308c460e4fc7f55956c7f",
+      "bytes": 1293
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "9a0bde186b2eb8a6d5c49036adcc39ff12d62311e629ec8c8c9613744bfff109",
+      "bytes": 47992
+    },
+    {
+      "path": "evidence/scrolled.json",
+      "sha256": "925227c6025d1fd312d00cff783e975ded2d14638dc3be2b7b236935595b461c",
+      "bytes": 47244
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "0ff1b08ed9b5f80011f228d4e92f811c5b4848a3fde1a7ce01a79078c15c7f6a",
+      "bytes": 47303
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "8e401977e55caaf0cd9cba8a8648a16edc779ef71cbfba134820701a26cbe73e",
+      "bytes": 244483
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "4d1033215e040dbeaf9ff378303d9433fd44ee32d335b4becd7c3888650b2f57",
+      "bytes": 290
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "e711ccda6cfeba7a16666b9444b2cb91f7bce2a0aee03642118abde638da71a4",
+      "bytes": 10193
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "b13069df-7475-4b51-a734-621e3da75f8b",
+  "sourceUrl": "https://styles.refero.design/style/b13069df-7475-4b51-a734-621e3da75f8b",
+  "fetchedAt": "2026-10-02T21:51:50.475498+00:00",
+  "extractedAt": "2026-10-02T21:51:50.519382+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Afterglo — Style Reference",
+  "htmlSha256": "bac318809d49d3142dc5777ea71ea504112a4ad2c5659c9a2ff5d8e66b76c2ba",
+  "cache": ".cache/b13069df-7475-4b51-a734-621e3da75f8b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "11c32bc8104cb567a893e0dd9445c5f994928259027328e8b551d2665aaaaee4",
+      "bytes": 19904,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f0af2b54-1b85-4e50-b1b8-48afd923cca5.jpg",
+    "fetchedAt": "2026-10-02T21:51:52.249328+00:00",
+    "sha256": "2ae71c49124ae08de682a646b77e22a9358264aec2bd0d503cca78a43edba268",
+    "bytes": 120980,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

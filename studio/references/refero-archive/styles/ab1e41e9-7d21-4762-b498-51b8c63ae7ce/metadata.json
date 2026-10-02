@@ -1,0 +1,29 @@
+{
+  "styleId": "ab1e41e9-7d21-4762-b498-51b8c63ae7ce",
+  "sourceUrl": "https://styles.refero.design/style/ab1e41e9-7d21-4762-b498-51b8c63ae7ce",
+  "fetchedAt": "2026-10-02T21:51:17.534235+00:00",
+  "extractedAt": "2026-10-02T21:51:17.684907+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Jitter — Style Reference",
+  "htmlSha256": "7cf59c7251e096a6e137e2dd549f39b30e40d50a209b4e9df374ed1f728de5b0",
+  "cache": ".cache/ab1e41e9-7d21-4762-b498-51b8c63ae7ce.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "79e1329e92df962101720ec29c80ca648c8247162847240bcdd6f0a759073d05",
+      "bytes": 23306,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f366a465-2cf4-41d8-980e-79027db10953.jpg",
+    "fetchedAt": "2026-10-02T21:51:19.486877+00:00",
+    "sha256": "e519715d2d6f6bea71c6d67bccf5cf70d9c513dc96af12d8514b6c9125961977",
+    "bytes": 59787,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

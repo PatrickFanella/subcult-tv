@@ -1,0 +1,29 @@
+{
+  "styleId": "9aad4722-413d-4b32-bda7-6f94bbd9938c",
+  "sourceUrl": "https://styles.refero.design/style/9aad4722-413d-4b32-bda7-6f94bbd9938c",
+  "fetchedAt": "2026-10-02T21:43:49.569766+00:00",
+  "extractedAt": "2026-10-02T21:43:49.625144+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "clau.as.kee — Style Reference",
+  "htmlSha256": "fa502aaa80ab93e0a528c163793bb0e45f0f1ddb7a0965cd91885bc8ee7c2302",
+  "cache": ".cache/9aad4722-413d-4b32-bda7-6f94bbd9938c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ecf3dcee90a6d63543be5f8a0a2a314fdaf63b2ab6c26ab3f8cd358a8bf226ea",
+      "bytes": 18709,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/709332cb-8716-4357-8584-645175e78494.jpg",
+    "fetchedAt": "2026-10-02T21:43:51.548152+00:00",
+    "sha256": "474886721494f9129f3c96965d5d429a5cd12a757adfeaff6f86f6f60e8fd6d4",
+    "bytes": 79136,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

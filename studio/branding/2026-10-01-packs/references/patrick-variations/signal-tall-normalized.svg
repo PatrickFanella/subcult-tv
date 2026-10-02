@@ -1,0 +1,44 @@
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns2="http://www.inkscape.org/namespaces/inkscape" xmlns:ns4="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="512" height="512" viewBox="0 0 160 160" version="1.1" id="svg1" ns1:docname="mark-primary-editable.svg" ns2:version="1.4.4 (dcaf3e7d9e, 2026-05-05)">
+  <ns0:defs id="defs1" />
+  <ns0:title id="title1">Patrick__eff — Signal in brackets — editable master</ns0:title>
+  <ns0:desc id="desc1">Option 1. Transparent background. Separate editable layers for angle brackets, slash, waveform bars and lime dot.</ns0:desc>
+  <ns1:namedview id="namedview" pagecolor="#161616" ns2:pageopacity="1" ns2:current-layer="right-bracket" bordercolor="#000000" borderopacity="0.25" ns2:showpageshadow="2" ns2:pagecheckerboard="0" ns2:deskcolor="#d1d1d1" ns2:zoom="1" ns2:cx="581.5" ns2:cy="145" ns2:window-width="2449" ns2:window-height="1392" ns2:window-x="0" ns2:window-y="0" ns2:window-maximized="1">
+    <ns1:guide position="185.44446,175.73883" orientation="0,512" id="guide1" ns2:locked="false" />
+    <ns1:guide position="160,160" orientation="512,0" id="guide2" ns2:locked="false" />
+    <ns1:guide position="180.65438,-19.741982" orientation="0,-512" id="guide3" ns2:locked="false" />
+    <ns1:guide position="0,0" orientation="-512,0" id="guide4" ns2:locked="false" />
+  </ns1:namedview>
+  <ns0:g id="left-bracket" ns2:groupmode="layer" ns2:label="01 — Left bracket" stroke-linecap="square" stroke-linejoin="miter" />
+  <ns0:g id="status-dot" ns2:groupmode="layer" ns2:label="03 — Lime dot" stroke-linecap="square" stroke-linejoin="miter" />
+  <ns0:g id="slash" ns2:groupmode="layer" ns2:label="04 — Slash" stroke-linecap="square" stroke-linejoin="miter" />
+  <ns0:g id="right-bracket" ns2:groupmode="layer" ns2:label="05 — Right bracket" stroke-linecap="square" stroke-linejoin="miter">
+    <ns0:g id="g4" transform="matrix(1.1720764,0,0,2.1861278,-4.6230933,-94.704921)" style="display:inline">
+      <ns0:path id="left-bracket-path" d="M 27,47 7,80 27,113" fill="none" stroke="#f3f0ed" stroke-width="5" />
+      <ns0:g id="g1" style="stroke-linecap:square;stroke-linejoin:miter" transform="translate(-11.923077,-3)">
+        <ns0:path d="m 42,78.8 v 8.4" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-01" />
+        <ns0:path d="M 46.538462,66.008271 V 99.991729" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-02" />
+        <ns0:path d="M 51.076923,54.738569 V 111.26143" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-03" />
+        <ns0:path d="M 55.615385,50.728822 V 115.27118" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-04" />
+        <ns0:path d="M 60.153846,56.845267 V 109.15473" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-05" />
+        <ns0:path d="M 64.692308,71.44958 V 94.55042" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-06" />
+        <ns0:path d="M 69.230769,68.615511 V 97.384489" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-07" />
+        <ns0:path d="M 73.769231,55.081266 V 110.91873" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-08" />
+        <ns0:path d="M 78.307692,50.616915 V 115.38309" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-09" />
+        <ns0:path d="M 82.846154,56.127519 V 109.87248" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-10" />
+        <ns0:path d="M 87.384615,68.129147 V 97.870853" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-11" />
+        <ns0:path d="m 91.923077,76.92425 v 12.1515" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-12" />
+        <ns0:path d="M 96.461538,69.188313 V 96.811687" stroke="#8a00c7" stroke-width="2" fill="none" id="wave-bar-13" />
+      </ns0:g>
+      <ns0:circle id="dot" cx="96.064514" cy="56.796329" r="6" fill="#66ff00" />
+      <ns0:path id="slash-path" d="M 109.575,53.938231 93.206416,105.20974" fill="none" stroke="#f3f0ed" stroke-width="3.60614" style="stroke-width:5;stroke-dasharray:none" />
+      <ns0:path id="right-bracket-path" d="m 115.31727,46.863601 22,33 -22,32.999989" fill="none" stroke="#f3f0ed" stroke-width="5" />
+    </ns0:g>
+  </ns0:g>
+  <ns0:metadata id="metadata5">
+    <rdf:RDF>
+      <ns4:Work rdf:about="">
+        <dc:title>Patrick__eff — Signal in brackets — editable master</dc:title>
+      </ns4:Work>
+    </rdf:RDF>
+  </ns0:metadata>
+</ns0:svg>

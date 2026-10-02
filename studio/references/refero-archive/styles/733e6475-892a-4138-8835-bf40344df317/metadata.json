@@ -1,0 +1,29 @@
+{
+  "styleId": "733e6475-892a-4138-8835-bf40344df317",
+  "sourceUrl": "https://styles.refero.design/style/733e6475-892a-4138-8835-bf40344df317",
+  "fetchedAt": "2026-10-02T21:31:13.969396+00:00",
+  "extractedAt": "2026-10-02T21:31:13.990769+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fey — Style Reference",
+  "htmlSha256": "fa83439d48d8c1d5549d98a2ef29bc7c1bd15a8e371105697132ed194bfb59c9",
+  "cache": ".cache/733e6475-892a-4138-8835-bf40344df317.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7aa64983d537b942edc9542eeb6ba280fe73c279fbb9eea63cef3573abc066fb",
+      "bytes": 10318,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3675aa07-a76e-448d-bec2-a0521000df0c.jpg",
+    "fetchedAt": "2026-10-02T21:31:15.982966+00:00",
+    "sha256": "2fbe89bdab7293bcd00187a063db5ed1c80eb08af151b165abf6d59fed742de7",
+    "bytes": 54900,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

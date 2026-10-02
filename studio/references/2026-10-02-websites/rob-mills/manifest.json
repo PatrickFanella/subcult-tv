@@ -1,0 +1,70 @@
+{
+  "site": "rob-mills",
+  "source": "https://www.robmills.com.au/",
+  "inspectionDate": "2026-10-02",
+  "evidence": [
+    {
+      "state": "observation",
+      "observation": "evidence/observation.json",
+      "image": "images/observation.png",
+      "capturedAt": "2026-10-02T20:18:10.676Z",
+      "url": "https://www.robmills.com.au/",
+      "viewport": {
+        "dpr": 0.800000011920929,
+        "height": 876,
+        "width": 1402
+      },
+      "imageMeaning": "Initial state; may show intro or loader"
+    },
+    {
+      "state": "settled",
+      "observation": "evidence/settled.json",
+      "image": null,
+      "capturedAt": "2026-10-02T20:26:39.212Z",
+      "url": "https://www.robmills.com.au/",
+      "viewport": {
+        "dpr": 2,
+        "height": 800,
+        "width": 1280
+      },
+      "imageMeaning": "Later state; read guide for visibility limits"
+    }
+  ],
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "6ed5583f6380a6fdc6b7a4ac8cbca298c40a083fa73aa47ab01f01d1855e307d",
+      "bytes": 5097
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "f8acc5432e3773892673f45bd9cc2b672a28a09dbdbcd1b3dbdf25176e6dce02",
+      "bytes": 1169
+    },
+    {
+      "path": "evidence/observation.json",
+      "sha256": "2516989e1f3132b3f1d90285f065ef80e0d564b8b3aa6a96f6902accb59b5d2e",
+      "bytes": 31297
+    },
+    {
+      "path": "evidence/settled.json",
+      "sha256": "327de5e9e6e2bef875b699100fdf44f7d8e2ff6b1ae44677951146b776a5c549",
+      "bytes": 30869
+    },
+    {
+      "path": "images/observation.png",
+      "sha256": "67bc61d480efa65a1394482a4c48cdbe2d832f8a5451269c33514109ec583114",
+      "bytes": 1042601
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "41a7ad9e8a17412046f1b7e234fc88ba887690297904a481b89616d18d9ab84a",
+      "bytes": 289
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "c0d4a115ea7e27cde45376e0e84da9f27aabeb5e2d008f5edcfe9d962b0ac57d",
+      "bytes": 9553
+    }
+  ]
+}

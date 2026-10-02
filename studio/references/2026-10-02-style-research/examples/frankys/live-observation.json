@@ -1,0 +1,172 @@
+{
+  "canvas": 1,
+  "capturedAt": "2026-10-02T20:58:20.566Z",
+  "samples": [
+    {
+      "background": "rgb(243, 229, 223)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BODY",
+      "text": "We ship world wide!\n\nFrankys\nBag 〔0〕\nAll Day."
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "H1",
+      "text": "Frankys"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "48px",
+      "tag": "A",
+      "text": "Frankys"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "Bag 〔0〕"
+    },
+    {
+      "background": "rgb(243, 229, 223)",
+      "border": "1px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "20px",
+      "tag": "H2",
+      "text": "All Day. Every Day."
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "12px",
+      "tag": "BUTTON",
+      "text": "Try in 〔AR〕"
+    },
+    {
+      "background": "rgb(0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "12px",
+      "tag": "BUTTON",
+      "text": "Buy 〔€80〕"
+    },
+    {
+      "background": "rgb(0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "12px",
+      "tag": "A",
+      "text": "Privacy Policy"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "12px",
+      "tag": "A",
+      "text": "Terms & Conditions"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "Why wool"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "About us"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "A",
+      "text": "Shipping"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "frankysDailySlab, \"frankysDailySlab Fallback\"",
+      "shadow": "none",
+      "size": "16px",
+      "tag": "BUTTON",
+      "text": "Bored?"
+    }
+  ],
+  "title": "Frankys — Merino Wool Hats. All Day. Every Day.",
+  "url": "https://www.frankys-hats.com/",
+  "viewport": {
+    "height": 800,
+    "width": 1280
+  }
+}

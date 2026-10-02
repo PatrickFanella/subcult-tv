@@ -1,0 +1,29 @@
+{
+  "styleId": "e44ce3f4-87cd-47bb-8611-a176920c9ac3",
+  "sourceUrl": "https://styles.refero.design/style/e44ce3f4-87cd-47bb-8611-a176920c9ac3",
+  "fetchedAt": "2026-10-02T21:28:58.162726+00:00",
+  "extractedAt": "2026-10-02T21:28:58.198194+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Co2 — Style Reference",
+  "htmlSha256": "f89f54ca331344609af053254ffc01dc6e54aee48be88892332abc3a7957e328",
+  "cache": ".cache/e44ce3f4-87cd-47bb-8611-a176920c9ac3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e7d01fbc1dbf2a14cc0bf342a2647cc57d6a230e9e5df1a3bb3644dc67169124",
+      "bytes": 22345,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/182f4bb5-30c9-4cee-941e-0419459d3413.jpg",
+    "fetchedAt": "2026-10-02T21:29:00.126994+00:00",
+    "sha256": "dcf32c406b66fff39cd616f9c8316b483d56b02c3402f3b4017e011ac511db68",
+    "bytes": 322601,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

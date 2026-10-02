@@ -1,0 +1,29 @@
+{
+  "styleId": "efcb73cb-b84a-4ae7-9a2b-e1116f79f130",
+  "sourceUrl": "https://styles.refero.design/style/efcb73cb-b84a-4ae7-9a2b-e1116f79f130",
+  "fetchedAt": "2026-10-02T21:31:58.038037+00:00",
+  "extractedAt": "2026-10-02T21:31:58.063314+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ClickUp™ — Style Reference",
+  "htmlSha256": "132c52b9b6f876f88dedd4161ad1f68158af93c20dadd44b808c8e5fac748fc7",
+  "cache": ".cache/efcb73cb-b84a-4ae7-9a2b-e1116f79f130.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "49ee2026f8c2fa33ead29bfc7cdecdd640472f7df0a35feeabcde87e37b821ca",
+      "bytes": 30391,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/380f9cf0-e88c-4ec2-b400-9554aa8f87f2.jpg",
+    "fetchedAt": "2026-10-02T21:32:00.023685+00:00",
+    "sha256": "6288c45003ce616da15aa9fb8f333fe73365c0e85b2b079ef38fedd5a842ae99",
+    "bytes": 90706,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

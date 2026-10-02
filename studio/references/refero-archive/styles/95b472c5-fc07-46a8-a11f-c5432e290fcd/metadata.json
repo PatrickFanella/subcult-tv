@@ -1,0 +1,29 @@
+{
+  "styleId": "95b472c5-fc07-46a8-a11f-c5432e290fcd",
+  "sourceUrl": "https://styles.refero.design/style/95b472c5-fc07-46a8-a11f-c5432e290fcd",
+  "fetchedAt": "2026-10-02T21:40:06.018203+00:00",
+  "extractedAt": "2026-10-02T21:40:06.051855+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Duolingo — Style Reference",
+  "htmlSha256": "c41628377a02227864997a5fb5b6605f320e0a29d06eaca6df3875820002a823",
+  "cache": ".cache/95b472c5-fc07-46a8-a11f-c5432e290fcd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e6beff03c3a49be4400d029acd08a36534246cd5c1f8a3431d6f110d972b66d7",
+      "bytes": 19129,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8c4b74a1-cc93-44e3-b5cb-52b1038a687e.jpg",
+    "fetchedAt": "2026-10-02T21:40:08.022638+00:00",
+    "sha256": "fa9b314bdb0c85cd7d18d9d715d353ff78afa3ce9a215c241f01d3b6a6a77950",
+    "bytes": 54732,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

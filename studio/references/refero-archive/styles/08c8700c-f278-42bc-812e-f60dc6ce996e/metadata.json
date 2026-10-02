@@ -1,0 +1,29 @@
+{
+  "styleId": "08c8700c-f278-42bc-812e-f60dc6ce996e",
+  "sourceUrl": "https://styles.refero.design/style/08c8700c-f278-42bc-812e-f60dc6ce996e",
+  "fetchedAt": "2026-10-02T21:35:50.010052+00:00",
+  "extractedAt": "2026-10-02T21:35:50.044074+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Attio — Style Reference",
+  "htmlSha256": "3c8dfab345930bd0aa2cbc7d3c159508f2ef85887abd8ea184c4ea8808677739",
+  "cache": ".cache/08c8700c-f278-42bc-812e-f60dc6ce996e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cafed27b6bf65f11b63a9135140eb6bc251cc3725e85ae8f7992d1259fb453a6",
+      "bytes": 25055,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fc7852fd-b4c7-4423-a540-3146397b68ac.jpg",
+    "fetchedAt": "2026-10-02T21:35:51.984734+00:00",
+    "sha256": "c54b4b622914eff4b37945940aec34f43705ec6607f13a4462950361b8916ddd",
+    "bytes": 66158,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "398a603a-9ecd-47b2-b25c-26456a0383d0",
+  "sourceUrl": "https://styles.refero.design/style/398a603a-9ecd-47b2-b25c-26456a0383d0",
+  "fetchedAt": "2026-10-02T21:28:34.312064+00:00",
+  "extractedAt": "2026-10-02T21:28:34.360698+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Beings — Style Reference",
+  "htmlSha256": "09ade2043b17793fd42719a39f232e60551ed3a924404383d71fb91bfbb9ceec",
+  "cache": ".cache/398a603a-9ecd-47b2-b25c-26456a0383d0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8a900727550e8aaead5eb361a7b74983d7b0d1b1c70cf37fab55e53773e2d1df",
+      "bytes": 19102,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/08f7ca87-3a80-4dc6-a751-45ea318d38bc.jpg",
+    "fetchedAt": "2026-10-02T21:28:35.935807+00:00",
+    "sha256": "ae8b64c364d92326e2dc512884e00fb1f75e016b9cf5839bb9f95e198b3263c6",
+    "bytes": 47490,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}
