@@ -20,7 +20,7 @@ Set `STUDIO_ROOT` for the API, or add `docker-compose.studio.yml` to the existin
 
 `STUDIO_STATE_ROOT` points to a read-only directory containing the runner's `latest.json`. The optional `docker-compose.studio-status.yml` mounts it using `STUDIO_RECEIPT_ROOT`. A copied receipt is enough; the full runner state is unnecessary. The API returns only mode, status, week, run ID, draft count and timestamps. Provider traces, error details and source paths are omitted.
 
-The UI labels missing records and receipts older than 24 hours. A receipt records a past run; it does not prove a timer is currently running or a post was approved or delivered. Existing jobs still run from their original paths. This integration does not migrate or activate them.
+The UI labels missing records and receipts older than 24 hours. A receipt records a past run; it does not prove a timer is currently running or a post was approved or delivered. The preparation jobs now run from Studio through its documented source cutover. This site integration does not change their paths or schedules, and it does not activate jobs.
 
 ## Local review
 
@@ -30,4 +30,4 @@ Verification covers the frontend build/lint/tests, Go tests, and a real local lo
 
 ## Rollback
 
-Revert the site implementation and selected public assets together. Remove the optional Studio Compose overlays/environment entries to disconnect the private library. Existing social services and source paths require no rollback because this implementation does not change them. Preserve the previous bundle until the replacement has been verified.
+Revert the site implementation and selected public assets together. Remove the optional Studio Compose overlays/environment entries to disconnect the private library. Existing social services and the documented Studio cutover require no rollback because this site implementation does not change them. Preserve the previous bundle until the replacement has been verified.
