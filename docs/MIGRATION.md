@@ -13,3 +13,7 @@ The manifest records every imported file’s original SHA-256 hash. The only imp
 5. Replace vault working copies with maintained index notes only after all consumers and links are verified.
 
 No active job, live site, social account or preview server was switched by this import. Existing Obsidian links are source content and have not been rewritten into website routes.
+
+## Admin integration implementation
+
+The companion `subcult-tv` implementation adds authenticated brand/media browsing and an optional read-only runner receipt view. `scripts/export_studio.py` supplies a bounded private bundle and copies an explicit SUBCULT mark/font selection to the public site with hashes. This completes the source implementation of item 3; production deployment and runtime migration remain pending. Items 1, 2, 4 and 5 still govern any future runner cutover.

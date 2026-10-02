@@ -11,3 +11,5 @@ automation/social-posting/config.json
 runtime/
 state/
 .cache/
+
+.companion/
