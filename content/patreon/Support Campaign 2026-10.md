@@ -2,10 +2,10 @@
 title: Support Campaign 2026-10
 type: work
 work-type: launch-plan
-status: active
-stage: draft
+status: reference
+stage: superseded
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 tags:
 - project/subcult
 - platform/patreon
@@ -22,6 +22,9 @@ links:
 ---
 
 # Support Campaign — October 2026
+
+> [!note] Offer superseded October 2, 2026
+> The owner requested no promised posting schedule, shared light rewards with private Discord access and occasional BTS/exclusive releases, and Supporter $5, Backer $10, Patron $25, Groceries $400 and Rent $1,500. Use the [support redesign](support-redesign-2026-10/README.md) for proposed current copy and site guidelines. The earlier offer and timeline below are retained as dated planning history; do not reuse their weekly/monthly promises or tier-retirement instructions. Patreon publication, website updates and Discord access verification remain pending. Existing tasks and timers were not changed.
 
 > [!abstract] Start support from zero: relaunch Patreon as the workshop behind the six public products, give people a free way to follow first, and send a monthly newsletter that turns a month of real work into one reason to support it.
 
