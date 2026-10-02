@@ -47,12 +47,20 @@ describe('smoke: app shell', () => {
     expect(screen.getByRole('navigation').textContent).toContain('SUBCULT');
   });
 
-  it('showcases all six products and connects HasanAra to its shared application', async () => {
+  it('showcases all seven products and connects HasanAra to its shared application', async () => {
     const user = userEvent.setup();
     renderApp('/');
     const showcase = await screen.findByRole('region', { name: 'The products' });
     const products = within(showcase);
-    for (const name of ['clpr', 'Patchwork', 'HasanAra', 'Rekolekt', 'Subcult OS', 'Undertow']) {
+    for (const name of [
+      'clpr',
+      'Patchwork',
+      'HasanAra',
+      'Rekolekt',
+      'Subcult OS',
+      'Undertow',
+      'Kork',
+    ]) {
       expect(products.getByRole('heading', { name })).toBeInTheDocument();
     }
     expect(products.getByRole('link', { name: 'Explore clpr ↗' })).toHaveAttribute(
@@ -80,13 +88,37 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('redirects the old catalog to the six-product directory', async () => {
+  it('opens Kork from its showcase with the live service and repository', async () => {
+    const user = userEvent.setup();
+    renderApp('/');
+    const showcase = within(await screen.findByRole('region', { name: 'The products' }));
+    expect(showcase.getByRole('link', { name: 'Explore Kork ↗' })).toHaveAttribute(
+      'href',
+      'https://kork.subcult.tv',
+    );
+    await user.click(showcase.getByRole('link', { name: 'About Kork' }));
+    expect(await screen.findByRole('heading', { name: 'Kork', level: 1 })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Open Kork ↗' })).toHaveAttribute(
+      'href',
+      'https://kork.subcult.tv',
+    );
+    expect(screen.getByRole('link', { name: /View Repository/i })).toHaveAttribute(
+      'href',
+      'https://git.subcult.tv/subculture-collective/kork',
+    );
+    expect(document.querySelector('meta[property="og:image"]')).toHaveAttribute(
+      'content',
+      'https://subcult.tv/og/kork.jpg',
+    );
+  });
+
+  it('redirects the old catalog to the seven-product directory', async () => {
     renderApp('/projects');
     await screen.findByRole('heading', { name: 'Products', level: 1 });
     const main = within(screen.getByRole('main'));
     const teasers = within(main.getByRole('region', { name: 'In development' }));
     const articles = main.getAllByRole('article');
-    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(6);
+    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(7);
     expect(teasers.getAllByRole('article')).toHaveLength(2);
     expect(main.getByRole('link', { name: 'Explore Rekolekt' })).toHaveAttribute(
       'href',
@@ -153,6 +185,7 @@ describe('smoke: app shell', () => {
     ['rekolekt', 'Rekolekt'],
     ['subcult-os', 'Subcult OS'],
     ['undertow', 'Undertow'],
+    ['kork', 'Kork'],
   ])('renders the %s landing page with product details and working FAQs', async (slug, name) => {
     const user = userEvent.setup();
     renderApp(`/products/${slug}`);
@@ -207,6 +240,7 @@ describe('smoke: app shell', () => {
       ['Rekolekt', 'rekolekt'],
       ['Subcult OS', 'subcult-os'],
       ['Undertow', 'undertow'],
+      ['Kork', 'kork'],
     ]) {
       expect(nav.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
       expect(footer.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);

@@ -64,6 +64,14 @@ const selections = [
       'Layer a Milkdrop visualizer, spectrum, artwork, timed lyrics, and particles. Lay it out once for landscape, portrait, and square, then export MP4s in your browser.',
     highlights: ['Start from a template', 'Sync the lyrics', 'Export in your browser'],
   },
+  {
+    slug: 'kork',
+    category: 'Link pages',
+    headline: 'Every link. One board.',
+    summary:
+      'Put your socials, tip jars, music and video players, QR codes, and contact card on one themed page. Payment buttons go straight to your own accounts, and Kork takes no cut.',
+    highlights: ['92 services', 'Ten themes', 'No trackers'],
+  },
 ] satisfies Array<Omit<ShowcaseProduct, 'project'> & { slug: string }>;
 
 export function getShowcaseProducts(): ShowcaseProduct[] {
