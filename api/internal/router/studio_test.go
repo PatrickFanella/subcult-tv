@@ -44,6 +44,14 @@ func TestStudioAccessAndContainment(t *testing.T) {
 			t.Fatalf("authorized %s: %d %s", path, response.Code, response.Body.String())
 		}
 	}
+	for _, path := range []string{"/api/v1/admin/studio/references", "/api/v1/admin/studio/references/facets", "/api/v1/admin/studio/references/test"} {
+		if response := request(path, false); response.Code != 401 {
+			t.Fatalf("anonymous references: %d", response.Code)
+		}
+		if response := request(path, true); response.Code != 503 {
+			t.Fatalf("missing reference DB: %d", response.Code)
+		}
+	}
 	if response := request("/api/v1/admin/studio/assets/"+strings.Repeat("b", 64), true); response.Code != 404 {
 		t.Fatal("unknown asset exposed")
 	}

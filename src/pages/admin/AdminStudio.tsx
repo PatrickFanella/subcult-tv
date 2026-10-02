@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   getStudioAsset,
   getStudioCatalog,
@@ -89,7 +90,10 @@ export default function AdminStudio() {
           <h1 id="studio-heading">Studio</h1>
           <p>Brand masters, media and draft preparation records.</p>
         </div>
-        <button onClick={refresh}>Refresh library</button>
+        <div className="studio-switch">
+          <Link to="/admin/studio/references">Design references →</Link>
+          <button onClick={refresh}>Refresh library</button>
+        </div>
       </header>
       <aside className="studio-status" aria-label="Draft preparation status">
         <strong>Draft preparation</strong>

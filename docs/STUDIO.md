@@ -16,6 +16,25 @@ The private bundle contains `catalog.json` and content-addressed assets. The sit
 
 Set `STUDIO_ROOT` for the API, or add `docker-compose.studio.yml` to the existing Compose invocation and supply `STUDIO_BUNDLE_ROOT`. The bundle must exist on the API host. The bind mount is read-only. The export is private and must never be placed under nginx's public document root.
 
+## Design references
+
+`/admin/studio/references` adds a searchable grid/list library to Studio. The source files belong to `subcult-studio/references/`. Its private exporter adds `references.json` and content-addressed screenshots, design documents, tokens and measurement files to the existing bundle.
+
+Migration `004_studio_references` creates reference records, normalized tags, reference/tag links and an import receipt table. A generated PostgreSQL search vector covers names, summaries, guide text and tags, with a GIN index. Collection, update-time and tag lookup indexes support filters and sorting. Search uses bound parameters; multiple tags use AND matching. Results are paginated and omit full documents until a detail is opened.
+
+With `STUDIO_ROOT` configured, API startup imports `references.json` transactionally. A bundle without that file remains compatible. Malformed reference exports fail startup rather than silently serving an outdated index. A repeatable import skips an unchanged export digest, upserts changed records and tags, and preserves prior records omitted from partial snapshots. A changed bundle must be reindexed:
+
+```sh
+# From api/, with DATABASE_URL and STUDIO_ROOT configured for the intended destination:
+rtk proxy go run ./cmd/studio-index
+```
+
+The authenticated endpoints are `GET /api/v1/admin/studio/references`, `/references/facets` and `/references/{id}`. Search parameters are `q`, repeated `tag`, `collection`, `sort` (`relevance`, `name`, `newest`), `page` and `per_page` (capped at 48). All use private/no-store responses. Supporting files use the existing authenticated asset route; Markdown, JSON and CSS are returned as plain-text attachments. Markdown in the interface uses react-markdown with raw HTML disabled; source code examples are displayed as text.
+
+Keep previous private bundles for rollback. Roll back the application before optionally applying `004_studio_references.down.sql`, which removes only the new reference tables. Changing the bundle alone does not delete database records. Retain previously exported assets when retaining indexed records; the exporter does not prune assets. Resolve LFS files before exporting. No reference assets are copied into public site assets.
+
+Local regression checks include isolated PostgreSQL imports and search, anonymous rejection, component interactions, empty/error/retry states, and inert Markdown HTML. Run the database test with `TEST_STUDIO_DATABASE_URL` pointing to a disposable database. Production and rendered browser checks require separate evidence.
+
 ## Optional job receipt
 
 `STUDIO_STATE_ROOT` points to a read-only directory containing the runner's `latest.json`. The optional `docker-compose.studio-status.yml` mounts it using `STUDIO_RECEIPT_ROOT`. A copied receipt is enough; the full runner state is unnecessary. The API returns only mode, status, week, run ID, draft count and timestamps. Provider traces, error details and source paths are omitted.
