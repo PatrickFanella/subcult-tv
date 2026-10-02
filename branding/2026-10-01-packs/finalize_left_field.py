@@ -20,6 +20,8 @@ def digest(path):
 def main():
     product = PACK / 'product'
     product.mkdir(exist_ok=True)
+    # Write plain <svg> elements; a prefixed root (ns0:svg) is rejected by browsers' icon loaders and by Next.
+    ET.register_namespace('', 'http://www.w3.org/2000/svg')
     mark = (PACK / 'logos/mark-primary.svg').read_text()
     favicon = ET.fromstring(mark)
     # Crop the generous export margin for the small browser icon.
