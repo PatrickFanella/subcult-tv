@@ -465,6 +465,50 @@
       "width": 1200,
       "height": 630,
       "mode": "RGB"
+    },
+    {
+      "path": "launch/README.md",
+      "sha256": "42e8da18e81ca6ce17e01f83eccf75f08799af3afec4a567a03c5665c64ab8a8",
+      "bytes": 443
+    },
+    {
+      "path": "launch/launch-landscape.png",
+      "sha256": "70425e778378e3943de903a8bd887ca5f5b40df3305ffe4559421ba559c8c704",
+      "bytes": 211866,
+      "width": 1600,
+      "height": 900,
+      "mode": "RGB"
+    },
+    {
+      "path": "launch/launch-landscape.svg",
+      "sha256": "41082196522f99e44386676ac904d092a2c037f9945738666664109a14932e03",
+      "bytes": 124774
+    },
+    {
+      "path": "launch/launch-square.png",
+      "sha256": "513f428164d9a5294f8e595bf6bc7beace9e652ce6502a54416912fb361a1bd2",
+      "bytes": 236725,
+      "width": 1080,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "launch/launch-square.svg",
+      "sha256": "18cfd92f2818cb4bbefa04e8b23208265eb72612b470eca237201feaec1e7787",
+      "bytes": 5669
+    },
+    {
+      "path": "launch/launch-story.png",
+      "sha256": "15f9dbe2ae1da260fca4560ab103a3377831df956f5d7785cfdc7b24a990fc46",
+      "bytes": 212910,
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGB"
+    },
+    {
+      "path": "launch/launch-story.svg",
+      "sha256": "7590283804ebe8de2e12588d9d4a6e7eb9aaa67ae37bc3cc648332a9d662942f",
+      "bytes": 6356
     }
   ]
 }

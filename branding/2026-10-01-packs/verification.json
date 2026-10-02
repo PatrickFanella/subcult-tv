@@ -259,6 +259,25 @@
       "license": "SIL OFL 1.1 (fonts/archivoblack-OFL.txt)"
     },
     "rebuild": "BRAND_ONLY=kork python3 build_packs.py && BRAND_ONLY=kork python3 render_video_previews.py; other brands were not rebuilt",
-    "directions": "corkboard-directions/ compares A Kork, B Wheatpaste, C Night board, D Index card (corkboard_directions.py)"
+    "directions": "corkboard-directions/ compares A Kork, B Wheatpaste, C Night board, D Index card (corkboard_directions.py)",
+    "launch_assets": {
+      "date": "2026-10-02",
+      "generator": "kork_launch_assets.py",
+      "files": {
+        "launch-landscape.png": "1600x900 RGB",
+        "launch-square.png": "1080x1080 RGB",
+        "launch-story.png": "1080x1920 RGB"
+      },
+      "svg_parse": "3/3 SVGs parse",
+      "contrast": {
+        "ink_on_cork": "8.21:1",
+        "ink_on_paper": "17.03:1",
+        "cobalt": "pins and rules only"
+      },
+      "visual_check": "All three PNGs viewed after rendering; text fits its cards and canvas.",
+      "embedded_capture": "references/kork-demo-page-mobile.png, local build of kork 22477c1 with placeholder handles",
+      "status": "unapproved launch drafts; no publication",
+      "rebuild": "python3 kork_launch_assets.py; no other brand or Kork pack file was rebuilt"
+    }
   }
 }
