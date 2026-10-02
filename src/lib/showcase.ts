@@ -64,6 +64,15 @@ const selections = [
       'Layer a Milkdrop visualizer, spectrum, artwork, timed lyrics, and particles. Lay it out once for landscape, portrait, and square, then export MP4s in your browser.',
     highlights: ['Start from a template', 'Sync the lyrics', 'Export in your browser'],
   },
+  {
+    slug: 'prichal',
+    category: 'Account hosting',
+    headline: 'Your server. We keep it running.',
+    summary:
+      'Prichal runs your account’s home server on the open network Bluesky runs on, so your name, posts and followers live somewhere that is yours. Private preview; not open for sign-up yet.',
+    highlights: ['Your own server', 'Your name as your username', 'Kept running for you'],
+    liveLabel: 'See the preview',
+  },
 ] satisfies Array<Omit<ShowcaseProduct, 'project'> & { slug: string }>;
 
 export function getShowcaseProducts(): ShowcaseProduct[] {

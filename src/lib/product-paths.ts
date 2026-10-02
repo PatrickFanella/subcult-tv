@@ -5,6 +5,7 @@ export const PRODUCT_ROUTES: Record<string, string> = {
   'transcript-create': 'rekolekt',
   'subcult-os': 'subcult-os',
   undertow: 'undertow',
+  prichal: 'prichal',
 };
 
 export function getProductPath(slug: string): string {
