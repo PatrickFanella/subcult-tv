@@ -46,7 +46,8 @@ that becomes a passage.
 | Paper / primary text | `#f2eee5` |
 | Index / accent       | `#b8df72` |
 
-The proposed green accent differs from HasanAra's current red (`#ff5b52`).
+The proposed green accent differs from HasanAra's current red source palette
+(`#ff3333` in the dark theme of its `branding/brand.json` on main).
 The shipped shared application uses blue (`#93c5fd`); the green system shown here
 is a proposal for review and does not describe its current UI.
 Screens and copy should make the archive and recordings prominent. The SUBCULT

@@ -193,3 +193,18 @@
     width: 80px;
   }
 }
+
+.support-hero .showcase-index {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.support-hero .showcase-index a {
+  flex: none;
+}
+@media (max-width: 639px) {
+  .support-hero .text-bone {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
