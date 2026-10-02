@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"log/slog"
+	"net"
 	"net/http"
 	"os"
 	"os/signal"
@@ -85,10 +86,12 @@ func main() {
 
 	// ── Router ───────────────────────────────────────────────
 	h := handlers.New(pool, cfg.JWTSecret, patreonClient, mail, mailCfg)
+	h.StudioRoot = os.Getenv("STUDIO_ROOT")
+	h.StudioStateRoot = os.Getenv("STUDIO_STATE_ROOT")
 	r := router.New(cfg, h)
 
 	srv := &http.Server{
-		Addr:         ":" + cfg.Port,
+		Addr:         net.JoinHostPort(os.Getenv("BIND_HOST"), cfg.Port),
 		Handler:      r,
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 30 * time.Second,

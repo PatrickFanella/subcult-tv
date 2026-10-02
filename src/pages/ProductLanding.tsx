@@ -136,6 +136,24 @@ export default function ProductLanding() {
             ))}
           </div>
         </section>
+        <section className="landing-support" aria-labelledby="support-title">
+          <div>
+            <p className="landing-eyebrow">MADE IN THE OPEN</p>
+            <h2 id="support-title">Follow how {project.name} gets made.</h2>
+            <p>
+              {project.name} is built by SUBCULT. Get the monthly newsletter, or follow the workshop
+              on Patreon for field notes and early previews.
+            </p>
+          </div>
+          <div className="landing-actions">
+            <Link className="landing-button" to="/support">
+              Support the work →
+            </Link>
+            <a className="landing-secondary" href="#newsletter">
+              Get updates by email ↓
+            </a>
+          </div>
+        </section>
         <section className="landing-closing" aria-labelledby="closing-title">
           <p className="landing-eyebrow">{project.name} / BY SUBCULT</p>
           <h2 id="closing-title">{content.closing}</h2>

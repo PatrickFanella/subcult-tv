@@ -12,9 +12,10 @@ export default function Home() {
       <SEOHead path="/" />
       <section className="showcase-hero">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="showcase-eyebrow">SUBCULTURE COLLECTIVE / INDEPENDENT SOFTWARE</p>
+          <img src="/brand/subcult/master.svg" alt="" className="subcult-hero-mark" />
           <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-20 items-end">
             <div>
+              <p className="showcase-eyebrow">SUBCULTURE COLLECTIVE / INDEPENDENT SOFTWARE</p>
               <h1 className="showcase-title">
                 Tools for the culture
                 <br />
@@ -31,7 +32,12 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="showcase-index" aria-label="Featured products">
+        </div>
+        <div className="subcult-product-bar">
+          <div
+            className="showcase-index max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+            aria-label="Featured products"
+          >
             {products.map(({ project }, index) => (
               <a href={`#${project.slug}`} key={project.slug}>
                 <span>{String(index + 1).padStart(2, '0')}</span> {project.name}

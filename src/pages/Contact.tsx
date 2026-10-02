@@ -5,6 +5,7 @@ import Button from '@/components/ui/Button';
 import { useSearchParams } from 'react-router-dom';
 import { getShowcaseProducts } from '@/lib/showcase';
 import { submitContact } from '@/lib/api';
+import { PATREON_URL } from '@/lib/links';
 
 const SOCIAL_LINKS = [
   {
@@ -14,8 +15,8 @@ const SOCIAL_LINKS = [
   },
   {
     name: 'Patreon',
-    url: 'https://www.patreon.com/subcult',
-    handle: 'subcult',
+    url: PATREON_URL,
+    handle: 'support.subcult.tv',
   },
   {
     name: 'Bluesky',

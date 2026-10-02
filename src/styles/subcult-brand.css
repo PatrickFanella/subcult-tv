@@ -1,0 +1,128 @@
+/* SUBCULT Studio: Culture / poster press. Public asset hashes are in docs/subcult-brand-provenance.json. */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/brand/subcult/fonts/Oswald-0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/brand/subcult/fonts/Space-Grotesk-0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/brand/subcult/fonts/JetBrains-Mono-0.ttf') format('truetype');
+}
+.subcult-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.subcult-nav-mark {
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  border: 1px solid #100b19;
+}
+.showcase-hero {
+  position: relative;
+  padding-top: 2rem;
+  background: #8b5cf6;
+  color: #100b19;
+  border-bottom: 8px solid #100b19;
+  overflow: hidden;
+}
+.subcult-hero-mark {
+  width: clamp(96px, 10vw, 136px);
+  height: auto;
+  margin-bottom: 1rem;
+}
+.showcase-hero .showcase-title,
+.showcase-hero .showcase-title span,
+.showcase-hero .showcase-eyebrow,
+.showcase-hero .text-bone {
+  color: #100b19;
+}
+.showcase-hero .showcase-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3rem, 5.4vw, 5.25rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+}
+.showcase-hero .showcase-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 0.65rem;
+}
+.subcult-product-bar {
+  margin-top: 2rem;
+  background: var(--color-void);
+  border-top: 1px solid var(--color-fog);
+}
+.showcase-hero .showcase-index {
+  margin-top: 0;
+  border-top: 0;
+  padding-block: 0.75rem;
+  gap: 0.4rem 0.75rem;
+}
+.showcase-hero .showcase-index a {
+  padding: 0.65rem 0.75rem;
+  color: var(--color-chalk);
+}
+.showcase-hero .showcase-index a span {
+  color: var(--color-dust);
+}
+.showcase-hero .showcase-index a:hover {
+  color: var(--color-static);
+}
+.showcase-hero .showcase-index a:focus-visible {
+  outline: 2px solid var(--color-static);
+  outline-offset: 5px;
+}
+.showcase-hero a:focus-visible {
+  outline: 3px solid #100b19;
+  outline-offset: 5px;
+}
+.showcase-hero a[href='#products'] {
+  color: #100b19;
+  border-color: #100b19;
+  background: #00ff88;
+  box-shadow: 4px 4px 0 #100b19;
+}
+.showcase-hero a[href='#products']:hover {
+  background: #f0ece4;
+}
+.showcase-section-heading {
+  border-bottom: 3px solid #8b5cf6;
+}
+
+.admin-panel-heading {
+  padding: 0.8rem 1.5rem;
+  background: #8b5cf6;
+  color: #100b19;
+  border-bottom: 1px solid #100b19;
+  letter-spacing: 0.1em;
+}
+.admin-login-mark {
+  display: block;
+  width: 96px;
+  height: 96px;
+  padding: 12px;
+  border-radius: 50%;
+  margin: 0 auto 1.25rem;
+  background: #8b5cf6;
+}
+.admin-sidebar nav a:focus-visible,
+.admin-login :focus-visible {
+  outline: 2px solid #00ff88;
+  outline-offset: 4px;
+}

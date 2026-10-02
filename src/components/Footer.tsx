@@ -49,7 +49,9 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <NewsletterSignup />
+          <div id="newsletter" className="scroll-mt-24">
+            <NewsletterSignup />
+          </div>
         </div>
         <div className="mt-10 pt-6 border-t border-fog flex flex-col sm:flex-row justify-between gap-4 text-xs text-bone">
           <p>© {new Date().getFullYear()} Subculture Collective.</p>

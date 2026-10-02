@@ -199,6 +199,7 @@ describe('smoke: app shell', () => {
     await screen.findByRole('heading', { name: 'Built by SUBCULT.' });
     const nav = within(screen.getByRole('navigation', { name: 'Main navigation' }));
     const footer = within(screen.getByRole('contentinfo'));
+    expect(nav.getByRole('link', { name: 'Support' })).toHaveAttribute('href', '/support');
     for (const [name, slug] of [
       ['clpr', 'clpr'],
       ['Patchwork', 'patchwork'],
