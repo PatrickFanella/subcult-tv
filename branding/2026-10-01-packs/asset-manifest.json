@@ -1,8 +1,8 @@
 [
   {
     "path": "README.md",
-    "bytes": 9025,
-    "sha256": "df2d627140a94810752cdeabc20649df36be416a09e1946fa2b6d56d903c6c50"
+    "bytes": 10628,
+    "sha256": "9bd2cfc237274e1ae18b92b6c72bf298a27a173d63bfc9af01a49aff4c13a3ec"
   },
   {
     "path": "audit_patchwork_contrast.py",
@@ -11,8 +11,8 @@
   },
   {
     "path": "brands.json",
-    "bytes": 9767,
-    "sha256": "7293c157371c336ba17e59472ae33e3b99c92385a522e8fb6cd392a2d3266c28"
+    "bytes": 9781,
+    "sha256": "36ab49b750c3553b2653c4fb7c67d7421c23d6faa6d3aa87bd46fad1cd0aa74e"
   },
   {
     "path": "brands/clpr/GUIDE.md",
@@ -4086,8 +4086,8 @@
   },
   {
     "path": "build_packs.py",
-    "bytes": 39458,
-    "sha256": "c3d3e398bcd91d7da562963bb4d6e103303acb35353373df693f2f95255d5c32"
+    "bytes": 39814,
+    "sha256": "a3656643e216c28d128a320f1a48ab566e009a86cc6876dadac8c7f3dc321767"
   },
   {
     "path": "clpr-directions/comparison.png",
@@ -4981,8 +4981,8 @@
   },
   {
     "path": "index.html",
-    "bytes": 16442,
-    "sha256": "447030e9949b21542652527c7c4e3dd58c11ccc6840cbb2c89448039ffbd994d"
+    "bytes": 16456,
+    "sha256": "8125e9c5dd60bf9b8cee9e0a089f15ba796cc5499c334579b9d9b288df45b86e"
   },
   {
     "path": "kork_launch_assets.py",
