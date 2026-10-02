@@ -1,10 +1,11 @@
 import { Suspense } from 'react';
+import '@/styles/admin-production.css';
 import { Navigate, Outlet, NavLink, Link } from 'react-router-dom';
 import { useAuth } from '@/context/useAuth';
 
 const NAV_ITEMS = [
   { to: '/admin', label: 'Dashboard', icon: '◈' },
-  { to: '/admin/studio', label: 'Studio', icon: '◩' },
+  { to: '/admin/studio', label: 'Brand library', icon: '◩' },
   { to: '/admin/studio/references', label: 'References', icon: '▦' },
   { to: '/admin/projects', label: 'Projects', icon: '▣' },
   { to: '/admin/posts', label: 'Posts', icon: '▤' },
@@ -40,7 +41,7 @@ export default function AdminLayout() {
             <img src="/brand/subcult/master.svg" className="subcult-nav-mark" alt="" />
             <span>SUBCULT</span>
           </Link>
-          <div className="font-mono text-xs text-dust mt-1">// CONTROL PANEL</div>
+          <div className="font-mono text-xs text-dust mt-1">PRODUCTION / ADMIN</div>
         </div>
 
         <nav className="flex-1 p-3 space-y-1">

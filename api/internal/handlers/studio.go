@@ -67,7 +67,7 @@ func (h *Handler) StudioAsset(w http.ResponseWriter, r *http.Request) {
 	}
 	entry, ok := catalog.Files[id]
 	ext := filepath.Ext(entry.Path)
-	allowed := map[string]bool{".svg": true, ".png": true, ".jpg": true, ".jpeg": true, ".webp": true, ".mp4": true, ".avif": true, ".gif": true, ".md": true, ".json": true, ".css": true}
+	allowed := map[string]bool{".svg": true, ".png": true, ".jpg": true, ".jpeg": true, ".webp": true, ".mp4": true, ".avif": true, ".gif": true, ".md": true, ".json": true, ".css": true, ".ttf": true, ".woff2": true, ".txt": true}
 	if !ok || !allowed[ext] || entry.Path != "assets/"+id+ext || entry.SHA256 != id {
 		writeError(w, 404, "Asset not found")
 		return
@@ -95,6 +95,9 @@ func (h *Handler) StudioAsset(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Disposition", mime.FormatMediaType("attachment", map[string]string{"filename": entry.Name}))
 	}
 	w.Header().Set("X-Content-Type-Options", "nosniff")
+	if ext == ".ttf" || ext == ".woff2" || ext == ".txt" || ext == ".css" || ext == ".json" {
+		w.Header().Set("Content-Disposition", mime.FormatMediaType("attachment", map[string]string{"filename": entry.Name}))
+	}
 	w.Header().Set("Content-Security-Policy", "sandbox; default-src 'none'; style-src 'unsafe-inline'")
 	http.ServeContent(w, r, entry.Name, info.ModTime(), f)
 }

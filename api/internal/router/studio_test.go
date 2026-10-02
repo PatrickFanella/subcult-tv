@@ -63,6 +63,22 @@ func TestStudioAccessAndContainment(t *testing.T) {
 	if response := request("/api/v1/admin/studio/assets/"+id, true); response.Code != 404 {
 		t.Fatal("symlink escape exposed")
 	}
+	os.WriteFile(filepath.Join(root, "posting.json"), []byte(`{"version":1,"generated_at":"2020-01-01T00:00:00Z","connected":true,"publishing_enabled":true,"provider_evidence":{"secret":"hidden"},"drafts":[{"text":"Review copy","approval":"approved","token":"hidden"}]}`), 0600)
+	if response := request("/api/v1/admin/studio/posting", false); response.Code != 401 {
+		t.Fatal("anonymous posting access")
+	}
+	posting := request("/api/v1/admin/studio/posting", true)
+	if posting.Code != 200 || !strings.Contains(posting.Body.String(), `"stale":true`) || !strings.Contains(posting.Body.String(), `"approval":"unapproved"`) || !strings.Contains(posting.Body.String(), `"publishing_enabled":false`) {
+		t.Fatalf("invalid posting boundary: %s", posting.Body.String())
+	}
+	if strings.Contains(posting.Body.String(), "hidden") {
+		t.Fatal("posting snapshot leaked private fields")
+	}
+	os.WriteFile(filepath.Join(root, "posting.json"), []byte(`{"generated_at":"invalid"}`), 0600)
+	if response := request("/api/v1/admin/studio/posting", true); response.Code != 503 {
+		t.Fatal("invalid timestamp accepted")
+	}
+
 	// Receipt responses must omit provider traces, errors, and filesystem paths.
 	os.WriteFile(filepath.Join(h.StudioStateRoot, "latest.json"), []byte(`{"status":"success","mode":"plan","draft_count":3,"error":"sensitive","note":"/private/path","provider_evidence":{"secret":"hidden"}}`), 0600)
 	response := request("/api/v1/admin/studio/jobs", true)

@@ -356,6 +356,7 @@ export interface StudioBrand {
   guide: string;
   preview: string;
   logos: string[];
+  assets?: { id: string; name: string; category: string }[];
   tokens: { colors: Record<string, string>; fonts: Record<string, string> };
 }
 export interface StudioMedia {
@@ -432,3 +433,41 @@ export async function getStudioAsset(id: string, signal?: AbortSignal): Promise<
   if (!response.ok) throw new APIError('Unable to load Studio asset', response.status);
   return response.blob();
 }
+
+export interface PostingRun {
+  mode: string;
+  status: string;
+  week: string;
+  run_id: string;
+  draft_count: number;
+  checked_at: string;
+  observed_at: string;
+}
+export interface PostingDraft {
+  id: string;
+  run_id: string;
+  mode: string;
+  week: string;
+  account: string;
+  text: string;
+  due_at: string;
+  expires_at: string;
+  evidence: string;
+  next_check: string;
+  approval: 'unapproved';
+  media: { mode: string; asset_ids: string[]; alt_text: string; brief: string };
+}
+export interface PostingDashboard {
+  connected: boolean;
+  generated_at: string;
+  stale: boolean;
+  publishing_enabled: false;
+  timezone: string;
+  first_week: string;
+  schedules: { mode: string; calendar: string[] }[];
+  accounts: { account: string; times: string[]; weekly_cap: number }[];
+  runs: PostingRun[];
+  drafts: PostingDraft[];
+  checks: { run_id: string; text: string }[];
+}
+export const getPostingDashboard = () => apiFetch<PostingDashboard>('/api/v1/admin/studio/posting');
