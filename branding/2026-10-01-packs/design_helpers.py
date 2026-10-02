@@ -281,7 +281,7 @@ def banner(d):
  elif m=='subcult-catalogue':
   s+=txt(44,63,'SUBCULT',30,a,'Libre Baskerville',700)+txt(785,63,'SOFTWARE & CULTURE',17,fg,'JetBrains Mono')+line(44,83,1156,83,a)
   s+=txt(44,175,'Independent tools.',56,fg,'Libre Baskerville')+txt(44,246,'A shared culture.',56,fg,'Libre Baskerville')+mark(d,986,142,145)
-  for i,t in enumerate(['CLPR','PATCHWORK','HASANARA','REKOLEKT','SUBCULT OS','UNDERTOW']):s+=txt(44+i*184,349,t,14,a,'JetBrains Mono')
+  for i,t in enumerate(['CLPR','PATCHWORK','HASANARA','REKOLEKT','SUBCULT OS','UNDERTOW','KORK']):s+=txt(44+i*160,349,t,14,a,'JetBrains Mono')
  else:
   s+=rect(0,0,14,400,a)+txt(40,55,'SUBCULT.TV / INDEPENDENT SOFTWARE',18,fg,'JetBrains Mono')+txt(40,189,'BUILD',130,fg,'Oswald',700)+txt(40,333,'TOGETHER.',130,fg,'Oswald',700,maxw=925)+rect(1050,78,94,94,a)+line(1097,58,1097,192,fg)+line(1030,125,1164,125,fg)
  return s
@@ -338,7 +338,7 @@ def post(d):
   s+=txt(239,356,'OPEN SOFTWARE',17,b,'JetBrains Mono')+txt(239,398,'INDEPENDENT CULTURE',17,b,'JetBrains Mono',maxw=325)
  elif m=='subcult-catalogue':
   s+=txt(36,132,'The catalogue.',43,fg,'Libre Baskerville')+line(36,167,564,167,a)
-  for i,t in enumerate(['CLPR','Patchwork','HasanAra','Rekolekt','Subcult OS','Undertow']):s+=txt(36,218+i*44,f'0{i+1}',16,a,'JetBrains Mono')+txt(108,218+i*44,t,24,fg,'Public Sans')
+  for i,t in enumerate(['CLPR','Patchwork','HasanAra','Rekolekt','Subcult OS','Undertow','Kork']):s+=txt(36,214+i*44,f'0{i+1}',16,a,'JetBrains Mono')+txt(108,214+i*44,t,24,fg,'Public Sans')
  else:
   s+=txt(36,177,'CULTURE',97,fg,'Oswald',700)+txt(36,292,'NEEDS',97,fg,'Oswald',700)+rect(31,330,538,117,a)+txt(44,428,'TOOLS.',97,fg,'Oswald',700)
  s+=line(36,540,564,540,a)+txt(36,572,d.get('url') or d['brand'].lower()+' / by SUBCULT',16,fg,d['body'],maxw=528)

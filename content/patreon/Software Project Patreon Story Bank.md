@@ -3,7 +3,7 @@ title: Software Project Patreon Story Bank
 type: documentation
 status: active
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-02
 tags:
 - topic/publishing
 ---
@@ -20,6 +20,7 @@ Use the same product anchor and candidate ID as [[001 Projects/Works/Social Post
 | Rekolekt | Why archive identity is configuration rather than a source fork | Safe public branding example |
 | Subcult OS | What the door needs from an event plan | Synthetic free reservation/check-in journey |
 | Undertow | What a browser export gives a musician, and where device limits matter | An owned-track short export in three layouts |
+| Kork | Why a link page sends tips straight to the creator and counts visits without trackers | Real capture of a placeholder Kork page (launched October 2, 2026) |
 | The Common House | A small spoiler-safe design decision or original asset | Optional teaser; at most monthly |
 
 Prepare one field note a week when the source supports it. One monthly ledger can replace that week's field note. Describe the decision, show the artifact, state the remaining boundary, and give the reader a useful next step. Publication, tier benefits, pricing and supporter access need current Patreon verification; none was established by this review.

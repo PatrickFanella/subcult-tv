@@ -3,12 +3,12 @@ title: Bluesky Posting Plan
 type: work
 status: active
 stage: preparation
-updated: 2026-10-01
+updated: 2026-10-02
 ---
 
 # Bluesky posting plan
 
-Bluesky joins the same product bank, media library and account voices as X. Patrick covers personal development decisions, culture and left politics; SUBCULT covers the six products and independent culture; CLPR covers clip discovery and creator tools. Use the agreed account cadence as the initial platform ceiling. Platform copies are related proposals, not proof that either copy was published. Review mentions, links and native quotes for the destination platform.
+Bluesky joins the same product bank, media library and account voices as X. Patrick covers personal development decisions, culture and left politics; SUBCULT covers the seven products and independent culture; CLPR covers clip discovery and creator tools. Use the agreed account cadence as the initial platform ceiling. Platform copies are related proposals, not proof that either copy was published. Review mentions, links and native quotes for the destination platform.
 
 ## Identity and connection
 

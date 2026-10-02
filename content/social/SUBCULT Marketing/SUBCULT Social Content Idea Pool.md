@@ -3,14 +3,14 @@ title: SUBCULT Social Content Idea Pool
 type: documentation
 status: active
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-02
 tags:
 - topic/publishing
 ---
 
 # SUBCULT Social Content Idea Pool
 
-This is the single candidate bank for the six product lanes and occasional Common House teasers. Every entry below is `candidate`: no final copy, media or scheduling approval is implied. Use [[Product Claims Register]] before drafting and [[Social Posting Automation Plan]] for account routing.
+This is the single candidate bank for the seven product lanes and occasional Common House teasers. Every entry below is `candidate`: no final copy, media or scheduling approval is implied. Use [[Product Claims Register]] before drafting and [[Social Posting Automation Plan]] for account routing.
 
 | ID | Product | Claim source | Angle | Required proof / asset |
 | --- | --- | --- | --- | --- |
@@ -32,6 +32,9 @@ This is the single candidate bank for the six product lanes and occasional Commo
 | UNDERTOW-01 | Undertow | C-UNDERTOW | One track, three layouts | Use owned audio/art; record the public editor and export a short MP4 before claiming this demonstration. |
 | UNDERTOW-02 | Undertow | C-UNDERTOW | Timed lyrics as a visual layer | Use permitted lyrics and test a short captioned export on the actual browser. |
 | UNDERTOW-03 | Undertow | C-UNDERTOW | Local export and cloud testing | Explain the local media boundary; explicitly keep live paid cloud billing out of the offer. |
+| KORK-01 | Kork | C-KORK | Launch: every link on one free page | Use the launch drafts and real captures in [[Kork Launch Drafts]]; recheck the live landing and keep custom domains, paid plans and link screening out of the copy. |
+| KORK-02 | Kork | C-KORK | Tips go straight to the creator | Show payment buttons on a placeholder page; state that Kork takes no cut, never that it processes payments. |
+| KORK-03 | Kork | C-KORK | Visit counts without trackers | Show the stats view on a placeholder page; describe anonymous daily totals without promising more than the stored fields. |
 | HOUSE-01 | The Common House | C-HOUSE | The home and the radio | Select an original spoiler-safe asset or a verified design excerpt; frame as work in development. |
 | HOUSE-02 | The Common House | C-HOUSE | A signal leaves a trace | Tie the teaser to a concrete established source medium; no invented mechanic or release promise. |
 
@@ -43,6 +46,6 @@ Patrick explains a decision or consequence. SUBCULT shows the product artifact a
 
 ## Rotation and selection
 
-Start the first full pilot week with the strongest ready product. Across six weeks, aim to give each of clpr, Patchwork, HasanAra, Rekolekt, Subcult OS and Undertow one anchor. Readiness can reorder or skip a lane. No product has its own mandatory weekly quota.
+Start the first full pilot week with the strongest ready product. Across the pilot, aim to give each of clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow and Kork one anchor. Kork joined on October 2, 2026; with seven products and six pilot weeks, one week can carry two anchors or one product can wait for the next cycle. Readiness can reorder or skip a lane. No product has its own mandatory weekly quota.
 
-The Common House can replace one Friday post at most once per calendar month when an asset is ready. It is not a seventh weekly obligation. Music, plugin launches and older campaigns are deferred outside this active bank; their original drafts remain recoverable.
+The Common House can replace one Friday post at most once per calendar month when an asset is ready. It is not an additional weekly obligation. Music, plugin launches and older campaigns are deferred outside this active bank; their original drafts remain recoverable.
