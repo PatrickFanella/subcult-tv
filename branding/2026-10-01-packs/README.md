@@ -55,3 +55,5 @@ For the public site, export only the approved Left Field assets with
 `python scripts/export_left_field.py --site-root /path/to/subcult-tv` from the
 Studio root. The exporter verifies source hashes and writes destination
 provenance. The full pack remains in Studio.
+
+Rekolekt website (updated October 2, 2026): [website design specification](brands/rekolekt/WEBSITE.md) records the implemented landing page, real transcript evidence, interaction states and responsive checks. The [brand guide](brands/rekolekt/GUIDE.md) retains the selected Index identity and links to this maintained specification.

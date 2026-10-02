@@ -4,7 +4,7 @@ Selected direction: **A / Index / original concept**. Status: local production p
 
 Original bracketed waveform logo and index-green palette; transcript rows replace only the story illustration.
 
-Use the lowercase `rekolekt` wordmark and `Rekolekt` in prose. Pair it with “by SUBCULT” for endorsement. Preserve the original bracketed waveform logo without geometry changes. Only the story template’s decorative waveform is replaced by transcript rows and timestamps. Keep source/context metadata attached to quoted passages. This selected visual identity does not rename the transcript-create repository or deployment.
+Use the lowercase `rekolekt` wordmark and `Rekolekt` in prose. Pair it with “by SUBCULT” for endorsement. Preserve the original bracketed waveform logo without geometry changes. Only the story template’s decorative waveform is replaced by transcript rows and timestamps. Keep source/context metadata attached to quoted passages. The product source now lives in `subculture-collective/rekolekt`; the contact route retains `product=transcript-create` for compatibility. See [the website design specification](WEBSITE.md) for the deployed landing page, its product copy and interaction states.
 
 ## Color roles
 
@@ -46,4 +46,4 @@ The video templates use a 1920×1080 canvas and a 96-pixel outer margin. Keep ca
 
 Use verified product claims and exact approved copy. Quote/release template text is placeholder content and must be replaced. Describe the completed image in alt text, including the visible message; do not describe a screenshot placeholder as a working feature. `alt-text.md` supplies starter descriptions for the completed sample artwork.
 
-Reference: Existing proposed Rekolekt concept; story transcript illustration revision. Site/asset observations were made October 1, 2026. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
+Reference: Existing proposed Rekolekt concept; story transcript illustration revision. Source/asset observation dates are recorded in the reference above. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
