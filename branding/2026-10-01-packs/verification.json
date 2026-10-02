@@ -279,5 +279,20 @@
       "status": "unapproved launch drafts; no publication",
       "rebuild": "python3 kork_launch_assets.py; no other brand or Kork pack file was rebuilt"
     }
+  },
+  "prichal": {
+    "date": "2026-10-02",
+    "status": "name, palette, mark and messaging selected with the user",
+    "files": 78,
+    "svg_parse": "36/36 SVGs parse",
+    "outlined_logos": "10 outlined logo SVGs and 2 product SVGs contain no <text> elements",
+    "contrast": {
+      "text_on_base": "14.09:1",
+      "label_on_base": "5.14:1",
+      "accent_on_base": "5.28:1"
+    },
+    "mark_32px": "checked on all five variants; sphere, collars and red flange stay distinct, the dashed equator detail drops out",
+    "video_preview": "h264 1920x1080, 8.0 s",
+    "fonts": "Oswald, Public Sans and JetBrains Mono, already in fonts/"
   }
 }

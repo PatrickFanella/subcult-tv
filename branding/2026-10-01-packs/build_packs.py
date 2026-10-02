@@ -40,7 +40,7 @@ def source_mark(d,x,y,size,variant='color'):
  return embed_svg(ET.tostring(root,encoding='unicode'),x,y,size,size)
 def wordmark(d,x,y,maxw=730):
  if d['slug']=='clpr':return C.logo(d,x,y-130,min(374,maxw),172)
- name={'patrick__eff':'PATRICK__EFF','rekolekt':'rekolekt','subcult':'SUBCULT','subcult-os':'Subcult OS','hasanara':'HasanAra','undertow':'UNDERTOW','patchwork':'Patchwork','kork':'kork'}[d['slug']]
+ name={'patrick__eff':'PATRICK__EFF','rekolekt':'rekolekt','subcult':'SUBCULT','subcult-os':'Subcult OS','hasanara':'HasanAra','undertow':'UNDERTOW','patchwork':'Patchwork','kork':'kork','prichal':'PRICHAL'}[d['slug']]
  return T(x,y,name,91,d['fg'],d['display'],700,maxw=maxw)
 def write_svg(dest,name,body,w,h,exportw=None,outlined=False):
  if 'patrick__eff' in dest.parts and not name.startswith('mark-') and 'mono' not in name:body=H.patrick_style(body)
@@ -52,7 +52,7 @@ def write_svg(dest,name,body,w,h,exportw=None,outlined=False):
  return p
 
 def label(d,x,y,s,size=18,maxw=None):return T(x,y,s,size,d['safe_label'],d['label'],400,maxw=maxw)
-def base(d,w,h):return rect(0,0,w,h,d['bg'])+(H.patch_paper(w,h) if d['slug']=='patchwork' else '')+(H.cork_texture(w,h) if d['slug']=='kork' else '')
+def base(d,w,h):return rect(0,0,w,h,d['bg'])+(H.patch_paper(w,h) if d['slug']=='patchwork' else '')+(H.cork_texture(w,h) if d['slug']=='kork' else '')+(H.drawing_ticks(18,48,h-120,'#c9c4b6') if d['slug']=='prichal' else '')
 def footer(d,w,h):return line(48,h-86,w-48,h-86,d['safe_label'],2)+T(48,h-43,d.get('url') or 'rekolekt / by SUBCULT',20,d['fg'],d['body'])
 def filmstrip(d,x,y,w,h):
  a=d['accent'];f=d['fg'];s=rect(x,y,w,h,'#17141f',0,'#27222f')
@@ -86,6 +86,7 @@ def poster(d,w,h,kind):
   elif d['slug']=='rekolekt':s+=H.rekolekt_transcript(d,m,1095,w-96,285)
   elif d['slug']=='undertow':s+=H.wave(m,1150,w-96,240,d['accent'],41)
   elif d['slug']=='kork':s+=H.cork_stack(d,m,1040,w-96,400)
+  elif d['slug']=='prichal':s+=H.docking_ports(d,m,1150,w-96,150)
   else:s+=line(m,1120,w-48,1120,d['accent'],12)
   s+=T(m,1500,'YOUR NOTE OR INVITATION',31,d['fg'],d['body'],700,maxw=w-96)+T(m,1560,'Replace this line with approved copy.',25,d['fg'],d['body'],maxw=w-96)+T(m,1652,d.get('url') or 'Rekolekt by SUBCULT',25,d['fg'],d['body'])
  elif kind=='landscape':
@@ -145,6 +146,7 @@ def guide(d,dest):
  'hasanara':'Match the current hasanara.tv red/PBS theme. Use Newsreader for editorial headings, Inter Tight for body copy and JetBrains Mono for metadata. Keep the actual PBS artwork. The local older lime theme is not this pack’s reference. Quotes need their original passage, attribution and timestamp.',
  'subcult-os':'Matches the live os.subcult.tv design system (the Subcults terminal foundation, selected by the user on September 30, 2026; source of truth: subcult-os contracts/design/tokens.json). Space Mono is the only typeface: bold for headings, buttons and labels, regular for body copy, uppercase with wide tracking for labels. Bold is the heaviest weight. Corners are square everywhere; panels separate with visible borders, not shadows. Purple is the action and artwork color: purple fills carry white text (5.7:1), but purple text on black is below the small-text target, so labels use cyan. Cyan also marks focus. Status colors (green, amber, red, cyan) mark states and always come with words. Event artwork stays immersive and black. The OS lettermark with a cyan cursor block is a pack mark; the site itself uses the plain wordmark.',
  'kork':'Identity for the self-serve links-page service, code name zelda. On October 2, 2026 the user selected direction A (pinned card) and the name Kork over Corkboard; the comparison is in corkboard-directions/. A services marketplace also trades as Kork (kork.app); this was noted to the user, who chose the name anyway. The mark is an original pinned paper card: two link rows on a tilted card under a cobalt pushpin. It stays legible at 32 pixels because the rows and pin are solid shapes. Cork (#d4a56c) is the field, ink (#1b130c) carries all text, paper (#fbf6ec) fills cards, and cobalt (#2340e8) is reserved for pins and large emphasis: cobalt on cork is 3.2:1, so never use it for small text. Archivo Black sets the wordmark and headlines, Atkinson Hyperlegible Next carries body copy and JetBrains Mono carries labels, the shared SUBCULT cue. Pinned cards carry placeholder destinations (@yourname, $yourname, a decorative QR glyph that encodes nothing); do not show third-party platform logos in brand artwork. Cards tilt between -7 and +7 degrees with a hard ink shadow; keep at least one card straight enough to read. The product page itself lets users pick any theme, so this identity applies to the service, not to user pages.',
+ 'prichal':'Identity for Prichal, managed AT Protocol PDS hosting (repository subculture-collective/prichal). The user chose the name Prichal on October 1, 2026: Russian for pier or berth, and the ISS docking node where Soyuz ships attach. The pronunciation is the Russian one (pree-CHAHL); copy never explains or corrects it. The mark is a docking node: a sphere with its equator in perspective and four flanged collars. The red flange on the right is the occupied port, the customer account. Never rotate it, recolor single collars, or add a centre dot or ring: with the cross of ports that reads as a gun sight. Mono variants turn the flange to ink. Paper (#f4f1e9) is the field, ink (#1c2230) carries text and the mark, signal red (#b23a26, 5.28:1 on paper) marks the occupied port, rules and large emphasis, and steel (#5d6675, 5.14:1) carries labels. In product interfaces red is reserved for the mark so it never reads as an error. Oswald Bold sets the uppercase wordmark and display headings, Public Sans carries body copy and JetBrains Mono carries labels and the port strip. The Cyrillic ПРИЧАЛ is a small secondary label, never a replacement for the Latin name. Engineering-drawing details (tick scale, hairlines, PORT 01–06 strip) stay light. Tagline: Your server. We keep it running. Call to action: Dock your account. We handle the rest. Do not market leaving, privacy, censorship resistance or unverified capabilities; Prichal is a private preview at prichal.subcult.tv and not open for sign-up. Messaging by audience and the plain-language table live in the product repository at brand/GUIDE.md.',
  'undertow':'Use the active editor theme: pink/cyan/lilac on dark violet, square geometry and hard offsets. Keep the existing spectrum favicon. Liberation Mono is the bundled portable alternative to the site’s system monospace stack. Chromatic offsets are for large titles, never body copy.'
  }[slug]
  doc=f'''# {d['brand']} — Brand and asset guide
