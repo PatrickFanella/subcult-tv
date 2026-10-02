@@ -271,8 +271,8 @@
     },
     {
       "path": "product/favicon.svg",
-      "sha256": "582a6636cf740f2fb240a181d8dd67be126a16692d57c33e8c08b1dcfde970da",
-      "bytes": 368
+      "sha256": "2180ea7aef2fbb5c56bad64ec0743fa4c0cdf6b4826aa2db91d2d8e4313ab67e",
+      "bytes": 332
     },
     {
       "path": "product/hero-outlined.svg",
@@ -289,8 +289,8 @@
     },
     {
       "path": "product/hero.svg",
-      "sha256": "4755ce707a113462ca4b6479918c03dcb2d392a55d00379c9d884995ba1146cb",
-      "bytes": 1299
+      "sha256": "d5b381e11829afc6e2c149336eb53dd82113196e117ce86aa82f7d89d616f49c",
+      "bytes": 1203
     },
     {
       "path": "product/icon-192.png",
@@ -323,8 +323,8 @@
     },
     {
       "path": "product/og.svg",
-      "sha256": "e11902f3607439d960f4195415bc003c7e6cf34d4f496d5a4ba3f44b6712b05a",
-      "bytes": 1298
+      "sha256": "44ad011eee713ca9b5a6c5f03c510ec43a3de879e09f1e8f601224375b027421",
+      "bytes": 1202
     },
     {
       "path": "social/avatar.png",
