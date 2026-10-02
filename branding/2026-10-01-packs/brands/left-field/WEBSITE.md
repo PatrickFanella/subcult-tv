@@ -1,6 +1,6 @@
 # Left Field — Website design specification
 
-Updated 2 October 2026 from the site at [seats.dsaslate.com](https://seats.dsaslate.com/), revision [`1b071f2e5691a2359d11978c7d7850c0c43104fa`](https://git.subcult.tv/subculture-collective/left-field/src/commit/1b071f2e5691a2359d11978c7d7850c0c43104fa/src/app). The app container has run this revision since 2 October 2026, 21:23 UTC. Two releases went out that day. The first, `dbc17f6` at 18:31 UTC, replaced `afa0b7d`, built 9 August 2026, which served Priority Index model v0.8 for 430 House seats; it carried 79 commits, five database migrations, and the interface originality audit merged as [PR 54](https://git.subcult.tv/subculture-collective/left-field/pulls/54). The second installed the pack assets and rebuilt the About page ([PR 55](https://git.subcult.tv/subculture-collective/left-field/pulls/55)) with no database change. The published factual release is unchanged: `rel_full_20260804_v2`.
+Updated 2 October 2026 from the site at [left-field.subcult.tv](https://left-field.subcult.tv/), revision [`5f41c5fd5cc5441ded34f8efe3a1fab6ce2c9707`](https://git.subcult.tv/subculture-collective/left-field/src/commit/5f41c5fd5cc5441ded34f8efe3a1fab6ce2c9707/src/app). The app container has run this revision since 2 October 2026, 23:05 UTC. Three releases went out that day. The first, `dbc17f6` at 18:31 UTC, replaced `afa0b7d`, built 9 August 2026, which served Priority Index model v0.8 for 430 House seats; it carried 79 commits, five database migrations, and the interface originality audit merged as [PR 54](https://git.subcult.tv/subculture-collective/left-field/pulls/54). The second, `1b071f2` at 21:23 UTC, installed the pack assets and rebuilt the About page ([PR 55](https://git.subcult.tv/subculture-collective/left-field/pulls/55)). The third added the contact address ([PR 56](https://git.subcult.tv/subculture-collective/left-field/pulls/56)) and moved the public address to `left-field.subcult.tv` ([PR 57](https://git.subcult.tv/subculture-collective/left-field/pulls/57)); `seats.dsaslate.com` now redirects there. The published factual release is unchanged: `rel_full_20260804_v2`.
 
 The product repository owns the interface rules. `src/app/globals.css` holds the values and `src/components/presentational.tsx` holds the shared shell, formatters and status labels. Change the product first, then update this file and the `product_interface` block in `tokens.json` through `left_field_product.py`.
 
@@ -22,6 +22,7 @@ Left Field is a research index of seats in Congress, governorships and state leg
 | About banner | The pack share artwork: Read the field. Trace the evidence. |
 | Release strip | FACTUAL FEDERAL RECORD · nationwide release scope, then the release label, status and source cutoff. Shown on Browse, seat records, Sources and Method. |
 | Footer | LEFT FIELD · Seat research for Congress, governorships, and state legislatures · Published by SUBCULT, subcult.tv. Links: Priority index, Method, Source ledger, Corrections, About. |
+| Contact | info@subcult.tv as a mail link, and subcult.tv |
 | Not found | Page not found |
 
 The counts in the lede and note come from the index data at render time; the figures above are those of model v1.14.
@@ -58,7 +59,7 @@ The site is a printed ledger: warm paper, dark green ink, rust annotations, rule
 | Depth and motion | None. No shadows, gradients or animation. |
 | Width | 1320px, 1440px on the index. Layout changes at 1000px, 800px and 700px. |
 
-The site uses system fonts and loads no font files, analytics or third-party scripts.
+The site uses system fonts and loads no font files or third-party scripts. The edge (Almaz Caddy through `umami-site-proxy`) injects `/umami-init.js`, a self-hosted Umami page-view counter served from the site's own domain; the About page says so.
 
 ### Pack assets on the site
 
@@ -94,7 +95,7 @@ Paper `#f4f0e6`, ink `#16221f`, rust `#a33c26` and wash `#e5eadc` are the same i
 - **Seat record (`/seats/<seat>`).** Identity, the release-pinned district boundary drawn from published GeoJSON, the presidential margin and cash on hand with their lineage, then member, election, district, finance and source sections, and a correction link.
 - **Sources (`/sources`).** Three totals, the seven House inputs with their coverage and one context card, then release coverage and the retained snapshots behind disclosure rows.
 - **Method (`/methodology`).** Three principles, the weight matrix, the two routes with formulas, the component dictionary as a table, missing-data rules, chamber sections, worked examples, score bands and limits.
-- **About (`/about`).** The banner, the publisher statement, and three current figures: index model, publication date and seats scored. Then what the index is, how to read a score, what the site collects, a note on the mark, and contact.
+- **About (`/about`).** The banner, the publisher statement, and three current figures: index model, publication date and seats scored. Then what the index is, how to read a score, what the site collects (including the page-view counter), a note on the mark, and contact with the mail address.
 - **Lookup and Corrections.** Both are off in this deployment. Each page says so and shows no form.
 - **Not found.** Unknown addresses return 404 with links to the index and Browse.
 
@@ -134,12 +135,17 @@ The shell, release strip, status label, lineage line, notice and route-state pag
 5. Snapshot identifiers in a seat record's source list wrap, which removed the sideways scroll at 390px.
 6. The pack's `favicon.svg`, `og.svg` and `hero.svg` were re-serialized without an `ns0:` prefix, which Next rejected as an app icon. Geometry and rendered output are unchanged.
 
+## Address and contact release, 2 October 2026
+
+1. The public address became `left-field.subcult.tv`. Almaz Caddy serves it through the same analytics proxy and origin as before and answers `seats.dsaslate.com` with a permanent redirect. The app's `metadataBase`, the Caddy examples and the monitor defaults follow.
+2. The About page lists `info@subcult.tv` and describes the self-hosted page-view counter instead of claiming the pages load no analytics.
+3. The flaky focus assertion in the lookup-form test now waits for the effect that moves focus.
+
 ## Verification and limits
 
-The product's checks passed on each merged revision: typecheck, lint, the fast unit lane (131 tests), the production contract, source-lock verification, the production build, and both hosted CI jobs on PR 54 and PR 55. On PR 55 the static job failed once on a focus-timing test of the lookup form, which the change does not touch, and passed when rerun. After the second release, six routes were loaded from the live site at 1280px and 390px: each rendered with the mark in the masthead, none scrolled sideways, none logged a console error, and an axe WCAG A/AA scan of each found no violations. The icon, touch icon, share card, manifest, manifest icon and banner each returned 200, and the share-card tags carry the public address and alt text. The district map drew on a live House seat record. The production monitor passed after each switch, and a full backup was taken before the first.
+The product's checks passed on each merged revision: typecheck, lint, the fast unit lane (131 tests), the production contract, source-lock verification, the production build, and both hosted CI jobs on PRs 54 to 57. On PR 55 the static job failed once on a focus-timing test of the lookup form, which the change does not touch, and passed when rerun. After the third release, five routes were loaded from the live site at 1280px and 390px: each rendered with the mark in the masthead, none scrolled sideways, none logged a console error, and an axe WCAG A/AA scan of each found no violations. The icon, touch icon, share card, manifest, manifest icon and banner each returned 200, and the share-card tags carry the public address and alt text. The district map drew on a live House seat record. The production monitor passed after each switch, and a full backup was taken before the first. The new hostname returned 200 on five routes with the counter injected, the old hostname redirected, and the production monitor passed with its public and Caddy probes pointed at the new host.
 
 Known limits on the live site:
 
 - Address lookup and correction intake are off, so their forms have not been exercised on the live site.
-- The About page gives subcult.tv as the contact. It lists no email address.
-- The repository's Caddy example still names `seats.dsaslate.us`, which does not resolve. The public address is `seats.dsaslate.com`.
+- Links published before 2 October 2026 point at `seats.dsaslate.com` and reach the site through a redirect; the share-card URLs in those pages were absolute and also redirect.

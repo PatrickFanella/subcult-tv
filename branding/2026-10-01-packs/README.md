@@ -51,7 +51,7 @@ then the same filter for `render_video_previews.py`, then
 `python finalize_left_field.py`. Its source observations and validation are
 inside `brands/left-field/`. The Left Field site carries the pack's icons, share card, banner and mark since October 2, 2026.
 
-Left Field website (updated October 2, 2026): [website design specification](brands/left-field/WEBSITE.md) records the site at seats.dsaslate.com after the interface audit and the two October 2 releases, including which pack files the site carries: copy rules, colour and type roles, page structure, components, interaction states and where the site differs from the field-ledger pack. `left_field_product.py` holds the site's interface roles, which `tokens.json` lists under `product_interface`. The [brand guide](brands/left-field/GUIDE.md) keeps the approved direction for promotional artwork.
+Left Field website (updated October 2, 2026): [website design specification](brands/left-field/WEBSITE.md) records the site at left-field.subcult.tv (formerly seats.dsaslate.com) after the interface audit and the two October 2 releases, including which pack files the site carries: copy rules, colour and type roles, page structure, components, interaction states and where the site differs from the field-ledger pack. `left_field_product.py` holds the site's interface roles, which `tokens.json` lists under `product_interface`. The [brand guide](brands/left-field/GUIDE.md) keeps the approved direction for promotional artwork.
 
 For the public site, export only the approved Left Field assets with
 `python scripts/export_left_field.py --site-root /path/to/subcult-tv` from the
