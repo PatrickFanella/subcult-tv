@@ -330,7 +330,7 @@ Landing content is in `src/lib/product-landings.ts`; route mapping is in
 `src/lib/product-paths.ts`. The pages use scoped adaptations of each product's
 source design tokens in `src/styles/product-landings.css`, including CLPR's
 Barlow typography, Patchwork's paper and moss palette, HasanAra's lime archive
-palette, Subcult OS's amber and serif system, Undertow's default Neon system,
+palette, Subcult OS's terminal system (Space Mono, purple actions, cyan focus), Undertow's default Neon system,
 Kork's pinned-card identity (cork field, paper cards, cobalt pins, Archivo Black),
 and Rekolekt's working identity. Interface previews use existing screenshots;
 illustrations are labeled as concepts.
