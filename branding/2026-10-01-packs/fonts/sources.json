@@ -136,5 +136,19 @@
       "CascadiaMono-Bold.ttf"
     ],
     "license_source": "https://raw.githubusercontent.com/microsoft/cascadia-code/main/LICENSE"
+  },
+  {
+    "family": "Space Mono",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/spacemono/SpaceMono-Bold.ttf",
+    "css": "Space Mono 400 and 700 from google/fonts ofl/spacemono (SpaceMono-Regular.ttf, SpaceMono-Bold.ttf). Retrieved 2026-10-02. Subcult OS self-hosts the same family as Latin WOFF2 from @fontsource/space-mono 5.2.9.",
+    "files": [
+      "Space-Mono-0.ttf",
+      "Space-Mono-1.ttf"
+    ],
+    "sha256": {
+      "Space-Mono-0.ttf": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18",
+      "Space-Mono-1.ttf": "405e73d41afb7e5906efce206a326af5c956f38e255f35421c260e861e599c59"
+    },
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/spacemono/OFL.txt"
   }
 ]

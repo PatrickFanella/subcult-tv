@@ -220,5 +220,23 @@
     "conservative_text_contrast_min": 4.7067,
     "sewing_assets": "original editable vectors",
     "browser_render": "T3 preview open timed out; not qualified"
+  },
+  "subcult_os_terminal_rebuild": {
+    "date": "2026-10-02",
+    "source": "https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme)",
+    "fonts": "Space Mono 400/700 from google/fonts ofl/spacemono; previous Liberation Serif and JetBrains Mono removed from the pack",
+    "svg_parse": 34,
+    "contrast": {
+      "text_on_base": "21.00:1",
+      "label_cyan_on_base": "16.75:1",
+      "accent_purple_on_base": "3.69:1 (fills and artwork only; white on purple 5.7:1)"
+    },
+    "video_preview": {
+      "codec": "h264",
+      "duration": 8,
+      "width": 1920,
+      "height": 1080
+    },
+    "visual": "Pack preview, lockups (primary, light, dark, mono), avatar, square, story, quote, release, landscape, screenshot frame, title card, lower third and end card inspected; light-variant mark letters fixed to stay white on the dark panel"
   }
 }
