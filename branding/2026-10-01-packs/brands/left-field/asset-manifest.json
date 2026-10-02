@@ -5,8 +5,13 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "6d63e22aa9c1cfae08812e3ce995eda412643e205a21df15643d8ce01a755039",
-      "bytes": 5844
+      "sha256": "e62058eab4e95827d2c432a6a3694134a0645cefe6702aba5d9446f89c97137a",
+      "bytes": 6200
+    },
+    {
+      "path": "WEBSITE.md",
+      "sha256": "f2ebdc66feb53be43f3c00f84425c638da4666112f0067f53b329f1ffb33334c",
+      "bytes": 13817
     },
     {
       "path": "alt-text.md",
@@ -253,8 +258,8 @@
     },
     {
       "path": "product/README.md",
-      "sha256": "3e98e89e21af17cf169047755bf0d4e0d6f809a25cb92ba50a05acbc3a22b2d5",
-      "bytes": 290
+      "sha256": "cd099fe35a770dbf3c4a41dfa5d663145773c2f516a9d00a8617d8ae38a90574",
+      "bytes": 371
     },
     {
       "path": "product/apple-touch-icon.png",
@@ -266,8 +271,8 @@
     },
     {
       "path": "product/favicon.svg",
-      "sha256": "582a6636cf740f2fb240a181d8dd67be126a16692d57c33e8c08b1dcfde970da",
-      "bytes": 368
+      "sha256": "2180ea7aef2fbb5c56bad64ec0743fa4c0cdf6b4826aa2db91d2d8e4313ab67e",
+      "bytes": 332
     },
     {
       "path": "product/hero-outlined.svg",
@@ -284,8 +289,8 @@
     },
     {
       "path": "product/hero.svg",
-      "sha256": "4755ce707a113462ca4b6479918c03dcb2d392a55d00379c9d884995ba1146cb",
-      "bytes": 1299
+      "sha256": "d5b381e11829afc6e2c149336eb53dd82113196e117ce86aa82f7d89d616f49c",
+      "bytes": 1203
     },
     {
       "path": "product/icon-192.png",
@@ -318,8 +323,8 @@
     },
     {
       "path": "product/og.svg",
-      "sha256": "e11902f3607439d960f4195415bc003c7e6cf34d4f496d5a4ba3f44b6712b05a",
-      "bytes": 1298
+      "sha256": "44ad011eee713ca9b5a6c5f03c510ec43a3de879e09f1e8f601224375b027421",
+      "bytes": 1202
     },
     {
       "path": "social/avatar.png",
@@ -440,8 +445,8 @@
     },
     {
       "path": "source-provenance.json",
-      "sha256": "6faa3ee9aae4e20bf774e2be91c2263c1b69f16502fef2a46e210b8bf51369da",
-      "bytes": 1438
+      "sha256": "3d3b4af52586ead499cc1207f4dbb7df768e8da9b4c94bf99d9875cf1209e9c3",
+      "bytes": 2232
     },
     {
       "path": "tokens.css",
@@ -450,8 +455,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "3a12e530e05d8b52be844cd5ddf8b93fa6be16182b9d8bccdf46e5801f7ec50f",
-      "bytes": 796
+      "sha256": "1b5820de58d77ace277c539b657da392a30f6ca03546a3b61100295891667434",
+      "bytes": 2778
     },
     {
       "path": "verification.json",

@@ -49,11 +49,17 @@ app’s paper, dark-ink and rust palette. Includes an original LF mark, editoria
 source-row layouts and web assets. The user approved the direction and revised LF mark. Rebuild with `BRAND_ONLY=left-field python build_packs.py`,
 then the same filter for `render_video_previews.py`, then
 `python finalize_left_field.py`. Its source observations and validation are
-inside `brands/left-field/`. No Left Field site assets have been replaced.
+inside `brands/left-field/`. The Left Field site carries the pack's icons, share card, banner and mark since October 2, 2026.
+
+Left Field website (updated October 2, 2026): [website design specification](brands/left-field/WEBSITE.md) records the site at seats.dsaslate.com after the interface audit and the two October 2 releases, including which pack files the site carries: copy rules, colour and type roles, page structure, components, interaction states and where the site differs from the field-ledger pack. `left_field_product.py` holds the site's interface roles, which `tokens.json` lists under `product_interface`. The [brand guide](brands/left-field/GUIDE.md) keeps the approved direction for promotional artwork.
 
 For the public site, export only the approved Left Field assets with
 `python scripts/export_left_field.py --site-root /path/to/subcult-tv` from the
 Studio root. The exporter verifies source hashes and writes destination
 provenance. The full pack remains in Studio.
 
+HasanAra website (updated October 2, 2026): [website design specification](brands/hasanara/WEBSITE.md) records hasanara.tv as deployed on October 2: copy, colour and type roles for both editions, assets, page structure and where the site differs from the Broadcast archive pack. `hasanara_product.py` holds the site roles that `build_packs.py` writes to `tokens.json` under `product_interface`. The guide, tokens and manifest were updated without regenerating artwork.
+
 Rekolekt website (updated October 2, 2026): [website design specification](brands/rekolekt/WEBSITE.md) records the implemented landing page, real transcript evidence, interaction states and responsive checks. The [brand guide](brands/rekolekt/GUIDE.md) retains the selected Index identity and links to this maintained specification.
+
+Patchwork website (updated October 2, 2026): [website design specification](brands/patchwork/WEBSITE.md) records the web app after the interface audit: page structure, copy rules, components, interaction states and where the site differs from the Neighbourhood fabric pack. `patchwork_product.py` holds the site's interface roles, which `tokens.json` lists under `product_interface`. The [brand guide](brands/patchwork/GUIDE.md) keeps the selected direction for promotional artwork.

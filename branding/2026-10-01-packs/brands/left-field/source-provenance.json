@@ -1,23 +1,23 @@
 {
   "observed_at": "2026-10-02",
   "source_repository": "https://git.subcult.tv/subculture-collective/left-field",
-  "source_revision": "abcf90fdd833adfb9fc6ba568d2e661742ff2538",
+  "source_revision": "1b071f2e5691a2359d11978c7d7850c0c43104fa",
   "source_files": [
     {
       "path": "src/app/globals.css",
-      "sha256": "5173cba337dc6637b0976856241a1ec0d373e578844aa57271613ff57d484688"
+      "sha256": "40b0189f28eae147f99a6a0eed7fc5d519b30733bf660f822c719d0267bcc8ce"
     },
     {
       "path": "src/components/presentational.tsx",
-      "sha256": "835c42e32c9a9bc34179deaefaad55422bae1ae3ee06c2a0161ffac6fb9ce50b"
+      "sha256": "5b408a08532a486f9fd6c8604d62a7511c29d622bf68217d0c55c85b15253f10"
     },
     {
       "path": "src/app/layout.tsx",
-      "sha256": "402668944e208200eac1b06d3f7015ff64a41f9033ab69dae4c705c6f95d58fb"
+      "sha256": "2df038d945abf88ca289a61e01f10031f1841d049a4e82824650120cd692ec3d"
     },
     {
       "path": "src/app/icon.svg",
-      "sha256": "48f66ef6a2a1365492fd4b2ac9d33755797ed2e3c69dcd81eb8d731949468288"
+      "sha256": "2180ea7aef2fbb5c56bad64ec0743fa4c0cdf6b4826aa2db91d2d8e4313ab67e"
     }
   ],
   "studio_baseline": "cb3cfbd",
@@ -28,8 +28,22 @@
     "revision": "User-requested revision: F extended to the L baseline; 26\u00d726 rust square at their intersection.",
     "approval": "User said perfect after the baseline/intersection revision; approved 2026-10-02."
   },
-  "palette": "Captured from src/app/globals.css; unchanged",
+  "palette": "Captured from src/app/globals.css. Paper, ink, rust and wash are unchanged; the site muted text colour moved from #64706a to #5c6862 in PR 54.",
   "type": "Liberation Serif and Public Sans are portable export alternatives to Georgia and Arial; JetBrains Mono follows Studio label conventions",
-  "public_domain": null,
-  "publication": "not performed"
+  "public_domain": "seats.dsaslate.com",
+  "publication": "not performed",
+  "deployment": {
+    "observed_at": "2026-10-02",
+    "public_url": "https://seats.dsaslate.com/",
+    "revision": "1b071f2e5691a2359d11978c7d7850c0c43104fa",
+    "source_tree_sha256": "21f9819ab1b30a426b1f574f547b063980c024758f74d25b8d74ce69b7bfae07",
+    "app_started_utc": "2026-10-02T21:23:46Z",
+    "previous_revision": "dbc17f65f3ad71a40a6932fd9835c6bd8706bc95",
+    "factual_release": "rel_full_20260804_v2",
+    "priority_index_model": "v1.14",
+    "pull_request": "https://git.subcult.tv/subculture-collective/left-field/pulls/55",
+    "website_specification": "WEBSITE.md",
+    "pack_assets_installed": true,
+    "pack_asset_record": "docs/brand/site-assets.json"
+  }
 }
