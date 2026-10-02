@@ -1,7 +1,7 @@
 {
   "observed_at": "2026-10-02",
   "source_repository": "https://git.subcult.tv/subculture-collective/left-field",
-  "source_revision": "1b071f2e5691a2359d11978c7d7850c0c43104fa",
+  "source_revision": "5f41c5fd5cc5441ded34f8efe3a1fab6ce2c9707",
   "source_files": [
     {
       "path": "src/app/globals.css",
@@ -13,7 +13,7 @@
     },
     {
       "path": "src/app/layout.tsx",
-      "sha256": "2df038d945abf88ca289a61e01f10031f1841d049a4e82824650120cd692ec3d"
+      "sha256": "94cc505f32be65cd7d5b1829363607492862ccfefdd6006e0dd1ebdb2807ca1c"
     },
     {
       "path": "src/app/icon.svg",
@@ -30,20 +30,21 @@
   },
   "palette": "Captured from src/app/globals.css. Paper, ink, rust and wash are unchanged; the site muted text colour moved from #64706a to #5c6862 in PR 54.",
   "type": "Liberation Serif and Public Sans are portable export alternatives to Georgia and Arial; JetBrains Mono follows Studio label conventions",
-  "public_domain": "seats.dsaslate.com",
+  "public_domain": "left-field.subcult.tv",
   "publication": "not performed",
   "deployment": {
     "observed_at": "2026-10-02",
-    "public_url": "https://seats.dsaslate.com/",
-    "revision": "1b071f2e5691a2359d11978c7d7850c0c43104fa",
-    "source_tree_sha256": "21f9819ab1b30a426b1f574f547b063980c024758f74d25b8d74ce69b7bfae07",
-    "app_started_utc": "2026-10-02T21:23:46Z",
-    "previous_revision": "dbc17f65f3ad71a40a6932fd9835c6bd8706bc95",
+    "public_url": "https://left-field.subcult.tv/",
+    "revision": "5f41c5fd5cc5441ded34f8efe3a1fab6ce2c9707",
+    "source_tree_sha256": "daf521354e48713c1ab9ce61758484ee57f700fa1e2a40eb3e10531965846542",
+    "app_started_utc": "2026-10-02T23:05:00Z",
+    "previous_revision": "1b071f2e5691a2359d11978c7d7850c0c43104fa",
     "factual_release": "rel_full_20260804_v2",
     "priority_index_model": "v1.14",
-    "pull_request": "https://git.subcult.tv/subculture-collective/left-field/pulls/55",
+    "pull_request": "https://git.subcult.tv/subculture-collective/left-field/pulls/57",
     "website_specification": "WEBSITE.md",
     "pack_assets_installed": true,
-    "pack_asset_record": "docs/brand/site-assets.json"
+    "pack_asset_record": "docs/brand/site-assets.json",
+    "former_public_url": "https://seats.dsaslate.com/ (301 redirect)"
   }
 }
