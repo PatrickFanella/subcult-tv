@@ -25,9 +25,11 @@ export default function Nav() {
           {/* Logo */}
           <Link
             to="/"
-            className="font-display text-xl font-bold tracking-[0.2em] text-glow hover:text-signal transition-colors no-underline"
+            aria-label="SUBCULT home"
+            className="subcult-nav-brand font-display text-xl font-bold tracking-[0.2em] text-glow hover:text-signal transition-colors no-underline"
           >
-            SUBCULT
+            <img src="/brand/subcult/master.svg" className="subcult-nav-mark" alt="" />
+            <span>SUBCULT</span>
           </Link>
 
           {/* Desktop nav */}

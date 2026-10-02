@@ -53,9 +53,6 @@ export default function AdminDashboard() {
       {/* Quick info */}
       <div className="bg-soot border border-fog p-6">
         <div className="flex items-center gap-2 mb-4">
-          <span className="w-2.5 h-2.5 rounded-full bg-signal" />
-          <span className="w-2.5 h-2.5 rounded-full bg-flicker" />
-          <span className="w-2.5 h-2.5 rounded-full bg-static" />
           <span className="font-mono text-xs text-dust ml-2">system.log</span>
         </div>
         <div className="font-mono text-sm space-y-1">

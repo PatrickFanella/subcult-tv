@@ -348,3 +348,54 @@ export interface PublicStats {
 export async function getPublicStats() {
   return apiFetch<PublicStats>('/api/v1/stats');
 }
+
+export interface StudioBrand {
+  slug: string;
+  name: string;
+  direction: string;
+  guide: string;
+  preview: string;
+  logos: string[];
+  tokens: { colors: Record<string, string>; fonts: Record<string, string> };
+}
+export interface StudioMedia {
+  id: string;
+  title: string;
+  products: string[];
+  rights: string;
+  kind: string;
+  status: string;
+  alt_text: string;
+  source: string;
+  asset: string;
+}
+export interface StudioCatalog {
+  version: number;
+  brands: StudioBrand[];
+  media: StudioMedia[];
+  files: Record<string, { name: string; path: string; sha256: string }>;
+}
+export interface StudioJobs {
+  connected: boolean;
+  stale?: boolean;
+  observed_at?: string;
+  receipt: {
+    status: string;
+    mode: string;
+    week: string;
+    run_id: string;
+    draft_count: number;
+    checked_at: string;
+  } | null;
+}
+export const getStudioCatalog = () => apiFetch<StudioCatalog>('/api/v1/admin/studio');
+export const getStudioJobs = () => apiFetch<StudioJobs>('/api/v1/admin/studio/jobs');
+export async function getStudioAsset(id: string, signal?: AbortSignal): Promise<Blob> {
+  const token = getToken();
+  const response = await fetch(`${API_BASE}/api/v1/admin/studio/assets/${encodeURIComponent(id)}`, {
+    headers: token ? { Authorization: `Bearer ${token}` } : {},
+    signal,
+  });
+  if (!response.ok) throw new APIError('Unable to load Studio asset', response.status);
+  return response.blob();
+}

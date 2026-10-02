@@ -30,21 +30,16 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="min-h-screen bg-void flex items-center justify-center px-4">
+    <div className="admin-login min-h-screen bg-void flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
-        {/* Terminal header */}
         <div className="bg-soot border border-fog">
-          <div className="flex items-center gap-2 px-3 py-2 bg-ash border-b border-fog">
-            <span className="w-2.5 h-2.5 rounded-full bg-signal" />
-            <span className="w-2.5 h-2.5 rounded-full bg-flicker" />
-            <span className="w-2.5 h-2.5 rounded-full bg-static" />
-            <span className="flex-1 text-center font-mono text-xs text-dust">subcult://auth</span>
-          </div>
+          <div className="admin-panel-heading font-mono text-xs">SUBCULT / ADMIN ACCESS</div>
 
           <div className="p-6">
             {/* Header */}
             <div className="text-center mb-8">
-              <h1 className="text-3xl font-display text-signal tracking-widest mb-2">SUBCULT</h1>
+              <img src="/brand/subcult/master.svg" className="admin-login-mark" alt="" />
+              <h1 className="text-3xl font-display text-glow tracking-widest mb-2">SUBCULT</h1>
               <p className="font-mono text-xs text-dust">&gt; CONTROL PANEL ACCESS</p>
             </div>
 
@@ -97,8 +92,8 @@ export default function AdminLogin() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full py-2.5 bg-signal text-void font-mono text-sm font-bold tracking-wider
-                           hover:bg-signal-dim transition-colors duration-200 cursor-pointer disabled:opacity-50"
+                className="w-full py-2.5 bg-static text-void font-mono text-sm font-bold tracking-wider
+                           hover:bg-glow transition-colors duration-200 cursor-pointer disabled:opacity-50"
               >
                 {submitting ? 'AUTHENTICATING...' : 'AUTHENTICATE'}
               </button>

@@ -11,7 +11,7 @@
   --color-ash: #1a1a1a;
   --color-smoke: #2a2a2a;
   --color-fog: #3a3a3a;
-  --color-dust: #6b6b6b;
+  --color-dust: #a29aaa;
   --color-bone: #c4b9a7;
   --color-chalk: #e8e0d0;
   --color-glow: #f0ece4;
@@ -33,7 +33,7 @@
 
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
   --font-display: 'Oswald', 'Impact', sans-serif;
-  --font-body: 'Libre Baskerville', 'Georgia', serif;
+  --font-body: 'Space Grotesk', sans-serif;
 
   --shadow-glow: 0 0 20px rgba(139, 92, 246, 0.3);
   --shadow-scan: 0 0 30px rgba(224, 64, 251, 0.2);

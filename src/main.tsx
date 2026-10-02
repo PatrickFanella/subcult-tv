@@ -5,6 +5,7 @@ import { EffectsProvider } from '@/context/EffectsContext';
 import { AuthProvider } from '@/context/AuthContext';
 import App from '@/App';
 import '@/index.css';
+import '@/styles/subcult-brand.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

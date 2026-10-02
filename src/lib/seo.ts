@@ -34,7 +34,7 @@ const ORGANIZATION = {
   name: SITE_NAME,
   alternateName: 'Subculture Collective',
   url: SITE_URL,
-  logo: `${SITE_URL}/brand/subcult-logo.png`,
+  logo: `${SITE_URL}/brand/subcult/mark.png`,
   email: 'info@subcult.tv',
   sameAs: SOCIAL_PROFILES,
 };

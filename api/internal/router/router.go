@@ -99,6 +99,9 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 
 			// Admin dashboard
 			admin.Get("/admin/stats", h.DashboardStats)
+			admin.Get("/admin/studio", h.StudioCatalog)
+			admin.Get("/admin/studio/jobs", h.StudioJobs)
+			admin.Get("/admin/studio/assets/{id}", h.StudioAsset)
 
 			// Projects CRUD
 			admin.Post("/projects", h.CreateProject)

@@ -1,0 +1,11 @@
+# Generate the private bundle with subcult-studio/scripts/export_studio.py first.
+# Usage: STUDIO_BUNDLE_ROOT=/absolute/bundle docker compose -f docker-compose.yml -f docker-compose.studio.yml up -d --build
+services:
+  subcult-tv-api:
+    environment:
+      STUDIO_ROOT: /studio
+    volumes:
+      - type: bind
+        source: ${STUDIO_BUNDLE_ROOT:?Set STUDIO_BUNDLE_ROOT to the exported private bundle}
+        target: /studio
+        read_only: true

@@ -1,0 +1,10 @@
+# Optional read-only receipt source. Does not activate or migrate jobs.
+services:
+  subcult-tv-api:
+    environment:
+      STUDIO_STATE_ROOT: /studio-state
+    volumes:
+      - type: bind
+        source: ${STUDIO_RECEIPT_ROOT:?Set STUDIO_RECEIPT_ROOT to the runner state directory}
+        target: /studio-state
+        read_only: true
