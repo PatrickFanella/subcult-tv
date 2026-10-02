@@ -5,8 +5,13 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "6d63e22aa9c1cfae08812e3ce995eda412643e205a21df15643d8ce01a755039",
-      "bytes": 5844
+      "sha256": "e51694df792a2cee8d33303b1c7f076d4a3202c1bd5a7f3119462b5ff5a9e7e1",
+      "bytes": 6180
+    },
+    {
+      "path": "WEBSITE.md",
+      "sha256": "71bf37c89249efc385aff4c8ac026cc12d2c73718870dbda94ad73a805de21ee",
+      "bytes": 11737
     },
     {
       "path": "alt-text.md",
@@ -440,8 +445,8 @@
     },
     {
       "path": "source-provenance.json",
-      "sha256": "6faa3ee9aae4e20bf774e2be91c2263c1b69f16502fef2a46e210b8bf51369da",
-      "bytes": 1438
+      "sha256": "394654edf7a4506592964dbab008ba3b6eb70469eeb600a10b155e9d6676bd94",
+      "bytes": 2177
     },
     {
       "path": "tokens.css",
@@ -450,8 +455,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "3a12e530e05d8b52be844cd5ddf8b93fa6be16182b9d8bccdf46e5801f7ec50f",
-      "bytes": 796
+      "sha256": "ed4e560c9ae6c95a369bec91901b9e8f62cdf13f78ff03451847d916fea2e434",
+      "bytes": 2337
     },
     {
       "path": "verification.json",

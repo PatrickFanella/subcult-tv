@@ -1,19 +1,19 @@
 {
   "observed_at": "2026-10-02",
   "source_repository": "https://git.subcult.tv/subculture-collective/left-field",
-  "source_revision": "abcf90fdd833adfb9fc6ba568d2e661742ff2538",
+  "source_revision": "dbc17f65f3ad71a40a6932fd9835c6bd8706bc95",
   "source_files": [
     {
       "path": "src/app/globals.css",
-      "sha256": "5173cba337dc6637b0976856241a1ec0d373e578844aa57271613ff57d484688"
+      "sha256": "185f92202ccac0693651cee7cb183334860c8722c266abe24a71dddb4fd938d1"
     },
     {
       "path": "src/components/presentational.tsx",
-      "sha256": "835c42e32c9a9bc34179deaefaad55422bae1ae3ee06c2a0161ffac6fb9ce50b"
+      "sha256": "a991a597582809bdf6a0fc10e44a39b9b009b71af0840d16f3135b32b50495d5"
     },
     {
       "path": "src/app/layout.tsx",
-      "sha256": "402668944e208200eac1b06d3f7015ff64a41f9033ab69dae4c705c6f95d58fb"
+      "sha256": "b23917508f6b11db92070c3ff3a663837e4295a77ebc0828edce9bb366ae0586"
     },
     {
       "path": "src/app/icon.svg",
@@ -28,8 +28,21 @@
     "revision": "User-requested revision: F extended to the L baseline; 26\u00d726 rust square at their intersection.",
     "approval": "User said perfect after the baseline/intersection revision; approved 2026-10-02."
   },
-  "palette": "Captured from src/app/globals.css; unchanged",
+  "palette": "Captured from src/app/globals.css. Paper, ink, rust and wash are unchanged; the site muted text colour moved from #64706a to #5c6862 in PR 54.",
   "type": "Liberation Serif and Public Sans are portable export alternatives to Georgia and Arial; JetBrains Mono follows Studio label conventions",
-  "public_domain": null,
-  "publication": "not performed"
+  "public_domain": "seats.dsaslate.com",
+  "publication": "not performed",
+  "deployment": {
+    "observed_at": "2026-10-02",
+    "public_url": "https://seats.dsaslate.com/",
+    "revision": "dbc17f65f3ad71a40a6932fd9835c6bd8706bc95",
+    "source_tree_sha256": "7ea8f2dcfd166a7ed8c567a7d6fdda433f9cf13872c23de9637682d3b1ad3f72",
+    "app_started_utc": "2026-10-02T18:31:32Z",
+    "previous_revision": "afa0b7da14687d84d2315673bcbd6caf119dd216",
+    "factual_release": "rel_full_20260804_v2",
+    "priority_index_model": "v1.14",
+    "pull_request": "https://git.subcult.tv/subculture-collective/left-field/pulls/54",
+    "website_specification": "WEBSITE.md",
+    "pack_assets_installed": false
+  }
 }
