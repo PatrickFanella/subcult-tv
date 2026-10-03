@@ -217,8 +217,8 @@ A page may use one of these when it is the best way to say the thing. Two produc
 **Sounds like:** a frank note about money. Says what support pays for and what it does not buy. First person plural. No gratitude theatre and no tiers described as experiences.
 
 **Sample lines:**
-- "Paying doesn't unlock anything. The software stays public either way."
-- "What you get is the workshop: one field note a week and a monthly ledger of what shipped and what stalled."
+- "Paying doesn't unlock the software. It stays public either way."
+- "A paid membership covers hosting, tools and hours, and gets you into the private Discord channels and the supporter posts. We post when we have something to share, not on a schedule."
 
 ## Teasers and The Common House
 
