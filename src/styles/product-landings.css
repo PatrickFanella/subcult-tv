@@ -90,9 +90,9 @@
   --lp-accent-text: #00ffff;
   --lp-on-accent: #ffffff;
   --lp-focus: #00ffff;
-  --lp-radius: 0px;
+  --lp-radius: 8px;
   --lp-body: 'Space Mono', 'Courier New', monospace;
-  --lp-display: 'Space Mono', 'Courier New', monospace;
+  --lp-display: 'Oswald', 'Impact', sans-serif;
   --lp-mono: 'Space Mono', 'Courier New', monospace;
 }
 .product-landing[data-product='undertow'] {
@@ -566,9 +566,19 @@
   border-radius: 3px 12px 3px 12px;
   box-shadow: 2px 2px 0 rgb(23 32 25 / 22%);
 }
-/* Subcult OS terminal foundations: square, monospace, uppercase actions. */
+/* Subcult OS: terminal foundations with the ticket-stub display layer. Oswald capitals for
+   headings, Space Mono for the wordmark and everything read or pressed, 8 px corners. */
 .product-landing[data-product='subcult-os'] :is(h1, h2, h3) {
   letter-spacing: 0;
+  text-transform: uppercase;
+}
+.product-landing[data-product='subcult-os'] .landing-wordmark h1 {
+  font-family: var(--lp-mono);
+  text-transform: none;
+}
+.product-landing[data-product='subcult-os'] #features-title {
+  font-family: var(--lp-body);
+  text-transform: none;
 }
 .product-landing[data-product='subcult-os'] .landing-button {
   font-weight: 700;

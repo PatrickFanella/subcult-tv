@@ -184,21 +184,22 @@
     "fg": "#ffffff",
     "accent": "#7c3aed",
     "secondary": "#00ffff",
-    "display": "Space Mono",
+    "display": "Oswald",
     "body": "Space Mono",
     "headline": [
-      "From the plan",
-      "to the last ticket."
+      "FROM THE PLAN",
+      "TO THE LAST TICKET."
     ],
     "tag": "PLAN / COORDINATE / RUN DOOR / SETTLE / ARCHIVE",
-    "description": "Subcults terminal system: Space Mono, square frames, purple actions and cyan focus on a black canvas, matching the live site.",
+    "description": "Subcults terminal system with a ticket-stub display layer: Oswald capitals for headlines, Space Mono for everything read or pressed, 8-pixel corners, purple actions and cyan labels on a black canvas, matching the live site.",
     "mode": "os",
     "url": "os.subcult.tv",
-    "source": "Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02",
+    "source": "Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02; ticket-stub display layer and 8-pixel radius selected by the user on 2026-10-03",
     "slug": "subcult-os",
     "label": "Space Mono",
     "safe_label": "#00ffff",
-    "selected_by_user": true
+    "selected_by_user": true,
+    "radius": 8
   },
   {
     "id": "undertow",

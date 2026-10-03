@@ -53,7 +53,8 @@ def wordmark(d,x,y,maxw=730):
  if d['slug']=='dedhed':return DH.wordmark(d,x,y,maxw)
  if d['slug']=='tadooer':return TD.wordmark(d,x,y,maxw)
  name={'patrick__eff':'PATRICK__EFF','rekolekt':'rekolekt','subcult':'SUBCULT','subcult-os':'Subcult OS','hasanara':'HasanAra','undertow':'UNDERTOW','patchwork':'Patchwork','kork':'kork','prichal':'PRICHAL'}[d['slug']]
- return T(x,y,name,91,d['fg'],d['display'],700,maxw=maxw)
+ # The Subcult OS wordmark stays live Space Mono on the site; only its headlines use the display face.
+ return T(x,y,name,91,d['fg'],'Space Mono' if d['slug']=='subcult-os' else d['display'],700,maxw=maxw)
 def write_svg(dest,name,body,w,h,exportw=None,outlined=False):
  if 'patrick__eff' in dest.parts and not name.startswith('mark-') and 'mono' not in name:body=H.patrick_style(body)
  p=dest/(name+'.svg');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(H.svg(body,w,h,name))
@@ -91,7 +92,7 @@ def poster(d,w,h,kind):
  if d['slug']=='clpr':return C.poster(d,w,h,kind)
  s=base(d,w,h);m=48;s+=label(d,m,64,d['tag'],19,maxw=w-96)
  if kind=='story':
-  s+=source_mark(d,m,265,160)+T(m,528,d['brand'],64,d['fg'],d['display'],700,maxw=w-96)
+  s+=source_mark(d,m,265,160)+T(m,528,d['brand'],64,d['fg'],'Space Mono' if d['slug']=='subcult-os' else d['display'],700,maxw=w-96)
   for i,htext in enumerate(d.get('headline_stack',d['headline'])):s+=T(m,735+i*125,htext,88,d['fg'],d['display'],700,maxw=w-96)
   if d['slug']=='clpr':s+=filmstrip(d,m,1050,w-96,250)+timeline(d,m,1335,w-96,93)
   elif d['slug']=='patrick__eff':s+=H.patrick_wave(m,1150,w-96,240,d,41)
@@ -102,6 +103,7 @@ def poster(d,w,h,kind):
   elif d['slug']=='prichal':s+=H.docking_ports(d,m,1150,w-96,150)
   elif d['slug']=='dedhed':s+=DH.shelf(d,m,1040,w-96,400)
   elif d['slug']=='tadooer':s+=TD.day(d,m,1040,w-96,400)
+  elif d['slug']=='subcult-os':s+=H.os_index(d,m,1080,['PLAN','RUN DOOR','ARCHIVE'],34,70)+H.os_bars(m,1300,w-96,90,d['accent'],3)
   else:s+=line(m,1120,w-48,1120,d['accent'],12)
   s+=T(m,1500,'YOUR NOTE OR INVITATION',31,d['fg'],d['body'],700,maxw=w-96)+T(m,1560,'Replace this line with approved copy.',25,d['fg'],d['body'],maxw=w-96)+T(m,1652,d.get('url') or d['brand']+' by SUBCULT',25,d['fg'],d['body'])
  elif kind=='landscape':
@@ -122,14 +124,14 @@ def poster(d,w,h,kind):
 def screenshot(d):
  if d['slug']=='clpr':return C.screenshot(d)
  w,h=1600,1000;s=base(d,w,h)+label(d,48,65,d['brand'].upper()+' / WORKFLOW CAPTURE',20)
- s+=rect(48,110,1504,738,'none',8 if d['slug']=='patchwork' else 0,d['safe_label'])+T(104,465,'PLACE A VERIFIED SCREENSHOT HERE',36,d['fg'],d['label'],maxw=1350)+T(104,519,'Crop private data. Keep interface text legible.',28,d['fg'],d['body'])+footer(d,w,h)
+ s+=rect(48,110,1504,738,'none',8 if d['slug']=='patchwork' else d.get('radius',0),d['safe_label'])+T(104,465,'PLACE A VERIFIED SCREENSHOT HERE',36,d['fg'],d['label'],maxw=1350)+T(104,519,'Crop private data. Keep interface text legible.',28,d['fg'],d['body'])+footer(d,w,h)
  return s
 
 def video(d,kind):
  if d['slug']=='clpr':return C.video(d,kind)
  w,h=1920,1080
  if kind=='lower-third':
-  s=rect(96,823,1728,174,d['bg'])+rect(96,823,12,174,d['accent'])+source_mark(d,128,847,113)+T(278,892,'TITLE / SPEAKER',46,d['fg'],d['display'],700,maxw=1400)+T(278,950,'One short line of context.',30,d['fg'],d['body'])
+  s=rect(96,823,1728,174,d['bg'],d.get('radius',0))+(f'<path d="M{96+d["radius"]} 823H108V997H{96+d["radius"]}A{d["radius"]} {d["radius"]} 0 0 1 96 {997-d["radius"]}V{823+d["radius"]}A{d["radius"]} {d["radius"]} 0 0 1 {96+d["radius"]} 823Z" fill="{d["accent"]}"/>' if d.get('radius') else rect(96,823,12,174,d['accent']))+source_mark(d,128,847,113)+T(278,892,'TITLE / SPEAKER',46,d['fg'],d['display'],700,maxw=1400)+T(278,950,'One short line of context.',30,d['fg'],d['body'])
  elif kind=='end-card':
   s=base(d,w,h)+source_mark(d,160,313,260)+wordmark(d,499,489,1240)+T(499,615,d.get('url') or d['brand']+' by SUBCULT',40,d['fg'],d['body'])+line(160,825,1760,825,d['accent'],4)
  else:
@@ -244,15 +246,19 @@ The full voice and its sample lines are in [the voice guide](../../../../content
  'hasanara':HA.GUIDE_NOTE,
  'subcult-os':'''## Notes for this pack
 
-The pack matches the live os.subcult.tv design system: the Subcults terminal foundation, selected by the user on September 30, 2026. The source of truth is `contracts/design/tokens.json` in the subcult-os repository.
+The pack matches the live os.subcult.tv design system: the Subcults terminal foundation, selected by the user on September 30, 2026, with the ticket-stub display layer and 8-pixel corners the user selected on October 3, 2026. The source of truth is `contracts/design/tokens.json` and `docs/design-system.md` in the subcult-os repository.
 
 ### Type
 
-Space Mono is the only typeface. Bold sets headings, buttons and labels, and it is the heaviest weight. Regular sets body copy. Labels are uppercase with wide tracking.
+Oswald Bold sets headlines, in capitals. Space Mono sets everything else: body copy, labels, buttons and the "Subcult OS" wordmark. Bold is the heaviest weight. Labels are uppercase with wide tracking.
 
 ### Shape
 
-Corners are square everywhere. Panels separate with visible borders, not shadows.
+One 8-pixel radius on controls, cards, panels and frames, scaled with the artwork. Panels separate with visible borders, not shadows. The OS lettermark keeps its square frame; it is the selected product mark, so corners are not added to it.
+
+### Ticket stub
+
+The signature graphic is the purple admit-one stub from the subcult.tv product illustration: a "SUBCULT OS / ADMIT ONE" kicker in Space Mono, an Oswald headline and a white barcode. In artwork it tilts 3 degrees. Numbered labels in the form "01 / PLAN" sit beside it in cyan. The barcode is decoration and never encodes a ticket. On the site, a stub that frames an issued ticket or anything staff scan stays upright.
 
 ### Color
 
@@ -260,6 +266,7 @@ Corners are square everywhere. Panels separate with visible borders, not shadows
 - Cyan also marks focus.
 - Status colors (green, amber, red, cyan) mark states and always come with words.
 - Event artwork stays immersive and black.
+- The app's light theme uses muted off-white panels (#f8f6fa) on a lavender-grey canvas (#eeebf3) rather than pure white. Its labels are deep purple (#5b21b6). This pack's artwork stays on the black base.
 
 ### Mark on the site
 
@@ -446,7 +453,7 @@ Reference: {d['source']}. {observed} Original files in the legacy library are pr
   'kork':('Cork-textured banner. Label: LINK PAGES / BY SUBCULT. Black headline on three lines: ALL OF IT, PINNED TO ONE LINK. At the right, four paper cards held by blue pushpins: @yourname (social), $yourname (tips), a decorative QR pattern and WATCH (latest video). Small text: kork.subcult.tv.', 'Cork-textured square. Headline: PIN IT UP. Line below: Share one link for everything. Three pinned paper cards: @yourname, $yourname and a decorative QR pattern. Small text: kork.subcult.tv.', 'The Kork mark on cork: a tilted paper card with two black rows, held by a blue pushpin.'),
   'prichal':('Paper-colored banner. At the left, the Prichal mark: a dark sphere with a dashed equator and four collars, the right one red. Label: ПРИЧАЛ · ACCOUNT HOSTING. Wordmark: PRICHAL, with a short red rule under it. Line: Your server. We keep it running. A strip along the bottom reads PORT 01 to 06, with prichal.subcult.tv at the right.', 'Paper-colored square. Label: ACCOUNT HOSTING / BY SUBCULT. The Prichal mark and wordmark, then the headline DOCK YOUR ACCOUNT. Below it, six numbered boxes, 01 to 06, with 04 filled red. Small text: prichal.subcult.tv.', 'The Prichal mark on paper: a dark sphere with a dashed equator and four collars, the right one red. A faint tick scale runs down the left edge.'),
   'undertow':('Dark violet banner. Pink wordmark: UNDERTOW. Cyan label: AUDIO / LAYERS / MOTION. White headline with pink and cyan offsets: GIVE THE TRACK SOMETHING TO LOOK AT. At the right, a narrow pink and cyan waveform. Small text: undertow.subcult.tv.', 'Dark violet square. Label: MUSIC VISUALS / LYRICS / LOCAL EXPORT. Headline: MAKE IT MOVE., with MOVE. in pink. Below it, a pink waveform in a cyan frame. Small text: undertow.subcult.tv.', 'A rounded square outline with five vertical bars inside, in a pink-to-cyan gradient, on dark violet.'),
-  'subcult-os':('Black banner in monospace type. Subcult OS, then > os.subcult.tv in cyan. Headline: From the plan to the last ticket. Five boxes along the bottom read PLAN, COORDINATE, RUN DOOR, SETTLE and ARCHIVE, with RUN DOOR filled purple. At the top right, the letters OS and a cyan cursor block in a purple frame.', 'Black square in monospace type. Label: PLAN / COORDINATE / RUN DOOR / SETTLE / ARCHIVE. Headline: 19:00 doors. Everyone on one sheet. Three rows: 01 PLAN THE EVENT, 02 RUN THE DOOR (filled purple) and 03 SETTLE AND ARCHIVE. Small text: os.subcult.tv.', 'The letters OS in white with a cyan cursor block, inside a purple square frame on black.'),
+  'subcult-os':('Black banner. At the top left, the OS lettermark beside Subcult OS, then > os.subcult.tv in cyan. Below, a cyan numbered list: 01 / PLAN, 02 / COORDINATE, 03 / RUN DOOR, 04 / SETTLE and 05 / ARCHIVE. At the right, a tilted purple ticket stub with rounded corners reads SUBCULT OS / ADMIT ONE, then FROM THE PLAN TO THE LAST TICKET. in white capitals, over a white barcode.', 'Black square. Cyan label: PLAN / COORDINATE / RUN DOOR / SETTLE / ARCHIVE. A tilted purple ticket stub with rounded corners reads SUBCULT OS / ADMIT ONE, then 19:00 DOORS. in large white capitals, Everyone on one sheet. below it, and a white barcode. Under the stub, a cyan numbered list: 01 / PLAN THE EVENT, 02 / RUN THE DOOR, 03 / SETTLE AND ARCHIVE. Small text: os.subcult.tv.', 'The letters OS in white with a cyan cursor block, inside a purple square frame on black.'),
   'patchwork':('Warm paper banner. The Patchwork wordmark and the headline A little help, from a friend. in dark green serif type. Small label: MUTUAL AID, BLOCK BY BLOCK. At the right, four stitched fabric patches in green, tomato, yellow and sage. Small text: patchwork.subcult.tv.', 'Warm paper square. Label: MUTUAL AID, BLOCK BY BLOCK. Green serif headline: Small favors, close to home. Two stitched buttons: HELP A NEIGHBOUR in green and PASS IT ON in tomato. Line below: Mutual aid, block by block. Small text: patchwork.subcult.tv.', 'A paper-colored letter P on a tomato fabric patch with a dashed line of stitching, on warm paper.'),
   'hasanara':('Near-black banner. Wordmark: HasanAra. Red label: BROADCAST ARCHIVE, over a red rule. Headline in off-white serif type: He said it on stream. The record shows when. Small text: Search / passages / original context. At the right, the PBS artwork: an orange head in profile with glasses forming the P, then B and S in red.', 'Near-black square. Red label: PIKER BROADCASTING SERVICE, over a red rule. Serif headline: Check the tape before you quote it. Below it, a panel labelled SOURCE / TIMESTAMP / CONTEXT with three grey lines standing in for text. Small text: hasanara.tv.', 'The PBS artwork on near-black: an orange head in profile with glasses forming the P, then B and S in red.'),
   'rekolekt':('Dark green banner. Lowercase wordmark: rekolekt. Lime label: BY SUBCULT. Headline in warm white: The sentence, and where it was said. Line below a lime rule: Software for timestamped, searchable recording archives. At the right, the mark: three lime bars of different heights between square brackets.', 'Dark green square. Label: REKOLEKT BY SUBCULT. Headline: Make a recording into an archive. Below it, the bracketed three-bar mark beside three lime labels: SEARCH, QUOTE and RETURN TO SOURCE. Small text: rekolekt / by SUBCULT.', 'The Rekolekt mark on dark green: three lime bars of different heights between square brackets.'),
@@ -473,7 +480,7 @@ for d in BRANDS:
   continue
  dest=R/'brands'/d['slug'];dest.mkdir(parents=True,exist_ok=True);(dest/'fonts').mkdir(exist_ok=True)
  for name in font_files(d):shutil.copy2(R/'fonts'/name,dest/'fonts'/name)
- tokens={'brand':d['brand'],'direction':d['name'],'status':'local production pack v1','colors':{k:d[k] for k in ['bg','fg','accent','secondary','safe_label']},'fonts':{k:d[k] for k in ['display','body','label','support'] if k in d},'spacing':[8,16,24,32,48,64,96],'mark_clear_space':'25% of mark height','mark_min_width_px':32,'source':d['source'],'direction_selection':d.get('direction_selection') or ('user' if d['selected_by_user'] else 'established-theme example')}
+ tokens={'brand':d['brand'],'direction':d['name'],'status':'local production pack v1','colors':{k:d[k] for k in ['bg','fg','accent','secondary','safe_label']},'fonts':{k:d[k] for k in ['display','body','label','support'] if k in d},**({'radius_px':d['radius']} if 'radius' in d else {}),'spacing':[8,16,24,32,48,64,96],'mark_clear_space':'25% of mark height','mark_min_width_px':32,'source':d['source'],'direction_selection':d.get('direction_selection') or ('user' if d['selected_by_user'] else 'established-theme example')}
  if d['slug']=='subcult':
   (dest/'logos').mkdir(exist_ok=True)
   (dest/'logos/master.svg').write_text(SA.selected_svg())

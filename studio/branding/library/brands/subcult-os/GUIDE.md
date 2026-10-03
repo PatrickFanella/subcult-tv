@@ -2,19 +2,23 @@
 
 Selected direction: **B / The terminal ledger**. Status: local production pack v1. Selecting a direction does not approve a post or a profile change.
 
-Subcults terminal system: Space Mono, square frames, purple actions and cyan focus on a black canvas, matching the live site.
+Subcults terminal system with a ticket-stub display layer: Oswald capitals for headlines, Space Mono for everything read or pressed, 8-pixel corners, purple actions and cyan labels on a black canvas, matching the live site.
 
 ## Notes for this pack
 
-The pack matches the live os.subcult.tv design system: the Subcults terminal foundation, selected by the user on September 30, 2026. The source of truth is `contracts/design/tokens.json` in the subcult-os repository.
+The pack matches the live os.subcult.tv design system: the Subcults terminal foundation, selected by the user on September 30, 2026, with the ticket-stub display layer and 8-pixel corners the user selected on October 3, 2026. The source of truth is `contracts/design/tokens.json` and `docs/design-system.md` in the subcult-os repository.
 
 ### Type
 
-Space Mono is the only typeface. Bold sets headings, buttons and labels, and it is the heaviest weight. Regular sets body copy. Labels are uppercase with wide tracking.
+Oswald Bold sets headlines, in capitals. Space Mono sets everything else: body copy, labels, buttons and the "Subcult OS" wordmark. Bold is the heaviest weight. Labels are uppercase with wide tracking.
 
 ### Shape
 
-Corners are square everywhere. Panels separate with visible borders, not shadows.
+One 8-pixel radius on controls, cards, panels and frames, scaled with the artwork. Panels separate with visible borders, not shadows. The OS lettermark keeps its square frame; it is the selected product mark, so corners are not added to it.
+
+### Ticket stub
+
+The signature graphic is the purple admit-one stub from the subcult.tv product illustration: a "SUBCULT OS / ADMIT ONE" kicker in Space Mono, an Oswald headline and a white barcode. In artwork it tilts 3 degrees. Numbered labels in the form "01 / PLAN" sit beside it in cyan. The barcode is decoration and never encodes a ticket. On the site, a stub that frames an issued ticket or anything staff scan stays upright.
 
 ### Color
 
@@ -22,6 +26,7 @@ Corners are square everywhere. Panels separate with visible borders, not shadows
 - Cyan also marks focus.
 - Status colors (green, amber, red, cyan) mark states and always come with words.
 - Event artwork stays immersive and black.
+- The app's light theme uses muted off-white panels (#f8f6fa) on a lavender-grey canvas (#eeebf3) rather than pure white. Its labels are deep purple (#5b21b6). This pack's artwork stays on the black base.
 
 ### Mark on the site
 
@@ -49,7 +54,7 @@ Measured contrast against the base: text **21.00:1**, small label **16.75:1**, a
 
 ## Typography and spacing
 
-- Display: Space Mono, bold, for headlines.
+- Display: Oswald, bold, for headlines.
 - Body: Space Mono, regular and bold.
 - Labels: Space Mono, regular.
 - Spacing steps: 8, 16, 24, 32, 48, 64 and 96 pixels.
@@ -99,4 +104,4 @@ Use verified product claims and exact approved copy. Each product has its own vo
 
 Alt text describes the finished image, including the words visible in it. Do not describe a screenshot placeholder as a working feature. `alt-text.md` has starter descriptions for the sample artwork.
 
-Reference: Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02. Where an observation date was recorded, it is in the reference above. Original files in the legacy library are preserved. The inventory's hashes identify bytes. They do not establish permission to publish third-party material.
+Reference: Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02; ticket-stub display layer and 8-pixel radius selected by the user on 2026-10-03. Where an observation date was recorded, it is in the reference above. Original files in the legacy library are preserved. The inventory's hashes identify bytes. They do not establish permission to publish third-party material.
