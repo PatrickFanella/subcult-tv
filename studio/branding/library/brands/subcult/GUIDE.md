@@ -4,7 +4,7 @@ Selected direction: **C / Culture / poster press**. Status: local production pac
 
 A louder poster system: condensed black type, purple fields and acid-green registrations.
 
-This is the user-selected C direction. User-edited banner, logo banner and square-post masters are kept in references/subcult-edited-layouts/ and copied without alteration during rebuilds. The user-authored master mark is references/subcult-mark-master.svg: filled S and underscore, outlined C, a tilted green block, registration lines and a terminal square. Preserve its geometry, overlap and layer order. Use the master SVG for every variant; recolor only ink and accent for dark and light applications. In monochrome, outline the accent block so the letters remain legible. Use purple as the primary field, dark ink for headlines and acid green for blocks, registration marks and large emphasis. Use dark ink for text on green. Green on purple is decorative; it is below the small-text contrast target. Keep the six products visible as a coherent catalogue without recoloring their own identities.
+The user approved B, C and D without registration lines. C is the primary mark with filled letters and a tilted green block; B is the heavier outlined alternate; D removes the block and uses tighter framing for small placements. Every approved mark uses one continuous underscore path. The original user-authored SVG remains preserved in references/subcult-mark-master.svg as construction provenance. Build selected derivatives with subcult_assets.py. White artwork outlines or removes the green block. Use dark ink on purple or green fields, and white marks on dark fields. User-edited social layout masters remain preserved; they are historical compositions, not the selected standalone logo.
 
 ## Color roles
 
@@ -46,4 +46,4 @@ The video templates use a 1920×1080 canvas and a 96-pixel outer margin. Keep ca
 
 Use verified product claims and exact approved copy. Quote/release template text is placeholder content and must be replaced. Describe the completed image in alt text, including the visible message; do not describe a screenshot placeholder as a working feature. `alt-text.md` supplies starter descriptions for the completed sample artwork.
 
-Reference: Alternative proposed system anchored in site palette. Site/asset observations were made October 1, 2026. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
+Reference: Alternative proposed system anchored in site palette. Source/asset observation dates are recorded in the reference above. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.

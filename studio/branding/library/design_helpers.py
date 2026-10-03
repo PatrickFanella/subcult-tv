@@ -196,16 +196,8 @@ def mark(d,x,y,size):
  m=d['mode'];a=d['accent'];f=d['fg'];s=''
  if m=='patrick-wave' and (R/'references/patrick-variations/primary-outlined.svg').exists():return patrick_mark(d,x,y,size)
  if m=='subcult-poster' and (R/'references/subcult-mark-master.svg').exists():
-  import xml.etree.ElementTree as ET
-  root=ET.fromstring((R/'references/subcult-mark-master.svg').read_text())
-  root.set('viewBox','22 22 212 212')
-  for el in root.iter():
-   accent_block=el.attrib.get('fill')=='#00ff88'
-   for attr,value in list(el.attrib.items()):
-    el.set(attr,value.replace('#100b19',f).replace('#00ff88',a))
-   if accent_block and d.get('mono'):
-    el.set('fill','none');el.set('style',f'fill:none;stroke:{f};stroke-width:1')
-  artwork=ET.tostring(root,encoding='unicode')
+  import subcult_assets as SA
+  artwork=SA.selected_svg(ink=f,accent=a,mono=d.get('mono',False))
   return f'<image x="{x}" y="{y}" width="{size}" height="{size}" href="data:image/svg+xml;base64,{base64.b64encode(artwork.encode()).decode()}"/>'
  if m=='clpr':
   s=txt(12,95,'c',132,f,'Barlow Condensed',700)+f'<circle cx="128" cy="65" r="14" fill="{a}"/>'

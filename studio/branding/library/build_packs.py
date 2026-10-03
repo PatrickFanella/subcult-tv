@@ -3,6 +3,7 @@ import base64,copy,html,json,os,shutil,subprocess,hashlib,zipfile,xml.etree.Elem
 import patchwork_product as PW
 import left_field_product as LFP
 import hasanara_product as HA
+import subcult_assets as SA
 R=Path(__file__).resolve().parent
 os.environ['FONTCONFIG_FILE']=str(R/'fontconfig.xml')
 import design_helpers as H
@@ -154,7 +155,7 @@ def guide(d,dest):
  extras={
  'patrick__eff':'Match the user-authored banner: Cascadia Mono Bold for the name and display headings; Cascadia Mono Regular for supporting copy; keep a 0.08em gap between the two underscores in the wordmark; Space Grotesk for handles and destination links; JetBrains Mono for labels. Use the user-edited PF mark for avatars and primary lockups, the clean bracketed waveform as an alternate, and tall variants as decorative art without changing their proportions. Large headings use lime lower-left and purple upper-right offsets; standalone waveforms use warm white in front with the same lime/purple offsets. Body copy and small labels remain flat. Monochrome marks simplify to brackets, PF and the dot. Preserve the social icons and links in references/patrick-banner-master.svg. Use purple for the waveform, rules and decorative fields. Purple on charcoal is below the small-text contrast target; use lime or warm white for labels. Keep the waveform as the signature. The selected banner uses a smaller solid warm-white PF mark with a purple waveform and no colored offsets on the logo. Banner alternatives are solid purple without waveform, solid warm white without waveform, and the original three-color mark. Other assets retain their existing logo styling. The personal photograph remains an optional editorial asset, not the default avatar.',
  'rekolekt':'Use the lowercase `rekolekt` wordmark and `Rekolekt` in prose. Pair it with “by SUBCULT” for endorsement. Preserve the original bracketed waveform logo without geometry changes. Only the story template’s decorative waveform is replaced by transcript rows and timestamps. Keep source/context metadata attached to quoted passages. The product source now lives in `subculture-collective/rekolekt`; the contact route retains `product=transcript-create` for compatibility. See [the website design specification](WEBSITE.md) for the deployed landing page, its product copy and interaction states.',
- 'subcult':'This is the user-selected C direction. User-edited banner, logo banner and square-post masters are kept in references/subcult-edited-layouts/ and copied without alteration during rebuilds. The user-authored master mark is references/subcult-mark-master.svg: filled S and underscore, outlined C, a tilted green block, registration lines and a terminal square. Preserve its geometry, overlap and layer order. Use the master SVG for every variant; recolor only ink and accent for dark and light applications. In monochrome, outline the accent block so the letters remain legible. Use purple as the primary field, dark ink for headlines and acid green for blocks, registration marks and large emphasis. Use dark ink for text on green. Green on purple is decorative; it is below the small-text contrast target. Keep the six products visible as a coherent catalogue without recoloring their own identities.',
+ 'subcult':'The user approved B, C and D without registration lines. C is the primary mark with filled letters and a tilted green block; B is the heavier outlined alternate; D removes the block and uses tighter framing for small placements. Every approved mark uses one continuous underscore path. The original user-authored SVG remains preserved in references/subcult-mark-master.svg as construction provenance. Build selected derivatives with subcult_assets.py. White artwork outlines or removes the green block. Use dark ink on purple or green fields, and white marks on dark fields. User-edited social layout masters remain preserved; they are historical compositions, not the selected standalone logo.',
  'clpr':'The user-edited play-triangle logo governs the assets. The user selected Clip stack for the main layouts and single clip card for the square post. The comparison variations remain available. These layouts replace the filmstrip and timeline motifs. Keep the muted-white wordmark, purple play triangle, dark field and green details. Earlier banners are preserved in references/. Use the captured play wordmark and play icon. Barlow Condensed sets titles; Barlow carries body copy; IBM Plex Mono carries labels. Crop corners, overlapping clip cards and purple play fields are the three graphic alternatives. Keep their geometry separate from screenshots of the product. clpr.tv applies this pack as of October 2, 2026; the Product site section below records how. The site writes the name in lowercase, `clpr`, in its interface text; Studio documents and artwork labels use CLPR. Keep the wordmark artwork as drawn. The earlier name Clipper and the clpr.gg domain are retired; the product lives at clpr.tv. The tally-dot logo that the site used before this pack is retired with them.',
  'patchwork':'Warm paper and green are the base; bright tomato marks decorative patches and yellow marks highlights. Use darker action tomato (#b33e28) behind paper-colored button labels: 5.03:1 contrast. Keep the logo and decorative patches at their original tomato (#e85d3f). Use Fraunces for headings and Public Sans for body text. Stitched shapes are supporting artwork. Use the carried-forward P glyph in a tomato stitched patch. The mark, supporting patches, buttons and their offset shadows share the same asymmetric corner shape. Use larger, mildly uneven stitches, faint paper grain and a low-opacity fabric weave. The browser sample uses responsive SVG stitching with a dashed CSS fallback. Use soft green ink (#365448) for headings/body copy and a muted sage (#b2bba1) shadow. `components.html` shows working stitched buttons; `patch-components.css` keeps face and shadow corners identical. Product captures must preserve approximate public locations and omit private addresses.'+PW.GUIDE_NOTE,
  'hasanara':'Match the current hasanara.tv red/PBS theme. Use Newsreader for editorial headings, Inter Tight for body copy and JetBrains Mono for metadata. Keep the actual PBS artwork. The local older lime theme is not this pack’s reference. Quotes need their original passage, attribution and timestamp.'+HA.GUIDE_NOTE,
@@ -238,8 +239,9 @@ for d in BRANDS:
  for name in font_files(d):shutil.copy2(R/'fonts'/name,dest/'fonts'/name)
  tokens={'brand':d['brand'],'direction':d['name'],'status':'local production pack v1','colors':{k:d[k] for k in ['bg','fg','accent','secondary','safe_label']},'fonts':{k:d[k] for k in ['display','body','label','support'] if k in d},'spacing':[8,16,24,32,48,64,96],'mark_clear_space':'25% of mark height','mark_min_width_px':32,'source':d['source'],'direction_selection':d.get('direction_selection') or ('user' if d['selected_by_user'] else 'established-theme example')}
  if d['slug']=='subcult':
-  shutil.copy2(R/'references/subcult-mark-master.svg',dest/'logos/master.svg')
-  tokens['mark_master']={'path':'logos/master.svg','sha256':hashlib.sha256((R/'references/subcult-mark-master.svg').read_bytes()).hexdigest(),'construction':'User-authored SVG; preserve geometry and layer order'}
+  (dest/'logos').mkdir(exist_ok=True)
+  (dest/'logos/master.svg').write_text(SA.selected_svg())
+  tokens['mark_master']={'path':'logos/master.svg','sha256':hashlib.sha256((dest/'logos/master.svg').read_bytes()).hexdigest(),'construction':'Selected C: filled letters, no registration lines, continuous underscore; B outlined and D compact also approved'}
  if d['slug']=='clpr':tokens.update(graphic_direction=d.get('graphic_direction'),square_direction=d.get('square_direction'))
  if d['slug']=='patrick__eff':shutil.copytree(R/'references/patrick-variations',dest/'logos/source-variations',dirs_exist_ok=True)
  if d['slug']=='patrick__eff':tokens['mark_styles']=d.get('mark_styles',{});tokens['mark_sources']='logos/source-variations/';tokens['banner_logo']={'primary':d.get('banner_logo'),'alternates':d.get('banner_alternates',[]),'scope':'banner only'}
@@ -261,9 +263,7 @@ for d in BRANDS:
    write_svg(dest/'logos','alternate-'+alternate,H.image('patrick-variations/'+alternate+'-outlined.svg',0,0,512,512),512,512)
   with (dest/'tokens.css').open('a') as f:f.write('\n.brand-display { text-shadow: 1.5px -.75px var(--brand-accent), -1.5px 1.5px var(--brand-secondary); }\n.brand-body, .brand-label { text-shadow: none; }\n')
  if d['slug']=='subcult':
-  # Preserve the user's exact editable master at its original pack path.
-  shutil.copy2(R/'references/subcult-mark-master.svg',dest/'logos/mark-primary-outlined.svg')
-  subprocess.run(['rsvg-convert','-o',str(dest/'logos/mark-primary.png'),str(dest/'logos/mark-primary-outlined.svg')],check=True)
+  SA.build_selected(dest/'logos')
  banner=LF.banner(d) if d['slug']=='left-field' else DH.banner(d) if d['slug']=='dedhed' else TD.banner(d) if d['slug']=='tadooer' else clpr_banner(d) if d['slug']=='clpr' else H.banner(d)
  if d['slug']=='patrick__eff':banner=ET.tostring(ET.parse(R/'references/patrick-banner-cascadia.svg').getroot(),encoding='unicode')
  if d['slug']=='subcult' and (R/'references/subcult-edited-layouts/banner-x-bluesky.svg').exists():banner=ET.tostring(ET.parse(R/'references/subcult-edited-layouts/banner-x-bluesky.svg').getroot(),encoding='unicode')
@@ -322,3 +322,18 @@ for d in BRANDS:
    entries.append(entry)
  (dest/'asset-manifest.json').write_text(json.dumps({'brand':d['brand'],'direction':d['name'],'status':'local production pack v1','files':entries},indent=2));print(d['brand'],len(entries),'files',flush=True)
 print('Selected brand packs built.')
+if os.environ.get('BRAND_ONLY')=='subcult':
+ manifest=R/'asset-manifest.json'
+ rows=json.loads(manifest.read_text());by_path={entry['path']:entry for entry in rows}
+ paths=list((R/'brands/subcult').rglob('*'))+[R/'build_packs.py',R/'design_helpers.py',R/'subcult_assets.py']
+ for path in paths:
+  if not path.is_file():continue
+  relative=str(path.relative_to(R));row=by_path.get(relative,{'path':relative})
+  row.update(sha256=hashlib.sha256(path.read_bytes()).hexdigest(),bytes=path.stat().st_size)
+  if path.suffix=='.png':
+   from PIL import Image
+   im=Image.open(path);row.update(width=im.width,height=im.height,mode=im.mode)
+  by_path[relative]=row
+ existing={entry['path'] for entry in rows}
+ updated=[by_path[entry['path']] for entry in rows]+[by_path[key] for key in sorted(set(by_path)-existing)]
+ manifest.write_text(json.dumps(updated,indent=2)+'\n')

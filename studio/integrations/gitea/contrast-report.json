@@ -1,0 +1,155 @@
+{
+  "gitea_version": "1.27.3",
+  "asset_checks": "passed",
+  "svg_parse": "passed",
+  "archive_selection": "passed",
+  "contrast": [
+    {
+      "role": "Body text",
+      "foreground": "#e8e0d0",
+      "background": "#0a0a0a",
+      "ratio": 15.09,
+      "minimum": 4.5
+    },
+    {
+      "role": "Muted metadata",
+      "foreground": "#a399ae",
+      "background": "#131116",
+      "ratio": 6.9,
+      "minimum": 4.5
+    },
+    {
+      "role": "Purple header ink",
+      "foreground": "#100b19",
+      "background": "#8b5cf6",
+      "ratio": 4.58,
+      "minimum": 4.5
+    },
+    {
+      "role": "Green action ink",
+      "foreground": "#100b19",
+      "background": "#00ff88",
+      "ratio": 14.45,
+      "minimum": 4.5
+    },
+    {
+      "role": "Watch/star controls",
+      "foreground": "#f0ece4",
+      "background": "#100b19",
+      "ratio": 16.44,
+      "minimum": 4.5
+    },
+    {
+      "role": "Inputs",
+      "foreground": "#f0ece4",
+      "background": "#0e0c11",
+      "ratio": 16.51,
+      "minimum": 4.5
+    },
+    {
+      "role": "Added diff text",
+      "foreground": "#99ffd0",
+      "background": "#11251b",
+      "ratio": 13.47,
+      "minimum": 4.5
+    },
+    {
+      "role": "Removed diff text",
+      "foreground": "#ffa8ba",
+      "background": "#2a171e",
+      "ratio": 9.33,
+      "minimum": 4.5
+    },
+    {
+      "role": "Warning text",
+      "foreground": "#ffdc8a",
+      "background": "#3a2d16",
+      "ratio": 10.12,
+      "minimum": 4.5
+    },
+    {
+      "role": "Error text",
+      "foreground": "#ff839d",
+      "background": "#2a171e",
+      "ratio": 7.25,
+      "minimum": 4.5
+    },
+    {
+      "role": "Info text",
+      "foreground": "#a9caff",
+      "background": "#192336",
+      "ratio": 9.42,
+      "minimum": 4.5
+    },
+    {
+      "role": "Merged badge ink",
+      "foreground": "#100b19",
+      "background": "#bba0ff",
+      "ratio": 8.84,
+      "minimum": 4.5
+    },
+    {
+      "role": "Focus ring on surface",
+      "foreground": "#bba0ff",
+      "background": "#131116",
+      "ratio": 8.56,
+      "minimum": 3
+    },
+    {
+      "role": "Linked green badge hover",
+      "foreground": "#100b19",
+      "background": "#00e67a",
+      "ratio": 11.62,
+      "minimum": 4.5
+    },
+    {
+      "role": "Linked red badge hover",
+      "foreground": "#100b19",
+      "background": "#ff6f8f",
+      "ratio": 7.31,
+      "minimum": 4.5
+    },
+    {
+      "role": "Linked orange badge hover",
+      "foreground": "#100b19",
+      "background": "#ffad66",
+      "ratio": 10.54,
+      "minimum": 4.5
+    },
+    {
+      "role": "Linked yellow badge hover",
+      "foreground": "#100b19",
+      "background": "#f0ca73",
+      "ratio": 12.36,
+      "minimum": 4.5
+    },
+    {
+      "role": "Linked blue badge hover",
+      "foreground": "#100b19",
+      "background": "#97bcff",
+      "ratio": 10.1,
+      "minimum": 4.5
+    },
+    {
+      "role": "Linked purple badge hover",
+      "foreground": "#100b19",
+      "background": "#ab8cf6",
+      "ratio": 7.21,
+      "minimum": 4.5
+    },
+    {
+      "role": "Linked teal badge hover",
+      "foreground": "#100b19",
+      "background": "#79d8ce",
+      "ratio": 11.56,
+      "minimum": 4.5
+    },
+    {
+      "role": "Linked pink badge hover",
+      "foreground": "#100b19",
+      "background": "#f78bc3",
+      "ratio": 8.71,
+      "minimum": 4.5
+    }
+  ]
+}

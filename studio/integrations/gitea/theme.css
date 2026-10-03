@@ -1,0 +1,398 @@
+/* SUBCULT Studio: Culture / poster press. Gitea 1.27.3. */
+@font-face { font-family: "Subcult Space Grotesk"; src: url("../subcult-studio/Space-Grotesk-Regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Subcult Space Grotesk"; src: url("../subcult-studio/Space-Grotesk-Bold.ttf") format("truetype"); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: "Subcult Oswald"; src: url("../subcult-studio/Oswald-Bold.ttf") format("truetype"); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: "Subcult JetBrains Mono"; src: url("../subcult-studio/JetBrains-Mono-Regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Subcult JetBrains Mono"; src: url("../subcult-studio/JetBrains-Mono-Bold.ttf") format("truetype"); font-style: normal; font-weight: 700; font-display: swap; }
+
+gitea-theme-meta-info {
+  --theme-display-name: "SUBCULT / Studio";
+  --theme-color-scheme: "dark";
+}
+
+:root {
+  --sc-purple: #8b5cf6;
+  --sc-green: #00ff88;
+  --sc-ink: #100b19;
+  --sc-paper: #f0ece4;
+  --sc-muted: #b4adbf;
+  --sc-rule: #49414f;
+  --sc-display: "Subcult Oswald", "Arial Narrow", sans-serif;
+  --fonts-proportional: "Subcult Space Grotesk", system-ui, sans-serif;
+  --fonts-monospace: "Subcult JetBrains Mono", ui-monospace, monospace;
+  --border-radius: 0;
+  --border-radius-medium: 0;
+  --border-radius-large: 0;
+  --color-primary: var(--sc-green);
+  --color-primary-contrast: var(--sc-ink);
+  --color-primary-dark-1: #33ffa0;
+  --color-primary-dark-2: #66ffb8;
+  --color-primary-dark-3: #99ffd0;
+  --color-primary-dark-4: #b3ffdb;
+  --color-primary-dark-5: #ccffe7;
+  --color-primary-dark-6: #e6fff3;
+  --color-primary-dark-7: #f0fff8;
+  --color-primary-light-1: #00e67a;
+  --color-primary-light-2: #00cc6d;
+  --color-primary-light-3: #009951;
+  --color-primary-light-4: #006637;
+  --color-primary-light-5: #004d29;
+  --color-primary-light-6: #00331b;
+  --color-primary-light-7: #001a0e;
+  --color-primary-alpha-10: #00ff881a;
+  --color-primary-alpha-20: #00ff8833;
+  --color-primary-alpha-30: #00ff884d;
+  --color-primary-alpha-40: #00ff8866;
+  --color-primary-alpha-50: #00ff8880;
+  --color-primary-alpha-60: #00ff8899;
+  --color-primary-alpha-70: #00ff88b3;
+  --color-primary-alpha-80: #00ff88cc;
+  --color-primary-alpha-90: #00ff88e6;
+  --color-primary-hover: #66ffb8;
+  --color-primary-active: #00cc6d;
+  --color-secondary: var(--sc-rule);
+  --color-secondary-dark-1: #62586d;
+  --color-secondary-dark-2: #73667f;
+  --color-secondary-dark-3: #897c94;
+  --color-secondary-dark-4: #a99ab6;
+  --color-secondary-dark-5: #b4adbf;
+  --color-secondary-dark-6: #c5bcd0;
+  --color-secondary-dark-7: #d0c6da;
+  --color-secondary-dark-8: #d8d0df;
+  --color-secondary-dark-9: #e0d8e7;
+  --color-secondary-dark-10: #e7e0ec;
+  --color-secondary-dark-11: #eee8f2;
+  --color-secondary-dark-12: #f4eef7;
+  --color-secondary-dark-13: #faf6fc;
+  --color-secondary-light-1: #38313f;
+  --color-secondary-light-2: #2d2733;
+  --color-secondary-light-3: #231e28;
+  --color-secondary-light-4: #19151e;
+  --color-secondary-alpha-10: #49414f1a;
+  --color-secondary-alpha-20: #49414f33;
+  --color-secondary-alpha-30: #49414f4d;
+  --color-secondary-alpha-40: #49414f66;
+  --color-secondary-alpha-50: #49414f80;
+  --color-secondary-alpha-60: #49414f99;
+  --color-secondary-alpha-70: #49414fb3;
+  --color-secondary-alpha-80: #49414fcc;
+  --color-secondary-alpha-90: #49414fe6;
+  --color-secondary-button: #b4adbf;
+  --color-secondary-hover: #c5bcd0;
+  --color-secondary-active: #a99ab6;
+  --color-body: #0a0a0a;
+  --color-box-header: #201925;
+  --color-box-body: #131116;
+  --color-box-body-highlight: #221a2d;
+  --color-text-dark: var(--sc-paper);
+  --color-text: #e8e0d0;
+  --color-text-light: #cec5d4;
+  --color-text-light-1: #c0b5ca;
+  --color-text-light-2: var(--sc-muted);
+  --color-text-light-3: #a399ae;
+  --color-timeline: var(--sc-rule);
+  --color-input-text: var(--sc-paper);
+  --color-input-background: #0e0c11;
+  --color-input-toggle-background: #31263c;
+  --color-input-border: #73667f;
+  --color-light: #f0ece410;
+  --color-light-border: #f0ece42b;
+  --color-hover: #8b5cf622;
+  --color-hover-opaque: #251c33;
+  --color-active: #8b5cf633;
+  --color-menu: #17131c;
+  --color-card: #131116;
+  --color-markup-table-row: #f0ece409;
+  --color-markup-code-block: #0a0a0a;
+  --color-markup-code-inline: #8b5cf626;
+  --color-button: #201925;
+  --color-code-bg: #100e13;
+  --color-shadow: #00000080;
+  --color-shadow-opaque: #050505;
+  --color-secondary-bg: #201925;
+  --color-expand-button: #31263c;
+  --color-editor-line-highlight: #8b5cf619;
+  --color-editor-selection: #8b5cf655;
+  --color-project-column-bg: #17131c;
+  --color-reaction-bg: #8b5cf619;
+  --color-reaction-hover-bg: #38244f;
+  --color-reaction-active-bg: #442961;
+  --color-tooltip-text: var(--sc-paper);
+  --color-tooltip-bg: #17131cf5;
+  --color-nav-bg: #0a0a0a;
+  --color-nav-hover-bg: #281c38;
+  --color-nav-text: var(--sc-paper);
+  --color-secondary-nav-bg: #17131c;
+  --color-label-text: var(--sc-paper);
+  --color-label-bg: #49414f66;
+  --color-label-hover-bg: #62586d88;
+  --color-label-active-bg: #73667f;
+  --color-accent: var(--sc-green);
+  --color-small-accent: #bba0ff;
+  --color-highlight-fg: #ffdc8a;
+  --color-highlight-bg: #3a2d16;
+  --color-logo: var(--sc-green);
+  --color-green: #00ff88;
+  --color-green-light: #66ffb8;
+  --color-green-dark-1: #00e67a;
+  --color-red: #ff839d;
+  --color-red-light: #ffa8ba;
+  --color-red-dark-1: #ff6f8f;
+  --color-orange: #ffba80;
+  --color-orange-light: #ffd0a8;
+  --color-orange-dark-1: #ffad66;
+  --color-yellow: #ffdc8a;
+  --color-yellow-light: #ffe8b3;
+  --color-yellow-dark-1: #f0ca73;
+  --color-blue: #a9caff;
+  --color-blue-light: #c7dcff;
+  --color-blue-dark-1: #97bcff;
+  --color-purple: #bba0ff;
+  --color-purple-light: #d2bfff;
+  --color-purple-dark-1: #ab8cf6;
+  --color-violet: #bba0ff;
+  --color-violet-light: #d2bfff;
+  --color-violet-dark-1: #ab8cf6;
+  --color-teal: #8ce8de;
+  --color-teal-light: #b8f3ed;
+  --color-teal-dark-1: #79d8ce;
+  --color-pink: #ff9bd0;
+  --color-pink-light: #ffc2e4;
+  --color-pink-dark-1: #f78bc3;
+  --color-grey: #62586d;
+  --color-grey-light: var(--sc-muted);
+  --color-white: var(--sc-paper);
+  --color-diff-added-fg: #99ffd0;
+  --color-diff-added-linenum-bg: #163526;
+  --color-diff-added-row-bg: #11251b;
+  --color-diff-added-row-border: #28563d;
+  --color-diff-added-word-bg: #27543d;
+  --color-diff-removed-fg: #ffa8ba;
+  --color-diff-removed-linenum-bg: #41212b;
+  --color-diff-removed-row-bg: #2a171e;
+  --color-diff-removed-row-border: #6b3847;
+  --color-diff-removed-word-bg: #623342;
+  --color-diff-moved-row-bg: #3a2d16;
+  --color-diff-moved-row-border: #836b37;
+  --color-diff-inactive: #201925;
+  --color-error-text: #ff839d;
+  --color-error-bg: #2a171e;
+  --color-error-border: #91495c;
+  --color-error-bg-hover: #3a2029;
+  --color-error-bg-active: #4a2935;
+  --color-success-text: #99ffd0;
+  --color-success-bg: #11251b;
+  --color-success-border: #28784d;
+  --color-warning-text: #ffdc8a;
+  --color-warning-bg: #3a2d16;
+  --color-warning-border: #927641;
+  --color-info-text: #a9caff;
+  --color-info-bg: #192336;
+  --color-info-border: #536e9a;
+  --color-priority-text: #d2bfff;
+  --color-priority-bg: #291c3b;
+  --color-priority-border: #8161b5;
+  --color-red-badge: #ff839d;
+  --color-red-badge-bg: #ff839d1a;
+  --color-red-badge-hover-bg: #ff839d33;
+  --color-green-badge: #00ff88;
+  --color-green-badge-bg: #00ff881a;
+  --color-green-badge-hover-bg: #00ff8833;
+  --color-yellow-badge: #ffdc8a;
+  --color-yellow-badge-bg: #ffdc8a1a;
+  --color-yellow-badge-hover-bg: #ffdc8a33;
+  --color-orange-badge: #ffba80;
+  --color-orange-badge-bg: #ffba801a;
+  --color-orange-badge-hover-bg: #ffba8033;
+  --color-console-fg: #e8e0d0;
+  --color-console-fg-subtle: #b4adbf;
+  --color-console-bg: #100e13;
+  --color-console-border: var(--sc-rule);
+  --color-console-hover-bg: #251c33;
+  --color-console-active-bg: #31263c;
+  --color-console-menu-bg: #17131c;
+  --color-console-menu-border: #62586d;
+  --color-console-link: #bba0ff;
+  --color-ansi-black: #62586d;
+  --color-ansi-red: #ff839d;
+  --color-ansi-green: #00ff88;
+  --color-ansi-yellow: #ffdc8a;
+  --color-ansi-blue: #a9caff;
+  --color-ansi-magenta: #d2bfff;
+  --color-ansi-cyan: #8ce8de;
+  --color-ansi-white: #e8e0d0;
+  --color-ansi-bright-black: #a399ae;
+  --color-ansi-bright-red: #ffa8ba;
+  --color-ansi-bright-green: #99ffd0;
+  --color-ansi-bright-yellow: #ffe8b3;
+  --color-ansi-bright-blue: #c7dcff;
+  --color-ansi-bright-magenta: #e5d8ff;
+  --color-ansi-bright-cyan: #b8f3ed;
+  --color-ansi-bright-white: #f0ece4;
+  --color-syntax-keyword: #d2bfff;
+  --color-syntax-control: #d2bfff;
+  --color-syntax-name: #e8e0d0;
+  --color-syntax-type: #a9caff;
+  --color-syntax-number: #ffba80;
+  --color-syntax-operator: #d2bfff;
+  --color-syntax-string: #99ffd0;
+  --color-syntax-comment: #a399ae;
+  --color-syntax-heading: #d2bfff;
+  --color-syntax-subheading: #99ffd0;
+  --color-syntax-text: #e8e0d0;
+  --color-syntax-text-alt: #cec5d4;
+  --color-syntax-punctuation: #cec5d4;
+}
+
+/* Fonts and straight-edged panels; retain circles for avatars/status dots. */
+body { font-family: var(--fonts-proportional); }
+.ui.button, .ui.input > input, .ui.form input, .ui.form textarea,
+.ui.form select, .ui.label, .ui.menu, .ui.menu .item, .ui.segment,
+.ui.segments, .ui.card, .ui.cards > .card, .ui.message, .ui.table,
+.ui.modal, .ui.dropdown .menu, .ui.popup, .ui.progress,
+.ui.attached.header, .ui.header, .ui.basic.button, .ui.buttons,
+.ui.buttons .button, .repository .header-wrapper, .file-header,
+.file-view, .diff-file-box, .comment-body, .markup pre, .markup code {
+  border-radius: 0 !important;
+}
+
+/* Poster typography belongs to the chrome, never user-authored Markdown. */
+#navbar { border-bottom: 2px solid var(--sc-purple); min-height: 64px; }
+#navbar > .navbar-left > .item, #navbar > .navbar-right > .item,
+.page-footer, .ui.button, .ui.label, .ui.tabular.menu .item,
+.ui.secondary.pointing.menu .item, .file-header, .repo-buttons,
+.repository .branch-dropdown-button, .repository .tag-dropdown-button {
+  font-family: var(--fonts-monospace);
+}
+#navbar > .navbar-left > .item, #navbar > .navbar-right > .item {
+  font-size: 12px;
+  letter-spacing: .045em;
+}
+#navbar-logo { gap: 10px; padding-inline: 16px; }
+#navbar-logo img {
+  width: 40px; height: 40px;
+  content: url("../subcult-studio/mark-dark.svg?v=logo-bcd-20261003");
+}
+#navbar-logo::after {
+  content: "SUBCULT";
+  font: 700 23px/1 var(--sc-display);
+  letter-spacing: .13em;
+  color: var(--sc-paper);
+}
+.ui.header:not(.repository .ui.header):not(.markup .ui.header),
+.explore .ui.header, .user.signin .ui.header {
+  font-family: var(--sc-display);
+  letter-spacing: .015em;
+}
+.repository .secondary-nav { border-bottom: 1px solid var(--sc-purple); }
+.repository .repo-header {
+  padding: 16px;
+  background: var(--sc-purple);
+  border-bottom: 4px solid var(--sc-ink);
+}
+.repository .repo-header > .flex-text-block {
+  --color-text: var(--sc-ink);
+  --color-text-light: var(--sc-ink);
+  --color-text-light-1: var(--sc-ink);
+  --color-text-light-2: var(--sc-ink);
+  color: var(--sc-ink);
+}
+.repository .repo-header > .flex-text-block a { color: var(--sc-ink); }
+.repository .repo-header > .flex-text-block a:hover { text-decoration: underline; }
+.repository .repo-header .tw-text-18 > a:first-child {
+  font: 400 12px/1.5 var(--fonts-monospace);
+}
+.repository .repo-header .tw-text-18 > a:last-child {
+  font: 700 28px/1.3 var(--sc-display);
+}
+.repository .repo-header > .flex-text-block .ui.label {
+  color: var(--sc-ink); background: var(--sc-paper);
+}
+.repository .repo-header .ui.button {
+  color: var(--sc-paper); background: var(--sc-ink);
+  border-color: var(--sc-ink);
+}
+.repository .repo-header .ui.button:hover { background: #291c3b; }
+.repo-title { font-weight: 700; }
+.ui.tabular.menu { border-bottom-color: var(--sc-rule); }
+.ui.tabular.menu .active.item {
+  border-top: 2px solid var(--sc-purple);
+  background: var(--color-body);
+  color: var(--sc-paper);
+}
+.ui.secondary.pointing.menu .active.item { border-color: var(--sc-green); }
+.ui.button {
+  font-size: .86rem;
+  border: 1px solid var(--sc-rule);
+  box-shadow: 2px 2px 0 var(--color-shadow-opaque);
+}
+.ui.button:hover { border-color: #a99ab6; }
+.ui.primary.button, .ui.primary.buttons .button,
+.ui.positive.button, .ui.positive.buttons .button,
+.ui.green.button, .ui.green.buttons .button {
+  color: var(--sc-ink);
+  background: var(--sc-green);
+  border-color: var(--sc-green);
+}
+.ui.primary.button:hover, .ui.primary.buttons .button:hover,
+.ui.positive.button:hover, .ui.green.button:hover {
+  color: var(--sc-ink); background: #66ffb8;
+}
+.ui.basic.primary.button { color: var(--sc-green); background: transparent; }
+.ui.basic.primary.button:hover { background: #00ff881a; color: #99ffd0; }
+.ui.red.button, .ui.negative.button { color: var(--sc-ink); background: #ff839d; }
+.ui.red.button:hover, .ui.negative.button:hover { color: var(--sc-ink); background: #ffa8ba; }
+.ui.purple.button, .ui.violet.button { color: var(--sc-ink); background: var(--sc-purple); }
+.ui.purple.button:hover, .ui.violet.button:hover { color: var(--sc-ink); background: #bba0ff; }
+.ui.label { box-shadow: none; }
+/* Match Gitea 1.27's repeated .ui specificity, including linked-label hover. */
+.ui.ui.ui.label:not(.basic):is(.green, .red, .yellow, .orange, .purple, .violet, .blue, .teal, .pink),
+.ui.ui.ui.label:not(.basic):is(.green, .red, .yellow, .orange, .purple, .violet, .blue, .teal, .pink):hover { color: var(--sc-ink); }
+.ui.form input:focus:not([type="checkbox"]):not([type="radio"]),
+.ui.form textarea:focus, .ui.input > input:focus {
+  border-color: #bba0ff;
+  box-shadow: 0 0 0 1px #bba0ff;
+}
+:focus-visible { outline: 2px solid #bba0ff; outline-offset: 3px; }
+.ui.form input:focus-visible, .ui.form textarea:focus-visible,
+.ui.button:focus-visible, #navbar a:focus-visible {
+  outline: 2px solid #bba0ff; outline-offset: 3px;
+}
+::selection { background: #8b5cf666; color: var(--sc-paper); }
+.page-footer { border-top: 1px solid var(--sc-rule); font-size: 11px; }
+
+/* The landing page carries the purple field; working surfaces stay dark. */
+.home > div:first-child {
+  margin: 0 0 48px !important;
+  padding: 48px 24px !important;
+  color: var(--sc-ink);
+  background: var(--sc-purple);
+  border-bottom: 6px solid var(--sc-ink);
+}
+.home > div:first-child .center {
+  max-width: 1120px; margin: auto; text-align: left;
+  display: grid; grid-template-columns: 180px 1fr; gap: 48px;
+  align-items: center;
+}
+.home > div:first-child .logo {
+  width: 180px; height: 180px;
+  content: url("../subcult-studio/mark-primary.svg?v=logo-bcd-20261003");
+}
+.home .hero .title { font: 700 clamp(36px, 5vw, 72px)/1.12 var(--sc-display); text-transform: uppercase; color: var(--sc-ink); }
+.home .hero h2 { font: 400 17px/1.6 var(--fonts-proportional); color: var(--sc-ink); }
+.home .grid .hero { font: 700 28px/1.2 var(--sc-display); text-align: left; text-transform: uppercase; }
+.home .grid .hero .svg { color: var(--sc-purple); }
+.home .grid .column { text-align: left; }
+.home .grid p { font-size: 15px; line-height: 1.7; }
+
+@media (max-width: 767px) {
+  #navbar { min-height: 56px; }
+  #navbar-logo::after { font-size: 20px; }
+  #navbar-logo img { width: 36px; height: 36px; }
+  .home > div:first-child { padding: 32px 20px !important; margin-bottom: 24px !important; }
+  .home > div:first-child .center { grid-template-columns: 1fr; gap: 16px; }
+  .home > div:first-child .logo { width: 100px; height: 100px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui.button, .ui.menu .item, .ui.dropdown .menu { transition: none !important; }
+}

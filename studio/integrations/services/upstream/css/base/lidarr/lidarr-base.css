@@ -1,0 +1,278 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+@import url("/css/defaults/servarr-base.css");
+
+:root {
+    --calendar-downloaded: 39 194 76;
+    --calendar-downloading: 122 67 182;
+    --calendar-unmonitored: 173 173 173;
+    --calendar-missing: 240 80 80;
+    --calendar-unreleased: 93 156 236;
+}
+
+/* LIDARR SPECIFIC */
+[class*="ArtistSearchInput-sectionTitle-"] {
+    color: var(--text-hover);
+}
+
+[class*="ArtistSearchInput-containerOpen-"] [class*="ArtistSearchInput-artistContainer-"] {
+    border: none !important;
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text-hover) !important;
+    box-shadow: 0 0 10px 1px transparent !important;
+}
+
+[class*="ArtistSearchInput-highlighted-"] {
+    background: var(--transparency-dark-10)
+}
+
+/* LIBRARY PAGE */
+[class*="ArtistIndexPoster-controls-"] {
+    background-color: rgb(var(--accent-color)) !important;
+}
+
+[class*="ArtistIndexPoster-title-"],
+[class*="ArtistIndexBanner-title-"] {
+    background: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
+/* OVERVIEW PAGE */
+[class*="ArtistIndexOverview-container-"],
+[class*="ArtistIndexOverview-container-"]:hover {
+    background-color: transparent !important;
+}
+
+[class*="ArtistIndexOverview-container-"]:hover [class*="ArtistIndexOverview-content-"] {
+    background-color: transparent;
+}
+
+[class*="ArtistIndexOverview-content-"]:hover {
+    background: var(--transparency-dark-10) !important;
+}
+
+[class*="ArtistIndexOverview-link-"]:hover {
+    text-decoration: none;
+}
+
+/*ARTIST PAGE*/
+[class*="ArtistDetailsSeason-albumType-"],
+[class*="ArtistDetailsSeason-collapseButtonContainer-"] {
+    border: none !important;
+    background: var(--transparency-dark-25) !important;
+}
+
+[class*="ArtistDetailsSeason-header-"],
+[class*="ArtistDetailsSeason-albumCount-"],
+[class*="ArtistDetails-metadataMessage-"],
+[class*="ArtistDetailsSeason-albumCount-"] {
+    color: var(--text-hover);
+}
+
+[class*="ArtistDetailsSeason-albums-"] {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/*ARTIST ALBUM PAGE*/
+[class*="AlbumDetailsMedium-mediumNumber-"] {
+    color: var(--text-hover);
+}
+
+[class*="AlbumDetailsMedium-medium-"] {
+    border: none;
+    background: var(--transparency-dark-25);
+}
+
+[class*="ExtraFileTable-container-"] {
+    border: 1px solid transparent;
+    background: var(--transparency-dark-25);
+}
+
+[class*="AlbumDetails-selectedTab-"] {
+    border-bottom: 4px solid rgb(var(--accent-color));
+}
+
+[class*="AlbumDetailsMedium-collapseButtonContainer-"] {
+    border: none;
+    background: var(--transparency-dark-25);
+}
+
+[class*="ArtistIndexProgressBar-progress-"] {
+    background: var(--transparency-dark-10);
+}
+
+[class*="ArtistIndexBanner-title-"],
+[class*="ArtistIndexBannerInfo-info-"] {
+    background: var(--transparency-dark-25);
+    color: var(--text-hover);
+}
+
+/* POSTERS */
+[class*="ArtistIndexPoster-title-"],
+[class*="ArtistIndexPosterInfo-info-"] {
+    background: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
+/* SEARCH BAR */
+[class*="AddNewArtist-searchIconContainer-"],
+[class*="AddNewItem-searchIconContainer-"] {
+    border: none;
+    background: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
+[class*="ArtistSearchInput-container-"] [class*="Input-input-"] {
+    background: transparent;
+    border-bottom: solid 1px var(--text);
+}
+
+[class*="ArtistSearchInput-container-"] [class*="Input-input-"]:focus {
+    border-bottom: none;
+    background: transparent;
+}
+
+[class*="ArtistSearchResult-alternateTitle-"] {
+    color: var(--text-hover);
+    font-size: 12px;
+}
+
+/* SEARCH RESULTS */
+[class*="AddNewArtistSearchResult-year-"] {
+    color: var(--text-hover);
+}
+
+[class*="AddNewArtistSearchResult-searchResult-"],
+[class*="AddNewArtistSearchResult-underlay-"],
+[class*="AddNewAlbumSearchResult-underlay-"] {
+    background-color: transparent;
+}
+
+[class*="AddNewArtistSearchResult-searchResult-"]:hover,
+[class*="AddNewArtistSearchResult-underlay-"]:hover,
+[class*="AddNewAlbumSearchResult-underlay-"]:hover {
+    background: var(--transparency-dark-10);
+    color: inherit;
+    text-decoration: none;
+}
+
+/* IMPORT ARTIST */
+[class*="ImportArtistSelectArtist-content-"],
+[class*="ImportArtistSelectArtist-searchIconContainer-"] {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text-hover);
+    border: 1px solid transparent;
+}
+
+[class*="ImportArtistName-disambiguation-"] {
+    color: var(--text-muted);
+}
+
+[class*="ImportArtistSearchResult-artist-"]:hover {
+    background: var(--transparency-light-10);
+}
+
+/* IMPORT */
+/* Text color */
+[class*="ImportArtistSelectFolder-header-"] {
+    color: var(--text-hover);
+}
+
+[class*="ExpandingFileDetails-fileDetails-"] {
+    border: 1px solid rgb(255 255 255 / .1);
+    background: var(--transparency-light-10);
+}
+
+/* IMPORT NEW ARTIST */
+/* Drop down menu/button*/
+[class*="ImportArtistSelectArtist-button-"] {
+    border: none;
+    background: var(--transparency-dark-25) !important;
+    color: var(--text-hover);
+}
+
+/* CALENDAR */
+[class*="CalendarEvent-event-"]>div>div>a {
+    color: var(--transparency-light-95) !important;
+}
+
+/* Color Impaired Mode */
+[class*="CalendarEvent-unmonitored-"].colorImpaired {
+    background: repeating-linear-gradient(90deg, rgb(var(--calendar-unmonitored) / .2), rgb(var(--calendar-unmonitored) / .2) 5px, rgb(var(--calendar-unmonitored) / .4) 5px, rgb(var(--calendar-unmonitored) / .4) 10px) !important;
+}
+
+[class*="CalendarEvent-missing-"].colorImpaired{
+    background: repeating-linear-gradient(90deg, rgb(var(--calendar-missing) / .2), rgb(var(--calendar-missing) / .2) 5px, rgb(var(--calendar-missing) / .4) 5px, rgb(var(--calendar-missing) / .4) 10px) !important;
+}
+
+[class*="CalendarEvent-unreleased-"].colorImpaired{
+    background: repeating-linear-gradient(90deg, rgb(var(--calendar-unreleased) / .2), rgb(var(--calendar-unreleased) / .2) 5px, rgb(var(--calendar-unreleased) / .4) 5px, rgb(var(--calendar-unreleased) / .4) 10px) !important;
+}
+
+[class*="ArtistIndexHeader-sortName-"]:hover,
+[class*="ArtistIndexHeader-artistType-"]:hover,
+[class*="ArtistIndexHeader-trackCount-"]:hover,
+[class*="ArtistIndexHeader-qualityProfileId-"]:hover,
+[class*="ArtistIndexHeader-languageProfileId-"]:hover,
+[class*="ArtistIndexHeader-metadataProfileId-"]:hover,
+[class*="ArtistIndexHeader-nextAlbum-"]:hover,
+[class*="ArtistIndexHeader-lastAlbum-"]:hover,
+[class*="ArtistIndexHeader-added-"]:hover,
+[class*="ArtistIndexHeader-genres-"]:hover,
+[class*="ArtistIndexHeader-albumCount-"]:hover,
+[class*="ArtistIndexHeader-trackProgress-"]:hover,
+[class*="ArtistIndexHeader-latestAlbum-"]:hover,
+[class*="ArtistIndexHeader-actions-"]:hover {
+    background: var(--transparency-dark-25);
+    color: var(--text-hover);
+}
+
+/* Fix rating border*/
+[class*="ArtistIndexRow-ratings-"] {
+    border-top: 1px solid var(--text) !important;
+}
+
+/* ALBUM STUDIO */
+[class*="AlbumStudioAlbum-albumType-"],
+[class*="AlbumStudioAlbum-album-"],
+[class*="AlbumStudioAlbum-tracks-"] {
+    border: none;
+    background: var(--transparency-dark-25);
+    color: var(--text-hover);
+}
+
+[class*="AlbumStudioAlbum-missingWanted-"] {
+    background-color: #f05050;
+    color: #fff;
+}
+
+[class*="AlbumStudioAlbum-allTracks-"] {
+    background-color: #0b8750;
+    color: #fff;
+}
