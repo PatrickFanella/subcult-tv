@@ -92,6 +92,7 @@ def export(destination, site=None, posting_state=None):
             "public/brand/subcult/mark.svg": PACK / "brands/subcult/logos/mark-light-outlined.svg",
             "public/brand/subcult/master.svg": PACK / "brands/subcult/logos/master.svg",
             "public/brand/subcult/compact.svg": PACK / "brands/subcult/logos/mark-compact-primary-outlined.svg",
+            "public/brand/subcult/fisheye-circle.png": PACK / "brands/subcult/logos/mark-fisheye-circle.png",
             "public/brand/subcult/mark.png": PACK / "brands/subcult/logos/mark-light.png",
             "public/apple-touch-icon.png": PACK / "brands/subcult/logos/mark-compact-primary.png",
             "public/favicon.svg": PACK / "brands/subcult/logos/mark-compact-primary-outlined.svg",

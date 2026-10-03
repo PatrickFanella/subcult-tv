@@ -4,6 +4,7 @@ import copy
 import hashlib
 import json
 import subprocess
+import shutil
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent
@@ -108,9 +109,15 @@ def build_selected(destination):
             path = destination / f'{prefix}-{variant}.png'
             subprocess.run(['rsvg-convert', '-o', str(path), str(path.with_suffix('.svg'))], check=True)
     (destination / 'master.svg').write_text(selected_svg())
+    fisheye = ROOT.parent / 'reviews/subcult-logo-fisheye/fisheye-circle-study.png'
+    shutil.copyfile(fisheye, destination / 'mark-fisheye-circle.png')
     selection = {'approved_by': 'user', 'registration_lines': False,
                  'primary': 'c-solid', 'outlined': 'b-heavy-outline', 'compact': 'd-compact',
                  'construction': 'Single continuous underscore; no extension rectangle.',
                  'original_source': 'references/subcult-mark-master.svg',
                  'original_sha256': hashlib.sha256(SOURCE.read_bytes()).hexdigest(), 'files': files}
+    selection['circle'] = {'approved_by': 'user', 'path': 'mark-fisheye-circle.png',
+                           'source': str(fisheye.relative_to(ROOT.parent)),
+                           'sha256': hashlib.sha256(fisheye.read_bytes()).hexdigest(),
+                           'scope': 'Replaces purple circle logo treatments; preserve the approved raster artwork.'}
     (destination.parent / 'logo-selection.json').write_text(json.dumps(selection, indent=2)+'\n')

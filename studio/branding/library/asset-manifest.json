@@ -3876,8 +3876,8 @@
   },
   {
     "path": "brands/subcult/asset-manifest.json",
-    "sha256": "abbf7594ff4b430476223410ea9fe9deb1ceccbf64de1bebdc618cccfac6ce34",
-    "bytes": 19790
+    "sha256": "0e74b24cc5b0c8a4d3c73f1cf91f7d8d6e5ab154779b0d26453704cbd3501638",
+    "bytes": 20021
   },
   {
     "path": "brands/subcult/fonts/JetBrains-Mono-0.ttf",
@@ -7456,8 +7456,8 @@
   },
   {
     "path": "brands/subcult/logo-selection.json",
-    "sha256": "82900f66d2059909fbbd8892de26092b1674e850057e1f629ff61c2a94f84541",
-    "bytes": 4577
+    "sha256": "975d75d165d98ce8249cfd32f8fe75bc901c1ca0ceec00f3a0b774ae8f433581",
+    "bytes": 4908
   },
   {
     "path": "brands/subcult/logos/mark-compact-dark-outlined.svg",
@@ -7641,7 +7641,15 @@
   },
   {
     "path": "subcult_assets.py",
-    "sha256": "f2c0e97e21c8ccfe44a4cfc09fe3f0cc8fe3d0062bb97afd108f822ab0e7e691",
-    "bytes": 5751
+    "sha256": "2403a949cdf07468b334f4d4a1a4cb3bdd5fabbc2c59c40eba06de6d20487997",
+    "bytes": 6284
+  },
+  {
+    "path": "brands/subcult/logos/mark-fisheye-circle.png",
+    "sha256": "d2207dea611860cb3efdd7ea27ba01d43ed658285a8df62e3de896cb81490c53",
+    "bytes": 754620,
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA"
   }
 ]

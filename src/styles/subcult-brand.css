@@ -50,10 +50,8 @@
 .subcult-nav-mark {
   width: 44px;
   height: 44px;
-  padding: 6px;
-  border-radius: 50%;
-  background: #8b5cf6;
-  border: 1px solid #100b19;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .showcase-hero {
   position: relative;
@@ -138,10 +136,8 @@
   display: block;
   width: 96px;
   height: 96px;
-  padding: 12px;
-  border-radius: 50%;
+  object-fit: contain;
   margin: 0 auto 1.25rem;
-  background: #8b5cf6;
 }
 .admin-sidebar nav a:focus-visible,
 .admin-login :focus-visible {

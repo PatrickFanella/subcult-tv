@@ -128,5 +128,12 @@
       "path": "mark-compact-mono-light-outlined.svg",
       "sha256": "2a97a52f10bbe3d6d51b513b76746fa04d7f54cad15ac275031832e55b510027"
     }
-  ]
+  ],
+  "circle": {
+    "approved_by": "user",
+    "path": "mark-fisheye-circle.png",
+    "source": "reviews/subcult-logo-fisheye/fisheye-circle-study.png",
+    "sha256": "d2207dea611860cb3efdd7ea27ba01d43ed658285a8df62e3de896cb81490c53",
+    "scope": "Replaces purple circle logo treatments; preserve the approved raster artwork."
+  }
 }

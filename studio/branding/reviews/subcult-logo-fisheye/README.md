@@ -1,6 +1,6 @@
 # SUBCULT fisheye circle study
 
-The user requested solid SC lettering and a green underscore on a purple circle, with a fisheye effect on the SC_. `fisheye-circle-study.png` is a raster visual study produced with the built-in imagegen tool from the approved compact D mark. It is not a selected production master and has not been deployed. A production version needs vector reconstruction and size checks after design review.
+The user requested solid SC lettering and a green underscore on a purple circle, with a fisheye effect on the SC_. The user approved `fisheye-circle-study.png` for deployment in place of existing purple-circle logos. It was produced with the built-in imagegen tool from the approved compact D mark. Production preserves these exact raster bytes rather than reconstructing the approved shape. The selected pack copies it as `logos/mark-fisheye-circle.png`; the public exporter selects it as `public/brand/subcult/fisheye-circle.png`.
 
 Reference: `../../library/brands/subcult/logos/mark-compact-primary.png`. Intended palette: purple `#8b5cf6`, ink `#100b19`, green `#00ff88`. The generated artwork introduces slight color variation; these intended tokens remain the production palette.
 

@@ -30,8 +30,8 @@
     },
     {
       "path": "logo-selection.json",
-      "sha256": "82900f66d2059909fbbd8892de26092b1674e850057e1f629ff61c2a94f84541",
-      "bytes": 4577
+      "sha256": "975d75d165d98ce8249cfd32f8fe75bc901c1ca0ceec00f3a0b774ae8f433581",
+      "bytes": 4908
     },
     {
       "path": "pack-preview.png",
@@ -295,6 +295,14 @@
       "path": "logos/mark-compact-mono-light-outlined.svg",
       "sha256": "2a97a52f10bbe3d6d51b513b76746fa04d7f54cad15ac275031832e55b510027",
       "bytes": 2576
+    },
+    {
+      "path": "logos/mark-fisheye-circle.png",
+      "sha256": "d2207dea611860cb3efdd7ea27ba01d43ed658285a8df62e3de896cb81490c53",
+      "bytes": 754620,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA"
     },
     {
       "path": "logos/lockup-primary.png",

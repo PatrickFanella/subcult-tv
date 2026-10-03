@@ -17,6 +17,11 @@
       "sha256": "39d405daa88cb0bd2e464436374dc5b4a78817605fc23df24b404e8501865c54"
     },
     {
+      "source": "studio/branding/library/brands/subcult/logos/mark-fisheye-circle.png",
+      "target": "public/brand/subcult/fisheye-circle.png",
+      "sha256": "d2207dea611860cb3efdd7ea27ba01d43ed658285a8df62e3de896cb81490c53"
+    },
+    {
       "source": "studio/branding/library/brands/subcult/logos/mark-light.png",
       "target": "public/brand/subcult/mark.png",
       "sha256": "20d94ef7a369be12eca3ba9ea8f3ffecfcc986182ee05c58909858c1693db60f"
