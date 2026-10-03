@@ -60,5 +60,14 @@
     "basis": "taper cassette photographs in the product's docs/inspo/; design proposal in docs/design/",
     "backdrop": "cream paper approved by the user over dark and clear-case alternatives",
     "publication": "not performed; private pilot with no public domain"
+  },
+  "tadooer": {
+    "date": "2026-10-02",
+    "name": "Tadooer",
+    "direction": "A / The plan and the one thing now",
+    "direction_selected_by_user": false,
+    "status": "proposed by Studio from the product's docs/design/ identity; awaits the owner's review",
+    "basis": "subculture-collective/productivity-suite docs/design/ (wave/tadooer-brand, head 17d7bee) and apps/web/public/suite-icon.svg",
+    "publication": "not performed; private, self-hosted planner with no public domain and no sign-up"
   }
 }

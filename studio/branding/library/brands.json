@@ -331,5 +331,31 @@
     "slug": "dedhed",
     "selected_by_user": true,
     "direction_selection": "user"
+  },
+  {
+    "id": "tadooer-a",
+    "brand": "Tadooer",
+    "variant": "A",
+    "name": "The plan and the one thing now",
+    "bg": "#1e1e2e",
+    "fg": "#e2e6f6",
+    "accent": "#bd93f9",
+    "secondary": "#8be9fd",
+    "display": "Inter",
+    "body": "Inter",
+    "label": "Atkinson Hyperlegible Mono",
+    "safe_label": "#a6adc8",
+    "headline": [
+      "The plan,",
+      "and the one thing now."
+    ],
+    "tag": "PLAN \u00b7 FOCUS \u00b7 SYNC",
+    "description": "Catppuccin Mocha surfaces with Dracula accents: a planner day with a time column, task rows, one purple focus session, the pink now line and a teal calendar block.",
+    "mode": "tadooer",
+    "url": null,
+    "source": "Tadooer design system docs/design/ in subculture-collective/productivity-suite (branch wave/tadooer-brand, head 17d7bee, committed), mark from apps/web/public/suite-icon.svg; copied 2026-10-02. Promotional direction proposed by Studio; the owner has not reviewed the artwork.",
+    "slug": "tadooer",
+    "selected_by_user": false,
+    "direction_selection": "proposed"
   }
 ]

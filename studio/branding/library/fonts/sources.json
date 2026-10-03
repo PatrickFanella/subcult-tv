@@ -161,5 +161,35 @@
     "license_source": "https://github.com/google/fonts/raw/main/ofl/archivoblack/OFL.txt",
     "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
     "added": "2026-10-02 for Corkboard"
+  },
+  {
+    "family": "Inter",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf",
+    "css": "@font-face {\n  font-family: 'Inter';\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Inter';\n  font-style: normal;\n  font-weight: 700;\n  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf) format('truetype');\n}\n",
+    "files": [
+      "Inter-0.ttf",
+      "Inter-1.ttf"
+    ],
+    "sha256": {
+      "Inter-0.ttf": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba",
+      "Inter-1.ttf": "b37284b5701b6b168dfc770aa1a4ac492106422fd3ba76bc7641e37434e8019c"
+    },
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt",
+    "added": "2026-10-02 for Tadooer; TTF statics from the Google Fonts CSS API (default curl user agent returns truetype URLs)"
+  },
+  {
+    "family": "Atkinson Hyperlegible Mono",
+    "source": "https://fonts.gstatic.com/s/atkinsonhyperlegiblemono/v8/tssNAoFBci4C4gvhPXrt3wjT1MqSzhA4t7IIcncBiyihrK15gZ4k_SaZ-9CiDQ.ttf",
+    "css": "@font-face {\n  font-family: 'Atkinson Hyperlegible Mono';\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegiblemono/v8/tssNAoFBci4C4gvhPXrt3wjT1MqSzhA4t7IIcncBiyihrK15gZ4k_SaZHNeiDQ.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Atkinson Hyperlegible Mono';\n  font-style: normal;\n  font-weight: 700;\n  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegiblemono/v8/tssNAoFBci4C4gvhPXrt3wjT1MqSzhA4t7IIcncBiyihrK15gZ4k_SaZ-9CiDQ.ttf) format('truetype');\n}\n",
+    "files": [
+      "Atkinson-Hyperlegible-Mono-0.ttf",
+      "Atkinson-Hyperlegible-Mono-1.ttf"
+    ],
+    "sha256": {
+      "Atkinson-Hyperlegible-Mono-0.ttf": "5f7f0ab728eec241e86afa0c2680560fb8c2901097b5ab1f92a8c8b6c65c139c",
+      "Atkinson-Hyperlegible-Mono-1.ttf": "b641521e8e29c9bd8a2d7ff4e5d2fa64e6034edeb8dd62b45f16f04ae779f3d1"
+    },
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/atkinsonhyperlegiblemono/OFL.txt",
+    "added": "2026-10-02 for Tadooer; TTF statics from the Google Fonts CSS API (default curl user agent returns truetype URLs)"
   }
 ]

@@ -1,0 +1,95 @@
+/*
+  Tadooer design tokens. Source of truth for values is apps/web/src/styles.css;
+  this file restates them as plain custom properties for documents, the Studio
+  brand pack and examples outside the app. Dark only (ADR: see README.md).
+*/
+:root {
+  /* Surfaces: Catppuccin Mocha, darkest to lightest */
+  --crust: #11111b;
+  --mantle: #181825;
+  --base: #1e1e2e;
+  --surface-0: #252538;
+  --surface-1: #313244;
+  --surface-2: #45475a;
+  --overlay-0: #6c7086;
+  --overlay-1: #7f849c;
+
+  /* Text */
+  --text: #e2e6f6;
+  --subtext: #a6adc8;
+  --subtext-2: #7f849c;
+
+  /* Borders sit one step above the surface they sit on */
+  --line: #2e2e44;
+  --line-strong: #3a3a54;
+
+  /* Accents: Dracula, one meaning each */
+  --purple: #bd93f9; /* primary action, selection, time blocks, focus frame */
+  --pink: #ff79c6; /* now: current-time line, live timer, running focus */
+  --cyan: #8be9fd; /* keyboard focus ring, links, information, work calendars */
+  --teal: #94e2d5; /* calendar authority: Baikal calendars, planned-time metadata */
+  --green: #50fa7b; /* success, sync online, working state, fresh */
+  --orange: #ffb86c; /* warning, conflict, overdue, stale, offline */
+  --red: #ff5555; /* danger, destructive actions, errors, unavailable */
+  --yellow: #f1fa8c; /* unassigned */
+
+  /* Semantic roles */
+  --background: var(--base);
+  --foreground: var(--text);
+  --card: var(--surface-0);
+  --primary: var(--purple);
+  --primary-foreground: var(--crust);
+  --secondary: var(--surface-1);
+  --muted: var(--surface-1);
+  --muted-foreground: var(--subtext);
+  --destructive: var(--red);
+  --border: var(--line);
+  --input: var(--line-strong);
+  --ring: var(--cyan);
+  --success: var(--green);
+  --warning: var(--orange);
+  --danger: var(--red);
+  --info: var(--cyan);
+  --now: var(--pink);
+  --calendar: var(--teal);
+
+  /* Tinted fills: the accent at 13 to 14 percent over transparent */
+  --primary-tint: color-mix(in srgb, var(--purple) 14%, transparent);
+  --success-tint: color-mix(in srgb, var(--green) 13%, transparent);
+  --warning-tint: color-mix(in srgb, var(--orange) 14%, transparent);
+  --danger-tint: color-mix(in srgb, var(--red) 13%, transparent);
+  --info-tint: color-mix(in srgb, var(--cyan) 13%, transparent);
+  --now-tint: color-mix(in srgb, var(--pink) 14%, transparent);
+  --calendar-tint: color-mix(in srgb, var(--teal) 14%, transparent);
+
+  /* Type */
+  --font-sans:
+    "Inter Variable", Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:
+    "Atkinson Hyperlegible Mono Variable", "Atkinson Hyperlegible Mono",
+    ui-monospace, "SFMono-Regular", monospace;
+  --text-2xs: 0.625rem; /* eyebrows, chips, uppercase field labels */
+  --text-xs: 0.6875rem; /* hints, metadata */
+  --text-sm: 0.75rem; /* controls, secondary copy, buttons */
+  --text-base: 0.8125rem; /* body, task titles */
+  --text-lg: 0.9375rem; /* section headings */
+  --text-xl: 1.125rem; /* auth headings */
+  --text-2xl: 1.375rem; /* page titles, weight 650, tracking -0.015em */
+  --text-3xl: 1.75rem;
+
+  /* Shape and density */
+  --radius-sm: 5px; /* controls */
+  --radius-md: 8px; /* rows, nested panels */
+  --radius-lg: 12px; /* cards */
+  --radius-xl: 16px;
+  --control-height: 1.875rem; /* 30px */
+  --spacing-page: 1.25rem;
+  --spacing-section: 1rem;
+  --spacing-element: 0.625rem;
+  --spacing-compact: 0.375rem;
+  --spacing-tight: 0.25rem;
+  --shadow-overlay: 0 12px 32px rgba(0, 0, 0, 0.45);
+
+  /* Phone: minimum tap target under a coarse pointer */
+  --tap-target: 44px;
+}
