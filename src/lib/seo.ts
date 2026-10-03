@@ -140,7 +140,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/support',
     title: fullTitle('Support the workshop'),
     description:
-      'Paying doesn’t unlock anything; the software stays public. Patreon backers get a weekly field note and a monthly ledger of what shipped and what stalled.',
+      'Paying doesn’t unlock the software; it stays public. Patreon members get private Discord channels and supporter posts, with no fixed posting schedule.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },

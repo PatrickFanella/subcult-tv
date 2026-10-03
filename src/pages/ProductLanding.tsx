@@ -146,8 +146,8 @@ export default function ProductLanding() {
             <p className="landing-eyebrow">MADE IN THE OPEN</p>
             <h2 id="support-title">{project.name} is made by SUBCULT.</h2>
             <p>
-              Patreon pays for the hours and the hosting. Backers get the workshop in return: a
-              field note every week and a monthly ledger of what shipped and what stalled. The
+              Patreon pays for the hours and the hosting. Paid members get private channels in our
+              Discord and supporter posts, which show up when we have something to share. The
               monthly newsletter is free.
             </p>
           </div>

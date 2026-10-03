@@ -1,5 +1,12 @@
 import type { APIPatreonTier } from '@/lib/api';
 
+export interface SupportTier {
+  name: string;
+  price: string;
+  amountCents: number;
+  includes: string[];
+}
+
 export function descriptionText(html: string): string {
   const document = new DOMParser().parseFromString(html, 'text/html');
   document
@@ -21,13 +28,14 @@ export function tierPrice(cents: number): string {
   );
 }
 
-export function publishedTiers(tiers: APIPatreonTier[]) {
+export function publishedTiers(tiers: APIPatreonTier[]): SupportTier[] {
   return tiers
     .filter((tier) => tier.published)
     .sort((a, b) => a.amount_cents - b.amount_cents)
     .map((tier) => ({
       name: tier.title,
       price: tierPrice(tier.amount_cents),
+      amountCents: tier.amount_cents,
       includes: descriptionText(tier.description).split('\n').filter(Boolean),
     }));
 }
