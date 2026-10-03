@@ -12,7 +12,7 @@ export default function ProductVisual({
     return (
       <img
         src="/brand/left-field/hero.svg"
-        alt="Left Field: Read the field. Trace the evidence. LF mark on warm paper."
+        alt="Left Field: Where the field bends. LF mark on warm paper."
         loading={priority ? 'eager' : 'lazy'}
         fetchPriority={priority ? 'high' : 'auto'}
         decoding="async"
