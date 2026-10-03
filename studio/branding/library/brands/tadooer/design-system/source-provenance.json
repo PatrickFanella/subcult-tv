@@ -3,7 +3,7 @@
   "source_path": "docs/design/",
   "source_checkout": "/home/onnwee/.t3/worktrees/productivity-suite/t3code-300198f7",
   "source_branch": "wave/tadooer-brand",
-  "source_head": "17d7bee44f627f70d46e86313378d773ffbd3f1e",
+  "source_head": "563387f68d1cec71c48a7c6b2ab229957b602d02",
   "source_docs_committed": true,
   "copied_at": "2026-10-02",
   "mark_source": {
@@ -14,8 +14,13 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "af05382f09aa478e958ca03f1f7467c4cdb231e64cba0a58f2d52a826535998f",
-      "bytes": 8748
+      "sha256": "275063888094cb677a114abf36a6bdf050a0625379771d799929127d0ee6d46f",
+      "bytes": 9117
+    },
+    {
+      "path": "brand-assets.json",
+      "sha256": "b77daa2be1f34fe7acb75eabfa5bbe2c79fe71d4455dfd94758fafc89f2768d8",
+      "bytes": 1681
     },
     {
       "path": "examples/01-specimen.html",

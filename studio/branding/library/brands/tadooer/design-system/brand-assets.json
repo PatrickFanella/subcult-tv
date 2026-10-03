@@ -1,0 +1,41 @@
+{
+  "source_repository": "subculture-collective/subcult-tv",
+  "source_branch": "studio/tadooer-brand",
+  "source_head": "7ed7e7ce629bdbf8288202d7a2c44781c5e60ee6",
+  "generator": "studio/branding/library/tadooer_product_assets.py",
+  "mark_source": "apps/web/public/suite-icon.svg",
+  "copied_at": "2026-10-02",
+  "note": "Studio generates these from the mark and the design tokens; regenerate there and copy, do not edit here.",
+  "files": [
+    {
+      "path": "apps/web/public/favicon.svg",
+      "source": "studio/branding/library/brands/tadooer/product/favicon.svg",
+      "sha256": "a5b4e181b1a38cc7182b89c5817830b7a096f18ccf645083cbd2e6472e44252f",
+      "bytes": 967
+    },
+    {
+      "path": "apps/web/public/apple-touch-icon.png",
+      "source": "studio/branding/library/brands/tadooer/product/apple-touch-icon.png",
+      "sha256": "993579b1a75579f01f5b20fc96449bc865d1aa2b16289f6681c5f47b7b185ba8",
+      "bytes": 4233
+    },
+    {
+      "path": "apps/web/public/icon-512.png",
+      "source": "studio/branding/library/brands/tadooer/product/icon-512.png",
+      "sha256": "9d7b83208c6d35856dbfc00332c5a437f16b368bf4998ac6ae915cf732c79723",
+      "bytes": 12425
+    },
+    {
+      "path": "apps/web/public/icon-maskable-512.png",
+      "source": "studio/branding/library/brands/tadooer/product/icon-maskable-512.png",
+      "sha256": "babe74340922e4a1b41dfccec41149bbdbff7ba09964faa44f7a0324b97092ad",
+      "bytes": 11167
+    },
+    {
+      "path": "apps/web/public/og.png",
+      "source": "studio/branding/library/brands/tadooer/product/og.png",
+      "sha256": "8d20dc1df1c1069f800aeb716d1a6fbbb6bfd689da27b367119eccf7b4285c45",
+      "bytes": 75083
+    }
+  ]
+}
