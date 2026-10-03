@@ -127,3 +127,61 @@ Asset/check still needed: Check the archive and search destination; attach a saf
 - Check a HasanAra passage against its recording and repeat passage-link opening in another session before attaching demonstration media.
 - Prepare future rotation assets: synthetic Subcult OS free reservation/check-in and an owned-media Undertow local export with browser/audio checks. Keep sandbox billing distinct from live paid service.
 <!-- social-posting-runner:end -->
+
+## Voice rewrite (2026-10-03, unapproved)
+
+Replacement bodies for the drafts in the managed block above, written against the [voice guide](../VOICE.md) and keyed by the same draft IDs and intended times. The block itself is unchanged: the runner compares its hash with the stored one before it writes the next plan. Every entry stays in state `draft`. Intended time, media, evidence boundary and remaining checks are the ones recorded above unless an entry says otherwise. Counts are characters including the URL.
+
+### CLPR-01 / subcult (2026-10-05T11:22:00-05:00)
+
+Twitch clips are easy to make and hard to find twice. On clpr we sort them by topic and by creator: start with a subject, end up at the person who said the thing. https://clpr.tv/
+
+Characters: 179.
+
+### CLPR-01 / patrick (2026-10-06T09:11:00-05:00)
+
+clpr has two front doors because people remember clips two ways: who it was, or what it was about. Creator pages cover the first. Topics cover the second. I didn't want to pick. https://clpr.tv/
+
+Characters: 194.
+
+### PATCHWORK-02 / subcult (2026-10-06T11:22:00-05:00)
+
+Patchwork is our mutual aid demo, and it is pre-alpha. One thing to look at: a request shows up as an approximate area, while an approved public resource can show its address. Please don't post a real request. https://patchwork.subcult.tv/
+
+Characters: 239.
+
+### CLPR-01 / clpr (2026-10-07T10:34:00-05:00)
+
+If you remember who, go to the creator. If you only remember what it was about, go to the topic. Either way you end up in the clips. https://clpr.tv/
+
+Characters: 149.
+
+### REKOLEKT-03 / patrick (2026-10-07T16:41:00-05:00)
+
+Rekolekt is the software. HasanAra is one archive running on it, with its own name and look. I kept those separate so changing how an archive looks doesn't mean touching the search. It's software you deploy; there's no sign-up page.
+
+Characters: 232.
+
+### HASANARA-02 / subcult (2026-10-08T11:22:00-05:00)
+
+A note on the record at HasanAra: our transcripts are machine-made and sometimes wrong. Find your passage, open it at the timestamp and listen to what's around it before you quote anyone. https://hasanara.tv/
+
+Characters: 208.
+
+### CLPR-01 / patrick (2026-10-09T09:11:00-05:00)
+
+Open a topic on clpr and each clip carries the creator's name. Follow the name and you're looking at one person's clips, someone you didn't search for. I think of topics as a way to find people.
+
+Characters: 194. Evidence boundary addition: confirm the creator name on a topic clip is visible and links to that creator before approval.
+
+### PATCHWORK-02 / patrick (2026-10-10T09:11:00-05:00)
+
+Map question I had to answer for Patchwork: how exact should a location be? Depends whose it is. A request for help gets an approximate area. A public resource can show its address, after approval. Pre-alpha, demo data only.
+
+Characters: 224.
+
+### REKOLEKT-03 / subcult (2026-10-11T11:22:00-05:00)
+
+Rekolekt is our software for recording archives: timestamped transcripts, search, and a link from each passage back to the second it was spoken. It's software you deploy, not a hosted upload service. To see one running, visit HasanAra. https://hasanara.tv/
+
+Characters: 256. Evidence boundary addition: the passage-to-timestamp link rests on C-REKOLEKT (passage sharing in a timestamped archive); confirm one passage link opens at its timestamp before approval.

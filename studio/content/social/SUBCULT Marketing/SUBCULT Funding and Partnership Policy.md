@@ -5,7 +5,7 @@ work-type: policy
 status: active
 stage: reference
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-10-03
 threads:
   - "[[001 Projects/Threads/SUBCULT/SUBCULT|SUBCULT]]"
 related-works:
@@ -19,18 +19,18 @@ tags:
 - topic/transparency
 ---
 
-# SUBCULT Funding and Partnership Policy
+# SUBCULT funding and partnership policy
 
-> [!abstract] SUBCULT may use patron support, grants, sponsorships, paid partnerships, earned revenue, and aligned investment. The route does not determine legitimacy; the terms determine whether the relationship increases or compromises the work’s autonomy.
+> [!abstract] SUBCULT may use patron support, grants, sponsorships, paid partnerships, earned revenue, and aligned investment. No route is legitimate or illegitimate in itself. The terms decide whether a relationship adds to the work’s autonomy or compromises it.
 
 > [!warning] Operating policy, not legal advice
 > Equity, debt, securities, sponsorship, grant, tax, and intellectual-property agreements require appropriate legal and financial review before acceptance.
 
 ## Principle
 
-Money is infrastructure. It pays for time, hosting, tools, design, research, accessibility, documentation, and the right to keep experiments alive long enough to learn from them.
+Money pays for time, hosting, tools, design, research, accessibility and documentation, and it keeps an experiment running long enough to learn from it.
 
-Money is also a control surface. Every funding relationship carries incentives, reporting demands, expectations, or claims on future work. SUBCULT should make those forces visible before they become invisible governance.
+Money also brings control. Every funding relationship carries incentives, reporting demands, expectations or claims on future work. SUBCULT should state those openly before they start steering decisions unannounced.
 
 ## Public routes
 
@@ -45,9 +45,9 @@ Money is also a control surface. Every funding relationship carries incentives, 
 
 ## Support route
 
-Patronage supports the workshop. Benefits may include process notes, early previews, build logs, drafts, office hours, or advisory polls when explicitly listed.
+Patronage supports the workshop. Benefits may include process notes, early previews, build logs, drafts, office hours or advisory polls, when a tier lists them explicitly.
 
-Supporters are not investors and support is not a purchase of governance. A poll is advisory unless the prompt states its exact scope, eligible voters, decision rule, and binding effect. A tier should promise only benefits the current operation can reliably deliver.
+Supporters are not investors, and support does not buy governance. A poll is advisory unless the prompt states its exact scope, eligible voters, decision rule, and binding effect. A tier should promise only benefits the current operation can reliably deliver.
 
 ## Partner route
 
@@ -61,9 +61,9 @@ The public **Invest** route should become **Partner**. It may receive inquiries 
 - licensing or service arrangements;
 - carefully structured investment.
 
-The route exists to start a conversation, not to imply that SUBCULT is continuously fundraising or that every relationship is available.
+The route starts a conversation. It does not mean SUBCULT is always fundraising or that every kind of relationship is on offer.
 
-## Non-negotiable boundaries
+## Boundaries that are not negotiable
 
 SUBCULT should reject or redesign an arrangement that requires:
 
@@ -92,11 +92,11 @@ Before accepting material support or signing a partnership, record:
 9. **Authority:** Who may approve the agreement?
 10. **Review:** Which legal, tax, security, or financial specialist must examine it?
 
-No public inquiry form, patron tier, deck, or verbal enthusiasm substitutes for this review.
+A public inquiry form, a patron tier, a deck or someone's spoken enthusiasm does not replace this review.
 
 ## Transparency ledger
 
-Material relationships should be recorded at a level proportionate to their effect.
+Record each material relationship in detail proportionate to its effect.
 
 | Field | Record |
 |---|---|
@@ -111,11 +111,13 @@ Material relationships should be recorded at a level proportionate to their effe
 | Start / end | Effective period and exit terms |
 | Status | Proposed, active, completed, declined, or terminated |
 
-Small individual patron payments may be aggregated to protect privacy. Material institutional support should not disappear inside aggregate totals when it could reasonably affect trust.
+Small individual patron payments may be aggregated to protect privacy. Material institutional support that could reasonably affect trust must be listed on its own, not folded into an aggregate total.
 
 ## Public funding statement
 
-> SUBCULT is sustained through a mix of patron support, earned revenue, grants, sponsorships, partnerships, and potentially aligned investment. Every arrangement is judged by its terms: what it funds, what it controls, what it can see, and whether the relationship can be explained without lying about the work.
+> We may fund SUBCULT through patron support, earned revenue, grants, sponsorships, partnerships and aligned investment. We judge every arrangement by its terms: what it funds, what it controls and what it can see. If we cannot explain a deal in public without lying about the work, we change it or turn it down.
+
+This is draft wording and no route in it is a statement of money received. Before publishing, name only the routes that have actually supplied funds (see [[001 Projects/Works/Social Posts/SUBCULT Marketing/one-sheet-subcult|the one-sheet]]). The wording follows the support voice in the [voice guide](../../VOICE.md).
 
 Short version:
 

@@ -6,11 +6,11 @@ stage: draft
 
 # W40 Bluesky draft variants
 
-Run: 20261001T163045.762669Z-plan. All copy unapproved. No authenticated Bluesky dispatch or publication. Intended times mirror the X preparation plan.
+Run: 20261001T163045.762669Z-plan. All copy unapproved. No authenticated Bluesky dispatch or publication. Intended times mirror the X preparation plan. Bodies were reworded on 2026-10-03 to match the unapproved voice rewrite in [[2026-W40 Content Posts]]; the run's private `bluesky-drafts.json` keeps the original text.
 
 ## patrick / patrick.subcult.tv
 
-A search result is more useful when it leads back to the conversation. HasanAra connects transcript results to broadcast timestamps, so readers can inspect how a point was made. https://hasanara.tv
+A search hit in HasanAra is a timestamp. Click one and you're in the broadcast at that second, and you can hear what came before it. I'd rather hand people the tape than a sentence with the context cut off. https://hasanara.tv
 
 Proposed: 2026-10-01T16:41:00-05:00. Connection: identity_verified_auth_pending.
 
@@ -21,7 +21,7 @@ Media: MEDIA-991fc8ba846e0e1d
 
 ## patrick / patrick.subcult.tv
 
-Before turning a transcript passage into a quote, listen to the recording and check the surrounding exchange. HasanAra's timestamps make that return possible; automated transcription still needs verification.
+HasanAra's transcripts are machine-made, and machines mishear. If you're going to quote one, open the timestamp and listen first, including the minute before it. That's why every passage links back to the recording.
 
 Proposed: 2026-10-02T09:11:00-05:00. Connection: identity_verified_auth_pending.
 
@@ -32,7 +32,7 @@ Media:
 
 ## clpr / clpr.subcult.tv
 
-Looking for a Twitch moment worth revisiting? Browse clips on CLPR, follow the source creator, and explore what else catches your attention. https://clpr.tv
+That one clip from the stream last week. You know the one. If somebody clipped it, it's filed under the creator. Start there and keep scrolling. https://clpr.tv
 
 Proposed: 2026-10-02T10:34:00-05:00. Connection: identity_verified_auth_pending.
 
@@ -43,7 +43,7 @@ Media:
 
 ## subcult / subcult.tv
 
-Researching a HasanAbi discussion? Search HasanAra, open a result at its broadcast timestamp, and inspect the surrounding conversation. Check the recording before quoting. https://hasanara.tv
+We keep a searchable record of HasanAbi broadcasts. Type a phrase and it opens the broadcast at the moment it was said. The transcripts are automatic and sometimes wrong, so check the tape before you quote it. https://hasanara.tv
 
 Proposed: 2026-10-02T11:22:00-05:00. Connection: identity_and_brand_profile_verified_auth_pending.
 
@@ -54,7 +54,7 @@ Media: MEDIA-899878915b7cb292
 
 ## patrick / patrick.subcult.tv
 
-A request for help and a public resource need different map boundaries. Patchwork's pre-alpha uses approximate request areas; exact public resource locations require separate approval. That distinction changes what a map reveals.
+Patchwork is pre-alpha, so most of what I can show is decisions. One of them: a request for help appears as an approximate area. An exact address only appears for a public resource, and only after it's approved. The map treats a pantry and a person differently on purpose.
 
 Proposed: 2026-10-03T09:11:00-05:00. Connection: identity_verified_auth_pending.
 
@@ -65,7 +65,7 @@ Media:
 
 ## patrick / patrick.subcult.tv
 
-An archive can have its own identity while sharing search and passage tools. HasanAra runs on Rekolekt with its own branding and broadcast sources, keeping archive choices separate from maintaining the application.
+HasanAra runs on Rekolekt. I split them so the archive could keep its own name, look and broadcast sources while the search and transcript code stays shared. A second archive wouldn't need a fork.
 
 Proposed: 2026-10-04T09:11:00-05:00. Connection: identity_verified_auth_pending.
 
@@ -76,7 +76,7 @@ Media:
 
 ## subcult / subcult.tv
 
-Development preview: follow a synthetic free ticket reservation through ticket lookup and door check-in in Subcult OS. See what the person welcoming guests needs to find. https://subcult.tv/products/subcult-os
+Subcult OS is still in development, so the guest in this clip is fake. The steps are real: a free reservation, a ticket link, a name on the list, a check-in at the door. https://subcult.tv/products/subcult-os
 
 Proposed: 2026-10-04T11:22:00-05:00. Connection: identity_and_brand_profile_verified_auth_pending.
 

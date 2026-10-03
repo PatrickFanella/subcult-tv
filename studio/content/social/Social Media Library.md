@@ -4,12 +4,12 @@ type: work
 status: active
 stage: library
 created: 2026-10-01
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # Social media library
 
-A local library for the seven products and occasional Common House material, governed by [[Posting Best Practices]] and [[Social Posting Automation Plan]]. The authoritative catalog is `Media Library/catalog.json` beside this note. Originals live in `Media Library/files/`; the generated `Media Library/index.html` is an offline visual gallery. No paid storage service or image API key was added.
+A local library for the seven products and occasional Common House material, governed by [[Posting Best Practices]] and [[Social Posting Automation Plan]]. The authoritative catalog is `media/library/catalog.json` in Studio, with originals in `media/library/files/` and a generated offline gallery at `media/library/index.html`. In the vault the same folder appears beside this note as `Media Library/`, through a compatibility link. No paid storage service or image API key was added.
 
 ## First original assets
 
@@ -22,46 +22,42 @@ A local library for the seven products and occasional Common House material, gov
 
 ![[Media Library/files/MEDIA-12c8b3fbf77f61af.png]]
 
-Both images were inspected in this session. They are stylized concept artwork, not real product screens, streamer footage or news photography. Each has descriptive alt text and generation provenance in the catalog. Both fit the conservative X static-image size limit. Their availability does not approve a post or prove any product workflow.
+Both images were inspected on October 1. They are stylized concept artwork: not product screens, streamer footage or news photography. Each has descriptive alt text and generation provenance in the catalog, and both fit the conservative X static-image size limit. Having them in the library approves no post and proves no product workflow.
 
 ## Catalog fields
 
-Each record has a stable content-hash ID, title, original file, SHA-256, dimensions, byte size, duration where applicable, product tags, eligible accounts/platforms, kind, source, recorded rights, attribution, alt text, generation prompt, review state and uses. `uses` is a place for actual reuse history, not invented publication analytics; future published-use entries require a real published URL and observation date. It is initially empty.
+Each record has a stable content-hash ID, title, original file, SHA-256, dimensions, byte size, duration where applicable, product tags, eligible accounts and platforms, kind, source, recorded rights, attribution, alt text, generation prompt, review state and uses. `uses` starts empty and records actual reuse. A published-use entry needs a real published URL and an observation date; it is not a place for publication analytics nobody observed.
 
-- `needs_review`: imported/generated and available to propose in a draft; rights, crop, privacy, typography, accessibility and account fit still need editorial review.
-- `ready`: an editor has completed asset checks. This remains separate from approval of exact copy, account and posting time.
-- `retired`: retained for recovery/history, excluded from new selections.
-- `unknown` rights: cataloged for investigation, excluded from runner media choices. A recorded rights category does not certify a legal conclusion. Licensed assets retain source/license and attribution requirements.
+- `needs_review`: imported or generated, and available to propose in a draft. Rights, crop, privacy, typography, accessibility and account fit still need editorial review.
+- `ready`: an editor has completed the asset checks. Approval of exact copy, account and posting time is separate.
+- `retired`: kept for recovery and history, excluded from new selections.
+- `unknown` rights: cataloged for investigation, excluded from runner media choices. A recorded rights category is not a legal conclusion. Licensed assets keep their source, license and attribution requirements.
 
-Never put real private aid requests, guests, email addresses, tokens or internal URLs into a capture. Use synthetic demonstration data. Product workflow proof needs current real captures; generation cannot replace it. Do not generate documentary-looking political events or endorsements.
+Never put real private aid requests, guests, email addresses, tokens or internal URLs into a capture. Use synthetic demonstration data. Proof of a product workflow needs a current real capture, and generation cannot stand in for one. Do not generate documentary-looking political events or endorsements.
 
 ## Local commands
 
-From the canonical vault root:
+From `studio/` (in the vault, the same scripts appear under `scripts/social-posting/`):
 
 ```bash
-python scripts/social-posting/media.py audit
-python scripts/social-posting/media.py search --product clpr
-python scripts/social-posting/media.py gallery
-python scripts/social-posting/media.py add /path/to/capture.png --title "CLPR creator browsing" --products clpr --accounts clpr,patrick,subcult --platforms x,instagram --rights user_owned --kind screenshot --source-ref "Current capture; synthetic account; source revision and capture date" --alt-text "Description of the visible workflow."
+python automation/social-posting/media.py audit
+python automation/social-posting/media.py search --product clpr
+python automation/social-posting/media.py gallery
+python automation/social-posting/media.py add /path/to/capture.png --title "CLPR creator browsing" --products clpr --accounts clpr,patrick,subcult --platforms x,instagram --rights user_owned --kind screenshot --source-ref "Current capture; synthetic account; source revision and capture date" --alt-text "Description of the visible workflow."
 ```
 
-The CLI uses installed `ffprobe` for dimensions/duration and copies originals without replacing existing assets. It deduplicates identical bytes, confines catalog paths, verifies hashes, and starts every new asset at `needs_review`. Use `--attribution` to record license terms and required credit for licensed material. Gallery generation is local; it does not upload files. Review and update catalog metadata deliberately, then run `audit` and rebuild the gallery.
+The CLI reads dimensions and duration with the installed `ffprobe` and copies originals without replacing existing assets. It deduplicates identical bytes, confines catalog paths, verifies hashes, and starts every new asset at `needs_review`. Use `--attribution` to record license terms and required credit for licensed material. Gallery generation is local and uploads nothing. After a deliberate metadata change, run `audit` and rebuild the gallery.
 
 ## Planner integration and generation
 
-Weekly and timely jobs receive this catalog plus the dated best-practices guide. Every new draft has a media choice: `none`, `library`, `generate` or `capture`, exact asset IDs when relevant, a production brief and proposed alt text. Library references are validated against current files, hash, account/platform eligibility and conservative X still-image limits. An existing illustration remains an illustration.
+The weekly and timely jobs receive this catalog and the dated best-practices guide. Every new draft carries a media choice (`none`, `library`, `generate` or `capture`), exact asset IDs when relevant, a production brief and proposed alt text. Library references are validated against current files, hashes, account and platform eligibility, and conservative X still-image limits. An existing illustration stays labeled as an illustration.
 
-Requests for a new illustration or real capture are saved as `media-requests.json` in the private run directory and shown in the draft note. This is an automatic production-request queue, not unattended image rendering. Built-in image generation is available during interactive agent work and was used for the two initial assets. No unattended paid API generation, media upload, Buffer attachment or publication is installed. Instagram and Patreon can reuse eligible material after their account and delivery paths are proved.
+A request for a new illustration or a real capture is saved as `media-requests.json` in the private run directory and shown in the draft note. That file is a queue of production requests; nothing renders unattended. Built-in image generation is available during interactive agent work and produced the two initial assets. No unattended paid API generation, media upload, Buffer attachment or publication is installed. Instagram and Patreon can reuse eligible material once their account and delivery paths are proved.
 
-For the remaining-week trial, attach concept art only when it helps explain the point; preserve each draft's live-workflow and asset checks. Keep old generated artwork and release media in their current locations until deliberately imported with source/rights information. No existing artwork was deleted or automatically treated as cleared.
-
-
-## Bluesky and product media — October 1
-
-[[Bluesky Posting Plan]] adds three intended account identities and local draft variants. Direct delivery remains pending account setup and authentication. [[Social Media Production]] covers real screenshots, original recording masters and captioned short edits. Keep the agreed cadence; choose a useful format and test outcomes from actual published posts.
-
+For the October 1–4 trial, attach concept art only when it helps explain the point, and keep each draft's live-workflow and asset checks. Older generated artwork and release media stay where they are until someone imports them with source and rights information. No existing artwork was deleted or treated as cleared.
 
 ## Account branding
 
-[The October 1 branding pack](Branding/2026-10-01/README.md) contains the three applied Bluesky profile identities and reusable X assets. Profile avatars and banners stay outside the post-media catalog so the preparation runner does not select them as ordinary post attachments.
+[The October 1 branding pack](Branding/2026-10-01/README.md) contains the three applied Bluesky profile identities and reusable X assets. Profile avatars and banners stay out of the post-media catalog so the preparation runner does not pick them as ordinary attachments.
+
+Related: [[Bluesky Posting Plan]] for account identities and local draft variants, [[Social Media Production]] for captures, recording masters and short edits.

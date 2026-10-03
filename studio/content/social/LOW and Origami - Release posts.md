@@ -20,19 +20,19 @@ Drafts only. Add the actual published destination before using these. No audio u
 
 ## Combined studio update
 
-Two recent tracks: a dark extended club rework of Cracker's "Low," and a boom-bap rework pairing Freddie Gibbs' "Origami" vocal with a sample of Ja'afar Hassan's "They Taught Me." I've written up the arrangement decisions and source credits on Patreon.
+Two reworks off my desk. One takes Cracker's "Low" somewhere dark and stretches it into a club mix. The other puts Freddie Gibbs' "Origami" vocal over boom-bap built on a sample of Ja'afar Hassan's "They Taught Me." Arrangement notes and source credits are on Patreon.
 
 ## LOW
 
-I rebuilt Cracker's "Low" around its original vocal, separated in Ableton. The extended club mix gives the pumping bass, builds, and breakdowns more room. Production notes and credits are on Patreon.
+I pulled the vocal out of Cracker's "Low" in Ableton and built a new track under it. It's an extended club mix, so the bass gets to pump and the builds and breakdowns take their time. Production notes and credits are on Patreon.
 
 ## Origami
 
-Freddie Gibbs' "Origami" vocal, a sample of Ja'afar Hassan's "They Taught Me," and my own boom-bap production around them. Short Rhodes parts and melodic replies instead of filling every gap. More on the arrangement and sources on Patreon.
+Origami is Freddie Gibbs' vocal, a sample of Ja'afar Hassan's "They Taught Me," and my boom-bap production around the two. I kept the Rhodes parts short and let the melody answer the vocal where I could have filled the gap. The arrangement and sources are written up on Patreon.
 
 ## Rack preview
 
-I'm preparing an Ableton rack to share: either a dub delay for throws and feedback or a transition rack for filtering, repeats, and reverb. The macro mappings still need testing. Which would you use?
+I'm getting an Ableton rack ready to share and haven't picked which. One is a dub delay for throws and feedback. The other is a transition rack: filtering, repeats, reverb. The macro mappings still need testing either way. Which would you open first?
 
 ## Source posts
 

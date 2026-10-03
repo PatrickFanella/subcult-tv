@@ -26,9 +26,9 @@ work-type: social-post
 
 ### I built a metronome and tuner for Obsidian
 
-I use Obsidian while practicing guitar, but switching between my notes, a metronome, and a tuner kept breaking the flow. So I built **Metronome + Tuner**, an open-source Obsidian plugin.
+I practice guitar with Obsidian open, and leaving my notes to find a metronome, then leaving again for a tuner, kept breaking the session. So I built Metronome + Tuner, an open-source Obsidian plugin.
 
-The metronome includes:
+The metronome has:
 
 - 30–300 BPM
 - Tap tempo
@@ -37,56 +37,42 @@ The metronome includes:
 - Seven synthesized click sounds
 - Keyboard controls
 
-The chromatic tuner shows the detected note, frequency, cents, and signal confidence. Microphone audio is analyzed locally—it is never recorded, stored, transmitted, or played back.
+The chromatic tuner shows the detected note, its frequency, how many cents off it is, and signal confidence. It analyzes microphone audio on your device. It never records, stores, transmits or plays that audio back.
 
-The plugin has been submitted to the Obsidian Community Plugins directory and is awaiting review. Until then, it can be installed manually from GitHub:
+I've submitted the plugin to the Obsidian Community Plugins directory and it is waiting for review. Until then you can install it manually from GitHub:
 
 https://github.com/patrickfanella/obsidian-plugin-metronome-tuner
 
-This started as a small tool for my own practice workflow. I’m sharing it because other musicians who keep lessons, repertoire, transcriptions, or practice logs in Obsidian may find it useful too.
+I made this for my own practice. If you keep lessons, repertoire, transcriptions or a practice log in Obsidian, it might suit yours.
 
-If you try it, send feedback or report issues here:
+Bugs and feedback go here:
 
 https://github.com/patrickfanella/obsidian-plugin-metronome-tuner/issues
-
-Thanks for supporting projects like this.
 
 ---
 
 ## Instagram post
 
-I built a metronome and chromatic tuner inside Obsidian.
+I put a metronome and a chromatic tuner inside Obsidian, because that's where my practice notes and charts already are.
 
-**Metronome + Tuner** keeps practice notes, charts, timing, and tuning in one workspace—without switching apps.
+The metronome: 30–300 BPM, tap tempo, custom time signatures, first-beat accents, seven click sounds.
 
-It includes:
+The tuner: chromatic, with cents and frequency readouts.
 
-• 30–300 BPM  
-• Tap tempo  
-• Custom time signatures  
-• First-beat accents  
-• Seven click sounds  
-• Chromatic tuning with cents and frequency readouts  
-• Desktop and mobile support  
+Both work on desktop and mobile. Microphone audio stays on your device. Nothing is recorded or transmitted.
 
-Microphone audio stays on your device. Nothing is recorded or transmitted.
-
-The plugin is open source and currently awaiting approval for the Obsidian Community Plugins directory.
+It's open source and waiting on approval for the Obsidian Community Plugins directory.
 
 GitHub:  
 https://github.com/patrickfanella/obsidian-plugin-metronome-tuner
 
-#ObsidianMD #MusicPractice #GuitarPractice #OpenSource #MusicTools
+#ObsidianMD #GuitarPractice
 
 ---
 
 ## Twitter/X post
 
-I built an open-source metronome and chromatic tuner for Obsidian.
-
-Tap tempo, custom meters, 7 click sounds, cents/frequency readouts, and local-only mic analysis.
-
-Community Plugins review pending. Code + manual install:
+I practice guitar with Obsidian open, so I built it a metronome and chromatic tuner. Tap tempo, custom meters, seven click sounds, local-only mic analysis. Community Plugins review pending. Manual install:
 
 https://github.com/patrickfanella/obsidian-plugin-metronome-tuner
 
@@ -96,15 +82,15 @@ https://github.com/patrickfanella/obsidian-plugin-metronome-tuner
 
 **1/6**
 
-I built a metronome and chromatic tuner inside Obsidian.
+I built a metronome and a chromatic tuner inside Obsidian.
 
-I wanted to keep practice notes, charts, timing, and tuning in one workspace instead of switching between apps.
+My practice notes and charts were already there, and I was tired of switching apps to keep time or tune.
 
-Here’s what it does:
+What it does:
 
 **2/6**
 
-The metronome supports:
+The metronome:
 
 • 30–300 BPM  
 • Tap tempo  
@@ -113,11 +99,11 @@ The metronome supports:
 • Volume control  
 • Seven synthesized click sounds
 
-It uses Web Audio scheduling to keep the clicks accurate.
+Clicks are scheduled with Web Audio to keep them accurate.
 
 **3/6**
 
-The chromatic tuner displays:
+The tuner shows:
 
 • Detected note  
 • Frequency  
@@ -129,24 +115,24 @@ It works with guitar, bass, voice, and other instruments.
 
 **4/6**
 
-Privacy was important.
+The microphone starts only when you ask for it.
 
-The microphone starts only when you request it. Audio is analyzed locally and is never recorded, stored, transmitted, or routed to an output.
+Audio is analyzed locally. It is never recorded, stored, transmitted, or routed to an output.
 
 Stop the tuner or leave its panel, and microphone capture stops.
 
 **5/6**
 
-The interface works in narrow Obsidian sidebars and supports keyboard navigation, reduced motion, desktop, and mobile.
+It fits narrow Obsidian sidebars and supports keyboard navigation, reduced motion, desktop, and mobile.
 
-It also includes selectable click tones so you aren’t stuck practicing to the same sound forever.
+You can also pick the click tone, so you aren't stuck practicing to the same sound forever.
 
 **6/6**
 
-Metronome + Tuner is open source and awaiting review for the Obsidian Community Plugins directory.
+Metronome + Tuner is open source and waiting for review in the Obsidian Community Plugins directory.
 
-You can inspect the code or install it manually now:
+You can read the code or install it manually now:
 
 https://github.com/patrickfanella/obsidian-plugin-metronome-tuner
 
-Feedback welcome.
+Tell me what breaks.
