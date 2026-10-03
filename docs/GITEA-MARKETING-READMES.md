@@ -27,7 +27,7 @@ The existing seven development guides remain in place. The five repositories who
 
 Local verification covered 125 Markdown destinations, twelve banner hash matches, and byte-for-byte preservation of five former README overviews. All 38 public URL checks returned HTTP 200, including four retained screenshots. HTTP success establishes reachability, not completion of authenticated product journeys.
 
-The selected banners were visually inspected together. Gitea branch rendering initially redirected the unsigned browser to sign-in; authenticated API readback and subsequent rendered-page evidence are separate checks. Twelve README pages rendered successfully through Gitea’s Markdown API. A separate local gallery uses that returned HTML for visual review; it does not establish signed-in rendering on Gitea. Hosted checks were still waiting to run at the final readback; none of these README PRs has been merged.
+The selected banners were visually inspected together. Gitea branch rendering initially redirected the unsigned browser to sign-in; authenticated API readback and subsequent rendered-page evidence are separate checks. Twelve README pages rendered successfully through Gitea’s Markdown API. A separate local gallery uses that returned HTML for visual review; it does not establish signed-in rendering on Gitea. The eleven product README PRs were merged during this task, and their default-branch README bytes were verified. The SUBCULT changes are in PR #33. Hosted checks were still waiting to run at the observation; no application-suite success is claimed.
 
 Repository descriptions and website fields are updated independently through the Gitea API, with before/after snapshots and readback of visibility, archive state and default branch. Private products receive no invented public URL.
 
@@ -38,3 +38,7 @@ Studio is the source for artwork; copies in `docs/assets/readme/` are selected R
 ## Live repository avatars
 
 All twelve repositories now use their selected Studio `social/avatar.png`. Each upload was followed by repository-metadata readback, an authenticated fetch of the served image and a pixel comparison against the Studio source. All twelve served 512×512 avatars match their source pixels exactly. The [avatar selection receipt](assets/readme/repository-avatar-selection.json) records source revision, source hash, previous and current avatar URLs, served hash and image dimensions. Previous image downloads and metadata snapshots are retained in the local task evidence directory `/tmp/subcult-readme-audit/`.
+
+## Public README image routing
+
+Live anonymous browser inspection found that Gitea redirects `/media/branch/` and `/raw/branch/` image requests to sign-in even for public repositories. The public raw-file API returns the selected PNG correctly. The eight public repositories receive follow-up README changes using that API URL pinned to the existing artwork commit. Anonymous retrieval is checked byte for byte against the selected banner. Private repositories retain repository-relative images and their existing authentication boundary.
