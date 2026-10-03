@@ -1,0 +1,29 @@
+{
+  "styleId": "680cf16b-0093-473b-854f-f1de9af5e698",
+  "sourceUrl": "https://styles.refero.design/style/680cf16b-0093-473b-854f-f1de9af5e698",
+  "fetchedAt": "2026-10-02T22:03:58.202908+00:00",
+  "extractedAt": "2026-10-02T22:03:58.226627+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "UGLYCASH — Style Reference",
+  "htmlSha256": "34ffe5935fe544b03de5d63ee098347e04a0febbecd2f01220b5a339919cf6e2",
+  "cache": ".cache/680cf16b-0093-473b-854f-f1de9af5e698.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af8eb2fb007999235a156daa387d2be62e8a9c37942efcf99a86f6dac8ce62fe",
+      "bytes": 21053,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a20382ab-e4d5-4d96-9ca5-20f1f7aa3f6e.jpg",
+    "fetchedAt": "2026-10-02T22:04:00.247571+00:00",
+    "sha256": "a3e4e6aef09fccc94a1c6ab91596e1fc8b37ad2f79eeb8b30cb022a25b7770dd",
+    "bytes": 71703,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

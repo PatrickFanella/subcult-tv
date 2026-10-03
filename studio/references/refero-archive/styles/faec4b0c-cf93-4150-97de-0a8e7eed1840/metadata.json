@@ -1,0 +1,29 @@
+{
+  "styleId": "faec4b0c-cf93-4150-97de-0a8e7eed1840",
+  "sourceUrl": "https://styles.refero.design/style/faec4b0c-cf93-4150-97de-0a8e7eed1840",
+  "fetchedAt": "2026-10-02T22:53:30.491589+00:00",
+  "extractedAt": "2026-10-02T22:53:30.514144+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Discord — Style Reference",
+  "htmlSha256": "7ec3e3b4b4628f19731f8b2ec380e358f1774136c0df8274f9c5b12c17f2a026",
+  "cache": ".cache/faec4b0c-cf93-4150-97de-0a8e7eed1840.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "27459d1ec17d7d788ea665e67100d0dd2688daff98f8d7d0e4f65e333331f82e",
+      "bytes": 25176,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ed6ea420-f81b-43dd-9f4b-9f26e68be75b.jpg",
+    "fetchedAt": "2026-10-02T22:53:32.335265+00:00",
+    "sha256": "73aaf3312c5b65f56222d178d2b368b96e00731ef115145cd25c8a8853074748",
+    "bytes": 119382,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

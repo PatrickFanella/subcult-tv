@@ -1,0 +1,29 @@
+{
+  "styleId": "a639fa6c-1705-47c2-b452-d4479469a734",
+  "sourceUrl": "https://styles.refero.design/style/a639fa6c-1705-47c2-b452-d4479469a734",
+  "fetchedAt": "2026-10-02T22:40:26.233579+00:00",
+  "extractedAt": "2026-10-02T22:40:26.256202+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Chester's Garden — Style Reference",
+  "htmlSha256": "a72cfba4e4b6ca26638df54da0aceb34340d1687d8e8a0a11a0c3fc59f949706",
+  "cache": ".cache/a639fa6c-1705-47c2-b452-d4479469a734.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "374eeba9884d09ca5b82c7850184c3337ded71d3ce09baa79fb9c725d7cec640",
+      "bytes": 22221,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9db0eb66-9ace-42cf-878a-bfceb1e4ad85.jpg",
+    "fetchedAt": "2026-10-02T22:40:28.241884+00:00",
+    "sha256": "1656538e933b61420a9d708a1f6e350eb899ca346bf587934007b572c8532a4f",
+    "bytes": 163794,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "cc20715c-e9ab-42a7-a34b-d43d76677219",
+  "sourceUrl": "https://styles.refero.design/style/cc20715c-e9ab-42a7-a34b-d43d76677219",
+  "fetchedAt": "2026-10-02T22:29:58.199456+00:00",
+  "extractedAt": "2026-10-02T22:29:58.222655+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Prismic — Style Reference",
+  "htmlSha256": "709d22362bde824dd9775621c1b90bfe39c1a08661fd719b8738a5f603b6379c",
+  "cache": ".cache/cc20715c-e9ab-42a7-a34b-d43d76677219.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ce327617332121c6d8a848f5991f288674352aee61841b9cccf04c2e957e974d",
+      "bytes": 24870,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5275820c-1db6-4d66-9a86-2cd2e8e148e1.jpg",
+    "fetchedAt": "2026-10-02T22:30:01.298666+00:00",
+    "sha256": "4075daecff8294243466b690b52ecd6d245d1d6c081631981476080c5197f60d",
+    "bytes": 77746,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

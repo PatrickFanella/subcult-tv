@@ -1,0 +1,29 @@
+{
+  "styleId": "3a331157-f5a5-4640-ada8-8a3ad262ee6a",
+  "sourceUrl": "https://styles.refero.design/style/3a331157-f5a5-4640-ada8-8a3ad262ee6a",
+  "fetchedAt": "2026-10-02T22:18:06.192931+00:00",
+  "extractedAt": "2026-10-02T22:18:06.218802+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aspelin Reitan — Style Reference",
+  "htmlSha256": "92460322a0918d0b5b0522dac100da88fbe8aaef133cc9db3c26be64a73e73ed",
+  "cache": ".cache/3a331157-f5a5-4640-ada8-8a3ad262ee6a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "feb167e4270d67404cae1578041e7b83f82c0d541aa8b6fb870f391e68063732",
+      "bytes": 17847,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c9cdbcef-3d95-4ca0-9d3f-3a1a4dd5f271.jpg",
+    "fetchedAt": "2026-10-02T22:18:08.263391+00:00",
+    "sha256": "e654cb6672953f761ff77d57129f68d38abda6fea0504f740855089ae06afcff",
+    "bytes": 114832,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

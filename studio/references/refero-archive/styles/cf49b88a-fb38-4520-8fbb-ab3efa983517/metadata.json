@@ -1,0 +1,29 @@
+{
+  "styleId": "cf49b88a-fb38-4520-8fbb-ab3efa983517",
+  "sourceUrl": "https://styles.refero.design/style/cf49b88a-fb38-4520-8fbb-ab3efa983517",
+  "fetchedAt": "2026-10-02T22:20:02.237846+00:00",
+  "extractedAt": "2026-10-02T22:20:02.258816+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "OFF WHITE — Style Reference",
+  "htmlSha256": "1e6a7748d08b0ce06732405929fabc1329d7534f933154f9f900d12c70c263de",
+  "cache": ".cache/cf49b88a-fb38-4520-8fbb-ab3efa983517.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "eed4437e5d72526edccf68e593db6321579f5a9536a26b830e4a09a3b43530c1",
+      "bytes": 20270,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/40176ead-1613-44d1-86cb-169a9bf95761.jpg",
+    "fetchedAt": "2026-10-02T22:20:04.405379+00:00",
+    "sha256": "b033f7d3e831b7efcb831df3fc4cdd0a37a761573effa86b6a967f6a3247010d",
+    "bytes": 157720,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -204,7 +204,7 @@ export default function Patreon() {
       <div className="support-page overflow-x-clip">
         <section className="showcase-hero support-hero">
           <div className={SHELL}>
-            <img src="/brand/subcult/master.svg" alt="" className="subcult-hero-mark" />
+            <img src="/brand/subcult/master.svg?v=logo-bcd-20261003" alt="" className="subcult-hero-mark" />
             <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-20 items-end">
               <div className="min-w-0">
                 <p className="showcase-eyebrow">SUBCULT / THE WORKSHOP</p>

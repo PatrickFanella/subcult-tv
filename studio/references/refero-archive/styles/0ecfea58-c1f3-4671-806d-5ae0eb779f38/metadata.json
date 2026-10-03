@@ -1,0 +1,29 @@
+{
+  "styleId": "0ecfea58-c1f3-4671-806d-5ae0eb779f38",
+  "sourceUrl": "https://styles.refero.design/style/0ecfea58-c1f3-4671-806d-5ae0eb779f38",
+  "fetchedAt": "2026-10-02T22:16:38.325507+00:00",
+  "extractedAt": "2026-10-02T22:16:38.347512+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "VISIONNAIRE — Style Reference",
+  "htmlSha256": "ce549e043c31746253701daf197036de5481c6555ff99ddbb4cca21a443028e6",
+  "cache": ".cache/0ecfea58-c1f3-4671-806d-5ae0eb779f38.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a9eacc8d358242bad189597432da35f90a3a1d9a77c7ff148158646a6b8a5919",
+      "bytes": 18322,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d1a2cc4a-a3c0-43b0-aae4-b3d069d168d7.jpg",
+    "fetchedAt": "2026-10-02T22:16:40.314330+00:00",
+    "sha256": "894c91b872191c10aab49ae187d98467170c06ac9ed8c5ae50cda69dc7c45c10",
+    "bytes": 159414,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "6b4c8ca5-476e-442b-b713-d5fc58cf04ac",
+  "sourceUrl": "https://styles.refero.design/style/6b4c8ca5-476e-442b-b713-d5fc58cf04ac",
+  "fetchedAt": "2026-10-02T22:44:38.425891+00:00",
+  "extractedAt": "2026-10-02T22:44:38.447556+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vanta — Style Reference",
+  "htmlSha256": "dd2c2abf4f55528cf831fd2819ef87ba7799d4d388c7beee85397137f80e7687",
+  "cache": ".cache/6b4c8ca5-476e-442b-b713-d5fc58cf04ac.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "18f8f696cbf2a952c3f57a5a6811620967a651a7aaf159647bed5bf828e3a1b4",
+      "bytes": 18715,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5957ec57-9e17-40e6-83ef-e81ba3f2dc68.jpg",
+    "fetchedAt": "2026-10-02T22:44:40.303651+00:00",
+    "sha256": "efc9e8a28ff80ccde954317c270f2a49547f2ec597f5c9cccc917d1ed2d47460",
+    "bytes": 114684,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "a6d39bad-6e32-462e-afce-67c9cb76cf40",
+  "sourceUrl": "https://styles.refero.design/style/a6d39bad-6e32-462e-afce-67c9cb76cf40",
+  "fetchedAt": "2026-10-02T22:45:26.839635+00:00",
+  "extractedAt": "2026-10-02T22:45:26.862243+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Supahub — Style Reference",
+  "htmlSha256": "70df2609ec9ec05eb71621fcebe715a9cf5bc9700a113ecb13ffd0ea26d35d23",
+  "cache": ".cache/a6d39bad-6e32-462e-afce-67c9cb76cf40.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b7b97e53d7d44bae4f74753c2e636b03676e6d4fb93bb134977d55d5dbe04ce7",
+      "bytes": 25236,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2aa863b6-0cd6-4b6e-8860-0158ceb4b470.jpg",
+    "fetchedAt": "2026-10-02T22:45:28.238227+00:00",
+    "sha256": "d6147cbd5ad0c001dca18b510ffd6dfabc363cf0d58dae189db3199585f37307",
+    "bytes": 98908,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

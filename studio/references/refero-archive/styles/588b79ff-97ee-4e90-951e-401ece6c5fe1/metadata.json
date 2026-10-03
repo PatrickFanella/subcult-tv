@@ -1,0 +1,29 @@
+{
+  "styleId": "588b79ff-97ee-4e90-951e-401ece6c5fe1",
+  "sourceUrl": "https://styles.refero.design/style/588b79ff-97ee-4e90-951e-401ece6c5fe1",
+  "fetchedAt": "2026-10-02T22:17:26.197524+00:00",
+  "extractedAt": "2026-10-02T22:17:26.222840+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bongusta — Style Reference",
+  "htmlSha256": "6f4c8a0b07db94928552796106763bc3c2316764d47d24a2f61940cc53ef366a",
+  "cache": ".cache/588b79ff-97ee-4e90-951e-401ece6c5fe1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a2e3766fa07d614d770dc98e91795aff11b19d915c34354c74fa9228d93fc562",
+      "bytes": 19008,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cb615f32-0e33-48ff-a8f3-3209352d2ecb.jpg",
+    "fetchedAt": "2026-10-02T22:17:28.152102+00:00",
+    "sha256": "0fd4fffb1eb1c3483dfdb9a408b66c2aee27059f81fe7789bd9ed289efe0fd9f",
+    "bytes": 43851,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

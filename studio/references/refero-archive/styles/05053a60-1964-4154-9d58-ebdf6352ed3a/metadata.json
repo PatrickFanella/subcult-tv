@@ -1,0 +1,29 @@
+{
+  "styleId": "05053a60-1964-4154-9d58-ebdf6352ed3a",
+  "sourceUrl": "https://styles.refero.design/style/05053a60-1964-4154-9d58-ebdf6352ed3a",
+  "fetchedAt": "2026-10-02T22:46:30.230524+00:00",
+  "extractedAt": "2026-10-02T22:46:30.253725+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "WHOOP — Style Reference",
+  "htmlSha256": "c8f9029d1256060daabab55ebc7a2f4b3281f2ed3ddfa42ec7847d5fa51d6107",
+  "cache": ".cache/05053a60-1964-4154-9d58-ebdf6352ed3a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4b95afe1fc8919574ac007e280f6da79045faffafa55b5c8f52f481f0b29b765",
+      "bytes": 19901,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b51b667d-d239-4099-a8b7-929cb5a147b2.jpg",
+    "fetchedAt": "2026-10-02T22:46:32.282533+00:00",
+    "sha256": "5c6ce0188c081e5ebf7392abb072c448223afa9bc2a7348b5d3cb3a1477043cd",
+    "bytes": 167229,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "aecf9dda-5cba-4dc7-9e73-59b65d895cdf",
+  "sourceUrl": "https://styles.refero.design/style/aecf9dda-5cba-4dc7-9e73-59b65d895cdf",
+  "fetchedAt": "2026-10-02T22:50:42.459110+00:00",
+  "extractedAt": "2026-10-02T22:50:42.481207+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "teenage engineering — Style Reference",
+  "htmlSha256": "ba2f3304a2a5bc9a9dcd72b151775f7e4a1e9257a47402aea3b5e57f232cb253",
+  "cache": ".cache/aecf9dda-5cba-4dc7-9e73-59b65d895cdf.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4fb52b9592df2544b5742ab71eb4bba555cc10c93047f17c21d30b731af61a72",
+      "bytes": 18945,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b6870b08-d599-4a3a-bb77-b77546c386de.jpg",
+    "fetchedAt": "2026-10-02T22:50:44.242887+00:00",
+    "sha256": "88debba13e5211fc09af037dd7bf01aaf70a5dd4a3303e7edb4ebbe9efa17e96",
+    "bytes": 101718,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

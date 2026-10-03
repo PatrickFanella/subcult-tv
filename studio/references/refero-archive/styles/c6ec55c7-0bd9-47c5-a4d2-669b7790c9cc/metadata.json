@@ -1,0 +1,29 @@
+{
+  "styleId": "c6ec55c7-0bd9-47c5-a4d2-669b7790c9cc",
+  "sourceUrl": "https://styles.refero.design/style/c6ec55c7-0bd9-47c5-a4d2-669b7790c9cc",
+  "fetchedAt": "2026-10-02T22:46:02.209686+00:00",
+  "extractedAt": "2026-10-02T22:46:02.233014+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "OLIPOP — Style Reference",
+  "htmlSha256": "096b95c43e57a57303d23fcc412af6e7c08cf9f06e6b3618a4d263952557c9eb",
+  "cache": ".cache/c6ec55c7-0bd9-47c5-a4d2-669b7790c9cc.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af36e99975ac39cbf144f4af8c30dea176d1645a72dc78d9704715cc212bc5fd",
+      "bytes": 23427,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a0276da1-f0a8-41e3-9a7e-745bdfe661e0.jpg",
+    "fetchedAt": "2026-10-02T22:46:04.377273+00:00",
+    "sha256": "964a77475a65147352df44b7013b52f6f310688fa27930584bc2cf6411989642",
+    "bytes": 184650,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

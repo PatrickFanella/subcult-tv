@@ -1,0 +1,29 @@
+{
+  "styleId": "76c761d8-4af1-4ed5-ba93-eeb60f7006b5",
+  "sourceUrl": "https://styles.refero.design/style/76c761d8-4af1-4ed5-ba93-eeb60f7006b5",
+  "fetchedAt": "2026-10-02T22:15:06.223764+00:00",
+  "extractedAt": "2026-10-02T22:15:06.257281+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Alpine Hearing Protection — Style Reference",
+  "htmlSha256": "39bdca9769f01a89dc2c41b8cff83f90edb254a26cc6621f1e1bada8c6042a3b",
+  "cache": ".cache/76c761d8-4af1-4ed5-ba93-eeb60f7006b5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a43e264a5f1c54190b30ac10133a64661bd6d790d5c7a64f3bd054b934b4b7b0",
+      "bytes": 20610,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cf220dd8-6640-42d6-b642-86e9cfa66a88.jpg",
+    "fetchedAt": "2026-10-02T22:15:08.243181+00:00",
+    "sha256": "f18d20946b4f95152cda5b0d334530888534f34ec6b3c548e6f34fe2718a50d1",
+    "bytes": 119089,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

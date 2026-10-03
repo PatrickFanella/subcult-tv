@@ -1,0 +1,29 @@
+{
+  "styleId": "43c1b150-0dab-42f9-9bce-fe0be3dde26c",
+  "sourceUrl": "https://styles.refero.design/style/43c1b150-0dab-42f9-9bce-fe0be3dde26c",
+  "fetchedAt": "2026-10-02T22:49:58.190782+00:00",
+  "extractedAt": "2026-10-02T22:49:58.214163+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Delphi — Style Reference",
+  "htmlSha256": "3dacf2f769d92398222eb129f1dcfc68a0a3918b3e6e67e953547924ac954fae",
+  "cache": ".cache/43c1b150-0dab-42f9-9bce-fe0be3dde26c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c3c231443983ed90206977bbb61435ba67e096f3c7db2a7fc99e1f2a58b00397",
+      "bytes": 22973,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4b3becd3-db00-49ea-9f94-0f5d1476140e.jpg",
+    "fetchedAt": "2026-10-02T22:50:00.220688+00:00",
+    "sha256": "201cce6618191af5a6144b4bd81b324406464f6599167bef928af1760ee888b7",
+    "bytes": 79814,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

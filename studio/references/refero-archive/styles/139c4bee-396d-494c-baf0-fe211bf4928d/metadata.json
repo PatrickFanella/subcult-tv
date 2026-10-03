@@ -1,0 +1,29 @@
+{
+  "styleId": "139c4bee-396d-494c-baf0-fe211bf4928d",
+  "sourceUrl": "https://styles.refero.design/style/139c4bee-396d-494c-baf0-fe211bf4928d",
+  "fetchedAt": "2026-10-02T22:48:38.208573+00:00",
+  "extractedAt": "2026-10-02T22:48:38.235089+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "14islands — Style Reference",
+  "htmlSha256": "068cdc083f6b46ddbc67783a5265e0d012bc62d10a0d6c2b2ef618d8d9c3ab7e",
+  "cache": ".cache/139c4bee-396d-494c-baf0-fe211bf4928d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "59ab9d15e9bcdc095478163a0f32143eeef6e555bdb4664f867c35a9ccbaebc9",
+      "bytes": 16032,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7eaab214-4218-430d-a091-6ac6554c1415.jpg",
+    "fetchedAt": "2026-10-02T22:48:40.224311+00:00",
+    "sha256": "ed241702dd3dce990d49b2e3a3b2abcbb48eb5c1024601b4133f8932111c2c69",
+    "bytes": 52587,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

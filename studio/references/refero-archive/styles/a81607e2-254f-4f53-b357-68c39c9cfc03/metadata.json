@@ -1,0 +1,29 @@
+{
+  "styleId": "a81607e2-254f-4f53-b357-68c39c9cfc03",
+  "sourceUrl": "https://styles.refero.design/style/a81607e2-254f-4f53-b357-68c39c9cfc03",
+  "fetchedAt": "2026-10-02T22:35:14.283976+00:00",
+  "extractedAt": "2026-10-02T22:35:14.307075+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Genway — Style Reference",
+  "htmlSha256": "615216451f0741d4ab402d416ff9862f5a85e17cd9b46a7861fc9b1bf2293b48",
+  "cache": ".cache/a81607e2-254f-4f53-b357-68c39c9cfc03.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "35954e18c570fe8e6fb543cfdc986a617945d653c5d6a02d3bd735dcf15f586d",
+      "bytes": 26273,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4dc254d9-e90b-49a7-a1e4-c55d5a15955c.jpg",
+    "fetchedAt": "2026-10-02T22:35:16.265090+00:00",
+    "sha256": "c328be190730d81be9278c220daf881f3572b05eed8cc36300beda60b458f087",
+    "bytes": 103115,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

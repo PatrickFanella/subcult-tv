@@ -1,0 +1,29 @@
+{
+  "styleId": "07546cf0-b9df-49dd-9da9-319d7a654703",
+  "sourceUrl": "https://styles.refero.design/style/07546cf0-b9df-49dd-9da9-319d7a654703",
+  "fetchedAt": "2026-10-02T22:40:02.213006+00:00",
+  "extractedAt": "2026-10-02T22:40:02.236864+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Finn — Style Reference",
+  "htmlSha256": "2e6952fa1204b79797d645541e525ab4c558bf7a3b8f81ca8703d5fb50825697",
+  "cache": ".cache/07546cf0-b9df-49dd-9da9-319d7a654703.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f8bf01ea8291d537d585623f5e95c77d1f57e85bfada4915ffaa0b81b62b6c6c",
+      "bytes": 24187,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/009810e2-fe5b-4017-8dc5-8241565c5d84.jpg",
+    "fetchedAt": "2026-10-02T22:40:04.355314+00:00",
+    "sha256": "d36ecc46ba284b26f1d6260d1b5c52c83e7f0d0c99edfdcef829cd3433c3d894",
+    "bytes": 143474,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

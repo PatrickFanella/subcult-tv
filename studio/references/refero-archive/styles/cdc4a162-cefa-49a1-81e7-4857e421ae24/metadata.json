@@ -1,0 +1,29 @@
+{
+  "styleId": "cdc4a162-cefa-49a1-81e7-4857e421ae24",
+  "sourceUrl": "https://styles.refero.design/style/cdc4a162-cefa-49a1-81e7-4857e421ae24",
+  "fetchedAt": "2026-10-02T22:25:30.277922+00:00",
+  "extractedAt": "2026-10-02T22:25:30.309257+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Adam Lippes — Style Reference",
+  "htmlSha256": "707866ceff7cad8eb3f53885d605199e1727f44f7e4b5c0ddf76a4018591386e",
+  "cache": ".cache/cdc4a162-cefa-49a1-81e7-4857e421ae24.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "695f8c872b848f6112ee7640d38fa2c8877a89cb7df6d8398c6b52a529cd3833",
+      "bytes": 19464,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e551c472-d545-40c7-a675-dfc5f99feec6.jpg",
+    "fetchedAt": "2026-10-02T22:25:32.240698+00:00",
+    "sha256": "fa261acac77317a36422fd35ef150777d5f9328911258b4805493478492f65db",
+    "bytes": 162652,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

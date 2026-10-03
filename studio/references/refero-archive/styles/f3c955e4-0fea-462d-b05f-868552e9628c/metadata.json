@@ -1,0 +1,29 @@
+{
+  "styleId": "f3c955e4-0fea-462d-b05f-868552e9628c",
+  "sourceUrl": "https://styles.refero.design/style/f3c955e4-0fea-462d-b05f-868552e9628c",
+  "fetchedAt": "2026-10-02T22:29:42.187770+00:00",
+  "extractedAt": "2026-10-02T22:29:42.208881+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ambrook — Style Reference",
+  "htmlSha256": "28d5538047fd1aa963eef710cae5257102f40cbebc2ea095ec4ce8fa10f738a2",
+  "cache": ".cache/f3c955e4-0fea-462d-b05f-868552e9628c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fb3d8ec89aab70aea91f86604a3df92802c4e594347ad13117b1293cd2511143",
+      "bytes": 21537,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cfbe474b-2de0-425d-8176-5fd620cfa15f.jpg",
+    "fetchedAt": "2026-10-02T22:29:44.303929+00:00",
+    "sha256": "efddd03bf941f2c575a51f210eef1c07324e1a2afb69c864a23bd7e4dfa08193",
+    "bytes": 108209,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

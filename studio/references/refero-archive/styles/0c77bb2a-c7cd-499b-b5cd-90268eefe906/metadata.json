@@ -1,0 +1,29 @@
+{
+  "styleId": "0c77bb2a-c7cd-499b-b5cd-90268eefe906",
+  "sourceUrl": "https://styles.refero.design/style/0c77bb2a-c7cd-499b-b5cd-90268eefe906",
+  "fetchedAt": "2026-10-02T22:46:10.771736+00:00",
+  "extractedAt": "2026-10-02T22:46:10.794131+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fly.io — Style Reference",
+  "htmlSha256": "6a50332b1b5d76f65fad159f6dc2db6d63e8f01cf0369ddf9334aa895dc64fc3",
+  "cache": ".cache/0c77bb2a-c7cd-499b-b5cd-90268eefe906.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d77252ccf0e1410aa9982f579d930e66986567211dace8517fa99a583662150f",
+      "bytes": 23443,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/da11ffab-9706-4e94-8021-cf637b8c958b.jpg",
+    "fetchedAt": "2026-10-02T22:46:12.318236+00:00",
+    "sha256": "473da9874baa568f1228a7d077d4c6b21b30373ed3cde49f534253199b1d06d4",
+    "bytes": 220894,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

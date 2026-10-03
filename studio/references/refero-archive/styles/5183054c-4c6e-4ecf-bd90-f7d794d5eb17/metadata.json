@@ -1,0 +1,29 @@
+{
+  "styleId": "5183054c-4c6e-4ecf-bd90-f7d794d5eb17",
+  "sourceUrl": "https://styles.refero.design/style/5183054c-4c6e-4ecf-bd90-f7d794d5eb17",
+  "fetchedAt": "2026-10-02T22:08:26.217353+00:00",
+  "extractedAt": "2026-10-02T22:08:26.242946+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Telepathic Instruments — Style Reference",
+  "htmlSha256": "7182fcbe047017be5d0f5e4526a1ec4aee6602d582fe54513cd2ec66b43934ea",
+  "cache": ".cache/5183054c-4c6e-4ecf-bd90-f7d794d5eb17.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a19b3c16470735413cbdfcd5f302e5c49d798212da0b356e0514ddc8c3bdd80e",
+      "bytes": 22736,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e7b4eb1b-499b-47bc-a727-1abe5405f374.jpg",
+    "fetchedAt": "2026-10-02T22:08:28.397894+00:00",
+    "sha256": "4a7d40c674968fbe8b220e84a6f133fb4361fe6b727f7547096dc2a3f6106fe2",
+    "bytes": 198451,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

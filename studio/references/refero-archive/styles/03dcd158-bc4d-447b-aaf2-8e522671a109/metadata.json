@@ -1,0 +1,29 @@
+{
+  "styleId": "03dcd158-bc4d-447b-aaf2-8e522671a109",
+  "sourceUrl": "https://styles.refero.design/style/03dcd158-bc4d-447b-aaf2-8e522671a109",
+  "fetchedAt": "2026-10-02T22:23:50.176217+00:00",
+  "extractedAt": "2026-10-02T22:23:50.199157+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Evervault — Style Reference",
+  "htmlSha256": "f56a63281c8c2c3ae57c22b5780e8802709661770d2020504d24e93f08393239",
+  "cache": ".cache/03dcd158-bc4d-447b-aaf2-8e522671a109.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c097ab9cbae40c1c9f81113349523d222d4b5709949e7eb691f7cad1c8a96288",
+      "bytes": 25822,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/21968a22-8f95-4001-9793-e510549505a7.jpg",
+    "fetchedAt": "2026-10-02T22:23:52.219038+00:00",
+    "sha256": "9ce96fb64a929142f06d11a940988671e2abb26b92ffec630b1f41641bc603f3",
+    "bytes": 151918,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

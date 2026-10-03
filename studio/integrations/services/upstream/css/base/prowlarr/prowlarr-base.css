@@ -1,0 +1,111 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+@import url("/css/defaults/servarr-base.css");
+
+:root {
+    --chartBackgroundColor: var(--transparency-dark-35) !important;
+    }
+
+[class*="IndexerSearchInput-sectionTitle-"] {
+    color: var(--text-hover);
+}
+
+[class*="IndexerSearchInput-containerOpen-"] [class*="IndexerSearchInput-movieContainer-"] {
+    border: none !important;
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text-hover) !important;
+    box-shadow: 0 0 10px 1px transparent !important;
+}
+
+[class*="IndexerSearchInput-highlighted-"] {
+    background: var(--transparency-dark-10);
+}
+
+[class*="IndexerSearchInput-container-"] [class*="Input-input-"] {
+    background: transparent;
+    border-bottom: solid 1px var(--text);
+}
+
+[class*="IndexerSearchInput-container-"] [class*="Input-input-"]:focus {
+    border-bottom: none;
+    background: transparent;
+}
+
+[class*="IndexerSearchResult-alternateTitle-"] {
+    color: var(--text-hover);
+    font-size: 12px;
+}
+
+/* Indexers */
+[class*="IndexerProxies-center-"] {
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+}
+
+[class*="Card-card-"]:hover [class*="IndexerProxies-center-"] {
+    color: var(--text-hover);
+}
+
+[class*="IndexerIndexTable-row-"]:hover {
+    background: var(--transparency-dark-10);
+    color: var(--text-hover);
+}
+
+canvas {
+    text: white !important;
+}
+
+/* QUERY OPTIONS */
+[class*="QueryParameterOption-option-"] {
+    border: 1px solid transparent;
+}
+
+[class*="QueryParameterOption-token-"] {
+    background: var(--transparency-light-15);
+}
+
+[class*="QueryParameterOption-example-"] {
+    background: var(--transparency-light-25);
+}
+
+
+[class*="QueryParameterOption-option-"]:hover [class*="QueryParameterOption-token-"] {
+    background: var(--transparency-light-25);
+}
+
+[class*="QueryParameterOption-option-"]:hover [class*="QueryParameterOption-example-"] {
+    background: var(--transparency-light-35);
+}
+
+/* HISTORY */
+
+[class*="HistoryRowParameter-parameter-"] {
+    border: 1px solid rgb(var(--accent-color));
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color)
+}
+
+[class*="HistoryRowParameter-value-"] {
+    background: var(--transparency-light-50);
+    color: #1f1f1f;
+}

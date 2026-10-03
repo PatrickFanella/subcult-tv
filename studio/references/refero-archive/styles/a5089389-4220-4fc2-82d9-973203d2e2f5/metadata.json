@@ -1,0 +1,29 @@
+{
+  "styleId": "a5089389-4220-4fc2-82d9-973203d2e2f5",
+  "sourceUrl": "https://styles.refero.design/style/a5089389-4220-4fc2-82d9-973203d2e2f5",
+  "fetchedAt": "2026-10-02T22:43:06.505400+00:00",
+  "extractedAt": "2026-10-02T22:43:06.530387+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Navan — Style Reference",
+  "htmlSha256": "75443e40f0a25a1462e753989b38faaa7b7b50aa99dad1ba037d9a5bdabc7771",
+  "cache": ".cache/a5089389-4220-4fc2-82d9-973203d2e2f5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4d256340602557e585c33ce8d28669411de91d621281c567e86399051160998f",
+      "bytes": 23093,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f17a3238-deeb-4a3b-ab68-5f4c7cae1070.jpg",
+    "fetchedAt": "2026-10-02T22:43:08.338131+00:00",
+    "sha256": "d96ddb064ac8b8ba9381fa1f30673890658128b4464c77f2218668281ce898c6",
+    "bytes": 158609,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

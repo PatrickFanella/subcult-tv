@@ -1,0 +1,29 @@
+{
+  "styleId": "f89bad29-019a-48d7-9724-c40a0d7d8171",
+  "sourceUrl": "https://styles.refero.design/style/f89bad29-019a-48d7-9724-c40a0d7d8171",
+  "fetchedAt": "2026-10-02T22:49:46.258331+00:00",
+  "extractedAt": "2026-10-02T22:49:46.280956+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Legora — Style Reference",
+  "htmlSha256": "7afb8f192957cef51911f05095f4c83728eadf414cedd475a1a54f069300b3f4",
+  "cache": ".cache/f89bad29-019a-48d7-9724-c40a0d7d8171.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "64891f624893effe1c133903e7cea86726b48c2b4587e4c7efbc5213bf97ac30",
+      "bytes": 23247,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/dbb1725b-7421-4a55-8612-1ae798bb7f5c.jpg",
+    "fetchedAt": "2026-10-02T22:49:48.283225+00:00",
+    "sha256": "49dc9b0f1a489e9ccd279ce96e6fd0ae09eca0659dd2066ea6810cd20f85f368",
+    "bytes": 78363,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

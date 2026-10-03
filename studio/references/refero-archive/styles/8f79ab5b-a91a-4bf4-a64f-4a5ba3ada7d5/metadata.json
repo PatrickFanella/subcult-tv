@@ -1,0 +1,29 @@
+{
+  "styleId": "8f79ab5b-a91a-4bf4-a64f-4a5ba3ada7d5",
+  "sourceUrl": "https://styles.refero.design/style/8f79ab5b-a91a-4bf4-a64f-4a5ba3ada7d5",
+  "fetchedAt": "2026-10-02T22:54:54.232701+00:00",
+  "extractedAt": "2026-10-02T22:54:54.266946+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tailwind CSS — Style Reference",
+  "htmlSha256": "c90af8b567db211c5eea1748d11dae04a24e5e58ef42f2ec724e874f496d6704",
+  "cache": ".cache/8f79ab5b-a91a-4bf4-a64f-4a5ba3ada7d5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a825a3bfcb5544e90fa8a573b7384b8bb1456251a2983220583a4e3fefeb051e",
+      "bytes": 26278,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c2de3f61-599f-4e49-a9c9-3c570db7234b.jpg",
+    "fetchedAt": "2026-10-02T22:54:56.283313+00:00",
+    "sha256": "78f5b5c05ecf25ceee31d6ab4181711d11a24ac489c3fc58a3a4952fbc118732",
+    "bytes": 148983,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

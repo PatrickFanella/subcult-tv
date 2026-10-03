@@ -1,0 +1,29 @@
+{
+  "styleId": "31e00a99-6946-4f07-829a-b0904a39a20d",
+  "sourceUrl": "https://styles.refero.design/style/31e00a99-6946-4f07-829a-b0904a39a20d",
+  "fetchedAt": "2026-10-02T22:07:54.268124+00:00",
+  "extractedAt": "2026-10-02T22:07:54.291834+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ON.energy — Style Reference",
+  "htmlSha256": "84d9b0d5ba27d673db41451bd09a098c81b3bc2fe7f980306f6c121396746ba5",
+  "cache": ".cache/31e00a99-6946-4f07-829a-b0904a39a20d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "87eeb9ab82a2c3345392a7f424fc73c73af28cd3a20e7d92a31f66c158cb7df1",
+      "bytes": 16507,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/52a4c420-bed1-4220-8f04-c8dfaec3179c.jpg",
+    "fetchedAt": "2026-10-02T22:07:56.238980+00:00",
+    "sha256": "e511bcc43766dfeb3638f5e889da39950e7aaeb1a4eaadb6e82a32395f91af62",
+    "bytes": 112259,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

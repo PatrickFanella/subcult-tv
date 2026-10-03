@@ -1,0 +1,29 @@
+{
+  "styleId": "655340ae-abff-4a90-8545-8feb62411f68",
+  "sourceUrl": "https://styles.refero.design/style/655340ae-abff-4a90-8545-8feb62411f68",
+  "fetchedAt": "2026-10-02T22:33:34.298591+00:00",
+  "extractedAt": "2026-10-02T22:33:34.321008+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "X (formerly Twitter) — Style Reference",
+  "htmlSha256": "7a34609c8638a37b5f0aca07e748cd6f6511c1e610b9338ad6080699ef4b7a94",
+  "cache": ".cache/655340ae-abff-4a90-8545-8feb62411f68.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e2631eaf8288c676a815a1ad1d7139d28cee6ee58eab1d5637a55cab6df3997e",
+      "bytes": 19707,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c829e152-2d31-4d36-a277-09084f01f38d.jpg",
+    "fetchedAt": "2026-10-02T22:33:36.219186+00:00",
+    "sha256": "e86eef2f5154473c323d39f2a251354b3c7ace9b6f94651c1906644bf921685e",
+    "bytes": 85530,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

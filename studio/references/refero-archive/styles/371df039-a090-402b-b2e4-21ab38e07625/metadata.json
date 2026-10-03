@@ -1,0 +1,29 @@
+{
+  "styleId": "371df039-a090-402b-b2e4-21ab38e07625",
+  "sourceUrl": "https://styles.refero.design/style/371df039-a090-402b-b2e4-21ab38e07625",
+  "fetchedAt": "2026-10-02T22:44:46.285913+00:00",
+  "extractedAt": "2026-10-02T22:44:46.308892+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ameba — Style Reference",
+  "htmlSha256": "46d561dec8bba9429a176579ea342061ebc7fc0b0ecd2cbc88755c083ffd162d",
+  "cache": ".cache/371df039-a090-402b-b2e4-21ab38e07625.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "73b4c15f4eec73908bd6133d08846ab79ee41b0a7831bcb683235b2b406655ff",
+      "bytes": 25801,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fb46232c-0a7d-4573-b122-32ff1d9cd5cc.jpg",
+    "fetchedAt": "2026-10-02T22:44:48.248762+00:00",
+    "sha256": "26eb6b27f45fd831af8cd9ca1c3a723f75481edcfb09446ffb3f3f098d95dfc5",
+    "bytes": 101000,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

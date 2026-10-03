@@ -1,0 +1,29 @@
+{
+  "styleId": "76bfda6b-125f-4d9b-96c0-356de1e9fc10",
+  "sourceUrl": "https://styles.refero.design/style/76bfda6b-125f-4d9b-96c0-356de1e9fc10",
+  "fetchedAt": "2026-10-02T22:29:22.330653+00:00",
+  "extractedAt": "2026-10-02T22:29:22.354450+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Postevand — Style Reference",
+  "htmlSha256": "3397e30c769a85c0d3cfac89daa60e9514e7ea63d74cbce8b861623b1b5ee186",
+  "cache": ".cache/76bfda6b-125f-4d9b-96c0-356de1e9fc10.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8b62b2914826b400d015070fcfdf73893ee0d87867b2ac09f9f3907c0dea55be",
+      "bytes": 17289,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ea31ae48-bb6d-4157-9170-107234f5a736.jpg",
+    "fetchedAt": "2026-10-02T22:29:24.273032+00:00",
+    "sha256": "fe96e2bbd43c9e6a5a31f537f25503ae1277ea0f6315a54b01b780afa9d3290f",
+    "bytes": 188486,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

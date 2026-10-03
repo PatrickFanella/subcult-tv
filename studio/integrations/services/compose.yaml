@@ -1,0 +1,18 @@
+services:
+  subcult-branding:
+    image: local/subcult-service-branding:studio-20261003-v2
+    container_name: subcult-branding
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 64
+    mem_limit: 192m
+    cpus: 1.0
+    ports: ["127.0.0.1:54490:8080"]
+    volumes: ["./routes.json:/routes.json:ro"]
+    networks: [management, cloud, media]
+networks:
+  management: {external: true, name: management}
+  cloud: {external: true, name: cloud}
+  media: {external: true, name: media}

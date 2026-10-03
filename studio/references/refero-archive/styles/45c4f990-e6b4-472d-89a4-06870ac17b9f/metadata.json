@@ -1,0 +1,29 @@
+{
+  "styleId": "45c4f990-e6b4-472d-89a4-06870ac17b9f",
+  "sourceUrl": "https://styles.refero.design/style/45c4f990-e6b4-472d-89a4-06870ac17b9f",
+  "fetchedAt": "2026-10-02T22:18:46.177683+00:00",
+  "extractedAt": "2026-10-02T22:18:46.199807+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ortto — Style Reference",
+  "htmlSha256": "b0766c7b9a98676de2cb13176c306597f148c3af158f6e83b3830756637da14d",
+  "cache": ".cache/45c4f990-e6b4-472d-89a4-06870ac17b9f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ecd3fc024d175cec627d44624656f27e4de8f89eacabf9fa33451a77039dfea2",
+      "bytes": 24519,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7290c0b3-538e-40c3-8d08-b86c1be08a7e.jpg",
+    "fetchedAt": "2026-10-02T22:18:48.241734+00:00",
+    "sha256": "d75b76d3016942e8d8b94d32ca03fb9c21950865787b1764af7a06823581fe20",
+    "bytes": 118545,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

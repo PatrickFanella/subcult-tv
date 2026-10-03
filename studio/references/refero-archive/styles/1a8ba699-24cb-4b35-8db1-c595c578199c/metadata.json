@@ -1,0 +1,29 @@
+{
+  "styleId": "1a8ba699-24cb-4b35-8db1-c595c578199c",
+  "sourceUrl": "https://styles.refero.design/style/1a8ba699-24cb-4b35-8db1-c595c578199c",
+  "fetchedAt": "2026-10-02T22:48:34.175251+00:00",
+  "extractedAt": "2026-10-02T22:48:34.197530+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Shopify — Style Reference",
+  "htmlSha256": "8f909e8ec70b5cd310367ff1d6081de6dbca76bc3709d4744b758fcae829edea",
+  "cache": ".cache/1a8ba699-24cb-4b35-8db1-c595c578199c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f71874f4dab6319a386d8dbaa85bd12c5e4cae29e553ba8cdfd38e37566b3cb2",
+      "bytes": 23002,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/559fc862-5528-4ff1-bce7-3001b7372c7c.jpg",
+    "fetchedAt": "2026-10-02T22:48:36.251282+00:00",
+    "sha256": "1968e8213cd5595ab618ae034126e6f1fed8c59267079ed29c180776f3caa624",
+    "bytes": 111952,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

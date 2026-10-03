@@ -1,0 +1,29 @@
+{
+  "styleId": "6ec18fa7-41ff-41e0-8824-94f6fa104a75",
+  "sourceUrl": "https://styles.refero.design/style/6ec18fa7-41ff-41e0-8824-94f6fa104a75",
+  "fetchedAt": "2026-10-02T22:26:58.197755+00:00",
+  "extractedAt": "2026-10-02T22:26:58.220764+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Glyphy — Style Reference",
+  "htmlSha256": "7c29c68d7616e9524e1e946d09a06d94704c43531c0907cd64b40a9ba704640d",
+  "cache": ".cache/6ec18fa7-41ff-41e0-8824-94f6fa104a75.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "15b55c9e5e4c49a77cc69d0cc4ec34ef3199652ef65d6dc29e90f5030d4eb19c",
+      "bytes": 19775,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3214bc3b-a5b3-4f57-b773-0a0ce3dfe08e.jpg",
+    "fetchedAt": "2026-10-02T22:27:00.240200+00:00",
+    "sha256": "6e4ac4e7ede7e41382b47b3966af54f6adb364c5fe8322467f0a71d2612500a5",
+    "bytes": 82176,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

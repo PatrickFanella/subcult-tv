@@ -1,0 +1,29 @@
+{
+  "styleId": "478c8660-f1a0-4339-ac8c-4cf7ca4cf738",
+  "sourceUrl": "https://styles.refero.design/style/478c8660-f1a0-4339-ac8c-4cf7ca4cf738",
+  "fetchedAt": "2026-10-02T22:49:30.320373+00:00",
+  "extractedAt": "2026-10-02T22:49:30.342349+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ankar AI — Style Reference",
+  "htmlSha256": "f77d569332453138bb7f9d270a41f38cdd2c6ccc33295f898feb139f1d493341",
+  "cache": ".cache/478c8660-f1a0-4339-ac8c-4cf7ca4cf738.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7efeeba0977ae9a9f4a8b1038236be4f4ad5ae55cc9a420597af9179666ad5ce",
+      "bytes": 21894,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/85dd3865-cbf1-4ac7-bfa5-6911dd399ee8.jpg",
+    "fetchedAt": "2026-10-02T22:49:32.176706+00:00",
+    "sha256": "b3ca2b29c003c6ba1e8a53e2287bef3247bdb44690293ca2552d46a7c1514cb8",
+    "bytes": 53707,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

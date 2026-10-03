@@ -1,0 +1,29 @@
+{
+  "styleId": "dfbcffc2-79a3-4349-b5c6-1aa9fae4fcf4",
+  "sourceUrl": "https://styles.refero.design/style/dfbcffc2-79a3-4349-b5c6-1aa9fae4fcf4",
+  "fetchedAt": "2026-10-02T22:45:58.261637+00:00",
+  "extractedAt": "2026-10-02T22:45:58.285216+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Automate Supplier Payments — Style Reference",
+  "htmlSha256": "9bb5b8c6fbcd1eb24afc0ba611812121ace825e4aabccfb0983ce1cd83ea3a4e",
+  "cache": ".cache/dfbcffc2-79a3-4349-b5c6-1aa9fae4fcf4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a178e1feae55238c788da528d1b931ba1d2da89c8743457c41e84fe03be0bebe",
+      "bytes": 19794,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/57249002-0de2-4431-b85b-a47fbb25e9a0.jpg",
+    "fetchedAt": "2026-10-02T22:46:00.263274+00:00",
+    "sha256": "43fb0835f7439e477425c5580e162379abc38cad3467a93e157829103c4bd979",
+    "bytes": 116797,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

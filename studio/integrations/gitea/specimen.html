@@ -1,0 +1,29 @@
+<main class="page-content ui container" style="padding-top:32px;padding-bottom:48px">
+  <p style="font-family:var(--fonts-monospace);color:var(--sc-muted)">SUBCULT / STUDIO · SYNTHETIC THEME SPECIMEN</p>
+  <h1 class="ui header">Controls, states &amp; code</h1>
+  <p>Review fixtures only. This page does not contain repository activity or working account controls.</p>
+  <section class="ui segment">
+    <h2 class="ui header">Actions</h2>
+    <button class="ui primary button">Create repository</button>
+    <button class="ui button">Cancel</button>
+    <button class="ui purple button">Studio</button>
+    <button class="ui red button">Delete</button>
+    <button class="ui disabled button" disabled>Unavailable</button>
+    <p style="margin-top:20px"><span class="ui green label">Open</span> <span class="ui purple label">Merged</span> <span class="ui red label">Closed</span> <span class="ui yellow label">Pending</span></p>
+  </section>
+  <section class="ui segment">
+    <h2 class="ui header">Input &amp; focus</h2>
+    <div class="ui form">
+      <div class="field"><label for="specimen-name">Repository name</label><input id="specimen-name" placeholder="culture-tools" autocomplete="off"></div>
+      <div class="field"><label for="specimen-description">Description</label><textarea id="specimen-description" rows="2" placeholder="A place to build together."></textarea></div>
+    </div>
+  </section>
+  <div class="ui success message">Success · The operation completed.</div>
+  <div class="ui warning message">Warning · Review the change before continuing.</div>
+  <div class="ui error message">Error · The operation could not complete.</div>
+  <div class="ui info message">Information · This is a local review fixture.</div>
+  <section class="ui segment">
+    <h2 class="ui header">Diff readability</h2>
+    <pre style="font-family:var(--fonts-monospace);margin:0;overflow:auto"><span style="display:block;background:var(--color-code-bg);color:var(--color-text)">  function publish(source) {</span><span style="display:block;background:var(--color-diff-removed-row-bg);color:var(--color-diff-removed-fg)">−   return source.trim();</span><span style="display:block;background:var(--color-diff-added-row-bg);color:var(--color-diff-added-fg)">+   return source.trim().normalize();</span><span style="display:block;background:var(--color-code-bg);color:var(--color-text)">  }</span></pre>
+  </section>
+</main>

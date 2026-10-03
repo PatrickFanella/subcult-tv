@@ -1,0 +1,29 @@
+{
+  "styleId": "14cc44e6-41bf-4178-b834-fc61bfeed4ae",
+  "sourceUrl": "https://styles.refero.design/style/14cc44e6-41bf-4178-b834-fc61bfeed4ae",
+  "fetchedAt": "2026-10-02T22:38:46.285548+00:00",
+  "extractedAt": "2026-10-02T22:38:46.307670+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Generative AI — Style Reference",
+  "htmlSha256": "65c0262aeba1de05358cc4e7449aae87a65fca37458bc28cc7b6215886c2bd07",
+  "cache": ".cache/14cc44e6-41bf-4178-b834-fc61bfeed4ae.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "59f85c1d473d4ebe2423d8a2fbf0a776fe39ef9aa9537db433ac1553e3f9fa3c",
+      "bytes": 26090,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ad924098-085c-4106-90ff-cdc93db962ef.jpg",
+    "fetchedAt": "2026-10-02T22:38:48.271816+00:00",
+    "sha256": "2ffa087f40bbee8b73d056072dc6d90d164f52f85c208babb77392ebffefbc6f",
+    "bytes": 155997,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

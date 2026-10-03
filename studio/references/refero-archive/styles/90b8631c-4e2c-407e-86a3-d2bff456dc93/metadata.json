@@ -1,0 +1,29 @@
+{
+  "styleId": "90b8631c-4e2c-407e-86a3-d2bff456dc93",
+  "sourceUrl": "https://styles.refero.design/style/90b8631c-4e2c-407e-86a3-d2bff456dc93",
+  "fetchedAt": "2026-10-02T22:43:18.271070+00:00",
+  "extractedAt": "2026-10-02T22:43:18.292553+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SuperHi — Style Reference",
+  "htmlSha256": "dc17aceae4649508f57e4e7bf5941f70ba2d94a1d5332328fb9f5aa310b3397c",
+  "cache": ".cache/90b8631c-4e2c-407e-86a3-d2bff456dc93.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "093d9995107a21e672e39cb7318ce826bfe595775a03be14361a2993a773c350",
+      "bytes": 24523,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/49ee1679-50df-4241-adc0-719841e2ca9e.jpg",
+    "fetchedAt": "2026-10-02T22:43:20.224250+00:00",
+    "sha256": "21fbe11e2169dfbe98f35a30fe61d32cc755e7802a1e942310b7e41a90d191a5",
+    "bytes": 102241,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

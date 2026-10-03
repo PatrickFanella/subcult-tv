@@ -1,0 +1,29 @@
+{
+  "styleId": "4d0a5051-1c4c-4338-8406-2babdc97915c",
+  "sourceUrl": "https://styles.refero.design/style/4d0a5051-1c4c-4338-8406-2babdc97915c",
+  "fetchedAt": "2026-10-02T22:50:06.229410+00:00",
+  "extractedAt": "2026-10-02T22:50:06.253425+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Val Town — Style Reference",
+  "htmlSha256": "08598e744791e81ca503d935baa8bedd35d35c190314f262978f95935e6ecc28",
+  "cache": ".cache/4d0a5051-1c4c-4338-8406-2babdc97915c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e0de50507bc7e0f443107bbb80b4d4ac09ea381f2b166117b066d747ee55b55b",
+      "bytes": 22263,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fc0a5ba9-0463-424f-8b49-e39346256dab.jpg",
+    "fetchedAt": "2026-10-02T22:50:08.210285+00:00",
+    "sha256": "db0cae81cab873c446bfb1d90a948e5badaacdb53c9fdc84b5d2090cee941c9f",
+    "bytes": 79694,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "6323a42b-3b47-4774-92e4-15651a9ba2ac",
+  "sourceUrl": "https://styles.refero.design/style/6323a42b-3b47-4774-92e4-15651a9ba2ac",
+  "fetchedAt": "2026-10-02T22:53:06.250745+00:00",
+  "extractedAt": "2026-10-02T22:53:06.274139+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Rive — Style Reference",
+  "htmlSha256": "a4bec0a61b44a44ef2e3faf6b807bdd42f40a38c86c2cecc5782f8b6749cdc53",
+  "cache": ".cache/6323a42b-3b47-4774-92e4-15651a9ba2ac.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "613ad60caa19b58bd4d7f4f69568bb3938d51d410851e0169330eab9af28fa33",
+      "bytes": 14018,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f595fcb0-fec1-466b-9e3d-4d5777614dc3.jpg",
+    "fetchedAt": "2026-10-02T22:53:08.263188+00:00",
+    "sha256": "ac6395cbf4bcbb1141a084dab42311d571838e86a0b7e9657f5a97476fa8fb34",
+    "bytes": 92649,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

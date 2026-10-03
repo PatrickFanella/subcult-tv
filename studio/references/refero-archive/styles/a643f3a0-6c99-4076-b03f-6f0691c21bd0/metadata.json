@@ -1,0 +1,29 @@
+{
+  "styleId": "a643f3a0-6c99-4076-b03f-6f0691c21bd0",
+  "sourceUrl": "https://styles.refero.design/style/a643f3a0-6c99-4076-b03f-6f0691c21bd0",
+  "fetchedAt": "2026-10-02T22:02:02.409932+00:00",
+  "extractedAt": "2026-10-02T22:02:02.442916+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "WhatsApp.com — Style Reference",
+  "htmlSha256": "c254a8f7855d5c2839efa6e8dd55b4472ff10d8d7d17f188bc5aca6d37e27b3f",
+  "cache": ".cache/a643f3a0-6c99-4076-b03f-6f0691c21bd0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "741ee33c7e7fc1df8a8c18dcb3e1c491815e5dec5e8358dd8c909a527637a65a",
+      "bytes": 18922,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8969ba41-5aa4-4f16-b588-52248aa349ac.jpg",
+    "fetchedAt": "2026-10-02T22:02:04.255990+00:00",
+    "sha256": "3e95846d4f545f8b3b602c001787ca2caa9e42cac7c2e4dd8b7730e8dbc812de",
+    "bytes": 131625,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

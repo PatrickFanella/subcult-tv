@@ -1,0 +1,29 @@
+{
+  "styleId": "6d9b6fe6-51f4-4978-82dd-a791c28db5cf",
+  "sourceUrl": "https://styles.refero.design/style/6d9b6fe6-51f4-4978-82dd-a791c28db5cf",
+  "fetchedAt": "2026-10-02T22:04:14.212573+00:00",
+  "extractedAt": "2026-10-02T22:04:14.236741+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Glow — Style Reference",
+  "htmlSha256": "91c8304e84c8fa632040060cafdbf10a5d55576aa4ab54095a49b89a5767b93c",
+  "cache": ".cache/6d9b6fe6-51f4-4978-82dd-a791c28db5cf.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "24086ac2649755c2f0f36f9803e85960e4d05cafa6a43de28bff81ae460df198",
+      "bytes": 17639,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ebaab012-098d-4141-8802-d46ac10c0891.jpg",
+    "fetchedAt": "2026-10-02T22:04:16.177841+00:00",
+    "sha256": "e870bab6f1c832e8de09c7d8399c336cc7436b1a2da9924216e42abc5af0bd5c",
+    "bytes": 69751,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

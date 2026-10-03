@@ -1,0 +1,29 @@
+{
+  "styleId": "bb2a2b0b-c84e-48ee-9dd9-7b623f81a422",
+  "sourceUrl": "https://styles.refero.design/style/bb2a2b0b-c84e-48ee-9dd9-7b623f81a422",
+  "fetchedAt": "2026-10-02T22:01:34.197846+00:00",
+  "extractedAt": "2026-10-02T22:01:34.229056+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ysl — Style Reference",
+  "htmlSha256": "b97004e997e0fe55b0a06c48f4c43c9e0d95ef9a00c693a9665815df1c9e23ea",
+  "cache": ".cache/bb2a2b0b-c84e-48ee-9dd9-7b623f81a422.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3318bd4ac20817a997aae51425cae1399f18133312ca85ce512aa59268af5e49",
+      "bytes": 15282,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b514b546-734c-4826-afe1-d059525e5acb.jpg",
+    "fetchedAt": "2026-10-02T22:01:36.283249+00:00",
+    "sha256": "0ffa62f9ad97ff5e9467f3440f6679c8e1c6e63389cdaed1ac37ad2aa74aae82",
+    "bytes": 106527,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

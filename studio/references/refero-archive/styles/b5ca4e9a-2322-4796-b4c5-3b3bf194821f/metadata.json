@@ -1,0 +1,29 @@
+{
+  "styleId": "b5ca4e9a-2322-4796-b4c5-3b3bf194821f",
+  "sourceUrl": "https://styles.refero.design/style/b5ca4e9a-2322-4796-b4c5-3b3bf194821f",
+  "fetchedAt": "2026-10-02T22:11:50.258173+00:00",
+  "extractedAt": "2026-10-02T22:11:50.282149+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Clay — Style Reference",
+  "htmlSha256": "2aa76e3e0a23392118a21be0beb6464a89549b06612467abbdf989275bebf242",
+  "cache": ".cache/b5ca4e9a-2322-4796-b4c5-3b3bf194821f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8219c11a2dcf4aa32c75ef17ef7271c0c03c74952faeefcb0ca2a7b9d3695682",
+      "bytes": 22933,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/270a6dbd-4e54-401a-a84d-555c798d225e.jpg",
+    "fetchedAt": "2026-10-02T22:11:52.245333+00:00",
+    "sha256": "862b12a86ede3f56f099fea2a9c617df4daa3923afb3c80ab9cb76777612cacc",
+    "bytes": 134933,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

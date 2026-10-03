@@ -1,0 +1,29 @@
+{
+  "styleId": "e050061c-346d-44cc-92ba-6b22beb4a91f",
+  "sourceUrl": "https://styles.refero.design/style/e050061c-346d-44cc-92ba-6b22beb4a91f",
+  "fetchedAt": "2026-10-02T22:47:42.250330+00:00",
+  "extractedAt": "2026-10-02T22:47:42.275361+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Upstash — Style Reference",
+  "htmlSha256": "3bb5a265abedd24ff27316d7db64a2dd98d69ac1bd96e5ff0164cea724147fb4",
+  "cache": ".cache/e050061c-346d-44cc-92ba-6b22beb4a91f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9717d02489a3f3389aa748fe277ed045717db9e5d3466c6090fd510dd94afb21",
+      "bytes": 19308,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/764453f9-9343-4222-97df-5ad64b9c0e51.jpg",
+    "fetchedAt": "2026-10-02T22:47:44.239032+00:00",
+    "sha256": "94b080ec37d81f14d2bb7be89ebad942988dee8e570cc07d097a1f5290170072",
+    "bytes": 92562,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "f4ef80f4-f6e5-4aea-8045-f99efaf208b8",
+  "sourceUrl": "https://styles.refero.design/style/f4ef80f4-f6e5-4aea-8045-f99efaf208b8",
+  "fetchedAt": "2026-10-02T22:11:30.394071+00:00",
+  "extractedAt": "2026-10-02T22:11:30.427650+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Airtable — Style Reference",
+  "htmlSha256": "6bddd6b202eec02f35e4ec4cf8e4a874c776d023b5dbe4f130533658ea020c07",
+  "cache": ".cache/f4ef80f4-f6e5-4aea-8045-f99efaf208b8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7b6968a1c141daf74ae2a4ea1ee20d2037fc4cfdd2908205a449cbb985d9eac8",
+      "bytes": 20021,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/897a7e1d-6c52-47d9-a7c3-6c0f4b9489ef.jpg",
+    "fetchedAt": "2026-10-02T22:11:32.253249+00:00",
+    "sha256": "e55ea4b4f6ad74409e944066e92a94c80ffa3fe15dcd022c7a9bd36ffe2f256d",
+    "bytes": 119322,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

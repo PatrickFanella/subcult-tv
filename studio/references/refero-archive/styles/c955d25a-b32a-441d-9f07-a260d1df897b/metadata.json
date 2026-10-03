@@ -1,0 +1,29 @@
+{
+  "styleId": "c955d25a-b32a-441d-9f07-a260d1df897b",
+  "sourceUrl": "https://styles.refero.design/style/c955d25a-b32a-441d-9f07-a260d1df897b",
+  "fetchedAt": "2026-10-02T22:47:02.245109+00:00",
+  "extractedAt": "2026-10-02T22:47:02.267853+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "boords.com — Style Reference",
+  "htmlSha256": "689f1a30b50ced3db3f97eb349b995201965085e5f216f33487dd2d62c590860",
+  "cache": ".cache/c955d25a-b32a-441d-9f07-a260d1df897b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e66eec135a2ec10b6881bc720e7ab0e75f0ce22248971a541457f45cdcd03ed7",
+      "bytes": 21159,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/45fad1fc-c640-4f36-ad69-4b3e16188065.jpg",
+    "fetchedAt": "2026-10-02T22:47:04.261932+00:00",
+    "sha256": "949e33c700ff9fb31dafe81c05e035cf8cd18a7c0d7ddadd72e0d1f716bf16f7",
+    "bytes": 161725,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "7be94705-3666-4fb1-a389-0cfd7cb223cd",
+  "sourceUrl": "https://styles.refero.design/style/7be94705-3666-4fb1-a389-0cfd7cb223cd",
+  "fetchedAt": "2026-10-02T22:14:26.269495+00:00",
+  "extractedAt": "2026-10-02T22:14:26.297733+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Penpot — Style Reference",
+  "htmlSha256": "914ea1771bcd4c1dfe33e3d6c595f8b4facf183c9a1c835a6bc06c7981b51f0c",
+  "cache": ".cache/7be94705-3666-4fb1-a389-0cfd7cb223cd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d3d4d9394cc0a929f18aa711c962948c98d568fd5941dc66ffa77301e3ba1aa3",
+      "bytes": 20358,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/48822675-3022-4a47-bbf6-f1fee103697c.jpg",
+    "fetchedAt": "2026-10-02T22:14:28.268385+00:00",
+    "sha256": "bd45a7a9d01f7a606ab01e12cc5b119dc34a3856baa27ee305e7a3b5c8991447",
+    "bytes": 85731,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "26a9840f-f128-4cfc-84a5-feb7db1bf577",
+  "sourceUrl": "https://styles.refero.design/style/26a9840f-f128-4cfc-84a5-feb7db1bf577",
+  "fetchedAt": "2026-10-02T22:51:34.281689+00:00",
+  "extractedAt": "2026-10-02T22:51:34.304022+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Adora — Style Reference",
+  "htmlSha256": "3fcbcdc6608adb8e9144e432e4d7ad0f5c2cc0c651efbcc647b1e72f11d25bb7",
+  "cache": ".cache/26a9840f-f128-4cfc-84a5-feb7db1bf577.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f070f3ea20ca2aa3f42bc44e392960ebfb5a79bab35eee661ede59a8a8c3e7e1",
+      "bytes": 23383,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e2746af5-1fa4-44c0-9f8b-7134a1b3cd38.jpg",
+    "fetchedAt": "2026-10-02T22:51:36.237944+00:00",
+    "sha256": "863e5aad774a16e6f6b83079590636bac9c7aa6ee20326aa7b2cb8cf21f193fd",
+    "bytes": 80605,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

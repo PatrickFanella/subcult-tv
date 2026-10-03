@@ -1,0 +1,29 @@
+{
+  "styleId": "fdcd4cbb-4db6-4138-9cfd-964795f1e1d6",
+  "sourceUrl": "https://styles.refero.design/style/fdcd4cbb-4db6-4138-9cfd-964795f1e1d6",
+  "fetchedAt": "2026-10-02T22:44:58.199949+00:00",
+  "extractedAt": "2026-10-02T22:44:58.221622+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lightship — Style Reference",
+  "htmlSha256": "2e747173b6d2a7991fd2b8134b1ac29ec8099c14a184885b46ec4d036a18a5ee",
+  "cache": ".cache/fdcd4cbb-4db6-4138-9cfd-964795f1e1d6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "661e8911a3d47d70aa2dfee239651b41079a996f4c6ea7bfdd8220941431de7c",
+      "bytes": 15913,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/11b38a0d-a4a3-4121-a4b4-cda8617209e8.jpg",
+    "fetchedAt": "2026-10-02T22:45:00.314871+00:00",
+    "sha256": "4bd9dab19fca2688d2f72b6010b6be0c84ac2203c3c30ddcb5a365644c35b873",
+    "bytes": 123211,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

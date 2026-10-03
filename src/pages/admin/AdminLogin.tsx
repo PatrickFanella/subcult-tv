@@ -40,7 +40,7 @@ export default function AdminLogin() {
           <div className="p-6">
             {/* Header */}
             <div className="text-center mb-8">
-              <img src="/brand/subcult/master.svg" className="admin-login-mark" alt="" />
+              <img src="/brand/subcult/fisheye-circle.png?v=fisheye-20261003" className="admin-login-mark" alt="" />
               <h1 className="text-3xl font-display text-glow tracking-widest mb-2">SUBCULT</h1>
               <p className="font-mono text-xs text-dust">Admin sign-in</p>
             </div>

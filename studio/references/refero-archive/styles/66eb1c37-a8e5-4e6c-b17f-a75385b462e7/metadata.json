@@ -1,0 +1,29 @@
+{
+  "styleId": "66eb1c37-a8e5-4e6c-b17f-a75385b462e7",
+  "sourceUrl": "https://styles.refero.design/style/66eb1c37-a8e5-4e6c-b17f-a75385b462e7",
+  "fetchedAt": "2026-10-02T22:51:30.254485+00:00",
+  "extractedAt": "2026-10-02T22:51:30.278138+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Rox — Style Reference",
+  "htmlSha256": "3aea43efa90f584c4dc8ec565f30799638bc7eeeaf8dcc88b2646042d85fe90a",
+  "cache": ".cache/66eb1c37-a8e5-4e6c-b17f-a75385b462e7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "62811cb4cc7346e5e4d002e9a8cbd87fffc1d0331c680a7034a649c55e86f3dc",
+      "bytes": 23959,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a1f8ccd0-888f-4496-b307-72ae72ffdddc.jpg",
+    "fetchedAt": "2026-10-02T22:51:32.194450+00:00",
+    "sha256": "73377637dfc79362391d5394993d09d08d753d265a211df87480f62eb05ce030",
+    "bytes": 58120,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

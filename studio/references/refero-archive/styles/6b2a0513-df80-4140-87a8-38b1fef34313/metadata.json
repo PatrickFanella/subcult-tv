@@ -1,0 +1,29 @@
+{
+  "styleId": "6b2a0513-df80-4140-87a8-38b1fef34313",
+  "sourceUrl": "https://styles.refero.design/style/6b2a0513-df80-4140-87a8-38b1fef34313",
+  "fetchedAt": "2026-10-02T22:54:22.312963+00:00",
+  "extractedAt": "2026-10-02T22:54:22.336197+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Asana — Style Reference",
+  "htmlSha256": "966fa10eb16c5c1f753e5be26a6ab9ac2174178da0a37b1b1b8bc136b25d33fc",
+  "cache": ".cache/6b2a0513-df80-4140-87a8-38b1fef34313.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d11350c58b589fa787a52542a5f5bb0d0e12b32e730a7cc4d2d4b677b373da21",
+      "bytes": 23372,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2b93a6e7-7251-4f23-847f-dddf4f6f4806.jpg",
+    "fetchedAt": "2026-10-02T22:54:24.299281+00:00",
+    "sha256": "bbc86f2cb6e60230551388da66fca2a6f27904976310fece4400c47e13fdbf0a",
+    "bytes": 108497,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

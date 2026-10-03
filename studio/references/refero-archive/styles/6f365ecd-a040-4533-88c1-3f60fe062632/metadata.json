@@ -1,0 +1,29 @@
+{
+  "styleId": "6f365ecd-a040-4533-88c1-3f60fe062632",
+  "sourceUrl": "https://styles.refero.design/style/6f365ecd-a040-4533-88c1-3f60fe062632",
+  "fetchedAt": "2026-10-02T22:41:42.315729+00:00",
+  "extractedAt": "2026-10-02T22:41:42.337232+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Atlantic.vc — Style Reference",
+  "htmlSha256": "3ab55071855d67601663d6c40ceea566fb5ff0062ce23c79fd251429d6926265",
+  "cache": ".cache/6f365ecd-a040-4533-88c1-3f60fe062632.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "85bf1c909ed30d01115c5ad88ee0490af20f0344464ea1f8f3cc7dd0fdbaf08b",
+      "bytes": 20541,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/db97d1b8-b3c7-479d-8bd2-1331a0623fa9.jpg",
+    "fetchedAt": "2026-10-02T22:41:44.360407+00:00",
+    "sha256": "ac5bf936abd57bd17b467a5d104b8fa41afffe5ab57330604b9644c668454a1d",
+    "bytes": 129738,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "c03d3f6f-91f9-4571-9840-7fd4da539322",
+  "sourceUrl": "https://styles.refero.design/style/c03d3f6f-91f9-4571-9840-7fd4da539322",
+  "fetchedAt": "2026-10-02T22:16:10.212151+00:00",
+  "extractedAt": "2026-10-02T22:16:10.242048+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Peppermint — Style Reference",
+  "htmlSha256": "a5ce528f5be85a4c87b72b95e7bcb9a81cca519f5f2c0486c3380a6dd5fe7eb8",
+  "cache": ".cache/c03d3f6f-91f9-4571-9840-7fd4da539322.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "12fcba3c06bac062895bbe58da7ab190450892d5e3032a648aaf50168a91316f",
+      "bytes": 23305,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/58f6eca2-7e17-4bfa-bac8-245ab295194f.jpg",
+    "fetchedAt": "2026-10-02T22:16:12.205923+00:00",
+    "sha256": "cba580b54e9f4d2eb45a856af138db4b88f6fd72c082612586589fb23852e2a3",
+    "bytes": 112857,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

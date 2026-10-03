@@ -1,0 +1,29 @@
+{
+  "styleId": "b8a8976c-52d9-4ebb-95ea-4c40f4a9acab",
+  "sourceUrl": "https://styles.refero.design/style/b8a8976c-52d9-4ebb-95ea-4c40f4a9acab",
+  "fetchedAt": "2026-10-02T22:48:26.297303+00:00",
+  "extractedAt": "2026-10-02T22:48:26.321489+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Superwhisper — Style Reference",
+  "htmlSha256": "2087a6cf664e4d19d908ca06baca84073a1038390ef687b2258bf74b7e09e856",
+  "cache": ".cache/b8a8976c-52d9-4ebb-95ea-4c40f4a9acab.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "58a3415d8d9f9dd55ab55fc74711a3f4ba658cc9a3b38a28ca11656c12cffb3b",
+      "bytes": 27918,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/37878626-31eb-43b7-a978-9b7136d26e5d.jpg",
+    "fetchedAt": "2026-10-02T22:48:28.160320+00:00",
+    "sha256": "a44670b74f25ac9aa44b90291899b20df57ba6f3d9165860cb6c04ae299c076d",
+    "bytes": 42730,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

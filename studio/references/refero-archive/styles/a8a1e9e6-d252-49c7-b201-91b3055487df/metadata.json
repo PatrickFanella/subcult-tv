@@ -1,0 +1,29 @@
+{
+  "styleId": "a8a1e9e6-d252-49c7-b201-91b3055487df",
+  "sourceUrl": "https://styles.refero.design/style/a8a1e9e6-d252-49c7-b201-91b3055487df",
+  "fetchedAt": "2026-10-02T22:19:18.304907+00:00",
+  "extractedAt": "2026-10-02T22:19:18.328425+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Magnetism — Style Reference",
+  "htmlSha256": "8142ae32949d5951a01c490bf58c5d9a1d719e55f5e6122ddcb33fb51952a4b2",
+  "cache": ".cache/a8a1e9e6-d252-49c7-b201-91b3055487df.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d6c720ba267a561059a7270086b566e2459fa8413d9559bd0c0ac5c0a66ad470",
+      "bytes": 18667,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/05ebd76c-e587-4bfe-9f9b-cbd070a5a9ef.jpg",
+    "fetchedAt": "2026-10-02T22:19:20.159047+00:00",
+    "sha256": "a7e01fe5267d6aa34e5ec69b5b967b542660fc455004cd31cf8c91121821788b",
+    "bytes": 66707,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

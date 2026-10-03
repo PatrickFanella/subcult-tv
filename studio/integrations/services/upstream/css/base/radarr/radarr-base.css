@@ -1,0 +1,289 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+@import url("/css/defaults/servarr-base.css");
+
+:root {
+    --calendar-in-cinemas: 53 197 244;
+    --calendar-downloading: 122 67 182;
+    --calendar-unmonitored: 173 173 173;
+    --calendar-unaired: 93 156 236;
+    --calendar-missing: 240 80 80;
+    --calendar-missing-unmonitored: 255 165 0;
+    --calendar-available: 39 194 76;
+}
+
+[class*="MovieSearchInput-sectionTitle-"] {
+    color: var(--text-hover);
+}
+
+[class*="MovieSearchInput-containerOpen-"] [class*="MovieSearchInput-movieContainer-"] {
+    border: none !important;
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text-hover) !important;
+    box-shadow: 0 0 10px 1px transparent !important;
+}
+
+[class*="MovieSearchInput-highlighted-"] {
+    background: var(--transparency-dark-10);
+}
+
+/* MOVIES PAGE */
+[class*="MovieIndexPoster-controls-"] {
+    background-color: rgb(var(--accent-color)) !important;
+}
+
+[class*="MovieTitlesTableContent-blankpad-"],
+[class*="MovieHistoryTableContent-blankpad-"] {
+    color: var(--text);
+}
+
+/* OVERVIEW PAGE */
+[class*="MovieIndexOverviews-container-"],
+[class*="MovieIndexOverviews-container-"]:hover {
+    background-color: transparent !important;
+}
+
+[class*="MovieIndexOverview-container-"]:hover [class*="MovieIndexOverview-content-"] {
+    background-color: transparent;
+}
+
+[class*="AddListMovieOverview-container-"]:hover [class*="AddListMovieOverview-content-"] {
+    background: var(--transparency-light-10);
+}
+
+[class*="AddListMoviePoster-title-"] {
+    background: var(--transparency-light-10);
+}
+
+[class*="MovieIndexOverview-content-"]:hover {
+    background: var(--transparency-dark-10) !important;
+}
+
+[class*="MovieIndexOverview-link-"]:hover {
+    text-decoration: none;
+}
+
+/* MOVIE PAGE */
+[class*="MovieDetailsSeason-season-"],
+[class*="MovieDetailsSeason-collapseButtonContainer-"] {
+    border: none !important;
+    background: var(--transparency-dark-25) !important;
+}
+
+[class*="MovieDetailsSeason-actionButton-"],
+[class*="MovieDetailsSeason-collapseButtonIcon-"] {
+    color: var(--text) !important;
+}
+
+[class*="MovieFileStatus-missing"].colorImpaired {
+    background: transparent;
+}
+
+[class*="MovieDetailsSeason-seasonNumber-"] {
+    color: var(--text-hover);
+}
+
+[class*="MovieDetailsSeason-collapseButtonContainer-"] {
+    border: none !important;
+    background: var(--transparency-dark-25) !important;
+}
+
+[class*="MovieFileEditorTable-container-"],
+[class*="MovieHistoryTable-container-"],
+[class*="MovieTitlesTable-container-"] {
+    border: 1px solid transparent;
+    background: var(--transparency-dark-25);
+}
+
+/* @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
+    [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
+    [class*="Popover-title-"],
+    [class*="SeasonInfo-title-"],
+    [class*="Popover-body-"],
+    [class*="Tooltip-body-"],
+    [class*="Tooltip-tooltipContainer-"],
+    [class*="Tooltip-tooltip-"][class*="Tooltip-default-"] {
+        -webkit-backdrop-filter: saturate(1) blur(1.5em);
+        backdrop-filter: saturate(1) blur(1.5em);
+        background: rgb(var(--accent-color),0.05);
+        color: white;
+    }
+} */
+
+[class*="MovieDetails-selectedTab-"] {
+    border-bottom: 4px solid rgb(var(--accent-color));
+}
+
+[class*="MovieDetails-tabList-"] {
+    color: var(--text-hover);
+}
+
+/* POSTERS */
+[class*="MovieIndexPoster-title-"],
+[class*="MovieIndexPoster-nextAiring-"],
+[class*="MovieIndexPosterInfo-info-"],
+[class*="MovieIndexPosterInfo-info-"],
+[class*="MovieCreditPoster-title-"] {
+    background: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
+/* SEARCH BAR */
+[class*="AddNewMovie-searchIconContainer-"] {
+    border: none;
+    background: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
+[class*="MovieSearchInput-container-"] [class*="Input-input-"] {
+    background: transparent;
+    border-bottom: solid 1px var(--text);
+}
+
+[class*="MovieSearchInput-container-"] [class*="Input-input-"]:focus {
+    border-bottom: none;
+    background: transparent;
+}
+
+[class*="MovieSearchResult-alternateTitle-"] {
+    color: var(--text-hover);
+    font-size: 12px;
+}
+
+[class*="AddNewMovieSearchResult-year-"] {
+    color: var(--text-hover) !important;
+}
+
+/* SEARCH RESULTS */
+[class*="AddNewMovieSearchResult-searchResult-"],
+[class*="AddNewMovieSearchResult-underlay-"] {
+    background-color: transparent !important;
+}
+
+[class*="AddNewMovieSearchResult-searchResult-"]:hover,
+[class*="AddNewMovieSearchResult-underlay-"]:hover {
+    background: var(--transparency-dark-10) !important;
+}
+
+[class*="AddNewmovieModalContent-year-"] {
+    color: var(--text-hover);
+}
+
+[class*="RootFolderSelectInputSelectedValue-movieFolder-"] {
+    color: var(--text-hover);
+}
+
+[class*="RootFolderSelectInputOption-movieFolder-"] {
+    color: var(--text-muted);
+}
+
+/* Drop down menu/button*/
+[class*="ImportMovieSelectMovie-button-"] {
+    border: none !important;
+    background: var(--transparency-dark-25) !important;
+}
+
+[class*="ImportMovieSelectMovie-content-"],
+[class*="ImportMovieSelectMovie-searchIconContainer-"] {
+    border: none;
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text-hover);
+}
+
+[class*="ImportMovieSearchResult-movie-"]:hover {
+    background: var(--transparency-light-10);
+}
+
+[class*="ImportMovieTitle-year-"] {
+    color: var(--text-muted);
+}
+
+/* DISCOVER */
+[class*="DiscoverMovieOverview-link-"] {
+    color: var(--text);
+}
+
+[class*="DiscoverMovieOverview-link-"]:hover {
+    color: var(--text-hover);
+    text-decoration: none;
+}
+
+[class*="DiscoverMoviePoster-title-"],
+[class*="DiscoverMoviePosterInfo-info-"] {
+    background: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
+/*Title*/
+[class*="AddListMovieOverview-link-"] {
+    color: var(--text);
+}
+
+[class*="AddListMovieOverview-link-"]:hover {
+    color: var(--text-hover);
+}
+
+[class*="AddListMovieOverview-content-"]:hover {
+    background: var(--transparency-dark-10) !important;
+}
+
+/*Posters*/
+[class*="AddListMoviePoster-title-"] {
+    background: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
+[class*="CalendarEvent-movieTitle-"],
+[class*="CalendarEvent-movieInfo-"] {
+    color: #fff !important;
+}
+
+[class*="CalendarEventGroup-movieTitle-"] {
+    color: var(--text-hover) !important;
+}
+
+[class*="CalendarEvent-missingMonitored-"].colorImpaired {
+    background: var(--transparency-light-15);
+}
+
+/* Color Impaired Mode */
+
+[class*="CalendarEvent-missing-"].colorImpaired,
+[class*="CalendarEvent-missingMonitored-"].colorImpaired {
+    background: repeating-linear-gradient(90deg, rgb(var(--calendar-missing) / .2), rgb(var(--calendar-missing) / .2) 5px, rgb(var(--calendar-missing) / .4) 5px, rgb(var(--calendar-missing) / .4) 10px) !important;
+}
+
+[class*="CalendarEvent-missingUnmonitored-"].colorImpaired {
+    background: repeating-linear-gradient(90deg, rgb(var(--calendar-missing-unmonitored) / .2), rgb(var(--calendar-missing-unmonitored) / .2) 5px, rgb(var(--calendar-missing-unmonitored) / .4) 5px, rgb(var(--calendar-missing-unmonitored) / .4) 10px) !important;
+}
+
+/* Custom filter */
+[class*="SelectMovieModalContent-path-"] {
+    color: var(--text);
+}

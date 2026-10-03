@@ -1,0 +1,29 @@
+{
+  "styleId": "71a9583d-1710-4696-9269-50ca8c9a2cfa",
+  "sourceUrl": "https://styles.refero.design/style/71a9583d-1710-4696-9269-50ca8c9a2cfa",
+  "fetchedAt": "2026-10-02T22:40:10.307147+00:00",
+  "extractedAt": "2026-10-02T22:40:10.330700+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SuperMush — Style Reference",
+  "htmlSha256": "eb7c5bc68cd572c5736a4c49a59b13732a32758b21768181a341258bfa0b0f5b",
+  "cache": ".cache/71a9583d-1710-4696-9269-50ca8c9a2cfa.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d87e21716b9c7d1378d1981efdec8fe3ba13986f0573b426867512a65d50b7df",
+      "bytes": 22050,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8fef9d03-a728-4f40-8e7b-5ec5b04f61a5.jpg",
+    "fetchedAt": "2026-10-02T22:40:12.266970+00:00",
+    "sha256": "9fa3d83125e452146c64ed38a8dbe95c8ba57bad342263d086a28e5d512e7656",
+    "bytes": 193692,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

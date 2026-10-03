@@ -1,0 +1,29 @@
+{
+  "styleId": "d531f0ec-ea94-4a40-b568-3073ff2bd8ed",
+  "sourceUrl": "https://styles.refero.design/style/d531f0ec-ea94-4a40-b568-3073ff2bd8ed",
+  "fetchedAt": "2026-10-02T22:27:18.295927+00:00",
+  "extractedAt": "2026-10-02T22:27:18.313647+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Atelier Deux-Cé — Style Reference",
+  "htmlSha256": "f3bbb5e8f60bc743180e137f632a465555c955a54b79f8172db18a7232260b3d",
+  "cache": ".cache/d531f0ec-ea94-4a40-b568-3073ff2bd8ed.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "dcac8c5df78d211094a5f4641794ca75903536201723931791f18a1f26768497",
+      "bytes": 18427,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/60ff1d00-d802-4362-b613-a0fae2bcebb1.jpg",
+    "fetchedAt": "2026-10-02T22:27:20.327214+00:00",
+    "sha256": "fc382cebc4541de0256eb5fa1d45caa663d29fe87d9350df892cbb5e401a595f",
+    "bytes": 216373,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

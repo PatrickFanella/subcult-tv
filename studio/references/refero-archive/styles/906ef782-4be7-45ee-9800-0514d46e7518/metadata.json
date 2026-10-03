@@ -1,0 +1,29 @@
+{
+  "styleId": "906ef782-4be7-45ee-9800-0514d46e7518",
+  "sourceUrl": "https://styles.refero.design/style/906ef782-4be7-45ee-9800-0514d46e7518",
+  "fetchedAt": "2026-10-02T22:06:18.224752+00:00",
+  "extractedAt": "2026-10-02T22:06:18.267060+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Worth Agency — Style Reference",
+  "htmlSha256": "44cfc2c9926395fea0a0cad627d353e2e0fd37007f6809b084a0d151f660553c",
+  "cache": ".cache/906ef782-4be7-45ee-9800-0514d46e7518.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6c923ec204076093257ab5fc4f0a12f9be6e01de9dcec44eed5ea912e231815f",
+      "bytes": 17762,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/73d58ad9-ee56-406e-8fe8-ebb276a35d16.jpg",
+    "fetchedAt": "2026-10-02T22:06:20.117855+00:00",
+    "sha256": "68186ec255b5e72329f485daad6ffecb49c329afe01cb7d3ee25c74d8b329773",
+    "bytes": 38789,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

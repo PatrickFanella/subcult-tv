@@ -1,0 +1,29 @@
+{
+  "styleId": "1c2d4a33-7ee4-4b61-a77e-dab91631d19b",
+  "sourceUrl": "https://styles.refero.design/style/1c2d4a33-7ee4-4b61-a77e-dab91631d19b",
+  "fetchedAt": "2026-10-02T22:17:34.248449+00:00",
+  "extractedAt": "2026-10-02T22:17:34.268637+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "12th Berlin Biennale for Contemporary Art — Style Reference",
+  "htmlSha256": "18fe6889520bba180a0b1ee0b71d7da58c3e066c9cbdb34e0c132d7ad9f137f1",
+  "cache": ".cache/1c2d4a33-7ee4-4b61-a77e-dab91631d19b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b8fc1799270e2afbc559e07710892ff73e2b4de28077d13510404141aa608f07",
+      "bytes": 20132,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/19eeb89d-03d6-477c-8ffd-78ba779b3542.jpg",
+    "fetchedAt": "2026-10-02T22:17:36.250411+00:00",
+    "sha256": "492c5fe83f4f6a131f45e8cfabcf144ec8e6c6cac2f7b11ede789a1b41728f16",
+    "bytes": 99186,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

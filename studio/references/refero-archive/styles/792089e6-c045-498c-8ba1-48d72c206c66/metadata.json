@@ -1,0 +1,29 @@
+{
+  "styleId": "792089e6-c045-498c-8ba1-48d72c206c66",
+  "sourceUrl": "https://styles.refero.design/style/792089e6-c045-498c-8ba1-48d72c206c66",
+  "fetchedAt": "2026-10-02T22:28:14.204675+00:00",
+  "extractedAt": "2026-10-02T22:28:14.228262+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Quo (formerly OpenPhone) — Style Reference",
+  "htmlSha256": "2877608b25586982a299773cf85e689dcc29a513374b69b880d9369dfe546a03",
+  "cache": ".cache/792089e6-c045-498c-8ba1-48d72c206c66.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c67432b01d09ae72c665bf28282df969370d3457436a8120cf418469c4672bdc",
+      "bytes": 19850,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/750627e7-2551-4f70-82ff-a8a48c7c1744.jpg",
+    "fetchedAt": "2026-10-02T22:28:16.228191+00:00",
+    "sha256": "3da15a550ff6dffbb0c4f6f6da6205688355734d95cef6140b029aa400cb54df",
+    "bytes": 103623,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

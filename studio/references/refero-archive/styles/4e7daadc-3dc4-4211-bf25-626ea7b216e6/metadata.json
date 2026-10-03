@@ -1,0 +1,29 @@
+{
+  "styleId": "4e7daadc-3dc4-4211-bf25-626ea7b216e6",
+  "sourceUrl": "https://styles.refero.design/style/4e7daadc-3dc4-4211-bf25-626ea7b216e6",
+  "fetchedAt": "2026-10-02T22:20:26.240165+00:00",
+  "extractedAt": "2026-10-02T22:20:26.265060+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Relieve Furniture — Style Reference",
+  "htmlSha256": "b2f11afb82056fd03571a9e83474da7d601f85bda2945e54d8cadda325a426e2",
+  "cache": ".cache/4e7daadc-3dc4-4211-bf25-626ea7b216e6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "394e20dbdc34d44cc5723d2920492f62464e0f83f8415ba6494788f939109a00",
+      "bytes": 21872,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7ed6a309-f215-455c-a704-cf9f71fc428d.jpg",
+    "fetchedAt": "2026-10-02T22:20:28.289322+00:00",
+    "sha256": "a6e577e7e09d469b28bb8f336f13ad39011e83f326a29cc7b2f08ff8e6b948e8",
+    "bytes": 112241,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

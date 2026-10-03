@@ -1,0 +1,29 @@
+{
+  "styleId": "ab1b113a-ed21-4512-acc2-d10c8927c410",
+  "sourceUrl": "https://styles.refero.design/style/ab1b113a-ed21-4512-acc2-d10c8927c410",
+  "fetchedAt": "2026-10-02T22:04:50.602944+00:00",
+  "extractedAt": "2026-10-02T22:04:50.623980+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Look inc — Style Reference",
+  "htmlSha256": "1c920a08f5033051e4320c9ac444d66546973361a86333d4d9c6b36ada41d1ba",
+  "cache": ".cache/ab1b113a-ed21-4512-acc2-d10c8927c410.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1ed05d6439c422132178e05ec12efbfcf926b778c3748fa00b2e644249a75bb7",
+      "bytes": 15427,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/22dfdeb3-67c5-4bf3-a1d1-1e6fa413a746.jpg",
+    "fetchedAt": "2026-10-02T22:04:52.229765+00:00",
+    "sha256": "de58056ddd5f7f93465a08447488130b8ee77644a22c915bb30a97ba12375eef",
+    "bytes": 136067,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

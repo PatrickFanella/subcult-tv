@@ -1,0 +1,29 @@
+{
+  "styleId": "206c6c51-df38-425f-8d07-b0cc9dd065cf",
+  "sourceUrl": "https://styles.refero.design/style/206c6c51-df38-425f-8d07-b0cc9dd065cf",
+  "fetchedAt": "2026-10-02T22:52:30.326119+00:00",
+  "extractedAt": "2026-10-02T22:52:30.350256+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Videoconferencia — Style Reference",
+  "htmlSha256": "81b50d7ac76b070fe94ec743fc1227250dc214b291de4e952ccaf2a0f08e90f3",
+  "cache": ".cache/206c6c51-df38-425f-8d07-b0cc9dd065cf.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6c3a5e70bf7eb92331e2286c11c3f7c367682e8932ddba62ac069a87d863c436",
+      "bytes": 24528,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e5acac7d-7f1d-42ab-bf46-76d822d29a9b.jpg",
+    "fetchedAt": "2026-10-02T22:52:32.250314+00:00",
+    "sha256": "edc9067e527b7b3cb2281e80fbe2b6918671a562968446310d082f4f21de5a96",
+    "bytes": 149389,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

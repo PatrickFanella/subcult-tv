@@ -1,0 +1,29 @@
+{
+  "styleId": "bc4b420c-be08-4165-95a3-c8338b5a9c3c",
+  "sourceUrl": "https://styles.refero.design/style/bc4b420c-be08-4165-95a3-c8338b5a9c3c",
+  "fetchedAt": "2026-10-02T22:26:14.388218+00:00",
+  "extractedAt": "2026-10-02T22:26:14.413369+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Artandcommerce — Style Reference",
+  "htmlSha256": "d74e2a885506bac1b6e6975d9c1213e70d6aae21846e91d663c9580d7e5414fa",
+  "cache": ".cache/bc4b420c-be08-4165-95a3-c8338b5a9c3c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "582973d26e4eb9785039e023c85eb50145e148eda04a01d10736382050633203",
+      "bytes": 15848,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/28e93e13-51a5-4a90-9f35-cc10ab9da0fc.jpg",
+    "fetchedAt": "2026-10-02T22:26:16.327867+00:00",
+    "sha256": "ecf04b80cebf552b8ce2e2fac36370d5aba90e822f5751809b3e869193d6838b",
+    "bytes": 119071,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

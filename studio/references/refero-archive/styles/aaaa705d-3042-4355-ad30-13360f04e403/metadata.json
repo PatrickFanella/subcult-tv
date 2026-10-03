@@ -1,0 +1,29 @@
+{
+  "styleId": "aaaa705d-3042-4355-ad30-13360f04e403",
+  "sourceUrl": "https://styles.refero.design/style/aaaa705d-3042-4355-ad30-13360f04e403",
+  "fetchedAt": "2026-10-02T22:13:06.234056+00:00",
+  "extractedAt": "2026-10-02T22:13:06.262969+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Passionfroot — Style Reference",
+  "htmlSha256": "db4430ff1247ca5bd1816e4e2703b609fddfe729e28d11a4d673a03752cb9bf9",
+  "cache": ".cache/aaaa705d-3042-4355-ad30-13360f04e403.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b5f415fd999f7a46dc0d6ba5e9761a72443786bf2c959b5f1d9976584d15623a",
+      "bytes": 33178,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bb0a1dce-3ccc-41dc-bcc8-d77aa81981c2.jpg",
+    "fetchedAt": "2026-10-02T22:13:08.282228+00:00",
+    "sha256": "eb5d1e243f3738d70bdeae87c4acf09a851bd3593c09140fb280811db41c5991",
+    "bytes": 122705,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

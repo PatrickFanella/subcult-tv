@@ -1,0 +1,29 @@
+{
+  "styleId": "e4593570-e43f-4eda-8618-0bb704d5ebb7",
+  "sourceUrl": "https://styles.refero.design/style/e4593570-e43f-4eda-8618-0bb704d5ebb7",
+  "fetchedAt": "2026-10-02T22:27:58.190144+00:00",
+  "extractedAt": "2026-10-02T22:27:58.213604+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Garden Eight — Style Reference",
+  "htmlSha256": "69db7fc88607d80206a83671691aa860fe6962532cb62552ba1294ebb3ac2376",
+  "cache": ".cache/e4593570-e43f-4eda-8618-0bb704d5ebb7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "28de045170dff856b0464fe943b9ae33831823e31b5a00550fe566bad5d9b3d1",
+      "bytes": 17043,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f9f7fc13-4a80-4530-8334-cfa0c290daf2.jpg",
+    "fetchedAt": "2026-10-02T22:28:00.296238+00:00",
+    "sha256": "16699af800158552426342ad9b441d5a7a3f46763790744421ba353348e3da1c",
+    "bytes": 116784,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

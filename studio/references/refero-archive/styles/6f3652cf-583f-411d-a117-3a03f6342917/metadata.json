@@ -1,0 +1,29 @@
+{
+  "styleId": "6f3652cf-583f-411d-a117-3a03f6342917",
+  "sourceUrl": "https://styles.refero.design/style/6f3652cf-583f-411d-a117-3a03f6342917",
+  "fetchedAt": "2026-10-02T22:43:02.479769+00:00",
+  "extractedAt": "2026-10-02T22:43:02.504362+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Harness.io — Style Reference",
+  "htmlSha256": "b266a7869287942c5859e4a7a372a1949bc58005ebc58a22b6b9850cb2d885cc",
+  "cache": ".cache/6f3652cf-583f-411d-a117-3a03f6342917.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3c562a4529cc71ec96cafd28073e8f71f327624905261fc368ff25db6452b8d3",
+      "bytes": 22830,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1779803e-97e0-42e9-837b-fea110ad5114.jpg",
+    "fetchedAt": "2026-10-02T22:43:04.255484+00:00",
+    "sha256": "d334129b1a37c6adb89e0746adb98e14e88acf714ccdfd52c87bb56da1990e25",
+    "bytes": 100530,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

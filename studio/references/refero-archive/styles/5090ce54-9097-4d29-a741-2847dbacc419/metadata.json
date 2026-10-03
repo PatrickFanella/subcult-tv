@@ -1,0 +1,29 @@
+{
+  "styleId": "5090ce54-9097-4d29-a741-2847dbacc419",
+  "sourceUrl": "https://styles.refero.design/style/5090ce54-9097-4d29-a741-2847dbacc419",
+  "fetchedAt": "2026-10-02T22:27:42.214933+00:00",
+  "extractedAt": "2026-10-02T22:27:42.239075+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Chantlings — Style Reference",
+  "htmlSha256": "358562b9a458b0c2ac4f1648047948f6d1a3ec2d0edf419c04e1fc16e57ac395",
+  "cache": ".cache/5090ce54-9097-4d29-a741-2847dbacc419.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b6968a004cf8dd3c63be9a27ac34525d9cdd623a5f90dd3f08b3b7eb933f5fe0",
+      "bytes": 17649,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/84e74e77-c018-4dd7-af0e-a65adbcd582b.jpg",
+    "fetchedAt": "2026-10-02T22:27:44.170032+00:00",
+    "sha256": "d9be2bfb630b403e62a4df967d294050b034a56aff50e86dca5cbe140c9a940c",
+    "bytes": 39831,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

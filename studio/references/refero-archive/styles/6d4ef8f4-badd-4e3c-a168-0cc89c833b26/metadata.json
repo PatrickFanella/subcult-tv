@@ -1,0 +1,29 @@
+{
+  "styleId": "6d4ef8f4-badd-4e3c-a168-0cc89c833b26",
+  "sourceUrl": "https://styles.refero.design/style/6d4ef8f4-badd-4e3c-a168-0cc89c833b26",
+  "fetchedAt": "2026-10-02T22:19:54.177654+00:00",
+  "extractedAt": "2026-10-02T22:19:54.197959+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "MA Quilts — Style Reference",
+  "htmlSha256": "82bb95654ad949e040c0782ce1235e2f922be4fc125d80316826f688c041528f",
+  "cache": ".cache/6d4ef8f4-badd-4e3c-a168-0cc89c833b26.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6c893364357735430f703a5f17a0b192b586af16edc904ece5b5b323da0ea162",
+      "bytes": 20830,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/64f98192-9eb4-403f-8674-d955caaa7f5d.jpg",
+    "fetchedAt": "2026-10-02T22:19:56.286138+00:00",
+    "sha256": "43b7574d22d0dd633786f038d50eee27bff0667977a9a296e079b258540ac597",
+    "bytes": 138448,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

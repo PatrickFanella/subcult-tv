@@ -1,0 +1,29 @@
+{
+  "styleId": "3f6ef3c1-f98f-4cd9-bdf0-545059758705",
+  "sourceUrl": "https://styles.refero.design/style/3f6ef3c1-f98f-4cd9-bdf0-545059758705",
+  "fetchedAt": "2026-10-02T22:49:26.235023+00:00",
+  "extractedAt": "2026-10-02T22:49:26.258113+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Atlas Card — Style Reference",
+  "htmlSha256": "dc262a0f96f33c0e79ee02bc50142251d43a51b77fb4a355b50504801c870827",
+  "cache": ".cache/3f6ef3c1-f98f-4cd9-bdf0-545059758705.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e11f634358006e2a3a72df88609708c4fc76fe3ea5133291d226810dfd0954c5",
+      "bytes": 20353,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/55b8665f-1277-45d3-a4f7-e4f8b9c6ed4d.jpg",
+    "fetchedAt": "2026-10-02T22:49:28.315902+00:00",
+    "sha256": "ab13fb9b78e6aac182d7d720da7735e52b8f980a388ab573e4fcd4b9663657d4",
+    "bytes": 85409,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "d5ed8712-0e42-4c6c-83b1-b3d7f27d1d10",
+  "sourceUrl": "https://styles.refero.design/style/d5ed8712-0e42-4c6c-83b1-b3d7f27d1d10",
+  "fetchedAt": "2026-10-02T22:26:50.175287+00:00",
+  "extractedAt": "2026-10-02T22:26:50.197687+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "amra — Style Reference",
+  "htmlSha256": "e118707bf5fe21aa9f31f044dca085b1c7f8ba9980a963897175496f9c6e8cc8",
+  "cache": ".cache/d5ed8712-0e42-4c6c-83b1-b3d7f27d1d10.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "53070fa09d30c6405d38ea7ef3e3c81147b04f0ff1d330cdba01401e93521913",
+      "bytes": 20868,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/459bb65b-e917-43c0-b6fa-9c2dc0305f6f.jpg",
+    "fetchedAt": "2026-10-02T22:26:52.138889+00:00",
+    "sha256": "4502adc9a5ad9e33a48c762a94ab46e00ad68cd84b8a4e943a554f3d46487fe8",
+    "bytes": 48415,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "4fc87190-9783-4a85-bdc1-35800a2ec690",
+  "sourceUrl": "https://styles.refero.design/style/4fc87190-9783-4a85-bdc1-35800a2ec690",
+  "fetchedAt": "2026-10-02T22:18:18.210765+00:00",
+  "extractedAt": "2026-10-02T22:18:18.234610+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "WOUQ — Style Reference",
+  "htmlSha256": "e959d6009b743093af33cc4d93041714e855c67e936b50efda4b0be7c9a0f5ae",
+  "cache": ".cache/4fc87190-9783-4a85-bdc1-35800a2ec690.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c02d20ba37e1e74566debbd5ac509b171aa0889e38221441b6c36be68dfb41cc",
+      "bytes": 13990,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c0263aec-78cf-4ec1-a8f4-6cd204a03675.jpg",
+    "fetchedAt": "2026-10-02T22:18:20.233404+00:00",
+    "sha256": "f5acf06cec840c9060dbb9e47c405a9e18ba95fe727ac21587bdd883cc0a7030",
+    "bytes": 129238,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

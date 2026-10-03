@@ -1,0 +1,29 @@
+{
+  "styleId": "79714b4e-c89a-44b3-8da4-931daa9a466f",
+  "sourceUrl": "https://styles.refero.design/style/79714b4e-c89a-44b3-8da4-931daa9a466f",
+  "fetchedAt": "2026-10-02T22:05:26.161810+00:00",
+  "extractedAt": "2026-10-02T22:05:26.203734+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Warp — Style Reference",
+  "htmlSha256": "74ada3089bc595e431f2e9744063b158da2429f9ccc79a4b771993c501c9601a",
+  "cache": ".cache/79714b4e-c89a-44b3-8da4-931daa9a466f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3eafe85767b7ff9ecf6543305a1acd8505f66e3a9c0ffecbad721c228f7e361a",
+      "bytes": 23550,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/26450c2c-e215-4758-a6eb-22b5e39c94db.jpg",
+    "fetchedAt": "2026-10-02T22:05:28.281731+00:00",
+    "sha256": "ecc655342e472713c116c7722ec8c9d4af9038d66bfa3519f5df81e0aea2c608",
+    "bytes": 162724,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

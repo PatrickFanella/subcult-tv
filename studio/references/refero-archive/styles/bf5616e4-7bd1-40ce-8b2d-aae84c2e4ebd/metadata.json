@@ -1,0 +1,29 @@
+{
+  "styleId": "bf5616e4-7bd1-40ce-8b2d-aae84c2e4ebd",
+  "sourceUrl": "https://styles.refero.design/style/bf5616e4-7bd1-40ce-8b2d-aae84c2e4ebd",
+  "fetchedAt": "2026-10-02T22:07:50.261294+00:00",
+  "extractedAt": "2026-10-02T22:07:50.288192+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fuser — Style Reference",
+  "htmlSha256": "faf0d81bf90d97d8ba764c97b0d2ce0fb27fa2fd743bacd09e63e769a3c1ac33",
+  "cache": ".cache/bf5616e4-7bd1-40ce-8b2d-aae84c2e4ebd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1e1489b3832fee5c9e8ccd01de02403b9d5a517dccea732c1709bbad45dc451f",
+      "bytes": 27373,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/be5a15bb-b320-4f12-ad62-ea728ed90fe1.jpg",
+    "fetchedAt": "2026-10-02T22:07:52.319510+00:00",
+    "sha256": "e38bef190d67200a551420a467cfda75984d89a7f647d4f72fe1097d1dbcf901",
+    "bytes": 130665,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "ced1c98f-d489-48f7-a01f-1fa59a07b706",
+  "sourceUrl": "https://styles.refero.design/style/ced1c98f-d489-48f7-a01f-1fa59a07b706",
+  "fetchedAt": "2026-10-02T22:12:06.244289+00:00",
+  "extractedAt": "2026-10-02T22:12:06.265885+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Officevibe — Style Reference",
+  "htmlSha256": "298bcfc276d3353aff88e1ac531817272c81495779ab70360f5892daf34f72fc",
+  "cache": ".cache/ced1c98f-d489-48f7-a01f-1fa59a07b706.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "84b2730d4e6b6c2d447b6af3425a0beb8f8c91b113daa264e930f01d1fbeeb71",
+      "bytes": 20628,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c8dd7d9a-649c-4a62-a474-819d05d73546.jpg",
+    "fetchedAt": "2026-10-02T22:12:08.229139+00:00",
+    "sha256": "9713e1437b9a8ba80dd41de6d413c24c63674f14ae3ca8222f445703c81c6ab5",
+    "bytes": 100060,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

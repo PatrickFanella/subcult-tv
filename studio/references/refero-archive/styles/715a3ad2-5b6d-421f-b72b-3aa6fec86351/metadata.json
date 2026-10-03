@@ -1,0 +1,29 @@
+{
+  "styleId": "715a3ad2-5b6d-421f-b72b-3aa6fec86351",
+  "sourceUrl": "https://styles.refero.design/style/715a3ad2-5b6d-421f-b72b-3aa6fec86351",
+  "fetchedAt": "2026-10-02T22:23:10.231051+00:00",
+  "extractedAt": "2026-10-02T22:23:10.253318+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Era — Style Reference",
+  "htmlSha256": "54cc63b838d82e9f1ac63bce929d9dfd93d8f8141f82e764d98c98f547394f4c",
+  "cache": ".cache/715a3ad2-5b6d-421f-b72b-3aa6fec86351.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "488508b5125fd05449d2b8867aa0d110226733e7815f8ce1f82de510bc8b1ee6",
+      "bytes": 19295,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6219a97b-3ece-4a16-b1c8-359cadda1fe7.jpg",
+    "fetchedAt": "2026-10-02T22:23:12.283240+00:00",
+    "sha256": "36bf93fe2eed2c6f232c6bc0fe53a2b6a6e0716bdab4d64ff7d7f28db0a6dcbe",
+    "bytes": 101573,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

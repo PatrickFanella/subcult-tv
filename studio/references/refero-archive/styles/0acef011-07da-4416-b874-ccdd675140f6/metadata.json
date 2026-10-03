@@ -1,0 +1,29 @@
+{
+  "styleId": "0acef011-07da-4416-b874-ccdd675140f6",
+  "sourceUrl": "https://styles.refero.design/style/0acef011-07da-4416-b874-ccdd675140f6",
+  "fetchedAt": "2026-10-02T22:41:54.245926+00:00",
+  "extractedAt": "2026-10-02T22:41:54.269909+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Twingate — Style Reference",
+  "htmlSha256": "93029f2c91cf68cd9b2ca9787d4e49b04e35400ee2375879c9dd217bf37f8b3e",
+  "cache": ".cache/0acef011-07da-4416-b874-ccdd675140f6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "26e2593b10e534833a010d8b8c06cf4a45f2473b0f751eeed122d559d0dbe48c",
+      "bytes": 26484,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c3612e22-ab2d-4e1b-a765-c7efce733e46.jpg",
+    "fetchedAt": "2026-10-02T22:41:56.247667+00:00",
+    "sha256": "ef487b67a0ad12158fce9b4f521d208c6efa4e9e4085f94d82c489790f28d9c3",
+    "bytes": 106763,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

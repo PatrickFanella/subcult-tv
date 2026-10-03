@@ -1,0 +1,29 @@
+{
+  "styleId": "243a3dde-80a8-47a9-87f8-c549726ec6f3",
+  "sourceUrl": "https://styles.refero.design/style/243a3dde-80a8-47a9-87f8-c549726ec6f3",
+  "fetchedAt": "2026-10-02T22:23:46.199494+00:00",
+  "extractedAt": "2026-10-02T22:23:46.224309+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Altitude Beverages — Style Reference",
+  "htmlSha256": "b27e6ee8cda7fe536ccc3c7109c8fd4f0e7a5bd0fe1b50b2c2a114ab8b05eb55",
+  "cache": ".cache/243a3dde-80a8-47a9-87f8-c549726ec6f3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cc9b80b67a7482ba102dc7eacb7aceffdb624f2e8a7ab2c789ad618d07bb36b4",
+      "bytes": 20441,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cc922a4e-2771-418c-8894-dd7df184e0b8.jpg",
+    "fetchedAt": "2026-10-02T22:23:48.365531+00:00",
+    "sha256": "d042c49e3a1fed808f4868f7ad86aec5374c51a0f0e33b911c0864d86a75c0e0",
+    "bytes": 113359,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

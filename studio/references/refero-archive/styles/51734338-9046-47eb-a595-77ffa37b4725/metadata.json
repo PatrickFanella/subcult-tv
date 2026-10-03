@@ -1,0 +1,29 @@
+{
+  "styleId": "51734338-9046-47eb-a595-77ffa37b4725",
+  "sourceUrl": "https://styles.refero.design/style/51734338-9046-47eb-a595-77ffa37b4725",
+  "fetchedAt": "2026-10-02T22:16:22.410675+00:00",
+  "extractedAt": "2026-10-02T22:16:22.435907+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Getanchor — Style Reference",
+  "htmlSha256": "fe1146e70bac14ae1c2a7a443c438e984ecaf7d078373506426a0c622b28e797",
+  "cache": ".cache/51734338-9046-47eb-a595-77ffa37b4725.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c9ffbbc856db66d10396a2f4024e44f0a205b9df395c84f6f720caf1f0c68dfd",
+      "bytes": 19178,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2d239a36-ea90-4727-a4e1-458c3676e663.jpg",
+    "fetchedAt": "2026-10-02T22:16:24.207232+00:00",
+    "sha256": "39d63939310a052e08e34f2ebee3fdfe56dbab7ece5b0a878ad57350327d6220",
+    "bytes": 85650,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

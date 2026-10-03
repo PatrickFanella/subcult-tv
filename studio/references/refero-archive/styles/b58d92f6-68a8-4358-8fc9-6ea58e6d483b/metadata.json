@@ -1,0 +1,29 @@
+{
+  "styleId": "b58d92f6-68a8-4358-8fc9-6ea58e6d483b",
+  "sourceUrl": "https://styles.refero.design/style/b58d92f6-68a8-4358-8fc9-6ea58e6d483b",
+  "fetchedAt": "2026-10-02T22:07:10.215690+00:00",
+  "extractedAt": "2026-10-02T22:07:10.238150+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Brex — Style Reference",
+  "htmlSha256": "97dd1da06969c52d68c136eed9dd01144a53ab060d6f8fa73c8099f42209b7a8",
+  "cache": ".cache/b58d92f6-68a8-4358-8fc9-6ea58e6d483b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "37e362eaab9e1364bc910fd496e8f7f1992104abe8689cccf3022e6714400103",
+      "bytes": 20647,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/77a3746c-d3a7-4ba7-85da-2ad7b72363fe.jpg",
+    "fetchedAt": "2026-10-02T22:07:12.085172+00:00",
+    "sha256": "5bac0c83923f06143ba085f13c0e6f6c1617253ffdd0cc1d56741dc1f3677fff",
+    "bytes": 79555,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "73cd9a6a-f861-4376-a3e1-e12f83c8960e",
+  "sourceUrl": "https://styles.refero.design/style/73cd9a6a-f861-4376-a3e1-e12f83c8960e",
+  "fetchedAt": "2026-10-02T22:25:02.189337+00:00",
+  "extractedAt": "2026-10-02T22:25:02.216214+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Paradigm — Style Reference",
+  "htmlSha256": "36a1a612bf5282f760f0f7b39f6aa8c9e459798fce86be42b29fdd330534232d",
+  "cache": ".cache/73cd9a6a-f861-4376-a3e1-e12f83c8960e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "813607f7e8a143b11dc9239ee06cab1c84811e7d73f9918323abc0b38031a9a1",
+      "bytes": 28593,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/65aa4808-0b99-4348-8ae3-537057ea994d.jpg",
+    "fetchedAt": "2026-10-02T22:25:04.206522+00:00",
+    "sha256": "03247a5d075d75d3b01abd58768ac7cb525380c45125e3d1317a4c0686584dd9",
+    "bytes": 144774,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

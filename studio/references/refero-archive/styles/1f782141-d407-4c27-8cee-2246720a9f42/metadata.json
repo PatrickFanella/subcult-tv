@@ -1,0 +1,29 @@
+{
+  "styleId": "1f782141-d407-4c27-8cee-2246720a9f42",
+  "sourceUrl": "https://styles.refero.design/style/1f782141-d407-4c27-8cee-2246720a9f42",
+  "fetchedAt": "2026-10-02T22:14:06.332381+00:00",
+  "extractedAt": "2026-10-02T22:14:06.360713+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lottielab — Style Reference",
+  "htmlSha256": "848aacbee4f0d636ab13d857e19446e0111eac5315237229fb40cd9b40767a27",
+  "cache": ".cache/1f782141-d407-4c27-8cee-2246720a9f42.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "305bb3c977e0471e1e5b2671078e79087753bee58d679a739a4e5dd3eae9ec43",
+      "bytes": 20403,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/09a2ef2a-1b72-4a5c-b46e-b6b98ee6195f.jpg",
+    "fetchedAt": "2026-10-02T22:14:08.183053+00:00",
+    "sha256": "665dbdb24f8ddb79c67c6a649a8ebf20aeeac490d4165452ef1335bd52dfe56d",
+    "bytes": 65783,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

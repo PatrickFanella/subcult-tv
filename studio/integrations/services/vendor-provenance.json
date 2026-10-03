@@ -1,0 +1,50 @@
+{
+  "css/base/sonarr/sonarr-base.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "be27749889a83de5b938db7a14d847ea4b3932657a43315da46c03ba60753f3c"
+  },
+  "css/defaults/placeholders.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "b91eefdc1176aef151cb56295b6b9a1b53d47a9b66e25a4a1c6d00f8b220047b"
+  },
+  "css/defaults/transparent.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "4c415ca1ccfb71446ac07601ad99f29164cd3cfd8b44ec23c3b6731f1fab5565"
+  },
+  "css/defaults/servarr-base.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "d5a2967318cb2ac4618bb98764d862bac90082c4c27cc77d49ab189981d66569"
+  },
+  "css/base/radarr/radarr-base.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "e7dee6281a7aef335884d4b7e82e93deebd938a1b33626203599661342f4e3d2"
+  },
+  "css/base/lidarr/lidarr-base.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "cca8f922235aa03a8c2fb09d2ffdd9db90bd3fe5a608cc7d033084cb230b43e1"
+  },
+  "css/base/prowlarr/prowlarr-base.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "15c0eb63e7f467d3ef90b2fc32ebd38bd9e6112cc2658b4ad7d5244a0a39d657"
+  },
+  "css/base/whisparr/whisparr-base.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "1adadc2191739477fc82c5b1ffb085be76e322c4ad8594ba7556cab27110f7ff"
+  },
+  "css/base/bazarr/bazarr-base.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "ba87df77fceaacc4b553dbf3411b518efe9991e92d854a7ec3ec8d27e73ba30e"
+  },
+  "css/base/qbittorrent/qbittorrent-base.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "89d54f621d5ee15647c791a4d60d5fb5bc2eb19106d91b23a2ba84ccfe813d2d"
+  },
+  "css/base/authelia/authelia-base.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "e075b50719dd62f60dd4ed6e32f5688957721ab00fed74916f89adce75d251dc"
+  },
+  "css/base/uptime-kuma/uptime-kuma-base.css": {
+    "commit": "88048fb6267749f4febbdc50f5edf55bbc6c7c88",
+    "sha256": "002381f29e98799edc2d3b6bcdd5a7172c3db40771d112a7438e2a81473140b9"
+  }
+}

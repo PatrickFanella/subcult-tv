@@ -1,0 +1,29 @@
+{
+  "styleId": "17d0a00e-5de6-48c7-9f3b-25b04f7dab4c",
+  "sourceUrl": "https://styles.refero.design/style/17d0a00e-5de6-48c7-9f3b-25b04f7dab4c",
+  "fetchedAt": "2026-10-02T22:15:02.197766+00:00",
+  "extractedAt": "2026-10-02T22:15:02.229579+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Canva — Style Reference",
+  "htmlSha256": "c0fff23e84b54c569e52b34f8c5d330f4afc81012f1e88b073923e655d8ef4a9",
+  "cache": ".cache/17d0a00e-5de6-48c7-9f3b-25b04f7dab4c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8027bf73747b37f83b8b94263d07c84b646bfbd42442baab434a862b9ae2c411",
+      "bytes": 21624,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1f1f605d-5819-4f97-8d68-3e763ca40afc.jpg",
+    "fetchedAt": "2026-10-02T22:15:04.220954+00:00",
+    "sha256": "2c1d5e6da4ebeeed3e35f02dcb3977abda17b2705aa137a3e92b0a1dd6f35eb5",
+    "bytes": 96632,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

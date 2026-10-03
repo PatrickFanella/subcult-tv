@@ -1,0 +1,29 @@
+{
+  "styleId": "5a7ba5ff-0476-4f3f-99f9-0b920534dde5",
+  "sourceUrl": "https://styles.refero.design/style/5a7ba5ff-0476-4f3f-99f9-0b920534dde5",
+  "fetchedAt": "2026-10-02T22:50:34.201325+00:00",
+  "extractedAt": "2026-10-02T22:50:34.224296+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Leonid Kostetskyi — Style Reference",
+  "htmlSha256": "6a1cbe74e30b8c8431a24cfebe4e30a824c8672473fb978c6a2ec199df9b27d3",
+  "cache": ".cache/5a7ba5ff-0476-4f3f-99f9-0b920534dde5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ec0cfff66ad37877c32cb94c762fe5035db9c8aa407eb077234afdda640b5e68",
+      "bytes": 16857,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d7b2f279-4513-41b4-87cd-2b1eb7e60f64.jpg",
+    "fetchedAt": "2026-10-02T22:50:36.257131+00:00",
+    "sha256": "e7e5e67376255f1f62e32dff5f82b2c6443dd4a81f12ef6fbbbbacb55b1cca2c",
+    "bytes": 85325,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

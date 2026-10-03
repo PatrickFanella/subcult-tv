@@ -1,0 +1,29 @@
+{
+  "styleId": "f4af4c42-2cba-4aa6-8d06-2f728bce702d",
+  "sourceUrl": "https://styles.refero.design/style/f4af4c42-2cba-4aa6-8d06-2f728bce702d",
+  "fetchedAt": "2026-10-02T22:03:26.198397+00:00",
+  "extractedAt": "2026-10-02T22:03:26.220022+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "DICE — Style Reference",
+  "htmlSha256": "4ba49b758116fad89d04ba842e64a867fb1aa83037c3e4ac23d65fbc6eb9b992",
+  "cache": ".cache/f4af4c42-2cba-4aa6-8d06-2f728bce702d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a6e99ac8657db90563bca7e3b088ebf3f004137ee4cc9b3e1518c6dea8bda1b2",
+      "bytes": 19007,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/02d24a49-d9fc-47dd-ae3e-7f839a1e5548.jpg",
+    "fetchedAt": "2026-10-02T22:03:28.257080+00:00",
+    "sha256": "87978f209d961574b0b36784ad041045c2f96b20ccf22ad01e64f58b2a477adb",
+    "bytes": 85438,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

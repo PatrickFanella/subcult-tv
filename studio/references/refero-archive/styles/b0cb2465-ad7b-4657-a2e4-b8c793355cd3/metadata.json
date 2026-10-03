@@ -1,0 +1,29 @@
+{
+  "styleId": "b0cb2465-ad7b-4657-a2e4-b8c793355cd3",
+  "sourceUrl": "https://styles.refero.design/style/b0cb2465-ad7b-4657-a2e4-b8c793355cd3",
+  "fetchedAt": "2026-10-02T22:21:50.228845+00:00",
+  "extractedAt": "2026-10-02T22:21:50.252822+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Uniswap — Style Reference",
+  "htmlSha256": "805d4f301c87d8edf9ce64052382c787c62ee0a888abb1e4eda01b3b83d4d9a0",
+  "cache": ".cache/b0cb2465-ad7b-4657-a2e4-b8c793355cd3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fb00b92601297b20eae5ee339d056a07176ae2f1c3aaec8a27fefab674c7212f",
+      "bytes": 24975,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5ea5e534-6816-4920-98ff-c89a5eb36f96.jpg",
+    "fetchedAt": "2026-10-02T22:21:52.205214+00:00",
+    "sha256": "a99070e9964c43c5f512603c17c041ac3b9312c0bb2d0c40751d9876d62a6030",
+    "bytes": 75306,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

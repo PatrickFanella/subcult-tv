@@ -1,0 +1,29 @@
+{
+  "styleId": "11fed738-a5b5-4509-b4e2-3295ceab3604",
+  "sourceUrl": "https://styles.refero.design/style/11fed738-a5b5-4509-b4e2-3295ceab3604",
+  "fetchedAt": "2026-10-02T22:41:02.221195+00:00",
+  "extractedAt": "2026-10-02T22:41:02.243991+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Idle Finance — Style Reference",
+  "htmlSha256": "cf72589ed07a5b6696dbe85716dc0afe8c8027e7b25016d2678920d88e4e1d93",
+  "cache": ".cache/11fed738-a5b5-4509-b4e2-3295ceab3604.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "be3ebfd0f1bd44040668f22a5dc11b6c6cbd9687d15d5f3077bfb7669cadf5c7",
+      "bytes": 21723,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/23a5d388-b7c7-4b3a-ba4f-1f1c2619ea18.jpg",
+    "fetchedAt": "2026-10-02T22:41:04.319055+00:00",
+    "sha256": "e66875c5ef469c5ca12c68a7c75d41173db82ae8ecf000da2f5f7d7639a02d98",
+    "bytes": 86578,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

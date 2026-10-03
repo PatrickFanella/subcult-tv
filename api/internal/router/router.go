@@ -2,6 +2,7 @@ package router
 
 import (
 	"net/http"
+	"regexp"
 	"time"
 
 	"github.com/go-chi/chi/v5"
@@ -16,11 +17,14 @@ import (
 
 // Rate limit thresholds (requests per window).
 const (
-	GeneralRateLimit = 100
-	LoginRateLimit   = 5
-	FormRateLimit    = 10
-	RateLimitWindow  = time.Minute
+	GeneralRateLimit     = 100
+	LoginRateLimit       = 5
+	FormRateLimit        = 10
+	StudioAssetRateLimit = 500
+	RateLimitWindow      = time.Minute
 )
+
+var studioAssetPath = regexp.MustCompile(`^/api/v1/admin/studio/assets/[a-f0-9]{64}$`)
 
 // cspConnectOrigins returns origins permitted for browser connect-src requests:
 // the configured CORS origins (API calls) plus a self-hosted Umami when set.
@@ -40,6 +44,7 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 	generalLimiter := middleware.NewRateLimiter(GeneralRateLimit, RateLimitWindow)
 	loginLimiter := middleware.NewRateLimiter(LoginRateLimit, RateLimitWindow)
 	publicFormLimiter := middleware.NewRateLimiter(FormRateLimit, RateLimitWindow)
+	studioAssetLimiter := middleware.NewRateLimiter(StudioAssetRateLimit, RateLimitWindow)
 
 	// ── Global middleware ────────────────────────────────────
 	r.Use(chimw.RealIP)
@@ -49,7 +54,19 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 	r.Use(chimw.Compress(5))
 	r.Use(middleware.SecurityHeaders(cspConnectOrigins(cfg)))
 	r.Use(middleware.LimitBody)
-	r.Use(middleware.RateLimit(generalLimiter))
+	// Gallery assets have a separate bounded budget so thumbnails cannot block
+	// search, session checks or login. The protected route still requires Auth.
+	r.Use(func(next http.Handler) http.Handler {
+		general := middleware.RateLimit(generalLimiter)(next)
+		assets := middleware.RateLimit(studioAssetLimiter)(next)
+		return http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
+			if req.Method == http.MethodGet && studioAssetPath.MatchString(req.URL.Path) {
+				assets.ServeHTTP(w, req)
+				return
+			}
+			general.ServeHTTP(w, req)
+		})
+	})
 
 	r.Use(cors.Handler(cors.Options{
 		AllowedOrigins:   cfg.CORSOrigins,

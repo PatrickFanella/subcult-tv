@@ -1,0 +1,29 @@
+{
+  "styleId": "10ab6120-3d03-48ff-aebe-0b4910edc046",
+  "sourceUrl": "https://styles.refero.design/style/10ab6120-3d03-48ff-aebe-0b4910edc046",
+  "fetchedAt": "2026-10-02T22:10:18.338277+00:00",
+  "extractedAt": "2026-10-02T22:10:18.360665+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Superlative — Style Reference",
+  "htmlSha256": "aad920bc50fea8e0b10d6b82dbe72893333ecd851973f80a12a07b9200b558c5",
+  "cache": ".cache/10ab6120-3d03-48ff-aebe-0b4910edc046.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e4ebe7c6aa34e559f26c6045f4835ab3e6b364711f4a1b5d8b495b43d2217417",
+      "bytes": 21071,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0960799a-c661-49dd-81c7-5586f88ba846.jpg",
+    "fetchedAt": "2026-10-02T22:10:20.327252+00:00",
+    "sha256": "10631a995639e512569244e970369583eee77211a0dab9eb62926279db621c05",
+    "bytes": 124676,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

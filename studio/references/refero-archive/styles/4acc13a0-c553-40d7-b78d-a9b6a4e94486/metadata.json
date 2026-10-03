@@ -1,0 +1,29 @@
+{
+  "styleId": "4acc13a0-c553-40d7-b78d-a9b6a4e94486",
+  "sourceUrl": "https://styles.refero.design/style/4acc13a0-c553-40d7-b78d-a9b6a4e94486",
+  "fetchedAt": "2026-10-02T22:04:22.429677+00:00",
+  "extractedAt": "2026-10-02T22:04:22.451935+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "10X HUB — Style Reference",
+  "htmlSha256": "9f3225131c34458d5ee7119cee97826bdf6f667dad2f31980ebcf06e7c17feb5",
+  "cache": ".cache/4acc13a0-c553-40d7-b78d-a9b6a4e94486.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "51ef160617ba2ec1238ac9116344fbfc3bf9ee1499276e621f216835b5371e43",
+      "bytes": 20070,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6d9469b2-ba77-4b6b-b96c-1a7a2c3943d4.jpg",
+    "fetchedAt": "2026-10-02T22:04:24.235839+00:00",
+    "sha256": "efc1e5d60c6dffc16692d2d47b61288615bfdec7d9357365c6a7ce2526a7a1d5",
+    "bytes": 57286,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

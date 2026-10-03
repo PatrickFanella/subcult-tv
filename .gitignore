@@ -38,3 +38,4 @@ public/feed.xml
 # Local migration workspaces and generated private bundles
 .companion/
 runtime/
+.font-cache/

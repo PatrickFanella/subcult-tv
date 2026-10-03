@@ -1,0 +1,29 @@
+{
+  "styleId": "f4ebfdf4-c79c-4d95-8221-9330254fb1f9",
+  "sourceUrl": "https://styles.refero.design/style/f4ebfdf4-c79c-4d95-8221-9330254fb1f9",
+  "fetchedAt": "2026-10-02T22:44:22.412125+00:00",
+  "extractedAt": "2026-10-02T22:44:22.434138+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Employment Hero — Style Reference",
+  "htmlSha256": "45c94800e883091477eb19098caa18235caea212df72c9f7dcdfd194cfc7b9e1",
+  "cache": ".cache/f4ebfdf4-c79c-4d95-8221-9330254fb1f9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ce400208862f8be74134a6744cd3f58572d89684420c6ec9387c37ce80817a95",
+      "bytes": 22929,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/91467bec-a16f-4d30-8a8f-cd6a29063b05.jpg",
+    "fetchedAt": "2026-10-02T22:44:24.263807+00:00",
+    "sha256": "4e518888f7c50e4e43412ccc8b8453a371656d27fa6332f451a1bee20b79bd53",
+    "bytes": 108114,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

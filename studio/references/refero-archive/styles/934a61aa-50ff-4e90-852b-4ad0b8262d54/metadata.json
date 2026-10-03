@@ -1,0 +1,29 @@
+{
+  "styleId": "934a61aa-50ff-4e90-852b-4ad0b8262d54",
+  "sourceUrl": "https://styles.refero.design/style/934a61aa-50ff-4e90-852b-4ad0b8262d54",
+  "fetchedAt": "2026-10-02T22:54:46.461648+00:00",
+  "extractedAt": "2026-10-02T22:54:46.484409+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Samara — Style Reference",
+  "htmlSha256": "122ed4b4e7fafc1d6614d231038c9ae27c37ac7e8c6b9200b3964ad97e9aeba8",
+  "cache": ".cache/934a61aa-50ff-4e90-852b-4ad0b8262d54.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bc3ec0783935b4f4226c0e23466bce79efbf52b67a49108314ef0701b585097e",
+      "bytes": 15921,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d1d4d69b-97e1-4c6e-8a4f-744f3b62d2c1.jpg",
+    "fetchedAt": "2026-10-02T22:54:48.286930+00:00",
+    "sha256": "1b63a07c1f571782e698e3dc5e21bb5079363f55fa29ddbb349f86deec25ac09",
+    "bytes": 214525,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

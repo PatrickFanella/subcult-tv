@@ -1,0 +1,29 @@
+{
+  "styleId": "bab34295-03fc-4993-ae42-b440fe78647b",
+  "sourceUrl": "https://styles.refero.design/style/bab34295-03fc-4993-ae42-b440fe78647b",
+  "fetchedAt": "2026-10-02T22:22:30.159217+00:00",
+  "extractedAt": "2026-10-02T22:22:30.181858+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vapi — Style Reference",
+  "htmlSha256": "d79f31a236a544400b4660404da89e2b38ec44a7ad69a7b019a7a8a4fdbf3130",
+  "cache": ".cache/bab34295-03fc-4993-ae42-b440fe78647b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e611e5fbf2420bea2ac7e8e52e1592fd5487161984b10c82e5e926b40cd78b62",
+      "bytes": 24518,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1bb7bf2d-ac2d-4b6a-84a2-8e91c9192618.jpg",
+    "fetchedAt": "2026-10-02T22:22:32.306060+00:00",
+    "sha256": "ed6cf4091724f598956f3a602703e675c8ca1a76e32159e26e870a024ac95da0",
+    "bytes": 102997,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

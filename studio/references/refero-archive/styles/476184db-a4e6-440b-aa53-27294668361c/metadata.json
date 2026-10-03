@@ -1,0 +1,29 @@
+{
+  "styleId": "476184db-a4e6-440b-aa53-27294668361c",
+  "sourceUrl": "https://styles.refero.design/style/476184db-a4e6-440b-aa53-27294668361c",
+  "fetchedAt": "2026-10-02T22:07:02.230736+00:00",
+  "extractedAt": "2026-10-02T22:07:02.254552+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cron Calendar — Style Reference",
+  "htmlSha256": "f7f79cbbb0c612487416fed650fa411de508831248b3e3bc19028ed1250ec2ad",
+  "cache": ".cache/476184db-a4e6-440b-aa53-27294668361c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "027a74f9efdcb113d2673729e2801d6aa1096b378ec7b7f20777cc77c97d93d7",
+      "bytes": 14710,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cba65c8c-82ad-4e95-89bc-18a1b5d7df65.jpg",
+    "fetchedAt": "2026-10-02T22:07:04.209553+00:00",
+    "sha256": "5bbdafccfc9fc99ca0a6835c667367276ecacb28f72c412e6d6d5e0aa9e1c11f",
+    "bytes": 76507,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

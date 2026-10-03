@@ -1,0 +1,29 @@
+{
+  "styleId": "fb459c9d-c089-4d0b-b5b0-d147b1c4ebd7",
+  "sourceUrl": "https://styles.refero.design/style/fb459c9d-c089-4d0b-b5b0-d147b1c4ebd7",
+  "fetchedAt": "2026-10-02T22:50:14.264434+00:00",
+  "extractedAt": "2026-10-02T22:50:14.287388+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Moving Parts — Style Reference",
+  "htmlSha256": "c77adf1c768128debdd0790b72958f30b5df7d23a499b530d138ad118679c550",
+  "cache": ".cache/fb459c9d-c089-4d0b-b5b0-d147b1c4ebd7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1dbd94cdf9c96f0cb3ed9d54a6cb5dc3df29664a5b5740fef34adda78b9d8663",
+      "bytes": 26528,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/53304488-f642-4109-aeff-d4c1a25361d2.jpg",
+    "fetchedAt": "2026-10-02T22:50:16.238781+00:00",
+    "sha256": "79d2613a41b394e2818dc762a3a0b5a2ba0e1cb5c07ed18b1ecb369a6fa5eb0c",
+    "bytes": 107102,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

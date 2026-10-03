@@ -1,0 +1,29 @@
+{
+  "styleId": "65f775f1-6dcc-4c49-80d2-b5a017b76f59",
+  "sourceUrl": "https://styles.refero.design/style/65f775f1-6dcc-4c49-80d2-b5a017b76f59",
+  "fetchedAt": "2026-10-02T22:06:30.159155+00:00",
+  "extractedAt": "2026-10-02T22:06:30.182849+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lyssna — Style Reference",
+  "htmlSha256": "ea1d76306639d9c751d10a8381ae0edbd8e5e95439bcce82a201a38f5b2ae812",
+  "cache": ".cache/65f775f1-6dcc-4c49-80d2-b5a017b76f59.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3a46958705e1cd60aa130aabc982fb21a7c3c0bd8240255a45463a9d75872e79",
+      "bytes": 20710,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1f56c9d4-11e2-43f9-8193-f6b1bbca2305.jpg",
+    "fetchedAt": "2026-10-02T22:06:32.212228+00:00",
+    "sha256": "994e80d2494a6984423f56cb4cf97acc697afd15404c6dbf9379760804aa3134",
+    "bytes": 98728,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

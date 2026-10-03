@@ -1,0 +1,29 @@
+{
+  "styleId": "c03afcbd-96ed-4b7f-8d0a-277fc0042ba7",
+  "sourceUrl": "https://styles.refero.design/style/c03afcbd-96ed-4b7f-8d0a-277fc0042ba7",
+  "fetchedAt": "2026-10-02T22:43:22.196987+00:00",
+  "extractedAt": "2026-10-02T22:43:22.220298+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Udemy — Style Reference",
+  "htmlSha256": "ac16fe9540986406a0ff426f8ab280af413f8d55cb011e2ca6fa7ea4c9b7e9b2",
+  "cache": ".cache/c03afcbd-96ed-4b7f-8d0a-277fc0042ba7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d00e121791893a3a2422717dcf28f09a346a8fff72060b6fe57eba0e6a83159c",
+      "bytes": 16737,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/85a50c2f-ee8d-4ce2-8bc5-cf462efecb2e.jpg",
+    "fetchedAt": "2026-10-02T22:43:24.291742+00:00",
+    "sha256": "dcf2da8fc8a1c43c5fdd92b0bf0cbf1a473bcd0674f8922b73fd00b5d0c9a20d",
+    "bytes": 91916,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

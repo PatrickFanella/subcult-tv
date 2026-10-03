@@ -1,0 +1,29 @@
+{
+  "styleId": "f3d2bfdb-ba92-42c4-91c6-58c829b094bf",
+  "sourceUrl": "https://styles.refero.design/style/f3d2bfdb-ba92-42c4-91c6-58c829b094bf",
+  "fetchedAt": "2026-10-02T22:13:38.287553+00:00",
+  "extractedAt": "2026-10-02T22:13:38.309200+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Akash Tyagi — Style Reference",
+  "htmlSha256": "3d572ce65ae36d12661c18f857d1a675a36ba8aa30cf9ebc9ad7fc4e3e117930",
+  "cache": ".cache/f3d2bfdb-ba92-42c4-91c6-58c829b094bf.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "de36d15ac743051516ca884091c52468b57a0c79c19a342afef9fdd42d75dab2",
+      "bytes": 15783,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b56a3239-c6c5-46fd-8ccb-19f3578516af.jpg",
+    "fetchedAt": "2026-10-02T22:13:40.150341+00:00",
+    "sha256": "392959023a8ffed35a9a3ecda5856bb76e39f6b73cd099d91d58fc59a264523f",
+    "bytes": 49422,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

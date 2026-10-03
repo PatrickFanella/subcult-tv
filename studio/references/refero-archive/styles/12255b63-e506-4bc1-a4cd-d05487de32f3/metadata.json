@@ -1,0 +1,29 @@
+{
+  "styleId": "12255b63-e506-4bc1-a4cd-d05487de32f3",
+  "sourceUrl": "https://styles.refero.design/style/12255b63-e506-4bc1-a4cd-d05487de32f3",
+  "fetchedAt": "2026-10-02T22:51:46.326832+00:00",
+  "extractedAt": "2026-10-02T22:51:46.351923+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Intercom — Style Reference",
+  "htmlSha256": "edfd5eef5f595010b1112bf098c3f3bc743f709b4f4eac0dbc8f8b3fc32f98be",
+  "cache": ".cache/12255b63-e506-4bc1-a4cd-d05487de32f3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "698ed3ea298a0ab11e8d992c9575218c44b75f15fb85fc5bede48241cbe6b236",
+      "bytes": 24559,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1207c4cb-3427-497d-86a3-5b1414d8ed25.jpg",
+    "fetchedAt": "2026-10-02T22:51:48.250697+00:00",
+    "sha256": "ee02137dc9d658ee67838e9f5d1f9dce73f8bf772940f5319b0e6659d3ba6140",
+    "bytes": 134923,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

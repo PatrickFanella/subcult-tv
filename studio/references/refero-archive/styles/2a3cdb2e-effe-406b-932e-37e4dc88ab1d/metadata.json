@@ -1,0 +1,29 @@
+{
+  "styleId": "2a3cdb2e-effe-406b-932e-37e4dc88ab1d",
+  "sourceUrl": "https://styles.refero.design/style/2a3cdb2e-effe-406b-932e-37e4dc88ab1d",
+  "fetchedAt": "2026-10-02T22:27:38.229885+00:00",
+  "extractedAt": "2026-10-02T22:27:38.251529+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vana — Style Reference",
+  "htmlSha256": "f0ee79755d3280f036be75001f8ef57228b8273c8dbb2ad85197e55c5d893244",
+  "cache": ".cache/2a3cdb2e-effe-406b-932e-37e4dc88ab1d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "44119dd30f26ec890312e0c692082c0e90a70ef2e717a26c33fa51d79b5d85c0",
+      "bytes": 20874,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5e58c74c-3ca8-44b6-bb29-e32d083b78de.jpg",
+    "fetchedAt": "2026-10-02T22:27:40.262222+00:00",
+    "sha256": "c8d1a4eaa11179e6829961a7a87bd782da596d712c1c97e1848fe80ef7ddfa1d",
+    "bytes": 73104,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

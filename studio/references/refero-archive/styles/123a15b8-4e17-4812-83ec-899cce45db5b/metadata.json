@@ -1,0 +1,29 @@
+{
+  "styleId": "123a15b8-4e17-4812-83ec-899cce45db5b",
+  "sourceUrl": "https://styles.refero.design/style/123a15b8-4e17-4812-83ec-899cce45db5b",
+  "fetchedAt": "2026-10-02T22:37:34.244559+00:00",
+  "extractedAt": "2026-10-02T22:37:34.268312+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Payments — Style Reference",
+  "htmlSha256": "1be85ac9fb8cbd2bb152e3f1d6082d2132c5055eef1548b40bcb65436645d429",
+  "cache": ".cache/123a15b8-4e17-4812-83ec-899cce45db5b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7c0395933261773386e78d081c176d8535dc81327da88fb8543310b80fad3f37",
+      "bytes": 21800,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3843f198-35df-44a7-8627-fd00b0ff628e.jpg",
+    "fetchedAt": "2026-10-02T22:37:36.340072+00:00",
+    "sha256": "0432b8d8729f30851461390c8d70d27b11a2d403db40f153cef67a70e3544f03",
+    "bytes": 138187,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

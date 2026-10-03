@@ -1,0 +1,29 @@
+{
+  "styleId": "e4b9d41a-8165-47dd-818a-5f6810046ea9",
+  "sourceUrl": "https://styles.refero.design/style/e4b9d41a-8165-47dd-818a-5f6810046ea9",
+  "fetchedAt": "2026-10-02T22:50:18.240145+00:00",
+  "extractedAt": "2026-10-02T22:50:18.261985+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Pirsch Analytics — Style Reference",
+  "htmlSha256": "1c0b8e55ff0941634615477fb3b6f7c023dacb126b39c6d12a78ace45503d61c",
+  "cache": ".cache/e4b9d41a-8165-47dd-818a-5f6810046ea9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ae64d2290e8781069561938cb40e6c46ee461fb269f711d721615dab6b442634",
+      "bytes": 16900,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2c94c47f-3a62-40af-9861-69d3692b6f58.jpg",
+    "fetchedAt": "2026-10-02T22:50:20.262449+00:00",
+    "sha256": "2275e1447bf92efa5d246e1bb6964cbfca0afe1c8182c9303e1e952b5428bde2",
+    "bytes": 83296,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

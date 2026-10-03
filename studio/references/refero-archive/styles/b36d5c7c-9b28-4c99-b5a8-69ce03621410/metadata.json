@@ -1,0 +1,29 @@
+{
+  "styleId": "b36d5c7c-9b28-4c99-b5a8-69ce03621410",
+  "sourceUrl": "https://styles.refero.design/style/b36d5c7c-9b28-4c99-b5a8-69ce03621410",
+  "fetchedAt": "2026-10-02T22:53:14.261221+00:00",
+  "extractedAt": "2026-10-02T22:53:14.283248+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Spline — Style Reference",
+  "htmlSha256": "e121e0c9ab0d0f795804c97aee9d7b7662092de251dd46168afc692b9ebfd34c",
+  "cache": ".cache/b36d5c7c-9b28-4c99-b5a8-69ce03621410.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0dcea2ddfc918a3c19a182e620240353b859ccfec2bfa52894b6b98ba055ded4",
+      "bytes": 15128,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d7d7d0a0-41b5-47f9-8d58-b36f9acaa4d0.jpg",
+    "fetchedAt": "2026-10-02T22:53:16.209229+00:00",
+    "sha256": "719211cb30117b2c7a8b9ba2457b4b0e7ed659adde28e3b31a3f9b00f1cb94b2",
+    "bytes": 84375,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

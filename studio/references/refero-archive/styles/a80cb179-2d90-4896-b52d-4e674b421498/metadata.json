@@ -1,0 +1,29 @@
+{
+  "styleId": "a80cb179-2d90-4896-b52d-4e674b421498",
+  "sourceUrl": "https://styles.refero.design/style/a80cb179-2d90-4896-b52d-4e674b421498",
+  "fetchedAt": "2026-10-02T22:09:34.185324+00:00",
+  "extractedAt": "2026-10-02T22:09:34.207467+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Glideapps — Style Reference",
+  "htmlSha256": "ff509aaf50db7cc3d7134eea6131332b3a659f78ad8704820c4f487c80e782a0",
+  "cache": ".cache/a80cb179-2d90-4896-b52d-4e674b421498.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a9fd595e76a976eb43d0f3d4461f6ce7a09a681c683425de4d53230d8110cc41",
+      "bytes": 21615,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9a790bd4-e6a2-4b79-846c-f406ef97158a.jpg",
+    "fetchedAt": "2026-10-02T22:09:36.243966+00:00",
+    "sha256": "dc4640cbc7757cc80108421a1aa30bbec5cb1cebf36edc70ab27739f4a57a7e7",
+    "bytes": 79527,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

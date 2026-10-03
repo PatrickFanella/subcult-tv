@@ -1,0 +1,29 @@
+{
+  "styleId": "3b5ff57f-a371-4c7f-82ae-5fc5485da073",
+  "sourceUrl": "https://styles.refero.design/style/3b5ff57f-a371-4c7f-82ae-5fc5485da073",
+  "fetchedAt": "2026-10-02T22:05:58.224215+00:00",
+  "extractedAt": "2026-10-02T22:05:58.252527+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Suno — Style Reference",
+  "htmlSha256": "58feb0c27fd4aab05bd112360328d55e46ddae7f017a54992e39cd8b99c6ef28",
+  "cache": ".cache/3b5ff57f-a371-4c7f-82ae-5fc5485da073.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "533d646ba8490be10f2c08dcbeb83b7fbdf0e6d31267c3951a6e71f4bec72e07",
+      "bytes": 21079,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/99e87f58-a4f8-460f-a3fb-3d32e8967e54.jpg",
+    "fetchedAt": "2026-10-02T22:06:00.250528+00:00",
+    "sha256": "372ccdcc7d1c6baf07ea1f843cf5c241745ec07f170d554a54499af8e5c93bb1",
+    "bytes": 78279,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

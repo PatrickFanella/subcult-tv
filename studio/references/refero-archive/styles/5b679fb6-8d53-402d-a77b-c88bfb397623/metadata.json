@@ -1,0 +1,29 @@
+{
+  "styleId": "5b679fb6-8d53-402d-a77b-c88bfb397623",
+  "sourceUrl": "https://styles.refero.design/style/5b679fb6-8d53-402d-a77b-c88bfb397623",
+  "fetchedAt": "2026-10-02T22:10:58.191211+00:00",
+  "extractedAt": "2026-10-02T22:10:58.219299+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tailscale — Style Reference",
+  "htmlSha256": "54d63783e54eb3e9a5b1e523179ea80a50b258294f879567bb51dda47855e666",
+  "cache": ".cache/5b679fb6-8d53-402d-a77b-c88bfb397623.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a223a2851d2c47fd4379737ba372e7bfe0886c3a3fae77569ed1db08d4fd83e7",
+      "bytes": 19827,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/41778280-2142-4262-8571-4eee81efb20e.jpg",
+    "fetchedAt": "2026-10-02T22:11:00.333475+00:00",
+    "sha256": "4532a54aa8ebfa8fae93c24eecf7adf989471227ee073685807603d4153b83fe",
+    "bytes": 102914,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

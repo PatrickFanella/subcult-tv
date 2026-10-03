@@ -1,0 +1,29 @@
+{
+  "styleId": "2fd71e12-12fc-4346-8281-52afe12bb951",
+  "sourceUrl": "https://styles.refero.design/style/2fd71e12-12fc-4346-8281-52afe12bb951",
+  "fetchedAt": "2026-10-02T22:25:14.154316+00:00",
+  "extractedAt": "2026-10-02T22:25:14.181400+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Nomen Nescio — Style Reference",
+  "htmlSha256": "ec7a7225e89662c1c2adf2ee3d90063f7bc284634f9214d1327c7b92b118d9f5",
+  "cache": ".cache/2fd71e12-12fc-4346-8281-52afe12bb951.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7b32385bfb9b1bd755c8df3af59e99afab865be2572969c27039a145c37d0a7a",
+      "bytes": 17795,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/361cc059-21c6-4d5c-9091-da0f68393690.jpg",
+    "fetchedAt": "2026-10-02T22:25:16.267065+00:00",
+    "sha256": "072a7ca10e323ec48a4a6f2300f190a529c57eea82bf860958fa414e636bdb11",
+    "bytes": 115376,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

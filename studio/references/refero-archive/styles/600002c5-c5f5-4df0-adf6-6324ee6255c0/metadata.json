@@ -1,0 +1,29 @@
+{
+  "styleId": "600002c5-c5f5-4df0-adf6-6324ee6255c0",
+  "sourceUrl": "https://styles.refero.design/style/600002c5-c5f5-4df0-adf6-6324ee6255c0",
+  "fetchedAt": "2026-10-02T22:07:46.288592+00:00",
+  "extractedAt": "2026-10-02T22:07:46.313238+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "FARFETCH España — Style Reference",
+  "htmlSha256": "5237b381be2f93323a059df323d9923fae3cc3ce505412a6252fb7661abb5293",
+  "cache": ".cache/600002c5-c5f5-4df0-adf6-6324ee6255c0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f9274c6ea01d144debc5fcbcc43bb0b05f0f521a174cd0479bfd1a2d68634f8c",
+      "bytes": 18023,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2fdd5245-7a90-4f25-be42-16aa47fe2935.jpg",
+    "fetchedAt": "2026-10-02T22:07:48.325614+00:00",
+    "sha256": "98b5bf3b835e9504063ca6d86053a6b8e0bc628890f7b914afcb8f2e23800643",
+    "bytes": 116977,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "65b30976-3663-40b2-8751-7a360ba74539",
+  "sourceUrl": "https://styles.refero.design/style/65b30976-3663-40b2-8751-7a360ba74539",
+  "fetchedAt": "2026-10-02T22:21:30.231416+00:00",
+  "extractedAt": "2026-10-02T22:21:30.265310+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Apollographql — Style Reference",
+  "htmlSha256": "af23c039ccbe9aafaa086bfd076ebf91d258b3c932fc66d626795c811854d1b4",
+  "cache": ".cache/65b30976-3663-40b2-8751-7a360ba74539.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "438d6f261fcd674d0ddd28a3f15381eaf49a33eb3ed463422b16da81c9db080c",
+      "bytes": 18489,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4a1d2d52-b922-4b5d-9117-a60bb38a13a9.jpg",
+    "fetchedAt": "2026-10-02T22:21:32.282832+00:00",
+    "sha256": "26ed18f80d45f5a8a397a553456643843ada468b60a84d57d1d665587b54cab4",
+    "bytes": 115035,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

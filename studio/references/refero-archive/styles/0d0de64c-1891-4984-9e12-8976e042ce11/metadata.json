@@ -1,0 +1,29 @@
+{
+  "styleId": "0d0de64c-1891-4984-9e12-8976e042ce11",
+  "sourceUrl": "https://styles.refero.design/style/0d0de64c-1891-4984-9e12-8976e042ce11",
+  "fetchedAt": "2026-10-02T22:42:18.934725+00:00",
+  "extractedAt": "2026-10-02T22:42:18.956576+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Flighty — Style Reference",
+  "htmlSha256": "6399254c5eed4aaa223576f83a7a619f0212ea3e8eb9cb7a97a4fb9654b8eb6b",
+  "cache": ".cache/0d0de64c-1891-4984-9e12-8976e042ce11.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "68ac283ccddbfb681a8495b6a03eaaf87ecb358716d04e497418f956c6a8ca4f",
+      "bytes": 29455,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d3380760-d841-4baa-a07b-c3bcb7068f65.jpg",
+    "fetchedAt": "2026-10-02T22:42:20.296491+00:00",
+    "sha256": "5fa308e5ac4b8c0a3d2cc254677e02c7d8a0497c7d7c143625ca5fe35e0c9303",
+    "bytes": 133289,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

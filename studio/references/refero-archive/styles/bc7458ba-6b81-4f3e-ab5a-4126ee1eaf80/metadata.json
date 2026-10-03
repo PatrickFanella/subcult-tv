@@ -1,0 +1,29 @@
+{
+  "styleId": "bc7458ba-6b81-4f3e-ab5a-4126ee1eaf80",
+  "sourceUrl": "https://styles.refero.design/style/bc7458ba-6b81-4f3e-ab5a-4126ee1eaf80",
+  "fetchedAt": "2026-10-02T22:39:54.243531+00:00",
+  "extractedAt": "2026-10-02T22:39:54.266885+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tomorro — Style Reference",
+  "htmlSha256": "7405517b734438bcde7a2a7f9a2c1666f366a55480fcdc43887078d1c297a411",
+  "cache": ".cache/bc7458ba-6b81-4f3e-ab5a-4126ee1eaf80.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1a7e6923640755c6408317a73dc750c9202f7ea241bc41850459eca69d68df02",
+      "bytes": 25965,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/dff70680-41c2-4a88-95bb-60cb79a73664.jpg",
+    "fetchedAt": "2026-10-02T22:39:56.238839+00:00",
+    "sha256": "f4c6d681fce501fe39ce9a621ff046270d8d273835c2386f549f1570c7406957",
+    "bytes": 129637,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

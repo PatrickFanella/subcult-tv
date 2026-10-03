@@ -1,0 +1,29 @@
+{
+  "styleId": "a541789c-36e7-45a4-9d1d-143921a82a8b",
+  "sourceUrl": "https://styles.refero.design/style/a541789c-36e7-45a4-9d1d-143921a82a8b",
+  "fetchedAt": "2026-10-02T22:50:38.346401+00:00",
+  "extractedAt": "2026-10-02T22:50:38.370512+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Zed — Style Reference",
+  "htmlSha256": "4a6011dc03a2505ac939953a64f871c1b4a4329339911f9a620846b7f451aa4e",
+  "cache": ".cache/a541789c-36e7-45a4-9d1d-143921a82a8b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "388a8dca217675fb1e024aa026a79c6c77a6bf1d478390ece303191722a54ff4",
+      "bytes": 27127,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e27e2eea-01ee-419b-bb0f-339e0fe7b036.jpg",
+    "fetchedAt": "2026-10-02T22:50:40.257551+00:00",
+    "sha256": "f9cb4d5e1993449c122caf4931b1f65d2b36f4c20fd5c6e7761238e284f2761c",
+    "bytes": 137800,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

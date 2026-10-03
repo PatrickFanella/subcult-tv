@@ -1,0 +1,29 @@
+{
+  "styleId": "a74d60e1-0a09-48a1-8721-13f1f45727f1",
+  "sourceUrl": "https://styles.refero.design/style/a74d60e1-0a09-48a1-8721-13f1f45727f1",
+  "fetchedAt": "2026-10-02T22:23:02.298536+00:00",
+  "extractedAt": "2026-10-02T22:23:02.321069+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Safepal — Style Reference",
+  "htmlSha256": "dc4b2e28e6e456ba640234e8541dbb3344be30ad12142164c91641992a4c0164",
+  "cache": ".cache/a74d60e1-0a09-48a1-8721-13f1f45727f1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1cb1ca6cf4dc9ab87b3f88a7891607e819c091069a6bf733f941c2e885f904e5",
+      "bytes": 17221,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/832fc57a-8903-4514-9d04-0bdb172803fa.jpg",
+    "fetchedAt": "2026-10-02T22:23:04.300578+00:00",
+    "sha256": "c1b44fbe6747036f91703882119d13ec3e20a2e316b37f286bfad7a5637a3ae2",
+    "bytes": 129188,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

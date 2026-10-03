@@ -1,0 +1,29 @@
+{
+  "styleId": "1e7dae3b-cb34-4fcf-8c32-051152aebbab",
+  "sourceUrl": "https://styles.refero.design/style/1e7dae3b-cb34-4fcf-8c32-051152aebbab",
+  "fetchedAt": "2026-10-02T22:08:50.215785+00:00",
+  "extractedAt": "2026-10-02T22:08:50.241524+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Foodnoms — Style Reference",
+  "htmlSha256": "b824f89e2940f9a3b3d3885cd1e6ebc42a17fb8202ba21529e7bd1bb5134ee09",
+  "cache": ".cache/1e7dae3b-cb34-4fcf-8c32-051152aebbab.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "470c4c846b8ab613d2bb5eca615b4ce83a9e9db060bf4c9d4c1361bf059f0163",
+      "bytes": 22036,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d79aade6-1395-4f72-84ea-e0855b9a8938.jpg",
+    "fetchedAt": "2026-10-02T22:08:52.295004+00:00",
+    "sha256": "bbbba360f57163c67e6c55a0d5a63336292374ee01f30477b517132b52435801",
+    "bytes": 120409,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

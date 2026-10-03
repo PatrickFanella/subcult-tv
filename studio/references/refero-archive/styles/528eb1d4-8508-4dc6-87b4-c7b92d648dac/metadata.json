@@ -1,0 +1,29 @@
+{
+  "styleId": "528eb1d4-8508-4dc6-87b4-c7b92d648dac",
+  "sourceUrl": "https://styles.refero.design/style/528eb1d4-8508-4dc6-87b4-c7b92d648dac",
+  "fetchedAt": "2026-10-02T22:50:50.237205+00:00",
+  "extractedAt": "2026-10-02T22:50:50.258944+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Quizlet — Style Reference",
+  "htmlSha256": "66fd244aa985c63c93a2499dfdb92eab8f05454340602a9cb32a59d7928fafa3",
+  "cache": ".cache/528eb1d4-8508-4dc6-87b4-c7b92d648dac.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "17106bbc021a668e111d793cbb0a7beef3d3cb50f44837a7adfc8ec4388223da",
+      "bytes": 19062,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f116898c-8782-436c-90b9-261f0f9d1657.jpg",
+    "fetchedAt": "2026-10-02T22:50:52.302372+00:00",
+    "sha256": "1ca71a7a502eacba53ff2287aa3abccd67b02db0773e1b1db60a5ccaad705923",
+    "bytes": 93290,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "b52981ce-fdb2-4ba0-86bb-f5ce0c27a9c6",
+  "sourceUrl": "https://styles.refero.design/style/b52981ce-fdb2-4ba0-86bb-f5ce0c27a9c6",
+  "fetchedAt": "2026-10-02T22:42:50.181571+00:00",
+  "extractedAt": "2026-10-02T22:42:50.204557+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Arcadia — Style Reference",
+  "htmlSha256": "8cab2a7fea720af9423e1f9dac26c0805b86b655c2b1f68f71be1c00e0037828",
+  "cache": ".cache/b52981ce-fdb2-4ba0-86bb-f5ce0c27a9c6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5d55c4a73ab5b490fafed88d5b970b2e4bded06008594ecb29b7518a1b41e8f6",
+      "bytes": 21074,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7c565d38-e037-4db5-a0fe-02c27e20de93.jpg",
+    "fetchedAt": "2026-10-02T22:42:52.307714+00:00",
+    "sha256": "f9929dfd5d6e4abe13624fd701ee1bc7b41050e1dfbb3b99dcd1fe65a56bc29f",
+    "bytes": 105953,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

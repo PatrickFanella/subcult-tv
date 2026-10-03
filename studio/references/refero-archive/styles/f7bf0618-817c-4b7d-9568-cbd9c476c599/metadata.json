@@ -1,0 +1,29 @@
+{
+  "styleId": "f7bf0618-817c-4b7d-9568-cbd9c476c599",
+  "sourceUrl": "https://styles.refero.design/style/f7bf0618-817c-4b7d-9568-cbd9c476c599",
+  "fetchedAt": "2026-10-02T22:16:34.205881+00:00",
+  "extractedAt": "2026-10-02T22:16:34.235103+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tana — Style Reference",
+  "htmlSha256": "29c3db247ab6a548a286193c52c0f98c952a84a084b94f30e12faa4b60995b50",
+  "cache": ".cache/f7bf0618-817c-4b7d-9568-cbd9c476c599.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3cb641b1e5b3954bc8b2db20be2ffcf421675c499f351611736c954c656c877d",
+      "bytes": 20316,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9b1a87a1-69d7-4423-b18d-e1d4d1faec3a.jpg",
+    "fetchedAt": "2026-10-02T22:16:36.264727+00:00",
+    "sha256": "77515156446d603c57fb34f51457fd0c96dad403a5bc803e6ff3a554ec21f6d7",
+    "bytes": 75871,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

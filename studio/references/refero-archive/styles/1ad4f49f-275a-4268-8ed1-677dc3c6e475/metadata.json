@@ -1,0 +1,29 @@
+{
+  "styleId": "1ad4f49f-275a-4268-8ed1-677dc3c6e475",
+  "sourceUrl": "https://styles.refero.design/style/1ad4f49f-275a-4268-8ed1-677dc3c6e475",
+  "fetchedAt": "2026-10-02T22:21:02.296145+00:00",
+  "extractedAt": "2026-10-02T22:21:02.318833+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Increase — Style Reference",
+  "htmlSha256": "7cb84938d85ad6894359ed2e7815da5f119fc077eb4a86604031794eead4b6b5",
+  "cache": ".cache/1ad4f49f-275a-4268-8ed1-677dc3c6e475.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8ff5b0b259c5f6670d10a865a55680aaf56f429119ca29e3dc29438971172a74",
+      "bytes": 23849,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ff391de7-952f-4f11-b104-07169c5b2a81.jpg",
+    "fetchedAt": "2026-10-02T22:21:04.278740+00:00",
+    "sha256": "fbf20c15f8f5b89825031bc0e1bfd9cb99ab09b4bbea28e0daa21f73f21daa24",
+    "bytes": 100688,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

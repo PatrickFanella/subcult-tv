@@ -1,0 +1,29 @@
+{
+  "styleId": "1b293bed-e6fc-4880-9691-2dbf04339bd5",
+  "sourceUrl": "https://styles.refero.design/style/1b293bed-e6fc-4880-9691-2dbf04339bd5",
+  "fetchedAt": "2026-10-02T22:04:02.243262+00:00",
+  "extractedAt": "2026-10-02T22:04:02.262972+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Thomas Vimare — Style Reference",
+  "htmlSha256": "f78bff9d7cd95a7d4395524ae2d2143fef20e25ac7b4429cb479823438d6103f",
+  "cache": ".cache/1b293bed-e6fc-4880-9691-2dbf04339bd5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ea6a76077b85b2b95fe476ad7aacb5fb5df9e873dd12053b8f74f1856179347b",
+      "bytes": 14709,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3a44a49b-e6a9-472e-b39e-1e14d1936e65.jpg",
+    "fetchedAt": "2026-10-02T22:04:04.295231+00:00",
+    "sha256": "e4554b847a5a2fc46c9fd088400fe581292faa45191f4b3064965c7bd28c49fc",
+    "bytes": 90417,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

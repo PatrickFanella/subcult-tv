@@ -1,0 +1,29 @@
+{
+  "styleId": "3da7b444-ded8-406b-90b7-96851604b92b",
+  "sourceUrl": "https://styles.refero.design/style/3da7b444-ded8-406b-90b7-96851604b92b",
+  "fetchedAt": "2026-10-02T22:53:46.226870+00:00",
+  "extractedAt": "2026-10-02T22:53:46.250167+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Luffu — Style Reference",
+  "htmlSha256": "6b277c78d3d75a251b3f6316f76e27879bb9331b4b7b99f85618029e7328b876",
+  "cache": ".cache/3da7b444-ded8-406b-90b7-96851604b92b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "18bc16a829f50a360359957f71c7c98a166510edbd4eeaf5fe7ae033681e51a5",
+      "bytes": 20630,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/84d399ab-eac3-45bf-bd44-10a800c9d823.jpg",
+    "fetchedAt": "2026-10-02T22:53:48.316910+00:00",
+    "sha256": "345ebe019b760df53f11bf3808c04fc35c2753af30861b4ea62cac88bacaecf2",
+    "bytes": 254174,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "8fc58a26-47be-406e-8429-37925551c0ec",
+  "sourceUrl": "https://styles.refero.design/style/8fc58a26-47be-406e-8429-37925551c0ec",
+  "fetchedAt": "2026-10-02T22:01:42.343514+00:00",
+  "extractedAt": "2026-10-02T22:01:42.379647+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "YouTube — Style Reference",
+  "htmlSha256": "43812ab516b6a1386ecf2c3b8302ae73a2ef5192e19592317ad87ddbcfded233",
+  "cache": ".cache/8fc58a26-47be-406e-8429-37925551c0ec.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "06ba31c99e59f16236fd50778b0fa88b25c6ecb9407b8c0339eef5206bda360f",
+      "bytes": 14701,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0327e9a5-04f5-439d-8162-0e2a88264e13.jpg",
+    "fetchedAt": "2026-10-02T22:01:44.152170+00:00",
+    "sha256": "1fbbc5bf97640d1ea6c283fbd7badc4de669c0e85e222c2d0457625161ec982e",
+    "bytes": 47985,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

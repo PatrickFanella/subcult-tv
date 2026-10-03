@@ -1,0 +1,29 @@
+{
+  "styleId": "691e7b4e-fee9-4f08-a2e9-9a2742c22b7b",
+  "sourceUrl": "https://styles.refero.design/style/691e7b4e-fee9-4f08-a2e9-9a2742c22b7b",
+  "fetchedAt": "2026-10-02T22:18:22.224684+00:00",
+  "extractedAt": "2026-10-02T22:18:22.246823+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Mezmo — Style Reference",
+  "htmlSha256": "44c83af798ea417620f87f6aa62ae74a673ce06b0c30ff374afa85fda731b045",
+  "cache": ".cache/691e7b4e-fee9-4f08-a2e9-9a2742c22b7b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "60e6c5ae0b690eb6ff6696d8ab706000a9fba361b9e3537d99b85fae5910c41d",
+      "bytes": 23092,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/74f2fdd5-6f07-4751-a9f7-ac102dbb93eb.jpg",
+    "fetchedAt": "2026-10-02T22:18:24.332383+00:00",
+    "sha256": "55c57ef871a0abd354d4b9f98b2203cfe4fc56d6bfbaa4a7809d768309b93e96",
+    "bytes": 95389,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

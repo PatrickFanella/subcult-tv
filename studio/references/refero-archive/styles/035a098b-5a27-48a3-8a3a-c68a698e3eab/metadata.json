@@ -1,0 +1,29 @@
+{
+  "styleId": "035a098b-5a27-48a3-8a3a-c68a698e3eab",
+  "sourceUrl": "https://styles.refero.design/style/035a098b-5a27-48a3-8a3a-c68a698e3eab",
+  "fetchedAt": "2026-10-02T22:51:42.539128+00:00",
+  "extractedAt": "2026-10-02T22:51:42.570034+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Headspace — Style Reference",
+  "htmlSha256": "a1decf16c5087702e3eedaf608854588e802fa4192ba45dbfaed6796c4f9717c",
+  "cache": ".cache/035a098b-5a27-48a3-8a3a-c68a698e3eab.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e602c37c323c885cc0cfa4db20b33cce8996d0dc7154aa4a6e5d9f6ed78ef048",
+      "bytes": 22449,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/faec9cd8-ac95-4a54-ac7d-68c2a32e3d8f.jpg",
+    "fetchedAt": "2026-10-02T22:51:44.226598+00:00",
+    "sha256": "dc3bca04d3d0215282108a805bee6fadf043959dd489f01d830c490694c6748e",
+    "bytes": 128327,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

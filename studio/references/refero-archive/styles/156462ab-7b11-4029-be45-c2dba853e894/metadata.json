@@ -1,0 +1,29 @@
+{
+  "styleId": "156462ab-7b11-4029-be45-c2dba853e894",
+  "sourceUrl": "https://styles.refero.design/style/156462ab-7b11-4029-be45-c2dba853e894",
+  "fetchedAt": "2026-10-02T22:37:38.204438+00:00",
+  "extractedAt": "2026-10-02T22:37:38.230454+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ghia — Style Reference",
+  "htmlSha256": "5a2cde5cb9eec6169b65b3c975deeeff91f988379d627a89d3be716cd239c274",
+  "cache": ".cache/156462ab-7b11-4029-be45-c2dba853e894.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "90cbc61a47fac59990b51860d792d704b5c0969fe7535782bb1f504c45e7e0a3",
+      "bytes": 18684,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8a03bbb6-aade-4bd0-90f2-53622e3bd8a2.jpg",
+    "fetchedAt": "2026-10-02T22:37:40.443946+00:00",
+    "sha256": "784c0f7a580f22cef8f7dd2fbd4fc8d9d6fb2454e05e444a75f7a7dfeeb84e08",
+    "bytes": 157322,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

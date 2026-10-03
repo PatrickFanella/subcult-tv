@@ -1,0 +1,29 @@
+{
+  "styleId": "3389358b-68b2-4fca-82a8-52c07b3a3475",
+  "sourceUrl": "https://styles.refero.design/style/3389358b-68b2-4fca-82a8-52c07b3a3475",
+  "fetchedAt": "2026-10-02T22:13:42.481805+00:00",
+  "extractedAt": "2026-10-02T22:13:42.523297+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Becklyn — Style Reference",
+  "htmlSha256": "547d67960dc78228be8e0aa49b402f8b40918ecab914783f76818c70ced8fd9f",
+  "cache": ".cache/3389358b-68b2-4fca-82a8-52c07b3a3475.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8962f5bf80568c9c2d16f6b06711143a3127ecb5bacce7125563ea33c7dd657d",
+      "bytes": 19892,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/dac11f38-4133-44a4-82b0-d4a0b20a8098.jpg",
+    "fetchedAt": "2026-10-02T22:13:44.171667+00:00",
+    "sha256": "74280e986d151779bd32b977fbf7a5ca7303ec1d8bd84f7723c42f7d2a9b4707",
+    "bytes": 40374,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

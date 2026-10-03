@@ -1,0 +1,29 @@
+{
+  "styleId": "0231caf5-0347-4f2d-ba20-5bab8fcaf2ce",
+  "sourceUrl": "https://styles.refero.design/style/0231caf5-0347-4f2d-ba20-5bab8fcaf2ce",
+  "fetchedAt": "2026-10-02T22:27:22.199804+00:00",
+  "extractedAt": "2026-10-02T22:27:22.220176+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "TeePublic — Style Reference",
+  "htmlSha256": "a3db508a6ef6219f987f183121b0f63139d9b21631a26b0096ebf346c2bb45f6",
+  "cache": ".cache/0231caf5-0347-4f2d-ba20-5bab8fcaf2ce.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "088af4bbd2f1e90bbbe4c2697dd40a4ea30948833604e40f70005766f7a0db58",
+      "bytes": 23263,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/968ccbba-43f5-44d5-862a-e81e285069c1.jpg",
+    "fetchedAt": "2026-10-02T22:27:24.301031+00:00",
+    "sha256": "fe3df3652533aa5c78405e280e0031b51daeac2224482874a798e23c0f3d8a7c",
+    "bytes": 177487,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

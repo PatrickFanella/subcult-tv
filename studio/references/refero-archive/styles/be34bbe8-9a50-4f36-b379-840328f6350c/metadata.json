@@ -1,0 +1,29 @@
+{
+  "styleId": "be34bbe8-9a50-4f36-b379-840328f6350c",
+  "sourceUrl": "https://styles.refero.design/style/be34bbe8-9a50-4f36-b379-840328f6350c",
+  "fetchedAt": "2026-10-02T22:52:42.237838+00:00",
+  "extractedAt": "2026-10-02T22:52:42.263541+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Mapbox — Style Reference",
+  "htmlSha256": "effe091cdd85038bea319c16b6d0e7fa94ea3f6677ad7d57296a404aefdb9336",
+  "cache": ".cache/be34bbe8-9a50-4f36-b379-840328f6350c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5d838148c529307ffee2cb8bae736aa87d02d16820f96fb5b332eb2de04a0372",
+      "bytes": 20814,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b04fbe5d-2338-47d9-ae82-ef024bf7fcc0.jpg",
+    "fetchedAt": "2026-10-02T22:52:44.322814+00:00",
+    "sha256": "844b008070f155c2cf8e61e64f28074b6a9d87f95026ebce7f321d07b8599b81",
+    "bytes": 92694,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

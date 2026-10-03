@@ -1,0 +1,29 @@
+{
+  "styleId": "3720657f-2b59-475e-a43d-b18cac718325",
+  "sourceUrl": "https://styles.refero.design/style/3720657f-2b59-475e-a43d-b18cac718325",
+  "fetchedAt": "2026-10-02T22:37:26.308644+00:00",
+  "extractedAt": "2026-10-02T22:37:26.332322+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Wiza — Style Reference",
+  "htmlSha256": "ea2dbc5c6c3759bdb92747fe68172bcd96ab931a61dfe24db1a150ff2fbd15e8",
+  "cache": ".cache/3720657f-2b59-475e-a43d-b18cac718325.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cf99abaea5af702bfd7bfbee6cbb2d4963665565df794c21b310da9045ec877a",
+      "bytes": 23710,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/689c13e0-9318-48e8-b3c8-9dd2998920e6.jpg",
+    "fetchedAt": "2026-10-02T22:37:28.280101+00:00",
+    "sha256": "74588ed1a73b68b31e3c9bbd2acc183ff5c815115defefef275bb41441484bcf",
+    "bytes": 154267,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

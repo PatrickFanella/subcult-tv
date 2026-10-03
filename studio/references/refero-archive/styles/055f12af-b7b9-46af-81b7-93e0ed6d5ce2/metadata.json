@@ -1,0 +1,29 @@
+{
+  "styleId": "055f12af-b7b9-46af-81b7-93e0ed6d5ce2",
+  "sourceUrl": "https://styles.refero.design/style/055f12af-b7b9-46af-81b7-93e0ed6d5ce2",
+  "fetchedAt": "2026-10-02T22:48:58.329224+00:00",
+  "extractedAt": "2026-10-02T22:48:58.351637+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Krepling — Style Reference",
+  "htmlSha256": "2b60a6b24fdc437ad1e00f533cd89ce2f02253e0789c279de560e103988939a7",
+  "cache": ".cache/055f12af-b7b9-46af-81b7-93e0ed6d5ce2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3efc50aac8bc0e988467af062939b18adcd7d1030a47ece830507356298c7662",
+      "bytes": 17253,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/98a33112-ad21-4af8-b78e-6b44f72b4926.jpg",
+    "fetchedAt": "2026-10-02T22:49:00.210705+00:00",
+    "sha256": "bc2683aea813e83d9b20124e966e6e7758ad918e55f660993d803001245348fd",
+    "bytes": 71496,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

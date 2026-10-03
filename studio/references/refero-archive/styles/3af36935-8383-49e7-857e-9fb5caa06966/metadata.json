@@ -1,0 +1,29 @@
+{
+  "styleId": "3af36935-8383-49e7-857e-9fb5caa06966",
+  "sourceUrl": "https://styles.refero.design/style/3af36935-8383-49e7-857e-9fb5caa06966",
+  "fetchedAt": "2026-10-02T22:40:06.190272+00:00",
+  "extractedAt": "2026-10-02T22:40:06.211078+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Jakub Reis — Style Reference",
+  "htmlSha256": "cd0c942e28a777974fa9d5e6b10b9848be9bbe85cdc0376c0d5352b746757fc3",
+  "cache": ".cache/3af36935-8383-49e7-857e-9fb5caa06966.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ddb68f9cf0bd25eec6945cb17b4a05416b53b8fb82081deb5e4b6d06c2c2eb2b",
+      "bytes": 14266,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/812511f5-bfde-4f6a-b48d-f229b68f1843.jpg",
+    "fetchedAt": "2026-10-02T22:40:08.246904+00:00",
+    "sha256": "e7d566db635009e89664ef4585c49847e08b9a8fefba492df6a89b0a51b20dce",
+    "bytes": 158422,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

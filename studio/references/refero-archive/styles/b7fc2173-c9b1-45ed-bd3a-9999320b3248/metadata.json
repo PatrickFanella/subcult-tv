@@ -1,0 +1,29 @@
+{
+  "styleId": "b7fc2173-c9b1-45ed-bd3a-9999320b3248",
+  "sourceUrl": "https://styles.refero.design/style/b7fc2173-c9b1-45ed-bd3a-9999320b3248",
+  "fetchedAt": "2026-10-02T22:34:22.179380+00:00",
+  "extractedAt": "2026-10-02T22:34:22.201652+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Nakedcityfilms — Style Reference",
+  "htmlSha256": "00b82040e4e012150320c6abbf73679f71e4e9c63e0bd49fd4bb217bb314dd8e",
+  "cache": ".cache/b7fc2173-c9b1-45ed-bd3a-9999320b3248.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d5418f20bd2c0abefe418ed06f4fe2d8204d2e7e15ab17d5a99bc9d3c2b83c5f",
+      "bytes": 18032,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/70a1390f-3d21-45d1-93e5-2690fb28d21e.jpg",
+    "fetchedAt": "2026-10-02T22:34:24.211476+00:00",
+    "sha256": "3c706f82944b35f72938a5f16c51f82ee485e4c8482d74691e4801d28a3daa66",
+    "bytes": 90548,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

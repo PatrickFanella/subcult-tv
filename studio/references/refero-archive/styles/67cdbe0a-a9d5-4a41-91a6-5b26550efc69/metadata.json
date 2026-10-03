@@ -1,0 +1,29 @@
+{
+  "styleId": "67cdbe0a-a9d5-4a41-91a6-5b26550efc69",
+  "sourceUrl": "https://styles.refero.design/style/67cdbe0a-a9d5-4a41-91a6-5b26550efc69",
+  "fetchedAt": "2026-10-02T22:16:03.266109+00:00",
+  "extractedAt": "2026-10-02T22:16:03.288899+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fabric — Style Reference",
+  "htmlSha256": "b2b5dabb56ec5ed7c15894f034cf291327660ed12697543f2722d250e2ec65a9",
+  "cache": ".cache/67cdbe0a-a9d5-4a41-91a6-5b26550efc69.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cbf29ade96e5640bc8966ea69028916a9542b2cf8dfdd953db235be4895f03b9",
+      "bytes": 24279,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/17393a8b-31e8-4a49-81c0-03a2b25463b6.jpg",
+    "fetchedAt": "2026-10-02T22:16:04.230563+00:00",
+    "sha256": "cf6015fe57c00ddd169fa13c039db4da0ccf15a89506c5e127f83869971fda9d",
+    "bytes": 110599,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

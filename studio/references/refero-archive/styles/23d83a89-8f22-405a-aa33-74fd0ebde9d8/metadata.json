@@ -1,0 +1,29 @@
+{
+  "styleId": "23d83a89-8f22-405a-aa33-74fd0ebde9d8",
+  "sourceUrl": "https://styles.refero.design/style/23d83a89-8f22-405a-aa33-74fd0ebde9d8",
+  "fetchedAt": "2026-10-02T22:04:26.178271+00:00",
+  "extractedAt": "2026-10-02T22:04:26.200683+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Brisbane Web Developer — Style Reference",
+  "htmlSha256": "b707861da50d567fd19b773617a74d2445d12b93d7d15f7569c0eb54e387e39a",
+  "cache": ".cache/23d83a89-8f22-405a-aa33-74fd0ebde9d8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8f6e054f5612416f0ffdb145c8e2916e688e71cc8504ec96f3460cb6d5ab434f",
+      "bytes": 15257,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/84331a09-79ad-43e8-9496-6fa509747b05.jpg",
+    "fetchedAt": "2026-10-02T22:04:28.201863+00:00",
+    "sha256": "027c40d87bff3dbc5d7cd527cbd4223c938307c7d55aedb186a65ef97d58ec11",
+    "bytes": 44797,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "972925c4-0caa-4dc2-9c00-798b5be0ad70",
+  "sourceUrl": "https://styles.refero.design/style/972925c4-0caa-4dc2-9c00-798b5be0ad70",
+  "fetchedAt": "2026-10-02T22:44:18.468764+00:00",
+  "extractedAt": "2026-10-02T22:44:18.493584+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Drizzle ORM — Style Reference",
+  "htmlSha256": "c519b15068d2a535bf96d38e672321f9bddb389197db7143cca982c7be6bb3d5",
+  "cache": ".cache/972925c4-0caa-4dc2-9c00-798b5be0ad70.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "27f43c82069160e1ab6eafa79cf98ec66fd047a146e89a78f803e76852eb9bac",
+      "bytes": 25765,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e92db7c0-d4ca-4dc7-b1d2-e5cada3ab1f0.jpg",
+    "fetchedAt": "2026-10-02T22:44:20.242822+00:00",
+    "sha256": "fa85f2b277f3882fe3ddd187533e550a7a3313e7d0597fb7efee89fc44680e9b",
+    "bytes": 86923,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

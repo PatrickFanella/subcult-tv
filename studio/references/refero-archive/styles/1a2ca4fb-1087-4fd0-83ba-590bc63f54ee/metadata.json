@@ -1,0 +1,29 @@
+{
+  "styleId": "1a2ca4fb-1087-4fd0-83ba-590bc63f54ee",
+  "sourceUrl": "https://styles.refero.design/style/1a2ca4fb-1087-4fd0-83ba-590bc63f54ee",
+  "fetchedAt": "2026-10-02T22:20:46.330917+00:00",
+  "extractedAt": "2026-10-02T22:20:46.368298+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Regisgrumberg — Style Reference",
+  "htmlSha256": "0d90b2b1f697bd52663d9fc215eb1c65f394436502635d6c876020b2dbadf6d4",
+  "cache": ".cache/1a2ca4fb-1087-4fd0-83ba-590bc63f54ee.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "745b0b20d9fd8a978e851c5693fe9bb70bdcc8b05d6977dedfe3944148b552b3",
+      "bytes": 17532,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/21a3316d-0daa-4f61-86ce-792ff41238de.jpg",
+    "fetchedAt": "2026-10-02T22:20:48.155924+00:00",
+    "sha256": "a5541d6efd49b73816c294e8b138ec8664e34fa7ea30a312236e7553f9c6e458",
+    "bytes": 51588,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

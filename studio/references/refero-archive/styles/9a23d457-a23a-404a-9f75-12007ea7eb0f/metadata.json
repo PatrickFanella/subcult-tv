@@ -1,0 +1,29 @@
+{
+  "styleId": "9a23d457-a23a-404a-9f75-12007ea7eb0f",
+  "sourceUrl": "https://styles.refero.design/style/9a23d457-a23a-404a-9f75-12007ea7eb0f",
+  "fetchedAt": "2026-10-02T22:25:50.193430+00:00",
+  "extractedAt": "2026-10-02T22:25:50.214127+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aptos Network — Style Reference",
+  "htmlSha256": "faf7d22c3dea6c207da7417ef09d425225486f07bdee734f928cfe20cfa1c75d",
+  "cache": ".cache/9a23d457-a23a-404a-9f75-12007ea7eb0f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "74edc7ecf7831602dc6af3443430d09df9d23b880d01dd3edd669140df5d3e65",
+      "bytes": 22517,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0a7347b5-cd8f-4b11-aed4-0b64b69bc320.jpg",
+    "fetchedAt": "2026-10-02T22:25:52.340344+00:00",
+    "sha256": "7c43f10863349a9dfda38155fc535918e15b9551cf3c4ae5884d625fe3e7a5b1",
+    "bytes": 80632,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

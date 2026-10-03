@@ -1,0 +1,29 @@
+{
+  "styleId": "c1f7749f-319b-491b-8243-22050e85994f",
+  "sourceUrl": "https://styles.refero.design/style/c1f7749f-319b-491b-8243-22050e85994f",
+  "fetchedAt": "2026-10-02T22:03:46.331290+00:00",
+  "extractedAt": "2026-10-02T22:03:46.353421+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Stocketa — Style Reference",
+  "htmlSha256": "fec4f04421531e719f2dd967f9c26860dd9a115fe92022b42991405af1a7917a",
+  "cache": ".cache/c1f7749f-319b-491b-8243-22050e85994f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f4a5a7a9192086124413e31153b073438dcd6008eb57812bac7a27ac818e43ee",
+      "bytes": 21894,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4d8bb6b1-746d-4b5a-8707-3dce7a9edb23.jpg",
+    "fetchedAt": "2026-10-02T22:03:48.255420+00:00",
+    "sha256": "1454ee1bc7b363551b3d5a65cece9ecbcf4bfb535de820fd29d3223f3544c5fb",
+    "bytes": 90147,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

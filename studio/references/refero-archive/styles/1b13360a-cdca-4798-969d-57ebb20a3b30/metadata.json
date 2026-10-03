@@ -1,0 +1,29 @@
+{
+  "styleId": "1b13360a-cdca-4798-969d-57ebb20a3b30",
+  "sourceUrl": "https://styles.refero.design/style/1b13360a-cdca-4798-969d-57ebb20a3b30",
+  "fetchedAt": "2026-10-02T22:43:46.223371+00:00",
+  "extractedAt": "2026-10-02T22:43:46.247425+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dyotanya — Style Reference",
+  "htmlSha256": "4bc6570165ed622685459914bec4a19edae71f40a24ada2ea9daea8ec938a924",
+  "cache": ".cache/1b13360a-cdca-4798-969d-57ebb20a3b30.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "24255fb1b89ceda95c5a1c8dce5700cde3e8d3bf8e6eb13f2e51ffe918ff2083",
+      "bytes": 21549,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6ab1250a-af58-46ad-bd2f-73d9a1ff056e.jpg",
+    "fetchedAt": "2026-10-02T22:43:48.256995+00:00",
+    "sha256": "f9122158e672d6c8a97994d5d09cac22dfa8e4e3185b6c0869019de246ad72aa",
+    "bytes": 107276,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

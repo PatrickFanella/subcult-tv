@@ -1,0 +1,29 @@
+{
+  "styleId": "d7a73e16-4b3e-4b9d-aef2-2c31a9db7457",
+  "sourceUrl": "https://styles.refero.design/style/d7a73e16-4b3e-4b9d-aef2-2c31a9db7457",
+  "fetchedAt": "2026-10-02T22:23:22.178574+00:00",
+  "extractedAt": "2026-10-02T22:23:22.205148+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SwimClub — Style Reference",
+  "htmlSha256": "9b477f764a78422c16485df9911fdc00c814b7fec93353af2004e1cb7a655116",
+  "cache": ".cache/d7a73e16-4b3e-4b9d-aef2-2c31a9db7457.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "69fbf91ff0b11932d3d07f3eb54dc4f24651e0715562c8b67c476c8ac76ee080",
+      "bytes": 20167,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8ea1601e-a969-42be-a547-db30ce4389ba.jpg",
+    "fetchedAt": "2026-10-02T22:23:24.291687+00:00",
+    "sha256": "1fd7cbb31ca7125fd9d71dfeb8687659e343d63b328750e9c7eb75135fa95162",
+    "bytes": 119778,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

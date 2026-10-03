@@ -1,0 +1,29 @@
+{
+  "styleId": "6d1d19a3-294d-4bad-9f8b-f775cb24b47a",
+  "sourceUrl": "https://styles.refero.design/style/6d1d19a3-294d-4bad-9f8b-f775cb24b47a",
+  "fetchedAt": "2026-10-02T22:30:58.203347+00:00",
+  "extractedAt": "2026-10-02T22:30:58.224138+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "herding.app — Style Reference",
+  "htmlSha256": "3a8af0e82b61b1d9b6071f2dfab5749151095d0ae8d0e43c878f02a508136ece",
+  "cache": ".cache/6d1d19a3-294d-4bad-9f8b-f775cb24b47a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "68ee6f29c31f75ac8933d2cc9c663fe83dd98416aa86600ab9cf8d030df44ad7",
+      "bytes": 17635,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f8024e4c-b12e-46ca-8e38-357e4d4c951d.jpg",
+    "fetchedAt": "2026-10-02T22:31:00.260121+00:00",
+    "sha256": "65ab8808ad823361f91b6a6aa55059db6a1d0bb4191c546e476d7c13329e38f2",
+    "bytes": 79752,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

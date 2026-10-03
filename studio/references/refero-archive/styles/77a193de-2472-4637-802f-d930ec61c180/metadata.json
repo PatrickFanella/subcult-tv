@@ -1,0 +1,29 @@
+{
+  "styleId": "77a193de-2472-4637-802f-d930ec61c180",
+  "sourceUrl": "https://styles.refero.design/style/77a193de-2472-4637-802f-d930ec61c180",
+  "fetchedAt": "2026-10-02T22:18:34.282535+00:00",
+  "extractedAt": "2026-10-02T22:18:34.305004+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Flayks — Style Reference",
+  "htmlSha256": "93ba317af96fd36ffb299db23627f26e2ecc0b633995cc190051b54ac2fd6772",
+  "cache": ".cache/77a193de-2472-4637-802f-d930ec61c180.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8e0e6d859bee3c8f8842f2c71405b1732defb7504593352056edaac7d8a817e0",
+      "bytes": 27191,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/71fdd74a-3bb7-4626-8fb7-c955c368f054.jpg",
+    "fetchedAt": "2026-10-02T22:18:36.278757+00:00",
+    "sha256": "820c9894ce3dadeace8c4ae1417e426fef2bb9f0958e48a60f604088fb066e19",
+    "bytes": 113012,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "45267374-ee40-43d9-8bfe-8d6566ce852d",
+  "sourceUrl": "https://styles.refero.design/style/45267374-ee40-43d9-8bfe-8d6566ce852d",
+  "fetchedAt": "2026-10-02T22:26:38.193147+00:00",
+  "extractedAt": "2026-10-02T22:26:38.215226+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "LE CAMP — Style Reference",
+  "htmlSha256": "7c206c986a463cd922c2fddb026e86fc32176a44e0a12242a834d4e006b9fb30",
+  "cache": ".cache/45267374-ee40-43d9-8bfe-8d6566ce852d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "84119bdbabe3b8eb2d42b914d2a7f99e7a163c206e3a2eddb8ef563339375106",
+      "bytes": 17460,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c231ecf9-325a-4ab2-8b08-c6e4cb38fa3c.jpg",
+    "fetchedAt": "2026-10-02T22:26:40.244971+00:00",
+    "sha256": "477974dfcfdb08492f82628ce69d6879de03e1c6e53e9169f00938523dc2479a",
+    "bytes": 156392,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

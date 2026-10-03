@@ -1,0 +1,29 @@
+{
+  "styleId": "34788d94-1147-4d38-8df7-6f47ef7efb12",
+  "sourceUrl": "https://styles.refero.design/style/34788d94-1147-4d38-8df7-6f47ef7efb12",
+  "fetchedAt": "2026-10-02T22:35:38.249711+00:00",
+  "extractedAt": "2026-10-02T22:35:38.271019+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tracky — Style Reference",
+  "htmlSha256": "ea420739367a00b012a3b49a1b5754ac1fc01756ab5abce9fa6d57d312a835f3",
+  "cache": ".cache/34788d94-1147-4d38-8df7-6f47ef7efb12.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a0ba9c0c94c0896445a716f3ad3e976b1feb13f0358fdf0adaa3117e72ead2b0",
+      "bytes": 21283,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/763b7456-0533-4fa4-80d0-e2e474e2a23d.jpg",
+    "fetchedAt": "2026-10-02T22:35:40.235517+00:00",
+    "sha256": "e3f7c56786a6a6456e27f82e9be12fb8e178dc444e6f7591fe2bdac0bcb07754",
+    "bytes": 93611,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "86a6814d-2485-4fad-b6fd-56c2d0a23620",
+  "sourceUrl": "https://styles.refero.design/style/86a6814d-2485-4fad-b6fd-56c2d0a23620",
+  "fetchedAt": "2026-10-02T22:39:18.251284+00:00",
+  "extractedAt": "2026-10-02T22:39:18.274900+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Square — Style Reference",
+  "htmlSha256": "463bb1e876b0222fa73fe944e31541c2d19ea1e4d1116ebd57c7d864d0e1a14c",
+  "cache": ".cache/86a6814d-2485-4fad-b6fd-56c2d0a23620.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7638eec05dd91a74d6e38d429516a13b0d98ff82dc76710bfee13f96d6bf4b74",
+      "bytes": 20500,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/78a03e76-a7df-47cd-9f4c-a72b58367136.jpg",
+    "fetchedAt": "2026-10-02T22:39:20.316740+00:00",
+    "sha256": "2abb61c6dfc34af9ee9f47af4c8509bdf3e74c1539b03bdc99cca9f7d3c25b32",
+    "bytes": 129580,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

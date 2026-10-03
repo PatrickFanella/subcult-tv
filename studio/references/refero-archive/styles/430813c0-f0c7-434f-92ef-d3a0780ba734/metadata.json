@@ -1,0 +1,29 @@
+{
+  "styleId": "430813c0-f0c7-434f-92ef-d3a0780ba734",
+  "sourceUrl": "https://styles.refero.design/style/430813c0-f0c7-434f-92ef-d3a0780ba734",
+  "fetchedAt": "2026-10-02T22:03:34.220681+00:00",
+  "extractedAt": "2026-10-02T22:03:34.244708+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Woset — Style Reference",
+  "htmlSha256": "08330a832380b477592dfa04a0044b07434b714490d979c7738dc288f1917f42",
+  "cache": ".cache/430813c0-f0c7-434f-92ef-d3a0780ba734.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "11220eee906f32b7ad338619f4c94aa28b8b9d639b7bbc53d4981b284be44628",
+      "bytes": 16829,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a2c26287-930b-429e-9842-897056096cc3.jpg",
+    "fetchedAt": "2026-10-02T22:03:36.255781+00:00",
+    "sha256": "90a959d02dcc1098b015d97fc2587dfa8c7f24244f4a9ec8ca4088537a5dd7fd",
+    "bytes": 116354,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

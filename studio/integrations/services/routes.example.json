@@ -1,0 +1,58 @@
+{
+  "auth.subcult.tv": {
+    "upstream": "http://authelia:9091",
+    "theme": "authelia"
+  },
+  "jellyfin.subcult.tv": {
+    "upstream": "http://JELLYFIN_HOST:8096",
+    "theme": "jellyfin"
+  },
+  "immich.subcult.tv": {
+    "upstream": "http://immich-server:2283",
+    "theme": "immich"
+  },
+  "music.subcult.tv": {
+    "upstream": "http://navidrome:4533",
+    "theme": "navidrome"
+  },
+  "rss.subcult.tv": {
+    "upstream": "http://FRESHRSS_HOST:8082",
+    "theme": "freshrss"
+  },
+  "qbit.subcult.tv": {
+    "upstream": "http://gluetun:8080",
+    "theme": "qbittorrent"
+  },
+  "sonarr.subcult.tv": {
+    "upstream": "http://sonarr:8989",
+    "theme": "sonarr"
+  },
+  "radarr.subcult.tv": {
+    "upstream": "http://radarr:7878",
+    "theme": "radarr"
+  },
+  "lidarr.subcult.tv": {
+    "upstream": "http://lidarr:8686",
+    "theme": "lidarr"
+  },
+  "prowlarr.subcult.tv": {
+    "upstream": "http://prowlarr:9696",
+    "theme": "prowlarr"
+  },
+  "bazarr.subcult.tv": {
+    "upstream": "http://bazarr:6767",
+    "theme": "bazarr"
+  },
+  "whisparr.subcult.tv": {
+    "upstream": "http://whisparr:6969",
+    "theme": "whisparr"
+  },
+  "uptime.subcult.tv": {
+    "upstream": "http://UPTIME_KUMA_HOST:3001",
+    "theme": "uptime-kuma"
+  },
+  "grafana.subcult.tv": {
+    "upstream": "http://GRAFANA_HOST:3000",
+    "theme": "grafana"
+  }
+}

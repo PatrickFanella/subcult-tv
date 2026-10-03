@@ -1,0 +1,29 @@
+{
+  "styleId": "3e70af05-a07f-4c11-98ca-6ecb4765e967",
+  "sourceUrl": "https://styles.refero.design/style/3e70af05-a07f-4c11-98ca-6ecb4765e967",
+  "fetchedAt": "2026-10-02T22:38:42.181539+00:00",
+  "extractedAt": "2026-10-02T22:38:42.202942+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Itsnicethat — Style Reference",
+  "htmlSha256": "70e1061f2cdadb6aa69e951c5e0632d20790b3be6ab7c381b6bf2e2919a7f266",
+  "cache": ".cache/3e70af05-a07f-4c11-98ca-6ecb4765e967.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5878744c105280224b97b3cf90a55dd9572131c55106acbfcc6ebeba66e848c0",
+      "bytes": 22980,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0c76948a-84d0-4305-805d-dbe55cd0d314.jpg",
+    "fetchedAt": "2026-10-02T22:38:44.363653+00:00",
+    "sha256": "b70a9f667485dc89738273212721be422efaf5271e50fcdb9fc76a6fc2058959",
+    "bytes": 140791,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

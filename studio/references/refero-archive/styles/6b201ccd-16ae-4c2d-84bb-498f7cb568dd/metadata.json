@@ -1,0 +1,29 @@
+{
+  "styleId": "6b201ccd-16ae-4c2d-84bb-498f7cb568dd",
+  "sourceUrl": "https://styles.refero.design/style/6b201ccd-16ae-4c2d-84bb-498f7cb568dd",
+  "fetchedAt": "2026-10-02T22:02:18.471010+00:00",
+  "extractedAt": "2026-10-02T22:02:18.506821+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "The Leap — Style Reference",
+  "htmlSha256": "a188855f244a57ba1a7daa93a6165c184f3fa1997546e17ad8e26a184c927769",
+  "cache": ".cache/6b201ccd-16ae-4c2d-84bb-498f7cb568dd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bea6e33a1c67ba3c1a93ae3c0566d71241a7d005df96d6402adb39652cff083d",
+      "bytes": 20940,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/82232fec-4e26-464a-9282-6da1f5d3a68e.jpg",
+    "fetchedAt": "2026-10-02T22:02:20.313525+00:00",
+    "sha256": "979fb9835e01625666301181161274f91947b437fa0bb72c1f8faa766c3ca35b",
+    "bytes": 106698,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

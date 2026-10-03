@@ -1,0 +1,29 @@
+{
+  "styleId": "cd31ecdb-297a-4fc5-a727-05f835ff917f",
+  "sourceUrl": "https://styles.refero.design/style/cd31ecdb-297a-4fc5-a727-05f835ff917f",
+  "fetchedAt": "2026-10-02T22:02:30.323998+00:00",
+  "extractedAt": "2026-10-02T22:02:30.350670+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Compound — Style Reference",
+  "htmlSha256": "92fd6453998970a2f52af93e59c14e3f4cc27697ed8ee19a48d77d33aed6cb1c",
+  "cache": ".cache/cd31ecdb-297a-4fc5-a727-05f835ff917f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "006522291ef775c4a09bbd997858bb91b921df109cf00b3d3097f11d82662073",
+      "bytes": 19590,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0377e155-4bec-4047-a902-070a650089d4.jpg",
+    "fetchedAt": "2026-10-02T22:02:32.165657+00:00",
+    "sha256": "71fb2b0482695aeed753b20f0a5058e3f428b06732a917184c92944b49b3398a",
+    "bytes": 67480,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

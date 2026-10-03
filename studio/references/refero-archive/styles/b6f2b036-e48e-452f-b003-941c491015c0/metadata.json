@@ -1,0 +1,29 @@
+{
+  "styleId": "b6f2b036-e48e-452f-b003-941c491015c0",
+  "sourceUrl": "https://styles.refero.design/style/b6f2b036-e48e-452f-b003-941c491015c0",
+  "fetchedAt": "2026-10-02T22:54:06.330872+00:00",
+  "extractedAt": "2026-10-02T22:54:06.354924+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Liquid Death — Style Reference",
+  "htmlSha256": "0ee97d6e6cfe2d05a778e3362f6c6a7f74cba4766e23c85e3049275eec1e78c6",
+  "cache": ".cache/b6f2b036-e48e-452f-b003-941c491015c0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8b78d53055175dedbc30c6a042e52e17f8a65114639cadc02d7e80d0ad19e9fd",
+      "bytes": 13497,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ad4cf416-8d82-4e79-91df-2d5a2120767c.jpg",
+    "fetchedAt": "2026-10-02T22:54:08.265740+00:00",
+    "sha256": "48207d511800b75b1e70b403e4403e0e66f17b66f5caefa14dcd18481b117b50",
+    "bytes": 112129,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

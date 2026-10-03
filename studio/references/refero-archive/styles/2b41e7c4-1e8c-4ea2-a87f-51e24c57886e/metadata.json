@@ -1,0 +1,29 @@
+{
+  "styleId": "2b41e7c4-1e8c-4ea2-a87f-51e24c57886e",
+  "sourceUrl": "https://styles.refero.design/style/2b41e7c4-1e8c-4ea2-a87f-51e24c57886e",
+  "fetchedAt": "2026-10-02T22:12:34.172105+00:00",
+  "extractedAt": "2026-10-02T22:12:34.194973+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dropbox.com — Style Reference",
+  "htmlSha256": "7a6757f8fe72b30da451e5877c5fb9b74680e7cf6e019c7cbcf46c5da35e80d0",
+  "cache": ".cache/2b41e7c4-1e8c-4ea2-a87f-51e24c57886e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ca7781932d340098b29b3ed768f298815e23407a596a08458367ca4da3393226",
+      "bytes": 17132,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d025a1fa-43bc-46ee-a75c-dc4d12e43550.jpg",
+    "fetchedAt": "2026-10-02T22:12:36.224561+00:00",
+    "sha256": "a6bfef76c24dac71f43044fb746dfcb60480ed2c67b4d5205e16475b01942ff2",
+    "bytes": 92174,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

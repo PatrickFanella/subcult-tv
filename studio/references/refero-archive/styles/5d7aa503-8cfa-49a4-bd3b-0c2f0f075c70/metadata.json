@@ -1,0 +1,29 @@
+{
+  "styleId": "5d7aa503-8cfa-49a4-bd3b-0c2f0f075c70",
+  "sourceUrl": "https://styles.refero.design/style/5d7aa503-8cfa-49a4-bd3b-0c2f0f075c70",
+  "fetchedAt": "2026-10-02T22:54:50.222785+00:00",
+  "extractedAt": "2026-10-02T22:54:50.246041+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cal.com — Style Reference",
+  "htmlSha256": "2f1d2e55af706479bcbfb235da46ecb875262fa6c02c15e401979c489a03cb0f",
+  "cache": ".cache/5d7aa503-8cfa-49a4-bd3b-0c2f0f075c70.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1d8132835df4055d2ea1f725ae7f1d4792e5053906b4ac67aa6f81aea1e27cff",
+      "bytes": 18402,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/06841daf-e772-401f-a279-55bee6bba68b.jpg",
+    "fetchedAt": "2026-10-02T22:54:52.292003+00:00",
+    "sha256": "58a1db04d9b74aa5bf4e00b6acd4cd853093733838711384d94345568773e5ac",
+    "bytes": 101314,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

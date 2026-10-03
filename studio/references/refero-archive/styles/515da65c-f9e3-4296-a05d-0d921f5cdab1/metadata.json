@@ -1,0 +1,29 @@
+{
+  "styleId": "515da65c-f9e3-4296-a05d-0d921f5cdab1",
+  "sourceUrl": "https://styles.refero.design/style/515da65c-f9e3-4296-a05d-0d921f5cdab1",
+  "fetchedAt": "2026-10-02T22:01:26.193967+00:00",
+  "extractedAt": "2026-10-02T22:01:26.235946+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Leandra-isler — Style Reference",
+  "htmlSha256": "d942ce196c74675c50db6f3c1ef5a5c20ef0796ba2cba5d418011ed157ae88ee",
+  "cache": ".cache/515da65c-f9e3-4296-a05d-0d921f5cdab1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f73f407cfc4f6e6fd58f0d5af375ee10f794d7ab8dcd9cabd3f7bb798c4e27c1",
+      "bytes": 19153,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5cc6d14c-86f2-4e8f-a589-6c683ce14d18.jpg",
+    "fetchedAt": "2026-10-02T22:01:28.293660+00:00",
+    "sha256": "7711317152285b533c179a640d639fa7be71dc8e173a586f265906784895eeed",
+    "bytes": 99967,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

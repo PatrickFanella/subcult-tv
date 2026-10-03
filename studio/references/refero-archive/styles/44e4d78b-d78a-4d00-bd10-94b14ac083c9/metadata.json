@@ -1,0 +1,29 @@
+{
+  "styleId": "44e4d78b-d78a-4d00-bd10-94b14ac083c9",
+  "sourceUrl": "https://styles.refero.design/style/44e4d78b-d78a-4d00-bd10-94b14ac083c9",
+  "fetchedAt": "2026-10-02T22:36:38.348090+00:00",
+  "extractedAt": "2026-10-02T22:36:38.370562+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Made With Gsap — Style Reference",
+  "htmlSha256": "27deb425887f25795c630551b6fbfa1883cfdd7990b22800d7cdde9a9a6f2788",
+  "cache": ".cache/44e4d78b-d78a-4d00-bd10-94b14ac083c9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0b95d8a024e8bb668e17fa82bfad76d00ab713134803a086c6cf05b9498faa61",
+      "bytes": 19256,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/78d0926a-30a8-448d-800f-946df02665c9.jpg",
+    "fetchedAt": "2026-10-02T22:36:41.676886+00:00",
+    "sha256": "4e70a793ec345e6a6ee530ff131e23ddc2e9ed206d9c85bf0b967f3bb97ccb54",
+    "bytes": 115816,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

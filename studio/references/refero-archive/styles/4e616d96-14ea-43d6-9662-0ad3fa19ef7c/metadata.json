@@ -1,0 +1,29 @@
+{
+  "styleId": "4e616d96-14ea-43d6-9662-0ad3fa19ef7c",
+  "sourceUrl": "https://styles.refero.design/style/4e616d96-14ea-43d6-9662-0ad3fa19ef7c",
+  "fetchedAt": "2026-10-02T22:25:42.169399+00:00",
+  "extractedAt": "2026-10-02T22:25:42.189531+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "How Many Plants — Style Reference",
+  "htmlSha256": "b3983c30197d6a703b0d3ce6f779dc3f39b9a47d5f88e0cf6a7ba8c3ec08183e",
+  "cache": ".cache/4e616d96-14ea-43d6-9662-0ad3fa19ef7c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5c060a272a80323d07eb073360b41229a30c59fee4e8be10810ad4e66aafde35",
+      "bytes": 17946,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1ff99d3f-6938-4808-bb08-c736c251f5c6.jpg",
+    "fetchedAt": "2026-10-02T22:25:44.234910+00:00",
+    "sha256": "30fdd8b1e1eecd00111b37700344873f94bfe4d2f594b42fac33ca17d7155717",
+    "bytes": 203445,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

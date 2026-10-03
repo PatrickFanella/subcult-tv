@@ -1,0 +1,29 @@
+{
+  "styleId": "62e8e59e-17a5-4eba-a6c6-1c7f67ded518",
+  "sourceUrl": "https://styles.refero.design/style/62e8e59e-17a5-4eba-a6c6-1c7f67ded518",
+  "fetchedAt": "2026-10-02T22:48:02.348600+00:00",
+  "extractedAt": "2026-10-02T22:48:02.373469+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Inngest — Style Reference",
+  "htmlSha256": "0c865f89a246d6a30ae5a3cb606070ba6b9238a9bb01ffdfb8c8b3a99cc21e1c",
+  "cache": ".cache/62e8e59e-17a5-4eba-a6c6-1c7f67ded518.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "15404726cf64aa7b6635ea3e83bd607d581313569237f2f2e540d835d2f1a2fb",
+      "bytes": 24151,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0d28a682-3008-4ed6-8c4e-469ce92e467d.jpg",
+    "fetchedAt": "2026-10-02T22:48:04.277439+00:00",
+    "sha256": "96137c830b2d18438cf9a31d26fcac88ca445ad9d894e8be0b8a529c7933a2e0",
+    "bytes": 103779,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

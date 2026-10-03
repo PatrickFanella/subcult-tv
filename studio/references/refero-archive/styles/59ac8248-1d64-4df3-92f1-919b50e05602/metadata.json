@@ -1,0 +1,29 @@
+{
+  "styleId": "59ac8248-1d64-4df3-92f1-919b50e05602",
+  "sourceUrl": "https://styles.refero.design/style/59ac8248-1d64-4df3-92f1-919b50e05602",
+  "fetchedAt": "2026-10-02T22:40:46.430288+00:00",
+  "extractedAt": "2026-10-02T22:40:46.456740+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bento — Style Reference",
+  "htmlSha256": "79e21465231481abc365629dfccfbb680558de0a3c710ee3f1ec2ed601674229",
+  "cache": ".cache/59ac8248-1d64-4df3-92f1-919b50e05602.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bca1692faf6d839c7d27cca5c9bb1dee25f3e8199d4e87fa970f5bf9b4114b7e",
+      "bytes": 25025,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2014b867-7ff5-4c94-a118-c0da53b9124d.jpg",
+    "fetchedAt": "2026-10-02T22:40:48.244101+00:00",
+    "sha256": "c14c7b8bae6ede498c49afc8a6a2b160bda93baa4e0e4cf35b2d38616416a5d4",
+    "bytes": 140902,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "0b9da6ef-bec5-4073-90af-66c67e72f2a4",
+  "sourceUrl": "https://styles.refero.design/style/0b9da6ef-bec5-4073-90af-66c67e72f2a4",
+  "fetchedAt": "2026-10-02T22:33:26.192866+00:00",
+  "extractedAt": "2026-10-02T22:33:26.219601+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Isla Beauty — Style Reference",
+  "htmlSha256": "7737d4cc2858cb8c62090673d56159bb636fb5fb515e78d257d5bfa2015f86fa",
+  "cache": ".cache/0b9da6ef-bec5-4073-90af-66c67e72f2a4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8fee625198fcb03c4a784d429dd2a0ec58620f736dbbf1186467d657da16201e",
+      "bytes": 23400,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3bea5c8e-9a7a-49a9-9bce-d350e7877059.jpg",
+    "fetchedAt": "2026-10-02T22:33:28.315200+00:00",
+    "sha256": "bf47d58647866beb5581aa62b648bf5aad07f06aeaddfcd64f922c9218b16f2f",
+    "bytes": 151291,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

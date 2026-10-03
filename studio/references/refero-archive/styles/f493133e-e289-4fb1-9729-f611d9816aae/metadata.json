@@ -1,0 +1,29 @@
+{
+  "styleId": "f493133e-e289-4fb1-9729-f611d9816aae",
+  "sourceUrl": "https://styles.refero.design/style/f493133e-e289-4fb1-9729-f611d9816aae",
+  "fetchedAt": "2026-10-02T22:34:58.208379+00:00",
+  "extractedAt": "2026-10-02T22:34:58.231562+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Solana — Style Reference",
+  "htmlSha256": "5501a124889a2a1118b008727b5b644c35db20a7f859c15ada1be902d21fa52d",
+  "cache": ".cache/f493133e-e289-4fb1-9729-f611d9816aae.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2ea31bc0dd12f4e3e5e8521393f54428320cb71e7556558c84d1b20d3615fb12",
+      "bytes": 21668,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3182a67e-0d7f-4fa7-a739-129b5a7755dd.jpg",
+    "fetchedAt": "2026-10-02T22:35:00.369908+00:00",
+    "sha256": "4dea9565c1814d2f74e8db58c814ddde4d7d27603699a938202e32d7d7559303",
+    "bytes": 103547,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

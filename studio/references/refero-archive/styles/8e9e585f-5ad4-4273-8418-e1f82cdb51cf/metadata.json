@@ -1,0 +1,29 @@
+{
+  "styleId": "8e9e585f-5ad4-4273-8418-e1f82cdb51cf",
+  "sourceUrl": "https://styles.refero.design/style/8e9e585f-5ad4-4273-8418-e1f82cdb51cf",
+  "fetchedAt": "2026-10-02T22:28:30.239839+00:00",
+  "extractedAt": "2026-10-02T22:28:30.270155+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Prisma — Style Reference",
+  "htmlSha256": "e040a013314e0df3f7609840f19322a068d6da832d50397f609cb6992e1552bf",
+  "cache": ".cache/8e9e585f-5ad4-4273-8418-e1f82cdb51cf.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "59fd5d49cc3d5e572e5ee165f823f10cfd0ab6c9af17e3c19f32b0190f8fbef7",
+      "bytes": 24332,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ad15abc2-cc42-481c-a221-4d3ebd8f5615.jpg",
+    "fetchedAt": "2026-10-02T22:28:32.214607+00:00",
+    "sha256": "c5c7dd6b6a4b98abe8a0ce73767a2722b625a5be2703e970727ad243ec634081",
+    "bytes": 103606,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

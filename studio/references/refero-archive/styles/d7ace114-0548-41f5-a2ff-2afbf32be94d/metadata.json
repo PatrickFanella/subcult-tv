@@ -1,0 +1,29 @@
+{
+  "styleId": "d7ace114-0548-41f5-a2ff-2afbf32be94d",
+  "sourceUrl": "https://styles.refero.design/style/d7ace114-0548-41f5-a2ff-2afbf32be94d",
+  "fetchedAt": "2026-10-02T22:07:34.170639+00:00",
+  "extractedAt": "2026-10-02T22:07:34.195834+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Nike.com — Style Reference",
+  "htmlSha256": "5ba34a204c2adf9ea7157cb5d0d40fcd486314d70334e7c2413d38e7491d8e10",
+  "cache": ".cache/d7ace114-0548-41f5-a2ff-2afbf32be94d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9d3cd348c60474b5bdae1e54c385ed6ef19e7c8da3fcd02e389a6f310e3bcf62",
+      "bytes": 20990,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/beac7e78-27d8-4a53-9534-168b2e229bd4.jpg",
+    "fetchedAt": "2026-10-02T22:07:36.230675+00:00",
+    "sha256": "41e385f48e119f1cf43614c94f2a9db2cf5e326ac0c1c25dce5ff6d6fffba7f0",
+    "bytes": 106661,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

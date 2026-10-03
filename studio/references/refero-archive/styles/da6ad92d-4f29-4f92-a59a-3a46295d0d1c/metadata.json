@@ -1,0 +1,29 @@
+{
+  "styleId": "da6ad92d-4f29-4f92-a59a-3a46295d0d1c",
+  "sourceUrl": "https://styles.refero.design/style/da6ad92d-4f29-4f92-a59a-3a46295d0d1c",
+  "fetchedAt": "2026-10-02T22:49:38.282213+00:00",
+  "extractedAt": "2026-10-02T22:49:38.305107+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fingerprint — Style Reference",
+  "htmlSha256": "c28241c29bdec78bde5c2700d4467cd3949309e0c3483e4a01655e7c619d7449",
+  "cache": ".cache/da6ad92d-4f29-4f92-a59a-3a46295d0d1c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cff21978e48c7dbd1e0e7b9eb831cfa8d616767a50ce57734fa85f8978cc9857",
+      "bytes": 24880,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bc553560-74b0-4de0-879f-8b5b1cceeaad.jpg",
+    "fetchedAt": "2026-10-02T22:49:40.188717+00:00",
+    "sha256": "7e2c2385bd39f33957672451977684c8fcc3d2f8694a87d3050861284ae33f10",
+    "bytes": 81606,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

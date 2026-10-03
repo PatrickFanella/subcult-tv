@@ -1,0 +1,29 @@
+{
+  "styleId": "f6b396e6-0ad6-402e-9ab9-0034df0d204d",
+  "sourceUrl": "https://styles.refero.design/style/f6b396e6-0ad6-402e-9ab9-0034df0d204d",
+  "fetchedAt": "2026-10-02T22:45:18.282545+00:00",
+  "extractedAt": "2026-10-02T22:45:18.305179+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "San Rita — Style Reference",
+  "htmlSha256": "7ecd1929dbbb1e24983c39fff252b38502d988a375bb66a6f907e14507be3522",
+  "cache": ".cache/f6b396e6-0ad6-402e-9ab9-0034df0d204d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f6be9888046737f6ae44ef05275aab95471a622759f1d5d03b6918519eceadad",
+      "bytes": 17917,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7be7ac0b-474e-4edb-9fbe-479a1aec3bc7.jpg",
+    "fetchedAt": "2026-10-02T22:45:20.184631+00:00",
+    "sha256": "68c63d75d919e338319f20b56f891d0ea8dc5214376f0ea93d80b1bfacd59527",
+    "bytes": 36485,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

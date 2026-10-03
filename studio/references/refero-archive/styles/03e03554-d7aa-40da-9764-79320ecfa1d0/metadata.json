@@ -1,0 +1,29 @@
+{
+  "styleId": "03e03554-d7aa-40da-9764-79320ecfa1d0",
+  "sourceUrl": "https://styles.refero.design/style/03e03554-d7aa-40da-9764-79320ecfa1d0",
+  "fetchedAt": "2026-10-02T22:33:18.231214+00:00",
+  "extractedAt": "2026-10-02T22:33:18.252275+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "OHZI Interactive Studio / Dive into digital magic. — Style Reference",
+  "htmlSha256": "dae071a4c1b246ca7bd88d98905f9fa37ba1e984322cb14e7b90cbaaf5b3ec8c",
+  "cache": ".cache/03e03554-d7aa-40da-9764-79320ecfa1d0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6f5598feb64074f1ec7a7979de342066a987b41b67b4fc8a5379a91b0a3fb282",
+      "bytes": 15128,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e8ad18d2-6f55-486d-ae91-6d5368b7e7eb.jpg",
+    "fetchedAt": "2026-10-02T22:33:20.121306+00:00",
+    "sha256": "89e4e31fe55992733134a02b67d2fbdcca4d77412d2ad3fbd2a0a71f99f5b3e0",
+    "bytes": 61611,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

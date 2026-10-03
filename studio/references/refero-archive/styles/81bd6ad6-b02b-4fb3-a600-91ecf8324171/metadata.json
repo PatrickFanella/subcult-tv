@@ -1,0 +1,29 @@
+{
+  "styleId": "81bd6ad6-b02b-4fb3-a600-91ecf8324171",
+  "sourceUrl": "https://styles.refero.design/style/81bd6ad6-b02b-4fb3-a600-91ecf8324171",
+  "fetchedAt": "2026-10-02T22:45:22.237977+00:00",
+  "extractedAt": "2026-10-02T22:45:22.265021+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "August Health EHR — Style Reference",
+  "htmlSha256": "5d07f48f971879b03c5466b861f7a65240d65f63143c51e32f56cd3bd23de7d7",
+  "cache": ".cache/81bd6ad6-b02b-4fb3-a600-91ecf8324171.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c6e16065d136520a4384b2c045337e44ceaca5ffc4efde02d84c6f2e9f12f3e3",
+      "bytes": 23246,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ae3532dc-2495-44cc-813a-551206880db6.jpg",
+    "fetchedAt": "2026-10-02T22:45:24.266640+00:00",
+    "sha256": "cbc9d60a0c62b96db675084fa85e305a22b76f7eda17e4ed792f700da5eab552",
+    "bytes": 127039,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

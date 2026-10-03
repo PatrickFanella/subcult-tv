@@ -1,0 +1,29 @@
+{
+  "styleId": "a865ac1d-a4c2-425b-90db-2a7ec6d461a3",
+  "sourceUrl": "https://styles.refero.design/style/a865ac1d-a4c2-425b-90db-2a7ec6d461a3",
+  "fetchedAt": "2026-10-02T22:40:38.169793+00:00",
+  "extractedAt": "2026-10-02T22:40:38.190674+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Superlocal — Style Reference",
+  "htmlSha256": "49f12b666d6e242bb23275ee5f15dccb8336ccb1068a38e7c51fb2ff33fec22c",
+  "cache": ".cache/a865ac1d-a4c2-425b-90db-2a7ec6d461a3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "eb4bf9f3c268b1e6a194af51429e9c9fc169cdd941db6b46a4e6be3308e5ed06",
+      "bytes": 21346,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/12a3debd-20d5-4798-9864-0ae8cc52f4ae.jpg",
+    "fetchedAt": "2026-10-02T22:40:40.280317+00:00",
+    "sha256": "7d07161348ee5c2b680eab77e61a0dfbd59be5d092164fec2d329a3afac04b6f",
+    "bytes": 134180,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

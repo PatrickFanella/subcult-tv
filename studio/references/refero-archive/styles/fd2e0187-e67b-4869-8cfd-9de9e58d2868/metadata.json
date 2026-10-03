@@ -1,0 +1,29 @@
+{
+  "styleId": "fd2e0187-e67b-4869-8cfd-9de9e58d2868",
+  "sourceUrl": "https://styles.refero.design/style/fd2e0187-e67b-4869-8cfd-9de9e58d2868",
+  "fetchedAt": "2026-10-02T22:35:42.241583+00:00",
+  "extractedAt": "2026-10-02T22:35:42.266202+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Eclipse — Style Reference",
+  "htmlSha256": "2f2fb4371992f121ab276dab1b3afb70e6788be18eb7d8d254607bc147b0395a",
+  "cache": ".cache/fd2e0187-e67b-4869-8cfd-9de9e58d2868.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e0a8e265bf49c8c41ca0770796a093b8afe6bfc060ed0d2901bd109ebe9d217b",
+      "bytes": 19695,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4acd6578-3127-48d2-88d2-6caea5f3dfe8.jpg",
+    "fetchedAt": "2026-10-02T22:35:44.273916+00:00",
+    "sha256": "e71ddca2787c08a7d51f5e0186ddf9af27265aae8ac89a930daa7d53318da597",
+    "bytes": 108230,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

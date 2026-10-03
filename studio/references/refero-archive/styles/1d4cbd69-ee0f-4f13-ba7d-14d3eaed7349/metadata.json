@@ -1,0 +1,29 @@
+{
+  "styleId": "1d4cbd69-ee0f-4f13-ba7d-14d3eaed7349",
+  "sourceUrl": "https://styles.refero.design/style/1d4cbd69-ee0f-4f13-ba7d-14d3eaed7349",
+  "fetchedAt": "2026-10-02T22:33:22.204231+00:00",
+  "extractedAt": "2026-10-02T22:33:22.227955+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Morphic — Style Reference",
+  "htmlSha256": "dcc86a7c682617a0cc8a5de2edf7a66c1e077c96ce26044a9aa974b83d43e880",
+  "cache": ".cache/1d4cbd69-ee0f-4f13-ba7d-14d3eaed7349.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4636e672920b8c1664713b33d3e975902df3bf7f64b3367be0c0575194b8cc37",
+      "bytes": 23205,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fc383f65-6a1d-4df1-b35f-8e62317be79a.jpg",
+    "fetchedAt": "2026-10-02T22:33:24.256816+00:00",
+    "sha256": "a453ff3837b4bd1a58b08e0df5c620cd8b1444432dde14bf0a9403047f23b79a",
+    "bytes": 134816,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

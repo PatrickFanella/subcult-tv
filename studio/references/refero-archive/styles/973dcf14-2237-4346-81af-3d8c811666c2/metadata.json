@@ -1,0 +1,29 @@
+{
+  "styleId": "973dcf14-2237-4346-81af-3d8c811666c2",
+  "sourceUrl": "https://styles.refero.design/style/973dcf14-2237-4346-81af-3d8c811666c2",
+  "fetchedAt": "2026-10-02T22:41:10.254305+00:00",
+  "extractedAt": "2026-10-02T22:41:10.278032+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Deno — Style Reference",
+  "htmlSha256": "c1aefc25bf3a4d57884fcfe46f73fadd905c1f890b13a5ff891118cea2fb2d49",
+  "cache": ".cache/973dcf14-2237-4346-81af-3d8c811666c2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1f7b7f46703c63b2ea65ba495880e0d4e7facb43605a5d848cfbce54bac52a02",
+      "bytes": 22982,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0da1bfef-8350-4f71-82d3-86213b68a83d.jpg",
+    "fetchedAt": "2026-10-02T22:41:12.250756+00:00",
+    "sha256": "5d43b856e5eb2892daf1e084aeb962f632d487998bdaa5ab230e660080c192c9",
+    "bytes": 99788,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

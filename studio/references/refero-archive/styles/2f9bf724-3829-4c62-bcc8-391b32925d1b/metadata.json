@@ -1,0 +1,29 @@
+{
+  "styleId": "2f9bf724-3829-4c62-bcc8-391b32925d1b",
+  "sourceUrl": "https://styles.refero.design/style/2f9bf724-3829-4c62-bcc8-391b32925d1b",
+  "fetchedAt": "2026-10-02T22:15:10.186199+00:00",
+  "extractedAt": "2026-10-02T22:15:10.211669+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Allfeat — Style Reference",
+  "htmlSha256": "8ce5d412707c4f29ba8ce6f8c6234637472d42ab6b539709310009846cea355b",
+  "cache": ".cache/2f9bf724-3829-4c62-bcc8-391b32925d1b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "340464ec6dd227dda5d6a0822cf7206d61456b9301afb93450f5afefc74a7d5f",
+      "bytes": 18672,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a8e06c89-c16e-4652-9b14-98441a63014e.jpg",
+    "fetchedAt": "2026-10-02T22:15:12.250802+00:00",
+    "sha256": "6e490a93e7ff1b63dc6773f9546370d89c2b163dc05410ea5c204aa5899834c7",
+    "bytes": 132424,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "d018e81d-6bb6-4445-86d7-39fd6be7e74d",
+  "sourceUrl": "https://styles.refero.design/style/d018e81d-6bb6-4445-86d7-39fd6be7e74d",
+  "fetchedAt": "2026-10-02T22:47:38.208842+00:00",
+  "extractedAt": "2026-10-02T22:47:38.231974+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Huly — Style Reference",
+  "htmlSha256": "71156d5e68a06a2375285101f637969e71c85a79fa5605d54a4a11a8d70cb4a1",
+  "cache": ".cache/d018e81d-6bb6-4445-86d7-39fd6be7e74d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "348910994e11875e592f6ac7183f684385e57d30d0353936d983185816f53f66",
+      "bytes": 21353,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4b579f92-8ca1-45d3-8760-7141e0ddf333.jpg",
+    "fetchedAt": "2026-10-02T22:47:40.279292+00:00",
+    "sha256": "cbb25a6bdeca4452bb319a2f2c90e9e382ac998cbe54b7f6f8499125ece41bd9",
+    "bytes": 105978,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

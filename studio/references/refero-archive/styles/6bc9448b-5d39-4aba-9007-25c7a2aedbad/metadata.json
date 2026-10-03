@@ -1,0 +1,29 @@
+{
+  "styleId": "6bc9448b-5d39-4aba-9007-25c7a2aedbad",
+  "sourceUrl": "https://styles.refero.design/style/6bc9448b-5d39-4aba-9007-25c7a2aedbad",
+  "fetchedAt": "2026-10-02T22:12:58.288056+00:00",
+  "extractedAt": "2026-10-02T22:12:58.314049+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Relate dot App — Style Reference",
+  "htmlSha256": "3f854844a36173119e7deed5ec716317e68b89c3ce19d17da3a9ba5ccbe9a2cd",
+  "cache": ".cache/6bc9448b-5d39-4aba-9007-25c7a2aedbad.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6884114dadcbe3f2d9340beed3c9fbd3462cfc5b3f1d541d995a610582e1ae64",
+      "bytes": 21253,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b88128ed-ebb1-4898-bc1b-c288418bdad9.jpg",
+    "fetchedAt": "2026-10-02T22:13:00.194139+00:00",
+    "sha256": "6f7045a4e7c1ab27e03e0a5de7321ce8056bdc892914a9b75397c43e0c69dcef",
+    "bytes": 221590,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

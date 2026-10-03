@@ -1,0 +1,29 @@
+{
+  "styleId": "ed10ae04-24ec-4e42-9bf2-ea12a4b58d67",
+  "sourceUrl": "https://styles.refero.design/style/ed10ae04-24ec-4e42-9bf2-ea12a4b58d67",
+  "fetchedAt": "2026-10-02T22:55:14.500262+00:00",
+  "extractedAt": "2026-10-02T22:55:14.522064+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Clerk — Style Reference",
+  "htmlSha256": "cabe172a7b30bbf4530dc5cf4c1dbfa13c2b420cad141215559c7d7b111bc466",
+  "cache": ".cache/ed10ae04-24ec-4e42-9bf2-ea12a4b58d67.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5e22ffab43c0f20df9068d6ec10d920583a983b53fa0984834e8605c80a24d0e",
+      "bytes": 31001,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7832bdaf-5b46-44c5-b245-01a6fe8cb335.jpg",
+    "fetchedAt": "2026-10-02T22:55:16.359867+00:00",
+    "sha256": "eed012beefd635556bb480dffdfc361056e45c0cc25dca5dd3ffc086fb0b4e59",
+    "bytes": 96349,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

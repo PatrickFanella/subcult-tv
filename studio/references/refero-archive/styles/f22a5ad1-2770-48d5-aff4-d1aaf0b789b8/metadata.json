@@ -1,0 +1,29 @@
+{
+  "styleId": "f22a5ad1-2770-48d5-aff4-d1aaf0b789b8",
+  "sourceUrl": "https://styles.refero.design/style/f22a5ad1-2770-48d5-aff4-d1aaf0b789b8",
+  "fetchedAt": "2026-10-02T22:24:06.178723+00:00",
+  "extractedAt": "2026-10-02T22:24:06.208666+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "70Materia — Style Reference",
+  "htmlSha256": "f7de2a25d668c9a3596bbecd6526e18aed33279647c84b119d130307e18e89fb",
+  "cache": ".cache/f22a5ad1-2770-48d5-aff4-d1aaf0b789b8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d827641c08db909772161208f98d35b92e96f1e48ae2b04f31395e018dd561b6",
+      "bytes": 16202,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/dd715119-369c-4e8a-b688-ea46aeadcb8d.jpg",
+    "fetchedAt": "2026-10-02T22:24:09.940046+00:00",
+    "sha256": "ff34d56b40797b2c60e098b85cdcbe6c5eeb7932e067771f07443c92a0f5f052",
+    "bytes": 52904,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "063be10d-593d-4c81-a99e-a7543737b9db",
+  "sourceUrl": "https://styles.refero.design/style/063be10d-593d-4c81-a99e-a7543737b9db",
+  "fetchedAt": "2026-10-02T22:49:42.216691+00:00",
+  "extractedAt": "2026-10-02T22:49:42.238861+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "OpenServ — Style Reference",
+  "htmlSha256": "c886af3ba81ade9f56651692df441a92591ab75eccc7e58c36831184a4b27af0",
+  "cache": ".cache/063be10d-593d-4c81-a99e-a7543737b9db.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "84310eb2d3259b7ec445e5f630be45fb212e58e62132f174412240017ddc9e80",
+      "bytes": 20583,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/18ad5e86-f649-42c5-b05e-8819341b43bd.jpg",
+    "fetchedAt": "2026-10-02T22:49:44.146110+00:00",
+    "sha256": "b35d9a12818301a8e14c7eb172a48acdf529ed8b1f66f97a437d825f1554d3a8",
+    "bytes": 38467,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

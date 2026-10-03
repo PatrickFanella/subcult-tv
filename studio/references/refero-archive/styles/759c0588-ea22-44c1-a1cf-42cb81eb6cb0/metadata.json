@@ -1,0 +1,29 @@
+{
+  "styleId": "759c0588-ea22-44c1-a1cf-42cb81eb6cb0",
+  "sourceUrl": "https://styles.refero.design/style/759c0588-ea22-44c1-a1cf-42cb81eb6cb0",
+  "fetchedAt": "2026-10-02T22:31:18.308999+00:00",
+  "extractedAt": "2026-10-02T22:31:18.331423+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "VSCO® — Style Reference",
+  "htmlSha256": "7136ef31ee2b7daad7ae42bc21c60291869f85493bd419ac7af0d9ede6521b78",
+  "cache": ".cache/759c0588-ea22-44c1-a1cf-42cb81eb6cb0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "22ae0ae39287921a71296b83ebd80555e2b80446aee85d2c32123007eceda851",
+      "bytes": 18940,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/92cd87e9-2766-4765-9c7d-7701ccc5e298.jpg",
+    "fetchedAt": "2026-10-02T22:31:20.275150+00:00",
+    "sha256": "27531a799ed42c3bd0352f2243b220ce7cb76411849d31181d8e0f49fdca2cca",
+    "bytes": 141596,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

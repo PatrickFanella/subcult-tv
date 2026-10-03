@@ -1,0 +1,29 @@
+{
+  "styleId": "cb266ff9-f168-4a42-a522-f0e84508f90f",
+  "sourceUrl": "https://styles.refero.design/style/cb266ff9-f168-4a42-a522-f0e84508f90f",
+  "fetchedAt": "2026-10-02T22:07:26.438392+00:00",
+  "extractedAt": "2026-10-02T22:07:26.465473+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Desktop.fm — Style Reference",
+  "htmlSha256": "6383526a8b4e2a1dccad5064d84e28b3a790989ee4dec806d4de2590d8d2c371",
+  "cache": ".cache/cb266ff9-f168-4a42-a522-f0e84508f90f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5496e8abdd5df29a8279b9f06e81807bf7cfb43ac8a3f6ba1dc348f93924e549",
+      "bytes": 15899,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/39100670-cd23-49fc-a6a1-1ae9c4d8132b.jpg",
+    "fetchedAt": "2026-10-02T22:07:28.147544+00:00",
+    "sha256": "153b0ef3b0e795f3d347d2ba2d0b77281ddb3af6275d122e7d15961aa924c873",
+    "bytes": 36958,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "5d9e1cc2-4b81-40fe-aa92-640f2e1d7420",
+  "sourceUrl": "https://styles.refero.design/style/5d9e1cc2-4b81-40fe-aa92-640f2e1d7420",
+  "fetchedAt": "2026-10-02T22:36:30.283960+00:00",
+  "extractedAt": "2026-10-02T22:36:30.307694+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Decide AI — Style Reference",
+  "htmlSha256": "d9507516ed6629daafe1141616421489c91821ef0fc47893e8a6dbe102414494",
+  "cache": ".cache/5d9e1cc2-4b81-40fe-aa92-640f2e1d7420.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8ba6f163a98433b6531d5095cefbe1825e3bd8c52f250e98bf88a8c083e06826",
+      "bytes": 16808,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/46c61320-eacd-4d31-8de5-cb2ad0526aba.jpg",
+    "fetchedAt": "2026-10-02T22:36:32.225420+00:00",
+    "sha256": "8035abaf2558609b722c89a5b55be31453d428e7fa7cc1571d0837316ce3efb3",
+    "bytes": 87404,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

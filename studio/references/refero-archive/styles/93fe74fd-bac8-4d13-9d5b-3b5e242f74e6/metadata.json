@@ -1,0 +1,29 @@
+{
+  "styleId": "93fe74fd-bac8-4d13-9d5b-3b5e242f74e6",
+  "sourceUrl": "https://styles.refero.design/style/93fe74fd-bac8-4d13-9d5b-3b5e242f74e6",
+  "fetchedAt": "2026-10-02T22:19:26.188102+00:00",
+  "extractedAt": "2026-10-02T22:19:26.210647+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Popcorn — Style Reference",
+  "htmlSha256": "310e4c6bc9c217a33bf360a5b1330248be568d5286ab2880a3c410c258249e5e",
+  "cache": ".cache/93fe74fd-bac8-4d13-9d5b-3b5e242f74e6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "35064089353787a4f36df86b8b88c456c93ac481968c65b7141095683d9ef079",
+      "bytes": 22108,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/48c53f6e-d8b9-4ed1-8e84-f8c91fd401da.jpg",
+    "fetchedAt": "2026-10-02T22:19:28.237999+00:00",
+    "sha256": "a6966ad5d11ca73330b4d27e67796b486c788b79618814f0e39f942530a141d1",
+    "bytes": 59913,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

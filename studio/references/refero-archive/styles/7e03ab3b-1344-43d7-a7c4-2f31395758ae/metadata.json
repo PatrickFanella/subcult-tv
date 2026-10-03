@@ -1,0 +1,29 @@
+{
+  "styleId": "7e03ab3b-1344-43d7-a7c4-2f31395758ae",
+  "sourceUrl": "https://styles.refero.design/style/7e03ab3b-1344-43d7-a7c4-2f31395758ae",
+  "fetchedAt": "2026-10-02T22:24:54.493674+00:00",
+  "extractedAt": "2026-10-02T22:24:54.529555+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Favorit Studio — Style Reference",
+  "htmlSha256": "662fbca3254bd3424736e980fe2603cb34d2e8db71951f892ce6454d5bfbf56f",
+  "cache": ".cache/7e03ab3b-1344-43d7-a7c4-2f31395758ae.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c9850af40da175e25518ee50a970c80aac86b3e26a868410a4c22e58375c66b5",
+      "bytes": 14637,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/31b6db4c-34a4-42e6-a950-802984372df1.jpg",
+    "fetchedAt": "2026-10-02T22:24:56.151081+00:00",
+    "sha256": "689af7b19e76aaad3e382ba7f49990310287e012493f5d9b2910160d04ef14ae",
+    "bytes": 60576,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

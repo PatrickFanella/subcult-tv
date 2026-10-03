@@ -1,0 +1,29 @@
+{
+  "styleId": "a6791bc8-c49d-4e7a-a09d-877afcd04c25",
+  "sourceUrl": "https://styles.refero.design/style/a6791bc8-c49d-4e7a-a09d-877afcd04c25",
+  "fetchedAt": "2026-10-02T22:44:42.201691+00:00",
+  "extractedAt": "2026-10-02T22:44:42.224230+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Oakâme — Style Reference",
+  "htmlSha256": "4fa2ffd600afbe705f40bda32fef0ae1db4337b84dcc971dd755ca99b395b08d",
+  "cache": ".cache/a6791bc8-c49d-4e7a-a09d-877afcd04c25.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e5cb3ae3bdde9d61675d8f391a652e13c54fa4fc5b4d3d0185b15cec7d9d0d11",
+      "bytes": 20784,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9401229d-ecde-4b7c-8ff2-e6b9a116d5d0.jpg",
+    "fetchedAt": "2026-10-02T22:44:44.254376+00:00",
+    "sha256": "c7c7b370a3e1f7f4fc6bcff60d47262930cd8e112f578897ec051879fa5634cd",
+    "bytes": 136030,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

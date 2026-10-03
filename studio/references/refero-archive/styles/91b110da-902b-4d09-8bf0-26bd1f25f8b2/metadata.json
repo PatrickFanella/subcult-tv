@@ -1,0 +1,29 @@
+{
+  "styleId": "91b110da-902b-4d09-8bf0-26bd1f25f8b2",
+  "sourceUrl": "https://styles.refero.design/style/91b110da-902b-4d09-8bf0-26bd1f25f8b2",
+  "fetchedAt": "2026-10-02T22:12:30.165058+00:00",
+  "extractedAt": "2026-10-02T22:12:30.194780+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Copilot Money — Style Reference",
+  "htmlSha256": "ac2810f813535a4ac3469c09cfff39017e0e87af74cc66e44ee4087cb0701755",
+  "cache": ".cache/91b110da-902b-4d09-8bf0-26bd1f25f8b2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d7f034157def825ba6eafc707dc34a668ee24ddabf239cee1e79be882a09d5a2",
+      "bytes": 26076,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5d753801-0afe-456d-8726-4cce5626dd34.jpg",
+    "fetchedAt": "2026-10-02T22:12:32.221810+00:00",
+    "sha256": "089e5d48db4e7f4eb7cea99c7b0388fc0d3f5967e3727da195609412f3a3100d",
+    "bytes": 105546,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

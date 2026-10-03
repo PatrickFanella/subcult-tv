@@ -1,0 +1,29 @@
+{
+  "styleId": "2d4ced28-e579-4fa0-84bc-836dd008034f",
+  "sourceUrl": "https://styles.refero.design/style/2d4ced28-e579-4fa0-84bc-836dd008034f",
+  "fetchedAt": "2026-10-02T22:31:46.213919+00:00",
+  "extractedAt": "2026-10-02T22:31:46.235341+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Andercore — Style Reference",
+  "htmlSha256": "e1a0de0f3c531fe00998fdf2b626f6afcb15e49e00855c806ee119da905164c3",
+  "cache": ".cache/2d4ced28-e579-4fa0-84bc-836dd008034f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0870d9fc3e4830d409cb2e851aef09a946c64543f1f4b207cb93fe8f03afd0e6",
+      "bytes": 17078,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c40e170b-42b9-4ddc-aaad-3968fa390ec7.jpg",
+    "fetchedAt": "2026-10-02T22:31:48.220195+00:00",
+    "sha256": "3332681e70c8d67b9cc99431022630cfa879821e832ae64e04bd77d7f5ba938d",
+    "bytes": 92167,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

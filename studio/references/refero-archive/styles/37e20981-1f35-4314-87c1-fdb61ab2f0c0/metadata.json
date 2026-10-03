@@ -1,0 +1,29 @@
+{
+  "styleId": "37e20981-1f35-4314-87c1-fdb61ab2f0c0",
+  "sourceUrl": "https://styles.refero.design/style/37e20981-1f35-4314-87c1-fdb61ab2f0c0",
+  "fetchedAt": "2026-10-02T22:38:34.238464+00:00",
+  "extractedAt": "2026-10-02T22:38:34.264391+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Modern companies are built on Capital — Style Reference",
+  "htmlSha256": "9af03b4adee6f00f0b0448b637bf0ffd22315e217653186f9cf257bea199e808",
+  "cache": ".cache/37e20981-1f35-4314-87c1-fdb61ab2f0c0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1d5eacd858c496f5b9f151e6095a77677e5afd640e05408554e371046a2ca808",
+      "bytes": 21468,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/36689c8e-9aac-4f87-88cd-ccdd38fb2b70.jpg",
+    "fetchedAt": "2026-10-02T22:38:36.329645+00:00",
+    "sha256": "81f02f00e004c2db9d826801630f4e50c739a97f715d711b83ad89f72543b5a1",
+    "bytes": 87136,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

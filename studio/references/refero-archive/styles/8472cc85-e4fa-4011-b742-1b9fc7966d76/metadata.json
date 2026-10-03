@@ -1,0 +1,29 @@
+{
+  "styleId": "8472cc85-e4fa-4011-b742-1b9fc7966d76",
+  "sourceUrl": "https://styles.refero.design/style/8472cc85-e4fa-4011-b742-1b9fc7966d76",
+  "fetchedAt": "2026-10-02T22:31:10.185223+00:00",
+  "extractedAt": "2026-10-02T22:31:10.207151+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Glitch Blog — Style Reference",
+  "htmlSha256": "f4c8b8e87c163879c5ae38cd59167ca9bc5f68d648b9487f01619e2bcd82d412",
+  "cache": ".cache/8472cc85-e4fa-4011-b742-1b9fc7966d76.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b68e1d37256136477549fa6e532d2b8335f3207a5fd76be952d61e257d6e2beb",
+      "bytes": 14022,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c31d6a6f-40a3-4cb4-9e3b-c68acb9bc309.jpg",
+    "fetchedAt": "2026-10-02T22:31:12.260705+00:00",
+    "sha256": "4b3d2f041dcc4548663c31d2bb5b26d20b1ca462113618d40a0b3c790a2b806d",
+    "bytes": 103564,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

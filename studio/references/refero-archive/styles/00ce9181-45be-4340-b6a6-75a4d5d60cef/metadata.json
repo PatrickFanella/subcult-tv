@@ -1,0 +1,29 @@
+{
+  "styleId": "00ce9181-45be-4340-b6a6-75a4d5d60cef",
+  "sourceUrl": "https://styles.refero.design/style/00ce9181-45be-4340-b6a6-75a4d5d60cef",
+  "fetchedAt": "2026-10-02T22:36:46.191331+00:00",
+  "extractedAt": "2026-10-02T22:36:46.214806+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cowboy — Style Reference",
+  "htmlSha256": "9b78b8a4799e6cb3c50e799dd009a973da431df5ac95f3decfc15e7a6ee48394",
+  "cache": ".cache/00ce9181-45be-4340-b6a6-75a4d5d60cef.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "deeacc0c2201cbc9c690362db48a35a5cf72222f61e385ec97875d285d104b51",
+      "bytes": 22015,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cb6fb493-ce76-4c28-8c8c-f49b3acc2135.jpg",
+    "fetchedAt": "2026-10-02T22:36:48.255348+00:00",
+    "sha256": "64e46d6782858c4660c0d27ca6d9bb22421490b7961a75d1ffc9ab51a51e0ba2",
+    "bytes": 168352,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

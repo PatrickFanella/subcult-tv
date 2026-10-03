@@ -1,0 +1,29 @@
+{
+  "styleId": "8d37e9dd-1d6b-4b60-a636-55aa3e0fc238",
+  "sourceUrl": "https://styles.refero.design/style/8d37e9dd-1d6b-4b60-a636-55aa3e0fc238",
+  "fetchedAt": "2026-10-02T22:18:54.210355+00:00",
+  "extractedAt": "2026-10-02T22:18:54.231951+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Prisma Labs — Style Reference",
+  "htmlSha256": "fa7c8e5ca0842e841853f497f6ef2a87550c71f0fe532c5e3f7ec07e43c8de18",
+  "cache": ".cache/8d37e9dd-1d6b-4b60-a636-55aa3e0fc238.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6ee7add1a4a159d4da41089d51435a0e5228ccb0872ed3fbc0133da4de67fa94",
+      "bytes": 16417,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/125b904b-cd4c-48c6-8bce-2ca44a951e09.jpg",
+    "fetchedAt": "2026-10-02T22:18:56.204002+00:00",
+    "sha256": "fc6e4e608491fc92ce576d829776bb737bce8b6a29bafe2b4f2bf6d3e9763db1",
+    "bytes": 83144,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "08c0ead0-1899-47b4-bfdc-865ab459bbe5",
+  "sourceUrl": "https://styles.refero.design/style/08c0ead0-1899-47b4-bfdc-865ab459bbe5",
+  "fetchedAt": "2026-10-02T22:17:50.287905+00:00",
+  "extractedAt": "2026-10-02T22:17:50.530201+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cap — Style Reference",
+  "htmlSha256": "2e7d2b721dc1dbfffabbe270a7012ac628ffa449d62393c025606694de383fde",
+  "cache": ".cache/08c0ead0-1899-47b4-bfdc-865ab459bbe5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7686f939e7b7f99dcc4dbf551f3a67ee24c5f02b26a7fc3da6c7b8e6ecda80e8",
+      "bytes": 29291,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/162fe5cc-7af5-43c8-a0d4-ec1c8a5e0f91.jpg",
+    "fetchedAt": "2026-10-02T22:17:52.255001+00:00",
+    "sha256": "004954c209c9d0c0718c28863d7f9f990216749d3f59178e347fad9508f3900c",
+    "bytes": 106316,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

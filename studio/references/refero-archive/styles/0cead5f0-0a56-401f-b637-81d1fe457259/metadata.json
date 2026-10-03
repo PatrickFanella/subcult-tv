@@ -1,0 +1,29 @@
+{
+  "styleId": "0cead5f0-0a56-401f-b637-81d1fe457259",
+  "sourceUrl": "https://styles.refero.design/style/0cead5f0-0a56-401f-b637-81d1fe457259",
+  "fetchedAt": "2026-10-02T22:35:34.219260+00:00",
+  "extractedAt": "2026-10-02T22:35:34.241645+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SAPGOODENERGY — Style Reference",
+  "htmlSha256": "a8d8d45bd866f34fb662a469e29a84ffd95400dd39623e2be15e589e3bf4bde2",
+  "cache": ".cache/0cead5f0-0a56-401f-b637-81d1fe457259.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cd782055948ed5712ad9c16a1a4dd19da10bdce4302bd6c7eab3bfcf73be68f2",
+      "bytes": 18504,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f22bab22-0dcc-4455-a6e1-dd5d667de3ee.jpg",
+    "fetchedAt": "2026-10-02T22:35:36.289877+00:00",
+    "sha256": "4af19a58c03331213a3df25a4547d28dd3bc0c17973a6e0f2c8b1c5aba90ffe7",
+    "bytes": 159497,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

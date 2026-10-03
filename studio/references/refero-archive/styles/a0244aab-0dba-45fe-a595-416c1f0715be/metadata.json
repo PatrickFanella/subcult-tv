@@ -1,0 +1,29 @@
+{
+  "styleId": "a0244aab-0dba-45fe-a595-416c1f0715be",
+  "sourceUrl": "https://styles.refero.design/style/a0244aab-0dba-45fe-a595-416c1f0715be",
+  "fetchedAt": "2026-10-02T22:10:34.372342+00:00",
+  "extractedAt": "2026-10-02T22:10:34.397010+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Speakeasy — Style Reference",
+  "htmlSha256": "b8800cf7e435e06121f5a7c3eec0a46a5defd664ec5f1a40286c0e68a87c8624",
+  "cache": ".cache/a0244aab-0dba-45fe-a595-416c1f0715be.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "08fb973fa62f66568f5186bb20868ca635ff381986d6f90c3b183e85e5a59328",
+      "bytes": 27821,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/15a6d29d-6f32-4fbb-9a5c-0c90e693e3a6.jpg",
+    "fetchedAt": "2026-10-02T22:10:36.323832+00:00",
+    "sha256": "eb7ed1af181fbac5df4c8cb2a4c2f3980609cf8f396dd62b5f974755252d547c",
+    "bytes": 127100,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

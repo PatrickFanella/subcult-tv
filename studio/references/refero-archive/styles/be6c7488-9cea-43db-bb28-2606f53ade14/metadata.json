@@ -1,0 +1,29 @@
+{
+  "styleId": "be6c7488-9cea-43db-bb28-2606f53ade14",
+  "sourceUrl": "https://styles.refero.design/style/be6c7488-9cea-43db-bb28-2606f53ade14",
+  "fetchedAt": "2026-10-02T22:24:02.302090+00:00",
+  "extractedAt": "2026-10-02T22:24:02.324545+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vimeo — Style Reference",
+  "htmlSha256": "58aa124da0fa858a02a591d50551534788d8e547fefabe287f72bb0f51f99d14",
+  "cache": ".cache/be6c7488-9cea-43db-bb28-2606f53ade14.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9c8b3c54806c71cb439c09a92ee94515a92f2cb416e5fed903f24aada10cb73a",
+      "bytes": 20979,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cba924a9-9096-4ace-af0f-5099355e952a.jpg",
+    "fetchedAt": "2026-10-02T22:24:04.291083+00:00",
+    "sha256": "742280165edda6eb673e7a338a2a150ecc8d417c07c087e65be38c333bc8d89a",
+    "bytes": 102638,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

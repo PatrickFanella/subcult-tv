@@ -1,0 +1,29 @@
+{
+  "styleId": "3e5c272b-8d68-40d8-9726-b4d6914b4b16",
+  "sourceUrl": "https://styles.refero.design/style/3e5c272b-8d68-40d8-9726-b4d6914b4b16",
+  "fetchedAt": "2026-10-02T22:04:18.406935+00:00",
+  "extractedAt": "2026-10-02T22:04:18.428489+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SquadEasy — Style Reference",
+  "htmlSha256": "ec7d4427ff91e32dd4ef11a146904c972bfba62306a41a4b820a022d92f08600",
+  "cache": ".cache/3e5c272b-8d68-40d8-9726-b4d6914b4b16.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "153991369126487bca4f72105ed7902ba53b677886cedaba176a6e1db2cdd7c9",
+      "bytes": 22580,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/26e63cfd-029f-4c92-8f2b-9cbdcb38a3b8.jpg",
+    "fetchedAt": "2026-10-02T22:04:20.217378+00:00",
+    "sha256": "c2c181df2c291d9fd6302db660878d75743d6c872203f78b74da14b4ecefaef2",
+    "bytes": 103789,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

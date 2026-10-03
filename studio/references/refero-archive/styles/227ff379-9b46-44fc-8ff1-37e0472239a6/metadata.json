@@ -1,0 +1,29 @@
+{
+  "styleId": "227ff379-9b46-44fc-8ff1-37e0472239a6",
+  "sourceUrl": "https://styles.refero.design/style/227ff379-9b46-44fc-8ff1-37e0472239a6",
+  "fetchedAt": "2026-10-02T22:16:58.275880+00:00",
+  "extractedAt": "2026-10-02T22:16:58.299836+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Altius — Style Reference",
+  "htmlSha256": "e69fd3b5f62cd2814fe736a952973020db8f80467d873232ee5cd941311e5d9c",
+  "cache": ".cache/227ff379-9b46-44fc-8ff1-37e0472239a6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ed0b05b83e5dabe551c5e5b53cb646d5e8d30b12cd633d8fb6a1407e6040693f",
+      "bytes": 20995,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b44bbc39-f1a1-4c1e-b1ec-a1138ed2f1e2.jpg",
+    "fetchedAt": "2026-10-02T22:17:00.452742+00:00",
+    "sha256": "6639384272d98db1b5a7ac087e2f53551b321995f3133dd481979a32fac50e9c",
+    "bytes": 84992,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "be2af3f3-3886-4d70-973f-f7b5ab8d1a99",
+  "sourceUrl": "https://styles.refero.design/style/be2af3f3-3886-4d70-973f-f7b5ab8d1a99",
+  "fetchedAt": "2026-10-02T22:31:34.268821+00:00",
+  "extractedAt": "2026-10-02T22:31:34.293590+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Grammarly — Style Reference",
+  "htmlSha256": "b8978fd0c72530f1b76718c5f2fdc0cb00419c7a291b538bab05e849823e5d5c",
+  "cache": ".cache/be2af3f3-3886-4d70-973f-f7b5ab8d1a99.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a74324cc9cc2795943d14d4b953bf75ee77792131ee1c36054c90686828d60c4",
+      "bytes": 23851,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0326ecda-eaea-4ccf-b51f-ca03d7bd36c6.jpg",
+    "fetchedAt": "2026-10-02T22:31:36.238654+00:00",
+    "sha256": "d1dee73d0e616ac3b062978b05f63e6d597dfe5cef7ce7b19c75560880cae936",
+    "bytes": 126906,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "f4636c5b-1342-48b2-b9b1-a82e2182440e",
+  "sourceUrl": "https://styles.refero.design/style/f4636c5b-1342-48b2-b9b1-a82e2182440e",
+  "fetchedAt": "2026-10-02T22:30:50.217713+00:00",
+  "extractedAt": "2026-10-02T22:30:50.242470+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Depot — Style Reference",
+  "htmlSha256": "14b5f9cc4a4818d9bc080e18fbb056e7edd2e24922a46d8c6f47cddc6e7b7bed",
+  "cache": ".cache/f4636c5b-1342-48b2-b9b1-a82e2182440e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "364e0406731048f6c3cc7104e0459a3747d758ca0e30ce80ce21f3ecf86bcf01",
+      "bytes": 26416,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/252507f3-d602-475c-b1b7-315f40743a1d.jpg",
+    "fetchedAt": "2026-10-02T22:30:52.320173+00:00",
+    "sha256": "f473d47afd9053b7c6bccaf21654712614067b4b0cb72f684026cf5b7a0f9404",
+    "bytes": 107017,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "9c60e0a4-a702-49af-9fc1-52edbc9dd902",
+  "sourceUrl": "https://styles.refero.design/style/9c60e0a4-a702-49af-9fc1-52edbc9dd902",
+  "fetchedAt": "2026-10-02T22:14:54.237263+00:00",
+  "extractedAt": "2026-10-02T22:14:54.270325+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "The Fascination The Fascination — Style Reference",
+  "htmlSha256": "509685f6eaf05755ba0becd9a1d8f392df87680366cb9066597c21df5d8df73a",
+  "cache": ".cache/9c60e0a4-a702-49af-9fc1-52edbc9dd902.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cf91461e8f89f660cf7584314995e708394fdedc85a57840b79534e81b99a74d",
+      "bytes": 18049,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4e912400-4313-497e-a5ca-40ec127bdfc4.jpg",
+    "fetchedAt": "2026-10-02T22:14:56.229713+00:00",
+    "sha256": "10f1b8c12fc361eedb7aa4e3edcb0644bccc6d557b8b986177d2ceb5290c79c8",
+    "bytes": 153912,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

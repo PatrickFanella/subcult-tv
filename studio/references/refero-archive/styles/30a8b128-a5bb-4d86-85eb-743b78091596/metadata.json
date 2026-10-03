@@ -1,0 +1,29 @@
+{
+  "styleId": "30a8b128-a5bb-4d86-85eb-743b78091596",
+  "sourceUrl": "https://styles.refero.design/style/30a8b128-a5bb-4d86-85eb-743b78091596",
+  "fetchedAt": "2026-10-02T22:40:34.268929+00:00",
+  "extractedAt": "2026-10-02T22:40:34.291668+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Pravah — Style Reference",
+  "htmlSha256": "c692c100852a7a988c250b222c273c727a2420e63f176e5c57dd09511e7f7fd8",
+  "cache": ".cache/30a8b128-a5bb-4d86-85eb-743b78091596.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1bb2aa4d6f3de1d1d10e0070fea715475a81551e3a5bd501450f64121b361705",
+      "bytes": 20037,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f6ba5a45-e29d-4a44-82ec-5fcf86358b07.jpg",
+    "fetchedAt": "2026-10-02T22:40:36.267356+00:00",
+    "sha256": "1a242c9ea3d8d56372196f69a52d984edd1249f9488d1db1fe4dc9a97c1f2299",
+    "bytes": 112777,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

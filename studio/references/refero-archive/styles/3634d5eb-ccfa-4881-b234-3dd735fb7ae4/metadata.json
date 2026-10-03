@@ -1,0 +1,29 @@
+{
+  "styleId": "3634d5eb-ccfa-4881-b234-3dd735fb7ae4",
+  "sourceUrl": "https://styles.refero.design/style/3634d5eb-ccfa-4881-b234-3dd735fb7ae4",
+  "fetchedAt": "2026-10-02T22:06:02.495181+00:00",
+  "extractedAt": "2026-10-02T22:06:02.520181+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fruitful — Style Reference",
+  "htmlSha256": "2424324b1df09c2e4de95e94e2675cc7d23c95134b48cbbe5352531c03b0d7be",
+  "cache": ".cache/3634d5eb-ccfa-4881-b234-3dd735fb7ae4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "337cc0aed2c3f17204d28fbad9abe336f0b384cd2ffa1dc95f1a198b21d8052a",
+      "bytes": 22280,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/979f1585-405d-4d4a-891a-c6a815153768.jpg",
+    "fetchedAt": "2026-10-02T22:06:04.221947+00:00",
+    "sha256": "d85c00b68a8445007f786d81d28fac8eec2fa7f701ed256c00d7c4724398eece",
+    "bytes": 94894,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

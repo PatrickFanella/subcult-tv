@@ -1,0 +1,29 @@
+{
+  "styleId": "8b5cfe6d-a2bd-4edb-854e-9185cec46c09",
+  "sourceUrl": "https://styles.refero.design/style/8b5cfe6d-a2bd-4edb-854e-9185cec46c09",
+  "fetchedAt": "2026-10-02T22:53:02.207065+00:00",
+  "extractedAt": "2026-10-02T22:53:02.230886+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Panxo — Style Reference",
+  "htmlSha256": "d6793c159243978713904204a5d3e692761aba31501570ed358d0b426814549b",
+  "cache": ".cache/8b5cfe6d-a2bd-4edb-854e-9185cec46c09.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1fb819a4d75ec5eb34e8477ef1f3bbf8f36f0ecde83172400853550a6ac37889",
+      "bytes": 25837,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1e700666-da05-4e56-8a18-2f53f1c5d38f.jpg",
+    "fetchedAt": "2026-10-02T22:53:04.230734+00:00",
+    "sha256": "e9b37ccbe316a0f76d8bfce120294499ee9d1c92e960610c72cc0a2bf149dca8",
+    "bytes": 114200,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}
