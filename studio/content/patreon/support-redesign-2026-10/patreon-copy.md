@@ -21,59 +21,55 @@ One pool of paid rewards keeps delivery manageable. Discord is the concrete ongo
 
 **Page name:** SUBCULT
 
-**Short description:** Independent software, sound and culture. Support the studio and get closer to the work.
+**Short description:** Independent software, sound and culture. Membership helps cover hosting, tools and time, and comes with private Discord channels and supporter posts.
 
 ## About copy
 
-SUBCULT makes independent software, music and creative work. Our projects include tools for finding clips, searching recording archives, making music visuals and organizing live events.
+SUBCULT makes independent software, music and creative work. The software includes tools for finding clips, searching recording archives, making music visuals and organizing live events.
 
-Support helps cover hosting, tools and the time spent building and maintaining the work.
+Support helps cover hosting, tools, and the hours it takes to build and maintain all of it.
 
-Paid members can join private channels in our Discord and read supporter posts on Patreon. We may also share behind-the-scenes material, works in progress and occasional exclusive releases. These arrive when we have something to share, with no fixed publishing schedule.
+A paid membership gets you into the private channels in our Discord and the supporter posts on Patreon. We may also share behind-the-scenes material, works in progress and the occasional exclusive release. Those show up when we have something to share. There is no publishing schedule.
 
-Supporter ($5), Backer ($10) and Patron ($25) have the same core access. Groceries and Rent are there too, if you're feeling extraordinarily generous. Same rewards, larger contribution. Choose the amount that works for you.
+Supporter ($5), Backer ($10) and Patron ($25) have the same core access. The price is how much you want to put in. Groceries and Rent are on the list too, if you're feeling extraordinarily generous: same rewards, larger contribution.
 
-Public products and their public releases stay available on their own terms. Patreon gives you a closer view of the studio and occasional member material; it does not unlock paid product plans, commissions or private consulting.
+Membership does not unlock the products. Public products and their public releases stay available on their own terms, and Patreon is not a paid product plan, a commission or private consulting. What it adds is a closer view of the studio and occasional member material.
 
-Follow for free for public posts, or join a paid tier to support the work.
+Follow for free to get the public posts. Join a paid tier if you want to put money toward the work.
 
 ## Tier descriptions to paste
 
 ### Supporter — $5/month
 
-Help keep SUBCULT's independent work going.
+Five dollars a month covers the whole supporter list:
 
-- Access to private supporter channels in our Discord.
-- Access to supporter posts on Patreon.
-- Occasional behind-the-scenes material and exclusive releases when we share them.
+- Private supporter channels in our Discord.
+- Supporter posts on Patreon.
+- Behind-the-scenes material and exclusive releases, occasionally, when we share them.
 
-All paid tiers have the same core access. Posts and releases have no fixed schedule. Discord access requires a Discord account and the community rules apply.
+Every paid tier has this same core access. Posts and releases have no fixed schedule. Discord access requires a Discord account and the community rules apply.
 
 ### Backer — $10/month
 
-Give a little more toward the tools, hosting and time behind SUBCULT.
+Same access as Supporter. The extra five dollars goes toward the tools, hosting and time behind SUBCULT.
 
-You receive the same private Discord access, supporter posts and occasional behind-the-scenes material or exclusive releases as Supporter. This tier is a larger contribution to the same work.
-
-Posts and releases have no fixed schedule. Discord access requires a Discord account and the community rules apply.
+That means the private Discord channels, supporter posts, and occasional behind-the-scenes material or exclusive releases. None of it runs on a fixed schedule. You need a Discord account for the channels, and the community rules apply.
 
 ### Patron — $25/month
 
-Make a larger contribution to SUBCULT's independent work.
-
-You receive the same private Discord access, supporter posts and occasional behind-the-scenes material or exclusive releases as Supporter and Backer.
+Twenty-five a month gets the same private Discord access, supporter posts and occasional behind-the-scenes material or exclusive releases as Supporter and Backer. It is a larger contribution to SUBCULT's independent work, and that is the whole difference.
 
 Posts and releases have no fixed schedule. Discord access requires a Discord account and the community rules apply.
 
 ### Free follow description
 
-Follow SUBCULT for public posts and announcements. Free follows do not include private supporter channels or paid member posts.
+Free. You get SUBCULT's public posts and announcements. You do not get the private supporter channels or paid member posts.
 
 ### Groceries — $400/month
 
 Feed the person making the things.
 
-Same supporter access as the other paid tiers, with a much larger contribution. The name is a joke; the monthly payment is real. No extra deliverables or special access. Please choose this only if it comfortably fits your budget.
+The name is a joke. The monthly payment is real. You get the same supporter access as the other paid tiers, with no extra deliverables and no special access. Please choose this only if it comfortably fits your budget.
 
 Supporter posts and releases have no fixed schedule. Discord access requires a Discord account and the community rules apply.
 
@@ -81,9 +77,9 @@ Supporter posts and releases have no fixed schedule. Discord access requires a D
 
 Pay my rent. Literally.
 
-An improbable tier for someone who really wants to keep the studio going. Same supporter access as the other paid tiers, no extra deliverables, and no expectation that anyone picks this.
+Nobody is expected to pick this. It is here for the improbable person who really wants to keep the studio going. Same supporter access as the other paid tiers, and no extra deliverables.
 
-The name is a joke; the monthly payment is real. Please choose this only if it comfortably fits your budget. Supporter posts and releases have no fixed schedule. Discord access requires a Discord account and the community rules apply.
+It is a joke name on a real monthly payment, so please choose it only if it comfortably fits your budget. Supporter posts and releases have no fixed schedule. Discord access requires a Discord account and the community rules apply.
 
 **Editor note:** These tier names describe the size and spirit of support, not a promise to restrict funds to specific bills. Describe contributions as support for the person and studio; do not claim a verified grocery or rent budget. Do not offer personal receipts or housing details as rewards. The owner set Groceries to $400 and Rent to $1,500 on October 2; check those amounts in the live editor before publication.
 
@@ -104,13 +100,17 @@ Exclusive release candidates can include an owned music edit, a selected Ableton
 
 **Title: Welcome to the SUBCULT studio**
 
-Thanks for being here. SUBCULT makes independent software, sound and creative work, and your support helps pay for the tools, hosting and time behind it.
+Here is what this page is, what your money does, and what you get.
 
-All paid tiers share the same core access: private supporter channels in our Discord and member posts here. We may also share behind-the-scenes material and occasional exclusive releases. There is no fixed schedule; we post when we have something to share.
+SUBCULT makes independent software, sound and creative work. Your support helps pay for the tools, hosting and time behind it.
 
-Start with the Discord access instructions linked on this page, then browse the available member posts. Choose $5, $10 or $25 according to what you want to contribute. Groceries and Rent are optional larger contributions with the same access. The higher tiers support the same work without adding another set of rewards.
+All paid tiers share the same core access: private supporter channels in our Discord and member posts here. We may also share behind-the-scenes material and occasional exclusive releases. There is no fixed schedule. We post when we have something to share.
 
-You can also follow for free for public updates. Thanks for supporting the studio in whatever way works for you.
+Start with the Discord access instructions linked on this page, then browse the available member posts.
+
+On price: $5, $10 and $25 get the same things, so choose by what you want to contribute. Groceries and Rent are optional larger contributions with the same access. Paying more supports the same work and adds no rewards.
+
+Following for free is fine too. You get the public updates. Thanks for paying toward this, at whatever amount works for you.
 
 **Editor note:** Replace the Discord instruction sentence with the actual tested connection/invite path before publishing. Do not place a reusable private-channel invitation in a public post. Select the pinned post's audience explicitly.
 
@@ -118,7 +118,7 @@ You can also follow for free for public updates. Thanks for supporting the studi
 
 **Do higher tiers get more rewards?**
 
-All paid tiers have the same core access. The amount you choose is the size of your contribution.
+No. All paid tiers have the same core access. The amount you choose is the size of your contribution.
 
 **How often do you post?**
 
@@ -126,7 +126,7 @@ There is no fixed schedule. Supporter posts, BTS material and exclusive releases
 
 **Does supporting SUBCULT unlock its products?**
 
-Membership covers the supporter benefits listed here. Product accounts, hosting plans and other services have their own terms.
+No. Membership covers the supporter benefits listed here. Product accounts, hosting plans and other services have their own terms.
 
 **Can I request work or direct the roadmap?**
 

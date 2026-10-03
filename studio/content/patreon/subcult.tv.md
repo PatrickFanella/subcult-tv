@@ -17,7 +17,7 @@ tags:
 
 # subcult.tv
 
-> [!abstract] SUBCULT’s public Stage, Transmission surface, and durable archive. It should show what exists, make project state legible, and give every publication a life beyond the feed.
+> [!abstract] SUBCULT’s public Stage, Transmission surface, and durable archive. It should show what exists, state each project's status plainly, and keep every publication reachable after the feed has moved on.
 
 ## Definition of success
 
@@ -26,8 +26,8 @@ A visitor can understand what SUBCULT is, inspect current and historical project
 ## Current state
 
 - The site is live at https://subcult.tv.
-- It includes projects, zine, About, support, memo, investment, metrics, links, and press-kit surfaces.
-- Its strongest visual and verbal identity is already recognizable.
+- It includes projects, zine, About, support, memo, investment, metrics, links, and press-kit pages.
+- Its visual and verbal identity is already recognizable.
 - Several categorical claims drift from the current canon or conflict across pages; [[001 Projects/Works/Social Posts/SUBCULT Marketing/SUBCULT Website Copy|SUBCULT Website Copy]] contains the replacement copy and audit.
 - Public GitHub and Gitea catalogs contain more current project evidence than the old vault note represented.
 

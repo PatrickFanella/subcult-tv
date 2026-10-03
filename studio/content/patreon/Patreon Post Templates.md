@@ -15,91 +15,109 @@ title: Patreon Post Templates
 
 # Patreon Post Templates
 
-Reusable patron-facing formats.
+Reusable patron-facing formats. Each one opens differently, so a month of posts does not read like one post seven times. Follow the opening line given; do not add a greeting above it or a sign-off below the last field.
+
+Page and welcome copy says "we". A field note about one person's work can say "I".
 
 ## Daily changemaker supporter note
 
-```txt
-Today’s changemaker
+Opens with the change itself. No title, no preamble.
 
-Built:
-[what changed]
+```txt
+[the change, in one sentence, as if telling someone at the next desk]
 
 Learned:
-[lesson / surprise]
+[lesson or surprise; skip if there wasn't one]
 
 Blocked by:
-[problem, if any]
+[problem; skip if nothing is blocked]
 
-Next:
-[what happens tomorrow]
+Tomorrow:
+[what happens next]
 
-Supporter note:
-[extra detail, question, screenshot, or link]
+[one extra detail, screenshot, or link, if there is one]
 ```
 
 ## Behind the changemaker
 
-```txt
-Title: Behind today’s changemaker: [specific change]
+Opens with the part that went wrong or took longer.
 
-1. What changed
-2. Why it mattered
-3. What was harder than expected
-4. What I almost did instead
-5. What happens next
-6. Question for patrons
+```txt
+Title: Behind today's changemaker: [specific change]
+
+[what was harder than expected, first]
+
+What changed:
+[the change]
+
+Why it mattered:
+[reason]
+
+What nearly happened instead:
+[the other option and why it lost]
+
+Next:
+[what follows]
+
+[one question for patrons, only if the answer would change something]
 ```
 
 ## Project field notes
 
+Opens like a status line. The decision is the body.
+
 ```txt
-Current project:
-[project name]
+[project name]: [where it stands, in one line]
 
-Current state:
-[where it stands]
-
-Problem:
+The problem right now:
 [current challenge]
 
 Options:
-A / B / C
+[as many as there really are; do not pad to three]
 
-My leaning:
+Leaning toward:
 [choice + reason]
 
-Patron question:
-[ask for vote or feedback]
+Question:
+[what a patron's vote or feedback would decide]
 ```
 
 ## Blog companion post
 
-For [[001 Projects/Works/Patreon/subcult.tv]] posts.
+For [[001 Projects/Works/Patreon/subcult.tv]] posts. Opens with what the published version left out.
 
 ```txt
-Title: Companion notes for “[blog title]”
+Title: Companion notes for "[blog title]"
 
-1. Why I wrote it
-2. What changed from draft to published version
-3. Cut sections / unused ideas
-4. Related links or references
-5. What this connects to next
+[the section or idea that got cut, and why]
+
+Why this got written:
+[reason]
+
+What changed between draft and published:
+[changes]
+
+Links and references:
+[list]
+
+What it connects to next:
+[next piece or project]
 ```
 
 ## Roadmap post
 
-```txt
-Current active projects:
-- Project A: status
-- Project B: status
-- Project C: status
+Opens with the constraint, before any plan.
 
-This month’s priority:
+```txt
+What might slip this month:
+[honest constraint]
+
+This month's priority:
 [main focus]
 
-What might slip:
-[honest constraint]
+Active projects:
+- [project]: [status]
+- [project]: [status]
 
 Where patrons can help:
 [poll / feedback / testing / sharing]
@@ -110,12 +128,10 @@ Next public milestone:
 
 ## Postmortem
 
-```txt
-Goal:
-[what you intended]
+Opens with the result set against the goal, in one sentence.
 
-Result:
-[what happened]
+```txt
+We wanted [goal]. We got [result].
 
 What worked:
 [bullets]
@@ -123,7 +139,7 @@ What worked:
 What failed:
 [bullets]
 
-What I learned:
+What we'd do differently:
 [practical takeaways]
 
 What changes now:
@@ -132,20 +148,16 @@ What changes now:
 
 ## Pinned welcome post
 
+The benefit list below is the August relaunch offer. The October 2 proposal in [support-redesign-2026-10/patreon-copy.md](support-redesign-2026-10/patreon-copy.md) has its own welcome post with no fixed schedule. Check which offer is live before using either.
+
 ```txt
-Welcome.
+Here is what this page is and what your money does.
 
-SUBCULT is an independent studio making software, media, and experiments for online subcultures.
+SUBCULT is an independent studio making software, media, and experiments for online subcultures. Most of it stays public: essays, releases, updates, and project notes. All of that is on subcult.tv and our other public channels, and none of it costs anything.
 
-Most of what we make stays public: essays, releases, updates, and project notes.
+Patreon is the workshop log. We write down what changed, what broke, what nearly happened instead, and what comes next.
 
-Patreon is the deeper layer behind the work.
-
-I use Patreon as the workshop log behind SUBCULT: what changed, what broke, what almost happened, and what comes next.
-
-Publicly, you’ll see the output on subcult.tv and other public channels.
-
-Here on Patreon, you get the deeper layer:
+On Patreon you get:
 
 - one substantial field note each week
 - one monthly studio ledger
@@ -154,9 +166,7 @@ Here on Patreon, you get the deeper layer:
 - occasional advisory questions with a clearly stated scope
 - companion notes for public essays and releases
 
-If you want the process, not just the polished result, this is the place.
+Support helps pay for hosting, tools, research, accessibility, documentation, and independent production. It comes with the benefits listed above. It does not buy ownership, governance, guaranteed releases, or unlimited access.
 
-Your support creates more room for hosting, tools, research, accessibility, documentation, and independent production. It provides the listed benefits; it does not buy ownership, governance, guaranteed releases, or unlimited access.
-
-Thanks for being here.
+If the finished work is all you want, it stays public. If you want to see how it gets made, this is where we post that.
 ```

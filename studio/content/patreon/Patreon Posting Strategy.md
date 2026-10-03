@@ -20,7 +20,7 @@ title: Patreon Posting Strategy
 
 # Patreon Posting Strategy
 
-Use Patreon as the deeper process layer behind public output.
+Public channels get the output. Patreon gets the process behind it.
 
 ## Cadence
 
@@ -32,9 +32,9 @@ Publish one substantial field note sourced from real work:
 - a failure, diagnosis, and changed rule
 - an annotated preview or implementation note
 - a research trail or cut section
-- a roadmap choice with its scope stated clearly
+- a roadmap choice with its scope stated
 
-End with one specific question when a response would genuinely affect the next step.
+End with one specific question when the answer would affect the next step.
 
 ### Monthly
 
@@ -63,9 +63,9 @@ Add a roadmap or advisory question only when the underlying Work has a verified 
 
 Ask one specific question per patron post.
 
-Close the loop later:
+Report back later:
 
-> Last week patrons voted for X. Here’s what I’m doing with that.
+> Last week patrons voted for X. Here's what I'm doing with that.
 
 ## Cadence gate
 

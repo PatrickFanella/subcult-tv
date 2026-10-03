@@ -23,7 +23,7 @@ links:
 
 # Patreon Relaunch 2026-08
 
-> [!abstract] Reactivate `patreon.com/subcult` with a truthful page, one paid tier, a pinned welcome, and a cadence that can survive contact with the work.
+> [!abstract] Reactivate `patreon.com/subcult` with a truthful page, one paid tier, a pinned welcome, and a cadence the work can sustain.
 
 ## Evidence boundary
 
@@ -35,11 +35,11 @@ links:
 
 ### Free
 
-Follow the public signal: public updates, occasional previews, and invitations to inspect or respond to real work.
+Public updates, occasional previews, and invitations to inspect or respond to real work.
 
 ### Backer — $10/month
 
-Support the workshop and receive:
+Ten dollars a month toward the workshop. In return:
 
 - one substantial field note each week;
 - one monthly studio ledger;
@@ -53,39 +53,39 @@ This tier does not promise daily output, private consulting, unlimited access, g
 
 ### Headline
 
-**Enter the workshop**
+**Who pays for the workshop**
 
 ### Compact bio
 
-Build notes, early previews, drafts, and operational memory from SUBCULT. Most finished work stays public; support creates more room to make it.
+Build notes, early previews, drafts, and decision records from SUBCULT. Most finished work stays public. Support helps us make more of it.
 
 ### About
 
 SUBCULT is an independent creative-technology studio building tools, art, and infrastructure for digital subcultures.
 
-The public side holds the projects, releases, repositories, essays, and durable archive. Patreon opens a closer view of the workshop: weekly field notes, planning context, selected early previews, drafts, technical decisions, failed experiments, and a monthly studio ledger.
+The public side holds the projects, releases, repositories, essays, and archive. On Patreon we show the workshop: weekly field notes, planning context, selected early previews, drafts, technical decisions, experiments that failed, and a monthly studio ledger.
 
 Support helps pay for hosting, tools, research, design, accessibility, documentation, and production time. It does not buy ownership, governance, a guaranteed release schedule, or control over unrelated projects.
 
-Follow for free if you want the public signal. Join Backer if the process itself is useful to you and you want to help sustain it.
+Following is free, and the public work stays public. Join Backer if the process is useful to you and you want to help keep it going.
 
-**The public archive shows what survived. Patreon shows how it was made.**
+**The archive has what survived. The notes on how it got made are on Patreon.**
 
 ## Pinned welcome post
 
 ### Welcome to the SUBCULT workshop
 
-Most of what SUBCULT makes stays public. The releases, repositories, essays, and durable project record belong where people can see and inspect them.
+Most of what SUBCULT makes is public and stays public. The releases, repositories, essays, and project record sit where anyone can see and inspect them.
 
-Patreon is the deeper layer behind that work.
+This page is for the part that usually doesn't get written down.
 
-Each week I will publish one substantial field note: a decision, failure, annotated preview, implementation detail, research trail, or honest account of what changed. Once a month I will publish a studio ledger covering what shipped, what changed, what cost more than expected, what stopped, and what comes next.
+Each week we publish one substantial field note: a decision, a failure, an annotated preview, an implementation detail, a research trail, or a plain account of what changed. Once a month we publish a studio ledger covering what shipped, what changed, what cost more than expected, what stopped, and what comes next.
 
-Backers may also receive selected drafts and early previews when they exist, plus occasional advisory questions with their scope stated clearly. Support does not buy ownership, governance, guaranteed releases, or unlimited access.
+Backers may also receive selected drafts and early previews when they exist, plus occasional advisory questions with their scope stated. Support does not buy ownership, governance, guaranteed releases, or unlimited access.
 
-If you want the process rather than only the polished result, welcome. If you only want the public work, follow for free—the strongest ideas will remain public.
+If you only want the public work, follow for free. The strongest ideas will remain public. If you want the process as well, that is what Backer is for.
 
-Support creates more room for hosting, tools, research, accessibility, documentation, and independent production. Thank you for helping keep the workshop alive.
+Support helps pay for hosting, tools, research, accessibility, documentation, and independent production. Thank you for paying toward it.
 
 ## First 30 days
 
