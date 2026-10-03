@@ -30,11 +30,13 @@ HasanAra is a searchable archive of HasanAbi broadcasts. A visitor searches the 
 
 The name, tagline, description, notice and operator come from the brand profile. The home headline and section copy belong to the application and are shared with other Rekolekt archives.
 
+The table records the deployed copy word for word. New copy follows the HasanAra voice in [the voice guide](../../../../content/VOICE.md).
+
 Passage sharing is enabled. The community, clip export and AT Protocol features are disabled on this deployment. Sign-in is offered through Google and Twitch.
 
 ## Visual application
 
-The site uses the application's Broadsheet design: a newspaper front page with heavy ink rules, serif headlines and square corners. HasanAra's profile replaces only the accent colours. The night edition is the primary design; the paper edition follows the visitor's system preference until they use the toggle.
+The site uses the application's Broadsheet design, which is laid out like a newspaper front page: heavy ink rules, serif headlines and square corners. HasanAra's profile replaces only the accent colours. The night edition is the primary design; the paper edition follows the visitor's system preference until they use the toggle.
 
 | Role | Night edition | Paper edition |
 | --- | --- | --- |
@@ -73,7 +75,7 @@ The pack's Broadcast archive direction was built from the live theme, so base, t
 
 | Item | Pack | Site |
 | --- | --- | --- |
-| Headline | Find the passage. Keep the context. | Find the moment. Read the record. |
+| Headline | He said it on stream. The record shows when. | Find the moment. Read the record. |
 | Label copy | BROADCAST ARCHIVE and PIKER BROADCASTING SERVICE in mono capitals | "Piker Broadcasting Service" under the name in Inter Tight; "HasanAbi archive" as the home eyebrow in mono capitals |
 | Editions | Dark only | Night and paper editions |
 | Colours | Base, text, accent, secondary | Adds brick `#cd3333`, surface, border and secondary text roles, and a darker accent for the paper edition |

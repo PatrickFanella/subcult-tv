@@ -344,6 +344,9 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
+.landing-features:is([data-count='2'], [data-count='4']) {
+  grid-template-columns: repeat(2, 1fr);
+}
 .landing-features article {
   padding: 28px;
   background: var(--lp-panel);
@@ -590,7 +593,8 @@
     gap: 40px;
     padding: 48px 0;
   }
-  .landing-features {
+  .landing-features,
+  .landing-features:is([data-count='2'], [data-count='4']) {
     grid-template-columns: 1fr;
   }
   .landing-workflow,

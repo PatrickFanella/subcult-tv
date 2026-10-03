@@ -3,20 +3,20 @@ title: Publishing History and Cleanup
 type: documentation
 status: reference
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-03
 tags:
 - topic/publishing
 ---
 
-# Publishing History and Cleanup
+# Publishing history and cleanup
 
-September 30, 2026: consolidated the older consistency plan, 28-day loop, generic promotion plan and idea inventories into one governing plan and a focused product bank. Retired W34, W36, W37 and W38 drafting workspaces from the active vault. Old planned dates and draft captions do not establish publication.
+On September 30, 2026 the older consistency plan, 28-day loop, generic promotion plan and idea inventories were consolidated into one governing plan and a focused product bank. The W34, W36, W37 and W38 drafting workspaces were retired from the active vault. Their planned dates and draft captions are not evidence that anything was published.
 
-The governing cadence retains three X posts total, recovery without catch-up debt, distinct account voices and themes as optional selection aids. The old quota and campaign date grids no longer govern future work. W39–W41 scaffolding is superseded by a fresh six-product pilot; close expired scaffolding only with an explicit skip record.
+As of September 30 the governing cadence kept three X posts total, recovery without catch-up debt, distinct account voices, and themes as optional selection aids. (The October 1 cadence in [[Social Posting Automation Plan]] later raised the volume.) The old quota and campaign date grids no longer govern future work. A fresh six-product pilot supersedes the W39–W41 scaffolding; close expired scaffolding only with an explicit skip record.
 
 ## Recovery
 
-Before mutation, 51 files were copied to `/home/onnwee/.local/state/social-posting-cleanup/20261001T043000Z/before/`, with original SHA-256 hashes in `manifest.json`. Additional backlink files are backed up there before rewriting. This backup is outside the active vault, so obsolete material is recoverable without appearing as a current publishing artifact. Repository history also remains intact.
+Before anything was changed, 51 files were copied to `/home/onnwee/.local/state/social-posting-cleanup/20261001T043000Z/before/`, with original SHA-256 hashes in `manifest.json`. Additional backlink files are backed up there before rewriting. The backup sits outside the active vault, so obsolete material can be recovered without showing up as a current publishing artifact. Repository history is intact.
 
 ## Removed active artifacts
 
@@ -37,8 +37,8 @@ Removed the unused January 22 CLPR placeholder draft `697294bd1fc4c8e53503b7d1` 
 
 ## Preserved work
 
-Music, plugin and other authored drafts were not discarded. Canonical-vault edits, source repositories, operational reports and engineering task histories were preserved. The blank CLPR project stub points to the maintained CLPR work note. Patreon relaunch/page/positioning documents remain historical or unverified setup material and do not govern the current product cadence.
+Music, plugin and other authored drafts were kept, as were canonical-vault edits, source repositories, operational reports and engineering task histories. The blank CLPR project stub points to the maintained CLPR work note. The Patreon relaunch, page and positioning documents are historical or unverified setup material and do not govern the current product cadence.
 
 ## Remaining gates
 
-Canonical adoption completed September 30, preserving the dirty workbench entry and September 30 music drafts. Unattended runner authentication, scheduling implementation, a real approved post, deployment of website copy and the separate Patchwork home privacy correction remain open. Canonical adoption is an internal vault update; no public publication is implied by this cleanup.
+As of September 30: canonical adoption was complete, preserving the dirty workbench entry and that day's music drafts. Still open were unattended runner authentication, scheduling implementation, a real approved post, deployment of website copy and the separate Patchwork home privacy correction. Canonical adoption is an internal vault update. This cleanup published nothing.

@@ -22,7 +22,7 @@ func (h *Handler) SubmitContact(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if req.Name == "" || req.Email == "" || req.Message == "" {
-		writeError(w, http.StatusBadRequest, "name, email, and message are required")
+		writeError(w, http.StatusBadRequest, "Name, email and message are required.")
 		return
 	}
 
@@ -34,14 +34,14 @@ func (h *Handler) SubmitContact(w http.ResponseWriter, r *http.Request) {
 		req.Name, req.Email, req.Subject, req.Message,
 	).Scan(&c.ID, &c.Name, &c.Email, &c.Subject, &c.Message, &c.Read, &c.CreatedAt)
 	if err != nil {
-		writeError(w, http.StatusInternalServerError, "failed to save contact submission")
+		writeError(w, http.StatusInternalServerError, "We could not save your message. Try again, or email info@subcult.tv.")
 		return
 	}
 
 	h.notifyContact(c)
 
 	writeJSON(w, http.StatusCreated, map[string]interface{}{
-		"message": "signal received",
+		"message": "Message received.",
 		"id":      c.ID,
 	})
 }

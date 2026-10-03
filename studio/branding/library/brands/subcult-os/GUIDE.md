@@ -1,10 +1,39 @@
 # Subcult OS — Brand and asset guide
 
-Selected direction: **B / The terminal ledger**. Status: local production pack v1. Direction selection is not permission to publish a post or change a profile.
+Selected direction: **B / The terminal ledger**. Status: local production pack v1. Selecting a direction does not approve a post or a profile change.
 
 Subcults terminal system: Space Mono, square frames, purple actions and cyan focus on a black canvas, matching the live site.
 
-Matches the live os.subcult.tv design system (the Subcults terminal foundation, selected by the user on September 30, 2026; source of truth: subcult-os contracts/design/tokens.json). Space Mono is the only typeface: bold for headings, buttons and labels, regular for body copy, uppercase with wide tracking for labels. Bold is the heaviest weight. Corners are square everywhere; panels separate with visible borders, not shadows. Purple is the action and artwork color: purple fills carry white text (5.7:1), but purple text on black is below the small-text target, so labels use cyan. Cyan also marks focus. Status colors (green, amber, red, cyan) mark states and always come with words. Event artwork stays immersive and black. The site sets the OS lettermark with its cyan cursor block (`product/mark-tight-outlined.svg`) beside the wordmark in live Space Mono bold, and uses the mark as its favicon and app icon.
+## Notes for this pack
+
+The pack matches the live os.subcult.tv design system: the Subcults terminal foundation, selected by the user on September 30, 2026. The source of truth is `contracts/design/tokens.json` in the subcult-os repository.
+
+### Type
+
+Space Mono is the only typeface. Bold sets headings, buttons and labels, and it is the heaviest weight. Regular sets body copy. Labels are uppercase with wide tracking.
+
+### Shape
+
+Corners are square everywhere. Panels separate with visible borders, not shadows.
+
+### Color
+
+- Purple is the action and artwork color. Purple fills carry white text (5.7:1). Purple text on black is below the small-text target, so labels use cyan.
+- Cyan also marks focus.
+- Status colors (green, amber, red, cyan) mark states and always come with words.
+- Event artwork stays immersive and black.
+
+### Mark on the site
+
+The site sets the OS lettermark with its cyan cursor block (`product/mark-tight-outlined.svg`) beside the wordmark in live Space Mono bold. It uses the mark as its favicon and app icon.
+
+## Voice
+
+Subcult OS sounds like the stage manager on comms forty minutes before doors: a run sheet, clipped, time-stamped and role-first, with the dry humor of someone who has run a door from a paper list. Copy can be set as cues, such as "19:00 doors". Name the roles and the moments: load-in, doors, the list, close-out. Say that the software is in development and built around free ticket reservations.
+
+Leave out "event management platform" and nightlife glamour. Promise nothing about paid ticketing, payouts, app stores or a production service.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md). Facts come from [the claims register](../../../../content/social/Product%20Claims%20Register.md), entry C-OS.
 
 ## Color roles
 
@@ -16,27 +45,36 @@ Matches the live os.subcult.tv design system (the Subcults terminal foundation, 
 | Secondary | #00ffff | Supporting artwork |
 | Small label | #00ffff | Metadata on the main canvas |
 
-Measured text/base contrast: **21.00:1**. Small-label/base contrast: **16.75:1**. Accent/base contrast: **3.69:1**. Use at least 4.5:1 for ordinary text and 3:1 for large text. Swatches are roles, not interchangeable text colors.
+Measured contrast against the base: text **21.00:1**, small label **16.75:1**, accent **3.69:1**. Ordinary text needs at least 4.5:1 and large text at least 3:1. Each swatch has one role. A color that works as a fill may not pass as text.
 
 ## Typography and spacing
 
-- Display: Space Mono, bold for headlines.
+- Display: Space Mono, bold, for headlines.
 - Body: Space Mono, regular and bold.
 - Labels: Space Mono, regular.
-- Layout spacing: 8, 16, 24, 32, 48, 64, 96 pixels.
-- Use one clear headline, one supporting point and one destination per promotional asset.
-- Keep at least one quarter of the mark height clear on all sides. Minimum mark width: 32 pixels on screen. Minimum horizontal lockup width: 220 pixels. Use the mark alone below that size.
-- Avoid stretching, skewing, adding effects to or redrawing the carried-forward product marks. Use the outlined logo exports when fonts are unavailable.
+- Spacing steps: 8, 16, 24, 32, 48, 64 and 96 pixels.
+- Give each promotional asset one headline, one supporting point and one destination.
+- Leave a quarter of the mark's height clear on every side. On screen the mark is at least 32 pixels wide and the horizontal lockup at least 220 pixels wide. Below that width, use the mark alone.
+- Do not stretch, skew, redraw or add effects to the product marks. Where the fonts are not installed, use the outlined logo exports.
 
 ## Files and editing
 
-`logos/` contains full-color primary/dark/light lockups and marks plus single-color variants, each with editable SVG, outlined SVG and transparent PNG. `social/` contains an X/Bluesky banner, a taller banner master, avatars, square/landscape/story layouts, quote and release templates, and a screenshot frame. `video/` contains title, thumbnail, end-card and transparent lower-third layouts with a caption style file. `fonts/` contains the required fonts and redistribution licenses. `tokens.json` and `tokens.css` record reusable design roles. `asset-manifest.json` records file dimensions and hashes.
+| Path | Contents |
+| --- | --- |
+| `logos/` | Primary, dark and light lockups and marks in full color, plus single-color variants. Each has an editable SVG, an outlined SVG and a transparent PNG. |
+| `social/` | X/Bluesky banner, taller banner master, avatar, square, landscape and story layouts, quote and release templates, and a screenshot frame. |
+| `video/` | Title, thumbnail, end-card and transparent lower-third layouts, with a caption style file. |
+| `fonts/` | The fonts the pack needs and their redistribution licenses. |
+| `tokens.json`, `tokens.css` | Reusable design roles. |
+| `asset-manifest.json` | File dimensions and hashes. |
 
-Editable SVG text needs the included fonts. Install them for editing, or use the outlined logo SVGs and rendered PNGs for placement. PNGs are exported from the editable SVG source. Re-render with the top-level `build_packs.py` and its fontconfig.xml; do not edit the PNG separately.
+Editable SVG text needs the included fonts. Install them to edit, or place the outlined logo SVGs and the rendered PNGs instead. The PNGs are exported from the editable SVGs. Re-render them with the top-level `build_packs.py` and its `fontconfig.xml`; do not edit a PNG on its own.
 
-The story artwork keeps the main message between y=250 and y=1670 on a 1080×1920 canvas. Check the destination’s current overlay and crop behavior in its composer. Keep critical banner content away from the bottom-left avatar area. These are layout guides, not a guarantee of every platform crop.
+The story artwork keeps its main message between y=250 and y=1670 on a 1080×1920 canvas. Keep critical banner content away from the bottom-left corner, where the avatar sits. These are layout guides, and platforms crop differently, so check the current overlay and crop in the destination's composer.
 
-`product/` contains exports at their final sizes for the Subcult OS site and app. Copy them as they are; do not crop, resize or recolor them downstream.
+## Product exports
+
+`product/` holds exports at their final sizes for the Subcult OS site and app. Copy them as they are. Do not crop, resize or recolor them downstream.
 
 | File | Use |
 | --- | --- |
@@ -51,12 +89,14 @@ The story artwork keeps the main message between y=250 and y=1670 on a 1080×192
 
 ## Screenshots and video
 
-Replace the screenshot placeholder with a real capture of a verified workflow. Show enough interface to establish context; crop credentials, private dashboards, unpublished material and personal data. Keep original recordings separately from edited exports.
+Replace the screenshot placeholder with a real capture of a verified workflow. Show enough of the interface to give context. Crop out credentials, private dashboards, unpublished material and personal data. Keep original recordings separate from edited exports.
 
-The video templates use a 1920×1080 canvas and a 96-pixel outer margin. Keep captions to two short lines. Use the supplied ASS style as a starting point, then check readability at phone size. Lower-thirds have a transparent background outside the panel. Avoid rapid flashing; use a short fade or hard cut for title/end cards. The eight-second preview is a template demonstration, not a product demonstration.
+The video templates use a 1920×1080 canvas with a 96-pixel outer margin. Keep captions to two short lines. Start from the supplied ASS style, then check that captions read at phone size. The lower third is transparent outside its panel. Use a short fade or a hard cut for title and end cards, and avoid rapid flashing. The eight-second preview demonstrates the template, not the product.
 
 ## Copy, alt text and sources
 
-Use verified product claims and exact approved copy. Quote/release template text is placeholder content and must be replaced. Describe the completed image in alt text, including the visible message; do not describe a screenshot placeholder as a working feature. `alt-text.md` supplies starter descriptions for the completed sample artwork.
+Use verified product claims and exact approved copy. Each product has its own voice, set out in [the voice guide](../../../../content/VOICE.md). A headline in the sample artwork shows the layout. It is approved copy only where this guide says so. The text in the quote and release templates is a placeholder and must be replaced.
 
-Reference: Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02. Source/asset observation dates are recorded in the reference above. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
+Alt text describes the finished image, including the words visible in it. Do not describe a screenshot placeholder as a working feature. `alt-text.md` has starter descriptions for the sample artwork.
+
+Reference: Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02. Where an observation date was recorded, it is in the reference above. Original files in the legacy library are preserved. The inventory's hashes identify bytes. They do not establish permission to publish third-party material.

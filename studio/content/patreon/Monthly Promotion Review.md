@@ -16,7 +16,7 @@ title: Monthly Promotion Review
 
 # Monthly Promotion Review
 
-Use this to improve the Patreon pitch and promotion loop.
+Run this once a month to revise the Patreon pitch and promotion.
 
 ## Monthly tasks
 
@@ -53,5 +53,5 @@ Use this to improve the Patreon pitch and promotion loop.
 - tighten [[001 Projects/Works/Patreon/Patreon Positioning]]
 - update pinned post if needed
 - rotate CTA language
-- double down on top-performing post themes
+- repeat the post themes that performed best
 - schedule next month in [[001 Projects/Works/Patreon/Super Productivity Promotion Tasks]]

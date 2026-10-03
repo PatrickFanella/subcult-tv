@@ -2,36 +2,22 @@
 
 The spreadsheet works until two people edit the same request, an old offer gets recirculated, and the coordinator who knows what happened goes offline.
 
-Nobody planned to make that coordinator the database. Urgent work kept arriving, and someone cared enough to remember. Over time, everyone depended on that person.
+Nobody planned to make that coordinator the database. Urgent work kept arriving, and someone cared enough to remember. Over time everyone depended on that person.
 
-Group chats, pinned posts, and shared sheets can carry mutual aid. People clean duplicates, verify offers, update requests, and absorb the strain of keeping a rough system humane. Eventually that labor becomes too much for a few volunteers.
+Group chats, pinned posts, and shared sheets can carry mutual aid for a while. People clean duplicates, verify offers, update requests, and absorb the strain of keeping a rough system humane. Eventually that labor is too much for a few volunteers. Formal software can spread the load. It can also harden bad rules. The task is to add structure without making care answer to platform logic.
 
-Formal software can spread the load, though it can also harden bad rules. The task is to add structure without making care answer to platform logic.
+Patchwork is where we work on that problem. It is a pre-alpha demonstration built on the AT Protocol, with a web client, a query API, an ingestion and indexing pipeline, and a moderation worker. Nobody should arrange real help through it yet.
 
-Patchwork is active work on that problem. It uses the AT Protocol and includes a web client, a query API, an ingestion and indexing pipeline, and a moderation worker.
+Those components exist for specific jobs. Needs and offers must be findable. A request needs a state: open, fulfilled, stale, disputed, or withdrawn. Old records need to expire. Sensitive requests need visibility controls. Moderators need to record their actions too, so that people can understand what changed and challenge a decision. Quiet, unaccountable intervention may remove immediate abuse while corroding trust in the network.
 
-Those components support specific jobs. Needs and offers must be findable. A request needs state such as open, fulfilled, stale, disputed, or withdrawn. Old records need expiration. Sensitive requests need visibility controls.
+Provenance helps people judge a request: where it came from, who can vouch for it, and what changed after posting. It cannot prove that a person deserves help, and the software should never pretend otherwise.
 
-Moderators need to record their actions too. People should be able to understand what changed and challenge a decision. Quiet, unaccountable intervention may remove immediate abuse while corroding trust in the network.
+Centralized platforms often turn trust into a score owned by the operator. That invites a caste system, especially when people cannot inspect or contest the inputs. A mutual-aid network needs room for local judgment. History and context matter, and neither fits into a global reputation number.
 
-Provenance helps people judge a request: where it came from, who can vouch for it, and what changed after posting. It cannot prove that a person deserves help. The software should never pretend otherwise.
+Shared queues and visible state keep coordinators from becoming permanent points of failure. Work gets easier to hand off, and a clear moderation trail means fewer decisions reconstructed from memory.
 
-Centralized platforms often turn trust into a score owned by the operator. That approach invites a caste system, especially when people cannot inspect or contest the inputs.
+The same systems can cause harm. Verification may become gatekeeping. Public records may expose hardship. Automation may delay an urgent request because it does not fit the expected path. So the system should collect only what coordination requires. Asking for help already carries risk, and operators have no right to turn that moment into content, training data, or a growth metric.
 
-A mutual-aid network needs room for local judgment. History and context matter, and neither fits cleanly into a global reputation number.
+That changes what is worth measuring. We would count abandoned requests and the places where moderation stalls. We would ask whether a requester can limit who sees a need, and whether a volunteer can step away without taking the whole process with them. Success may mean less activity inside the app: a need resolved, a record closed, and no reason to keep anyone engaged.
 
-Shared queues and visible state keep coordinators from becoming permanent points of failure. They make work easier to hand off. Clear moderation trails reduce the need to reconstruct decisions from memory.
-
-These systems can cause harm. Verification may become gatekeeping. Public records may expose hardship. Automation may delay an urgent request because it does not fit the expected path.
-
-The system should collect only what coordination requires. Asking for help already carries risk. Its operators have no right to turn that moment into content, training data, or a growth metric.
-
-This changes the product questions. How many requests remain abandoned? Where does moderation stall? Can a requester limit who sees a need? Can a volunteer step away without taking the whole process with them?
-
-Success may mean less activity inside the app: a need resolved, a record closed, and no reason to keep someone engaged.
-
-> Care needs infrastructure, but infrastructure must know when to get out of the way.
-
-Software cannot supply trust, local knowledge, or the person who arrives with groceries. It can lower the clerical cost paid by people who do.
-
-Build for the handoff, then let the exchange belong to them.
+Software cannot supply trust, local knowledge, or the person who arrives with groceries. It can lower the clerical cost paid by the people who do.

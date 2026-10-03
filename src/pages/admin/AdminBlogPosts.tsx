@@ -66,7 +66,7 @@ export default function AdminPosts() {
       setShowForm(false);
       load();
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'save failed');
+      setError(err instanceof Error ? err.message : 'Could not save the post.');
     } finally {
       setSaving(false);
     }
@@ -78,14 +78,14 @@ export default function AdminPosts() {
       await deletePost(id);
       load();
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'delete failed');
+      setError(err instanceof Error ? err.message : 'Could not delete the post.');
     }
   };
 
   return (
     <div>
       <AdminHeader
-        overline="TRANSMISSION LOG"
+        overline="SITE ARTICLES"
         title="Posts"
         action={
           <button
@@ -103,7 +103,7 @@ export default function AdminPosts() {
       {/* ── Form ────────────────────────────────────────────── */}
       {showForm && (
         <div className="mb-6 bg-soot border border-fog p-6">
-          <h2 className="text-lg mb-4">{editing ? 'Edit Post' : 'New Post'}</h2>
+          <h2 className="text-lg mb-4">{editing ? 'Edit post' : 'New post'}</h2>
           <form onSubmit={handleSubmit} className="space-y-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <Field
@@ -251,7 +251,7 @@ export default function AdminPosts() {
             {posts.length === 0 && (
               <tr>
                 <td colSpan={5} className="py-8 text-center font-mono text-sm text-bone">
-                  No posts found. Write your first transmission.
+                  No posts yet. Use “+ NEW POST” to write one.
                 </td>
               </tr>
             )}

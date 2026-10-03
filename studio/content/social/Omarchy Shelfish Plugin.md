@@ -26,13 +26,13 @@ work-type: social-post
 
 ### I built Shelfish for the Omarchy bar
 
-I liked the idea behind plugin containers, but I kept running into one problem: widgets inside a container stopped behaving like normal Omarchy plugins.
+I like plugin containers in principle. In practice, widgets inside one stopped behaving like normal Omarchy plugins.
 
-Some appeared inactive to other plugins. Some lost interactions. Popups and text fields could behave differently because the container loaded another copy of the widget instead of using its existing bar instance.
+Some looked inactive to other plugins. Some lost interactions. Popups and text fields could behave differently, because the container loaded another copy of the widget and ignored the instance already in the bar.
 
 So I built Shelfish.
 
-Shelfish organizes existing Omarchy bar widgets into collapsible groups. It keeps each widget’s original instance alive, along with its settings, state, popup behavior, and plugin identity.
+Shelfish organizes existing Omarchy bar widgets into collapsible groups. It keeps each widget's original instance alive, along with its settings, state, popup behavior, and plugin identity.
 
 You can:
 
@@ -43,9 +43,9 @@ You can:
 - Add a Shelfish settings shortcut to a group.
 - Automatically reveal a group when an explicitly configured status changes.
 
-The implementation ended up requiring more care than I expected. Moving QML objects between containers broke anchored widgets, so Shelfish now groups the original bar entries instead. That preserves native behavior and keeps third-party widgets compatible.
+It took more care than I expected. Moving QML objects between containers broke anchored widgets, so Shelfish groups the original bar entries. That keeps native behavior and keeps third-party widgets compatible.
 
-I also had to fix Wayland keyboard focus. The first settings panel looked focused, but keystrokes sometimes went to the application behind it. Shelfish now uses Omarchy’s keyboard-aware panel component, and I verified it by creating a group through synthetic Wayland input.
+Wayland keyboard focus needed a fix too. The first settings panel looked focused, but keystrokes sometimes went to the application behind it. Shelfish now uses Omarchy's keyboard-aware panel component, and I verified it by creating a group through synthetic Wayland input.
 
 The latest security pass tightened two more boundaries:
 
@@ -69,36 +69,26 @@ The current release is `v1.0.6`. Its Omarchy Plugins marketplace submission is s
 
 ## Instagram post
 
-My Omarchy bar was getting crowded, so I built Shelfish.
+My Omarchy bar got crowded, so I built Shelfish.
 
-Shelfish puts existing bar widgets into collapsible groups without recreating them. Their state, popups, settings, and native interactions stay intact.
+It puts the widgets already in your bar into collapsible groups without recreating them. Their state, popups, settings, and native interactions keep working.
 
-Each group can have its own:
+Each group gets a name and icon, its own widget order, a left or right reveal direction, and an optional shortcut to Shelfish settings. The settings UI has an icon grid and a two-column plugin manager.
 
-• Name and icon  
-• Widget order  
-• Left or right reveal direction  
-• Shelfish settings shortcut  
-
-The settings UI also includes an icon grid and two-column plugin manager.
-
-Shelfish is open source and available now on GitHub. The Omarchy Plugins listing is under review.
+It's open source and on GitHub now. The Omarchy Plugins listing is under review.
 
 Link in bio, or search for:
 
 `patrickfanella/omarchy-plugin-shelfish`
 
-#Omarchy #Quickshell #LinuxDesktop #OpenSource #Hyprland
+#Omarchy #Quickshell #Hyprland
 
 ---
 
 ## Twitter/X post
 
-I built Shelfish, an Omarchy plugin that organizes bar widgets into collapsible groups without recreating them.
+Shelfish is an Omarchy plugin I wrote to fold bar widgets into collapsible groups. It groups the widgets already in your bar and doesn't load copies, so their popups and state keep working. MIT licensed:
 
-Pick group icons, order widgets, and reveal them left or right while preserving native popups and state.
-
-MIT licensed:  
 https://github.com/PatrickFanella/omarchy-plugin-shelfish
 
 ---
@@ -107,17 +97,15 @@ https://github.com/PatrickFanella/omarchy-plugin-shelfish
 
 **1/6**
 
-I built Shelfish because my Omarchy bar was crowded, and existing container approaches changed how some plugins behaved.
+I built Shelfish because my Omarchy bar was crowded, and the container approaches I tried changed how some plugins behaved.
 
-Shelfish groups the original bar widgets instead of loading duplicate copies.
+Shelfish groups the original bar widgets. It doesn't load duplicate copies.
 
 https://github.com/PatrickFanella/omarchy-plugin-shelfish
 
 **2/6**
 
-That distinction matters.
-
-Each widget keeps its original:
+Because it's the same instance, each widget keeps its:
 
 • Plugin identity  
 • Runtime state  
@@ -137,23 +125,22 @@ You can order the groups, order the widgets inside each group, and choose whethe
 
 The settings panel has an icon grid and a two-column manager.
 
-Available plugins appear on the left. Members of the selected group appear on the right, with controls for ordering and removal.
+Available plugins are on the left. Members of the selected group are on the right, with controls for ordering and removal.
 
 **5/6**
 
-Shelfish also has a groupable settings shortcut.
+There's also a settings shortcut you can put in a group.
 
-The real manager remains a stable Omarchy bar entry. The shortcut can sit inside a group and open the same settings panel without duShelfish also has a groupable settings shortcut.
-
-The real manager remains a stable Omarchy bar entry. The shortcut can sit inside a group and open the same settings panel without duplicating the service.plicating the service.
+The real manager stays a stable Omarchy bar entry. The shortcut opens the same settings panel without duplicating the service.
 
 **6/6**
 
-The latest release also hardens third-party boundaries.
+The latest release hardens third-party boundaries: plugin names render as plain text, and status polling accepts only bounded scalar values.
 
-Plugin names render as plain text, and status polling accepts only bounded scalar values.
-
-https://omarchyplugins.com/plugin.html?id=io.github.patrickfanella.shelfish
 Shelfish is MIT licensed. Install it with:
 
 `omarchy plugin add https://github.com/PatrickFanella/omarchy-plugin-shelfish.git --enable`
+
+Marketplace listing link, found pasted into 6/6. The Patreon and Instagram drafts say the listing is still under review, so confirm it is live before adding it to the thread:
+
+https://omarchyplugins.com/plugin.html?id=io.github.patrickfanella.shelfish

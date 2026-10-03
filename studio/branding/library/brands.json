@@ -15,7 +15,7 @@
       "TOGETHER."
     ],
     "tag": "SUBCULT.TV",
-    "description": "A louder poster system: condensed black type, purple fields and acid-green registrations.",
+    "description": "A poster system: condensed black type, purple fields and acid-green registration marks.",
     "mode": "subcult-poster",
     "url": "subcult.tv",
     "source": "Alternative proposed system anchored in site palette",
@@ -81,10 +81,10 @@
     "display": "Barlow Condensed",
     "body": "Barlow",
     "headline": [
-      "The clip.",
-      "The moment."
+      "Somebody",
+      "clipped it."
     ],
-    "tag": "CLIP DISCOVERY + CURATION",
+    "tag": "TWITCH CLIPS / CREATOR, TOPIC, TAG",
     "description": "Clip stack layouts with one matching clip card on the square post and the play-triangle logo.",
     "mode": "clpr",
     "url": "clpr.tv",
@@ -113,7 +113,7 @@
       "from a friend."
     ],
     "tag": "MUTUAL AID, BLOCK BY BLOCK",
-    "description": "Warm paper, softer green ink, larger Fraunces headings and a stitched patch shape shared by the P mark, buttons and shadows.",
+    "description": "Warm paper, soft green ink, Fraunces headings and one stitched patch shape shared by the P mark, the buttons and their shadows.",
     "mode": "patchwork",
     "url": "patchwork.subcult.tv",
     "source": "Live site tokens",
@@ -135,11 +135,11 @@
     "display": "Newsreader",
     "body": "Inter Tight",
     "headline": [
-      "Find the passage.",
-      "Keep the context."
+      "He said it on stream.",
+      "The record shows when."
     ],
     "tag": "PIKER BROADCASTING SERVICE",
-    "description": "The live red-and-paper theme, Newsreader headlines and current PBS mark.",
+    "description": "The live site's red-and-paper theme, with Newsreader headlines and the current PBS mark.",
     "mode": "hasanara",
     "url": "hasanara.tv",
     "source": "Live site tokens and logo",
@@ -160,11 +160,11 @@
     "display": "Space Grotesk",
     "body": "Public Sans",
     "headline": [
-      "A recording.",
-      "An archive."
+      "The sentence, and",
+      "where it was said."
     ],
     "tag": "REKOLEKT BY SUBCULT",
-    "description": "Original bracketed waveform logo and index-green palette; transcript rows replace only the story illustration.",
+    "description": "The original bracketed waveform logo on an index-green palette. Transcript rows replace the waveform in the story illustration only.",
     "mode": "rekolekt-index",
     "url": null,
     "source": "Existing proposed Rekolekt concept; story transcript illustration revision",
@@ -212,8 +212,8 @@
     "display": "Liberation Mono",
     "body": "Public Sans",
     "headline": [
-      "SOUND",
-      "INTO MOTION."
+      "GIVE THE TRACK",
+      "SOMETHING TO LOOK AT."
     ],
     "tag": "MUSIC VISUALS / LYRICS / LOCAL EXPORT",
     "description": "Square controls, hard shadows, pink/cyan offsets and the existing spectrum favicon.",
@@ -237,11 +237,16 @@
     "display": "Archivo Black",
     "body": "Atkinson Hyperlegible Next",
     "headline": [
-      "EVERY LINK.",
-      "ONE BOARD."
+      "ALL OF IT,",
+      "PINNED TO ONE LINK."
+    ],
+    "headline_stack": [
+      "ALL OF IT,",
+      "PINNED TO",
+      "ONE LINK."
     ],
     "tag": "LINK PAGES / BY SUBCULT",
-    "description": "A cork field, paper cards and cobalt pushpins: every destination pinned to one board.",
+    "description": "A cork field, paper cards and cobalt pushpins. Each link is a card pinned to the board.",
     "mode": "corkboard",
     "url": "kork.subcult.tv",
     "source": "Identity for the self-serve links-page service (code name zelda); direction A selected by the user October 2, 2026",
@@ -293,11 +298,11 @@
     "label": "JetBrains Mono",
     "safe_label": "#a33c26",
     "headline": [
-      "Read the field.",
-      "Trace the evidence."
+      "Where the",
+      "field bends."
     ],
     "tag": "SEAT RESEARCH / SOURCE CONTEXT",
-    "description": "Warm paper, dark green ink and rust-red annotations: an editorial system for seat research and its source records.",
+    "description": "Warm paper, dark green ink and rust-red annotations, set like a ledger of seats and their source records.",
     "mode": "left-field",
     "url": null,
     "source": "Left Field main 5f41c5fd5cc5441ded34f8efe3a1fab6ce2c9707, src/app/globals.css and src/components/presentational.tsx, serving left-field.subcult.tv; observed 2026-10-02. New original LF monogram. LF baseline/intersection revision approved by the user in this thread.",
@@ -324,7 +329,7 @@
       "into a show."
     ],
     "tag": "LIVE TAPES / SHARED AIR",
-    "description": "Cream label paper, black shells, red brand tabs and a pine rack: a taper's cassette shelf for concert recordings and one shared radio station.",
+    "description": "A taper's cassette shelf for concert recordings and one shared radio station: cream label paper, black shells, red brand tabs and a pine rack.",
     "mode": "tape-shelf",
     "url": null,
     "source": "Dedhed design proposal docs/design/ in subculture-collective/dedhed (branch t3code/859bfaaf, head e5843b1, proposal files uncommitted on 2026-10-02), derived from the eleven cassette photographs in docs/inspo/; cream backdrop and shared masthead approved by the user on October 2, 2026",
@@ -350,7 +355,7 @@
       "and the one thing now."
     ],
     "tag": "PLAN \u00b7 FOCUS \u00b7 SYNC",
-    "description": "Catppuccin Mocha surfaces with Dracula accents: a planner day with a time column, task rows, one purple focus session, the pink now line and a teal calendar block.",
+    "description": "One planner day on Catppuccin Mocha surfaces with Dracula accents. It has a time column, task rows, one purple focus session, the pink now line and a teal calendar block.",
     "mode": "tadooer",
     "url": null,
     "source": "Tadooer design system docs/design/ in subculture-collective/productivity-suite (branch wave/tadooer-brand, head 17d7bee, committed), mark from apps/web/public/suite-icon.svg; copied 2026-10-02. Promotional direction proposed by Studio; the owner has not reviewed the artwork.",

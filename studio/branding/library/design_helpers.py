@@ -237,7 +237,11 @@ def banner(d):
   s+=line(40,348,1160,348,'#c9c4b6',2)+port_strip(d,40,378)+txt(1160,378,d['url'],16,d['safe_label'],d['label']).replace('<text ','<text text-anchor="end" ')
  elif m=='corkboard':
   s+=txt(44,62,d['tag'],17,d['safe_label'],d['label'])+line(44,82,640,82,fg,3)
-  for i,h in enumerate(d['headline']):s+=txt(44,178+i*86,h,78,fg,d['display'],700,maxw=600)
+  # A headline too long for two lines beside the cards is stacked in three (brands.json headline_stack).
+  if d.get('headline_stack'):
+   for i,h in enumerate(d['headline_stack']):s+=txt(44,162+i*72,h,66,fg,d['display'],700,maxw=600)
+  else:
+   for i,h in enumerate(d['headline']):s+=txt(44,178+i*86,h,78,fg,d['display'],700,maxw=600)
   s+=txt(44,355,d['url'],20,fg,d['label'])
   s+=pinned_card(d,705,58,215,128,-5,[('@yourname',27,d['body'],700),('SOCIAL',15,d['label'],400)])+pinned_card(d,950,92,200,124,6,[('$yourname',26,d['body'],700),('TIPS',15,d['label'],400)])+pinned_card(d,800,222,150,150,-3,[],qr=True)+pinned_card(d,985,250,170,104,4,[('WATCH',24,d['body'],700),('LATEST VIDEO',13,d['label'],400)])
  elif m=='clpr':
@@ -262,7 +266,7 @@ def banner(d):
   s+=txt(40,66,'UNDERTOW',31,a,'Liberation Mono',700)+txt(40,119,'AUDIO / LAYERS / MOTION',16,b,'JetBrains Mono')
   for i,h in enumerate(d['headline']):
    for dx,col in [(-2,b),(2,a),(0,fg)]:s+=txt(40+dx,205+i*80,h,67,col,'Liberation Mono',700)
-  s+=wave(829,199,315,240,a,31)+wave(832,199,315,240,b,31)+line(40,322,1158,322,'#4b4378')+txt(40,363,'undertow.subcult.tv',19,b,'JetBrains Mono')
+  s+=wave(925,199,219,240,a,22)+wave(928,199,219,240,b,22)+line(40,322,1158,322,'#4b4378')+txt(40,363,'undertow.subcult.tv',19,b,'JetBrains Mono')
  elif m=='patrick-wave':
   s+=line(40,36,1160,36,a,4)+wave(55,208,235,232,a,19)+txt(345,103,'PATRICK__EFF',61,fg,'Oswald',700)
   for i,h in enumerate(d['headline']):s+=txt(345,183+i*68,h,50,fg,'Oswald',700)
@@ -275,7 +279,7 @@ def banner(d):
  elif m.startswith('rekolekt'):
   s+=mark(d,922,115,217)+txt(44,66,'rekolekt',41,fg,d['display'],700)+txt(44,109,'BY SUBCULT',15,a,'JetBrains Mono')
   for i,h in enumerate(d['headline']):s+=txt(44,211+i*71,h,62,fg,d['display'],700,maxw=845)
-  s+=line(44,319,825,319,a,2)+txt(44,360,'Searchable recordings. Source intact.',23,b,d['body'])
+  s+=line(44,319,825,319,a,2)+txt(44,360,'Software for timestamped, searchable recording archives.',23,b,d['body'])
  elif m=='subcult-signal':
   s+=line(40,38,1160,38,a,3)+txt(40,100,'SUBCULT',57,fg,'Oswald',700)+txt(40,219,'Tools for the culture',74,fg,'Oswald',700)+txt(40,300,'we build together.',74,fg,'Oswald',700)+mark(d,991,124,140)+txt(40,362,'INDEPENDENT SOFTWARE / SUBCULT.TV',18,b,'JetBrains Mono')
  elif m=='subcult-catalogue':
@@ -299,16 +303,16 @@ def post(d):
   s+=rect(35,86,529,210,'#17141f')+wave(67,184,462,125,a,35)+rect(48,271,117,24,a)+txt(59,289,'CLIP / 001',13,bg,'IBM Plex Mono',700)
   s+=txt(36,373,'Keep the moment.',53,fg,'Barlow Condensed',700)+txt(36,433,'Find the next one.',53,fg,'Barlow Condensed',700)
  elif m=='patchwork':
-  for i,h in enumerate(['A small ask.','A local offer.']):s+=txt(36,149+i*65,h,50,fg,'Fraunces',700)
+  for i,h in enumerate(['Small favors,','close to home.']):s+=txt(36,149+i*65,h,50,fg,'Fraunces',700)
   for i,(label,col) in enumerate([('HELP A NEIGHBOUR',a),('PASS IT ON',d.get('action_tomato',b))]):
    y=294+i*86;s+=stitched_patch(35,y-4,514,67,col,bg,True)+txt(60,y+36,label,20,bg,'Public Sans',700)
   s+=txt(36,492,'Mutual aid, block by block.',22,fg,'Public Sans')
  elif m=='hasanara':
-  s+=line(36,77,564,77,a,3)+txt(36,155,'The passage.',51,fg,'Newsreader',700)+txt(36,213,'The source.',51,fg,'Newsreader',700)+txt(36,271,'The context.',51,fg,'Newsreader',700)
+  s+=line(36,77,564,77,a,3)+txt(36,155,'Check the tape',51,fg,'Newsreader',700)+txt(36,213,'before you',51,fg,'Newsreader',700)+txt(36,271,'quote it.',51,fg,'Newsreader',700)
   s+=rect(36,326,528,130,'#161616')+txt(58,365,'SOURCE / TIMESTAMP / CONTEXT',16,a,'JetBrains Mono')
   for i,w in enumerate([459,419,324]):s+=rect(58,389+i*19,w,5,'#b5afa3')
  elif m=='os':
-  s+=txt(36,134,'The door opens.',38,fg,'Space Mono',700)+txt(36,190,'The plan holds.',38,fg,'Space Mono',700)
+  s+=txt(36,134,'19:00 doors.',38,fg,'Space Mono',700)+txt(36,190,'Everyone on one sheet.',38,fg,'Space Mono',700)
   for i,label in enumerate(['01   PLAN THE EVENT','02   RUN THE DOOR','03   SETTLE AND ARCHIVE']):
    y=270+i*70;s+=rect(36,y,528,56,a if i==1 else '#0d1117',0,None if i==1 else '#465264')+txt(58,y+35,label,18,fg if i==1 else b,'Space Mono',700)
  elif m=='undertow':

@@ -15,8 +15,8 @@ export default function Projects() {
           <p className="showcase-eyebrow">SUBCULT / INDEPENDENT SOFTWARE</p>
           <h1 className="mb-5">Products</h1>
           <p className="text-bone text-lg">
-            From a clip worth keeping to a night worth putting on: nine products, each built for a
-            different part of independent culture.
+            Nine products. Some are live, some are demos and some are still being built. Each one
+            says which.
           </p>
         </header>
         <div className="product-directory">

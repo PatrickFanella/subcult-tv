@@ -122,7 +122,7 @@ export const posts: Post[] = [
       'Search is a memory machine: clips, transcripts, fingerprints, and the fight against amnesia',
     date: '2026-06-18',
     excerpt:
-      'The essay treats consent and retention limits as design requirements for search projects that pair transcripts with provenance.',
+      'Search projects that pair transcripts with provenance need consent and retention limits designed in from the start.',
     tags: ['field-systems', 'search', 'memory'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/search-is-a-memory-machine.mdx'),
@@ -133,7 +133,7 @@ export const posts: Post[] = [
     title: 'Mutual aid has a backend: trust, moderation, and the infrastructure beneath care',
     date: '2026-06-25',
     excerpt:
-      'The essay treats searchable request states and accountable moderation records as design requirements for mutual-aid coordination.',
+      'Mutual-aid coordination needs searchable request states and accountable moderation records.',
     tags: ['field-systems', 'mutual-aid', 'moderation'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/mutual-aid-has-a-backend.mdx'),
@@ -155,7 +155,7 @@ export const posts: Post[] = [
     title: 'Tiny worlds for real life: place, memory, and simulation as interfaces',
     date: '2026-07-09',
     excerpt:
-      'The essay argues that retention control should be a design requirement for simulated worlds that reflect personal habits and community memories.',
+      'Simulated worlds that reflect personal habits and community memories need retention controls designed in.',
     tags: ['field-systems', 'simulation', 'memory'],
     author: 'SUBCULT',
     mdx: () => import('@content/posts/tiny-worlds-for-real-life.mdx'),

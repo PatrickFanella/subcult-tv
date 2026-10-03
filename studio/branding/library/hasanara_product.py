@@ -24,4 +24,26 @@ INTERFACE={
  'source':'rekolekt frontend/src/index.css at 19124a7; hasanara branding/brand.json at c9b09b2',
 }
 
-GUIDE_NOTE=' The application owns the site interface: [the website design specification](WEBSITE.md) records the deployed pages, colour and type roles, components and assets, and lists where the site differs from this pack (a paper edition, its own home headline, hosted variable fonts). `tokens.json` lists the site roles under `product_interface`.'
+GUIDE_NOTE="""## Notes for this pack
+
+### Mark and theme
+
+Match the current hasanara.tv red/PBS theme and keep the actual PBS artwork. The older lime theme in the local checkout is not this pack's reference.
+
+### Type
+
+Newsreader sets editorial headings, Inter Tight sets body copy and JetBrains Mono sets metadata.
+
+### Limits
+
+A quote needs its original passage, attribution and timestamp.
+
+### Site
+
+The application owns the site interface. [The website design specification](WEBSITE.md) records the deployed pages, color and type roles, components and assets, and lists where the site differs from this pack (a paper edition, its own home headline, hosted variable fonts). `tokens.json` lists the site roles under `product_interface`.
+
+## Voice
+
+HasanAra copy is read by the continuity announcer of the Piker Broadcasting Service: public television with a straight face, mock-solemn, a bit cheesy on purpose and never mean. Newspaper furniture is welcome: editions, the record, corrections. Call the archive "the record" and treat timestamps as citations. The joke is the formality, so the facts under it stay exact. Say outright that transcripts are machine-made and need checking against the recording before anyone quotes them. Leave out stan voice, political editorializing, claims of complete coverage or accuracy, and jokes at the expense of people in the recordings.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md). Facts come from [the claims register](../../../../content/social/Product%20Claims%20Register.md), entry C-HASANARA."""

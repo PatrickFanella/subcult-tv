@@ -7,6 +7,10 @@
  * from each product landing hero, in that product's own design. Rerun after
  * changing a landing page's hero, headline, or screenshot.
  *
+ * public/og/left-field.jpg is not captured: it is a Studio export written by
+ * `make studio-export-left-field` and its hash is recorded in
+ * docs/left-field-brand-provenance.json.
+ *
  * Usage:
  *   npm run build && npm run preview          # serves on :4173
  *   npm run capture-og-images                 # in another terminal
@@ -22,6 +26,9 @@ import { PRODUCT_ROUTES } from '../src/lib/product-paths.js';
 
 const BASE_URL = process.env.BASE_URL ?? 'http://localhost:4173';
 const PUBLIC_DIR = join(process.cwd(), 'public');
+
+// Share images owned by a Studio export; capturing would break their provenance hash.
+const STUDIO_EXPORTED = new Set(['left-field']);
 
 // Hide site chrome and tighten the hero so it fills the 1200×630 frame.
 const FRAME_CSS = `
@@ -65,6 +72,10 @@ async function main() {
 
   await capture(page, '/', '.showcase-hero', join(PUBLIC_DIR, 'og-image.png'), 'png');
   for (const [slug, route] of Object.entries(PRODUCT_ROUTES)) {
+    if (STUDIO_EXPORTED.has(slug)) {
+      console.log(`- /products/${route} skipped (Studio export)`);
+      continue;
+    }
     await capture(
       page,
       `/products/${route}`,

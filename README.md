@@ -1,6 +1,6 @@
 # SUBCULT website and Studio
 
-Private source for the public [subcult.tv](https://subcult.tv) website, its authenticated admin workspace and Studio production library. Product pages, brand sources and the interfaces that consume them share one repository and one PR.
+This private repository holds the public [subcult.tv](https://subcult.tv) website, its authenticated admin workspace and the Studio production library. A change to a brand source and the pages that use it goes in one PR.
 
 The application uses React 19, TypeScript, Vite and Tailwind CSS, with a Go/Chi API and PostgreSQL. Studio uses Python for asset exports and preparation jobs. Binary media and fonts use Git LFS.
 
@@ -50,9 +50,9 @@ Public routes are `/`, `/products`, `/products/:slug`, `/about`, `/contact`, `/s
 
 ## Source and publication boundaries
 
-Studio originals stay private. Public assets are explicitly selected and hash-bound to their sources; private browsing bundles are served through the authenticated API. The frontend build excludes Studio sources, and Tailwind scans only application inputs.
+Studio originals stay private. Each public asset is selected by name and recorded with its source hash. Private browsing bundles are served through the authenticated API. The frontend build excludes Studio sources, and Tailwind scans only application inputs.
 
-Prepared drafts, approval, scheduling, dispatch and delivery remain distinct. This repository refresh does not authorize social publication, activate timers or deploy the website. Installed consumers still use the original Studio checkout until the [consolidation activation](docs/REPOSITORY-CONSOLIDATION.md) is verified.
+Preparing a draft, approving it, scheduling it, dispatching it and confirming delivery are separate steps. This repository refresh does not authorize social publication, activate timers or deploy the website. Installed consumers still use the original Studio checkout until the [consolidation activation](docs/REPOSITORY-CONSOLIDATION.md) is verified.
 
 Read [the asset and artifact policy](docs/ASSETS.md), [the cleanup record](docs/REPOSITORY-CLEANUP.md) and [contribution instructions](CONTRIBUTING.md) before changing sources. Historical observations are under `docs/history/` and `studio/docs/history/`; they do not describe current runtime state.
 

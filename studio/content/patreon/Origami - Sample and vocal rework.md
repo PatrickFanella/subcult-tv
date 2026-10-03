@@ -20,11 +20,11 @@ Origami brings together a sample of Ja'afar Hassan's "They Taught Me" and the ac
 
 I wanted a boom-bap beat with room for the vocal. During the arrangement work, I kept moving away from broad, sustained chords and toward shorter parts that could answer each other. Rhodes touches, percussion, and little melodic replies gave me more to work with without filling every gap.
 
-The challenge was making the instrumental interesting on its own while leaving enough space for Gibbs. Adding another part isn't always the answer. Sometimes a sound only needs to appear at the end of a phrase, or disappear when the next vocal line comes in.
+The hard part was keeping the instrumental interesting on its own and still leaving space for Gibbs. Another part wasn't always the fix. Sometimes a sound only needed to show up at the end of a phrase, or get out of the way when the next vocal line came in.
 
-This developed alongside the LOW club mix, but the priorities were different. LOW needed a longer build and release. Here I was concentrating on the pocket and the conversation between the sample, drums, and voice.
+This developed alongside the LOW club mix, but the priorities were different. LOW needed a longer build and release. Here I was working on the pocket, and on how the sample, drums, and voice talk to each other.
 
-The source material deserves a clear credit. The main sample is Ja'afar Hassan's "They Taught Me." The vocal is Freddie Gibbs' "Origami," sourced as an acapella from YouTube. This is my rework, not an official collaboration with either artist.
+Credit where it's due. The main sample is Ja'afar Hassan's "They Taught Me." The vocal is Freddie Gibbs' "Origami," sourced as an acapella from YouTube. This is my rework, not an official collaboration with either artist.
 
 Would you also listen to an instrumental version, or is the vocal version the one you'd come back to?
 

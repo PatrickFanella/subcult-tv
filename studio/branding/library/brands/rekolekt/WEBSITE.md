@@ -18,7 +18,9 @@ Use lowercase `rekolekt` in the wordmark, `Rekolekt` in prose, and “Rekolekt b
 | Relationship note | HasanAra is a live archive powered by Rekolekt. · Apache 2.0 |
 | Closing action | Read the installation guide → the product repository’s `DEVELOPMENT.md` |
 
-Describe passage links as links to the selected range in the currently available recording and transcript. State that automated transcripts can contain errors and should be checked against the recording before quoting. Available features depend on server configuration.
+The table records the deployed copy word for word. New copy follows the Rekolekt voice in [the voice guide](../../../../content/VOICE.md).
+
+Describe a passage link as a link to the selected range in the recording and transcript that are currently available. State that automated transcripts can contain errors and should be checked against the recording before quoting. Which features are available depends on server configuration.
 
 ## Visual application
 
@@ -35,7 +37,7 @@ Keep the selected **A / Index / original concept** identity and the original bra
 | Archive panel | Dark green `#1c2922`, visible rules, lime top edge and an offset dark shadow |
 | Focus | Visible 3px accent outline, offset 6px |
 
-The hero pairs product copy with a working transcript excerpt. Use recording metadata, timecodes, selected passage styling and source actions as the main product evidence. The mark provides identity; it does not replace proof of the workflow.
+The hero sets product copy beside a working transcript excerpt. The excerpt is the evidence for the product: recording metadata, timecodes, the selected-passage style and the source actions. The mark identifies the product and is not a substitute for that evidence.
 
 ## Page structure
 
@@ -48,7 +50,7 @@ The hero pairs product copy with a working transcript excerpt. Use recording met
 7. Closing: installation guide and a reminder that features depend on server settings.
 8. Footer: code/documentation, SUBCULT and recording/trademark attribution.
 
-Each lower section adds a practical detail or destination. Avoid repeating the hero’s promise as the substance of every section.
+Each section below the hero adds a practical detail or a destination. Do not fill a section by repeating the hero’s promise.
 
 ## Transcript evidence and interactions
 
@@ -77,8 +79,8 @@ The desktop canvas is capped at 1280px. Below 760px, stack the hero and lower gr
 
 ## Verification and maintenance
 
-The 2 October implementation was checked in rendered desktop and mobile browser views, including 320px and 390px widths, search matches/no matches, passage selection, keyboard activation, clipboard success and denial, and a linked range in the real HasanAra archive. JavaScript syntax, Docker build and diff checks passed. These observations qualify that revision; recheck changed behavior before claiming a later revision passes.
+The 2 October implementation was checked in rendered desktop and mobile browser views, including 320px and 390px widths, search matches/no matches, passage selection, keyboard activation, clipboard success and denial, and a linked range in the real HasanAra archive. JavaScript syntax, Docker build and diff checks passed. These observations apply to that revision. Recheck any changed behavior before claiming that a later revision passes.
 
-For updates, verify the excerpt against its source and refresh its provenance together. Check font loading, overflow, focus, selected state, copy feedback and FAQ disclosure. Version CSS and JavaScript URLs by content hash and revalidate mutable landing files so cached assets cannot obscure a design update. Keep deployment operations in the product repository’s `landing/README.md`.
+For updates, verify the excerpt against its source and refresh its provenance together. Check font loading, overflow, focus, selected state, copy feedback and FAQ disclosure. Version CSS and JavaScript URLs by content hash and revalidate mutable landing files, so that a cached asset cannot hide a design update. Keep deployment operations in the product repository’s `landing/README.md`.
 
-This spec is maintained source documentation. The pack generator links it from `GUIDE.md`, and `asset-manifest.json` binds both documents to their current bytes. Social/video template copy remains placeholder material until replaced and reviewed for its own destination.
+This specification is maintained by hand. The pack generator links it from `GUIDE.md`, and `asset-manifest.json` binds both documents to their current bytes. Copy in the social and video templates is a placeholder until it is replaced and reviewed for its destination.

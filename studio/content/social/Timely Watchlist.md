@@ -4,14 +4,14 @@ type: work
 status: active
 stage: research
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-03
 ---
 
 # Timely watchlist
 
-Research shortlist for [[Timely Posting Plan]], checked October 1, 2026. These are recommended sources to watch, not installed account monitors or approval to repost. Official website links establish account identity where available. Website and feed activity does not establish recent X posting, popularity or current engagement; indexed X snapshots can be months old. No follow actions, messages or publication occurred during this research.
+Research shortlist for [[Timely Posting Plan]], checked October 1, 2026. These are sources worth watching. Nothing here installs an account monitor or approves a repost. Where available, a link from the official website establishes account identity. Website and feed activity does not show recent X posting, popularity or current engagement, and indexed X snapshots can be months old. The research involved no follows, messages or publication.
 
-Start with Labor Notes, More Perfect Union, Drop Site News, 404 Media, Internet Archive, CDM and KEXP. Drop Site News was explicitly selected by the user on October 1, 2026. This balances left politics, technology and independent culture. Account routing below is an editorial recommendation, not an inferred endorsement of every source position. Check original reporting before using factual claims. General political commentary primarily belongs on Patrick; SUBCULT needs a culture/community connection, and CLPR needs a product/Twitch connection.
+Start with Labor Notes, More Perfect Union, Drop Site News, 404 Media, Internet Archive, CDM and KEXP, which together cover left politics, technology and independent culture. The user explicitly selected Drop Site News on October 1, 2026. The account routing below is an editorial recommendation and does not endorse every position a source takes. Check original reporting before using a factual claim. General political commentary belongs mostly on Patrick; SUBCULT needs a culture or community connection, and CLPR needs a product or Twitch connection.
 
 ## X accounts
 
@@ -30,7 +30,7 @@ Start with Labor Notes, More Perfect Union, Drop Site News, 404 Media, Internet 
 
 ## Sources best watched on their currently linked networks
 
-Do not assume these organizations have ceased X activity merely because their current site omits X. Their official sites currently point to the profiles below, which are the better verified starting destinations.
+These organizations' official sites currently point to the profiles below, which makes them the better-verified places to start. A site that omits X does not show the organization has stopped posting there.
 
 | Source | Verified profile | Why watch | Suggested destination | Official source |
 | --- | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ Do not assume these organizations have ceased X activity merely because their cu
 
 ## Free intake options checked
 
-All eight endpoints below returned parseable RSS during this research. They have not been added to the scheduled runner. The dates are publisher-supplied latest-entry dates observed in the feed, not X activity or independent verification of the article claims.
+All eight endpoints below returned parseable RSS during this research. None has been added to the scheduled runner. Each date is the publisher's own latest-entry date as seen in the feed. It says nothing about X activity and does not verify the article.
 
 | Source | Feed | Latest entry date observed |
 | --- | --- | --- |
@@ -53,8 +53,8 @@ All eight endpoints below returned parseable RSS during this research. They have
 | Godot | [RSS](https://godotengine.org/rss.xml) | September 29, 2026 |
 | itch.io | [RSS](https://itch.io/blog.rss) | September 2, 2026 |
 
-Use feeds to collect article opportunities, then check the original article. Capture the exact original X status URL separately for a quote-post candidate. An article feed does not supply a tweet URL, X engagement metrics or permission to publish. Current timely intake remains HN, captured URLs and bounded verification searches until feed collection is implemented.
+Use feeds to collect article leads, then check the original article. For a quote-post candidate, capture the exact original X status URL separately. An article feed supplies no tweet URL, no X engagement metrics and no permission to publish. Until feed collection is implemented, timely intake is HN, captured URLs and bounded verification searches.
 
 ## People for a second pass
 
-404 Media's [official team page](https://www.404media.co/about/) links [Jason Koebler](https://x.com/jason_koebler) and [Joseph Cox](https://x.com/josephfcox). They are useful candidates for technology/culture commentary and surveillance reporting respectively. Check recent account activity before expanding the initial list; avoid collecting the same story independently from the outlet and its reporters.
+404 Media's [official team page](https://www.404media.co/about/) links [Jason Koebler](https://x.com/jason_koebler) and [Joseph Cox](https://x.com/josephfcox). Koebler is a candidate for technology and culture commentary, Cox for surveillance reporting. Check recent account activity before expanding the initial list, and avoid collecting the same story once from the outlet and again from its reporter.

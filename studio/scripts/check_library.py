@@ -40,11 +40,20 @@ def main():
     assets = sum(check_manifest(path) for path in manifests)
     if args.check_cleanup_originals:
         receipt = json.loads((REPOSITORY / 'docs/cleanup-receipt.json').read_text())
+        # The baseline map is a record and is never rewritten. A deliberate regeneration is
+        # listed in a dated `superseded` entry, and the newest entry for a path is checked.
+        superseded = {}
+        for entry in receipt.get('superseded', []):
+            unknown = set(entry['svg_sha256']) - set(receipt['retained_svg_sha256'])
+            if unknown:
+                raise ValueError(f'Superseding entry names SVGs outside the baseline: {sorted(unknown)[:3]}')
+            superseded.update(entry['svg_sha256'])
         for name, expected in receipt['retained_svg_sha256'].items():
             source = REPOSITORY / name
-            if not source.is_file() or digest(source) != expected:
+            if not source.is_file() or digest(source) != superseded.get(name, expected):
                 raise ValueError(f'Preserved original changed since cleanup: {name}')
-        print(f'Verified {len(receipt["retained_svg_sha256"])} exact SVG hashes from the cleanup baseline.')
+        baseline = len(receipt['retained_svg_sha256']) - len(superseded)
+        print(f'Verified {baseline} exact SVG hashes from the cleanup baseline and {len(superseded)} recorded regenerations.')
     svgs = list(LIBRARY.rglob('*.svg')) + list((ROOT / 'branding/patrick').rglob('*.svg'))
     for path in svgs:
         ET.parse(path)

@@ -18,6 +18,51 @@ DEST = R / 'brands/patrick__eff'
 HISTORY = ROOT / 'branding/archive/patrick-signal-2026-10-02'
 
 
+GUIDE_HEAD = """# Patrick__Eff — selected production pack
+
+Selected by the owner October 2, 2026: **Patch / routed signal**.
+
+The [Patch source](../../../patrick/README.md) is authoritative. It holds the generator, the full guide and the site observations. The earlier Signal pack is preserved in `branding/archive/patrick-signal-2026-10-02/` at the Studio root.
+
+"""
+GUIDE_TAIL = """## Production assets
+
+The pack uses the standard Studio paths: `logos/`, `social/`, `video/` and `artwork/`.
+
+| Asset | Size |
+| --- | --- |
+| Social banner | 1500×500 |
+| Tall banner master | 1500×600 |
+| Avatar PNG | 512×512 |
+| Square templates | 1080×1080 |
+| Story | 1080×1920 |
+| Screenshot frame | 1600×1000 |
+| Video frames | 1920×1080 |
+| Standalone transparent marks | 512×512 |
+| Lockups, with outlined exports | 1000×260 |
+| Overview PNG | 1800×1940 |
+
+## Identity line and logo treatments
+
+The identity line is **Software. Sound. Culture.** Set all three phrases at the same size in each composition.
+
+The open frame with the original waveform is approved in seven treatments: 01, 02, 03, 04, 06, 07 and 08. Lavender is the default, and 06 is its counterpart for light backgrounds. Option 05 is excluded. The [approved logo gallery](../../../patrick/waveform-variations/index.html) shows all seven. Their transparent marks and avatars are in `logos/waveform/`. The monochrome fallback exports keep the plain open frame for small or single-ink uses.
+
+## Rebuild
+
+From the library directory, run `BRAND_ONLY=patrick__eff python build_packs.py`, then `BRAND_ONLY=patrick__eff python render_video_previews.py`. Both steps refresh the manifest and the Patrick ZIP. Do not edit generated PNGs on their own. The full source asset inventory and the editing guidance are in the linked Patch guide.
+"""
+
+
+def write_guide():
+    """Write the pack guide from the Patch source guide. Text only; renders nothing."""
+    guide=(SOURCE/'GUIDE.md').read_text()
+    common=guide[guide.index('## Direction'):guide.index('## Asset inventory')]
+    common=common.replace('../library/references/patrick-variations/mono-outlined.svg','../../references/patrick-variations/mono-outlined.svg')
+    common=common.replace('(../../content/VOICE.md)','(../../../../content/VOICE.md)')
+    (DEST/'GUIDE.md').write_text(GUIDE_HEAD+common+GUIDE_TAIL)
+
+
 def refresh_manifest():
     files=[]
     for path in sorted(DEST.rglob('*')):
@@ -99,10 +144,7 @@ def build(d):
     (DEST/'tokens.json').write_text(json.dumps(tokens,indent=2)+'\n')
     css=(SOURCE/'tokens.css').read_text()+'\n:root {\n'+''.join(f' --brand-{k.replace("_","-")}: {tokens["colors"][k]};\n' for k in ['bg','fg','accent','secondary','safe_label'])+' --font-display: "Space Grotesk"; --font-body: "Inter"; --font-label: "JetBrains Mono";\n}\n.brand-display,.brand-body,.brand-label {text-shadow:none}\n'
     (DEST/'tokens.css').write_text(css)
-    guide=(SOURCE/'GUIDE.md').read_text()
-    common=guide[guide.index('## Direction'):guide.index('## Asset inventory')]
-    common=common.replace('../library/references/patrick-variations/mono-outlined.svg','../../references/patrick-variations/mono-outlined.svg')
-    (DEST/'GUIDE.md').write_text('# Patrick__Eff — selected production pack\n\nSelected by the owner October 2, 2026: **Patch / routed signal**.\n\nAuthoritative generator, guide and observations: [Patch source](../../../patrick/README.md). The earlier Signal pack is preserved in `branding/archive/patrick-signal-2026-10-02/` at the Studio root.\n\n'+common+'## Production assets\n\nThe pack uses the standard Studio paths: `logos/`, `social/`, `video/` and `artwork/`. The social banner is 1500×500, tall master 1500×600, avatar PNG 512×512, square templates 1080×1080, story 1080×1920, screenshot frame 1600×1000 and video frames 1920×1080. Standalone transparent marks are 512×512; lockups are 1000×260, with outlined exports. The overview PNG is 1800×1940.\n\nThe identity line is **Software. Sound. Culture.**, with all three phrases at the same size in each composition. The open frame with the original waveform is approved in seven treatments: 01, 02, 03, 04, 06, 07 and 08. Lavender is the default; 06 is the light-background counterpart. [Approved logo gallery](../../../patrick/waveform-variations/index.html). Transparent marks and avatars live in `logos/waveform/`. Option 05 is excluded. Monochrome fallback exports retain the plain open frame for small or single-ink uses.\n\nRebuild from the library directory with `BRAND_ONLY=patrick__eff python build_packs.py`, then `BRAND_ONLY=patrick__eff python render_video_previews.py`. Both steps refresh the manifest and Patrick ZIP. Do not edit generated PNGs independently. The full source asset inventory and editing guidance are in the linked Patch guide.\n')
+    write_guide()
     for name in ['components.html','logos/variations.html']:
         prefix='../../../../' if '/' in name else '../../../'
         (DEST/name).write_text(f'<!doctype html><html lang="en"><meta charset="utf-8"><title>Patrick__Eff — Patch</title><p>Selected direction: Patch / routed signal.</p><p><a href="{prefix}patrick/index.html">Open the selected design system and asset gallery</a></p><p><a href="{prefix}patrick/waveform-variations/index.html">Seven approved waveform logo treatments</a></p></html>\n')

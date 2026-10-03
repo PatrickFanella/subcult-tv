@@ -58,7 +58,7 @@ export default function AdminStudio() {
         <div>
           <p className="studio-label">SUBCULT / PRODUCTION LIBRARY</p>
           <h1 id="studio-heading">Brand & asset library</h1>
-          <p>Selected identities. Editable exports. Media ready for review.</p>
+          <p>Brand identities, exports and media for each product.</p>
         </div>
         <div className="studio-switch">
           <Link to="/admin/studio/references">Design references →</Link>
@@ -66,7 +66,7 @@ export default function AdminStudio() {
         </div>
       </header>
       <div className="production-rail">
-        <span>01 / Find the right asset</span>
+        <span>Assets by brand</span>
         <Link to="/admin/posts">Posting dashboard →</Link>
       </div>
       {error ? (

@@ -2,7 +2,7 @@
 
 Selected by the owner October 2, 2026: **Patch / routed signal**.
 
-Authoritative generator, guide and observations: [Patch source](../../../patrick/README.md). The earlier Signal pack is preserved in `branding/archive/patrick-signal-2026-10-02/` at the Studio root.
+The [Patch source](../../../patrick/README.md) is authoritative. It holds the generator, the full guide and the site observations. The earlier Signal pack is preserved in `branding/archive/patrick-signal-2026-10-02/` at the Studio root.
 
 ## Direction
 
@@ -10,7 +10,7 @@ Start with patrickfanella.co's actual visual system: blue charcoal, lavender bor
 
 The routing graphic connects inputs to outputs through visible bends and crossings. It can read as software connections or an audio patch panel. Spectrum bars carry sound/process material. These are decorative illustrations, not live audio, architecture diagrams or measured operational data.
 
-Keep the type flat. The site's color-separated headline phrases give enough emphasis; this direction uses no chromatic type offsets. Use a single large message, one motif and a small source/destination line per composition.
+Keep the type flat. The site already separates headline phrases by color, which is enough emphasis, so this direction uses no chromatic type offsets. Each composition gets one large message, one motif and a small source or destination line.
 
 ## Colors
 
@@ -44,12 +44,37 @@ The selected logo combines the open frame from `../../references/patrick-variati
 
 Lavender (01) is the default for dark backgrounds; Light (06) uses charcoal foreground on warm white. The avatar places the logo within the separate routing illustration. Use the plain open-frame monochrome fallback when the waveform becomes indistinct at small sizes or for single-ink printing. Do not stretch the mark.
 
-The selected production banner now uses Patch. The previous banner and its icons/links are preserved in the archived Signal pack and original references. This selection does not update a social profile.
+The selected production banner uses Patch. The previous banner, with its icons and links, is preserved in the archived Signal pack and the original references. This selection does not update a social profile.
+
+## Voice
+
+Patrick writes in the first person singular. Copy reads like a working note from someone who writes software and makes music and does not separate the two: plain, a bit self-deprecating and specific about tools. **Software. Sound. Culture.** stays as the identity line. Leave out founder voice, third-person biography and "passionate about".
+
+The voice for every product is in [the voice guide](../../../../content/VOICE.md).
 
 ## Production assets
 
-The pack uses the standard Studio paths: `logos/`, `social/`, `video/` and `artwork/`. The social banner is 1500×500, tall master 1500×600, avatar PNG 512×512, square templates 1080×1080, story 1080×1920, screenshot frame 1600×1000 and video frames 1920×1080. Standalone transparent marks are 512×512; lockups are 1000×260, with outlined exports. The overview PNG is 1800×1940.
+The pack uses the standard Studio paths: `logos/`, `social/`, `video/` and `artwork/`.
 
-The identity line is **Software. Sound. Culture.**, with all three phrases at the same size in each composition. The open frame with the original waveform is approved in seven treatments: 01, 02, 03, 04, 06, 07 and 08. Lavender is the default; 06 is the light-background counterpart. [Approved logo gallery](../../../patrick/waveform-variations/index.html). Transparent marks and avatars live in `logos/waveform/`. Option 05 is excluded. Monochrome fallback exports retain the plain open frame for small or single-ink uses.
+| Asset | Size |
+| --- | --- |
+| Social banner | 1500×500 |
+| Tall banner master | 1500×600 |
+| Avatar PNG | 512×512 |
+| Square templates | 1080×1080 |
+| Story | 1080×1920 |
+| Screenshot frame | 1600×1000 |
+| Video frames | 1920×1080 |
+| Standalone transparent marks | 512×512 |
+| Lockups, with outlined exports | 1000×260 |
+| Overview PNG | 1800×1940 |
 
-Rebuild from the library directory with `BRAND_ONLY=patrick__eff python build_packs.py`, then `BRAND_ONLY=patrick__eff python render_video_previews.py`. Both steps refresh the manifest and Patrick ZIP. Do not edit generated PNGs independently. The full source asset inventory and editing guidance are in the linked Patch guide.
+## Identity line and logo treatments
+
+The identity line is **Software. Sound. Culture.** Set all three phrases at the same size in each composition.
+
+The open frame with the original waveform is approved in seven treatments: 01, 02, 03, 04, 06, 07 and 08. Lavender is the default, and 06 is its counterpart for light backgrounds. Option 05 is excluded. The [approved logo gallery](../../../patrick/waveform-variations/index.html) shows all seven. Their transparent marks and avatars are in `logos/waveform/`. The monochrome fallback exports keep the plain open frame for small or single-ink uses.
+
+## Rebuild
+
+From the library directory, run `BRAND_ONLY=patrick__eff python build_packs.py`, then `BRAND_ONLY=patrick__eff python render_video_previews.py`. Both steps refresh the manifest and the Patrick ZIP. Do not edit generated PNGs on their own. The full source asset inventory and the editing guidance are in the linked Patch guide.

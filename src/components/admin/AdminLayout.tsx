@@ -19,7 +19,7 @@ export default function AdminLayout() {
   if (loading) {
     return (
       <div className="admin-shell min-h-screen bg-void flex items-center justify-center">
-        <div className="font-mono text-signal animate-pulse">LOADING CONTROL PANEL...</div>
+        <div className="font-mono text-signal animate-pulse">Loading…</div>
       </div>
     );
   }
@@ -79,9 +79,7 @@ export default function AdminLayout() {
       <main className="flex-1 min-w-0 overflow-auto">
         <div className="p-6 lg:p-8">
           <Suspense
-            fallback={
-              <div className="font-mono text-dust text-sm cursor-blink">&gt; loading signal...</div>
-            }
+            fallback={<div className="font-mono text-dust text-sm cursor-blink">Loading…</div>}
           >
             <Outlet />
           </Suspense>

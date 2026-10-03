@@ -84,7 +84,7 @@ function ReferenceDetail({ id, close }: { id: string; close: () => void }) {
       link.click();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
     } catch {
-      setDownloadError('Could not download this file. Please retry.');
+      setDownloadError('Could not download this file. Try again.');
     }
   }
   return (
@@ -283,7 +283,7 @@ export default function AdminReferences() {
           </Link>
           <p className="studio-label">SUBCULT / REFERENCE LIBRARY</p>
           <h1 id="references-heading">Design references</h1>
-          <p>Explore visual systems, read the studies, and keep the source evidence close.</p>
+          <p>Visual systems and design studies, each with its sources.</p>
         </div>
         <div className="reference-view-switch" aria-label="Display view">
           <button

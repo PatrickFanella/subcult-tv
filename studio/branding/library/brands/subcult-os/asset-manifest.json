@@ -5,13 +5,13 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "02bc9ed0d8b2a4806a73347c7c1fbd0ade85feab50994e590e741e500c6ac7e8",
-      "bytes": 6112
+      "sha256": "bb12bf5920592f7838f61cd50d0a06f1d69923d1355a5029f7059c9cc1e0a9a2",
+      "bytes": 7213
     },
     {
       "path": "alt-text.md",
-      "sha256": "81ccee2bfff923b5df1b3001b6c828d28e4083ea2ca4e5a5abc85126f03aad74",
-      "bytes": 597
+      "sha256": "fd866215ad45854423500ff00ce82f969737e8bc691e9fc38f8596a75109dc45",
+      "bytes": 975
     },
     {
       "path": "fonts/Space-Mono-0.ttf",
@@ -210,16 +210,16 @@
     },
     {
       "path": "pack-preview.png",
-      "sha256": "4296b2e5386d593cc1ccd74b591fed3f45736119355b1db7c699fe60f6dfcbc9",
-      "bytes": 136032,
+      "sha256": "4839a09fe04760dfab99a282848f5362c020ad5ed347fa7888ccc4e0c14f938c",
+      "bytes": 138180,
       "width": 1600,
       "height": 1800,
       "mode": "RGB"
     },
     {
       "path": "pack-preview.svg",
-      "sha256": "1528771956a7eefe5ded56ddb52dcedd14e02858b7092b77a8afde018c96239d",
-      "bytes": 12071
+      "sha256": "e233c4a2fdb1a7805fe0f8bb4a1ca86043c0243c3f43bd9ce640ea1c4417099f",
+      "bytes": 12075
     },
     {
       "path": "product/android-adaptive-foreground.png",
@@ -426,16 +426,16 @@
     },
     {
       "path": "social/square-post.png",
-      "sha256": "0e7676667bdf771635c5718267d8ca04814e4cf82d6d35c7e093c79d494fa379",
-      "bytes": 47455,
+      "sha256": "5c923edba1895ecaa2aa57c23b0e460074651659126c2f6c729bc9f0de32558e",
+      "bytes": 51396,
       "width": 1080,
       "height": 1080,
       "mode": "RGB"
     },
     {
       "path": "social/square-post.svg",
-      "sha256": "624032bd678fe1c9060e8f40b209dd720db93ee66ac7641faf37c63fa362f213",
-      "bytes": 1397
+      "sha256": "df5bf68cecee6be8ed3628de740b7b9e5e58157e168205e8005922c6d6e2c0a1",
+      "bytes": 1401
     },
     {
       "path": "social/story-template.png",

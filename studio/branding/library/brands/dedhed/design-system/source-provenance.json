@@ -37,5 +37,36 @@
       "sha256": "48b98672966bed5f524bc2bbb14f483449ea1561f115840d26c4da7ace6bedb2",
       "bytes": 12788
     }
-  ]
+  ],
+  "studio_edit": {
+    "date": "2026-10-03",
+    "note": "Studio reworded sample and explanatory copy to follow studio/content/VOICE.md. Tape and show data, tokens and class names are unchanged. The product repository then took the same wording on its branch copy/product-voice. The current bytes of each Studio copy are in the pack asset-manifest.json.",
+    "files_hashes_describe": "the product-repository files as copied on copied_at, not the edited Studio copies",
+    "differs_from_source_as_copied": [
+      "README.md",
+      "examples/01-specimen.html",
+      "examples/02-rack.html",
+      "examples/04-deck.html"
+    ],
+    "identical_to_source_as_copied": [
+      "examples/03-jcard.html",
+      "tokens.css"
+    ],
+    "readme_alignment": {
+      "date": "2026-10-03",
+      "note": "README.md still said the design was a proposal not yet applied to web/. The product repository applied it on 2026-10-02, so the Studio README was replaced with the product repository's docs/design/README.md, which changes the status line and replaces the section Applying it to the app with How the app uses it.",
+      "source_branch": "copy/product-voice",
+      "source_head": "ab9d6582371f62cefeb78d90d2e439b087fbc2a3",
+      "source_docs_committed": true,
+      "readme_sha256": "363d72904c8d1486f293add0a10d66c50b15af09904c2b1e3da4ee1c7a47c75f",
+      "identical_to_that_revision": [
+        "README.md",
+        "examples/01-specimen.html",
+        "examples/02-rack.html",
+        "examples/03-jcard.html",
+        "examples/04-deck.html",
+        "tokens.css"
+      ]
+    }
+  }
 }

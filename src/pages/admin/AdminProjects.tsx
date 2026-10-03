@@ -82,7 +82,7 @@ export default function AdminProjects() {
       setShowForm(false);
       load();
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'save failed');
+      setError(err instanceof Error ? err.message : 'Could not save the project.');
     } finally {
       setSaving(false);
     }
@@ -94,14 +94,14 @@ export default function AdminProjects() {
       await deleteProject(id);
       load();
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'delete failed');
+      setError(err instanceof Error ? err.message : 'Could not delete the project.');
     }
   };
 
   return (
     <div>
       <AdminHeader
-        overline="PROJECT REGISTRY"
+        overline="PRODUCT CATALOG"
         title="Projects"
         action={
           <button
@@ -119,7 +119,7 @@ export default function AdminProjects() {
       {/* ── Form Modal ──────────────────────────────────────── */}
       {showForm && (
         <div className="mb-6 bg-soot border border-fog p-6">
-          <h2 className="text-lg mb-4">{editing ? 'Edit Project' : 'New Project'}</h2>
+          <h2 className="text-lg mb-4">{editing ? 'Edit project' : 'New project'}</h2>
           <form onSubmit={handleSubmit} className="space-y-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <Field
@@ -142,13 +142,13 @@ export default function AdminProjects() {
               textarea
             />
             <Field
-              label="Long Description"
+              label="Long description"
               value={form.long_description || ''}
               onChange={(v) => setForm({ ...form, long_description: v || undefined })}
               textarea
             />
             <Field
-              label="Why It Exists"
+              label="Why it exists"
               value={form.why_it_exists || ''}
               onChange={(v) => setForm({ ...form, why_it_exists: v || undefined })}
               textarea
@@ -157,7 +157,15 @@ export default function AdminProjects() {
               <Field
                 label="Types (comma-separated)"
                 value={form.type.join(', ')}
-                onChange={(v) => setForm({ ...form, type: v.split(',').map((s) => s.trim()).filter(Boolean) })}
+                onChange={(v) =>
+                  setForm({
+                    ...form,
+                    type: v
+                      .split(',')
+                      .map((s) => s.trim())
+                      .filter(Boolean),
+                  })
+                }
                 required
               />
               <Select
@@ -167,7 +175,7 @@ export default function AdminProjects() {
                 options={['active', 'incubating', 'archived']}
               />
               <Select
-                label="Cover Pattern"
+                label="Cover pattern"
                 value={form.cover_pattern}
                 onChange={(v) => setForm({ ...form, cover_pattern: v })}
                 options={['circuit', 'grid', 'waves', 'dots', 'sigil']}
@@ -215,12 +223,12 @@ export default function AdminProjects() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               <Field
-                label="Sort Order"
+                label="Sort order"
                 value={String(form.sort_order)}
                 onChange={(v) => setForm({ ...form, sort_order: parseInt(v) || 0 })}
               />
               <Field
-                label="Cover Color"
+                label="Cover color"
                 value={form.cover_color || ''}
                 onChange={(v) => setForm({ ...form, cover_color: v || undefined })}
               />
@@ -309,7 +317,7 @@ export default function AdminProjects() {
             {projects.length === 0 && (
               <tr>
                 <td colSpan={6} className="py-8 text-center font-mono text-sm text-bone">
-                  No projects found. Create one to get started.
+                  No projects yet. Use “+ NEW PROJECT” to add one.
                 </td>
               </tr>
             )}

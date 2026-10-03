@@ -13,7 +13,15 @@ Selected by the owner October 2, 2026. Patch / routed signal replaces the former
 
 This folder is the authoritative source for Patch. The library's normal Patrick pack, gallery and ZIP are generated from it. The complete prior Signal pack is preserved at `branding/archive/patrick-signal-2026-10-02/` from the Studio root. The original mark and banner references are untouched.
 
-The website supplies the charcoal/lavender/pink/green palette and Space Grotesk, Inter and JetBrains Mono hierarchy. Original vector routing and spectrum illustrations expand those rules into headers, posts, an avatar, story artwork and video templates. The existing PF mark is recolored without changing geometry. The owner selected the open frame and requested the older waveform behind it. Treatments 01, 02, 03, 04, 06, 07 and 08 are approved. The production templates use Lavender (01); Light (06) is its light-background counterpart. All seven approved treatments are included in the production pack. Option 05 is excluded; its generated previews were removed.
+## What is in the system
+
+The website supplies the palette (charcoal, lavender, pink and green) and the type hierarchy (Space Grotesk, Inter and JetBrains Mono). Original vector routing and spectrum illustrations carry those rules into headers, posts, an avatar, story artwork and video templates.
+
+The existing PF mark is recolored without changing its geometry. The owner selected the open frame and requested the older waveform behind it.
+
+- Treatments 01, 02, 03, 04, 06, 07 and 08 are approved, and all seven are in the production pack.
+- The production templates use Lavender (01). Light (06) is its counterpart for light backgrounds.
+- Option 05 is excluded. Its generated previews were removed.
 
 ## Rebuild
 

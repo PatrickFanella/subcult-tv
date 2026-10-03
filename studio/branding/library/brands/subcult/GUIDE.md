@@ -1,10 +1,38 @@
 # SUBCULT — Brand and asset guide
 
-Selected direction: **C / Culture / poster press**. Status: local production pack v1. Direction selection is not permission to publish a post or change a profile.
+Selected direction: **C / Culture / poster press**. Status: local production pack v1. Selecting a direction does not approve a post or a profile change.
 
-A louder poster system: condensed black type, purple fields and acid-green registrations.
+A poster system: condensed black type, purple fields and acid-green registration marks.
 
-This is the user-selected C direction. User-edited banner, logo banner and square-post masters are kept in references/subcult-edited-layouts/ and copied without alteration during rebuilds. The user-authored master mark is references/subcult-mark-master.svg: filled S and underscore, outlined C, a tilted green block, registration lines and a terminal square. Preserve its geometry, overlap and layer order. Use the master SVG for every variant; recolor only ink and accent for dark and light applications. In monochrome, outline the accent block so the letters remain legible. Use purple as the primary field, dark ink for headlines and acid green for blocks, registration marks and large emphasis. Use dark ink for text on green. Green on purple is decorative; it is below the small-text contrast target. Keep the six products visible as a coherent catalogue without recoloring their own identities.
+## Notes for this pack
+
+### Direction and masters
+
+This is the C direction, selected by the user. The user-edited banner, logo banner and square-post masters are kept in `references/subcult-edited-layouts/`. Rebuilds copy them without alteration.
+
+### Mark
+
+The master mark is `references/subcult-mark-master.svg`, drawn by the user: a filled S and underscore, an outlined C, a tilted green block, registration lines and a terminal square.
+
+- Preserve its geometry, overlap and layer order.
+- Build every variant from the master SVG. For dark and light applications, recolor only the ink and the accent.
+- In monochrome, outline the accent block so the letters stay legible.
+
+### Color
+
+- Purple is the primary field.
+- Dark ink sets headlines and any text on green.
+- Acid green is for blocks, registration marks and large emphasis. Green on purple is decorative. It is below the small-text contrast target.
+
+### Product catalogue
+
+Keep the six products visible as one catalogue, each in its own identity. Do not recolor them to match SUBCULT.
+
+## Voice
+
+SUBCULT speaks as the collective, in the first person plural, like a zine masthead: declarative, a little confrontational about platforms and specific about the work. It lists real jobs, such as clips, archives, mutual aid and the door at a show. It names what it is against only when it can name what it built instead. Leave out startup cheer, mission statements, "community-driven" and any promise about the whole umbrella.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md). Facts come from [the claims register](../../../../content/social/Product%20Claims%20Register.md).
 
 ## Color roles
 
@@ -16,34 +44,43 @@ This is the user-selected C direction. User-edited banner, logo banner and squar
 | Secondary | #f0ece4 | Supporting artwork |
 | Small label | #100b19 | Metadata on the main canvas |
 
-Measured text/base contrast: **4.58:1**. Small-label/base contrast: **4.58:1**. Accent/base contrast: **3.16:1**. Use at least 4.5:1 for ordinary text and 3:1 for large text. Swatches are roles, not interchangeable text colors.
+Measured contrast against the base: text **4.58:1**, small label **4.58:1**, accent **3.16:1**. Ordinary text needs at least 4.5:1 and large text at least 3:1. Each swatch has one role. A color that works as a fill may not pass as text.
 
 ## Typography and spacing
 
-- Display: Oswald, bold for headlines.
+- Display: Oswald, bold, for headlines.
 - Body: Space Grotesk, regular and bold.
 - Labels: JetBrains Mono, regular.
-- Layout spacing: 8, 16, 24, 32, 48, 64, 96 pixels.
-- Use one clear headline, one supporting point and one destination per promotional asset.
-- Keep at least one quarter of the mark height clear on all sides. Minimum mark width: 32 pixels on screen. Minimum horizontal lockup width: 220 pixels. Use the mark alone below that size.
-- Avoid stretching, skewing, adding effects to or redrawing the carried-forward product marks. Use the outlined logo exports when fonts are unavailable.
+- Spacing steps: 8, 16, 24, 32, 48, 64 and 96 pixels.
+- Give each promotional asset one headline, one supporting point and one destination.
+- Leave a quarter of the mark's height clear on every side. On screen the mark is at least 32 pixels wide and the horizontal lockup at least 220 pixels wide. Below that width, use the mark alone.
+- Do not stretch, skew, redraw or add effects to the product marks. Where the fonts are not installed, use the outlined logo exports.
 
 ## Files and editing
 
-`logos/` contains full-color primary/dark/light lockups and marks plus single-color variants, each with editable SVG, outlined SVG and transparent PNG. `social/` contains an X/Bluesky banner, a taller banner master, avatars, square/landscape/story layouts, quote and release templates, and a screenshot frame. `video/` contains title, thumbnail, end-card and transparent lower-third layouts with a caption style file. `fonts/` contains the required fonts and redistribution licenses. `tokens.json` and `tokens.css` record reusable design roles. `asset-manifest.json` records file dimensions and hashes.
+| Path | Contents |
+| --- | --- |
+| `logos/` | Primary, dark and light lockups and marks in full color, plus single-color variants. Each has an editable SVG, an outlined SVG and a transparent PNG. |
+| `social/` | X/Bluesky banner, taller banner master, avatar, square, landscape and story layouts, quote and release templates, and a screenshot frame. |
+| `video/` | Title, thumbnail, end-card and transparent lower-third layouts, with a caption style file. |
+| `fonts/` | The fonts the pack needs and their redistribution licenses. |
+| `tokens.json`, `tokens.css` | Reusable design roles. |
+| `asset-manifest.json` | File dimensions and hashes. |
 
-Editable SVG text needs the included fonts. Install them for editing, or use the outlined logo SVGs and rendered PNGs for placement. PNGs are exported from the editable SVG source. Re-render with the top-level `build_packs.py` and its fontconfig.xml; do not edit the PNG separately.
+Editable SVG text needs the included fonts. Install them to edit, or place the outlined logo SVGs and the rendered PNGs instead. The PNGs are exported from the editable SVGs. Re-render them with the top-level `build_packs.py` and its `fontconfig.xml`; do not edit a PNG on its own.
 
-The story artwork keeps the main message between y=250 and y=1670 on a 1080×1920 canvas. Check the destination’s current overlay and crop behavior in its composer. Keep critical banner content away from the bottom-left avatar area. These are layout guides, not a guarantee of every platform crop.
+The story artwork keeps its main message between y=250 and y=1670 on a 1080×1920 canvas. Keep critical banner content away from the bottom-left corner, where the avatar sits. These are layout guides, and platforms crop differently, so check the current overlay and crop in the destination's composer.
 
 ## Screenshots and video
 
-Replace the screenshot placeholder with a real capture of a verified workflow. Show enough interface to establish context; crop credentials, private dashboards, unpublished material and personal data. Keep original recordings separately from edited exports.
+Replace the screenshot placeholder with a real capture of a verified workflow. Show enough of the interface to give context. Crop out credentials, private dashboards, unpublished material and personal data. Keep original recordings separate from edited exports.
 
-The video templates use a 1920×1080 canvas and a 96-pixel outer margin. Keep captions to two short lines. Use the supplied ASS style as a starting point, then check readability at phone size. Lower-thirds have a transparent background outside the panel. Avoid rapid flashing; use a short fade or hard cut for title/end cards. The eight-second preview is a template demonstration, not a product demonstration.
+The video templates use a 1920×1080 canvas with a 96-pixel outer margin. Keep captions to two short lines. Start from the supplied ASS style, then check that captions read at phone size. The lower third is transparent outside its panel. Use a short fade or a hard cut for title and end cards, and avoid rapid flashing. The eight-second preview demonstrates the template, not the product.
 
 ## Copy, alt text and sources
 
-Use verified product claims and exact approved copy. Quote/release template text is placeholder content and must be replaced. Describe the completed image in alt text, including the visible message; do not describe a screenshot placeholder as a working feature. `alt-text.md` supplies starter descriptions for the completed sample artwork.
+Use verified product claims and exact approved copy. Each product has its own voice, set out in [the voice guide](../../../../content/VOICE.md). A headline in the sample artwork shows the layout. It is approved copy only where this guide says so. The text in the quote and release templates is a placeholder and must be replaced.
 
-Reference: Alternative proposed system anchored in site palette. Site/asset observations were made October 1, 2026. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
+Alt text describes the finished image, including the words visible in it. Do not describe a screenshot placeholder as a working feature. `alt-text.md` has starter descriptions for the sample artwork.
+
+Reference: Alternative proposed system anchored in site palette. Site and asset observations were made October 1, 2026. Original files in the legacy library are preserved. The inventory's hashes identify bytes. They do not establish permission to publish third-party material.

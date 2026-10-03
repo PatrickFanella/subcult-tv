@@ -26,6 +26,6 @@ Keep generated archives, caches and build output in their documented ignored dir
 
 ## Review
 
-Describe the concrete change and resulting behavior. Include the commands that passed, any skipped integration checks and remaining runtime work. Use a merge commit for the initial repository consolidation so Studio’s imported history remains reachable. Later changes can follow the repository’s normal merge policy.
+Describe what changed and how behavior differs. Include the commands that passed, any skipped integration checks and remaining runtime work. Use a merge commit for the initial repository consolidation so Studio’s imported history remains reachable. Later changes can follow the repository’s normal merge policy.
 
-Apply the project’s prose rules to docs and public copy. Claims about production, provider delivery or scheduled jobs need evidence from that destination; local tests establish local behavior.
+Write docs plainly. Public copy follows `studio/content/VOICE.md`. Claims about production, provider delivery or scheduled jobs need evidence from that destination; local tests establish local behavior.

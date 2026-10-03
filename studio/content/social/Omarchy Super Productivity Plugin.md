@@ -26,11 +26,11 @@ work-type: social-post
 
 ### I built a Super Productivity plugin for Omarchy
 
-I use Super Productivity for planning, but I wanted the task I was working on to stay visible without keeping the app open.
+I plan in Super Productivity, and I wanted the task I'm on to stay visible without keeping the app open.
 
 So I built **Super Productivity for Omarchy**, a top-bar plugin that connects to Super Productivity's local REST API.
 
-It shows the current task, tracks the countdown, and turns the timer into overtime when the estimate runs out. When no task is active, the bar shows the next scheduled task and its start time.
+The bar shows the current task and counts down its estimate. When the estimate runs out, the timer goes into overtime. When no task is active, the bar shows the next scheduled task and its start time.
 
 Open the panel to:
 
@@ -43,9 +43,9 @@ Open the panel to:
 - Configure scheduled alerts, timer alerts, sounds, and volume
 - Navigate the full interface with the keyboard
 
-Parent rows only reveal their subtasks. Tracking starts from the explicit **Start** button, which prevents accidental switches.
+Parent rows only reveal their subtasks. Tracking starts from the explicit **Start** button, so you can't switch tasks by accident.
 
-The plugin also handles some awkward Super Productivity behavior around completed subtasks. If Super Productivity promotes the parent after a subtask completes, the plugin either starts the next eligible sibling or safely clears the promoted parent.
+The plugin also handles an awkward bit of Super Productivity behavior around completed subtasks. If Super Productivity promotes the parent after a subtask completes, the plugin either starts the next eligible sibling or safely clears the promoted parent.
 
 ### Install it
 
@@ -66,9 +66,9 @@ Repository:
 
 https://github.com/PatrickFanella/omarchy-superproductivity
 
-I have also submitted it to the Omarchy plugin marketplace and requested consideration for Super Productivity's community integrations list.
+I've submitted it to the Omarchy plugin marketplace and asked for it to be considered for Super Productivity's community integrations list.
 
-If you use both Omarchy and Super Productivity, try it and tell me where the workflow still feels rough.
+If you use both Omarchy and Super Productivity, try it and tell me where it still feels rough.
 
 **Suggested media:** `assets/demo.gif`, followed by `assets/screenshots/live-panel.png`
 
@@ -76,20 +76,19 @@ If you use both Omarchy and Super Productivity, try it and tell me where the wor
 
 ## Instagram post
 
-I wanted my current Super Productivity task visible without keeping the app open, so I built an Omarchy top-bar plugin.
+I wanted my current Super Productivity task on screen without keeping the app open, so I built an Omarchy top-bar plugin for it.
 
-It shows:
+In the bar: the current task and its countdown, overtime after the estimate expires, or the next scheduled task when nothing is running.
 
-• Current task and countdown  
-• Overtime after the estimate expires  
-• Next scheduled task  
+In the panel:
+
 • Chronological Today list  
 • Parent tasks and subtasks  
 • Start, Complete, Stop, and Extend controls  
 • Quick Add with Super Productivity shorthand  
 • Scheduled and timer alerts with custom sound and volume  
 
-Parent rows only reveal more information. A task starts only when you press its Start button.
+Parent rows only show more. A task starts only when you press its Start button.
 
 It connects through Super Productivity's local REST API and runs entirely on the local machine.
 
@@ -99,7 +98,7 @@ Install:
 
 `omarchy plugin add https://github.com/patrickfanella/omarchy-superproductivity.git --enable`
 
-#Omarchy #SuperProductivity #LinuxDesktop #OpenSource #ProductivityTools #Hyprland
+#Omarchy #SuperProductivity #Hyprland
 
 **Suggested media:** `assets/screenshots/live-panel.png`
 
@@ -107,11 +106,7 @@ Install:
 
 ## Twitter/X post
 
-I built a Super Productivity plugin for the Omarchy top bar.
-
-Current-task countdown, overtime, scheduled alerts, chronological Today tasks, subtasks, Quick Add, keyboard controls, and local REST API integration.
-
-MIT licensed:
+New Omarchy plugin: your current Super Productivity task in the top bar. It counts down the estimate, goes into overtime when you run past it, and lists today's tasks in a keyboard-driven panel. MIT licensed:
 
 https://github.com/PatrickFanella/omarchy-superproductivity
 
@@ -123,7 +118,7 @@ https://github.com/PatrickFanella/omarchy-superproductivity
 
 **1/8**
 
-I wanted my current Super Productivity task visible without keeping the app open.
+My Super Productivity task list lives in an app I don't keep open. I wanted the current task visible anyway.
 
 So I built an Omarchy top-bar plugin that connects to Super Productivity's local REST API.
 
@@ -131,41 +126,41 @@ https://github.com/PatrickFanella/omarchy-superproductivity
 
 **2/8**
 
-The bar shows the current task and its remaining estimate.
+The bar shows the current task and how much of its estimate is left.
 
-When the estimate runs out, the timer switches to signed overtime instead of sitting at zero.
+When the estimate runs out, the timer switches to signed overtime. It doesn't sit at zero.
 
 If nothing is active, it shows the next scheduled task and start time.
 
 **3/8**
 
-The panel includes a chronological Today list.
+The panel lists today's tasks in chronological order.
 
-Scheduled tasks appear first. Parent tasks stay grouped with their subtasks, and orphaned tasks remain visible instead of disappearing.
+Scheduled tasks come first. Parent tasks stay grouped with their subtasks, and orphaned tasks stay visible.
 
 **4/8**
 
 You can start, stop, complete, and extend tasks without opening Super Productivity.
 
-Parent rows only expand or collapse. Tracking starts exclusively through the Start button, which prevents accidental task switches.
+Parent rows only expand or collapse. Tracking starts only from the Start button, so there are no accidental task switches.
 
 **5/8**
 
-Quick Add supports Super Productivity shorthand:
+Quick Add takes Super Productivity shorthand:
 
 `Write report 30m +Work #focus @tomorrow`
 
-A persistent Add & switch checkbox controls whether the new task becomes active immediately.
+A persistent Add & switch checkbox decides whether the new task becomes active right away.
 
 **6/8**
 
-Alerts work for timer expiry and scheduled starts.
+Alerts fire on timer expiry and on scheduled starts.
 
-You can configure the sound, volume, urgency, and whether alerts run at all. Scheduled alerts still fire while another unrelated task is active.
+You can set the sound, volume, and urgency, or turn alerts off. Scheduled alerts still fire while another unrelated task is active.
 
 **7/8**
 
-The full panel is keyboard accessible.
+The whole panel works from the keyboard.
 
 Tab through controls, use J/K or arrow keys for tasks, C to complete, `/` to search, Home to return to the top, and Escape to close.
 

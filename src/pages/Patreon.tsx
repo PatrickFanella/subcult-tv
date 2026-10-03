@@ -1,68 +1,109 @@
 import { useEffect, useState } from 'react';
 import { getPatreonCampaign } from '@/lib/api';
-import { publishedTiers } from '@/lib/patreon-tiers';
+import { publishedTiers, type SupportTier } from '@/lib/patreon-tiers';
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
 import { PATREON_URL } from '@/lib/links';
 
 const SUPPORT_OUTCOMES = [
   {
-    label: 'Pay for hosting',
-    detail:
-      'Contributions pay for domains, storage, hosting, and the services that keep public software available.',
+    label: 'Hosting',
+    detail: 'Domains, storage, servers and the services that keep public software reachable.',
   },
   {
-    label: 'Fund maintenance time',
+    label: 'Hours',
     detail:
-      'Support pays for the hours spent fixing bugs, applying security updates, writing documentation, and preparing releases.',
+      'Bug fixes, security updates, documentation and releases. Maintenance is most of the work, and nobody sees it when it goes well.',
   },
   {
-    label: 'Test useful ideas',
+    label: 'Early research',
     detail:
-      'Support pays for early research into a community need before the idea has a business model.',
+      'Time to look into a community need before anyone knows whether the idea can pay for itself.',
   },
 ];
 
-// Reviewed fallback for an unavailable Patreon API.
-const TIERS = [
+// Reference list for an unavailable Patreon API. Names and prices follow
+// studio/content/patreon/support-redesign-2026-10/patreon-copy.md.
+const TIERS: SupportTier[] = [
   {
-    name: 'Free follow',
+    name: 'Follow free',
     price: '$0',
-    includes: ['Public updates and occasional previews', 'Invitations to try new work and respond'],
+    amountCents: 0,
+    includes: ['Public posts and announcements on Patreon'],
+  },
+  {
+    name: 'Supporter',
+    price: '$5 / month',
+    amountCents: 500,
+    includes: [
+      'Private supporter channels in our Discord',
+      'Supporter posts on Patreon',
+      'Behind-the-scenes material and exclusive releases, occasionally, when we share them',
+    ],
   },
   {
     name: 'Backer',
     price: '$10 / month',
+    amountCents: 1000,
     includes: [
-      'One field note a week from the workshop',
-      'A monthly studio ledger: what shipped, changed, stalled, and comes next',
-      'Selected early previews and drafts when they exist',
-      'Occasional advisory questions, with their scope stated up front',
-      'The supporter archive',
+      'Same access as Supporter',
+      'The extra five dollars goes toward tools, hosting and time',
+    ],
+  },
+  {
+    name: 'Patron',
+    price: '$25 / month',
+    amountCents: 2500,
+    includes: [
+      'Same access as Supporter and Backer',
+      'A larger contribution, and that is the whole difference',
+    ],
+  },
+  {
+    name: 'Groceries',
+    price: '$400 / month',
+    amountCents: 40000,
+    includes: [
+      'Feed the person making the things.',
+      'Same supporter access as the other paid tiers, with no extra deliverables',
+    ],
+  },
+  {
+    name: 'Rent',
+    price: '$1,500 / month',
+    amountCents: 150000,
+    includes: [
+      'Pay my rent. Literally.',
+      'Same supporter access as the other paid tiers, and no extra deliverables',
     ],
   },
 ];
 
+// Tiers at or above this amount are listed apart from the everyday ones.
+const LARGE_TIER_CENTS = 10000;
+
 const OTHER_WAYS = [
   {
-    label: 'Contribute to the code',
-    detail: 'Read the source, open an issue, improve the documentation, or send a patch.',
+    label: 'Work on the code',
+    detail: 'Read the source, open an issue, fix the documentation or send a patch.',
     href: 'https://git.subcult.tv/subculture-collective',
     action: 'Open the repositories ↗',
     external: true,
   },
   {
     label: 'Use it and report what breaks',
-    detail: 'Real-world feedback is more useful than applause. Tell us where the work falls short.',
+    detail:
+      'A report from real use is worth more to us than applause. Tell us where it falls short.',
     href: '/contact',
-    action: 'Send useful feedback',
+    action: 'Tell us what broke',
     external: false,
   },
   {
     label: 'Back a specific project',
-    detail: 'Organizations and individuals can discuss supporting a defined piece of public work.',
+    detail:
+      'If you or your organization want to pay for a defined piece of public work, we can talk about scope.',
     href: '/contact',
-    action: 'Start a conversation',
+    action: 'Write to us',
     external: false,
   },
 ];
@@ -71,35 +112,75 @@ const FAQS = [
   {
     question: 'Does payment unlock the software?',
     answer:
-      'No. The products, repositories, and releases stay public. Backers get the workshop behind them: field notes, the ledger, and early previews.',
+      'No. The products, repositories and releases stay public either way. A paid membership gets you into the private channels in our Discord and the supporter posts on Patreon.',
+  },
+  {
+    question: 'Do higher tiers get more?',
+    answer:
+      'No. Every paid tier has the same access. The amount you choose is the size of your contribution.',
+  },
+  {
+    question: 'How often do you post?',
+    answer:
+      'There is no fixed schedule. Supporter posts, behind-the-scenes material and exclusive releases appear when we have something to share.',
+  },
+  {
+    question: 'What do I need for the Discord channels?',
+    answer:
+      'A Discord account. The community rules apply there. Membership gets you into the channels; it does not promise a reply from any one of us.',
   },
   {
     question: 'What does support not include?',
     answer:
-      'Ownership, governance, a release schedule, or private consulting. Advisory questions are input, and each one says what it can and cannot change.',
+      'Ownership, a vote, a release schedule, commissions or private consulting. You can share ideas in the supporter channels. They are input, and the decisions stay with us.',
   },
   {
     question: 'Can I follow without paying?',
     answer:
-      'Yes. Follow SUBCULT for free on Patreon, or get the monthly newsletter by email at the bottom of any page.',
+      'Yes. Follow SUBCULT for free on Patreon for the public posts, or get the monthly newsletter by email at the bottom of any page.',
   },
   {
     question: 'Can I help without spending money?',
     answer:
-      'Yes. Use the projects, report specific problems, improve documentation, contribute code, or introduce the work to a community that needs it.',
+      'Yes. Use the software and report specific problems. Fix the documentation. Send a patch. Show it to a group that could use it.',
   },
   {
-    question: 'How can I verify where the effort goes?',
+    question: 'How do I check where the effort goes?',
     answer:
-      'Follow the product pages, repositories, and release history. The work is public, so you can check it yourself.',
+      'The repositories and their release history are public, so the work is on the record whether or not we post about it.',
   },
 ];
 
 const SHELL = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8';
 const RAIL = 'grid grid-cols-1 md:grid-cols-[10rem_minmax(0,1fr)] gap-6 md:gap-10';
 
+function TierList({ tiers }: { tiers: SupportTier[] }) {
+  return (
+    <div className="support-tiers">
+      {tiers.map((tier) => (
+        <article key={tier.name} className="support-tier min-w-0">
+          <div className="support-tier-heading">
+            <h3 className="text-xl break-words">{tier.name}</h3>
+            <span className="font-mono text-lg text-static">{tier.price}</span>
+          </div>
+          <ul className="space-y-2 text-sm text-bone leading-relaxed">
+            {tier.includes.map((item) => (
+              <li key={item} className="flex gap-2">
+                <span className="text-static" aria-hidden="true">
+                  +
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  );
+}
+
 export default function Patreon() {
-  const [tiers, setTiers] = useState<typeof TIERS | null>(null);
+  const [tiers, setTiers] = useState<SupportTier[] | null>(null);
   useEffect(() => {
     let active = true;
     getPatreonCampaign()
@@ -107,12 +188,15 @@ export default function Patreon() {
         if (active && data.campaign) setTiers(publishedTiers(data.tiers));
       })
       .catch(() => {
-        /* Keep the reviewed fallback when the provider is unavailable. */
+        /* Keep the reference list when the provider is unavailable. */
       });
     return () => {
       active = false;
     };
   }, []);
+  const shown = tiers ?? TIERS;
+  const everyday = shown.filter((tier) => tier.amountCents < LARGE_TIER_CENTS);
+  const large = shown.filter((tier) => tier.amountCents >= LARGE_TIER_CENTS);
   return (
     <>
       <SEOHead path="/support" />
@@ -132,9 +216,10 @@ export default function Patreon() {
               </div>
               <div className="min-w-0">
                 <p className="text-bone text-lg leading-relaxed mb-6">
-                  The products stay public. Patreon opens the workshop: weekly field notes, a
-                  monthly studio ledger, and early previews. Follow for free, or back the work at
-                  $10 a month.
+                  Paying doesn’t unlock the software. It stays public either way. A paid membership
+                  helps cover hosting, tools and hours, and gets you into the private channels in
+                  our Discord and the supporter posts on Patreon. We post when we have something to
+                  share, not on a schedule. Following is free.
                 </p>
                 <div className="flex flex-wrap items-center gap-5">
                   <Button
@@ -155,14 +240,14 @@ export default function Patreon() {
           </div>
           <div className="subcult-product-bar">
             <nav className={`showcase-index ${SHELL}`} aria-label="Support sections">
-              <a href="#memberships">
-                <span>01</span> Memberships
-              </a>
               <a href="#support-work">
-                <span>02</span> What support funds
+                <span>01</span> Where the money goes
+              </a>
+              <a href="#memberships">
+                <span>02</span> Memberships
               </a>
               <a href="#support-questions">
-                <span>03</span> Before you contribute
+                <span>03</span> Before you pay
               </a>
             </nav>
           </div>
@@ -170,13 +255,13 @@ export default function Patreon() {
 
         <section id="support-work" className="border-b border-fog py-12 md:py-16">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">01 / WHY SUPPORT</p>
+            <p className="font-mono text-xs text-dust pt-2">01 / THE LEDGER</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
                 <h2 className="mb-4">Where your money goes</h2>
                 <p className="text-bone leading-relaxed">
-                  Contributions cover two costs: keeping the software online, and the time it takes
-                  to maintain it.
+                  Three lines on the ledger. The first two keep what exists running. The third is
+                  how new work starts.
                 </p>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -199,39 +284,35 @@ export default function Patreon() {
             <p className="font-mono text-xs text-dust pt-2">02 / MEMBERSHIPS</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
-                <h2 className="mb-4">Membership options</h2>
+                <h2 className="mb-4">Memberships</h2>
                 <p className="text-bone leading-relaxed">
-                  Start by following for free. Back the work when the process is useful to you.
+                  Every paid tier gets the same things: the private channels in our Discord and the
+                  supporter posts on Patreon. The price is how much you want to put in. Following is
+                  free.
                 </p>
               </div>
               {tiers === null && (
                 <p className="font-mono text-xs text-dust mb-5">
-                  Reference benefits shown below. Check Patreon for the current offer.
+                  Reference tiers shown below, not live data. Check Patreon for the current tiers
+                  and prices.
                 </p>
               )}
               {tiers?.length === 0 && (
-                <p>No published tiers are available. Visit Patreon for membership details.</p>
+                <p>
+                  Patreon lists no published tiers right now. Check the Patreon page for details.
+                </p>
               )}
-              <div className="support-tiers">
-                {(tiers ?? TIERS).map((tier) => (
-                  <article key={tier.name} className="support-tier min-w-0">
-                    <div className="support-tier-heading">
-                      <h3 className="text-xl break-words">{tier.name}</h3>
-                      <span className="font-mono text-lg text-static">{tier.price}</span>
-                    </div>
-                    <ul className="space-y-2 text-sm text-bone leading-relaxed">
-                      {tier.includes.map((item) => (
-                        <li key={item} className="flex gap-2">
-                          <span className="text-static" aria-hidden="true">
-                            +
-                          </span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </article>
-                ))}
-              </div>
+              <TierList tiers={everyday} />
+              {large.length > 0 && (
+                <div className="mt-10">
+                  <h3 className="text-xl mb-3">Feeling unusually generous?</h3>
+                  <p className="text-bone leading-relaxed max-w-3xl mb-5">
+                    The names are a joke. The monthly payments are real. Same access as the other
+                    paid tiers, nothing extra, and nobody is expected to pick these.
+                  </p>
+                  <TierList tiers={large} />
+                </div>
+              )}
             </div>
           </div>
         </section>
@@ -240,7 +321,7 @@ export default function Patreon() {
           <div className={`${SHELL} ${RAIL}`}>
             <p className="font-mono text-xs text-signal pt-2">03 / THE AGREEMENT</p>
             <blockquote className="min-w-0 font-display text-3xl md:text-5xl uppercase tracking-wide text-glow leading-tight break-words">
-              The products stay public. Support pays for the work and opens the workshop.
+              Paying doesn’t unlock the software. It stays public either way.
             </blockquote>
           </div>
         </section>
@@ -252,8 +333,8 @@ export default function Patreon() {
               <div className="max-w-3xl mb-10">
                 <h2 className="mb-4">Other ways to help</h2>
                 <p className="text-bone leading-relaxed">
-                  A useful bug report, a documentation fix, or an honest introduction can matter as
-                  much as a subscription. Choose the contribution you can sustain.
+                  A bug report we can reproduce is worth as much to us as a subscription. So is a
+                  documentation fix. Give what you can keep giving.
                 </p>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -291,7 +372,7 @@ export default function Patreon() {
           <div className={`${SHELL} ${RAIL}`}>
             <p className="font-mono text-xs text-dust pt-2">05 / QUESTIONS</p>
             <div className="min-w-0">
-              <h2 className="mb-10">Before you contribute</h2>
+              <h2 className="mb-10">Before you pay</h2>
               <div className="divide-y divide-fog border-y border-fog">
                 {FAQS.map((item) => (
                   <div
@@ -309,12 +390,12 @@ export default function Patreon() {
 
         <section className="py-12 md:py-16">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">06 / FOLLOW THE WORK</p>
+            <p className="font-mono text-xs text-dust pt-2">06 / PATREON</p>
             <div className="min-w-0 max-w-3xl">
-              <h2 className="mb-5">Keep the work going</h2>
+              <h2 className="mb-5">Follow, or back the workshop</h2>
               <p className="text-bone leading-relaxed mb-8 max-w-2xl">
-                Follow for free or back the workshop on Patreon. If you can’t contribute money, use
-                the work and tell us what needs fixing.
+                Both happen on Patreon. If money is tight, use the software and tell us what broke.
+                That counts.
               </p>
               <Button
                 as="a"

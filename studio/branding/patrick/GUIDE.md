@@ -8,7 +8,7 @@ Start with patrickfanella.co's actual visual system: blue charcoal, lavender bor
 
 The routing graphic connects inputs to outputs through visible bends and crossings. It can read as software connections or an audio patch panel. Spectrum bars carry sound/process material. These are decorative illustrations, not live audio, architecture diagrams or measured operational data.
 
-Keep the type flat. The site's color-separated headline phrases give enough emphasis; this direction uses no chromatic type offsets. Use a single large message, one motif and a small source/destination line per composition.
+Keep the type flat. The site already separates headline phrases by color, which is enough emphasis, so this direction uses no chromatic type offsets. Each composition gets one large message, one motif and a small source or destination line.
 
 ## Colors
 
@@ -42,7 +42,13 @@ The selected logo combines the open frame from `../library/references/patrick-va
 
 Lavender (01) is the default for dark backgrounds; Light (06) uses charcoal foreground on warm white. The avatar places the logo within the separate routing illustration. Use the plain open-frame monochrome fallback when the waveform becomes indistinct at small sizes or for single-ink printing. Do not stretch the mark.
 
-The selected production banner now uses Patch. The previous banner and its icons/links are preserved in the archived Signal pack and original references. This selection does not update a social profile.
+The selected production banner uses Patch. The previous banner, with its icons and links, is preserved in the archived Signal pack and the original references. This selection does not update a social profile.
+
+## Voice
+
+Patrick writes in the first person singular. Copy reads like a working note from someone who writes software and makes music and does not separate the two: plain, a bit self-deprecating and specific about tools. **Software. Sound. Culture.** stays as the identity line. Leave out founder voice, third-person biography and "passionate about".
+
+The voice for every product is in [the voice guide](../../content/VOICE.md).
 
 ## Asset inventory
 
@@ -77,7 +83,7 @@ Edit `build_assets.py` for generated artwork and `index.html` for the review int
 rtk proxy python branding/patrick/build_assets.py
 ```
 
-The generator renders only this alternative. It writes assets, tokens, measured contrast and a manifest of source/output hashes. Requires Python, Pillow, fontTools for initial Inter decoding, and `rsvg-convert`. Font discovery uses a temporary configuration; it does not change system fonts. PNG and font files follow the repository's existing LFS rules.
+The generator renders only this direction. It writes assets, tokens, measured contrast and a manifest of source and output hashes. It needs Python, Pillow, fontTools for the initial Inter decoding, and `rsvg-convert`. Font discovery uses a temporary configuration; it does not change system fonts. PNG and font files follow the repository's existing LFS rules.
 
 Do not edit generated PNGs separately. Keep source and derivative changes together. SVG text needs the named fonts; the two mark SVGs are already outlined. For a font-independent transfer of other masters, outline text in an explicit export and keep the original editable source.
 
@@ -91,7 +97,7 @@ Use quiet rules for editorial sections and accent outlines for actions. A contex
 
 `source-observation.json` records the live site URL, stylesheet URL, observed fonts and colors, and the distinction between site-derived rules and new artwork. `asset-manifest.json` records this pack's hashes and starting Studio revision. Imported mark provenance remains in Studio's `docs/import-manifest.json`.
 
-SVG parsing, rendered exports, mark-geometry preservation, local links and browser behavior should be checked before delivery. Actual platform crops and deployment remain separate checks. This pack selects Patch as the default Patrick__Eff Studio system. It does not change patrickfanella.co.
+Before delivery, check SVG parsing, rendered exports, mark geometry, local links and browser behavior. Actual platform crops and deployment are separate checks. This pack selects Patch as the default Patrick__Eff Studio system. It does not change patrickfanella.co.
 
 ## Logo development
 

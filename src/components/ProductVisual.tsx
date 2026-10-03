@@ -12,7 +12,7 @@ export default function ProductVisual({
     return (
       <img
         src="/brand/left-field/hero.svg"
-        alt="Left Field: Read the field. Trace the evidence. LF mark on warm paper."
+        alt="Left Field: Where the field bends. LF mark on warm paper."
         loading={priority ? 'eager' : 'lazy'}
         fetchPriority={priority ? 'high' : 'auto'}
         decoding="async"
@@ -54,13 +54,13 @@ export default function ProductVisual({
             ))}
           </div>
           <p className="archive-line">
-            <span>00:12:08</span> A moment in the recording.
+            <span>00:12:08</span> The line before it.
           </p>
           <p className="archive-line archive-highlight">
-            <span>00:12:14</span> A passage worth keeping.
+            <span>00:12:14</span> The sentence someone was looking for.
           </p>
           <p className="archive-line">
-            <span>00:12:21</span> The source, still attached.
+            <span>00:12:21</span> The line after it.
           </p>
           <div className="archive-foot">
             RECORDING → TRANSCRIPT → {project.slug === 'hasanara' ? 'PASSAGE' : 'ARCHIVE'}
@@ -71,16 +71,16 @@ export default function ProductVisual({
           <div className="event-ticket">
             <span>SUBCULT OS / ADMIT ONE</span>
             <strong>
-              THE NIGHT
+              DOORS
               <br />
-              IS YOURS.
+              19:00
             </strong>
             <div className="ticket-bars" />
           </div>
           <div className="event-stages">
             <span>01 / PLAN</span>
             <span>02 / DOORS</span>
-            <span>03 / SHOW</span>
+            <span>03 / CLOSE-OUT</span>
           </div>
         </div>
       ) : null}

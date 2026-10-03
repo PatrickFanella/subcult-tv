@@ -83,7 +83,7 @@ export default function AdminPosts() {
         <div>
           <p className="studio-label">SUBCULT / POSTING OPERATIONS</p>
           <h1 id="posting-heading">Posts</h1>
-          <p>Preparation, review and the work still to do.</p>
+          <p>Prepared drafts, their review status and open checks.</p>
         </div>
         <button onClick={refresh} disabled={refreshing}>
           {refreshing ? 'Refreshing…' : 'Refresh dashboard'}

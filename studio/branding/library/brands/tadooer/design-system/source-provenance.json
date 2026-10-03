@@ -32,5 +32,18 @@
       "sha256": "864b92b9d0e298be359c6064c9f8601cfe9ff3c23297573ee27347ecc5720167",
       "bytes": 3503
     }
-  ]
+  ],
+  "studio_edit": {
+    "date": "2026-10-03",
+    "note": "Studio tightened the prose in README.md to follow studio/content/VOICE.md. Every token, value, measurement and rule is unchanged. The current bytes of the Studio copy are in the pack asset-manifest.json.",
+    "files_hashes_describe": "the product-repository files as copied on copied_at, not the edited Studio copies",
+    "differs_from_source_as_copied": [
+      "README.md"
+    ],
+    "identical_to_source_as_copied": [
+      "brand-assets.json",
+      "examples/01-specimen.html",
+      "tokens.css"
+    ]
+  }
 }

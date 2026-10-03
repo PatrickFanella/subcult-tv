@@ -16,7 +16,7 @@ export default function Footer() {
               SUBCULT
             </Link>
             <p className="text-sm text-bone mt-4 mb-6">
-              Open-source software for independent media, mutual aid, archives, and live events.
+              Software for clips, archives, mutual aid and shows. The code is public.
             </p>
             <ul className="space-y-2 text-sm">
               <li>
@@ -26,7 +26,7 @@ export default function Footer() {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <Link to="/support">Support the products</Link>
+                <Link to="/support">Support the workshop</Link>
               </li>
               <li>
                 <a
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
         <div className="mt-10 pt-6 border-t border-fog flex flex-col sm:flex-row justify-between gap-4 text-xs text-bone">
           <p>© {new Date().getFullYear()} Subculture Collective.</p>
-          <Link to="/products">Explore all nine products →</Link>
+          <Link to="/products">All nine products →</Link>
         </div>
       </div>
     </footer>

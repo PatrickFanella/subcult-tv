@@ -28,7 +28,7 @@ export default function AdminContacts() {
       await toggleContactRead(id);
       load(page);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'failed');
+      setError(err instanceof Error ? err.message : 'The change was not saved.');
     }
   };
 
@@ -38,13 +38,13 @@ export default function AdminContacts() {
       await deleteContact(id);
       load(page);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'failed');
+      setError(err instanceof Error ? err.message : 'The change was not saved.');
     }
   };
 
   return (
     <div>
-      <AdminHeader overline="INCOMING SIGNALS" title="Contact Submissions" />
+      <AdminHeader overline="CONTACT FORM" title="Contact messages" />
 
       {contactsPage && (
         <p className="font-mono text-xs text-dust mb-4">
@@ -104,9 +104,7 @@ export default function AdminContacts() {
         ))}
 
         {contactsPage?.data.length === 0 && (
-          <div className="py-12 text-center font-mono text-sm text-bone">
-            No incoming signals. Inbox zero.
-          </div>
+          <div className="py-12 text-center font-mono text-sm text-bone">No messages.</div>
         )}
       </div>
 

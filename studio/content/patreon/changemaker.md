@@ -15,7 +15,7 @@ title: changemaker
 
 # changemaker
 
-Daily changelog used as the source engine for Patreon and social content.
+Daily changelog. Patreon and social posts are drafted from it.
 
 ## Role in the system
 

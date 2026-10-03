@@ -630,7 +630,7 @@
     },
     {
       "file": "social/square-post.svg",
-      "text": "A small ask.",
+      "text": "Small favors,",
       "foreground": "#365448",
       "background": "#f2efe7",
       "svg_font_size": 50.0,
@@ -641,7 +641,7 @@
     },
     {
       "file": "social/square-post.svg",
-      "text": "A local offer.",
+      "text": "close to home.",
       "foreground": "#365448",
       "background": "#f2efe7",
       "svg_font_size": 50.0,
@@ -1123,14 +1123,14 @@
       },
       {
         "file": "social/square-post.svg",
-        "text": "A small ask.",
+        "text": "Small favors,",
         "worst_background": "#ebe9e1",
         "ratio": 6.859178177902716,
         "AA_normal": true
       },
       {
         "file": "social/square-post.svg",
-        "text": "A local offer.",
+        "text": "close to home.",
         "worst_background": "#ebe9e1",
         "ratio": 6.859178177902716,
         "AA_normal": true

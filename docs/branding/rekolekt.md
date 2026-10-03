@@ -14,31 +14,40 @@ The public route is `/products/rekolekt`; the internal catalog key remains
 HasanAra remains a distinct archive: **HasanAra, powered by Rekolekt**.
 Other archives can retain their own identity while using the shared software.
 
-The name suggests remembering and collecting. It fits archive browsing, searchable
-transcripts, and saved passages better than a name limited to transcription.
+The name suggests remembering and collecting. That covers archive browsing, searchable
+transcripts and saved passages, which a name limited to transcription would not.
 
 If a name closer to the studio is preferred, **Subarchive** is an alternative to
-explore. It connects directly to SUBCULT and communicates the archive category,
-but emphasizes the collection more than the act of finding a passage. Its
-availability has not been checked.
+explore. It ties the product to SUBCULT and says "archive" outright, but it describes
+the collection more than the act of finding a passage. Its availability has not
+been checked.
 
 ## Positioning and copy
 
-For people maintaining long-form video and audio collections, Rekolekt turns
-recordings into timestamped, searchable archives. Passages stay connected to
-their sources so people can find, cite, save, and share them.
+Rekolekt is software for people who maintain long video and audio collections.
+It transcribes each recording with timestamps, indexes the text, and links every
+passage back to the second it was spoken, so a passage can be found, cited, saved
+and shared with its source. It is software you deploy, with HasanAra as the running
+example. It is not a hosted upload service.
+
+The first three lines below are recorded as proposed. The short line is the signature
+strip on the landing page, and the showcase headline is set in the pack's square
+artwork. New copy follows the Rekolekt voice in
+[the voice guide](../../studio/content/VOICE.md): a finding aid, quiet and exact.
 
 - Short line: **Searchable recordings. Quotable moments. Source intact.**
 - Showcase headline: **Make a recording into an archive.**
+- Pack banner, since October 3, 2026: **The sentence, and where it was said.** over the
+  line **Software for timestamped, searchable recording archives.**
 - Product explanation: **Turn long-form recordings into timestamped, searchable
   text. Run the shared application with your own archive identity and branding.**
 
 ## Visual direction
 
-Use an archive index as the visual reference: timecodes, aligned passages,
-quotation highlights, and restrained monospace labels. The wordmark is lowercase
-with tight spacing. The mark brackets an audio waveform, framing the material
-that becomes a passage.
+The visual reference is an archive index: timecodes, aligned passages, quotation
+highlights and small monospace labels. The wordmark is lowercase with tight
+spacing. The mark is an audio waveform between square brackets, which mark off
+the stretch of recording that becomes a passage.
 
 | Role                 | Color     |
 | -------------------- | --------- |
@@ -50,7 +59,7 @@ The proposed green accent differs from HasanAra's current red source palette
 (`#ff3333` in the dark theme of its `branding/brand.json` on main).
 The shipped shared application uses blue (`#93c5fd`); the green system shown here
 is a proposal for review and does not describe its current UI.
-Screens and copy should make the archive and recordings prominent. The SUBCULT
+Screens and copy put the archive and its recordings first. The SUBCULT
 endorsement stays secondary.
 
 Assets: [mark](../../public/brand/rekolekt-mark.svg) and
@@ -59,7 +68,7 @@ Assets: [mark](../../public/brand/rekolekt-mark.svg) and
 ## Naming check
 
 A general web search on October 1, 2026 for the exact name plus software, archive,
-transcription, brand, and app did not surface an obvious competing archive
-application. It did surface the name in unrelated dictionary and music pages.
+transcription, brand, and app found no obvious competing archive
+application. It did find the name on unrelated dictionary and music pages.
 This is a preliminary collision check; domain, account, and trademark availability
 remain unverified. No domain or public account has been registered.

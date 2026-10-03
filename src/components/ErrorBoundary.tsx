@@ -38,7 +38,8 @@ export default class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBo
             {this.props.fallbackTitle ?? 'SIGNAL DIED'}
           </h2>
           <p className="font-mono text-bone text-sm mb-6">
-            This page ran into an error. Retry, or go back to the homepage.
+            Something on this page broke. Try it again, or go back to the homepage. If it keeps
+            happening, send us the message below.
           </p>
           {this.state.error && (
             <pre className="bg-void border border-fog p-4 text-xs text-flicker font-mono mb-6 overflow-auto text-left whitespace-pre-wrap break-all">
@@ -51,7 +52,7 @@ export default class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBo
               onClick={this.handleReload}
               className="bg-signal text-void px-5 py-2.5 font-mono font-bold uppercase tracking-wider hover:bg-signal-dim cursor-pointer"
             >
-              ↺ Retry
+              ↺ Try again
             </button>
             <a
               href="/"

@@ -25,4 +25,34 @@ INTERFACE={
  'source':'left-field src/app/globals.css at main 5f41c5f',
 }
 
-GUIDE_NOTE=' The product owns the site interface: [the website design specification](WEBSITE.md) records the deployed pages, copy rules and components, and lists the pack files the site carries and where the site differs from this pack (system fonts). `tokens.json` lists the site roles under `product_interface`.'
+GUIDE_NOTE="""## Notes for this pack
+
+### Name
+
+Write Left Field in prose, LEFT FIELD in the wordmark and left-field in repository and package identifiers. Preserve database names, receipt namespaces and historical source identifiers.
+
+### Mark
+
+The LF monogram is original and geometric: a left-anchored L and an open F on the same baseline, with a rust-red square filling their intersection. The square is not a ballot, result or certification symbol. The user approved the field-ledger direction and this mark, with the F reaching the L baseline and the red square at the intersection. Dark variants use paper ink; light and primary variants use dark ink. Use the monochrome mark when color reproduction is uncertain.
+
+### Color
+
+Keep the app palette: paper #f4f0e6, ink #16221f, rust #a33c26 and wash #e5eadc.
+
+### Type
+
+Liberation Serif is the bundled, portable stand-in for the app's Georgia stack. Public Sans replaces Arial in pack exports. JetBrains Mono sets source labels.
+
+### Limits
+
+Source rows in the artwork are abstract motifs without scores or counts. Show an actual ranking only with its version, scope, date, limitations and source. Never turn a provisional score into an election prediction or imply DSA endorsement.
+
+### Site
+
+The site is public at left-field.subcult.tv and names SUBCULT as its publisher. The product owns the site interface. [The website design specification](WEBSITE.md) records the deployed pages, copy rules and components, and lists the pack files the site carries and where the site differs from this pack (system fonts). `tokens.json` lists the site roles under `product_interface`.
+
+## Voice
+
+Left Field copy comes from the research desk with the footnotes still attached. It reads like a methods section by someone who can also write a headline: limits come before conclusions, and the tone is dry. A heading may be wry ("Where the field bends."); a number never is. Use "provisional", "versioned", "not in this score" and "unavailable", work at seat level with public records, and name what is missing. Leave out prediction, horse-race language, "data-driven", "insights" and anything that implies an endorsement or voter-level targeting.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md)."""

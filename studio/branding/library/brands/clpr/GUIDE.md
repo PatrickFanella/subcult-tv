@@ -1,10 +1,39 @@
 # CLPR — Brand and asset guide
 
-Selected direction: **A / Play / Clip stack + single-clip square**. Status: local production pack v1. Direction selection is not permission to publish a post or change a profile.
+Selected direction: **A / Play / Clip stack + single-clip square**. Status: local production pack v1. Selecting a direction does not approve a post or a profile change.
 
 Clip stack layouts with one matching clip card on the square post and the play-triangle logo.
 
-The user-edited play-triangle logo governs the assets. The user selected Clip stack for the main layouts and single clip card for the square post. The comparison variations remain available. These layouts replace the filmstrip and timeline motifs. Keep the muted-white wordmark, purple play triangle, dark field and green details. Earlier banners are preserved in references/. Use the captured play wordmark and play icon. Barlow Condensed sets titles; Barlow carries body copy; IBM Plex Mono carries labels. Crop corners, overlapping clip cards and purple play fields are the three graphic alternatives. Keep their geometry separate from screenshots of the product. clpr.tv applies this pack as of October 2, 2026; the Product site section below records how. The site writes the name in lowercase, `clpr`, in its interface text; Studio documents and artwork labels use CLPR. Keep the wordmark artwork as drawn. The earlier name Clipper and the clpr.gg domain are retired; the product lives at clpr.tv. The tally-dot logo that the site used before this pack is retired with them.
+## Notes for this pack
+
+### Logo and layouts
+
+The user-edited play-triangle logo governs every asset. Use the captured play wordmark and play icon, and keep the wordmark artwork as drawn.
+
+The user selected Clip stack for the main layouts and the single clip card for the square post. These layouts replace the filmstrip and timeline motifs. The comparison variations remain available, and earlier banners are preserved in `references/`.
+
+### Color and type
+
+- Keep the muted-white wordmark, the purple play triangle, the dark field and the green details.
+- Barlow Condensed sets titles, Barlow sets body copy and IBM Plex Mono sets labels.
+
+### Graphics
+
+Crop corners, overlapping clip cards and purple play fields are the three graphic alternatives. Keep their geometry separate from screenshots of the product.
+
+### Name and site
+
+- The site writes the name in lowercase, `clpr`, in its interface text. Studio documents and artwork labels use CLPR.
+- clpr.tv applies this pack as of October 2, 2026. The Product site section below records how.
+- The earlier name Clipper and the clpr.gg domain are retired. The product lives at clpr.tv. The tally-dot logo that the site used before this pack is retired with them.
+
+## Voice
+
+clpr sounds like a regular in chat who clips everything and remembers which stream it was: fast, amused and comfortable in lowercase. It talks about clips the way viewers do (the bit, the fail, the one from last Tuesday) and uses "clip" as a verb. Fragments are fine. A page gets one exclamation mark at most. Leave out "content", "discover", "moments that matter" and emote spam.
+
+Supported claims are finding Twitch clips by creator, topic and tag, saving them to playlists and sharing them. Watch parties, a live feed, stream clip creation and mirroring are disabled at launch, so copy does not mention them.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md). Facts come from [the claims register](../../../../content/social/Product%20Claims%20Register.md), entry C-CLPR.
 
 ## Color roles
 
@@ -16,25 +45,32 @@ The user-edited play-triangle logo governs the assets. The user selected Clip st
 | Secondary | #3ddc97 | Supporting artwork |
 | Small label | #8c5cff | Metadata on the main canvas |
 
-Measured text/base contrast: **16.74:1**. Small-label/base contrast: **4.71:1**. Accent/base contrast: **4.71:1**. Use at least 4.5:1 for ordinary text and 3:1 for large text. Swatches are roles, not interchangeable text colors.
+Measured contrast against the base: text **16.74:1**, small label **4.71:1**, accent **4.71:1**. Ordinary text needs at least 4.5:1 and large text at least 3:1. Each swatch has one role. A color that works as a fill may not pass as text.
 
 ## Typography and spacing
 
-- Display: Barlow Condensed, bold for headlines.
+- Display: Barlow Condensed, bold, for headlines.
 - Body: Barlow, regular and bold.
 - Labels: IBM Plex Mono, regular.
-- Layout spacing: 8, 16, 24, 32, 48, 64, 96 pixels.
-- Use one clear headline, one supporting point and one destination per promotional asset.
-- Keep at least one quarter of the mark height clear on all sides. Minimum mark width: 32 pixels on screen. Minimum horizontal lockup width: 220 pixels. Use the mark alone below that size.
-- Avoid stretching, skewing, adding effects to or redrawing the carried-forward product marks. Use the outlined logo exports when fonts are unavailable.
+- Spacing steps: 8, 16, 24, 32, 48, 64 and 96 pixels.
+- Give each promotional asset one headline, one supporting point and one destination.
+- Leave a quarter of the mark's height clear on every side. On screen the mark is at least 32 pixels wide and the horizontal lockup at least 220 pixels wide. Below that width, use the mark alone.
+- Do not stretch, skew, redraw or add effects to the product marks. Where the fonts are not installed, use the outlined logo exports.
 
 ## Files and editing
 
-`logos/` contains full-color primary/dark/light lockups and marks plus single-color variants, each with editable SVG, outlined SVG and transparent PNG. `social/` contains an X/Bluesky banner, a taller banner master, avatars, square/landscape/story layouts, quote and release templates, and a screenshot frame. `video/` contains title, thumbnail, end-card and transparent lower-third layouts with a caption style file. `fonts/` contains the required fonts and redistribution licenses. `tokens.json` and `tokens.css` record reusable design roles. `asset-manifest.json` records file dimensions and hashes.
+| Path | Contents |
+| --- | --- |
+| `logos/` | Primary, dark and light lockups and marks in full color, plus single-color variants. Each has an editable SVG, an outlined SVG and a transparent PNG. |
+| `social/` | X/Bluesky banner, taller banner master, avatar, square, landscape and story layouts, quote and release templates, and a screenshot frame. |
+| `video/` | Title, thumbnail, end-card and transparent lower-third layouts, with a caption style file. |
+| `fonts/` | The fonts the pack needs and their redistribution licenses. |
+| `tokens.json`, `tokens.css` | Reusable design roles. |
+| `asset-manifest.json` | File dimensions and hashes. |
 
-Editable SVG text needs the included fonts. Install them for editing, or use the outlined logo SVGs and rendered PNGs for placement. PNGs are exported from the editable SVG source. Re-render with the top-level `build_packs.py` and its fontconfig.xml; do not edit the PNG separately.
+Editable SVG text needs the included fonts. Install them to edit, or place the outlined logo SVGs and the rendered PNGs instead. The PNGs are exported from the editable SVGs. Re-render them with the top-level `build_packs.py` and its `fontconfig.xml`; do not edit a PNG on its own.
 
-The story artwork keeps the main message between y=250 and y=1670 on a 1080×1920 canvas. Check the destination’s current overlay and crop behavior in its composer. Keep critical banner content away from the bottom-left avatar area. These are layout guides, not a guarantee of every platform crop.
+The story artwork keeps its main message between y=250 and y=1670 on a 1080×1920 canvas. Keep critical banner content away from the bottom-left corner, where the avatar sits. These are layout guides, and platforms crop differently, so check the current overlay and crop in the destination's composer.
 
 ## Product site
 
@@ -68,12 +104,14 @@ The interface adds roles that this pack's tokens do not define. They belong to t
 
 ## Screenshots and video
 
-Replace the screenshot placeholder with a real capture of a verified workflow. Show enough interface to establish context; crop credentials, private dashboards, unpublished material and personal data. Keep original recordings separately from edited exports.
+Replace the screenshot placeholder with a real capture of a verified workflow. Show enough of the interface to give context. Crop out credentials, private dashboards, unpublished material and personal data. Keep original recordings separate from edited exports.
 
-The video templates use a 1920×1080 canvas and a 96-pixel outer margin. Keep captions to two short lines. Use the supplied ASS style as a starting point, then check readability at phone size. Lower-thirds have a transparent background outside the panel. Avoid rapid flashing; use a short fade or hard cut for title/end cards. The eight-second preview is a template demonstration, not a product demonstration.
+The video templates use a 1920×1080 canvas with a 96-pixel outer margin. Keep captions to two short lines. Start from the supplied ASS style, then check that captions read at phone size. The lower third is transparent outside its panel. Use a short fade or a hard cut for title and end cards, and avoid rapid flashing. The eight-second preview demonstrates the template, not the product.
 
 ## Copy, alt text and sources
 
-Use verified product claims and exact approved copy. Quote/release template text is placeholder content and must be replaced. Describe the completed image in alt text, including the visible message; do not describe a screenshot placeholder as a working feature. `alt-text.md` supplies starter descriptions for the completed sample artwork.
+Use verified product claims and exact approved copy. Each product has its own voice, set out in [the voice guide](../../../../content/VOICE.md). A headline in the sample artwork shows the layout. It is approved copy only where this guide says so. The text in the quote and release templates is a placeholder and must be replaced.
 
-Reference: User-edited CLPR logo; Clip stack direction selected by the user on October 1, 2026; applied to clpr.tv on October 2, 2026. Source/asset observation dates are recorded in the reference above. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
+Alt text describes the finished image, including the words visible in it. Do not describe a screenshot placeholder as a working feature. `alt-text.md` has starter descriptions for the sample artwork.
+
+Reference: User-edited CLPR logo; Clip stack direction selected by the user on October 1, 2026; applied to clpr.tv on October 2, 2026. Where an observation date was recorded, it is in the reference above. Original files in the legacy library are preserved. The inventory's hashes identify bytes. They do not establish permission to publish third-party material.

@@ -22,6 +22,8 @@ The current approval record identifies Patrick’s Patch direction; its supersed
 
 [cleanup-receipt.json](cleanup-receipt.json) records the baseline revision, path moves, removal hashes and preserved SVG hashes. Recover individual originals from that revision or the retained Studio ancestry. Do not restore an old snapshot over current masters or active edits.
 
+The preserved SVG hashes are a record of the baseline and are not edited. When a generator deliberately rewrites a preserved SVG, the receipt gains a dated `superseded` entry with the new hash, and `python3 studio/scripts/check_library.py --check-cleanup-originals` checks that hash for those paths. The first entry, dated October 3, 2026, lists 44 brand-pack SVGs re-rendered with new headlines. Their baseline bytes stay recoverable from the baseline revision.
+
 The primary checkouts and live timers were not changed. Their outstanding work and installed-consumer cutover are still covered by [repository consolidation](REPOSITORY-CONSOLIDATION.md). The October 6 publication hold is preserved in [the historical release record](history/RELEASE-2026-10-06.md).
 
-Local, hosted CI, rendered UI, deployment and natural scheduled-run evidence are separate. Validation results belong in the PR with the exact checked revision.
+Local checks, hosted CI, rendered UI, deployment and a natural scheduled run are separate kinds of evidence; one does not stand in for another. Put validation results in the PR with the exact revision checked.

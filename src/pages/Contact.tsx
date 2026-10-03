@@ -68,7 +68,9 @@ export default function Contact() {
       });
       setSubmitted(true);
     } catch {
-      setError('We could not send your message. Your entries are preserved.');
+      setError(
+        'We could not send your message. Nothing you typed was lost. Try again, or send it as an email.',
+      );
     } finally {
       setSubmitting(false);
     }
@@ -80,10 +82,10 @@ export default function Contact() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <div className="mb-12">
-          <p className="font-mono text-xs text-dust mb-3">SUBCULT / LET’S TALK</p>
+          <p className="font-mono text-xs text-dust mb-3">SUBCULT / CONTACT</p>
           <h1 className="mb-4">Contact</h1>
           <p className="text-bone max-w-2xl">
-            Ask about a product, propose a collaboration, or report a bug.
+            Ask about a product, report a bug, or tell us what you’re working on.
           </p>
         </div>
 
@@ -98,9 +100,7 @@ export default function Contact() {
             {submitted ? (
               <div className="border border-static p-6" role="status">
                 <h3 className="mb-3">Message received</h3>
-                <p className="text-bone">
-                  Thanks for getting in touch. We’ll reply to the email address you provided.
-                </p>
+                <p className="text-bone">We have it. We’ll reply to the email address you gave.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -171,7 +171,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className={inputClass + ' resize-y'}
-                    placeholder="your message..."
+                    placeholder="what happened, or what you need"
                   />
                 </div>
 

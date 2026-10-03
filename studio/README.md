@@ -10,12 +10,13 @@ Studio is the private production area of the combined `subcult-tv` repository. I
 | [Patrick source](branding/patrick/README.md) | Selected Patch design system, generator and seven approved waveform treatments |
 | `media/library/` | Original captures, generated artwork, edits, recipes and hash-bound catalog |
 | [Design references](references/USAGE.md) | Curated observations and 590 searchable reference records |
+| [Voice guide](content/VOICE.md) | How each product and account sounds in public copy |
 | `content/social/` | Guidance, claims, plans, source watchlists and prepared drafts |
 | `content/patreon/` | Patreon plans, release material and artwork |
 | `automation/social-posting/` | Preparation jobs, configuration and unit sources |
 | [Retired sources](branding/archive/README.md) | Earlier studies and preserved original artwork |
 
-Production generators and user-edited SVG references remain authoritative. Per-brand fonts and exported Patrick copies are deliberate standalone pack inputs, not duplicate junk. Media and references retain their recorded rights and inspection limits.
+Production generators and user-edited SVG references are authoritative. Per-brand fonts and exported Patrick copies look like duplicates but are deliberate: each pack has to stand alone. Media and references keep their recorded rights and inspection limits.
 
 ## Work from the repository root
 
@@ -39,7 +40,7 @@ To export to an external private destination, from the repository root:
 rtk proxy python3 studio/scripts/export_studio.py --output /absolute/private/studio-bundle
 ```
 
-An optional `--posting-state /absolute/private/social-posting-state` reads receipt-bearing completed runs. It does not write runner state or run a job. Browser refresh observes the exported snapshot; fresh preparation data requires a new export. See [Studio API configuration](../docs/STUDIO.md).
+An optional `--posting-state /absolute/private/social-posting-state` reads completed runs that have receipts. It does not write runner state or run a job. Refreshing the browser shows the same exported snapshot; new preparation data needs a new export. See [Studio API configuration](../docs/STUDIO.md).
 
 ## Installed consumers and history
 

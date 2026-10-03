@@ -5,28 +5,28 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "29f8dd1d73e0978d37e1e18dce2c2b3a54f2c3f561b3dfee415ad3fb053b4df2",
-      "bytes": 7399
+      "sha256": "73b9c68938e133d543e397d203647d8702eaaa3d00a1d83745fbca5ad5c7c860",
+      "bytes": 9133
     },
     {
       "path": "alt-text.md",
-      "sha256": "e2bc9b6ded81c2c271fabf3e4edb3b4afaeb9a3d8a6167fabb7a1b0f94f772fc",
-      "bytes": 573
+      "sha256": "f2688e1b77e909f53e45eca9a1fe233892e2409adecad75dbb9ced7a12c0e7ad",
+      "bytes": 1066
     },
     {
       "path": "design-system/README.md",
-      "sha256": "85d1f5e4769683119161f6a10b9595d18e7fae0ca3b0af4128bc5cef8936e2b7",
-      "bytes": 6679
+      "sha256": "363d72904c8d1486f293add0a10d66c50b15af09904c2b1e3da4ee1c7a47c75f",
+      "bytes": 7082
     },
     {
       "path": "design-system/examples/01-specimen.html",
-      "sha256": "07f0f0f48d17c19a96e65d27f70c262d387e00837fc7f28723f8402fadfe139a",
-      "bytes": 10985
+      "sha256": "e1f878111fc41912a41f853fff30180fd5b34f4c15e5bb79f04648820e132a8b",
+      "bytes": 10928
     },
     {
       "path": "design-system/examples/02-rack.html",
-      "sha256": "443855595d307c0dacba0abd85cce3f1dcae62c9688d2720ce320b0001b0022b",
-      "bytes": 9812
+      "sha256": "d8b91c5d5391bcfaf918d926195ad3242c21e693c84f4b76bb6151152ace8f54",
+      "bytes": 9805
     },
     {
       "path": "design-system/examples/03-jcard.html",
@@ -35,13 +35,13 @@
     },
     {
       "path": "design-system/examples/04-deck.html",
-      "sha256": "6f55deba2ceb00856935fe630869d2405093ef2a344bf78e1ced58870ebb99f2",
-      "bytes": 8196
+      "sha256": "1a8da68bb2b889f1268f16394d8fd6e4a007e270f735714cf95b73b8af904114",
+      "bytes": 8176
     },
     {
       "path": "design-system/source-provenance.json",
-      "sha256": "a0aef37abf051d527db2b325789dc3e008802638e1975cc7dd1f413b19b88074",
-      "bytes": 1326
+      "sha256": "44ae8c775e4f66612f5bf23b53c62913c5d67496d15abcb1761dd7eeeae53145",
+      "bytes": 2911
     },
     {
       "path": "design-system/tokens.css",
@@ -105,8 +105,8 @@
     },
     {
       "path": "landing.html",
-      "sha256": "ed3ecec98068da7800dc3c6b235294d36809f03c0b5c1d05eb3a07fe62f106ef",
-      "bytes": 8175
+      "sha256": "959d4fc3f858eafad8754ac36f453b09276ae0253743db6fe9355605924cede1",
+      "bytes": 8330
     },
     {
       "path": "logos/lockup-dark-outlined.svg",
@@ -303,8 +303,8 @@
     },
     {
       "path": "product/README.md",
-      "sha256": "60ef980832524377f4a6c8889203bff2da95bdc92634905c41f078c09e026892",
-      "bytes": 266
+      "sha256": "47311a66cab8343e627bbb74909f0e4b249479b2a3edfce6c5866ed70fded5b7",
+      "bytes": 278
     },
     {
       "path": "product/apple-touch-icon.png",
@@ -326,8 +326,8 @@
     },
     {
       "path": "product/og.png",
-      "sha256": "93040b8acb343423c8b8e725843e54dc5a3a63b2ee66d6de1b1773a45bda0c90",
-      "bytes": 82761,
+      "sha256": "29d883be39b9434de607ee846cee4e9ac082b3b0dcda601824d7e18cc7eba015",
+      "bytes": 84094,
       "width": 1200,
       "height": 630,
       "mode": "RGB"

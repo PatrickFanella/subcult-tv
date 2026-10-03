@@ -1,18 +1,18 @@
 # Dedhed design system: The Tape Shelf
 
-Status: proposal, 2026-10-02. Not yet applied to `web/`. The running app still uses `web/src/styles.css`.
+Status: applied to `web/` on 2026-10-02. `web/src/tokens.css` is a verbatim copy of `tokens.css` here, checked by `make verify` through `scripts/test_design_tokens.py`; `web/src/styles.css` holds the app's page layout on top of it. The SUBCULT Studio brand pack for Dedhed copies this directory as well.
 
 Source material: the eleven photographs in `docs/inspo/`. They show taper collections of Grateful Dead shows on blank cassettes (TDK SA90, Maxell XLII and UR), typed and handwritten spine labels, coloured label stock from 1985, commercial pre-recorded spines, bare shells, and wooden racks.
 
-## What the material says
+## What the photographs show
 
-Read as a system rather than as nostalgia, the photos settle a few things:
+Five things in the photographs set the rules for the interface:
 
-- **The unit of the collection is the spine.** A cassette on a shelf shows one long, thin strip: brand tab, label, end. Everything a taper needed to find a show fits on it: band, date, set number, venue, city. A library list should look like a rack of spines, not a grid of cards.
-- **The label is typed or handwritten, never designed.** Dates read `4/17/71` or `April 27, 1985 Set II`. Sets are roman numerals. Venues are abbreviated the way the taper abbreviated them. The interface should use the same vocabulary and let the data look like data.
-- **Colour comes from the label stock, not from decoration.** The 1985 collection uses sky, cobalt, yellow, red, green, pink and orange stock, apparently per venue run. Colour groups; it never replaces text.
-- **Hardware is honest.** Shells are black or clear. Tabs are red (Maxell, TDK) or gold foil (XLII). Reels show through a window. Counters are three white digits on black. Buttons on a deck are square keys that go down when pressed.
-- **Imperfection is information.** Yellowed labels, crossed-out dates, a tape marked only "Columbus, Ohio 10/31/71" with no set number. The product requirement to preserve uncertain set boundaries maps directly onto this: an unreviewed tape is shown as such, on a plainer label, with a warning sticker.
+- **The unit of the collection is the spine.** A cassette on a shelf shows one long, thin strip: brand tab, label, end. It holds what a taper needed to find a show: band, date, set number, venue, city. A library list should look like a rack of spines, not a grid of cards.
+- **The label is typed or handwritten, never designed.** Dates read `4/17/71` or `April 27, 1985 Set II`. Sets are roman numerals. Venues are abbreviated the way the taper abbreviated them. The interface uses the same vocabulary and sets data in the same plain way.
+- **Colour comes from the label stock.** The 1985 collection uses sky, cobalt, yellow, red, green, pink and orange stock, apparently per venue run. Colour groups tapes; it never replaces text.
+- **Hardware looks like hardware.** Shells are black or clear. Tabs are red (Maxell, TDK) or gold foil (XLII). Reels show through a window. Counters are three white digits on black. Buttons on a deck are square keys that go down when pressed.
+- **Wear and gaps stay visible.** The photographs show yellowed labels, crossed-out dates, and a tape marked only "Columbus, Ohio 10/31/71" with no set number. The product must preserve uncertain set boundaries, so an unreviewed tape is shown as unreviewed: a plainer label and a warning sticker.
 
 ## Tokens
 
@@ -37,7 +37,7 @@ All tokens are CSS custom properties in [`tokens.css`](tokens.css). System fonts
 | Interface | `--font-ui` (Arial) | Explanations, errors, empty states, help |
 | Commercial spine | `--font-spine` (Arial Narrow) | Wordmark and brand tabs only |
 
-The rule: typed and typewriter voices carry data. The interface voice explains. Do not set an error message in the typed voice or a track title in Arial.
+The typed and typewriter voices carry data. The interface voice explains. Do not set an error message in the typed voice or a track title in Arial.
 
 ### Geometry and motion
 
@@ -66,7 +66,7 @@ Defined in `tokens.css` and shown on the specimen sheet.
 
 ## Examples
 
-Open any of these directly in a browser. They share `tokens.css` and use sample data; the show titles, dates and durations are illustrative, not catalog entries.
+Open any of these directly in a browser. They share `tokens.css` and use sample data: the show titles, dates and durations are illustrations, not catalog entries.
 
 1. [`examples/01-specimen.html`](examples/01-specimen.html). Colour, type, spine variants, keys, stickers, hardware and the four non-happy states in the same voice.
 2. [`examples/02-rack.html`](examples/02-rack.html). The concert library as a wooden rack of spines, with year filters, an index-card detail for the selected tape, and the shared-radio call to action.
@@ -75,6 +75,10 @@ Open any of these directly in a browser. They share `tokens.css` and use sample 
 
 Checked on 2026-10-02 in headless Chromium at 1280px and 420px widths, after the backdrop and masthead were unified. Interactions are static in these files; hover, press and spin states are CSS only. No browser-level accessibility audit has been run.
 
-## Applying it to the app
+## How the app uses it
 
-The current `web/src/styles.css` already leans this way: Georgia headings, monospace eyebrows, a `.tape` list item, a dark fixed `.player`. The gaps are the spine construction (tab, label stock, end), the rack, the deck keys, and the stickers for synthetic and unreviewed tapes. A migration would import `tokens.css`, replace `.tape` with `.spine` inside a `.rack`, and move the player onto `.deck`. That is a separate change and should go through `make verify` plus a browser pass.
+- The masthead, rack, spine, key, field, sticker, reel, counter and deck primitives come from `tokens.css`.
+- The concert list is a `.rack` of `.spine` buttons. The brand tab names the source type, gold for soundboard, chrome for synthetic test tapes. The label carries date, reviewed set numerals, venue and a warning sticker when set boundaries are unreviewed.
+- The selected recording is a cassette face above a J-card: one side panel per set with a Play key, then the credits.
+- The fixed player is the deck: reel window, play key, now-playing block, transport and volume. Reels spin while audio plays.
+- Edit `docs/design/tokens.css`, then copy it over `web/src/tokens.css`. Page layout belongs in `web/src/styles.css`.

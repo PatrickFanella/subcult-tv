@@ -40,17 +40,39 @@ const ORGANIZATION = {
   sameAs: SOCIAL_PROFILES,
 };
 
-// Search snippets show about 155 characters; these replace longer summaries.
+// Search snippets show about 155 characters, so every product gets a
+// description written to that length instead of its longer showcase summary.
 const META_DESCRIPTIONS: Record<string, string> = {
-  'left-field':
-    'Explore sourced seat records, provisional research scores, and the evidence behind each brief. Left Field is in active development.',
+  clpr: 'Twitch clips sorted by creator, topic and tag. Save the good ones to playlists and send them to whoever missed it live.',
   patchwork:
-    'Ask neighbors for help, offer what you can, and find local resources without sharing exact addresses. A pre-alpha mutual aid prototype on AT Protocol.',
-  prichal:
-    'Prichal runs your own server on the open network Bluesky runs on and keeps it online. A private preview of managed account hosting from SUBCULT.',
+    'A neighborhood board for asking and offering help. Requests show an approximate area. Pre-alpha demonstration: please don’t arrange real help through it yet.',
+  hasanara:
+    'Search years of HasanAbi broadcasts by topic or exact phrase. Results open at the timestamp. Transcripts are automatic, so check the recording before quoting.',
+  'transcript-create':
+    'Rekolekt transcribes recordings with timestamps, indexes the text and links each passage to its source. Software you deploy, not a hosted upload service.',
+  'subcult-os':
+    'A run sheet for small shows: the plan, the crew, free ticket reservations, door check-in and an end-of-night report. Subcult OS is in development.',
   undertow:
-    'Layer Milkdrop visuals, spectrum, artwork, lyrics, and particles, then export landscape, portrait, and square MP4s in your browser.',
-  kork: 'Free themed link pages with 92 services, tip buttons, embeds, QR codes, and anonymous analytics. Kork takes no cut of tips or sales.',
+    'Layer Milkdrop, spectrum, VU meters, artwork and timed lyrics. Lay out 16:9, 9:16 and 1:1, then export H.264 MP4 in your browser.',
+  prichal:
+    'Prichal runs your account’s own server on the open network Bluesky runs on, and we do the maintenance. Private preview, with no sign-up yet.',
+  kork: 'A free link page with 92 services, ten themes, embeds, QR codes and anonymous analytics. Tips go to your own accounts, and Kork takes no cut.',
+  'left-field':
+    'Seat-level public records beside their sources and gaps. Scores are provisional, versioned research notes, not forecasts. In active development.',
+};
+
+// Titles allow about 60 characters. These stand in where "name: headline"
+// would run long.
+const TITLE_PHRASES: Record<string, string> = {
+  clpr: 'Twitch clips by creator, topic and tag',
+  patchwork: 'A neighborhood board for mutual aid',
+  hasanara: 'Search what was said on stream',
+  'transcript-create': 'Searchable recording archives',
+  'subcult-os': 'A run sheet for small shows',
+  undertow: 'Give the track something to look at',
+  prichal: 'Your server. We keep it running',
+  kork: 'A free page for every link',
+  'left-field': 'Sourced seat research',
 };
 
 // schema.org applicationCategory for each product.
@@ -75,7 +97,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/',
     title: 'SUBCULT | Tools for independent culture',
     description:
-      'Software for clips, archives, mutual aid, events, music video, hosting, link pages, and election research. Explore nine products from SUBCULT.',
+      'Nine products from SUBCULT for people who run things: Twitch clips, archives, mutual aid, shows, music video, account hosting, link pages, seat research.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [
@@ -93,7 +115,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/products',
     title: fullTitle('Products'),
     description:
-      'Nine products from SUBCULT for clips, mutual aid, archives, events, music video, account hosting, link pages, and sourced election research.',
+      'clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork and Left Field. Each page says whether the product is live, a demo or in development.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -101,7 +123,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/about',
     title: fullTitle('Studio'),
     description:
-      'SUBCULT is the independent studio behind CLPR, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork, and Left Field.',
+      'Subculture Collective is the independent studio behind clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork and Left Field.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [ORGANIZATION],
@@ -109,7 +131,8 @@ const STATIC_PAGES: PageMeta[] = [
   {
     path: '/contact',
     title: fullTitle('Contact'),
-    description: 'Contact SUBCULT about collaborations, product questions, or bug reports.',
+    description:
+      'Write to SUBCULT about a product, a bug or something you’re working on. Use the form or email info@subcult.tv.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -117,14 +140,14 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/support',
     title: fullTitle('Support the workshop'),
     description:
-      'The products stay public. Back SUBCULT on Patreon for weekly field notes, a monthly studio ledger, and early previews, or follow for free.',
+      'Paying doesn’t unlock the software; it stays public. Patreon members get private Discord channels and supporter posts, with no fixed posting schedule.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
   {
     path: '/newsletter/confirmed',
     title: fullTitle('Subscription confirmed'),
-    description: 'Your SUBCULT product updates subscription is confirmed.',
+    description: 'Your subscription to the monthly SUBCULT newsletter is confirmed.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     noIndex: true,
@@ -151,7 +174,9 @@ function productMeta({ project, headline, summary }: ShowcaseProduct): PageMeta 
   const image = productImage(project.slug);
   return {
     path,
-    title: fullTitle(`${project.name}: ${headline.replace(/\.$/, '')}`),
+    title: fullTitle(
+      `${project.name}: ${TITLE_PHRASES[project.slug] ?? headline.replace(/\.$/, '')}`,
+    ),
     description,
     image,
     imageAlt: `${project.name}: ${headline}`,

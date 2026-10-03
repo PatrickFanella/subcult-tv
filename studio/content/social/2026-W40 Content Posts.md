@@ -150,3 +150,49 @@ Proposed alt text: Proposed recording: a synthetic free reservation produces a t
 - Review asset identity, rights, attribution and accessibility; confirm image alt text and video captions survive the publishing path.
 - Keep Undertow local export separate from sandbox cloud billing. Music/plugins remain deferred; no spoiler-safe Common House Friday asset was selected.
 <!-- social-posting-runner:end -->
+
+## Voice rewrite (2026-10-03, unapproved)
+
+Replacement bodies for the drafts in the managed block above, written against the [voice guide](../VOICE.md) and keyed by the same draft IDs and intended times. The block itself is unchanged: the runner compares its hash with the stored one before it writes the next plan. Every entry stays in state `draft`. Intended time, media, evidence boundary and remaining checks are the ones recorded above unless an entry says otherwise. Counts are characters including the URL.
+
+### HASANARA-01 / patrick (2026-10-01T16:41:00-05:00)
+
+A search hit in HasanAra is a timestamp. Click one and you're in the broadcast at that second, and you can hear what came before it. I'd rather hand people the tape than a sentence with the context cut off. https://hasanara.tv
+
+Characters: 226.
+
+### HASANARA-02 / patrick (2026-10-02T09:11:00-05:00)
+
+HasanAra's transcripts are machine-made, and machines mishear. If you're going to quote one, open the timestamp and listen first, including the minute before it. That's why every passage links back to the recording.
+
+Characters: 215.
+
+### CLPR-01 / clpr (2026-10-02T10:34:00-05:00)
+
+That one clip from the stream last week. You know the one. If somebody clipped it, it's filed under the creator. Start there and keep scrolling. https://clpr.tv
+
+Characters: 160.
+
+### HASANARA-01 / subcult (2026-10-02T11:22:00-05:00)
+
+We keep a searchable record of HasanAbi broadcasts. Type a phrase and it opens the broadcast at the moment it was said. The transcripts are automatic and sometimes wrong, so check the tape before you quote it. https://hasanara.tv
+
+Characters: 229.
+
+### PATCHWORK-02 / patrick (2026-10-03T09:11:00-05:00)
+
+Patchwork is pre-alpha, so most of what I can show is decisions. One of them: a request for help appears as an approximate area. An exact address only appears for a public resource, and only after it's approved. The map treats a pantry and a person differently on purpose.
+
+Characters: 272. The pantry is an illustration of an approved public resource, not a listed one; keep the synthetic-data check.
+
+### REKOLEKT-03 / patrick (2026-10-04T09:11:00-05:00)
+
+HasanAra runs on Rekolekt. I split them so the archive could keep its own name, look and broadcast sources while the search and transcript code stays shared. A second archive wouldn't need a fork.
+
+Characters: 196.
+
+### OS-02 / subcult (2026-10-04T11:22:00-05:00)
+
+Subcult OS is still in development, so the guest in this clip is fake. The steps are real: a free reservation, a ticket link, a name on the list, a check-in at the door. https://subcult.tv/products/subcult-os
+
+Characters: 208. Depends on the capture named in the media brief; without that recording this copy has no clip to refer to.

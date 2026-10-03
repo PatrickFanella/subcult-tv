@@ -23,7 +23,7 @@ title: Patreon Positioning
 
 # Patreon Positioning
 
-Patreon is the deeper layer behind SUBCULT: [[001 Projects/Works/Patreon/changemaker]], [[001 Projects/Works/Patreon/subcult.tv]], and public projects.
+Patreon carries the process behind SUBCULT: [[001 Projects/Works/Patreon/changemaker]], [[001 Projects/Works/Patreon/subcult.tv]], and public projects.
 
 ## Core message
 
@@ -31,7 +31,7 @@ Patreon is the deeper layer behind SUBCULT: [[001 Projects/Works/Patreon/changem
 
 Supporting message:
 
-> Most of what we make stays public. Patreon is where you get the process: early previews, build notes, drafts, roadmap context, experiments, and advisory input on explicitly bounded choices.
+> Most of what we make stays public. Patreon has the working notes: early previews, build notes, drafts, roadmap context, experiments, and advisory input on explicitly bounded choices.
 
 ## Public page frame
 
@@ -39,8 +39,8 @@ Use this sequence on the Patreon page:
 
 1. SUBCULT makes software, media, and experiments for online subcultures.
 2. Most output stays public.
-3. Patrons get the deeper layer: early access, build notes, drafts, roadmaps, experiments, and occasional input.
-4. Support creates more room for independent work without buying ownership, governance, or guaranteed output.
+3. Patrons get the process: early access, build notes, drafts, roadmaps, experiments, and occasional input.
+4. Support helps pay for independent work. It does not buy ownership, governance, or guaranteed output.
 
 ## What Patreon provides
 
@@ -56,7 +56,7 @@ Use this sequence on the Patreon page:
 
 ## Avoid
 
-Avoid vague “exclusive content.” Say what patrons actually receive:
+Do not say "exclusive content." Name what patrons receive:
 
 - drafts
 - decisions
@@ -68,25 +68,25 @@ Avoid vague “exclusive content.” Say what patrons actually receive:
 
 ## Value proposition
 
-> Join the process behind SUBCULT: early previews, build notes, roadmap context, experiments, and a defined feedback loop.
+> Read how SUBCULT gets made: early previews, build notes, roadmap context, experiments, and a defined feedback loop.
 
 Secondary:
 
-> Support the work, read the backstage: drafts, decisions, previews, and operational memory.
+> Pay toward the work and read the backstage notes: drafts, decisions, previews, and the record of what happened.
 
 ## CTA language
 
 Soft:
 
-- Follow along if you like weekly field notes.
-- Full notes live on Patreon.
-- Follow for free if you are curious.
+- Weekly field notes, if you like that sort of thing.
+- Full notes are on Patreon.
+- Following is free.
 
 Medium:
 
-- Join Patreon for the full process behind SUBCULT.
-- Supporters get the deeper version.
-- Join if you want the process, not just the polished result.
+- The full process behind SUBCULT is on Patreon.
+- Supporters get the longer version.
+- Join if you want to see the process as well as the result.
 
 Direct:
 
@@ -99,7 +99,7 @@ Direct:
 - Free follow: public updates, occasional previews, and concrete invitations to inspect or respond.
 - Backer — $10/month: one weekly field note, one monthly studio ledger, selected early previews and drafts, occasional scoped advisory questions, and supporter archive access.
 
-Start the relaunch with these two choices. Workshop, Underwriter, or other higher tiers are future design options, not current offers. Add one only after a distinct benefit, sustainable delivery cost, rights boundary, and existing-member impact have been reviewed.
+Start the relaunch with these two choices. Workshop, Underwriter, and other higher tiers are future design options, not current offers. Add one only after reviewing its distinct benefit, sustainable delivery cost, rights boundary, and effect on existing members.
 
 ## Rights boundary
 

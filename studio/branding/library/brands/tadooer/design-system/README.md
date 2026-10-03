@@ -5,15 +5,15 @@ The stylesheet `apps/web/src/styles.css` is the source of truth for values;
 `tokens.css` beside this file restates them as plain custom properties, and
 `examples/01-specimen.html` shows them without the app. The Studio brand pack
 in `subcult-tv/studio/branding/library/brands/tadooer/` copies this directory
-with hashes and holds the promotional artwork; promotional layouts are edited
-there, interface rules here.
+with hashes and holds the promotional artwork. Promotional layouts are edited
+there and interface rules here.
 
 ## Identity
 
 **Name.** Tadooer, written with one capital in prose and in the wordmark. The
 repository, package and image names stay `productivity-suite`, and the build
 and readiness endpoints report `service: "productivity-suite"`; the desktop and
-mobile shells check that value, so it is an identifier, not a name.
+mobile shells check that value. Treat it as an identifier, not a name.
 
 **What it is.** A private, self-hosted task and calendar planner for one owner,
 with a web app, desktop and mobile shells around the same server, live sync
@@ -36,20 +36,21 @@ edit the copies. `suite-icon.svg` stays as the mark's editable source.
 setting as page titles. Lowercase is for identifiers only.
 
 **Voice.** Plain words, present tense, one idea per sentence. State what the
-software does and does not do; the product's own documents never claim a
-feature that is not verified. No exclamation marks.
+software does and does not do. The product's own documents never claim a
+feature that is not verified. No exclamation marks, no productivity sermon and
+no invitation to sign up: this is a private tool for one owner.
 
 ## Direction
 
 Dark only. Surfaces and text come from Catppuccin Mocha. Accents come from
-Dracula. The two palettes share a purple-leaning base, so the mix reads as one
-system rather than a theme swap.
+Dracula. Both palettes have a purple-leaning base, so the two read as one
+system.
 
 ## Surfaces
 
-Every layer has a job. Borders sit one step above the surface they sit on.
-Depth comes from tint, not shadow; the only shadow is the overlay shadow on
-dialogs and the auth card.
+Each layer has one use, listed below. A border sits one step above the
+surface it is on. Depth comes from tint. The only shadow is the overlay shadow
+on dialogs and the auth card.
 
 | Token                      | Value                 | Used for                                           |
 | -------------------------- | --------------------- | -------------------------------------------------- |
@@ -61,8 +62,8 @@ dialogs and the auth card.
 | `--surface-2`              | `#45475a`             | Pressed states, secondary button hover             |
 | `--line` / `--line-strong` | `#2e2e44` / `#3a3a54` | Borders on surface-0 / inputs and controls         |
 
-Text is `--text #e2e6f6`, nudged brighter than Mocha's default so body copy
-still wins against saturated chips. `--subtext #a6adc8` is secondary copy,
+Text is `--text #e2e6f6`, slightly brighter than Mocha's default so body copy
+stays readable beside saturated chips. `--subtext #a6adc8` is secondary copy,
 `--subtext-2 #7f849c` is metadata and eyebrows.
 
 ## Accents, one meaning each
@@ -76,7 +77,7 @@ still wins against saturated chips. `--subtext #a6adc8` is secondary copy,
 | `--green`  | `#50fa7b` | Success, sync online, working state, current freshness                             |
 | `--orange` | `#ffb86c` | Warning, conflict, overdue, stale freshness, offline                               |
 | `--red`    | `#ff5555` | Danger, destructive actions, errors, unavailable                                   |
-| `--yellow` | `#f1fa8c` | Unassigned. Stays out of the UI until something earns it.                          |
+| `--yellow` | `#f1fa8c` | Unassigned. Not used in the UI.                                                    |
 
 Tinted fills (`--*-tint`) are the accent at 13 to 14 percent over transparent.
 Use them for chips, banners, and highlighted rows. Never fill a large area with
@@ -155,7 +156,7 @@ accent table above.
 
 ## Out of scope for now
 
-A light variant. Both source palettes are dark-first, and a Latte-style light
-theme would be a separate piece of work with its own contrast pass. The
+A light variant. Both source palettes are dark-first. A Latte-style light
+theme would be separate work with its own contrast pass. The
 Studio pack's light and monochrome logo variants exist for print and foreign
 backgrounds, not for the app.
