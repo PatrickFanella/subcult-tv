@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tadooer design system specimen</title>
+    <link rel="stylesheet" href="../tokens.css" />
+    <style>
+      /* System font stacks stand in for the self-hosted Inter and Atkinson Hyperlegible Mono. */
+      body {
+        margin: 0;
+        background: var(--crust);
+        color: var(--text);
+        font: 400 var(--text-base)/1.5 var(--font-sans);
+      }
+      main {
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: var(--spacing-page);
+        display: grid;
+        gap: var(--spacing-section);
+      }
+      h1 {
+        font-size: var(--text-2xl);
+        font-weight: 650;
+        letter-spacing: -0.015em;
+        margin: 0;
+      }
+      h2 {
+        font-size: var(--text-lg);
+        font-weight: 600;
+        margin: 0 0 var(--spacing-element);
+      }
+      .eyebrow {
+        font: 600 var(--text-2xs)/1 var(--font-sans);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--subtext-2);
+      }
+      .card {
+        background: var(--surface-0);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-section);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .brand svg {
+        width: 40px;
+        height: 40px;
+      }
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+        gap: var(--spacing-compact);
+      }
+      .swatch {
+        border-radius: var(--radius-md);
+        border: 1px solid var(--line-strong);
+        padding: 0.5rem;
+        font-family: var(--font-mono);
+        font-size: var(--text-xs);
+      }
+      .surfaces .swatch {
+        color: var(--subtext);
+      }
+      .accent {
+        color: var(--crust);
+        font-weight: 600;
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-compact);
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        height: 1.5rem;
+        padding: 0 0.6rem;
+        border-radius: 999px;
+        font-size: var(--text-xs);
+        font-weight: 600;
+      }
+      .chip::before {
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: currentColor;
+      }
+      .ok {
+        background: var(--success-tint);
+        color: var(--green);
+      }
+      .warn {
+        background: var(--warning-tint);
+        color: var(--orange);
+      }
+      .info {
+        background: var(--info-tint);
+        color: var(--cyan);
+      }
+      .now {
+        background: var(--now-tint);
+        color: var(--pink);
+      }
+      .cal {
+        background: var(--calendar-tint);
+        color: var(--teal);
+      }
+      .danger {
+        background: var(--danger-tint);
+        color: var(--red);
+      }
+      .controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-compact);
+        align-items: center;
+      }
+      button {
+        height: var(--control-height);
+        padding: 0 0.75rem;
+        border-radius: var(--radius-sm);
+        border: 1px solid transparent;
+        font: 600 var(--text-sm) var(--font-sans);
+        cursor: pointer;
+      }
+      .primary {
+        background: var(--purple);
+        color: var(--crust);
+      }
+      .secondary {
+        background: var(--surface-1);
+        color: var(--text);
+        border-color: var(--line-strong);
+      }
+      .ghost {
+        background: transparent;
+        color: var(--text);
+      }
+      .destructive {
+        background: var(--red);
+        color: var(--crust);
+      }
+      button:focus-visible {
+        outline: 2px solid var(--cyan);
+        outline-offset: 2px;
+      }
+      input {
+        height: var(--control-height);
+        background: var(--mantle);
+        color: var(--text);
+        border: 1px solid var(--line-strong);
+        border-radius: var(--radius-sm);
+        padding: 0 0.6rem;
+        font: inherit;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1.25rem 1fr auto;
+        gap: 0.75rem;
+        align-items: center;
+        padding: 9px 0.75rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: var(--surface-0);
+      }
+      .row + .row {
+        margin-top: var(--spacing-compact);
+      }
+      .row .box {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 4px;
+        border: 1.5px solid var(--line-strong);
+      }
+      .row .meta {
+        font-family: var(--font-mono);
+        font-variant-numeric: tabular-nums;
+        font-size: var(--text-xs);
+        color: var(--subtext);
+      }
+      .row.overdue .meta {
+        color: var(--orange);
+      }
+      .row.focus {
+        border-color: var(--purple);
+        box-shadow: inset 3px 0 0 var(--purple);
+      }
+      .timer {
+        font: 500 var(--text-3xl)/1 var(--font-mono);
+        font-variant-numeric: tabular-nums;
+        color: var(--pink);
+      }
+      @media (pointer: coarse) {
+        button,
+        input {
+          min-height: var(--tap-target);
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="card brand">
+        <svg viewBox="0 0 512 512" role="img" aria-label="Tadooer mark">
+          <rect width="512" height="512" rx="112" fill="#11111b" />
+          <path
+            d="M132 154h248v44H132zm0 80h170v44H132zm0 80h248v44H132z"
+            fill="#a6adc8"
+          />
+          <circle cx="350" cy="256" r="54" fill="#bd93f9" />
+          <path
+            d="m327 256 16 17 33-39"
+            fill="none"
+            stroke="#11111b"
+            stroke-width="18"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <div class="eyebrow">Design system specimen</div>
+          <h1>Tadooer</h1>
+        </div>
+      </header>
+
+      <section class="card surfaces">
+        <h2>Surfaces</h2>
+        <div class="swatches">
+          <div class="swatch" style="background: var(--crust)">
+            crust #11111b
+          </div>
+          <div class="swatch" style="background: var(--mantle)">
+            mantle #181825
+          </div>
+          <div class="swatch" style="background: var(--base)">base #1e1e2e</div>
+          <div class="swatch" style="background: var(--surface-0)">
+            surface-0 #252538
+          </div>
+          <div class="swatch" style="background: var(--surface-1)">
+            surface-1 #313244
+          </div>
+          <div class="swatch" style="background: var(--surface-2)">
+            surface-2 #45475a
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Accents, one meaning each</h2>
+        <div class="swatches">
+          <div class="swatch accent" style="background: var(--purple)">
+            purple · action
+          </div>
+          <div class="swatch accent" style="background: var(--pink)">
+            pink · now
+          </div>
+          <div class="swatch accent" style="background: var(--cyan)">
+            cyan · focus ring, links
+          </div>
+          <div class="swatch accent" style="background: var(--teal)">
+            teal · calendar
+          </div>
+          <div class="swatch accent" style="background: var(--green)">
+            green · success
+          </div>
+          <div class="swatch accent" style="background: var(--orange)">
+            orange · warning
+          </div>
+          <div class="swatch accent" style="background: var(--red)">
+            red · danger
+          </div>
+        </div>
+        <p class="eyebrow" style="margin-top: 0.75rem">Tinted chips</p>
+        <div class="chips">
+          <span class="chip ok">Sync online</span
+          ><span class="chip now">Running</span
+          ><span class="chip info">Work calendar</span>
+          <span class="chip cal">Baikal</span
+          ><span class="chip warn">Overdue</span
+          ><span class="chip danger">Unavailable</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Controls</h2>
+        <div class="controls">
+          <button class="primary">Capture task</button
+          ><button class="secondary">Sync now</button
+          ><button class="ghost">Cancel</button
+          ><button class="destructive">Delete</button>
+          <input placeholder="What needs doing?" aria-label="Task title" />
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Task rows</h2>
+        <div class="row focus">
+          <span class="box"></span><span>Write the release notes</span
+          ><span class="meta">25m · 14:00</span>
+        </div>
+        <div class="row overdue">
+          <span class="box"></span><span>Return the library books</span
+          ><span class="meta">due Sep 30</span>
+        </div>
+        <div class="row">
+          <span class="box"></span><span>Plan Thursday</span
+          ><span class="meta">Today</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Now</h2>
+        <div class="eyebrow">Focus · Pomodoro</div>
+        <div class="timer">18:42</div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+:root {
+  --brand-bg: #1e1e2e;
+  --brand-fg: #e2e6f6;
+  --brand-accent: #bd93f9;
+  --brand-secondary: #8be9fd;
+  --brand-safe-label: #a6adc8;
+  --font-display: "Inter";
+  --font-body: "Inter";
+  --font-label: "Atkinson Hyperlegible Mono";
+}

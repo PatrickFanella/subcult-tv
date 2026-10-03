@@ -1,8 +1,8 @@
 [
   {
     "path": "README.md",
-    "sha256": "e16a10b4f6492b4846846d6e973dfc4179ad38453d050c337f70871ae8e5a357",
-    "bytes": 11843
+    "sha256": "4573a49be0ed22257c1361eae2d3cefc95c113dbd624644f3c8c2305069ea8cc",
+    "bytes": 13358
   },
   {
     "path": "audit_patchwork_contrast.py",
@@ -5051,13 +5051,13 @@
   },
   {
     "path": "brands.json",
-    "sha256": "dcefbeafd5c14e803881304ff9818ecc57510b82a11760743541bef1db0f4feb",
-    "bytes": 10819
+    "sha256": "99013f05d4e7dbfda77c2b8733951c941dd3b151f2effd3b3eeeaf1423898783",
+    "bytes": 11883
   },
   {
     "path": "build_packs.py",
-    "sha256": "9060144fa5c8d9cfb1381ae285bc95f1d870525e14c27e046a0a9cdd0a0422e6",
-    "bytes": 39873
+    "sha256": "2a5484de8ac21e613ff16f8f558884cfe1f9096fb915953f9ff97d9aa65e2a2e",
+    "bytes": 40227
   },
   {
     "path": "clpr-directions/comparison.png",
@@ -6311,8 +6311,8 @@
   },
   {
     "path": "fonts/sources.json",
-    "sha256": "6f0fb9c66ff0a0044e6cdd8af24ade0aa7e9f80586c2c9bc2717f4e7cc2ffe94",
-    "bytes": 11168
+    "sha256": "ca99072b513d183ac2d70fe924b358849bb7cb165bfc3086f4963ee4798c9e44",
+    "bytes": 13563
   },
   {
     "path": "fonts/spacegrotesk-OFL.txt",
@@ -6331,8 +6331,8 @@
   },
   {
     "path": "index.html",
-    "sha256": "44d3b3f492359475b07c0fc51d2900107a8393e8a001634b254daf5f1398acde",
-    "bytes": 17750
+    "sha256": "0c6db1c6987a227a4c1c1dfe5db4e86548b860f4178bd445c6326c48f56da65d",
+    "bytes": 19042
   },
   {
     "path": "kork_launch_assets.py",
@@ -6641,8 +6641,8 @@
   },
   {
     "path": "selected-directions.json",
-    "sha256": "a623b7b07f891f8e8e287ec784aab10a096bdd69880cf59de9c8388fb71584a7",
-    "bytes": 2110
+    "sha256": "bce9803e33842e4db111b688c5780f03a1331e4c3a38b821414630e5fb105bbd",
+    "bytes": 2621
   },
   {
     "path": "starter-template/README.md",
@@ -6926,7 +6926,457 @@
   },
   {
     "path": "verification.json",
-    "sha256": "873f3c37f31d35bcd5c98803217301156c9eae67cb1c1bea2a43d593c768f295",
-    "bytes": 11106
+    "sha256": "1bc938378e6a3868827896ed189935c4dee424dda2f7cd2a0d459ab23916f24e",
+    "bytes": 13162
+  },
+  {
+    "path": "brands/tadooer/GUIDE.md",
+    "sha256": "1908ca950e7a97d0665f75018358a929362cbf5c22d46b40c8d78dcca31db1bc",
+    "bytes": 7780
+  },
+  {
+    "path": "brands/tadooer/alt-text.md",
+    "sha256": "58d16d13d5bf9df1323d65fc6e95ca951b018f0113c5baef6414c4963e14f91b",
+    "bytes": 598
+  },
+  {
+    "path": "brands/tadooer/asset-manifest.json",
+    "sha256": "a78d461ec0efe0ac97ceea27d2779d1c10a9dc1de9b854d77fb7bbb6a189a64b",
+    "bytes": 14800
+  },
+  {
+    "path": "brands/tadooer/design-system/README.md",
+    "sha256": "275063888094cb677a114abf36a6bdf050a0625379771d799929127d0ee6d46f",
+    "bytes": 9117
+  },
+  {
+    "path": "brands/tadooer/design-system/examples/01-specimen.html",
+    "sha256": "5a850bfb8827f0f65ed6be21b8fa2db1e79026b1c8a1a405a08bdead9ad3f527",
+    "bytes": 9415
+  },
+  {
+    "path": "brands/tadooer/design-system/source-provenance.json",
+    "sha256": "e5745eb1b600e5b327efa2dce1148e7f00eb237ad23501507b7c36d7d7df226d",
+    "bytes": 1231
+  },
+  {
+    "path": "brands/tadooer/design-system/tokens.css",
+    "sha256": "864b92b9d0e298be359c6064c9f8601cfe9ff3c23297573ee27347ecc5720167",
+    "bytes": 3503
+  },
+  {
+    "path": "brands/tadooer/fonts/Atkinson-Hyperlegible-Mono-0.ttf",
+    "sha256": "5f7f0ab728eec241e86afa0c2680560fb8c2901097b5ab1f92a8c8b6c65c139c",
+    "bytes": 32768
+  },
+  {
+    "path": "brands/tadooer/fonts/Atkinson-Hyperlegible-Mono-1.ttf",
+    "sha256": "b641521e8e29c9bd8a2d7ff4e5d2fa64e6034edeb8dd62b45f16f04ae779f3d1",
+    "bytes": 32712
+  },
+  {
+    "path": "brands/tadooer/fonts/Inter-0.ttf",
+    "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba",
+    "bytes": 324820
+  },
+  {
+    "path": "brands/tadooer/fonts/Inter-1.ttf",
+    "sha256": "b37284b5701b6b168dfc770aa1a4ac492106422fd3ba76bc7641e37434e8019c",
+    "bytes": 326468
+  },
+  {
+    "path": "brands/tadooer/fonts/atkinsonhyperlegiblemono-OFL.txt",
+    "sha256": "1ebb31cf7393164f20d10c1d48406cddb5314feff8465531cf1e4ba37e9dd740",
+    "bytes": 4436
+  },
+  {
+    "path": "brands/tadooer/fonts/inter-OFL.txt",
+    "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "bytes": 4377
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-dark-outlined.svg",
+    "sha256": "f3957a5d892f8411497fc849d2bbfb01b5b3f5fb18410d7befa6c0165e74d5b0",
+    "bytes": 6418
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-dark.png",
+    "sha256": "62e029ed98cec68d6481772e4b44931074f8f1b07a00ac4f1a313163b5612756",
+    "bytes": 14492
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-dark.svg",
+    "sha256": "d7af1e0e604987a12ada0ddadc63d464d46817f29df0605f0d05d12ae080b7c5",
+    "bytes": 658
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-light-outlined.svg",
+    "sha256": "fb42b0f878089bb1c68a04a335c61d571b29ac7d941a8d72634e50e13179175a",
+    "bytes": 6419
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-light.png",
+    "sha256": "847a71789e23b311dcc87964a21794f654bf927d317971bdf6af092b5bec4ff1",
+    "bytes": 14411
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-light.svg",
+    "sha256": "9b61e6bad5e6d376b0247f2532f14fd2504f401d462a1e73625fd733ea6f41a4",
+    "bytes": 659
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-mono-dark-outlined.svg",
+    "sha256": "f8a6cba1aa592773d1a488ecba07682c0415625a7c406a4388c2462f8324570e",
+    "bytes": 6316
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-mono-dark.png",
+    "sha256": "3ed3aa8491851286f51dc5cae8f56efae0e55ba6a7412cbc72575546893fa70c",
+    "bytes": 9252
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-mono-dark.svg",
+    "sha256": "e9c7a73ff311bf3c0a0c11c6cf282b74179d7db43d334e24e1f7cd5916316b5f",
+    "bytes": 608
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-mono-light-outlined.svg",
+    "sha256": "10e0399fa22288ed31686aa88fcf2691c4acc5addae80181eeabbabe091bd22d",
+    "bytes": 6317
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-mono-light.png",
+    "sha256": "4a6de16d7476bb534c20aa74d1a2d4cb32ec065cd984ede33d6fae6863ce2bb7",
+    "bytes": 11796
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-mono-light.svg",
+    "sha256": "6e28ff2122a8ec70da9ec53b64d86879da2f157ffd0d033c2b9d369afdb025ab",
+    "bytes": 609
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-primary-outlined.svg",
+    "sha256": "150d0f3bf287db238b4194c8cd3b4d5d2108c7627af46512607649a28ae92ee5",
+    "bytes": 6421
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-primary.png",
+    "sha256": "fbf218db587c47b003da9093e869ecfae8f519ef46013bfc90a378d351e98c67",
+    "bytes": 14542
+  },
+  {
+    "path": "brands/tadooer/logos/lockup-primary.svg",
+    "sha256": "667de9b5cc673f058ab987fdca1d72197399c42909b0c4d36e14ee10ae54b814",
+    "bytes": 661
+  },
+  {
+    "path": "brands/tadooer/logos/mark-dark-outlined.svg",
+    "sha256": "70973787c3e709fdb2f0f65cfd2cfbac7948e67d2a5af33365ef3228d229e9af",
+    "bytes": 963
+  },
+  {
+    "path": "brands/tadooer/logos/mark-dark.png",
+    "sha256": "91af58f4a82ba32991bb98717ea1984285cd821de7adfe011a79437af0ad3a34",
+    "bytes": 5074
+  },
+  {
+    "path": "brands/tadooer/logos/mark-dark.svg",
+    "sha256": "528b29fb0b02df91576244ae4a8be61063042407640c2b8e2ed0d02f3a64984b",
+    "bytes": 524
+  },
+  {
+    "path": "brands/tadooer/logos/mark-light-outlined.svg",
+    "sha256": "a05995c08fd76f6c34b45c37479fcddc1b6f933952d8c89cf383261fe591308d",
+    "bytes": 964
+  },
+  {
+    "path": "brands/tadooer/logos/mark-light.png",
+    "sha256": "91af58f4a82ba32991bb98717ea1984285cd821de7adfe011a79437af0ad3a34",
+    "bytes": 5074
+  },
+  {
+    "path": "brands/tadooer/logos/mark-light.svg",
+    "sha256": "64dff3a41e57c00a9d1aa7df94d5ba9111444005b9a6ef9926db540d2002d002",
+    "bytes": 525
+  },
+  {
+    "path": "brands/tadooer/logos/mark-mono-dark-outlined.svg",
+    "sha256": "1cbe860d65aaa48b2caaa25d7c3c018ee76f1862c23fd4dca21456607816a96c",
+    "bytes": 861
+  },
+  {
+    "path": "brands/tadooer/logos/mark-mono-dark.png",
+    "sha256": "b7eb91c6acc348f3df38b81196d83144c0bc041783f2a465b85772c48ce5497b",
+    "bytes": 2366
+  },
+  {
+    "path": "brands/tadooer/logos/mark-mono-dark.svg",
+    "sha256": "181302584cb7db13f87ad1d1e13e6404237d538bfeed192d7ec3d65e0c903aea",
+    "bytes": 474
+  },
+  {
+    "path": "brands/tadooer/logos/mark-mono-light-outlined.svg",
+    "sha256": "f53d5817fb55010cba006b30e9ad4d68f9eb2149374ff2b2527f808c1d8b2582",
+    "bytes": 862
+  },
+  {
+    "path": "brands/tadooer/logos/mark-mono-light.png",
+    "sha256": "eb6726d88c29ab5af9b18ec560c2bf778a73ec9b03557e504fcffef65952ff57",
+    "bytes": 2611
+  },
+  {
+    "path": "brands/tadooer/logos/mark-mono-light.svg",
+    "sha256": "274b59b75d9da56c5d91777a31131f4e04368f6b6d2efd190535135a2a261a6c",
+    "bytes": 475
+  },
+  {
+    "path": "brands/tadooer/logos/mark-primary-outlined.svg",
+    "sha256": "cc9d06b65ad262ed2584e809c65bc5597b721127dfe13e1748bd53d966a67667",
+    "bytes": 966
+  },
+  {
+    "path": "brands/tadooer/logos/mark-primary.png",
+    "sha256": "91af58f4a82ba32991bb98717ea1984285cd821de7adfe011a79437af0ad3a34",
+    "bytes": 5074
+  },
+  {
+    "path": "brands/tadooer/logos/mark-primary.svg",
+    "sha256": "fa25c8468a9cc48d9c0e62daffaa566575f60a9d4184826313f2712358d81625",
+    "bytes": 527
+  },
+  {
+    "path": "brands/tadooer/pack-preview.png",
+    "sha256": "8fdeb7a21c79072bbc8632d0dc96d6bca21cc456c635c074d5859a56953e51f3",
+    "bytes": 181022
+  },
+  {
+    "path": "brands/tadooer/pack-preview.svg",
+    "sha256": "aa2286d32b7f88127ea6585293f7061b1acebb1794f5ab8df961ebd45043b92f",
+    "bytes": 24575
+  },
+  {
+    "path": "brands/tadooer/product/README.md",
+    "sha256": "fedaccc088d6ba64136adec9d1782f152de867ecde8fbd1bbbb22633fe6cd133",
+    "bytes": 438
+  },
+  {
+    "path": "brands/tadooer/product/apple-touch-icon.png",
+    "sha256": "993579b1a75579f01f5b20fc96449bc865d1aa2b16289f6681c5f47b7b185ba8",
+    "bytes": 4233
+  },
+  {
+    "path": "brands/tadooer/product/favicon.svg",
+    "sha256": "a5b4e181b1a38cc7182b89c5817830b7a096f18ccf645083cbd2e6472e44252f",
+    "bytes": 967
+  },
+  {
+    "path": "brands/tadooer/product/icon-512.png",
+    "sha256": "9d7b83208c6d35856dbfc00332c5a437f16b368bf4998ac6ae915cf732c79723",
+    "bytes": 12425
+  },
+  {
+    "path": "brands/tadooer/product/icon-maskable-512.png",
+    "sha256": "babe74340922e4a1b41dfccec41149bbdbff7ba09964faa44f7a0324b97092ad",
+    "bytes": 11167
+  },
+  {
+    "path": "brands/tadooer/product/og.png",
+    "sha256": "8d20dc1df1c1069f800aeb716d1a6fbbb6bfd689da27b367119eccf7b4285c45",
+    "bytes": 75083
+  },
+  {
+    "path": "brands/tadooer/social/avatar.png",
+    "sha256": "37a02c0dc691b9694f196797ed13a150b21c59706be367d8d0a1178a5406bb6a",
+    "bytes": 10061
+  },
+  {
+    "path": "brands/tadooer/social/avatar.svg",
+    "sha256": "9dcac7741d5a979738ca675bde66d1ead9d108a130c2b509bb15b467b65a7e06",
+    "bytes": 586
+  },
+  {
+    "path": "brands/tadooer/social/banner-tall-master.png",
+    "sha256": "5faa24c791169ea6f944c996dd553bad5f4f7365610861f1748125ea9d57f1cc",
+    "bytes": 80913
+  },
+  {
+    "path": "brands/tadooer/social/banner-tall-master.svg",
+    "sha256": "6e2ef75a70151e2d81b47cd99cc6ac33bc482ca1ab0803805b269de2f9eb5077",
+    "bytes": 5079
+  },
+  {
+    "path": "brands/tadooer/social/banner-x-bluesky.png",
+    "sha256": "ed5f2ace23841f4e6d9da0c09eecc2b33d0c9d183d74ffec993eb9efc3331146",
+    "bytes": 79822
+  },
+  {
+    "path": "brands/tadooer/social/banner-x-bluesky.svg",
+    "sha256": "a60baa34c2667717f53a5c68e892fe47c3dd11036e46e86a357bb10e5fbc8d08",
+    "bytes": 4963
+  },
+  {
+    "path": "brands/tadooer/social/landscape-template.png",
+    "sha256": "952157f65c56f1d6d530627d07e27aa21574cbb99d6dc8c2d4ec8d803930b005",
+    "bytes": 52482
+  },
+  {
+    "path": "brands/tadooer/social/landscape-template.svg",
+    "sha256": "3a3ce9c13578bb5b3c5a1b07a8f32f01fc5133b75da9953ad12e9f8649227900",
+    "bytes": 1277
+  },
+  {
+    "path": "brands/tadooer/social/quote-template.png",
+    "sha256": "a94a8c53508f6218144aa3df6c2260f07f53a9330e873add19e13a8766bccb99",
+    "bytes": 54079
+  },
+  {
+    "path": "brands/tadooer/social/quote-template.svg",
+    "sha256": "15d534dd5032f9bb5b91b83f88c47e30f5f33884f4c6b03af6b39d441725b464",
+    "bytes": 1219
+  },
+  {
+    "path": "brands/tadooer/social/release-template.png",
+    "sha256": "f06410f116e097bfe1203ec352f6f442f946e844978562883e4048ef185ced78",
+    "bytes": 54430
+  },
+  {
+    "path": "brands/tadooer/social/release-template.svg",
+    "sha256": "53309e1e25425605d599ce171ec1a0b003f73abc15a07e6b8bb15827fd71150b",
+    "bytes": 1405
+  },
+  {
+    "path": "brands/tadooer/social/screenshot-frame.png",
+    "sha256": "2b0b8e400b52302e88b76bb333838b3e0a0abaf5b848a5035518b353de259892",
+    "bytes": 42633
+  },
+  {
+    "path": "brands/tadooer/social/screenshot-frame.svg",
+    "sha256": "f8e1f8e852710d5f80bad5e817db84e8720e4e8bdea8cd62c5448917085f7d37",
+    "bytes": 935
+  },
+  {
+    "path": "brands/tadooer/social/square-post.png",
+    "sha256": "45fd9d4728007364ee2215e4b276397c5dd0ca97cd1d14366348dc8263048e87",
+    "bytes": 97818
+  },
+  {
+    "path": "brands/tadooer/social/square-post.svg",
+    "sha256": "fc485da667226aabbc754657430af1dd7a183bf24938b2349bcadf2589d235a2",
+    "bytes": 4734
+  },
+  {
+    "path": "brands/tadooer/social/story-template.png",
+    "sha256": "82914013ce4250179012ccffaeadd1bff49afaf0371a99ee3d01e7c9ae2893fd",
+    "bytes": 118168
+  },
+  {
+    "path": "brands/tadooer/social/story-template.svg",
+    "sha256": "2428aff2928f72800fbccbcb063b182b46db91dbaeabfc0c1cdc24e5823bd777",
+    "bytes": 4609
+  },
+  {
+    "path": "brands/tadooer/tokens.css",
+    "sha256": "ceaa8fb2f7cfdd7c69977695b9d49b39365e4da2df52eb927080f1e36b1f5425",
+    "bytes": 241
+  },
+  {
+    "path": "brands/tadooer/tokens.json",
+    "sha256": "efd905e05e988abf772b6bc0dce7df3d4a61cf7aa40bec5d6b6cab629d7b3826",
+    "bytes": 833
+  },
+  {
+    "path": "brands/tadooer/video/captions.ass",
+    "sha256": "89005dd6b804ba097062b0a5d17f9eb07c6fbea7911241f07b5adc7c852ad825",
+    "bytes": 626
+  },
+  {
+    "path": "brands/tadooer/video/end-card.png",
+    "sha256": "d86fa22e5d36f13f9a55953444d4f0049749dced197740ac7d06413b82576939",
+    "bytes": 33707
+  },
+  {
+    "path": "brands/tadooer/video/end-card.svg",
+    "sha256": "b9d9aa1119558123dd105e9f1e2f586376e0a57e50681b6e7761ea34eea2d37f",
+    "bytes": 921
+  },
+  {
+    "path": "brands/tadooer/video/lower-third.png",
+    "sha256": "00e960603fb49d9f399fe13f058eb8dd1a4c6c544fb3149ec4f548583224b868",
+    "bytes": 27013
+  },
+  {
+    "path": "brands/tadooer/video/lower-third.svg",
+    "sha256": "91ffa52a17c3c4a921e38c6cdd6bac3e1cd16950acad5b371e8e9c0764203122",
+    "bytes": 910
+  },
+  {
+    "path": "brands/tadooer/video/template-preview.mp4",
+    "sha256": "f0b5d3fe1b424295d758be0efada71ee75db968f9b45347fe050f29a4ea3c330",
+    "bytes": 56272
+  },
+  {
+    "path": "brands/tadooer/video/thumbnail.png",
+    "sha256": "7d106fc98cdcceac67368914560993b2541acd987bb146f203fb39c7af584bef",
+    "bytes": 44240
+  },
+  {
+    "path": "brands/tadooer/video/thumbnail.svg",
+    "sha256": "069226d1c14d52dbcbc47adf1e7361ebb18f223a6dc4c6eda6ea7f0469b48dd6",
+    "bytes": 961
+  },
+  {
+    "path": "brands/tadooer/video/title-card.png",
+    "sha256": "2d01ba7e6f21778c52876a53c82b8f7de572e06730716f6d87df6276222df62c",
+    "bytes": 44392
+  },
+  {
+    "path": "brands/tadooer/video/title-card.svg",
+    "sha256": "a9dabd5bc496a215064eb504dbb072fcdac5fc9345f69f397dba09c6ef5a1fc5",
+    "bytes": 963
+  },
+  {
+    "path": "fonts/Atkinson-Hyperlegible-Mono-0.ttf",
+    "sha256": "5f7f0ab728eec241e86afa0c2680560fb8c2901097b5ab1f92a8c8b6c65c139c",
+    "bytes": 32768
+  },
+  {
+    "path": "fonts/Atkinson-Hyperlegible-Mono-1.ttf",
+    "sha256": "b641521e8e29c9bd8a2d7ff4e5d2fa64e6034edeb8dd62b45f16f04ae779f3d1",
+    "bytes": 32712
+  },
+  {
+    "path": "fonts/Inter-0.ttf",
+    "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba",
+    "bytes": 324820
+  },
+  {
+    "path": "fonts/Inter-1.ttf",
+    "sha256": "b37284b5701b6b168dfc770aa1a4ac492106422fd3ba76bc7641e37434e8019c",
+    "bytes": 326468
+  },
+  {
+    "path": "fonts/atkinsonhyperlegiblemono-OFL.txt",
+    "sha256": "1ebb31cf7393164f20d10c1d48406cddb5314feff8465531cf1e4ba37e9dd740",
+    "bytes": 4436
+  },
+  {
+    "path": "fonts/inter-OFL.txt",
+    "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "bytes": 4377
+  },
+  {
+    "path": "tadooer_assets.py",
+    "sha256": "d0c6c290610c0eed1407eec512d2ea53498d44dc84006a7a7c5aaf56233228c8",
+    "bytes": 10576
+  },
+  {
+    "path": "tadooer_product_assets.py",
+    "sha256": "e8b6ddd8229828bf051600ce5096a6788fef2c3d42512dd01d5b13e15f3838bb",
+    "bytes": 5462
+  },
+  {
+    "path": "brands/tadooer/design-system/brand-assets.json",
+    "sha256": "b77daa2be1f34fe7acb75eabfa5bbe2c79fe71d4455dfd94758fafc89f2768d8",
+    "bytes": 1681
   }
 ]

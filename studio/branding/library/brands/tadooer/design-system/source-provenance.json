@@ -1,0 +1,36 @@
+{
+  "source_repository": "subculture-collective/productivity-suite",
+  "source_path": "docs/design/",
+  "source_checkout": "/home/onnwee/.t3/worktrees/productivity-suite/t3code-300198f7",
+  "source_branch": "wave/tadooer-brand",
+  "source_head": "563387f68d1cec71c48a7c6b2ab229957b602d02",
+  "source_docs_committed": true,
+  "copied_at": "2026-10-02",
+  "mark_source": {
+    "path": "apps/web/public/suite-icon.svg",
+    "sha256": "7c11dcc43880d1dc26decd4d8fa94295f06c9c563bfd65d9e0f13c373291dcf6",
+    "note": "tadooer_assets.mark redraws this geometry in the pack colours; the product file is the master"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "275063888094cb677a114abf36a6bdf050a0625379771d799929127d0ee6d46f",
+      "bytes": 9117
+    },
+    {
+      "path": "brand-assets.json",
+      "sha256": "b77daa2be1f34fe7acb75eabfa5bbe2c79fe71d4455dfd94758fafc89f2768d8",
+      "bytes": 1681
+    },
+    {
+      "path": "examples/01-specimen.html",
+      "sha256": "5a850bfb8827f0f65ed6be21b8fa2db1e79026b1c8a1a405a08bdead9ad3f527",
+      "bytes": 9415
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "864b92b9d0e298be359c6064c9f8601cfe9ff3c23297573ee27347ecc5720167",
+      "bytes": 3503
+    }
+  ]
+}

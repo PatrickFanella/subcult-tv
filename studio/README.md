@@ -6,7 +6,7 @@ Studio is the private production area of the combined `subcult-tv` repository. I
 
 | Directory | Contents |
 | --- | --- |
-| [Brand library](branding/library/README.md) | Twelve current brand packs, editable masters, generators, bundled fonts and licenses |
+| [Brand library](branding/library/README.md) | Thirteen current brand packs, editable masters, generators, bundled fonts and licenses |
 | [Patrick source](branding/patrick/README.md) | Selected Patch design system, generator and seven approved waveform treatments |
 | `media/library/` | Original captures, generated artwork, edits, recipes and hash-bound catalog |
 | [Design references](references/USAGE.md) | Curated observations and 590 searchable reference records |

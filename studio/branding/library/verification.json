@@ -294,5 +294,46 @@
     "mark_32px": "checked on all five variants; sphere, collars and red flange stay distinct, the dashed equator detail drops out",
     "video_preview": "h264 1920x1080, 8.0 s",
     "fonts": "Oswald, Public Sans and JetBrains Mono, already in fonts/"
+  },
+  "tadooer": {
+    "date": "2026-10-02",
+    "status": "direction proposed by Studio; owner review pending",
+    "files": 80,
+    "svg_parse": "35/35 SVGs parse",
+    "outlined_logos": "10 outlined logo SVGs and product/favicon.svg contain no <text> elements",
+    "contrast": {
+      "text_on_base": "13.19:1",
+      "label_on_base": "7.37:1",
+      "accent_on_base": "6.80:1",
+      "secondary_cyan_on_base": "11.85:1",
+      "pink_now_on_base": "6.87:1",
+      "teal_on_base": "11.01:1",
+      "crust_on_purple": "7.77:1"
+    },
+    "lower_third": "1920x1080 RGBA; alpha 0 outside the panel, 255 inside",
+    "video_preview": "h264 1920x1080, 8.0 s",
+    "product": {
+      "favicon.svg": "outlined",
+      "apple-touch-icon.png": "180x180 RGB",
+      "icon-512.png": "512x512 RGB",
+      "icon-maskable-512.png": "512x512 RGB, mark at 80 percent",
+      "og.png": "1200x630 RGB, no URL"
+    },
+    "design_system_copy": "3 files from docs/design/ with SHA-256 in source-provenance.json; mark source apps/web/public/suite-icon.svg hashed",
+    "fonts_added": {
+      "Inter": [
+        "fonts/Inter-0.ttf",
+        "fonts/Inter-1.ttf"
+      ],
+      "Atkinson Hyperlegible Mono": [
+        "fonts/Atkinson-Hyperlegible-Mono-0.ttf",
+        "fonts/Atkinson-Hyperlegible-Mono-1.ttf"
+      ],
+      "source": "Google Fonts CSS API truetype URLs (fonts.gstatic.com), OFL texts from google/fonts; SHA-256 in fonts/sources.json",
+      "fc_match": "Inter and Atkinson Hyperlegible Mono regular/bold resolve to the bundled files through fontconfig.xml"
+    },
+    "visual": "Pack preview, five lockups and marks, avatar, landscape, Open Graph image and manifest icons inspected after rendering",
+    "rebuild": "TADOOER_SOURCE=... python3 tadooer_product_assets.py && BRAND_ONLY=tadooer python3 build_packs.py && BRAND_ONLY=tadooer python3 render_video_previews.py; other brands were not rebuilt",
+    "mark_32px": "checked on all five variants after downsampling the 256 px marks; tile, lines and disc stay distinct, the check inside the disc drops out"
   }
 }
