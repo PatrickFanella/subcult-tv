@@ -10,7 +10,7 @@ The existing seven development guides remain in place. The five repositories who
 
 | Product repository | Review | Voice and scope |
 | --- | --- | --- |
-| subcult-tv | This repository’s README PR | Collective workshop; public product destinations and private source boundaries |
+| subcult-tv | [PR #33](https://git.subcult.tv/subculture-collective/subcult-tv/pulls/33) | Collective workshop; public product destinations and private source boundaries |
 | clpr | [PR #41](https://git.subcult.tv/subculture-collective/clpr/pulls/41) | Chat regular; clips, playlists and current release limits |
 | patchwork | [PR #124](https://git.subcult.tv/subculture-collective/patchwork/pulls/124) | Neighbor; pre-alpha demo and exact location rules |
 | hasanara | [PR #50](https://git.subcult.tv/subculture-collective/hasanara/pulls/50) | Broadcast continuity; the record and automatic-transcript corrections |
@@ -27,10 +27,14 @@ The existing seven development guides remain in place. The five repositories who
 
 Local verification covered 125 Markdown destinations, twelve banner hash matches, and byte-for-byte preservation of five former README overviews. All 38 public URL checks returned HTTP 200, including four retained screenshots. HTTP success establishes reachability, not completion of authenticated product journeys.
 
-The selected banners were visually inspected together. Gitea branch rendering initially redirected the unsigned browser to sign-in; authenticated API readback and subsequent rendered-page evidence are separate checks. Hosted CI results and merges must be read from each PR before claiming publication.
+The selected banners were visually inspected together. Gitea branch rendering initially redirected the unsigned browser to sign-in; authenticated API readback and subsequent rendered-page evidence are separate checks. Twelve README pages rendered successfully through Gitea’s Markdown API. A separate local gallery uses that returned HTML for visual review; it does not establish signed-in rendering on Gitea. Hosted checks were still waiting to run at the final readback; none of these README PRs has been merged.
 
 Repository descriptions and website fields are updated independently through the Gitea API, with before/after snapshots and readback of visibility, archive state and default branch. Private products receive no invented public URL.
 
 ## Asset ownership
 
 Studio is the source for artwork; copies in `docs/assets/readme/` are selected README exports. Do not edit a banner copy independently. Select or regenerate the source in Studio, then refresh the copy and its hash record. This export does not publish the whole brand pack, private references, fonts, runtime bundles, or acquired recordings.
+
+## Live repository avatars
+
+All twelve repositories now use their selected Studio `social/avatar.png`. Each upload was followed by repository-metadata readback, an authenticated fetch of the served image and a pixel comparison against the Studio source. All twelve served 512×512 avatars match their source pixels exactly. The [avatar selection receipt](assets/readme/repository-avatar-selection.json) records source revision, source hash, previous and current avatar URLs, served hash and image dimensions. Previous image downloads and metadata snapshots are retained in the local task evidence directory `/tmp/subcult-readme-audit/`.

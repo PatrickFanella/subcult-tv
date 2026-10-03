@@ -1,0 +1,230 @@
+[
+  {
+    "repository": "subculture-collective/subcult-tv",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/subcult/social/avatar.png",
+    "source_sha256": "74810325d2afe6180070805be6d66e779bbe9bf1fca292cfd4b152e84579165f",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/e641dcfa313065ff48c1af1d5a4bbaa3248a4d10722f2ec581903ff84ff04947",
+    "served_sha256": "74810325d2afe6180070805be6d66e779bbe9bf1fca292cfd4b152e84579165f",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/clpr",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/clpr/social/avatar.png",
+    "source_sha256": "868c39c78c8ccae4c4d758487b6fb1b0d591a13712052c7a85d07919cfd04082",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "https://git.subcult.tv/repo-avatars/dd2f55bdafbb7bf117cea9d55e82ed5c5969b3cd5279eed987b66a877d542174",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/b0ea3d4ae4e820e0e5bed890d53a06a44aa71caf4f38e0b5998dbaf5701acc9e",
+    "served_sha256": "868c39c78c8ccae4c4d758487b6fb1b0d591a13712052c7a85d07919cfd04082",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/patchwork",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/patchwork/social/avatar.png",
+    "source_sha256": "28ef0908a4f4aa1abddc7509a00505f66be31a41769418e4bab13abcd23a9761",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/de1860783549da3c7cf6fc4f92fe8c0831fd24ba4c71e2a5539d4511119ba1f0",
+    "served_sha256": "28ef0908a4f4aa1abddc7509a00505f66be31a41769418e4bab13abcd23a9761",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/hasanara",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/hasanara/social/avatar.png",
+    "source_sha256": "b3b62f03f3a9ac6bda65f3e9bd79d37f4dfda2999ecae3e038dd4e12dced2213",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/ad70339d0050c300b036df9c65e2c2812c267ec558ea87cb6b5f616880908f7a",
+    "served_sha256": "b3b62f03f3a9ac6bda65f3e9bd79d37f4dfda2999ecae3e038dd4e12dced2213",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/rekolekt",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/rekolekt/social/avatar.png",
+    "source_sha256": "ecbb437c942af7f6f2305bd62eaad273b877ff80619e97c1f6968ac2fe84c3e6",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/b44274f963c2bc3447618489be6ecfc0ef9bf046b507f77e57b9065c12a2adc6",
+    "served_sha256": "ecbb437c942af7f6f2305bd62eaad273b877ff80619e97c1f6968ac2fe84c3e6",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/subcult-os",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/subcult-os/social/avatar.png",
+    "source_sha256": "1f19244be038fa8fa4a8541c80579ad6dd9aee221cd33354ec07c52db53fb6bb",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/e4bd89037d323f10a659e199f432c497ace571b7c6014502ac6d3dcf57bf45bc",
+    "served_sha256": "1f19244be038fa8fa4a8541c80579ad6dd9aee221cd33354ec07c52db53fb6bb",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/undertow",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/undertow/social/avatar.png",
+    "source_sha256": "a8e5b4e60903f57730382445da87841b42e58fe18a3f00f6ceb3d6c99bf2d12e",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/9f6a2c241bf44d4c3846096c64f0bf5387f9cb55d756cbec2215318d036d41ae",
+    "served_sha256": "a8e5b4e60903f57730382445da87841b42e58fe18a3f00f6ceb3d6c99bf2d12e",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/kork",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/kork/social/avatar.png",
+    "source_sha256": "abdd41724b131e6e78519a8aad3409476e357533677444732b8768ee9d966522",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/52993f1f04d9a72d23ffcba6676c6a5ac81437941f483363b546382fd6ff41ee",
+    "served_sha256": "abdd41724b131e6e78519a8aad3409476e357533677444732b8768ee9d966522",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/prichal",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/prichal/social/avatar.png",
+    "source_sha256": "c11321418a0de9b5a9904d7a06427da72e27934928caa36d79888d077f45e25c",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/b0ba49fee6ee7c37d1ad7405d223b42bd16183fd26c78599474669fdcfa72780",
+    "served_sha256": "c11321418a0de9b5a9904d7a06427da72e27934928caa36d79888d077f45e25c",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/left-field",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/left-field/social/avatar.png",
+    "source_sha256": "ebecf2a2d9228713cf83b8965492cc89b8ff2ca81300533c561304589ed484f6",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/2967a15b11321ab6c5218b7299c2422698593979f998a91d920fcd887ae247a9",
+    "served_sha256": "ebecf2a2d9228713cf83b8965492cc89b8ff2ca81300533c561304589ed484f6",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/dedhed",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/dedhed/social/avatar.png",
+    "source_sha256": "6bc3a08e8275bfd44d8784f92b20e0366553451431a0bd0fb93090b75c93ad15",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/cc16345e65dcb11fb762e0c6a36d2ff9f6df4a1fb12d5fc2887b53f03c238c5f",
+    "served_sha256": "6bc3a08e8275bfd44d8784f92b20e0366553451431a0bd0fb93090b75c93ad15",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  },
+  {
+    "repository": "subculture-collective/tadooer",
+    "source_revision": "9774a18cceba75d81485e44e444c479936c039ad",
+    "source_path": "studio/branding/library/brands/tadooer/social/avatar.png",
+    "source_sha256": "37a02c0dc691b9694f196797ed13a150b21c59706be367d8d0a1178a5406bb6a",
+    "source_dimensions": [
+      512,
+      512
+    ],
+    "avatar_url_before": "",
+    "avatar_url_after": "https://git.subcult.tv/repo-avatars/a5a7fdf596dce1a35f84eaa749dbb0106f53a1825da64ad3df42a4061b2a6e42",
+    "served_sha256": "37a02c0dc691b9694f196797ed13a150b21c59706be367d8d0a1178a5406bb6a",
+    "served_dimensions": [
+      512,
+      512
+    ],
+    "verified": "authenticated API upload, metadata readback and fetched image decode",
+    "pixel_match": true
+  }
+]
