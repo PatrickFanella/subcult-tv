@@ -6,7 +6,7 @@
   "sources": [
     {
       "path": "branding/library/brands/subcult/GUIDE.md",
-      "sha256": "215ee277c7b5b4b7faf6666d05d1cb38dba1d723ac2e45b8df42049de452801a"
+      "sha256": "cade468ea6791b22349ca024b09845d2e19cf9679cfaad7259d39e3fd40ec6af"
     },
     {
       "path": "branding/library/brands/subcult/tokens.json",
@@ -46,7 +46,7 @@
     },
     {
       "path": "content/patreon/support-redesign-2026-10/build_assets.py",
-      "sha256": "6862aecb29c51cc3ef2bc6ff55b64f18655ec22e117f3b751ce5938069524d97"
+      "sha256": "d474de24a02b76355068679b274f3f83cd78155af5ed094f1d5041066c914c23"
     }
   ],
   "assets": [
