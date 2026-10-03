@@ -42,3 +42,18 @@ All twelve repositories now use their selected Studio `social/avatar.png`. Each 
 ## Public README image routing
 
 Live anonymous browser inspection found that Gitea redirects `/media/branch/` and `/raw/branch/` image requests to sign-in even for public repositories. The public raw-file API returns the selected PNG correctly. The eight public repositories receive follow-up README changes using that API URL pinned to the existing artwork commit. Anonymous retrieval is checked byte for byte against the selected banner. Private repositories retain repository-relative images and their existing authentication boundary.
+
+The public-image follow-ups are:
+
+| Repository | Image-routing correction |
+| --- | --- |
+| clpr | [PR #42](https://git.subcult.tv/subculture-collective/clpr/pulls/42) |
+| hasanara | [PR #51](https://git.subcult.tv/subculture-collective/hasanara/pulls/51) |
+| left-field | [PR #61](https://git.subcult.tv/subculture-collective/left-field/pulls/61) |
+| patchwork | [PR #125](https://git.subcult.tv/subculture-collective/patchwork/pulls/125) |
+| rekolekt | [PR #47](https://git.subcult.tv/subculture-collective/rekolekt/pulls/47) |
+| subcult-os | [PR #213](https://git.subcult.tv/subculture-collective/subcult-os/pulls/213) |
+| tadooer | [PR #127](https://git.subcult.tv/subculture-collective/tadooer/pulls/127) |
+| undertow | [PR #20](https://git.subcult.tv/subculture-collective/undertow/pulls/20) |
+
+The follow-ups and SUBCULT PR #33 use Gitea’s merge-when-checks-succeed workflow. Required checks are preserved. This schedules publication after qualification; an accepted schedule is not a completed merge or a passing CI result. The original eleven product README merges and live metadata/avatar updates are separately verified.
