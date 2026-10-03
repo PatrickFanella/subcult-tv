@@ -81,10 +81,10 @@
     "display": "Barlow Condensed",
     "body": "Barlow",
     "headline": [
-      "The clip.",
-      "The moment."
+      "Somebody",
+      "clipped it."
     ],
-    "tag": "CLIP DISCOVERY + CURATION",
+    "tag": "TWITCH CLIPS / CREATOR, TOPIC, TAG",
     "description": "Clip stack layouts with one matching clip card on the square post and the play-triangle logo.",
     "mode": "clpr",
     "url": "clpr.tv",
@@ -135,8 +135,8 @@
     "display": "Newsreader",
     "body": "Inter Tight",
     "headline": [
-      "Find the passage.",
-      "Keep the context."
+      "He said it on stream.",
+      "The record shows when."
     ],
     "tag": "PIKER BROADCASTING SERVICE",
     "description": "The live site's red-and-paper theme, with Newsreader headlines and the current PBS mark.",
@@ -160,8 +160,8 @@
     "display": "Space Grotesk",
     "body": "Public Sans",
     "headline": [
-      "A recording.",
-      "An archive."
+      "The sentence, and",
+      "where it was said."
     ],
     "tag": "REKOLEKT BY SUBCULT",
     "description": "The original bracketed waveform logo on an index-green palette. Transcript rows replace the waveform in the story illustration only.",
@@ -212,8 +212,8 @@
     "display": "Liberation Mono",
     "body": "Public Sans",
     "headline": [
-      "SOUND",
-      "INTO MOTION."
+      "GIVE THE TRACK",
+      "SOMETHING TO LOOK AT."
     ],
     "tag": "MUSIC VISUALS / LYRICS / LOCAL EXPORT",
     "description": "Square controls, hard shadows, pink/cyan offsets and the existing spectrum favicon.",
@@ -237,8 +237,13 @@
     "display": "Archivo Black",
     "body": "Atkinson Hyperlegible Next",
     "headline": [
-      "EVERY LINK.",
-      "ONE BOARD."
+      "ALL OF IT,",
+      "PINNED TO ONE LINK."
+    ],
+    "headline_stack": [
+      "ALL OF IT,",
+      "PINNED TO",
+      "ONE LINK."
     ],
     "tag": "LINK PAGES / BY SUBCULT",
     "description": "A cork field, paper cards and cobalt pushpins. Each link is a card pinned to the board.",
@@ -293,8 +298,8 @@
     "label": "JetBrains Mono",
     "safe_label": "#a33c26",
     "headline": [
-      "Read the field.",
-      "Trace the evidence."
+      "Where the",
+      "field bends."
     ],
     "tag": "SEAT RESEARCH / SOURCE CONTEXT",
     "description": "Warm paper, dark green ink and rust-red annotations, set like a ledger of seats and their source records.",

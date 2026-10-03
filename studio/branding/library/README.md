@@ -44,6 +44,17 @@ Re-render selected library assets from the builder. Do not change PNG exports se
 
 The starter kit creates a new brand from `brand.json` without copying any existing product's mark. See `starter-template/README.md`. It creates fourteen editable layouts, tokens, a source register and a manifest, and optional rendering produces PNGs. It rejects invalid colors, text contrast below 4.5:1 and existing output directories.
 
+### Headline revision, October 3, 2026
+
+The clpr, HasanAra, Rekolekt, Undertow, Kork and Left Field packs were re-rendered with new sample headlines from the voice guide. The square posts for clpr, HasanAra, Patchwork and Subcult OS, the Rekolekt banner line and the Dedhed share image also carry new secondary lines. SUBCULT, Patrick__Eff, Prichal and Tadooer were not rebuilt.
+
+- `brands.json` holds each headline. Kork also has `headline_stack`, a three-line break used where the two-line headline does not fit beside the pinned cards: the banner, story, share image and launch graphics.
+- The Undertow banner waveform is narrower so the longer headline keeps its type size.
+- The clpr build writes its banner straight into the pack. `references/clpr-working-banner.svg` stays as the October 1 banner.
+- `build_packs.py` keeps the committed order of manifest entries, so rebuilding an unchanged pack produces an identical manifest.
+- The comparison packs in `clpr-directions/` and `corkboard-directions/` keep the headlines they were reviewed with. They are a record of the selection and were not rebuilt.
+- `docs/cleanup-receipt.json` in the repository root lists the regenerated SVGs under `superseded`.
+
 ## Pack notes
 
 ### SUBCULT

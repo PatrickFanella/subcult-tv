@@ -30,13 +30,15 @@ passage back to the second it was spoken, so a passage can be found, cited, save
 and shared with its source. It is software you deploy, with HasanAra as the running
 example. It is not a hosted upload service.
 
-The three lines below are recorded as proposed. The short line is the signature
+The first three lines below are recorded as proposed. The short line is the signature
 strip on the landing page, and the showcase headline is set in the pack's square
 artwork. New copy follows the Rekolekt voice in
 [the voice guide](../../studio/content/VOICE.md): a finding aid, quiet and exact.
 
 - Short line: **Searchable recordings. Quotable moments. Source intact.**
 - Showcase headline: **Make a recording into an archive.**
+- Pack banner, since October 3, 2026: **The sentence, and where it was said.** over the
+  line **Software for timestamped, searchable recording archives.**
 - Product explanation: **Turn long-form recordings into timestamped, searchable
   text. Run the shared application with your own archive identity and branding.**
 

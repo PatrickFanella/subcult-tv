@@ -75,7 +75,7 @@ The pack's Broadcast archive direction was built from the live theme, so base, t
 
 | Item | Pack | Site |
 | --- | --- | --- |
-| Headline | Find the passage. Keep the context. | Find the moment. Read the record. |
+| Headline | He said it on stream. The record shows when. | Find the moment. Read the record. |
 | Label copy | BROADCAST ARCHIVE and PIKER BROADCASTING SERVICE in mono capitals | "Piker Broadcasting Service" under the name in Inter Tight; "HasanAbi archive" as the home eyebrow in mono capitals |
 | Editions | Dark only | Night and paper editions |
 | Colours | Base, text, accent, secondary | Adds brick `#cd3333`, surface, border and secondary text roles, and a darker accent for the paper edition |

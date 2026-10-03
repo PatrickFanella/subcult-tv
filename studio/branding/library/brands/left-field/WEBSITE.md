@@ -19,7 +19,7 @@ Left Field is a research index of seats in Congress, governorships and state leg
 | Sources headline | What we have, and what we do not. |
 | Method headline | How the Priority Index works |
 | About headline | Who publishes this |
-| About banner | The pack share artwork: Read the field. Trace the evidence. |
+| About banner | The pack share artwork as exported on October 2: Read the field. Trace the evidence. The pack re-rendered it on October 3 with the index headline, Where the field bends. The site keeps the earlier export until it is refreshed. |
 | Release strip | FACTUAL FEDERAL RECORD · nationwide release scope, then the release label, status and source cutoff. Shown on Browse, seat records, Sources and Method. |
 | Footer | LEFT FIELD · Seat research for Congress, governorships, and state legislatures · Published by SUBCULT, subcult.tv. Links: Priority index, Method, Source ledger, Corrections, About. |
 | Contact | info@subcult.tv as a mail link, and subcult.tv |

@@ -10,8 +10,8 @@
     },
     {
       "path": "alt-text.md",
-      "sha256": "97e89e40fe4268be47bc2c7ec55aaa8c9161bf57ce5cd872f698fc1e0b233247",
-      "bytes": 873
+      "sha256": "6523e66df4d07efc977350dd23d5ad103eb9b26d759932a1cf20066ced8ec058",
+      "bytes": 928
     },
     {
       "path": "fonts/Barlow-0.ttf",
@@ -240,16 +240,16 @@
     },
     {
       "path": "pack-preview.png",
-      "sha256": "792689d1de70af0ba97016c92ea7d50bfdb14f51a09061689533ea52acd96bd3",
-      "bytes": 138434,
+      "sha256": "f82883590ec26f539d4450a31433b748242c95b0b6aade6df7b55d0d8823d9f0",
+      "bytes": 141904,
       "width": 1600,
       "height": 1800,
       "mode": "RGB"
     },
     {
       "path": "pack-preview.svg",
-      "sha256": "d6d838650271f4f06ed56bc6a6e80fedbf2fa6c85df085814be0b1707ea5297f",
-      "bytes": 50915
+      "sha256": "af5cb08b1e6911adc59bbdbbe167e868726bf930a3d4bed050f3629dcbbe54e2",
+      "bytes": 50919
     },
     {
       "path": "social/avatar.png",
@@ -266,16 +266,16 @@
     },
     {
       "path": "social/banner-tall-master.png",
-      "sha256": "47bfd618d70903452ffdc8ce69012ae02a9fa60d54e24f68ec6b13c29b619ed0",
-      "bytes": 48171,
+      "sha256": "fae5807917888cd6a18878209bc9d4f299666a1a8ac3ac09aedfec67d374cbca",
+      "bytes": 51384,
       "width": 1500,
       "height": 600,
       "mode": "RGB"
     },
     {
       "path": "social/banner-tall-master.svg",
-      "sha256": "34b31ce5746567373ac6033c92905aa48b4e106d197346b2ac1d9f3e17e37f6b",
-      "bytes": 8093
+      "sha256": "b498907b8001efc19f7a1863798293b24b5112b9420762f15f058335b50c2850",
+      "bytes": 8103
     },
     {
       "path": "social/banner-x-bluesky-original.svg",
@@ -284,29 +284,29 @@
     },
     {
       "path": "social/banner-x-bluesky.png",
-      "sha256": "f1cd381bae3d1fae2645708fb93dbe37667d119049b4176f90234ecc0a7c2aa9",
-      "bytes": 47183,
+      "sha256": "3b7fe2fb7b604b32d10d56e6b937141590739b94d21c3f64e9948ac1d12d8d32",
+      "bytes": 50366,
       "width": 1500,
       "height": 500,
       "mode": "RGB"
     },
     {
       "path": "social/banner-x-bluesky.svg",
-      "sha256": "ac4861dc1f313a2d473371f72bd47262966f7d8c263635e02516a0c97fa8365b",
-      "bytes": 7980
+      "sha256": "423168cd025ca54aab4cde972c6d831f0ca553e66a0393e4ac913928c6d19201",
+      "bytes": 7990
     },
     {
       "path": "social/landscape-template.png",
-      "sha256": "fd8c14a73ae98756e78826197c2e0b01c24d99e8ecee1a262d8f82dd960cc9c9",
-      "bytes": 46317,
+      "sha256": "dba7e4b7e4606c7b8696d60685f810912ba4b6c138c3c0122e254d59cc5d5dea",
+      "bytes": 51558,
       "width": 1600,
       "height": 900,
       "mode": "RGB"
     },
     {
       "path": "social/landscape-template.svg",
-      "sha256": "cfb9461878838483c3878e26d9d9f5f7558d77d6c3c11e44fc42efce6affcea4",
-      "bytes": 7843
+      "sha256": "be75edc4dea0b16e3a0d6247fc5a969ec8c582f9226bead7a160f25227670cab",
+      "bytes": 7842
     },
     {
       "path": "social/quote-template.png",
@@ -349,29 +349,29 @@
     },
     {
       "path": "social/square-post.png",
-      "sha256": "de375c6ecfbef0264f32192f028f385b2e26093f581b153d9e2df4edf1d8678e",
-      "bytes": 45279,
+      "sha256": "4294b2d14693b7b2751903aae5856a4f1861b0ec3d908979eef57cf4b55bd45f",
+      "bytes": 45785,
       "width": 1080,
       "height": 1080,
       "mode": "RGB"
     },
     {
       "path": "social/square-post.svg",
-      "sha256": "60655674bdab00160a7754b283cbe8be4f5ccf994a1cae907897a9345cea3705",
-      "bytes": 7305
+      "sha256": "0a5bf8917f10cae0f2d5f9bd9b18f54b0c98c3d48c59d1025afe2f1549b24124",
+      "bytes": 7296
     },
     {
       "path": "social/story-template.png",
-      "sha256": "6289b44a0588f7ca44f16b98345a19db17f60859636d08051c334fa41f59cf5c",
-      "bytes": 64139,
+      "sha256": "4aa4ffcf10042ea12294f1e3e94fd84625541b9ade5a61a88f9879ddfdee10fb",
+      "bytes": 68749,
       "width": 1080,
       "height": 1920,
       "mode": "RGB"
     },
     {
       "path": "social/story-template.svg",
-      "sha256": "66d370eb4f5c162bcccbfa1369d4b83c2d5d7354d60c1e09f84c2a63ab41fd57",
-      "bytes": 7974
+      "sha256": "60ae9695e408f8db1d07d212b32fee889273b245f898f5fc5ca567906be28336",
+      "bytes": 7973
     },
     {
       "path": "tokens.css",
@@ -390,16 +390,16 @@
     },
     {
       "path": "video/end-card.png",
-      "sha256": "70cc6354c7136b3bad5abdca3a66a429de7457ffc31bbbebbfe72c3b59ddc01d",
-      "bytes": 46404,
+      "sha256": "66993a750895cb4975b1fdae6ff42578f32bed490e2a935046e96735b6d1dfa1",
+      "bytes": 52204,
       "width": 1920,
       "height": 1080,
       "mode": "RGB"
     },
     {
       "path": "video/end-card.svg",
-      "sha256": "e79f690bfaf8979115289899a16d6f4fd28f7cbc8d2429ad6ee56020c5915f79",
-      "bytes": 7606
+      "sha256": "6446316873fbc4cf4e6c07cbdbf772b3090c139af25e2d2fcbdbf72a3446d783",
+      "bytes": 7610
     },
     {
       "path": "video/lower-third.png",
@@ -416,8 +416,8 @@
     },
     {
       "path": "video/template-preview.mp4",
-      "sha256": "2c63719364f96cefc89d42d421cac286e360df90ca71378f007084ea9b518d2b",
-      "bytes": 55675
+      "sha256": "25f5c35c63652f537e77fa4e5e2499838065d9b5bdbab636dab4d4182d76b62e",
+      "bytes": 56677
     },
     {
       "path": "video/thumbnail.png",

@@ -147,7 +147,7 @@ PRODUCT_SECTION = """## Product site and design system
 
 `product/` holds web exports: `favicon.svg`, `apple-touch-icon.png`, `hero.svg` and `og.png` (1200×630, no URL). Text is outlined. Copy them into the product. To change one, regenerate it here with `dedhed_product_assets.py`; do not edit the copies.
 
-`design-system/` is a copy of the proposal in the product repository's docs/design/:
+`design-system/` is a copy of the design system in the product repository's docs/design/. The product applied it to its web app on 2026-10-02:
 
 - `README.md`: what the source photographs show, the token groups, the type voices, motion rules and the component list.
 - `tokens.css`: every token as a CSS custom property, plus the spine, rack, key, field, sticker, reel, counter, VU meter and masthead primitives.
@@ -156,6 +156,6 @@ PRODUCT_SECTION = """## Product site and design system
 
 The product repository stays the editing source for the design system. This copy is for the Studio gallery and the admin bundle.
 
-On 2026-10-03 Studio reworded the sample and explanatory copy in `landing.html`, `design-system/README.md` and the example pages `01-specimen.html`, `02-rack.html` and `04-deck.html` to follow the voice guide. Since that date their wording differs from the product repository's. Tape and show data, tokens, class names and `tokens.css` are unchanged, and `03-jcard.html` is byte-identical to the source. `source-provenance.json` lists which copies differ. `dedhed_product_assets.py` re-copies the product files only when `DEDHED_SOURCE` is set, and doing so replaces the Studio wording.
+On 2026-10-03 Studio reworded the sample and explanatory copy in `landing.html`, `design-system/README.md` and the example pages `01-specimen.html`, `02-rack.html` and `04-deck.html` to follow the voice guide. Their wording differs from the files as first copied on 2026-10-02; tape and show data, tokens, class names and `tokens.css` are unchanged. The product repository took the same wording on its branch `copy/product-voice`, and the README's status line and its section on how the app uses the system now come from that branch (head `ab9d658`). All six design-system files match that revision byte for byte. `source-provenance.json` records both the first copy and this alignment. `dedhed_product_assets.py` re-copies the product files only when `DEDHED_SOURCE` is set; point it at a checkout that has the new wording.
 
 """

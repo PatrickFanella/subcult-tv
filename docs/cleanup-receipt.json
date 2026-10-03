@@ -949,5 +949,57 @@
     "studio/branding/archive/patrick-studies-2026-10-01/patrick-mono-study.svg": "cec6bdf7d7d904ef7dee60885d282d4e2d0e74a9da07bc3b515075c8a55b54b0",
     "studio/branding/archive/patrick-studies-2026-10-01/patrick-wordmark-study.svg": "bd212b8f8dfe8daec9da92e423e7ec38faae117301349e8824813597b21ac7dc"
   },
-  "scope": "repository cleanup; current UI and installed consumers preserved"
+  "scope": "repository cleanup; current UI and installed consumers preserved",
+  "superseded": [
+    {
+      "date": "2026-10-03",
+      "reason": "Brand artwork regenerated with new headlines from studio/content/VOICE.md at the owner's request. The generators rewrote these SVGs. retained_svg_sha256 still records their bytes at the cleanup baseline, and those bytes remain recoverable from the baseline revision.",
+      "svg_sha256": {
+        "studio/branding/library/brands/clpr/pack-preview.svg": "af5cb08b1e6911adc59bbdbbe167e868726bf930a3d4bed050f3629dcbbe54e2",
+        "studio/branding/library/brands/clpr/social/banner-tall-master.svg": "b498907b8001efc19f7a1863798293b24b5112b9420762f15f058335b50c2850",
+        "studio/branding/library/brands/clpr/social/banner-x-bluesky.svg": "423168cd025ca54aab4cde972c6d831f0ca553e66a0393e4ac913928c6d19201",
+        "studio/branding/library/brands/clpr/social/landscape-template.svg": "be75edc4dea0b16e3a0d6247fc5a969ec8c582f9226bead7a160f25227670cab",
+        "studio/branding/library/brands/clpr/social/square-post.svg": "0a5bf8917f10cae0f2d5f9bd9b18f54b0c98c3d48c59d1025afe2f1549b24124",
+        "studio/branding/library/brands/clpr/social/story-template.svg": "60ae9695e408f8db1d07d212b32fee889273b245f898f5fc5ca567906be28336",
+        "studio/branding/library/brands/clpr/video/end-card.svg": "6446316873fbc4cf4e6c07cbdbf772b3090c139af25e2d2fcbdbf72a3446d783",
+        "studio/branding/library/brands/hasanara/pack-preview.svg": "73cbe65d57d716a8119b0832eb61c656d3c07a86217689687fc0c45965d1bf5b",
+        "studio/branding/library/brands/hasanara/social/banner-tall-master.svg": "f8f30787d80ff5794f220127bf632db58469385034dcb3102a9e5868f002f979",
+        "studio/branding/library/brands/hasanara/social/banner-x-bluesky.svg": "c2d61c30690f87c27b8bf527e7c33be834b410fa882a8b245cdc133d6833926e",
+        "studio/branding/library/brands/hasanara/social/landscape-template.svg": "9e0fa54bfa005ffc200ba69afcd84df79fac54b94d682e95a95dbb9fccb240d2",
+        "studio/branding/library/brands/hasanara/social/square-post.svg": "e868467126f6572d6071bba52a6aefc0ebb547afb22c80e23598fd0e2c4bc4dd",
+        "studio/branding/library/brands/hasanara/social/story-template.svg": "6233e26c3b62c697ae84851b67bef90eca5cc44e5136c34a1a1a4ea2d40a14bb",
+        "studio/branding/library/brands/kork/launch/launch-landscape.svg": "4c12d5583fe54e2ec589ab1d9e6913e8d320abee68e394302f587c348a3f278c",
+        "studio/branding/library/brands/kork/launch/launch-square.svg": "54af2c594f89ccd9d45c2aaef68746a553f961f684f9ca29855ffc2bce2dad6c",
+        "studio/branding/library/brands/kork/launch/launch-story.svg": "95cfb032d4148d1c5b2154718cc99df37784f6226f8d436faa5d863017e4ca35",
+        "studio/branding/library/brands/kork/pack-preview.svg": "95b39feff7121d35d66643eae636a9715ef25d714264dd379d9ce6785beffa53",
+        "studio/branding/library/brands/kork/social/banner-tall-master.svg": "c435a1c023e417b1b3ab2bf3bcbb1688c4b5e36dc59bcb48fc3e284f412c06b1",
+        "studio/branding/library/brands/kork/social/banner-x-bluesky.svg": "75a36e48dea44f91c2b80794b114c2b5f22202cd068ec736b948f5b475ac268c",
+        "studio/branding/library/brands/kork/social/landscape-template.svg": "e108e8024b7674a7f55087844fdde8b9b158884fe2ee835ce490110e43c33c09",
+        "studio/branding/library/brands/kork/social/story-template.svg": "a348ea634ec7c6e79f06291ab952ea7a3cfd4179354e1bd7684347dffd3b364f",
+        "studio/branding/library/brands/left-field/pack-preview.svg": "ac00c243b82d2a2805643bd4e45cc410c8843d109dfb6a1e3e4a7ab5e426cc5a",
+        "studio/branding/library/brands/left-field/product/hero-outlined.svg": "13d31d414076649d755741c44d0626af1e4740fc03fefdb36427fc4182330a73",
+        "studio/branding/library/brands/left-field/product/hero.svg": "df4cb3aff0f75072fb38095394f3c14ff83a8b7d8c0af22ca85c61bd3aaee676",
+        "studio/branding/library/brands/left-field/product/og.svg": "88394cf0af3c5c5a25d414656a68605ffa2d5248de9025f5d472a2080fc1ddf5",
+        "studio/branding/library/brands/left-field/social/banner-tall-master.svg": "ec6a7bc8da2278de2066fdb8bd812ef2370235a0d2d598db6346fc9a89583dfe",
+        "studio/branding/library/brands/left-field/social/banner-x-bluesky.svg": "9d2334ce662e5a4dec276942b656ec9511a37acb95e92945c0f7e4bfec03d633",
+        "studio/branding/library/brands/left-field/social/landscape-template.svg": "40d3ab0f74d9f2c01027e92fe1e9a639bb4840c3a93fc9948bc7659aa3649f7e",
+        "studio/branding/library/brands/left-field/social/square-post.svg": "47a45390193d4d74ddc91242c8615661bec10d80ef330c2533ec24cc2e9e7040",
+        "studio/branding/library/brands/left-field/social/story-template.svg": "58f3bff083bfe192d0699f64b79e73ae10bed310272dbaac57c81ef298470a4e",
+        "studio/branding/library/brands/patchwork/pack-preview.svg": "95a6aeea40abfc5c178e03fcbac04b19de49c36176cbf0c074783cc571275b45",
+        "studio/branding/library/brands/patchwork/social/square-post.svg": "270190a835dc19ede4cd573eaf82a8141d1ff8410c7333b0260244ed4e390ddc",
+        "studio/branding/library/brands/rekolekt/pack-preview.svg": "d3e68b3c15175bfd2395f37237539e8f7a5820065dfc3069fdfde6a6a4c03975",
+        "studio/branding/library/brands/rekolekt/social/banner-tall-master.svg": "ef98465c01cab00ca70f8faffcf875e0a1b0e017af064b51276b116aa09ed272",
+        "studio/branding/library/brands/rekolekt/social/banner-x-bluesky.svg": "60455f8a7c0991b3e047bb1710f92de19c16944a3a61a5c1991e7281c0acd130",
+        "studio/branding/library/brands/rekolekt/social/landscape-template.svg": "9fc2837bd0d271c87d0059dae4a8301b231e354935b6e6125b42b749dd292d8a",
+        "studio/branding/library/brands/rekolekt/social/story-template.svg": "72d3eb5ec9d53beb4f9901ac15b9645ec5a21de1dd48e0e5e55ad09817cb37de",
+        "studio/branding/library/brands/subcult-os/pack-preview.svg": "e233c4a2fdb1a7805fe0f8bb4a1ca86043c0243c3f43bd9ce640ea1c4417099f",
+        "studio/branding/library/brands/subcult-os/social/square-post.svg": "df5bf68cecee6be8ed3628de740b7b9e5e58157e168205e8005922c6d6e2c0a1",
+        "studio/branding/library/brands/undertow/pack-preview.svg": "ec36819b1ba98ac15632b05bd7303779e6379513e536e98cfbe53308bbdcbd5a",
+        "studio/branding/library/brands/undertow/social/banner-tall-master.svg": "da263550741c70203f6f4a05a81026128281fcbd44db1f0a7056e6983c6ea36c",
+        "studio/branding/library/brands/undertow/social/banner-x-bluesky.svg": "c5e6dd254773768b31d1dcb87085ee86b7e49e5a86204c3a9c0a7202888166c2",
+        "studio/branding/library/brands/undertow/social/landscape-template.svg": "8bcc681b0b59ae6de612e60d4fb69c713cb9e9722d724228e8803c2508fb8dc0",
+        "studio/branding/library/brands/undertow/social/story-template.svg": "3b6568ee5a40162de721e18948ab683c679279e647a1f504e3890ce08855f9c2"
+      }
+    }
+  ]
 }

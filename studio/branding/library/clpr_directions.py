@@ -39,9 +39,9 @@ def art(d,x,y,w,h,direction):
 
 def banner(d,direction=None):
  direction=direction or d.get('graphic_direction','focus')
- s=H.rect(0,0,1200,400,d['bg'])+H.txt(48,36,'CLIP DISCOVERY + CURATION',14,d['accent'],d['label'])
- s+=logo(d,48,68,300,138)+H.txt(404,155,'THE CLIP.',72,d['fg'],d['display'],700)+H.txt(404,235,'THE MOMENT.',72,d['fg'],d['display'],700)
- s+=art(d,888,76,250,240,direction)+H.txt(48,354,'Clip discovery + curation',22,d['fg'],d['body'])+H.txt(1084,354,'clpr.tv',18,d['accent'],d['label'])
+ s=H.rect(0,0,1200,400,d['bg'])+H.txt(48,36,d['tag'],14,d['accent'],d['label'])
+ s+=logo(d,48,68,300,138)+H.txt(404,155,d['headline'][0].upper(),72,d['fg'],d['display'],700)+H.txt(404,235,d['headline'][1].upper(),72,d['fg'],d['display'],700)
+ s+=art(d,888,76,250,240,direction)+H.txt(48,354,"It's probably in here.",22,d['fg'],d['body'])+H.txt(1084,354,'clpr.tv',18,d['accent'],d['label'])
  if direction=='focus':s+=corners(22,52,1156,282,d['accent'],2)
  elif direction=='clip':
   s=clip_card(d,x,y,w,h)
@@ -52,7 +52,7 @@ def banner(d,direction=None):
 def post(d,direction=None):
  direction=direction or d.get('square_direction',d.get('graphic_direction','focus'))
  s=H.rect(0,0,600,600,d['bg'])+logo(d,40,36,260,120)
- s+=H.txt(40,260,'KEEP THE MOMENT.',58,d['fg'],d['display'],700,maxw=520)+H.txt(40,329,'FIND THE NEXT ONE.',58,d['fg'],d['display'],700,maxw=520)
+ s+=H.txt(40,260,'THE ONE FROM',58,d['fg'],d['display'],700,maxw=520)+H.txt(40,329,'LAST TUESDAY.',58,d['fg'],d['display'],700,maxw=520)
  s+=art(d,40,373,520,145,direction)+H.txt(40,573,'clpr.tv',19,d['fg'],d['label'])
  return s
 
@@ -60,10 +60,10 @@ def poster(d,w,h,kind,direction=None):
  direction=direction or d.get('graphic_direction','focus')
  s=H.rect(0,0,w,h,d['bg'])+logo(d,48,44,300,138)
  if kind=='story':
-  for i,t in enumerate(['THE CLIP.','THE MOMENT.']):s+=H.txt(48,390+i*120,t,106,d['fg'],d['display'],700,maxw=w-96)
+  for i,t in enumerate(h.upper() for h in d['headline']):s+=H.txt(48,390+i*120,t,106,d['fg'],d['display'],700,maxw=w-96)
   s+=art(d,80,660,w-160,490,direction)+H.txt(48,1465,'YOUR NOTE OR INVITATION',34,d['fg'],d['display'],700,maxw=w-96)+H.txt(48,1530,'Replace with approved copy.',28,d['fg'],d['body'])
  elif kind=='landscape':
-  for i,t in enumerate(['THE CLIP.','THE MOMENT.']):s+=H.txt(48,365+i*116,t,112,d['fg'],d['display'],700,maxw=w-660)
+  for i,t in enumerate(h.upper() for h in d['headline']):s+=H.txt(48,365+i*116,t,112,d['fg'],d['display'],700,maxw=w-660)
   s+=art(d,w-540,190,470,390,direction)+H.txt(48,662,'YOUR APPROVED CAPTION',27,d['fg'],d['body'])
  elif kind=='quote':
   for i,t in enumerate(['“Add the exact quote.','Keep its context.”']):s+=H.txt(48,340+i*100,t,72,d['fg'],d['display'],700,maxw=w-96)
@@ -85,7 +85,7 @@ def video(d,kind,direction=None):
  if kind=='lower-third':
   return H.rect(96,823,1728,174,d['bg'])+H.rect(96,823,8,174,d['accent'])+logo(d,130,845,230,106)+H.txt(414,898,'TITLE / SPEAKER',49,d['fg'],d['display'],700)+H.txt(414,957,'One short line of context.',30,d['fg'],d['body'])
  s=H.rect(0,0,1920,1080,d['bg'])+logo(d,96,68,370,170)
- if kind=='end-card':s+=H.txt(96,486,'KEEP THE MOMENT.',112,d['fg'],d['display'],700,maxw=1100)+H.txt(96,640,'clpr.tv',54,d['accent'],d['label'])
+ if kind=='end-card':s+=H.txt(96,486,' '.join(d['headline']).upper(),112,d['fg'],d['display'],700,maxw=1100)+H.txt(96,640,'clpr.tv',54,d['accent'],d['label'])
  else:s+=H.txt(96,437,'ADD A CLEAR TITLE',112,d['fg'],d['display'],700,maxw=1080)+H.txt(96,562,'One useful idea.',57,d['fg'],d['body'])
  s+=art(d,1300,266,500,500,direction)+H.line(96,930,1824,930,d['accent'],3)
  return s

@@ -1,6 +1,6 @@
 # Kork — Alt text starters
 
-- Banner: Cork-textured banner. Label: LINK PAGES / BY SUBCULT. Black headline: EVERY LINK. ONE BOARD. At the right, four paper cards held by blue pushpins: @yourname (social), $yourname (tips), a decorative QR pattern and WATCH (latest video). Small text: kork.subcult.tv.
+- Banner: Cork-textured banner. Label: LINK PAGES / BY SUBCULT. Black headline on three lines: ALL OF IT, PINNED TO ONE LINK. At the right, four paper cards held by blue pushpins: @yourname (social), $yourname (tips), a decorative QR pattern and WATCH (latest video). Small text: kork.subcult.tv.
 - Square sample: Cork-textured square. Headline: PIN IT UP. Line below: Share one link for everything. Three pinned paper cards: @yourname, $yourname and a decorative QR pattern. Small text: kork.subcult.tv.
 - Avatar: The Kork mark on cork: a tilted paper card with two black rows, held by a blue pushpin.
 

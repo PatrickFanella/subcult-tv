@@ -28,8 +28,8 @@ def banner(d):
     s+=T(42,57,'LEFT FIELD',27,d['fg'],d['body'],700)
     s+=T(1150,57,'BY SUBCULT',14,d['accent'],d['label']).replace('x="1150"','text-anchor="end" x="1150"')
     s+=line(42,80,1158,80,d['fg'],3)
-    s+=T(250,174,'Read the field.',72,d['fg'],d['display'],700,maxw=700)
-    s+=T(250,256,'Trace the evidence.',72,d['fg'],d['display'],700,maxw=700)
+    s+=T(250,174,d['headline'][0],72,d['fg'],d['display'],700,maxw=700)
+    s+=T(250,256,d['headline'][1],72,d['fg'],d['display'],700,maxw=700)
     s+=T(250,335,'SEAT RESEARCH / SOURCE CONTEXT',16,d['accent'],d['label'])
     s+=mark(d,993,135,155)
     return s
@@ -38,8 +38,8 @@ def banner(d):
 def post(d):
     s=rect(0,0,600,600,d['bg'])
     s+=T(36,49,'LEFT FIELD / BY SUBCULT',15,d['accent'],d['label'])+line(36,72,564,72,d['fg'],3)
-    s+=T(36,155,'Read the field.',57,d['fg'],d['display'],700,maxw=528)
-    s+=T(36,223,'Trace the evidence.',57,d['fg'],d['display'],700,maxw=528)
+    s+=T(36,155,d['headline'][0],57,d['fg'],d['display'],700,maxw=528)
+    s+=T(36,223,d['headline'][1],57,d['fg'],d['display'],700,maxw=528)
     s+=ledger(d,36,285,358,206)+mark(d,428,322,135)
     s+=line(36,527,564,527,d['fg'],2)+T(36,568,'SEAT RESEARCH / SOURCE CONTEXT',15,d['fg'],d['label'])
     return s

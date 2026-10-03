@@ -22,6 +22,7 @@ CAPTURE = R / 'references/kork-demo-page-mobile.png'
 INK, PAPER, COBALT, CORK = d['fg'], d['secondary'], d['accent'], d['bg']
 DISPLAY, BODY, LABEL = d['display'], d['body'], d['label']
 T = H.txt
+HEADLINE = d['headline_stack']
 FACTS = [('92 services', 'SOCIALS / PAYMENTS / CRYPTO'), ('10 themes', 'PLUS YOUR OWN COLORS'), ('No cut', 'OF YOUR TIPS OR SALES')]
 
 
@@ -41,8 +42,9 @@ def brand_row(x, y, size):
 def square():
     w = h = 600
     s = base(w, h) + T(36, 49, 'NOW LIVE / LINK PAGES / BY SUBCULT', 14, INK, LABEL, maxw=528)
-    s += T(36, 132, 'EVERY LINK.', 62, INK, DISPLAY, 700, maxw=528) + T(36, 196, 'ONE BOARD.', 62, INK, DISPLAY, 700, maxw=528)
-    s += T(36, 240, 'Free link pages from SUBCULT.', 24, INK, BODY, maxw=528)
+    for i, text in enumerate(HEADLINE):
+        s += T(36, 112 + i * 56, text, 52, INK, DISPLAY, 700, maxw=528)
+    s += T(36, 258, 'Free link pages from SUBCULT.', 24, INK, BODY, maxw=528)
     s += fact_card(40, 290, 250, 104, -4, FACTS[0]) + fact_card(312, 280, 250, 104, 4, FACTS[1])
     s += fact_card(150, 412, 270, 104, -2, FACTS[2])
     s += H.line(36, 540, 564, 540, COBALT) + T(36, 572, 'kork.subcult.tv', 18, INK, BODY, 700)
@@ -54,9 +56,10 @@ def landscape():
     shot = base64.b64encode(CAPTURE.read_bytes()).decode()
     s = base(w, h) + brand_row(96, 84, 92)
     s += T(96, 290, 'NOW LIVE / LINK PAGES / BY SUBCULT', 22, INK, LABEL, maxw=820)
-    s += T(96, 400, 'EVERY LINK.', 104, INK, DISPLAY, 700, maxw=860) + T(96, 510, 'ONE BOARD.', 104, INK, DISPLAY, 700, maxw=860)
-    s += T(96, 580, 'Socials, payments, QR codes and more on one page.', 32, INK, BODY, maxw=860)
-    s += T(96, 628, 'Free to use. Kork never takes a cut of tips or sales.', 32, INK, BODY, maxw=860)
+    for i, text in enumerate(HEADLINE):
+        s += T(96, 386 + i * 98, text, 92, INK, DISPLAY, 700, maxw=860)
+    s += T(96, 652, 'Socials, payments, QR codes and more on one page.', 32, INK, BODY, maxw=860)
+    s += T(96, 700, 'Free to use. Kork never takes a cut of tips or sales.', 32, INK, BODY, maxw=860)
     s += H.line(96, 760, 920, 760, INK, 3) + T(96, 812, 'kork.subcult.tv', 30, INK, BODY, 700)
     # Real capture on a pinned paper card. Placeholder handles; no real account.
     cx, cy, cw, ch = 1060, 70, 404, 790
@@ -73,10 +76,11 @@ def story():
     w, h = 1080, 1920
     s = base(w, h) + brand_row(80, 250, 110)
     s += T(80, 470, 'NOW LIVE / LINK PAGES / BY SUBCULT', 30, INK, LABEL, maxw=920)
-    s += T(80, 610, 'EVERY LINK.', 118, INK, DISPLAY, 700, maxw=920) + T(80, 740, 'ONE BOARD.', 118, INK, DISPLAY, 700, maxw=920)
-    s += T(80, 830, 'Free link pages from SUBCULT.', 44, INK, BODY, maxw=920)
-    s += fact_card(90, 920, 600, 190, -3, FACTS[0]) + fact_card(390, 1150, 600, 190, 4, FACTS[1])
-    s += fact_card(120, 1380, 600, 190, -2, FACTS[2])
+    for i, text in enumerate(HEADLINE):
+        s += T(80, 600 + i * 118, text, 110, INK, DISPLAY, 700, maxw=920)
+    s += T(80, 916, 'Free link pages from SUBCULT.', 44, INK, BODY, maxw=920)
+    s += fact_card(90, 980, 600, 180, -3, FACTS[0]) + fact_card(390, 1195, 600, 180, 4, FACTS[1])
+    s += fact_card(120, 1410, 600, 180, -2, FACTS[2])
     s += H.line(80, 1620, 1000, 1620, COBALT, 4) + T(80, 1680, 'kork.subcult.tv', 44, INK, BODY, 700)
     return s, w, h, w
 

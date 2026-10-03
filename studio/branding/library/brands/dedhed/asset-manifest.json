@@ -5,8 +5,8 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "ff7e9c3f2684e7d5d6fdbc168d591f7c1ee0ede14a3f17a3ac76a2d0bd1ca5c5",
-      "bytes": 8837
+      "sha256": "73b9c68938e133d543e397d203647d8702eaaa3d00a1d83745fbca5ad5c7c860",
+      "bytes": 9133
     },
     {
       "path": "alt-text.md",
@@ -15,8 +15,8 @@
     },
     {
       "path": "design-system/README.md",
-      "sha256": "6ed9c8f7d846984a5d9ff64db25b294b0d55ed4a591c6bb44a3a9c8f42bab79f",
-      "bytes": 6631
+      "sha256": "363d72904c8d1486f293add0a10d66c50b15af09904c2b1e3da4ee1c7a47c75f",
+      "bytes": 7082
     },
     {
       "path": "design-system/examples/01-specimen.html",
@@ -40,8 +40,8 @@
     },
     {
       "path": "design-system/source-provenance.json",
-      "sha256": "75e5090f009cfc56de821868b4dc0633013a828d52d624e534e5e8a759904cbc",
-      "bytes": 1974
+      "sha256": "44ae8c775e4f66612f5bf23b53c62913c5d67496d15abcb1761dd7eeeae53145",
+      "bytes": 2911
     },
     {
       "path": "design-system/tokens.css",
@@ -326,8 +326,8 @@
     },
     {
       "path": "product/og.png",
-      "sha256": "93040b8acb343423c8b8e725843e54dc5a3a63b2ee66d6de1b1773a45bda0c90",
-      "bytes": 82761,
+      "sha256": "29d883be39b9434de607ee846cee4e9ac082b3b0dcda601824d7e18cc7eba015",
+      "bytes": 84094,
       "width": 1200,
       "height": 630,
       "mode": "RGB"
