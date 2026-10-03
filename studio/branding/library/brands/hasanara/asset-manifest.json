@@ -5,18 +5,18 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "bytes": 4582,
-      "sha256": "43448c013951c69ec4d20562fbe6268079fa65bc1dcc400f548cb8bfc7d4ccb4"
+      "bytes": 5747,
+      "sha256": "376209cdfb27c72ab69af38a23b9295f856e23cac899fb0e99bcc16aaba661e8"
     },
     {
       "path": "WEBSITE.md",
-      "bytes": 10243,
-      "sha256": "f223500b8b34f5bc5a970788484bd25a0e4146560f6595c21f9ad016dc30a809"
+      "bytes": 10402,
+      "sha256": "be47e271c1c70498fe44b54055adbe3c4114b049bb71813e4eddefc040b27f9f"
     },
     {
       "path": "alt-text.md",
-      "bytes": 591,
-      "sha256": "14d3d5dbbf530aadd341e9e25e62df7b616547bcefacbf40e4febf8b650ebfa6"
+      "bytes": 1001,
+      "sha256": "4559ae8d5bf6720743da097ee5ef7b71aa789cfcabdc6903b9d86ff9d7b5efa2"
     },
     {
       "path": "fonts/Inter-Tight-0.ttf",

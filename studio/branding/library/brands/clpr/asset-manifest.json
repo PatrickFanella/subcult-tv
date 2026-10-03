@@ -5,13 +5,13 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "3671d13b99019c940532855bfdd577037730b5fbdb7d05674e2c0b7fe7bd848e",
-      "bytes": 8569
+      "sha256": "c290652c57ebee35cadd5e6cf590b241fcf07daffb3e53bebfda40ce5ee6da36",
+      "bytes": 9739
     },
     {
       "path": "alt-text.md",
-      "sha256": "1666ff086f3842bd91734313f730a85299c060967935ca3dace78e472da7cb11",
-      "bytes": 586
+      "sha256": "97e89e40fe4268be47bc2c7ec55aaa8c9161bf57ce5cd872f698fc1e0b233247",
+      "bytes": 873
     },
     {
       "path": "fonts/Barlow-0.ttf",

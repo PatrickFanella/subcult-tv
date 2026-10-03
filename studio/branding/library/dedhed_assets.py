@@ -115,33 +115,47 @@ def post(d):
     return s
 
 
-GUIDE_NOTE = (
-    "Identity for Dedhed, the private concert-tape library and shared radio station for Grateful Dead "
-    "recordings. The system is called The Tape Shelf and comes from the taper cassette collections in the "
-    "product repository's docs/inspo/: typed and handwritten spine labels, cream and coloured label stock, "
-    "black and clear shells, red Maxell and TDK tabs, and pine racks. The user approved the cream paper "
-    "backdrop on October 2, 2026. Use Dedhed in prose and the lowercase `dedhed` wordmark with its red "
-    "record dot in artwork. The mark is an original cassette shell: label, red stripe, window, two hubs, "
-    "screw holes and capstan notch. It stays legible at 32 pixels because the shell and hubs are solid "
-    "shapes; monochrome variants turn the stripe to ink. Paper (#efe9d8) is the field and ink (#1f1d1a) "
-    "carries text and the mark. Tab red (#c8102e, 5.3:1 on paper) is reserved for the record dot, brand "
-    "tabs, the deck's top rule and the primary key. Pine (#c58b4e) is the rack behind spines, never a text "
-    "colour. Liberation Serif stands in for the Times/Georgia typed-label voice, Liberation Mono for the "
-    "typewriter voice (counters, lineage, eyebrows), Public Sans for interface prose and Barlow Condensed "
-    "for brand tabs. Data such as band, date, set and venue is set in the typed voice; explanations are "
-    "set in the interface voice. Sets are roman numerals. Coloured label stock groups tapes and never "
-    "replaces text. The spine is the list item: a tab, a label and an end. The sample tape labels in this "
-    "pack name real Grateful Dead shows the way a taper writes them; they are illustration, not catalog "
-    "entries. The band name describes the archive's contents and implies no endorsement. Dedhed is a "
-    "private pilot on a loopback address with no public domain; source availability never authorizes "
-    "public relay, and artwork must not claim otherwise. Credits, track order and uncertain set "
-    "boundaries are preserved in the product and are shown as warning stickers, not hidden."
-)
+GUIDE_NOTE = """## Notes for this pack
+
+Dedhed is a private concert-tape library and shared radio station for Grateful Dead recordings. Its identity is called The Tape Shelf. It comes from the taper cassette collections photographed in the product repository's docs/inspo/: typed and handwritten spine labels, cream and colored label stock, black and clear shells, red Maxell and TDK tabs, and pine racks. The user approved the cream paper backdrop on October 2, 2026.
+
+### Name and mark
+
+Write Dedhed in prose. In artwork, use the lowercase `dedhed` wordmark with its red record dot. The mark is an original cassette shell: label, red stripe, window, two hubs, screw holes and capstan notch. The shell and hubs are solid shapes, so the mark stays legible at 32 pixels. Monochrome variants turn the stripe to ink.
+
+### Color
+
+Paper (#efe9d8) is the field. Ink (#1f1d1a) carries text and the mark. Tab red (#c8102e, 5.3:1 on paper) is reserved for the record dot, brand tabs, the deck's top rule and the primary key. Pine (#c58b4e) is the rack behind spines and is never a text color. Colored label stock groups tapes and never replaces text.
+
+### Type
+
+Liberation Serif stands in for the Times/Georgia typed-label voice. Liberation Mono is the typewriter voice for counters, lineage and eyebrows. Public Sans sets interface prose and Barlow Condensed sets brand tabs. Band, date, set and venue are data and go in the typed voice; explanations go in the interface voice. Sets are roman numerals. The spine is the list item: a tab, a label and an end.
+
+### Limits
+
+The sample tape labels in this pack name real Grateful Dead shows the way a taper writes them. They are illustration, not catalog entries. The band name describes what the archive holds and implies no endorsement. Dedhed is a private pilot on a loopback address with no public domain. A recording being available from its source never authorizes public relay, and artwork must not claim otherwise. The product keeps credits, track order and uncertain set boundaries, and shows the uncertainty as a warning sticker instead of hiding it.
+
+## Voice
+
+Dedhed copy sounds like a taper labelling spines at the kitchen table: date first, venue second, source notes in the shorthand a head would recognize. It is affectionate, unfussy and a little corny on purpose. Do not quote lyrics, use tie-dye clichés or "long strange trip", or suggest official endorsement or a public station. Every piece of copy says this is a private pilot.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md)."""
 
 PRODUCT_SECTION = """## Product site and design system
 
-`landing.html` is a static landing page for the product, built on the design-system tokens. It shows the masthead, the rack, the shared-radio panel and the pilot boundary. Its tape labels and station state are samples. `product/` holds web exports: `favicon.svg`, `apple-touch-icon.png`, `hero.svg` and `og.png` (1200×630, no URL). Text is outlined. Copy them into the product; regenerate here with `dedhed_product_assets.py` instead of editing the copies.
+`landing.html` is a static landing page for the product, built on the design-system tokens. It shows the masthead, the rack, the shared-radio panel and the pilot boundary. Its tape labels and station state are samples.
 
-`design-system/` is a copy of the proposal from the product repository: `README.md` (the reading of the source photographs, token groups, three type voices, motion rules and component list), `tokens.css` (every token as a CSS custom property plus the spine, rack, key, field, sticker, reel, counter, VU meter and masthead primitives) and four example pages under `examples/`: the specimen sheet, the rack, the J-card and the deck. `source-provenance.json` records the source path and SHA-256 of each copied file. The product repository stays the editing source for the design system; this copy is for the Studio gallery and the admin bundle.
+`product/` holds web exports: `favicon.svg`, `apple-touch-icon.png`, `hero.svg` and `og.png` (1200×630, no URL). Text is outlined. Copy them into the product. To change one, regenerate it here with `dedhed_product_assets.py`; do not edit the copies.
+
+`design-system/` is a copy of the proposal in the product repository's docs/design/:
+
+- `README.md`: what the source photographs show, the token groups, the type voices, motion rules and the component list.
+- `tokens.css`: every token as a CSS custom property, plus the spine, rack, key, field, sticker, reel, counter, VU meter and masthead primitives.
+- `examples/`: four pages, the specimen sheet, the rack, the J-card and the deck.
+- `source-provenance.json`: the source path and the SHA-256 of each file as it was copied on 2026-10-02.
+
+The product repository stays the editing source for the design system. This copy is for the Studio gallery and the admin bundle.
+
+On 2026-10-03 Studio reworded the sample and explanatory copy in `landing.html`, `design-system/README.md` and the example pages `01-specimen.html`, `02-rack.html` and `04-deck.html` to follow the voice guide. Since that date their wording differs from the product repository's. Tape and show data, tokens, class names and `tokens.css` are unchanged, and `03-jcard.html` is byte-identical to the source. `source-provenance.json` lists which copies differ. `dedhed_product_assets.py` re-copies the product files only when `DEDHED_SOURCE` is set, and doing so replaces the Studio wording.
 
 """

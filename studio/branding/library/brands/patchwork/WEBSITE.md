@@ -19,6 +19,8 @@ Patchwork is a pre-alpha mutual-aid site: requests and offers from neighbours, a
 | Location promise | Public discovery uses approximate areas, never exact addresses. |
 | Boundary | Patchwork is not an emergency service. |
 
+The table records the deployed copy word for word. New copy follows the Patchwork voice in [the voice guide](../../../../content/VOICE.md).
+
 Copy rules the site follows:
 
 - Headings say what a person can do. Protocol and internal terms stay out of public copy: no "PDS", "DID", "AT identity", "NO-GO", "deferred" or "API sync".
@@ -29,7 +31,7 @@ Copy rules the site follows:
 
 ## Visual application
 
-The site is an editorial neighbourhood bulletin: heavy serif headlines, ink outlines, flat offset shadows and a few saturated patch colours on warm paper.
+The site looks like a neighbourhood bulletin: heavy serif headlines, ink outlines, flat offset shadows and a few saturated patch colours on warm paper.
 
 | Role | Website treatment |
 | --- | --- |
@@ -52,7 +54,7 @@ The three typefaces ship with the app through `@fontsource-variable` packages. N
 
 ### Differences from the promotional pack
 
-The pack's Neighbourhood fabric direction is for promotional artwork. The site does not use all of it.
+The pack's Neighbourhood fabric direction is for promotional artwork, and the site uses only part of it.
 
 | Item | Pack | Site |
 | --- | --- | --- |

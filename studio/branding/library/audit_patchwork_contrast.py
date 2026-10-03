@@ -31,21 +31,21 @@ report={'scope':'Local Patchwork branding SVG text and stitched-button CSS; depl
 rows='\n'.join(f"| {x['foreground']} / {x['background']} | {x['ratio']:.2f}:1 | {'Pass' if x['AA_normal'] else 'Fail'} | {'Pass' if x['AA_large_or_nontext'] else 'Fail'} |" for x in matrix)
 (OUT/'contrast-report.md').write_text(f"""# Patchwork contrast audit after button-color correction
 
-The text-bearing tomato button now uses `#b33e28`. Paper text (`#f2efe7`) on this background measures **{action_ratio:.2f}:1**, passing WCAG AA for normal text. The logo and decorative patches retain bright tomato `#e85d3f`.
+The tomato button that carries text uses `#b33e28`. Paper text (`#f2efe7`) on it measures **{action_ratio:.2f}:1**, which passes WCAG AA for normal text. The logo and decorative patches keep bright tomato `#e85d3f`.
 
-Examined {len(text_checks)} social/video SVG text elements. Every measured text pair now meets the 4.5:1 normal-text threshold; none relies on large-text status. The CSS tomato button uses the same darker token.
+The audit examined {len(text_checks)} text elements in the social and video SVGs. Every pair meets the 4.5:1 threshold for normal text, and none relies on large-text status. The CSS tomato button uses the same darker token.
 
-Ink on paper: 7.26:1, passing AAA normal text. Dark green on paper: 6.01:1, passing AA normal text. The ink focus outline exceeds the 3:1 non-text threshold against paper.
+Ink on paper measures 7.26:1 and passes AAA for normal text. Dark green on paper measures 6.01:1 and passes AA for normal text. The ink focus outline exceeds the 3:1 non-text threshold against paper.
 
-Decorative tomato is 3.01:1 against paper, sage shadows 1.74:1, yellow patches 1.46:1 and sage patches 1.65:1. These lower-contrast decorative colors should not carry small text or essential control information alone.
+Decorative tomato is 3.01:1 against paper, sage shadows 1.74:1, yellow patches 1.46:1 and sage patches 1.65:1. Do not set small text in these decorative colors, and do not let them carry essential control information alone.
 
-Scope: local asset pack and defined button CSS. This does not qualify the deployed site, caption ASS rendering, private screenshot content, or browser interactions. Smaller text can still become hard to read even when its color contrast passes.
+Scope: the local asset pack and the defined button CSS. The audit does not qualify the deployed site, caption ASS rendering, private screenshot content or browser interactions. Small text can be hard to read even when its color contrast passes.
 
-Method: WCAG sRGB relative luminance. Pass/fail uses unrounded ratios. Normal text needs 4.5:1, large text and essential non-text graphics need 3:1. Logos and purely decorative artwork have exceptions. References: [W3C text contrast](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html), [W3C non-text contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html).
+Method: WCAG sRGB relative luminance. Pass/fail uses unrounded ratios. Normal text needs 4.5:1, large text and essential non-text graphics need 3:1. Logos and purely decorative artwork are exempt. References: [W3C text contrast](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html), [W3C non-text contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html).
 
 ## Full palette matrix
 
-Includes unused combinations; a failing unused pair does not establish an accessibility defect.
+The matrix includes combinations the pack does not use. A failing unused pair is not an accessibility defect.
 
 | Pair | Ratio | AA normal text | AA large text / non-text |
 |---|---:|---|---|
@@ -70,5 +70,5 @@ for check in text_checks:
 assert all(x['AA_normal'] for x in texture_checks)
 report['texture_bounds']={'paper_black_opacity':.025,'fabric_white_opacity':.035,'checks':texture_checks,'minimum_ratio':min(x['ratio'] for x in texture_checks)}
 (OUT/'contrast-report.json').write_text(json.dumps(report,indent=2)+'\n')
-with (OUT/'contrast-report.md').open('a') as f:f.write(f"\n## Texture bounds\n\nAll {len(texture_checks)} text color pairs also pass at conservative texture bounds: black paper grain at 2.5% opacity and white weave at 3.5% opacity. The lowest ratio is {report['texture_bounds']['minimum_ratio']:.2f}:1. These checks cover source-color bounds, not rendered browser or full accessibility qualification.\n")
+with (OUT/'contrast-report.md').open('a') as f:f.write(f"\n## Texture bounds\n\nAll {len(texture_checks)} text color pairs also pass at conservative texture bounds: black paper grain at 2.5% opacity and white weave at 3.5% opacity. The lowest ratio is {report['texture_bounds']['minimum_ratio']:.2f}:1. These checks bound the source colors. They do not qualify rendered browser output or full accessibility.\n")
 print(f"Worst textured text contrast: {report['texture_bounds']['minimum_ratio']:.4f}:1; all pass AA normal text.")

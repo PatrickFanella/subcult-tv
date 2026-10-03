@@ -5,18 +5,18 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "f45507d09e298267ab944f74ecee3c33206c315df101d76b1d56b2b8d08f1c34",
-      "bytes": 6197
+      "sha256": "9e020bd77ccff362b4f22bc615c54c90901350b51e81aa2ffd2cc371dc8a8771",
+      "bytes": 7138
     },
     {
       "path": "WEBSITE.md",
-      "sha256": "b3a7d797da75fc459ec7b67df422cfade41199cc97a8a39a20bc992a56c46ac8",
-      "bytes": 15100
+      "sha256": "36d16faffec2ef0610469c6578d9464f3c9befb5a07a1c4302f796e6b77994cf",
+      "bytes": 15250
     },
     {
       "path": "alt-text.md",
-      "sha256": "c627fd01567b8b385e1e6aed94e32cd0e7176e2c1cde0ba9276ca454be9b9a4f",
-      "bytes": 596
+      "sha256": "0bd4596090d2cc8356093b6077b2079869847a40d3e5e040223d25d20b05afd3",
+      "bytes": 1001
     },
     {
       "path": "fonts/JetBrains-Mono-0.ttf",
@@ -258,8 +258,8 @@
     },
     {
       "path": "product/README.md",
-      "sha256": "cd099fe35a770dbf3c4a41dfa5d663145773c2f516a9d00a8617d8ae38a90574",
-      "bytes": 371
+      "sha256": "c8f379dae5b252e53d86e53ea3f34c7387cdd5d867ab452a19aafe984dc7a1f9",
+      "bytes": 375
     },
     {
       "path": "product/apple-touch-icon.png",

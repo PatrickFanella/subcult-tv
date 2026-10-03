@@ -59,7 +59,7 @@ def main():
     subprocess.run(['inkscape',str(product/'hero.svg'),'--export-text-to-path',
                     '--export-plain-svg','--export-type=svg',
                     '--export-filename='+str(product/'hero-outlined.svg')],check=True,capture_output=True)
-    (product/'README.md').write_text('# Left Field — Web assets\n\nApproved LF favicon, 180-pixel Apple touch icon, 192/512-pixel app icons and\na 1200×630 share card and a 1600×1000 hero illustration. These exports derive from the pack logo and banner\nmasters. The Left Field site carries the favicon, touch icon, both app icons, the\nshare card and the outlined hero; `WEBSITE.md` lists where each is used.\n')
+    (product/'README.md').write_text('# Left Field — Web assets\n\nThe approved LF favicon, a 180-pixel Apple touch icon, 192- and 512-pixel app icons,\na 1200×630 share card and a 1600×1000 hero illustration. All are exported from the pack logo and banner\nmasters. The Left Field site carries the favicon, touch icon, both app icons, the\nshare card and the outlined hero. `WEBSITE.md` lists where each is used.\n')
     guide=PACK/'GUIDE.md'
     text=guide.read_text().replace('Selected direction:', 'Approved direction:')
     text += '\n## Rebuild this pack\n\nFrom `branding/library/`:\n\n```bash\nBRAND_ONLY=left-field python build_packs.py\nBRAND_ONLY=left-field python render_video_previews.py\npython finalize_left_field.py\n```\n\nThe final step creates web exports, validates the assets and refreshes the\nmanifest and `left-field.zip`. Rebuild only this brand to preserve unrelated\nmasters and exports. Source observations are in `source-provenance.json`.\n'

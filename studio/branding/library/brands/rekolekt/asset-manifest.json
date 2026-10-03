@@ -5,18 +5,18 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "bytes": 4664,
-      "sha256": "cab2420f5818a93c4ed15e8c903a75413b9eb103b63e344e7be43e05f8400645"
+      "bytes": 5764,
+      "sha256": "3af8db2808168229887b86ae2462e477d8978f0ee79a0afbe25dda8368a5c285"
     },
     {
       "path": "WEBSITE.md",
-      "bytes": 7997,
-      "sha256": "f2803592ddf8d621541518d21ca261a4cf55ac4abf2dd4e58c77101a06462b3c"
+      "bytes": 8190,
+      "sha256": "680213fe26cad944bfdd67d9874ae0b507d5ed1f56cd6a8f797cfc26126bacc1"
     },
     {
       "path": "alt-text.md",
-      "bytes": 587,
-      "sha256": "ebad915e9e46234532b8e42bc83024c3e3f6521546504796d73dac5c36e16feb"
+      "bytes": 921,
+      "sha256": "209725c8dc759481c76717e5fb63634090e234dbb47c9f2d80f575a728db015d"
     },
     {
       "path": "fonts/JetBrains-Mono-0.ttf",

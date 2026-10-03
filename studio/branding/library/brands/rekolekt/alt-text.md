@@ -1,7 +1,7 @@
 # Rekolekt — Alt text starters
 
-- Banner: Rekolekt branding in the Index / original concept direction. Visible headline: “A recording. An archive.”.
-- Square sample: Describe the visible headline, brand mark and supporting illustration in `social/square-post.png`.
-- Avatar: Rekolekt mark on the selected brand background.
+- Banner: Dark green banner. Lowercase wordmark: rekolekt. Lime label: BY SUBCULT. Headline in warm white: A recording. An archive. Line below a lime rule: Searchable recordings. Source intact. At the right, the mark: three lime bars of different heights between square brackets.
+- Square sample: Dark green square. Label: REKOLEKT BY SUBCULT. Headline: Make a recording into an archive. Below it, the bracketed three-bar mark beside three lime labels: SEARCH, QUOTE and RETURN TO SOURCE. Small text: rekolekt / by SUBCULT.
+- Avatar: The Rekolekt mark on dark green: three lime bars of different heights between square brackets.
 
 Replace these starters when copy or imagery changes. Describe a screenshot’s actual task and visible result. For a quoted passage, include the visible words and attribution. Empty templates are editing aids and should not be published as finished assets.

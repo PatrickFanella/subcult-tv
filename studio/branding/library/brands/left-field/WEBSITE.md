@@ -27,6 +27,8 @@ Left Field is a research index of seats in Congress, governorships and state leg
 
 The counts in the lede and note come from the index data at render time; the figures above are those of model v1.14.
 
+The table records the deployed copy word for word. New copy follows the Left Field voice in [the voice guide](../../../../content/VOICE.md).
+
 Copy rules the site follows:
 
 - A missing input reads “Not in this score”. A missing fact reads “Unavailable”, followed by the reason. Neither is shown as zero.
@@ -39,7 +41,7 @@ Copy rules the site follows:
 
 ## Visual application
 
-The site is a printed ledger: warm paper, dark green ink, rust annotations, ruled rows and no ornament.
+The site looks like a printed ledger: warm paper, dark green ink, rust annotations, ruled rows and no ornament.
 
 | Role | Website treatment |
 | --- | --- |

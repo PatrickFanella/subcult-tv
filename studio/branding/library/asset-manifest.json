@@ -1,27 +1,27 @@
 [
   {
     "path": "README.md",
-    "sha256": "4573a49be0ed22257c1361eae2d3cefc95c113dbd624644f3c8c2305069ea8cc",
-    "bytes": 13358
+    "sha256": "d782f7abb856b0f0e17083c22b339bf9a38305fe7469a96e33523d2af137629c",
+    "bytes": 13647
   },
   {
     "path": "audit_patchwork_contrast.py",
-    "sha256": "a3da538239e0b2abb7a0513f57bf14f6a86e571adad34d2005e7fc02848d15ed",
-    "bytes": 6041
+    "sha256": "cfd967c6cde5b6e3a55f3d4fa8cee3b24b1a64132b6a9c8e1ebc73943d676908",
+    "bytes": 6094
   },
   {
     "path": "brands/clpr/GUIDE.md",
-    "sha256": "3671d13b99019c940532855bfdd577037730b5fbdb7d05674e2c0b7fe7bd848e",
-    "bytes": 8569
+    "sha256": "c290652c57ebee35cadd5e6cf590b241fcf07daffb3e53bebfda40ce5ee6da36",
+    "bytes": 9739
   },
   {
     "path": "brands/clpr/alt-text.md",
-    "sha256": "1666ff086f3842bd91734313f730a85299c060967935ca3dace78e472da7cb11",
-    "bytes": 586
+    "sha256": "97e89e40fe4268be47bc2c7ec55aaa8c9161bf57ce5cd872f698fc1e0b233247",
+    "bytes": 873
   },
   {
     "path": "brands/clpr/asset-manifest.json",
-    "sha256": "1294cbe3100e7d857a9ca6fc989209d4efa85eff768b2245c01aa47dea6d59f4",
+    "sha256": "1a9ab67baac0e32be670112a98fb6e5c216ab06ac5333777f4bd1fd5022278ef",
     "bytes": 13434
   },
   {
@@ -386,33 +386,33 @@
   },
   {
     "path": "brands/dedhed/GUIDE.md",
-    "sha256": "29f8dd1d73e0978d37e1e18dce2c2b3a54f2c3f561b3dfee415ad3fb053b4df2",
-    "bytes": 7399
+    "sha256": "ff7e9c3f2684e7d5d6fdbc168d591f7c1ee0ede14a3f17a3ac76a2d0bd1ca5c5",
+    "bytes": 8837
   },
   {
     "path": "brands/dedhed/alt-text.md",
-    "sha256": "e2bc9b6ded81c2c271fabf3e4edb3b4afaeb9a3d8a6167fabb7a1b0f94f772fc",
-    "bytes": 573
+    "sha256": "f2688e1b77e909f53e45eca9a1fe233892e2409adecad75dbb9ced7a12c0e7ad",
+    "bytes": 1066
   },
   {
     "path": "brands/dedhed/asset-manifest.json",
-    "sha256": "48f5756829128f54ff0b0280a8d5a096cb5f055ef27b2919319228c936dc11fc",
-    "bytes": 15822
+    "sha256": "e30a1cac27cbb63a195b108469e452a9474c9ba45be8b438efbb824c5ad3cf11",
+    "bytes": 15823
   },
   {
     "path": "brands/dedhed/design-system/README.md",
-    "sha256": "85d1f5e4769683119161f6a10b9595d18e7fae0ca3b0af4128bc5cef8936e2b7",
-    "bytes": 6679
+    "sha256": "6ed9c8f7d846984a5d9ff64db25b294b0d55ed4a591c6bb44a3a9c8f42bab79f",
+    "bytes": 6631
   },
   {
     "path": "brands/dedhed/design-system/examples/01-specimen.html",
-    "sha256": "07f0f0f48d17c19a96e65d27f70c262d387e00837fc7f28723f8402fadfe139a",
-    "bytes": 10985
+    "sha256": "e1f878111fc41912a41f853fff30180fd5b34f4c15e5bb79f04648820e132a8b",
+    "bytes": 10928
   },
   {
     "path": "brands/dedhed/design-system/examples/02-rack.html",
-    "sha256": "443855595d307c0dacba0abd85cce3f1dcae62c9688d2720ce320b0001b0022b",
-    "bytes": 9812
+    "sha256": "d8b91c5d5391bcfaf918d926195ad3242c21e693c84f4b76bb6151152ace8f54",
+    "bytes": 9805
   },
   {
     "path": "brands/dedhed/design-system/examples/03-jcard.html",
@@ -421,13 +421,13 @@
   },
   {
     "path": "brands/dedhed/design-system/examples/04-deck.html",
-    "sha256": "6f55deba2ceb00856935fe630869d2405093ef2a344bf78e1ced58870ebb99f2",
-    "bytes": 8196
+    "sha256": "1a8da68bb2b889f1268f16394d8fd6e4a007e270f735714cf95b73b8af904114",
+    "bytes": 8176
   },
   {
     "path": "brands/dedhed/design-system/source-provenance.json",
-    "sha256": "a0aef37abf051d527db2b325789dc3e008802638e1975cc7dd1f413b19b88074",
-    "bytes": 1326
+    "sha256": "75e5090f009cfc56de821868b4dc0633013a828d52d624e534e5e8a759904cbc",
+    "bytes": 1974
   },
   {
     "path": "brands/dedhed/design-system/tokens.css",
@@ -491,8 +491,8 @@
   },
   {
     "path": "brands/dedhed/landing.html",
-    "sha256": "ed3ecec98068da7800dc3c6b235294d36809f03c0b5c1d05eb3a07fe62f106ef",
-    "bytes": 8175
+    "sha256": "959d4fc3f858eafad8754ac36f453b09276ae0253743db6fe9355605924cede1",
+    "bytes": 8330
   },
   {
     "path": "brands/dedhed/logos/lockup-dark-outlined.svg",
@@ -656,8 +656,8 @@
   },
   {
     "path": "brands/dedhed/product/README.md",
-    "sha256": "60ef980832524377f4a6c8889203bff2da95bdc92634905c41f078c09e026892",
-    "bytes": 266
+    "sha256": "47311a66cab8343e627bbb74909f0e4b249479b2a3edfce6c5866ed70fded5b7",
+    "bytes": 278
   },
   {
     "path": "brands/dedhed/product/apple-touch-icon.png",
@@ -831,23 +831,23 @@
   },
   {
     "path": "brands/hasanara/GUIDE.md",
-    "sha256": "43448c013951c69ec4d20562fbe6268079fa65bc1dcc400f548cb8bfc7d4ccb4",
-    "bytes": 4582
+    "sha256": "376209cdfb27c72ab69af38a23b9295f856e23cac899fb0e99bcc16aaba661e8",
+    "bytes": 5747
   },
   {
     "path": "brands/hasanara/WEBSITE.md",
-    "sha256": "f223500b8b34f5bc5a970788484bd25a0e4146560f6595c21f9ad016dc30a809",
-    "bytes": 10243
+    "sha256": "be47e271c1c70498fe44b54055adbe3c4114b049bb71813e4eddefc040b27f9f",
+    "bytes": 10402
   },
   {
     "path": "brands/hasanara/alt-text.md",
-    "sha256": "14d3d5dbbf530aadd341e9e25e62df7b616547bcefacbf40e4febf8b650ebfa6",
-    "bytes": 591
+    "sha256": "4559ae8d5bf6720743da097ee5ef7b71aa789cfcabdc6903b9d86ff9d7b5efa2",
+    "bytes": 1001
   },
   {
     "path": "brands/hasanara/asset-manifest.json",
-    "sha256": "7822433c5a08d4af42a482b07d331a75837fc25269dda9744bf9a328dba27d20",
-    "bytes": 12918
+    "sha256": "bdc0ec9146b5c98da4087acd0f0f9cac1ea67c9e14d0f1926fb1d75af3d4d8a8",
+    "bytes": 12919
   },
   {
     "path": "brands/hasanara/fonts/Inter-Tight-0.ttf",
@@ -1206,17 +1206,17 @@
   },
   {
     "path": "brands/kork/GUIDE.md",
-    "sha256": "8a23d4730695220c333a696689fe5345fbe4096e4b6c0a095c29fa59fccb5aaf",
-    "bytes": 5304
+    "sha256": "d8f5d7976c2a60936b0e5796028635bd5718141ce07a253e166c29d660d78c56",
+    "bytes": 6476
   },
   {
     "path": "brands/kork/alt-text.md",
-    "sha256": "b362c3317872e7668a86f97cd88bf8c868dd7aac5a381301d00d294c43d7040e",
-    "bytes": 568
+    "sha256": "97ca2bdbae047d5ad11c96df086a7e3c743e1c2c1dcb03b9b44a1634440b0b3c",
+    "bytes": 868
   },
   {
     "path": "brands/kork/asset-manifest.json",
-    "sha256": "e919c13051d628200e1194fe15ce5bdf2e8c106e98575a21c858b72a225ee4a5",
+    "sha256": "a8aea931ec734af296f1aa947b50188f728b8bed0f0e3725aee03677f9f46d8f",
     "bytes": 15351
   },
   {
@@ -1631,23 +1631,23 @@
   },
   {
     "path": "brands/left-field/GUIDE.md",
-    "sha256": "f45507d09e298267ab944f74ecee3c33206c315df101d76b1d56b2b8d08f1c34",
-    "bytes": 6197
+    "sha256": "9e020bd77ccff362b4f22bc615c54c90901350b51e81aa2ffd2cc371dc8a8771",
+    "bytes": 7138
   },
   {
     "path": "brands/left-field/WEBSITE.md",
-    "sha256": "b3a7d797da75fc459ec7b67df422cfade41199cc97a8a39a20bc992a56c46ac8",
-    "bytes": 15100
+    "sha256": "36d16faffec2ef0610469c6578d9464f3c9befb5a07a1c4302f796e6b77994cf",
+    "bytes": 15250
   },
   {
     "path": "brands/left-field/alt-text.md",
-    "sha256": "c627fd01567b8b385e1e6aed94e32cd0e7176e2c1cde0ba9276ca454be9b9a4f",
-    "bytes": 596
+    "sha256": "0bd4596090d2cc8356093b6077b2079869847a40d3e5e040223d25d20b05afd3",
+    "bytes": 1001
   },
   {
     "path": "brands/left-field/asset-manifest.json",
-    "sha256": "b287122fab8e8f8ce65bf23f5cd6767c6df7ad84eabd912bad11b48e0996c571",
-    "bytes": 15716
+    "sha256": "bbd3acf49cce78598b7873e5383edd6037bb25f2219808da4482fff2f49741d6",
+    "bytes": 15717
   },
   {
     "path": "brands/left-field/fonts/JetBrains-Mono-0.ttf",
@@ -1856,8 +1856,8 @@
   },
   {
     "path": "brands/left-field/product/README.md",
-    "sha256": "cd099fe35a770dbf3c4a41dfa5d663145773c2f516a9d00a8617d8ae38a90574",
-    "bytes": 371
+    "sha256": "c8f379dae5b252e53d86e53ea3f34c7387cdd5d867ab452a19aafe984dc7a1f9",
+    "bytes": 375
   },
   {
     "path": "brands/left-field/product/apple-touch-icon.png",
@@ -2071,22 +2071,22 @@
   },
   {
     "path": "brands/patchwork/GUIDE.md",
-    "sha256": "6beee4d0a65d84ade8b41db8d21daec55eb2478beac4b3fe0f0233381a523ceb",
-    "bytes": 5248
+    "sha256": "4192bc616ea0d5a02195b9bc41fdde2ae9f87eeb1e0d5a46a5b0a8e6d9a4f7ba",
+    "bytes": 6446
   },
   {
     "path": "brands/patchwork/WEBSITE.md",
-    "sha256": "edbef2717ee9953c217e411b9b551252221b2e3fe3755d24f0cbf235b87f2d6d",
-    "bytes": 10704
+    "sha256": "31676d59dd91c8fc1f17e1227516f3f70507b218feb3ccfc08c54dff6a12c097",
+    "bytes": 10844
   },
   {
     "path": "brands/patchwork/alt-text.md",
-    "sha256": "33bd86758ad6915b1925df9c73ddefc3f12aadd41afd03b63d73ae9e17834d78",
-    "bytes": 591
+    "sha256": "41a091c325fa9bc2ad53a05344ab9ebafd07ab15bab1e4d34f0a1528737d07f2",
+    "bytes": 948
   },
   {
     "path": "brands/patchwork/asset-manifest.json",
-    "sha256": "e4b8ad48e660827042fcbd559dd1c14754b71270df3fcce770037937350f0362",
+    "sha256": "81e6433aa3d1a3dfecd32a34947360710cfb4bf7a1adb877f2623be19b67ceb7",
     "bytes": 13909
   },
   {
@@ -2096,8 +2096,8 @@
   },
   {
     "path": "brands/patchwork/audits/contrast-report.md",
-    "sha256": "34a17beba449dac2a1304e131d62c7bcf3f2e6f566e20b5b9027d35223333ad3",
-    "bytes": 3237
+    "sha256": "318cc5618a5f81e807c2a434fcbed72e9732147536ce7c8a6316e4405becb7ed",
+    "bytes": 3290
   },
   {
     "path": "brands/patchwork/components-preview.png",
@@ -2111,8 +2111,8 @@
   },
   {
     "path": "brands/patchwork/components.html",
-    "sha256": "eaf0cea1b0676b85fe2146b2232f39f5141ea3de4a10bb0c04bcce107a3be76a",
-    "bytes": 1853
+    "sha256": "1e11d1627cdb6cee05f287e024194441c89f3b35044d709531256aa5d959bf1f",
+    "bytes": 2006
   },
   {
     "path": "brands/patchwork/decorative/buttons.svg",
@@ -2436,8 +2436,8 @@
   },
   {
     "path": "brands/patchwork/textures/README.md",
-    "sha256": "71b7238b31aab4c57a9090c41b17a80dcd284db1fa9f950b5acdbb555bf3b36a",
-    "bytes": 730
+    "sha256": "06260c8d808ae54ee1cb704854c60d22e73403529e72e91bc7ac9be614b1c94f",
+    "bytes": 771
   },
   {
     "path": "brands/patchwork/textures/fabric.svg",
@@ -2511,8 +2511,8 @@
   },
   {
     "path": "brands/patrick__eff/GUIDE.md",
-    "sha256": "08c4a5da934d233958d6761d959a1c7daa024baa187689c523c41694ed528cfa",
-    "bytes": 5142
+    "sha256": "c8d2cd9dffee7b6a4e956ccf0762664648a78345c9d85aa259c78edb17a96de2",
+    "bytes": 5788
   },
   {
     "path": "brands/patrick__eff/alt-text.md",
@@ -2541,7 +2541,7 @@
   },
   {
     "path": "brands/patrick__eff/asset-manifest.json",
-    "sha256": "c330d1832108c9c2f533826b984cca935ad962ffe36e8b3d9ab771bb6bbab941",
+    "sha256": "ece2e5575a2bc40c322f3eb8477c3aa681b398658f3b22e5760aa65c8f46fa22",
     "bytes": 21459
   },
   {
@@ -3096,18 +3096,18 @@
   },
   {
     "path": "brands/prichal/GUIDE.md",
-    "sha256": "3d424ce1397278f3f083689f9cda8729b525ed12126d23f7cb334807c3a9d7d5",
-    "bytes": 5777
+    "sha256": "0199b2295ce71cf7cbab9ccc69036b06cd3f1b91ce732e01fab8494bc0d4b8b8",
+    "bytes": 6688
   },
   {
     "path": "brands/prichal/alt-text.md",
-    "sha256": "c2c8ac73d7f302cba7c21377ff6a7b1551cafd7cdaa516fe1bb26e923166eb43",
-    "bytes": 602
+    "sha256": "8697a17cb8dc90003de7d2cedad08da5eeb33de5f1a7b824b14d6fa07dc42bd8",
+    "bytes": 1031
   },
   {
     "path": "brands/prichal/asset-manifest.json",
-    "sha256": "8f1dfcf7732a7353e5e93c0fc9b2a76c83913a63f4f243302fc6ea83c460d9ab",
-    "bytes": 14150
+    "sha256": "f826a82ac630cb8b6c04f9a1813d7485a8487ee61c1708fad18ded3101675518",
+    "bytes": 14151
   },
   {
     "path": "brands/prichal/fonts/JetBrains-Mono-0.ttf",
@@ -3491,22 +3491,22 @@
   },
   {
     "path": "brands/rekolekt/GUIDE.md",
-    "sha256": "cab2420f5818a93c4ed15e8c903a75413b9eb103b63e344e7be43e05f8400645",
-    "bytes": 4664
+    "sha256": "3af8db2808168229887b86ae2462e477d8978f0ee79a0afbe25dda8368a5c285",
+    "bytes": 5764
   },
   {
     "path": "brands/rekolekt/WEBSITE.md",
-    "sha256": "f2803592ddf8d621541518d21ca261a4cf55ac4abf2dd4e58c77101a06462b3c",
-    "bytes": 7997
+    "sha256": "680213fe26cad944bfdd67d9874ae0b507d5ed1f56cd6a8f797cfc26126bacc1",
+    "bytes": 8190
   },
   {
     "path": "brands/rekolekt/alt-text.md",
-    "sha256": "ebad915e9e46234532b8e42bc83024c3e3f6521546504796d73dac5c36e16feb",
-    "bytes": 587
+    "sha256": "209725c8dc759481c76717e5fb63634090e234dbb47c9f2d80f575a728db015d",
+    "bytes": 921
   },
   {
     "path": "brands/rekolekt/asset-manifest.json",
-    "sha256": "9ee68f207b4c6bc405353783cb333b84172705c01359543374de847831018b08",
+    "sha256": "fdcbb287d512f9cc5a78bd1d8e9fa91bc39ff648dcccae58bcd0adc51185e282",
     "bytes": 11861
   },
   {
@@ -3866,17 +3866,17 @@
   },
   {
     "path": "brands/subcult/GUIDE.md",
-    "sha256": "215ee277c7b5b4b7faf6666d05d1cb38dba1d723ac2e45b8df42049de452801a",
-    "bytes": 4897
+    "sha256": "cade468ea6791b22349ca024b09845d2e19cf9679cfaad7259d39e3fd40ec6af",
+    "bytes": 5874
   },
   {
     "path": "brands/subcult/alt-text.md",
-    "sha256": "f2e1b8d2808faa60d05c76dc2bac55513f86ef8d47ccdea7861190096c88a211",
-    "bytes": 573
+    "sha256": "ba845cabd7031c8bb2d9f20f0615dcfdb0fbfafbac34e70fb04623a79b7b4ef1",
+    "bytes": 860
   },
   {
     "path": "brands/subcult/asset-manifest.json",
-    "sha256": "63dbea76fce4c42158935394e339c2a6751768760c7fae95bf9ac8cd92b124ce",
+    "sha256": "ce19b90f8bfd6c473fe82b582b2bd08bc896156dd655dde4104cdd69d5c27239",
     "bytes": 12385
   },
   {
@@ -4256,17 +4256,17 @@
   },
   {
     "path": "brands/subcult-os/GUIDE.md",
-    "sha256": "02bc9ed0d8b2a4806a73347c7c1fbd0ade85feab50994e590e741e500c6ac7e8",
-    "bytes": 6112
+    "sha256": "bb12bf5920592f7838f61cd50d0a06f1d69923d1355a5029f7059c9cc1e0a9a2",
+    "bytes": 7213
   },
   {
     "path": "brands/subcult-os/alt-text.md",
-    "sha256": "81ccee2bfff923b5df1b3001b6c828d28e4083ea2ca4e5a5abc85126f03aad74",
-    "bytes": 597
+    "sha256": "0c88625f39e96c49b76780ccec14ed42e43833ede5668560bbf09f36ff3adbbd",
+    "bytes": 971
   },
   {
     "path": "brands/subcult-os/asset-manifest.json",
-    "sha256": "39b37d540f86ecd9476c01ea1fa90e472c95602451148d78af1c4395d3a4664e",
+    "sha256": "9a195c6c066633238489c5f135051386ec6ca9a72200655ef087e3af9dc0879d",
     "bytes": 15577
   },
   {
@@ -4681,17 +4681,17 @@
   },
   {
     "path": "brands/undertow/GUIDE.md",
-    "sha256": "1ffa09b031d4524e41e5f6815259f040a826121f8cdaa533b4cb80e575c0a459",
-    "bytes": 4262
+    "sha256": "1fb63df1f1deddd57e54f30552697f066d67be591332b065ee5806d02d1400b3",
+    "bytes": 5279
   },
   {
     "path": "brands/undertow/alt-text.md",
-    "sha256": "992b2eaa42edac4f0195a12c79c109810226483cd0942ead73d2e66ab69423b5",
-    "bytes": 583
+    "sha256": "a7e31ae880cd80c62804f5c8fe60aefa9cf387966ea27c104e7c37db87f050d3",
+    "bytes": 834
   },
   {
     "path": "brands/undertow/asset-manifest.json",
-    "sha256": "75cc47b918602cd1e3a38f6b1f95a73569a635fdb7540dd52bc207ead1b706f0",
+    "sha256": "15c8c299280f4d4f37c979185ebfdcbb1338dda29cb66ad1094bebe99f7133e7",
     "bytes": 12770
   },
   {
@@ -5051,13 +5051,13 @@
   },
   {
     "path": "brands.json",
-    "sha256": "99013f05d4e7dbfda77c2b8733951c941dd3b151f2effd3b3eeeaf1423898783",
-    "bytes": 11883
+    "sha256": "65a4139b2f4c6503d3079fad618dae7d34e29fb77feddc0b6ce81a56eaf51fb8",
+    "bytes": 11922
   },
   {
     "path": "build_packs.py",
-    "sha256": "2a5484de8ac21e613ff16f8f558884cfe1f9096fb915953f9ff97d9aa65e2a2e",
-    "bytes": 40227
+    "sha256": "8402a4a00df5803bff98dcbef427dd5e2cadbcd2d3d6c83557464f53e0d2b6ac",
+    "bytes": 52205
   },
   {
     "path": "clpr-directions/comparison.png",
@@ -6031,13 +6031,13 @@
   },
   {
     "path": "dedhed_assets.py",
-    "sha256": "c1a8a3417c6fda48d7bc5aa5af80ed47f8ee391e69ffc4cac7fda772671d9abb",
-    "bytes": 9462
+    "sha256": "a03efeda0b7e99cfe4533671c43b82315beb041f072935918f16acb499950225",
+    "bytes": 10558
   },
   {
     "path": "dedhed_product_assets.py",
-    "sha256": "deb7abb0ec723d12fa4fc17d0580277812d0e76c2e5898739b866445018839ed",
-    "bytes": 4203
+    "sha256": "f2785ac32a28a8b8731b9647df98fbfcc965cd7af76963f97183abe55f97e256",
+    "bytes": 4688
   },
   {
     "path": "design_helpers.py",
@@ -6046,8 +6046,8 @@
   },
   {
     "path": "finalize_left_field.py",
-    "sha256": "b1ffb520111b1143314ec07719923fcd74addfef59206f5501779c9d9124f529",
-    "bytes": 7133
+    "sha256": "e0fd96ff9aafa2f979ea49af4b986fd9308dd0d7f8d93235b89b357c10fbe835",
+    "bytes": 7137
   },
   {
     "path": "fontconfig.xml",
@@ -6326,13 +6326,13 @@
   },
   {
     "path": "hasanara_product.py",
-    "sha256": "679094feca91d0c16cd53c3f8635a63366e623da5e59f85723a1912fe05089cc",
-    "bytes": 2726
+    "sha256": "d991f84e7e65c2640876309b84e251504de8b6569b956d799075ad71e788a2c8",
+    "bytes": 3965
   },
   {
     "path": "index.html",
-    "sha256": "0c6db1c6987a227a4c1c1dfe5db4e86548b860f4178bd445c6326c48f56da65d",
-    "bytes": 19042
+    "sha256": "e114288741f68c3d0969b92ae34c99a5d256f200ce0c7347546c086c3f6d1b78",
+    "bytes": 19139
   },
   {
     "path": "kork_launch_assets.py",
@@ -6351,13 +6351,13 @@
   },
   {
     "path": "left_field_product.py",
-    "sha256": "bb75bea385b1a12e4ef1e670be5db4890e6bed447d1094589b67f8cade67dcd0",
-    "bytes": 2557
+    "sha256": "33baa3e9243bbf0ecf3464265d0caca7cf40740cb476df4c732b8254f1e5849a",
+    "bytes": 4527
   },
   {
     "path": "patchwork_product.py",
-    "sha256": "ddfc7834eb5bd0701402900641ab3dfdd14fcb433a889f1c4d7032f86759342f",
-    "bytes": 1421
+    "sha256": "4b9505de20cb216d6b2776fc83ed511855decc0f77d6c545470d198b5f21b4fa",
+    "bytes": 3388
   },
   {
     "path": "patrick-logo-study/A.png",
@@ -6406,8 +6406,8 @@
   },
   {
     "path": "patrick_patch.py",
-    "sha256": "5ac4673a27deb86c6cbad37a8919fcf517391db4a38ba72836f7412571ed76bb",
-    "bytes": 11652
+    "sha256": "02e2631af02dc6c3b71849c2afcbccc4c04b42ac026c6a5e67b27bd4445a0aff",
+    "bytes": 12097
   },
   {
     "path": "prichal_product_assets.py",
@@ -6646,8 +6646,8 @@
   },
   {
     "path": "starter-template/README.md",
-    "sha256": "a279c5ae4ddeea08eb14e24cdc00a774c66de30a9c2ba18f91001153e97d5402",
-    "bytes": 1335
+    "sha256": "451a39c0ac38dbef539a1f19956ac9dc6276cf7977a0fe4b9b5444a70b48e991",
+    "bytes": 1473
   },
   {
     "path": "starter-template/bootstrap.py",
@@ -6931,23 +6931,23 @@
   },
   {
     "path": "brands/tadooer/GUIDE.md",
-    "sha256": "1908ca950e7a97d0665f75018358a929362cbf5c22d46b40c8d78dcca31db1bc",
-    "bytes": 7780
+    "sha256": "0141ed17123f070ae7093479b6f859fcfdaac040fe7ea44162f68bcd1c92b3af",
+    "bytes": 9098
   },
   {
     "path": "brands/tadooer/alt-text.md",
-    "sha256": "58d16d13d5bf9df1323d65fc6e95ca951b018f0113c5baef6414c4963e14f91b",
-    "bytes": 598
+    "sha256": "2f32c324f4aa03b95688c98818ba7205c136d41fcb4fa22284f366604303ad7f",
+    "bytes": 1167
   },
   {
     "path": "brands/tadooer/asset-manifest.json",
-    "sha256": "a78d461ec0efe0ac97ceea27d2779d1c10a9dc1de9b854d77fb7bbb6a189a64b",
-    "bytes": 14800
+    "sha256": "9142aa8074e0158b17cfddca00ad5663ddcdfd14d80c656676f27f179dcba59f",
+    "bytes": 14801
   },
   {
     "path": "brands/tadooer/design-system/README.md",
-    "sha256": "275063888094cb677a114abf36a6bdf050a0625379771d799929127d0ee6d46f",
-    "bytes": 9117
+    "sha256": "5e623c6757ce789fcd877ab226cc74da628323cc48ea2105bf42915d1589a247",
+    "bytes": 9176
   },
   {
     "path": "brands/tadooer/design-system/examples/01-specimen.html",
@@ -6956,8 +6956,8 @@
   },
   {
     "path": "brands/tadooer/design-system/source-provenance.json",
-    "sha256": "e5745eb1b600e5b327efa2dce1148e7f00eb237ad23501507b7c36d7d7df226d",
-    "bytes": 1231
+    "sha256": "6f3e33c1de7146754bcfb6530c4f063553217ab1d15a0ed99f1e90a0ea358de0",
+    "bytes": 1804
   },
   {
     "path": "brands/tadooer/design-system/tokens.css",
@@ -7156,8 +7156,8 @@
   },
   {
     "path": "brands/tadooer/product/README.md",
-    "sha256": "fedaccc088d6ba64136adec9d1782f152de867ecde8fbd1bbbb22633fe6cd133",
-    "bytes": 438
+    "sha256": "c45dff7c6ef0c6ea6cc650e066afd5da83cf9ac4882b8b4f73137a582447470d",
+    "bytes": 473
   },
   {
     "path": "brands/tadooer/product/apple-touch-icon.png",
@@ -7366,13 +7366,13 @@
   },
   {
     "path": "tadooer_assets.py",
-    "sha256": "d0c6c290610c0eed1407eec512d2ea53498d44dc84006a7a7c5aaf56233228c8",
-    "bytes": 10576
+    "sha256": "991591d58026b7b9d725aa2c5fab3fa8ca3ced3c3fe8b089c9bf54af696d7818",
+    "bytes": 11517
   },
   {
     "path": "tadooer_product_assets.py",
-    "sha256": "e8b6ddd8229828bf051600ce5096a6788fef2c3d42512dd01d5b13e15f3838bb",
-    "bytes": 5462
+    "sha256": "9aa0e347aaece293c5ba22a9f9b06438b82a4c7f89480bb61ece25c6449122bd",
+    "bytes": 5987
   },
   {
     "path": "brands/tadooer/design-system/brand-assets.json",

@@ -30,11 +30,13 @@ HasanAra is a searchable archive of HasanAbi broadcasts. A visitor searches the 
 
 The name, tagline, description, notice and operator come from the brand profile. The home headline and section copy belong to the application and are shared with other Rekolekt archives.
 
+The table records the deployed copy word for word. New copy follows the HasanAra voice in [the voice guide](../../../../content/VOICE.md).
+
 Passage sharing is enabled. The community, clip export and AT Protocol features are disabled on this deployment. Sign-in is offered through Google and Twitch.
 
 ## Visual application
 
-The site uses the application's Broadsheet design: a newspaper front page with heavy ink rules, serif headlines and square corners. HasanAra's profile replaces only the accent colours. The night edition is the primary design; the paper edition follows the visitor's system preference until they use the toggle.
+The site uses the application's Broadsheet design, which is laid out like a newspaper front page: heavy ink rules, serif headlines and square corners. HasanAra's profile replaces only the accent colours. The night edition is the primary design; the paper edition follows the visitor's system preference until they use the toggle.
 
 | Role | Night edition | Paper edition |
 | --- | --- | --- |

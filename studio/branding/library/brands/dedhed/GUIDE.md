@@ -1,10 +1,34 @@
 # Dedhed — Brand and asset guide
 
-Selected direction: **A / The tape shelf**. Status: local production pack v1. Direction selection is not permission to publish a post or change a profile.
+Selected direction: **A / The tape shelf**. Status: local production pack v1. Selecting a direction does not approve a post or a profile change.
 
-Cream label paper, black shells, red brand tabs and a pine rack: a taper's cassette shelf for concert recordings and one shared radio station.
+A taper's cassette shelf for concert recordings and one shared radio station: cream label paper, black shells, red brand tabs and a pine rack.
 
-Identity for Dedhed, the private concert-tape library and shared radio station for Grateful Dead recordings. The system is called The Tape Shelf and comes from the taper cassette collections in the product repository's docs/inspo/: typed and handwritten spine labels, cream and coloured label stock, black and clear shells, red Maxell and TDK tabs, and pine racks. The user approved the cream paper backdrop on October 2, 2026. Use Dedhed in prose and the lowercase `dedhed` wordmark with its red record dot in artwork. The mark is an original cassette shell: label, red stripe, window, two hubs, screw holes and capstan notch. It stays legible at 32 pixels because the shell and hubs are solid shapes; monochrome variants turn the stripe to ink. Paper (#efe9d8) is the field and ink (#1f1d1a) carries text and the mark. Tab red (#c8102e, 5.3:1 on paper) is reserved for the record dot, brand tabs, the deck's top rule and the primary key. Pine (#c58b4e) is the rack behind spines, never a text colour. Liberation Serif stands in for the Times/Georgia typed-label voice, Liberation Mono for the typewriter voice (counters, lineage, eyebrows), Public Sans for interface prose and Barlow Condensed for brand tabs. Data such as band, date, set and venue is set in the typed voice; explanations are set in the interface voice. Sets are roman numerals. Coloured label stock groups tapes and never replaces text. The spine is the list item: a tab, a label and an end. The sample tape labels in this pack name real Grateful Dead shows the way a taper writes them; they are illustration, not catalog entries. The band name describes the archive's contents and implies no endorsement. Dedhed is a private pilot on a loopback address with no public domain; source availability never authorizes public relay, and artwork must not claim otherwise. Credits, track order and uncertain set boundaries are preserved in the product and are shown as warning stickers, not hidden.
+## Notes for this pack
+
+Dedhed is a private concert-tape library and shared radio station for Grateful Dead recordings. Its identity is called The Tape Shelf. It comes from the taper cassette collections photographed in the product repository's docs/inspo/: typed and handwritten spine labels, cream and colored label stock, black and clear shells, red Maxell and TDK tabs, and pine racks. The user approved the cream paper backdrop on October 2, 2026.
+
+### Name and mark
+
+Write Dedhed in prose. In artwork, use the lowercase `dedhed` wordmark with its red record dot. The mark is an original cassette shell: label, red stripe, window, two hubs, screw holes and capstan notch. The shell and hubs are solid shapes, so the mark stays legible at 32 pixels. Monochrome variants turn the stripe to ink.
+
+### Color
+
+Paper (#efe9d8) is the field. Ink (#1f1d1a) carries text and the mark. Tab red (#c8102e, 5.3:1 on paper) is reserved for the record dot, brand tabs, the deck's top rule and the primary key. Pine (#c58b4e) is the rack behind spines and is never a text color. Colored label stock groups tapes and never replaces text.
+
+### Type
+
+Liberation Serif stands in for the Times/Georgia typed-label voice. Liberation Mono is the typewriter voice for counters, lineage and eyebrows. Public Sans sets interface prose and Barlow Condensed sets brand tabs. Band, date, set and venue are data and go in the typed voice; explanations go in the interface voice. Sets are roman numerals. The spine is the list item: a tab, a label and an end.
+
+### Limits
+
+The sample tape labels in this pack name real Grateful Dead shows the way a taper writes them. They are illustration, not catalog entries. The band name describes what the archive holds and implies no endorsement. Dedhed is a private pilot on a loopback address with no public domain. A recording being available from its source never authorizes public relay, and artwork must not claim otherwise. The product keeps credits, track order and uncertain set boundaries, and shows the uncertainty as a warning sticker instead of hiding it.
+
+## Voice
+
+Dedhed copy sounds like a taper labelling spines at the kitchen table: date first, venue second, source notes in the shorthand a head would recognize. It is affectionate, unfussy and a little corny on purpose. Do not quote lyrics, use tie-dye clichés or "long strange trip", or suggest official endorsement or a public station. Every piece of copy says this is a private pilot.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md).
 
 ## Color roles
 
@@ -16,40 +40,60 @@ Identity for Dedhed, the private concert-tape library and shared radio station f
 | Secondary | #c58b4e | Supporting artwork |
 | Small label | #4c4842 | Metadata on the main canvas |
 
-Measured text/base contrast: **13.87:1**. Small-label/base contrast: **7.49:1**. Accent/base contrast: **4.85:1**. Use at least 4.5:1 for ordinary text and 3:1 for large text. Swatches are roles, not interchangeable text colors.
+Measured contrast against the base: text **13.87:1**, small label **7.49:1**, accent **4.85:1**. Ordinary text needs at least 4.5:1 and large text at least 3:1. Each swatch has one role. A color that works as a fill may not pass as text.
 
 ## Typography and spacing
 
-- Display: Liberation Serif, bold for headlines.
+- Display: Liberation Serif, bold, for headlines.
 - Body: Public Sans, regular and bold.
 - Labels: Liberation Mono, regular.
-- Layout spacing: 8, 16, 24, 32, 48, 64, 96 pixels.
-- Use one clear headline, one supporting point and one destination per promotional asset.
-- Keep at least one quarter of the mark height clear on all sides. Minimum mark width: 32 pixels on screen. Minimum horizontal lockup width: 220 pixels. Use the mark alone below that size.
-- Avoid stretching, skewing, adding effects to or redrawing the carried-forward product marks. Use the outlined logo exports when fonts are unavailable.
+- Spacing steps: 8, 16, 24, 32, 48, 64 and 96 pixels.
+- Give each promotional asset one headline, one supporting point and one destination.
+- Leave a quarter of the mark's height clear on every side. On screen the mark is at least 32 pixels wide and the horizontal lockup at least 220 pixels wide. Below that width, use the mark alone.
+- Do not stretch, skew, redraw or add effects to the product marks. Where the fonts are not installed, use the outlined logo exports.
 
 ## Files and editing
 
-`logos/` contains full-color primary/dark/light lockups and marks plus single-color variants, each with editable SVG, outlined SVG and transparent PNG. `social/` contains an X/Bluesky banner, a taller banner master, avatars, square/landscape/story layouts, quote and release templates, and a screenshot frame. `video/` contains title, thumbnail, end-card and transparent lower-third layouts with a caption style file. `fonts/` contains the required fonts and redistribution licenses. `tokens.json` and `tokens.css` record reusable design roles. `asset-manifest.json` records file dimensions and hashes.
+| Path | Contents |
+| --- | --- |
+| `logos/` | Primary, dark and light lockups and marks in full color, plus single-color variants. Each has an editable SVG, an outlined SVG and a transparent PNG. |
+| `social/` | X/Bluesky banner, taller banner master, avatar, square, landscape and story layouts, quote and release templates, and a screenshot frame. |
+| `video/` | Title, thumbnail, end-card and transparent lower-third layouts, with a caption style file. |
+| `fonts/` | The fonts the pack needs and their redistribution licenses. |
+| `tokens.json`, `tokens.css` | Reusable design roles. |
+| `asset-manifest.json` | File dimensions and hashes. |
 
-Editable SVG text needs the included fonts. Install them for editing, or use the outlined logo SVGs and rendered PNGs for placement. PNGs are exported from the editable SVG source. Re-render with the top-level `build_packs.py` and its fontconfig.xml; do not edit the PNG separately.
+Editable SVG text needs the included fonts. Install them to edit, or place the outlined logo SVGs and the rendered PNGs instead. The PNGs are exported from the editable SVGs. Re-render them with the top-level `build_packs.py` and its `fontconfig.xml`; do not edit a PNG on its own.
 
-The story artwork keeps the main message between y=250 and y=1670 on a 1080×1920 canvas. Check the destination’s current overlay and crop behavior in its composer. Keep critical banner content away from the bottom-left avatar area. These are layout guides, not a guarantee of every platform crop.
+The story artwork keeps its main message between y=250 and y=1670 on a 1080×1920 canvas. Keep critical banner content away from the bottom-left corner, where the avatar sits. These are layout guides, and platforms crop differently, so check the current overlay and crop in the destination's composer.
 
 ## Product site and design system
 
-`landing.html` is a static landing page for the product, built on the design-system tokens. It shows the masthead, the rack, the shared-radio panel and the pilot boundary. Its tape labels and station state are samples. `product/` holds web exports: `favicon.svg`, `apple-touch-icon.png`, `hero.svg` and `og.png` (1200×630, no URL). Text is outlined. Copy them into the product; regenerate here with `dedhed_product_assets.py` instead of editing the copies.
+`landing.html` is a static landing page for the product, built on the design-system tokens. It shows the masthead, the rack, the shared-radio panel and the pilot boundary. Its tape labels and station state are samples.
 
-`design-system/` is a copy of the proposal from the product repository: `README.md` (the reading of the source photographs, token groups, three type voices, motion rules and component list), `tokens.css` (every token as a CSS custom property plus the spine, rack, key, field, sticker, reel, counter, VU meter and masthead primitives) and four example pages under `examples/`: the specimen sheet, the rack, the J-card and the deck. `source-provenance.json` records the source path and SHA-256 of each copied file. The product repository stays the editing source for the design system; this copy is for the Studio gallery and the admin bundle.
+`product/` holds web exports: `favicon.svg`, `apple-touch-icon.png`, `hero.svg` and `og.png` (1200×630, no URL). Text is outlined. Copy them into the product. To change one, regenerate it here with `dedhed_product_assets.py`; do not edit the copies.
+
+`design-system/` is a copy of the proposal in the product repository's docs/design/:
+
+- `README.md`: what the source photographs show, the token groups, the type voices, motion rules and the component list.
+- `tokens.css`: every token as a CSS custom property, plus the spine, rack, key, field, sticker, reel, counter, VU meter and masthead primitives.
+- `examples/`: four pages, the specimen sheet, the rack, the J-card and the deck.
+- `source-provenance.json`: the source path and the SHA-256 of each file as it was copied on 2026-10-02.
+
+The product repository stays the editing source for the design system. This copy is for the Studio gallery and the admin bundle.
+
+On 2026-10-03 Studio reworded the sample and explanatory copy in `landing.html`, `design-system/README.md` and the example pages `01-specimen.html`, `02-rack.html` and `04-deck.html` to follow the voice guide. Since that date their wording differs from the product repository's. Tape and show data, tokens, class names and `tokens.css` are unchanged, and `03-jcard.html` is byte-identical to the source. `source-provenance.json` lists which copies differ. `dedhed_product_assets.py` re-copies the product files only when `DEDHED_SOURCE` is set, and doing so replaces the Studio wording.
 
 ## Screenshots and video
 
-Replace the screenshot placeholder with a real capture of a verified workflow. Show enough interface to establish context; crop credentials, private dashboards, unpublished material and personal data. Keep original recordings separately from edited exports.
+Replace the screenshot placeholder with a real capture of a verified workflow. Show enough of the interface to give context. Crop out credentials, private dashboards, unpublished material and personal data. Keep original recordings separate from edited exports.
 
-The video templates use a 1920×1080 canvas and a 96-pixel outer margin. Keep captions to two short lines. Use the supplied ASS style as a starting point, then check readability at phone size. Lower-thirds have a transparent background outside the panel. Avoid rapid flashing; use a short fade or hard cut for title/end cards. The eight-second preview is a template demonstration, not a product demonstration.
+The video templates use a 1920×1080 canvas with a 96-pixel outer margin. Keep captions to two short lines. Start from the supplied ASS style, then check that captions read at phone size. The lower third is transparent outside its panel. Use a short fade or a hard cut for title and end cards, and avoid rapid flashing. The eight-second preview demonstrates the template, not the product.
 
 ## Copy, alt text and sources
 
-Use verified product claims and exact approved copy. Quote/release template text is placeholder content and must be replaced. Describe the completed image in alt text, including the visible message; do not describe a screenshot placeholder as a working feature. `alt-text.md` supplies starter descriptions for the completed sample artwork.
+Use verified product claims and exact approved copy. Each product has its own voice, set out in [the voice guide](../../../../content/VOICE.md). A headline in the sample artwork shows the layout. It is approved copy only where this guide says so. The text in the quote and release templates is a placeholder and must be replaced.
 
-Reference: Dedhed design proposal docs/design/ in subculture-collective/dedhed (branch t3code/859bfaaf, head e5843b1, proposal files uncommitted on 2026-10-02), derived from the eleven cassette photographs in docs/inspo/; cream backdrop and shared masthead approved by the user on October 2, 2026. Source/asset observation dates are recorded in the reference above. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
+Alt text describes the finished image, including the words visible in it. Do not describe a screenshot placeholder as a working feature. `alt-text.md` has starter descriptions for the sample artwork.
+
+Reference: Dedhed design proposal docs/design/ in subculture-collective/dedhed (branch t3code/859bfaaf, head e5843b1, proposal files uncommitted on 2026-10-02), derived from the eleven cassette photographs in docs/inspo/; cream backdrop and shared masthead approved by the user on October 2, 2026. Where an observation date was recorded, it is in the reference above. Original files in the legacy library are preserved. The inventory's hashes identify bytes. They do not establish permission to publish third-party material.

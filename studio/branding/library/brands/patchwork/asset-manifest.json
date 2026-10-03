@@ -5,18 +5,18 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "bytes": 5248,
-      "sha256": "6beee4d0a65d84ade8b41db8d21daec55eb2478beac4b3fe0f0233381a523ceb"
+      "bytes": 6446,
+      "sha256": "4192bc616ea0d5a02195b9bc41fdde2ae9f87eeb1e0d5a46a5b0a8e6d9a4f7ba"
     },
     {
       "path": "WEBSITE.md",
-      "bytes": 10704,
-      "sha256": "edbef2717ee9953c217e411b9b551252221b2e3fe3755d24f0cbf235b87f2d6d"
+      "bytes": 10844,
+      "sha256": "31676d59dd91c8fc1f17e1227516f3f70507b218feb3ccfc08c54dff6a12c097"
     },
     {
       "path": "alt-text.md",
-      "bytes": 591,
-      "sha256": "33bd86758ad6915b1925df9c73ddefc3f12aadd41afd03b63d73ae9e17834d78"
+      "bytes": 948,
+      "sha256": "41a091c325fa9bc2ad53a05344ab9ebafd07ab15bab1e4d34f0a1528737d07f2"
     },
     {
       "path": "audits/contrast-report.json",
@@ -25,8 +25,8 @@
     },
     {
       "path": "audits/contrast-report.md",
-      "bytes": 3237,
-      "sha256": "34a17beba449dac2a1304e131d62c7bcf3f2e6f566e20b5b9027d35223333ad3"
+      "bytes": 3290,
+      "sha256": "318cc5618a5f81e807c2a434fcbed72e9732147536ce7c8a6316e4405becb7ed"
     },
     {
       "path": "components-preview.png",
@@ -40,8 +40,8 @@
     },
     {
       "path": "components.html",
-      "bytes": 1853,
-      "sha256": "eaf0cea1b0676b85fe2146b2232f39f5141ea3de4a10bb0c04bcce107a3be76a"
+      "bytes": 2006,
+      "sha256": "1e11d1627cdb6cee05f287e024194441c89f3b35044d709531256aa5d959bf1f"
     },
     {
       "path": "decorative/buttons.svg",
@@ -365,8 +365,8 @@
     },
     {
       "path": "textures/README.md",
-      "bytes": 730,
-      "sha256": "71b7238b31aab4c57a9090c41b17a80dcd284db1fa9f950b5acdbb555bf3b36a"
+      "bytes": 771,
+      "sha256": "06260c8d808ae54ee1cb704854c60d22e73403529e72e91bc7ac9be614b1c94f"
     },
     {
       "path": "textures/fabric.svg",

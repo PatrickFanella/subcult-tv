@@ -125,37 +125,60 @@ def post(d):
     return s
 
 
-GUIDE_NOTE = (
-    "Identity for Tadooer, a private, self-hosted task and calendar planner for one owner, with a web app, "
-    "desktop and mobile shells around the same server. The repository and service identifier stay "
-    "`productivity-suite`. This promotional direction, The plan and the one thing now, was proposed by Studio "
-    "on October 2, 2026 from the product's own design system; the owner has not reviewed the artwork, and the "
-    "headline and all supporting copy are sample text to be replaced. Surfaces and text are Catppuccin Mocha: "
-    "crust (#11111b) is the outer frame and the mark's tile, base (#1e1e2e) is the canvas, surface-0 (#252538) "
-    "carries task rows, and text (#e2e6f6, 13.2:1 on base) and subtext (#a6adc8, 7.4:1) carry copy and labels. "
-    "Accents are Dracula with one meaning each: purple (#bd93f9, 6.8:1) is the primary action, selection, time "
-    "blocks and the focus frame; pink (#ff79c6) is now (the current-time line, the live timer, the running focus "
-    "label) and nothing else; cyan (#8be9fd) is the keyboard focus ring, links and information; teal (#94e2d5) "
-    "is calendar authority. Never fill a large area with a full-strength accent; tinted fills are the accent at "
-    "13 to 14 percent over a surface. The mark is the suite icon: three list lines (the plan) and a check in a "
-    "purple disc (the one thing being done now) on a rounded crust tile. It stays legible at 32 pixels because "
-    "every shape is solid; monochrome variants drop the tile, draw the disc as a ring and set lines and check in "
-    "ink. In this pack the tile carries a line-strong (#3a3a54) border, one step above crust, so its shape stays "
-    "visible on dark canvases; the product icon itself has no border. The wordmark is Tadooer in Inter bold with -0.015em tracking, one capital; the app sets page titles at "
-    "weight 650 on the variable font, and this pack's static Inter 700 is the nearest bundled weight. Atkinson "
-    "Hyperlegible Mono carries anything that is a time, a count or a label, with tabular numerals. The planner "
-    "day is the signature motif: a time column, task rows on surface-0 with one row framed purple as the focus "
-    "session, the pink now line and a teal calendar block. Its row titles are placeholders, never real tasks. "
-    "Tadooer has no public domain and no sign-up: artwork must not suggest a public service, show a URL or "
-    "invite registration. The product's own documents never claim a feature that is not verified; copy here "
-    "follows the same rule. The app is dark only; light and monochrome lockups exist for print and foreign "
-    "backgrounds, not for the interface."
-)
+GUIDE_NOTE = """## Notes for this pack
+
+Tadooer is a private, self-hosted task and calendar planner for one owner: a web app, plus desktop and mobile shells around the same server. The repository and service identifier stay `productivity-suite`.
+
+### Status
+
+Studio proposed this promotional direction, The plan and the one thing now, on October 2, 2026 from the product's own design system. The owner has not reviewed the artwork. The headline and all supporting copy are sample text to be replaced.
+
+### Mark and wordmark
+
+The mark is the suite icon: three list lines (the plan) and a check in a purple disc (the one thing being done now) on a rounded crust tile. Every shape is solid, so it stays legible at 32 pixels. Monochrome variants drop the tile, draw the disc as a ring and set the lines and check in ink. In this pack the tile has a line-strong (#3a3a54) border, one step above crust, so its shape stays visible on dark canvases; the product icon has no border. The wordmark is Tadooer in Inter bold with -0.015em tracking and one capital. The app sets page titles at weight 650 on the variable font; this pack's static Inter 700 is the nearest bundled weight.
+
+### Color
+
+Surfaces and text are Catppuccin Mocha. Crust (#11111b) is the outer frame and the mark's tile, base (#1e1e2e) is the canvas and surface-0 (#252538) carries task rows. Text (#e2e6f6, 13.2:1 on base) carries copy and subtext (#a6adc8, 7.4:1) carries labels. Accents are Dracula, with one meaning each:
+
+- Purple (#bd93f9, 6.8:1): the primary action, selection, time blocks and the focus frame.
+- Pink (#ff79c6): now. The current-time line, the live timer and the running focus label, and nothing else.
+- Cyan (#8be9fd): the keyboard focus ring, links and information.
+- Teal (#94e2d5): calendar authority.
+
+Never fill a large area with a full-strength accent. Tinted fills are the accent at 13 to 14 percent over a surface.
+
+### Type
+
+Inter sets headlines and body copy. Atkinson Hyperlegible Mono, with tabular numerals, sets anything that is a time, a count or a label.
+
+### Planner day
+
+The signature motif is one day: a time column, task rows on surface-0 with one row framed purple as the focus session, the pink now line and a teal calendar block. Its row titles are placeholders, never real tasks.
+
+### Limits
+
+Tadooer has no public domain and no sign-up. Artwork must not suggest a public service, show a URL or invite registration. The product's own documents never claim a feature that is not verified, and copy here follows the same rule. The app is dark only; the light and monochrome lockups are for print and foreign backgrounds, not for the interface.
+
+## Voice
+
+The planner speaks for itself, quietly: one short sentence at a time, present tense. It is a private tool for one owner, so copy never recruits. Avoid "get more done", "supercharge", streaks, hustle, a URL and any sign-up invitation. Promotional copy in this pack stays labelled sample text until the owner reviews it.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md)."""
 
 PRODUCT_SECTION = """## Product web assets and design system
 
-`product/` holds exports for the web manifest and link previews: `favicon.svg` (outlined), `apple-touch-icon.png` (180), `icon-512.png` and `icon-maskable-512.png` (the mark inside the maskable safe zone on crust) and `og.png` (1200×630, no URL: the planner has no public domain). Copy them into `apps/web/public/`; regenerate here with `tadooer_product_assets.py` instead of editing the copies.
+`product/` holds exports for the web manifest and link previews:
 
-`design-system/` is a copy of `docs/design/` from the product repository: `README.md` (identity, direction, surfaces, accents, type, shape, component rules), `tokens.css` (every token as a CSS custom property) and `examples/01-specimen.html`. `source-provenance.json` records the source path, head commit and SHA-256 of each copied file, and names `apps/web/public/suite-icon.svg` as the mark source. The product repository stays the editing source for interface rules; promotional layouts are edited here.
+- `favicon.svg`, outlined.
+- `apple-touch-icon.png`, 180 pixels.
+- `icon-512.png` and `icon-maskable-512.png`. The maskable icon keeps the mark inside the safe zone on crust.
+- `og.png`, 1200×630. It has no URL because the planner has no public domain.
+
+Copy them into `apps/web/public/`. To change one, regenerate it here with `tadooer_product_assets.py`; do not edit the copies.
+
+`design-system/` is a copy of `docs/design/` from the product repository: `README.md` (identity, direction, surfaces, accents, type, shape, component rules), `tokens.css` (every token as a CSS custom property) and `examples/01-specimen.html`. `source-provenance.json` records the source path, the head commit and the SHA-256 of each file as it was copied on 2026-10-02, and names `apps/web/public/suite-icon.svg` as the mark source. The product repository stays the editing source for interface rules. Promotional layouts are edited here.
+
+On 2026-10-03 Studio tightened the prose in `design-system/README.md`. Since that date its wording differs from the product repository's; every token, value, measurement and rule is unchanged. `tokens.css`, `brand-assets.json` and `examples/01-specimen.html` are byte-identical to the source. `source-provenance.json` records the difference. `tadooer_product_assets.py` re-copies the product files only when `TADOOER_SOURCE` is set, and doing so replaces the Studio wording.
 
 """

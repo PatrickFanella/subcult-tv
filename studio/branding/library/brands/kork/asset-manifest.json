@@ -5,13 +5,13 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "8a23d4730695220c333a696689fe5345fbe4096e4b6c0a095c29fa59fccb5aaf",
-      "bytes": 5304
+      "sha256": "d8f5d7976c2a60936b0e5796028635bd5718141ce07a253e166c29d660d78c56",
+      "bytes": 6476
     },
     {
       "path": "alt-text.md",
-      "sha256": "b362c3317872e7668a86f97cd88bf8c868dd7aac5a381301d00d294c43d7040e",
-      "bytes": 568
+      "sha256": "97ca2bdbae047d5ad11c96df086a7e3c743e1c2c1dcb03b9b44a1634440b0b3c",
+      "bytes": 868
     },
     {
       "path": "fonts/ArchivoBlack-Regular.ttf",

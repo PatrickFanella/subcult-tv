@@ -37,5 +37,20 @@
       "sha256": "48b98672966bed5f524bc2bbb14f483449ea1561f115840d26c4da7ace6bedb2",
       "bytes": 12788
     }
-  ]
+  ],
+  "studio_edit": {
+    "date": "2026-10-03",
+    "note": "Studio reworded sample and explanatory copy to follow studio/content/VOICE.md. Tape and show data, tokens and class names are unchanged. The current bytes of each Studio copy are in the pack asset-manifest.json.",
+    "files_hashes_describe": "the product-repository files as copied on copied_at, not the edited Studio copies",
+    "differs_from_source_as_copied": [
+      "README.md",
+      "examples/01-specimen.html",
+      "examples/02-rack.html",
+      "examples/04-deck.html"
+    ],
+    "identical_to_source_as_copied": [
+      "examples/03-jcard.html",
+      "tokens.css"
+    ]
+  }
 }

@@ -153,23 +153,226 @@ def guide(d,dest):
  slug=d['slug'];c=contrast(d['fg'],d['bg']);ac=contrast(d['accent'],d['bg']);safe=contrast(d['safe_label'],d['bg'])
  extras={
  'patrick__eff':'Match the user-authored banner: Cascadia Mono Bold for the name and display headings; Cascadia Mono Regular for supporting copy; keep a 0.08em gap between the two underscores in the wordmark; Space Grotesk for handles and destination links; JetBrains Mono for labels. Use the user-edited PF mark for avatars and primary lockups, the clean bracketed waveform as an alternate, and tall variants as decorative art without changing their proportions. Large headings use lime lower-left and purple upper-right offsets; standalone waveforms use warm white in front with the same lime/purple offsets. Body copy and small labels remain flat. Monochrome marks simplify to brackets, PF and the dot. Preserve the social icons and links in references/patrick-banner-master.svg. Use purple for the waveform, rules and decorative fields. Purple on charcoal is below the small-text contrast target; use lime or warm white for labels. Keep the waveform as the signature. The selected banner uses a smaller solid warm-white PF mark with a purple waveform and no colored offsets on the logo. Banner alternatives are solid purple without waveform, solid warm white without waveform, and the original three-color mark. Other assets retain their existing logo styling. The personal photograph remains an optional editorial asset, not the default avatar.',
- 'rekolekt':'Use the lowercase `rekolekt` wordmark and `Rekolekt` in prose. Pair it with “by SUBCULT” for endorsement. Preserve the original bracketed waveform logo without geometry changes. Only the story template’s decorative waveform is replaced by transcript rows and timestamps. Keep source/context metadata attached to quoted passages. The product source now lives in `subculture-collective/rekolekt`; the contact route retains `product=transcript-create` for compatibility. See [the website design specification](WEBSITE.md) for the deployed landing page, its product copy and interaction states.',
- 'subcult':'This is the user-selected C direction. User-edited banner, logo banner and square-post masters are kept in references/subcult-edited-layouts/ and copied without alteration during rebuilds. The user-authored master mark is references/subcult-mark-master.svg: filled S and underscore, outlined C, a tilted green block, registration lines and a terminal square. Preserve its geometry, overlap and layer order. Use the master SVG for every variant; recolor only ink and accent for dark and light applications. In monochrome, outline the accent block so the letters remain legible. Use purple as the primary field, dark ink for headlines and acid green for blocks, registration marks and large emphasis. Use dark ink for text on green. Green on purple is decorative; it is below the small-text contrast target. Keep the six products visible as a coherent catalogue without recoloring their own identities.',
- 'clpr':'The user-edited play-triangle logo governs the assets. The user selected Clip stack for the main layouts and single clip card for the square post. The comparison variations remain available. These layouts replace the filmstrip and timeline motifs. Keep the muted-white wordmark, purple play triangle, dark field and green details. Earlier banners are preserved in references/. Use the captured play wordmark and play icon. Barlow Condensed sets titles; Barlow carries body copy; IBM Plex Mono carries labels. Crop corners, overlapping clip cards and purple play fields are the three graphic alternatives. Keep their geometry separate from screenshots of the product. clpr.tv applies this pack as of October 2, 2026; the Product site section below records how. The site writes the name in lowercase, `clpr`, in its interface text; Studio documents and artwork labels use CLPR. Keep the wordmark artwork as drawn. The earlier name Clipper and the clpr.gg domain are retired; the product lives at clpr.tv. The tally-dot logo that the site used before this pack is retired with them.',
- 'patchwork':'Warm paper and green are the base; bright tomato marks decorative patches and yellow marks highlights. Use darker action tomato (#b33e28) behind paper-colored button labels: 5.03:1 contrast. Keep the logo and decorative patches at their original tomato (#e85d3f). Use Fraunces for headings and Public Sans for body text. Stitched shapes are supporting artwork. Use the carried-forward P glyph in a tomato stitched patch. The mark, supporting patches, buttons and their offset shadows share the same asymmetric corner shape. Use larger, mildly uneven stitches, faint paper grain and a low-opacity fabric weave. The browser sample uses responsive SVG stitching with a dashed CSS fallback. Use soft green ink (#365448) for headings/body copy and a muted sage (#b2bba1) shadow. `components.html` shows working stitched buttons; `patch-components.css` keeps face and shadow corners identical. Product captures must preserve approximate public locations and omit private addresses.'+PW.GUIDE_NOTE,
- 'hasanara':'Match the current hasanara.tv red/PBS theme. Use Newsreader for editorial headings, Inter Tight for body copy and JetBrains Mono for metadata. Keep the actual PBS artwork. The local older lime theme is not this pack’s reference. Quotes need their original passage, attribution and timestamp.'+HA.GUIDE_NOTE,
- 'subcult-os':'Matches the live os.subcult.tv design system (the Subcults terminal foundation, selected by the user on September 30, 2026; source of truth: subcult-os contracts/design/tokens.json). Space Mono is the only typeface: bold for headings, buttons and labels, regular for body copy, uppercase with wide tracking for labels. Bold is the heaviest weight. Corners are square everywhere; panels separate with visible borders, not shadows. Purple is the action and artwork color: purple fills carry white text (5.7:1), but purple text on black is below the small-text target, so labels use cyan. Cyan also marks focus. Status colors (green, amber, red, cyan) mark states and always come with words. Event artwork stays immersive and black. The site sets the OS lettermark with its cyan cursor block (`product/mark-tight-outlined.svg`) beside the wordmark in live Space Mono bold, and uses the mark as its favicon and app icon.',
- 'left-field':'Use Left Field in prose, LEFT FIELD for the wordmark, and left-field for repository/package identifiers. Keep the app palette: paper #f4f0e6, ink #16221f, rust #a33c26 and wash #e5eadc. Liberation Serif is a bundled portable editorial alternative to the app Georgia stack; Public Sans replaces Arial in pack exports, while JetBrains Mono carries source labels. The original geometric LF monogram combines a left-anchored L and an open F on the same baseline. A rust-red square fills their intersection. The square is not a ballot, result or certification symbol. Source rows are abstract graphic motifs without scores or counts. Show actual rankings only with their version, scope, date, limitations and source. Never turn a provisional score into an election prediction or imply DSA endorsement. The user approved the field-ledger direction and LF mark with the F reaching the L baseline and the red square at their intersection. The site is public at left-field.subcult.tv and names SUBCULT as its publisher. Dark variants use paper ink; light and primary variants use dark ink. Use the monochrome mark when color reproduction is uncertain. Preserve database names, receipt namespaces and historical source identifiers.'+LFP.GUIDE_NOTE,
- 'kork':'Identity for the self-serve links-page service, code name zelda. On October 2, 2026 the user selected direction A (pinned card) and the name Kork over Corkboard; the comparison is in corkboard-directions/. A services marketplace also trades as Kork (kork.app); this was noted to the user, who chose the name anyway. The mark is an original pinned paper card: two link rows on a tilted card under a cobalt pushpin. It stays legible at 32 pixels because the rows and pin are solid shapes. Cork (#d4a56c) is the field, ink (#1b130c) carries all text, paper (#fbf6ec) fills cards, and cobalt (#2340e8) is reserved for pins and large emphasis: cobalt on cork is 3.2:1, so never use it for small text. Archivo Black sets the wordmark and headlines, Atkinson Hyperlegible Next carries body copy and JetBrains Mono carries labels, the shared SUBCULT cue. Pinned cards carry placeholder destinations (@yourname, $yourname, a decorative QR glyph that encodes nothing); do not show third-party platform logos in brand artwork. Cards tilt between -7 and +7 degrees with a hard ink shadow; keep at least one card straight enough to read. The product page itself lets users pick any theme, so this identity applies to the service, not to user pages.',
- 'prichal':'Identity for Prichal, managed AT Protocol PDS hosting (repository subculture-collective/prichal). The user chose the name Prichal on October 1, 2026: Russian for pier or berth, and the ISS docking node where Soyuz ships attach. The pronunciation is the Russian one (pree-CHAHL); copy never explains or corrects it. The mark is a docking node: a sphere with its equator in perspective and four flanged collars. The red flange on the right is the occupied port, the customer account. Never rotate it, recolor single collars, or add a centre dot or ring: with the cross of ports that reads as a gun sight. Mono variants turn the flange to ink. Paper (#f4f1e9) is the field, ink (#1c2230) carries text and the mark, signal red (#b23a26, 5.28:1 on paper) marks the occupied port, rules and large emphasis, and steel (#5d6675, 5.14:1) carries labels. In product interfaces red is reserved for the mark so it never reads as an error. Oswald Bold sets the uppercase wordmark and display headings, Public Sans carries body copy and JetBrains Mono carries labels and the port strip. The Cyrillic ПРИЧАЛ is a small secondary label, never a replacement for the Latin name. Engineering-drawing details (tick scale, hairlines, PORT 01–06 strip) stay light. Tagline: Your server. We keep it running. Call to action: Dock your account. We handle the rest. Do not market leaving, privacy, censorship resistance or unverified capabilities; Prichal is a private preview at prichal.subcult.tv and not open for sign-up. Messaging by audience and the plain-language table live in the product repository at brand/GUIDE.md.',
- 'undertow':'Use the active editor theme: pink/cyan/lilac on dark violet, square geometry and hard offsets. Keep the existing spectrum favicon. Liberation Mono is the bundled portable alternative to the site’s system monospace stack. Chromatic offsets are for large titles, never body copy.',
+ 'rekolekt':'''## Notes for this pack
+
+### Name and mark
+
+The wordmark is lowercase `rekolekt`; write Rekolekt in prose and pair the name with "by SUBCULT" for endorsement. Keep the original bracketed waveform logo and do not change its geometry. Transcript rows and timestamps replace the decorative waveform in the story template only.
+
+### Limits
+
+A quoted passage keeps its source and context metadata.
+
+### Source and site
+
+The product source lives in `subculture-collective/rekolekt`. The contact route keeps `product=transcript-create` for compatibility. [The website design specification](WEBSITE.md) records the deployed landing page, its product copy and its interaction states.
+
+## Voice
+
+Rekolekt copy is written by the archivist who built the catalogue and knows where everything is. It reads like a finding aid: quiet, exact and slightly dry, in longer sentences that contain the mechanism. The readers maintain collections, so address them as peers and do not sell. Name the parts: recording, transcript, timestamp, passage, source link. Say that Rekolekt is software you deploy, that HasanAra is the running example, and that it is not a hosted upload service. Leave out "unlock your content", AI enthusiasm and any hint of a sign-up flow that does not exist.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md). Facts come from [the claims register](../../../../content/social/Product%20Claims%20Register.md), entry C-REKOLEKT.''',
+ 'subcult':'''## Notes for this pack
+
+### Direction and masters
+
+This is the C direction, selected by the user. The user-edited banner, logo banner and square-post masters are kept in `references/subcult-edited-layouts/`. Rebuilds copy them without alteration.
+
+### Mark
+
+The master mark is `references/subcult-mark-master.svg`, drawn by the user: a filled S and underscore, an outlined C, a tilted green block, registration lines and a terminal square.
+
+- Preserve its geometry, overlap and layer order.
+- Build every variant from the master SVG. For dark and light applications, recolor only the ink and the accent.
+- In monochrome, outline the accent block so the letters stay legible.
+
+### Color
+
+- Purple is the primary field.
+- Dark ink sets headlines and any text on green.
+- Acid green is for blocks, registration marks and large emphasis. Green on purple is decorative. It is below the small-text contrast target.
+
+### Product catalogue
+
+Keep the six products visible as one catalogue, each in its own identity. Do not recolor them to match SUBCULT.
+
+## Voice
+
+SUBCULT speaks as the collective, in the first person plural, like a zine masthead: declarative, a little confrontational about platforms and specific about the work. It lists real jobs, such as clips, archives, mutual aid and the door at a show. It names what it is against only when it can name what it built instead. Leave out startup cheer, mission statements, "community-driven" and any promise about the whole umbrella.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md). Facts come from [the claims register](../../../../content/social/Product%20Claims%20Register.md).''',
+ 'clpr':'''## Notes for this pack
+
+### Logo and layouts
+
+The user-edited play-triangle logo governs every asset. Use the captured play wordmark and play icon, and keep the wordmark artwork as drawn.
+
+The user selected Clip stack for the main layouts and the single clip card for the square post. These layouts replace the filmstrip and timeline motifs. The comparison variations remain available, and earlier banners are preserved in `references/`.
+
+### Color and type
+
+- Keep the muted-white wordmark, the purple play triangle, the dark field and the green details.
+- Barlow Condensed sets titles, Barlow sets body copy and IBM Plex Mono sets labels.
+
+### Graphics
+
+Crop corners, overlapping clip cards and purple play fields are the three graphic alternatives. Keep their geometry separate from screenshots of the product.
+
+### Name and site
+
+- The site writes the name in lowercase, `clpr`, in its interface text. Studio documents and artwork labels use CLPR.
+- clpr.tv applies this pack as of October 2, 2026. The Product site section below records how.
+- The earlier name Clipper and the clpr.gg domain are retired. The product lives at clpr.tv. The tally-dot logo that the site used before this pack is retired with them.
+
+## Voice
+
+clpr sounds like a regular in chat who clips everything and remembers which stream it was: fast, amused and comfortable in lowercase. It talks about clips the way viewers do (the bit, the fail, the one from last Tuesday) and uses "clip" as a verb. Fragments are fine. A page gets one exclamation mark at most. Leave out "content", "discover", "moments that matter" and emote spam.
+
+Supported claims are finding Twitch clips by creator, topic and tag, saving them to playlists and sharing them. Watch parties, a live feed, stream clip creation and mirroring are disabled at launch, so copy does not mention them.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md). Facts come from [the claims register](../../../../content/social/Product%20Claims%20Register.md), entry C-CLPR.''',
+ 'patchwork':PW.GUIDE_NOTE,
+ 'hasanara':HA.GUIDE_NOTE,
+ 'subcult-os':'''## Notes for this pack
+
+The pack matches the live os.subcult.tv design system: the Subcults terminal foundation, selected by the user on September 30, 2026. The source of truth is `contracts/design/tokens.json` in the subcult-os repository.
+
+### Type
+
+Space Mono is the only typeface. Bold sets headings, buttons and labels, and it is the heaviest weight. Regular sets body copy. Labels are uppercase with wide tracking.
+
+### Shape
+
+Corners are square everywhere. Panels separate with visible borders, not shadows.
+
+### Color
+
+- Purple is the action and artwork color. Purple fills carry white text (5.7:1). Purple text on black is below the small-text target, so labels use cyan.
+- Cyan also marks focus.
+- Status colors (green, amber, red, cyan) mark states and always come with words.
+- Event artwork stays immersive and black.
+
+### Mark on the site
+
+The site sets the OS lettermark with its cyan cursor block (`product/mark-tight-outlined.svg`) beside the wordmark in live Space Mono bold. It uses the mark as its favicon and app icon.
+
+## Voice
+
+Subcult OS sounds like the stage manager on comms forty minutes before doors: a run sheet, clipped, time-stamped and role-first, with the dry humor of someone who has run a door from a paper list. Copy can be set as cues, such as "19:00 doors". Name the roles and the moments: load-in, doors, the list, close-out. Say that the software is in development and built around free ticket reservations.
+
+Leave out "event management platform" and nightlife glamour. Promise nothing about paid ticketing, payouts, app stores or a production service.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md). Facts come from [the claims register](../../../../content/social/Product%20Claims%20Register.md), entry C-OS.''',
+ 'left-field':LFP.GUIDE_NOTE,
+ 'kork':'''## Notes for this pack
+
+Kork is the identity for the self-serve links-page service, code name zelda. The identity applies to the service. The product lets users pick any theme for their own pages, so it does not apply to user pages.
+
+### Name and selection
+
+On October 2, 2026 the user selected direction A (pinned card) and the name Kork over Corkboard. The comparison is in `corkboard-directions/`. A services marketplace also trades as Kork (kork.app). This was noted to the user, who chose the name anyway.
+
+### Mark
+
+The mark is an original pinned paper card: two link rows on a tilted card under a cobalt pushpin. The rows and the pin are solid shapes, so it stays legible at 32 pixels.
+
+### Color
+
+| Color | Role |
+| --- | --- |
+| Cork #d4a56c | The field |
+| Ink #1b130c | All text |
+| Paper #fbf6ec | Card fill |
+| Cobalt #2340e8 | Pins and large emphasis only. Cobalt on cork is 3.2:1, so never use it for small text. |
+
+### Type
+
+Archivo Black sets the wordmark and headlines. Atkinson Hyperlegible Next sets body copy. JetBrains Mono sets labels, the cue shared across SUBCULT packs.
+
+### Pinned cards
+
+- Cards carry placeholder destinations: @yourname, $yourname and a decorative QR glyph that encodes nothing.
+- Do not show third-party platform logos in brand artwork.
+- Cards tilt between -7 and +7 degrees and cast a hard ink shadow. Keep at least one card straight enough to read.
+
+## Voice
+
+Kork sounds like a hand-lettered flyer written by whoever keeps the corkboard by the venue door tidy: chummy, and a little corny on purpose. Lead with the plain offer: a free link page, payment buttons that go to the creator's own accounts, and no cut. Give the real numbers (92 services, ten themes) and state the 24-hour wait before a new account can publish. The product's list is long, so lists can run long.
+
+A page gets one pin pun, and exclamation marks come one at a time. Leave out "link in bio tool", creator-economy talk, custom domains, paid plans, prices and user counts.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md). Facts come from [the claims register](../../../../content/social/Product%20Claims%20Register.md), entry C-KORK.''',
+ 'prichal':'''## Notes for this pack
+
+Prichal is managed AT Protocol PDS hosting (repository `subculture-collective/prichal`).
+
+### Name
+
+The user chose the name Prichal on October 1, 2026. It is Russian for pier or berth, and the name of the ISS docking node where Soyuz ships attach. The pronunciation is the Russian one (pree-CHAHL). Copy never explains or corrects it.
+
+The Cyrillic ПРИЧАЛ is a small secondary label, never a replacement for the Latin name.
+
+### Mark
+
+The mark is a docking node: a sphere with its equator in perspective and four flanged collars. The red flange on the right is the occupied port, the customer account.
+
+- Never rotate the mark or recolor single collars.
+- Never add a centre dot or ring. With the cross of ports, that reads as a gun sight.
+- Mono variants turn the red flange to ink.
+
+### Color
+
+| Color | Role |
+| --- | --- |
+| Paper #f4f1e9 | The field |
+| Ink #1c2230 | Text and the mark |
+| Signal red #b23a26 (5.28:1 on paper) | The occupied port, rules and large emphasis |
+| Steel #5d6675 (5.14:1) | Labels |
+
+In product interfaces red is reserved for the mark, so it never reads as an error.
+
+### Type and drawing details
+
+Oswald Bold sets the uppercase wordmark and display headings. Public Sans sets body copy. JetBrains Mono sets labels and the port strip.
+
+The engineering-drawing details (tick scale, hairlines, PORT 01–06 strip) stay light.
+
+### Copy
+
+- Tagline: Your server. We keep it running.
+- Call to action: Dock your account. We handle the rest.
+- Prichal is a private preview at prichal.subcult.tv and is not open for sign-up.
+- Do not market leaving, privacy, censorship resistance or unverified capabilities.
+
+Messaging by audience and the plain-language table live in the product repository at `brand/GUIDE.md`.
+
+## Voice
+
+Prichal sounds like ground control speaking in plain words: a calm operations desk, procedural and reassuring, in short declaratives without jargon. It explains what a server is to someone who has never needed to know. The docking idea lives in two words, dock and port, and nowhere else, so there is no "liftoff" and no "mission". Give a protocol acronym a plain gloss or leave it out. Say that posts are public wherever the server runs.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md).''',
+ 'undertow':'''## Notes for this pack
+
+- Use the active editor theme: pink, cyan and lilac on dark violet, square geometry and hard offsets.
+- Keep the existing spectrum favicon.
+- Liberation Mono is the bundled portable alternative to the site's system monospace stack.
+- Chromatic offsets are for large titles, never body copy.
+
+## Voice
+
+Undertow sounds like the friend who makes visuals for everyone's releases and has opinions about codecs: liner notes crossed with a plugin changelog. A headline can be sensory and loud. The body is specific and names the parts: Milkdrop, spectrum, VU meters, LRC, SRT and VTT lyrics, 16:9, 9:16 and 1:1 layouts, H.264 MP4. Say that rendering happens in the browser and that performance depends on the device.
+
+Leave out "bring your music to life", "stunning visuals" and guaranteed speed. Live billing is off, so copy does not offer cloud plans for sale.
+
+The full voice and its sample lines are in [the voice guide](../../../../content/VOICE.md). Facts come from [the claims register](../../../../content/social/Product%20Claims%20Register.md), entry C-UNDERTOW.''',
  'dedhed':DH.GUIDE_NOTE,
  'tadooer':TD.GUIDE_NOTE
  }[slug]
- product='`product/` contains exports at their final sizes for the Subcult OS site and app. Copy them as they are; do not crop, resize or recolor them downstream.\n\n| File | Use |\n| --- | --- |\n| `mark-tight.svg`, `mark-tight-outlined.svg` | The mark cropped to its frame, for favicons and for placement beside live text. Add the quarter-height clear space in layout. |\n| `favicon-32.png`, `favicon-48.png` | Raster favicons for the site and for Expo web. |\n| `app-icon.png` | 1024×1024 opaque store and iOS icon. |\n| `apple-touch-icon.png` | 180×180 opaque home-screen icon for the site. |\n| `android-adaptive-foreground.png` | 1024×1024 transparent adaptive-icon foreground. Pair it with the base color #000000 as the adaptive background. |\n| `android-adaptive-monochrome.png` | 1024×1024 single-color layer for Android themed icons. |\n| `splash-icon.png` | 1024×1024 transparent mark for a splash screen on the base color. |\n| `og.png` | 1200×630 link preview: the X/Bluesky banner centered on the base color. Its headline needs owner approval before it ships on a site (subcult-os issue 201). |\n\n' if slug=='subcult-os' else "## Product site\n\nclpr.tv has used this pack since October 2, 2026 (clpr `main` at `eae90c84`, PRs 37 and 38). Studio stays the source for the marks. Change a mark here first, copy its path data to the site unchanged, then run `node scripts/render-brand-assets.mjs` in the site's `frontend/` to rebuild its icons, social card and extension icons. The site records the copied sources and their hashes in `docs/brand-provenance.json` and its interface rules in `docs/design-system.md` (Tally / Ultraviolet).\n\n| Site asset | Built from | How it is applied |\n| --- | --- | --- |\n| Header wordmark | `references/clpr-play-wordmark.svg` | Path data and transforms unchanged; Inkscape editor attributes removed. The header shows it 32 pixels tall, about 70 pixels wide. That is below the 220-pixel lockup minimum and is a deliberate exception for a 56-pixel header. |\n| Play mark | `references/clpr-play-icon.svg` | Outer triangle #291d47, inner triangle #8c5cff. Used alone on the offline page. |\n| App icon, favicon and PWA icons | Play mark on #0e0c13 | The mark's box is 62.5% of the icon, as in `social/avatar`. The maskable icon uses 53% to stay inside the safe zone, and the 64-pixel favicon uses 81% so the mark survives at 16 pixels. |\n| Link preview, 1200×630 | Clip stack layout | Wordmark, two-line headline, three clip cards (fill #211b30, back cards ruled #493c64, front card ruled #8c5cff), a #3ddc97 progress line, a #8c5cff rule and `clpr.tv` in IBM Plex Mono. It keeps the site's existing headline, The moments shaping live culture, not this pack's sample headline. |\n| Browser extension icons | The app icon | Rendered by the same site script at 16, 32, 48 and 128 pixels. The earlier icon, a letter C on Twitch's purple #9146ff, is retired. |\n\nThe interface adds roles that this pack's tokens do not define. They belong to the site, not to promotional artwork:\n\n| Role | Color | Use |\n| --- | --- | --- |\n| Panel | #17141f | Cards, menus and empty states on the base |\n| Primary button | #a07cff | Filled controls, always with base-colored text. White on the accent measures about 4.1:1 and is not used. |\n| Link and focus | #b79bff | Links, small accent text and the focus ring |\n| Warning | #ffc24a | Warnings |\n| Info | #9fd8ff | Information and downvotes |\n| Error | #ff6b78 | Errors and destructive actions |\n\n- Corners are near-square, 0 to 4 pixels. Avatars and status dots stay round.\n- Headings are uppercase Barlow Condensed at weight 700. Rank numerals and page-level display type use weight 800.\n- Crop corners are the only pack graphic inside the interface: the `.crop-corners` utility draws 2-pixel corners with 20-pixel arms on empty and placeholder panels. The clip stack stays in promotional images so it is not mistaken for real clip cards. Play controls on thumbnails are a square button, not the brand mark.\n- Information pages such as About and Support follow the feed: a mono label, a display heading, ruled rows and real clips. They do not use icon tiles, glow backgrounds or checkmark lists.\n- Upvote is the action on a clip or comment. Uppies is the reputation score a member earns from upvotes.\n- Retired on the site: the tally-dot logo, the violet rule across the top of promotional cards, and the timecode burned into the link preview. The 3-pixel violet rule on active panels and the duration label on thumbnails remain interface conventions.\n\n" if slug=='clpr' else DH.PRODUCT_SECTION if slug=='dedhed' else TD.PRODUCT_SECTION if slug=='tadooer' else ''
+ product='## Product exports\n\n`product/` holds exports at their final sizes for the Subcult OS site and app. Copy them as they are. Do not crop, resize or recolor them downstream.\n\n| File | Use |\n| --- | --- |\n| `mark-tight.svg`, `mark-tight-outlined.svg` | The mark cropped to its frame, for favicons and for placement beside live text. Add the quarter-height clear space in layout. |\n| `favicon-32.png`, `favicon-48.png` | Raster favicons for the site and for Expo web. |\n| `app-icon.png` | 1024×1024 opaque store and iOS icon. |\n| `apple-touch-icon.png` | 180×180 opaque home-screen icon for the site. |\n| `android-adaptive-foreground.png` | 1024×1024 transparent adaptive-icon foreground. Pair it with the base color #000000 as the adaptive background. |\n| `android-adaptive-monochrome.png` | 1024×1024 single-color layer for Android themed icons. |\n| `splash-icon.png` | 1024×1024 transparent mark for a splash screen on the base color. |\n| `og.png` | 1200×630 link preview: the X/Bluesky banner centered on the base color. Its headline needs owner approval before it ships on a site (subcult-os issue 201). |\n\n' if slug=='subcult-os' else "## Product site\n\nclpr.tv has used this pack since October 2, 2026 (clpr `main` at `eae90c84`, PRs 37 and 38). Studio stays the source for the marks. Change a mark here first, copy its path data to the site unchanged, then run `node scripts/render-brand-assets.mjs` in the site's `frontend/` to rebuild its icons, social card and extension icons. The site records the copied sources and their hashes in `docs/brand-provenance.json` and its interface rules in `docs/design-system.md` (Tally / Ultraviolet).\n\n| Site asset | Built from | How it is applied |\n| --- | --- | --- |\n| Header wordmark | `references/clpr-play-wordmark.svg` | Path data and transforms unchanged; Inkscape editor attributes removed. The header shows it 32 pixels tall, about 70 pixels wide. That is below the 220-pixel lockup minimum and is a deliberate exception for a 56-pixel header. |\n| Play mark | `references/clpr-play-icon.svg` | Outer triangle #291d47, inner triangle #8c5cff. Used alone on the offline page. |\n| App icon, favicon and PWA icons | Play mark on #0e0c13 | The mark's box is 62.5% of the icon, as in `social/avatar`. The maskable icon uses 53% to stay inside the safe zone, and the 64-pixel favicon uses 81% so the mark survives at 16 pixels. |\n| Link preview, 1200×630 | Clip stack layout | Wordmark, two-line headline, three clip cards (fill #211b30, back cards ruled #493c64, front card ruled #8c5cff), a #3ddc97 progress line, a #8c5cff rule and `clpr.tv` in IBM Plex Mono. It keeps the site's existing headline, The moments shaping live culture, not this pack's sample headline. |\n| Browser extension icons | The app icon | Rendered by the same site script at 16, 32, 48 and 128 pixels. The earlier icon, a letter C on Twitch's purple #9146ff, is retired. |\n\nThe interface adds roles that this pack's tokens do not define. They belong to the site, not to promotional artwork:\n\n| Role | Color | Use |\n| --- | --- | --- |\n| Panel | #17141f | Cards, menus and empty states on the base |\n| Primary button | #a07cff | Filled controls, always with base-colored text. White on the accent measures about 4.1:1 and is not used. |\n| Link and focus | #b79bff | Links, small accent text and the focus ring |\n| Warning | #ffc24a | Warnings |\n| Info | #9fd8ff | Information and downvotes |\n| Error | #ff6b78 | Errors and destructive actions |\n\n- Corners are near-square, 0 to 4 pixels. Avatars and status dots stay round.\n- Headings are uppercase Barlow Condensed at weight 700. Rank numerals and page-level display type use weight 800.\n- Crop corners are the only pack graphic inside the interface: the `.crop-corners` utility draws 2-pixel corners with 20-pixel arms on empty and placeholder panels. The clip stack stays in promotional images so it is not mistaken for real clip cards. Play controls on thumbnails are a square button, not the brand mark.\n- Information pages such as About and Support follow the feed: a mono label, a display heading, ruled rows and real clips. They do not use icon tiles, glow backgrounds or checkmark lists.\n- Upvote is the action on a clip or comment. Uppies is the reputation score a member earns from upvotes.\n- Retired on the site: the tally-dot logo, the violet rule across the top of promotional cards, and the timecode burned into the link preview. The 3-pixel violet rule on active panels and the duration label on thumbnails remain interface conventions.\n\n" if slug=='clpr' else DH.PRODUCT_SECTION if slug=='dedhed' else TD.PRODUCT_SECTION if slug=='tadooer' else ''
+ observed='Site and asset observations were made October 1, 2026.' if slug in ['subcult','undertow','kork','prichal','patchwork','hasanara'] else 'Where an observation date was recorded, it is in the reference above.'
  doc=f'''# {d['brand']} — Brand and asset guide
 
-Selected direction: **{d['variant']} / {d['name']}**. Status: local production pack v1. Direction selection is not permission to publish a post or change a profile.
+Selected direction: **{d['variant']} / {d['name']}**. Status: local production pack v1. Selecting a direction does not approve a post or a profile change.
 
 {d['description']}
 
@@ -185,44 +388,69 @@ Selected direction: **{d['variant']} / {d['name']}**. Status: local production p
 | Secondary | {d['secondary']} | Supporting artwork |
 | Small label | {d['safe_label']} | Metadata on the main canvas |
 
-Measured text/base contrast: **{c:.2f}:1**. Small-label/base contrast: **{safe:.2f}:1**. Accent/base contrast: **{ac:.2f}:1**. Use at least 4.5:1 for ordinary text and 3:1 for large text. Swatches are roles, not interchangeable text colors.
+Measured contrast against the base: text **{c:.2f}:1**, small label **{safe:.2f}:1**, accent **{ac:.2f}:1**. Ordinary text needs at least 4.5:1 and large text at least 3:1. Each swatch has one role. A color that works as a fill may not pass as text.
 
 ## Typography and spacing
 
-- Display: {d['display']}, bold for headlines.
+- Display: {d['display']}, bold, for headlines.
 - Body: {d['body']}, regular and bold.
 - Labels: {d['label']}, regular.
-- Layout spacing: 8, 16, 24, 32, 48, 64, 96 pixels.
-- Use one clear headline, one supporting point and one destination per promotional asset.
-- Keep at least one quarter of the mark height clear on all sides. Minimum mark width: 32 pixels on screen. Minimum horizontal lockup width: 220 pixels. Use the mark alone below that size.
-- Avoid stretching, skewing, adding effects to or redrawing the carried-forward product marks. Use the outlined logo exports when fonts are unavailable.
+- Spacing steps: 8, 16, 24, 32, 48, 64 and 96 pixels.
+- Give each promotional asset one headline, one supporting point and one destination.
+- Leave a quarter of the mark's height clear on every side. On screen the mark is at least 32 pixels wide and the horizontal lockup at least 220 pixels wide. Below that width, use the mark alone.
+- Do not stretch, skew, redraw or add effects to the product marks. Where the fonts are not installed, use the outlined logo exports.
 
 ## Files and editing
 
-`logos/` contains full-color primary/dark/light lockups and marks plus single-color variants, each with editable SVG, outlined SVG and transparent PNG. `social/` contains an X/Bluesky banner, a taller banner master, avatars, square/landscape/story layouts, quote and release templates, and a screenshot frame. `video/` contains title, thumbnail, end-card and transparent lower-third layouts with a caption style file. `fonts/` contains the required fonts and redistribution licenses. `tokens.json` and `tokens.css` record reusable design roles. `asset-manifest.json` records file dimensions and hashes.
+| Path | Contents |
+| --- | --- |
+| `logos/` | Primary, dark and light lockups and marks in full color, plus single-color variants. Each has an editable SVG, an outlined SVG and a transparent PNG. |
+| `social/` | X/Bluesky banner, taller banner master, avatar, square, landscape and story layouts, quote and release templates, and a screenshot frame. |
+| `video/` | Title, thumbnail, end-card and transparent lower-third layouts, with a caption style file. |
+| `fonts/` | The fonts the pack needs and their redistribution licenses. |
+| `tokens.json`, `tokens.css` | Reusable design roles. |
+| `asset-manifest.json` | File dimensions and hashes. |
 
-Editable SVG text needs the included fonts. Install them for editing, or use the outlined logo SVGs and rendered PNGs for placement. PNGs are exported from the editable SVG source. Re-render with the top-level `build_packs.py` and its fontconfig.xml; do not edit the PNG separately.
+Editable SVG text needs the included fonts. Install them to edit, or place the outlined logo SVGs and the rendered PNGs instead. The PNGs are exported from the editable SVGs. Re-render them with the top-level `build_packs.py` and its `fontconfig.xml`; do not edit a PNG on its own.
 
-The story artwork keeps the main message between y=250 and y=1670 on a 1080×1920 canvas. Check the destination’s current overlay and crop behavior in its composer. Keep critical banner content away from the bottom-left avatar area. These are layout guides, not a guarantee of every platform crop.
+The story artwork keeps its main message between y=250 and y=1670 on a 1080×1920 canvas. Keep critical banner content away from the bottom-left corner, where the avatar sits. These are layout guides, and platforms crop differently, so check the current overlay and crop in the destination's composer.
 
 {product}## Screenshots and video
 
-Replace the screenshot placeholder with a real capture of a verified workflow. Show enough interface to establish context; crop credentials, private dashboards, unpublished material and personal data. Keep original recordings separately from edited exports.
+Replace the screenshot placeholder with a real capture of a verified workflow. Show enough of the interface to give context. Crop out credentials, private dashboards, unpublished material and personal data. Keep original recordings separate from edited exports.
 
-The video templates use a 1920×1080 canvas and a 96-pixel outer margin. Keep captions to two short lines. Use the supplied ASS style as a starting point, then check readability at phone size. Lower-thirds have a transparent background outside the panel. Avoid rapid flashing; use a short fade or hard cut for title/end cards. The eight-second preview is a template demonstration, not a product demonstration.
+The video templates use a 1920×1080 canvas with a 96-pixel outer margin. Keep captions to two short lines. Start from the supplied ASS style, then check that captions read at phone size. The lower third is transparent outside its panel. Use a short fade or a hard cut for title and end cards, and avoid rapid flashing. The eight-second preview demonstrates the template, not the product.
 
 ## Copy, alt text and sources
 
-Use verified product claims and exact approved copy. Quote/release template text is placeholder content and must be replaced. Describe the completed image in alt text, including the visible message; do not describe a screenshot placeholder as a working feature. `alt-text.md` supplies starter descriptions for the completed sample artwork.
+Use verified product claims and exact approved copy. Each product has its own voice, set out in [the voice guide](../../../../content/VOICE.md). A headline in the sample artwork shows the layout. It is approved copy only where this guide says so. The text in the quote and release templates is a placeholder and must be replaced.
 
-Reference: {d['source']}. Source/asset observation dates are recorded in the reference above. Original files in the legacy library are preserved. The inventory’s hashes identify bytes; they do not establish permission to publish third-party material.
+Alt text describes the finished image, including the words visible in it. Do not describe a screenshot placeholder as a working feature. `alt-text.md` has starter descriptions for the sample artwork.
+
+Reference: {d['source']}. {observed} Original files in the legacy library are preserved. The inventory's hashes identify bytes. They do not establish permission to publish third-party material.
 '''
  (dest/'GUIDE.md').write_text(doc)
+ # Descriptions of the rendered sample artwork. Update a row when its banner, square post or avatar changes.
+ alts={
+  'subcult':('Purple banner. Small label: SUBCULT.TV / INDEPENDENT SOFTWARE. Large black headline: BUILD TOGETHER. A tilted green block crossed by two thin registration lines sits at the top right, and a green bar runs down the left edge.', 'Purple square. Black headline: CULTURE NEEDS TOOLS., with TOOLS. set on a tilted green block. Small text: SUBCULT.TV at the top and support.subcult.tv at the bottom.', 'The SUBCULT mark on purple: a filled black S, an outlined C and an underscore over a tilted green block, crossed by thin registration lines.'),
+  'clpr':('Near-black banner. The clpr wordmark with a purple play triangle, then the headline THE CLIP. THE MOMENT. in white capitals. At the right, a stack of three clip cards. The front card shows a play triangle and a green progress line. Small text: CLIP DISCOVERY + CURATION and clpr.tv.', 'Near-black square with the clpr wordmark. Headline: KEEP THE MOMENT. FIND THE NEXT ONE. Below it, one clip card with a play triangle and a green progress line. Small text: clpr.tv.', 'A purple play triangle inside a darker purple triangle, on a near-black background.'),
+  'kork':('Cork-textured banner. Label: LINK PAGES / BY SUBCULT. Black headline: EVERY LINK. ONE BOARD. At the right, four paper cards held by blue pushpins: @yourname (social), $yourname (tips), a decorative QR pattern and WATCH (latest video). Small text: kork.subcult.tv.', 'Cork-textured square. Headline: PIN IT UP. Line below: Share one link for everything. Three pinned paper cards: @yourname, $yourname and a decorative QR pattern. Small text: kork.subcult.tv.', 'The Kork mark on cork: a tilted paper card with two black rows, held by a blue pushpin.'),
+  'prichal':('Paper-colored banner. At the left, the Prichal mark: a dark sphere with a dashed equator and four collars, the right one red. Label: ПРИЧАЛ · ACCOUNT HOSTING. Wordmark: PRICHAL, with a short red rule under it. Line: Your server. We keep it running. A strip along the bottom reads PORT 01 to 06, with prichal.subcult.tv at the right.', 'Paper-colored square. Label: ACCOUNT HOSTING / BY SUBCULT. The Prichal mark and wordmark, then the headline DOCK YOUR ACCOUNT. Below it, six numbered boxes, 01 to 06, with 04 filled red. Small text: prichal.subcult.tv.', 'The Prichal mark on paper: a dark sphere with a dashed equator and four collars, the right one red. A faint tick scale runs down the left edge.'),
+  'undertow':('Dark violet banner. Pink wordmark: UNDERTOW. Cyan label: AUDIO / LAYERS / MOTION. White headline with pink and cyan offsets: SOUND INTO MOTION. At the right, a pink and cyan waveform. Small text: undertow.subcult.tv.', 'Dark violet square. Label: MUSIC VISUALS / LYRICS / LOCAL EXPORT. Headline: MAKE IT MOVE., with MOVE. in pink. Below it, a pink waveform in a cyan frame. Small text: undertow.subcult.tv.', 'A rounded square outline with five vertical bars inside, in a pink-to-cyan gradient, on dark violet.'),
+  'subcult-os':('Black banner in monospace type. Subcult OS, then > os.subcult.tv in cyan. Headline: From the plan to the last ticket. Five boxes along the bottom read PLAN, COORDINATE, RUN DOOR, SETTLE and ARCHIVE, with RUN DOOR filled purple. At the top right, the letters OS and a cyan cursor block in a purple frame.', 'Black square in monospace type. Label: PLAN / COORDINATE / RUN DOOR / SETTLE / ARCHIVE. Headline: The door opens. The plan holds. Three rows: 01 PLAN THE EVENT, 02 RUN THE DOOR (filled purple) and 03 SETTLE AND ARCHIVE. Small text: os.subcult.tv.', 'The letters OS in white with a cyan cursor block, inside a purple square frame on black.'),
+  'patchwork':('Warm paper banner. The Patchwork wordmark and the headline A little help, from a friend. in dark green serif type. Small label: MUTUAL AID, BLOCK BY BLOCK. At the right, four stitched fabric patches in green, tomato, yellow and sage. Small text: patchwork.subcult.tv.', 'Warm paper square. Label: MUTUAL AID, BLOCK BY BLOCK. Green serif headline: A small ask. A local offer. Two stitched buttons: HELP A NEIGHBOUR in green and PASS IT ON in tomato. Line below: Mutual aid, block by block. Small text: patchwork.subcult.tv.', 'A paper-colored letter P on a tomato fabric patch with a dashed line of stitching, on warm paper.'),
+  'hasanara':('Near-black banner. Wordmark: HasanAra. Red label: BROADCAST ARCHIVE, over a red rule. Headline in off-white serif type: Find the passage. Keep the context. Small text: Search / passages / original context. At the right, the PBS artwork: an orange head in profile with glasses forming the P, then B and S in red.', 'Near-black square. Red label: PIKER BROADCASTING SERVICE, over a red rule. Serif headline: The passage. The source. The context. Below it, a panel labelled SOURCE / TIMESTAMP / CONTEXT with three grey lines standing in for text. Small text: hasanara.tv.', 'The PBS artwork on near-black: an orange head in profile with glasses forming the P, then B and S in red.'),
+  'rekolekt':('Dark green banner. Lowercase wordmark: rekolekt. Lime label: BY SUBCULT. Headline in warm white: A recording. An archive. Line below a lime rule: Searchable recordings. Source intact. At the right, the mark: three lime bars of different heights between square brackets.', 'Dark green square. Label: REKOLEKT BY SUBCULT. Headline: Make a recording into an archive. Below it, the bracketed three-bar mark beside three lime labels: SEARCH, QUOTE and RETURN TO SOURCE. Small text: rekolekt / by SUBCULT.', 'The Rekolekt mark on dark green: three lime bars of different heights between square brackets.'),
+  'left-field':('Paper-colored banner. LEFT FIELD at the top left and BY SUBCULT at the top right, over a dark rule. Serif headline: Read the field. Trace the evidence. Rust label: SEAT RESEARCH / SOURCE CONTEXT. At the right, the LF monogram in dark ink with a rust square where the letters meet.', 'Paper-colored square. Label: LEFT FIELD / BY SUBCULT. Serif headline: Read the field. Trace the evidence. Below it, a pale green panel with a rust left edge and three ruled rows, SEAT RECORD, SOURCE NOTES and METHOD / CONTEXT, beside the LF monogram. Small text: SEAT RESEARCH / SOURCE CONTEXT.', 'The LF monogram on paper: a dark L and F on one baseline, with a rust square where they meet.'),
+  'dedhed':('Cream banner. Lowercase serif wordmark: dedhed, followed by a red dot. Label: LIVE TAPES / SHARED AIR. Headline: Find your way into a show. Small text: Dedhed / by SUBCULT · private pilot. At the right, a pine rack of five cassette spines, each typed with Grateful Dead, a show date and a set number: 4/17/71 I, 5/8/77 II, 2/13/70 I · II, 6/16/85 II and 10/31/71.', 'Cream square. Label: LIVE TAPES / SHARED AIR. A cassette at the top right. Headline: Find your way into a show. Below it, a pine rack of four cassette spines typed with Grateful Dead, a show date and a set number. Small text: ON-DEMAND SETS · ONE SHARED STATION.', 'A black cassette on cream: a cream label with a red stripe, a window showing two reels, and two screw holes.'),
+  'tadooer':('Dark blue-grey banner. The Tadooer mark and wordmark. Label: PLAN · FOCUS · SYNC, over a purple rule. Sample headline: The plan, and the one thing now. Small text: Tadooer / by SUBCULT · private, self-hosted. At the right, a planner day from 09:00 to 12:00: three task rows with placeholder titles, the first framed purple, a pink line marking the current time and a teal calendar block.', 'Dark blue-grey square. Label: PLAN · FOCUS · SYNC. The Tadooer mark at the top right. Sample headline: The plan, and the one thing now. Below it, a planner day from 09:00 to 12:00 with three placeholder task rows, a pink current-time line and a teal calendar block. Small text: ONE OWNER · EVERY DEVICE · ONE THING NOW.', 'The Tadooer mark on dark blue-grey: a rounded near-black tile with three grey list lines and a purple disc holding a check.'),
+ }
+ banner_alt,square_alt,avatar_alt=alts.get(slug,(f"{d['brand']} branding in the {d['name']} direction. Visible headline: “{' '.join(d['headline'])}”.",'Describe the visible headline, brand mark and supporting illustration in `social/square-post.png`.',f"{d['brand']} mark on the selected brand background."))
  (dest/'alt-text.md').write_text(f'''# {d['brand']} — Alt text starters
 
-- Banner: {d['brand']} branding in the {d['name']} direction. Visible headline: “{' '.join(d['headline'])}”.
-- Square sample: Describe the visible headline, brand mark and supporting illustration in `social/square-post.png`.
-- Avatar: {d['brand']} mark on the selected brand background.
+- Banner: {banner_alt}
+- Square sample: {square_alt}
+- Avatar: {avatar_alt}
 
 Replace these starters when copy or imagery changes. Describe a screenshot’s actual task and visible result. For a quoted passage, include the visible words and attribution. Empty templates are editing aids and should not be published as finished assets.
 ''')
