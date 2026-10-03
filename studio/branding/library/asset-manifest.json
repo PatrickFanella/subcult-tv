@@ -1,8 +1,8 @@
 [
   {
     "path": "README.md",
-    "sha256": "0f51fee83f432efd8728c9ee4cfcba63e05aab1f94b64fd71ea53795d5590706",
-    "bytes": 14857
+    "sha256": "dacbd6bcdbd7f0bd1d7b1212c2e9257b089f5cf6b02c61862881b48f2ec41346",
+    "bytes": 15430
   },
   {
     "path": "audit_patchwork_contrast.py",
@@ -4331,18 +4331,18 @@
   },
   {
     "path": "brands/subcult-os/GUIDE.md",
-    "sha256": "bb12bf5920592f7838f61cd50d0a06f1d69923d1355a5029f7059c9cc1e0a9a2",
-    "bytes": 7213
+    "sha256": "f3619515433783ef10d85a139d17b50fe2e37d45d7c91b96cfdc46b1ecd30dbe",
+    "bytes": 8341
   },
   {
     "path": "brands/subcult-os/alt-text.md",
-    "sha256": "fd866215ad45854423500ff00ce82f969737e8bc691e9fc38f8596a75109dc45",
-    "bytes": 975
+    "sha256": "ac1300afd6c5aa7221dc30d528bcfded3e6a1f663811f5a757d877a90afc120d",
+    "bytes": 1174
   },
   {
     "path": "brands/subcult-os/asset-manifest.json",
-    "sha256": "cc5cf6c3a19e5e800e819dec376b7304ae3b038193227e87cf769645b4cba6de",
-    "bytes": 15576
+    "sha256": "a9932e178853c4fe3dde7bab7f2f9de09b6fff1b1cddc8d1887839c6d3ad215e",
+    "bytes": 16040
   },
   {
     "path": "brands/subcult-os/fonts/Space-Mono-0.ttf",
@@ -4367,7 +4367,10 @@
   {
     "path": "brands/subcult-os/logos/lockup-dark.png",
     "sha256": "fd67360ba1493ffe3713d83a45895a4ff30b44736813d7d7a41a6e70878534b5",
-    "bytes": 15789
+    "bytes": 15789,
+    "width": 1000,
+    "height": 260,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/logos/lockup-dark.svg",
@@ -4382,7 +4385,10 @@
   {
     "path": "brands/subcult-os/logos/lockup-light.png",
     "sha256": "5420ed11627b6ba8d1fa0c99e4f93a9cb3238c0c38a7497a5b32ea01fe4d2b46",
-    "bytes": 15667
+    "bytes": 15667,
+    "width": 1000,
+    "height": 260,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/logos/lockup-light.svg",
@@ -4397,7 +4403,10 @@
   {
     "path": "brands/subcult-os/logos/lockup-mono-dark.png",
     "sha256": "fe347f37b697197c8e07478ec4677c6b55b2f3ecb3186485e7ccb3d6007c3233",
-    "bytes": 11637
+    "bytes": 11637,
+    "width": 1000,
+    "height": 260,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/logos/lockup-mono-dark.svg",
@@ -4412,7 +4421,10 @@
   {
     "path": "brands/subcult-os/logos/lockup-mono-light.png",
     "sha256": "238169f65131a14e2b72b6665462354777ef30d1bae41a3a765101aa43979662",
-    "bytes": 14965
+    "bytes": 14965,
+    "width": 1000,
+    "height": 260,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/logos/lockup-mono-light.svg",
@@ -4427,7 +4439,10 @@
   {
     "path": "brands/subcult-os/logos/lockup-primary.png",
     "sha256": "72b34d7b71c1410f51ad72e85446ed313844777f80fbb2f397cce061b2fd4cfa",
-    "bytes": 13115
+    "bytes": 13115,
+    "width": 1000,
+    "height": 260,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/logos/lockup-primary.svg",
@@ -4442,7 +4457,10 @@
   {
     "path": "brands/subcult-os/logos/mark-dark.png",
     "sha256": "c52e72f0dc2671988197202816664bb2f21c03478980e5543c1b139b4f526e4b",
-    "bytes": 3844
+    "bytes": 3844,
+    "width": 256,
+    "height": 256,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/logos/mark-dark.svg",
@@ -4457,7 +4475,10 @@
   {
     "path": "brands/subcult-os/logos/mark-light.png",
     "sha256": "c52e72f0dc2671988197202816664bb2f21c03478980e5543c1b139b4f526e4b",
-    "bytes": 3844
+    "bytes": 3844,
+    "width": 256,
+    "height": 256,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/logos/mark-light.svg",
@@ -4472,7 +4493,10 @@
   {
     "path": "brands/subcult-os/logos/mark-mono-dark.png",
     "sha256": "17fca47be456697e16016ce87676f747c491c14305a01406744a779b9469841e",
-    "bytes": 2914
+    "bytes": 2914,
+    "width": 256,
+    "height": 256,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/logos/mark-mono-dark.svg",
@@ -4487,7 +4511,10 @@
   {
     "path": "brands/subcult-os/logos/mark-mono-light.png",
     "sha256": "5ee3ebdb8e2d33f90114cdf040493545ce063a28d5c7b8beb0cd8382bc094600",
-    "bytes": 3516
+    "bytes": 3516,
+    "width": 256,
+    "height": 256,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/logos/mark-mono-light.svg",
@@ -4502,7 +4529,10 @@
   {
     "path": "brands/subcult-os/logos/mark-primary.png",
     "sha256": "c52e72f0dc2671988197202816664bb2f21c03478980e5543c1b139b4f526e4b",
-    "bytes": 3844
+    "bytes": 3844,
+    "width": 256,
+    "height": 256,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/logos/mark-primary.svg",
@@ -4511,18 +4541,24 @@
   },
   {
     "path": "brands/subcult-os/pack-preview.png",
-    "sha256": "4839a09fe04760dfab99a282848f5362c020ad5ed347fa7888ccc4e0c14f938c",
-    "bytes": 138180
+    "sha256": "a2b5f2b4c4075dd221767858cc50ef3cdfba230ab7b3ed008a44008f5ad306f8",
+    "bytes": 175274,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/pack-preview.svg",
-    "sha256": "e233c4a2fdb1a7805fe0f8bb4a1ca86043c0243c3f43bd9ce640ea1c4417099f",
-    "bytes": 12075
+    "sha256": "dc8f321f25b87a224f43d671432d1d615af970d72959379ebbcb5dd2acc29e51",
+    "bytes": 27903
   },
   {
     "path": "brands/subcult-os/product/android-adaptive-foreground.png",
     "sha256": "f5830d996c5377edee71a7c302a968bfba92674eea40cc4638f09d6333327233",
-    "bytes": 14349
+    "bytes": 14349,
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/product/android-adaptive-foreground.svg",
@@ -4532,7 +4568,10 @@
   {
     "path": "brands/subcult-os/product/android-adaptive-monochrome.png",
     "sha256": "03bf266041b088a953cefe022746cb893ea98c92a11ddc369615d8361cfd9356",
-    "bytes": 11621
+    "bytes": 11621,
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/product/android-adaptive-monochrome.svg",
@@ -4542,7 +4581,10 @@
   {
     "path": "brands/subcult-os/product/app-icon.png",
     "sha256": "bc6ae94014fb82d329530cb2a0e3c5093153f350652f3e458511e4de59f06786",
-    "bytes": 14963
+    "bytes": 14963,
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/product/app-icon.svg",
@@ -4552,7 +4594,10 @@
   {
     "path": "brands/subcult-os/product/apple-touch-icon.png",
     "sha256": "48ba800ca57459346d7e4e2451eee020bfcaee99f3f4d42758a7767dc467a900",
-    "bytes": 2458
+    "bytes": 2458,
+    "width": 180,
+    "height": 180,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/product/apple-touch-icon.svg",
@@ -4562,12 +4607,18 @@
   {
     "path": "brands/subcult-os/product/favicon-32.png",
     "sha256": "1359e297b34e710c9c3fe2e44dc1db92086d88a04764dd4f5587828e6d5385a4",
-    "bytes": 735
+    "bytes": 735,
+    "width": 32,
+    "height": 32,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/product/favicon-48.png",
     "sha256": "43b640f6ebd929c790aa7855d6bc4e04a3e6ffb1e7a65e717aefbca35cf3cbfe",
-    "bytes": 1112
+    "bytes": 1112,
+    "width": 48,
+    "height": 48,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/product/mark-tight-outlined.svg",
@@ -4577,7 +4628,10 @@
   {
     "path": "brands/subcult-os/product/mark-tight.png",
     "sha256": "5043949ac79229d1696629962c590cff4a6d5baf7c17b7fa4e2dfa25beda9524",
-    "bytes": 3167
+    "bytes": 3167,
+    "width": 156,
+    "height": 156,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/product/mark-tight.svg",
@@ -4586,18 +4640,24 @@
   },
   {
     "path": "brands/subcult-os/product/og.png",
-    "sha256": "1c386f4760fff46d3b3cba4e7ddb82a0c02dea7cb8f646686d3445bc96e63177",
-    "bytes": 31073
+    "sha256": "bedcd3c4ad5774b262dd73c5e50d8d66e3b233b493705c9bb6bfacdf15851831",
+    "bytes": 55868,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/product/og.svg",
-    "sha256": "22756bb3e6b2ae92599d90639e2f4084a22df2a8223baeced93716b930556154",
-    "bytes": 2157
+    "sha256": "48bff00e95d62882ed8ed2e7de86988f5de248833a03e904637dab60ec06bcad",
+    "bytes": 5735
   },
   {
     "path": "brands/subcult-os/product/splash-icon.png",
     "sha256": "a2b0b09320fb5065d0b7d05ad97ab610694309ab539a4c76dbee8244d9d28492",
-    "bytes": 18573
+    "bytes": 18573,
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/product/splash-icon.svg",
@@ -4607,7 +4667,10 @@
   {
     "path": "brands/subcult-os/social/avatar.png",
     "sha256": "1f19244be038fa8fa4a8541c80579ad6dd9aee221cd33354ec07c52db53fb6bb",
-    "bytes": 7408
+    "bytes": 7408,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/social/avatar.svg",
@@ -4616,93 +4679,117 @@
   },
   {
     "path": "brands/subcult-os/social/banner-tall-master.png",
-    "sha256": "3870bd27bc43fb35d208b265a88df0171dba0b30812dbd2948101e4ff369d106",
-    "bytes": 39745
+    "sha256": "1b99db1df4b043d5bd4314960187e211a533249e6cb988c2c702b696d963f3a9",
+    "bytes": 73206,
+    "width": 1500,
+    "height": 600,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/social/banner-tall-master.svg",
-    "sha256": "af889bd67e10f0c70c28d41e39bd73d05de1c07121bce495577c0999e67c66f2",
-    "bytes": 2184
+    "sha256": "c245f870f494e3e41bda0e513eb863e72dd1a03907d6a0bbd504f70454c5c4d4",
+    "bytes": 5762
   },
   {
     "path": "brands/subcult-os/social/banner-x-bluesky.png",
-    "sha256": "ad8ee7c09dd232828ca26d723173aa53658e71513eab901e2d2e91c57e5bc183",
-    "bytes": 39146
+    "sha256": "0e9e97a97529e4f74710d137a31fed2dc30e7edf634ff592141602ee3cc4ec3a",
+    "bytes": 72440,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/social/banner-x-bluesky.svg",
-    "sha256": "5f36a3a3316a93da7a064ca2ca9fe5abbee7a18144fd26eaaf4d0275153cd645",
-    "bytes": 2068
+    "sha256": "b203e3f9bebb4845ccbefc9293def75c12210d7b929738338087ffdf6ba17342",
+    "bytes": 5646
   },
   {
     "path": "brands/subcult-os/social/landscape-template.png",
-    "sha256": "b247c9ff92d5a1966de089d60426d238b846ae1e5e2e10d52291e8c105f714c5",
-    "bytes": 43917
+    "sha256": "5509d99268d567db2755652c9ca2fabbc08261e9ccd720a633292264da9e5930",
+    "bytes": 38740,
+    "width": 1600,
+    "height": 900,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/social/landscape-template.svg",
-    "sha256": "9ecd7975eae1bf757077cf24fc83407b17d8fcc633c313180838a6a7c07108c0",
-    "bytes": 1277
+    "sha256": "9dd2a965fb20a60db496c125bee2b5252a47762e86599fe51ab23176be12da8c",
+    "bytes": 1269
   },
   {
     "path": "brands/subcult-os/social/quote-template.png",
-    "sha256": "40e461c2c9260d02354bcca7fb26fec3803ff60ff466808cc29dcd9b6db93fa3",
-    "bytes": 43844
+    "sha256": "ceac5a8d9dca52002cbb5778edb8fe98570015529a5bd3c3e7fca35177900c73",
+    "bytes": 40100,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/social/quote-template.svg",
-    "sha256": "6beb941a9fa612c280dc9793fee3558cae0403dd36dfad6b9a5234418e15cc47",
-    "bytes": 1210
+    "sha256": "0f9c8eb5abb45c0a1523cf42f1a6cff6c69ac45d315726881029cd89944e4b13",
+    "bytes": 1198
   },
   {
     "path": "brands/subcult-os/social/release-template.png",
-    "sha256": "867846b115243461f400285efd3e8cba0cbd40077a37fe394aa25f709d83c70e",
-    "bytes": 44058
+    "sha256": "cf0c710586724760e10adfa4c1887e70164c5e3ea241c0b32edf355a5e1a62ef",
+    "bytes": 43936,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/social/release-template.svg",
-    "sha256": "4a2b01ed0a00aba1304ac42c847102e3824b2db13ff04bd0cea2f2a7e89ece2e",
-    "bytes": 1409
+    "sha256": "2dc2b419a129130660f7dadbca0387b4d603b78110586c8e6bfbf2851779aaa1",
+    "bytes": 1405
   },
   {
     "path": "brands/subcult-os/social/screenshot-frame.png",
-    "sha256": "653bd37eedbb0ca2548ef1b8e1b449b612a71e1f04c60ee8aaa354075eee5163",
-    "bytes": 35111
+    "sha256": "334d9b7349ef3ad4f075ef550c69fe722ddca9b33d530ad82d2d3c8c0305b68d",
+    "bytes": 35546,
+    "width": 1600,
+    "height": 1000,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/social/screenshot-frame.svg",
-    "sha256": "817bec44d369eb0414b93fc0c3f0f92fd7d88b83f94b525254276bdc2d30eff1",
+    "sha256": "4fe2e58237891e6e00a54c460716ef6fe2cd56ec1b8697edf866c2eed62c2209",
     "bytes": 909
   },
   {
     "path": "brands/subcult-os/social/square-post.png",
-    "sha256": "5c923edba1895ecaa2aa57c23b0e460074651659126c2f6c729bc9f0de32558e",
-    "bytes": 51396
+    "sha256": "a6f25151b1ef2a6f7d81c69e144a64dc4428f427a372daf886c437661b973d37",
+    "bytes": 95653,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/social/square-post.svg",
-    "sha256": "df5bf68cecee6be8ed3628de740b7b9e5e58157e168205e8005922c6d6e2c0a1",
-    "bytes": 1401
+    "sha256": "b55afa02aaf873677a3f3776233913583761290739afaccd7bedc30b80e68279",
+    "bytes": 5154
   },
   {
     "path": "brands/subcult-os/social/story-template.png",
-    "sha256": "584e83e7a961773b9a804e1bf3d7b89d230af44fd036fd35a3268139be1d4020",
-    "bytes": 58669
+    "sha256": "47be72c9bc2765f769ce7aa796a7af64e9d007a811d48c72a8389fcd1a6214c3",
+    "bytes": 64388,
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/social/story-template.svg",
-    "sha256": "92dcb8f85e92a0118884b7d996386979d0b119e690a68aa51855c7ec76981522",
-    "bytes": 1528
+    "sha256": "8173fe5744a2612fa8ceadf2b42f740a7d46f5ae21244f0263870b1e5aa77876",
+    "bytes": 6062
   },
   {
     "path": "brands/subcult-os/tokens.css",
-    "sha256": "2e3403cd1c8133fbb0c73214a9c5222ec2b20ea8df107654f7f2dad7d4a1799d",
-    "bytes": 235
+    "sha256": "165c4376887fca8ad4acbb4dcc667646c7264267071ba8bf50e01349714fc0d7",
+    "bytes": 231
   },
   {
     "path": "brands/subcult-os/tokens.json",
-    "sha256": "c4aeab9c4cd45e9b0fc73ab49100b5c34154a7e37b2db6ecb23781dd520f88af",
-    "bytes": 644
+    "sha256": "245c6e2bb2828aa339685d4cb5680675f118a4c592febbbaade2d1cd9892fc49",
+    "bytes": 739
   },
   {
     "path": "brands/subcult-os/video/captions.ass",
@@ -4712,7 +4799,10 @@
   {
     "path": "brands/subcult-os/video/end-card.png",
     "sha256": "795742de4b58a77fb2d771b93fcbd48c09904b198fa223c77f25be0c5b7b851a",
-    "bytes": 27999
+    "bytes": 27999,
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/video/end-card.svg",
@@ -4721,13 +4811,16 @@
   },
   {
     "path": "brands/subcult-os/video/lower-third.png",
-    "sha256": "9288b3a7e50c432ec4d68572c58b5ab782150b59b07c92910633fb7a4c15134c",
-    "bytes": 25079
+    "sha256": "f52248c9becb1e7ca040d5eaec582b64d347bbcee16ad6cd4ff20a7fd4ddebca",
+    "bytes": 25092,
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGBA"
   },
   {
     "path": "brands/subcult-os/video/lower-third.svg",
-    "sha256": "3cc00f0610503c39c66d9bab2b10cccdee16344ad0522129bd86dd3848e2e500",
-    "bytes": 896
+    "sha256": "48593078fcab8c00b6bab327c1c2fbe6a7f7a20c8709e7bec502f21e84f8dfbc",
+    "bytes": 911
   },
   {
     "path": "brands/subcult-os/video/template-preview.mp4",
@@ -4736,23 +4829,29 @@
   },
   {
     "path": "brands/subcult-os/video/thumbnail.png",
-    "sha256": "f7ed0b060bb8e26f60db7ef62b74a3eee397ce91aa93437ea5d351ac4aaa7a1f",
-    "bytes": 35509
+    "sha256": "54edf1d98334128556b2e8e5ad6e8f2d3aacab7d9ad776d03cbad9a630f3a29f",
+    "bytes": 34597,
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/video/thumbnail.svg",
-    "sha256": "db6b174d518bab16fde864c0b09341fea73392c761bb1a4a961bd330463860e4",
-    "bytes": 935
+    "sha256": "0e4648123744b79d795c7bee01a946589a6332cfa26f0c156a7265abb14c86af",
+    "bytes": 931
   },
   {
     "path": "brands/subcult-os/video/title-card.png",
-    "sha256": "292f61add9613065e72e1745940a1b47e7f860233a9a530fd4305e7c81cce982",
-    "bytes": 35537
+    "sha256": "74f6eeebc48da490d874e2f809545e28156c02f2d7094f07be3fcc91b56750dd",
+    "bytes": 34617,
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB"
   },
   {
     "path": "brands/subcult-os/video/title-card.svg",
-    "sha256": "bfcf2fda137d039c81f0f7afcfd710291fe017dc0e511a7746491603f4dff7c2",
-    "bytes": 937
+    "sha256": "54e09ccff4bce3f7f646d9bf89663ea12adcb8d89a135acb1fed852d996700d0",
+    "bytes": 933
   },
   {
     "path": "brands/undertow/GUIDE.md",
@@ -5126,13 +5225,13 @@
   },
   {
     "path": "brands.json",
-    "sha256": "4371bdd3e4cdef9a364c76c3f252c3595d74605078f84b5807efa34b624e4807",
-    "bytes": 12052
+    "sha256": "ee336c68fc9ed7f14dda5515d18757b595d72e57502cda4c6fce62872c356bae",
+    "bytes": 12244
   },
   {
     "path": "build_packs.py",
-    "sha256": "8a218ed0265823043f8028126ea7bb04a978042522400dca6ff9445e806b123c",
-    "bytes": 54348
+    "sha256": "52b53f87886a6df522738ff6f44ef2efa9b04ecbb05cdbc787ca89d042632052",
+    "bytes": 56151
   },
   {
     "path": "clpr-directions/comparison.png",
@@ -6116,8 +6215,8 @@
   },
   {
     "path": "design_helpers.py",
-    "sha256": "f526863f08fef7717f20e282b700bff01a64fcd5909a15035cd55a097085587d",
-    "bytes": 26794
+    "sha256": "97c98d84d25d08560fb41eed43201d4c235057927ee882dbd80b8dae250ad743",
+    "bytes": 27699
   },
   {
     "path": "finalize_left_field.py",
@@ -7651,5 +7750,20 @@
     "width": 1254,
     "height": 1254,
     "mode": "RGBA"
+  },
+  {
+    "path": "brands/subcult-os/fonts/Oswald-0.ttf",
+    "sha256": "bd6ff5a83bcdc92d7aac6dbb16e4dd2b0b0320bec6402bb81f5dd9735b500e46",
+    "bytes": 86068
+  },
+  {
+    "path": "brands/subcult-os/fonts/Oswald-1.ttf",
+    "sha256": "a6ee8b91ec269a6f48631ba4ba1a3ab7e5039e5482dda8dc9672ee4620d7bd68",
+    "bytes": 86416
+  },
+  {
+    "path": "brands/subcult-os/fonts/oswald-OFL.txt",
+    "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652",
+    "bytes": 4483
   }
 ]

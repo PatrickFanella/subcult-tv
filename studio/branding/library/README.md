@@ -85,7 +85,9 @@ clpr.tv has applied the pack since October 2, 2026. `brands/clpr/GUIDE.md` recor
 
 ### Subcult OS
 
-Subcult OS was rebuilt on October 2, 2026 to match the live https://os.subcult.tv terminal system: Space Mono (bundled from google/fonts), black canvas, purple actions, cyan labels and focus, square frames. Its OS lettermark with a cyan cursor block is a pack mark; the site itself uses the plain wordmark.
+Subcult OS was rebuilt on October 2, 2026 to match the live https://os.subcult.tv terminal system: Space Mono (bundled from google/fonts), black canvas, purple actions, cyan labels and focus. The site sets the OS lettermark with its cyan cursor block beside the wordmark in live Space Mono.
+
+On October 3, 2026 the user selected a display layer taken from the Subcult OS product illustration on subcult.tv, and the pack was rebuilt with `BRAND_ONLY=subcult-os`. Headlines are Oswald Bold capitals (now bundled in the pack); the wordmark, labels and body copy stay Space Mono. Frames use an 8-pixel radius. The banner, square post, story and link preview carry the tilted purple ticket stub with a barcode and cyan "01 / PLAN" index labels. The marks, favicons and app icons are unchanged. The app's own interface rules are in `docs/design-system.md` in the subcult-os repository.
 
 ### Kork
 

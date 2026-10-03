@@ -1050,6 +1050,7 @@ pre,
   background: #7c3aed;
   color: #ffffff;
   padding: 1.25em;
+  border-radius: 8px;
   transform: rotate(-4deg);
 }
 .event-ticket > span {

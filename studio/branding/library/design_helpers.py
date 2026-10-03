@@ -192,6 +192,23 @@ def docking_ports(d,x,y,w,h):
   s+=txt(xx+cw*.12,y+h*.62,f'0{i+1}',h*.32,d['bg'] if taken else d['fg'],d['label'])
  return f'<g data-art="docking-ports">{s}</g>'
 
+def os_bars(x,y,w,h,c,scale=1):
+ # The site's ticket-bars pattern: bars at 0-2, 5-6 and 10-13 of every 15 units.
+ s='';period=15*scale;n=int(w//period)
+ for i in range(n):
+  for start,width in [(0,2),(5,1),(10,3)]:s+=rect(round(x+i*period+start*scale,2),y,round(width*scale,2),h,c)
+ return s
+def os_stub(d,x,y,w,h,kicker,lines,size,sub=None,tilt=-3,rx=10):
+ # Subcult OS ticket stub: purple slab, Space Mono kicker, Oswald capitals, decorative barcode.
+ pad=round(w*.055);ks=max(12,round(size*.21));g=rect(x,y,w,h,d['accent'],rx)+txt(x+pad,y+pad+ks,kicker,ks,'#ffffff','Space Mono',700,maxw=w-2*pad)
+ base=y+pad+ks+round(size*1.15)
+ for i,l in enumerate(lines):g+=txt(x+pad,base+i*round(size*.98),l,size,'#ffffff','Oswald',700,maxw=w-2*pad)
+ last=base+(len(lines)-1)*round(size*.98)
+ if sub:g+=txt(x+pad,last+round(size*.55),sub,max(14,round(size*.3)),'#ffffff','Space Mono',400,maxw=w-2*pad)
+ bh=round(h*.13);g+=os_bars(x+pad,y+h-pad*.7-bh,w-2*pad,bh,'#ffffff',max(1,round(w/300,2)))
+ return f'<g transform="rotate({tilt} {x+w/2} {y+h/2})">{g}</g>' if tilt else g
+def os_index(d,x,y,items,size=17,step=40):
+ return ''.join(txt(x,y+i*step,f'{i+1:02d} / {item}',size,d['secondary'],'Space Mono',700) for i,item in enumerate(items))
 def mark(d,x,y,size):
  m=d['mode'];a=d['accent'];f=d['fg'];s=''
  if m=='patrick-wave' and (R/'references/patrick-variations/primary-outlined.svg').exists():return patrick_mark(d,x,y,size)
@@ -250,10 +267,9 @@ def banner(d):
   s+=txt(44,222,d['headline'][0],65,fg,'Newsreader',700)+txt(44,297,d['headline'][1],65,fg,'Newsreader',700)
   s+=image('hasanara-logo.svg',934,173,190,112)+txt(941,327,'PBS',17,b,'JetBrains Mono')+txt(44,359,'Search / passages / original context',18,'#b5afa3','Inter Tight')
  elif m=='os':
-  s+=mark(d,995,58,155)+txt(44,67,'Subcult OS',35,fg,'Space Mono',700)+txt(44,99,'> os.subcult.tv',17,b,'Space Mono')
-  for i,h in enumerate(d['headline']):s+=txt(44,178+i*68,h,56,fg,'Space Mono',700)
-  for i,h in enumerate(['PLAN','COORDINATE','RUN DOOR','SETTLE','ARCHIVE']):
-   x=44+i*224;s+=rect(x,302,208,58,a if i==2 else '#0d1117',0,None if i==2 else '#465264')+txt(x+16,338,h,17,fg if i==2 else b,'Space Mono',700)
+  s+=mark(d,44,34,52)+txt(112,70,'Subcult OS',30,fg,'Space Mono',700)+txt(44,124,'> os.subcult.tv',17,b,'Space Mono')
+  s+=os_index(d,44,190,['PLAN','COORDINATE','RUN DOOR','SETTLE','ARCHIVE'],17,38)
+  s+=os_stub(d,560,62,590,280,'SUBCULT OS / ADMIT ONE',d['headline'],70)
  elif m=='undertow':
   s+=txt(40,66,'UNDERTOW',31,a,'Liberation Mono',700)+txt(40,119,'AUDIO / LAYERS / MOTION',16,b,'JetBrains Mono')
   for i,h in enumerate(d['headline']):
@@ -304,9 +320,8 @@ def post(d):
   s+=rect(36,326,528,130,'#161616')+txt(58,365,'SOURCE / TIMESTAMP / CONTEXT',16,a,'JetBrains Mono')
   for i,w in enumerate([459,419,324]):s+=rect(58,389+i*19,w,5,'#b5afa3')
  elif m=='os':
-  s+=txt(36,134,'19:00 doors.',38,fg,'Space Mono',700)+txt(36,190,'Everyone on one sheet.',38,fg,'Space Mono',700)
-  for i,label in enumerate(['01   PLAN THE EVENT','02   RUN THE DOOR','03   SETTLE AND ARCHIVE']):
-   y=270+i*70;s+=rect(36,y,528,56,a if i==1 else '#0d1117',0,None if i==1 else '#465264')+txt(58,y+35,label,18,fg if i==1 else b,'Space Mono',700)
+  s+=os_stub(d,44,86,512,300,'SUBCULT OS / ADMIT ONE',['19:00 DOORS.'],88,'Everyone on one sheet.')
+  s+=os_index(d,36,440,['PLAN THE EVENT','RUN THE DOOR','SETTLE AND ARCHIVE'],19,36)
  elif m=='undertow':
   s+=txt(36,130,'MAKE IT',53,fg,'Liberation Mono',700)+txt(36,194,'MOVE.',75,a,'Liberation Mono',700)
   s+=rect(42,245,522,222,'#6a5fb0')+rect(36,239,522,222,'#171429',0,b)+wave(61,350,480,184,a,43)
