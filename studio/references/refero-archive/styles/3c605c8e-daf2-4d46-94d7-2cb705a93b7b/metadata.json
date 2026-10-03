@@ -1,0 +1,29 @@
+{
+  "styleId": "3c605c8e-daf2-4d46-94d7-2cb705a93b7b",
+  "sourceUrl": "https://styles.refero.design/style/3c605c8e-daf2-4d46-94d7-2cb705a93b7b",
+  "fetchedAt": "2026-10-02T22:41:50.234970+00:00",
+  "extractedAt": "2026-10-02T22:41:50.257114+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ARKET — Style Reference",
+  "htmlSha256": "9cd35ebbdbd38705ff717124ca855e6e2d23ca9afe9e2ff40aed2597019ecda7",
+  "cache": ".cache/3c605c8e-daf2-4d46-94d7-2cb705a93b7b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0a1a658743fd41d77cbf6ebd246a15f83c30833772de0ff52d18eb0727233efe",
+      "bytes": 21923,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b599e64a-17ae-4b0d-b26b-6237df99b355.jpg",
+    "fetchedAt": "2026-10-02T22:41:52.232832+00:00",
+    "sha256": "ddd860d3b6bf50c5110e2b7a5b6e5f31e9b9092617ff0330fab0b0bb2fdcffa1",
+    "bytes": 91566,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

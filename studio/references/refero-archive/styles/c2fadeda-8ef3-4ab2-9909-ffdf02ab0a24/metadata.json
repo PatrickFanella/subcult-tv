@@ -1,0 +1,29 @@
+{
+  "styleId": "c2fadeda-8ef3-4ab2-9909-ffdf02ab0a24",
+  "sourceUrl": "https://styles.refero.design/style/c2fadeda-8ef3-4ab2-9909-ffdf02ab0a24",
+  "fetchedAt": "2026-10-02T22:39:42.200804+00:00",
+  "extractedAt": "2026-10-02T22:39:42.223185+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aevi Wellness — Style Reference",
+  "htmlSha256": "fe2f0ea6a37fdea2741fe806ab271f513cbaf84698b5547c628a2f59392fb8e1",
+  "cache": ".cache/c2fadeda-8ef3-4ab2-9909-ffdf02ab0a24.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c80050831aecf6f52a7a0bbf3a34fbd75ed2fe6446ab85b6e64213cf3f79ad8b",
+      "bytes": 20689,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c6bff352-2934-4704-a607-6fabadafe463.jpg",
+    "fetchedAt": "2026-10-02T22:39:44.243844+00:00",
+    "sha256": "250355ab16283e2328de8491dbd49362862cb72d36cc960b4c0eea393bc7a867",
+    "bytes": 99762,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

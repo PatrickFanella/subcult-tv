@@ -1,0 +1,29 @@
+{
+  "styleId": "2e67105f-9f9a-45b5-9281-29734e753bd6",
+  "sourceUrl": "https://styles.refero.design/style/2e67105f-9f9a-45b5-9281-29734e753bd6",
+  "fetchedAt": "2026-10-02T22:06:50.196154+00:00",
+  "extractedAt": "2026-10-02T22:06:50.225286+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hume AI — Style Reference",
+  "htmlSha256": "c49098bcf64ff620cd3ac5b02cac3b2002888209d7fe7e99b70c8a50094ec686",
+  "cache": ".cache/2e67105f-9f9a-45b5-9281-29734e753bd6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "258894c5e50b2ff22d09b12892027fca50656aed629adee6934786dd254f615c",
+      "bytes": 23557,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5da2375f-f966-4c0b-bfad-52c549e8dfa7.jpg",
+    "fetchedAt": "2026-10-02T22:06:52.116592+00:00",
+    "sha256": "760b6046c7015850ea8293ca0591aa913070ede55ec2ef325a0cad351d279fa4",
+    "bytes": 65737,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

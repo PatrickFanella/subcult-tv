@@ -1,0 +1,29 @@
+{
+  "styleId": "a1f9e844-c4b6-4526-9cfc-81208c50aee1",
+  "sourceUrl": "https://styles.refero.design/style/a1f9e844-c4b6-4526-9cfc-81208c50aee1",
+  "fetchedAt": "2026-10-02T22:20:54.327999+00:00",
+  "extractedAt": "2026-10-02T22:20:54.351943+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SuperHi Plus — Style Reference",
+  "htmlSha256": "946c9f9eecc72e9947de598a80de5bb2b9631c3a05bca2de97c9963c22f45636",
+  "cache": ".cache/a1f9e844-c4b6-4526-9cfc-81208c50aee1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "61502942b74e14cf012983d550c1092cfde3bb62a842a13ee53c32b44f4190c4",
+      "bytes": 17615,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fafe14df-1a3b-42bc-845c-6703919c66af.jpg",
+    "fetchedAt": "2026-10-02T22:20:56.357189+00:00",
+    "sha256": "5763d9650e542e9c7a45d763677513e3f641e71035b977102412bd7e185badea",
+    "bytes": 278391,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "d271a6c4-942f-4abf-a3de-66795f15f031",
+  "sourceUrl": "https://styles.refero.design/style/d271a6c4-942f-4abf-a3de-66795f15f031",
+  "fetchedAt": "2026-10-02T22:30:14.190947+00:00",
+  "extractedAt": "2026-10-02T22:30:14.213037+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sauce Labs — Style Reference",
+  "htmlSha256": "a331aafac222f8830567d837139799c89363b2b267fb78d1aa730092a5bd8049",
+  "cache": ".cache/d271a6c4-942f-4abf-a3de-66795f15f031.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "15983c8495db77c9a73a599b29f6487a2fbbbe7658b8d1f7ca397833d61e523c",
+      "bytes": 20447,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fdefb2cf-9fff-4dd0-8ba3-1cd67f807e21.jpg",
+    "fetchedAt": "2026-10-02T22:30:16.264051+00:00",
+    "sha256": "7b1602005b15d8c172a298077e583ebe84a91d0f2ec184ef403caa32448bf3a2",
+    "bytes": 130920,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

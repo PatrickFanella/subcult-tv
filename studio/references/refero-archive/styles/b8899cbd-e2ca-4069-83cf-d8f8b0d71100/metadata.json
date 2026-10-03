@@ -1,0 +1,29 @@
+{
+  "styleId": "b8899cbd-e2ca-4069-83cf-d8f8b0d71100",
+  "sourceUrl": "https://styles.refero.design/style/b8899cbd-e2ca-4069-83cf-d8f8b0d71100",
+  "fetchedAt": "2026-10-02T22:11:26.178750+00:00",
+  "extractedAt": "2026-10-02T22:11:26.220318+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "BMW.com — Style Reference",
+  "htmlSha256": "a15b8bc965d8397f774c1b7fc8d3b5d26d80c976335c9706584987bb7eda9ea4",
+  "cache": ".cache/b8899cbd-e2ca-4069-83cf-d8f8b0d71100.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0941d4020038c9b62056872adfaccd1d38994cb8339783a725d4372c8b64289f",
+      "bytes": 15987,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d4fa4388-be5d-4a85-97c7-e0b5340fc7dc.jpg",
+    "fetchedAt": "2026-10-02T22:11:28.275237+00:00",
+    "sha256": "bb12b117f6000dabe3ed48478a733a3cfe0e081f14650b6c40458381f98a67f9",
+    "bytes": 76084,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "dae5e893-ca18-44c3-8f83-358cb52af237",
+  "sourceUrl": "https://styles.refero.design/style/dae5e893-ca18-44c3-8f83-358cb52af237",
+  "fetchedAt": "2026-10-02T22:37:06.208335+00:00",
+  "extractedAt": "2026-10-02T22:37:06.232861+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Promova — Style Reference",
+  "htmlSha256": "74a8968597424c78f8a89f31948ad9a982fcef2fe8bf2678b6730247bd2f58c5",
+  "cache": ".cache/dae5e893-ca18-44c3-8f83-358cb52af237.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bc1f22778348111309d0f8ff7aa918a84955ec92040a4a8feb2485e4a5f2bb9f",
+      "bytes": 19537,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6917d405-c33f-4ad4-9cd1-0737b2d2f3e9.jpg",
+    "fetchedAt": "2026-10-02T22:37:08.314636+00:00",
+    "sha256": "bd2654de0e35cfc2f5ee62f18253b06e25b2a2122243a2de47c4c971dd5199df",
+    "bytes": 115427,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

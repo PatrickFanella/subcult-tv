@@ -1,0 +1,29 @@
+{
+  "styleId": "707a1648-eaef-4629-9c5a-b835cedde250",
+  "sourceUrl": "https://styles.refero.design/style/707a1648-eaef-4629-9c5a-b835cedde250",
+  "fetchedAt": "2026-10-02T22:08:58.371126+00:00",
+  "extractedAt": "2026-10-02T22:08:58.396626+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Earlydog — Style Reference",
+  "htmlSha256": "441da49eac398fb60d995413a322c181a1938725a1b75b763c737737784ebe38",
+  "cache": ".cache/707a1648-eaef-4629-9c5a-b835cedde250.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2c13e346887de13919d7d91beb5024cb520254fafe9869559316460cc7653a3e",
+      "bytes": 19706,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ecad7ef7-f92b-4c11-9f01-c77cca2b2136.jpg",
+    "fetchedAt": "2026-10-02T22:09:00.319531+00:00",
+    "sha256": "092437ae961239b2fa9ab06cabbbf2507287d724514fdf02cfa4cc525308f41b",
+    "bytes": 96341,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

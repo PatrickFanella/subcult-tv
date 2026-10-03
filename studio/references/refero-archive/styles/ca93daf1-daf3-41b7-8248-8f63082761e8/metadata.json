@@ -1,0 +1,29 @@
+{
+  "styleId": "ca93daf1-daf3-41b7-8248-8f63082761e8",
+  "sourceUrl": "https://styles.refero.design/style/ca93daf1-daf3-41b7-8248-8f63082761e8",
+  "fetchedAt": "2026-10-02T22:36:54.349223+00:00",
+  "extractedAt": "2026-10-02T22:36:54.372788+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Arc — Style Reference",
+  "htmlSha256": "dec614b9c6084c746939a0cff8befe1e1c79aa2a043e2093a3feb3f847b48e06",
+  "cache": ".cache/ca93daf1-daf3-41b7-8248-8f63082761e8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1547f32734f9f2d09e203f0f6ef036dc1f9e4fd9ca929365a904cbaa50dee415",
+      "bytes": 26199,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/55338eac-9cc0-4711-a9af-ed4d705daa57.jpg",
+    "fetchedAt": "2026-10-02T22:36:56.258399+00:00",
+    "sha256": "ecbf39ee808aa055ec76670e4382763b2f195b75ee0f1f7a4ae4b4fb84b5a027",
+    "bytes": 179482,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

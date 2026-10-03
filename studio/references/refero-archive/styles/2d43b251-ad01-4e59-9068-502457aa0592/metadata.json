@@ -1,0 +1,29 @@
+{
+  "styleId": "2d43b251-ad01-4e59-9068-502457aa0592",
+  "sourceUrl": "https://styles.refero.design/style/2d43b251-ad01-4e59-9068-502457aa0592",
+  "fetchedAt": "2026-10-02T22:05:10.205204+00:00",
+  "extractedAt": "2026-10-02T22:05:10.236438+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Yung Studio — Style Reference",
+  "htmlSha256": "ab5e76b876e92324d61cf67a2368fb71fb07b77f3f3df752a513c134d13b5131",
+  "cache": ".cache/2d43b251-ad01-4e59-9068-502457aa0592.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "90de350cf4056491f191ae0569129eaa0adf7d32d434c13a3fb511029c597ba4",
+      "bytes": 16883,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6480e194-e7d1-4c34-b92c-6860f476a670.jpg",
+    "fetchedAt": "2026-10-02T22:05:12.266493+00:00",
+    "sha256": "db2cf273c58f18d4a716b52a71dea0fc531f8d090158988524038a5170e4119e",
+    "bytes": 175053,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

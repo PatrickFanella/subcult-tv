@@ -1,0 +1,29 @@
+{
+  "styleId": "16be276a-d8ce-484e-8f7a-cbbb09f717f7",
+  "sourceUrl": "https://styles.refero.design/style/16be276a-d8ce-484e-8f7a-cbbb09f717f7",
+  "fetchedAt": "2026-10-02T22:01:30.199641+00:00",
+  "extractedAt": "2026-10-02T22:01:30.232411+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Outsource Consultants — Style Reference",
+  "htmlSha256": "5251557d3c0c3f9ddbb93136afec0faeb69634c421b0c761fd6d31ed2b4561c5",
+  "cache": ".cache/16be276a-d8ce-484e-8f7a-cbbb09f717f7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8f69a65bd71211d347a867b248f6132eaacc182c6b8c7b272e24a38563a9684a",
+      "bytes": 20627,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c0323351-80a8-437e-8647-504988b0c74c.jpg",
+    "fetchedAt": "2026-10-02T22:01:32.301940+00:00",
+    "sha256": "93da34ae2c7b0b067b2f2637c81cb3af6c43ca4f5e1aa4cdcd099bc1efc654cc",
+    "bytes": 476496,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

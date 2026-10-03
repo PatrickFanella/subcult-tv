@@ -1,0 +1,29 @@
+{
+  "styleId": "14f6777e-1f6e-4b33-a7ed-d89c33f35722",
+  "sourceUrl": "https://styles.refero.design/style/14f6777e-1f6e-4b33-a7ed-d89c33f35722",
+  "fetchedAt": "2026-10-02T22:33:42.282300+00:00",
+  "extractedAt": "2026-10-02T22:33:42.305397+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Acme Cups New Zealand — Style Reference",
+  "htmlSha256": "bfddac9baa38630530daa33e3f7d98ab3df35a9fde435fb6b6fe1d90f2641d17",
+  "cache": ".cache/14f6777e-1f6e-4b33-a7ed-d89c33f35722.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d8a9a0dc9e54ea0b41cab9a9fee25c131776472401fea015b8c18a6d59faafae",
+      "bytes": 18631,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d68f733e-cc69-46a1-9d5b-600e4bd260b1.jpg",
+    "fetchedAt": "2026-10-02T22:33:44.260071+00:00",
+    "sha256": "f4ba16b4266b35b73e4bbb7bd38e630d657e68178dc55c05c6a5f620b95f2912",
+    "bytes": 102039,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

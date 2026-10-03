@@ -1,0 +1,29 @@
+{
+  "styleId": "bd96c1a6-32ba-42e0-bd5c-23c70a23142c",
+  "sourceUrl": "https://styles.refero.design/style/bd96c1a6-32ba-42e0-bd5c-23c70a23142c",
+  "fetchedAt": "2026-10-02T22:45:54.481791+00:00",
+  "extractedAt": "2026-10-02T22:45:54.504689+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ClickHouse — Style Reference",
+  "htmlSha256": "04c0e3d40e157c4b22ed4f7d122fd7ecb6aacc00dd6891e4647ac3fded5e8c68",
+  "cache": ".cache/bd96c1a6-32ba-42e0-bd5c-23c70a23142c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e8d1a23087b57c14d39d6a61c38259a371df34cbe8e651ba481f423b156d6482",
+      "bytes": 24662,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2bf536f8-2705-4f30-9f57-dc2331b96da6.jpg",
+    "fetchedAt": "2026-10-02T22:45:56.279016+00:00",
+    "sha256": "38ca6b9eb4c8caa137814ef1ad101bdd96351b89e88a875d89d2dd5c178b6861",
+    "bytes": 111138,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

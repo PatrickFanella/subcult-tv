@@ -1,0 +1,29 @@
+{
+  "styleId": "e793a53c-537e-46b0-881d-b15b63b9ff26",
+  "sourceUrl": "https://styles.refero.design/style/e793a53c-537e-46b0-881d-b15b63b9ff26",
+  "fetchedAt": "2026-10-02T22:54:26.325581+00:00",
+  "extractedAt": "2026-10-02T22:54:26.348909+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Obsidian — Style Reference",
+  "htmlSha256": "5d2c5e4ca74e2ab5e0af850f3436fc92cdd95e1309765aa87d9f076d3734c78f",
+  "cache": ".cache/e793a53c-537e-46b0-881d-b15b63b9ff26.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b3dd6f87f4a44ea4e20c5b457d4b8bc34fbc710e139277af50d82fcb473ee12e",
+      "bytes": 15207,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b40d0471-56c1-408b-8e78-4f1bd7c11875.jpg",
+    "fetchedAt": "2026-10-02T22:54:28.291269+00:00",
+    "sha256": "b1bd4ad3729ae45d6467d47f4280b01f7087f6a40eb2df3836ec9b70493aaa07",
+    "bytes": 114070,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

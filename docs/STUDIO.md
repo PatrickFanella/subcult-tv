@@ -29,7 +29,7 @@ Private destinations inside the repository are restricted to `studio/runtime/`. 
 
 The exported production library currently has twelve brands and seventeen media records. Approved Patrick logo treatments come from `studio/branding/patrick/logo-selection.json`; unapproved treatments are excluded. Metadata includes media rights, source descriptions and review status.
 
-The reference catalog has 590 records, backed by curated observations and completed Refero exports under `studio/references/`. The exporter supplies `references.json` plus content-addressed screenshots and attachments. These assets are not part of the public brand selection.
+The reference catalog has 1,404 records: 38 website studies, 24 curated style studies and all 1,342 Refero exports in the completed acquisition manifest under `studio/references/`. The exporter supplies `references.json` plus content-addressed screenshots and attachments. These assets are not part of the public brand selection.
 
 Migration `004_studio_references` adds searchable reference records, tags, links and import receipts. The API indexes the bundle on startup when `STUDIO_ROOT` is set. To update a running database explicitly, use `go run ./cmd/studio-index` from `api/` with the intended database and bundle environment. Preserve prior bundles and indexed assets during rollout.
 

@@ -1,0 +1,29 @@
+{
+  "styleId": "ef545f0f-e7ad-4296-b3eb-65f8d045a5d9",
+  "sourceUrl": "https://styles.refero.design/style/ef545f0f-e7ad-4296-b3eb-65f8d045a5d9",
+  "fetchedAt": "2026-10-02T22:17:02.206686+00:00",
+  "extractedAt": "2026-10-02T22:17:02.228359+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Mockups made easy — Style Reference",
+  "htmlSha256": "716d78d1fc4059cf2b25146c60fbdc34380025636991443f35861a01b4934709",
+  "cache": ".cache/ef545f0f-e7ad-4296-b3eb-65f8d045a5d9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0338c88c44b6ad105580d6a235d06ebc031709382c9ad87e93c5718bc527e95e",
+      "bytes": 20797,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ca6a23e2-b0f4-4c63-b2a0-24f406fa92a6.jpg",
+    "fetchedAt": "2026-10-02T22:17:04.270980+00:00",
+    "sha256": "3bf8a7a81df4364fe6e17b2b28a1e9f0e77087624d0cb14c71ecf5c775c9daad",
+    "bytes": 82396,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

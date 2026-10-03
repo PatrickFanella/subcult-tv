@@ -1,0 +1,29 @@
+{
+  "styleId": "408a149c-702f-4442-99df-bea49d9c0d9b",
+  "sourceUrl": "https://styles.refero.design/style/408a149c-702f-4442-99df-bea49d9c0d9b",
+  "fetchedAt": "2026-10-02T22:48:46.273580+00:00",
+  "extractedAt": "2026-10-02T22:48:46.297136+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bun — Style Reference",
+  "htmlSha256": "76c93db695eb33a218cb61f950cd8d37bd0a0513c659fa598f5b8b541b068c29",
+  "cache": ".cache/408a149c-702f-4442-99df-bea49d9c0d9b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4705a20bccf8609268db7e2a7ad4f799ec681ada9878081b53f2544448df7f25",
+      "bytes": 23803,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/52a295ba-cf74-41ac-91f3-42c70c150ee3.jpg",
+    "fetchedAt": "2026-10-02T22:48:48.258314+00:00",
+    "sha256": "980945373cccec264e8bb60e6cd0ea917b4da23204d96aad70bdb768e932183c",
+    "bytes": 131708,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

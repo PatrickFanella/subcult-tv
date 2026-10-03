@@ -1,0 +1,29 @@
+{
+  "styleId": "4aa6d64c-fa61-4b21-8ad6-3d7130ed5161",
+  "sourceUrl": "https://styles.refero.design/style/4aa6d64c-fa61-4b21-8ad6-3d7130ed5161",
+  "fetchedAt": "2026-10-02T22:30:54.213163+00:00",
+  "extractedAt": "2026-10-02T22:30:54.234415+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aker — Style Reference",
+  "htmlSha256": "c3c703538a7bbdc8ce69b14d19fb3b683cc780f5304f6e3c46f9d9b6e4655396",
+  "cache": ".cache/4aa6d64c-fa61-4b21-8ad6-3d7130ed5161.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b12315319796ae3c64600c1655b4a524ad40309ea54fd1069f370a813fc74ee3",
+      "bytes": 22477,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b00c911c-6647-4cc7-9635-fc48d50ea849.jpg",
+    "fetchedAt": "2026-10-02T22:30:56.297255+00:00",
+    "sha256": "78fe3dad5227ed1c28ed373fed4f17362e3ab55ae367fee36054921febae98a6",
+    "bytes": 122233,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

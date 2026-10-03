@@ -1,0 +1,29 @@
+{
+  "styleId": "5af6b791-6cad-4497-9e94-ace28e4fbd51",
+  "sourceUrl": "https://styles.refero.design/style/5af6b791-6cad-4497-9e94-ace28e4fbd51",
+  "fetchedAt": "2026-10-02T22:27:10.195252+00:00",
+  "extractedAt": "2026-10-02T22:27:10.218643+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Helloivy — Style Reference",
+  "htmlSha256": "bc7f6e3c7af673414c486a5137d30ee634c7cd952a0fb8e4fa2edb99faad588b",
+  "cache": ".cache/5af6b791-6cad-4497-9e94-ace28e4fbd51.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "caa6f9154b4f01d4323d36a4f7f284c26ac8a347c04d12e410cfcd73bac044bd",
+      "bytes": 22304,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f6a87a30-ccce-4dfc-8fe0-ddde49efe3bc.jpg",
+    "fetchedAt": "2026-10-02T22:27:12.312104+00:00",
+    "sha256": "c212dec3dbfc65ad0423352e1c90d2746c016f26e43e03dc14328a9daf4af0c0",
+    "bytes": 131799,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

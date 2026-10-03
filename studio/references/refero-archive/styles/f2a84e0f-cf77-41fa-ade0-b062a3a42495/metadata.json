@@ -1,0 +1,29 @@
+{
+  "styleId": "f2a84e0f-cf77-41fa-ade0-b062a3a42495",
+  "sourceUrl": "https://styles.refero.design/style/f2a84e0f-cf77-41fa-ade0-b062a3a42495",
+  "fetchedAt": "2026-10-02T22:01:46.233722+00:00",
+  "extractedAt": "2026-10-02T22:01:46.266304+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "GRAZA — Style Reference",
+  "htmlSha256": "2a7f561cfc0e18916f9717e5445d37a9e370fdbfa7b1763e6049decff61a94bf",
+  "cache": ".cache/f2a84e0f-cf77-41fa-ade0-b062a3a42495.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b4cca00662058234df9e26abeeb97b24e6301d7474ea94aa488949cf2dbc1d38",
+      "bytes": 21599,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b7ca43ba-0082-426b-a93f-5c956b3423ab.jpg",
+    "fetchedAt": "2026-10-02T22:01:48.247206+00:00",
+    "sha256": "0610868837b17b3a08dc361d1cb57d6907e2cf1d5b6bbbb69792152aadac31c0",
+    "bytes": 133235,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

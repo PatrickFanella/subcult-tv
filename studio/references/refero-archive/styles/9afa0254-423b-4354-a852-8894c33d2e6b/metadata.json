@@ -1,0 +1,29 @@
+{
+  "styleId": "9afa0254-423b-4354-a852-8894c33d2e6b",
+  "sourceUrl": "https://styles.refero.design/style/9afa0254-423b-4354-a852-8894c33d2e6b",
+  "fetchedAt": "2026-10-02T22:21:46.210923+00:00",
+  "extractedAt": "2026-10-02T22:21:46.231810+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ilovecreatives — Style Reference",
+  "htmlSha256": "4e3aeb7929faad03aa1d93bc44ca87410444a3b6b31c4022c829e53cdfbe0d59",
+  "cache": ".cache/9afa0254-423b-4354-a852-8894c33d2e6b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "daae5cfdd717da0e71b85fed3c7a77df810013141797533200fbb569a957c610",
+      "bytes": 21262,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/14fb2158-e747-4dfd-9bd6-1fbb170a222f.jpg",
+    "fetchedAt": "2026-10-02T22:21:48.212307+00:00",
+    "sha256": "ed3e46898278cccc393251003699884d248724189a2f498c1fdec3c78dd8d2c5",
+    "bytes": 201016,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

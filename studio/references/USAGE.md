@@ -2,7 +2,7 @@
 
 This directory contains a copied snapshot of the library in `~/Documents/Design References`. The original remains available. `import-manifest.json` records the source path, import time, file sizes and SHA-256 hashes. `catalog.json` describes the searchable records, screenshots, tags and supporting files. Binary screenshots use this repository's Git LFS rules.
 
-The latest snapshot contains 590 records: 62 curated site/style studies and 528 completed Refero exports. It includes 2,124 source files and 617 images. The Refero download was still running when this snapshot was made. Its cache, lock and unfinished records are excluded.
+The refreshed snapshot contains 1,404 records: 62 curated site/style studies and all 1,342 successfully downloaded Refero exports listed in the completed acquisition manifest. It includes 4,566 source files and 1,431 images. The acquisition completed on October 2, 2026; this snapshot was refreshed on October 3. This covers the downloaded sitemap selection, not a claim that every item in Refero's full catalog is available. Cache and lock files are excluded.
 
 ## Refresh from later downloads
 

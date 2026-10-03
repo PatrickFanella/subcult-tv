@@ -1,0 +1,29 @@
+{
+  "styleId": "32845f27-6b24-48be-af25-8e664f826b30",
+  "sourceUrl": "https://styles.refero.design/style/32845f27-6b24-48be-af25-8e664f826b30",
+  "fetchedAt": "2026-10-02T22:45:42.488541+00:00",
+  "extractedAt": "2026-10-02T22:45:42.511758+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Parallel Web Systems — Style Reference",
+  "htmlSha256": "194a3271d458682bd9625a505772777cb632efe815108a15efea5fa9556e9a7b",
+  "cache": ".cache/32845f27-6b24-48be-af25-8e664f826b30.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "05cbde45a2948cac68ec30dc750d99cd8cf4de13372c6361fc3c83684afb8eb2",
+      "bytes": 24461,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/68e7715e-dab8-4188-8706-060d59c11475.jpg",
+    "fetchedAt": "2026-10-02T22:45:44.202253+00:00",
+    "sha256": "733745fee2270ec0daab1048b254157c981de0bfb9bf2fe3ff52cc1ed17515a7",
+    "bytes": 69296,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "750387be-bda4-448b-950f-c9356c3ec25f",
+  "sourceUrl": "https://styles.refero.design/style/750387be-bda4-448b-950f-c9356c3ec25f",
+  "fetchedAt": "2026-10-02T22:24:34.230984+00:00",
+  "extractedAt": "2026-10-02T22:24:34.252853+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aira — Style Reference",
+  "htmlSha256": "d319e59d8e4beb6080241b29e9d651a3d01d743127bb1d24bbe599c1cbb7e1b7",
+  "cache": ".cache/750387be-bda4-448b-950f-c9356c3ec25f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8057d3de399deb2aa3afaf3292646ab85b9b88683276dd5abab2f8daca43b3bc",
+      "bytes": 20562,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2dacc96b-882a-4f3c-9bb1-6a76b6e2867f.jpg",
+    "fetchedAt": "2026-10-02T22:24:36.219473+00:00",
+    "sha256": "3069087540e85ea5ac6482d30eb48d12577b9851337f911f5661829b9339181d",
+    "bytes": 89897,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

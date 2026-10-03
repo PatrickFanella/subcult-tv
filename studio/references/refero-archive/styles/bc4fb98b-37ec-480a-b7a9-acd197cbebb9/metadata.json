@@ -1,0 +1,29 @@
+{
+  "styleId": "bc4fb98b-37ec-480a-b7a9-acd197cbebb9",
+  "sourceUrl": "https://styles.refero.design/style/bc4fb98b-37ec-480a-b7a9-acd197cbebb9",
+  "fetchedAt": "2026-10-02T22:51:58.275518+00:00",
+  "extractedAt": "2026-10-02T22:51:58.300455+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "JetBrains — Style Reference",
+  "htmlSha256": "b1a1a9331080a73e701063a7eebdebae1374d0ad093077d69efaa9815ae9210a",
+  "cache": ".cache/bc4fb98b-37ec-480a-b7a9-acd197cbebb9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c47a00801539cb96b51d71b1836604a18a738480c72c3de92b3a80d019dc1f16",
+      "bytes": 25897,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/719cc207-881c-4c15-9f6c-6a3ef716f0dd.jpg",
+    "fetchedAt": "2026-10-02T22:52:00.274833+00:00",
+    "sha256": "724cfc95c26cbab5acb7506a3e12a1b50bf5fbdc7d9c9670bf60256ee98a2c5f",
+    "bytes": 105345,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

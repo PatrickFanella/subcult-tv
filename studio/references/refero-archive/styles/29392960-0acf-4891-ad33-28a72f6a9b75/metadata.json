@@ -1,0 +1,29 @@
+{
+  "styleId": "29392960-0acf-4891-ad33-28a72f6a9b75",
+  "sourceUrl": "https://styles.refero.design/style/29392960-0acf-4891-ad33-28a72f6a9b75",
+  "fetchedAt": "2026-10-02T22:25:54.195075+00:00",
+  "extractedAt": "2026-10-02T22:25:54.216673+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "WalletConnect — Style Reference",
+  "htmlSha256": "5bd4923dea89d470894dfd447869b47d63d754272c9d9772187e80fb531ec187",
+  "cache": ".cache/29392960-0acf-4891-ad33-28a72f6a9b75.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f53289abf29b84daacc9b7c7062d809977c1c6014ce607a644adc169631019b7",
+      "bytes": 23029,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/829e4017-575c-4479-87d6-7c53b7dc0765.jpg",
+    "fetchedAt": "2026-10-02T22:25:56.348010+00:00",
+    "sha256": "b895038bb0564decf995097962e83ce2041a4931decc9fb1c3b57ec4968cc6dd",
+    "bytes": 178762,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

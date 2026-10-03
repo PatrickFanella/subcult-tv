@@ -1,0 +1,29 @@
+{
+  "styleId": "355e8465-df7d-486a-9d76-2ace37d076a2",
+  "sourceUrl": "https://styles.refero.design/style/355e8465-df7d-486a-9d76-2ace37d076a2",
+  "fetchedAt": "2026-10-02T22:36:06.186428+00:00",
+  "extractedAt": "2026-10-02T22:36:06.208623+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Peloton — Style Reference",
+  "htmlSha256": "ee7d20f6f09823d1c894ecdeeeb35d176ab2745ada9c02f4eac69130525e111e",
+  "cache": ".cache/355e8465-df7d-486a-9d76-2ace37d076a2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d685a6af34c8dee419dd9d4c093862ea7d710b7b527f604ec567470032fba667",
+      "bytes": 21113,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8d242220-63e9-4db7-9c51-0a3013dce535.jpg",
+    "fetchedAt": "2026-10-02T22:36:08.172855+00:00",
+    "sha256": "093e10edc818fee427a7cd0798a49f827802fb932faf02037a47704971798623",
+    "bytes": 43878,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

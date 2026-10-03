@@ -1,0 +1,29 @@
+{
+  "styleId": "deb6c017-d2d3-4945-aaee-fa3d9ea6de70",
+  "sourceUrl": "https://styles.refero.design/style/deb6c017-d2d3-4945-aaee-fa3d9ea6de70",
+  "fetchedAt": "2026-10-02T22:22:14.208518+00:00",
+  "extractedAt": "2026-10-02T22:22:14.231155+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Strut — Style Reference",
+  "htmlSha256": "9582ae014485bf16dd3cfa8694124b7ae884b13dee161a60b6277f76d387e791",
+  "cache": ".cache/deb6c017-d2d3-4945-aaee-fa3d9ea6de70.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fc61a1aaa995342fd9b4a434a4ec49aa5bc7d525a7fd4c036b61e6cb3cd47e37",
+      "bytes": 21343,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9c68cba1-1030-4503-b9a6-42cebedf1625.jpg",
+    "fetchedAt": "2026-10-02T22:22:16.247120+00:00",
+    "sha256": "90ff38a831d4384132527b7dfc46ddeaaaaf844641667045f1ab801a0f204ef1",
+    "bytes": 146948,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

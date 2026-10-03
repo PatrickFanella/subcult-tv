@@ -1,0 +1,29 @@
+{
+  "styleId": "8065e38a-cdb7-4645-b168-98e6f80e7118",
+  "sourceUrl": "https://styles.refero.design/style/8065e38a-cdb7-4645-b168-98e6f80e7118",
+  "fetchedAt": "2026-10-02T22:40:50.451233+00:00",
+  "extractedAt": "2026-10-02T22:40:50.474010+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Uizard — Style Reference",
+  "htmlSha256": "3dee39e15300d74acef20a548499e5629fe3b5debad003fa771a057091fb0234",
+  "cache": ".cache/8065e38a-cdb7-4645-b168-98e6f80e7118.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2dae263c3b04162f2409951e81adbe3b74cc4a437fad7847fef1cebcb1cb7e37",
+      "bytes": 20500,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c3627993-a817-473c-b3c3-825d31627873.jpg",
+    "fetchedAt": "2026-10-02T22:40:52.255699+00:00",
+    "sha256": "6693172b27506bd6255624e9e8d202648fd0054299801a4b1140f544b441f894",
+    "bytes": 83560,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

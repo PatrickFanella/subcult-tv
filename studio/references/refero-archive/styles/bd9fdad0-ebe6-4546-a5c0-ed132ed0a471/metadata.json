@@ -1,0 +1,29 @@
+{
+  "styleId": "bd9fdad0-ebe6-4546-a5c0-ed132ed0a471",
+  "sourceUrl": "https://styles.refero.design/style/bd9fdad0-ebe6-4546-a5c0-ed132ed0a471",
+  "fetchedAt": "2026-10-02T22:46:58.289233+00:00",
+  "extractedAt": "2026-10-02T22:46:58.309871+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "DNA — Style Reference",
+  "htmlSha256": "2e16141f0c641ea5305c19e54d6a6aa2adf93b786f0353ae3036ec18a9ece01e",
+  "cache": ".cache/bd9fdad0-ebe6-4546-a5c0-ed132ed0a471.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b4df1732a1b42772380fb7df63d3b8f2dd7bc137f107eb95fdbf9ff1d7f10d58",
+      "bytes": 18129,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7bb3f785-8b55-4575-9e06-c648b3c651e4.jpg",
+    "fetchedAt": "2026-10-02T22:47:00.295632+00:00",
+    "sha256": "5b924312cd52095e55844522cce75f5f85a9ed657c82c53f14cca7ecb5c18caa",
+    "bytes": 119637,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

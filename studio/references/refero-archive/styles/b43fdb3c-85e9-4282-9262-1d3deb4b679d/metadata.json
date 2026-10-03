@@ -1,0 +1,29 @@
+{
+  "styleId": "b43fdb3c-85e9-4282-9262-1d3deb4b679d",
+  "sourceUrl": "https://styles.refero.design/style/b43fdb3c-85e9-4282-9262-1d3deb4b679d",
+  "fetchedAt": "2026-10-02T22:02:34.354672+00:00",
+  "extractedAt": "2026-10-02T22:02:34.382176+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Stykka — Style Reference",
+  "htmlSha256": "40c1e0aed49bef1e90afb2d74102dda55f6451f865e7908052cbce4204da60c9",
+  "cache": ".cache/b43fdb3c-85e9-4282-9262-1d3deb4b679d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "21cefbe1efea239735d3ee6c4127bceb7869658535e57ec4f1298d939cbec7c2",
+      "bytes": 21431,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/77ff91ed-e81b-4188-b470-8728d65da483.jpg",
+    "fetchedAt": "2026-10-02T22:02:36.264291+00:00",
+    "sha256": "9ad9762815a6a1c75e9de7a06c7c6f75f198113e09d55c5bcd99e0e79f343956",
+    "bytes": 181333,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

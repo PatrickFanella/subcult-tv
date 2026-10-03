@@ -1,0 +1,29 @@
+{
+  "styleId": "34b4856c-cc2b-4164-ab90-1b87cf8e0213",
+  "sourceUrl": "https://styles.refero.design/style/34b4856c-cc2b-4164-ab90-1b87cf8e0213",
+  "fetchedAt": "2026-10-02T22:29:26.327813+00:00",
+  "extractedAt": "2026-10-02T22:29:26.350000+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Everlane — Style Reference",
+  "htmlSha256": "bd4d9d22e92a1e28c96105f00338b402c107965181a57e1a2735f531bdc7d6c0",
+  "cache": ".cache/34b4856c-cc2b-4164-ab90-1b87cf8e0213.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "12ed3946d53309db1474271309f6f6598aa9602288f7cff28cbb3d8b076d43de",
+      "bytes": 19639,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1da79de9-d08a-434f-9968-e021a7bc9c7d.jpg",
+    "fetchedAt": "2026-10-02T22:29:28.294071+00:00",
+    "sha256": "c61c15e84ec18dcd45899c0bbc16e91956454de9c22b350bb69b152bcbfff0c3",
+    "bytes": 119177,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

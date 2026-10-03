@@ -1,0 +1,29 @@
+{
+  "styleId": "b1ec0888-1dbe-439c-bccd-ba2c39effb70",
+  "sourceUrl": "https://styles.refero.design/style/b1ec0888-1dbe-439c-bccd-ba2c39effb70",
+  "fetchedAt": "2026-10-02T22:31:54.190544+00:00",
+  "extractedAt": "2026-10-02T22:31:54.213688+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Acolorbright — Style Reference",
+  "htmlSha256": "c9604c8bd2e937c47c52e0498e164462823233cb2abf7cade24263288df5ccac",
+  "cache": ".cache/b1ec0888-1dbe-439c-bccd-ba2c39effb70.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "00fa17dbcff79779bf0a32dd068e90d482ed39d0a639cc42eaa7888b4fcdaa42",
+      "bytes": 18662,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b8342ad7-bf05-4bbb-9c34-e4a0b6bb94bc.jpg",
+    "fetchedAt": "2026-10-02T22:31:56.199229+00:00",
+    "sha256": "9165fa258b1a01333a72e074693f778bca5d5be1fc043ec34aa144a0e83370f2",
+    "bytes": 98020,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

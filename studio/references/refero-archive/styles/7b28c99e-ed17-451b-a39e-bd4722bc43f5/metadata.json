@@ -1,0 +1,29 @@
+{
+  "styleId": "7b28c99e-ed17-451b-a39e-bd4722bc43f5",
+  "sourceUrl": "https://styles.refero.design/style/7b28c99e-ed17-451b-a39e-bd4722bc43f5",
+  "fetchedAt": "2026-10-02T22:36:10.449006+00:00",
+  "extractedAt": "2026-10-02T22:36:10.471544+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "21 TSI — Style Reference",
+  "htmlSha256": "22655b43f42952927e215910e5cd3439c39b07f43c9a0c78acea85f38c3a640e",
+  "cache": ".cache/7b28c99e-ed17-451b-a39e-bd4722bc43f5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7a6a2a1abbe83d0a37ab4678d8df95553de06d54e74d5cdfb913116982d530ca",
+      "bytes": 19654,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6e3b6066-8950-4d2e-aa05-3271d67b57d3.jpg",
+    "fetchedAt": "2026-10-02T22:36:12.185426+00:00",
+    "sha256": "19ded46a515882798d9bc62a5938a656cc586ba3a5a8307be223e28c55e0d884",
+    "bytes": 14998,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

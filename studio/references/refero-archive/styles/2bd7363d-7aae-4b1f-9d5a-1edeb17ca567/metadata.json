@@ -1,0 +1,29 @@
+{
+  "styleId": "2bd7363d-7aae-4b1f-9d5a-1edeb17ca567",
+  "sourceUrl": "https://styles.refero.design/style/2bd7363d-7aae-4b1f-9d5a-1edeb17ca567",
+  "fetchedAt": "2026-10-02T22:47:10.221434+00:00",
+  "extractedAt": "2026-10-02T22:47:10.255528+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "MotherDuck — Style Reference",
+  "htmlSha256": "bfdc19aa261c1dad3c0791490877cfde4800efac4b967db406e3fe1330334f87",
+  "cache": ".cache/2bd7363d-7aae-4b1f-9d5a-1edeb17ca567.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c88027f428d87fd3717500729a5d63e3f2c38157f1f8817c00f2e526be3dff91",
+      "bytes": 25023,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/016b6669-86b6-4ba4-96e2-467602c79118.jpg",
+    "fetchedAt": "2026-10-02T22:47:12.285682+00:00",
+    "sha256": "39d13699f51c5b4ccc12512df4c99915eac72c12f59c75699e6a1ec7e525c4bc",
+    "bytes": 118949,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

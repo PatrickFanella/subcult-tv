@@ -1,0 +1,29 @@
+{
+  "styleId": "ee8698fd-bb1e-4813-9571-5db39e508542",
+  "sourceUrl": "https://styles.refero.design/style/ee8698fd-bb1e-4813-9571-5db39e508542",
+  "fetchedAt": "2026-10-02T22:33:10.404282+00:00",
+  "extractedAt": "2026-10-02T22:33:10.426588+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tailark Pro — Style Reference",
+  "htmlSha256": "4431f1a492374e4cc472516a2ea27bb1c5e1253fce9bfcd693738f6fa54c5481",
+  "cache": ".cache/ee8698fd-bb1e-4813-9571-5db39e508542.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f4f9edabe3f554d9840767ffa703a0c72126ab4bc1ef98e4cf87111c03057ff6",
+      "bytes": 27100,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ba181f83-111e-4ad3-9b7b-4a4beca27253.jpg",
+    "fetchedAt": "2026-10-02T22:33:12.137581+00:00",
+    "sha256": "ea877601730523e975279d9fe53171e58c05c65c2dcb8045fe1bf3fb5207ceb0",
+    "bytes": 38100,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

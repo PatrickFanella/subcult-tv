@@ -1,0 +1,29 @@
+{
+  "styleId": "502af24a-b765-44b2-828f-dd610f27a125",
+  "sourceUrl": "https://styles.refero.design/style/502af24a-b765-44b2-828f-dd610f27a125",
+  "fetchedAt": "2026-10-02T22:34:50.233774+00:00",
+  "extractedAt": "2026-10-02T22:34:50.257039+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Deezer — Style Reference",
+  "htmlSha256": "ac061ba9f4f011d50d14c9121d6dff075136ee2e2ab6365008fa49942e782cf2",
+  "cache": ".cache/502af24a-b765-44b2-828f-dd610f27a125.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "725ce047bfe4ad13b333080f8bae69d7c3d12c44d20b1ad6f37fac848b15e953",
+      "bytes": 23464,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/77c1df41-7220-4d5f-999e-9c2f5d0629e3.jpg",
+    "fetchedAt": "2026-10-02T22:34:52.256160+00:00",
+    "sha256": "69e18ab4efc395dc49c6bff53e3192eb7c383325109ac4d6180d16ae15ba72c6",
+    "bytes": 64138,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "d56508d7-c307-47f7-ad30-052e5a69f01f",
+  "sourceUrl": "https://styles.refero.design/style/d56508d7-c307-47f7-ad30-052e5a69f01f",
+  "fetchedAt": "2026-10-02T22:02:42.248240+00:00",
+  "extractedAt": "2026-10-02T22:02:42.273488+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Spring/Summer — Style Reference",
+  "htmlSha256": "75707cc32c72895402d954bcec81d7521b391ce92e32f91ba5c512ea49c48b91",
+  "cache": ".cache/d56508d7-c307-47f7-ad30-052e5a69f01f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6732f61d7afa552f7ab2c16897b27446a8c0920d517cd36dce44c909775df0b0",
+      "bytes": 18329,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d4dc1078-0ac2-4b01-8775-1350c1b942b2.jpg",
+    "fetchedAt": "2026-10-02T22:02:44.262016+00:00",
+    "sha256": "c9aef14b16bfea7e674779c12d543d6d6fd8c5aebbc93caf38536ba3ac6c0eb7",
+    "bytes": 118051,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

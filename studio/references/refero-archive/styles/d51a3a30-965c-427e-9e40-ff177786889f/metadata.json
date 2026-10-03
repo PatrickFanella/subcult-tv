@@ -1,0 +1,29 @@
+{
+  "styleId": "d51a3a30-965c-427e-9e40-ff177786889f",
+  "sourceUrl": "https://styles.refero.design/style/d51a3a30-965c-427e-9e40-ff177786889f",
+  "fetchedAt": "2026-10-02T22:31:42.334356+00:00",
+  "extractedAt": "2026-10-02T22:31:42.368557+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vetric — Style Reference",
+  "htmlSha256": "3e67b03f99069266878c6880095d986c7e4a67966c53cbf72ea49e8e9e95666b",
+  "cache": ".cache/d51a3a30-965c-427e-9e40-ff177786889f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fae1c5164b19658d9d43e49c85ff0ae4cf56aeeb811715cfb348d68d0bb1cf57",
+      "bytes": 19348,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/180a21fd-c5fd-4070-ae67-aa69bc688d47.jpg",
+    "fetchedAt": "2026-10-02T22:31:44.196300+00:00",
+    "sha256": "b0c9af68771f7eaff13b04db814dae3c938b2312efd47e229cff63e8a5f9c823",
+    "bytes": 60647,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

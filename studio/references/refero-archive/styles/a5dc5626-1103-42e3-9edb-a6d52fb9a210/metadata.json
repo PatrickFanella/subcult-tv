@@ -1,0 +1,29 @@
+{
+  "styleId": "a5dc5626-1103-42e3-9edb-a6d52fb9a210",
+  "sourceUrl": "https://styles.refero.design/style/a5dc5626-1103-42e3-9edb-a6d52fb9a210",
+  "fetchedAt": "2026-10-02T22:45:38.208704+00:00",
+  "extractedAt": "2026-10-02T22:45:38.230291+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Rivian — Style Reference",
+  "htmlSha256": "0d127e4331c45237257dd6ab8ea0c93f09126826a19b37b375c3118169b6b70c",
+  "cache": ".cache/a5dc5626-1103-42e3-9edb-a6d52fb9a210.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f11e0440f651c0f7043be52f6aecc1cf4b7c8171543c7cfa8bf59d74ba18b323",
+      "bytes": 24000,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/65620f2f-0bbd-46ee-b1dc-b6b6afd5dcc7.jpg",
+    "fetchedAt": "2026-10-02T22:45:40.311473+00:00",
+    "sha256": "273be6ef8486bc12eedea6e159af026072d64e0f741bbc5334fd2c29039923f1",
+    "bytes": 321152,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

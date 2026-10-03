@@ -1,0 +1,29 @@
+{
+  "styleId": "cafcbe97-58eb-4331-9a0a-c5e6969e8a04",
+  "sourceUrl": "https://styles.refero.design/style/cafcbe97-58eb-4331-9a0a-c5e6969e8a04",
+  "fetchedAt": "2026-10-02T22:15:46.206367+00:00",
+  "extractedAt": "2026-10-02T22:15:46.229619+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Voicenotes — Style Reference",
+  "htmlSha256": "6a800e943226a1e24a0d1d6f228218e9287a8c281075d0e317875c49d5072291",
+  "cache": ".cache/cafcbe97-58eb-4331-9a0a-c5e6969e8a04.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b6b875e771bad89610be42a14fa41aab95d6784041e92aa2babca6071a8555b1",
+      "bytes": 21024,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e3fbf070-f539-4f72-ac43-db1a92417d5c.jpg",
+    "fetchedAt": "2026-10-02T22:15:48.198721+00:00",
+    "sha256": "8507968345fa4721992311877e68536a78d0fc9106f34c1440c3b861b7e98a0c",
+    "bytes": 173662,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

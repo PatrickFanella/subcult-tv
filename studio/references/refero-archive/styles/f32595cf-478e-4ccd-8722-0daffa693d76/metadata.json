@@ -1,0 +1,29 @@
+{
+  "styleId": "f32595cf-478e-4ccd-8722-0daffa693d76",
+  "sourceUrl": "https://styles.refero.design/style/f32595cf-478e-4ccd-8722-0daffa693d76",
+  "fetchedAt": "2026-10-02T22:03:06.197099+00:00",
+  "extractedAt": "2026-10-02T22:03:06.218428+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bumble — Style Reference",
+  "htmlSha256": "d441f80752aa8b573954f096994761e35991223de8c3a0d9224d95ede73a8142",
+  "cache": ".cache/f32595cf-478e-4ccd-8722-0daffa693d76.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "54109eeb2c1535729fe71c453473a9e998c70f6d84d5488d982cd56dbaabcb25",
+      "bytes": 18250,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/838e3c5a-819c-4c1c-9df2-365d90f6805c.jpg",
+    "fetchedAt": "2026-10-02T22:03:08.265140+00:00",
+    "sha256": "ebcfd49a2b2002a009db1e4926712df23c49636c21bade265944dc31005bd992",
+    "bytes": 104175,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

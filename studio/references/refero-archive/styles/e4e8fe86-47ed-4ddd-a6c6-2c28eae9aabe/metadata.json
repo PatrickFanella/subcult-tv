@@ -1,0 +1,29 @@
+{
+  "styleId": "e4e8fe86-47ed-4ddd-a6c6-2c28eae9aabe",
+  "sourceUrl": "https://styles.refero.design/style/e4e8fe86-47ed-4ddd-a6c6-2c28eae9aabe",
+  "fetchedAt": "2026-10-02T22:31:50.186193+00:00",
+  "extractedAt": "2026-10-02T22:31:50.207283+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Eight Sleep — Style Reference",
+  "htmlSha256": "c51d46a2ab607e113fac10576de3694267c4983f9226ce3361c0d6c3e7a9fa8d",
+  "cache": ".cache/e4e8fe86-47ed-4ddd-a6c6-2c28eae9aabe.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c77261abc90d876dd41c2f647b649fcf522b4ce7ade074a26a8286da5c2ac512",
+      "bytes": 21341,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/87518208-c5f5-4bfc-b2e1-71edbf84b2ca.jpg",
+    "fetchedAt": "2026-10-02T22:31:52.353814+00:00",
+    "sha256": "800b5d726eea0c6fab85f3b5b199942fd468133d3fc7d016507e00617d0216a4",
+    "bytes": 103478,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

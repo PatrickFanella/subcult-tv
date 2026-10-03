@@ -1,0 +1,29 @@
+{
+  "styleId": "4d832c12-dd14-45b0-bba7-2d3bc25d8264",
+  "sourceUrl": "https://styles.refero.design/style/4d832c12-dd14-45b0-bba7-2d3bc25d8264",
+  "fetchedAt": "2026-10-02T22:24:30.188582+00:00",
+  "extractedAt": "2026-10-02T22:24:30.210902+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Loops — Style Reference",
+  "htmlSha256": "8708eb47ec13bb6514c6c42c5a99e1d4afd6df651475653f2a860151feeacf08",
+  "cache": ".cache/4d832c12-dd14-45b0-bba7-2d3bc25d8264.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a0e5823b35ec4e780ecaba63dac831c9b3b5e418c1e8049004195144fe185c5d",
+      "bytes": 22906,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/71871994-7a1d-45aa-a6a3-fc9ba73ccffb.jpg",
+    "fetchedAt": "2026-10-02T22:24:32.138079+00:00",
+    "sha256": "dc4ddd2e3ab300064e2dbd7ec8ecccc36454535f7d92b638a8043c4bea5adec3",
+    "bytes": 44755,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

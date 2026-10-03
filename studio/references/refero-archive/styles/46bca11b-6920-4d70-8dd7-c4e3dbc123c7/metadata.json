@@ -1,0 +1,29 @@
+{
+  "styleId": "46bca11b-6920-4d70-8dd7-c4e3dbc123c7",
+  "sourceUrl": "https://styles.refero.design/style/46bca11b-6920-4d70-8dd7-c4e3dbc123c7",
+  "fetchedAt": "2026-10-02T22:20:22.198332+00:00",
+  "extractedAt": "2026-10-02T22:20:22.221036+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "iUSPC by Coinshift — Style Reference",
+  "htmlSha256": "cbd30f743857caf71dcd2ec1fab22d37dfcd597e24cae3c58afa1a741f506b0e",
+  "cache": ".cache/46bca11b-6920-4d70-8dd7-c4e3dbc123c7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "942b3ac47fef70818a185703b30146119483b864eee00a86cf4ee044c815683e",
+      "bytes": 20994,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b317f308-f4ed-4bab-9fa2-b41d2018d734.jpg",
+    "fetchedAt": "2026-10-02T22:20:24.162491+00:00",
+    "sha256": "811bbdcbe23da51c62dc2e5671fb0048bf6d5be493e1bafe863d1bec8160ee08",
+    "bytes": 68350,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

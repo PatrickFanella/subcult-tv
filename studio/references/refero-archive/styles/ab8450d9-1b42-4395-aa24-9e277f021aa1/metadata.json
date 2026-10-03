@@ -1,0 +1,29 @@
+{
+  "styleId": "ab8450d9-1b42-4395-aa24-9e277f021aa1",
+  "sourceUrl": "https://styles.refero.design/style/ab8450d9-1b42-4395-aa24-9e277f021aa1",
+  "fetchedAt": "2026-10-02T22:01:14.520145+00:00",
+  "extractedAt": "2026-10-02T22:01:14.564310+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Circle — Style Reference",
+  "htmlSha256": "41707e824e859e048d3d0cb060ff56c2fe1573468073ea4f55d8e7f654509802",
+  "cache": ".cache/ab8450d9-1b42-4395-aa24-9e277f021aa1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1bc7705f50d77820eb54da03be9f86cb0f70188a2df234d3ce9ca03639ba145b",
+      "bytes": 24012,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/370b74b3-a7c5-466c-b7eb-36b3a82ceaf1.jpg",
+    "fetchedAt": "2026-10-02T22:01:16.375110+00:00",
+    "sha256": "4b463e2a4eab2d191eb677f2a10118303c2c1cf9dcdac5defacb9206231bef0a",
+    "bytes": 79283,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

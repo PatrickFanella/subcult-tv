@@ -1,0 +1,29 @@
+{
+  "styleId": "df5e2be4-c2bd-42bb-bbc7-409bae6355c3",
+  "sourceUrl": "https://styles.refero.design/style/df5e2be4-c2bd-42bb-bbc7-409bae6355c3",
+  "fetchedAt": "2026-10-02T22:53:10.965035+00:00",
+  "extractedAt": "2026-10-02T22:53:10.988355+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Coinbase Spain — Style Reference",
+  "htmlSha256": "b16fe926985470bf27a77f0795202b251fd0747dd45232b00b4c0cb5ce970a40",
+  "cache": ".cache/df5e2be4-c2bd-42bb-bbc7-409bae6355c3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af85d161d8d2305d28b115aebf1151b271d1bb3c4781956eec121e9a9cc4aa3d",
+      "bytes": 13680,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0120abfe-f170-4832-85f7-335d26bf6754.jpg",
+    "fetchedAt": "2026-10-02T22:53:12.298970+00:00",
+    "sha256": "d2f7616d874ec4a4146986d12f2960c3f15ad6a5a35deaa78c06490135b5281f",
+    "bytes": 113906,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

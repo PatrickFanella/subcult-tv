@@ -1,0 +1,29 @@
+{
+  "styleId": "da0bfca3-df1d-49d9-ae25-61d8f348426f",
+  "sourceUrl": "https://styles.refero.design/style/da0bfca3-df1d-49d9-ae25-61d8f348426f",
+  "fetchedAt": "2026-10-02T22:55:10.223806+00:00",
+  "extractedAt": "2026-10-02T22:55:10.246852+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Passwords — Style Reference",
+  "htmlSha256": "faa39930e51d7353e6d581825a9d2e208bb86a85791444cf8fd062eba3e123be",
+  "cache": ".cache/da0bfca3-df1d-49d9-ae25-61d8f348426f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6c5e0f050574c786c9f4d0db2d5aeb4d493f5ba737aa639404e4d33ee083f1f2",
+      "bytes": 14522,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e6e49bea-894c-4cb0-999d-c7bfab866797.jpg",
+    "fetchedAt": "2026-10-02T22:55:12.236357+00:00",
+    "sha256": "fe94941220bc5cd5232d7909f7b28a76ba2471ddb52210ed9964096da8045bda",
+    "bytes": 108309,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

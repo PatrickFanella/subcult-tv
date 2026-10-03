@@ -1,0 +1,29 @@
+{
+  "styleId": "88e9d606-7e8f-479c-9508-1b081e254ed9",
+  "sourceUrl": "https://styles.refero.design/style/88e9d606-7e8f-479c-9508-1b081e254ed9",
+  "fetchedAt": "2026-10-02T22:25:34.422828+00:00",
+  "extractedAt": "2026-10-02T22:25:34.444894+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Marco — Style Reference",
+  "htmlSha256": "e36cb85db6ccd40c6f28678b9ca21796b1fe2d52a44dd4432b790e48f39cfacb",
+  "cache": ".cache/88e9d606-7e8f-479c-9508-1b081e254ed9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "148a93a0328e38e5a4e69a184f21f1a7c82db4aace642c8d5c10c3b40e057424",
+      "bytes": 27937,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/92082812-50b7-47a5-862f-6b3b1a1e95fa.jpg",
+    "fetchedAt": "2026-10-02T22:25:36.239312+00:00",
+    "sha256": "2c3f4218b214d2cc435de3ba7a366913504bac3252c3a8c014b34697ced37bb1",
+    "bytes": 124052,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

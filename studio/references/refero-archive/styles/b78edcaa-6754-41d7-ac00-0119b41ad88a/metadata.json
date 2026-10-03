@@ -1,0 +1,29 @@
+{
+  "styleId": "b78edcaa-6754-41d7-ac00-0119b41ad88a",
+  "sourceUrl": "https://styles.refero.design/style/b78edcaa-6754-41d7-ac00-0119b41ad88a",
+  "fetchedAt": "2026-10-02T22:46:54.231084+00:00",
+  "extractedAt": "2026-10-02T22:46:54.253806+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Syllabus — Style Reference",
+  "htmlSha256": "eefeedb35a7d4d251297857fa58be226d7010bb91f0c938fb7b505e563af0f8e",
+  "cache": ".cache/b78edcaa-6754-41d7-ac00-0119b41ad88a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a94b72f98a5a75e86c7a28a7b5d94839292468a35d722286fbc4e6eca62c3912",
+      "bytes": 18471,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/71c936aa-2047-453e-8658-00c58839bca0.jpg",
+    "fetchedAt": "2026-10-02T22:46:56.265492+00:00",
+    "sha256": "6628733c57a6670cf1ed1fa6349465a95455c460eae087509b86fcf8fa779722",
+    "bytes": 103101,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

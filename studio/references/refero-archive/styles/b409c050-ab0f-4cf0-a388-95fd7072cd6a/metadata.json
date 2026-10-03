@@ -1,0 +1,29 @@
+{
+  "styleId": "b409c050-ab0f-4cf0-a388-95fd7072cd6a",
+  "sourceUrl": "https://styles.refero.design/style/b409c050-ab0f-4cf0-a388-95fd7072cd6a",
+  "fetchedAt": "2026-10-02T22:15:34.215692+00:00",
+  "extractedAt": "2026-10-02T22:15:34.239938+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Free Podcast Hosting — Style Reference",
+  "htmlSha256": "c1c39846a444b8c1b38db476d8daacccdbddd9af9b325be6af6c7a46a0e642d8",
+  "cache": ".cache/b409c050-ab0f-4cf0-a388-95fd7072cd6a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "47761ae7e07f13cad6cade26162033eb869381b4df2e6d02687c5d92e754046b",
+      "bytes": 24272,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c9794f12-dff9-4741-9c70-46efcea4dc4b.jpg",
+    "fetchedAt": "2026-10-02T22:15:36.313848+00:00",
+    "sha256": "111feb66e15e10c80eb5546f57d96683285f6a5cc5e973f9c7849abd93d13b33",
+    "bytes": 102798,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

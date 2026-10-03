@@ -1,0 +1,29 @@
+{
+  "styleId": "8872694d-261d-4eb4-b355-fb39ee4c37ad",
+  "sourceUrl": "https://styles.refero.design/style/8872694d-261d-4eb4-b355-fb39ee4c37ad",
+  "fetchedAt": "2026-10-02T22:21:14.216511+00:00",
+  "extractedAt": "2026-10-02T22:21:14.238123+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Inthememory — Style Reference",
+  "htmlSha256": "436a17d740bf24ea409421f397a621ed44623bd435d1a5adfcd8c7057ddaca58",
+  "cache": ".cache/8872694d-261d-4eb4-b355-fb39ee4c37ad.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "56b7f92d77cb7749781cf2bc225c798c9c2c331ad5007ef1ec9467da22d6e93c",
+      "bytes": 22903,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1678383f-9f25-4731-9246-a23a2e4e94a7.jpg",
+    "fetchedAt": "2026-10-02T22:21:16.319102+00:00",
+    "sha256": "2edff6df011a758acbd724bb8a411b2af0628f85aff987a2cd883de8ad9b0beb",
+    "bytes": 88344,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

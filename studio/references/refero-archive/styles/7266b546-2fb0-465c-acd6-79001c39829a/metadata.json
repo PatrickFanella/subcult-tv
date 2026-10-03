@@ -1,0 +1,29 @@
+{
+  "styleId": "7266b546-2fb0-465c-acd6-79001c39829a",
+  "sourceUrl": "https://styles.refero.design/style/7266b546-2fb0-465c-acd6-79001c39829a",
+  "fetchedAt": "2026-10-02T22:55:06.241331+00:00",
+  "extractedAt": "2026-10-02T22:55:06.263232+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tesla — Style Reference",
+  "htmlSha256": "8646e99637d10c5e64b5e027c7a2c74be7437e3c3d52f312a9af21e2edb96d27",
+  "cache": ".cache/7266b546-2fb0-465c-acd6-79001c39829a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2f4d7b9a655298c6cc311877f328eddc02b59f1b9cecdefb1ab468cb0bb0cb2f",
+      "bytes": 14007,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4bc7b538-3e84-421a-9318-35b864bac5c5.jpg",
+    "fetchedAt": "2026-10-02T22:55:08.258807+00:00",
+    "sha256": "827bda38b6e7e2e6722745eeefeb93c8d8953c705b5ca7ac2d439915892057f4",
+    "bytes": 149027,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

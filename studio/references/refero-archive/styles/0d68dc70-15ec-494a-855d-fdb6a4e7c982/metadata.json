@@ -1,0 +1,29 @@
+{
+  "styleId": "0d68dc70-15ec-494a-855d-fdb6a4e7c982",
+  "sourceUrl": "https://styles.refero.design/style/0d68dc70-15ec-494a-855d-fdb6a4e7c982",
+  "fetchedAt": "2026-10-02T22:26:30.370871+00:00",
+  "extractedAt": "2026-10-02T22:26:30.393734+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Danilo Rodrigues — Style Reference",
+  "htmlSha256": "d7a3cf69ac29cca56d7e6125c0491cc59753d319255371d6677f091bfc7a9c24",
+  "cache": ".cache/0d68dc70-15ec-494a-855d-fdb6a4e7c982.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1c29da5ad1e684b2b2d092a26c176da5d265010d5d7e3a700e55d5f683d6e882",
+      "bytes": 17625,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1d3137d9-41cb-411f-af90-0847d3b0c4d3.jpg",
+    "fetchedAt": "2026-10-02T22:26:32.281660+00:00",
+    "sha256": "ea6a565a88167cf27e17673f9de0d695fd76d9e577872ac2edbbc0fd74189c34",
+    "bytes": 79262,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

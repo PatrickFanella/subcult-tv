@@ -1,0 +1,29 @@
+{
+  "styleId": "2a830d03-cebc-48f0-a50f-ad78168c5026",
+  "sourceUrl": "https://styles.refero.design/style/2a830d03-cebc-48f0-a50f-ad78168c5026",
+  "fetchedAt": "2026-10-02T22:12:22.179499+00:00",
+  "extractedAt": "2026-10-02T22:12:22.203310+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Forner — Style Reference",
+  "htmlSha256": "2867fd91f646194ebf4b2aa6c024912e7c56d1c9c418900c10e5b4ecd04241cc",
+  "cache": ".cache/2a830d03-cebc-48f0-a50f-ad78168c5026.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "30f71d3944af1328b4387aef488d67ac416e5839581364ff3731c53989d24b20",
+      "bytes": 21709,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c0269be0-a754-47ee-9a3d-a99b5eba91d3.jpg",
+    "fetchedAt": "2026-10-02T22:12:24.228967+00:00",
+    "sha256": "53f36afc1f1ddeef18bfffa1044d6cc05457ca9e3c6959d982b2a66fac18d854",
+    "bytes": 73071,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

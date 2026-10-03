@@ -1,0 +1,29 @@
+{
+  "styleId": "9905b62f-007b-4b3a-9357-84e85c07ef96",
+  "sourceUrl": "https://styles.refero.design/style/9905b62f-007b-4b3a-9357-84e85c07ef96",
+  "fetchedAt": "2026-10-02T22:26:46.211912+00:00",
+  "extractedAt": "2026-10-02T22:26:46.234415+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "React Email — Style Reference",
+  "htmlSha256": "dc09c046c8a9be913acba1e49b3ca52a8b08ab20311e8d14ecd0d86958c16638",
+  "cache": ".cache/9905b62f-007b-4b3a-9357-84e85c07ef96.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8fe1e82ebea16b6b84d9c98aa0a4f8a1b0690064a014a918399f839ba39ddae8",
+      "bytes": 23291,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e5fbd1c7-e1ec-4670-b939-1382d168df31.jpg",
+    "fetchedAt": "2026-10-02T22:26:48.223057+00:00",
+    "sha256": "3f83f093291fcfdefd790bcfecd30c2a258fe45eaf7328c41d6bd3d2c77076cf",
+    "bytes": 72357,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

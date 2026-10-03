@@ -1,0 +1,29 @@
+{
+  "styleId": "cd3fbf9d-8d35-411b-9e69-89a03018b677",
+  "sourceUrl": "https://styles.refero.design/style/cd3fbf9d-8d35-411b-9e69-89a03018b677",
+  "fetchedAt": "2026-10-02T22:05:38.410953+00:00",
+  "extractedAt": "2026-10-02T22:05:38.436794+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "LUNCH — Style Reference",
+  "htmlSha256": "c403b3ed0b452a1392b89974ebb6207573966aed39e6d45468c4a2cc4b118435",
+  "cache": ".cache/cd3fbf9d-8d35-411b-9e69-89a03018b677.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9ed21fc4653cca5b873799521f74aed72c35d5a8c6b6eb21604fc111dce046fa",
+      "bytes": 15846,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d08c29e6-01f3-4584-bb6e-fd59881286bd.jpg",
+    "fetchedAt": "2026-10-02T22:05:40.272428+00:00",
+    "sha256": "91826e917e9b7956168c359fab7d5e7bd80c2318ef8e2c6650f8ec5ee08205b1",
+    "bytes": 148451,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

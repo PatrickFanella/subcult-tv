@@ -1,0 +1,29 @@
+{
+  "styleId": "9e5bd4b1-0ba8-4592-a5ec-a935bd4ea9c6",
+  "sourceUrl": "https://styles.refero.design/style/9e5bd4b1-0ba8-4592-a5ec-a935bd4ea9c6",
+  "fetchedAt": "2026-10-02T22:49:22.209831+00:00",
+  "extractedAt": "2026-10-02T22:49:22.233830+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Umbrel — Style Reference",
+  "htmlSha256": "bc4c24dd0a00bf0e5f9986b34d17ca7d49a1420f29cfc33b596f76dc01165e8b",
+  "cache": ".cache/9e5bd4b1-0ba8-4592-a5ec-a935bd4ea9c6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ced946455e7fb83a5d4a75a8ac6adaa4898b609ec93373f31ecc36355d68631c",
+      "bytes": 30625,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e2edde70-abcc-4608-9a12-db7ad13106d5.jpg",
+    "fetchedAt": "2026-10-02T22:49:24.253808+00:00",
+    "sha256": "2ed3de013a23680d923258d40780c6d8ad6dfec41aa9dad6815f695b856e441d",
+    "bytes": 90362,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

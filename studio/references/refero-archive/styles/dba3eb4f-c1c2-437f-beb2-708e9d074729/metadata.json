@@ -1,0 +1,29 @@
+{
+  "styleId": "dba3eb4f-c1c2-437f-beb2-708e9d074729",
+  "sourceUrl": "https://styles.refero.design/style/dba3eb4f-c1c2-437f-beb2-708e9d074729",
+  "fetchedAt": "2026-10-02T22:09:26.190146+00:00",
+  "extractedAt": "2026-10-02T22:09:26.212469+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Handshake — Style Reference",
+  "htmlSha256": "ede4ccffc2e5de8aecf2d20a53db2b17bb1d9cb0d756f541067085adad54e228",
+  "cache": ".cache/dba3eb4f-c1c2-437f-beb2-708e9d074729.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5ee7ae551a3749587c027f9b742138fb9fa829cc8a2f2d9da34a9401440a77bf",
+      "bytes": 17919,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2c34b033-ff93-4e26-b48f-f1dd18e28334.jpg",
+    "fetchedAt": "2026-10-02T22:09:28.288393+00:00",
+    "sha256": "3cec7e38b71c62b11cc4ae7998c9fec8b233c2afca9e42619e5bcc3cf7c312e8",
+    "bytes": 77367,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

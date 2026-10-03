@@ -1,0 +1,29 @@
+{
+  "styleId": "7ce6bd42-e498-47c0-ad02-7b3a0f5d94e0",
+  "sourceUrl": "https://styles.refero.design/style/7ce6bd42-e498-47c0-ad02-7b3a0f5d94e0",
+  "fetchedAt": "2026-10-02T22:01:38.338919+00:00",
+  "extractedAt": "2026-10-02T22:01:38.377748+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fluz — Style Reference",
+  "htmlSha256": "0ece4debd848ff980340cca6ac200644dfbc4fc78fdfbaf7d607c09e0a557586",
+  "cache": ".cache/7ce6bd42-e498-47c0-ad02-7b3a0f5d94e0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "806c7d2046168816be177ff68b88de5ee0ab44c5a17c29a40693103df4068c6d",
+      "bytes": 22564,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b2fb8670-f7e2-460d-8acf-b14dbee302bf.jpg",
+    "fetchedAt": "2026-10-02T22:01:40.156400+00:00",
+    "sha256": "6d5ac8330f10b5b2a77dbad7338128e0f802fdd9837758daeafe74fbf925864a",
+    "bytes": 71428,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

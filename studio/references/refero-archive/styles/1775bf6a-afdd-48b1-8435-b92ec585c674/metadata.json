@@ -1,0 +1,29 @@
+{
+  "styleId": "1775bf6a-afdd-48b1-8435-b92ec585c674",
+  "sourceUrl": "https://styles.refero.design/style/1775bf6a-afdd-48b1-8435-b92ec585c674",
+  "fetchedAt": "2026-10-02T22:17:06.191406+00:00",
+  "extractedAt": "2026-10-02T22:17:06.215818+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hardworkclub — Style Reference",
+  "htmlSha256": "2594af7bd706ed01be46e651aa7b1b5ca857f12e184917889a1257b8640f8684",
+  "cache": ".cache/1775bf6a-afdd-48b1-8435-b92ec585c674.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e3e30ab12443705eb7c7e3526b1eb0b14cd1d8384b74861bce7dac55aec48f5b",
+      "bytes": 16075,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0817aac4-0440-48d6-a001-e27ff837a32f.jpg",
+    "fetchedAt": "2026-10-02T22:17:08.169904+00:00",
+    "sha256": "abee08b311fbdc789f99921d4245af33e4502121765c3db756b21df75dbc8f87",
+    "bytes": 58152,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

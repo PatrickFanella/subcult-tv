@@ -1,0 +1,29 @@
+{
+  "styleId": "28a7115a-bcf8-4b05-89a5-5290f5842a3c",
+  "sourceUrl": "https://styles.refero.design/style/28a7115a-bcf8-4b05-89a5-5290f5842a3c",
+  "fetchedAt": "2026-10-02T22:29:54.172250+00:00",
+  "extractedAt": "2026-10-02T22:29:54.193458+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Handhold — Style Reference",
+  "htmlSha256": "90a88acb712765efdd46d9ec20af4931a853f90a918e66909c3278c6632b2480",
+  "cache": ".cache/28a7115a-bcf8-4b05-89a5-5290f5842a3c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b3ea9101d6e5266c974fc813c75c49cb7f54d15939d512e2c65a6e2a98e1b7e5",
+      "bytes": 18051,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/061bc998-9547-4653-9c95-c192d8effc19.jpg",
+    "fetchedAt": "2026-10-02T22:29:56.212978+00:00",
+    "sha256": "17dc671143b31d6df4e890642234dce563eeb9472c81a72978646eeae60cc0b9",
+    "bytes": 74981,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

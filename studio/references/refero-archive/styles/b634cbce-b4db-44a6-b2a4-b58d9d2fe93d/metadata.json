@@ -1,0 +1,29 @@
+{
+  "styleId": "b634cbce-b4db-44a6-b2a4-b58d9d2fe93d",
+  "sourceUrl": "https://styles.refero.design/style/b634cbce-b4db-44a6-b2a4-b58d9d2fe93d",
+  "fetchedAt": "2026-10-02T22:27:46.177980+00:00",
+  "extractedAt": "2026-10-02T22:27:46.200549+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "V–A–C Sreda — Style Reference",
+  "htmlSha256": "72b3f9ca81e7d988c18985b060149b3d9b27a2a62c91cfcaf79582be1e460f1e",
+  "cache": ".cache/b634cbce-b4db-44a6-b2a4-b58d9d2fe93d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "97bc8b2fd9cd384148be402ff248cd1f0632ba61ca9d5e881b5a8882d88517e4",
+      "bytes": 17353,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/73b4e359-4682-4854-b4aa-4173040795c2.jpg",
+    "fetchedAt": "2026-10-02T22:27:48.225529+00:00",
+    "sha256": "d6a8a6d53ac11d5add907040f58b6a46de533106a7c9117e402a44de9eebf31e",
+    "bytes": 116607,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

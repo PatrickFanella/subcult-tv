@@ -1,0 +1,29 @@
+{
+  "styleId": "2f94c1f0-cd23-4bf1-95f3-0e531174c4f4",
+  "sourceUrl": "https://styles.refero.design/style/2f94c1f0-cd23-4bf1-95f3-0e531174c4f4",
+  "fetchedAt": "2026-10-02T22:33:50.251086+00:00",
+  "extractedAt": "2026-10-02T22:33:50.317555+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "arte* — Style Reference",
+  "htmlSha256": "f51fc24b1049bfb6c8885356625ffa785d34c95a2222434fda3bd62adb1e867b",
+  "cache": ".cache/2f94c1f0-cd23-4bf1-95f3-0e531174c4f4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1cbf06ff14b71f131d2cc25e5f2852b5a7580d7790f337e47c19504d03a45d11",
+      "bytes": 22934,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e8ef8430-e203-4e1a-b430-05c655c77c0f.jpg",
+    "fetchedAt": "2026-10-02T22:33:52.220299+00:00",
+    "sha256": "a82aa1eb125ebe117cbbf020e0b2baf40db8458b9e334eb4eac9a39d76fc3df7",
+    "bytes": 120816,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "b3fb8359-84c7-4bc0-b1cf-e8d225bcaa77",
+  "sourceUrl": "https://styles.refero.design/style/b3fb8359-84c7-4bc0-b1cf-e8d225bcaa77",
+  "fetchedAt": "2026-10-02T22:42:30.269008+00:00",
+  "extractedAt": "2026-10-02T22:42:30.296602+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "André Cândido — Style Reference",
+  "htmlSha256": "ca097ed6371e234a2483e6080137a2cf9493535321267384e056d84d8b4714a3",
+  "cache": ".cache/b3fb8359-84c7-4bc0-b1cf-e8d225bcaa77.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "24207c8f94cf8e05e29b4dfeac2cb86643e17db8338b7bf5558d17b402bc1060",
+      "bytes": 14059,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e4d0f032-9403-40fe-b3e8-856934e9896f.jpg",
+    "fetchedAt": "2026-10-02T22:42:32.317102+00:00",
+    "sha256": "8c911df495358012eb94388e2a0f8064a26b600c33ef3d481c13826cfe7988db",
+    "bytes": 154047,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

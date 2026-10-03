@@ -1,0 +1,29 @@
+{
+  "styleId": "f532c703-1179-465d-9933-7736df44d0ae",
+  "sourceUrl": "https://styles.refero.design/style/f532c703-1179-465d-9933-7736df44d0ae",
+  "fetchedAt": "2026-10-02T22:34:55.287372+00:00",
+  "extractedAt": "2026-10-02T22:34:55.311913+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Stability AI — Style Reference",
+  "htmlSha256": "99011d32b9df3e2e74639fc8acc9678dfda13b42caefc84e86fa3fe75cf721be",
+  "cache": ".cache/f532c703-1179-465d-9933-7736df44d0ae.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c97287162fef6ef0fa4515a92c947da98f071bd741c4db268a7b8e774cccc258",
+      "bytes": 23553,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d4f783c6-866c-4659-8847-83954ec79abc.jpg",
+    "fetchedAt": "2026-10-02T22:34:56.239039+00:00",
+    "sha256": "db39833c7cc5e5b2dfa7c8cbd96126398e48864960901bbec7dff14526e9dc9f",
+    "bytes": 179371,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

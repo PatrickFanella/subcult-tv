@@ -1,0 +1,29 @@
+{
+  "styleId": "5dc8ca28-26fe-41f2-979a-cda2669c262a",
+  "sourceUrl": "https://styles.refero.design/style/5dc8ca28-26fe-41f2-979a-cda2669c262a",
+  "fetchedAt": "2026-10-02T22:13:10.206169+00:00",
+  "extractedAt": "2026-10-02T22:13:10.237149+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Quin — Style Reference",
+  "htmlSha256": "0f1ba05c91cbc2b567cae1b84b73d23a4d9ca8522601c8513a1d1adc9132ceab",
+  "cache": ".cache/5dc8ca28-26fe-41f2-979a-cda2669c262a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8aab86e80d6f6873b311bd68d73af1a5fa28082eb72ec48148c0b42ccc9343b5",
+      "bytes": 22847,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/54c8e7e7-37aa-4038-b90a-daff03aa8062.jpg",
+    "fetchedAt": "2026-10-02T22:13:12.254445+00:00",
+    "sha256": "2937ea4176adee7a55ee0f27d74509d05a8a24959524712cd5f53626665db4b6",
+    "bytes": 107267,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

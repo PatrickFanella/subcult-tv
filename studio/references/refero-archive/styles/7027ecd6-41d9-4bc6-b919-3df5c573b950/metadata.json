@@ -1,0 +1,29 @@
+{
+  "styleId": "7027ecd6-41d9-4bc6-b919-3df5c573b950",
+  "sourceUrl": "https://styles.refero.design/style/7027ecd6-41d9-4bc6-b919-3df5c573b950",
+  "fetchedAt": "2026-10-02T22:22:18.179561+00:00",
+  "extractedAt": "2026-10-02T22:22:18.201964+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Heynds — Style Reference",
+  "htmlSha256": "e200b144b360a9740daf6b1a552ce87f76fbeef9e6dfd92254d2b24bbcd4d440",
+  "cache": ".cache/7027ecd6-41d9-4bc6-b919-3df5c573b950.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0778f01c7efa72dbdee149f73f19f9c88158d035fe69bcce27a0ebc691c6dc6d",
+      "bytes": 16911,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/daddb86b-239f-42ae-bd42-e188e6f1860f.jpg",
+    "fetchedAt": "2026-10-02T22:22:20.304423+00:00",
+    "sha256": "c45908c9705b9c4e33b65854efd54d4d40c795d422dadcab576cf856e4d7a43f",
+    "bytes": 106044,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

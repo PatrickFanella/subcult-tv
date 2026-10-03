@@ -1,0 +1,29 @@
+{
+  "styleId": "5b7ecaf1-de2d-4fb9-9995-9f0665e77862",
+  "sourceUrl": "https://styles.refero.design/style/5b7ecaf1-de2d-4fb9-9995-9f0665e77862",
+  "fetchedAt": "2026-10-02T22:21:18.222113+00:00",
+  "extractedAt": "2026-10-02T22:21:18.247097+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Guglieri — Style Reference",
+  "htmlSha256": "eaca63606d449bf2e363acc36c664cf7b2b6e5182ba75e3d8db72d30bf4c648c",
+  "cache": ".cache/5b7ecaf1-de2d-4fb9-9995-9f0665e77862.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "dd739a39e7ba833a38cab6918bbbe7486cc004101e5aa1d4408e3550a0abf04b",
+      "bytes": 18835,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ebc0ce38-b39c-4b95-8804-2325841a72a4.jpg",
+    "fetchedAt": "2026-10-02T22:21:20.220387+00:00",
+    "sha256": "7287142dd7c621f0cbd16634b3085d8d7a1e314c4c828a68fde7e209c44945d8",
+    "bytes": 99263,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

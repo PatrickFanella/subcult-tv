@@ -1,0 +1,29 @@
+{
+  "styleId": "5c94c49f-0612-4261-842c-e1d501f3e13d",
+  "sourceUrl": "https://styles.refero.design/style/5c94c49f-0612-4261-842c-e1d501f3e13d",
+  "fetchedAt": "2026-10-02T22:07:58.165245+00:00",
+  "extractedAt": "2026-10-02T22:07:58.186542+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "OpenAI Developers — Style Reference",
+  "htmlSha256": "bc5eca2c79ad3b2be24f4fb1d7caa7ac365caf602093ee13edf2660012fb2bc6",
+  "cache": ".cache/5c94c49f-0612-4261-842c-e1d501f3e13d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d2409cbb03de1c21a4c05d40bdd900f9fffc20ada62968fdc5fcbda0d496a37e",
+      "bytes": 16417,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e2649e95-17f2-436d-b4fd-914df44ca2fa.jpg",
+    "fetchedAt": "2026-10-02T22:08:00.255347+00:00",
+    "sha256": "79a7670573d980628ef2c05f27437c35e71650666bfe7e1cf8318f877447b174",
+    "bytes": 78592,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

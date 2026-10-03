@@ -1,0 +1,29 @@
+{
+  "styleId": "28e8e762-8d8c-4e88-84ed-858f9917cb58",
+  "sourceUrl": "https://styles.refero.design/style/28e8e762-8d8c-4e88-84ed-858f9917cb58",
+  "fetchedAt": "2026-10-02T22:02:22.304152+00:00",
+  "extractedAt": "2026-10-02T22:02:22.329954+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dennis Snellenberg — Style Reference",
+  "htmlSha256": "f2d1203859af8d7e3ec8b655061122dc5256686dc12c667e66cf19fd7c529157",
+  "cache": ".cache/28e8e762-8d8c-4e88-84ed-858f9917cb58.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4adc830b14fbe6f6a2471ca11651a12345175dc7c4e9b0482cf78b5d5b43f5ce",
+      "bytes": 16852,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/913eedf0-a542-45ef-9a77-60bf231c68aa.jpg",
+    "fetchedAt": "2026-10-02T22:02:24.181527+00:00",
+    "sha256": "e6f82246159ea5a76647a831fe61923f3415a564973cfc8192a8b28cc00ef4e8",
+    "bytes": 67516,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

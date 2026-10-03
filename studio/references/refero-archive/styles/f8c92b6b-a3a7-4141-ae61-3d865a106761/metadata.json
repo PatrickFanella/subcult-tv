@@ -1,0 +1,29 @@
+{
+  "styleId": "f8c92b6b-a3a7-4141-ae61-3d865a106761",
+  "sourceUrl": "https://styles.refero.design/style/f8c92b6b-a3a7-4141-ae61-3d865a106761",
+  "fetchedAt": "2026-10-02T22:19:46.253060+00:00",
+  "extractedAt": "2026-10-02T22:19:46.273696+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ingmar Coenen — Style Reference",
+  "htmlSha256": "6a3b601567efa27bdb571984b73e1c3d14d0c0e9e29e8b206c02bee18628ddb7",
+  "cache": ".cache/f8c92b6b-a3a7-4141-ae61-3d865a106761.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c99b380bf505e4eead20560d0990ee78315562358ec289777423ceba3f442799",
+      "bytes": 19942,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ad5d8b25-0ef2-4ca4-9b41-a23d1d80ded3.jpg",
+    "fetchedAt": "2026-10-02T22:19:48.166227+00:00",
+    "sha256": "f43ef76882f459a8a8ee66e647e57f946630e83e0f71fb64f17fe5e8a97c750a",
+    "bytes": 61298,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

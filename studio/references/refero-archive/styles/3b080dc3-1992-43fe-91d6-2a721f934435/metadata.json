@@ -1,0 +1,29 @@
+{
+  "styleId": "3b080dc3-1992-43fe-91d6-2a721f934435",
+  "sourceUrl": "https://styles.refero.design/style/3b080dc3-1992-43fe-91d6-2a721f934435",
+  "fetchedAt": "2026-10-02T22:07:38.219734+00:00",
+  "extractedAt": "2026-10-02T22:07:38.251105+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "AATHER — Style Reference",
+  "htmlSha256": "c645a0997a0d33d1bcc2c1046118e1d01d2bdd33544d80b4d81fabaab5b524b8",
+  "cache": ".cache/3b080dc3-1992-43fe-91d6-2a721f934435.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "60f691678c9d83924fac02b50ba30f21043b1265f224ec47320a31458f5a06df",
+      "bytes": 17923,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3a683030-b3a9-401c-95ae-b1d202694180.jpg",
+    "fetchedAt": "2026-10-02T22:07:40.216033+00:00",
+    "sha256": "15efd01e9ad90e00eeeb548c445242d2a51996920533b72cb663bf7bd0072666",
+    "bytes": 85459,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

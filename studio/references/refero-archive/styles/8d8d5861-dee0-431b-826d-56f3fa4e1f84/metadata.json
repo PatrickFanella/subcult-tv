@@ -1,0 +1,29 @@
+{
+  "styleId": "8d8d5861-dee0-431b-826d-56f3fa4e1f84",
+  "sourceUrl": "https://styles.refero.design/style/8d8d5861-dee0-431b-826d-56f3fa4e1f84",
+  "fetchedAt": "2026-10-02T22:21:22.228303+00:00",
+  "extractedAt": "2026-10-02T22:21:22.253222+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "IDHEAL — Style Reference",
+  "htmlSha256": "e72cd3821c03ab7d5288316003a9a070b1fe7d1bff52bf3272eaf5e8efea8230",
+  "cache": ".cache/8d8d5861-dee0-431b-826d-56f3fa4e1f84.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8faefbc927cdfc5460077c7dd3534de2ad8a3c63201801394deb4070cd536f02",
+      "bytes": 21892,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e59020c2-63e3-416b-8343-3d785ea6e565.jpg",
+    "fetchedAt": "2026-10-02T22:21:24.219524+00:00",
+    "sha256": "705807a820e544b28d16d7ce538720a13f2a86401df295a649cd631704fa5e2b",
+    "bytes": 145004,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

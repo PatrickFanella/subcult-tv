@@ -1,0 +1,29 @@
+{
+  "styleId": "c1052d8d-3663-46a4-a882-e50d9b8a1166",
+  "sourceUrl": "https://styles.refero.design/style/c1052d8d-3663-46a4-a882-e50d9b8a1166",
+  "fetchedAt": "2026-10-02T22:36:34.186661+00:00",
+  "extractedAt": "2026-10-02T22:36:34.208336+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Joby Aviation — Style Reference",
+  "htmlSha256": "4c52154d74baac8ca8443c2e6409c4354ee82ed6a7f56c2296761e52c545c498",
+  "cache": ".cache/c1052d8d-3663-46a4-a882-e50d9b8a1166.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1b0e387b2f09b2f3cca30c96099d9e84ee4d0a79b4dde4886f8aa29c8bfd83f5",
+      "bytes": 23657,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e0c1e9c3-ebfd-4dcb-92d5-cd40dd43e3e6.jpg",
+    "fetchedAt": "2026-10-02T22:36:36.298260+00:00",
+    "sha256": "fb20f62f6bae29e1ccc7aa3597007046d173f10507907efcb13db7c47d41a037",
+    "bytes": 121366,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

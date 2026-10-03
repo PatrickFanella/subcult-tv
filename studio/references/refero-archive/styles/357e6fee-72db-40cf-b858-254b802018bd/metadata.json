@@ -1,0 +1,29 @@
+{
+  "styleId": "357e6fee-72db-40cf-b858-254b802018bd",
+  "sourceUrl": "https://styles.refero.design/style/357e6fee-72db-40cf-b858-254b802018bd",
+  "fetchedAt": "2026-10-02T22:09:10.216481+00:00",
+  "extractedAt": "2026-10-02T22:09:10.240215+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aaply — Style Reference",
+  "htmlSha256": "d6c5a9001672c49e13c95d72b3894e0b75efe81a6d5eb9a680ef32240dd6f5f2",
+  "cache": ".cache/357e6fee-72db-40cf-b858-254b802018bd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7f1082da627a9d0d5d354187143868e06f33e0870a52a1e200e49e75361e1a4c",
+      "bytes": 19187,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2903cf5f-bb08-4a19-b2f2-f689ff0cafa7.jpg",
+    "fetchedAt": "2026-10-02T22:09:12.269159+00:00",
+    "sha256": "fc94aba1b20ca942f3858369bb88c0972857b76cc2a54f3c1ad8207c2b7bceeb",
+    "bytes": 102132,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

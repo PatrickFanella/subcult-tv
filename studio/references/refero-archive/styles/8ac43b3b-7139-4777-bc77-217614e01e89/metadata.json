@@ -1,0 +1,29 @@
+{
+  "styleId": "8ac43b3b-7139-4777-bc77-217614e01e89",
+  "sourceUrl": "https://styles.refero.design/style/8ac43b3b-7139-4777-bc77-217614e01e89",
+  "fetchedAt": "2026-10-02T22:16:54.318085+00:00",
+  "extractedAt": "2026-10-02T22:16:54.340882+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ayaka B. Ito — Style Reference",
+  "htmlSha256": "9b656c235467b2eb3cb26949350bfcd2699c40b93d90723e3185d54bb5b79f00",
+  "cache": ".cache/8ac43b3b-7139-4777-bc77-217614e01e89.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6186ee79d59a3feb8f9819f77628b93d59d38503b6a121630662bb55ae55483e",
+      "bytes": 24934,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ba25d06f-57d7-4b04-9f40-eebccddbd9a4.jpg",
+    "fetchedAt": "2026-10-02T22:16:56.254392+00:00",
+    "sha256": "ad86c846d2421f79a14b23f1f07310b65bc6afb1ef2ec1935d6d41d6f21b635b",
+    "bytes": 331467,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

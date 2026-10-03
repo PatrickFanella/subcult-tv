@@ -1,0 +1,29 @@
+{
+  "styleId": "77b723ca-9583-4349-9b5e-2ef8b4fde002",
+  "sourceUrl": "https://styles.refero.design/style/77b723ca-9583-4349-9b5e-2ef8b4fde002",
+  "fetchedAt": "2026-10-02T22:12:42.507023+00:00",
+  "extractedAt": "2026-10-02T22:12:42.539974+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Basedash — Style Reference",
+  "htmlSha256": "b0469aa267d6c33a720dd5808cf1bb6950a7d527616cd6a6bc35d317a73dc16c",
+  "cache": ".cache/77b723ca-9583-4349-9b5e-2ef8b4fde002.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "dd2fed3c6538afea4fb94b5e9125954a43a15ddda79ff5103e94de4ba4d7ecc3",
+      "bytes": 21136,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6a856d5c-35b4-4519-bf0f-e00085f9e4ce.jpg",
+    "fetchedAt": "2026-10-02T22:12:44.197412+00:00",
+    "sha256": "6258992be746d92c8fb5d65d5a7e097f4ad2447784dc80839d05ed24c05230d8",
+    "bytes": 72204,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

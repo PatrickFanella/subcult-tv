@@ -1,0 +1,29 @@
+{
+  "styleId": "635b7769-7517-48ac-bb95-2ad7fa337e54",
+  "sourceUrl": "https://styles.refero.design/style/635b7769-7517-48ac-bb95-2ad7fa337e54",
+  "fetchedAt": "2026-10-02T22:13:26.370156+00:00",
+  "extractedAt": "2026-10-02T22:13:26.397599+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "IFTTT — Style Reference",
+  "htmlSha256": "99b4557bec3ba93cd51d41d44c3a4da6d5c1cecaf0623ed4c6efb1f84c2f9285",
+  "cache": ".cache/635b7769-7517-48ac-bb95-2ad7fa337e54.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1eb1955e1b583191aa651f1c884a435f4d35cfb5f0329929cca8ce68a9728963",
+      "bytes": 20187,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c9fe0c38-c67b-4790-b9f8-490696d89e1d.jpg",
+    "fetchedAt": "2026-10-02T22:13:28.218980+00:00",
+    "sha256": "b27fdfef2851d1ebe85b9ec0255f627f91cb9e0839aa87f93ed46cca64787b58",
+    "bytes": 75145,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "4d1d50ff-18b8-4acf-a356-48eb5c414711",
+  "sourceUrl": "https://styles.refero.design/style/4d1d50ff-18b8-4acf-a356-48eb5c414711",
+  "fetchedAt": "2026-10-02T22:39:26.209284+00:00",
+  "extractedAt": "2026-10-02T22:39:26.233508+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fold — Style Reference",
+  "htmlSha256": "cd1d9ab48fcbbfd0100366501b7031964915a6e749c0803f4d98d32a070dacf2",
+  "cache": ".cache/4d1d50ff-18b8-4acf-a356-48eb5c414711.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0fcaedec88813bcb6008acfe57de6145fba79cddb6c2e515f584b3e11b22d9c2",
+      "bytes": 23124,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/38576056-92db-4c3d-95ef-4a767124ce22.jpg",
+    "fetchedAt": "2026-10-02T22:39:28.242473+00:00",
+    "sha256": "c57b04b23a53406ce74a7a0a069d48adda652fb167f5d962ee50047732fc3361",
+    "bytes": 125464,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

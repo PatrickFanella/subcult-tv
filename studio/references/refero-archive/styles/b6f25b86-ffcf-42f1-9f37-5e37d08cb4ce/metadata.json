@@ -1,0 +1,29 @@
+{
+  "styleId": "b6f25b86-ffcf-42f1-9f37-5e37d08cb4ce",
+  "sourceUrl": "https://styles.refero.design/style/b6f25b86-ffcf-42f1-9f37-5e37d08cb4ce",
+  "fetchedAt": "2026-10-02T22:17:46.314221+00:00",
+  "extractedAt": "2026-10-02T22:17:46.344121+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Alden — Style Reference",
+  "htmlSha256": "84b5de979f8fe22362ab384e3e052c2e5eaaf66b53bbacfc43966406227208ec",
+  "cache": ".cache/b6f25b86-ffcf-42f1-9f37-5e37d08cb4ce.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2b1382b6dc7960b7f26761f7e886211e4734975498b846e68427bfe6c07434a9",
+      "bytes": 20309,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cf4af1e6-6ecf-4271-bd50-508075809b02.jpg",
+    "fetchedAt": "2026-10-02T22:17:48.166765+00:00",
+    "sha256": "d50d15964743bcbdbfbf7c7cfc92c840dcea54f2fd8d0109ce6f34c5e1d01700",
+    "bytes": 64342,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

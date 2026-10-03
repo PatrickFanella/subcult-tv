@@ -1,0 +1,29 @@
+{
+  "styleId": "e68d2972-4344-4954-b00c-56fdf97d9de4",
+  "sourceUrl": "https://styles.refero.design/style/e68d2972-4344-4954-b00c-56fdf97d9de4",
+  "fetchedAt": "2026-10-02T22:35:22.221934+00:00",
+  "extractedAt": "2026-10-02T22:35:22.246585+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Applied Labs — Style Reference",
+  "htmlSha256": "3cabd46c375fe2d34a0668603c38545b16b7516c1e42aca35ddbe58a9dff42ae",
+  "cache": ".cache/e68d2972-4344-4954-b00c-56fdf97d9de4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "676b2c3e55929feffa8e32bb746749a135a28a756a3c451c171a313831182976",
+      "bytes": 22517,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2e25bfc9-5d9c-4b66-9886-1d9c8292ddd0.jpg",
+    "fetchedAt": "2026-10-02T22:35:24.152203+00:00",
+    "sha256": "af97d0a2f8c11046d972640a313800f1bf0eaa1e87aed388dbf91d2729950c5d",
+    "bytes": 72114,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

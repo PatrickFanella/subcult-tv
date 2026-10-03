@@ -1,0 +1,29 @@
+{
+  "styleId": "7fdd9506-0a85-41a5-b2a7-c5ce1f31d863",
+  "sourceUrl": "https://styles.refero.design/style/7fdd9506-0a85-41a5-b2a7-c5ce1f31d863",
+  "fetchedAt": "2026-10-02T22:32:18.314089+00:00",
+  "extractedAt": "2026-10-02T22:32:18.336703+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "HOUSEPLANT — Style Reference",
+  "htmlSha256": "440b36dc3b56e91b8ad4f6357370516752b8cb8c2d85723b9d3fcce414ae0b4d",
+  "cache": ".cache/7fdd9506-0a85-41a5-b2a7-c5ce1f31d863.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2f0f128e22a279246d2546c2879563d31d228266ef0eed23e2fbe196b6fc8171",
+      "bytes": 18474,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c462a391-07b7-49a0-a26b-b915abe1e18e.jpg",
+    "fetchedAt": "2026-10-02T22:32:20.330721+00:00",
+    "sha256": "7acd5670f269368d31b8728f94551a1340c54e234f7f66580969eb91f4cd4b36",
+    "bytes": 225484,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

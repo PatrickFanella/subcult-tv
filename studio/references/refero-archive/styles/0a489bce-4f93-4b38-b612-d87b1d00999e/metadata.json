@@ -1,0 +1,29 @@
+{
+  "styleId": "0a489bce-4f93-4b38-b612-d87b1d00999e",
+  "sourceUrl": "https://styles.refero.design/style/0a489bce-4f93-4b38-b612-d87b1d00999e",
+  "fetchedAt": "2026-10-02T22:10:06.391341+00:00",
+  "extractedAt": "2026-10-02T22:10:06.413124+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hims App — Style Reference",
+  "htmlSha256": "536883fb822e1ba9eb472cc25246c18d2b997f1d4a2aff451720dd327e24c8c8",
+  "cache": ".cache/0a489bce-4f93-4b38-b612-d87b1d00999e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9bcd2f7f05972c019b1158415728341f2762be3bf65f766c635e0e159880476e",
+      "bytes": 18444,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4a7efdbf-5c08-4aed-90dc-dabe5118c1a3.jpg",
+    "fetchedAt": "2026-10-02T22:10:08.215158+00:00",
+    "sha256": "c1ea7784b811c219587b5e28f82c4dc0164a44f7c67d1b9a48713a7bb06ecf22",
+    "bytes": 61986,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

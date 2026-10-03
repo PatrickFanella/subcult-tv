@@ -1,0 +1,29 @@
+{
+  "styleId": "9e3fde24-cc7d-4b96-a70a-7c172882aa8f",
+  "sourceUrl": "https://styles.refero.design/style/9e3fde24-cc7d-4b96-a70a-7c172882aa8f",
+  "fetchedAt": "2026-10-02T22:28:58.265404+00:00",
+  "extractedAt": "2026-10-02T22:28:58.290933+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Studio Gruhl — Style Reference",
+  "htmlSha256": "3724a0003ff5bdf5003246ba5327fcfba33ba6c129f34ff5544ae8569e7a5ee1",
+  "cache": ".cache/9e3fde24-cc7d-4b96-a70a-7c172882aa8f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0d04f14e63654f0604e173b6ef249759039676197e7816c9a7bbe4a1df7200c2",
+      "bytes": 18274,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e71be078-7487-405a-a6cd-5693492618d3.jpg",
+    "fetchedAt": "2026-10-02T22:29:00.185182+00:00",
+    "sha256": "b5099762e1f3180ea0ab2dbf415f7c2f5fe2b92d5ab7e0fd4a643c39f3ad447c",
+    "bytes": 41474,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

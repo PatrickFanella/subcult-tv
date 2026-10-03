@@ -1,0 +1,29 @@
+{
+  "styleId": "4d4772a3-e1da-415f-a6d7-658dcefdcecd",
+  "sourceUrl": "https://styles.refero.design/style/4d4772a3-e1da-415f-a6d7-658dcefdcecd",
+  "fetchedAt": "2026-10-02T22:09:14.180312+00:00",
+  "extractedAt": "2026-10-02T22:09:14.202696+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Branding — Style Reference",
+  "htmlSha256": "e5c32b60ac39fd84396029d42c0e6922c323e9446ffd51f2394285b7341c8975",
+  "cache": ".cache/4d4772a3-e1da-415f-a6d7-658dcefdcecd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a109ca3ea0a7a4db8ee5aa33975c61feb815570a447a5d9a2e8aaea976070064",
+      "bytes": 24218,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/05cd37fb-0d2e-4969-bcc5-d7b291ed50e2.jpg",
+    "fetchedAt": "2026-10-02T22:09:16.160353+00:00",
+    "sha256": "05b9bd1f02aec36eebb643b3e1e2bf47774b9d45f0f152f54c5be3c2853f4169",
+    "bytes": 54690,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

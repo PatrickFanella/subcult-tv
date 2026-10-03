@@ -1,0 +1,29 @@
+{
+  "styleId": "c81d2be0-05b7-4755-8046-f2d19fbc448c",
+  "sourceUrl": "https://styles.refero.design/style/c81d2be0-05b7-4755-8046-f2d19fbc448c",
+  "fetchedAt": "2026-10-02T22:42:26.192900+00:00",
+  "extractedAt": "2026-10-02T22:42:26.216025+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Wonder — Style Reference",
+  "htmlSha256": "13c2ab2a3d50d199cf1ff151339b891e8c53885a1f267c196fb2b980702f8556",
+  "cache": ".cache/c81d2be0-05b7-4755-8046-f2d19fbc448c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "df2e1de544627fe4ea0dbde855afeee05c70e0d1999e05f1c5f31aeca5ebb00e",
+      "bytes": 23946,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a210d99e-9ac5-4016-b6b6-28c039b930c8.jpg",
+    "fetchedAt": "2026-10-02T22:42:28.274130+00:00",
+    "sha256": "3c4bf7d902501b8cec9b0aef9dc13e6775646f67f2b2c3f9bfc67707885e2c4b",
+    "bytes": 74077,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "542d4d5c-fd8f-4a8b-a4f7-4694728f7e12",
+  "sourceUrl": "https://styles.refero.design/style/542d4d5c-fd8f-4a8b-a4f7-4694728f7e12",
+  "fetchedAt": "2026-10-02T22:36:18.181964+00:00",
+  "extractedAt": "2026-10-02T22:36:18.206138+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Podscan.fm — Style Reference",
+  "htmlSha256": "9b86ce10a1f6d6d301a6d3b77e6c9d70b3d8617fcd2d60ba559ec4f5e10e80bf",
+  "cache": ".cache/542d4d5c-fd8f-4a8b-a4f7-4694728f7e12.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3986bd9ef94309db5dd35cbc67d0fcf1ca9f5f2b7b853a1029a3c7ffa7b3a4f5",
+      "bytes": 30099,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4bd61d14-30ff-4fc2-bc96-38c8221c7a00.jpg",
+    "fetchedAt": "2026-10-02T22:36:20.335417+00:00",
+    "sha256": "80233eaa843cf14e88b2cfbc68ae59761b5707f59afd17b63a4529adcafa234b",
+    "bytes": 96762,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

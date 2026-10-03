@@ -1,0 +1,29 @@
+{
+  "styleId": "ac86af87-6f60-42a2-b805-87a168792e55",
+  "sourceUrl": "https://styles.refero.design/style/ac86af87-6f60-42a2-b805-87a168792e55",
+  "fetchedAt": "2026-10-02T22:34:18.196803+00:00",
+  "extractedAt": "2026-10-02T22:34:18.219042+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Firstandforemost — Style Reference",
+  "htmlSha256": "3f908b39d1563202d468474eb89c24dc7648ed30c1769ab34d0585c611fb2230",
+  "cache": ".cache/ac86af87-6f60-42a2-b805-87a168792e55.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3a81174fb43c5d356266afab63e367d39dc81392b32fcef12ae818c05faae0cd",
+      "bytes": 15573,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4135c7a5-7ee2-46be-8984-9f044f8804ad.jpg",
+    "fetchedAt": "2026-10-02T22:34:20.290597+00:00",
+    "sha256": "a94cb1dac2aab4c82a8a523948f323f0ad3f2c77f34b8c425b431e32231f4852",
+    "bytes": 177839,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

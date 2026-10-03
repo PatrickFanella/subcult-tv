@@ -1,0 +1,29 @@
+{
+  "styleId": "989d8d71-c161-4410-8157-ad6ade0bd4be",
+  "sourceUrl": "https://styles.refero.design/style/989d8d71-c161-4410-8157-ad6ade0bd4be",
+  "fetchedAt": "2026-10-02T22:27:26.201782+00:00",
+  "extractedAt": "2026-10-02T22:27:26.227075+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Artboard — Style Reference",
+  "htmlSha256": "64e2b759abd083e09016578329d00358791d454970b30338a9bb1d08e0587876",
+  "cache": ".cache/989d8d71-c161-4410-8157-ad6ade0bd4be.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c53fff8ca029868acb268a543b011451eeabe6045a38f7535b7dc368f96dccc7",
+      "bytes": 18430,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/020c2c88-560c-4625-b1d9-87719bb2ec0f.jpg",
+    "fetchedAt": "2026-10-02T22:27:28.275519+00:00",
+    "sha256": "810ff06d5753255f544d428d9eb253d09d8ca786bd4342345005dc8d99bb5dbd",
+    "bytes": 136216,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

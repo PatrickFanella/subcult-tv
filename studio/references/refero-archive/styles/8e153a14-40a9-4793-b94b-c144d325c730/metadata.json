@@ -1,0 +1,29 @@
+{
+  "styleId": "8e153a14-40a9-4793-b94b-c144d325c730",
+  "sourceUrl": "https://styles.refero.design/style/8e153a14-40a9-4793-b94b-c144d325c730",
+  "fetchedAt": "2026-10-02T22:38:38.189092+00:00",
+  "extractedAt": "2026-10-02T22:38:38.212724+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Whimsical — Style Reference",
+  "htmlSha256": "344bbdc2e8775de0bdd717e90964ffb6716f6fa79b85cfc46664fe3922e6ccb8",
+  "cache": ".cache/8e153a14-40a9-4793-b94b-c144d325c730.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cc8aa5ce830ca788b4bc1755fa6eaa132cd9c6c770b838dce47d6598306bcbad",
+      "bytes": 24544,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7fa911b6-480a-43b4-9b9c-efac624492de.jpg",
+    "fetchedAt": "2026-10-02T22:38:40.317329+00:00",
+    "sha256": "1d3bc7fb0457c5561e69efdc010fffaa39b79e48ae9560335e4638795efcdf5f",
+    "bytes": 141763,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

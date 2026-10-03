@@ -1,0 +1,29 @@
+{
+  "styleId": "645d7583-8391-455b-83d2-c95fb7fe91dc",
+  "sourceUrl": "https://styles.refero.design/style/645d7583-8391-455b-83d2-c95fb7fe91dc",
+  "fetchedAt": "2026-10-02T22:18:30.670905+00:00",
+  "extractedAt": "2026-10-02T22:18:30.693298+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ashleyandco — Style Reference",
+  "htmlSha256": "035998d441d7e6bbdbc5e41ab2dff393a612c41cbfa9f1b1c15c49e820707243",
+  "cache": ".cache/645d7583-8391-455b-83d2-c95fb7fe91dc.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d611be5cf430288f9f91a2913acdb49efb7eb87a6af4d3ca620f37bfa18ea6f8",
+      "bytes": 21392,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cc6eb348-2396-4a2c-bcef-ddcb961670f0.jpg",
+    "fetchedAt": "2026-10-02T22:18:32.209584+00:00",
+    "sha256": "889111b24ceba76bf854b9761148d941b9a422c76bff355538d318a12ab5e988",
+    "bytes": 80965,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

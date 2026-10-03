@@ -1,0 +1,29 @@
+{
+  "styleId": "6db1057d-3457-4173-9184-df160415f060",
+  "sourceUrl": "https://styles.refero.design/style/6db1057d-3457-4173-9184-df160415f060",
+  "fetchedAt": "2026-10-02T22:52:46.237685+00:00",
+  "extractedAt": "2026-10-02T22:52:46.259216+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Partiful — Style Reference",
+  "htmlSha256": "0a2207e03fac1619bbfc02034ef80652c38160c79394d301aad9817f5ca359ec",
+  "cache": ".cache/6db1057d-3457-4173-9184-df160415f060.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "86e1b51d3dccebe8470ceb8eda86cdceeaeddf06af6d0b5d98eca8448e114b1c",
+      "bytes": 31896,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4b261c83-3b0d-447d-85e5-d24d49684c78.jpg",
+    "fetchedAt": "2026-10-02T22:52:48.267949+00:00",
+    "sha256": "a730382204558f18d1b75c9771d7ca5a0b722abaa3b896b1d1d874130a14866a",
+    "bytes": 189841,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

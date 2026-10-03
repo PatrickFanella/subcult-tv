@@ -1,0 +1,29 @@
+{
+  "styleId": "973332dc-4e10-4e90-85d8-3bce9c3cd3ed",
+  "sourceUrl": "https://styles.refero.design/style/973332dc-4e10-4e90-85d8-3bce9c3cd3ed",
+  "fetchedAt": "2026-10-02T22:51:38.235895+00:00",
+  "extractedAt": "2026-10-02T22:51:38.265169+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sociotype — Style Reference",
+  "htmlSha256": "41f25359a47104f6905d8dd35bbb359336caba5a08d500f27abf05f26d9a2563",
+  "cache": ".cache/973332dc-4e10-4e90-85d8-3bce9c3cd3ed.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3bf3bed2017ee5fd32bc2fe2d0343df59b45929b60b95007f65ec2b111c0ea5d",
+      "bytes": 20855,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0f7692a5-7551-4f59-866a-903999e398b8.jpg",
+    "fetchedAt": "2026-10-02T22:51:40.277021+00:00",
+    "sha256": "173f7222efc1b370798deda9d4a5c5d499d33558f58647bbd4b6de301c2c959c",
+    "bytes": 119131,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

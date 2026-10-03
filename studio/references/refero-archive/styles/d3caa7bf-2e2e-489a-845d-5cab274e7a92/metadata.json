@@ -1,0 +1,29 @@
+{
+  "styleId": "d3caa7bf-2e2e-489a-845d-5cab274e7a92",
+  "sourceUrl": "https://styles.refero.design/style/d3caa7bf-2e2e-489a-845d-5cab274e7a92",
+  "fetchedAt": "2026-10-02T22:43:34.231544+00:00",
+  "extractedAt": "2026-10-02T22:43:34.258271+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Frontier AI LLMs — Style Reference",
+  "htmlSha256": "20faa09678ece57811c943932e27b807b2b7ff318472f6cf68ef9dbe6eb3f624",
+  "cache": ".cache/d3caa7bf-2e2e-489a-845d-5cab274e7a92.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1653a2d53b714ddfdf2842e982be2b34da5e9fed3bb01aebbd62877cc73dbf5f",
+      "bytes": 22725,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/774fd528-520b-4fd1-9809-c2900b343b57.jpg",
+    "fetchedAt": "2026-10-02T22:43:36.250359+00:00",
+    "sha256": "7bababf606ba428a967d3de3b4b4b923d7c84843e6211eb4035cc898ed667291",
+    "bytes": 93773,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

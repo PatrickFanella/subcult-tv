@@ -1,0 +1,29 @@
+{
+  "styleId": "cef25151-078c-4631-8f02-4f204f071b8b",
+  "sourceUrl": "https://styles.refero.design/style/cef25151-078c-4631-8f02-4f204f071b8b",
+  "fetchedAt": "2026-10-02T22:08:14.172534+00:00",
+  "extractedAt": "2026-10-02T22:08:14.200355+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "entire studios — Style Reference",
+  "htmlSha256": "e5033379ecac1b648e8b1959ea1ae230bbb193957c3386fcaa0c9a1efecdd4ce",
+  "cache": ".cache/cef25151-078c-4631-8f02-4f204f071b8b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4979cc7ff8efa46eed8655c6683b6a49e3992b85afed905e37a0a69de2997395",
+      "bytes": 13063,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b9ddc678-1ca6-497e-8c03-4a2512eb1b6a.jpg",
+    "fetchedAt": "2026-10-02T22:08:16.158176+00:00",
+    "sha256": "91e371af5d7c65a1accb834c7899246d2b797118c517c56d2dc8d3f05a9a6da4",
+    "bytes": 68150,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

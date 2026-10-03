@@ -1,0 +1,29 @@
+{
+  "styleId": "17ce9ad2-f22d-4e48-92de-e28fb8551cc5",
+  "sourceUrl": "https://styles.refero.design/style/17ce9ad2-f22d-4e48-92de-e28fb8551cc5",
+  "fetchedAt": "2026-10-02T22:06:14.182439+00:00",
+  "extractedAt": "2026-10-02T22:06:14.211218+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fallen Grape — Style Reference",
+  "htmlSha256": "e96aaa91c480832d0b28c7c0014fd6aee7e664e3d2106f95ea234242d28f6cea",
+  "cache": ".cache/17ce9ad2-f22d-4e48-92de-e28fb8551cc5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9a0b043118478ab0f3dddb1a2f78e6b7aac5fe4524f2dbc8c4c6ffb1f6c7279e",
+      "bytes": 19913,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/10fbc6dc-18a1-45c5-afae-b07cc94eae7e.jpg",
+    "fetchedAt": "2026-10-02T22:06:16.218580+00:00",
+    "sha256": "f1fbca36e1d842b5d02337f2d2668cf5c9c6c5fd752e718164efa49e900534af",
+    "bytes": 68083,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "43400d73-ca89-4750-8fa6-78cd2c661943",
+  "sourceUrl": "https://styles.refero.design/style/43400d73-ca89-4750-8fa6-78cd2c661943",
+  "fetchedAt": "2026-10-02T22:30:46.205048+00:00",
+  "extractedAt": "2026-10-02T22:30:46.229246+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Liron Moran Interiors — Style Reference",
+  "htmlSha256": "d48ac3f41914785f2eee71db73abe344373f0586218680665e01416cd09564f8",
+  "cache": ".cache/43400d73-ca89-4750-8fa6-78cd2c661943.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "18b2c77f797a450daddf23e473f5f1709ca34f666f75c2e63968044957605201",
+      "bytes": 20426,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/377a16fb-9f10-419a-b677-e47e54f17739.jpg",
+    "fetchedAt": "2026-10-02T22:30:48.344601+00:00",
+    "sha256": "ee428bbe87cc570517946fc4c1a334c4043a39a7dfe70eebb23317a6b191c01c",
+    "bytes": 77047,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

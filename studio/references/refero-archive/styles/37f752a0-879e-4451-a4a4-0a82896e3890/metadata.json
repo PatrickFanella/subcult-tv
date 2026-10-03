@@ -1,0 +1,29 @@
+{
+  "styleId": "37f752a0-879e-4451-a4a4-0a82896e3890",
+  "sourceUrl": "https://styles.refero.design/style/37f752a0-879e-4451-a4a4-0a82896e3890",
+  "fetchedAt": "2026-10-02T22:21:58.400580+00:00",
+  "extractedAt": "2026-10-02T22:21:58.422676+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Agronomy Workshop — Style Reference",
+  "htmlSha256": "616fb575c1aff49e0e50e938b2506e2b8143afa54d3a3ab3a36f98edd96e220d",
+  "cache": ".cache/37f752a0-879e-4451-a4a4-0a82896e3890.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "174e0ba8a41a4bc19e75f4e41e4f335cd7021e3fe9190d87aebace3bb026617a",
+      "bytes": 20486,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f3f4c518-87d5-454a-b0a8-c34a1a99c73b.jpg",
+    "fetchedAt": "2026-10-02T22:22:00.329073+00:00",
+    "sha256": "93f0cdc1e5d9a36e4cad9b6358988b6822ddfd9a562d4ff336e580d2abdb1247",
+    "bytes": 140539,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

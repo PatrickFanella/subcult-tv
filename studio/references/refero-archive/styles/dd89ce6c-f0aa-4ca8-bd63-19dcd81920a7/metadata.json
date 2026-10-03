@@ -1,0 +1,29 @@
+{
+  "styleId": "dd89ce6c-f0aa-4ca8-bd63-19dcd81920a7",
+  "sourceUrl": "https://styles.refero.design/style/dd89ce6c-f0aa-4ca8-bd63-19dcd81920a7",
+  "fetchedAt": "2026-10-02T22:08:10.230795+00:00",
+  "extractedAt": "2026-10-02T22:08:10.276200+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ToDesktop — Style Reference",
+  "htmlSha256": "15f2e38d0ea12bf30b70424df0c1090116c11394f610d14db814658bc9286743",
+  "cache": ".cache/dd89ce6c-f0aa-4ca8-bd63-19dcd81920a7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "593157c84fb77bfe3ca58a3fa34d88a3b63b4ddf6ebc46c33bb1e581e2a7f08f",
+      "bytes": 32627,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/461b7a94-f32a-4ba1-9185-506739daaceb.jpg",
+    "fetchedAt": "2026-10-02T22:08:12.262200+00:00",
+    "sha256": "cb7be9f81685c3df71c8d194a7ee7c0a6a390470cc29f6e78c6583d377cea850",
+    "bytes": 73062,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

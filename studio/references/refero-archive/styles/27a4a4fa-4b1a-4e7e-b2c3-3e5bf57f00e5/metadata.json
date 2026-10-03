@@ -1,0 +1,29 @@
+{
+  "styleId": "27a4a4fa-4b1a-4e7e-b2c3-3e5bf57f00e5",
+  "sourceUrl": "https://styles.refero.design/style/27a4a4fa-4b1a-4e7e-b2c3-3e5bf57f00e5",
+  "fetchedAt": "2026-10-02T22:51:26.223534+00:00",
+  "extractedAt": "2026-10-02T22:51:26.246758+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bang & Olufsen — Style Reference",
+  "htmlSha256": "e9fce15317fcbad3efa64e668999361b917540ffc9b84e1a220648feb4fc936a",
+  "cache": ".cache/27a4a4fa-4b1a-4e7e-b2c3-3e5bf57f00e5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2f765d0dd91b55844c56d25dfbe615791704d7f009a98b78d59db163de9a5485",
+      "bytes": 20004,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/871dc93f-c3df-4d32-a644-62c86d0d6ea0.jpg",
+    "fetchedAt": "2026-10-02T22:51:28.187506+00:00",
+    "sha256": "314ea2be219b258751be5037cc934880c8a032287458dd5af6e6052088530534",
+    "bytes": 59846,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

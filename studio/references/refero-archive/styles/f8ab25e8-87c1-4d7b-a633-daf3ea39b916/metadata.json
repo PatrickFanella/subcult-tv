@@ -1,0 +1,29 @@
+{
+  "styleId": "f8ab25e8-87c1-4d7b-a633-daf3ea39b916",
+  "sourceUrl": "https://styles.refero.design/style/f8ab25e8-87c1-4d7b-a633-daf3ea39b916",
+  "fetchedAt": "2026-10-02T22:36:50.206357+00:00",
+  "extractedAt": "2026-10-02T22:36:50.228046+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Concrete Club Studio — Style Reference",
+  "htmlSha256": "1f1ee192393815bfdf1c3091c2a79a56d4b807eab4bb24a01416b1fb7e703a9a",
+  "cache": ".cache/f8ab25e8-87c1-4d7b-a633-daf3ea39b916.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "024e06cb0572f0fc3cfcee419dce0a6c8151653ce1a82561a59be11c5911e400",
+      "bytes": 19231,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b9c9466e-2c34-4945-a896-3e641465cb6a.jpg",
+    "fetchedAt": "2026-10-02T22:36:52.208262+00:00",
+    "sha256": "9035b49e8b710dfce61673b30b1806eb08dbb6181499ef303b7ed621fccf1713",
+    "bytes": 55375,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

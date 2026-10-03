@@ -1,0 +1,29 @@
+{
+  "styleId": "4fa31278-33ea-4f1c-b7ac-cdc871e36089",
+  "sourceUrl": "https://styles.refero.design/style/4fa31278-33ea-4f1c-b7ac-cdc871e36089",
+  "fetchedAt": "2026-10-02T22:16:14.401074+00:00",
+  "extractedAt": "2026-10-02T22:16:14.427061+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "a16z speedrun — Style Reference",
+  "htmlSha256": "f892473438a5827256cb149579b0575bbdbd1972c2319986b47614327342486c",
+  "cache": ".cache/4fa31278-33ea-4f1c-b7ac-cdc871e36089.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a425702a837d01878304b2f43e78d1f6f07228d62e8254dc17968dd82cb7d453",
+      "bytes": 21728,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6c739189-a9b6-4afa-8b17-dd97af98b46c.jpg",
+    "fetchedAt": "2026-10-02T22:16:16.317566+00:00",
+    "sha256": "75fcac2316cc19073bb499b0cb817ede932a44f048b9a16a4ab8e426b9f54e7f",
+    "bytes": 87217,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

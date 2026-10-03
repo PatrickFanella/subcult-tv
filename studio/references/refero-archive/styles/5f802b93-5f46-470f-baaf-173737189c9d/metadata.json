@@ -1,0 +1,29 @@
+{
+  "styleId": "5f802b93-5f46-470f-baaf-173737189c9d",
+  "sourceUrl": "https://styles.refero.design/style/5f802b93-5f46-470f-baaf-173737189c9d",
+  "fetchedAt": "2026-10-02T22:41:58.202006+00:00",
+  "extractedAt": "2026-10-02T22:41:58.224344+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Alejandro Mejias — Style Reference",
+  "htmlSha256": "bb02124a5609b89c13d91c6c5ebce964e3271b2c92f73e86b2f9469727ec8f96",
+  "cache": ".cache/5f802b93-5f46-470f-baaf-173737189c9d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b08a5ab4265eaf5aeb52c87bbd94dadcf4e0da6f40b7bd7ba4f7fea75d934b3b",
+      "bytes": 23064,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/eb20fdbb-6f94-4f4c-8aa7-b48503851e10.jpg",
+    "fetchedAt": "2026-10-02T22:42:00.200427+00:00",
+    "sha256": "5bcce2b18cca6b70ec6b72938d0ca38d11133787830a1e2597fe9f85dde2c3bf",
+    "bytes": 65202,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "9decde51-2a8b-4212-bba5-be9457efc62e",
+  "sourceUrl": "https://styles.refero.design/style/9decde51-2a8b-4212-bba5-be9457efc62e",
+  "fetchedAt": "2026-10-02T22:46:22.242281+00:00",
+  "extractedAt": "2026-10-02T22:46:22.263382+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Oura Ring — Style Reference",
+  "htmlSha256": "00fdf2869202e1dd1951f77c0b3ce2e1e035ac686492754f27cf19fc2481f9c3",
+  "cache": ".cache/9decde51-2a8b-4212-bba5-be9457efc62e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3a24692043961ebfc670342487d79baa46a9e1523b151f019193fb5cbc88dd12",
+      "bytes": 19554,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1eab7166-bc2e-4152-9a91-b808ee345dde.jpg",
+    "fetchedAt": "2026-10-02T22:46:24.202145+00:00",
+    "sha256": "1d4e9fd074234cc54ffc5d27ff728bf8e066259241d54d1e0ffc398213fbe141",
+    "bytes": 70086,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

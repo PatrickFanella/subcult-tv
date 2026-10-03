@@ -1,0 +1,29 @@
+{
+  "styleId": "97f7787e-bba0-4d37-8b74-4b0cb8d5a57c",
+  "sourceUrl": "https://styles.refero.design/style/97f7787e-bba0-4d37-8b74-4b0cb8d5a57c",
+  "fetchedAt": "2026-10-02T22:20:34.191629+00:00",
+  "extractedAt": "2026-10-02T22:20:34.216952+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Switch-Lit — Style Reference",
+  "htmlSha256": "9453b704622fefed2d070f32c53fd5b773c99c7df0d21a4e1d751145b57f05da",
+  "cache": ".cache/97f7787e-bba0-4d37-8b74-4b0cb8d5a57c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2efaca9c4a22c385922a04e05f2961fcddfa8c2d349e8fc44c941648a230408a",
+      "bytes": 24471,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/530f14c0-7b8c-4a87-befa-c0fb85a62b79.jpg",
+    "fetchedAt": "2026-10-02T22:20:36.272169+00:00",
+    "sha256": "dad53183cf3fca8f5146ee389543f0ab72b410654029e282f139585d83132775",
+    "bytes": 156557,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

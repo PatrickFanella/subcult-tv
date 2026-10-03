@@ -1,0 +1,29 @@
+{
+  "styleId": "653b7b25-f610-4a46-90e1-e3eed98b1f24",
+  "sourceUrl": "https://styles.refero.design/style/653b7b25-f610-4a46-90e1-e3eed98b1f24",
+  "fetchedAt": "2026-10-02T22:16:06.202245+00:00",
+  "extractedAt": "2026-10-02T22:16:06.232949+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aninix — Style Reference",
+  "htmlSha256": "98545ea0263a2f480ed4e02e1a989680e3e1228c8d48f51d8796340f9cac7f72",
+  "cache": ".cache/653b7b25-f610-4a46-90e1-e3eed98b1f24.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6a20834d3fb39f58fe36b239da73f372e37abe40bfdb3e001ccedfcaa1fd5c3b",
+      "bytes": 19097,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e26573f5-3aca-4ed6-bcca-00aaa41afdfe.jpg",
+    "fetchedAt": "2026-10-02T22:16:08.241296+00:00",
+    "sha256": "c2e431be179ee2d743111b534ff9f97c77915decb569d374acfed87e701531df",
+    "bytes": 63835,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

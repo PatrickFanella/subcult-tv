@@ -1,0 +1,29 @@
+{
+  "styleId": "b721fa94-72e6-49ad-a9bc-bab3d075f19c",
+  "sourceUrl": "https://styles.refero.design/style/b721fa94-72e6-49ad-a9bc-bab3d075f19c",
+  "fetchedAt": "2026-10-02T22:49:18.228038+00:00",
+  "extractedAt": "2026-10-02T22:49:18.251631+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Oxide Computer Company — Style Reference",
+  "htmlSha256": "1e776658cb6dde4c1c3431c04567b6495074d1aa3e6d06ca30eea4b1beb53a71",
+  "cache": ".cache/b721fa94-72e6-49ad-a9bc-bab3d075f19c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f80a02bb180887bee19c627c9af92c322c9e62b7a9daad94d893629c8278e709",
+      "bytes": 25685,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0fdfc601-ba0c-487a-b522-0bcbe343f076.jpg",
+    "fetchedAt": "2026-10-02T22:49:20.251092+00:00",
+    "sha256": "8f500ef8282815d102e4b0695bd06c165d042ad2eaacad508cbefcd3fd81cbd1",
+    "bytes": 139730,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

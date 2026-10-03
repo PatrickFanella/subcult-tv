@@ -1,0 +1,29 @@
+{
+  "styleId": "80099f79-72b7-4367-b2e9-6a3d4a3e9e6a",
+  "sourceUrl": "https://styles.refero.design/style/80099f79-72b7-4367-b2e9-6a3d4a3e9e6a",
+  "fetchedAt": "2026-10-02T22:04:34.233997+00:00",
+  "extractedAt": "2026-10-02T22:04:34.257415+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Integrated Biosciences — Style Reference",
+  "htmlSha256": "4c62cb6a7535deb7e69e896789d908c32e74876fe5484ede72b427e3e51c07da",
+  "cache": ".cache/80099f79-72b7-4367-b2e9-6a3d4a3e9e6a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a18d8d86163cd35d9623e54a7fa40ec3ce6eea835e4f72beab06443e5f8729e0",
+      "bytes": 23327,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8b166f44-2d7d-4b77-8748-4b0955cea28c.jpg",
+    "fetchedAt": "2026-10-02T22:04:36.232370+00:00",
+    "sha256": "9801358e827769bf30baedcea918ac216d8152fc00dde5db1af30adf7bd76c7a",
+    "bytes": 119828,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

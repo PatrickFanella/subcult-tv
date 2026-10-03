@@ -1,0 +1,29 @@
+{
+  "styleId": "e67ac20e-6497-4756-b7e2-17859a794fb6",
+  "sourceUrl": "https://styles.refero.design/style/e67ac20e-6497-4756-b7e2-17859a794fb6",
+  "fetchedAt": "2026-10-02T22:05:02.230974+00:00",
+  "extractedAt": "2026-10-02T22:05:02.253139+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Silencio — Style Reference",
+  "htmlSha256": "38e11d3b5a9880cec127d8d345ba571eabc01489fe8ccba2ae194364c9f4518b",
+  "cache": ".cache/e67ac20e-6497-4756-b7e2-17859a794fb6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b6cc56d7091bff0f587250443ac5a34dc97421187ce4a274906dfac75243168b",
+      "bytes": 16966,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9989e010-dc7b-4de2-a434-17c39d068363.jpg",
+    "fetchedAt": "2026-10-02T22:05:04.193829+00:00",
+    "sha256": "3d4c122813b4ed1c1797bfafebbbe9666912c12670baee4d9af7b80c88708c4f",
+    "bytes": 19886,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

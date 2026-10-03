@@ -1,0 +1,29 @@
+{
+  "styleId": "bc2c6ecc-7a0d-4693-86e5-9fa93b165601",
+  "sourceUrl": "https://styles.refero.design/style/bc2c6ecc-7a0d-4693-86e5-9fa93b165601",
+  "fetchedAt": "2026-10-02T22:48:10.217626+00:00",
+  "extractedAt": "2026-10-02T22:48:10.241343+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Loom — Style Reference",
+  "htmlSha256": "67986104f0a9a1d8c8083aaf5fce173942c8e237d0b675c06943a9db6fabb994",
+  "cache": ".cache/bc2c6ecc-7a0d-4693-86e5-9fa93b165601.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1d5ef82a703cdae0aa6f085141753a43a9843b69be7fdd7c625d621e62ebf46b",
+      "bytes": 20290,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ca55c906-3e1d-4316-9731-4c8ab1213e41.jpg",
+    "fetchedAt": "2026-10-02T22:48:12.356372+00:00",
+    "sha256": "c5998f6e89a42f3fc5869afe9d9efe6ad68ebdde2e67804715707621a7b74f38",
+    "bytes": 109151,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

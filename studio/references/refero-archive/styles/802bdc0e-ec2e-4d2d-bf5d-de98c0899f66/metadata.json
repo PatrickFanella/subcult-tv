@@ -1,0 +1,29 @@
+{
+  "styleId": "802bdc0e-ec2e-4d2d-bf5d-de98c0899f66",
+  "sourceUrl": "https://styles.refero.design/style/802bdc0e-ec2e-4d2d-bf5d-de98c0899f66",
+  "fetchedAt": "2026-10-02T22:37:18.202542+00:00",
+  "extractedAt": "2026-10-02T22:37:18.224447+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Clutch Security — Style Reference",
+  "htmlSha256": "edfaf9db087ee31ba7f89219a50307ae24215286752d04130f2da02f32d71757",
+  "cache": ".cache/802bdc0e-ec2e-4d2d-bf5d-de98c0899f66.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2ccd2b44dfd50eb3844202f3b87f999a509f7ccdf64688ed4ae019d5f14c90c0",
+      "bytes": 21224,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/963fd113-f37e-4e6b-b3ff-f476fddd20a3.jpg",
+    "fetchedAt": "2026-10-02T22:37:20.259589+00:00",
+    "sha256": "e76ed20eb467d062152e7c9f6c7d0f71b4f3aa8fbad958fe5f92a1e97d7ccb14",
+    "bytes": 91217,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

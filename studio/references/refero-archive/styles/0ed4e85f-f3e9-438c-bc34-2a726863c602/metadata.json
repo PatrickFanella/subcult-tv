@@ -1,0 +1,29 @@
+{
+  "styleId": "0ed4e85f-f3e9-438c-bc34-2a726863c602",
+  "sourceUrl": "https://styles.refero.design/style/0ed4e85f-f3e9-438c-bc34-2a726863c602",
+  "fetchedAt": "2026-10-02T22:18:26.191740+00:00",
+  "extractedAt": "2026-10-02T22:18:26.213193+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Peggy — Style Reference",
+  "htmlSha256": "3db828f00b8970e6fd07ef393cadd2e9d9d30bf67e8114ae3120c32e82997d7b",
+  "cache": ".cache/0ed4e85f-f3e9-438c-bc34-2a726863c602.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fef59e06cbe46b41264ab4bc12c84f6d32410a018d115e7210471747fd87ab73",
+      "bytes": 21348,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2a6ca652-52ea-4179-8c73-54d1d30b2061.jpg",
+    "fetchedAt": "2026-10-02T22:18:28.273408+00:00",
+    "sha256": "11d6116af692c1b5a12fcf8cd14d9897ba85a2b7abe021f88680a04b1a258c2f",
+    "bytes": 111321,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

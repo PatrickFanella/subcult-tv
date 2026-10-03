@@ -1,0 +1,29 @@
+{
+  "styleId": "1b2aaf14-43b0-4c23-bd25-1d49924fe85e",
+  "sourceUrl": "https://styles.refero.design/style/1b2aaf14-43b0-4c23-bd25-1d49924fe85e",
+  "fetchedAt": "2026-10-02T22:46:06.481286+00:00",
+  "extractedAt": "2026-10-02T22:46:06.504065+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Buymeacoffee — Style Reference",
+  "htmlSha256": "7853806883155ceaae5650a2bca44ac4890e7f69b65d7106216a6238332b10bf",
+  "cache": ".cache/1b2aaf14-43b0-4c23-bd25-1d49924fe85e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "26af8f7e28334feb3f4e8a09b10c5be7fccfb53f90d8d4964e4a65d792942b14",
+      "bytes": 24120,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/36c60cc8-7001-4913-a6f8-04bb21eea01c.jpg",
+    "fetchedAt": "2026-10-02T22:46:08.262757+00:00",
+    "sha256": "f3c90295e9798a8e4fe15bbfc3d3f3fb15073111d17ae72129ac3dee0c97dd44",
+    "bytes": 107904,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

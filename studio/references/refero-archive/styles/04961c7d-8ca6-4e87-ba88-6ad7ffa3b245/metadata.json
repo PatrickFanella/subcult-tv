@@ -1,0 +1,29 @@
+{
+  "styleId": "04961c7d-8ca6-4e87-ba88-6ad7ffa3b245",
+  "sourceUrl": "https://styles.refero.design/style/04961c7d-8ca6-4e87-ba88-6ad7ffa3b245",
+  "fetchedAt": "2026-10-02T22:01:58.329114+00:00",
+  "extractedAt": "2026-10-02T22:01:58.361583+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Home page | Impossible Foods — Style Reference",
+  "htmlSha256": "7638375250dda6b129e9dd84503a7695f71839bf59c6ac0b9c08ba85beb8f7f4",
+  "cache": ".cache/04961c7d-8ca6-4e87-ba88-6ad7ffa3b245.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "650985a695aec0ec203ed2272bd27fbaf0b4d3402d72615c1515096be530afea",
+      "bytes": 20948,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e5b306f3-778a-4d1e-a0e3-2862d2caeb11.jpg",
+    "fetchedAt": "2026-10-02T22:02:00.189764+00:00",
+    "sha256": "6fbb270cdecef71dabcd465cb18c40dd2e55d206d87ae5b679496f5c4c1b0163",
+    "bytes": 88926,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

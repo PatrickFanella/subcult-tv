@@ -1,0 +1,29 @@
+{
+  "styleId": "485ae5fb-8f25-4aa3-a4e4-1deb1590d7d6",
+  "sourceUrl": "https://styles.refero.design/style/485ae5fb-8f25-4aa3-a4e4-1deb1590d7d6",
+  "fetchedAt": "2026-10-02T22:44:14.720610+00:00",
+  "extractedAt": "2026-10-02T22:44:14.742487+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "cord.com — Style Reference",
+  "htmlSha256": "fca8e0f1edee69945e8ea9a5531a8c825ff2143df86721c81e4bab90671f0771",
+  "cache": ".cache/485ae5fb-8f25-4aa3-a4e4-1deb1590d7d6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7608061f0d412e8a29c67a3136bf0226d87861cf62b174df139412521381eb32",
+      "bytes": 21643,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/164d3183-d257-48bf-9b87-84e5d354e3ba.jpg",
+    "fetchedAt": "2026-10-02T22:44:16.241735+00:00",
+    "sha256": "d1781f7df927cbe5e016d21d20b238b01ed4bae69cffe8dff530dfa81d9b4961",
+    "bytes": 74809,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

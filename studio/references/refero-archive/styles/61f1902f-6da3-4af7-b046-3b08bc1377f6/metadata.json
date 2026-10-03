@@ -1,0 +1,29 @@
+{
+  "styleId": "61f1902f-6da3-4af7-b046-3b08bc1377f6",
+  "sourceUrl": "https://styles.refero.design/style/61f1902f-6da3-4af7-b046-3b08bc1377f6",
+  "fetchedAt": "2026-10-02T22:09:54.236363+00:00",
+  "extractedAt": "2026-10-02T22:09:54.259185+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "OpenSea — Style Reference",
+  "htmlSha256": "e10d5918d54d1691300135e538ee667e112990ca31b9f12fcd45e40b59da2106",
+  "cache": ".cache/61f1902f-6da3-4af7-b046-3b08bc1377f6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c1ef34cb21b4a1b92e5526dc46c6d60805ae7f672276301d75f9cf8f2f44425e",
+      "bytes": 18693,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e223ebc9-9f9c-4dc1-82cc-7582a95ed13c.jpg",
+    "fetchedAt": "2026-10-02T22:09:56.311043+00:00",
+    "sha256": "b4fa8948c08e40cf1e83739fe636f5cd82aa69b9f798c0fde3ae712f1cb50827",
+    "bytes": 140612,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

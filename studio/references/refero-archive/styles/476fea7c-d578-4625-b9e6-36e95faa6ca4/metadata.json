@@ -1,0 +1,29 @@
+{
+  "styleId": "476fea7c-d578-4625-b9e6-36e95faa6ca4",
+  "sourceUrl": "https://styles.refero.design/style/476fea7c-d578-4625-b9e6-36e95faa6ca4",
+  "fetchedAt": "2026-10-02T22:42:58.458907+00:00",
+  "extractedAt": "2026-10-02T22:42:58.480821+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Preply — Style Reference",
+  "htmlSha256": "f2324d39e7eec7c0e12d6285bd9c667c1f4812d159e87cb26ef95e25b1913461",
+  "cache": ".cache/476fea7c-d578-4625-b9e6-36e95faa6ca4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c0e46eb4e87bd5e2e2809346f8a548a3542e11703d995f6a253cd2fceaf4eb0b",
+      "bytes": 19510,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/59f48a32-e031-47fc-babd-ee0e9ce7d5e0.jpg",
+    "fetchedAt": "2026-10-02T22:43:00.275744+00:00",
+    "sha256": "6d0c16a5671295f04db2957ebbf39fafe7ccde5848b1eb80bd8079d9537374fb",
+    "bytes": 99700,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

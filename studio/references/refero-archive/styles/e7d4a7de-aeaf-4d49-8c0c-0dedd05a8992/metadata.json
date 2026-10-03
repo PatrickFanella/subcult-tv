@@ -1,0 +1,29 @@
+{
+  "styleId": "e7d4a7de-aeaf-4d49-8c0c-0dedd05a8992",
+  "sourceUrl": "https://styles.refero.design/style/e7d4a7de-aeaf-4d49-8c0c-0dedd05a8992",
+  "fetchedAt": "2026-10-02T22:44:50.202342+00:00",
+  "extractedAt": "2026-10-02T22:44:50.226315+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Pop Site — Style Reference",
+  "htmlSha256": "ccf6966724c64ee3ba6646377f9bca54e18d44b407426a15bd916a88577f825f",
+  "cache": ".cache/e7d4a7de-aeaf-4d49-8c0c-0dedd05a8992.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "01683806e68242c55d9501871949ddbdfcd02c60cb1a9f4665e5bc6b2d09b564",
+      "bytes": 20040,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f9d11206-a282-4eab-9bdd-0fb37dcbf7f2.jpg",
+    "fetchedAt": "2026-10-02T22:44:52.259734+00:00",
+    "sha256": "906ba1ef24c66b1c51922bf3d208fd9dd31fd45cb8fcee4e61d0019557521255",
+    "bytes": 166585,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

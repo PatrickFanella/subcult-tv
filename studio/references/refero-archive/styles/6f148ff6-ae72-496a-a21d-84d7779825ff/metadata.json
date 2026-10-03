@@ -1,0 +1,29 @@
+{
+  "styleId": "6f148ff6-ae72-496a-a21d-84d7779825ff",
+  "sourceUrl": "https://styles.refero.design/style/6f148ff6-ae72-496a-a21d-84d7779825ff",
+  "fetchedAt": "2026-10-02T22:26:34.176875+00:00",
+  "extractedAt": "2026-10-02T22:26:34.202670+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "TOMO — Style Reference",
+  "htmlSha256": "bf0aaef68b6d30eb436db03a5bc3ef62d965a6ff2a206fb845f3200b1d89d4e9",
+  "cache": ".cache/6f148ff6-ae72-496a-a21d-84d7779825ff.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d35a34cd1424ec9fd7bfd4c51275b53b3b17ee1879e54a99e716990310367dd1",
+      "bytes": 14795,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3afcf4ac-a0e3-44cb-ba97-fc51caa639a8.jpg",
+    "fetchedAt": "2026-10-02T22:26:36.288676+00:00",
+    "sha256": "000fb135f82362a3a54526745dd3f2ae4576ebcb1ec99fd5fd882c8e74a028de",
+    "bytes": 164394,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "5d34568d-4bdc-445d-a527-c6f5249fa8fb",
+  "sourceUrl": "https://styles.refero.design/style/5d34568d-4bdc-445d-a527-c6f5249fa8fb",
+  "fetchedAt": "2026-10-02T22:47:58.216473+00:00",
+  "extractedAt": "2026-10-02T22:47:58.239173+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Superpower — Style Reference",
+  "htmlSha256": "5014bc9a39cdc79fa22ab762ecb6c019b95099c4afd1e45dcd3661fb3cd51290",
+  "cache": ".cache/5d34568d-4bdc-445d-a527-c6f5249fa8fb.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d75be9cb631e5bb0fea8bf97dfee032ac526b6d49b7f028b68516d503bd9e7d7",
+      "bytes": 17230,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/17a65f9d-b0f9-4a92-8b56-62323cd3d6c9.jpg",
+    "fetchedAt": "2026-10-02T22:48:00.224834+00:00",
+    "sha256": "c56c1885670eaeba9e0c285a985cc62cb2ca56fdd53b60c653f0b9bbe0d35ea3",
+    "bytes": 97671,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

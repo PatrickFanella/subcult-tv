@@ -1,0 +1,29 @@
+{
+  "styleId": "b3f7b44d-6564-4015-902a-259b4790b9de",
+  "sourceUrl": "https://styles.refero.design/style/b3f7b44d-6564-4015-902a-259b4790b9de",
+  "fetchedAt": "2026-10-02T22:24:22.200453+00:00",
+  "extractedAt": "2026-10-02T22:24:22.220592+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "HeroKit — Style Reference",
+  "htmlSha256": "321eef4b0a783abd782e1c0888465ded3f1429e9f2f4ef6728cf59ddec57862b",
+  "cache": ".cache/b3f7b44d-6564-4015-902a-259b4790b9de.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "87c310f8bf3e42029c30fb768c17d5ee1c6412e216693cb568f9fd89f4aaca24",
+      "bytes": 21685,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7a0e7947-d5d3-4038-a6f7-e703f787a667.jpg",
+    "fetchedAt": "2026-10-02T22:24:24.228547+00:00",
+    "sha256": "667200184f9e6a8cd39b4a0f1142a77e253218c83a28b27e82072ba3f23281be",
+    "bytes": 107479,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

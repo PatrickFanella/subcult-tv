@@ -1,0 +1,29 @@
+{
+  "styleId": "13b74e34-b824-4d1d-bd2c-bb9bfbc2d6e1",
+  "sourceUrl": "https://styles.refero.design/style/13b74e34-b824-4d1d-bd2c-bb9bfbc2d6e1",
+  "fetchedAt": "2026-10-02T22:10:42.231925+00:00",
+  "extractedAt": "2026-10-02T22:10:42.257027+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SpaceX — Style Reference",
+  "htmlSha256": "931f12d7f2de0afd29293a3397adef1d12821635df21327ff3f51bbcf5d1833f",
+  "cache": ".cache/13b74e34-b824-4d1d-bd2c-bb9bfbc2d6e1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "45d964f8fa56c212a196f02809b9a433500e08046b8f60c9e3273c71bc8a51ad",
+      "bytes": 16143,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8eca8d76-8271-41d4-a7b5-27abba488d0d.jpg",
+    "fetchedAt": "2026-10-02T22:10:44.136325+00:00",
+    "sha256": "a47fc7cb859f3faa30b6d81e66252f9920265ebab69a9cbd5198d929d34d1acc",
+    "bytes": 34762,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

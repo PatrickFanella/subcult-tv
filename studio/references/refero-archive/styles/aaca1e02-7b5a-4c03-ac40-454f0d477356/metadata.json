@@ -1,0 +1,29 @@
+{
+  "styleId": "aaca1e02-7b5a-4c03-ac40-454f0d477356",
+  "sourceUrl": "https://styles.refero.design/style/aaca1e02-7b5a-4c03-ac40-454f0d477356",
+  "fetchedAt": "2026-10-02T22:33:06.310209+00:00",
+  "extractedAt": "2026-10-02T22:33:06.335680+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ready — Style Reference",
+  "htmlSha256": "a9f9aaf87d5bbf55b17bb2c6af91ad5632a1ad9baec97e0c36d86fc31f4e0b2c",
+  "cache": ".cache/aaca1e02-7b5a-4c03-ac40-454f0d477356.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cedb960d4f209f87c10a47aa44eac734df9d90100b0234549f595c25776f0343",
+      "bytes": 17367,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/646672ad-7338-4ff7-89c2-121c8ea35406.jpg",
+    "fetchedAt": "2026-10-02T22:33:08.286142+00:00",
+    "sha256": "e89377d524c9cd0c8c59edc8ab40186249f387887bb2653ad6fad892e6f275bd",
+    "bytes": 110774,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

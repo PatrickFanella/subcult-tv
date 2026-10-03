@@ -1,0 +1,29 @@
+{
+  "styleId": "4367b4cd-b002-4719-a418-cbce020f0d33",
+  "sourceUrl": "https://styles.refero.design/style/4367b4cd-b002-4719-a418-cbce020f0d33",
+  "fetchedAt": "2026-10-02T22:08:34.188582+00:00",
+  "extractedAt": "2026-10-02T22:08:34.215209+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "MasterClass — Style Reference",
+  "htmlSha256": "0f8c2df84c2681b242b5f4984c86aad788dea0de3f999a70fe0f3b360367bf84",
+  "cache": ".cache/4367b4cd-b002-4719-a418-cbce020f0d33.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8698b6cb7b0975c188771b468d1d3da8ac0f575f26adc94a5465f327f90a6809",
+      "bytes": 21941,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2f5cd686-6348-4b4d-8f5d-7b1a7ce9fe63.jpg",
+    "fetchedAt": "2026-10-02T22:08:36.331782+00:00",
+    "sha256": "bfb37bd0542c6a16be6b870cfa82da6120405dad1488a3d52f66e3352041f8d4",
+    "bytes": 114398,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

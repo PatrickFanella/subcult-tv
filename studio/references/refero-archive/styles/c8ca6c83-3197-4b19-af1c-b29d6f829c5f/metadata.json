@@ -1,0 +1,29 @@
+{
+  "styleId": "c8ca6c83-3197-4b19-af1c-b29d6f829c5f",
+  "sourceUrl": "https://styles.refero.design/style/c8ca6c83-3197-4b19-af1c-b29d6f829c5f",
+  "fetchedAt": "2026-10-02T22:06:06.192315+00:00",
+  "extractedAt": "2026-10-02T22:06:06.215080+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dul Zorigoo — Style Reference",
+  "htmlSha256": "e4c98031b875583d813d1a79572aef41edf46451645f12d3d5a4c6c7d1b9c26a",
+  "cache": ".cache/c8ca6c83-3197-4b19-af1c-b29d6f829c5f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "81212825e060f04619eb8ac74770bf382ee56381549b198e1135c00d8b25366b",
+      "bytes": 15858,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/218fed06-11af-4f2a-91ca-81385c0783ea.jpg",
+    "fetchedAt": "2026-10-02T22:06:08.287765+00:00",
+    "sha256": "9f81f6522e006d030ca60e77958e7239213e48a0ac65a67980a6f272072a9e6c",
+    "bytes": 109869,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

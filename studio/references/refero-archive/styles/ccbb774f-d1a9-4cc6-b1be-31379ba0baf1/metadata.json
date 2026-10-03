@@ -1,0 +1,29 @@
+{
+  "styleId": "ccbb774f-d1a9-4cc6-b1be-31379ba0baf1",
+  "sourceUrl": "https://styles.refero.design/style/ccbb774f-d1a9-4cc6-b1be-31379ba0baf1",
+  "fetchedAt": "2026-10-02T22:34:26.241284+00:00",
+  "extractedAt": "2026-10-02T22:34:26.267638+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sandclock — Style Reference",
+  "htmlSha256": "4ec06750e1bb6fd7c7572c9319a4c8fa4fd6474eaba2ebe5e3899d98fb7ca538",
+  "cache": ".cache/ccbb774f-d1a9-4cc6-b1be-31379ba0baf1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "645280c9a2f958974e07a7b96d2bce0671ad9a7362e3adfca9843b8064813db0",
+      "bytes": 18704,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/958f43d5-68dd-488c-aaa7-0511f290454f.jpg",
+    "fetchedAt": "2026-10-02T22:34:28.314983+00:00",
+    "sha256": "9ed6daa7fa7fe58668fdc737d10995e860edb69342a7a423d89d686d83eefce0",
+    "bytes": 89829,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

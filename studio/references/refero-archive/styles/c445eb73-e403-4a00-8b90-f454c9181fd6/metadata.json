@@ -1,0 +1,29 @@
+{
+  "styleId": "c445eb73-e403-4a00-8b90-f454c9181fd6",
+  "sourceUrl": "https://styles.refero.design/style/c445eb73-e403-4a00-8b90-f454c9181fd6",
+  "fetchedAt": "2026-10-02T22:37:54.210291+00:00",
+  "extractedAt": "2026-10-02T22:37:54.233097+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Obscura — Style Reference",
+  "htmlSha256": "d5c5291e8f7f8aee0900e8a0d0729a999135d94e15ba06ad03803315e48a7be3",
+  "cache": ".cache/c445eb73-e403-4a00-8b90-f454c9181fd6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0613c85a32baa317f9da369d262d4969665437f5e686d0014620cd9a4d54b9a4",
+      "bytes": 22792,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1cdd2dd9-f189-4c02-b638-ceaedf9d82a5.jpg",
+    "fetchedAt": "2026-10-02T22:37:56.170878+00:00",
+    "sha256": "9763973e0eb8cc539fb5f20b13b67a8bd611448ff509f14beb5677c2099ce6d4",
+    "bytes": 69509,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

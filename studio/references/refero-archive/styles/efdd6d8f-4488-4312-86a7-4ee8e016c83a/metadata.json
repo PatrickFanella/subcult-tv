@@ -1,0 +1,29 @@
+{
+  "styleId": "efdd6d8f-4488-4312-86a7-4ee8e016c83a",
+  "sourceUrl": "https://styles.refero.design/style/efdd6d8f-4488-4312-86a7-4ee8e016c83a",
+  "fetchedAt": "2026-10-02T22:04:58.382811+00:00",
+  "extractedAt": "2026-10-02T22:04:58.405422+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Strava — Style Reference",
+  "htmlSha256": "b54af639ff05f06ca5c9a4a722c6c47e0fe4d3ce82c0442dbaea2de5da940c98",
+  "cache": ".cache/efdd6d8f-4488-4312-86a7-4ee8e016c83a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "781f00a5b9afd6ff1da4229ad1fb0085001094dc53ae8555b5d85e3b59562fad",
+      "bytes": 16189,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8ff32010-c698-4431-933a-666ad4cb71f1.jpg",
+    "fetchedAt": "2026-10-02T22:05:00.280479+00:00",
+    "sha256": "b55c44a81252f7b3c763e6935d41ee7419bb4e29e27e1fadea8749dc72ec88a4",
+    "bytes": 122016,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

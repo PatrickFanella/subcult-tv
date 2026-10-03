@@ -1,0 +1,29 @@
+{
+  "styleId": "461da0f0-fde6-46bc-8137-7eca006260a8",
+  "sourceUrl": "https://styles.refero.design/style/461da0f0-fde6-46bc-8137-7eca006260a8",
+  "fetchedAt": "2026-10-02T22:11:14.181704+00:00",
+  "extractedAt": "2026-10-02T22:11:14.204751+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Together AI — Style Reference",
+  "htmlSha256": "962f24abb7fb6420e2b8c8bf19cc6ddbb3cb7eb3ac5aa0dc33afd01274220fb6",
+  "cache": ".cache/461da0f0-fde6-46bc-8137-7eca006260a8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2d855492ea33f000c6b318ff60f67d7e66a3cb4d1e0ee65e727fb16aea0a3649",
+      "bytes": 19448,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/47cb5512-b041-45ce-9f21-175565cfb488.jpg",
+    "fetchedAt": "2026-10-02T22:11:16.292380+00:00",
+    "sha256": "d0ce528302620042f2d8fc754da8030109caf708e55b9e7c0ab99fb39ebb4d59",
+    "bytes": 83314,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

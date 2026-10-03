@@ -1,0 +1,29 @@
+{
+  "styleId": "9be20798-843b-424c-bc87-192edc0cce22",
+  "sourceUrl": "https://styles.refero.design/style/9be20798-843b-424c-bc87-192edc0cce22",
+  "fetchedAt": "2026-10-02T22:18:58.431780+00:00",
+  "extractedAt": "2026-10-02T22:18:58.454091+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Streamtime — Style Reference",
+  "htmlSha256": "9b7d23643aeb3a614eda83469a9264412d70dde06fa2c2c0bbd15c9c9ebdadaf",
+  "cache": ".cache/9be20798-843b-424c-bc87-192edc0cce22.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "db030d5b405104f72f32ee3e2fa93fd1145901e86a85236f298354eb1095c7d6",
+      "bytes": 20447,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a86f8187-a89f-4070-8123-0bc2e069ce58.jpg",
+    "fetchedAt": "2026-10-02T22:19:00.254793+00:00",
+    "sha256": "0138897fe20881296c0b7d77cce4b9979b6d054e412836c879ec7f300792982f",
+    "bytes": 96634,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

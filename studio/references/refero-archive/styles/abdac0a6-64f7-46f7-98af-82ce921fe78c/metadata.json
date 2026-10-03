@@ -1,0 +1,29 @@
+{
+  "styleId": "abdac0a6-64f7-46f7-98af-82ce921fe78c",
+  "sourceUrl": "https://styles.refero.design/style/abdac0a6-64f7-46f7-98af-82ce921fe78c",
+  "fetchedAt": "2026-10-02T22:23:26.209581+00:00",
+  "extractedAt": "2026-10-02T22:23:26.233485+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Gt-america — Style Reference",
+  "htmlSha256": "dabfcd84f8d293a4c19498592a45e6a75c1a8f84f2a9cf77103f6ac29431d544",
+  "cache": ".cache/abdac0a6-64f7-46f7-98af-82ce921fe78c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "823f84df219b85270c363553bdb4c99996169e209d1a03fe68281c713c4db85a",
+      "bytes": 25307,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a59700c2-61b0-47d6-ba2c-6755eef6dcff.jpg",
+    "fetchedAt": "2026-10-02T22:23:28.410035+00:00",
+    "sha256": "bcceeced35aca283b5330b0e40cc9b406ce2a3e64b57bc2fa0559f1e06023a75",
+    "bytes": 360529,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

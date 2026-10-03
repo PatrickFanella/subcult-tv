@@ -1,0 +1,29 @@
+{
+  "styleId": "c9c5be5a-aaa1-4338-9681-8378d2e24fbd",
+  "sourceUrl": "https://styles.refero.design/style/c9c5be5a-aaa1-4338-9681-8378d2e24fbd",
+  "fetchedAt": "2026-10-02T22:09:46.195585+00:00",
+  "extractedAt": "2026-10-02T22:09:46.217511+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lamborghini.com — Style Reference",
+  "htmlSha256": "6fa30f6d554970ca32a1dac9fae3cd3544749ca4ad4dae8868f3602727635019",
+  "cache": ".cache/c9c5be5a-aaa1-4338-9681-8378d2e24fbd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "843221c56a280a2a8cedd03fe1a6cd8e854698bc35e5f2a06b4c5d8c12ac685e",
+      "bytes": 21291,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ca77e2d5-b807-4035-ab02-c56778ca9195.jpg",
+    "fetchedAt": "2026-10-02T22:09:48.322871+00:00",
+    "sha256": "be9ed4551783b913963079344bab3407c7dea45b2d09be237ff0861db75c5a3b",
+    "bytes": 91361,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

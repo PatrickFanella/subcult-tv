@@ -1,0 +1,29 @@
+{
+  "styleId": "2e24c0ca-dd46-4519-b66e-cc03701d3b8c",
+  "sourceUrl": "https://styles.refero.design/style/2e24c0ca-dd46-4519-b66e-cc03701d3b8c",
+  "fetchedAt": "2026-10-02T22:32:06.225115+00:00",
+  "extractedAt": "2026-10-02T22:32:06.248878+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Morflax — Style Reference",
+  "htmlSha256": "eff4cc1374077a347f893026f6572fe1dc8f5ff8da43525d8f45cdcae41770e3",
+  "cache": ".cache/2e24c0ca-dd46-4519-b66e-cc03701d3b8c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6a384b5e5515fa38a62d634918e25c798c8f45df07cfed901454688988b2e5db",
+      "bytes": 22803,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/49837dee-4c16-49d1-ab61-94b30c3ce8db.jpg",
+    "fetchedAt": "2026-10-02T22:32:08.256754+00:00",
+    "sha256": "867bbeff3a55f8f01f61319f026aff8440312611465eddd2b3087398e3a37f83",
+    "bytes": 73666,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

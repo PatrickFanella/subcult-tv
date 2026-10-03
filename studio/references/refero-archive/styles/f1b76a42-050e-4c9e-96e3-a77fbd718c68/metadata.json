@@ -1,0 +1,29 @@
+{
+  "styleId": "f1b76a42-050e-4c9e-96e3-a77fbd718c68",
+  "sourceUrl": "https://styles.refero.design/style/f1b76a42-050e-4c9e-96e3-a77fbd718c68",
+  "fetchedAt": "2026-10-02T22:39:06.235632+00:00",
+  "extractedAt": "2026-10-02T22:39:06.258726+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Maciej Zadykowicz — Style Reference",
+  "htmlSha256": "e6dd250eb3aa17b8e61cb5ceb230cca305adf41fffbb9176b65203d947831fce",
+  "cache": ".cache/f1b76a42-050e-4c9e-96e3-a77fbd718c68.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9feccd7010395a6c980f77e30d4b12e0881dd00b88b39e4e40d52b6e148215bf",
+      "bytes": 19740,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/27fb6ade-4613-4546-b426-d1e9587a0a7b.jpg",
+    "fetchedAt": "2026-10-02T22:39:08.359315+00:00",
+    "sha256": "6e17ea528ff0ca1d2ca530fd9671d94cb582760034026653398415764d189eb3",
+    "bytes": 131472,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

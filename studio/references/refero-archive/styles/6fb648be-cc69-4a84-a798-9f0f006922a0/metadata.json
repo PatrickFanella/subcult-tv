@@ -1,0 +1,29 @@
+{
+  "styleId": "6fb648be-cc69-4a84-a798-9f0f006922a0",
+  "sourceUrl": "https://styles.refero.design/style/6fb648be-cc69-4a84-a798-9f0f006922a0",
+  "fetchedAt": "2026-10-02T22:47:46.251469+00:00",
+  "extractedAt": "2026-10-02T22:47:46.274690+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Faire ES — Style Reference",
+  "htmlSha256": "f85b0afa7679e8b664bc183fd463d2a8d60bc53a85f2a744d83f7e91406d74c7",
+  "cache": ".cache/6fb648be-cc69-4a84-a798-9f0f006922a0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fac519cdee963e0b81af4c260c1bcb99f66472ffa9419291899a7ab7fdf01d1b",
+      "bytes": 20826,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/742b6d46-41b7-45ab-b4ab-35098c438ae9.jpg",
+    "fetchedAt": "2026-10-02T22:47:48.271986+00:00",
+    "sha256": "c3df30358dd3a05753c59bc53a7622d321310ab82118dc8f383c761ca133843d",
+    "bytes": 161744,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

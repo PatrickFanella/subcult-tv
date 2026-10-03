@@ -1,0 +1,29 @@
+{
+  "styleId": "a6b2d6dc-7d71-4d2d-af3e-b34a8b665744",
+  "sourceUrl": "https://styles.refero.design/style/a6b2d6dc-7d71-4d2d-af3e-b34a8b665744",
+  "fetchedAt": "2026-10-02T22:14:14.188731+00:00",
+  "extractedAt": "2026-10-02T22:14:14.216277+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Katherine Pihl — Style Reference",
+  "htmlSha256": "717758dd88f02e777f9f19c550deedeafe2b32c7bf30d811f73f41a77a4eb6a3",
+  "cache": ".cache/a6b2d6dc-7d71-4d2d-af3e-b34a8b665744.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d9858eb6c96c4f99f7908d2001bdbd072c1dd724d955b59e5156686f367b5be2",
+      "bytes": 15086,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/720a286f-d357-4844-9a0b-e618815845d7.jpg",
+    "fetchedAt": "2026-10-02T22:14:16.272324+00:00",
+    "sha256": "0031b20e88f06b552647d73c0d6658ee1d8b86810f53a4b01d156a414ade274b",
+    "bytes": 200767,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

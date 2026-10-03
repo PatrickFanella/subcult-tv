@@ -1,0 +1,29 @@
+{
+  "styleId": "935f22cb-04ec-48c8-a6da-aa8c2c5abe8b",
+  "sourceUrl": "https://styles.refero.design/style/935f22cb-04ec-48c8-a6da-aa8c2c5abe8b",
+  "fetchedAt": "2026-10-02T22:16:42.341279+00:00",
+  "extractedAt": "2026-10-02T22:16:42.366683+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Clipdrop — Style Reference",
+  "htmlSha256": "b646bf2633d744d2f6e877b99ff91acf6645780a02ebc8268a5316cc844c7922",
+  "cache": ".cache/935f22cb-04ec-48c8-a6da-aa8c2c5abe8b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "45a827e376f0cc5cd9b07eb60a685f9a936f7f67f0615d42bbb0aae4be673987",
+      "bytes": 19633,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/23be8f9d-af0a-46dc-bece-bad2faaa1f13.jpg",
+    "fetchedAt": "2026-10-02T22:16:44.231780+00:00",
+    "sha256": "5c11fc5a6c8f34b1a9af2d4cf0fbdc59c8cbb32eb0fbb199da24c54dc6beaa02",
+    "bytes": 141548,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

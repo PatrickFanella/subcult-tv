@@ -1,0 +1,29 @@
+{
+  "styleId": "1b010453-80df-406a-8b1a-72630c4a5165",
+  "sourceUrl": "https://styles.refero.design/style/1b010453-80df-406a-8b1a-72630c4a5165",
+  "fetchedAt": "2026-10-02T22:34:14.328785+00:00",
+  "extractedAt": "2026-10-02T22:34:14.352235+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Qatchup — Style Reference",
+  "htmlSha256": "f4a669f4d9805dddb2d8024fa9b87e9bbfe8079a8a98e3a21336fa64a0d8b3e4",
+  "cache": ".cache/1b010453-80df-406a-8b1a-72630c4a5165.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c6a2bd0e1f09811ebb42b48d63aa059eb32f62c525f370d39935f51f61918d3c",
+      "bytes": 25625,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/dac80281-88de-4772-ab3b-3d82f7d96e15.jpg",
+    "fetchedAt": "2026-10-02T22:34:16.338918+00:00",
+    "sha256": "1b99a029afe3d24d7931cd49e220d2b3b124d95bb9155ab1d6d3b6ac873ba9e0",
+    "bytes": 116203,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

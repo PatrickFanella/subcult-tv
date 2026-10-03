@@ -1,0 +1,29 @@
+{
+  "styleId": "3a398f82-579e-4ec4-a442-9962bf007edf",
+  "sourceUrl": "https://styles.refero.design/style/3a398f82-579e-4ec4-a442-9962bf007edf",
+  "fetchedAt": "2026-10-02T22:42:22.281499+00:00",
+  "extractedAt": "2026-10-02T22:42:22.302966+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "zkPass — Style Reference",
+  "htmlSha256": "f7f7da8a654ac4f2b0e4a1e2a3c0ad001c77072563e1ec5068226726ac70e2db",
+  "cache": ".cache/3a398f82-579e-4ec4-a442-9962bf007edf.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "887c26e0a45e90cea7f22631c4ff984ce2a47163da1269204bb3c48363743622",
+      "bytes": 23930,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4a31541f-fa63-4e91-9c31-dbcf31055e17.jpg",
+    "fetchedAt": "2026-10-02T22:42:24.340012+00:00",
+    "sha256": "720d2016ae817e63fcff7bd67c77a7a8ce3ab703b790fa26215ee8604e287681",
+    "bytes": 231014,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

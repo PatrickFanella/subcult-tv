@@ -1,0 +1,29 @@
+{
+  "styleId": "369ac603-c1e9-4231-9369-a198493f8e47",
+  "sourceUrl": "https://styles.refero.design/style/369ac603-c1e9-4231-9369-a198493f8e47",
+  "fetchedAt": "2026-10-02T22:34:42.191907+00:00",
+  "extractedAt": "2026-10-02T22:34:42.214458+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hyper Foundation — Style Reference",
+  "htmlSha256": "52f979f7b5bcd4f7f744e3671be157984f1eb786266a68c8fd3e77cb6bf7bf5e",
+  "cache": ".cache/369ac603-c1e9-4231-9369-a198493f8e47.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "732f234ca2e36bf72b8849b72572698da332a650081c548d3d338528331c6042",
+      "bytes": 19909,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4c5e5b0a-95d4-46b8-943b-c89a9e724ba4.jpg",
+    "fetchedAt": "2026-10-02T22:34:44.220814+00:00",
+    "sha256": "061c28e3751ae420e89d06d4a45a27100f2b1521e18acb8f37230ebdfe9ac7ac",
+    "bytes": 71894,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

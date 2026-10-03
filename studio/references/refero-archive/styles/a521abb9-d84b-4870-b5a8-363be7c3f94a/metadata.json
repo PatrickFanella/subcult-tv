@@ -1,0 +1,29 @@
+{
+  "styleId": "a521abb9-d84b-4870-b5a8-363be7c3f94a",
+  "sourceUrl": "https://styles.refero.design/style/a521abb9-d84b-4870-b5a8-363be7c3f94a",
+  "fetchedAt": "2026-10-02T22:41:38.205886+00:00",
+  "extractedAt": "2026-10-02T22:41:38.228303+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "School — Style Reference",
+  "htmlSha256": "bb898ac9967c2eacf667edab9429a9d43bef3f7306d21b786715ebe440d46f3e",
+  "cache": ".cache/a521abb9-d84b-4870-b5a8-363be7c3f94a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "42879cf6fd4ad932b545c3ff8515b61ec1cc93f9ff3d481648a9c6e254210929",
+      "bytes": 24061,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d02c72a9-7a99-4913-8821-0810a3cf595b.jpg",
+    "fetchedAt": "2026-10-02T22:41:40.365612+00:00",
+    "sha256": "4f23d87b99f6c760c980ad01514e48fe70d1fb3d5613a2a10132e5e1a3f9b32b",
+    "bytes": 145486,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

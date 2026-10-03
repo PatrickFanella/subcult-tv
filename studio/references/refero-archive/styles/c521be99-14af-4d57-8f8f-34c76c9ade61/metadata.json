@@ -1,0 +1,29 @@
+{
+  "styleId": "c521be99-14af-4d57-8f8f-34c76c9ade61",
+  "sourceUrl": "https://styles.refero.design/style/c521be99-14af-4d57-8f8f-34c76c9ade61",
+  "fetchedAt": "2026-10-02T22:38:10.261295+00:00",
+  "extractedAt": "2026-10-02T22:38:10.284795+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sunday — Style Reference",
+  "htmlSha256": "004562de530f98c03a747f2e66337d82ebbfefa3da8c564b5b8f6d6f72561f4c",
+  "cache": ".cache/c521be99-14af-4d57-8f8f-34c76c9ade61.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8c17bbdb344c8ba52836134272ba5b1b4a8035343d6bdd760adcc7abbc159cb3",
+      "bytes": 20807,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4a3e59b9-f889-4c9b-a4b3-7ce4ad81b45c.jpg",
+    "fetchedAt": "2026-10-02T22:38:12.253880+00:00",
+    "sha256": "1d3ca48e36df34836de784d81395ea4eb927e8ea76f21f823aaba211da1b970b",
+    "bytes": 74660,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

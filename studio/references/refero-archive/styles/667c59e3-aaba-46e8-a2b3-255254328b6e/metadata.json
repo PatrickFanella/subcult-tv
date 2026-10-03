@@ -1,0 +1,29 @@
+{
+  "styleId": "667c59e3-aaba-46e8-a2b3-255254328b6e",
+  "sourceUrl": "https://styles.refero.design/style/667c59e3-aaba-46e8-a2b3-255254328b6e",
+  "fetchedAt": "2026-10-02T22:23:30.189825+00:00",
+  "extractedAt": "2026-10-02T22:23:30.212736+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Endlesstools — Style Reference",
+  "htmlSha256": "a06623087b95c25bd90c0ec0b51109d79aef99b62b47cdd7507c5c4b74366119",
+  "cache": ".cache/667c59e3-aaba-46e8-a2b3-255254328b6e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "205e9a57818f935b4f8e03d6392aa44a01826aad0c04305b7cf565ff6b227c81",
+      "bytes": 19549,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5bea33f4-8fe2-4721-a906-87453884db1b.jpg",
+    "fetchedAt": "2026-10-02T22:23:32.365318+00:00",
+    "sha256": "cf3b4c9a248f0f18f318144f7e6e56fe08553fcc7fd0f485fe3497a308442d71",
+    "bytes": 183053,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

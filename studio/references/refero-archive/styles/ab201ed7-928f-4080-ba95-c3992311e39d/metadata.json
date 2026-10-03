@@ -1,0 +1,29 @@
+{
+  "styleId": "ab201ed7-928f-4080-ba95-c3992311e39d",
+  "sourceUrl": "https://styles.refero.design/style/ab201ed7-928f-4080-ba95-c3992311e39d",
+  "fetchedAt": "2026-10-02T22:22:34.188527+00:00",
+  "extractedAt": "2026-10-02T22:22:34.208475+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Pipe — Style Reference",
+  "htmlSha256": "206df134ee65ea8257c477e5cd8b9a32be496e9e966c546c2f9790a954cb8f88",
+  "cache": ".cache/ab201ed7-928f-4080-ba95-c3992311e39d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "64ceeb8977c36b18679292ba1dabefb691889ca777983e76b7fb26d15524c5cd",
+      "bytes": 14212,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8b5a5591-598e-42a0-8368-5270a720623c.jpg",
+    "fetchedAt": "2026-10-02T22:22:36.245400+00:00",
+    "sha256": "7ef79f462c45c4809e12e8bf719e60521165852cb69b0d06ce57c556af9ae77b",
+    "bytes": 119673,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

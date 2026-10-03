@@ -1,0 +1,29 @@
+{
+  "styleId": "701c8312-5e98-49a8-b2c4-25f1cb66de15",
+  "sourceUrl": "https://styles.refero.design/style/701c8312-5e98-49a8-b2c4-25f1cb66de15",
+  "fetchedAt": "2026-10-02T22:25:06.173287+00:00",
+  "extractedAt": "2026-10-02T22:25:06.193937+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "PORTO ROCHA — Style Reference",
+  "htmlSha256": "8af70eeb0b993798cfef1568f42f2e4eb4553978f93885c12ed1117d7c53854d",
+  "cache": ".cache/701c8312-5e98-49a8-b2c4-25f1cb66de15.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "377df82c479bcead900dedc7e898f622daceefa66b63940c5b47b5724de04b0c",
+      "bytes": 14556,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/94c5056b-1135-487c-98d4-c1e6c62d0255.jpg",
+    "fetchedAt": "2026-10-02T22:25:08.247034+00:00",
+    "sha256": "4779e579aeb9b31e614972a5b2a796b155cbab9c63c04309b348ef1d3f68bbf5",
+    "bytes": 258016,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

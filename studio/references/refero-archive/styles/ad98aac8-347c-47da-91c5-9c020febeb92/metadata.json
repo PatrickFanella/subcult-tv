@@ -1,0 +1,29 @@
+{
+  "styleId": "ad98aac8-347c-47da-91c5-9c020febeb92",
+  "sourceUrl": "https://styles.refero.design/style/ad98aac8-347c-47da-91c5-9c020febeb92",
+  "fetchedAt": "2026-10-02T22:41:22.313009+00:00",
+  "extractedAt": "2026-10-02T22:41:22.335935+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aaru — Style Reference",
+  "htmlSha256": "606a2c65cb5f6776b306155222d4341c7ce3308bca5746ad7a95cd12fcdbfe28",
+  "cache": ".cache/ad98aac8-347c-47da-91c5-9c020febeb92.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "70d3f62921cf7feafe9ddb839481d335d65919032bffb67af4c53fffbe90e312",
+      "bytes": 18987,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7bb8c11c-34d6-4470-be44-caa05bdcdca2.jpg",
+    "fetchedAt": "2026-10-02T22:41:24.151182+00:00",
+    "sha256": "8dacde34380c3b050f75ce8a48825befef4197d2d7d4d74a93fa1939c5e59e8f",
+    "bytes": 54887,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

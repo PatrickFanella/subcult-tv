@@ -1,0 +1,29 @@
+{
+  "styleId": "18e2c0b4-f29c-4e84-90b0-1d8066b59409",
+  "sourceUrl": "https://styles.refero.design/style/18e2c0b4-f29c-4e84-90b0-1d8066b59409",
+  "fetchedAt": "2026-10-02T22:25:58.206310+00:00",
+  "extractedAt": "2026-10-02T22:25:58.229592+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tines — Style Reference",
+  "htmlSha256": "ea47a5a2896d4a7708ddaa2cdaa6e1163b0f4db226945b4110fa3a714c28c250",
+  "cache": ".cache/18e2c0b4-f29c-4e84-90b0-1d8066b59409.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3b6210dc883db4e53952a692e6244cbc097e7ae9c1f7bd45173d33f9e42e47bf",
+      "bytes": 24291,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ad3151e3-dd2c-421c-a7d3-6847ffb95f0b.jpg",
+    "fetchedAt": "2026-10-02T22:26:00.184411+00:00",
+    "sha256": "2849bebff93684cecff12f661ce1801fa6694e78c2504757fd2b93e3e2f9d22f",
+    "bytes": 114208,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

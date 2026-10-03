@@ -1,0 +1,29 @@
+{
+  "styleId": "36fb90f7-3547-4dfd-a34e-592aa140078a",
+  "sourceUrl": "https://styles.refero.design/style/36fb90f7-3547-4dfd-a34e-592aa140078a",
+  "fetchedAt": "2026-10-02T22:23:42.263887+00:00",
+  "extractedAt": "2026-10-02T22:23:42.286405+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Halfhelix — Style Reference",
+  "htmlSha256": "658cacec6fd98757740b06e77c1ed7b8495bf555d6afa7e44897e810a3c2bbe8",
+  "cache": ".cache/36fb90f7-3547-4dfd-a34e-592aa140078a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fa96a7a6074650071053ebaf0e9a1c90e55e2624322640e75212c37574d6deaa",
+      "bytes": 19039,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d1fb67ce-4dd5-4e57-ab5a-6413e9f696e1.jpg",
+    "fetchedAt": "2026-10-02T22:23:44.273309+00:00",
+    "sha256": "7bccc54f6a61796f9aa631980bb5b953a199bdb11c410a3e6b70b1b756f52a71",
+    "bytes": 109960,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

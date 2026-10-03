@@ -1,0 +1,29 @@
+{
+  "styleId": "10a77cbd-7847-4e1b-a09e-447ebad0f7c6",
+  "sourceUrl": "https://styles.refero.design/style/10a77cbd-7847-4e1b-a09e-447ebad0f7c6",
+  "fetchedAt": "2026-10-02T22:29:38.237475+00:00",
+  "extractedAt": "2026-10-02T22:29:38.258846+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Galileo-ft — Style Reference",
+  "htmlSha256": "108bb88ebc65666b320712cd3becad1042500ca4fcd76ff5ea574193c3eb9714",
+  "cache": ".cache/10a77cbd-7847-4e1b-a09e-447ebad0f7c6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6711bcbc8920eda4d0c2640813ce53727c7aed95a010f15a82dcf6a1bdc2611e",
+      "bytes": 24377,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/24035982-add1-4ce8-a8ef-00ca76d8d945.jpg",
+    "fetchedAt": "2026-10-02T22:29:40.244172+00:00",
+    "sha256": "84cf4f5c1bb6e6c8741e7a2d45081f31040e58bcd7cbdccd100ef05eb43e7702",
+    "bytes": 143171,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

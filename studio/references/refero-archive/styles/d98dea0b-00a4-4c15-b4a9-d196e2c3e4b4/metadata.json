@@ -1,0 +1,29 @@
+{
+  "styleId": "d98dea0b-00a4-4c15-b4a9-d196e2c3e4b4",
+  "sourceUrl": "https://styles.refero.design/style/d98dea0b-00a4-4c15-b4a9-d196e2c3e4b4",
+  "fetchedAt": "2026-10-02T22:37:10.540450+00:00",
+  "extractedAt": "2026-10-02T22:37:10.564519+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Letterboxd — Style Reference",
+  "htmlSha256": "e04247243c75a6b6eeb87da62f2333c1c232b702331ad62a2507d4a57f4a2d61",
+  "cache": ".cache/d98dea0b-00a4-4c15-b4a9-d196e2c3e4b4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1a4ffa8a1e7a7ccd6358fc5654cd10d2ed9b76b914d8dd54ae2895845c4203d8",
+      "bytes": 23452,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/65fb0485-7778-4bff-8706-961d411e3e90.jpg",
+    "fetchedAt": "2026-10-02T22:37:12.332388+00:00",
+    "sha256": "8f03b9c4623272451af4106071fda606e5a5a046ff72471ce2743915d1b8bd0e",
+    "bytes": 125253,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

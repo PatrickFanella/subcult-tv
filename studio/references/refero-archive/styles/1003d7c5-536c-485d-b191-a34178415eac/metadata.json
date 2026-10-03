@@ -1,0 +1,29 @@
+{
+  "styleId": "1003d7c5-536c-485d-b191-a34178415eac",
+  "sourceUrl": "https://styles.refero.design/style/1003d7c5-536c-485d-b191-a34178415eac",
+  "fetchedAt": "2026-10-02T22:21:26.189653+00:00",
+  "extractedAt": "2026-10-02T22:21:26.234309+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tuple — Style Reference",
+  "htmlSha256": "2c74eef95b45c5eec6dad30cd622cb8728b793f29e39a0f58dc52247d49ba7b2",
+  "cache": ".cache/1003d7c5-536c-485d-b191-a34178415eac.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a36f894ea615083e0b7c3744d9f8d9eb8029a77973ccbd8196d594a58139f6ce",
+      "bytes": 26329,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e99b54f3-9155-42d7-8cb0-7490e3ab8898.jpg",
+    "fetchedAt": "2026-10-02T22:21:28.311397+00:00",
+    "sha256": "6b812055474c20280da255bd3d2ab3ef691471c065895d698c8b26b89d42bcde",
+    "bytes": 101768,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

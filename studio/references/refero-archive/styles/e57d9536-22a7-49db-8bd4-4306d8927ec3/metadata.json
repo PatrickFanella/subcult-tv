@@ -1,0 +1,29 @@
+{
+  "styleId": "e57d9536-22a7-49db-8bd4-4306d8927ec3",
+  "sourceUrl": "https://styles.refero.design/style/e57d9536-22a7-49db-8bd4-4306d8927ec3",
+  "fetchedAt": "2026-10-02T22:19:02.197264+00:00",
+  "extractedAt": "2026-10-02T22:19:02.219642+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SuperHi Basic Income — Style Reference",
+  "htmlSha256": "0e9db1d0659eb51b616ac73ead40c5c627a460b559d6b403da1c165cb1d832fb",
+  "cache": ".cache/e57d9536-22a7-49db-8bd4-4306d8927ec3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d68b7f93e9f874614dbfcffab4ad167e9649184ea934b8be3dd63de7f448bd7c",
+      "bytes": 16632,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/50ced67d-e19f-43ce-9968-1a6a70987913.jpg",
+    "fetchedAt": "2026-10-02T22:19:04.295310+00:00",
+    "sha256": "2f3ef96fad31adf753112369a2ae16dbf5ae99ad2eb5c185d3ffcb29f0a27667",
+    "bytes": 236835,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

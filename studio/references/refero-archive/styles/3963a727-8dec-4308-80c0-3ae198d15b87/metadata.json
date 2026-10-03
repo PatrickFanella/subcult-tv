@@ -1,0 +1,29 @@
+{
+  "styleId": "3963a727-8dec-4308-80c0-3ae198d15b87",
+  "sourceUrl": "https://styles.refero.design/style/3963a727-8dec-4308-80c0-3ae198d15b87",
+  "fetchedAt": "2026-10-02T22:39:22.245202+00:00",
+  "extractedAt": "2026-10-02T22:39:22.266749+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Apollo — Style Reference",
+  "htmlSha256": "419e60c7263de95841c59fd0811859908d1b09ff350535b34f59848e5413b435",
+  "cache": ".cache/3963a727-8dec-4308-80c0-3ae198d15b87.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f4ce211832854a42f321885f4cfbab0f9ae6440df4e918764f266a113e83faee",
+      "bytes": 18425,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ca032f5d-9234-4b5e-a7ce-06b5674226b2.jpg",
+    "fetchedAt": "2026-10-02T22:39:24.256390+00:00",
+    "sha256": "c3800228080597d0323a5ca4c46148ec6be05200493501b6262f94c3aac504a2",
+    "bytes": 104923,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

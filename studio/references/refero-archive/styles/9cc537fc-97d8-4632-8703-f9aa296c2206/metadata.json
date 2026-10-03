@@ -1,0 +1,29 @@
+{
+  "styleId": "9cc537fc-97d8-4632-8703-f9aa296c2206",
+  "sourceUrl": "https://styles.refero.design/style/9cc537fc-97d8-4632-8703-f9aa296c2206",
+  "fetchedAt": "2026-10-02T22:48:14.340922+00:00",
+  "extractedAt": "2026-10-02T22:48:14.364151+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Eco — Style Reference",
+  "htmlSha256": "cd559eb59aa65a329b6045203353bc06fd28e3dbda9c41886f482e0b9ae6a4e3",
+  "cache": ".cache/9cc537fc-97d8-4632-8703-f9aa296c2206.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c5b07e8df8505ab4500a015eb0bf6e2c32060d1217222f1f4599f502bd95fd1e",
+      "bytes": 22713,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b6cb9bab-9890-4027-8842-9b04748b2ad4.jpg",
+    "fetchedAt": "2026-10-02T22:48:16.255498+00:00",
+    "sha256": "230b85dfae96065386192915363681ce2fc80b617d38a2f1bbc34c682df95216",
+    "bytes": 125299,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "dbc5ecba-7309-456f-93b4-4356c6b0d293",
+  "sourceUrl": "https://styles.refero.design/style/dbc5ecba-7309-456f-93b4-4356c6b0d293",
+  "fetchedAt": "2026-10-02T22:23:38.181900+00:00",
+  "extractedAt": "2026-10-02T22:23:38.206319+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hellotime — Style Reference",
+  "htmlSha256": "67ab299503d41e94ff05f28065ede35c65a5ce203314d209b7150f3cf3eef460",
+  "cache": ".cache/dbc5ecba-7309-456f-93b4-4356c6b0d293.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0f3172db82faab8c78b5938cc73be7c9b7193107dbe24a2587588ca89d993186",
+      "bytes": 20966,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/31e38c39-0df5-4a39-ab91-524148dc5ee5.jpg",
+    "fetchedAt": "2026-10-02T22:23:40.257338+00:00",
+    "sha256": "304d9f49ef5157a4331dc13adb855ab1002f81644fa71b6ddcd3af69463fffca",
+    "bytes": 97456,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

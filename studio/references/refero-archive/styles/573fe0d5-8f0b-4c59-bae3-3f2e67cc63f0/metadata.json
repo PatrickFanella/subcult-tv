@@ -1,0 +1,29 @@
+{
+  "styleId": "573fe0d5-8f0b-4c59-bae3-3f2e67cc63f0",
+  "sourceUrl": "https://styles.refero.design/style/573fe0d5-8f0b-4c59-bae3-3f2e67cc63f0",
+  "fetchedAt": "2026-10-02T22:13:58.317751+00:00",
+  "extractedAt": "2026-10-02T22:13:58.342033+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tableland — Style Reference",
+  "htmlSha256": "3e3808329a5daa8807d9ffa4f04e1fe82f46da96f59f7b91672252f1e33f9df0",
+  "cache": ".cache/573fe0d5-8f0b-4c59-bae3-3f2e67cc63f0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e4026305e248020862a1b5a98e3fe7577c2eb2f58f5a65e4600696d7785687ad",
+      "bytes": 20643,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/dd1e436a-01ba-4296-b6f4-eb52fa36af0d.jpg",
+    "fetchedAt": "2026-10-02T22:14:00.295184+00:00",
+    "sha256": "74ea19e2963c0471c275cb776f6459ecf7004b373d4c1b900828edbc7110afb0",
+    "bytes": 88649,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

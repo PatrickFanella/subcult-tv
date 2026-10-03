@@ -1,0 +1,29 @@
+{
+  "styleId": "017ce823-c338-417d-849d-497c97701c4c",
+  "sourceUrl": "https://styles.refero.design/style/017ce823-c338-417d-849d-497c97701c4c",
+  "fetchedAt": "2026-10-02T22:29:14.193898+00:00",
+  "extractedAt": "2026-10-02T22:29:14.216254+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Simone Sniekers — Style Reference",
+  "htmlSha256": "16768559fe0213b2053703dbbbab662dfe5f9c5aacba5ab5a209d8b03b903e09",
+  "cache": ".cache/017ce823-c338-417d-849d-497c97701c4c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5aaabe8824bb10ab5fe60ca3b23e12a191455d170c2738628261e47e6ef0af2e",
+      "bytes": 11954,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e107b577-da27-465b-989d-1a017c954281.jpg",
+    "fetchedAt": "2026-10-02T22:29:16.163959+00:00",
+    "sha256": "7676d4fec59ffcdca7414e8b46d6ea6488e29cbebb5046bd01a8e1daf4f3b2c9",
+    "bytes": 53251,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

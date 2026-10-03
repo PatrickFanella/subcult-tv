@@ -1,0 +1,29 @@
+{
+  "styleId": "e1afed53-6854-40dd-8157-dfc1dd3505f0",
+  "sourceUrl": "https://styles.refero.design/style/e1afed53-6854-40dd-8157-dfc1dd3505f0",
+  "fetchedAt": "2026-10-02T22:38:22.305793+00:00",
+  "extractedAt": "2026-10-02T22:38:22.327207+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hatch — Style Reference",
+  "htmlSha256": "96d62a53e95d98680851d0aca2cb186eafaec31b75ade51beee1fe3d82e6c254",
+  "cache": ".cache/e1afed53-6854-40dd-8157-dfc1dd3505f0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "abf06387b6e3d58552175b2558145107b66acd0c9619d8d195bf4ce7975a1720",
+      "bytes": 22595,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/72098b57-af2c-42ea-9777-0d0084c619e5.jpg",
+    "fetchedAt": "2026-10-02T22:38:24.227312+00:00",
+    "sha256": "48e181b697632aa829284933a56d90290dd12c381534dab513860dae39fbf3e8",
+    "bytes": 103533,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "d6c2a911-45ed-4860-a992-43df22793c2a",
+  "sourceUrl": "https://styles.refero.design/style/d6c2a911-45ed-4860-a992-43df22793c2a",
+  "fetchedAt": "2026-10-02T22:51:50.415483+00:00",
+  "extractedAt": "2026-10-02T22:51:50.447656+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Granola — Style Reference",
+  "htmlSha256": "dc0b9fdb81598557a7f338ced00e8cb10f64b6cb0ebeb6895d9d8dd7842ea16c",
+  "cache": ".cache/d6c2a911-45ed-4860-a992-43df22793c2a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "332a75a1bad4a72e9aa9228e1bb47b335ebba84499fac084912c5675bf912159",
+      "bytes": 27087,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/55d0ecdb-20cd-4014-b11a-bd97602f9bac.jpg",
+    "fetchedAt": "2026-10-02T22:51:52.228033+00:00",
+    "sha256": "ea0852b4b17e8c2d7f2b9bb8082626c3c10a36483ba47ea00c2a194ede3f20bc",
+    "bytes": 76482,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

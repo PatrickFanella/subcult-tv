@@ -1,0 +1,29 @@
+{
+  "styleId": "e79b761d-f476-4c5d-8943-e31a58664e4d",
+  "sourceUrl": "https://styles.refero.design/style/e79b761d-f476-4c5d-8943-e31a58664e4d",
+  "fetchedAt": "2026-10-02T22:10:26.646514+00:00",
+  "extractedAt": "2026-10-02T22:10:26.671101+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "T1 Energy — Style Reference",
+  "htmlSha256": "485a6c91b081c31205f266583c1ef22d0cba3eb49a0fc9f10f7262f97a3910f8",
+  "cache": ".cache/e79b761d-f476-4c5d-8943-e31a58664e4d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "589705420da5adc1ebd3aedbf350d025d4b7771478cdd31dd3b2f4b0e6de265c",
+      "bytes": 19483,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6a058b38-5f27-473d-ba23-f6d32658b583.jpg",
+    "fetchedAt": "2026-10-02T22:10:28.249641+00:00",
+    "sha256": "15017457e76bea61ded5d5f4597fe9cba79140680a9188a3d8c97b12a9e37d74",
+    "bytes": 126126,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

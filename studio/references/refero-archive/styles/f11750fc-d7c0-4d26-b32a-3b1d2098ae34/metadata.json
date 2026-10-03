@@ -1,0 +1,29 @@
+{
+  "styleId": "f11750fc-d7c0-4d26-b32a-3b1d2098ae34",
+  "sourceUrl": "https://styles.refero.design/style/f11750fc-d7c0-4d26-b32a-3b1d2098ae34",
+  "fetchedAt": "2026-10-02T22:09:18.240410+00:00",
+  "extractedAt": "2026-10-02T22:09:18.264513+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "DJI — Style Reference",
+  "htmlSha256": "5d84ad15e983166719599f2a71b7ae6b6d6910ba670157cea915cab1bfff7e4f",
+  "cache": ".cache/f11750fc-d7c0-4d26-b32a-3b1d2098ae34.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "18afbf17e167857b54a3ffaaf846b6706e53a63315ed259dcced0ed9e445afe2",
+      "bytes": 18626,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6cc3a0f1-02b2-441e-8944-60743f6904fa.jpg",
+    "fetchedAt": "2026-10-02T22:09:20.173723+00:00",
+    "sha256": "d6b9e203e752eaf516a220627b407bf6751add85b06ec62773db639b128fc0c8",
+    "bytes": 54406,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

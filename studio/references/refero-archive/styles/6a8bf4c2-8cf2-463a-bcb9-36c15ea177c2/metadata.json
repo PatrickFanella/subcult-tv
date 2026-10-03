@@ -1,0 +1,29 @@
+{
+  "styleId": "6a8bf4c2-8cf2-463a-bcb9-36c15ea177c2",
+  "sourceUrl": "https://styles.refero.design/style/6a8bf4c2-8cf2-463a-bcb9-36c15ea177c2",
+  "fetchedAt": "2026-10-02T22:23:54.247843+00:00",
+  "extractedAt": "2026-10-02T22:23:54.270631+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Hashnode — Style Reference",
+  "htmlSha256": "a992e3e1244f090800701819a1866696c5d6b7b75ad27968d02a2a5f895d7a83",
+  "cache": ".cache/6a8bf4c2-8cf2-463a-bcb9-36c15ea177c2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4faa277f2204c14c93955b3b9e0ef4ba990170ccff78505a2f3aae75a008a54d",
+      "bytes": 21155,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6cd76e7f-88c4-4dfd-8953-18c8e6b0fc53.jpg",
+    "fetchedAt": "2026-10-02T22:23:56.277717+00:00",
+    "sha256": "96dd36a4316b0e6a12f53b70af186738f8ced3fc79ae8eac79482544ae0d5206",
+    "bytes": 166438,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "6221ba67-26e7-4657-91b7-efd77cbb1f12",
+  "sourceUrl": "https://styles.refero.design/style/6221ba67-26e7-4657-91b7-efd77cbb1f12",
+  "fetchedAt": "2026-10-02T22:28:54.176197+00:00",
+  "extractedAt": "2026-10-02T22:28:54.198697+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Clearbit — Style Reference",
+  "htmlSha256": "2506b36d5d69a6bd4ba880edd30cd6286ddf19dd20157f0ad237b0eb5b613261",
+  "cache": ".cache/6221ba67-26e7-4657-91b7-efd77cbb1f12.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "19c9562ff6d9bd9a0cd4231ea918337732db17dbb29a4997a76645b9ae369f40",
+      "bytes": 18543,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/841628c6-04d8-4be5-974a-c61608aa941d.jpg",
+    "fetchedAt": "2026-10-02T22:28:56.258130+00:00",
+    "sha256": "49b7c7c56aa7727d7917ccae12171f198c5a7a2ca0cfd707892bb08a33e3e38e",
+    "bytes": 106696,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

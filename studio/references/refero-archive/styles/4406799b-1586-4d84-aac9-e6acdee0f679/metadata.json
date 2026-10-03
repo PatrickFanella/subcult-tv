@@ -1,0 +1,29 @@
+{
+  "styleId": "4406799b-1586-4d84-aac9-e6acdee0f679",
+  "sourceUrl": "https://styles.refero.design/style/4406799b-1586-4d84-aac9-e6acdee0f679",
+  "fetchedAt": "2026-10-02T22:32:50.226299+00:00",
+  "extractedAt": "2026-10-02T22:32:50.250310+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Redis Agency — Style Reference",
+  "htmlSha256": "4196761943323a823a695a3ead9205c222dafbc8d522806538d8ebff5420ee91",
+  "cache": ".cache/4406799b-1586-4d84-aac9-e6acdee0f679.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bb964c3d8bd66f2a18232d4af40d2bd83fb4127cb08bb7c4c0983e546c177298",
+      "bytes": 20078,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0c66f894-717e-4db3-8da7-eab25db8d806.jpg",
+    "fetchedAt": "2026-10-02T22:32:52.231818+00:00",
+    "sha256": "3f3b8e4245f300f36807aa50b76be4a7e0f256168c581fe624113122a2df9f7b",
+    "bytes": 95974,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

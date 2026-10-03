@@ -1,0 +1,29 @@
+{
+  "styleId": "887f0c74-c696-4589-82ae-85705ecda919",
+  "sourceUrl": "https://styles.refero.design/style/887f0c74-c696-4589-82ae-85705ecda919",
+  "fetchedAt": "2026-10-02T22:48:54.228594+00:00",
+  "extractedAt": "2026-10-02T22:48:54.252643+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Miti Navi — Style Reference",
+  "htmlSha256": "4602c7307cf5e1481ea49f298dc5106a4ffc1c86a48dbbe60b95337dd12d3ee5",
+  "cache": ".cache/887f0c74-c696-4589-82ae-85705ecda919.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "425ac721ebce788f606a7ea5c60a30ab3083c205b59243acd56917e173b8de37",
+      "bytes": 21631,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7ec53c27-2ce0-4156-868f-ccd01021d80c.jpg",
+    "fetchedAt": "2026-10-02T22:48:56.251687+00:00",
+    "sha256": "2d6e8b66adac799ea223e1bcd73e8478b47fc48539997442d6bbf29284ba2c15",
+    "bytes": 172651,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

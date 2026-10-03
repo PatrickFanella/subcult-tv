@@ -1,0 +1,29 @@
+{
+  "styleId": "34534515-c044-4d37-940d-44352d62ee44",
+  "sourceUrl": "https://styles.refero.design/style/34534515-c044-4d37-940d-44352d62ee44",
+  "fetchedAt": "2026-10-02T22:43:14.324978+00:00",
+  "extractedAt": "2026-10-02T22:43:14.347180+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ashton Bespoke — Style Reference",
+  "htmlSha256": "71b6269ccfa4a16ebad06b70c3bd11a9363fa8c671005310ecf2ecb9cfe290af",
+  "cache": ".cache/34534515-c044-4d37-940d-44352d62ee44.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "dcfe90b77e2ea34e751b6e82cdd9cfd4180782c4d276c1fcdf23ea2398219825",
+      "bytes": 18401,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5b780940-7c1c-4922-876c-50d8360f0f6c.jpg",
+    "fetchedAt": "2026-10-02T22:43:16.155706+00:00",
+    "sha256": "70935bc12299189bd0f533233fc4d3e7d6057d8c523a47fd81218db1e1e12c3f",
+    "bytes": 44677,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

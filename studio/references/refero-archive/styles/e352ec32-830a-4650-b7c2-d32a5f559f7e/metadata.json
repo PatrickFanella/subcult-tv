@@ -1,0 +1,29 @@
+{
+  "styleId": "e352ec32-830a-4650-b7c2-d32a5f559f7e",
+  "sourceUrl": "https://styles.refero.design/style/e352ec32-830a-4650-b7c2-d32a5f559f7e",
+  "fetchedAt": "2026-10-02T22:03:14.288738+00:00",
+  "extractedAt": "2026-10-02T22:03:14.311242+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "aave.com — Style Reference",
+  "htmlSha256": "c074c71c2d1c958b733b404a5ff0bd81e75ec1b49b0632403774a0a36fac8e12",
+  "cache": ".cache/e352ec32-830a-4650-b7c2-d32a5f559f7e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c905f39c39881cf79861c29c8650aa79e28cb4cc7d7e5adae87038c1b705ad85",
+      "bytes": 20703,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0ea1ed4f-b89c-4c1c-b3f8-b0a0d6bbe83d.jpg",
+    "fetchedAt": "2026-10-02T22:03:16.270082+00:00",
+    "sha256": "99264e2830078856bc874561c9aa42b8aef31a7958c872147fdb64b316c52834",
+    "bytes": 78352,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

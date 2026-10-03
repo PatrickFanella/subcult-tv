@@ -1,0 +1,29 @@
+{
+  "styleId": "18975f37-2e5d-47ca-9367-8b201d20390d",
+  "sourceUrl": "https://styles.refero.design/style/18975f37-2e5d-47ca-9367-8b201d20390d",
+  "fetchedAt": "2026-10-02T22:30:22.268455+00:00",
+  "extractedAt": "2026-10-02T22:30:22.290556+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Chat for impact — Style Reference",
+  "htmlSha256": "9e2deb711f4152c7b0623115990e5d0bab382263f610e1dff09e0b3cdfb3d48b",
+  "cache": ".cache/18975f37-2e5d-47ca-9367-8b201d20390d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bed506f15caa8475ed912ee608056e091442739b1b1c34ba779bef835484b4b1",
+      "bytes": 25131,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1d13b35d-7817-4238-b477-5b70e3094076.jpg",
+    "fetchedAt": "2026-10-02T22:30:24.234466+00:00",
+    "sha256": "e148faded25cbcb0ee3fd1fb7092d4fc4507936c9a1413c516b83d307f13d375",
+    "bytes": 114356,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

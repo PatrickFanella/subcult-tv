@@ -1,0 +1,29 @@
+{
+  "styleId": "9fe9f106-44d2-45fc-9873-10c6ddcfa59b",
+  "sourceUrl": "https://styles.refero.design/style/9fe9f106-44d2-45fc-9873-10c6ddcfa59b",
+  "fetchedAt": "2026-10-02T22:07:42.222815+00:00",
+  "extractedAt": "2026-10-02T22:07:42.256629+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Pika — Style Reference",
+  "htmlSha256": "03fcb599c8de14d9f8f723b222ebb0ca38d08e118916af7104a93cb03a9447af",
+  "cache": ".cache/9fe9f106-44d2-45fc-9873-10c6ddcfa59b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e4f3e7c7eb7103a150ebb25ccc2084b2dd065f388ff844f05542a2c1ac475352",
+      "bytes": 19930,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e9be7db9-4b69-44bb-bc54-114be725c944.jpg",
+    "fetchedAt": "2026-10-02T22:07:44.143522+00:00",
+    "sha256": "b7cba558fd0fb0d11763ccb08ee7b6dde3712f1d70b9f195480eaa4e4b5361e2",
+    "bytes": 58490,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

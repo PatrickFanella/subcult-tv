@@ -1,0 +1,29 @@
+{
+  "styleId": "6fd5c4e6-7003-4768-bc62-1b9c0c774054",
+  "sourceUrl": "https://styles.refero.design/style/6fd5c4e6-7003-4768-bc62-1b9c0c774054",
+  "fetchedAt": "2026-10-02T22:13:54.234022+00:00",
+  "extractedAt": "2026-10-02T22:13:54.262159+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Affinity — Style Reference",
+  "htmlSha256": "9e1d9d0d49ce2dbdf5701180ab9a8663f92a1870688922934c9cb2c1878ef6d2",
+  "cache": ".cache/6fd5c4e6-7003-4768-bc62-1b9c0c774054.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4b9bdee7daa9e41bce1024a8e1f79f7f4372ff7e7555550f651daa77e8de1c5b",
+      "bytes": 23510,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2bd1088b-59f5-41f5-b86f-e68d3685fec3.jpg",
+    "fetchedAt": "2026-10-02T22:13:56.265626+00:00",
+    "sha256": "255e9ca48b8802e6ae0d1a7e518a00ad0122489e4bdfe8b01445cd35b09228eb",
+    "bytes": 154280,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

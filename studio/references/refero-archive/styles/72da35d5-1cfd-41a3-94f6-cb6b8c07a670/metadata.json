@@ -1,0 +1,29 @@
+{
+  "styleId": "72da35d5-1cfd-41a3-94f6-cb6b8c07a670",
+  "sourceUrl": "https://styles.refero.design/style/72da35d5-1cfd-41a3-94f6-cb6b8c07a670",
+  "fetchedAt": "2026-10-02T22:45:34.206196+00:00",
+  "extractedAt": "2026-10-02T22:45:34.229528+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cluely — Style Reference",
+  "htmlSha256": "1a89fafc2ab7fce009dc0ba9d2284ac5e07cae984e3740c3afb7b20875d38bde",
+  "cache": ".cache/72da35d5-1cfd-41a3-94f6-cb6b8c07a670.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "42fc61be93e894531db9b2c58747e9c4e1750b5d179c2b295f16c900cdb557c3",
+      "bytes": 25340,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/230ada8e-83cc-4494-82ad-60b19563b2fb.jpg",
+    "fetchedAt": "2026-10-02T22:45:36.266791+00:00",
+    "sha256": "77f6b7e81ec884c228faac59b377a8438c616bcaa83ff523fb27154ce67798e6",
+    "bytes": 102181,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

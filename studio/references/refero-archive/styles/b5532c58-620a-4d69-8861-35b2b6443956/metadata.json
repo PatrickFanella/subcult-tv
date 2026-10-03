@@ -1,0 +1,29 @@
+{
+  "styleId": "b5532c58-620a-4d69-8861-35b2b6443956",
+  "sourceUrl": "https://styles.refero.design/style/b5532c58-620a-4d69-8861-35b2b6443956",
+  "fetchedAt": "2026-10-02T22:19:34.271505+00:00",
+  "extractedAt": "2026-10-02T22:19:34.294399+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Escape Coffee Company — Style Reference",
+  "htmlSha256": "2cd7d6368c7608522bb4ca17539870c5717fa109ee206d62d38c89112f915389",
+  "cache": ".cache/b5532c58-620a-4d69-8861-35b2b6443956.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2fdacecb09d3859529b9cd48e7e64c5c41c60d73db5726456118471396a35401",
+      "bytes": 22905,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/77706ed3-8284-45d3-b0e7-2fc6e7e8938e.jpg",
+    "fetchedAt": "2026-10-02T22:19:36.335069+00:00",
+    "sha256": "d0bd01d0ecb003cfe4bc24de07ad2550a8e09e3797408bbb3f92e632465e98be",
+    "bytes": 277470,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

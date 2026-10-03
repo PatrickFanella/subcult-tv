@@ -1,0 +1,29 @@
+{
+  "styleId": "e02671e1-ba31-465f-bb7f-b124bf91ab5e",
+  "sourceUrl": "https://styles.refero.design/style/e02671e1-ba31-465f-bb7f-b124bf91ab5e",
+  "fetchedAt": "2026-10-02T22:31:26.178686+00:00",
+  "extractedAt": "2026-10-02T22:31:26.201482+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Champions4good — Style Reference",
+  "htmlSha256": "de1087022ac0e47e00dd749cdc695f4ffc4b895e688f7e80a6f0f38900b7c7c8",
+  "cache": ".cache/e02671e1-ba31-465f-bb7f-b124bf91ab5e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5584ac782c6ff4ec74954f822be3506837f7c861d7dfd68c745e31099cd14f2c",
+      "bytes": 17694,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2cab2c66-7f83-426c-94e7-692be6f23fa7.jpg",
+    "fetchedAt": "2026-10-02T22:31:28.237825+00:00",
+    "sha256": "869f4adc68856f06f1f769a6a3c8d2310ffa288bdf9c5f1d7b15133b8f694994",
+    "bytes": 76893,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

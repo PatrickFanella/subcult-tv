@@ -1,0 +1,29 @@
+{
+  "styleId": "6da76890-6e04-452a-834d-ff019e232c2b",
+  "sourceUrl": "https://styles.refero.design/style/6da76890-6e04-452a-834d-ff019e232c2b",
+  "fetchedAt": "2026-10-02T22:30:34.344583+00:00",
+  "extractedAt": "2026-10-02T22:30:34.367773+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Touchy Coffee — Style Reference",
+  "htmlSha256": "ae299ca44392750c81225733667ea80cc6f25162fd203cf85a4b3bb988e27c74",
+  "cache": ".cache/6da76890-6e04-452a-834d-ff019e232c2b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "70b179c603f82f7c05a96043212cf5c2dd6351f83aad551caf993212e1914e9f",
+      "bytes": 19200,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1509ae8f-da91-46c6-aea8-b9357775b6c8.jpg",
+    "fetchedAt": "2026-10-02T22:30:36.258337+00:00",
+    "sha256": "34c7c52744cdfd4fa4f490c3c1d348a0a5443ba6d8470c9478c68dc39eb17a05",
+    "bytes": 80207,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "6d8dc9bb-78b7-4eaa-9b08-66b431760e9f",
+  "sourceUrl": "https://styles.refero.design/style/6d8dc9bb-78b7-4eaa-9b08-66b431760e9f",
+  "fetchedAt": "2026-10-02T22:23:58.381189+00:00",
+  "extractedAt": "2026-10-02T22:23:58.402504+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tilda — Style Reference",
+  "htmlSha256": "2c158c6415ce3b75ddd65e3a12164680d814020134ff72f3d66ee9ab5c57ad4c",
+  "cache": ".cache/6d8dc9bb-78b7-4eaa-9b08-66b431760e9f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6867d82ff4c4a42bae2ec27ce903053931688051a617d5b28d17d13832bbb7dc",
+      "bytes": 18698,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4b7575b2-89eb-4798-9921-5f6efcd7eb64.jpg",
+    "fetchedAt": "2026-10-02T22:24:00.261912+00:00",
+    "sha256": "1965909e6a63a99e1fb012d2439458b7dfd82341f7f08ba3bcea73b1d238f5e4",
+    "bytes": 141385,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

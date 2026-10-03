@@ -1,0 +1,29 @@
+{
+  "styleId": "94ed6ce8-c2e5-45bf-83bd-e5d1daf63efc",
+  "sourceUrl": "https://styles.refero.design/style/94ed6ce8-c2e5-45bf-83bd-e5d1daf63efc",
+  "fetchedAt": "2026-10-02T22:37:02.224997+00:00",
+  "extractedAt": "2026-10-02T22:37:02.249623+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Flim — Style Reference",
+  "htmlSha256": "efd2b2658f17e94e4f30bf59c8e271cca18c913a901a9441ff001b718583dfa4",
+  "cache": ".cache/94ed6ce8-c2e5-45bf-83bd-e5d1daf63efc.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3ed644fdd185182ae6691aec64cb53b74abd1937cb21c1525804190525722672",
+      "bytes": 23271,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/50e4c020-3028-43e3-abaf-380c5d3554ae.jpg",
+    "fetchedAt": "2026-10-02T22:37:04.260552+00:00",
+    "sha256": "f3f8f3e81a32a56608ff9e8b26ae42251bc23d7b63419c6584b2b7d569da48c9",
+    "bytes": 121310,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

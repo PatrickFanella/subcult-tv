@@ -1,0 +1,29 @@
+{
+  "styleId": "5e9409c4-d130-42f3-b224-5bd66cdfbe28",
+  "sourceUrl": "https://styles.refero.design/style/5e9409c4-d130-42f3-b224-5bd66cdfbe28",
+  "fetchedAt": "2026-10-02T22:26:02.247767+00:00",
+  "extractedAt": "2026-10-02T22:26:02.268919+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Anuc Home — Style Reference",
+  "htmlSha256": "3a52fbf6629b467976ae2e1f31a7eac19f101968f7011ea092ce525e8f67b2d9",
+  "cache": ".cache/5e9409c4-d130-42f3-b224-5bd66cdfbe28.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1002c64737770acb6a9c00cb302b8143328f7699ee5460d9b501cfe448fef504",
+      "bytes": 18256,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/085539f8-af2e-4a3a-8ce5-9e85f1efb991.jpg",
+    "fetchedAt": "2026-10-02T22:26:04.294317+00:00",
+    "sha256": "56052b3d7109a9300ec39d4a6747fee7d260fcb7e0a47e14c60092182fbfbcac",
+    "bytes": 103830,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

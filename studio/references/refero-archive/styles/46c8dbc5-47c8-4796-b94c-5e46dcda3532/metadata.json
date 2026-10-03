@@ -1,0 +1,29 @@
+{
+  "styleId": "46c8dbc5-47c8-4796-b94c-5e46dcda3532",
+  "sourceUrl": "https://styles.refero.design/style/46c8dbc5-47c8-4796-b94c-5e46dcda3532",
+  "fetchedAt": "2026-10-02T22:43:10.208542+00:00",
+  "extractedAt": "2026-10-02T22:43:10.230005+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "BelArosa Chalet — Style Reference",
+  "htmlSha256": "9b5640d9f78054e3347f08a53d7273c0cb296051e0aeb52a7f83dbb63f2b9620",
+  "cache": ".cache/46c8dbc5-47c8-4796-b94c-5e46dcda3532.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e066009b2440b69908e0dbe1a9d2697552a90f553d2dd6fa62ef6ffb3fb95565",
+      "bytes": 20235,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ac8b2074-2aef-4993-9a14-a002148c94d6.jpg",
+    "fetchedAt": "2026-10-02T22:43:12.219854+00:00",
+    "sha256": "b9d8d8293037f8b59a62fc35a9480a50b09cf63e4819c7f267dca83e93550944",
+    "bytes": 130923,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

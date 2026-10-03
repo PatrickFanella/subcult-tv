@@ -1,0 +1,29 @@
+{
+  "styleId": "af3641fb-7d3c-40f4-aba1-42770dfaf091",
+  "sourceUrl": "https://styles.refero.design/style/af3641fb-7d3c-40f4-aba1-42770dfaf091",
+  "fetchedAt": "2026-10-02T22:33:38.271711+00:00",
+  "extractedAt": "2026-10-02T22:33:38.294448+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Exante — Style Reference",
+  "htmlSha256": "46b07c1187ef47aeb62b4513c8178f8f1927fd0bd0bddc9e13b65801bb240027",
+  "cache": ".cache/af3641fb-7d3c-40f4-aba1-42770dfaf091.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1dbacc2ecf591fa2711e30bd9c9cfc52bb6c7716aa85f8364748df018f988aa5",
+      "bytes": 20561,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d658cd36-2c37-40af-b7d7-024952615e2b.jpg",
+    "fetchedAt": "2026-10-02T22:33:40.187995+00:00",
+    "sha256": "a7212c85198ae6f539017e2d58edc503e41e1ac421bd16420f4342583cec94d2",
+    "bytes": 76692,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

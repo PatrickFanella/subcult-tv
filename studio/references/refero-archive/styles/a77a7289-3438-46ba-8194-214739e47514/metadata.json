@@ -1,0 +1,29 @@
+{
+  "styleId": "a77a7289-3438-46ba-8194-214739e47514",
+  "sourceUrl": "https://styles.refero.design/style/a77a7289-3438-46ba-8194-214739e47514",
+  "fetchedAt": "2026-10-02T22:28:10.216083+00:00",
+  "extractedAt": "2026-10-02T22:28:10.237389+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Awwwards — Style Reference",
+  "htmlSha256": "66e4760beb34de77189abf89409c7105b697bcdf22f21f84e3a17c5f004d8bc1",
+  "cache": ".cache/a77a7289-3438-46ba-8194-214739e47514.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fc4ed7cb05188389310ac196ef65bded5d7eab2db31c84626efa2cf2804b56ad",
+      "bytes": 17444,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6910f352-7a86-4de9-a581-93f9aa796757.jpg",
+    "fetchedAt": "2026-10-02T22:28:12.246461+00:00",
+    "sha256": "f20c92aba0b908498e3c238de1868816080a14a665bd75d5857aa172ac144e03",
+    "bytes": 105408,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}
