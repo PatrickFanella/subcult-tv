@@ -1,61 +1,44 @@
-# SUBCULT website and Studio
+# SUBCULT
 
-This private repository holds the public [subcult.tv](https://subcult.tv) website, its authenticated admin workspace and the Studio production library. A change to a brand source and the pages that use it goes in one PR.
+![SUBCULT: Build together. Purple poster artwork with green registration marks.](docs/assets/readme/banner.png)
 
-The application uses React 19, TypeScript, Vite and Tailwind CSS, with a Go/Chi API and PostgreSQL. Studio uses Python for asset exports and preparation jobs. Binary media and fonts use Git LFS.
+We make software for independent culture: a clip channel, a recording archive,
+a neighborhood board, the door at a show. Each product has a job. This is the
+workshop behind them.
 
-## Start here
+[Explore the products](https://subcult.tv/products) · [Read the workshop notes](https://subcult.tv/) · [Support the work](https://subcult.tv/support)
 
-```sh
-rtk proxy git lfs pull
-rtk proxy make setup
-rtk proxy make dev
-```
+## What we're building
 
-`make dev` starts a local database and API, then Vite on loopback. The development profile uses synthetic local accounts and does not load deployment credentials. See [development setup](docs/DEVELOPMENT.md) for ports, separate processes, tests and cleanup.
+| Product | The job | Where it stands |
+| --- | --- | --- |
+| [clpr](https://clpr.tv/) | Find Twitch clips by creator, topic and tag; keep playlists. | Public web app |
+| [HasanAra](https://hasanara.tv/) | Search the broadcast record and return to the timestamp. | Public independent archive |
+| [Rekolekt](https://subcult.tv/products/rekolekt) | Run a searchable, timestamped recording archive under your own name. | Software you deploy |
+| [Undertow](https://undertow.subcult.tv/) | Put visuals and timed lyrics around a track; export video locally. | Public browser editor |
+| [Kork](https://kork.subcult.tv/) | Make a free link page with your socials, media and payment buttons. | Early public service |
+| [Patchwork](https://patchwork.subcult.tv/) | Try a neighborhood board for requests, offers and resources. | Pre-alpha demo; no real help requests |
+| [Subcult OS](https://subcult.tv/products/subcult-os) | Prepare the crew, reserve free tickets, run the door and close out. | Alpha development |
+| [Prichal](https://subcult.tv/products/prichal) | Account hosting for the open social web. | Private preview; no sign-up |
+| [Left Field](https://left-field.subcult.tv/) | Read seat-level public records, provisional scores and source gaps. | Research site in active development |
 
-## Repository map
+Dedhed is our private concert-tape pilot. Tadooer is a private planner for one
+owner. Neither has a public sign-up or listening address.
 
-| Path | Owns |
-| --- | --- |
-| `src/` | Public website and authenticated admin UI |
-| `api/` | Go HTTP API, authentication, migrations and private asset access |
-| `content/` | Public product catalog and site articles |
-| `public/` | Explicit public assets |
-| `studio/branding/library/` | Current brand packs, generators, fonts and editable masters |
-| `studio/branding/patrick/` | Authoritative Patrick design system and approved logo treatments |
-| `studio/media/library/` | Reviewed media catalog, original files and recipes |
-| `studio/references/` | Private searchable design-reference catalog and source evidence |
-| `studio/content/` | Social and Patreon planning material |
-| `studio/automation/` | Preparation jobs and tracked unit sources |
-| `studio/branding/archive/` | Retired studies and original artwork, outside production exports |
-| `docs/` | Maintained development, API and repository procedures |
-| `ops/` | Explicit host deployment overlays and analytics tooling |
+## Inside the workshop
 
-## Common commands
+This private repository holds the public website, its authenticated admin
+workspace and Studio: brand systems, editable artwork, reviewed media and
+preparation tools. Product code lives in the linked product repositories.
 
-| Command | Result |
-| --- | --- |
-| `make check` | Lint, TypeScript, product catalog and Studio source/export checks |
-| `make test` | Frontend, Go and disposable Studio preparation tests |
-| `make build` | API binary and public frontend output |
-| `make check-import` | Verify the original Studio import against retained Git history |
-| `make studio-export` | Private bundle plus the explicit public SUBCULT asset selection |
-| `make studio-export-left-field` | Explicit public Left Field asset selection |
-| `make studio-package` | Brand download ZIPs under ignored `studio/runtime/packages/` |
-| `make studio-preview` | Private local source galleries on loopback |
-| `make dev-down` | Stop this checkout’s local services while retaining its database |
+We keep the originals in Studio and select the graphics that leave it by name
+and source hash. A draft is still a draft. Preparing artwork or copy does not
+publish a post or deploy a site.
 
-Public routes are `/`, `/products`, `/products/:slug`, `/about`, `/contact`, `/support` and `/newsletter/confirmed`. Legacy `/projects` routes retain their redirects. Admin routes include the dashboard, projects, contacts, subscribers, Studio assets, posting preparation and design references. See [API contracts](docs/API.md) and [Studio integration](docs/STUDIO.md).
+For setup, tests, the repository map and source boundaries, read the
+[repository development guide](DEVELOPMENT.md). The
+[contribution guide](CONTRIBUTING.md) covers changes; the
+[asset policy](docs/ASSETS.md) covers source ownership and exports.
 
-## Source and publication boundaries
-
-Studio originals stay private. Each public asset is selected by name and recorded with its source hash. Private browsing bundles are served through the authenticated API. The frontend build excludes Studio sources, and Tailwind scans only application inputs.
-
-Preparing a draft, approving it, scheduling it, dispatching it and confirming delivery are separate steps. This repository refresh does not authorize social publication, activate timers or deploy the website. Installed consumers still use the original Studio checkout until the [consolidation activation](docs/REPOSITORY-CONSOLIDATION.md) is verified.
-
-Read [the asset and artifact policy](docs/ASSETS.md), [the cleanup record](docs/REPOSITORY-CLEANUP.md) and [contribution instructions](CONTRIBUTING.md) before changing sources. Historical observations are under `docs/history/` and `studio/docs/history/`; they do not describe current runtime state.
-
-## License
-
-Application code uses the [MIT license](LICENSE). Bundled fonts, reference studies and media retain the licenses, ownership and rights recorded alongside them.
+Application code uses the [MIT license](LICENSE). Fonts, references and media
+retain their own licenses and source records.
