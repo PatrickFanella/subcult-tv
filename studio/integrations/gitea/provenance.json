@@ -1,5 +1,5 @@
 {
-  "brand_source_commit": "0a09bb174ddaa4d13639be5eb88a3eb2c98d59de",
+  "brand_source_commit": "d2e3cc47fd47215c3573074ee58de12f7b483ff8",
   "brand_source": "https://git.subcult.tv/subculture-collective/subcult-tv",
   "theme_name": "subcult-studio",
   "gitea_version": "1.27.3",
@@ -8,8 +8,8 @@
   "brand_tokens_sha256": "dce291c02dccb1f48f56e18d8c83efad630ca74391dff41c7df26e47305b6910",
   "authored_css_sha256": "4f6545881428b34549fd10498a2eb44c145e732e5a21190bdbfc2b9fd5b3b61e",
   "generated_css_sha256": "c63e60d9a6ee63d8a10b556c8d37a56b6e3da501cd92e5fcacc36b5e37ea00fe",
-  "generated_logo_css_sha256": "49eb203090f1bcf23c80f289a27fea5baf256fb07b34c1c82890930eb9e04890",
-  "generated_header_sha256": "8d2e98cfe2b59df7a696fd8404586a3baf6e3bbe21599d215421181a8c5416ff",
+  "generated_logo_css_sha256": "dd656a6c8ff975ebe664418f02071cf76d2d49744c7c7e748d6561cc6eb8c10d",
+  "generated_header_sha256": "56b215610db5f7b59e3b84de4efc4c55dcda03c12dae2fce56540bdba59da3a7",
   "assets": [
     {
       "source": "branding/library/brands/subcult/fonts/Space-Grotesk-0.ttf",
@@ -52,9 +52,9 @@
       "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
     },
     {
-      "source": "branding/library/brands/subcult/logos/mark-compact-primary-outlined.svg",
+      "source": "integrations/gitea/mark-header-light.svg",
       "destination": "public/assets/subcult-studio/mark-dark.svg",
-      "sha256": "39d405daa88cb0bd2e464436374dc5b4a78817605fc23df24b404e8501865c54"
+      "sha256": "cd5d0404eb327981d640ec351500463f34310879107b991a797c39435865e02b"
     },
     {
       "source": "branding/library/brands/subcult/logos/mark-primary-outlined.svg",

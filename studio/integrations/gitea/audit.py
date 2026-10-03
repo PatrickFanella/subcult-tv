@@ -30,7 +30,7 @@ def audit():
             ET.parse(packaged)
     css = (assets / "css/theme-subcult-studio.css").read_text()
     assert hashlib.sha256(css.encode()).hexdigest() == provenance["generated_css_sha256"]
-    assert hashlib.sha256((assets/'css/subcult-logo-bcd-20261003.css').read_bytes()).hexdigest() == provenance['generated_logo_css_sha256']
+    assert hashlib.sha256((assets/'css/subcult-logo-contrast-20261003.css').read_bytes()).hexdigest() == provenance['generated_logo_css_sha256']
     assert hashlib.sha256((HERE/'custom/templates/custom/header.tmpl').read_bytes()).hexdigest() == provenance['generated_header_sha256']
     assert css.count("gitea-theme-meta-info {") == 1, "Theme must have one metadata block"
     for path in re.findall(r'url\("([^\"]+)"\)', css):

@@ -26,3 +26,6 @@ Configuration changes need a restart. Subsequent CSS edits may require a cache r
 Run `python3 integrations/gitea/preview.py --upstream http://GITEA_CONTAINER_IP:3000`. Open `http://127.0.0.1:18771/`. The loopback preview reads anonymous pages/assets from Gitea and substitutes this theme. It does not forward cookies, authorization headers or mutations. It does not reproduce authenticated dashboards or editor workflows. `/__subcult/specimen` contains explicitly marked synthetic control/diff specimens. Stop with Ctrl-C.
 
 Check the homepage, Explore, a public repository/README, a code file, a commit diff, sign-in, dropdowns and mobile navigation. Verify fonts, keyboard focus, contrast, overflow and errors. CSS selectors and the pinned baseline should be reviewed when upgrading Gitea. No templates or JavaScript are required for installation.
+# Header contrast correction
+
+The dark navigation surface uses a white compact SC with a green underscore. `build.py` derives `mark-header-light.svg` from the approved D geometry and packages it as `mark-dark.svg`. The versioned contrast stylesheet overrides the earlier dark-lettered header selection. The landing-page primary mark retains its existing placement.
