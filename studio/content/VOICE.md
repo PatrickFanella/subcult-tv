@@ -62,7 +62,7 @@ A page may use one of these when it is the best way to say the thing. Two produc
 
 **Sounds like:** a note on a community board, written in full sentences. Warm without being sweet. Small, ordinary examples: a ride to an appointment, a spare crib, a hot meal. It tells you plainly that this is a demonstration and that nobody should arrange real help through it yet.
 
-**Does:** use "you" and "your neighbors". Keeps the spelling each surface already uses (the app writes "neighbours"; subcult.tv writes "neighbors"). States the location rule exactly: requests show approximate areas; approved public resources can show their addresses.
+**Does:** use "you" and "your neighbors". Spells it "neighbors", as the app and subcult.tv both do. States the location rule exactly: requests show approximate areas; approved public resources can show their addresses.
 
 **Avoids:** hero language, "empower communities", urgency, crisis imagery, protocol terms (PDS, DID, AT identity) in public copy, any promise that help will come.
 
