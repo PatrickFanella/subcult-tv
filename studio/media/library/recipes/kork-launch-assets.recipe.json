@@ -1,12 +1,12 @@
 {
-  "generator": "branding/2026-10-01-packs/kork_launch_assets.py",
+  "generator": "branding/library/kork_launch_assets.py",
   "generator_sha256": "b28bc5095ab9b2fe6537de57621cf06ea7c6a1ae683ef7baa8c0dec9a6f22c7b",
   "inputs": {
     "design_helpers.py": "042f8b17018e50f2266609d099af0dcf759143ca8505d4ad6852a13cc2c70e76",
     "brands.json": "89a00001e2efc95f75d97d7992d44e521209c5c71fbc513d06361c19723c0a0e",
     "references/kork-demo-page-mobile.png": "43cbc92b89d28839380ea45c9602d22fb6f1b098ef09ceb9c6107fc725fb5706"
   },
-  "command": "cd branding/2026-10-01-packs && python3 kork_launch_assets.py",
+  "command": "cd branding/library && python3 kork_launch_assets.py",
   "renderer": "rsvg-convert with fontconfig.xml (bundled pack fonts)",
   "outputs": {
     "launch-square": {

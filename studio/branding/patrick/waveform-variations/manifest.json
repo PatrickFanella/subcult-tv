@@ -1,0 +1,228 @@
+{
+  "geometry": "open frame selected by user",
+  "color_selection": {
+    "geometry": "open frame with original thirteen-bar waveform behind PF",
+    "approved_by": "owner, 2026-10-02",
+    "approved_variations": [
+      "01-lavender",
+      "02-pink",
+      "03-green",
+      "04-green-frame",
+      "06-light",
+      "07-quiet",
+      "08-echo"
+    ],
+    "default": "01-lavender",
+    "light_background": "06-light",
+    "default_basis": "implementation default; owner approved all seven treatments",
+    "unapproved_variations": [
+      "05-pink-frame"
+    ]
+  },
+  "waveform": "original g22 bars with original ancestor transforms; no old PF or brackets",
+  "sources": [
+    {
+      "path": "branding/library/references/patrick-variations/primary-outlined.svg",
+      "sha256": "3c8e7750f3b364d275c7694c3599483209b3b4e5b18e0a53d0923e1dffbed71c"
+    },
+    {
+      "path": "branding/library/references/patrick-variations/mono-outlined.svg",
+      "sha256": "6019579da7d7703033e105369efca03db15a33293ec53a364b410c02028bc22b"
+    },
+    {
+      "path": "branding/patrick/logo-selection.json",
+      "sha256": "0df8ebac5d35401a7c8e4cb64231da5c1926a521b128738967d04046717c0f89"
+    },
+    {
+      "path": "branding/patrick/waveform_variations.py",
+      "sha256": "f6ebe8528cfd8d079275e0f75f61da108b14129b6c4ecbd2ff8f8aac65de30fd"
+    }
+  ],
+  "variations": [
+    {
+      "id": "01-lavender",
+      "title": "01 / Lavender",
+      "frame": "#f8f8f2",
+      "waveform": "#bd93f9",
+      "background": "#282a36",
+      "echo": null,
+      "status": "approved"
+    },
+    {
+      "id": "02-pink",
+      "title": "02 / Pink",
+      "frame": "#f8f8f2",
+      "waveform": "#ff79c6",
+      "background": "#282a36",
+      "echo": null,
+      "status": "approved"
+    },
+    {
+      "id": "03-green",
+      "title": "03 / Green",
+      "frame": "#f8f8f2",
+      "waveform": "#50fa7b",
+      "background": "#282a36",
+      "echo": null,
+      "status": "approved"
+    },
+    {
+      "id": "04-green-frame",
+      "title": "04 / Green frame",
+      "frame": "#50fa7b",
+      "waveform": "#bd93f9",
+      "background": "#282a36",
+      "echo": null,
+      "status": "approved"
+    },
+    {
+      "id": "06-light",
+      "title": "06 / Light",
+      "frame": "#282a36",
+      "waveform": "#bd93f9",
+      "background": "#f8f8f2",
+      "echo": null,
+      "status": "approved"
+    },
+    {
+      "id": "07-quiet",
+      "title": "07 / Quiet",
+      "frame": "#f8f8f2",
+      "waveform": "#44475a",
+      "background": "#282a36",
+      "echo": null,
+      "status": "approved"
+    },
+    {
+      "id": "08-echo",
+      "title": "08 / Original echo",
+      "frame": "#f8f8f2",
+      "waveform": "#50fa7b",
+      "background": "#282a36",
+      "echo": "#bd93f9",
+      "status": "approved"
+    }
+  ],
+  "files": [
+    {
+      "path": "01-lavender-avatar.png",
+      "sha256": "23bce7a6b4eb47d9ba294a06fbe9c79c626a10b8d225f0bcdc9465d458664b7b"
+    },
+    {
+      "path": "01-lavender-avatar.svg",
+      "sha256": "bbd3d97a0b9e6cd4e308267d379c47282335696ce5d053033de25f9aeb14e87b"
+    },
+    {
+      "path": "01-lavender.png",
+      "sha256": "5cfdd9751274891ffd2029614d89dd0d13a770f5b4989111711815dd2b791020"
+    },
+    {
+      "path": "01-lavender.svg",
+      "sha256": "bebf9e478e1fc7a576001e53d768ff9108e2fe0843c17992690e2bdc7366297e"
+    },
+    {
+      "path": "02-pink-avatar.png",
+      "sha256": "ac913b710bff86ec5c1aa69e7812da921e119cf0502f3388208d06089fe44791"
+    },
+    {
+      "path": "02-pink-avatar.svg",
+      "sha256": "e008565635fc8814e8b1b85b08aae73a9a30365a72873132999a8746cbced27a"
+    },
+    {
+      "path": "02-pink.png",
+      "sha256": "88f1a321115f7a3ebe4272e9f93dd33b1b243ca04599a381e0348cc188d0bf4e"
+    },
+    {
+      "path": "02-pink.svg",
+      "sha256": "07fa61ef3847c9ccc7c971b80b8367bcad9c48d7dd4cdb6a3569b295f4f9e4f8"
+    },
+    {
+      "path": "03-green-avatar.png",
+      "sha256": "e651b97a91ebe1c4c2a641f5ad5dc8304953cee9718066688246dadca8ecbfe1"
+    },
+    {
+      "path": "03-green-avatar.svg",
+      "sha256": "7011b8850c663b50262948d179f421fd1bfe3f40ad391e8cf94bf07ff221c5a7"
+    },
+    {
+      "path": "03-green.png",
+      "sha256": "0c63a66cc19870c92576a394cfdb4205b7ddc069d056acd3d4c3a23d3a571602"
+    },
+    {
+      "path": "03-green.svg",
+      "sha256": "07e3ea35b62b155211357ea7d98776f0d53200e153ef4225bf125c0e7ab18557"
+    },
+    {
+      "path": "04-green-frame-avatar.png",
+      "sha256": "315b4d83675183941f655cb6217b2658a3b70d940357c398426811f7467caff1"
+    },
+    {
+      "path": "04-green-frame-avatar.svg",
+      "sha256": "a71a3ce1e7406244726aecb5cc00ebd9d856bff962de1868621894679df0e7c4"
+    },
+    {
+      "path": "04-green-frame.png",
+      "sha256": "e911f5610549a3676bbac142b44aadf5b63248184b6b41b22f17f95b8cc21d88"
+    },
+    {
+      "path": "04-green-frame.svg",
+      "sha256": "2a9081ae1a2ab1b7d78c6c6aeaca8dd270ccfbe21269e7dc5ac6f3b8de7c3e25"
+    },
+    {
+      "path": "06-light-avatar.png",
+      "sha256": "8bef88daacd4a23a9b7be015440ab162b8a183088aebbd13912f9fb4847f6bc6"
+    },
+    {
+      "path": "06-light-avatar.svg",
+      "sha256": "0280a7c9ffd04d882cf04fee6672c539a4b4460c5b62dac00392363e669a4d24"
+    },
+    {
+      "path": "06-light.png",
+      "sha256": "6b55ecbccacd1945cc2083a5edc77cab3d71d855e4fd5b403107c369e3d2c00e"
+    },
+    {
+      "path": "06-light.svg",
+      "sha256": "5508ae3444cc0c2cf4acd913c3cfe820a8c64ec4cd5750d02decf8321c14ecea"
+    },
+    {
+      "path": "07-quiet-avatar.png",
+      "sha256": "3f8c42c41de7df641481e2ec8b0a3fe882980ea8c903b537040dda89c818e42d"
+    },
+    {
+      "path": "07-quiet-avatar.svg",
+      "sha256": "84c60da5b89785711ef118b64dc9fec7483c08761ed4b709890ce2e3ee85bc7b"
+    },
+    {
+      "path": "07-quiet.png",
+      "sha256": "3735af4075efaf678b1114a64acad0b4998dc0b1d72cb75a07c40485903f40e1"
+    },
+    {
+      "path": "07-quiet.svg",
+      "sha256": "370d0580d2ba0d850f464b04b4ef92d29c16a64caaf3f9f2849a0d00ad637926"
+    },
+    {
+      "path": "08-echo-avatar.png",
+      "sha256": "24d38e9936b4653853066c3b8011bbeef980068e43aa58ea9a1e852f5eb4ae2a"
+    },
+    {
+      "path": "08-echo-avatar.svg",
+      "sha256": "fe5317a257896d28fdb182aea5caa549bb30f04ce0097743da5cecddea5b9317"
+    },
+    {
+      "path": "08-echo.png",
+      "sha256": "9bda8f93c0aa35cb17b3d4ac591869b084b0a30290877194794afc71433eb2f8"
+    },
+    {
+      "path": "08-echo.svg",
+      "sha256": "d9a676642a05d56e1e6c3f36913ec4beb5aca867dca1356c35994750a622154f"
+    },
+    {
+      "path": "comparison.png",
+      "sha256": "31f8eee45e181ae425cf44fd9e8e8a2c64cfeabebba4e944a5f9a4af1c2f48f5"
+    },
+    {
+      "path": "index.html",
+      "sha256": "86ac61fb0e2b6fdda77fb6edc102d505d9c86ef704493753ef7038b8743d9408"
+    }
+  ]
+}

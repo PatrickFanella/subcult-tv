@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "subcult.tv — product showcase for Subculture Collective",
+  "description": "subcult.tv \u2014 product showcase for Subculture Collective",
   "scripts": {
     "dev": "vite --port 5175",
     "build": "tsc -b && npm run generate-sitemap && vite build && npm run prerender-meta",
@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,md,mdx}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,css,md,mdx}\"",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc -b --pretty false",
     "test": "vitest run",
     "check:catalog": "tsx scripts/check-catalog.ts",
     "capture-screenshots": "tsx scripts/capture-screenshots.ts",

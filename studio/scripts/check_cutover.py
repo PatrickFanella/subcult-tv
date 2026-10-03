@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 repo = Path(__file__).resolve().parents[1]
-receipts = json.loads((repo / 'docs/cutover-receipt.json').read_text())
+receipts = json.loads((repo / 'docs/history/cutover-receipt.json').read_text())
 for item in receipts:
     old = Path(item['old_path'])
     assert old.is_symlink(), old

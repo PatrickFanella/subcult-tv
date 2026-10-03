@@ -1,0 +1,44 @@
+# Disposable local development. This file never loads the deployment .env.
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: subcult_dev
+      POSTGRES_PASSWORD: local-development-only
+      POSTGRES_DB: subcult_dev
+    ports:
+      - "127.0.0.1:${DEV_DATABASE_PORT:-15435}:5432"
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U subcult_dev -d subcult_dev]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+    volumes:
+      - database:/var/lib/postgresql/data
+
+  api:
+    build: ./api
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://subcult_dev:local-development-only@postgres:5432/subcult_dev?sslmode=disable
+      JWT_SECRET: local-development-only-secret-32-characters
+      PORT: "8080"
+      CORS_ORIGINS: http://localhost:5175,http://127.0.0.1:5175
+      ADMIN_USER: local-admin
+      ADMIN_PASSWORD: local-development-only
+      ADMIN_EMAIL: local-admin@example.invalid
+      STUDIO_ROOT: /studio
+    ports:
+      - "127.0.0.1:${DEV_API_PORT:-18085}:8080"
+    volumes:
+      - type: bind
+        source: ./studio/runtime/studio
+        target: /studio
+        read_only: true
+        bind:
+          create_host_path: false
+
+volumes:
+  database:
