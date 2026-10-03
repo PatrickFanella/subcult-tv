@@ -10,6 +10,7 @@ const API_BASE = import.meta.env.VITE_API_URL || '';
 let authToken: string | null = null;
 
 export function setToken(token: string | null) {
+  if (authToken !== token) clearStudioPreviews();
   authToken = token;
   if (token) {
     localStorage.setItem('subcult-token', token);
@@ -26,6 +27,7 @@ export function getToken(): string | null {
 }
 
 export function clearToken() {
+  clearStudioPreviews();
   authToken = null;
   localStorage.removeItem('subcult-token');
 }
@@ -406,6 +408,52 @@ export async function getStudioAsset(id: string, signal?: AbortSignal): Promise<
   });
   if (!response.ok) throw new APIError('Unable to load Studio asset', response.status);
   return response.blob();
+}
+
+// Keep private previews in memory for this session only. Returning to a page
+// reuses its thumbnails; downloads and other API requests keep their own behavior.
+const previewCache = new Map<string, Blob>();
+const previewRequests = new Map<string, Promise<Blob>>();
+let previewBytes = 0;
+let previewSession: string | null = null;
+function clearStudioPreviews() {
+  previewCache.clear();
+  previewRequests.clear();
+  previewBytes = 0;
+  previewSession = null;
+}
+export function getStudioPreview(id: string): Promise<Blob> {
+  const session = getToken();
+  if (session !== previewSession) {
+    clearStudioPreviews();
+    previewSession = session;
+  }
+  const cached = previewCache.get(id);
+  if (cached) {
+    previewCache.delete(id);
+    previewCache.set(id, cached);
+    return Promise.resolve(cached);
+  }
+  const pending = previewRequests.get(id);
+  if (pending) return pending;
+  const request = getStudioAsset(id)
+    .then((blob) => {
+      if (session === previewSession && blob.size <= 16 * 1024 * 1024) {
+        while (previewCache.size >= 80 || previewBytes + blob.size > 16 * 1024 * 1024) {
+          const oldest = previewCache.keys().next().value!;
+          previewBytes -= previewCache.get(oldest)!.size;
+          previewCache.delete(oldest);
+        }
+        previewCache.set(id, blob);
+        previewBytes += blob.size;
+      }
+      return blob;
+    })
+    .finally(() => {
+      if (previewRequests.get(id) === request) previewRequests.delete(id);
+    });
+  previewRequests.set(id, request);
+  return request;
 }
 
 export interface PostingRun {

@@ -35,6 +35,8 @@ Migration `004_studio_references` adds searchable reference records, tags, links
 
 The API search supports `q`, repeated AND-matched `tag`, `collection`, `sort`, `page` and `per_page` capped at 48. Supporting Markdown, JSON and CSS are plain-text attachments; UI Markdown rendering disables raw HTML. Authenticated routes are listed in [API contracts](API.md).
 
+The reference browser shows 24 records per page with previous/next controls and a page selector above the results. Thumbnails are fetched near the viewport and reused in a bounded, session-scoped memory cache. Studio asset GETs use a separate 500-request-per-minute IP budget and do not count toward the general 100-request API budget. Authentication and the asset allowlist still apply; login and public-form limits are unchanged.
+
 ## Posting and source authority
 
 The operations view observes a prepared queue, media requirements, open checks and past runs. It does not approve, schedule or publish social posts. A receipt is historical evidence, not live timer health or provider delivery. Site article CRUD remains a separate application feature.

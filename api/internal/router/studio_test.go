@@ -88,3 +88,64 @@ func TestStudioAccessAndContainment(t *testing.T) {
 		}
 	}
 }
+
+func TestStudioAssetBudgetIsSeparateAndStillProtected(t *testing.T) {
+	root := t.TempDir()
+	if err := os.WriteFile(filepath.Join(root, "catalog.json"), []byte(`{"version":1,"brands":[],"media":[],"files":{}}`), 0600); err != nil {
+		t.Fatal(err)
+	}
+	cfg := &config.Config{JWTSecret: "test-asset-budget"}
+	r := New(cfg, &handlers.Handler{StudioRoot: root})
+	token, _ := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{"sub": "test", "exp": time.Now().Add(time.Hour).Unix()}).SignedString([]byte(cfg.JWTSecret))
+	request := func(method, path string, auth bool) int {
+		req := httptest.NewRequest(method, path, nil)
+		if auth {
+			req.Header.Set("Authorization", "Bearer "+token)
+		}
+		w := httptest.NewRecorder()
+		r.ServeHTTP(w, req)
+		return w.Code
+	}
+	asset := "/api/v1/admin/studio/assets/" + strings.Repeat("a", 64)
+	for i := 0; i < GeneralRateLimit+1; i++ {
+		if code := request("GET", asset, true); code != 404 {
+			t.Fatalf("asset %d: %d", i, code)
+		}
+	}
+	if code := request("GET", "/api/v1/admin/studio", true); code != 200 {
+		t.Fatalf("assets blocked catalog: %d", code)
+	}
+	if code := request("GET", asset, false); code != 401 {
+		t.Fatalf("anonymous asset: %d", code)
+	}
+	for i := GeneralRateLimit + 2; i < StudioAssetRateLimit; i++ {
+		request("GET", asset, true)
+	}
+	if code := request("GET", asset, true); code != 429 {
+		t.Fatalf("asset budget unbounded: %d", code)
+	}
+	for i := 1; i < GeneralRateLimit; i++ {
+		if code := request("GET", "/healthz", false); code != 200 {
+			t.Fatalf("general request %d: %d", i, code)
+		}
+	}
+	if code := request("GET", "/healthz", false); code != 429 {
+		t.Fatalf("general budget changed: %d", code)
+	}
+	if code := request("POST", asset, true); code != 429 {
+		t.Fatalf("write escaped general budget: %d", code)
+	}
+	if code := request("GET", "/api/v1/admin/studio/assets/invalid", true); code != 429 {
+		t.Fatalf("invalid path escaped general budget: %d", code)
+	}
+
+	r = New(cfg, &handlers.Handler{StudioRoot: root})
+	for i := 0; i < LoginRateLimit; i++ {
+		if code := request("POST", "/api/v1/auth/login", false); code == 429 {
+			t.Fatalf("login limited too soon: %d", i)
+		}
+	}
+	if code := request("POST", "/api/v1/auth/login", false); code != 429 {
+		t.Fatalf("login budget changed: %d", code)
+	}
+}
