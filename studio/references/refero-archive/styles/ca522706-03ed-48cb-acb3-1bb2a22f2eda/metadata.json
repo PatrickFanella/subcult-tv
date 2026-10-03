@@ -1,0 +1,29 @@
+{
+  "styleId": "ca522706-03ed-48cb-acb3-1bb2a22f2eda",
+  "sourceUrl": "https://styles.refero.design/style/ca522706-03ed-48cb-acb3-1bb2a22f2eda",
+  "fetchedAt": "2026-10-02T22:32:26.197129+00:00",
+  "extractedAt": "2026-10-02T22:32:26.220701+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Little Amps — Style Reference",
+  "htmlSha256": "a727da894e70b226e645636f8474401c6bc1cb1239934e34e4d79bea2f77ac8b",
+  "cache": ".cache/ca522706-03ed-48cb-acb3-1bb2a22f2eda.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bd5dc2b14bbb6e04504af48ff523f4bd0ffbf23793247fa5d0142e474e01b9aa",
+      "bytes": 24209,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d12abb20-f05a-41be-bbe3-2c0be8195cfe.jpg",
+    "fetchedAt": "2026-10-02T22:32:28.203562+00:00",
+    "sha256": "8f3ec9a29f8cc378d03e2c6ce6241fa4a88c2af70999ce53fb948ecf83771250",
+    "bytes": 134348,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

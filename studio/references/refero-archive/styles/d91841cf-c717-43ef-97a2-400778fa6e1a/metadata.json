@@ -1,0 +1,29 @@
+{
+  "styleId": "d91841cf-c717-43ef-97a2-400778fa6e1a",
+  "sourceUrl": "https://styles.refero.design/style/d91841cf-c717-43ef-97a2-400778fa6e1a",
+  "fetchedAt": "2026-10-02T22:06:42.201385+00:00",
+  "extractedAt": "2026-10-02T22:06:42.223950+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "sweetgreen — Style Reference",
+  "htmlSha256": "389269c2b807f605ca4e3968608a3ac1c16f8a05fdba7ddba954d4151abe529d",
+  "cache": ".cache/d91841cf-c717-43ef-97a2-400778fa6e1a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "503cdbc426cd1cc0a5900b7c7d7f676f9877b2c20495d8dc250acaba86a92ac4",
+      "bytes": 22210,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/910c559d-cc91-4972-9fdf-192e9aad9286.jpg",
+    "fetchedAt": "2026-10-02T22:06:44.304574+00:00",
+    "sha256": "8e05cd33343c4437b88abbe6908e9d4fcf0dfc7d909d37318df0db65ab29acd5",
+    "bytes": 144719,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

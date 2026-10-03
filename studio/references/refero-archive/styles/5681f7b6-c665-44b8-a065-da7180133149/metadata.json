@@ -1,0 +1,29 @@
+{
+  "styleId": "5681f7b6-c665-44b8-a065-da7180133149",
+  "sourceUrl": "https://styles.refero.design/style/5681f7b6-c665-44b8-a065-da7180133149",
+  "fetchedAt": "2026-10-02T22:24:26.167922+00:00",
+  "extractedAt": "2026-10-02T22:24:26.198131+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "A-WARE — Style Reference",
+  "htmlSha256": "ef770c5b2d345978d0d46cbcdbc99f84f8a29f63507c1594cd0dbff04518734e",
+  "cache": ".cache/5681f7b6-c665-44b8-a065-da7180133149.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d5fc4477a8d64bbed37facb1ad7e49553ec0fa48a6ab3377c7d4a5b9a14ec8fe",
+      "bytes": 19780,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/167de93e-0827-4bf2-8251-c53bc9170b82.jpg",
+    "fetchedAt": "2026-10-02T22:24:28.297987+00:00",
+    "sha256": "7b165d52e3c00c86fa24d0bd3ca3f28b4900786010365e86c53967ef148857a9",
+    "bytes": 132289,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

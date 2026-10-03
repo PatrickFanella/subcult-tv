@@ -1,0 +1,29 @@
+{
+  "styleId": "5bfe6c1d-1b15-4f8d-b0c9-677a33291c5d",
+  "sourceUrl": "https://styles.refero.design/style/5bfe6c1d-1b15-4f8d-b0c9-677a33291c5d",
+  "fetchedAt": "2026-10-02T22:53:22.547132+00:00",
+  "extractedAt": "2026-10-02T22:53:22.572901+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "mymind — Style Reference",
+  "htmlSha256": "0a20146c921bad9a50990d0fb0e87f48f3322e5feb1169e9f99163e28134732e",
+  "cache": ".cache/5bfe6c1d-1b15-4f8d-b0c9-677a33291c5d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c244fcadefee75798c87dff7feb08f3a8511009b0d718f2d0eddf8747461cfbe",
+      "bytes": 31524,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/959fa8e3-bcdb-4134-a02e-901dd3a24f02.jpg",
+    "fetchedAt": "2026-10-02T22:53:24.255281+00:00",
+    "sha256": "6c0a2f7f7c50eaa1b93d21de78b10b4f9830136f8c8835363109722e5f0895d8",
+    "bytes": 124063,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

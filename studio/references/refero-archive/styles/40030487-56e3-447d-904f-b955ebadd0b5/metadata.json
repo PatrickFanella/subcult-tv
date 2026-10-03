@@ -1,0 +1,29 @@
+{
+  "styleId": "40030487-56e3-447d-904f-b955ebadd0b5",
+  "sourceUrl": "https://styles.refero.design/style/40030487-56e3-447d-904f-b955ebadd0b5",
+  "fetchedAt": "2026-10-02T22:34:10.210826+00:00",
+  "extractedAt": "2026-10-02T22:34:10.233216+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Twitch — Style Reference",
+  "htmlSha256": "d79681e64909a07ceb2a13311d9371a3b048242bf80c388cfb3a6f9893014404",
+  "cache": ".cache/40030487-56e3-447d-904f-b955ebadd0b5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3946b024790f8b28c31a0e2e839915bf7bd2327da591584010c5ae54ff931c0f",
+      "bytes": 19801,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8bdf1d64-f114-44d8-b0e8-58da98413613.jpg",
+    "fetchedAt": "2026-10-02T22:34:12.309931+00:00",
+    "sha256": "ee5acd2621fe1abea8b83af449bde621697afc6c97691dc1853e228ac22f735b",
+    "bytes": 177268,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

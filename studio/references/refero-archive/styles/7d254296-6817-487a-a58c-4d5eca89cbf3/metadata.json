@@ -1,0 +1,29 @@
+{
+  "styleId": "7d254296-6817-487a-a58c-4d5eca89cbf3",
+  "sourceUrl": "https://styles.refero.design/style/7d254296-6817-487a-a58c-4d5eca89cbf3",
+  "fetchedAt": "2026-10-02T22:08:38.185305+00:00",
+  "extractedAt": "2026-10-02T22:08:38.207453+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Flying Papers — Style Reference",
+  "htmlSha256": "19c337ef6787916c5310c4ce5f27b16a26ef7101e15309522b0713c763e3c0ea",
+  "cache": ".cache/7d254296-6817-487a-a58c-4d5eca89cbf3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c68e0279d1e1919b85bb1826834805c23fe61a37900792c08ad1454fd88ea5de",
+      "bytes": 20918,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/782ae911-77e4-4df6-9523-b24f33444a7e.jpg",
+    "fetchedAt": "2026-10-02T22:08:40.158859+00:00",
+    "sha256": "bef3271930fe2ba9c14e39003c6168579bfc554b8e1ae8ab32287b266a1c9d9a",
+    "bytes": 58835,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

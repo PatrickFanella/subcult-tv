@@ -1,0 +1,29 @@
+{
+  "styleId": "7f70ee10-123b-43cc-bd04-498cfc5b5ac0",
+  "sourceUrl": "https://styles.refero.design/style/7f70ee10-123b-43cc-bd04-498cfc5b5ac0",
+  "fetchedAt": "2026-10-02T22:17:58.185903+00:00",
+  "extractedAt": "2026-10-02T22:17:58.207490+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Moxie — Style Reference",
+  "htmlSha256": "b9701afaf7426f745c983875f88b1aa138823774e0126211a14a3486a4a45c52",
+  "cache": ".cache/7f70ee10-123b-43cc-bd04-498cfc5b5ac0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e721a00c966890719eecfc7fc24fdc362c99efe3444f47ce640483da99d8264a",
+      "bytes": 15665,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d5f516fa-4210-4e50-8ce4-61914f22cd79.jpg",
+    "fetchedAt": "2026-10-02T22:18:00.135376+00:00",
+    "sha256": "b0417b6ede540288f5ca4c62252258490587cd89a628264d13c4bdc8f1585c69",
+    "bytes": 71177,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,90 +1,85 @@
 {
-  "repository": "subculture-collective/subcult-studio",
+  "repository": "subculture-collective/subcult-tv",
   "files": [
     {
-      "source": "branding/library/brands/subcult/logos/mark-light-outlined.svg",
+      "source": "studio/branding/library/brands/subcult/logos/mark-light-outlined.svg",
       "target": "public/brand/subcult/mark.svg",
-      "sha256": "c50a139ab7a876cbc4c6c63d9fe3c6d2573d54411acfa73ab46d5a9aedddf8db"
+      "sha256": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222"
     },
     {
-      "source": "branding/library/brands/subcult/logos/master.svg",
+      "source": "studio/branding/library/brands/subcult/logos/master.svg",
       "target": "public/brand/subcult/master.svg",
-      "sha256": "f3d146fa2bd5e5ab409b3f16191a85aff8e9eaef8336dfaf79ae1585947dd140"
+      "sha256": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222"
     },
     {
-      "source": "branding/library/brands/subcult/logos/mark-light.png",
+      "source": "studio/branding/library/brands/subcult/logos/mark-compact-primary-outlined.svg",
+      "target": "public/brand/subcult/compact.svg",
+      "sha256": "39d405daa88cb0bd2e464436374dc5b4a78817605fc23df24b404e8501865c54"
+    },
+    {
+      "source": "studio/branding/library/brands/subcult/logos/mark-fisheye-circle.png",
+      "target": "public/brand/subcult/fisheye-circle.png",
+      "sha256": "d2207dea611860cb3efdd7ea27ba01d43ed658285a8df62e3de896cb81490c53"
+    },
+    {
+      "source": "studio/branding/library/brands/subcult/logos/mark-light.png",
       "target": "public/brand/subcult/mark.png",
-      "sha256": "f84240c99d23960e49f5d3405a88e9ba4d73755a9163b694930625aade0b4a09"
+      "sha256": "20d94ef7a369be12eca3ba9ea8f3ffecfcc986182ee05c58909858c1693db60f"
     },
     {
-      "source": "branding/library/brands/subcult/logos/mark-primary.png",
+      "source": "studio/branding/library/brands/subcult/logos/mark-compact-primary.png",
       "target": "public/apple-touch-icon.png",
-      "sha256": "07848e83879e652988eeb12468c39d0ae9744f29bf6ddc0007453c6e592606cd"
+      "sha256": "2c6b5e4e4f143cd67abdf6ecfaff65d7cfcdcc0c578b1ab1528fa5ee63e16d7e"
     },
     {
-      "source": "branding/library/brands/subcult/logos/mark-primary-outlined.svg",
+      "source": "studio/branding/library/brands/subcult/logos/mark-compact-primary-outlined.svg",
       "target": "public/favicon.svg",
-      "sha256": "f3d146fa2bd5e5ab409b3f16191a85aff8e9eaef8336dfaf79ae1585947dd140"
+      "sha256": "39d405daa88cb0bd2e464436374dc5b4a78817605fc23df24b404e8501865c54"
     },
     {
-      "source": "branding/library/brands/subcult/fonts/JetBrains-Mono-0.ttf",
+      "source": "studio/branding/library/brands/subcult/fonts/JetBrains-Mono-0.ttf",
       "target": "public/brand/subcult/fonts/JetBrains-Mono-0.ttf",
       "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
     },
     {
-      "source": "branding/library/brands/subcult/fonts/JetBrains-Mono-1.ttf",
+      "source": "studio/branding/library/brands/subcult/fonts/JetBrains-Mono-1.ttf",
       "target": "public/brand/subcult/fonts/JetBrains-Mono-1.ttf",
       "sha256": "a1d92abc6b02a87faed23d98067ab1027e8e95242fd7c9978a072ea383b89d1a"
     },
     {
-      "source": "branding/library/brands/subcult/fonts/Oswald-0.ttf",
+      "source": "studio/branding/library/brands/subcult/fonts/Oswald-0.ttf",
       "target": "public/brand/subcult/fonts/Oswald-0.ttf",
       "sha256": "bd6ff5a83bcdc92d7aac6dbb16e4dd2b0b0320bec6402bb81f5dd9735b500e46"
     },
     {
-      "source": "branding/library/brands/subcult/fonts/Oswald-1.ttf",
+      "source": "studio/branding/library/brands/subcult/fonts/Oswald-1.ttf",
       "target": "public/brand/subcult/fonts/Oswald-1.ttf",
       "sha256": "a6ee8b91ec269a6f48631ba4ba1a3ab7e5039e5482dda8dc9672ee4620d7bd68"
     },
     {
-      "source": "branding/library/brands/subcult/fonts/Space-Grotesk-0.ttf",
+      "source": "studio/branding/library/brands/subcult/fonts/Space-Grotesk-0.ttf",
       "target": "public/brand/subcult/fonts/Space-Grotesk-0.ttf",
       "sha256": "ec926d5065eaca49a48f96e312bbae0bbc5733c24215cf5dfabbdccee926fef7"
     },
     {
-      "source": "branding/library/brands/subcult/fonts/Space-Grotesk-1.ttf",
+      "source": "studio/branding/library/brands/subcult/fonts/Space-Grotesk-1.ttf",
       "target": "public/brand/subcult/fonts/Space-Grotesk-1.ttf",
       "sha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85"
     },
     {
-      "source": "branding/library/brands/subcult/fonts/jetbrainsmono-OFL.txt",
+      "source": "studio/branding/library/brands/subcult/fonts/jetbrainsmono-OFL.txt",
       "target": "public/brand/subcult/fonts/jetbrainsmono-OFL.txt",
       "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
     },
     {
-      "source": "branding/library/brands/subcult/fonts/oswald-OFL.txt",
+      "source": "studio/branding/library/brands/subcult/fonts/oswald-OFL.txt",
       "target": "public/brand/subcult/fonts/oswald-OFL.txt",
       "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652"
     },
     {
-      "source": "branding/library/brands/subcult/fonts/spacegrotesk-OFL.txt",
+      "source": "studio/branding/library/brands/subcult/fonts/spacegrotesk-OFL.txt",
       "target": "public/brand/subcult/fonts/spacegrotesk-OFL.txt",
       "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
-    },
-    {
-      "source": "branding/library/brands/kork/logos/mark-primary.svg",
-      "target": "public/brand/kork-mark.svg",
-      "sha256": "4ea977a2b935796ba1956cbd6a7bf62ff24ba839c07af7cc38f4b5d8b6a469ad"
-    },
-    {
-      "source": "branding/library/fonts/ArchivoBlack-Regular.ttf",
-      "target": "public/brand/fonts/archivo-black-400.ttf",
-      "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180"
-    },
-    {
-      "source": "branding/library/fonts/archivoblack-OFL.txt",
-      "target": "public/brand/fonts/archivoblack-OFL.txt",
-      "sha256": "3173acd82f8c6159b5b1037b539fcbd4edff68e65c2ea8b9412b5a5ca97b08ff"
     }
   ]
 }

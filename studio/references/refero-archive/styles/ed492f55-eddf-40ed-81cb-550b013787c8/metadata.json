@@ -1,0 +1,29 @@
+{
+  "styleId": "ed492f55-eddf-40ed-81cb-550b013787c8",
+  "sourceUrl": "https://styles.refero.design/style/ed492f55-eddf-40ed-81cb-550b013787c8",
+  "fetchedAt": "2026-10-02T22:12:54.423616+00:00",
+  "extractedAt": "2026-10-02T22:12:54.446496+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Rally — Style Reference",
+  "htmlSha256": "52b2ab6f0702badd767e2fbb11a6edbca8006431858eedb5e1fec68084622820",
+  "cache": ".cache/ed492f55-eddf-40ed-81cb-550b013787c8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "54e42a0aa3ebc537660a47fb3a572eebffd1358fda29b3799e78410d0f31d8c4",
+      "bytes": 12444,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/495698e4-a59a-4699-9260-112aebacaf55.jpg",
+    "fetchedAt": "2026-10-02T22:12:56.195944+00:00",
+    "sha256": "f169b2fac267b83bc775a16b2163109a9d04a1f3b6936f4676aec218cf67a199",
+    "bytes": 82468,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

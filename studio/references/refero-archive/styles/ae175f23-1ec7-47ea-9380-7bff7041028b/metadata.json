@@ -1,0 +1,29 @@
+{
+  "styleId": "ae175f23-1ec7-47ea-9380-7bff7041028b",
+  "sourceUrl": "https://styles.refero.design/style/ae175f23-1ec7-47ea-9380-7bff7041028b",
+  "fetchedAt": "2026-10-02T22:26:54.409372+00:00",
+  "extractedAt": "2026-10-02T22:26:54.432797+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Timescale — Style Reference",
+  "htmlSha256": "03534cfc74fb30b6630fc1299d14c46a36a7c45f04fa9226c940351f05521fdc",
+  "cache": ".cache/ae175f23-1ec7-47ea-9380-7bff7041028b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f22fb29f5e46e0e01155aac95f5f6beb1193b26d3a11ca55f2c78b14a7ee9a0b",
+      "bytes": 21261,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c3bb7f8e-d1bf-4550-92cd-ce047f6cfe0c.jpg",
+    "fetchedAt": "2026-10-02T22:26:56.258414+00:00",
+    "sha256": "f12e486a205aa7d1aa12ec4b89d518ef444a0724c97d41188c2720f02e9adde9",
+    "bytes": 176243,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

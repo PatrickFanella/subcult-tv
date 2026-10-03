@@ -1,0 +1,29 @@
+{
+  "styleId": "1ab79e76-a07f-48fd-8e93-0a0fee12abd7",
+  "sourceUrl": "https://styles.refero.design/style/1ab79e76-a07f-48fd-8e93-0a0fee12abd7",
+  "fetchedAt": "2026-10-02T22:21:06.241600+00:00",
+  "extractedAt": "2026-10-02T22:21:06.264720+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "V7labs — Style Reference",
+  "htmlSha256": "0196b117d211d94bfd703f1425e133b08ef031cadfba72316ac33628d51a4a66",
+  "cache": ".cache/1ab79e76-a07f-48fd-8e93-0a0fee12abd7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8bd8f663aa774f51e882eff7ae3b4b88252c9e2ef52f7167578eb6d8c4c586b1",
+      "bytes": 26708,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1854595c-ddf5-4d2a-9454-f870928e95f3.jpg",
+    "fetchedAt": "2026-10-02T22:21:08.318258+00:00",
+    "sha256": "789e465df628058a9b22b105fde7051b2dacbef80fc43da6973b691d24086c47",
+    "bytes": 88178,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

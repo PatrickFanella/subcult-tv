@@ -1,0 +1,29 @@
+{
+  "styleId": "519ca09b-9a85-4eec-8630-0d7aae5ac2da",
+  "sourceUrl": "https://styles.refero.design/style/519ca09b-9a85-4eec-8630-0d7aae5ac2da",
+  "fetchedAt": "2026-10-02T22:15:14.176550+00:00",
+  "extractedAt": "2026-10-02T22:15:14.201905+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Andrei Rybin — Style Reference",
+  "htmlSha256": "f8f2ab72856c6db3b532569c3f0836c9b4512d4e98fd3595d46423c033242028",
+  "cache": ".cache/519ca09b-9a85-4eec-8630-0d7aae5ac2da.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8bdb785be09f2ea1f662045e8070ceb0c6c76f4248874597759f912897b48ffe",
+      "bytes": 13887,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3cfbff8d-79c4-48ac-9421-30efc0821f23.jpg",
+    "fetchedAt": "2026-10-02T22:15:16.284867+00:00",
+    "sha256": "10f2b40197b73e9ba87e6ab95a09edddce6120a8594922a5188447b2fbe8ce08",
+    "bytes": 102294,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

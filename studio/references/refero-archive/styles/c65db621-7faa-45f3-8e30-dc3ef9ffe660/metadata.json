@@ -1,0 +1,29 @@
+{
+  "styleId": "c65db621-7faa-45f3-8e30-dc3ef9ffe660",
+  "sourceUrl": "https://styles.refero.design/style/c65db621-7faa-45f3-8e30-dc3ef9ffe660",
+  "fetchedAt": "2026-10-02T22:42:46.280771+00:00",
+  "extractedAt": "2026-10-02T22:42:46.304192+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Subframe — Style Reference",
+  "htmlSha256": "a671892bb03343109a6a041a6a4f4dd7261d899b180766dac823a6c8881e9067",
+  "cache": ".cache/c65db621-7faa-45f3-8e30-dc3ef9ffe660.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "09b7f293f88431c4fa49cd4fd735e401067340cd6d782865de4034a21ba1bec5",
+      "bytes": 23464,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a7658c4d-a269-46d2-b590-b05ac8964198.jpg",
+    "fetchedAt": "2026-10-02T22:42:48.183774+00:00",
+    "sha256": "7b696e7b4dae66ab41a2fd20975cad3c43db4616d8d2e4f5f3f446b556def82e",
+    "bytes": 53162,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

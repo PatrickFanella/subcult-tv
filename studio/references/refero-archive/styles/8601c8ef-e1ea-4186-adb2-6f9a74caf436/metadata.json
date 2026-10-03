@@ -1,0 +1,29 @@
+{
+  "styleId": "8601c8ef-e1ea-4186-adb2-6f9a74caf436",
+  "sourceUrl": "https://styles.refero.design/style/8601c8ef-e1ea-4186-adb2-6f9a74caf436",
+  "fetchedAt": "2026-10-02T22:54:30.267239+00:00",
+  "extractedAt": "2026-10-02T22:54:30.295631+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "N8n — Style Reference",
+  "htmlSha256": "3b678c15d44c00b85bb701178528d6b2dae6adc37d8c0f0a378679bb9a5510a2",
+  "cache": ".cache/8601c8ef-e1ea-4186-adb2-6f9a74caf436.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "54820a1d88b772dea46a112676edf230fec06c29276ae4b1d199f63efb968c24",
+      "bytes": 25148,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/85617ba2-17e5-4aff-917d-5b7332e307c8.jpg",
+    "fetchedAt": "2026-10-02T22:54:32.229138+00:00",
+    "sha256": "a2f103399b0f65e513288fae323bfdc6fe4d562dbd8148ccf7e13fb29f74e44c",
+    "bytes": 99129,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

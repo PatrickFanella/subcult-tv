@@ -1,0 +1,29 @@
+{
+  "styleId": "7c84da5d-b7a0-436f-bfaa-68d0a14f8e86",
+  "sourceUrl": "https://styles.refero.design/style/7c84da5d-b7a0-436f-bfaa-68d0a14f8e86",
+  "fetchedAt": "2026-10-02T22:04:38.728662+00:00",
+  "extractedAt": "2026-10-02T22:04:38.751754+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "FRANKY'S — Style Reference",
+  "htmlSha256": "7252ab626f52e65f6093543a047a76fe974fe5505acb96634c72e05f72a5a1ff",
+  "cache": ".cache/7c84da5d-b7a0-436f-bfaa-68d0a14f8e86.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "02f38b9c2f22c02bfc4ac5d11844736bdaaf1900195141c113580abe615d544b",
+      "bytes": 15811,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1de242de-6ae1-4994-919d-0748ba503e1b.jpg",
+    "fetchedAt": "2026-10-02T22:04:40.294814+00:00",
+    "sha256": "2b2b9635d9dbaeb4f79f448f0320d0df3e6440a586d9ccae56e4ab61ff03584b",
+    "bytes": 261561,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

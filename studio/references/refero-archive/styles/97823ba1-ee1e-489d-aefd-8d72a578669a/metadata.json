@@ -1,0 +1,29 @@
+{
+  "styleId": "97823ba1-ee1e-489d-aefd-8d72a578669a",
+  "sourceUrl": "https://styles.refero.design/style/97823ba1-ee1e-489d-aefd-8d72a578669a",
+  "fetchedAt": "2026-10-02T22:40:42.221938+00:00",
+  "extractedAt": "2026-10-02T22:40:42.242719+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Zara — Style Reference",
+  "htmlSha256": "1c4f20fb232aba109a62abdb98c063c43dc77f128969a9de52f02d15f2ec097a",
+  "cache": ".cache/97823ba1-ee1e-489d-aefd-8d72a578669a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c047eaa5ebc0ee52f1ab8293be3f7de582fcef4ee6c73c00c6945e3860576261",
+      "bytes": 13794,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b2f29d4c-e0a1-4ef6-8db5-9fb328e69fb4.jpg",
+    "fetchedAt": "2026-10-02T22:40:44.277441+00:00",
+    "sha256": "d537cc0a11039c51af71964d02b5ac7a50bd53c777da380b731d700f528548a4",
+    "bytes": 107338,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

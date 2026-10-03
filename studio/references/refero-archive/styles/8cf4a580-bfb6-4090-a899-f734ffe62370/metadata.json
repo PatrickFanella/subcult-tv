@@ -1,0 +1,29 @@
+{
+  "styleId": "8cf4a580-bfb6-4090-a899-f734ffe62370",
+  "sourceUrl": "https://styles.refero.design/style/8cf4a580-bfb6-4090-a899-f734ffe62370",
+  "fetchedAt": "2026-10-02T22:45:30.217187+00:00",
+  "extractedAt": "2026-10-02T22:45:30.240477+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Duna — Style Reference",
+  "htmlSha256": "0f1b05a17da3c42e22b0e1b1c5d567f4cdb20206e8ee45018d75a2c8054f3054",
+  "cache": ".cache/8cf4a580-bfb6-4090-a899-f734ffe62370.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c89c712baef341d9a830346db7f67f4a0d7ef4c92812c50a451cc2301e2153df",
+      "bytes": 23356,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5897f13a-d5f6-404c-ba62-9ab5f9e0f74c.jpg",
+    "fetchedAt": "2026-10-02T22:45:32.438833+00:00",
+    "sha256": "8d80a30b5f4f89fc10bf6ea36ce64d497e2780498b8a9701220e07f898a6f584",
+    "bytes": 132806,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

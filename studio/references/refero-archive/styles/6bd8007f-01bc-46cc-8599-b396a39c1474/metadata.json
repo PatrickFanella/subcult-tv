@@ -1,0 +1,29 @@
+{
+  "styleId": "6bd8007f-01bc-46cc-8599-b396a39c1474",
+  "sourceUrl": "https://styles.refero.design/style/6bd8007f-01bc-46cc-8599-b396a39c1474",
+  "fetchedAt": "2026-10-02T22:28:46.243237+00:00",
+  "extractedAt": "2026-10-02T22:28:46.266757+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Unicorn Studio — Style Reference",
+  "htmlSha256": "eee50381acb4917333629b84f046f7f8cdef7cc4fadb96cecf2125eada436485",
+  "cache": ".cache/6bd8007f-01bc-46cc-8599-b396a39c1474.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "13d25c73b49c9def2c4d6a302bf7381be0ccb9ff854a694566ad7a913660993e",
+      "bytes": 21839,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c987911d-9569-4359-8337-144228c85a8f.jpg",
+    "fetchedAt": "2026-10-02T22:28:48.232659+00:00",
+    "sha256": "f5c0fd5cb6e2cdd12c663155b6cf754043cabe97d31de92acb6a8510102169b0",
+    "bytes": 96381,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

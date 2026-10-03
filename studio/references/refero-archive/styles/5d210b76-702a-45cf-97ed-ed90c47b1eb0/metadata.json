@@ -1,0 +1,29 @@
+{
+  "styleId": "5d210b76-702a-45cf-97ed-ed90c47b1eb0",
+  "sourceUrl": "https://styles.refero.design/style/5d210b76-702a-45cf-97ed-ed90c47b1eb0",
+  "fetchedAt": "2026-10-02T22:31:30.505331+00:00",
+  "extractedAt": "2026-10-02T22:31:30.529515+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Adnaut — Style Reference",
+  "htmlSha256": "bb322fb7a8259aafd57d1e9c97ef0fc2bb42668378a898ee63eaa5e0577e0658",
+  "cache": ".cache/5d210b76-702a-45cf-97ed-ed90c47b1eb0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af1da970325d3622719d5f55431bbc5173b7dee608a9caa7dbf2764d4f147436",
+      "bytes": 21186,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/02752f6d-0d1a-4466-8b5c-ff518df504f5.jpg",
+    "fetchedAt": "2026-10-02T22:31:32.145911+00:00",
+    "sha256": "ad8fbba98f5117cfab1605b1b6ea87ec112bb1a4a9cb0147b0298b159590d041",
+    "bytes": 69428,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

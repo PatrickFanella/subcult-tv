@@ -1,0 +1,29 @@
+{
+  "styleId": "76faeb42-b43d-4cc7-ac03-1e4bd74f04b7",
+  "sourceUrl": "https://styles.refero.design/style/76faeb42-b43d-4cc7-ac03-1e4bd74f04b7",
+  "fetchedAt": "2026-10-02T22:41:34.387787+00:00",
+  "extractedAt": "2026-10-02T22:41:34.409844+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Contract — Style Reference",
+  "htmlSha256": "9ce0358bb2ed6a9d554b383144accc8974883afe48b3d78c29492fa657db7f15",
+  "cache": ".cache/76faeb42-b43d-4cc7-ac03-1e4bd74f04b7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e2659b370047c41a2dffd53fec0a9c69f9468ec0d3df4fb712df85751231793e",
+      "bytes": 18753,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f15fbb5d-5861-4270-a26d-9e382a8858b5.jpg",
+    "fetchedAt": "2026-10-02T22:41:36.290065+00:00",
+    "sha256": "cfa54685be97df3df958c29f25cb2d92cc82dec8b417505122ec5cdc66fe3222",
+    "bytes": 209455,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

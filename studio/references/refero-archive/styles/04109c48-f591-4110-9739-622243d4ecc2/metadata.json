@@ -1,0 +1,29 @@
+{
+  "styleId": "04109c48-f591-4110-9739-622243d4ecc2",
+  "sourceUrl": "https://styles.refero.design/style/04109c48-f591-4110-9739-622243d4ecc2",
+  "fetchedAt": "2026-10-02T22:41:30.207124+00:00",
+  "extractedAt": "2026-10-02T22:41:30.229732+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Letters — Style Reference",
+  "htmlSha256": "1968c6020a4d20c84434a4cdc03884dbb4f3ffd70d48c6c8006448fa7dfe0744",
+  "cache": ".cache/04109c48-f591-4110-9739-622243d4ecc2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bef4428747261aedc02b4204068f76129bfb14f2c4cdd7efabed5bc47a52200c",
+      "bytes": 27273,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2632701f-7273-4819-b3cc-94a7db1493de.jpg",
+    "fetchedAt": "2026-10-02T22:41:32.174994+00:00",
+    "sha256": "d81d95b0b17a23aab4b1a742a150c7f748e5fd917c6a21128175f22ba82781c1",
+    "bytes": 65033,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "6607e4ff-2de6-4a6a-a7ed-53a9e4b550b9",
+  "sourceUrl": "https://styles.refero.design/style/6607e4ff-2de6-4a6a-a7ed-53a9e4b550b9",
+  "fetchedAt": "2026-10-02T22:20:18.204055+00:00",
+  "extractedAt": "2026-10-02T22:20:18.226326+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Analogue aF-1 — Style Reference",
+  "htmlSha256": "97bf0f1003fe3aaf322d92da8dc1e2c5336f229f5aebdacfdc1001eb8d837468",
+  "cache": ".cache/6607e4ff-2de6-4a6a-a7ed-53a9e4b550b9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8ada855ec18922a332e03f79a11679264eca23ed87a52e47072045fd3ab3d675",
+      "bytes": 22317,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/27f18510-6b05-48d6-90e4-893f9999871a.jpg",
+    "fetchedAt": "2026-10-02T22:20:20.211986+00:00",
+    "sha256": "d574d00e4f392e7d140ac1b6f2d4842a6a1cc9be78c95ef29aeae418bdf1fb92",
+    "bytes": 59138,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

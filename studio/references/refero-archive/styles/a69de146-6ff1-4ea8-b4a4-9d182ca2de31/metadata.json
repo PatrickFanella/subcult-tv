@@ -1,0 +1,29 @@
+{
+  "styleId": "a69de146-6ff1-4ea8-b4a4-9d182ca2de31",
+  "sourceUrl": "https://styles.refero.design/style/a69de146-6ff1-4ea8-b4a4-9d182ca2de31",
+  "fetchedAt": "2026-10-02T22:05:50.225713+00:00",
+  "extractedAt": "2026-10-02T22:05:50.250115+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "EVOKE — Style Reference",
+  "htmlSha256": "2b81a7c3222ef1bc9f95a93a9b3f4af11a69ffcfe5a5d1ee1ff800ca972d3b89",
+  "cache": ".cache/a69de146-6ff1-4ea8-b4a4-9d182ca2de31.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3f31d6a5862d64c582196ca89fccad62c6f1fb44d33b48ac584e850575d2cfd9",
+      "bytes": 7905,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2a3edbc1-ad90-4bec-aec7-6da2e9f2f62b.jpg",
+    "fetchedAt": "2026-10-02T22:05:52.260739+00:00",
+    "sha256": "9c98f40eef9b3dea1b76d7559aeb2e20e73e06a5c9571eeb7222cc342c5f4d62",
+    "bytes": 135533,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

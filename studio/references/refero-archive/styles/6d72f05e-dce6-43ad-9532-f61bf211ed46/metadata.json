@@ -1,0 +1,29 @@
+{
+  "styleId": "6d72f05e-dce6-43ad-9532-f61bf211ed46",
+  "sourceUrl": "https://styles.refero.design/style/6d72f05e-dce6-43ad-9532-f61bf211ed46",
+  "fetchedAt": "2026-10-02T22:21:38.200071+00:00",
+  "extractedAt": "2026-10-02T22:21:38.222767+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dollar Shave Club — Style Reference",
+  "htmlSha256": "4f97bb78417cf24d68c12c45f86f7d0d7f57ed7a1989fa85a01284bb7ed8bee5",
+  "cache": ".cache/6d72f05e-dce6-43ad-9532-f61bf211ed46.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ad0e28f240d310b403115d91ac3e35050a410f10546b8dfc3dfd835b55f037d8",
+      "bytes": 20801,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3aef4e42-e5b7-4829-8155-a4891a989f1c.jpg",
+    "fetchedAt": "2026-10-02T22:21:40.278018+00:00",
+    "sha256": "416ca3356c3b790d0046abe6681166af99f432191c41d313b296060d92ec347e",
+    "bytes": 167817,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

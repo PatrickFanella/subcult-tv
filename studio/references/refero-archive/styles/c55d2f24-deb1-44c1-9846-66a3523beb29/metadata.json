@@ -1,0 +1,29 @@
+{
+  "styleId": "c55d2f24-deb1-44c1-9846-66a3523beb29",
+  "sourceUrl": "https://styles.refero.design/style/c55d2f24-deb1-44c1-9846-66a3523beb29",
+  "fetchedAt": "2026-10-02T22:12:38.273203+00:00",
+  "extractedAt": "2026-10-02T22:12:38.305753+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Codex.io — Style Reference",
+  "htmlSha256": "c6cb7371eecd6e7810ef64727044821235d9b721bbee1a538c7f35c84492f2ac",
+  "cache": ".cache/c55d2f24-deb1-44c1-9846-66a3523beb29.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "64e384ccc376afab15bfbbb1b00c5835f80a29f9323b987556fea7497e9541d4",
+      "bytes": 20905,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/13666a83-0413-402b-88d5-91d988565077.jpg",
+    "fetchedAt": "2026-10-02T22:12:40.280231+00:00",
+    "sha256": "8389e1ec3ef850a5268a89993ecba32a0bd97dff2b74d5918102d8907beb994e",
+    "bytes": 112982,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

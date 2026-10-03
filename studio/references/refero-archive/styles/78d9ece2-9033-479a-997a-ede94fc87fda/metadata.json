@@ -1,0 +1,29 @@
+{
+  "styleId": "78d9ece2-9033-479a-997a-ede94fc87fda",
+  "sourceUrl": "https://styles.refero.design/style/78d9ece2-9033-479a-997a-ede94fc87fda",
+  "fetchedAt": "2026-10-02T22:42:34.290163+00:00",
+  "extractedAt": "2026-10-02T22:42:34.313396+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Privy — Style Reference",
+  "htmlSha256": "78d9cd2780b32a9a4ad788faf820d66b81be0bc961e7deaf3c6d15824053b76d",
+  "cache": ".cache/78d9ece2-9033-479a-997a-ede94fc87fda.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7cbc49b0676a317e58d8134266aa890767334b3272046db2c2f29fa800996dc4",
+      "bytes": 22523,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/76098841-800b-4c31-bc30-e985871adc2c.jpg",
+    "fetchedAt": "2026-10-02T22:42:36.256810+00:00",
+    "sha256": "7d3e3b59ca65259a874211e5140ae117355473e9ca6f67ab2aee29b6bf003c98",
+    "bytes": 164257,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

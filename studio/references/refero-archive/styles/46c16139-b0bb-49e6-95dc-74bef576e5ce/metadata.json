@@ -1,0 +1,29 @@
+{
+  "styleId": "46c16139-b0bb-49e6-95dc-74bef576e5ce",
+  "sourceUrl": "https://styles.refero.design/style/46c16139-b0bb-49e6-95dc-74bef576e5ce",
+  "fetchedAt": "2026-10-02T22:52:58.255520+00:00",
+  "extractedAt": "2026-10-02T22:52:58.289221+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Enviar Dinero — Style Reference",
+  "htmlSha256": "b1110001b478e90aa027b1631302911cf03ab1a3c02810adb80837f29e074dbb",
+  "cache": ".cache/46c16139-b0bb-49e6-95dc-74bef576e5ce.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "30fe3fd1e213133e4671509fdfb0ae492ce0cbcc8905663996716b839502490d",
+      "bytes": 21349,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4eb4c694-2aaf-4e7c-9b82-a2dbee4202a6.jpg",
+    "fetchedAt": "2026-10-02T22:53:00.270480+00:00",
+    "sha256": "aa2105ae7f99aaed19f4cd60eeabaab4d056c1de9efe9caf6375ad471378c312",
+    "bytes": 97439,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

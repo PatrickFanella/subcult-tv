@@ -1,0 +1,29 @@
+{
+  "styleId": "eddfa579-89f1-467d-a486-99a56be36c30",
+  "sourceUrl": "https://styles.refero.design/style/eddfa579-89f1-467d-a486-99a56be36c30",
+  "fetchedAt": "2026-10-02T22:24:50.294557+00:00",
+  "extractedAt": "2026-10-02T22:24:50.327395+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ExpressVPN — Style Reference",
+  "htmlSha256": "2657d2a149e17581ea36645fa522466259acae06f3e4b992c4f8c964574ea7e6",
+  "cache": ".cache/eddfa579-89f1-467d-a486-99a56be36c30.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0c3d40ba755f6f27bfb24499498f023675ab45fd3547443c04832d4723d782fb",
+      "bytes": 23164,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f13b7448-b464-423c-a608-d1cf7e970865.jpg",
+    "fetchedAt": "2026-10-02T22:24:52.220284+00:00",
+    "sha256": "77b03c5924246502f7024721fad0c0029986674c2eaec9fd5dba617bb864b716",
+    "bytes": 124493,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

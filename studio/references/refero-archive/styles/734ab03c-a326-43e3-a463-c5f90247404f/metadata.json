@@ -1,0 +1,29 @@
+{
+  "styleId": "734ab03c-a326-43e3-a463-c5f90247404f",
+  "sourceUrl": "https://styles.refero.design/style/734ab03c-a326-43e3-a463-c5f90247404f",
+  "fetchedAt": "2026-10-02T22:45:46.474663+00:00",
+  "extractedAt": "2026-10-02T22:45:46.550150+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dopper — Style Reference",
+  "htmlSha256": "280fc4f7a06c27de67561c10810bcb9ebe43393db04b3363cce6bb6015c56437",
+  "cache": ".cache/734ab03c-a326-43e3-a463-c5f90247404f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "105cb6690767091c865b5998314048af1d729158148241a38698bf49e15ee4f6",
+      "bytes": 19455,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/abe99ae5-c7e3-4b1d-ab71-8d6061b4cdf3.jpg",
+    "fetchedAt": "2026-10-02T22:45:48.167001+00:00",
+    "sha256": "3f2b7e87e7bcf24b243e39c1e847a1154527834817972bc3762ceeeaa1d2f084",
+    "bytes": 39922,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

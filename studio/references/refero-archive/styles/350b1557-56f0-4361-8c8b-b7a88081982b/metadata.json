@@ -1,0 +1,29 @@
+{
+  "styleId": "350b1557-56f0-4361-8c8b-b7a88081982b",
+  "sourceUrl": "https://styles.refero.design/style/350b1557-56f0-4361-8c8b-b7a88081982b",
+  "fetchedAt": "2026-10-02T22:44:26.483049+00:00",
+  "extractedAt": "2026-10-02T22:44:26.505733+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "beehiiv — Style Reference",
+  "htmlSha256": "bcba3eb01347c95635a64902685a980a24420cd16f1af7f59e7afaaf0382562f",
+  "cache": ".cache/350b1557-56f0-4361-8c8b-b7a88081982b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d7565dbf0e96fcfe6b1238e02155c88f9c2d35b177012030f1955438e6a0ebe4",
+      "bytes": 20714,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d40e20b7-ddc8-4ed7-9448-29d75cbafe95.jpg",
+    "fetchedAt": "2026-10-02T22:44:28.301592+00:00",
+    "sha256": "c38b0d3ca646b9e87af3256435ebc304c0c1ba14e13f63fce7458a9f036e2266",
+    "bytes": 118236,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

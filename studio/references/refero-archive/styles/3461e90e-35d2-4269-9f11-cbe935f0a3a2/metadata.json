@@ -1,0 +1,29 @@
+{
+  "styleId": "3461e90e-35d2-4269-9f11-cbe935f0a3a2",
+  "sourceUrl": "https://styles.refero.design/style/3461e90e-35d2-4269-9f11-cbe935f0a3a2",
+  "fetchedAt": "2026-10-02T22:06:34.171749+00:00",
+  "extractedAt": "2026-10-02T22:06:34.194184+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Going™ — Style Reference",
+  "htmlSha256": "9e8477f7b4167198c779ba1819e76d9495d018a4d0f91fa3aab7e3b32d2e596e",
+  "cache": ".cache/3461e90e-35d2-4269-9f11-cbe935f0a3a2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a40f1788c409d5e4dd2a2428b5975bf194a464209c4efd08b06167f4f7dfd3a3",
+      "bytes": 18602,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ea42f0f6-2767-4f45-99e3-93f4f248a848.jpg",
+    "fetchedAt": "2026-10-02T22:06:36.419591+00:00",
+    "sha256": "d9644a350cf12f67a5172208fecd028ec4acf2cd1bd4f93d175cce33d9be3d3b",
+    "bytes": 98761,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

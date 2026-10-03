@@ -12,7 +12,7 @@ export default function Home() {
       <SEOHead path="/" />
       <section className="showcase-hero">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <img src="/brand/subcult/master.svg" alt="" className="subcult-hero-mark" />
+          <img src="/brand/subcult/master.svg?v=logo-bcd-20261003" alt="" className="subcult-hero-mark" />
           <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-20 items-end">
             <div>
               <p className="showcase-eyebrow">SUBCULTURE COLLECTIVE / INDEPENDENT SOFTWARE</p>

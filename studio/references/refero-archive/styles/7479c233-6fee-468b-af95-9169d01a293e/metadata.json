@@ -1,0 +1,29 @@
+{
+  "styleId": "7479c233-6fee-468b-af95-9169d01a293e",
+  "sourceUrl": "https://styles.refero.design/style/7479c233-6fee-468b-af95-9169d01a293e",
+  "fetchedAt": "2026-10-02T22:26:18.191540+00:00",
+  "extractedAt": "2026-10-02T22:26:18.223963+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Modern Business Intelligence — Style Reference",
+  "htmlSha256": "3e6a47c61fe9cee04973a7cc44e844e92b0aac9a0e15eda416369bf7cf6c23f2",
+  "cache": ".cache/7479c233-6fee-468b-af95-9169d01a293e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4c1da9ad2e5178d95acfc4aec8effcd5b5fb639f0d923e6f005ab669bec9ea62",
+      "bytes": 20439,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e3e35b7b-2943-412f-a741-87c7fc498e14.jpg",
+    "fetchedAt": "2026-10-02T22:26:20.220974+00:00",
+    "sha256": "9ce9cc9dd155bc2b5e8ce36cf37f33458f921ddd24909680667d58f6cea19653",
+    "bytes": 151761,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

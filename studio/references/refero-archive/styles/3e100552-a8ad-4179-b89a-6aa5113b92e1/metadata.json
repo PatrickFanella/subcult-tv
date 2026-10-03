@@ -1,0 +1,29 @@
+{
+  "styleId": "3e100552-a8ad-4179-b89a-6aa5113b92e1",
+  "sourceUrl": "https://styles.refero.design/style/3e100552-a8ad-4179-b89a-6aa5113b92e1",
+  "fetchedAt": "2026-10-02T22:03:02.267629+00:00",
+  "extractedAt": "2026-10-02T22:03:02.294452+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "HubSpot — Style Reference",
+  "htmlSha256": "044f9386708c6b9a03f32ad3206e1c650843553a8ef33f6012e0d34dbfd92806",
+  "cache": ".cache/3e100552-a8ad-4179-b89a-6aa5113b92e1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ff28651e112a49872d357fb32f8c724fbc0bfd7c24206d4c9f0c85da222f0a0c",
+      "bytes": 23528,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/69f38652-e3f4-4163-9eb1-0f21e5c2f89b.jpg",
+    "fetchedAt": "2026-10-02T22:03:04.217691+00:00",
+    "sha256": "e97c8723b27255e9c54ad19f1ef622eb2d81caa412249b1efc747eee3283b92d",
+    "bytes": 118698,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

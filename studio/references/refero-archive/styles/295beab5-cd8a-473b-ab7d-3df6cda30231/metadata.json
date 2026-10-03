@@ -1,0 +1,29 @@
+{
+  "styleId": "295beab5-cd8a-473b-ab7d-3df6cda30231",
+  "sourceUrl": "https://styles.refero.design/style/295beab5-cd8a-473b-ab7d-3df6cda30231",
+  "fetchedAt": "2026-10-02T22:34:46.394224+00:00",
+  "extractedAt": "2026-10-02T22:34:46.414859+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "CHRISTOPHER IRELAND CREATIVE — Style Reference",
+  "htmlSha256": "c74f3b957b8169486c255f57b16d3e5d0c568fc5f86893a14f5e48ac517430f6",
+  "cache": ".cache/295beab5-cd8a-473b-ab7d-3df6cda30231.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1ba41067c00096e1e8528aacc4133108a6eedc0863e4cb096af101e110483d0c",
+      "bytes": 14619,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e8353f1a-669b-42bd-93ad-6a424a646cad.jpg",
+    "fetchedAt": "2026-10-02T22:34:48.281767+00:00",
+    "sha256": "7a47740ea80870439fa6e03ca466c2293a126d8c00a813354ce363260e466788",
+    "bytes": 91887,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

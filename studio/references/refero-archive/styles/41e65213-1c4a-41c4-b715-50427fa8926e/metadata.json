@@ -1,0 +1,29 @@
+{
+  "styleId": "41e65213-1c4a-41c4-b715-50427fa8926e",
+  "sourceUrl": "https://styles.refero.design/style/41e65213-1c4a-41c4-b715-50427fa8926e",
+  "fetchedAt": "2026-10-02T22:01:50.239839+00:00",
+  "extractedAt": "2026-10-02T22:01:50.273163+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Free Resume Builder — Style Reference",
+  "htmlSha256": "8570c7ea4e71ac602d5fe4e8759a6c669c1b13278b0f2e600476320610b82423",
+  "cache": ".cache/41e65213-1c4a-41c4-b715-50427fa8926e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "db40d4037665afb1f767097f971a5f0256330d231ee0540d3991464582ad463d",
+      "bytes": 20372,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3b417714-de83-41c8-bc4d-2029dc317737.jpg",
+    "fetchedAt": "2026-10-02T22:01:52.321278+00:00",
+    "sha256": "42014e4bfe722918c7dd8993ea16a51b0545509024cfc188d63fa959d203d9f5",
+    "bytes": 100214,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

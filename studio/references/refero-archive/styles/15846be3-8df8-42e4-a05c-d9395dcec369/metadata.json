@@ -1,0 +1,29 @@
+{
+  "styleId": "15846be3-8df8-42e4-a05c-d9395dcec369",
+  "sourceUrl": "https://styles.refero.design/style/15846be3-8df8-42e4-a05c-d9395dcec369",
+  "fetchedAt": "2026-10-02T22:44:34.194692+00:00",
+  "extractedAt": "2026-10-02T22:44:34.217531+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Arva — Style Reference",
+  "htmlSha256": "4a76fe32c1ecdf48918f52f17a3612b98bc15ac2ee0552e269aab7a503a3e043",
+  "cache": ".cache/15846be3-8df8-42e4-a05c-d9395dcec369.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5b9a191d5f201a57095fb83b01a97895de374d89d56746bd46a2130dfe239e2d",
+      "bytes": 24262,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/49974cde-c407-4c34-906a-b78fe5b36120.jpg",
+    "fetchedAt": "2026-10-02T22:44:36.340460+00:00",
+    "sha256": "82d11a0d33695fb57b14cfb9a41bb3b1317599e1ed72e0131d6981cf1c248f13",
+    "bytes": 299829,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "fa157687-ee42-443e-a992-5f8a3fcdd48f",
+  "sourceUrl": "https://styles.refero.design/style/fa157687-ee42-443e-a992-5f8a3fcdd48f",
+  "fetchedAt": "2026-10-02T22:39:02.167035+00:00",
+  "extractedAt": "2026-10-02T22:39:02.187743+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ssense — Style Reference",
+  "htmlSha256": "241ccd937d5d9670e5e9feaed1a86b08562eb71c3f27d131b01dcc38b58433f7",
+  "cache": ".cache/fa157687-ee42-443e-a992-5f8a3fcdd48f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9acea1b9dea6f5a119c0ebffd4776be102e10b26c90b2817c769d41cf560539e",
+      "bytes": 21070,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7b109301-9595-4763-a3ce-af959db6a4e3.jpg",
+    "fetchedAt": "2026-10-02T22:39:04.277340+00:00",
+    "sha256": "bd7c8bc73db217996f1432b4608bb718302830dec35c5ae97544e7d21dda4dcf",
+    "bytes": 156480,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

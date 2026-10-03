@@ -1,0 +1,29 @@
+{
+  "styleId": "1f0cc2ef-9de0-4cbb-909f-ca120ef6d0ae",
+  "sourceUrl": "https://styles.refero.design/style/1f0cc2ef-9de0-4cbb-909f-ca120ef6d0ae",
+  "fetchedAt": "2026-10-02T22:37:58.360854+00:00",
+  "extractedAt": "2026-10-02T22:37:58.381656+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Phantom Studios — Style Reference",
+  "htmlSha256": "570a45bb2471043ad39e27c3196c2cf989fa4d7a3b4590e7c9b9b2eb77107495",
+  "cache": ".cache/1f0cc2ef-9de0-4cbb-909f-ca120ef6d0ae.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cf54776e7f488d6ec8f2e0fcbf575c883644622200a1c15b23a79d38309d04b2",
+      "bytes": 15644,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2808cb1a-7c37-4c8f-a0ee-d7707d7ff437.jpg",
+    "fetchedAt": "2026-10-02T22:38:00.137258+00:00",
+    "sha256": "8e2187dd7d42a8f0428adaa8cd1f1c4dfe3973576f3752dd467fc037e8fed444",
+    "bytes": 16895,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

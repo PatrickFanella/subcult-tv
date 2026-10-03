@@ -1,0 +1,29 @@
+{
+  "styleId": "caca412f-7fc7-4510-aacc-5664d4f8ce9f",
+  "sourceUrl": "https://styles.refero.design/style/caca412f-7fc7-4510-aacc-5664d4f8ce9f",
+  "fetchedAt": "2026-10-02T22:08:22.165863+00:00",
+  "extractedAt": "2026-10-02T22:08:22.191979+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Flowmapp — Style Reference",
+  "htmlSha256": "dedf9e67eea2253468b19712defa5b812b6d6144a6cff0ac44a8162edc598ef6",
+  "cache": ".cache/caca412f-7fc7-4510-aacc-5664d4f8ce9f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8f2b2e0dd958fc3e19ce6947511bcbc6c63620220efbc779632b93e604402063",
+      "bytes": 21074,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5cc53462-d320-432f-9b34-50d541426d72.jpg",
+    "fetchedAt": "2026-10-02T22:08:24.329794+00:00",
+    "sha256": "1da8ee45cee8a78f0433e7fc6dc3e659c2ecd9fce41eab7af9b43ba91dc15113",
+    "bytes": 98744,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "9483a10e-e098-4f94-ae22-ab5a63702243",
+  "sourceUrl": "https://styles.refero.design/style/9483a10e-e098-4f94-ae22-ab5a63702243",
+  "fetchedAt": "2026-10-02T22:38:30.253107+00:00",
+  "extractedAt": "2026-10-02T22:38:30.273986+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Yllw — Style Reference",
+  "htmlSha256": "11e5df6eb0349d628cf038632682d7f737de1b6fcfa0efb7bcf7087ab7578021",
+  "cache": ".cache/9483a10e-e098-4f94-ae22-ab5a63702243.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c9c3729883980f53259d1c37f5b53ab31eb64ecf579f89ab02ab6f4688b82c17",
+      "bytes": 22296,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1a11b293-db70-46d1-a3b1-75b6f8c1ea01.jpg",
+    "fetchedAt": "2026-10-02T22:38:32.319744+00:00",
+    "sha256": "10135609b7e8cdfcfc9a0b97923a06f16a3d19a81d0404822b8fde16ba1468a9",
+    "bytes": 112387,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

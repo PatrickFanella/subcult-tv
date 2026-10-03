@@ -1,0 +1,2 @@
+:root[data-theme="subcult-studio"] #navbar-logo img { content: url("../subcult-studio/mark-dark.svg?v=contrast-20261003"); }
+:root[data-theme="subcult-studio"] .home > div:first-child .logo { content: url("../subcult-studio/mark-primary.svg?v=logo-bcd-20261003"); }

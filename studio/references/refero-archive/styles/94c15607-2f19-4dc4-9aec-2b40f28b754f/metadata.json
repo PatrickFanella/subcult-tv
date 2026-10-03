@@ -1,0 +1,29 @@
+{
+  "styleId": "94c15607-2f19-4dc4-9aec-2b40f28b754f",
+  "sourceUrl": "https://styles.refero.design/style/94c15607-2f19-4dc4-9aec-2b40f28b754f",
+  "fetchedAt": "2026-10-02T22:05:34.266128+00:00",
+  "extractedAt": "2026-10-02T22:05:34.296869+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Minimal Collective — Style Reference",
+  "htmlSha256": "9b491cd26056a0043d67e408d7d3f8301a9f5624a9cbba97bf1fd2b84b4e575a",
+  "cache": ".cache/94c15607-2f19-4dc4-9aec-2b40f28b754f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9b968cd86338dd7b796fb1945db9efbb2a3be48f94eff3b32bab0568d4058105",
+      "bytes": 13445,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f51ae902-54da-4dab-b1d0-8e5a5259944e.jpg",
+    "fetchedAt": "2026-10-02T22:05:36.285586+00:00",
+    "sha256": "5657e5737909e5a28f47ae3654c308a0b7216c7946a06cf9702b21841487266a",
+    "bytes": 89669,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

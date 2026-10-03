@@ -1,0 +1,29 @@
+{
+  "styleId": "f68dd3d8-e8fa-4d2c-8c59-28aba06c9d8a",
+  "sourceUrl": "https://styles.refero.design/style/f68dd3d8-e8fa-4d2c-8c59-28aba06c9d8a",
+  "fetchedAt": "2026-10-02T22:32:54.709864+00:00",
+  "extractedAt": "2026-10-02T22:32:54.732676+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Analogue — Style Reference",
+  "htmlSha256": "56bb0a4aea18ad0541fe02eb617dda89ee2b546e72020796849498d3d106ba59",
+  "cache": ".cache/f68dd3d8-e8fa-4d2c-8c59-28aba06c9d8a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4a8332fc9cf6e6ce29c2f126257a8f3d5d82beeba915c24957e868a400c82c0b",
+      "bytes": 20063,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/691d5eb4-e903-43d3-94f9-d54e377b8dd0.jpg",
+    "fetchedAt": "2026-10-02T22:32:56.313653+00:00",
+    "sha256": "a3e75a28ce90aae6c28875b2e877251290afc354b258d36f4a3c4bafcc346a61",
+    "bytes": 164108,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

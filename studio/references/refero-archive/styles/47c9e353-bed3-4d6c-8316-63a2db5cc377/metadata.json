@@ -1,0 +1,29 @@
+{
+  "styleId": "47c9e353-bed3-4d6c-8316-63a2db5cc377",
+  "sourceUrl": "https://styles.refero.design/style/47c9e353-bed3-4d6c-8316-63a2db5cc377",
+  "fetchedAt": "2026-10-02T22:45:10.269366+00:00",
+  "extractedAt": "2026-10-02T22:45:10.292635+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Craftwork — Style Reference",
+  "htmlSha256": "c7bca71b1c529c676c12bf7104526f3699a903045613cbe4a5a3374550e6d148",
+  "cache": ".cache/47c9e353-bed3-4d6c-8316-63a2db5cc377.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e54782447681cd06d3bb6abdc050550cda02b355bddb74f7c9e1a4f595b1ebab",
+      "bytes": 24030,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/62ecea31-d221-4847-9880-c9b2ad275276.jpg",
+    "fetchedAt": "2026-10-02T22:45:12.254541+00:00",
+    "sha256": "218485f19ce82c328e657a06e231836e3b8d936696b7ef614b1d34020c74bc43",
+    "bytes": 133609,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "d577e44e-bc63-4cbe-b759-25262d089b95",
+  "sourceUrl": "https://styles.refero.design/style/d577e44e-bc63-4cbe-b759-25262d089b95",
+  "fetchedAt": "2026-10-02T22:06:26.186914+00:00",
+  "extractedAt": "2026-10-02T22:06:26.215075+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Healthy Together — Style Reference",
+  "htmlSha256": "36ce2bd32efd4f721b5e66c61fa2c8defde2860bf55b677dd87f52ebae73da62",
+  "cache": ".cache/d577e44e-bc63-4cbe-b759-25262d089b95.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bd10527bdcf435e6de2fb0a79ae8e51f2424f7d46e4c8afd0c49f07d59c5a664",
+      "bytes": 18392,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/eeae5ee8-9007-4c3b-bac4-f4d04ebdd928.jpg",
+    "fetchedAt": "2026-10-02T22:06:28.213072+00:00",
+    "sha256": "35f1e62e0f705cf6f27ccf35419f68f9953874431e69b4321662ff31ac279f07",
+    "bytes": 102296,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

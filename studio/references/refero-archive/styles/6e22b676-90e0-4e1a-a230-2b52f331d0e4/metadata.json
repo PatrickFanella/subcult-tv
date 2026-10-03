@@ -1,0 +1,29 @@
+{
+  "styleId": "6e22b676-90e0-4e1a-a230-2b52f331d0e4",
+  "sourceUrl": "https://styles.refero.design/style/6e22b676-90e0-4e1a-a230-2b52f331d0e4",
+  "fetchedAt": "2026-10-02T22:20:30.199566+00:00",
+  "extractedAt": "2026-10-02T22:20:30.221027+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "iconwerk — Style Reference",
+  "htmlSha256": "5b39bde258a359e37b91086994f6516ed8674183997412b64354fadb72d2d814",
+  "cache": ".cache/6e22b676-90e0-4e1a-a230-2b52f331d0e4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9c346a2e90a06d73ce30891093198a29188597ca383170c0f39bb94f5dea8699",
+      "bytes": 16518,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0d08f781-614e-42df-92c2-cb237120f448.jpg",
+    "fetchedAt": "2026-10-02T22:20:32.265543+00:00",
+    "sha256": "9c9c2668f9f017f328db5af5c34eceb80bdda5d4294a91f86e32d9eba4c53e12",
+    "bytes": 95975,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

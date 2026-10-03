@@ -1,0 +1,29 @@
+{
+  "styleId": "e6b53c1e-644b-4300-b42f-0e64905d1443",
+  "sourceUrl": "https://styles.refero.design/style/e6b53c1e-644b-4300-b42f-0e64905d1443",
+  "fetchedAt": "2026-10-02T22:01:10.314331+00:00",
+  "extractedAt": "2026-10-02T22:01:10.362225+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Relief — Style Reference",
+  "htmlSha256": "2bbf06956765a64f44c175770bc17bdf6e16427a5ca026e4108aafb9ced440f8",
+  "cache": ".cache/e6b53c1e-644b-4300-b42f-0e64905d1443.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2bd6698fecdab83d1022b33b4890833c171fde3458ba23eccc9189bfeb4f6e10",
+      "bytes": 21918,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f08ab573-3f4d-43ba-88d8-d42b10bd8c6c.jpg",
+    "fetchedAt": "2026-10-02T22:01:12.142049+00:00",
+    "sha256": "e9471f5e602c21d8e96e5163e9bc1761515ea5f5ad047bd786e19d258ca38d38",
+    "bytes": 63686,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

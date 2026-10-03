@@ -1,0 +1,29 @@
+{
+  "styleId": "7671d0fc-b9fc-462e-9c74-38511264aabd",
+  "sourceUrl": "https://styles.refero.design/style/7671d0fc-b9fc-462e-9c74-38511264aabd",
+  "fetchedAt": "2026-10-02T22:14:02.174960+00:00",
+  "extractedAt": "2026-10-02T22:14:02.201236+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Nile Postgres — Style Reference",
+  "htmlSha256": "7d1f1e978e8103e08f15e991d0f262b818dd5f045fd9d101715de805e23ecda4",
+  "cache": ".cache/7671d0fc-b9fc-462e-9c74-38511264aabd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "dab77b8d4d2c760360b1bc2c83860496123e20c0c2a6034a77352c4d872c41ef",
+      "bytes": 22025,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5ceb9684-a7df-44f4-baf9-e609d9fc00db.jpg",
+    "fetchedAt": "2026-10-02T22:14:04.255691+00:00",
+    "sha256": "ec200ae013a0e2f478b954f8041aa8e64ec8a11850b24a60617a689a4725d280",
+    "bytes": 86747,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

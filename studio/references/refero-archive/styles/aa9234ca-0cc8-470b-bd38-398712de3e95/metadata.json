@@ -1,0 +1,29 @@
+{
+  "styleId": "aa9234ca-0cc8-470b-bd38-398712de3e95",
+  "sourceUrl": "https://styles.refero.design/style/aa9234ca-0cc8-470b-bd38-398712de3e95",
+  "fetchedAt": "2026-10-02T22:32:11.270102+00:00",
+  "extractedAt": "2026-10-02T22:32:11.294098+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bluesky Social — Style Reference",
+  "htmlSha256": "6c31eed69bf7e4f4c6b3d19102cd1384e0dc9eeb1e223c61706acaf5a337a0c7",
+  "cache": ".cache/aa9234ca-0cc8-470b-bd38-398712de3e95.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5a9126174f6c88da70bb6ee4908496260f917310fdec3197275deec1c731aaee",
+      "bytes": 16724,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bf430eb1-f6d7-4323-b961-f8ce2ddac230.jpg",
+    "fetchedAt": "2026-10-02T22:32:12.251291+00:00",
+    "sha256": "d329cdd40baf6320ab4541a5f012500bcc8e6d7b837a68dd8d46d9aeb72cca52",
+    "bytes": 119534,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

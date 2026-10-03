@@ -1,0 +1,29 @@
+{
+  "styleId": "eb3bf6c1-a18f-4d72-801e-50c2cdbbaa21",
+  "sourceUrl": "https://styles.refero.design/style/eb3bf6c1-a18f-4d72-801e-50c2cdbbaa21",
+  "fetchedAt": "2026-10-02T22:35:06.219758+00:00",
+  "extractedAt": "2026-10-02T22:35:06.241378+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Arsenijs Fabrica — Style Reference",
+  "htmlSha256": "1b7c5918346eebf07742f9d3b95506926622c55f96c0fd9528f45a52333ed369",
+  "cache": ".cache/eb3bf6c1-a18f-4d72-801e-50c2cdbbaa21.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f56733fe70d680bab2bbaa1178bbd7ebd2c1e14682b98a9375750b2c14a76b96",
+      "bytes": 22440,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fb25f408-b96f-49c1-a32d-e94608a9a693.jpg",
+    "fetchedAt": "2026-10-02T22:35:08.368343+00:00",
+    "sha256": "d0266e934f05e244410d195c2ec40e44ee046a3d7d04c53c7254d85a945ade2c",
+    "bytes": 127959,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

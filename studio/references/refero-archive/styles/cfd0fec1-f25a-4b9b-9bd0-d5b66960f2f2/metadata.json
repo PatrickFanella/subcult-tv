@@ -1,0 +1,29 @@
+{
+  "styleId": "cfd0fec1-f25a-4b9b-9bd0-d5b66960f2f2",
+  "sourceUrl": "https://styles.refero.design/style/cfd0fec1-f25a-4b9b-9bd0-d5b66960f2f2",
+  "fetchedAt": "2026-10-02T22:03:10.190173+00:00",
+  "extractedAt": "2026-10-02T22:03:10.212530+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Superr — Style Reference",
+  "htmlSha256": "ddbcfa9201e034d839e3ea9b3145a997b1568114ebb060e9c888b1ecc42f49e1",
+  "cache": ".cache/cfd0fec1-f25a-4b9b-9bd0-d5b66960f2f2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b513ac14cc8830e7bf71c73cd1b71bdec040c757b3e991a9e956427d9d9c31f7",
+      "bytes": 20565,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9ce110ba-b4d4-498e-9ef1-26b6aac4d233.jpg",
+    "fetchedAt": "2026-10-02T22:03:12.175655+00:00",
+    "sha256": "37246651ed7f32dc45decfb12b5197dba5829d7aece173b30f24e497a74fda45",
+    "bytes": 66629,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "bb94375b-cf09-47d4-a2e3-7b332b2c9216",
+  "sourceUrl": "https://styles.refero.design/style/bb94375b-cf09-47d4-a2e3-7b332b2c9216",
+  "fetchedAt": "2026-10-02T22:31:22.180504+00:00",
+  "extractedAt": "2026-10-02T22:31:22.202412+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Patreon — Style Reference",
+  "htmlSha256": "f30f72b92405e00959c7fdf747d347565ad1f9618eaf4dd411046c0cbc3a9ed2",
+  "cache": ".cache/bb94375b-cf09-47d4-a2e3-7b332b2c9216.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5cee8a2fe5436fa4527529db986aba58fa1ac266fb252f4b69465b2db41392e1",
+      "bytes": 20293,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/34795c82-132a-4ded-9c82-16e2fe5220ab.jpg",
+    "fetchedAt": "2026-10-02T22:31:24.319355+00:00",
+    "sha256": "8101a521a14262810db8e973dfd814120426a74b7f4e6ee24ddcd7771b233c8e",
+    "bytes": 154524,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

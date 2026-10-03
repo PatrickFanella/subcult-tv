@@ -1,0 +1,29 @@
+{
+  "styleId": "7510b18e-63c3-4c2a-97c3-39fa7dfa6ae3",
+  "sourceUrl": "https://styles.refero.design/style/7510b18e-63c3-4c2a-97c3-39fa7dfa6ae3",
+  "fetchedAt": "2026-10-02T22:42:54.277802+00:00",
+  "extractedAt": "2026-10-02T22:42:54.300246+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Neuralink — Style Reference",
+  "htmlSha256": "74401b9cb9b1bf4d1c91c4c979966b834c6d6f3654f4c3202eed934d3ca9effb",
+  "cache": ".cache/7510b18e-63c3-4c2a-97c3-39fa7dfa6ae3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "709fbeaf75e572fbbcb087dc81f652f324d0a01d4b13d729b333017d8ebc20ad",
+      "bytes": 19557,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a7623035-bdbc-43f3-aa43-5cc9a9649448.jpg",
+    "fetchedAt": "2026-10-02T22:42:56.284452+00:00",
+    "sha256": "5901dff9189fe52b938bb1b4f5cc7ce34afb32fd5c40fd2f67126d8edbe9475d",
+    "bytes": 171892,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "c01ccb7b-46c9-487c-8a4e-0e9d6627f0d6",
+  "sourceUrl": "https://styles.refero.design/style/c01ccb7b-46c9-487c-8a4e-0e9d6627f0d6",
+  "fetchedAt": "2026-10-02T22:16:46.233444+00:00",
+  "extractedAt": "2026-10-02T22:16:46.260807+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Shelby — Style Reference",
+  "htmlSha256": "7e01b76da1f42983c4883333ff3534fed4ff00007d480f4ed052b777862aca93",
+  "cache": ".cache/c01ccb7b-46c9-487c-8a4e-0e9d6627f0d6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c79d660b973de5c68e41a9ebf85a6612ee696a2dda93ad0c435bbf38cb6503ec",
+      "bytes": 19294,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b65d514d-7dd9-42c8-b957-d8cf06054720.jpg",
+    "fetchedAt": "2026-10-02T22:16:48.245690+00:00",
+    "sha256": "7f04404d944c1e4661f63917812394a97ca58586d5bc87ff7a29d17bb6e6cad0",
+    "bytes": 86242,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

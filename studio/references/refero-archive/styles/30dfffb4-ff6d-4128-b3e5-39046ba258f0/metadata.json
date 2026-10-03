@@ -1,0 +1,29 @@
+{
+  "styleId": "30dfffb4-ff6d-4128-b3e5-39046ba258f0",
+  "sourceUrl": "https://styles.refero.design/style/30dfffb4-ff6d-4128-b3e5-39046ba258f0",
+  "fetchedAt": "2026-10-02T22:02:26.557799+00:00",
+  "extractedAt": "2026-10-02T22:02:26.580501+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "robot.com — Style Reference",
+  "htmlSha256": "5f5b02b9ab37fe44c2504b3cc5e525104eeed9d12b961e27414a642b4c298744",
+  "cache": ".cache/30dfffb4-ff6d-4128-b3e5-39046ba258f0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "30850240f32c61650d3619bc1624265686411bab41676785859cfde80adcccac",
+      "bytes": 21180,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0c88734d-0c48-4b8f-a52f-d2f69c2ff087.jpg",
+    "fetchedAt": "2026-10-02T22:02:28.203886+00:00",
+    "sha256": "3f33c9a68097c24676e2c2553a2f3b0334426a107be3826567f2fe038df5dfed",
+    "bytes": 76327,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

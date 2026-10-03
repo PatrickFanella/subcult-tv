@@ -1,0 +1,29 @@
+{
+  "styleId": "9f228e72-997a-4410-9190-68359028e3d0",
+  "sourceUrl": "https://styles.refero.design/style/9f228e72-997a-4410-9190-68359028e3d0",
+  "fetchedAt": "2026-10-02T22:54:58.253493+00:00",
+  "extractedAt": "2026-10-02T22:54:58.277767+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Craft Docs — Style Reference",
+  "htmlSha256": "89245a29aaab175c28721661e3d1c8d600d0911b86706857b6e2121d60275670",
+  "cache": ".cache/9f228e72-997a-4410-9190-68359028e3d0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4f2acbc238a22efbc532a06b16736f8f6a2d2820917c91c713c92f151e31775f",
+      "bytes": 17458,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/94b522f4-bc5f-4e89-bd66-c5519def0d91.jpg",
+    "fetchedAt": "2026-10-02T22:55:00.251722+00:00",
+    "sha256": "4d9be7c1ad08609054ac739b4c4fef33a6868cb9625170c956a83a2fb6068b11",
+    "bytes": 130396,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

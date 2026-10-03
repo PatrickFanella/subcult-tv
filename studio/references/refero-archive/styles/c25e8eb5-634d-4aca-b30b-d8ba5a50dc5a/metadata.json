@@ -1,0 +1,29 @@
+{
+  "styleId": "c25e8eb5-634d-4aca-b30b-d8ba5a50dc5a",
+  "sourceUrl": "https://styles.refero.design/style/c25e8eb5-634d-4aca-b30b-d8ba5a50dc5a",
+  "fetchedAt": "2026-10-02T22:38:54.202723+00:00",
+  "extractedAt": "2026-10-02T22:38:54.224687+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Vivid Spain — Style Reference",
+  "htmlSha256": "9cd7a884ba54c9734fef6a41106868f12b20f2c92c88973b3450282fdb2aa470",
+  "cache": ".cache/c25e8eb5-634d-4aca-b30b-d8ba5a50dc5a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "faef355024838320c7beb6944f1b9dd0b6abff7ffd734ec56ad262712ac528ad",
+      "bytes": 21464,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0167da07-c042-43dd-bf88-58f8b8a9e37a.jpg",
+    "fetchedAt": "2026-10-02T22:38:56.301956+00:00",
+    "sha256": "2e385af074a0c9ef3de0875d5127c0485643d50e052f70cda467a62947eea90f",
+    "bytes": 139847,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

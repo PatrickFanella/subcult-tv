@@ -1,0 +1,29 @@
+{
+  "styleId": "5f2dd17d-72e6-4aa4-88e6-6be9e41299ab",
+  "sourceUrl": "https://styles.refero.design/style/5f2dd17d-72e6-4aa4-88e6-6be9e41299ab",
+  "fetchedAt": "2026-10-02T22:19:30.352944+00:00",
+  "extractedAt": "2026-10-02T22:19:30.374295+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Yuga — Style Reference",
+  "htmlSha256": "a3a1b34070abdce1e7ead46ed6e05d9742f19ea0c8b6a00a49cbaef171179f17",
+  "cache": ".cache/5f2dd17d-72e6-4aa4-88e6-6be9e41299ab.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "857ee86caf4e8036af56bbceeff033df50f3677dd63c890c9e3fbd33f5037916",
+      "bytes": 16704,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9431deeb-83a9-4a23-b377-0331f4e58f8c.jpg",
+    "fetchedAt": "2026-10-02T22:19:32.246014+00:00",
+    "sha256": "2772b0852161a8d0358fea52b121396ff81265476953f124dd0a20bbc97cc950",
+    "bytes": 138196,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

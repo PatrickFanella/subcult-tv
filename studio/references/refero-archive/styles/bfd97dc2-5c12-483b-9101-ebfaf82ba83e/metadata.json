@@ -1,0 +1,29 @@
+{
+  "styleId": "bfd97dc2-5c12-483b-9101-ebfaf82ba83e",
+  "sourceUrl": "https://styles.refero.design/style/bfd97dc2-5c12-483b-9101-ebfaf82ba83e",
+  "fetchedAt": "2026-10-02T22:17:38.228074+00:00",
+  "extractedAt": "2026-10-02T22:17:38.267230+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "BitcoinOS — Style Reference",
+  "htmlSha256": "6d42f1d1dd7f1394ad2e3f4f380687640a1b0e43715cd6e6cd41ce81bf8af721",
+  "cache": ".cache/bfd97dc2-5c12-483b-9101-ebfaf82ba83e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b3a755412ddc623ac176b0caefb70c1f4b304fce0686d4419f56f617cd4144ea",
+      "bytes": 23272,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c4adcedc-a535-4c42-987f-14a2aac85f58.jpg",
+    "fetchedAt": "2026-10-02T22:17:40.286957+00:00",
+    "sha256": "dbba3bbb6f1967a5be048ff5208dcffd086d52180a97f369f426e49ab86a2b74",
+    "bytes": 165858,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

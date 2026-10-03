@@ -1,0 +1,29 @@
+{
+  "styleId": "8c3f2805-dfce-4edd-8a9c-946bee4f1cff",
+  "sourceUrl": "https://styles.refero.design/style/8c3f2805-dfce-4edd-8a9c-946bee4f1cff",
+  "fetchedAt": "2026-10-02T22:50:46.361144+00:00",
+  "extractedAt": "2026-10-02T22:50:46.383900+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Leonardo.ai — Style Reference",
+  "htmlSha256": "d052307b0ab998bd75a844ee93b2f7b48744974e0042978c754c3c88e367213c",
+  "cache": ".cache/8c3f2805-dfce-4edd-8a9c-946bee4f1cff.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cb53b76f99504321b9271ce79c7e0e67530ba6afae9b39c1df0bab0f0a14534c",
+      "bytes": 22134,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4ccd1015-17fa-4f26-87fb-5e34fea6615e.jpg",
+    "fetchedAt": "2026-10-02T22:50:48.291808+00:00",
+    "sha256": "099cb9bbead90979fa3ab0585963362af6d8355dc521892182d993e66afcd3cd",
+    "bytes": 168340,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

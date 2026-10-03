@@ -1,0 +1,29 @@
+{
+  "styleId": "376baf20-9ace-405d-bf4a-086016f2b1e3",
+  "sourceUrl": "https://styles.refero.design/style/376baf20-9ace-405d-bf4a-086016f2b1e3",
+  "fetchedAt": "2026-10-02T22:11:06.247713+00:00",
+  "extractedAt": "2026-10-02T22:11:06.269993+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "User Interviews — Style Reference",
+  "htmlSha256": "542da22c38d2d97e84a1de209029875d837eeed15253ea487427a04c56996a11",
+  "cache": ".cache/376baf20-9ace-405d-bf4a-086016f2b1e3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1875240b2eb006167dcb8888b083d2550467e26d00015ff19001fae8f8ae68ca",
+      "bytes": 26268,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/45ca4f75-101f-40f4-a289-ee83212eaf76.jpg",
+    "fetchedAt": "2026-10-02T22:11:08.282872+00:00",
+    "sha256": "835353ba561853b4b4c7875e9cc69bbd766527169f3a94349f287abc5d28d2e7",
+    "bytes": 138364,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

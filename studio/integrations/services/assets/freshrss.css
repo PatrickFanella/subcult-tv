@@ -1,0 +1,39 @@
+/* SUBCULT Studio / Culture poster press. Source assets retain their licenses. */
+@font-face{font-family:SubcultSpace;src:url('/_subcult/Space-Grotesk-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:SubcultSpace;src:url('/_subcult/Space-Grotesk-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:SubcultDisplay;src:url('/_subcult/Oswald-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:SubcultMono;src:url('/_subcult/JetBrains-Mono-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+:root{
+ --sc-ink:#100b19;--sc-surface:#181122;--sc-raised:#241a32;--sc-paper:#f0ece4;
+ --sc-purple:#8b5cf6;--sc-link:#c4afff;--sc-green:#00ff88;--sc-muted:#b5a9c3;--sc-border:#58466e;
+ --main-bg-color:#100b19;--modal-bg-color:#241a32;--modal-header-color:#241a32;--modal-footer-color:#181122;
+ --text:#f0ece4;--text-color:#f0ece4;--text-hover:#ffffff;--text-muted:#b5a9c3;
+ --link-color:#c4afff;--link-color-hover:#00ff88;--accent-color:#8b5cf6;--accent-color-hover:#a87dff;
+ --button-color:#00ff88;--button-color-hover:#66ffb8;--button-text:#100b19;--button-text-hover:#100b19;
+ --menu-item-color:#f0ece4;--drop-down-menu-bg:#241a32;--badge-bg:#8b5cf6;--badge-color:#100b19;--label-text-color:#f0ece4;
+ --bazarr-button-background:#00ff88;--arr-queue-color:#00ff88;
+ --bs-body-font-family:SubcultSpace,system-ui,sans-serif;
+ color-scheme:dark;
+}
+html,body{background-color:var(--sc-ink)!important;color:var(--sc-paper)!important;font-family:SubcultSpace,system-ui,sans-serif!important}
+body{accent-color:var(--sc-green)}
+h1,h2,h3{font-family:SubcultDisplay,SubcultSpace,sans-serif!important;letter-spacing:.025em}
+input,textarea,select,button{font-family:SubcultSpace,system-ui,sans-serif}
+code,pre,kbd{font-family:SubcultMono,monospace!important}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[role=button]:focus-visible{outline:2px solid #c4afff!important;outline-offset:3px!important}
+::selection{background:#8b5cf6;color:#100b19}
+
+img.logo{content:url('/_subcult/mark-dark.svg?v=logo-bcd-20261003');object-fit:contain}
+#global,#main,#stream,.content,.aside,#nav_menu{background:#100b19!important;color:#f0ece4!important}
+.header{background:#8b5cf6!important;color:#100b19!important;border-bottom:3px solid #00ff88}
+.header a,.header .btn{color:#100b19!important}
+.header .logo{background:url('/_subcult/mark-dark.svg?v=logo-bcd-20261003') left center/contain no-repeat!important;min-width:120px;height:40px}
+.header .logo img{visibility:hidden}
+.flux,.box,.dropdown-menu,.tree,.item,.group,.horizontal-list{background:#181122!important;color:#f0ece4!important;border-color:#58466e!important}
+.flux .flux_header,.flux .flux_header .title,.flux .flux_header .date,.flux .content{color:#f0ece4!important}
+.flux .flux_content{background:#241a32!important;color:#f0ece4!important}
+.flux .flux_content a,a{color:#c4afff}
+.btn,.btn-default{background:#241a32!important;color:#f0ece4!important;border-color:#58466e!important}
+.btn-important,.btn-primary,button[type=submit]{background:#00ff88!important;color:#100b19!important}
+input,textarea,select{background:#241a32!important;color:#f0ece4!important;border-color:#58466e!important}
+.formLogin h1{padding-top:75px;background:url('/_subcult/mark-primary.svg?v=logo-bcd-20261003') center top/150px 65px no-repeat}

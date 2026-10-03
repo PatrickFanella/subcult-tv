@@ -1,0 +1,29 @@
+{
+  "styleId": "c90e63f8-76c1-4159-9460-29e0d18751ae",
+  "sourceUrl": "https://styles.refero.design/style/c90e63f8-76c1-4159-9460-29e0d18751ae",
+  "fetchedAt": "2026-10-02T22:34:06.209044+00:00",
+  "extractedAt": "2026-10-02T22:34:06.231599+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Parloa — Style Reference",
+  "htmlSha256": "4e2219779e6df044a0d8713ae62809ad53ecfbc4d1d934c00b872936ef8ff288",
+  "cache": ".cache/c90e63f8-76c1-4159-9460-29e0d18751ae.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8dd1d69c5f2e8d91e3e71f55afd98cc270be5aecf9adb1cc8d181d511b82ff36",
+      "bytes": 19963,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bcd3dcfa-66a5-44f2-8cbb-adfb1766494a.jpg",
+    "fetchedAt": "2026-10-02T22:34:08.266039+00:00",
+    "sha256": "2624cb4c46bc9153c9d70d546e967f263bcf23630ada1b8398f1e7d050d570ce",
+    "bytes": 102204,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

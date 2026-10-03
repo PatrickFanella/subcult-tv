@@ -1,0 +1,29 @@
+{
+  "styleId": "6a5f9438-7ae6-4743-a0bd-f9087d467eff",
+  "sourceUrl": "https://styles.refero.design/style/6a5f9438-7ae6-4743-a0bd-f9087d467eff",
+  "fetchedAt": "2026-10-02T22:37:50.195887+00:00",
+  "extractedAt": "2026-10-02T22:37:50.217084+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Abetterlou — Style Reference",
+  "htmlSha256": "4eb95f5b5dabd6446128b2f28ff6f1789cc3949a7cc4553b3ab4e7d1102a3f33",
+  "cache": ".cache/6a5f9438-7ae6-4743-a0bd-f9087d467eff.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9a7506039cfc76a9a62f756f15f16e0e1d2dbbd0205923792dc8318b128a73a6",
+      "bytes": 20979,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/012d2ce9-e74a-4588-aee3-cce1e9c49f4d.jpg",
+    "fetchedAt": "2026-10-02T22:37:52.327064+00:00",
+    "sha256": "14a0ac2f60f70bf7c02c623a5fe9288196745d2e55bb9bdec440aedc04f7c690",
+    "bytes": 113344,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

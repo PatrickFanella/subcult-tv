@@ -1,0 +1,29 @@
+{
+  "styleId": "1329b661-39d8-4f0b-a12a-11ed13671ccb",
+  "sourceUrl": "https://styles.refero.design/style/1329b661-39d8-4f0b-a12a-11ed13671ccb",
+  "fetchedAt": "2026-10-02T22:47:50.239256+00:00",
+  "extractedAt": "2026-10-02T22:47:50.263027+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Buddy — Style Reference",
+  "htmlSha256": "bdb62c770bc16a04c0ff66f1576a6957feb0d96bef0d4e9970aae6e3498a5ed7",
+  "cache": ".cache/1329b661-39d8-4f0b-a12a-11ed13671ccb.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "25be9563e64845f8615c1c5051d98aca15d80b09ba3e2a2b6a37b9345f440ed1",
+      "bytes": 36513,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c016ca20-cb38-4254-9b45-6fd5e9ce04ac.jpg",
+    "fetchedAt": "2026-10-02T22:47:52.285455+00:00",
+    "sha256": "2713ea755d8b566249a55d8d665bf04b20d2e2bb7af3823997a191d00cc2adba",
+    "bytes": 134292,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

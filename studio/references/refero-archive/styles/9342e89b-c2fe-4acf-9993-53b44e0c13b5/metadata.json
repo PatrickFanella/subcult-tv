@@ -1,0 +1,29 @@
+{
+  "styleId": "9342e89b-c2fe-4acf-9993-53b44e0c13b5",
+  "sourceUrl": "https://styles.refero.design/style/9342e89b-c2fe-4acf-9993-53b44e0c13b5",
+  "fetchedAt": "2026-10-02T22:49:34.356732+00:00",
+  "extractedAt": "2026-10-02T22:49:34.381198+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ballpark — Style Reference",
+  "htmlSha256": "6cd3602d446ea44b8e05567a768d4dc1cc03728cce39646a4f0137f1f4470f4d",
+  "cache": ".cache/9342e89b-c2fe-4acf-9993-53b44e0c13b5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f3e2ac7cdc0d9d6478c7f367e8321e60a4278243cbf7090453c6bf53799fcb4a",
+      "bytes": 29641,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/99c4dc84-3adf-452d-9c11-80c060f4969c.jpg",
+    "fetchedAt": "2026-10-02T22:49:36.274720+00:00",
+    "sha256": "9d93df967e5431d29d771732dda7f53ad8b963fabfc7a43e085db32cc0c74703",
+    "bytes": 105197,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "24d3b281-04a6-4cc7-8a74-634b08472291",
+  "sourceUrl": "https://styles.refero.design/style/24d3b281-04a6-4cc7-8a74-634b08472291",
+  "fetchedAt": "2026-10-02T22:07:18.223636+00:00",
+  "extractedAt": "2026-10-02T22:07:18.253439+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Opennote — Style Reference",
+  "htmlSha256": "f07e2b78854729de1838565c0721f8cfca21587842152a0ed353f952a10e7c4d",
+  "cache": ".cache/24d3b281-04a6-4cc7-8a74-634b08472291.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "10c9a936817295fa04cdb83ba3bd3c13a6d3fde9d3162f7f75066b9757a92b00",
+      "bytes": 21335,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3cb79096-02a5-4c45-9151-f0feafa6e807.jpg",
+    "fetchedAt": "2026-10-02T22:07:20.215104+00:00",
+    "sha256": "f49d6e8978dca1afb2aee6e0dd864718acfb4ee77b4a0dc43f573a800f30e251",
+    "bytes": 71829,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

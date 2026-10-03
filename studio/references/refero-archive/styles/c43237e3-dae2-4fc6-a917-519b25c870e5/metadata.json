@@ -1,0 +1,29 @@
+{
+  "styleId": "c43237e3-dae2-4fc6-a917-519b25c870e5",
+  "sourceUrl": "https://styles.refero.design/style/c43237e3-dae2-4fc6-a917-519b25c870e5",
+  "fetchedAt": "2026-10-02T22:04:42.229039+00:00",
+  "extractedAt": "2026-10-02T22:04:42.255576+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Agencja brandingowa — Style Reference",
+  "htmlSha256": "e57676111e5bd6e5c8ee8ca736b85b99d10004326348c341087ce6a33f40b237",
+  "cache": ".cache/c43237e3-dae2-4fc6-a917-519b25c870e5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e4d6ecf51d50c662fe8b87afae87c56b4cfea7fc1296f3c9f3f7db5a31dd9513",
+      "bytes": 18617,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b96cfec9-5e7a-468c-b1aa-91675e983df8.jpg",
+    "fetchedAt": "2026-10-02T22:04:44.273176+00:00",
+    "sha256": "0b08af172d1095fb08baafc92fee6994ccc5dccd7e73d8717efdb12f63426759",
+    "bytes": 74342,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "95913740-3ff7-45ec-a05b-4acf040850a0",
+  "sourceUrl": "https://styles.refero.design/style/95913740-3ff7-45ec-a05b-4acf040850a0",
+  "fetchedAt": "2026-10-02T22:45:50.570346+00:00",
+  "extractedAt": "2026-10-02T22:45:50.593745+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Reworkd — Style Reference",
+  "htmlSha256": "8fc620fa4f9597014bb7a808e5db7b1610f1b77a3eaceddb9fd29c79b4474f9d",
+  "cache": ".cache/95913740-3ff7-45ec-a05b-4acf040850a0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d922ddf99949ce2103cf3ad8a8f51e606c156fb412cfe446dce50f8ac2d643ff",
+      "bytes": 31526,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bb755897-14d5-4929-b265-da3153232af7.jpg",
+    "fetchedAt": "2026-10-02T22:45:52.296356+00:00",
+    "sha256": "e815230807e47713a5ef591239e882b34dac51c1498a5a3f620f9e2627c1e736",
+    "bytes": 99411,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

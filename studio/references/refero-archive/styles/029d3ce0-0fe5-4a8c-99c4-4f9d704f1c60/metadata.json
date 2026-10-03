@@ -1,0 +1,29 @@
+{
+  "styleId": "029d3ce0-0fe5-4a8c-99c4-4f9d704f1c60",
+  "sourceUrl": "https://styles.refero.design/style/029d3ce0-0fe5-4a8c-99c4-4f9d704f1c60",
+  "fetchedAt": "2026-10-02T22:07:30.297693+00:00",
+  "extractedAt": "2026-10-02T22:07:30.343906+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Pally — Style Reference",
+  "htmlSha256": "8c3dafa7077d2ffab992e7fd3ebe0330dc4ebad8a1b45358917f2f7f8239d026",
+  "cache": ".cache/029d3ce0-0fe5-4a8c-99c4-4f9d704f1c60.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f32a0d2174a3c64da46e02c6d4503542536125e3aba7d067d4a8ee7dfc9e937a",
+      "bytes": 22581,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0f9740d4-1711-4b7c-8eb8-98b3e89870a4.jpg",
+    "fetchedAt": "2026-10-02T22:07:32.262065+00:00",
+    "sha256": "c00e224ff0a3614d0452db392e431bc9e80ba99629ca22a89c922feab0459a73",
+    "bytes": 94468,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

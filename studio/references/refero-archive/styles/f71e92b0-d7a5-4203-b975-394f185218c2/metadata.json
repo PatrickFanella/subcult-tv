@@ -1,0 +1,29 @@
+{
+  "styleId": "f71e92b0-d7a5-4203-b975-394f185218c2",
+  "sourceUrl": "https://styles.refero.design/style/f71e92b0-d7a5-4203-b975-394f185218c2",
+  "fetchedAt": "2026-10-02T22:44:06.208346+00:00",
+  "extractedAt": "2026-10-02T22:44:06.232028+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Convex — Style Reference",
+  "htmlSha256": "f207bd9bd3e68ac844e3794574deb516b2c1e3352b5803b32f4a77b4c00e7cc1",
+  "cache": ".cache/f71e92b0-d7a5-4203-b975-394f185218c2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5a7bb7958e4f9c968503ea942e6e7d2f7b15040dbeda5ef0204404b129ede356",
+      "bytes": 22273,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b3bc8973-f8b1-4bdf-8430-fe888e29c031.jpg",
+    "fetchedAt": "2026-10-02T22:44:08.258971+00:00",
+    "sha256": "170b7a1ffb83f24e8a449be6f66982cf1b207aff12c7c2ba46271bba83d119bc",
+    "bytes": 179422,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

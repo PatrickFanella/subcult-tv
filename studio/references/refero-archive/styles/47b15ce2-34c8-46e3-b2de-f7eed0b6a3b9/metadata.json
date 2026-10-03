@@ -1,0 +1,29 @@
+{
+  "styleId": "47b15ce2-34c8-46e3-b2de-f7eed0b6a3b9",
+  "sourceUrl": "https://styles.refero.design/style/47b15ce2-34c8-46e3-b2de-f7eed0b6a3b9",
+  "fetchedAt": "2026-10-02T22:18:02.236488+00:00",
+  "extractedAt": "2026-10-02T22:18:02.259070+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "PencilBooth — Style Reference",
+  "htmlSha256": "e2fd623555c0c49a897ac93477d56411739ff8976d66b79fbf9b583066a47bec",
+  "cache": ".cache/47b15ce2-34c8-46e3-b2de-f7eed0b6a3b9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "37bd60678d56ad583c63d08ed8b520d26640a9b5e6c1d82e87feaed8ca5d3af6",
+      "bytes": 20061,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/85565217-a6f4-4f5c-ab92-03828a542af0.jpg",
+    "fetchedAt": "2026-10-02T22:18:04.265482+00:00",
+    "sha256": "e984a897343867bff968857dfafeb8a51c05e3c7b4cd49c3a711e36e4dae52cb",
+    "bytes": 164834,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

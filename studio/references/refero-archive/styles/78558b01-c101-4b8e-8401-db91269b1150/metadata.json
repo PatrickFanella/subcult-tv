@@ -1,0 +1,29 @@
+{
+  "styleId": "78558b01-c101-4b8e-8401-db91269b1150",
+  "sourceUrl": "https://styles.refero.design/style/78558b01-c101-4b8e-8401-db91269b1150",
+  "fetchedAt": "2026-10-02T22:49:10.540754+00:00",
+  "extractedAt": "2026-10-02T22:49:10.564615+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Checkly — Style Reference",
+  "htmlSha256": "6d4aa347454b7fe12e535c24639075b8091f502868fca48d6384a7d1c56a0beb",
+  "cache": ".cache/78558b01-c101-4b8e-8401-db91269b1150.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "adf3a54c2195d2311f26ecfde2b5b979349e7cfb0a83fbdd4ed775bb1786fd7c",
+      "bytes": 21911,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/66393f3c-e45d-4cdc-83de-0acb239ab7d1.jpg",
+    "fetchedAt": "2026-10-02T22:49:12.275050+00:00",
+    "sha256": "cfb3ec0813c08345fc9afd6ce55ff75398eca6140d27558bc38d28be4fe2a0b4",
+    "bytes": 120921,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

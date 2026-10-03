@@ -8,15 +8,23 @@ A poster system: condensed black type, purple fields and acid-green registration
 
 ### Direction and masters
 
-This is the C direction, selected by the user. The user-edited banner, logo banner and square-post masters are kept in `references/subcult-edited-layouts/`. Rebuilds copy them without alteration.
+This is the C direction, selected by the user. The user-edited banner, logo banner and square-post masters are kept in `references/subcult-edited-layouts/`. Rebuilds copy them without alteration. They are historical compositions, not the selected standalone logo.
 
 ### Mark
 
-The master mark is `references/subcult-mark-master.svg`, drawn by the user: a filled S and underscore, an outlined C, a tilted green block, registration lines and a terminal square.
+The user approved three marks, B, C and D, all without registration lines:
 
-- Preserve its geometry, overlap and layer order.
-- Build every variant from the master SVG. For dark and light applications, recolor only the ink and the accent.
-- In monochrome, outline the accent block so the letters stay legible.
+- C is the primary mark, with filled letters and a tilted green block.
+- B is the heavier outlined alternate.
+- D removes the block and uses tighter framing for small placements.
+
+Every approved mark uses one continuous underscore path. Build the selected derivatives with `subcult_assets.py`; `logo-selection.json` records the selection. The original user-authored SVG is preserved in `references/subcult-mark-master.svg` as construction provenance.
+
+White artwork outlines or removes the green block. Use dark ink marks on purple or green fields, and white marks on dark fields.
+
+### Circle logo
+
+The user approved `logos/mark-fisheye-circle.png` in place of the purple-circle logo treatments: solid SC lettering and a green underscore on a purple circle, with a fisheye distortion on the SC_. It is raster artwork generated from the compact D mark. Preserve its exact bytes; do not redraw it. The public site uses the same file as `public/brand/subcult/fisheye-circle.png`. The source study and its generation prompt are in [the fisheye review](../../../reviews/subcult-logo-fisheye/README.md).
 
 ### Color
 

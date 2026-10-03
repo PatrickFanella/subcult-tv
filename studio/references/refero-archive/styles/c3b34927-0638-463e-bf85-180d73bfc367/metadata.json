@@ -1,0 +1,29 @@
+{
+  "styleId": "c3b34927-0638-463e-bf85-180d73bfc367",
+  "sourceUrl": "https://styles.refero.design/style/c3b34927-0638-463e-bf85-180d73bfc367",
+  "fetchedAt": "2026-10-02T22:40:30.214493+00:00",
+  "extractedAt": "2026-10-02T22:40:30.235558+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fiverr.com — Style Reference",
+  "htmlSha256": "39192e53f718c7f4a872b119720be94345fae42573a8043689cc6c99ddbcc3c6",
+  "cache": ".cache/c3b34927-0638-463e-bf85-180d73bfc367.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af45b219711f7b00249b73299c362ac0ebe1e673254830e8a48dd26c860c85c7",
+      "bytes": 19162,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7eb3093e-603b-4738-b5c0-16a10cf3fbb9.jpg",
+    "fetchedAt": "2026-10-02T22:40:32.239852+00:00",
+    "sha256": "6e99a65a615a5626a56cfa241da8cd60915c06ef6475606cd4e6cd5308b9bcb9",
+    "bytes": 126665,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

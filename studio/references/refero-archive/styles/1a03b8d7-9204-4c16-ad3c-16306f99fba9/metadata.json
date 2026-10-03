@@ -1,0 +1,29 @@
+{
+  "styleId": "1a03b8d7-9204-4c16-ad3c-16306f99fba9",
+  "sourceUrl": "https://styles.refero.design/style/1a03b8d7-9204-4c16-ad3c-16306f99fba9",
+  "fetchedAt": "2026-10-02T22:06:54.184899+00:00",
+  "extractedAt": "2026-10-02T22:06:54.210836+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Mesh — Style Reference",
+  "htmlSha256": "666ca1e0994314dd7a6fdf66bbfc342e7b2e07a4b0a245428c23608cfc910fd6",
+  "cache": ".cache/1a03b8d7-9204-4c16-ad3c-16306f99fba9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f47ebc1888781aecae8ee024ce94a42e8e1d4b76a40bf280a1aa9a2c2b3befe9",
+      "bytes": 24015,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ab0113d4-a6c8-4eea-bf19-35c08ddcd78f.jpg",
+    "fetchedAt": "2026-10-02T22:06:56.253521+00:00",
+    "sha256": "4e2ec5a00522f6d51049221e5e87c5fd56259e3eeb9b582d96f61a5c820c7111",
+    "bytes": 92641,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

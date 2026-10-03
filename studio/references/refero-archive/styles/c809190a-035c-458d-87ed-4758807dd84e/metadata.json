@@ -1,0 +1,29 @@
+{
+  "styleId": "c809190a-035c-458d-87ed-4758807dd84e",
+  "sourceUrl": "https://styles.refero.design/style/c809190a-035c-458d-87ed-4758807dd84e",
+  "fetchedAt": "2026-10-02T22:44:02.211253+00:00",
+  "extractedAt": "2026-10-02T22:44:02.234478+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Axiom — Style Reference",
+  "htmlSha256": "45b4f452a81993854c8766105bca24da3f69005b78c147857d9fcee7a0f7c395",
+  "cache": ".cache/c809190a-035c-458d-87ed-4758807dd84e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0fa0d494e1951f383a8903a18819bbc2e5901fbb0b77b4cb24ad922b49265a91",
+      "bytes": 18104,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4035444e-8fff-4aef-8f3b-2a7f780e70a8.jpg",
+    "fetchedAt": "2026-10-02T22:44:04.255958+00:00",
+    "sha256": "2fee4ab0091e7f6767596b6e0903be31f1652cb3ff235d6e3f20ad2efbc6e9ac",
+    "bytes": 142537,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

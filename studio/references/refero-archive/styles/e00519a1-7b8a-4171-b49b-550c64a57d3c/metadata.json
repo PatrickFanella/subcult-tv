@@ -1,0 +1,29 @@
+{
+  "styleId": "e00519a1-7b8a-4171-b49b-550c64a57d3c",
+  "sourceUrl": "https://styles.refero.design/style/e00519a1-7b8a-4171-b49b-550c64a57d3c",
+  "fetchedAt": "2026-10-02T22:28:26.237955+00:00",
+  "extractedAt": "2026-10-02T22:28:26.267871+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Flowers For Society — Style Reference",
+  "htmlSha256": "d37f6da1665df2013d9226120b80ce180ac63d3e25e1b7bde862f9da12539e79",
+  "cache": ".cache/e00519a1-7b8a-4171-b49b-550c64a57d3c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "af208c1db8089210bb0d89c4ee6856c64e464b8c49291350b4a3b648cf8aab29",
+      "bytes": 18710,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f45b3e01-63a9-40e0-a900-e4d60334da3c.jpg",
+    "fetchedAt": "2026-10-02T22:28:28.293907+00:00",
+    "sha256": "aa8a34d0272b60357fe73e9c7dad5b42a1805f92b272ca5c412a7859402a1bc7",
+    "bytes": 231191,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

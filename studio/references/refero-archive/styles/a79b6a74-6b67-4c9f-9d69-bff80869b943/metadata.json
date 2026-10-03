@@ -1,0 +1,29 @@
+{
+  "styleId": "a79b6a74-6b67-4c9f-9d69-bff80869b943",
+  "sourceUrl": "https://styles.refero.design/style/a79b6a74-6b67-4c9f-9d69-bff80869b943",
+  "fetchedAt": "2026-10-02T22:03:50.211075+00:00",
+  "extractedAt": "2026-10-02T22:03:50.232655+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Glassnode — Style Reference",
+  "htmlSha256": "207527b723e5e9216d42a13fd51c08fd176f79fd2163f14c3938288ab20a6129",
+  "cache": ".cache/a79b6a74-6b67-4c9f-9d69-bff80869b943.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c0b38863f804e5725bf7076413b67bd0b1285aeec648fcae7075cbe937a4013e",
+      "bytes": 17838,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0e12a4fa-1a14-4622-b680-7bb93fe37a4d.jpg",
+    "fetchedAt": "2026-10-02T22:03:52.343628+00:00",
+    "sha256": "d67941112c2131e7217fe106b5492039ff5ce45c54e01b5136fe0d5d5c0102c3",
+    "bytes": 85191,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

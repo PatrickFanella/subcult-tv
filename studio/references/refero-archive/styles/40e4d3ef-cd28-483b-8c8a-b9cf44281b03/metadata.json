@@ -1,0 +1,29 @@
+{
+  "styleId": "40e4d3ef-cd28-483b-8c8a-b9cf44281b03",
+  "sourceUrl": "https://styles.refero.design/style/40e4d3ef-cd28-483b-8c8a-b9cf44281b03",
+  "fetchedAt": "2026-10-02T22:15:58.362140+00:00",
+  "extractedAt": "2026-10-02T22:15:58.385027+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "June — Style Reference",
+  "htmlSha256": "8054f8332e99b236291e3c37d1535da394bad289316847fcb256f597cdd2fcc6",
+  "cache": ".cache/40e4d3ef-cd28-483b-8c8a-b9cf44281b03.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d2125a3a49431e84c2ae7b1e7fc7cd49edfd1225b49330eae3043a68fea10d1d",
+      "bytes": 15763,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bd3f8feb-301b-4999-964f-fc77879f0ea5.jpg",
+    "fetchedAt": "2026-10-02T22:16:00.267545+00:00",
+    "sha256": "1a8739936e8567f43551c034e7862bc11d6114a9205ab5ad297de4a54aaa5b62",
+    "bytes": 103614,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

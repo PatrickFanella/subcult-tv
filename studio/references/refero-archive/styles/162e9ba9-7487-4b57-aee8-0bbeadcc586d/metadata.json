@@ -1,0 +1,29 @@
+{
+  "styleId": "162e9ba9-7487-4b57-aee8-0bbeadcc586d",
+  "sourceUrl": "https://styles.refero.design/style/162e9ba9-7487-4b57-aee8-0bbeadcc586d",
+  "fetchedAt": "2026-10-02T22:52:10.313144+00:00",
+  "extractedAt": "2026-10-02T22:52:10.337213+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Skillshare — Style Reference",
+  "htmlSha256": "a3a08939dbb4c99ea03de94a110a1fbc27ed6fcf31e1b8ebcfd5ad8f7f11d2f2",
+  "cache": ".cache/162e9ba9-7487-4b57-aee8-0bbeadcc586d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e5cb8c19f92e2db788ec6e6ce982dd8ba353e99bf8235a1e2727ae4684a354b1",
+      "bytes": 22472,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/918b66e1-8881-4581-a076-5fa3bdc7ac7f.jpg",
+    "fetchedAt": "2026-10-02T22:52:12.311396+00:00",
+    "sha256": "b271d66156721ee29ca25da36c81fd8da58e211466ed008de2be9107ab204964",
+    "bytes": 166744,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

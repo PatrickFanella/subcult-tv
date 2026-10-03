@@ -1,0 +1,29 @@
+{
+  "styleId": "8401cb26-91a3-4b46-941e-1c75790821eb",
+  "sourceUrl": "https://styles.refero.design/style/8401cb26-91a3-4b46-941e-1c75790821eb",
+  "fetchedAt": "2026-10-02T22:49:54.217768+00:00",
+  "extractedAt": "2026-10-02T22:49:54.238697+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Monologue — Style Reference",
+  "htmlSha256": "fe04adc32a33bf71b25d95c437177f1db18df86166ae236654ace4b1cfc404a3",
+  "cache": ".cache/8401cb26-91a3-4b46-941e-1c75790821eb.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "940dea59cbb4a20d8d92188bbd3137392ffa2788664ca73ef388ed9f3d50cb6c",
+      "bytes": 26385,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9238a9ae-a716-40a5-aca0-ae70f2f65e70.jpg",
+    "fetchedAt": "2026-10-02T22:49:56.328639+00:00",
+    "sha256": "be37e1f7c94944832b83f76a98bd46cc33c99a63ea0008ecd27793bd0e083cb1",
+    "bytes": 133798,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

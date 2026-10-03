@@ -1,0 +1,29 @@
+{
+  "styleId": "5f446754-1fb7-4a99-8cee-7bd5de3bfd9e",
+  "sourceUrl": "https://styles.refero.design/style/5f446754-1fb7-4a99-8cee-7bd5de3bfd9e",
+  "fetchedAt": "2026-10-02T22:39:30.204786+00:00",
+  "extractedAt": "2026-10-02T22:39:30.227200+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Eddie — Style Reference",
+  "htmlSha256": "e9898a4db243b13ddb51c2d6cae3a9d0eafcaf9568781bb912ef0c8041b2fffa",
+  "cache": ".cache/5f446754-1fb7-4a99-8cee-7bd5de3bfd9e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f1db222f7f361d6d71d5c35b097aacd19969b96755c998a15df1cafb46d092ee",
+      "bytes": 22730,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/591741e3-2257-45b8-a346-b5a17982140a.jpg",
+    "fetchedAt": "2026-10-02T22:39:32.267294+00:00",
+    "sha256": "023e05b0e1da401c701fb88b549e5f2b5dcb8564bed334774826710ece9f0752",
+    "bytes": 91861,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "722f32e7-8217-4808-843d-b454eea7320a",
+  "sourceUrl": "https://styles.refero.design/style/722f32e7-8217-4808-843d-b454eea7320a",
+  "fetchedAt": "2026-10-02T22:36:42.333924+00:00",
+  "extractedAt": "2026-10-02T22:36:42.355911+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dashlane — Style Reference",
+  "htmlSha256": "ff9e51659a9475e4312c56274920cc759abc43a16e826a539f4b1b9932dd52bf",
+  "cache": ".cache/722f32e7-8217-4808-843d-b454eea7320a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9c7333f1142330be34d2516f9f4e9b61e71054aba1d1a4a6c3a0f6472a559810",
+      "bytes": 21481,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2bd8b72f-99ae-45e8-9f83-5c367ff4ef04.jpg",
+    "fetchedAt": "2026-10-02T22:36:44.247445+00:00",
+    "sha256": "0faef5b54acffd5b4ef88c4e5ec3a662d9de2c1c420e2894d0d509c46b327a49",
+    "bytes": 99040,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

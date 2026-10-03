@@ -1,0 +1,29 @@
+{
+  "styleId": "1995b916-d3f1-4b13-8eb0-c1317ab63ccb",
+  "sourceUrl": "https://styles.refero.design/style/1995b916-d3f1-4b13-8eb0-c1317ab63ccb",
+  "fetchedAt": "2026-10-02T22:13:02.223238+00:00",
+  "extractedAt": "2026-10-02T22:13:02.245335+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Alpine Bio — Style Reference",
+  "htmlSha256": "dda47f4c25c28fe2fd6bf01e0768430a42c865906ba393bf4b07e175cd2b5162",
+  "cache": ".cache/1995b916-d3f1-4b13-8eb0-c1317ab63ccb.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "34f0f73425171bd47c446607e07ef2917991cf06ad52d201f8499f70a5e4beac",
+      "bytes": 20000,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fa72aa72-210c-4ca0-a7a7-fb845d5da79c.jpg",
+    "fetchedAt": "2026-10-02T22:13:04.269279+00:00",
+    "sha256": "ef924232d49f2e4c77221e9c3ca64aab138f94b67e22500d8095515c2632d789",
+    "bytes": 62626,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "f401f04f-c45b-4261-9441-f502c6569a29",
+  "sourceUrl": "https://styles.refero.design/style/f401f04f-c45b-4261-9441-f502c6569a29",
+  "fetchedAt": "2026-10-02T22:22:22.166695+00:00",
+  "extractedAt": "2026-10-02T22:22:22.188427+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Filling Pieces — Style Reference",
+  "htmlSha256": "63dfbb712b2cef61476f80285fc558410a06406bc9dbd667a77a3427dbdde8c5",
+  "cache": ".cache/f401f04f-c45b-4261-9441-f502c6569a29.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d65276742325f40728e492360a85b09c79fab4cb9183b82ef92a6a4732767f7d",
+      "bytes": 19937,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/97cb09de-c61e-4b51-aefb-5bbe7f85a6b3.jpg",
+    "fetchedAt": "2026-10-02T22:22:24.332631+00:00",
+    "sha256": "d673c198fa5a7ed54a3d8f85facb3efa39c6bb9faab6d0dcb805b91935c9351f",
+    "bytes": 147912,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

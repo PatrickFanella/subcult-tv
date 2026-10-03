@@ -1,0 +1,29 @@
+{
+  "styleId": "4afe77ff-e7fa-41d8-96d6-ce8cdc159f97",
+  "sourceUrl": "https://styles.refero.design/style/4afe77ff-e7fa-41d8-96d6-ce8cdc159f97",
+  "fetchedAt": "2026-10-02T22:39:58.320443+00:00",
+  "extractedAt": "2026-10-02T22:39:58.345865+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Bear Markdown Notes — Style Reference",
+  "htmlSha256": "25f42df7266f209eb8fd06b35f1d115be8e21d7672f8d0146f51d90ed52f5505",
+  "cache": ".cache/4afe77ff-e7fa-41d8-96d6-ce8cdc159f97.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "62e5e564d380d48536f90de04f179e303a659292a7df39bccde1cad879ee24d4",
+      "bytes": 20436,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/04338f97-dd2f-4c40-9576-2cb254c7113a.jpg",
+    "fetchedAt": "2026-10-02T22:40:00.246567+00:00",
+    "sha256": "d172580ea1126f9e070fae92f985ded358777a19ba01d465c63e85d43e1e9947",
+    "bytes": 77852,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "dd96b76a-b691-49e7-ba8f-1cdc8f7172e6",
+  "sourceUrl": "https://styles.refero.design/style/dd96b76a-b691-49e7-ba8f-1cdc8f7172e6",
+  "fetchedAt": "2026-10-02T22:13:18.243797+00:00",
+  "extractedAt": "2026-10-02T22:13:18.285420+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Jonas Pelzer — Style Reference",
+  "htmlSha256": "c155cbdfe8f2e8e00b52d467f66d8a670a1e937cc183e93090055469b8636fcf",
+  "cache": ".cache/dd96b76a-b691-49e7-ba8f-1cdc8f7172e6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cf958121c20fdb48c38b6e21cd1c59d971e4daac1e970408b060dab124545e31",
+      "bytes": 17858,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9ae94cda-e9a2-4b1e-87f5-13165032813a.jpg",
+    "fetchedAt": "2026-10-02T22:13:20.263496+00:00",
+    "sha256": "ab2228c3144262a3c57182886a1b1aae8ef1281dbbd09afb29a1177926d256b6",
+    "bytes": 105009,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

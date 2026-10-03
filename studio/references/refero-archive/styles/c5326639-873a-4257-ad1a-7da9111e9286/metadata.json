@@ -1,0 +1,29 @@
+{
+  "styleId": "c5326639-873a-4257-ad1a-7da9111e9286",
+  "sourceUrl": "https://styles.refero.design/style/c5326639-873a-4257-ad1a-7da9111e9286",
+  "fetchedAt": "2026-10-02T22:52:26.209208+00:00",
+  "extractedAt": "2026-10-02T22:52:26.232905+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Wise Design — Style Reference",
+  "htmlSha256": "77a9bca2139186cb2544648cff0a4a7313bbcd10ed40d04abe6e4a9db02e5393",
+  "cache": ".cache/c5326639-873a-4257-ad1a-7da9111e9286.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "475655d04af735c7c3fb3dfe86d9cf56ecb92593905e804f867e2113fe147afd",
+      "bytes": 22403,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4919eba3-a8ae-43e0-81af-95cf4e2414f2.jpg",
+    "fetchedAt": "2026-10-02T22:52:28.226161+00:00",
+    "sha256": "f8fcbd5b319986e7318142ec69e56f0a8364b342acd5a69e4bec5f2caf8b0bce",
+    "bytes": 59444,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

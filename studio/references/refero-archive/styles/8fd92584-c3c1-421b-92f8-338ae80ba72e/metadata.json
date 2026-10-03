@@ -1,0 +1,29 @@
+{
+  "styleId": "8fd92584-c3c1-421b-92f8-338ae80ba72e",
+  "sourceUrl": "https://styles.refero.design/style/8fd92584-c3c1-421b-92f8-338ae80ba72e",
+  "fetchedAt": "2026-10-02T22:19:06.251114+00:00",
+  "extractedAt": "2026-10-02T22:19:06.273459+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Flox — Style Reference",
+  "htmlSha256": "fe66253a91cd588bd4ff27e53a481cc6bc474102d812227b71a2aaac9188694d",
+  "cache": ".cache/8fd92584-c3c1-421b-92f8-338ae80ba72e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ea950ab8f5732af066d4467a15a281e2dff116f1041bacc58e8ff6abe740247e",
+      "bytes": 21235,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d02ed298-cad9-41e0-8be9-cfc0e91ce3db.jpg",
+    "fetchedAt": "2026-10-02T22:19:08.226437+00:00",
+    "sha256": "7e566881cca67c98f5fdc8ce6ee82413ab6cd931ac2c1827092cb07c2c4acb7e",
+    "bytes": 93155,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

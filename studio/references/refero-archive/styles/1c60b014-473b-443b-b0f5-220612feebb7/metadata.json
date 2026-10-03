@@ -1,0 +1,29 @@
+{
+  "styleId": "1c60b014-473b-443b-b0f5-220612feebb7",
+  "sourceUrl": "https://styles.refero.design/style/1c60b014-473b-443b-b0f5-220612feebb7",
+  "fetchedAt": "2026-10-02T22:55:18.243507+00:00",
+  "extractedAt": "2026-10-02T22:55:18.265448+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Chronicle — Style Reference",
+  "htmlSha256": "03d9ad30d373c1a8fc94201b5e4d4f58b33d122fca7951bd4e48ebed18d2c6e2",
+  "cache": ".cache/1c60b014-473b-443b-b0f5-220612feebb7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0660cca33f2baf3756e3a724a56a3ca746dfbb10b1a980c3d0e7e161ca6bf191",
+      "bytes": 20122,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6b6dfbfb-dc8b-4442-bd91-bce06e12a2d5.jpg",
+    "fetchedAt": "2026-10-02T22:55:20.276351+00:00",
+    "sha256": "fd8fc46084bbafff549a9b9bd0904d3b3bd17ca207f588c5acca75d47836f7d2",
+    "bytes": 97504,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

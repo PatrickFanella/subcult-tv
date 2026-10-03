@@ -1,0 +1,29 @@
+{
+  "styleId": "a85c74b9-2166-4fa3-be49-a2cc48990c6a",
+  "sourceUrl": "https://styles.refero.design/style/a85c74b9-2166-4fa3-be49-a2cc48990c6a",
+  "fetchedAt": "2026-10-02T22:17:42.220628+00:00",
+  "extractedAt": "2026-10-02T22:17:42.242944+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Allier Ho — Style Reference",
+  "htmlSha256": "5e51dbfe6290ed710fc8dd1f90744cbe1002720c70bfb589da84f295cfa3f39d",
+  "cache": ".cache/a85c74b9-2166-4fa3-be49-a2cc48990c6a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "050664a60608d9dc4ea9a4fdc4a00d3f0f1055ef952885bc0bc8ac1fdb93766c",
+      "bytes": 16853,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/19e2edd6-a415-42b2-860f-88aeee7d94ca.jpg",
+    "fetchedAt": "2026-10-02T22:17:44.246364+00:00",
+    "sha256": "499fd9b0d89efe41500a2f667df1024366e59daa8278c9267a085de4d5408ffe",
+    "bytes": 59438,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

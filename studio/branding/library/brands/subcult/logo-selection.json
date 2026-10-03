@@ -1,0 +1,139 @@
+{
+  "approved_by": "user",
+  "registration_lines": false,
+  "primary": "c-solid",
+  "outlined": "b-heavy-outline",
+  "compact": "d-compact",
+  "construction": "Single continuous underscore; no extension rectangle.",
+  "original_source": "references/subcult-mark-master.svg",
+  "original_sha256": "f3d146fa2bd5e5ab409b3f16191a85aff8e9eaef8336dfaf79ae1585947dd140",
+  "files": [
+    {
+      "path": "mark-primary.svg",
+      "sha256": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222"
+    },
+    {
+      "path": "mark-primary-outlined.svg",
+      "sha256": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222"
+    },
+    {
+      "path": "mark-dark.svg",
+      "sha256": "70685b0292b7b258d43a782f52444e9267e6978c78efac66367e6beb58f0ac10"
+    },
+    {
+      "path": "mark-dark-outlined.svg",
+      "sha256": "70685b0292b7b258d43a782f52444e9267e6978c78efac66367e6beb58f0ac10"
+    },
+    {
+      "path": "mark-light.svg",
+      "sha256": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222"
+    },
+    {
+      "path": "mark-light-outlined.svg",
+      "sha256": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222"
+    },
+    {
+      "path": "mark-mono-dark.svg",
+      "sha256": "e2005fa96e25f813915fb851bb663c1decae04ef5d8c99788131313f878d9c52"
+    },
+    {
+      "path": "mark-mono-dark-outlined.svg",
+      "sha256": "e2005fa96e25f813915fb851bb663c1decae04ef5d8c99788131313f878d9c52"
+    },
+    {
+      "path": "mark-mono-light.svg",
+      "sha256": "2a10aa4e64da069e3778f25f09c717443492f3fe248e4d976e2904a99e0584bc"
+    },
+    {
+      "path": "mark-mono-light-outlined.svg",
+      "sha256": "2a10aa4e64da069e3778f25f09c717443492f3fe248e4d976e2904a99e0584bc"
+    },
+    {
+      "path": "mark-outline-primary.svg",
+      "sha256": "e252e2e9068c9dfcd4bdd2ffd9a0f213443de1a6668bd75ceade5f5cd5db0f3a"
+    },
+    {
+      "path": "mark-outline-primary-outlined.svg",
+      "sha256": "e252e2e9068c9dfcd4bdd2ffd9a0f213443de1a6668bd75ceade5f5cd5db0f3a"
+    },
+    {
+      "path": "mark-outline-dark.svg",
+      "sha256": "105aaf24d42a69ce5eaa697ecc6273047048bb4b255725a330c458cf9bec6321"
+    },
+    {
+      "path": "mark-outline-dark-outlined.svg",
+      "sha256": "105aaf24d42a69ce5eaa697ecc6273047048bb4b255725a330c458cf9bec6321"
+    },
+    {
+      "path": "mark-outline-light.svg",
+      "sha256": "e252e2e9068c9dfcd4bdd2ffd9a0f213443de1a6668bd75ceade5f5cd5db0f3a"
+    },
+    {
+      "path": "mark-outline-light-outlined.svg",
+      "sha256": "e252e2e9068c9dfcd4bdd2ffd9a0f213443de1a6668bd75ceade5f5cd5db0f3a"
+    },
+    {
+      "path": "mark-outline-mono-dark.svg",
+      "sha256": "b9f7b76159d5f56945a65091a712af2946e7f3602843da3625940745cd4aca01"
+    },
+    {
+      "path": "mark-outline-mono-dark-outlined.svg",
+      "sha256": "b9f7b76159d5f56945a65091a712af2946e7f3602843da3625940745cd4aca01"
+    },
+    {
+      "path": "mark-outline-mono-light.svg",
+      "sha256": "2170f53c821f405a80e2e6e96ad89f1e46e275fdcfa22220f4773559c52af81f"
+    },
+    {
+      "path": "mark-outline-mono-light-outlined.svg",
+      "sha256": "2170f53c821f405a80e2e6e96ad89f1e46e275fdcfa22220f4773559c52af81f"
+    },
+    {
+      "path": "mark-compact-primary.svg",
+      "sha256": "39d405daa88cb0bd2e464436374dc5b4a78817605fc23df24b404e8501865c54"
+    },
+    {
+      "path": "mark-compact-primary-outlined.svg",
+      "sha256": "39d405daa88cb0bd2e464436374dc5b4a78817605fc23df24b404e8501865c54"
+    },
+    {
+      "path": "mark-compact-dark.svg",
+      "sha256": "3ca6f472785eab3f20f2f004ccceff69900dfeec128152a2021e3eb5e7493ab2"
+    },
+    {
+      "path": "mark-compact-dark-outlined.svg",
+      "sha256": "3ca6f472785eab3f20f2f004ccceff69900dfeec128152a2021e3eb5e7493ab2"
+    },
+    {
+      "path": "mark-compact-light.svg",
+      "sha256": "39d405daa88cb0bd2e464436374dc5b4a78817605fc23df24b404e8501865c54"
+    },
+    {
+      "path": "mark-compact-light-outlined.svg",
+      "sha256": "39d405daa88cb0bd2e464436374dc5b4a78817605fc23df24b404e8501865c54"
+    },
+    {
+      "path": "mark-compact-mono-dark.svg",
+      "sha256": "7e2995e871a634a98797891ddcc0b5d9bdaa9105c637e40846fccb23c9519b46"
+    },
+    {
+      "path": "mark-compact-mono-dark-outlined.svg",
+      "sha256": "7e2995e871a634a98797891ddcc0b5d9bdaa9105c637e40846fccb23c9519b46"
+    },
+    {
+      "path": "mark-compact-mono-light.svg",
+      "sha256": "2a97a52f10bbe3d6d51b513b76746fa04d7f54cad15ac275031832e55b510027"
+    },
+    {
+      "path": "mark-compact-mono-light-outlined.svg",
+      "sha256": "2a97a52f10bbe3d6d51b513b76746fa04d7f54cad15ac275031832e55b510027"
+    }
+  ],
+  "circle": {
+    "approved_by": "user",
+    "path": "mark-fisheye-circle.png",
+    "source": "reviews/subcult-logo-fisheye/fisheye-circle-study.png",
+    "sha256": "d2207dea611860cb3efdd7ea27ba01d43ed658285a8df62e3de896cb81490c53",
+    "scope": "Replaces purple circle logo treatments; preserve the approved raster artwork."
+  }
+}

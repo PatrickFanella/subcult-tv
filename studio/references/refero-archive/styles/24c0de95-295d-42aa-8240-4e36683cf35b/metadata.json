@@ -1,0 +1,29 @@
+{
+  "styleId": "24c0de95-295d-42aa-8240-4e36683cf35b",
+  "sourceUrl": "https://styles.refero.design/style/24c0de95-295d-42aa-8240-4e36683cf35b",
+  "fetchedAt": "2026-10-02T22:54:42.208212+00:00",
+  "extractedAt": "2026-10-02T22:54:42.231174+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "NGLORA — Style Reference",
+  "htmlSha256": "793beb2f490e36863e8da7f67b0820da8b283af9e8654d5ec9cdfb775f017048",
+  "cache": ".cache/24c0de95-295d-42aa-8240-4e36683cf35b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2ce1e818e208e3f1f2996b52b636a1d336c0241eac065fb69b6d2b6cb47c2eda",
+      "bytes": 12843,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/93bb61eb-403f-4e05-9a54-f6851f60aacb.jpg",
+    "fetchedAt": "2026-10-02T22:54:44.140558+00:00",
+    "sha256": "8c48958f3267d2636190d79911ed33a1d9d98d2f51dce4118cf47a4df282de9e",
+    "bytes": 38743,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

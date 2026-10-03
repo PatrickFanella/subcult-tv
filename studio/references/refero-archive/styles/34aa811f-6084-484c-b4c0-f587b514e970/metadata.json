@@ -1,0 +1,29 @@
+{
+  "styleId": "34aa811f-6084-484c-b4c0-f587b514e970",
+  "sourceUrl": "https://styles.refero.design/style/34aa811f-6084-484c-b4c0-f587b514e970",
+  "fetchedAt": "2026-10-02T22:05:42.315579+00:00",
+  "extractedAt": "2026-10-02T22:05:42.339920+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Charlie — Style Reference",
+  "htmlSha256": "acd04dfec18e90148d99522ceb7d4f7146a32dd9a3f8ac8499c1a7d427667a06",
+  "cache": ".cache/34aa811f-6084-484c-b4c0-f587b514e970.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fbf6e387b221d507a46042055d80dc4f94c14c120acf3e0e5dc2bac9418f922e",
+      "bytes": 15922,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/969b1e68-d32b-4c41-b1c1-735c4a568094.jpg",
+    "fetchedAt": "2026-10-02T22:05:44.260465+00:00",
+    "sha256": "4cc91df227ae3c295899b9db0dc0125c1b3ca351284805e48b2e9435bedd6234",
+    "bytes": 81668,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

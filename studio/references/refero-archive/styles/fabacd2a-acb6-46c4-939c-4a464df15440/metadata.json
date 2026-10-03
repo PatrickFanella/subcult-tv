@@ -1,0 +1,29 @@
+{
+  "styleId": "fabacd2a-acb6-46c4-939c-4a464df15440",
+  "sourceUrl": "https://styles.refero.design/style/fabacd2a-acb6-46c4-939c-4a464df15440",
+  "fetchedAt": "2026-10-02T22:41:46.441594+00:00",
+  "extractedAt": "2026-10-02T22:41:46.464879+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aboard — Style Reference",
+  "htmlSha256": "1da43e7b2c6b9f094af2aee0a6d33728bcfe80fd924270f6e4bbeb9f80785b28",
+  "cache": ".cache/fabacd2a-acb6-46c4-939c-4a464df15440.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5a90799f63a5f1d535f68c4ffcda63d298d8b0050843e33bb756cf40365baa8c",
+      "bytes": 22089,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b4b988e6-dc51-415e-86e5-5bad4b201cba.jpg",
+    "fetchedAt": "2026-10-02T22:41:48.336590+00:00",
+    "sha256": "bd367ba45adca6f26e70181dd4aa59923ef957ee20679dbbb745a80d4416aeeb",
+    "bytes": 76635,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

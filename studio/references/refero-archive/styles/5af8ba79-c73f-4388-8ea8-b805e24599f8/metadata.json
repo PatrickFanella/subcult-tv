@@ -1,0 +1,29 @@
+{
+  "styleId": "5af8ba79-c73f-4388-8ea8-b805e24599f8",
+  "sourceUrl": "https://styles.refero.design/style/5af8ba79-c73f-4388-8ea8-b805e24599f8",
+  "fetchedAt": "2026-10-02T22:32:30.242410+00:00",
+  "extractedAt": "2026-10-02T22:32:30.264266+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Magicbeans — Style Reference",
+  "htmlSha256": "0add00712848e72b3ec415e02200c827329542d5e4f63dbdcc9ee03f8fb8b32b",
+  "cache": ".cache/5af8ba79-c73f-4388-8ea8-b805e24599f8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cbfdc3e944506c97b4a2669f5ec8833f88fe099e2db59a1c1664aeac0666c927",
+      "bytes": 17722,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/04947b26-6fab-4aeb-b977-d4c2608c0278.jpg",
+    "fetchedAt": "2026-10-02T22:32:32.282358+00:00",
+    "sha256": "7139b1a2c6f6ec3e4edea6a5807b615a930eba34907f5c046216fe56f33480f4",
+    "bytes": 100609,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

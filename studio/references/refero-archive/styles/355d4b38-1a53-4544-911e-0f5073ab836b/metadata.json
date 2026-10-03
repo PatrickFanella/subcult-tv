@@ -1,0 +1,29 @@
+{
+  "styleId": "355d4b38-1a53-4544-911e-0f5073ab836b",
+  "sourceUrl": "https://styles.refero.design/style/355d4b38-1a53-4544-911e-0f5073ab836b",
+  "fetchedAt": "2026-10-02T22:06:58.186028+00:00",
+  "extractedAt": "2026-10-02T22:06:58.213627+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Kobu — Style Reference",
+  "htmlSha256": "05c18d6632bd8efc9a09fd41be785e243c658b715326c3c94bcf1268ce0b4ec3",
+  "cache": ".cache/355d4b38-1a53-4544-911e-0f5073ab836b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6b345f926174f073796d2eceef8d13b4f8e3d72e7f96d1b77f6cd15d45c8c1f8",
+      "bytes": 21609,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/048670f1-6f5b-42ed-997e-ada8a985f08f.jpg",
+    "fetchedAt": "2026-10-02T22:07:00.263540+00:00",
+    "sha256": "f5160b9700b1c602a63710797e149ff2c98f4ae5890d0a7ee9c716065cc80e6a",
+    "bytes": 145116,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "4c33d8fe-81d5-46cb-9dc1-dd231be1c9ec",
+  "sourceUrl": "https://styles.refero.design/style/4c33d8fe-81d5-46cb-9dc1-dd231be1c9ec",
+  "fetchedAt": "2026-10-02T22:40:54.870040+00:00",
+  "extractedAt": "2026-10-02T22:40:54.892984+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cake Equity — Style Reference",
+  "htmlSha256": "7aadeee1396ec2d27805fe7c966e37ddf662900de4d828a640f9f21c4fbad804",
+  "cache": ".cache/4c33d8fe-81d5-46cb-9dc1-dd231be1c9ec.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "046b681bffaad2045b39eded2e3ebf702828583bcc6d67c274e94cdfb1dfa1f8",
+      "bytes": 24263,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4d59b112-d21c-437a-9965-e6f03d8a5d06.jpg",
+    "fetchedAt": "2026-10-02T22:40:56.275499+00:00",
+    "sha256": "7e0119f71e0459edd52b40fe7bec54145a733a2b5c0b1159da20e04e5e7f991b",
+    "bytes": 152774,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

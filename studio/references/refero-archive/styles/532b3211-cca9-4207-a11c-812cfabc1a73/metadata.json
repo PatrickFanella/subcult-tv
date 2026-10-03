@@ -1,0 +1,29 @@
+{
+  "styleId": "532b3211-cca9-4207-a11c-812cfabc1a73",
+  "sourceUrl": "https://styles.refero.design/style/532b3211-cca9-4207-a11c-812cfabc1a73",
+  "fetchedAt": "2026-10-02T22:33:54.199361+00:00",
+  "extractedAt": "2026-10-02T22:33:54.220136+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ghost — Style Reference",
+  "htmlSha256": "b085aff3e21a215aeef8e9a5e72617115a113524b30f6f5eeb82431071fec766",
+  "cache": ".cache/532b3211-cca9-4207-a11c-812cfabc1a73.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6721ae4b33dba579d492e53ff707cb4eb35502f27dcfd00788de081f7db2bfb8",
+      "bytes": 23129,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0a2e778e-697d-4366-b032-4b819eb1745b.jpg",
+    "fetchedAt": "2026-10-02T22:33:56.293170+00:00",
+    "sha256": "8a248de5ea3725aa085a9c9615a477078f5a85848a6fe5e5b0a457b264bf89a3",
+    "bytes": 80155,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

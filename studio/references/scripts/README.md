@@ -5,7 +5,7 @@
 From the repository root:
 
 ```bash
-cd studio/references
+cd "$HOME/Documents/Design References"
 python scripts/pull_refero.py --dry-run
 python scripts/pull_refero.py --limit 3
 python scripts/pull_refero.py

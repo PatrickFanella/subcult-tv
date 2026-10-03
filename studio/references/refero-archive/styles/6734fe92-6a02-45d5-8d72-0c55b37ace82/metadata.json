@@ -1,0 +1,29 @@
+{
+  "styleId": "6734fe92-6a02-45d5-8d72-0c55b37ace82",
+  "sourceUrl": "https://styles.refero.design/style/6734fe92-6a02-45d5-8d72-0c55b37ace82",
+  "fetchedAt": "2026-10-02T22:36:26.181880+00:00",
+  "extractedAt": "2026-10-02T22:36:26.206059+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aqua Voice — Style Reference",
+  "htmlSha256": "035493342c588835c65ab6b6804bbeda7c1c4565b88575791f0c8b819f71da7e",
+  "cache": ".cache/6734fe92-6a02-45d5-8d72-0c55b37ace82.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2b8a704662365b14c570009e93d49d0c5cef0bcd705b6ce24d5552eb1bafbd88",
+      "bytes": 24945,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ff59fede-acc6-4f6b-ad26-da40a03d3038.jpg",
+    "fetchedAt": "2026-10-02T22:36:28.229698+00:00",
+    "sha256": "8dbc032a706c269abe84dd4e99af44a29c4d02f2c209045959d91c8cb7cdbed5",
+    "bytes": 50436,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

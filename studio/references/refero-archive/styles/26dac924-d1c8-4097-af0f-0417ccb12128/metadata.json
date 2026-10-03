@@ -1,0 +1,29 @@
+{
+  "styleId": "26dac924-d1c8-4097-af0f-0417ccb12128",
+  "sourceUrl": "https://styles.refero.design/style/26dac924-d1c8-4097-af0f-0417ccb12128",
+  "fetchedAt": "2026-10-02T22:05:22.440348+00:00",
+  "extractedAt": "2026-10-02T22:05:22.470938+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "HoneyBook — Style Reference",
+  "htmlSha256": "3c295ce68c0b682143a505554dd147bfa9cbfa835e1c672e7c74149dd1620867",
+  "cache": ".cache/26dac924-d1c8-4097-af0f-0417ccb12128.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4ea6ecc446cccc6ff63b52b00f7d53ac76daa126d8b68d9ada5501a60cad8145",
+      "bytes": 20467,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/33c70a47-63a4-4f40-8cdf-46f6c7074e99.jpg",
+    "fetchedAt": "2026-10-02T22:05:24.218760+00:00",
+    "sha256": "0f1dd544a7e33bc00de0428e6c93eead57fbcc44dcfefbb147a4033b85c882ac",
+    "bytes": 133702,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

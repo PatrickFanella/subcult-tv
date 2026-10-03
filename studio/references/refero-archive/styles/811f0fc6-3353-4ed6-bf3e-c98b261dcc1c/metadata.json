@@ -1,0 +1,29 @@
+{
+  "styleId": "811f0fc6-3353-4ed6-bf3e-c98b261dcc1c",
+  "sourceUrl": "https://styles.refero.design/style/811f0fc6-3353-4ed6-bf3e-c98b261dcc1c",
+  "fetchedAt": "2026-10-02T22:31:14.205042+00:00",
+  "extractedAt": "2026-10-02T22:31:14.228419+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Alveos One — Style Reference",
+  "htmlSha256": "2110b98f8947ff8b92a4aaae2708a455dcf5958a6985188313281ac731b6bba9",
+  "cache": ".cache/811f0fc6-3353-4ed6-bf3e-c98b261dcc1c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8162d0b2f4bfdd1c3192b1cc798b1e397b79fea7e41d80e4b010f06ee1a19185",
+      "bytes": 25604,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0b6e5059-cb74-49e0-8143-1e35c5d4c491.jpg",
+    "fetchedAt": "2026-10-02T22:31:16.147954+00:00",
+    "sha256": "bd2925ac814a1b7a6d4d1a39ba2e5c1908770000d058c26f1eef3046d3b1e4ad",
+    "bytes": 55895,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

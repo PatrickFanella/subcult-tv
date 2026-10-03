@@ -1,0 +1,29 @@
+{
+  "styleId": "5e9d8377-e6f2-4063-b678-9f1bbfc24598",
+  "sourceUrl": "https://styles.refero.design/style/5e9d8377-e6f2-4063-b678-9f1bbfc24598",
+  "fetchedAt": "2026-10-02T22:17:18.324053+00:00",
+  "extractedAt": "2026-10-02T22:17:18.345191+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Jam — Style Reference",
+  "htmlSha256": "18d9a70f336f1da68094fd9eb53fa0d8f7274d5564330edd6f381798ccc55b15",
+  "cache": ".cache/5e9d8377-e6f2-4063-b678-9f1bbfc24598.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cd2717bd681f1de85f0615311ae9b7c4d49fdfcc6f346d97acff351507bea509",
+      "bytes": 23307,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/adb19ae9-22a9-4037-ad35-28c71e86b675.jpg",
+    "fetchedAt": "2026-10-02T22:17:20.267913+00:00",
+    "sha256": "ab00dfc781edc65af2c84ca861dcb4c5f87c98d675d0c167e6ae9b3559cba80e",
+    "bytes": 77153,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

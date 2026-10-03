@@ -1,0 +1,29 @@
+{
+  "styleId": "1680693c-aed8-47e8-917a-04eb89497b09",
+  "sourceUrl": "https://styles.refero.design/style/1680693c-aed8-47e8-917a-04eb89497b09",
+  "fetchedAt": "2026-10-02T22:02:46.297511+00:00",
+  "extractedAt": "2026-10-02T22:02:46.321078+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Rainbow — Style Reference",
+  "htmlSha256": "0ac57af408399093fd16bff5f50b0bd23f283d6b477569b4a8aeaee63f8b6f11",
+  "cache": ".cache/1680693c-aed8-47e8-917a-04eb89497b09.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "784221ab32b0291d33c7d4931206dea7937e9671b6c2fefc217eb6c5ae1910a0",
+      "bytes": 24324,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/35b74d66-f371-4231-93de-5780744e71c6.jpg",
+    "fetchedAt": "2026-10-02T22:02:48.244868+00:00",
+    "sha256": "ecfe233c4faa5cdb32a022c2bf3fba47b114c2d180bd6ee3d0c84097ba0ed25d",
+    "bytes": 107100,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

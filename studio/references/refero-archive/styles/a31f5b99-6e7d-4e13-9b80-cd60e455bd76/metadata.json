@@ -1,0 +1,29 @@
+{
+  "styleId": "a31f5b99-6e7d-4e13-9b80-cd60e455bd76",
+  "sourceUrl": "https://styles.refero.design/style/a31f5b99-6e7d-4e13-9b80-cd60e455bd76",
+  "fetchedAt": "2026-10-02T22:20:10.221391+00:00",
+  "extractedAt": "2026-10-02T22:20:10.249932+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "wix.com — Style Reference",
+  "htmlSha256": "490b52f6614c94140de1be6087d1048df3c4556ecd1d0dc2476cc942a98633a0",
+  "cache": ".cache/a31f5b99-6e7d-4e13-9b80-cd60e455bd76.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "73362bc043eb3e945982f1f32ba2b69104f5afbc11f2aa3db09c772dc529e154",
+      "bytes": 25887,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a48d55a3-a011-4185-9175-13a330547c7d.jpg",
+    "fetchedAt": "2026-10-02T22:20:12.357705+00:00",
+    "sha256": "1098f231d12444dc6d02a470745c6eeab87e055bbb07be38adba2b8d7873eb0e",
+    "bytes": 124634,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

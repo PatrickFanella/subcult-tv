@@ -1,0 +1,29 @@
+{
+  "styleId": "87574d45-e35d-4ffd-8560-99fee4008d2b",
+  "sourceUrl": "https://styles.refero.design/style/87574d45-e35d-4ffd-8560-99fee4008d2b",
+  "fetchedAt": "2026-10-02T22:19:42.238826+00:00",
+  "extractedAt": "2026-10-02T22:19:42.261569+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Kikin — Style Reference",
+  "htmlSha256": "017a457477a29e1b071c23b18af2bd03885a22c34936bc1cba921569aea9b05c",
+  "cache": ".cache/87574d45-e35d-4ffd-8560-99fee4008d2b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bfbef713b73520eaf6d40ee4d4241a043d66754f94fb4977d05a77b259d5d2bf",
+      "bytes": 22102,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6804c42a-0be6-43a8-993f-98b4d4bfe01e.jpg",
+    "fetchedAt": "2026-10-02T22:19:44.320962+00:00",
+    "sha256": "8661143b50dfbebf22708791b429194b29b71b088e18688d528b6028cd55b403",
+    "bytes": 206204,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

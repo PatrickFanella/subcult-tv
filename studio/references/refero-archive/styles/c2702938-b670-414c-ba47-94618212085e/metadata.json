@@ -1,0 +1,29 @@
+{
+  "styleId": "c2702938-b670-414c-ba47-94618212085e",
+  "sourceUrl": "https://styles.refero.design/style/c2702938-b670-414c-ba47-94618212085e",
+  "fetchedAt": "2026-10-02T22:15:30.311309+00:00",
+  "extractedAt": "2026-10-02T22:15:30.336055+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Caserne — Style Reference",
+  "htmlSha256": "8632e1ffcd902cb63b6b71ee68af872fc857bb646881943c781b624694570d22",
+  "cache": ".cache/c2702938-b670-414c-ba47-94618212085e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "64d0378e907a82b93382984e496ed38e1ed547b9d28b32384478697d37e7c9e6",
+      "bytes": 13751,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7dd4c7c3-787d-4537-9e0f-80883ad972e9.jpg",
+    "fetchedAt": "2026-10-02T22:15:32.266767+00:00",
+    "sha256": "76190ae2f504bdae7c3887f8f06269176128118e73581c7af573a7dd01c29882",
+    "bytes": 147184,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

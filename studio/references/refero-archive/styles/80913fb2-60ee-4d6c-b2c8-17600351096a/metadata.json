@@ -1,0 +1,29 @@
+{
+  "styleId": "80913fb2-60ee-4d6c-b2c8-17600351096a",
+  "sourceUrl": "https://styles.refero.design/style/80913fb2-60ee-4d6c-b2c8-17600351096a",
+  "fetchedAt": "2026-10-02T22:14:38.436392+00:00",
+  "extractedAt": "2026-10-02T22:14:38.461959+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "The Pop Manifesto — Style Reference",
+  "htmlSha256": "01d51b50c00dc112df59ff3a8d1c2731d4d4e153e81940eb26af11ee025f448e",
+  "cache": ".cache/80913fb2-60ee-4d6c-b2c8-17600351096a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "cc0d0449054a1d3a039f2e88600221ff16554c5c6bdb385b9651bf50c289fa6f",
+      "bytes": 14754,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/88ee8f01-1511-4855-a4b8-dfbf2317cfb8.jpg",
+    "fetchedAt": "2026-10-02T22:14:40.275030+00:00",
+    "sha256": "a488a7a7cfb9d52ec5a287ac4f127242e3401e28c8ef51a1a8fc71079c5679b5",
+    "bytes": 139060,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

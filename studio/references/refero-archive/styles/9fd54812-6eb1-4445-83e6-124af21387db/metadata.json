@@ -1,0 +1,29 @@
+{
+  "styleId": "9fd54812-6eb1-4445-83e6-124af21387db",
+  "sourceUrl": "https://styles.refero.design/style/9fd54812-6eb1-4445-83e6-124af21387db",
+  "fetchedAt": "2026-10-02T22:33:30.305650+00:00",
+  "extractedAt": "2026-10-02T22:33:30.328773+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Tedy — Style Reference",
+  "htmlSha256": "c00ca8fa02e198481d8f45a3ab93c47a04e91d2ca714b20b79fda71757bbc44f",
+  "cache": ".cache/9fd54812-6eb1-4445-83e6-124af21387db.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1f871162955f4a1ea57bfb61fe7fe69347434d5e554bdc7d4e4d1fbfaf8b3082",
+      "bytes": 24982,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6c7131b8-44d4-482c-b90f-86d4a7f10d9d.jpg",
+    "fetchedAt": "2026-10-02T22:33:32.238198+00:00",
+    "sha256": "db4acba29d38239289991dae80c88b7fefcdfbaa33649b77f414c9c29be81120",
+    "bytes": 159337,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

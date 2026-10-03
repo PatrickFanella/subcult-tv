@@ -1,0 +1,29 @@
+{
+  "styleId": "f4e1b510-6085-4fb8-8597-05d479d3c00c",
+  "sourceUrl": "https://styles.refero.design/style/f4e1b510-6085-4fb8-8597-05d479d3c00c",
+  "fetchedAt": "2026-10-02T22:25:38.221211+00:00",
+  "extractedAt": "2026-10-02T22:25:38.245008+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cup of Couple — Style Reference",
+  "htmlSha256": "ba1c24f13e5bdc463f883da6974d62d5fd2c712098082e2ec9df4834f5887d74",
+  "cache": ".cache/f4e1b510-6085-4fb8-8597-05d479d3c00c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "009348f742252c36e204babda11aa93522212ac5059734f808e33e13d5ade29d",
+      "bytes": 18712,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f17b8cc8-d9b5-4031-bc93-c66ca98a9e5d.jpg",
+    "fetchedAt": "2026-10-02T22:25:40.231134+00:00",
+    "sha256": "c57d3c7acfeafe0ebb9dc65a7bc1ed360e490604176aafd1aba19b9f9f4686ad",
+    "bytes": 180314,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

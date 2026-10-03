@@ -1,0 +1,29 @@
+{
+  "styleId": "2c18e573-0ffb-4f0d-848c-ff72a5839fd3",
+  "sourceUrl": "https://styles.refero.design/style/2c18e573-0ffb-4f0d-848c-ff72a5839fd3",
+  "fetchedAt": "2026-10-02T22:08:30.185915+00:00",
+  "extractedAt": "2026-10-02T22:08:30.210442+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cori Corinne — Style Reference",
+  "htmlSha256": "945d04cb06f8f3e224c90e69a2dde5b655c1d4d141e175298e1e7fcd1b53c01e",
+  "cache": ".cache/2c18e573-0ffb-4f0d-848c-ff72a5839fd3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9f5f5f25f094168edcd4f878e992d6c70ae77329ee88f3788f7ac5ed708a5849",
+      "bytes": 12899,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ad2c454b-53f2-422a-a1b6-99e3292a9d5b.jpg",
+    "fetchedAt": "2026-10-02T22:08:32.372368+00:00",
+    "sha256": "a5aea66b8db8f84af3926717dd7ddd014e436b3ac9e39e8af4bd0772f2c5b0c9",
+    "bytes": 157345,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

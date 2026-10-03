@@ -1,0 +1,29 @@
+{
+  "styleId": "d83fd0b1-afde-41ff-b970-c622bfed9f59",
+  "sourceUrl": "https://styles.refero.design/style/d83fd0b1-afde-41ff-b970-c622bfed9f59",
+  "fetchedAt": "2026-10-02T22:24:42.183925+00:00",
+  "extractedAt": "2026-10-02T22:24:42.203880+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "MANNA — Style Reference",
+  "htmlSha256": "4620426a96786a318feaefa43d235801ccade5e4a4acf994b29cee2fd2c83014",
+  "cache": ".cache/d83fd0b1-afde-41ff-b970-c622bfed9f59.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8989e43958c51884ee7420bb03d4d008c988d19560babbb15d6d8c6d68593856",
+      "bytes": 14349,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ff6f7773-c013-4a1d-a4f1-5b75b7dee239.jpg",
+    "fetchedAt": "2026-10-02T22:24:44.277361+00:00",
+    "sha256": "8001622dec979bfa9252bd484ccab31be42651fa991134eb53ec622cb36bc318",
+    "bytes": 269713,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

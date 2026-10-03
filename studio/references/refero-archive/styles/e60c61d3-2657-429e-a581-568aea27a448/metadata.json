@@ -1,0 +1,29 @@
+{
+  "styleId": "e60c61d3-2657-429e-a581-568aea27a448",
+  "sourceUrl": "https://styles.refero.design/style/e60c61d3-2657-429e-a581-568aea27a448",
+  "fetchedAt": "2026-10-02T22:18:10.432542+00:00",
+  "extractedAt": "2026-10-02T22:18:10.456228+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Boostinsurance — Style Reference",
+  "htmlSha256": "78b79f8705d32d5f2b3c65fc7297296597d0a6a612af43ada76a2cd32bf62f18",
+  "cache": ".cache/e60c61d3-2657-429e-a581-568aea27a448.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "6e3946171b9bd9919e4a3ace3e2cf19f6e3bb8168cdfae0b0781b4b30c82ce9c",
+      "bytes": 25397,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/062abc90-b6cb-40f0-a02c-3c66449ff87f.jpg",
+    "fetchedAt": "2026-10-02T22:18:12.174539+00:00",
+    "sha256": "71a1f6ed4c488fcc78583eeeda57add40a1b6b297546b48839a56d229005e5bd",
+    "bytes": 15414,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "1fa0d9da-966f-4d43-9775-e156bec3a3b3",
+  "sourceUrl": "https://styles.refero.design/style/1fa0d9da-966f-4d43-9775-e156bec3a3b3",
+  "fetchedAt": "2026-10-02T22:39:46.207965+00:00",
+  "extractedAt": "2026-10-02T22:39:46.230514+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Eventbrite — Style Reference",
+  "htmlSha256": "d9c9a7225fc4727c8bcaba6e8bb62911eaeaf217d1abfd0d97c2f968239e4c19",
+  "cache": ".cache/1fa0d9da-966f-4d43-9775-e156bec3a3b3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a4322be4255fa20c538aa077c28d328b382b198458f0fbc600f50abd82f6ffd2",
+      "bytes": 20207,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/08c41b27-4919-484f-bb6b-393eca33d37b.jpg",
+    "fetchedAt": "2026-10-02T22:39:48.317662+00:00",
+    "sha256": "82790e7e3901c6e3d529b678d636b73a5ab8778f5c7af2ce0af473f42dcc1121",
+    "bytes": 128391,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

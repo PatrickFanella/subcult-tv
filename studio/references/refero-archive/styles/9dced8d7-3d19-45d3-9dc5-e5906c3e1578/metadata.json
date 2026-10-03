@@ -1,0 +1,29 @@
+{
+  "styleId": "9dced8d7-3d19-45d3-9dc5-e5906c3e1578",
+  "sourceUrl": "https://styles.refero.design/style/9dced8d7-3d19-45d3-9dc5-e5906c3e1578",
+  "fetchedAt": "2026-10-02T22:13:34.205319+00:00",
+  "extractedAt": "2026-10-02T22:13:34.230753+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Spellbook — Style Reference",
+  "htmlSha256": "e60813d2c9bce4239e7873ebc82303206229c259164bb86a980e74becfe43649",
+  "cache": ".cache/9dced8d7-3d19-45d3-9dc5-e5906c3e1578.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4bf1d7a2d7ee24cfa88fb44e276481449e0821d32b696b6bc9a6769011e8fcf0",
+      "bytes": 21408,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c6b2496b-db0e-49b1-9085-4a153f7c0d31.jpg",
+    "fetchedAt": "2026-10-02T22:13:36.247823+00:00",
+    "sha256": "373921baeb982f1c750dae249bd63056ab4546715577bcd8fe53b6d92299276b",
+    "bytes": 92338,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

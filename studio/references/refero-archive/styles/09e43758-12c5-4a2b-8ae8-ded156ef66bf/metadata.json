@@ -1,0 +1,29 @@
+{
+  "styleId": "09e43758-12c5-4a2b-8ae8-ded156ef66bf",
+  "sourceUrl": "https://styles.refero.design/style/09e43758-12c5-4a2b-8ae8-ded156ef66bf",
+  "fetchedAt": "2026-10-02T22:01:54.506105+00:00",
+  "extractedAt": "2026-10-02T22:01:54.537789+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "MekaVerse — Style Reference",
+  "htmlSha256": "92127f245b486475054754d2bdad6ca971465ddd82533acd949492f58bfd0d65",
+  "cache": ".cache/09e43758-12c5-4a2b-8ae8-ded156ef66bf.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "67c624019d1a768443898b91e5fe2ccf3772af0c39d70075ca7a2577b84e2b5a",
+      "bytes": 17980,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9c8ce35d-7020-4c14-b9d3-c6690a20bb7b.jpg",
+    "fetchedAt": "2026-10-02T22:01:56.272851+00:00",
+    "sha256": "b8bed6f2aa8546ebc9bd9d5fefb6b270b7e8cfbd73a365ce96002d2426b4b5e7",
+    "bytes": 164221,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

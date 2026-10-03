@@ -1,0 +1,29 @@
+{
+  "styleId": "348c83bc-bed3-4562-841a-26a30ee19a9b",
+  "sourceUrl": "https://styles.refero.design/style/348c83bc-bed3-4562-841a-26a30ee19a9b",
+  "fetchedAt": "2026-10-02T22:43:54.276759+00:00",
+  "extractedAt": "2026-10-02T22:43:54.298084+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Fonts In Use — Style Reference",
+  "htmlSha256": "9d7e29bc083cd118e5f9cec9b1d15e10412452e05068a16c8a759e4859986ebe",
+  "cache": ".cache/348c83bc-bed3-4562-841a-26a30ee19a9b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2cb1436a3f2a3700225c5c0bbfa4a73778a19f832e926064aeb382f35b14e2b2",
+      "bytes": 16616,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8353eaa1-6942-407c-9420-4b715d79c584.jpg",
+    "fetchedAt": "2026-10-02T22:43:56.356721+00:00",
+    "sha256": "615a9c2e4f9f1d1b228a415e9d19176b1fc43dcd69ee16687835a0c31469f1b0",
+    "bytes": 207441,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

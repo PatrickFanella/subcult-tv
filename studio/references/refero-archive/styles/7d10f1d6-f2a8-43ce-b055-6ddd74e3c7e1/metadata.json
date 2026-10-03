@@ -1,0 +1,29 @@
+{
+  "styleId": "7d10f1d6-f2a8-43ce-b055-6ddd74e3c7e1",
+  "sourceUrl": "https://styles.refero.design/style/7d10f1d6-f2a8-43ce-b055-6ddd74e3c7e1",
+  "fetchedAt": "2026-10-02T22:20:50.214092+00:00",
+  "extractedAt": "2026-10-02T22:20:50.242815+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Blok — Style Reference",
+  "htmlSha256": "ef68dbbf4c3ed046102f3949fe40e46fbd798577e51232476a02ce7468cd39a9",
+  "cache": ".cache/7d10f1d6-f2a8-43ce-b055-6ddd74e3c7e1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9bc678e9e265fb3d17f722ac14381f7a31f5ee6c368ebf85adcc33e310a2f44a",
+      "bytes": 21543,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4b5ca725-7452-4e22-935f-d4ea2505578e.jpg",
+    "fetchedAt": "2026-10-02T22:20:52.248690+00:00",
+    "sha256": "07d96e61ea9f7dad51598887edfc44baa1ecc93f6df7559ec73866610c8d9c38",
+    "bytes": 129967,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

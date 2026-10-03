@@ -1,0 +1,29 @@
+{
+  "styleId": "b44b0bb2-4ba3-4599-9706-3c3e0c8c2522",
+  "sourceUrl": "https://styles.refero.design/style/b44b0bb2-4ba3-4599-9706-3c3e0c8c2522",
+  "fetchedAt": "2026-10-02T22:35:30.291581+00:00",
+  "extractedAt": "2026-10-02T22:35:30.314279+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Impilo — Style Reference",
+  "htmlSha256": "ec82633c596a5c8ac3af4fc2fc811a816eda027156176c238e0f49f744b2a40c",
+  "cache": ".cache/b44b0bb2-4ba3-4599-9706-3c3e0c8c2522.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e0debd528b7f2ee9259bf4b496f27dc3b6dc71a69a683bc1c756f557087469e4",
+      "bytes": 22301,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/fe87b6cd-9b61-4219-9e26-46588e960a9e.jpg",
+    "fetchedAt": "2026-10-02T22:35:32.262142+00:00",
+    "sha256": "4a8a201c5718bd4e4e952f8b738d9f960a0b4ebe3ca0ba46216f7335fb7f4730",
+    "bytes": 109531,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

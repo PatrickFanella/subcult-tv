@@ -1,0 +1,29 @@
+{
+  "styleId": "04f6cb02-de90-4d78-9c5f-0eb52f826484",
+  "sourceUrl": "https://styles.refero.design/style/04f6cb02-de90-4d78-9c5f-0eb52f826484",
+  "fetchedAt": "2026-10-02T22:12:02.237574+00:00",
+  "extractedAt": "2026-10-02T22:12:02.259175+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Mike Matas — Style Reference",
+  "htmlSha256": "f6b1575735dc4e353ad759c8b80fb5939131061ac10b17d6411ca40b1bc7e7b9",
+  "cache": ".cache/04f6cb02-de90-4d78-9c5f-0eb52f826484.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "18e232e778db9ddcbc76b497a0ab60c674d0d1228835cd59c693ddf6381fd743",
+      "bytes": 12054,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bf83bf87-f03d-43cf-b847-527db9cc3f41.jpg",
+    "fetchedAt": "2026-10-02T22:12:04.363566+00:00",
+    "sha256": "2baeaa7fa651959dfcad73581e8505b1782b6914249590ed1283a58eb3ac8882",
+    "bytes": 103276,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "3f2b79c1-d980-4380-a903-29856975fc37",
+  "sourceUrl": "https://styles.refero.design/style/3f2b79c1-d980-4380-a903-29856975fc37",
+  "fetchedAt": "2026-10-02T22:46:34.216683+00:00",
+  "extractedAt": "2026-10-02T22:46:34.238894+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Midday — Style Reference",
+  "htmlSha256": "948ed7ecb2dcdb3e070cf0d96c4b0be1f16843df5c75df0d8ead281c23d313fd",
+  "cache": ".cache/3f2b79c1-d980-4380-a903-29856975fc37.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "274f048b4c80ceb6c9e44c4e533ea00e58f8f27b55188f74f08d4103d86bbd8e",
+      "bytes": 17827,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0ba618c2-8bbc-4e08-ba60-180bd4484a1e.jpg",
+    "fetchedAt": "2026-10-02T22:46:36.269350+00:00",
+    "sha256": "4a26af3d1017c9ad0dd9d437d39ef8cf416e2f97ada07f7a160f23a2f081fdbf",
+    "bytes": 88389,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "44a6d2a5-16ef-42cd-a69c-33a7af16638d",
+  "sourceUrl": "https://styles.refero.design/style/44a6d2a5-16ef-42cd-a69c-33a7af16638d",
+  "fetchedAt": "2026-10-02T22:02:14.213971+00:00",
+  "extractedAt": "2026-10-02T22:02:14.249930+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Maisonmargiela — Style Reference",
+  "htmlSha256": "1ba0c17cfcfe07fe12b4062ccc333f1e3839aa2a72c176fc68407f0cfee3e0fb",
+  "cache": ".cache/44a6d2a5-16ef-42cd-a69c-33a7af16638d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "52ca18e6c58d8b0373df3e34b3fe860a64118589083fb72d35ed93480e2b0cc4",
+      "bytes": 20908,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2baea77d-8706-4970-a37c-f332820095c6.jpg",
+    "fetchedAt": "2026-10-02T22:02:16.439202+00:00",
+    "sha256": "8fbf16dacb99a46eb639932fd87d835fc7c4974d2068cb1a73c5b6c80c9c7e1a",
+    "bytes": 187515,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

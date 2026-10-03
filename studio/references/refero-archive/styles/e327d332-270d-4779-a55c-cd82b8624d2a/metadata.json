@@ -1,0 +1,29 @@
+{
+  "styleId": "e327d332-270d-4779-a55c-cd82b8624d2a",
+  "sourceUrl": "https://styles.refero.design/style/e327d332-270d-4779-a55c-cd82b8624d2a",
+  "fetchedAt": "2026-10-02T22:04:06.211620+00:00",
+  "extractedAt": "2026-10-02T22:04:06.231883+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "bella Kitchen Appliances — Style Reference",
+  "htmlSha256": "6eeffe86244fd950e167f98c7226d8cfdb3c777c8e76f5983e38dddad1e0dd30",
+  "cache": ".cache/e327d332-270d-4779-a55c-cd82b8624d2a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bd9da4b4c24f5103bdf611afcaad0e832051b05cda1213f50f90747755a8f5ce",
+      "bytes": 19732,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b1e5dab4-46c6-448f-86bf-068210b19eff.jpg",
+    "fetchedAt": "2026-10-02T22:04:08.275601+00:00",
+    "sha256": "7e7f262255ea00b94fdb09ceb148de09512337a3dede8093485f99796ee82d3d",
+    "bytes": 77495,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

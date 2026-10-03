@@ -1,0 +1,29 @@
+{
+  "styleId": "caf8d2ef-4173-4431-9d26-05be0272e9f8",
+  "sourceUrl": "https://styles.refero.design/style/caf8d2ef-4173-4431-9d26-05be0272e9f8",
+  "fetchedAt": "2026-10-02T22:48:18.276088+00:00",
+  "extractedAt": "2026-10-02T22:48:18.298930+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Uber — Style Reference",
+  "htmlSha256": "8df257ae5c65c670bc97262a8f1b405919a50a853c46521e5696eeffa8181d0c",
+  "cache": ".cache/caf8d2ef-4173-4431-9d26-05be0272e9f8.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "18b37ced03e0242d366a0b3084b4708d431fdbeddd24d6261d36abeac9f81f7d",
+      "bytes": 21320,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6ded3ba2-832c-4233-9695-3461b6c98949.jpg",
+    "fetchedAt": "2026-10-02T22:48:20.237731+00:00",
+    "sha256": "8baaf884ef64dcaae818ad52c945ae71a7a510b898ce8a78683b62c1ddd9302c",
+    "bytes": 107718,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

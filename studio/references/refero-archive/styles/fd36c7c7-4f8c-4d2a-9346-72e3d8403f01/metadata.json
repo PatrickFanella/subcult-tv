@@ -1,0 +1,29 @@
+{
+  "styleId": "fd36c7c7-4f8c-4d2a-9346-72e3d8403f01",
+  "sourceUrl": "https://styles.refero.design/style/fd36c7c7-4f8c-4d2a-9346-72e3d8403f01",
+  "fetchedAt": "2026-10-02T22:32:02.201518+00:00",
+  "extractedAt": "2026-10-02T22:32:02.227758+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Athletics — Style Reference",
+  "htmlSha256": "da8631595e59fefad6ca48921154c69f8c84a58a3286493c0911d1de573ca778",
+  "cache": ".cache/fd36c7c7-4f8c-4d2a-9346-72e3d8403f01.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "48a9e3480489926a62821cdf501dba0c1809a25b275726d2cb74edb93c1749e9",
+      "bytes": 16648,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7a89a6e9-1ac4-4333-9988-5d17a4a2ecb5.jpg",
+    "fetchedAt": "2026-10-02T22:32:04.195158+00:00",
+    "sha256": "d536ffbdeebc78282ddfcec67ca11ed125e9f72b1a799fd4f4cf666ffd94a2ba",
+    "bytes": 66772,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

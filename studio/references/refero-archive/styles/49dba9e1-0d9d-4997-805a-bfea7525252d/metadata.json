@@ -1,0 +1,29 @@
+{
+  "styleId": "49dba9e1-0d9d-4997-805a-bfea7525252d",
+  "sourceUrl": "https://styles.refero.design/style/49dba9e1-0d9d-4997-805a-bfea7525252d",
+  "fetchedAt": "2026-10-02T22:39:34.295679+00:00",
+  "extractedAt": "2026-10-02T22:39:34.318099+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Klarna ES — Style Reference",
+  "htmlSha256": "50c14d24a0883f114cc70944aa2992770620ab0712964d0624fc8e10faf1415b",
+  "cache": ".cache/49dba9e1-0d9d-4997-805a-bfea7525252d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d5fede2efb1454b4898cc54809df7843f6b58ae53f8060253a98eec321581e72",
+      "bytes": 22282,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/19d68be7-58e6-4609-aeb4-16e7134db497.jpg",
+    "fetchedAt": "2026-10-02T22:39:36.282257+00:00",
+    "sha256": "5b05a3e180be217af4d79723e66d85edd62dc2f9cac515bc8820ecb6ae847530",
+    "bytes": 97332,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

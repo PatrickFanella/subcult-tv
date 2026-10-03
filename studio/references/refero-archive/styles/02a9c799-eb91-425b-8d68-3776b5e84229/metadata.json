@@ -1,0 +1,29 @@
+{
+  "styleId": "02a9c799-eb91-425b-8d68-3776b5e84229",
+  "sourceUrl": "https://styles.refero.design/style/02a9c799-eb91-425b-8d68-3776b5e84229",
+  "fetchedAt": "2026-10-02T22:38:18.557473+00:00",
+  "extractedAt": "2026-10-02T22:38:18.579672+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Jasper — Style Reference",
+  "htmlSha256": "11abebf0c4a8b8f21448682a206098055f047a6eed8b2833dca39b021c4d6f2c",
+  "cache": ".cache/02a9c799-eb91-425b-8d68-3776b5e84229.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "670f6205ba57ff36bf7c3edd96ffbc2014b1eda3fe73078e7680ca89f94600f3",
+      "bytes": 23684,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/16e2f828-6955-4db0-a031-49c1f0f94439.jpg",
+    "fetchedAt": "2026-10-02T22:38:20.141368+00:00",
+    "sha256": "ebc5e45084adb2ec6c2d4357ad757dc8a2b8240bcd6e457925a83b924f4ee4d4",
+    "bytes": 68421,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

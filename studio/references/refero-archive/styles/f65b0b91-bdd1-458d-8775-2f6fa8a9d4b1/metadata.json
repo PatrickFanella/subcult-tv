@@ -1,0 +1,29 @@
+{
+  "styleId": "f65b0b91-bdd1-458d-8775-2f6fa8a9d4b1",
+  "sourceUrl": "https://styles.refero.design/style/f65b0b91-bdd1-458d-8775-2f6fa8a9d4b1",
+  "fetchedAt": "2026-10-02T22:50:30.204307+00:00",
+  "extractedAt": "2026-10-02T22:50:30.227251+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Arcade — Style Reference",
+  "htmlSha256": "7de69c7ece8b165b267331436497a37957e1adc129c7899367ff1cbfe9998507",
+  "cache": ".cache/f65b0b91-bdd1-458d-8775-2f6fa8a9d4b1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1476240896c7a72bdf8b6f8b32039dad6cca3933407824f53a1dd9ecd759943a",
+      "bytes": 28064,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5b6dacd9-91e0-43b0-819d-4be87d0e1e7d.jpg",
+    "fetchedAt": "2026-10-02T22:50:32.290680+00:00",
+    "sha256": "e50c2a2e5d8e3de014b3c7d42e6c801fca492b78a20a843d6682dc2b13fc34ec",
+    "bytes": 90023,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

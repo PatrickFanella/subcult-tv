@@ -1,0 +1,29 @@
+{
+  "styleId": "c57ba3f8-1d76-4660-8ba4-48ddce26e759",
+  "sourceUrl": "https://styles.refero.design/style/c57ba3f8-1d76-4660-8ba4-48ddce26e759",
+  "fetchedAt": "2026-10-02T22:43:58.271765+00:00",
+  "extractedAt": "2026-10-02T22:43:58.295424+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Google for Education — Style Reference",
+  "htmlSha256": "30e16e437a4744c7171585d65007a40f87167510d80e51214de20243f1f5fea6",
+  "cache": ".cache/c57ba3f8-1d76-4660-8ba4-48ddce26e759.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "bfcb14d8446e3ea9687ddf5ed823adc979efecfbbd45e6fc01232011d4818988",
+      "bytes": 22829,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/edf290fb-ea16-42fb-853c-4b59693a8725.jpg",
+    "fetchedAt": "2026-10-02T22:44:00.261208+00:00",
+    "sha256": "da9e0b19bc5fcb27173b0f9bd795a60d951ba1edfafc2b5e18ae953340e52a2f",
+    "bytes": 110859,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

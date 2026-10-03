@@ -1,0 +1,29 @@
+{
+  "styleId": "a90dbcb6-e42c-4992-a83b-94879699dd4f",
+  "sourceUrl": "https://styles.refero.design/style/a90dbcb6-e42c-4992-a83b-94879699dd4f",
+  "fetchedAt": "2026-10-02T22:37:22.185445+00:00",
+  "extractedAt": "2026-10-02T22:37:22.209182+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Simon Liesinger — Style Reference",
+  "htmlSha256": "8f6cc49cb01a011b08d4b08aa4c58440b815dc3c5a3acf62e375c91fcced35a9",
+  "cache": ".cache/a90dbcb6-e42c-4992-a83b-94879699dd4f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a931c81d23d4fd453bc0039c5396957f8e9843e4ea3b61a66114b02b3aa583fc",
+      "bytes": 16056,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b0651150-45fa-45d3-a4d0-e4de28e2c4fc.jpg",
+    "fetchedAt": "2026-10-02T22:37:24.246132+00:00",
+    "sha256": "fa6fc4a6adb03278fb62637f28ef154dc939b70f87173badb9d5242cbe5d7bc5",
+    "bytes": 73066,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

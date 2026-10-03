@@ -1,0 +1,29 @@
+{
+  "styleId": "d5931dff-2ae3-44c7-b76f-9e5936f90611",
+  "sourceUrl": "https://styles.refero.design/style/d5931dff-2ae3-44c7-b76f-9e5936f90611",
+  "fetchedAt": "2026-10-02T22:02:58.464782+00:00",
+  "extractedAt": "2026-10-02T22:02:58.485819+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Studio Few — Style Reference",
+  "htmlSha256": "488871d7ac34a91ce9db1d2f123c347d1aa69d707b9987174ea4fc116ef2e02e",
+  "cache": ".cache/d5931dff-2ae3-44c7-b76f-9e5936f90611.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3ba90dde05e64ae8a3b8041c68963ed01bcc56e9d7cb06245b01aa945edc7410",
+      "bytes": 25198,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9f941daf-49bf-422e-be86-851e669cf909.jpg",
+    "fetchedAt": "2026-10-02T22:03:00.133892+00:00",
+    "sha256": "5cbb621dd0ab2b8e35260e345462c13fa8a658cc502f01a6dc4eab79264a182f",
+    "bytes": 71138,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

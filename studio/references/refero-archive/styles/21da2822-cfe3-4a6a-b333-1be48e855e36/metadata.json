@@ -1,0 +1,29 @@
+{
+  "styleId": "21da2822-cfe3-4a6a-b333-1be48e855e36",
+  "sourceUrl": "https://styles.refero.design/style/21da2822-cfe3-4a6a-b333-1be48e855e36",
+  "fetchedAt": "2026-10-02T22:15:42.353272+00:00",
+  "extractedAt": "2026-10-02T22:15:42.380495+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "SaveDay — Style Reference",
+  "htmlSha256": "80848f673c73c825a70ae53820bffd85ffc39d4d49e94ed684a63a3f5bf54955",
+  "cache": ".cache/21da2822-cfe3-4a6a-b333-1be48e855e36.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5f6ba2caa4be79aa0417e7c23e13d05f9f5497cb3e7ae9717a982f3e1c43bcb7",
+      "bytes": 20966,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e126be96-bc23-440f-8b49-6988cd5cc299.jpg",
+    "fetchedAt": "2026-10-02T22:15:44.233346+00:00",
+    "sha256": "491dc5010baba4854dd9bdda074ae2035ac183954f2b2ac53b9a4dd17ffef627",
+    "bytes": 91086,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

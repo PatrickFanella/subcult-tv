@@ -1,0 +1,29 @@
+{
+  "styleId": "a0d54731-58dc-448b-a6b0-ed543f397ab1",
+  "sourceUrl": "https://styles.refero.design/style/a0d54731-58dc-448b-a6b0-ed543f397ab1",
+  "fetchedAt": "2026-10-02T22:54:02.390623+00:00",
+  "extractedAt": "2026-10-02T22:54:02.413293+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Typeform — Style Reference",
+  "htmlSha256": "15b7ae878f40475ce309c6b4a20b0eb34ebabaa6268bf0ca6501230e8d30d7a9",
+  "cache": ".cache/a0d54731-58dc-448b-a6b0-ed543f397ab1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0d8397c0e75b387e8d4d1e3ffcd9ee02740f576c32ece15de606afc8ec3611bd",
+      "bytes": 20819,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3dc5ed1a-c5a2-4843-9caf-d0e646e4025d.jpg",
+    "fetchedAt": "2026-10-02T22:54:04.306126+00:00",
+    "sha256": "c0f131ca52949e1ed67d985173a5877a5235d058a5c04efe898ba0c02ec802f4",
+    "bytes": 85103,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "b1e0a894-7440-44b8-9737-0ea4c988fc24",
+  "sourceUrl": "https://styles.refero.design/style/b1e0a894-7440-44b8-9737-0ea4c988fc24",
+  "fetchedAt": "2026-10-02T22:16:50.214930+00:00",
+  "extractedAt": "2026-10-02T22:16:50.237307+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Prevalent — Style Reference",
+  "htmlSha256": "8ce739ac14a54075147bebab85be3b7d64f1fd1814e15c5b2ed914aadc078b8a",
+  "cache": ".cache/b1e0a894-7440-44b8-9737-0ea4c988fc24.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4d6f8aaa605d73672820f14712c8140da62201a715e2d463635f4434ef3b5a76",
+      "bytes": 19894,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/467a548b-6337-44ab-80b3-14727a68d063.jpg",
+    "fetchedAt": "2026-10-02T22:16:52.277110+00:00",
+    "sha256": "4d7c3e236fcd5fcc4502682d03313607735d0fc5167738907da21ec7e8b3271f",
+    "bytes": 221084,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "542453bb-1895-45fe-95c9-66dbacbf1b08",
+  "sourceUrl": "https://styles.refero.design/style/542453bb-1895-45fe-95c9-66dbacbf1b08",
+  "fetchedAt": "2026-10-02T22:11:42.397595+00:00",
+  "extractedAt": "2026-10-02T22:11:42.421340+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Palette Supply — Style Reference",
+  "htmlSha256": "7f1afab8430b0ec4d3f3b0b67edb4d6721119de4e6d268efb3aeb9868e51d2f9",
+  "cache": ".cache/542453bb-1895-45fe-95c9-66dbacbf1b08.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3813d25a00385581611e509387eb31838d06838b7529ea647f6dd373b17faaf0",
+      "bytes": 23121,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cb5ee711-9f4b-4e47-b752-07a9a258257a.jpg",
+    "fetchedAt": "2026-10-02T22:11:44.129210+00:00",
+    "sha256": "70805043dcc69a8af52585db3d2ea86c1f80fadc3678070dda8a752a5e182bc1",
+    "bytes": 23448,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

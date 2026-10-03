@@ -1,0 +1,29 @@
+{
+  "styleId": "a7a69d27-e1a9-4322-b58f-3c7633fdc60d",
+  "sourceUrl": "https://styles.refero.design/style/a7a69d27-e1a9-4322-b58f-3c7633fdc60d",
+  "fetchedAt": "2026-10-02T22:13:50.461768+00:00",
+  "extractedAt": "2026-10-02T22:13:50.487210+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Carrot — Style Reference",
+  "htmlSha256": "a7146da2b91a0df64467d58325c7c7927edb93a8280dab61110054eea0ade75d",
+  "cache": ".cache/a7a69d27-e1a9-4322-b58f-3c7633fdc60d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c0fca660054761c534e5da0323b8c71686b424371e5bf08b0f6e545d098be813",
+      "bytes": 18096,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/08cef181-ac91-423d-b01b-de41565ecd4f.jpg",
+    "fetchedAt": "2026-10-02T22:13:52.288713+00:00",
+    "sha256": "b2825d3f19ef506c4bba3893105b705e95e7ecbd5d7a0aec97b133ffce352d51",
+    "bytes": 107976,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

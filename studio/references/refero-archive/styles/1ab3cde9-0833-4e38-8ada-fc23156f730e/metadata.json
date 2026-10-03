@@ -1,0 +1,29 @@
+{
+  "styleId": "1ab3cde9-0833-4e38-8ada-fc23156f730e",
+  "sourceUrl": "https://styles.refero.design/style/1ab3cde9-0833-4e38-8ada-fc23156f730e",
+  "fetchedAt": "2026-10-02T22:29:34.198592+00:00",
+  "extractedAt": "2026-10-02T22:29:34.221163+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Cora — Style Reference",
+  "htmlSha256": "05a163470700bdafe7c4fe951f476f781c912ffe1ca18869e0fd8062584214d7",
+  "cache": ".cache/1ab3cde9-0833-4e38-8ada-fc23156f730e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b9905baad6409cdd2d3841a94f2c77d89d6d5110a75e7fc5fc49d2fd1d5ef3e9",
+      "bytes": 21605,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cdb97767-8242-4f94-ab4f-eb8c95d1dc4c.jpg",
+    "fetchedAt": "2026-10-02T22:29:36.267485+00:00",
+    "sha256": "0078cc6117b227ba372da94395966b0debc9a0898a388432ec889b4c25c5f1af",
+    "bytes": 150972,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

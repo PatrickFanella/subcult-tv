@@ -1,0 +1,29 @@
+{
+  "styleId": "65c01b0f-7ae5-42ff-ad5b-162bbdce8e01",
+  "sourceUrl": "https://styles.refero.design/style/65c01b0f-7ae5-42ff-ad5b-162bbdce8e01",
+  "fetchedAt": "2026-10-02T22:01:06.189275+00:00",
+  "extractedAt": "2026-10-02T22:01:06.248373+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Odin's Crow — Style Reference",
+  "htmlSha256": "dfbfbae84ca8142056f3b7472aa4523d14fde02da9a4a2add2c44c3c95f9da31",
+  "cache": ".cache/65c01b0f-7ae5-42ff-ad5b-162bbdce8e01.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7312553aac17da47b5930b541c7c5cbd4c3b9219576501e2e5400a81fcf1c57d",
+      "bytes": 18680,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/d3190a77-4f5c-47f5-9c44-bc939ac8f969.jpg",
+    "fetchedAt": "2026-10-02T22:01:08.144597+00:00",
+    "sha256": "d60270b0cf23fd1711b06d7063e5e8e09f0e9bc200387dc06224d118440e5444",
+    "bytes": 45251,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

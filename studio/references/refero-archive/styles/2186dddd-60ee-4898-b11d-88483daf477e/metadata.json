@@ -1,0 +1,29 @@
+{
+  "styleId": "2186dddd-60ee-4898-b11d-88483daf477e",
+  "sourceUrl": "https://styles.refero.design/style/2186dddd-60ee-4898-b11d-88483daf477e",
+  "fetchedAt": "2026-10-02T22:13:14.327849+00:00",
+  "extractedAt": "2026-10-02T22:13:14.351818+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Juicebox.ai — Style Reference",
+  "htmlSha256": "2f4dd03bd2d989a25dc9b8a7b10f7c76a8da2c26be383a77ff9811bc20c4a530",
+  "cache": ".cache/2186dddd-60ee-4898-b11d-88483daf477e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "129208b9aa328b99bd11d8974313b226f18bfbfbde1805c81ddfe0f6d9675634",
+      "bytes": 27886,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/538cc8fc-f7d4-4ecf-be61-a93e7e9d6e03.jpg",
+    "fetchedAt": "2026-10-02T22:13:16.278677+00:00",
+    "sha256": "f42b33850dfcb17f68915c8f013ebb03b8612bb67b1e1ad26fce3cde87ea01c9",
+    "bytes": 155131,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

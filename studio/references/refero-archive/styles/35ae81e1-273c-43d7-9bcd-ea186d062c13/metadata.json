@@ -1,0 +1,29 @@
+{
+  "styleId": "35ae81e1-273c-43d7-9bcd-ea186d062c13",
+  "sourceUrl": "https://styles.refero.design/style/35ae81e1-273c-43d7-9bcd-ea186d062c13",
+  "fetchedAt": "2026-10-02T22:35:10.220890+00:00",
+  "extractedAt": "2026-10-02T22:35:10.243876+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ko-fi — Style Reference",
+  "htmlSha256": "af93ce318466a4539d05faac10ba3bcd898b859632952a9a967ffc90a751b39f",
+  "cache": ".cache/35ae81e1-273c-43d7-9bcd-ea186d062c13.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "19345bb6a794d80c6a89f9ec0e355a0ff81a9983dae450fc5da071a7f6f2b395",
+      "bytes": 19001,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/0f4c6cae-7b3c-47b6-ae2e-7221a105617b.jpg",
+    "fetchedAt": "2026-10-02T22:35:12.255741+00:00",
+    "sha256": "4a14bdd53d55b58c85f6a6e1b18bd4f20fc304b4c544b0b37c826e6bc1593486",
+    "bytes": 88557,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

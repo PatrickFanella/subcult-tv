@@ -1,0 +1,29 @@
+{
+  "styleId": "3882ed21-8ef8-4bc9-b125-7791c0f136bb",
+  "sourceUrl": "https://styles.refero.design/style/3882ed21-8ef8-4bc9-b125-7791c0f136bb",
+  "fetchedAt": "2026-10-02T22:52:34.213406+00:00",
+  "extractedAt": "2026-10-02T22:52:34.239653+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Wope — Style Reference",
+  "htmlSha256": "50334cf7fe83e79b924d665218d9c70d49fa1dc8ea5a59f6a8e94a8b71442cda",
+  "cache": ".cache/3882ed21-8ef8-4bc9-b125-7791c0f136bb.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a06212e85fe9c66bddd0ecc1eed06dcb11e84bd11b761d4d495921ad17da4613",
+      "bytes": 20189,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/52c6fba6-43a1-469e-8278-db21928e3a55.jpg",
+    "fetchedAt": "2026-10-02T22:52:36.355821+00:00",
+    "sha256": "2fb3b53d8443f90b4fc7903f62501f14ba82cf432832ff53569fab41a02a9fb8",
+    "bytes": 108508,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

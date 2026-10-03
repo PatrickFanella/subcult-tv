@@ -1,0 +1,29 @@
+{
+  "styleId": "da332394-784c-4df2-9e66-c3f7b1d28f28",
+  "sourceUrl": "https://styles.refero.design/style/da332394-784c-4df2-9e66-c3f7b1d28f28",
+  "fetchedAt": "2026-10-02T22:48:06.226468+00:00",
+  "extractedAt": "2026-10-02T22:48:06.250188+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Pitch — Style Reference",
+  "htmlSha256": "715a6cd4c22eeabee7975739338df60e5f0c896f77041783f44c74714b410cee",
+  "cache": ".cache/da332394-784c-4df2-9e66-c3f7b1d28f28.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3d25e8f34f3a46be4458ffa06f3c0cd48a57efa340eee10767aba4bf2fbcdf0a",
+      "bytes": 26596,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/375064bc-6c7d-45cb-9ad8-230981c9c34b.jpg",
+    "fetchedAt": "2026-10-02T22:48:08.244323+00:00",
+    "sha256": "028899acc87e79311a7db13ce8c72bcbb8167fc3ba948b43a9bbe4c9ed543d14",
+    "bytes": 94167,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

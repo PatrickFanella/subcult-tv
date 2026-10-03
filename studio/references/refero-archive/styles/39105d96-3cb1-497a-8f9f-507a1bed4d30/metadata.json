@@ -1,0 +1,29 @@
+{
+  "styleId": "39105d96-3cb1-497a-8f9f-507a1bed4d30",
+  "sourceUrl": "https://styles.refero.design/style/39105d96-3cb1-497a-8f9f-507a1bed4d30",
+  "fetchedAt": "2026-10-02T22:29:30.224511+00:00",
+  "extractedAt": "2026-10-02T22:29:30.247388+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Baggu — Style Reference",
+  "htmlSha256": "e8e691ee055d8d8eef29baf6a7d98ba9770dbe2b5e7dc73ca041836d392691f1",
+  "cache": ".cache/39105d96-3cb1-497a-8f9f-507a1bed4d30.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a1b9763a3993fb3813fb101e1d49df2fd088ebb29a2cb46c63f87d31f87065fe",
+      "bytes": 17082,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6d6de8f9-6975-4b0d-9559-2adabf37e861.jpg",
+    "fetchedAt": "2026-10-02T22:29:32.289703+00:00",
+    "sha256": "ea849272bba8af65a98b0c3ef144039d2c63a88370f968361efafdc55c371ac3",
+    "bytes": 136981,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

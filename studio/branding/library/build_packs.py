@@ -3,6 +3,7 @@ import base64,copy,html,json,os,shutil,subprocess,hashlib,zipfile,xml.etree.Elem
 import patchwork_product as PW
 import left_field_product as LFP
 import hasanara_product as HA
+import subcult_assets as SA
 R=Path(__file__).resolve().parent
 os.environ['FONTCONFIG_FILE']=str(R/'fontconfig.xml')
 import design_helpers as H
@@ -176,15 +177,23 @@ The full voice and its sample lines are in [the voice guide](../../../../content
 
 ### Direction and masters
 
-This is the C direction, selected by the user. The user-edited banner, logo banner and square-post masters are kept in `references/subcult-edited-layouts/`. Rebuilds copy them without alteration.
+This is the C direction, selected by the user. The user-edited banner, logo banner and square-post masters are kept in `references/subcult-edited-layouts/`. Rebuilds copy them without alteration. They are historical compositions, not the selected standalone logo.
 
 ### Mark
 
-The master mark is `references/subcult-mark-master.svg`, drawn by the user: a filled S and underscore, an outlined C, a tilted green block, registration lines and a terminal square.
+The user approved three marks, B, C and D, all without registration lines:
 
-- Preserve its geometry, overlap and layer order.
-- Build every variant from the master SVG. For dark and light applications, recolor only the ink and the accent.
-- In monochrome, outline the accent block so the letters stay legible.
+- C is the primary mark, with filled letters and a tilted green block.
+- B is the heavier outlined alternate.
+- D removes the block and uses tighter framing for small placements.
+
+Every approved mark uses one continuous underscore path. Build the selected derivatives with `subcult_assets.py`; `logo-selection.json` records the selection. The original user-authored SVG is preserved in `references/subcult-mark-master.svg` as construction provenance.
+
+White artwork outlines or removes the green block. Use dark ink marks on purple or green fields, and white marks on dark fields.
+
+### Circle logo
+
+The user approved `logos/mark-fisheye-circle.png` in place of the purple-circle logo treatments: solid SC lettering and a green underscore on a purple circle, with a fisheye distortion on the SC_. It is raster artwork generated from the compact D mark. Preserve its exact bytes; do not redraw it. The public site uses the same file as `public/brand/subcult/fisheye-circle.png`. The source study and its generation prompt are in [the fisheye review](../../../reviews/subcult-logo-fisheye/README.md).
 
 ### Color
 
@@ -432,7 +441,7 @@ Reference: {d['source']}. {observed} Original files in the legacy library are pr
  (dest/'GUIDE.md').write_text(doc)
  # Descriptions of the rendered sample artwork. Update a row when its banner, square post or avatar changes.
  alts={
-  'subcult':('Purple banner. Small label: SUBCULT.TV / INDEPENDENT SOFTWARE. Large black headline: BUILD TOGETHER. A tilted green block crossed by two thin registration lines sits at the top right, and a green bar runs down the left edge.', 'Purple square. Black headline: CULTURE NEEDS TOOLS., with TOOLS. set on a tilted green block. Small text: SUBCULT.TV at the top and support.subcult.tv at the bottom.', 'The SUBCULT mark on purple: a filled black S, an outlined C and an underscore over a tilted green block, crossed by thin registration lines.'),
+  'subcult':('Purple banner. Small label: SUBCULT.TV / INDEPENDENT SOFTWARE. Large black headline: BUILD TOGETHER. A tilted green block crossed by two thin registration lines sits at the top right, and a green bar runs down the left edge.', 'Purple square. Black headline: CULTURE NEEDS TOOLS., with TOOLS. set on a tilted green block. Small text: SUBCULT.TV at the top and support.subcult.tv at the bottom.', 'The SUBCULT mark on purple: a filled black S and C over a tilted green block, with a black underscore below the C.'),
   'clpr':('Near-black banner. The clpr wordmark with a purple play triangle, then the headline SOMEBODY CLIPPED IT. in white capitals. At the right, a stack of three clip cards. The front card shows a play triangle and a green progress line. Small text: TWITCH CLIPS / CREATOR, TOPIC, TAG at the top, and It\'s probably in here. and clpr.tv along the bottom.', 'Near-black square with the clpr wordmark. Headline: THE ONE FROM LAST TUESDAY. Below it, one clip card with a play triangle and a green progress line. Small text: clpr.tv.', 'A purple play triangle inside a darker purple triangle, on a near-black background.'),
   'kork':('Cork-textured banner. Label: LINK PAGES / BY SUBCULT. Black headline on three lines: ALL OF IT, PINNED TO ONE LINK. At the right, four paper cards held by blue pushpins: @yourname (social), $yourname (tips), a decorative QR pattern and WATCH (latest video). Small text: kork.subcult.tv.', 'Cork-textured square. Headline: PIN IT UP. Line below: Share one link for everything. Three pinned paper cards: @yourname, $yourname and a decorative QR pattern. Small text: kork.subcult.tv.', 'The Kork mark on cork: a tilted paper card with two black rows, held by a blue pushpin.'),
   'prichal':('Paper-colored banner. At the left, the Prichal mark: a dark sphere with a dashed equator and four collars, the right one red. Label: ПРИЧАЛ · ACCOUNT HOSTING. Wordmark: PRICHAL, with a short red rule under it. Line: Your server. We keep it running. A strip along the bottom reads PORT 01 to 06, with prichal.subcult.tv at the right.', 'Paper-colored square. Label: ACCOUNT HOSTING / BY SUBCULT. The Prichal mark and wordmark, then the headline DOCK YOUR ACCOUNT. Below it, six numbered boxes, 01 to 06, with 04 filled red. Small text: prichal.subcult.tv.', 'The Prichal mark on paper: a dark sphere with a dashed equator and four collars, the right one red. A faint tick scale runs down the left edge.'),
@@ -466,8 +475,9 @@ for d in BRANDS:
  for name in font_files(d):shutil.copy2(R/'fonts'/name,dest/'fonts'/name)
  tokens={'brand':d['brand'],'direction':d['name'],'status':'local production pack v1','colors':{k:d[k] for k in ['bg','fg','accent','secondary','safe_label']},'fonts':{k:d[k] for k in ['display','body','label','support'] if k in d},'spacing':[8,16,24,32,48,64,96],'mark_clear_space':'25% of mark height','mark_min_width_px':32,'source':d['source'],'direction_selection':d.get('direction_selection') or ('user' if d['selected_by_user'] else 'established-theme example')}
  if d['slug']=='subcult':
-  shutil.copy2(R/'references/subcult-mark-master.svg',dest/'logos/master.svg')
-  tokens['mark_master']={'path':'logos/master.svg','sha256':hashlib.sha256((R/'references/subcult-mark-master.svg').read_bytes()).hexdigest(),'construction':'User-authored SVG; preserve geometry and layer order'}
+  (dest/'logos').mkdir(exist_ok=True)
+  (dest/'logos/master.svg').write_text(SA.selected_svg())
+  tokens['mark_master']={'path':'logos/master.svg','sha256':hashlib.sha256((dest/'logos/master.svg').read_bytes()).hexdigest(),'construction':'Selected C: filled letters, no registration lines, continuous underscore; B outlined and D compact also approved'}
  if d['slug']=='clpr':tokens.update(graphic_direction=d.get('graphic_direction'),square_direction=d.get('square_direction'))
  if d['slug']=='patrick__eff':shutil.copytree(R/'references/patrick-variations',dest/'logos/source-variations',dirs_exist_ok=True)
  if d['slug']=='patrick__eff':tokens['mark_styles']=d.get('mark_styles',{});tokens['mark_sources']='logos/source-variations/';tokens['banner_logo']={'primary':d.get('banner_logo'),'alternates':d.get('banner_alternates',[]),'scope':'banner only'}
@@ -489,9 +499,7 @@ for d in BRANDS:
    write_svg(dest/'logos','alternate-'+alternate,H.image('patrick-variations/'+alternate+'-outlined.svg',0,0,512,512),512,512)
   with (dest/'tokens.css').open('a') as f:f.write('\n.brand-display { text-shadow: 1.5px -.75px var(--brand-accent), -1.5px 1.5px var(--brand-secondary); }\n.brand-body, .brand-label { text-shadow: none; }\n')
  if d['slug']=='subcult':
-  # Preserve the user's exact editable master at its original pack path.
-  shutil.copy2(R/'references/subcult-mark-master.svg',dest/'logos/mark-primary-outlined.svg')
-  subprocess.run(['rsvg-convert','-o',str(dest/'logos/mark-primary.png'),str(dest/'logos/mark-primary-outlined.svg')],check=True)
+  SA.build_selected(dest/'logos')
  banner=LF.banner(d) if d['slug']=='left-field' else DH.banner(d) if d['slug']=='dedhed' else TD.banner(d) if d['slug']=='tadooer' else clpr_banner(d) if d['slug']=='clpr' else H.banner(d)
  if d['slug']=='patrick__eff':banner=ET.tostring(ET.parse(R/'references/patrick-banner-cascadia.svg').getroot(),encoding='unicode')
  if d['slug']=='subcult' and (R/'references/subcult-edited-layouts/banner-x-bluesky.svg').exists():banner=ET.tostring(ET.parse(R/'references/subcult-edited-layouts/banner-x-bluesky.svg').getroot(),encoding='unicode')
@@ -553,3 +561,18 @@ for d in BRANDS:
    entries.append(entry)
  (dest/'asset-manifest.json').write_text(json.dumps({'brand':d['brand'],'direction':d['name'],'status':'local production pack v1','files':entries},indent=2));print(d['brand'],len(entries),'files',flush=True)
 print('Selected brand packs built.')
+if os.environ.get('BRAND_ONLY')=='subcult':
+ manifest=R/'asset-manifest.json'
+ rows=json.loads(manifest.read_text());by_path={entry['path']:entry for entry in rows}
+ paths=list((R/'brands/subcult').rglob('*'))+[R/'build_packs.py',R/'design_helpers.py',R/'subcult_assets.py']
+ for path in paths:
+  if not path.is_file():continue
+  relative=str(path.relative_to(R));row=by_path.get(relative,{'path':relative})
+  row.update(sha256=hashlib.sha256(path.read_bytes()).hexdigest(),bytes=path.stat().st_size)
+  if path.suffix=='.png':
+   from PIL import Image
+   im=Image.open(path);row.update(width=im.width,height=im.height,mode=im.mode)
+  by_path[relative]=row
+ existing={entry['path'] for entry in rows}
+ updated=[by_path[entry['path']] for entry in rows]+[by_path[key] for key in sorted(set(by_path)-existing)]
+ manifest.write_text(json.dumps(updated,indent=2)+'\n')

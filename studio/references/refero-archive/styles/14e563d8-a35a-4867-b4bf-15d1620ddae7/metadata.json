@@ -1,0 +1,29 @@
+{
+  "styleId": "14e563d8-a35a-4867-b4bf-15d1620ddae7",
+  "sourceUrl": "https://styles.refero.design/style/14e563d8-a35a-4867-b4bf-15d1620ddae7",
+  "fetchedAt": "2026-10-02T22:06:10.170515+00:00",
+  "extractedAt": "2026-10-02T22:06:10.195863+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Substack — Style Reference",
+  "htmlSha256": "e565af69639f079a8b2a25d4ee85b141a1003dd8b858012855f0dc22f81a80b1",
+  "cache": ".cache/14e563d8-a35a-4867-b4bf-15d1620ddae7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d9ec3a9359f5d8b432603b073e706d04c8e1a808f7808dd85f38c8da9b29f680",
+      "bytes": 21254,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4f0bccdf-9386-48d8-90f6-8d98aebc4903.jpg",
+    "fetchedAt": "2026-10-02T22:06:12.257521+00:00",
+    "sha256": "71c45a0435c74b038fc875cc01e1411aea70f49c7a21589a3eaebecc908ff70a",
+    "bytes": 101008,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

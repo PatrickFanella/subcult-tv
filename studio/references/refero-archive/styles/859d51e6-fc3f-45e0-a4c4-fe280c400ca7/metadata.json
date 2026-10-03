@@ -1,0 +1,29 @@
+{
+  "styleId": "859d51e6-fc3f-45e0-a4c4-fe280c400ca7",
+  "sourceUrl": "https://styles.refero.design/style/859d51e6-fc3f-45e0-a4c4-fe280c400ca7",
+  "fetchedAt": "2026-10-02T22:48:50.231391+00:00",
+  "extractedAt": "2026-10-02T22:48:50.254798+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Outseta — Style Reference",
+  "htmlSha256": "11f8ad52d2304987801734388cb35aca5717cba6974b209110f9690094fd0a20",
+  "cache": ".cache/859d51e6-fc3f-45e0-a4c4-fe280c400ca7.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c2bdc61d09c9a30783a34a9e60db3040dacb2e5db546b2f098257ea91df286c2",
+      "bytes": 34849,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/678aa7e6-695f-4f96-999b-cf130bdbf745.jpg",
+    "fetchedAt": "2026-10-02T22:48:52.233759+00:00",
+    "sha256": "a0d436b7475abfb65ac1603279f580655acd4c3a09d48d6f1c05f79d9925b57e",
+    "bytes": 156924,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

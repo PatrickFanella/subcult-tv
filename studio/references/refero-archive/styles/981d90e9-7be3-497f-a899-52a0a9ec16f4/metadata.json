@@ -1,0 +1,29 @@
+{
+  "styleId": "981d90e9-7be3-497f-a899-52a0a9ec16f4",
+  "sourceUrl": "https://styles.refero.design/style/981d90e9-7be3-497f-a899-52a0a9ec16f4",
+  "fetchedAt": "2026-10-02T22:51:22.240499+00:00",
+  "extractedAt": "2026-10-02T22:51:22.261666+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "(dot)connect — Style Reference",
+  "htmlSha256": "c680a59c9f5bf31c90906660d7fcee703e887aa9952ce5f9c32cd98daa9cfe61",
+  "cache": ".cache/981d90e9-7be3-497f-a899-52a0a9ec16f4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "2e86042246bab985b38def1d2facfe311ce3f5f08f7ddb07c81360c67cc60c48",
+      "bytes": 19179,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3919f67d-f392-44b0-bd69-9f47ffe530b6.jpg",
+    "fetchedAt": "2026-10-02T22:51:24.461168+00:00",
+    "sha256": "85dde676d03665fee4dedfa21b473941914200c13208c0636f032ecbd8afea9b",
+    "bytes": 103816,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

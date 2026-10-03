@@ -1,0 +1,29 @@
+{
+  "styleId": "83b71dd8-de08-4c57-80b2-9fced17a0ca5",
+  "sourceUrl": "https://styles.refero.design/style/83b71dd8-de08-4c57-80b2-9fced17a0ca5",
+  "fetchedAt": "2026-10-02T22:35:50.238475+00:00",
+  "extractedAt": "2026-10-02T22:35:50.261864+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Savvycal — Style Reference",
+  "htmlSha256": "029cb21a4f07a0c7865f38094d6f31e7bcba3bdf864f2c19cfa0be0b0a4e7b32",
+  "cache": ".cache/83b71dd8-de08-4c57-80b2-9fced17a0ca5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c544ca861f3c4c161a408de83c782feed5f5c1ed05892cd65bdfb6928f2a26a0",
+      "bytes": 25637,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b4367399-594a-4f88-8ccc-da2cff58190d.jpg",
+    "fetchedAt": "2026-10-02T22:35:52.232251+00:00",
+    "sha256": "14d09a6f012ed8804acf62da521eb36ac495fd14e3823516e9bd71c9df37c1b9",
+    "bytes": 101302,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

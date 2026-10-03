@@ -1,0 +1,29 @@
+{
+  "styleId": "7976704d-549b-4ba6-9a0f-c792766a9df3",
+  "sourceUrl": "https://styles.refero.design/style/7976704d-549b-4ba6-9a0f-c792766a9df3",
+  "fetchedAt": "2026-10-02T22:30:42.182891+00:00",
+  "extractedAt": "2026-10-02T22:30:42.204272+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Osmo — Style Reference",
+  "htmlSha256": "6be0b6a84cf818b2baf96c7fda862a69cef37a4dd39719c666c8ed6b8f18e2fd",
+  "cache": ".cache/7976704d-549b-4ba6-9a0f-c792766a9df3.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "57696e442b8034c7a8c71674399df71be8f8507550ba025ccd43fbae8a224053",
+      "bytes": 23513,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e6b083b2-17a5-4e7d-b1d2-0e778c8788ba.jpg",
+    "fetchedAt": "2026-10-02T22:30:44.237339+00:00",
+    "sha256": "cd537e9eb911d1f1e9f88d4ccd9d4a431249dcdbdbd60f2c545dd543e467a3f2",
+    "bytes": 114089,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

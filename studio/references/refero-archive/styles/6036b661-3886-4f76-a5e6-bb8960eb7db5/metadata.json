@@ -1,0 +1,29 @@
+{
+  "styleId": "6036b661-3886-4f76-a5e6-bb8960eb7db5",
+  "sourceUrl": "https://styles.refero.design/style/6036b661-3886-4f76-a5e6-bb8960eb7db5",
+  "fetchedAt": "2026-10-02T22:04:54.193734+00:00",
+  "extractedAt": "2026-10-02T22:04:54.215086+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dash Digital Studio — Style Reference",
+  "htmlSha256": "9bcd76985f63455e7ea1dc9b96c6aed651b7e3f8d54549fc9651ca684496c428",
+  "cache": ".cache/6036b661-3886-4f76-a5e6-bb8960eb7db5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b2e102c4bd2d8d49088c13e39d27be5d46ebce06b281bb96001c307bd7bc2ae9",
+      "bytes": 18952,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/76c1483f-f144-427e-914a-b42630bf2a8c.jpg",
+    "fetchedAt": "2026-10-02T22:04:56.253650+00:00",
+    "sha256": "8443d8cd531b903990e2c4c54a9bf41235f7724a3389fc6a8a11f958539a88db",
+    "bytes": 107464,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

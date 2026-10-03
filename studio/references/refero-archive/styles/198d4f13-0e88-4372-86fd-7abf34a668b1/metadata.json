@@ -1,0 +1,29 @@
+{
+  "styleId": "198d4f13-0e88-4372-86fd-7abf34a668b1",
+  "sourceUrl": "https://styles.refero.design/style/198d4f13-0e88-4372-86fd-7abf34a668b1",
+  "fetchedAt": "2026-10-02T22:24:18.324395+00:00",
+  "extractedAt": "2026-10-02T22:24:18.345042+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Ecosia — Style Reference",
+  "htmlSha256": "2589fc95addd161f0601dfa32968de726f00c7d1601b2b9936d485e5002c58fb",
+  "cache": ".cache/198d4f13-0e88-4372-86fd-7abf34a668b1.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7dfd864f77efa1cf836fe5a2858cd7ff4e575097c6f296c476a07279deaa4bd8",
+      "bytes": 21864,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/298d8273-1e84-4105-ae6c-bd8a5c656c1b.jpg",
+    "fetchedAt": "2026-10-02T22:24:20.237104+00:00",
+    "sha256": "bd671175d216a081ecfb731f02d6f32ec456323287b98351bd39ec669806c723",
+    "bytes": 127011,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

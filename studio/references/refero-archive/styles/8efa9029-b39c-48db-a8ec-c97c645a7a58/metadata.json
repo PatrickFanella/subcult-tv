@@ -1,0 +1,29 @@
+{
+  "styleId": "8efa9029-b39c-48db-a8ec-c97c645a7a58",
+  "sourceUrl": "https://styles.refero.design/style/8efa9029-b39c-48db-a8ec-c97c645a7a58",
+  "fetchedAt": "2026-10-02T22:37:42.223126+00:00",
+  "extractedAt": "2026-10-02T22:37:42.256411+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Groq — Style Reference",
+  "htmlSha256": "41b3f15d5b6d6af67fa4798ec66ef8a79138470bbd26bc902f6c08e1cc21cd70",
+  "cache": ".cache/8efa9029-b39c-48db-a8ec-c97c645a7a58.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4950a540a8c1802348e5002135cf1256ca1cee8dee5ac64b4e4516585db14beb",
+      "bytes": 18491,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/da831a74-2df1-463c-a0eb-6d190ddacd55.jpg",
+    "fetchedAt": "2026-10-02T22:37:44.253433+00:00",
+    "sha256": "f2548818163d4d38b28899e53e8e138faf72d29cc8965a2d9703eb96b9479d1d",
+    "bytes": 108631,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

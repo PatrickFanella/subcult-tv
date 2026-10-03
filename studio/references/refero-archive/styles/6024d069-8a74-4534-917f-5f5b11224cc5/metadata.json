@@ -1,0 +1,29 @@
+{
+  "styleId": "6024d069-8a74-4534-917f-5f5b11224cc5",
+  "sourceUrl": "https://styles.refero.design/style/6024d069-8a74-4534-917f-5f5b11224cc5",
+  "fetchedAt": "2026-10-02T22:14:42.236681+00:00",
+  "extractedAt": "2026-10-02T22:14:42.268766+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Getclockwise — Style Reference",
+  "htmlSha256": "00dd1f374c1fc2113ef32829de32b7dba687a6b796a2a3998dd2126e50385d72",
+  "cache": ".cache/6024d069-8a74-4534-917f-5f5b11224cc5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "31b4149ee2faefe10366ceabcd784c11c3b69f9d8528f83a188f6ca41d6c7a92",
+      "bytes": 15876,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5b28e008-b5c7-4997-a759-840d66b71e96.jpg",
+    "fetchedAt": "2026-10-02T22:14:44.275824+00:00",
+    "sha256": "0033cb3bc47ba842a889684e2c4b140fdd3dc9495773fe7d4dfb7d2e4fcbbea4",
+    "bytes": 143706,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

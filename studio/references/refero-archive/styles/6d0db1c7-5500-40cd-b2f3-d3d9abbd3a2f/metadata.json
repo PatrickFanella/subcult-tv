@@ -1,0 +1,29 @@
+{
+  "styleId": "6d0db1c7-5500-40cd-b2f3-d3d9abbd3a2f",
+  "sourceUrl": "https://styles.refero.design/style/6d0db1c7-5500-40cd-b2f3-d3d9abbd3a2f",
+  "fetchedAt": "2026-10-02T22:08:18.180997+00:00",
+  "extractedAt": "2026-10-02T22:08:18.207081+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Dries Bos — Style Reference",
+  "htmlSha256": "d38bb29d329b8ecdab73a9a567d7165731883501e0c73a66f18cb49ede859c42",
+  "cache": ".cache/6d0db1c7-5500-40cd-b2f3-d3d9abbd3a2f.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "7b10a7465b9b1b08ff397f3335aa76127fbd844bc3f3401a094dec0d1e8cd4e4",
+      "bytes": 14376,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/22f0e388-5ac1-4665-a49d-3c0105ab5357.jpg",
+    "fetchedAt": "2026-10-02T22:08:20.132733+00:00",
+    "sha256": "fb350cf287abc5f997b4173ece557b0a137c11c3f5548d1ce53761c100e4829c",
+    "bytes": 55730,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

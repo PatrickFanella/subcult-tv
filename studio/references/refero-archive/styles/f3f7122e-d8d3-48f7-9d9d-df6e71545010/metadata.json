@@ -1,0 +1,29 @@
+{
+  "styleId": "f3f7122e-d8d3-48f7-9d9d-df6e71545010",
+  "sourceUrl": "https://styles.refero.design/style/f3f7122e-d8d3-48f7-9d9d-df6e71545010",
+  "fetchedAt": "2026-10-02T22:14:50.766044+00:00",
+  "extractedAt": "2026-10-02T22:14:50.787489+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Abel — Style Reference",
+  "htmlSha256": "cea966529cf6e6f78608546e4693ef777bc2c79966c71b2f34ec81a5bd71cd57",
+  "cache": ".cache/f3f7122e-d8d3-48f7-9d9d-df6e71545010.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9290a01123b9251aa620eafd497472a539d1fb18f63cb57a80a42469c7cf24aa",
+      "bytes": 19458,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/aadf021f-54bb-416c-a330-e59adf89648a.jpg",
+    "fetchedAt": "2026-10-02T22:14:52.244214+00:00",
+    "sha256": "e9baf053a1b3d0fe268235de34ae2666a315105101e96c106902ef2421280d31",
+    "bytes": 85328,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

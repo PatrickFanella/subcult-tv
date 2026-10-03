@@ -1,12 +1,18 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { render, screen, waitFor } from '@testing-library/react';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { cleanup, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import AdminReferences from '@/pages/admin/AdminReferences';
-import { getStudioReference, getStudioReferenceFacets, getStudioReferences } from '@/lib/api';
+import {
+  getStudioPreview,
+  getStudioReference,
+  getStudioReferenceFacets,
+  getStudioReferences,
+} from '@/lib/api';
 
 vi.mock('@/lib/api', () => ({
   getStudioAsset: vi.fn(),
+  getStudioPreview: vi.fn(),
   getStudioReferences: vi.fn(),
   getStudioReferenceFacets: vi.fn(),
   getStudioReference: vi.fn(),
@@ -21,6 +27,11 @@ const entry = {
   preview: '',
   tags: ['Swiss', 'Minimalist'],
 };
+
+afterEach(() => {
+  cleanup();
+  vi.unstubAllGlobals();
+});
 
 beforeEach(() => {
   vi.clearAllMocks();
@@ -52,6 +63,55 @@ beforeEach(() => {
 });
 
 describe('design reference browsing', () => {
+  it('shows pagination before the cards and waits for visible thumbnails', async () => {
+    let visible: IntersectionObserverCallback | undefined;
+    const disconnect = vi.fn();
+    vi.stubGlobal(
+      'IntersectionObserver',
+      class {
+        constructor(callback: IntersectionObserverCallback) {
+          visible = callback;
+        }
+        observe() {}
+        disconnect = disconnect;
+      },
+    );
+    vi.mocked(getStudioReferences).mockResolvedValue({
+      items: [{ ...entry, preview: 'preview-a' }],
+      total: 25,
+      page: 1,
+      per_page: 24,
+      total_pages: 2,
+    });
+    vi.mocked(getStudioPreview).mockResolvedValue(new Blob(['image']));
+    const create = vi.fn(() => 'blob:preview');
+    vi.stubGlobal('URL', Object.assign(URL, { createObjectURL: create, revokeObjectURL: vi.fn() }));
+    try {
+      const { container } = render(
+        <MemoryRouter>
+          <AdminReferences />
+        </MemoryRouter>,
+      );
+      await screen.findByRole('button', { name: 'Read Alpha' });
+      const pagination = screen.getByRole('navigation', { name: 'Reference pages' });
+      const cards = container.querySelector('.reference-cards')!;
+      expect(
+        pagination.compareDocumentPosition(cards) & Node.DOCUMENT_POSITION_FOLLOWING,
+      ).toBeTruthy();
+      expect(screen.getByRole('combobox', { name: 'Page' })).toHaveValue('1');
+      expect(getStudioPreview).not.toHaveBeenCalled();
+      visible!([{ isIntersecting: true } as IntersectionObserverEntry], {} as IntersectionObserver);
+      await screen.findByRole('img', { name: 'Alpha reference screenshot' });
+      expect(getStudioPreview).toHaveBeenCalledOnce();
+      await userEvent.setup().selectOptions(screen.getByRole('combobox', { name: 'Page' }), '2');
+      await waitFor(() =>
+        expect(vi.mocked(getStudioReferences).mock.lastCall?.[0].get('page')).toBe('2'),
+      );
+    } finally {
+      cleanup();
+      vi.unstubAllGlobals();
+    }
+  });
   it('keeps search, AND tags, and page changes in the request while switching views locally', async () => {
     const user = userEvent.setup();
     const { container } = render(

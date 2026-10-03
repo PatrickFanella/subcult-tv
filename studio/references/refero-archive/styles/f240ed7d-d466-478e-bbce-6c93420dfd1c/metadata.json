@@ -1,0 +1,29 @@
+{
+  "styleId": "f240ed7d-d466-478e-bbce-6c93420dfd1c",
+  "sourceUrl": "https://styles.refero.design/style/f240ed7d-d466-478e-bbce-6c93420dfd1c",
+  "fetchedAt": "2026-10-02T22:29:46.260020+00:00",
+  "extractedAt": "2026-10-02T22:29:46.282351+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Slab — Style Reference",
+  "htmlSha256": "9f7b98049e3952e6d1eedf209a3c7f28cc6e58f7a7ab857ff2bb9575efb7de59",
+  "cache": ".cache/f240ed7d-d466-478e-bbce-6c93420dfd1c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "acd1d3acbaf881e28d660eff173d8476536772d94c1637841301ea2b82865f45",
+      "bytes": 19535,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a513c112-63e8-4c40-bcf4-38c636af402f.jpg",
+    "fetchedAt": "2026-10-02T22:29:48.227577+00:00",
+    "sha256": "9b7745f8582d652f0a89247bbc47f85f35b5675a4b64a9eabfadde4dd0f8f285",
+    "bytes": 99740,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

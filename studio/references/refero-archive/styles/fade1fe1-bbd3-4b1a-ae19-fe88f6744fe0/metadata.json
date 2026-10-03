@@ -1,0 +1,29 @@
+{
+  "styleId": "fade1fe1-bbd3-4b1a-ae19-fe88f6744fe0",
+  "sourceUrl": "https://styles.refero.design/style/fade1fe1-bbd3-4b1a-ae19-fe88f6744fe0",
+  "fetchedAt": "2026-10-02T22:19:22.217895+00:00",
+  "extractedAt": "2026-10-02T22:19:22.240122+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Trawelt — Style Reference",
+  "htmlSha256": "feed2555074408cef9a51a373fb21bd3aacd22651dda13b615145ba439f1e046",
+  "cache": ".cache/fade1fe1-bbd3-4b1a-ae19-fe88f6744fe0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "28a53e6338ce50dcd3b0932a310564158e3bf317f2c6413d088e37bc2ce5ad04",
+      "bytes": 22803,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f9c45762-dfe4-4cd9-830c-8044d130e75e.jpg",
+    "fetchedAt": "2026-10-02T22:19:24.206997+00:00",
+    "sha256": "a2a554619149ed0a871c73d177d52bf67c3a63ca66b3b071eae9a14282997e7a",
+    "bytes": 113785,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

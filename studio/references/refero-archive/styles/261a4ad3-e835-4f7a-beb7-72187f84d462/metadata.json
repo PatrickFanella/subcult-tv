@@ -1,0 +1,29 @@
+{
+  "styleId": "261a4ad3-e835-4f7a-beb7-72187f84d462",
+  "sourceUrl": "https://styles.refero.design/style/261a4ad3-e835-4f7a-beb7-72187f84d462",
+  "fetchedAt": "2026-10-02T22:35:02.342330+00:00",
+  "extractedAt": "2026-10-02T22:35:02.366131+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "amp — Style Reference",
+  "htmlSha256": "80ffff6107977887d4891f6edab58aadfe7dff736a7a6b2b75828fe67cb1a597",
+  "cache": ".cache/261a4ad3-e835-4f7a-beb7-72187f84d462.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "26fd40410f7649cf60d1c6d37e7a17f6dbd12ae399a18160eb16723b36616a92",
+      "bytes": 20486,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9f4a748e-c053-469a-adf4-a7d1fde662ad.jpg",
+    "fetchedAt": "2026-10-02T22:35:04.218889+00:00",
+    "sha256": "458392bb5bc2460fc089b2359a7facdf8dba69564eb7706576dae83bc4177e80",
+    "bytes": 55389,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

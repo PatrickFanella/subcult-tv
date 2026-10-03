@@ -1,0 +1,29 @@
+{
+  "styleId": "50833119-cb36-4b75-b0cc-be48afea050a",
+  "sourceUrl": "https://styles.refero.design/style/50833119-cb36-4b75-b0cc-be48afea050a",
+  "fetchedAt": "2026-10-02T22:11:34.215225+00:00",
+  "extractedAt": "2026-10-02T22:11:34.237316+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Krea — Style Reference",
+  "htmlSha256": "270b4de06fb6f16e1fa36949c812b2fc52e95017d02f33b2bfe476b4be88a5a6",
+  "cache": ".cache/50833119-cb36-4b75-b0cc-be48afea050a.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4a49120850d1facb106eccf819ee6eb946fe170730c093fad473d2cd95a10011",
+      "bytes": 20909,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/37ee4270-a254-466c-b1b9-80ae11497921.jpg",
+    "fetchedAt": "2026-10-02T22:11:36.258794+00:00",
+    "sha256": "a5afa2075df32082ce9cbf3e8593914e202cdf7866ce498be94d0be36942ec4b",
+    "bytes": 81975,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

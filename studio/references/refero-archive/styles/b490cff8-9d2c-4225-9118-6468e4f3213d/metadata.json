@@ -1,0 +1,29 @@
+{
+  "styleId": "b490cff8-9d2c-4225-9118-6468e4f3213d",
+  "sourceUrl": "https://styles.refero.design/style/b490cff8-9d2c-4225-9118-6468e4f3213d",
+  "fetchedAt": "2026-10-02T22:20:14.307160+00:00",
+  "extractedAt": "2026-10-02T22:20:14.329366+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "TheyDo — Style Reference",
+  "htmlSha256": "2ed573db1b82639a2acb06e19cb626b4499a12434aeae35b6423d899ee14af27",
+  "cache": ".cache/b490cff8-9d2c-4225-9118-6468e4f3213d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "467cd6519487457ec8f08ac443df871296b685331d6ae48c51568f1d6e128b66",
+      "bytes": 21916,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/e3eec645-6378-47b3-847b-a076266a2997.jpg",
+    "fetchedAt": "2026-10-02T22:20:16.369829+00:00",
+    "sha256": "23fc427f72a9efe1674e2c1594f216c80dd281b403614d343a3a5b4537e0765b",
+    "bytes": 122529,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

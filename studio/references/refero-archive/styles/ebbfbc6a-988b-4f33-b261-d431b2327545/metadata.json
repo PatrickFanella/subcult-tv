@@ -1,0 +1,29 @@
+{
+  "styleId": "ebbfbc6a-988b-4f33-b261-d431b2327545",
+  "sourceUrl": "https://styles.refero.design/style/ebbfbc6a-988b-4f33-b261-d431b2327545",
+  "fetchedAt": "2026-10-02T22:17:10.196066+00:00",
+  "extractedAt": "2026-10-02T22:17:10.218068+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Balsa — Style Reference",
+  "htmlSha256": "e76f96d190431af998237b08a7b6c5a48b207ff1ed95939f66629b4b64bacf1a",
+  "cache": ".cache/ebbfbc6a-988b-4f33-b261-d431b2327545.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1228ae52ab4df87f3a21f44aa4fa6c74340cefe3346b1c6d0d8591a98c47374e",
+      "bytes": 26135,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8607bbea-2ed3-4f8c-9d16-75361cba2097.jpg",
+    "fetchedAt": "2026-10-02T22:17:12.232298+00:00",
+    "sha256": "310a53634e244bb5997c9885b46988df6568d772629b855ca5988324bb35248d",
+    "bytes": 81822,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

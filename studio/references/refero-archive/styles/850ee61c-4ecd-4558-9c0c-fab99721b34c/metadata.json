@@ -1,0 +1,29 @@
+{
+  "styleId": "850ee61c-4ecd-4558-9c0c-fab99721b34c",
+  "sourceUrl": "https://styles.refero.design/style/850ee61c-4ecd-4558-9c0c-fab99721b34c",
+  "fetchedAt": "2026-10-02T22:49:02.236104+00:00",
+  "extractedAt": "2026-10-02T22:49:02.261848+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "11x– Digital workers — Style Reference",
+  "htmlSha256": "fc7c7b85b094fdeac977d27c06e514a4f0198b7ef8b5c26b72b0b3d8953e25aa",
+  "cache": ".cache/850ee61c-4ecd-4558-9c0c-fab99721b34c.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "85527c94b28f438d7c7a22779549330dea465f9329a19f16e3f208d8530b3b96",
+      "bytes": 21708,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bdd420ad-11f5-46f7-b18d-652c16a4879d.jpg",
+    "fetchedAt": "2026-10-02T22:49:04.274215+00:00",
+    "sha256": "6bd8024958054049deca48be26e004b167b3007a7ccf6ea2257548bc7a336b20",
+    "bytes": 147900,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

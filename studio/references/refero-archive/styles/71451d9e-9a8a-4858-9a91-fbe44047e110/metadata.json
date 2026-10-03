@@ -1,0 +1,29 @@
+{
+  "styleId": "71451d9e-9a8a-4858-9a91-fbe44047e110",
+  "sourceUrl": "https://styles.refero.design/style/71451d9e-9a8a-4858-9a91-fbe44047e110",
+  "fetchedAt": "2026-10-02T22:31:38.491728+00:00",
+  "extractedAt": "2026-10-02T22:31:38.513627+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Workflow — Style Reference",
+  "htmlSha256": "c6f7cc461becd6907db2f08cc5d16d5386bd492d81ca235cce12314f0e491175",
+  "cache": ".cache/71451d9e-9a8a-4858-9a91-fbe44047e110.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c833f782729ca8965458a2a653cd76b6f9afc499a19e9f798d34e7ab67a74102",
+      "bytes": 18370,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/2d6180e1-6411-40f9-aece-e08a5470a878.jpg",
+    "fetchedAt": "2026-10-02T22:31:40.170200+00:00",
+    "sha256": "6363d43eec191b3b01481e376f78cd6b3ae3a59f795efb749a0c25dbba66e762",
+    "bytes": 56415,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

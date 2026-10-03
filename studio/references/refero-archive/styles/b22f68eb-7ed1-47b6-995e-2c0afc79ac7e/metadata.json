@@ -1,0 +1,29 @@
+{
+  "styleId": "b22f68eb-7ed1-47b6-995e-2c0afc79ac7e",
+  "sourceUrl": "https://styles.refero.design/style/b22f68eb-7ed1-47b6-995e-2c0afc79ac7e",
+  "fetchedAt": "2026-10-02T22:23:18.186897+00:00",
+  "extractedAt": "2026-10-02T22:23:18.215337+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Evermade — Style Reference",
+  "htmlSha256": "478e5d753c0681bb4ea882b866098621435b77a9840d6421ef1c51d07fd32c72",
+  "cache": ".cache/b22f68eb-7ed1-47b6-995e-2c0afc79ac7e.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "51d59a352a58020d5139ee763503121b95fb1d20edb9c6c6925c47e627ff0df4",
+      "bytes": 18499,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ba6575f2-2e57-4544-9adf-e6ef6f2d42d0.jpg",
+    "fetchedAt": "2026-10-02T22:23:20.171584+00:00",
+    "sha256": "da01ef5c05b59df69d20e68c80707315bdce23047ef9c141859162817e1c515d",
+    "bytes": 66486,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

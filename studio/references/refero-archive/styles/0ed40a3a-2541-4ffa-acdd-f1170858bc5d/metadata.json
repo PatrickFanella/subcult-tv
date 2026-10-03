@@ -1,0 +1,29 @@
+{
+  "styleId": "0ed40a3a-2541-4ffa-acdd-f1170858bc5d",
+  "sourceUrl": "https://styles.refero.design/style/0ed40a3a-2541-4ffa-acdd-f1170858bc5d",
+  "fetchedAt": "2026-10-02T22:26:42.397741+00:00",
+  "extractedAt": "2026-10-02T22:26:42.428631+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Assurestor — Style Reference",
+  "htmlSha256": "61436d299b71080fc1bf9aae19e866e5f4819e49fb6330f5c1f2cff7baf532fc",
+  "cache": ".cache/0ed40a3a-2541-4ffa-acdd-f1170858bc5d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d307bb7dfaa796ce1759f1ff0744ece59ddfbf8db661b19bd88837b74bb47db5",
+      "bytes": 18303,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/190e55e9-3db4-4f5a-a83a-dd55ecf214a9.jpg",
+    "fetchedAt": "2026-10-02T22:26:44.272668+00:00",
+    "sha256": "37d42be2596e74d1f0cfd5c4fa2ada5f8d7777c7a9bb7cc0e81e79f88582cfa4",
+    "bytes": 106179,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

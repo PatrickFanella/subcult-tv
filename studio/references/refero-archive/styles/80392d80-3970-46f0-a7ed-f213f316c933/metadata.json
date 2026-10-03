@@ -1,0 +1,29 @@
+{
+  "styleId": "80392d80-3970-46f0-a7ed-f213f316c933",
+  "sourceUrl": "https://styles.refero.design/style/80392d80-3970-46f0-a7ed-f213f316c933",
+  "fetchedAt": "2026-10-02T22:13:46.217855+00:00",
+  "extractedAt": "2026-10-02T22:13:46.246324+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sublime — Style Reference",
+  "htmlSha256": "63d2d5515d6a412882f32c22ba2805310df31314b16a08081f662b9efb176074",
+  "cache": ".cache/80392d80-3970-46f0-a7ed-f213f316c933.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "de97eed759e86d8b3ec3c0519531cb5f677dfcf04033d5ecefe25f184b943f9c",
+      "bytes": 21632,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/05b849cd-61f2-4e66-a253-b36921ad27e8.jpg",
+    "fetchedAt": "2026-10-02T22:13:48.280599+00:00",
+    "sha256": "fcd0beb2f3619d0836511aa7e19609a447473ffc65272485679f8ae0745967f8",
+    "bytes": 185886,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

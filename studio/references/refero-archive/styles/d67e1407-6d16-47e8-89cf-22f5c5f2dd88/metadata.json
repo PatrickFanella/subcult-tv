@@ -1,0 +1,29 @@
+{
+  "styleId": "d67e1407-6d16-47e8-89cf-22f5c5f2dd88",
+  "sourceUrl": "https://styles.refero.design/style/d67e1407-6d16-47e8-89cf-22f5c5f2dd88",
+  "fetchedAt": "2026-10-02T22:11:58.672513+00:00",
+  "extractedAt": "2026-10-02T22:11:58.696577+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Gumroad — Style Reference",
+  "htmlSha256": "caede54347f3fd0f3f49b72d63727f96158892000a6446a44ddd12a301ca4bfe",
+  "cache": ".cache/d67e1407-6d16-47e8-89cf-22f5c5f2dd88.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c3ee3b91efe2d1dbd37d5c5942fa4edb22c37406b2b2f473f7327f237828cdef",
+      "bytes": 18573,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9919923e-46ab-4595-b6dc-b91e4d369ffe.jpg",
+    "fetchedAt": "2026-10-02T22:12:00.262091+00:00",
+    "sha256": "81416a69c1bd5aba12e3ec4749000086bff01c0f1dd9fe2ee2c14838fd8628c4",
+    "bytes": 121485,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

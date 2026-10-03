@@ -1,0 +1,29 @@
+{
+  "styleId": "1db2adc9-2f10-4f20-af1b-27fa4b25f729",
+  "sourceUrl": "https://styles.refero.design/style/1db2adc9-2f10-4f20-af1b-27fa4b25f729",
+  "fetchedAt": "2026-10-02T22:12:18.237314+00:00",
+  "extractedAt": "2026-10-02T22:12:18.267611+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Superintelligence for work — Style Reference",
+  "htmlSha256": "f15b14a2f0513a7396a2c4e472fc23fe3e43bf279789e9141829098986f91e8d",
+  "cache": ".cache/1db2adc9-2f10-4f20-af1b-27fa4b25f729.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "567f41e9cce7111b3daf83c1b5fd01ea00a01936db3e6c70225e402b2b4708d0",
+      "bytes": 18711,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7845f82f-5311-43e2-85a0-47f2a5a00aeb.jpg",
+    "fetchedAt": "2026-10-02T22:12:20.219538+00:00",
+    "sha256": "049997cccb148547f1696f648104b66f5afaba4670f480f263b7ac0ed5310797",
+    "bytes": 78469,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

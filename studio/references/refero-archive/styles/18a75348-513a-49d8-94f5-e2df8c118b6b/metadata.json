@@ -1,0 +1,29 @@
+{
+  "styleId": "18a75348-513a-49d8-94f5-e2df8c118b6b",
+  "sourceUrl": "https://styles.refero.design/style/18a75348-513a-49d8-94f5-e2df8c118b6b",
+  "fetchedAt": "2026-10-02T22:05:14.240690+00:00",
+  "extractedAt": "2026-10-02T22:05:14.265372+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "LaunchDarkly — Style Reference",
+  "htmlSha256": "047f323ea37f223231bbcd582d764c3a6199c0cc097600b1c25c7c90196ae143",
+  "cache": ".cache/18a75348-513a-49d8-94f5-e2df8c118b6b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "5236fd1a8db46dc392888c4dc48d05c323523a5b2e81a517b577da3be4fa2312",
+      "bytes": 22545,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/39afa89b-933e-4945-a687-ed3d4d2e0394.jpg",
+    "fetchedAt": "2026-10-02T22:05:16.245816+00:00",
+    "sha256": "7b74b48b26e86cacb8a7f9282876da9037d7d56cfa0e8120febc9a63dfd37330",
+    "bytes": 104260,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

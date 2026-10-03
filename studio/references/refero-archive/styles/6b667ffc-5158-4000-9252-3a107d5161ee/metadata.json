@@ -1,0 +1,29 @@
+{
+  "styleId": "6b667ffc-5158-4000-9252-3a107d5161ee",
+  "sourceUrl": "https://styles.refero.design/style/6b667ffc-5158-4000-9252-3a107d5161ee",
+  "fetchedAt": "2026-10-02T22:09:50.341920+00:00",
+  "extractedAt": "2026-10-02T22:09:50.366018+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "OFF+BRAND. — Style Reference",
+  "htmlSha256": "d3f7f8a2b0fef66a4f87c45f37ea1a9d33cbbe9c8f0d4630a200e8df9f0dd081",
+  "cache": ".cache/6b667ffc-5158-4000-9252-3a107d5161ee.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "faa59c8de56b19ef6112531ffb43f408efb80c2a454ca81b0f27aaad5cc8ee44",
+      "bytes": 19400,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/14d1f770-ee7f-4014-8c42-d5ba8c30c21d.jpg",
+    "fetchedAt": "2026-10-02T22:09:52.144136+00:00",
+    "sha256": "57961ab412a5059907c1538b24e5e74bfecfe7e868c0ab64bbbd2cf71a5d2b19",
+    "bytes": 13202,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

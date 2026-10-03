@@ -1,0 +1,29 @@
+{
+  "styleId": "74be1036-f867-4cee-959a-a9a9129111c0",
+  "sourceUrl": "https://styles.refero.design/style/74be1036-f867-4cee-959a-a9a9129111c0",
+  "fetchedAt": "2026-10-02T22:28:02.184724+00:00",
+  "extractedAt": "2026-10-02T22:28:02.210124+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Moonli — Style Reference",
+  "htmlSha256": "9551f17b13f0f2159366a0363609b2cc2849cf4debd10fbb58d8f8c96e8728db",
+  "cache": ".cache/74be1036-f867-4cee-959a-a9a9129111c0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c45aeae241c8531eec5bcdc65028edc9a1645c0682dd2425ba2b82d3c9dffb5b",
+      "bytes": 14799,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/cee7b999-ac2c-4f2a-8094-ab97264fdf25.jpg",
+    "fetchedAt": "2026-10-02T22:28:04.258157+00:00",
+    "sha256": "f4c05add2f3e5dfce2ceaa9edb2573ed1de6a75bc4cb7f38656de601765a91ba",
+    "bytes": 109877,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

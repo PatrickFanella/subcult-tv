@@ -1,0 +1,29 @@
+{
+  "styleId": "18e84ffd-4a5d-453d-aeff-dae2847aa3c9",
+  "sourceUrl": "https://styles.refero.design/style/18e84ffd-4a5d-453d-aeff-dae2847aa3c9",
+  "fetchedAt": "2026-10-02T22:03:30.596076+00:00",
+  "extractedAt": "2026-10-02T22:03:30.618871+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Exo Ape — Style Reference",
+  "htmlSha256": "fba1dc5bca80cd5a672c57a956475b12d3d0828661d63665db2f544899541924",
+  "cache": ".cache/18e84ffd-4a5d-453d-aeff-dae2847aa3c9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "773f206482f7378b99c31a4887cd9ccf37a2d415dadee52f47a00e3b239cadc1",
+      "bytes": 19818,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7a5dcef4-6249-47d2-86ea-41b94fe53346.jpg",
+    "fetchedAt": "2026-10-02T22:03:32.217510+00:00",
+    "sha256": "ef784c32be5921b819fdaa0cbfc152473319c8d2a18b2e0334bc89dd94cb926c",
+    "bytes": 117821,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

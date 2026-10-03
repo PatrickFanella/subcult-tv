@@ -1,0 +1,29 @@
+{
+  "styleId": "eefc0305-818c-4f57-80ce-a4bc1f7aac92",
+  "sourceUrl": "https://styles.refero.design/style/eefc0305-818c-4f57-80ce-a4bc1f7aac92",
+  "fetchedAt": "2026-10-02T22:43:50.203668+00:00",
+  "extractedAt": "2026-10-02T22:43:50.225148+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sparkles — Style Reference",
+  "htmlSha256": "9c92c356f11715f3be30d6d0bc5a64528fa5d2395fd7e47c42af34982b07bfe4",
+  "cache": ".cache/eefc0305-818c-4f57-80ce-a4bc1f7aac92.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3ab4612f2413391902e2b34b60ffb9c577fa6987c4f7c33d2c837bc0eb183cbb",
+      "bytes": 19411,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/bf805db6-9111-48a7-b6f8-71cec35bfab1.jpg",
+    "fetchedAt": "2026-10-02T22:43:52.355756+00:00",
+    "sha256": "e8694fe25462b95cb8d00a93065b22bbb5ca8dbffb3f3893c04b1f525c7013c9",
+    "bytes": 101028,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "46781641-8afd-4b01-9f67-06046b6eda71",
+  "sourceUrl": "https://styles.refero.design/style/46781641-8afd-4b01-9f67-06046b6eda71",
+  "fetchedAt": "2026-10-02T22:06:38.248708+00:00",
+  "extractedAt": "2026-10-02T22:06:38.275199+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Microsoft AI — Style Reference",
+  "htmlSha256": "bb73f3c3374bfd410974545d638caa7658d9e3b11dad6015f949bf04a1e76545",
+  "cache": ".cache/46781641-8afd-4b01-9f67-06046b6eda71.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0147cc9f11f82337f4f814008c0dca56d33f96429aaa52a5c95bcf238ddefa40",
+      "bytes": 22324,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/56049ad3-9129-47ba-b8c1-3beecea30111.jpg",
+    "fetchedAt": "2026-10-02T22:06:40.159465+00:00",
+    "sha256": "948eca819b712ac3559d2d519846234c56b795928aceb6adff7d3dfb48b9a6f5",
+    "bytes": 64997,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

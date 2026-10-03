@@ -1,0 +1,29 @@
+{
+  "styleId": "077aecd0-4401-4696-a196-164d74ac8746",
+  "sourceUrl": "https://styles.refero.design/style/077aecd0-4401-4696-a196-164d74ac8746",
+  "fetchedAt": "2026-10-02T22:27:06.223152+00:00",
+  "extractedAt": "2026-10-02T22:27:06.246230+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lithic — Style Reference",
+  "htmlSha256": "73a233f005a946a7019caf0523787e71b9acaed74ea8ba12d6c9ce134a4ba18c",
+  "cache": ".cache/077aecd0-4401-4696-a196-164d74ac8746.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "964b04f30e97da3d3edcbfe6103d5f3b5a36ee41dfcf5e298501a187075a0ef3",
+      "bytes": 20917,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/aa8bbe13-91a4-43b2-ae5d-d082ff7f4597.jpg",
+    "fetchedAt": "2026-10-02T22:27:08.258917+00:00",
+    "sha256": "636828128335b1fc2fd87c95cf417f16185cf56352f5fa9cf566b5ed6a742871",
+    "bytes": 156388,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

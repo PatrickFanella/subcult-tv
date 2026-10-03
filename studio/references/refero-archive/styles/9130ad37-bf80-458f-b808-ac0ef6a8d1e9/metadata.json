@@ -1,0 +1,29 @@
+{
+  "styleId": "9130ad37-bf80-458f-b808-ac0ef6a8d1e9",
+  "sourceUrl": "https://styles.refero.design/style/9130ad37-bf80-458f-b808-ac0ef6a8d1e9",
+  "fetchedAt": "2026-10-02T22:04:46.284149+00:00",
+  "extractedAt": "2026-10-02T22:04:46.305787+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "MindMarket — Style Reference",
+  "htmlSha256": "294c4c504ea50d9ec5f7c0f8eab429a1b72c5f9124b528ecae5befa4be9f1bcf",
+  "cache": ".cache/9130ad37-bf80-458f-b808-ac0ef6a8d1e9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c32afd172d365679902eca0428076c6ac26d2b9614c8f3686be4d250e612b3ef",
+      "bytes": 19336,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/51602e6c-ba11-468e-9e2a-c687e22c113a.jpg",
+    "fetchedAt": "2026-10-02T22:04:48.226436+00:00",
+    "sha256": "3c842ab055b98b1a5b7011a4d75d20f0e074f8838c0a731c8bf7c489dd71bcea",
+    "bytes": 82150,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

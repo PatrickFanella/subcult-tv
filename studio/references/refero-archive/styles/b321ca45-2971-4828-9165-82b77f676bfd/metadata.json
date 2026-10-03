@@ -1,0 +1,29 @@
+{
+  "styleId": "b321ca45-2971-4828-9165-82b77f676bfd",
+  "sourceUrl": "https://styles.refero.design/style/b321ca45-2971-4828-9165-82b77f676bfd",
+  "fetchedAt": "2026-10-02T22:14:18.183053+00:00",
+  "extractedAt": "2026-10-02T22:14:18.205666+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "The Beams — Style Reference",
+  "htmlSha256": "b25e3347fe225df5469d53e728ec99163162b42d127705810935c7511a9b59f4",
+  "cache": ".cache/b321ca45-2971-4828-9165-82b77f676bfd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9c895b7ca5b7da78055120cb0573578a030d08e5545ace18a55f592a3f10aee3",
+      "bytes": 15096,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/ef16ada0-4568-4b6e-922e-7ce0e7216963.jpg",
+    "fetchedAt": "2026-10-02T22:14:20.289280+00:00",
+    "sha256": "4a51a9d25177371d74632d653fb538740b6a227b364e62503b90cdb0cfd0feb0",
+    "bytes": 96507,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

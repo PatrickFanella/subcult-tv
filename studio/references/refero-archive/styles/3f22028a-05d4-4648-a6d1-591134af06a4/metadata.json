@@ -1,0 +1,29 @@
+{
+  "styleId": "3f22028a-05d4-4648-a6d1-591134af06a4",
+  "sourceUrl": "https://styles.refero.design/style/3f22028a-05d4-4648-a6d1-591134af06a4",
+  "fetchedAt": "2026-10-02T22:43:26.201301+00:00",
+  "extractedAt": "2026-10-02T22:43:26.223497+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Gt-planar — Style Reference",
+  "htmlSha256": "201638a781fb7e3b9257e07987da70afc19aacaf8d4fd6822a23e9a24a1ac55b",
+  "cache": ".cache/3f22028a-05d4-4648-a6d1-591134af06a4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9a4b41acf7842bb1bb3ae421297b2539826d413a99976e97c3e0ae76ee338223",
+      "bytes": 21747,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/4b19dc05-341b-442c-b82e-ac9f480947c3.jpg",
+    "fetchedAt": "2026-10-02T22:43:28.278900+00:00",
+    "sha256": "039da2b9dad1bebcfbae3c334be1ae000abb02d4d2c6ac03b3644927f17164db",
+    "bytes": 391243,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

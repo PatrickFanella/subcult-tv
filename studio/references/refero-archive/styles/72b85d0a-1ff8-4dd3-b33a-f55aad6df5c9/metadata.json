@@ -1,0 +1,29 @@
+{
+  "styleId": "72b85d0a-1ff8-4dd3-b33a-f55aad6df5c9",
+  "sourceUrl": "https://styles.refero.design/style/72b85d0a-1ff8-4dd3-b33a-f55aad6df5c9",
+  "fetchedAt": "2026-10-02T22:01:22.439969+00:00",
+  "extractedAt": "2026-10-02T22:01:22.484484+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Busuu — Style Reference",
+  "htmlSha256": "d86390fa34bbccbe311d5a38a80cfe758de666eb8f54bb505317d062ec345804",
+  "cache": ".cache/72b85d0a-1ff8-4dd3-b33a-f55aad6df5c9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "d45ac4b5d08c50dadebcc31a9823c60b10e9b03927feac7e92f731cee4c10c7d",
+      "bytes": 21845,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/65604899-3cda-4123-8fe3-eda4e1fe4a9c.jpg",
+    "fetchedAt": "2026-10-02T22:01:24.221672+00:00",
+    "sha256": "fee1b46bfea3bb6ea444b75304a5d9b90a6a4e3e487b64f987cb07612c7811e7",
+    "bytes": 90128,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

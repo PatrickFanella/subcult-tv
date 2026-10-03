@@ -1,0 +1,29 @@
+{
+  "styleId": "51a9246f-9238-47dd-b254-48983b8713a2",
+  "sourceUrl": "https://styles.refero.design/style/51a9246f-9238-47dd-b254-48983b8713a2",
+  "fetchedAt": "2026-10-02T22:51:06.353985+00:00",
+  "extractedAt": "2026-10-02T22:51:06.376014+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lovi — Style Reference",
+  "htmlSha256": "a968afdaecb0775648d07fc6a6542fe058ef5089bb1f82f004bd40973f1c4f6e",
+  "cache": ".cache/51a9246f-9238-47dd-b254-48983b8713a2.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8fc58965c74a96530ea9cb597e3fdd2d7805405734f4e98ade2108e092affae7",
+      "bytes": 29714,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/09447be6-4c45-46f0-85f0-d4468acd73e4.jpg",
+    "fetchedAt": "2026-10-02T22:51:08.247569+00:00",
+    "sha256": "25137e24c0fc1b8b5f03260ee44812ee1e73cb426e07cd2cfb27d5224502ad9b",
+    "bytes": 74093,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

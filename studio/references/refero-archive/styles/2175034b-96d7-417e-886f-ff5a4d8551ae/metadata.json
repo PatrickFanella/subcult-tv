@@ -1,0 +1,29 @@
+{
+  "styleId": "2175034b-96d7-417e-886f-ff5a4d8551ae",
+  "sourceUrl": "https://styles.refero.design/style/2175034b-96d7-417e-886f-ff5a4d8551ae",
+  "fetchedAt": "2026-10-02T22:46:14.211436+00:00",
+  "extractedAt": "2026-10-02T22:46:14.233653+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Playdate — Style Reference",
+  "htmlSha256": "5006f3d756161a72bc339cf4a4a29876f9fd55537a73ee86819a4070055428ac",
+  "cache": ".cache/2175034b-96d7-417e-886f-ff5a4d8551ae.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "905bd1ecc79694fdbe0c179fcafc0c00a6fa0032e54a39e4ad19b1e7b7db09d3",
+      "bytes": 19227,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7bb93d02-6c27-46ae-86a8-6bc356db21f5.jpg",
+    "fetchedAt": "2026-10-02T22:46:16.242075+00:00",
+    "sha256": "60a9b8aa3a99f0044544fcefd9865ed9a61ae124be53f227ca6d631a74f393cf",
+    "bytes": 78651,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

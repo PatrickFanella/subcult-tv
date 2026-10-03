@@ -1,0 +1,29 @@
+{
+  "styleId": "36ab47c3-3d47-42a5-af2e-1760bc348bcd",
+  "sourceUrl": "https://styles.refero.design/style/36ab47c3-3d47-42a5-af2e-1760bc348bcd",
+  "fetchedAt": "2026-10-02T22:20:06.536921+00:00",
+  "extractedAt": "2026-10-02T22:20:06.557101+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Counterprint — Style Reference",
+  "htmlSha256": "9c4e6ca618be887867a42100d16cb19542857b5f4390103a3e2005acd798dead",
+  "cache": ".cache/36ab47c3-3d47-42a5-af2e-1760bc348bcd.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e23aba1659c3fb8dae07ee070a4a017e654f456861176e72f306854a32b0b7fe",
+      "bytes": 14751,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/94555632-a83b-4279-beac-c88a7caafd69.jpg",
+    "fetchedAt": "2026-10-02T22:20:08.384548+00:00",
+    "sha256": "12447a81c5172b47cd644a6de57568107e6b231db5f168c7f793f23143017685",
+    "bytes": 262462,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

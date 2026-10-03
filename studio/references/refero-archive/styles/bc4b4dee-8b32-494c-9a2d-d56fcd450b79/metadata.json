@@ -1,0 +1,29 @@
+{
+  "styleId": "bc4b4dee-8b32-494c-9a2d-d56fcd450b79",
+  "sourceUrl": "https://styles.refero.design/style/bc4b4dee-8b32-494c-9a2d-d56fcd450b79",
+  "fetchedAt": "2026-10-02T22:29:18.193288+00:00",
+  "extractedAt": "2026-10-02T22:29:18.214556+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Winamp — Style Reference",
+  "htmlSha256": "7300413d1372b0810e86d65dac9a2751487dfd6da58a6b6d17708e3686544706",
+  "cache": ".cache/bc4b4dee-8b32-494c-9a2d-d56fcd450b79.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "b5181fc89dcadb29c0bf2069f41b4cf0fa78e12e6d4f979b11395634f2dad93d",
+      "bytes": 18825,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/8f1c93ed-452d-4c24-ae1e-b52c9b9f9a68.jpg",
+    "fetchedAt": "2026-10-02T22:29:20.224313+00:00",
+    "sha256": "d1221e24253f748d5390f45b3cf9829e36d67a0ea64c3380b104fcfca8be4a04",
+    "bytes": 112968,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

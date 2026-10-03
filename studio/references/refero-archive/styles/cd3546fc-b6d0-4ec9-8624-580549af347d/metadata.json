@@ -1,0 +1,29 @@
+{
+  "styleId": "cd3546fc-b6d0-4ec9-8624-580549af347d",
+  "sourceUrl": "https://styles.refero.design/style/cd3546fc-b6d0-4ec9-8624-580549af347d",
+  "fetchedAt": "2026-10-02T22:25:18.167318+00:00",
+  "extractedAt": "2026-10-02T22:25:18.187723+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "GUSTAVO Faria © — Style Reference",
+  "htmlSha256": "b61fe7f0793343d9183be4537f640111f92309770bcf94c586b4131af8d82a37",
+  "cache": ".cache/cd3546fc-b6d0-4ec9-8624-580549af347d.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "da8e40c7fec8a221e3a1b19e023f7fb57fc5bc3497aa5c5805dfacddfee6c9b3",
+      "bytes": 14909,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/838f0e2e-f766-4acf-9246-6410774973dc.jpg",
+    "fetchedAt": "2026-10-02T22:25:20.263537+00:00",
+    "sha256": "a41cff17bb9d4439c4ce6058d98a3cd2a1a4d15f16b4e61eac0dd3cd8f875d48",
+    "bytes": 131641,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

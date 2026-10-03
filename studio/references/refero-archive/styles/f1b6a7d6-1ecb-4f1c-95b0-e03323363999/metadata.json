@@ -1,0 +1,29 @@
+{
+  "styleId": "f1b6a7d6-1ecb-4f1c-95b0-e03323363999",
+  "sourceUrl": "https://styles.refero.design/style/f1b6a7d6-1ecb-4f1c-95b0-e03323363999",
+  "fetchedAt": "2026-10-02T22:06:22.281063+00:00",
+  "extractedAt": "2026-10-02T22:06:22.332369+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Limón — Style Reference",
+  "htmlSha256": "189572de35537b4be4070221d4887a7ff29b97ba7d9aa18e438e4ef8438134ed",
+  "cache": ".cache/f1b6a7d6-1ecb-4f1c-95b0-e03323363999.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "f90cd50c770d24a4399d58ac743c1217555128bde3d0696a707cae9a5770895f",
+      "bytes": 20546,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/624acd91-63fb-4566-8cf3-be6def6cf831.jpg",
+    "fetchedAt": "2026-10-02T22:06:24.241708+00:00",
+    "sha256": "fcb24228b56e872da96b38901b6c760920a36c620b3a4c17154db9f55d33bafa",
+    "bytes": 133696,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

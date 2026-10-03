@@ -1,0 +1,29 @@
+{
+  "styleId": "729ba7a8-35d5-44f3-abc0-1078ff6a3467",
+  "sourceUrl": "https://styles.refero.design/style/729ba7a8-35d5-44f3-abc0-1078ff6a3467",
+  "fetchedAt": "2026-10-02T22:47:18.189584+00:00",
+  "extractedAt": "2026-10-02T22:47:18.212761+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Todoist — Style Reference",
+  "htmlSha256": "190528446b3ffbccc6267b1217475dec57cfc887e18c0c3d8919c9fb7aca5230",
+  "cache": ".cache/729ba7a8-35d5-44f3-abc0-1078ff6a3467.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "438b2312d45e89ed756cfc8d5713f9c85e18f84778ec5df36a543b8335199ad2",
+      "bytes": 23920,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3880ec1e-a6fa-4184-a083-4ca74ca1c8cd.jpg",
+    "fetchedAt": "2026-10-02T22:47:20.242732+00:00",
+    "sha256": "61dc1e90b0151a071d8fa6103bed5a72ad9b8e90b698f1d4f36392fc0ccde962",
+    "bytes": 89426,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

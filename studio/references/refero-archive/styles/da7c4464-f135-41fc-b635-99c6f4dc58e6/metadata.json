@@ -1,0 +1,29 @@
+{
+  "styleId": "da7c4464-f135-41fc-b635-99c6f4dc58e6",
+  "sourceUrl": "https://styles.refero.design/style/da7c4464-f135-41fc-b635-99c6f4dc58e6",
+  "fetchedAt": "2026-10-02T22:03:18.300875+00:00",
+  "extractedAt": "2026-10-02T22:03:18.325842+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Sprout Social — Style Reference",
+  "htmlSha256": "81df751ee758ffe05edfdfa178db9d41e01817b849487408d18004944e8f81f2",
+  "cache": ".cache/da7c4464-f135-41fc-b635-99c6f4dc58e6.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "1c6263946ac755901a708cc507216b9db07c3735a847795090b4cceb838c5d62",
+      "bytes": 19897,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/793f7a11-1607-4e54-93d4-c3d053129c42.jpg",
+    "fetchedAt": "2026-10-02T22:03:20.240081+00:00",
+    "sha256": "c2561b4b275901957074edfcf0f1f5872ab326f18186b5616eb602b85bea966f",
+    "bytes": 113172,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

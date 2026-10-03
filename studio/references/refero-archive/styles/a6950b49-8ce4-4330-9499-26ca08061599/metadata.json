@@ -1,0 +1,29 @@
+{
+  "styleId": "a6950b49-8ce4-4330-9499-26ca08061599",
+  "sourceUrl": "https://styles.refero.design/style/a6950b49-8ce4-4330-9499-26ca08061599",
+  "fetchedAt": "2026-10-02T22:11:18.171985+00:00",
+  "extractedAt": "2026-10-02T22:11:18.194278+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Humble — Style Reference",
+  "htmlSha256": "0e9b5e9a773403088d240fc59b43c86d64eee57b281b9a69edc17a108714b171",
+  "cache": ".cache/a6950b49-8ce4-4330-9499-26ca08061599.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "22788d16106cc93dd20669c70e3bc96d6d3e1a735303b223774a571204080bf9",
+      "bytes": 26843,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/f0386266-47d1-4a99-b487-1df9f22d98a5.jpg",
+    "fetchedAt": "2026-10-02T22:11:20.275345+00:00",
+    "sha256": "4fd6b40f8e8032f98ec2dfb42921098c97236bdcae5d5e62c7d8aa0f44945634",
+    "bytes": 96352,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

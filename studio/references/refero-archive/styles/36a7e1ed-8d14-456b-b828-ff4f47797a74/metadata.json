@@ -1,0 +1,29 @@
+{
+  "styleId": "36a7e1ed-8d14-456b-b828-ff4f47797a74",
+  "sourceUrl": "https://styles.refero.design/style/36a7e1ed-8d14-456b-b828-ff4f47797a74",
+  "fetchedAt": "2026-10-02T22:41:26.244082+00:00",
+  "extractedAt": "2026-10-02T22:41:26.266223+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Synthesia — Style Reference",
+  "htmlSha256": "b08deb389d772c6f4464ff14de600462db995a5b12c6360e62478bee68f3a166",
+  "cache": ".cache/36a7e1ed-8d14-456b-b828-ff4f47797a74.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "11e08d04cb10442684d6a57b2e9075f0ebcc5768a43da9d8cba3bc7411a6d010",
+      "bytes": 26593,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3c3d04b0-f0b0-4138-9e89-991bf0888dbb.jpg",
+    "fetchedAt": "2026-10-02T22:41:28.369674+00:00",
+    "sha256": "6258d1d1d06a96478f3700094b79ba78bdfcc3f0ee15e3bb50c1cf785d571f8f",
+    "bytes": 117644,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

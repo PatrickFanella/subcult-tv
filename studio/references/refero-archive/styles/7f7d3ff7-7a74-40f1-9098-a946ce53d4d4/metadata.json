@@ -1,0 +1,29 @@
+{
+  "styleId": "7f7d3ff7-7a74-40f1-9098-a946ce53d4d4",
+  "sourceUrl": "https://styles.refero.design/style/7f7d3ff7-7a74-40f1-9098-a946ce53d4d4",
+  "fetchedAt": "2026-10-02T22:29:10.233079+00:00",
+  "extractedAt": "2026-10-02T22:29:10.256649+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Grove AI — Style Reference",
+  "htmlSha256": "8714a880ab80d9d7f8866ca6888c86997b5f8c560e98058dd06798e014916726",
+  "cache": ".cache/7f7d3ff7-7a74-40f1-9098-a946ce53d4d4.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "3134cc5b158dcab1d9993e829fce7b76a43b1e6f205c0e844914776dbb2cb2c9",
+      "bytes": 24240,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/6fd3a6df-d4e2-4613-9108-8357fae7a884.jpg",
+    "fetchedAt": "2026-10-02T22:29:12.222647+00:00",
+    "sha256": "d2d4c066cfda8c8f808cacb5a5fef3904e521c43e12e6e432839b9709229898d",
+    "bytes": 83740,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

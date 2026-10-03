@@ -1,0 +1,29 @@
+{
+  "styleId": "d1941450-00be-4988-beaa-76bb68ae09ff",
+  "sourceUrl": "https://styles.refero.design/style/d1941450-00be-4988-beaa-76bb68ae09ff",
+  "fetchedAt": "2026-10-02T22:28:18.218064+00:00",
+  "extractedAt": "2026-10-02T22:28:18.239646+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "ARTU — Style Reference",
+  "htmlSha256": "d544ddaf547f302810a7e3be9e94fbd9ce838c5e40aa86b1cc60cc2a3379aa3e",
+  "cache": ".cache/d1941450-00be-4988-beaa-76bb68ae09ff.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "30675f3fbe4214de08747d222a884a532100748d21fa65a594f0addaa3d578f6",
+      "bytes": 15507,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5a2ee02e-3098-4b39-ac0c-2d512d40114e.jpg",
+    "fetchedAt": "2026-10-02T22:28:20.246134+00:00",
+    "sha256": "8fa0bd7f460349319ae3574a12e8956a780b9476740fd6fb59b762be8497d021",
+    "bytes": 86041,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

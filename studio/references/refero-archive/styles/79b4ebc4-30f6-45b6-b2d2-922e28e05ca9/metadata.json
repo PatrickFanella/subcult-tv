@@ -1,0 +1,29 @@
+{
+  "styleId": "79b4ebc4-30f6-45b6-b2d2-922e28e05ca9",
+  "sourceUrl": "https://styles.refero.design/style/79b4ebc4-30f6-45b6-b2d2-922e28e05ca9",
+  "fetchedAt": "2026-10-02T22:08:46.241823+00:00",
+  "extractedAt": "2026-10-02T22:08:46.274843+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Lpalo — Style Reference",
+  "htmlSha256": "520f9a60426275e4ba9d054959fc85e4db78c8356f3d3b277210ae2e2d61063c",
+  "cache": ".cache/79b4ebc4-30f6-45b6-b2d2-922e28e05ca9.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4c153b43c3cde27556d06ee68b3a21bbfaef8989b27e725cf00800a08eb6b847",
+      "bytes": 20555,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/9ce3302a-d168-4437-bd28-3d13b0580920.jpg",
+    "fetchedAt": "2026-10-02T22:08:48.216918+00:00",
+    "sha256": "eae531aa3d4c293937943dafc00748a1b8bb7fbb6d45c7af1461a6c1f8a4f6da",
+    "bytes": 94777,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

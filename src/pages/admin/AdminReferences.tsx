@@ -5,6 +5,7 @@ import remarkGfm from 'remark-gfm';
 import { ArrowUpRight, Grid2X2, List, Search, X } from 'lucide-react';
 import {
   getStudioAsset,
+  getStudioPreview,
   getStudioReference,
   getStudioReferenceFacets,
   getStudioReferences,
@@ -16,28 +17,54 @@ import '@/styles/studio.css';
 import '@/styles/references.css';
 
 function ReferenceImage({ id, name }: { id: string; name: string }) {
+  const target = useRef<HTMLSpanElement>(null);
   const [url, setUrl] = useState('');
   const [failed, setFailed] = useState(false);
   useEffect(() => {
-    const controller = new AbortController();
+    let cancelled = false;
     let objectURL = '';
-    getStudioAsset(id, controller.signal)
-      .then((blob) => {
-        if (controller.signal.aborted) return;
-        objectURL = URL.createObjectURL(blob);
-        setUrl(objectURL);
-      })
-      .catch(() => {
-        if (!controller.signal.aborted) setFailed(true);
-      });
+    const load = () =>
+      getStudioPreview(id)
+        .then((blob) => {
+          if (cancelled) return;
+          objectURL = URL.createObjectURL(blob);
+          setUrl(objectURL);
+        })
+        .catch(() => {
+          if (!cancelled) setFailed(true);
+        });
+    let observer: IntersectionObserver | undefined;
+    if (typeof IntersectionObserver === 'undefined') {
+      void load();
+    } else {
+      observer = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) {
+            observer?.disconnect();
+            void load();
+          }
+        },
+        { rootMargin: '200px' },
+      );
+      if (target.current) observer.observe(target.current);
+    }
     return () => {
-      controller.abort();
+      cancelled = true;
+      observer?.disconnect();
       if (objectURL) URL.revokeObjectURL(objectURL);
     };
   }, [id]);
-  if (failed) return <span className="reference-placeholder">Preview unavailable</span>;
-  if (!url) return <span className="reference-placeholder">Loading preview…</span>;
-  return <img src={url} alt={`${name} reference screenshot`} loading="lazy" />;
+  return (
+    <span ref={target} className="reference-image">
+      {failed ? (
+        <span className="reference-placeholder">Preview unavailable</span>
+      ) : !url ? (
+        <span className="reference-placeholder">Loading preview…</span>
+      ) : (
+        <img src={url} alt={`${name} reference screenshot`} loading="lazy" />
+      )}
+    </span>
+  );
 }
 
 function ReferenceDetail({ id, close }: { id: string; close: () => void }) {
@@ -390,6 +417,47 @@ export default function AdminReferences() {
               </select>
             </label>
           </div>
+          {results && results.total_pages > 1 && !error && (
+            <nav className="reference-pagination" aria-label="Reference pages">
+              <button
+                disabled={results.page <= 1 || loading}
+                onClick={() => {
+                  setLoading(true);
+                  update('page', String(results.page - 1), false);
+                }}
+              >
+                ← Previous
+              </button>
+              <label className="reference-page-picker">
+                Page
+                <select
+                  aria-label="Page"
+                  value={results.page}
+                  disabled={loading}
+                  onChange={(event) => {
+                    setLoading(true);
+                    update('page', event.target.value, false);
+                  }}
+                >
+                  {Array.from({ length: results.total_pages }, (_, index) => (
+                    <option key={index + 1} value={index + 1}>
+                      {index + 1}
+                    </option>
+                  ))}
+                </select>
+                of {results.total_pages} · 24 per page
+              </label>
+              <button
+                disabled={results.page >= results.total_pages || loading}
+                onClick={() => {
+                  setLoading(true);
+                  update('page', String(results.page + 1), false);
+                }}
+              >
+                Next →
+              </button>
+            </nav>
+          )}
           {!!selectedTags.length && (
             <div className="reference-active-tags">
               {selectedTags.map((tag) => (
@@ -437,7 +505,7 @@ export default function AdminReferences() {
                   >
                     <div className="reference-thumbnail">
                       {entry.preview ? (
-                        <ReferenceImage id={entry.preview} name={entry.name} />
+                        <ReferenceImage key={entry.preview} id={entry.preview} name={entry.name} />
                       ) : (
                         <span className="reference-placeholder">
                           {entry.name}
@@ -463,31 +531,6 @@ export default function AdminReferences() {
                 </article>
               ))}
             </div>
-          )}
-          {results && results.total_pages > 1 && !error && (
-            <nav className="reference-pagination" aria-label="Reference pages">
-              <button
-                disabled={results.page <= 1 || loading}
-                onClick={() => {
-                  setLoading(true);
-                  update('page', String(results.page - 1), false);
-                }}
-              >
-                ← Previous
-              </button>
-              <span>
-                Page {results.page} of {results.total_pages}
-              </span>
-              <button
-                disabled={results.page >= results.total_pages || loading}
-                onClick={() => {
-                  setLoading(true);
-                  update('page', String(results.page + 1), false);
-                }}
-              >
-                Next →
-              </button>
-            </nav>
           )}
         </div>
       </div>

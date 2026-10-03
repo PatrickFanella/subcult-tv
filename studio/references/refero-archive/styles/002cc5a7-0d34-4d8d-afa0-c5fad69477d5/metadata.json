@@ -1,0 +1,29 @@
+{
+  "styleId": "002cc5a7-0d34-4d8d-afa0-c5fad69477d5",
+  "sourceUrl": "https://styles.refero.design/style/002cc5a7-0d34-4d8d-afa0-c5fad69477d5",
+  "fetchedAt": "2026-10-02T22:38:14.302735+00:00",
+  "extractedAt": "2026-10-02T22:38:14.325438+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Getburnt — Style Reference",
+  "htmlSha256": "ab73a952fe413015bacb2c5a51070a6fac72a120211ad5fa96002ae85e7639d4",
+  "cache": ".cache/002cc5a7-0d34-4d8d-afa0-c5fad69477d5.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "9262179c0cf33351b7ed71bb5341b13e2e660350f7dcfefb6aaa21a6b046b0e6",
+      "bytes": 17425,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/3ba9a942-7af6-4f79-8691-8a68c2754d9e.jpg",
+    "fetchedAt": "2026-10-02T22:38:16.302176+00:00",
+    "sha256": "7d51e15ff9e28305294ba1c8c71e5ca72a9650a4403836b0065e29a4ed0ebd84",
+    "bytes": 156166,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

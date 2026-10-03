@@ -1,0 +1,29 @@
+{
+  "styleId": "78fec83e-4b27-44ab-9f64-31e9dee53e46",
+  "sourceUrl": "https://styles.refero.design/style/78fec83e-4b27-44ab-9f64-31e9dee53e46",
+  "fetchedAt": "2026-10-02T22:11:46.274189+00:00",
+  "extractedAt": "2026-10-02T22:11:46.298136+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Firecrawl — Style Reference",
+  "htmlSha256": "04eaea5c979a893f406864431846ba4279a256ef29dfa7e5fcc7815d299ab68e",
+  "cache": ".cache/78fec83e-4b27-44ab-9f64-31e9dee53e46.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "a9ec0a7747e69da672ceb398718298221c6b43e533e5a7c6cd922555c8e1fc7c",
+      "bytes": 26752,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/923e3d99-65fd-4274-9036-01b48bfc856d.jpg",
+    "fetchedAt": "2026-10-02T22:11:48.227974+00:00",
+    "sha256": "2fa292b73a0284cf92eeedd4c22e9ecb3b4f11af2c7e5f3913762db3fe8eed2e",
+    "bytes": 83620,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "2cfd1a08-e5b1-4bd8-9270-29aa08f80aa0",
+  "sourceUrl": "https://styles.refero.design/style/2cfd1a08-e5b1-4bd8-9270-29aa08f80aa0",
+  "fetchedAt": "2026-10-02T22:26:26.207204+00:00",
+  "extractedAt": "2026-10-02T22:26:26.230765+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Huddle — Style Reference",
+  "htmlSha256": "661e566a7649c345e592e604ee779caf6c29fac1e08d175261e28303ddc12344",
+  "cache": ".cache/2cfd1a08-e5b1-4bd8-9270-29aa08f80aa0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "fd4d1a1cf6a54aabb31f56ab279c70e74acbc289918b18b612e122500fd3ebf8",
+      "bytes": 24050,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/1ff72dba-c465-442c-9414-8aa252f3246a.jpg",
+    "fetchedAt": "2026-10-02T22:26:28.260158+00:00",
+    "sha256": "bbb727cae4196f409ae8a153a6506974818a4ad928ad97a5bd9dd632f0ba8b0a",
+    "bytes": 117960,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "3281b445-805b-4dc7-933f-42b544a6d798",
+  "sourceUrl": "https://styles.refero.design/style/3281b445-805b-4dc7-933f-42b544a6d798",
+  "fetchedAt": "2026-10-02T22:39:50.203250+00:00",
+  "extractedAt": "2026-10-02T22:39:50.226668+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Front — Style Reference",
+  "htmlSha256": "a2de499a7183e4daa42436c383145271c6c5aab45fb8a2bfd78474d6e8a4e374",
+  "cache": ".cache/3281b445-805b-4dc7-933f-42b544a6d798.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e82c0ed014190bfdcfed994b324463ae9054c09e7d944616e0f1e3e45f17df3b",
+      "bytes": 22482,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/c52ff9f7-8054-489b-a23b-7d95f602656c.jpg",
+    "fetchedAt": "2026-10-02T22:39:52.247723+00:00",
+    "sha256": "4794c11993bf9d3cd4a6a228415d97fe9663c7c45ab28debca9cfc0fe8856845",
+    "bytes": 130455,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

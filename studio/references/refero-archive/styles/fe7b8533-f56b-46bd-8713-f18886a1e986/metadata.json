@@ -1,0 +1,29 @@
+{
+  "styleId": "fe7b8533-f56b-46bd-8713-f18886a1e986",
+  "sourceUrl": "https://styles.refero.design/style/fe7b8533-f56b-46bd-8713-f18886a1e986",
+  "fetchedAt": "2026-10-02T22:36:22.222966+00:00",
+  "extractedAt": "2026-10-02T22:36:22.244100+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Aurora — Style Reference",
+  "htmlSha256": "19d9e846896c43550c5056b3f3d0504259e1d634e53c8f00f59ab30904793e41",
+  "cache": ".cache/fe7b8533-f56b-46bd-8713-f18886a1e986.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "0056623788e032d5c4ebfc935f63a563847d8bccd5bac83049a268f3c7318e13",
+      "bytes": 21464,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/95d9e90a-170e-4e98-8ed6-cf05bb66d59e.jpg",
+    "fetchedAt": "2026-10-02T22:36:24.216626+00:00",
+    "sha256": "27e7f44d9bedd77edf4abedebf50a9deb5a0de915ef807e3d150864f706f85df",
+    "bytes": 110674,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "styleId": "565bfc50-3a19-4224-9a4c-125edaeb7bef",
+  "sourceUrl": "https://styles.refero.design/style/565bfc50-3a19-4224-9a4c-125edaeb7bef",
+  "fetchedAt": "2026-10-02T22:10:10.238551+00:00",
+  "extractedAt": "2026-10-02T22:10:10.260449+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "cthdrl — Style Reference",
+  "htmlSha256": "629e887a77ff634ea61d6d7369d3a674850a1954fbef612188e6cc9e50e5e0fc",
+  "cache": ".cache/565bfc50-3a19-4224-9a4c-125edaeb7bef.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "4ea11bc7ef9560934127083c1579d52fcea05c1f5ae8a3df25af869b938c1743",
+      "bytes": 17644,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/5618b9fc-04b0-4873-825a-547b586eab7c.jpg",
+    "fetchedAt": "2026-10-02T22:10:12.294196+00:00",
+    "sha256": "a88b322d084fe1b21d7f094b82e16dfcb6889f879938d72ffc1688dabe831c0d",
+    "bytes": 107158,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

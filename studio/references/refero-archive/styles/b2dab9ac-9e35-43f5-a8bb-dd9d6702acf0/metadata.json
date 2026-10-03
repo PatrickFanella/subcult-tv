@@ -1,0 +1,29 @@
+{
+  "styleId": "b2dab9ac-9e35-43f5-a8bb-dd9d6702acf0",
+  "sourceUrl": "https://styles.refero.design/style/b2dab9ac-9e35-43f5-a8bb-dd9d6702acf0",
+  "fetchedAt": "2026-10-02T22:33:14.274571+00:00",
+  "extractedAt": "2026-10-02T22:33:14.297871+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Relume — Style Reference",
+  "htmlSha256": "6bb5b64cb3de7978df7b0824e021bd504c3e7a876a32ec09735e8f93ca631ec3",
+  "cache": ".cache/b2dab9ac-9e35-43f5-a8bb-dd9d6702acf0.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "c2797fa381d625556e013e3ac38ded9733dab342911efa7cd6dddfcaed26e00e",
+      "bytes": 23956,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/88b2b28f-0190-4f29-b96b-6ab600cfbdc4.jpg",
+    "fetchedAt": "2026-10-02T22:33:16.238903+00:00",
+    "sha256": "1b4bdd6d43880d4f945e636ea779853ddca28ab36a3eaf5a9dfac04fc0078463",
+    "bytes": 149055,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

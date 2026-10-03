@@ -1,0 +1,29 @@
+{
+  "styleId": "40a590a3-1f0d-41ab-9c39-30adf86dd400",
+  "sourceUrl": "https://styles.refero.design/style/40a590a3-1f0d-41ab-9c39-30adf86dd400",
+  "fetchedAt": "2026-10-02T22:19:14.304340+00:00",
+  "extractedAt": "2026-10-02T22:19:14.324051+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Petertarka — Style Reference",
+  "htmlSha256": "de3789a2653bf220c2fb5a45e1cde76f1df8c190039d031d7201f2386b7388e3",
+  "cache": ".cache/40a590a3-1f0d-41ab-9c39-30adf86dd400.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "495df63c9bcef6fc254c5978fa343e4742c63b515fa2dd96f13c46b19a3f85ef",
+      "bytes": 15253,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/a793b965-4b07-4fea-bf7c-b61781646af4.jpg",
+    "fetchedAt": "2026-10-02T22:19:16.259861+00:00",
+    "sha256": "a1b7ef14365c26db05270a4c7c814481d44444dcc8d53c484220280e7694cca6",
+    "bytes": 92544,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

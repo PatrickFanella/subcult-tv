@@ -1,0 +1,29 @@
+{
+  "styleId": "d28732de-1b7a-4d37-b7aa-edfa7caf428b",
+  "sourceUrl": "https://styles.refero.design/style/d28732de-1b7a-4d37-b7aa-edfa7caf428b",
+  "fetchedAt": "2026-10-02T22:09:02.203439+00:00",
+  "extractedAt": "2026-10-02T22:09:02.226245+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Raus — Style Reference",
+  "htmlSha256": "66b54aa1ffa430d8dc7225813d61f94d21c55ff00dead94b7d9f57348b102c92",
+  "cache": ".cache/d28732de-1b7a-4d37-b7aa-edfa7caf428b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "e0e5edc10217f166389370bae30556477f814ad134b1c415aff5134bfbd86963",
+      "bytes": 21456,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/eac0a84b-182b-447a-a0d4-b8286d6e5f7f.jpg",
+    "fetchedAt": "2026-10-02T22:09:04.258782+00:00",
+    "sha256": "43458abf0ae20945d2cb83279c9c66ba0ae671bab8fc84bd99e83a5348718184",
+    "bytes": 136464,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

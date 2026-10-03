@@ -1,0 +1,29 @@
+{
+  "styleId": "e1497817-b9f1-4d7a-842f-58a08dd9e455",
+  "sourceUrl": "https://styles.refero.design/style/e1497817-b9f1-4d7a-842f-58a08dd9e455",
+  "fetchedAt": "2026-10-02T22:14:34.401187+00:00",
+  "extractedAt": "2026-10-02T22:14:34.425478+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Memorisely — Style Reference",
+  "htmlSha256": "cd4de00a972a86f3e97f03f3d90f34342b776e20d2a909e466204d85d8118ed6",
+  "cache": ".cache/e1497817-b9f1-4d7a-842f-58a08dd9e455.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "583a76fcbf708c55b58b42fc48ab27340c2196280374da6bd459992f32776d75",
+      "bytes": 20371,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/7ad03668-84d6-4663-a4db-700ea753aa0c.jpg",
+    "fetchedAt": "2026-10-02T22:14:36.213724+00:00",
+    "sha256": "6a074e61a2138ee26ef8f6cb875606579efa57b13c9dfcaa9fb412e77a4b2fc2",
+    "bytes": 125040,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}

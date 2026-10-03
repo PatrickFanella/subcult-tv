@@ -1,0 +1,29 @@
+{
+  "styleId": "109e52eb-e70f-493e-9527-84d672b00c7b",
+  "sourceUrl": "https://styles.refero.design/style/109e52eb-e70f-493e-9527-84d672b00c7b",
+  "fetchedAt": "2026-10-02T22:23:14.166187+00:00",
+  "extractedAt": "2026-10-02T22:23:14.194436+00:00",
+  "userAgent": "DesignReferencesDownloader/1.0 (public DESIGN.md archive)",
+  "title": "Axelar — Style Reference",
+  "htmlSha256": "27bb642f4c9242b797e9e8de710409b0a7cfd03417735214e5e740d4a9f0f179",
+  "cache": ".cache/109e52eb-e70f-493e-9527-84d672b00c7b.html",
+  "usedCachedHTML": false,
+  "exports": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "18d71f7b33e4672ae92fbb12eae02c979f48c9f01fa60e4264ffa9278bbf17c1",
+      "bytes": 25194,
+      "variant": "server-rendered; compact/extended identity not inferred"
+    }
+  ],
+  "scope": "Public server-rendered export only; interpreted third-party reference, not an official source design system.",
+  "screenshot": {
+    "path": "screenshot.jpg",
+    "sourceUrl": "https://images.refero.design/styles/refero.design/image/b08b05c3-cd01-499f-92f9-f1bd173ce1cd.jpg",
+    "fetchedAt": "2026-10-02T22:23:16.286192+00:00",
+    "sha256": "bd9f056ee7c065c238cba90ea0eb5c20319fddccaa2b2349b668e3c05d73c95a",
+    "bytes": 125775,
+    "originalCaptureDate": "unknown",
+    "kind": "Refero-supplied reference screenshot, not a new live-site capture"
+  }
+}
