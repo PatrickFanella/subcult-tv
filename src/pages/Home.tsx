@@ -24,12 +24,12 @@ export default function Home() {
             </div>
             <div>
               <p className="text-bone text-lg leading-relaxed mb-6">
-                Save Twitch clips. Search a broadcast archive. Coordinate mutual aid. Run the door
-                at your next show. Research an election seat. SUBCULT builds software for each of
-                these.
+                We make software for people who run things: a clip channel, an archive, a food run,
+                a Friday show. Nine products so far. None of them wants your attention for longer
+                than the job takes.
               </p>
               <Button as="a" href="#products" variant="secondary">
-                Explore the products ↓
+                See all nine ↓
               </Button>
             </div>
           </div>
@@ -63,22 +63,23 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-12">
           <div>
             <p className="showcase-eyebrow">BUILT BY SUBCULT</p>
-            <h2 className="mb-5">Built in the open.</h2>
+            <h2 className="mb-5">The code is public.</h2>
             <p className="text-bone max-w-lg mb-6">
-              Every product links to its source code. Read it, follow the work, or talk to us about
-              your own project.
+              Read it before you trust us. Every product page links to its repository, and each one
+              says how finished the thing is.
             </p>
             <Link to="/about" className="showcase-text-link">
-              Meet the studio →
+              Who we are →
             </Link>
           </div>
           <div className="space-y-6 md:border-l border-fog md:pl-12">
             <div>
               <Link to="/contact" className="showcase-text-link">
-                Build something with us →
+                Write to us →
               </Link>
               <p className="text-sm text-bone mt-2">
-                Have an archive, a community, or an event that needs software? Get in touch.
+                If you keep an archive, run a mutual aid group or put on shows, and the software you
+                have is fighting you, tell us about it.
               </p>
             </div>
           </div>

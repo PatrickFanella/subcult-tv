@@ -2,9 +2,9 @@
   "clpr": {
     "slug": "clpr",
     "name": "clpr",
-    "description": "A place to find, organize, and share Twitch clips.",
-    "longDescription": "clpr helps people discover Twitch clips, save them into organized collections, and share favorites with other viewers.",
-    "whyItExists": "Twitch makes individual clips easy to create but hard to browse and organize later. clpr puts curation first.",
+    "description": "Twitch clips by creator, topic and tag, with playlists.",
+    "longDescription": "clpr sorts Twitch clips by creator, topic and tag. Viewers save clips to playlists and share them.",
+    "whyItExists": "Twitch makes a clip easy to create and hard to find a week later. clpr is where to look.",
     "status": "active",
     "type": ["software", "media", "social"],
     "stack": ["Go", "TypeScript", "React", "Twitch API"],
@@ -21,8 +21,8 @@
   "patchwork": {
     "slug": "patchwork",
     "name": "Patchwork",
-    "description": "Mutual aid search and coordination built on AT Protocol.",
-    "longDescription": "Patchwork is an AT Protocol mutual aid platform. It includes a web client, query API, ingestion and indexing pipeline, and moderation worker.",
+    "description": "A pre-alpha demonstration of local requests, offers and resources on AT Protocol.",
+    "longDescription": "Patchwork is a pre-alpha AT Protocol demonstration of mutual aid coordination. It includes a web client, query API, ingestion and indexing pipeline, and moderation worker. Requests show approximate areas; approved public resources can show their addresses.",
     "whyItExists": "Patchwork makes mutual aid requests searchable and moderatable while keeping the network on an open protocol.",
     "status": "active",
     "url": "https://patchwork.subcult.tv",
@@ -40,9 +40,9 @@
   "hasanara": {
     "slug": "hasanara",
     "name": "HasanAra",
-    "description": "Search the archive, save passages, and share moments with their source context.",
+    "description": "Search HasanAbi broadcast transcripts and open each result at its timestamp.",
     "longDescription": "HasanAra is a searchable video and transcript archive built on Rekolekt. Find a passage, return to its timestamp in the original recording, and save or share it with its source context.",
-    "whyItExists": "Video archives are difficult to search or cite. hasanara turns their speech into text that people can find, link, quote, and export.",
+    "whyItExists": "Years of broadcasts are hard to search or cite. HasanAra turns the speech into timestamped text that people can find and link. Transcripts are automatic and need checking against the recording before quoting.",
     "status": "active",
     "type": ["software", "media", "social"],
     "stack": [
@@ -69,7 +69,7 @@
   "transcript-create": {
     "slug": "transcript-create",
     "name": "Rekolekt",
-    "description": "Searchable recordings. Quotable moments. Source intact.",
+    "description": "Software for timestamped, searchable recording archives.",
     "longDescription": "Rekolekt is the shared transcript archive application behind HasanAra. Turn long-form recordings into timestamped, searchable text, browse the archive, and save or share passages with their source context. Each archive can use its own identity and branding while running the same application core.",
     "whyItExists": "Recorded conversations need searchable text and links back to their sources. The shared application lets different archives use those tools with their own identity.",
     "status": "active",
@@ -86,7 +86,7 @@
   "subcult-os": {
     "slug": "subcult-os",
     "name": "Subcult OS",
-    "description": "Event planning, ticket scanning, and door tools for live scenes.",
+    "description": "Event planning, free ticket reservations and door check-in, in development.",
     "longDescription": "subcult-os includes a web workspace for events, door operations, and run-of-show planning. Its React Native app gives hosts ticket scanning, invite management, and public event pages.",
     "whyItExists": "Small live events need practical tools for the door, guest list, schedule, and tickets without piecing together unrelated apps.",
     "status": "active",
@@ -104,8 +104,8 @@
     "slug": "undertow",
     "name": "Undertow",
     "description": "A layered music visualizer and video editor with local MP4 exports.",
-    "longDescription": "Undertow combines audio-reactive visualizers, artwork, text, timed lyrics, and video backgrounds in a layered editor. Create landscape, portrait, and square layouts, then export MP4 videos locally in the browser. Optional accounts and cloud rendering support saved projects and server exports.",
-    "whyItExists": "Independent musicians need a way to turn a track into a visual release. Undertow brings the audio, artwork, lyrics, and export into one editor.",
+    "longDescription": "Undertow combines audio-reactive visualizers, artwork, text, timed lyrics, and video backgrounds in a layered editor. Create landscape, portrait, and square layouts, then export MP4 videos locally in the browser. Accounts are optional and save projects. Cloud rendering is being tested with live billing disabled.",
+    "whyItExists": "A finished track still needs video for each platform. Undertow puts the audio, artwork, lyrics and export in one editor that renders on the musician's own machine.",
     "status": "active",
     "type": ["software", "media"],
     "stack": ["TypeScript", "React", "WebCodecs", "Butterchurn"],
@@ -140,7 +140,7 @@
   "kork": {
     "slug": "kork",
     "name": "Kork",
-    "description": "Themed link pages for every social, payment, and contact link.",
+    "description": "Free link pages for socials, payment buttons and contact details.",
     "longDescription": "Kork is a self-serve link-in-bio service. Build one themed page with 92 catalog services, links, embeds, QR codes, a contact card, and an email sign-up, then share a single link. Payment buttons go straight to the creator's own accounts, and analytics are anonymous daily totals.",
     "whyItExists": "A bio has room for one link. Kork puts the socials, tip jars, music, video, and contact details behind it on one page, without trackers and without taking a cut of tips or sales.",
     "status": "active",

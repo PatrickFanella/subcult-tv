@@ -20,14 +20,18 @@ export default function NewsletterSignup() {
       setEmail('');
     } catch (err) {
       setStatus('error');
-      setMessage(err instanceof Error ? err.message : 'subscription failed');
+      setMessage(
+        err instanceof Error
+          ? err.message
+          : 'The sign-up did not go through. Try again in a minute.',
+      );
     }
   };
 
   if (status === 'success') {
     return (
       <div className="bg-ash border border-static p-6 text-center">
-        <div className="font-mono text-sm text-static mb-1">✓ THANKS</div>
+        <div className="font-mono text-sm text-static mb-1">✓ REQUEST RECEIVED</div>
         <p className="font-mono text-xs text-dust">{message}</p>
       </div>
     );
@@ -36,9 +40,9 @@ export default function NewsletterSignup() {
   return (
     <div className="bg-ash border border-fog p-6">
       <div className="text-center mb-4">
-        <p className="font-mono text-xs text-dust mb-2">SUBCULT / PRODUCT UPDATES</p>
-        <h3 className="text-lg mb-1">Follow the products</h3>
-        <p className="text-sm text-bone">Get product releases and development updates by email.</p>
+        <p className="font-mono text-xs text-dust mb-2">SUBCULT / MONTHLY NEWSLETTER</p>
+        <h3 className="text-lg mb-1">One email a month</h3>
+        <p className="text-sm text-bone">Releases, and what we’re working on.</p>
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
@@ -65,10 +69,12 @@ export default function NewsletterSignup() {
       </form>
 
       {status === 'error' && (
-        <p className="font-mono text-xs text-signal text-center mt-2">ERR: {message}</p>
+        <p className="font-mono text-xs text-signal text-center mt-2">Not subscribed. {message}</p>
       )}
 
-      <p className="font-mono text-xs text-fog text-center mt-3">Unsubscribe anytime.</p>
+      <p className="font-mono text-xs text-fog text-center mt-3">
+        Every email has an unsubscribe link.
+      </p>
     </div>
   );
 }

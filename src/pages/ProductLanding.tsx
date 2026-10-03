@@ -77,9 +77,9 @@ export default function ProductLanding() {
           </figure>
         </section>
         <section id="features" className="landing-section" aria-labelledby="features-title">
-          <p className="landing-eyebrow">WHAT YOU CAN DO</p>
+          <p className="landing-eyebrow">{content.featuresLabel ?? 'WHAT YOU CAN DO'}</p>
           <h2 id="features-title">{content.introduction}</h2>
-          <div className="landing-features">
+          <div className="landing-features" data-count={content.features.length}>
             {content.features.map((feature, index) => (
               <article key={feature.title}>
                 <span className="landing-number">0{index + 1}</span>
@@ -91,8 +91,8 @@ export default function ProductLanding() {
         </section>
         <section className="landing-section landing-workflow" aria-labelledby="workflow-title">
           <div>
-            <p className="landing-eyebrow">A PLACE TO START</p>
-            <h2 id="workflow-title">How it works</h2>
+            <p className="landing-eyebrow">{content.stepsLabel ?? 'A PLACE TO START'}</p>
+            <h2 id="workflow-title">{content.stepsHeading ?? 'How it works'}</h2>
           </div>
           <ol>
             {content.steps.map((step) => (
@@ -113,13 +113,13 @@ export default function ProductLanding() {
               </p>
               <h2 id="related-title">
                 {project.slug === 'hasanara'
-                  ? 'HasanAra, powered by Rekolekt.'
-                  : 'See it in practice with HasanAra.'}
+                  ? 'HasanAra runs on Rekolekt.'
+                  : 'HasanAra is one such archive.'}
               </h2>
               <p>
                 {project.slug === 'hasanara'
-                  ? 'Rekolekt is the shared software for searchable recording archives. HasanAra is one archive built on it.'
-                  : 'HasanAra runs Rekolekt on an archive of HasanAbi broadcasts, under its own name and design.'}
+                  ? 'Rekolekt is the shared software for searchable recording archives. Other collections can run it under their own names.'
+                  : 'It runs Rekolekt on an archive of HasanAbi broadcasts, under its own name and design.'}
               </p>
             </div>
             <Link className="landing-button" to={getProductPath(related.project.slug)}>
@@ -129,8 +129,8 @@ export default function ProductLanding() {
         )}
         <section className="landing-section landing-faq" aria-labelledby="faq-title">
           <div>
-            <p className="landing-eyebrow">A FEW DETAILS</p>
-            <h2 id="faq-title">Common questions</h2>
+            <p className="landing-eyebrow">{content.faqLabel ?? 'A FEW DETAILS'}</p>
+            <h2 id="faq-title">{content.faqHeading ?? 'Common questions'}</h2>
           </div>
           <div>
             {content.faqs.map((faq) => (
@@ -144,15 +144,16 @@ export default function ProductLanding() {
         <section className="landing-support" aria-labelledby="support-title">
           <div>
             <p className="landing-eyebrow">MADE IN THE OPEN</p>
-            <h2 id="support-title">Follow how {project.name} gets made.</h2>
+            <h2 id="support-title">{project.name} is made by SUBCULT.</h2>
             <p>
-              {project.name} is built by SUBCULT. Get the monthly newsletter, or follow the workshop
-              on Patreon for field notes and early previews.
+              Patreon pays for the hours and the hosting. Backers get the workshop in return: a
+              field note every week and a monthly ledger of what shipped and what stalled. The
+              monthly newsletter is free.
             </p>
           </div>
           <div className="landing-actions">
             <Link className="landing-button" to="/support">
-              Support the work →
+              See what support pays for →
             </Link>
             <a className="landing-secondary" href="#newsletter">
               Get updates by email ↓
@@ -170,7 +171,7 @@ export default function ProductLanding() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {product.liveLabel ?? 'Visit Project'} ↗
+                {product.liveLabel ?? 'Visit the site'} ↗
               </a>
             )}
             <a
@@ -179,7 +180,7 @@ export default function ProductLanding() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Repository ↗
+              View repository ↗
             </a>
             <Link className="landing-secondary" to={`/contact?product=${project.slug}`}>
               {project.url ? 'Talk to SUBCULT →' : 'Discuss using it →'}

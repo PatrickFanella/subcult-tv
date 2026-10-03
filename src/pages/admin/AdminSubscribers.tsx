@@ -19,7 +19,7 @@ export default function AdminSubscribers() {
 
   return (
     <div>
-      <AdminHeader overline="SIGNAL ROSTER" title="Subscribers" />
+      <AdminHeader overline="NEWSLETTER" title="Subscribers" />
 
       {subscribers && (
         <p className="font-mono text-xs text-dust mb-4">
@@ -61,7 +61,7 @@ export default function AdminSubscribers() {
             {subscribers?.data.length === 0 && (
               <tr>
                 <td colSpan={3} className="py-8 text-center font-mono text-sm text-bone">
-                  No subscribers yet. Spread the signal.
+                  No subscribers yet.
                 </td>
               </tr>
             )}

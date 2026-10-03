@@ -23,7 +23,9 @@ export default function AdminLogin() {
     try {
       await login(username, password);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'authentication failed');
+      setError(
+        err instanceof Error ? err.message : 'Sign-in failed. Check the username and password.',
+      );
     } finally {
       setSubmitting(false);
     }
@@ -40,13 +42,13 @@ export default function AdminLogin() {
             <div className="text-center mb-8">
               <img src="/brand/subcult/master.svg" className="admin-login-mark" alt="" />
               <h1 className="text-3xl font-display text-glow tracking-widest mb-2">SUBCULT</h1>
-              <p className="font-mono text-xs text-dust">&gt; CONTROL PANEL ACCESS</p>
+              <p className="font-mono text-xs text-dust">Admin sign-in</p>
             </div>
 
             {/* Error */}
             {error && (
               <div className="mb-4 p-3 bg-ash border border-signal font-mono text-xs text-signal">
-                ERR: {error}
+                {error}
               </div>
             )}
 
@@ -95,7 +97,7 @@ export default function AdminLogin() {
                 className="w-full py-2.5 bg-static text-void font-mono text-sm font-bold tracking-wider
                            hover:bg-glow transition-colors duration-200 cursor-pointer disabled:opacity-50"
               >
-                {submitting ? 'AUTHENTICATING...' : 'AUTHENTICATE'}
+                {submitting ? 'SIGNING IN…' : 'SIGN IN'}
               </button>
             </form>
 
@@ -105,7 +107,7 @@ export default function AdminLogin() {
                 href="/"
                 className="font-mono text-xs text-dust hover:text-bone transition-colors duration-200"
               >
-                ← return to subcult.tv
+                ← Back to subcult.tv
               </a>
             </div>
           </div>

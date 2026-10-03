@@ -7,19 +7,18 @@ import { PATREON_URL } from '@/lib/links';
 
 const SUPPORT_OUTCOMES = [
   {
-    label: 'Pay for hosting',
-    detail:
-      'Contributions pay for domains, storage, hosting, and the services that keep public software available.',
+    label: 'Hosting',
+    detail: 'Domains, storage, servers and the services that keep public software reachable.',
   },
   {
-    label: 'Fund maintenance time',
+    label: 'Hours',
     detail:
-      'Support pays for the hours spent fixing bugs, applying security updates, writing documentation, and preparing releases.',
+      'Bug fixes, security updates, documentation and releases. Maintenance is most of the work, and nobody sees it when it goes well.',
   },
   {
-    label: 'Test useful ideas',
+    label: 'Early research',
     detail:
-      'Support pays for early research into a community need before the idea has a business model.',
+      'Time to look into a community need before anyone knows whether the idea can pay for itself.',
   },
 ];
 
@@ -45,24 +44,26 @@ const TIERS = [
 
 const OTHER_WAYS = [
   {
-    label: 'Contribute to the code',
-    detail: 'Read the source, open an issue, improve the documentation, or send a patch.',
+    label: 'Work on the code',
+    detail: 'Read the source, open an issue, fix the documentation or send a patch.',
     href: 'https://git.subcult.tv/subculture-collective',
     action: 'Open the repositories ↗',
     external: true,
   },
   {
     label: 'Use it and report what breaks',
-    detail: 'Real-world feedback is more useful than applause. Tell us where the work falls short.',
+    detail:
+      'A report from real use is worth more to us than applause. Tell us where it falls short.',
     href: '/contact',
-    action: 'Send useful feedback',
+    action: 'Tell us what broke',
     external: false,
   },
   {
     label: 'Back a specific project',
-    detail: 'Organizations and individuals can discuss supporting a defined piece of public work.',
+    detail:
+      'If you or your organization want to pay for a defined piece of public work, we can talk about scope.',
     href: '/contact',
-    action: 'Start a conversation',
+    action: 'Write to us',
     external: false,
   },
 ];
@@ -71,12 +72,12 @@ const FAQS = [
   {
     question: 'Does payment unlock the software?',
     answer:
-      'No. The products, repositories, and releases stay public. Backers get the workshop behind them: field notes, the ledger, and early previews.',
+      'No. The products, repositories and releases stay public either way. What backers get is the workshop: field notes, the ledger and early previews.',
   },
   {
     question: 'What does support not include?',
     answer:
-      'Ownership, governance, a release schedule, or private consulting. Advisory questions are input, and each one says what it can and cannot change.',
+      'Ownership, a vote, a release schedule or private consulting. When we ask backers a question, their answers are input, and we say up front what they can and cannot change.',
   },
   {
     question: 'Can I follow without paying?',
@@ -86,12 +87,12 @@ const FAQS = [
   {
     question: 'Can I help without spending money?',
     answer:
-      'Yes. Use the projects, report specific problems, improve documentation, contribute code, or introduce the work to a community that needs it.',
+      'Yes. Use the software and report specific problems. Fix the documentation. Send a patch. Show it to a group that could use it.',
   },
   {
-    question: 'How can I verify where the effort goes?',
+    question: 'How do I check where the effort goes?',
     answer:
-      'Follow the product pages, repositories, and release history. The work is public, so you can check it yourself.',
+      'The monthly ledger says what shipped and what stalled. The repositories and their release history are public, so you can check the ledger against them.',
   },
 ];
 
@@ -132,9 +133,9 @@ export default function Patreon() {
               </div>
               <div className="min-w-0">
                 <p className="text-bone text-lg leading-relaxed mb-6">
-                  The products stay public. Patreon opens the workshop: weekly field notes, a
-                  monthly studio ledger, and early previews. Follow for free, or back the work at
-                  $10 a month.
+                  Paying doesn’t unlock anything. The software stays public either way. What $10 a
+                  month gets you is the workshop: one field note a week and a monthly ledger of what
+                  shipped and what stalled. Following is free.
                 </p>
                 <div className="flex flex-wrap items-center gap-5">
                   <Button
@@ -155,14 +156,14 @@ export default function Patreon() {
           </div>
           <div className="subcult-product-bar">
             <nav className={`showcase-index ${SHELL}`} aria-label="Support sections">
-              <a href="#memberships">
-                <span>01</span> Memberships
-              </a>
               <a href="#support-work">
-                <span>02</span> What support funds
+                <span>01</span> Where the money goes
+              </a>
+              <a href="#memberships">
+                <span>02</span> Memberships
               </a>
               <a href="#support-questions">
-                <span>03</span> Before you contribute
+                <span>03</span> Before you pay
               </a>
             </nav>
           </div>
@@ -170,13 +171,13 @@ export default function Patreon() {
 
         <section id="support-work" className="border-b border-fog py-12 md:py-16">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">01 / WHY SUPPORT</p>
+            <p className="font-mono text-xs text-dust pt-2">01 / THE LEDGER</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
                 <h2 className="mb-4">Where your money goes</h2>
                 <p className="text-bone leading-relaxed">
-                  Contributions cover two costs: keeping the software online, and the time it takes
-                  to maintain it.
+                  Three lines on the ledger. The first two keep what exists running. The third is
+                  how new work starts.
                 </p>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -199,9 +200,9 @@ export default function Patreon() {
             <p className="font-mono text-xs text-dust pt-2">02 / MEMBERSHIPS</p>
             <div className="min-w-0">
               <div className="max-w-3xl mb-10">
-                <h2 className="mb-4">Membership options</h2>
+                <h2 className="mb-4">Memberships</h2>
                 <p className="text-bone leading-relaxed">
-                  Start by following for free. Back the work when the process is useful to you.
+                  Follow for free first. Pay when the notes are worth it to you.
                 </p>
               </div>
               {tiers === null && (
@@ -210,7 +211,9 @@ export default function Patreon() {
                 </p>
               )}
               {tiers?.length === 0 && (
-                <p>No published tiers are available. Visit Patreon for membership details.</p>
+                <p>
+                  Patreon lists no published tiers right now. Check the Patreon page for details.
+                </p>
               )}
               <div className="support-tiers">
                 {(tiers ?? TIERS).map((tier) => (
@@ -240,7 +243,7 @@ export default function Patreon() {
           <div className={`${SHELL} ${RAIL}`}>
             <p className="font-mono text-xs text-signal pt-2">03 / THE AGREEMENT</p>
             <blockquote className="min-w-0 font-display text-3xl md:text-5xl uppercase tracking-wide text-glow leading-tight break-words">
-              The products stay public. Support pays for the work and opens the workshop.
+              Paying doesn’t unlock anything. The software stays public either way.
             </blockquote>
           </div>
         </section>
@@ -252,8 +255,8 @@ export default function Patreon() {
               <div className="max-w-3xl mb-10">
                 <h2 className="mb-4">Other ways to help</h2>
                 <p className="text-bone leading-relaxed">
-                  A useful bug report, a documentation fix, or an honest introduction can matter as
-                  much as a subscription. Choose the contribution you can sustain.
+                  A bug report we can reproduce is worth as much to us as a subscription. So is a
+                  documentation fix. Give what you can keep giving.
                 </p>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -291,7 +294,7 @@ export default function Patreon() {
           <div className={`${SHELL} ${RAIL}`}>
             <p className="font-mono text-xs text-dust pt-2">05 / QUESTIONS</p>
             <div className="min-w-0">
-              <h2 className="mb-10">Before you contribute</h2>
+              <h2 className="mb-10">Before you pay</h2>
               <div className="divide-y divide-fog border-y border-fog">
                 {FAQS.map((item) => (
                   <div
@@ -309,12 +312,12 @@ export default function Patreon() {
 
         <section className="py-12 md:py-16">
           <div className={`${SHELL} ${RAIL}`}>
-            <p className="font-mono text-xs text-dust pt-2">06 / FOLLOW THE WORK</p>
+            <p className="font-mono text-xs text-dust pt-2">06 / PATREON</p>
             <div className="min-w-0 max-w-3xl">
-              <h2 className="mb-5">Keep the work going</h2>
+              <h2 className="mb-5">Follow, or back the workshop</h2>
               <p className="text-bone leading-relaxed mb-8 max-w-2xl">
-                Follow for free or back the workshop on Patreon. If you can’t contribute money, use
-                the work and tell us what needs fixing.
+                Both happen on Patreon. If money is tight, use the software and tell us what broke.
+                That counts.
               </p>
               <Button
                 as="a"

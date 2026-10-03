@@ -9,39 +9,49 @@ export default function About() {
       <SEOHead path="/about" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <header className="max-w-3xl mb-16">
-          <p className="showcase-eyebrow">THE STUDIO BEHIND THE PRODUCTS</p>
-          <h1 className="mb-6">Built by SUBCULT.</h1>
+          <p className="showcase-eyebrow">INDEPENDENT SOFTWARE STUDIO</p>
+          <h1 className="mb-6">We are Subculture Collective.</h1>
           <p className="text-bone text-lg leading-relaxed">
-            Subculture Collective is an independent software studio. We build tools for people who
-            collect clips, keep archives, organize mutual aid, and put on live events.
+            SUBCULT for short. We build software for people who clip streams, keep archives,
+            organize mutual aid and put on shows. Most platforms are built to keep you scrolling.
+            Our software does one job and lets you leave.
           </p>
         </header>
         <section className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
             <h2 className="mb-5">Each product starts with a specific job.</h2>
             <p className="text-bone leading-relaxed">
-              A stream produces moments worth keeping. A recording holds a conversation worth
-              finding again. A neighborhood needs a way to coordinate help. An event needs someone
-              to run the door. We build for one of those jobs at a time.
+              Somebody clipped the stream and now nobody can find it. A sentence is buried four
+              hours into a recording. A neighbor needs a ride. Someone has to work the door. We pick
+              one of those and build for it.
             </p>
           </div>
           <div className="space-y-6 text-bone">
             <div>
-              <h3 className="text-glow mb-2">Source you can inspect</h3>
+              <h3 className="text-glow mb-2">The code is public</h3>
               <p>
-                Each product links to its repository, so you can see how it works and follow its
-                development.
+                Each product links to its repository. You can see how it works and watch it change.
               </p>
             </div>
             <div>
-              <h3 className="text-glow mb-2">A design of its own</h3>
-              <p>Each product has its own look, designed around the people who use it.</p>
+              <h3 className="text-glow mb-2">Each one looks like itself</h3>
+              <p>
+                There is no house template. A clip site and a mutual aid board have different jobs,
+                so they don’t look alike.
+              </p>
             </div>
             <div>
-              <h3 className="text-glow mb-2">Maintained after release</h3>
+              <h3 className="text-glow mb-2">We say how finished it is</h3>
               <p>
-                We keep fixing bugs, updating documentation, and answering feedback after a product
-                ships.
+                Some of these are live. Others are demos, previews or still in development, and each
+                page says which.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-glow mb-2">We stick around</h3>
+              <p>
+                After a release we keep fixing bugs, updating the documentation and answering the
+                people who use it.
               </p>
             </div>
           </div>
@@ -66,11 +76,11 @@ export default function About() {
         <section className="border-t border-fog mt-12 pt-12">
           <h2 className="mb-5">Have a use for one of these?</h2>
           <p className="text-bone mb-6 max-w-2xl">
-            Tell us about your archive, community, event, or creative project. We also welcome
-            product questions, contributions, and collaborations.
+            Tell us about the archive, the group, the venue or the record you’re working on. Product
+            questions, patches and collaborations are welcome too.
           </p>
           <Link to="/contact" className="showcase-text-link">
-            Get in touch →
+            Write to us →
           </Link>
         </section>
       </div>

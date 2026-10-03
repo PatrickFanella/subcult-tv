@@ -73,7 +73,7 @@ describe('smoke: app shell', () => {
     const core = within(hasanara).getByRole('link', { name: 'Rekolekt →' });
     await user.click(core);
     expect(await screen.findByRole('heading', { name: 'Rekolekt', level: 1 })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /View Repository/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /View repository/ })).toHaveAttribute(
       'href',
       'https://git.subcult.tv/subculture-collective/rekolekt',
     );
@@ -84,7 +84,7 @@ describe('smoke: app shell', () => {
     renderApp('/');
     await user.click(await screen.findByRole('link', { name: 'About Undertow' }));
     expect(await screen.findByRole('heading', { name: 'Undertow', level: 1 })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /View Repository/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /View repository/ })).toHaveAttribute(
       'href',
       'https://git.subcult.tv/subculture-collective/undertow',
     );
@@ -98,7 +98,7 @@ describe('smoke: app shell', () => {
     for (const link of screen.getAllByRole('link', { name: /See the preview/i })) {
       expect(link).toHaveAttribute('href', 'https://prichal.subcult.tv');
     }
-    expect(screen.getByRole('link', { name: /View Repository/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /View repository/ })).toHaveAttribute(
       'href',
       'https://git.subcult.tv/subculture-collective/prichal',
     );
@@ -118,7 +118,7 @@ describe('smoke: app shell', () => {
       'href',
       'https://kork.subcult.tv',
     );
-    expect(screen.getByRole('link', { name: /View Repository/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /View repository/ })).toHaveAttribute(
       'href',
       'https://git.subcult.tv/subculture-collective/kork',
     );
@@ -152,8 +152,8 @@ describe('smoke: app shell', () => {
     expect(await screen.findByRole('heading', { name: 'clpr', level: 1 })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'All products' })).toHaveAttribute('href', '/products');
 
-    const visitProject = screen.getByRole('link', { name: /Visit Project/i });
-    const viewRepository = screen.getByRole('link', { name: /View Repository/i });
+    const visitProject = screen.getByRole('link', { name: /Visit the site/i });
+    const viewRepository = screen.getByRole('link', { name: /View repository/ });
     expect(visitProject).toHaveAttribute('href', 'https://clpr.tv');
     expect(viewRepository).toHaveAttribute(
       'href',
@@ -185,7 +185,7 @@ describe('smoke: app shell', () => {
   it('sets product metadata and structured data on a landing page', async () => {
     renderApp('/products/hasanara');
     await screen.findByRole('heading', { name: 'HasanAra', level: 1 });
-    expect(document.title).toBe('HasanAra: Find the passage. Keep the context | SUBCULT');
+    expect(document.title).toBe('HasanAra: Search what was said on stream | SUBCULT');
     expect(document.querySelector('meta[property="og:image"]')).toHaveAttribute(
       'content',
       'https://subcult.tv/og/hasanara.jpg',
@@ -208,8 +208,9 @@ describe('smoke: app shell', () => {
     const user = userEvent.setup();
     renderApp(`/products/${slug}`);
     expect(await screen.findByRole('heading', { name, level: 1 })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'How it works' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /View Repository/ })).toHaveAttribute(
+    expect(document.querySelector('#workflow-title')).toHaveTextContent(/\w/);
+    expect(document.querySelectorAll('.landing-workflow li').length).toBeGreaterThanOrEqual(2);
+    expect(screen.getByRole('link', { name: /View repository/ })).toHaveAttribute(
       'href',
       expect.stringContaining('git.subcult.tv/'),
     );
@@ -240,9 +241,10 @@ describe('smoke: app shell', () => {
       '/brand/left-field/hero.svg',
     );
     expect(
-      screen.getByText(/scores are research tools, not election predictions/),
+      screen.getByRole('heading', { name: 'A score here is a research note, not a forecast.' }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Inspect the score' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Where the field bends' })).toBeInTheDocument();
+    expect(screen.getByText(/Every score is provisional and versioned/)).toBeInTheDocument();
     expect(document.querySelector('.product-landing')).toHaveAttribute(
       'data-product',
       'left-field',
@@ -272,7 +274,7 @@ describe('smoke: app shell', () => {
 
   it('makes every product available from the shared navigation and footer', async () => {
     renderApp('/about');
-    await screen.findByRole('heading', { name: 'Built by SUBCULT.' });
+    await screen.findByRole('heading', { name: 'We are Subculture Collective.' });
     const nav = within(screen.getByRole('navigation', { name: 'Main navigation' }));
     const footer = within(screen.getByRole('contentinfo'));
     expect(nav.getByRole('link', { name: 'Support' })).toHaveAttribute('href', '/support');
@@ -324,7 +326,7 @@ describe('smoke: contact', () => {
 
   it('submits the form via the API', async () => {
     const api = await import('@/lib/api');
-    const submit = vi.fn().mockResolvedValue({ message: 'signal received' });
+    const submit = vi.fn().mockResolvedValue({ message: 'Message received.' });
     vi.spyOn(api, 'submitContact').mockImplementation(submit);
 
     const user = userEvent.setup();

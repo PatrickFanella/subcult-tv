@@ -26,7 +26,7 @@ func (h *Handler) Subscribe(w http.ResponseWriter, r *http.Request) {
 
 	email, ok := normalizeEmail(req.Email)
 	if !ok {
-		writeError(w, http.StatusBadRequest, "a valid email is required")
+		writeError(w, http.StatusBadRequest, "Enter a valid email address.")
 		return
 	}
 
@@ -36,7 +36,7 @@ func (h *Handler) Subscribe(w http.ResponseWriter, r *http.Request) {
 		defer cancel()
 		if err := h.Mail.RequestDoubleOptIn(ctx, email); err != nil {
 			slog.Error("newsletter confirmation email failed", "error", err)
-			writeError(w, http.StatusBadGateway, "could not send the confirmation email, please try again")
+			writeError(w, http.StatusBadGateway, "We could not send the confirmation email. Try again in a few minutes.")
 			return
 		}
 	}
@@ -51,13 +51,13 @@ func (h *Handler) Subscribe(w http.ResponseWriter, r *http.Request) {
 		email, uuid.New().String(), !doubleOptIn,
 	)
 	if err != nil {
-		writeError(w, http.StatusInternalServerError, "failed to subscribe")
+		writeError(w, http.StatusInternalServerError, "We could not save your subscription. Try again in a few minutes.")
 		return
 	}
 
-	message := "Subscribed. You'll get product updates by email."
+	message := "Subscribed. The newsletter goes out once a month."
 	if doubleOptIn {
-		message = "Check your inbox and confirm your subscription."
+		message = "Check your inbox for a confirmation link. You are not subscribed until you click it."
 	}
 	writeJSON(w, http.StatusCreated, map[string]string{"message": message})
 }
@@ -83,7 +83,7 @@ func (h *Handler) Unsubscribe(w http.ResponseWriter, r *http.Request) {
 		req.Token,
 	).Scan(&email)
 	if err != nil {
-		writeError(w, http.StatusNotFound, "invalid token or already unsubscribed")
+		writeError(w, http.StatusNotFound, "This unsubscribe link is invalid or was already used.")
 		return
 	}
 
@@ -96,7 +96,7 @@ func (h *Handler) Unsubscribe(w http.ResponseWriter, r *http.Request) {
 	}
 
 	writeJSON(w, http.StatusOK, map[string]string{
-		"message": "Unsubscribed. You won't get more product updates.",
+		"message": "Unsubscribed. We will not send you the newsletter again.",
 	})
 }
 

@@ -17,7 +17,7 @@ export const TEASERS: Teaser[] = [
     label: 'Untitled game',
     medium: 'Game / first-person mystery',
     summary:
-      'A radio outpost after the collapse. Strange calls come in at night, and each one leads back to the people who took you in.',
+      'After the collapse, the radio stays on all night. Log every call and initial it. Lately the calls keep leading back to the people who took you in.',
     art: {
       kind: 'image',
       src: '/teasers/game-radio-desk.webp',
@@ -28,7 +28,8 @@ export const TEASERS: Teaser[] = [
     id: 'untitled-audio',
     label: 'Untitled audio show',
     medium: 'Audio / monologue',
-    summary: 'A late-night monologue, recorded close and dry, that drifts somewhere uncanny.',
+    summary:
+      'One voice, late at night, recorded close and dry. It starts ordinary. It doesn’t stay there.',
     art: { kind: 'audio' },
   },
 ];

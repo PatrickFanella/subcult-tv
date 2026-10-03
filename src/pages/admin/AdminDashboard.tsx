@@ -15,13 +15,13 @@ export default function AdminDashboard() {
     <div>
       {/* Header */}
       <div className="mb-8">
-        <p className="font-mono text-xs text-dust mb-1">&gt; STATUS REPORT</p>
+        <p className="font-mono text-xs text-dust mb-1">SUBCULT / ADMIN</p>
         <h1 className="text-2xl">Dashboard</h1>
       </div>
 
       {error && (
         <div className="mb-6 p-4 bg-ash border border-signal font-mono text-sm text-signal">
-          ERR: {error}
+          Could not load the dashboard: {error}
         </div>
       )}
 
@@ -36,13 +36,13 @@ export default function AdminDashboard() {
           color="text-static"
         />
         <StatCard
-          label="Total Contacts"
+          label="Contact messages"
           value={stats?.total_contacts}
           icon="▧"
           color="text-flicker"
         />
         <StatCard
-          label="Unread Messages"
+          label="Unread messages"
           value={stats?.unread_contacts}
           icon="●"
           color="text-signal"
@@ -70,7 +70,7 @@ export default function AdminDashboard() {
             <span className="text-chalk">session: </span>
             <span className="text-flicker">ACTIVE</span>
           </p>
-          <p className="text-dust mt-3"># use the sidebar to manage content.</p>
+          <p className="text-dust mt-3"># Use the sidebar to manage content.</p>
         </div>
       </div>
     </div>

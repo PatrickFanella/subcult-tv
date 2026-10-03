@@ -24,7 +24,7 @@ export function AdminError({ error }: { error: string }) {
   if (!error) return null;
   return (
     <div className="mb-4 p-3 bg-ash border border-signal font-mono text-xs text-signal">
-      ERR: {error}
+      Error: {error}
     </div>
   );
 }
