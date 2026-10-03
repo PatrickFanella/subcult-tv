@@ -24,4 +24,4 @@ The current approval record identifies Patrick’s Patch direction; its supersed
 
 The primary checkouts and live timers were not changed. Their outstanding work and installed-consumer cutover are still covered by [repository consolidation](REPOSITORY-CONSOLIDATION.md). The October 6 publication hold is preserved in [the historical release record](history/RELEASE-2026-10-06.md).
 
-Local, hosted CI, rendered UI, deployment and natural scheduled-run evidence are separate. Validation results belong in the PR with the exact checked revision.
+Local checks, hosted CI, rendered UI, deployment and a natural scheduled run are separate kinds of evidence; one does not stand in for another. Put validation results in the PR with the exact revision checked.

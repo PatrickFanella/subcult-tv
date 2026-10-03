@@ -20,9 +20,9 @@ Packaging excludes nested ZIPs and caches. Rebuilding a brand also places its ge
 
 ## Editing and checking
 
-Run generators with `BRAND_ONLY=<slug>` where supported. Update the affected authoritative source and its derived exports together. Do not rebuild other brands merely to tidy files. Refresh the affected pack’s `asset-manifest.json`, preserving image dimensions and other recorded metadata. The library-wide manifest records the library files, and Patrick’s source manifest records its separate source system.
+Run generators with `BRAND_ONLY=<slug>` where supported. Update the affected authoritative source and its derived exports together. Do not rebuild other brands to tidy files. Refresh the affected pack’s `asset-manifest.json`, preserving image dimensions and other recorded metadata. The library-wide manifest records the library files, and Patrick’s source manifest records its separate source system.
 
-`make check-library` checks current manifest hashes and SVG parsing. The one-time cleanup preservation proof uses `python3 studio/scripts/check_library.py --check-cleanup-originals`; it is separate from normal checks so future approved source changes can update their manifests. `make check-studio` checks export hashes, approved logo inclusion, public/private destination boundaries and snapshot redaction. Current asset checks and original-import checks answer different questions.
+`make check-library` checks current manifest hashes and SVG parsing. The one-time cleanup preservation proof uses `python3 studio/scripts/check_library.py --check-cleanup-originals`; it is separate from normal checks so future approved source changes can update their manifests. `make check-studio` checks export hashes, approved logo inclusion, public/private destination boundaries and snapshot redaction. `make check-library` and `make check-studio` describe current files; `make check-import`, described below, covers the original import.
 
 ## Historical sources and recovery
 
