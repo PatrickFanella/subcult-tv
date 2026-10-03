@@ -32,10 +32,10 @@ As of October 1 the gallery held nine files, including the two original generate
 | Kork landing, phone, MEDIA-e9e40cfc33921aef | Screenshot, 780 × 1688 PNG (390 × 844 at 2x) | Same live landing; needs editorial review |
 | Kork published page, MEDIA-43cbc92b89d28839 | Screenshot, 780 × 1688 PNG | Local build of kork 22477c1 with a disposable database and placeholder handles; not a live page |
 | Kork page editor, MEDIA-265fdbf0a35a8bdf | Screenshot, 1440 × 900 PNG | Same local build, served as kork.subcult.tv through a local Chromium host mapping. The editor shows kork.subcult.tv/yourname, which is not a live page; caption it as a demonstration |
-| Kork share image, MEDIA-1ad9fefcdaeaa2bc | 1200 × 630 PNG | Kork pack render (`brands/kork/product/og.png`) |
-| Kork launch square, landscape and story, MEDIA-513f428164d9a529, MEDIA-70425e778378e394, MEDIA-15f9dbe2ae1da260 | 1080 × 1080, 1600 × 900 and 1080 × 1920 PNG | Rendered by `kork_launch_assets.py` from the pack artwork; copy limited to C-KORK; recipe `recipes/kork-launch-assets.recipe.json` |
+| Kork share image, MEDIA-0b7aa68182aa906f | 1200 × 630 PNG | Kork pack render (`brands/kork/product/og.png`), re-rendered October 3 with the headline "All of it, pinned to one link." |
+| Kork launch square, landscape and story, MEDIA-a81a50c25dac2731, MEDIA-48def9c920ba9255, MEDIA-6db64c39c764d3b0 | 1080 × 1080, 1600 × 900 and 1080 × 1920 PNG | Rendered by `kork_launch_assets.py` from the pack artwork; copy limited to C-KORK; re-rendered October 3 with the same headline; recipe `recipes/kork-launch-assets.recipe.json` |
 
-The local server and database behind the two placeholder captures were stopped after capture. The published-page and editor captures show third-party service icons as Kork renders them (Simple Icons, CC0; the marks belong to their owners). The launch landscape embeds the published-page capture, and the Kork guide keeps platform logos out of brand artwork, so that use needs the owner's confirmation. Drafts that use these assets are in [[Kork Launch Drafts]].
+The local server and database behind the two placeholder captures were stopped after capture. The published-page and editor captures show third-party service icons as Kork renders them (Simple Icons, CC0; the marks belong to their owners). The launch landscape embeds the published-page capture, and the Kork guide keeps platform logos out of brand artwork, so that use needs the owner's confirmation. Drafts that use these assets are in [[Kork Launch Drafts]]. The October 2 renders of the share image and the three launch graphics (MEDIA-1ad9fefcdaeaa2bc, MEDIA-513f428164d9a529, MEDIA-70425e778378e394, MEDIA-15f9dbe2ae1da260) are kept in the catalog as `retired`.
 
 ## Repeatable local short edits
 
