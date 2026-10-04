@@ -16,12 +16,15 @@ def read(path, limit=2_000_000):
         return None
 
 
-def snapshot(state=None):
-    cfg = json.loads((ROOT/'automation/social-posting/config.json').read_text())
+def snapshot(state=None, source_root=None):
+    source_root = source_root or ROOT
+    cfg = json.loads((source_root/'automation/social-posting/config.json').read_text())
     schedules = []
     for mode in ('plan', 'radar', 'review'):
-        timer = ROOT/f'automation/social-posting/social-posting-{mode}.timer'
+        timer = source_root/f'automation/social-posting/social-posting-{mode}.timer'
         schedules.append({'mode':mode, 'calendar':[line.split('=',1)[1] for line in timer.read_text().splitlines() if line.startswith('OnCalendar=')]})
+    timer = ROOT/'automation/postiz-dashboard/changemaker-instagram.timer'
+    schedules.append({'mode':'changemaker', 'calendar':[line.split('=',1)[1] for line in timer.read_text().splitlines() if line.startswith('OnCalendar=')]})
     data = {'version':1, 'generated_at':datetime.now(timezone.utc).isoformat(),
             'connected': bool(state and state.is_dir()), 'publishing_enabled':False,
             'timezone':cfg['timezone'], 'first_week':cfg['first_week'], 'schedules':schedules,
@@ -36,7 +39,7 @@ def snapshot(state=None):
     receipts = {}
     for path in candidates:
         receipt = read(path, 64_000)
-        if not isinstance(receipt, dict) or receipt.get('mode') not in ('plan','radar','review'):
+        if not isinstance(receipt, dict) or receipt.get('mode') not in ('plan','radar','review','changemaker'):
             continue
         if not path.resolve().is_relative_to(state):
             continue

@@ -1,0 +1,10 @@
+[Unit]
+Description=Prepare Instagram drafts after the daily Switchyard Changemaker run
+
+[Timer]
+OnCalendar=*-*-* 09:20:00 UTC
+Persistent=true
+Unit=changemaker-instagram.service
+
+[Install]
+WantedBy=timers.target
