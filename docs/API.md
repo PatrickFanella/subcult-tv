@@ -7,8 +7,8 @@ The route authority is `api/internal/router/router.go`. JSON application routes 
 | Method | Route | Purpose |
 | --- | --- | --- |
 | POST | `/api/v1/auth/login` | Authenticate and obtain a JWT |
-| GET | `/api/v1/projects` | Query database-backed projects |
-| GET | `/api/v1/projects/{slug}` | Read one project |
+| GET | `/api/v1/projects` | List approved project snapshots (status/type filters supported) |
+| GET | `/api/v1/projects/{slug}` | Read one approved project snapshot |
 | GET | `/api/v1/posts` | List published database posts |
 | GET | `/api/v1/posts/{slug}` | Read one published post |
 | POST | `/api/v1/contacts` | Store a contact message |
@@ -18,7 +18,7 @@ The route authority is `api/internal/router/router.go`. JSON application routes 
 | POST | `/api/v1/newsletter/unsubscribe` | Unsubscribe with the required token |
 | POST | `/api/v1/webhooks/brevo` | Receive authenticated provider feedback |
 
-The public website’s curated product catalog comes from `content/projects.json`; it is distinct from the database-backed admin project registry. Removing unused frontend client wrappers does not remove these public API routes.
+The public roster, claims and artwork come from `content/projects.json` and the showcase source. Approved database project snapshots update that roster in the browser. Editable registry rows are available only through the authenticated `/api/v1/admin/projects` route; public project routes expose approved snapshots. API outages retain the curated website fallback. New registry projects need a selected public page before joining the roster.
 
 ## Authenticated routes
 
@@ -35,6 +35,8 @@ Admin requests require `Authorization: Bearer <token>`.
 | GET | `/api/v1/admin/studio/references` | Paginated reference search |
 | GET | `/api/v1/admin/studio/references/facets` | Reference filters |
 | GET | `/api/v1/admin/studio/references/{id}` | One reference and attachments |
+| GET | `/api/v1/admin/projects` | Read editable project registry |
+| POST / DELETE | `/api/v1/admin/projects/{id}/approve`, `/api/v1/admin/projects/{id}/publication` | Approve the exact saved version / remove its public update |
 | POST | `/api/v1/projects`, `/api/v1/posts` | Create a registry project or site article |
 | PUT / DELETE | `/api/v1/projects/{id}`, `/api/v1/posts/{id}` | Update / delete a registry record |
 | GET | `/api/v1/contacts` | List stored contacts |

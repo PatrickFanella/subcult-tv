@@ -149,3 +149,12 @@ func TestStudioAssetBudgetIsSeparateAndStillProtected(t *testing.T) {
 		t.Fatalf("login budget changed: %d", code)
 	}
 }
+
+func TestEditableProjectRegistryRejectsAnonymousAccess(t *testing.T) {
+	r := New(&config.Config{JWTSecret: "test"}, &handlers.Handler{})
+	w := httptest.NewRecorder()
+	r.ServeHTTP(w, httptest.NewRequest("GET", "/api/v1/admin/projects", nil))
+	if w.Code != http.StatusUnauthorized {
+		t.Fatalf("anonymous registry read: %d", w.Code)
+	}
+}

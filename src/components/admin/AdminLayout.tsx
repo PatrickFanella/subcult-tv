@@ -1,6 +1,7 @@
 import { Suspense, useState } from 'react';
 import { LogOut, PanelLeftClose, PanelLeftOpen } from 'lucide-react';
 import '@/styles/admin-production.css';
+import '@/styles/studio.css';
 import { Navigate, Outlet, NavLink, Link } from 'react-router-dom';
 import { useAuth } from '@/context/useAuth';
 
@@ -8,6 +9,7 @@ const NAV_ITEMS = [
   { to: '/admin', label: 'Dashboard', icon: '◈' },
   { to: '/admin/studio', label: 'Brand library', icon: '◩' },
   { to: '/admin/studio/references', label: 'References', icon: '▦' },
+  { to: '/admin/studio/text', label: 'Text library', icon: '▤' },
   { to: '/admin/projects', label: 'Projects', icon: '▣' },
   { to: '/admin/posts', label: 'Posts', icon: '▤' },
   { to: '/admin/contacts', label: 'Contacts', icon: '▧' },
@@ -60,7 +62,7 @@ export default function AdminLayout() {
               className="subcult-nav-brand font-display text-xl text-glow tracking-wider no-underline"
             >
               <img
-                src="/brand/subcult/fisheye-circle.png?v=fisheye-20261003"
+                src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004"
                 className="subcult-nav-mark"
                 alt=""
               />

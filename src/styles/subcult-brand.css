@@ -226,3 +226,121 @@
     line-height: 1.6;
   }
 }
+
+/* Shared public Support and Studio composition; selected public brand assets only. */
+.support-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border: 1px solid #8b5cf6;
+  border-left: 8px solid #8b5cf6;
+  background: #191125;
+}
+.support-callout h2 {
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  margin: 0.3rem 0 0.6rem;
+}
+.support-callout p {
+  max-width: 44rem;
+  color: #f0ece4;
+}
+.support-callout .support-primary {
+  flex-shrink: 0;
+  text-decoration: none;
+  padding: 1rem 1.3rem;
+  background: #8b5cf6;
+  color: #100b19;
+  font-weight: 700;
+}
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #51495c;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.footer-socials a:hover {
+  border-color: #8b5cf6;
+}
+.studio-public-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+.studio-public-hero h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 1;
+}
+.studio-public-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.studio-public-poster {
+  background: #8b5cf6;
+  color: #100b19;
+  padding: 1.5rem;
+  transform: rotate(2deg);
+  border: 1px solid #f0ece4;
+}
+.studio-public-poster span {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+.studio-public-poster img {
+  display: block;
+  width: min(100%, 22rem);
+  aspect-ratio: 1;
+  object-fit: contain;
+  margin: 0.8rem auto;
+}
+.studio-public-poster strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  line-height: 0.95;
+}
+.studio-public-ethos {
+  border-top: 1px solid #8b5cf6;
+  padding-top: 2rem;
+}
+.studio-public-principles > div {
+  border-left: 3px solid #8b5cf6;
+  padding-left: 1.25rem;
+}
+.studio-public-products {
+  background: #191125;
+  padding: 2rem;
+  border: 1px solid #51495c;
+}
+@media (max-width: 767px) {
+  .support-callout {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.3rem;
+  }
+  .studio-public-hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .studio-public-poster {
+    transform: none;
+  }
+  .studio-public-products {
+    padding: 1.25rem;
+  }
+}

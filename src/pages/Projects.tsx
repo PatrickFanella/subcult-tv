@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import ProductVisual from '@/components/ProductVisual';
 import Teasers from '@/components/Teasers';
-import { getShowcaseProducts } from '@/lib/showcase';
+import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { getProductPath } from '@/lib/product-paths';
 
 export default function Projects() {
+  const products = useShowcaseProducts();
   return (
     <>
       <SEOHead path="/products" />
@@ -15,12 +16,12 @@ export default function Projects() {
           <p className="showcase-eyebrow">SUBCULT / INDEPENDENT SOFTWARE</p>
           <h1 className="mb-5">Products</h1>
           <p className="text-bone text-lg">
-            Nine products. Some are live, some are demos and some are still being built. Each one
-            says which.
+            {products.length} products. Some are live, some are demos and some are still being
+            built. Each one says which.
           </p>
         </header>
         <div className="product-directory">
-          {getShowcaseProducts().map((product, index) => (
+          {products.map((product, index) => (
             <article
               key={product.project.slug}
               aria-labelledby={`directory-${product.project.slug}`}
@@ -37,6 +38,12 @@ export default function Projects() {
               <h2 id={`directory-${product.project.slug}`} className="mb-3">
                 <Link to={getProductPath(product.project.slug)}>{product.project.name}</Link>
               </h2>
+              {product.relatedSlug && (
+                <p className="text-bone mb-3">
+                  {product.project.slug === 'hasanara' ? 'Built on ' : 'Powers '}
+                  {products.find((p) => p.project.slug === product.relatedSlug)?.project.name}
+                </p>
+              )}
               <p className="text-glow text-xl mb-3">{product.headline}</p>
               <p className="text-bone mb-5">{product.summary}</p>
               <Link to={getProductPath(product.project.slug)} className="showcase-text-link">

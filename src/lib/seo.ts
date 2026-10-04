@@ -13,6 +13,7 @@ export const DEFAULT_IMAGE = '/og-image.png';
 const DEFAULT_IMAGE_ALT = 'SUBCULT: Tools for the culture we build together.';
 
 const SOCIAL_PROFILES = [
+  'https://www.instagram.com/subcult.tv/',
   'https://bsky.app/profile/subcult.tv',
   'https://x.com/subcult_tv',
   PATREON_URL,
@@ -33,7 +34,8 @@ const ORGANIZATION = {
   '@type': 'Organization',
   '@id': `${SITE_URL}/#organization`,
   name: SITE_NAME,
-  alternateName: 'Subculture Collective',
+  legalName: 'Subculture-Collective',
+  alternateName: ['subcult.tv', 'SUBCULT.TV'],
   url: SITE_URL,
   logo: `${SITE_URL}/brand/subcult/mark.png`,
   email: 'info@subcult.tv',
@@ -127,7 +129,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/about',
     title: fullTitle('Studio'),
     description:
-      'Subculture Collective is the independent studio behind clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork, Left Field and Subsets.',
+      'SUBCULT is the independent studio behind clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork, Left Field and Subsets.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [ORGANIZATION],

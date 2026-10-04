@@ -1,23 +1,41 @@
 import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
-import { getShowcaseProducts } from '@/lib/showcase';
+import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { getProductPath } from '@/lib/product-paths';
 
 export default function About() {
+  const products = useShowcaseProducts();
   return (
     <>
       <SEOHead path="/about" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-        <header className="max-w-3xl mb-16">
-          <p className="showcase-eyebrow">INDEPENDENT SOFTWARE STUDIO</p>
-          <h1 className="mb-6">We are Subculture Collective.</h1>
-          <p className="text-bone text-lg leading-relaxed">
-            SUBCULT for short. We build software for people who clip streams, keep archives,
-            organize mutual aid and put on shows. Most platforms are built to keep you scrolling.
-            Our software does one job and lets you leave.
-          </p>
+      <div className="studio-public max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <header className="studio-public-hero">
+          <div>
+            <p className="showcase-eyebrow">INDEPENDENT SOFTWARE STUDIO</p>
+            <h1 className="mb-6">Software for independent culture.</h1>
+            <p className="text-bone text-lg leading-relaxed">
+              We are SUBCULT. We build software for people who clip streams, keep archives, organize
+              mutual aid and put on shows. Most platforms are built to keep you scrolling. Our
+              software does one job and lets you leave.
+            </p>
+            <div className="studio-public-actions">
+              <Link to="/products">Explore the products →</Link>
+              <Link to="/support">Keep the workshop going →</Link>
+            </div>
+          </div>
+          <div className="studio-public-poster" aria-hidden="true">
+            <span>SUBCULT.TV / OPEN WORKSHOP</span>
+            <img src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004" alt="" />
+            <strong>
+              MAKE IT.
+              <br />
+              USE IT.
+              <br />
+              PASS IT ON.
+            </strong>
+          </div>
         </header>
-        <section className="grid md:grid-cols-2 gap-12 mb-16">
+        <section className="studio-public-ethos grid md:grid-cols-2 gap-12 mb-16">
           <div>
             <h2 className="mb-5">Each product starts with a specific job.</h2>
             <p className="text-bone leading-relaxed">
@@ -26,7 +44,7 @@ export default function About() {
               one of those and build for it.
             </p>
           </div>
-          <div className="space-y-6 text-bone">
+          <div className="studio-public-principles space-y-6 text-bone">
             <div>
               <h3 className="text-glow mb-2">The code is public</h3>
               <p>
@@ -56,12 +74,12 @@ export default function About() {
             </div>
           </div>
         </section>
-        <section aria-labelledby="studio-products">
+        <section className="studio-public-products" aria-labelledby="studio-products">
           <h2 id="studio-products" className="mb-8">
             What we build
           </h2>
           <div className="grid md:grid-cols-2 gap-x-12">
-            {getShowcaseProducts().map(({ project, headline }) => (
+            {products.map(({ project, headline }) => (
               <Link
                 key={project.slug}
                 to={getProductPath(project.slug)}

@@ -3,10 +3,10 @@ import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
 import ProductShowcase from '@/components/ProductShowcase';
 import Teasers from '@/components/Teasers';
-import { getShowcaseProducts } from '@/lib/showcase';
+import { useShowcaseProducts } from '@/lib/use-showcase-products';
 
 export default function Home() {
-  const products = getShowcaseProducts();
+  const products = useShowcaseProducts();
   return (
     <>
       <SEOHead path="/" />

@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import LibraryMarkdown from './LibraryMarkdown';
 import { getStudioAsset } from '@/lib/api';
 
 function AssetContent({ id, alt, video = false }: { id: string; alt: string; video?: boolean }) {
@@ -82,5 +83,30 @@ export function StudioAsset(props: { id: string; alt: string; video?: boolean })
     <div ref={host} className="studio-lazy-asset">
       {visible ? <AssetContent key={props.id} {...props} /> : <span>Preview</span>}
     </div>
+  );
+}
+
+export function StudioTextAsset({ id }: { id: string }) {
+  const [text, setText] = useState<string | null>(null);
+  const [error, setError] = useState('');
+  useEffect(() => {
+    const controller = new AbortController();
+    getStudioAsset(id, controller.signal)
+      .then((blob) => blob.text())
+      .then((value) => {
+        if (!controller.signal.aborted) setText(value);
+      })
+      .catch(() => {
+        if (!controller.signal.aborted)
+          setError('Text preview unavailable. Download the source to inspect it.');
+      });
+    return () => controller.abort();
+  }, [id]);
+  return error ? (
+    <p role="alert">{error}</p>
+  ) : text === null ? (
+    <p role="status">Loading document…</p>
+  ) : (
+    <LibraryMarkdown>{text}</LibraryMarkdown>
   );
 }

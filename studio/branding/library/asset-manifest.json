@@ -1,8 +1,8 @@
 [
   {
     "path": "README.md",
-    "sha256": "dd57918e6eb532ce3fff3afb03981eb7391af6671512855f7f2f68f2115eeafb",
-    "bytes": 15939
+    "sha256": "6f4afb648cf84e5bde6921e08786d54632c4186c7575efa87571dce2f9404664",
+    "bytes": 16053
   },
   {
     "path": "audit_patchwork_contrast.py",
@@ -3866,8 +3866,8 @@
   },
   {
     "path": "brands/subcult/GUIDE.md",
-    "sha256": "b0809306e666a6b94b04d7fc5ef8ce8b0a3adc4a0e37f3069eec9d4fb72e1869",
-    "bytes": 6699
+    "sha256": "45442f2ed54c4c7d6a63cda2ca19841523d8e2645c827db9b3ba3057ed5a53f3",
+    "bytes": 6760
   },
   {
     "path": "brands/subcult/alt-text.md",
@@ -3876,7 +3876,7 @@
   },
   {
     "path": "brands/subcult/asset-manifest.json",
-    "sha256": "955d69a94736307c4d35e10eec9a130d96c6ca41cca7a69a80ce20ce9c3cc944",
+    "sha256": "868375be1282018dc995e76b8a33b750ed5303f3ec28491c30b61775fcd138ed",
     "bytes": 20021
   },
   {
@@ -5230,8 +5230,8 @@
   },
   {
     "path": "build_packs.py",
-    "sha256": "5dd0be6e19b2aeb87c4d08c76d60b06f63291eb61bd57ffa7ae704c9a9dfd4eb",
-    "bytes": 56271
+    "sha256": "2966a14a37c2f7e5fae6e25de84f9eb4f9aef160f8ce4d7a80f155fbd3169fb0",
+    "bytes": 56332
   },
   {
     "path": "clpr-directions/comparison.png",
@@ -7555,8 +7555,8 @@
   },
   {
     "path": "brands/subcult/logo-selection.json",
-    "sha256": "975d75d165d98ce8249cfd32f8fe75bc901c1ca0ceec00f3a0b774ae8f433581",
-    "bytes": 4908
+    "sha256": "1a01310d1ad8e18f5015af7c954e73e96dfea80fdfdcbe713dcf4c382ca6e05e",
+    "bytes": 4960
   },
   {
     "path": "brands/subcult/logos/mark-compact-dark-outlined.svg",
@@ -7740,13 +7740,13 @@
   },
   {
     "path": "subcult_assets.py",
-    "sha256": "2403a949cdf07468b334f4d4a1a4cb3bdd5fabbc2c59c40eba06de6d20487997",
-    "bytes": 6284
+    "sha256": "dc078ab7d1930fcdb839ef0dcf958eb06d123a85167c27bb50f543fd983e34b2",
+    "bytes": 6336
   },
   {
     "path": "brands/subcult/logos/mark-fisheye-circle.png",
-    "sha256": "d2207dea611860cb3efdd7ea27ba01d43ed658285a8df62e3de896cb81490c53",
-    "bytes": 754620,
+    "sha256": "748aaaa135865825f8ada74b4fed74e5c6531c132561523a25b9fcd8eafe8a94",
+    "bytes": 338777,
     "width": 1254,
     "height": 1254,
     "mode": "RGBA"

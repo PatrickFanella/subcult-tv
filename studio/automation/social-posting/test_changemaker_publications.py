@@ -8,6 +8,15 @@ from datetime import datetime, timezone
 import changemaker_publications as producer
 
 class PublicationPreparationTests(unittest.TestCase):
+    def test_skips_incomplete_newest_digest_without_accepting_partial_evidence(self):
+        from sources import complete_changemaker_digest
+        partial = {'evidence': {'status': 'partial', 'failed_source_count': 2, 'items': []}}
+        complete = {'evidence': {'status': 'complete', 'failed_source_count': 0, 'omitted_item_count': 0, 'items': []}}
+        self.assertIs(complete_changemaker_digest({'drafts': [partial, complete]}), complete)
+        for evidence in [{'status':'partial'}, {'status':'complete','failed_source_count':1}, {'status':'complete','omitted_item_count':1}]:
+            with self.subTest(evidence=evidence), self.assertRaises(ValueError):
+                complete_changemaker_digest({'drafts':[{'evidence':evidence}]})
+
     def test_generates_two_unapproved_editions_and_deduplicates_digest(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)/'studio';state=Path(tmp)/'state';here=root/'automation/social-posting'

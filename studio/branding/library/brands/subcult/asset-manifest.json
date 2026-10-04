@@ -5,8 +5,8 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "b0809306e666a6b94b04d7fc5ef8ce8b0a3adc4a0e37f3069eec9d4fb72e1869",
-      "bytes": 6699
+      "sha256": "45442f2ed54c4c7d6a63cda2ca19841523d8e2645c827db9b3ba3057ed5a53f3",
+      "bytes": 6760
     },
     {
       "path": "alt-text.md",
@@ -465,8 +465,8 @@
     },
     {
       "path": "logo-selection.json",
-      "sha256": "975d75d165d98ce8249cfd32f8fe75bc901c1ca0ceec00f3a0b774ae8f433581",
-      "bytes": 4908
+      "sha256": "1a01310d1ad8e18f5015af7c954e73e96dfea80fdfdcbe713dcf4c382ca6e05e",
+      "bytes": 4960
     },
     {
       "path": "logos/mark-outline-primary.svg",
@@ -570,8 +570,8 @@
     },
     {
       "path": "logos/mark-fisheye-circle.png",
-      "sha256": "d2207dea611860cb3efdd7ea27ba01d43ed658285a8df62e3de896cb81490c53",
-      "bytes": 754620,
+      "sha256": "748aaaa135865825f8ada74b4fed74e5c6531c132561523a25b9fcd8eafe8a94",
+      "bytes": 338777,
       "width": 1254,
       "height": 1254,
       "mode": "RGBA"

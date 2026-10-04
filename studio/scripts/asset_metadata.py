@@ -9,6 +9,7 @@ from pathlib import Path
 CATEGORY_LABELS = {
     "logos": "Logos & identity", "social": "Social templates", "video": "Video graphics",
     "artwork": "Artwork", "fonts": "Fonts & licenses", "tokens": "Design tokens",
+    "documents": "Guides & source documents", "product": "Product artwork",
 }
 WORDS = {"svg": "SVG", "png": "PNG", "css": "CSS", "json": "JSON", "mp4": "MP4",
          "ttf": "TTF", "woff2": "WOFF2", "ofl": "font license", "x": "X", "bluesky": "Bluesky"}
@@ -18,11 +19,11 @@ def readable(value):
     text = " ".join(WORDS.get(word.lower(), word) for word in words)
     return text[:1].upper() + text[1:]
 
-def brand_asset_metadata(relative):
+def brand_asset_metadata(relative, category=None):
     path = Path(relative)
     stem = path.stem
     words = set(stem.lower().split("-"))
-    category = path.parts[0] if len(path.parts) > 1 else "tokens"
+    category = category or (path.parts[0] if len(path.parts) > 1 else ("tokens" if stem == "tokens" else "documents"))
     title = readable(stem)
     # Numeric suffixes distinguish source variants and must remain visible.
     title = title.replace("mono", "monochrome").replace("outlined", "text converted to paths")

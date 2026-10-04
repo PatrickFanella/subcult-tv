@@ -132,8 +132,8 @@
   "circle": {
     "approved_by": "user",
     "path": "mark-fisheye-circle.png",
-    "source": "reviews/subcult-logo-fisheye/fisheye-circle-study.png",
-    "sha256": "d2207dea611860cb3efdd7ea27ba01d43ed658285a8df62e3de896cb81490c53",
-    "scope": "Replaces purple circle logo treatments; preserve the approved raster artwork."
+    "source": "reviews/subcult-logo-fisheye/fisheye-circle-flat-purple.png",
+    "sha256": "748aaaa135865825f8ada74b4fed74e5c6531c132561523a25b9fcd8eafe8a94",
+    "scope": "User-approved flat purple fill correction on 2026-10-04; preserve fisheye geometry, ink, green underscore and transparency."
   }
 }

@@ -1,7 +1,7 @@
 import { Link, Navigate, useParams } from 'react-router-dom';
 import ProductVisual from '@/components/ProductVisual';
 import SEOHead from '@/components/SEOHead';
-import { getShowcaseProducts } from '@/lib/showcase';
+import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { PRODUCT_LANDINGS } from '@/lib/product-landings';
 import { getProductPath, PRODUCT_ROUTES } from '@/lib/product-paths';
 import NotFound from '@/pages/NotFound';
@@ -18,7 +18,7 @@ const PRODUCT_MARKS: Record<string, string> = {
 
 export default function ProductLanding() {
   const { slug } = useParams<{ slug: string }>();
-  const products = getShowcaseProducts();
+  const products = useShowcaseProducts();
   const product = products.find(({ project }) => PRODUCT_ROUTES[project.slug] === slug);
   if (slug === 'transcript-create') return <Navigate to="/products/rekolekt" replace />;
   if (!product) return <NotFound />;

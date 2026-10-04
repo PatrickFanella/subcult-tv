@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <defs>
+    <filter id="flat-purple" color-interpolation-filters="sRGB">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 -8 8 0 -1" result="purple-mask"/>
+      <feFlood flood-color="#8b5cf6" result="purple"/>
+      <feComposite in="purple" in2="purple-mask" operator="in" result="flat-purple"/>
+      <feComposite in="flat-purple" in2="SourceGraphic" operator="atop"/>
+    </filter>
+  </defs>
+  <image xlink:href="fisheye-circle-study.png" width="1254" height="1254" filter="url(#flat-purple)"/>
+</svg>

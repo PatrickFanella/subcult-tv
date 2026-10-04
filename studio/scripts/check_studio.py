@@ -93,6 +93,18 @@ class StudioExportChecks(unittest.TestCase):
         entries = json.loads((self.destination/'references.json').read_text())['entries']
         self.assertTrue({tag for entry in entries for tag in entry['tags']}.issubset(set(tags)))
 
+    def test_active_guides_and_text_sources_are_private_and_hash_addressed(self):
+        brand = next(b for b in self.catalog['brands'] if b['slug'] == 'subcult')
+        guide = next(a for a in brand['assets'] if a['name'] == 'GUIDE.md')
+        self.assertEqual(guide['category'], 'documents')
+        self.assertEqual(guide['status'], 'current')
+        self.assertIn('captions.ass', {Path(a['name']).name for b in self.catalog['brands'] for a in b['assets']})
+        self.assertTrue(self.catalog['documents'])
+        for document in self.catalog['documents']:
+            self.assertIn(document['asset'], self.catalog['files'])
+            self.assertEqual(document['status'], 'source')
+        self.assertIn('against-metrics.mdx', {d['name'] for d in self.catalog['documents']})
+
     def test_export_boundary(self):
         names = {row['name'] for row in self.catalog['files'].values()}
         self.assertNotIn('config.json', names)

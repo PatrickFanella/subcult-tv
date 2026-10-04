@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "subcult.tv \u2014 product showcase for Subculture Collective",
+  "description": "subcult.tv \u2014 product showcase for SUBCULT",
   "scripts": {
     "dev": "vite --port 5175",
     "build": "tsc -b && npm run generate-sitemap && vite build && npm run prerender-meta",

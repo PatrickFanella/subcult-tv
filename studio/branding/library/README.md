@@ -1,5 +1,7 @@
 # SUBCULT brand and asset library — v1
 
+Business name: **Subculture-Collective**. Public studio branding: **SUBCULT**, **subcult.tv** or **SUBCULT.TV**.
+
 This folder holds thirteen brand packs. Some are identities the user selected. The others follow the theme a product already had.
 
 - The user selected Rekolekt A and SUBCULT C on October 1, 2026, and replaced Patrick with Patch / routed signal on October 2, 2026.

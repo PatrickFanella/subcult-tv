@@ -1,6 +1,7 @@
 import { useState, useEffect, useId, type FormEvent } from 'react';
 import { listPosts, createPost, updatePost, deletePost, type APIPost } from '@/lib/api';
 import { Field } from '@/components/admin/FormFields';
+import LibraryMarkdown from '@/components/admin/LibraryMarkdown';
 import { AdminHeader, AdminError } from '@/components/admin/crud';
 
 type PostForm = Omit<APIPost, 'id' | 'created_at' | 'updated_at'>;
@@ -85,19 +86,23 @@ export default function AdminPosts() {
   return (
     <div>
       <AdminHeader
-        overline="SITE ARTICLES"
-        title="Posts"
+        overline="TEXT LIBRARY / EDITABLE ARTICLES"
+        title="Article store"
         action={
           <button
             onClick={openNew}
             className="px-4 py-2 bg-signal text-void font-mono text-sm font-bold tracking-wider
                        hover:bg-signal-dim transition-colors duration-200 cursor-pointer"
           >
-            + NEW POST
+            + NEW ARTICLE
           </button>
         }
       />
 
+      <p className="studio-note">
+        Store essays, updates and announcements here. Unpublished articles stay private. Use the
+        development-log tag only for entries intended for the public Development feed.
+      </p>
       <AdminError error={error} />
 
       {/* ── Form ────────────────────────────────────────────── */}
@@ -171,6 +176,10 @@ export default function AdminPosts() {
                 Published
               </label>
             </div>
+            <details>
+              <summary>Preview Markdown</summary>
+              <LibraryMarkdown>{form.content}</LibraryMarkdown>
+            </details>
             <div className="flex gap-3 pt-2">
               <button
                 type="submit"
@@ -251,7 +260,7 @@ export default function AdminPosts() {
             {posts.length === 0 && (
               <tr>
                 <td colSpan={5} className="py-8 text-center font-mono text-sm text-bone">
-                  No posts yet. Use “+ NEW POST” to write one.
+                  No posts yet. Use “+ NEW ARTICLE” to write one.
                 </td>
               </tr>
             )}

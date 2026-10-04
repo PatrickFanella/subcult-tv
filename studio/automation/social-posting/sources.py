@@ -97,6 +97,17 @@ def changemaker_context(cfg: dict, now: datetime) -> dict:
     return result
 
 
+def complete_changemaker_digest(context: dict) -> dict:
+    """Choose a verified recent digest without relaxing evidence completeness."""
+    for digest in context.get('drafts', []):
+        evidence = digest.get('evidence', {})
+        if (evidence.get('status') == 'complete'
+                and not evidence.get('failed_source_count')
+                and not evidence.get('omitted_item_count')):
+            return digest
+    raise ValueError('Incomplete Changemaker evidence')
+
+
 def public_url(value: str) -> bool:
     parsed = urllib.parse.urlsplit(value)
     try:

@@ -109,7 +109,7 @@ def build_selected(destination):
             path = destination / f'{prefix}-{variant}.png'
             subprocess.run(['rsvg-convert', '-o', str(path), str(path.with_suffix('.svg'))], check=True)
     (destination / 'master.svg').write_text(selected_svg())
-    fisheye = ROOT.parent / 'reviews/subcult-logo-fisheye/fisheye-circle-study.png'
+    fisheye = ROOT.parent / 'reviews/subcult-logo-fisheye/fisheye-circle-flat-purple.png'
     shutil.copyfile(fisheye, destination / 'mark-fisheye-circle.png')
     selection = {'approved_by': 'user', 'registration_lines': False,
                  'primary': 'c-solid', 'outlined': 'b-heavy-outline', 'compact': 'd-compact',
@@ -119,5 +119,5 @@ def build_selected(destination):
     selection['circle'] = {'approved_by': 'user', 'path': 'mark-fisheye-circle.png',
                            'source': str(fisheye.relative_to(ROOT.parent)),
                            'sha256': hashlib.sha256(fisheye.read_bytes()).hexdigest(),
-                           'scope': 'Replaces purple circle logo treatments; preserve the approved raster artwork.'}
+                           'scope': 'User-approved flat purple fill correction on 2026-10-04; preserve fisheye geometry, ink, green underscore and transparency.'}
     (destination.parent / 'logo-selection.json').write_text(json.dumps(selection, indent=2)+'\n')

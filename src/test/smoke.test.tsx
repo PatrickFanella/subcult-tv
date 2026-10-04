@@ -44,7 +44,9 @@ describe('smoke: app shell', () => {
     expect(
       await screen.findByRole('heading', { name: /Tools for the culture/ }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('navigation').textContent).toContain('SUBCULT');
+    expect(screen.getByRole('navigation', { name: 'Main navigation' }).textContent).toContain(
+      'SUBCULT',
+    );
   });
 
   it('showcases all ten products and connects HasanAra to its shared application', async () => {
@@ -276,7 +278,7 @@ describe('smoke: app shell', () => {
 
   it('makes every product available from the shared navigation and footer', async () => {
     renderApp('/about');
-    await screen.findByRole('heading', { name: 'We are Subculture Collective.' });
+    await screen.findByRole('heading', { name: 'Software for independent culture.' });
     const nav = within(screen.getByRole('navigation', { name: 'Main navigation' }));
     const footer = within(screen.getByRole('contentinfo'));
     expect(nav.getByRole('link', { name: 'Support' })).toHaveAttribute('href', '/support');

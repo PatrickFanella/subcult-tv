@@ -92,8 +92,10 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 		// Public routes with stricter rate limiting for sensitive endpoints
 		api.With(middleware.RateLimit(loginLimiter)).Post("/auth/login", h.Login)
 
-		api.Get("/projects", h.ListProjects)
-		api.Get("/projects/{slug}", h.GetProject)
+		api.Get("/catalog/projects", h.PublishedProjects)
+
+		api.Get("/projects", h.PublishedProjects)
+		api.Get("/projects/{slug}", h.PublishedProject)
 
 		api.Get("/posts", h.ListPosts)
 		api.Get("/posts/{slug}", h.GetPost)
@@ -132,6 +134,11 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 			admin.Get("/admin/studio/references", h.ListStudioReferences)
 			admin.Get("/admin/studio/references/facets", h.StudioReferenceFacets)
 			admin.Get("/admin/studio/references/{id}", h.GetStudioReference)
+
+			admin.Post("/admin/projects/{id}/approve", h.ApproveProject)
+			admin.Delete("/admin/projects/{id}/publication", h.UnpublishProject)
+
+			admin.Get("/admin/projects", h.ListProjects)
 
 			// Projects CRUD
 			admin.Post("/projects", h.CreateProject)

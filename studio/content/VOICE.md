@@ -1,3 +1,7 @@
+# Business name and public branding
+
+The full proper business name is **Subculture-Collective**. Use **SUBCULT**, **subcult.tv** or **SUBCULT.TV** for public-facing studio branding. Use the full name where a business identity is required. Keep each product's own name and visual identity.
+
 # Voice guide
 
 One voice per product. This file governs public copy on subcult.tv, the product landings, brand packs, social drafts and support pages. Facts come from [the claims register](social/Product%20Claims%20Register.md); this guide only decides how they are said. Sample lines below show the voice. They are not approved copy, and a sample never licenses a claim the register does not support.
