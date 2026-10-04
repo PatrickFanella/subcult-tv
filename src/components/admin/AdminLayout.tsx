@@ -62,7 +62,7 @@ export default function AdminLayout() {
               className="subcult-nav-brand font-display text-xl text-glow tracking-wider no-underline"
             >
               <img
-                src="/brand/subcult/fisheye-circle.png?v=fisheye-20261003"
+                src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004"
                 className="subcult-nav-mark"
                 alt=""
               />

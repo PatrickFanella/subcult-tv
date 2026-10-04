@@ -307,7 +307,6 @@
   aspect-ratio: 1;
   object-fit: contain;
   margin: 0.8rem auto;
-  filter: url(#studio-logo-purple);
 }
 .studio-public-poster strong {
   display: block;

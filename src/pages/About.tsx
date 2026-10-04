@@ -24,30 +24,8 @@ export default function About() {
             </div>
           </div>
           <div className="studio-public-poster" aria-hidden="true">
-            <svg width="0" height="0" className="absolute" focusable="false">
-              <defs>
-                <filter id="studio-logo-purple" colorInterpolationFilters="sRGB">
-                  {/* Purple has much more blue than green; ink and the underscore do not. */}
-                  <feColorMatrix
-                    in="SourceGraphic"
-                    type="matrix"
-                    values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 -8 8 0 -1"
-                    result="purpleMask"
-                  />
-                  <feFlood floodColor="#8b5cf6" result="purple" />
-                  <feComposite in="purple" in2="purpleMask" operator="in" result="flatPurple" />
-                  <feComposite
-                    in="flatPurple"
-                    in2="SourceGraphic"
-                    operator="over"
-                    result="corrected"
-                  />
-                  <feComposite in="corrected" in2="SourceAlpha" operator="in" />
-                </filter>
-              </defs>
-            </svg>
             <span>SUBCULT.TV / OPEN WORKSHOP</span>
-            <img src="/brand/subcult/fisheye-circle.png?v=fisheye-20261003" alt="" />
+            <img src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004" alt="" />
             <strong>
               MAKE IT.
               <br />

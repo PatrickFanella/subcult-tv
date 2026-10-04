@@ -33,7 +33,7 @@ export default function Nav() {
             className="subcult-nav-brand font-display text-xl font-bold tracking-[0.2em] text-glow hover:text-signal transition-colors no-underline"
           >
             <img
-              src="/brand/subcult/fisheye-circle.png?v=fisheye-20261003"
+              src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004"
               className="subcult-nav-mark"
               alt=""
             />

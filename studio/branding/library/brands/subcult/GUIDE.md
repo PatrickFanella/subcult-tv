@@ -24,7 +24,7 @@ White artwork outlines or removes the green block. Use dark ink marks on purple 
 
 ### Circle logo
 
-The user approved `logos/mark-fisheye-circle.png` in place of the purple-circle logo treatments: solid SC lettering and a green underscore on a purple circle, with a fisheye distortion on the SC_. It is raster artwork generated from the compact D mark. Preserve its exact bytes; do not redraw it. The public site uses the same file as `public/brand/subcult/fisheye-circle.png`. The source study and its generation prompt are in [the fisheye review](../../../reviews/subcult-logo-fisheye/README.md).
+The user approved `logos/mark-fisheye-circle.png` in place of the purple-circle logo treatments: solid SC lettering and a green underscore on a purple circle, with a fisheye distortion on the SC_. It uses the approved fisheye geometry with the purple fill corrected to flat `#8b5cf6` on October 4, 2026. Preserve the selected raster bytes; do not redraw it. The public site uses the same file as `public/brand/subcult/fisheye-circle.png`. The source study and its generation prompt are in [the fisheye review](../../../reviews/subcult-logo-fisheye/README.md).
 
 ### Color
 
