@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getStudioCatalog, type StudioCatalog } from '@/lib/api';
+import { getStudioCatalog, type StudioBrandAsset, type StudioCatalog } from '@/lib/api';
 import { StudioAsset, AssetDownload } from '@/components/admin/StudioAsset';
 import '@/styles/studio.css';
 
@@ -11,6 +11,7 @@ export default function AdminStudio() {
   const [query, setQuery] = useState('');
   const [selected, setSelected] = useState('subcult');
   const [category, setCategory] = useState('logos');
+  const [assetTags, setAssetTags] = useState<string[]>([]);
   const [light, setLight] = useState(false);
   const [video, setVideo] = useState('');
   const [revision, setRevision] = useState(0);
@@ -33,7 +34,7 @@ export default function AdminStudio() {
     setRevision((value) => value + 1);
   };
   const brand = catalog?.brands.find((item) => item.slug === selected) ?? catalog?.brands[0];
-  const assets =
+  const assets: StudioBrandAsset[] =
     brand?.assets ??
     brand?.logos.map((id) => ({
       id,
@@ -44,13 +45,17 @@ export default function AdminStudio() {
   const visible = assets.filter(
     (item) =>
       (category === 'all' || item.category === category) &&
-      item.name.toLowerCase().includes(query.toLowerCase()),
+      `${item.title ?? ''} ${item.name} ${(item.tags ?? []).join(' ')}`
+        .toLowerCase()
+        .includes(query.toLowerCase()) &&
+      assetTags.every((tag) => item.tags?.includes(tag)),
   );
   const media =
-    catalog?.media.filter((item) =>
-      `${item.title} ${item.products.join(' ')} ${item.kind}`
-        .toLowerCase()
-        .includes(query.toLowerCase()),
+    catalog?.media.filter(
+      (item) =>
+        `${item.title} ${item.products.join(' ')} ${item.kind} ${(item.tags ?? []).join(' ')} ${item.alt_text}`
+          .toLowerCase()
+          .includes(query.toLowerCase()) && assetTags.every((tag) => item.tags?.includes(tag)),
     ) ?? [];
   return (
     <section className="studio-page" aria-labelledby="studio-heading">
@@ -84,6 +89,7 @@ export default function AdminStudio() {
               onClick={() => {
                 setTab('brands');
                 setQuery('');
+                setAssetTags([]);
               }}
             >
               Brands / {catalog.brands.length}
@@ -93,6 +99,7 @@ export default function AdminStudio() {
               onClick={() => {
                 setTab('media');
                 setQuery('');
+                setAssetTags([]);
               }}
             >
               Media / {catalog.media.length}
@@ -108,6 +115,7 @@ export default function AdminStudio() {
                     onClick={() => {
                       setSelected(item.slug);
                       setQuery('');
+                      setAssetTags([]);
                     }}
                   >
                     {item.name}
@@ -154,11 +162,29 @@ export default function AdminStudio() {
                   <div className="studio-tools">
                     <label>
                       Asset category
-                      <select value={category} onChange={(e) => setCategory(e.target.value)}>
+                      <select
+                        value={category}
+                        onChange={(e) => {
+                          setCategory(e.target.value);
+                          setAssetTags([]);
+                        }}
+                      >
                         {['all', 'logos', 'social', 'video', 'artwork', 'fonts', 'tokens'].map(
                           (value) => (
                             <option key={value} value={value}>
-                              {value}
+                              {
+                                (
+                                  {
+                                    all: 'All assets',
+                                    logos: 'Logos & identity',
+                                    social: 'Social templates',
+                                    video: 'Video graphics',
+                                    artwork: 'Artwork',
+                                    fonts: 'Fonts & licenses',
+                                    tokens: 'Design tokens',
+                                  } as Record<string, string>
+                                )[value]
+                              }
                             </option>
                           ),
                         )}
@@ -177,6 +203,40 @@ export default function AdminStudio() {
                       {light ? 'Light preview' : 'Dark preview'}
                     </button>
                   </div>
+                  <p className="studio-note">
+                    Tags describe source files. All selected tags must match.
+                  </p>
+                  <div className="studio-asset-tags" aria-label="Asset tag filters">
+                    {[
+                      ...new Set(
+                        assets
+                          .filter((item) => category === 'all' || item.category === category)
+                          .flatMap((item) => item.tags ?? []),
+                      ),
+                    ]
+                      .sort()
+                      .map((tag) => (
+                        <button
+                          key={tag}
+                          aria-pressed={assetTags.includes(tag)}
+                          onClick={() =>
+                            setAssetTags((current) =>
+                              current.includes(tag)
+                                ? current.filter((value) => value !== tag)
+                                : [...current, tag],
+                            )
+                          }
+                        >
+                          {tag}
+                        </button>
+                      ))}
+                  </div>
+                  {assetTags.length > 0 && (
+                    <button onClick={() => setAssetTags([])}>Clear asset tags</button>
+                  )}
+                  <p role="status">
+                    {visible.length} {visible.length === 1 ? 'asset' : 'assets'}
+                  </p>
                   {visible.length === 0 ? (
                     <p>No assets match this category and search.</p>
                   ) : (
@@ -185,7 +245,10 @@ export default function AdminStudio() {
                         <figure key={item.name}>
                           <div className={`studio-asset-stage ${light ? 'is-light' : ''}`}>
                             {/\.(svg|png|jpe?g|webp)$/i.test(item.name) ? (
-                              <StudioAsset id={item.id} alt={`${brand.name}: ${item.name}`} />
+                              <StudioAsset
+                                id={item.id}
+                                alt={`${brand.name}: ${item.title ?? item.name}`}
+                              />
                             ) : item.name.endsWith('.mp4') ? (
                               video === item.id ? (
                                 <StudioAsset id={item.id} alt={item.name} video />
@@ -201,7 +264,15 @@ export default function AdminStudio() {
                             )}
                           </div>
                           <figcaption>
-                            <strong>{item.name}</strong>
+                            <strong>{item.title ?? item.name}</strong>
+                            {item.title && (
+                              <small className="studio-asset-filename">{item.name}</small>
+                            )}
+                            <div className="studio-asset-tag-labels">
+                              {item.tags?.map((tag) => (
+                                <span key={tag}>{tag}</span>
+                              ))}
+                            </div>
                             <AssetDownload id={item.id} name={item.name} />
                           </figcaption>
                         </figure>
@@ -222,6 +293,34 @@ export default function AdminStudio() {
                   type="search"
                 />
               </label>
+              <p className="studio-note">
+                Tags come from the media catalog. All selected tags must match.
+              </p>
+              <div className="studio-asset-tags" aria-label="Media tag filters">
+                {[...new Set(catalog.media.flatMap((item) => item.tags ?? []))]
+                  .sort()
+                  .map((tag) => (
+                    <button
+                      key={tag}
+                      aria-pressed={assetTags.includes(tag)}
+                      onClick={() =>
+                        setAssetTags((current) =>
+                          current.includes(tag)
+                            ? current.filter((value) => value !== tag)
+                            : [...current, tag],
+                        )
+                      }
+                    >
+                      {tag}
+                    </button>
+                  ))}
+              </div>
+              {assetTags.length > 0 && (
+                <button onClick={() => setAssetTags([])}>Clear asset tags</button>
+              )}
+              <p role="status">
+                {media.length} media {media.length === 1 ? 'asset' : 'assets'}
+              </p>
               {media.length === 0 ? (
                 <p>No media matches this search.</p>
               ) : (
@@ -240,6 +339,11 @@ export default function AdminStudio() {
                         )}
                       </div>
                       <h2>{item.title}</h2>
+                      <div className="studio-asset-tag-labels">
+                        {item.tags?.map((tag) => (
+                          <span key={tag}>{tag}</span>
+                        ))}
+                      </div>
                       <p>
                         {item.products.join(' / ')} · {item.kind}
                       </p>

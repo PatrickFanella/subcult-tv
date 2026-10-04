@@ -22,13 +22,13 @@ func TestStudioReferenceIndexIntegration(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	defer db.Close()
+	t.Cleanup(db.Close)
 	if err = database.Migrate(ctx, db); err != nil {
 		t.Fatal(err)
 	}
 	root := t.TempDir()
 	catalog := []studioReference{
-		{ID: "test-swiss", Name: "Swiss Alpha", URL: "https://example.invalid/a", Collection: "Test studies", Summary: "Quiet grid", Guide: "Helvetica typographic baseline", Tags: []string{"Swiss", "Minimalist"}, Images: []string{}, Attachments: []referenceAttachment{}},
+		{ID: "test-swiss", Name: "Swiss Alpha", URL: "https://example.invalid/a", Collection: "Test studies", Summary: "Quiet grid", Guide: "Helvetica typographic baseline", Tags: []string{"Swiss", "Minimalist", "Dark"}, Images: []string{}, Attachments: []referenceAttachment{}},
 		{ID: "test-retro", Name: "Retro Beta", URL: "https://example.invalid/b", Collection: "Test studies", Summary: "A bright reference", Guide: "Hand lettering", Tags: []string{"Retro"}, Images: []string{}, Attachments: []referenceAttachment{}},
 	}
 	writeBundle := func(entries []studioReference) {
@@ -83,6 +83,52 @@ func TestStudioReferenceIndexIntegration(t *testing.T) {
 	json.Unmarshal(res.Body.Bytes(), &empty)
 	if res.Code != 200 || empty.Total != 0 || len(empty.Items) != 0 {
 		t.Fatalf("AND tag semantics: %s", res.Body.String())
+	}
+
+	// Alternatives within style must include both records; color narrows them.
+	for _, tc := range []struct {
+		path  string
+		total int
+	}{
+		{"/?filter_style=Swiss&filter_style=Retro", 2},
+		{"/?filter_style=Swiss&filter_style=Retro&filter_color=Dark", 1},
+		{"/?filter_style=Retro&filter_color=Dark", 0},
+	} {
+		res := request(tc.path)
+		var result struct {
+			Total int `json:"total"`
+		}
+		if res.Code != 200 || json.Unmarshal(res.Body.Bytes(), &result) != nil || result.Total != tc.total {
+			t.Fatalf("group filter %s: %s", tc.path, res.Body.String())
+		}
+	}
+	if request("/?filter_color=Swiss").Code != 400 {
+		t.Fatal("tag in wrong group accepted")
+	}
+	res = request("/facets?filter_style=Swiss&filter_color=Dark")
+	var facets struct {
+		Tags []struct {
+			Name  string
+			Group string
+			Count int
+		}
+	}
+	if res.Code != 200 || json.Unmarshal(res.Body.Bytes(), &facets) != nil {
+		t.Fatalf("contextual facets: %s", res.Body.String())
+	}
+	counts := map[string]int{}
+	for _, tag := range facets.Tags {
+		counts[tag.Name] = tag.Count
+	}
+	if counts["Swiss"] != 1 || counts["Retro"] != 0 || counts["Dark"] != 1 {
+		t.Fatalf("contextual facet counts: %v", counts)
+	}
+	res = request("/facets?filter_style=Retro")
+	json.Unmarshal(res.Body.Bytes(), &facets)
+	for _, tag := range facets.Tags {
+		if tag.Name == "Dark" && tag.Count != 0 {
+			t.Fatal("color facets ignored style filter")
+		}
 	}
 	if request("/?sort=invalid").Code != 400 {
 		t.Fatal("invalid sort accepted")

@@ -58,6 +58,7 @@ export default function App() {
             <Route index element={<AdminDashboard />} />
             <Route path="studio" element={<AdminStudio />} />
             <Route path="studio/references" element={<AdminReferences />} />
+            <Route path="studio/references/:section" element={<AdminReferences />} />
             <Route path="projects" element={<AdminProjects />} />
             <Route path="posts" element={<AdminPosts />} />
             <Route path="contacts" element={<AdminContacts />} />

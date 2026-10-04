@@ -141,7 +141,13 @@ describe('Production admin', () => {
           logos: ['logo'],
           tokens: { colors: { base: '#8b5cf6' }, fonts: { display: 'Oswald' } },
           assets: [
-            { id: 'logo', name: 'logos/mark.svg', category: 'logos' },
+            {
+              id: 'logo',
+              name: 'logos/mark.svg',
+              category: 'logos',
+              title: 'Brand mark',
+              tags: ['SVG', 'Brand mark'],
+            },
             { id: 'font', name: 'fonts/Oswald.ttf', category: 'fonts' },
           ],
         },
@@ -158,6 +164,12 @@ describe('Production admin', () => {
       </MemoryRouter>,
     );
     await screen.findByText('logos/mark.svg');
+    expect(screen.getByText('Brand mark', { selector: 'strong' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'SVG' }));
+    expect(screen.getByText('1 asset')).toBeInTheDocument();
+    fireEvent.change(screen.getByLabelText('Search assets'), { target: { value: 'brand mark' } });
+    expect(screen.getByText('logos/mark.svg')).toBeInTheDocument();
+    fireEvent.change(screen.getByLabelText('Search assets'), { target: { value: '' } });
     fireEvent.change(screen.getByLabelText('Asset category'), { target: { value: 'fonts' } });
     expect(screen.getByText('fonts/Oswald.ttf')).toBeInTheDocument();
     expect(screen.queryByText('logos/mark.svg')).not.toBeInTheDocument();

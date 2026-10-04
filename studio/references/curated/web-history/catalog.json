@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "history-1990-1994",
+      "name": "1990–1994 / The document web",
+      "url": "https://www.webdesignmuseum.org/web-design-history?timeline=1990-1994",
+      "collection": "Web history",
+      "summary": "Text-first pages, visible links and directories organized around a subject.",
+      "tags": [
+        "Era",
+        "Early web",
+        "Typography",
+        "1990–1994"
+      ],
+      "document": "curated/web-history/1990-1994.md",
+      "images": [],
+      "attachments": [
+        "curated/web-history/1990-1994.md"
+      ],
+      "provenance": {
+        "kind": "Authored historical design study",
+        "observedAt": "2026-10-04",
+        "referenceUrl": "https://www.webdesignmuseum.org/web-design-history?timeline=1990-1994",
+        "assessment": "Museum chronology and collections; SUBCULT design interpretation",
+        "limits": "Linked historical exhibits; no local screenshots or original interaction verification.",
+        "tagBasis": "Authored study subject and explicit period in its title"
+      }
+    },
+    {
+      "id": "history-1995-1997",
+      "name": "1995–1997 / The graphic web",
+      "url": "https://www.webdesignmuseum.org/web-design-history?timeline=1995-1997",
+      "collection": "Web history",
+      "summary": "Branded homepages, graphic navigation and the growth of commercial web publishing.",
+      "tags": [
+        "Era",
+        "90s",
+        "Graphic navigation",
+        "1995–1997"
+      ],
+      "document": "curated/web-history/1995-1997.md",
+      "images": [],
+      "attachments": [
+        "curated/web-history/1995-1997.md"
+      ],
+      "provenance": {
+        "kind": "Authored historical design study",
+        "observedAt": "2026-10-04",
+        "referenceUrl": "https://www.webdesignmuseum.org/web-design-history?timeline=1995-1997",
+        "assessment": "Museum chronology and collections; SUBCULT design interpretation",
+        "limits": "Linked historical exhibits; no local screenshots or original interaction verification.",
+        "tagBasis": "Authored study subject and explicit period in its title"
+      }
+    },
+    {
+      "id": "history-1998-2002",
+      "name": "1998–2002 / Portals and experimental studios",
+      "url": "https://www.webdesignmuseum.org/web-design-history?timeline=1998-2002",
+      "collection": "Web history",
+      "summary": "Dense information portals alongside immersive, highly authored studio websites.",
+      "tags": [
+        "Era",
+        "Y2K",
+        "Portals",
+        "Experimental",
+        "1998–2002"
+      ],
+      "document": "curated/web-history/1998-2002.md",
+      "images": [],
+      "attachments": [
+        "curated/web-history/1998-2002.md"
+      ],
+      "provenance": {
+        "kind": "Authored historical design study",
+        "observedAt": "2026-10-04",
+        "referenceUrl": "https://www.webdesignmuseum.org/web-design-history?timeline=1998-2002",
+        "assessment": "Museum chronology and collections; SUBCULT design interpretation",
+        "limits": "Linked historical exhibits; no local screenshots or original interaction verification.",
+        "tagBasis": "Authored study subject and explicit period in its title"
+      }
+    },
+    {
+      "id": "history-2003-2008",
+      "name": "2003–2008 / CSS publishing and social interfaces",
+      "url": "https://www.webdesignmuseum.org/web-design-history?timeline=2003-2008",
+      "collection": "Web history",
+      "summary": "Editorial layouts, personal publishing and interfaces built around contributions.",
+      "tags": [
+        "Era",
+        "CSS",
+        "Editorial",
+        "Social",
+        "2003–2008"
+      ],
+      "document": "curated/web-history/2003-2008.md",
+      "images": [],
+      "attachments": [
+        "curated/web-history/2003-2008.md"
+      ],
+      "provenance": {
+        "kind": "Authored historical design study",
+        "observedAt": "2026-10-04",
+        "referenceUrl": "https://www.webdesignmuseum.org/web-design-history?timeline=2003-2008",
+        "assessment": "Museum chronology and collections; SUBCULT design interpretation",
+        "limits": "Linked historical exhibits; no local screenshots or original interaction verification.",
+        "tagBasis": "Authored study subject and explicit period in its title"
+      }
+    },
+    {
+      "id": "history-2009-present",
+      "name": "2009–present / Responsive systems",
+      "url": "https://www.webdesignmuseum.org/web-design-history?timeline=2009-present",
+      "collection": "Web history",
+      "summary": "Layouts and typography that adapt across screens, with reusable interface patterns.",
+      "tags": [
+        "Era",
+        "Responsive",
+        "Typography",
+        "Design systems",
+        "2009–present"
+      ],
+      "document": "curated/web-history/2009-present.md",
+      "images": [],
+      "attachments": [
+        "curated/web-history/2009-present.md"
+      ],
+      "provenance": {
+        "kind": "Authored historical design study",
+        "observedAt": "2026-10-04",
+        "referenceUrl": "https://www.webdesignmuseum.org/web-design-history?timeline=2009-present",
+        "assessment": "Museum chronology and collections; SUBCULT design interpretation",
+        "limits": "Linked historical exhibits; no local screenshots or original interaction verification.",
+        "tagBasis": "Authored study subject and explicit period in its title"
+      }
+    },
+    {
+      "id": "history-flash",
+      "name": "Flash / Websites as experiences",
+      "url": "https://www.webdesignmuseum.org/flash-websites",
+      "collection": "Web history",
+      "summary": "Motion, sound and staged navigation as the central composition of a website.",
+      "tags": [
+        "Technique",
+        "Flash",
+        "Motion",
+        "Experimental"
+      ],
+      "document": "curated/web-history/flash.md",
+      "images": [],
+      "attachments": [
+        "curated/web-history/flash.md"
+      ],
+      "provenance": {
+        "kind": "Authored historical design study",
+        "observedAt": "2026-10-04",
+        "referenceUrl": "https://www.webdesignmuseum.org/flash-websites",
+        "assessment": "Museum chronology and collections; SUBCULT design interpretation",
+        "limits": "Linked historical exhibits; no local screenshots or original interaction verification."
+      }
+    },
+    {
+      "id": "history-y2k",
+      "name": "Y2K / Digital futurism",
+      "url": "https://www.webdesignmuseum.org/exhibitions/y2k-aesthetic-in-web-design",
+      "collection": "Web history",
+      "summary": "A visual study of turn-of-the-millennium digital imagery and interface motifs.",
+      "tags": [
+        "Aesthetic",
+        "Y2K",
+        "Futuristic"
+      ],
+      "document": "curated/web-history/y2k.md",
+      "images": [],
+      "attachments": [
+        "curated/web-history/y2k.md"
+      ],
+      "provenance": {
+        "kind": "Authored historical design study",
+        "observedAt": "2026-10-04",
+        "referenceUrl": "https://www.webdesignmuseum.org/exhibitions/y2k-aesthetic-in-web-design",
+        "assessment": "Museum chronology and collections; SUBCULT design interpretation",
+        "limits": "Linked historical exhibits; no local screenshots or original interaction verification."
+      }
+    },
+    {
+      "id": "history-css-pioneers",
+      "name": "CSS / Layout pioneers, 2002–2005",
+      "url": "https://www.webdesignmuseum.org/css-layout-pioneers",
+      "collection": "Web history",
+      "summary": "Editorial structure and visual identity built through styles applied to page content.",
+      "tags": [
+        "Technique",
+        "CSS",
+        "Editorial"
+      ],
+      "document": "curated/web-history/css-pioneers.md",
+      "images": [],
+      "attachments": [
+        "curated/web-history/css-pioneers.md"
+      ],
+      "provenance": {
+        "kind": "Authored historical design study",
+        "observedAt": "2026-10-04",
+        "referenceUrl": "https://www.webdesignmuseum.org/css-layout-pioneers",
+        "assessment": "Museum chronology and collections; SUBCULT design interpretation",
+        "limits": "Linked historical exhibits; no local screenshots or original interaction verification."
+      }
+    }
+  ]
+}

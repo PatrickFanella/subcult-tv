@@ -51,6 +51,48 @@ class StudioExportChecks(unittest.TestCase):
             self.assertIn('guide', entry)
             self.assertNotIn('document', entry)
 
+    def test_authored_history_survives_private_export(self):
+        source = ROOT / 'references/curated/web-history'
+        manifest = json.loads((source/'sources.json').read_text())
+        references = json.loads((self.destination/'references.json').read_text())
+        exported = {entry['id']: entry for entry in references['entries']}
+        authored = json.loads((source/'catalog.json').read_text())['entries']
+        self.assertEqual(len(authored), 8)
+        self.assertEqual(len(exported), len(references['entries']))
+        for entry in authored:
+            document = ROOT/'references'/entry['document']
+            self.assertEqual(hashlib.sha256(document.read_bytes()).hexdigest(),
+                             manifest['authoredFiles'][entry['document']]['sha256'])
+            self.assertEqual(exported[entry['id']]['guide'], document.read_text())
+            self.assertEqual(exported[entry['id']]['collection'], 'Web history')
+            self.assertEqual(exported[entry['id']]['images'], [])
+            self.assertIn(exported[entry['id']]['attachments'][0]['asset'], self.catalog['files'])
+
+    def test_asset_labels_preserve_identity_and_source_tags(self):
+        for brand in self.catalog['brands']:
+            for asset in brand['assets']:
+                self.assertTrue(asset['title'])
+                self.assertTrue(asset['tags'])
+                self.assertEqual(asset['metadata_basis'], 'Source filename and folder')
+                self.assertIn(asset['id'], self.catalog['files'])
+        brand = next(b for b in self.catalog['brands'] if b['slug'] == 'subcult')
+        outlined = next(a for a in brand['assets'] if a['name'] == 'logos/mark-light-outlined.svg')
+        self.assertIn('Text converted to paths', outlined['tags'])
+        self.assertIn('Light variant', outlined['tags'])
+        self.assertEqual(outlined['title'], 'Brand mark light text converted to paths')
+        originals = {a['id']: a for a in json.loads((ROOT/'media/library/catalog.json').read_text())['assets']}
+        for media in self.catalog['media']:
+            self.assertEqual(media['rights'], originals[media['id']]['rights'])
+            self.assertEqual(media['status'], originals[media['id']]['status'])
+            self.assertEqual(media['platforms'], originals[media['id']].get('platforms', []))
+
+    def test_reference_taxonomy_covers_current_catalog_without_duplicate_tags(self):
+        groups = json.loads((ROOT.parent/'api/internal/handlers/reference-taxonomy.json').read_text())
+        tags = [tag['name'] for group in groups for tag in group['tags']]
+        self.assertEqual(len(tags), len(set(tags)))
+        entries = json.loads((self.destination/'references.json').read_text())['entries']
+        self.assertTrue({tag for entry in entries for tag in entry['tags']}.issubset(set(tags)))
+
     def test_export_boundary(self):
         names = {row['name'] for row in self.catalog['files'].values()}
         self.assertNotIn('config.json', names)
