@@ -100,7 +100,7 @@ def execute(source_root, state, ingest_env=None):
                         'items': [items[key] for key in result['source_ids']]}
             day = now.date().isoformat()
             payload = [{'id': 'daily-'+day+'-'+platform, 'platform': platform, 'title': result['title'],
-                        'excerpt': result['excerpt'], 'body': result[platform+'_body'],
+                        'excerpt': result['excerpt'], 'body': result[platform+'_body'].removeprefix('Draft for human review.').lstrip(),
                         'due_at': (now+timedelta(hours=48)).isoformat(), 'source': selected}
                        for platform in ('website', 'patreon')]
             atomic_write(payload_path, json.dumps(payload, indent=2)+'\n')

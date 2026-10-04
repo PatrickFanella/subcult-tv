@@ -15,14 +15,21 @@ import (
 // scanPost scans a full post row into a models.Post.
 func scanPost(s scanner) (models.Post, error) {
 	var p models.Post
-	var date time.Time
+	var date any
 	err := s.Scan(
 		&p.ID, &p.Slug, &p.Title, &p.Excerpt, &p.Content,
 		&p.Tags, &p.Author, &p.Published, &date,
 		&p.CreatedAt, &p.UpdatedAt,
 	)
 	if err == nil {
-		p.Date = date.Format("2006-01-02")
+		switch value := date.(type) {
+		case time.Time:
+			p.Date = value.Format("2006-01-02")
+		case string:
+			p.Date = value
+		default:
+			return p, fmt.Errorf("unsupported post date type %T", date)
+		}
 	}
 	return p, err
 }
@@ -99,6 +106,10 @@ func (h *Handler) listPosts(w http.ResponseWriter, r *http.Request, onlyPublishe
 		posts = append(posts, p)
 	}
 
+	if rows.Err() != nil {
+		writeError(w, 500, "failed to read posts")
+		return
+	}
 	if posts == nil {
 		posts = []models.Post{}
 	}

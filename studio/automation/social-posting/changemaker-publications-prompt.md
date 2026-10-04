@@ -11,3 +11,5 @@ website_body: a readable account of what changed, what it improves and what stil
 patreon_body: an edition for supporters with the same supported facts, written in a direct workshop voice. Explain the thinking behind the changes without promising benefits, exclusive deliverables or a release cadence. Do not invent a personal anecdote.
 
 title: a specific title usable on both destinations. excerpt: one or two sentences about the concrete changes. All content remains a draft for human review. You cannot grant approval, schedule or publish.
+
+Keep workflow labels such as “Draft for human review” out of the title, excerpt and body. Draft status is shown separately in the dashboard. Use paragraphs, headings, lists, quotes, emphasis and HTTPS links; no tables, embedded media or code blocks.

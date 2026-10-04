@@ -103,4 +103,14 @@ func TestPublicationApprovalIntegration(t *testing.T) {
 	if w := request("GET", "/posts/daily-"+day, nil, "", ""); w.Code != 200 || !strings.Contains(w.Body.String(), "Edited exact version") || strings.Contains(w.Body.String(), "private_source") {
 		t.Fatal("approved article unavailable or private evidence leaked", w.Body.String())
 	}
+	// Older deployed databases retain a text date column. Both schemas must read
+	// the same approved article without a destructive type migration.
+	if _, err = db.Exec(ctx, `ALTER TABLE posts ALTER COLUMN date TYPE TEXT USING date::text`); err != nil {
+		t.Fatal(err)
+	}
+	db.Reset() // Discard cached DATE result metadata after the isolated schema change.
+	if w := request("GET", "/posts?all=true", nil, "", ""); w.Code != 200 || !strings.Contains(w.Body.String(), "Edited exact version") {
+		t.Fatal("legacy text dates failed", w.Body.String())
+	}
+
 }

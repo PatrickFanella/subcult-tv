@@ -67,6 +67,7 @@ export default function AdminPosts() {
   const expired = (value: string) => Boolean(value && new Date(value).valueOf() <= now);
   const drafts = (data?.drafts || []).filter(
     (d) =>
+      (d.account === 'patrick' || d.account === 'subcult') &&
       (includeExpired || !expired(d.expires_at)) &&
       (account === 'all' || d.account === account) &&
       (lane === 'all' || d.mode === lane) &&
@@ -123,11 +124,13 @@ export default function AdminPosts() {
               Account
               <select value={account} onChange={(e) => setAccount(e.target.value)}>
                 <option value="all">All accounts</option>
-                {data.accounts.map((a) => (
-                  <option key={a.account} value={a.account}>
-                    {a.account}
-                  </option>
-                ))}
+                {data.accounts
+                  .filter((a) => a.account === 'patrick' || a.account === 'subcult')
+                  .map((a) => (
+                    <option key={a.account} value={a.account}>
+                      {a.account}
+                    </option>
+                  ))}
               </select>
             </label>
             <label>
