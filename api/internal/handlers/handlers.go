@@ -12,6 +12,7 @@ import (
 
 	"github.com/subculture-collective/subcult-tv/api/internal/brevo"
 	"github.com/subculture-collective/subcult-tv/api/internal/patreon"
+	"github.com/subculture-collective/subcult-tv/api/internal/postiz"
 )
 
 // Mailer sends email and manages newsletter consent. *brevo.Client
@@ -31,6 +32,9 @@ type MailSettings struct {
 
 // Handler bundles dependencies for all HTTP handlers.
 type Handler struct {
+	Postiz                *postiz.Client
+	PostizAccounts        []string
+	PostingMediaBaseURL   string
 	BrevoWebhookSecret    string
 	BrevoNewsletterListID int64
 	StudioRoot            string

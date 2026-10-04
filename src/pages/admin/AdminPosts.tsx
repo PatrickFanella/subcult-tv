@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getPostingDashboard, type PostingDashboard } from '@/lib/api';
+import { getPostingDashboard, type PostingDashboard, type PostingDraft } from '@/lib/api';
+import SocialDelivery from './SocialDelivery';
 import AdminBlogPosts from './AdminBlogPosts';
 import '@/styles/studio.css';
 
@@ -28,6 +29,7 @@ export default function AdminPosts() {
   const [query, setQuery] = useState('');
   const [includeExpired, setIncludeExpired] = useState(false);
   const [copyStatus, setCopyStatus] = useState('');
+  const [selectedDraft, setSelectedDraft] = useState<PostingDraft | null>(null);
   const [now, setNow] = useState(() => Date.now());
   useEffect(() => {
     const timer = setInterval(() => setNow(Date.now()), 60_000);
@@ -107,12 +109,17 @@ export default function AdminPosts() {
       ) : (
         <>
           <div className="posting-boundary">
-            <strong>Preparation only</strong>
+            <strong>Review before scheduling</strong>
             <span>
-              Drafts require human review. Scheduling and delivery are not connected to this
-              dashboard.
+              Prepared drafts remain unapproved. Approve each Instagram post below to schedule
+              delivery through Postiz.
             </span>
           </div>
+          <SocialDelivery
+            key={selectedDraft?.id || 'new-post'}
+            draft={selectedDraft}
+            revision={revision}
+          />
           {error && (
             <div className="production-notice" role="alert">
               <p>{error}</p>
@@ -151,8 +158,8 @@ export default function AdminPosts() {
                 </div>
                 <div>
                   <span>03 / Scheduled</span>
-                  <strong>Not connected</strong>
-                  <small>Times below are proposals</small>
+                  <strong>Postiz queue</strong>
+                  <small>Live status appears above</small>
                 </div>
                 <div>
                   <span>04 / Delivered</span>
@@ -294,6 +301,17 @@ export default function AdminPosts() {
                           <p className="studio-note">Run {d.run_id}</p>
                         </details>
                         <button onClick={() => copy(d.text)}>Copy draft</button>
+                        <button
+                          disabled={expired(d.expires_at)}
+                          onClick={() => {
+                            setSelectedDraft(d);
+                            document
+                              .getElementById('delivery-heading')
+                              ?.scrollIntoView({ behavior: 'smooth' });
+                          }}
+                        >
+                          Review for Instagram
+                        </button>
                         <Link to="/admin/studio">Find media →</Link>
                       </article>
                     ))}

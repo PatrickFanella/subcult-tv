@@ -20,7 +20,9 @@ import (
 	"github.com/subculture-collective/subcult-tv/api/internal/database"
 	"github.com/subculture-collective/subcult-tv/api/internal/handlers"
 	"github.com/subculture-collective/subcult-tv/api/internal/patreon"
+	"github.com/subculture-collective/subcult-tv/api/internal/postiz"
 	"github.com/subculture-collective/subcult-tv/api/internal/router"
+	"strings"
 )
 
 func main() {
@@ -90,6 +92,9 @@ func main() {
 	h.BrevoNewsletterListID = cfg.BrevoNewsletterListID
 	h.StudioRoot = os.Getenv("STUDIO_ROOT")
 	h.StudioStateRoot = os.Getenv("STUDIO_STATE_ROOT")
+	h.Postiz = postiz.New(os.Getenv("POSTIZ_API_URL"), os.Getenv("POSTIZ_API_KEY"))
+	h.PostizAccounts = strings.FieldsFunc(os.Getenv("POSTIZ_ACCOUNT_IDS"), func(r rune) bool { return r == ',' || r == ' ' })
+	h.PostingMediaBaseURL = os.Getenv("POSTING_MEDIA_BASE_URL")
 	if h.StudioRoot != "" {
 		indexCtx, cancel := context.WithTimeout(ctx, 5*time.Minute)
 		count, indexErr := h.SyncStudioReferences(indexCtx)

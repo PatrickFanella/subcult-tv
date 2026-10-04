@@ -493,3 +493,37 @@ export interface PostingDashboard {
   checks: { run_id: string; text: string }[];
 }
 export const getPostingDashboard = () => apiFetch<PostingDashboard>('/api/v1/admin/studio/posting');
+
+export interface SocialAccount {
+  id: string;
+  name: string;
+  identifier: string;
+  profile: string;
+  disabled: boolean;
+}
+export interface SocialDelivery {
+  accounts: SocialAccount[];
+  posts: {
+    id: string;
+    content: string;
+    publishDate: string;
+    releaseURL: string;
+    state: string;
+    integration: { id: string; name: string };
+  }[];
+  checked_at: string;
+  approval_mode: 'manual';
+  minimum_lead_hours: number;
+}
+export const getSocialDelivery = () => apiFetch<SocialDelivery>('/api/v1/admin/studio/delivery');
+export async function approveSocialSchedule(form: FormData) {
+  const token = getToken();
+  const response = await fetch(`${API_BASE}/api/v1/admin/studio/delivery`, {
+    method: 'POST',
+    headers: token ? { Authorization: `Bearer ${token}` } : {},
+    body: form,
+  });
+  const result = await response.json();
+  if (!response.ok) throw new APIError(result.error || 'Scheduling failed', response.status);
+  return result as { status: string; post_id: string };
+}

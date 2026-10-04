@@ -39,9 +39,24 @@ The reference browser shows 24 records per page with previous/next controls and 
 
 ## Posting and source authority
 
-The operations view observes a prepared queue, media requirements, open checks and past runs. It does not approve, schedule or publish social posts. A receipt is historical evidence, not live timer health or provider delivery. Site article CRUD remains a separate application feature.
+The operations view keeps the prepared queue separate from live Postiz scheduling and delivery. Prepared copy remains unapproved. Review for Instagram copies a draft into the composer; the owner selects an account, JPEG, caption and time, then approves that exact post. Scheduling requires an admin session and at least 24 hours of lead time, with a maximum of 90 days. Site article CRUD remains separate.
 
-Installed preparation jobs and compatibility links still use the original Studio checkout until [repository consolidation activation](REPOSITORY-CONSOLIDATION.md). This source refresh does not change schedules, locks, SQLite state or provider credentials. Publication remains disabled.
+Configure these server-only variables to enable the connection:
+
+```dotenv
+POSTIZ_API_URL=http://10.0.0.56:4007/api/public/v1
+POSTIZ_API_KEY=<private organization API key>
+POSTIZ_ACCOUNT_IDS=<Patrick integration ID>,<SUBCULT integration ID>
+POSTING_MEDIA_BASE_URL=https://subcult.tv
+```
+
+Only the explicitly configured integration IDs can be scheduled or observed. The initial composer supports one JPEG under 900 KB, 320–1440 pixels wide, with aspect ratio 4:5 through 1.91:1. Approval stores that image in the application database and exposes only that selected image through `/api/v1/posting-media/{random-id}` so Instagram can fetch it. Private Studio exports remain authenticated. Database backups must include migration `005_social_schedules` and its approval records and media. Do not remove these records while queued posts still need their images.
+
+Each submission has a durable request ID and content hash. Repeat submissions return the original receipt; concurrent submissions, changed content using the same ID, and uncertain provider responses cannot dispatch the same approval twice. A timeout requires reconciliation in Postiz before creating a new approval. Manage cancellation and edits in Postiz; the dashboard refreshes provider state every minute and shows a delivery link only when Postiz reports a published Instagram URL. A queued ID is scheduling evidence, not provider delivery.
+
+Automatic approval is not enabled. A future automatic mode requires a separately reviewed policy for evidence, media, account mapping, limits and failures. The preparation runner's publishing flag remains false and its installed timers are unchanged.
+
+Installed preparation jobs and compatibility links still use the original Studio checkout until [repository consolidation activation](REPOSITORY-CONSOLIDATION.md). This source refresh does not change schedules, locks, SQLite state or provider credentials. The preparation runner cannot dispatch posts; dashboard scheduling is a separate, human-approved path.
 
 ## Rollback
 

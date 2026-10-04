@@ -3,9 +3,16 @@ import { MemoryRouter } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import AdminPosts from '@/pages/admin/AdminPosts';
 import AdminStudio from '@/pages/admin/AdminStudio';
-import { getPostingDashboard, getStudioCatalog, getStudioAsset } from '@/lib/api';
+import {
+  getPostingDashboard,
+  getStudioCatalog,
+  getStudioAsset,
+  getSocialDelivery,
+} from '@/lib/api';
 vi.mock('@/lib/api', () => ({
   getPostingDashboard: vi.fn(),
+  getSocialDelivery: vi.fn().mockRejectedValue(new Error('Postiz delivery is not configured')),
+  approveSocialSchedule: vi.fn(),
   getStudioCatalog: vi.fn(),
   getStudioAsset: vi.fn(),
   listPosts: vi.fn().mockResolvedValue({ data: [] }),
@@ -59,6 +66,7 @@ afterEach(cleanup);
 beforeEach(() => {
   vi.resetAllMocks();
   vi.mocked(getPostingDashboard).mockResolvedValue(data);
+  vi.mocked(getSocialDelivery).mockRejectedValue(new Error('Postiz delivery is not configured'));
   URL.createObjectURL = vi.fn(() => 'blob:test');
   URL.revokeObjectURL = vi.fn();
   vi.mocked(getStudioAsset).mockResolvedValue(new Blob());

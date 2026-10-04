@@ -42,7 +42,7 @@ Admin requests require `Authorization: Bearer <token>`.
 | DELETE | `/api/v1/contacts/{id}` | Delete a contact |
 | GET | `/api/v1/newsletter/subscribers` | List subscribers |
 
-The Studio posting view observes preparation data. It does not approve, schedule or publish social posts. Site article CRUD is a separate application feature. Private assets stay behind authentication and the catalog allowlist.
+The Studio posting snapshot observes preparation data and keeps every prepared draft unapproved. `GET /api/v1/admin/studio/delivery` observes live Postiz accounts and posts for the configured account IDs. Admin-only `POST /api/v1/admin/studio/delivery` accepts multipart `request_id`, `account_id`, `caption`, `due_at` (RFC3339), `approved=true` and a JPEG `media` file. It requires 24 hours of lead time and records approval before submitting a schedule. Request IDs prevent repeat dispatch, including after uncertain responses. `GET /api/v1/posting-media/{random-id}` serves only individually approved JPEGs for Instagram to retrieve. The private Studio library retains its authentication and catalog allowlist. Site article CRUD remains separate. See [Studio configuration and recovery](STUDIO.md).
 
 ## Configuration
 

@@ -104,6 +104,7 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 		api.Post("/webhooks/brevo", h.BrevoNewsletterWebhook)
 
 		api.Get("/stats", h.Stats)
+		api.Get("/posting-media/{id}", h.PostingMedia)
 
 		api.With(middleware.RateLimit(publicFormLimiter)).Post("/newsletter/subscribe", h.Subscribe)
 		api.With(middleware.RateLimit(publicFormLimiter)).Post("/newsletter/unsubscribe", h.Unsubscribe)
@@ -120,6 +121,8 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 			admin.Get("/admin/studio", h.StudioCatalog)
 			admin.Get("/admin/studio/jobs", h.StudioJobs)
 			admin.Get("/admin/studio/posting", h.PostingDashboard)
+			admin.Get("/admin/studio/delivery", h.SocialDelivery)
+			admin.Post("/admin/studio/delivery", h.ApproveSchedule)
 			admin.Get("/admin/studio/assets/{id}", h.StudioAsset)
 			admin.Get("/admin/studio/references", h.ListStudioReferences)
 			admin.Get("/admin/studio/references/facets", h.StudioReferenceFacets)
