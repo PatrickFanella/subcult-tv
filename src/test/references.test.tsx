@@ -99,6 +99,7 @@ describe('design reference browsing', () => {
         pagination.compareDocumentPosition(cards) & Node.DOCUMENT_POSITION_FOLLOWING,
       ).toBeTruthy();
       expect(screen.getByRole('combobox', { name: 'Page' })).toHaveValue('1');
+      await waitFor(() => expect(visible).toBeTypeOf('function'));
       expect(getStudioPreview).not.toHaveBeenCalled();
       visible!([{ isIntersecting: true } as IntersectionObserverEntry], {} as IntersectionObserver);
       await screen.findByRole('img', { name: 'Alpha reference screenshot' });

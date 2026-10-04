@@ -1,0 +1,32 @@
+[
+  {
+    "family": "Public Sans",
+    "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww.ttf",
+    "css": "@font-face {\n  font-family: 'Public Sans';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5ww.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Public Sans';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww.ttf) format('truetype');\n}\n",
+    "files": [
+      "Public-Sans-0.ttf",
+      "Public-Sans-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/publicsans/OFL.txt"
+  },
+  {
+    "family": "JetBrains Mono",
+    "source": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8L6tjPQ.ttf",
+    "css": "@font-face {\n  font-family: 'JetBrains Mono';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPQ.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'JetBrains Mono';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8L6tjPQ.ttf) format('truetype');\n}\n",
+    "files": [
+      "JetBrains-Mono-0.ttf",
+      "JetBrains-Mono-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/jetbrainsmono/OFL.txt"
+  },
+  {
+    "family": "Space Grotesk",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVksj.ttf",
+    "css": "@font-face {\n  font-family: 'Space Grotesk';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUsj.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Space Grotesk';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVksj.ttf) format('truetype');\n}\n",
+    "files": [
+      "Space-Grotesk-0.ttf",
+      "Space-Grotesk-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/spacegrotesk/OFL.txt"
+  }
+]

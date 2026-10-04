@@ -8,6 +8,18 @@ export default function ProductVisual({
   priority?: boolean;
 }) {
   const { project } = product;
+  if (project.slug === 'subsets') {
+    return (
+      <img
+        src="/brand/subsets/product/hero.svg"
+        alt="Actual Subsets terminal interface rendered with sample skills, with the creative-writing group selected."
+        loading={priority ? 'eager' : 'lazy'}
+        fetchPriority={priority ? 'high' : 'auto'}
+        decoding="async"
+        className="showcase-screenshot"
+      />
+    );
+  }
   if (project.slug === 'left-field') {
     return (
       <img

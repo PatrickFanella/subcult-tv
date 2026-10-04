@@ -61,3 +61,15 @@ Recheck the destination and the relevant feature when preparing final copy. Refr
 ## Website copy corrections prepared
 
 In a separate local subcult-tv worktree: replace “Find your tool” with “Software for independent culture”; narrow Patchwork privacy wording; add Undertow's public editor destination; describe cloud rendering as testing with live billing disabled. They are prepared locally and not deployed. Patchwork's own live home page also contains the broad privacy wording; that separate app correction remains open.
+
+## Subsets — October 4, 2026
+
+Source: `subculture-collective/subsets`, native TypeScript/Ink edition; `docs/npm-preview-qualification.md`, `docs/discovery-ownership.md`, and the reviewed branded alpha source.
+
+- C-SUBSETS-01: discovers skill metadata in supported local user and project folders. Disk discovery is not a live agent catalog.
+- C-SUBSETS-02: explicitly adopts unmanaged folders, organizes named groups, previews changes, and applies selected groups. Core is always included.
+- C-SUBSETS-03: retains inactive skills in a private library and records transactions for checked rollback. Later drift can stop application or recovery.
+- C-SUBSETS-04: native CLI/TUI requires Node.js 22+. Linux is tested; macOS is unverified and Windows is unsupported. The existing codex-skills adapter separately requires Python helpers.
+- C-SUBSETS-05: owner approved Personal Utility identity, marketing README, project listing, and public landing at `subsets.subcult.tv`. Public npm publication awaits account/scope control and authentication; do not claim npmjs.org availability until registry readback and exact-version installation pass.
+
+No automatic task detection, desktop GUI, cloud sync, model-performance gain, or platform compatibility beyond the stated qualification is claimed.

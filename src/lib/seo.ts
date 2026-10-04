@@ -43,6 +43,8 @@ const ORGANIZATION = {
 // Search snippets show about 155 characters, so every product gets a
 // description written to that length instead of its longer showcase summary.
 const META_DESCRIPTIONS: Record<string, string> = {
+  subsets:
+    'Discover local agent skills, group them for the work, and preview and apply a set. A local CLI and terminal interface by SUBCULT.',
   clpr: 'Twitch clips sorted by creator, topic and tag. Save the good ones to playlists and send them to whoever missed it live.',
   patchwork:
     'A neighborhood board for asking and offering help. Requests show an approximate area. Pre-alpha demonstration: please don’t arrange real help through it yet.',
@@ -64,6 +66,7 @@ const META_DESCRIPTIONS: Record<string, string> = {
 // Titles allow about 60 characters. These stand in where "name: headline"
 // would run long.
 const TITLE_PHRASES: Record<string, string> = {
+  subsets: 'All your skills. Only the set you need.',
   clpr: 'Twitch clips by creator, topic and tag',
   patchwork: 'A neighborhood board for mutual aid',
   hasanara: 'Search what was said on stream',
@@ -86,6 +89,7 @@ const APPLICATION_CATEGORY: Record<string, string> = {
   undertow: 'MultimediaApplication',
   prichal: 'SocialNetworkingApplication',
   kork: 'SocialNetworkingApplication',
+  subsets: 'DeveloperApplication',
 };
 
 function fullTitle(title: string) {
@@ -97,7 +101,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/',
     title: 'SUBCULT | Tools for independent culture',
     description:
-      'Nine products from SUBCULT for people who run things: Twitch clips, archives, mutual aid, shows, music video, account hosting, link pages, seat research.',
+      'Ten tools from SUBCULT for clips, archives, mutual aid, shows, music video, hosting, link pages, seat research, and local agent skills.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [
@@ -115,7 +119,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/products',
     title: fullTitle('Products'),
     description:
-      'clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork and Left Field. Each page says whether the product is live, a demo or in development.',
+      'Explore ten SUBCULT products, including Subsets for local agent skills. Each page explains what is available and how to get started.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -123,7 +127,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/about',
     title: fullTitle('Studio'),
     description:
-      'Subculture Collective is the independent studio behind clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork and Left Field.',
+      'Subculture Collective is the independent studio behind clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork, Left Field and Subsets.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [ORGANIZATION],
@@ -189,7 +193,7 @@ function productMeta({ project, headline, summary }: ShowcaseProduct): PageMeta 
         mainEntityOfPage: `${SITE_URL}${path}`,
         image: `${SITE_URL}${image}`,
         applicationCategory: APPLICATION_CATEGORY[project.slug],
-        operatingSystem: 'Web',
+        operatingSystem: project.slug === 'subsets' ? 'Linux, macOS (unverified)' : 'Web',
         publisher: { '@id': ORGANIZATION['@id'] },
       },
       ORGANIZATION,

@@ -13,6 +13,7 @@ const PRODUCT_MARKS: Record<string, string> = {
   'left-field': '/brand/left-field/mark.svg',
   'transcript-create': '/brand/rekolekt-mark.svg',
   kork: '/brand/kork-mark.svg',
+  subsets: '/brand/subsets/logos/mark-primary.svg',
 };
 
 export default function ProductLanding() {
@@ -72,7 +73,9 @@ export default function ProductLanding() {
             <figcaption>
               {project.screenshot
                 ? `${project.name} interface`
-                : `${project.name} / concept illustration`}
+                : project.slug === 'subsets'
+                  ? 'Actual Subsets TUI render / sample skill collection'
+                  : `${project.name} / concept illustration`}
             </figcaption>
           </figure>
         </section>
