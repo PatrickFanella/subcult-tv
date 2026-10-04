@@ -10,6 +10,7 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"os"
+	"strings"
 	"sync/atomic"
 	"testing"
 	"time"
@@ -42,6 +43,18 @@ func TestSocialApprovalIntegration(t *testing.T) {
 			return
 		}
 		submissions.Add(1)
+		var payload struct {
+			Posts []struct {
+				Value []struct {
+					Image []struct {
+						Path string `json:"path"`
+					} `json:"image"`
+				} `json:"value"`
+			} `json:"posts"`
+		}
+		if json.NewDecoder(r.Body).Decode(&payload) != nil || !strings.HasSuffix(payload.Posts[0].Value[0].Image[0].Path, ".jpg") {
+			t.Error("Postiz media validation would reject this URL")
+		}
 		if reject.Load() {
 			http.Error(w, "unconfirmed provider failure", 500)
 			return
@@ -108,7 +121,7 @@ func TestSocialApprovalIntegration(t *testing.T) {
 	routes := chi.NewRouter()
 	routes.Get("/{id}", h.PostingMedia)
 	mediaResponse := httptest.NewRecorder()
-	routes.ServeHTTP(mediaResponse, httptest.NewRequest("GET", "/"+mediaID, nil))
+	routes.ServeHTTP(mediaResponse, httptest.NewRequest("GET", "/"+mediaID+".jpg", nil))
 	if mediaResponse.Code != 200 || mediaResponse.Header().Get("Content-Type") != "image/jpeg" {
 		t.Fatal("approved image unavailable to delivery")
 	}

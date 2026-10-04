@@ -26,11 +26,15 @@ func TestScheduleContractAndRejectedResponse(t *testing.T) {
 		if post["settings"].(map[string]any)["post_type"] != "post" {
 			t.Error("missing Instagram settings")
 		}
+		media := post["value"].([]any)[0].(map[string]any)["image"].([]any)[0].(map[string]any)
+		if !strings.HasSuffix(media["path"].(string), ".jpg") {
+			t.Error("Postiz requires a media URL with a recognized extension")
+		}
 		w.Write([]byte(`[{"postId":"post-one","integration":"account-one"}]`))
 	}))
 	defer server.Close()
 	c := New(server.URL, "private-key")
-	result, err := c.Schedule(context.Background(), Account{ID: "account-one", Identifier: "instagram-standalone"}, "caption", "media-one", "https://example.test/image", time.Now().Add(25*time.Hour))
+	result, err := c.Schedule(context.Background(), Account{ID: "account-one", Identifier: "instagram-standalone"}, "caption", "media-one", "https://example.test/image.jpg", time.Now().Add(25*time.Hour))
 	if err != nil || result[0].PostID != "post-one" || calls != 1 {
 		t.Fatalf("schedule: %+v %v", result, err)
 	}

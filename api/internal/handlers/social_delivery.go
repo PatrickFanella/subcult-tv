@@ -169,7 +169,7 @@ func (h *Handler) ApproveSchedule(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 409, "This approval is already being processed. Refresh delivery status")
 		return
 	}
-	receipt, err := h.Postiz.Schedule(r.Context(), target, caption, mediaID, strings.TrimRight(h.PostingMediaBaseURL, "/")+"/api/v1/posting-media/"+mediaID, due)
+	receipt, err := h.Postiz.Schedule(r.Context(), target, caption, mediaID, strings.TrimRight(h.PostingMediaBaseURL, "/")+"/api/v1/posting-media/"+mediaID+".jpg", due)
 	if err != nil {
 		// Keep the durable submitting reservation even if this update fails.
 		h.DB.Exec(r.Context(), `UPDATE social_schedules SET status='uncertain' WHERE request_id=$1`, id)
@@ -187,7 +187,7 @@ func (h *Handler) ApproveSchedule(w http.ResponseWriter, r *http.Request) {
 // PostingMedia exposes only the individual image explicitly approved for posting.
 // Private Studio assets and unapproved uploads never enter this table.
 func (h *Handler) PostingMedia(w http.ResponseWriter, r *http.Request) {
-	id := chi.URLParam(r, "id")
+	id := strings.TrimSuffix(chi.URLParam(r, "id"), ".jpg")
 	if h.DB == nil || !mediaIDPattern.MatchString(id) {
 		http.NotFound(w, r)
 		return
