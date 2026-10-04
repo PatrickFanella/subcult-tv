@@ -238,13 +238,21 @@ export async function deleteProject(id: string) {
 
 // ── Posts ─────────────────────────────────────────────────────
 
-export async function listPosts(opts?: { page?: number; perPage?: number; all?: boolean }) {
+export async function listPosts(opts?: {
+  page?: number;
+  perPage?: number;
+  all?: boolean;
+  tag?: string;
+}) {
   const params = new URLSearchParams();
   if (opts?.page) params.set('page', String(opts.page));
   if (opts?.perPage) params.set('per_page', String(opts.perPage));
   if (opts?.all) params.set('all', 'true');
+  if (opts?.tag) params.set('tag', opts.tag);
   const qs = params.toString();
-  return apiFetch<PaginatedResponse<APIPost>>(`/api/v1/posts${qs ? '?' + qs : ''}`);
+  return apiFetch<PaginatedResponse<APIPost>>(
+    `${opts?.all ? '/api/v1/admin/posts' : '/api/v1/posts'}${qs ? '?' + qs : ''}`,
+  );
 }
 
 export async function createPost(data: Omit<APIPost, 'id' | 'created_at' | 'updated_at'>) {
@@ -527,3 +535,85 @@ export async function approveSocialSchedule(form: FormData) {
   if (!response.ok) throw new APIError(result.error || 'Scheduling failed', response.status);
   return result as { status: string; post_id: string };
 }
+
+export interface ReviewDraft {
+  draft_id: string;
+  version: number;
+  account_id: string;
+  caption: string;
+  due_at: string;
+  has_media: boolean;
+  status: 'draft' | 'submitting' | 'scheduled' | 'uncertain';
+  post_id: string;
+  updated_at: string;
+}
+export const getReviewDrafts = () => apiFetch<ReviewDraft[]>('/api/v1/admin/studio/review');
+export async function saveReviewDraft(id: string, form: FormData) {
+  const token = getToken();
+  const response = await fetch(`${API_BASE}/api/v1/admin/studio/review/${encodeURIComponent(id)}`, {
+    method: 'PUT',
+    headers: token ? { Authorization: `Bearer ${token}` } : {},
+    body: form,
+  });
+  const result = await response.json();
+  if (!response.ok) throw new APIError(result.error || 'Saving failed', response.status);
+  return result as { version: number };
+}
+export const approveReviewDraft = (id: string, version: number) =>
+  apiFetch<{ status: string; post_id: string }>(
+    `/api/v1/admin/studio/review/${encodeURIComponent(id)}/approve`,
+    {
+      method: 'POST',
+      body: JSON.stringify({ version, approved: true }),
+    },
+  );
+export async function getReviewDraftMedia(
+  id: string,
+  version: number,
+  signal?: AbortSignal,
+): Promise<Blob> {
+  const token = getToken();
+  const response = await fetch(
+    `${API_BASE}/api/v1/admin/studio/review/${encodeURIComponent(id)}/media?version=${version}`,
+    {
+      headers: token ? { Authorization: `Bearer ${token}` } : {},
+      signal,
+    },
+  );
+  if (!response.ok) throw new APIError('Unable to load saved image', response.status);
+  return response.blob();
+}
+
+export const getPost = (slug: string) =>
+  apiFetch<APIPost>(`/api/v1/posts/${encodeURIComponent(slug)}`);
+export interface PublicationDraft {
+  id: string;
+  platform: 'website' | 'patreon';
+  title: string;
+  body: string;
+  excerpt: string;
+  due_at: string;
+  audience: string;
+  version: number;
+  status: string;
+  provider_url: string;
+  source: unknown;
+}
+export interface Publications {
+  drafts: PublicationDraft[];
+  patreon_connected: boolean;
+  patreon_audiences?: { value: string; label: string }[];
+  patreon_connection_reason?: string;
+  minimum_lead_hours: number;
+}
+export const getPublications = () => apiFetch<Publications>('/api/v1/admin/publications');
+export const savePublication = (draft: PublicationDraft) =>
+  apiFetch<{ version: number }>(`/api/v1/admin/publications/${encodeURIComponent(draft.id)}`, {
+    method: 'PUT',
+    body: JSON.stringify(draft),
+  });
+export const approvePublication = (id: string, version: number) =>
+  apiFetch<{ status: string }>(`/api/v1/admin/publications/${encodeURIComponent(id)}/approve`, {
+    method: 'POST',
+    body: JSON.stringify({ version, approved: true }),
+  });

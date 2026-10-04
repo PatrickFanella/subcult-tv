@@ -1,0 +1,10 @@
+[Unit]
+Description=Prepare reviewed daily editions after Switchyard Changemaker
+
+[Timer]
+OnCalendar=*-*-* 09:25:00 UTC
+Persistent=true
+Unit=changemaker-publications.service
+
+[Install]
+WantedBy=timers.target
