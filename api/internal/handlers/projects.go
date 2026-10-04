@@ -26,7 +26,7 @@ func scanProject(s scanner) (models.Project, error) {
 	return p, err
 }
 
-// ListProjects returns all projects (public - sorted by sort_order, then name).
+// ListProjects returns the editable authenticated registry, sorted by sort_order and name.
 func (h *Handler) ListProjects(w http.ResponseWriter, r *http.Request) {
 	statusFilter := r.URL.Query().Get("status")
 	typeFilter := r.URL.Query().Get("type")

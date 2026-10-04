@@ -3,11 +3,13 @@ import { useState, type FormEvent } from 'react';
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
 import { useSearchParams } from 'react-router-dom';
-import { getShowcaseProducts } from '@/lib/showcase';
+import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { submitContact } from '@/lib/api';
+import { STUDIO_SOCIALS } from '@/lib/social-links';
 import { PATREON_URL } from '@/lib/links';
 
 const SOCIAL_LINKS = [
+  ...STUDIO_SOCIALS.map(({ name, url, handle }) => ({ name, url, handle })),
   {
     name: 'Gitea',
     url: 'https://git.subcult.tv/subculture-collective',
@@ -19,16 +21,6 @@ const SOCIAL_LINKS = [
     handle: 'support.subcult.tv',
   },
   {
-    name: 'Bluesky',
-    url: 'https://bsky.app/profile/subcult.tv',
-    handle: '@subcult.tv',
-  },
-  {
-    name: 'X',
-    url: 'https://x.com/subcult_tv',
-    handle: '@subcult_tv',
-  },
-  {
     name: 'Email',
     url: 'mailto:info@subcult.tv',
     handle: 'info@subcult.tv',
@@ -37,7 +29,7 @@ const SOCIAL_LINKS = [
 
 export default function Contact() {
   const [searchParams] = useSearchParams();
-  const product = getShowcaseProducts().find(
+  const product = useShowcaseProducts().find(
     ({ project }) => project.slug === searchParams.get('product'),
   )?.project;
   const [submitted, setSubmitted] = useState(false);
@@ -189,7 +181,7 @@ export default function Contact() {
                 </Button>
 
                 <p className="font-mono text-xs text-fog text-center mt-2">
-                  Your message goes to Subculture Collective.
+                  Your message goes to SUBCULT.
                 </p>
               </form>
             )}

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getStudioCatalog, type StudioBrandAsset, type StudioCatalog } from '@/lib/api';
-import { StudioAsset, AssetDownload } from '@/components/admin/StudioAsset';
+import { StudioAsset, AssetDownload, StudioTextAsset } from '@/components/admin/StudioAsset';
+import LibraryMarkdown from '@/components/admin/LibraryMarkdown';
 import '@/styles/studio.css';
 
 export default function AdminStudio() {
@@ -66,6 +67,7 @@ export default function AdminStudio() {
           <p>Brand identities, exports and media for each product.</p>
         </div>
         <div className="studio-switch">
+          <Link to="/admin/studio/text">Text library →</Link>
           <Link to="/admin/studio/references">Design references →</Link>
           <button onClick={refresh}>Refresh library</button>
         </div>
@@ -157,7 +159,7 @@ export default function AdminStudio() {
                   </p>
                   <details>
                     <summary>Brand guide and usage rules</summary>
-                    <pre>{brand.guide}</pre>
+                    <LibraryMarkdown>{brand.guide}</LibraryMarkdown>
                   </details>
                   <div className="studio-tools">
                     <label>
@@ -169,25 +171,23 @@ export default function AdminStudio() {
                           setAssetTags([]);
                         }}
                       >
-                        {['all', 'logos', 'social', 'video', 'artwork', 'fonts', 'tokens'].map(
-                          (value) => (
-                            <option key={value} value={value}>
+                        {['all', ...new Set(assets.map((item) => item.category))].map((value) => (
+                          <option key={value} value={value}>
+                            {(
                               {
-                                (
-                                  {
-                                    all: 'All assets',
-                                    logos: 'Logos & identity',
-                                    social: 'Social templates',
-                                    video: 'Video graphics',
-                                    artwork: 'Artwork',
-                                    fonts: 'Fonts & licenses',
-                                    tokens: 'Design tokens',
-                                  } as Record<string, string>
-                                )[value]
-                              }
-                            </option>
-                          ),
-                        )}
+                                all: 'All assets',
+                                logos: 'Logos & identity',
+                                social: 'Social templates',
+                                video: 'Video graphics',
+                                artwork: 'Artwork',
+                                fonts: 'Fonts & licenses',
+                                tokens: 'Design tokens',
+                                documents: 'Guides & source documents',
+                                product: 'Product artwork',
+                              } as Record<string, string>
+                            )[value] ?? value}
+                          </option>
+                        ))}
                       </select>
                     </label>
                     <label>
@@ -204,7 +204,8 @@ export default function AdminStudio() {
                     </button>
                   </div>
                   <p className="studio-note">
-                    Tags describe source files. All selected tags must match.
+                    Current production sources from the selected brand library. Tags describe files;
+                    publication approval is separate. All selected tags must match.
                   </p>
                   <div className="studio-asset-tags" aria-label="Asset tag filters">
                     {[
@@ -257,6 +258,11 @@ export default function AdminStudio() {
                                   Load video preview
                                 </button>
                               )
+                            ) : /\.md$/i.test(item.name) ? (
+                              <details>
+                                <summary>Read document</summary>
+                                <StudioTextAsset id={item.id} />
+                              </details>
                             ) : (
                               <span className="studio-file-type">
                                 {item.name.split('.').pop()?.toUpperCase()}

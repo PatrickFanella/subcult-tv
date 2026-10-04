@@ -21,10 +21,11 @@ type studioFile struct {
 	Name   string `json:"name"`
 }
 type studioCatalog struct {
-	Version int                   `json:"version"`
-	Brands  json.RawMessage       `json:"brands"`
-	Media   json.RawMessage       `json:"media"`
-	Files   map[string]studioFile `json:"files"`
+	Version   int                   `json:"version"`
+	Brands    json.RawMessage       `json:"brands"`
+	Documents json.RawMessage       `json:"documents"`
+	Media     json.RawMessage       `json:"media"`
+	Files     map[string]studioFile `json:"files"`
 }
 
 func (h *Handler) readStudioCatalog() (*studioCatalog, error) {
@@ -67,7 +68,7 @@ func (h *Handler) StudioAsset(w http.ResponseWriter, r *http.Request) {
 	}
 	entry, ok := catalog.Files[id]
 	ext := filepath.Ext(entry.Path)
-	allowed := map[string]bool{".svg": true, ".png": true, ".jpg": true, ".jpeg": true, ".webp": true, ".mp4": true, ".avif": true, ".gif": true, ".md": true, ".json": true, ".css": true, ".ttf": true, ".woff2": true, ".txt": true}
+	allowed := map[string]bool{".svg": true, ".png": true, ".jpg": true, ".jpeg": true, ".webp": true, ".mp4": true, ".avif": true, ".gif": true, ".md": true, ".json": true, ".css": true, ".ttf": true, ".woff2": true, ".txt": true, ".mdx": true, ".ass": true, ".pdf": true, ".otf": true, ".woff": true, ".webm": true}
 	if !ok || !allowed[ext] || entry.Path != "assets/"+id+ext || entry.SHA256 != id {
 		writeError(w, 404, "Asset not found")
 		return
@@ -90,12 +91,12 @@ func (h *Handler) StudioAsset(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.Header().Set("Content-Type", mime.TypeByExtension(ext))
-	if ext == ".md" || ext == ".json" || ext == ".css" {
+	if ext == ".md" || ext == ".mdx" || ext == ".ass" || ext == ".json" || ext == ".css" {
 		w.Header().Set("Content-Type", "text/plain; charset=utf-8")
 		w.Header().Set("Content-Disposition", mime.FormatMediaType("attachment", map[string]string{"filename": entry.Name}))
 	}
 	w.Header().Set("X-Content-Type-Options", "nosniff")
-	if ext == ".ttf" || ext == ".woff2" || ext == ".txt" || ext == ".css" || ext == ".json" {
+	if ext == ".ttf" || ext == ".woff2" || ext == ".txt" || ext == ".css" || ext == ".json" || ext == ".pdf" || ext == ".otf" || ext == ".woff" {
 		w.Header().Set("Content-Disposition", mime.FormatMediaType("attachment", map[string]string{"filename": entry.Name}))
 	}
 	w.Header().Set("Content-Security-Policy", "sandbox; default-src 'none'; style-src 'unsafe-inline'")

@@ -244,3 +244,88 @@
   font-family: monospace;
   font-size: 0.75rem;
 }
+
+.library-markdown {
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.library-markdown h1,
+.library-markdown h2,
+.library-markdown h3 {
+  margin: 1.5rem 0 0.75rem;
+}
+.library-markdown h1 {
+  font-size: 2rem;
+}
+.library-markdown p,
+.library-markdown ul,
+.library-markdown ol,
+.library-markdown blockquote {
+  margin: 0.8rem 0;
+}
+.library-markdown ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.library-markdown ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+.library-markdown blockquote {
+  border-left: 3px solid #8b5cf6;
+  padding-left: 1rem;
+}
+.library-markdown pre {
+  white-space: pre-wrap;
+  padding: 1rem;
+  background: #100b19;
+}
+.library-markdown table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.library-markdown th,
+.library-markdown td {
+  border: 1px solid #51495c;
+  padding: 0.5rem;
+}
+.text-library-layout {
+  display: grid;
+  grid-template-columns: minmax(12rem, 18rem) minmax(0, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.text-library-layout nav {
+  max-height: 65vh;
+  overflow: auto;
+  border: 1px solid #51495c;
+  align-self: start;
+}
+.text-library-layout nav button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid #51495c;
+}
+.text-library-layout nav small {
+  display: block;
+  margin-top: 0.3rem;
+}
+.text-library-layout nav button[aria-pressed='true'] {
+  background: #8b5cf6;
+  color: #100b19;
+}
+.text-library-layout article {
+  min-width: 0;
+}
+@media (max-width: 767px) {
+  .text-library-layout {
+    grid-template-columns: 1fr;
+  }
+  .text-library-layout nav {
+    max-height: 16rem;
+  }
+}

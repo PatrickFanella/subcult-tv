@@ -45,15 +45,19 @@ def export(destination, site=None, posting_state=None):
                 source.relative_to(variants.resolve())
                 logos.append(source)
         library = []
-        allowed = {'.svg', '.png', '.jpg', '.jpeg', '.webp', '.mp4', '.ttf', '.woff2', '.txt', '.css'}
+        allowed = {'.svg', '.png', '.jpg', '.jpeg', '.webp', '.mp4', '.ttf', '.woff2', '.txt', '.css', '.md', '.json', '.ass', '.otf', '.woff', '.webm', '.gif', '.avif', '.pdf'}
         for source in sorted(folder.rglob('*')):
             relative = source.relative_to(folder)
-            if source.is_file() and source.suffix.lower() in allowed and relative.parts[0] in ('logos','social','video','artwork','fonts'):
+            if source.name in ('config.json', 'selection.json', 'logo-selection.json'):
+                continue
+            if source.is_file() and source.suffix.lower() in allowed and relative.parts[0] not in ('archive', 'cache', 'runtime'):
                 if relative.parts[:2] == ('logos','waveform') and source.stem.split('-avatar')[0] not in selection['approved_variations']:
                     continue
-                library.append({'id':asset(source), 'name':str(relative), 'category':relative.parts[0], **brand_asset_metadata(relative)})
-        library.append({'id':asset(folder/'tokens.json'), 'name':'tokens.json', 'category':'tokens', **brand_asset_metadata('tokens.json')})
-        library.append({'id':asset(folder/'tokens.css'), 'name':'tokens.css', 'category':'tokens', **brand_asset_metadata('tokens.css')})
+                source.resolve().relative_to(folder.resolve())
+                category = relative.parts[0] if len(relative.parts) > 1 else ('tokens' if source.stem == 'tokens' else ('artwork' if source.suffix.lower() in ('.png','.svg','.jpg','.webp') else 'documents'))
+                library.append({'id':asset(source), 'name':str(relative), 'category':category, 'status':'current', **brand_asset_metadata(relative, category)})
+        # Root guides and tokens are included by the same recursive inventory.
+        # Legacy explicit token entries are unnecessary.
         brands.append({"slug": brand["slug"], "name": brand["brand"],
                        "direction": brand["name"], "tokens": json.loads((folder / "tokens.json").read_text()),
                        "guide": (folder / "GUIDE.md").read_text(),
@@ -69,7 +73,24 @@ def export(destination, site=None, posting_state=None):
         record.update(media_metadata(item))
         record["asset"] = asset(source)
         media.append(record)
-    catalog = {"version": 1, "brands": brands, "media": media, "files": files}
+    documents = []
+    text_roots = [(ROOT / "content", "Studio"), (REPOSITORY_ROOT / "content/posts", "Articles"), (REPOSITORY_ROOT / "content/posts-ii", "Articles")]
+    for source_root, section in text_roots:
+        for source in sorted(source_root.rglob("*")):
+            if not source.is_file() or source.suffix.lower() not in (".md", ".mdx"):
+                continue
+            source.resolve().relative_to(source_root.resolve())
+            body = source.read_text()
+            # Frontmatter is source metadata, not article body.
+            if body.startswith("---\n"):
+                parts = body.split("---\n", 2)
+                if len(parts) == 3:
+                    body = parts[2]
+            title = next((line[2:].strip() for line in body.splitlines() if line.startswith("# ")), source.stem.replace("-", " "))
+            relative = source.relative_to(source_root)
+            documents.append({"id": digest(source), "title": title, "name": str(relative), "section": section,
+                              "tags": [section, *relative.parts[:-1]], "body": body, "asset": asset(source), "status": "source"})
+    catalog = {"version": 2, "brands": brands, "media": media, "documents": documents, "files": files}
     reference_source = ROOT / "references/catalog.json"
     if reference_source.exists():
         references = json.loads(reference_source.read_text())

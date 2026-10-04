@@ -210,7 +210,7 @@ export async function listProjects(filters?: { status?: string; type?: string })
   if (filters?.status) params.set('status', filters.status);
   if (filters?.type) params.set('type', filters.type);
   const qs = params.toString();
-  return apiFetch<APIProject[]>(`/api/v1/projects${qs ? '?' + qs : ''}`);
+  return apiFetch<APIProject[]>(`/api/v1/admin/projects${qs ? '?' + qs : ''}`);
 }
 
 export async function createProject(
@@ -333,7 +333,18 @@ export async function getDashboardStats() {
 
 // ── Public metrics ──────────────────────────────────────────
 
+export interface StudioDocument {
+  id: string;
+  title: string;
+  name: string;
+  section: string;
+  tags: string[];
+  body: string;
+  asset: string;
+  status: string;
+}
 export interface StudioBrandAsset {
+  status?: string;
   id: string;
   name: string;
   category: string;
@@ -366,6 +377,7 @@ export interface StudioMedia {
   asset: string;
 }
 export interface StudioCatalog {
+  documents?: StudioDocument[];
   version: number;
   brands: StudioBrand[];
   media: StudioMedia[];
@@ -629,3 +641,12 @@ export const approvePublication = (id: string, version: number) =>
     method: 'POST',
     body: JSON.stringify({ version, approved: true }),
   });
+
+export const getPublishedProjects = () => apiFetch<APIProject[]>('/api/v1/catalog/projects');
+export const approveProject = (project: APIProject) =>
+  apiFetch<{ status: string }>(`/api/v1/admin/projects/${project.id}/approve`, {
+    method: 'POST',
+    body: JSON.stringify({ approved: true, updated_at: project.updated_at }),
+  });
+export const unpublishProject = (id: string) =>
+  apiFetch<void>(`/api/v1/admin/projects/${id}/publication`, { method: 'DELETE' });

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { getShowcaseProducts } from '@/lib/showcase';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { getProductPath } from '@/lib/product-paths';
 import { useEffects } from '@/context/useEffects';
 
@@ -13,6 +13,8 @@ const NAV_LINKS = [
 ];
 
 export default function Nav() {
+  const products = useShowcaseProducts();
+  const { pathname } = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const { vhs, toggleVhs } = useEffects();
 
@@ -80,17 +82,19 @@ export default function Nav() {
         </div>
       </div>
 
-      <div className="product-shortcuts" aria-label="Product shortcuts">
-        {getShowcaseProducts().map(({ project }) => (
-          <NavLink
-            key={project.slug}
-            to={getProductPath(project.slug)}
-            onClick={() => setMobileOpen(false)}
-          >
-            {project.name}
-          </NavLink>
-        ))}
-      </div>
+      {pathname !== '/products' && (
+        <div className="product-shortcuts" aria-label="Product shortcuts">
+          {products.map(({ project }) => (
+            <NavLink
+              key={project.slug}
+              to={getProductPath(project.slug)}
+              onClick={() => setMobileOpen(false)}
+            >
+              {project.name}
+            </NavLink>
+          ))}
+        </div>
+      )}
       {/* Mobile dropdown */}
       {mobileOpen && (
         <div className="md:hidden border-t border-fog bg-soot">
