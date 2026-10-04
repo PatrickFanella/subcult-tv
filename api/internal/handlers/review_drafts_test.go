@@ -47,7 +47,7 @@ func TestReviewDraftApprovalIntegration(t *testing.T) {
 	}))
 	defer provider.Close()
 	root := t.TempDir()
-	snapshot := postingDashboard{GeneratedAt: time.Now().UTC().Format(time.RFC3339), Drafts: []postingDraft{{ID: "test-review-one", Text: "Prepared", DueAt: time.Now().Add(48 * time.Hour).Format(time.RFC3339)}}}
+	snapshot := postingDashboard{GeneratedAt: time.Now().UTC().Format(time.RFC3339), Drafts: []postingDraft{{ID: "20261004T052615.663030Z-changemaker:0", Text: "Prepared", DueAt: time.Now().Add(48 * time.Hour).Format(time.RFC3339)}}}
 	data, _ := json.Marshal(snapshot)
 	os.WriteFile(filepath.Join(root, "posting.json"), data, 0600)
 	h := &Handler{DB: db, StudioRoot: root, Postiz: postiz.New(provider.URL, "test"), PostizAccounts: []string{"patrick"}, PostingMediaBaseURL: "https://example.test"}
@@ -74,12 +74,12 @@ func TestReviewDraftApprovalIntegration(t *testing.T) {
 			jpeg.Encode(part, image.NewRGBA(image.Rect(0, 0, 400, 400)), nil)
 		}
 		form.Close()
-		return call("PUT", "/test-review-one", &payload, form.FormDataContentType())
+		return call("PUT", "/20261004T052615.663030Z-changemaker%3A0", &payload, form.FormDataContentType())
 	}
 	approve := func(version int) *httptest.ResponseRecorder {
-		return call("POST", "/test-review-one/approve", bytes.NewBufferString(`{"approved":true,"version":`+strconv.Itoa(version)+`}`), "application/json")
+		return call("POST", "/20261004T052615.663030Z-changemaker%3A0/approve", bytes.NewBufferString(`{"approved":true,"version":`+strconv.Itoa(version)+`}`), "application/json")
 	}
-	defer db.Exec(ctx, `DELETE FROM social_review_drafts WHERE draft_id='test-review-one'`)
+	defer db.Exec(ctx, `DELETE FROM social_review_drafts WHERE draft_id='20261004T052615.663030Z-changemaker:0'`)
 	defer db.Exec(ctx, `DELETE FROM social_schedules WHERE provider_post_id='review-post'`)
 	if w := save(0, false); w.Code != 200 {
 		t.Fatal(w.Code, w.Body.String())
@@ -96,10 +96,10 @@ func TestReviewDraftApprovalIntegration(t *testing.T) {
 	if submissions.Load() != 0 {
 		t.Fatal("editing sent a post")
 	}
-	if w := call("GET", "/test-review-one/media?version=1", &bytes.Buffer{}, ""); w.Code != 404 {
+	if w := call("GET", "/20261004T052615.663030Z-changemaker%3A0/media?version=1", &bytes.Buffer{}, ""); w.Code != 404 {
 		t.Fatal("old preview version received new media")
 	}
-	if w := call("GET", "/test-review-one/media?version=2", &bytes.Buffer{}, ""); w.Code != 200 || w.Header().Get("Cache-Control") != "private, no-store" {
+	if w := call("GET", "/20261004T052615.663030Z-changemaker%3A0/media?version=2", &bytes.Buffer{}, ""); w.Code != 200 || w.Header().Get("Cache-Control") != "private, no-store" {
 		t.Fatal("private preview unavailable")
 	}
 	var publicCount int

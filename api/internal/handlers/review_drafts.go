@@ -9,6 +9,7 @@ import (
 	"io"
 	"mime/multipart"
 	"net/http"
+	"net/url"
 	"strconv"
 	"strings"
 	"time"
@@ -87,7 +88,11 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 503, "Draft storage is unavailable")
 		return
 	}
-	id := chi.URLParam(r, "id")
+	id, err := url.PathUnescape(chi.URLParam(r, "id"))
+	if err != nil {
+		writeError(w, 400, "Invalid draft ID")
+		return
+	}
 	if _, err := h.preparedDraft(id); err != nil {
 		writeError(w, 404, "Prepared draft not found. Refresh the review queue")
 		return
@@ -197,7 +202,12 @@ func (h *Handler) ReviewDraftMedia(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	var media []byte
-	if h.DB.QueryRow(r.Context(), `SELECT media FROM social_review_drafts WHERE draft_id=$1 AND version=$2`, chi.URLParam(r, "id"), version).Scan(&media) != nil || len(media) == 0 {
+	id, err := url.PathUnescape(chi.URLParam(r, "id"))
+	if err != nil {
+		writeError(w, 400, "Invalid draft ID")
+		return
+	}
+	if h.DB.QueryRow(r.Context(), `SELECT media FROM social_review_drafts WHERE draft_id=$1 AND version=$2`, id, version).Scan(&media) != nil || len(media) == 0 {
 		http.NotFound(w, r)
 		return
 	}
@@ -225,7 +235,11 @@ func (h *Handler) ApproveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 400, "Explicit approval is required")
 		return
 	}
-	id := chi.URLParam(r, "id")
+	id, err := url.PathUnescape(chi.URLParam(r, "id"))
+	if err != nil {
+		writeError(w, 400, "Invalid draft ID")
+		return
+	}
 	snapshot, snapshotErr := h.loadPosting()
 	if snapshotErr != nil || snapshot.Stale {
 		writeError(w, 503, "Refresh the preparation source before approving")
