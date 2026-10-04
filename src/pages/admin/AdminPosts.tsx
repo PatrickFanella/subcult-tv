@@ -182,7 +182,9 @@ export default function AdminPosts() {
                             ? 'Weekly planning'
                             : schedule.mode === 'radar'
                               ? 'Timely discovery'
-                              : 'Publishing review'}
+                              : schedule.mode === 'changemaker'
+                                ? 'Changemaker / Instagram'
+                                : 'Publishing review'}
                         </p>
                         <h3>{run?.status.replaceAll('_', ' ') || 'No receipt'}</h3>
                         <p>
