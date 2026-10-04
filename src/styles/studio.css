@@ -190,3 +190,27 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+.social-composer {
+  display: grid;
+  gap: 1rem;
+  max-width: 48rem;
+  margin: 1.5rem 0;
+}
+.social-composer label {
+  display: grid;
+  gap: 0.4rem;
+}
+.social-composer textarea,
+.social-composer select,
+.social-composer input:not([type='checkbox']) {
+  width: 100%;
+  padding: 0.7rem;
+  background: var(--color-bg, #121212);
+  color: inherit;
+  border: 1px solid #666;
+}
+.social-composer .social-approval {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}

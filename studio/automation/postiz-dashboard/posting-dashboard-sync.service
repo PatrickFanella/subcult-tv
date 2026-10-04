@@ -1,0 +1,8 @@
+[Unit]
+Description=Refresh the private SUBCULT posting dashboard snapshot
+
+[Service]
+Type=oneshot
+UMask=0077
+Nice=10
+ExecStart=/usr/bin/python3 /home/onnwee/.local/share/posting-dashboard/sync_posting_dashboard.py --source-root /home/onnwee/Work/Subcult/subcult-tv/studio --state /home/onnwee/.local/state/social-posting
