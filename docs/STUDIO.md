@@ -21,6 +21,8 @@ rtk proxy python3 studio/scripts/export_studio.py --output /absolute/private/stu
 
 Only receipt-bearing completed runs supply draft copy. Without a state directory, the posting snapshot is explicitly disconnected. Exporting does not run jobs, write state or publish. Re-export after preparation runs to refresh the observation.
 
+`studio/scripts/sync_posting_dashboard.py` transfers only the bounded, redacted `posting.json` to the currently mounted NUC bundle and verifies its SHA-256. Kvant's `posting-dashboard-sync.timer` refreshes it every five minutes while Kvant is running, with persistent catch-up. Its maintained unit sources are under `studio/automation/postiz-dashboard/`; the installed script is `/home/onnwee/.local/share/posting-dashboard/sync_posting_dashboard.py`. Runner SQLite, tokens, prompts and source files stay on Kvant. This adds a read-only snapshot consumer without changing preparation timers or their source checkout.
+
 Configure `STUDIO_ROOT` for the API host. `docker-compose.studio.yml` mounts a bundle read-only using `STUDIO_BUNDLE_ROOT`. The bundle is outside nginx’s public document root. The optional status overlay uses `STUDIO_RECEIPT_ROOT` for bounded historical receipts; the full runner state is unnecessary.
 
 Private destinations inside the repository are restricted to `studio/runtime/`. Vite denies direct source/runtime file requests, the frontend Docker context excludes Studio, and Tailwind scans application inputs explicitly. Authentication and the catalog hash allowlist remain the private asset boundary.

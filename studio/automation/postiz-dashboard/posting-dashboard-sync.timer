@@ -1,0 +1,10 @@
+[Unit]
+Description=Refresh SUBCULT posting dashboard every five minutes
+
+[Timer]
+OnCalendar=*:0/5
+Persistent=true
+Unit=posting-dashboard-sync.service
+
+[Install]
+WantedBy=timers.target
