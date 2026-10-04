@@ -41,6 +41,25 @@
   font-family: var(--lp-body);
   padding-bottom: 1px;
 }
+.product-landing[data-product='subsets'] {
+  --lp-bg: #d9dedc;
+  --lp-panel: #eef1ef;
+  --lp-text: #17201e;
+  --lp-muted: #43534b;
+  --lp-line: #64716c;
+  --lp-accent: #94f7b7;
+  --lp-accent-text: #17201e;
+  --lp-on-accent: #17201e;
+  --lp-focus: #17201e;
+  --lp-radius: 6px;
+  --lp-shadow: 6px 6px 0 #17201e;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Subsets Display', sans-serif;
+  --lp-mono: 'Subsets Mono', monospace;
+}
+.product-landing[data-product='subsets'] .landing-wordmark h1 {
+  text-transform: lowercase;
+}
 .product-landing[data-product='clpr'] {
   --lp-bg: #0e0c13;
   --lp-panel: #17141f;

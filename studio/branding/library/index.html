@@ -187,21 +187,22 @@ const BRANDS=[
     "fg": "#ffffff",
     "accent": "#7c3aed",
     "secondary": "#00ffff",
-    "display": "Space Mono",
+    "display": "Oswald",
     "body": "Space Mono",
     "headline": [
-      "From the plan",
-      "to the last ticket."
+      "FROM THE PLAN",
+      "TO THE LAST TICKET."
     ],
     "tag": "PLAN / COORDINATE / RUN DOOR / SETTLE / ARCHIVE",
-    "description": "Subcults terminal system: Space Mono, square frames, purple actions and cyan focus on a black canvas, matching the live site.",
+    "description": "Subcults terminal system with a ticket-stub display layer: Oswald capitals for headlines, Space Mono for everything read or pressed, 8-pixel corners, purple actions and cyan labels on a black canvas, matching the live site.",
     "mode": "os",
     "url": "os.subcult.tv",
-    "source": "Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02",
+    "source": "Live https://os.subcult.tv and subcult-os contracts/design/tokens.json (dark theme), observed 2026-10-02; ticket-stub display layer and 8-pixel radius selected by the user on 2026-10-03",
     "slug": "subcult-os",
     "label": "Space Mono",
     "safe_label": "#00ffff",
-    "selected_by_user": true
+    "selected_by_user": true,
+    "radius": 8
   },
   {
     "id": "undertow",
@@ -365,6 +366,32 @@ const BRANDS=[
     "slug": "tadooer",
     "selected_by_user": false,
     "direction_selection": "proposed"
+  },
+  {
+    "id": "subsets-a",
+    "brand": "Subsets",
+    "variant": "A",
+    "name": "Personal Utility",
+    "bg": "#d9dedc",
+    "fg": "#17201e",
+    "accent": "#94f7b7",
+    "secondary": "#eef1ef",
+    "display": "Space Grotesk",
+    "body": "Public Sans",
+    "label": "JetBrains Mono",
+    "safe_label": "#17201e",
+    "headline": [
+      "All your skills.",
+      "Only the set you need."
+    ],
+    "tag": "LOCAL AGENT SKILLS / BY SUBCULT",
+    "description": "Silver surfaces, charcoal structure, mint selected states and an original selected-tile mark.",
+    "mode": "personal-utility",
+    "url": "subsets.subcult.tv",
+    "source": "Subsets native npm edition; owner selected Personal Utility and approved the refinement and public landing October 4, 2026. Brand masters in brands/subsets/build.py.",
+    "slug": "subsets",
+    "selected_by_user": true,
+    "direction_selection": "user"
   }
 ];let active='All';const grid=document.querySelector('#grid');function el(tag,text){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e}function draw(){grid.replaceChildren();grid.classList.toggle('single',active!=='All');document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-pressed',b.textContent===active));for(const b of BRANDS.filter(b=>active==='All'||b.brand===active)){const article=el('article');article.append(el('div',b.brand+' / '+b.variant),el('h2',b.name));const desc=el('p',b.description);desc.className='note';article.append(desc);const open=el('a');open.href='brands'+b.slug+'/pack-preview.png';open.target='_blank';const img=el('img');img.src=open.href+(b.slug==='patchwork'?'?revision=fabric-r4':b.slug==='subcult'?'?revision=user-layouts-r3':b.slug==='patrick__eff'?'?revision=patrick-waveform-approved-r2':b.slug==='clpr'?'?revision=clpr-single-clip-r5':b.slug==='rekolekt'?'?revision=story-transcript-r3':'');img.className='board';img.alt=b.brand+' pack: banner, square post, story, screenshot frame, video title and transparent lower-third.';img.width=b.slug==='patrick__eff'?1800:1600;img.height=b.slug==='patrick__eff'?1940:1800;img.loading='lazy';open.append(img);article.append(open);const links=el('div');links.className='links';for(const [name,file] of [['Download pack','../../runtime/packages/'+b.slug+'.zip'],['Brand guide','brands/'+b.slug+'/GUIDE.md'],['Logo','brands/'+b.slug+'/logos/lockup-primary-outlined.svg'],['Banner','brands/'+b.slug+'/social/banner-x-bluesky.png'],['Tokens','brands/'+b.slug+'/tokens.json'],...(b.slug==='patrick__eff'?[['Logo variations','brands/patrick__eff/logos/variations.html'],['Style examples','brands/patrick__eff/components.html'],['Approved logo colors','../patrick/waveform-variations/index.html']]:[]),...(b.slug==='clpr'?[['Compare directions','clpr-directions/index.html']]:[]),...(b.slug==='subcult'?[['Banner with logo','brands/subcult/social/banner-x-bluesky-logo.png']]:[]),...(b.slug==='patchwork'?[['Stitched buttons','brands/patchwork/components.html']]:[]),...(b.slug==='dedhed'?[['Landing page','brands/dedhed/landing.html'],['Design system','brands/dedhed/design-system/README.md'],['Specimen sheet','brands/dedhed/design-system/examples/01-specimen.html']]:[]),...(b.slug==='tadooer'?[['Design system','brands/tadooer/design-system/README.md'],['Specimen sheet','brands/tadooer/design-system/examples/01-specimen.html'],['Web assets','brands/tadooer/product/README.md']]:[])]){const a=el('a',name);a.href=file;links.append(a)}article.append(links);const details=el('details');details.append(el('summary','Watch the eight-second template preview'));const v=el('video');v.controls=true;v.preload='none';v.poster='brands/'+b.slug+'/video/title-card.png';v.src='brands'+b.slug+'/video/template-preview.mp4';details.append(v);article.append(details);grid.append(article)}}for(const brand of ['All',...BRANDS.map(b=>b.brand)]){const button=el('button',brand);button.setAttribute('aria-pressed',brand===active);button.onclick=()=>{active=brand;draw()};document.querySelector('nav').append(button)}draw();
 </script></body></html>

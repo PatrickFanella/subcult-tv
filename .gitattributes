@@ -7,3 +7,8 @@ public/brand/left-field/fonts/*.ttf filter=lfs diff=lfs merge=lfs -text
 public/og/left-field.jpg filter=lfs diff=lfs merge=lfs -text
 public/brand/left-field/fonts/*LICENSE.txt -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 public/brand/left-field/fonts/*-OFL.txt -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+public/brand/subsets/**/*.png filter=lfs diff=lfs merge=lfs -text
+public/brand/subsets/**/*.ttf filter=lfs diff=lfs merge=lfs -text
+public/og/subsets.jpg filter=lfs diff=lfs merge=lfs -text
+public/brand/subsets/fonts/*-OFL.txt -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+studio/branding/library/brands/subsets/fonts/*-OFL.txt -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

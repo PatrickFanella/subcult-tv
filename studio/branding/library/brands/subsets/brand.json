@@ -1,0 +1,23 @@
+{
+  "name": "Subsets",
+  "slug": "subsets",
+  "initials": "SS",
+  "tagline": "All your skills. Only the set you need.",
+  "website": "subsets.subcult.tv",
+  "direction": "Personal Utility",
+  "direction_selection": "selected by owner in conversation, October 4, 2026",
+  "asset_status": "approved by owner for branding and landing publication, October 4, 2026",
+  "colors": {
+    "background": "#d9dedc",
+    "text": "#17201e",
+    "accent": "#94f7b7",
+    "secondary": "#eef1ef"
+  },
+  "fonts": {
+    "display": "Space Grotesk",
+    "body": "Public Sans",
+    "label": "JetBrains Mono"
+  },
+  "mark_status": "Original approved selected-tile vector mark",
+  "motif": "A compact stepped collection with a visible selected subset"
+}

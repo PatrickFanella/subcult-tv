@@ -12,7 +12,11 @@ export default function Home() {
       <SEOHead path="/" />
       <section className="showcase-hero">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <img src="/brand/subcult/master.svg?v=logo-bcd-20261003" alt="" className="subcult-hero-mark" />
+          <img
+            src="/brand/subcult/master.svg?v=logo-bcd-20261003"
+            alt=""
+            className="subcult-hero-mark"
+          />
           <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-20 items-end">
             <div>
               <p className="showcase-eyebrow">SUBCULTURE COLLECTIVE / INDEPENDENT SOFTWARE</p>
@@ -25,11 +29,11 @@ export default function Home() {
             <div>
               <p className="text-bone text-lg leading-relaxed mb-6">
                 We make software for people who run things: a clip channel, an archive, a food run,
-                a Friday show. Nine products so far. None of them wants your attention for longer
+                a Friday show. Ten products so far. None of them wants your attention for longer
                 than the job takes.
               </p>
               <Button as="a" href="#products" variant="secondary">
-                See all nine ↓
+                See all ten ↓
               </Button>
             </div>
           </div>
