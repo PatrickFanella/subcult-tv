@@ -10,6 +10,7 @@ require (
 	github.com/jackc/pgx/v5 v5.8.0
 	github.com/joho/godotenv v1.5.1
 	github.com/prometheus/client_golang v1.23.2
+	github.com/yuin/goldmark v1.7.13
 	golang.org/x/crypto v0.48.0
 )
 

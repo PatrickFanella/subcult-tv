@@ -4,6 +4,8 @@ import ErrorBoundary from '@/components/ErrorBoundary';
 import Layout from '@/components/Layout';
 
 // Public pages (code-split)
+const DevelopmentLog = lazy(() => import('@/pages/DevelopmentLog'));
+const PublicationReview = lazy(() => import('@/pages/admin/PublicationReview'));
 const Home = lazy(() => import('@/pages/Home'));
 const Projects = lazy(() => import('@/pages/Projects'));
 const ProjectDetail = lazy(() => import('@/pages/ProjectDetail'));
@@ -22,6 +24,10 @@ const AdminReferences = lazy(() => import('@/pages/admin/AdminReferences'));
 const AdminDashboard = lazy(() => import('@/pages/admin/AdminDashboard'));
 const AdminProjects = lazy(() => import('@/pages/admin/AdminProjects'));
 const AdminPosts = lazy(() => import('@/pages/admin/AdminPosts'));
+const PostEditor = lazy(() => import('@/pages/admin/PostEditor'));
+const PostingDelivery = lazy(() => import('@/pages/admin/PostingDelivery'));
+const PostingAutomation = lazy(() => import('@/pages/admin/PostingAutomation'));
+const AdminBlogPosts = lazy(() => import('@/pages/admin/AdminBlogPosts'));
 const AdminContacts = lazy(() => import('@/pages/admin/AdminContacts'));
 const AdminSubscribers = lazy(() => import('@/pages/admin/AdminSubscribers'));
 
@@ -46,6 +52,8 @@ export default function App() {
             <Route path="projects/:slug" element={<ProjectDetail />} />
             <Route path="products/:slug" element={<ProductLanding />} />
             <Route path="support" element={<Patreon />} />
+            <Route path="development" element={<DevelopmentLog />} />
+            <Route path="development/:slug" element={<DevelopmentLog />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="newsletter/confirmed" element={<NewsletterConfirmed />} />
@@ -61,6 +69,12 @@ export default function App() {
             <Route path="studio/references/:section" element={<AdminReferences />} />
             <Route path="projects" element={<AdminProjects />} />
             <Route path="posts" element={<AdminPosts />} />
+            <Route path="posts/edit" element={<PostEditor />} />
+            <Route path="posts/delivery" element={<PostingDelivery />} />
+            <Route path="posts/automation" element={<PostingAutomation />} />
+            <Route path="posts/articles" element={<PublicationReview platform="website" />} />
+            <Route path="posts/patreon" element={<PublicationReview platform="patreon" />} />
+            <Route path="posts/articles/manage" element={<AdminBlogPosts />} />
             <Route path="contacts" element={<AdminContacts />} />
             <Route path="subscribers" element={<AdminSubscribers />} />
           </Route>

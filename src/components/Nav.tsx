@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { to: '/products', label: 'Products' },
   { to: '/about', label: 'Studio' },
   { to: '/support', label: 'Support' },
+  { to: '/development', label: 'Development' },
   { to: '/contact', label: 'Contact' },
 ];
 
@@ -29,7 +30,11 @@ export default function Nav() {
             aria-label="SUBCULT home"
             className="subcult-nav-brand font-display text-xl font-bold tracking-[0.2em] text-glow hover:text-signal transition-colors no-underline"
           >
-            <img src="/brand/subcult/fisheye-circle.png?v=fisheye-20261003" className="subcult-nav-mark" alt="" />
+            <img
+              src="/brand/subcult/fisheye-circle.png?v=fisheye-20261003"
+              className="subcult-nav-mark"
+              alt=""
+            />
             <span>SUBCULT</span>
           </Link>
 
