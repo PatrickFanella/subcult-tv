@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import shutil
+from asset_metadata import brand_asset_metadata, media_metadata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -50,9 +51,9 @@ def export(destination, site=None, posting_state=None):
             if source.is_file() and source.suffix.lower() in allowed and relative.parts[0] in ('logos','social','video','artwork','fonts'):
                 if relative.parts[:2] == ('logos','waveform') and source.stem.split('-avatar')[0] not in selection['approved_variations']:
                     continue
-                library.append({'id':asset(source), 'name':str(relative), 'category':relative.parts[0]})
-        library.append({'id':asset(folder/'tokens.json'), 'name':'tokens.json', 'category':'tokens'})
-        library.append({'id':asset(folder/'tokens.css'), 'name':'tokens.css', 'category':'tokens'})
+                library.append({'id':asset(source), 'name':str(relative), 'category':relative.parts[0], **brand_asset_metadata(relative)})
+        library.append({'id':asset(folder/'tokens.json'), 'name':'tokens.json', 'category':'tokens', **brand_asset_metadata('tokens.json')})
+        library.append({'id':asset(folder/'tokens.css'), 'name':'tokens.css', 'category':'tokens', **brand_asset_metadata('tokens.css')})
         brands.append({"slug": brand["slug"], "name": brand["brand"],
                        "direction": brand["name"], "tokens": json.loads((folder / "tokens.json").read_text()),
                        "guide": (folder / "GUIDE.md").read_text(),
@@ -65,12 +66,19 @@ def export(destination, site=None, posting_state=None):
         source.relative_to(ROOT / "media/library/files")
         if digest(source) != item["sha256"]:
             raise ValueError("Media hash mismatch: " + item["id"])
+        record.update(media_metadata(item))
         record["asset"] = asset(source)
         media.append(record)
     catalog = {"version": 1, "brands": brands, "media": media, "files": files}
     reference_source = ROOT / "references/catalog.json"
     if reference_source.exists():
         references = json.loads(reference_source.read_text())
+        # Authored studies stay separate from refreshable third-party imports.
+        for curated_source in sorted((ROOT / "references/curated").glob("*/catalog.json")):
+            references["entries"].extend(json.loads(curated_source.read_text())["entries"])
+        ids = [record["id"] for record in references["entries"]]
+        if len(ids) != len(set(ids)):
+            raise ValueError("Duplicate reference ID across imported and curated catalogs")
         for record in references["entries"]:
             folder = ROOT / "references"
             document = folder / record.pop("document")

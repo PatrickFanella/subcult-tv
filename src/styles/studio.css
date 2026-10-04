@@ -214,3 +214,33 @@
   align-items: flex-start;
   gap: 0.7rem;
 }
+
+.studio-asset-tags,
+.studio-asset-tag-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.75rem 0;
+}
+.studio-asset-tags button {
+  font-size: 0.75rem;
+  padding: 0.4rem 0.6rem;
+}
+.studio-asset-tags button[aria-pressed='true'] {
+  color: #100b19;
+  background: #00ff88;
+  border-color: #00ff88;
+}
+.studio-asset-tag-labels span {
+  font-size: 0.7rem;
+  color: var(--color-dust);
+  border: 1px solid var(--color-fog);
+  padding: 0.2rem 0.4rem;
+}
+.studio-asset-filename {
+  display: block;
+  color: var(--color-dust);
+  overflow-wrap: anywhere;
+  font-family: monospace;
+  font-size: 0.75rem;
+}

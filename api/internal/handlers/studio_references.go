@@ -3,11 +3,13 @@ package handlers
 import (
 	"context"
 	"crypto/sha256"
+	_ "embed"
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
 	"os"
 	"regexp"
 	"strings"
@@ -154,6 +156,69 @@ func (h *Handler) SyncStudioReferences(ctx context.Context) (int, error) {
 const referenceTagsSQL = `ARRAY(SELECT t.name FROM studio_reference_tags t
     JOIN studio_reference_tag_links l ON t.id=l.tag_id WHERE l.reference_id=r.id ORDER BY t.name)`
 
+//go:embed reference-taxonomy.json
+var referenceTaxonomyJSON []byte
+
+type referenceTag struct {
+	Name  string `json:"name"`
+	Label string `json:"label"`
+}
+type referenceGroup struct {
+	ID    string         `json:"id"`
+	Label string         `json:"label"`
+	Tags  []referenceTag `json:"tags"`
+}
+
+func referenceGroups() []referenceGroup {
+	var groups []referenceGroup
+	if err := json.Unmarshal(referenceTaxonomyJSON, &groups); err != nil {
+		panic(err)
+	}
+	return groups
+}
+
+// Legacy tag URLs retain match-all behavior. New group selections match any
+// value within a group and require every selected group.
+func referenceFilter(values url.Values, omitGroup string) (string, []any, error) {
+	q := strings.TrimSpace(values.Get("q"))
+	tags := values["tag"]
+	collection := values.Get("collection")
+	if len(q) > 200 || len(tags) > 20 || len(collection) > 100 {
+		return "", nil, fmt.Errorf("Search filters are too long")
+	}
+	pattern := "%" + strings.NewReplacer(`\`, `\\`, "%", `\%`, "_", `\_`).Replace(q) + "%"
+	where := ` WHERE ($1='' OR r.search_vector @@ websearch_to_tsquery('simple',$1) OR r.name ILIKE $2)
+ AND ($3='' OR r.collection=$3)
+ AND NOT EXISTS(SELECT 1 FROM unnest($4::text[]) selected(name) WHERE NOT EXISTS(
+ SELECT 1 FROM studio_reference_tag_links l JOIN studio_reference_tags t ON t.id=l.tag_id
+ WHERE l.reference_id=r.id AND t.name=selected.name))`
+	args := []any{q, pattern, collection, tags}
+	for _, group := range referenceGroups() {
+		selected := values["filter_"+group.ID]
+		if len(selected) > 20 {
+			return "", nil, fmt.Errorf("Too many filter values")
+		}
+		for _, name := range selected {
+			valid := false
+			for _, tag := range group.Tags {
+				if tag.Name == name {
+					valid = true
+					break
+				}
+			}
+			if !valid {
+				return "", nil, fmt.Errorf("Unknown %s filter", group.Label)
+			}
+		}
+		if len(selected) == 0 || group.ID == omitGroup {
+			continue
+		}
+		args = append(args, selected)
+		where += fmt.Sprintf(` AND EXISTS(SELECT 1 FROM studio_reference_tag_links l JOIN studio_reference_tags t ON t.id=l.tag_id WHERE l.reference_id=r.id AND t.name=ANY($%d::text[]))`, len(args))
+	}
+	return where, args, nil
+}
+
 func (h *Handler) ListStudioReferences(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Cache-Control", "private, no-store")
 	if h.DB == nil {
@@ -161,10 +226,9 @@ func (h *Handler) ListStudioReferences(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	q := strings.TrimSpace(r.URL.Query().Get("q"))
-	tags := r.URL.Query()["tag"]
-	collection := r.URL.Query().Get("collection")
-	if len(q) > 200 || len(tags) > 20 || len(collection) > 100 {
-		writeError(w, 400, "Search filters are too long")
+	where, args, filterErr := referenceFilter(r.URL.Query(), "")
+	if filterErr != nil {
+		writeError(w, 400, filterErr.Error())
 		return
 	}
 	page, perPage, offset := pagination(r)
@@ -176,14 +240,6 @@ func (h *Handler) ListStudioReferences(w http.ResponseWriter, r *http.Request) {
 		perPage = 48
 		offset = (page - 1) * perPage
 	}
-	// Text search covers the whole guide; the escaped substring branch supports partial names.
-	pattern := "%" + strings.NewReplacer(`\`, `\\`, "%", `\%`, "_", `\_`).Replace(q) + "%"
-	where := ` WHERE ($1='' OR r.search_vector @@ websearch_to_tsquery('simple',$1) OR r.name ILIKE $2)
-        AND ($3='' OR r.collection=$3)
-        AND NOT EXISTS(SELECT 1 FROM unnest($4::text[]) selected(name) WHERE NOT EXISTS(
-            SELECT 1 FROM studio_reference_tag_links l JOIN studio_reference_tags t ON t.id=l.tag_id
-            WHERE l.reference_id=r.id AND t.name=selected.name))`
-	args := []any{q, pattern, collection, tags}
 	var total int64
 	if err := h.DB.QueryRow(r.Context(), `SELECT count(*) FROM studio_references r`+where, args...).Scan(&total); err != nil {
 		writeError(w, 500, "Could not search references")
@@ -204,7 +260,7 @@ func (h *Handler) ListStudioReferences(w http.ResponseWriter, r *http.Request) {
 	}
 	args = append(args, perPage, offset)
 	rows, err := h.DB.Query(r.Context(), `SELECT r.id,r.name,r.source_url,r.collection,r.summary,r.preview,`+referenceTagsSQL+
-		` FROM studio_references r`+where+` ORDER BY `+order+` LIMIT $5 OFFSET $6`, args...)
+		` FROM studio_references r`+where+` ORDER BY `+order+fmt.Sprintf(` LIMIT $%d OFFSET $%d`, len(args)-1, len(args)), args...)
 	if err != nil {
 		writeError(w, 500, "Could not search references")
 		return
@@ -234,34 +290,68 @@ func (h *Handler) StudioReferenceFacets(w http.ResponseWriter, r *http.Request) 
 	}
 	type facet struct {
 		Name  string `json:"name"`
+		Label string `json:"label,omitempty"`
+		Group string `json:"group,omitempty"`
 		Count int    `json:"count"`
 	}
-	result := map[string][]facet{"tags": {}, "collections": {}}
-	for key, query := range map[string]string{
-		"tags":        `SELECT t.name,count(*) FROM studio_reference_tags t JOIN studio_reference_tag_links l ON t.id=l.tag_id GROUP BY t.name ORDER BY t.name`,
-		"collections": `SELECT collection,count(*) FROM studio_references GROUP BY collection ORDER BY collection`,
-	} {
-		rows, err := h.DB.Query(r.Context(), query)
+	result := map[string]any{"tags": []facet{}, "collections": []facet{}, "groups": referenceGroups()}
+	allTags := []facet{}
+	for _, group := range referenceGroups() {
+		where, args, err := referenceFilter(r.URL.Query(), group.ID)
+		if err != nil {
+			writeError(w, 400, err.Error())
+			return
+		}
+		rows, err := h.DB.Query(r.Context(), `SELECT t.name,count(*) FROM studio_references r JOIN studio_reference_tag_links l ON l.reference_id=r.id JOIN studio_reference_tags t ON t.id=l.tag_id`+where+` GROUP BY t.name`, args...)
 		if err != nil {
 			writeError(w, 500, "Could not load filters")
 			return
 		}
+		counts := map[string]int{}
 		for rows.Next() {
-			var f facet
-			if err = rows.Scan(&f.Name, &f.Count); err != nil {
-				rows.Close()
-				writeError(w, 500, "Could not load filters")
-				return
+			var name string
+			var count int
+			if err = rows.Scan(&name, &count); err != nil {
+				break
 			}
-			result[key] = append(result[key], f)
+			counts[name] = count
 		}
-		err = rows.Err()
+		if err == nil {
+			err = rows.Err()
+		}
 		rows.Close()
 		if err != nil {
 			writeError(w, 500, "Could not load filters")
 			return
 		}
+		for _, tag := range group.Tags {
+			allTags = append(allTags, facet{Name: tag.Name, Label: tag.Label, Group: group.ID, Count: counts[tag.Name]})
+		}
 	}
+	result["tags"] = allTags
+	// Collection navigation retains library totals; tag counts use the current scope.
+	rows, err := h.DB.Query(r.Context(), `SELECT collection,count(*) FROM studio_references GROUP BY collection ORDER BY collection`)
+	if err != nil {
+		writeError(w, 500, "Could not load filters")
+		return
+	}
+	collections := []facet{}
+	for rows.Next() {
+		var f facet
+		if err = rows.Scan(&f.Name, &f.Count); err != nil {
+			break
+		}
+		collections = append(collections, f)
+	}
+	if err == nil {
+		err = rows.Err()
+	}
+	rows.Close()
+	if err != nil {
+		writeError(w, 500, "Could not load filters")
+		return
+	}
+	result["collections"] = collections
 	writeJSON(w, 200, result)
 }
 

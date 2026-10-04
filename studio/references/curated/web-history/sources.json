@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-04",
+  "retrieval": "Web retrieval; direct Python HTTP requests returned 403. No remote HTML hash claimed.",
+  "sources": [
+    "https://www.webdesignmuseum.org/css-layout-pioneers",
+    "https://www.webdesignmuseum.org/exhibitions/y2k-aesthetic-in-web-design",
+    "https://www.webdesignmuseum.org/flash-websites",
+    "https://www.webdesignmuseum.org/web-design-history?timeline=1990-1994",
+    "https://www.webdesignmuseum.org/web-design-history?timeline=1995-1997",
+    "https://www.webdesignmuseum.org/web-design-history?timeline=1998-2002",
+    "https://www.webdesignmuseum.org/web-design-history?timeline=2003-2008",
+    "https://www.webdesignmuseum.org/web-design-history?timeline=2009-present"
+  ],
+  "authoredFiles": {
+    "curated/web-history/1990-1994.md": {
+      "sha256": "5ba22ca57786c72da70b327d61ce20458bf8a8ab75db8e8de3bed3c38dce6575",
+      "bytes": 1439
+    },
+    "curated/web-history/1995-1997.md": {
+      "sha256": "051d6f59fc2484d77b742c49bf75102cbeb7e1cb21055ba2b9701b1774e7ae4c",
+      "bytes": 1482
+    },
+    "curated/web-history/1998-2002.md": {
+      "sha256": "1f6abbed0280620e5250b961b200758d328822b345c31fa2f82f5daa12433316",
+      "bytes": 1559
+    },
+    "curated/web-history/2003-2008.md": {
+      "sha256": "e182947f3fa569385f874911101bf55c23f904174239c6b8c11d8ccba7e4eb56",
+      "bytes": 1517
+    },
+    "curated/web-history/2009-present.md": {
+      "sha256": "862768ca4f3d71b07179eea5314692c9e179855e2c8b1861ea6a7f4e98b1882e",
+      "bytes": 1611
+    },
+    "curated/web-history/flash.md": {
+      "sha256": "784d280789a034e9c7b11d8672d37824d86fa77be0a327809314cbf8b5bc1f95",
+      "bytes": 1481
+    },
+    "curated/web-history/y2k.md": {
+      "sha256": "647f61c361b52837fc524e59695f293a4d6bd5253c1bd57df4666384b0d3375e",
+      "bytes": 1566
+    },
+    "curated/web-history/css-pioneers.md": {
+      "sha256": "436cd04ec7f2f240c60844301225d395a405843817fad6713a6d6a45d19b6591",
+      "bytes": 1493
+    }
+  }
+}

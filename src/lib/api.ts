@@ -333,6 +333,14 @@ export async function getDashboardStats() {
 
 // ── Public metrics ──────────────────────────────────────────
 
+export interface StudioBrandAsset {
+  id: string;
+  name: string;
+  category: string;
+  title?: string;
+  tags?: string[];
+  metadata_basis?: string;
+}
 export interface StudioBrand {
   slug: string;
   name: string;
@@ -340,10 +348,13 @@ export interface StudioBrand {
   guide: string;
   preview: string;
   logos: string[];
-  assets?: { id: string; name: string; category: string }[];
+  assets?: StudioBrandAsset[];
   tokens: { colors: Record<string, string>; fonts: Record<string, string> };
 }
 export interface StudioMedia {
+  tags?: string[];
+  platforms?: string[];
+  metadata_basis?: string;
   id: string;
   title: string;
   products: string[];
@@ -397,13 +408,14 @@ export interface ReferenceResults {
   total_pages: number;
 }
 export interface ReferenceFacets {
-  tags: { name: string; count: number }[];
+  tags: { name: string; label?: string; group?: string; count: number }[];
+  groups?: { id: string; label: string }[];
   collections: { name: string; count: number }[];
 }
 export const getStudioReferences = (params: URLSearchParams, signal?: AbortSignal) =>
   apiFetch<ReferenceResults>(`/api/v1/admin/studio/references?${params}`, { signal });
-export const getStudioReferenceFacets = (signal?: AbortSignal) =>
-  apiFetch<ReferenceFacets>('/api/v1/admin/studio/references/facets', { signal });
+export const getStudioReferenceFacets = (signal?: AbortSignal, params = new URLSearchParams()) =>
+  apiFetch<ReferenceFacets>(`/api/v1/admin/studio/references/facets?${params}`, { signal });
 export const getStudioReference = (id: string, signal?: AbortSignal) =>
   apiFetch<StudioReference>(`/api/v1/admin/studio/references/${encodeURIComponent(id)}`, {
     signal,

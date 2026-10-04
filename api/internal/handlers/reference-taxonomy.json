@@ -1,0 +1,294 @@
+[
+  {
+    "id": "style",
+    "label": "Visual style",
+    "tags": [
+      {
+        "name": "Aesthetic",
+        "label": "Aesthetic study"
+      },
+      {
+        "name": "Creative",
+        "label": "Creative direction"
+      },
+      {
+        "name": "Editorial",
+        "label": "Editorial"
+      },
+      {
+        "name": "Experimental",
+        "label": "Experimental"
+      },
+      {
+        "name": "Futuristic",
+        "label": "Futuristic"
+      },
+      {
+        "name": "Geometric",
+        "label": "Geometric"
+      },
+      {
+        "name": "Hand drawn",
+        "label": "Hand-drawn"
+      },
+      {
+        "name": "Innovative",
+        "label": "Design exploration"
+      },
+      {
+        "name": "Memphis",
+        "label": "Memphis"
+      },
+      {
+        "name": "Minimalist",
+        "label": "Minimalist"
+      },
+      {
+        "name": "Neo-Brutalism",
+        "label": "Neo-brutalism"
+      },
+      {
+        "name": "Retro",
+        "label": "Retro"
+      },
+      {
+        "name": "Swiss",
+        "label": "Swiss / International style"
+      },
+      {
+        "name": "Y2K",
+        "label": "Y2K"
+      }
+    ]
+  },
+  {
+    "id": "color",
+    "label": "Color & tone",
+    "tags": [
+      {
+        "name": "Dark",
+        "label": "Dark palette"
+      },
+      {
+        "name": "Light",
+        "label": "Light palette"
+      },
+      {
+        "name": "Gradients",
+        "label": "Gradients"
+      }
+    ]
+  },
+  {
+    "id": "typography",
+    "label": "Typography",
+    "tags": [
+      {
+        "name": "Monospace",
+        "label": "Monospace"
+      },
+      {
+        "name": "Serif",
+        "label": "Serif"
+      },
+      {
+        "name": "Typography",
+        "label": "Typography-led"
+      }
+    ]
+  },
+  {
+    "id": "subject",
+    "label": "Subject & purpose",
+    "tags": [
+      {
+        "name": "Agency",
+        "label": "Agency"
+      },
+      {
+        "name": "Architecture",
+        "label": "Architecture"
+      },
+      {
+        "name": "Art",
+        "label": "Art"
+      },
+      {
+        "name": "Books",
+        "label": "Books"
+      },
+      {
+        "name": "Campaign",
+        "label": "Campaign"
+      },
+      {
+        "name": "Collective",
+        "label": "Collective"
+      },
+      {
+        "name": "Commerce",
+        "label": "Commerce"
+      },
+      {
+        "name": "Community",
+        "label": "Community"
+      },
+      {
+        "name": "Corporate",
+        "label": "Corporate"
+      },
+      {
+        "name": "Culture",
+        "label": "Culture"
+      },
+      {
+        "name": "Developer",
+        "label": "Developer"
+      },
+      {
+        "name": "Events",
+        "label": "Events"
+      },
+      {
+        "name": "Games",
+        "label": "Games"
+      },
+      {
+        "name": "Institution",
+        "label": "Institution"
+      },
+      {
+        "name": "Knowledge",
+        "label": "Knowledge"
+      },
+      {
+        "name": "Portfolio",
+        "label": "Portfolio"
+      },
+      {
+        "name": "Product",
+        "label": "Product"
+      },
+      {
+        "name": "Property",
+        "label": "Property"
+      },
+      {
+        "name": "Radio",
+        "label": "Radio"
+      },
+      {
+        "name": "Service",
+        "label": "Service"
+      },
+      {
+        "name": "Social",
+        "label": "Social"
+      },
+      {
+        "name": "Sports",
+        "label": "Sports"
+      },
+      {
+        "name": "Sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "name": "Technology",
+        "label": "Technology"
+      },
+      {
+        "name": "Tools",
+        "label": "Tools"
+      },
+      {
+        "name": "Wellness",
+        "label": "Wellness"
+      }
+    ]
+  },
+  {
+    "id": "era",
+    "label": "Era",
+    "tags": [
+      {
+        "name": "90s",
+        "label": "1990s"
+      },
+      {
+        "name": "Early web",
+        "label": "Early web"
+      },
+      {
+        "name": "Era",
+        "label": "Era overview"
+      },
+      {
+        "name": "1990–1994",
+        "label": "1990–1994"
+      },
+      {
+        "name": "1995–1997",
+        "label": "1995–1997"
+      },
+      {
+        "name": "1998–2002",
+        "label": "1998–2002"
+      },
+      {
+        "name": "2003–2008",
+        "label": "2003–2008"
+      },
+      {
+        "name": "2009–present",
+        "label": "2009–present"
+      }
+    ]
+  },
+  {
+    "id": "technique",
+    "label": "Technique",
+    "tags": [
+      {
+        "name": "3D",
+        "label": "3D"
+      },
+      {
+        "name": "CSS",
+        "label": "CSS"
+      },
+      {
+        "name": "Design systems",
+        "label": "Design systems"
+      },
+      {
+        "name": "Flash",
+        "label": "Flash"
+      },
+      {
+        "name": "Graphic navigation",
+        "label": "Graphic navigation"
+      },
+      {
+        "name": "Interactive",
+        "label": "Interactive"
+      },
+      {
+        "name": "Motion",
+        "label": "Motion"
+      },
+      {
+        "name": "Portals",
+        "label": "Portals"
+      },
+      {
+        "name": "Responsive",
+        "label": "Responsive"
+      },
+      {
+        "name": "Technique",
+        "label": "Technique study"
+      }
+    ]
+  }
+]
