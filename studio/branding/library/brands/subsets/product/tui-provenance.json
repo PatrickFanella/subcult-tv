@@ -1,0 +1,9 @@
+{
+  "sourceCommit": "7c51d5d85f8586a173ddae67e7b0137307eef15a",
+  "sourceDirty": true,
+  "tuiSourceSha256": "ac9cafb8df3a6bb4981fc23816850eb88324a095cec26c3baede2fe4f80ac9e7",
+  "version": "0.2.0-alpha.2",
+  "captureSha256": "d7231ff3062b2b2a26f0a52d1f1cdcbeb3f3aac79b17b7d1f19a6313051d9ad0",
+  "kind": "actual Ink component render with disposable sample skills",
+  "generator": "studio/scripts/export_subsets.py"
+}

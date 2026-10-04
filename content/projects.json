@@ -172,5 +172,23 @@
     "order": 8,
     "coverColor": "#a33c26",
     "coverPattern": "grid"
+  },
+  "subsets": {
+    "slug": "subsets",
+    "name": "Subsets",
+    "description": "Discover local agent skills, group them for a task, and preview and apply the set you need.",
+    "longDescription": "Subsets is a local CLI and terminal interface for agent skill collections. Discover supported user and project folders, explicitly adopt unmanaged folders, organize named groups, and preview changes before applying a selection. Inactive skills remain in a private library, with transaction history and checked rollback. The native npm edition is an alpha; Linux is tested and macOS remains unverified.",
+    "whyItExists": "A growing skill collection can become hard to manage. Subsets helps people choose the set for the work at hand while keeping folder ownership and recovery visible.",
+    "status": "incubating",
+    "type": ["software", "tools"],
+    "stack": ["TypeScript", "Node.js", "Ink", "React"],
+    "topics": ["agent-skills", "cli", "tui", "local-tools"],
+    "url": "https://subsets.subcult.tv",
+    "repoUrl": "https://git.subcult.tv/subculture-collective/subsets",
+    "lastUpdated": "2026-10-04T00:00:00Z",
+    "featured": true,
+    "order": 9,
+    "coverColor": "#94f7b7",
+    "coverPattern": "grid"
   }
 }

@@ -95,6 +95,15 @@ const selections = [
       'Left Field sets seat-level public records beside their sources and their gaps: elections, incumbents, campaign finance and geography. Scores are provisional and versioned. It is in active development, and no public app has been announced.',
     highlights: ['Provisional', 'Versioned', 'Seat-level public records'],
   },
+  {
+    slug: 'subsets',
+    category: 'Local agent tools / npm alpha',
+    headline: 'All your skills. Only the set you need.',
+    summary:
+      'Discover skills on your computer, group them for a task, and preview changes before applying a set. A local CLI and terminal interface, with explicit folder ownership and checked recovery.',
+    highlights: ['Discover local skills', 'Group and preview', 'Apply your set'],
+    liveLabel: 'Get the alpha',
+  },
 ] satisfies Array<Omit<ShowcaseProduct, 'project'> & { slug: string }>;
 
 export function getShowcaseProducts(): ShowcaseProduct[] {

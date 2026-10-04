@@ -22,6 +22,60 @@ export interface LandingContent {
 }
 
 export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
+  subsets: {
+    audience: 'For people building a collection of skills for their agents.',
+    introduction: 'Keep the collection. Choose the working set.',
+    features: [
+      {
+        title: 'Discover local skills',
+        description:
+          'Scan supported user and project folders and see each skill’s location and owner.',
+      },
+      {
+        title: 'Group them for the work',
+        description:
+          'Organize named groups for writing, development, or your own tasks. Keep everyday essentials in core.',
+      },
+      {
+        title: 'Preview and recover',
+        description:
+          'Inspect changes before applying a set. Inactive skills remain in a private library, with transaction history and checked rollback.',
+      },
+    ],
+    steps: [
+      {
+        title: 'Review your folders',
+        description:
+          'Discovery is read-only. Explicitly adopt an unmanaged folder before changing its selection.',
+      },
+      {
+        title: 'Make a group',
+        description: 'Pick skills in the TUI or create a named group from the command line.',
+      },
+      {
+        title: 'Preview, then apply',
+        description: 'Review the plan, apply the selection, and start a fresh agent session.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What do I need to run it?',
+        answer:
+          'The native npm alpha needs Node.js 22 or newer. Linux is tested; macOS remains unverified and Windows is unsupported.',
+      },
+      {
+        question: 'Does it take over every skill folder?',
+        answer:
+          'No. Discovery is read-only and adoption is explicit. Package, plugin, and installer-owned folders retain their owners.',
+      },
+      {
+        question: 'Is it a browser or desktop application?',
+        answer:
+          'Subsets runs in your terminal. Its landing page shows actual captured TUI output using sample skills.',
+      },
+    ],
+    closing: 'A set for the work at hand.',
+  },
   'left-field': {
     audience: 'For researchers and organizers who read the methodology first.',
     introduction: 'Where we have no record, the page says so. It does not show a zero.',

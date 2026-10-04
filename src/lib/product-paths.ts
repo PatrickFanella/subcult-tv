@@ -7,6 +7,7 @@ export const PRODUCT_ROUTES: Record<string, string> = {
   undertow: 'undertow',
   prichal: 'prichal',
   kork: 'kork',
+  subsets: 'subsets',
   'left-field': 'left-field',
 };
 

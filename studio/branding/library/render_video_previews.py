@@ -9,3 +9,5 @@ for b in json.loads((r/'brands.json').read_text()):
  if b['slug']=='patrick__eff' and b.get('mode')=='patrick-patch':
   import patrick_patch
   patrick_patch.refresh_manifest()
+ if b['slug']=='subsets':
+  subprocess.run(['python3',str(r/'brands/subsets/build.py')],check=True)

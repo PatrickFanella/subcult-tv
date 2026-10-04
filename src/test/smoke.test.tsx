@@ -47,7 +47,7 @@ describe('smoke: app shell', () => {
     expect(screen.getByRole('navigation').textContent).toContain('SUBCULT');
   });
 
-  it('showcases all nine products and connects HasanAra to its shared application', async () => {
+  it('showcases all ten products and connects HasanAra to its shared application', async () => {
     const user = userEvent.setup();
     renderApp('/');
     const showcase = await screen.findByRole('region', { name: 'The products' });
@@ -62,6 +62,7 @@ describe('smoke: app shell', () => {
       'Prichal',
       'Kork',
       'Left Field',
+      'Subsets',
     ]) {
       expect(products.getByRole('heading', { name })).toBeInTheDocument();
     }
@@ -128,13 +129,13 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('redirects the old catalog to the nine-product directory', async () => {
+  it('redirects the old catalog to the ten-product directory', async () => {
     renderApp('/projects');
     await screen.findByRole('heading', { name: 'Products', level: 1 });
     const main = within(screen.getByRole('main'));
     const teasers = within(main.getByRole('region', { name: 'In development' }));
     const articles = main.getAllByRole('article');
-    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(9);
+    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(10);
     expect(teasers.getAllByRole('article')).toHaveLength(2);
     expect(main.getByRole('link', { name: 'Explore Rekolekt' })).toHaveAttribute(
       'href',
@@ -204,6 +205,7 @@ describe('smoke: app shell', () => {
     ['prichal', 'Prichal'],
     ['kork', 'Kork'],
     ['left-field', 'Left Field'],
+    ['subsets', 'Subsets'],
   ])('renders the %s landing page with product details and working FAQs', async (slug, name) => {
     const user = userEvent.setup();
     renderApp(`/products/${slug}`);
@@ -288,6 +290,7 @@ describe('smoke: app shell', () => {
       ['Prichal', 'prichal'],
       ['Kork', 'kork'],
       ['Left Field', 'left-field'],
+      ['Subsets', 'subsets'],
     ]) {
       expect(nav.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
       expect(footer.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);

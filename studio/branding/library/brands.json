@@ -363,5 +363,31 @@
     "slug": "tadooer",
     "selected_by_user": false,
     "direction_selection": "proposed"
+  },
+  {
+    "id": "subsets-a",
+    "brand": "Subsets",
+    "variant": "A",
+    "name": "Personal Utility",
+    "bg": "#d9dedc",
+    "fg": "#17201e",
+    "accent": "#94f7b7",
+    "secondary": "#eef1ef",
+    "display": "Space Grotesk",
+    "body": "Public Sans",
+    "label": "JetBrains Mono",
+    "safe_label": "#17201e",
+    "headline": [
+      "All your skills.",
+      "Only the set you need."
+    ],
+    "tag": "LOCAL AGENT SKILLS / BY SUBCULT",
+    "description": "Silver surfaces, charcoal structure, mint selected states and an original selected-tile mark.",
+    "mode": "personal-utility",
+    "url": "subsets.subcult.tv",
+    "source": "Subsets native npm edition; owner selected Personal Utility and approved the refinement and public landing October 4, 2026. Brand masters in brands/subsets/build.py.",
+    "slug": "subsets",
+    "selected_by_user": true,
+    "direction_selection": "user"
   }
 ]

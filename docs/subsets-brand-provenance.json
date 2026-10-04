@@ -1,0 +1,110 @@
+{
+  "repository": "subculture-collective/subcult-tv",
+  "brand": "Subsets",
+  "direction": "Personal Utility",
+  "approval": "Owner approved branding and public landing on October 4, 2026",
+  "files": [
+    {
+      "source": "studio/branding/library/brands/subsets/tokens.css",
+      "target": "public/brand/subsets/tokens.css",
+      "sha256": "e95bba39ac0bcf2ee844336ff535fd918d084feb613fdde1207d0fd8f611b14d"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/tokens.json",
+      "target": "public/brand/subsets/tokens.json",
+      "sha256": "22c60ca98ef1977bd0a907241bc1ddb0d7d1729464050ba72e02853b29d86d99"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/brand-board.png",
+      "target": "public/brand/subsets/brand-board.png",
+      "sha256": "f939d6c3fb5c3e76af4a0e19da3980da85991d9d295eb37240b7326de538dcf2"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/logos/mark-primary.svg",
+      "target": "public/brand/subsets/logos/mark-primary.svg",
+      "sha256": "cf5be25adce45946e87f686de57ee99c75bec97c056085fb380fc7dc01df047f"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/logos/mark-dark.svg",
+      "target": "public/brand/subsets/logos/mark-dark.svg",
+      "sha256": "5663f1ad5dedd29fd4ef55a9f4538c53e77f7de39ce284cf62c5faa54e1fdf47"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/logos/mark-mono.svg",
+      "target": "public/brand/subsets/logos/mark-mono.svg",
+      "sha256": "b71b9126abe49dad0ebce1b817dfdaa672ed89be027f467178c24538e907e04a"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/logos/lockup-primary-outlined.svg",
+      "target": "public/brand/subsets/logos/lockup-primary-outlined.svg",
+      "sha256": "0710da2207761adae878497909a6a2cee67d3197c1d3c458d2827b7db60a3f69"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/social/og.png",
+      "target": "public/brand/subsets/social/og.png",
+      "sha256": "45e659437d42794ccacf0085d7d572e5c56ddc4bbb484621de221ec255f11728"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/social/banner-x-bluesky.png",
+      "target": "public/brand/subsets/social/banner-x-bluesky.png",
+      "sha256": "fd6126037401cd06dbdc30193690a0f2be038ff24e80d0c9ed24a2f2dbd46f10"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/social/avatar.png",
+      "target": "public/brand/subsets/social/avatar.png",
+      "sha256": "dea7a72ac2f65259ca77badefccb51bf1e69beb93d750ccaf2d879c312894727"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/fonts/Space-Grotesk-0.ttf",
+      "target": "public/brand/subsets/fonts/Space-Grotesk-0.ttf",
+      "sha256": "ec926d5065eaca49a48f96e312bbae0bbc5733c24215cf5dfabbdccee926fef7"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/fonts/Space-Grotesk-1.ttf",
+      "target": "public/brand/subsets/fonts/Space-Grotesk-1.ttf",
+      "sha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/fonts/Public-Sans-0.ttf",
+      "target": "public/brand/subsets/fonts/Public-Sans-0.ttf",
+      "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/fonts/JetBrains-Mono-0.ttf",
+      "target": "public/brand/subsets/fonts/JetBrains-Mono-0.ttf",
+      "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/fonts/spacegrotesk-OFL.txt",
+      "target": "public/brand/subsets/fonts/spacegrotesk-OFL.txt",
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/fonts/publicsans-OFL.txt",
+      "target": "public/brand/subsets/fonts/publicsans-OFL.txt",
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/fonts/jetbrainsmono-OFL.txt",
+      "target": "public/brand/subsets/fonts/jetbrainsmono-OFL.txt",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/fonts/sources.json",
+      "target": "public/brand/subsets/fonts/sources.json",
+      "sha256": "81bb5bb8e4baadaa7ed3e25120bf1e562e163285f6a93a7d675fcecf56c04fb6"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/product/hero-outlined.svg",
+      "target": "public/brand/subsets/product/hero.svg",
+      "sha256": "fa9d48ad056a221738596b0d71066c558d837fec39ed74e240205d25765582ee"
+    },
+    {
+      "source": "studio/branding/library/brands/subsets/social/og.png",
+      "sourceSha256": "45e659437d42794ccacf0085d7d572e5c56ddc4bbb484621de221ec255f11728",
+      "target": "public/og/subsets.jpg",
+      "sha256": "077a4b8f1939c4b8bcd509c16eb731dfe2ce56de95745db59f1841b9b919953e",
+      "conversion": "RGB JPEG quality 93"
+    }
+  ]
+}

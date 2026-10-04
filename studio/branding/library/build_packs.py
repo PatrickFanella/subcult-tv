@@ -1,5 +1,5 @@
 from pathlib import Path
-import base64,copy,html,json,os,shutil,subprocess,hashlib,zipfile,xml.etree.ElementTree as ET
+import base64,copy,html,json,os,sys,shutil,subprocess,hashlib,zipfile,xml.etree.ElementTree as ET
 import patchwork_product as PW
 import left_field_product as LFP
 import hasanara_product as HA
@@ -474,6 +474,9 @@ Replace these starters when copy or imagery changes. Describe a screenshot’s a
 # Captured source marks are bundled under references/.
 for d in BRANDS:
  if os.environ.get('BRAND_ONLY') and d['slug']!=os.environ['BRAND_ONLY']:continue
+ if d['slug']=='subsets':
+  subprocess.run([sys.executable,str(R/'brands/subsets/build.py')],check=True)
+  continue
  if d['slug']=='patrick__eff' and d.get('mode')=='patrick-patch':
   import patrick_patch
   patrick_patch.build(d)
