@@ -9,7 +9,7 @@ import os
 from pathlib import Path
 import subprocess
 
-from sources import changemaker_context
+from sources import changemaker_context, complete_changemaker_digest
 from runner import atomic_write
 
 HERE = Path(__file__).resolve().parent
@@ -63,10 +63,8 @@ def execute(source_root, state):
         context = changemaker_context(cfg['switchyard'], now)
         if not context['drafts']:
             return {'status': context['status'], 'mode': 'changemaker', 'publishing_enabled': False}
-        digest = context['drafts'][0]
+        digest = complete_changemaker_digest(context)
         evidence = digest['evidence']
-        if evidence.get('status') != 'complete' or evidence.get('failed_source_count') or evidence.get('omitted_item_count'):
-            raise ValueError('Incomplete Changemaker evidence')
         used = used_sources(state)
         items = {i['id']: i for i in evidence['items']
                  if i.get('kind') == 'pull request' and i.get('state') == 'merged' and identity(i) not in used}

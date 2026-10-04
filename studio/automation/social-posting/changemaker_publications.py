@@ -12,7 +12,7 @@ import subprocess
 import urllib.request
 
 from runner import atomic_write
-from sources import NoRedirect, changemaker_context, public_url
+from sources import NoRedirect, changemaker_context, complete_changemaker_digest, public_url
 
 HERE = Path(__file__).resolve().parent
 
@@ -60,10 +60,8 @@ def execute(source_root, state, ingest_env=None):
         context = changemaker_context(cfg['switchyard'], now)
         if not context['drafts']:
             return {'status': context['status'], 'publishing_enabled': False}
-        digest = context['drafts'][0]
+        digest = complete_changemaker_digest(context)
         evidence = digest['evidence']
-        if evidence.get('status') != 'complete' or evidence.get('failed_source_count') or evidence.get('omitted_item_count'):
-            raise ValueError('Incomplete Changemaker evidence')
         items = {item['id']: item for item in evidence['items'] if item.get('kind') == 'pull request' and item.get('state') == 'merged'}
         if not items:
             return {'status': 'no_completed_updates', 'publishing_enabled': False}
