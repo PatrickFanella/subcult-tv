@@ -47,6 +47,9 @@ class ChangemakerInstagramTests(unittest.TestCase):
             (root/'content/social/Product Claims Register.md').write_text('Work in progress only.')
             (root/'content/VOICE.md').write_text('Plain product language.')
             (root/'automation/social-posting/changemaker-instagram-prompt.md').write_text('Prepare unapproved captions.')
+            home=Path(tmp)/'home'
+            (home/'.codex/skills/unslop').mkdir(parents=True)
+            (home/'.codex/skills/unslop/SKILL.md').write_text('Preserve facts and uncertainty.')
             item={**self.items['S1'],'id':'S1','kind':'pull request','state':'merged','title':'Improve reading'}
             context={'drafts':[{'run_id':'native-run','draft_sha256':'d'*64,'evidence_sha256':'e'*64,
                                'evidence':{'status':'complete','items':[item]}}]}
@@ -55,7 +58,7 @@ class ChangemakerInstagramTests(unittest.TestCase):
                 (directory/'result-model.json').write_text(json.dumps({'drafts':[self.draft],'open_checks':['Check deployment.']}))
                 return subprocess.CompletedProcess(command,0)
             before=datetime.now(timezone.utc)
-            with patch.object(importer,'HERE',root/'automation/social-posting'), patch.object(importer,'changemaker_context',return_value=context), patch.object(importer.subprocess,'run',side_effect=generate):
+            with patch.object(importer.Path,'home',return_value=home), patch.object(importer,'HERE',root/'automation/social-posting'), patch.object(importer,'changemaker_context',return_value=context), patch.object(importer.subprocess,'run',side_effect=generate):
                 receipt=importer.execute(root,state)
                 result=json.loads((state/'runs'/receipt['run_id']/'result.json').read_text())
                 self.assertGreaterEqual((datetime.fromisoformat(result['drafts'][0]['due_at'])-before).total_seconds(),48*3600)
