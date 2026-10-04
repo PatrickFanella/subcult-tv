@@ -240,6 +240,7 @@ export default function AdminPosts() {
                       <option value="all">All lanes</option>
                       <option value="plan">Weekly</option>
                       <option value="radar">Timely</option>
+                      <option value="changemaker">Changemaker / Instagram</option>
                     </select>
                   </label>
                   <label>
@@ -258,7 +259,7 @@ export default function AdminPosts() {
                     checked={includeExpired}
                     onChange={(e) => setIncludeExpired(e.target.checked)}
                   />{' '}
-                  Include expired timely drafts
+                  Include expired drafts
                 </label>
                 <p role="status" className="studio-note">
                   {copyStatus}
@@ -275,7 +276,12 @@ export default function AdminPosts() {
                       <article key={d.id}>
                         <div className="posting-draft-meta">
                           <span className="production-badge">
-                            {d.account} / {d.mode === 'radar' ? 'Timely' : 'Weekly'}
+                            {d.account} /{' '}
+                            {d.mode === 'changemaker'
+                              ? 'Changemaker · Instagram'
+                              : d.mode === 'radar'
+                                ? 'Timely'
+                                : 'Weekly'}
                           </span>
                           <span>{expired(d.expires_at) ? 'Expired' : 'Unapproved'}</span>
                         </div>

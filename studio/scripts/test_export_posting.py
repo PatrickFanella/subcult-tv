@@ -11,7 +11,7 @@ class PostingExportTests(unittest.TestCase):
         self.assertFalse(data['connected'])
         self.assertFalse(data['publishing_enabled'])
         self.assertEqual(data['drafts'], [])
-        self.assertEqual(len(data['schedules']), 3)
+        self.assertEqual(len(data['schedules']), 4)
 
     def test_completed_results_only_and_receipt_redaction(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -38,5 +38,17 @@ class PostingExportTests(unittest.TestCase):
             (state/'latest.json').write_text(json.dumps({'mode':'plan','status':'success','run_id':'../../outside','draft_count':1}))
             data=snapshot(state)
             self.assertEqual(data['drafts'],[])
+
+    def test_changemaker_drafts_reach_snapshot_without_raw_evidence_or_approval(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state=Path(tmp);run=state/'runs'/'cm';run.mkdir(parents=True)
+            (run/'receipt.json').write_text(json.dumps({'mode':'changemaker','status':'success','run_id':'cm','draft_count':1,'source_identities':['private-ledger']}))
+            (run/'result.json').write_text(json.dumps({'drafts':[{'account':'subcult','text':'An Instagram draft','evidence':'Review the collected source','approval':'approved'}]}))
+            (run/'sources.json').write_text('{"raw_secret":"must stay local"}')
+            data=snapshot(state)
+            self.assertEqual(data['drafts'][0]['mode'],'changemaker')
+            self.assertEqual(data['drafts'][0]['approval'],'unapproved')
+            self.assertNotIn('private-ledger',json.dumps(data))
+            self.assertNotIn('must stay local',json.dumps(data))
 
 if __name__=='__main__':unittest.main()

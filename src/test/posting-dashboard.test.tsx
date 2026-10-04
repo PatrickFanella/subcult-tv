@@ -80,13 +80,42 @@ describe('Production admin', () => {
     );
     await screen.findByText('Patrick draft copy');
     expect(screen.queryByText('Expired timely draft')).not.toBeInTheDocument();
-    fireEvent.click(screen.getByLabelText('Include expired timely drafts'));
+    fireEvent.click(screen.getByLabelText('Include expired drafts'));
     expect(screen.getByText('Expired')).toBeInTheDocument();
     expect(screen.getByText('Unverified')).toBeInTheDocument();
     fireEvent.change(screen.getByLabelText('Account'), { target: { value: 'patrick' } });
     expect(screen.queryByText('Expired timely draft')).not.toBeInTheDocument();
     expect(screen.getByText('Capture the UI')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /publish now|approve/i })).not.toBeInTheDocument();
+  });
+  it('keeps Changemaker Instagram drafts in their own filter with private evidence', async () => {
+    vi.mocked(getPostingDashboard).mockResolvedValue({
+      ...data,
+      drafts: [
+        ...data.drafts,
+        {
+          ...data.drafts[0],
+          id: 'changemaker',
+          mode: 'changemaker',
+          text: 'A product update for Instagram',
+          account: 'subcult',
+          evidence: 'Verified Changemaker source digest',
+        },
+      ],
+    });
+    render(
+      <MemoryRouter>
+        <AdminPosts />
+      </MemoryRouter>,
+    );
+    await screen.findByText('A product update for Instagram');
+    fireEvent.change(screen.getByLabelText('Preparation lane'), {
+      target: { value: 'changemaker' },
+    });
+    expect(screen.queryByText('Patrick draft copy')).not.toBeInTheDocument();
+    expect(screen.getByText('subcult / Changemaker · Instagram')).toBeInTheDocument();
+    expect(screen.getByText('Verified Changemaker source digest')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Review for Instagram' })).toBeEnabled();
   });
   it('shows an unavailable snapshot and recovers with retry', async () => {
     vi.mocked(getPostingDashboard).mockRejectedValueOnce(new Error('Snapshot unavailable'));

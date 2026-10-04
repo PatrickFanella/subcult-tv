@@ -34,11 +34,12 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--source-root',type=Path,required=True)
     parser.add_argument('--state',type=Path,required=True)
+    parser.add_argument('--exporter',type=Path)
     args=parser.parse_args()
     assert args.state.is_dir(), 'Runner state is unavailable'
-    spec=importlib.util.spec_from_file_location('export_posting',args.source_root/'scripts/export_posting.py')
+    spec=importlib.util.spec_from_file_location('export_posting',args.exporter or args.source_root/'scripts/export_posting.py')
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
-    data=json.dumps(module.snapshot(args.state),indent=2).encode()+b'\n'
+    data=json.dumps(module.snapshot(args.state, source_root=args.source_root),indent=2).encode()+b'\n'
     assert len(data)<=2_000_000
     # Python source is one quoted remote argument; no credential or source text enters shell code.
     import shlex
