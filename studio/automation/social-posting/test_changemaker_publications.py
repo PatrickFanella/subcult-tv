@@ -1,0 +1,41 @@
+import json
+from pathlib import Path
+import subprocess
+import tempfile
+import unittest
+from unittest.mock import patch
+from datetime import datetime, timezone
+import changemaker_publications as producer
+
+class PublicationPreparationTests(unittest.TestCase):
+    def test_generates_two_unapproved_editions_and_deduplicates_digest(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)/'studio';state=Path(tmp)/'state';here=root/'automation/social-posting'
+            here.mkdir(parents=True);(root/'content/social').mkdir(parents=True)
+            (here/'config.json').write_text(json.dumps({'codex':'unused','model':'configured','switchyard':{}}))
+            (root/'content/social/Product Claims Register.md').write_text('Merged does not mean deployed.')
+            (root/'content/VOICE.md').write_text('Plain language.')
+            (here/'changemaker-publications-prompt.md').write_text('Prepare drafts.')
+            item={'id':'S1','kind':'pull request','state':'merged','title':'Improve reading'}
+            context={'drafts':[{'run_id':'source-run','draft':'Digest','draft_sha256':'d'*64,'evidence_sha256':'e'*64,'evidence':{'status':'complete','items':[item]}}]}
+            def generate(command,**kwargs):
+                (Path(kwargs['cwd'])/'result.json').write_text(json.dumps({'title':'Update','excerpt':'A clearer page.','website_body':'Website edition.','patreon_body':'Supporter edition.','source_ids':['S1']}))
+                self.assertIn('features.shell_tool=false',command)
+                self.assertNotIn('POSTING_PREPARATION_KEY',kwargs['env'])
+                return subprocess.CompletedProcess(command,0)
+            before=datetime.now(timezone.utc)
+            with patch.object(producer,'HERE',here),patch.object(producer,'changemaker_context',return_value=context),patch.object(producer.subprocess,'run',side_effect=generate) as run:
+                result=producer.execute(root,state)
+                payload=json.loads((state/'publications'/('e'*64)/'drafts.json').read_text())
+                self.assertEqual(result['draft_count'],2);self.assertFalse(result['publishing_enabled'])
+                self.assertEqual({d['platform'] for d in payload},{'website','patreon'})
+                self.assertTrue(all('approved' not in d and 'status' not in d for d in payload))
+                self.assertGreaterEqual((datetime.fromisoformat(payload[0]['due_at'])-before).total_seconds(),48*3600)
+                producer.execute(root,state);self.assertEqual(run.call_count,1)
+    def test_rejects_unknown_sources_private_links_and_embedded_media(self):
+        good={'title':'Update','excerpt':'Excerpt','website_body':'Body','patreon_body':'Body','source_ids':['S1']}
+        producer.validate(good,{'S1':{}})
+        for changes in [{'source_ids':['unknown']},{'source_ids':['S1','S1']},{'patreon_body':'https://git.subcult.tv/private'},{'website_body':'![asset](https://subcult.tv/a.jpg)'},{'website_body':'<iframe>'}]:
+            with self.subTest(changes=changes),self.assertRaises(ValueError):producer.validate({**good,**changes},{'S1':{}})
+
+if __name__=='__main__':unittest.main()

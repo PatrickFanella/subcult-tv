@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"encoding/json"
+	"fmt"
 	"io"
 	"net/http"
 	"os"
@@ -63,35 +64,40 @@ type postingDashboard struct {
 }
 
 // PostingDashboard serves the explicit private export, never raw runtime files.
-func (h *Handler) PostingDashboard(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Cache-Control", "private, no-store")
+func (h *Handler) loadPosting() (postingDashboard, error) {
+	var data postingDashboard
 	root, err := os.OpenRoot(h.StudioRoot)
 	if err != nil {
-		writeError(w, 503, "Posting dashboard is not connected")
-		return
+		return data, fmt.Errorf("Posting dashboard is not connected")
 	}
 	defer root.Close()
 	file, err := root.Open("posting.json")
 	if err != nil {
-		writeError(w, 503, "Posting dashboard snapshot is unavailable")
-		return
+		return data, fmt.Errorf("Posting dashboard snapshot is unavailable")
 	}
 	defer file.Close()
-	var data postingDashboard
 	if json.NewDecoder(io.LimitReader(file, 2<<20)).Decode(&data) != nil {
-		writeError(w, 503, "Posting dashboard snapshot is invalid")
-		return
+		return data, fmt.Errorf("Posting dashboard snapshot is invalid")
 	}
 	observed, err := time.Parse(time.RFC3339, data.GeneratedAt)
 	if err != nil {
-		writeError(w, 503, "Posting dashboard snapshot has no valid observation time")
-		return
+		return data, fmt.Errorf("Posting dashboard snapshot has no valid observation time")
 	}
 	data.Stale = time.Since(observed) > 24*time.Hour
 	// Preparation sources contain no approval or delivery evidence.
 	data.PublishingEnabled = false
 	for i := range data.Drafts {
 		data.Drafts[i].Approval = "unapproved"
+	}
+	return data, nil
+}
+
+func (h *Handler) PostingDashboard(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Cache-Control", "private, no-store")
+	data, err := h.loadPosting()
+	if err != nil {
+		writeError(w, 503, err.Error())
+		return
 	}
 	writeJSON(w, 200, data)
 }

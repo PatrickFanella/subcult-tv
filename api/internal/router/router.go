@@ -104,6 +104,7 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 		api.Post("/webhooks/brevo", h.BrevoNewsletterWebhook)
 
 		api.Get("/stats", h.Stats)
+		api.Post("/posting-preparation", h.IngestPublications)
 		api.Get("/posting-media/{id}", h.PostingMedia)
 
 		api.With(middleware.RateLimit(publicFormLimiter)).Post("/newsletter/subscribe", h.Subscribe)
@@ -121,6 +122,10 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 			admin.Get("/admin/studio", h.StudioCatalog)
 			admin.Get("/admin/studio/jobs", h.StudioJobs)
 			admin.Get("/admin/studio/posting", h.PostingDashboard)
+			admin.Get("/admin/studio/review", h.ReviewDrafts)
+			admin.Put("/admin/studio/review/{id}", h.SaveReviewDraft)
+			admin.Get("/admin/studio/review/{id}/media", h.ReviewDraftMedia)
+			admin.Post("/admin/studio/review/{id}/approve", h.ApproveReviewDraft)
 			admin.Get("/admin/studio/delivery", h.SocialDelivery)
 			admin.Post("/admin/studio/delivery", h.ApproveSchedule)
 			admin.Get("/admin/studio/assets/{id}", h.StudioAsset)
@@ -133,6 +138,10 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 			admin.Put("/projects/{id}", h.UpdateProject)
 			admin.Delete("/projects/{id}", h.DeleteProject)
 
+			admin.Get("/admin/posts", h.ListAllPosts)
+			admin.Get("/admin/publications", h.Publications)
+			admin.Put("/admin/publications/{id}", h.SavePublication)
+			admin.Post("/admin/publications/{id}/approve", h.ApprovePublication)
 			// Posts CRUD
 			admin.Post("/posts", h.CreatePost)
 			admin.Put("/posts/{id}", h.UpdatePost)

@@ -1,0 +1,35 @@
+.development-article {
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  margin-top: 2rem;
+}
+.development-article h2 {
+  font-size: 1.75rem;
+  margin: 2rem 0 1rem;
+}
+.development-article h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.75rem;
+}
+.development-article p {
+  margin: 1rem 0;
+}
+.development-article ul,
+.development-article ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+.development-article ul {
+  list-style: disc;
+}
+.development-article ol {
+  list-style: decimal;
+}
+.development-article a {
+  text-decoration: underline;
+}
+.development-article pre {
+  overflow: auto;
+  padding: 1rem;
+  border: 1px solid #444;
+}

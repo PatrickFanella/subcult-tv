@@ -4,31 +4,63 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
+	"time"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/subculture-collective/subcult-tv/api/internal/middleware"
 	"github.com/subculture-collective/subcult-tv/api/internal/models"
 )
 
 // scanPost scans a full post row into a models.Post.
 func scanPost(s scanner) (models.Post, error) {
 	var p models.Post
+	var date any
 	err := s.Scan(
 		&p.ID, &p.Slug, &p.Title, &p.Excerpt, &p.Content,
-		&p.Tags, &p.Author, &p.Published, &p.Date,
+		&p.Tags, &p.Author, &p.Published, &date,
 		&p.CreatedAt, &p.UpdatedAt,
 	)
+	if err == nil {
+		switch value := date.(type) {
+		case time.Time:
+			p.Date = value.Format("2006-01-02")
+		case string:
+			p.Date = value
+		default:
+			return p, fmt.Errorf("unsupported post date type %T", date)
+		}
+	}
 	return p, err
 }
 
-// ListPosts returns published posts (public) or all posts (admin).
-func (h *Handler) ListPosts(w http.ResponseWriter, r *http.Request) {
+// Public queries expose approved website entries only at their scheduled time.
+const visiblePost = `(published = true OR EXISTS(SELECT 1 FROM publication_review v WHERE v.post_id=posts.id AND v.platform='website' AND v.status='scheduled' AND v.due_at<=NOW()))`
+
+func (h *Handler) ListPosts(w http.ResponseWriter, r *http.Request) { h.listPosts(w, r, true) }
+func (h *Handler) ListAllPosts(w http.ResponseWriter, r *http.Request) {
+	if r.Context().Value(middleware.RoleKey) != "admin" {
+		writeError(w, 403, "Admin access required")
+		return
+	}
+	w.Header().Set("Cache-Control", "private, no-store")
+	h.listPosts(w, r, false)
+}
+func (h *Handler) listPosts(w http.ResponseWriter, r *http.Request, onlyPublished bool) {
 	page, perPage, offset := pagination(r)
-	onlyPublished := r.URL.Query().Get("all") != "true"
 
 	var total int64
 	countQuery := `SELECT COUNT(*) FROM posts`
 	if onlyPublished {
-		countQuery += ` WHERE published = true`
+		countQuery += ` WHERE ` + visiblePost
+	}
+	if r.URL.Query().Get("tag") == "development-log" {
+		if strings.Contains(countQuery, " WHERE ") {
+			countQuery += " AND "
+		} else {
+			countQuery += " WHERE "
+		}
+		countQuery += "'development-log'=ANY(tags)"
 	}
 	if err := h.DB.QueryRow(r.Context(), countQuery).Scan(&total); err != nil {
 		writeError(w, http.StatusInternalServerError, "failed to count posts")
@@ -41,7 +73,15 @@ func (h *Handler) ListPosts(w http.ResponseWriter, r *http.Request) {
 	argN := 1
 
 	if onlyPublished {
-		query += ` WHERE published = true`
+		query += ` WHERE ` + visiblePost
+	}
+	if r.URL.Query().Get("tag") == "development-log" {
+		if strings.Contains(query, " WHERE ") {
+			query += " AND "
+		} else {
+			query += " WHERE "
+		}
+		query += "'development-log'=ANY(tags)"
 	}
 	query += fmt.Sprintf(` ORDER BY date DESC LIMIT $%d OFFSET $%d`, argN, argN+1)
 	args = append(args, perPage, offset)
@@ -60,9 +100,16 @@ func (h *Handler) ListPosts(w http.ResponseWriter, r *http.Request) {
 			writeError(w, http.StatusInternalServerError, "failed to scan post")
 			return
 		}
+		if onlyPublished {
+			p.Published = true
+		}
 		posts = append(posts, p)
 	}
 
+	if rows.Err() != nil {
+		writeError(w, 500, "failed to read posts")
+		return
+	}
 	if posts == nil {
 		posts = []models.Post{}
 	}
@@ -83,7 +130,7 @@ func (h *Handler) GetPost(w http.ResponseWriter, r *http.Request) {
 	var p models.Post
 	row := h.DB.QueryRow(r.Context(),
 		`SELECT id, slug, title, excerpt, content, tags, author, published, date,
-		 created_at, updated_at FROM posts WHERE slug = $1`, slug,
+		 created_at, updated_at FROM posts WHERE slug = $1 AND `+visiblePost, slug,
 	)
 	p, err := scanPost(row)
 	if err != nil {
@@ -91,11 +138,16 @@ func (h *Handler) GetPost(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	p.Published = true
 	writeJSON(w, http.StatusOK, p)
 }
 
 // CreatePost creates a new post (admin only).
 func (h *Handler) CreatePost(w http.ResponseWriter, r *http.Request) {
+	if r.Context().Value(middleware.RoleKey) != "admin" {
+		writeError(w, 403, "Admin access required")
+		return
+	}
 	var req models.CreatePostRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 		writeError(w, http.StatusBadRequest, "invalid request body")
@@ -130,7 +182,20 @@ func (h *Handler) CreatePost(w http.ResponseWriter, r *http.Request) {
 
 // UpdatePost updates an existing post (admin only).
 func (h *Handler) UpdatePost(w http.ResponseWriter, r *http.Request) {
+	if r.Context().Value(middleware.RoleKey) != "admin" {
+		writeError(w, 403, "Admin access required")
+		return
+	}
 	id := chi.URLParam(r, "id")
+	var managed bool
+	if err := h.DB.QueryRow(r.Context(), `SELECT EXISTS(SELECT 1 FROM publication_review WHERE post_id=$1)`, id).Scan(&managed); err != nil {
+		writeError(w, 503, "Article could not be checked")
+		return
+	}
+	if managed {
+		writeError(w, 409, "Edit and approve this article from Development log")
+		return
+	}
 
 	var req models.UpdatePostRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
@@ -163,6 +228,10 @@ func (h *Handler) UpdatePost(w http.ResponseWriter, r *http.Request) {
 
 // DeletePost deletes a post (admin only).
 func (h *Handler) DeletePost(w http.ResponseWriter, r *http.Request) {
+	if r.Context().Value(middleware.RoleKey) != "admin" {
+		writeError(w, 403, "Admin access required")
+		return
+	}
 	id := chi.URLParam(r, "id")
 
 	tag, err := h.DB.Exec(r.Context(), `DELETE FROM posts WHERE id = $1`, id)
