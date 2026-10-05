@@ -29,7 +29,7 @@ Private destinations inside the repository are restricted to `studio/runtime/`. 
 
 ## Library and references
 
-The exported production library currently has twelve brands and seventeen media records. Approved Patrick logo treatments come from `studio/branding/patrick/logo-selection.json`; unapproved treatments are excluded. Metadata includes media rights, source descriptions and review status.
+The exported production library currently has twelve brands and seventeen media records. Approved Patrick logo treatments come from `studio/brand-tools/patrick/logo-selection.json`; unapproved treatments are excluded. Metadata includes media rights, source descriptions and review status.
 
 The reference catalog has 1,404 records: 38 website studies, 24 curated style studies and all 1,342 Refero exports in the completed acquisition manifest under `studio/references/`. The exporter supplies `references.json` plus content-addressed screenshots and attachments. These assets are not part of the public brand selection.
 
@@ -58,7 +58,7 @@ Each submission has a durable request ID, provider identity and content hash. Th
 
 Automatic approval is not enabled. A future automatic mode requires a separately reviewed policy for evidence, media, account mapping, limits and failures. The preparation runner's publishing flag remains false and its installed timers are unchanged.
 
-Installed preparation jobs and compatibility links still use the original Studio checkout until [repository consolidation activation](REPOSITORY-CONSOLIDATION.md). This source refresh does not change schedules, locks, SQLite state or provider credentials. The preparation runner cannot dispatch posts; dashboard scheduling is a separate, human-approved path.
+The X/Bluesky preparation units run from `studio/automation/social-posting/` in the Kvant checkout; the Instagram and website/Patreon jobs run from release bundles copied from it. Source changes do not change schedules, locks, SQLite state or provider credentials. The preparation runner cannot dispatch posts; dashboard scheduling is a separate, human-approved path.
 
 ## Rollback
 

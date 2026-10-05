@@ -2,13 +2,13 @@
 
 This runner prepares weekly X drafts from the social plan, the product claims register, the candidate bank, current repository scope documents, Super Productivity tasks and Buffer queues. It also reads Switchyard's native Changemaker artifacts, prepares timely discovery and quote candidates, and reviews the weekly and timely notes against delivery evidence. It cannot create, schedule or publish posts, approve drafts or change tasks.
 
-Installed jobs still execute the original Studio checkout at `/home/onnwee/Work/Subcult/subcult-studio/automation/social-posting` until the repository consolidation is activated; see `../../../docs/REPOSITORY-CONSOLIDATION.md`. This directory in `subcult-tv/studio/` is the source that takes over at that point, so an edit here does not reach the installed jobs before then. Former vault and runtime paths and the user units are compatibility symlinks to Studio. The tracked config owns content paths. Credentials, receipts and SQLite state stay outside Git. `../../docs/history/MIGRATION.md` records the October 2 cutover and its recovery.
+The installed plan, radar and review units are links into this directory in the Kvant checkout at `/home/onnwee/Work/Subcult/subcult-tv/studio/automation/social-posting`, so they run whatever branch that checkout has. The Instagram and website/Patreon jobs run from release bundles under `~/.local/share/posting-dashboard/`. The tracked config owns content paths. Credentials, receipts and SQLite state stay outside Git. `../../docs/history/MIGRATION.md` records the October 2 cutover and its recovery.
 
 ## Schedule and output
 
-- `social-posting-plan.timer`: Monday 10:00 America/Chicago. Writes `content/social/YYYY-Www Content Posts.md` in Studio.
+- `social-posting-plan.timer`: Monday 10:00 America/Chicago. Writes `content/social/drafts/YYYY-Www Content Posts.md` in Studio.
 - `social-posting-review.timer`: Sunday 16:00 America/Chicago. Writes a separate `YYYY-Www Publishing Review.md`. Before the October 5–11 pilot starts, review returns `pilot_not_started` without a model call.
-- `social-posting-radar.timer`: every day at 08:45, 13:45 and 18:15 America/Chicago. Writes separate timestamped notes under `content/social/Timely Drafts`. With no suitable new sources it makes no model call. Timely discovery can run before the weekly pilot begins.
+- `social-posting-radar.timer`: every day at 08:45, 13:45 and 18:15 America/Chicago. Writes separate timestamped notes under `content/social/drafts/Timely Drafts`. With no suitable new sources it makes no model call. Timely discovery can run before the weekly pilot begins.
 - The preparation timers are persistent. A missed start can run when Kvant returns, and the runner then chooses the current local week; it does not work through a backlog of old weeks.
 
 Kvant must be powered on with network access. User lingering lets jobs run while logged out. The Super Productivity bridge must be available: when a provider is unavailable the run fails, and the runner does not invent an update. A desktop notification is requested on failure. With no desktop session, the private receipt and the systemd journal are the evidence to rely on.

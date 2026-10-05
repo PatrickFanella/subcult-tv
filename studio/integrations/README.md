@@ -2,12 +2,12 @@
 
 These integrations are maintained in the combined `subcult-tv/studio` source. The initial Gitea and service proxy packages were imported from Almaz's existing Studio checkout during the approved logo rollout. Their vendored Gitea and theme.park sources retain their licenses and provenance. Earlier verification documents describe the original deployment, not the replacement-logo rollout.
 
-The user approved B, C and D without registration lines. The production generator is `branding/library/subcult_assets.py`; `branding/library/brands/subcult/logo-selection.json` records the selection and source hashes. C is the primary mark, B is the outlined alternate and D is the compact mark. All have one continuous underscore path.
+The user approved B, C and D without registration lines. The production generator is `brand-tools/subcult_assets.py`; `brands/subcult/logo-selection.json` records the selection and source hashes. C is the primary mark, B is the outlined alternate and D is the compact mark. All have one continuous underscore path.
 
 Build the selected brand first, then the integrations:
 
 ```sh
-rtk proxy env BRAND_ONLY=subcult python studio/branding/library/build_packs.py
+rtk proxy env BRAND_ONLY=subcult python studio/brand-tools/build_packs.py
 rtk proxy python studio/integrations/gitea/build.py
 rtk proxy python studio/integrations/gitea/audit.py
 rtk proxy python studio/integrations/services/build.py

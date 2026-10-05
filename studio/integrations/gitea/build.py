@@ -12,10 +12,10 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-BRAND = ROOT / "branding/library/brands/subcult"
+BRAND = ROOT / "brands/subcult"
 CUSTOM = HERE / "custom"
 ASSETS = CUSTOM / "public/assets"
-sys.path.insert(0, str(ROOT / 'branding/library'))
+sys.path.insert(0, str(ROOT / 'brand-tools'))
 import subcult_assets
 
 

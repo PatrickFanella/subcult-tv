@@ -11,7 +11,7 @@ for entry in brand_manifest['assets']:
   source=ROOT.parent.parent/entry['source']
   assert hashlib.sha256(source.read_bytes()).hexdigest()==entry['sha256']
   shutil.copyfile(source,ASSETS/Path(entry['destination']).name)
-compact=ROOT.parent.parent/'branding/library/brands/subcult/logos/mark-compact-primary-outlined.svg'
+compact=ROOT.parent.parent/'brands/subcult/logos/mark-compact-primary-outlined.svg'
 shutil.copyfile(compact,ASSETS/'favicon.svg')
 # Flatten only the pinned, local upstream imports in the recorded order.
 for name in ['sonarr','radarr','lidarr','prowlarr','whisparr','bazarr','qbittorrent','authelia','uptime-kuma']:

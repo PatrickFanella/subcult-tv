@@ -19,7 +19,8 @@ import tempfile
 from PIL import Image
 
 HERE = Path(__file__).resolve().parent
-LIBRARY = HERE.parents[1]/'branding/library'
+LIBRARY = HERE.parents[1]/'brand-tools'
+BRANDS = HERE.parents[1]/'brands'
 WIDTH, HEIGHT = 1080, 1350
 MAX_BYTES = 900 << 10
 
@@ -69,7 +70,7 @@ def svg_colors(text, depth=0):
 
 def lockup(slug, bg):
     """Pick a lockup by measured contrast with the field; prefer colored over mono lockups."""
-    logos = LIBRARY/'brands'/slug/'logos'
+    logos = BRANDS/slug/'logos'
     scored = []
     for path in sorted(logos.glob('lockup-*-outlined.svg')) or sorted(logos.glob('lockup-*.svg')):
         fills = [f for f in svg_colors(path.read_text()) if f.lower() != bg.lower()]

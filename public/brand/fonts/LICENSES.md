@@ -19,5 +19,5 @@ variable Latin subsets. Their full SIL Open Font License texts are included as
 
 The Kork landing uses Archivo Black (`archivo-black-400.ttf`, Copyright 2017 The
 Archivo Black Project Authors), copied unchanged from the subcult-studio Kork
-brand pack (`branding/library/fonts/ArchivoBlack-Regular.ttf`). Its SIL
+brand pack (`brand-tools/fonts/ArchivoBlack-Regular.ttf`). Its SIL
 Open Font License text is `archivoblack-OFL.txt`.

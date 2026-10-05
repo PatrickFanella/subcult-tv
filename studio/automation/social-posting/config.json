@@ -87,7 +87,7 @@
       "organizing"
     ]
   },
-  "media_library": "media/library",
+  "media_library": "media",
   "editorial_guide": "content/social/Posting Best Practices.md",
   "channels": {
     "patrick": "6abdd7a8ea19ca0bde3dbbd3",
@@ -198,5 +198,6 @@
     }
   },
   "content_root": ".",
-  "social_folder": "content/social"
+  "social_folder": "content/social",
+  "drafts_folder": "content/social/drafts"
 }

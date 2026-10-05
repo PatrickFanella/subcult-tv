@@ -6,62 +6,62 @@
   "approval": "User approved the LF baseline/intersection revision on 2026-10-02",
   "files": [
     {
-      "source": "studio/branding/library/brands/left-field/logos/mark-primary-outlined.svg",
+      "source": "studio/brands/left-field/logos/mark-primary-outlined.svg",
       "target": "public/brand/left-field/mark.svg",
       "sha256": "90e94c7fea0a6b172e94de4851a798d7a0de450c935f772163a86691e21fe26c"
     },
     {
-      "source": "studio/branding/library/brands/left-field/product/hero-outlined.svg",
+      "source": "studio/brands/left-field/product/hero-outlined.svg",
       "target": "public/brand/left-field/hero.svg",
       "sha256": "13d31d414076649d755741c44d0626af1e4740fc03fefdb36427fc4182330a73"
     },
     {
-      "source": "studio/branding/library/brands/left-field/product/og.jpg",
+      "source": "studio/brands/left-field/product/og.jpg",
       "target": "public/og/left-field.jpg",
       "sha256": "d939eaf88a19181324069e507295fa0e6cd0e04973b0b56cb1542434108fed67"
     },
     {
-      "source": "studio/branding/library/brands/left-field/fonts/JetBrains-Mono-0.ttf",
+      "source": "studio/brands/left-field/fonts/JetBrains-Mono-0.ttf",
       "target": "public/brand/left-field/fonts/JetBrains-Mono-0.ttf",
       "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
     },
     {
-      "source": "studio/branding/library/brands/left-field/fonts/JetBrains-Mono-1.ttf",
+      "source": "studio/brands/left-field/fonts/JetBrains-Mono-1.ttf",
       "target": "public/brand/left-field/fonts/JetBrains-Mono-1.ttf",
       "sha256": "a1d92abc6b02a87faed23d98067ab1027e8e95242fd7c9978a072ea383b89d1a"
     },
     {
-      "source": "studio/branding/library/brands/left-field/fonts/Liberation-LICENSE.txt",
+      "source": "studio/brands/left-field/fonts/Liberation-LICENSE.txt",
       "target": "public/brand/left-field/fonts/Liberation-LICENSE.txt",
       "sha256": "93fed46019c38bbe566b479d22148e2e8a1e85ada614accb0211c37b2c61c19b"
     },
     {
-      "source": "studio/branding/library/brands/left-field/fonts/LiberationSerif-Bold.ttf",
+      "source": "studio/brands/left-field/fonts/LiberationSerif-Bold.ttf",
       "target": "public/brand/left-field/fonts/LiberationSerif-Bold.ttf",
       "sha256": "28f2d4300ee366d1ff9ca95df967a27e77987c87857fad0d9c85034405aae39d"
     },
     {
-      "source": "studio/branding/library/brands/left-field/fonts/LiberationSerif-Regular.ttf",
+      "source": "studio/brands/left-field/fonts/LiberationSerif-Regular.ttf",
       "target": "public/brand/left-field/fonts/LiberationSerif-Regular.ttf",
       "sha256": "86b9ea1c2f41bed9d7c09ccad4abc2894b33df5de60e5bbbece5d48610911870"
     },
     {
-      "source": "studio/branding/library/brands/left-field/fonts/Public-Sans-0.ttf",
+      "source": "studio/brands/left-field/fonts/Public-Sans-0.ttf",
       "target": "public/brand/left-field/fonts/Public-Sans-0.ttf",
       "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546"
     },
     {
-      "source": "studio/branding/library/brands/left-field/fonts/Public-Sans-1.ttf",
+      "source": "studio/brands/left-field/fonts/Public-Sans-1.ttf",
       "target": "public/brand/left-field/fonts/Public-Sans-1.ttf",
       "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a"
     },
     {
-      "source": "studio/branding/library/brands/left-field/fonts/jetbrainsmono-OFL.txt",
+      "source": "studio/brands/left-field/fonts/jetbrainsmono-OFL.txt",
       "target": "public/brand/left-field/fonts/jetbrainsmono-OFL.txt",
       "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
     },
     {
-      "source": "studio/branding/library/brands/left-field/fonts/publicsans-OFL.txt",
+      "source": "studio/brands/left-field/fonts/publicsans-OFL.txt",
       "target": "public/brand/left-field/fonts/publicsans-OFL.txt",
       "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac"
     }

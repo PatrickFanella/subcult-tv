@@ -242,7 +242,7 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
         previous = database.execute('SELECT status FROM runs WHERE mode=? AND week=? ORDER BY started DESC LIMIT 1', (mode, week)).fetchone()
         if previous and previous[0] == 'success' and not force:
             return {'status': 'already_complete', 'mode': mode, 'week': week}
-        vault = paths.root(cfg);folder = paths.social(cfg)
+        vault = paths.root(cfg);folder = paths.drafts(cfg)
         target = folder/(week+' Content Posts.md') if mode == 'plan' else folder/(week+' Publishing Review.md')
         if mode == 'review' and not (folder/(week+' Content Posts.md')).exists():
             return {'status': 'no_weekly_plan', 'mode': mode, 'week': week}

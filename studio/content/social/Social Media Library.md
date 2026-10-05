@@ -9,7 +9,7 @@ updated: 2026-10-03
 
 # Social media library
 
-A local library for the seven products and occasional Common House material, governed by [[Posting Best Practices]] and [[Social Posting Automation Plan]]. The authoritative catalog is `media/library/catalog.json` in Studio, with originals in `media/library/files/` and a generated offline gallery at `media/library/index.html`. In the vault the same folder appears beside this note as `Media Library/`, through a compatibility link. No paid storage service or image API key was added.
+A local library for the seven products and occasional Common House material, governed by [[Posting Best Practices]] and [[Social Posting Automation Plan]]. The authoritative catalog is `media/catalog.json` in Studio, with originals in `media/files/` and a generated offline gallery at `media/index.html`. In the vault the same folder appears beside this note as `Media Library/`, through a compatibility link. No paid storage service or image API key was added.
 
 ## First original assets
 
@@ -58,6 +58,6 @@ For the October 1–4 trial, attach concept art only when it helps explain the p
 
 ## Account branding
 
-[The October 1 branding pack](Branding/2026-10-01/README.md) contains the three applied Bluesky profile identities and reusable X assets. Profile avatars and banners stay out of the post-media catalog so the preparation runner does not pick them as ordinary attachments.
+[The October 1 branding pack](../../studies/archive/legacy-profiles-2026-10-01/README.md) contains the three applied Bluesky profile identities and reusable X assets. Profile avatars and banners stay out of the post-media catalog so the preparation runner does not pick them as ordinary attachments.
 
 Related: [[Bluesky Posting Plan]] for account identities and local draft variants, [[Social Media Production]] for captures, recording masters and short edits.

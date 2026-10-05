@@ -1,0 +1,123 @@
+{
+  "brand": "Backline",
+  "direction": "Poster Crew",
+  "source": "Studio brands/backline/build_assets.py and fonts/",
+  "selection": "Owner selected Poster Crew in this thread; assets prepared for review.",
+  "files": [
+    {
+      "path": "product/apple-touch-icon.png",
+      "sha256": "6ae6b5572197d325dee7ff49d515059e8d9a8ae72a54fe7dd83e6d42a6594ac5",
+      "bytes": 1175
+    },
+    {
+      "path": "product/apple-touch-icon.svg",
+      "sha256": "bf64c655a716f6b69ccf9b2c7db028f970bc3a82883ed9efc6967df08539578e",
+      "bytes": 491
+    },
+    {
+      "path": "product/avatar.png",
+      "sha256": "8950b673b1887bafca5e2ad3d2f9860224d9b69d8ccd83918405ff1f3c4ee1b0",
+      "bytes": 2791
+    },
+    {
+      "path": "product/avatar.svg",
+      "sha256": "bd4b146f91dc4dc52c2dc9931b8dc90b7240323efc6dc876c4e07342ff56be55",
+      "bytes": 491
+    },
+    {
+      "path": "product/favicon.svg",
+      "sha256": "76f67fd4907b68d322dc81b1d8adbbd86403ed5ff8ae2396c8efd1e1ee1c6da7",
+      "bytes": 494
+    },
+    {
+      "path": "product/fonts/JetBrains-Mono.woff2",
+      "sha256": "1c116ecdbf2367d757f972bf78baa1bbf36e20d369109a19206aed47597af7cd",
+      "bytes": 37924
+    },
+    {
+      "path": "product/fonts/Oswald.woff2",
+      "sha256": "e66f08638b356d9592af9e43f0c9ec07a9e1c53f08313f0ae5a176618fca2046",
+      "bytes": 33952
+    },
+    {
+      "path": "product/fonts/Space-Grotesk.woff2",
+      "sha256": "8e085aa438094f11487a836652edd5c054fa6a96f63fc7c282105ee3a4b08c07",
+      "bytes": 49256
+    },
+    {
+      "path": "product/fonts/jetbrainsmono-OFL.txt",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+      "bytes": 4399
+    },
+    {
+      "path": "product/fonts/oswald-OFL.txt",
+      "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652",
+      "bytes": 4483
+    },
+    {
+      "path": "product/fonts/spacegrotesk-OFL.txt",
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+      "bytes": 4495
+    },
+    {
+      "path": "product/lockup-light.svg",
+      "sha256": "b148e802d1b0ee5630cc9914bd33a36e57017458fafdeab5973b53cda0c26804",
+      "bytes": 2486
+    },
+    {
+      "path": "product/lockup.svg",
+      "sha256": "df29a17d77438afb44572df3299bf26ba4189bb6c46eae4ea0c2e423c59cf9a3",
+      "bytes": 2448
+    },
+    {
+      "path": "product/mark-light.svg",
+      "sha256": "b2a958bd6fd92c901085db2146fb9195c12f9f0b7061325a431ed7c75dab36ee",
+      "bytes": 478
+    },
+    {
+      "path": "product/mark.svg",
+      "sha256": "29bf6ce06154a5b7d65461c3d02a48dbe4e12ecf648bcc7b0564d7193141393c",
+      "bytes": 440
+    },
+    {
+      "path": "product/og.png",
+      "sha256": "d2a07eb17e86dd1696126b34301c28a53fb459db05ae4d1b50d9a11999323501",
+      "bytes": 32852
+    },
+    {
+      "path": "product/og.svg",
+      "sha256": "f228d6caa23f8579e78be86fa4887ced56ba4a0f27f9c9bdfe2413e9b20fe0ec",
+      "bytes": 19078
+    },
+    {
+      "path": "product/social-banner.png",
+      "sha256": "0a9140c756b0a51ab7b49345a86f6b52eff099bac97f3bb0b7655c82d66b3ca2",
+      "bytes": 24550
+    },
+    {
+      "path": "product/social-banner.svg",
+      "sha256": "b9ea16df85234cf6834da9d8cb1f21f83ed6a26514f4676b205da8c6ea47f982",
+      "bytes": 9765
+    },
+    {
+      "path": "product/social-square.png",
+      "sha256": "0a9de0611598225872984fcc448826b64c005a3b358ca2be46b69d8155eb85b9",
+      "bytes": 43830
+    },
+    {
+      "path": "product/social-square.svg",
+      "sha256": "d43b1e267b3c191b415a2e4a8d256fe4844774d7ee9a16ffdc10e2cdcf3d33b0",
+      "bytes": 18983
+    },
+    {
+      "path": "product/wordmark-light.svg",
+      "sha256": "da21796847b155f0e280ef2c9e6c241c58412394f9e8731ced7d163a0f03f75d",
+      "bytes": 2203
+    },
+    {
+      "path": "product/wordmark.svg",
+      "sha256": "875964d89c7651857cd9bcbac32725532a1a4c70a0ec59676507a0cf9f6f8f8f",
+      "bytes": 2185
+    }
+  ]
+}

@@ -1000,6 +1000,159 @@
         "studio/branding/library/brands/undertow/social/landscape-template.svg": "8bcc681b0b59ae6de612e60d4fb69c713cb9e9722d724228e8803c2508fb8dc0",
         "studio/branding/library/brands/undertow/social/story-template.svg": "3b6568ee5a40162de721e18948ab683c679279e647a1f504e3890ce08855f9c2"
       }
+    },
+    {
+      "date": "2026-10-05",
+      "reason": "Recorded while moving Studio folders. These SVGs were rewritten on main by generator runs that left the receipt unchanged, in commits ba32f43, ec73ac6, 2fbbd4c, 6a68dc0, a1fb0b9 (Subcult OS ticket-stub layer and SUBCULT logo legibility review). Their current bytes are identical on main and after the move. Baseline bytes remain recoverable from the baseline revision.",
+      "svg_sha256": {
+        "studio/branding/library/brands/subcult-os/pack-preview.svg": "dc8f321f25b87a224f43d671432d1d615af970d72959379ebbcb5dd2acc29e51",
+        "studio/branding/library/brands/subcult-os/product/og.svg": "48bff00e95d62882ed8ed2e7de86988f5de248833a03e904637dab60ec06bcad",
+        "studio/branding/library/brands/subcult-os/social/banner-tall-master.svg": "c245f870f494e3e41bda0e513eb863e72dd1a03907d6a0bbd504f70454c5c4d4",
+        "studio/branding/library/brands/subcult-os/social/banner-x-bluesky.svg": "b203e3f9bebb4845ccbefc9293def75c12210d7b929738338087ffdf6ba17342",
+        "studio/branding/library/brands/subcult-os/social/landscape-template.svg": "9dd2a965fb20a60db496c125bee2b5252a47762e86599fe51ab23176be12da8c",
+        "studio/branding/library/brands/subcult-os/social/quote-template.svg": "0f9c8eb5abb45c0a1523cf42f1a6cff6c69ac45d315726881029cd89944e4b13",
+        "studio/branding/library/brands/subcult-os/social/release-template.svg": "2dc2b419a129130660f7dadbca0387b4d603b78110586c8e6bfbf2851779aaa1",
+        "studio/branding/library/brands/subcult-os/social/screenshot-frame.svg": "4fe2e58237891e6e00a54c460716ef6fe2cd56ec1b8697edf866c2eed62c2209",
+        "studio/branding/library/brands/subcult-os/social/square-post.svg": "b55afa02aaf873677a3f3776233913583761290739afaccd7bedc30b80e68279",
+        "studio/branding/library/brands/subcult-os/social/story-template.svg": "8173fe5744a2612fa8ceadf2b42f740a7d46f5ae21244f0263870b1e5aa77876",
+        "studio/branding/library/brands/subcult-os/video/lower-third.svg": "48593078fcab8c00b6bab327c1c2fbe6a7f7a20c8709e7bec502f21e84f8dfbc",
+        "studio/branding/library/brands/subcult-os/video/thumbnail.svg": "0e4648123744b79d795c7bee01a946589a6332cfa26f0c156a7265abb14c86af",
+        "studio/branding/library/brands/subcult-os/video/title-card.svg": "54e09ccff4bce3f7f646d9bf89663ea12adcb8d89a135acb1fed852d996700d0",
+        "studio/branding/library/brands/subcult/logos/lockup-dark-outlined.svg": "0cb7717c669e292d58f57374e8d6e63b40e413005d56b73db8bf37638a810993",
+        "studio/branding/library/brands/subcult/logos/lockup-dark.svg": "1a827b92bec716c4efa04ab767556ffdd43f9921694cdc409c574aefd6814628",
+        "studio/branding/library/brands/subcult/logos/lockup-light-outlined.svg": "5ce6bd4944d5e99270d1e0d6fd11879ca2b3816c7664ad202195f0e9c1a2b1ed",
+        "studio/branding/library/brands/subcult/logos/lockup-light.svg": "298feff6afcadb77bf645b99d3d209f5bc240a52f6a5252ff69c3ad33cfaed52",
+        "studio/branding/library/brands/subcult/logos/lockup-mono-dark-outlined.svg": "50b4891fef433fe2fdefad154d9065ee4875bba7a147d6ad2bf57aa87ce63ac2",
+        "studio/branding/library/brands/subcult/logos/lockup-mono-dark.svg": "a1a4f7ba629595b4c39e4071c86581c1f2af1a48e3c33113a01cac6052e283ad",
+        "studio/branding/library/brands/subcult/logos/lockup-mono-light-outlined.svg": "4d6e0a19bb7b4fb6a6f624ce3653c9b293b0dee435dba28839ac47c06844e03b",
+        "studio/branding/library/brands/subcult/logos/lockup-mono-light.svg": "c8a7adb2375ab9c85189fbcca1db7ca370b401940cb2955396f89bbb8ba7bf0c",
+        "studio/branding/library/brands/subcult/logos/lockup-primary-outlined.svg": "6ff234f64a8241bfb6673b5015020370abfe831fff389e91e79e7bb7fbae4f2a",
+        "studio/branding/library/brands/subcult/logos/lockup-primary.svg": "1070a5dfcf03041ab526fbe2b33a9a7d78b3eb3148a88a427cfab879fdcca4a3",
+        "studio/branding/library/brands/subcult/logos/mark-dark-outlined.svg": "70685b0292b7b258d43a782f52444e9267e6978c78efac66367e6beb58f0ac10",
+        "studio/branding/library/brands/subcult/logos/mark-dark.svg": "70685b0292b7b258d43a782f52444e9267e6978c78efac66367e6beb58f0ac10",
+        "studio/branding/library/brands/subcult/logos/mark-light-outlined.svg": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222",
+        "studio/branding/library/brands/subcult/logos/mark-light.svg": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222",
+        "studio/branding/library/brands/subcult/logos/mark-mono-dark-outlined.svg": "e2005fa96e25f813915fb851bb663c1decae04ef5d8c99788131313f878d9c52",
+        "studio/branding/library/brands/subcult/logos/mark-mono-dark.svg": "e2005fa96e25f813915fb851bb663c1decae04ef5d8c99788131313f878d9c52",
+        "studio/branding/library/brands/subcult/logos/mark-mono-light-outlined.svg": "2a10aa4e64da069e3778f25f09c717443492f3fe248e4d976e2904a99e0584bc",
+        "studio/branding/library/brands/subcult/logos/mark-mono-light.svg": "2a10aa4e64da069e3778f25f09c717443492f3fe248e4d976e2904a99e0584bc",
+        "studio/branding/library/brands/subcult/logos/mark-primary-outlined.svg": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222",
+        "studio/branding/library/brands/subcult/logos/mark-primary.svg": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222",
+        "studio/branding/library/brands/subcult/logos/master.svg": "b6dd6fc7d48e21a8903682e8beca105a09d8c9b06ed96c04544fc544b085e222",
+        "studio/branding/library/brands/subcult/pack-preview.svg": "75daa002a71b62398b02738472668d72d4274d071b15c1105b52377e1638172b",
+        "studio/branding/library/brands/subcult/social/avatar.svg": "a466ca3c60da7ea682cc226d3e27f6adc04984c62d70a548af664db9b28c3f78",
+        "studio/branding/library/brands/subcult/social/banner-tall-master.svg": "cb0f456aea28f946e3edf383d3520206b0450bb7bf762bdd63c430152de503fa",
+        "studio/branding/library/brands/subcult/social/landscape-template.svg": "653fd07e85f55b333be48aabc8bb60dca117177212bb663a8204130780dfc053",
+        "studio/branding/library/brands/subcult/social/release-template.svg": "b04d3848778ad7d8778a82f6d2bf048727074793e38758324668569b74cedd6b",
+        "studio/branding/library/brands/subcult/social/story-template.svg": "b21c0d0392e8ee2d17fa211f774c554ef85cc0ee3e16b9fb7e020c9f4fa4f111",
+        "studio/branding/library/brands/subcult/video/end-card.svg": "623fecab4a184cca6e8a4005f8f1fea51fa4f42c933280061f89ae3d975c172e",
+        "studio/branding/library/brands/subcult/video/lower-third.svg": "e667b6cd0eebb9a02038ef8a0e14d0872b47f636d0e0e8e35b87d285a9c44c92",
+        "studio/branding/library/brands/subcult/video/thumbnail.svg": "c4d675e323f0cbf950aa82750cd9139068971f2d377a1dcb3f73aa2084f7a7f2",
+        "studio/branding/library/brands/subcult/video/title-card.svg": "ea81510095f6bc14738a71d910a1e416d8703fec281f33c928ee39a59976f1af"
+      }
+    }
+  ],
+  "relocations": [
+    {
+      "date": "2026-10-05",
+      "baseline": "a091c2fb1d4b451ceefbba99e06bb906b32e4f12",
+      "reason": "Brand packs moved to studio/brands, build tools to studio/brand-tools, studies and retired material to studio/studies, media to studio/media and runner drafts to content/social/drafts.",
+      "moves": [
+        [
+          "studio/branding/library/brands",
+          "studio/brands"
+        ],
+        [
+          "studio/branding/library/clpr_directions.py",
+          "studio/studies/clpr-directions/clpr_directions.py"
+        ],
+        [
+          "studio/branding/library/corkboard_directions.py",
+          "studio/studies/corkboard-directions/corkboard_directions.py"
+        ],
+        [
+          "studio/branding/library/clpr-directions",
+          "studio/studies/clpr-directions"
+        ],
+        [
+          "studio/branding/library/corkboard-directions",
+          "studio/studies/corkboard-directions"
+        ],
+        [
+          "studio/branding/library/patrick-logo-study",
+          "studio/studies/patrick-logo-study"
+        ],
+        [
+          "studio/branding/library/index.html",
+          "studio/brands/index.html"
+        ],
+        [
+          "studio/branding/library/asset-manifest.json",
+          "studio/asset-manifest.json"
+        ],
+        [
+          "studio/branding/library",
+          "studio/brand-tools"
+        ],
+        [
+          "studio/branding/patrick",
+          "studio/brand-tools/patrick"
+        ],
+        [
+          "studio/branding/archive",
+          "studio/studies/archive"
+        ],
+        [
+          "studio/branding/reviews",
+          "studio/studies/reviews"
+        ],
+        [
+          "studio/media/avatar-portraits-2026-10-04",
+          "studio/studies/avatar-portraits-2026-10-04"
+        ],
+        [
+          "studio/media/library",
+          "studio/media"
+        ],
+        [
+          "studio/content/social/Timely Drafts",
+          "studio/content/social/drafts/Timely Drafts"
+        ],
+        [
+          "studio/content/social/2026-W40 Bluesky Drafts.md",
+          "studio/content/social/drafts/2026-W40 Bluesky Drafts.md"
+        ],
+        [
+          "studio/content/social/2026-W40 Content Posts.md",
+          "studio/content/social/drafts/2026-W40 Content Posts.md"
+        ],
+        [
+          "studio/content/social/2026-W40 Social Trial.md",
+          "studio/content/social/drafts/2026-W40 Social Trial.md"
+        ],
+        [
+          "studio/content/social/2026-W41 Content Posts.md",
+          "studio/content/social/drafts/2026-W41 Content Posts.md"
+        ],
+        [
+          "studio/content/social/Kork Launch Drafts.md",
+          "studio/content/social/drafts/Kork Launch Drafts.md"
+        ],
+        [
+          "studio/content/social/LOW and Origami - Release posts.md",
+          "studio/content/social/drafts/LOW and Origami - Release posts.md"
+        ]
+      ],
+      "removed": [
+        {
+          "path": "studio/content/social/Branding",
+          "reason": "dangling compatibility symlink to the retired preview/legacy-branding folder"
+        },
+        {
+          "path": "studio/content/social/Media Library",
+          "reason": "compatibility symlink to studio/media"
+        }
+      ]
     }
   ]
 }

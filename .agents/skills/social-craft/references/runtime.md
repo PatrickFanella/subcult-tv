@@ -7,6 +7,7 @@ Check the live units and links before relying on this file. Studio is `~/Work/Su
   - `changemaker-instagram.timer` runs at 09:20 UTC and `changemaker-publications.timer` at 09:25 UTC. Both run from installed bundles, not the checkout.
   - `~/.local/share/posting-dashboard/changemaker` is a symlink to `releases/<sha>`, and `publications/studio` is an overlay.
   - To deploy, copy a release, swap the symlink and keep a dated directory under `recovery/`. A merged change is not live until it is deployed.
+  - `render.py` reads `studio/brand-tools/` (brands.json, fonts) and `studio/brands/<slug>/logos/`, so a release must include both. Releases cut before the October 5 layout carry `studio/branding/library/` instead.
   - `craft_publications` switches the staged website/Patreon edition on or off.
 - **X and Bluesky:**
   - `social-posting-plan` runs Monday at 10:00 Chicago, `-radar` at 08:45, 13:45 and 18:15, and `-review` Sunday at 16:00.

@@ -24,6 +24,10 @@ The current approval record identifies Patrick’s Patch direction; its supersed
 
 The preserved SVG hashes are a record of the baseline and are not edited. When a generator deliberately rewrites a preserved SVG, the receipt gains a dated `superseded` entry with the new hash, and `python3 studio/scripts/check_library.py --check-cleanup-originals` checks that hash for those paths. The first entry, dated October 3, 2026, lists 44 brand-pack SVGs re-rendered with new headlines. Their baseline bytes stay recoverable from the baseline revision.
 
-The primary checkouts and live timers were not changed. Their outstanding work and installed-consumer cutover are still covered by [repository consolidation](REPOSITORY-CONSOLIDATION.md). The October 6 publication hold is preserved in [the historical release record](history/RELEASE-2026-10-06.md).
+Installed consumers were retargeted to `subcult-tv/studio` on October 5, 2026; [repository consolidation](history/REPOSITORY-CONSOLIDATION.md) records how the import was done. The October 6 publication hold is preserved in [the historical release record](history/RELEASE-2026-10-06.md).
+
+## Studio layout, October 5, 2026
+
+Brand packs moved from `studio/branding/library/brands/` to `studio/brands/`, and their generators, fonts and masters to `studio/brand-tools/` (Patrick's source to `studio/brand-tools/patrick/`). Direction studies, logo reviews, portrait experiments and the retired archive moved to `studio/studies/`, the media library to `studio/media/`, and runner drafts to `studio/content/social/drafts/`. The library-wide manifest is now `studio/asset-manifest.json`, with Studio-relative paths. Two compatibility symlinks in `content/social/` were removed. The receipt's `relocations` entry lists every move, and `check_library.py --check-cleanup-originals` follows it, so the baseline SVG map stays unedited. Moved files kept their bytes except for relative links, path strings and the manifest hashes those edits required. No SVG changed.
 
 Local checks, hosted CI, rendered UI, deployment and a natural scheduled run are separate kinds of evidence; one does not stand in for another. Put validation results in the PR with the exact revision checked.

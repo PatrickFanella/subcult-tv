@@ -1,0 +1,34 @@
+{
+  "observed_at": "2026-10-02",
+  "url": "https://patrickfanella.co/",
+  "title": "Patrick Fanella | Senior Full-Stack and Backend Engineer",
+  "method": "T3 browser screenshot, visible page text, computed styles and same-origin CSS rules",
+  "stylesheet": "https://patrickfanella.co/assets/index-w6s-Plbz.css",
+  "observed_colors": [
+    "#282a36",
+    "#21222c",
+    "#44475a",
+    "#d7d7eb",
+    "#a5a6b5",
+    "#f8f8f2",
+    "#805bca",
+    "#50fa7b",
+    "#bd93f9",
+    "#ff79c6",
+    "#ffb86c"
+  ],
+  "observed_fonts": {
+    "display": "Space Grotesk Variable",
+    "body": "Inter Variable",
+    "labels": "JetBrains Mono Variable"
+  },
+  "observed_structure": "Color-separated large headline, mono section labels, outlined square controls, case-study cards and dark surfaces",
+  "derived_rules": "Core colors, sans-serif display/body hierarchy, mono metadata, flat type and square editorial framing",
+  "new_artwork": "Original routing paths with connector ports; decorative spectrum bars; new compositions and review interface",
+  "existing_master": "brand-tools/references/patrick-variations/mono-outlined.svg",
+  "preservation": "Original files unchanged; alternate mark changes colors only",
+  "font_boundary": "Included Inter file comes from pinned licensed upstream source, not a verified copy of the deployed site font binary",
+  "publication": "Selected Studio production pack replaced; live website and social profiles unchanged",
+  "selection": "Patch selected by the owner October 2, 2026",
+  "identity_line": "Software. Sound. Culture.; equal phrase sizes"
+}

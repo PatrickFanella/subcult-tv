@@ -1,6 +1,6 @@
 # Assets and generated artifacts
 
-`studio/branding/library/` owns production packs, generators and editable source references. `studio/branding/patrick/` owns Patrick’s selected design system and approved waveform treatments; its production copies are exported into the library. Owner-authored SVG masters retain their geometry and layer order.
+`studio/brands/` holds the production pack for each brand. `studio/brand-tools/` owns the generators, shared fonts and editable source references that build them. `studio/brand-tools/patrick/` owns Patrick’s selected design system and approved waveform treatments; its production copies are exported into `studio/brands/patrick__eff/`. Owner-authored SVG masters retain their geometry and layer order.
 
 ## What stays in Git
 
@@ -26,6 +26,6 @@ Run generators with `BRAND_ONLY=<slug>` where supported. Update the affected aut
 
 ## Historical sources and recovery
 
-Retired design systems, reviews and original artwork are grouped under `studio/branding/archive/`; they are excluded from production exports. Earlier profile renders and obsolete study generators were removed after caller inspection. Original SVGs remain. The [cleanup receipt](cleanup-receipt.json) records the pre-cleanup revision, moves, removed-file hashes and retained SVG hashes.
+Direction studies and logo reviews live in `studio/studies/`; retired design systems and original artwork are in `studio/studies/archive/`. None of them is a production export. Earlier profile renders and obsolete study generators were removed after caller inspection. Original SVGs remain. The [cleanup receipt](cleanup-receipt.json) records the pre-cleanup revision, moves, removed-file hashes and retained SVG hashes.
 
 Studio’s original import receipt is immutable under `studio/docs/history/`. `make check-import` verifies its tracked blob/LFS identities against the original import commit, not against renamed or intentionally edited current files. Git history also retains deleted artifacts if a specific original needs recovery. Do not restore an entire old tree over current sources.

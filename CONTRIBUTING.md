@@ -14,7 +14,7 @@ rtk proxy make test
 rtk proxy make build
 ```
 
-Go database integration requires a disposable `TEST_DATABASE_URL`; hosted CI supplies one. Studio preparation tests create disposable state and do not run jobs against installed schedules. `make -C studio check-cutover` is a host-specific activation check, not a portable test.
+Go database integration requires a disposable `TEST_DATABASE_URL`; hosted CI supplies one. Studio preparation tests create disposable state and do not run jobs against installed schedules.
 
 ## Source changes
 
@@ -22,7 +22,7 @@ Edit branding masters and their generators together. Render only affected brands
 
 Public assets need an explicit exporter selection. Never place Studio drafts, account configuration or private browsing bundles under `public/` or `dist/`. Runtime state and credentials stay outside Git.
 
-Keep generated archives, caches and build output in their documented ignored directories. Retired source studies belong under `studio/branding/archive/`; remove obsolete generated previews and unused code after checking their consumers. Do not rewrite historical import receipts to make current source checks pass.
+Keep generated archives, caches and build output in their documented ignored directories. Studies and reviews belong under `studio/studies/`, retired sources under `studio/studies/archive/`; remove obsolete generated previews and unused code after checking their consumers. Do not rewrite historical import receipts to make current source checks pass.
 
 ## Review
 

@@ -116,13 +116,13 @@ def execute(cfg):
             directory = state/'runs'/run_id;directory.mkdir(mode=0o700)
             claims = runner.paths.social(cfg)/'Product Claims Register.md'
             week = now.astimezone(ZoneInfo(cfg['timezone'])).strftime('%G-W%V')
-            weekly = runner.paths.social(cfg)/(week+' Content Posts.md')
+            weekly = runner.paths.drafts(cfg)/(week+' Content Posts.md')
             context['media_library'] = runner.media.context(cfg)
             context['posting_guidance'] = (runner.paths.root(cfg)/cfg['editorial_guide']).read_text()
             context['claims_register'] = claims.read_text()
             context['editorial_style'] = (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()
             context['weekly_plan'] = weekly.read_text() if weekly.exists() else 'No current-week plan.'
-            timely_folder = runner.paths.social(cfg)/'Timely Drafts'
+            timely_folder = runner.paths.drafts(cfg)/'Timely Drafts'
             context['recent_timely_notes'] = {p.name:p.read_text()[:6000]
                 for p in sorted(timely_folder.glob('*.md'))[-12:]}
             context['prepared_slots'] = [{'account':account,'due_at':due}
@@ -165,7 +165,7 @@ def execute(cfg):
                 runner.media.validate_choice(draft.get('media'), catalog, draft['account'])
             runner.media.save_requests(directory, result)
             runner.bluesky.save(directory, result, cfg)
-            folder=runner.paths.social(cfg)/'Timely Drafts'
+            folder=runner.paths.drafts(cfg)/'Timely Drafts'
             target=folder/(now.astimezone(ZoneInfo(cfg['timezone'])).strftime('%Y-%m-%d %H-%M-%S')+' '+run_id+' Timely Drafts.md')
             lines=['---','type: work','status: active','stage: draft','---','', '# Timely drafts', '',
                 '[[Timely Posting Plan]] · [[Social Posts Workbench]]','',

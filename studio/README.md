@@ -6,15 +6,16 @@ Studio is the private production area of the combined `subcult-tv` repository. I
 
 | Directory | Contents |
 | --- | --- |
-| [Brand library](branding/library/README.md) | Thirteen current brand packs, editable masters, generators, bundled fonts and licenses |
-| [Patrick source](branding/patrick/README.md) | Selected Patch design system, generator and seven approved waveform treatments |
-| `media/library/` | Original captures, generated artwork, edits, recipes and hash-bound catalog |
+| [Brands](brands/README.md) | One production pack per brand: guide, tokens, logos, layouts, fonts and manifest |
+| [Brand tools](brand-tools/README.md) | Pack generators, shared fonts, editable masters and the starter kit |
+| [Patrick source](brand-tools/patrick/README.md) | Selected Patch design system, generator and seven approved waveform treatments |
+| `media/` | Original captures, generated artwork, edits, recipes and hash-bound catalog |
 | [Design references](references/USAGE.md) | Curated observations and 590 searchable reference records |
 | [Voice guide](content/VOICE.md) | How each product and account sounds in public copy |
-| `content/social/` | Guidance, claims, plans, source watchlists and prepared drafts |
+| `content/social/` | Guidance, claims, plans, research and source watchlists; prepared drafts in `drafts/` |
 | `content/patreon/` | Patreon plans, release material and artwork |
 | `automation/social-posting/` | Preparation jobs, configuration and unit sources |
-| [Retired sources](branding/archive/README.md) | Earlier studies and preserved original artwork |
+| `studies/` | Direction studies, logo reviews and portrait experiments; [retired sources](studies/archive/README.md) in `archive/` |
 
 Production generators and user-edited SVG references are authoritative. Per-brand fonts and exported Patrick copies look like duplicates but are deliberate: each pack has to stand alone. Media and references keep their recorded rights and inspection limits.
 
@@ -28,7 +29,7 @@ rtk proxy make studio-package
 
 The local source preview binds to `127.0.0.1:18770`. Download archives are generated under ignored `studio/runtime/packages/`. Private API bundles are generated under `studio/runtime/studio/`, outside the public build.
 
-For a targeted brand rebuild, run from `studio/branding/library/` with `BRAND_ONLY=<slug>`. Follow that brand’s guide for additional product-asset or finalization steps. Update source and derived output together; preserve unrelated masters. See [the shared asset policy](../docs/ASSETS.md).
+For a targeted brand rebuild, run from `studio/brand-tools/` with `BRAND_ONLY=<slug>`. Follow that brand’s guide for additional product-asset or finalization steps. Update source and derived output together; preserve unrelated masters. See [the shared asset policy](../docs/ASSETS.md).
 
 ## Exports and admin
 
@@ -44,6 +45,6 @@ An optional `--posting-state /absolute/private/social-posting-state` reads compl
 
 ## Installed consumers and history
 
-Installed preparation jobs and compatibility links still use the original Studio checkout until the [consolidation activation](../docs/REPOSITORY-CONSOLIDATION.md) is completed. State, locks, receipts and provider credentials remain outside Git, with publication disabled.
+The X/Bluesky preparation units run from this directory; the Instagram and website/Patreon jobs run from release bundles copied from it. State, locks, receipts and provider credentials stay outside Git, with publication disabled.
 
 `docs/history/` preserves original import/cutover receipts and dated review records. `make check-import` from the repository root verifies the immutable original import against retained Git blobs/LFS identities. It does not require current edited sources to match their old hashes.
