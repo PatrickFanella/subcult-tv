@@ -558,6 +558,31 @@ export interface PostingDashboard {
 }
 export const getPostingDashboard = () => apiFetch<PostingDashboard>('/api/v1/admin/studio/posting');
 
+// Prepared review JPEGs are private and immutable by hash; keep a small
+// per-session cache so rows and the review sheet share one download.
+const preparedCache = new Map<string, Promise<Blob>>();
+let preparedSession: string | null = null;
+export function getPreparedMedia(sha256: string): Promise<Blob> {
+  const session = getToken();
+  if (session !== preparedSession) {
+    preparedCache.clear();
+    preparedSession = session;
+  }
+  const cached = preparedCache.get(sha256);
+  if (cached) return cached;
+  const request = fetch(
+    `${API_BASE}/api/v1/admin/studio/posting-media/${encodeURIComponent(sha256)}`,
+    { headers: session ? { Authorization: `Bearer ${session}` } : {} },
+  ).then((response) => {
+    if (!response.ok) throw new APIError('Prepared image unavailable', response.status);
+    return response.blob();
+  });
+  request.catch(() => preparedCache.delete(sha256));
+  if (preparedCache.size >= 40) preparedCache.delete(preparedCache.keys().next().value!);
+  preparedCache.set(sha256, request);
+  return request;
+}
+
 export interface SocialAccount {
   id: string;
   name: string;

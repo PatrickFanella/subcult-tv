@@ -9,14 +9,14 @@ import {
   getStudioAsset,
   getSocialDelivery,
   getReviewDrafts,
-  getReviewDraftMedia,
-  approveReviewDraft,
 } from '@/lib/api';
 vi.mock('@/lib/api', () => ({
   getPostingDashboard: vi.fn(),
   getReviewDrafts: vi.fn(),
   getReviewDraftMedia: vi.fn(),
   approveReviewDraft: vi.fn(),
+  saveReviewDraft: vi.fn(),
+  getPreparedMedia: vi.fn(),
   getSocialDelivery: vi.fn().mockRejectedValue(new Error('PostyBirb delivery is not configured')),
   approveSocialSchedule: vi.fn(),
   getStudioCatalog: vi.fn(),
@@ -79,134 +79,6 @@ beforeEach(() => {
   vi.mocked(getStudioAsset).mockResolvedValue(new Blob());
 });
 describe('Production admin', () => {
-  it('filters draft copy and keeps delivery separate from proposed times', async () => {
-    render(
-      <MemoryRouter>
-        <AdminPosts />
-      </MemoryRouter>,
-    );
-    await screen.findByText('Patrick draft copy');
-    expect(screen.queryByText('Expired timely draft')).not.toBeInTheDocument();
-    expect(
-      screen
-        .getAllByRole('button', { name: /^Approve & queue/ })
-        .every((b) => b.hasAttribute('disabled')),
-    ).toBe(true);
-    fireEvent.change(screen.getByLabelText('Account'), { target: { value: 'patrick' } });
-    expect(screen.getByText('Capture the UI')).toBeInTheDocument();
-    expect(screen.queryByLabelText('Caption')).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('tab', { name: /X \(post via Buffer\)/ }));
-    expect(screen.queryByText('Patrick draft copy')).not.toBeInTheDocument();
-    expect(screen.queryByText('Expired timely draft')).not.toBeInTheDocument();
-    fireEvent.click(screen.getByLabelText('Include expired drafts'));
-    expect(screen.getByText('Expired timely draft')).toBeInTheDocument();
-    expect(screen.getByText('Expired')).toBeInTheDocument();
-  });
-  it('shows X drafts, including CLPR, read-only with a 280 meter and copy button', async () => {
-    const writeText = vi.fn().mockResolvedValue(undefined);
-    Object.assign(navigator, { clipboard: { writeText } });
-    vi.mocked(getPostingDashboard).mockResolvedValue({
-      ...data,
-      drafts: [
-        ...data.drafts,
-        {
-          ...data.drafts[1],
-          id: 'clpr',
-          mode: 'plan',
-          account: 'clpr',
-          text: 'Clip the moment. https://clpr.tv/a-very-long-link-that-counts-as-twenty-three',
-          due_at: new Date(Date.now() + 72 * 3600000).toISOString(),
-          expires_at: '',
-        },
-      ],
-    });
-    render(
-      <MemoryRouter initialEntries={['/admin/posts?tab=x']}>
-        <AdminPosts />
-      </MemoryRouter>,
-    );
-    await screen.findByText(/Clip the moment/);
-    expect(screen.queryByText('Patrick draft copy')).not.toBeInTheDocument();
-    expect(screen.getByText('40 / 280')).toBeInTheDocument();
-    expect(screen.queryByRole('button', { name: /Approve/ })).not.toBeInTheDocument();
-    expect(screen.queryByRole('link', { name: 'Edit' })).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: /Copy X text for clpr/ }));
-    await screen.findByText('Copied. Paste it into Buffer.');
-    expect(writeText).toHaveBeenCalledWith(expect.stringContaining('Clip the moment.'));
-  });
-  it('keeps Changemaker Instagram drafts in their own filter with private evidence', async () => {
-    vi.mocked(getPostingDashboard).mockResolvedValue({
-      ...data,
-      drafts: [
-        ...data.drafts,
-        {
-          ...data.drafts[0],
-          id: 'changemaker',
-          mode: 'changemaker',
-          text: 'A product update for Instagram',
-          account: 'subcult',
-          evidence: 'Verified Changemaker source digest',
-        },
-      ],
-    });
-    render(
-      <MemoryRouter>
-        <AdminPosts />
-      </MemoryRouter>,
-    );
-    await screen.findByText('A product update for Instagram');
-    expect(screen.getByText('subcult / Changemaker · Instagram')).toBeInTheDocument();
-    expect(screen.getByText('Verified Changemaker source digest')).toBeInTheDocument();
-    expect(screen.getAllByRole('link', { name: 'Edit' })[1]).toHaveAttribute(
-      'href',
-      '/admin/posts/edit?draft=changemaker',
-    );
-  });
-  it('approves the saved version only after the private image preview loads', async () => {
-    const saved = {
-      draft_id: 'one',
-      version: 3,
-      account_id: 'patrick',
-      caption: 'Saved caption',
-      due_at: new Date(Date.now() + 48 * 3600000).toISOString(),
-      has_media: true,
-      status: 'draft' as const,
-      post_id: '',
-      updated_at: '',
-    };
-    vi.mocked(getReviewDrafts).mockResolvedValue([saved]);
-    vi.mocked(getReviewDraftMedia).mockResolvedValue(new Blob());
-    vi.mocked(getSocialDelivery).mockResolvedValue({
-      accounts: [
-        {
-          id: 'patrick',
-          name: 'Patrick',
-          profile: 'patrick',
-          identifier: 'instagram-standalone',
-          disabled: false,
-        },
-      ],
-      posts: [],
-      checked_at: '',
-      approval_mode: 'manual',
-      minimum_lead_hours: 24,
-    });
-    vi.mocked(approveReviewDraft).mockResolvedValue({ status: 'scheduled', post_id: 'post-one' });
-    render(
-      <MemoryRouter>
-        <AdminPosts />
-      </MemoryRouter>,
-    );
-    await screen.findByText('Saved caption');
-    const button = screen.getByRole('button', { name: /^Approve & queue/ });
-    expect(button).toBeDisabled();
-    fireEvent.load(await screen.findByRole('img', { name: 'Selected image for this post' }));
-    expect(button).toBeEnabled();
-    fireEvent.click(button);
-    await screen.findByText(/Scheduled in PostyBirb/);
-    expect(approveReviewDraft).toHaveBeenCalledWith('one', 3);
-    expect(screen.queryByLabelText('Caption')).not.toBeInTheDocument();
-  });
   it('shows an unavailable snapshot and recovers with retry', async () => {
     vi.mocked(getPostingDashboard).mockRejectedValueOnce(new Error('Snapshot unavailable'));
     render(

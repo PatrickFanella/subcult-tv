@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Bookmark, Heart, MessageCircle, MoreHorizontal, Send } from 'lucide-react';
 import { getReviewDraftMedia } from '@/lib/api';
+import { INSTAGRAM_FOLD } from '@/lib/review-queue';
 
 export default function PostPreview({
   account,
@@ -9,6 +10,8 @@ export default function PostPreview({
   draftID,
   version,
   hasMedia,
+  altText,
+  showFold,
   onMediaReady,
 }: {
   account: string;
@@ -17,6 +20,9 @@ export default function PostPreview({
   draftID?: string;
   version?: number;
   hasMedia?: boolean;
+  altText?: string;
+  /** Mark where Instagram's feed truncates the caption with "more". */
+  showFold?: boolean;
   onMediaReady?: (ready: boolean) => void;
 }) {
   const [savedImage, setSavedImage] = useState({ url: '', identity: '' });
@@ -62,12 +68,12 @@ export default function PostPreview({
             onMediaReady?.(false);
             setError('Image preview unavailable. Refresh before approving.');
           }}
-          alt="Selected image for this post"
+          alt={altText || 'Selected image for this post'}
         />
       ) : (
         <div className="instagram-preview-placeholder">
           <span>{error || (hasMedia ? 'Loading selected image…' : 'Image needed')}</span>
-          {!hasMedia && <small>Use Edit to select the image.</small>}
+          {!hasMedia && <small>Choose or upload a JPEG.</small>}
         </div>
       )}
       <div className="instagram-preview-actions" aria-hidden="true">
@@ -77,7 +83,20 @@ export default function PostPreview({
         <Bookmark />
       </div>
       <p className="instagram-preview-caption">
-        <strong>{account}</strong> {caption}
+        <strong>{account}</strong>{' '}
+        {showFold && [...caption].length > INSTAGRAM_FOLD ? (
+          <>
+            {[...caption].slice(0, INSTAGRAM_FOLD).join('')}
+            <span className="instagram-fold" role="note">
+              … more · feed fold
+            </span>
+            <span className="instagram-below-fold">
+              {[...caption].slice(INSTAGRAM_FOLD).join('')}
+            </span>
+          </>
+        ) : (
+          caption
+        )}
       </p>
     </div>
   );

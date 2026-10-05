@@ -1,12 +1,18 @@
 package handlers
 
 import (
+	"bytes"
+	"crypto/sha256"
+	"encoding/hex"
 	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
 	"os"
 	"time"
+
+	"github.com/go-chi/chi/v5"
+	"github.com/subculture-collective/subcult-tv/api/internal/middleware"
 )
 
 type postingRun struct {
@@ -168,4 +174,71 @@ func (h *Handler) PostingDashboard(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	writeJSON(w, 200, data)
+}
+
+// PostingPreparedMedia serves one prepared review JPEG by SHA-256 to the owner.
+// The path is derived from the hash alone, the hash must be referenced by a
+// current Instagram draft, and the bytes must still match it. Never public.
+func (h *Handler) PostingPreparedMedia(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Cache-Control", "private, no-store")
+	if r.Context().Value(middleware.RoleKey) != "admin" {
+		writeError(w, 403, "Admin access required")
+		return
+	}
+	id := chi.URLParam(r, "sha256")
+	if !studioID.MatchString(id) {
+		http.NotFound(w, r)
+		return
+	}
+	data, err := h.loadPosting()
+	if err != nil {
+		writeError(w, 503, err.Error())
+		return
+	}
+	referenced := false
+	now := time.Now()
+	for _, d := range data.Drafts {
+		if d.Platform != "instagram" || d.expired(now) {
+			continue
+		}
+		if d.Media.Image != nil && d.Media.Image.SHA256 == id {
+			referenced = true
+		}
+		for _, c := range d.Media.Candidates {
+			if c.SHA256 == id {
+				referenced = true
+			}
+		}
+	}
+	if !referenced {
+		http.NotFound(w, r)
+		return
+	}
+	root, err := os.OpenRoot(h.StudioRoot)
+	if err != nil {
+		http.NotFound(w, r)
+		return
+	}
+	defer root.Close()
+	name := "posting-media/" + id + ".jpg"
+	info, err := root.Lstat(name)
+	if err != nil || !info.Mode().IsRegular() || info.Size() > 900<<10 {
+		http.NotFound(w, r)
+		return
+	}
+	file, err := root.Open(name)
+	if err != nil {
+		http.NotFound(w, r)
+		return
+	}
+	defer file.Close()
+	media, err := io.ReadAll(io.LimitReader(file, (900<<10)+1))
+	sum := sha256.Sum256(media)
+	if err != nil || len(media) > 900<<10 || hex.EncodeToString(sum[:]) != id || !bytes.HasPrefix(media, []byte{0xff, 0xd8, 0xff}) {
+		http.NotFound(w, r)
+		return
+	}
+	w.Header().Set("Content-Type", "image/jpeg")
+	w.Header().Set("X-Content-Type-Options", "nosniff")
+	http.ServeContent(w, r, "prepared.jpg", time.Time{}, bytes.NewReader(media))
 }

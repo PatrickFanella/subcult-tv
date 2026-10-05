@@ -400,14 +400,71 @@
     width: 100%;
     border-right: 0;
   }
-  .admin-sidebar nav {
+  /* Phone-first: navigation becomes one scrollable row so work shows on the first screen. */
+  .admin-shell .admin-sidebar nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .admin-shell .admin-sidebar nav > a {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0.55rem 0.7rem;
+  }
+  .admin-shell .admin-sidebar-header {
+    padding: 0.5rem 1rem;
+  }
+  .admin-shell .admin-sidebar-header > .admin-sidebar-label {
+    display: none;
+  }
+  .admin-shell .subcult-nav-mark {
+    width: 2rem;
+    height: 2rem;
+  }
+  .admin-shell .admin-sidebar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.35rem 1rem;
+  }
+  .admin-shell .admin-sidebar-footer > .admin-sidebar-label {
+    margin: 0;
+  }
+  .admin-shell .admin-sidebar-footer button {
+    width: auto;
+  }
+  .admin-shell main > div {
+    padding: 1rem;
   }
   .admin-shell .production-heading {
     flex-direction: column;
     align-items: start;
     padding: 1.5rem;
+  }
+  .admin-shell .posting-page .production-heading {
+    padding: 0.6rem 1rem;
+    border-bottom-width: 4px;
+    margin-bottom: 0.75rem;
+  }
+  .admin-shell .posting-page .production-heading h1 {
+    font-size: 1.75rem;
+    margin: 0.15rem 0 0;
+  }
+  .admin-shell .posting-page .production-heading .studio-label {
+    font-size: 0.65rem;
+  }
+  .posting-navigation {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .posting-navigation a {
+    flex-shrink: 0;
+    white-space: nowrap;
   }
   .studio-brand-title {
     flex-wrap: wrap;
