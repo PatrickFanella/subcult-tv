@@ -1,6 +1,6 @@
 # Changemaker Instagram drafts
 
-Changemaker supplies collected repository evidence for Instagram captions in the authenticated Posts dashboard. It prepares drafts for `subcult.tv` and `patrick__eff`; the owner reviews the caption, account, JPEG and publish time before submitting through Postiz. Buffer's Twitter/X connections are preserved and are not used by this importer.
+Changemaker supplies collected repository evidence for Instagram captions in the authenticated Posts dashboard. It prepares drafts for `subcult.tv` and `patrick__eff`; the owner reviews the caption, account, JPEG and publish time before submitting through PostyBirb. Buffer's Twitter/X connections are preserved and are not used by this importer.
 
 The importer reads the latest recent successful Changemaker review using the existing read credential. It verifies the draft and evidence hashes, requires complete source collection, and supplies merged pull requests plus Studio's claims register and voice guide to a tool-free caption generator. A merged pull request is evidence of source work, not deployment. Captions must describe maturity accurately. Private source URLs appear only in the authenticated evidence panel. Model-generated claims still need human review.
 

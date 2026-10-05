@@ -17,7 +17,7 @@ vi.mock('@/lib/api', () => ({
   getReviewDrafts: vi.fn(),
   getReviewDraftMedia: vi.fn(),
   approveReviewDraft: vi.fn(),
-  getSocialDelivery: vi.fn().mockRejectedValue(new Error('Postiz delivery is not configured')),
+  getSocialDelivery: vi.fn().mockRejectedValue(new Error('PostyBirb delivery is not configured')),
   approveSocialSchedule: vi.fn(),
   getStudioCatalog: vi.fn(),
   getStudioAsset: vi.fn(),
@@ -73,7 +73,7 @@ beforeEach(() => {
   vi.resetAllMocks();
   vi.mocked(getPostingDashboard).mockResolvedValue(data);
   vi.mocked(getReviewDrafts).mockResolvedValue([]);
-  vi.mocked(getSocialDelivery).mockRejectedValue(new Error('Postiz delivery is not configured'));
+  vi.mocked(getSocialDelivery).mockRejectedValue(new Error('PostyBirb delivery is not configured'));
   URL.createObjectURL = vi.fn(() => 'blob:test');
   URL.revokeObjectURL = vi.fn();
   vi.mocked(getStudioAsset).mockResolvedValue(new Blob());
@@ -176,7 +176,7 @@ describe('Production admin', () => {
     fireEvent.load(await screen.findByRole('img', { name: 'Selected image for this post' }));
     expect(button).toBeEnabled();
     fireEvent.click(button);
-    await screen.findByText(/Scheduled in Postiz/);
+    await screen.findByText(/Scheduled in PostyBirb/);
     expect(approveReviewDraft).toHaveBeenCalledWith('one', 3);
     expect(screen.queryByLabelText('Caption')).not.toBeInTheDocument();
   });

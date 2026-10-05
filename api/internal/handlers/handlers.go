@@ -12,7 +12,7 @@ import (
 
 	"github.com/subculture-collective/subcult-tv/api/internal/brevo"
 	"github.com/subculture-collective/subcult-tv/api/internal/patreon"
-	"github.com/subculture-collective/subcult-tv/api/internal/postiz"
+
 	"github.com/subculture-collective/subcult-tv/api/internal/postybirb"
 )
 
@@ -36,8 +36,8 @@ type Handler struct {
 	PostingPreparationKey     string
 	PatreonPosting            *postybirb.Client
 	PatreonSchedulingVerified bool
-	Postiz                    *postiz.Client
-	PostizAccounts            []string
+	SocialPosting             *postybirb.Client
+	SocialAccounts            []string
 	PostingMediaBaseURL       string
 	BrevoWebhookSecret        string
 	BrevoNewsletterListID     int64

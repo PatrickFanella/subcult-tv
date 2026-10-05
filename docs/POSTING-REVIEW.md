@@ -2,7 +2,7 @@
 
 The admin Posts area separates Instagram review, delivery evidence, website entries, Patreon editions and preparation jobs. All new drafts require manual approval. Saving an edit does not approve or dispatch it. Approval submits the saved version; stale edits and approvals return a conflict.
 
-Instagram drafts need an enabled configured Postiz account, a JPEG preview and a publication time between 24 hours and 90 days ahead. The two account IDs remain configured through `POSTIZ_ACCOUNT_IDS`. Images saved during editing stay behind admin authentication. Only an explicitly approved delivery image receives a public media URL. A pending or uncertain submission cannot be sent again with the same approval.
+Instagram drafts need an enabled configured PostyBirb account, a JPEG preview and a publication time between 24 hours and 90 days ahead. Account UUIDs are configured through `POSTYBIRB_INSTAGRAM_ACCOUNT_IDS`. Images saved during editing stay behind admin authentication. Approval uploads the selected JPEG privately to PostyBirb before enabling its scheduler. A pending or uncertain submission cannot be sent again with the same approval.
 
 Website entries use `/development` and `/development/:slug`. Daily imports create unpublished articles. Approval records the owner and time; public API queries expose the entry only when that approved time arrives. Unapproved articles cannot be fetched through the public list or slug routes. Private source evidence is available only in the admin review response. The authenticated general article list is `/api/v1/admin/posts`.
 

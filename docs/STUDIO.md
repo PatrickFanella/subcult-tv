@@ -41,20 +41,20 @@ The reference browser shows 24 records per page with previous/next controls and 
 
 ## Posting and source authority
 
-The operations view keeps the prepared queue separate from live Postiz scheduling and delivery. Prepared copy remains unapproved. Review for Instagram copies a draft into the composer; the owner selects an account, JPEG, caption and time, then approves that exact post. Scheduling requires an admin session and at least 24 hours of lead time, with a maximum of 90 days. Site article CRUD remains separate.
+The operations view keeps the prepared queue separate from live PostyBirb scheduling and delivery. Prepared copy remains unapproved. Review for Instagram copies a draft into the composer; the owner selects an account, JPEG, caption and time, then approves that exact post. Scheduling requires an admin session and at least 24 hours of lead time, with a maximum of 90 days. Site article CRUD remains separate.
 
 Configure these server-only variables to enable the connection:
 
 ```dotenv
-POSTIZ_API_URL=http://10.0.0.56:4007/api/public/v1
-POSTIZ_API_KEY=<private organization API key>
-POSTIZ_ACCOUNT_IDS=<Patrick integration ID>,<SUBCULT integration ID>
-POSTING_MEDIA_BASE_URL=https://subcult.tv
+POSTYBIRB_API_URL=https://subcult-patreon-postybirb:4008/api
+POSTYBIRB_REMOTE_PASSWORD=<private remote password>
+POSTYBIRB_CERT_SHA256=<pinned certificate fingerprint>
+POSTYBIRB_INSTAGRAM_ACCOUNT_IDS=<Patrick account UUID>,<SUBCULT account UUID>,<CLPR account UUID>
 ```
 
-Only the explicitly configured integration IDs can be scheduled or observed. The initial composer supports one JPEG under 900 KB, 320–1440 pixels wide, with aspect ratio 4:5 through 1.91:1. Approval stores that image in the application database and exposes only that selected image through `/api/v1/posting-media/{random-id}.jpg` so Instagram can fetch it. Private Studio exports remain authenticated. Database backups must include migration `005_social_schedules` and its approval records and media. Do not remove these records while queued posts still need their images.
+Only the explicitly configured account UUIDs can be scheduled or observed. The initial composer supports one JPEG under 900 KB, 320–1440 pixels wide, with aspect ratio 4:5 through 1.91:1. Approval stores the image in the application database and uploads it privately to PostyBirb. The legacy approved-media endpoint is retained for recovery, but PostyBirb receives the JPEG directly. Private Studio exports remain authenticated. Database backups must include migration `005_social_schedules` and its approval records and media. Do not remove these records while queued posts still need their images.
 
-Each submission has a durable request ID and content hash. Repeat submissions return the original receipt; concurrent submissions, changed content using the same ID, and uncertain provider responses cannot dispatch the same approval twice. A timeout requires reconciliation in Postiz before creating a new approval. Manage cancellation and edits in Postiz; the dashboard refreshes provider state every minute and shows a delivery link only when Postiz reports a published Instagram URL. A queued ID is scheduling evidence, not provider delivery.
+Each submission has a durable request ID, provider identity and content hash. The private submission ID is saved before enabling a future SINGLE schedule; the adapter never starts immediate posting. Repeat submissions return the original receipt; concurrent submissions, changed content using the same ID, and uncertain provider responses cannot dispatch the same approval twice. A timeout requires reconciliation in PostyBirb before creating a new approval. Manage cancellation and edits in PostyBirb; the dashboard refreshes provider state every minute and shows a delivery link only when PostyBirb reports a published Instagram URL. A queued ID is scheduling evidence, not provider delivery.
 
 Automatic approval is not enabled. A future automatic mode requires a separately reviewed policy for evidence, media, account mapping, limits and failures. The preparation runner's publishing flag remains false and its installed timers are unchanged.
 

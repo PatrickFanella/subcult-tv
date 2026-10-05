@@ -40,7 +40,7 @@ export default function PostEditor() {
         if (!d) throw new Error('Draft not found. Return to Review and refresh.');
         const edit = edits.find((e) => e.draft_id === draftID) || null;
         if (edit && edit.status !== 'draft')
-          throw new Error('This draft has already been submitted. Manage it in Postiz.');
+          throw new Error('This draft has already been submitted. Manage it in PostyBirb.');
         setDraft(d);
         setSaved(edit);
         setCaption(edit?.caption || d.text);

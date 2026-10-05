@@ -20,7 +20,7 @@ import (
 	"github.com/subculture-collective/subcult-tv/api/internal/database"
 	"github.com/subculture-collective/subcult-tv/api/internal/handlers"
 	"github.com/subculture-collective/subcult-tv/api/internal/patreon"
-	"github.com/subculture-collective/subcult-tv/api/internal/postiz"
+
 	"github.com/subculture-collective/subcult-tv/api/internal/postybirb"
 	"github.com/subculture-collective/subcult-tv/api/internal/router"
 	"strings"
@@ -93,8 +93,8 @@ func main() {
 	h.BrevoNewsletterListID = cfg.BrevoNewsletterListID
 	h.StudioRoot = os.Getenv("STUDIO_ROOT")
 	h.StudioStateRoot = os.Getenv("STUDIO_STATE_ROOT")
-	h.Postiz = postiz.New(os.Getenv("POSTIZ_API_URL"), os.Getenv("POSTIZ_API_KEY"))
-	h.PostizAccounts = strings.FieldsFunc(os.Getenv("POSTIZ_ACCOUNT_IDS"), func(r rune) bool { return r == ',' || r == ' ' })
+	h.SocialPosting = postybirb.New(os.Getenv("POSTYBIRB_API_URL"), os.Getenv("POSTYBIRB_REMOTE_PASSWORD"), "instagram", os.Getenv("POSTYBIRB_CERT_SHA256"))
+	h.SocialAccounts = strings.FieldsFunc(os.Getenv("POSTYBIRB_INSTAGRAM_ACCOUNT_IDS"), func(r rune) bool { return r == ',' || r == ' ' })
 	h.PostingMediaBaseURL = os.Getenv("POSTING_MEDIA_BASE_URL")
 	h.PostingPreparationKey = os.Getenv("POSTING_PREPARATION_KEY")
 	h.PatreonPosting = postybirb.New(os.Getenv("POSTYBIRB_API_URL"), os.Getenv("POSTYBIRB_REMOTE_PASSWORD"), os.Getenv("POSTYBIRB_PATREON_ACCOUNT_ID"), os.Getenv("POSTYBIRB_CERT_SHA256"))

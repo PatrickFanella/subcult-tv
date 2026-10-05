@@ -7,10 +7,8 @@ import (
 	"image"
 	"image/jpeg"
 	"mime/multipart"
-	"net/http"
 	"net/http/httptest"
 	"os"
-	"strings"
 	"sync/atomic"
 	"testing"
 	"time"
@@ -18,7 +16,6 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/subculture-collective/subcult-tv/api/internal/database"
 	"github.com/subculture-collective/subcult-tv/api/internal/middleware"
-	"github.com/subculture-collective/subcult-tv/api/internal/postiz"
 )
 
 func TestSocialApprovalIntegration(t *testing.T) {
@@ -37,33 +34,10 @@ func TestSocialApprovalIntegration(t *testing.T) {
 	}
 	var submissions atomic.Int32
 	var reject atomic.Bool
-	provider := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		if r.Method == "GET" {
-			w.Write([]byte(`[{"id":"patrick","name":"Patrick","identifier":"instagram-standalone"}]`))
-			return
-		}
-		submissions.Add(1)
-		var payload struct {
-			Posts []struct {
-				Value []struct {
-					Image []struct {
-						Path string `json:"path"`
-					} `json:"image"`
-				} `json:"value"`
-			} `json:"posts"`
-		}
-		if json.NewDecoder(r.Body).Decode(&payload) != nil || !strings.HasSuffix(payload.Posts[0].Value[0].Image[0].Path, ".jpg") {
-			t.Error("Postiz media validation would reject this URL")
-		}
-		if reject.Load() {
-			http.Error(w, "unconfirmed provider failure", 500)
-			return
-		}
-		w.Write([]byte(`[{"postId":"p-one","integration":"patrick"}]`))
-	}))
-	defer provider.Close()
-	h := &Handler{DB: db, Postiz: postiz.New(provider.URL, "test-key"), PostizAccounts: []string{"patrick"}, PostingMediaBaseURL: "https://example.test"}
-	t.Cleanup(func() { db.Exec(ctx, `DELETE FROM social_schedules WHERE request_id LIKE 'test-social-%'`) })
+	client := socialTestProvider(t, &submissions, &reject, "p-one")
+	h := &Handler{DB: db, SocialPosting: client, SocialAccounts: []string{"patrick"}, PostingMediaBaseURL: "https://example.test"}
+	db.Exec(ctx, `DELETE FROM social_schedules WHERE request_id LIKE 'test-social-%'`)
+	defer db.Exec(ctx, `DELETE FROM social_schedules WHERE request_id LIKE 'test-social-%'`)
 	request := func(id, account, role, caption string, due time.Time, approved bool) *httptest.ResponseRecorder {
 		var payload bytes.Buffer
 		form := multipart.NewWriter(&payload)
@@ -131,6 +105,10 @@ func TestSocialApprovalIntegration(t *testing.T) {
 	}
 	if r := request("test-social-uncertain", "patrick", "admin", "caption", due, true); r.Code != 409 {
 		t.Fatal("uncertain approval retried")
+	}
+	var uncertainID string
+	if err := db.QueryRow(ctx, `SELECT provider_post_id FROM social_schedules WHERE request_id='test-social-uncertain'`).Scan(&uncertainID); err != nil || uncertainID != "p-one" {
+		t.Fatal("uncertain queue lost private draft identity")
 	}
 	if submissions.Load() != 2 {
 		t.Fatal("uncertain provider submission duplicated")
