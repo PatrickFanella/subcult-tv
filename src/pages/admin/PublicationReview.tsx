@@ -8,6 +8,7 @@ import {
   type PublicationDraft,
   type Publications,
 } from '@/lib/api';
+import { stripReviewPrefix } from '@/lib/review-queue';
 import PostingShell from './PostingShell';
 
 function localDate(value: string) {
@@ -31,7 +32,11 @@ export default function PublicationReview({ platform }: { platform: 'website' | 
     getPublications()
       .then((d) => {
         if (active) {
-          setData(d);
+          // Older stored editions still begin with the reviewer note; never show or save it.
+          setData({
+            ...d,
+            drafts: d.drafts.map((x) => ({ ...x, body: stripReviewPrefix(x.body) })),
+          });
           setError('');
         }
       })

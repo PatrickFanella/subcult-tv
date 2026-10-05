@@ -9,6 +9,7 @@ import {
   type ReviewDraft,
   type SocialAccount,
 } from '@/lib/api';
+import { draftPlatform, platformLabel } from '@/lib/review-queue';
 import PostingShell from './PostingShell';
 import PostPreview from './PostPreview';
 
@@ -38,6 +39,10 @@ export default function PostEditor() {
         if (!active) return;
         const d = data.drafts.find((d) => d.id === draftID);
         if (!d) throw new Error('Draft not found. Return to Review and refresh.');
+        if (draftPlatform(d) !== 'instagram')
+          throw new Error(
+            `This draft is for ${platformLabel(draftPlatform(d))}. Copy it into Buffer from the ${platformLabel(draftPlatform(d))} tab in Review; it cannot be scheduled as an Instagram post.`,
+          );
         const edit = edits.find((e) => e.draft_id === draftID) || null;
         if (edit && edit.status !== 'draft')
           throw new Error('This draft has already been submitted. Manage it in PostyBirb.');

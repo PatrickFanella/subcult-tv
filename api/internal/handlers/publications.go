@@ -29,6 +29,18 @@ type publication struct {
 	Source      json.RawMessage `json:"source"`
 }
 
+// reviewPrefix was written into early editions before preparation stripped it.
+const reviewPrefix = "Draft for human review."
+
+// stripReviewPrefix removes the leftover reviewer note so it can never publish.
+func stripReviewPrefix(body string) string {
+	trimmed := strings.TrimLeft(body, " \t\r\n")
+	if !strings.HasPrefix(trimmed, reviewPrefix) {
+		return body
+	}
+	return strings.TrimLeft(strings.TrimPrefix(trimmed, reviewPrefix), " \t\r\n")
+}
+
 var publicationID = regexp.MustCompile(`^daily-[0-9]{4}-[0-9]{2}-[0-9]{2}-(website|patreon)$`)
 
 func secretAuthorized(r *http.Request, key string) bool {
@@ -66,6 +78,7 @@ func (h *Handler) IngestPublications(w http.ResponseWriter, r *http.Request) {
 	defer tx.Rollback(r.Context())
 	inserted := int64(0)
 	for _, d := range drafts {
+		d.Body = stripReviewPrefix(d.Body)
 		tag, e := tx.Exec(r.Context(), `INSERT INTO publication_review(id,platform,title,body,excerpt,due_at,source) VALUES($1,$2,$3,$4,$5,$6,$7) ON CONFLICT(id) DO NOTHING`, d.ID, d.Platform, d.Title, d.Body, d.Excerpt, d.DueAt, d.Source)
 		if e != nil {
 			writeError(w, 503, "Draft import failed")
@@ -139,6 +152,7 @@ func (h *Handler) Publications(w http.ResponseWriter, r *http.Request) {
 			writeError(w, 503, "Publication drafts are unavailable")
 			return
 		}
+		d.Body = stripReviewPrefix(d.Body)
 		if d.Platform == "website" && d.Status == "scheduled" && !d.DueAt.After(time.Now()) {
 			d.Status = "published"
 		}
@@ -242,6 +256,20 @@ func (h *Handler) ApprovePublication(w http.ResponseWriter, r *http.Request) {
 	if due.Before(time.Now().Add(24*time.Hour)) || due.After(time.Now().AddDate(0, 0, 90)) {
 		writeError(w, 400, "Schedule between 24 hours and 90 days ahead")
 		return
+	}
+	// A stale stored edition may still begin with the reviewer note.
+	if cleaned := stripReviewPrefix(body); cleaned != body {
+		body = cleaned
+		if _, err = tx.Exec(r.Context(), `UPDATE publication_review SET body=$2 WHERE id=$1`, chi.URLParam(r, "id"), body); err != nil {
+			writeError(w, 503, "Approval could not be recorded")
+			return
+		}
+		if postID != nil {
+			if _, err = tx.Exec(r.Context(), `UPDATE posts SET content=$2,updated_at=NOW() WHERE id=$1`, *postID, body); err != nil {
+				writeError(w, 503, "Approval could not be recorded")
+				return
+			}
+		}
 	}
 	var document map[string]any
 	if platform == "patreon" {

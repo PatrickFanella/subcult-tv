@@ -497,10 +497,29 @@ export interface PostingRun {
   checked_at: string;
   observed_at: string;
 }
+export type PostingPlatform = 'instagram' | 'x' | 'bluesky';
+/** A prepared JPEG; the image bytes are served privately by SHA-256. */
+export interface PreparedImage {
+  sha256: string;
+  width: number;
+  height: number;
+  bytes: number;
+}
+export interface PostingCraft {
+  angle: string;
+  reader: string;
+  reason: string;
+  pattern: string;
+  predicted: string;
+  scores: Partial<Record<string, number>>;
+  alternatives: string[];
+}
 export interface PostingDraft {
   id: string;
   run_id: string;
   mode: string;
+  /** Older snapshots omit the platform; derive it with draftPlatform(). */
+  platform?: PostingPlatform;
   week: string;
   account: string;
   text: string;
@@ -509,7 +528,20 @@ export interface PostingDraft {
   evidence: string;
   next_check: string;
   approval: 'unapproved';
-  media: { mode: string; asset_ids: string[]; alt_text: string; brief: string };
+  media: {
+    mode: string;
+    asset_ids: string[];
+    alt_text: string;
+    brief: string;
+    kind?: string;
+    headline?: string;
+    image?: PreparedImage;
+    candidates?: PreparedImage[];
+  };
+  craft?: PostingCraft;
+  checklist?: string[];
+  sources?: string[];
+  supersedes?: string;
 }
 export interface PostingDashboard {
   connected: boolean;
@@ -525,6 +557,31 @@ export interface PostingDashboard {
   checks: { run_id: string; text: string }[];
 }
 export const getPostingDashboard = () => apiFetch<PostingDashboard>('/api/v1/admin/studio/posting');
+
+// Prepared review JPEGs are private and immutable by hash; keep a small
+// per-session cache so rows and the review sheet share one download.
+const preparedCache = new Map<string, Promise<Blob>>();
+let preparedSession: string | null = null;
+export function getPreparedMedia(sha256: string): Promise<Blob> {
+  const session = getToken();
+  if (session !== preparedSession) {
+    preparedCache.clear();
+    preparedSession = session;
+  }
+  const cached = preparedCache.get(sha256);
+  if (cached) return cached;
+  const request = fetch(
+    `${API_BASE}/api/v1/admin/studio/posting-media/${encodeURIComponent(sha256)}`,
+    { headers: session ? { Authorization: `Bearer ${session}` } : {} },
+  ).then((response) => {
+    if (!response.ok) throw new APIError('Prepared image unavailable', response.status);
+    return response.blob();
+  });
+  request.catch(() => preparedCache.delete(sha256));
+  if (preparedCache.size >= 40) preparedCache.delete(preparedCache.keys().next().value!);
+  preparedCache.set(sha256, request);
+  return request;
+}
 
 export interface SocialAccount {
   id: string;
@@ -583,13 +640,55 @@ export async function saveReviewDraft(id: string, form: FormData) {
   if (!response.ok) throw new APIError(result.error || 'Saving failed', response.status);
   return result as { version: number };
 }
-export const approveReviewDraft = (id: string, version: number) =>
+export interface ChecklistState {
+  item: string;
+  checked: boolean;
+}
+export const approveReviewDraft = (id: string, version: number, checklist: ChecklistState[] = []) =>
   apiFetch<{ status: string; post_id: string }>(
     `/api/v1/admin/studio/review/${encodeURIComponent(id)}/approve`,
     {
       method: 'POST',
-      body: JSON.stringify({ version, approved: true }),
+      body: JSON.stringify({ version, approved: true, checklist }),
     },
+  );
+
+export type DecisionKind =
+  'approved_as_is' | 'approved_edited' | 'rejected' | 'revision_requested' | 'snoozed';
+export interface DraftDecision {
+  id: number;
+  draft_id: string;
+  platform: PostingPlatform;
+  account: string;
+  decision: DecisionKind;
+  original_text: string;
+  final_text: string;
+  diff_stats: Record<string, number | boolean>;
+  image_choice: 'prepared' | 'candidate' | 'uploaded' | 'none';
+  original_due_at: string | null;
+  final_due_at: string | null;
+  reason_codes: string[];
+  note: string;
+  checklist: ChecklistState[];
+  snooze_until: string | null;
+  decided_by: string;
+  decided_at: string;
+}
+export const getDraftDecisions = (since: string) =>
+  apiFetch<DraftDecision[]>(`/api/v1/admin/studio/decisions?since=${encodeURIComponent(since)}`);
+export const recordDraftDecision = (
+  id: string,
+  input: {
+    decision: 'rejected' | 'revision_requested' | 'snoozed';
+    reasons?: string[];
+    note?: string;
+    checklist?: ChecklistState[];
+    snooze_until?: string;
+  },
+) =>
+  apiFetch<{ draft_id: string; decision: string }>(
+    `/api/v1/admin/studio/review/${encodeURIComponent(id)}/decision`,
+    { method: 'POST', body: JSON.stringify(input) },
   );
 export async function getReviewDraftMedia(
   id: string,

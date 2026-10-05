@@ -20,6 +20,9 @@ import (
 	"github.com/subculture-collective/subcult-tv/api/internal/middleware"
 )
 
+// X and Bluesky drafts are copied into Buffer by hand; only Instagram uses PostyBirb.
+const notInstagram = "Only Instagram drafts can be scheduled here. Post X drafts through Buffer"
+
 type reviewDraft struct {
 	ID        string    `json:"draft_id"`
 	Version   int       `json:"version"`
@@ -84,17 +87,22 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 403, "Admin access is required")
 		return
 	}
-	if h.DB == nil {
-		writeError(w, 503, "Draft storage is unavailable")
-		return
-	}
 	id, err := url.PathUnescape(chi.URLParam(r, "id"))
 	if err != nil {
 		writeError(w, 400, "Invalid draft ID")
 		return
 	}
-	if _, err := h.preparedDraft(id); err != nil {
+	prepared, err := h.preparedDraft(id)
+	if err != nil {
 		writeError(w, 404, "Prepared draft not found. Refresh the review queue")
+		return
+	}
+	if draftPlatform(prepared) != "instagram" {
+		writeError(w, 409, notInstagram)
+		return
+	}
+	if h.DB == nil {
+		writeError(w, 503, "Draft storage is unavailable")
 		return
 	}
 	if r.ParseMultipartForm(1<<20) != nil {
@@ -128,7 +136,8 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 	var oldVersion int
 	var media []byte
 	var oldRequest string
-	err = tx.QueryRow(r.Context(), `SELECT version,media,request_id FROM social_review_drafts WHERE draft_id=$1 FOR UPDATE`, id).Scan(&oldVersion, &media, &oldRequest)
+	choice := "none"
+	err = tx.QueryRow(r.Context(), `SELECT version,media,request_id,image_choice FROM social_review_drafts WHERE draft_id=$1 FOR UPDATE`, id).Scan(&oldVersion, &media, &oldRequest, &choice)
 	if err != nil && err != pgx.ErrNoRows {
 		writeError(w, 503, "Draft could not be read")
 		return
@@ -143,7 +152,7 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if submitted {
-		writeError(w, 409, "This draft has already been submitted. Manage it in Postiz")
+		writeError(w, 409, "This draft has already been submitted. Manage it in PostyBirb")
 		return
 	}
 	file, _, fileErr := r.FormFile("media")
@@ -172,13 +181,18 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 	if media == nil {
 		media = []byte{}
 	}
+	if fileErr == nil || len(media) == 0 {
+		// Classify by content so feedback records which image the owner kept.
+		choice = imageChoice(prepared, media)
+	}
 	var nonce [24]byte
 	if _, err = rand.Read(nonce[:]); err != nil {
 		writeError(w, 500, "Draft could not be saved")
 		return
 	}
 	user, _ := r.Context().Value(middleware.UserIDKey).(string)
-	_, err = tx.Exec(r.Context(), `INSERT INTO social_review_drafts(draft_id,version,request_id,account_id,caption,due_at,media,updated_by) VALUES($1,$2,$3,$4,$5,$6,$7,$8) ON CONFLICT(draft_id) DO UPDATE SET version=EXCLUDED.version,request_id=EXCLUDED.request_id,account_id=EXCLUDED.account_id,caption=EXCLUDED.caption,due_at=EXCLUDED.due_at,media=EXCLUDED.media,updated_by=EXCLUDED.updated_by,updated_at=NOW()`, id, version+1, hex.EncodeToString(nonce[:]), account, caption, due, media, user)
+	// original_caption keeps the prepared text from the first save only.
+	_, err = tx.Exec(r.Context(), `INSERT INTO social_review_drafts(draft_id,version,request_id,account_id,caption,due_at,media,updated_by,original_caption,image_choice) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10) ON CONFLICT(draft_id) DO UPDATE SET version=EXCLUDED.version,request_id=EXCLUDED.request_id,account_id=EXCLUDED.account_id,caption=EXCLUDED.caption,due_at=EXCLUDED.due_at,media=EXCLUDED.media,updated_by=EXCLUDED.updated_by,image_choice=EXCLUDED.image_choice,updated_at=NOW()`, id, version+1, hex.EncodeToString(nonce[:]), account, caption, due, media, user, prepared.Text, choice)
 	if err != nil || tx.Commit(r.Context()) != nil {
 		writeError(w, 503, "Draft could not be saved")
 		return
@@ -223,15 +237,12 @@ func (h *Handler) ApproveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 403, "Admin approval is required")
 		return
 	}
-	if h.DB == nil {
-		writeError(w, 503, "Draft storage is unavailable")
-		return
-	}
 	var approval struct {
-		Version  int  `json:"version"`
-		Approved bool `json:"approved"`
+		Version   int             `json:"version"`
+		Approved  bool            `json:"approved"`
+		Checklist []checklistItem `json:"checklist"`
 	}
-	if json.NewDecoder(io.LimitReader(r.Body, 4096)).Decode(&approval) != nil || !approval.Approved {
+	if json.NewDecoder(io.LimitReader(r.Body, 32<<10)).Decode(&approval) != nil || !approval.Approved {
 		writeError(w, 400, "Explicit approval is required")
 		return
 	}
@@ -250,12 +261,17 @@ func (h *Handler) ApproveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 409, "Prepared draft is unavailable. Refresh before approving")
 		return
 	}
-	if draft.ExpiresAt != "" {
-		expiry, e := time.Parse(time.RFC3339, draft.ExpiresAt)
-		if e != nil || !expiry.After(time.Now()) {
-			writeError(w, 409, "This draft has expired")
-			return
-		}
+	if draftPlatform(draft) != "instagram" {
+		writeError(w, 409, notInstagram)
+		return
+	}
+	if draft.expired(time.Now()) {
+		writeError(w, 409, "This draft has expired")
+		return
+	}
+	if h.DB == nil {
+		writeError(w, 503, "Draft storage is unavailable")
+		return
 	}
 	tx, err := h.DB.Begin(r.Context())
 	if err != nil {
@@ -264,10 +280,10 @@ func (h *Handler) ApproveReviewDraft(w http.ResponseWriter, r *http.Request) {
 	}
 	defer tx.Rollback(r.Context())
 	var version int
-	var requestID, account, caption string
+	var requestID, account, caption, original, choice string
 	var due time.Time
 	var media []byte
-	err = tx.QueryRow(r.Context(), `SELECT version,request_id,account_id,caption,due_at,media FROM social_review_drafts WHERE draft_id=$1 FOR UPDATE`, id).Scan(&version, &requestID, &account, &caption, &due, &media)
+	err = tx.QueryRow(r.Context(), `SELECT version,request_id,account_id,caption,due_at,media,original_caption,image_choice FROM social_review_drafts WHERE draft_id=$1 FOR UPDATE`, id).Scan(&version, &requestID, &account, &caption, &due, &media, &original, &choice)
 	if err != nil || version != approval.Version {
 		writeError(w, 409, "This draft changed. Refresh before approving")
 		return
@@ -295,5 +311,24 @@ func (h *Handler) ApproveReviewDraft(w http.ResponseWriter, r *http.Request) {
 	cloned.MultipartForm = nil
 	// Existing idempotency and uncertain-submission safeguards remain the sole
 	// Instagram delivery path. The row lock prevents concurrent edits until it returns.
-	h.ApproveSchedule(w, cloned)
+	recorder := &statusRecorder{ResponseWriter: w}
+	h.ApproveSchedule(recorder, cloned)
+	if recorder.status != http.StatusCreated {
+		return
+	}
+	// Feedback only: the approval is already recorded and scheduled.
+	if original == "" {
+		original = draft.Text
+	}
+	decision := "approved_as_is"
+	if strings.TrimSpace(original) != strings.TrimSpace(caption) {
+		decision = "approved_edited"
+	}
+	user, _ := r.Context().Value(middleware.UserIDKey).(string)
+	if insertDecision(r.Context(), tx, decisionRecord{
+		draft: draft, decision: decision, originalText: original, finalText: caption,
+		imageChoice: choice, finalDue: &due, checklist: cleanChecklist(approval.Checklist), user: user,
+	}) == nil {
+		tx.Commit(r.Context())
+	}
 }

@@ -24,7 +24,7 @@ const (
 	RateLimitWindow      = time.Minute
 )
 
-var studioAssetPath = regexp.MustCompile(`^/api/v1/admin/studio/assets/[a-f0-9]{64}$`)
+var studioAssetPath = regexp.MustCompile(`^/api/v1/admin/studio/(assets|posting-media)/[a-f0-9]{64}$`)
 
 // cspConnectOrigins returns origins permitted for browser connect-src requests:
 // the configured CORS origins (API calls) plus a self-hosted Umami when set.
@@ -125,9 +125,12 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 			admin.Get("/admin/studio/jobs", h.StudioJobs)
 			admin.Get("/admin/studio/posting", h.PostingDashboard)
 			admin.Get("/admin/studio/review", h.ReviewDrafts)
+			admin.Get("/admin/studio/posting-media/{sha256}", h.PostingPreparedMedia)
 			admin.Put("/admin/studio/review/{id}", h.SaveReviewDraft)
 			admin.Get("/admin/studio/review/{id}/media", h.ReviewDraftMedia)
 			admin.Post("/admin/studio/review/{id}/approve", h.ApproveReviewDraft)
+			admin.Post("/admin/studio/review/{id}/decision", h.RecordDraftDecision)
+			admin.Get("/admin/studio/decisions", h.DraftDecisions)
 			admin.Get("/admin/studio/delivery", h.SocialDelivery)
 			admin.Post("/admin/studio/delivery", h.ApproveSchedule)
 			admin.Get("/admin/studio/assets/{id}", h.StudioAsset)

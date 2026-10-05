@@ -9,14 +9,17 @@ import {
   getStudioAsset,
   getSocialDelivery,
   getReviewDrafts,
-  getReviewDraftMedia,
-  approveReviewDraft,
+  getDraftDecisions,
 } from '@/lib/api';
 vi.mock('@/lib/api', () => ({
   getPostingDashboard: vi.fn(),
   getReviewDrafts: vi.fn(),
   getReviewDraftMedia: vi.fn(),
   approveReviewDraft: vi.fn(),
+  saveReviewDraft: vi.fn(),
+  getPreparedMedia: vi.fn(),
+  getDraftDecisions: vi.fn(),
+  recordDraftDecision: vi.fn(),
   getSocialDelivery: vi.fn().mockRejectedValue(new Error('PostyBirb delivery is not configured')),
   approveSocialSchedule: vi.fn(),
   getStudioCatalog: vi.fn(),
@@ -41,11 +44,11 @@ const data = {
     {
       id: 'one',
       run_id: 'run-one',
-      mode: 'plan',
+      mode: 'changemaker',
       week: '2026-W40',
       account: 'patrick',
       text: 'Patrick draft copy',
-      due_at: '2026-10-02T14:00:00Z',
+      due_at: new Date(Date.now() + 72 * 3600000).toISOString(),
       expires_at: '',
       evidence: 'Source checked',
       next_check: 'Capture the UI',
@@ -73,113 +76,13 @@ beforeEach(() => {
   vi.resetAllMocks();
   vi.mocked(getPostingDashboard).mockResolvedValue(data);
   vi.mocked(getReviewDrafts).mockResolvedValue([]);
+  vi.mocked(getDraftDecisions).mockResolvedValue([]);
   vi.mocked(getSocialDelivery).mockRejectedValue(new Error('PostyBirb delivery is not configured'));
   URL.createObjectURL = vi.fn(() => 'blob:test');
   URL.revokeObjectURL = vi.fn();
   vi.mocked(getStudioAsset).mockResolvedValue(new Blob());
 });
 describe('Production admin', () => {
-  it('filters draft copy and keeps delivery separate from proposed times', async () => {
-    render(
-      <MemoryRouter>
-        <AdminPosts />
-      </MemoryRouter>,
-    );
-    await screen.findByText('Patrick draft copy');
-    expect(screen.queryByText('Expired timely draft')).not.toBeInTheDocument();
-    fireEvent.click(screen.getByLabelText('Include expired drafts'));
-    expect(screen.getByText('Expired')).toBeInTheDocument();
-    expect(
-      screen
-        .getAllByRole('button', { name: 'Approve & queue' })
-        .every((b) => b.hasAttribute('disabled')),
-    ).toBe(true);
-    fireEvent.change(screen.getByLabelText('Account'), { target: { value: 'patrick' } });
-    expect(screen.queryByText('Expired timely draft')).not.toBeInTheDocument();
-    expect(screen.getByText('Capture the UI')).toBeInTheDocument();
-    expect(screen.queryByLabelText('Caption')).not.toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Edit' })).toHaveAttribute(
-      'href',
-      '/admin/posts/edit?draft=one',
-    );
-  });
-  it('keeps Changemaker Instagram drafts in their own filter with private evidence', async () => {
-    vi.mocked(getPostingDashboard).mockResolvedValue({
-      ...data,
-      drafts: [
-        ...data.drafts,
-        {
-          ...data.drafts[0],
-          id: 'changemaker',
-          mode: 'changemaker',
-          text: 'A product update for Instagram',
-          account: 'subcult',
-          evidence: 'Verified Changemaker source digest',
-        },
-      ],
-    });
-    render(
-      <MemoryRouter>
-        <AdminPosts />
-      </MemoryRouter>,
-    );
-    await screen.findByText('A product update for Instagram');
-    fireEvent.change(screen.getByLabelText('Preparation lane'), {
-      target: { value: 'changemaker' },
-    });
-    expect(screen.queryByText('Patrick draft copy')).not.toBeInTheDocument();
-    expect(screen.getByText('subcult / Changemaker · Instagram')).toBeInTheDocument();
-    expect(screen.getByText('Verified Changemaker source digest')).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Edit' })).toHaveAttribute(
-      'href',
-      '/admin/posts/edit?draft=changemaker',
-    );
-  });
-  it('approves the saved version only after the private image preview loads', async () => {
-    const saved = {
-      draft_id: 'one',
-      version: 3,
-      account_id: 'patrick',
-      caption: 'Saved caption',
-      due_at: new Date(Date.now() + 48 * 3600000).toISOString(),
-      has_media: true,
-      status: 'draft' as const,
-      post_id: '',
-      updated_at: '',
-    };
-    vi.mocked(getReviewDrafts).mockResolvedValue([saved]);
-    vi.mocked(getReviewDraftMedia).mockResolvedValue(new Blob());
-    vi.mocked(getSocialDelivery).mockResolvedValue({
-      accounts: [
-        {
-          id: 'patrick',
-          name: 'Patrick',
-          profile: 'patrick',
-          identifier: 'instagram-standalone',
-          disabled: false,
-        },
-      ],
-      posts: [],
-      checked_at: '',
-      approval_mode: 'manual',
-      minimum_lead_hours: 24,
-    });
-    vi.mocked(approveReviewDraft).mockResolvedValue({ status: 'scheduled', post_id: 'post-one' });
-    render(
-      <MemoryRouter>
-        <AdminPosts />
-      </MemoryRouter>,
-    );
-    await screen.findByText('Saved caption');
-    const button = screen.getByRole('button', { name: 'Approve & queue' });
-    expect(button).toBeDisabled();
-    fireEvent.load(await screen.findByRole('img', { name: 'Selected image for this post' }));
-    expect(button).toBeEnabled();
-    fireEvent.click(button);
-    await screen.findByText(/Scheduled in PostyBirb/);
-    expect(approveReviewDraft).toHaveBeenCalledWith('one', 3);
-    expect(screen.queryByLabelText('Caption')).not.toBeInTheDocument();
-  });
   it('shows an unavailable snapshot and recovers with retry', async () => {
     vi.mocked(getPostingDashboard).mockRejectedValueOnce(new Error('Snapshot unavailable'));
     render(

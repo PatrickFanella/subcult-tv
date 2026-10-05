@@ -51,4 +51,63 @@ class PostingExportTests(unittest.TestCase):
             self.assertNotIn('private-ledger',json.dumps(data))
             self.assertNotIn('must stay local',json.dumps(data))
 
+    def test_platform_is_exported_or_derived(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state=Path(tmp)
+            for mode in ('plan','changemaker'):
+                run=state/'runs'/mode;run.mkdir(parents=True)
+                (run/'receipt.json').write_text(json.dumps({'mode':mode,'status':'success','run_id':mode,'week':'2026-W41','draft_count':2}))
+                (run/'result.json').write_text(json.dumps({'drafts':[{'account':'clpr' if mode=='plan' else 'subcult','text':'Old draft'},{'account':'patrick','text':'New draft','platform':'bluesky'}]}))
+            data=snapshot(state)
+            platforms={d['id']:d['platform'] for d in data['drafts']}
+            self.assertEqual(platforms['plan:0'],'x')
+            self.assertEqual(platforms['changemaker:0'],'instagram')
+            self.assertEqual(platforms['plan:1'],'bluesky')
+
+    def test_contract_fields_are_bounded_and_sources_are_titles_only(self):
+        import hashlib
+        with tempfile.TemporaryDirectory() as tmp:
+            state=Path(tmp);run=state/'runs'/'cm';run.mkdir(parents=True)
+            media=state/'media';media.mkdir()
+            jpeg=b'\xff\xd8\xff'+b'0'*100
+            (media/'a.jpg').write_bytes(jpeg)
+            (media/'big.jpg').write_bytes(b'\xff\xd8\xff'+b'0'*(901*1024))
+            outside=Path(tempfile.mkdtemp())/'outside.jpg';outside.write_bytes(jpeg)
+            (media/'link.jpg').symlink_to(outside)
+            sha=hashlib.sha256(jpeg).hexdigest()
+            draft={'account':'subcult','text':'Caption','platform':'instagram',
+                'evidence':'Changemaker run-1; evidence SHA-256 abc\nPR-1: Add the clip stack — https://git.subcult.tv/private/repo/pulls/1',
+                'craft':{'angle':'For people who clip streams','reader':'Clippers','reason':'New mark','pattern':'reveal','predicted':'saves',
+                         'scores':{'hook':4,'story':9,'voice':'5','honesty':5},'alternatives':['Alt one',3],'secret':'drop me'},
+                'checklist':['Check the mark','',7],
+                'media':{'mode':'capture','alt_text':'A purple mark','kind':'illustration','headline':'New mark',
+                         'image':{'file':'media/a.jpg','sha256':sha,'width':1080,'height':1350,'bytes':103},
+                         'candidates':[{'file':'media/big.jpg','sha256':'b'*64},{'file':'media/link.jpg','sha256':sha},{'file':'../x.jpg','sha256':'c'*64},{'file':'media/a.jpg','sha256':'NOTHEX'}]}}
+            (run/'receipt.json').write_text(json.dumps({'mode':'changemaker','status':'success','run_id':'cm','draft_count':1}))
+            (run/'result.json').write_text(json.dumps({'drafts':[draft]}))
+            files={}
+            data=snapshot(state, media_files=files)
+            d=data['drafts'][0]
+            text=json.dumps(data)
+            self.assertNotIn('media/a.jpg',text)
+            self.assertNotIn('drop me',text)
+            self.assertEqual(d['sources'],['Add the clip stack'])
+            self.assertEqual(d['craft']['scores'],{'hook':4,'honesty':5})
+            self.assertEqual(d['craft']['alternatives'],['Alt one'])
+            self.assertEqual(d['checklist'],['Check the mark'])
+            self.assertEqual(d['media']['alt_text'],'A purple mark')
+            self.assertEqual(d['media']['kind'],'illustration')
+            self.assertEqual(d['media']['image'],{'sha256':sha,'bytes':103,'width':1080,'height':1350})
+            self.assertNotIn('candidates',d['media'])
+            self.assertEqual(files,{sha:media/'a.jpg'})
+
+    def test_sources_drop_urls(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state=Path(tmp);run=state/'runs'/'p';run.mkdir(parents=True)
+            (run/'receipt.json').write_text(json.dumps({'mode':'radar','status':'success','run_id':'p','draft_count':1}))
+            (run/'result.json').write_text(json.dumps({'drafts':[{'account':'patrick','text':'x','sources':[{'title':'Release notes https://git.subcult.tv/a','url':'https://git.subcult.tv/a'},'Plain title']}]}))
+            d=snapshot(state)['drafts'][0]
+            self.assertEqual(d['sources'],['Release notes','Plain title'])
+            self.assertNotIn('git.subcult.tv',json.dumps(d))
+
 if __name__=='__main__':unittest.main()

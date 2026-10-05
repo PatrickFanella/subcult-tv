@@ -1,31 +1,112 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState, type ReactNode } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import {
-  approveReviewDraft,
+  getDraftDecisions,
   getPostingDashboard,
   getReviewDrafts,
   getSocialDelivery,
+  type DraftDecision,
   type PostingDashboard,
+  type PostingDraft,
   type ReviewDraft,
   type SocialDelivery,
 } from '@/lib/api';
+import {
+  draftPlatform,
+  firstLine,
+  hiddenReason,
+  latestDecisions,
+  isExpired,
+  laneLabel,
+  platformLabel,
+  relativeTime,
+} from '@/lib/review-queue';
 import PostingShell from './PostingShell';
-import PostPreview from './PostPreview';
+import TextPostCard from './TextPostCard';
+import InstagramReview from './InstagramReview';
+import DecisionControls from './DecisionControls';
+import { usePreparedImage } from './usePreparedImage';
+import '@/styles/review-queue.css';
+
+type Tab = 'instagram' | 'x' | 'bluesky';
+
+function RowThumbnail({ draft }: { draft: PostingDraft }) {
+  const { url } = usePreparedImage(draft.media.image?.sha256);
+  if (url) return <img className="review-row-thumb" src={url} alt="" />;
+  return (
+    <span className="review-row-thumb review-row-thumb-empty" aria-hidden="true">
+      {draftPlatform(draft) === 'instagram' ? 'IG' : platformLabel(draftPlatform(draft))}
+    </span>
+  );
+}
+
+function ReviewRow({
+  draft,
+  meta,
+  when,
+  state,
+  expanded,
+  onToggle,
+  children,
+}: {
+  draft: PostingDraft;
+  meta: string;
+  when: string;
+  state: string;
+  expanded: boolean;
+  onToggle: () => void;
+  children: ReactNode;
+}) {
+  const sheet = `review-sheet-${draft.id.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
+  return (
+    <li className="review-row" data-expanded={expanded || undefined}>
+      <button
+        type="button"
+        className="review-row-summary"
+        aria-expanded={expanded}
+        aria-controls={sheet}
+        onClick={onToggle}
+      >
+        <RowThumbnail draft={draft} />
+        <span className="review-row-main">
+          <span className="review-row-meta">{meta}</span>
+          <span className="review-row-text">{firstLine(draft.text)}</span>
+        </span>
+        <span className="review-row-side">
+          <span>{when}</span>
+          <span className="review-row-state">{state}</span>
+        </span>
+      </button>
+      {expanded && (
+        <div id={sheet} className="review-row-sheet">
+          {children}
+        </div>
+      )}
+    </li>
+  );
+}
 
 export default function AdminPosts() {
   const [data, setData] = useState<PostingDashboard | null>(null);
   const [saved, setSaved] = useState<ReviewDraft[]>([]);
   const [delivery, setDelivery] = useState<SocialDelivery | null>(null);
+  const [decisions, setDecisions] = useState<DraftDecision[]>([]);
+  const [showHidden, setShowHidden] = useState(false);
   const [error, setError] = useState('');
   const [deliveryError, setDeliveryError] = useState('');
   const [revision, setRevision] = useState(0);
   const [account, setAccount] = useState('all');
   const [lane, setLane] = useState('all');
+  const [params, setParams] = useSearchParams();
+  const requested = params.get('tab');
+  const tab: Tab = requested === 'x' || requested === 'bluesky' ? requested : 'instagram';
+  const setTab = (next: Tab) =>
+    setParams(next === 'instagram' ? {} : { tab: next }, { replace: true });
   const [query, setQuery] = useState('');
   const [includeExpired, setIncludeExpired] = useState(false);
   const [busy, setBusy] = useState('');
   const [notice, setNotice] = useState('');
-  const [loadedImages, setLoadedImages] = useState<Set<string>>(() => new Set());
+  const [open, setOpen] = useState<string>('');
   const [now, setNow] = useState(() => Date.now());
   useEffect(() => {
     const timer = setInterval(() => setNow(Date.now()), 60000);
@@ -47,6 +128,14 @@ export default function AdminPosts() {
           setData(null);
         }
       });
+    // Decisions are feedback; the queue still works if they are unavailable.
+    getDraftDecisions(new Date(Date.now() - 60 * 86400000).toISOString())
+      .then((value) => {
+        if (active) setDecisions(value);
+      })
+      .catch(() => {
+        if (active) setDecisions([]);
+      });
     getSocialDelivery()
       .then((value) => {
         if (active) {
@@ -64,37 +153,66 @@ export default function AdminPosts() {
       active = false;
     };
   }, [revision]);
-  const expired = (value: string) => Boolean(value && new Date(value).valueOf() <= now);
-  const drafts = (data?.drafts || []).filter(
-    (d) =>
-      (d.account === 'patrick' || d.account === 'subcult') &&
-      (includeExpired || !expired(d.expires_at)) &&
-      (account === 'all' || d.account === account) &&
-      (lane === 'all' || d.mode === lane) &&
-      `${saved.find((s) => s.draft_id === d.id)?.caption || d.text} ${d.next_check}`
-        .toLowerCase()
-        .includes(query.toLowerCase()),
+  const expired = (d: { expires_at: string; due_at: string }) => isExpired(d, now);
+  const editFor = (id: string) => saved.find((s) => s.draft_id === id);
+  const submitted = (id: string) => {
+    const edit = editFor(id);
+    return Boolean(edit && edit.status !== 'draft');
+  };
+  const latest = latestDecisions(decisions);
+  const superseded = new Set(
+    (data?.drafts || []).map((d) => d.supersedes).filter((id): id is string => Boolean(id)),
   );
-  async function approve(draft: ReviewDraft) {
-    setBusy(draft.draft_id);
-    setNotice('');
-    try {
-      const result = await approveReviewDraft(draft.draft_id, draft.version);
-      setNotice(`Scheduled in PostyBirb · ${result.post_id}. Publication is pending.`);
-    } catch (e) {
-      setNotice(e instanceof Error ? e.message : 'Scheduling could not be confirmed');
-    } finally {
-      setBusy('');
-      setRevision((v) => v + 1);
-    }
+  const hidden = (d: PostingDraft) => hiddenReason(d, latest, superseded, now);
+  const all = (data?.drafts || []).filter((d) => showHidden || !hidden(d));
+  const hiddenCount = (data?.drafts || []).filter(
+    (d) => draftPlatform(d) === tab && hidden(d) && !expired(d),
+  ).length;
+  const counts: Record<Tab, number> = { instagram: 0, x: 0, bluesky: 0 };
+  for (const d of data?.drafts || [])
+    if (!expired(d) && !submitted(d.id) && !hidden(d)) counts[draftPlatform(d)] += 1;
+  const tabs: Tab[] = ['instagram', 'x', ...(counts.bluesky ? (['bluesky'] as Tab[]) : [])];
+  const dueOf = (d: PostingDraft) => new Date(editFor(d.id)?.due_at || d.due_at).valueOf();
+  const drafts = all
+    .filter(
+      (d) =>
+        draftPlatform(d) === tab &&
+        (includeExpired || !expired(d)) &&
+        (account === 'all' || d.account === account) &&
+        (tab === 'instagram' || lane === 'all' || d.mode === lane) &&
+        `${editFor(d.id)?.caption || d.text} ${d.next_check}`
+          .toLowerCase()
+          .includes(query.toLowerCase()),
+    )
+    .sort((a, b) => Number(submitted(a.id)) - Number(submitted(b.id)) || dueOf(a) - dueOf(b));
+  const tabAccounts = [
+    ...new Set(all.filter((d) => draftPlatform(d) === tab).map((d) => d.account)),
+  ];
+  const cadence = (name: string) => data?.accounts.find((a) => a.account === name)?.times ?? [];
+  const recorded = (message: string) => {
+    setNotice(message);
+    setOpen('');
+    setRevision((v) => v + 1);
+  };
+  const hiddenLabel: Record<string, string> = {
+    rejected: 'Rejected',
+    revision_requested: 'Revision requested',
+    snoozed: 'Snoozed',
+    superseded: 'Replaced',
+  };
+  function instagramState(d: PostingDraft) {
+    const edit = editFor(d.id);
+    if (hidden(d)) return hiddenLabel[hidden(d)];
+    if (edit && edit.status !== 'draft')
+      return edit.status === 'scheduled' ? 'Queued' : 'Check PostyBirb';
+    if (expired(d)) return 'Expired';
+    if (d.media.image) return 'Image ready';
+    return edit?.has_media ? 'Upload saved' : 'Needs image';
   }
   return (
     <PostingShell title="Review posts">
       <div className="posting-review-intro">
-        <p>
-          Preview each post, then approve it for the queue. Every post needs your approval and at
-          least 24 hours before publication.
-        </p>
+        <p>Approve each post at least 24 hours before it publishes. Nothing posts without you.</p>
         <button onClick={() => setRevision((v) => v + 1)} disabled={Boolean(busy)}>
           Refresh drafts
         </button>
@@ -106,7 +224,7 @@ export default function AdminPosts() {
           <button onClick={() => setRevision((v) => v + 1)}>Retry connection</button>
         </div>
       )}
-      {deliveryError && <p role="alert">{deliveryError}</p>}
+      {deliveryError && tab === 'instagram' && <p role="alert">{deliveryError}</p>}
       {notice && (
         <p role="status" className="production-notice">
           {notice}
@@ -119,139 +237,166 @@ export default function AdminPosts() {
               The preparation snapshot is over 24 hours old. Refresh the source before approving.
             </p>
           )}
-          <div className="posting-filters">
+          <div className="posting-tabs" role="tablist" aria-label="Platform">
+            {tabs.map((t) => (
+              <button
+                key={t}
+                role="tab"
+                type="button"
+                aria-selected={tab === t}
+                onClick={() => {
+                  setTab(t);
+                  setAccount('all');
+                  setLane('all');
+                  setOpen('');
+                }}
+              >
+                {t === 'instagram' ? 'Instagram' : `${platformLabel(t)} (post via Buffer)`}{' '}
+                <span className="posting-tab-count">{counts[t]}</span>
+              </button>
+            ))}
+          </div>
+          <ul className="review-list" aria-label={`${platformLabel(tab)} drafts`}>
+            {drafts.map((d) => {
+              const edit = editFor(d.id);
+              const due = dueOf(d);
+              const when = Number.isNaN(due) ? '' : relativeTime(due, now);
+              if (tab !== 'instagram')
+                return (
+                  <ReviewRow
+                    key={d.id}
+                    draft={d}
+                    meta={`${d.account} · ${laneLabel(d.mode)}`}
+                    when={when}
+                    state={
+                      hidden(d) ? hiddenLabel[hidden(d)] : expired(d) ? 'Expired' : 'Copy to Buffer'
+                    }
+                    expanded={open === d.id}
+                    onToggle={() => setOpen(open === d.id ? '' : d.id)}
+                  >
+                    <TextPostCard draft={d} expired={expired(d)}>
+                      {!hidden(d) && (
+                        <DecisionControls
+                          draftId={d.id}
+                          label={`${d.account} ${platformLabel(tab)} post: ${firstLine(d.text, 48)}`}
+                          busy={busy}
+                          setBusy={setBusy}
+                          onRecorded={recorded}
+                        />
+                      )}
+                    </TextPostCard>
+                  </ReviewRow>
+                );
+              return (
+                <ReviewRow
+                  key={d.id}
+                  draft={d}
+                  meta={`${d.account} · Instagram`}
+                  when={when}
+                  state={instagramState(d)}
+                  expanded={open === d.id}
+                  onToggle={() => setOpen(open === d.id ? '' : d.id)}
+                >
+                  {hidden(d) ? (
+                    <p className="studio-note">
+                      {hiddenLabel[hidden(d)]}
+                      {latest.get(d.id)?.note ? `: ${latest.get(d.id)?.note}` : '.'}
+                    </p>
+                  ) : submitted(d.id) ? (
+                    <p className="studio-note">
+                      {edit?.status === 'scheduled'
+                        ? 'Queued in PostyBirb. See Scheduled & delivered.'
+                        : 'Check PostyBirb to reconcile this submission before retrying.'}
+                    </p>
+                  ) : (
+                    <InstagramReview
+                      draft={d}
+                      edit={edit}
+                      delivery={delivery}
+                      times={cadence(d.account)}
+                      timeZone={data.timezone}
+                      stale={data.stale}
+                      now={now}
+                      busy={busy}
+                      setBusy={setBusy}
+                      onError={(message) => setNotice(message)}
+                      decisions={(checklist, label) => (
+                        <DecisionControls
+                          draftId={d.id}
+                          label={label}
+                          busy={busy}
+                          setBusy={setBusy}
+                          checklist={checklist}
+                          onRecorded={recorded}
+                        />
+                      )}
+                      onApproved={(result) => {
+                        setNotice(
+                          `Scheduled in PostyBirb · ${result.post_id}. Publication is pending.`,
+                        );
+                        setOpen('');
+                        setRevision((v) => v + 1);
+                      }}
+                    />
+                  )}
+                </ReviewRow>
+              );
+            })}
+          </ul>
+          {!drafts.length && <p>No drafts match these filters.</p>}
+          {(hiddenCount > 0 || showHidden) && (
+            <label className="studio-note">
+              <input
+                type="checkbox"
+                checked={showHidden}
+                onChange={(e) => setShowHidden(e.target.checked)}
+              />{' '}
+              Show {hiddenCount} rejected, snoozed or replaced{' '}
+              {hiddenCount === 1 ? 'draft' : 'drafts'}
+            </label>
+          )}
+          {tab !== 'instagram' && (
+            <p className="studio-note">
+              {platformLabel(tab)} drafts are read-only here. Copy the text into Buffer to schedule
+              it; nothing on this page posts to {platformLabel(tab)}.
+            </p>
+          )}
+          <details className="posting-filters">
+            <summary>Filter and search</summary>
             <label>
               Account
               <select value={account} onChange={(e) => setAccount(e.target.value)}>
                 <option value="all">All accounts</option>
-                {data.accounts
-                  .filter((a) => a.account === 'patrick' || a.account === 'subcult')
-                  .map((a) => (
-                    <option key={a.account} value={a.account}>
-                      {a.account}
-                    </option>
-                  ))}
+                {tabAccounts.map((a) => (
+                  <option key={a} value={a}>
+                    {a}
+                  </option>
+                ))}
               </select>
             </label>
-            <label>
-              Preparation lane
-              <select value={lane} onChange={(e) => setLane(e.target.value)}>
-                <option value="all">All lanes</option>
-                <option value="plan">Weekly</option>
-                <option value="radar">Timely</option>
-                <option value="changemaker">Changemaker / Instagram</option>
-              </select>
-            </label>
+            {tab !== 'instagram' && (
+              <label>
+                Preparation lane
+                <select value={lane} onChange={(e) => setLane(e.target.value)}>
+                  <option value="all">All lanes</option>
+                  <option value="plan">Weekly</option>
+                  <option value="radar">Timely</option>
+                </select>
+              </label>
+            )}
             <label>
               Search copy
               <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} />
             </label>
-          </div>
-          <label className="studio-note">
-            <input
-              type="checkbox"
-              checked={includeExpired}
-              onChange={(e) => setIncludeExpired(e.target.checked)}
-            />{' '}
-            Include expired drafts
-          </label>
-          <div className="posting-review-grid">
-            {drafts.map((d) => {
-              const edit = saved.find((s) => s.draft_id === d.id);
-              const target = delivery?.accounts.find((a) => a.id === edit?.account_id);
-              const caption = edit?.caption || d.text;
-              const submitted = edit && edit.status !== 'draft';
-              const imageKey = `${d.id}:${edit?.version}`;
-              const ready =
-                loadedImages.has(imageKey) &&
-                edit?.has_media &&
-                target &&
-                !target.disabled &&
-                new Date(edit.due_at).valueOf() >= now + 86400000 &&
-                !expired(d.expires_at) &&
-                !data.stale &&
-                !submitted;
-              return (
-                <article key={d.id} className="posting-review-card">
-                  <div className="posting-draft-meta">
-                    <span className="production-badge">
-                      {d.account} /{' '}
-                      {d.mode === 'changemaker'
-                        ? 'Changemaker · Instagram'
-                        : d.mode === 'radar'
-                          ? 'Timely'
-                          : 'Weekly'}
-                    </span>
-                    <span>
-                      {submitted ? edit.status : expired(d.expires_at) ? 'Expired' : 'Unapproved'}
-                    </span>
-                  </div>
-                  <PostPreview
-                    key={imageKey}
-                    onMediaReady={(loaded) =>
-                      setLoadedImages((current) => {
-                        const next = new Set(current);
-                        if (loaded) next.add(imageKey);
-                        else next.delete(imageKey);
-                        return next;
-                      })
-                    }
-                    account={target?.profile || target?.name || d.account}
-                    caption={caption}
-                    draftID={d.id}
-                    version={edit?.version}
-                    hasMedia={edit?.has_media}
-                  />
-                  <div className="posting-review-details">
-                    <p>
-                      <strong>Publish:</strong>{' '}
-                      {new Date(edit?.due_at || d.due_at).toLocaleString()} ·{' '}
-                      {Intl.DateTimeFormat().resolvedOptions().timeZone}
-                    </p>
-                    <details>
-                      <summary>Evidence & media requirements</summary>
-                      <p>{d.evidence}</p>
-                      <p>{d.media.brief}</p>
-                      <p>{d.next_check}</p>
-                    </details>
-                    {!submitted && (
-                      <p className="studio-note">
-                        {!edit?.has_media
-                          ? 'Add an image in Edit before approving.'
-                          : !ready
-                            ? 'Check the account and choose a time at least 24 hours ahead.'
-                            : 'Ready for your approval.'}
-                      </p>
-                    )}
-                    {submitted && (
-                      <p className="studio-note">
-                        {edit.status === 'scheduled'
-                          ? 'Queued in PostyBirb. See Scheduled & delivered.'
-                          : 'Check PostyBirb to reconcile this submission before retrying.'}
-                      </p>
-                    )}
-                    <div className="posting-card-buttons">
-                      <button
-                        disabled={!ready || Boolean(busy)}
-                        onClick={() => edit && void approve(edit)}
-                      >
-                        {busy === d.id ? 'Queuing…' : 'Approve & queue'}
-                      </button>
-                      {!submitted && (
-                        <Link
-                          className="posting-edit-link"
-                          to={`/admin/posts/edit?draft=${encodeURIComponent(d.id)}`}
-                        >
-                          Edit
-                        </Link>
-                      )}
-                    </div>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-          {!drafts.length && <p>No drafts match these filters.</p>}
+            <label className="studio-note">
+              <input
+                type="checkbox"
+                checked={includeExpired}
+                onChange={(e) => setIncludeExpired(e.target.checked)}
+              />{' '}
+              Include expired drafts
+            </label>
+          </details>
         </>
       )}
       {!data && !error && <p role="status">Loading review queue…</p>}
