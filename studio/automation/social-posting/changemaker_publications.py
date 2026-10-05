@@ -84,7 +84,7 @@ def execute(source_root, state, ingest_env=None):
                        '-s', 'read-only', '-m', cfg['model'], '--json', '--output-schema',
                        str(HERE/'changemaker-publications.schema.json'), '-o', str(directory/'result.json'),
                        '-c', 'approval_policy="never"', '-c', 'web_search="disabled"',
-                       '-c', 'features.shell_tool=false', '-c', 'model_reasoning_effort="low"', '-']
+                       '-c', 'features.shell_tool=false', '-c', 'model_reasoning_effort="medium"', '-']
             env = {key: value for key, value in os.environ.items() if key not in (
                 'OPENAI_API_KEY', 'CODEX_API_KEY', 'OPENAI_BASE_URL', 'POSTING_PREPARATION_KEY')}
             with (directory/'events.jsonl').open('w') as out, (directory/'stderr.log').open('w') as err:

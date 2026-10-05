@@ -86,7 +86,7 @@ def execute(source_root, state):
                    '--output-schema', str(HERE/'changemaker-instagram.schema.json'),
                    '-o', str(directory/'result-model.json'),
                    '-c', 'approval_policy="never"', '-c', 'web_search="disabled"',
-                   '-c', 'features.shell_tool=false', '-c', 'model_reasoning_effort="low"', '-']
+                   '-c', 'features.shell_tool=false', '-c', 'model_reasoning_effort="medium"', '-']
         env = dict(os.environ)
         for key in ('OPENAI_API_KEY', 'CODEX_API_KEY', 'OPENAI_BASE_URL'):
             env.pop(key, None)

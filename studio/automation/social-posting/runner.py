@@ -144,7 +144,7 @@ def codex_command(cfg: dict, directory: Path) -> list[str]:
             '-o', str(directory/'result.json')]
     settings = {
         'approval_policy': 'never', 'web_search': 'disabled', 'features.shell_tool': False,
-        'model_reasoning_effort': 'low',
+        'model_reasoning_effort': 'medium',
         'mcp_servers.buffer.url': 'https://mcp.buffer.com/mcp',
         'mcp_servers.buffer.required': True, 'mcp_servers.buffer.enabled_tools': BUFFER_TOOLS,
         'mcp_servers.super-productivity.command': cfg['sp_command'],
