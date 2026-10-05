@@ -456,15 +456,16 @@
   .admin-shell .posting-page .production-heading .studio-label {
     font-size: 0.65rem;
   }
-  .posting-navigation {
+  .admin-shell .posting-navigation {
     flex-wrap: nowrap;
     overflow-x: auto;
     padding-bottom: 0.5rem;
     margin-bottom: 0.75rem;
   }
-  .posting-navigation a {
+  .admin-shell .posting-navigation a {
     flex-shrink: 0;
     white-space: nowrap;
+    padding: 0.5rem 0.7rem;
   }
   .studio-brand-title {
     flex-wrap: wrap;

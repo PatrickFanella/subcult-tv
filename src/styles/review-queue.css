@@ -309,6 +309,14 @@
   gap: 0.6rem;
   margin-top: 0.5rem;
 }
+.text-post-card .posting-card-buttons {
+  flex-wrap: wrap;
+  align-items: start;
+}
+.text-post-card .decision-controls {
+  flex-basis: 100%;
+  margin-top: 0;
+}
 .decision-buttons {
   display: flex;
   flex-wrap: wrap;
