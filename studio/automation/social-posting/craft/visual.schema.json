@@ -1,0 +1,37 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "pass",
+  "issues",
+  "fix",
+  "new_headline",
+  "art_prompt_change"
+ ],
+ "properties": {
+  "pass": {
+   "type": "boolean"
+  },
+  "issues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "fix": {
+   "type": "string",
+   "enum": [
+    "none",
+    "regenerate_art",
+    "shorten_headline",
+    "switch_to_type"
+   ]
+  },
+  "new_headline": {
+   "type": "string"
+  },
+  "art_prompt_change": {
+   "type": "string"
+  }
+ }
+}

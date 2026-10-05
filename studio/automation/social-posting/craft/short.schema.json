@@ -1,0 +1,65 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "drafts"
+ ],
+ "properties": {
+  "drafts": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "index",
+     "scores",
+     "text",
+     "changed",
+     "note"
+    ],
+    "properties": {
+     "index": {
+      "type": "integer"
+     },
+     "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "hook",
+       "specificity",
+       "voice",
+       "reader_value",
+       "ending"
+      ],
+      "properties": {
+       "hook": {
+        "type": "integer"
+       },
+       "specificity": {
+        "type": "integer"
+       },
+       "voice": {
+        "type": "integer"
+       },
+       "reader_value": {
+        "type": "integer"
+       },
+       "ending": {
+        "type": "integer"
+       }
+      }
+     },
+     "text": {
+      "type": "string"
+     },
+     "changed": {
+      "type": "boolean"
+     },
+     "note": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

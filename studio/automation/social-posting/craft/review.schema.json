@@ -1,0 +1,130 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "reviews"
+ ],
+ "properties": {
+  "reviews": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "item",
+     "drafts",
+     "base_draft",
+     "keep",
+     "revision_notes",
+     "visual_notes"
+    ],
+    "properties": {
+     "item": {
+      "type": "integer"
+     },
+     "drafts": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "additionalProperties": false,
+       "required": [
+        "draft",
+        "scores",
+        "predicted",
+        "unsupported",
+        "tired_phrases",
+        "ai_tells",
+        "comment"
+       ],
+       "properties": {
+        "draft": {
+         "type": "integer"
+        },
+        "scores": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "hook",
+          "story",
+          "specificity",
+          "reason",
+          "voice",
+          "reader_value",
+          "flow",
+          "ending",
+          "honesty"
+         ],
+         "properties": {
+          "hook": {
+           "type": "integer"
+          },
+          "story": {
+           "type": "integer"
+          },
+          "specificity": {
+           "type": "integer"
+          },
+          "reason": {
+           "type": "integer"
+          },
+          "voice": {
+           "type": "integer"
+          },
+          "reader_value": {
+           "type": "integer"
+          },
+          "flow": {
+           "type": "integer"
+          },
+          "ending": {
+           "type": "integer"
+          },
+          "honesty": {
+           "type": "integer"
+          }
+         }
+        },
+        "predicted": {
+         "type": "string"
+        },
+        "unsupported": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        },
+        "tired_phrases": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        },
+        "ai_tells": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        },
+        "comment": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "base_draft": {
+      "type": "integer"
+     },
+     "keep": {
+      "type": "boolean"
+     },
+     "revision_notes": {
+      "type": "string"
+     },
+     "visual_notes": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

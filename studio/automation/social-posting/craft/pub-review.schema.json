@@ -1,0 +1,188 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "website",
+  "patreon",
+  "website_choice",
+  "patreon_choice",
+  "website_notes",
+  "patreon_notes",
+  "title",
+  "excerpt"
+ ],
+ "properties": {
+  "website": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "draft",
+     "scores",
+     "unsupported",
+     "tired",
+     "ai_tells"
+    ],
+    "properties": {
+     "draft": {
+      "type": "integer"
+     },
+     "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "opening",
+       "story",
+       "specificity",
+       "reason",
+       "voice",
+       "flow",
+       "ending",
+       "honesty"
+      ],
+      "properties": {
+       "opening": {
+        "type": "integer"
+       },
+       "story": {
+        "type": "integer"
+       },
+       "specificity": {
+        "type": "integer"
+       },
+       "reason": {
+        "type": "integer"
+       },
+       "voice": {
+        "type": "integer"
+       },
+       "flow": {
+        "type": "integer"
+       },
+       "ending": {
+        "type": "integer"
+       },
+       "honesty": {
+        "type": "integer"
+       }
+      }
+     },
+     "unsupported": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "tired": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "ai_tells": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "patreon": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "draft",
+     "scores",
+     "unsupported",
+     "tired",
+     "ai_tells"
+    ],
+    "properties": {
+     "draft": {
+      "type": "integer"
+     },
+     "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "opening",
+       "story",
+       "specificity",
+       "reason",
+       "voice",
+       "flow",
+       "ending",
+       "honesty"
+      ],
+      "properties": {
+       "opening": {
+        "type": "integer"
+       },
+       "story": {
+        "type": "integer"
+       },
+       "specificity": {
+        "type": "integer"
+       },
+       "reason": {
+        "type": "integer"
+       },
+       "voice": {
+        "type": "integer"
+       },
+       "flow": {
+        "type": "integer"
+       },
+       "ending": {
+        "type": "integer"
+       },
+       "honesty": {
+        "type": "integer"
+       }
+      }
+     },
+     "unsupported": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "tired": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "ai_tells": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "website_choice": {
+   "type": "integer"
+  },
+  "patreon_choice": {
+   "type": "integer"
+  },
+  "website_notes": {
+   "type": "string"
+  },
+  "patreon_notes": {
+   "type": "string"
+  },
+  "title": {
+   "type": "string"
+  },
+  "excerpt": {
+   "type": "string"
+  }
+ }
+}

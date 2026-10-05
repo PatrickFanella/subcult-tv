@@ -1,0 +1,22 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "website",
+  "patreon"
+ ],
+ "properties": {
+  "website": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "patreon": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ }
+}

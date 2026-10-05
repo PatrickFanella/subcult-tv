@@ -1,0 +1,147 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "items",
+  "skipped"
+ ],
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "source_ids",
+     "product",
+     "account",
+     "reader",
+     "before",
+     "after",
+     "reason",
+     "detail",
+     "maturity",
+     "angles",
+     "draft_angles",
+     "ranking_note"
+    ],
+    "properties": {
+     "source_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "product": {
+      "type": "string"
+     },
+     "account": {
+      "type": "string",
+      "enum": [
+       "patrick",
+       "subcult"
+      ]
+     },
+     "reader": {
+      "type": "string"
+     },
+     "before": {
+      "type": "string"
+     },
+     "after": {
+      "type": "string"
+     },
+     "reason": {
+      "type": "string"
+     },
+     "detail": {
+      "type": "string"
+     },
+     "maturity": {
+      "type": "string"
+     },
+     "angles": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "additionalProperties": false,
+       "required": [
+        "pattern",
+        "hook",
+        "mechanism",
+        "risk",
+        "visual"
+       ],
+       "properties": {
+        "pattern": {
+         "type": "string"
+        },
+        "hook": {
+         "type": "string"
+        },
+        "mechanism": {
+         "type": "string"
+        },
+        "risk": {
+         "type": "string"
+        },
+        "visual": {
+         "type": "object",
+         "additionalProperties": false,
+         "required": [
+          "kind",
+          "description"
+         ],
+         "properties": {
+          "kind": {
+           "type": "string",
+           "enum": [
+            "illustration",
+            "type",
+            "screenshot"
+           ]
+          },
+          "description": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     },
+     "draft_angles": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     },
+     "ranking_note": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "skipped": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "source_ids",
+     "why"
+    ],
+    "properties": {
+     "source_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "why": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

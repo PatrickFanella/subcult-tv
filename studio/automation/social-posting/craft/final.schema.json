@@ -1,0 +1,100 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "drafts",
+  "open_checks"
+ ],
+ "properties": {
+  "drafts": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "item",
+     "account",
+     "product",
+     "text",
+     "source_ids",
+     "angle",
+     "alt_text",
+     "media",
+     "next_check"
+    ],
+    "properties": {
+     "item": {
+      "type": "integer"
+     },
+     "account": {
+      "type": "string",
+      "enum": [
+       "patrick",
+       "subcult"
+      ]
+     },
+     "product": {
+      "type": "string"
+     },
+     "text": {
+      "type": "string"
+     },
+     "source_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "angle": {
+      "type": "string"
+     },
+     "alt_text": {
+      "type": "string"
+     },
+     "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "kind",
+       "headline",
+       "kicker",
+       "image_prompt",
+       "url"
+      ],
+      "properties": {
+       "kind": {
+        "type": "string",
+        "enum": [
+         "illustration",
+         "type",
+         "screenshot"
+        ]
+       },
+       "headline": {
+        "type": "string"
+       },
+       "kicker": {
+        "type": "string"
+       },
+       "image_prompt": {
+        "type": "string"
+       },
+       "url": {
+        "type": "string"
+       }
+      }
+     },
+     "next_check": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "open_checks": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ }
+}

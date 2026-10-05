@@ -21,7 +21,7 @@ class PublicationPreparationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)/'studio';state=Path(tmp)/'state';here=root/'automation/social-posting'
             here.mkdir(parents=True);(root/'content/social').mkdir(parents=True)
-            (here/'config.json').write_text(json.dumps({'codex':'unused','model':'configured','switchyard':{}}))
+            (here/'config.json').write_text(json.dumps({'codex':'unused','model':'configured','switchyard':{},'craft':False}))
             (root/'content/social/Product Claims Register.md').write_text('Merged does not mean deployed.')
             (root/'content/VOICE.md').write_text('Plain language.')
             (here/'changemaker-publications-prompt.md').write_text('Prepare drafts.')
@@ -41,6 +41,24 @@ class PublicationPreparationTests(unittest.TestCase):
                 self.assertTrue(all('approved' not in d and 'status' not in d for d in payload))
                 self.assertGreaterEqual((datetime.fromisoformat(payload[0]['due_at'])-before).total_seconds(),48*3600)
                 producer.execute(root,state);self.assertEqual(run.call_count,1)
+    def test_staged_edition_is_used_without_the_single_pass_call(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)/'studio';state=Path(tmp)/'state';here=root/'automation/social-posting'
+            here.mkdir(parents=True);(root/'content/social').mkdir(parents=True)
+            (here/'config.json').write_text(json.dumps({'codex':'unused','model':'configured','switchyard':{}}))
+            (root/'content/social/Product Claims Register.md').write_text('Merged does not mean deployed.')
+            (root/'content/VOICE.md').write_text('Plain language.')
+            item={'id':'S1','kind':'pull request','state':'merged','title':'Improve reading'}
+            context={'drafts':[{'run_id':'source-run','draft':'Digest','draft_sha256':'d'*64,'evidence_sha256':'e'*64,'evidence':{'status':'complete','items':[item]}}]}
+            staged={'title':'The menu that crashed the page','excerpt':'Opening the menu could crash the page.','website_body':'Website.','patreon_body':'Patreon.','source_ids':['S1']}
+            import craft
+            with patch.object(producer,'HERE',here),patch.object(producer,'changemaker_context',return_value=context),\
+                 patch.object(craft,'publication',return_value=staged),patch.object(producer.subprocess,'run') as run:
+                producer.execute(root,state)
+                payload=json.loads((state/'publications'/('e'*64)/'drafts.json').read_text())
+                self.assertEqual(run.call_count,0)
+                self.assertEqual(payload[0]['title'],'The menu that crashed the page')
+
     def test_rejects_unknown_sources_private_links_and_embedded_media(self):
         good={'title':'Update','excerpt':'Excerpt','website_body':'Body','patreon_body':'Body','source_ids':['S1']}
         producer.validate(good,{'S1':{}})

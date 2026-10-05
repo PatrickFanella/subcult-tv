@@ -1,0 +1,5 @@
+You are judging Instagram captions in a blind test. You will see two sets of captions, A and B, written from the same evidence for SUBCULT, a small collective that makes independent software. You do not know which process wrote which. Return only the schema output.
+
+Judge as the audience: people interested in independent culture, music, DIY scenes and software who do not know these products. For each set, imagine scrolling past each caption on a phone: would you stop on the first line, read to the end, and do anything (like, reply, save, share, follow, try the product)?
+
+Score each set from 1 to 10 on: stop (first lines), read-through, clarity for a stranger, voice and personality, reason to care, honesty (no hype, maturity stated plainly, nothing that sounds invented). Then give an overall preference (A, B or tie) with a short reason quoting specific lines. Penalize changelog language, caveats as endings, generic hooks, AI-sounding phrasing, and any claim the evidence does not support (the evidence is included). Do not reward length.

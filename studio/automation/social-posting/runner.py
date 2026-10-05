@@ -294,7 +294,17 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
             evidence = verify_evidence(events, cfg)
             result = json.loads((directory/'result.json').read_text())
             bank = context['notes'][next(x for x in cfg['notes'] if x.endswith('SUBCULT Social Content Idea Pool.md'))]
-            validate_result(result, cfg, week, bank, context.get('prepared_slots', []), now if mode == 'plan' else None)
+            originals = [draft.get('text') for draft in result['drafts']]
+            if mode == 'plan' and result['drafts'] and cfg.get('polish', True):
+                import craft
+                craft.polish_short(cfg, result['drafts'], directory)
+            try:
+                validate_result(result, cfg, week, bank, context.get('prepared_slots', []), now if mode == 'plan' else None)
+            except ValueError:
+                # A polished rewrite must never cost the run its valid drafts.
+                for draft, text in zip(result['drafts'], originals):
+                    draft['text'] = text
+                validate_result(result, cfg, week, bank, context.get('prepared_slots', []), now if mode == 'plan' else None)
             catalog = media.context(cfg)
             for draft in result['drafts']:
                 media.validate_choice(draft.get('media'), catalog, draft['account'])

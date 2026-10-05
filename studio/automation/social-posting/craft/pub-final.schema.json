@@ -1,0 +1,31 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "title",
+  "excerpt",
+  "website_body",
+  "patreon_body",
+  "source_ids"
+ ],
+ "properties": {
+  "title": {
+   "type": "string"
+  },
+  "excerpt": {
+   "type": "string"
+  },
+  "website_body": {
+   "type": "string"
+  },
+  "patreon_body": {
+   "type": "string"
+  },
+  "source_ids": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ }
+}

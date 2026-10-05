@@ -1,0 +1,47 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "drafts"
+ ],
+ "properties": {
+  "drafts": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "item",
+     "angle",
+     "account",
+     "text",
+     "source_ids"
+    ],
+    "properties": {
+     "item": {
+      "type": "integer"
+     },
+     "angle": {
+      "type": "integer"
+     },
+     "account": {
+      "type": "string",
+      "enum": [
+       "patrick",
+       "subcult"
+      ]
+     },
+     "text": {
+      "type": "string"
+     },
+     "source_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  }
+ }
+}
