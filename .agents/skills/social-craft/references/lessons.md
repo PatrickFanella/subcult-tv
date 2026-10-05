@@ -1,0 +1,65 @@
+# Lessons from the October 2026 drafting work
+
+These findings come from rebuilding the SUBCULT social drafting system on October 4–5, 2026, judged blind on saved October 3–4 evidence. Product voices stay in `studio/content/VOICE.md`. This file records what went wrong in practice and what changed the results.
+
+## Why drafts go flat
+
+- **Purpose gets lost upstream.** Each stage passed caveats forward and none added a reason to care. The Switchyard digest was evidence-only and cut PR bodies at 600 characters, and the Studio prompts asked for evidence before story.
+- **Check the digest first.** When drafts read like notes for a reviewer again, look at what the digest gave the writer before tuning the writer. The digest is Switchyard `changemaker-daily-digest`, and its "What people notice" section exists for post editors.
+- **Thin days produce no post.** Infrastructure-only days should come out empty. A post that only proves activity is worse than none.
+
+## Voice in captions
+
+- **Account voices.**
+  - `subcult` is the collective, "we".
+  - `patrick` is Patrick, "I". Patrick owns a bug ("a race I wrote") only when the evidence shows his earlier change caused it.
+  - Never invent authorship, feelings ("felt friendlier"), users or incidents.
+- **Moves that won blind comparisons:**
+  - Open on a familiar phrase made strange.
+  - Use second person to put the reader in the moment the bug happens.
+  - Use an exact, absurd number from the evidence as the hook.
+  - Explain the mechanism in one plain sentence.
+  - End on a dry aside that is true by observation, not a moral.
+  - Put the product line after the reader cares, and the maturity note in a few words at the end.
+- **Lines that scored well:**
+  - "The leaderboard managed to cause trouble after leaving."
+  - "Dialog open. Undertow's editor shortcuts sit this one out."
+  - "A listener taps your Kork tip button, and it opens your own Cash App."
+- **Recurring failures to reject:**
+  - "A useful…" verdict openings.
+  - Two-fragment headlines.
+  - A-or-B polls.
+  - An internal process (audit, review, ticket) given as the reason.
+  - Caveats in the image kicker.
+  - "Will" for a failure seen only in tests. Use "could".
+  - Invented next steps ("We'll start with…"). State next steps only when the evidence names them.
+  - The "Draft for human review." prefix leaking into copy.
+
+## Critique
+
+- **Separate calls.** Generation and fact-checking happen in different model calls.
+- **Protect the lines that work.** A literal-minded critic deletes the lines that work. Tell it to keep them and to rephrase unsupported lines truthfully in the same voice. Judge honesty on the final caption, not on the drafts.
+- **Draft three.** Results vary between runs, and three drafts per story reduces the spread.
+
+## Evaluating changes
+
+- **Blind pairwise judge.** Compare prompts with a blind pairwise judge on saved fixtures: `craft/judge.md` for captions, `judge-long.md` for editions. October 5 samples and reports are in `~/.local/state/social-posting/craft-samples-20261005/`.
+- **Keep examples off the test set.** A reference example built from a fixture's facts biases that fixture, so exclude the fixture from evaluation.
+- **October 5 results:**
+  - Staged Instagram beat the original batch (stop 7 vs 1, voice 7 vs 3) and tuned single-pass (stop 7 vs 5).
+  - The staged website/Patreon edition lost to single-pass (stop 5 vs 7), so `craft_publications` stays off. A weekly edition built from the best stories is the recommended next experiment.
+  - "Reason to care" tops out near 5/10 for small fixes to products strangers don't use. The showcase lane (`showcase.py`) writes about what a live product does today instead.
+
+## Images
+
+- **Designed text is allowed.** Type cards and screenshots contain text by design. The visual check must not fail them for that. A faint lockup is a rendering problem, not an art problem.
+- **Choose lockups by contrast.** `render.py` picks lockups by measured contrast, because variant names are unreliable. Some lockups embed base64 SVG.
+- **Rights check on third-party content.** Screenshots that show other people's material, such as a streamer's clpr thumbnail, carry a rights check in the checklist.
+- **Vary the image kind** (illustration, type, screenshot) across a week. Generated art from the Codex image tool lands in `~/.codex/generated_images/`.
+
+## Pipeline gotchas
+
+- **Source IDs.** A caption's `source_ids` must be collected evidence IDs. Claims-register IDs (`C-…`) made the October 5 09:20 UTC run fall back to single-pass.
+- **Retries.** Retry a stage only on a nonzero exit or `turn.failed`. Model capacity errors do happen.
+- **Slots.** Posting slots are 11:30 and 17:30 Chicago, at least 48 hours ahead, with one draft per slot (`taken_slots`).
+- **Owner feedback.** It is read from `state/owner-feedback.json`. The review dashboard records reject, revise and snooze decisions, and nothing pulls them into that file automatically yet.
