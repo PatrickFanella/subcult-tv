@@ -92,8 +92,22 @@ def single_pass(cfg, source_root, selected, digest, claims, directory):
     return json.loads((directory/'result-model.json').read_text())
 
 
-def posting_slots(cfg, now, count):
-    """Daytime Chicago slots at least 48 hours ahead, one per draft, never stacked."""
+def taken_slots(state, now):
+    """Due times already held by unexpired prepared Instagram drafts."""
+    taken = set()
+    for path in sorted((state/'runs').glob('*-changemaker/result.json'), reverse=True)[:40]:
+        try:
+            for draft in json.loads(path.read_text()).get('drafts', []):
+                due = datetime.fromisoformat(draft['due_at'])
+                if due > now:
+                    taken.add(due.astimezone(timezone.utc))
+        except (ValueError, KeyError, OSError, TypeError):
+            continue
+    return taken
+
+
+def posting_slots(cfg, now, count, taken=()):
+    """Daytime Chicago slots at least 48 hours ahead, one per draft, never stacked on a held slot."""
     from zoneinfo import ZoneInfo
     zone = ZoneInfo(cfg.get('timezone', 'America/Chicago'))
     times = cfg.get('instagram_times', ['11:30', '17:30'])
@@ -103,7 +117,7 @@ def posting_slots(cfg, now, count):
         for value in times:
             hour, minute = map(int, value.split(':'))
             slot = datetime(day.year, day.month, day.day, hour, minute, tzinfo=zone)
-            if slot >= earliest and len(slots) < count:
+            if slot >= earliest and len(slots) < count and slot.astimezone(timezone.utc) not in taken:
                 slots.append(slot)
         day += timedelta(days=1)
     return slots
@@ -165,7 +179,7 @@ def execute(source_root, state):
             validate(result, items)
         drafts = []
         identities = set()
-        slots = posting_slots(cfg, now, len(result['drafts']))
+        slots = posting_slots(cfg, now, len(result['drafts']), taken_slots(state, now))
         for n, draft in enumerate(result['drafts']):
             bound = [items[s] for s in draft['source_ids']]
             identities.update(identity(i) for i in bound)

@@ -11,7 +11,7 @@ import os
 from pathlib import Path
 
 import craft
-from changemaker_instagram import posting_slots, checklist, image_record, recent_captions
+from changemaker_instagram import posting_slots, taken_slots, checklist, image_record, recent_captions
 from runner import atomic_write
 
 HERE = Path(__file__).resolve().parent
@@ -29,7 +29,7 @@ def execute(product, source_root, state):
     claims = (source_root/'content/social/Product Claims Register.md').read_text()
     staged = craft.showcase(cfg, product, claims, directory/'craft', recent=recent_captions(state, now))
     drafts = []
-    for n, (draft, slot) in enumerate(zip(staged['drafts'], posting_slots(cfg, now, len(staged['drafts'])))):
+    for n, (draft, slot) in enumerate(zip(staged['drafts'], posting_slots(cfg, now, len(staged['drafts']), taken_slots(state, now)))):
         if not draft['text'].strip() or len(draft['text']) > 2200 or 'git.subcult.tv' in draft['text']:
             continue
         media = {'mode': 'capture' if draft['media_record'].get('kind') == 'screenshot' else 'library', 'asset_ids': [],

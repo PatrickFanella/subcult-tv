@@ -12,6 +12,7 @@ from pathlib import Path
 import re
 import shutil
 import subprocess
+import time
 
 import render
 
@@ -59,10 +60,19 @@ def codex(cfg, prompt, directory, name, schema=None, effort='medium', images=(),
         command += ['-i', str(image)]
     command.append('-')
     (directory/f'{name}.prompt.md').write_text(prompt)
-    with (directory/f'{name}.events.jsonl').open('w') as events, (directory/f'{name}.stderr.log').open('w') as err:
-        done = subprocess.run(command, input=prompt, text=True, stdout=events, stderr=err,
-                              cwd=directory, env=clean_env(), timeout=timeout)
-    if done.returncode or not out.is_file():
+    for attempt in range(3):
+        out.unlink(missing_ok=True)
+        with (directory/f'{name}.events.jsonl').open('w') as events, (directory/f'{name}.stderr.log').open('w') as err:
+            done = subprocess.run(command, input=prompt, text=True, stdout=events, stderr=err,
+                                  cwd=directory, env=clean_env(), timeout=timeout)
+        if not done.returncode and out.is_file():
+            break
+        failed_turn = 'turn.failed' in (directory/f'{name}.events.jsonl').read_text()
+        if not (done.returncode or failed_turn) or attempt == 2:
+            raise ValueError(f'Stage {name} failed; inspect private run evidence')
+        # Provider capacity and other transient failures: wait and retry the same stage.
+        time.sleep((30, 120)[attempt])
+    else:
         raise ValueError(f'Stage {name} failed; inspect private run evidence')
     text = out.read_text()
     return json.loads(text) if schema else text

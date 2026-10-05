@@ -81,6 +81,12 @@ class ChangemakerInstagramTests(unittest.TestCase):
             self.assertGreaterEqual((slot - now).total_seconds(), 48*3600)
             self.assertIn(slot.astimezone(ZoneInfo('America/Chicago')).strftime('%H:%M'), ('11:30', '17:30'))
 
+    def test_slots_skip_times_held_by_prepared_drafts(self):
+        now = datetime(2026, 10, 5, 9, 20, tzinfo=timezone.utc)
+        first = importer.posting_slots({'timezone': 'America/Chicago'}, now, 1)[0]
+        second = importer.posting_slots({'timezone': 'America/Chicago'}, now, 1, {first.astimezone(timezone.utc)})[0]
+        self.assertNotEqual(first, second)
+
     def test_checklist_splits_sentences(self):
         items = importer.checklist('Confirm whether the fix is live. Check the image; then approve.')
         self.assertEqual(items[0], 'Confirm whether the fix is live')
