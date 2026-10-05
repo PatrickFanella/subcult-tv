@@ -1,0 +1,107 @@
+{
+  "prompts": [
+    {
+      "style": "cel-animation",
+      "prompt": "Use case: stylized-concept. Produce ONE square avatar portrait as a bold artistic reinterpretation of the real person in the reference photographs. References are for identity only. Invent a fresh head-and-shoulders pose, turn the head slightly three-quarter and give him a subtle knowing smile. Translate his identity into character design: long oval face, distinctive browline glasses (black top rims and silver lower rims), hazel-gray eyes, short side-swept brown hair, slim nose, thin moustache and small chin stubble, black shirt. Keep those cues recognizable, but freely simplify anatomy and exaggerate silhouette, expression, and shapes. Completely rebuild the face in the requested visual language. DO NOT trace, rotoscope, paint over or texture the photograph; no realistic skin, pores, lens lighting, photographic shading, or photographic eyes. It must read as an original artist-created character, with pronounced stylization immediately apparent at thumbnail size. Centered bust, full hair visible with generous crop margin, expressive pose, simple graphic background. No phone, hands, room, text, logos, watermarks, collage, or panels. Style/medium: Hand-drawn 1990s adventure anime cel animation character design. Angular stylized face, sculpted clumps of swept hair, expressive almond eyes drawn in ink, crisp variable-weight outlines, flat colors, only TWO hard-edged shadow tones. Dynamic slightly raised eyebrow. Clearly animated film character, no gradients or realistic rendering."
+    },
+    {
+      "style": "graphic-cartoon",
+      "prompt": "Use case: stylized-concept. Produce ONE square avatar portrait as a bold artistic reinterpretation of the real person in the reference photographs. References are for identity only. Invent a fresh head-and-shoulders pose, turn the head slightly three-quarter and give him a subtle knowing smile. Translate his identity into character design: long oval face, distinctive browline glasses (black top rims and silver lower rims), hazel-gray eyes, short side-swept brown hair, slim nose, thin moustache and small chin stubble, black shirt. Keep those cues recognizable, but freely simplify anatomy and exaggerate silhouette, expression, and shapes. Completely rebuild the face in the requested visual language. DO NOT trace, rotoscope, paint over or texture the photograph; no realistic skin, pores, lens lighting, photographic shading, or photographic eyes. It must read as an original artist-created character, with pronounced stylization immediately apparent at thumbnail size. Centered bust, full hair visible with generous crop margin, expressive pose, simple graphic background. No phone, hands, room, text, logos, watermarks, collage, or panels. Style/medium: Mid-century modern 2D animation character design. Highly stylized geometric shapes, exaggerated elongated head and small body, oversized graphic browline glasses, triangular nose, asymmetric playful smirk, hair formed from three angular shapes. Flat limited colors, elegant rhythmic silhouette and small abstract background shapes. Bold shape-driven cartoon, no realistic anatomy or shading."
+    },
+    {
+      "style": "stop-motion",
+      "prompt": "Use case: stylized-concept. Produce ONE square avatar portrait as a bold artistic reinterpretation of the real person in the reference photographs. References are for identity only. Invent a fresh head-and-shoulders pose, turn the head slightly three-quarter and give him a subtle knowing smile. Translate his identity into character design: long oval face, distinctive browline glasses (black top rims and silver lower rims), hazel-gray eyes, short side-swept brown hair, slim nose, thin moustache and small chin stubble, black shirt. Keep those cues recognizable, but freely simplify anatomy and exaggerate silhouette, expression, and shapes. Completely rebuild the face in the requested visual language. DO NOT trace, rotoscope, paint over or texture the photograph; no realistic skin, pores, lens lighting, photographic shading, or photographic eyes. It must read as an original artist-created character, with pronounced stylization immediately apparent at thumbnail size. Centered bust, full hair visible with generous crop margin, expressive pose, simple graphic background. No phone, hands, room, text, logos, watermarks, collage, or panels. Style/medium: Whimsical stop-motion puppet character. Head deliberately elongated, prominent sculpted nose, tiny beadlike hazel eyes, exaggerated browline glasses, short hair constructed from chunky clay tufts, little wire moustache and dotlike chin stubble. Hand-built plasticine and felt clothing, seams and fingerprints, a miniature photographed puppet set with simple colored backdrop. Obviously a puppet, never a photoreal human with added texture."
+    },
+    {
+      "style": "paper-cutout",
+      "prompt": "Use case: stylized-concept. Produce ONE square avatar portrait as a bold artistic reinterpretation of the real person in the reference photographs. References are for identity only. Invent a fresh head-and-shoulders pose, turn the head slightly three-quarter and give him a subtle knowing smile. Translate his identity into character design: long oval face, distinctive browline glasses (black top rims and silver lower rims), hazel-gray eyes, short side-swept brown hair, slim nose, thin moustache and small chin stubble, black shirt. Keep those cues recognizable, but freely simplify anatomy and exaggerate silhouette, expression, and shapes. Completely rebuild the face in the requested visual language. DO NOT trace, rotoscope, paint over or texture the photograph; no realistic skin, pores, lens lighting, photographic shading, or photographic eyes. It must read as an original artist-created character, with pronounced stylization immediately apparent at thumbnail size. Centered bust, full hair visible with generous crop margin, expressive pose, simple graphic background. No phone, hands, room, text, logos, watermarks, collage, or panels. Style/medium: Layered cut-paper animation portrait. Face and hair entirely constructed from a small number of asymmetric hand-cut colored paper shapes, bold stylized angular nose, cut-paper brows, simple illustrated eyes, unmistakable browline glasses. Visible paper edges and layering shadows. Graphic flattened anatomy, warm cheek shapes, playful silhouette, black shirt. Strong folk-art collage character design, no photographic face."
+    },
+    {
+      "style": "loose-ink",
+      "prompt": "Use case: stylized-concept. Produce ONE square avatar portrait as a bold artistic reinterpretation of the real person in the reference photographs. References are for identity only. Invent a fresh head-and-shoulders pose, turn the head slightly three-quarter and give him a subtle knowing smile. Translate his identity into character design: long oval face, distinctive browline glasses (black top rims and silver lower rims), hazel-gray eyes, short side-swept brown hair, slim nose, thin moustache and small chin stubble, black shirt. Keep those cues recognizable, but freely simplify anatomy and exaggerate silhouette, expression, and shapes. Completely rebuild the face in the requested visual language. DO NOT trace, rotoscope, paint over or texture the photograph; no realistic skin, pores, lens lighting, photographic shading, or photographic eyes. It must read as an original artist-created character, with pronounced stylization immediately apparent at thumbnail size. Centered bust, full hair visible with generous crop margin, expressive pose, simple graphic background. No phone, hands, room, text, logos, watermarks, collage, or panels. Style/medium: Expressive avant-garde ink portrait caricature. Energetic gestural brush lines, deliberate distortion of long face and glasses, sparse confident marks, broken contours, striking black ink masses, a few expressive colored brush strokes on rough cream paper. Draw eyes, nose, lips in a few highly selective marks. Loose, witty, hand-drawn and alive; no tracing or photoreal detail."
+    },
+    {
+      "style": "expressive-gouache",
+      "prompt": "Use case: stylized-concept. Produce ONE square avatar portrait as a bold artistic reinterpretation of the real person in the reference photographs. References are for identity only. Invent a fresh head-and-shoulders pose, turn the head slightly three-quarter and give him a subtle knowing smile. Translate his identity into character design: long oval face, distinctive browline glasses (black top rims and silver lower rims), hazel-gray eyes, short side-swept brown hair, slim nose, thin moustache and small chin stubble, black shirt. Keep those cues recognizable, but freely simplify anatomy and exaggerate silhouette, expression, and shapes. Completely rebuild the face in the requested visual language. DO NOT trace, rotoscope, paint over or texture the photograph; no realistic skin, pores, lens lighting, photographic shading, or photographic eyes. It must read as an original artist-created character, with pronounced stylization immediately apparent at thumbnail size. Centered bust, full hair visible with generous crop margin, expressive pose, simple graphic background. No phone, hands, room, text, logos, watermarks, collage, or panels. Style/medium: Bold contemporary gouache illustration portrait. Large opaque flat brush shapes, visible dry-brush strokes, unexpected expressive color planes across the face, exaggerated slightly elongated head, simplified eyes and lips, hair as blocky swept shape, black browline glasses as a graphic anchor. Friendly knowing expression, flat graphic background, painterly yet entirely illustrated anatomy. No photo-based skin or realistic rendering."
+    }
+  ],
+  "references": [
+    "/home/onnwee/Work/Subcult/subcult-tv/studio/branding/patrick/portraits/Original Cropped Edits/02-black-shirt-no-glasses-avatar.png",
+    "/home/onnwee/Work/Subcult/subcult-tv/studio/branding/patrick/portraits/Earlier Portraits/03-casual-glasses.jpg"
+  ],
+  "generator": "built-in image_gen",
+  "date": "2026-10-05",
+  "publication_status": "unselected",
+  "images": [
+    {
+      "style": "cel-animation",
+      "file": "cel-animation.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-9c6a688a-61bf-4a43-81d6-5547586b46f5.png",
+      "sha256": "e67e515cad369fc9b09e80da481ec1ed70d152f38041668cf4d6304cd87648dc",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "style": "paper-cutout",
+      "file": "paper-cutout.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-f2c85f6b-c0ad-4c6c-8f3f-3e7373cba6b2.png",
+      "sha256": "7dd38764a4a8fad93c357cc697e61bd9f6e4188c6bd59ca94caea6744393ade7",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "style": "stop-motion",
+      "file": "stop-motion.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-1e5a0673-7bf9-4263-bfde-f7d4ba01aa68.png",
+      "sha256": "83e4983462a90929fe749957f9c8f637789ed788718301c9604776441d479c48",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "style": "expressive-gouache",
+      "file": "expressive-gouache.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-8661fa6e-ae71-481d-9c9c-1809646efcbd.png",
+      "sha256": "08a71bf9f971d443157285623312078e8257428a18f3c44480177070393214ba",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "style": "graphic-cartoon",
+      "file": "graphic-cartoon.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-2e9b28ee-a35c-4181-ae72-e12a51bad520.png",
+      "sha256": "d342967c71a08fa7159a18c705bb4b8350f2e742e4160700e72bbaa428fe0b9a",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "style": "loose-ink",
+      "file": "loose-ink.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-573974df-423d-41c6-b286-67c6187b4f66.png",
+      "sha256": "7d3a110a66b9141954e05e467390950c1eb26a3a38c75ccea42a432e91c11e5e",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "reference_hashes": [
+    {
+      "path": "/home/onnwee/Work/Subcult/subcult-tv/studio/branding/patrick/portraits/Original Cropped Edits/02-black-shirt-no-glasses-avatar.png",
+      "sha256": "4924acb8ea39620e4e5deaa8a2b94cb5bc577abe198edec5fd3e533414d7659f"
+    },
+    {
+      "path": "/home/onnwee/Work/Subcult/subcult-tv/studio/branding/patrick/portraits/Earlier Portraits/03-casual-glasses.jpg",
+      "sha256": "7f19bc86d67d3caf39ab98cc8ed65ef4954b98271637b5d80a208ead1328194a"
+    }
+  ]
+}

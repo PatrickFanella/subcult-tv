@@ -1,0 +1,38 @@
+{
+  "generator": "built-in image_gen",
+  "subject": "Original adult character with wavy dark hair, brown eyes, round glasses, friendly expression, dark crewneck shirt",
+  "composition": "Square head-and-shoulders avatar portrait",
+  "publication_status": "unselected",
+  "images": [
+    {
+      "style": "watercolor",
+      "file": "watercolor.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-360bd3ee-fa39-4d9c-9da3-c9daf2939f74.png",
+      "sha256": "1a93245c73459fc113b314463b5b60e31c883d1f4c29597b5f8a85aabc3c581c"
+    },
+    {
+      "style": "pixel-art",
+      "file": "pixel-art.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-e30ad60f-00e6-4ff3-b076-d882683432d1.png",
+      "sha256": "12084010202bacfb0f7c19de5ab0090d0e1ef2acf543e0032f97f12f481a0984"
+    },
+    {
+      "style": "oil-painting",
+      "file": "oil-painting.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-f82af110-cd82-463c-a2be-65471c2b4ca7.png",
+      "sha256": "99839a574e752d183e9860a35862dc8a66a2dffdc7c1c3b6e5450ca64bf5be2b"
+    },
+    {
+      "style": "ink-comic",
+      "file": "ink-comic.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-263c5ffe-885a-4a53-ace1-dd7f3be31ed2.png",
+      "sha256": "fab9d38e3b2234716dade0bbcdeca131aebe28b279d0c99aae26a2add8a09b2c"
+    },
+    {
+      "style": "clay",
+      "file": "clay.png",
+      "source": "/home/onnwee/.codex/generated_images/01a10a50-0450-7751-a19d-c48ac47fef58/exec-87c5bde6-bdbd-40e6-b105-91619f173b5b.png",
+      "sha256": "30ee8ea4a3f4b26890d76eb2d5e0610307367e722f6c0546d051d1da88ba63c0"
+    }
+  ]
+}
