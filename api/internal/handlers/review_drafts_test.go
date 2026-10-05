@@ -7,11 +7,10 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/subculture-collective/subcult-tv/api/internal/database"
 	"github.com/subculture-collective/subcult-tv/api/internal/middleware"
-	"github.com/subculture-collective/subcult-tv/api/internal/postiz"
+
 	"image"
 	"image/jpeg"
 	"mime/multipart"
-	"net/http"
 	"net/http/httptest"
 	"os"
 	"path/filepath"
@@ -37,20 +36,12 @@ func TestReviewDraftApprovalIntegration(t *testing.T) {
 		t.Fatal(err)
 	}
 	var submissions atomic.Int32
-	provider := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		if r.Method == "GET" {
-			w.Write([]byte(`[{"id":"patrick","identifier":"instagram-standalone","name":"Patrick"}]`))
-			return
-		}
-		submissions.Add(1)
-		w.Write([]byte(`[{"postId":"review-post","integration":"patrick"}]`))
-	}))
-	defer provider.Close()
+	client := socialTestProvider(t, &submissions, nil, "review-post")
 	root := t.TempDir()
 	snapshot := postingDashboard{GeneratedAt: time.Now().UTC().Format(time.RFC3339), Drafts: []postingDraft{{ID: "20261004T052615.663030Z-changemaker:0", Text: "Prepared", DueAt: time.Now().Add(48 * time.Hour).Format(time.RFC3339)}}}
 	data, _ := json.Marshal(snapshot)
 	os.WriteFile(filepath.Join(root, "posting.json"), data, 0600)
-	h := &Handler{DB: db, StudioRoot: root, Postiz: postiz.New(provider.URL, "test"), PostizAccounts: []string{"patrick"}, PostingMediaBaseURL: "https://example.test"}
+	h := &Handler{DB: db, StudioRoot: root, SocialPosting: client, SocialAccounts: []string{"patrick"}, PostingMediaBaseURL: "https://example.test"}
 	routes := chi.NewRouter()
 	routes.Put("/{id}", h.SaveReviewDraft)
 	routes.Get("/{id}/media", h.ReviewDraftMedia)

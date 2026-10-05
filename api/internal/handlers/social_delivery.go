@@ -8,7 +8,6 @@ import (
 	"image/jpeg"
 	"io"
 	"net/http"
-	"net/url"
 	"regexp"
 	"strings"
 	"time"
@@ -16,14 +15,14 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/subculture-collective/subcult-tv/api/internal/middleware"
-	"github.com/subculture-collective/subcult-tv/api/internal/postiz"
+	"github.com/subculture-collective/subcult-tv/api/internal/postybirb"
 )
 
 var requestIDPattern = regexp.MustCompile(`^[a-zA-Z0-9-]{16,80}$`)
 var mediaIDPattern = regexp.MustCompile(`^[a-f0-9]{48}$`)
 
 func (h *Handler) allowedSocial(id string) bool {
-	for _, allowed := range h.PostizAccounts {
+	for _, allowed := range h.SocialAccounts {
 		if id == allowed {
 			return true
 		}
@@ -31,41 +30,68 @@ func (h *Handler) allowedSocial(id string) bool {
 	return false
 }
 func (h *Handler) socialReady() bool {
-	return h.Postiz != nil && h.DB != nil && len(h.PostizAccounts) > 0
+	return h.SocialPosting != nil && h.DB != nil && len(h.SocialAccounts) > 0
 }
 
 // SocialDelivery is live provider evidence, independent of prepared snapshots.
 func (h *Handler) SocialDelivery(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Cache-Control", "private, no-store")
 	if !h.socialReady() {
-		writeError(w, 503, "Postiz delivery is not configured")
+		writeError(w, 503, "PostyBirb delivery is not configured")
 		return
 	}
-	accounts, err := h.Postiz.Accounts(r.Context())
+	accounts, err := h.SocialPosting.Accounts(r.Context())
 	if err != nil {
-		writeError(w, 502, "Postiz accounts are unavailable")
+		writeError(w, 502, "PostyBirb accounts are unavailable")
 		return
 	}
-	selected := []postiz.Account{}
+	selected := []postybirb.SocialAccount{}
 	for _, a := range accounts {
 		if h.allowedSocial(a.ID) && (a.Identifier == "instagram-standalone" || a.Identifier == "instagram") {
 			selected = append(selected, a)
 		}
 	}
-	posts, err := h.Postiz.Posts(r.Context())
+	rows, err := h.DB.Query(r.Context(), `SELECT provider_post_id,account_id,caption,due_at,status FROM social_schedules WHERE provider='postybirb' AND due_at BETWEEN now()-INTERVAL '30 days' AND now()+INTERVAL '90 days' ORDER BY due_at`)
 	if err != nil {
-		writeError(w, 502, "Postiz delivery status is unavailable")
+		writeError(w, 503, "Delivery receipts are unavailable")
 		return
 	}
-	selectedPosts := []postiz.Post{}
-	for _, p := range posts {
-		if h.allowedSocial(p.Integration.ID) {
-			u, e := url.Parse(p.ReleaseURL)
-			if e != nil || u.Scheme != "https" || (u.Hostname() != "www.instagram.com" && u.Hostname() != "instagram.com") {
-				p.ReleaseURL = ""
-			}
-			selectedPosts = append(selectedPosts, p)
+	defer rows.Close()
+	selectedPosts := []postybirb.SocialPost{}
+	for rows.Next() {
+		var p postybirb.SocialPost
+		var due time.Time
+		var status string
+		if rows.Scan(&p.ID, &p.Integration.ID, &p.Content, &due, &status) != nil {
+			writeError(w, 503, "Delivery receipts are unavailable")
+			return
 		}
+		if !h.allowedSocial(p.Integration.ID) {
+			continue
+		}
+		p.PublishDate = due.UTC().Format(time.RFC3339)
+		p.State = "REVIEW"
+		for _, a := range selected {
+			if a.ID == p.Integration.ID {
+				p.Integration.Name = a.Name
+			}
+		}
+		if p.ID != "" {
+			state, link, e := h.SocialPosting.SocialStatus(r.Context(), p.ID, p.Integration.ID)
+			if e != nil {
+				writeError(w, 502, "PostyBirb delivery status is unavailable")
+				return
+			}
+			p.State, p.ReleaseURL = state, link
+		}
+		if status != "scheduled" {
+			p.State = "REVIEW"
+		}
+		selectedPosts = append(selectedPosts, p)
+	}
+	if rows.Err() != nil {
+		writeError(w, 503, "Delivery receipts are unavailable")
+		return
 	}
 	writeJSON(w, 200, map[string]any{"accounts": selected, "posts": selectedPosts, "checked_at": time.Now().UTC().Format(time.RFC3339), "approval_mode": "manual", "minimum_lead_hours": 24})
 }
@@ -78,8 +104,8 @@ func (h *Handler) ApproveSchedule(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 403, "Admin approval is required")
 		return
 	}
-	if !h.socialReady() || h.PostingMediaBaseURL == "" {
-		writeError(w, 503, "Postiz scheduling is not configured")
+	if !h.socialReady() {
+		writeError(w, 503, "PostyBirb scheduling is not configured")
 		return
 	}
 	if err := r.ParseMultipartForm(1 << 20); err != nil {
@@ -128,7 +154,7 @@ func (h *Handler) ApproveSchedule(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		if status != "scheduled" {
-			writeError(w, 409, "Submission is pending or uncertain. Check Postiz before creating another approval")
+			writeError(w, 409, "Submission is pending or uncertain. Check PostyBirb before creating another approval")
 			return
 		}
 		writeJSON(w, 200, map[string]string{"status": status, "post_id": providerID})
@@ -138,12 +164,12 @@ func (h *Handler) ApproveSchedule(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 400, "Schedule between 24 hours and 90 days ahead")
 		return
 	}
-	accounts, err := h.Postiz.Accounts(r.Context())
+	accounts, err := h.SocialPosting.Accounts(r.Context())
 	if err != nil {
-		writeError(w, 502, "Postiz accounts could not be checked")
+		writeError(w, 502, "PostyBirb accounts could not be checked")
 		return
 	}
-	var target postiz.Account
+	var target postybirb.SocialAccount
 	for _, a := range accounts {
 		if a.ID == accountID {
 			target = a
@@ -160,7 +186,7 @@ func (h *Handler) ApproveSchedule(w http.ResponseWriter, r *http.Request) {
 	}
 	mediaID := hex.EncodeToString(nonce[:])
 	user, _ := r.Context().Value(middleware.UserIDKey).(string)
-	tag, err := h.DB.Exec(r.Context(), `INSERT INTO social_schedules(request_id,payload_hash,account_id,caption,due_at,approved_by,media_id,media,status) VALUES($1,$2,$3,$4,$5,$6,$7,$8,'submitting') ON CONFLICT DO NOTHING`, id, digest, accountID, caption, due, user, mediaID, media)
+	tag, err := h.DB.Exec(r.Context(), `INSERT INTO social_schedules(request_id,payload_hash,account_id,caption,due_at,approved_by,media_id,media,status,provider) VALUES($1,$2,$3,$4,$5,$6,$7,$8,'submitting','postybirb') ON CONFLICT DO NOTHING`, id, digest, accountID, caption, due, user, mediaID, media)
 	if err != nil {
 		writeError(w, 503, "Approval could not be recorded")
 		return
@@ -169,19 +195,28 @@ func (h *Handler) ApproveSchedule(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 409, "This approval is already being processed. Refresh delivery status")
 		return
 	}
-	receipt, err := h.Postiz.Schedule(r.Context(), target, caption, mediaID, strings.TrimRight(h.PostingMediaBaseURL, "/")+"/api/v1/posting-media/"+mediaID+".jpg", due)
+	providerID, err = h.SocialPosting.CreateInstagram(r.Context(), target.ID, caption, media)
+	// Even a failed configuration call can leave a private draft. Persist that
+	// identity before any scheduling mutation so uncertainty is reconcilable.
+	if providerID != "" {
+		if _, saveErr := h.DB.Exec(r.Context(), `UPDATE social_schedules SET provider_post_id=$2 WHERE request_id=$1`, id, providerID); saveErr != nil {
+			writeError(w, 502, "Private PostyBirb draft created, but its receipt could not be saved. Check PostyBirb before retrying")
+			return
+		}
+	}
+	if err == nil {
+		err = h.SocialPosting.QueueInstagram(r.Context(), providerID, target.ID, caption, due)
+	}
 	if err != nil {
-		// Keep the durable submitting reservation even if this update fails.
 		h.DB.Exec(r.Context(), `UPDATE social_schedules SET status='uncertain' WHERE request_id=$1`, id)
-		writeError(w, 502, "Scheduling could not be confirmed. Check Postiz before retrying; this approval will not be submitted twice")
+		writeError(w, 502, "Scheduling could not be confirmed. Check PostyBirb before retrying; this approval will not be submitted twice")
 		return
 	}
-	_, err = h.DB.Exec(r.Context(), `UPDATE social_schedules SET status='scheduled',provider_post_id=$2 WHERE request_id=$1`, id, receipt[0].PostID)
-	if err != nil {
-		writeError(w, 502, "Postiz accepted the post, but the local receipt could not be saved. Check Postiz before retrying")
+	if _, err = h.DB.Exec(r.Context(), `UPDATE social_schedules SET status='scheduled' WHERE request_id=$1`, id); err != nil {
+		writeError(w, 502, "PostyBirb accepted the schedule, but the local receipt could not be saved. Check PostyBirb before retrying")
 		return
 	}
-	writeJSON(w, 201, map[string]string{"status": "scheduled", "post_id": receipt[0].PostID})
+	writeJSON(w, 201, map[string]string{"status": "scheduled", "post_id": providerID})
 }
 
 // PostingMedia exposes only the individual image explicitly approved for posting.

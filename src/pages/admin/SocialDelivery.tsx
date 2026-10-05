@@ -83,7 +83,7 @@ export default function SocialDelivery({
     form.set('media', media);
     try {
       const result = await approveSocialSchedule(form);
-      setReceipt(`Scheduled in Postiz · ${result.post_id}. Delivery is still pending.`);
+      setReceipt(`Scheduled in PostyBirb · ${result.post_id}. Delivery is still pending.`);
       setApproved(false);
       setReload((n) => n + 1);
       // Keep this request ID for a safe repeat; editing starts a new approval.
@@ -103,7 +103,7 @@ export default function SocialDelivery({
   return (
     <section className="posting-section" aria-labelledby="delivery-heading">
       <div className="production-section-title">
-        <p className="studio-label">POSTIZ / INSTAGRAM</p>
+        <p className="studio-label">POSTYBIRB / INSTAGRAM</p>
         <h2 id="delivery-heading">Scheduling & delivery</h2>
       </div>
       <p>
@@ -114,8 +114,8 @@ export default function SocialDelivery({
       <button type="button" onClick={() => setReload((n) => n + 1)} disabled={busy}>
         Refresh delivery status
       </button>{' '}
-      <a href="https://postiz.subcult.tv/launches" target="_blank" rel="noreferrer">
-        Manage or cancel in Postiz ↗
+      <a href="https://postybirb.subcult.tv" target="_blank" rel="noreferrer">
+        Manage or cancel in PostyBirb ↗
       </a>
       {data && (
         <>
@@ -236,8 +236,8 @@ export default function SocialDelivery({
               </button>
               {uncertain && (
                 <p role="alert">
-                  Check Postiz to reconcile this submission before starting another approval. Reload
-                  this page only after checking.
+                  Check PostyBirb to reconcile this submission before starting another approval.
+                  Reload this page only after checking.
                 </p>
               )}
               {receipt && <p role="status">{receipt}</p>}
@@ -245,7 +245,7 @@ export default function SocialDelivery({
           )}
           <div className="posting-history">
             <table>
-              <caption>Postiz history: previous 30 days and next 90 days</caption>
+              <caption>PostyBirb history: previous 30 days and next 90 days</caption>
               <thead>
                 <tr>
                   <th>Account</th>
@@ -281,7 +281,7 @@ export default function SocialDelivery({
                 ))}
               </tbody>
             </table>
-            {data.posts.length === 0 && <p>No Postiz posts in this window.</p>}
+            {data.posts.length === 0 && <p>No PostyBirb posts in this window.</p>}
           </div>
         </>
       )}

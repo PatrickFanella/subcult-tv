@@ -80,7 +80,7 @@ export default function AdminPosts() {
     setNotice('');
     try {
       const result = await approveReviewDraft(draft.draft_id, draft.version);
-      setNotice(`Scheduled in Postiz · ${result.post_id}. Publication is pending.`);
+      setNotice(`Scheduled in PostyBirb · ${result.post_id}. Publication is pending.`);
     } catch (e) {
       setNotice(e instanceof Error ? e.message : 'Scheduling could not be confirmed');
     } finally {
@@ -226,8 +226,8 @@ export default function AdminPosts() {
                     {submitted && (
                       <p className="studio-note">
                         {edit.status === 'scheduled'
-                          ? 'Queued in Postiz. See Scheduled & delivered.'
-                          : 'Check Postiz to reconcile this submission before retrying.'}
+                          ? 'Queued in PostyBirb. See Scheduled & delivered.'
+                          : 'Check PostyBirb to reconcile this submission before retrying.'}
                       </p>
                     )}
                     <div className="posting-card-buttons">
