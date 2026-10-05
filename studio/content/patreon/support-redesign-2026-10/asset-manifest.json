@@ -5,48 +5,48 @@
   "mark_policy": "Existing outlined mark nested intact; placement and uniform scaling only",
   "sources": [
     {
-      "path": "branding/library/brands/subcult/GUIDE.md",
-      "sha256": "cade468ea6791b22349ca024b09845d2e19cf9679cfaad7259d39e3fd40ec6af"
+      "path": "brands/subcult/GUIDE.md",
+      "sha256": "ac7701ce45737c4b3e858ce51c5ded5dbb35694dceeb4464c7e0bcbffe403e33"
     },
     {
-      "path": "branding/library/brands/subcult/tokens.json",
+      "path": "brands/subcult/tokens.json",
       "sha256": "a10678e3faa3e6385a815ebf6191a5e247d66e84b3d584355b73cfb3689a5091"
     },
     {
-      "path": "branding/library/brands/subcult/logos/mark-primary-outlined.svg",
+      "path": "brands/subcult/logos/mark-primary-outlined.svg",
       "sha256": "f3d146fa2bd5e5ab409b3f16191a85aff8e9eaef8336dfaf79ae1585947dd140"
     },
     {
-      "path": "branding/library/brands/subcult/logos/master.svg",
+      "path": "brands/subcult/logos/master.svg",
       "sha256": "f3d146fa2bd5e5ab409b3f16191a85aff8e9eaef8336dfaf79ae1585947dd140"
     },
     {
-      "path": "branding/library/brands/subcult/fonts/JetBrains-Mono-0.ttf",
+      "path": "brands/subcult/fonts/JetBrains-Mono-0.ttf",
       "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
     },
     {
-      "path": "branding/library/brands/subcult/fonts/JetBrains-Mono-1.ttf",
+      "path": "brands/subcult/fonts/JetBrains-Mono-1.ttf",
       "sha256": "a1d92abc6b02a87faed23d98067ab1027e8e95242fd7c9978a072ea383b89d1a"
     },
     {
-      "path": "branding/library/brands/subcult/fonts/Oswald-0.ttf",
+      "path": "brands/subcult/fonts/Oswald-0.ttf",
       "sha256": "bd6ff5a83bcdc92d7aac6dbb16e4dd2b0b0320bec6402bb81f5dd9735b500e46"
     },
     {
-      "path": "branding/library/brands/subcult/fonts/Oswald-1.ttf",
+      "path": "brands/subcult/fonts/Oswald-1.ttf",
       "sha256": "a6ee8b91ec269a6f48631ba4ba1a3ab7e5039e5482dda8dc9672ee4620d7bd68"
     },
     {
-      "path": "branding/library/brands/subcult/fonts/Space-Grotesk-0.ttf",
+      "path": "brands/subcult/fonts/Space-Grotesk-0.ttf",
       "sha256": "ec926d5065eaca49a48f96e312bbae0bbc5733c24215cf5dfabbdccee926fef7"
     },
     {
-      "path": "branding/library/brands/subcult/fonts/Space-Grotesk-1.ttf",
+      "path": "brands/subcult/fonts/Space-Grotesk-1.ttf",
       "sha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85"
     },
     {
       "path": "content/patreon/support-redesign-2026-10/build_assets.py",
-      "sha256": "d474de24a02b76355068679b274f3f83cd78155af5ed094f1d5041066c914c23"
+      "sha256": "fc4721761f0542d0f76a07ae12be75870afa1d7c51e5e56739461c77a84f0e28"
     }
   ],
   "assets": [

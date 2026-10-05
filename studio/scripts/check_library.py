@@ -7,7 +7,19 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = ROOT.parent
-LIBRARY = ROOT / 'branding/library'
+TOOLS = ROOT / 'brand-tools'
+BRANDS = ROOT / 'brands'
+STUDIES = [ROOT / 'studies' / name for name in ('clpr-directions', 'corkboard-directions', 'patrick-logo-study')]
+
+
+def relocate(name, relocations):
+    """Map a path recorded at the cleanup baseline to its current location."""
+    for entry in relocations:
+        for old, new in entry['moves']:
+            if name == old or name.startswith(old.rstrip('/') + '/'):
+                name = new + name[len(old):]
+                break
+    return name
 
 
 def digest(path):
@@ -35,8 +47,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check-cleanup-originals', action='store_true', help='Compare current SVGs with the one-time cleanup baseline')
     args = parser.parse_args()
-    manifests = [LIBRARY / 'asset-manifest.json', ROOT / 'branding/patrick/asset-manifest.json', ROOT / 'branding/patrick/waveform-variations/manifest.json']
-    manifests += sorted((LIBRARY / 'brands').glob('*/asset-manifest.json'))
+    manifests = [ROOT / 'asset-manifest.json', TOOLS / 'patrick/asset-manifest.json', TOOLS / 'patrick/waveform-variations/manifest.json']
+    manifests += sorted(BRANDS.glob('*/asset-manifest.json'))
     assets = sum(check_manifest(path) for path in manifests)
     if args.check_cleanup_originals:
         receipt = json.loads((REPOSITORY / 'docs/cleanup-receipt.json').read_text())
@@ -48,13 +60,14 @@ def main():
             if unknown:
                 raise ValueError(f'Superseding entry names SVGs outside the baseline: {sorted(unknown)[:3]}')
             superseded.update(entry['svg_sha256'])
+        relocations = receipt.get('relocations', [])
         for name, expected in receipt['retained_svg_sha256'].items():
-            source = REPOSITORY / name
+            source = REPOSITORY / relocate(name, relocations)
             if not source.is_file() or digest(source) != superseded.get(name, expected):
                 raise ValueError(f'Preserved original changed since cleanup: {name}')
         baseline = len(receipt['retained_svg_sha256']) - len(superseded)
         print(f'Verified {baseline} exact SVG hashes from the cleanup baseline and {len(superseded)} recorded regenerations.')
-    svgs = list(LIBRARY.rglob('*.svg')) + list((ROOT / 'branding/patrick').rglob('*.svg'))
+    svgs = [path for folder in [BRANDS, TOOLS, *STUDIES] for path in folder.rglob('*.svg')]
     for path in svgs:
         ET.parse(path)
     print(f'Verified {len(manifests)} manifests ({assets} entries) and {len(svgs)} current SVGs.')

@@ -1,0 +1,257 @@
+{
+  "prepared_at": "2026-10-02",
+  "direction": "Patch / routed signal",
+  "selection": "user, 2026-10-02",
+  "source_revision": "784a1ac0706779a02ab51deb2ad93c936c621660",
+  "mark_policy": "Approved open frame plus original waveform; lavender default, original masters untouched",
+  "sources": [
+    {
+      "path": "brand-tools/references/patrick-variations/mono-outlined.svg",
+      "sha256": "6019579da7d7703033e105369efca03db15a33293ec53a364b410c02028bc22b"
+    },
+    {
+      "path": "brand-tools/patrick/waveform_variations.py",
+      "sha256": "5305d75107e93ed79166f1725801e12cef90d74dd4469e4024dafc7ee38e6cb1"
+    },
+    {
+      "path": "brand-tools/patrick/logo-selection.json",
+      "sha256": "0df8ebac5d35401a7c8e4cb64231da5c1926a521b128738967d04046717c0f89"
+    },
+    {
+      "path": "brand-tools/references/patrick-variations/primary-outlined.svg",
+      "sha256": "3c8e7750f3b364d275c7694c3599483209b3b4e5b18e0a53d0923e1dffbed71c"
+    },
+    {
+      "path": "brand-tools/patrick/source-observation.json",
+      "sha256": "f541636fdcf43e2b04f43803da820a3e8baec1528ba8af73574d2699a1b2c4c6"
+    },
+    {
+      "path": "brands/patrick__eff/fonts/InterVariable.ttf",
+      "sha256": "9ec9c762dca4c6be8d8532e230a9fd98f7051083da6e5bc83c8594cd12e4c6e3"
+    },
+    {
+      "path": "brands/patrick__eff/fonts/JetBrains-Mono-0.ttf",
+      "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+    },
+    {
+      "path": "brands/patrick__eff/fonts/JetBrains-Mono-1.ttf",
+      "sha256": "a1d92abc6b02a87faed23d98067ab1027e8e95242fd7c9978a072ea383b89d1a"
+    },
+    {
+      "path": "brands/patrick__eff/fonts/Space-Grotesk-0.ttf",
+      "sha256": "ec926d5065eaca49a48f96e312bbae0bbc5733c24215cf5dfabbdccee926fef7"
+    },
+    {
+      "path": "brands/patrick__eff/fonts/Space-Grotesk-1.ttf",
+      "sha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85"
+    },
+    {
+      "path": "brand-tools/patrick/fonts/InterVariable.ttf",
+      "sha256": "9ec9c762dca4c6be8d8532e230a9fd98f7051083da6e5bc83c8594cd12e4c6e3"
+    },
+    {
+      "path": "brand-tools/patrick/fonts/InterVariable.woff2",
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3"
+    },
+    {
+      "path": "brand-tools/patrick/fonts/inter-OFL.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "path": "brand-tools/patrick/fonts/provenance.json",
+      "sha256": "8b2cfa9879fada6953601de9c05b928805045a0a8088b9b9ed46a2100862e7f5"
+    },
+    {
+      "path": "brand-tools/patrick/build_assets.py",
+      "sha256": "b709a28eae7c0c0eadacecb0979f6ef0eff32d00e5df8d2fb5b4d311062798dd"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/avatar.svg",
+      "sha256": "68bc46ca7da32e6e0a1f3ac459ace35f9960b163b1287fd501c62650d3c14b12"
+    },
+    {
+      "path": "assets/banner-social.svg",
+      "sha256": "d056e79c2f15a53aebaf97bf3a33eb9d316b6b097914fbdea7670d9ef473ce33"
+    },
+    {
+      "path": "assets/banner-wide.svg",
+      "sha256": "c2387c2447e09da0ac108bf03d92df0e21006f78bc27683735c263406df89b5a"
+    },
+    {
+      "path": "assets/case-study-landscape.svg",
+      "sha256": "abbf9903a163047ce4a51e05ef29de32858190213fb47bf504952d6c6548495f"
+    },
+    {
+      "path": "assets/identity-square.svg",
+      "sha256": "242a77a865d999548b95670f4fd789f4ad55150bf8463181eb3c602635ae0a15"
+    },
+    {
+      "path": "assets/mark-dark.svg",
+      "sha256": "90b7bc964c3ad068c49c474848d154103689598834218dc9b521dd5356ff3794"
+    },
+    {
+      "path": "assets/mark-light.svg",
+      "sha256": "e2739a699de2670f983d7c3d5155cb98ed39142fc7f39df9c6c39f0d259a98a0"
+    },
+    {
+      "path": "assets/open-graph.svg",
+      "sha256": "0414cd01e52cef700fb1e83c910d04272612202fe1fac0f7c15136f69fa9dbfe"
+    },
+    {
+      "path": "assets/process-square.svg",
+      "sha256": "0fe53bc0901d203cd44beee4fccec9d767b8b7660df9b5e310fd7781282eb762"
+    },
+    {
+      "path": "assets/quote-square.svg",
+      "sha256": "64282b3237f1ab06ab849a54e82c87ca9f6ffc79d3a6b97ece108f7a40740652"
+    },
+    {
+      "path": "assets/release-square.svg",
+      "sha256": "6da888e7a0111d4eddf7ca12a3fd638eb55ce14edc5cc133af37bfe559ff6e22"
+    },
+    {
+      "path": "assets/routing-motif.svg",
+      "sha256": "0ea0627c2cfd617f1fb3155645ce6ae75b8a90c2567b447d3d9f172099e3a336"
+    },
+    {
+      "path": "assets/screenshot-frame.svg",
+      "sha256": "429e54c454b568d5be568df0d20f21f2096405f0cc26a3112ab0aa8d6ef4b957"
+    },
+    {
+      "path": "assets/spectrum-motif.svg",
+      "sha256": "fec21834eaba414f9498df986577fb0a41602d2b890b8b531a4313c1a9a6d5c1"
+    },
+    {
+      "path": "assets/story.svg",
+      "sha256": "24788ad5982a141e048ec63b4037c7ed6fa7cf2acfea40226541a51bc9a986be"
+    },
+    {
+      "path": "assets/video-end.svg",
+      "sha256": "4448330be0e615f0ace960e0df83963410cdf3ecef7966259bc1424bc5f7fc72"
+    },
+    {
+      "path": "assets/video-lower-third.svg",
+      "sha256": "827df9e2e6a6b5bec6fb863c902ac29e8fecc600df8fe47d5fa2a8c5def11bb0"
+    },
+    {
+      "path": "assets/video-title.svg",
+      "sha256": "5c3a458d4555909148a2eac85bf963a047cd99d7c387436757a1b9233c51bcc3"
+    },
+    {
+      "path": "assets/avatar.png",
+      "sha256": "db67e381570ea2713ec8a9f0abb74f87ac6ac66e038981efada4267209e9a227",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "assets/banner-social.png",
+      "sha256": "d54c40729ed449f7147157146157818ad21513f3e1d9cd46efb2cde033069b0a",
+      "width": 1500,
+      "height": 500
+    },
+    {
+      "path": "assets/banner-wide.png",
+      "sha256": "f0813e2f1db6cff8285696ada7b151e27b0d518f0bc824f6fa8e2d54dd6641b3",
+      "width": 2400,
+      "height": 800
+    },
+    {
+      "path": "assets/brand-board.png",
+      "sha256": "85fcd462b18a051580d8949ecf8eeb48795fd543d884a665b7d6fe71ac763268",
+      "width": 1800,
+      "height": 1940
+    },
+    {
+      "path": "assets/case-study-landscape.png",
+      "sha256": "f819e5a96d4b0ce7155e82883edf61b99c5875394efd4b3801436b41e1a51194",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/identity-square.png",
+      "sha256": "82a749475c769c3290a1158f4c12f76807bd8c1a8587d6aeb4a2c3a63064135f",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "assets/mark-dark.png",
+      "sha256": "6b55ecbccacd1945cc2083a5edc77cab3d71d855e4fd5b403107c369e3d2c00e",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "assets/mark-light.png",
+      "sha256": "5cfdd9751274891ffd2029614d89dd0d13a770f5b4989111711815dd2b791020",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "assets/open-graph.png",
+      "sha256": "f213732129261191a03526ec961b241112c92d7a1968e9ff74f65f200705d26f",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "path": "assets/process-square.png",
+      "sha256": "f733f44963b31b780c1a55951321c63dcac4909ebc7b0fb68b5d5b46a26120ad",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "assets/quote-square.png",
+      "sha256": "72fbb6aa39293944855d7c620ea7b3d5192db5a4a07bb65a79c1cd03af15f578",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "assets/release-square.png",
+      "sha256": "0dcde42d8e3ada1164e7c9c30dfb4fa053336dc0f0b798315e71918585b7715d",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "assets/routing-motif.png",
+      "sha256": "50c87cce4497860e8a5835cc6fb18efe88690aab2a664de04e81f8aaf34394b7",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "assets/screenshot-frame.png",
+      "sha256": "c8c826c4da2f8568990631a7f8919f88ef3c50d67ad26906d3b96960dc058a2d",
+      "width": 1600,
+      "height": 1000
+    },
+    {
+      "path": "assets/spectrum-motif.png",
+      "sha256": "da2fde64a6b32e7028f0eac3aec37d8111719b0abbd3b53de501ae7e6f23e5a2",
+      "width": 1200,
+      "height": 400
+    },
+    {
+      "path": "assets/story.png",
+      "sha256": "20b7997439db095a6421315df1125c738249ecb3309cf58a1cb0547e88a5dab5",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "assets/video-end.png",
+      "sha256": "c59d0b76a49fbaec7e85f7e4ce0f7c33f96d5e2a37551db81d9273466341c802",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/video-lower-third.png",
+      "sha256": "7d00eaa39df9a448f374ecd8957b5f023b792358649d165f4f5e5fa2fe874f26",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/video-title.png",
+      "sha256": "e6d586b07b9666b9fa49c20b7845f3415219119f6972c06b155f4af75e47f48a",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

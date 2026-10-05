@@ -9,7 +9,7 @@ import subprocess
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-PACK = REPO / 'studio/branding/library/brands/subsets'
+PACK = REPO / 'studio/brands/subsets'
 
 def digest(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -49,7 +49,7 @@ def export(site, product):
     from PIL import Image
     (site/'public/og').mkdir(exist_ok=True)
     Image.open(PACK/'social/og.png').convert('RGB').save(site/'public/og/subsets.jpg',quality=93)
-    rows.append({'source':'studio/branding/library/brands/subsets/social/og.png','sourceSha256':digest(PACK/'social/og.png'),'target':'public/og/subsets.jpg','sha256':digest(site/'public/og/subsets.jpg'),'conversion':'RGB JPEG quality 93'})
+    rows.append({'source':'studio/brands/subsets/social/og.png','sourceSha256':digest(PACK/'social/og.png'),'target':'public/og/subsets.jpg','sha256':digest(site/'public/og/subsets.jpg'),'conversion':'RGB JPEG quality 93'})
     (site/'docs/subsets-brand-provenance.json').write_text(json.dumps({'repository':'subculture-collective/subcult-tv','brand':'Subsets','direction':'Personal Utility','approval':'Owner approved branding and public landing on October 4, 2026','files':rows},indent=2)+'\n')
     # Public product repository: a smaller selection, without private guides/fonts.
     target=product/'assets/brand'

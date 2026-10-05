@@ -1,0 +1,80 @@
+{
+  "status": "review-only",
+  "source": "studio/brand-tools/references/subcult-mark-master.svg",
+  "source_sha256": "f3d146fa2bd5e5ab409b3f16191a85aff8e9eaef8336dfaf79ae1585947dd140",
+  "underscore": "Single closed path from x=126.56219 to 215.57934; no overlay rectangle.",
+  "files": [
+    {
+      "path": "a-integrated-color.svg",
+      "sha256": "c9b21d41ebda1f9f4e636bbfad11b16f8eb37a2647c2cc57d7174db2c40c6f92"
+    },
+    {
+      "path": "a-integrated-reverse.svg",
+      "sha256": "501be55f7a1e4adc9bbc9f56d7f8853b0d648824187e7a6ac4eba113441936d2"
+    },
+    {
+      "path": "a-integrated-mono.svg",
+      "sha256": "1963f4bf890e02b5b707e71cf0373a300625f29a3c43c06b2ca5a00a5d7f32a2"
+    },
+    {
+      "path": "b-heavy-outline-color.svg",
+      "sha256": "110f3dbd817b03a54a6bd142ac2071fc1fee207570318b33ad9e3124238c7777"
+    },
+    {
+      "path": "b-heavy-outline-reverse.svg",
+      "sha256": "d785127d42b1ceb4d250008776017e08d4a0a26145024ae61ca646fdf3d64d42"
+    },
+    {
+      "path": "b-heavy-outline-mono.svg",
+      "sha256": "5e5fca5ef3471e0b575f921d96351f133904cd59f928ec91fa89bd1aae591b37"
+    },
+    {
+      "path": "c-solid-color.svg",
+      "sha256": "e1b4c2923a20e4e1bc47b25e0db1a233308dcccf4dafa779d6d944a302daaf55"
+    },
+    {
+      "path": "c-solid-reverse.svg",
+      "sha256": "9e842fe44dba6b48677114d5645ef8972702223bdbc95159cd24fae1bd4a259e"
+    },
+    {
+      "path": "c-solid-mono.svg",
+      "sha256": "04d9f05b80f9a77d6deda85d7fea14bede26d4ae6bfa92b7fb519668ddeba4d0"
+    },
+    {
+      "path": "d-compact-color.svg",
+      "sha256": "ef161b12a4395112f3e6341296843958f6d26291dcde34eb9df3b6f6d828e512"
+    },
+    {
+      "path": "d-compact-reverse.svg",
+      "sha256": "7240ebc93946f212f9227d9787b365029c69a0360e2c6f13fd2f4e70c70053a6"
+    },
+    {
+      "path": "d-compact-mono.svg",
+      "sha256": "9b4f6105744db8bf44bb9f8049b938492fc6913cdf8657a3db60dfc45ba3ba4e"
+    },
+    {
+      "path": "b-registration-color.svg",
+      "sha256": "95fb70d2a9f5fbd9235aebe8b48623323084aad44d3e034eb7bb85a673ecaacb"
+    },
+    {
+      "path": "b-registration-reverse.svg",
+      "sha256": "aaecbd759f63f28ae49760c96a60198312d77b60a29791867828deb5923bc38d"
+    },
+    {
+      "path": "b-registration-mono.svg",
+      "sha256": "ce392a03829f6ec7469f526552490a16b91b8a351844e9378942d4c7145055f9"
+    },
+    {
+      "path": "c-registration-color.svg",
+      "sha256": "f1920bd3d5f05b05db8fbdd2e1e783779a87631f605730293f017eeca9551697"
+    },
+    {
+      "path": "c-registration-reverse.svg",
+      "sha256": "459c4d634beff8db629cb61050c74972fef83c894998c256589f6c247d710998"
+    },
+    {
+      "path": "c-registration-mono.svg",
+      "sha256": "81a301b2e7b62f23f0a26add33a6c22b3b3f8db40a97f6800c0f1295e6ef38af"
+    }
+  ]
+}

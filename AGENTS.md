@@ -6,6 +6,6 @@ This repository is private. The root owns the public website, authenticated admi
 
 Public assets require an explicit selection and source hashes. Keep `studio/`, private bundles, credentials and runtime state out of frontend build contexts and public output. Preserve the authenticated catalog and asset allowlist.
 
-Preserve unrelated edits and active worktrees. The repository consolidation does not deploy the website or activate preparation jobs. Follow `docs/REPOSITORY-CONSOLIDATION.md` before switching consumers or retiring the old repository.
+Preserve unrelated edits and active worktrees. A source change does not deploy the website or change installed preparation jobs; the X/Bluesky units run from the Kvant checkout's `studio/automation/social-posting/`, and the Instagram and website/Patreon jobs run from release bundles.
 
-Run checks relevant to the changed components. Studio checks are `make check-studio check-studio-automation`. `make -C studio check-cutover` checks installed Kvant consumers after activation; it is not a portable CI check.
+Run checks relevant to the changed components. Studio checks are `make check-studio check-studio-automation`.

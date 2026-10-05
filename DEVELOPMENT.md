@@ -22,13 +22,13 @@ rtk proxy make dev
 | `api/` | Go HTTP API, authentication, migrations and private asset access |
 | `content/` | Public product catalog and site articles |
 | `public/` | Explicit public assets |
-| `studio/branding/library/` | Current brand packs, generators, fonts and editable masters |
-| `studio/branding/patrick/` | Authoritative Patrick design system and approved logo treatments |
-| `studio/media/library/` | Reviewed media catalog, original files and recipes |
+| `studio/brands/` | One folder per brand: guide, tokens, logos, social, video and product assets |
+| `studio/brand-tools/` | Pack generators, shared fonts, editable masters, the starter kit and Patrick's design-system source |
+| `studio/studies/` | Direction studies, logo reviews, portrait experiments and retired material, outside production exports |
+| `studio/media/` | Reviewed media catalog, original files and recipes |
 | `studio/references/` | Private searchable design-reference catalog and source evidence |
-| `studio/content/` | Social and Patreon planning material |
+| `studio/content/` | Voice guide, social guidance and drafts, Patreon material |
 | `studio/automation/` | Preparation jobs and tracked unit sources |
-| `studio/branding/archive/` | Retired studies and original artwork, outside production exports |
 | `docs/` | Maintained development, API and repository procedures |
 | `ops/` | Explicit host deployment overlays and analytics tooling |
 
@@ -52,7 +52,7 @@ Public routes are `/`, `/products`, `/products/:slug`, `/about`, `/contact`, `/s
 
 Studio originals stay private. Each public asset is selected by name and recorded with its source hash. Private browsing bundles are served through the authenticated API. The frontend build excludes Studio sources, and Tailwind scans only application inputs.
 
-Preparing a draft, approving it, scheduling it, dispatching it and confirming delivery are separate steps. This repository refresh does not authorize social publication, activate timers or deploy the website. Installed consumers still use the original Studio checkout until the [consolidation activation](docs/REPOSITORY-CONSOLIDATION.md) is verified.
+Preparing a draft, approving it, scheduling it, dispatching it and confirming delivery are separate steps. A source change does not authorize social publication, activate timers or deploy the website.
 
 Read [the asset and artifact policy](docs/ASSETS.md), [the cleanup record](docs/REPOSITORY-CLEANUP.md) and [contribution instructions](CONTRIBUTING.md) before changing sources. Historical observations are under `docs/history/` and `studio/docs/history/`; they do not describe current runtime state.
 

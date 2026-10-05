@@ -9,7 +9,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY_ROOT = ROOT.parent
-PACK = ROOT / "branding/library"
+PACK = ROOT / "brand-tools"
+BRANDS = ROOT / "brands"
 
 
 def digest(path):
@@ -34,7 +35,7 @@ def export(destination, site=None, posting_state=None):
 
     brands = []
     for brand in json.loads((PACK / "brands.json").read_text()):
-        folder = PACK / "brands" / brand["slug"]
+        folder = BRANDS / brand["slug"]
         selection = {"approved_variations": []}
         logos = sorted((folder / "logos").glob("*-outlined.svg"))
         variants = folder / "logos/waveform"
@@ -64,10 +65,10 @@ def export(destination, site=None, posting_state=None):
                        "preview": asset(folder / "pack-preview.png"),
                        "assets": library, "logos": [asset(f) for f in logos]})
     media = []
-    for item in json.loads((ROOT / "media/library/catalog.json").read_text())["assets"]:
+    for item in json.loads((ROOT / "media/catalog.json").read_text())["assets"]:
         record = {k: item.get(k) for k in ("id", "title", "products", "rights", "kind", "status", "alt_text", "width", "height", "duration_seconds", "source")}
-        source = (ROOT / "media/library" / item["file"]).resolve()
-        source.relative_to(ROOT / "media/library/files")
+        source = (ROOT / "media" / item["file"]).resolve()
+        source.relative_to(ROOT / "media/files")
         if digest(source) != item["sha256"]:
             raise ValueError("Media hash mismatch: " + item["id"])
         record.update(media_metadata(item))
@@ -118,15 +119,15 @@ def export(destination, site=None, posting_state=None):
     if site:
         site = site.resolve()
         selected = {
-            "public/brand/subcult/mark.svg": PACK / "brands/subcult/logos/mark-light-outlined.svg",
-            "public/brand/subcult/master.svg": PACK / "brands/subcult/logos/master.svg",
-            "public/brand/subcult/compact.svg": PACK / "brands/subcult/logos/mark-compact-primary-outlined.svg",
-            "public/brand/subcult/fisheye-circle.png": PACK / "brands/subcult/logos/mark-fisheye-circle.png",
-            "public/brand/subcult/mark.png": PACK / "brands/subcult/logos/mark-light.png",
-            "public/apple-touch-icon.png": PACK / "brands/subcult/logos/mark-compact-primary.png",
-            "public/favicon.svg": PACK / "brands/subcult/logos/mark-compact-primary-outlined.svg",
+            "public/brand/subcult/mark.svg": BRANDS / "subcult/logos/mark-light-outlined.svg",
+            "public/brand/subcult/master.svg": BRANDS / "subcult/logos/master.svg",
+            "public/brand/subcult/compact.svg": BRANDS / "subcult/logos/mark-compact-primary-outlined.svg",
+            "public/brand/subcult/fisheye-circle.png": BRANDS / "subcult/logos/mark-fisheye-circle.png",
+            "public/brand/subcult/mark.png": BRANDS / "subcult/logos/mark-light.png",
+            "public/apple-touch-icon.png": BRANDS / "subcult/logos/mark-compact-primary.png",
+            "public/favicon.svg": BRANDS / "subcult/logos/mark-compact-primary-outlined.svg",
         }
-        for source in (PACK / "brands/subcult/fonts").iterdir():
+        for source in (BRANDS / "subcult/fonts").iterdir():
             selected["public/brand/subcult/fonts/" + source.name] = source
         provenance = []
         for target, source in selected.items():

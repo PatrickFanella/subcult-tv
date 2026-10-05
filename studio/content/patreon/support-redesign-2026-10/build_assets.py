@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
-BRAND = ROOT / "branding/library/brands/subcult"
+BRAND = ROOT / "brands/subcult"
 ASSETS = HERE / "assets"
 SVG = "http://www.w3.org/2000/svg"
 ET.register_namespace("", SVG)

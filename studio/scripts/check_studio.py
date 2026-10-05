@@ -6,7 +6,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from export_studio import ROOT, PACK, export
+from export_studio import ROOT, PACK, BRANDS, export
 
 
 class StudioExportChecks(unittest.TestCase):
@@ -22,11 +22,11 @@ class StudioExportChecks(unittest.TestCase):
 
     def test_approved_patrick_logos(self):
         brand = next(b for b in self.catalog['brands'] if b['slug'] == 'patrick__eff')
-        selection = json.loads((PACK/'brands/patrick__eff/logos/waveform/selection.json').read_text())
+        selection = json.loads((BRANDS/'patrick__eff/logos/waveform/selection.json').read_text())
         files = self.catalog['files']
         exported = {files[key]['name']: key for key in brand['logos']}
         for slug in selection['approved_variations']:
-            source = PACK/'brands/patrick__eff/logos/waveform'/f'{slug}.svg'
+            source = BRANDS/'patrick__eff/logos/waveform'/f'{slug}.svg'
             self.assertEqual(exported[f'{slug}.svg'], hashlib.sha256(source.read_bytes()).hexdigest())
         for slug in selection['unapproved_variations']:
             self.assertNotIn(f'{slug}.svg', exported)
@@ -80,7 +80,7 @@ class StudioExportChecks(unittest.TestCase):
         self.assertIn('Text converted to paths', outlined['tags'])
         self.assertIn('Light variant', outlined['tags'])
         self.assertEqual(outlined['title'], 'Brand mark light text converted to paths')
-        originals = {a['id']: a for a in json.loads((ROOT/'media/library/catalog.json').read_text())['assets']}
+        originals = {a['id']: a for a in json.loads((ROOT/'media/catalog.json').read_text())['assets']}
         for media in self.catalog['media']:
             self.assertEqual(media['rights'], originals[media['id']]['rights'])
             self.assertEqual(media['status'], originals[media['id']]['status'])
