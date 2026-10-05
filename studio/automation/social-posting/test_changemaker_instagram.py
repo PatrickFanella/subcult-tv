@@ -52,8 +52,11 @@ class ChangemakerInstagramTests(unittest.TestCase):
             (home/'.codex/skills/unslop/SKILL.md').write_text('Preserve facts and uncertainty.')
             item={**self.items['S1'],'id':'S1','kind':'pull request','state':'merged','title':'Improve reading'}
             context={'drafts':[{'run_id':'native-run','draft_sha256':'d'*64,'evidence_sha256':'e'*64,
+                               'draft':'## What people notice\nReaders see the passage.',
                                'evidence':{'status':'complete','items':[item]}}]}
+            prompts=[]
             def generate(command, **kwargs):
+                prompts.append(kwargs['input'])
                 directory=Path(kwargs['cwd'])
                 (directory/'result-model.json').write_text(json.dumps({'drafts':[self.draft],'open_checks':['Check deployment.']}))
                 return subprocess.CompletedProcess(command,0)
@@ -66,6 +69,7 @@ class ChangemakerInstagramTests(unittest.TestCase):
                 self.assertNotIn('approval',result['drafts'][0])
                 self.assertEqual(result['drafts'][0]['media']['asset_ids'],[])
                 self.assertIn('native-run',result['drafts'][0]['evidence'])
+                self.assertIn('What people notice',prompts[0])
                 self.assertEqual(importer.execute(root,state)['status'],'no_new_sources')
 
 

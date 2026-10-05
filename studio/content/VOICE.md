@@ -28,6 +28,7 @@ A page may use one of these when it is the best way to say the thing. Two produc
 - Em dashes are rare. Exclamation marks belong to Kork and clpr, one at a time.
 - Headings use sentence case unless the brand sets capitals in artwork.
 - Humor is allowed where a voice below says so. A joke never replaces the sentence that explains the product.
+- Copy about a change describes what a person meets: who runs into it, what was in their way, what is different now. A reader never saw the old version, so "X replaces Y with Z" tells them nothing. Words from the review pipeline (merged, PR, live check, deployment, verification) stay in private notes; say "not live yet" or "in development" once, where it matters to the reader.
 - Internal documents (plans, runbooks, READMEs, evidence records) have no brand voice. Write them plainly.
 
 ## SUBCULT

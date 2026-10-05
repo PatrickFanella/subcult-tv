@@ -77,7 +77,7 @@ def execute(source_root, state):
                     'draft_sha256': digest['draft_sha256'], 'items': list(items.values())}
         atomic_write(directory/'sources.json', json.dumps(selected, indent=2)+'\n')
         prompt = (HERE/'changemaker-instagram-prompt.md').read_text()+'\n'+json.dumps({
-            'evidence': selected,
+            'evidence': selected, 'digest': digest['draft'],
             'claims': (source_root/'content/social/Product Claims Register.md').read_text(),
             'voice': (HERE.parents[1]/'content/VOICE.md').read_text(),
             'style': (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()})
