@@ -166,6 +166,17 @@ def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change'
                                               'art_direction': ART}), directory, '4-final', 'final', effort='high')
     by_item = {r['item']: r for r in review['reviews']}
     out = []
+    valid, used = {i['id'] for i in evidence.get('items', [])}, set()
+    if mode != 'showcase':
+        kept = []
+        for draft in final['drafts']:
+            # Claims-register IDs (C-...) support wording but are not collected sources; never reuse a source.
+            ids = [sid for sid in dict.fromkeys(draft['source_ids']) if sid in valid and sid not in used]
+            if ids:
+                draft['source_ids'] = ids
+                used.update(ids)
+                kept.append(draft)
+        final['drafts'] = kept
     for n, draft in enumerate(final['drafts']):
         item = brief['items'][draft['item']] if 0 <= draft['item'] < len(brief['items']) else {}
         slug = draft['product'].strip().lower().replace(' ', '-')

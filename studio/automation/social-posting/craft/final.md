@@ -8,7 +8,7 @@ For each item the review kept, start from its base draft and apply every revisio
 
 For each final caption also provide:
 
-- account and source_ids (unchanged from the base unless a source was dropped).
+- account and source_ids: only IDs from `evidence.items` (such as S9), unchanged from the base unless a source was dropped. Claims-register IDs (C-…) are never source IDs.
 - angle: one sentence for the human reviewer: who the post is for and why it should stop them.
 - alt_text: a plain description of what the image will show, under 250 characters.
 - media: the image plan, refined from the review.
