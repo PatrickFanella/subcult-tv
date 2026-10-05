@@ -5,5 +5,5 @@ Description=Prepare unapproved website and Patreon editions from Changemaker
 Type=oneshot
 UMask=0077
 Nice=10
-TimeoutStartSec=12min
+TimeoutStartSec=90min
 ExecStart=/usr/bin/python3 /home/onnwee/.local/share/posting-dashboard/publications/studio/automation/social-posting/changemaker_publications.py --source-root /home/onnwee/Work/Subcult/subcult-tv/studio --state /home/onnwee/.local/state/social-posting --ingest-env /home/onnwee/.config/posting-dashboard/preparation.env

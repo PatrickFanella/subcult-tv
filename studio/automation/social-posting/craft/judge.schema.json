@@ -1,0 +1,87 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "A",
+  "B",
+  "preference",
+  "reason"
+ ],
+ "properties": {
+  "A": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "stop",
+    "read_through",
+    "clarity",
+    "voice",
+    "reason_to_care",
+    "honesty"
+   ],
+   "properties": {
+    "stop": {
+     "type": "integer"
+    },
+    "read_through": {
+     "type": "integer"
+    },
+    "clarity": {
+     "type": "integer"
+    },
+    "voice": {
+     "type": "integer"
+    },
+    "reason_to_care": {
+     "type": "integer"
+    },
+    "honesty": {
+     "type": "integer"
+    }
+   }
+  },
+  "B": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "stop",
+    "read_through",
+    "clarity",
+    "voice",
+    "reason_to_care",
+    "honesty"
+   ],
+   "properties": {
+    "stop": {
+     "type": "integer"
+    },
+    "read_through": {
+     "type": "integer"
+    },
+    "clarity": {
+     "type": "integer"
+    },
+    "voice": {
+     "type": "integer"
+    },
+    "reason_to_care": {
+     "type": "integer"
+    },
+    "honesty": {
+     "type": "integer"
+    }
+   }
+  },
+  "preference": {
+   "type": "string",
+   "enum": [
+    "A",
+    "B",
+    "tie"
+   ]
+  },
+  "reason": {
+   "type": "string"
+  }
+ }
+}

@@ -76,23 +76,33 @@ def execute(source_root, state, ingest_env=None):
             proof = {key: digest[key] for key in ('run_id', 'evidence_sha256', 'draft_sha256')}
             proof['items'] = list(items.values())
             atomic_write(directory/'source.json', json.dumps(proof, indent=2)+'\n')
-            prompt = (HERE/'changemaker-publications-prompt.md').read_text()+'\n'+json.dumps({
-                'evidence': proof, 'digest': digest['draft'],
-                'claims': (source_root/'content/social/Product Claims Register.md').read_text(),
-                'voice': (HERE.parents[1]/'content/VOICE.md').read_text()})
-            command = [cfg['codex'], 'exec', '--ignore-user-config', '--ephemeral', '--skip-git-repo-check',
-                       '-s', 'read-only', '-m', cfg['model'], '--json', '--output-schema',
-                       str(HERE/'changemaker-publications.schema.json'), '-o', str(directory/'result.json'),
-                       '-c', 'approval_policy="never"', '-c', 'web_search="disabled"',
-                       '-c', 'features.shell_tool=false', '-c', 'model_reasoning_effort="medium"', '-']
-            env = {key: value for key, value in os.environ.items() if key not in (
-                'OPENAI_API_KEY', 'CODEX_API_KEY', 'OPENAI_BASE_URL', 'POSTING_PREPARATION_KEY')}
-            with (directory/'events.jsonl').open('w') as out, (directory/'stderr.log').open('w') as err:
-                result = subprocess.run(command, input=prompt, text=True, stdout=out, stderr=err,
-                                        cwd=directory, env=env, timeout=600)
-            if result.returncode:
-                raise ValueError('Publication drafting failed; inspect private evidence')
-            result = json.loads((directory/'result.json').read_text())
+            claims = (source_root/'content/social/Product Claims Register.md').read_text()
+            result = None
+            if cfg.get('craft_publications', False):  # staged edition is still being tuned
+                try:
+                    import craft
+                    result = craft.publication(cfg, proof, digest['draft'], claims, directory/'craft')
+                    validate(result, items)
+                except Exception as error:  # fall back to the single-pass prompt
+                    (directory/'craft-error.txt').write_text(type(error).__name__+': '+str(error)[:2000]+'\n')
+                    result = None
+            if result is None:
+                prompt = (HERE/'changemaker-publications-prompt.md').read_text()+'\n'+json.dumps({
+                    'evidence': proof, 'digest': digest['draft'], 'claims': claims,
+                    'voice': (HERE.parents[1]/'content/VOICE.md').read_text()})
+                command = [cfg['codex'], 'exec', '--ignore-user-config', '--ephemeral', '--skip-git-repo-check',
+                           '-s', 'read-only', '-m', cfg['model'], '--json', '--output-schema',
+                           str(HERE/'changemaker-publications.schema.json'), '-o', str(directory/'result.json'),
+                           '-c', 'approval_policy="never"', '-c', 'web_search="disabled"',
+                           '-c', 'features.shell_tool=false', '-c', 'model_reasoning_effort="medium"', '-']
+                env = {key: value for key, value in os.environ.items() if key not in (
+                    'OPENAI_API_KEY', 'CODEX_API_KEY', 'OPENAI_BASE_URL', 'POSTING_PREPARATION_KEY')}
+                with (directory/'events.jsonl').open('w') as out, (directory/'stderr.log').open('w') as err:
+                    completed = subprocess.run(command, input=prompt, text=True, stdout=out, stderr=err,
+                                               cwd=directory, env=env, timeout=600)
+                if completed.returncode:
+                    raise ValueError('Publication drafting failed; inspect private evidence')
+                result = json.loads((directory/'result.json').read_text())
             validate(result, items)
             selected = {**{key: proof[key] for key in ('run_id', 'evidence_sha256', 'draft_sha256')},
                         'items': [items[key] for key in result['source_ids']]}

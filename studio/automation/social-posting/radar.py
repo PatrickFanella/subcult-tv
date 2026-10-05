@@ -150,7 +150,16 @@ def execute(cfg):
             events=[json.loads(line) for line in (directory/'events.jsonl').read_text().splitlines() if line.strip()]
             proof=runner.verify_evidence(events,cfg)
             result=json.loads((directory/'result.json').read_text())
-            validate(result,context,cfg,now)
+            originals=[draft.get('text') for draft in result['drafts']]
+            if result['drafts'] and cfg.get('polish', True):
+                import craft
+                craft.polish_short(cfg, result['drafts'], directory)
+            try:
+                validate(result,context,cfg,now)
+            except ValueError:
+                for draft,text in zip(result['drafts'],originals):
+                    draft['text']=text
+                validate(result,context,cfg,now)
             catalog = runner.media.context(cfg)
             for draft in result['drafts']:
                 runner.media.validate_choice(draft.get('media'), catalog, draft['account'])

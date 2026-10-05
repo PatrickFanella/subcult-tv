@@ -72,6 +72,45 @@ class ChangemakerInstagramTests(unittest.TestCase):
                 self.assertIn('What people notice',prompts[0])
                 self.assertEqual(importer.execute(root,state)['status'],'no_new_sources')
 
+    def test_slots_are_daytime_chicago_at_least_48_hours_ahead_and_distinct(self):
+        from zoneinfo import ZoneInfo
+        now = datetime(2026, 10, 5, 9, 20, tzinfo=timezone.utc)
+        slots = importer.posting_slots({'timezone': 'America/Chicago'}, now, 3)
+        self.assertEqual(len(set(slots)), 3)
+        for slot in slots:
+            self.assertGreaterEqual((slot - now).total_seconds(), 48*3600)
+            self.assertIn(slot.astimezone(ZoneInfo('America/Chicago')).strftime('%H:%M'), ('11:30', '17:30'))
+
+    def test_slots_skip_times_held_by_prepared_drafts(self):
+        now = datetime(2026, 10, 5, 9, 20, tzinfo=timezone.utc)
+        first = importer.posting_slots({'timezone': 'America/Chicago'}, now, 1)[0]
+        second = importer.posting_slots({'timezone': 'America/Chicago'}, now, 1, {first.astimezone(timezone.utc)})[0]
+        self.assertNotEqual(first, second)
+
+    def test_owner_feedback_keeps_edits_and_rejections_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            (state/'owner-feedback.json').write_text(json.dumps([
+                {'decision': 'approved_as_is', 'original_text': 'a'},
+                {'decision': 'approved_edited', 'original_text': 'We merged a fix.', 'final_text': 'The menu works now.', 'reasons': []},
+                {'decision': 'rejected', 'original_text': 'Thoughts?', 'reasons': ['boring'], 'note': 'bait'}]))
+            feedback = importer.owner_feedback(state)
+            self.assertEqual([f['decision'] for f in feedback], ['approved_edited', 'rejected'])
+
+    def test_checklist_splits_sentences(self):
+        items = importer.checklist('Confirm whether the fix is live. Check the image; then approve.')
+        self.assertEqual(items[0], 'Confirm whether the fix is live')
+        self.assertEqual(len(items), 2)
+
+    def test_recent_captions_reads_only_recent_changemaker_results(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            run = state/'runs'/'20261004T000000Z-changemaker'; run.mkdir(parents=True)
+            (run/'result.json').write_text(json.dumps({'drafts': [{'text': 'An empty button crashed the menu.'}]}))
+            other = state/'runs'/'20261004T000000Z-plan'; other.mkdir(parents=True)
+            (other/'result.json').write_text(json.dumps({'drafts': [{'text': 'X draft'}]}))
+            self.assertEqual(importer.recent_captions(state, datetime.now(timezone.utc)), ['An empty button crashed the menu.'])
+
 
 if __name__ == '__main__':
     unittest.main()
