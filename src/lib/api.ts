@@ -497,10 +497,29 @@ export interface PostingRun {
   checked_at: string;
   observed_at: string;
 }
+export type PostingPlatform = 'instagram' | 'x' | 'bluesky';
+/** A prepared JPEG; the image bytes are served privately by SHA-256. */
+export interface PreparedImage {
+  sha256: string;
+  width: number;
+  height: number;
+  bytes: number;
+}
+export interface PostingCraft {
+  angle: string;
+  reader: string;
+  reason: string;
+  pattern: string;
+  predicted: string;
+  scores: Partial<Record<string, number>>;
+  alternatives: string[];
+}
 export interface PostingDraft {
   id: string;
   run_id: string;
   mode: string;
+  /** Older snapshots omit the platform; derive it with draftPlatform(). */
+  platform?: PostingPlatform;
   week: string;
   account: string;
   text: string;
@@ -509,7 +528,20 @@ export interface PostingDraft {
   evidence: string;
   next_check: string;
   approval: 'unapproved';
-  media: { mode: string; asset_ids: string[]; alt_text: string; brief: string };
+  media: {
+    mode: string;
+    asset_ids: string[];
+    alt_text: string;
+    brief: string;
+    kind?: string;
+    headline?: string;
+    image?: PreparedImage;
+    candidates?: PreparedImage[];
+  };
+  craft?: PostingCraft;
+  checklist?: string[];
+  sources?: string[];
+  supersedes?: string;
 }
 export interface PostingDashboard {
   connected: boolean;

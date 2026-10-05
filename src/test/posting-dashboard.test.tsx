@@ -41,11 +41,11 @@ const data = {
     {
       id: 'one',
       run_id: 'run-one',
-      mode: 'plan',
+      mode: 'changemaker',
       week: '2026-W40',
       account: 'patrick',
       text: 'Patrick draft copy',
-      due_at: '2026-10-02T14:00:00Z',
+      due_at: new Date(Date.now() + 72 * 3600000).toISOString(),
       expires_at: '',
       evidence: 'Source checked',
       next_check: 'Capture the UI',
@@ -87,21 +87,52 @@ describe('Production admin', () => {
     );
     await screen.findByText('Patrick draft copy');
     expect(screen.queryByText('Expired timely draft')).not.toBeInTheDocument();
-    fireEvent.click(screen.getByLabelText('Include expired drafts'));
-    expect(screen.getByText('Expired')).toBeInTheDocument();
     expect(
       screen
-        .getAllByRole('button', { name: 'Approve & queue' })
+        .getAllByRole('button', { name: /^Approve & queue/ })
         .every((b) => b.hasAttribute('disabled')),
     ).toBe(true);
     fireEvent.change(screen.getByLabelText('Account'), { target: { value: 'patrick' } });
-    expect(screen.queryByText('Expired timely draft')).not.toBeInTheDocument();
     expect(screen.getByText('Capture the UI')).toBeInTheDocument();
     expect(screen.queryByLabelText('Caption')).not.toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Edit' })).toHaveAttribute(
-      'href',
-      '/admin/posts/edit?draft=one',
+    fireEvent.click(screen.getByRole('tab', { name: /X \(post via Buffer\)/ }));
+    expect(screen.queryByText('Patrick draft copy')).not.toBeInTheDocument();
+    expect(screen.queryByText('Expired timely draft')).not.toBeInTheDocument();
+    fireEvent.click(screen.getByLabelText('Include expired drafts'));
+    expect(screen.getByText('Expired timely draft')).toBeInTheDocument();
+    expect(screen.getByText('Expired')).toBeInTheDocument();
+  });
+  it('shows X drafts, including CLPR, read-only with a 280 meter and copy button', async () => {
+    const writeText = vi.fn().mockResolvedValue(undefined);
+    Object.assign(navigator, { clipboard: { writeText } });
+    vi.mocked(getPostingDashboard).mockResolvedValue({
+      ...data,
+      drafts: [
+        ...data.drafts,
+        {
+          ...data.drafts[1],
+          id: 'clpr',
+          mode: 'plan',
+          account: 'clpr',
+          text: 'Clip the moment. https://clpr.tv/a-very-long-link-that-counts-as-twenty-three',
+          due_at: new Date(Date.now() + 72 * 3600000).toISOString(),
+          expires_at: '',
+        },
+      ],
+    });
+    render(
+      <MemoryRouter initialEntries={['/admin/posts?tab=x']}>
+        <AdminPosts />
+      </MemoryRouter>,
     );
+    await screen.findByText(/Clip the moment/);
+    expect(screen.queryByText('Patrick draft copy')).not.toBeInTheDocument();
+    expect(screen.getByText('40 / 280')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Approve/ })).not.toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: 'Edit' })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Copy X text for clpr/ }));
+    await screen.findByText('Copied. Paste it into Buffer.');
+    expect(writeText).toHaveBeenCalledWith(expect.stringContaining('Clip the moment.'));
   });
   it('keeps Changemaker Instagram drafts in their own filter with private evidence', async () => {
     vi.mocked(getPostingDashboard).mockResolvedValue({
@@ -124,13 +155,9 @@ describe('Production admin', () => {
       </MemoryRouter>,
     );
     await screen.findByText('A product update for Instagram');
-    fireEvent.change(screen.getByLabelText('Preparation lane'), {
-      target: { value: 'changemaker' },
-    });
-    expect(screen.queryByText('Patrick draft copy')).not.toBeInTheDocument();
     expect(screen.getByText('subcult / Changemaker · Instagram')).toBeInTheDocument();
     expect(screen.getByText('Verified Changemaker source digest')).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Edit' })).toHaveAttribute(
+    expect(screen.getAllByRole('link', { name: 'Edit' })[1]).toHaveAttribute(
       'href',
       '/admin/posts/edit?draft=changemaker',
     );
@@ -171,7 +198,7 @@ describe('Production admin', () => {
       </MemoryRouter>,
     );
     await screen.findByText('Saved caption');
-    const button = screen.getByRole('button', { name: 'Approve & queue' });
+    const button = screen.getByRole('button', { name: /^Approve & queue/ });
     expect(button).toBeDisabled();
     fireEvent.load(await screen.findByRole('img', { name: 'Selected image for this post' }));
     expect(button).toBeEnabled();

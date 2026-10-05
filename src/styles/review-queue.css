@@ -1,0 +1,106 @@
+/* Private social review queue: platform tabs, read-only X/Bluesky previews. */
+.posting-tabs {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  margin: 0 0 0.75rem;
+}
+.posting-tabs button {
+  flex-shrink: 0;
+  padding: 0.6rem 0.9rem;
+  background: var(--color-ash, #222);
+  border: 1px solid var(--color-fog, #333);
+  color: var(--color-bone, #bbb);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.posting-tabs button[aria-selected='true'] {
+  background: #8b5cf6;
+  border-color: #8b5cf6;
+  color: #100b19;
+}
+.posting-tab-count {
+  display: inline-block;
+  min-width: 1.4rem;
+  padding: 0 0.3rem;
+  margin-left: 0.25rem;
+  background: #100b19;
+  color: #f0ece4;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.posting-filters {
+  margin-bottom: 0.75rem;
+}
+.posting-filters summary {
+  cursor: pointer;
+  padding: 0.4rem 0;
+  color: var(--color-dust, #aaa);
+  font-size: 0.85rem;
+}
+.posting-filters[open] {
+  display: grid;
+  gap: 0.75rem;
+}
+.posting-filters label {
+  display: grid;
+  gap: 0.3rem;
+}
+.posting-evidence {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 0.85rem;
+}
+.x-preview {
+  background: #000;
+  color: #e7e9ea;
+  border: 1px solid #2f3336;
+  border-radius: 1rem;
+  padding: 0.9rem 1rem;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+  margin: 0.75rem 0;
+}
+.x-preview-header {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+.x-preview-header small {
+  color: #71767b;
+}
+.x-avatar {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #8b5cf6;
+  color: #100b19;
+  font-weight: 700;
+}
+.x-preview-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+  margin: 0.6rem 0 0.8rem;
+  font-size: 0.95rem;
+}
+.x-meter {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+  color: #71767b;
+  font-variant-numeric: tabular-nums;
+}
+.x-meter meter {
+  flex: 1;
+  height: 0.4rem;
+}
+.x-meter[data-over] {
+  color: #f4212e;
+}

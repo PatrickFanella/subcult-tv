@@ -20,6 +20,9 @@ import (
 	"github.com/subculture-collective/subcult-tv/api/internal/middleware"
 )
 
+// X and Bluesky drafts are copied into Buffer by hand; only Instagram uses PostyBirb.
+const notInstagram = "Only Instagram drafts can be scheduled here. Post X drafts through Buffer"
+
 type reviewDraft struct {
 	ID        string    `json:"draft_id"`
 	Version   int       `json:"version"`
@@ -84,17 +87,22 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 403, "Admin access is required")
 		return
 	}
-	if h.DB == nil {
-		writeError(w, 503, "Draft storage is unavailable")
-		return
-	}
 	id, err := url.PathUnescape(chi.URLParam(r, "id"))
 	if err != nil {
 		writeError(w, 400, "Invalid draft ID")
 		return
 	}
-	if _, err := h.preparedDraft(id); err != nil {
+	prepared, err := h.preparedDraft(id)
+	if err != nil {
 		writeError(w, 404, "Prepared draft not found. Refresh the review queue")
+		return
+	}
+	if draftPlatform(prepared) != "instagram" {
+		writeError(w, 409, notInstagram)
+		return
+	}
+	if h.DB == nil {
+		writeError(w, 503, "Draft storage is unavailable")
 		return
 	}
 	if r.ParseMultipartForm(1<<20) != nil {
@@ -143,7 +151,7 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if submitted {
-		writeError(w, 409, "This draft has already been submitted. Manage it in Postiz")
+		writeError(w, 409, "This draft has already been submitted. Manage it in PostyBirb")
 		return
 	}
 	file, _, fileErr := r.FormFile("media")
@@ -223,10 +231,6 @@ func (h *Handler) ApproveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 403, "Admin approval is required")
 		return
 	}
-	if h.DB == nil {
-		writeError(w, 503, "Draft storage is unavailable")
-		return
-	}
 	var approval struct {
 		Version  int  `json:"version"`
 		Approved bool `json:"approved"`
@@ -250,12 +254,17 @@ func (h *Handler) ApproveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 409, "Prepared draft is unavailable. Refresh before approving")
 		return
 	}
-	if draft.ExpiresAt != "" {
-		expiry, e := time.Parse(time.RFC3339, draft.ExpiresAt)
-		if e != nil || !expiry.After(time.Now()) {
-			writeError(w, 409, "This draft has expired")
-			return
-		}
+	if draftPlatform(draft) != "instagram" {
+		writeError(w, 409, notInstagram)
+		return
+	}
+	if draft.expired(time.Now()) {
+		writeError(w, 409, "This draft has expired")
+		return
+	}
+	if h.DB == nil {
+		writeError(w, 503, "Draft storage is unavailable")
+		return
 	}
 	tx, err := h.DB.Begin(r.Context())
 	if err != nil {

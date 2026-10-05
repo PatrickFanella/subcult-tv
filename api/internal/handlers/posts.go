@@ -22,6 +22,7 @@ func scanPost(s scanner) (models.Post, error) {
 		&p.CreatedAt, &p.UpdatedAt,
 	)
 	if err == nil {
+		p.Content = stripReviewPrefix(p.Content)
 		switch value := date.(type) {
 		case time.Time:
 			p.Date = value.Format("2006-01-02")

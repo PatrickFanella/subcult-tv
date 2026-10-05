@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import {
   approveReviewDraft,
   getPostingDashboard,
@@ -9,8 +9,13 @@ import {
   type ReviewDraft,
   type SocialDelivery,
 } from '@/lib/api';
+import { draftPlatform, isExpired, platformLabel } from '@/lib/review-queue';
 import PostingShell from './PostingShell';
 import PostPreview from './PostPreview';
+import TextPostCard from './TextPostCard';
+import '@/styles/review-queue.css';
+
+type Tab = 'instagram' | 'x' | 'bluesky';
 
 export default function AdminPosts() {
   const [data, setData] = useState<PostingDashboard | null>(null);
@@ -21,6 +26,11 @@ export default function AdminPosts() {
   const [revision, setRevision] = useState(0);
   const [account, setAccount] = useState('all');
   const [lane, setLane] = useState('all');
+  const [params, setParams] = useSearchParams();
+  const requested = params.get('tab');
+  const tab: Tab = requested === 'x' || requested === 'bluesky' ? requested : 'instagram';
+  const setTab = (next: Tab) =>
+    setParams(next === 'instagram' ? {} : { tab: next }, { replace: true });
   const [query, setQuery] = useState('');
   const [includeExpired, setIncludeExpired] = useState(false);
   const [busy, setBusy] = useState('');
@@ -64,17 +74,24 @@ export default function AdminPosts() {
       active = false;
     };
   }, [revision]);
-  const expired = (value: string) => Boolean(value && new Date(value).valueOf() <= now);
-  const drafts = (data?.drafts || []).filter(
+  const expired = (d: { expires_at: string; due_at: string }) => isExpired(d, now);
+  const all = data?.drafts || [];
+  const counts: Record<Tab, number> = { instagram: 0, x: 0, bluesky: 0 };
+  for (const d of all) if (!expired(d)) counts[draftPlatform(d)] += 1;
+  const tabs: Tab[] = ['instagram', 'x', ...(counts.bluesky ? (['bluesky'] as Tab[]) : [])];
+  const drafts = all.filter(
     (d) =>
-      (d.account === 'patrick' || d.account === 'subcult') &&
-      (includeExpired || !expired(d.expires_at)) &&
+      draftPlatform(d) === tab &&
+      (includeExpired || !expired(d)) &&
       (account === 'all' || d.account === account) &&
-      (lane === 'all' || d.mode === lane) &&
+      (tab === 'instagram' || lane === 'all' || d.mode === lane) &&
       `${saved.find((s) => s.draft_id === d.id)?.caption || d.text} ${d.next_check}`
         .toLowerCase()
         .includes(query.toLowerCase()),
   );
+  const tabAccounts = [
+    ...new Set(all.filter((d) => draftPlatform(d) === tab).map((d) => d.account)),
+  ];
   async function approve(draft: ReviewDraft) {
     setBusy(draft.draft_id);
     setNotice('');
@@ -119,44 +136,70 @@ export default function AdminPosts() {
               The preparation snapshot is over 24 hours old. Refresh the source before approving.
             </p>
           )}
-          <div className="posting-filters">
+          <div className="posting-tabs" role="tablist" aria-label="Platform">
+            {tabs.map((t) => (
+              <button
+                key={t}
+                role="tab"
+                type="button"
+                aria-selected={tab === t}
+                onClick={() => {
+                  setTab(t);
+                  setAccount('all');
+                  setLane('all');
+                }}
+              >
+                {t === 'instagram' ? 'Instagram' : `${platformLabel(t)} (post via Buffer)`}{' '}
+                <span className="posting-tab-count">{counts[t]}</span>
+              </button>
+            ))}
+          </div>
+          <details className="posting-filters">
+            <summary>Filter and search</summary>
             <label>
               Account
               <select value={account} onChange={(e) => setAccount(e.target.value)}>
                 <option value="all">All accounts</option>
-                {data.accounts
-                  .filter((a) => a.account === 'patrick' || a.account === 'subcult')
-                  .map((a) => (
-                    <option key={a.account} value={a.account}>
-                      {a.account}
-                    </option>
-                  ))}
+                {tabAccounts.map((a) => (
+                  <option key={a} value={a}>
+                    {a}
+                  </option>
+                ))}
               </select>
             </label>
-            <label>
-              Preparation lane
-              <select value={lane} onChange={(e) => setLane(e.target.value)}>
-                <option value="all">All lanes</option>
-                <option value="plan">Weekly</option>
-                <option value="radar">Timely</option>
-                <option value="changemaker">Changemaker / Instagram</option>
-              </select>
-            </label>
+            {tab !== 'instagram' && (
+              <label>
+                Preparation lane
+                <select value={lane} onChange={(e) => setLane(e.target.value)}>
+                  <option value="all">All lanes</option>
+                  <option value="plan">Weekly</option>
+                  <option value="radar">Timely</option>
+                </select>
+              </label>
+            )}
             <label>
               Search copy
               <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} />
             </label>
-          </div>
-          <label className="studio-note">
-            <input
-              type="checkbox"
-              checked={includeExpired}
-              onChange={(e) => setIncludeExpired(e.target.checked)}
-            />{' '}
-            Include expired drafts
-          </label>
+            <label className="studio-note">
+              <input
+                type="checkbox"
+                checked={includeExpired}
+                onChange={(e) => setIncludeExpired(e.target.checked)}
+              />{' '}
+              Include expired drafts
+            </label>
+          </details>
+          {tab !== 'instagram' && (
+            <p className="studio-note">
+              {platformLabel(tab)} drafts are read-only here. Copy the text into Buffer to schedule
+              it; nothing on this page posts to {platformLabel(tab)}.
+            </p>
+          )}
           <div className="posting-review-grid">
             {drafts.map((d) => {
+              if (tab !== 'instagram')
+                return <TextPostCard key={d.id} draft={d} expired={expired(d)} />;
               const edit = saved.find((s) => s.draft_id === d.id);
               const target = delivery?.accounts.find((a) => a.id === edit?.account_id);
               const caption = edit?.caption || d.text;
@@ -168,23 +211,14 @@ export default function AdminPosts() {
                 target &&
                 !target.disabled &&
                 new Date(edit.due_at).valueOf() >= now + 86400000 &&
-                !expired(d.expires_at) &&
+                !expired(d) &&
                 !data.stale &&
                 !submitted;
               return (
                 <article key={d.id} className="posting-review-card">
                   <div className="posting-draft-meta">
-                    <span className="production-badge">
-                      {d.account} /{' '}
-                      {d.mode === 'changemaker'
-                        ? 'Changemaker · Instagram'
-                        : d.mode === 'radar'
-                          ? 'Timely'
-                          : 'Weekly'}
-                    </span>
-                    <span>
-                      {submitted ? edit.status : expired(d.expires_at) ? 'Expired' : 'Unapproved'}
-                    </span>
+                    <span className="production-badge">{d.account} / Changemaker · Instagram</span>
+                    <span>{submitted ? edit.status : expired(d) ? 'Expired' : 'Unapproved'}</span>
                   </div>
                   <PostPreview
                     key={imageKey}

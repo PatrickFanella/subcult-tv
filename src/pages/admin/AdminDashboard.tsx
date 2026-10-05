@@ -11,6 +11,7 @@ import {
   type Publications,
 } from '@/lib/api';
 import { AdminHeader } from '@/components/admin/crud';
+import { draftPlatform, isExpired } from '@/lib/review-queue';
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState<DashboardStats | null>(null);
@@ -21,6 +22,7 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(true);
   const [revision, setRevision] = useState(0);
   const [checked, setChecked] = useState('');
+  const [readAt, setReadAt] = useState(0);
   useEffect(() => {
     let active = true;
     Promise.allSettled([
@@ -50,6 +52,7 @@ export default function AdminDashboard() {
         ),
       );
       setChecked(new Date().toLocaleString());
+      setReadAt(Date.now());
       setLoading(false);
     });
     return () => {
@@ -57,6 +60,16 @@ export default function AdminDashboard() {
     };
   }, [revision]);
   const drafts = publications?.drafts.filter((d) => d.status === 'draft') ?? [];
+  // Count prepared drafts still awaiting a decision; a saved edit is not required.
+  const now = readAt;
+  const current = (posting?.drafts ?? []).filter((d) => !isExpired(d, now));
+  const submitted = new Set(
+    (reviews ?? []).filter((r) => r.status !== 'draft').map((r) => r.draft_id),
+  );
+  const instagramWaiting = current.filter(
+    (d) => draftPlatform(d) === 'instagram' && !submitted.has(d.id),
+  ).length;
+  const xWaiting = current.filter((d) => draftPlatform(d) === 'x').length;
   const uncertain = [...(reviews ?? []), ...(publications?.drafts ?? [])].filter((d) =>
     ['uncertain', 'submitting'].includes(d.status),
   );
@@ -96,8 +109,12 @@ export default function AdminDashboard() {
           <h2>Needs your attention</h2>
           <div className="dashboard-action-list">
             <Link to="/admin/posts">
-              <strong>{reviews?.filter((d) => d.status === 'draft').length ?? '—'}</strong>
+              <strong>{posting ? instagramWaiting : '—'}</strong>
               <span>Instagram drafts to review</span>
+            </Link>
+            <Link to="/admin/posts?tab=x">
+              <strong>{posting ? xWaiting : '—'}</strong>
+              <span>X drafts to post via Buffer</span>
             </Link>
             <Link to="/admin/posts/articles">
               <strong>
