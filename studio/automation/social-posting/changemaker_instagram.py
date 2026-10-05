@@ -54,6 +54,21 @@ def validate(result, items):
             raise ValueError('Review and media requirements are missing')
 
 
+def recent_captions(state, now, days=14):
+    """Captions prepared in the last two weeks, so a new batch does not repeat their shapes."""
+    texts = []
+    for path in sorted((state/'runs').glob('*-changemaker/result.json'), reverse=True)[:20]:
+        if path.is_symlink() or path.stat().st_size > 2_000_000:
+            continue
+        if (now.timestamp() - path.stat().st_mtime) > days*86400:
+            continue
+        try:
+            texts += [d['text'] for d in json.loads(path.read_text()).get('drafts', []) if isinstance(d.get('text'), str)]
+        except (ValueError, OSError):
+            continue
+    return texts[:30]
+
+
 def single_pass(cfg, source_root, selected, digest, claims, directory):
     """The original one-call caption prompt, kept as the fallback path."""
     prompt = (HERE/'changemaker-instagram-prompt.md').read_text()+'\n'+json.dumps({
@@ -136,7 +151,7 @@ def execute(source_root, state):
         if cfg.get('craft', True):
             try:
                 import craft
-                staged = craft.instagram(cfg, selected, digest['draft'], claims, directory/'craft')
+                staged = craft.instagram(cfg, selected, digest['draft'], claims, directory/'craft', recent=recent_captions(state, now))
                 result = {'drafts': [{**d, 'media_brief': d['media']['kind']+': '+(d['media']['headline'] or d['angle']),
                                       'next_check': d['next_check']} for d in staged['drafts']],
                           'open_checks': staged['open_checks']}

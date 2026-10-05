@@ -46,6 +46,7 @@ def clean_env():
 
 def codex(cfg, prompt, directory, name, schema=None, effort='medium', images=(), timeout=900):
     """Run one read-only, tool-less model call and return its JSON (or text)."""
+    directory = Path(directory).resolve()
     directory.mkdir(parents=True, exist_ok=True)
     out = directory/f'{name}.json'
     command = [cfg['codex'], 'exec', '--ignore-user-config', '--ephemeral', '--skip-git-repo-check',
@@ -142,9 +143,9 @@ def make_media(cfg, draft, directory, n):
 ART = json.loads(read(CRAFT/'art-direction.json', '{}'))
 
 
-def instagram(cfg, evidence, digest, claims, directory):
+def instagram(cfg, evidence, digest, claims, directory, recent=()):
     """Run the four writing stages and the media stage; return schema-shaped drafts."""
-    shared = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'digest': digest}
+    shared = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'digest': digest, 'recent_captions': list(recent)}
     brief = codex(cfg, stage_prompt('brief', shared), directory, '1-brief', 'brief', effort='high')
     if not brief['items']:
         return {'drafts': [], 'open_checks': [f"Skipped {', '.join(s['source_ids'])}: {s['why']}" for s in brief['skipped']]}
@@ -207,7 +208,7 @@ def polish_short(cfg, drafts, directory, limit=280):
 
 def publication(cfg, evidence, digest, claims, directory):
     """Staged website and Patreon edition; returns the publications schema shape."""
-    shared = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'digest': digest}
+    shared = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'digest': digest, 'examples': read(CRAFT/'pub-examples.md')}
     brief = codex(cfg, stage_prompt('pub-brief', shared), directory, 'p1-brief', 'pub-brief', effort='high')
     drafts = codex(cfg, stage_prompt('pub-draft', {**shared, 'brief': brief}), directory, 'p2-draft', 'pub-draft', effort='medium')
     review = codex(cfg, stage_prompt('pub-review', {**shared, 'brief': brief, 'drafts': drafts}), directory, 'p3-review', 'pub-review', effort='high')

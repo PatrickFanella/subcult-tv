@@ -78,7 +78,7 @@ def execute(source_root, state, ingest_env=None):
             atomic_write(directory/'source.json', json.dumps(proof, indent=2)+'\n')
             claims = (source_root/'content/social/Product Claims Register.md').read_text()
             result = None
-            if cfg.get('craft', True):
+            if cfg.get('craft_publications', False):  # staged edition is still being tuned
                 try:
                     import craft
                     result = craft.publication(cfg, proof, digest['draft'], claims, directory/'craft')

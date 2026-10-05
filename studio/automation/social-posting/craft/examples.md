@@ -16,17 +16,17 @@ Evidence: the recovery notice said a link had been sent; the API provides no del
 
 Why it works: the first line names a familiar phrase and makes it strange. The story is one small honesty fix, told from the reader's side. The product line comes after the reader cares. Maturity is three words at the end.
 
-## 2. A race I wrote (patrick, Undertow)
+## 2. The boring part (patrick, Undertow)
 
 > Open a new project while the last one is still saving, and Undertow could quietly send your next edits into the old one.
 >
-> That's a race I wrote. Saves now finish in order, and a late reply from a project you've closed gets ignored.
+> Autosave is supposed to be the boring part. Saves now finish in order, and a late reply from a project you've closed gets ignored.
 >
 > Undertow turns a track into a visualizer video in your browser. This fix isn't on the live editor yet.
 
 Evidence: an autosave finishing after another project opened could redirect edits into the old project; autosaves are now serialized and results from previously opened documents are ignored.
 
-Why it works: second person puts the reader in the moment of the bug. "That's a race I wrote" is Patrick owning it in five words. One mechanism sentence, in plain words.
+Why it works: second person puts the reader in the moment of the bug. "Autosave is supposed to be the boring part" is a dry aside that is true without claiming anything. One mechanism sentence, in plain words. (Patrick owns a bug outright only when the evidence shows his earlier change caused it, as with a removed link that left a broken button behind.)
 
 ## 3. Same instant, two labels (subcult, Subcult OS)
 

@@ -50,6 +50,7 @@ class PublicationPreparationTests(unittest.TestCase):
             (root/'content/VOICE.md').write_text('Plain language.')
             item={'id':'S1','kind':'pull request','state':'merged','title':'Improve reading'}
             context={'drafts':[{'run_id':'source-run','draft':'Digest','draft_sha256':'d'*64,'evidence_sha256':'e'*64,'evidence':{'status':'complete','items':[item]}}]}
+            (here/'config.json').write_text(json.dumps({'codex':'unused','model':'configured','switchyard':{},'craft_publications':True}))
             staged={'title':'The menu that crashed the page','excerpt':'Opening the menu could crash the page.','website_body':'Website.','patreon_body':'Patreon.','source_ids':['S1']}
             import craft
             with patch.object(producer,'HERE',here),patch.object(producer,'changemaker_context',return_value=context),\
