@@ -112,7 +112,8 @@ def main():
         if path.is_file() and path.name != 'asset-manifest.json':
             entries.append({'path': str(path.relative_to(WEB)), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'bytes': path.stat().st_size})
     manifest = {'brand': 'Backline', 'direction': 'Poster Crew', 'source': 'Studio branding/library/brands/backline/build_assets.py and fonts/',
-                'selection': 'Owner selected Poster Crew in this thread; assets prepared for review.', 'files': entries}
+                'selection': 'Owner selected Poster Crew in this thread; assets prepared for review.',
+                'files': [{**entry, 'path': 'product/' + entry['path']} for entry in entries]}
     (SOURCE / 'asset-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--product-root', type=Path)

@@ -48,3 +48,7 @@ Backline speaks calmly and directly about the work: â€œChoose a welcome channelâ
 The applied landing page explains onboarding, moderation and private support. Its workflow illustration uses fictional members and records and labels them as sample content. It does not claim a working support-queue dashboard. Radio, billing, pricing and broader installation are outside the page's release claims.
 
 Sources: SUBCULT's selected Culture / poster press guide and tokens, plus the Studio Neo-Brutalism study. These inform color, type, explicit borders and selective hard shadows. Reference screenshots and third-party identity assets are not included in this pack.
+
+## Landing page and product specification
+
+[Open the standalone landing preview](landing.html) and read [the applied website specification](WEBSITE.md). [Landing provenance](landing-provenance.json) records the product revision and source hashes. The React implementation is owned by Backline; Studio owns the branding masters and keeps a refreshable source snapshot. Preview pilot links point to information rather than an unavailable Studio login route.
