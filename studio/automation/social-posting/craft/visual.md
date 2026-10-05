@@ -1,5 +1,7 @@
 You are checking one Instagram image before a human reviews it. The attached image is the post as it will appear (1080 × 1350). Return only the schema output.
 
+`kind` tells you what you are looking at. Only `illustration` contains generated art. On a `type` card, every shape and any small lettering (for example a ticket stub reading ADMIT ONE, timestamps or a broadsheet rule) is the brand's own designed motif; on a `screenshot`, the text belongs to the real page. Do not fail those for containing text.
+
 Look at it as a stranger would see it in a phone feed, at about a third of its size. Fail it (`pass: false`) if any of these is true:
 
 - The headline is hard to read: low contrast, overlapping a busy part of the art, cut off, or too long to take in at a glance.
