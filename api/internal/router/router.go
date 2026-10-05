@@ -129,6 +129,8 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 			admin.Put("/admin/studio/review/{id}", h.SaveReviewDraft)
 			admin.Get("/admin/studio/review/{id}/media", h.ReviewDraftMedia)
 			admin.Post("/admin/studio/review/{id}/approve", h.ApproveReviewDraft)
+			admin.Post("/admin/studio/review/{id}/decision", h.RecordDraftDecision)
+			admin.Get("/admin/studio/decisions", h.DraftDecisions)
 			admin.Get("/admin/studio/delivery", h.SocialDelivery)
 			admin.Post("/admin/studio/delivery", h.ApproveSchedule)
 			admin.Get("/admin/studio/assets/{id}", h.StudioAsset)

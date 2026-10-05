@@ -9,6 +9,7 @@ import {
   getStudioAsset,
   getSocialDelivery,
   getReviewDrafts,
+  getDraftDecisions,
 } from '@/lib/api';
 vi.mock('@/lib/api', () => ({
   getPostingDashboard: vi.fn(),
@@ -17,6 +18,8 @@ vi.mock('@/lib/api', () => ({
   approveReviewDraft: vi.fn(),
   saveReviewDraft: vi.fn(),
   getPreparedMedia: vi.fn(),
+  getDraftDecisions: vi.fn(),
+  recordDraftDecision: vi.fn(),
   getSocialDelivery: vi.fn().mockRejectedValue(new Error('PostyBirb delivery is not configured')),
   approveSocialSchedule: vi.fn(),
   getStudioCatalog: vi.fn(),
@@ -73,6 +76,7 @@ beforeEach(() => {
   vi.resetAllMocks();
   vi.mocked(getPostingDashboard).mockResolvedValue(data);
   vi.mocked(getReviewDrafts).mockResolvedValue([]);
+  vi.mocked(getDraftDecisions).mockResolvedValue([]);
   vi.mocked(getSocialDelivery).mockRejectedValue(new Error('PostyBirb delivery is not configured'));
   URL.createObjectURL = vi.fn(() => 'blob:test');
   URL.revokeObjectURL = vi.fn();

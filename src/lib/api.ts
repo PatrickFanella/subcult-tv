@@ -640,13 +640,55 @@ export async function saveReviewDraft(id: string, form: FormData) {
   if (!response.ok) throw new APIError(result.error || 'Saving failed', response.status);
   return result as { version: number };
 }
-export const approveReviewDraft = (id: string, version: number) =>
+export interface ChecklistState {
+  item: string;
+  checked: boolean;
+}
+export const approveReviewDraft = (id: string, version: number, checklist: ChecklistState[] = []) =>
   apiFetch<{ status: string; post_id: string }>(
     `/api/v1/admin/studio/review/${encodeURIComponent(id)}/approve`,
     {
       method: 'POST',
-      body: JSON.stringify({ version, approved: true }),
+      body: JSON.stringify({ version, approved: true, checklist }),
     },
+  );
+
+export type DecisionKind =
+  'approved_as_is' | 'approved_edited' | 'rejected' | 'revision_requested' | 'snoozed';
+export interface DraftDecision {
+  id: number;
+  draft_id: string;
+  platform: PostingPlatform;
+  account: string;
+  decision: DecisionKind;
+  original_text: string;
+  final_text: string;
+  diff_stats: Record<string, number | boolean>;
+  image_choice: 'prepared' | 'candidate' | 'uploaded' | 'none';
+  original_due_at: string | null;
+  final_due_at: string | null;
+  reason_codes: string[];
+  note: string;
+  checklist: ChecklistState[];
+  snooze_until: string | null;
+  decided_by: string;
+  decided_at: string;
+}
+export const getDraftDecisions = (since: string) =>
+  apiFetch<DraftDecision[]>(`/api/v1/admin/studio/decisions?since=${encodeURIComponent(since)}`);
+export const recordDraftDecision = (
+  id: string,
+  input: {
+    decision: 'rejected' | 'revision_requested' | 'snoozed';
+    reasons?: string[];
+    note?: string;
+    checklist?: ChecklistState[];
+    snooze_until?: string;
+  },
+) =>
+  apiFetch<{ draft_id: string; decision: string }>(
+    `/api/v1/admin/studio/review/${encodeURIComponent(id)}/decision`,
+    { method: 'POST', body: JSON.stringify(input) },
   );
 export async function getReviewDraftMedia(
   id: string,

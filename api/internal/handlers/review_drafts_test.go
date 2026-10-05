@@ -38,7 +38,7 @@ func TestReviewDraftApprovalIntegration(t *testing.T) {
 	var submissions atomic.Int32
 	client := socialTestProvider(t, &submissions, nil, "review-post")
 	root := t.TempDir()
-	snapshot := postingDashboard{GeneratedAt: time.Now().UTC().Format(time.RFC3339), Drafts: []postingDraft{{ID: "20261004T052615.663030Z-changemaker:0", Text: "Prepared", DueAt: time.Now().Add(48 * time.Hour).Format(time.RFC3339)}}}
+	snapshot := postingDashboard{GeneratedAt: time.Now().UTC().Format(time.RFC3339), Drafts: []postingDraft{{ID: "20261004T052615.663030Z-changemaker:0", Mode: "changemaker", Text: "Prepared", DueAt: time.Now().Add(48 * time.Hour).Format(time.RFC3339)}}}
 	data, _ := json.Marshal(snapshot)
 	os.WriteFile(filepath.Join(root, "posting.json"), data, 0600)
 	h := &Handler{DB: db, StudioRoot: root, SocialPosting: client, SocialAccounts: []string{"patrick"}, PostingMediaBaseURL: "https://example.test"}

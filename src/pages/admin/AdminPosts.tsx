@@ -1,9 +1,11 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import {
+  getDraftDecisions,
   getPostingDashboard,
   getReviewDrafts,
   getSocialDelivery,
+  type DraftDecision,
   type PostingDashboard,
   type PostingDraft,
   type ReviewDraft,
@@ -12,6 +14,8 @@ import {
 import {
   draftPlatform,
   firstLine,
+  hiddenReason,
+  latestDecisions,
   isExpired,
   laneLabel,
   platformLabel,
@@ -20,6 +24,7 @@ import {
 import PostingShell from './PostingShell';
 import TextPostCard from './TextPostCard';
 import InstagramReview from './InstagramReview';
+import DecisionControls from './DecisionControls';
 import { usePreparedImage } from './usePreparedImage';
 import '@/styles/review-queue.css';
 
@@ -85,6 +90,8 @@ export default function AdminPosts() {
   const [data, setData] = useState<PostingDashboard | null>(null);
   const [saved, setSaved] = useState<ReviewDraft[]>([]);
   const [delivery, setDelivery] = useState<SocialDelivery | null>(null);
+  const [decisions, setDecisions] = useState<DraftDecision[]>([]);
+  const [showHidden, setShowHidden] = useState(false);
   const [error, setError] = useState('');
   const [deliveryError, setDeliveryError] = useState('');
   const [revision, setRevision] = useState(0);
@@ -121,6 +128,14 @@ export default function AdminPosts() {
           setData(null);
         }
       });
+    // Decisions are feedback; the queue still works if they are unavailable.
+    getDraftDecisions(new Date(Date.now() - 60 * 86400000).toISOString())
+      .then((value) => {
+        if (active) setDecisions(value);
+      })
+      .catch(() => {
+        if (active) setDecisions([]);
+      });
     getSocialDelivery()
       .then((value) => {
         if (active) {
@@ -144,9 +159,18 @@ export default function AdminPosts() {
     const edit = editFor(id);
     return Boolean(edit && edit.status !== 'draft');
   };
-  const all = data?.drafts || [];
+  const latest = latestDecisions(decisions);
+  const superseded = new Set(
+    (data?.drafts || []).map((d) => d.supersedes).filter((id): id is string => Boolean(id)),
+  );
+  const hidden = (d: PostingDraft) => hiddenReason(d, latest, superseded, now);
+  const all = (data?.drafts || []).filter((d) => showHidden || !hidden(d));
+  const hiddenCount = (data?.drafts || []).filter(
+    (d) => draftPlatform(d) === tab && hidden(d) && !expired(d),
+  ).length;
   const counts: Record<Tab, number> = { instagram: 0, x: 0, bluesky: 0 };
-  for (const d of all) if (!expired(d) && !submitted(d.id)) counts[draftPlatform(d)] += 1;
+  for (const d of data?.drafts || [])
+    if (!expired(d) && !submitted(d.id) && !hidden(d)) counts[draftPlatform(d)] += 1;
   const tabs: Tab[] = ['instagram', 'x', ...(counts.bluesky ? (['bluesky'] as Tab[]) : [])];
   const dueOf = (d: PostingDraft) => new Date(editFor(d.id)?.due_at || d.due_at).valueOf();
   const drafts = all
@@ -165,8 +189,20 @@ export default function AdminPosts() {
     ...new Set(all.filter((d) => draftPlatform(d) === tab).map((d) => d.account)),
   ];
   const cadence = (name: string) => data?.accounts.find((a) => a.account === name)?.times ?? [];
+  const recorded = (message: string) => {
+    setNotice(message);
+    setOpen('');
+    setRevision((v) => v + 1);
+  };
+  const hiddenLabel: Record<string, string> = {
+    rejected: 'Rejected',
+    revision_requested: 'Revision requested',
+    snoozed: 'Snoozed',
+    superseded: 'Replaced',
+  };
   function instagramState(d: PostingDraft) {
     const edit = editFor(d.id);
+    if (hidden(d)) return hiddenLabel[hidden(d)];
     if (edit && edit.status !== 'draft')
       return edit.status === 'scheduled' ? 'Queued' : 'Check PostyBirb';
     if (expired(d)) return 'Expired';
@@ -232,11 +268,23 @@ export default function AdminPosts() {
                     draft={d}
                     meta={`${d.account} · ${laneLabel(d.mode)}`}
                     when={when}
-                    state={expired(d) ? 'Expired' : 'Copy to Buffer'}
+                    state={
+                      hidden(d) ? hiddenLabel[hidden(d)] : expired(d) ? 'Expired' : 'Copy to Buffer'
+                    }
                     expanded={open === d.id}
                     onToggle={() => setOpen(open === d.id ? '' : d.id)}
                   >
-                    <TextPostCard draft={d} expired={expired(d)} />
+                    <TextPostCard draft={d} expired={expired(d)}>
+                      {!hidden(d) && (
+                        <DecisionControls
+                          draftId={d.id}
+                          label={`${d.account} ${platformLabel(tab)} post: ${firstLine(d.text, 48)}`}
+                          busy={busy}
+                          setBusy={setBusy}
+                          onRecorded={recorded}
+                        />
+                      )}
+                    </TextPostCard>
                   </ReviewRow>
                 );
               return (
@@ -249,7 +297,12 @@ export default function AdminPosts() {
                   expanded={open === d.id}
                   onToggle={() => setOpen(open === d.id ? '' : d.id)}
                 >
-                  {submitted(d.id) ? (
+                  {hidden(d) ? (
+                    <p className="studio-note">
+                      {hiddenLabel[hidden(d)]}
+                      {latest.get(d.id)?.note ? `: ${latest.get(d.id)?.note}` : '.'}
+                    </p>
+                  ) : submitted(d.id) ? (
                     <p className="studio-note">
                       {edit?.status === 'scheduled'
                         ? 'Queued in PostyBirb. See Scheduled & delivered.'
@@ -267,6 +320,16 @@ export default function AdminPosts() {
                       busy={busy}
                       setBusy={setBusy}
                       onError={(message) => setNotice(message)}
+                      decisions={(checklist, label) => (
+                        <DecisionControls
+                          draftId={d.id}
+                          label={label}
+                          busy={busy}
+                          setBusy={setBusy}
+                          checklist={checklist}
+                          onRecorded={recorded}
+                        />
+                      )}
                       onApproved={(result) => {
                         setNotice(
                           `Scheduled in PostyBirb · ${result.post_id}. Publication is pending.`,
@@ -281,6 +344,17 @@ export default function AdminPosts() {
             })}
           </ul>
           {!drafts.length && <p>No drafts match these filters.</p>}
+          {(hiddenCount > 0 || showHidden) && (
+            <label className="studio-note">
+              <input
+                type="checkbox"
+                checked={showHidden}
+                onChange={(e) => setShowHidden(e.target.checked)}
+              />{' '}
+              Show {hiddenCount} rejected, snoozed or replaced{' '}
+              {hiddenCount === 1 ? 'draft' : 'drafts'}
+            </label>
+          )}
           {tab !== 'instagram' && (
             <p className="studio-note">
               {platformLabel(tab)} drafts are read-only here. Copy the text into Buffer to schedule

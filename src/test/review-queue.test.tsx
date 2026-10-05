@@ -11,6 +11,7 @@ import {
   getReviewDrafts,
   getSocialDelivery,
   type PostingDraft,
+  getDraftDecisions,
 } from '@/lib/api';
 import { draftPlatform, isExpired, stripReviewPrefix, xLength } from '@/lib/review-queue';
 
@@ -24,6 +25,7 @@ vi.mock('@/lib/api', () => ({
   getReviewDraftMedia: vi.fn(),
   savePublication: vi.fn(),
   approvePublication: vi.fn(),
+  getDraftDecisions: vi.fn(),
 }));
 
 const future = () => new Date(Date.now() + 72 * 3600000).toISOString();
@@ -59,6 +61,7 @@ const snapshot = (drafts: PostingDraft[]) => ({
 afterEach(cleanup);
 beforeEach(() => {
   vi.resetAllMocks();
+  vi.mocked(getDraftDecisions).mockResolvedValue([]);
 });
 
 describe('review queue helpers', () => {

@@ -302,6 +302,60 @@
 .instagram-below-fold {
   color: #737373;
 }
+
+/* Reject, request revision and snooze. */
+.decision-controls {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+.decision-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.decision-buttons button {
+  background: none;
+  border: 1px solid var(--color-fog, #333);
+  color: var(--color-bone, #ccc);
+  padding: 0.45rem 0.75rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.decision-buttons button[aria-expanded='true'] {
+  border-color: #8b5cf6;
+  color: #f0ece4;
+}
+.decision-form {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.75rem;
+  border: 1px solid var(--color-fog, #333);
+  background: var(--color-ash, #222);
+}
+.decision-form label {
+  display: grid;
+  gap: 0.3rem;
+}
+.decision-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.decision-chips button {
+  border: 1px solid var(--color-fog, #333);
+  background: var(--color-soot, #171717);
+  color: var(--color-bone, #ccc);
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.decision-chips button[aria-pressed='true'] {
+  background: #8b5cf6;
+  border-color: #8b5cf6;
+  color: #100b19;
+}
 @media (max-width: 760px) {
   .review-sheet {
     grid-template-columns: minmax(0, 1fr);

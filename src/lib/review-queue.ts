@@ -1,5 +1,5 @@
 // Pure helpers for the private social review queue. No network access here.
-import type { PostingDraft, PostingPlatform } from './api';
+import type { DraftDecision, PostingDraft, PostingPlatform } from './api';
 
 /** Older snapshots lack `platform`: Changemaker prepares Instagram, plan/radar prepare X. */
 export function draftPlatform(draft: Pick<PostingDraft, 'platform' | 'mode'>): PostingPlatform {
@@ -218,4 +218,31 @@ export function scoreSummary(scores: Partial<Record<string, number>> | undefined
     parts.push(`strongest ${name(best[0])} ${best[1]}`, `weakest ${name(worst[0])} ${worst[1]}`);
   }
   return parts.join(' · ');
+}
+
+export type HiddenReason = '' | 'rejected' | 'revision_requested' | 'snoozed' | 'superseded';
+
+/** Latest decision per draft, from decisions returned oldest first. */
+export function latestDecisions(decisions: DraftDecision[]) {
+  const latest = new Map<string, DraftDecision>();
+  for (const d of decisions) latest.set(d.draft_id, d);
+  return latest;
+}
+
+/** Why a draft is out of the active queue: rejected, awaiting revision, snoozed or replaced. */
+export function hiddenReason(
+  draft: Pick<PostingDraft, 'id'>,
+  latest: Map<string, DraftDecision>,
+  superseded: Set<string>,
+  now: number,
+): HiddenReason {
+  if (superseded.has(draft.id)) return 'superseded';
+  const decision = latest.get(draft.id);
+  if (!decision) return '';
+  if (decision.decision === 'rejected' || decision.decision === 'revision_requested')
+    return decision.decision;
+  if (decision.decision === 'snoozed' && decision.snooze_until) {
+    return new Date(decision.snooze_until).valueOf() > now ? 'snoozed' : '';
+  }
+  return '';
 }

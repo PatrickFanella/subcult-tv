@@ -2,21 +2,24 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   getDashboardStats,
+  getDraftDecisions,
   getPostingDashboard,
   getReviewDrafts,
   getPublications,
   type DashboardStats,
+  type DraftDecision,
   type PostingDashboard,
   type ReviewDraft,
   type Publications,
 } from '@/lib/api';
 import { AdminHeader } from '@/components/admin/crud';
-import { draftPlatform, isExpired } from '@/lib/review-queue';
+import { draftPlatform, hiddenReason, isExpired, latestDecisions } from '@/lib/review-queue';
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState<DashboardStats | null>(null);
   const [posting, setPosting] = useState<PostingDashboard | null>(null);
   const [reviews, setReviews] = useState<ReviewDraft[] | null>(null);
+  const [decisions, setDecisions] = useState<DraftDecision[]>([]);
   const [publications, setPublications] = useState<Publications | null>(null);
   const [errors, setErrors] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
@@ -30,8 +33,10 @@ export default function AdminDashboard() {
       getPostingDashboard(),
       getReviewDrafts(),
       getPublications(),
-    ]).then(([s, p, r, u]) => {
+      getDraftDecisions(new Date(Date.now() - 60 * 86400000).toISOString()),
+    ]).then(([s, p, r, u, decided]) => {
       if (!active) return;
+      setDecisions(decided.status === 'fulfilled' ? decided.value : []);
       setStats(s.status === 'fulfilled' ? s.value : null);
       setPosting(p.status === 'fulfilled' ? p.value : null);
       setReviews(r.status === 'fulfilled' ? r.value : null);
@@ -62,7 +67,13 @@ export default function AdminDashboard() {
   const drafts = publications?.drafts.filter((d) => d.status === 'draft') ?? [];
   // Count prepared drafts still awaiting a decision; a saved edit is not required.
   const now = readAt;
-  const current = (posting?.drafts ?? []).filter((d) => !isExpired(d, now));
+  const latest = latestDecisions(decisions);
+  const superseded = new Set(
+    (posting?.drafts ?? []).flatMap((d) => (d.supersedes ? [d.supersedes] : [])),
+  );
+  const current = (posting?.drafts ?? []).filter(
+    (d) => !isExpired(d, now) && !hiddenReason(d, latest, superseded, now),
+  );
   const submitted = new Set(
     (reviews ?? []).filter((r) => r.status !== 'draft').map((r) => r.draft_id),
   );

@@ -84,9 +84,19 @@ func TestPublicationApprovalIntegration(t *testing.T) {
 	if w := request("POST", "/approve/"+edit.ID, approval, "admin", ""); w.Code != 409 {
 		t.Fatal("stale version approved")
 	}
+	// An edition stored before preparation stripped the reviewer note must not publish it.
+	stale := "Draft for human review.\n\nPrivate draft text"
+	db.Exec(ctx, `UPDATE publication_review SET body=$2 WHERE id=$1`, edit.ID, stale)
+	db.Exec(ctx, `UPDATE posts SET content=$2 WHERE slug=$1`, "daily-"+day, stale)
 	approval["version"] = 2
 	if w := request("POST", "/approve/"+edit.ID, approval, "admin", ""); w.Code != 200 {
 		t.Fatal(w.Code, w.Body.String())
+	}
+	var storedBody, storedPost string
+	db.QueryRow(ctx, `SELECT body FROM publication_review WHERE id=$1`, edit.ID).Scan(&storedBody)
+	db.QueryRow(ctx, `SELECT content FROM posts WHERE slug=$1`, "daily-"+day).Scan(&storedPost)
+	if storedBody != "Private draft text" || storedPost != "Private draft text" {
+		t.Fatalf("reviewer note kept: %q %q", storedBody, storedPost)
 	}
 	if w := request("GET", "/posts/daily-"+day, nil, "", ""); w.Code != 404 {
 		t.Fatal("published ahead of approved time")

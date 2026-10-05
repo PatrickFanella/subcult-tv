@@ -3,6 +3,7 @@ import {
   approveReviewDraft,
   saveReviewDraft,
   type PostingDraft,
+  type ChecklistState,
   type PreparedImage,
   type ReviewDraft,
   type SocialAccount,
@@ -96,7 +97,8 @@ export default function InstagramReview({
   setBusy: (value: string) => void;
   onApproved: (result: ApprovalResult) => void;
   onError: (message: string) => void;
-  decisions?: ReactNode;
+  /** Reject/revise/snooze controls, given the current checklist state. */
+  decisions?: (checklist: ChecklistState[], label: string) => ReactNode;
 }) {
   const locked = Boolean(busy);
   const accounts: SocialAccount[] = delivery?.accounts ?? [];
@@ -177,6 +179,8 @@ export default function InstagramReview({
   const previewImage =
     choice.kind === 'uploaded' ? upload : selectedSha ? selectedImage.url : undefined;
   const score = scoreSummary(draft.craft?.scores);
+  const checklistState = items.map((item, i) => ({ item, checked: Boolean(checked[i]) }));
+  const label = `${accountLabel} post: ${firstLine(caption, 48)}`;
 
   async function approve() {
     setBusy(draft.id);
@@ -192,7 +196,7 @@ export default function InstagramReview({
         form.set('media', new File([selectedImage.blob], 'prepared.jpg', { type: 'image/jpeg' }));
       // The same server validation applies to prepared images and uploads.
       const saved = await saveReviewDraft(draft.id, form);
-      const result = await approveReviewDraft(draft.id, saved.version);
+      const result = await approveReviewDraft(draft.id, saved.version, checklistState);
       onApproved(result);
     } catch (e) {
       onError(e instanceof Error ? e.message : 'Scheduling could not be confirmed');
@@ -397,13 +401,13 @@ export default function InstagramReview({
             type="button"
             className="review-approve"
             disabled={Boolean(problem) || locked}
-            aria-label={`Approve & queue ${accountLabel} post: ${firstLine(caption, 48)}`}
+            aria-label={`Approve & queue ${label}`}
             onClick={() => void approve()}
           >
             {busy === draft.id ? 'Queuing…' : 'Approve & queue'}
           </button>
-          {decisions}
         </div>
+        {decisions?.(checklistState, label)}
       </div>
     </div>
   );

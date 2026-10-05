@@ -10,7 +10,10 @@ import {
   getReviewDrafts,
   getSocialDelivery,
   saveReviewDraft,
+  recordDraftDecision,
+  type DraftDecision,
   type PostingDraft,
+  getDraftDecisions,
 } from '@/lib/api';
 import { cadenceSlots, checklistItems, matchAccount, scoreSummary } from '@/lib/review-queue';
 
@@ -21,6 +24,8 @@ vi.mock('@/lib/api', () => ({
   approveReviewDraft: vi.fn(),
   saveReviewDraft: vi.fn(),
   getPreparedMedia: vi.fn(),
+  getDraftDecisions: vi.fn(),
+  recordDraftDecision: vi.fn(),
   getSocialDelivery: vi.fn(),
 }));
 
@@ -123,6 +128,7 @@ beforeEach(() => {
   URL.revokeObjectURL = vi.fn();
   vi.mocked(getPostingDashboard).mockResolvedValue(snapshot([draft()]));
   vi.mocked(getReviewDrafts).mockResolvedValue([]);
+  vi.mocked(getDraftDecisions).mockResolvedValue([]);
   vi.mocked(getSocialDelivery).mockResolvedValue(delivery);
   vi.mocked(getPreparedMedia).mockResolvedValue(new Blob(['jpeg'], { type: 'image/jpeg' }));
   vi.mocked(saveReviewDraft).mockResolvedValue({ version: 1 });
@@ -160,7 +166,14 @@ describe('approve from the card', () => {
     expect((form.get('media') as File).type).toBe('image/jpeg');
     const due = new Date(String(form.get('due_at'))).valueOf();
     expect(due).toBeGreaterThanOrEqual(Date.now() + 24 * HOUR);
-    expect(vi.mocked(approveReviewDraft).mock.calls[0].slice(0, 2)).toEqual(['cm:0', 1]);
+    expect(vi.mocked(approveReviewDraft).mock.calls[0]).toEqual([
+      'cm:0',
+      1,
+      [
+        { item: 'Confirm the mark matches the merged design.', checked: true },
+        { item: 'Check the public site.', checked: true },
+      ],
+    ]);
   });
 
   it('checks the 24-hour rule in the browser and marks the feed fold', async () => {
@@ -307,6 +320,107 @@ describe('approve from the card', () => {
     expect(writeText).toHaveBeenCalledWith(expect.stringContaining('Clip the moment.'));
     fireEvent.click(screen.getByLabelText('Include expired drafts'));
     expect(screen.getByText('Old timely post')).toBeInTheDocument();
+  });
+});
+
+const decision = (over: Partial<DraftDecision>): DraftDecision => ({
+  id: 1,
+  draft_id: 'cm:0',
+  platform: 'instagram',
+  account: 'patrick',
+  decision: 'rejected',
+  original_text: '',
+  final_text: '',
+  diff_stats: {},
+  image_choice: 'none',
+  original_due_at: null,
+  final_due_at: null,
+  reason_codes: [],
+  note: '',
+  checklist: [],
+  snooze_until: null,
+  decided_by: 'owner',
+  decided_at: new Date().toISOString(),
+  ...over,
+});
+
+describe('reject, revise and snooze', () => {
+  it('rejects with reason chips and a note, then refreshes the queue', async () => {
+    vi.mocked(recordDraftDecision).mockResolvedValue({ draft_id: 'cm:0', decision: 'rejected' });
+    renderQueue();
+    await openFirst();
+    fireEvent.click(screen.getByRole('button', { name: /^Reject patrick__eff post: We gave/ }));
+    const confirm = screen.getByRole('button', { name: 'Confirm rejection' });
+    expect(confirm).toBeDisabled();
+    fireEvent.click(screen.getByRole('button', { name: 'Off-voice' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Wrong image' }));
+    fireEvent.change(screen.getByLabelText('Note (optional)'), { target: { value: 'Too salesy' } });
+    fireEvent.click(confirm);
+    await screen.findByText(/Rejected. The reason is saved/);
+    expect(recordDraftDecision).toHaveBeenCalledWith('cm:0', {
+      decision: 'rejected',
+      reasons: ['off_voice', 'wrong_image'],
+      note: 'Too salesy',
+      checklist: [
+        { item: 'Confirm the mark matches the merged design.', checked: false },
+        { item: 'Check the public site.', checked: false },
+      ],
+    });
+    expect(getPostingDashboard).toHaveBeenCalledTimes(2);
+    expect(approveReviewDraft).not.toHaveBeenCalled();
+  });
+
+  it('requires a note for a revision request and snoozes by days', async () => {
+    vi.mocked(recordDraftDecision).mockResolvedValue({ draft_id: 'cm:0', decision: 'x' });
+    renderQueue();
+    await openFirst();
+    fireEvent.click(screen.getByRole('button', { name: /^Request revision of patrick__eff/ }));
+    const send = screen.getByRole('button', { name: 'Send request' });
+    expect(send).toBeDisabled();
+    fireEvent.change(screen.getByLabelText('What should change?'), {
+      target: { value: 'Lead with the streamer, not the logo' },
+    });
+    fireEvent.click(send);
+    await screen.findByText(/Revision requested/);
+    expect(vi.mocked(recordDraftDecision).mock.calls[0][1]).toMatchObject({
+      decision: 'revision_requested',
+      note: 'Lead with the streamer, not the logo',
+    });
+    await openFirst();
+    fireEvent.click(screen.getByRole('button', { name: /^Snooze patrick__eff/ }));
+    fireEvent.change(screen.getByLabelText('Snooze for'), { target: { value: '3' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Snooze' }));
+    await screen.findByText('Snoozed for 3 days.');
+    const until = Date.parse(String(vi.mocked(recordDraftDecision).mock.calls[1][1].snooze_until));
+    expect(until - Date.now()).toBeGreaterThan(70 * HOUR);
+  });
+
+  it('hides rejected, snoozed and superseded drafts until asked', async () => {
+    vi.mocked(getPostingDashboard).mockResolvedValue(
+      snapshot([
+        draft(),
+        draft({ id: 'cm:1', text: 'Snoozed post' }),
+        draft({ id: 'cm:2', text: 'Old version' }),
+        draft({ id: 'cm:3', text: 'New version', supersedes: 'cm:2' }),
+        draft({ id: 'cm:4', text: 'Snooze over' }),
+      ]),
+    );
+    vi.mocked(getDraftDecisions).mockResolvedValue([
+      decision({ draft_id: 'cm:0', note: 'Off-brand' }),
+      decision({ id: 2, draft_id: 'cm:1', decision: 'snoozed', snooze_until: future(24) }),
+      decision({ id: 3, draft_id: 'cm:4', decision: 'snoozed', snooze_until: future(-1) }),
+    ]);
+    renderQueue();
+    await screen.findByText('New version');
+    expect(screen.getByText('Snooze over')).toBeInTheDocument();
+    for (const text of [/We gave clip stacks/, 'Snoozed post', 'Old version'])
+      expect(screen.queryByText(text)).not.toBeInTheDocument();
+    expect(screen.getByRole('tab', { name: /Instagram 2/ })).toBeInTheDocument();
+    fireEvent.click(screen.getByLabelText(/Show 3 rejected, snoozed or replaced drafts/));
+    expect(screen.getByText('Old version')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /We gave clip stacks/, expanded: false }));
+    expect(screen.getByText('Rejected: Off-brand')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /^Approve & queue/ })).not.toBeInTheDocument();
   });
 });
 
