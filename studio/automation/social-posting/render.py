@@ -162,7 +162,7 @@ html,body{{width:{WIDTH}px;height:{HEIGHT}px;overflow:hidden;background:{bg};col
   {f'<div class="kicker">{kick}</div>' if kick else ''}
   <div class="headline" style="font-size:{min(size, 84)}px">{head}</div>
 </div>
-<div style="position:absolute;left:50%;bottom:-60px;transform:translateX(-50%) rotate(-2deg);width:560px;height:900px;border-radius:44px;border:14px solid {fg};overflow:hidden;box-shadow:24px 24px 0 {accent}">
+<div style="position:absolute;left:50%;{'bottom:-60px' if head else 'top:140px'};transform:translateX(-50%) rotate(-2deg);width:{560 if head else 640}px;height:{900 if head else 1030}px;border-radius:44px;border:14px solid {fg};overflow:hidden;box-shadow:24px 24px 0 {accent}">
   <img src="{art}" style="width:100%;display:block">
 </div>
 {f'<img class="logo" src="{logo}" style="position:absolute;right:72px;bottom:72px;height:56px">' if logo else ''}

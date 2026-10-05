@@ -143,10 +143,10 @@ def make_media(cfg, draft, directory, n):
 ART = json.loads(read(CRAFT/'art-direction.json', '{}'))
 
 
-def instagram(cfg, evidence, digest, claims, directory, recent=()):
+def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change', extra=None):
     """Run the four writing stages and the media stage; return schema-shaped drafts."""
-    shared = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'digest': digest, 'recent_captions': list(recent)}
-    brief = codex(cfg, stage_prompt('brief', shared), directory, '1-brief', 'brief', effort='high')
+    shared = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'digest': digest, 'recent_captions': list(recent), 'mode': mode, **(extra or {})}
+    brief = codex(cfg, stage_prompt('showcase' if mode == 'showcase' else 'brief', shared), directory, '1-brief', 'brief', effort='high')
     if not brief['items']:
         return {'drafts': [], 'open_checks': [f"Skipped {', '.join(s['source_ids'])}: {s['why']}" for s in brief['skipped']]}
     drafts = codex(cfg, stage_prompt('draft', {**shared, 'brief': brief}), directory, '2-draft', 'draft', effort='medium')
@@ -164,6 +164,8 @@ def instagram(cfg, evidence, digest, claims, directory, recent=()):
             slug = next((REPO_BRAND[r] for r in repos.values() if r in REPO_BRAND), 'subcult')
         draft['product'] = slug
         jpeg, record = make_media(cfg, draft, directory, n)
+        if record.get('kind') == 'screenshot':
+            draft['next_check'] = (draft['next_check'].rstrip()+' The image is a capture of the live page, which can show third-party names, thumbnails or clips; check rights before posting.').strip()
         reviewed = by_item.get(draft['item'], {})
         scores = [d['scores'] for d in reviewed.get('drafts', []) if d['draft'] == reviewed.get('base_draft')]
         alternatives = [d['text'] for d in drafts['drafts'] if d['item'] == draft['item']]
@@ -217,3 +219,25 @@ def publication(cfg, evidence, digest, claims, directory):
     if not final['excerpt'].strip() and review['excerpt'].strip():
         final['excerpt'] = review['excerpt']
     return final
+
+
+def page_text(url, limit=6000):
+    """Visible text of a public page, via headless Chromium's DOM dump."""
+    if not url.startswith('https://'):
+        raise ValueError('Public HTTPS pages only')
+    html_text = subprocess.run(['chromium', '--headless=new', '--disable-gpu', '--virtual-time-budget=8000', '--dump-dom', url],
+                               capture_output=True, text=True, timeout=120, check=True).stdout
+    text = re.sub(r'<(script|style)[^>]*>.*?</\1>', ' ', html_text, flags=re.S | re.I)
+    text = re.sub(r'<[^>]+>', ' ', text)
+    return re.sub(r'\s+', ' ', __import__('html').unescape(text)).strip()[:limit]
+
+
+def showcase(cfg, product, claims, directory, recent=()):
+    """One post introducing a live product, built from its register row and its live page."""
+    url = ART[product]['screenshot_urls'][0]
+    try:
+        page = page_text(url)
+    except (subprocess.SubprocessError, OSError):
+        page = ''
+    return instagram(cfg, {'items': []}, '', claims, directory, recent, mode='showcase',
+                     extra={'product': product, 'product_page': page, 'product_url': url})
