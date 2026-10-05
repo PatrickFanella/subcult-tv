@@ -22,6 +22,8 @@ Also give `predicted`: what you expect a stranger to do (scroll past / read / re
 
 List every factual statement that the evidence does not support or that overstates it, with the exact phrase. List every banned or tired phrase. List every place it sounds like AI copy (balanced triplets, hedged abstractions, tidy closing maxims, empty intensifiers).
 
+Check each draft against `owner_feedback` when present: flag anything the owner has edited out or rejected before.
+
 ## Decide
 
 For each item, pick the stronger draft as the base (or say both fail and why). Name the lines that are working and must survive: the voice, a dry aside, an honest admission, a vivid detail. Accuracy and life are both the job: fix an unsupported line by rephrasing it truthfully in the same voice, never by flattening it into documentation ("Someone got an error page" becomes "Opening the menu on a phone sent you to an error page", not "The menu could produce an error state"). When the evidence shows a failure in code or tests but not in production, the honest fix is usually one word ("could send you to an error page"), not a hedge ("In the version I was working on"). Then write revision notes for the final stage: exact line edits, what to cut, what to move, a sharper hook if you can write one from the evidence, and the best ending. Be specific enough that a writer can apply them without guessing. Keep any fact the notes introduce inside the evidence.

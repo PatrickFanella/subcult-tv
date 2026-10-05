@@ -18,6 +18,8 @@ For each chosen change, work out the story before any wording:
 
 `recent_captions` lists captions prepared in the last two weeks. Do not reuse their openings, sentence skeletons or patterns.
 
+`owner_feedback`, when present, lists the owner's recent decisions on earlier drafts: captions they edited (before and after) and drafts they rejected or sent back, with reasons. Treat their edits as the house style and avoid what they rejected.
+
 ## Angles
 
 Write four distinct angles per chosen change. Each uses a different pattern from `patterns` (or a pattern you name and describe if none fits). For each angle give:

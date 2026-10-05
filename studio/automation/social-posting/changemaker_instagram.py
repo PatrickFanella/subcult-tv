@@ -69,6 +69,27 @@ def recent_captions(state, now, days=14):
     return texts[:30]
 
 
+def owner_feedback(state, limit=20):
+    """Recent owner decisions pulled from the review dashboard, newest first.
+
+    `owner-feedback.json` holds a list of decision records (decision, original_text,
+    final_text, reason codes, note). Edited approvals and rejections teach the drafting
+    stages what the owner changes; the file is optional.
+    """
+    path = state/'owner-feedback.json'
+    if not path.is_file() or path.is_symlink() or path.stat().st_size > 2_000_000:
+        return []
+    try:
+        records = json.loads(path.read_text())
+    except ValueError:
+        return []
+    keep = []
+    for record in records if isinstance(records, list) else []:
+        if record.get('decision') in ('approved_edited', 'rejected', 'revision_requested'):
+            keep.append({k: record.get(k) for k in ('decision', 'original_text', 'final_text', 'reasons', 'note')})
+    return keep[:limit]
+
+
 def single_pass(cfg, source_root, selected, digest, claims, directory):
     """The original one-call caption prompt, kept as the fallback path."""
     prompt = (HERE/'changemaker-instagram-prompt.md').read_text()+'\n'+json.dumps({
@@ -165,7 +186,8 @@ def execute(source_root, state):
         if cfg.get('craft', True):
             try:
                 import craft
-                staged = craft.instagram(cfg, selected, digest['draft'], claims, directory/'craft', recent=recent_captions(state, now))
+                staged = craft.instagram(cfg, selected, digest['draft'], claims, directory/'craft', recent=recent_captions(state, now),
+                                         extra={'owner_feedback': owner_feedback(state)})
                 result = {'drafts': [{**d, 'media_brief': d['media']['kind']+': '+(d['media']['headline'] or d['angle']),
                                       'next_check': d['next_check']} for d in staged['drafts']],
                           'open_checks': staged['open_checks']}
