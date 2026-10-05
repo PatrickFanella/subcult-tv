@@ -1,0 +1,48 @@
+{
+  "repository": "https://git.subcult.tv/subculture-collective/backline",
+  "revision": "e7f6961f3c5928bd80f2fb81d07985c93a0e3c39",
+  "sources": [
+    {
+      "repository_path": "frontend/src/pages/BacklineLanding.tsx",
+      "snapshot_path": "landing-source/frontend/src/pages/BacklineLanding.tsx",
+      "sha256": "d0d68a1d40db22e10dfe1059d3245520d15696a123a11c85a6042fdf885ced92"
+    },
+    {
+      "repository_path": "frontend/src/pages/backline-landing.css",
+      "snapshot_path": "landing-source/frontend/src/pages/backline-landing.css",
+      "sha256": "35770ffe3838765103110238e51c18b2fcb2e59459bb106e4977abb579be6ab5"
+    },
+    {
+      "repository_path": "frontend/package.json",
+      "snapshot_path": "landing-source/frontend/package.json",
+      "sha256": "e1c0606d29ba1d365b1caef9f34941d8f3d845395ba461d12677c750d552f3e3"
+    },
+    {
+      "repository_path": "frontend/package-lock.json",
+      "snapshot_path": "landing-source/frontend/package-lock.json",
+      "sha256": "f281b0dd38e8129d6bd45c0e110cb2facf5d2f000536d5273567688be80e9ad0"
+    },
+    {
+      "repository_path": "docs/design/BACKLINE.md",
+      "snapshot_path": "landing-source/docs/design/BACKLINE.md",
+      "sha256": "b01f379e53d0b434f0a6fe2f30dff7d87af318e334e1155fe920a5b28401d74e"
+    }
+  ],
+  "adaptations": [
+    "Asset URLs resolve to the local product/ directory.",
+    "Home resolves to landing.html.",
+    "Pilot sign-in links become labeled pilot-information anchors.",
+    "Standalone navigation script replaces React menu state.",
+    "Private review note and noindex metadata are added."
+  ],
+  "files": [
+    {
+      "path": "landing.html",
+      "sha256": "89d0b27799cab8f3137ef1430d6bbb9db15136f422e2fc49cad73f4e5cd639a4"
+    },
+    {
+      "path": "landing.css",
+      "sha256": "70e186183efd6461c441846ac1e608cf6dfba83e3bb3be78e091c58d010a923b"
+    }
+  ]
+}
