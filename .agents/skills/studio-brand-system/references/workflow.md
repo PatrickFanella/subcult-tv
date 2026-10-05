@@ -1,6 +1,6 @@
 # Workflow and deliverables
 
-Paths below are relative to the active `subcult-tv` root. Reuse maintained files before adding new ones. The target pack is normally `studio/branding/library/brands/<brand>/`; direction studies belong under `studio/branding/reviews/`. Product-owned interface docs stay in their owning repository, with a source link and hash-bound snapshot in Studio when its existing convention calls for one.
+Paths below are relative to the active `subcult-tv` root. Reuse maintained files before adding new ones. The target pack is `studio/brands/<brand>/`, built by the generators in `studio/brand-tools/`; direction studies and reviews belong under `studio/studies/`. Product-owned interface docs stay in their owning repository, with a source link and hash-bound snapshot in Studio when its existing convention calls for one.
 
 ## Select a system
 

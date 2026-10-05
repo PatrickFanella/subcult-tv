@@ -17,7 +17,7 @@ A review request authorizes inspection and a report. A request to repair authori
 
 ## Resolve the baseline
 
-Read `studio/branding/library/README.md`, the target pack's `GUIDE.md`, tokens, selection records, source provenance and manifest. Resolve whether Studio or the product repository owns interface rules; read `WEBSITE.md` and product design docs where applicable. Use the current selection and preserved masters, not archived proposals. Compare the implemented revision with the documented observation date.
+Read `studio/brands/README.md`, the target pack's `GUIDE.md`, tokens, selection records, source provenance and manifest. Resolve whether Studio or the product repository owns interface rules; read `WEBSITE.md` and product design docs where applicable. Use the current selection and preserved masters, not archived proposals. Compare the implemented revision with the documented observation date.
 
 Read `studio/content/VOICE.md` and the claims register when copy is in scope. Do not apply the umbrella's colors or voice to every product. Promotional and interface systems may intentionally differ; report an intentional documented difference separately from a defect. If the baseline conflicts or lacks a decision, record a specification gap and continue independent checks.
 
@@ -31,7 +31,7 @@ Measure relevant contrast pairs and inspect keyboard/focus behavior when the int
 
 ## Report or repair
 
-Place a scoped report under `studio/branding/reviews/<dated-audit>/`, or the product's review location if that product owns the work. Each actionable finding needs: affected file/URL and state, observed behavior, expected rule with source, practical impact, evidence, proposed fix and owning repository. Rank by impact; separate verified defects, specification gaps and optional improvements. Include representative matching behavior so absence of findings is not mistaken for absence of inspection.
+Place a scoped report under `studio/studies/reviews/<dated-audit>/`, or the product's review location if that product owns the work. Each actionable finding needs: affected file/URL and state, observed behavior, expected rule with source, practical impact, evidence, proposed fix and owning repository. Rank by impact; separate verified defects, specification gaps and optional improvements. Include representative matching behavior so absence of findings is not mistaken for absence of inspection.
 
 If repairing, preserve owner-edited masters, change only the affected sources, regenerate their exports and update manifests/provenance together. Run relevant product checks and `rtk make check-studio check-studio-automation` for Studio changes. Verify fixed states and exports again. Do not silently replace the selected direction or deploy a site as an audit step.
 
