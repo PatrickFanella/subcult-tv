@@ -16,7 +16,6 @@ from pathlib import Path
 import subprocess
 import tempfile
 
-from PIL import Image
 
 HERE = Path(__file__).resolve().parent
 LIBRARY = HERE.parents[1]/'brand-tools'
@@ -196,6 +195,7 @@ def capture(url, out_png):
 
 
 def to_jpeg(png, out_jpeg):
+    from PIL import Image  # only rendering needs Pillow; importing this module must not
     image = Image.open(png).convert('RGB').resize((WIDTH, HEIGHT), Image.LANCZOS)
     for quality in (92, 88, 84, 80, 76, 72, 68):
         buffer = io.BytesIO()
