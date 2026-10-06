@@ -1,0 +1,57 @@
+{
+  "generator": "built-in image_gen",
+  "created": "2026-10-06",
+  "brand_guide": "studio/brands/subcult/GUIDE.md",
+  "exports": [
+    {
+      "slug": "supporter",
+      "label": "SUPPORTER",
+      "prompt": "Use case: ads-marketing. Create one finished Patreon membership tier banner for SUBCULT.TV. Wide horizontal composition, exact aspect ratio 2.3:1, ideally 1380 by 600 pixels, to export at 460 by 200 pixels. Original culture-zine screenprinted poster artwork: flat vivid purple #8b5cf6 field, near-black ink #100b19, acid green #00ff88 highlights and warm off-white #f0ece4. Bold condensed uppercase typography reminiscent of Oswald, very legible at small size. Rough screenprint grain, cut-paper collage shapes, strong intentional editorial composition, restrained detail. Large tier name occupies left half; distinctive illustration on right half. Keep all important contents within an 8% safe margin. Text only the exact tier name below; no prices, subtitles, logos, website address, watermarks, crowns, luxury hierarchy or reward claims. Full bleed opaque background, no mockup frame. The tier name must be spelled exactly.\nText (verbatim): \"SUPPORTER\". Subject: A bold abstract radiating sound/signal wave and a tilted green block, suggesting someone keeping independent creative work alive.",
+      "source": "studio/content/patreon/support-redesign-2026-10/tier-images-20261006/sources/supporter-generated.png",
+      "export": "studio/content/patreon/support-redesign-2026-10/tier-images-20261006/supporter-460x200.png",
+      "dimensions": "460x200",
+      "source_sha256": "cea8826a08454293d3d4c5b2cb2edf430b42a35a85fac319fa1d2a27f1e8683e",
+      "export_sha256": "052fdecf760df990e931211b3f47ae8535151bd04f633f2371d584ecdf0987d0"
+    },
+    {
+      "slug": "backer",
+      "label": "BACKER",
+      "prompt": "Use case: ads-marketing. Create one finished Patreon membership tier banner for SUBCULT.TV. Wide horizontal composition, exact aspect ratio 2.3:1, ideally 1380 by 600 pixels, to export at 460 by 200 pixels. Original culture-zine screenprinted poster artwork: flat vivid purple #8b5cf6 field, near-black ink #100b19, acid green #00ff88 highlights and warm off-white #f0ece4. Bold condensed uppercase typography reminiscent of Oswald, very legible at small size. Rough screenprint grain, cut-paper collage shapes, strong intentional editorial composition, restrained detail. Large tier name occupies left half; distinctive illustration on right half. Keep all important contents within an 8% safe margin. Text only the exact tier name below; no prices, subtitles, logos, website address, watermarks, crowns, luxury hierarchy or reward claims. Full bleed opaque background, no mockup frame. The tier name must be spelled exactly.\nText (verbatim): \"BACKER\". Subject: A compact tabletop printing press with a sheet emerging, depicted as bold cut-paper screenprint illustration.",
+      "source": "studio/content/patreon/support-redesign-2026-10/tier-images-20261006/sources/backer-generated.png",
+      "export": "studio/content/patreon/support-redesign-2026-10/tier-images-20261006/backer-460x200.png",
+      "dimensions": "460x200",
+      "source_sha256": "4289cb44f463021ccf89a4b13ad3746b21629e9dc445f5bdddc1aa256b3f0c21",
+      "export_sha256": "27e989cbc56891fa697ca8b4d02cda2a7b73ae448ad3fa4cfc9038810ece3c04"
+    },
+    {
+      "slug": "patron",
+      "label": "PATRON",
+      "prompt": "Use case: ads-marketing. Create one finished Patreon membership tier banner for SUBCULT.TV. Wide horizontal composition, exact aspect ratio 2.3:1, ideally 1380 by 600 pixels, to export at 460 by 200 pixels. Original culture-zine screenprinted poster artwork: flat vivid purple #8b5cf6 field, near-black ink #100b19, acid green #00ff88 highlights and warm off-white #f0ece4. Bold condensed uppercase typography reminiscent of Oswald, very legible at small size. Rough screenprint grain, cut-paper collage shapes, strong intentional editorial composition, restrained detail. Large tier name occupies left half; distinctive illustration on right half. Keep all important contents within an 8% safe margin. Text only the exact tier name below; no prices, subtitles, logos, website address, watermarks, crowns, luxury hierarchy or reward claims. Full bleed opaque background, no mockup frame. The tier name must be spelled exactly.\nText (verbatim): \"PATRON\". Subject: An independent creative workspace represented by a desktop monitor, audio waveform on its screen, and one sheet of artwork, bold screenprint collage.",
+      "source": "studio/content/patreon/support-redesign-2026-10/tier-images-20261006/sources/patron-generated.png",
+      "export": "studio/content/patreon/support-redesign-2026-10/tier-images-20261006/patron-460x200.png",
+      "dimensions": "460x200",
+      "source_sha256": "d9b0b7efaa73279a54a44856d117a5b3ce10921518fc165212eb0afaebaf1c0b",
+      "export_sha256": "4a43bf71690b1c8dd677fb03502e76b1d65843feac5779323c421c045b34a49c"
+    },
+    {
+      "slug": "groceries",
+      "label": "GROCERIES",
+      "prompt": "Use case: ads-marketing. Create one finished Patreon membership tier banner for SUBCULT.TV. Wide horizontal composition, exact aspect ratio 2.3:1, ideally 1380 by 600 pixels, to export at 460 by 200 pixels. Original culture-zine screenprinted poster artwork: flat vivid purple #8b5cf6 field, near-black ink #100b19, acid green #00ff88 highlights and warm off-white #f0ece4. Bold condensed uppercase typography reminiscent of Oswald, very legible at small size. Rough screenprint grain, cut-paper collage shapes, strong intentional editorial composition, restrained detail. Large tier name occupies left half; distinctive illustration on right half. Keep all important contents within an 8% safe margin. Text only the exact tier name below; no prices, subtitles, logos, website address, watermarks, crowns, luxury hierarchy or reward claims. Full bleed opaque background, no mockup frame. The tier name must be spelled exactly.\nText (verbatim): \"GROCERIES\". Subject: A simple paper grocery bag containing leafy greens, a baguette and apples, bold cut-paper screenprint illustration.",
+      "source": "studio/content/patreon/support-redesign-2026-10/tier-images-20261006/sources/groceries-generated.png",
+      "export": "studio/content/patreon/support-redesign-2026-10/tier-images-20261006/groceries-460x200.png",
+      "dimensions": "460x200",
+      "source_sha256": "f3166d0b5b307d313acb98b2ab23699ac7bab92956321795fabe31127cd058d4",
+      "export_sha256": "6265522067b9cbba7655d048150fc91a03d9182672bcb675eb75e95463af2ea7"
+    },
+    {
+      "slug": "rent",
+      "label": "RENT",
+      "prompt": "Use case: ads-marketing. Create one finished Patreon membership tier banner for SUBCULT.TV. Wide horizontal composition, exact aspect ratio 2.3:1, ideally 1380 by 600 pixels, to export at 460 by 200 pixels. Original culture-zine screenprinted poster artwork: flat vivid purple #8b5cf6 field, near-black ink #100b19, acid green #00ff88 highlights and warm off-white #f0ece4. Bold condensed uppercase typography reminiscent of Oswald, very legible at small size. Rough screenprint grain, cut-paper collage shapes, strong intentional editorial composition, restrained detail. Large tier name occupies left half; distinctive illustration on right half. Keep all important contents within an 8% safe margin. Text only the exact tier name below; no prices, subtitles, logos, website address, watermarks, crowns, luxury hierarchy or reward claims. Full bleed opaque background, no mockup frame. The tier name must be spelled exactly.\nText (verbatim): \"RENT\". Subject: An ordinary apartment building facade with a few warm lit windows and a key motif, bold cut-paper screenprint illustration.",
+      "source": "studio/content/patreon/support-redesign-2026-10/tier-images-20261006/sources/rent-generated.png",
+      "export": "studio/content/patreon/support-redesign-2026-10/tier-images-20261006/rent-460x200.png",
+      "dimensions": "460x200",
+      "source_sha256": "b2d0aecee91bb30664e25824f9c2cb0f479b3cd15490b80dd1bae0dbc461a09c",
+      "export_sha256": "5158e8ddd90f81f83c2b49334ecc450e631e3795967b83bdbd612cb8f5d907f3"
+    }
+  ]
+}
