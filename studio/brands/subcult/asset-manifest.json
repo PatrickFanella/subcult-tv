@@ -655,6 +655,103 @@
       "width": 256,
       "height": 256,
       "mode": "RGBA"
+    },
+    {
+      "path": "avatars/open-pilot-avatar-scaled.png",
+      "sha256": "01bdcb35f04ef7a768e9ab1e786b8e2faf6b32295feaa384f27e8ba3ff3da710",
+      "bytes": 788373,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "avatars/open-pilot-avatar.png",
+      "sha256": "908724ca3c841d629de0d33e656ed50173f154b35ea628eed97047784483a2cd",
+      "bytes": 1748961,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "avatars/subcult-agent-avatar.png",
+      "sha256": "9ff8451c41b71da149f9fefae7780affdce1d1323f25774998afcc0f71838696",
+      "bytes": 350200,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner-youtube-mobile-preview.png",
+      "sha256": "9cb2b914da29b7c6fb7f6c8155a116c3959e3babec5331223c3618526e027a0e",
+      "bytes": 23785,
+      "width": 1544,
+      "height": 422,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/banner-youtube.png",
+      "sha256": "ee837fb040185db50d4359fde1084ee01148b1a61406836f61728ec9c09829b7",
+      "bytes": 38781,
+      "width": 2560,
+      "height": 1440,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/banner-youtube.svg",
+      "sha256": "8a5ea931a7900763c046ac47d1dad7d53c0cca238d6d254e8a6c3ea0c320b5f1",
+      "bytes": 2297
+    },
+    {
+      "path": "social/twitch-offline.png",
+      "sha256": "116051e6f5f5eec5779aacfbc1de46c2a9a8cd58320c84c999267073bb34b25f",
+      "bytes": 36621,
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/twitch-offline.svg",
+      "sha256": "d7edec90a6e48dd435f6ca529e92d2b3c85c7edbad2309ca8376933cf13db62a",
+      "bytes": 2323
+    },
+    {
+      "path": "social/twitch-panel-about-subcult.png",
+      "sha256": "3de329db43cf62dd3b9dd1299ca7582ccbff2115c7a8d873719b959d083f71e1",
+      "bytes": 4774,
+      "width": 320,
+      "height": 96,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/twitch-panel-about-subcult.svg",
+      "sha256": "0310460bb6651a804c15ff5127b1f4c193e75382d64b3b300a51a7921f8e8454",
+      "bytes": 459
+    },
+    {
+      "path": "social/twitch-panel-find-us.png",
+      "sha256": "1d30c681c6b7ac6532c08fa934789965f2905e7950d214e169919f548c78864c",
+      "bytes": 2442,
+      "width": 320,
+      "height": 96,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/twitch-panel-find-us.svg",
+      "sha256": "4ee54e7c293a9cf32eefc344657a97bda63bdaea14c8339aedc947a654173e92",
+      "bytes": 447
+    },
+    {
+      "path": "social/twitch-panel-support.png",
+      "sha256": "9d324ab746553581b957a4e93bb8b0d64dee48e8d2c0da729eabec1cfc808b1d",
+      "bytes": 3228,
+      "width": 320,
+      "height": 96,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/twitch-panel-support.svg",
+      "sha256": "522d074a489535c65500973cc86fb8091b851af392b1ed4b4cdd56dddb97a6f3",
+      "bytes": 447
     }
   ]
 }

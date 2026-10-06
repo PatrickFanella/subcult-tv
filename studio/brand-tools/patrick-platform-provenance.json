@@ -1,0 +1,87 @@
+{
+  "created_at": "2026-10-05T03:18:45.026940+00:00",
+  "method": "Native SVG layouts using the approved Patrick__eff source and brand fonts; PNG exports rendered with Inkscape.",
+  "files": [
+    {
+      "path": "brand-tools/patrick_platform_extras.py",
+      "sha256": "db8dcb5f5694b74d81394d587f8cba6886e8e859edb74cca7fa5ce7655ad1d48",
+      "bytes": 3626
+    },
+    {
+      "path": "brands/patrick__eff/social/banner-x-bluesky.svg",
+      "sha256": "d056e79c2f15a53aebaf97bf3a33eb9d316b6b097914fbdea7670d9ef473ce33",
+      "bytes": 7085
+    },
+    {
+      "path": "brands/patrick__eff/social/banner-linkedin.svg",
+      "sha256": "3dd5a151655ffb5e0a810006eff6aee728b503585a8521b7d27203a7b5be7658",
+      "bytes": 894
+    },
+    {
+      "path": "brands/patrick__eff/social/banner-linkedin.png",
+      "sha256": "04626edf7259a501812b19fc868303d6e3f594a6370d2a030746eb260a4ec20e",
+      "bytes": 40070
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-offline.svg",
+      "sha256": "179fbc0fe075c26d760aa2676d719a9eabdffc76ed12977ddb8f6b09a8437903",
+      "bytes": 7402
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-panel-channel-rules.svg",
+      "sha256": "cd340b642693f3ca4f3e11d65435c2ec098fe1ecd1ab3d5fd39b7276fff29161",
+      "bytes": 493
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-panel-discord.svg",
+      "sha256": "dfa96509e4f05388f996c2be9a6930febe61a7da807466214363a8d3e31fd3e4",
+      "bytes": 481
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-panel-setup.svg",
+      "sha256": "e9ccf409065441118c4db5760a80860393f215484d4a8e88bf1e57f855bde003",
+      "bytes": 477
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-panel-socials.svg",
+      "sha256": "7df79ac57e175cd150d046d5966ab55837664fb6b01c55ed1da72d98ab2315a3",
+      "bytes": 481
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-panel-support.svg",
+      "sha256": "b4e17e641c09068941af244cfa64c170144c59cc2934cb3b239c89e1ac77ddc1",
+      "bytes": 481
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-offline.png",
+      "sha256": "50c59dd07e5b83ca0875851b744a7d997709ae03d6100c01669f7623cbf604e5",
+      "bytes": 77813
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-panel-channel-rules.png",
+      "sha256": "574fda1a8935ce817f464f1093da644ddd5b57b87f29c1cff112bc3e8db0d5c0",
+      "bytes": 4855
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-panel-discord.png",
+      "sha256": "de87950dbbe0d5a0d748481a8f8f1c99709707c5b8997745ea059fd0fd6f1ad7",
+      "bytes": 4257
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-panel-setup.png",
+      "sha256": "b4decbaf15bf365d36062c83255ca3054bc5e413f7e410775a9f399120537264",
+      "bytes": 3055
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-panel-socials.png",
+      "sha256": "69397adc69faf4d992ba2b3629dab273340b1b3e07f210f703034db607c366c9",
+      "bytes": 4428
+    },
+    {
+      "path": "brands/patrick__eff/social/twitch-panel-support.png",
+      "sha256": "ae062b561b233833906f7ba9b249305be19e876d7144e3553a2a9eead0a62dfe",
+      "bytes": 3945
+    }
+  ],
+  "verification": "All 9 new platform SVG sources parsed; YouTube mobile previews, LinkedIn rendered profile, Twitch offline CDN image and CLPR Bluesky profile visually checked."
+}
