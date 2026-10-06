@@ -93,22 +93,6 @@ img[alt="Immich logo"]{content:url('/_subcult/mark-primary.svg?v=logo-bcd-202610
 header,nav[aria-label="Main navigation"]{background:#181122!important;border-color:#58466e!important}
 input,select,textarea{background:#241a32!important;color:#f0ece4!important;border-color:#58466e!important}
 ''',
-'freshrss': '''
-img.logo{content:url('/_subcult/mark-dark.svg?v=logo-bcd-20261003');object-fit:contain}
-#global,#main,#stream,.content,.aside,#nav_menu{background:#100b19!important;color:#f0ece4!important}
-.header{background:#8b5cf6!important;color:#100b19!important;border-bottom:3px solid #00ff88}
-.header a,.header .btn{color:#100b19!important}
-.header .logo{background:url('/_subcult/mark-dark.svg?v=logo-bcd-20261003') left center/contain no-repeat!important;min-width:120px;height:40px}
-.header .logo img{visibility:hidden}
-.flux,.box,.dropdown-menu,.tree,.item,.group,.horizontal-list{background:#181122!important;color:#f0ece4!important;border-color:#58466e!important}
-.flux .flux_header,.flux .flux_header .title,.flux .flux_header .date,.flux .content{color:#f0ece4!important}
-.flux .flux_content{background:#241a32!important;color:#f0ece4!important}
-.flux .flux_content a,a{color:#c4afff}
-.btn,.btn-default{background:#241a32!important;color:#f0ece4!important;border-color:#58466e!important}
-.btn-important,.btn-primary,button[type=submit]{background:#00ff88!important;color:#100b19!important}
-input,textarea,select{background:#241a32!important;color:#f0ece4!important;border-color:#58466e!important}
-.formLogin h1{padding-top:75px;background:url('/_subcult/mark-primary.svg?v=logo-bcd-20261003') center top/150px 65px no-repeat}
-''',
 'navidrome':MUI+'''
 img[alt=logo]{content:url('/_subcult/mark-primary.svg?v=logo-bcd-20261003');object-fit:contain;background:#f0ece4;padding:8px;border-radius:2px}
 .RaLayout-content{background:#100b19!important}
@@ -152,7 +136,7 @@ input,select,textarea{background:#241a32!important;color:#f0ece4!important;borde
 .form-control,.form-select{background:#241a32!important;color:#f0ece4!important;border-color:#58466e!important}
 '''
 }
-for name in ['jellyfin','immich','freshrss','navidrome','authelia','grafana','qbittorrent','bazarr','uptime-kuma','sonarr','radarr','lidarr','prowlarr','whisparr']:
+for name in ['jellyfin','immich','navidrome','authelia','grafana','qbittorrent','bazarr','uptime-kuma','sonarr','radarr','lidarr','prowlarr','whisparr']:
  base=ASSETS/(name+'-base.css')
  css=COMMON+(base.read_text() if base.exists() else '')+(ARR if name in ['sonarr','radarr','lidarr','prowlarr','whisparr'] else '')+EXTRA.get(name,'')
  (ASSETS/(name+'.css')).write_text(css)

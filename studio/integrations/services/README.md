@@ -1,6 +1,6 @@
 # SUBCULT service branding
 
-SUBCULT Studio's Culture / poster press identity is applied to fourteen third-party web interfaces: Jellyfin, Immich, FreshRSS, Navidrome, qBittorrent, Sonarr, Radarr, Lidarr, Prowlarr, Whisparr, Bazarr, Authelia, Uptime Kuma and Grafana. Dash has a separate source-level integration at `/home/onnwee/Projects/subcult/dash`, revision `1fb5022554d1`.
+SUBCULT Studio's Culture / poster press identity is applied to thirteen third-party web interfaces: Jellyfin, Immich, Navidrome, qBittorrent, Sonarr, Radarr, Lidarr, Prowlarr, Whisparr, Bazarr, Authelia, Uptime Kuma and Grafana. Dash has a separate source-level integration at `/home/onnwee/Projects/subcult/dash`, revision `1fb5022554d1`.
 
 The styles use ink `#100b19`, purple `#8b5cf6`, green `#00ff88`, paper `#f0ece4`, Space Grotesk body text, Oswald display text and JetBrains Mono system text. `build.py` copies exact selected Studio masters, preserves the font licenses and flattens the pinned local theme.park CSS imports. `vendor-provenance.json` records the upstream source commit and byte hashes; `asset-manifest.json` records the generated output.
 
