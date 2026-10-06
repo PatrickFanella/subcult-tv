@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "media",
+    "alt_text"
+  ],
+  "properties": {
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "headline",
+        "kicker",
+        "image_prompt",
+        "url"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "illustration",
+            "type",
+            "screenshot"
+          ]
+        },
+        "headline": {
+          "type": "string"
+        },
+        "kicker": {
+          "type": "string"
+        },
+        "image_prompt": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "alt_text": {
+      "type": "string"
+    }
+  }
+}

@@ -72,6 +72,44 @@ class ChangemakerInstagramTests(unittest.TestCase):
                 self.assertIn('What people notice',prompts[0])
                 self.assertEqual(importer.execute(root,state)['status'],'no_new_sources')
 
+    def test_single_pass_drafts_still_get_a_prepared_image(self):
+        import craft
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)/'studio';state=Path(tmp)/'state'
+            (root/'automation/social-posting').mkdir(parents=True)
+            (root/'content/social').mkdir(parents=True)
+            (root/'automation/social-posting/config.json').write_text(json.dumps({'codex':'unused','model':'configured','switchyard':{}}))
+            (root/'content/social/Product Claims Register.md').write_text('Work in progress only.')
+            (root/'content/VOICE.md').write_text('Plain product language.')
+            (root/'automation/social-posting/changemaker-instagram-prompt.md').write_text('Prepare unapproved captions.')
+            home=Path(tmp)/'home'
+            (home/'.codex/skills/unslop').mkdir(parents=True)
+            (home/'.codex/skills/unslop/SKILL.md').write_text('Preserve facts.')
+            item={**self.items['S1'],'id':'S1','kind':'pull request','state':'merged','title':'Improve reading','source':'subculture-collective/kork'}
+            context={'drafts':[{'run_id':'native-run','draft_sha256':'d'*64,'evidence_sha256':'e'*64,'draft':'Digest.',
+                               'evidence':{'status':'complete','items':[item]}}]}
+            def generate(command, **kwargs):
+                (Path(kwargs['cwd'])/'result-model.json').write_text(json.dumps({'drafts':[self.draft],'open_checks':[]}))
+                return subprocess.CompletedProcess(command,0)
+            calls=[]
+            def picture(cfg, text, product, directory, n, recent_kinds=()):
+                calls.append(product)
+                directory.mkdir(parents=True, exist_ok=True)
+                jpeg=directory/f'post-{n}.jpg'; jpeg.write_bytes(b'\xff\xd8\xff\xe0fake-jpeg')
+                return jpeg, {'kind':'type','headline':'A clearer page'}, 'A type card reading A clearer page.'
+            def staged(*args, **kwargs):
+                raise ValueError('stage failed')
+            with patch.object(importer.Path,'home',return_value=home), patch.object(importer,'HERE',root/'automation/social-posting'), \
+                 patch.object(importer,'changemaker_context',return_value=context), patch.object(importer.subprocess,'run',side_effect=generate), \
+                 patch.object(importer,'image_record',return_value={'file':'x.jpg','sha256':'f'*64,'width':1080,'height':1350,'bytes':16}), \
+                 patch.object(craft,'instagram',side_effect=staged), patch.object(craft,'picture',side_effect=picture):
+                receipt=importer.execute(root,state)
+            media=json.loads((state/'runs'/receipt['run_id']/'result.json').read_text())['drafts'][0]['media']
+            self.assertEqual(calls,['kork'])
+            self.assertEqual(media['kind'],'type')
+            self.assertEqual(media['headline'],'A clearer page')
+            self.assertEqual(media['image']['sha256'],'f'*64)
+
     def test_slots_are_daytime_chicago_at_least_48_hours_ahead_and_distinct(self):
         from zoneinfo import ZoneInfo
         now = datetime(2026, 10, 5, 9, 20, tzinfo=timezone.utc)

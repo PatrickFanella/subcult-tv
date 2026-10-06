@@ -211,6 +211,20 @@ def execute(source_root, state):
             record = {'account': draft['account'], 'platform': 'instagram', 'text': draft['text'],
                 'due_at': slots[n].isoformat(), 'expires_at': (now+timedelta(days=7)).isoformat(), 'evidence': proof,
                 'next_check': draft['next_check'], 'checklist': checklist(draft['next_check']), 'media': media}
+            if not crafted and cfg.get('craft', True):
+                # The single-pass caption has no image yet; plan and render one so review always has a picture.
+                try:
+                    import craft
+                    repos = [i.get('source', '').split('/')[-1] for i in bound]
+                    image, made, alt = craft.picture(cfg, draft['text'], craft.brand_for('', repos), directory/'craft', n,
+                                                     recent_kinds=[d['media'].get('kind') for d in drafts])
+                    media.update(kind=made.get('kind', ''), headline=made.get('headline', ''))
+                    if image and Path(image).is_file() and Path(image).resolve().is_relative_to(state.resolve()):
+                        media['image'] = image_record(Path(image), state)
+                    if alt and not media['alt_text']:
+                        media['alt_text'] = alt
+                except Exception as error:
+                    (directory/f'picture-error-{n}.txt').write_text(type(error).__name__+': '+str(error)[:2000]+'\n')
             if crafted:
                 plan = draft['media']
                 media.update(mode='generate' if plan['kind'] == 'illustration' else 'capture' if plan['kind'] == 'screenshot' else 'library',

@@ -190,7 +190,7 @@
 /* The review sheet: preview beside the decision controls on wide screens. */
 .review-sheet {
   display: grid;
-  grid-template-columns: minmax(0, 24rem) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 29.25rem) minmax(0, 1fr);
   gap: 1.5rem;
   align-items: start;
 }
