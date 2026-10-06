@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Bookmark, Heart, MessageCircle, MoreHorizontal, Send } from 'lucide-react';
 import { getReviewDraftMedia } from '@/lib/api';
-import { INSTAGRAM_FOLD } from '@/lib/review-queue';
+import { FEED_MIN_RATIO, INSTAGRAM_FOLD, feedRatio } from '@/lib/review-queue';
 
 export default function PostPreview({
   account,
@@ -28,6 +28,7 @@ export default function PostPreview({
   const [savedImage, setSavedImage] = useState({ url: '', identity: '' });
   const identity = `${draftID}:${version}:${image}`;
   const [error, setError] = useState('');
+  const [ratio, setRatio] = useState(FEED_MIN_RATIO);
   useEffect(() => {
     const controller = new AbortController();
     let url = '';
@@ -59,23 +60,33 @@ export default function PostPreview({
         <strong>{account}</strong>
         <MoreHorizontal size={20} aria-hidden="true" />
       </div>
-      {source ? (
-        <img
-          className="instagram-preview-image"
-          src={source}
-          onLoad={() => onMediaReady?.(true)}
-          onError={() => {
-            onMediaReady?.(false);
-            setError('Image preview unavailable. Refresh before approving.');
-          }}
-          alt={altText || 'Selected image for this post'}
-        />
-      ) : (
-        <div className="instagram-preview-placeholder">
-          <span>{error || (hasMedia ? 'Loading selected image…' : 'Image needed')}</span>
-          {!hasMedia && <small>Choose or upload a JPEG.</small>}
-        </div>
-      )}
+      <div
+        className="instagram-preview-frame"
+        style={{ aspectRatio: source ? ratio : FEED_MIN_RATIO }}
+      >
+        {source ? (
+          <img
+            className="instagram-preview-image"
+            src={source}
+            onLoad={(event) => {
+              setRatio(
+                feedRatio(event.currentTarget.naturalWidth, event.currentTarget.naturalHeight),
+              );
+              onMediaReady?.(true);
+            }}
+            onError={() => {
+              onMediaReady?.(false);
+              setError('Image preview unavailable. Refresh before approving.');
+            }}
+            alt={altText || 'Selected image for this post'}
+          />
+        ) : (
+          <div className="instagram-preview-placeholder">
+            <span>{error || (hasMedia ? 'Loading selected image…' : 'Image needed')}</span>
+            {!hasMedia && <small>Choose or upload a JPEG.</small>}
+          </div>
+        )}
+      </div>
       <div className="instagram-preview-actions" aria-hidden="true">
         <Heart />
         <MessageCircle />

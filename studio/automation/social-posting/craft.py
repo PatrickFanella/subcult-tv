@@ -153,6 +153,28 @@ def make_media(cfg, draft, directory, n):
 ART = json.loads(read(CRAFT/'art-direction.json', '{}'))
 
 
+def brand_for(product, source_repos=()):
+    """Map a product name or the evidence repositories to a brand slug in the art direction."""
+    slug = (product or '').strip().lower().replace(' ', '-')
+    if slug in ART:
+        return slug
+    return next((REPO_BRAND[r] for r in source_repos if r in REPO_BRAND), 'subcult')
+
+
+def picture(cfg, text, product, directory, n, recent_kinds=()):
+    """Plan, render and check an image for a caption written without one.
+
+    Used when the staged path did not run, so every Instagram draft still
+    reaches review with a prepared image. Returns (path or None, record, alt_text).
+    """
+    directory.mkdir(parents=True, exist_ok=True)
+    plan = codex(cfg, stage_prompt('picture', {'caption': text, 'product': product, 'recent_kinds': list(recent_kinds),
+                                               'art_direction': {product: ART.get(product, {})}}),
+                 directory, f'picture-{n}', 'picture', effort='medium')
+    jpeg, record = make_media(cfg, {'text': text, 'product': product, 'media': plan['media']}, directory, n)
+    return jpeg, record, plan['alt_text']
+
+
 def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change', extra=None):
     """Run the four writing stages and the media stage; return schema-shaped drafts."""
     shared = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'digest': digest, 'recent_captions': list(recent), 'mode': mode, **(extra or {})}
@@ -179,11 +201,8 @@ def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change'
         final['drafts'] = kept
     for n, draft in enumerate(final['drafts']):
         item = brief['items'][draft['item']] if 0 <= draft['item'] < len(brief['items']) else {}
-        slug = draft['product'].strip().lower().replace(' ', '-')
-        if slug not in ART:
-            repos = {sid: next((i['source'].split('/')[-1] for i in evidence['items'] if i['id'] == sid), '') for sid in draft['source_ids']}
-            slug = next((REPO_BRAND[r] for r in repos.values() if r in REPO_BRAND), 'subcult')
-        draft['product'] = slug
+        repos = [next((i['source'].split('/')[-1] for i in evidence['items'] if i['id'] == sid), '') for sid in draft['source_ids']]
+        draft['product'] = brand_for(draft['product'], repos)
         jpeg, record = make_media(cfg, draft, directory, n)
         if record.get('kind') == 'screenshot':
             draft['next_check'] = (draft['next_check'].rstrip()+' The image is a capture of the live page, which can show third-party names, thumbnails or clips; check rights before posting.').strip()

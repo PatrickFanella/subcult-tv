@@ -611,6 +611,8 @@
   padding: 0.6rem;
 }
 .instagram-preview {
+  width: 100%;
+  max-width: 29.25rem;
   border: 1px solid #ddd;
   background: #fff;
   color: #151515;
@@ -637,15 +639,20 @@
   border: 2px solid #b245b4;
   font-weight: bold;
 }
+.instagram-preview-frame {
+  width: 100%;
+  overflow: hidden;
+  background: #eee;
+}
+/* Fill the feed frame and crop like Instagram does. */
 .instagram-preview-image {
   display: block;
   width: 100%;
-  max-height: 34rem;
-  object-fit: contain;
-  background: #eee;
+  height: 100%;
+  object-fit: cover;
 }
 .instagram-preview-placeholder {
-  min-height: 16rem;
+  height: 100%;
   background: #eee;
   color: #555;
   display: flex;

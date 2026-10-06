@@ -246,3 +246,12 @@ export function hiddenReason(
   }
   return '';
 }
+
+/** Instagram shows feed images between 4:5 portrait and 1.91:1 landscape, cropping anything outside. */
+export const FEED_MIN_RATIO = 4 / 5;
+export const FEED_MAX_RATIO = 1.91;
+
+export function feedRatio(width: number, height: number): number {
+  if (!width || !height) return FEED_MIN_RATIO;
+  return Math.min(FEED_MAX_RATIO, Math.max(FEED_MIN_RATIO, width / height));
+}
