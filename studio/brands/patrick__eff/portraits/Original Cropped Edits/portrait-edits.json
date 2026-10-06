@@ -1,0 +1,37 @@
+[
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-93a0c95e-6902-4b70-b7bf-04298a74df4b.png",
+    "name": "01-black-shirt-glasses-portrait.png",
+    "prompt": "Use case: identity-preserve. Make a careful photographic edit of the input selfie as a standalone vertical 4:5 portrait. Use the best tight upper-body framing, remove excess countertop and bathroom clutter through cropping, slight straightening if needed. Keep hands and phone as naturally present, and keep the peace sign on the hoodie shot. Correct yellow indoor cast, balance exposure and contrast, gently improve clarity and mirror haze without artificial smooth skin. Preserve exact facial identity, geometry, age, expression, gaze, hairstyle, glasses or no glasses, original clothing and jewelry and pose. Preserve natural texture and original room setting, do not reconstruct face or body, invent smile or apply beauty filter. Keep natural colors. No text, watermark or collage. Output one vertical edited portrait."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-03e4b49e-5496-4c50-b23a-9a5b8affb948.png",
+    "name": "02-black-shirt-no-glasses-portrait.png",
+    "prompt": "Use case: identity-preserve. Make a careful photographic edit of the input selfie as a standalone vertical 4:5 portrait. Use the best tight upper-body framing, remove excess countertop and bathroom clutter through cropping, slight straightening if needed. Keep hands and phone as naturally present, and keep the peace sign on the hoodie shot. Correct yellow indoor cast, balance exposure and contrast, gently improve clarity and mirror haze without artificial smooth skin. Preserve exact facial identity, geometry, age, expression, gaze, hairstyle, glasses or no glasses, original clothing and jewelry and pose. Preserve natural texture and original room setting, do not reconstruct face or body, invent smile or apply beauty filter. Keep natural colors. No text, watermark or collage. Output one vertical edited portrait."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-5117f912-6e83-4926-9546-0cb56d692260.png",
+    "name": "03-camouflage-shirt-portrait.png",
+    "prompt": "Use case: identity-preserve. Make a careful photographic edit of the input selfie as a standalone vertical 4:5 portrait. Use the best tight upper-body framing, remove excess countertop and bathroom clutter through cropping, slight straightening if needed. Keep hands and phone as naturally present, and keep the peace sign on the hoodie shot. Correct yellow indoor cast, balance exposure and contrast, gently improve clarity and mirror haze without artificial smooth skin. Preserve exact facial identity, geometry, age, expression, gaze, hairstyle, glasses or no glasses, original clothing and jewelry and pose. Preserve natural texture and original room setting, do not reconstruct face or body, invent smile or apply beauty filter. Keep natural colors. No text, watermark or collage. Output one vertical edited portrait."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-705ad4fb-dd57-470d-ac5a-38c7b2d003d3.png",
+    "name": "04-striped-shirt-portrait.png",
+    "prompt": "Use case: identity-preserve. Make a careful photographic edit of the input selfie as a standalone vertical 4:5 portrait. Use the best tight upper-body framing, remove excess countertop and bathroom clutter through cropping, slight straightening if needed. Keep hands and phone as naturally present, and keep the peace sign on the hoodie shot. Correct yellow indoor cast, balance exposure and contrast, gently improve clarity and mirror haze without artificial smooth skin. Preserve exact facial identity, geometry, age, expression, gaze, hairstyle, glasses or no glasses, original clothing and jewelry and pose. Preserve natural texture and original room setting, do not reconstruct face or body, invent smile or apply beauty filter. Keep natural colors. No text, watermark or collage. Output one vertical edited portrait."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-79e077fa-1404-40c0-97f1-21ce17a16cd3.png",
+    "name": "05-hoodie-peace-sign-portrait.png",
+    "prompt": "Use case: identity-preserve. Make a careful photographic edit of the input selfie as a standalone vertical 4:5 portrait. Use the best tight upper-body framing, remove excess countertop and bathroom clutter through cropping, slight straightening if needed. Keep hands and phone as naturally present, and keep the peace sign on the hoodie shot. Correct yellow indoor cast, balance exposure and contrast, gently improve clarity and mirror haze without artificial smooth skin. Preserve exact facial identity, geometry, age, expression, gaze, hairstyle, glasses or no glasses, original clothing and jewelry and pose. Preserve natural texture and original room setting, do not reconstruct face or body, invent smile or apply beauty filter. Keep natural colors. No text, watermark or collage. Output one vertical edited portrait."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-e0220088-6978-411d-9f72-642e42bcb538.png",
+    "name": "06-black-shirt-square-natural-portrait.png",
+    "prompt": "Use case: identity-preserve. Make a careful photographic edit of the input selfie as a standalone vertical 4:5 portrait. Use the best tight upper-body framing, remove excess countertop and bathroom clutter through cropping, slight straightening if needed. Keep hands and phone as naturally present, and keep the peace sign on the hoodie shot. Correct yellow indoor cast, balance exposure and contrast, gently improve clarity and mirror haze without artificial smooth skin. Preserve exact facial identity, geometry, age, expression, gaze, hairstyle, glasses or no glasses, original clothing and jewelry and pose. Preserve natural texture and original room setting, do not reconstruct face or body, invent smile or apply beauty filter. Keep natural colors. No text, watermark or collage. Output one vertical edited portrait."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-4667de20-7216-4e71-871a-329408d8e2ae.png",
+    "name": "07-black-shirt-square-warm-portrait.png",
+    "prompt": "Use case: identity-preserve. Make a careful photographic edit of the input selfie as a standalone vertical 4:5 portrait. Use the best tight upper-body framing, remove excess countertop and bathroom clutter through cropping, slight straightening if needed. Keep hands and phone as naturally present, and keep the peace sign on the hoodie shot. Correct yellow indoor cast, balance exposure and contrast, gently improve clarity and mirror haze without artificial smooth skin. Preserve exact facial identity, geometry, age, expression, gaze, hairstyle, glasses or no glasses, original clothing and jewelry and pose. Preserve natural texture and original room setting, do not reconstruct face or body, invent smile or apply beauty filter. Retain a restrained warm cinematic grade without orange skin. No text, watermark or collage. Output one vertical edited portrait."
+  }
+]

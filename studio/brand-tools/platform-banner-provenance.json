@@ -1,0 +1,48 @@
+[
+  {
+    "brand": "subcult",
+    "source": "brands/subcult/social/banner-x-bluesky.svg",
+    "source_sha256": "9eec5f48efd76ed9b165240cfd991f10f6267267634dadd69daf155a0ebdee18",
+    "output": "brands/subcult/social/banner-youtube.png",
+    "sha256": "ee837fb040185db50d4359fde1084ee01148b1a61406836f61728ec9c09829b7",
+    "dimensions": [
+      2560,
+      1440
+    ],
+    "content_box": [
+      680.0,
+      520.0,
+      1200.0,
+      400.0
+    ],
+    "safe_area": [
+      508,
+      509,
+      1544,
+      422
+    ]
+  },
+  {
+    "brand": "patrick__eff",
+    "source": "brands/patrick__eff/social/banner-x-bluesky.svg",
+    "source_sha256": "d056e79c2f15a53aebaf97bf3a33eb9d316b6b097914fbdea7670d9ef473ce33",
+    "output": "brands/patrick__eff/social/banner-youtube.png",
+    "sha256": "71f7623ef8ed504508c8e4a862b1a3c41aeb83ee9e3887f591ddc7de7302b1ce",
+    "dimensions": [
+      2560,
+      1440
+    ],
+    "content_box": [
+      680.0,
+      520.0,
+      1200.0,
+      400.0
+    ],
+    "safe_area": [
+      508,
+      509,
+      1544,
+      422
+    ]
+  }
+]

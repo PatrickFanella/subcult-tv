@@ -46,7 +46,11 @@ The pack uses the standard Studio paths: `logos/`, `social/`, `video/` and `artw
 
 The identity line is **Software. Sound. Culture.** Set all three phrases at the same size in each composition.
 
-The open frame with the original waveform is approved in seven treatments: 01, 02, 03, 04, 06, 07 and 08. Lavender is the default, and 06 is its counterpart for light backgrounds. Option 05 is excluded. The [approved logo gallery](../../../patrick/waveform-variations/index.html) shows all seven. Their transparent marks and avatars are in `logos/waveform/`. The monochrome fallback exports keep the plain open frame for small or single-ink uses.
+The open frame with the original waveform is approved in seven treatments: 01, 02, 03, 04, 06, 07 and 08. Lavender is the default, and 06 is its counterpart for light backgrounds. Option 05 is excluded. The [approved logo gallery](../../brand-tools/patrick/waveform-variations/index.html) shows all seven. Their transparent marks and avatars are in `logos/waveform/`. The monochrome fallback exports keep the plain open frame for small or single-ink uses.
+
+## Portrait photography
+
+[Portrait library](portraits/index.html) contains the owner-selected earlier photographs and original cropped, phone-free studio and indoor-wall edit sets. The professional outdoor headshot is selected for GitHub. Full-resolution files, suggested uses and source hashes are in the library. The source is `brand-tools/patrick/portraits/`; rebuilding retains this selection.
 
 ## Rebuild
 
@@ -151,5 +155,9 @@ def build(d):
     shutil.copy2(SOURCE/'source-observation.json',DEST/'source-observation.json')
     (DEST/'source-provenance.json').write_text(json.dumps({'selection':'owner, 2026-10-02','source_manifest':str((SOURCE/'asset-manifest.json').relative_to(ROOT)),'source_manifest_sha256':hashlib.sha256((SOURCE/'asset-manifest.json').read_bytes()).hexdigest(),'preserved_previous_pack':str(HISTORY.relative_to(ROOT))},indent=2)+'\n')
     (DEST/'video/captions.ass').write_text('[Script Info]\nScriptType: v4.00+\nPlayResX: 1920\nPlayResY: 1080\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Default,Inter,48,&H00F2F8F8,&H00F2F8F8,&H002C2221,&HBE2C2221,0,0,0,0,100,100,0,0,3,2,0,2,120,120,90,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\nDialogue: 0,0:00:00.00,0:00:04.00,Default,,0,0,0,,Replace with actual spoken words.\n')
+    if (SOURCE/'portraits').exists():
+        shutil.copytree(SOURCE/'portraits', DEST/'portraits', dirs_exist_ok=True)
+        gallery = DEST/'portraits/index.html'
+        gallery.write_text(gallery.read_text().replace('href="../README.md"', 'href="../GUIDE.md"').replace('url(../../fonts/InterVariable.woff2)', 'url(../fonts/InterVariable.woff2)'))
     refresh_manifest()
     print('Patrick__Eff: selected Patch pack built; Signal preserved in history.')
