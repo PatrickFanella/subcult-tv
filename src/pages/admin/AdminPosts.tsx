@@ -1,11 +1,13 @@
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import {
   getDraftDecisions,
   getPostingDashboard,
+  getRerolls,
   getReviewDrafts,
   getSocialDelivery,
   type DraftDecision,
+  type DraftReroll,
   type PostingDashboard,
   type PostingDraft,
   type ReviewDraft,
@@ -20,11 +22,14 @@ import {
   laneLabel,
   platformLabel,
   relativeTime,
+  rerollLabel,
 } from '@/lib/review-queue';
 import PostingShell from './PostingShell';
 import TextPostCard from './TextPostCard';
 import InstagramReview from './InstagramReview';
 import DecisionControls from './DecisionControls';
+import QueuedPostEditor from './QueuedPostEditor';
+import RerollControls from './RerollControls';
 import { usePreparedImage } from './usePreparedImage';
 import '@/styles/review-queue.css';
 
@@ -91,6 +96,7 @@ export default function AdminPosts() {
   const [saved, setSaved] = useState<ReviewDraft[]>([]);
   const [delivery, setDelivery] = useState<SocialDelivery | null>(null);
   const [decisions, setDecisions] = useState<DraftDecision[]>([]);
+  const [rerolls, setRerolls] = useState<DraftReroll[]>([]);
   const [showHidden, setShowHidden] = useState(false);
   const [error, setError] = useState('');
   const [deliveryError, setDeliveryError] = useState('');
@@ -102,11 +108,14 @@ export default function AdminPosts() {
   const tab: Tab = requested === 'x' || requested === 'bluesky' ? requested : 'instagram';
   const setTab = (next: Tab) =>
     setParams(next === 'instagram' ? {} : { tab: next }, { replace: true });
+  // Links from the delivery history open the queued draft by its PostyBirb ID.
+  const requestedPost = params.get('post') || '';
   const [query, setQuery] = useState('');
   const [includeExpired, setIncludeExpired] = useState(false);
   const [busy, setBusy] = useState('');
   const [notice, setNotice] = useState('');
   const [open, setOpen] = useState<string>('');
+  const seen = useRef(new Map<number, string>());
   const [now, setNow] = useState(() => Date.now());
   useEffect(() => {
     const timer = setInterval(() => setNow(Date.now()), 60000);
@@ -136,6 +145,27 @@ export default function AdminPosts() {
       .catch(() => {
         if (active) setDecisions([]);
       });
+    getRerolls()
+      .then((value) => {
+        if (!active) return;
+        setRerolls(value);
+        // Report re-rolls that finished since the last poll; open a finished
+        // replacement if its original is the open draft.
+        for (const r of value) {
+          const before = seen.current.get(r.id);
+          seen.current.set(r.id, r.status);
+          if (!before || before === r.status) continue;
+          if (r.status === 'done') {
+            setOpen((current) => (current === r.draft_id ? r.result_draft_id : current));
+            setNotice(`The re-rolled ${rerollLabel(r.mode)} is ready for review.`);
+          } else if (r.status === 'failed') {
+            setNotice(`The ${rerollLabel(r.mode)} re-roll failed: ${r.error}`);
+          }
+        }
+      })
+      .catch(() => {
+        if (active) setRerolls([]);
+      });
     getSocialDelivery()
       .then((value) => {
         if (active) {
@@ -153,6 +183,24 @@ export default function AdminPosts() {
       active = false;
     };
   }, [revision]);
+  // Re-rolls run on Kvant; poll while any is open so the replacement appears.
+  const rerolling = rerolls.some((r) => r.status === 'pending' || r.status === 'running');
+  useEffect(() => {
+    if (!rerolling) return;
+    const timer = setInterval(() => setRevision((v) => v + 1), 20000);
+    return () => clearInterval(timer);
+  }, [rerolling]);
+  const latestReroll = (id: string) => rerolls.find((r) => r.draft_id === id);
+  const rerolledFrom = (id: string) => rerolls.find((r) => r.result_draft_id === id);
+  // A delivery-history link opens its draft until the owner toggles a row.
+  const linked = requestedPost
+    ? (saved.find((s) => s.post_id === requestedPost)?.draft_id ?? '')
+    : '';
+  const current = open || linked;
+  const toggle = (id: string) => {
+    setOpen(current === id ? '' : id);
+    if (requestedPost) setParams(tab === 'instagram' ? {} : { tab }, { replace: true });
+  };
   const expired = (d: { expires_at: string; due_at: string }) => isExpired(d, now);
   const editFor = (id: string) => saved.find((s) => s.draft_id === id);
   const submitted = (id: string) => {
@@ -163,7 +211,9 @@ export default function AdminPosts() {
   const superseded = new Set(
     (data?.drafts || []).map((d) => d.supersedes).filter((id): id is string => Boolean(id)),
   );
-  const hidden = (d: PostingDraft) => hiddenReason(d, latest, superseded, now);
+  // A queued post stays editable even if a later draft claims to replace it.
+  const hidden = (d: PostingDraft) =>
+    submitted(d.id) ? '' : hiddenReason(d, latest, superseded, now);
   const all = (data?.drafts || []).filter((d) => showHidden || !hidden(d));
   const hiddenCount = (data?.drafts || []).filter(
     (d) => draftPlatform(d) === tab && hidden(d) && !expired(d),
@@ -202,7 +252,10 @@ export default function AdminPosts() {
   };
   function instagramState(d: PostingDraft) {
     const edit = editFor(d.id);
+    const reroll = latestReroll(d.id);
     if (hidden(d)) return hiddenLabel[hidden(d)];
+    if (reroll && (reroll.status === 'pending' || reroll.status === 'running'))
+      return 'Re-rolling…';
     if (edit && edit.status !== 'draft')
       return edit.status === 'scheduled' ? 'Queued' : 'Check PostyBirb';
     if (expired(d)) return 'Expired';
@@ -271,8 +324,8 @@ export default function AdminPosts() {
                     state={
                       hidden(d) ? hiddenLabel[hidden(d)] : expired(d) ? 'Expired' : 'Copy to Buffer'
                     }
-                    expanded={open === d.id}
-                    onToggle={() => setOpen(open === d.id ? '' : d.id)}
+                    expanded={current === d.id}
+                    onToggle={() => toggle(d.id)}
                   >
                     <TextPostCard draft={d} expired={expired(d)}>
                       {!hidden(d) && (
@@ -291,17 +344,35 @@ export default function AdminPosts() {
                 <ReviewRow
                   key={d.id}
                   draft={d}
-                  meta={`${d.account} · Instagram`}
+                  meta={`${d.account} · Instagram${rerolledFrom(d.id) ? ` · new ${rerollLabel(rerolledFrom(d.id)!.mode)}` : ''}`}
                   when={when}
                   state={instagramState(d)}
-                  expanded={open === d.id}
-                  onToggle={() => setOpen(open === d.id ? '' : d.id)}
+                  expanded={current === d.id}
+                  onToggle={() => toggle(d.id)}
                 >
                   {hidden(d) ? (
                     <p className="studio-note">
                       {hiddenLabel[hidden(d)]}
                       {latest.get(d.id)?.note ? `: ${latest.get(d.id)?.note}` : '.'}
                     </p>
+                  ) : submitted(d.id) && edit?.status === 'scheduled' && edit.post_id ? (
+                    <QueuedPostEditor
+                      key={`${d.id}:${edit.version}`}
+                      draftId={d.id}
+                      account={d.account}
+                      edit={edit}
+                      delivery={delivery}
+                      times={cadence(d.account)}
+                      timeZone={data.timezone}
+                      now={now}
+                      busy={busy}
+                      setBusy={setBusy}
+                      onError={(message) => setNotice(message)}
+                      onSaved={(message) => {
+                        setNotice(message);
+                        setRevision((v) => v + 1);
+                      }}
+                    />
                   ) : submitted(d.id) ? (
                     <p className="studio-note">
                       {edit?.status === 'scheduled'
@@ -328,6 +399,29 @@ export default function AdminPosts() {
                           setBusy={setBusy}
                           checklist={checklist}
                           onRecorded={recorded}
+                        />
+                      )}
+                      onSaved={(message) => {
+                        setNotice(message);
+                        setRevision((v) => v + 1);
+                      }}
+                      rerolling={['pending', 'running'].includes(latestReroll(d.id)?.status ?? '')}
+                      reroll={(keep) => (
+                        <RerollControls
+                          draftId={d.id}
+                          caption={keep.caption}
+                          imageSha256={keep.imageSha256}
+                          keepsUpload={keep.keepsUpload}
+                          active={latestReroll(d.id)}
+                          busy={busy}
+                          setBusy={setBusy}
+                          now={now}
+                          onRequested={(r) => {
+                            setRerolls((current) => [r, ...current]);
+                            setNotice(
+                              `Re-rolling the ${rerollLabel(r.mode)}. This draft stays here until the new version arrives.`,
+                            );
+                          }}
                         />
                       )}
                       onApproved={(result) => {

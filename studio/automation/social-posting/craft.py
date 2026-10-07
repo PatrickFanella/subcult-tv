@@ -161,7 +161,7 @@ def brand_for(product, source_repos=()):
     return next((REPO_BRAND[r] for r in source_repos if r in REPO_BRAND), 'subcult')
 
 
-def picture(cfg, text, product, directory, n, recent_kinds=()):
+def picture(cfg, text, product, directory, n, recent_kinds=(), extra=None):
     """Plan, render and check an image for a caption written without one.
 
     Used when the staged path did not run, so every Instagram draft still
@@ -169,10 +169,26 @@ def picture(cfg, text, product, directory, n, recent_kinds=()):
     """
     directory.mkdir(parents=True, exist_ok=True)
     plan = codex(cfg, stage_prompt('picture', {'caption': text, 'product': product, 'recent_kinds': list(recent_kinds),
-                                               'art_direction': {product: ART.get(product, {})}}),
+                                               'art_direction': {product: ART.get(product, {})}, **(extra or {})}),
                  directory, f'picture-{n}', 'picture', effort='medium')
     jpeg, record = make_media(cfg, {'text': text, 'product': product, 'media': plan['media']}, directory, n)
     return jpeg, record, plan['alt_text']
+
+
+def reroll_caption(cfg, draft, evidence, claims, directory, note='', image=None, recent=()):
+    """Rewrite one caption around the same story; returns {text, angle, changed}.
+
+    When `image` is given the model sees the picture the caption will ship with.
+    """
+    craft = draft.get('craft') or {}
+    payload = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'draft_rules': read(CRAFT/'draft.md'),
+               'account': draft.get('account', ''), 'product': craft.get('product', ''),
+               'previous': draft.get('text', ''), 'alternatives': craft.get('alternatives', []),
+               'angle': craft.get('angle', ''), 'reader': craft.get('reader', ''),
+               'headline': (draft.get('media') or {}).get('headline', '') if image else '',
+               'recent_captions': list(recent), 'owner_note': note}
+    return codex(cfg, stage_prompt('reroll', payload), directory, 'reroll', 'reroll', effort='high',
+                 images=[image] if image else ())
 
 
 def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change', extra=None):

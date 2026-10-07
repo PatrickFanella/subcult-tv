@@ -150,6 +150,25 @@ func (c *Client) QueueInstagram(ctx context.Context, id, account, caption string
 	if due.Before(time.Now().Add(24*time.Hour)) || due.After(time.Now().AddDate(0, 0, 90)) {
 		return errors.New("schedule must be 24 hours to 90 days ahead")
 	}
+	if err := c.ValidateInstagram(ctx, id, account, caption); err != nil {
+		return err
+	}
+	if err := c.call(ctx, "PATCH", "/submissions/"+url.PathEscape(id), map[string]any{"isScheduled": true, "scheduleType": "SINGLE", "scheduledFor": due.UTC().Format(time.RFC3339)}, nil); err != nil {
+		return err
+	}
+	s, err := c.submission(ctx, id)
+	if err != nil {
+		return err
+	}
+	if !s.IsScheduled || s.Schedule.Type != "SINGLE" || !s.Schedule.Due.Equal(due.UTC().Truncate(time.Second)) {
+		return errors.New("PostyBirb schedule could not be confirmed")
+	}
+	return nil
+}
+
+// ValidateInstagram confirms an unscheduled single-image draft whose sole
+// target carries the exact caption and passes PostyBirb's own validation.
+func (c *Client) ValidateInstagram(ctx context.Context, id, account, caption string) error {
 	s, err := c.submission(ctx, id)
 	if err != nil {
 		return err
@@ -199,17 +218,6 @@ func (c *Client) QueueInstagram(ctx context.Context, id, account, caption string
 	if !validatedTarget {
 		return errors.New("PostyBirb account validation missing")
 	}
-
-	if err = c.call(ctx, "PATCH", "/submissions/"+url.PathEscape(id), map[string]any{"isScheduled": true, "scheduleType": "SINGLE", "scheduledFor": due.UTC().Format(time.RFC3339)}, nil); err != nil {
-		return err
-	}
-	s, err = c.submission(ctx, id)
-	if err != nil {
-		return err
-	}
-	if !s.IsScheduled || s.Schedule.Type != "SINGLE" || !s.Schedule.Due.Equal(due.UTC().Truncate(time.Second)) {
-		return errors.New("PostyBirb schedule could not be confirmed")
-	}
 	return nil
 }
 
@@ -239,4 +247,92 @@ func (c *Client) SocialStatus(ctx context.Context, id, account string) (string, 
 		return "QUEUE", "", nil
 	}
 	return "REVIEW", "", nil
+}
+
+// ErrNotQueued means the submission was checked and no mutation was sent: it
+// is already posting, posted, unscheduled or no longer matches the receipt.
+var ErrNotQueued = errors.New("PostyBirb submission is no longer an unposted scheduled image")
+
+// queued confirms one scheduled, unposted single-image submission whose sole
+// target still carries the expected caption.
+func (c *Client) queued(ctx context.Context, id, account, caption string) error {
+	s, err := c.submission(ctx, id)
+	if err != nil {
+		return err
+	}
+	if !s.IsScheduled || s.Post != nil || len(s.Files) != 1 || s.Schedule.Type != "SINGLE" {
+		return ErrNotQueued
+	}
+	want, _ := json.Marshal(literalDocument(caption))
+	targets := 0
+	for _, o := range s.Options {
+		if o.IsDefault {
+			continue
+		}
+		targets++
+		var got node
+		if o.AccountID != account || json.Unmarshal(o.Data.Description.Document, &got) != nil {
+			return ErrNotQueued
+		}
+		if encoded, _ := json.Marshal(got); !bytes.Equal(encoded, want) {
+			return ErrNotQueued
+		}
+	}
+	if targets != 1 {
+		return ErrNotQueued
+	}
+	return nil
+}
+
+// RescheduleInstagram moves a queued submission to a new time without
+// touching its caption or image, then confirms the readback.
+func (c *Client) RescheduleInstagram(ctx context.Context, id, account, caption string, due time.Time) error {
+	if due.Before(time.Now().Add(24*time.Hour)) || due.After(time.Now().AddDate(0, 0, 90)) {
+		return ErrNotQueued
+	}
+	if err := c.queued(ctx, id, account, caption); err != nil {
+		return err
+	}
+	if err := c.call(ctx, "PATCH", "/submissions/"+url.PathEscape(id), map[string]any{"isScheduled": true, "scheduleType": "SINGLE", "scheduledFor": due.UTC().Format(time.RFC3339)}, nil); err != nil {
+		return err
+	}
+	s, err := c.submission(ctx, id)
+	if err != nil {
+		return err
+	}
+	if !s.IsScheduled || s.Schedule.Type != "SINGLE" || !s.Schedule.Due.Equal(due.UTC().Truncate(time.Second)) {
+		return errors.New("PostyBirb schedule could not be confirmed")
+	}
+	return nil
+}
+
+// WithdrawInstagram unschedules a queued submission, confirms it can no longer
+// post, then deletes it. A failed delete leaves an unscheduled private draft.
+func (c *Client) WithdrawInstagram(ctx context.Context, id, account, caption string) (deleted bool, err error) {
+	if err = c.queued(ctx, id, account, caption); err != nil {
+		return false, err
+	}
+	if err = c.call(ctx, "PATCH", "/submissions/"+url.PathEscape(id), map[string]any{"scheduleType": "NONE"}, nil); err != nil {
+		return false, err
+	}
+	s, err := c.submission(ctx, id)
+	if err != nil {
+		return false, err
+	}
+	if s.IsScheduled || s.Post != nil {
+		return false, errors.New("PostyBirb unschedule could not be confirmed")
+	}
+	return c.call(ctx, "DELETE", "/submissions?ids="+url.QueryEscape(id), nil, nil) == nil, nil
+}
+
+// DiscardDraft deletes an unscheduled draft this API created but never queued.
+func (c *Client) DiscardDraft(ctx context.Context, id string) error {
+	s, err := c.submission(ctx, id)
+	if err != nil {
+		return err
+	}
+	if s.IsScheduled || s.Post != nil {
+		return ErrNotQueued
+	}
+	return c.call(ctx, "DELETE", "/submissions?ids="+url.QueryEscape(id), nil, nil)
 }

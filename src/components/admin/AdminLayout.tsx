@@ -1,8 +1,8 @@
-import { Suspense, useState } from 'react';
-import { LogOut, PanelLeftClose, PanelLeftOpen } from 'lucide-react';
+import { Suspense, useEffect, useRef, useState } from 'react';
+import { LogOut, Menu, PanelLeftClose, PanelLeftOpen, X } from 'lucide-react';
 import '@/styles/admin-production.css';
 import '@/styles/studio.css';
-import { Navigate, Outlet, NavLink, Link } from 'react-router-dom';
+import { Navigate, Outlet, NavLink, Link, useLocation } from 'react-router-dom';
 import { useAuth } from '@/context/useAuth';
 
 const NAV_ITEMS = [
@@ -16,6 +16,9 @@ const NAV_ITEMS = [
   { to: '/admin/subscribers', label: 'Subscribers', icon: '▥' },
 ];
 
+// Matches the CSS breakpoint where the sidebar becomes a drawer.
+const DRAWER_QUERY = '(max-width: 800px)';
+
 export default function AdminLayout() {
   const { user, logout, isAuthenticated, loading } = useAuth();
   const [collapsed, setCollapsed] = useState(() => {
@@ -25,6 +28,42 @@ export default function AdminLayout() {
       return false;
     }
   });
+
+  const { pathname } = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuPath, setMenuPath] = useState(pathname);
+  const menuButton = useRef<HTMLButtonElement>(null);
+  const navigation = useRef<HTMLElement>(null);
+  // Close the drawer after navigation.
+  if (menuPath !== pathname) {
+    setMenuPath(pathname);
+    setMenuOpen(false);
+  }
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    navigation.current?.querySelector<HTMLElement>('a')?.focus();
+    const media = window.matchMedia?.(DRAWER_QUERY);
+    const leave = () => {
+      if (!media?.matches) setMenuOpen(false);
+    };
+    const escape = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      setMenuOpen(false);
+      menuButton.current?.focus();
+    };
+    media?.addEventListener('change', leave);
+    document.addEventListener('keydown', escape);
+    return () => {
+      media?.removeEventListener('change', leave);
+      document.removeEventListener('keydown', escape);
+    };
+  }, [menuOpen]);
+
+  function closeMenu() {
+    setMenuOpen(false);
+    menuButton.current?.focus();
+  }
 
   function toggleSidebar() {
     const next = !collapsed;
@@ -49,9 +88,38 @@ export default function AdminLayout() {
   }
 
   return (
-    <div className="admin-shell min-h-screen bg-void flex">
+    <div className={`admin-shell min-h-screen bg-void flex ${menuOpen ? 'admin-menu-open' : ''}`}>
+      {/* ── Phone top bar ────────────────────────────────────── */}
+      <header className="admin-topbar">
+        <Link
+          to="/"
+          aria-label="SUBCULT home"
+          className="subcult-nav-brand font-display text-xl text-glow tracking-wider no-underline"
+        >
+          <img
+            src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004"
+            className="subcult-nav-mark"
+            alt=""
+          />
+          <span>SUBCULT</span>
+        </Link>
+        <button
+          ref={menuButton}
+          type="button"
+          className="admin-menu-button"
+          aria-expanded={menuOpen}
+          aria-controls="admin-sidebar"
+          onClick={() => (menuOpen ? closeMenu() : setMenuOpen(true))}
+        >
+          {menuOpen ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
+          <span>{menuOpen ? 'Close' : 'Menu'}</span>
+        </button>
+      </header>
+      {menuOpen && <div className="admin-drawer-backdrop" aria-hidden="true" onClick={closeMenu} />}
+
       {/* ── Sidebar ──────────────────────────────────────────── */}
       <aside
+        id="admin-sidebar"
         className={`admin-sidebar w-64 bg-soot border-r border-fog flex flex-col shrink-0 ${collapsed ? 'admin-sidebar-collapsed' : ''}`}
       >
         <div className="admin-sidebar-header p-4 border-b border-fog">
@@ -89,7 +157,12 @@ export default function AdminLayout() {
           </div>
         </div>
 
-        <nav id="admin-navigation" aria-label="Admin navigation" className="flex-1 p-3 space-y-1">
+        <nav
+          ref={navigation}
+          id="admin-navigation"
+          aria-label="Admin navigation"
+          className="flex-1 p-3 space-y-1"
+        >
           {NAV_ITEMS.map((item) => (
             <NavLink
               key={item.to}
@@ -129,8 +202,8 @@ export default function AdminLayout() {
       </aside>
 
       {/* ── Main content ─────────────────────────────────────── */}
-      <main className="flex-1 min-w-0 overflow-auto">
-        <div className="p-6 lg:p-8">
+      <main className="flex-1 min-w-0 overflow-auto" inert={menuOpen}>
+        <div className="p-4 sm:p-6 lg:p-8">
           <Suspense
             fallback={<div className="font-mono text-dust text-sm cursor-blink">Loading…</div>}
           >

@@ -51,6 +51,11 @@ export function laneLabel(mode: string) {
   return mode === 'changemaker' ? 'Changemaker' : mode === 'radar' ? 'Timely' : 'Weekly';
 }
 
+/** What a re-roll regenerates, for messages: "caption", "image" or "caption and image". */
+export function rerollLabel(mode: 'text' | 'image' | 'both') {
+  return mode === 'text' ? 'caption' : mode === 'image' ? 'image' : 'caption and image';
+}
+
 export function firstLine(text: string, limit = 90) {
   const line = text.trim().split('\n')[0] || '';
   return line.length > limit ? `${line.slice(0, limit - 1).trimEnd()}…` : line;

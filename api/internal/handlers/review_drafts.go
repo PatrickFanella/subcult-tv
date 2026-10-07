@@ -5,7 +5,6 @@ import (
 	"crypto/rand"
 	"encoding/hex"
 	"encoding/json"
-	"image/jpeg"
 	"io"
 	"mime/multipart"
 	"net/http"
@@ -133,6 +132,10 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 503, "Draft could not be saved")
 		return
 	}
+	if rerolling, e := openReroll(r.Context(), tx, id); e != nil || rerolling {
+		writeError(w, 409, "This draft is being re-rolled. Review the new version when it arrives")
+		return
+	}
 	var oldVersion int
 	var media []byte
 	var oldRequest string
@@ -168,13 +171,8 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if len(media) > 0 {
-		img, e := jpeg.DecodeConfig(bytes.NewReader(media))
-		if e != nil || img.Width < 320 || img.Width > 1440 || img.Height < 1 || float64(img.Width)/float64(img.Height) < 0.8 || float64(img.Width)/float64(img.Height) > 1.91 {
-			writeError(w, 400, "Choose a JPEG 320–1440 pixels wide with an aspect ratio between 4:5 and 1.91:1")
-			return
-		}
-		if _, e = jpeg.Decode(bytes.NewReader(media)); e != nil {
-			writeError(w, 400, "The JPEG could not be decoded")
+		if problem := instagramJPEGProblem(media); problem != "" {
+			writeError(w, 400, problem)
 			return
 		}
 	}
@@ -283,6 +281,15 @@ func (h *Handler) ApproveReviewDraft(w http.ResponseWriter, r *http.Request) {
 	var requestID, account, caption, original, choice string
 	var due time.Time
 	var media []byte
+	// The same lock as re-roll requests: a draft is either re-rolled or approved.
+	if _, err = tx.Exec(r.Context(), `SELECT pg_advisory_xact_lock(hashtextextended($1,0))`, id); err != nil {
+		writeError(w, 503, "Draft could not be read")
+		return
+	}
+	if rerolling, e := openReroll(r.Context(), tx, id); e != nil || rerolling {
+		writeError(w, 409, "This draft is being re-rolled. Review the new version when it arrives")
+		return
+	}
 	err = tx.QueryRow(r.Context(), `SELECT version,request_id,account_id,caption,due_at,media,original_caption,image_choice FROM social_review_drafts WHERE draft_id=$1 FOR UPDATE`, id).Scan(&version, &requestID, &account, &caption, &due, &media, &original, &choice)
 	if err != nil || version != approval.Version {
 		writeError(w, 409, "This draft changed. Refresh before approving")

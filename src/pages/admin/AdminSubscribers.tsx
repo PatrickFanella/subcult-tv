@@ -45,7 +45,7 @@ export default function AdminSubscribers() {
                 key={s.id}
                 className="border-b border-fog/50 hover:bg-ash transition-colors duration-200"
               >
-                <td className="py-3 px-3 font-mono text-sm text-chalk">{s.email}</td>
+                <td className="py-3 px-3 font-mono text-sm text-chalk break-all">{s.email}</td>
                 <td className="py-3 px-3">
                   <span
                     className={`font-mono text-xs ${s.confirmed ? 'text-static' : 'text-dust'}`}
