@@ -391,3 +391,99 @@
     display: none;
   }
 }
+
+/* Form controls in the review sheet, decisions and filters share one style. */
+.review-sheet-controls textarea,
+.review-sheet-controls select,
+.review-sheet-controls input:not([type='checkbox']):not([type='radio']),
+.decision-form textarea,
+.decision-form select,
+.posting-filters select,
+.posting-filters input[type='search'],
+.review-upload input {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0.6rem 0.7rem;
+  background: var(--color-void, #100b19);
+  border: 1px solid var(--color-fog, #51405f);
+  color: inherit;
+  font: inherit;
+}
+.review-upload input {
+  padding: 0.45rem;
+  font-size: 0.85rem;
+}
+.review-sheet-preview {
+  min-width: 0;
+}
+.review-sheet-controls p,
+.review-sheet-controls section,
+.review-sheet-preview .studio-note,
+.text-post-card p,
+.text-post-card li,
+.review-alternative p {
+  overflow-wrap: anywhere;
+}
+.text-post-card ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.posting-draft-meta {
+  flex-wrap: wrap;
+}
+.posting-draft-meta .production-badge {
+  overflow-wrap: anywhere;
+}
+.posting-card-buttons {
+  flex-wrap: wrap;
+}
+
+/* Tablets and narrow desktop windows: the controls column gets too thin beside the preview. */
+@media (max-width: 1100px) {
+  .review-sheet {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Phones: stack the sheet and give every control a 44px touch target. */
+@media (max-width: 760px) {
+  .posting-page button,
+  .posting-page .posting-navigation a,
+  .posting-page .posting-edit-link,
+  .posting-page summary,
+  .posting-page select,
+  .posting-page input:not([type='checkbox']):not([type='radio']):not([type='file']) {
+    min-height: 2.75rem;
+  }
+  .posting-page .posting-navigation a,
+  .posting-page .posting-edit-link {
+    display: flex;
+    align-items: center;
+  }
+  .posting-page summary {
+    padding-block: 0.75rem;
+  }
+  .posting-page input[type='checkbox'] {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .review-checklist label,
+  .posting-page label.studio-note {
+    min-height: 2.75rem;
+    align-items: center;
+  }
+  .review-thumbnails {
+    gap: 0.4rem;
+  }
+  .review-sheet .instagram-preview {
+    max-width: none;
+  }
+  .review-sheet-controls .posting-card-buttons > button,
+  .decision-form button[type='submit'] {
+    width: 100%;
+  }
+  .decision-buttons button {
+    flex: 1 1 auto;
+  }
+}

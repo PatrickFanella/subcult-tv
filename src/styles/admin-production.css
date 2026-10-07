@@ -348,6 +348,16 @@
   overflow: auto;
   margin-top: 2rem;
 }
+/* Data tables scroll inside their container instead of crushing columns on phones. */
+.admin-shell .admin-table {
+  min-width: 40rem;
+}
+.admin-shell .admin-table td:first-child {
+  min-width: 12rem;
+}
+.admin-shell .admin-table td {
+  overflow-wrap: anywhere;
+}
 .posting-history table {
   width: 100%;
   border-collapse: collapse;
@@ -393,56 +403,20 @@
   }
 }
 @media (max-width: 800px) {
-  .admin-shell {
-    flex-direction: column;
-  }
-  .admin-shell .admin-sidebar {
-    width: 100%;
-    border-right: 0;
-  }
-  /* Phone-first: navigation becomes one scrollable row so work shows on the first screen. */
-  .admin-shell .admin-sidebar nav {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 0.25rem;
-    padding: 0.25rem 0.5rem;
-  }
-  .admin-shell .admin-sidebar nav > a {
-    flex-shrink: 0;
-    margin: 0;
-    padding: 0.55rem 0.7rem;
-  }
-  .admin-shell .admin-sidebar-header {
-    padding: 0.5rem 1rem;
-  }
-  .admin-shell .admin-sidebar-header > .admin-sidebar-label {
-    display: none;
-  }
-  .admin-shell .subcult-nav-mark {
-    width: 2rem;
-    height: 2rem;
-  }
-  .admin-shell .admin-sidebar-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    padding: 0.35rem 1rem;
-  }
-  .admin-shell .admin-sidebar-footer > .admin-sidebar-label {
-    margin: 0;
-  }
-  .admin-shell .admin-sidebar-footer button {
-    width: auto;
-  }
-  .admin-shell main > div {
-    padding: 1rem;
-  }
   .admin-shell .production-heading {
     flex-direction: column;
     align-items: start;
-    padding: 1.5rem;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    overflow-wrap: anywhere;
+  }
+  .admin-shell .production-heading h1 {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+    margin: 0.35rem 0 0;
+  }
+  .admin-shell .production-heading button,
+  .admin-shell .production-heading a {
+    min-height: 2.75rem;
   }
   .admin-shell .posting-page .production-heading {
     padding: 0.6rem 1rem;
@@ -456,14 +430,14 @@
   .admin-shell .posting-page .production-heading .studio-label {
     font-size: 0.65rem;
   }
+  /* Wrap so every publishing page stays visible without a hidden scroll. */
   .admin-shell .posting-navigation {
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    gap: 0.25rem;
     padding-bottom: 0.5rem;
     margin-bottom: 0.75rem;
   }
   .admin-shell .posting-navigation a {
-    flex-shrink: 0;
     white-space: nowrap;
     padding: 0.5rem 0.7rem;
   }
@@ -547,11 +521,92 @@
     justify-content: center;
   }
 }
+
+/* Phone shell: a top bar with a menu button that opens the sidebar as a drawer. */
+.admin-topbar {
+  display: none;
+}
 @media (max-width: 800px) {
-  .admin-shell .admin-sidebar-collapsed nav,
-  .admin-sidebar-collapsed .admin-sidebar-footer,
-  .admin-sidebar-collapsed .admin-sidebar-header > .admin-sidebar-label {
+  .admin-shell {
+    flex-direction: column;
+  }
+  .admin-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 3.5rem;
+    padding: 0 0.75rem 0 1rem;
+    background: #100b19;
+    border-bottom: 1px solid #51405f;
+  }
+  .admin-topbar .subcult-nav-mark {
+    width: 2rem;
+    height: 2rem;
+  }
+  .admin-menu-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0 0.9rem;
+    background: var(--color-ash);
+    border: 1px solid var(--color-fog);
+    color: var(--color-bone);
+    font:
+      0.75rem 'JetBrains Mono',
+      monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .admin-menu-button[aria-expanded='true'] {
+    border-color: var(--color-signal);
+    color: var(--color-signal);
+  }
+  .admin-shell .admin-sidebar {
+    position: fixed;
+    top: 3.5rem;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    width: min(18rem, 85vw);
+    overflow-y: auto;
+    border-right: 1px solid #51405f;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition:
+      transform 0.2s ease,
+      visibility 0s linear 0.2s;
+  }
+  .admin-shell.admin-menu-open .admin-sidebar {
+    transform: none;
+    visibility: visible;
+    transition: transform 0.2s ease;
+  }
+  /* The top bar carries the brand; the desktop collapse control does not apply. */
+  .admin-shell .admin-sidebar-header {
     display: none;
+  }
+  .admin-shell .admin-sidebar nav a {
+    min-height: 2.75rem;
+  }
+  .admin-shell .admin-sidebar-footer button {
+    min-height: 2.75rem;
+  }
+  .admin-drawer-backdrop {
+    position: fixed;
+    inset: 3.5rem 0 0;
+    z-index: 45;
+    background: rgb(16 11 25 / 0.75);
+  }
+}
+@media (max-width: 800px) and (prefers-reduced-motion: reduce) {
+  .admin-shell .admin-sidebar,
+  .admin-shell.admin-menu-open .admin-sidebar {
+    transition: none;
   }
 }
 

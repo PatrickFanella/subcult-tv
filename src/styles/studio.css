@@ -162,16 +162,6 @@
   object-fit: contain;
 }
 @media (max-width: 800px) {
-  .admin-shell {
-    flex-direction: column;
-  }
-  .admin-sidebar {
-    width: 100%;
-  }
-  .admin-sidebar nav {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .studio-brand-layout {
     grid-template-columns: minmax(0, 1fr);
   }
