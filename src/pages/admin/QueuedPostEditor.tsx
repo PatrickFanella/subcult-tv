@@ -5,7 +5,6 @@ import {
   INSTAGRAM_FOLD,
   INSTAGRAM_LIMIT,
   leadProblem,
-  relativeTime,
   slotLabel,
 } from '@/lib/review-queue';
 import PostPreview from './PostPreview';
@@ -159,8 +158,7 @@ export default function QueuedPostEditor({
       </div>
       <div className="review-sheet-controls">
         <p className="studio-note">
-          Queued in PostyBirb · publishes {relativeTime(savedDue, now)} (
-          {slotLabel(savedDue, now, timeZone)}).
+          Queued in PostyBirb · publishes {slotLabel(savedDue, now, timeZone)}.
         </p>
         <label>
           Caption
