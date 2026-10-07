@@ -63,3 +63,9 @@ These findings come from rebuilding the SUBCULT social drafting system on Octobe
 - **Retries.** Retry a stage only on a nonzero exit or `turn.failed`. Model capacity errors do happen.
 - **Slots.** Posting slots are 11:30 and 17:30 Chicago, at least 48 hours ahead, with one draft per slot (`taken_slots`).
 - **Owner feedback.** It is read from `state/owner-feedback.json`. The review dashboard records reject, revise and snooze decisions, and nothing pulls them into that file automatically yet.
+
+## X media and link placement
+
+Use the dated evidence in Studio's research and Posting Best Practices guide. Text and images both work; an image is useful when it shows the work or makes the offer clearer. Prefer original artwork for launches/supporter campaigns and real captures for demonstrations; personal observations and political quotes can stay text-only. Lower engagement on link posts does not prove a current blanket penalty or that first-reply links improve traffic or conversion. Test inline versus first self-reply placement by account and goal across comparable posts, holding other variables steady. Measure visits and supporter actions where available alongside impressions and engagement; missing analytics stay unknown.
+
+Prepare exact reply copy and check the provider/thread path before moving a required link out of a post. The current runner schema and short editor have no reply output: retain required URLs in text and put proposed reply copy and the experiment in private next_check/editor notes. Never invent a reply field, silently discard a link, claim a reply is scheduled, or automate replies from a preparation run. Keep X and Bluesky guidance separate.

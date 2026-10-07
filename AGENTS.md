@@ -6,7 +6,7 @@ This repository is private. The root owns the public website, authenticated admi
 
 Public assets require an explicit selection and source hashes. Keep `studio/`, private bundles, credentials and runtime state out of frontend build contexts and public output. Preserve the authenticated catalog and asset allowlist.
 
-Preserve unrelated edits and active worktrees. A source change does not deploy the website or change installed preparation jobs; the X/Bluesky units run from the Kvant checkout's `studio/automation/social-posting/`, and the Instagram and website/Patreon jobs run from release bundles.
+Preserve unrelated edits and active worktrees. A source change does not deploy the website or change installed preparation jobs; the preparation jobs use versioned release bundles selected by installed service definitions. Their content and runtime state remain separate; inspect effective `ExecStart` and configuration before deployment.
 
 Run checks relevant to the changed components. Studio checks are `make check-studio check-studio-automation`.
 

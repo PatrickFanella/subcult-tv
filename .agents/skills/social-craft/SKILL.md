@@ -19,13 +19,15 @@ Work out the story before the words: who meets the change, what was in their way
 
 Write two versions with different structures, then critique both as a stranger on a phone and as a fact-checker, using the DIGEST rubric. Keep the lines that are alive; fix unsupported lines by rephrasing them truthfully in the same voice. State maturity once, in reader terms, after the story. No review-pipeline words (merged, PR, deployment, live check, verification, confirmed), no verdict framing ("A useful…"), no A-or-B polls, no moral or summary endings, no engagement bait.
 
+For X, apply [media and link-placement guidance](references/lessons.md#x-media-and-link-placement): images are optional, placement is an experiment, and required URLs stay until a reply is prepared.
+
 ## Supporter and product copy
 
 Supporter and Patreon page copy follows `studio/content/patreon/support-redesign-2026-10/`: light shared rewards, private Discord access and occasional releases, with no promised schedule. Prices, tiers and access stay proposed until the owner approves them and the live account reads back. Product copy states what the product does, who it is for and how finished it is, in that product's voice; brand metaphors are optional and never replace the explanation.
 
 ## Images
 
-`studio/automation/social-posting/render.py` sets brand-pack type, the product lockup and an optional image into a 1080 × 1350 JPEG under 900 KB: `illustration` (original generated art in the product's art direction from `craft/art-direction.json`, no text, no fake screens, no real people), `type` (a typographic card with the brand's signature motif) or `screenshot` (a public page, only when the post is about the product as it is live). Look at the result at phone size before offering it.
+`studio/automation/social-posting/render.py` sets brand-pack type, the product lockup and an optional image into a 1080 × 1350 JPEG under 900 KB: `illustration` (original generated art in the product's art direction from `craft/art-direction.json`, no text, no fake screens, no real people), `type` (a typographic card with the brand's signature motif) or `screenshot` (a public page, only when the post is about the product as it is live). This is an Instagram feed renderer. Specify platform, placement, dimensions, safe margins and alt text; compose X and 9:16 Story variants separately. Look at the result at phone size before offering it.
 
 ## The automated path
 
