@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
+	"mime/multipart"
 	"net/http/httptest"
 	"os"
 	"path/filepath"
@@ -30,13 +31,17 @@ func TestRerollQueueIntegration(t *testing.T) {
 	data, _ := json.Marshal(snapshot)
 	os.WriteFile(filepath.Join(root, "posting.json"), data, 0600)
 	key := strings.Repeat("k", 40)
-	h := &Handler{DB: db, StudioRoot: root, PostingPreparationKey: key}
+	h := &Handler{DB: db, StudioRoot: root, PostingPreparationKey: key, SocialAccounts: []string{"patrick"}}
 	routes := chi.NewRouter()
 	routes.Post("/review/{id}/reroll", h.RequestReroll)
+	routes.Put("/review/{id}", h.SaveReviewDraft)
 	routes.Get("/rerolls", h.Rerolls)
 	routes.Post("/prep/claim", h.ClaimRerolls)
 	routes.Post("/prep/{id}", h.FinishReroll)
-	t.Cleanup(func() { db.Exec(ctx, `DELETE FROM draft_rerolls WHERE draft_id IN ($1,$2)`, instagram, x) })
+	t.Cleanup(func() {
+		db.Exec(ctx, `DELETE FROM draft_rerolls WHERE draft_id IN ($1,$2)`, instagram, x)
+		db.Exec(ctx, `DELETE FROM social_review_drafts WHERE draft_id=$1`, instagram)
+	})
 	admin := func(method, path, body string) *httptest.ResponseRecorder {
 		req := httptest.NewRequest(method, path, bytes.NewBufferString(body))
 		req = req.WithContext(context.WithValue(context.WithValue(req.Context(), middleware.RoleKey, "admin"), middleware.UserIDKey, "owner"))
@@ -66,6 +71,21 @@ func TestRerollQueueIntegration(t *testing.T) {
 	}
 	if w := admin("POST", path, `{"mode":"text"}`); w.Code != 409 {
 		t.Fatal("second open re-roll accepted", w.Code)
+	}
+	// While a re-roll is open the draft cannot be saved (and so cannot be approved).
+	var payload bytes.Buffer
+	form := multipart.NewWriter(&payload)
+	for k, v := range map[string]string{"version": "0", "caption": "Edit", "account_id": "patrick", "due_at": time.Now().Add(48 * time.Hour).Format(time.RFC3339)} {
+		form.WriteField(k, v)
+	}
+	form.Close()
+	req := httptest.NewRequest("PUT", "/review/"+strings.ReplaceAll(instagram, ":", "%3A"), &payload)
+	req.Header.Set("Content-Type", form.FormDataContentType())
+	req = req.WithContext(context.WithValue(context.WithValue(req.Context(), middleware.RoleKey, "admin"), middleware.UserIDKey, "owner"))
+	saved := httptest.NewRecorder()
+	routes.ServeHTTP(saved, req)
+	if saved.Code != 409 {
+		t.Fatal("draft saved during re-roll", saved.Code, saved.Body.String())
 	}
 	if w := prep("/prep/claim", "", strings.Repeat("z", 40)); w.Code != 401 {
 		t.Fatal("wrong key claimed", w.Code)

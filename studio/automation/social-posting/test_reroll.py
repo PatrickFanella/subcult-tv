@@ -125,22 +125,30 @@ class RerollTests(unittest.TestCase):
             draft = self.result(reroll.regenerate({}, self.root, self.state, self.job('text'), self.now))
         self.assertGreaterEqual(datetime.fromisoformat(draft['due_at']), self.now+timedelta(hours=48))
 
-    def test_execute_syncs_before_reporting_and_reports_failures(self):
+    def test_execute_claims_one_at_a_time_syncs_before_reporting_and_reports_failures(self):
         calls = []
+        queue = [self.job('text'), {**self.job('text', draft_id='nope'), 'id': 8}]
         def api(settings, path, payload=None):
             calls.append((path, payload))
             if path == '/rerolls/claim':
-                return [self.job('text'), {**self.job('text', draft_id='nope'), 'id': 8}]
+                return [queue.pop(0)] if queue else []
             return {}
         synced = []
         with patch.object(reroll, 'call', side_effect=api), \
              patch.object(craft, 'reroll_caption', return_value={'text': 'New.', 'angle': '', 'changed': ''}):
             receipt = reroll.execute(self.root, self.state, self.env, sync=lambda: synced.append(len(calls)) or True)
         self.assertEqual((receipt['done'], receipt['failed'], receipt['synced']), (1, 1, True))
-        self.assertEqual(synced, [1], 'sync must run before any result is reported')
-        self.assertEqual(calls[1][0], '/rerolls/7')
+        self.assertEqual([c[0] for c in calls], ['/rerolls/claim', '/rerolls/7', '/rerolls/claim', '/rerolls/8', '/rerolls/claim'])
+        self.assertEqual(synced, [1], 'sync must run before the result is reported')
         self.assertEqual(calls[1][1]['status'], 'done')
-        self.assertEqual((calls[2][0], calls[2][1]['status']), ('/rerolls/8', 'failed'))
+        self.assertEqual(calls[3][1]['status'], 'failed')
+
+    def test_a_retried_request_reports_the_run_it_already_wrote(self):
+        with patch.object(craft, 'reroll_caption', return_value={'text': 'New.', 'angle': '', 'changed': ''}) as caption:
+            first = reroll.regenerate({}, self.root, self.state, self.job('text'), self.now)
+            second = reroll.regenerate({}, self.root, self.state, self.job('text'), self.now+timedelta(hours=3))
+        self.assertEqual(first, second)
+        self.assertEqual(caption.call_count, 1)
 
     def test_refuses_an_unexpected_endpoint(self):
         self.env.write_text('POSTING_INGEST_URL=https://example.test/x\nPOSTING_PREPARATION_KEY='+'k'*40+'\n')

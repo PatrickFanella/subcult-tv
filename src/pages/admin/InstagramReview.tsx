@@ -86,6 +86,7 @@ export default function InstagramReview({
   onSaved,
   onError,
   decisions,
+  rerolling = false,
   reroll,
 }: {
   draft: PostingDraft;
@@ -103,6 +104,8 @@ export default function InstagramReview({
   onError: (message: string) => void;
   /** Reject/revise/snooze controls, given the current checklist state. */
   decisions?: (checklist: ChecklistState[], label: string) => ReactNode;
+  /** A re-roll is open: the draft cannot be saved or approved until it arrives. */
+  rerolling?: boolean;
   /** Re-roll controls, given what the owner would keep. */
   reroll?: (keep: { caption: string; imageSha256?: string; keepsUpload: boolean }) => ReactNode;
 }) {
@@ -164,22 +167,24 @@ export default function InstagramReview({
     (selectedSha && Boolean(selectedImage.blob)) ||
     choice.kind === 'uploaded' ||
     (choice.kind === 'saved' && savedLoaded);
-  const problem = stale
-    ? 'Refresh the preparation source before approving.'
-    : expiry && expiryAt <= now
-      ? 'This draft has expired.'
-      : !delivery
-        ? 'PostyBirb accounts are unavailable.'
-        : !target || target.disabled
-          ? 'Choose an Instagram account.'
-          : !caption.trim() || length > INSTAGRAM_LIMIT
-            ? 'Write a caption up to 2,200 characters.'
-            : leadProblem(due, now) ||
-              (!imageReady
-                ? 'Choose an image.'
-                : checked.some((c) => !c)
-                  ? 'Tick every check before approving.'
-                  : '');
+  const problem = rerolling
+    ? 'This draft is being re-rolled. Review the new version when it arrives.'
+    : stale
+      ? 'Refresh the preparation source before approving.'
+      : expiry && expiryAt <= now
+        ? 'This draft has expired.'
+        : !delivery
+          ? 'PostyBirb accounts are unavailable.'
+          : !target || target.disabled
+            ? 'Choose an Instagram account.'
+            : !caption.trim() || length > INSTAGRAM_LIMIT
+              ? 'Write a caption up to 2,200 characters.'
+              : leadProblem(due, now) ||
+                (!imageReady
+                  ? 'Choose an image.'
+                  : checked.some((c) => !c)
+                    ? 'Tick every check before approving.'
+                    : '');
   const accountLabel = target?.profile || target?.name || draft.account;
   const altText = draft.media.alt_text;
   const previewImage =
@@ -200,11 +205,13 @@ export default function InstagramReview({
     return form;
   }
   // Saving needs what the server stores; the image and checklist can wait for approval.
-  const saveProblem = !target
-    ? 'Choose an Instagram account.'
-    : !caption.trim() || length > INSTAGRAM_LIMIT
-      ? 'Write a caption up to 2,200 characters.'
-      : leadProblem(due, now);
+  const saveProblem = rerolling
+    ? 'This draft is being re-rolled.'
+    : !target
+      ? 'Choose an Instagram account.'
+      : !caption.trim() || length > INSTAGRAM_LIMIT
+        ? 'Write a caption up to 2,200 characters.'
+        : leadProblem(due, now);
 
   async function save() {
     setBusy(draft.id);

@@ -5,6 +5,7 @@ import {
   INSTAGRAM_FOLD,
   INSTAGRAM_LIMIT,
   leadProblem,
+  MIN_LEAD_MS,
   slotLabel,
 } from '@/lib/review-queue';
 import PostPreview from './PostPreview';
@@ -82,12 +83,13 @@ export default function QueuedPostEditor({
   const textChanged = caption.trim() !== edit.caption.trim();
   const timeChanged = Math.floor(due / 1000) !== Math.floor(savedDue / 1000);
   const changed = textChanged || timeChanged || Boolean(file);
+  // Every edit re-queues for a time at least 24 hours away, as approval does.
   const problem =
     !caption.trim() || length > INSTAGRAM_LIMIT
       ? 'Write a caption up to 2,200 characters.'
-      : timeChanged
-        ? leadProblem(due, now)
-        : '';
+      : !timeChanged && savedDue < now + MIN_LEAD_MS
+        ? 'This post publishes within 24 hours. To change it, also choose a time at least 24 hours away, or edit it in PostyBirb.'
+        : leadProblem(due, now);
   const replaces = textChanged || Boolean(file);
 
   async function save() {
@@ -211,7 +213,7 @@ export default function QueuedPostEditor({
           {replaces
             ? 'Saving withdraws the queued post from PostyBirb and queues the edited version in its place.'
             : 'A new time moves the queued post; the caption and image stay as approved.'}{' '}
-          Changes close 30 minutes before publishing.
+          The publish time must stay at least 24 hours away.
         </p>
         {changed && problem && <p className="studio-note">{problem}</p>}
         <div className="posting-card-buttons">

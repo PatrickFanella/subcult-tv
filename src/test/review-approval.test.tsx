@@ -533,6 +533,9 @@ describe('save, re-roll and edit queued posts', () => {
     await openFirst();
     expect(screen.getByText(/Regenerating the caption and image/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: 'Re-roll…' })).not.toBeInTheDocument();
+    tickChecklist();
+    expect(screen.getByRole('button', { name: /^Approve & queue/ })).toBeDisabled();
+    expect(screen.getByRole('button', { name: /^Save changes/ })).toBeDisabled();
   });
 
   it('reschedules a queued post without replacing it', async () => {
@@ -572,6 +575,20 @@ describe('save, re-roll and edit queued posts', () => {
     fireEvent.change(screen.getByLabelText('Caption'), { target: { value: 'New words' } });
     expect(screen.getByText(/withdraws the queued post from PostyBirb/)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Save & requeue' })).toBeEnabled();
+  });
+
+  it('keeps a queued draft editable even when a later draft supersedes it', async () => {
+    vi.mocked(getPostingDashboard).mockResolvedValue(
+      snapshot([
+        draft(),
+        draft({ id: 'cm2:0', run_id: 'cm2', supersedes: 'cm:0', text: 'Replacement' }),
+      ]),
+    );
+    vi.mocked(getReviewDrafts).mockResolvedValue([queued]);
+    vi.mocked(getReviewDraftMedia).mockResolvedValue(new Blob());
+    renderQueue();
+    await openFirst();
+    expect(screen.getByRole('button', { name: 'Reschedule' })).toBeInTheDocument();
   });
 
   it('opens a queued draft from a delivery-history link', async () => {

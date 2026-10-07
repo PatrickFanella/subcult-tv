@@ -43,6 +43,8 @@ type statefulProvider struct {
 	next    int
 	subs    map[string]*fakeSubmission
 	deleted []string
+	// invalid makes PostyBirb's validation report an error, as for a logged-out account.
+	invalid bool
 }
 
 func (p *statefulProvider) live() []*fakeSubmission {
@@ -68,6 +70,10 @@ func newStatefulProvider(t *testing.T) (*statefulProvider, *postybirb.Client) {
 		case r.Method == "GET" && r.URL.Path == "/account":
 			w.Write([]byte(`[{"id":"patrick","name":"Patrick","website":"instagram","state":{"status":"loggedIn","isLoggedIn":true}}]`))
 		case r.Method == "GET" && strings.HasPrefix(r.URL.Path, "/website-option/validate/"):
+			if p.invalid {
+				w.Write([]byte(`[{"account":{"id":"patrick"},"errors":["logged out"]}]`))
+				return
+			}
 			w.Write([]byte(`[{"account":{"id":"patrick"},"errors":[]}]`))
 		case r.Method == "POST" && r.URL.Path == "/submissions":
 			p.next++
@@ -247,6 +253,28 @@ func TestEditScheduledDraftIntegration(t *testing.T) {
 	db.QueryRow(ctx, `SELECT caption,version FROM social_review_drafts WHERE draft_id=$1`, draftID).Scan(&reviewCaption, &version)
 	if reviewCaption != "Rewritten caption" || version != 3 {
 		t.Fatal("review draft not updated", reviewCaption, version)
+	}
+
+	// A replacement PostyBirb rejects is discarded and the queued post stays put.
+	provider.mu.Lock()
+	provider.invalid = true
+	provider.mu.Unlock()
+	if w := edit(3, "Rejected rewrite", moved, nil); w.Code != 502 {
+		t.Fatal("invalid replacement accepted", w.Code, w.Body.String())
+	}
+	if status, id, caption, _ := receipt(); status != "scheduled" || id != "post-2" || caption != "Rewritten caption" {
+		t.Fatal("receipt changed after rejected replacement", status, id, caption)
+	}
+	if live := provider.live(); len(live) != 1 || provider.subs["post-3"] != nil {
+		t.Fatal("rejected replacement left behind or original withdrawn", len(live))
+	}
+	provider.mu.Lock()
+	provider.invalid = false
+	provider.mu.Unlock()
+
+	// An edit from a tab that missed the last change is refused.
+	if w := edit(2, "Older tab", moved, nil); w.Code != 409 {
+		t.Fatal("stale tab edited", w.Code)
 	}
 
 	// Once PostyBirb starts posting, nothing is changed and the receipt stays scheduled.

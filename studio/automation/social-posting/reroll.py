@@ -79,10 +79,25 @@ def validate_caption(text):
     return text.strip()
 
 
+def finished_run(state, request_id):
+    """A run already written for this request, if an earlier attempt stopped before reporting."""
+    for path in sorted((state/'runs').glob('*-changemaker/receipt.json'), reverse=True)[:80]:
+        try:
+            receipt = json.loads(path.read_text())
+        except (ValueError, OSError):
+            continue
+        if receipt.get('reroll_request') == request_id and receipt.get('status') == 'success':
+            return receipt['run_id']+':0'
+    return None
+
+
 def regenerate(cfg, source_root, state, job, now):
     """Write one replacement run and return its draft ID."""
     if job.get('mode') not in MODES:
         raise ValueError('Unknown re-roll mode')
+    existing = finished_run(state, job['id'])
+    if existing:
+        return existing
     old, sources = original(state, job['draft_id'])
     run_id = now.strftime('%Y%m%dT%H%M%S.%fZ')+'-changemaker'
     directory = state/'runs'/run_id
@@ -134,16 +149,22 @@ def regenerate(cfg, source_root, state, job, now):
     atomic_write(directory/'result.json', json.dumps({'drafts': [draft], 'open_checks': []}, indent=2)+'\n')
     receipt = {'mode': 'changemaker', 'status': 'success', 'run_id': run_id, 'draft_count': 1,
                'checked_at': now.isoformat(), 'source_identities': [], 'reroll_of': job['draft_id'],
+               'reroll_request': job['id'],
                'publishing_enabled': False}
     atomic_write(directory/'receipt.json', json.dumps(receipt, indent=2)+'\n')
     return run_id+':0'
 
 
 def sync_dashboard():
-    """Start the dashboard sync now instead of waiting for its five-minute timer."""
+    """Run the dashboard sync now instead of waiting for its five-minute timer.
+
+    If a sync is already running, `start` waits for that run, which may have
+    read state before the new draft existed, so a second start runs a fresh one.
+    """
     try:
-        subprocess.run(['systemctl', '--user', 'start', 'posting-dashboard-sync.service'], check=True, timeout=300,
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        for _ in range(2):
+            subprocess.run(['systemctl', '--user', 'start', 'posting-dashboard-sync.service'], check=True, timeout=300,
+                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         return True
     except (OSError, subprocess.SubprocessError):
         return False
@@ -159,21 +180,29 @@ def execute(source_root, state, ingest_env, sync=sync_dashboard):
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
             return {'status': 'busy'}
-        jobs = call(settings, '/rerolls/claim')
-        finished = []
-        for job in jobs[:3]:
+        # One request at a time: each result is reported before the next claim,
+        # so an interruption leaves at most one request to retry.
+        done = failed = 0
+        synced = None
+        for _ in range(3):
+            jobs = call(settings, '/rerolls/claim')
+            if not jobs:
+                break
+            job = jobs[0]
             try:
-                result = regenerate(cfg, source_root, state, job, datetime.now(timezone.utc))
-                finished.append((job, {'status': 'done', 'result_draft_id': result}))
+                result = {'status': 'done', 'result_draft_id': regenerate(cfg, source_root, state, job, datetime.now(timezone.utc))}
             except Exception as error:  # report every failure to the owner instead of retrying silently
-                (state/'reroll-errors.log').open('a').write(f"{datetime.now(timezone.utc).isoformat()} {job.get('id')} {type(error).__name__}: {str(error)[:1000]}\n")
-                finished.append((job, {'status': 'failed', 'error': str(error)[:300] or type(error).__name__}))
-        # The replacement must reach the website before the owner is told it is ready.
-        synced = sync() if any(r['status'] == 'done' for _, r in finished) else None
-        for job, result in finished:
+                with (state/'reroll-errors.log').open('a') as log:
+                    log.write(f"{datetime.now(timezone.utc).isoformat()} {job.get('id')} {type(error).__name__}: {str(error)[:1000]}\n")
+                result = {'status': 'failed', 'error': str(error)[:300] or type(error).__name__}
+            if result['status'] == 'done':
+                # Deliver the replacement before the owner is told it is ready. If
+                # this sync fails, the five-minute timer still delivers it.
+                synced = sync()
             call(settings, f"/rerolls/{int(job['id'])}", result)
-        return {'status': 'success', 'claimed': len(jobs), 'done': sum(r['status'] == 'done' for _, r in finished),
-                'failed': sum(r['status'] == 'failed' for _, r in finished), 'synced': synced, 'publishing_enabled': False}
+            done += result['status'] == 'done'
+            failed += result['status'] == 'failed'
+        return {'status': 'success', 'done': done, 'failed': failed, 'synced': synced, 'publishing_enabled': False}
 
 
 if __name__ == '__main__':

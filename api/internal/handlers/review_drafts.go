@@ -132,6 +132,10 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 503, "Draft could not be saved")
 		return
 	}
+	if rerolling, e := openReroll(r.Context(), tx, id); e != nil || rerolling {
+		writeError(w, 409, "This draft is being re-rolled. Review the new version when it arrives")
+		return
+	}
 	var oldVersion int
 	var media []byte
 	var oldRequest string
@@ -277,6 +281,15 @@ func (h *Handler) ApproveReviewDraft(w http.ResponseWriter, r *http.Request) {
 	var requestID, account, caption, original, choice string
 	var due time.Time
 	var media []byte
+	// The same lock as re-roll requests: a draft is either re-rolled or approved.
+	if _, err = tx.Exec(r.Context(), `SELECT pg_advisory_xact_lock(hashtextextended($1,0))`, id); err != nil {
+		writeError(w, 503, "Draft could not be read")
+		return
+	}
+	if rerolling, e := openReroll(r.Context(), tx, id); e != nil || rerolling {
+		writeError(w, 409, "This draft is being re-rolled. Review the new version when it arrives")
+		return
+	}
 	err = tx.QueryRow(r.Context(), `SELECT version,request_id,account_id,caption,due_at,media,original_caption,image_choice FROM social_review_drafts WHERE draft_id=$1 FOR UPDATE`, id).Scan(&version, &requestID, &account, &caption, &due, &media, &original, &choice)
 	if err != nil || version != approval.Version {
 		writeError(w, 409, "This draft changed. Refresh before approving")

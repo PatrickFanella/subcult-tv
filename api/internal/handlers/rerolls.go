@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"io"
@@ -94,8 +95,19 @@ func (h *Handler) RequestReroll(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 503, "Draft storage is unavailable")
 		return
 	}
+	tx, err := h.DB.Begin(r.Context())
+	if err != nil {
+		writeError(w, 503, "The re-roll could not be queued")
+		return
+	}
+	defer tx.Rollback(r.Context())
+	// Serialized with saves and approvals of the same draft.
+	if _, err = tx.Exec(r.Context(), `SELECT pg_advisory_xact_lock(hashtextextended($1,0))`, id); err != nil {
+		writeError(w, 503, "The re-roll could not be queued")
+		return
+	}
 	var submitted bool
-	if err = h.DB.QueryRow(r.Context(), `SELECT EXISTS(SELECT 1 FROM social_review_drafts d JOIN social_schedules s USING(request_id) WHERE d.draft_id=$1)`, id).Scan(&submitted); err != nil {
+	if err = tx.QueryRow(r.Context(), `SELECT EXISTS(SELECT 1 FROM social_review_drafts d JOIN social_schedules s USING(request_id) WHERE d.draft_id=$1)`, id).Scan(&submitted); err != nil {
 		writeError(w, 503, "Approval status is unavailable")
 		return
 	}
@@ -105,18 +117,25 @@ func (h *Handler) RequestReroll(w http.ResponseWriter, r *http.Request) {
 	}
 	user, _ := r.Context().Value(middleware.UserIDKey).(string)
 	var result draftReroll
-	err = h.DB.QueryRow(r.Context(), `INSERT INTO draft_rerolls(draft_id,mode,note,caption,image_sha256,requested_by) VALUES($1,$2,$3,$4,$5,$6) RETURNING id,draft_id,mode,note,caption,image_sha256,status,error,result_draft_id,requested_at,finished_at`,
+	err = tx.QueryRow(r.Context(), `INSERT INTO draft_rerolls(draft_id,mode,note,caption,image_sha256,requested_by) VALUES($1,$2,$3,$4,$5,$6) RETURNING id,draft_id,mode,note,caption,image_sha256,status,error,result_draft_id,requested_at,finished_at`,
 		id, input.Mode, input.Note, input.Caption, input.ImageSHA256, user).Scan(&result.ID, &result.DraftID, &result.Mode, &result.Note, &result.Caption, &result.ImageSHA256, &result.Status, &result.Error, &result.ResultDraftID, &result.RequestedAt, &result.FinishedAt)
 	var pgErr *pgconn.PgError
 	if errors.As(err, &pgErr) && pgErr.Code == "23505" {
 		writeError(w, 409, "A re-roll for this draft is already in progress")
 		return
 	}
-	if err != nil {
+	if err != nil || tx.Commit(r.Context()) != nil {
 		writeError(w, 503, "The re-roll could not be queued")
 		return
 	}
 	writeJSON(w, 201, result)
+}
+
+// openReroll reports whether a draft has a pending or running re-roll.
+func openReroll(ctx context.Context, tx pgx.Tx, draftID string) (bool, error) {
+	var open bool
+	err := tx.QueryRow(ctx, `SELECT EXISTS(SELECT 1 FROM draft_rerolls WHERE draft_id=$1 AND status IN ('pending','running'))`, draftID).Scan(&open)
+	return open, err
 }
 
 // Rerolls lists recent requests so the review queue can show progress.
@@ -155,7 +174,8 @@ func (h *Handler) Rerolls(w http.ResponseWriter, r *http.Request) {
 // rerollLease is how long Kvant may hold a claim before another poll retries it.
 const rerollLease = "2 hours"
 
-// ClaimRerolls hands pending requests to the preparation job. The key can
+// ClaimRerolls hands the oldest pending request to the preparation job, one
+// at a time so each result is reported before the next is generated. The key can
 // only read and finish re-roll requests; it cannot approve or schedule.
 func (h *Handler) ClaimRerolls(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Cache-Control", "private, no-store")
@@ -169,7 +189,7 @@ func (h *Handler) ClaimRerolls(w http.ResponseWriter, r *http.Request) {
 	}
 	// Claims abandoned three times stop retrying and report the failure.
 	h.DB.Exec(r.Context(), `UPDATE draft_rerolls SET status='failed',error='Preparation did not finish after three attempts',finished_at=NOW() WHERE status='running' AND attempts>=3 AND claimed_at < NOW()-INTERVAL '`+rerollLease+`'`)
-	rows, err := h.DB.Query(r.Context(), `UPDATE draft_rerolls SET status='running',claimed_at=NOW(),attempts=attempts+1 WHERE id IN (SELECT id FROM draft_rerolls WHERE status='pending' OR (status='running' AND attempts<3 AND claimed_at < NOW()-INTERVAL '`+rerollLease+`') ORDER BY requested_at LIMIT 3 FOR UPDATE SKIP LOCKED) RETURNING id,draft_id,mode,note,caption,image_sha256,status,error,result_draft_id,requested_at,finished_at`)
+	rows, err := h.DB.Query(r.Context(), `UPDATE draft_rerolls SET status='running',claimed_at=NOW(),attempts=attempts+1 WHERE id IN (SELECT id FROM draft_rerolls WHERE status='pending' OR (status='running' AND attempts<3 AND claimed_at < NOW()-INTERVAL '`+rerollLease+`') ORDER BY requested_at LIMIT 1 FOR UPDATE SKIP LOCKED) RETURNING id,draft_id,mode,note,caption,image_sha256,status,error,result_draft_id,requested_at,finished_at`)
 	if err != nil {
 		writeError(w, 503, "Re-rolls are unavailable")
 		return

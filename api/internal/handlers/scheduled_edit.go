@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"bytes"
+	"context"
 	"crypto/rand"
 	"encoding/hex"
 	"errors"
@@ -22,13 +23,20 @@ import (
 // editCutoff keeps edits away from PostyBirb's own scheduler pass.
 const editCutoff = 30 * time.Minute
 
+// editTimeout bounds the provider sequence, which must not stop halfway just
+// because the browser went away.
+const editTimeout = 2 * time.Minute
+
 // EditScheduledDraft changes a post that is already queued in PostyBirb.
 //
 // A time-only change moves the existing submission. A caption, account or
-// image change withdraws the queued submission, confirms it can no longer
-// post, and queues a replacement. Either way the receipt is claimed first, so
-// a concurrent edit or approval cannot submit twice, and any step whose
-// outcome is unknown leaves the receipt "uncertain" for reconciliation.
+// image change first creates and validates a replacement, then withdraws the
+// queued submission, confirms it can no longer post, and queues the
+// replacement. The new time must still be 24 hours to 90 days ahead, and
+// nothing changes within 30 minutes of the current time. The receipt is
+// claimed against the exact content that was read, so a concurrent edit or
+// approval gets a conflict, and any step whose outcome is unknown leaves the
+// receipt "uncertain" for reconciliation.
 func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Cache-Control", "private, no-store")
 	if r.Context().Value(middleware.RoleKey) != "admin" {
@@ -81,10 +89,10 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var current int
-	var requestID, oldAccount, oldCaption, status, providerID string
+	var requestID, oldAccount, oldCaption, status, providerID, oldHash string
 	var oldDue time.Time
 	var oldMedia []byte
-	err = h.DB.QueryRow(r.Context(), `SELECT d.version,d.request_id,s.account_id,s.caption,s.due_at,s.media,s.status,s.provider_post_id FROM social_review_drafts d JOIN social_schedules s USING(request_id) WHERE d.draft_id=$1 AND s.provider='postybirb'`, id).Scan(&current, &requestID, &oldAccount, &oldCaption, &oldDue, &oldMedia, &status, &providerID)
+	err = h.DB.QueryRow(r.Context(), `SELECT d.version,d.request_id,s.account_id,s.caption,s.due_at,s.media,s.status,s.provider_post_id,s.payload_hash FROM social_review_drafts d JOIN social_schedules s USING(request_id) WHERE d.draft_id=$1 AND s.provider='postybirb'`, id).Scan(&current, &requestID, &oldAccount, &oldCaption, &oldDue, &oldMedia, &status, &providerID, &oldHash)
 	if errors.Is(err, pgx.ErrNoRows) {
 		writeError(w, 404, "This draft is not queued. Approve it first")
 		return
@@ -129,17 +137,30 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	// Claim the receipt: only one edit or approval may touch the provider.
-	tag, err := h.DB.Exec(r.Context(), `UPDATE social_schedules SET status='submitting' WHERE request_id=$1 AND status='scheduled' AND provider_post_id=$2`, requestID, providerID)
+	mediaID := ""
+	if !bytes.Equal(media, oldMedia) {
+		var nonce [24]byte
+		if _, err = rand.Read(nonce[:]); err != nil {
+			writeError(w, 500, "The change could not be prepared")
+			return
+		}
+		mediaID = hex.EncodeToString(nonce[:])
+	}
+	// Claim the receipt only if it still holds exactly what this edit read:
+	// another tab's edit or a concurrent approval gets a conflict instead.
+	tag, err := h.DB.Exec(r.Context(), `UPDATE social_schedules SET status='submitting' WHERE request_id=$1 AND status='scheduled' AND provider_post_id=$2 AND payload_hash=$3`, requestID, providerID, oldHash)
 	if err != nil || tag.RowsAffected() != 1 {
-		writeError(w, 409, "This post is already being changed. Refresh delivery status")
+		writeError(w, 409, "This post changed or is being changed. Refresh before editing")
 		return
 	}
+	// From here on, finish the sequence even if the browser disconnects.
+	ctx, cancel := context.WithTimeout(context.WithoutCancel(r.Context()), editTimeout)
+	defer cancel()
 	setStatus := func(value string) {
-		h.DB.Exec(r.Context(), `UPDATE social_schedules SET status=$2 WHERE request_id=$1`, requestID, value)
+		h.DB.Exec(ctx, `UPDATE social_schedules SET status=$2 WHERE request_id=$1`, requestID, value)
 	}
 	if !replace {
-		err = h.SocialPosting.RescheduleInstagram(r.Context(), providerID, oldAccount, oldCaption, due)
+		err = h.SocialPosting.RescheduleInstagram(ctx, providerID, oldAccount, oldCaption, due)
 		if errors.Is(err, postybirb.ErrNotQueued) {
 			setStatus("scheduled")
 			writeError(w, 409, "PostyBirb no longer shows this post as queued. Check PostyBirb")
@@ -151,8 +172,24 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	} else {
-		_, err = h.SocialPosting.WithdrawInstagram(r.Context(), providerID, oldAccount, oldCaption)
+		// Prepare and validate the replacement while the original stays
+		// queued, so a rejected replacement leaves the post as it was.
+		var replacement string
+		replacement, err = h.SocialPosting.CreateInstagram(ctx, account, caption, media)
+		if err == nil {
+			err = h.SocialPosting.ValidateInstagram(ctx, replacement, account, caption)
+		}
+		if err != nil {
+			if replacement != "" {
+				h.SocialPosting.DiscardDraft(ctx, replacement)
+			}
+			setStatus("scheduled")
+			writeError(w, 502, "PostyBirb did not accept the edited post. The queued post is unchanged")
+			return
+		}
+		_, err = h.SocialPosting.WithdrawInstagram(ctx, providerID, oldAccount, oldCaption)
 		if errors.Is(err, postybirb.ErrNotQueued) {
+			h.SocialPosting.DiscardDraft(ctx, replacement)
 			setStatus("scheduled")
 			writeError(w, 409, "PostyBirb no longer shows this post as queued. Check PostyBirb")
 			return
@@ -162,42 +199,28 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 			writeError(w, 502, "The queued post could not be withdrawn. Check PostyBirb before retrying")
 			return
 		}
-		// The old submission can no longer post. Record that before creating
-		// its replacement so an interruption never leaves a stale receipt.
-		h.DB.Exec(r.Context(), `UPDATE social_schedules SET provider_post_id='' WHERE request_id=$1`, requestID)
-		providerID, err = h.SocialPosting.CreateInstagram(r.Context(), account, caption, media)
-		if providerID != "" {
-			if _, saveErr := h.DB.Exec(r.Context(), `UPDATE social_schedules SET provider_post_id=$2 WHERE request_id=$1`, requestID, providerID); saveErr != nil {
-				writeError(w, 502, "The replacement draft was created, but its receipt could not be saved. Check PostyBirb before retrying")
-				return
-			}
+		// The old submission can no longer post; the receipt now follows the replacement.
+		providerID = replacement
+		if _, err = h.DB.Exec(ctx, `UPDATE social_schedules SET provider_post_id=$2 WHERE request_id=$1`, requestID, providerID); err != nil {
+			writeError(w, 502, "The old post was withdrawn, but the receipt could not be updated. Check PostyBirb before retrying")
+			return
 		}
-		if err == nil {
-			err = h.SocialPosting.QueueInstagram(r.Context(), providerID, account, caption, due)
-		}
-		if err != nil {
+		if err = h.SocialPosting.QueueInstagram(ctx, providerID, account, caption, due); err != nil {
 			setStatus("uncertain")
 			writeError(w, 502, "The old post was withdrawn, but the replacement could not be confirmed. Check PostyBirb before retrying")
 			return
 		}
 	}
-	mediaID := ""
-	if !bytes.Equal(media, oldMedia) {
-		var nonce [24]byte
-		if _, err = rand.Read(nonce[:]); err == nil {
-			mediaID = hex.EncodeToString(nonce[:])
-		}
-	}
 	user, _ := r.Context().Value(middleware.UserIDKey).(string)
-	tx, err := h.DB.Begin(r.Context())
+	tx, err := h.DB.Begin(ctx)
 	if err == nil {
-		defer tx.Rollback(r.Context())
-		_, err = tx.Exec(r.Context(), `UPDATE social_schedules SET status='scheduled',account_id=$2,caption=$3,due_at=$4,media=$5,payload_hash=$6,media_id=COALESCE(NULLIF($7,''),media_id) WHERE request_id=$1`, requestID, account, caption, due, media, schedulePayloadHash(account, caption, due, media), mediaID)
+		defer tx.Rollback(ctx)
+		_, err = tx.Exec(ctx, `UPDATE social_schedules SET status='scheduled',account_id=$2,caption=$3,due_at=$4,media=$5,payload_hash=$6,media_id=COALESCE(NULLIF($7,''),media_id) WHERE request_id=$1`, requestID, account, caption, due, media, schedulePayloadHash(account, caption, due, media), mediaID)
 	}
 	if err == nil {
-		_, err = tx.Exec(r.Context(), `UPDATE social_review_drafts SET version=version+1,account_id=$2,caption=$3,due_at=$4,media=$5,updated_by=$6,updated_at=NOW() WHERE draft_id=$1`, id, account, caption, due, media, user)
+		_, err = tx.Exec(ctx, `UPDATE social_review_drafts SET version=version+1,account_id=$2,caption=$3,due_at=$4,media=$5,updated_by=$6,updated_at=NOW() WHERE draft_id=$1 AND version=$7`, id, account, caption, due, media, user, current)
 	}
-	if err != nil || tx.Commit(r.Context()) != nil {
+	if err != nil || tx.Commit(ctx) != nil {
 		writeError(w, 502, "PostyBirb accepted the change, but the local receipt could not be saved. Check PostyBirb before retrying")
 		return
 	}

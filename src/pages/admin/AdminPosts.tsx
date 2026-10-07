@@ -211,7 +211,9 @@ export default function AdminPosts() {
   const superseded = new Set(
     (data?.drafts || []).map((d) => d.supersedes).filter((id): id is string => Boolean(id)),
   );
-  const hidden = (d: PostingDraft) => hiddenReason(d, latest, superseded, now);
+  // A queued post stays editable even if a later draft claims to replace it.
+  const hidden = (d: PostingDraft) =>
+    submitted(d.id) ? '' : hiddenReason(d, latest, superseded, now);
   const all = (data?.drafts || []).filter((d) => showHidden || !hidden(d));
   const hiddenCount = (data?.drafts || []).filter(
     (d) => draftPlatform(d) === tab && hidden(d) && !expired(d),
@@ -355,6 +357,7 @@ export default function AdminPosts() {
                     </p>
                   ) : submitted(d.id) && edit?.status === 'scheduled' && edit.post_id ? (
                     <QueuedPostEditor
+                      key={`${d.id}:${edit.version}`}
                       draftId={d.id}
                       account={d.account}
                       edit={edit}
@@ -402,6 +405,7 @@ export default function AdminPosts() {
                         setNotice(message);
                         setRevision((v) => v + 1);
                       }}
+                      rerolling={['pending', 'running'].includes(latestReroll(d.id)?.status ?? '')}
                       reroll={(keep) => (
                         <RerollControls
                           draftId={d.id}

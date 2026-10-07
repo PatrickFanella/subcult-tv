@@ -76,7 +76,9 @@ func (h *Handler) SocialDelivery(w http.ResponseWriter, r *http.Request) {
 				p.Integration.Name = a.Name
 			}
 		}
-		if p.ID != "" {
+		// Pending or uncertain receipts are reconciled in PostyBirb; their
+		// submission may not exist, so only scheduled receipts are looked up.
+		if p.ID != "" && status == "scheduled" {
 			state, link, e := h.SocialPosting.SocialStatus(r.Context(), p.ID, p.Integration.ID)
 			if e != nil {
 				writeError(w, 502, "PostyBirb delivery status is unavailable")

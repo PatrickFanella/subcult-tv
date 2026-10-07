@@ -150,6 +150,25 @@ func (c *Client) QueueInstagram(ctx context.Context, id, account, caption string
 	if due.Before(time.Now().Add(24*time.Hour)) || due.After(time.Now().AddDate(0, 0, 90)) {
 		return errors.New("schedule must be 24 hours to 90 days ahead")
 	}
+	if err := c.ValidateInstagram(ctx, id, account, caption); err != nil {
+		return err
+	}
+	if err := c.call(ctx, "PATCH", "/submissions/"+url.PathEscape(id), map[string]any{"isScheduled": true, "scheduleType": "SINGLE", "scheduledFor": due.UTC().Format(time.RFC3339)}, nil); err != nil {
+		return err
+	}
+	s, err := c.submission(ctx, id)
+	if err != nil {
+		return err
+	}
+	if !s.IsScheduled || s.Schedule.Type != "SINGLE" || !s.Schedule.Due.Equal(due.UTC().Truncate(time.Second)) {
+		return errors.New("PostyBirb schedule could not be confirmed")
+	}
+	return nil
+}
+
+// ValidateInstagram confirms an unscheduled single-image draft whose sole
+// target carries the exact caption and passes PostyBirb's own validation.
+func (c *Client) ValidateInstagram(ctx context.Context, id, account, caption string) error {
 	s, err := c.submission(ctx, id)
 	if err != nil {
 		return err
@@ -198,17 +217,6 @@ func (c *Client) QueueInstagram(ctx context.Context, id, account, caption string
 	}
 	if !validatedTarget {
 		return errors.New("PostyBirb account validation missing")
-	}
-
-	if err = c.call(ctx, "PATCH", "/submissions/"+url.PathEscape(id), map[string]any{"isScheduled": true, "scheduleType": "SINGLE", "scheduledFor": due.UTC().Format(time.RFC3339)}, nil); err != nil {
-		return err
-	}
-	s, err = c.submission(ctx, id)
-	if err != nil {
-		return err
-	}
-	if !s.IsScheduled || s.Schedule.Type != "SINGLE" || !s.Schedule.Due.Equal(due.UTC().Truncate(time.Second)) {
-		return errors.New("PostyBirb schedule could not be confirmed")
 	}
 	return nil
 }
@@ -315,4 +323,16 @@ func (c *Client) WithdrawInstagram(ctx context.Context, id, account, caption str
 		return false, errors.New("PostyBirb unschedule could not be confirmed")
 	}
 	return c.call(ctx, "DELETE", "/submissions?ids="+url.QueryEscape(id), nil, nil) == nil, nil
+}
+
+// DiscardDraft deletes an unscheduled draft this API created but never queued.
+func (c *Client) DiscardDraft(ctx context.Context, id string) error {
+	s, err := c.submission(ctx, id)
+	if err != nil {
+		return err
+	}
+	if s.IsScheduled || s.Post != nil {
+		return ErrNotQueued
+	}
+	return c.call(ctx, "DELETE", "/submissions?ids="+url.QueryEscape(id), nil, nil)
 }
