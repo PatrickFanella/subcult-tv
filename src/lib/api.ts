@@ -640,6 +640,49 @@ export async function saveReviewDraft(id: string, form: FormData) {
   if (!response.ok) throw new APIError(result.error || 'Saving failed', response.status);
   return result as { version: number };
 }
+/** Change a post already queued in PostyBirb: a new time moves it; new copy or image replaces it. */
+export async function editScheduledDraft(id: string, form: FormData) {
+  const token = getToken();
+  const response = await fetch(
+    `${API_BASE}/api/v1/admin/studio/review/${encodeURIComponent(id)}/schedule`,
+    { method: 'PUT', headers: token ? { Authorization: `Bearer ${token}` } : {}, body: form },
+  );
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok)
+    throw new APIError(result.error || 'The change could not be saved', response.status);
+  return result as {
+    status: string;
+    post_id: string;
+    version: number;
+    changed: boolean;
+    replaced?: boolean;
+  };
+}
+
+export type RerollMode = 'text' | 'image' | 'both';
+export interface DraftReroll {
+  id: number;
+  draft_id: string;
+  mode: RerollMode;
+  note: string;
+  caption: string;
+  image_sha256: string;
+  status: 'pending' | 'running' | 'done' | 'failed';
+  error: string;
+  result_draft_id: string;
+  requested_at: string;
+  finished_at: string | null;
+}
+export const getRerolls = () => apiFetch<DraftReroll[]>('/api/v1/admin/studio/rerolls');
+export const requestReroll = (
+  id: string,
+  input: { mode: RerollMode; note?: string; caption?: string; image_sha256?: string },
+) =>
+  apiFetch<DraftReroll>(`/api/v1/admin/studio/review/${encodeURIComponent(id)}/reroll`, {
+    method: 'POST',
+    body: JSON.stringify(input),
+  });
+
 export interface ChecklistState {
   item: string;
   checked: boolean;

@@ -391,3 +391,36 @@
     display: none;
   }
 }
+/* Re-roll: regenerate a draft's caption, image or both around the same story. */
+.reroll-controls {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-fog, #333);
+}
+.reroll-controls > button {
+  justify-self: start;
+}
+.reroll-modes {
+  display: grid;
+  gap: 0.5rem;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.reroll-modes label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.reroll-modes small {
+  display: block;
+  color: var(--color-dust, #aaa);
+}
+.reroll-status {
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-left: 2px solid #8b5cf6;
+  background: var(--color-ash, #222);
+}

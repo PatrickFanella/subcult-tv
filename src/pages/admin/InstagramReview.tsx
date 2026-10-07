@@ -83,8 +83,10 @@ export default function InstagramReview({
   busy,
   setBusy,
   onApproved,
+  onSaved,
   onError,
   decisions,
+  reroll,
 }: {
   draft: PostingDraft;
   edit?: ReviewDraft;
@@ -96,9 +98,13 @@ export default function InstagramReview({
   busy: string;
   setBusy: (value: string) => void;
   onApproved: (result: ApprovalResult) => void;
+  /** Called after "Save changes" stores the edit without approving it. */
+  onSaved?: (message: string) => void;
   onError: (message: string) => void;
   /** Reject/revise/snooze controls, given the current checklist state. */
   decisions?: (checklist: ChecklistState[], label: string) => ReactNode;
+  /** Re-roll controls, given what the owner would keep. */
+  reroll?: (keep: { caption: string; imageSha256?: string; keepsUpload: boolean }) => ReactNode;
 }) {
   const locked = Boolean(busy);
   const accounts: SocialAccount[] = delivery?.accounts ?? [];
@@ -182,20 +188,44 @@ export default function InstagramReview({
   const checklistState = items.map((item, i) => ({ item, checked: Boolean(checked[i]) }));
   const label = `${accountLabel} post: ${firstLine(caption, 48)}`;
 
+  function reviewedForm() {
+    const form = new FormData();
+    form.set('version', String(edit?.version || 0));
+    form.set('account_id', accountId);
+    form.set('caption', caption);
+    form.set('due_at', new Date(due).toISOString());
+    if (choice.kind === 'uploaded') form.set('media', choice.file);
+    else if (selectedSha && selectedImage.blob)
+      form.set('media', new File([selectedImage.blob], 'prepared.jpg', { type: 'image/jpeg' }));
+    return form;
+  }
+  // Saving needs what the server stores; the image and checklist can wait for approval.
+  const saveProblem = !target
+    ? 'Choose an Instagram account.'
+    : !caption.trim() || length > INSTAGRAM_LIMIT
+      ? 'Write a caption up to 2,200 characters.'
+      : leadProblem(due, now);
+
+  async function save() {
+    setBusy(draft.id);
+    onError('');
+    try {
+      // A saved upload stays attached when no new image is chosen.
+      await saveReviewDraft(draft.id, reviewedForm());
+      onSaved?.('Saved. Nothing is queued until you approve it.');
+    } catch (e) {
+      onError(e instanceof Error ? e.message : 'The draft could not be saved');
+    } finally {
+      setBusy('');
+    }
+  }
+
   async function approve() {
     setBusy(draft.id);
     onError('');
     try {
-      const form = new FormData();
-      form.set('version', String(edit?.version || 0));
-      form.set('account_id', accountId);
-      form.set('caption', caption);
-      form.set('due_at', new Date(due).toISOString());
-      if (choice.kind === 'uploaded') form.set('media', choice.file);
-      else if (selectedSha && selectedImage.blob)
-        form.set('media', new File([selectedImage.blob], 'prepared.jpg', { type: 'image/jpeg' }));
       // The same server validation applies to prepared images and uploads.
-      const saved = await saveReviewDraft(draft.id, form);
+      const saved = await saveReviewDraft(draft.id, reviewedForm());
       const result = await approveReviewDraft(draft.id, saved.version, checklistState);
       onApproved(result);
     } catch (e) {
@@ -406,8 +436,24 @@ export default function InstagramReview({
           >
             {busy === draft.id ? 'Queuing…' : 'Approve & queue'}
           </button>
+          {onSaved && (
+            <button
+              type="button"
+              disabled={Boolean(saveProblem) || locked}
+              title={saveProblem || undefined}
+              aria-label={`Save changes to ${label}`}
+              onClick={() => void save()}
+            >
+              Save changes
+            </button>
+          )}
         </div>
         {decisions?.(checklistState, label)}
+        {reroll?.({
+          caption,
+          imageSha256: selectedSha || prepared?.sha256,
+          keepsUpload: choice.kind === 'uploaded' || choice.kind === 'saved',
+        })}
       </div>
     </div>
   );

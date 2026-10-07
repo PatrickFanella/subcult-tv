@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   approveSocialSchedule,
   getSocialDelivery,
@@ -273,6 +274,10 @@ export default function SocialDelivery({
                         <a href={p.releaseURL} target="_blank" rel="noreferrer">
                           View Instagram post ↗
                         </a>
+                      ) : p.state === 'QUEUE' ? (
+                        <Link to={`/admin/posts?post=${encodeURIComponent(p.id)}`}>
+                          Edit or reschedule
+                        </Link>
                       ) : (
                         'No published link'
                       )}

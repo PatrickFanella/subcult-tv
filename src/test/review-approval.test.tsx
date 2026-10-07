@@ -14,6 +14,9 @@ import {
   type DraftDecision,
   type PostingDraft,
   getDraftDecisions,
+  getRerolls,
+  requestReroll,
+  editScheduledDraft,
 } from '@/lib/api';
 import { cadenceSlots, checklistItems, matchAccount, scoreSummary } from '@/lib/review-queue';
 
@@ -27,6 +30,9 @@ vi.mock('@/lib/api', () => ({
   getDraftDecisions: vi.fn(),
   recordDraftDecision: vi.fn(),
   getSocialDelivery: vi.fn(),
+  getRerolls: vi.fn(),
+  requestReroll: vi.fn(),
+  editScheduledDraft: vi.fn(),
 }));
 
 const HOUR = 3600000;
@@ -129,6 +135,7 @@ beforeEach(() => {
   vi.mocked(getPostingDashboard).mockResolvedValue(snapshot([draft()]));
   vi.mocked(getReviewDrafts).mockResolvedValue([]);
   vi.mocked(getDraftDecisions).mockResolvedValue([]);
+  vi.mocked(getRerolls).mockResolvedValue([]);
   vi.mocked(getSocialDelivery).mockResolvedValue(delivery);
   vi.mocked(getPreparedMedia).mockResolvedValue(new Blob(['jpeg'], { type: 'image/jpeg' }));
   vi.mocked(saveReviewDraft).mockResolvedValue({ version: 1 });
@@ -421,6 +428,161 @@ describe('reject, revise and snooze', () => {
     fireEvent.click(screen.getByRole('button', { name: /We gave clip stacks/, expanded: false }));
     expect(screen.getByText('Rejected: Off-brand')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /^Approve & queue/ })).not.toBeInTheDocument();
+  });
+});
+
+describe('save, re-roll and edit queued posts', () => {
+  const queued = {
+    draft_id: 'cm:0',
+    version: 2,
+    account_id: 'pb-patrick',
+    caption: 'Queued caption',
+    due_at: future(72),
+    has_media: true,
+    status: 'scheduled' as const,
+    post_id: 'pb-post',
+    updated_at: '',
+  };
+
+  it('saves an edit without approving it', async () => {
+    renderQueue();
+    await openFirst();
+    fireEvent.change(screen.getByLabelText('Caption'), { target: { value: 'Edited caption' } });
+    const save = screen.getByRole('button', { name: /^Save changes to patrick__eff post/ });
+    await waitFor(() => expect(save).toBeEnabled());
+    fireEvent.click(save);
+    await screen.findByText('Saved. Nothing is queued until you approve it.');
+    const form = vi.mocked(saveReviewDraft).mock.calls[0][1];
+    expect(form.get('caption')).toBe('Edited caption');
+    expect(approveReviewDraft).not.toHaveBeenCalled();
+  });
+
+  it('re-rolls the image while keeping the edited caption', async () => {
+    vi.mocked(requestReroll).mockResolvedValue({
+      id: 1,
+      draft_id: 'cm:0',
+      mode: 'image',
+      note: 'show the phone',
+      caption: 'Keep me',
+      image_sha256: '',
+      status: 'pending',
+      error: '',
+      result_draft_id: '',
+      requested_at: new Date().toISOString(),
+      finished_at: null,
+    });
+    renderQueue();
+    await openFirst();
+    fireEvent.change(screen.getByLabelText('Caption'), { target: { value: 'Keep me' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Re-roll…' }));
+    fireEvent.click(screen.getByLabelText(/New image/));
+    fireEvent.change(screen.getByLabelText(/Direction/), { target: { value: 'show the phone' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Re-roll image' }));
+    await screen.findByText(/Re-rolling the image/);
+    expect(vi.mocked(requestReroll).mock.calls[0]).toEqual([
+      'cm:0',
+      { mode: 'image', note: 'show the phone', caption: 'Keep me', image_sha256: undefined },
+    ]);
+    expect(await screen.findByText(/Regenerating the image/)).toBeInTheDocument();
+  });
+
+  it('keeps the selected prepared image for a caption re-roll', async () => {
+    vi.mocked(requestReroll).mockResolvedValue({
+      id: 2,
+      draft_id: 'cm:0',
+      mode: 'text',
+      note: '',
+      caption: '',
+      image_sha256: alt,
+      status: 'pending',
+      error: '',
+      result_draft_id: '',
+      requested_at: new Date().toISOString(),
+      finished_at: null,
+    });
+    renderQueue();
+    await openFirst();
+    fireEvent.click(await screen.findByRole('button', { name: 'Use alternative image 1' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Re-roll…' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Re-roll caption' }));
+    await screen.findByText(/Re-rolling the caption/);
+    expect(vi.mocked(requestReroll).mock.calls[0][1]).toMatchObject({
+      mode: 'text',
+      image_sha256: alt,
+    });
+  });
+
+  it('shows a running re-roll in the row and the sheet', async () => {
+    vi.mocked(getRerolls).mockResolvedValue([
+      {
+        id: 3,
+        draft_id: 'cm:0',
+        mode: 'both',
+        note: '',
+        caption: '',
+        image_sha256: '',
+        status: 'running',
+        error: '',
+        result_draft_id: '',
+        requested_at: new Date().toISOString(),
+        finished_at: null,
+      },
+    ]);
+    renderQueue();
+    expect(await screen.findByText('Re-rolling…')).toBeInTheDocument();
+    await openFirst();
+    expect(screen.getByText(/Regenerating the caption and image/)).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Re-roll…' })).not.toBeInTheDocument();
+  });
+
+  it('reschedules a queued post without replacing it', async () => {
+    vi.mocked(getReviewDrafts).mockResolvedValue([queued]);
+    vi.mocked(getReviewDraftMedia).mockResolvedValue(new Blob());
+    vi.mocked(editScheduledDraft).mockResolvedValue({
+      status: 'scheduled',
+      post_id: 'pb-post',
+      version: 3,
+      changed: true,
+      replaced: false,
+    });
+    renderQueue();
+    await openFirst(/We gave clip stacks/);
+    expect(screen.getByLabelText('Caption')).toHaveValue('Queued caption');
+    const save = screen.getByRole('button', { name: 'Reschedule' });
+    expect(save).toBeDisabled();
+    const time = screen.getByLabelText('Publish time') as HTMLSelectElement;
+    const slot = [...time.options].find((o) => /^\d+$/.test(o.value) && !o.disabled)!;
+    fireEvent.change(time, { target: { value: slot.value } });
+    expect(save).toBeEnabled();
+    fireEvent.click(save);
+    await screen.findByText(/^Moved to /);
+    const form = vi.mocked(editScheduledDraft).mock.calls[0][1];
+    expect(vi.mocked(editScheduledDraft).mock.calls[0][0]).toBe('cm:0');
+    expect(form.get('version')).toBe('2');
+    expect(form.get('caption')).toBe('Queued caption');
+    expect(new Date(String(form.get('due_at'))).valueOf()).toBe(Number(slot.value));
+    expect(form.get('media')).toBeNull();
+  });
+
+  it('warns that a caption change replaces the queued post', async () => {
+    vi.mocked(getReviewDrafts).mockResolvedValue([queued]);
+    vi.mocked(getReviewDraftMedia).mockResolvedValue(new Blob());
+    renderQueue();
+    await openFirst();
+    fireEvent.change(screen.getByLabelText('Caption'), { target: { value: 'New words' } });
+    expect(screen.getByText(/withdraws the queued post from PostyBirb/)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Save & requeue' })).toBeEnabled();
+  });
+
+  it('opens a queued draft from a delivery-history link', async () => {
+    vi.mocked(getReviewDrafts).mockResolvedValue([queued]);
+    vi.mocked(getReviewDraftMedia).mockResolvedValue(new Blob());
+    render(
+      <MemoryRouter initialEntries={['/admin/posts?post=pb-post']}>
+        <AdminPosts />
+      </MemoryRouter>,
+    );
+    expect(await screen.findByRole('button', { name: 'Reschedule' })).toBeInTheDocument();
   });
 });
 

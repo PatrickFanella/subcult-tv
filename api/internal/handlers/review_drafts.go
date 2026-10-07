@@ -5,7 +5,6 @@ import (
 	"crypto/rand"
 	"encoding/hex"
 	"encoding/json"
-	"image/jpeg"
 	"io"
 	"mime/multipart"
 	"net/http"
@@ -168,13 +167,8 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if len(media) > 0 {
-		img, e := jpeg.DecodeConfig(bytes.NewReader(media))
-		if e != nil || img.Width < 320 || img.Width > 1440 || img.Height < 1 || float64(img.Width)/float64(img.Height) < 0.8 || float64(img.Width)/float64(img.Height) > 1.91 {
-			writeError(w, 400, "Choose a JPEG 320–1440 pixels wide with an aspect ratio between 4:5 and 1.91:1")
-			return
-		}
-		if _, e = jpeg.Decode(bytes.NewReader(media)); e != nil {
-			writeError(w, 400, "The JPEG could not be decoded")
+		if problem := instagramJPEGProblem(media); problem != "" {
+			writeError(w, 400, problem)
 			return
 		}
 	}

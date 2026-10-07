@@ -4,6 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import AdminPosts from '@/pages/admin/AdminPosts';
 import AdminStudio from '@/pages/admin/AdminStudio';
 import {
+  getRerolls,
   getPostingDashboard,
   getStudioCatalog,
   getStudioAsset,
@@ -19,6 +20,7 @@ vi.mock('@/lib/api', () => ({
   saveReviewDraft: vi.fn(),
   getPreparedMedia: vi.fn(),
   getDraftDecisions: vi.fn(),
+  getRerolls: vi.fn(),
   recordDraftDecision: vi.fn(),
   getSocialDelivery: vi.fn().mockRejectedValue(new Error('PostyBirb delivery is not configured')),
   approveSocialSchedule: vi.fn(),
@@ -77,6 +79,7 @@ beforeEach(() => {
   vi.mocked(getPostingDashboard).mockResolvedValue(data);
   vi.mocked(getReviewDrafts).mockResolvedValue([]);
   vi.mocked(getDraftDecisions).mockResolvedValue([]);
+  vi.mocked(getRerolls).mockResolvedValue([]);
   vi.mocked(getSocialDelivery).mockRejectedValue(new Error('PostyBirb delivery is not configured'));
   URL.createObjectURL = vi.fn(() => 'blob:test');
   URL.revokeObjectURL = vi.fn();

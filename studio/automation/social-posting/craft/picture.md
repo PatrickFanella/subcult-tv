@@ -15,3 +15,5 @@ Fields:
 - alt_text: a plain description of what the image will show, under 250 characters.
 
 The image must not suggest anything the caption does not say: no working feature that is not live, no real address, no real event.
+
+When `owner_note` is present, it is the owner's direction for this image; follow it unless it conflicts with the rules above. When `previous_image` is present, the owner rejected that image: choose a clearly different composition, and a different kind or headline where the caption allows it.

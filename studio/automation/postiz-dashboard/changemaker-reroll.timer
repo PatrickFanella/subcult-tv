@@ -1,0 +1,10 @@
+[Unit]
+Description=Check for owner re-roll requests every two minutes
+
+[Timer]
+OnCalendar=*:0/2
+Persistent=false
+Unit=changemaker-reroll.service
+
+[Install]
+WantedBy=timers.target

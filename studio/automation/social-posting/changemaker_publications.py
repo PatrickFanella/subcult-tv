@@ -32,7 +32,8 @@ def validate(result, items):
                 raise ValueError('Publication contains a private or invalid URL')
 
 
-def ingest(payload, env_file):
+def preparation_settings(env_file):
+    """The website's preparation endpoint and key; the key cannot approve or dispatch."""
     settings = {}
     for line in env_file.read_text().splitlines():
         if not line.lstrip().startswith('#') and '=' in line:
@@ -40,9 +41,14 @@ def ingest(payload, env_file):
             if key in ('POSTING_INGEST_URL', 'POSTING_PREPARATION_KEY'):
                 values = shlex.split(value, comments=True)
                 settings[key] = values[0] if values else ''
-    url = settings.get('POSTING_INGEST_URL', '')
-    if url != 'https://subcult.tv/api/v1/posting-preparation' or len(settings.get('POSTING_PREPARATION_KEY', '')) < 32:
+    if settings.get('POSTING_INGEST_URL', '') != 'https://subcult.tv/api/v1/posting-preparation' or len(settings.get('POSTING_PREPARATION_KEY', '')) < 32:
         raise ValueError('Preparation endpoint or credential is unavailable')
+    return settings
+
+
+def ingest(payload, env_file):
+    settings = preparation_settings(env_file)
+    url = settings['POSTING_INGEST_URL']
     request = urllib.request.Request(url, data=json.dumps(payload).encode(), method='POST', headers={
         'Authorization': 'Bearer '+settings['POSTING_PREPARATION_KEY'],
         'Content-Type': 'application/json', 'User-Agent': 'SUBCULT-daily-draft-preparation/1.0'})
