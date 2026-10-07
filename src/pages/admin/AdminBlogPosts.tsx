@@ -202,7 +202,7 @@ export default function AdminPosts() {
 
       {/* ── Table ───────────────────────────────────────────── */}
       <div className="overflow-x-auto">
-        <table className="w-full text-sm">
+        <table className="admin-table w-full text-sm">
           <thead>
             <tr className="border-b border-fog text-left font-mono text-xs text-dust uppercase">
               <th className="py-3 px-3">Title</th>
