@@ -2,7 +2,7 @@
 
 This runner prepares weekly X drafts from the social plan, the product claims register, the candidate bank, current repository scope documents, Super Productivity tasks and Buffer queues. It also reads Switchyard's native Changemaker artifacts, prepares timely discovery and quote candidates, and reviews the weekly and timely notes against delivery evidence. It cannot create, schedule or publish posts, approve drafts or change tasks.
 
-The installed plan, radar and review units are links into this directory in the Kvant checkout at `/home/onnwee/Work/Subcult/subcult-tv/studio/automation/social-posting`, so they run whatever branch that checkout has. The Instagram and website/Patreon jobs run from release bundles under `~/.local/share/posting-dashboard/`. The tracked config owns content paths. Credentials, receipts and SQLite state stay outside Git. `../../docs/history/MIGRATION.md` records the October 2 cutover and its recovery.
+The installed preparation services select versioned snapshots under `~/.local/share/posting-dashboard/releases/`. Since the October 6 guidance rollout, X plan/radar/review use `x-guidance-3919b0a`, Instagram resolves the `changemaker` symlink to that same snapshot, and website/Patreon uses `publications-x-guidance-3919b0a`. The X snapshot reads canonical Studio content and preserved runtime state, while pinning its editorial guide. Inspect effective `ExecStart`, links and configuration before deployment; changing a checkout branch or source alone does not update these jobs. Compatibility launchers under `~/.local/share/social-posting/` point to the same X snapshot. Credentials, receipts and SQLite state stay outside Git.
 
 ## Schedule and output
 

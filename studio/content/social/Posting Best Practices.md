@@ -4,7 +4,7 @@ type: work
 status: active
 stage: guide
 created: 2026-10-01
-updated: 2026-10-03
+updated: 2026-10-06
 review-after: 2026-11-01
 ---
 
@@ -28,6 +28,10 @@ Buffer's 2026 format analysis reports stronger median engagement for Instagram c
 
 This research established no platform-independent best time or volume. Keep the user-confirmed cadence. Start with the current Chicago windows and compare similar posts over several weeks before changing one window or format. One popular post is not enough evidence.
 
+X research checked October 6, 2026: Buffer's 2026 report uses 2024–2025 data and reports median engagement of 3.56% for text, 3.40% for images, 2.96% for video and 2.25% for links. Its separate 2025 study covers 18.8 million posts from 71,000 accounts and also finds lower link-post engagement. These are observational comparisons, not proof that an image causes reach or a first-reply link causes more visits. [Buffer 2026 report](https://buffer.com/resources/state-of-social-media-engagement-2026/), [Buffer link study](https://buffer.com/resources/links-on-x/).
+
+X leadership reportedly says its explicit link penalty ended; this does not settle the observed performance gap or the best placement for our accounts. Test an inline link against a first self-reply across comparable posts on each account, holding image format and other variables steady. Measure actual visits and supporter actions where available, alongside impressions and engagement. Do not generalize from a single post or compare Patrick against SUBCULT as if that were a controlled test. [Reported leadership statement](https://www.freepressjournal.in/tech/x-product-head-nikita-bier-confirms-link-penalty-removed-over-a-year-ago-tells-mark-zuckerberg-he-can-post-them-directly).
+
 ## Writing and voice
 
 [VOICE.md](../VOICE.md) decides how public copy sounds, per product and per account. This section is the short form that the drafting jobs read; where the two differ, VOICE.md wins. Facts still come from [[Product Claims Register]], and voice never adds a claim or drops a maturity limit.
@@ -44,7 +48,7 @@ This research established no platform-independent best time or volume. Keep the 
 ## Local editorial choices
 
 - Patrick carries interpretation and left-political commentary. SUBCULT carries products and independent culture. CLPR stays on clips and Twitch context. Pick one destination for a discovered conversation.
-- A post does not need an image. Use a real capture to demonstrate a workflow, an original illustration to convey a concept, or text alone for a short point or a quote. Keep access and readiness limits in the copy where they affect the reader.
+- A post does not need an image. For X launches and supporter campaigns, prefer useful original artwork; for product updates, prefer real captures or demonstrations. Personal observations and political quotes can remain text-only. Images should add information, not merely duplicate the caption. Keep access and readiness limits in the copy where they affect the reader.
 - No engagement bait and no irrelevant trending hashtags. Zero hashtags is the default; add one specific tag only when it helps identify the topic. This is an editorial choice. We claim no algorithm penalty.
 - Check original reporting, quotations and surrounding context before political or current-event commentary. Generated illustrations must not simulate documentary news scenes, endorsements by real people or actual product screens.
 - Write alt text for every image. For several images, review each description in the final composer. Plan captions or transcripts for recordings, text readable at phone size, clear contrast and safe margins. At publication, confirm the accessibility fields survived the actual provider path.
@@ -52,15 +56,15 @@ This research established no platform-independent best time or volume. Keep the 
 
 ## Formats and delivery checks
 
-Start with PNG or JPEG stills. A square image works across platforms; 4:5 is an optional Instagram portrait master and 9:16 an optional Story or Reel master. These are local production defaults, not platform requirements. Preserve original masters, create separate variants when needed, and check current API and composer behavior before dispatch.
+Start with PNG or JPEG stills. Specify platform, placement, dimensions and aspect ratio before creating an asset; label the resulting variant accordingly. Instagram feed assets can use 4:5 (1080×1350), while full-screen Story assets use 9:16 (1080×1920) with interface-safe margins. Make a separate X composition when needed rather than reusing the Instagram layout unchanged. These are local production choices, not claims that one ratio always earns more reach. Preserve masters and check current API/composer support and final cropping before dispatch.
 
 Buffer currently documents up to four images on X and ten on Instagram through its integration, whatever the native limits are. It documents 5 MB static images for X, 8 MB for Instagram, and an Instagram range of 3:4 to 1.91:1 in its image guide. Another Buffer Instagram guide still says 4:5 to 1.91:1. Because those pages differ, square and 4:5 are the conservative choices; verify 3:4 in the actual channel before relying on it. [Buffer attachments](https://support.buffer.com/en-us/articles/attaching-images-videos-and-other-media-to-your-posts-eudySt0TnS), [Buffer image specifications](https://support.buffer.com/en-us/articles/ideal-image-sizes-and-formats-for-your-buffer-posts-JxHNGZFvf9), [Buffer Instagram guide](https://support.buffer.com/en-us/articles/using-instagram-with-buffer-YSjg2dXFV8).
 
-An attached image is not a clickable website card, so keep the URL in the post when the reader needs it. X creates its own link preview; a Buffer preview does not prove the final X card. Buffer's Instagram integration does not currently add trending music, so choose rights-cleared audio or post natively on purpose. Recheck the destination and credits after upload. Upload is separate from publication. [Buffer attachment behavior](https://support.buffer.com/en-us/articles/attaching-images-videos-and-other-media-to-your-posts-eudySt0TnS), [Instagram integration](https://support.buffer.com/en-us/articles/using-instagram-with-buffer-YSjg2dXFV8).
+An attached image is not a clickable website card. Keep a needed URL inline unless an explicit link-placement experiment includes approved first-reply copy and a checked provider/thread path. The current preparation schema has no reply field: put the proposal in next_check, preserve the URL in text, and do not claim the reply has been created or scheduled. X creates its own link preview; a Buffer preview does not prove the final X card. Buffer's Instagram integration does not currently add trending music, so choose rights-cleared audio or post natively on purpose. Recheck the destination and credits after upload. Upload is separate from publication. [Buffer attachment behavior](https://support.buffer.com/en-us/articles/attaching-images-videos-and-other-media-to-your-posts-eudySt0TnS), [Instagram integration](https://support.buffer.com/en-us/articles/using-instagram-with-buffer-YSjg2dXFV8).
 
 ## Weekly review
 
-Compare account, topic, format, local window and asset ID against actual published URLs. Record reach or impressions, link clicks, substantive replies, saves or shares and follows only when they are available, and name each metric's definition and denominator before calculating a rate. Draft counts and generated-media counts measure preparation, not audience response. Recommend one small keep, change or stop decision. With no analytics, make no performance claim.
+Compare account, topic, format, local window and asset ID against actual published URLs. Record reach or impressions, link clicks, substantive replies, saves or shares and follows only when they are available, and name each metric's definition and denominator before calculating a rate. Draft counts and generated-media counts measure preparation, not audience response. For link-placement experiments, compare actual visits and supporter actions when measurable as well as impressions and engagement; never infer conversion from likes or replies. Recommend one small keep, change or stop decision. With no analytics, make no performance claim.
 
 The installed weekly and timely runners read this guide, emit a structured media choice, validate library references and write pending production requests. They do not upload media, change approval state or publish. Image generation happens through the interactive built-in tool; no unattended paid image API is installed.
 

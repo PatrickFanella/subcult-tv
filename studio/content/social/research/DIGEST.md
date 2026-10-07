@@ -35,7 +35,7 @@ Tags: **[P]** platform-documented, **[R]** research-backed, **[C]** practitioner
 ## Per platform
 
 - **Instagram:** image or short carousel does the stopping; first caption line survives truncation; write for sends ("who would forward this?"); no caption URLs, name the site in plain text or point to the bio; original material only; 4:5 master with the subject inside a centered 3:4 crop. Sends per reach drive non-follower reach. [P]
-- **X:** 280 characters, text-only is fine; earn replies and link-copy shares; space posts out (author-diversity decay, 48-hour window); links inline when needed, since X says the link penalty ended about mid-2025. [P]
+- **X:** 280 characters; text and image posts both work. Use useful original artwork for launches/supporter campaigns and real captures for product demonstrations; personal observations can stay text-only. Link posts show lower engagement in observational samples, while X leadership reportedly says the explicit penalty ended. Neither establishes a universal link-placement rule. Test inline versus first self-reply links by account and goal; compare visits and supporter actions where available as well as impressions and engagement. Keep required URLs inline until a reply is explicitly prepared, approved and supported by the provider. [P][C]
 - **Bluesky:** 300 graphemes; links welcome and need a real card (title, description, thumbnail); alt text mandatory in practice; no corporate tone; starter packs and topic feeds drive discovery. [P][R][C]
 - **Patreon:** frank ledger: what we worked on, what broke, what support paid for, one thing to try or answer. Public editions double as discovery. Describe the rhythm without promising dates. [P][VOICE.md]
 - **Devlog:** the long canonical version. Title says what changed for whom; problem, change, what is still unfinished, how to try it; dated; one real capture with alt text near the top. [R][C]
@@ -43,7 +43,7 @@ Tags: **[P]** platform-documented, **[R]** research-backed, **[C]** practitioner
 ## Reject these myths
 
 - "Sends are worth 3–5 likes." No source. [F]
-- "Put links in replies on X." X says the penalty is gone. [F]
+- "Images always beat text on X" and "links must always be in replies" (or "link placement never matters"). These universal claims are unproven; test by account and goal. Lower engagement is not proof of suppression or lower conversion. [F]
 - "One report cancels 468 likes." X's code comments call this wrong. [F]
 - "Eight-second attention span." Untraceable. [F]
 - "85% of video is watched muted." Publisher self-reports from 2016. [F]
