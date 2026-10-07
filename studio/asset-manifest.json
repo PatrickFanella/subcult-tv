@@ -2511,8 +2511,8 @@
   },
   {
     "path": "brands/patrick__eff/GUIDE.md",
-    "sha256": "c325f710eb34845d5e88ba40d998dd9e169b89997ccaca9fc6d03eb0b296ba5a",
-    "bytes": 5799
+    "sha256": "f99e11fc6ce9b1244c4209f253db7610905e2d1d71cfb347917f3fdb4c75e374",
+    "bytes": 6210
   },
   {
     "path": "brands/patrick__eff/alt-text.md",
@@ -2541,8 +2541,8 @@
   },
   {
     "path": "brands/patrick__eff/asset-manifest.json",
-    "sha256": "81f5e8c0e27ef7857f09977c8e639adb355bead5206aa21191cc6d36aa06df3c",
-    "bytes": 21459
+    "sha256": "5a371b1b9bf8454077ae7aec714ed87d5b5be77bcb0806185b0869ee5ce24ce5",
+    "bytes": 40615
   },
   {
     "path": "brands/patrick__eff/components.html",
@@ -3876,8 +3876,8 @@
   },
   {
     "path": "brands/subcult/asset-manifest.json",
-    "sha256": "ca4a369157d7c32e82ffd4da939549ef5e879304a0b941491f6308e13f0c9fe9",
-    "bytes": 20021
+    "sha256": "789ce696aa0f82f75bbc28b4dd73aca0a0d9cf431a70c85e9344a662c188f235",
+    "bytes": 22922
   },
   {
     "path": "brands/subcult/fonts/JetBrains-Mono-0.ttf",
@@ -6580,8 +6580,8 @@
   },
   {
     "path": "brand-tools/patrick_patch.py",
-    "sha256": "69b1748f303a3736b61de0ce2199562ef53e7c50ad0135f956fed2a827a47592",
-    "bytes": 12046
+    "sha256": "29eb5606481a273299de5d05adf1c534eca16521bc005a9ad512e00a7a222859",
+    "bytes": 12806
   },
   {
     "path": "brand-tools/prichal_product_assets.py",

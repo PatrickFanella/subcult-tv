@@ -40,7 +40,7 @@ The display and label fonts resolve from the existing licensed Patrick pack. The
 
 ## Mark preservation
 
-The selected logo combines the open frame from `../../references/patrick-variations/mono-outlined.svg` with the thirteen-bar waveform from the older `primary-outlined.svg`. The frame, initials, slash, dot and waveform geometry remain intact. The waveform sits behind the initials. Original masters are unchanged.
+The selected logo combines the open frame from `../../brand-tools/references/patrick-variations/mono-outlined.svg` with the thirteen-bar waveform from the older `primary-outlined.svg`. The frame, initials, slash, dot and waveform geometry remain intact. The waveform sits behind the initials. Original masters are unchanged.
 
 Lavender (01) is the default for dark backgrounds; Light (06) uses charcoal foreground on warm white. The avatar places the logo within the separate routing illustration. Use the plain open-frame monochrome fallback when the waveform becomes indistinct at small sizes or for single-ink printing. Do not stretch the mark.
 
@@ -74,6 +74,10 @@ The pack uses the standard Studio paths: `logos/`, `social/`, `video/` and `artw
 The identity line is **Software. Sound. Culture.** Set all three phrases at the same size in each composition.
 
 The open frame with the original waveform is approved in seven treatments: 01, 02, 03, 04, 06, 07 and 08. Lavender is the default, and 06 is its counterpart for light backgrounds. Option 05 is excluded. The [approved logo gallery](../../brand-tools/patrick/waveform-variations/index.html) shows all seven. Their transparent marks and avatars are in `logos/waveform/`. The monochrome fallback exports keep the plain open frame for small or single-ink uses.
+
+## Portrait photography
+
+[Portrait library](portraits/index.html) contains the owner-selected earlier photographs and original cropped, phone-free studio and indoor-wall edit sets. The professional outdoor headshot is selected for GitHub. Full-resolution files, suggested uses and source hashes are in the library. The source is `brand-tools/patrick/portraits/`; rebuilding retains this selection.
 
 ## Rebuild
 
