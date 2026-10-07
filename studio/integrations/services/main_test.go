@@ -45,11 +45,11 @@ func TestBrandingGzipAndCSP(t *testing.T) {
 	gz.Write([]byte("<html><head></head><body>hello</body></html>"))
 	gz.Close()
 	r := &http.Response{StatusCode: 200, Header: http.Header{"Content-Type": {"text/html"}, "Content-Encoding": {"gzip"}, "Content-Security-Policy": {"default-src 'self'"}, "Etag": {"original"}}, Body: io.NopCloser(bytes.NewReader(compressed.Bytes())), Request: &http.Request{Method: "GET"}}
-	if err := brandResponse("freshrss", r); err != nil {
+	if err := brandResponse("navidrome", r); err != nil {
 		t.Fatal(err)
 	}
 	b, _ := io.ReadAll(r.Body)
-	if !strings.Contains(string(b), `href="/_subcult/freshrss.css`) || r.Header.Get("Content-Encoding") != "" || r.Header.Get("Etag") != "" || r.Header.Get("Content-Security-Policy") != "default-src 'self'" || int64(len(b)) != r.ContentLength {
+	if !strings.Contains(string(b), `href="/_subcult/navidrome.css`) || r.Header.Get("Content-Encoding") != "" || r.Header.Get("Etag") != "" || r.Header.Get("Content-Security-Policy") != "default-src 'self'" || int64(len(b)) != r.ContentLength {
 		t.Fatal("invalid HTML transformation")
 	}
 }
