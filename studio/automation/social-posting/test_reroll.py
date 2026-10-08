@@ -41,6 +41,15 @@ class RerollTests(unittest.TestCase):
         (self.state/'runs'/RUN/'result.json').write_text(json.dumps({'drafts': [self.draft]}))
         (self.state/'runs'/RUN/'sources.json').write_text(json.dumps({'items': [{'id': 'S9', 'title': 'Headless core'}]}))
 
+        # Image dimensions come from Pillow, which CI does not install; record the file without it.
+        def record(path, state):
+            data = path.read_bytes()
+            return {'file': str(path.resolve().relative_to(state.resolve())), 'sha256': hashlib.sha256(data).hexdigest(),
+                    'width': 1080, 'height': 1350, 'bytes': len(data)}
+        patcher = patch.object(reroll, 'image_record', side_effect=record)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
     def tearDown(self):
         self.tmp.cleanup()
 
@@ -56,8 +65,7 @@ class RerollTests(unittest.TestCase):
             calls.append({'text': text, 'product': product, 'extra': extra})
             directory.mkdir(parents=True, exist_ok=True)
             jpeg = directory/'post-0.jpg'
-            from PIL import Image
-            Image.new('RGB', (1080, 1350), (20, 30, 40)).save(jpeg, 'JPEG')
+            jpeg.write_bytes(b'\xff\xd8\xff new picture')
             return jpeg, {'kind': 'illustration', 'headline': 'New headline', 'checks': [{'pass': True}]}, 'New alt.'
         return make
 
