@@ -429,6 +429,35 @@ describe('reject, revise and snooze', () => {
     expect(screen.getByText('Rejected: Off-brand')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /^Approve & queue/ })).not.toBeInTheDocument();
   });
+
+  it('marks a good post with an optional note and keeps it in the queue', async () => {
+    vi.mocked(recordDraftDecision).mockResolvedValue({ draft_id: 'cm:0', decision: 'favorited' });
+    renderQueue();
+    await openFirst();
+    fireEvent.click(
+      screen.getByRole('button', { name: /^Mark patrick__eff post: We gave.* as good$/ }),
+    );
+    fireEvent.change(screen.getByLabelText('What works? (optional)'), {
+      target: { value: 'The opening line' },
+    });
+    fireEvent.click(screen.getByRole('button', { name: 'Save as a good example' }));
+    await screen.findByText(/Marked as a good post/);
+    expect(vi.mocked(recordDraftDecision).mock.calls[0][1]).toMatchObject({
+      decision: 'favorited',
+      note: 'The opening line',
+    });
+    expect(screen.getByRole('button', { name: /^Approve & queue/ })).toBeInTheDocument();
+  });
+
+  it('shows a mark without hiding the draft or replacing its decision', async () => {
+    vi.mocked(getDraftDecisions).mockResolvedValue([
+      decision({ draft_id: 'cm:0', decision: 'favorited', note: '' }),
+    ]);
+    renderQueue();
+    await openFirst();
+    expect(screen.getByRole('button', { name: /is marked as good$/ })).toBeDisabled();
+    expect(screen.getByRole('button', { name: /^Approve & queue/ })).toBeInTheDocument();
+  });
 });
 
 describe('save, re-roll and edit queued posts', () => {

@@ -109,6 +109,7 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 		api.Post("/posting-preparation", h.IngestPublications)
 		api.Post("/posting-preparation/rerolls/claim", h.ClaimRerolls)
 		api.Post("/posting-preparation/rerolls/{id}", h.FinishReroll)
+		api.Get("/posting-preparation/feedback", h.PreparationFeedback)
 		api.Get("/posting-media/{id}", h.PostingMedia)
 
 		api.With(middleware.RateLimit(publicFormLimiter)).Post("/newsletter/subscribe", h.Subscribe)

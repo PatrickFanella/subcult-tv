@@ -227,11 +227,19 @@ export function scoreSummary(scores: Partial<Record<string, number>> | undefined
 
 export type HiddenReason = '' | 'rejected' | 'revision_requested' | 'snoozed' | 'superseded';
 
-/** Latest decision per draft, from decisions returned oldest first. */
+/**
+ * Latest decision per draft, from decisions returned oldest first. A "good post"
+ * mark is feedback only and never changes where a draft sits in the queue.
+ */
 export function latestDecisions(decisions: DraftDecision[]) {
   const latest = new Map<string, DraftDecision>();
-  for (const d of decisions) latest.set(d.draft_id, d);
+  for (const d of decisions) if (d.decision !== 'favorited') latest.set(d.draft_id, d);
   return latest;
+}
+
+/** Drafts the owner marked as particularly good. */
+export function favoritedDrafts(decisions: DraftDecision[]) {
+  return new Set(decisions.filter((d) => d.decision === 'favorited').map((d) => d.draft_id));
 }
 
 /** Why a draft is out of the active queue: rejected, awaiting revision, snoozed or replaced. */

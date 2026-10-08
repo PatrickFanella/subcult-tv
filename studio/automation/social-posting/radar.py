@@ -120,6 +120,7 @@ def execute(cfg):
             context['media_library'] = runner.media.context(cfg)
             context['posting_guidance'] = (runner.paths.root(cfg)/cfg['editorial_guide']).read_text()
             context['claims_register'] = claims.read_text()
+            context['owner_feedback'] = runner.feedback.owner_feedback(Path(cfg['state']), ('x', 'bluesky'), 30)
             context['editorial_style'] = (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()
             context['weekly_plan'] = weekly.read_text() if weekly.exists() else 'No current-week plan.'
             timely_folder = runner.paths.drafts(cfg)/'Timely Drafts'
@@ -153,7 +154,7 @@ def execute(cfg):
             originals=[draft.get('text') for draft in result['drafts']]
             if result['drafts'] and cfg.get('polish', True):
                 import craft
-                craft.polish_short(cfg, result['drafts'], directory)
+                craft.polish_short(cfg, result['drafts'], directory, owner=context['owner_feedback'])
             try:
                 validate(result,context,cfg,now)
             except ValueError:

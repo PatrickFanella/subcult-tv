@@ -13,11 +13,12 @@ const REJECT_REASONS: { code: string; label: string }[] = [
 
 const SNOOZE_DAYS = [1, 3, 7];
 
-type Mode = '' | 'reject' | 'revise' | 'snooze';
+type Mode = '' | 'reject' | 'revise' | 'snooze' | 'good';
 
 /**
- * Reject, request a revision or snooze a draft. Each choice is recorded as
- * feedback for the drafting pipeline; none of them posts or schedules anything.
+ * Reject, request a revision, snooze or mark a draft as particularly good. Each
+ * choice is recorded as feedback for the drafting pipeline; none of them posts
+ * or schedules anything. `goodOnly` shows just the mark, for submitted drafts.
  */
 export default function DecisionControls({
   draftId,
@@ -25,6 +26,8 @@ export default function DecisionControls({
   busy,
   setBusy,
   checklist = [],
+  favorited = false,
+  goodOnly = false,
   onRecorded,
 }: {
   draftId: string;
@@ -33,7 +36,11 @@ export default function DecisionControls({
   busy: string;
   setBusy: (value: string) => void;
   checklist?: ChecklistState[];
-  onRecorded: (message: string) => void;
+  /** The owner has already marked this draft as good. */
+  favorited?: boolean;
+  goodOnly?: boolean;
+  /** keepOpen is true when the draft stays in the queue after the decision. */
+  onRecorded: (message: string, keepOpen?: boolean) => void;
 }) {
   const [mode, setMode] = useState<Mode>('');
   const [reasons, setReasons] = useState<string[]>([]);
@@ -56,6 +63,9 @@ export default function DecisionControls({
         const until = new Date(Date.now() + days * 86400000).toISOString();
         await recordDraftDecision(draftId, { decision: 'snoozed', snooze_until: until, checklist });
         onRecorded(`Snoozed for ${days === 1 ? 'a day' : `${days} days`}.`);
+      } else if (mode === 'good') {
+        await recordDraftDecision(draftId, { decision: 'favorited', note, checklist });
+        onRecorded('Marked as a good post. Prompt tuning will learn from it.', true);
       }
       setMode('');
       setReasons([]);
@@ -76,44 +86,64 @@ export default function DecisionControls({
       ? reasons.length > 0 || note.trim() !== ''
       : mode === 'revise'
         ? note.trim() !== ''
-        : mode === 'snooze';
+        : mode === 'snooze' || mode === 'good';
 
   return (
     <div className="decision-controls">
       <div className="decision-buttons">
         <button
           type="button"
-          aria-expanded={mode === 'reject'}
-          aria-label={`Reject ${label}`}
-          disabled={locked}
-          onClick={() => toggle('reject')}
+          className="decision-good"
+          aria-expanded={mode === 'good'}
+          aria-label={favorited ? `${label} is marked as good` : `Mark ${label} as good`}
+          disabled={locked || favorited}
+          onClick={() => toggle('good')}
         >
-          Reject
+          {favorited ? 'Marked good' : 'Good post'}
         </button>
-        <button
-          type="button"
-          aria-expanded={mode === 'revise'}
-          aria-label={`Request revision of ${label}`}
-          disabled={locked}
-          onClick={() => toggle('revise')}
-        >
-          Request revision
-        </button>
-        <button
-          type="button"
-          aria-expanded={mode === 'snooze'}
-          aria-label={`Snooze ${label}`}
-          disabled={locked}
-          onClick={() => toggle('snooze')}
-        >
-          Snooze
-        </button>
+        {!goodOnly && (
+          <>
+            <button
+              type="button"
+              aria-expanded={mode === 'reject'}
+              aria-label={`Reject ${label}`}
+              disabled={locked}
+              onClick={() => toggle('reject')}
+            >
+              Reject
+            </button>
+            <button
+              type="button"
+              aria-expanded={mode === 'revise'}
+              aria-label={`Request revision of ${label}`}
+              disabled={locked}
+              onClick={() => toggle('revise')}
+            >
+              Request revision
+            </button>
+            <button
+              type="button"
+              aria-expanded={mode === 'snooze'}
+              aria-label={`Snooze ${label}`}
+              disabled={locked}
+              onClick={() => toggle('snooze')}
+            >
+              Snooze
+            </button>
+          </>
+        )}
       </div>
       {mode && (
         <form
           className="decision-form"
           aria-label={
-            mode === 'reject' ? 'Reject draft' : mode === 'revise' ? 'Request revision' : 'Snooze'
+            mode === 'reject'
+              ? 'Reject draft'
+              : mode === 'revise'
+                ? 'Request revision'
+                : mode === 'good'
+                  ? 'Mark as good'
+                  : 'Snooze'
           }
           onSubmit={(e) => {
             e.preventDefault();
@@ -141,9 +171,13 @@ export default function DecisionControls({
               ))}
             </div>
           )}
-          {(mode === 'reject' || mode === 'revise') && (
+          {mode !== 'snooze' && (
             <label>
-              {mode === 'reject' ? 'Note (optional)' : 'What should change?'}
+              {mode === 'reject'
+                ? 'Note (optional)'
+                : mode === 'revise'
+                  ? 'What should change?'
+                  : 'What works? (optional)'}
               <textarea
                 rows={3}
                 maxLength={2000}
@@ -174,7 +208,9 @@ export default function DecisionControls({
               ? 'Confirm rejection'
               : mode === 'revise'
                 ? 'Send request'
-                : 'Snooze'}
+                : mode === 'good'
+                  ? 'Save as a good example'
+                  : 'Snooze'}
           </button>
           {error && <p role="alert">{error}</p>}
         </form>

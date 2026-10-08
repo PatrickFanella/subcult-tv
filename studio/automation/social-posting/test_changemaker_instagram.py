@@ -125,15 +125,18 @@ class ChangemakerInstagramTests(unittest.TestCase):
         second = importer.posting_slots({'timezone': 'America/Chicago'}, now, 1, {first.astimezone(timezone.utc)})[0]
         self.assertNotEqual(first, second)
 
-    def test_owner_feedback_keeps_edits_and_rejections_only(self):
+    def test_owner_feedback_keeps_learning_decisions_only(self):
         with tempfile.TemporaryDirectory() as tmp:
             state = Path(tmp)
             (state/'owner-feedback.json').write_text(json.dumps([
                 {'decision': 'approved_as_is', 'original_text': 'a'},
                 {'decision': 'approved_edited', 'original_text': 'We merged a fix.', 'final_text': 'The menu works now.', 'reasons': []},
-                {'decision': 'rejected', 'original_text': 'Thoughts?', 'reasons': ['boring'], 'note': 'bait'}]))
+                {'decision': 'snoozed', 'original_text': 'b'},
+                {'decision': 'rejected', 'original_text': 'Thoughts?', 'reason_codes': ['boring'], 'note': 'bait'},
+                {'decision': 'favorited', 'original_text': 'Good one', 'note': 'this opening'}]))
             feedback = importer.owner_feedback(state)
-            self.assertEqual([f['decision'] for f in feedback], ['approved_edited', 'rejected'])
+            self.assertEqual([f['decision'] for f in feedback], ['approved_edited', 'rejected', 'favorited'])
+            self.assertEqual(feedback[1]['reasons'], ['boring'])
 
     def test_checklist_splits_sentences(self):
         items = importer.checklist('Confirm whether the fix is live. Check the image; then approve.')

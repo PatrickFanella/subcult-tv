@@ -1,0 +1,11 @@
+[Unit]
+Description=Hourly pull of owner review feedback
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+RandomizedDelaySec=5min
+Unit=social-feedback-pull.service
+
+[Install]
+WantedBy=timers.target
