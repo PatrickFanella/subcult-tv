@@ -27,8 +27,10 @@ ALLOWED = sorted([SOCIAL+name for name in (
     'craft/brief.md', 'craft/draft.md', 'craft/review.md', 'craft/final.md', 'craft/short.md', 'craft/reroll.md',
     'craft/showcase.md', 'craft/examples.md', 'craft/pub-brief.md', 'craft/pub-draft.md', 'craft/pub-review.md',
     'craft/pub-final.md', 'craft/pub-examples.md')] + [
-    'studio/content/VOICE.md', 'studio/content/social/Posting Best Practices.md',
-    '.agents/skills/social-craft/references/lessons.md'])
+    'studio/content/VOICE.md', 'studio/content/social/Posting Best Practices.md'])
+# The model's sandbox cannot write under .agents/, so the wrapper records its lessons here.
+LESSONS = '.agents/skills/social-craft/references/lessons.md'
+LESSONS_HEADING = '## Lessons from prompt tuning'
 AGENT = ['-c', 'user.name=SUBCULT Agent', '-c', 'user.email=info@subcult.tv', '-c', 'commit.gpgsign=false']
 
 
@@ -46,6 +48,20 @@ def select(records, cursor):
     fresh = [r for r in records if r.get('decided_at', '') > cursor and useful(r)]
     earlier = [r for r in records if r.get('decided_at', '') <= cursor and useful(r)][:20]
     return fresh, earlier
+
+
+def record_lessons(clone, lessons, day):
+    """Append the model's lessons as dated bullets; return how many were written."""
+    clean = [' '.join(str(item).split()) for item in lessons if isinstance(item, str)]
+    clean = [item for item in clean if 0 < len(item) <= 400][:5]
+    if not clean:
+        return 0
+    path = clone/LESSONS
+    text = path.read_text().rstrip('\n')
+    if LESSONS_HEADING not in text:
+        text += '\n\n'+LESSONS_HEADING+'\n\nWritten by `tune.py` from the owner\'s review feedback. Each bullet is dated with the newest feedback it used.\n'
+    path.write_text(text+''.join(f'\n- **{day}.** {item}' for item in clean)+'\n')
+    return len(clean)
 
 
 def run(command, cwd=None, check=True):
@@ -85,6 +101,8 @@ def body(result, fresh):
         counts[record['decision']] = counts.get(record['decision'], 0)+1
     lines = [result['summary'], '', 'Feedback used: '+', '.join(f'{n} {k}' for k, n in sorted(counts.items()))+'.', '', 'Changes:']
     lines += [f"- `{c['file']}`: {c['why']}" for c in result['changes']]
+    if result.get('lessons'):
+        lines += ['', 'Lessons recorded in `lessons.md`:'] + [f'- {item}' for item in result['lessons']]
     if result['ignored']:
         lines += ['', 'Not acted on:'] + [f'- {item}' for item in result['ignored']]
     lines += ['', 'Prepared by the prompt-tuning job. Compare the changed prompts on saved fixtures before deploying them; '
@@ -123,12 +141,13 @@ def execute(cfg, state, ingest_env, now=None, minimum=5):
             {'feedback': fresh, 'earlier': earlier, 'allowed_files': ALLOWED}, ensure_ascii=False, indent=1)
         (directory/'tune.prompt.md').write_text(prompt)
         result = codex(cfg, prompt, clone, directory)
+        outside = [f for f in changed_files(clone) if f not in ALLOWED]
+        if outside:
+            return {**receipt, 'files': changed_files(clone), 'status': 'rejected_changes', 'outside_allowlist': outside}
+        newest = max(r['decided_at'] for r in fresh)
+        receipt['lessons'] = record_lessons(clone, result.get('lessons', []), newest[:10])
         files = changed_files(clone)
         receipt['files'] = files
-        outside = [f for f in files if f not in ALLOWED]
-        if outside:
-            return {**receipt, 'status': 'rejected_changes', 'outside_allowlist': outside}
-        newest = max(r['decided_at'] for r in fresh)
         if not files:
             cursor_file.write_text(json.dumps({'cursor': newest})+'\n')
             return {**receipt, 'status': 'no_change', 'summary': result['summary']}

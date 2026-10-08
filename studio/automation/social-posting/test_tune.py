@@ -62,11 +62,13 @@ class TuneTests(unittest.TestCase):
         (work/tune.SOCIAL).mkdir(parents=True)
         (work/tune.SOCIAL/'prompt.md').write_text('old\n')
         (work/tune.SOCIAL/'runner.py').write_text('code\n')
+        (work/tune.LESSONS).parent.mkdir(parents=True)
+        (work/tune.LESSONS).write_text('# Lessons\n\n## Images\n\n- Old lesson.\n')
         for command in (['add', '.'], [*tune.AGENT, 'commit', '-q', '-m', 'seed'], ['push', '-q', str(origin), 'main']):
             subprocess.run(['git', *command], cwd=work, check=True)
         return str(origin)
 
-    def tuned(self, edits):
+    def tuned(self, edits, lessons=()):
         self.cfg['remote'] = self.fake_repo()
         self.write([record('favorited', f'2026-10-09T0{n}:00:00Z', 'more like this') for n in range(5)])
 
@@ -74,7 +76,8 @@ class TuneTests(unittest.TestCase):
             self.assertIn('more like this', prompt)
             for name, text in edits.items():
                 (clone/name).write_text(text)
-            return {'summary': 'Lead with the reader.', 'changes': [{'file': n, 'why': 'marks'} for n in edits], 'ignored': []}
+            return {'summary': 'Lead with the reader.', 'changes': [{'file': n, 'why': 'marks'} for n in edits], 'ignored': [],
+                    'lessons': list(lessons)}
         real_run = tune.run
 
         def run(command, cwd=None, check=True):
@@ -92,6 +95,21 @@ class TuneTests(unittest.TestCase):
                              capture_output=True, text=True, check=True).stdout
         self.assertIn('SUBCULT Agent Tune social drafting prompts', log)
         self.assertEqual(json.loads((self.state/'prompt-tuning.json').read_text())['cursor'], '2026-10-09T04:00:00Z')
+
+    def test_lessons_alone_open_a_pull_request(self):
+        receipt = self.tuned({}, ['The owner cuts closing asides.\n Keep endings short.', '', 'x'*401])
+        self.assertEqual(receipt['status'], 'pull_request_opened', receipt)
+        self.assertEqual(receipt['files'], [tune.LESSONS])
+        self.assertEqual(receipt['lessons'], 1)
+        text = subprocess.run(['git', '--git-dir', self.cfg['remote'], 'show', receipt['branch']+':'+tune.LESSONS],
+                              capture_output=True, text=True, check=True).stdout
+        self.assertTrue(text.endswith(tune.LESSONS_HEADING+'\n\nWritten by `tune.py` from the owner\'s review feedback. '
+                                      'Each bullet is dated with the newest feedback it used.\n\n'
+                                      '- **2026-10-09.** The owner cuts closing asides. Keep endings short.\n'), text)
+
+    def test_model_edits_to_lessons_are_refused(self):
+        receipt = self.tuned({tune.LESSONS: 'rewritten\n'})
+        self.assertEqual(receipt['status'], 'rejected_changes')
 
     def test_refuses_edits_outside_the_allowlist(self):
         receipt = self.tuned({tune.SOCIAL+'prompt.md': 'new\n', tune.SOCIAL+'runner.py': 'evil\n'})

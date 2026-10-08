@@ -70,3 +70,10 @@ These findings come from rebuilding the SUBCULT social drafting system on Octobe
 Use the dated evidence in Studio's research and Posting Best Practices guide. Text and images both work; an image is useful when it shows the work or makes the offer clearer. Prefer original artwork for launches/supporter campaigns and real captures for demonstrations; personal observations and political quotes can stay text-only. Lower engagement on link posts does not prove a current blanket penalty or that first-reply links improve traffic or conversion. Test inline versus first self-reply placement by account and goal across comparable posts, holding other variables steady. Measure visits and supporter actions where available alongside impressions and engagement; missing analytics stay unknown.
 
 Prepare exact reply copy and check the provider/thread path before moving a required link out of a post. The current runner schema and short editor have no reply output: retain required URLs in text and put proposed reply copy and the experiment in private next_check/editor notes. Never invent a reply field, silently discard a link, claim a reply is scheduled, or automate replies from a preparation run. Keep X and Bluesky guidance separate.
+
+## Lessons from prompt tuning
+
+Written by `tune.py` from the owner's review feedback. Each bullet is dated with the newest feedback it used.
+
+- **2026-10-08.** The owner's approved Instagram edits for Undertow, Subcult OS and Rekolekt open on a maker's note or a concrete product behavior, not on a stranger's problem. A maker or product-name opening is fine when the same sentence names something concrete.
+- **2026-10-08.** The owner cuts closing asides and repeated status paragraphs. A caption ends when the last necessary detail is told, and each required maturity limit appears once.
