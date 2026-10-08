@@ -1,0 +1,11 @@
+[Unit]
+Description=Saturday prompt tuning from owner feedback, before Monday planning
+
+[Timer]
+OnCalendar=Sat *-*-* 10:00:00 America/Chicago
+Persistent=true
+AccuracySec=1min
+Unit=social-prompt-tuning.service
+
+[Install]
+WantedBy=timers.target

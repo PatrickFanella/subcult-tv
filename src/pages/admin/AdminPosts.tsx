@@ -19,6 +19,7 @@ import {
   draftPlatform,
   firstLine,
   hiddenReason,
+  favoritedDrafts,
   latestDecisions,
   isExpired,
   laneLabel,
@@ -264,6 +265,7 @@ export default function AdminPosts() {
     return Boolean((edit && edit.status !== 'draft') || bufferFor(id));
   };
   const latest = latestDecisions(decisions);
+  const favorites = favoritedDrafts(decisions);
   const superseded = new Set(
     (data?.drafts || []).map((d) => d.supersedes).filter((id): id is string => Boolean(id)),
   );
@@ -296,9 +298,9 @@ export default function AdminPosts() {
     ...new Set(all.filter((d) => draftPlatform(d) === tab).map((d) => d.account)),
   ];
   const cadence = (name: string) => data?.accounts.find((a) => a.account === name)?.times ?? [];
-  const recorded = (message: string) => {
+  const recorded = (message: string, keepOpen = false) => {
     setNotice(message);
-    setOpen('');
+    if (!keepOpen) setOpen('');
     setRevision((v) => v + 1);
   };
   const hiddenLabel: Record<string, string> = {
@@ -422,12 +424,14 @@ export default function AdminPosts() {
                         now={now}
                         onSaved={() => setRevision((v) => v + 1)}
                       >
-                        {!hidden(d) && !bufferFor(d.id) && (
+                        {!hidden(d) && (
                           <DecisionControls
                             draftId={d.id}
                             label={`${d.account} X post: ${firstLine(d.text, 48)}`}
                             busy={busy}
                             setBusy={setBusy}
+                            favorited={favorites.has(d.id)}
+                            goodOnly={Boolean(bufferFor(d.id))}
                             onRecorded={recorded}
                           />
                         )}
@@ -440,6 +444,7 @@ export default function AdminPosts() {
                             label={`${d.account} ${platformLabel(tab)} post: ${firstLine(d.text, 48)}`}
                             busy={busy}
                             setBusy={setBusy}
+                            favorited={favorites.has(d.id)}
                             onRecorded={recorded}
                           />
                         )}
@@ -464,29 +469,51 @@ export default function AdminPosts() {
                       {latest.get(d.id)?.note ? `: ${latest.get(d.id)?.note}` : '.'}
                     </p>
                   ) : submitted(d.id) && edit?.status === 'scheduled' && edit.post_id ? (
-                    <QueuedPostEditor
-                      key={`${d.id}:${edit.version}`}
-                      draftId={d.id}
-                      account={d.account}
-                      edit={edit}
-                      delivery={delivery}
-                      times={cadence(d.account)}
-                      timeZone={data.timezone}
-                      now={now}
-                      busy={busy}
-                      setBusy={setBusy}
-                      onError={(message) => setNotice(message)}
-                      onSaved={(message) => {
-                        setNotice(message);
-                        setRevision((v) => v + 1);
-                      }}
-                    />
+                    <>
+                      <QueuedPostEditor
+                        key={`${d.id}:${edit.version}`}
+                        draftId={d.id}
+                        account={d.account}
+                        edit={edit}
+                        delivery={delivery}
+                        times={cadence(d.account)}
+                        timeZone={data.timezone}
+                        now={now}
+                        busy={busy}
+                        setBusy={setBusy}
+                        onError={(message) => setNotice(message)}
+                        onSaved={(message) => {
+                          setNotice(message);
+                          setRevision((v) => v + 1);
+                        }}
+                      />
+                      <DecisionControls
+                        draftId={d.id}
+                        label={`${d.account} Instagram post: ${firstLine(d.text, 48)}`}
+                        busy={busy}
+                        setBusy={setBusy}
+                        favorited={favorites.has(d.id)}
+                        goodOnly
+                        onRecorded={recorded}
+                      />
+                    </>
                   ) : submitted(d.id) ? (
-                    <p className="studio-note">
-                      {edit?.status === 'scheduled'
-                        ? 'Queued in PostyBirb. See Scheduled & delivered.'
-                        : 'Check PostyBirb to reconcile this submission before retrying.'}
-                    </p>
+                    <>
+                      <p className="studio-note">
+                        {edit?.status === 'scheduled'
+                          ? 'Queued in PostyBirb. See Scheduled & delivered.'
+                          : 'Check PostyBirb to reconcile this submission before retrying.'}
+                      </p>
+                      <DecisionControls
+                        draftId={d.id}
+                        label={`${d.account} Instagram post: ${firstLine(d.text, 48)}`}
+                        busy={busy}
+                        setBusy={setBusy}
+                        favorited={favorites.has(d.id)}
+                        goodOnly
+                        onRecorded={recorded}
+                      />
+                    </>
                   ) : (
                     <InstagramReview
                       draft={d}
@@ -506,6 +533,7 @@ export default function AdminPosts() {
                           busy={busy}
                           setBusy={setBusy}
                           checklist={checklist}
+                          favorited={favorites.has(d.id)}
                           onRecorded={recorded}
                         />
                       )}

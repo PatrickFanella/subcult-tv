@@ -18,6 +18,7 @@ from sources import changemaker_context
 import paths
 import media
 import bluesky
+import feedback
 
 HERE = Path(__file__).resolve().parent
 BEGIN = '<!-- social-posting-runner:begin -->'
@@ -260,6 +261,7 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
             context = source_context(cfg, directory)
             if mode == 'plan':
                 context['existing_weekly_note'] = original
+                context['owner_feedback'] = feedback.owner_feedback(Path(cfg['state']), ('x', 'bluesky'), 30)
                 has_slots = database.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='timely_slots'").fetchone()
                 context['prepared_slots'] = [{'account':account, 'due_at':due}
                     for account,due,expiry in database.execute('SELECT account,due_at,expires_at FROM timely_slots')
@@ -297,7 +299,7 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
             originals = [draft.get('text') for draft in result['drafts']]
             if mode == 'plan' and result['drafts'] and cfg.get('polish', True):
                 import craft
-                craft.polish_short(cfg, result['drafts'], directory)
+                craft.polish_short(cfg, result['drafts'], directory, owner=context['owner_feedback'])
             try:
                 validate_result(result, cfg, week, bank, context.get('prepared_slots', []), now if mode == 'plan' else None)
             except ValueError:

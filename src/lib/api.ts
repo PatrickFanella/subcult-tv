@@ -697,7 +697,12 @@ export const approveReviewDraft = (id: string, version: number, checklist: Check
   );
 
 export type DecisionKind =
-  'approved_as_is' | 'approved_edited' | 'rejected' | 'revision_requested' | 'snoozed';
+  | 'approved_as_is'
+  | 'approved_edited'
+  | 'rejected'
+  | 'revision_requested'
+  | 'snoozed'
+  | 'favorited';
 export interface DraftDecision {
   id: number;
   draft_id: string;
@@ -722,7 +727,7 @@ export const getDraftDecisions = (since: string) =>
 export const recordDraftDecision = (
   id: string,
   input: {
-    decision: 'rejected' | 'revision_requested' | 'snoozed';
+    decision: 'rejected' | 'revision_requested' | 'snoozed' | 'favorited';
     reasons?: string[];
     note?: string;
     checklist?: ChecklistState[];

@@ -334,6 +334,11 @@
   border-color: #8b5cf6;
   color: #f0ece4;
 }
+.decision-buttons .decision-good:disabled {
+  border-color: #8b5cf6;
+  color: #c4b5fd;
+  cursor: default;
+}
 .decision-form {
   display: grid;
   gap: 0.6rem;

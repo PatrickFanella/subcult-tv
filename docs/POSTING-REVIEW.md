@@ -18,9 +18,13 @@ A missed proposed time does not prove that a tweet was never published. Recovery
 
 `studio/automation/social-posting/changemaker_publications.py` reads verified Changemaker output and prepares one website edition and one Patreon edition. It checks complete evidence, accepts only merged pull-request sources, records their identities and hashes, and proposes a time 48 hours ahead. The model cannot run tools or publish. A source digest is prepared once, and imports preserve owner edits.
 
-The service key can call only `POST /api/v1/posting-preparation`; it cannot approve a post. Configure `POSTING_PREPARATION_KEY` in the API environment and in the private producer environment, with `POSTING_INGEST_URL=https://subcult.tv/api/v1/posting-preparation`. Keep this credential and generated content outside Git and frontend build contexts.
+The service key can call only `POST /api/v1/posting-preparation`, the re-roll claim and finish routes, and `GET /api/v1/posting-preparation/feedback`; it cannot approve a post. Configure `POSTING_PREPARATION_KEY` in the API environment and in the private producer environment, with `POSTING_INGEST_URL=https://subcult.tv/api/v1/posting-preparation`. Keep this credential and generated content outside Git and frontend build contexts.
 
 The user service and timer sources are in `studio/automation/postiz-dashboard/changemaker-publications.*`. The unit uses a separately staged producer source and the existing Studio configuration/state, leaving other Studio consumers on their current source until the repository cutover is verified. Install the shared Python helpers as well as the producer, prompt, schema and voice source. The daily timer runs at 09:25 UTC after Changemaker and Instagram preparation. A timer success proves draft preparation/import only.
+
+## Review feedback
+
+Every draft card has Reject, Request revision, Snooze and Good post. Good post takes an optional note on what works and leaves the draft in the queue; it is also available on submitted Instagram drafts. Decisions are appended to `draft_decisions`. `GET /api/v1/posting-preparation/feedback?since=` returns them to the preparation key without snoozes or user IDs, together with re-roll notes. On Kvant, `feedback.py` writes them to `owner-feedback.json` hourly for the drafting jobs, and `tune.py` turns them into a weekly prompt-change pull request for review. See `studio/automation/social-posting/README.md`.
 
 ## Patreon adapter
 

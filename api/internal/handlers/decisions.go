@@ -145,8 +145,9 @@ func insertDecision(ctx context.Context, tx pgx.Tx, d decisionRecord) error {
 	return err
 }
 
-// RecordDraftDecision stores a rejection, revision request or snooze. It never
-// changes a provider schedule; submitted drafts are managed in PostyBirb.
+// RecordDraftDecision stores a rejection, revision request, snooze or a mark
+// that the draft is particularly good. It never changes a provider schedule;
+// submitted drafts are managed in PostyBirb, though they can still be marked good.
 func (h *Handler) RecordDraftDecision(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Cache-Control", "private, no-store")
 	if r.Context().Value(middleware.RoleKey) != "admin" {
@@ -195,8 +196,10 @@ func (h *Handler) RecordDraftDecision(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		input.Reasons = nil
+	case "favorited":
+		input.Reasons = nil
 	default:
-		writeError(w, 400, "Choose reject, request revision or snooze")
+		writeError(w, 400, "Choose reject, request revision, snooze or mark as good")
 		return
 	}
 	id, err := url.PathUnescape(chi.URLParam(r, "id"))
@@ -234,7 +237,7 @@ func (h *Handler) RecordDraftDecision(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 503, "Decision could not be recorded")
 		return
 	}
-	if submitted {
+	if submitted && input.Decision != "favorited" {
 		writeError(w, 409, "This draft has already been submitted. Manage it in PostyBirb")
 		return
 	}
@@ -251,47 +254,113 @@ func (h *Handler) RecordDraftDecision(w http.ResponseWriter, r *http.Request) {
 	writeJSON(w, 201, map[string]string{"draft_id": id, "decision": input.Decision})
 }
 
-// DraftDecisions returns review decisions since a time, for the review queue
-// and for a Kvant job that pulls them for learning. The website never pushes.
+// DraftDecisions returns review decisions since a time, for the review queue.
 func (h *Handler) DraftDecisions(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Cache-Control", "private, no-store")
 	if r.Context().Value(middleware.RoleKey) != "admin" {
 		writeError(w, 403, "Admin access required")
 		return
 	}
-	since := time.Now().AddDate(0, 0, -30)
-	if value := r.URL.Query().Get("since"); value != "" {
-		at, err := time.Parse(time.RFC3339, value)
-		if err != nil {
-			writeError(w, 400, "since must be an RFC 3339 time")
-			return
-		}
-		since = at
+	since, ok := decisionsSince(w, r)
+	if !ok {
+		return
 	}
 	if h.DB == nil {
 		writeError(w, 503, "Draft storage is unavailable")
 		return
 	}
-	rows, err := h.DB.Query(r.Context(), `SELECT id,draft_id,platform,account,decision,original_text,final_text,diff_stats,image_choice,original_due_at,final_due_at,reason_codes,note,checklist,snooze_until,decided_by,decided_at FROM draft_decisions WHERE decided_at>$1 ORDER BY decided_at,id LIMIT 500`, since)
+	result, err := h.queryDecisions(r.Context(), since, false)
 	if err != nil {
 		writeError(w, 503, "Review decisions are unavailable")
 		return
+	}
+	writeJSON(w, 200, result)
+}
+
+type feedbackReroll struct {
+	DraftID     string    `json:"draft_id"`
+	Mode        string    `json:"mode"`
+	Note        string    `json:"note"`
+	RequestedAt time.Time `json:"requested_at"`
+}
+
+// PreparationFeedback lets the Kvant preparation key read the owner's review
+// feedback (decisions other than snoozes, and re-roll notes) so drafting and
+// prompt tuning can learn from it. It is read-only and returns no user IDs.
+func (h *Handler) PreparationFeedback(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Cache-Control", "private, no-store")
+	if !secretAuthorized(r, h.PostingPreparationKey) {
+		writeError(w, 401, "Preparation authentication required")
+		return
+	}
+	since, ok := decisionsSince(w, r)
+	if !ok {
+		return
+	}
+	if h.DB == nil {
+		writeError(w, 503, "Draft storage is unavailable")
+		return
+	}
+	decisions, err := h.queryDecisions(r.Context(), since, true)
+	if err != nil {
+		writeError(w, 503, "Review feedback is unavailable")
+		return
+	}
+	for i := range decisions {
+		decisions[i].DecidedBy = ""
+	}
+	rows, err := h.DB.Query(r.Context(), `SELECT draft_id,mode,note,requested_at FROM draft_rerolls WHERE requested_at>$1 AND note<>'' ORDER BY requested_at,id LIMIT 500`, since)
+	if err != nil {
+		writeError(w, 503, "Review feedback is unavailable")
+		return
+	}
+	defer rows.Close()
+	rerolls := []feedbackReroll{}
+	for rows.Next() {
+		var f feedbackReroll
+		if rows.Scan(&f.DraftID, &f.Mode, &f.Note, &f.RequestedAt) != nil {
+			writeError(w, 503, "Review feedback is unavailable")
+			return
+		}
+		rerolls = append(rerolls, f)
+	}
+	if rows.Err() != nil {
+		writeError(w, 503, "Review feedback is unavailable")
+		return
+	}
+	writeJSON(w, 200, map[string]any{"decisions": decisions, "rerolls": rerolls})
+}
+
+// decisionsSince reads the optional since parameter; the default is 30 days ago.
+func decisionsSince(w http.ResponseWriter, r *http.Request) (time.Time, bool) {
+	value := r.URL.Query().Get("since")
+	if value == "" {
+		return time.Now().AddDate(0, 0, -30), true
+	}
+	at, err := time.Parse(time.RFC3339, value)
+	if err != nil {
+		writeError(w, 400, "since must be an RFC 3339 time")
+		return time.Time{}, false
+	}
+	return at, true
+}
+
+// queryDecisions returns up to 500 decisions after since, oldest first.
+func (h *Handler) queryDecisions(ctx context.Context, since time.Time, skipSnoozes bool) ([]draftDecision, error) {
+	rows, err := h.DB.Query(ctx, `SELECT id,draft_id,platform,account,decision,original_text,final_text,diff_stats,image_choice,original_due_at,final_due_at,reason_codes,note,checklist,snooze_until,decided_by,decided_at FROM draft_decisions WHERE decided_at>$1 AND NOT ($2 AND decision='snoozed') ORDER BY decided_at,id LIMIT 500`, since, skipSnoozes)
+	if err != nil {
+		return nil, err
 	}
 	defer rows.Close()
 	result := []draftDecision{}
 	for rows.Next() {
 		var d draftDecision
-		if rows.Scan(&d.ID, &d.DraftID, &d.Platform, &d.Account, &d.Decision, &d.OriginalText, &d.FinalText, &d.DiffStats, &d.ImageChoice, &d.OriginalDueAt, &d.FinalDueAt, &d.ReasonCodes, &d.Note, &d.Checklist, &d.SnoozeUntil, &d.DecidedBy, &d.DecidedAt) != nil {
-			writeError(w, 503, "Review decisions are unavailable")
-			return
+		if err := rows.Scan(&d.ID, &d.DraftID, &d.Platform, &d.Account, &d.Decision, &d.OriginalText, &d.FinalText, &d.DiffStats, &d.ImageChoice, &d.OriginalDueAt, &d.FinalDueAt, &d.ReasonCodes, &d.Note, &d.Checklist, &d.SnoozeUntil, &d.DecidedBy, &d.DecidedAt); err != nil {
+			return nil, err
 		}
 		result = append(result, d)
 	}
-	if rows.Err() != nil {
-		writeError(w, 503, "Review decisions are unavailable")
-		return
-	}
-	writeJSON(w, 200, result)
+	return result, rows.Err()
 }
 
 // statusRecorder observes the delegated approval's status without buffering it.

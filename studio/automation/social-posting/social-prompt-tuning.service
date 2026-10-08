@@ -1,0 +1,14 @@
+[Unit]
+Description=Propose drafting prompt changes from owner feedback as a Gitea pull request
+OnFailure=social-posting-failure.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/onnwee/Work/Subcult/subcult-tv/studio
+ExecStart=/usr/bin/python3 /home/onnwee/Work/Subcult/subcult-tv/studio/automation/social-posting/tune.py --state /home/onnwee/.local/state/social-posting --ingest-env /home/onnwee/.config/posting-dashboard/preparation.env
+TimeoutStartSec=90min
+KillMode=control-group
+UMask=0077
+Nice=10
+Environment=PATH=/home/onnwee/.local/bin:/usr/local/bin:/usr/bin:/bin
+UnsetEnvironment=OPENAI_API_KEY CODEX_API_KEY OPENAI_BASE_URL

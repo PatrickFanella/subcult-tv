@@ -25,6 +25,7 @@ These findings come from rebuilding the SUBCULT social drafting system on Octobe
   - "The leaderboard managed to cause trouble after leaving."
   - "Dialog open. Undertow's editor shortcuts sit this one out."
   - "A listener taps your Kork tip button, and it opens your own Cash App."
+- **Marketing, not documentation (October 8).** Drafts that led with caveats read like developer docs. One told readers Undertow needs a capable laptop. The owner asked for marketing posts: lead with what the reader gets, say the maturity limit once near the end, and leave device requirements and other fine print to the product page. Patrick writes most of his own posts; prepared Patrick drafts are at most three a week and personal.
 - **Recurring failures to reject:**
   - "A useful…" verdict openings.
   - Two-fragment headlines.
@@ -62,7 +63,7 @@ These findings come from rebuilding the SUBCULT social drafting system on Octobe
 - **Source IDs.** A caption's `source_ids` must be collected evidence IDs. Claims-register IDs (`C-…`) made the October 5 09:20 UTC run fall back to single-pass.
 - **Retries.** Retry a stage only on a nonzero exit or `turn.failed`. Model capacity errors do happen.
 - **Slots.** Posting slots are 11:30 and 17:30 Chicago, at least 48 hours ahead, with one draft per slot (`taken_slots`).
-- **Owner feedback.** It is read from `state/owner-feedback.json`. The review dashboard records reject, revise and snooze decisions, and nothing pulls them into that file automatically yet.
+- **Owner feedback.** `feedback.py` pulls review decisions (rejections, revision requests, edited approvals, re-roll notes and Good post marks) into `state/owner-feedback.json` hourly. The Instagram stages, the weekly and timely prompts and the short editor read it. `tune.py` proposes prompt changes from new feedback as a Saturday pull request; review its diff and compare it blind on saved fixtures before deploying.
 
 ## X media and link placement
 
