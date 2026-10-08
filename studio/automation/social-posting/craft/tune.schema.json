@@ -1,18 +1,46 @@
 {
   "type": "object",
   "additionalProperties": false,
-  "required": ["summary", "changes", "ignored"],
+  "required": [
+    "summary",
+    "changes",
+    "ignored",
+    "lessons"
+  ],
   "properties": {
-    "summary": {"type": "string"},
+    "summary": {
+      "type": "string"
+    },
     "changes": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["file", "why"],
-        "properties": {"file": {"type": "string"}, "why": {"type": "string"}}
+        "required": [
+          "file",
+          "why"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "why": {
+            "type": "string"
+          }
+        }
       }
     },
-    "ignored": {"type": "array", "items": {"type": "string"}}
+    "ignored": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
   }
 }

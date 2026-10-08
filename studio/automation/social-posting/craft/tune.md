@@ -20,7 +20,7 @@ Method:
 1. Group the feedback into patterns. A pattern needs at least two records, or one owner note that states a general rule ("stop opening with who it's for"). A single rejected post without a note is not a pattern.
 2. For each pattern, find the instruction that produced it, or the missing one, in the prompt for that platform. Prefer changing or removing a misleading instruction over adding a new one. Prompts already run long; keep each addition to one or two plain sentences and put it next to the rule it qualifies.
 3. Favorited posts and the owner's own edits are the strongest signal. When one shows a move worth repeating, describe the move in the prompt or add the post to `craft/examples.md` with a one-line note on why it works. Copy moves, never facts: an example must not teach a claim the claims register does not support.
-4. Record each lasting lesson in one bullet in `lessons.md`, dated with the newest feedback date you used.
+4. Return each lasting lesson in `lessons`, one plain sentence or two, at most five. Do not edit `lessons.md` yourself; the wrapper appends them there, dated.
 
 Hard limits. Never weaken a fact rule, the claims register's authority, maturity limits that must stay in copy, the ban on invented users, numbers, quotes or experiences, privacy rules, or the rule that drafts stay unapproved. Do not edit any file outside `allowed_files`, run network commands, commit, or create branches; the wrapper handles git. Write prose to the unslop standard already in the repository: plain words, no em dashes, no filler. If the feedback shows no clear pattern, change nothing and say so.
 
@@ -29,3 +29,4 @@ Return:
 - `summary`: two to four plain sentences for the pull request: what the owner's feedback showed and what you changed.
 - `changes`: one entry per edited file, with the file path and the feedback pattern behind the edit.
 - `ignored`: feedback you deliberately did not act on, and why (a one-off, conflicts with a fact rule, already covered).
+- `lessons`: lasting lessons from this feedback for `lessons.md`, or an empty list. A lesson states what the owner wants and the evidence for it, not what you edited.
