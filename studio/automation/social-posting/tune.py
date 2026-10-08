@@ -49,7 +49,9 @@ def select(records, cursor):
 
 
 def run(command, cwd=None, check=True):
-    return subprocess.run(command, cwd=cwd, check=check, text=True, capture_output=True, timeout=600)
+    # Prompts are plain text; skip downloading the repository's LFS media.
+    return subprocess.run(command, cwd=cwd, check=check, text=True, capture_output=True, timeout=600,
+                          env={**os.environ, 'GIT_LFS_SKIP_SMUDGE': '1'})
 
 
 def open_tuning_pr(cfg):
