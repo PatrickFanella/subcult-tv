@@ -32,7 +32,7 @@ const editTimeout = 2 * time.Minute
 // A time-only change moves the existing submission. A caption, account or
 // image change first creates and validates a replacement, then withdraws the
 // queued submission, confirms it can no longer post, and queues the
-// replacement. The new time must still be 24 hours to 90 days ahead, and
+// replacement. The new time must still be in the future and within 90 days, and
 // nothing changes within 30 minutes of the current time. The receipt is
 // claimed against the exact content that was read, so a concurrent edit or
 // approval gets a conflict, and any step whose outcome is unknown leaves the
@@ -66,8 +66,8 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	due = due.UTC().Truncate(time.Second)
-	if due.Before(time.Now().Add(24*time.Hour)) || due.After(time.Now().AddDate(0, 0, 90)) {
-		writeError(w, 400, "Schedule between 24 hours and 90 days ahead")
+	if !due.After(time.Now()) || due.After(time.Now().AddDate(0, 0, 90)) {
+		writeError(w, 400, "Choose a future publish time within 90 days")
 		return
 	}
 	var upload []byte

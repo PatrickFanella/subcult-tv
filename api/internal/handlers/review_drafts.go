@@ -117,8 +117,8 @@ func (h *Handler) SaveReviewDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 400, "Choose an account, caption and publish time")
 		return
 	}
-	if due.Before(time.Now().Add(24*time.Hour)) || due.After(time.Now().AddDate(0, 0, 90)) {
-		writeError(w, 400, "Schedule between 24 hours and 90 days ahead")
+	if !due.After(time.Now()) || due.After(time.Now().AddDate(0, 0, 90)) {
+		writeError(w, 400, "Choose a future publish time within 90 days")
 		return
 	}
 	tx, err := h.DB.Begin(r.Context())

@@ -10,6 +10,7 @@ import {
   getPublications,
   getReviewDrafts,
   getSocialDelivery,
+  getBufferDelivery,
   type PostingDraft,
   getDraftDecisions,
 } from '@/lib/api';
@@ -19,6 +20,7 @@ vi.mock('@/lib/api', () => ({
   getPostingDashboard: vi.fn(),
   getReviewDrafts: vi.fn(),
   getSocialDelivery: vi.fn(),
+  getBufferDelivery: vi.fn(),
   getPublications: vi.fn(),
   getDashboardStats: vi.fn(),
   saveReviewDraft: vi.fn(),
@@ -60,6 +62,7 @@ const snapshot = (drafts: PostingDraft[]) => ({
 
 afterEach(cleanup);
 beforeEach(() => {
+  vi.mocked(getBufferDelivery).mockResolvedValue({ configured: false, channels: [], receipts: [] });
   vi.resetAllMocks();
   vi.mocked(getDraftDecisions).mockResolvedValue([]);
 });

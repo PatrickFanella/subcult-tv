@@ -63,7 +63,6 @@ export function firstLine(text: string, limit = 90) {
 
 const HOUR = 3600000;
 const DAY = 24 * HOUR;
-export const MIN_LEAD_MS = DAY;
 export const MAX_LEAD_MS = 90 * DAY;
 
 function zoneParts(at: number, timeZone: string) {
@@ -112,7 +111,7 @@ export interface Slot {
 
 /**
  * The account's cadence times ("09:11") over the next `days`, in the
- * configured time zone, limited to the 24-hour to 90-day approval window.
+ * configured time zone, limited to the future 90-day approval window.
  */
 export function cadenceSlots(
   times: string[],
@@ -136,7 +135,7 @@ export function cadenceSlots(
         Number(match[2]),
         timeZone,
       );
-      if (at < now + MIN_LEAD_MS || at > now + MAX_LEAD_MS) continue;
+      if (at <= now || at > now + MAX_LEAD_MS) continue;
       slots.push({ at, taken: taken.some((t) => Math.abs(t - at) < HOUR) });
     }
   }
@@ -151,7 +150,7 @@ export function defaultSlot(slots: Slot[], proposed: number) {
 
 export function leadProblem(at: number, now: number) {
   if (Number.isNaN(at)) return 'Choose a publish time.';
-  if (at < now + MIN_LEAD_MS) return 'Choose a time at least 24 hours from now.';
+  if (at <= now) return 'Choose a publish time in the future.';
   if (at > now + MAX_LEAD_MS) return 'Choose a time within 90 days.';
   return '';
 }

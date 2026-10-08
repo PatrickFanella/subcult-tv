@@ -2,9 +2,17 @@
 
 The admin Posts area separates Instagram review, delivery evidence, website entries, Patreon editions and preparation jobs. All new drafts require manual approval. Saving an edit does not approve or dispatch it. Approval submits the saved version; stale edits and approvals return a conflict.
 
-Instagram drafts need an enabled configured PostyBirb account, a JPEG preview and a publication time between 24 hours and 90 days ahead. Account UUIDs are configured through `POSTYBIRB_INSTAGRAM_ACCOUNT_IDS`. Images saved during editing stay behind admin authentication. Approval uploads the selected JPEG privately to PostyBirb before enabling its scheduler. A pending or uncertain submission cannot be sent again with the same approval.
+Instagram drafts need an enabled configured PostyBirb account, a JPEG preview and a future publication time within 90 days. Draft preparation should happen at least 24 hours in advance; approval may schedule for later the same day. Account UUIDs are configured through `POSTYBIRB_INSTAGRAM_ACCOUNT_IDS`. Images saved during editing stay behind admin authentication. Approval uploads the selected JPEG privately to PostyBirb before enabling its scheduler. A pending or uncertain submission cannot be sent again with the same approval.
 
 Website entries use `/development` and `/development/:slug`. Daily imports create unpublished articles. Approval records the owner and time; public API queries expose the entry only when that approved time arrives. Unapproved articles cannot be fetched through the public list or slug routes. Private source evidence is available only in the admin review response. The authenticated general article list is `/api/v1/admin/posts`.
+
+## X through Buffer
+
+The X tab supports text editing, account selection, exact future scheduling and editing an existing schedule. Configure `BUFFER_API_KEY`, `BUFFER_ORGANIZATION_ID` and an explicit comma-separated `BUFFER_X_CHANNEL_IDS` allowlist in the private API environment. The API uses [Buffer's GraphQL API](https://developers.buffer.com/guides/posts-and-scheduling.html); the preparation runner's read-only MCP connection remains separate. Credentials never enter the frontend build. Without this configuration, the copy-to-Buffer action remains available and approval is disabled.
+
+The owner approves the exact text, channel and publication time. Before writing, the API checks channel readiness and recent scheduled/published posts for duplicate text. Migration `013_buffer_schedules` stores an approval claim before the provider request and a receipt after Buffer confirms the same text, channel and time. Repeating a confirmed approval returns its receipt. A lost response leaves an uncertain claim and requires reconciliation in Buffer; refreshing never retries it. Schedule edits use the saved receipt version and the same provider post ID, and require that the live post is still editable and scheduled.
+
+A missed proposed time does not prove that a tweet was never published. Recovery must compare the prepared draft with Buffer's scheduled and published history first. Evergreen weekly drafts may be reviewed and moved to a future time. Expired timely radar drafts require regeneration from current sources. Keep future occupied slots and account cadence limits when recovering several drafts. A scheduling receipt confirms acceptance by Buffer, not publication on X.
 
 ## Daily preparation
 
@@ -32,6 +40,6 @@ Patreon login and native scheduling are separate qualification gates. Until both
 
 ## Verification and recovery
 
-Run frontend tests, type checking, lint and build; the Go suite; and `make check-studio check-studio-automation`. The handler integration tests require `TEST_SOCIAL_DATABASE_URL` pointed at a disposable database. They verify exact saved-version approval, private previews, idempotency, 24-hour enforcement, blocked Patreon delivery and public website visibility at the approved time.
+Run frontend tests, type checking, lint and build; the Go suite; and `make check-studio check-studio-automation`. The handler integration tests require `TEST_SOCIAL_DATABASE_URL` pointed at a disposable database. They verify exact saved-version approval, private previews, duplicate prevention, same-day social scheduling, expired radar rejection, blocked Patreon delivery and public website visibility at the approved time.
 
 Deployment must retain the previous images, private environment, source archive, database dump and compose command. The new tables are additive. Roll back application images/configuration without deleting approval or draft history. Never restore a database dump over subsequent owner edits merely to undo the interface.

@@ -147,8 +147,8 @@ func (c *Client) submission(ctx context.Context, id string) (socialSubmission, e
 // QueueInstagram verifies the exact caption and sole target before setting a
 // future SINGLE schedule, then confirms the account-specific schedule readback.
 func (c *Client) QueueInstagram(ctx context.Context, id, account, caption string, due time.Time) error {
-	if due.Before(time.Now().Add(24*time.Hour)) || due.After(time.Now().AddDate(0, 0, 90)) {
-		return errors.New("schedule must be 24 hours to 90 days ahead")
+	if !due.After(time.Now()) || due.After(time.Now().AddDate(0, 0, 90)) {
+		return errors.New("schedule must be in the future and within 90 days")
 	}
 	if err := c.ValidateInstagram(ctx, id, account, caption); err != nil {
 		return err
@@ -287,7 +287,7 @@ func (c *Client) queued(ctx context.Context, id, account, caption string) error 
 // RescheduleInstagram moves a queued submission to a new time without
 // touching its caption or image, then confirms the readback.
 func (c *Client) RescheduleInstagram(ctx context.Context, id, account, caption string, due time.Time) error {
-	if due.Before(time.Now().Add(24*time.Hour)) || due.After(time.Now().AddDate(0, 0, 90)) {
+	if !due.After(time.Now()) || due.After(time.Now().AddDate(0, 0, 90)) {
 		return ErrNotQueued
 	}
 	if err := c.queued(ctx, id, account, caption); err != nil {

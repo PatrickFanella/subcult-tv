@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { leadProblem } from '@/lib/review-queue';
 import {
   approveSocialSchedule,
   getSocialDelivery,
@@ -68,7 +69,8 @@ export default function SocialDelivery({
     setRequestID(crypto.randomUUID());
     setReceipt('');
   };
-  const validTime = new Date(due).valueOf() >= now + 24 * 60 * 60 * 1000;
+  const timeProblem = leadProblem(new Date(due).valueOf(), now);
+  const validTime = !timeProblem;
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (!media || !approved || !validTime || busy || uncertain) return;
@@ -108,8 +110,8 @@ export default function SocialDelivery({
         <h2 id="delivery-heading">Scheduling & delivery</h2>
       </div>
       <p>
-        Every post requires your approval. Schedule at least 24 hours ahead. Displayed times use
-        your browser’s timezone: {Intl.DateTimeFormat().resolvedOptions().timeZone}.
+        Every post requires your approval. Choose any future publish time within 90 days. Displayed
+        times use your browser’s timezone: {Intl.DateTimeFormat().resolvedOptions().timeZone}.
       </p>
       {error && <p role="alert">{error}</p>}
       <button type="button" onClick={() => setReload((n) => n + 1)} disabled={busy}>
@@ -210,7 +212,7 @@ export default function SocialDelivery({
                   required
                 />
               </label>
-              {due && !validTime && <p role="alert">Choose a time at least 24 hours from now.</p>}
+              {due && !validTime && <p role="alert">{timeProblem}</p>}
               <label className="social-approval">
                 <input
                   type="checkbox"

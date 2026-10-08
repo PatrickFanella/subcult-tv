@@ -33,6 +33,8 @@ type MailSettings struct {
 
 // Handler bundles dependencies for all HTTP handlers.
 type Handler struct {
+	BufferPosting             BufferProvider
+	BufferChannels            []string
 	PostingPreparationKey     string
 	PatreonPosting            *postybirb.Client
 	PatreonSchedulingVerified bool

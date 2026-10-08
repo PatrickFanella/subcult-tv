@@ -114,8 +114,8 @@ export default function InstagramReview({
   const prepared = draft.media.image;
   const candidates = draft.media.candidates ?? [];
   const [caption, setCaption] = useState(edit?.caption || draft.text);
-  const [accountChoice, setAccountChoice] = useState(edit?.account_id || '');
-  const accountId = accountChoice || matchAccount(draft.account, accounts);
+  const [accountChoice, setAccountChoice] = useState<string | null>(edit?.account_id || null);
+  const accountId = accountChoice ?? matchAccount(draft.account, accounts);
   const taken = useMemo(
     () =>
       (delivery?.posts ?? [])
@@ -160,6 +160,16 @@ export default function InstagramReview({
   const items = checklistItems(draft);
   const [checked, setChecked] = useState<boolean[]>(() => items.map(() => false));
   const target = accounts.find((a) => a.id === accountId);
+  const accountProblem = !delivery
+    ? 'PostyBirb accounts are unavailable.'
+    : target?.disabled
+      ? 'This Instagram account is disconnected. Reconnect it in PostyBirb, then refresh this page.'
+      : accounts.length > 0 && accounts.every((a) => a.disabled)
+        ? 'All Instagram accounts are disconnected. Reconnect an account in PostyBirb, then refresh this page.'
+        : !target
+          ? 'Choose an Instagram account.'
+          : '';
+  const timeProblem = leadProblem(due, now);
   const length = [...caption].length;
   const expiry = draftExpiry(draft);
   const expiryAt = new Date(expiry).valueOf();
@@ -173,18 +183,16 @@ export default function InstagramReview({
       ? 'Refresh the preparation source before approving.'
       : expiry && expiryAt <= now
         ? 'This draft has expired.'
-        : !delivery
-          ? 'PostyBirb accounts are unavailable.'
-          : !target || target.disabled
-            ? 'Choose an Instagram account.'
-            : !caption.trim() || length > INSTAGRAM_LIMIT
-              ? 'Write a caption up to 2,200 characters.'
-              : leadProblem(due, now) ||
-                (!imageReady
-                  ? 'Choose an image.'
-                  : checked.some((c) => !c)
-                    ? 'Tick every check before approving.'
-                    : '');
+        : accountProblem
+          ? accountProblem
+          : !caption.trim() || length > INSTAGRAM_LIMIT
+            ? 'Write a caption up to 2,200 characters.'
+            : timeProblem ||
+              (!imageReady
+                ? 'Choose an image.'
+                : checked.some((c) => !c)
+                  ? 'Tick every check before approving.'
+                  : '');
   const accountLabel = target?.profile || target?.name || draft.account;
   const altText = draft.media.alt_text;
   const previewImage =
@@ -366,10 +374,20 @@ export default function InstagramReview({
             {accounts.map((a) => (
               <option key={a.id} value={a.id} disabled={a.disabled}>
                 {a.profile || a.name}
+                {a.disabled ? ' · Disconnected' : ''}
               </option>
             ))}
           </select>
         </label>
+        {accounts.some((a) => a.disabled) && (
+          <p className="studio-note">
+            Disconnected accounts cannot be scheduled.{' '}
+            <a href="https://postybirb.subcult.tv" target="_blank" rel="noreferrer">
+              Reconnect in PostyBirb
+            </a>
+            , then refresh this page.
+          </p>
+        )}
         <label>
           Publish time
           <select
@@ -433,6 +451,7 @@ export default function InstagramReview({
           {draft.next_check && <p>{draft.next_check}</p>}
         </details>
         {problem && <p className="studio-note">{problem}</p>}
+        {timeProblem && problem !== timeProblem && <p className="studio-note">{timeProblem}</p>}
         <div className="posting-card-buttons">
           <button
             type="button"

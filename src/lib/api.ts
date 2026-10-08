@@ -792,3 +792,55 @@ export const approveProject = (project: APIProject) =>
   });
 export const unpublishProject = (id: string) =>
   apiFetch<void>(`/api/v1/admin/projects/${id}/publication`, { method: 'DELETE' });
+
+export interface BufferChannel {
+  id: string;
+  name: string;
+  service: string;
+  isDisconnected: boolean;
+  isLocked: boolean;
+  isQueuePaused: boolean;
+}
+export interface BufferReceipt {
+  draft_id: string;
+  version: number;
+  channel_id: string;
+  caption: string;
+  due_at: string;
+  status: 'submitting' | 'scheduled' | 'uncertain';
+  post_id: string;
+}
+export interface BufferDelivery {
+  configured: boolean;
+  channels: BufferChannel[];
+  receipts: BufferReceipt[];
+}
+export const getBufferDelivery = () => apiFetch<BufferDelivery>('/api/v1/admin/studio/buffer');
+export const approveBufferDraft = (
+  id: string,
+  input: {
+    channel_id: string;
+    caption: string;
+    original_text: string;
+    due_at: string;
+    approved: boolean;
+  },
+) =>
+  apiFetch<BufferReceipt>(`/api/v1/admin/studio/buffer/${encodeURIComponent(id)}/approve`, {
+    method: 'POST',
+    body: JSON.stringify(input),
+  });
+export const editBufferDraft = (
+  id: string,
+  input: {
+    channel_id: string;
+    caption: string;
+    due_at: string;
+    approved: boolean;
+    version: number;
+  },
+) =>
+  apiFetch<BufferReceipt>(`/api/v1/admin/studio/buffer/${encodeURIComponent(id)}/schedule`, {
+    method: 'PUT',
+    body: JSON.stringify(input),
+  });

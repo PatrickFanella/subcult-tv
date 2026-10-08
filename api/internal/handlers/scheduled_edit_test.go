@@ -219,7 +219,7 @@ func TestEditScheduledDraftIntegration(t *testing.T) {
 	}
 
 	// A time-only change moves the same submission.
-	moved := time.Now().Add(96 * time.Hour).UTC().Truncate(time.Second)
+	moved := time.Now().Add(2 * time.Hour).UTC().Truncate(time.Second)
 	if w := edit(5, "Queued caption", moved, nil); w.Code != 409 {
 		t.Fatal("stale version edited", w.Code)
 	}

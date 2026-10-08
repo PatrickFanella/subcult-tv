@@ -4,15 +4,19 @@ import { draftPlatform, laneLabel, X_LIMIT, xLength } from '@/lib/review-queue';
 
 const BLUESKY_LIMIT = 300;
 
-/** Read-only X/Bluesky draft: these are posted by hand through Buffer. */
+/** Text preview shared by X scheduling and manual Bluesky review. */
 export default function TextPostCard({
   draft,
   expired,
   children,
+  scheduling = false,
+  scheduled = false,
 }: {
   draft: PostingDraft;
   expired: boolean;
   children?: ReactNode;
+  scheduling?: boolean;
+  scheduled?: boolean;
 }) {
   const platform = draftPlatform(draft);
   const limit = platform === 'bluesky' ? BLUESKY_LIMIT : X_LIMIT;
@@ -34,7 +38,7 @@ export default function TextPostCard({
         <span className="production-badge">
           {draft.account} / {service} · {laneLabel(draft.mode)}
         </span>
-        <span>{expired ? 'Expired' : 'Post via Buffer'}</span>
+        <span>{scheduled ? 'Approved · Scheduled' : expired ? 'Expired' : 'Post via Buffer'}</span>
       </div>
       <div className="x-preview" aria-label={`${service} preview for ${draft.account}`}>
         <div className="x-preview-header">
@@ -57,7 +61,12 @@ export default function TextPostCard({
         </div>
       </div>
       <p className="studio-note">
-        Proposed: {new Date(draft.due_at).toLocaleString()} · Copy into Buffer to schedule.
+        {scheduled ? 'Scheduled' : 'Proposed'}: {new Date(draft.due_at).toLocaleString()} ·{' '}
+        {scheduled
+          ? 'Edit the schedule below.'
+          : scheduling
+            ? 'Schedule below after approving.'
+            : 'Copy into Buffer to schedule.'}
       </p>
       {draft.craft?.angle && (
         <p>

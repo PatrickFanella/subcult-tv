@@ -95,7 +95,7 @@ func (h *Handler) SocialDelivery(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 503, "Delivery receipts are unavailable")
 		return
 	}
-	writeJSON(w, 200, map[string]any{"accounts": selected, "posts": selectedPosts, "checked_at": time.Now().UTC().Format(time.RFC3339), "approval_mode": "manual", "minimum_lead_hours": 24})
+	writeJSON(w, 200, map[string]any{"accounts": selected, "posts": selectedPosts, "checked_at": time.Now().UTC().Format(time.RFC3339), "approval_mode": "manual", "minimum_lead_hours": 0})
 }
 
 // instagramJPEGProblem returns why an image cannot be posted, or "".
@@ -174,8 +174,8 @@ func (h *Handler) ApproveSchedule(w http.ResponseWriter, r *http.Request) {
 		writeJSON(w, 200, map[string]string{"status": status, "post_id": providerID})
 		return
 	}
-	if due.Before(time.Now().Add(24*time.Hour)) || due.After(time.Now().AddDate(0, 0, 90)) {
-		writeError(w, 400, "Schedule between 24 hours and 90 days ahead")
+	if !due.After(time.Now()) || due.After(time.Now().AddDate(0, 0, 90)) {
+		writeError(w, 400, "Choose a future publish time within 90 days")
 		return
 	}
 	accounts, err := h.SocialPosting.Accounts(r.Context())
