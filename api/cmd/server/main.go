@@ -21,6 +21,7 @@ import (
 	"github.com/subculture-collective/subcult-tv/api/internal/handlers"
 	"github.com/subculture-collective/subcult-tv/api/internal/patreon"
 
+	"github.com/subculture-collective/subcult-tv/api/internal/buffer"
 	"github.com/subculture-collective/subcult-tv/api/internal/postybirb"
 	"github.com/subculture-collective/subcult-tv/api/internal/router"
 	"strings"
@@ -97,6 +98,10 @@ func main() {
 	h.SocialAccounts = strings.FieldsFunc(os.Getenv("POSTYBIRB_INSTAGRAM_ACCOUNT_IDS"), func(r rune) bool { return r == ',' || r == ' ' })
 	h.PostingMediaBaseURL = os.Getenv("POSTING_MEDIA_BASE_URL")
 	h.PostingPreparationKey = os.Getenv("POSTING_PREPARATION_KEY")
+	if client := buffer.New(os.Getenv("BUFFER_API_KEY"), os.Getenv("BUFFER_ORGANIZATION_ID")); client != nil {
+		h.BufferPosting = client
+	}
+	h.BufferChannels = strings.FieldsFunc(os.Getenv("BUFFER_X_CHANNEL_IDS"), func(r rune) bool { return r == ',' || r == ' ' })
 	h.PatreonPosting = postybirb.New(os.Getenv("POSTYBIRB_API_URL"), os.Getenv("POSTYBIRB_REMOTE_PASSWORD"), os.Getenv("POSTYBIRB_PATREON_ACCOUNT_ID"), os.Getenv("POSTYBIRB_CERT_SHA256"))
 	h.PatreonSchedulingVerified = os.Getenv("POSTYBIRB_SCHEDULING_VERIFIED") == "true"
 	if h.StudioRoot != "" {

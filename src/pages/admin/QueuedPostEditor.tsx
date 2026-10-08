@@ -5,7 +5,6 @@ import {
   INSTAGRAM_FOLD,
   INSTAGRAM_LIMIT,
   leadProblem,
-  MIN_LEAD_MS,
   slotLabel,
 } from '@/lib/review-queue';
 import PostPreview from './PostPreview';
@@ -83,13 +82,10 @@ export default function QueuedPostEditor({
   const textChanged = caption.trim() !== edit.caption.trim();
   const timeChanged = Math.floor(due / 1000) !== Math.floor(savedDue / 1000);
   const changed = textChanged || timeChanged || Boolean(file);
-  // Every edit re-queues for a time at least 24 hours away, as approval does.
   const problem =
     !caption.trim() || length > INSTAGRAM_LIMIT
       ? 'Write a caption up to 2,200 characters.'
-      : !timeChanged && savedDue < now + MIN_LEAD_MS
-        ? 'This post publishes within 24 hours. To change it, also choose a time at least 24 hours away, or edit it in PostyBirb.'
-        : leadProblem(due, now);
+      : leadProblem(due, now);
   const replaces = textChanged || Boolean(file);
 
   async function save() {
@@ -124,7 +120,7 @@ export default function QueuedPostEditor({
           image={upload || undefined}
           draftID={upload ? undefined : draftId}
           version={edit.version}
-          hasMedia
+          hasMedia={edit.has_media}
           showFold
         />
         <label className="review-upload">
@@ -160,7 +156,7 @@ export default function QueuedPostEditor({
       </div>
       <div className="review-sheet-controls">
         <p className="studio-note">
-          Queued in PostyBirb · publishes {slotLabel(savedDue, now, timeZone)}.
+          Approved · Scheduled in PostyBirb · publishes {slotLabel(savedDue, now, timeZone)}.
         </p>
         <label>
           Caption
@@ -213,7 +209,7 @@ export default function QueuedPostEditor({
           {replaces
             ? 'Saving withdraws the queued post from PostyBirb and queues the edited version in its place.'
             : 'A new time moves the queued post; the caption and image stay as approved.'}{' '}
-          The publish time must stay at least 24 hours away.
+          Choose a future publish time within 90 days.
         </p>
         {changed && problem && <p className="studio-note">{problem}</p>}
         <div className="posting-card-buttons">

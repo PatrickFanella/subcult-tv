@@ -41,7 +41,7 @@ The reference browser shows 24 records per page with previous/next controls and 
 
 ## Posting and source authority
 
-The operations view keeps the prepared queue separate from live PostyBirb scheduling and delivery. Prepared copy remains unapproved. Review for Instagram copies a draft into the composer; the owner selects an account, JPEG, caption and time, then approves that exact post. Scheduling requires an admin session and at least 24 hours of lead time, with a maximum of 90 days. Site article CRUD remains separate.
+The operations view keeps the prepared queue separate from live PostyBirb scheduling and delivery. Prepared copy remains unapproved. Review for Instagram copies a draft into the composer; the owner selects an account, JPEG, caption and time, then approves that exact post. Scheduling requires an admin session and a future publication time within 90 days. Draft preparation should happen at least 24 hours in advance; approval can schedule for later the same day. Site article CRUD remains separate.
 
 Configure these server-only variables to enable the connection:
 

@@ -58,14 +58,15 @@ func TestSocialApprovalIntegration(t *testing.T) {
 		h.ApproveSchedule(response, req)
 		return response
 	}
-	due := time.Now().Add(25 * time.Hour)
+	due := time.Now().Add(2 * time.Hour)
 	for _, test := range []struct {
 		label, account, role string
 		due                  time.Time
 		approved             bool
 		code                 int
 	}{
-		{"short-lead", "patrick", "admin", time.Now().Add(time.Hour), true, 400},
+		{"past", "patrick", "admin", time.Now().Add(-time.Hour), true, 400},
+		{"too-far", "patrick", "admin", time.Now().AddDate(0, 0, 91), true, 400},
 		{"unapproved", "patrick", "admin", due, false, 400},
 		{"other-account", "clpr", "admin", due, true, 400},
 		{"not-admin", "patrick", "reader", due, true, 403},

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Bookmark, Heart, MessageCircle, MoreHorizontal, Send } from 'lucide-react';
-import { getReviewDraftMedia } from '@/lib/api';
+import { useSavedImage } from './useSavedImage';
 import { FEED_MIN_RATIO, INSTAGRAM_FOLD, feedRatio } from '@/lib/review-queue';
 
 export default function PostPreview({
@@ -25,32 +25,12 @@ export default function PostPreview({
   showFold?: boolean;
   onMediaReady?: (ready: boolean) => void;
 }) {
-  const [savedImage, setSavedImage] = useState({ url: '', identity: '' });
-  const identity = `${draftID}:${version}:${image}`;
+  const savedImage = useSavedImage(!image && hasMedia ? draftID : undefined, version);
   const [error, setError] = useState('');
   const [ratio, setRatio] = useState(FEED_MIN_RATIO);
-  useEffect(() => {
-    const controller = new AbortController();
-    let url = '';
-    if (draftID && hasMedia && !image) {
-      getReviewDraftMedia(draftID, version!, controller.signal)
-        .then((blob) => {
-          if (!controller.signal.aborted) {
-            url = URL.createObjectURL(blob);
-            setSavedImage({ url, identity });
-          }
-        })
-        .catch(() => {
-          if (!controller.signal.aborted)
-            setError('Image preview unavailable. Refresh before approving.');
-        });
-    }
-    return () => {
-      controller.abort();
-      if (url) URL.revokeObjectURL(url);
-    };
-  }, [draftID, version, hasMedia, image, identity]);
-  const source = image || (savedImage.identity === identity ? savedImage.url : '');
+  const source = image || savedImage.url;
+  const imageError =
+    error || (savedImage.error ? 'Image preview unavailable. Refresh to retry.' : '');
   return (
     <div className="instagram-preview" aria-label={`Instagram preview for ${account}`}>
       <div className="instagram-preview-header">
@@ -82,7 +62,7 @@ export default function PostPreview({
           />
         ) : (
           <div className="instagram-preview-placeholder">
-            <span>{error || (hasMedia ? 'Loading selected image…' : 'Image needed')}</span>
+            <span>{imageError || (hasMedia ? 'Loading selected image…' : 'Image needed')}</span>
             {!hasMedia && <small>Choose or upload a JPEG.</small>}
           </div>
         )}

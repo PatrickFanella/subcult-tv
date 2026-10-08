@@ -6,6 +6,8 @@ import {
   getRerolls,
   getReviewDrafts,
   getSocialDelivery,
+  getBufferDelivery,
+  type BufferDelivery,
   type DraftDecision,
   type DraftReroll,
   type PostingDashboard,
@@ -24,20 +26,25 @@ import {
   platformLabel,
   relativeTime,
   rerollLabel,
+  slotLabel,
 } from '@/lib/review-queue';
 import PostingShell from './PostingShell';
 import TextPostCard from './TextPostCard';
+import XPostReview from './XPostReview';
 import InstagramReview from './InstagramReview';
 import DecisionControls from './DecisionControls';
 import QueuedPostEditor from './QueuedPostEditor';
 import RerollControls from './RerollControls';
 import { usePreparedImage } from './usePreparedImage';
+import { useSavedImage } from './useSavedImage';
 import '@/styles/review-queue.css';
 
 type Tab = 'instagram' | 'x' | 'bluesky';
 
-function RowThumbnail({ draft }: { draft: PostingDraft }) {
-  const { url } = usePreparedImage(draft.media.image?.sha256);
+function RowThumbnail({ draft, edit }: { draft: PostingDraft; edit?: ReviewDraft }) {
+  const saved = useSavedImage(edit?.has_media ? edit.draft_id : undefined, edit?.version);
+  const prepared = usePreparedImage(edit?.has_media ? undefined : draft.media.image?.sha256);
+  const url = edit?.has_media ? saved.url : prepared.url;
   if (url) return <img className="review-row-thumb" src={url} alt="" />;
   return (
     <span className="review-row-thumb review-row-thumb-empty" aria-hidden="true">
@@ -48,6 +55,7 @@ function RowThumbnail({ draft }: { draft: PostingDraft }) {
 
 function ReviewRow({
   draft,
+  edit,
   meta,
   when,
   state,
@@ -56,6 +64,7 @@ function ReviewRow({
   children,
 }: {
   draft: PostingDraft;
+  edit?: ReviewDraft;
   meta: string;
   when: string;
   state: string;
@@ -73,7 +82,7 @@ function ReviewRow({
         aria-controls={sheet}
         onClick={onToggle}
       >
-        <RowThumbnail draft={draft} />
+        <RowThumbnail draft={draft} edit={edit} />
         <span className="review-row-main">
           <span className="review-row-meta">{meta}</span>
           <span className="review-row-text">{firstLine(draft.text)}</span>
@@ -94,6 +103,8 @@ function ReviewRow({
 
 export default function AdminPosts() {
   const [data, setData] = useState<PostingDashboard | null>(null);
+  const [bufferDelivery, setBufferDelivery] = useState<BufferDelivery | null>(null);
+  const [bufferError, setBufferError] = useState('');
   const [saved, setSaved] = useState<ReviewDraft[]>([]);
   const [delivery, setDelivery] = useState<SocialDelivery | null>(null);
   const [decisions, setDecisions] = useState<DraftDecision[]>([]);
@@ -101,6 +112,8 @@ export default function AdminPosts() {
   const [showHidden, setShowHidden] = useState(false);
   const [error, setError] = useState('');
   const [deliveryError, setDeliveryError] = useState('');
+  const [accountRevision, setAccountRevision] = useState(0);
+  const [checkingAccounts, setCheckingAccounts] = useState(false);
   const [revision, setRevision] = useState(0);
   const [account, setAccount] = useState('all');
   const [lane, setLane] = useState('all');
@@ -167,23 +180,45 @@ export default function AdminPosts() {
       .catch(() => {
         if (active) setRerolls([]);
       });
-    getSocialDelivery()
-      .then((value) => {
-        if (active) {
-          setDelivery(value);
-          setDeliveryError('');
-        }
-      })
-      .catch((e) => {
-        if (active) {
-          setDelivery(null);
-          setDeliveryError(e.message);
-        }
-      });
     return () => {
       active = false;
     };
   }, [revision]);
+  useEffect(() => {
+    let active = true;
+    let pending = false;
+    async function refreshAccounts() {
+      if (pending || document.visibilityState === 'hidden') return;
+      pending = true;
+      setCheckingAccounts(true);
+      try {
+        const value = await getSocialDelivery();
+        if (active) {
+          setDelivery(value);
+          setDeliveryError('');
+        }
+      } catch (e) {
+        if (active) {
+          setDelivery(null);
+          setDeliveryError(e instanceof Error ? e.message : 'Instagram accounts are unavailable.');
+        }
+      } finally {
+        pending = false;
+        if (active) setCheckingAccounts(false);
+      }
+    }
+    void refreshAccounts();
+    const refresh = () => void refreshAccounts();
+    window.addEventListener('focus', refresh);
+    document.addEventListener('visibilitychange', refresh);
+    const timer = setInterval(refresh, 60000);
+    return () => {
+      active = false;
+      window.removeEventListener('focus', refresh);
+      document.removeEventListener('visibilitychange', refresh);
+      clearInterval(timer);
+    };
+  }, [revision, accountRevision]);
   // Re-rolls run on Kvant; poll while any is open so the replacement appears.
   const rerolling = rerolls.some((r) => r.status === 'pending' || r.status === 'running');
   useEffect(() => {
@@ -202,11 +237,32 @@ export default function AdminPosts() {
     setOpen(current === id ? '' : id);
     if (requestedPost) setParams(tab === 'instagram' ? {} : { tab }, { replace: true });
   };
+  useEffect(() => {
+    if (tab !== 'x') return;
+    let active = true;
+    getBufferDelivery()
+      .then((result) => {
+        if (active) {
+          setBufferDelivery(result);
+          setBufferError('');
+        }
+      })
+      .catch((error) => {
+        if (active) {
+          setBufferDelivery(null);
+          setBufferError(error.message);
+        }
+      });
+    return () => {
+      active = false;
+    };
+  }, [tab, revision]);
   const expired = (d: { expires_at: string; due_at: string }) => isExpired(d, now);
+  const bufferFor = (id: string) => bufferDelivery?.receipts.find((r) => r.draft_id === id);
   const editFor = (id: string) => saved.find((s) => s.draft_id === id);
   const submitted = (id: string) => {
     const edit = editFor(id);
-    return Boolean(edit && edit.status !== 'draft');
+    return Boolean((edit && edit.status !== 'draft') || bufferFor(id));
   };
   const latest = latestDecisions(decisions);
   const favorites = favoritedDrafts(decisions);
@@ -224,12 +280,13 @@ export default function AdminPosts() {
   for (const d of data?.drafts || [])
     if (!expired(d) && !submitted(d.id) && !hidden(d)) counts[draftPlatform(d)] += 1;
   const tabs: Tab[] = ['instagram', 'x', ...(counts.bluesky ? (['bluesky'] as Tab[]) : [])];
-  const dueOf = (d: PostingDraft) => new Date(editFor(d.id)?.due_at || d.due_at).valueOf();
+  const dueOf = (d: PostingDraft) =>
+    new Date(bufferFor(d.id)?.due_at || editFor(d.id)?.due_at || d.due_at).valueOf();
   const drafts = all
     .filter(
       (d) =>
         draftPlatform(d) === tab &&
-        (includeExpired || !expired(d)) &&
+        (includeExpired || submitted(d.id) || !expired(d)) &&
         (account === 'all' || d.account === account) &&
         (tab === 'instagram' || lane === 'all' || d.mode === lane) &&
         `${editFor(d.id)?.caption || d.text} ${d.next_check}`
@@ -259,7 +316,7 @@ export default function AdminPosts() {
     if (reroll && (reroll.status === 'pending' || reroll.status === 'running'))
       return 'Re-rolling…';
     if (edit && edit.status !== 'draft')
-      return edit.status === 'scheduled' ? 'Queued' : 'Check PostyBirb';
+      return edit.status === 'scheduled' ? 'Approved · Scheduled' : 'Check PostyBirb';
     if (expired(d)) return 'Expired';
     if (d.media.image) return 'Image ready';
     return edit?.has_media ? 'Upload saved' : 'Needs image';
@@ -267,10 +324,21 @@ export default function AdminPosts() {
   return (
     <PostingShell title="Review posts">
       <div className="posting-review-intro">
-        <p>Approve each post at least 24 hours before it publishes. Nothing posts without you.</p>
+        <p>
+          Drafts are prepared in advance. Approve each post for any future time. Nothing posts
+          without you.
+        </p>
         <button onClick={() => setRevision((v) => v + 1)} disabled={Boolean(busy)}>
           Refresh drafts
         </button>
+        {tab === 'instagram' && (
+          <button
+            onClick={() => setAccountRevision((v) => v + 1)}
+            disabled={checkingAccounts || Boolean(busy)}
+          >
+            {checkingAccounts ? 'Checking Instagram accounts…' : 'Refresh Instagram accounts'}
+          </button>
+        )}
         <Link to="/admin/studio">Brand & asset library →</Link>
       </div>
       {error && (
@@ -306,7 +374,11 @@ export default function AdminPosts() {
                   setOpen('');
                 }}
               >
-                {t === 'instagram' ? 'Instagram' : `${platformLabel(t)} (post via Buffer)`}{' '}
+                {t === 'instagram'
+                  ? 'Instagram'
+                  : t === 'x'
+                    ? 'X'
+                    : `${platformLabel(t)} (post via Buffer)`}{' '}
                 <span className="posting-tab-count">{counts[t]}</span>
               </button>
             ))}
@@ -315,7 +387,11 @@ export default function AdminPosts() {
             {drafts.map((d) => {
               const edit = editFor(d.id);
               const due = dueOf(d);
-              const when = Number.isNaN(due) ? '' : relativeTime(due, now);
+              const when = Number.isNaN(due)
+                ? ''
+                : edit?.status === 'scheduled' || bufferFor(d.id)?.status === 'scheduled'
+                  ? slotLabel(due, now, data.timezone)
+                  : relativeTime(due, now);
               if (tab !== 'instagram')
                 return (
                   <ReviewRow
@@ -324,29 +400,63 @@ export default function AdminPosts() {
                     meta={`${d.account} · ${laneLabel(d.mode)}`}
                     when={when}
                     state={
-                      hidden(d) ? hiddenLabel[hidden(d)] : expired(d) ? 'Expired' : 'Copy to Buffer'
+                      hidden(d)
+                        ? hiddenLabel[hidden(d)]
+                        : bufferFor(d.id)
+                          ? bufferFor(d.id)?.status === 'scheduled'
+                            ? 'Approved · Scheduled'
+                            : 'Check Buffer'
+                          : expired(d)
+                            ? 'Missed proposed time'
+                            : tab === 'x'
+                              ? 'Needs approval'
+                              : 'Copy to Buffer'
                     }
                     expanded={current === d.id}
                     onToggle={() => toggle(d.id)}
                   >
-                    <TextPostCard draft={d} expired={expired(d)}>
-                      {!hidden(d) && (
-                        <DecisionControls
-                          draftId={d.id}
-                          label={`${d.account} ${platformLabel(tab)} post: ${firstLine(d.text, 48)}`}
-                          busy={busy}
-                          setBusy={setBusy}
-                          favorited={favorites.has(d.id)}
-                          onRecorded={recorded}
-                        />
-                      )}
-                    </TextPostCard>
+                    {tab === 'x' ? (
+                      <XPostReview
+                        key={`${d.id}:${bufferFor(d.id)?.version ?? 0}:${bufferDelivery?.configured ?? false}`}
+                        draft={d}
+                        delivery={bufferDelivery}
+                        receipt={bufferFor(d.id)}
+                        now={now}
+                        onSaved={() => setRevision((v) => v + 1)}
+                      >
+                        {!hidden(d) && (
+                          <DecisionControls
+                            draftId={d.id}
+                            label={`${d.account} X post: ${firstLine(d.text, 48)}`}
+                            busy={busy}
+                            setBusy={setBusy}
+                            favorited={favorites.has(d.id)}
+                            goodOnly={Boolean(bufferFor(d.id))}
+                            onRecorded={recorded}
+                          />
+                        )}
+                      </XPostReview>
+                    ) : (
+                      <TextPostCard draft={d} expired={expired(d)}>
+                        {!hidden(d) && (
+                          <DecisionControls
+                            draftId={d.id}
+                            label={`${d.account} ${platformLabel(tab)} post: ${firstLine(d.text, 48)}`}
+                            busy={busy}
+                            setBusy={setBusy}
+                            favorited={favorites.has(d.id)}
+                            onRecorded={recorded}
+                          />
+                        )}
+                      </TextPostCard>
+                    )}
                   </ReviewRow>
                 );
               return (
                 <ReviewRow
                   key={d.id}
                   draft={d}
+                  edit={edit}
                   meta={`${d.account} · Instagram${rerolledFrom(d.id) ? ` · new ${rerollLabel(rerolledFrom(d.id)!.mode)}` : ''}`}
                   when={when}
                   state={instagramState(d)}
@@ -475,7 +585,15 @@ export default function AdminPosts() {
               {hiddenCount === 1 ? 'draft' : 'drafts'}
             </label>
           )}
-          {tab !== 'instagram' && (
+          {tab === 'x' && (
+            <p className="studio-note">
+              {bufferError ||
+                (bufferDelivery?.configured
+                  ? 'Review and approve X posts here to schedule them through Buffer.'
+                  : 'Buffer scheduling needs its server connection. You can still copy a draft into Buffer.')}
+            </p>
+          )}
+          {tab === 'bluesky' && (
             <p className="studio-note">
               {platformLabel(tab)} drafts are read-only here. Copy the text into Buffer to schedule
               it; nothing on this page posts to {platformLabel(tab)}.
@@ -494,7 +612,15 @@ export default function AdminPosts() {
                 ))}
               </select>
             </label>
-            {tab !== 'instagram' && (
+            {tab === 'x' && (
+              <p className="studio-note">
+                {bufferError ||
+                  (bufferDelivery?.configured
+                    ? 'Review and approve X posts here to schedule them through Buffer.'
+                    : 'Buffer scheduling needs its server connection. You can still copy a draft into Buffer.')}
+              </p>
+            )}
+            {tab === 'bluesky' && (
               <label>
                 Preparation lane
                 <select value={lane} onChange={(e) => setLane(e.target.value)}>
