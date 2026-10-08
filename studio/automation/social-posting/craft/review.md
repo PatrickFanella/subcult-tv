@@ -8,14 +8,14 @@ When `mode` is `showcase`, judge the post as an introduction to a live product: 
 
 ## Score each draft from 1 to 5 on
 
-- hook: would the first line, alone, stop a stranger and make them tap "more"? 5 = specific, situational, creates a question the reader wants answered; 1 = generic, about the product, or a status line.
+- hook: would the first line, alone, stop a stranger and make them tap "more"? 5 = specific, situational, creates a question the reader wants answered; 1 = generic or a status line with no concrete point. Judge a maker's opening or product name by the choice, behavior or use it names, not by its opening words.
 - story: is there a person, a problem in their way and a turn? 1 = feature list or changelog.
 - specificity: concrete nouns, exact behaviors, one vivid true detail.
 - reason: does the reader learn why the change exists, as the evidence states it? 3 when the evidence gives no reason and the draft rightly doesn't invent one.
 - voice: does it sound like the account and the product's register in `voice`, and like a person rather than a press release or an AI?
 - reader_value: judged as a stranger who has never used the product: would they be glad they read it (recognized their own life, learned something for their own work, smiled, got a reason to try it)? A post that only matters to the product's existing users scores 2 at most.
 - flow: short paragraphs, rhythm, nothing to skip, nothing that repeats.
-- ending: concrete detail, dry aside, honest invitation or a question worth answering; 1 = moral, summary, lone caveat, "Thoughts?" or an A-or-B poll about interface habits.
+- ending: stops after the last necessary detail, or adds a dry aside, honest invitation or question that belongs to the story; 1 = tacked-on aside or advice, repeated status, moral, summary, "Thoughts?" or an A-or-B poll about interface habits. Keep every required maturity limit and transcript-checking caveat, wherever the caption states it.
 - honesty: maturity stated once in reader terms; no review-pipeline words (merged, PR, deployment, live check, verification, confirmed) and no internal process given as a reason (audit, review, ticket); every claim supported. Any unsupported or overstated claim makes this 1.
 
 Also give `predicted`: what you expect a stranger to do (scroll past / read / read and like / reply / share or save), and one sentence why.

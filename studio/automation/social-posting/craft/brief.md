@@ -25,7 +25,7 @@ For each chosen change, work out the story before any wording:
 Write four distinct angles per chosen change. Each uses a different pattern from `patterns` (or a pattern you name and describe if none fits). For each angle give:
 
 - pattern: its name.
-- hook: the exact first line as it would appear in the caption. It must make sense to someone who has never heard of the product, carry a specific noun or situation, and create a reason to read the second line. No questions answered by the next sentence, no "We're working on", no "I've been working on", no product name as the first word, no verdicts ("A useful…").
+- hook: the exact first line as it would appear in the caption. It must make sense to someone who has never heard of the product, carry a specific noun or situation, and create a reason to read the second line. A maker's opening ("I've been working on…") or a product name can lead when the same sentence names a concrete choice, behavior or use. No empty progress reports, questions answered by the next sentence or verdicts ("A useful…").
 - payoff: what a stranger who has never used this product gets from reading: a situation they recognize from their own life (a menu that crashes, a clock that lies), a craft lesson they can take into their own work, or a real reason to try the product for what it does. A post with no payoff for a stranger is not worth drafting.
 - mechanism: why a stranger would stop and keep reading, in one sentence, naming the psychological or craft mechanism from `research` (for example specificity, curiosity gap, confession, a recognizable scene, before/after, a number with meaning).
 - risk: the main way this angle could fail or overclaim.
