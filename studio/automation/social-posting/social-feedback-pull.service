@@ -1,0 +1,9 @@
+[Unit]
+Description=Pull owner review feedback for the SUBCULT drafting jobs
+OnFailure=social-posting-failure.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/onnwee/Work/Subcult/subcult-tv/studio/automation/social-posting/feedback.py --state /home/onnwee/.local/state/social-posting --ingest-env /home/onnwee/.config/posting-dashboard/preparation.env
+TimeoutStartSec=5min
+UMask=0077

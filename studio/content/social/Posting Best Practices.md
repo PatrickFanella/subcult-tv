@@ -36,6 +36,7 @@ X leadership reportedly says its explicit link penalty ended; this does not sett
 
 [VOICE.md](../VOICE.md) decides how public copy sounds, per product and per account. This section is the short form that the drafting jobs read; where the two differ, VOICE.md wins. Facts still come from [[Product Claims Register]], and voice never adds a claim or drops a maturity limit.
 
+- Social posts are marketing. Each one should make a stranger want to try the product, follow the account or tell a friend. Lead with what the reader gets. Fine print that is not a maturity limit (device requirements, export edge cases, how links resolve, what has not been verified) stays on the product page. Say the maturity limit once, briefly, near the end; never make a limitation the subject of a post.
 - Each post makes one point: a concrete observation, a use, a correction or a real question. A question opening should be rare. Never open with a question that the next sentence answers.
 - The account sets the speaker. Patrick writes in the first person singular. SUBCULT writes as "we" and borrows the vocabulary of the product it is describing. CLPR uses the clpr voice and covers only clpr.
 - The product sets the register. clpr is a chat regular who clips everything. Patchwork is a neighbor's note on a community board. HasanAra is a straight-faced broadcast announcer reading from "the record". Rekolekt is an archivist's finding aid. Subcult OS is a stage manager's run sheet. Undertow is liner notes with specifications. Kork is a hand-lettered flyer. Common House teasers are fiction.
@@ -47,7 +48,7 @@ X leadership reportedly says its explicit link penalty ended; this does not sett
 
 ## Local editorial choices
 
-- Patrick carries interpretation and left-political commentary. SUBCULT carries products and independent culture. CLPR stays on clips and Twitch context. Pick one destination for a discovered conversation.
+- Patrick writes most of his own posts. Prepared Patrick drafts are at most three a week: something he made, shown in his own words, or a discovery he would plausibly share. Patrick carries interpretation and left-political commentary. SUBCULT carries products and independent culture. CLPR stays on clips and Twitch context. Pick one destination for a discovered conversation.
 - A post does not need an image. For X launches and supporter campaigns, prefer useful original artwork; for product updates, prefer real captures or demonstrations. Personal observations and political quotes can remain text-only. Images should add information, not merely duplicate the caption. Keep access and readiness limits in the copy where they affect the reader.
 - No engagement bait and no irrelevant trending hashtags. Zero hashtags is the default; add one specific tag only when it helps identify the topic. This is an editorial choice. We claim no algorithm penalty.
 - Check original reporting, quotations and surrounding context before political or current-event commentary. Generated illustrations must not simulate documentary news scenes, endorsements by real people or actual product screens.

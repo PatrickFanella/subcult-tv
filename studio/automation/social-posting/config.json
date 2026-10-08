@@ -22,7 +22,7 @@
         "09:11",
         "16:41"
       ],
-      "weekly_cap": 14
+      "weekly_cap": 3
     },
     "subcult": {
       "days": [
@@ -87,7 +87,12 @@
       "organizing"
     ]
   },
-  "media_library": "media",
+  "tuning": {
+  "remote": "https://git.subcult.tv/subculture-collective/subcult-tv.git",
+  "repo": "subculture-collective/subcult-tv",
+  "login": "subcult-agent"
+ },
+ "media_library": "media",
   "editorial_guide": "content/social/Posting Best Practices.md",
   "channels": {
     "patrick": "6abdd7a8ea19ca0bde3dbbd3",

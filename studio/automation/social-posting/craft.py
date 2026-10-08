@@ -236,7 +236,7 @@ def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change'
 URL = re.compile(r'https?://\S+')
 
 
-def polish_short(cfg, drafts, directory, limit=280):
+def polish_short(cfg, drafts, directory, limit=280, owner=()):
     """Critique and rewrite short X/Bluesky drafts in place; keep any rewrite that fails a check.
 
     Returns the private polish record. Never raises: the original drafts stay valid.
@@ -244,7 +244,7 @@ def polish_short(cfg, drafts, directory, limit=280):
     try:
         payload = {**guidance(cfg), 'drafts': [{'index': n, 'account': d.get('account', ''), 'kind': d.get('kind', ''),
                                                 'text': d.get('text', ''), 'evidence': d.get('evidence', '')}
-                                               for n, d in enumerate(drafts)]}
+                                               for n, d in enumerate(drafts)], 'owner_feedback': list(owner)}
         payload.pop('patterns', None)
         result = codex(cfg, stage_prompt('short', payload), directory, 'polish', 'short', effort='high', timeout=900)
     except Exception as error:  # the unpolished drafts remain the output

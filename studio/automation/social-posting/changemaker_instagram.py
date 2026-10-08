@@ -12,6 +12,7 @@ import subprocess
 
 from sources import changemaker_context, complete_changemaker_digest
 from runner import atomic_write
+from feedback import owner_feedback
 
 HERE = Path(__file__).resolve().parent
 
@@ -67,27 +68,6 @@ def recent_captions(state, now, days=14):
         except (ValueError, OSError):
             continue
     return texts[:30]
-
-
-def owner_feedback(state, limit=20):
-    """Recent owner decisions pulled from the review dashboard, newest first.
-
-    `owner-feedback.json` holds a list of decision records (decision, original_text,
-    final_text, reason codes, note). Edited approvals and rejections teach the drafting
-    stages what the owner changes; the file is optional.
-    """
-    path = state/'owner-feedback.json'
-    if not path.is_file() or path.is_symlink() or path.stat().st_size > 2_000_000:
-        return []
-    try:
-        records = json.loads(path.read_text())
-    except ValueError:
-        return []
-    keep = []
-    for record in records if isinstance(records, list) else []:
-        if record.get('decision') in ('approved_edited', 'rejected', 'revision_requested'):
-            keep.append({k: record.get(k) for k in ('decision', 'original_text', 'final_text', 'reasons', 'note')})
-    return keep[:limit]
 
 
 def single_pass(cfg, source_root, selected, digest, claims, directory):
