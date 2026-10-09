@@ -247,7 +247,7 @@ export default function SocialDelivery({
             </form>
           )}
           <div className="posting-history">
-            <table>
+            <table className="stack-table">
               <caption>PostyBirb history: previous 30 days and next 90 days</caption>
               <thead>
                 <tr>
@@ -260,9 +260,9 @@ export default function SocialDelivery({
               <tbody>
                 {data.posts.map((p) => (
                   <tr key={p.id}>
-                    <td>{p.integration.name}</td>
-                    <td>{new Date(p.publishDate).toLocaleString()}</td>
-                    <td>
+                    <td data-label="Account">{p.integration.name}</td>
+                    <td data-label="Publish time">{new Date(p.publishDate).toLocaleString()}</td>
+                    <td data-label="Status">
                       {p.state === 'PUBLISHED' ? (
                         'Published'
                       ) : p.state === 'QUEUE' ? (
@@ -277,7 +277,7 @@ export default function SocialDelivery({
                         p.state
                       )}
                     </td>
-                    <td>
+                    <td data-label="Delivery">
                       {p.releaseURL && p.state === 'PUBLISHED' ? (
                         <a href={p.releaseURL} target="_blank" rel="noreferrer">
                           View Instagram post ↗

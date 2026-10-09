@@ -342,7 +342,7 @@ export default function PublicationReview({ platform }: { platform: 'website' | 
               {d.provider_url && (
                 <p>
                   <a href={d.provider_url} target="_blank" rel="noreferrer">
-                    View Patreon receipt ↗
+                    {platform === 'patreon' ? 'View on Patreon' : 'View the published entry'} ↗
                   </a>
                 </p>
               )}

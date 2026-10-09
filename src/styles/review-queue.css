@@ -1,8 +1,8 @@
 /* Private social review queue: platform tabs, read-only X/Bluesky previews. */
 .posting-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.4rem;
-  overflow-x: auto;
   margin: 0 0 0.75rem;
 }
 .posting-tabs button {
@@ -257,9 +257,12 @@
   grid-template-columns: minmax(0, 29.25rem) minmax(0, 1fr);
   gap: 1.5rem;
   align-items: start;
+  /* Source URLs have no break points; without this they set the column width. */
+  overflow-wrap: anywhere;
 }
 .review-sheet-controls {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 0.75rem;
   min-width: 0;
 }
@@ -588,4 +591,40 @@
   .decision-buttons button {
     flex: 1 1 auto;
   }
+}
+
+/* Narrow phones: the date and state move under the text so the summary keeps its width. */
+@media (max-width: 600px) {
+  .review-row-summary {
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+    grid-template-areas:
+      'thumb main'
+      'thumb side';
+    align-items: start;
+    row-gap: 0.4rem;
+  }
+  .review-row-thumb {
+    grid-area: thumb;
+  }
+  .review-row-main {
+    grid-area: main;
+  }
+  .review-row-side {
+    grid-area: side;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.25rem 0.75rem;
+    white-space: normal;
+  }
+  .x-reply-field {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.review-sheet-controls label:has(> input[type='checkbox']) {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
 }
