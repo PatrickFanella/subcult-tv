@@ -25,6 +25,7 @@
           "account",
           "kind",
           "text",
+          "replies",
           "due_at",
           "expires_at",
           "source_ids",
@@ -52,6 +53,12 @@
           },
           "text": {
             "type": "string"
+          },
+          "replies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "due_at": {
             "type": "string"

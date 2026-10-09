@@ -59,6 +59,16 @@ export default function TextPostCard({
             {over ? ` · ${length - limit} over the ${service} limit` : ''}
           </span>
         </div>
+        {platform === 'x' &&
+          draft.replies?.map((reply, i) => (
+            <div key={i} className="x-preview-reply">
+              <small>Reply {i + 1}</small>
+              <p className="x-preview-text">{reply}</p>
+              <small data-over={xLength(reply) > X_LIMIT || undefined}>
+                {xLength(reply)} / {X_LIMIT}
+              </small>
+            </div>
+          ))}
       </div>
       <p className="studio-note">
         {scheduled ? 'Scheduled' : 'Proposed'}: {new Date(draft.due_at).toLocaleString()} ·{' '}

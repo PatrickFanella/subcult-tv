@@ -19,7 +19,7 @@ Work out the story before the words: who meets the change, what was in their way
 
 Write two versions with different structures, then critique both as a stranger on a phone and as a fact-checker, using the DIGEST rubric. Keep the lines that are alive; fix unsupported lines by rephrasing them truthfully in the same voice. State maturity once, in reader terms, after the story. No review-pipeline words (merged, PR, deployment, live check, verification, confirmed), no verdict framing ("A useful…"), no A-or-B polls, no moral or summary endings, no engagement bait.
 
-For X, apply [media and link-placement guidance](references/lessons.md#x-media-and-link-placement): images are optional, placement is an experiment, and required URLs stay until a reply is prepared.
+For X, apply [media and link-placement guidance](references/lessons.md#x-media-and-link-placement): images are optional, link placement is an experiment, and self-replies go in the draft's `replies` list.
 
 ## Supporter and product copy
 

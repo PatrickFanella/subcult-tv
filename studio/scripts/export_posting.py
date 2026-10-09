@@ -96,6 +96,9 @@ def optional_fields(draft, media, state, media_files):
             'predicted': text(craft.get('predicted'), 400),
             'scores': {k: scores[k] for k in SCORE_KEYS if isinstance(scores.get(k), int) and 1 <= scores[k] <= 5},
             'alternatives': strings(craft.get('alternatives'), 4, 2200)}
+    replies = strings(draft.get('replies'), 3, 280)
+    if replies:
+        record['replies'] = replies
     checklist = strings(draft.get('checklist'), 12, 400)
     if checklist:
         record['checklist'] = checklist

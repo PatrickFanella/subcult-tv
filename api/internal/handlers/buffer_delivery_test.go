@@ -17,9 +17,23 @@ import (
 )
 
 type fakeBuffer struct {
-	posts []buffer.Post
-	calls int
-	fail  bool
+	posts  []buffer.Post
+	calls  int
+	fail   bool
+	reject bool
+}
+
+// withThread mirrors how Buffer reports an X thread: every tweet, first one included.
+func withThread(post buffer.Post, replies []string) buffer.Post {
+	var raw []byte
+	items := []map[string]string{{"text": post.Text}}
+	for _, reply := range replies {
+		items = append(items, map[string]string{"text": reply})
+	}
+	raw, _ = json.Marshal(map[string]any{"metadata": map[string]any{"thread": items}})
+	post.Metadata = nil
+	json.Unmarshal(raw, &post)
+	return post
 }
 
 func (p *fakeBuffer) Channels(context.Context) ([]buffer.Channel, error) {
@@ -39,21 +53,28 @@ func (p *fakeBuffer) Post(_ context.Context, id string) (buffer.Post, error) {
 	}
 	return buffer.Post{}, errors.New("missing")
 }
-func (p *fakeBuffer) Schedule(_ context.Context, channel, text string, due time.Time) (buffer.Post, error) {
+func (p *fakeBuffer) Schedule(_ context.Context, channel, text string, replies []string, due time.Time) (buffer.Post, error) {
 	p.calls++
-	post := buffer.Post{ID: "buffer-post", ChannelID: channel, Text: text, Due: due, Status: "scheduled", Actions: []string{"updatePostSchedule", "updatePost"}}
+	if p.reject {
+		return buffer.Post{}, &buffer.Rejected{Message: "Thread limit reached"}
+	}
+	post := withThread(buffer.Post{ID: "buffer-post-" + text, ChannelID: channel, Text: text, Due: due, Status: "scheduled", Actions: []string{"updatePostSchedule", "updatePost"}}, replies)
 	p.posts = append(p.posts, post)
 	if p.fail {
 		return buffer.Post{}, errors.New("connection lost after accept")
 	}
 	return post, nil
 }
-func (p *fakeBuffer) Reschedule(_ context.Context, id, text string, due time.Time) (buffer.Post, error) {
+func (p *fakeBuffer) Reschedule(_ context.Context, id, text string, replies []string, due time.Time) (buffer.Post, error) {
 	p.calls++
+	if p.reject {
+		return buffer.Post{}, &buffer.Rejected{Message: "Thread limit reached"}
+	}
 	for i := range p.posts {
 		if p.posts[i].ID == id {
 			p.posts[i].Text = text
 			p.posts[i].Due = due
+			p.posts[i] = withThread(p.posts[i], replies)
 			return p.posts[i], nil
 		}
 	}
@@ -70,6 +91,7 @@ func TestBufferApprovalIntegration(t *testing.T) {
 		{ID: "buffer-test:1", Mode: "radar", Platform: "x", Text: "Expired news", DueAt: time.Now().Add(-time.Hour).Format(time.RFC3339)},
 		{ID: "buffer-test:2", Mode: "plan", Platform: "x", Text: "Uncertain tweet", DueAt: due.Format(time.RFC3339)},
 		{ID: "buffer-test:3", Mode: "plan", Platform: "x", Text: "Evergreen tweet", DueAt: due.Format(time.RFC3339)},
+		{ID: "buffer-test:4", Mode: "plan", Platform: "x", Text: "Thread opener", Replies: []string{"Link in reply"}, DueAt: due.Format(time.RFC3339)},
 	}
 	data, _ := json.Marshal(postingDashboard{GeneratedAt: time.Now().UTC().Format(time.RFC3339), Drafts: drafts})
 	if err := os.WriteFile(filepath.Join(root, "posting.json"), data, 0600); err != nil {
@@ -82,14 +104,14 @@ func TestBufferApprovalIntegration(t *testing.T) {
 	t.Cleanup(func() {
 		db.Exec(context.Background(), `DELETE FROM buffer_schedules WHERE draft_id LIKE 'buffer-test:%'`)
 	})
-	send := func(method, id, text string, version int, approved bool) *httptest.ResponseRecorder {
+	send := func(method, id, text string, version int, approved bool, replies ...string) *httptest.ResponseRecorder {
 		original := ""
 		for _, d := range drafts {
 			if d.ID == id {
 				original = d.Text
 			}
 		}
-		payload, _ := json.Marshal(map[string]any{"channel_id": "channel", "caption": text, "original_text": original, "due_at": due.Format(time.RFC3339), "approved": approved, "version": version})
+		payload, _ := json.Marshal(map[string]any{"channel_id": "channel", "caption": text, "original_text": original, "due_at": due.Format(time.RFC3339), "approved": approved, "version": version, "replies": replies})
 		target := "/" + id + "/approve"
 		if method == "PUT" {
 			target = "/" + id + "/schedule"
@@ -135,5 +157,28 @@ func TestBufferApprovalIntegration(t *testing.T) {
 	}
 	if err := db.QueryRow(context.Background(), `SELECT status FROM buffer_schedules WHERE draft_id='buffer-test:2'`).Scan(&status); err != nil || status != "uncertain" {
 		t.Fatal("uncertain receipt missing", status, err)
+	}
+	provider.fail = false
+
+	// Threads: replies are validated, stored, and sent as one Buffer thread.
+	check(send("POST", "buffer-test:4", "Thread opener", 0, true, "one", "two", "three", "four"), 400)
+	check(send("POST", "buffer-test:4", "Thread opener", 0, true, "  "), 400)
+	provider.reject = true
+	check(send("POST", "buffer-test:4", "Thread opener", 0, true, "Link in reply"), 409)
+	var released bool
+	db.QueryRow(context.Background(), `SELECT NOT EXISTS(SELECT 1 FROM buffer_schedules WHERE draft_id='buffer-test:4')`).Scan(&released)
+	if !released {
+		t.Fatal("a refused thread kept its claim")
+	}
+	provider.reject = false
+	check(send("POST", "buffer-test:4", "Thread opener", 0, true, "Link in reply"), 201)
+	var replies []string
+	if err := db.QueryRow(context.Background(), `SELECT replies FROM buffer_schedules WHERE draft_id='buffer-test:4'`).Scan(&replies); err != nil || len(replies) != 1 || replies[0] != "Link in reply" {
+		t.Fatal("thread replies not stored", replies, err)
+	}
+	check(send("PUT", "buffer-test:4", "Thread opener", 1, true, "Link in reply", "And a second"), 201)
+	check(send("PUT", "buffer-test:4", "Thread opener", 2, true), 201)
+	if err := db.QueryRow(context.Background(), `SELECT replies,version FROM buffer_schedules WHERE draft_id='buffer-test:4'`).Scan(&replies, &version); err != nil || len(replies) != 0 || version != 3 {
+		t.Fatal("removing replies did not clear the thread", replies, version, err)
 	}
 }

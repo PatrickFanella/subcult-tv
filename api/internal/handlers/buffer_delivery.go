@@ -24,8 +24,8 @@ type BufferProvider interface {
 	Channels(context.Context) ([]buffer.Channel, error)
 	Posts(context.Context, []string, time.Time) ([]buffer.Post, error)
 	Post(context.Context, string) (buffer.Post, error)
-	Schedule(context.Context, string, string, time.Time) (buffer.Post, error)
-	Reschedule(context.Context, string, string, time.Time) (buffer.Post, error)
+	Schedule(context.Context, string, string, []string, time.Time) (buffer.Post, error)
+	Reschedule(context.Context, string, string, []string, time.Time) (buffer.Post, error)
 	History(context.Context, []string, time.Time) ([]buffer.HistoryPost, error)
 }
 
@@ -66,6 +66,7 @@ type bufferReceipt struct {
 	Version   int       `json:"version"`
 	ChannelID string    `json:"channel_id"`
 	Caption   string    `json:"caption"`
+	Replies   []string  `json:"replies"`
 	Due       time.Time `json:"due_at"`
 	Status    string    `json:"status"`
 	PostID    string    `json:"post_id"`
@@ -93,7 +94,7 @@ func (h *Handler) BufferDelivery(w http.ResponseWriter, r *http.Request) {
 	}
 	receipts := []bufferReceipt{}
 	if h.DB != nil {
-		rows, err := h.DB.Query(r.Context(), `SELECT draft_id,version,channel_id,caption,due_at,status,provider_post_id FROM buffer_schedules ORDER BY updated_at DESC LIMIT 400`)
+		rows, err := h.DB.Query(r.Context(), `SELECT draft_id,version,channel_id,caption,replies,due_at,status,provider_post_id FROM buffer_schedules ORDER BY updated_at DESC LIMIT 400`)
 		if err != nil {
 			writeError(w, 503, "X scheduling receipts are unavailable")
 			return
@@ -101,7 +102,7 @@ func (h *Handler) BufferDelivery(w http.ResponseWriter, r *http.Request) {
 		defer rows.Close()
 		for rows.Next() {
 			var a bufferReceipt
-			if rows.Scan(&a.DraftID, &a.Version, &a.ChannelID, &a.Caption, &a.Due, &a.Status, &a.PostID) != nil {
+			if rows.Scan(&a.DraftID, &a.Version, &a.ChannelID, &a.Caption, &a.Replies, &a.Due, &a.Status, &a.PostID) != nil {
 				writeError(w, 503, "X scheduling receipts are unavailable")
 				return
 			}
@@ -130,6 +131,33 @@ var xURLs = regexp.MustCompile(`https?://\S+`)
 func xTextLength(s string) int {
 	return utf8.RuneCountInString(xURLs.ReplaceAllString(s, "")) + 23*len(xURLs.FindAllString(s, -1))
 }
+
+// maxReplies bounds a thread. Buffer's plan allows one scheduled thread per channel.
+const maxReplies = 3
+
+// cleanReplies trims self-replies and rejects empty or oversized ones.
+func cleanReplies(replies []string) ([]string, bool) {
+	if len(replies) > maxReplies {
+		return nil, false
+	}
+	clean := make([]string, 0, len(replies))
+	for _, reply := range replies {
+		reply = strings.TrimSpace(reply)
+		if reply == "" || xTextLength(reply) > 280 {
+			return nil, false
+		}
+		clean = append(clean, reply)
+	}
+	return clean, true
+}
+
+// threadHash binds the replies into the approval hash; a single post keeps its old hash.
+func threadHash(replies []string) []byte {
+	if len(replies) == 0 {
+		return nil
+	}
+	return []byte(strings.Join(replies, "\x00"))
+}
 func (h *Handler) ApproveBufferDraft(w http.ResponseWriter, r *http.Request) {
 	h.changeBufferDraft(w, r, false)
 }
@@ -152,25 +180,31 @@ func (h *Handler) changeBufferDraft(w http.ResponseWriter, r *http.Request, edit
 		return
 	}
 	var input struct {
-		Channel  string `json:"channel_id"`
-		Caption  string `json:"caption"`
-		Original string `json:"original_text"`
-		Due      string `json:"due_at"`
-		Approved bool   `json:"approved"`
-		Version  int    `json:"version"`
+		Channel  string   `json:"channel_id"`
+		Caption  string   `json:"caption"`
+		Replies  []string `json:"replies"`
+		Original string   `json:"original_text"`
+		Due      string   `json:"due_at"`
+		Approved bool     `json:"approved"`
+		Version  int      `json:"version"`
 	}
 	if json.NewDecoder(io.LimitReader(r.Body, 16<<10)).Decode(&input) != nil || !input.Approved {
 		writeError(w, 400, "Approve the exact tweet before scheduling")
 		return
 	}
 	input.Caption = strings.TrimSpace(input.Caption)
+	replies, repliesOK := cleanReplies(input.Replies)
+	if !repliesOK {
+		writeError(w, 400, "Write up to 3 replies of up to 280 characters each")
+		return
+	}
 	due, dateErr := time.Parse(time.RFC3339, input.Due)
 	if input.Caption == "" || xTextLength(input.Caption) > 280 || dateErr != nil || !due.After(time.Now()) || due.After(time.Now().AddDate(0, 0, 90)) || !slices.Contains(h.BufferChannels, input.Channel) {
 		writeError(w, 400, "Choose an X channel, text up to 280 characters and a future time within 90 days")
 		return
 	}
 	due = due.UTC().Truncate(time.Second)
-	hash := schedulePayloadHash(input.Channel, input.Caption, due, nil)
+	hash := schedulePayloadHash(input.Channel, input.Caption, due, threadHash(replies))
 	if !edit {
 		d, e := h.preparedDraft(id)
 		if e != nil {
@@ -201,7 +235,7 @@ func (h *Handler) changeBufferDraft(w http.ResponseWriter, r *http.Request, edit
 		return
 	}
 	var old bufferReceipt
-	err = tx.QueryRow(r.Context(), `SELECT draft_id,version,channel_id,caption,due_at,status,provider_post_id,payload_hash FROM buffer_schedules WHERE draft_id=$1 FOR UPDATE`, id).Scan(&old.DraftID, &old.Version, &old.ChannelID, &old.Caption, &old.Due, &old.Status, &old.PostID, &old.Hash)
+	err = tx.QueryRow(r.Context(), `SELECT draft_id,version,channel_id,caption,replies,due_at,status,provider_post_id,payload_hash FROM buffer_schedules WHERE draft_id=$1 FOR UPDATE`, id).Scan(&old.DraftID, &old.Version, &old.ChannelID, &old.Caption, &old.Replies, &old.Due, &old.Status, &old.PostID, &old.Hash)
 	if err != nil && !errors.Is(err, pgx.ErrNoRows) {
 		writeError(w, 503, "Approval could not be read")
 		return
@@ -247,7 +281,8 @@ func (h *Handler) changeBufferDraft(w http.ResponseWriter, r *http.Request, edit
 	}
 	if edit {
 		live, e := h.BufferPosting.Post(r.Context(), old.PostID)
-		if e != nil || live.ChannelID != old.ChannelID || live.Text != old.Caption || live.Status != "scheduled" || !slices.Contains(live.Actions, "updatePostSchedule") || (input.Caption != old.Caption && !slices.Contains(live.Actions, "updatePost")) {
+		textChanged := input.Caption != old.Caption || !slices.Equal(replies, old.Replies)
+		if e != nil || live.ChannelID != old.ChannelID || live.Text != old.Caption || !slices.Equal(live.Replies(), old.Replies) || live.Status != "scheduled" || !slices.Contains(live.Actions, "updatePostSchedule") || (textChanged && !slices.Contains(live.Actions, "updatePost")) {
 			writeError(w, 409, "Buffer no longer shows this exact tweet as editable and scheduled")
 			return
 		}
@@ -266,9 +301,9 @@ func (h *Handler) changeBufferDraft(w http.ResponseWriter, r *http.Request, edit
 	}
 	user, _ := r.Context().Value(middleware.UserIDKey).(string)
 	if edit {
-		_, err = tx.Exec(r.Context(), `UPDATE buffer_schedules SET caption=$2,due_at=$3,payload_hash=$4,status='submitting',updated_at=NOW() WHERE draft_id=$1`, id, input.Caption, due, hash)
+		_, err = tx.Exec(r.Context(), `UPDATE buffer_schedules SET caption=$2,replies=$5,due_at=$3,payload_hash=$4,status='submitting',updated_at=NOW() WHERE draft_id=$1`, id, input.Caption, due, hash, replies)
 	} else {
-		_, err = tx.Exec(r.Context(), `INSERT INTO buffer_schedules(draft_id,channel_id,caption,due_at,payload_hash,status,approved_by) VALUES($1,$2,$3,$4,$5,'submitting',$6)`, id, input.Channel, input.Caption, due, hash, user)
+		_, err = tx.Exec(r.Context(), `INSERT INTO buffer_schedules(draft_id,channel_id,caption,replies,due_at,payload_hash,status,approved_by) VALUES($1,$2,$3,$7,$4,$5,'submitting',$6)`, id, input.Channel, input.Caption, due, hash, user, replies)
 	}
 	if err != nil || tx.Commit(r.Context()) != nil {
 		writeError(w, 503, "Approval could not be recorded")
@@ -279,11 +314,22 @@ func (h *Handler) changeBufferDraft(w http.ResponseWriter, r *http.Request, edit
 	defer cancel()
 	var post buffer.Post
 	if edit {
-		post, err = h.BufferPosting.Reschedule(ctx, old.PostID, input.Caption, due)
+		post, err = h.BufferPosting.Reschedule(ctx, old.PostID, input.Caption, replies, due)
 	} else {
-		post, err = h.BufferPosting.Schedule(ctx, input.Channel, input.Caption, due)
+		post, err = h.BufferPosting.Schedule(ctx, input.Channel, input.Caption, replies, due)
 	}
-	if err != nil || post.ID == "" || post.ChannelID != input.Channel || post.Text != input.Caption || !post.Due.Equal(due) || post.Status != "scheduled" || (edit && post.ID != old.PostID) {
+	var rejected *buffer.Rejected
+	if errors.As(err, &rejected) {
+		// Nothing changed in Buffer: release the claim so the owner can adjust and retry.
+		if edit {
+			h.DB.Exec(ctx, `UPDATE buffer_schedules SET caption=$2,replies=$3,due_at=$4,payload_hash=$5,status='scheduled',updated_at=NOW() WHERE draft_id=$1`, id, old.Caption, old.Replies, old.Due, old.Hash)
+		} else {
+			h.DB.Exec(ctx, `DELETE FROM buffer_schedules WHERE draft_id=$1 AND status='submitting'`, id)
+		}
+		writeError(w, 409, rejected.Error())
+		return
+	}
+	if err != nil || post.ID == "" || post.ChannelID != input.Channel || post.Text != input.Caption || !slices.Equal(post.Replies(), replies) || !post.Due.Equal(due) || post.Status != "scheduled" || (edit && post.ID != old.PostID) {
 		h.DB.Exec(ctx, `UPDATE buffer_schedules SET status='uncertain',provider_post_id=COALESCE(NULLIF($2,''),provider_post_id),updated_at=NOW() WHERE draft_id=$1`, id, post.ID)
 		writeError(w, 502, "Buffer scheduling could not be confirmed. Check Buffer before retrying")
 		return
@@ -292,10 +338,10 @@ func (h *Handler) changeBufferDraft(w http.ResponseWriter, r *http.Request, edit
 	if edit {
 		version = old.Version + 1
 	}
-	_, err = h.DB.Exec(ctx, `UPDATE buffer_schedules SET version=$2,channel_id=$3,caption=$4,due_at=$5,payload_hash=$6,status='scheduled',provider_post_id=$7,approved_by=$8,updated_at=NOW() WHERE draft_id=$1`, id, version, input.Channel, input.Caption, due, hash, post.ID, user)
+	_, err = h.DB.Exec(ctx, `UPDATE buffer_schedules SET version=$2,channel_id=$3,caption=$4,replies=$9,due_at=$5,payload_hash=$6,status='scheduled',provider_post_id=$7,approved_by=$8,updated_at=NOW() WHERE draft_id=$1`, id, version, input.Channel, input.Caption, due, hash, post.ID, user, replies)
 	if err != nil {
 		writeError(w, 502, "Buffer accepted the tweet but its receipt could not be saved. Check Buffer before retrying")
 		return
 	}
-	writeJSON(w, 201, bufferReceipt{DraftID: id, Version: version, ChannelID: input.Channel, Caption: input.Caption, Due: due, Status: "scheduled", PostID: post.ID})
+	writeJSON(w, 201, bufferReceipt{DraftID: id, Version: version, ChannelID: input.Channel, Caption: input.Caption, Replies: replies, Due: due, Status: "scheduled", PostID: post.ID})
 }

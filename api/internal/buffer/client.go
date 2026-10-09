@@ -7,6 +7,7 @@ import (
 	"errors"
 	"io"
 	"net/http"
+	"strings"
 	"time"
 )
 
@@ -29,6 +30,33 @@ type Post struct {
 	Due       time.Time `json:"dueAt"`
 	Status    string    `json:"status"`
 	Actions   []string  `json:"allowedActions"`
+	Metadata  *struct {
+		Thread []struct {
+			Text string `json:"text"`
+		} `json:"thread"`
+	} `json:"metadata"`
+}
+
+// Replies returns the self-replies of an X thread. Buffer stores a thread as
+// every tweet in order, the first one matching the post text.
+func (p Post) Replies() []string {
+	if p.Metadata == nil || len(p.Metadata.Thread) < 2 {
+		return nil
+	}
+	replies := make([]string, 0, len(p.Metadata.Thread)-1)
+	for _, item := range p.Metadata.Thread[1:] {
+		replies = append(replies, item.Text)
+	}
+	return replies
+}
+
+// thread builds Buffer's X thread: the post itself followed by its replies.
+func thread(text string, replies []string) map[string]any {
+	items := []map[string]any{{"text": text, "assets": []any{}}}
+	for _, reply := range replies {
+		items = append(items, map[string]any{"text": reply, "assets": []any{}})
+	}
+	return map[string]any{"twitter": map[string]any{"thread": items}}
 }
 
 func New(key, organization string) *Client {
@@ -76,7 +104,7 @@ func (c *Client) Channels(ctx context.Context) ([]Channel, error) {
 	return data.Channels, err
 }
 
-const fields = `id text channelId dueAt status allowedActions`
+const fields = `id text channelId dueAt status allowedActions metadata{... on TwitterPostMetadata{thread{text}}}`
 
 // Metric is one engagement number Buffer refreshes about once a day.
 type Metric struct {
@@ -154,6 +182,13 @@ func (c *Client) Post(ctx context.Context, id string) (Post, error) {
 	}
 	return data.Post, err
 }
+
+// Rejected is a definite refusal from Buffer, such as the plan's thread limit.
+// Unlike a lost response, it proves no post was created or changed.
+type Rejected struct{ Message string }
+
+func (e *Rejected) Error() string { return "Buffer refused the post: " + e.Message }
+
 func (c *Client) write(ctx context.Context, operation, inputType string, input map[string]any) (Post, error) {
 	var data map[string]struct {
 		Post    *Post  `json:"post"`
@@ -164,14 +199,30 @@ func (c *Client) write(ctx context.Context, operation, inputType string, input m
 		return Post{}, err
 	}
 	r := data[operation]
+	if r.Post == nil && r.Message != "" {
+		// Buffer answered with a typed refusal, so it made no change.
+		message := strings.ReplaceAll(r.Message, c.Key, "[redacted]")
+		if len(message) > 300 {
+			message = message[:300]
+		}
+		return Post{}, &Rejected{Message: message}
+	}
 	if r.Post == nil || r.Post.ID == "" {
 		return Post{}, errors.New("Buffer did not confirm the scheduled post")
 	}
 	return *r.Post, nil
 }
-func (c *Client) Schedule(ctx context.Context, channel, text string, due time.Time) (Post, error) {
-	return c.write(ctx, "createPost", "CreatePostInput", map[string]any{"channelId": channel, "text": text, "dueAt": due.UTC().Format(time.RFC3339), "mode": "customScheduled", "schedulingType": "automatic", "assets": []any{}, "needsApproval": false, "saveToDraft": false})
+
+// Schedule creates one X post, or a thread when replies are given.
+func (c *Client) Schedule(ctx context.Context, channel, text string, replies []string, due time.Time) (Post, error) {
+	input := map[string]any{"channelId": channel, "text": text, "dueAt": due.UTC().Format(time.RFC3339), "mode": "customScheduled", "schedulingType": "automatic", "assets": []any{}, "needsApproval": false, "saveToDraft": false}
+	if len(replies) > 0 {
+		input["metadata"] = thread(text, replies)
+	}
+	return c.write(ctx, "createPost", "CreatePostInput", input)
 }
-func (c *Client) Reschedule(ctx context.Context, id, text string, due time.Time) (Post, error) {
-	return c.write(ctx, "editPost", "EditPostInput", map[string]any{"id": id, "text": text, "dueAt": due.UTC().Format(time.RFC3339), "mode": "customScheduled", "schedulingType": "automatic", "saveToDraft": false})
+
+// Reschedule always sends the thread so removing every reply also clears it in Buffer.
+func (c *Client) Reschedule(ctx context.Context, id, text string, replies []string, due time.Time) (Post, error) {
+	return c.write(ctx, "editPost", "EditPostInput", map[string]any{"id": id, "text": text, "dueAt": due.UTC().Format(time.RFC3339), "mode": "customScheduled", "schedulingType": "automatic", "saveToDraft": false, "metadata": thread(text, replies)})
 }

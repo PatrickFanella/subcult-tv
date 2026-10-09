@@ -231,9 +231,9 @@ export default function PostingDelivery() {
     const attention = failed || overdue || unconfirmed;
     items.push({
       key: `x:${receipt.draft_id}`,
-      draft: { ...draft, text: receipt.caption },
+      draft: { ...draft, text: receipt.caption, replies: receipt.replies ?? [] },
       due,
-      meta: `${channelName(receipt.channel_id)} · X`,
+      meta: `${channelName(receipt.channel_id)} · X${receipt.replies?.length ? ` · thread of ${receipt.replies.length + 1}` : ''}`,
       state: failed
         ? 'Failed in Buffer'
         : unconfirmed
@@ -257,7 +257,7 @@ export default function PostingDelivery() {
       ) : (
         <XPostReview
           key={`${receipt.draft_id}:${receipt.version}`}
-          draft={draft}
+          draft={{ ...draft, replies: receipt.replies ?? [] }}
           delivery={buffer}
           receipt={receipt}
           now={now}
