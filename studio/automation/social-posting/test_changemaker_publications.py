@@ -13,9 +13,18 @@ class PublicationPreparationTests(unittest.TestCase):
         partial = {'evidence': {'status': 'partial', 'failed_source_count': 2, 'items': []}}
         complete = {'evidence': {'status': 'complete', 'failed_source_count': 0, 'omitted_item_count': 0, 'items': []}}
         self.assertIs(complete_changemaker_digest({'drafts': [partial, complete]}), complete)
-        for evidence in [{'status':'partial'}, {'status':'complete','failed_source_count':1}, {'status':'complete','omitted_item_count':1}]:
+        for evidence in [{'status':'partial'}, {'status':'complete','failed_source_count':1}, {'status':'complete','omitted_item_count':1},
+                         {'status':'complete','omitted_item_count':1,'omitted_items':[{'ref':'r#1','reason':'fetch failed'}]},
+                         {'status':'complete','omitted_item_count':2,'omitted_items':[{'ref':'r#1','reason':'exceeds max_items 30'}]}]:
             with self.subTest(evidence=evidence), self.assertRaises(ValueError):
                 complete_changemaker_digest({'drafts':[{'evidence':evidence}]})
+
+    def test_accepts_busy_digest_that_only_hit_the_item_cap(self):
+        from sources import complete_changemaker_digest
+        busy = {'evidence': {'status': 'complete', 'failed_source_count': 0, 'omitted_item_count': 2,
+                             'omitted_items': [{'ref': 'r#1', 'reason': 'exceeds max_items 30'},
+                                               {'ref': 'r#2', 'reason': 'exceeds max_items 30'}]}}
+        self.assertIs(complete_changemaker_digest({'drafts': [busy]}), busy)
 
     def test_generates_two_unapproved_editions_and_deduplicates_digest(self):
         with tempfile.TemporaryDirectory() as tmp:

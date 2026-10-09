@@ -97,13 +97,25 @@ def changemaker_context(cfg: dict, now: datetime) -> dict:
     return result
 
 
+def only_capped(evidence: dict) -> bool:
+    """True when every omitted item was dropped by the item cap, not by a read failure.
+
+    Busy days exceed the cap. The included items are still fully collected, and
+    drafts may only cite included items, so the cap alone must not block a day.
+    """
+    omitted = evidence.get('omitted_items') or []
+    if len(omitted) != (evidence.get('omitted_item_count') or 0):
+        return False
+    return all(str(item.get('reason', '')).startswith('exceeds max_items') for item in omitted)
+
+
 def complete_changemaker_digest(context: dict) -> dict:
-    """Choose a verified recent digest without relaxing evidence completeness."""
+    """Choose a verified recent digest. Failed sources and unexplained omissions still block it."""
     for digest in context.get('drafts', []):
         evidence = digest.get('evidence', {})
         if (evidence.get('status') == 'complete'
                 and not evidence.get('failed_source_count')
-                and not evidence.get('omitted_item_count')):
+                and only_capped(evidence)):
             return digest
     raise ValueError('Incomplete Changemaker evidence')
 
