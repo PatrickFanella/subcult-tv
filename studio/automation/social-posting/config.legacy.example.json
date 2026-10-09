@@ -3,8 +3,6 @@
   "state": "/home/onnwee/.local/state/social-posting",
   "codex": "/home/onnwee/.local/bin/codex",
   "model": "gpt-6.1-sol",
-  "sp_command": "/home/onnwee/.local/bin/sp-mcp",
-  "sp_data": "/home/onnwee/.local/share/super-productivity-mcp",
   "organization_id": "695ca7c0b9aa5378e4b99613",
   "first_week": "2026-W41",
   "timezone": "America/Chicago",
@@ -95,11 +93,6 @@
     "subcult": "695ca843457dae6a34e18809",
     "clpr": "697290bb1214300f603edb2d"
   },
-  "projects": [
-    "_k67HUz0G7703G71hxlne",
-    "8JT8sr32874Xnq7zjH-eR",
-    "8bZ2VVWHV8k9lFaLNxEQy"
-  ],
   "notes": [
     "001 Projects/Works/Social Posts/Social Posting Automation Plan.md",
     "001 Projects/Works/Social Posts/Product Claims Register.md",

@@ -135,7 +135,7 @@ def execute(cfg):
             runner.atomic_write(directory/'sources.json',json.dumps(context,indent=2)+'\n')
             prompt=(runner.HERE/'radar-prompt.md').read_text()+'\n\n'+json.dumps({'now':now.isoformat(),
                 'timezone':cfg['timezone'],'channels':cfg['channels'],'organization_id':cfg['organization_id'],
-                'projects':cfg['projects'],'cadence':cfg['cadence'],'context':context})
+                'cadence':cfg['cadence'],'context':context})
             runner.atomic_write(directory/'request.txt',prompt)
             command = runner.codex_command(cfg,directory)
             command[command.index('--output-schema')+1] = str(runner.HERE/'radar.schema.json')
