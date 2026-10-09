@@ -139,6 +139,7 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 			admin.Get("/admin/studio/decisions", h.DraftDecisions)
 			admin.Get("/admin/studio/delivery", h.SocialDelivery)
 			admin.Get("/admin/studio/buffer", h.BufferDelivery)
+			admin.Get("/admin/studio/buffer/history", h.BufferHistory)
 			admin.Post("/admin/studio/buffer/{id}/approve", h.ApproveBufferDraft)
 			admin.Put("/admin/studio/buffer/{id}/schedule", h.EditBufferDraft)
 			admin.Post("/admin/studio/delivery", h.ApproveSchedule)
@@ -173,6 +174,7 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 
 			// Newsletter management
 			admin.Get("/newsletter/subscribers", h.ListSubscribers)
+			admin.Post("/newsletter/subscribers/sync", h.SyncSubscribers)
 		})
 	})
 

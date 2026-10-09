@@ -100,6 +100,33 @@ func (h *Handler) Unsubscribe(w http.ResponseWriter, r *http.Request) {
 	})
 }
 
+// SyncSubscribers marks local sign-ups confirmed when Brevo lists them on the
+// newsletter list (admin only). It covers confirmations whose webhook never
+// arrived. It never unconfirms anyone; unsubscribes still come from the
+// unsubscribe link or the webhook.
+func (h *Handler) SyncSubscribers(w http.ResponseWriter, r *http.Request) {
+	if h.Mail == nil || !h.Mail.NewsletterEnabled() {
+		writeError(w, http.StatusServiceUnavailable, "Brevo double opt-in is not configured")
+		return
+	}
+	ctx, cancel := context.WithTimeout(r.Context(), 30*time.Second)
+	defer cancel()
+	members, err := h.Mail.NewsletterMembers(ctx)
+	if err != nil {
+		slog.Error("newsletter member sync failed", "error", err)
+		writeError(w, http.StatusBadGateway, "Brevo did not return the newsletter list. Try again shortly.")
+		return
+	}
+	tag, err := h.DB.Exec(r.Context(),
+		`UPDATE subscribers SET confirmed = TRUE
+		 WHERE email = ANY($1) AND unsubscribed_at IS NULL AND NOT confirmed`, members)
+	if err != nil {
+		writeError(w, http.StatusInternalServerError, "failed to update subscribers")
+		return
+	}
+	writeJSON(w, http.StatusOK, map[string]int64{"confirmed": tag.RowsAffected(), "brevo_members": int64(len(members))})
+}
+
 // normalizeEmail trims and lowercases an address and checks its syntax.
 func normalizeEmail(raw string) (string, bool) {
 	addr, err := mail.ParseAddress(strings.TrimSpace(raw))

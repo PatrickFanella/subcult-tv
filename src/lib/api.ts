@@ -315,6 +315,11 @@ export async function subscribe(email: string) {
   });
 }
 
+export const syncSubscribers = () =>
+  apiFetch<{ confirmed: number; brevo_members: number }>('/api/v1/newsletter/subscribers/sync', {
+    method: 'POST',
+  });
+
 export async function listSubscribers(opts?: { page?: number; perPage?: number }) {
   const params = new URLSearchParams();
   if (opts?.page) params.set('page', String(opts.page));
@@ -821,6 +826,27 @@ export interface BufferDelivery {
   receipts: BufferReceipt[];
 }
 export const getBufferDelivery = () => apiFetch<BufferDelivery>('/api/v1/admin/studio/buffer');
+/** A Buffer X post with its delivery outcome; read-only. */
+export interface BufferHistoryPost {
+  id: string;
+  text: string;
+  channelId: string;
+  dueAt: string;
+  status: 'draft' | 'needs_approval' | 'scheduled' | 'sending' | 'sent' | 'error' | string;
+  sentAt: string | null;
+  externalLink: string | null;
+  via: string;
+  error: { message: string } | null;
+  metrics: { type: string; value: number }[] | null;
+  metricsUpdatedAt: string | null;
+}
+export interface BufferHistory {
+  configured: boolean;
+  checked_at?: string;
+  posts: BufferHistoryPost[];
+}
+export const getBufferHistory = (refresh = false) =>
+  apiFetch<BufferHistory>(`/api/v1/admin/studio/buffer/history${refresh ? '?refresh=1' : ''}`);
 export const approveBufferDraft = (
   id: string,
   input: {

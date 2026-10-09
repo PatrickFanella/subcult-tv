@@ -12,6 +12,9 @@ vi.mock('@/lib/api', () => ({
   getReviewDrafts: vi.fn().mockRejectedValue(new Error('Review unavailable')),
   getPublications: vi.fn().mockRejectedValue(new Error('Publications unavailable')),
   getDraftDecisions: vi.fn().mockRejectedValue(new Error('Decisions unavailable')),
+  getSocialDelivery: vi.fn().mockRejectedValue(new Error('PostyBirb unavailable')),
+  getBufferDelivery: vi.fn().mockRejectedValue(new Error('Buffer unavailable')),
+  getBufferHistory: vi.fn().mockRejectedValue(new Error('Buffer unavailable')),
 }));
 afterEach(cleanup);
 it('shows unavailable dashboard counts and actual read failures instead of healthy status', async () => {

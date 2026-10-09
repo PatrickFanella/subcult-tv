@@ -23,6 +23,7 @@ type Mailer interface {
 	NewsletterEnabled() bool
 	RequestDoubleOptIn(ctx context.Context, email string) error
 	RemoveFromNewsletter(ctx context.Context, email string) error
+	NewsletterMembers(ctx context.Context) ([]string, error)
 }
 
 // MailSettings are the addresses used for site email.
