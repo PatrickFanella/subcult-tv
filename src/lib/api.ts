@@ -528,6 +528,8 @@ export interface PostingDraft {
   week: string;
   account: string;
   text: string;
+  /** X self-replies posted under the text as one thread. */
+  replies?: string[];
   due_at: string;
   expires_at: string;
   evidence: string;
@@ -816,6 +818,7 @@ export interface BufferReceipt {
   version: number;
   channel_id: string;
   caption: string;
+  replies?: string[] | null;
   due_at: string;
   status: 'submitting' | 'scheduled' | 'uncertain';
   post_id: string;
@@ -852,6 +855,7 @@ export const approveBufferDraft = (
   input: {
     channel_id: string;
     caption: string;
+    replies: string[];
     original_text: string;
     due_at: string;
     approved: boolean;
@@ -866,6 +870,7 @@ export const editBufferDraft = (
   input: {
     channel_id: string;
     caption: string;
+    replies: string[];
     due_at: string;
     approved: boolean;
     version: number;

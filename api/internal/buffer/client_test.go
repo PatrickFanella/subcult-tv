@@ -3,6 +3,7 @@ package buffer
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"net/http"
 	"net/http/httptest"
 	"strings"
@@ -56,9 +57,9 @@ func TestSchedulingContract(t *testing.T) {
 			var p Post
 			var err error
 			if edit {
-				p, err = client.Reschedule(context.Background(), "post-1", "Exact tweet", due)
+				p, err = client.Reschedule(context.Background(), "post-1", "Exact tweet", nil, due)
 			} else {
-				p, err = client.Schedule(context.Background(), "channel-1", "Exact tweet", due)
+				p, err = client.Schedule(context.Background(), "channel-1", "Exact tweet", nil, due)
 			}
 			if err != nil || p.ID != "post-1" || calls != 1 {
 				t.Fatal("unconfirmed or repeated write", p, err, calls)
@@ -73,7 +74,7 @@ func TestUnknownWriteIsNeverRetriedOrLeaked(t *testing.T) {
 		server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) { calls++; w.Write([]byte(response)) }))
 		client := New("private-key", "org")
 		client.URL = server.URL
-		_, err := client.Schedule(context.Background(), "channel", "Tweet", time.Now())
+		_, err := client.Schedule(context.Background(), "channel", "Tweet", nil, time.Now())
 		server.Close()
 		if err == nil || strings.Contains(err.Error(), "private-key") || calls != 1 {
 			t.Fatal("unsafe failure", err, calls)
@@ -110,5 +111,47 @@ func TestHistoryReadsOutcomeAndMetrics(t *testing.T) {
 	posts, err := client.History(context.Background(), []string{"c"}, time.Now())
 	if err != nil || len(posts) != 1 || posts[0].Error == nil || posts[0].Error.Message != "Token expired" || posts[0].Metrics[1].Value.String() != "2.5" {
 		t.Fatal("history not decoded", posts, err)
+	}
+}
+
+func TestThreadPayloadAndReadback(t *testing.T) {
+	var sent map[string]any
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		var body struct {
+			Variables struct {
+				Input map[string]any `json:"input"`
+			} `json:"variables"`
+		}
+		json.NewDecoder(r.Body).Decode(&body)
+		sent = body.Variables.Input
+		w.Write([]byte(`{"data":{"createPost":{"post":{"id":"p","text":"Opener","channelId":"c","status":"scheduled","metadata":{"thread":[{"text":"Opener"},{"text":"Reply"}]}}}}}`))
+	}))
+	defer server.Close()
+	client := New("key", "org")
+	client.URL = server.URL
+	post, err := client.Schedule(context.Background(), "c", "Opener", []string{"Reply"}, time.Now())
+	if err != nil {
+		t.Fatal(err)
+	}
+	thread := sent["metadata"].(map[string]any)["twitter"].(map[string]any)["thread"].([]any)
+	if len(thread) != 2 || thread[0].(map[string]any)["text"] != "Opener" || thread[1].(map[string]any)["text"] != "Reply" {
+		t.Fatal("thread must list the opener then its replies", thread)
+	}
+	if replies := post.Replies(); len(replies) != 1 || replies[0] != "Reply" {
+		t.Fatal("thread readback", replies)
+	}
+}
+
+func TestRefusalIsDefiniteAndRedacted(t *testing.T) {
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Write([]byte(`{"data":{"createPost":{"message":"Thread limit reached for key"}}}`))
+	}))
+	defer server.Close()
+	client := New("key", "org")
+	client.URL = server.URL
+	_, err := client.Schedule(context.Background(), "c", "Opener", []string{"Reply"}, time.Now())
+	var rejected *Rejected
+	if !errors.As(err, &rejected) || strings.Contains(rejected.Message, "key") {
+		t.Fatal("refusal not typed or not redacted", err)
 	}
 }

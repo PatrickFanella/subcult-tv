@@ -64,6 +64,17 @@ class PostingExportTests(unittest.TestCase):
             self.assertEqual(platforms['changemaker:0'],'instagram')
             self.assertEqual(platforms['plan:1'],'bluesky')
 
+    def test_replies_are_exported_and_bounded(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state=Path(tmp);run=state/'runs'/'plan';run.mkdir(parents=True)
+            (run/'receipt.json').write_text(json.dumps({'mode':'plan','status':'success','run_id':'plan','week':'2026-W41','draft_count':2}))
+            (run/'result.json').write_text(json.dumps({'drafts':[
+                {'account':'subcult','text':'Opener','replies':['One','','Two','Three','Four',7]},
+                {'account':'subcult','text':'Single'}]}))
+            drafts={d['id']:d for d in snapshot(state)['drafts']}
+            self.assertEqual(drafts['plan:0']['replies'],['One','Two','Three'])
+            self.assertNotIn('replies',drafts['plan:1'])
+
     def test_contract_fields_are_bounded_and_sources_are_titles_only(self):
         import hashlib
         with tempfile.TemporaryDirectory() as tmp:

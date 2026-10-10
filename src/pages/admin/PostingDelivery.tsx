@@ -231,9 +231,9 @@ export default function PostingDelivery() {
     const attention = failed || overdue || unconfirmed;
     items.push({
       key: `x:${receipt.draft_id}`,
-      draft: { ...draft, text: receipt.caption },
+      draft: { ...draft, text: receipt.caption, replies: receipt.replies ?? [] },
       due,
-      meta: `${channelName(receipt.channel_id)} · X`,
+      meta: `${channelName(receipt.channel_id)} · X${receipt.replies?.length ? ` · thread of ${receipt.replies.length + 1}` : ''}`,
       state: failed
         ? 'Failed in Buffer'
         : unconfirmed
@@ -257,7 +257,7 @@ export default function PostingDelivery() {
       ) : (
         <XPostReview
           key={`${receipt.draft_id}:${receipt.version}`}
-          draft={draft}
+          draft={{ ...draft, replies: receipt.replies ?? [] }}
           delivery={buffer}
           receipt={receipt}
           now={now}
@@ -390,7 +390,7 @@ export default function PostingDelivery() {
         )}
         {sentX.length ? (
           <div className="posting-history">
-            <table>
+            <table className="stack-table">
               <caption>X posts sent in the previous 30 days</caption>
               <thead>
                 <tr>
@@ -403,9 +403,9 @@ export default function PostingDelivery() {
               <tbody>
                 {sentX.map((p) => (
                   <tr key={p.id}>
-                    <td>{channelName(p.channelId)}</td>
-                    <td>{new Date(p.sentAt || p.dueAt).toLocaleString()}</td>
-                    <td>
+                    <td data-label="Account">{channelName(p.channelId)}</td>
+                    <td data-label="Sent">{new Date(p.sentAt || p.dueAt).toLocaleString()}</td>
+                    <td data-label="Post" className="posting-history-text">
                       {p.externalLink ? (
                         <a href={p.externalLink} target="_blank" rel="noreferrer">
                           {firstLine(p.text, 70)} ↗
@@ -415,7 +415,9 @@ export default function PostingDelivery() {
                       )}
                       {p.via === 'network' && <span className="studio-note"> · posted on X</span>}
                     </td>
-                    <td>{metricSummary(p).join(' · ') || 'No stats yet'}</td>
+                    <td data-label="Stats" className="posting-history-text">
+                      {metricSummary(p).join(' · ') || 'No stats yet'}
+                    </td>
                   </tr>
                 ))}
               </tbody>

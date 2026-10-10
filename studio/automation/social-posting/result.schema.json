@@ -36,6 +36,7 @@
           "candidate_id",
           "account",
           "text",
+          "replies",
           "due_at",
           "evidence",
           "next_check",
@@ -55,6 +56,12 @@
           },
           "text": {
             "type": "string"
+          },
+          "replies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "due_at": {
             "type": "string"

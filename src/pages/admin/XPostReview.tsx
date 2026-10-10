@@ -9,6 +9,9 @@ import {
 import { leadProblem, matchAccount, slotLabel, xLength } from '@/lib/review-queue';
 import TextPostCard from './TextPostCard';
 
+/** Buffer's plan allows one scheduled thread per X account; keep threads short. */
+const MAX_REPLIES = 3;
+
 function localTime(value: string) {
   const date = new Date(value);
   return Number.isNaN(date.valueOf())
@@ -32,6 +35,7 @@ export default function XPostReview({
 }) {
   const channels = delivery?.channels ?? [];
   const [caption, setCaption] = useState(receipt?.caption ?? draft.text);
+  const [replies, setReplies] = useState<string[]>(() => receipt?.replies ?? draft.replies ?? []);
   const [channel, setChannel] = useState(
     () =>
       receipt?.channel_id ||
@@ -64,10 +68,14 @@ export default function XPostReview({
             ? 'This X channel is disconnected, locked or paused in Buffer.'
             : !caption.trim() || xLength(caption) > 280
               ? 'Write a tweet up to 280 characters.'
-              : leadProblem(new Date(due).valueOf(), now);
+              : replies.some((reply) => !reply.trim() || xLength(reply) > 280)
+                ? 'Each reply needs text, up to 280 characters. Remove empty replies.'
+                : leadProblem(new Date(due).valueOf(), now);
   const changed =
     !receipt ||
     caption.trim() !== receipt.caption ||
+    replies.map((reply) => reply.trim()).join('\n\u0000') !==
+      (receipt.replies ?? []).join('\n\u0000') ||
     new Date(due).valueOf() !== new Date(receipt.due_at).valueOf();
   async function submit() {
     setBusy(true);
@@ -75,6 +83,7 @@ export default function XPostReview({
     const input = {
       channel_id: channel,
       caption,
+      replies,
       due_at: new Date(due).toISOString(),
       approved: true,
     };
@@ -93,7 +102,7 @@ export default function XPostReview({
   }
   return (
     <TextPostCard
-      draft={{ ...draft, text: caption, due_at: receipt?.due_at ?? draft.due_at }}
+      draft={{ ...draft, text: caption, replies, due_at: receipt?.due_at ?? draft.due_at }}
       expired={!receipt && expired}
       scheduling
       scheduled={receipt?.status === 'scheduled'}
@@ -151,6 +160,52 @@ export default function XPostReview({
             }}
           />
         </label>
+        <fieldset className="x-replies">
+          <legend>Replies under this tweet</legend>
+          <p className="studio-note">
+            Posted as a thread right after the tweet. Buffer allows one scheduled thread per X
+            account at a time.
+          </p>
+          {replies.map((reply, i) => (
+            <div key={i} className="x-reply-field">
+              <label>
+                Reply {i + 1} · {xLength(reply)} / 280
+                <textarea
+                  value={reply}
+                  disabled={busy}
+                  rows={3}
+                  onChange={(e) => {
+                    setReplies(replies.map((r, j) => (j === i ? e.target.value : r)));
+                    setApproved(false);
+                  }}
+                />
+              </label>
+              <button
+                type="button"
+                disabled={busy}
+                aria-label={`Remove reply ${i + 1}`}
+                onClick={() => {
+                  setReplies(replies.filter((_, j) => j !== i));
+                  setApproved(false);
+                }}
+              >
+                Remove
+              </button>
+            </div>
+          ))}
+          {replies.length < MAX_REPLIES && (
+            <button
+              type="button"
+              disabled={busy}
+              onClick={() => {
+                setReplies([...replies, '']);
+                setApproved(false);
+              }}
+            >
+              Add a reply
+            </button>
+          )}
+        </fieldset>
         <label>
           Publish time
           <input
@@ -170,7 +225,7 @@ export default function XPostReview({
             disabled={busy}
             onChange={(e) => setApproved(e.target.checked)}
           />
-          I approve this exact tweet, account and publish time.
+          I approve this exact {replies.length ? 'thread' : 'tweet'}, account and publish time.
         </label>
         {problem && <p role="alert">{problem}</p>}
         {error && <p role="alert">{error}</p>}

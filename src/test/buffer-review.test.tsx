@@ -126,6 +126,37 @@ describe('Buffer approval', () => {
     expect(approveBufferDraft).not.toHaveBeenCalled();
   });
 
+  it('schedules drafted replies as a thread and lets the owner edit them', async () => {
+    const saved = vi.fn();
+    render(
+      <XPostReview
+        draft={{ ...draft, replies: ['Full notes: https://subcult.tv/development'] }}
+        delivery={delivery}
+        now={now}
+        onSaved={saved}
+      />,
+    );
+    expect(screen.getByLabelText(/Reply 1/)).toHaveValue(
+      'Full notes: https://subcult.tv/development',
+    );
+    fireEvent.click(screen.getByRole('button', { name: 'Add a reply' }));
+    const approve = () =>
+      fireEvent.click(
+        screen.getByLabelText('I approve this exact thread, account and publish time.'),
+      );
+    approve();
+    expect(screen.getByRole('alert')).toHaveTextContent('Remove empty replies');
+    expect(screen.getByRole('button', { name: /Approve & schedule/ })).toBeDisabled();
+    fireEvent.click(screen.getByRole('button', { name: 'Remove reply 2' }));
+    approve();
+    fireEvent.click(screen.getByRole('button', { name: /Approve & schedule/ }));
+    await waitFor(() => expect(saved).toHaveBeenCalledOnce());
+    expect(approveBufferDraft).toHaveBeenCalledWith(
+      draft.id,
+      expect.objectContaining({ replies: ['Full notes: https://subcult.tv/development'] }),
+    );
+  });
+
   it('blocks retries after an uncertain write', async () => {
     vi.mocked(approveBufferDraft).mockRejectedValue(
       new Error('Buffer scheduling could not be confirmed'),

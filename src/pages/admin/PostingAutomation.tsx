@@ -109,7 +109,7 @@ export default function PostingAutomation() {
             )}
           </section>
           <div className="posting-history">
-            <table>
+            <table className="stack-table">
               <caption>Recent runs</caption>
               <thead>
                 <tr>
@@ -122,10 +122,10 @@ export default function PostingAutomation() {
               <tbody>
                 {data.runs.map((r, i) => (
                   <tr key={`${r.run_id}:${i}`}>
-                    <td>{readable(r.checked_at || r.observed_at)}</td>
-                    <td>{laneName(r.mode)}</td>
-                    <td>{runStatusLabel(r.status)}</td>
-                    <td>{r.draft_count ?? '—'}</td>
+                    <td data-label="When">{readable(r.checked_at || r.observed_at)}</td>
+                    <td data-label="Job">{laneName(r.mode)}</td>
+                    <td data-label="Result">{runStatusLabel(r.status)}</td>
+                    <td data-label="Drafts">{r.draft_count ?? '—'}</td>
                   </tr>
                 ))}
               </tbody>

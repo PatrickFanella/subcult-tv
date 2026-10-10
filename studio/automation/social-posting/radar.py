@@ -44,6 +44,7 @@ def validate(result, context, cfg, now):
         raise ValueError('Too many timely drafts in one batch')
     sources = {item['id']:item for item in context['items']}
     seen = set()
+    threads = set()
     slots = {}
     weekly_counts = {}
     for slot in context.get('prepared_slots', []):
@@ -59,6 +60,11 @@ def validate(result, context, cfg, now):
             raise ValueError('Timely draft references an uncollected source')
         if not draft['text'].strip() or len(draft['text']) > 280 or 'git.subcult.tv' in draft['text']:
             raise ValueError('Invalid public timely copy')
+        runner.validate_replies(draft)
+        if draft.get('replies'):
+            if draft['account'] in threads:
+                raise ValueError('Buffer allows one scheduled thread per X account')
+            threads.add(draft['account'])
         due = datetime.fromisoformat(draft['due_at'])
         expiry = datetime.fromisoformat(draft['expires_at'])
         if due.tzinfo is None or expiry.tzinfo is None or not now < due <= expiry <= now+timedelta(hours=24):

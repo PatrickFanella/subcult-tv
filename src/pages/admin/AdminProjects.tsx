@@ -188,7 +188,7 @@ export default function AdminProjects() {
         Save project drafts here. Review and publish an update to change an existing public product.
         New product pages and their marketing copy need a separate public selection.
       </p>
-      <div className="studio-switch mb-6">
+      <div className="studio-switch admin-toolbar mb-6">
         <button onClick={importMissing} disabled={loading || saving || !missing.length}>
           Import {missing.length} missing catalog projects
         </button>
@@ -394,7 +394,7 @@ export default function AdminProjects() {
 
       {/* ── Table ───────────────────────────────────────────── */}
       <div className="overflow-x-auto">
-        <table className="admin-table w-full text-sm">
+        <table className="admin-table stack-table w-full text-sm">
           <thead>
             <tr className="border-b border-fog text-left font-mono text-xs text-dust uppercase">
               <th className="py-3 px-3">Name</th>
@@ -416,22 +416,26 @@ export default function AdminProjects() {
                   <div className="text-chalk font-medium">{p.name}</div>
                   <div className="font-mono text-xs text-dust">{p.slug}</div>
                 </td>
-                <td className="py-3 px-3">
+                <td data-label="Status" className="py-3 px-3">
                   <StatusBadge status={p.status} />
                 </td>
-                <td className="py-3 px-3 font-mono text-xs text-bone">
+                <td data-label="Type" className="py-3 px-3 font-mono text-xs text-bone">
                   {Array.isArray(p.type) ? p.type.join(', ') : p.type}
                 </td>
-                <td className="py-3 px-3 text-center">{p.featured ? '★' : '—'}</td>
-                <td className="py-3 px-3 font-mono text-xs text-dust">{p.sort_order}</td>
-                <td className="py-3 px-3">
+                <td data-label="Featured" className="py-3 px-3 text-center">
+                  {p.featured ? '★' : '—'}
+                </td>
+                <td data-label="Order" className="py-3 px-3 font-mono text-xs text-dust">
+                  {p.sort_order}
+                </td>
+                <td data-label="Public update" className="py-3 px-3">
                   {published.some((live) => live.id === p.id)
                     ? published.find((live) => live.id === p.id)?.updated_at === p.updated_at
                       ? 'Published'
                       : 'Draft changes'
                     : 'Curated fallback'}
                 </td>
-                <td className="py-3 px-3">
+                <td data-label="Actions" className="py-3 px-3">
                   <div className="flex gap-2 flex-wrap">
                     <button
                       onClick={() => openEdit(p)}
@@ -439,12 +443,16 @@ export default function AdminProjects() {
                     >
                       EDIT
                     </button>
-                    <button onClick={() => setReviewing(p)} className="font-mono text-xs">
+                    <button
+                      onClick={() => setReviewing(p)}
+                      className="font-mono text-xs text-chalk hover:text-glow cursor-pointer"
+                    >
                       Review public update
                     </button>
                     {published.some((live) => live.id === p.id) && (
                       <button
                         disabled={saving}
+                        className="font-mono text-xs text-chalk hover:text-glow cursor-pointer"
                         onClick={async () => {
                           if (
                             !confirm(

@@ -53,6 +53,21 @@ class RunnerTests(unittest.TestCase):
             with self.subTest(changes=changes), self.assertRaises(ValueError):
                 runner.validate_result(self.draft(**changes), CFG, '2026-W41', '| CLPR-01 | clpr |\n| PATCHWORK-01 | Patchwork |')
 
+    def test_replies_are_bounded_tweets(self):
+        bank = '| CLPR-01 | clpr |'
+        runner.validate_result(self.draft(replies=['Watch it: https://clpr.tv/']), CFG, '2026-W41', bank)
+        runner.validate_result(self.draft(replies=[]), CFG, '2026-W41', bank)
+        for replies in [['a', 'b', 'c', 'd'], [' '], ['x'*281], ['See https://git.subcult.tv/x'], 'not a list']:
+            with self.subTest(replies=replies), self.assertRaises(ValueError):
+                runner.validate_result(self.draft(replies=replies), CFG, '2026-W41', bank)
+
+    def test_one_thread_per_account(self):
+        result = self.draft(replies=['One'])
+        second = {**result['drafts'][0], 'due_at': '2026-10-09T10:34:00-05:00'}
+        result['drafts'].append(second)
+        with self.assertRaisesRegex(ValueError, 'one scheduled thread'):
+            runner.validate_result(result, CFG, '2026-W41', '| CLPR-01 | clpr |')
+
     def test_duplicate_account_slot_is_rejected(self):
         result = self.draft();result['drafts'] *= 2
         with self.assertRaises(ValueError):

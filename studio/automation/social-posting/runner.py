@@ -152,11 +152,25 @@ def codex_command(cfg: dict, directory: Path) -> list[str]:
     return args+['-']
 
 
+MAX_REPLIES = 3
+
+
+def validate_replies(draft: dict) -> None:
+    """Self-replies post under the tweet as one thread; each is a full tweet of its own."""
+    replies = draft.get('replies', [])
+    if not isinstance(replies, list) or len(replies) > MAX_REPLIES:
+        raise ValueError('Too many X replies')
+    for reply in replies:
+        if not isinstance(reply, str) or not reply.strip() or len(reply) > 280 or 'git.subcult.tv' in reply:
+            raise ValueError('Invalid X reply copy')
+
+
 def validate_result(result: dict, cfg: dict, week: str, bank: str, prepared_slots: list | None = None, now: datetime | None = None) -> None:
     if result['week'] != week or len(result['drafts']) > sum(lane['weekly_cap'] for lane in cfg['cadence'].values()):
         raise ValueError('Unexpected week or draft count')
     candidate_ids = set(re.findall(r'\| ([A-Z]+-\d+) \|', bank))
     seen = set()
+    threads = set()
     counts = {}
     daily_counts = {}
     reserved = {}
@@ -178,6 +192,11 @@ def validate_result(result: dict, cfg: dict, week: str, bank: str, prepared_slot
         key = (draft['account'], draft['due_at'])
         if key in seen or not draft['text'].strip() or len(draft['text']) > 280:
             raise ValueError('Duplicate slot or oversized/empty X draft')
+        validate_replies(draft)
+        if draft.get('replies'):
+            if draft['account'] in threads:
+                raise ValueError('Buffer allows one scheduled thread per X account')
+            threads.add(draft['account'])
         seen.add(key)
         due = datetime.fromisoformat(draft['due_at'])
         if due.tzinfo is None or due.astimezone(ZoneInfo(cfg['timezone'])).strftime('%G-W%V') != week:
@@ -215,6 +234,7 @@ def render_result(result: dict, run_id: str, mode: str) -> str:
     for draft in result['drafts']:
         lines += [f'#### {draft["candidate_id"]} / {draft["account"]}', '',
                   f'Intended time: {draft["due_at"]}. State: `draft`.', '', draft['text'], '',
+                  *[f'Reply {n}: {reply}' for n, reply in enumerate(draft.get('replies', []), 1)],
                   'Evidence boundary: '+draft['evidence'], '', 'Asset/check still needed: '+draft['next_check'], '']
         lines += media.render_choice(draft.get('media'))
     lines += ['### Open checks', '']+['- '+x for x in result['open_checks']]
