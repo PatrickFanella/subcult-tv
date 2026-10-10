@@ -175,7 +175,7 @@ export default function PostingDelivery() {
       attention,
       postId: edit.post_id,
       sheet:
-        edit.status === 'scheduled' && edit.post_id && !attention ? (
+        edit.status === 'scheduled' && edit.post_id && (!attention || failed) ? (
           <>
             <QueuedPostEditor
               key={`${edit.draft_id}:${edit.version}`}
@@ -186,6 +186,7 @@ export default function PostingDelivery() {
               times={cadence(draft.account)}
               timeZone={timeZone}
               now={now}
+              failed={failed}
               busy={busy}
               setBusy={setBusy}
               onError={setNotice}
