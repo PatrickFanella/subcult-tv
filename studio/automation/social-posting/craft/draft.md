@@ -6,6 +6,8 @@ For each item in the brief, write three complete captions from the angles the br
 
 When `mode` is `showcase`, the story is one real use of the live product as it is today, not a change; skip the maturity sentence when the brief's maturity is "".
 
+When `mode` is `weekly`, the post recaps this week's work and ends with exactly one ask: `cta.ask`, with `cta.address` written out as plain text and a pointer to the link in bio, because caption links are not clickable. Say nothing about the destination beyond `cta.facts`. No other link, hashtag ask or second call to action.
+
 ## The caption
 
 - The reader is scrolling on a phone. The first line is all they see before "more". It is the brief's hook or better. It must work alone.

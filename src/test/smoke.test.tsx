@@ -174,6 +174,13 @@ describe('smoke: app shell', () => {
     expect(await screen.findByRole('heading', { name: 'SIGNAL LOST' })).toBeInTheDocument();
   });
 
+  it('offers the newsletter sign-up on its own page', async () => {
+    renderApp('/newsletter');
+    expect(await screen.findByRole('heading', { name: 'The newsletter' })).toBeInTheDocument();
+    expect(screen.getAllByLabelText('Email address').length).toBeGreaterThan(0);
+    expect(document.title).toBe('Newsletter | SUBCULT');
+  });
+
   it('keeps 404 pages out of search', async () => {
     renderApp('/projects/definitely-not-a-project');
     await screen.findByRole('heading', { name: 'SIGNAL LOST' });

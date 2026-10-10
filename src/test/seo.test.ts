@@ -14,7 +14,7 @@ describe('page metadata', () => {
   it('covers the static pages and every product', () => {
     const paths = pages.map((meta) => meta.path);
     expect(paths).toEqual(
-      expect.arrayContaining(['/', '/products', '/about', '/contact', '/support']),
+      expect.arrayContaining(['/', '/products', '/about', '/contact', '/support', '/newsletter']),
     );
     expect(paths.filter((path) => path.startsWith('/products/'))).toHaveLength(10);
   });

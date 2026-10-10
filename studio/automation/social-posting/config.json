@@ -5,6 +5,32 @@
   "organization_id": "695ca7c0b9aa5378e4b99613",
   "first_week": "2026-W41",
   "timezone": "America/Chicago",
+  "weekly_cta": {
+    "account": "subcult",
+    "weekday": 4,
+    "time": "17:30",
+    "days": 7,
+    "rotation": [
+      {
+        "id": "patreon",
+        "address": "patreon.com/subcult",
+        "ask": "Follow or join SUBCULT on Patreon",
+        "facts": "Following on Patreon is free and shows the public posts. Paying doesn't unlock the software; it stays public. Paid members get private Discord channels and supporter posts, with no fixed posting schedule. Check the live Patreon page before naming tiers, prices or benefits."
+      },
+      {
+        "id": "newsletter",
+        "address": "subcult.tv/newsletter",
+        "ask": "Get the monthly newsletter",
+        "facts": "One email a month with releases and what we're working on. Sign-up is confirmed by clicking the link in the first email, and every email has an unsubscribe link."
+      },
+      {
+        "id": "support",
+        "address": "subcult.tv/support",
+        "ask": "Read how to support the workshop",
+        "facts": "The support page explains that paying doesn't unlock the software, which stays public, and that Patreon members get private Discord channels and supporter posts with no fixed posting schedule."
+      }
+    ]
+  },
   "cadence": {
     "patrick": {
       "days": [

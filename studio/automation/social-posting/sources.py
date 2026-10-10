@@ -58,16 +58,16 @@ def artifact_bytes(artifact: dict) -> bytes:
     return content
 
 
-def changemaker_context(cfg: dict, now: datetime) -> dict:
+def changemaker_context(cfg: dict, now: datetime, days: int = 3, limit: int = 2) -> dict:
     base, token = control_settings(Path(cfg['env_file']))
     page = get_json(base+'/api/runs?limit=100', token)
     runs = [r for r in page['runs'] if r['workflow_id'] == 'changemaker-daily-digest'
             and r['status'] == 'succeeded'
-            and datetime.fromisoformat(r['created_at'].replace('Z', '+00:00')) >= now-timedelta(days=3)]
+            and datetime.fromisoformat(r['created_at'].replace('Z', '+00:00')) >= now-timedelta(days=days)]
     result = {'status': 'no_recent_run', 'checked_at': now.isoformat(), 'drafts': [],
               'scan_truncated': bool(page.get('next_cursor'))}
     threads = set()
-    for run in runs[:6]:
+    for run in runs[:max(6, limit*3)]:
         review = get_json(base+'/api/changemaker/drafts/'+urllib.parse.quote(run['id'], safe=''), token)
         if review['thread_id'] in threads:
             continue
@@ -90,7 +90,7 @@ def changemaker_context(cfg: dict, now: datetime) -> dict:
             'evidence_sha256':version['evidence_sha256'], 'grounding_status':version['grounding_status'],
             'draft':draft.decode(), 'evidence':json.loads(evidence_bytes),
             'social_approval':False})
-        if len(result['drafts']) == 2:
+        if len(result['drafts']) == limit:
             break
     if result['drafts']:
         result['status'] = 'available'

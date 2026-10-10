@@ -6,6 +6,8 @@ Read each draft twice: once as a stranger scrolling on a phone who has never hea
 
 When `mode` is `showcase`, judge the post as an introduction to a live product: the story is one real use, and facts come from the claims register and the captured page.
 
+When `mode` is `weekly`, judge the post as a weekly recap that earns one ask. Flag any claim about the destination that is not in `cta.facts`, a missing or doubled ask, a missing `cta.address`, and an ask that arrives before the post has shown any work.
+
 ## Score each draft from 1 to 5 on
 
 - hook: would the first line, alone, stop a stranger and make them tap "more"? 5 = specific, situational, creates a question the reader wants answered; 1 = generic or a status line with no concrete point. Judge a maker's opening or product name by the choice, behavior or use it names, not by its opening words.
