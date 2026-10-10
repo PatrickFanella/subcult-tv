@@ -98,6 +98,17 @@ func main() {
 	h.SocialAccounts = strings.FieldsFunc(os.Getenv("POSTYBIRB_INSTAGRAM_ACCOUNT_IDS"), func(r rune) bool { return r == ',' || r == ' ' })
 	h.PostingMediaBaseURL = os.Getenv("POSTING_MEDIA_BASE_URL")
 	h.PostingPreparationKey = os.Getenv("POSTING_PREPARATION_KEY")
+	h.DevelopmentAutoPublish = os.Getenv("DEVELOPMENT_AUTO_PUBLISH") == "true"
+	if h.DevelopmentAutoPublish {
+		publishCtx, cancel := context.WithTimeout(ctx, time.Minute)
+		count, err := h.PublishDevelopmentBacklog(publishCtx)
+		cancel()
+		if err != nil {
+			slog.Error("publish Development backlog", "error", err)
+			os.Exit(1)
+		}
+		slog.Info("Development automatic publication enabled", "backlog_published", count)
+	}
 	if client := buffer.New(os.Getenv("BUFFER_API_KEY"), os.Getenv("BUFFER_ORGANIZATION_ID")); client != nil {
 		h.BufferPosting = client
 	}

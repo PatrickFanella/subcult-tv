@@ -1,6 +1,6 @@
 # Posting review and daily Development log
 
-The admin Posts area separates Instagram review, delivery evidence, website entries, Patreon editions and preparation jobs. All new drafts require manual approval. Saving an edit does not approve or dispatch it. Approval submits the saved version; stale edits and approvals return a conflict.
+The admin Posts area separates Instagram review, delivery evidence, website entries, Patreon editions and preparation jobs. New drafts require manual approval unless automatic website Development publication is enabled. Saving an edit does not approve or dispatch it. Approval submits the saved version; stale edits and approvals return a conflict.
 
 Instagram drafts need an enabled configured PostyBirb account, a JPEG preview and a future publication time within 90 days. Draft preparation should happen at least 24 hours in advance; approval may schedule for later the same day. Account UUIDs are configured through `POSTYBIRB_INSTAGRAM_ACCOUNT_IDS`. Images saved during editing stay behind admin authentication. Approval uploads the selected JPEG privately to PostyBirb before enabling its scheduler. A pending or uncertain submission cannot be sent again with the same approval.
 
@@ -18,7 +18,7 @@ A missed proposed time does not prove that a tweet was never published. Recovery
 
 `studio/automation/social-posting/changemaker_publications.py` reads verified Changemaker output and prepares one website edition and one Patreon edition. It checks complete evidence, accepts only merged pull-request sources, records their identities and hashes, and proposes a time 48 hours ahead. The model cannot run tools or publish. A source digest is prepared once, and imports preserve owner edits.
 
-The service key can call only `POST /api/v1/posting-preparation`, the re-roll claim and finish routes, and `GET /api/v1/posting-preparation/feedback`; it cannot approve a post. Configure `POSTING_PREPARATION_KEY` in the API environment and in the private producer environment, with `POSTING_INGEST_URL=https://subcult.tv/api/v1/posting-preparation`. Keep this credential and generated content outside Git and frontend build contexts.
+The service key can call only `POST /api/v1/posting-preparation`, the re-roll claim and finish routes, and `GET /api/v1/posting-preparation/feedback`; it cannot call approval routes. Website imports can publish under the owner-configured automatic Development policy. Configure `POSTING_PREPARATION_KEY` in the API environment and in the private producer environment, with `POSTING_INGEST_URL=https://subcult.tv/api/v1/posting-preparation`. Keep this credential and generated content outside Git and frontend build contexts.
 
 The user service and timer sources are in `studio/automation/postiz-dashboard/changemaker-publications.*`. The unit uses a separately staged producer source and the existing Studio configuration/state, leaving other Studio consumers on their current source until the repository cutover is verified. Install the shared Python helpers as well as the producer, prompt, schema and voice source. The daily timer runs at 09:25 UTC after Changemaker and Instagram preparation. A timer success proves draft preparation/import only.
 
@@ -47,3 +47,16 @@ Patreon login and native scheduling are separate qualification gates. Until both
 Run frontend tests, type checking, lint and build; the Go suite; and `make check-studio check-studio-automation`. The handler integration tests require `TEST_SOCIAL_DATABASE_URL` pointed at a disposable database. They verify exact saved-version approval, private previews, duplicate prevention, same-day social scheduling, expired radar rejection, blocked Patreon delivery and public website visibility at the approved time.
 
 Deployment must retain the previous images, private environment, source archive, database dump and compose command. The new tables are additive. Roll back application images/configuration without deleting approval or draft history. Never restore a database dump over subsequent owner edits merely to undo the interface.
+
+### Automatic Development publication
+
+Set `DEVELOPMENT_AUTO_PUBLISH=true` on the API to approve and publish prepared
+website Development entries immediately when import commits. The default is
+`false`. Enabling it also publishes existing unapproved website Development
+entries at API startup. Already approved entries keep their publication times;
+Patreon and social drafts still require their existing approval steps.
+
+Automatic approvals record `automatic:development-updates` and the approval time.
+Duplicate preparation requests preserve the existing edition. Private preparation
+evidence stays in authenticated review storage. Disabling the setting restores
+manual approval for future imports; it does not withdraw published entries.
