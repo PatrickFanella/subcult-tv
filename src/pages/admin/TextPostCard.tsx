@@ -4,7 +4,7 @@ import { draftPlatform, laneLabel, X_LIMIT, xLength } from '@/lib/review-queue';
 
 const BLUESKY_LIMIT = 300;
 
-/** Text preview shared by X scheduling and manual Bluesky review. */
+/** Text preview shared by X scheduling and Bluesky scheduling. */
 export default function TextPostCard({
   draft,
   expired,
@@ -26,7 +26,7 @@ export default function TextPostCard({
   async function copy() {
     try {
       await navigator.clipboard.writeText(draft.text);
-      setCopied('Copied. Paste it into Buffer.');
+      setCopied(platform === 'bluesky' ? 'Copied Bluesky text.' : 'Copied. Paste it into Buffer.');
     } catch {
       setCopied('Copy failed. Select the text and copy it manually.');
     }
@@ -38,7 +38,15 @@ export default function TextPostCard({
         <span className="production-badge">
           {draft.account} / {service} · {laneLabel(draft.mode)}
         </span>
-        <span>{scheduled ? 'Approved · Scheduled' : expired ? 'Expired' : 'Post via Buffer'}</span>
+        <span>
+          {scheduled
+            ? 'Approved · Scheduled'
+            : expired
+              ? 'Expired'
+              : scheduling
+                ? 'Needs approval'
+                : 'Post via Buffer'}
+        </span>
       </div>
       <div className="x-preview" aria-label={`${service} preview for ${draft.account}`}>
         <div className="x-preview-header">

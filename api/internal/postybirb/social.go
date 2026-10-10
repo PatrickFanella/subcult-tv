@@ -104,7 +104,7 @@ func (c *Client) Accounts(ctx context.Context) ([]SocialAccount, error) {
 	}
 	result := []SocialAccount{}
 	for _, a := range accounts {
-		if a.Website == "instagram" {
+		if a.Website == "instagram" || a.Website == "bluesky" {
 			result = append(result, SocialAccount{ID: a.ID, Name: a.Name, Identifier: a.Website, Disabled: !a.State.IsLoggedIn || a.State.Status != "loggedIn" || a.State.Pending})
 		}
 	}

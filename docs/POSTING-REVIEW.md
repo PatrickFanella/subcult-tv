@@ -60,3 +60,11 @@ Automatic approvals record `automatic:development-updates` and the approval time
 Duplicate preparation requests preserve the existing edition. Private preparation
 evidence stays in authenticated review storage. Disabling the setting restores
 manual approval for future imports; it does not withdraw published entries.
+
+## Bluesky scheduling
+
+The Bluesky tab schedules reviewed drafts through the existing private PostyBirb connection. Configure `POSTYBIRB_BLUESKY_ACCOUNTS=patrick=<UUID>,subcult=<UUID>,clpr=<UUID>` in the API environment using the verified Bluesky account IDs. Account reads require an allowed UUID, the Bluesky platform and a connected login. The mapping supplies the default account in the reviewer.
+
+Review the text, account and future publish time before approving. The composer accepts text up to 300 code points, or text plus one JPEG under 900 KB with alt text. A proposed media asset is not attached automatically. Upload the intended JPEG or explicitly approve the text-only preview. PostyBirb validates native mentions and platform constraints before the schedule is enabled. X approval and Instagram approval do not grant Bluesky approval.
+
+Migration 016 stores the exact approved copy, media, alt text, time and provider identity. A draft claim and unique content hash prevent duplicate submissions. The provider ID is saved before enabling a future single schedule. Uncertain submissions remain blocked until reconciled in PostyBirb. Manage cancellation, editing and retrying there. Scheduled & delivered shows Bluesky schedules, failures and provider-confirmed `bsky.app/profile/.../post/...` delivery links. Connecting accounts or preparing drafts alone does not publish anything.

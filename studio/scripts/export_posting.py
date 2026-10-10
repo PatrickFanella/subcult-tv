@@ -167,6 +167,8 @@ def snapshot(state=None, source_root=None, media_files=None):
         if not isinstance(result,dict):continue
         for check in result.get('open_checks',[])[:30]:
             if isinstance(check,str):data['checks'].append({'run_id':run_id,'text':check[:4000]})
+        variants = read(result_path.parent/'bluesky-drafts.json')
+        variants = variants[:30] if isinstance(variants, list) else []
         for i,draft in enumerate(result.get('drafts',[])[:30]):
             if not isinstance(draft,dict) or draft.get('account') not in cfg['cadence']:continue
             record = {key:draft.get(key,'') for key in ('account','text','due_at','expires_at','evidence','next_check')}
@@ -178,6 +180,30 @@ def snapshot(state=None, source_root=None, media_files=None):
             record['media'].update(extra.pop('media', {}))
             record.update(extra)
             data['drafts'].append(record)
+            if record['platform'] == 'x':
+                # Bind variants to the completed source draft. Export only review
+                # fields, never eligible_assets paths or destination credentials.
+                variant = next((v for v in variants if isinstance(v, dict)
+                                and v.get('platform') == 'bluesky'
+                                and v.get('account') == record['account']
+                                and v.get('text') == record['text']
+                                and v.get('due_at') == record['due_at']), None)
+                if variant:
+                    sky = {**record, 'id':f'{run_id}:bluesky:{i}', 'platform':'bluesky',
+                           'media':dict(record['media']), 'approval':'unapproved'}
+                    sky.pop('replies', None)
+                    checks = strings(variant.get('checks'), 12, 400)
+                    if draft.get('replies'):
+                        checks.append('Review X replies separately; they are not included in this Bluesky post.')
+                    sky['checklist'] = checks
+                    sky['next_check'] = ' '.join(checks)[:4000]
+                    if sky.get('supersedes'):
+                        parent, sep, index = sky['supersedes'].rpartition(':')
+                        if sep and index.isdigit():
+                            sky['supersedes'] = f'{parent}:bluesky:{index}'
+                        else:
+                            sky.pop('supersedes', None)
+                    data['drafts'].append(sky)
     data['drafts'] = data['drafts'][:200]
     data['checks'] = list({check['text']:check for check in data['checks']}.values())[:60]
     return data

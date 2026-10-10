@@ -112,6 +112,27 @@ class PostingExportTests(unittest.TestCase):
             self.assertNotIn('candidates',d['media'])
             self.assertEqual(files,{sha:media/'a.jpg'})
 
+    def test_bluesky_variants_are_bound_to_completed_x_drafts_and_redacted(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state=Path(tmp);run=state/'runs'/'plan';run.mkdir(parents=True)
+            (run/'receipt.json').write_text(json.dumps({'mode':'plan','status':'success','run_id':'plan','week':'2026-W41','draft_count':1}))
+            draft={'account':'subcult','text':'Reviewed text','due_at':'2026-10-12T14:00:00Z','replies':['X-only link'],'supersedes':'old:0'}
+            (run/'result.json').write_text(json.dumps({'drafts':[draft]}))
+            (run/'bluesky-drafts.json').write_text(json.dumps([
+                {**draft,'platform':'bluesky','state':'approved','publishing_enabled':True,
+                 'checks':['Verify platform mentions'],'eligible_assets':[{'file':'/private/path','token':'secret'}]},
+                {'platform':'bluesky','account':'patrick','text':'Unbound text','due_at':draft['due_at']}]))
+            data=snapshot(state)
+            self.assertEqual(len(data['drafts']),2)
+            sky=next(d for d in data['drafts'] if d['platform']=='bluesky')
+            self.assertEqual(sky['id'],'plan:bluesky:0')
+            self.assertEqual(sky['supersedes'],'old:bluesky:0')
+            self.assertEqual(sky['approval'],'unapproved')
+            self.assertNotIn('replies',sky)
+            self.assertIn('Verify platform mentions',sky['checklist'])
+            for forbidden in ('/private/path','secret','Unbound text','eligible_assets'):
+                self.assertNotIn(forbidden,json.dumps(data))
+
     def test_sources_drop_urls(self):
         with tempfile.TemporaryDirectory() as tmp:
             state=Path(tmp);run=state/'runs'/'p';run.mkdir(parents=True)

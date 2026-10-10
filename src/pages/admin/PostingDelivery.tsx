@@ -1,6 +1,8 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import {
+  getBlueskyDelivery,
+  type BlueskyDelivery,
   getBufferDelivery,
   getBufferHistory,
   getDraftDecisions,
@@ -69,6 +71,7 @@ export default function PostingDelivery() {
   const [saved, setSaved] = useState<ReviewDraft[]>([]);
   const [buffer, setBuffer] = useState<BufferDelivery | null>(null);
   const [history, setHistory] = useState<BufferHistory | null>(null);
+  const [bluesky, setBluesky] = useState<BlueskyDelivery | null>(null);
   const [social, setSocial] = useState<Delivery | null>(null);
   const [decisions, setDecisions] = useState<DraftDecision[]>([]);
   const [errors, setErrors] = useState<string[]>([]);
@@ -93,18 +96,27 @@ export default function PostingDelivery() {
       getBufferDelivery(),
       getBufferHistory(refreshBuffer),
       getSocialDelivery(),
+      getBlueskyDelivery(),
       getDraftDecisions(new Date(Date.now() - 60 * 86400000).toISOString()),
-    ]).then(([p, r, b, h, s, d]) => {
+    ]).then(([p, r, b, h, s, sky, d]) => {
       if (!active) return;
       setPosting(p.status === 'fulfilled' ? p.value : null);
       setSaved(r.status === 'fulfilled' ? r.value : []);
       setBuffer(b.status === 'fulfilled' ? b.value : null);
       setHistory(h.status === 'fulfilled' ? h.value : null);
       setSocial(s.status === 'fulfilled' ? s.value : null);
+      setBluesky(sky.status === 'fulfilled' ? sky.value : null);
       setDecisions(d.status === 'fulfilled' ? d.value : []);
-      const names = ['Preparation', 'Instagram approvals', 'Buffer', 'Buffer history', 'PostyBirb'];
+      const names = [
+        'Preparation',
+        'Instagram approvals',
+        'Buffer',
+        'Buffer history',
+        'PostyBirb',
+        'Bluesky',
+      ];
       setErrors(
-        [p, r, b, h, s].flatMap((result, i) =>
+        [p, r, b, h, s, sky].flatMap((result, i) =>
           result.status === 'rejected'
             ? [
                 `${names[i]}: ${result.reason instanceof Error ? result.reason.message : 'unavailable'}`,
@@ -206,6 +218,51 @@ export default function PostingDelivery() {
             </a>
           </p>
         ),
+    });
+  }
+  for (const receipt of bluesky?.receipts ?? []) {
+    const post = bluesky?.posts.find((p) => p.id === receipt.post_id);
+    if (post?.state === 'PUBLISHED') continue;
+    const due = new Date(receipt.due_at).valueOf();
+    const account =
+      bluesky?.accounts.find((a) => a.id === receipt.account_id)?.profile || 'Bluesky';
+    const draft =
+      draftById(receipt.draft_id) ??
+      standIn(receipt.draft_id, 'bluesky', account, receipt.caption, receipt.due_at);
+    const failed = post?.state === 'ERROR';
+    const overdue = receipt.status === 'scheduled' && due < now - 15 * 60000;
+    const unconfirmed = receipt.status !== 'scheduled';
+    items.push({
+      key: `bluesky:${receipt.draft_id}`,
+      draft: { ...draft, text: receipt.caption },
+      due,
+      meta: `${account} · Bluesky`,
+      state: failed
+        ? 'Failed in PostyBirb'
+        : unconfirmed
+          ? 'Check PostyBirb'
+          : overdue
+            ? 'Overdue: not published'
+            : 'Scheduled',
+      attention: failed || overdue || unconfirmed,
+      postId: receipt.post_id,
+      sheet: (
+        <>
+          <p>{receipt.caption}</p>
+          {receipt.has_media && <p className="studio-note">Image alt text: {receipt.alt_text}</p>}
+          <p className="studio-note">
+            {failed
+              ? 'PostyBirb reports delivery failed.'
+              : unconfirmed
+                ? 'PostyBirb did not confirm this submission. Check it before retrying.'
+                : 'Manage this Bluesky schedule in PostyBirb.'}{' '}
+            <a href="https://postybirb.subcult.tv" target="_blank" rel="noreferrer">
+              Open PostyBirb ↗
+            </a>
+          </p>
+          {goodPost(draft, `${account} Bluesky post: ${firstLine(receipt.caption, 48)}`)}
+        </>
+      ),
     });
   }
   const historyById = new Map((history?.posts ?? []).map((p) => [p.id, p]));
@@ -426,6 +483,30 @@ export default function PostingDelivery() {
           </div>
         ) : (
           history && <p>No X posts sent in the previous 30 days.</p>
+        )}
+      </section>
+      <section className="posting-section">
+        <h2>Sent on Bluesky</h2>
+        {bluesky?.checked_at && (
+          <p className="studio-note">
+            PostyBirb checked {new Date(bluesky.checked_at).toLocaleString()}.
+          </p>
+        )}
+        {bluesky?.posts.some((p) => p.state === 'PUBLISHED') ? (
+          <ul className="posting-checks">
+            {bluesky.posts
+              .filter((p) => p.state === 'PUBLISHED')
+              .map((p) => (
+                <li key={p.id}>
+                  {p.integration.name} ·{' '}
+                  <a href={p.releaseURL} target="_blank" rel="noreferrer">
+                    {firstLine(p.content, 70)} ↗
+                  </a>
+                </li>
+              ))}
+          </ul>
+        ) : (
+          bluesky && <p>No confirmed Bluesky deliveries in the previous 30 days.</p>
         )}
       </section>
       <SocialDelivery draft={null} revision={revision} historyOnly />
