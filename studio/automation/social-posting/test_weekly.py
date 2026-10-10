@@ -102,6 +102,29 @@ class WeeklyTests(unittest.TestCase):
             self.assertNotIn('approved', draft)
             # The weekly slot now shows as held for any other lane.
             self.assertIn(slot.astimezone(timezone.utc), changemaker_instagram.taken_slots(state, NOW))
+            self.assertEqual(result['open_checks'], [])
+
+    def test_flags_a_daily_draft_already_holding_the_slot(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            slot = weekly.next_slot(CFG, NOW)
+            held = state/'runs'/'20261013T000000.000000Z-changemaker'
+            held.mkdir(parents=True)
+            (held/'result.json').write_text(json.dumps({'drafts': [{'due_at': slot.isoformat()}]}))
+            cta = weekly.call_to_action(CFG, slot)
+            draft = {'account': 'subcult', 'source_ids': [], 'product': 'subcult', 'angle': 'ask',
+                     'text': cta['ask']+': '+cta['address']+' (link in bio).', 'alt_text': '', 'next_check': '',
+                     'media': {'kind': 'type', 'headline': 'x'}, 'image': '',
+                     'media_record': {'kind': 'type', 'headline': 'x', 'checks': []},
+                     'craft': {'reader': '', 'reason': '', 'pattern': '', 'scores': {}, 'alternatives': []}}
+            source = Path(tmp)/'studio'
+            (source/'content/social').mkdir(parents=True)
+            (source/'content/social/Product Claims Register.md').write_text('Claims.')
+            with patch.object(weekly, 'changemaker_context', return_value={'drafts': []}), \
+                    patch('craft.weekly', return_value={'drafts': [draft], 'open_checks': []}):
+                receipt = weekly.execute(source, state, NOW)
+            result = json.loads((state/'runs'/receipt['run_id']/'result.json').read_text())
+            self.assertEqual(len(result['open_checks']), 1)
 
 
 if __name__ == '__main__':

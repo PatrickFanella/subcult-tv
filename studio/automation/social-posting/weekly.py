@@ -14,7 +14,7 @@ import os
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from changemaker_instagram import checklist, image_record, recent_captions
+from changemaker_instagram import checklist, image_record, recent_captions, taken_slots
 from feedback import owner_feedback
 from runner import atomic_write
 from sources import changemaker_context, complete_changemaker_digest
@@ -140,7 +140,10 @@ def execute(source_root, state, now=None):
                            'craft': {**draft['craft'], 'angle': draft['angle'], 'product': draft['product'],
                                      'kind': 'weekly', 'week': week, 'cta': cta['id'],
                                      'visual_checks': draft['media_record'].get('checks', [])[-1:]}})
-        atomic_write(directory/'result.json', json.dumps({'drafts': drafts, 'open_checks': staged['open_checks']}, indent=2)+'\n')
+        open_checks = list(staged['open_checks'])
+        if drafts and slot.astimezone(timezone.utc) in taken_slots(state, now):
+            open_checks.append('Another prepared draft already holds this weekly slot; move one of them before approving.')
+        atomic_write(directory/'result.json', json.dumps({'drafts': drafts, 'open_checks': open_checks}, indent=2)+'\n')
         receipt = {'mode': 'changemaker', 'kind': 'weekly', 'week': week, 'cta': cta['id'],
                    'status': 'success' if drafts else 'no_draft', 'run_id': run_id, 'draft_count': len(drafts),
                    'checked_at': now.isoformat(), 'source_identities': [], 'publishing_enabled': False}
