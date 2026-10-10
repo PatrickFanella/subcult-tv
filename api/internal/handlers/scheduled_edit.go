@@ -27,7 +27,8 @@ const editCutoff = 30 * time.Minute
 // because the browser went away.
 const editTimeout = 2 * time.Minute
 
-// EditScheduledDraft changes a post that is already queued in PostyBirb.
+// EditScheduledDraft edits a queued post or explicitly recovers a confirmed
+// failure. retry_now reuses approved content; reschedule_failed approves edits.
 //
 // A time-only change moves the existing submission. A caption, account or
 // image change first creates and validates a replacement, then withdraws the
@@ -58,15 +59,22 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 	}
 	defer r.MultipartForm.RemoveAll()
 	version, err := strconv.Atoi(r.FormValue("version"))
+	action := r.FormValue("action")
+	recoverFailed := action == "retry_now" || action == "reschedule_failed"
+	retryNow := action == "retry_now"
+	if action != "" && !recoverFailed {
+		writeError(w, 400, "Invalid post action")
+		return
+	}
 	caption := strings.TrimSpace(r.FormValue("caption"))
 	account := r.FormValue("account_id")
 	due, dateErr := time.Parse(time.RFC3339, r.FormValue("due_at"))
-	if err != nil || version < 1 || !h.allowedSocial(account) || caption == "" || utf8.RuneCountInString(caption) > 2200 || dateErr != nil {
+	if err != nil || version < 1 || (!retryNow && (!h.allowedSocial(account) || caption == "" || utf8.RuneCountInString(caption) > 2200 || dateErr != nil)) {
 		writeError(w, 400, "Choose an account, caption and publish time")
 		return
 	}
 	due = due.UTC().Truncate(time.Second)
-	if !due.After(time.Now()) || due.After(time.Now().AddDate(0, 0, 90)) {
+	if !retryNow && (!due.After(time.Now()) || due.After(time.Now().AddDate(0, 0, 90))) {
 		writeError(w, 400, "Choose a future publish time within 90 days")
 		return
 	}
@@ -109,15 +117,30 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 409, "Submission is pending or uncertain. Check PostyBirb before editing")
 		return
 	}
-	if oldDue.Before(time.Now().Add(editCutoff)) {
+	if !recoverFailed && oldDue.Before(time.Now().Add(editCutoff)) {
 		writeError(w, 409, "This post publishes within 30 minutes. Change it in PostyBirb")
 		return
+	}
+	if !h.allowedSocial(oldAccount) {
+		writeError(w, 409, "The original Instagram account is no longer allowed")
+		return
+	}
+	if recoverFailed {
+		if err = h.SocialPosting.FailedInstagram(r.Context(), providerID, oldAccount); err != nil {
+			writeError(w, 409, "A completed failure could not be confirmed. Refresh or check PostyBirb before retrying")
+			return
+		}
+	}
+	if retryNow {
+		// Retry the approved bytes, regardless of unsaved editor changes.
+		account, caption, upload = oldAccount, oldCaption, nil
+		due = time.Now().UTC().Truncate(time.Second)
 	}
 	media := oldMedia
 	if upload != nil {
 		media = upload
 	}
-	replace := caption != oldCaption || account != oldAccount || !bytes.Equal(media, oldMedia)
+	replace := recoverFailed || caption != oldCaption || account != oldAccount || !bytes.Equal(media, oldMedia)
 	if !replace && due.Equal(oldDue.UTC().Truncate(time.Second)) {
 		writeJSON(w, 200, map[string]any{"status": "scheduled", "post_id": providerID, "version": current, "changed": false})
 		return
@@ -159,7 +182,13 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 	setStatus := func(value string) {
 		h.DB.Exec(ctx, `UPDATE social_schedules SET status=$2 WHERE request_id=$1`, requestID, value)
 	}
-	if !replace {
+	if recoverFailed {
+		err = h.recoverFailedInstagram(ctx, requestID, providerID, oldAccount, account, caption, media, due, retryNow, &providerID)
+		if err != nil {
+			writeError(w, 502, err.Error())
+			return
+		}
+	} else if !replace {
 		err = h.SocialPosting.RescheduleInstagram(ctx, providerID, oldAccount, oldCaption, due)
 		if errors.Is(err, postybirb.ErrNotQueued) {
 			setStatus("scheduled")
@@ -224,5 +253,47 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 502, "PostyBirb accepted the change, but the local receipt could not be saved. Check PostyBirb before retrying")
 		return
 	}
-	writeJSON(w, 200, map[string]any{"status": "scheduled", "post_id": providerID, "version": current + 1, "changed": true, "replaced": replace})
+	writeJSON(w, 200, map[string]any{"status": "scheduled", "post_id": providerID, "version": current + 1, "changed": true, "replaced": replace, "retried": retryNow})
+}
+
+// recoverFailedInstagram preserves the failed submission as history. The claim
+// and replacement receipt prevent another request from dispatching it twice.
+func (h *Handler) recoverFailedInstagram(ctx context.Context, requestID, failedID, oldAccount, account, caption string, media []byte, due time.Time, immediate bool, providerID *string) error {
+	setStatus := func(value string) {
+		h.DB.Exec(ctx, `UPDATE social_schedules SET status=$2 WHERE request_id=$1`, requestID, value)
+	}
+	replacement, err := h.SocialPosting.CreateInstagram(ctx, account, caption, media)
+	if err == nil {
+		err = h.SocialPosting.ValidateInstagram(ctx, replacement, account, caption)
+	}
+	if err != nil {
+		// No dispatch has happened. An unknown creation outcome stays uncertain.
+		if replacement != "" && h.SocialPosting.DiscardDraft(ctx, replacement) == nil {
+			setStatus("scheduled")
+		} else {
+			setStatus("uncertain")
+		}
+		return errors.New("The replacement could not be prepared. Check PostyBirb before retrying")
+	}
+	if err = h.SocialPosting.FailedInstagram(ctx, failedID, oldAccount); err != nil {
+		h.SocialPosting.DiscardDraft(ctx, replacement)
+		setStatus("scheduled")
+		return errors.New("The original post is no longer confirmed failed. Check PostyBirb")
+	}
+	// Save the replacement before either immediate posting or scheduling.
+	if _, err = h.DB.Exec(ctx, `UPDATE social_schedules SET provider_post_id=$2 WHERE request_id=$1`, requestID, replacement); err != nil {
+		setStatus("uncertain")
+		return errors.New("The replacement receipt could not be saved. Check PostyBirb before retrying")
+	}
+	*providerID = replacement
+	if immediate {
+		err = h.SocialPosting.PostInstagram(ctx, replacement, account, caption)
+	} else {
+		err = h.SocialPosting.QueueInstagram(ctx, replacement, account, caption, due)
+	}
+	if err != nil {
+		setStatus("uncertain")
+		return errors.New("PostyBirb did not confirm the retry. Check PostyBirb before trying again")
+	}
+	return nil
 }

@@ -34,6 +34,8 @@ type fakeSubmission struct {
 	scheduled bool
 	due       string
 	posted    bool
+	postState string
+	completed bool
 }
 
 // statefulProvider is a small PostyBirb stand-in that tracks several
@@ -44,7 +46,11 @@ type statefulProvider struct {
 	subs    map[string]*fakeSubmission
 	deleted []string
 	// invalid makes PostyBirb's validation report an error, as for a logged-out account.
-	invalid bool
+	invalid        bool
+	postingError   bool
+	posts          int
+	postStarted    chan struct{}
+	releasePosting chan struct{}
 }
 
 func (p *statefulProvider) live() []*fakeSubmission {
@@ -80,6 +86,25 @@ func newStatefulProvider(t *testing.T) (*statefulProvider, *postybirb.Client) {
 			id := fmt.Sprintf("post-%d", p.next)
 			p.subs[id] = &fakeSubmission{}
 			json.NewEncoder(w).Encode([]map[string]string{{"id": id}})
+		case r.Method == "POST" && r.URL.Path == "/posting":
+			var body struct {
+				SubmissionID string `json:"submissionId"`
+			}
+			json.NewDecoder(r.Body).Decode(&body)
+			s := p.subs[body.SubmissionID]
+			if s == nil || s.posted {
+				http.Error(w, "invalid posting", 400)
+				return
+			}
+			s.posted, s.postState = true, "PENDING"
+			p.posts++
+			if p.postStarted != nil {
+				close(p.postStarted)
+				<-p.releasePosting
+			}
+			if p.postingError {
+				http.Error(w, "ambiguous response", 502)
+			}
 		case r.Method == "POST" && r.URL.Path == "/website-option":
 			var body struct {
 				AccountID    string `json:"accountId"`
@@ -123,7 +148,7 @@ func newStatefulProvider(t *testing.T) (*statefulProvider, *postybirb.Client) {
 			}
 			var post any
 			if s.posted {
-				post = map[string]any{"unitsOfWork": []any{}}
+				post = map[string]any{"completed": s.completed, "unitsOfWork": []any{map[string]any{"accountId": s.account, "state": s.postState}}}
 			}
 			json.NewEncoder(w).Encode(map[string]any{"id": id, "isScheduled": s.scheduled, "schedule": schedule, "post": post,
 				"files":   []any{map[string]string{"id": "jpeg"}},
@@ -287,4 +312,105 @@ func TestEditScheduledDraftIntegration(t *testing.T) {
 	if status, id, caption, _ := receipt(); status != "scheduled" || id != "post-2" || caption != "Rewritten caption" {
 		t.Fatal("receipt changed after refused edit", status, id, caption)
 	}
+	// Confirmed failures can be edited even after the original due time.
+	markFailed := func(id string) {
+		provider.mu.Lock()
+		s := provider.subs[id]
+		s.posted, s.completed, s.scheduled, s.postState = true, true, false, "FAILED"
+		provider.mu.Unlock()
+	}
+	markFailed("post-2")
+	past := time.Now().Add(-2 * time.Hour).UTC().Truncate(time.Second)
+	db.Exec(ctx, `UPDATE social_schedules SET due_at=$2 WHERE request_id=(SELECT request_id FROM social_review_drafts WHERE draft_id=$1)`, draftID, past)
+	db.Exec(ctx, `UPDATE social_review_drafts SET due_at=$2 WHERE draft_id=$1`, draftID, past)
+	recover := func(version int, action, caption string) *httptest.ResponseRecorder {
+		return send("PUT", path+"/schedule", map[string]string{"version": strconv.Itoa(version), "action": action, "caption": caption, "account_id": "patrick", "due_at": moved.Format(time.RFC3339)}, nil)
+	}
+	if w := recover(2, "reschedule_failed", "New caption"); w.Code != 409 {
+		t.Fatal("stale recovery accepted", w.Code)
+	}
+	provider.mu.Lock()
+	provider.invalid = true
+	provider.mu.Unlock()
+	if w := recover(3, "reschedule_failed", "New caption"); w.Code != 502 {
+		t.Fatal("invalid recovery accepted", w.Code, w.Body.String())
+	}
+	if status, id, _, _ := receipt(); status != "scheduled" || id != "post-2" {
+		t.Fatal("failed receipt lost after rejected recovery", status, id)
+	}
+	provider.mu.Lock()
+	provider.invalid = false
+	provider.mu.Unlock()
+	if w := recover(3, "reschedule_failed", "New caption"); w.Code != 200 {
+		t.Fatal(w.Code, w.Body.String())
+	}
+	status, id, caption, due = receipt()
+	if status != "scheduled" || caption != "New caption" || !due.Equal(moved) || id == "post-2" {
+		t.Fatal("failed post not rescheduled", status, id, caption, due)
+	}
+	if provider.subs["post-2"] == nil || provider.subs["post-2"].scheduled || len(provider.live()) != 1 {
+		t.Fatal("failed history removed or duplicate queued")
+	}
+	if w := recover(3, "retry_now", "Unsaved caption"); w.Code != 409 {
+		t.Fatal("duplicate recovery accepted", w.Code)
+	}
+	// A pending/queued replacement must never be recovered as a failed post.
+	if w := recover(4, "retry_now", "Unsaved caption"); w.Code != 409 {
+		t.Fatal("queued post retried", w.Code)
+	}
+	markFailed(id)
+	if w := recover(4, "retry_now", "Unsaved caption"); w.Code != 200 {
+		t.Fatal(w.Code, w.Body.String())
+	}
+	status, id, caption, due = receipt()
+	if status != "scheduled" || caption != "New caption" || due.After(time.Now()) || provider.posts != 1 || !provider.subs[id].posted {
+		t.Fatal("retry did not use approved content", status, id, caption, due, provider.posts)
+	}
+	if w := recover(4, "retry_now", "Unsaved caption"); w.Code != 409 || provider.posts != 1 {
+		t.Fatal("duplicate immediate posting", w.Code, provider.posts)
+	}
+
+	// A second tab cannot dispatch while the first retry is still running.
+	markFailed(id)
+	provider.mu.Lock()
+	provider.postStarted, provider.releasePosting = make(chan struct{}), make(chan struct{})
+	started, release := provider.postStarted, provider.releasePosting
+	provider.mu.Unlock()
+	done := make(chan *httptest.ResponseRecorder, 1)
+	go func() { done <- recover(5, "retry_now", "Unsaved caption") }()
+	select {
+	case <-started:
+	case <-time.After(5 * time.Second):
+		t.Fatal("retry never dispatched")
+	}
+	if w := recover(5, "retry_now", "Unsaved caption"); w.Code != 409 {
+		close(release)
+		t.Fatal("concurrent retry accepted", w.Code)
+	}
+	close(release)
+	if w := <-done; w.Code != 200 {
+		t.Fatal("first concurrent retry failed", w.Code, w.Body.String())
+	}
+	provider.mu.Lock()
+	provider.postStarted, provider.releasePosting = nil, nil
+	provider.mu.Unlock()
+	status, id, _, _ = receipt()
+	if status != "scheduled" || provider.posts != 2 {
+		t.Fatal("concurrent retry duplicated", status, provider.posts)
+	}
+	// An accepted dispatch with a lost response remains uncertain and cannot retry.
+	markFailed(id)
+	provider.mu.Lock()
+	provider.postingError = true
+	provider.mu.Unlock()
+	if w := recover(6, "retry_now", "Unsaved caption"); w.Code != 502 {
+		t.Fatal("uncertain posting treated as success", w.Code)
+	}
+	if status, _, _, _ := receipt(); status != "uncertain" {
+		t.Fatal("ambiguous retry not blocked", status)
+	}
+	if w := recover(6, "retry_now", "Unsaved caption"); w.Code != 409 || provider.posts != 3 {
+		t.Fatal("uncertain posting retried", w.Code, provider.posts)
+	}
+
 }

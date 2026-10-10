@@ -647,7 +647,7 @@ export async function saveReviewDraft(id: string, form: FormData) {
   if (!response.ok) throw new APIError(result.error || 'Saving failed', response.status);
   return result as { version: number };
 }
-/** Change a post already queued in PostyBirb: a new time moves it; new copy or image replaces it. */
+/** Edit a queued post, or explicitly retry/reschedule a confirmed failed Instagram post. */
 export async function editScheduledDraft(id: string, form: FormData) {
   const token = getToken();
   const response = await fetch(
@@ -663,6 +663,7 @@ export async function editScheduledDraft(id: string, form: FormData) {
     version: number;
     changed: boolean;
     replaced?: boolean;
+    retried?: boolean;
   };
 }
 

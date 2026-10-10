@@ -29,6 +29,7 @@ export default function QueuedPostEditor({
   times,
   timeZone,
   now,
+  failed = false,
   busy,
   setBusy,
   onSaved,
@@ -42,6 +43,7 @@ export default function QueuedPostEditor({
   times: string[];
   timeZone: string;
   now: number;
+  failed?: boolean;
   busy: string;
   setBusy: (value: string) => void;
   onSaved: (message: string) => void;
@@ -50,8 +52,8 @@ export default function QueuedPostEditor({
   const locked = Boolean(busy);
   const savedDue = new Date(edit.due_at).valueOf();
   const [caption, setCaption] = useState(edit.caption);
-  const [timeChoice, setTimeChoice] = useState('current');
-  const [custom, setCustom] = useState(() => localInput(savedDue));
+  const [timeChoice, setTimeChoice] = useState(failed ? 'custom' : 'current');
+  const [custom, setCustom] = useState(() => localInput(failed ? now + 60 * 60000 : savedDue));
   const [file, setFile] = useState<File | null>(null);
   const [upload, setUpload] = useState('');
   useEffect(
@@ -81,28 +83,33 @@ export default function QueuedPostEditor({
   const length = [...caption].length;
   const textChanged = caption.trim() !== edit.caption.trim();
   const timeChanged = Math.floor(due / 1000) !== Math.floor(savedDue / 1000);
-  const changed = textChanged || timeChanged || Boolean(file);
+  const changed = failed || textChanged || timeChanged || Boolean(file);
   const problem =
     !caption.trim() || length > INSTAGRAM_LIMIT
       ? 'Write a caption up to 2,200 characters.'
       : leadProblem(due, now);
   const replaces = textChanged || Boolean(file);
 
-  async function save() {
+  async function save(retryNow = false) {
     setBusy(draftId);
     onError('');
     try {
       const form = new FormData();
       form.set('version', String(edit.version));
+      if (failed) form.set('action', retryNow ? 'retry_now' : 'reschedule_failed');
       form.set('account_id', edit.account_id);
-      form.set('caption', caption);
-      form.set('due_at', new Date(due).toISOString());
-      if (file) form.set('media', file);
+      form.set('caption', retryNow ? edit.caption : caption);
+      form.set('due_at', new Date(retryNow ? Date.now() : due).toISOString());
+      if (file && !retryNow) form.set('media', file);
       const result = await editScheduledDraft(draftId, form);
       onSaved(
-        result.replaced
-          ? `Replaced in PostyBirb · ${result.post_id}. The old queued post was withdrawn.`
-          : `Moved to ${slotLabel(due, now, timeZone)}.`,
+        failed
+          ? retryNow
+            ? `Retry started in PostyBirb · ${result.post_id}. Delivery is pending.`
+            : `Rescheduled for ${slotLabel(due, now, timeZone)}. The failed post stays in history.`
+          : result.replaced
+            ? `Replaced in PostyBirb · ${result.post_id}. The old queued post was withdrawn.`
+            : `Moved to ${slotLabel(due, now, timeZone)}.`,
       );
     } catch (e) {
       onError(e instanceof Error ? e.message : 'The change could not be saved');
@@ -150,13 +157,15 @@ export default function QueuedPostEditor({
               setUpload('');
             }}
           >
-            Keep the queued image
+            Keep the approved image
           </button>
         )}
       </div>
       <div className="review-sheet-controls">
         <p className="studio-note">
-          Approved · Scheduled in PostyBirb · publishes {slotLabel(savedDue, now, timeZone)}.
+          {failed
+            ? `Failed in PostyBirb · originally due ${slotLabel(savedDue, now, timeZone)}.`
+            : `Approved · Scheduled in PostyBirb · publishes ${slotLabel(savedDue, now, timeZone)}.`}
         </p>
         <label>
           Caption
@@ -184,7 +193,7 @@ export default function QueuedPostEditor({
               if (e.target.value === 'custom' && !custom) setCustom(localInput(savedDue));
             }}
           >
-            <option value="current">Keep {slotLabel(savedDue, now, timeZone)}</option>
+            {!failed && <option value="current">Keep {slotLabel(savedDue, now, timeZone)}</option>}
             {slots.map((s) => (
               <option key={s.at} value={String(s.at)} disabled={s.taken || s.at === savedDue}>
                 {slotLabel(s.at, now, timeZone)}
@@ -206,20 +215,44 @@ export default function QueuedPostEditor({
           </label>
         )}
         <p className="studio-note">
-          {replaces
-            ? 'Saving withdraws the queued post from PostyBirb and queues the edited version in its place.'
-            : 'A new time moves the queued post; the caption and image stay as approved.'}{' '}
+          {failed
+            ? 'Retry now sends the approved caption and image immediately. Save & reschedule approves the edits shown here for the selected time.'
+            : replaces
+              ? 'Saving withdraws the queued post from PostyBirb and queues the edited version in its place.'
+              : 'A new time moves the queued post; the caption and image stay as approved.'}{' '}
           Choose a future publish time within 90 days.
         </p>
         {changed && problem && <p className="studio-note">{problem}</p>}
+        {failed && target?.disabled && (
+          <p className="studio-note">
+            Reconnect this Instagram account in PostyBirb before retrying.
+          </p>
+        )}
         <div className="posting-card-buttons">
+          {failed && (
+            <button
+              type="button"
+              disabled={locked || !target || target.disabled}
+              onClick={() => void save(true)}
+            >
+              {busy === draftId ? 'Submitting…' : 'Retry now'}
+            </button>
+          )}
           <button
             type="button"
             className="review-approve"
-            disabled={!changed || Boolean(problem) || locked}
+            disabled={
+              !changed || Boolean(problem) || locked || (failed && (!target || target.disabled))
+            }
             onClick={() => void save()}
           >
-            {busy === draftId ? 'Saving…' : replaces ? 'Save & requeue' : 'Reschedule'}
+            {busy === draftId
+              ? 'Saving…'
+              : failed
+                ? 'Save & reschedule'
+                : replaces
+                  ? 'Save & requeue'
+                  : 'Reschedule'}
           </button>
         </div>
       </div>

@@ -648,6 +648,75 @@ describe('save, re-roll and edit queued posts', () => {
     expect(screen.getByText('Failed in PostyBirb')).toBeInTheDocument();
   });
 
+  function failedPost() {
+    vi.mocked(getReviewDrafts).mockResolvedValue([{ ...queued, due_at: future(-2) }]);
+    vi.mocked(getSocialDelivery).mockResolvedValue({
+      ...delivery,
+      posts: [
+        {
+          id: 'pb-post',
+          content: 'Queued caption',
+          publishDate: future(-2),
+          releaseURL: '',
+          state: 'ERROR',
+          integration: { id: 'pb-patrick', name: 'Patrick' },
+        },
+      ],
+    });
+    vi.mocked(editScheduledDraft).mockResolvedValue({
+      status: 'scheduled',
+      post_id: 'replacement',
+      version: 3,
+      changed: true,
+      replaced: true,
+    });
+  }
+
+  it('retries approved content now even when the editor contains unsaved changes and an invalid time', async () => {
+    failedPost();
+    renderDelivery();
+    await openFirst(/Queued caption/);
+    fireEvent.change(screen.getByLabelText('Caption'), { target: { value: 'Unsaved changes' } });
+    fireEvent.change(screen.getByLabelText('Custom publish time'), { target: { value: '' } });
+    expect(screen.getByRole('button', { name: 'Save & reschedule' })).toBeDisabled();
+    fireEvent.click(screen.getByRole('button', { name: 'Retry now' }));
+    await screen.findByText(/Retry started in PostyBirb/);
+    const form = vi.mocked(editScheduledDraft).mock.calls[0][1];
+    expect(form.get('action')).toBe('retry_now');
+    expect(form.get('caption')).toBe('Queued caption');
+    expect(form.get('version')).toBe('2');
+    expect(form.get('media')).toBeNull();
+    expect(approveReviewDraft).not.toHaveBeenCalled();
+  });
+
+  it('approves an edited failed post for a future time', async () => {
+    failedPost();
+    renderDelivery();
+    await openFirst(/Queued caption/);
+    fireEvent.change(screen.getByLabelText('Caption'), {
+      target: { value: 'Edited failed caption' },
+    });
+    fireEvent.change(screen.getByLabelText('Replace the image (JPEG)'), {
+      target: { files: [new File(['jpeg'], 'replacement.jpg', { type: 'image/jpeg' })] },
+    });
+    fireEvent.click(screen.getByRole('button', { name: 'Save & reschedule' }));
+    await screen.findByText(/Rescheduled for /);
+    const form = vi.mocked(editScheduledDraft).mock.calls[0][1];
+    expect(form.get('action')).toBe('reschedule_failed');
+    expect(form.get('caption')).toBe('Edited failed caption');
+    expect(new Date(String(form.get('due_at'))).valueOf()).toBeGreaterThan(Date.now());
+    expect((form.get('media') as File).name).toBe('replacement.jpg');
+  });
+
+  it('keeps uncertain posts out of recovery controls', async () => {
+    failedPost();
+    vi.mocked(getReviewDrafts).mockResolvedValue([{ ...queued, status: 'uncertain' }]);
+    renderDelivery();
+    await openFirst(/Queued caption/);
+    expect(screen.queryByRole('button', { name: 'Retry now' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Save & reschedule' })).not.toBeInTheDocument();
+  });
+
   it('saves an edit without approving it', async () => {
     renderQueue();
     await openFirst();

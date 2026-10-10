@@ -52,12 +52,40 @@ type socialSubmission struct {
 		Errors []json.RawMessage `json:"errors"`
 	} `json:"validations"`
 	Post *struct {
-		Units []struct {
+		Completed bool `json:"completed"`
+		Units     []struct {
 			AccountID string `json:"accountId"`
 			State     string `json:"state"`
 			URL       string `json:"url"`
 		} `json:"unitsOfWork"`
 	} `json:"post"`
+}
+
+// FailedInstagram requires a finished, wholly failed single-image post. A
+// mixed result, active worker or scheduled submission needs reconciliation.
+func (c *Client) FailedInstagram(ctx context.Context, id, account string) error {
+	s, err := c.submission(ctx, id)
+	if err != nil {
+		return err
+	}
+	if s.IsScheduled || len(s.Files) != 1 || s.Post == nil || !s.Post.Completed || len(s.Post.Units) != 1 {
+		return ErrNotFailed
+	}
+	u := s.Post.Units[0]
+	if u.AccountID != account || u.State != "FAILED" || u.URL != "" {
+		return ErrNotFailed
+	}
+	return nil
+}
+
+var ErrNotFailed = errors.New("PostyBirb does not show a completed failed post")
+
+// PostInstagram starts only the exact validated replacement saved by the caller.
+func (c *Client) PostInstagram(ctx context.Context, id, account, caption string) error {
+	if err := c.ValidateInstagram(ctx, id, account, caption); err != nil {
+		return err
+	}
+	return c.call(ctx, "POST", "/posting", map[string]any{"submissionId": id, "evictions": map[string]any{}, "targets": map[string]any{account: []string{}}}, nil)
 }
 
 func (c *Client) Accounts(ctx context.Context) ([]SocialAccount, error) {
