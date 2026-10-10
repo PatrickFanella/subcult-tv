@@ -6,7 +6,7 @@ Read each draft twice: once as a stranger scrolling on a phone who has never hea
 
 When `mode` is `showcase`, judge the post as an introduction to a live product: the story is one real use, and facts come from the claims register and the captured page.
 
-When `mode` is `weekly`, judge the post as a weekly recap that earns one ask. Flag any claim about the destination that is not in `cta.facts`, a missing or doubled ask, a missing `cta.address`, and an ask that arrives before the post has shown any work.
+When `mode` is `weekly`, judge the post as marketing for one product that earns one ask. Score reason to care as a stranger who has never used the product: would they want it? Fail a draft that reads like release notes: it lists changes, describes a bug or fix, covers more than one product, or hedges about what is deployed. Flag any claim about the destination that is not in `cta.facts`, a missing or doubled ask, and a missing `cta.address`.
 
 ## Score each draft from 1 to 5 on
 
