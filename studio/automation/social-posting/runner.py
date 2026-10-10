@@ -24,7 +24,6 @@ HERE = Path(__file__).resolve().parent
 BEGIN = '<!-- social-posting-runner:begin -->'
 END = '<!-- social-posting-runner:end -->'
 BUFFER_TOOLS = ['get_account', 'list_channels', 'get_channel', 'list_posts']
-SP_TOOLS = ['get_projects', 'get_tasks', 'get_task']
 
 
 def digest(value: str) -> str:
@@ -81,7 +80,7 @@ def verify_evidence(events: list[dict], cfg: dict) -> dict:
     calls = [e['item'] for e in events if e.get('type') == 'item.completed'
              and e.get('item', {}).get('type') == 'mcp_tool_call']
     for call in calls:
-        allowed = BUFFER_TOOLS if call['server'] == 'buffer' else SP_TOOLS if call['server'] == 'super-productivity' else []
+        allowed = BUFFER_TOOLS if call['server'] == 'buffer' else []
         if call['tool'] not in allowed:
             raise ValueError('Unexpected provider tool: '+call['server']+'/'+call['tool'])
     successful = [c for c in calls if c.get('status') == 'completed' and not c.get('error')
@@ -100,10 +99,6 @@ def verify_evidence(events: list[dict], cfg: dict) -> dict:
             raise ValueError('Expected Buffer channel missing, disconnected or locked')
     if not data('list_posts'):
         raise ValueError('Buffer post inspection was not confirmed')
-    for project in cfg['projects']:
-        if not any(c['server'] == 'super-productivity' and c['tool'] == 'get_tasks'
-                   and c.get('arguments', {}).get('projectId') == project for c in successful):
-            raise ValueError('Live task inspection missing for project '+project)
     return {'organization_id': cfg['organization_id'], 'channel_ids': sorted(cfg['channels'].values()),
             'successful_read_calls': len(successful)}
 
@@ -148,12 +143,8 @@ def codex_command(cfg: dict, directory: Path) -> list[str]:
         'model_reasoning_effort': 'medium',
         'mcp_servers.buffer.url': 'https://mcp.buffer.com/mcp',
         'mcp_servers.buffer.required': True, 'mcp_servers.buffer.enabled_tools': BUFFER_TOOLS,
-        'mcp_servers.super-productivity.command': cfg['sp_command'],
-        'mcp_servers.super-productivity.required': True,
-        'mcp_servers.super-productivity.enabled_tools': SP_TOOLS,
-        'mcp_servers.super-productivity.env.SP_MCP_DATA_DIR': cfg['sp_data'],
     }
-    for server, names in [('buffer', BUFFER_TOOLS), ('super-productivity', SP_TOOLS)]:
+    for server, names in [('buffer', BUFFER_TOOLS)]:
         for name in names:
             settings[f'mcp_servers.{server}.tools.{name}.approval_mode'] = 'approve'
     for key, value in settings.items():
@@ -281,7 +272,7 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
                     for p in sorted((folder/'Timely Drafts').glob('*.md'))[-21:]
                     if date.fromisoformat(p.name[:10]).strftime('%G-W%V') == week}
             prompt = (HERE/'prompt.md').read_text()+'\n\n'+json.dumps({'mode':mode,'week':week,'now':now.isoformat(),
-                'organization_id':cfg['organization_id'],'channels':cfg['channels'],'projects':cfg['projects'],
+                'organization_id':cfg['organization_id'],'channels':cfg['channels'],
                 'cadence':cfg['cadence'], 'context':context})
             atomic_write(directory/'request.txt', prompt)
             environment = dict(os.environ)

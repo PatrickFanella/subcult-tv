@@ -81,15 +81,18 @@ class RunnerTests(unittest.TestCase):
         events = [self.event('buffer','get_account',{'organizations':[{'id':CFG['organization_id']}]}),
                   self.event('buffer','list_channels',[{'id':cid,'isDisconnected':False,'isLocked':False} for cid in CFG['channels'].values()]),
                   self.event('buffer','list_posts',[])]
-        events += [self.event('super-productivity','get_tasks',{'tasks':[]},{'projectId':pid}) for pid in CFG['projects']]
         return events
 
-    def test_actual_provider_identity_and_task_calls_are_required(self):
+    def test_buffer_evidence_succeeds_without_task_provider(self):
         receipt=runner.verify_evidence(self.evidence(),CFG)
-        self.assertEqual(receipt['successful_read_calls'],6)
+        self.assertEqual(receipt['successful_read_calls'],3)
         with self.assertRaises(ValueError):runner.verify_evidence(self.evidence()[:-1],CFG)
         events=self.evidence();events[0]=self.event('buffer','get_account',{'organizations':[{'id':'other'}]})
         with self.assertRaises(ValueError):runner.verify_evidence(events,CFG)
+
+    def test_task_provider_is_not_an_allowed_dependency(self):
+        with self.assertRaisesRegex(ValueError, 'Unexpected provider tool'):
+            runner.verify_evidence(self.evidence()+[self.event('super-productivity','get_tasks',{'tasks':[]})], CFG)
 
     def test_write_tool_is_rejected(self):
         with self.assertRaisesRegex(ValueError,'Unexpected'):
@@ -106,6 +109,8 @@ class RunnerTests(unittest.TestCase):
         self.assertIn('mcp_servers.buffer.enabled_tools='+json.dumps(runner.BUFFER_TOOLS),command)
         self.assertNotIn('create_post',' '.join(command))
         self.assertIn('features.shell_tool=false',command)
+        self.assertNotIn('super-productivity', ' '.join(command))
+        self.assertNotIn('sp-mcp', ' '.join(command))
 
     def test_atomic_write_permissions(self):
         with tempfile.TemporaryDirectory() as directory:
