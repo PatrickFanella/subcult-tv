@@ -78,14 +78,45 @@ func (c *Client) Channels(ctx context.Context) ([]Channel, error) {
 
 const fields = `id text channelId dueAt status allowedActions`
 
+// Metric is one engagement number Buffer refreshes about once a day.
+type Metric struct {
+	Type  string      `json:"type"`
+	Value json.Number `json:"value"`
+}
+
+// HistoryPost is a read-only delivery record: when it went out, where, and
+// why it failed. It is never used to decide whether to write.
+type HistoryPost struct {
+	Post
+	SentAt       *time.Time `json:"sentAt"`
+	ExternalLink string     `json:"externalLink"`
+	Via          string     `json:"via"`
+	Error        *struct {
+		Message string `json:"message"`
+	} `json:"error"`
+	Metrics          []Metric   `json:"metrics"`
+	MetricsUpdatedAt *time.Time `json:"metricsUpdatedAt"`
+}
+
+const historyFields = fields + ` sentAt externalLink via error{message} metrics{type value} metricsUpdatedAt`
+
 func (c *Client) Posts(ctx context.Context, channels []string, since time.Time) ([]Post, error) {
-	result := []Post{}
+	return pagePosts[Post](ctx, c, channels, since, fields)
+}
+
+// History returns posts due since `since` with delivery outcome and metrics.
+func (c *Client) History(ctx context.Context, channels []string, since time.Time) ([]HistoryPost, error) {
+	return pagePosts[HistoryPost](ctx, c, channels, since, historyFields)
+}
+
+func pagePosts[T any](ctx context.Context, c *Client, channels []string, since time.Time, fields string) ([]T, error) {
+	result := []T{}
 	cursor := ""
 	for page := 0; page < 20; page++ {
 		var data struct {
 			Posts struct {
 				Edges []struct {
-					Node Post `json:"node"`
+					Node T `json:"node"`
 				} `json:"edges"`
 				PageInfo struct {
 					Next   bool   `json:"hasNextPage"`

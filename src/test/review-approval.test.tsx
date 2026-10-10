@@ -2,6 +2,7 @@ import { render, screen, fireEvent, cleanup, waitFor, within } from '@testing-li
 import { MemoryRouter } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import AdminPosts from '@/pages/admin/AdminPosts';
+import PostingDelivery from '@/pages/admin/PostingDelivery';
 import {
   approveReviewDraft,
   getPostingDashboard,
@@ -10,6 +11,7 @@ import {
   getReviewDrafts,
   getSocialDelivery,
   getBufferDelivery,
+  getBufferHistory,
   saveReviewDraft,
   recordDraftDecision,
   type DraftDecision,
@@ -39,6 +41,7 @@ vi.mock('@/lib/api', () => ({
   recordDraftDecision: vi.fn(),
   getSocialDelivery: vi.fn(),
   getBufferDelivery: vi.fn(),
+  getBufferHistory: vi.fn(),
   getRerolls: vi.fn(),
   requestReroll: vi.fn(),
   editScheduledDraft: vi.fn(),
@@ -120,6 +123,13 @@ const delivery = {
   minimum_lead_hours: 0,
 };
 
+function renderDelivery(entry = '/admin/posts/delivery') {
+  return render(
+    <MemoryRouter initialEntries={[entry]}>
+      <PostingDelivery />
+    </MemoryRouter>,
+  );
+}
 function renderQueue() {
   return render(
     <MemoryRouter>
@@ -140,6 +150,7 @@ afterEach(cleanup);
 beforeEach(() => {
   vi.resetAllMocks();
   vi.mocked(getBufferDelivery).mockResolvedValue({ configured: false, channels: [], receipts: [] });
+  vi.mocked(getBufferHistory).mockResolvedValue({ configured: false, posts: [] });
   URL.createObjectURL = vi.fn(() => 'blob:prepared');
   vi.mocked(getReviewDraftMedia).mockResolvedValue(
     new Blob(['saved jpeg'], { type: 'image/jpeg' }),
@@ -578,24 +589,34 @@ describe('save, re-roll and edit queued posts', () => {
     updated_at: '',
   };
 
+  it('moves an approved post out of the queue to Scheduled & delivered', async () => {
+    vi.mocked(getReviewDrafts).mockResolvedValue([queued]);
+    renderQueue();
+    expect(await screen.findByRole('link', { name: /Scheduled & delivered →/ })).toHaveAttribute(
+      'href',
+      '/admin/posts/delivery',
+    );
+    expect(screen.queryByRole('button', { name: /We gave clip stacks/ })).not.toBeInTheDocument();
+  });
+
   it('keeps the saved time, approval and image after refreshing a scheduled post', async () => {
     const saved = { ...queued, due_at: future(3) };
     vi.mocked(getPostingDashboard).mockResolvedValue(snapshot([draft({ expires_at: future(-1) })]));
     vi.mocked(getReviewDrafts).mockResolvedValue([saved]);
     vi.mocked(getPreparedMedia).mockRejectedValue(new Error('Original preparation image removed'));
     vi.mocked(URL.createObjectURL).mockReturnValue('blob:saved');
-    renderQueue();
-    await screen.findByText('Approved · Scheduled');
-    const row = screen.getByRole('button', { name: /We gave clip stacks/ });
+    renderDelivery();
+    await screen.findByText('Scheduled');
+    const row = screen.getByRole('button', { name: /Queued caption/ });
     expect(row).toHaveTextContent(
       slotLabel(new Date(saved.due_at).valueOf(), Date.now(), 'America/Chicago'),
     );
     await waitFor(() => expect(row.querySelector('img')).toHaveAttribute('src', 'blob:saved'));
     expect(getPreparedMedia).not.toHaveBeenCalled();
-    fireEvent.click(screen.getByRole('button', { name: 'Refresh drafts' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Refresh' }));
     await waitFor(() => expect(getReviewDrafts).toHaveBeenCalledTimes(2));
-    expect(screen.getByText('Approved · Scheduled')).toBeInTheDocument();
-    fireEvent.click(row);
+    expect(await screen.findByText('Scheduled')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Queued caption/ }));
     expect(await screen.findByAltText('Selected image for this post')).toHaveAttribute(
       'src',
       'blob:saved',
@@ -603,6 +624,28 @@ describe('save, re-roll and edit queued posts', () => {
     expect(getReviewDraftMedia).toHaveBeenCalledWith('cm:0', 2, expect.any(AbortSignal));
     expect(screen.queryByRole('button', { name: /^Approve & queue/ })).not.toBeInTheDocument();
     expect(approveReviewDraft).not.toHaveBeenCalled();
+  });
+
+  it('flags an approved post that PostyBirb reports failed', async () => {
+    vi.mocked(getReviewDrafts).mockResolvedValue([{ ...queued, due_at: future(-2) }]);
+    vi.mocked(getSocialDelivery).mockResolvedValue({
+      ...delivery,
+      posts: [
+        {
+          id: 'pb-post',
+          content: 'Queued caption',
+          publishDate: future(-2),
+          releaseURL: '',
+          state: 'ERROR',
+          integration: { id: 'pb-patrick', name: 'Patrick' },
+        },
+      ],
+    });
+    renderDelivery();
+    expect(
+      await screen.findByRole('heading', { name: /Missed or failed \(1\)/ }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Failed in PostyBirb')).toBeInTheDocument();
   });
 
   it('saves an edit without approving it', async () => {
@@ -709,8 +752,8 @@ describe('save, re-roll and edit queued posts', () => {
       changed: true,
       replaced: false,
     });
-    renderQueue();
-    await openFirst(/We gave clip stacks/);
+    renderDelivery();
+    await openFirst(/Queued caption/);
     expect(screen.getByLabelText('Caption')).toHaveValue('Queued caption');
     const save = screen.getByRole('button', { name: 'Reschedule' });
     expect(save).toBeDisabled();
@@ -731,8 +774,8 @@ describe('save, re-roll and edit queued posts', () => {
   it('warns that a caption change replaces the queued post', async () => {
     vi.mocked(getReviewDrafts).mockResolvedValue([queued]);
     vi.mocked(getReviewDraftMedia).mockResolvedValue(new Blob());
-    renderQueue();
-    await openFirst();
+    renderDelivery();
+    await openFirst(/Queued caption/);
     fireEvent.change(screen.getByLabelText('Caption'), { target: { value: 'New words' } });
     expect(screen.getByText(/withdraws the queued post from PostyBirb/)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Save & requeue' })).toBeEnabled();
@@ -747,19 +790,15 @@ describe('save, re-roll and edit queued posts', () => {
     );
     vi.mocked(getReviewDrafts).mockResolvedValue([queued]);
     vi.mocked(getReviewDraftMedia).mockResolvedValue(new Blob());
-    renderQueue();
-    await openFirst();
+    renderDelivery();
+    await openFirst(/Queued caption/);
     expect(screen.getByRole('button', { name: 'Reschedule' })).toBeInTheDocument();
   });
 
   it('opens a queued draft from a delivery-history link', async () => {
     vi.mocked(getReviewDrafts).mockResolvedValue([queued]);
     vi.mocked(getReviewDraftMedia).mockResolvedValue(new Blob());
-    render(
-      <MemoryRouter initialEntries={['/admin/posts?post=pb-post']}>
-        <AdminPosts />
-      </MemoryRouter>,
-    );
+    renderDelivery('/admin/posts/delivery?post=pb-post');
     expect(await screen.findByRole('button', { name: 'Reschedule' })).toBeInTheDocument();
   });
 });

@@ -117,8 +117,41 @@
   border: 1px solid var(--color-fog, #333);
   background: var(--color-soot, #171717);
 }
+.review-row {
+  scroll-margin-top: 1rem;
+}
 .review-row[data-expanded] {
   border-color: #8b5cf6;
+}
+.review-row[data-attention] {
+  border-color: #f4212e;
+}
+.review-row[data-attention] .review-row-state {
+  border-color: #f4212e;
+  color: #ff8a92;
+}
+.review-row-summary:hover,
+.review-row-summary:focus-visible {
+  background: var(--color-ash, #222);
+}
+.review-row-summary:active {
+  background: #24182e;
+}
+/* Scheduled timeline: one heading per day. */
+.timeline-day {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-dust, #aaa);
+}
+.delivery-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: var(--color-dust, #aaa);
 }
 .review-row-summary {
   display: grid;

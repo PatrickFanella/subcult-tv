@@ -25,6 +25,9 @@ type fakeBuffer struct {
 func (p *fakeBuffer) Channels(context.Context) ([]buffer.Channel, error) {
 	return []buffer.Channel{{ID: "channel", Name: "subcult_tv", Service: "twitter"}}, nil
 }
+func (p *fakeBuffer) History(context.Context, []string, time.Time) ([]buffer.HistoryPost, error) {
+	return nil, nil
+}
 func (p *fakeBuffer) Posts(context.Context, []string, time.Time) ([]buffer.Post, error) {
 	return p.posts, nil
 }

@@ -79,7 +79,7 @@ describe('Instagram approval', () => {
     await screen.findByText('Scheduled');
     expect(screen.getByRole('link', { name: 'Edit or reschedule' })).toHaveAttribute(
       'href',
-      '/admin/posts?post=p1',
+      '/admin/posts/delivery?post=p1',
     );
     expect(screen.queryByText('View Instagram post ↗')).not.toBeInTheDocument();
   });

@@ -92,3 +92,23 @@ func TestIncompleteHistoryIsRejected(t *testing.T) {
 		t.Fatal("incomplete history accepted")
 	}
 }
+
+func TestHistoryReadsOutcomeAndMetrics(t *testing.T) {
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		var body struct {
+			Query string `json:"query"`
+		}
+		json.NewDecoder(r.Body).Decode(&body)
+		if strings.Contains(body.Query, "mutation") || !strings.Contains(body.Query, "externalLink") {
+			t.Error("history must be a read query with delivery fields", body.Query)
+		}
+		w.Write([]byte(`{"data":{"posts":{"edges":[{"node":{"id":"p1","text":"t","channelId":"c","dueAt":"2026-10-07T15:00:00Z","status":"error","sentAt":null,"externalLink":null,"via":"buffer","error":{"message":"Token expired"},"metrics":[{"type":"impressions","value":4},{"type":"engagementRate","value":2.5}]}}],"pageInfo":{"hasNextPage":false,"endCursor":""}}}}`))
+	}))
+	defer server.Close()
+	client := New("private-key", "org")
+	client.URL = server.URL
+	posts, err := client.History(context.Background(), []string{"c"}, time.Now())
+	if err != nil || len(posts) != 1 || posts[0].Error == nil || posts[0].Error.Message != "Token expired" || posts[0].Metrics[1].Value.String() != "2.5" {
+		t.Fatal("history not decoded", posts, err)
+	}
+}

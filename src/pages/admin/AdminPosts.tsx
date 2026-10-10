@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { Link, Navigate, useSearchParams } from 'react-router-dom';
 import {
   getDraftDecisions,
   getPostingDashboard,
@@ -26,80 +26,18 @@ import {
   platformLabel,
   relativeTime,
   rerollLabel,
-  slotLabel,
 } from '@/lib/review-queue';
 import PostingShell from './PostingShell';
 import TextPostCard from './TextPostCard';
 import XPostReview from './XPostReview';
 import InstagramReview from './InstagramReview';
 import DecisionControls from './DecisionControls';
-import QueuedPostEditor from './QueuedPostEditor';
 import RerollControls from './RerollControls';
-import { usePreparedImage } from './usePreparedImage';
-import { useSavedImage } from './useSavedImage';
+import ReviewRow from './ReviewRow';
+import { useReveal } from './useReveal';
 import '@/styles/review-queue.css';
 
 type Tab = 'instagram' | 'x' | 'bluesky';
-
-function RowThumbnail({ draft, edit }: { draft: PostingDraft; edit?: ReviewDraft }) {
-  const saved = useSavedImage(edit?.has_media ? edit.draft_id : undefined, edit?.version);
-  const prepared = usePreparedImage(edit?.has_media ? undefined : draft.media.image?.sha256);
-  const url = edit?.has_media ? saved.url : prepared.url;
-  if (url) return <img className="review-row-thumb" src={url} alt="" />;
-  return (
-    <span className="review-row-thumb review-row-thumb-empty" aria-hidden="true">
-      {draftPlatform(draft) === 'instagram' ? 'IG' : platformLabel(draftPlatform(draft))}
-    </span>
-  );
-}
-
-function ReviewRow({
-  draft,
-  edit,
-  meta,
-  when,
-  state,
-  expanded,
-  onToggle,
-  children,
-}: {
-  draft: PostingDraft;
-  edit?: ReviewDraft;
-  meta: string;
-  when: string;
-  state: string;
-  expanded: boolean;
-  onToggle: () => void;
-  children: ReactNode;
-}) {
-  const sheet = `review-sheet-${draft.id.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
-  return (
-    <li className="review-row" data-expanded={expanded || undefined}>
-      <button
-        type="button"
-        className="review-row-summary"
-        aria-expanded={expanded}
-        aria-controls={sheet}
-        onClick={onToggle}
-      >
-        <RowThumbnail draft={draft} edit={edit} />
-        <span className="review-row-main">
-          <span className="review-row-meta">{meta}</span>
-          <span className="review-row-text">{firstLine(draft.text)}</span>
-        </span>
-        <span className="review-row-side">
-          <span>{when}</span>
-          <span className="review-row-state">{state}</span>
-        </span>
-      </button>
-      {expanded && (
-        <div id={sheet} className="review-row-sheet">
-          {children}
-        </div>
-      )}
-    </li>
-  );
-}
 
 export default function AdminPosts() {
   const [data, setData] = useState<PostingDashboard | null>(null);
@@ -122,7 +60,7 @@ export default function AdminPosts() {
   const tab: Tab = requested === 'x' || requested === 'bluesky' ? requested : 'instagram';
   const setTab = (next: Tab) =>
     setParams(next === 'instagram' ? {} : { tab: next }, { replace: true });
-  // Links from the delivery history open the queued draft by its PostyBirb ID.
+  // Older links opened a queued post here; queued posts now live on the delivery page.
   const requestedPost = params.get('post') || '';
   const [query, setQuery] = useState('');
   const [includeExpired, setIncludeExpired] = useState(false);
@@ -130,6 +68,7 @@ export default function AdminPosts() {
   const [notice, setNotice] = useState('');
   const [open, setOpen] = useState<string>('');
   const seen = useRef(new Map<number, string>());
+  const noticeRef = useReveal<HTMLDivElement>(notice);
   const [now, setNow] = useState(() => Date.now());
   useEffect(() => {
     const timer = setInterval(() => setNow(Date.now()), 60000);
@@ -228,15 +167,8 @@ export default function AdminPosts() {
   }, [rerolling]);
   const latestReroll = (id: string) => rerolls.find((r) => r.draft_id === id);
   const rerolledFrom = (id: string) => rerolls.find((r) => r.result_draft_id === id);
-  // A delivery-history link opens its draft until the owner toggles a row.
-  const linked = requestedPost
-    ? (saved.find((s) => s.post_id === requestedPost)?.draft_id ?? '')
-    : '';
-  const current = open || linked;
-  const toggle = (id: string) => {
-    setOpen(current === id ? '' : id);
-    if (requestedPost) setParams(tab === 'instagram' ? {} : { tab }, { replace: true });
-  };
+  const current = open;
+  const toggle = (id: string) => setOpen(current === id ? '' : id);
   useEffect(() => {
     if (tab !== 'x') return;
     let active = true;
@@ -286,14 +218,19 @@ export default function AdminPosts() {
     .filter(
       (d) =>
         draftPlatform(d) === tab &&
-        (includeExpired || submitted(d.id) || !expired(d)) &&
+        // Approved posts move to Scheduled & delivered, where they stay editable.
+        !submitted(d.id) &&
+        (includeExpired || !expired(d)) &&
         (account === 'all' || d.account === account) &&
         (tab === 'instagram' || lane === 'all' || d.mode === lane) &&
         `${editFor(d.id)?.caption || d.text} ${d.next_check}`
           .toLowerCase()
           .includes(query.toLowerCase()),
     )
-    .sort((a, b) => Number(submitted(a.id)) - Number(submitted(b.id)) || dueOf(a) - dueOf(b));
+    .sort((a, b) => dueOf(a) - dueOf(b));
+  const approvedCount = (data?.drafts || []).filter(
+    (d) => draftPlatform(d) === tab && submitted(d.id),
+  ).length;
   const tabAccounts = [
     ...new Set(all.filter((d) => draftPlatform(d) === tab).map((d) => d.account)),
   ];
@@ -315,14 +252,15 @@ export default function AdminPosts() {
     if (hidden(d)) return hiddenLabel[hidden(d)];
     if (reroll && (reroll.status === 'pending' || reroll.status === 'running'))
       return 'Re-rolling…';
-    if (edit && edit.status !== 'draft')
-      return edit.status === 'scheduled' ? 'Approved · Scheduled' : 'Check PostyBirb';
     if (expired(d)) return 'Expired';
     if (d.media.image) return 'Image ready';
     return edit?.has_media ? 'Upload saved' : 'Needs image';
   }
   return (
     <PostingShell title="Review posts">
+      {requestedPost && (
+        <Navigate to={`/admin/posts/delivery?post=${encodeURIComponent(requestedPost)}`} replace />
+      )}
       <div className="posting-review-intro">
         <p>
           Drafts are prepared in advance. Approve each post for any future time. Nothing posts
@@ -348,11 +286,13 @@ export default function AdminPosts() {
         </div>
       )}
       {deliveryError && tab === 'instagram' && <p role="alert">{deliveryError}</p>}
-      {notice && (
-        <p role="status" className="production-notice">
-          {notice}
-        </p>
-      )}
+      <div ref={noticeRef}>
+        {notice && (
+          <p role="status" className="production-notice">
+            {notice}
+          </p>
+        )}
+      </div>
       {data && (
         <>
           {data.stale && (
@@ -387,11 +327,7 @@ export default function AdminPosts() {
             {drafts.map((d) => {
               const edit = editFor(d.id);
               const due = dueOf(d);
-              const when = Number.isNaN(due)
-                ? ''
-                : edit?.status === 'scheduled' || bufferFor(d.id)?.status === 'scheduled'
-                  ? slotLabel(due, now, data.timezone)
-                  : relativeTime(due, now);
+              const when = Number.isNaN(due) ? '' : relativeTime(due, now);
               if (tab !== 'instagram')
                 return (
                   <ReviewRow
@@ -402,15 +338,11 @@ export default function AdminPosts() {
                     state={
                       hidden(d)
                         ? hiddenLabel[hidden(d)]
-                        : bufferFor(d.id)
-                          ? bufferFor(d.id)?.status === 'scheduled'
-                            ? 'Approved · Scheduled'
-                            : 'Check Buffer'
-                          : expired(d)
-                            ? 'Missed proposed time'
-                            : tab === 'x'
-                              ? 'Needs approval'
-                              : 'Copy to Buffer'
+                        : expired(d)
+                          ? 'Missed proposed time'
+                          : tab === 'x'
+                            ? 'Needs approval'
+                            : 'Copy to Buffer'
                     }
                     expanded={current === d.id}
                     onToggle={() => toggle(d.id)}
@@ -468,52 +400,6 @@ export default function AdminPosts() {
                       {hiddenLabel[hidden(d)]}
                       {latest.get(d.id)?.note ? `: ${latest.get(d.id)?.note}` : '.'}
                     </p>
-                  ) : submitted(d.id) && edit?.status === 'scheduled' && edit.post_id ? (
-                    <>
-                      <QueuedPostEditor
-                        key={`${d.id}:${edit.version}`}
-                        draftId={d.id}
-                        account={d.account}
-                        edit={edit}
-                        delivery={delivery}
-                        times={cadence(d.account)}
-                        timeZone={data.timezone}
-                        now={now}
-                        busy={busy}
-                        setBusy={setBusy}
-                        onError={(message) => setNotice(message)}
-                        onSaved={(message) => {
-                          setNotice(message);
-                          setRevision((v) => v + 1);
-                        }}
-                      />
-                      <DecisionControls
-                        draftId={d.id}
-                        label={`${d.account} Instagram post: ${firstLine(d.text, 48)}`}
-                        busy={busy}
-                        setBusy={setBusy}
-                        favorited={favorites.has(d.id)}
-                        goodOnly
-                        onRecorded={recorded}
-                      />
-                    </>
-                  ) : submitted(d.id) ? (
-                    <>
-                      <p className="studio-note">
-                        {edit?.status === 'scheduled'
-                          ? 'Queued in PostyBirb. See Scheduled & delivered.'
-                          : 'Check PostyBirb to reconcile this submission before retrying.'}
-                      </p>
-                      <DecisionControls
-                        draftId={d.id}
-                        label={`${d.account} Instagram post: ${firstLine(d.text, 48)}`}
-                        busy={busy}
-                        setBusy={setBusy}
-                        favorited={favorites.has(d.id)}
-                        goodOnly
-                        onRecorded={recorded}
-                      />
-                    </>
                   ) : (
                     <InstagramReview
                       draft={d}
@@ -573,7 +459,15 @@ export default function AdminPosts() {
               );
             })}
           </ul>
-          {!drafts.length && <p>No drafts match these filters.</p>}
+          {!drafts.length && <p>No drafts waiting for review.</p>}
+          {approvedCount > 0 && (
+            <p className="studio-note">
+              {approvedCount} approved {platformLabel(tab)}{' '}
+              {approvedCount === 1 ? 'post is' : 'posts are'} on{' '}
+              <Link to="/admin/posts/delivery">Scheduled &amp; delivered →</Link> where you can
+              still edit or reschedule {approvedCount === 1 ? 'it' : 'them'}.
+            </p>
+          )}
           {(hiddenCount > 0 || showHidden) && (
             <label className="studio-note">
               <input

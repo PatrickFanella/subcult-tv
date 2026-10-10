@@ -263,13 +263,19 @@ export default function SocialDelivery({
                     <td>{p.integration.name}</td>
                     <td>{new Date(p.publishDate).toLocaleString()}</td>
                     <td>
-                      {p.state === 'PUBLISHED'
-                        ? 'Published'
-                        : p.state === 'QUEUE'
-                          ? 'Scheduled'
-                          : p.state === 'ERROR'
-                            ? 'Failed'
-                            : p.state}
+                      {p.state === 'PUBLISHED' ? (
+                        'Published'
+                      ) : p.state === 'QUEUE' ? (
+                        new Date(p.publishDate).valueOf() < now - 15 * 60000 ? (
+                          <strong className="text-signal">Overdue: not published</strong>
+                        ) : (
+                          'Scheduled'
+                        )
+                      ) : p.state === 'ERROR' ? (
+                        <strong className="text-signal">Failed</strong>
+                      ) : (
+                        p.state
+                      )}
                     </td>
                     <td>
                       {p.releaseURL && p.state === 'PUBLISHED' ? (
@@ -277,7 +283,7 @@ export default function SocialDelivery({
                           View Instagram post ↗
                         </a>
                       ) : p.state === 'QUEUE' ? (
-                        <Link to={`/admin/posts?post=${encodeURIComponent(p.id)}`}>
+                        <Link to={`/admin/posts/delivery?post=${encodeURIComponent(p.id)}`}>
                           Edit or reschedule
                         </Link>
                       ) : (

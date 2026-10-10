@@ -864,3 +864,16 @@
   opacity: 0.6;
   cursor: wait;
 }
+.posting-review-card-editing {
+  grid-column: 1 / -1;
+  scroll-margin-top: 1rem;
+}
+.posting-review-card-editing .posting-editor-grid {
+  margin-top: 0;
+}
+.posting-review-card[data-missed] {
+  border-color: var(--color-signal, #f43f5e);
+}
+.posting-review-card[data-missed] .posting-draft-meta span:last-child {
+  color: var(--color-signal, #f43f5e);
+}

@@ -10,6 +10,7 @@ import (
 	"regexp"
 	"slices"
 	"strings"
+	"sync"
 	"time"
 	"unicode/utf8"
 
@@ -25,7 +26,41 @@ type BufferProvider interface {
 	Post(context.Context, string) (buffer.Post, error)
 	Schedule(context.Context, string, string, time.Time) (buffer.Post, error)
 	Reschedule(context.Context, string, string, time.Time) (buffer.Post, error)
+	History(context.Context, []string, time.Time) ([]buffer.HistoryPost, error)
 }
+
+// bufferHistoryCache keeps Buffer's small hourly request allowance for scheduling.
+var bufferHistoryCache struct {
+	sync.Mutex
+	at    time.Time
+	posts []buffer.HistoryPost
+}
+
+// BufferHistory lists X posts from the previous 30 days onward with their
+// delivery outcome and metrics. It is read-only.
+func (h *Handler) BufferHistory(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Cache-Control", "private, no-store")
+	if r.Context().Value(middleware.RoleKey) != "admin" {
+		writeError(w, 403, "Admin access required")
+		return
+	}
+	if h.BufferPosting == nil || len(h.BufferChannels) == 0 {
+		writeJSON(w, 200, map[string]any{"configured": false, "posts": []buffer.HistoryPost{}})
+		return
+	}
+	bufferHistoryCache.Lock()
+	defer bufferHistoryCache.Unlock()
+	if time.Since(bufferHistoryCache.at) > 2*time.Minute || r.URL.Query().Get("refresh") == "1" && time.Since(bufferHistoryCache.at) > 15*time.Second {
+		posts, err := h.BufferPosting.History(r.Context(), h.BufferChannels, time.Now().AddDate(0, 0, -30))
+		if err != nil {
+			writeError(w, 502, "Buffer history could not be checked: "+err.Error())
+			return
+		}
+		bufferHistoryCache.posts, bufferHistoryCache.at = posts, time.Now()
+	}
+	writeJSON(w, 200, map[string]any{"configured": true, "checked_at": bufferHistoryCache.at.UTC(), "posts": bufferHistoryCache.posts})
+}
+
 type bufferReceipt struct {
 	DraftID   string    `json:"draft_id"`
 	Version   int       `json:"version"`
