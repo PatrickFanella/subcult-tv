@@ -6,7 +6,7 @@ For each item in the brief, write three complete captions from the angles the br
 
 When `mode` is `showcase`, the story is one real use of the live product as it is today, not a change; skip the maturity sentence when the brief's maturity is "".
 
-When `mode` is `weekly`, the post recaps this week's work and ends with exactly one ask: `cta.ask`, with `cta.address` written out as plain text and a pointer to the link in bio, because caption links are not clickable. Say nothing about the destination beyond `cta.facts`. No other link, hashtag ask or second call to action.
+When `mode` is `weekly`, this is a marketing post about one product, not a recap: open on what the reader could do or the moment they'd recognize, show the product doing it, and end with exactly one ask: `cta.ask`, with `cta.address` written out as plain text and a pointer to the link in bio, because caption links are not clickable. Never narrate a bug, list several changes or name more than one product. Leave device and browser fine print to the product page. Use the product's own voice from `voice`, and make the ask one or two sentences that carry their own reason. Say nothing about the destination beyond `cta.facts`. No other link, hashtag ask or second call to action.
 
 ## The caption
 
