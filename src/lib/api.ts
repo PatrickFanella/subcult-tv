@@ -779,6 +779,7 @@ export interface PublicationDraft {
   source: unknown;
 }
 export interface Publications {
+  development_auto_publish?: boolean;
   drafts: PublicationDraft[];
   patreon_connected: boolean;
   patreon_audiences?: { value: string; label: string }[];

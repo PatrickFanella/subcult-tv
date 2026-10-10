@@ -143,12 +143,16 @@ export default function PublicationReview({ platform }: { platform: 'website' | 
     <PostingShell title={platform === 'website' ? 'Development log' : 'Patreon posts'}>
       <p>
         {platform === 'website'
-          ? 'Daily updates prepared from Changemaker. Approve each entry to publish it on the website.'
+          ? data?.development_auto_publish
+            ? 'Daily updates prepared from Changemaker publish automatically as soon as preparation finishes.'
+            : 'Daily updates prepared from Changemaker. Approve each entry to publish it on the website.'
           : 'Patreon editions prepared from the same verified updates. Review the content, audience and publication time.'}
       </p>
       <p className="studio-note">
-        Manual approval · At least 24 hours ahead ·{' '}
-        {Intl.DateTimeFormat().resolvedOptions().timeZone}
+        {platform === 'website' && data?.development_auto_publish
+          ? 'Automatic approval · Immediate publication'
+          : 'Manual approval · At least 24 hours ahead'}{' '}
+        · {Intl.DateTimeFormat().resolvedOptions().timeZone}
       </p>
       <button onClick={() => setRevision((v) => v + 1)}>Refresh drafts</button>
       {platform === 'website' && (

@@ -58,7 +58,7 @@ Each submission has a durable request ID, provider identity and content hash. Th
 
 Automatic approval is not enabled. A future automatic mode requires a separately reviewed policy for evidence, media, account mapping, limits and failures. The preparation runner's publishing flag remains false and its installed timers are unchanged.
 
-The X/Bluesky preparation units run from `studio/automation/social-posting/` in the Kvant checkout; the Instagram and website/Patreon jobs run from release bundles copied from it. Source changes do not change schedules, locks, SQLite state or provider credentials. The preparation runner cannot dispatch posts; dashboard scheduling is a separate, human-approved path.
+The X/Bluesky preparation units run from `studio/automation/social-posting/` in the Kvant checkout; the Instagram and website/Patreon jobs run from release bundles copied from it. Source changes do not change schedules, locks, SQLite state or provider credentials. The preparation runner cannot dispatch provider posts; dashboard scheduling requires human approval. Website Development imports publish immediately when the API owner enables `DEVELOPMENT_AUTO_PUBLISH`.
 
 ## Rollback
 

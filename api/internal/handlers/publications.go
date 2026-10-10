@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/jackc/pgx/v5"
 	"github.com/subculture-collective/subcult-tv/api/internal/middleware"
 	"github.com/subculture-collective/subcult-tv/api/internal/postybirb"
 )
@@ -47,7 +48,56 @@ func secretAuthorized(r *http.Request, key string) bool {
 	return len(key) >= 32 && subtle.ConstantTimeCompare([]byte(strings.TrimPrefix(r.Header.Get("Authorization"), "Bearer ")), []byte(key)) == 1
 }
 
-// IngestPublications accepts preparation only; the key cannot approve or dispatch.
+// PublishDevelopmentBacklog applies the owner-configured website policy to pending
+// Development entries. Patreon and already approved entries are untouched.
+func (h *Handler) PublishDevelopmentBacklog(ctx context.Context) (int64, error) {
+	if !h.DevelopmentAutoPublish {
+		return 0, nil
+	}
+	tx, err := h.DB.Begin(ctx)
+	if err != nil {
+		return 0, err
+	}
+	defer tx.Rollback(ctx)
+	count, err := publishDevelopment(ctx, tx, "")
+	if err != nil {
+		return 0, err
+	}
+	return count, tx.Commit(ctx)
+}
+
+func publishDevelopment(ctx context.Context, tx pgx.Tx, id string) (int64, error) {
+	rows, err := tx.Query(ctx, `SELECT v.id,v.post_id,v.body FROM publication_review v JOIN posts p ON p.id=v.post_id WHERE v.platform='website' AND v.status='draft' AND ($1='' OR v.id=$1) AND 'development-log'=ANY(p.tags) ORDER BY v.id FOR UPDATE OF v`, id)
+	if err != nil {
+		return 0, err
+	}
+	type entry struct{ id, postID, body string }
+	entries := []entry{}
+	for rows.Next() {
+		var e entry
+		if err = rows.Scan(&e.id, &e.postID, &e.body); err != nil {
+			rows.Close()
+			return 0, err
+		}
+		entries = append(entries, e)
+	}
+	rows.Close()
+	if err = rows.Err(); err != nil {
+		return 0, err
+	}
+	for _, e := range entries {
+		body := stripReviewPrefix(e.body)
+		if _, err = tx.Exec(ctx, `UPDATE posts SET content=$2,updated_at=NOW() WHERE id=$1`, e.postID, body); err != nil {
+			return 0, err
+		}
+		if _, err = tx.Exec(ctx, `UPDATE publication_review SET body=$2,status='scheduled',due_at=NOW(),approved_by='automatic:development-updates',approved_at=NOW(),updated_at=NOW() WHERE id=$1`, e.id, body); err != nil {
+			return 0, err
+		}
+	}
+	return int64(len(entries)), nil
+}
+
+// IngestPublications imports drafts; website publication follows the server policy.
 func (h *Handler) IngestPublications(w http.ResponseWriter, r *http.Request) {
 	if !secretAuthorized(r, h.PostingPreparationKey) {
 		writeError(w, 401, "Preparation authentication required")
@@ -97,13 +147,23 @@ func (h *Handler) IngestPublications(w http.ResponseWriter, r *http.Request) {
 				writeError(w, 503, "Website draft import failed")
 				return
 			}
+			if h.DevelopmentAutoPublish {
+				if _, e = publishDevelopment(r.Context(), tx, d.ID); e != nil {
+					writeError(w, 503, "Website publication failed")
+					return
+				}
+			}
 		}
 	}
 	if tx.Commit(r.Context()) != nil {
 		writeError(w, 503, "Draft import failed")
 		return
 	}
-	writeJSON(w, 200, map[string]any{"created": inserted, "approval_mode": "manual"})
+	websiteApproval := "manual"
+	if h.DevelopmentAutoPublish {
+		websiteApproval = "automatic"
+	}
+	writeJSON(w, 200, map[string]any{"created": inserted, "website_approval_mode": websiteApproval, "patreon_approval_mode": "manual", "development_auto_publish": h.DevelopmentAutoPublish})
 }
 
 func (h *Handler) Publications(w http.ResponseWriter, r *http.Request) {
@@ -169,7 +229,7 @@ func (h *Handler) Publications(w http.ResponseWriter, r *http.Request) {
 	} else if !h.PatreonSchedulingVerified {
 		reason = "Patreon native scheduling still needs verification"
 	}
-	writeJSON(w, 200, map[string]any{"drafts": result, "patreon_connected": connectionError == nil && h.PatreonSchedulingVerified, "patreon_audiences": audiences, "patreon_connection_reason": reason, "minimum_lead_hours": 24})
+	writeJSON(w, 200, map[string]any{"drafts": result, "patreon_connected": connectionError == nil && h.PatreonSchedulingVerified, "patreon_audiences": audiences, "patreon_connection_reason": reason, "minimum_lead_hours": 24, "development_auto_publish": h.DevelopmentAutoPublish})
 }
 
 func (h *Handler) SavePublication(w http.ResponseWriter, r *http.Request) {

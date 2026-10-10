@@ -37,6 +37,7 @@ type Handler struct {
 	BufferPosting             BufferProvider
 	BufferChannels            []string
 	PostingPreparationKey     string
+	DevelopmentAutoPublish    bool
 	PatreonPosting            *postybirb.Client
 	PatreonSchedulingVerified bool
 	SocialPosting             *postybirb.Client
