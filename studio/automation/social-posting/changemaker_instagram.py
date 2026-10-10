@@ -107,8 +107,15 @@ def taken_slots(state, now):
     return taken
 
 
+def weekly_slot(cfg, slot):
+    """True for the slot kept free for the weekly call-to-action post."""
+    weekly = cfg.get('weekly_cta')
+    return bool(weekly) and slot.weekday() == weekly['weekday'] and slot.strftime('%H:%M') == weekly['time']
+
+
 def posting_slots(cfg, now, count, taken=()):
-    """Daytime Chicago slots at least 48 hours ahead, one per draft, never stacked on a held slot."""
+    """Daytime Chicago slots at least 48 hours ahead, one per draft, never stacked on a held slot
+    or on the weekly call-to-action slot."""
     from zoneinfo import ZoneInfo
     zone = ZoneInfo(cfg.get('timezone', 'America/Chicago'))
     times = cfg.get('instagram_times', ['11:30', '17:30'])
@@ -118,7 +125,8 @@ def posting_slots(cfg, now, count, taken=()):
         for value in times:
             hour, minute = map(int, value.split(':'))
             slot = datetime(day.year, day.month, day.day, hour, minute, tzinfo=zone)
-            if slot >= earliest and len(slots) < count and slot.astimezone(timezone.utc) not in taken:
+            if (slot >= earliest and len(slots) < count and slot.astimezone(timezone.utc) not in taken
+                    and not weekly_slot(cfg, slot)):
                 slots.append(slot)
         day += timedelta(days=1)
     return slots

@@ -194,7 +194,8 @@ def reroll_caption(cfg, draft, evidence, claims, directory, note='', image=None,
 def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change', extra=None):
     """Run the four writing stages and the media stage; return schema-shaped drafts."""
     shared = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'digest': digest, 'recent_captions': list(recent), 'mode': mode, **(extra or {})}
-    brief = codex(cfg, stage_prompt('showcase' if mode == 'showcase' else 'brief', shared), directory, '1-brief', 'brief', effort='high')
+    first = {'showcase': 'showcase', 'weekly': 'weekly'}.get(mode, 'brief')
+    brief = codex(cfg, stage_prompt(first, shared), directory, '1-brief', 'brief', effort='high')
     if not brief['items']:
         return {'drafts': [], 'open_checks': [f"Skipped {', '.join(s['source_ids'])}: {s['why']}" for s in brief['skipped']]}
     drafts = codex(cfg, stage_prompt('draft', {**shared, 'brief': brief}), directory, '2-draft', 'draft', effort='medium')
@@ -210,7 +211,8 @@ def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change'
         for draft in final['drafts']:
             # Claims-register IDs (C-...) support wording but are not collected sources; never reuse a source.
             ids = [sid for sid in dict.fromkeys(draft['source_ids']) if sid in valid and sid not in used]
-            if ids:
+            # A weekly post may stand on the ask alone when the week had nothing to show.
+            if ids or mode == 'weekly':
                 draft['source_ids'] = ids
                 used.update(ids)
                 kept.append(draft)
@@ -286,6 +288,12 @@ def page_text(url, limit=6000):
     text = re.sub(r'<(script|style)[^>]*>.*?</\1>', ' ', html_text, flags=re.S | re.I)
     text = re.sub(r'<[^>]+>', ' ', text)
     return re.sub(r'\s+', ' ', __import__('html').unescape(text)).strip()[:limit]
+
+
+def weekly(cfg, evidence, digest, claims, cta, account, directory, recent=(), extra=None):
+    """The weekly recap that ends with one call to action."""
+    return instagram(cfg, evidence, digest, claims, directory, recent, mode='weekly',
+                     extra={'cta': cta, 'cta_account': account, **(extra or {})})
 
 
 def showcase(cfg, product, claims, directory, recent=()):

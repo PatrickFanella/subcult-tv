@@ -8,6 +8,14 @@ At most three distinct drafts are prepared per run. Source URL and update-time h
 
 The maintained importer is `studio/automation/social-posting/changemaker_instagram.py`, with its prompt and schema alongside it. Unit sources are in `studio/automation/postiz-dashboard/`. On Kvant the installed copy lives under `~/.local/share/posting-dashboard/changemaker/`; the daily timer runs at 09:20 UTC, after Switchyard's 09:00 UTC trigger. It writes completed `result.json` and `receipt.json` files under the existing private preparation state. The five-minute dashboard sync uses the pinned exporter and reads canonical Studio configuration without switching the existing preparation consumers.
 
+## Weekly post
+
+`weekly.py` prepares one subcult Instagram post a week for the Friday 17:30 Chicago slot (`weekly_cta` in `config.json`). It is a recap of the week's merged work that ends with one call to action. The ask rotates by ISO week through Patreon (`patreon.com/subcult`), the newsletter (`subcult.tv/newsletter`) and the support page (`subcult.tv/support`). Caption links are not clickable on Instagram, so the caption writes the address out and points to the link in bio; keep all three addresses in the profile's bio links.
+
+Each week gets a new caption and image from that week's Changemaker digests (up to seven days back), through the same staged writer with `mode: weekly`. Nothing is reposted: Instagram stops recommending identical reposts to non-followers. The caption must name the week's address, and it may say only what the rotation entry's `facts` say about the destination. A quiet week can produce a post about the ask alone. Daily drafts never take the weekly slot.
+
+`changemaker-weekly.timer` runs on Wednesdays at 15:00 UTC, about 55 hours before the slot. A week that already has a weekly draft is skipped. The draft is unapproved and expires at its slot, so an unapproved week shows as missed and nothing posts without approval. Weekly runs consume no source identities, so the daily lane can still use the same changes.
+
 ## Editing queued posts
 
 The review sheet can save an edit without approving it. A post already queued in PostyBirb can be edited from its review row or from the delivery history (`PUT /api/v1/admin/studio/review/{id}/schedule`). As with approval, the resulting publish time must be 24 hours to 90 days away; within 24 hours of publishing, an edit must also move the post at least 24 hours out, and nothing changes within 30 minutes of the current time.

@@ -1,0 +1,10 @@
+[Unit]
+Description=Prepare the weekly Instagram post two days before its Friday slot
+
+[Timer]
+OnCalendar=Wed *-*-* 15:00:00 UTC
+Persistent=true
+Unit=changemaker-weekly.service
+
+[Install]
+WantedBy=timers.target

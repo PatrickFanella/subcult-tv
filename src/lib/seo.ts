@@ -151,6 +151,14 @@ const STATIC_PAGES: PageMeta[] = [
     imageAlt: DEFAULT_IMAGE_ALT,
   },
   {
+    path: '/newsletter',
+    title: fullTitle('Newsletter'),
+    description:
+      'One email a month from SUBCULT with releases and what we’re working on. Every email has an unsubscribe link.',
+    image: DEFAULT_IMAGE,
+    imageAlt: DEFAULT_IMAGE_ALT,
+  },
+  {
     path: '/newsletter/confirmed',
     title: fullTitle('Subscription confirmed'),
     description: 'Your subscription to the monthly SUBCULT newsletter is confirmed.',

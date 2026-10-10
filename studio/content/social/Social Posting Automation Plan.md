@@ -47,6 +47,7 @@ All times are America/Chicago. Patreon preparation and Sunday review fit the exi
 | Thursday | 09:22 | SUBCULT: one distinct studio proof post | Standard |
 | Thursday | 13:10 | Patreon: field note from the same work | Weekly preparation target; schedule only when ready |
 | Friday | 09:11 | Patrick: lighter interpretation, observation, or question | Standard |
+| Friday | 17:30 | SUBCULT Instagram: weekly recap ending with one call to action (Patreon, newsletter or support page, rotating) | Prepared Wednesday by `weekly.py`; approve like any draft |
 | Saturday | No required slot | Adapt the strongest source to one Instagram post | Optional; skip when no suitable media is ready |
 | Sunday | 16:00 | Review results, archive assets, choose keep/change/stop | 20-minute review |
 
