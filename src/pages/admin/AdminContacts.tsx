@@ -62,7 +62,7 @@ export default function AdminContacts() {
               c.read ? 'border-fog/50' : 'border-signal'
             }`}
           >
-            <div className="flex flex-col-reverse items-stretch gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+            <div className="flex flex-col items-stretch gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
               <div className="flex-1 min-w-0">
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-2">
                   {!c.read && <span className="w-2 h-2 rounded-full bg-signal shrink-0" />}
@@ -85,7 +85,7 @@ export default function AdminContacts() {
                   })}
                 </div>
               </div>
-              <div className="flex justify-end gap-2 shrink-0">
+              <div className="flex gap-2 shrink-0 -ml-2 sm:ml-0">
                 <button
                   onClick={() => handleToggleRead(c.id)}
                   className="min-h-11 px-2 font-mono text-xs text-cyan hover:text-glow cursor-pointer sm:min-h-0"

@@ -80,7 +80,7 @@ export default function AdminSubscribers() {
       )}
 
       <div className="overflow-x-auto">
-        <table className="w-full text-sm">
+        <table className="stack-table w-full text-sm">
           <thead>
             <tr className="border-b border-fog text-left font-mono text-xs text-dust uppercase">
               <th className="py-3 px-3">Email</th>
@@ -95,14 +95,14 @@ export default function AdminSubscribers() {
                 className="border-b border-fog/50 hover:bg-ash transition-colors duration-200"
               >
                 <td className="py-3 px-3 font-mono text-sm text-chalk break-all">{s.email}</td>
-                <td className="py-3 px-3">
+                <td data-label="Confirmed" className="py-3 px-3">
                   <span
                     className={`font-mono text-xs ${s.confirmed ? 'text-static' : 'text-dust'}`}
                   >
                     {s.confirmed ? 'YES' : 'NO · awaiting email click'}
                   </span>
                 </td>
-                <td className="py-3 px-3 font-mono text-xs text-bone">
+                <td data-label="Subscribed" className="py-3 px-3 font-mono text-xs text-bone">
                   {new Date(s.subscribed_at).toLocaleDateString()}
                 </td>
               </tr>

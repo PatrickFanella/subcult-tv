@@ -877,3 +877,91 @@
 .posting-review-card[data-missed] .posting-draft-meta span:last-child {
   color: var(--color-signal, #f43f5e);
 }
+
+/* Long sent-post text wraps instead of widening the history table. */
+.posting-history .posting-history-text {
+  white-space: normal;
+  min-width: 16rem;
+  overflow-wrap: anywhere;
+}
+.publication-preview table {
+  border-collapse: collapse;
+  margin: 0.8rem 0;
+}
+.publication-preview th,
+.publication-preview td {
+  padding: 0.35rem 0.75rem 0.35rem 0;
+  border-bottom: 1px solid #51495c;
+  text-align: left;
+}
+
+/* Phones: each table row becomes a card. Cells with data-label show it beside the value;
+   a cell without one (the row's title) spans the card. */
+@media (max-width: 640px) {
+  .admin-shell .stack-table {
+    min-width: 0;
+  }
+  .stack-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .stack-table,
+  .stack-table tbody,
+  .stack-table tr,
+  .stack-table td {
+    display: block;
+    width: 100%;
+  }
+  .stack-table caption {
+    display: block;
+  }
+  .stack-table tr {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #51405f;
+  }
+  .admin-shell .stack-table td,
+  .posting-history .stack-table td {
+    padding: 0.25rem 0;
+    border: 0;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    min-width: 0;
+  }
+  .admin-shell .stack-table td[data-label],
+  .posting-history .stack-table td[data-label] {
+    position: relative;
+    padding-left: 7.25rem;
+  }
+  .stack-table td[data-label]::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    top: 0.35rem;
+    width: 6.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #b6aac0;
+  }
+}
+.admin-toolbar {
+  flex-wrap: wrap;
+}
+.admin-toolbar button {
+  border: 1px solid var(--color-fog);
+  padding: 0.75rem 1rem;
+  background: var(--color-soot);
+  color: var(--color-glow);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.admin-toolbar button:hover {
+  border-color: var(--color-static);
+  color: var(--color-static);
+}

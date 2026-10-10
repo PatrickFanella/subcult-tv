@@ -202,7 +202,7 @@ export default function AdminPosts() {
 
       {/* ── Table ───────────────────────────────────────────── */}
       <div className="overflow-x-auto">
-        <table className="admin-table w-full text-sm">
+        <table className="admin-table stack-table w-full text-sm">
           <thead>
             <tr className="border-b border-fog text-left font-mono text-xs text-dust uppercase">
               <th className="py-3 px-3">Title</th>
@@ -222,15 +222,17 @@ export default function AdminPosts() {
                   <div className="text-chalk font-medium">{p.title}</div>
                   <div className="font-mono text-xs text-dust">{p.slug}</div>
                 </td>
-                <td className="py-3 px-3 font-mono text-xs text-bone">{p.date}</td>
-                <td className="py-3 px-3">
+                <td data-label="Date" className="py-3 px-3 font-mono text-xs text-bone">
+                  {p.date}
+                </td>
+                <td data-label="Status" className="py-3 px-3">
                   <span
                     className={`font-mono text-xs ${p.published ? 'text-static' : 'text-dust'}`}
                   >
                     {p.published ? 'LIVE' : 'DRAFT'}
                   </span>
                 </td>
-                <td className="py-3 px-3">
+                <td data-label="Tags" className="py-3 px-3">
                   <div className="flex flex-wrap gap-1">
                     {(p.tags || []).map((t) => (
                       <span key={t} className="px-1.5 py-0.5 bg-ash text-dust font-mono text-xs">
@@ -239,7 +241,7 @@ export default function AdminPosts() {
                     ))}
                   </div>
                 </td>
-                <td className="py-3 px-3">
+                <td data-label="Actions" className="py-3 px-3">
                   <div className="flex gap-2">
                     <button
                       onClick={() => openEdit(p)}
