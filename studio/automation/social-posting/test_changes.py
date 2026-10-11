@@ -72,8 +72,12 @@ class Collection(unittest.TestCase):
         self.assertEqual(draft['run_id'], 'changes-20261011T092000Z')
         self.assertFalse(draft['social_approval'])
         self.assertEqual(draft['draft_sha256'], hashlib.sha256(draft['draft'].encode()).hexdigest())
-        canonical = json.dumps(draft['evidence'], sort_keys=True, separators=(',', ':')).encode()
+        canonical = json.dumps(draft['evidence']['items'], sort_keys=True, separators=(',', ':')).encode()
         self.assertEqual(draft['evidence_sha256'], hashlib.sha256(canonical).hexdigest())
+        with patch.object(changes, 'gitea_token', return_value='secret'), \
+             patch.object(changes, 'get_gitea', side_effect=lambda url, token: [pull(5, NOW-timedelta(hours=1))] if 'page=1' in url and 'undertow' in url else []):
+            later = changes.changes_context(CFG, NOW+timedelta(minutes=5))
+        self.assertEqual(later['drafts'][0]['evidence_sha256'], draft['evidence_sha256'])  # same merges, same evidence
         self.assertIn('collection note, not a digest', draft['draft'])
         from sources import complete_changemaker_digest
         self.assertIs(complete_changemaker_digest(context), draft)

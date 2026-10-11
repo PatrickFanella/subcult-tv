@@ -156,7 +156,9 @@ def changes_context(cfg: dict, now: datetime, days: int = 1) -> dict:
     context = {'status': 'empty', 'checked_at': now.isoformat(), 'drafts': [], 'adapter': evidence['adapter']}
     if not evidence['items'] and not evidence['failures']:
         return context
-    evidence_bytes = json.dumps(evidence, sort_keys=True, separators=(',', ':')).encode()
+    # Hash the items, not the window: the same set of merged pull requests is the same
+    # evidence whenever it is read, so a rerun cannot manufacture a second daily edition.
+    evidence_bytes = json.dumps(evidence['items'], sort_keys=True, separators=(',', ':')).encode()
     note = collection_note(evidence)
     run_id = 'changes-'+now.strftime('%Y%m%dT%H%M%SZ')
     context['status'] = 'available' if evidence['items'] else 'empty'
