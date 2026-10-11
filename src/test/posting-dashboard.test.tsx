@@ -8,6 +8,7 @@ import {
   getPostingDashboard,
   getStudioCatalog,
   getStudioAsset,
+  getBlueskyDelivery,
   getSocialDelivery,
   getReviewDrafts,
   getDraftDecisions,
@@ -22,6 +23,7 @@ vi.mock('@/lib/api', () => ({
   getDraftDecisions: vi.fn(),
   getRerolls: vi.fn(),
   recordDraftDecision: vi.fn(),
+  getBlueskyDelivery: vi.fn(),
   getSocialDelivery: vi.fn().mockRejectedValue(new Error('PostyBirb delivery is not configured')),
   approveSocialSchedule: vi.fn(),
   getStudioCatalog: vi.fn(),
@@ -76,6 +78,13 @@ const data = {
 afterEach(cleanup);
 beforeEach(() => {
   vi.resetAllMocks();
+  vi.mocked(getBlueskyDelivery).mockResolvedValue({
+    configured: false,
+    accounts: [],
+    receipts: [],
+    posts: [],
+    checked_at: '',
+  });
   vi.mocked(getPostingDashboard).mockResolvedValue(data);
   vi.mocked(getReviewDrafts).mockResolvedValue([]);
   vi.mocked(getDraftDecisions).mockResolvedValue([]);

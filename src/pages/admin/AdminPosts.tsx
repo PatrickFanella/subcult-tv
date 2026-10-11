@@ -7,6 +7,8 @@ import {
   getReviewDrafts,
   getSocialDelivery,
   getBufferDelivery,
+  getBlueskyDelivery,
+  type BlueskyDelivery,
   type BufferDelivery,
   type DraftDecision,
   type DraftReroll,
@@ -28,7 +30,7 @@ import {
   rerollLabel,
 } from '@/lib/review-queue';
 import PostingShell from './PostingShell';
-import TextPostCard from './TextPostCard';
+import BlueskyPostReview from './BlueskyPostReview';
 import XPostReview from './XPostReview';
 import InstagramReview from './InstagramReview';
 import DecisionControls from './DecisionControls';
@@ -43,6 +45,8 @@ export default function AdminPosts() {
   const [data, setData] = useState<PostingDashboard | null>(null);
   const [bufferDelivery, setBufferDelivery] = useState<BufferDelivery | null>(null);
   const [bufferError, setBufferError] = useState('');
+  const [blueskyDelivery, setBlueskyDelivery] = useState<BlueskyDelivery | null>(null);
+  const [blueskyError, setBlueskyError] = useState('');
   const [saved, setSaved] = useState<ReviewDraft[]>([]);
   const [delivery, setDelivery] = useState<SocialDelivery | null>(null);
   const [decisions, setDecisions] = useState<DraftDecision[]>([]);
@@ -189,12 +193,32 @@ export default function AdminPosts() {
       active = false;
     };
   }, [tab, revision]);
+  useEffect(() => {
+    let active = true;
+    getBlueskyDelivery()
+      .then((value) => {
+        if (active) {
+          setBlueskyDelivery(value);
+          setBlueskyError('');
+        }
+      })
+      .catch((e) => {
+        if (active) {
+          setBlueskyDelivery(null);
+          setBlueskyError(e.message);
+        }
+      });
+    return () => {
+      active = false;
+    };
+  }, [revision, accountRevision]);
+  const blueskyFor = (id: string) => blueskyDelivery?.receipts.find((r) => r.draft_id === id);
   const expired = (d: { expires_at: string; due_at: string }) => isExpired(d, now);
   const bufferFor = (id: string) => bufferDelivery?.receipts.find((r) => r.draft_id === id);
   const editFor = (id: string) => saved.find((s) => s.draft_id === id);
   const submitted = (id: string) => {
     const edit = editFor(id);
-    return Boolean((edit && edit.status !== 'draft') || bufferFor(id));
+    return Boolean((edit && edit.status !== 'draft') || bufferFor(id) || blueskyFor(id));
   };
   const latest = latestDecisions(decisions);
   const favorites = favoritedDrafts(decisions);
@@ -211,9 +235,11 @@ export default function AdminPosts() {
   const counts: Record<Tab, number> = { instagram: 0, x: 0, bluesky: 0 };
   for (const d of data?.drafts || [])
     if (!expired(d) && !submitted(d.id) && !hidden(d)) counts[draftPlatform(d)] += 1;
-  const tabs: Tab[] = ['instagram', 'x', ...(counts.bluesky ? (['bluesky'] as Tab[]) : [])];
+  const tabs: Tab[] = ['instagram', 'x', 'bluesky'];
   const dueOf = (d: PostingDraft) =>
-    new Date(bufferFor(d.id)?.due_at || editFor(d.id)?.due_at || d.due_at).valueOf();
+    new Date(
+      blueskyFor(d.id)?.due_at || bufferFor(d.id)?.due_at || editFor(d.id)?.due_at || d.due_at,
+    ).valueOf();
   const drafts = all
     .filter(
       (d) =>
@@ -314,11 +340,7 @@ export default function AdminPosts() {
                   setOpen('');
                 }}
               >
-                {t === 'instagram'
-                  ? 'Instagram'
-                  : t === 'x'
-                    ? 'X'
-                    : `${platformLabel(t)} (post via Buffer)`}{' '}
+                {t === 'instagram' ? 'Instagram' : t === 'x' ? 'X' : platformLabel(t)}{' '}
                 <span className="posting-tab-count">{counts[t]}</span>
               </button>
             ))}
@@ -340,9 +362,7 @@ export default function AdminPosts() {
                         ? hiddenLabel[hidden(d)]
                         : expired(d)
                           ? 'Missed proposed time'
-                          : tab === 'x'
-                            ? 'Needs approval'
-                            : 'Copy to Buffer'
+                          : 'Needs approval'
                     }
                     expanded={current === d.id}
                     onToggle={() => toggle(d.id)}
@@ -369,7 +389,15 @@ export default function AdminPosts() {
                         )}
                       </XPostReview>
                     ) : (
-                      <TextPostCard draft={d} expired={expired(d)}>
+                      <BlueskyPostReview
+                        key={`${d.id}:${blueskyDelivery?.checked_at ?? ''}`}
+                        draft={d}
+                        delivery={blueskyDelivery}
+                        now={now}
+                        onSaved={() =>
+                          recorded('Scheduled in PostyBirb. Bluesky delivery is pending.')
+                        }
+                      >
                         {!hidden(d) && (
                           <DecisionControls
                             draftId={d.id}
@@ -380,7 +408,7 @@ export default function AdminPosts() {
                             onRecorded={recorded}
                           />
                         )}
-                      </TextPostCard>
+                      </BlueskyPostReview>
                     )}
                   </ReviewRow>
                 );
@@ -489,8 +517,13 @@ export default function AdminPosts() {
           )}
           {tab === 'bluesky' && (
             <p className="studio-note">
-              {platformLabel(tab)} drafts are read-only here. Copy the text into Buffer to schedule
-              it; nothing on this page posts to {platformLabel(tab)}.
+              {blueskyError ||
+                (blueskyDelivery?.configured
+                  ? 'Review and approve Bluesky posts here to schedule them through PostyBirb.'
+                  : 'Bluesky scheduling needs its PostyBirb connection.')}{' '}
+              <button type="button" onClick={() => setAccountRevision((v) => v + 1)}>
+                Refresh Bluesky accounts
+              </button>
             </p>
           )}
           <details className="posting-filters">

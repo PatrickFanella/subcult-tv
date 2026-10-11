@@ -882,3 +882,40 @@ export const editBufferDraft = (
     method: 'PUT',
     body: JSON.stringify(input),
   });
+
+export interface BlueskyReceipt {
+  draft_id: string;
+  account_id: string;
+  caption: string;
+  alt_text: string;
+  has_media: boolean;
+  due_at: string;
+  status: 'submitting' | 'scheduled' | 'uncertain';
+  post_id: string;
+}
+export interface BlueskyDelivery {
+  configured: boolean;
+  accounts: SocialAccount[];
+  receipts: BlueskyReceipt[];
+  posts: SocialDelivery['posts'];
+  checked_at: string;
+}
+export const getBlueskyDelivery = () => apiFetch<BlueskyDelivery>('/api/v1/admin/studio/bluesky');
+export async function approveBlueskyDraft(id: string, form: FormData) {
+  const token = getToken();
+  const response = await fetch(
+    `${API_BASE}/api/v1/admin/studio/bluesky/${encodeURIComponent(id)}/approve`,
+    {
+      method: 'POST',
+      headers: token ? { Authorization: `Bearer ${token}` } : {},
+      body: form,
+    },
+  );
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok)
+    throw new APIError(
+      result.error || 'Bluesky scheduling could not be confirmed',
+      response.status,
+    );
+  return result as BlueskyReceipt;
+}

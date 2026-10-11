@@ -96,6 +96,13 @@ func main() {
 	h.StudioStateRoot = os.Getenv("STUDIO_STATE_ROOT")
 	h.SocialPosting = postybirb.New(os.Getenv("POSTYBIRB_API_URL"), os.Getenv("POSTYBIRB_REMOTE_PASSWORD"), "instagram", os.Getenv("POSTYBIRB_CERT_SHA256"))
 	h.SocialAccounts = strings.FieldsFunc(os.Getenv("POSTYBIRB_INSTAGRAM_ACCOUNT_IDS"), func(r rune) bool { return r == ',' || r == ' ' })
+	h.BlueskyAccounts = make(map[string]string)
+	for _, entry := range strings.Split(os.Getenv("POSTYBIRB_BLUESKY_ACCOUNTS"), ",") {
+		name, id, ok := strings.Cut(strings.TrimSpace(entry), "=")
+		if ok && (name == "patrick" || name == "subcult" || name == "clpr") && strings.TrimSpace(id) != "" {
+			h.BlueskyAccounts[name] = strings.TrimSpace(id)
+		}
+	}
 	h.PostingMediaBaseURL = os.Getenv("POSTING_MEDIA_BASE_URL")
 	h.PostingPreparationKey = os.Getenv("POSTING_PREPARATION_KEY")
 	h.DevelopmentAutoPublish = os.Getenv("DEVELOPMENT_AUTO_PUBLISH") == "true"

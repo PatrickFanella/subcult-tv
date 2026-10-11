@@ -138,6 +138,8 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 			admin.Get("/admin/studio/rerolls", h.Rerolls)
 			admin.Get("/admin/studio/decisions", h.DraftDecisions)
 			admin.Get("/admin/studio/delivery", h.SocialDelivery)
+			admin.Get("/admin/studio/bluesky", h.BlueskyDelivery)
+			admin.Post("/admin/studio/bluesky/{id}/approve", h.ApproveBlueskyDraft)
 			admin.Get("/admin/studio/buffer", h.BufferDelivery)
 			admin.Get("/admin/studio/buffer/history", h.BufferHistory)
 			admin.Post("/admin/studio/buffer/{id}/approve", h.ApproveBufferDraft)

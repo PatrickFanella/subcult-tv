@@ -19,7 +19,7 @@ import (
 	"github.com/subculture-collective/subcult-tv/api/internal/middleware"
 )
 
-// X and Bluesky drafts are copied into Buffer by hand; only Instagram uses PostyBirb.
+// Instagram review uses this saved-image path; X and Bluesky have their own approval routes.
 const notInstagram = "Only Instagram drafts can be scheduled here. Post X drafts through Buffer"
 
 type reviewDraft struct {

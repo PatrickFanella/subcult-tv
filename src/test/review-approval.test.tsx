@@ -9,6 +9,8 @@ import {
   getPreparedMedia,
   getReviewDraftMedia,
   getReviewDrafts,
+  getBlueskyDelivery,
+  approveBlueskyDraft,
   getSocialDelivery,
   getBufferDelivery,
   getBufferHistory,
@@ -39,6 +41,8 @@ vi.mock('@/lib/api', () => ({
   getPreparedMedia: vi.fn(),
   getDraftDecisions: vi.fn(),
   recordDraftDecision: vi.fn(),
+  getBlueskyDelivery: vi.fn(),
+  approveBlueskyDraft: vi.fn(),
   getSocialDelivery: vi.fn(),
   getBufferDelivery: vi.fn(),
   getBufferHistory: vi.fn(),
@@ -149,6 +153,13 @@ function tickChecklist() {
 afterEach(cleanup);
 beforeEach(() => {
   vi.resetAllMocks();
+  vi.mocked(getBlueskyDelivery).mockResolvedValue({
+    configured: false,
+    accounts: [],
+    receipts: [],
+    posts: [],
+    checked_at: '',
+  });
   vi.mocked(getBufferDelivery).mockResolvedValue({ configured: false, channels: [], receipts: [] });
   vi.mocked(getBufferHistory).mockResolvedValue({ configured: false, posts: [] });
   URL.createObjectURL = vi.fn(() => 'blob:prepared');
@@ -910,5 +921,87 @@ describe('review helpers', () => {
   it('summarises scores readably', () => {
     expect(scoreSummary({ hook: 4, ending: 4 })).toBe('Average 4.0/5');
     expect(scoreSummary(undefined)).toBe('');
+  });
+});
+
+describe('Bluesky queue and delivery', () => {
+  it('offers the connected account and moves an approved draft to delivery', async () => {
+    const sky = draft({
+      id: 'plan:bluesky:0',
+      platform: 'bluesky',
+      mode: 'plan',
+      account: 'subcult',
+      text: 'A Bluesky post',
+    });
+    const due = future(3);
+    const receipt = {
+      draft_id: sky.id,
+      account_id: 'sky-subcult',
+      caption: sky.text,
+      due_at: due,
+      alt_text: '',
+      has_media: false,
+      status: 'scheduled' as const,
+      post_id: 'sky-post',
+    };
+    const connection = {
+      configured: true,
+      accounts: [
+        {
+          id: 'sky-subcult',
+          name: '@subcult.tv',
+          identifier: 'bluesky',
+          profile: 'subcult',
+          disabled: false,
+        },
+      ],
+      receipts: [],
+      posts: [],
+      checked_at: new Date().toISOString(),
+    };
+    vi.mocked(getPostingDashboard).mockResolvedValue(snapshot([sky]));
+    vi.mocked(getBlueskyDelivery).mockResolvedValue(connection);
+    vi.mocked(approveBlueskyDraft).mockImplementation(async () => {
+      vi.mocked(getBlueskyDelivery).mockResolvedValue({
+        ...connection,
+        receipts: [receipt],
+        posts: [
+          {
+            id: 'sky-post',
+            content: sky.text,
+            publishDate: due,
+            releaseURL: '',
+            state: 'QUEUE',
+            integration: { id: 'sky-subcult', name: 'subcult' },
+          },
+        ],
+      });
+      return receipt;
+    });
+    render(
+      <MemoryRouter initialEntries={['/admin/posts?tab=bluesky']}>
+        <AdminPosts />
+      </MemoryRouter>,
+    );
+    await openFirst(/A Bluesky post/);
+    await waitFor(() =>
+      expect(screen.getByLabelText('Bluesky account')).toHaveValue('sky-subcult'),
+    );
+    fireEvent.click(screen.getByLabelText(/I approve this exact Bluesky/));
+    fireEvent.click(screen.getByRole('button', { name: 'Approve & schedule in PostyBirb' }));
+    await screen.findByText('Scheduled in PostyBirb. Bluesky delivery is pending.');
+    await waitFor(() =>
+      expect(
+        screen.queryByRole('button', { name: /A Bluesky post/, expanded: false }),
+      ).not.toBeInTheDocument(),
+    );
+    expect(approveBlueskyDraft).toHaveBeenCalledOnce();
+    cleanup();
+    renderDelivery();
+    const row = await screen.findByRole('button', { name: /A Bluesky post/, expanded: false });
+    expect(row).toHaveTextContent('Bluesky');
+    expect(row).toHaveTextContent('Scheduled');
+    fireEvent.click(row);
+    expect(screen.getByRole('link', { name: 'Open PostyBirb ↗' })).toBeInTheDocument();
   });
 });

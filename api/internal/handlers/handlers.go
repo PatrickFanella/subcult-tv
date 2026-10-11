@@ -42,6 +42,7 @@ type Handler struct {
 	PatreonSchedulingVerified bool
 	SocialPosting             *postybirb.Client
 	SocialAccounts            []string
+	BlueskyAccounts           map[string]string
 	PostingMediaBaseURL       string
 	BrevoWebhookSecret        string
 	BrevoNewsletterListID     int64
