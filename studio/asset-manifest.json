@@ -5225,8 +5225,8 @@
   },
   {
     "path": "brand-tools/brands.json",
-    "sha256": "20168a6e92ae3056bf9cef775398e18238d972660a542708e83e7c5f1b758cab",
-    "bytes": 13148
+    "sha256": "4158fa2978306792b18759f1b12d7d9e672d5a92b7cd86edbf88d7c81c66e0f7",
+    "bytes": 13169
   },
   {
     "path": "brand-tools/build_packs.py",
@@ -7105,8 +7105,8 @@
   },
   {
     "path": "brands/tadooer/GUIDE.md",
-    "sha256": "95ab7bb15236616b0d65f03025a2f724bc96402c1911e81748f985fda807d39e",
-    "bytes": 9086
+    "sha256": "12654d0af805e409ba2738cb759a6a6cb64298845d67de198b36bf3ef37124bd",
+    "bytes": 9196
   },
   {
     "path": "brands/tadooer/alt-text.md",
@@ -7115,7 +7115,7 @@
   },
   {
     "path": "brands/tadooer/asset-manifest.json",
-    "sha256": "4b0f5bae8da59d38d9101bb9d2bc24233c97bac80442f46dcbd7f5c1c231a8b6",
+    "sha256": "b912489ba8ea12a6233ce67908fb9791244a0baef0be76c62652c1b5207fd1c5",
     "bytes": 14801
   },
   {
@@ -7330,8 +7330,8 @@
   },
   {
     "path": "brands/tadooer/product/README.md",
-    "sha256": "c45dff7c6ef0c6ea6cc650e066afd5da83cf9ac4882b8b4f73137a582447470d",
-    "bytes": 473
+    "sha256": "d08260c371d459f5a9b1ad2c6ad4486fcb093b2cfed69a2e9217d9a3ece2b2b7",
+    "bytes": 491
   },
   {
     "path": "brands/tadooer/product/apple-touch-icon.png",
@@ -7455,8 +7455,8 @@
   },
   {
     "path": "brands/tadooer/tokens.json",
-    "sha256": "efd905e05e988abf772b6bc0dce7df3d4a61cf7aa40bec5d6b6cab629d7b3826",
-    "bytes": 833
+    "sha256": "93367a3493c38fa8d262ce2ad200606b17e0477f334a75514e0ad19142f95414",
+    "bytes": 855
   },
   {
     "path": "brands/tadooer/video/captions.ass",
@@ -7540,13 +7540,13 @@
   },
   {
     "path": "brand-tools/tadooer_assets.py",
-    "sha256": "c4a365130994995aac6198c719735589fa42000d38364641c18b1b4e487e969b",
-    "bytes": 11511
+    "sha256": "3d95eca3ff9cd54d7c46b0870bd083406d93f8f568b67c75c02c70e110002539",
+    "bytes": 11605
   },
   {
     "path": "brand-tools/tadooer_product_assets.py",
-    "sha256": "6a332eedc12bdd002b2431af9900b3a61a9706d38609cadb31eb5301ffdbe39e",
-    "bytes": 6001
+    "sha256": "0624d9eaeeb1a90c4f0c0747cb74b40eccfda4d0166f741b5068a56744971460",
+    "bytes": 6019
   },
   {
     "path": "brands/tadooer/design-system/brand-assets.json",
