@@ -2,7 +2,7 @@
 
 Check the live units and links before relying on this file. Studio is `~/Work/Subcult/subcult-tv/studio`.
 
-- **Source of changes:** `changes.py` in the social-posting automation collects the merged pull requests of the six product repositories straight from Gitea (agent credential, read-only, hash-bound). Since October 11 the daily Instagram, weekly, website/Patreon, radar and plan jobs all read this collection. Switchyard's `changemaker-daily-digest` workflow (09:00 UTC) still writes its operator digest, but no social job depends on it.
+- **Source of changes:** `changes.py` in the social-posting automation collects the merged pull requests of the six product repositories straight from Gitea (agent credential, read-only, hash-bound). Since October 11 the daily Instagram, weekly, website/Patreon, radar and plan jobs all read this collection. Switchyard's `changemaker-daily-digest` workflow is disabled (trigger `daily-changemaker-native`, October 11); its past runs remain readable and no social job depends on it.
 - **Instagram and website/Patreon:**
   - `changemaker-instagram.timer` runs at 09:20 UTC and `changemaker-publications.timer` at 09:25 UTC. Both run from installed bundles, not the checkout.
   - `~/.local/share/posting-dashboard/changemaker` is a symlink to a versioned release. Publications historically used `publications/studio`; the October 6 service override selects a versioned `releases/publications-x-guidance-<sha>/studio` snapshot. Inspect effective `ExecStart` before updating either consumer.
