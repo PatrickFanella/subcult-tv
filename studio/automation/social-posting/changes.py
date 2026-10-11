@@ -24,7 +24,10 @@ from sources import NoRedirect
 
 DEFAULTS = {
     'base_url': 'https://git.subcult.tv',
-    'repositories': [],
+    # The jobs read config.json from the canonical Studio checkout, which may lag a release,
+    # so the product repositories live here as the default and config.json may override them.
+    'repositories': ['subculture-collective/clpr', 'subculture-collective/patchwork', 'subculture-collective/hasanara',
+                     'subculture-collective/rekolekt', 'subculture-collective/subcult-os', 'subculture-collective/undertow'],
     'max_items': 30,
     'max_excerpt_chars': 4000,
     'page_size': 50,

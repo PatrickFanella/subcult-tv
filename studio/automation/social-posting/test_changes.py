@@ -91,9 +91,11 @@ class Collection(unittest.TestCase):
         with patch.object(changes.subprocess, 'run', return_value=other), self.assertRaises(ValueError):
             changes.gitea_token({**changes.DEFAULTS, 'base_url': 'https://git.example', 'username': 'subcult-agent'})
 
-    def test_repositories_are_required(self):
+    def test_repositories_default_to_the_products_and_may_not_be_emptied(self):
+        self.assertEqual(len(changes.settings({})['repositories']), 6)
+        self.assertIn('subculture-collective/rekolekt', changes.settings({'changes': {}})['repositories'])
         with self.assertRaises(ValueError):
-            changes.collect_changes({'changes': {}}, NOW)
+            changes.collect_changes({'changes': {'repositories': []}}, NOW)
 
 
 if __name__ == '__main__':
