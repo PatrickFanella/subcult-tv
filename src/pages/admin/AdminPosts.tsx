@@ -283,38 +283,51 @@ export default function AdminPosts() {
     return edit?.has_media ? 'Upload saved' : 'Needs image';
   }
   return (
-    <PostingShell title="Review posts">
+    <PostingShell
+      title="Review posts"
+      description="Drafts are prepared in advance. Approve each post for any future time. Nothing posts without you."
+      action={
+        <>
+          {tab === 'instagram' && (
+            <button
+              type="button"
+              className="admin-button"
+              onClick={() => setAccountRevision((v) => v + 1)}
+              disabled={checkingAccounts || Boolean(busy)}
+            >
+              {checkingAccounts ? 'Checking Instagram accounts…' : 'Refresh Instagram accounts'}
+            </button>
+          )}
+          <button
+            type="button"
+            className="admin-button"
+            onClick={() => setRevision((v) => v + 1)}
+            disabled={Boolean(busy)}
+          >
+            Refresh drafts
+          </button>
+        </>
+      }
+    >
       {requestedPost && (
         <Navigate to={`/admin/posts/delivery?post=${encodeURIComponent(requestedPost)}`} replace />
       )}
-      <div className="posting-review-intro">
-        <p>
-          Drafts are prepared in advance. Approve each post for any future time. Nothing posts
-          without you.
-        </p>
-        <button onClick={() => setRevision((v) => v + 1)} disabled={Boolean(busy)}>
-          Refresh drafts
-        </button>
-        {tab === 'instagram' && (
-          <button
-            onClick={() => setAccountRevision((v) => v + 1)}
-            disabled={checkingAccounts || Boolean(busy)}
-          >
-            {checkingAccounts ? 'Checking Instagram accounts…' : 'Refresh Instagram accounts'}
-          </button>
-        )}
-        <Link to="/admin/studio">Brand & asset library →</Link>
-      </div>
       {error && (
-        <div role="alert">
+        <div role="alert" className="admin-alert admin-alert-error">
           <p>{error}</p>
-          <button onClick={() => setRevision((v) => v + 1)}>Retry connection</button>
+          <button type="button" className="admin-button" onClick={() => setRevision((v) => v + 1)}>
+            Retry connection
+          </button>
         </div>
       )}
-      {deliveryError && tab === 'instagram' && <p role="alert">{deliveryError}</p>}
+      {deliveryError && tab === 'instagram' && (
+        <p role="alert" className="admin-alert admin-alert-warning">
+          {deliveryError}
+        </p>
+      )}
       <div ref={noticeRef}>
         {notice && (
-          <p role="status" className="production-notice">
+          <p role="status" className="admin-alert admin-alert-notice">
             {notice}
           </p>
         )}
@@ -322,7 +335,7 @@ export default function AdminPosts() {
       {data && (
         <>
           {data.stale && (
-            <p role="alert">
+            <p role="alert" className="admin-alert admin-alert-warning">
               The preparation snapshot is over 24 hours old. Refresh the source before approving.
             </p>
           )}
@@ -487,7 +500,14 @@ export default function AdminPosts() {
               );
             })}
           </ul>
-          {!drafts.length && <p>No drafts waiting for review.</p>}
+          {!drafts.length && (
+            <div className="admin-empty">
+              No {platformLabel(tab)} drafts waiting for review.
+              {approvedCount === 0 && !hiddenCount
+                ? ' The preparation jobs add new drafts on their schedule; see Automation.'
+                : ''}
+            </div>
+          )}
           {approvedCount > 0 && (
             <p className="studio-note">
               {approvedCount} approved {platformLabel(tab)}{' '}
@@ -521,7 +541,11 @@ export default function AdminPosts() {
                 (blueskyDelivery?.configured
                   ? 'Review and approve Bluesky posts here to schedule them through PostyBirb.'
                   : 'Bluesky scheduling needs its PostyBirb connection.')}{' '}
-              <button type="button" onClick={() => setAccountRevision((v) => v + 1)}>
+              <button
+                type="button"
+                className="admin-button admin-button-small"
+                onClick={() => setAccountRevision((v) => v + 1)}
+              >
                 Refresh Bluesky accounts
               </button>
             </p>
@@ -539,14 +563,6 @@ export default function AdminPosts() {
                 ))}
               </select>
             </label>
-            {tab === 'x' && (
-              <p className="studio-note">
-                {bufferError ||
-                  (bufferDelivery?.configured
-                    ? 'Review and approve X posts here to schedule them through Buffer.'
-                    : 'Buffer scheduling needs its server connection. You can still copy a draft into Buffer.')}
-              </p>
-            )}
             {tab === 'bluesky' && (
               <label>
                 Preparation lane

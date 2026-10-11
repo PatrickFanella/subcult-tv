@@ -87,13 +87,20 @@ export default function PostEditor() {
   }
   const target = accounts.find((a) => a.id === account);
   return (
-    <PostingShell title="Edit Instagram draft">
-      <Link to="/admin/posts">← Back to review</Link>
-      <p>
-        Save your changes, then approve the rendered card in Review. Saving keeps this post
-        unapproved.
-      </p>
-      {error && <p role="alert">{error}</p>}
+    <PostingShell
+      title="Edit Instagram draft"
+      description="Save your changes, then approve the rendered card in Review. Saving keeps this post unapproved."
+      action={
+        <Link className="admin-button" to="/admin/posts">
+          ← Back to review
+        </Link>
+      }
+    >
+      {error && (
+        <p role="alert" className="admin-alert admin-alert-error">
+          {error}
+        </p>
+      )}
       {draft && (
         <div className="posting-editor-grid">
           <form className="social-composer" onSubmit={save} aria-label="Edit Instagram draft">
@@ -154,7 +161,7 @@ export default function PostEditor() {
             <p className="studio-note">
               At least 24 hours ahead · {Intl.DateTimeFormat().resolvedOptions().timeZone}
             </p>
-            <button disabled={busy} type="submit">
+            <button disabled={busy} type="submit" className="admin-button admin-button-primary">
               {busy ? 'Saving…' : 'Save changes'}
             </button>
             <details>

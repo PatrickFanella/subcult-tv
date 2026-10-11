@@ -105,21 +105,37 @@ export default function SocialDelivery({
   };
   return (
     <section className="posting-section" aria-labelledby="delivery-heading">
-      <div className="production-section-title">
-        <p className="studio-label">POSTYBIRB / INSTAGRAM</p>
-        <h2 id="delivery-heading">Scheduling & delivery</h2>
-      </div>
-      <p>
-        Every post requires your approval. Choose any future publish time within 90 days. Displayed
-        times use your browser’s timezone: {Intl.DateTimeFormat().resolvedOptions().timeZone}.
+      <h2 id="delivery-heading">{historyOnly ? 'Sent on Instagram' : 'Scheduling & delivery'}</h2>
+      {!historyOnly && (
+        <p>
+          Every post requires your approval. Choose any future publish time within 90 days.
+          Displayed times use your browser’s timezone:{' '}
+          {Intl.DateTimeFormat().resolvedOptions().timeZone}.
+        </p>
+      )}
+      {error && (
+        <p role="alert" className="admin-alert admin-alert-warning">
+          {error}
+        </p>
+      )}
+      <p className="admin-row-actions">
+        <button
+          type="button"
+          className="admin-button admin-button-small"
+          onClick={() => setReload((n) => n + 1)}
+          disabled={busy}
+        >
+          Refresh delivery status
+        </button>
+        <a
+          className="admin-button admin-button-small"
+          href="https://postybirb.subcult.tv"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Manage or cancel in PostyBirb ↗
+        </a>
       </p>
-      {error && <p role="alert">{error}</p>}
-      <button type="button" onClick={() => setReload((n) => n + 1)} disabled={busy}>
-        Refresh delivery status
-      </button>{' '}
-      <a href="https://postybirb.subcult.tv" target="_blank" rel="noreferrer">
-        Manage or cancel in PostyBirb ↗
-      </a>
       {data && (
         <>
           <p className="studio-note">

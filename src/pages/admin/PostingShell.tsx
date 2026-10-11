@@ -1,25 +1,28 @@
-import { NavLink } from 'react-router-dom';
 import type { ReactNode } from 'react';
+import { AdminHeader } from '@/components/admin/crud';
+import PostingNav from './PostingNav';
 import '@/styles/studio.css';
 
-export default function PostingShell({ title, children }: { title: string; children: ReactNode }) {
+export default function PostingShell({
+  title,
+  description,
+  action,
+  children,
+}: {
+  title: string;
+  description?: ReactNode;
+  action?: ReactNode;
+  children: ReactNode;
+}) {
   return (
     <section className="studio-page posting-page">
-      <header className="production-heading">
-        <div>
-          <p className="studio-label">SUBCULT / PUBLISHING</p>
-          <h1>{title}</h1>
-        </div>
-      </header>
-      <nav className="posting-navigation" aria-label="Publishing pages">
-        <NavLink end to="/admin/posts">
-          Review
-        </NavLink>
-        <NavLink to="/admin/posts/delivery">Scheduled & delivered</NavLink>
-        <NavLink to="/admin/posts/articles">Development log</NavLink>
-        <NavLink to="/admin/posts/patreon">Patreon</NavLink>
-        <NavLink to="/admin/posts/automation">Automation</NavLink>
-      </nav>
+      <AdminHeader
+        overline="Publishing"
+        title={title}
+        description={description}
+        action={action}
+        nav={<PostingNav />}
+      />
       {children}
     </section>
   );

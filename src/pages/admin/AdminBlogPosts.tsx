@@ -3,6 +3,7 @@ import { listPosts, createPost, updatePost, deletePost, type APIPost } from '@/l
 import { Field } from '@/components/admin/FormFields';
 import LibraryMarkdown from '@/components/admin/LibraryMarkdown';
 import { AdminHeader, AdminError } from '@/components/admin/crud';
+import PostingNav from './PostingNav';
 
 type PostForm = Omit<APIPost, 'id' | 'created_at' | 'updated_at'>;
 
@@ -86,29 +87,22 @@ export default function AdminPosts() {
   return (
     <div>
       <AdminHeader
-        overline="TEXT LIBRARY / EDITABLE ARTICLES"
-        title="Article store"
+        overline="Publishing"
+        title="Articles"
+        description="Essays, updates and announcements stored on the website. Unpublished articles stay private. Use the development-log tag only for entries meant for the public Development feed."
         action={
-          <button
-            onClick={openNew}
-            className="px-4 py-2 bg-signal text-void font-mono text-sm font-bold tracking-wider
-                       hover:bg-signal-dim transition-colors duration-200 cursor-pointer"
-          >
-            + NEW ARTICLE
+          <button type="button" className="admin-button admin-button-primary" onClick={openNew}>
+            + New article
           </button>
         }
+        nav={<PostingNav />}
       />
-
-      <p className="studio-note">
-        Store essays, updates and announcements here. Unpublished articles stay private. Use the
-        development-log tag only for entries intended for the public Development feed.
-      </p>
       <AdminError error={error} />
 
       {/* ── Form ────────────────────────────────────────────── */}
       {showForm && (
-        <div className="mb-6 bg-soot border border-fog p-6">
-          <h2 className="text-lg mb-4">{editing ? 'Edit post' : 'New post'}</h2>
+        <div className="admin-form-panel">
+          <h2>{editing ? 'Edit article' : 'New article'}</h2>
           <form onSubmit={handleSubmit} className="space-y-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <Field
@@ -180,20 +174,12 @@ export default function AdminPosts() {
               <summary>Preview Markdown</summary>
               <LibraryMarkdown>{form.content}</LibraryMarkdown>
             </details>
-            <div className="flex gap-3 pt-2">
-              <button
-                type="submit"
-                disabled={saving}
-                className="px-4 py-2 bg-signal text-void font-mono text-sm font-bold hover:bg-signal-dim transition-colors duration-200 cursor-pointer disabled:opacity-50"
-              >
-                {saving ? 'SAVING...' : 'SAVE'}
+            <div className="admin-form-actions">
+              <button type="submit" disabled={saving} className="admin-button admin-button-primary">
+                {saving ? 'Saving…' : editing ? 'Save changes' : 'Create article'}
               </button>
-              <button
-                type="button"
-                onClick={() => setShowForm(false)}
-                className="px-4 py-2 bg-ash border border-fog text-chalk font-mono text-sm hover:border-dust transition-colors duration-200 cursor-pointer"
-              >
-                CANCEL
+              <button type="button" className="admin-button" onClick={() => setShowForm(false)}>
+                Cancel
               </button>
             </div>
           </form>
@@ -202,58 +188,55 @@ export default function AdminPosts() {
 
       {/* ── Table ───────────────────────────────────────────── */}
       <div className="overflow-x-auto">
-        <table className="admin-table stack-table w-full text-sm">
+        <table className="admin-data-table admin-table stack-table">
           <thead>
-            <tr className="border-b border-fog text-left font-mono text-xs text-dust uppercase">
-              <th className="py-3 px-3">Title</th>
-              <th className="py-3 px-3">Date</th>
-              <th className="py-3 px-3">Status</th>
-              <th className="py-3 px-3">Tags</th>
-              <th className="py-3 px-3">Actions</th>
+            <tr>
+              <th>Title</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Tags</th>
+              <th>
+                <span className="sr-only">Actions</span>
+              </th>
             </tr>
           </thead>
           <tbody>
             {posts.map((p) => (
-              <tr
-                key={p.id}
-                className="border-b border-fog/50 hover:bg-ash transition-colors duration-200"
-              >
-                <td className="py-3 px-3">
-                  <div className="text-chalk font-medium">{p.title}</div>
-                  <div className="font-mono text-xs text-dust">{p.slug}</div>
+              <tr key={p.id}>
+                <td>
+                  <div className="admin-cell-title">{p.title}</div>
+                  <div className="admin-cell-sub">{p.slug}</div>
                 </td>
-                <td data-label="Date" className="py-3 px-3 font-mono text-xs text-bone">
+                <td data-label="Date" className="font-mono">
                   {p.date}
                 </td>
-                <td data-label="Status" className="py-3 px-3">
-                  <span
-                    className={`font-mono text-xs ${p.published ? 'text-static' : 'text-dust'}`}
-                  >
-                    {p.published ? 'LIVE' : 'DRAFT'}
+                <td data-label="Status">
+                  <span className={`admin-status ${p.published ? 'is-live' : 'is-muted'}`}>
+                    {p.published ? 'Live' : 'Draft'}
                   </span>
                 </td>
-                <td data-label="Tags" className="py-3 px-3">
-                  <div className="flex flex-wrap gap-1">
+                <td data-label="Tags">
+                  <div className="admin-tags">
                     {(p.tags || []).map((t) => (
-                      <span key={t} className="px-1.5 py-0.5 bg-ash text-dust font-mono text-xs">
-                        {t}
-                      </span>
+                      <span key={t}>{t}</span>
                     ))}
                   </div>
                 </td>
-                <td data-label="Actions" className="py-3 px-3">
-                  <div className="flex gap-2">
+                <td data-label="Actions">
+                  <div className="admin-row-actions">
                     <button
+                      type="button"
+                      className="admin-button admin-button-small"
                       onClick={() => openEdit(p)}
-                      className="font-mono text-xs text-cyan hover:text-glow cursor-pointer"
                     >
-                      EDIT
+                      Edit
                     </button>
                     <button
+                      type="button"
+                      className="admin-button admin-button-small admin-button-danger"
                       onClick={() => handleDelete(p.id)}
-                      className="font-mono text-xs text-signal hover:text-glow cursor-pointer"
                     >
-                      DEL
+                      Delete
                     </button>
                   </div>
                 </td>
@@ -261,8 +244,9 @@ export default function AdminPosts() {
             ))}
             {posts.length === 0 && (
               <tr>
-                <td colSpan={5} className="py-8 text-center font-mono text-sm text-bone">
-                  No posts yet. Use “+ NEW ARTICLE” to write one.
+                <td colSpan={5} className="admin-table-empty">
+                  No articles yet. Approved development-log entries land here, or write one with
+                  “New article”.
                 </td>
               </tr>
             )}
