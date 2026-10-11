@@ -6,6 +6,8 @@ When `mode` is `showcase`, prefer the `screenshot` visual with the product's URL
 
 When `mode` is `weekly`, the caption is a marketing post for the brief's one product: what it lets the reader do, one concrete detail, the maturity in a few words if the brief has one, then the single ask from `cta`, containing `cta.address` exactly as given and pointing to the link in bio. No bug narration, change list or deployment hedging, and no device, browser or setup fine print; the product page carries that. The ask is the last one or two sentences: fold whichever `cta.facts` detail makes it worth doing into the ask itself, never in a separate paragraph before it, and never say the same thing twice. Write it in the spotlighted product's voice from `voice`. Use the brief's product for the image; a `screenshot` of its live page or an `illustration` of the reader's moment usually sells better than a type card. `source_ids` may be empty.
 
+Every caption is marketing: the subject is what the reader gets from the product, with one concrete current detail, the maturity in a few words, and no bug narration, defect measurements, change lists or deployment hedging. If a base draft is still about a fix, rebuild it around the product within the evidence.
+
 For each item the review kept, start from its base draft and apply every revision note, keeping the lines the review said are working. Fix every unsupported claim by rephrasing it truthfully in the same voice. Then read the caption once more as a stranger on a phone: does it sound like a person talking, with some life in it? Is the first line the best line? Is there a sentence nobody would miss? Make it better if you can without adding facts. Cut any sentence that repeats an earlier one in other words, and never name the product twice in a row. Across the batch, no two captions share an opening move or the same maturity wording, and none reuses an opening or skeleton from `recent_captions`. The final caption is 50 to 140 words, at most 2200 characters.
 
 For each final caption also provide:
@@ -19,6 +21,6 @@ For each final caption also provide:
   - kicker: the product name, or at most 3 plain words naming the place in the product ("clpr · phone menu"), or "". Never a caveat, status or label like "reported failure" or "availability unknown".
   - image_prompt: for `illustration`, a detailed prompt for an original image in the product's art direction (given in `art_direction` for that product): subject, composition for a 4:5 frame with clear space in the lower third for type, palette with hex colors, texture and style. No text, letters, numbers, logos, UI screens, real people or recognizable public figures. Otherwise "".
   - url: for `screenshot`, one URL from `screenshot_urls` for that product. Otherwise "".
-- next_check: what the human must verify before approving: whether the change is live, any detail the caption treats as fact that deserves a second look, and the image.
+- next_check: what the human must verify before approving: whether the capability is live, any detail the caption treats as fact that deserves a second look, and the image.
 
 Judge honesty on your final caption, not on the draft's score: drop an item only if you cannot write a final caption whose every claim the evidence supports. List anything a human must decide in open_checks.
