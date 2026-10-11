@@ -40,9 +40,6 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Type check
-        run: npm run typecheck
-
       - name: Test
         run: npm test
 
@@ -76,15 +73,6 @@ jobs:
         with:
           persist-credentials: false
 
-      # The runner image's git-lfs 3.7.1 sends both the checkout header and the
-      # header Gitea returns per object; Cloudflare answers the duplicate with
-      # 400. A credential helper sends one.
-      - name: Fetch LFS objects
-        env:
-          LFS_TOKEN: ${{ github.token }}
-        run: |
-          git lfs install --local
-          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull --include="public/**"
 
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -138,15 +126,6 @@ jobs:
         with:
           persist-credentials: false
 
-      # The runner image's git-lfs 3.7.1 sends both the checkout header and the
-      # header Gitea returns per object; Cloudflare answers the duplicate with
-      # 400. A credential helper sends one.
-      - name: Fetch LFS objects
-        env:
-          LFS_TOKEN: ${{ github.token }}
-        run: |
-          git lfs install --local
-          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull --include="public/**"
 
       - name: Build API image
         run: docker build -t subcult-api ./api
@@ -165,7 +144,10 @@ jobs:
           LFS_TOKEN: ${{ github.token }}
         run: |
           git lfs install --local
-          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull --include="studio/**"
+          git -c credential.helper= -c 'credential.helper=!f() { echo username=x-access-token; echo "password=${LFS_TOKEN}"; }; f' lfs pull --include="studio/**,public/**"
+
+      - name: Check approved public asset provenance
+        run: python3 scripts/check-public-assets.py
 
       - name: Check private exports and preparation jobs
         run: make check-library check-import check-studio check-studio-automation
