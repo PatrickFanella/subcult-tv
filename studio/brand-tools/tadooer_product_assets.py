@@ -54,7 +54,7 @@ og += H.txt(80, 468, 'A private planner for one owner.', 26, d['fg'], d['body'],
 og += H.txt(80, 570, 'TADOOER / BY SUBCULT · PRIVATE, SELF-HOSTED', 18, d['safe_label'], d['label'])
 og += TD.day(d, 640, 60, 480, 510)
 ogsvg = outlined('.og', og, 1200, 630); png(ogsvg, 'og.png', 1200); ogsvg.unlink()
-(OUT / 'README.md').write_text('# Tadooer product web assets\n\n`tadooer_product_assets.py` generates these files from the Tadooer pack artwork. Text is outlined. `favicon.svg`, `apple-touch-icon.png`, `icon-512.png` and `icon-maskable-512.png` go in `apps/web/public/` and the web manifest. `og.png` has no URL because the planner has no public domain. Its headline is sample copy that the owner has not reviewed. Copy the files into the product. To change one, regenerate it here; do not edit the copies.\n')
+(OUT / 'README.md').write_text('# Tadooer product web assets\n\n`tadooer_product_assets.py` generates these files from the Tadooer pack artwork. Text is outlined. `favicon.svg`, `apple-touch-icon.png`, `icon-512.png` and `icon-maskable-512.png` go in `apps/web/public/` and the web manifest. `og.png` has no URL because the planner has no public domain. The owner approved its headline with the rest of the pack on October 10, 2026. Copy the files into the product. To change one, regenerate it here; do not edit the copies.\n')
 
 # Design-system copy with provenance. Skipped unless TADOOER_SOURCE is set: Studio's copy of the
 # README was tightened on October 3, 2026, and a fresh copy replaces that wording.
