@@ -43,24 +43,31 @@ export default function PostingAutomation() {
   const runs = [...notes].sort((a, b) => b[0].localeCompare(a[0]));
   const zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   return (
-    <PostingShell title="Preparation automation">
-      <p>
-        These jobs write drafts on Kvant. They never post anything: every post still needs your
-        approval on the Review page.
-      </p>
-      <button
-        disabled={loading}
-        onClick={() => {
-          setLoading(true);
-          setRevision((v) => v + 1);
-        }}
-      >
-        {loading ? 'Loading…' : 'Refresh automation'}
-      </button>
-      {error && <p role="alert">{error}</p>}
+    <PostingShell
+      title="Automation"
+      description="These jobs write drafts on Kvant. They never post anything: every post still needs your approval on the Review page."
+      action={
+        <button
+          type="button"
+          className="admin-button"
+          disabled={loading}
+          onClick={() => {
+            setLoading(true);
+            setRevision((v) => v + 1);
+          }}
+        >
+          {loading ? 'Loading…' : 'Refresh'}
+        </button>
+      }
+    >
+      {error && (
+        <p role="alert" className="admin-alert admin-alert-error">
+          {error}
+        </p>
+      )}
       {data && (
         <>
-          <p className="studio-note">
+          <p className={`admin-count${data.stale ? ' admin-alert admin-alert-warning' : ''}`}>
             Last synced from Kvant {readable(data.generated_at)}
             {data.stale ? ' · More than a day old: the sync job may have stopped' : ''}. Times are
             in your time zone ({zone}).
@@ -105,36 +112,46 @@ export default function PostingAutomation() {
                 </details>
               ))
             ) : (
-              <p>No notes in this snapshot.</p>
+              <p className="studio-note">No notes in this snapshot.</p>
             )}
           </section>
-          <div className="posting-history">
-            <table className="stack-table">
-              <caption>Recent runs</caption>
-              <thead>
-                <tr>
-                  <th>When</th>
-                  <th>Job</th>
-                  <th>Result</th>
-                  <th>Drafts</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.runs.map((r, i) => (
-                  <tr key={`${r.run_id}:${i}`}>
-                    <td data-label="When">{readable(r.checked_at || r.observed_at)}</td>
-                    <td data-label="Job">{laneName(r.mode)}</td>
-                    <td data-label="Result">{runStatusLabel(r.status)}</td>
-                    <td data-label="Drafts">{r.draft_count ?? '—'}</td>
+          <section className="posting-section">
+            <h2>Recent runs</h2>
+            <div className="posting-history">
+              <table className="stack-table">
+                <caption className="sr-only">Recent runs</caption>
+                <thead>
+                  <tr>
+                    <th>When</th>
+                    <th>Job</th>
+                    <th>Result</th>
+                    <th>Drafts</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-            <p className="studio-note">
-              A job that crashes before writing a result does not appear here. Check its log on
-              Kvant if a lane goes quiet.
-            </p>
-          </div>
+                </thead>
+                <tbody>
+                  {data.runs.map((r, i) => (
+                    <tr key={`${r.run_id}:${i}`}>
+                      <td data-label="When">{readable(r.checked_at || r.observed_at)}</td>
+                      <td data-label="Job">{laneName(r.mode)}</td>
+                      <td data-label="Result">{runStatusLabel(r.status)}</td>
+                      <td data-label="Drafts">{r.draft_count ?? '—'}</td>
+                    </tr>
+                  ))}
+                  {data.runs.length === 0 && (
+                    <tr>
+                      <td colSpan={4} className="admin-table-empty">
+                        No runs recorded in this snapshot.
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+              <p className="studio-note">
+                A job that crashes before writing a result does not appear here. Check its log on
+                Kvant if a lane goes quiet.
+              </p>
+            </div>
+          </section>
         </>
       )}
     </PostingShell>

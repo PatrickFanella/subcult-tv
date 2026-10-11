@@ -140,30 +140,36 @@ export default function PublicationReview({ platform }: { platform: 'website' | 
     ? Math.floor((now - new Date(`${latestDate}T12:00:00`).valueOf()) / DAY)
     : null;
   return (
-    <PostingShell title={platform === 'website' ? 'Development log' : 'Patreon posts'}>
-      <p>
-        {platform === 'website'
+    <PostingShell
+      title={platform === 'website' ? 'Development log' : 'Patreon posts'}
+      description={
+        platform === 'website'
           ? data?.development_auto_publish
-            ? 'Daily updates prepared from Changemaker publish automatically as soon as preparation finishes.'
-            : 'Daily updates prepared from Changemaker. Approve each entry to publish it on the website.'
-          : 'Patreon editions prepared from the same verified updates. Review the content, audience and publication time.'}
-      </p>
-      <p className="studio-note">
+            ? 'Daily updates prepared from the merged changes publish automatically as soon as preparation finishes.'
+            : 'Daily updates prepared from the merged changes. Approve each entry to publish it on the website.'
+          : 'Patreon editions prepared from the same verified updates. Review the content, audience and publication time.'
+      }
+      action={
+        <>
+          {platform === 'website' && (
+            <a className="admin-button" href="/development" target="_blank" rel="noreferrer">
+              View public Development log ↗
+            </a>
+          )}
+          <button type="button" className="admin-button" onClick={() => setRevision((v) => v + 1)}>
+            Refresh drafts
+          </button>
+        </>
+      }
+    >
+      <p className="admin-count">
         {platform === 'website' && data?.development_auto_publish
           ? 'Automatic approval · Immediate publication'
           : 'Manual approval · At least 24 hours ahead'}{' '}
         · {Intl.DateTimeFormat().resolvedOptions().timeZone}
       </p>
-      <button onClick={() => setRevision((v) => v + 1)}>Refresh drafts</button>
-      {platform === 'website' && (
-        <p>
-          <a href="/development" target="_blank" rel="noreferrer">
-            View public Development log ↗
-          </a>
-        </p>
-      )}
       {platform === 'patreon' && data && !data.patreon_connected && (
-        <div className="production-notice" role="status">
+        <div className="admin-alert admin-alert-warning" role="status">
           <strong>Patreon connection needed</strong>
           <p>
             Draft preparation is available.{' '}
@@ -173,15 +179,19 @@ export default function PublicationReview({ platform }: { platform: 'website' | 
         </div>
       )}
       <div ref={messageRef}>
-        {error && <p role="alert">{error}</p>}
+        {error && (
+          <p role="alert" className="admin-alert admin-alert-error">
+            {error}
+          </p>
+        )}
         {notice && (
-          <p role="status" className="production-notice">
+          <p role="status" className="admin-alert admin-alert-notice">
             {notice}
           </p>
         )}
       </div>
       {latestAge !== null && latestAge > 2 && (
-        <p className="production-notice" role="alert">
+        <p className="admin-alert admin-alert-warning" role="alert">
           No new daily draft for {latestAge} days (latest: {latestDate}). The daily preparation job
           may be failing; check its log on Kvant (<code>changemaker-publications.service</code>).
         </p>
@@ -284,13 +294,22 @@ export default function PublicationReview({ platform }: { platform: 'website' | 
                         </select>
                       </label>
                     )}
-                    {formError && <p role="alert">{formError}</p>}
+                    {formError && (
+                      <p role="alert" className="admin-alert admin-alert-error">
+                        {formError}
+                      </p>
+                    )}
                     <div className="posting-card-buttons">
-                      <button type="submit" disabled={Boolean(busy)}>
+                      <button
+                        type="submit"
+                        className="admin-button admin-button-primary"
+                        disabled={Boolean(busy)}
+                      >
                         {busy === editing.id ? 'Saving…' : 'Save changes'}
                       </button>
                       <button
                         type="button"
+                        className="admin-button"
                         disabled={Boolean(busy)}
                         onClick={() => {
                           setEditing(null);
@@ -352,13 +371,20 @@ export default function PublicationReview({ platform }: { platform: 'website' | 
               )}
               <div className="posting-card-buttons">
                 <button
+                  type="button"
+                  className="admin-button admin-button-primary"
                   disabled={!ready || Boolean(busy) || Boolean(editing)}
                   onClick={() => void approve(d)}
                 >
                   {busy === d.id ? 'Queuing…' : 'Approve & queue'}
                 </button>
                 {d.status === 'draft' && (
-                  <button disabled={Boolean(busy)} onClick={() => startEditing(d)}>
+                  <button
+                    type="button"
+                    className="admin-button"
+                    disabled={Boolean(busy)}
+                    onClick={() => startEditing(d)}
+                  >
                     Edit
                   </button>
                 )}
@@ -377,9 +403,9 @@ export default function PublicationReview({ platform }: { platform: 'website' | 
         })}
       </div>
       {data && !data.drafts.some((d) => d.platform === platform) && (
-        <p>
-          No daily drafts yet. The daily preparation job will add the next verified update here.
-        </p>
+        <div className="admin-empty">
+          No daily drafts yet. The daily preparation job adds the next verified update here.
+        </div>
       )}
     </PostingShell>
   );

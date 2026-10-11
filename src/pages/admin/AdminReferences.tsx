@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link, NavLink, useParams, useSearchParams } from 'react-router-dom';
+import { NavLink, useParams, useSearchParams } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { ArrowUpRight, Grid2X2, List, Search, SlidersHorizontal, X } from 'lucide-react';
@@ -13,6 +13,7 @@ import {
   type ReferenceResults,
   type StudioReference,
 } from '@/lib/api';
+import { AdminHeader } from '@/components/admin/crud';
 import '@/styles/studio.css';
 import '@/styles/references.css';
 
@@ -418,36 +419,36 @@ export default function AdminReferences() {
   }
   return (
     <section className="studio-page references-page" aria-labelledby="references-heading">
-      <header className="studio-heading">
-        <div>
-          <Link className="reference-back" to="/admin/studio">
-            ← Studio
-          </Link>
-          <p className="studio-label">SUBCULT / REFERENCE LIBRARY</p>
-          <h1 id="references-heading">
-            {referencePage.slug ? referencePage.label : 'Design references'}
-          </h1>
-          <p>{referencePage.description}</p>
-        </div>
-        <div className="reference-view-switch" aria-label="Display view">
-          <button
-            aria-pressed={view === 'grid'}
-            aria-label="Grid view"
-            onClick={() => update('view', 'grid', false)}
-          >
-            <Grid2X2 size={18} />
-            Grid
-          </button>
-          <button
-            aria-pressed={view === 'list'}
-            aria-label="List view"
-            onClick={() => update('view', 'list', false)}
-          >
-            <List size={18} />
-            List
-          </button>
-        </div>
-      </header>
+      <AdminHeader
+        overline="Studio"
+        title={referencePage.slug ? referencePage.label : 'Design references'}
+        titleId="references-heading"
+        description={referencePage.description}
+        action={
+          <div className="reference-view-switch" aria-label="Display view">
+            <button
+              type="button"
+              className="admin-button"
+              aria-pressed={view === 'grid'}
+              aria-label="Grid view"
+              onClick={() => update('view', 'grid', false)}
+            >
+              <Grid2X2 size={18} aria-hidden="true" />
+              Grid
+            </button>
+            <button
+              type="button"
+              className="admin-button"
+              aria-pressed={view === 'list'}
+              aria-label="List view"
+              onClick={() => update('view', 'list', false)}
+            >
+              <List size={18} aria-hidden="true" />
+              List
+            </button>
+          </div>
+        }
+      />
       <nav className="reference-collections" aria-label="Reference collections">
         {referencePages.map((item) => (
           <NavLink

@@ -12,7 +12,7 @@ import {
 import { Field, Select, StatusBadge } from '@/components/admin/FormFields';
 import { getCuratedProjects } from '@/lib/project-catalog';
 import { getShowcaseProducts } from '@/lib/showcase';
-import { AdminHeader, AdminError } from '@/components/admin/crud';
+import { AdminHeader, AdminError, AdminNotice } from '@/components/admin/crud';
 
 type ProjectForm = Omit<APIProject, 'id' | 'stars' | 'last_updated' | 'created_at' | 'updated_at'>;
 
@@ -171,39 +171,41 @@ export default function AdminProjects() {
   return (
     <div>
       <AdminHeader
-        overline="PRODUCT CATALOG"
+        overline="Publishing"
         title="Projects"
+        description="Project details shown on the public product pages. Save a draft here, then review and publish it to update the live product. New product pages and their marketing copy still need a separate public selection."
         action={
-          <button
-            onClick={openNew}
-            className="px-4 py-2 bg-signal text-void font-mono text-sm font-bold tracking-wider
-                       hover:bg-signal-dim transition-colors duration-200 cursor-pointer"
-          >
-            + NEW PROJECT
-          </button>
+          <>
+            {missing.length > 0 && (
+              <button
+                type="button"
+                className="admin-button"
+                onClick={importMissing}
+                disabled={loading || saving}
+              >
+                Import {missing.length} missing catalog{' '}
+                {missing.length === 1 ? 'project' : 'projects'}
+              </button>
+            )}
+            <button
+              type="button"
+              className="admin-button"
+              onClick={() => {
+                setLoading(true);
+                setError('');
+                load();
+              }}
+              disabled={saving || loading}
+            >
+              {loading ? 'Refreshing…' : 'Refresh'}
+            </button>
+            <button type="button" className="admin-button admin-button-primary" onClick={openNew}>
+              + New project
+            </button>
+          </>
         }
       />
-
-      <p className="studio-note">
-        Save project drafts here. Review and publish an update to change an existing public product.
-        New product pages and their marketing copy need a separate public selection.
-      </p>
-      <div className="studio-switch admin-toolbar mb-6">
-        <button onClick={importMissing} disabled={loading || saving || !missing.length}>
-          Import {missing.length} missing catalog projects
-        </button>
-        <button
-          onClick={() => {
-            setLoading(true);
-            setError('');
-            load();
-          }}
-          disabled={saving}
-        >
-          Refresh projects
-        </button>
-      </div>
-      {notice && <p role="status">{notice}</p>}
+      <AdminNotice>{notice}</AdminNotice>
       <AdminError error={error} />
       {reviewing && (
         <section className="project-review" aria-labelledby="project-review-title">
@@ -231,22 +233,36 @@ export default function AdminProjects() {
                 </div>
               ))}
           </dl>
-          <div className="studio-switch">
-            <button disabled={saving} onClick={publishReviewed}>
+          <div className="admin-form-actions">
+            <button
+              type="button"
+              className="admin-button admin-button-primary"
+              disabled={saving}
+              onClick={publishReviewed}
+            >
               {saving ? 'Publishing…' : 'Approve and publish this version'}
             </button>
-            <button disabled={saving} onClick={() => setReviewing(null)}>
+            <button
+              type="button"
+              className="admin-button"
+              disabled={saving}
+              onClick={() => setReviewing(null)}
+            >
               Cancel review
             </button>
           </div>
         </section>
       )}
-      {loading && <p role="status">Loading projects…</p>}
+      {loading && (
+        <p role="status" className="admin-count">
+          Loading projects…
+        </p>
+      )}
 
       {/* ── Form Modal ──────────────────────────────────────── */}
       {showForm && (
-        <div className="mb-6 bg-soot border border-fog p-6">
-          <h2 className="text-lg mb-4">{editing ? 'Edit project' : 'New project'}</h2>
+        <div className="admin-form-panel">
+          <h2>{editing ? `Edit ${editing.name}` : 'New project'}</h2>
           <form onSubmit={handleSubmit} className="space-y-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <Field
@@ -372,20 +388,12 @@ export default function AdminProjects() {
                 </label>
               </div>
             </div>
-            <div className="flex gap-3 pt-2">
-              <button
-                type="submit"
-                disabled={saving}
-                className="px-4 py-2 bg-signal text-void font-mono text-sm font-bold hover:bg-signal-dim transition-colors duration-200 cursor-pointer disabled:opacity-50"
-              >
-                {saving ? 'SAVING...' : 'SAVE'}
+            <div className="admin-form-actions">
+              <button type="submit" disabled={saving} className="admin-button admin-button-primary">
+                {saving ? 'Saving…' : editing ? 'Save draft' : 'Create project'}
               </button>
-              <button
-                type="button"
-                onClick={() => setShowForm(false)}
-                className="px-4 py-2 bg-ash border border-fog text-chalk font-mono text-sm hover:border-dust transition-colors duration-200 cursor-pointer"
-              >
-                CANCEL
+              <button type="button" className="admin-button" onClick={() => setShowForm(false)}>
+                Cancel
               </button>
             </div>
           </form>
@@ -394,99 +402,112 @@ export default function AdminProjects() {
 
       {/* ── Table ───────────────────────────────────────────── */}
       <div className="overflow-x-auto">
-        <table className="admin-table stack-table w-full text-sm">
+        <table className="admin-data-table admin-table stack-table">
           <thead>
-            <tr className="border-b border-fog text-left font-mono text-xs text-dust uppercase">
-              <th className="py-3 px-3">Name</th>
-              <th className="py-3 px-3">Status</th>
-              <th className="py-3 px-3">Type</th>
-              <th className="py-3 px-3">Featured</th>
-              <th className="py-3 px-3">Order</th>
-              <th className="py-3 px-3">Public update</th>
-              <th className="py-3 px-3">Actions</th>
+            <tr>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Type</th>
+              <th>Featured</th>
+              <th>Order</th>
+              <th>Public page</th>
+              <th>
+                <span className="sr-only">Actions</span>
+              </th>
             </tr>
           </thead>
           <tbody>
-            {projects.map((p) => (
-              <tr
-                key={p.id}
-                className="border-b border-fog/50 hover:bg-ash transition-colors duration-200"
-              >
-                <td className="py-3 px-3">
-                  <div className="text-chalk font-medium">{p.name}</div>
-                  <div className="font-mono text-xs text-dust">{p.slug}</div>
-                </td>
-                <td data-label="Status" className="py-3 px-3">
-                  <StatusBadge status={p.status} />
-                </td>
-                <td data-label="Type" className="py-3 px-3 font-mono text-xs text-bone">
-                  {Array.isArray(p.type) ? p.type.join(', ') : p.type}
-                </td>
-                <td data-label="Featured" className="py-3 px-3 text-center">
-                  {p.featured ? '★' : '—'}
-                </td>
-                <td data-label="Order" className="py-3 px-3 font-mono text-xs text-dust">
-                  {p.sort_order}
-                </td>
-                <td data-label="Public update" className="py-3 px-3">
-                  {published.some((live) => live.id === p.id)
-                    ? published.find((live) => live.id === p.id)?.updated_at === p.updated_at
-                      ? 'Published'
-                      : 'Draft changes'
-                    : 'Curated fallback'}
-                </td>
-                <td data-label="Actions" className="py-3 px-3">
-                  <div className="flex gap-2 flex-wrap">
-                    <button
-                      onClick={() => openEdit(p)}
-                      className="font-mono text-xs text-cyan hover:text-glow cursor-pointer"
-                    >
-                      EDIT
-                    </button>
-                    <button
-                      onClick={() => setReviewing(p)}
-                      className="font-mono text-xs text-chalk hover:text-glow cursor-pointer"
-                    >
-                      Review public update
-                    </button>
-                    {published.some((live) => live.id === p.id) && (
-                      <button
-                        disabled={saving}
-                        className="font-mono text-xs text-chalk hover:text-glow cursor-pointer"
-                        onClick={async () => {
-                          if (
-                            !confirm(
-                              'Remove this approved update and use the curated public version?',
-                            )
-                          )
-                            return;
-                          try {
-                            await unpublishProject(p.id);
-                            load();
-                          } catch (err) {
-                            setError(
-                              err instanceof Error ? err.message : 'Could not remove update.',
-                            );
-                          }
-                        }}
-                      >
-                        Use curated version
-                      </button>
+            {projects.map((p) => {
+              const live = published.find((item) => item.id === p.id);
+              const publicState = !live
+                ? { label: 'Curated fallback', tone: 'is-muted' }
+                : live.updated_at === p.updated_at
+                  ? { label: 'Published', tone: 'is-live' }
+                  : { label: 'Draft changes', tone: 'is-warn' };
+              return (
+                <tr key={p.id}>
+                  <td>
+                    <div className="admin-cell-title">{p.name}</div>
+                    <div className="admin-cell-sub">{p.slug}</div>
+                  </td>
+                  <td data-label="Status">
+                    <StatusBadge status={p.status} />
+                  </td>
+                  <td data-label="Type" className="font-mono">
+                    {Array.isArray(p.type) ? p.type.join(', ') : p.type}
+                  </td>
+                  <td data-label="Featured">
+                    {p.featured ? (
+                      <span aria-label="Featured">★</span>
+                    ) : (
+                      <span className="admin-cell-sub" aria-label="Not featured">
+                        —
+                      </span>
                     )}
-                    <button
-                      onClick={() => handleDelete(p.id)}
-                      className="font-mono text-xs text-signal hover:text-glow cursor-pointer"
-                    >
-                      DEL
-                    </button>
-                  </div>
-                </td>
-              </tr>
-            ))}
+                  </td>
+                  <td data-label="Order" className="font-mono">
+                    {p.sort_order}
+                  </td>
+                  <td data-label="Public page">
+                    <span className={`admin-status ${publicState.tone}`}>{publicState.label}</span>
+                  </td>
+                  <td data-label="Actions">
+                    <div className="admin-row-actions">
+                      <button
+                        type="button"
+                        className="admin-button admin-button-small"
+                        onClick={() => openEdit(p)}
+                      >
+                        Edit
+                      </button>
+                      <button
+                        type="button"
+                        className="admin-button admin-button-small"
+                        onClick={() => setReviewing(p)}
+                      >
+                        Review update
+                      </button>
+                      {live && (
+                        <button
+                          type="button"
+                          className="admin-button admin-button-small"
+                          disabled={saving}
+                          onClick={async () => {
+                            if (
+                              !confirm(
+                                'Remove this approved update and use the curated public version?',
+                              )
+                            )
+                              return;
+                            try {
+                              await unpublishProject(p.id);
+                              load();
+                            } catch (err) {
+                              setError(
+                                err instanceof Error ? err.message : 'Could not remove update.',
+                              );
+                            }
+                          }}
+                        >
+                          Use curated version
+                        </button>
+                      )}
+                      <button
+                        type="button"
+                        className="admin-button admin-button-small admin-button-danger"
+                        onClick={() => handleDelete(p.id)}
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              );
+            })}
             {!loading && !error && projects.length === 0 && (
               <tr>
-                <td colSpan={7} className="py-8 text-center font-mono text-sm text-bone">
-                  No projects yet. Use “+ NEW PROJECT” to add one.
+                <td colSpan={7} className="admin-table-empty">
+                  No projects yet. Import the curated catalog or create one with “New project”.
                 </td>
               </tr>
             )}

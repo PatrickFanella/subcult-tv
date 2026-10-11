@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getStudioCatalog, listPosts, type StudioDocument } from '@/lib/api';
-import { AdminHeader } from '@/components/admin/crud';
+import { AdminCount, AdminHeader } from '@/components/admin/crud';
 import { AssetDownload } from '@/components/admin/StudioAsset';
 import LibraryMarkdown from '@/components/admin/LibraryMarkdown';
 import '@/styles/studio.css';
@@ -61,17 +61,25 @@ export default function AdminTextLibrary() {
   );
   const key = (d: StudioDocument) => `${d.section}:${d.name}`;
   const document = visible.find((d) => key(d) === selected) ?? visible[0];
+  // The page already shows the title; drop a leading Markdown heading that repeats it.
+  const body = document
+    ? document.body.replace(
+        new RegExp(`^\\s*#\\s+${document.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*\n`, 'i'),
+        '',
+      )
+    : '';
   return (
     <section className="studio-page">
       <AdminHeader
-        overline="SUBCULT / WRITING & COPY"
+        overline="Studio"
         title="Text library"
-        action={<Link to="/admin/posts/articles/manage">Add or edit an article →</Link>}
+        description="Essays, development notes, brand voice and reusable copy. Source documents are read-only snapshots; the article store holds editable drafts. Publication is a separate choice."
+        action={
+          <Link className="admin-button" to="/admin/posts/articles/manage">
+            Add or edit an article →
+          </Link>
+        }
       />
-      <p className="studio-note">
-        Essays, development notes, brand voice and reusable copy. Source documents are read-only
-        snapshots; the article store holds editable drafts. Publication is a separate choice.
-      </p>
       <div className="studio-tools">
         <label>
           Search text
@@ -91,15 +99,23 @@ export default function AdminTextLibrary() {
             ))}
           </select>
         </label>
-        <Link to="/admin/studio">Brand & asset library →</Link>
       </div>
-      {loading && <p role="status">Loading text…</p>}
+      {loading && (
+        <p role="status" className="admin-count">
+          Loading text…
+        </p>
+      )}
       {errors.map((e) => (
-        <p key={e} role="alert">
+        <p key={e} role="alert" className="admin-alert admin-alert-error">
           {e}
         </p>
       ))}
-      <p role="status">{visible.length} documents on this page</p>
+      {!loading && (
+        <AdminCount>
+          {visible.length} {visible.length === 1 ? 'document' : 'documents'}
+          {query || section !== 'all' ? ' match' : ''}
+        </AdminCount>
+      )}
       {!loading && !visible.length && (
         <p>No text matches this search. Try another phrase or collection.</p>
       )}
@@ -125,41 +141,50 @@ export default function AdminTextLibrary() {
             </p>
             <h2>{document.title}</h2>
             <p className="studio-note">
-              {document.name} · {document.tags.join(' · ')}
+              {document.name}
+              {document.tags.length ? ` · ${document.tags.join(' · ')}` : ''}
             </p>
-            <LibraryMarkdown>{document.body}</LibraryMarkdown>
-            {document.asset ? (
-              <AssetDownload id={document.asset} name={document.name} />
-            ) : (
-              <Link to="/admin/posts/articles/manage">Manage editable articles →</Link>
-            )}
+            <LibraryMarkdown>{body}</LibraryMarkdown>
+            <div className="admin-form-actions">
+              {document.asset ? (
+                <AssetDownload id={document.asset} name={document.name} />
+              ) : (
+                <Link className="admin-button" to="/admin/posts/articles/manage">
+                  Edit in the article store →
+                </Link>
+              )}
+            </div>
           </article>
         </div>
       )}
       {pages > 1 && (
-        <div className="studio-switch">
+        <nav className="admin-pagination" aria-label="Article pages">
           <button
+            type="button"
+            className="admin-button"
             disabled={page === 1}
             onClick={() => {
               setLoading(true);
               setPage((p) => p - 1);
             }}
           >
-            Previous articles
+            ← Previous articles
           </button>
           <span>
             Article page {page} of {pages}
           </span>
           <button
+            type="button"
+            className="admin-button"
             disabled={page >= pages}
             onClick={() => {
               setLoading(true);
               setPage((p) => p + 1);
             }}
           >
-            Next articles
+            Next articles →
           </button>
-        </div>
+        </nav>
       )}
     </section>
   );

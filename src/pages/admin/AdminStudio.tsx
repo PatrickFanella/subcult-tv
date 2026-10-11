@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import { getStudioCatalog, type StudioBrandAsset, type StudioCatalog } from '@/lib/api';
 import { StudioAsset, AssetDownload, StudioTextAsset } from '@/components/admin/StudioAsset';
 import LibraryMarkdown from '@/components/admin/LibraryMarkdown';
+import { AdminHeader } from '@/components/admin/crud';
 import '@/styles/studio.css';
+import '@/styles/review-queue.css';
 
 export default function AdminStudio() {
   const [catalog, setCatalog] = useState<StudioCatalog | null>(null);
@@ -60,51 +62,62 @@ export default function AdminStudio() {
     ) ?? [];
   return (
     <section className="studio-page" aria-labelledby="studio-heading">
-      <header className="production-heading">
-        <div>
-          <p className="studio-label">SUBCULT / PRODUCTION LIBRARY</p>
-          <h1 id="studio-heading">Brand & asset library</h1>
-          <p>Brand identities, exports and media for each product.</p>
-        </div>
-        <div className="studio-switch">
-          <Link to="/admin/studio/text">Text library →</Link>
-          <Link to="/admin/studio/references">Design references →</Link>
-          <button onClick={refresh}>Refresh library</button>
-        </div>
-      </header>
-      <div className="production-rail">
-        <span>Assets by brand</span>
-        <Link to="/admin/posts">Posting dashboard →</Link>
-      </div>
+      <AdminHeader
+        overline="Studio"
+        title="Brand & asset library"
+        titleId="studio-heading"
+        description="Brand identities, exports and media for each product. Downloads come from the private Studio bundle; publishing an asset is a separate approval."
+        action={
+          <>
+            <Link className="admin-button" to="/admin/studio/text">
+              Text library
+            </Link>
+            <Link className="admin-button" to="/admin/studio/references">
+              Design references
+            </Link>
+            <button type="button" className="admin-button" onClick={refresh}>
+              Refresh library
+            </button>
+          </>
+        }
+      />
       {error ? (
-        <div className="production-notice" role="alert">
+        <div className="admin-alert admin-alert-error" role="alert">
           <p>{error}</p>
-          <button onClick={refresh}>Retry connection</button>
+          <button type="button" className="admin-button" onClick={refresh}>
+            Retry connection
+          </button>
         </div>
       ) : !catalog ? (
-        <p role="status">Loading library…</p>
+        <p role="status" className="admin-count">
+          Loading library…
+        </p>
       ) : (
         <>
-          <div className="studio-switch" aria-label="Library sections">
+          <div className="posting-tabs" role="tablist" aria-label="Library sections">
             <button
-              aria-pressed={tab === 'brands'}
+              type="button"
+              role="tab"
+              aria-selected={tab === 'brands'}
               onClick={() => {
                 setTab('brands');
                 setQuery('');
                 setAssetTags([]);
               }}
             >
-              Brands / {catalog.brands.length}
+              Brands <span className="posting-tab-count">{catalog.brands.length}</span>
             </button>
             <button
-              aria-pressed={tab === 'media'}
+              type="button"
+              role="tab"
+              aria-selected={tab === 'media'}
               onClick={() => {
                 setTab('media');
                 setQuery('');
                 setAssetTags([]);
               }}
             >
-              Media / {catalog.media.length}
+              Media <span className="posting-tab-count">{catalog.media.length}</span>
             </button>
           </div>
           {tab === 'brands' ? (
@@ -129,11 +142,13 @@ export default function AdminStudio() {
                 <article className="studio-brand-detail">
                   <div className="studio-brand-title">
                     <div>
-                      <p className="studio-label">SELECTED SYSTEM</p>
+                      <p className="studio-label">Selected brand</p>
                       <h2>{brand.name}</h2>
                       <p>{brand.direction}</p>
                     </div>
-                    <span className="production-badge">{assets.length} exports</span>
+                    <span className="production-badge">
+                      {assets.length} {assets.length === 1 ? 'export' : 'exports'}
+                    </span>
                   </div>
                   <details className="studio-overview">
                     <summary>View the complete brand board</summary>
@@ -204,8 +219,8 @@ export default function AdminStudio() {
                     </button>
                   </div>
                   <p className="studio-note">
-                    Current production sources from the selected brand library. Tags describe files;
-                    publication approval is separate. All selected tags must match.
+                    Tags describe files. Pick several to narrow the list; every selected tag must
+                    match.
                   </p>
                   <div className="studio-asset-tags" aria-label="Asset tag filters">
                     {[

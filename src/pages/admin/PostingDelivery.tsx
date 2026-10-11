@@ -372,13 +372,13 @@ export default function PostingDelivery() {
   );
 
   return (
-    <PostingShell title="Scheduled & delivered">
-      <div className="posting-review-intro">
-        <p>
-          Approved posts live here until they go out. Open one to change its text, image or time.
-        </p>
+    <PostingShell
+      title="Scheduled & delivered"
+      description="Approved posts live here until they go out. Open one to change its text, image or time."
+      action={
         <button
           type="button"
+          className="admin-button"
           disabled={loading}
           onClick={() => {
             setLoading(true);
@@ -388,16 +388,17 @@ export default function PostingDelivery() {
         >
           {loading ? 'Checking Buffer and PostyBirb…' : 'Refresh'}
         </button>
-      </div>
+      }
+    >
       <div ref={noticeRef}>
         {notice && (
-          <p role="status" className="production-notice">
+          <p role="status" className="admin-alert admin-alert-notice">
             {notice}
           </p>
         )}
       </div>
       {errors.length > 0 && (
-        <div className="production-notice" role="alert">
+        <div className="admin-alert admin-alert-warning" role="alert">
           <strong>Some sources could not be checked.</strong>
           <ul>
             {errors.map((e) => (
@@ -429,7 +430,7 @@ export default function PostingDelivery() {
       <section className="posting-section">
         <h2>Coming up</h2>
         {!loading && upcoming.length === 0 && (
-          <p>Nothing scheduled. Approve posts on the Review page.</p>
+          <div className="admin-empty">Nothing scheduled. Approve posts on the Review page.</div>
         )}
         {[...days].map(([day, list]) => (
           <div key={day}>
@@ -482,7 +483,7 @@ export default function PostingDelivery() {
             </table>
           </div>
         ) : (
-          history && <p>No X posts sent in the previous 30 days.</p>
+          history && <p className="studio-note">No X posts sent in the previous 30 days.</p>
         )}
       </section>
       <section className="posting-section">
@@ -506,7 +507,9 @@ export default function PostingDelivery() {
               ))}
           </ul>
         ) : (
-          bluesky && <p>No confirmed Bluesky deliveries in the previous 30 days.</p>
+          bluesky && (
+            <p className="studio-note">No confirmed Bluesky deliveries in the previous 30 days.</p>
+          )
         )}
       </section>
       <SocialDelivery draft={null} revision={revision} historyOnly />

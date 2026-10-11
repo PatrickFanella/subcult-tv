@@ -155,26 +155,30 @@ export default function AdminDashboard() {
   return (
     <section className="admin-dashboard">
       <AdminHeader
-        overline="SUBCULT / WORKSHOP"
+        overline="Workshop"
         title="Dashboard"
+        description="Start with the work waiting for you. Preparation, approval and delivery each keep their own records."
         action={
           <button
+            type="button"
+            className="admin-button"
             disabled={loading}
             onClick={() => {
               setLoading(true);
               setRevision((v) => v + 1);
             }}
           >
-            Refresh dashboard
+            {loading ? 'Refreshing…' : 'Refresh'}
           </button>
         }
       />
-      <p className="studio-note">
-        Start with work waiting for you. Preparation, approval and delivery have their own records.
-      </p>
-      {loading && <p role="status">Loading the workshop…</p>}
+      {loading && (
+        <p role="status" className="admin-count">
+          Loading the workshop…
+        </p>
+      )}
       {errors.length > 0 && (
-        <div className="production-notice" role="alert">
+        <div className="admin-alert admin-alert-warning" role="alert">
           <strong>Some records could not be loaded.</strong>
           <ul>
             {errors.map((e) => (
@@ -213,7 +217,7 @@ export default function AdminDashboard() {
             </Link>
           </div>
           {problems.length > 0 && (
-            <div className="production-notice" role="alert">
+            <div className="admin-alert admin-alert-error" role="alert">
               <strong>Missed or failed</strong>
               <ul>
                 {problems.map((p) => (
@@ -226,7 +230,7 @@ export default function AdminDashboard() {
           )}
         </section>
         <section>
-          <h2>Preparation & account readiness</h2>
+          <h2>Preparation and accounts</h2>
           <p>
             {posting
               ? !posting.connected
@@ -280,12 +284,12 @@ export default function AdminDashboard() {
             <span>Subscribers</span>
           </Link>
           <Link to="/admin/studio">
-            <strong>↗</strong>
+            <strong aria-hidden="true">→</strong>
             <span>Brand & asset library</span>
           </Link>
         </div>
       </section>
-      {checked && <p className="studio-note">Last dashboard read: {checked}</p>}
+      {checked && <p className="admin-count">Last read {checked}</p>}
     </section>
   );
 }
