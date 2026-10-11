@@ -85,7 +85,7 @@ class WeeklyTests(unittest.TestCase):
             source = Path(tmp)/'studio'
             (source/'content/social').mkdir(parents=True)
             (source/'content/social/Product Claims Register.md').write_text('Claims.')
-            with patch.object(weekly, 'changemaker_context', return_value=context), \
+            with patch.object(weekly, 'changes_context', return_value=context), \
                     patch('craft.weekly', side_effect=staged):
                 receipt = weekly.execute(source, state, NOW)
                 again = weekly.execute(source, state, NOW)
@@ -120,7 +120,7 @@ class WeeklyTests(unittest.TestCase):
             source = Path(tmp)/'studio'
             (source/'content/social').mkdir(parents=True)
             (source/'content/social/Product Claims Register.md').write_text('Claims.')
-            with patch.object(weekly, 'changemaker_context', return_value={'drafts': []}), \
+            with patch.object(weekly, 'changes_context', return_value={'drafts': []}), \
                     patch('craft.weekly', return_value={'drafts': [draft], 'open_checks': []}):
                 receipt = weekly.execute(source, state, NOW)
             result = json.loads((state/'runs'/receipt['run_id']/'result.json').read_text())

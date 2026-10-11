@@ -82,8 +82,19 @@
       "weekly_cap": 5
     }
   },
-  "switchyard": {
-    "env_file": "/home/onnwee/Work/Tools/switchyard/.env"
+  "changes": {
+    "base_url": "https://git.subcult.tv",
+    "username": "subcult-agent",
+    "repositories": [
+      "subculture-collective/clpr",
+      "subculture-collective/patchwork",
+      "subculture-collective/hasanara",
+      "subculture-collective/rekolekt",
+      "subculture-collective/subcult-os",
+      "subculture-collective/undertow"
+    ],
+    "max_items": 30,
+    "max_excerpt_chars": 4000
   },
   "discovery": {
     "inbox": "/home/onnwee/Work/Subcult/subcult-tv/studio/content/social/Timely Sources.json",

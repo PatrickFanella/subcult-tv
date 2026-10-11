@@ -14,7 +14,7 @@ import sqlite3
 import subprocess
 import tempfile
 from zoneinfo import ZoneInfo
-from sources import changemaker_context
+from changes import changes_context
 import paths
 import media
 import bluesky
@@ -278,7 +278,7 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
                     for account,due,expiry in database.execute('SELECT account,due_at,expires_at FROM timely_slots')
                     if datetime.fromisoformat(expiry) > now] if has_slots else []
             try:
-                context['changemaker'] = changemaker_context(cfg['switchyard'], now)
+                context['changemaker'] = changes_context(cfg, now, days=3)
             except Exception as error:
                 context['changemaker'] = {'status':'unavailable', 'reason':type(error).__name__, 'drafts':[]}
             context['recent_weekly_notes'] = {p.name: p.read_text()[:6000]

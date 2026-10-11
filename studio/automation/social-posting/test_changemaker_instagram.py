@@ -61,7 +61,7 @@ class ChangemakerInstagramTests(unittest.TestCase):
                 (directory/'result-model.json').write_text(json.dumps({'drafts':[self.draft],'open_checks':['Check deployment.']}))
                 return subprocess.CompletedProcess(command,0)
             before=datetime.now(timezone.utc)
-            with patch.object(importer.Path,'home',return_value=home), patch.object(importer,'HERE',root/'automation/social-posting'), patch.object(importer,'changemaker_context',return_value=context), patch.object(importer.subprocess,'run',side_effect=generate):
+            with patch.object(importer.Path,'home',return_value=home), patch.object(importer,'HERE',root/'automation/social-posting'), patch.object(importer,'changes_context',return_value=context), patch.object(importer.subprocess,'run',side_effect=generate):
                 receipt=importer.execute(root,state)
                 result=json.loads((state/'runs'/receipt['run_id']/'result.json').read_text())
                 self.assertGreaterEqual((datetime.fromisoformat(result['drafts'][0]['due_at'])-before).total_seconds(),48*3600)
@@ -100,7 +100,7 @@ class ChangemakerInstagramTests(unittest.TestCase):
             def staged(*args, **kwargs):
                 raise ValueError('stage failed')
             with patch.object(importer.Path,'home',return_value=home), patch.object(importer,'HERE',root/'automation/social-posting'), \
-                 patch.object(importer,'changemaker_context',return_value=context), patch.object(importer.subprocess,'run',side_effect=generate), \
+                 patch.object(importer,'changes_context',return_value=context), patch.object(importer.subprocess,'run',side_effect=generate), \
                  patch.object(importer,'image_record',return_value={'file':'x.jpg','sha256':'f'*64,'width':1080,'height':1350,'bytes':16}), \
                  patch.object(craft,'instagram',side_effect=staged), patch.object(craft,'picture',side_effect=picture):
                 receipt=importer.execute(root,state)
@@ -192,7 +192,7 @@ class ChangemakerInstagramTests(unittest.TestCase):
             def fake_showcase(product, source_root, st):
                 shown.append(product)
                 return {'run_id':'fallback-run','draft_count':1}
-            with patch.object(importer,'HERE',root/'automation/social-posting'), patch.object(importer,'changemaker_context',return_value=context), \
+            with patch.object(importer,'HERE',root/'automation/social-posting'), patch.object(importer,'changes_context',return_value=context), \
                  patch.object(craft,'instagram',return_value={'drafts':[],'open_checks':['Skipped S1: a small layout fix nobody outside the project would notice']}), \
                  patch.object(showcase,'execute',side_effect=fake_showcase):
                 receipt=importer.execute(root,state)
