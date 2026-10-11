@@ -152,6 +152,58 @@ class ChangemakerInstagramTests(unittest.TestCase):
             (other/'result.json').write_text(json.dumps({'drafts': [{'text': 'X draft'}]}))
             self.assertEqual(importer.recent_captions(state, datetime.now(timezone.utc)), ['An empty button crashed the menu.'])
 
+    def test_showcase_product_rotates_live_products_and_respects_the_gap(self):
+        cfg = {'daily_showcase': {'enabled': True, 'gap_days': 2, 'products': ['undertow', 'clpr', 'kork']}}
+        now = datetime(2026, 10, 11, 9, 20, tzinfo=timezone.utc)
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            (state/'runs').mkdir()
+            self.assertEqual(importer.showcase_product(cfg, state, now), 'undertow')
+            self.assertIsNone(importer.showcase_product({'daily_showcase': {'enabled': False, 'products': ['clpr']}}, state, now))
+            self.assertIsNone(importer.showcase_product({}, state, now))
+            # Products already spotlighted by prepared drafts come last; the least recent of them is chosen.
+            for n, product in enumerate(['kork', 'undertow', 'clpr']):
+                run = state/'runs'/f'2026100{n+1}T000000Z-changemaker'; run.mkdir()
+                (run/'result.json').write_text(json.dumps({'drafts': [{'text': 'x', 'craft': {'product': product}}]}))
+            self.assertEqual(importer.showcase_product(cfg, state, now), 'kork')
+            # A weekly or showcase post prepared within the gap suppresses the fallback.
+            (state/'runs'/'20261001T000000Z-changemaker'/'receipt.json').write_text(json.dumps(
+                {'kind': 'weekly', 'status': 'success', 'checked_at': (now.replace(hour=1)).isoformat()}))
+            self.assertIsNone(importer.showcase_product(cfg, state, now))
+            (state/'runs'/'20261001T000000Z-changemaker'/'receipt.json').write_text(json.dumps(
+                {'kind': 'showcase', 'status': 'success', 'checked_at': '2026-10-05T09:00:00+00:00'}))
+            self.assertEqual(importer.showcase_product(cfg, state, now), 'kork')
+
+    def test_empty_marketing_brief_falls_back_to_a_showcase_post(self):
+        import craft
+        import showcase
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)/'studio';state=Path(tmp)/'state'
+            (root/'automation/social-posting').mkdir(parents=True)
+            (root/'content/social').mkdir(parents=True)
+            (root/'automation/social-posting/config.json').write_text(json.dumps(
+                {'codex':'unused','model':'configured','switchyard':{},'craft':True,
+                 'daily_showcase':{'enabled':True,'gap_days':2,'products':['clpr']}}))
+            (root/'content/social/Product Claims Register.md').write_text('Work in progress only.')
+            item={**self.items['S1'],'id':'S1','kind':'pull request','state':'merged','title':'Tidy a menu','source':'subculture-collective/undertow'}
+            context={'drafts':[{'run_id':'native-run','draft_sha256':'d'*64,'evidence_sha256':'e'*64,'draft':'Digest.',
+                               'evidence':{'status':'complete','items':[item]}}]}
+            shown=[]
+            def fake_showcase(product, source_root, st):
+                shown.append(product)
+                return {'run_id':'fallback-run','draft_count':1}
+            with patch.object(importer,'HERE',root/'automation/social-posting'), patch.object(importer,'changemaker_context',return_value=context), \
+                 patch.object(craft,'instagram',return_value={'drafts':[],'open_checks':['Skipped S1: a small layout fix nobody outside the project would notice']}), \
+                 patch.object(showcase,'execute',side_effect=fake_showcase):
+                receipt=importer.execute(root,state)
+            self.assertEqual(shown,['clpr'])
+            self.assertEqual(receipt['draft_count'],0)
+            self.assertEqual(receipt['showcase'],{'product':'clpr','run_id':'fallback-run','draft_count':1})
+            # The skipped change is consumed, so the next run does not retry it.
+            self.assertEqual(receipt['source_identities'],[importer.identity(item)])
+            result=json.loads((state/'runs'/receipt['run_id']/'result.json').read_text())
+            self.assertIn('small layout fix',result['open_checks'][0])
+
 
 if __name__ == '__main__':
     unittest.main()

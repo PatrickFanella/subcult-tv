@@ -70,6 +70,58 @@ def recent_captions(state, now, days=14):
     return texts[:30]
 
 
+def recent_products(state, now, days=14):
+    """Products spotlighted by prepared Instagram drafts in the last `days`, newest first."""
+    products = []
+    for path in sorted((state/'runs').glob('*-changemaker/result.json'), reverse=True)[:40]:
+        if path.is_symlink() or path.stat().st_size > 2_000_000:
+            continue
+        if (now.timestamp() - path.stat().st_mtime) > days*86400:
+            continue
+        try:
+            for draft in json.loads(path.read_text()).get('drafts', []):
+                product = (draft.get('craft') or {}).get('product') or ''
+                if product:
+                    products.append(product)
+        except (ValueError, OSError, AttributeError):
+            continue
+    return products
+
+
+def recent_showcase(state, now, days):
+    """True when a showcase or weekly post was prepared in the last `days`."""
+    for path in (state/'runs').glob('*-changemaker/receipt.json'):
+        if path.is_symlink() or path.stat().st_size > 64000:
+            continue
+        try:
+            receipt = json.loads(path.read_text())
+            if receipt.get('kind') in ('showcase', 'weekly') and receipt.get('status') == 'success' \
+                    and (now - datetime.fromisoformat(receipt['checked_at'])).total_seconds() < days*86400:
+                return True
+        except (ValueError, OSError, KeyError, TypeError):
+            continue
+    return False
+
+
+def showcase_product(cfg, state, now):
+    """The live product to show when the day's changes gave a stranger nothing to want.
+
+    Returns None when the fallback is off or a showcase or weekly post ran within
+    `daily_showcase.gap_days`. Otherwise the configured product spotlighted least recently.
+    """
+    options = cfg.get('daily_showcase') or {}
+    products = list(options.get('products') or [])
+    if not options.get('enabled') or not products:
+        return None
+    if recent_showcase(state, now, options.get('gap_days', 2)):
+        return None
+    featured = recent_products(state, now)
+    unfeatured = [p for p in products if p not in featured]
+    if unfeatured:
+        return unfeatured[0]
+    return max(products, key=lambda p: featured.index(p))
+
+
 def single_pass(cfg, source_root, selected, digest, claims, directory):
     """The original one-call caption prompt, kept as the fallback path."""
     prompt = (HERE/'changemaker-instagram-prompt.md').read_text()+'\n'+json.dumps({
@@ -228,6 +280,16 @@ def execute(source_root, state):
                    'draft_count': len(drafts), 'checked_at': now.isoformat(),
                    'source_identities': sorted(identities if drafts else {identity(i) for i in items.values()}),
                    'publishing_enabled': False}
+        if not drafts:
+            # The day's changes gave a stranger nothing to want; show a live product instead.
+            product = showcase_product(cfg, state, now)
+            if product:
+                import showcase
+                try:
+                    fallback = showcase.execute(product, source_root, state)
+                    receipt['showcase'] = {'product': product, 'run_id': fallback['run_id'], 'draft_count': fallback['draft_count']}
+                except Exception as error:
+                    receipt['showcase'] = {'product': product, 'error': type(error).__name__+': '+str(error)[:300]}
         atomic_write(directory/'receipt.json', json.dumps(receipt, indent=2)+'\n')
         return receipt
 
