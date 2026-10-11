@@ -1,14 +1,15 @@
-"""Bounded read-only Changemaker and public discovery inputs."""
+"""Bounded read-only source helpers: digest completeness checks and public discovery inputs.
+
+Merged product changes are collected by `changes.py`.
+"""
 from __future__ import annotations
 
-import base64
 from datetime import datetime, timedelta, timezone
 import hashlib
 import ipaddress
 import json
 from pathlib import Path
 import re
-import shlex
 import urllib.parse
 import urllib.request
 
@@ -28,73 +29,6 @@ def get_json(url: str, token: str | None = None) -> dict | list:
     if len(data) > 2_000_000:
         raise ValueError('Source response exceeds the read budget')
     return json.loads(data)
-
-
-def control_settings(path: Path) -> tuple[str, str]:
-    selected = {}
-    for line in path.read_text().splitlines():
-        if line.lstrip().startswith('#') or '=' not in line:
-            continue
-        key, value = line.split('=', 1)
-        if key.strip() in ['API_PORT', 'SWITCHYARD_CONTROL_READ_TOKEN']:
-            parts = shlex.split(value, comments=True)
-            selected[key.strip()] = parts[0] if parts else ''
-    port = int(selected.get('API_PORT', '18080'))
-    token = selected.get('SWITCHYARD_CONTROL_READ_TOKEN')
-    if not 1 <= port <= 65535 or not token:
-        raise ValueError('Switchyard read credential or control port unavailable')
-    return f'http://127.0.0.1:{port}', token
-
-
-def artifact_bytes(artifact: dict) -> bytes:
-    uri = artifact.get('uri', '')
-    if not uri.startswith('data:') or ',' not in uri:
-        raise ValueError('Expected inline Switchyard artifact')
-    header, payload = uri.split(',', 1)
-    content = (base64.b64decode(payload, validate=True) if header.endswith(';base64')
-               else urllib.parse.unquote_to_bytes(payload))
-    if len(content) > 100_000 or hashlib.sha256(content).hexdigest() != artifact.get('sha256'):
-        raise ValueError('Switchyard artifact hash or size mismatch')
-    return content
-
-
-def changemaker_context(cfg: dict, now: datetime, days: int = 3, limit: int = 2) -> dict:
-    base, token = control_settings(Path(cfg['env_file']))
-    page = get_json(base+'/api/runs?limit=100', token)
-    runs = [r for r in page['runs'] if r['workflow_id'] == 'changemaker-daily-digest'
-            and r['status'] == 'succeeded'
-            and datetime.fromisoformat(r['created_at'].replace('Z', '+00:00')) >= now-timedelta(days=days)]
-    result = {'status': 'no_recent_run', 'checked_at': now.isoformat(), 'drafts': [],
-              'scan_truncated': bool(page.get('next_cursor'))}
-    threads = set()
-    for run in runs[:max(6, limit*3)]:
-        review = get_json(base+'/api/changemaker/drafts/'+urllib.parse.quote(run['id'], safe=''), token)
-        if review['thread_id'] in threads:
-            continue
-        threads.add(review['thread_id'])
-        version = next(v for v in review['versions'] if v['version'] == review['current_version'])
-        result['status'] = 'empty' if not version['draft_generated'] else 'available'
-        if not version['ready'] or not version['draft_generated'] or version.get('unknown_citations'):
-            continue
-        draft = artifact_bytes(version['draft'])
-        if hashlib.sha256(draft).hexdigest() != version['draft_sha256']:
-            raise ValueError('Changemaker draft digest mismatch')
-        source_run = version.get('sources_run_id') or version['run_id']
-        detail = get_json(base+'/api/runs/'+urllib.parse.quote(source_run, safe=''), token)
-        evidence = next(a for a in detail['artifacts'] if a['id'] == version['evidence_artifact_id'])
-        evidence_bytes = artifact_bytes(evidence)
-        if hashlib.sha256(evidence_bytes).hexdigest() != version['evidence_sha256']:
-            raise ValueError('Changemaker evidence digest mismatch')
-        result['drafts'].append({'thread_id':review['thread_id'], 'run_id':version['run_id'],
-            'version':version['version'], 'state':version['state'], 'draft_sha256':version['draft_sha256'],
-            'evidence_sha256':version['evidence_sha256'], 'grounding_status':version['grounding_status'],
-            'draft':draft.decode(), 'evidence':json.loads(evidence_bytes),
-            'social_approval':False})
-        if len(result['drafts']) == limit:
-            break
-    if result['drafts']:
-        result['status'] = 'available'
-    return result
 
 
 def only_capped(evidence: dict) -> bool:

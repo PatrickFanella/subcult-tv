@@ -12,13 +12,14 @@ import subprocess
 from zoneinfo import ZoneInfo
 
 import runner
-from sources import changemaker_context, discovery_inputs
+from changes import changes_context
+from sources import discovery_inputs
 
 
 def candidates(cfg, now):
     found = discovery_inputs(cfg['discovery'], now)
     try:
-        changemaker = changemaker_context(cfg['switchyard'], now)
+        changemaker = changes_context(cfg, now, days=3)
     except Exception as error:
         changemaker = {'status':'unavailable','drafts':[]}
         found['warnings'].append('Changemaker unavailable: '+type(error).__name__)

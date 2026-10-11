@@ -17,7 +17,8 @@ from zoneinfo import ZoneInfo
 from changemaker_instagram import checklist, image_record, recent_captions, taken_slots
 from feedback import owner_feedback
 from runner import atomic_write
-from sources import changemaker_context, complete_changemaker_digest
+from changes import changes_context
+from sources import complete_changemaker_digest
 
 HERE = Path(__file__).resolve().parent
 
@@ -105,7 +106,7 @@ def execute(source_root, state, now=None):
         if week in prepared_weeks(state):
             return {'status': 'already_prepared', 'mode': 'changemaker', 'kind': 'weekly', 'week': week,
                     'publishing_enabled': False}
-        context = changemaker_context(cfg['switchyard'], now, days=weekly.get('days', 7), limit=7)
+        context = changes_context(cfg, now, days=weekly.get('days', 7))
         evidence_items, digests = week_evidence(context)
         items = {i['id']: i for i in evidence_items}
         run_id = now.strftime('%Y%m%dT%H%M%S.%fZ')+'-changemaker'
@@ -123,7 +124,7 @@ def execute(source_root, state, now=None):
             validate(draft, items, cta, weekly['account'])
             bound = [items[s] for s in draft['source_ids']]
             proof = f'Weekly post for {week}; call to action: {cta["id"]} ({cta["address"]})\n'
-            proof += 'Changemaker runs: '+', '.join(evidence['digest_runs'] or ['none in the window'])+'\n'
+            proof += 'Collections: '+', '.join(evidence['digest_runs'] or ['none in the window'])+'\n'
             proof += '\n'.join(i['id']+': '+i['title']+' — '+i['url'] for i in bound)
             plan = draft['media']
             media = {'mode': 'generate' if plan['kind'] == 'illustration' else 'capture' if plan['kind'] == 'screenshot' else 'library',

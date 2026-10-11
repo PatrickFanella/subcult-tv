@@ -10,7 +10,8 @@ from pathlib import Path
 import re
 import subprocess
 
-from sources import changemaker_context, complete_changemaker_digest
+from changes import changes_context
+from sources import complete_changemaker_digest
 from runner import atomic_write
 from feedback import owner_feedback
 
@@ -205,7 +206,7 @@ def execute(source_root, state):
     with (state/'runner.lock').open('a') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         now = datetime.now(timezone.utc)
-        context = changemaker_context(cfg['switchyard'], now)
+        context = changes_context(cfg, now)
         if not context['drafts']:
             return {'status': context['status'], 'mode': 'changemaker', 'publishing_enabled': False}
         digest = complete_changemaker_digest(context)
@@ -245,7 +246,7 @@ def execute(source_root, state):
         for n, draft in enumerate(result['drafts']):
             bound = [items[s] for s in draft['source_ids']]
             identities.update(identity(i) for i in bound)
-            proof = 'Changemaker '+digest['run_id']+'; evidence SHA-256 '+digest['evidence_sha256']+'\n'
+            proof = 'Collection '+digest['run_id']+'; evidence SHA-256 '+digest['evidence_sha256']+'\n'
             proof += '\n'.join(i['id']+': '+i['title']+' — '+i['url'] for i in bound)
             media = {'mode': 'capture', 'asset_ids': [], 'brief': draft['media_brief'], 'alt_text': draft.get('alt_text', '')}
             record = {'account': draft['account'], 'platform': 'instagram', 'text': draft['text'],
