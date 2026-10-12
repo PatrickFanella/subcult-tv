@@ -637,4 +637,71 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     ],
     closing: 'It’s free, it’s new, and it will have rough edges. Tell us where!',
   },
+  tadooer: {
+    audience: 'For one person who runs their own server and wants the day on one screen.',
+    introduction:
+      'Here is the day. The tasks and the calendar sit together, and one of them is the thing you are doing now.',
+    features: [
+      {
+        title: 'Capture, then plan',
+        description:
+          'Capture a task, give it a project or a tag, and place it on a day or a time block in the Planner. Boards group tasks by filters you choose.',
+      },
+      {
+        title: 'One focus at a time',
+        description:
+          'Start a focus session from a task. One device controls it; another can follow or take over. The time lands in the worklog.',
+      },
+      {
+        title: 'Your calendars, kept honest',
+        description:
+          'A Baikal CalDAV server, bundled or one you already run, is the calendar authority. Google Calendar connects as well. Conflicting edits ask for a decision instead of overwriting.',
+      },
+      {
+        title: 'Yours to run',
+        description:
+          'SQLite on your server, encrypted connector credentials, and documented backup and restore. Task edits queue while a browser is offline and sync when it is back.',
+      },
+    ],
+    steps: [
+      {
+        title: 'Run the server',
+        description:
+          'Compose with the bundled Baikal, or point it at an existing Baikal. The setup guide is in the repository.',
+      },
+      {
+        title: 'Create the one owner',
+        description:
+          'The first visit creates the owner account. There is no second account and no sign-up page.',
+      },
+      {
+        title: 'Open it where you work',
+        description:
+          'The web app, the Linux desktop client and your phone open the same planner over your server.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is there a hosted version?',
+        answer:
+          'No. Tadooer is a private tool for one owner. You run it; nothing about it is a public service.',
+      },
+      {
+        question: 'What about my existing Super Productivity data?',
+        answer:
+          'The import reads a Super Productivity backup and keeps projects, tags, tasks and tracked time. The project started as a port of that app and has grown past it.',
+      },
+      {
+        question: 'Does it work offline?',
+        answer:
+          'Task edits queue in the browser and sync when the server is reachable. Calendar and focus controls need a connection.',
+      },
+      {
+        question: 'Which platforms?',
+        answer:
+          'A web app, a Linux desktop client and an Android shell that exists in source without a built app yet. All of them talk to the same server.',
+      },
+    ],
+    closing: 'The plan, and the one thing now.',
+  },
 };

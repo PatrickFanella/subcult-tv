@@ -63,6 +63,8 @@ const META_DESCRIPTIONS: Record<string, string> = {
   kork: 'A free link page with 92 services, ten themes, embeds, QR codes and anonymous analytics. Tips go to your own accounts, and Kork takes no cut.',
   'left-field':
     'Seat-level public records beside their sources and gaps. Scores are provisional, versioned research notes, not forecasts. In active development.',
+  tadooer:
+    'A private, self-hosted task and calendar planner for one owner. Tasks beside the calendar on one grid, one focus session at a time, your server, no sign-up.',
 };
 
 // Titles allow about 60 characters. These stand in where "name: headline"
@@ -78,6 +80,7 @@ const TITLE_PHRASES: Record<string, string> = {
   prichal: 'Your server. We keep it running',
   kork: 'A free page for every link',
   'left-field': 'Sourced seat research',
+  tadooer: 'A private planner for one owner',
 };
 
 // schema.org applicationCategory for each product.
@@ -92,6 +95,7 @@ const APPLICATION_CATEGORY: Record<string, string> = {
   prichal: 'SocialNetworkingApplication',
   kork: 'SocialNetworkingApplication',
   subsets: 'DeveloperApplication',
+  tadooer: 'BusinessApplication',
 };
 
 function fullTitle(title: string) {
@@ -103,7 +107,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/',
     title: 'SUBCULT | Tools for independent culture',
     description:
-      'Ten tools from SUBCULT for clips, archives, mutual aid, shows, music video, hosting, link pages, seat research, and local agent skills.',
+      'Eleven tools from SUBCULT for clips, archives, mutual aid, shows, music video, hosting, link pages, seat research, local agent skills, and a private planner.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [
@@ -121,7 +125,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/products',
     title: fullTitle('Products'),
     description:
-      'Explore ten SUBCULT products, including Subsets for local agent skills. Each page explains what is available and how to get started.',
+      'Explore eleven SUBCULT products, including Tadooer, a private planner for one owner. Each page explains what is available and how to get started.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -129,7 +133,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/about',
     title: fullTitle('Studio'),
     description:
-      'SUBCULT is the independent studio behind clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork, Left Field and Subsets.',
+      'SUBCULT is the independent studio behind clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork, Left Field, Subsets and Tadooer.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [ORGANIZATION],
