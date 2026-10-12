@@ -86,14 +86,14 @@ def log_block(d, x, y, width, rows, row_h=26, live=True):
 A = dict(key='a-log-cat', title='A / Log cat: the merged log with ears',
          note='The current Chat Thing direction carried over. The log tile grows two ears; everything else stays: '
               'shell black, amber names, the green live block, Atkinson Hyperlegible Next and Mono.',
-         bg='#151519', panel='#1d2229', fg='#e8e6e3', muted='#aaa4b7', accent='#e8a33d', secondary='#35d07f', third='#5a9fe8',
+         bg='#151519', panel='#1d2229', tile='#2a3039', fg='#e8e6e3', muted='#aaa4b7', accent='#e8a33d', secondary='#35d07f', third='#5a9fe8',
          display='Atkinson Hyperlegible Next', body='Atkinson Hyperlegible Next', label='Atkinson Hyperlegible Mono',
          wordmark='chatty cat', wordfont='Atkinson Hyperlegible Mono', wordweight=700, wordspacing=-0.02,
          headline=['All six channels', 'in one scrollback.'], support='Self-hosted Twitch chat, with your display settings.')
 
 
 def a_mark(d, mono=False):
-    tile = d['fg'] if mono else d['bg']
+    tile = d['fg'] if mono else d['tile']
     ink = d['bg'] if mono else d['fg']
     name = d['bg'] if mono else d['accent']
     live = d['bg'] if mono else d['secondary']
@@ -234,11 +234,11 @@ def main():
         y = 100 + i * 580
         sheet += text(48, y + 28, d['title'], 30, '#17131d', 'Space Grotesk', 700)
         sheet += embed(HERE / f'{d["key"]}/logos/mark-primary.svg', 48, y + 50, 180, 180)
-        sheet += embed(HERE / f'{d["key"]}/logos/lockup-primary.svg', 252, y + 50, 600, 128)
-        sheet += embed(HERE / f'{d["key"]}/social/banner-x-bluesky.svg', 252, y + 200, 960, 320)
+        sheet += embed(HERE / f'{d["key"]}/logos/lockup-primary.svg', 300, y + 50, 560, 119)
+        sheet += embed(HERE / f'{d["key"]}/social/banner-x-bluesky.svg', 300, y + 190, 900, 300)
         sheet += embed(HERE / f'{d["key"]}/social/square-post.svg', 1236, y + 50, 516, 516)
-        sheet += text(48, y + 262, f'{d["display"]} / {d["body"]}', 15, '#62576b', 'JetBrains Mono')
-        sheet += text(48, y + 288, f'{d["bg"]} {d["fg"]} {d["accent"]} {d["secondary"]}', 15, '#62576b', 'JetBrains Mono')
+        for j, line in enumerate([d['display'], d['body'] + ' / ' + d['label'], d['bg'] + ' ' + d['fg'], d['accent'] + ' ' + d['secondary']]):
+            sheet += text(48, y + 262 + j * 22, line, 13, '#62576b', 'JetBrains Mono')
     write('comparison', 1800, 2440, sheet, 'Chatty Cat direction comparison')
     page = ['<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             '<title>Chatty Cat directions</title><style>body{margin:0;background:#f0ece4;color:#17131d;font:16px/1.5 system-ui}header,footer{padding:24px 32px}'

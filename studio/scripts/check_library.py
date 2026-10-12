@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = ROOT.parent
 TOOLS = ROOT / 'brand-tools'
 BRANDS = ROOT / 'brands'
-STUDIES = [ROOT / 'studies' / name for name in ('clpr-directions', 'corkboard-directions', 'patrick-logo-study')]
+STUDIES = [ROOT / 'studies' / name for name in ('clpr-directions', 'corkboard-directions', 'patrick-logo-study', 'chatty-cat-directions')]
 
 
 def relocate(name, relocations):
