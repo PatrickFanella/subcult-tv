@@ -1,6 +1,6 @@
 # Chatty Cat — Pixel cat
 
-Direction: **B / Pixel cat: console phosphor**, selected by the owner on October 11, 2026 from [four candidates](../../studies/chatty-cat-directions/index.html). The owner asked for many palettes and easy customisation, so the identity is a palette system around one mark. Status: local production pack v1. Nothing here is approved for a post, a profile change or a public announcement.
+Direction: **B / Pixel cat: console phosphor**, selected by the owner on October 11, 2026 from [four candidates](../../studies/chatty-cat-directions/index.html). The owner asked for many palettes and easy customisation, so the identity is a palette system around one mark, and approved it for application the same day. Status: approved identity. Template layouts are samples; a post or a profile change still needs its own review.
 
 Chatty Cat is a self-hosted Twitch chat client at `chat.subcult.tv`. It merges up to six channels into one scrollback and keeps the dense, configurable presentation of the original HasanAbi Chat Thing by mxmilkiib, which it rebuilds in Go and TypeScript under AGPL-3.0. The repository is `subculture-collective/chatty-cat`. HasanAra is a sibling product for the same community and keeps its own identity.
 
