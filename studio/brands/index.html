@@ -394,30 +394,30 @@ const BRANDS=[
     "direction_selection": "user"
   },
   {
-    "id": "chat-thing-a",
-    "brand": "Chat Thing",
-    "variant": "A",
-    "name": "The merged log",
-    "bg": "#151519",
-    "fg": "#e8e6e3",
-    "accent": "#e8a33d",
-    "secondary": "#35d07f",
-    "display": "Atkinson Hyperlegible Next",
-    "body": "Atkinson Hyperlegible Next",
-    "label": "Atkinson Hyperlegible Mono",
-    "safe_label": "#aaa4b7",
+    "id": "chatty-cat-b",
+    "brand": "Chatty Cat",
+    "variant": "B",
+    "name": "Pixel cat / console phosphor",
+    "bg": "#0b0f0c",
+    "fg": "#cfeedd",
+    "accent": "#7dff9a",
+    "secondary": "#e8a33d",
+    "display": "Cascadia Mono",
+    "body": "Public Sans",
+    "label": "Cascadia Mono",
+    "safe_label": "#7ea38c",
     "headline": [
-      "All six channels",
-      "in one scrollback."
+      "six channels.",
+      "one scrollback."
     ],
     "tag": "SELF-HOSTED TWITCH CHAT / BY SUBCULT",
-    "description": "Shell black, amber name blocks, a green live block and the rate sparkline: the product's own default dark palette, drawn as a merged chat log.",
-    "mode": "merged-log",
+    "description": "An eight-bit cat with a cursor mouth on console black, phosphor green and amber, in sixteen palettes: the two phosphor looks plus the fourteen app colours. Edit brand.json to add one.",
+    "mode": "pixel-cat",
     "url": "chat.subcult.tv",
-    "source": "chatty-cat web/src/style.css, palettes.css and display-data.ts read October 11, 2026. Direction proposed by Studio; the owner has not reviewed the artwork. Brand masters in brands/chat-thing/build.py.",
-    "slug": "chat-thing",
-    "selected_by_user": false,
-    "direction_selection": "proposed"
+    "source": "Owner selected direction B from studies/chatty-cat-directions on October 11, 2026 and asked for many palettes and easy customisation. Brand masters in brands/chatty-cat/build.py.",
+    "slug": "chatty-cat",
+    "selected_by_user": true,
+    "direction_selection": "user"
   }
-];let active='All';const grid=document.querySelector('#grid');function el(tag,text){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e}function draw(){grid.replaceChildren();grid.classList.toggle('single',active!=='All');document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-pressed',b.textContent===active));for(const b of BRANDS.filter(b=>active==='All'||b.brand===active)){const article=el('article');article.append(el('div',b.brand+' / '+b.variant),el('h2',b.name));const desc=el('p',b.description);desc.className='note';article.append(desc);const open=el('a');open.href=b.slug+'/pack-preview.png';open.target='_blank';const img=el('img');img.src=open.href+(b.slug==='patchwork'?'?revision=fabric-r4':b.slug==='subcult'?'?revision=user-layouts-r3':b.slug==='patrick__eff'?'?revision=patrick-waveform-approved-r2':b.slug==='clpr'?'?revision=clpr-single-clip-r5':b.slug==='rekolekt'?'?revision=story-transcript-r3':'');img.className='board';img.alt=b.brand+' pack: banner, square post, story, screenshot frame, video title and transparent lower-third.';img.width=b.slug==='patrick__eff'?1800:1600;img.height=b.slug==='patrick__eff'?1940:1800;img.loading='lazy';open.append(img);article.append(open);const links=el('div');links.className='links';for(const [name,file] of [['Download pack','../runtime/packages/'+b.slug+'.zip'],['Brand guide',b.slug+'/GUIDE.md'],['Logo',b.slug+'/logos/lockup-primary-outlined.svg'],['Banner',b.slug+'/social/banner-x-bluesky.png'],['Tokens',b.slug+'/tokens.json'],...(b.slug==='patrick__eff'?[['Logo variations','patrick__eff/logos/variations.html'],['Style examples','patrick__eff/components.html'],['Approved logo colors','../brand-tools/patrick/waveform-variations/index.html']]:[]),...(b.slug==='clpr'?[['Compare directions','../studies/clpr-directions/index.html']]:[]),...(b.slug==='subcult'?[['Banner with logo','subcult/social/banner-x-bluesky-logo.png']]:[]),...(b.slug==='patchwork'?[['Stitched buttons','patchwork/components.html']]:[]),...(b.slug==='dedhed'?[['Landing page','dedhed/landing.html'],['Design system','dedhed/design-system/README.md'],['Specimen sheet','dedhed/design-system/examples/01-specimen.html']]:[]),...(b.slug==='tadooer'?[['Design system','tadooer/design-system/README.md'],['Specimen sheet','tadooer/design-system/examples/01-specimen.html'],['Web assets','tadooer/product/README.md']]:[]),...(b.slug==='chat-thing'?[['Design system','chat-thing/design-system/README.md'],['Website specification','chat-thing/WEBSITE.md'],['Link preview','chat-thing/product/og.png']]:[])]){const a=el('a',name);a.href=file;links.append(a)}article.append(links);const details=el('details');details.append(el('summary','Watch the eight-second template preview'));const v=el('video');v.controls=true;v.preload='none';v.poster=b.slug+'/video/title-card.png';v.src=b.slug+'/video/template-preview.mp4';details.append(v);article.append(details);grid.append(article)}}for(const brand of ['All',...BRANDS.map(b=>b.brand)]){const button=el('button',brand);button.setAttribute('aria-pressed',brand===active);button.onclick=()=>{active=brand;draw()};document.querySelector('nav').append(button)}draw();
+];let active='All';const grid=document.querySelector('#grid');function el(tag,text){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e}function draw(){grid.replaceChildren();grid.classList.toggle('single',active!=='All');document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-pressed',b.textContent===active));for(const b of BRANDS.filter(b=>active==='All'||b.brand===active)){const article=el('article');article.append(el('div',b.brand+' / '+b.variant),el('h2',b.name));const desc=el('p',b.description);desc.className='note';article.append(desc);const open=el('a');open.href=b.slug+'/pack-preview.png';open.target='_blank';const img=el('img');img.src=open.href+(b.slug==='patchwork'?'?revision=fabric-r4':b.slug==='subcult'?'?revision=user-layouts-r3':b.slug==='patrick__eff'?'?revision=patrick-waveform-approved-r2':b.slug==='clpr'?'?revision=clpr-single-clip-r5':b.slug==='rekolekt'?'?revision=story-transcript-r3':'');img.className='board';img.alt=b.brand+' pack: banner, square post, story, screenshot frame, video title and transparent lower-third.';img.width=b.slug==='patrick__eff'?1800:1600;img.height=b.slug==='patrick__eff'?1940:1800;img.loading='lazy';open.append(img);article.append(open);const links=el('div');links.className='links';for(const [name,file] of [['Download pack','../runtime/packages/'+b.slug+'.zip'],['Brand guide',b.slug+'/GUIDE.md'],['Logo',b.slug+'/logos/lockup-primary-outlined.svg'],['Banner',b.slug+'/social/banner-x-bluesky.png'],['Tokens',b.slug+'/tokens.json'],...(b.slug==='patrick__eff'?[['Logo variations','patrick__eff/logos/variations.html'],['Style examples','patrick__eff/components.html'],['Approved logo colors','../brand-tools/patrick/waveform-variations/index.html']]:[]),...(b.slug==='clpr'?[['Compare directions','../studies/clpr-directions/index.html']]:[]),...(b.slug==='subcult'?[['Banner with logo','subcult/social/banner-x-bluesky-logo.png']]:[]),...(b.slug==='patchwork'?[['Stitched buttons','patchwork/components.html']]:[]),...(b.slug==='dedhed'?[['Landing page','dedhed/landing.html'],['Design system','dedhed/design-system/README.md'],['Specimen sheet','dedhed/design-system/examples/01-specimen.html']]:[]),...(b.slug==='tadooer'?[['Design system','tadooer/design-system/README.md'],['Specimen sheet','tadooer/design-system/examples/01-specimen.html'],['Web assets','tadooer/product/README.md']]:[]),...(b.slug==='chatty-cat'?[['Palette sheet','chatty-cat/palettes.png'],['Design system','chatty-cat/design-system/README.md'],['Website specification','chatty-cat/WEBSITE.md'],['Link preview','chatty-cat/product/og.png'],['Direction study','../studies/chatty-cat-directions/index.html']]:[])]){const a=el('a',name);a.href=file;links.append(a)}article.append(links);const details=el('details');details.append(el('summary','Watch the eight-second template preview'));const v=el('video');v.controls=true;v.preload='none';v.poster=b.slug+'/video/title-card.png';v.src=b.slug+'/video/template-preview.mp4';details.append(v);article.append(details);grid.append(article)}}for(const brand of ['All',...BRANDS.map(b=>b.brand)]){const button=el('button',brand);button.setAttribute('aria-pressed',brand===active);button.onclick=()=>{active=brand;draw()};document.querySelector('nav').append(button)}draw();
 </script></body></html>

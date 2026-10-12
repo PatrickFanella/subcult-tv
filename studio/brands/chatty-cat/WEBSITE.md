@@ -1,6 +1,6 @@
-# Chat Thing — Website design specification
+# Chatty Cat — Website design specification
 
-Written October 11, 2026 from the `subculture-collective/chatty-cat` checkout, not from the live site. `chat.subcult.tv` is the intended origin; public HTTPS routing and the Twitch callback had not passed acceptance when this was written, so nothing below is a live observation.
+Written October 11, 2026 from the `subculture-collective/chatty-cat` checkout, not from the live site, and updated the same day for the rename to Chatty Cat. `chat.subcult.tv` is the intended origin; public HTTPS routing and the Twitch callback had not passed acceptance when this was written, so nothing below is a live observation.
 
 This document records how the product interface relates to the pack. The product's own `docs/design-system.md` is the editing source for interface rules; this pack copies it into `design-system/` with hashes. The [brand guide](GUIDE.md) governs marks and promotional artwork.
 
@@ -18,18 +18,18 @@ Change the product first, then rerun `build.py --product-root` so the copied rul
 
 | Element | Current value in source |
 | --- | --- |
-| Name | Chat Thing (`<strong>` in the header; manifest name "Subcult Chat Thing", short name "Chat Thing") |
+| Name | Chatty Cat (header: the inline themed cat beside the name; manifest name "Chatty Cat", short name "Chatty Cat") |
 | Stage label beside the name | migration preview |
-| Document title | Chat Thing · rebuild |
+| Document title | Chatty Cat · rebuild |
 | Manifest description | Self-hosted Twitch chat client |
 | Notice bar | Migration preview. The original app remains available while its features are rebuilt. |
 | Operator | Subcult; source at git.subcult.tv/subculture-collective/chatty-cat |
 
-New copy follows the Chat Thing voice in [the voice guide](../../content/VOICE.md) and the C-CHAT entries of the claims register.
+New copy follows the Chatty Cat voice in [the voice guide](../../content/VOICE.md) and the C-CHAT entries of the claims register.
 
 ## Visual application
 
-The interface has two layers. The shell (header, notice bars, composer, panels, dialogs) reads `--bg`, `--panel`, `--fg`, `--muted`, `--line` and `--accent`. The chat log reads the palette axes in `palettes.css`: a colour (fourteen), a shade (twelve) and a finish (four), which derive `--bg`, `--text`, `--panel`, `--line`, `--text-dim`, `--aux` and `--popline` in OKLCH and set `--accent`, `--good`, `--danger`, `--vip`, `--wiki` and `--spark` per colour. The default is the gray colour at shade 7, which gives the brand its log surface and amber accent.
+The interface has two layers. The shell (header, notice bars, composer, panels, dialogs) reads `--bg`, `--panel`, `--fg`, `--muted`, `--line` and `--accent`. The chat log reads the palette axes in `palettes.css`: a colour (fourteen), a shade (twelve) and a finish (four), which derive `--bg`, `--text`, `--panel`, `--line`, `--text-dim`, `--aux` and `--popline` in OKLCH and set `--accent`, `--good`, `--danger`, `--vip`, `--wiki` and `--spark` per colour. The default is the gray colour at shade 7. The brand's sixteen palettes are those fourteen colours at their default shades plus the two phosphor looks, so the cat always has a matching palette.
 
 | Role | Default dark | Light shell |
 | --- | --- | --- |
@@ -50,16 +50,15 @@ Shape: controls have a 4px corner and panels 6px. Gutters are 20px, 12px below 6
 
 | Item | Pack | Product |
 | --- | --- | --- |
-| Canvas | One shell black with a log-surface panel | Shell black plus whichever palette, shade and finish the user chose |
-| Accent | Amber everywhere | Amber in the default palette only; each colour sets its own accent set |
-| Type | Atkinson Hyperlegible Next and Mono | The user's chosen chat font; the brand faces are two of the 29 options |
-| Spark green | The live block and sparkline | `--spark` colours the header rate graph in dark schemes; phosphor retints it toward the palette hue |
-| Mark | The log tile | The same tile as favicon, PWA icons and Apple touch icon after export; the header still shows the name as text |
+| Canvas | The phosphor palette by default | Whichever colour, shade and finish the user chose; a brand palette exists for each colour's default shade |
+| Face and cursor | `face` and `cursor` from the build palette | The inline header cat reads `--cat-face` and `--cat-cursor`, which the product maps to `--accent` and `--good`, so it follows the user's palette |
+| Type | Cascadia Mono and Public Sans | The user's chosen chat font; the wordmark is image or inline SVG, never a loaded brand font |
+| Mark | Pixel cat on a tile | The same cat as favicon, PWA icons and Apple touch icon after export, in the phosphor palette |
 | Six room chips | Drawn in the header strip | Channel chips and the send-target select exist; the strip is a simplification |
 
 ## Assets the product carries
 
-After `build.py --export web/public`: `favicon.svg`, `favicon.ico`, `icon-src.svg`, `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, `apple-touch-icon.png`, `og.png` and the `brand-export.json` receipt. The manifest's theme and background colours are already `#151519` and match the shell.
+After `build.py --export web/public`: `favicon.svg`, `favicon.ico`, `icon-src.svg`, `mark-themed.svg`, `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, `apple-touch-icon.png`, `og.png`, `palettes.json` and the `brand-export.json` receipt. The manifest's theme and background colours stay `#151519`, the shell fallback; the icons carry the phosphor canvas.
 
 ## Verification and limits
 

@@ -477,8 +477,8 @@ for d in BRANDS:
  if d['slug']=='subsets':
   subprocess.run([sys.executable,str(R.parent/'brands/subsets/build.py')],check=True)
   continue
- if d['slug']=='chat-thing':
-  subprocess.run([sys.executable,str(R.parent/'brands/chat-thing/build.py')],check=True)
+ if d['slug']=='chatty-cat':
+  subprocess.run([sys.executable,str(R.parent/'brands/chatty-cat/build.py')],check=True)
   continue
  if d['slug']=='patrick__eff' and d.get('mode')=='patrick-patch':
   import patrick_patch

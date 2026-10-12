@@ -391,29 +391,29 @@
     "direction_selection": "user"
   },
   {
-    "id": "chat-thing-a",
-    "brand": "Chat Thing",
-    "variant": "A",
-    "name": "The merged log",
-    "bg": "#151519",
-    "fg": "#e8e6e3",
-    "accent": "#e8a33d",
-    "secondary": "#35d07f",
-    "display": "Atkinson Hyperlegible Next",
-    "body": "Atkinson Hyperlegible Next",
-    "label": "Atkinson Hyperlegible Mono",
-    "safe_label": "#aaa4b7",
+    "id": "chatty-cat-b",
+    "brand": "Chatty Cat",
+    "variant": "B",
+    "name": "Pixel cat / console phosphor",
+    "bg": "#0b0f0c",
+    "fg": "#cfeedd",
+    "accent": "#7dff9a",
+    "secondary": "#e8a33d",
+    "display": "Cascadia Mono",
+    "body": "Public Sans",
+    "label": "Cascadia Mono",
+    "safe_label": "#7ea38c",
     "headline": [
-      "All six channels",
-      "in one scrollback."
+      "six channels.",
+      "one scrollback."
     ],
     "tag": "SELF-HOSTED TWITCH CHAT / BY SUBCULT",
-    "description": "Shell black, amber name blocks, a green live block and the rate sparkline: the product's own default dark palette, drawn as a merged chat log.",
-    "mode": "merged-log",
+    "description": "An eight-bit cat with a cursor mouth on console black, phosphor green and amber, in sixteen palettes: the two phosphor looks plus the fourteen app colours. Edit brand.json to add one.",
+    "mode": "pixel-cat",
     "url": "chat.subcult.tv",
-    "source": "chatty-cat web/src/style.css, palettes.css and display-data.ts read October 11, 2026. Direction proposed by Studio; the owner has not reviewed the artwork. Brand masters in brands/chat-thing/build.py.",
-    "slug": "chat-thing",
-    "selected_by_user": false,
-    "direction_selection": "proposed"
+    "source": "Owner selected direction B from studies/chatty-cat-directions on October 11, 2026 and asked for many palettes and easy customisation. Brand masters in brands/chatty-cat/build.py.",
+    "slug": "chatty-cat",
+    "selected_by_user": true,
+    "direction_selection": "user"
   }
 ]

@@ -74,11 +74,11 @@ Source: `subculture-collective/subsets`, native TypeScript/Ink edition; `docs/np
 
 No automatic task detection, desktop GUI, cloud sync, model-performance gain, or platform compatibility beyond the stated qualification is claimed.
 
-## Chat Thing — October 11, 2026
+## Chatty Cat (formerly Chat Thing) — October 11, 2026
 
 Source: `subculture-collective/chatty-cat` at the October 11 checkout (README, `docs/architecture.md`, `docs/parity.md`, `NOTICE.md`). Live `chat.subcult.tv` was not browsed for this entry.
 
-- C-CHAT-01: a self-hosted Twitch chat client in Go and TypeScript that rebuilds HasanAbi Chat Thing and Twitch Chat Relay by mxmilkiib under AGPL-3.0. The original app remains the reference during migration.
+- C-CHAT-01: Chatty Cat, a self-hosted Twitch chat client in Go and TypeScript that rebuilds HasanAbi Chat Thing and Twitch Chat Relay by mxmilkiib under AGPL-3.0. The original app remains the reference during migration.
 - C-CHAT-02: anonymous viewing merges up to six channels, reconnects to Twitch IRC and restores available public backfill. Display settings cover the original palettes, fonts, filters, columns, header modes and saved slots.
 - C-CHAT-03: authenticated sending, replies, whispers and moderation use server-held tokens; credentials never enter browser storage. Real user consent, posting and moderation acceptance on Twitch remain release gates and are not claimed.
 - C-CHAT-04: every feature-family parity gate in `docs/parity.md` is open. Public copy says "in migration" or "rebuild in progress"; it does not say complete, launched or cut over.

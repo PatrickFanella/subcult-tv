@@ -6,7 +6,7 @@ Each folder is one brand's production pack: `GUIDE.md`, tokens in JSON and CSS, 
 | --- | --- | --- |
 | SUBCULT | Culture / poster press | [subcult](subcult/GUIDE.md) |
 | Backline | Poster Crew | [backline](backline/GUIDE.md) |
-| Chat Thing | The merged log | [chat-thing](chat-thing/GUIDE.md) |
+| Chatty Cat | Pixel cat / console phosphor | [chatty-cat](chatty-cat/GUIDE.md) |
 | CLPR | Play / Clip stack | [clpr](clpr/GUIDE.md) |
 | Dedhed | The tape shelf | [dedhed](dedhed/GUIDE.md) |
 | HasanAra | Broadcast archive | [hasanara](hasanara/GUIDE.md) |
