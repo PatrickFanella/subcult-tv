@@ -1,0 +1,390 @@
+{
+  "study": "chatty-cat-directions",
+  "date": "2026-10-11",
+  "status": "proposed; no direction selected",
+  "directions": [
+    {
+      "key": "a-log-cat",
+      "title": "A / Log cat: the merged log with ears",
+      "colors": {
+        "bg": "#151519",
+        "fg": "#e8e6e3",
+        "accent": "#e8a33d",
+        "secondary": "#35d07f",
+        "third": "#5a9fe8",
+        "muted": "#aaa4b7"
+      },
+      "fonts": {
+        "display": "Atkinson Hyperlegible Next",
+        "body": "Atkinson Hyperlegible Next",
+        "label": "Atkinson Hyperlegible Mono",
+        "wordmark": "Atkinson Hyperlegible Mono"
+      },
+      "contrast": {
+        "text": 14.62,
+        "accent": 8.44,
+        "secondary": 9.09,
+        "muted": 7.55
+      }
+    },
+    {
+      "key": "b-pixel-cat",
+      "title": "B / Pixel cat: console phosphor",
+      "colors": {
+        "bg": "#0b0f0c",
+        "fg": "#cfeedd",
+        "accent": "#7dff9a",
+        "secondary": "#e8a33d",
+        "third": "#8fb3f0",
+        "muted": "#7ea38c"
+      },
+      "fonts": {
+        "display": "Cascadia Mono",
+        "body": "Public Sans",
+        "label": "Cascadia Mono",
+        "wordmark": "Cascadia Mono"
+      },
+      "contrast": {
+        "text": 15.56,
+        "accent": 15.3,
+        "secondary": 8.95,
+        "muted": 6.9
+      }
+    },
+    {
+      "key": "c-bubble-cat",
+      "title": "C / Bubble cat: the speech bubble is the head",
+      "colors": {
+        "bg": "#f3eee6",
+        "fg": "#1e1a22",
+        "accent": "#b7791a",
+        "secondary": "#c2255c",
+        "third": "#3368b0",
+        "muted": "#665d70"
+      },
+      "fonts": {
+        "display": "Alegreya Sans",
+        "body": "Public Sans",
+        "label": "JetBrains Mono",
+        "wordmark": "Alegreya Sans"
+      },
+      "contrast": {
+        "text": 14.83,
+        "accent": 3.16,
+        "secondary": 4.9,
+        "muted": 5.4
+      }
+    },
+    {
+      "key": "d-whiskers",
+      "title": "D / Whiskers: chat rows as whiskers",
+      "colors": {
+        "bg": "#1b1d2b",
+        "fg": "#ece9f4",
+        "accent": "#b9a5f0",
+        "secondary": "#e8a33d",
+        "third": "#5fd98a",
+        "muted": "#a39fb8"
+      },
+      "fonts": {
+        "display": "Fraunces",
+        "body": "Inter",
+        "label": "IBM Plex Mono",
+        "wordmark": "Fraunces"
+      },
+      "contrast": {
+        "text": 13.94,
+        "accent": 7.72,
+        "secondary": 7.75,
+        "muted": 6.53
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": ".font-cache/CACHEDIR.TAG",
+      "sha256": "05e7633fb31bf1f6f8d89020c16b9f24587fdf7638e951c9745b192f5fc3b682",
+      "bytes": 200
+    },
+    {
+      "path": ".font-cache/b650fc633bfde77599ef257c97e3d5bb-le64.cache-10",
+      "sha256": "ef9ec832cdcaacced38a155ecd635f289a391cd9d3a1d994d21fb4885ca9f7d4",
+      "bytes": 92072
+    },
+    {
+      "path": ".font-cache/b650fc633bfde77599ef257c97e3d5bb-le64.cache-11",
+      "sha256": "ef9ec832cdcaacced38a155ecd635f289a391cd9d3a1d994d21fb4885ca9f7d4",
+      "bytes": 92072
+    },
+    {
+      "path": ".font-cache/b650fc633bfde77599ef257c97e3d5bb-le64.cache-12",
+      "sha256": "ef9ec832cdcaacced38a155ecd635f289a391cd9d3a1d994d21fb4885ca9f7d4",
+      "bytes": 92072
+    },
+    {
+      "path": ".font-cache/b650fc633bfde77599ef257c97e3d5bb-le64.cache-9",
+      "sha256": "ef9ec832cdcaacced38a155ecd635f289a391cd9d3a1d994d21fb4885ca9f7d4",
+      "bytes": 92072
+    },
+    {
+      "path": "a-log-cat/logos/lockup-primary.png",
+      "sha256": "cce507b6261b3f890c53a201a277c0dcfa86eec90929871fb0ce32a838b367f3",
+      "bytes": 19952
+    },
+    {
+      "path": "a-log-cat/logos/lockup-primary.svg",
+      "sha256": "2e2e665abdd415773a751baa917829d3bf5a04bbba6cf77d02769431799d0dbd",
+      "bytes": 1142
+    },
+    {
+      "path": "a-log-cat/logos/mark-mono.png",
+      "sha256": "f9a151f12825f13876c37afade922a896db5a48f9517f63b4d723547294dfb45",
+      "bytes": 10191
+    },
+    {
+      "path": "a-log-cat/logos/mark-mono.svg",
+      "sha256": "5e82f8084052371ed323a38ffd2b1a1b2d714b541f0781c5eeee434b2c3ccef5",
+      "bytes": 912
+    },
+    {
+      "path": "a-log-cat/logos/mark-primary.png",
+      "sha256": "3cfe1db5478a694da7f1f829c259058a9901b7a8e580359d6ac833931ed79db3",
+      "bytes": 10448
+    },
+    {
+      "path": "a-log-cat/logos/mark-primary.svg",
+      "sha256": "3fc110cf8b34640d80155d738bb540d3b21c8b36d65182e0fe953dbdd20999fe",
+      "bytes": 968
+    },
+    {
+      "path": "a-log-cat/social/avatar.png",
+      "sha256": "3cfe1db5478a694da7f1f829c259058a9901b7a8e580359d6ac833931ed79db3",
+      "bytes": 10448
+    },
+    {
+      "path": "a-log-cat/social/avatar.svg",
+      "sha256": "3d1f098582423f1e5b529ef87edd70ecb6ecf5275d4313ada58bcc9fc48ded88",
+      "bytes": 973
+    },
+    {
+      "path": "a-log-cat/social/banner-x-bluesky.png",
+      "sha256": "109474465974b6379478b081fec68fd30f9e73743bb7338883b1aaa243c5e7cf",
+      "bytes": 66318
+    },
+    {
+      "path": "a-log-cat/social/banner-x-bluesky.svg",
+      "sha256": "d61151bc8b9bfc2648b631b038dcc66f5f7390c5591202ba8dc2759876a08146",
+      "bytes": 6209
+    },
+    {
+      "path": "a-log-cat/social/square-post.png",
+      "sha256": "35f9699447cfdba355385bc6385e0f562f816c89e6b9d01415cede13ab661a68",
+      "bytes": 81137
+    },
+    {
+      "path": "a-log-cat/social/square-post.svg",
+      "sha256": "34c2dcfb5ce67fdcc1bbe8d23c3ca66ab0b286f42a662a6fffbbf40baac50442",
+      "bytes": 5298
+    },
+    {
+      "path": "b-pixel-cat/logos/lockup-primary.png",
+      "sha256": "8caaa390b45e3c3da2c926484be8ff04aee0e5d94d6a5f3c948c5770bcaae865",
+      "bytes": 17723
+    },
+    {
+      "path": "b-pixel-cat/logos/lockup-primary.svg",
+      "sha256": "b998eeb6465efb54e31d8c37795583e102b3f175a6c1939d5c16dd91e1cdc351",
+      "bytes": 5401
+    },
+    {
+      "path": "b-pixel-cat/logos/mark-mono.png",
+      "sha256": "dac6a85cd123cb55cd5bac50b347bdb523490549918f5334f5b3b54f1e556cfb",
+      "bytes": 2164
+    },
+    {
+      "path": "b-pixel-cat/logos/mark-mono.svg",
+      "sha256": "bcf7cb09d2a40a606894cd010702b4d6fd7a28baae4cd9d4b9d97cb66e84c5cd",
+      "bytes": 5184
+    },
+    {
+      "path": "b-pixel-cat/logos/mark-primary.png",
+      "sha256": "3f8d68527db4cc0138d6296a654992820ec53efa715c0d0c4e15b7e494c435ba",
+      "bytes": 2334
+    },
+    {
+      "path": "b-pixel-cat/logos/mark-primary.svg",
+      "sha256": "6a5600ea993ab1b9a2f53ed07b9651e62c4c0b4f0717aa9b956f605ac1349122",
+      "bytes": 5240
+    },
+    {
+      "path": "b-pixel-cat/social/avatar.png",
+      "sha256": "3f8d68527db4cc0138d6296a654992820ec53efa715c0d0c4e15b7e494c435ba",
+      "bytes": 2334
+    },
+    {
+      "path": "b-pixel-cat/social/avatar.svg",
+      "sha256": "5f79dfe002a0d56dfe1a540458fa7246c52ca020167cce9273fe33ee7fc62df6",
+      "bytes": 5245
+    },
+    {
+      "path": "b-pixel-cat/social/banner-x-bluesky.png",
+      "sha256": "c154efa86e3b3e27918cdd619e7446d96de7bdfc6de8b44ad9aded7f79620678",
+      "bytes": 65383
+    },
+    {
+      "path": "b-pixel-cat/social/banner-x-bluesky.svg",
+      "sha256": "3228ddbee6618a353992be036f44b85ed572cd624866ec59f9a46b25bf926f21",
+      "bytes": 10423
+    },
+    {
+      "path": "b-pixel-cat/social/square-post.png",
+      "sha256": "f8a67877bf12cc10fcb84a03d9ef88832f61484491ee60f47b9523c5dc8f97eb",
+      "bytes": 79928
+    },
+    {
+      "path": "b-pixel-cat/social/square-post.svg",
+      "sha256": "16469f0eb394b2a798c7d56e97d3cdd8ca67d741cd102dbcb3623b7eaa20b2d8",
+      "bytes": 9486
+    },
+    {
+      "path": "c-bubble-cat/logos/lockup-primary.png",
+      "sha256": "00d1f261422cbdcaafcd449effc79ca08f3468869a0febf22f2210dd4ec2d6f9",
+      "bytes": 21431
+    },
+    {
+      "path": "c-bubble-cat/logos/lockup-primary.svg",
+      "sha256": "4f1b04a1624bdd681e4a0ff482b1315e14f7cb6305194957683e7f2ca95ce6e9",
+      "bytes": 884
+    },
+    {
+      "path": "c-bubble-cat/logos/mark-mono.png",
+      "sha256": "2334eed7277109e024d42400c3167cc8ce386d4d3d871229878fbc1b45a540a2",
+      "bytes": 9362
+    },
+    {
+      "path": "c-bubble-cat/logos/mark-mono.svg",
+      "sha256": "7e790602200665aaae0174eb1866a60d31dd4eaf290f32c6fcb494d26f5563a9",
+      "bytes": 593
+    },
+    {
+      "path": "c-bubble-cat/logos/mark-primary.png",
+      "sha256": "d51247c0dcb5f681cbb31017daabdfb5d0e59611c7918187c63c6285892a732a",
+      "bytes": 9428
+    },
+    {
+      "path": "c-bubble-cat/logos/mark-primary.svg",
+      "sha256": "19de26617ca0eb1128e80a733bb4c21a6b94f6a8f8dc769fb6a7fa5596abca9f",
+      "bytes": 723
+    },
+    {
+      "path": "c-bubble-cat/social/avatar.png",
+      "sha256": "d51247c0dcb5f681cbb31017daabdfb5d0e59611c7918187c63c6285892a732a",
+      "bytes": 9428
+    },
+    {
+      "path": "c-bubble-cat/social/avatar.svg",
+      "sha256": "5426ecdc3828bc53d36ccb96beb71dad56a2a17ad1ffe2fd20c27039e98f666c",
+      "bytes": 728
+    },
+    {
+      "path": "c-bubble-cat/social/banner-x-bluesky.png",
+      "sha256": "7a580300a6201c1a3d4959d019b9b35b371a7ad11b500b1dd2d385a05971781f",
+      "bytes": 65236
+    },
+    {
+      "path": "c-bubble-cat/social/banner-x-bluesky.svg",
+      "sha256": "840f47cb7bb9552f4fc2b98bf6612fc56d53c6f569ac949b8f10d95acbc58c4c",
+      "bytes": 5889
+    },
+    {
+      "path": "c-bubble-cat/social/square-post.png",
+      "sha256": "31285902f03a4daf86e2bcea7cefe21e6c9e8c5aeb43f378a47f8b3662784d97",
+      "bytes": 78551
+    },
+    {
+      "path": "c-bubble-cat/social/square-post.svg",
+      "sha256": "d10f835f493b2b537ecb620d5e50a7c313abf1928f6806deca20a46c110f7e2c",
+      "bytes": 4954
+    },
+    {
+      "path": "chatty_cat_directions.py",
+      "sha256": "dd934b1f4ba756dd5b94476f0cca2336a25e181e16b84d710f15977de4060d7a",
+      "bytes": 16539
+    },
+    {
+      "path": "comparison.png",
+      "sha256": "f992b8a432e3568ea43b4f40e100e3f9dd896ac02c1011171574915835d7d0d1",
+      "bytes": 471150
+    },
+    {
+      "path": "comparison.svg",
+      "sha256": "cb1231a045126484920e7839f82b1275f5693c31da9be514e86474c6dd19ec4b",
+      "bytes": 98936
+    },
+    {
+      "path": "d-whiskers/logos/lockup-primary.png",
+      "sha256": "f028c1cf3c9f84f15451f096287b7e1719b8e53e7528332df22f7b900eacf50c",
+      "bytes": 23470
+    },
+    {
+      "path": "d-whiskers/logos/lockup-primary.svg",
+      "sha256": "a0b985f8bf87cf597bdf3e956fa8c9cb1b086405010844eb74cfe2dcaae8b6a9",
+      "bytes": 1188
+    },
+    {
+      "path": "d-whiskers/logos/mark-mono.png",
+      "sha256": "c0429e78dade81d096d2cc767d64ab4f75bad7d8034c596ef84bb2da119ddb1d",
+      "bytes": 8240
+    },
+    {
+      "path": "d-whiskers/logos/mark-mono.svg",
+      "sha256": "f5710530bd2b79ab1fd353b99aabc8b3e5efd3122f3507066b8d0fcb3e306fab",
+      "bytes": 976
+    },
+    {
+      "path": "d-whiskers/logos/mark-primary.png",
+      "sha256": "7a0603070d8166370e4cc945daa4eba806fa3d7684633eab74223df90d1b3a45",
+      "bytes": 8726
+    },
+    {
+      "path": "d-whiskers/logos/mark-primary.svg",
+      "sha256": "81fdb1fa78d3ff25c63f5b585f6e69292ac6e28c52dbe0fd682ca3b439b60a4f",
+      "bytes": 1032
+    },
+    {
+      "path": "d-whiskers/social/avatar.png",
+      "sha256": "7a0603070d8166370e4cc945daa4eba806fa3d7684633eab74223df90d1b3a45",
+      "bytes": 8726
+    },
+    {
+      "path": "d-whiskers/social/avatar.svg",
+      "sha256": "8360d6adda888822fe7df274550470a9ef40028b84a7bad0bb30865529b35bdd",
+      "bytes": 1037
+    },
+    {
+      "path": "d-whiskers/social/banner-x-bluesky.png",
+      "sha256": "edd1682abe784a6aa311a03f259b926f2705f0435b0302bb17a57247f7c4aaba",
+      "bytes": 72271
+    },
+    {
+      "path": "d-whiskers/social/banner-x-bluesky.svg",
+      "sha256": "d102c452aef6a65b073d6915c01ee84efe8923e1415ac1e0e7f125d9cb1c1267",
+      "bytes": 6183
+    },
+    {
+      "path": "d-whiskers/social/square-post.png",
+      "sha256": "5451060df3b0798a2164ced6db0a6037ff8d320d47e081074e09091d88a1b135",
+      "bytes": 87481
+    },
+    {
+      "path": "d-whiskers/social/square-post.svg",
+      "sha256": "31df11df934d88f1cf6c89e93e211a11a32019b2be964b78bf60c546ba13299e",
+      "bytes": 5246
+    },
+    {
+      "path": "index.html",
+      "sha256": "50f829810a95701c676cfa9a2ad038124c3d8a387b82cfb85c68d522d64388ad",
+      "bytes": 5108
+    }
+  ]
+}
