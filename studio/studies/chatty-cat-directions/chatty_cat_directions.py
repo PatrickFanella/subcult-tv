@@ -237,7 +237,7 @@ def main():
         sheet += embed(HERE / f'{d["key"]}/logos/lockup-primary.svg', 300, y + 50, 560, 119)
         sheet += embed(HERE / f'{d["key"]}/social/banner-x-bluesky.svg', 300, y + 190, 900, 300)
         sheet += embed(HERE / f'{d["key"]}/social/square-post.svg', 1236, y + 50, 516, 516)
-        for j, line in enumerate([d['display'], d['body'] + ' / ' + d['label'], d['bg'] + ' ' + d['fg'], d['accent'] + ' ' + d['secondary']]):
+        for j, line in enumerate([d['display'], d['body'], d['label'], d['bg'] + ' ' + d['fg'], d['accent'] + ' ' + d['secondary']]):
             sheet += text(48, y + 262 + j * 22, line, 13, '#62576b', 'JetBrains Mono')
     write('comparison', 1800, 2440, sheet, 'Chatty Cat direction comparison')
     page = ['<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
