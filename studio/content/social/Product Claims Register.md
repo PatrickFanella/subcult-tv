@@ -3,7 +3,7 @@ title: Product Claims Register
 type: documentation
 status: active
 created: 2026-09-30
-updated: 2026-10-03
+updated: 2026-10-11
 tags:
 - topic/publishing
 ---
@@ -73,3 +73,14 @@ Source: `subculture-collective/subsets`, native TypeScript/Ink edition; `docs/np
 - C-SUBSETS-05: owner approved Personal Utility identity, marketing README, project listing, and public landing at `subsets.subcult.tv`. Public npm publication awaits account/scope control and authentication; do not claim npmjs.org availability until registry readback and exact-version installation pass.
 
 No automatic task detection, desktop GUI, cloud sync, model-performance gain, or platform compatibility beyond the stated qualification is claimed.
+
+## Chat Thing — October 11, 2026
+
+Source: `subculture-collective/chatty-cat` at the October 11 checkout (README, `docs/architecture.md`, `docs/parity.md`, `NOTICE.md`). Live `chat.subcult.tv` was not browsed for this entry.
+
+- C-CHAT-01: a self-hosted Twitch chat client in Go and TypeScript that rebuilds HasanAbi Chat Thing and Twitch Chat Relay by mxmilkiib under AGPL-3.0. The original app remains the reference during migration.
+- C-CHAT-02: anonymous viewing merges up to six channels, reconnects to Twitch IRC and restores available public backfill. Display settings cover the original palettes, fonts, filters, columns, header modes and saved slots.
+- C-CHAT-03: authenticated sending, replies, whispers and moderation use server-held tokens; credentials never enter browser storage. Real user consent, posting and moderation acceptance on Twitch remain release gates and are not claimed.
+- C-CHAT-04: every feature-family parity gate in `docs/parity.md` is open. Public copy says "in migration" or "rebuild in progress"; it does not say complete, launched or cut over.
+
+No claim that Chat Thing is a Twitch product, that moderation works on a given channel, or that the public callback and HTTPS routing have passed acceptance.

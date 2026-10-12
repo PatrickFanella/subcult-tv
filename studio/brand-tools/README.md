@@ -158,3 +158,11 @@ Subsets (added October 4, 2026): Personal Utility, selected and approved by the 
 Backline (October 4, 2026): the owner selected Poster Crew for the Discord community tool. [Brand guide, source snapshot and landing preview](../brands/backline/README.md) contain the original BL identity, locally served type, pilot social layouts and product exports. Rebuild only this pack with `python brands/backline/build_assets.py`; pass `--product-root /path/to/discord-spywatcher` to export it. This standalone generator does not use or change the shared pack generator. The new artwork is prepared for review, with no publication or Discord-profile upload.
 
 Backline landing preview: [open the page](../brands/backline/landing.html), [read its website specification](../brands/backline/WEBSITE.md), or refresh from the product with `python brands/backline/build_landing.py --product-root /path/to/backline`. Source revision and hashes are retained in `landing-provenance.json`.
+
+### Chat Thing
+
+Added October 11, 2026. Chat Thing is the identity for the self-hosted Twitch chat client at chat.subcult.tv (`subculture-collective/chatty-cat`), the Go and TypeScript rebuild of mxmilkiib's HasanAbi Chat Thing. The direction, The merged log, is proposed by Studio and recorded as `direction_selection: proposed`; the owner has not reviewed the artwork.
+
+The pack draws the product's own default screen: shell black, the gray-palette log surface, amber names, a green live block and the rate sparkline. Message rows in every layout are bars, not words. Type is Atkinson Hyperlegible Next and Atkinson Hyperlegible Mono, both already in the product's font menu and already in `fonts/`. The original log-tile mark replaces the Twitch glyph that the product used as its PWA icon.
+
+The generator is standalone, `../brands/chat-thing/build.py`, in the Subsets pattern; `build_packs.py` delegates to it for the `chat-thing` slug. It needs rsvg-convert, Inkscape and fontconfig, so it runs on Kvant. `--product-root /path/to/chatty-cat` copies the product's `docs/design-system.md` into `design-system/` with hashes; `--export /path/to/chatty-cat/web/public` writes the favicon, PWA icons, Apple touch icon and link preview with a `brand-export.json` receipt. The product owns its interface rules and stylesheet; Studio owns these masters.

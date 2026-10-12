@@ -215,6 +215,21 @@ A page may use one of these when it is the best way to say the thing. Two produc
 
 **Avoids:** founder voice, third-person bio, "passionate about".
 
+## Chat Thing
+
+**Who is talking:** the person with six chats open who still catches your message.
+
+**Sounds like:** quick, practical, a little dry. Chat vocabulary used correctly: rooms, the log, scrollback, backfill, a reconnect. Short sentences, lowercase tolerated in chat-facing copy, no hype. It is a viewer's tool and talks like a viewer who reads fast.
+
+**Does:** say what it is in one breath: a self-hosted Twitch chat client that merges up to six channels and keeps your display settings. Names the lineage (a rebuild of mxmilkiib's HasanAbi Chat Thing, AGPL) and the state (in migration; the original app stays up until parity). Describes settings as the user's choices, not features it bestows.
+
+**Avoids:** "community", stan voice, HasanAra's mock-formality, clpr's exclamation marks, any claim about Twitch moderation or whispers that a release gate has not passed, and any suggestion that it is a Twitch product.
+
+**Sample lines:**
+- "All six channels in one scrollback."
+- "Your palette, your font, your line height. It remembers."
+- "It is the old Chat Thing, rebuilt so we can host it. Same log, same settings, our server."
+
 ## Support and Patreon
 
 **Who is talking:** the workshop, showing its ledger.

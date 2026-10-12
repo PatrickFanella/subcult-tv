@@ -389,5 +389,31 @@
     "slug": "subsets",
     "selected_by_user": true,
     "direction_selection": "user"
+  },
+  {
+    "id": "chat-thing-a",
+    "brand": "Chat Thing",
+    "variant": "A",
+    "name": "The merged log",
+    "bg": "#151519",
+    "fg": "#e8e6e3",
+    "accent": "#e8a33d",
+    "secondary": "#35d07f",
+    "display": "Atkinson Hyperlegible Next",
+    "body": "Atkinson Hyperlegible Next",
+    "label": "Atkinson Hyperlegible Mono",
+    "safe_label": "#aaa4b7",
+    "headline": [
+      "All six channels",
+      "in one scrollback."
+    ],
+    "tag": "SELF-HOSTED TWITCH CHAT / BY SUBCULT",
+    "description": "Shell black, amber name blocks, a green live block and the rate sparkline: the product's own default dark palette, drawn as a merged chat log.",
+    "mode": "merged-log",
+    "url": "chat.subcult.tv",
+    "source": "chatty-cat web/src/style.css, palettes.css and display-data.ts read October 11, 2026. Direction proposed by Studio; the owner has not reviewed the artwork. Brand masters in brands/chat-thing/build.py.",
+    "slug": "chat-thing",
+    "selected_by_user": false,
+    "direction_selection": "proposed"
   }
 ]
