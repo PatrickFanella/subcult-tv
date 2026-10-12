@@ -1,0 +1,9 @@
+:root[data-cat-palette="ember"] {
+  --cat-bg: #2c1e11;
+  --cat-fg: #ffe9d0;
+  --cat-face: #f0b04a;
+  --cat-cursor: #b8d88a;
+  --cat-panel: #3b2c1e;
+  --cat-line: #5a4b3b;
+  --cat-muted: #ab9884;
+}

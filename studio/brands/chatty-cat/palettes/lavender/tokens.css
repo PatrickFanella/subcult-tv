@@ -1,0 +1,9 @@
+:root[data-cat-palette="lavender"] {
+  --cat-bg: #dbd3ec;
+  --cat-fg: #1a1029;
+  --cat-face: #7a5fb5;
+  --cat-cursor: #2e7d46;
+  --cat-panel: #cdc5de;
+  --cat-line: #b1a8c1;
+  --cat-muted: #675e77;
+}

@@ -1,11 +1,12 @@
 {
   "owner": "SUBCULT Studio",
-  "direction": "The merged log; proposed by Studio, October 11, 2026; the owner has not reviewed the artwork",
-  "mark": "Original log-tile mark authored in build.py: three message rows with amber name blocks and a green live block on a rounded dark tile",
-  "motif": "A merged chat log: timestamps, coloured name blocks, text bars and the rate sparkline",
+  "direction": "B / Pixel cat: console phosphor; selected by the owner from four candidates on October 11, 2026 (studies/chatty-cat-directions); palette system requested",
+  "mark": "Original pixel-cat mark drawn from the pixels grid in this file; no Twitch artwork",
+  "motif": "A merged chat log in bars, the rate sparkline, and the pixel cat with its cursor mouth",
   "lineage": "Rebuild of HasanAbi Chat Thing and Twitch Chat Relay by mxmilkiib, AGPL-3.0. The original Twitch-glyph PWA icon is retired; no Twitch artwork is reused.",
-  "copy": "Headline and support lines are sample copy in the Chat Thing voice (content/VOICE.md). Rows in the artwork are bars, not messages.",
-  "fonts": "Studio licensed font collection; OFL texts included. Both families are already in the product font menu.",
+  "copy": "Headline and support lines are sample copy in the Chatty Cat voice (content/VOICE.md). Rows in the artwork are bars, not messages.",
+  "fonts": "Studio licensed font collection; OFL texts included. Cascadia Mono is bundled; Public Sans is in the Studio collection.",
+  "palettes": "phosphor and amber are the two phosphor looks; the other fourteen are the app colours at their default shades, derived from web/src/palettes.css.",
   "claims": "content/social/Product Claims Register.md, entry C-CHAT; product README and docs/parity.md",
   "publication": "local production pack v1; nothing here is approved for a post or a profile change"
 }

@@ -1,26 +1,22 @@
 [
   {
-    "family": "Atkinson Hyperlegible Next",
-    "source": "Installed font used by user-authored Patrick banner",
+    "family": "Public Sans",
+    "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww.ttf",
+    "css": "@font-face {\n  font-family: 'Public Sans';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5ww.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Public Sans';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww.ttf) format('truetype');\n}\n",
     "files": [
-      "AtkinsonHyperlegibleNext-Regular.otf",
-      "AtkinsonHyperlegibleNext-Bold.otf"
+      "Public-Sans-0.ttf",
+      "Public-Sans-1.ttf"
     ],
-    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/atkinsonhyperlegiblenext/OFL.txt"
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/publicsans/OFL.txt"
   },
   {
-    "family": "Atkinson Hyperlegible Mono",
-    "source": "https://fonts.gstatic.com/s/atkinsonhyperlegiblemono/v8/tssNAoFBci4C4gvhPXrt3wjT1MqSzhA4t7IIcncBiyihrK15gZ4k_SaZ-9CiDQ.ttf",
-    "css": "@font-face {\n  font-family: 'Atkinson Hyperlegible Mono';\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegiblemono/v8/tssNAoFBci4C4gvhPXrt3wjT1MqSzhA4t7IIcncBiyihrK15gZ4k_SaZHNeiDQ.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Atkinson Hyperlegible Mono';\n  font-style: normal;\n  font-weight: 700;\n  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegiblemono/v8/tssNAoFBci4C4gvhPXrt3wjT1MqSzhA4t7IIcncBiyihrK15gZ4k_SaZ-9CiDQ.ttf) format('truetype');\n}\n",
+    "family": "Cascadia Mono",
+    "source": "https://github.com/microsoft/cascadia-code/releases/download/v2407.24/CascadiaCode-2407.24.zip",
+    "release": "v2407.24",
     "files": [
-      "Atkinson-Hyperlegible-Mono-0.ttf",
-      "Atkinson-Hyperlegible-Mono-1.ttf"
+      "CascadiaMono-Regular.ttf",
+      "CascadiaMono-Bold.ttf"
     ],
-    "sha256": {
-      "Atkinson-Hyperlegible-Mono-0.ttf": "5f7f0ab728eec241e86afa0c2680560fb8c2901097b5ab1f92a8c8b6c65c139c",
-      "Atkinson-Hyperlegible-Mono-1.ttf": "b641521e8e29c9bd8a2d7ff4e5d2fa64e6034edeb8dd62b45f16f04ae779f3d1"
-    },
-    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/atkinsonhyperlegiblemono/OFL.txt",
-    "added": "2026-10-02 for Tadooer; TTF statics from the Google Fonts CSS API (default curl user agent returns truetype URLs)"
+    "license_source": "https://raw.githubusercontent.com/microsoft/cascadia-code/main/LICENSE"
   }
 ]

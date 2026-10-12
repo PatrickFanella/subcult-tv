@@ -1,0 +1,9 @@
+:root[data-cat-palette="mirc"] {
+  --cat-bg: #f9fcfe;
+  --cat-fg: #030304;
+  --cat-face: #0000cc;
+  --cat-cursor: #007a00;
+  --cat-panel: #e8ebec;
+  --cat-line: #c3c5c7;
+  --cat-muted: #656768;
+}

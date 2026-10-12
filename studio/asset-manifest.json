@@ -1,8 +1,8 @@
 [
   {
     "path": "brand-tools/README.md",
-    "sha256": "c25a5c346883c5710fbcadfd9b60f991170de83f735f909494f6fcbea1a660f6",
-    "bytes": 18361
+    "sha256": "72bcb33f1eec8126eb783d171483320c8d4ebf1922ad7516d4851a021537a420",
+    "bytes": 18636
   },
   {
     "path": "brand-tools/audit_patchwork_contrast.py",
@@ -5225,12 +5225,12 @@
   },
   {
     "path": "brand-tools/brands.json",
-    "sha256": "91b911d0ad978243a90aa60e07d2b5996c5c0eb7bfd4812957575b6327f355f2",
-    "bytes": 14177
+    "sha256": "770893d1ea53dc68b91d3a585786f087403292c3292d83ba0af659ec3b1f9824",
+    "bytes": 14157
   },
   {
     "path": "brand-tools/build_packs.py",
-    "sha256": "01f960772526b3a975152440391456c8e8f0d923a496e022892564f661ca4ecc",
+    "sha256": "3a02c6b03313bd729f3e71e8598818edfe199019641c8f48b93d63bc0583f2ce",
     "bytes": 56412
   },
   {
@@ -6505,8 +6505,8 @@
   },
   {
     "path": "brands/index.html",
-    "sha256": "e75b3358fbef2976caa3c35a3c347d27354fb80374906ccae90ea32a25c13f99",
-    "bytes": 21572
+    "sha256": "39be296ed30b61b9c1c02ce6ff6c62bbe06e89336f4ca1b6906f19a85cee850c",
+    "bytes": 21662
   },
   {
     "path": "brand-tools/kork_launch_assets.py",

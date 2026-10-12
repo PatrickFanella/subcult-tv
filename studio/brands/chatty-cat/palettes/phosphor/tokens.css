@@ -1,0 +1,9 @@
+:root[data-cat-palette="phosphor"] {
+  --cat-bg: #0b0f0c;
+  --cat-fg: #cfeedd;
+  --cat-face: #7dff9a;
+  --cat-cursor: #e8a33d;
+  --cat-panel: #191f1b;
+  --cat-line: #36403a;
+  --cat-muted: #819589;
+}

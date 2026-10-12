@@ -1,0 +1,9 @@
+:root[data-cat-palette="wine"] {
+  --cat-bg: #2a1d27;
+  --cat-fg: #fae9f5;
+  --cat-face: #f0a868;
+  --cat-cursor: #a0d080;
+  --cat-panel: #392b35;
+  --cat-line: #584a54;
+  --cat-muted: #a797a3;
+}
