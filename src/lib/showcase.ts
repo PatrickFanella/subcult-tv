@@ -104,6 +104,15 @@ const selections = [
     highlights: ['Discover local skills', 'Group and preview', 'Apply your set'],
     liveLabel: 'Get the alpha',
   },
+  {
+    slug: 'tadooer',
+    category: 'Private planner / self-hosted',
+    headline: 'The plan, and the one thing now.',
+    summary:
+      'Here is the day. Your tasks sit beside the calendar on one time grid. Choose one to work on; the rest wait in the list. Tadooer is a planner you run on your own server for one owner, with a web app and a Linux desktop client. There is no hosted service and no sign-up.',
+    highlights: ['One owner', 'Your server', 'Tasks beside the calendar', 'One focus at a time'],
+    liveLabel: 'Read the source',
+  },
 ] satisfies Array<Omit<ShowcaseProduct, 'project'> & { slug: string }>;
 
 export function getShowcaseProducts(): ShowcaseProduct[] {

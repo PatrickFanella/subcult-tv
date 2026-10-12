@@ -9,6 +9,7 @@ export const PRODUCT_ROUTES: Record<string, string> = {
   kork: 'kork',
   subsets: 'subsets',
   'left-field': 'left-field',
+  tadooer: 'tadooer',
 };
 
 export function getProductPath(slug: string): string {

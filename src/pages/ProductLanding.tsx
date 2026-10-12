@@ -14,6 +14,7 @@ const PRODUCT_MARKS: Record<string, string> = {
   'transcript-create': '/brand/rekolekt-mark.svg',
   kork: '/brand/kork-mark.svg',
   subsets: '/brand/subsets/logos/mark-primary.svg',
+  tadooer: '/brand/tadooer/mark.svg',
 };
 
 export default function ProductLanding() {

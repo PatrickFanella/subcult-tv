@@ -49,7 +49,7 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('showcases all ten products and connects HasanAra to its shared application', async () => {
+  it('showcases all eleven products and connects HasanAra to its shared application', async () => {
     const user = userEvent.setup();
     renderApp('/');
     const showcase = await screen.findByRole('region', { name: 'The products' });
@@ -65,6 +65,7 @@ describe('smoke: app shell', () => {
       'Kork',
       'Left Field',
       'Subsets',
+      'Tadooer',
     ]) {
       expect(products.getByRole('heading', { name })).toBeInTheDocument();
     }
@@ -131,13 +132,13 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('redirects the old catalog to the ten-product directory', async () => {
+  it('redirects the old catalog to the eleven-product directory', async () => {
     renderApp('/projects');
     await screen.findByRole('heading', { name: 'Products', level: 1 });
     const main = within(screen.getByRole('main'));
     const teasers = within(main.getByRole('region', { name: 'In development' }));
     const articles = main.getAllByRole('article');
-    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(10);
+    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(11);
     expect(teasers.getAllByRole('article')).toHaveLength(2);
     expect(main.getByRole('link', { name: 'Explore Rekolekt' })).toHaveAttribute(
       'href',
@@ -204,6 +205,26 @@ describe('smoke: app shell', () => {
     expect(ld['@graph'][0]).toMatchObject({ '@type': 'SoftwareApplication', name: 'HasanAra' });
   });
 
+  it('sets the canonical link and title for the Tadooer landing page', async () => {
+    renderApp('/products/tadooer');
+    await screen.findByRole('heading', { name: 'Tadooer', level: 1 });
+    expect(document.title).toBe('Tadooer: A private planner for one owner | SUBCULT');
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
+      'href',
+      'https://subcult.tv/products/tadooer',
+    );
+    expect(document.querySelector('meta[property="og:image"]')).toHaveAttribute(
+      'content',
+      'https://subcult.tv/og/tadooer.jpg',
+    );
+    const ld = JSON.parse(document.querySelector('script#ld-json')!.textContent!);
+    expect(ld['@graph'][0]).toMatchObject({
+      '@type': 'SoftwareApplication',
+      name: 'Tadooer',
+      url: 'https://subcult.tv/products/tadooer',
+    });
+  });
+
   it.each([
     ['clpr', 'clpr'],
     ['patchwork', 'Patchwork'],
@@ -215,6 +236,7 @@ describe('smoke: app shell', () => {
     ['kork', 'Kork'],
     ['left-field', 'Left Field'],
     ['subsets', 'Subsets'],
+    ['tadooer', 'Tadooer'],
   ])('renders the %s landing page with product details and working FAQs', async (slug, name) => {
     const user = userEvent.setup();
     renderApp(`/products/${slug}`);
@@ -300,6 +322,7 @@ describe('smoke: app shell', () => {
       ['Kork', 'kork'],
       ['Left Field', 'left-field'],
       ['Subsets', 'subsets'],
+      ['Tadooer', 'tadooer'],
     ]) {
       expect(nav.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
       expect(footer.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);

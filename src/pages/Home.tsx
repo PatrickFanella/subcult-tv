@@ -29,11 +29,11 @@ export default function Home() {
             <div>
               <p className="text-bone text-lg leading-relaxed mb-6">
                 We make software for people who run things: a clip channel, an archive, a food run,
-                a Friday show. Ten products so far. None of them wants your attention for longer
+                a Friday show. Eleven products so far. None of them wants your attention for longer
                 than the job takes.
               </p>
               <Button as="a" href="#products" variant="secondary">
-                See all ten ↓
+                See all eleven ↓
               </Button>
             </div>
           </div>

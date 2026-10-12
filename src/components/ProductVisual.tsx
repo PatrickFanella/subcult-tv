@@ -1,5 +1,10 @@
 import type { ShowcaseProduct } from '@/lib/showcase';
 
+// Screenshot descriptions for products whose capture shows more than the interface name conveys.
+const SCREENSHOT_ALT: Record<string, string> = {
+  tadooer: 'Tadooer Today view with sample tasks',
+};
+
 export default function ProductVisual({
   product,
   priority = false,
@@ -36,7 +41,7 @@ export default function ProductVisual({
     return (
       <img
         src={project.screenshot}
-        alt={`${project.name} interface`}
+        alt={SCREENSHOT_ALT[project.slug] ?? `${project.name} interface`}
         loading={priority ? 'eager' : 'lazy'}
         fetchPriority={priority ? 'high' : 'auto'}
         decoding="async"

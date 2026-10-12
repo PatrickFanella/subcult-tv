@@ -190,5 +190,23 @@
     "order": 9,
     "coverColor": "#94f7b7",
     "coverPattern": "grid"
+  },
+  "tadooer": {
+    "slug": "tadooer",
+    "name": "Tadooer",
+    "description": "A private, self-hosted task and calendar planner for one owner.",
+    "longDescription": "Tadooer is a private, self-hosted task and calendar planner for one owner. Tasks sit beside the calendar on one time grid in the Planner, boards group them by filters you choose, and a focus session runs on one controlling device at a time with time landing in the worklog. A Baikal CalDAV server, bundled or one you already run, is the calendar authority, and Google Calendar connects as well. There is a web app, a Linux desktop client and an Android shell that exists in source only. There is no hosted service and no sign-up.",
+    "whyItExists": "A planner for one person should run on that person's own server, keep the calendar honest, and show the day and the one thing being done now on one screen.",
+    "status": "active",
+    "type": ["software", "tools"],
+    "stack": ["TypeScript", "React", "Node.js", "SQLite", "CalDAV"],
+    "topics": ["planner", "tasks", "calendar", "self-hosted"],
+    "repoUrl": "https://git.subcult.tv/subculture-collective/tadooer",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "screenshot": "/screenshots/tadooer-today-1280.webp",
+    "featured": true,
+    "order": 10,
+    "coverColor": "#bd93f9",
+    "coverPattern": "grid"
   }
 }
