@@ -1,0 +1,1731 @@
+{
+  "brand": "chatty-cat",
+  "palette": "phosphor",
+  "status": "owner-approved identity, October 11, 2026; template layouts remain samples and are not approved social posts",
+  "assets": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "5c02c2584a4edc343ea9bd3f92eb277aeffb0910dd7789aaa6173b7cba79a981",
+      "bytes": 6960
+    },
+    {
+      "path": "WEBSITE.md",
+      "sha256": "0ae0edb0e0a6f89108c1955c9b1310a809ba6a6f2891eef0374a34e245b06024",
+      "bytes": 5193
+    },
+    {
+      "path": "alt-text.md",
+      "sha256": "afb700ec421e02a294598c19cb41fb927037f70bd3a4f419befc0b9c6898d1b3",
+      "bytes": 1771
+    },
+    {
+      "path": "brand-board.png",
+      "sha256": "5b92d2791da8f4eaab5ecd61c91472b7775d8b1e8b97bf03396bcef818e0133d",
+      "bytes": 101540,
+      "dimensions": {
+        "width": 1440,
+        "height": 960
+      }
+    },
+    {
+      "path": "brand-board.svg",
+      "sha256": "92fb1e22811e6a34bd8657f14d0e0143a54c4a31d0a253695f17d530ccd964bf",
+      "bytes": 34649,
+      "dimensions": {
+        "width": 1440.0,
+        "height": 960.0
+      }
+    },
+    {
+      "path": "brand.json",
+      "sha256": "ba70cdc195c9b417b5b9478be2fffb57e65154c5032ae37a31c7d91097b68bf0",
+      "bytes": 4723
+    },
+    {
+      "path": "build.py",
+      "sha256": "1e53e2fa837b5f9a0545e28c4cc74c5ba221c5977af1ff786bb6e7b3cbc4a5e1",
+      "bytes": 32334
+    },
+    {
+      "path": "design-system/README.md",
+      "sha256": "0d732b924601a17fd94f9c6a05f4fafe45abb17f8376115c0b6cf2a66c92cfd8",
+      "bytes": 12534
+    },
+    {
+      "path": "design-system/source-provenance.json",
+      "sha256": "3f94fc6a6705b40518fa7e784987d657dd57c4705d8d8db6f131c9587f3d48ce",
+      "bytes": 579
+    },
+    {
+      "path": "design-system/tokens.css",
+      "sha256": "8f40b79e129e3b8121b8e502890aff820f4e8da9db618df60a722da0524f0745",
+      "bytes": 3185
+    },
+    {
+      "path": "fonts/CascadiaMono-Bold.ttf",
+      "sha256": "0d00091b6e3127f2bdfcdc2f0bbe623d09fbd01220f7d8b4aced0d2e58534376",
+      "bytes": 459672
+    },
+    {
+      "path": "fonts/CascadiaMono-Regular.ttf",
+      "sha256": "c088649af1378755cf29165a3253c988eec7693e013bbab388978fe08c33ee5a",
+      "bytes": 458092
+    },
+    {
+      "path": "fonts/Public-Sans-0.ttf",
+      "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+      "bytes": 56172
+    },
+    {
+      "path": "fonts/Public-Sans-1.ttf",
+      "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+      "bytes": 56364
+    },
+    {
+      "path": "fonts/cascadiamono-OFL.txt",
+      "sha256": "51882cd3cdba4e16f220f44ddb08a635c38c44ea6e0975db2574f4be6f958238",
+      "bytes": 4489
+    },
+    {
+      "path": "fonts/publicsans-OFL.txt",
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+      "bytes": 4390
+    },
+    {
+      "path": "fonts/sources.json",
+      "sha256": "03e7b029df65739e7661f0ed4e60701c0f173dc9b9e93241b5701cf88aa320e1",
+      "bytes": 1173
+    },
+    {
+      "path": "logos/lockup-mono-dark-outlined.svg",
+      "sha256": "270e77ff40796897109d31d564ac00d9a76891d727dc39753dd0b17a336ed15a",
+      "bytes": 7638,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "logos/lockup-mono-dark.png",
+      "sha256": "fa61ad76186a52d9d6b758611dfef039afa2565b555408f9c7e353c0a241be64",
+      "bytes": 13182,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "logos/lockup-mono-dark.svg",
+      "sha256": "6331ff1bc31e69584fa660c09d429aa7f7080654760b32f28a8e8e9cd20437f2",
+      "bytes": 2087,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "logos/lockup-mono-light-outlined.svg",
+      "sha256": "72ea753ef3e443c7252003b49422a182d583822a4576be967569d02671511098",
+      "bytes": 7640,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "logos/lockup-mono-light.png",
+      "sha256": "b859e133161a2de447e0927f04cbede1bec537a0359785f2801c30a2d4f40f02",
+      "bytes": 16464,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "logos/lockup-mono-light.svg",
+      "sha256": "6450892cbc71d9485f6c33762f69c7e3babf796934beed1626fc14ed9054a13c",
+      "bytes": 2089,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "logos/lockup-primary-outlined.svg",
+      "sha256": "30d506415b348d26c823d60ba40275cb262ef5e519cd0d3f55b12329b49265e7",
+      "bytes": 7732,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "logos/lockup-primary.png",
+      "sha256": "cc179159cfbef22f2c23cdadce112b45cd45078c4035641ffe711c3030cb61c6",
+      "bytes": 16860,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "logos/lockup-primary.svg",
+      "sha256": "390179a28cfc28e67eb4528396dc3c8e9e62758a44e40b7ac922273d81ffdb58",
+      "bytes": 2131,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "logos/mark-glyph.svg",
+      "sha256": "e0f5ac8d853b261ca68826579aee8a682381e46467439f787a83c5aabd7688da",
+      "bytes": 1900,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "logos/mark-mono-dark.png",
+      "sha256": "57750cb0b51f86288eaa715abf00f41a36bd157318bfc860fc6404540622ec81",
+      "bytes": 1910,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/mark-mono-dark.svg",
+      "sha256": "54a377c56981af72085f3eb9bc1ca3c601e5231d99c35707a0d9756c5caf2bed",
+      "bytes": 1926,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "logos/mark-mono-light.png",
+      "sha256": "99ee2a810dc81c77f22e8a24a32faeed9a6672d050e4216b828962a181b1db40",
+      "bytes": 1920,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/mark-mono-light.svg",
+      "sha256": "a6090866e8c0668bce311a3662d3b83c87d296254bff1428486d900a5ff464e5",
+      "bytes": 1928,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "logos/mark-primary.png",
+      "sha256": "96e8c81c5d20ffad902e1fa6299f39152a598b49d7a3f0672d72210e8bb44ac3",
+      "bytes": 2057,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/mark-primary.svg",
+      "sha256": "694ef776e16f3db3a19b32c7181e0eab475cc9e9d8fe23faee3c906cb72212fb",
+      "bytes": 1970,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "logos/mark-themed.svg",
+      "sha256": "e83a8f30575ad90f4c25036c8c551fca4d4546e15b94a392e2853060fa9d21fe",
+      "bytes": 1874,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "pack-preview.png",
+      "sha256": "5b92d2791da8f4eaab5ecd61c91472b7775d8b1e8b97bf03396bcef818e0133d",
+      "bytes": 101540,
+      "dimensions": {
+        "width": 1440,
+        "height": 960
+      }
+    },
+    {
+      "path": "pack-preview.svg",
+      "sha256": "92fb1e22811e6a34bd8657f14d0e0143a54c4a31d0a253695f17d530ccd964bf",
+      "bytes": 34649,
+      "dimensions": {
+        "width": 1440.0,
+        "height": 960.0
+      }
+    },
+    {
+      "path": "palettes/amber/avatar.png",
+      "sha256": "e0a2484f3e4095f9d0ff956ebb2bb4c6e9a73892a58bac23e9e04c99ddd8d808",
+      "bytes": 1666,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/amber/avatar.svg",
+      "sha256": "e20207c5c9b8a263a3d29795da500e0cb1b50409d60ec08640bae62f4f410916",
+      "bytes": 2005,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/amber/favicon.svg",
+      "sha256": "0c96bc0b12f58bc3a778caafd5820b176e2128cc7a40c5c4978fb8900d5e959c",
+      "bytes": 1966,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/amber/lockup.png",
+      "sha256": "d9d7a9a10a477066344ae59c39c490f1c78e41b365f94c24487b469108821a3c",
+      "bytes": 16214,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/amber/lockup.svg",
+      "sha256": "96dfef5b16ceec288a9dae7d5a0dd7a71ad0c03b781f4a87b7c61ececd5bccb3",
+      "bytes": 2161,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/amber/mark.png",
+      "sha256": "e0a2484f3e4095f9d0ff956ebb2bb4c6e9a73892a58bac23e9e04c99ddd8d808",
+      "bytes": 1666,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/amber/mark.svg",
+      "sha256": "670556ac5929515b3d2dec8ad5d8e5d01ab054649bbd630feff87ae69c900a09",
+      "bytes": 2000,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/amber/tokens.css",
+      "sha256": "be6bd644ea331ce2d66da50c4588ce7e9220c4131a7e9dda231e462d1b4e0a42",
+      "bytes": 197
+    },
+    {
+      "path": "palettes/cream/avatar.png",
+      "sha256": "f9671443c4ced9ed2e2c501b0c08c85981d1335c3bbade4517b3cbdc38b303ab",
+      "bytes": 2062,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/cream/avatar.svg",
+      "sha256": "e52091429b68a776665be01e11b2042d082e47032d1740fb702c9f8251f449f4",
+      "bytes": 2005,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/cream/favicon.svg",
+      "sha256": "59631731e7077bab2394b089fe28af48beb82517df2c6bfa1dfddf8174ba7e31",
+      "bytes": 1966,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/cream/lockup.png",
+      "sha256": "64881f63c08d0eb3f48682d94e697aaa7493901fbbfa98a58a2c87bdbf95e5d9",
+      "bytes": 16677,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/cream/lockup.svg",
+      "sha256": "a33a4a870b5726267aea2e6e838de3d0eb33255f06831dc6f9486246290f5541",
+      "bytes": 2161,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/cream/mark.png",
+      "sha256": "f9671443c4ced9ed2e2c501b0c08c85981d1335c3bbade4517b3cbdc38b303ab",
+      "bytes": 2062,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/cream/mark.svg",
+      "sha256": "b7faa2c35071e46a212347de37229813d3636763dd6cfd5a13b3013556af59a0",
+      "bytes": 2000,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/cream/tokens.css",
+      "sha256": "fa66efea79ef5007fc0e82432a563e63778e7aee9660320f1e70511fc7a76269",
+      "bytes": 197
+    },
+    {
+      "path": "palettes/ember/avatar.png",
+      "sha256": "38ed85545f49947613befacc2956aee7e54f2d85c7f189b3cab5b4bbdfdd3ef5",
+      "bytes": 2065,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/ember/avatar.svg",
+      "sha256": "adf1463bfb19eab1de17d58ab3c4ee1792573249be9f74a2c2a2651fd9c82d1c",
+      "bytes": 2005,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/ember/favicon.svg",
+      "sha256": "2dfa36e03942c584e39af55c9becdf2cd48556b8ded3af22349699a1ed5bc49e",
+      "bytes": 1966,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/ember/lockup.png",
+      "sha256": "11a8b07a6f740496527b4580bf760874175fd41ab448d10fb8bd2ee566d1f743",
+      "bytes": 16504,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/ember/lockup.svg",
+      "sha256": "1666389016d0f87294bba5dd1dfebd5d9f5842e6492fc86a05985ff2c8bba364",
+      "bytes": 2161,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/ember/mark.png",
+      "sha256": "38ed85545f49947613befacc2956aee7e54f2d85c7f189b3cab5b4bbdfdd3ef5",
+      "bytes": 2065,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/ember/mark.svg",
+      "sha256": "817c81513a4ffaed88f532768e4f353d734fddbabe334132f96604d824070aa2",
+      "bytes": 2000,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/ember/tokens.css",
+      "sha256": "4bf744af8d9ae3a7e729e6f45f9a49419e15015ecc695adad9dd3b009398141b",
+      "bytes": 197
+    },
+    {
+      "path": "palettes/gray/avatar.png",
+      "sha256": "12b75b7d5c04903d4d78ec1dd39e4f159c7af2c8188f849b95fe2b4b1f639cfb",
+      "bytes": 2065,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/gray/avatar.svg",
+      "sha256": "eb753f5ea5bc7335c4667274dd8f220e661884392a649cbd2334633166ecf253",
+      "bytes": 2003,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/gray/favicon.svg",
+      "sha256": "401b1bb95ee7f09a63e93813b35eb2f6be763a6e41947364ddffd3868162310b",
+      "bytes": 1964,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/gray/lockup.png",
+      "sha256": "e1bbf586ae9f54f73491b5632381452d12bf6dec720c3808c3aa67975db36abb",
+      "bytes": 16052,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/gray/lockup.svg",
+      "sha256": "768336fed6661717936f7f9bc1e7542f307ea66ea75789436762a52fab691ed0",
+      "bytes": 2159,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/gray/mark.png",
+      "sha256": "12b75b7d5c04903d4d78ec1dd39e4f159c7af2c8188f849b95fe2b4b1f639cfb",
+      "bytes": 2065,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/gray/mark.svg",
+      "sha256": "3f98e183c82499746422a7979c13dc68830a1751d5202efa97b87741b2c361d9",
+      "bytes": 1998,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/gray/tokens.css",
+      "sha256": "f7d1ff75baa740271e8db267dafaced410194bb11a2166852af4eef2986e82f6",
+      "bytes": 196
+    },
+    {
+      "path": "palettes/green/avatar.png",
+      "sha256": "0565752c504f52f2d8fef3defc6f97ca8e32feacc93bf43b393103b4c0db23a7",
+      "bytes": 2066,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/green/avatar.svg",
+      "sha256": "5c1efe203ed1e80fed7da22340f1837e84f0df9c373a27dbdf4195135bbfabde",
+      "bytes": 2005,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/green/favicon.svg",
+      "sha256": "14753b6b12a802a2fe427ebc93b4f9889583457b2bb71fa9f7e66d95be107520",
+      "bytes": 1966,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/green/lockup.png",
+      "sha256": "2cf4279a7190ae4a304ce1480f8089181d660606c1c9c31713fa4e1d53045f18",
+      "bytes": 16484,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/green/lockup.svg",
+      "sha256": "050296b0a5dd9868146dd0dbf0b7f14773fd0945f0223c79c491f91b247acae5",
+      "bytes": 2161,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/green/mark.png",
+      "sha256": "0565752c504f52f2d8fef3defc6f97ca8e32feacc93bf43b393103b4c0db23a7",
+      "bytes": 2066,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/green/mark.svg",
+      "sha256": "0fe42813196e5afc49430e6adf2a68fb8833b77e5cafa34ccb4eca59dbd59d42",
+      "bytes": 2000,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/green/tokens.css",
+      "sha256": "954fd94b9697b6a1f57d67223cfc824b4e3ad32d26d9b5eb0abc4835c67de1c7",
+      "bytes": 197
+    },
+    {
+      "path": "palettes/ice/avatar.png",
+      "sha256": "53dec2a430a72657c4e3a2d908d1f00f46948e71ff613715357d98e24fbe52fa",
+      "bytes": 2062,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/ice/avatar.svg",
+      "sha256": "5e20691b5fc79e9bc2583db765f8674bf4dd1a1ce7c9efdc4339f2fe790a3fdb",
+      "bytes": 2001,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/ice/favicon.svg",
+      "sha256": "525ae51dc3d355c74886d6062e8f79279a4fb7f51d203c2ccd9eee2cb4e85979",
+      "bytes": 1962,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/ice/lockup.png",
+      "sha256": "ee81d55803bc3975c5237f06fb4081882280a0fa9dba02b946430306d201e2e9",
+      "bytes": 16272,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/ice/lockup.svg",
+      "sha256": "d0cab5a51311bac0c9997746254b66d6911b3f170f4353307b3a0e0fd8464c98",
+      "bytes": 2157,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/ice/mark.png",
+      "sha256": "53dec2a430a72657c4e3a2d908d1f00f46948e71ff613715357d98e24fbe52fa",
+      "bytes": 2062,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/ice/mark.svg",
+      "sha256": "fb264738c4c7ac91868933245414d6fd4a73b8a953affd8f354b7a66407c195c",
+      "bytes": 1996,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/ice/tokens.css",
+      "sha256": "d32e9893ef36011c144217e350fe49542867a8be738c5b5f9c9ce544a447510e",
+      "bytes": 195
+    },
+    {
+      "path": "palettes/lavender/avatar.png",
+      "sha256": "0b409fcd1b81bca420b177f59d2ca5044e7614c47f23b69c567c603044f60abe",
+      "bytes": 2068,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/lavender/avatar.svg",
+      "sha256": "64cc47e00a524a08009c39dd2f3d8c87288e5124e9720b5552dedb3ba666cbd3",
+      "bytes": 2011,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/lavender/favicon.svg",
+      "sha256": "ab0aac85717beb10b9337d20629cc47809fbb3d29ec24497127e13f6b65fa5c1",
+      "bytes": 1972,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/lavender/lockup.png",
+      "sha256": "54ac33d4fc2b2829344a7cf6e6f1255514fb03e1fe73e6fa38b6fed6b6d3cadd",
+      "bytes": 15880,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/lavender/lockup.svg",
+      "sha256": "4389de6387289cff130444d399d87e9faabca73466224a170f13445942997b64",
+      "bytes": 2167,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/lavender/mark.png",
+      "sha256": "0b409fcd1b81bca420b177f59d2ca5044e7614c47f23b69c567c603044f60abe",
+      "bytes": 2068,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/lavender/mark.svg",
+      "sha256": "e9b9b4fa70a105b08018630a75cb3a77b73ee8038229058f2309a47df30d3a50",
+      "bytes": 2006,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/lavender/tokens.css",
+      "sha256": "ff8ae1fc59eb9e8a0a77cbd981fec5f146f6171f30fc4089bda8fb3a2bbc6de4",
+      "bytes": 200
+    },
+    {
+      "path": "palettes/mirc/avatar.png",
+      "sha256": "4455650d3a5c2205217faae89b6b5166e8304a008e45204e8e0d4e73ac6d9bf4",
+      "bytes": 2050,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/mirc/avatar.svg",
+      "sha256": "2c558a9bd3905e8fd526d78b33fcf254bd2cdbe927829865f934d908fd6cf052",
+      "bytes": 2003,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/mirc/favicon.svg",
+      "sha256": "10940b577d665bd47ee5d1bdb41226735a1b5fdbd40295758a9d29f60568bba6",
+      "bytes": 1964,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/mirc/lockup.png",
+      "sha256": "560de2b467177ce45ec368ee9841148c184d31acfbca721aca004281027a5f94",
+      "bytes": 16518,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/mirc/lockup.svg",
+      "sha256": "36877eb28f58f7c77f9193307904e832811a8e110a00caa9fe39bf1a3b4df63d",
+      "bytes": 2159,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/mirc/mark.png",
+      "sha256": "4455650d3a5c2205217faae89b6b5166e8304a008e45204e8e0d4e73ac6d9bf4",
+      "bytes": 2050,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/mirc/mark.svg",
+      "sha256": "4a8dc19a958794ca328acf73ebd95693c0958b076fd467b4dfe272c5d08e543f",
+      "bytes": 1998,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/mirc/tokens.css",
+      "sha256": "0e0e6462484fa085a98d54afcfed79b5368236e154c9db7dbca92467887452a2",
+      "bytes": 196
+    },
+    {
+      "path": "palettes/nord/avatar.png",
+      "sha256": "bf81bdd0cc1b5e7673bf0267968f0cb28c68826e5acb10cca38bfed053978ca1",
+      "bytes": 2064,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/nord/avatar.svg",
+      "sha256": "8dcf059922876ce23e7fbbfe3c1608b9f7b595a4c0864153e96f2bcb1e5c8d98",
+      "bytes": 2003,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/nord/favicon.svg",
+      "sha256": "0b3c89d77931ad59cb3b46a9a097da0037963401e30d3f0c0e310e2ff8d91f09",
+      "bytes": 1964,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/nord/lockup.png",
+      "sha256": "468c056aec438f5ea76e1c10a0cefb1ec341d15259959e5b7ead10b3e74da70b",
+      "bytes": 16329,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/nord/lockup.svg",
+      "sha256": "20e4117bf9aac91077291ef96a60a8fba63554340e91a3881655cd07c61fce7a",
+      "bytes": 2159,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/nord/mark.png",
+      "sha256": "bf81bdd0cc1b5e7673bf0267968f0cb28c68826e5acb10cca38bfed053978ca1",
+      "bytes": 2064,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/nord/mark.svg",
+      "sha256": "509c74f1256b181a52bbd442d5e7a9d555270268c855f5d881b4117aff79b531",
+      "bytes": 1998,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/nord/tokens.css",
+      "sha256": "8c1ccd2d3ee2caf0d143ef2bd4a4a1347ec49665669b511dd84e908253d3eb25",
+      "bytes": 196
+    },
+    {
+      "path": "palettes/phosphor/avatar.png",
+      "sha256": "96e8c81c5d20ffad902e1fa6299f39152a598b49d7a3f0672d72210e8bb44ac3",
+      "bytes": 2057,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/phosphor/avatar.svg",
+      "sha256": "6309cc14671ec3ab2d77eb129352f20fd2c48742a2d0f0ad020ea81f99b1ab2f",
+      "bytes": 2011,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/phosphor/favicon.svg",
+      "sha256": "8bcba66091483f77737d39537af223a4a4f4f377ccf6078a99f9cd8d9fd7d2a8",
+      "bytes": 1972,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/phosphor/lockup.png",
+      "sha256": "cc179159cfbef22f2c23cdadce112b45cd45078c4035641ffe711c3030cb61c6",
+      "bytes": 16860,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/phosphor/lockup.svg",
+      "sha256": "45241fed3dbc7ee068c81b3cd89d6acb2a0478c1041b0071ded6bb92758775c1",
+      "bytes": 2167,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/phosphor/mark.png",
+      "sha256": "96e8c81c5d20ffad902e1fa6299f39152a598b49d7a3f0672d72210e8bb44ac3",
+      "bytes": 2057,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/phosphor/mark.svg",
+      "sha256": "be9b4549abadb14ed0b006e1afde522cf9877827e16bc8f4657dac99b5a67073",
+      "bytes": 2006,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/phosphor/tokens.css",
+      "sha256": "0a24b32864250824e0c262cc75b021101ba70eeed0f10cf60235192905356cf3",
+      "bytes": 200
+    },
+    {
+      "path": "palettes/red/avatar.png",
+      "sha256": "7d2954078920c427d15130a52c308977609a54654b42526ad9deb8fde097fc01",
+      "bytes": 2061,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/red/avatar.svg",
+      "sha256": "d3c4bb6a3383fe37644482dd41f9c8258fc45b8fde3149fa3092f08cad98e142",
+      "bytes": 2001,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/red/favicon.svg",
+      "sha256": "a2e3a1c07950ae141ad0db523416c7eaf3b6f6100745166026502c6b2d607a18",
+      "bytes": 1962,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/red/lockup.png",
+      "sha256": "88372bd091c74ca09a0d15aeef96f49830496c0b29541dd923ddff425dc1a0f7",
+      "bytes": 15541,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/red/lockup.svg",
+      "sha256": "f4b324e4cbd990577dfc749fd7a135ba2605197c68daa6e615c7b57e86871a71",
+      "bytes": 2157,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/red/mark.png",
+      "sha256": "7d2954078920c427d15130a52c308977609a54654b42526ad9deb8fde097fc01",
+      "bytes": 2061,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/red/mark.svg",
+      "sha256": "ecff51149f069fd118c3ea17dabd3b9a8f7343862790eb2e54e779e86c6b06a5",
+      "bytes": 1996,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/red/tokens.css",
+      "sha256": "87bf5e79a542f4c525e30bbf7f00b25d83fea1d7446f50012611f3b3a9cfef4d",
+      "bytes": 195
+    },
+    {
+      "path": "palettes/salmon/avatar.png",
+      "sha256": "611a5a7864b7ad21eb252ce0f4bc15de8f8589f5ae81829074359f1229eb24af",
+      "bytes": 2059,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/salmon/avatar.svg",
+      "sha256": "8d341a2aa82830e5da35a0987353c401d9e0e70fb221d0492b6484a43a5ae3dd",
+      "bytes": 2007,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/salmon/favicon.svg",
+      "sha256": "e3439f429d6840a082c5d617021c723a55112c4221cb043fb4029a474a4610b1",
+      "bytes": 1968,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/salmon/lockup.png",
+      "sha256": "a28ee64105f12cde7760b065bcc5ed0cb100c57d7cffbc41cfc7bde42e72bae6",
+      "bytes": 16652,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/salmon/lockup.svg",
+      "sha256": "cbd5557349293480481c81cabbfcde8829634510897dcf7ca8baeb64f4256dc1",
+      "bytes": 2163,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/salmon/mark.png",
+      "sha256": "611a5a7864b7ad21eb252ce0f4bc15de8f8589f5ae81829074359f1229eb24af",
+      "bytes": 2059,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/salmon/mark.svg",
+      "sha256": "509304f664d0c5a9c644706361afb2164dac5698f13bc9e4d2f7baedba86d72e",
+      "bytes": 2002,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/salmon/tokens.css",
+      "sha256": "575dc95c166d4538dbb84e42bef9767353f94b3898deb487def864ad9d6ffa8c",
+      "bytes": 198
+    },
+    {
+      "path": "palettes/sepia/avatar.png",
+      "sha256": "0913c6eb85915a1f98a7cb032d79b6559172855924bf7b879dbcfe0571878da8",
+      "bytes": 2067,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/sepia/avatar.svg",
+      "sha256": "07667a76dea97850706981ebcff2df154341c3d288143e3fa9e3d691cafc02b0",
+      "bytes": 2005,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/sepia/favicon.svg",
+      "sha256": "7da6d9e3362bd77b90054148fee2523579a1d9f2ece75c8da1a4bcb541da8669",
+      "bytes": 1966,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/sepia/lockup.png",
+      "sha256": "28b0bdb56b0bba0ade34c3a4a552006b2bdd10479bff6dc4a179bd55a63d8a10",
+      "bytes": 16452,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/sepia/lockup.svg",
+      "sha256": "205256eda97e0c24bfd434f48324aad584119f7c88e3fcfcdaac684aec847fc1",
+      "bytes": 2161,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/sepia/mark.png",
+      "sha256": "0913c6eb85915a1f98a7cb032d79b6559172855924bf7b879dbcfe0571878da8",
+      "bytes": 2067,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/sepia/mark.svg",
+      "sha256": "391e8bf4a677e9e8285d79f79393c7c3862ff787edda4c78f16a7c8e86722837",
+      "bytes": 2000,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/sepia/tokens.css",
+      "sha256": "a41845d57c3e37a9cf996d628c12003a871fd82fa6cc8ddc09ccd33f00d0e344",
+      "bytes": 197
+    },
+    {
+      "path": "palettes/solarized/avatar.png",
+      "sha256": "9127b04324b716ba82ff351dd725f7632242cf0c6dac761f30d9fbb5a0049590",
+      "bytes": 2057,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/solarized/avatar.svg",
+      "sha256": "6b53c0e94eae95d74dd929badd28ea929053d39b8d0c1bfe368d7b4bdb6594af",
+      "bytes": 2013,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/solarized/favicon.svg",
+      "sha256": "dbdb693078354013542719a5318a666bac1fc3823c49400aeb277d9ad53e1307",
+      "bytes": 1974,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/solarized/lockup.png",
+      "sha256": "cdbe2fdbb764c5ecee238e0996ec7b3f2a20823dce3594eafbfbaff5a06f510e",
+      "bytes": 15922,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/solarized/lockup.svg",
+      "sha256": "63c01734291dc9f6d01f1bbfd3e84483205df43f8d31f02e59395ac8af9395a3",
+      "bytes": 2169,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/solarized/mark.png",
+      "sha256": "9127b04324b716ba82ff351dd725f7632242cf0c6dac761f30d9fbb5a0049590",
+      "bytes": 2057,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/solarized/mark.svg",
+      "sha256": "d6f7be7b1ae7759577e743673c24dafca5e5071df8e51483ca5baecc83920339",
+      "bytes": 2008,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/solarized/tokens.css",
+      "sha256": "bdf027c77c9b0f42f2c73e0a0db7925f082ce208053f21d7e3d5e2bcd568b672",
+      "bytes": 201
+    },
+    {
+      "path": "palettes/violet/avatar.png",
+      "sha256": "0ddce1c68a22bdddd0136475149136d0fb8c59ec42697c10a7fe139ce955a7be",
+      "bytes": 2061,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/violet/avatar.svg",
+      "sha256": "8ba305fa9e80213fe7f61857477a8539bd7725de70c2607d63e7611a0f294b54",
+      "bytes": 2007,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/violet/favicon.svg",
+      "sha256": "60dd268cd6268a1113ed7334b0f29fe085b7111073f3477e9dda819e6631a926",
+      "bytes": 1968,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/violet/lockup.png",
+      "sha256": "9871558d9eb9b68fde20fa81e062d42c4c422d86a0eef5fef04bc8a25534d49a",
+      "bytes": 17067,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/violet/lockup.svg",
+      "sha256": "3081023c79c29b056f261344728a67b06afda0f0cf9acaa989490e1246675bb6",
+      "bytes": 2163,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/violet/mark.png",
+      "sha256": "0ddce1c68a22bdddd0136475149136d0fb8c59ec42697c10a7fe139ce955a7be",
+      "bytes": 2061,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/violet/mark.svg",
+      "sha256": "6dc04512b51dbdf1de916e833bb92253716bed9bf02b6494116496448f50328f",
+      "bytes": 2002,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/violet/tokens.css",
+      "sha256": "078b0dde88032704629ab063c80c6ac6f133248f38059c879e6268f6f8c57e75",
+      "bytes": 198
+    },
+    {
+      "path": "palettes/wine/avatar.png",
+      "sha256": "b3eaeb21b01c307a08cb745600f0412039c86a004f28b188682536ee2732a01b",
+      "bytes": 2066,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/wine/avatar.svg",
+      "sha256": "d20c14046967178b4b7f95946a15fe81973dcb9c3d84e24d2607c7dd6231d193",
+      "bytes": 2003,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "palettes/wine/favicon.svg",
+      "sha256": "32aa1cb52a44f6f1063d16e5e33eac0e4c0ad4956d066eae93b55f78c092760a",
+      "bytes": 1964,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "palettes/wine/lockup.png",
+      "sha256": "60bbf7337fadcd78126c2b8cecbd7a7f8a9359e0247cdbc41aeb5cc366298986",
+      "bytes": 16551,
+      "dimensions": {
+        "width": 1200,
+        "height": 256
+      }
+    },
+    {
+      "path": "palettes/wine/lockup.svg",
+      "sha256": "aa0fd12d9397df1d01ff4233b05f19d94f49de65992ececa50e11fc3079075d4",
+      "bytes": 2159,
+      "dimensions": {
+        "width": 600.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/wine/mark.png",
+      "sha256": "b3eaeb21b01c307a08cb745600f0412039c86a004f28b188682536ee2732a01b",
+      "bytes": 2066,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "palettes/wine/mark.svg",
+      "sha256": "41c541497cf95e4e7fe62b3e2a519cfc5cf097be5405bd33b5af5a8411315aee",
+      "bytes": 1998,
+      "dimensions": {
+        "width": 128.0,
+        "height": 128.0
+      }
+    },
+    {
+      "path": "palettes/wine/tokens.css",
+      "sha256": "1592c496c7a6e0fa3a8d8a4d6139f6c681675207f469b7330cb42efd9dcd336b",
+      "bytes": 196
+    },
+    {
+      "path": "palettes.png",
+      "sha256": "f6b8765ebf8820ee78e7ec2af8bc944d0c6cf0edb7e2d38c95fffc45221a5455",
+      "bytes": 342767,
+      "dimensions": {
+        "width": 1680,
+        "height": 1360
+      }
+    },
+    {
+      "path": "palettes.svg",
+      "sha256": "b281ac0a0b1b7e4079457b3ce75121b12c84a176ec37a206d9a83c8ecddcd4df",
+      "bytes": 51446,
+      "dimensions": {
+        "width": 1680.0,
+        "height": 1360.0
+      }
+    },
+    {
+      "path": "product/apple-touch-icon.png",
+      "sha256": "98ae41379d6f21c452c317fce08b8243a1d9ffeac936a2e3b8e8d926533809ca",
+      "bytes": 2286,
+      "dimensions": {
+        "width": 180,
+        "height": 180
+      }
+    },
+    {
+      "path": "product/favicon.ico",
+      "sha256": "6fc607998c6c32de42001fdd1f2a08bc6ed6aca0d1d9eb97c90096545bf53c6a",
+      "bytes": 1430
+    },
+    {
+      "path": "product/favicon.svg",
+      "sha256": "01bcfe753a3897c808a43279eec99482f7ea9a2eb22e5d47483c036551ce252e",
+      "bytes": 1952,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "product/icon-192.png",
+      "sha256": "05d8873de4a0ab1cb3d4d9a6ac942aa6345f83a15a2b1c21d77e3bb8a3c20065",
+      "bytes": 2408,
+      "dimensions": {
+        "width": 192,
+        "height": 192
+      }
+    },
+    {
+      "path": "product/icon-512.png",
+      "sha256": "d120701817b3c51cbd385717d76b314f8f851cce2d4cba2f180e0b25642b8077",
+      "bytes": 7216,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "product/icon-maskable-512.png",
+      "sha256": "1dbabecdf7836b048576635f12940968fc1b2b832269c0b4f15cca45d27acae8",
+      "bytes": 2068,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "product/icon-maskable.svg",
+      "sha256": "baf7517724116e89968b1cc52cb9ae81c2872a71cf6b3618fb39ab448e1c797a",
+      "bytes": 1984,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "product/icon-src.svg",
+      "sha256": "01bcfe753a3897c808a43279eec99482f7ea9a2eb22e5d47483c036551ce252e",
+      "bytes": 1952,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "product/mark-themed.svg",
+      "sha256": "e83a8f30575ad90f4c25036c8c551fca4d4546e15b94a392e2853060fa9d21fe",
+      "bytes": 1874,
+      "dimensions": {
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "path": "product/og.png",
+      "sha256": "c5102c7878e5f41d976eb391cc6967f6377ea818c16a583090ff09ba6d0defd7",
+      "bytes": 54554,
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "path": "product/og.svg",
+      "sha256": "22a6b101ae572c5f7ff4d15b7ced53d9930986031b67a37077952ffaf0c1a638",
+      "bytes": 4748,
+      "dimensions": {
+        "width": 1200.0,
+        "height": 630.0
+      }
+    },
+    {
+      "path": "product/palettes.json",
+      "sha256": "f73b525d4a77a97236ce6d79bd35de8bcf5dc98f2d6f7f141685bf1b205f2fb2",
+      "bytes": 3188
+    },
+    {
+      "path": "social/avatar.png",
+      "sha256": "96e8c81c5d20ffad902e1fa6299f39152a598b49d7a3f0672d72210e8bb44ac3",
+      "bytes": 2057,
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "social/avatar.svg",
+      "sha256": "3b9526f24c706c6641302e7032178f3c24c0d1c15b0c45edc297dec43349295e",
+      "bytes": 1975,
+      "dimensions": {
+        "width": 512.0,
+        "height": 512.0
+      }
+    },
+    {
+      "path": "social/banner-tall-master.png",
+      "sha256": "0e93fc0df490bdc910f2cd8312d5457ccf6dff0d168b8d4d85e2191ad4017742",
+      "bytes": 66157,
+      "dimensions": {
+        "width": 1500,
+        "height": 600
+      }
+    },
+    {
+      "path": "social/banner-tall-master.svg",
+      "sha256": "9559875ad5716e1d3ff37e6eed5cc4c0dc4d3fb62035e32eb247dec5836545f5",
+      "bytes": 7351,
+      "dimensions": {
+        "width": 1500.0,
+        "height": 600.0
+      }
+    },
+    {
+      "path": "social/banner-x-bluesky.png",
+      "sha256": "626e537169f75de22a8707e18d7c1cf70f1bd2e3a2bc717192e6c20202d8dce8",
+      "bytes": 65161,
+      "dimensions": {
+        "width": 1500,
+        "height": 500
+      }
+    },
+    {
+      "path": "social/banner-x-bluesky.svg",
+      "sha256": "a2c345617d0cafaa8f9f6d83d7961dedcac30f114b07234fb9009271bebf809f",
+      "bytes": 7219,
+      "dimensions": {
+        "width": 1500.0,
+        "height": 500.0
+      }
+    },
+    {
+      "path": "social/landscape-template.png",
+      "sha256": "1fb8e3e1d8193632583c7e8033ccc924f0f668ce94a29aa1b80e0c39aef01344",
+      "bytes": 76793,
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "path": "social/landscape-template.svg",
+      "sha256": "453ed762241ad619627870e9505c283f21f9c8066ae95ecef49a93cef62a8196",
+      "bytes": 8202,
+      "dimensions": {
+        "width": 1600.0,
+        "height": 900.0
+      }
+    },
+    {
+      "path": "social/quote-template.png",
+      "sha256": "f3d2a4ca8770712be91ed5cd389090e74e0342893d3d0632566bf32c7156bfb8",
+      "bytes": 65935,
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      }
+    },
+    {
+      "path": "social/quote-template.svg",
+      "sha256": "414ac2ddd77aa1cec4457f4700ee89d56c819e5640e02868976a7a2a3cae94c0",
+      "bytes": 5627,
+      "dimensions": {
+        "width": 1080.0,
+        "height": 1080.0
+      }
+    },
+    {
+      "path": "social/release-template.png",
+      "sha256": "1dd6ffc82bf27c7661218a99166b9967177bb016cbb87963f5a776497448255d",
+      "bytes": 73202,
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      }
+    },
+    {
+      "path": "social/release-template.svg",
+      "sha256": "d4b8f5c9fc484952ca6e7503b1d534ff3e873c4f61ca932475bc447ec7a26e0a",
+      "bytes": 7581,
+      "dimensions": {
+        "width": 1080.0,
+        "height": 1080.0
+      }
+    },
+    {
+      "path": "social/screenshot-frame.png",
+      "sha256": "b20cd49ff7c4c06e2f447797a5fb2a406da155f67b98b737e5eedb3635375128",
+      "bytes": 57480,
+      "dimensions": {
+        "width": 1600,
+        "height": 1000
+      }
+    },
+    {
+      "path": "social/screenshot-frame.svg",
+      "sha256": "8760f6a524e62ae7d0fef4b09e135d510a07ac13406f01ad841abdb026ced9bb",
+      "bytes": 5208,
+      "dimensions": {
+        "width": 1600.0,
+        "height": 1000.0
+      }
+    },
+    {
+      "path": "social/square-post.png",
+      "sha256": "4500f7671add302b9143f6468469f4ebaaab7f641f1dc95cb8fea5ce55d9d4e7",
+      "bytes": 80284,
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      }
+    },
+    {
+      "path": "social/square-post.svg",
+      "sha256": "30d2ebf42e755ab58beac57569ffd0f0079de407b078325d809009c29aaf5bec",
+      "bytes": 8469,
+      "dimensions": {
+        "width": 1080.0,
+        "height": 1080.0
+      }
+    },
+    {
+      "path": "social/story-template.png",
+      "sha256": "45b8fa398ca6273972179fc256a46f452ded555028d0c5f6e125f79b2f0e9c7d",
+      "bytes": 87539,
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      }
+    },
+    {
+      "path": "social/story-template.svg",
+      "sha256": "923867e9ed84698d77120f7b15a074b85ef3f190730afb415b69e5341c4a1a0f",
+      "bytes": 10482,
+      "dimensions": {
+        "width": 1080.0,
+        "height": 1920.0
+      }
+    },
+    {
+      "path": "source-register.json",
+      "sha256": "1d6878fa7f8ee28f4932d1120c81d7fb9aa2f5e15e2bba92f69fa547f7665d3e",
+      "bytes": 1311
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "8f40b79e129e3b8121b8e502890aff820f4e8da9db618df60a722da0524f0745",
+      "bytes": 3185
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "ff3971f6c210ea6fc6e16d4c7e19de9d7240a02f3b595dc031bb3c586a2d232e",
+      "bytes": 8399
+    },
+    {
+      "path": "video/captions.ass",
+      "sha256": "522e67dbb61a15765dff9963405d6cb8e73f1d1ae48404226a37cf92b3bfdc4f",
+      "bytes": 635
+    },
+    {
+      "path": "video/end-card.png",
+      "sha256": "a052fca2f08ce6db23660861a24a60421842326554bd52ae2d3d156df40b5702",
+      "bytes": 32333,
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    {
+      "path": "video/end-card.svg",
+      "sha256": "68dd3ddab97d5d768c7e75117529fe4bc6473bdde6095fc39870cb12c8e6b87d",
+      "bytes": 2426,
+      "dimensions": {
+        "width": 1920.0,
+        "height": 1080.0
+      }
+    },
+    {
+      "path": "video/lower-third.png",
+      "sha256": "fedbe6b899728ac2e80259cfc690f368d62bf07a8b6c5fc586d9fec7a663775d",
+      "bytes": 22154,
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    {
+      "path": "video/lower-third.svg",
+      "sha256": "70adef73fe46f8f5eb3f4044bc5f14a451eef8d73bfce600633a298c492f273a",
+      "bytes": 2363,
+      "dimensions": {
+        "width": 1920.0,
+        "height": 1080.0
+      }
+    },
+    {
+      "path": "video/thumbnail.png",
+      "sha256": "cdf1bf43010400ffc5eb09a8d2d48abe3a4b816655a4870b46fb92c0b20cadc6",
+      "bytes": 76442,
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    {
+      "path": "video/thumbnail.svg",
+      "sha256": "205ecdc763011c6658a1f74bfb586af75c08693d0eed70c82274f34195307b68",
+      "bytes": 12675,
+      "dimensions": {
+        "width": 1920.0,
+        "height": 1080.0
+      }
+    },
+    {
+      "path": "video/title-card.png",
+      "sha256": "62bcc2457af9e78728a63bd48fae064c94ec02a546dd8abe8caee66f27981725",
+      "bytes": 73922,
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    {
+      "path": "video/title-card.svg",
+      "sha256": "1b85f849dd628374613e45bc88f8d606a1bd1e4582faa6a4ef09b3b546097a0b",
+      "bytes": 3365,
+      "dimensions": {
+        "width": 1920.0,
+        "height": 1080.0
+      }
+    }
+  ]
+}

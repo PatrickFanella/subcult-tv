@@ -1,0 +1,9 @@
+:root[data-cat-palette="green"] {
+  --cat-bg: #19251b;
+  --cat-fg: #e6f3e8;
+  --cat-face: #e0b45a;
+  --cat-cursor: #7fd08a;
+  --cat-panel: #273329;
+  --cat-line: #465248;
+  --cat-muted: #94a196;
+}

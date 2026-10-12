@@ -1,0 +1,9 @@
+:root[data-cat-palette="solarized"] {
+  --cat-bg: #052729;
+  --cat-fg: #d8f5f6;
+  --cat-face: #b58900;
+  --cat-cursor: #859900;
+  --cat-panel: #143537;
+  --cat-line: #335456;
+  --cat-muted: #84a3a4;
+}

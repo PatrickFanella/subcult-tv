@@ -1,0 +1,149 @@
+{
+  "default": "phosphor",
+  "palettes": {
+    "phosphor": {
+      "bg": "#0b0f0c",
+      "fg": "#cfeedd",
+      "face": "#7dff9a",
+      "cursor": "#e8a33d",
+      "panel": "#191f1b",
+      "line": "#36403a",
+      "muted": "#819589"
+    },
+    "amber": {
+      "bg": "#000000",
+      "fg": "#ffa326",
+      "face": "#ffb249",
+      "cursor": "#5edb81",
+      "panel": "#120b03",
+      "line": "#382408",
+      "muted": "#996217"
+    },
+    "gray": {
+      "bg": "#1d2229",
+      "fg": "#e8eff9",
+      "face": "#e8a33d",
+      "cursor": "#5fd98a",
+      "panel": "#2b3038",
+      "line": "#4a4f57",
+      "muted": "#979da6"
+    },
+    "violet": {
+      "bg": "#05050c",
+      "fg": "#f4f4ff",
+      "face": "#a970ff",
+      "cursor": "#00f593",
+      "panel": "#16161d",
+      "line": "#3a3a41",
+      "muted": "#94949e"
+    },
+    "green": {
+      "bg": "#19251b",
+      "fg": "#e6f3e8",
+      "face": "#e0b45a",
+      "cursor": "#7fd08a",
+      "panel": "#273329",
+      "line": "#465248",
+      "muted": "#94a196"
+    },
+    "ember": {
+      "bg": "#2c1e11",
+      "fg": "#ffe9d0",
+      "face": "#f0b04a",
+      "cursor": "#b8d88a",
+      "panel": "#3b2c1e",
+      "line": "#5a4b3b",
+      "muted": "#ab9884"
+    },
+    "red": {
+      "bg": "#281f21",
+      "fg": "#faeaed",
+      "face": "#f05050",
+      "cursor": "#6fd08f",
+      "panel": "#372d2f",
+      "line": "#564c4e",
+      "muted": "#a6999b"
+    },
+    "wine": {
+      "bg": "#2a1d27",
+      "fg": "#fae9f5",
+      "face": "#f0a868",
+      "cursor": "#a0d080",
+      "panel": "#392b35",
+      "line": "#584a54",
+      "muted": "#a797a3"
+    },
+    "solarized": {
+      "bg": "#052729",
+      "fg": "#d8f5f6",
+      "face": "#b58900",
+      "cursor": "#859900",
+      "panel": "#143537",
+      "line": "#335456",
+      "muted": "#84a3a4"
+    },
+    "nord": {
+      "bg": "#3b4a56",
+      "fg": "#e1edf8",
+      "face": "#88c0d0",
+      "cursor": "#a3be8c",
+      "panel": "#475561",
+      "line": "#606e7a",
+      "muted": "#9facb7"
+    },
+    "lavender": {
+      "bg": "#dbd3ec",
+      "fg": "#1a1029",
+      "face": "#7a5fb5",
+      "cursor": "#2e7d46",
+      "panel": "#cdc5de",
+      "line": "#b1a8c1",
+      "muted": "#675e77"
+    },
+    "sepia": {
+      "bg": "#ebd3b4",
+      "fg": "#231200",
+      "face": "#9a6b12",
+      "cursor": "#2e7d46",
+      "panel": "#ddc5a7",
+      "line": "#bfa98c",
+      "muted": "#735f48"
+    },
+    "salmon": {
+      "bg": "#fff1e5",
+      "fg": "#0e0a07",
+      "face": "#0f7680",
+      "cursor": "#00754d",
+      "panel": "#eee1d5",
+      "line": "#cabeb4",
+      "muted": "#6e6660"
+    },
+    "ice": {
+      "bg": "#c9dbe0",
+      "fg": "#04191e",
+      "face": "#2a5fa8",
+      "cursor": "#2e7d46",
+      "panel": "#bbcdd2",
+      "line": "#9eb0b5",
+      "muted": "#53676c"
+    },
+    "cream": {
+      "bg": "#f3eee6",
+      "fg": "#100a03",
+      "face": "#a8750e",
+      "cursor": "#1f9d55",
+      "panel": "#e3ded6",
+      "line": "#c1bcb4",
+      "muted": "#6b655e"
+    },
+    "mirc": {
+      "bg": "#f9fcfe",
+      "fg": "#030304",
+      "face": "#0000cc",
+      "cursor": "#007a00",
+      "panel": "#e8ebec",
+      "line": "#c3c5c7",
+      "muted": "#656768"
+    }
+  }
+}

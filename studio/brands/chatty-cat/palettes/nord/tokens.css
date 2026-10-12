@@ -1,0 +1,9 @@
+:root[data-cat-palette="nord"] {
+  --cat-bg: #3b4a56;
+  --cat-fg: #e1edf8;
+  --cat-face: #88c0d0;
+  --cat-cursor: #a3be8c;
+  --cat-panel: #475561;
+  --cat-line: #606e7a;
+  --cat-muted: #9facb7;
+}

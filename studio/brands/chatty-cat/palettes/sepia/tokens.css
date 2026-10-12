@@ -1,0 +1,9 @@
+:root[data-cat-palette="sepia"] {
+  --cat-bg: #ebd3b4;
+  --cat-fg: #231200;
+  --cat-face: #9a6b12;
+  --cat-cursor: #2e7d46;
+  --cat-panel: #ddc5a7;
+  --cat-line: #bfa98c;
+  --cat-muted: #735f48;
+}

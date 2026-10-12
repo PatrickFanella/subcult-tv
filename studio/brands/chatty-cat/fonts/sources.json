@@ -1,0 +1,22 @@
+[
+  {
+    "family": "Public Sans",
+    "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww.ttf",
+    "css": "@font-face {\n  font-family: 'Public Sans';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5ww.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Public Sans';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww.ttf) format('truetype');\n}\n",
+    "files": [
+      "Public-Sans-0.ttf",
+      "Public-Sans-1.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/publicsans/OFL.txt"
+  },
+  {
+    "family": "Cascadia Mono",
+    "source": "https://github.com/microsoft/cascadia-code/releases/download/v2407.24/CascadiaCode-2407.24.zip",
+    "release": "v2407.24",
+    "files": [
+      "CascadiaMono-Regular.ttf",
+      "CascadiaMono-Bold.ttf"
+    ],
+    "license_source": "https://raw.githubusercontent.com/microsoft/cascadia-code/main/LICENSE"
+  }
+]

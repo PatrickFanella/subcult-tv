@@ -1,0 +1,149 @@
+{
+  "name": "Chatty Cat",
+  "slug": "chatty-cat",
+  "wordmark": "chatty_cat",
+  "tagline": "six channels. one scrollback.",
+  "support": "self-hosted twitch chat. your palette, your font, your line height.",
+  "website": "chat.subcult.tv",
+  "repository": "subculture-collective/chatty-cat",
+  "direction": "B / Pixel cat: console phosphor",
+  "direction_selection": "selected by the owner from four candidates on October 11, 2026 (studies/chatty-cat-directions); palette system requested; owner approved the identity for application on October 11, 2026",
+  "asset_status": "owner-approved identity, October 11, 2026; template layouts remain samples and are not approved social posts",
+  "lineage": "Rebuild of HasanAbi Chat Thing and Twitch Chat Relay by mxmilkiib, AGPL-3.0",
+  "pixels": [
+    ".#........#.",
+    ".##......##.",
+    ".###....###.",
+    ".##########.",
+    ".##########.",
+    ".#..####..#.",
+    ".##########.",
+    ".####oo####.",
+    "..########..",
+    "...######..."
+  ],
+  "pixel_legend": "# face, o cursor, . empty; 12 columns wide, any number of rows up to 12",
+  "fonts": {
+    "display": "Cascadia Mono",
+    "body": "Public Sans",
+    "label": "Cascadia Mono"
+  },
+  "default_palette": "phosphor",
+  "palettes": {
+    "phosphor": {
+      "bg": "#0b0f0c",
+      "fg": "#cfeedd",
+      "face": "#7dff9a",
+      "cursor": "#e8a33d",
+      "source": "Direction B as reviewed; green phosphor on console black"
+    },
+    "amber": {
+      "bg": "#000000",
+      "fg": "#ffa326",
+      "face": "#ffb249",
+      "cursor": "#5edb81",
+      "source": "app preset phosphor: ember colour, phosphor finish, shade 9"
+    },
+    "gray": {
+      "bg": "#1d2229",
+      "fg": "#e8eff9",
+      "face": "#e8a33d",
+      "cursor": "#5fd98a",
+      "source": "app colour gray at its default shade 7 (the app default)"
+    },
+    "violet": {
+      "bg": "#05050c",
+      "fg": "#f4f4ff",
+      "face": "#a970ff",
+      "cursor": "#00f593",
+      "source": "app colour violet at its default shade 8"
+    },
+    "green": {
+      "bg": "#19251b",
+      "fg": "#e6f3e8",
+      "face": "#e0b45a",
+      "cursor": "#7fd08a",
+      "source": "app colour green at its default shade 7"
+    },
+    "ember": {
+      "bg": "#2c1e11",
+      "fg": "#ffe9d0",
+      "face": "#f0b04a",
+      "cursor": "#b8d88a",
+      "source": "app colour ember at its default shade 7"
+    },
+    "red": {
+      "bg": "#281f21",
+      "fg": "#faeaed",
+      "face": "#f05050",
+      "cursor": "#6fd08f",
+      "source": "app colour red at its default shade 7"
+    },
+    "wine": {
+      "bg": "#2a1d27",
+      "fg": "#fae9f5",
+      "face": "#f0a868",
+      "cursor": "#a0d080",
+      "source": "app colour wine at its default shade 7"
+    },
+    "solarized": {
+      "bg": "#052729",
+      "fg": "#d8f5f6",
+      "face": "#b58900",
+      "cursor": "#859900",
+      "source": "app colour solarized at its default shade 7"
+    },
+    "nord": {
+      "bg": "#3b4a56",
+      "fg": "#e1edf8",
+      "face": "#88c0d0",
+      "cursor": "#a3be8c",
+      "source": "app colour nord at its default shade 6"
+    },
+    "lavender": {
+      "bg": "#dbd3ec",
+      "fg": "#1a1029",
+      "face": "#7a5fb5",
+      "cursor": "#2e7d46",
+      "source": "app colour lavender at its default shade 2; cursor darkened from the palette good colour to pass 3:1"
+    },
+    "sepia": {
+      "bg": "#ebd3b4",
+      "fg": "#231200",
+      "face": "#9a6b12",
+      "cursor": "#2e7d46",
+      "source": "app colour sepia at its default shade 2"
+    },
+    "salmon": {
+      "bg": "#fff1e5",
+      "fg": "#0e0a07",
+      "face": "#0f7680",
+      "cursor": "#00754d",
+      "source": "app colour salmon at its default shade 1"
+    },
+    "ice": {
+      "bg": "#c9dbe0",
+      "fg": "#04191e",
+      "face": "#2a5fa8",
+      "cursor": "#2e7d46",
+      "source": "app colour ice at its default shade 2"
+    },
+    "cream": {
+      "bg": "#f3eee6",
+      "fg": "#100a03",
+      "face": "#a8750e",
+      "cursor": "#1f9d55",
+      "source": "app colour cream at its default shade 1"
+    },
+    "mirc": {
+      "bg": "#f9fcfe",
+      "fg": "#030304",
+      "face": "#0000cc",
+      "cursor": "#007a00",
+      "source": "app colour mirc at its default shade 0"
+    }
+  },
+  "palette_rules": "bg is the canvas, fg the text, face the cat and wordmark, cursor the mouth and live marks. Keep face and cursor at 3:1 or better against bg; fg at 4.5:1. Add a palette by adding a row here and rebuilding; the app palettes were derived from web/src/palettes.css on October 11, 2026.",
+  "mark_status": "Original pixel-cat mark drawn from the pixels grid in this file; no Twitch artwork",
+  "motif": "A merged chat log in bars, the rate sparkline, and the pixel cat with its cursor mouth"
+}

@@ -1,0 +1,9 @@
+:root[data-cat-palette="salmon"] {
+  --cat-bg: #fff1e5;
+  --cat-fg: #0e0a07;
+  --cat-face: #0f7680;
+  --cat-cursor: #00754d;
+  --cat-panel: #eee1d5;
+  --cat-line: #cabeb4;
+  --cat-muted: #6e6660;
+}

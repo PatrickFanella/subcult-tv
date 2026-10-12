@@ -1,0 +1,20 @@
+{
+  "source_repository": "subculture-collective/chatty-cat",
+  "source_path": "docs/design-system.md",
+  "source_checkout": "/tmp/chatty-cat-brand",
+  "source_head": "c4b8301a1cc0e7a11d050e68e96ef1ed0087622b",
+  "source_doc_committed": true,
+  "copied_at": "2026-10-11",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "0d732b924601a17fd94f9c6a05f4fafe45abb17f8376115c0b6cf2a66c92cfd8",
+      "bytes": 12534
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "8f40b79e129e3b8121b8e502890aff820f4e8da9db618df60a722da0524f0745",
+      "bytes": 3185
+    }
+  ]
+}
