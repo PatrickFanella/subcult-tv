@@ -199,9 +199,10 @@ def layout(name, width, height, headline, support=None, sample=True, rows=None):
         y += size * .7
     rows = rows or (12 if 'story' in name else 6)
     log_w = width - 2 * m
-    parts.append(f'<rect x="{m}" y="{y + 20}" width="{log_w}" height="{rows * 26 + 32}" rx="6" fill="{C["surface"]}"/>')
+    panel_h = rows * 26 + 32
+    parts.append(f'<rect x="{m}" y="{y + 20}" width="{log_w}" height="{panel_h}" rx="6" fill="{C["surface"]}"/>')
     parts.append(log_block(m + 20, y + 40, log_w - 40, rows, 26))
-    parts.append(sparkline(m, height - 160 if 'story' not in name else height - 300, log_w, 56))
+    parts.append(sparkline(m, y + 20 + panel_h + 48, log_w, 56))
     if sample:
         parts.append(text(m, height - 108, SAMPLE, 16, C['muted'], MONO))
     parts.append(footer(width, height))
@@ -327,7 +328,8 @@ def build_product():
 def build_social_and_video():
     # 1500x500 banner: lockup left, headline right of centre, sparkline along the bottom.
     banner = canvas(1500, 500) + mark(x=72, y=80, size=120) + text(216, 170, 'Chat Thing', 84, C['accent'], MONO, 700)
-    banner += text(72, 290, CONFIG['tagline'], 62, C['text'], SANS, 700) + text(72, 340, 'Self-hosted Twitch chat, with your display settings.', 26, C['muted'], SANS)
+    banner += text(72, 268, 'All six channels', 56, C['text'], SANS, 700) + text(72, 330, 'in one scrollback.', 56, C['text'], SANS, 700)
+    banner += text(72, 372, 'Self-hosted Twitch chat, with your display settings.', 24, C['muted'], SANS)
     banner += f'<rect x="900" y="64" width="528" height="300" rx="6" fill="{C["surface"]}"/>' + log_block(920, 86, 488, 10, 27)
     banner += sparkline(72, 400, 1356, 50) + text(1428, 476, TAG, 18, C['muted'], MONO, anchor='end')
     write_svg_png('social/banner-x-bluesky', 1500, 500, banner, 'Chat Thing banner')
