@@ -315,6 +315,11 @@ export async function subscribe(email: string) {
   });
 }
 
+export const syncSubscribers = () =>
+  apiFetch<{ confirmed: number; brevo_members: number }>('/api/v1/newsletter/subscribers/sync', {
+    method: 'POST',
+  });
+
 export async function listSubscribers(opts?: { page?: number; perPage?: number }) {
   const params = new URLSearchParams();
   if (opts?.page) params.set('page', String(opts.page));
@@ -523,6 +528,8 @@ export interface PostingDraft {
   week: string;
   account: string;
   text: string;
+  /** X self-replies posted under the text as one thread. */
+  replies?: string[];
   due_at: string;
   expires_at: string;
   evidence: string;
@@ -640,6 +647,50 @@ export async function saveReviewDraft(id: string, form: FormData) {
   if (!response.ok) throw new APIError(result.error || 'Saving failed', response.status);
   return result as { version: number };
 }
+/** Edit a queued post, or explicitly retry/reschedule a confirmed failed Instagram post. */
+export async function editScheduledDraft(id: string, form: FormData) {
+  const token = getToken();
+  const response = await fetch(
+    `${API_BASE}/api/v1/admin/studio/review/${encodeURIComponent(id)}/schedule`,
+    { method: 'PUT', headers: token ? { Authorization: `Bearer ${token}` } : {}, body: form },
+  );
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok)
+    throw new APIError(result.error || 'The change could not be saved', response.status);
+  return result as {
+    status: string;
+    post_id: string;
+    version: number;
+    changed: boolean;
+    replaced?: boolean;
+    retried?: boolean;
+  };
+}
+
+export type RerollMode = 'text' | 'image' | 'both';
+export interface DraftReroll {
+  id: number;
+  draft_id: string;
+  mode: RerollMode;
+  note: string;
+  caption: string;
+  image_sha256: string;
+  status: 'pending' | 'running' | 'done' | 'failed';
+  error: string;
+  result_draft_id: string;
+  requested_at: string;
+  finished_at: string | null;
+}
+export const getRerolls = () => apiFetch<DraftReroll[]>('/api/v1/admin/studio/rerolls');
+export const requestReroll = (
+  id: string,
+  input: { mode: RerollMode; note?: string; caption?: string; image_sha256?: string },
+) =>
+  apiFetch<DraftReroll>(`/api/v1/admin/studio/review/${encodeURIComponent(id)}/reroll`, {
+    method: 'POST',
+    body: JSON.stringify(input),
+  });
+
 export interface ChecklistState {
   item: string;
   checked: boolean;
@@ -654,7 +705,12 @@ export const approveReviewDraft = (id: string, version: number, checklist: Check
   );
 
 export type DecisionKind =
-  'approved_as_is' | 'approved_edited' | 'rejected' | 'revision_requested' | 'snoozed';
+  | 'approved_as_is'
+  | 'approved_edited'
+  | 'rejected'
+  | 'revision_requested'
+  | 'snoozed'
+  | 'favorited';
 export interface DraftDecision {
   id: number;
   draft_id: string;
@@ -679,7 +735,7 @@ export const getDraftDecisions = (since: string) =>
 export const recordDraftDecision = (
   id: string,
   input: {
-    decision: 'rejected' | 'revision_requested' | 'snoozed';
+    decision: 'rejected' | 'revision_requested' | 'snoozed' | 'favorited';
     reasons?: string[];
     note?: string;
     checklist?: ChecklistState[];
@@ -723,6 +779,7 @@ export interface PublicationDraft {
   source: unknown;
 }
 export interface Publications {
+  development_auto_publish?: boolean;
   drafts: PublicationDraft[];
   patreon_connected: boolean;
   patreon_audiences?: { value: string; label: string }[];
@@ -749,3 +806,116 @@ export const approveProject = (project: APIProject) =>
   });
 export const unpublishProject = (id: string) =>
   apiFetch<void>(`/api/v1/admin/projects/${id}/publication`, { method: 'DELETE' });
+
+export interface BufferChannel {
+  id: string;
+  name: string;
+  service: string;
+  isDisconnected: boolean;
+  isLocked: boolean;
+  isQueuePaused: boolean;
+}
+export interface BufferReceipt {
+  draft_id: string;
+  version: number;
+  channel_id: string;
+  caption: string;
+  replies?: string[] | null;
+  due_at: string;
+  status: 'submitting' | 'scheduled' | 'uncertain';
+  post_id: string;
+}
+export interface BufferDelivery {
+  configured: boolean;
+  channels: BufferChannel[];
+  receipts: BufferReceipt[];
+}
+export const getBufferDelivery = () => apiFetch<BufferDelivery>('/api/v1/admin/studio/buffer');
+/** A Buffer X post with its delivery outcome; read-only. */
+export interface BufferHistoryPost {
+  id: string;
+  text: string;
+  channelId: string;
+  dueAt: string;
+  status: 'draft' | 'needs_approval' | 'scheduled' | 'sending' | 'sent' | 'error' | string;
+  sentAt: string | null;
+  externalLink: string | null;
+  via: string;
+  error: { message: string } | null;
+  metrics: { type: string; value: number }[] | null;
+  metricsUpdatedAt: string | null;
+}
+export interface BufferHistory {
+  configured: boolean;
+  checked_at?: string;
+  posts: BufferHistoryPost[];
+}
+export const getBufferHistory = (refresh = false) =>
+  apiFetch<BufferHistory>(`/api/v1/admin/studio/buffer/history${refresh ? '?refresh=1' : ''}`);
+export const approveBufferDraft = (
+  id: string,
+  input: {
+    channel_id: string;
+    caption: string;
+    replies: string[];
+    original_text: string;
+    due_at: string;
+    approved: boolean;
+  },
+) =>
+  apiFetch<BufferReceipt>(`/api/v1/admin/studio/buffer/${encodeURIComponent(id)}/approve`, {
+    method: 'POST',
+    body: JSON.stringify(input),
+  });
+export const editBufferDraft = (
+  id: string,
+  input: {
+    channel_id: string;
+    caption: string;
+    replies: string[];
+    due_at: string;
+    approved: boolean;
+    version: number;
+  },
+) =>
+  apiFetch<BufferReceipt>(`/api/v1/admin/studio/buffer/${encodeURIComponent(id)}/schedule`, {
+    method: 'PUT',
+    body: JSON.stringify(input),
+  });
+
+export interface BlueskyReceipt {
+  draft_id: string;
+  account_id: string;
+  caption: string;
+  alt_text: string;
+  has_media: boolean;
+  due_at: string;
+  status: 'submitting' | 'scheduled' | 'uncertain';
+  post_id: string;
+}
+export interface BlueskyDelivery {
+  configured: boolean;
+  accounts: SocialAccount[];
+  receipts: BlueskyReceipt[];
+  posts: SocialDelivery['posts'];
+  checked_at: string;
+}
+export const getBlueskyDelivery = () => apiFetch<BlueskyDelivery>('/api/v1/admin/studio/bluesky');
+export async function approveBlueskyDraft(id: string, form: FormData) {
+  const token = getToken();
+  const response = await fetch(
+    `${API_BASE}/api/v1/admin/studio/bluesky/${encodeURIComponent(id)}/approve`,
+    {
+      method: 'POST',
+      headers: token ? { Authorization: `Bearer ${token}` } : {},
+      body: form,
+    },
+  );
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok)
+    throw new APIError(
+      result.error || 'Bluesky scheduling could not be confirmed',
+      response.status,
+    );
+  return result as BlueskyReceipt;
+}

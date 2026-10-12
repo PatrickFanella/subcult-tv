@@ -22,41 +22,171 @@
   letter-spacing: -0.015em;
 }
 .admin-shell .admin-sidebar {
+  width: 15.5rem;
   background: #100b19;
   border-right: 1px solid #51405f;
 }
-.admin-shell .admin-sidebar nav a[aria-current='page'] {
+.admin-sidebar-header {
+  padding: 1rem;
+  border-bottom: 1px solid #51405f;
+}
+.admin-sidebar-tagline {
+  margin-top: 0.35rem;
+  font:
+    0.65rem 'JetBrains Mono',
+    monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-dust);
+}
+.admin-nav {
+  padding: 0.75rem 0.75rem 1rem;
+  overflow-y: auto;
+}
+.admin-nav-group + .admin-nav-group {
+  margin-top: 1rem;
+}
+.admin-nav-heading {
+  padding: 0 0.75rem 0.35rem;
+  font:
+    0.62rem 'JetBrains Mono',
+    monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-dust);
+  opacity: 0.8;
+}
+.admin-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.5rem;
+  padding: 0.45rem 0.75rem;
+  border-left: 2px solid transparent;
+  color: var(--color-bone);
+  font:
+    0.85rem 'Space Grotesk',
+    sans-serif;
+  text-decoration: none;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+.admin-nav-link:hover {
+  background: var(--color-ash);
+  color: var(--color-glow);
+}
+.admin-nav-link svg {
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+.admin-nav-link[aria-current='page'] {
   background: #8b5cf6;
   color: #100b19;
   border-left-color: #00ff88;
 }
-.admin-shell .admin-sidebar nav {
-  font-family: 'JetBrains Mono', monospace;
+.admin-nav-link[aria-current='page'] svg {
+  opacity: 1;
+}
+.admin-sidebar-footer {
+  padding: 0.9rem 1rem;
+  border-top: 1px solid #51405f;
+}
+.admin-sidebar-user {
+  font-size: 0.75rem;
+  color: var(--color-dust);
+  margin-bottom: 0.6rem;
+  overflow-wrap: anywhere;
+}
+.admin-sidebar-user strong {
+  color: var(--color-bone);
+  font-weight: 500;
+}
+.admin-sidebar-signout {
+  width: 100%;
+  justify-content: center;
+}
+.admin-content {
+  padding: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .admin-content {
+    padding: 2rem;
+  }
 }
 .admin-shell main {
   min-width: 0;
 }
 .admin-shell .production-heading {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1.5rem 2rem;
+  flex-wrap: wrap;
   background: #8b5cf6;
   color: #100b19;
-  padding: 2rem;
-  border-bottom: 6px solid #00ff88;
+  padding: 1.25rem 1.75rem 1.5rem;
+  border-bottom: 5px solid #00ff88;
   margin-bottom: 1.5rem;
 }
-.admin-shell .production-heading h1 {
-  font-size: clamp(2.8rem, 5.5vw, 5rem);
-  line-height: 1;
-  text-transform: uppercase;
-  margin: 0.5rem 0 1rem;
+.admin-shell .production-heading-copy {
+  min-width: 0;
+  flex: 1 1 24rem;
 }
-.admin-shell .production-heading button {
+.admin-shell .production-heading .studio-label {
+  color: #100b19;
+  opacity: 0.8;
+}
+.admin-shell .production-heading h1 {
+  font-size: clamp(1.9rem, 1.2rem + 2.2vw, 3rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin: 0.3rem 0 0;
+  color: #100b19;
+  overflow-wrap: anywhere;
+}
+.admin-shell .production-heading-description {
+  margin-top: 0.6rem;
+  max-width: 62ch;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.admin-shell .production-heading-description a {
+  color: #100b19;
+  text-decoration: underline;
+}
+.admin-shell .production-heading-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+/* Actions inside the purple header: dark on purple, with the primary one in acid green. */
+.admin-shell .production-heading .admin-button {
   background: #100b19;
   color: #f0ece4;
-  flex-shrink: 0;
+  border-color: #100b19;
+}
+.admin-shell .production-heading .admin-button:hover:not(:disabled) {
+  border-color: #00ff88;
+  color: #00ff88;
+}
+.admin-shell .production-heading .admin-button-primary {
+  background: #00ff88;
+  color: #100b19;
+  border-color: #00ff88;
+}
+.admin-shell .production-heading .admin-button-primary:hover:not(:disabled) {
+  background: #64ffb5;
+  border-color: #64ffb5;
+  color: #100b19;
+}
+.admin-shell .production-heading .admin-button[aria-pressed='true'] {
+  background: #f0ece4;
+  color: #100b19;
+  border-color: #f0ece4;
 }
 .production-rail {
   display: flex;
@@ -98,7 +228,7 @@
   padding-top: 1rem;
 }
 .production-section-title h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .studio-tools {
   display: flex;
@@ -256,7 +386,7 @@
   overflow-wrap: anywhere;
 }
 .posting-lanes h3 {
-  font-size: 1.65rem;
+  font-size: 1.25rem;
   margin: 0.5rem 0;
 }
 .posting-cadence {
@@ -265,12 +395,24 @@
   gap: 1rem;
   margin: 1.5rem 0;
 }
-.posting-cadence > div {
+.posting-cadence > div,
+.posting-cadence > article {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  padding: 0.8rem;
+  gap: 0.3rem;
+  padding: 0.9rem 1rem;
   border: 1px solid #51405f;
+  background: #191021;
+  min-width: 12rem;
+}
+.posting-cadence h3 {
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+}
+.posting-cadence p {
+  font-size: 0.9rem;
+  color: #d0c3d9;
 }
 .posting-cadence strong {
   text-transform: uppercase;
@@ -348,6 +490,16 @@
   overflow: auto;
   margin-top: 2rem;
 }
+/* Data tables scroll inside their container instead of crushing columns on phones. */
+.admin-shell .admin-table {
+  min-width: 40rem;
+}
+.admin-shell .admin-table td:first-child {
+  min-width: 12rem;
+}
+.admin-shell .admin-table td {
+  overflow-wrap: anywhere;
+}
 .posting-history table {
   width: 100%;
   border-collapse: collapse;
@@ -393,77 +545,29 @@
   }
 }
 @media (max-width: 800px) {
-  .admin-shell {
-    flex-direction: column;
-  }
-  .admin-shell .admin-sidebar {
-    width: 100%;
-    border-right: 0;
-  }
-  /* Phone-first: navigation becomes one scrollable row so work shows on the first screen. */
-  .admin-shell .admin-sidebar nav {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 0.25rem;
-    padding: 0.25rem 0.5rem;
-  }
-  .admin-shell .admin-sidebar nav > a {
-    flex-shrink: 0;
-    margin: 0;
-    padding: 0.55rem 0.7rem;
-  }
-  .admin-shell .admin-sidebar-header {
-    padding: 0.5rem 1rem;
-  }
-  .admin-shell .admin-sidebar-header > .admin-sidebar-label {
-    display: none;
-  }
-  .admin-shell .subcult-nav-mark {
-    width: 2rem;
-    height: 2rem;
-  }
-  .admin-shell .admin-sidebar-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    padding: 0.35rem 1rem;
-  }
-  .admin-shell .admin-sidebar-footer > .admin-sidebar-label {
-    margin: 0;
-  }
-  .admin-shell .admin-sidebar-footer button {
-    width: auto;
-  }
-  .admin-shell main > div {
-    padding: 1rem;
-  }
   .admin-shell .production-heading {
-    flex-direction: column;
-    align-items: start;
-    padding: 1.5rem;
-  }
-  .admin-shell .posting-page .production-heading {
-    padding: 0.6rem 1rem;
+    padding: 1rem 1.1rem 1.1rem;
     border-bottom-width: 4px;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
   }
-  .admin-shell .posting-page .production-heading h1 {
-    font-size: 1.75rem;
-    margin: 0.15rem 0 0;
+  .admin-shell .production-heading h1 {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
   }
-  .admin-shell .posting-page .production-heading .studio-label {
-    font-size: 0.65rem;
+  .admin-shell .production-heading-actions {
+    width: 100%;
+    justify-content: flex-start;
   }
+  .admin-shell .production-heading .admin-button {
+    min-height: 2.75rem;
+  }
+  /* Wrap so every publishing page stays visible without a hidden scroll. */
   .admin-shell .posting-navigation {
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    gap: 0.25rem;
     padding-bottom: 0.5rem;
     margin-bottom: 0.75rem;
   }
   .admin-shell .posting-navigation a {
-    flex-shrink: 0;
     white-space: nowrap;
     padding: 0.5rem 0.7rem;
   }
@@ -536,22 +640,109 @@
   }
   .admin-sidebar-collapsed .admin-sidebar-header,
   .admin-sidebar-collapsed .admin-sidebar-footer {
-    padding: 0.75rem;
+    padding: 0.75rem 0.5rem;
   }
-  .admin-sidebar-collapsed nav {
+  .admin-sidebar-collapsed .admin-nav {
     padding: 0.5rem;
   }
-  .admin-sidebar-collapsed nav a,
+  .admin-sidebar-collapsed .admin-nav-group + .admin-nav-group {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #51405f;
+  }
+  .admin-sidebar-collapsed .admin-nav-link,
   .admin-sidebar-collapsed .admin-sidebar-footer button {
     display: flex;
     justify-content: center;
+    padding-inline: 0.25rem;
   }
 }
+
+/* Phone shell: a top bar with a menu button that opens the sidebar as a drawer. */
+.admin-topbar {
+  display: none;
+}
 @media (max-width: 800px) {
-  .admin-shell .admin-sidebar-collapsed nav,
-  .admin-sidebar-collapsed .admin-sidebar-footer,
-  .admin-sidebar-collapsed .admin-sidebar-header > .admin-sidebar-label {
+  .admin-shell {
+    flex-direction: column;
+  }
+  .admin-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 3.5rem;
+    padding: 0 0.75rem 0 1rem;
+    background: #100b19;
+    border-bottom: 1px solid #51405f;
+  }
+  .admin-topbar .subcult-nav-mark {
+    width: 2rem;
+    height: 2rem;
+  }
+  .admin-menu-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0 0.9rem;
+    background: var(--color-ash);
+    border: 1px solid var(--color-fog);
+    color: var(--color-bone);
+    font:
+      0.75rem 'JetBrains Mono',
+      monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .admin-menu-button[aria-expanded='true'] {
+    border-color: var(--color-signal);
+    color: var(--color-signal);
+  }
+  .admin-shell .admin-sidebar {
+    position: fixed;
+    top: 3.5rem;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    width: min(18rem, 85vw);
+    overflow-y: auto;
+    border-right: 1px solid #51405f;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition:
+      transform 0.2s ease,
+      visibility 0s linear 0.2s;
+  }
+  .admin-shell.admin-menu-open .admin-sidebar {
+    transform: none;
+    visibility: visible;
+    transition: transform 0.2s ease;
+  }
+  /* The top bar carries the brand; the desktop collapse control does not apply. */
+  .admin-shell .admin-sidebar-header {
     display: none;
+  }
+  .admin-shell .admin-nav-link {
+    min-height: 2.75rem;
+  }
+  .admin-shell .admin-sidebar-footer button {
+    min-height: 2.75rem;
+  }
+  .admin-drawer-backdrop {
+    position: fixed;
+    inset: 3.5rem 0 0;
+    z-index: 45;
+    background: rgb(16 11 25 / 0.75);
+  }
+}
+@media (max-width: 800px) and (prefers-reduced-motion: reduce) {
+  .admin-shell .admin-sidebar,
+  .admin-shell.admin-menu-open .admin-sidebar {
+    transition: none;
   }
 }
 
@@ -611,6 +802,8 @@
   padding: 0.6rem;
 }
 .instagram-preview {
+  width: 100%;
+  max-width: 29.25rem;
   border: 1px solid #ddd;
   background: #fff;
   color: #151515;
@@ -637,15 +830,20 @@
   border: 2px solid #b245b4;
   font-weight: bold;
 }
+.instagram-preview-frame {
+  width: 100%;
+  overflow: hidden;
+  background: #eee;
+}
+/* Fill the feed frame and crop like Instagram does. */
 .instagram-preview-image {
   display: block;
   width: 100%;
-  max-height: 34rem;
-  object-fit: contain;
-  background: #eee;
+  height: 100%;
+  object-fit: cover;
 }
 .instagram-preview-placeholder {
-  min-height: 16rem;
+  height: 100%;
   background: #eee;
   color: #555;
   display: flex;
@@ -788,17 +986,447 @@
   }
 }
 
-.admin-shell .production-heading button,
-.admin-shell .production-heading a {
-  padding: 0.65rem 0.9rem;
-  border: 1px solid #100b19;
+.posting-review-card-editing {
+  grid-column: 1 / -1;
+  scroll-margin-top: 1rem;
+}
+.posting-review-card-editing .posting-editor-grid {
+  margin-top: 0;
+}
+.posting-review-card[data-missed] {
+  border-color: var(--color-signal, #f43f5e);
+}
+.posting-review-card[data-missed] .posting-draft-meta span:last-child {
+  color: var(--color-signal, #f43f5e);
+}
+
+/* Long sent-post text wraps instead of widening the history table. */
+.posting-history .posting-history-text {
+  white-space: normal;
+  min-width: 16rem;
+  overflow-wrap: anywhere;
+}
+.publication-preview table {
+  border-collapse: collapse;
+  margin: 0.8rem 0;
+}
+.publication-preview th,
+.publication-preview td {
+  padding: 0.35rem 0.75rem 0.35rem 0;
+  border-bottom: 1px solid #51495c;
+  text-align: left;
+}
+
+/* Phones: each table row becomes a card. Cells with data-label show it beside the value;
+   a cell without one (the row's title) spans the card. */
+@media (max-width: 640px) {
+  .admin-shell .stack-table {
+    min-width: 0;
+  }
+  .stack-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .stack-table,
+  .stack-table tbody,
+  .stack-table tr,
+  .stack-table td {
+    display: block;
+    width: 100%;
+  }
+  .stack-table caption {
+    display: block;
+  }
+  .stack-table tr {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #51405f;
+  }
+  .admin-shell .stack-table td,
+  .posting-history .stack-table td {
+    padding: 0.25rem 0;
+    border: 0;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    min-width: 0;
+  }
+  .admin-shell .stack-table td[data-label],
+  .posting-history .stack-table td[data-label] {
+    position: relative;
+    padding-left: 7.25rem;
+  }
+  .stack-table td[data-label]::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    top: 0.35rem;
+    width: 6.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #b6aac0;
+  }
+}
+
+/* ── Shared controls ───────────────────────────────────────── */
+.admin-shell .admin-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--color-fog);
+  background: var(--color-soot);
+  color: var(--color-glow);
+  font:
+    0.8rem 'JetBrains Mono',
+    monospace;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+.admin-shell .admin-button:hover:not(:disabled) {
+  border-color: var(--color-static);
+  color: var(--color-static);
+}
+.admin-shell .admin-button[aria-pressed='true'] {
+  border-color: var(--color-static);
+  color: var(--color-static);
+}
+.admin-shell .admin-button-primary {
+  background: var(--color-static);
+  border-color: var(--color-static);
+  color: var(--color-void);
+  font-weight: 700;
+}
+.admin-shell .admin-button-primary:hover:not(:disabled) {
+  background: var(--color-signal-dim);
+  border-color: var(--color-signal-dim);
+  color: var(--color-void);
+}
+.admin-shell .admin-button-danger:hover:not(:disabled) {
+  border-color: #ff5c7a;
+  color: #ff5c7a;
+}
+.admin-shell .admin-button-small {
+  min-height: 2rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.72rem;
+}
+.admin-shell .admin-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.admin-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+}
+.admin-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+.admin-form-panel {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: var(--color-soot);
+  border: 1px solid var(--color-fog);
+  border-left: 3px solid #8b5cf6;
+}
+.admin-form-panel h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.admin-form-panel details {
+  border-top: 1px solid var(--color-fog);
+  padding: 0.75rem 0;
+}
+.admin-form-panel summary {
+  cursor: pointer;
+  font:
+    0.8rem 'JetBrains Mono',
+    monospace;
+}
+
+/* Alerts: red for failures, purple for warnings, green for confirmations. */
+.admin-alert {
+  margin: 0 0 1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-fog);
+  border-left-width: 4px;
+  background: var(--color-soot);
   font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.admin-alert strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.admin-alert ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.admin-alert p {
+  margin: 0;
+}
+.admin-alert p + p,
+.admin-alert .admin-button {
+  margin-top: 0.6rem;
+}
+.admin-alert-error {
+  border-color: #ff5c7a;
+}
+.admin-alert-warning {
+  border-color: #8b5cf6;
+}
+.admin-alert-notice {
+  border-color: #00ff88;
+}
+.admin-count {
+  margin: 0 0 1rem;
+  font:
+    0.75rem 'JetBrains Mono',
+    monospace;
+  color: var(--color-dust);
+}
+.admin-empty {
+  padding: 1.75rem 1.25rem;
+  border: 1px dashed var(--color-fog);
+  color: var(--color-bone);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.admin-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  font:
+    0.75rem 'JetBrains Mono',
+    monospace;
+  color: var(--color-dust);
+}
+
+/* Data tables share one look: muted mono headers, generous rows, quiet dividers. */
+.admin-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.admin-data-table th {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  font:
+    0.68rem 'JetBrains Mono',
+    monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-dust);
+  border-bottom: 1px solid var(--color-fog);
+  white-space: nowrap;
+}
+.admin-data-table td {
+  padding: 0.8rem 0.75rem;
+  border-bottom: 1px solid rgb(81 64 95 / 0.5);
+  vertical-align: top;
+}
+.admin-data-table tbody tr:hover {
+  background: var(--color-ash);
+}
+.admin-data-table .font-mono {
+  font-size: 0.78rem;
+  color: var(--color-bone);
+}
+.admin-cell-title {
+  color: var(--color-chalk);
+  font-weight: 500;
+}
+.admin-cell-sub {
+  font:
+    0.72rem 'JetBrains Mono',
+    monospace;
+  color: var(--color-dust);
+  margin-top: 0.15rem;
+}
+.admin-table-empty {
+  text-align: center;
+  padding: 2.5rem 1rem !important;
+  color: var(--color-bone);
+}
+.admin-status {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid currentColor;
+  font:
+    0.68rem 'JetBrains Mono',
+    monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.admin-status.is-live {
+  color: #00ff88;
+}
+.admin-status.is-warn {
+  color: #ffcc00;
+}
+.admin-status.is-muted {
+  color: var(--color-dust);
+}
+.admin-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.admin-tags span {
+  padding: 0.15rem 0.45rem;
+  background: var(--color-ash);
+  color: var(--color-dust);
+  font:
+    0.7rem 'JetBrains Mono',
+    monospace;
+}
+
+/* Contact messages read as a mailbox: unread ones carry the green edge. */
+.contact-list {
+  display: grid;
+  gap: 0.75rem;
+}
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-soot);
+  border: 1px solid var(--color-fog);
+  border-left-width: 3px;
+}
+.contact-card[data-unread] {
+  border-left-color: #00ff88;
+}
+.contact-card-body {
+  flex: 1 1 24rem;
+  min-width: 0;
+}
+.contact-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.contact-card-head strong {
+  color: var(--color-chalk);
+}
+.contact-unread-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #00ff88;
+  align-self: center;
+}
+.contact-email {
+  font:
+    0.75rem 'JetBrains Mono',
+    monospace;
+  color: var(--color-dust);
+  overflow-wrap: anywhere;
+}
+.contact-date {
+  margin-left: auto;
+  font:
+    0.72rem 'JetBrains Mono',
+    monospace;
+  color: var(--color-dust);
+}
+.contact-subject {
+  font-weight: 500;
+  color: var(--color-bone);
+  margin-bottom: 0.4rem;
+}
+.contact-message {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+  color: rgb(232 224 208 / 0.85);
+}
+.contact-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0.4rem;
+}
+@media (max-width: 640px) {
+  .contact-card-actions {
+    width: 100%;
+  }
+  .contact-date {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Section headings inside admin pages stay smaller than the site's public scale. */
+.admin-shell .posting-section h2,
+.admin-shell .dashboard-workbench h2,
+.admin-shell .dashboard-inventory h2,
+.admin-shell .project-review h2,
+.admin-shell .studio-brand-title h2 {
+  font-size: 1.5rem;
+}
+.admin-shell .posting-section h3,
+.admin-shell .text-library-layout article h2 {
+  font-size: 1.35rem;
+}
+.admin-shell .posting-section {
+  margin: 2rem 0;
+}
+.admin-shell .posting-section > h2 {
+  margin-bottom: 0.75rem;
+}
+.dashboard-action-list strong {
+  font-size: 1.75rem;
+}
+.dashboard-action-list a {
+  gap: 0.5rem;
+  padding: 0.9rem 1rem;
+}
+.dashboard-action-list a span {
+  font-size: 0.9rem;
+}
+.dashboard-workbench {
+  margin: 1.5rem 0;
+}
+.admin-shell .posting-navigation {
+  margin-top: -0.5rem;
+}
+.admin-shell .posting-navigation a {
+  font-size: 0.85rem;
   text-decoration: none;
 }
-.admin-shell .production-heading a {
-  color: #100b19;
+.admin-shell .posting-navigation a:hover {
+  color: var(--color-glow);
 }
-.admin-shell .production-heading button:disabled {
-  opacity: 0.6;
-  cursor: wait;
+.admin-shell .posting-navigation a.active {
+  color: var(--color-void);
+  background: var(--color-static);
+}
+.text-library-layout nav button {
+  font-size: 0.8rem;
 }

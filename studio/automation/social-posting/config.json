@@ -2,11 +2,40 @@
   "state": "/home/onnwee/.local/state/social-posting",
   "codex": "/home/onnwee/.local/bin/codex",
   "model": "gpt-6.1-sol",
-  "sp_command": "/home/onnwee/.local/bin/sp-mcp",
-  "sp_data": "/home/onnwee/.local/share/super-productivity-mcp",
   "organization_id": "695ca7c0b9aa5378e4b99613",
   "first_week": "2026-W41",
   "timezone": "America/Chicago",
+  "weekly_cta": {
+    "account": "subcult",
+    "weekday": 4,
+    "time": "17:30",
+    "days": 7,
+    "rotation": [
+      {
+        "id": "patreon",
+        "address": "patreon.com/subcult",
+        "ask": "Follow or join SUBCULT on Patreon",
+        "facts": "Following on Patreon is free and shows the public posts. Paying doesn't unlock the software; it stays public. Paid members get private Discord channels and supporter posts, with no fixed posting schedule. Check the live Patreon page before naming tiers, prices or benefits."
+      },
+      {
+        "id": "newsletter",
+        "address": "subcult.tv/newsletter",
+        "ask": "Get the monthly newsletter",
+        "facts": "One email a month with releases and what we're working on. Sign-up is confirmed by clicking the link in the first email, and every email has an unsubscribe link."
+      },
+      {
+        "id": "support",
+        "address": "subcult.tv/support",
+        "ask": "Read how to support the workshop",
+        "facts": "The support page explains that paying doesn't unlock the software, which stays public, and that Patreon members get private Discord channels and supporter posts with no fixed posting schedule."
+      }
+    ]
+  },
+  "daily_showcase": {
+    "enabled": true,
+    "gap_days": 2,
+    "products": ["undertow", "clpr", "kork", "hasanara"]
+  },
   "cadence": {
     "patrick": {
       "days": [
@@ -22,7 +51,7 @@
         "09:11",
         "16:41"
       ],
-      "weekly_cap": 14
+      "weekly_cap": 3
     },
     "subcult": {
       "days": [
@@ -53,8 +82,19 @@
       "weekly_cap": 5
     }
   },
-  "switchyard": {
-    "env_file": "/home/onnwee/Work/Tools/switchyard/.env"
+  "changes": {
+    "base_url": "https://git.subcult.tv",
+    "username": "subcult-agent",
+    "repositories": [
+      "subculture-collective/clpr",
+      "subculture-collective/patchwork",
+      "subculture-collective/hasanara",
+      "subculture-collective/rekolekt",
+      "subculture-collective/subcult-os",
+      "subculture-collective/undertow"
+    ],
+    "max_items": 30,
+    "max_excerpt_chars": 4000
   },
   "discovery": {
     "inbox": "/home/onnwee/Work/Subcult/subcult-tv/studio/content/social/Timely Sources.json",
@@ -87,18 +127,18 @@
       "organizing"
     ]
   },
-  "media_library": "media",
+  "tuning": {
+  "remote": "https://git.subcult.tv/subculture-collective/subcult-tv.git",
+  "repo": "subculture-collective/subcult-tv",
+  "login": "subcult-agent"
+ },
+ "media_library": "media",
   "editorial_guide": "content/social/Posting Best Practices.md",
   "channels": {
     "patrick": "6abdd7a8ea19ca0bde3dbbd3",
     "subcult": "695ca843457dae6a34e18809",
     "clpr": "697290bb1214300f603edb2d"
   },
-  "projects": [
-    "_k67HUz0G7703G71hxlne",
-    "8JT8sr32874Xnq7zjH-eR",
-    "8bZ2VVWHV8k9lFaLNxEQy"
-  ],
   "notes": [
     "content/social/Social Posting Automation Plan.md",
     "content/social/Product Claims Register.md",

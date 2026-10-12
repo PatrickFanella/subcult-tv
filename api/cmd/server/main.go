@@ -21,6 +21,7 @@ import (
 	"github.com/subculture-collective/subcult-tv/api/internal/handlers"
 	"github.com/subculture-collective/subcult-tv/api/internal/patreon"
 
+	"github.com/subculture-collective/subcult-tv/api/internal/buffer"
 	"github.com/subculture-collective/subcult-tv/api/internal/postybirb"
 	"github.com/subculture-collective/subcult-tv/api/internal/router"
 	"strings"
@@ -95,8 +96,30 @@ func main() {
 	h.StudioStateRoot = os.Getenv("STUDIO_STATE_ROOT")
 	h.SocialPosting = postybirb.New(os.Getenv("POSTYBIRB_API_URL"), os.Getenv("POSTYBIRB_REMOTE_PASSWORD"), "instagram", os.Getenv("POSTYBIRB_CERT_SHA256"))
 	h.SocialAccounts = strings.FieldsFunc(os.Getenv("POSTYBIRB_INSTAGRAM_ACCOUNT_IDS"), func(r rune) bool { return r == ',' || r == ' ' })
+	h.BlueskyAccounts = make(map[string]string)
+	for _, entry := range strings.Split(os.Getenv("POSTYBIRB_BLUESKY_ACCOUNTS"), ",") {
+		name, id, ok := strings.Cut(strings.TrimSpace(entry), "=")
+		if ok && (name == "patrick" || name == "subcult" || name == "clpr") && strings.TrimSpace(id) != "" {
+			h.BlueskyAccounts[name] = strings.TrimSpace(id)
+		}
+	}
 	h.PostingMediaBaseURL = os.Getenv("POSTING_MEDIA_BASE_URL")
 	h.PostingPreparationKey = os.Getenv("POSTING_PREPARATION_KEY")
+	h.DevelopmentAutoPublish = os.Getenv("DEVELOPMENT_AUTO_PUBLISH") == "true"
+	if h.DevelopmentAutoPublish {
+		publishCtx, cancel := context.WithTimeout(ctx, time.Minute)
+		count, err := h.PublishDevelopmentBacklog(publishCtx)
+		cancel()
+		if err != nil {
+			slog.Error("publish Development backlog", "error", err)
+			os.Exit(1)
+		}
+		slog.Info("Development automatic publication enabled", "backlog_published", count)
+	}
+	if client := buffer.New(os.Getenv("BUFFER_API_KEY"), os.Getenv("BUFFER_ORGANIZATION_ID")); client != nil {
+		h.BufferPosting = client
+	}
+	h.BufferChannels = strings.FieldsFunc(os.Getenv("BUFFER_X_CHANNEL_IDS"), func(r rune) bool { return r == ',' || r == ' ' })
 	h.PatreonPosting = postybirb.New(os.Getenv("POSTYBIRB_API_URL"), os.Getenv("POSTYBIRB_REMOTE_PASSWORD"), os.Getenv("POSTYBIRB_PATREON_ACCOUNT_ID"), os.Getenv("POSTYBIRB_CERT_SHA256"))
 	h.PatreonSchedulingVerified = os.Getenv("POSTYBIRB_SCHEDULING_VERIFIED") == "true"
 	if h.StudioRoot != "" {

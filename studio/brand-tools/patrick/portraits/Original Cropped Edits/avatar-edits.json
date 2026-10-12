@@ -1,0 +1,37 @@
+[
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-a719a027-618e-42b2-af77-07d214792558.png",
+    "name": "01-black-shirt-glasses-avatar.png",
+    "prompt": "Use case: identity-preserve. Edit this exact photograph into a polished natural square profile avatar. Crop tightly to head and upper shoulders with a little space above hair; center the face for a circular crop, crop phone and hand out where feasible using only actual framing. Correct excessive yellow indoor white balance, gently balance exposure and contrast, lightly sharpen existing details and reduce mirror specks. Preserve exact identity, facial geometry, age, expression, gaze, hair, glasses, black shirt, and natural skin texture. Keep original background softly unobtrusive. No beauty filter, face reconstruction, slimming, invented smile, new objects, text or watermark. Output one square edited photo, not collage."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-4f543e0f-d474-4a79-a9ec-5e43c83803d7.png",
+    "name": "02-black-shirt-no-glasses-avatar.png",
+    "prompt": "Use case: identity-preserve. Edit this exact photo for a polished square profile avatar. Crop to head and upper shoulders, centered face and room above hair for circular display. Use balanced natural color. Crop away bathroom countertop, toiletries and excess room. Keep phone if it overlaps body; do not invent body behind it. Correct indoor yellow cast, gently improve exposure, contrast, existing detail and mirror haze. Preserve exact identity, facial geometry, age, expression, gaze, hair, glasses or absence of glasses, clothing, jewelry and natural skin texture. Do not reconstruct or beautify face, change pose, add smile, slim body, invent objects or replace the setting. No text, watermark or collage. One square image."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-172325b2-be64-4a05-a825-4c279ac9c02e.png",
+    "name": "03-camouflage-shirt-avatar.png",
+    "prompt": "Use case: identity-preserve. Edit this exact photo for a polished square profile avatar. Crop to head and upper shoulders, centered face and room above hair for circular display. Use balanced natural color. Crop away bathroom countertop, toiletries and excess room. Keep phone if it overlaps body; do not invent body behind it. Correct indoor yellow cast, gently improve exposure, contrast, existing detail and mirror haze. Preserve exact identity, facial geometry, age, expression, gaze, hair, glasses or absence of glasses, clothing, jewelry and natural skin texture. Do not reconstruct or beautify face, change pose, add smile, slim body, invent objects or replace the setting. No text, watermark or collage. One square image."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-14754931-dd86-4c3d-8461-a08fe9016dab.png",
+    "name": "04-striped-shirt-avatar.png",
+    "prompt": "Use case: identity-preserve. Edit this exact photo for a polished square profile avatar. Crop to head and upper shoulders, centered face and room above hair for circular display. Use balanced natural color. Crop away bathroom countertop, toiletries and excess room. Keep phone if it overlaps body; do not invent body behind it. Correct indoor yellow cast, gently improve exposure, contrast, existing detail and mirror haze. Preserve exact identity, facial geometry, age, expression, gaze, hair, glasses or absence of glasses, clothing, jewelry and natural skin texture. Do not reconstruct or beautify face, change pose, add smile, slim body, invent objects or replace the setting. No text, watermark or collage. One square image."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-e7340175-8e0d-404d-b905-9515e6e3718e.png",
+    "name": "05-hoodie-peace-sign-avatar.png",
+    "prompt": "Use case: identity-preserve. Edit this exact photo for a polished square profile avatar. Crop to head and upper shoulders, centered face and room above hair for circular display. Keep the peace sign and original fingers visible toward the side while prioritizing a clear face. Crop away bathroom countertop, toiletries and excess room. Keep phone if it overlaps body; do not invent body behind it. Correct indoor yellow cast, gently improve exposure, contrast, existing detail and mirror haze. Preserve exact identity, facial geometry, age, expression, gaze, hair, glasses or absence of glasses, clothing, jewelry and natural skin texture. Do not reconstruct or beautify face, change pose, add smile, slim body, invent objects or replace the setting. No text, watermark or collage. One square image."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-3a4c9210-5274-4478-a1b8-2210e5865247.png",
+    "name": "06-black-shirt-square-natural-avatar.png",
+    "prompt": "Use case: identity-preserve. Edit this exact photo for a polished square profile avatar. Crop to head and upper shoulders, centered face and room above hair for circular display. Use balanced natural color. Crop away bathroom countertop, toiletries and excess room. Keep phone if it overlaps body; do not invent body behind it. Correct indoor yellow cast, gently improve exposure, contrast, existing detail and mirror haze. Preserve exact identity, facial geometry, age, expression, gaze, hair, glasses or absence of glasses, clothing, jewelry and natural skin texture. Do not reconstruct or beautify face, change pose, add smile, slim body, invent objects or replace the setting. No text, watermark or collage. One square image."
+  },
+  {
+    "source": "/home/onnwee/.codex/generated_images/01a107fc-b46f-7812-8dfd-770b3d3c08f0/exec-70779e7d-2794-4cf1-81fa-e7d7f2f124b3.png",
+    "name": "07-black-shirt-square-warm-avatar.png",
+    "prompt": "Use case: identity-preserve. Edit this exact photo for a polished square profile avatar. Crop to head and upper shoulders, centered face and room above hair for circular display. Keep a subtle warm cinematic color character but correct excessive orange skin and purple shadows. Crop away bathroom countertop, toiletries and excess room. Keep phone if it overlaps body; do not invent body behind it. Correct indoor yellow cast, gently improve exposure, contrast, existing detail and mirror haze. Preserve exact identity, facial geometry, age, expression, gaze, hair, glasses or absence of glasses, clothing, jewelry and natural skin texture. Do not reconstruct or beautify face, change pose, add smile, slim body, invent objects or replace the setting. No text, watermark or collage. One square image."
+  }
+]

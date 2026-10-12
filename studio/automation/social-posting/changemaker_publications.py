@@ -12,7 +12,8 @@ import subprocess
 import urllib.request
 
 from runner import atomic_write
-from sources import NoRedirect, changemaker_context, complete_changemaker_digest, public_url
+from changes import changes_context
+from sources import NoRedirect, complete_changemaker_digest, public_url
 
 HERE = Path(__file__).resolve().parent
 
@@ -32,7 +33,8 @@ def validate(result, items):
                 raise ValueError('Publication contains a private or invalid URL')
 
 
-def ingest(payload, env_file):
+def preparation_settings(env_file):
+    """The website's preparation endpoint and key; the key cannot approve or dispatch."""
     settings = {}
     for line in env_file.read_text().splitlines():
         if not line.lstrip().startswith('#') and '=' in line:
@@ -40,9 +42,14 @@ def ingest(payload, env_file):
             if key in ('POSTING_INGEST_URL', 'POSTING_PREPARATION_KEY'):
                 values = shlex.split(value, comments=True)
                 settings[key] = values[0] if values else ''
-    url = settings.get('POSTING_INGEST_URL', '')
-    if url != 'https://subcult.tv/api/v1/posting-preparation' or len(settings.get('POSTING_PREPARATION_KEY', '')) < 32:
+    if settings.get('POSTING_INGEST_URL', '') != 'https://subcult.tv/api/v1/posting-preparation' or len(settings.get('POSTING_PREPARATION_KEY', '')) < 32:
         raise ValueError('Preparation endpoint or credential is unavailable')
+    return settings
+
+
+def ingest(payload, env_file):
+    settings = preparation_settings(env_file)
+    url = settings['POSTING_INGEST_URL']
     request = urllib.request.Request(url, data=json.dumps(payload).encode(), method='POST', headers={
         'Authorization': 'Bearer '+settings['POSTING_PREPARATION_KEY'],
         'Content-Type': 'application/json', 'User-Agent': 'SUBCULT-daily-draft-preparation/1.0'})
@@ -57,7 +64,7 @@ def execute(source_root, state, ingest_env=None):
     with (state/'publications.lock').open('a') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         now = datetime.now(timezone.utc)
-        context = changemaker_context(cfg['switchyard'], now)
+        context = changes_context(cfg, now)
         if not context['drafts']:
             return {'status': context['status'], 'publishing_enabled': False}
         digest = complete_changemaker_digest(context)
@@ -103,6 +110,11 @@ def execute(source_root, state, ingest_env=None):
                 if completed.returncode:
                     raise ValueError('Publication drafting failed; inspect private evidence')
                 result = json.loads((directory/'result.json').read_text())
+            if not result.get('source_ids'):
+                # The editor kept nothing: no user-facing change today. Record why; prepare no entry.
+                atomic_write(directory/'skipped.json', json.dumps({'checked_at': now.isoformat(),
+                    'reason': str(result.get('excerpt', ''))[:2000]}, indent=2)+'\n')
+                return {'status': 'no_user_facing_change', 'draft_count': 0, 'publishing_enabled': False}
             validate(result, items)
             selected = {**{key: proof[key] for key in ('run_id', 'evidence_sha256', 'draft_sha256')},
                         'items': [items[key] for key in result['source_ids']]}

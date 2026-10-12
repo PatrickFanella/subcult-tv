@@ -153,10 +153,49 @@ def make_media(cfg, draft, directory, n):
 ART = json.loads(read(CRAFT/'art-direction.json', '{}'))
 
 
+def brand_for(product, source_repos=()):
+    """Map a product name or the evidence repositories to a brand slug in the art direction."""
+    slug = (product or '').strip().lower().replace(' ', '-')
+    if slug in ART:
+        return slug
+    return next((REPO_BRAND[r] for r in source_repos if r in REPO_BRAND), 'subcult')
+
+
+def picture(cfg, text, product, directory, n, recent_kinds=(), extra=None):
+    """Plan, render and check an image for a caption written without one.
+
+    Used when the staged path did not run, so every Instagram draft still
+    reaches review with a prepared image. Returns (path or None, record, alt_text).
+    """
+    directory.mkdir(parents=True, exist_ok=True)
+    plan = codex(cfg, stage_prompt('picture', {'caption': text, 'product': product, 'recent_kinds': list(recent_kinds),
+                                               'art_direction': {product: ART.get(product, {})}, **(extra or {})}),
+                 directory, f'picture-{n}', 'picture', effort='medium')
+    jpeg, record = make_media(cfg, {'text': text, 'product': product, 'media': plan['media']}, directory, n)
+    return jpeg, record, plan['alt_text']
+
+
+def reroll_caption(cfg, draft, evidence, claims, directory, note='', image=None, recent=()):
+    """Rewrite one caption around the same story; returns {text, angle, changed}.
+
+    When `image` is given the model sees the picture the caption will ship with.
+    """
+    craft = draft.get('craft') or {}
+    payload = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'draft_rules': read(CRAFT/'draft.md'),
+               'account': draft.get('account', ''), 'product': craft.get('product', ''),
+               'previous': draft.get('text', ''), 'alternatives': craft.get('alternatives', []),
+               'angle': craft.get('angle', ''), 'reader': craft.get('reader', ''),
+               'headline': (draft.get('media') or {}).get('headline', '') if image else '',
+               'recent_captions': list(recent), 'owner_note': note}
+    return codex(cfg, stage_prompt('reroll', payload), directory, 'reroll', 'reroll', effort='high',
+                 images=[image] if image else ())
+
+
 def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change', extra=None):
     """Run the four writing stages and the media stage; return schema-shaped drafts."""
     shared = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'digest': digest, 'recent_captions': list(recent), 'mode': mode, **(extra or {})}
-    brief = codex(cfg, stage_prompt('showcase' if mode == 'showcase' else 'brief', shared), directory, '1-brief', 'brief', effort='high')
+    first = {'showcase': 'showcase', 'weekly': 'weekly'}.get(mode, 'brief')
+    brief = codex(cfg, stage_prompt(first, shared), directory, '1-brief', 'brief', effort='high')
     if not brief['items']:
         return {'drafts': [], 'open_checks': [f"Skipped {', '.join(s['source_ids'])}: {s['why']}" for s in brief['skipped']]}
     drafts = codex(cfg, stage_prompt('draft', {**shared, 'brief': brief}), directory, '2-draft', 'draft', effort='medium')
@@ -172,18 +211,16 @@ def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change'
         for draft in final['drafts']:
             # Claims-register IDs (C-...) support wording but are not collected sources; never reuse a source.
             ids = [sid for sid in dict.fromkeys(draft['source_ids']) if sid in valid and sid not in used]
-            if ids:
+            # A weekly post may stand on the ask alone when the week had nothing to show.
+            if ids or mode == 'weekly':
                 draft['source_ids'] = ids
                 used.update(ids)
                 kept.append(draft)
         final['drafts'] = kept
     for n, draft in enumerate(final['drafts']):
         item = brief['items'][draft['item']] if 0 <= draft['item'] < len(brief['items']) else {}
-        slug = draft['product'].strip().lower().replace(' ', '-')
-        if slug not in ART:
-            repos = {sid: next((i['source'].split('/')[-1] for i in evidence['items'] if i['id'] == sid), '') for sid in draft['source_ids']}
-            slug = next((REPO_BRAND[r] for r in repos.values() if r in REPO_BRAND), 'subcult')
-        draft['product'] = slug
+        repos = [next((i['source'].split('/')[-1] for i in evidence['items'] if i['id'] == sid), '') for sid in draft['source_ids']]
+        draft['product'] = brand_for(draft['product'], repos)
         jpeg, record = make_media(cfg, draft, directory, n)
         if record.get('kind') == 'screenshot':
             draft['next_check'] = (draft['next_check'].rstrip()+' The image is a capture of the live page, which can show third-party names, thumbnails or clips; check rights before posting.').strip()
@@ -201,7 +238,7 @@ def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change'
 URL = re.compile(r'https?://\S+')
 
 
-def polish_short(cfg, drafts, directory, limit=280):
+def polish_short(cfg, drafts, directory, limit=280, owner=()):
     """Critique and rewrite short X/Bluesky drafts in place; keep any rewrite that fails a check.
 
     Returns the private polish record. Never raises: the original drafts stay valid.
@@ -209,7 +246,7 @@ def polish_short(cfg, drafts, directory, limit=280):
     try:
         payload = {**guidance(cfg), 'drafts': [{'index': n, 'account': d.get('account', ''), 'kind': d.get('kind', ''),
                                                 'text': d.get('text', ''), 'evidence': d.get('evidence', '')}
-                                               for n, d in enumerate(drafts)]}
+                                               for n, d in enumerate(drafts)], 'owner_feedback': list(owner)}
         payload.pop('patterns', None)
         result = codex(cfg, stage_prompt('short', payload), directory, 'polish', 'short', effort='high', timeout=900)
     except Exception as error:  # the unpolished drafts remain the output
@@ -251,6 +288,12 @@ def page_text(url, limit=6000):
     text = re.sub(r'<(script|style)[^>]*>.*?</\1>', ' ', html_text, flags=re.S | re.I)
     text = re.sub(r'<[^>]+>', ' ', text)
     return re.sub(r'\s+', ' ', __import__('html').unescape(text)).strip()[:limit]
+
+
+def weekly(cfg, evidence, digest, claims, cta, account, directory, recent=(), extra=None):
+    """The weekly recap that ends with one call to action."""
+    return instagram(cfg, evidence, digest, claims, directory, recent, mode='weekly',
+                     extra={'cta': cta, 'cta_account': account, **(extra or {})})
 
 
 def showcase(cfg, product, claims, directory, recent=()):

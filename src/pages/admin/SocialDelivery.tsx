@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { leadProblem } from '@/lib/review-queue';
 import {
   approveSocialSchedule,
   getSocialDelivery,
@@ -67,7 +69,8 @@ export default function SocialDelivery({
     setRequestID(crypto.randomUUID());
     setReceipt('');
   };
-  const validTime = new Date(due).valueOf() >= now + 24 * 60 * 60 * 1000;
+  const timeProblem = leadProblem(new Date(due).valueOf(), now);
+  const validTime = !timeProblem;
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (!media || !approved || !validTime || busy || uncertain) return;
@@ -102,21 +105,37 @@ export default function SocialDelivery({
   };
   return (
     <section className="posting-section" aria-labelledby="delivery-heading">
-      <div className="production-section-title">
-        <p className="studio-label">POSTYBIRB / INSTAGRAM</p>
-        <h2 id="delivery-heading">Scheduling & delivery</h2>
-      </div>
-      <p>
-        Every post requires your approval. Schedule at least 24 hours ahead. Displayed times use
-        your browser’s timezone: {Intl.DateTimeFormat().resolvedOptions().timeZone}.
+      <h2 id="delivery-heading">{historyOnly ? 'Sent on Instagram' : 'Scheduling & delivery'}</h2>
+      {!historyOnly && (
+        <p>
+          Every post requires your approval. Choose any future publish time within 90 days.
+          Displayed times use your browser’s timezone:{' '}
+          {Intl.DateTimeFormat().resolvedOptions().timeZone}.
+        </p>
+      )}
+      {error && (
+        <p role="alert" className="admin-alert admin-alert-warning">
+          {error}
+        </p>
+      )}
+      <p className="admin-row-actions">
+        <button
+          type="button"
+          className="admin-button admin-button-small"
+          onClick={() => setReload((n) => n + 1)}
+          disabled={busy}
+        >
+          Refresh delivery status
+        </button>
+        <a
+          className="admin-button admin-button-small"
+          href="https://postybirb.subcult.tv"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Manage or cancel in PostyBirb ↗
+        </a>
       </p>
-      {error && <p role="alert">{error}</p>}
-      <button type="button" onClick={() => setReload((n) => n + 1)} disabled={busy}>
-        Refresh delivery status
-      </button>{' '}
-      <a href="https://postybirb.subcult.tv" target="_blank" rel="noreferrer">
-        Manage or cancel in PostyBirb ↗
-      </a>
       {data && (
         <>
           <p className="studio-note">
@@ -209,7 +228,7 @@ export default function SocialDelivery({
                   required
                 />
               </label>
-              {due && !validTime && <p role="alert">Choose a time at least 24 hours from now.</p>}
+              {due && !validTime && <p role="alert">{timeProblem}</p>}
               <label className="social-approval">
                 <input
                   type="checkbox"
@@ -244,7 +263,7 @@ export default function SocialDelivery({
             </form>
           )}
           <div className="posting-history">
-            <table>
+            <table className="stack-table">
               <caption>PostyBirb history: previous 30 days and next 90 days</caption>
               <thead>
                 <tr>
@@ -257,22 +276,32 @@ export default function SocialDelivery({
               <tbody>
                 {data.posts.map((p) => (
                   <tr key={p.id}>
-                    <td>{p.integration.name}</td>
-                    <td>{new Date(p.publishDate).toLocaleString()}</td>
-                    <td>
-                      {p.state === 'PUBLISHED'
-                        ? 'Published'
-                        : p.state === 'QUEUE'
-                          ? 'Scheduled'
-                          : p.state === 'ERROR'
-                            ? 'Failed'
-                            : p.state}
+                    <td data-label="Account">{p.integration.name}</td>
+                    <td data-label="Publish time">{new Date(p.publishDate).toLocaleString()}</td>
+                    <td data-label="Status">
+                      {p.state === 'PUBLISHED' ? (
+                        'Published'
+                      ) : p.state === 'QUEUE' ? (
+                        new Date(p.publishDate).valueOf() < now - 15 * 60000 ? (
+                          <strong className="text-signal">Overdue: not published</strong>
+                        ) : (
+                          'Scheduled'
+                        )
+                      ) : p.state === 'ERROR' ? (
+                        <strong className="text-signal">Failed</strong>
+                      ) : (
+                        p.state
+                      )}
                     </td>
-                    <td>
+                    <td data-label="Delivery">
                       {p.releaseURL && p.state === 'PUBLISHED' ? (
                         <a href={p.releaseURL} target="_blank" rel="noreferrer">
                           View Instagram post ↗
                         </a>
+                      ) : p.state === 'QUEUE' ? (
+                        <Link to={`/admin/posts/delivery?post=${encodeURIComponent(p.id)}`}>
+                          Edit or reschedule
+                        </Link>
                       ) : (
                         'No published link'
                       )}

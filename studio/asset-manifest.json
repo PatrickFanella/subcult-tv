@@ -1,8 +1,8 @@
 [
   {
     "path": "brand-tools/README.md",
-    "sha256": "72bcb33f1eec8126eb783d171483320c8d4ebf1922ad7516d4851a021537a420",
-    "bytes": 18636
+    "sha256": "7be3b2320a1835f43e8e0d9c075d4be9aefdb2c00586995dbc1a73806f08fa71",
+    "bytes": 17010
   },
   {
     "path": "brand-tools/audit_patchwork_contrast.py",
@@ -2511,8 +2511,8 @@
   },
   {
     "path": "brands/patrick__eff/GUIDE.md",
-    "sha256": "c325f710eb34845d5e88ba40d998dd9e169b89997ccaca9fc6d03eb0b296ba5a",
-    "bytes": 5799
+    "sha256": "f99e11fc6ce9b1244c4209f253db7610905e2d1d71cfb347917f3fdb4c75e374",
+    "bytes": 6210
   },
   {
     "path": "brands/patrick__eff/alt-text.md",
@@ -2541,8 +2541,8 @@
   },
   {
     "path": "brands/patrick__eff/asset-manifest.json",
-    "sha256": "81f5e8c0e27ef7857f09977c8e639adb355bead5206aa21191cc6d36aa06df3c",
-    "bytes": 21459
+    "sha256": "5a371b1b9bf8454077ae7aec714ed87d5b5be77bcb0806185b0869ee5ce24ce5",
+    "bytes": 40615
   },
   {
     "path": "brands/patrick__eff/components.html",
@@ -3876,8 +3876,8 @@
   },
   {
     "path": "brands/subcult/asset-manifest.json",
-    "sha256": "ca4a369157d7c32e82ffd4da939549ef5e879304a0b941491f6308e13f0c9fe9",
-    "bytes": 20021
+    "sha256": "789ce696aa0f82f75bbc28b4dd73aca0a0d9cf431a70c85e9344a662c188f235",
+    "bytes": 22922
   },
   {
     "path": "brands/subcult/fonts/JetBrains-Mono-0.ttf",
@@ -5225,13 +5225,13 @@
   },
   {
     "path": "brand-tools/brands.json",
-    "sha256": "ae2a82ed7bec59a5384567c095a64fb602ffdc20a0dfd4f05ffd3e0824962db2",
-    "bytes": 14214
+    "sha256": "4158fa2978306792b18759f1b12d7d9e672d5a92b7cd86edbf88d7c81c66e0f7",
+    "bytes": 13169
   },
   {
     "path": "brand-tools/build_packs.py",
-    "sha256": "3a02c6b03313bd729f3e71e8598818edfe199019641c8f48b93d63bc0583f2ce",
-    "bytes": 56412
+    "sha256": "4c50ae0f1836fd3a39313f610b1b1323e7e7cbb761d304691b8b9794656a8c09",
+    "bytes": 56283
   },
   {
     "path": "studies/clpr-directions/comparison.png",
@@ -6505,8 +6505,8 @@
   },
   {
     "path": "brands/index.html",
-    "sha256": "d3ef3b661a99c072995faa1ad06b37688a101e97a7e730fdca43f794b3991f91",
-    "bytes": 21719
+    "sha256": "074086dfc844881fd32d2e8f1f9c1113626618235511cc0ad32c6185e6b271d4",
+    "bytes": 20361
   },
   {
     "path": "brand-tools/kork_launch_assets.py",
@@ -6580,8 +6580,8 @@
   },
   {
     "path": "brand-tools/patrick_patch.py",
-    "sha256": "69b1748f303a3736b61de0ce2199562ef53e7c50ad0135f956fed2a827a47592",
-    "bytes": 12046
+    "sha256": "29eb5606481a273299de5d05adf1c534eca16521bc005a9ad512e00a7a222859",
+    "bytes": 12806
   },
   {
     "path": "brand-tools/prichal_product_assets.py",
@@ -7105,8 +7105,8 @@
   },
   {
     "path": "brands/tadooer/GUIDE.md",
-    "sha256": "95ab7bb15236616b0d65f03025a2f724bc96402c1911e81748f985fda807d39e",
-    "bytes": 9086
+    "sha256": "12654d0af805e409ba2738cb759a6a6cb64298845d67de198b36bf3ef37124bd",
+    "bytes": 9196
   },
   {
     "path": "brands/tadooer/alt-text.md",
@@ -7115,7 +7115,7 @@
   },
   {
     "path": "brands/tadooer/asset-manifest.json",
-    "sha256": "4b0f5bae8da59d38d9101bb9d2bc24233c97bac80442f46dcbd7f5c1c231a8b6",
+    "sha256": "b912489ba8ea12a6233ce67908fb9791244a0baef0be76c62652c1b5207fd1c5",
     "bytes": 14801
   },
   {
@@ -7330,8 +7330,8 @@
   },
   {
     "path": "brands/tadooer/product/README.md",
-    "sha256": "c45dff7c6ef0c6ea6cc650e066afd5da83cf9ac4882b8b4f73137a582447470d",
-    "bytes": 473
+    "sha256": "d08260c371d459f5a9b1ad2c6ad4486fcb093b2cfed69a2e9217d9a3ece2b2b7",
+    "bytes": 491
   },
   {
     "path": "brands/tadooer/product/apple-touch-icon.png",
@@ -7455,8 +7455,8 @@
   },
   {
     "path": "brands/tadooer/tokens.json",
-    "sha256": "efd905e05e988abf772b6bc0dce7df3d4a61cf7aa40bec5d6b6cab629d7b3826",
-    "bytes": 833
+    "sha256": "93367a3493c38fa8d262ce2ad200606b17e0477f334a75514e0ad19142f95414",
+    "bytes": 855
   },
   {
     "path": "brands/tadooer/video/captions.ass",
@@ -7540,13 +7540,13 @@
   },
   {
     "path": "brand-tools/tadooer_assets.py",
-    "sha256": "c4a365130994995aac6198c719735589fa42000d38364641c18b1b4e487e969b",
-    "bytes": 11511
+    "sha256": "3d95eca3ff9cd54d7c46b0870bd083406d93f8f568b67c75c02c70e110002539",
+    "bytes": 11605
   },
   {
     "path": "brand-tools/tadooer_product_assets.py",
-    "sha256": "6a332eedc12bdd002b2431af9900b3a61a9706d38609cadb31eb5301ffdbe39e",
-    "bytes": 6001
+    "sha256": "0624d9eaeeb1a90c4f0c0747cb74b40eccfda4d0166f741b5068a56744971460",
+    "bytes": 6019
   },
   {
     "path": "brands/tadooer/design-system/brand-assets.json",

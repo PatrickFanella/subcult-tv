@@ -1,0 +1,45 @@
+{
+  "method": "Approved SUBCULT native SVG wrapped on a 1920x1080 Twitch offline canvas, plus 320x96 panel headers using the approved colors and Oswald typeface; exported with Inkscape.",
+  "files": [
+    {
+      "path": "brand-tools/subcult_platform_extras.py",
+      "sha256": "661eed319533870aa3e9a63cac5d171b56d6651857571146daab51219ba42c80"
+    },
+    {
+      "path": "brands/subcult/social/banner-x-bluesky.svg",
+      "sha256": "9eec5f48efd76ed9b165240cfd991f10f6267267634dadd69daf155a0ebdee18"
+    },
+    {
+      "path": "brands/subcult/social/twitch-offline.svg",
+      "sha256": "d7edec90a6e48dd435f6ca529e92d2b3c85c7edbad2309ca8376933cf13db62a"
+    },
+    {
+      "path": "brands/subcult/social/twitch-offline.png",
+      "sha256": "116051e6f5f5eec5779aacfbc1de46c2a9a8cd58320c84c999267073bb34b25f"
+    },
+    {
+      "path": "brands/subcult/social/twitch-panel-about-subcult.svg",
+      "sha256": "0310460bb6651a804c15ff5127b1f4c193e75382d64b3b300a51a7921f8e8454"
+    },
+    {
+      "path": "brands/subcult/social/twitch-panel-about-subcult.png",
+      "sha256": "3de329db43cf62dd3b9dd1299ca7582ccbff2115c7a8d873719b959d083f71e1"
+    },
+    {
+      "path": "brands/subcult/social/twitch-panel-find-us.svg",
+      "sha256": "4ee54e7c293a9cf32eefc344657a97bda63bdaea14c8339aedc947a654173e92"
+    },
+    {
+      "path": "brands/subcult/social/twitch-panel-find-us.png",
+      "sha256": "1d30c681c6b7ac6532c08fa934789965f2905e7950d214e169919f548c78864c"
+    },
+    {
+      "path": "brands/subcult/social/twitch-panel-support.svg",
+      "sha256": "522d074a489535c65500973cc86fb8091b851af392b1ed4b4cdd56dddb97a6f3"
+    },
+    {
+      "path": "brands/subcult/social/twitch-panel-support.png",
+      "sha256": "9d324ab746553581b957a4e93bb8b0d64dee48e8d2c0da729eabec1cfc808b1d"
+    }
+  ]
+}

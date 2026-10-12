@@ -57,7 +57,7 @@ func TestReviewDraftApprovalIntegration(t *testing.T) {
 	save := func(version int, media bool) *httptest.ResponseRecorder {
 		var payload bytes.Buffer
 		form := multipart.NewWriter(&payload)
-		for k, v := range map[string]string{"version": strconv.Itoa(version), "caption": "Exact saved caption", "account_id": "patrick", "due_at": time.Now().Add(48 * time.Hour).Format(time.RFC3339)} {
+		for k, v := range map[string]string{"version": strconv.Itoa(version), "caption": "Exact saved caption", "account_id": "patrick", "due_at": time.Now().Add(2 * time.Hour).Format(time.RFC3339)} {
 			form.WriteField(k, v)
 		}
 		if media {

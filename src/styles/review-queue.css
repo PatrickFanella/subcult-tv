@@ -1,8 +1,8 @@
 /* Private social review queue: platform tabs, read-only X/Bluesky previews. */
 .posting-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.4rem;
-  overflow-x: auto;
   margin: 0 0 0.75rem;
 }
 .posting-tabs button {
@@ -104,6 +104,37 @@
 .x-meter[data-over] {
   color: #f4212e;
 }
+/* Self-replies hang off the tweet like X's own thread line. */
+.x-preview-reply {
+  margin: 0.75rem 0 0 1.2rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid #2f3336;
+  color: #71767b;
+  font-size: 0.8rem;
+}
+.x-preview-reply .x-preview-text {
+  color: #e7e9ea;
+  margin: 0.3rem 0;
+}
+.x-preview-reply [data-over] {
+  color: #f4212e;
+}
+.x-replies {
+  display: grid;
+  gap: 0.6rem;
+  border: 1px solid var(--color-border, #333);
+  padding: 0.75rem;
+  min-width: 0;
+}
+.x-reply-field {
+  display: flex;
+  gap: 0.5rem;
+  align-items: end;
+}
+.x-reply-field label {
+  flex: 1;
+  min-width: 0;
+}
 
 /* Compact rows that expand into the review sheet. */
 .review-list {
@@ -117,8 +148,41 @@
   border: 1px solid var(--color-fog, #333);
   background: var(--color-soot, #171717);
 }
+.review-row {
+  scroll-margin-top: 1rem;
+}
 .review-row[data-expanded] {
   border-color: #8b5cf6;
+}
+.review-row[data-attention] {
+  border-color: #f4212e;
+}
+.review-row[data-attention] .review-row-state {
+  border-color: #f4212e;
+  color: #ff8a92;
+}
+.review-row-summary:hover,
+.review-row-summary:focus-visible {
+  background: var(--color-ash, #222);
+}
+.review-row-summary:active {
+  background: #24182e;
+}
+/* Scheduled timeline: one heading per day. */
+.timeline-day {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-dust, #aaa);
+}
+.delivery-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: var(--color-dust, #aaa);
 }
 .review-row-summary {
   display: grid;
@@ -190,12 +254,15 @@
 /* The review sheet: preview beside the decision controls on wide screens. */
 .review-sheet {
   display: grid;
-  grid-template-columns: minmax(0, 24rem) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 29.25rem) minmax(0, 1fr);
   gap: 1.5rem;
   align-items: start;
+  /* Source URLs have no break points; without this they set the column width. */
+  overflow-wrap: anywhere;
 }
 .review-sheet-controls {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 0.75rem;
   min-width: 0;
 }
@@ -334,6 +401,11 @@
   border-color: #8b5cf6;
   color: #f0ece4;
 }
+.decision-buttons .decision-good:disabled {
+  border-color: #8b5cf6;
+  color: #c4b5fd;
+  cursor: default;
+}
 .decision-form {
   display: grid;
   gap: 0.6rem;
@@ -390,4 +462,169 @@
   .posting-review-intro a {
     display: none;
   }
+}
+/* Re-roll: regenerate a draft's caption, image or both around the same story. */
+.reroll-controls {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-fog, #333);
+}
+.reroll-controls > button {
+  justify-self: start;
+}
+.reroll-modes {
+  display: grid;
+  gap: 0.5rem;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.reroll-modes label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.reroll-modes small {
+  display: block;
+  color: var(--color-dust, #aaa);
+}
+.reroll-status {
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-left: 2px solid #8b5cf6;
+  background: var(--color-ash, #222);
+}
+
+/* Form controls in the review sheet, decisions and filters share one style. */
+.review-sheet-controls textarea,
+.review-sheet-controls select,
+.review-sheet-controls input:not([type='checkbox']):not([type='radio']),
+.decision-form textarea,
+.decision-form select,
+.posting-filters select,
+.posting-filters input[type='search'],
+.review-upload input {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0.6rem 0.7rem;
+  background: var(--color-void, #100b19);
+  border: 1px solid var(--color-fog, #51405f);
+  color: inherit;
+  font: inherit;
+}
+.review-upload input {
+  padding: 0.45rem;
+  font-size: 0.85rem;
+}
+.review-sheet-preview {
+  min-width: 0;
+}
+.review-sheet-controls p,
+.review-sheet-controls section,
+.review-sheet-preview .studio-note,
+.text-post-card p,
+.text-post-card li,
+.review-alternative p {
+  overflow-wrap: anywhere;
+}
+.text-post-card ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.posting-draft-meta {
+  flex-wrap: wrap;
+}
+.posting-draft-meta .production-badge {
+  overflow-wrap: anywhere;
+}
+.posting-card-buttons {
+  flex-wrap: wrap;
+}
+
+/* Tablets and narrow desktop windows: the controls column gets too thin beside the preview. */
+@media (max-width: 1100px) {
+  .review-sheet {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Phones: stack the sheet and give every control a 44px touch target. */
+@media (max-width: 760px) {
+  .posting-page button,
+  .posting-page .posting-navigation a,
+  .posting-page .posting-edit-link,
+  .posting-page summary,
+  .posting-page select,
+  .posting-page input:not([type='checkbox']):not([type='radio']):not([type='file']) {
+    min-height: 2.75rem;
+  }
+  .posting-page .posting-navigation a,
+  .posting-page .posting-edit-link {
+    display: flex;
+    align-items: center;
+  }
+  .posting-page summary {
+    padding-block: 0.75rem;
+  }
+  .posting-page input[type='checkbox'] {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .review-checklist label,
+  .posting-page label.studio-note {
+    min-height: 2.75rem;
+    align-items: center;
+  }
+  .review-thumbnails {
+    gap: 0.4rem;
+  }
+  .review-sheet .instagram-preview {
+    max-width: none;
+  }
+  .review-sheet-controls .posting-card-buttons > button,
+  .decision-form button[type='submit'] {
+    width: 100%;
+  }
+  .decision-buttons button {
+    flex: 1 1 auto;
+  }
+}
+
+/* Narrow phones: the date and state move under the text so the summary keeps its width. */
+@media (max-width: 600px) {
+  .review-row-summary {
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+    grid-template-areas:
+      'thumb main'
+      'thumb side';
+    align-items: start;
+    row-gap: 0.4rem;
+  }
+  .review-row-thumb {
+    grid-area: thumb;
+  }
+  .review-row-main {
+    grid-area: main;
+  }
+  .review-row-side {
+    grid-area: side;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.25rem 0.75rem;
+    white-space: normal;
+  }
+  .x-reply-field {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.review-sheet-controls label:has(> input[type='checkbox']) {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
 }

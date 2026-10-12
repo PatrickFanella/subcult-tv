@@ -25,7 +25,7 @@ tags:
 
 ## Active focus
 
-clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow and Kork. The Common House is an occasional development teaser. The confirmed starting cadence is up to two Patrick posts a day, one SUBCULT post a day and three to five CLPR posts a week (ceiling five). The timely lane covers left politics, mostly for Patrick, alongside products, independent culture, music and creative tools, archives and open-source software. Prepare 7–12 useful base drafts a week and leave room for timely material. A capacity is a ceiling; it never obliges anyone to write filler. Instagram and Patreon adapt material that is already ready.
+clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow and Kork. The Common House is an occasional development teaser. Since October 8 the cadence is at most three prepared Patrick posts a week (Patrick writes most of his own), one SUBCULT post a day and three to five CLPR posts a week (ceiling five). The timely lane covers left politics, mostly for Patrick, alongside products, independent culture, music and creative tools, archives and open-source software. Prepare 5–10 useful base drafts a week and leave room for timely material. A capacity is a ceiling; it never obliges anyone to write filler. Instagram and Patreon adapt material that is already ready.
 
 ## First full pilot week: October 5–11
 

@@ -64,6 +64,7 @@ func TestDecisionValidationNeedsNoDatabase(t *testing.T) {
 		`{"decision":"snoozed","snooze_until":"2020-01-01T00:00:00Z"}`: 400,
 		`{"decision":"approved_as_is"}`:                                400,
 		`{"decision":"rejected","reasons":["boring"]}`:                 503,
+		`{"decision":"favorited"}`:                                     503,
 	} {
 		if got := call("admin", "POST", "/plan%3A0/decision", body); got != want {
 			t.Fatalf("%s: %d", body, got)
@@ -80,6 +81,17 @@ func TestDecisionValidationNeedsNoDatabase(t *testing.T) {
 	}
 	if got := call("editor", "GET", "/decisions", ""); got != 403 {
 		t.Fatalf("non-admin read: %d", got)
+	}
+	h.PostingPreparationKey = strings.Repeat("k", 32)
+	routes.Get("/feedback", h.PreparationFeedback)
+	for auth, want := range map[string]int{"": 401, "Bearer wrong": 401, "Bearer " + h.PostingPreparationKey: 503} {
+		req := httptest.NewRequest("GET", "/feedback", nil)
+		req.Header.Set("Authorization", auth)
+		w := httptest.NewRecorder()
+		routes.ServeHTTP(w, req)
+		if w.Code != want {
+			t.Fatalf("feedback with %q: %d", auth, w.Code)
+		}
 	}
 }
 
@@ -107,12 +119,13 @@ func TestDraftDecisionsIntegration(t *testing.T) {
 	ig := postingDraft{ID: "decision-test-cm:0", Mode: "changemaker", Account: "patrick", Text: "Prepared caption", DueAt: due, ExpiresAt: due, Media: postingMedia{Image: &postingImage{SHA256: hex.EncodeToString(sum[:])}}}
 	x := postingDraft{ID: "decision-test-plan:0", Mode: "plan", Account: "clpr", Text: "An X post", DueAt: due}
 	writeSnapshot(t, root, []postingDraft{ig, x})
-	h := &Handler{DB: db, StudioRoot: root, SocialPosting: client, SocialAccounts: []string{"patrick"}, PostingMediaBaseURL: "https://example.test"}
+	h := &Handler{DB: db, StudioRoot: root, SocialPosting: client, SocialAccounts: []string{"patrick"}, PostingMediaBaseURL: "https://example.test", PostingPreparationKey: strings.Repeat("k", 32)}
 	routes := chi.NewRouter()
 	routes.Put("/{id}", h.SaveReviewDraft)
 	routes.Post("/{id}/approve", h.ApproveReviewDraft)
 	routes.Post("/{id}/decision", h.RecordDraftDecision)
 	routes.Get("/decisions", h.DraftDecisions)
+	routes.Get("/feedback", h.PreparationFeedback)
 	defer db.Exec(ctx, `DELETE FROM draft_decisions WHERE draft_id LIKE 'decision-test-%'`)
 	defer db.Exec(ctx, `DELETE FROM social_review_drafts WHERE draft_id LIKE 'decision-test-%'`)
 	defer db.Exec(ctx, `DELETE FROM social_schedules WHERE provider_post_id='decision-post'`)
@@ -156,9 +169,15 @@ func TestDraftDecisionsIntegration(t *testing.T) {
 	if w := call("POST", "/decision-test-cm%3A0/decision", bytes.NewBufferString(`{"decision":"snoozed","snooze_until":"`+time.Now().Add(time.Hour).Format(time.RFC3339)+`"}`), "application/json"); w.Code != 409 {
 		t.Fatal("submitted draft snoozed", w.Code)
 	}
+	if w := call("POST", "/decision-test-cm%3A0/decision", bytes.NewBufferString(`{"decision":"favorited","note":"More like this"}`), "application/json"); w.Code != 201 {
+		t.Fatal("submitted draft marked good", w.Code, w.Body.String())
+	}
+	if w := call("POST", "/decision-test-plan%3A0/decision", bytes.NewBufferString(`{"decision":"snoozed","snooze_until":"`+time.Now().Add(time.Hour).Format(time.RFC3339)+`"}`), "application/json"); w.Code != 201 {
+		t.Fatal("snooze", w.Code, w.Body.String())
+	}
 	w := call("GET", "/decisions?since="+start, &bytes.Buffer{}, "")
 	var decisions []draftDecision
-	if w.Code != 200 || json.Unmarshal(w.Body.Bytes(), &decisions) != nil || len(decisions) != 2 {
+	if w.Code != 200 || json.Unmarshal(w.Body.Bytes(), &decisions) != nil || len(decisions) != 4 {
 		t.Fatal(w.Code, w.Body.String())
 	}
 	rejected, approved := decisions[0], decisions[1]
@@ -170,5 +189,24 @@ func TestDraftDecisionsIntegration(t *testing.T) {
 	}
 	if !strings.Contains(string(approved.Checklist), "Check the mark") || !strings.Contains(string(approved.DiffStats), `"words_added"`) {
 		t.Fatalf("approval details: %s %s", approved.Checklist, approved.DiffStats)
+	}
+	if favorite := decisions[2]; favorite.Decision != "favorited" || favorite.Note != "More like this" || favorite.Platform != "instagram" {
+		t.Fatalf("favorite: %+v", favorite)
+	}
+	req := httptest.NewRequest("GET", "/feedback?since="+start, nil)
+	req.Header.Set("Authorization", "Bearer "+h.PostingPreparationKey)
+	fw := httptest.NewRecorder()
+	routes.ServeHTTP(fw, req)
+	var feedback struct {
+		Decisions []draftDecision  `json:"decisions"`
+		Rerolls   []feedbackReroll `json:"rerolls"`
+	}
+	if fw.Code != 200 || json.Unmarshal(fw.Body.Bytes(), &feedback) != nil || len(feedback.Decisions) != 3 || feedback.Rerolls == nil {
+		t.Fatal(fw.Code, fw.Body.String())
+	}
+	for _, d := range feedback.Decisions {
+		if d.Decision == "snoozed" || d.DecidedBy != "" {
+			t.Fatalf("feedback leaked a snooze or user: %+v", d)
+		}
 	}
 }

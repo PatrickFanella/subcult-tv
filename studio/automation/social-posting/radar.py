@@ -12,13 +12,14 @@ import subprocess
 from zoneinfo import ZoneInfo
 
 import runner
-from sources import changemaker_context, discovery_inputs
+from changes import changes_context
+from sources import discovery_inputs
 
 
 def candidates(cfg, now):
     found = discovery_inputs(cfg['discovery'], now)
     try:
-        changemaker = changemaker_context(cfg['switchyard'], now)
+        changemaker = changes_context(cfg, now, days=3)
     except Exception as error:
         changemaker = {'status':'unavailable','drafts':[]}
         found['warnings'].append('Changemaker unavailable: '+type(error).__name__)
@@ -44,6 +45,7 @@ def validate(result, context, cfg, now):
         raise ValueError('Too many timely drafts in one batch')
     sources = {item['id']:item for item in context['items']}
     seen = set()
+    threads = set()
     slots = {}
     weekly_counts = {}
     for slot in context.get('prepared_slots', []):
@@ -59,6 +61,11 @@ def validate(result, context, cfg, now):
             raise ValueError('Timely draft references an uncollected source')
         if not draft['text'].strip() or len(draft['text']) > 280 or 'git.subcult.tv' in draft['text']:
             raise ValueError('Invalid public timely copy')
+        runner.validate_replies(draft)
+        if draft.get('replies'):
+            if draft['account'] in threads:
+                raise ValueError('Buffer allows one scheduled thread per X account')
+            threads.add(draft['account'])
         due = datetime.fromisoformat(draft['due_at'])
         expiry = datetime.fromisoformat(draft['expires_at'])
         if due.tzinfo is None or expiry.tzinfo is None or not now < due <= expiry <= now+timedelta(hours=24):
@@ -120,6 +127,7 @@ def execute(cfg):
             context['media_library'] = runner.media.context(cfg)
             context['posting_guidance'] = (runner.paths.root(cfg)/cfg['editorial_guide']).read_text()
             context['claims_register'] = claims.read_text()
+            context['owner_feedback'] = runner.feedback.owner_feedback(Path(cfg['state']), ('x', 'bluesky'), 30)
             context['editorial_style'] = (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()
             context['weekly_plan'] = weekly.read_text() if weekly.exists() else 'No current-week plan.'
             timely_folder = runner.paths.drafts(cfg)/'Timely Drafts'
@@ -134,7 +142,7 @@ def execute(cfg):
             runner.atomic_write(directory/'sources.json',json.dumps(context,indent=2)+'\n')
             prompt=(runner.HERE/'radar-prompt.md').read_text()+'\n\n'+json.dumps({'now':now.isoformat(),
                 'timezone':cfg['timezone'],'channels':cfg['channels'],'organization_id':cfg['organization_id'],
-                'projects':cfg['projects'],'cadence':cfg['cadence'],'context':context})
+                'cadence':cfg['cadence'],'context':context})
             runner.atomic_write(directory/'request.txt',prompt)
             command = runner.codex_command(cfg,directory)
             command[command.index('--output-schema')+1] = str(runner.HERE/'radar.schema.json')
@@ -153,7 +161,7 @@ def execute(cfg):
             originals=[draft.get('text') for draft in result['drafts']]
             if result['drafts'] and cfg.get('polish', True):
                 import craft
-                craft.polish_short(cfg, result['drafts'], directory)
+                craft.polish_short(cfg, result['drafts'], directory, owner=context['owner_feedback'])
             try:
                 validate(result,context,cfg,now)
             except ValueError:

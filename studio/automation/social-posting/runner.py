@@ -14,16 +14,16 @@ import sqlite3
 import subprocess
 import tempfile
 from zoneinfo import ZoneInfo
-from sources import changemaker_context
+from changes import changes_context
 import paths
 import media
 import bluesky
+import feedback
 
 HERE = Path(__file__).resolve().parent
 BEGIN = '<!-- social-posting-runner:begin -->'
 END = '<!-- social-posting-runner:end -->'
 BUFFER_TOOLS = ['get_account', 'list_channels', 'get_channel', 'list_posts']
-SP_TOOLS = ['get_projects', 'get_tasks', 'get_task']
 
 
 def digest(value: str) -> str:
@@ -80,7 +80,7 @@ def verify_evidence(events: list[dict], cfg: dict) -> dict:
     calls = [e['item'] for e in events if e.get('type') == 'item.completed'
              and e.get('item', {}).get('type') == 'mcp_tool_call']
     for call in calls:
-        allowed = BUFFER_TOOLS if call['server'] == 'buffer' else SP_TOOLS if call['server'] == 'super-productivity' else []
+        allowed = BUFFER_TOOLS if call['server'] == 'buffer' else []
         if call['tool'] not in allowed:
             raise ValueError('Unexpected provider tool: '+call['server']+'/'+call['tool'])
     successful = [c for c in calls if c.get('status') == 'completed' and not c.get('error')
@@ -99,10 +99,6 @@ def verify_evidence(events: list[dict], cfg: dict) -> dict:
             raise ValueError('Expected Buffer channel missing, disconnected or locked')
     if not data('list_posts'):
         raise ValueError('Buffer post inspection was not confirmed')
-    for project in cfg['projects']:
-        if not any(c['server'] == 'super-productivity' and c['tool'] == 'get_tasks'
-                   and c.get('arguments', {}).get('projectId') == project for c in successful):
-            raise ValueError('Live task inspection missing for project '+project)
     return {'organization_id': cfg['organization_id'], 'channel_ids': sorted(cfg['channels'].values()),
             'successful_read_calls': len(successful)}
 
@@ -147,12 +143,8 @@ def codex_command(cfg: dict, directory: Path) -> list[str]:
         'model_reasoning_effort': 'medium',
         'mcp_servers.buffer.url': 'https://mcp.buffer.com/mcp',
         'mcp_servers.buffer.required': True, 'mcp_servers.buffer.enabled_tools': BUFFER_TOOLS,
-        'mcp_servers.super-productivity.command': cfg['sp_command'],
-        'mcp_servers.super-productivity.required': True,
-        'mcp_servers.super-productivity.enabled_tools': SP_TOOLS,
-        'mcp_servers.super-productivity.env.SP_MCP_DATA_DIR': cfg['sp_data'],
     }
-    for server, names in [('buffer', BUFFER_TOOLS), ('super-productivity', SP_TOOLS)]:
+    for server, names in [('buffer', BUFFER_TOOLS)]:
         for name in names:
             settings[f'mcp_servers.{server}.tools.{name}.approval_mode'] = 'approve'
     for key, value in settings.items():
@@ -160,11 +152,25 @@ def codex_command(cfg: dict, directory: Path) -> list[str]:
     return args+['-']
 
 
+MAX_REPLIES = 3
+
+
+def validate_replies(draft: dict) -> None:
+    """Self-replies post under the tweet as one thread; each is a full tweet of its own."""
+    replies = draft.get('replies', [])
+    if not isinstance(replies, list) or len(replies) > MAX_REPLIES:
+        raise ValueError('Too many X replies')
+    for reply in replies:
+        if not isinstance(reply, str) or not reply.strip() or len(reply) > 280 or 'git.subcult.tv' in reply:
+            raise ValueError('Invalid X reply copy')
+
+
 def validate_result(result: dict, cfg: dict, week: str, bank: str, prepared_slots: list | None = None, now: datetime | None = None) -> None:
     if result['week'] != week or len(result['drafts']) > sum(lane['weekly_cap'] for lane in cfg['cadence'].values()):
         raise ValueError('Unexpected week or draft count')
     candidate_ids = set(re.findall(r'\| ([A-Z]+-\d+) \|', bank))
     seen = set()
+    threads = set()
     counts = {}
     daily_counts = {}
     reserved = {}
@@ -186,6 +192,11 @@ def validate_result(result: dict, cfg: dict, week: str, bank: str, prepared_slot
         key = (draft['account'], draft['due_at'])
         if key in seen or not draft['text'].strip() or len(draft['text']) > 280:
             raise ValueError('Duplicate slot or oversized/empty X draft')
+        validate_replies(draft)
+        if draft.get('replies'):
+            if draft['account'] in threads:
+                raise ValueError('Buffer allows one scheduled thread per X account')
+            threads.add(draft['account'])
         seen.add(key)
         due = datetime.fromisoformat(draft['due_at'])
         if due.tzinfo is None or due.astimezone(ZoneInfo(cfg['timezone'])).strftime('%G-W%V') != week:
@@ -223,6 +234,7 @@ def render_result(result: dict, run_id: str, mode: str) -> str:
     for draft in result['drafts']:
         lines += [f'#### {draft["candidate_id"]} / {draft["account"]}', '',
                   f'Intended time: {draft["due_at"]}. State: `draft`.', '', draft['text'], '',
+                  *[f'Reply {n}: {reply}' for n, reply in enumerate(draft.get('replies', []), 1)],
                   'Evidence boundary: '+draft['evidence'], '', 'Asset/check still needed: '+draft['next_check'], '']
         lines += media.render_choice(draft.get('media'))
     lines += ['### Open checks', '']+['- '+x for x in result['open_checks']]
@@ -260,12 +272,13 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
             context = source_context(cfg, directory)
             if mode == 'plan':
                 context['existing_weekly_note'] = original
+                context['owner_feedback'] = feedback.owner_feedback(Path(cfg['state']), ('x', 'bluesky'), 30)
                 has_slots = database.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='timely_slots'").fetchone()
                 context['prepared_slots'] = [{'account':account, 'due_at':due}
                     for account,due,expiry in database.execute('SELECT account,due_at,expires_at FROM timely_slots')
                     if datetime.fromisoformat(expiry) > now] if has_slots else []
             try:
-                context['changemaker'] = changemaker_context(cfg['switchyard'], now)
+                context['changemaker'] = changes_context(cfg, now, days=3)
             except Exception as error:
                 context['changemaker'] = {'status':'unavailable', 'reason':type(error).__name__, 'drafts':[]}
             context['recent_weekly_notes'] = {p.name: p.read_text()[:6000]
@@ -279,7 +292,7 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
                     for p in sorted((folder/'Timely Drafts').glob('*.md'))[-21:]
                     if date.fromisoformat(p.name[:10]).strftime('%G-W%V') == week}
             prompt = (HERE/'prompt.md').read_text()+'\n\n'+json.dumps({'mode':mode,'week':week,'now':now.isoformat(),
-                'organization_id':cfg['organization_id'],'channels':cfg['channels'],'projects':cfg['projects'],
+                'organization_id':cfg['organization_id'],'channels':cfg['channels'],
                 'cadence':cfg['cadence'], 'context':context})
             atomic_write(directory/'request.txt', prompt)
             environment = dict(os.environ)
@@ -297,7 +310,7 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
             originals = [draft.get('text') for draft in result['drafts']]
             if mode == 'plan' and result['drafts'] and cfg.get('polish', True):
                 import craft
-                craft.polish_short(cfg, result['drafts'], directory)
+                craft.polish_short(cfg, result['drafts'], directory, owner=context['owner_feedback'])
             try:
                 validate_result(result, cfg, week, bank, context.get('prepared_slots', []), now if mode == 'plan' else None)
             except ValueError:

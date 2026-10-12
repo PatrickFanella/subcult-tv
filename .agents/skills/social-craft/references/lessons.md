@@ -25,6 +25,9 @@ These findings come from rebuilding the SUBCULT social drafting system on Octobe
   - "The leaderboard managed to cause trouble after leaving."
   - "Dialog open. Undertow's editor shortcuts sit this one out."
   - "A listener taps your Kork tip button, and it opens your own Cash App."
+- **Marketing, not documentation (October 8).** Drafts that led with caveats read like developer docs. One told readers Undertow needs a capable laptop. The owner asked for marketing posts: lead with what the reader gets, say the maturity limit once near the end, and leave device requirements and other fine print to the product page. Patrick writes most of his own posts; prepared Patrick drafts are at most three a week and personal.
+- **Daily posts sell the product (October 11).** The owner rejected an accurate Undertow caption about a 360-pixel menu inside a 266-pixel panel and approved "Your track is finished. Undertow turns it into a visualizer video." Small fixes and bugs are skipped unless the story is funny or surprising on its own; a change appears only as what the reader now gets. When a day's changes give a stranger nothing to want, the daily job prepares a showcase of the live product spotlighted least recently (`daily_showcase` in `config.json`, off when a weekly or showcase post ran within its gap).
+- **Select from the pull requests, not from a changelog (October 11).** The Changemaker digest's "What people notice" section listed every user-visible change as a repair, so every writer downstream started from bugs. Studio now collects merged pull requests itself and the brief selects once: keep a change only when it improves something a user actually does with the product; a repair qualifies only when its story is interesting on its own. The same test applies to the website Development log.
 - **Recurring failures to reject:**
   - "A useful…" verdict openings.
   - Two-fragment headlines.
@@ -62,4 +65,17 @@ These findings come from rebuilding the SUBCULT social drafting system on Octobe
 - **Source IDs.** A caption's `source_ids` must be collected evidence IDs. Claims-register IDs (`C-…`) made the October 5 09:20 UTC run fall back to single-pass.
 - **Retries.** Retry a stage only on a nonzero exit or `turn.failed`. Model capacity errors do happen.
 - **Slots.** Posting slots are 11:30 and 17:30 Chicago, at least 48 hours ahead, with one draft per slot (`taken_slots`).
-- **Owner feedback.** It is read from `state/owner-feedback.json`. The review dashboard records reject, revise and snooze decisions, and nothing pulls them into that file automatically yet.
+- **Owner feedback.** `feedback.py` pulls review decisions (rejections, revision requests, edited approvals, re-roll notes and Good post marks) into `state/owner-feedback.json` hourly. The Instagram stages, the weekly and timely prompts and the short editor read it. `tune.py` proposes prompt changes from new feedback as a Saturday pull request; review its diff and compare it blind on saved fixtures before deploying.
+
+## X media and link placement
+
+Use the dated evidence in Studio's research and Posting Best Practices guide. Text and images both work; an image is useful when it shows the work or makes the offer clearer. Prefer original artwork for launches/supporter campaigns and real captures for demonstrations; personal observations and political quotes can stay text-only. Lower engagement on link posts does not prove a current blanket penalty or that first-reply links improve traffic or conversion. Test inline versus first self-reply placement by account and goal across comparable posts, holding other variables steady. Measure visits and supporter actions where available alongside impressions and engagement; missing analytics stay unknown.
+
+X drafts carry a `replies` list: up to three self-replies that Buffer posts under the tweet as one thread (`metadata.twitter.thread`, checked against Buffer's API on October 9, 2026). Most posts need none. The first tweet must stand alone; a reply carries the link, one concrete detail or the next step. Moving a required link into the first reply is a placement test, named in next_check, with the link kept in exactly one place. Buffer's plan allows one scheduled thread per X account at a time, so the runner rejects a second threaded draft for the same account in one run. The short editor rewrites the first tweet only. Replies stay drafts until the owner approves the whole thread. Keep X and Bluesky guidance separate.
+
+## Lessons from prompt tuning
+
+Written by `tune.py` from the owner's review feedback. Each bullet is dated with the newest feedback it used.
+
+- **2026-10-08.** The owner's approved Instagram edits for Undertow, Subcult OS and Rekolekt open on a maker's note or a concrete product behavior, not on a stranger's problem. A maker or product-name opening is fine when the same sentence names something concrete.
+- **2026-10-08.** The owner cuts closing asides and repeated status paragraphs. A caption ends when the last necessary detail is told, and each required maturity limit appears once.

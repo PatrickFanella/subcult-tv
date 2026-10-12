@@ -1,4 +1,5 @@
 import { render, screen, fireEvent, cleanup } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import SocialDelivery from '@/pages/admin/SocialDelivery';
 import { getSocialDelivery, approveSocialSchedule } from '@/lib/api';
@@ -70,9 +71,16 @@ describe('Instagram approval', () => {
       approval_mode: 'manual',
       minimum_lead_hours: 24,
     });
-    render(<SocialDelivery draft={null} revision={0} />);
+    render(
+      <MemoryRouter>
+        <SocialDelivery draft={null} revision={0} />
+      </MemoryRouter>,
+    );
     await screen.findByText('Scheduled');
-    expect(screen.getByText('No published link')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Edit or reschedule' })).toHaveAttribute(
+      'href',
+      '/admin/posts/delivery?post=p1',
+    );
     expect(screen.queryByText('View Instagram post ↗')).not.toBeInTheDocument();
   });
 });

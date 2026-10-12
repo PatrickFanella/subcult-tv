@@ -40,14 +40,21 @@ export default function AdminLogin() {
           <div className="p-6">
             {/* Header */}
             <div className="text-center mb-8">
-              <img src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004" className="admin-login-mark" alt="" />
+              <img
+                src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004"
+                className="admin-login-mark"
+                alt=""
+              />
               <h1 className="text-3xl font-display text-glow tracking-widest mb-2">SUBCULT</h1>
               <p className="font-mono text-xs text-dust">Admin sign-in</p>
             </div>
 
             {/* Error */}
             {error && (
-              <div className="mb-4 p-3 bg-ash border border-signal font-mono text-xs text-signal">
+              <div
+                role="alert"
+                className="mb-4 p-3 bg-ash border border-signal font-mono text-xs text-signal"
+              >
                 {error}
               </div>
             )}
@@ -59,17 +66,20 @@ export default function AdminLogin() {
                   htmlFor={usernameInputId}
                   className="block font-mono text-xs text-bone uppercase mb-1"
                 >
-                  &gt; IDENT
+                  Username
                 </label>
                 <input
                   type="text"
                   id={usernameInputId}
+                  name="username"
+                  autoComplete="username"
+                  autoCapitalize="none"
+                  spellCheck={false}
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   required
                   autoFocus
                   className={inputClass}
-                  placeholder="username"
                 />
               </div>
 
@@ -78,16 +88,17 @@ export default function AdminLogin() {
                   htmlFor={passwordInputId}
                   className="block font-mono text-xs text-bone uppercase mb-1"
                 >
-                  &gt; PASSKEY
+                  Password
                 </label>
                 <input
                   type="password"
                   id={passwordInputId}
+                  name="password"
+                  autoComplete="current-password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   className={inputClass}
-                  placeholder="••••••••"
                 />
               </div>
 
@@ -111,11 +122,6 @@ export default function AdminLogin() {
               </a>
             </div>
           </div>
-        </div>
-
-        {/* Footer blink */}
-        <div className="mt-4 text-center font-mono text-xs text-fog">
-          <span className="cursor-blink">&gt; awaiting input</span>
         </div>
       </div>
     </div>

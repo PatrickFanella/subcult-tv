@@ -15,10 +15,6 @@
     "upstream": "http://navidrome:4533",
     "theme": "navidrome"
   },
-  "rss.subcult.tv": {
-    "upstream": "http://FRESHRSS_HOST:8082",
-    "theme": "freshrss"
-  },
   "qbit.subcult.tv": {
     "upstream": "http://gluetun:8080",
     "theme": "qbittorrent"

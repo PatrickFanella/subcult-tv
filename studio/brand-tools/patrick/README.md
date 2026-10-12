@@ -7,6 +7,7 @@ Selected by the owner October 2, 2026. Patch / routed signal replaces the former
 - [Brand board](assets/brand-board.png)
 - [Design and asset guide](GUIDE.md)
 - [Tokens and measured contrast](tokens.json)
+- [Portrait library: earlier picks and all three edit sets](portraits/index.html)
 - [Live-site observations](source-observation.json)
 - [Asset provenance](asset-manifest.json)
 - [Selected production pack](../../brands/patrick__eff/GUIDE.md)

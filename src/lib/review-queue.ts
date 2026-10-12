@@ -1,5 +1,5 @@
 // Pure helpers for the private social review queue. No network access here.
-import type { DraftDecision, PostingDraft, PostingPlatform } from './api';
+import type { BufferHistoryPost, DraftDecision, PostingDraft, PostingPlatform } from './api';
 
 /** Older snapshots lack `platform`: Changemaker prepares Instagram, plan/radar prepare X. */
 export function draftPlatform(draft: Pick<PostingDraft, 'platform' | 'mode'>): PostingPlatform {
@@ -51,6 +51,11 @@ export function laneLabel(mode: string) {
   return mode === 'changemaker' ? 'Changemaker' : mode === 'radar' ? 'Timely' : 'Weekly';
 }
 
+/** What a re-roll regenerates, for messages: "caption", "image" or "caption and image". */
+export function rerollLabel(mode: 'text' | 'image' | 'both') {
+  return mode === 'text' ? 'caption' : mode === 'image' ? 'image' : 'caption and image';
+}
+
 export function firstLine(text: string, limit = 90) {
   const line = text.trim().split('\n')[0] || '';
   return line.length > limit ? `${line.slice(0, limit - 1).trimEnd()}…` : line;
@@ -58,7 +63,6 @@ export function firstLine(text: string, limit = 90) {
 
 const HOUR = 3600000;
 const DAY = 24 * HOUR;
-export const MIN_LEAD_MS = DAY;
 export const MAX_LEAD_MS = 90 * DAY;
 
 function zoneParts(at: number, timeZone: string) {
@@ -107,7 +111,7 @@ export interface Slot {
 
 /**
  * The account's cadence times ("09:11") over the next `days`, in the
- * configured time zone, limited to the 24-hour to 90-day approval window.
+ * configured time zone, limited to the future 90-day approval window.
  */
 export function cadenceSlots(
   times: string[],
@@ -131,7 +135,7 @@ export function cadenceSlots(
         Number(match[2]),
         timeZone,
       );
-      if (at < now + MIN_LEAD_MS || at > now + MAX_LEAD_MS) continue;
+      if (at <= now || at > now + MAX_LEAD_MS) continue;
       slots.push({ at, taken: taken.some((t) => Math.abs(t - at) < HOUR) });
     }
   }
@@ -146,7 +150,7 @@ export function defaultSlot(slots: Slot[], proposed: number) {
 
 export function leadProblem(at: number, now: number) {
   if (Number.isNaN(at)) return 'Choose a publish time.';
-  if (at < now + MIN_LEAD_MS) return 'Choose a time at least 24 hours from now.';
+  if (at <= now) return 'Choose a publish time in the future.';
   if (at > now + MAX_LEAD_MS) return 'Choose a time within 90 days.';
   return '';
 }
@@ -222,11 +226,19 @@ export function scoreSummary(scores: Partial<Record<string, number>> | undefined
 
 export type HiddenReason = '' | 'rejected' | 'revision_requested' | 'snoozed' | 'superseded';
 
-/** Latest decision per draft, from decisions returned oldest first. */
+/**
+ * Latest decision per draft, from decisions returned oldest first. A "good post"
+ * mark is feedback only and never changes where a draft sits in the queue.
+ */
 export function latestDecisions(decisions: DraftDecision[]) {
   const latest = new Map<string, DraftDecision>();
-  for (const d of decisions) latest.set(d.draft_id, d);
+  for (const d of decisions) if (d.decision !== 'favorited') latest.set(d.draft_id, d);
   return latest;
+}
+
+/** Drafts the owner marked as particularly good. */
+export function favoritedDrafts(decisions: DraftDecision[]) {
+  return new Set(decisions.filter((d) => d.decision === 'favorited').map((d) => d.draft_id));
 }
 
 /** Why a draft is out of the active queue: rejected, awaiting revision, snoozed or replaced. */
@@ -245,4 +257,106 @@ export function hiddenReason(
     return new Date(decision.snooze_until).valueOf() > now ? 'snoozed' : '';
   }
   return '';
+}
+
+/** Instagram shows feed images between 4:5 portrait and 1.91:1 landscape, cropping anything outside. */
+export const FEED_MIN_RATIO = 4 / 5;
+export const FEED_MAX_RATIO = 1.91;
+
+export function feedRatio(width: number, height: number): number {
+  if (!width || !height) return FEED_MIN_RATIO;
+  return Math.min(FEED_MAX_RATIO, Math.max(FEED_MIN_RATIO, width / height));
+}
+
+const METRIC_LABELS: Record<string, string> = {
+  impressions: 'views',
+  reactions: 'likes',
+  reposts: 'reposts',
+  comments: 'replies',
+  clicks: 'clicks',
+};
+
+/** "473 views · 5 likes · 2.7% engagement" parts from Buffer's daily post metrics. */
+export function metricSummary(post: Pick<BufferHistoryPost, 'metrics'>) {
+  const parts: string[] = [];
+  for (const m of post.metrics ?? []) {
+    if (m.type === 'engagementRate') {
+      if (m.value) parts.push(`${Number(m.value).toFixed(1)}% engagement`);
+    } else if (METRIC_LABELS[m.type]) {
+      parts.push(`${Number(m.value).toLocaleString()} ${METRIC_LABELS[m.type]}`);
+    }
+  }
+  return parts;
+}
+
+const LANE_NAMES: Record<string, string> = {
+  plan: 'Weekly X plan',
+  radar: 'Timely X check',
+  review: 'Weekly delivery review',
+  changemaker: 'Instagram draft from Changemaker',
+};
+
+/** What a preparation lane does, in words. */
+export function laneName(mode: string) {
+  return LANE_NAMES[mode] || mode;
+}
+
+const RUN_STATUS: Record<string, string> = {
+  success: 'Drafts prepared',
+  no_fresh_sources: 'Nothing new to draft',
+};
+
+export function runStatusLabel(status: string) {
+  return RUN_STATUS[status] || status.replaceAll('_', ' ');
+}
+
+const WEEKDAYS: Record<string, string> = {
+  Mon: 'Mondays',
+  Tue: 'Tuesdays',
+  Wed: 'Wednesdays',
+  Thu: 'Thursdays',
+  Fri: 'Fridays',
+  Sat: 'Saturdays',
+  Sun: 'Sundays',
+};
+
+/**
+ * A systemd calendar line such as "Mon *-*-* 10:00:00 America/Chicago" as
+ * "Mondays at 10:00 AM", in the browser's time zone. Unrecognized lines are
+ * returned unchanged.
+ */
+export function describeCalendar(spec: string, now = Date.now()) {
+  const match = /^(?:([A-Z][a-z]{2}) )?\*-\*-\* (\d{1,2}):(\d{2})(?::\d{2})? ?(\S+)?$/.exec(
+    spec.trim(),
+  );
+  if (!match) return spec;
+  const [, day, hour, minute, zone = Intl.DateTimeFormat().resolvedOptions().timeZone] = match;
+  if (day && !WEEKDAYS[day]) return spec;
+  let at: number;
+  try {
+    const today = new Intl.DateTimeFormat('en-CA', { timeZone: zone }).format(new Date(now));
+    const [y, m, d] = today.split('-').map(Number);
+    at = zonedTime(y, m, d, Number(hour), Number(minute), zone);
+  } catch {
+    return spec;
+  }
+  const time = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit' }).format(
+    new Date(at),
+  );
+  return `${day ? WEEKDAYS[day] : 'Every day'} at ${time}`;
+}
+
+/** "Oct 8, 1:57 PM · Weekly X plan" from a run ID like "20261008T185712.659892Z-plan". */
+export function runLabel(runId: string) {
+  const match = /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})(?:\.\d+)?Z-(\w+)$/.exec(runId);
+  if (!match) return runId;
+  const [, y, mo, d, h, mi, s, mode] = match;
+  const at = new Date(Date.UTC(+y, +mo - 1, +d, +h, +mi, +s));
+  const when = new Intl.DateTimeFormat('en-US', {
+    month: 'short',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+  }).format(at);
+  return `${when} · ${laneName(mode)}`;
 }

@@ -35,7 +35,7 @@ Patrick and SUBCULT can share a source, each with its own final copy. The CLPR a
 
 ## Weekly cadence
 
-The October 1 direction raised volume and added [[Timely Posting Plan]]. The user confirmed these starting capacities: up to two Patrick posts a day, one SUBCULT post a day, and a target of three to five CLPR posts a week with a hard ceiling of five. Weekly preparation aims for 7–12 strong base drafts and leaves capacity for discoveries and current conversations. This replaces the earlier three-post total as the preparation target; the anchor slots in the table below are still useful starting points. Adjust capacities after observing results. The timely lane also watches left politics, mostly for Patrick commentary, alongside the seven products, independent culture, music and creative tools, archives and open-source software. No slot authorizes publication.
+The October 1 direction raised volume and added [[Timely Posting Plan]]. The user confirmed these starting capacities: up to two Patrick posts a day, one SUBCULT post a day, and a target of three to five CLPR posts a week with a hard ceiling of five. Weekly preparation aims for 7–12 strong base drafts and leaves capacity for discoveries and current conversations. This replaces the earlier three-post total as the preparation target; the anchor slots in the table below are still useful starting points. Adjust capacities after observing results. On October 8 the user reduced Patrick to at most three prepared posts a week, because he writes most of his own, and asked for marketing posts rather than technical notes; weekly preparation now aims for 5–10 drafts. The timely lane also watches left politics, mostly for Patrick commentary, alongside the seven products, independent culture, music and creative tools, archives and open-source software. No slot authorizes publication.
 
 All times are America/Chicago. Patreon preparation and Sunday review fit the existing Review Cadence Calendar. They are editorial windows; no task recurrence was installed for them. Publication times are fixed starting points for a six-week pilot and make no claim about optimal reach.
 
@@ -47,6 +47,7 @@ All times are America/Chicago. Patreon preparation and Sunday review fit the exi
 | Thursday | 09:22 | SUBCULT: one distinct studio proof post | Standard |
 | Thursday | 13:10 | Patreon: field note from the same work | Weekly preparation target; schedule only when ready |
 | Friday | 09:11 | Patrick: lighter interpretation, observation, or question | Standard |
+| Friday | 17:30 | SUBCULT Instagram: weekly recap ending with one call to action (Patreon, newsletter or support page, rotating) | Prepared Wednesday by `weekly.py`; approve like any draft |
 | Saturday | No required slot | Adapt the strongest source to one Instagram post | Optional; skip when no suitable media is ready |
 | Sunday | 16:00 | Review results, archive assets, choose keep/change/stop | 20-minute review |
 

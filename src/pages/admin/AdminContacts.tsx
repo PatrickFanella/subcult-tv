@@ -6,7 +6,13 @@ import {
   type APIContact,
   type PaginatedResponse,
 } from '@/lib/api';
-import { AdminHeader, AdminError, AdminPagination } from '@/components/admin/crud';
+import {
+  AdminCount,
+  AdminEmpty,
+  AdminError,
+  AdminHeader,
+  AdminPagination,
+} from '@/components/admin/crud';
 
 export default function AdminContacts() {
   const [contactsPage, setContactsPage] = useState<PaginatedResponse<APIContact> | null>(null);
@@ -42,73 +48,76 @@ export default function AdminContacts() {
     }
   };
 
+  const totalPages = Math.max(contactsPage?.total_pages ?? 1, 1);
+  const unread = contactsPage?.data.filter((c) => !c.read).length ?? 0;
   return (
     <div>
-      <AdminHeader overline="CONTACT FORM" title="Contact messages" />
+      <AdminHeader
+        overline="Audience"
+        title="Contact messages"
+        description="Messages sent through the public contact form. Reply from your own mail client; this page only tracks what you have read."
+      />
 
       {contactsPage && (
-        <p className="font-mono text-xs text-dust mb-4">
-          {contactsPage.total} total · page {contactsPage.page}/{contactsPage.total_pages}
-        </p>
+        <AdminCount>
+          {contactsPage.total} {contactsPage.total === 1 ? 'message' : 'messages'}
+          {unread > 0 ? ` · ${unread} unread on this page` : ''}
+          {totalPages > 1 ? ` · page ${contactsPage.page} of ${totalPages}` : ''}
+        </AdminCount>
       )}
 
       <AdminError error={error} />
 
-      <div className="space-y-3">
+      <div className="contact-list">
         {contactsPage?.data.map((c) => (
-          <div
-            key={c.id}
-            className={`bg-soot border p-4 transition-colors ${
-              c.read ? 'border-fog/50' : 'border-signal'
-            }`}
-          >
-            <div className="flex items-start justify-between gap-4">
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-3 mb-2">
-                  {!c.read && <span className="w-2 h-2 rounded-full bg-signal shrink-0" />}
-                  <span className="font-mono text-sm text-chalk font-medium">{c.name}</span>
-                  <span className="font-mono text-xs text-dust">{c.email}</span>
-                </div>
-                {c.subject && (
-                  <div className="font-mono text-xs text-bone mb-2">RE: {c.subject}</div>
-                )}
-                <p className="text-sm text-chalk/80 whitespace-pre-wrap leading-relaxed">
-                  {c.message}
-                </p>
-                <div className="mt-2 font-mono text-xs text-dust">
-                  {new Date(c.created_at).toLocaleDateString('en-US', {
+          <article key={c.id} className="contact-card" data-unread={!c.read || undefined}>
+            <div className="contact-card-body">
+              <div className="contact-card-head">
+                {!c.read && <span className="contact-unread-dot" aria-label="Unread" />}
+                <strong>{c.name}</strong>
+                <a href={`mailto:${c.email}`} className="contact-email">
+                  {c.email}
+                </a>
+                <time dateTime={c.created_at} className="contact-date">
+                  {new Date(c.created_at).toLocaleString(undefined, {
                     year: 'numeric',
                     month: 'short',
                     day: 'numeric',
-                    hour: '2-digit',
+                    hour: 'numeric',
                     minute: '2-digit',
                   })}
-                </div>
+                </time>
               </div>
-              <div className="flex gap-2 shrink-0">
-                <button
-                  onClick={() => handleToggleRead(c.id)}
-                  className="font-mono text-xs text-cyan hover:text-glow cursor-pointer"
-                >
-                  {c.read ? 'UNREAD' : 'READ'}
-                </button>
-                <button
-                  onClick={() => handleDelete(c.id)}
-                  className="font-mono text-xs text-signal hover:text-glow cursor-pointer"
-                >
-                  DEL
-                </button>
-              </div>
+              {c.subject && <div className="contact-subject">{c.subject}</div>}
+              <p className="contact-message">{c.message}</p>
             </div>
-          </div>
+            <div className="contact-card-actions">
+              <button type="button" className="admin-button" onClick={() => handleToggleRead(c.id)}>
+                {c.read ? 'Mark unread' : 'Mark read'}
+              </button>
+              <a
+                className="admin-button"
+                href={`mailto:${c.email}?subject=Re: ${encodeURIComponent(c.subject || 'your message')}`}
+              >
+                Reply
+              </a>
+              <button
+                type="button"
+                className="admin-button admin-button-danger"
+                onClick={() => handleDelete(c.id)}
+              >
+                Delete
+              </button>
+            </div>
+          </article>
         ))}
 
         {contactsPage?.data.length === 0 && (
-          <div className="py-12 text-center font-mono text-sm text-bone">No messages.</div>
+          <AdminEmpty>No messages yet. New contact-form submissions appear here.</AdminEmpty>
         )}
       </div>
 
-      <AdminPagination page={page} totalPages={contactsPage?.total_pages ?? 1} onChange={setPage} />
+      <AdminPagination page={page} totalPages={totalPages} onChange={setPage} />
     </div>
   );
 }

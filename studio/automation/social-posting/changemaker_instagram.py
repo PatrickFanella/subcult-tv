@@ -10,8 +10,10 @@ from pathlib import Path
 import re
 import subprocess
 
-from sources import changemaker_context, complete_changemaker_digest
+from changes import changes_context
+from sources import complete_changemaker_digest
 from runner import atomic_write
+from feedback import owner_feedback
 
 HERE = Path(__file__).resolve().parent
 
@@ -69,25 +71,56 @@ def recent_captions(state, now, days=14):
     return texts[:30]
 
 
-def owner_feedback(state, limit=20):
-    """Recent owner decisions pulled from the review dashboard, newest first.
+def recent_products(state, now, days=14):
+    """Products spotlighted by prepared Instagram drafts in the last `days`, newest first."""
+    products = []
+    for path in sorted((state/'runs').glob('*-changemaker/result.json'), reverse=True)[:40]:
+        if path.is_symlink() or path.stat().st_size > 2_000_000:
+            continue
+        if (now.timestamp() - path.stat().st_mtime) > days*86400:
+            continue
+        try:
+            for draft in json.loads(path.read_text()).get('drafts', []):
+                product = (draft.get('craft') or {}).get('product') or ''
+                if product:
+                    products.append(product)
+        except (ValueError, OSError, AttributeError):
+            continue
+    return products
 
-    `owner-feedback.json` holds a list of decision records (decision, original_text,
-    final_text, reason codes, note). Edited approvals and rejections teach the drafting
-    stages what the owner changes; the file is optional.
+
+def recent_showcase(state, now, days):
+    """True when a showcase or weekly post was prepared in the last `days`."""
+    for path in (state/'runs').glob('*-changemaker/receipt.json'):
+        if path.is_symlink() or path.stat().st_size > 64000:
+            continue
+        try:
+            receipt = json.loads(path.read_text())
+            if receipt.get('kind') in ('showcase', 'weekly') and receipt.get('status') == 'success' \
+                    and (now - datetime.fromisoformat(receipt['checked_at'])).total_seconds() < days*86400:
+                return True
+        except (ValueError, OSError, KeyError, TypeError):
+            continue
+    return False
+
+
+def showcase_product(cfg, state, now):
+    """The live product to show when the day's changes gave a stranger nothing to want.
+
+    Returns None when the fallback is off or a showcase or weekly post ran within
+    `daily_showcase.gap_days`. Otherwise the configured product spotlighted least recently.
     """
-    path = state/'owner-feedback.json'
-    if not path.is_file() or path.is_symlink() or path.stat().st_size > 2_000_000:
-        return []
-    try:
-        records = json.loads(path.read_text())
-    except ValueError:
-        return []
-    keep = []
-    for record in records if isinstance(records, list) else []:
-        if record.get('decision') in ('approved_edited', 'rejected', 'revision_requested'):
-            keep.append({k: record.get(k) for k in ('decision', 'original_text', 'final_text', 'reasons', 'note')})
-    return keep[:limit]
+    options = cfg.get('daily_showcase') or {}
+    products = list(options.get('products') or [])
+    if not options.get('enabled') or not products:
+        return None
+    if recent_showcase(state, now, options.get('gap_days', 2)):
+        return None
+    featured = recent_products(state, now)
+    unfeatured = [p for p in products if p not in featured]
+    if unfeatured:
+        return unfeatured[0]
+    return max(products, key=lambda p: featured.index(p))
 
 
 def single_pass(cfg, source_root, selected, digest, claims, directory):
@@ -127,8 +160,15 @@ def taken_slots(state, now):
     return taken
 
 
+def weekly_slot(cfg, slot):
+    """True for the slot kept free for the weekly call-to-action post."""
+    weekly = cfg.get('weekly_cta')
+    return bool(weekly) and slot.weekday() == weekly['weekday'] and slot.strftime('%H:%M') == weekly['time']
+
+
 def posting_slots(cfg, now, count, taken=()):
-    """Daytime Chicago slots at least 48 hours ahead, one per draft, never stacked on a held slot."""
+    """Daytime Chicago slots at least 48 hours ahead, one per draft, never stacked on a held slot
+    or on the weekly call-to-action slot."""
     from zoneinfo import ZoneInfo
     zone = ZoneInfo(cfg.get('timezone', 'America/Chicago'))
     times = cfg.get('instagram_times', ['11:30', '17:30'])
@@ -138,7 +178,8 @@ def posting_slots(cfg, now, count, taken=()):
         for value in times:
             hour, minute = map(int, value.split(':'))
             slot = datetime(day.year, day.month, day.day, hour, minute, tzinfo=zone)
-            if slot >= earliest and len(slots) < count and slot.astimezone(timezone.utc) not in taken:
+            if (slot >= earliest and len(slots) < count and slot.astimezone(timezone.utc) not in taken
+                    and not weekly_slot(cfg, slot)):
                 slots.append(slot)
         day += timedelta(days=1)
     return slots
@@ -165,7 +206,7 @@ def execute(source_root, state):
     with (state/'runner.lock').open('a') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         now = datetime.now(timezone.utc)
-        context = changemaker_context(cfg['switchyard'], now)
+        context = changes_context(cfg, now)
         if not context['drafts']:
             return {'status': context['status'], 'mode': 'changemaker', 'publishing_enabled': False}
         digest = complete_changemaker_digest(context)
@@ -205,12 +246,26 @@ def execute(source_root, state):
         for n, draft in enumerate(result['drafts']):
             bound = [items[s] for s in draft['source_ids']]
             identities.update(identity(i) for i in bound)
-            proof = 'Changemaker '+digest['run_id']+'; evidence SHA-256 '+digest['evidence_sha256']+'\n'
+            proof = 'Collection '+digest['run_id']+'; evidence SHA-256 '+digest['evidence_sha256']+'\n'
             proof += '\n'.join(i['id']+': '+i['title']+' — '+i['url'] for i in bound)
             media = {'mode': 'capture', 'asset_ids': [], 'brief': draft['media_brief'], 'alt_text': draft.get('alt_text', '')}
             record = {'account': draft['account'], 'platform': 'instagram', 'text': draft['text'],
                 'due_at': slots[n].isoformat(), 'expires_at': (now+timedelta(days=7)).isoformat(), 'evidence': proof,
                 'next_check': draft['next_check'], 'checklist': checklist(draft['next_check']), 'media': media}
+            if not crafted and cfg.get('craft', True):
+                # The single-pass caption has no image yet; plan and render one so review always has a picture.
+                try:
+                    import craft
+                    repos = [i.get('source', '').split('/')[-1] for i in bound]
+                    image, made, alt = craft.picture(cfg, draft['text'], craft.brand_for('', repos), directory/'craft', n,
+                                                     recent_kinds=[d['media'].get('kind') for d in drafts])
+                    media.update(kind=made.get('kind', ''), headline=made.get('headline', ''))
+                    if image and Path(image).is_file() and Path(image).resolve().is_relative_to(state.resolve()):
+                        media['image'] = image_record(Path(image), state)
+                    if alt and not media['alt_text']:
+                        media['alt_text'] = alt
+                except Exception as error:
+                    (directory/f'picture-error-{n}.txt').write_text(type(error).__name__+': '+str(error)[:2000]+'\n')
             if crafted:
                 plan = draft['media']
                 media.update(mode='generate' if plan['kind'] == 'illustration' else 'capture' if plan['kind'] == 'screenshot' else 'library',
@@ -226,6 +281,16 @@ def execute(source_root, state):
                    'draft_count': len(drafts), 'checked_at': now.isoformat(),
                    'source_identities': sorted(identities if drafts else {identity(i) for i in items.values()}),
                    'publishing_enabled': False}
+        if not drafts:
+            # The day's changes gave a stranger nothing to want; show a live product instead.
+            product = showcase_product(cfg, state, now)
+            if product:
+                import showcase
+                try:
+                    fallback = showcase.execute(product, source_root, state)
+                    receipt['showcase'] = {'product': product, 'run_id': fallback['run_id'], 'draft_count': fallback['draft_count']}
+                except Exception as error:
+                    receipt['showcase'] = {'product': product, 'error': type(error).__name__+': '+str(error)[:300]}
         atomic_write(directory/'receipt.json', json.dumps(receipt, indent=2)+'\n')
         return receipt
 

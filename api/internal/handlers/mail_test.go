@@ -18,9 +18,10 @@ func (f *fakeMailer) SendEmail(_ context.Context, e brevo.Email) error {
 	f.sent <- e
 	return nil
 }
-func (f *fakeMailer) NewsletterEnabled() bool                            { return true }
-func (f *fakeMailer) RequestDoubleOptIn(context.Context, string) error   { return nil }
-func (f *fakeMailer) RemoveFromNewsletter(context.Context, string) error { return nil }
+func (f *fakeMailer) NewsletterEnabled() bool                             { return true }
+func (f *fakeMailer) RequestDoubleOptIn(context.Context, string) error    { return nil }
+func (f *fakeMailer) RemoveFromNewsletter(context.Context, string) error  { return nil }
+func (f *fakeMailer) NewsletterMembers(context.Context) ([]string, error) { return nil, nil }
 
 func TestNormalizeEmail(t *testing.T) {
 	cases := map[string]struct {

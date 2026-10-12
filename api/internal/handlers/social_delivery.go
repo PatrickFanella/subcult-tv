@@ -76,7 +76,9 @@ func (h *Handler) SocialDelivery(w http.ResponseWriter, r *http.Request) {
 				p.Integration.Name = a.Name
 			}
 		}
-		if p.ID != "" {
+		// Pending or uncertain receipts are reconciled in PostyBirb; their
+		// submission may not exist, so only scheduled receipts are looked up.
+		if p.ID != "" && status == "scheduled" {
 			state, link, e := h.SocialPosting.SocialStatus(r.Context(), p.ID, p.Integration.ID)
 			if e != nil {
 				writeError(w, 502, "PostyBirb delivery status is unavailable")
@@ -93,7 +95,30 @@ func (h *Handler) SocialDelivery(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 503, "Delivery receipts are unavailable")
 		return
 	}
-	writeJSON(w, 200, map[string]any{"accounts": selected, "posts": selectedPosts, "checked_at": time.Now().UTC().Format(time.RFC3339), "approval_mode": "manual", "minimum_lead_hours": 24})
+	writeJSON(w, 200, map[string]any{"accounts": selected, "posts": selectedPosts, "checked_at": time.Now().UTC().Format(time.RFC3339), "approval_mode": "manual", "minimum_lead_hours": 0})
+}
+
+// instagramJPEGProblem returns why an image cannot be posted, or "".
+func instagramJPEGProblem(media []byte) string {
+	img, err := jpeg.DecodeConfig(bytes.NewReader(media))
+	if err != nil || img.Width < 320 || img.Width > 1440 || img.Height < 1 || float64(img.Width)/float64(img.Height) < 0.8 || float64(img.Width)/float64(img.Height) > 1.91 {
+		return "Choose a JPEG 320–1440 pixels wide with an aspect ratio between 4:5 and 1.91:1"
+	}
+	if _, err = jpeg.Decode(bytes.NewReader(media)); err != nil {
+		return "The JPEG could not be decoded"
+	}
+	return ""
+}
+
+// schedulePayloadHash binds a receipt to the exact account, caption, time and image.
+func schedulePayloadHash(accountID, caption string, due time.Time, media []byte) string {
+	hash := sha256.New()
+	for _, part := range []string{accountID, caption, due.UTC().Format(time.RFC3339)} {
+		hash.Write([]byte(part))
+		hash.Write([]byte{0})
+	}
+	hash.Write(media)
+	return hex.EncodeToString(hash.Sum(nil))
 }
 
 // ApproveSchedule records approval before attempting one provider submission.
@@ -130,22 +155,11 @@ func (h *Handler) ApproveSchedule(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 400, "Choose a JPEG under 900 KB")
 		return
 	}
-	img, err := jpeg.DecodeConfig(bytes.NewReader(media))
-	if err != nil || img.Width < 320 || img.Width > 1440 || img.Height < 1 || float64(img.Width)/float64(img.Height) < 0.8 || float64(img.Width)/float64(img.Height) > 1.91 {
-		writeError(w, 400, "Choose a JPEG 320–1440 pixels wide with an aspect ratio between 4:5 and 1.91:1")
+	if problem := instagramJPEGProblem(media); problem != "" {
+		writeError(w, 400, problem)
 		return
 	}
-	if _, err = jpeg.Decode(bytes.NewReader(media)); err != nil {
-		writeError(w, 400, "The JPEG could not be decoded")
-		return
-	}
-	hash := sha256.New()
-	for _, part := range []string{accountID, caption, due.UTC().Format(time.RFC3339)} {
-		hash.Write([]byte(part))
-		hash.Write([]byte{0})
-	}
-	hash.Write(media)
-	digest := hex.EncodeToString(hash.Sum(nil))
+	digest := schedulePayloadHash(accountID, caption, due, media)
 	var oldHash, status, providerID string
 	err = h.DB.QueryRow(r.Context(), `SELECT payload_hash,status,provider_post_id FROM social_schedules WHERE request_id=$1`, id).Scan(&oldHash, &status, &providerID)
 	if err == nil {
@@ -160,8 +174,8 @@ func (h *Handler) ApproveSchedule(w http.ResponseWriter, r *http.Request) {
 		writeJSON(w, 200, map[string]string{"status": status, "post_id": providerID})
 		return
 	}
-	if due.Before(time.Now().Add(24*time.Hour)) || due.After(time.Now().AddDate(0, 0, 90)) {
-		writeError(w, 400, "Schedule between 24 hours and 90 days ahead")
+	if !due.After(time.Now()) || due.After(time.Now().AddDate(0, 0, 90)) {
+		writeError(w, 400, "Choose a future publish time within 90 days")
 		return
 	}
 	accounts, err := h.SocialPosting.Accounts(r.Context())

@@ -1,18 +1,30 @@
 # Posting review and daily Development log
 
-The admin Posts area separates Instagram review, delivery evidence, website entries, Patreon editions and preparation jobs. All new drafts require manual approval. Saving an edit does not approve or dispatch it. Approval submits the saved version; stale edits and approvals return a conflict.
+The admin Posts area separates Instagram review, delivery evidence, website entries, Patreon editions and preparation jobs. New drafts require manual approval unless automatic website Development publication is enabled. Saving an edit does not approve or dispatch it. Approval submits the saved version; stale edits and approvals return a conflict.
 
-Instagram drafts need an enabled configured PostyBirb account, a JPEG preview and a publication time between 24 hours and 90 days ahead. Account UUIDs are configured through `POSTYBIRB_INSTAGRAM_ACCOUNT_IDS`. Images saved during editing stay behind admin authentication. Approval uploads the selected JPEG privately to PostyBirb before enabling its scheduler. A pending or uncertain submission cannot be sent again with the same approval.
+Instagram drafts need an enabled configured PostyBirb account, a JPEG preview and a future publication time within 90 days. Draft preparation should happen at least 24 hours in advance; approval may schedule for later the same day. Account UUIDs are configured through `POSTYBIRB_INSTAGRAM_ACCOUNT_IDS`. Images saved during editing stay behind admin authentication. Approval uploads the selected JPEG privately to PostyBirb before enabling its scheduler. A pending or uncertain submission cannot be sent again with the same approval.
 
 Website entries use `/development` and `/development/:slug`. Daily imports create unpublished articles. Approval records the owner and time; public API queries expose the entry only when that approved time arrives. Unapproved articles cannot be fetched through the public list or slug routes. Private source evidence is available only in the admin review response. The authenticated general article list is `/api/v1/admin/posts`.
+
+## X through Buffer
+
+The X tab supports text editing, account selection, exact future scheduling and editing an existing schedule. Configure `BUFFER_API_KEY`, `BUFFER_ORGANIZATION_ID` and an explicit comma-separated `BUFFER_X_CHANNEL_IDS` allowlist in the private API environment. The API uses [Buffer's GraphQL API](https://developers.buffer.com/guides/posts-and-scheduling.html); the preparation runner's read-only MCP connection remains separate. Credentials never enter the frontend build. Without this configuration, the copy-to-Buffer action remains available and approval is disabled.
+
+The owner approves the exact text, channel and publication time. Before writing, the API checks channel readiness and recent scheduled/published posts for duplicate text. Migration `013_buffer_schedules` stores an approval claim before the provider request and a receipt after Buffer confirms the same text, channel and time. Repeating a confirmed approval returns its receipt. A lost response leaves an uncertain claim and requires reconciliation in Buffer; refreshing never retries it. Schedule edits use the saved receipt version and the same provider post ID, and require that the live post is still editable and scheduled.
+
+A missed proposed time does not prove that a tweet was never published. Recovery must compare the prepared draft with Buffer's scheduled and published history first. Evergreen weekly drafts may be reviewed and moved to a future time. Expired timely radar drafts require regeneration from current sources. Keep future occupied slots and account cadence limits when recovering several drafts. A scheduling receipt confirms acceptance by Buffer, not publication on X.
 
 ## Daily preparation
 
 `studio/automation/social-posting/changemaker_publications.py` reads verified Changemaker output and prepares one website edition and one Patreon edition. It checks complete evidence, accepts only merged pull-request sources, records their identities and hashes, and proposes a time 48 hours ahead. The model cannot run tools or publish. A source digest is prepared once, and imports preserve owner edits.
 
-The service key can call only `POST /api/v1/posting-preparation`; it cannot approve a post. Configure `POSTING_PREPARATION_KEY` in the API environment and in the private producer environment, with `POSTING_INGEST_URL=https://subcult.tv/api/v1/posting-preparation`. Keep this credential and generated content outside Git and frontend build contexts.
+The service key can call only `POST /api/v1/posting-preparation`, the re-roll claim and finish routes, and `GET /api/v1/posting-preparation/feedback`; it cannot call approval routes. Website imports can publish under the owner-configured automatic Development policy. Configure `POSTING_PREPARATION_KEY` in the API environment and in the private producer environment, with `POSTING_INGEST_URL=https://subcult.tv/api/v1/posting-preparation`. Keep this credential and generated content outside Git and frontend build contexts.
 
 The user service and timer sources are in `studio/automation/postiz-dashboard/changemaker-publications.*`. The unit uses a separately staged producer source and the existing Studio configuration/state, leaving other Studio consumers on their current source until the repository cutover is verified. Install the shared Python helpers as well as the producer, prompt, schema and voice source. The daily timer runs at 09:25 UTC after Changemaker and Instagram preparation. A timer success proves draft preparation/import only.
+
+## Review feedback
+
+Every draft card has Reject, Request revision, Snooze and Good post. Good post takes an optional note on what works and leaves the draft in the queue; it is also available on submitted Instagram drafts. Decisions are appended to `draft_decisions`. `GET /api/v1/posting-preparation/feedback?since=` returns them to the preparation key without snoozes or user IDs, together with re-roll notes. On Kvant, `feedback.py` writes them to `owner-feedback.json` hourly for the drafting jobs, and `tune.py` turns them into a weekly prompt-change pull request for review. See `studio/automation/social-posting/README.md`.
 
 ## Patreon adapter
 
@@ -32,6 +44,27 @@ Patreon login and native scheduling are separate qualification gates. Until both
 
 ## Verification and recovery
 
-Run frontend tests, type checking, lint and build; the Go suite; and `make check-studio check-studio-automation`. The handler integration tests require `TEST_SOCIAL_DATABASE_URL` pointed at a disposable database. They verify exact saved-version approval, private previews, idempotency, 24-hour enforcement, blocked Patreon delivery and public website visibility at the approved time.
+Run frontend tests, type checking, lint and build; the Go suite; and `make check-studio check-studio-automation`. The handler integration tests require `TEST_SOCIAL_DATABASE_URL` pointed at a disposable database. They verify exact saved-version approval, private previews, duplicate prevention, same-day social scheduling, expired radar rejection, blocked Patreon delivery and public website visibility at the approved time.
 
 Deployment must retain the previous images, private environment, source archive, database dump and compose command. The new tables are additive. Roll back application images/configuration without deleting approval or draft history. Never restore a database dump over subsequent owner edits merely to undo the interface.
+
+### Automatic Development publication
+
+Set `DEVELOPMENT_AUTO_PUBLISH=true` on the API to approve and publish prepared
+website Development entries immediately when import commits. The default is
+`false`. Enabling it also publishes existing unapproved website Development
+entries at API startup. Already approved entries keep their publication times;
+Patreon and social drafts still require their existing approval steps.
+
+Automatic approvals record `automatic:development-updates` and the approval time.
+Duplicate preparation requests preserve the existing edition. Private preparation
+evidence stays in authenticated review storage. Disabling the setting restores
+manual approval for future imports; it does not withdraw published entries.
+
+## Bluesky scheduling
+
+The Bluesky tab schedules reviewed drafts through the existing private PostyBirb connection. Configure `POSTYBIRB_BLUESKY_ACCOUNTS=patrick=<UUID>,subcult=<UUID>,clpr=<UUID>` in the API environment using the verified Bluesky account IDs. Account reads require an allowed UUID, the Bluesky platform and a connected login. The mapping supplies the default account in the reviewer.
+
+Review the text, account and future publish time before approving. The composer accepts text up to 300 code points, or text plus one JPEG under 900 KB with alt text. A proposed media asset is not attached automatically. Upload the intended JPEG or explicitly approve the text-only preview. PostyBirb validates native mentions and platform constraints before the schedule is enabled. X approval and Instagram approval do not grant Bluesky approval.
+
+Migration 016 stores the exact approved copy, media, alt text, time and provider identity. A draft claim and unique content hash prevent duplicate submissions. The provider ID is saved before enabling a future single schedule. Uncertain submissions remain blocked until reconciled in PostyBirb. Manage cancellation, editing and retrying there. Scheduled & delivered shows Bluesky schedules, failures and provider-confirmed `bsky.app/profile/.../post/...` delivery links. Connecting accounts or preparing drafts alone does not publish anything.

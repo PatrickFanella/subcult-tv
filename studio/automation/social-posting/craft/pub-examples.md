@@ -1,6 +1,6 @@
 # Reference edition
 
-This shows the register for the development log and its Patreon edition. It uses only facts from four real merged changes, listed at the end. Copy its moves, never its facts or wording: a new edition uses only its own evidence.
+This shows the register for the development log and its Patreon edition. It uses only facts from four real merged changes, listed at the end. Copy its moves, never its facts or wording: a new edition uses only its own evidence. Selection has changed since this was written (October 11): the lead now goes to an improvement a reader would use, and repairs like the ones below belong in one short closing paragraph, or nowhere.
 
 ## Website
 

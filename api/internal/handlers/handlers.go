@@ -23,6 +23,7 @@ type Mailer interface {
 	NewsletterEnabled() bool
 	RequestDoubleOptIn(ctx context.Context, email string) error
 	RemoveFromNewsletter(ctx context.Context, email string) error
+	NewsletterMembers(ctx context.Context) ([]string, error)
 }
 
 // MailSettings are the addresses used for site email.
@@ -33,11 +34,15 @@ type MailSettings struct {
 
 // Handler bundles dependencies for all HTTP handlers.
 type Handler struct {
+	BufferPosting             BufferProvider
+	BufferChannels            []string
 	PostingPreparationKey     string
+	DevelopmentAutoPublish    bool
 	PatreonPosting            *postybirb.Client
 	PatreonSchedulingVerified bool
 	SocialPosting             *postybirb.Client
 	SocialAccounts            []string
+	BlueskyAccounts           map[string]string
 	PostingMediaBaseURL       string
 	BrevoWebhookSecret        string
 	BrevoNewsletterListID     int64

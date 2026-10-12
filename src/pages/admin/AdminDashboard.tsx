@@ -1,19 +1,32 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
+  getBufferDelivery,
+  getBufferHistory,
+  getSocialDelivery,
   getDashboardStats,
   getDraftDecisions,
   getPostingDashboard,
   getReviewDrafts,
   getPublications,
+  type BufferDelivery,
+  type BufferHistory,
   type DashboardStats,
+  type SocialDelivery,
   type DraftDecision,
   type PostingDashboard,
   type ReviewDraft,
   type Publications,
 } from '@/lib/api';
 import { AdminHeader } from '@/components/admin/crud';
-import { draftPlatform, hiddenReason, isExpired, latestDecisions } from '@/lib/review-queue';
+import {
+  draftPlatform,
+  hiddenReason,
+  isExpired,
+  laneName,
+  latestDecisions,
+  runStatusLabel,
+} from '@/lib/review-queue';
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState<DashboardStats | null>(null);
@@ -21,6 +34,9 @@ export default function AdminDashboard() {
   const [reviews, setReviews] = useState<ReviewDraft[] | null>(null);
   const [decisions, setDecisions] = useState<DraftDecision[]>([]);
   const [publications, setPublications] = useState<Publications | null>(null);
+  const [social, setSocial] = useState<SocialDelivery | null>(null);
+  const [buffer, setBuffer] = useState<BufferDelivery | null>(null);
+  const [bufferHistory, setBufferHistory] = useState<BufferHistory | null>(null);
   const [errors, setErrors] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [revision, setRevision] = useState(0);
@@ -34,8 +50,14 @@ export default function AdminDashboard() {
       getReviewDrafts(),
       getPublications(),
       getDraftDecisions(new Date(Date.now() - 60 * 86400000).toISOString()),
-    ]).then(([s, p, r, u, decided]) => {
+      getSocialDelivery(),
+      getBufferDelivery(),
+      getBufferHistory(),
+    ]).then(([s, p, r, u, decided, ig, x, xh]) => {
       if (!active) return;
+      setSocial(ig.status === 'fulfilled' ? ig.value : null);
+      setBuffer(x.status === 'fulfilled' ? x.value : null);
+      setBufferHistory(xh.status === 'fulfilled' ? xh.value : null);
       setDecisions(decided.status === 'fulfilled' ? decided.value : []);
       setStats(s.status === 'fulfilled' ? s.value : null);
       setPosting(p.status === 'fulfilled' ? p.value : null);
@@ -46,9 +68,12 @@ export default function AdminDashboard() {
         'Preparation',
         'Instagram review',
         'Website and Patreon review',
+        'PostyBirb delivery',
+        'Buffer',
+        'Buffer history',
       ];
       setErrors(
-        [s, p, r, u].flatMap((result, index) =>
+        [s, p, r, u, ig, x, xh].flatMap((result, index) =>
           result.status === 'rejected'
             ? [
                 `${names[index]}: ${result.reason instanceof Error ? result.reason.message : 'Unavailable'}`,
@@ -81,32 +106,79 @@ export default function AdminDashboard() {
     (d) => draftPlatform(d) === 'instagram' && !submitted.has(d.id),
   ).length;
   const xWaiting = current.filter((d) => draftPlatform(d) === 'x').length;
-  const uncertain = [...(reviews ?? []), ...(publications?.drafts ?? [])].filter((d) =>
-    ['uncertain', 'submitting'].includes(d.status),
+  const uncertain = [
+    ...(reviews ?? []),
+    ...(publications?.drafts ?? []),
+    ...(buffer?.receipts ?? []),
+  ].filter((d) => ['uncertain', 'submitting'].includes(d.status));
+  // Things that should have happened and did not.
+  const missedArticles = drafts.filter((d) => new Date(d.due_at).valueOf() <= now);
+  const failedInstagram = (social?.posts ?? []).filter(
+    (p) =>
+      p.state === 'ERROR' ||
+      (p.state === 'QUEUE' && new Date(p.publishDate).valueOf() < now - 15 * 60000),
   );
+  const failedX = (bufferHistory?.posts ?? []).filter(
+    (p) =>
+      p.status === 'error' ||
+      (p.status === 'scheduled' && new Date(p.dueAt).valueOf() < now - 15 * 60000),
+  );
+  const newestDaily = /\d{4}-\d{2}-\d{2}/.exec(
+    [...(publications?.drafts ?? [])].sort((a, b) => b.id.localeCompare(a.id))[0]?.id ?? '',
+  )?.[0];
+  const dailyAge = newestDaily
+    ? Math.floor((now - new Date(`${newestDaily}T12:00:00`).valueOf()) / 86400000)
+    : null;
+  const problems = [
+    failedX.length > 0 && {
+      to: '/admin/posts/delivery',
+      text: `${failedX.length} X ${failedX.length === 1 ? 'post' : 'posts'} failed or did not send on time`,
+    },
+    failedInstagram.length > 0 && {
+      to: '/admin/posts/delivery',
+      text: `${failedInstagram.length} Instagram ${failedInstagram.length === 1 ? 'post' : 'posts'} failed or did not publish on time`,
+    },
+    uncertain.length > 0 && {
+      to: '/admin/posts/delivery',
+      text: `${uncertain.length} ${uncertain.length === 1 ? 'approval was' : 'approvals were'} never confirmed by Buffer, PostyBirb or Patreon`,
+    },
+    missedArticles.length > 0 && {
+      to: '/admin/posts/articles',
+      text: `${missedArticles.length} website or Patreon ${missedArticles.length === 1 ? 'draft' : 'drafts'} passed the publish time without approval`,
+    },
+    dailyAge !== null &&
+      dailyAge > 2 && {
+        to: '/admin/posts/automation',
+        text: `No new daily website/Patreon draft for ${dailyAge} days (latest ${newestDaily}); the daily preparation job may be failing`,
+      },
+  ].filter((p): p is { to: string; text: string } => Boolean(p));
   return (
     <section className="admin-dashboard">
       <AdminHeader
-        overline="SUBCULT / WORKSHOP"
+        overline="Workshop"
         title="Dashboard"
+        description="Start with the work waiting for you. Preparation, approval and delivery each keep their own records."
         action={
           <button
+            type="button"
+            className="admin-button"
             disabled={loading}
             onClick={() => {
               setLoading(true);
               setRevision((v) => v + 1);
             }}
           >
-            Refresh dashboard
+            {loading ? 'Refreshing…' : 'Refresh'}
           </button>
         }
       />
-      <p className="studio-note">
-        Start with work waiting for you. Preparation, approval and delivery have their own records.
-      </p>
-      {loading && <p role="status">Loading the workshop…</p>}
+      {loading && (
+        <p role="status" className="admin-count">
+          Loading the workshop…
+        </p>
+      )}
       {errors.length > 0 && (
-        <div className="production-notice" role="alert">
+        <div className="admin-alert admin-alert-warning" role="alert">
           <strong>Some records could not be loaded.</strong>
           <ul>
             {errors.map((e) => (
@@ -125,7 +197,7 @@ export default function AdminDashboard() {
             </Link>
             <Link to="/admin/posts?tab=x">
               <strong>{posting ? xWaiting : '—'}</strong>
-              <span>X drafts to post via Buffer</span>
+              <span>X drafts to review</span>
             </Link>
             <Link to="/admin/posts/articles">
               <strong>
@@ -144,15 +216,21 @@ export default function AdminDashboard() {
               <span>Unread contact messages</span>
             </Link>
           </div>
-          {uncertain.length > 0 && (
-            <p className="production-notice">
-              {uncertain.length} submissions need provider reconciliation.{' '}
-              <Link to="/admin/posts/delivery">Check delivery records →</Link>
-            </p>
+          {problems.length > 0 && (
+            <div className="admin-alert admin-alert-error" role="alert">
+              <strong>Missed or failed</strong>
+              <ul>
+                {problems.map((p) => (
+                  <li key={p.text}>
+                    <Link to={p.to}>{p.text} →</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </section>
         <section>
-          <h2>Preparation & account readiness</h2>
+          <h2>Preparation and accounts</h2>
           <p>
             {posting
               ? !posting.connected
@@ -171,25 +249,22 @@ export default function AdminDashboard() {
             {publications
               ? publications.patreon_connected
                 ? 'Patreon account connection is ready. Scheduling is checked during approval.'
-                : `Patreon needs attention: ${publications.patreon_connection_reason || 'account connection is unavailable'}`
+                : `Patreon is not ready to schedule: ${publications.patreon_connection_reason || 'account connection is unavailable'}. Website posts are unaffected.`
               : 'Patreon readiness is unavailable.'}
           </p>
           <Link to="/admin/posts/automation">Inspect schedules and receipts →</Link>
           {posting?.runs[0] && (
             <p className="studio-note">
-              Latest recorded preparation: {posting.runs[0].mode} ·{' '}
-              {posting.runs[0].status.replaceAll('_', ' ')} ·{' '}
+              Latest recorded preparation: {laneName(posting.runs[0].mode)} ·{' '}
+              {runStatusLabel(posting.runs[0].status)} ·{' '}
               {new Date(posting.runs[0].checked_at || posting.runs[0].observed_at).toLocaleString()}
             </p>
           )}
-          {posting?.checks.length ? (
-            <ul>
-              {posting.checks.slice(0, 5).map((c, i) => (
-                <li key={i}>{c.text}</li>
-              ))}
-            </ul>
-          ) : (
-            posting && <p className="studio-note">No open checks in this preparation snapshot.</p>
+          {posting && posting.checks.length > 0 && (
+            <p className="studio-note">
+              The drafting runs left {posting.checks.length} notes to verify before approving.{' '}
+              <Link to="/admin/posts/automation#run-notes">Read them →</Link>
+            </p>
           )}
         </section>
       </div>
@@ -209,12 +284,12 @@ export default function AdminDashboard() {
             <span>Subscribers</span>
           </Link>
           <Link to="/admin/studio">
-            <strong>↗</strong>
+            <strong aria-hidden="true">→</strong>
             <span>Brand & asset library</span>
           </Link>
         </div>
       </section>
-      {checked && <p className="studio-note">Last dashboard read: {checked}</p>}
+      {checked && <p className="admin-count">Last read {checked}</p>}
     </section>
   );
 }

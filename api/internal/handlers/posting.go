@@ -57,6 +57,7 @@ type postingDraft struct {
 	Week       string        `json:"week"`
 	Account    string        `json:"account"`
 	Text       string        `json:"text"`
+	Replies    []string      `json:"replies,omitempty"`
 	DueAt      string        `json:"due_at"`
 	ExpiresAt  string        `json:"expires_at"`
 	Evidence   string        `json:"evidence"`

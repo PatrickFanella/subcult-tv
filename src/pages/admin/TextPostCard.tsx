@@ -4,15 +4,19 @@ import { draftPlatform, laneLabel, X_LIMIT, xLength } from '@/lib/review-queue';
 
 const BLUESKY_LIMIT = 300;
 
-/** Read-only X/Bluesky draft: these are posted by hand through Buffer. */
+/** Text preview shared by X scheduling and Bluesky scheduling. */
 export default function TextPostCard({
   draft,
   expired,
   children,
+  scheduling = false,
+  scheduled = false,
 }: {
   draft: PostingDraft;
   expired: boolean;
   children?: ReactNode;
+  scheduling?: boolean;
+  scheduled?: boolean;
 }) {
   const platform = draftPlatform(draft);
   const limit = platform === 'bluesky' ? BLUESKY_LIMIT : X_LIMIT;
@@ -22,7 +26,7 @@ export default function TextPostCard({
   async function copy() {
     try {
       await navigator.clipboard.writeText(draft.text);
-      setCopied('Copied. Paste it into Buffer.');
+      setCopied(platform === 'bluesky' ? 'Copied Bluesky text.' : 'Copied. Paste it into Buffer.');
     } catch {
       setCopied('Copy failed. Select the text and copy it manually.');
     }
@@ -34,7 +38,15 @@ export default function TextPostCard({
         <span className="production-badge">
           {draft.account} / {service} · {laneLabel(draft.mode)}
         </span>
-        <span>{expired ? 'Expired' : 'Post via Buffer'}</span>
+        <span>
+          {scheduled
+            ? 'Approved · Scheduled'
+            : expired
+              ? 'Expired'
+              : scheduling
+                ? 'Needs approval'
+                : 'Post via Buffer'}
+        </span>
       </div>
       <div className="x-preview" aria-label={`${service} preview for ${draft.account}`}>
         <div className="x-preview-header">
@@ -55,9 +67,24 @@ export default function TextPostCard({
             {over ? ` · ${length - limit} over the ${service} limit` : ''}
           </span>
         </div>
+        {platform === 'x' &&
+          draft.replies?.map((reply, i) => (
+            <div key={i} className="x-preview-reply">
+              <small>Reply {i + 1}</small>
+              <p className="x-preview-text">{reply}</p>
+              <small data-over={xLength(reply) > X_LIMIT || undefined}>
+                {xLength(reply)} / {X_LIMIT}
+              </small>
+            </div>
+          ))}
       </div>
       <p className="studio-note">
-        Proposed: {new Date(draft.due_at).toLocaleString()} · Copy into Buffer to schedule.
+        {scheduled ? 'Scheduled' : 'Proposed'}: {new Date(draft.due_at).toLocaleString()} ·{' '}
+        {scheduled
+          ? 'Edit the schedule below.'
+          : scheduling
+            ? 'Schedule below after approving.'
+            : 'Copy into Buffer to schedule.'}
       </p>
       {draft.craft?.angle && (
         <p>

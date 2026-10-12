@@ -5,8 +5,8 @@
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "c325f710eb34845d5e88ba40d998dd9e169b89997ccaca9fc6d03eb0b296ba5a",
-      "bytes": 5799
+      "sha256": "f99e11fc6ce9b1244c4209f253db7610905e2d1d71cfb347917f3fdb4c75e374",
+      "bytes": 6210
     },
     {
       "path": "alt-text.md",
@@ -708,6 +708,575 @@
       "path": "video/title-card.svg",
       "sha256": "5c3a458d4555909148a2eac85bf963a047cd99d7c387436757a1b9233c51bcc3",
       "bytes": 7537
+    },
+    {
+      "path": "portraits/Earlier Portraits/02-professional-outdoor-alternative.jpg",
+      "sha256": "c247ee991821a289ebbda448de9d8f64e9e098053af93ce21978890c1d40af47",
+      "bytes": 5498256
+    },
+    {
+      "path": "portraits/Earlier Portraits/03-casual-glasses.jpg",
+      "sha256": "7f19bc86d67d3caf39ab98cc8ed65ef4954b98271637b5d80a208ead1328194a",
+      "bytes": 1909054
+    },
+    {
+      "path": "portraits/Earlier Portraits/04-purple-lit.jpg",
+      "sha256": "080bb36e92f5bdbfd1d7b81bcfbeeb83e389add0cd0f54bce7e7f74850401eac",
+      "bytes": 990532
+    },
+    {
+      "path": "portraits/Earlier Portraits/05-black-and-white.jpg",
+      "sha256": "c68629918d1b6dce30c002ae053337bfd2438b4e0a8f14c0ba0f62414279068f",
+      "bytes": 531790
+    },
+    {
+      "path": "portraits/Earlier Portraits/06-crown.jpg",
+      "sha256": "cbed6e713731db2e6eb57a24bdc2c37776907cffc02abe2d660280bc29bf0fcb",
+      "bytes": 1292335
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/01-black-shirt-glasses-avatar-indoor.png",
+      "sha256": "696453c434eb295f47f852ed8d02d258cc93d67c1c024b43351a287b9e372782",
+      "bytes": 1948384,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/01-black-shirt-glasses-portrait-indoor.png",
+      "sha256": "e20adf3a2059eebdc96b48d2754beb0b8da3347853595707350490ce8d67112c",
+      "bytes": 1836831,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/02-black-shirt-no-glasses-avatar-indoor.png",
+      "sha256": "9e18b091ce2454e4b3179575f8cfc239ec85b44126f27ea198e9a33c32052ecb",
+      "bytes": 1887446,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/02-black-shirt-no-glasses-portrait-indoor.png",
+      "sha256": "f043882dbf25f111fc42050fdd558c579fa3dabdd7e68633f520db9269670b3f",
+      "bytes": 1892030,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/03-camouflage-shirt-avatar-indoor.png",
+      "sha256": "8be35313b4ffdce7817061bfc654a7368eb59c3a877638c64a35382167f2322d",
+      "bytes": 2163403,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/03-camouflage-shirt-portrait-indoor.png",
+      "sha256": "d1900a9ef5b80573ba4b7c247b753f2f2413538c993c04ef1233e3e29fee94c5",
+      "bytes": 2093326,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/04-striped-shirt-avatar-indoor.png",
+      "sha256": "1405185af89807cffe97619ff114774e05a9be867d8c70adb8e5712f2a7becd1",
+      "bytes": 2022008,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/04-striped-shirt-portrait-indoor.png",
+      "sha256": "ec9d50c839649c565da9cd26742def48e346718a4e93c06068b5acb5c28a940f",
+      "bytes": 1974755,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/05-hoodie-peace-sign-avatar-indoor.png",
+      "sha256": "41f580574afaa027ee227422777be67b1e7780eff357687ad092615b94cda27c",
+      "bytes": 2061746,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/05-hoodie-peace-sign-portrait-indoor.png",
+      "sha256": "7c8869f893a15aa8510eb3f0c6ef93d045a5ac18f1b3dda3df5390f6e568dcfa",
+      "bytes": 2222843,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/06-black-shirt-square-natural-avatar-indoor.png",
+      "sha256": "f7a04b82da708bebf1611442cf10f84cbd9d3488f191a0c6c34fa633476dfc15",
+      "bytes": 1853752,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/06-black-shirt-square-natural-portrait-indoor.png",
+      "sha256": "26cc137f5a9510e194e00551fc31e9c8ea82d93d4741c0457c98bb925c7a32e5",
+      "bytes": 1877543,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/07-black-shirt-square-warm-avatar-indoor.png",
+      "sha256": "df8717ae8d519836cd807afc9e998ee12b798067fe996b68b3a9cf72ce3bfbcc",
+      "bytes": 1993943,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/07-black-shirt-square-warm-portrait-indoor.png",
+      "sha256": "fede27a5c3706f56fa3a5a725af9f1e8805e69d39265940d889cadb01b0c881c",
+      "bytes": 1957570,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/avatar-prompts.json",
+      "sha256": "fc2ce086f2f8abc5bd31bb43ecab22633eb375e702b2ad2d694c30b8b7f0dcfc",
+      "bytes": 8087
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/portrait-prompts.json",
+      "sha256": "a538215925b734a262f9e05e1990283eed6fa69469cf438de5b1e9496f29c872",
+      "bytes": 7240
+    },
+    {
+      "path": "portraits/Indoor Wall Edits/sources.json",
+      "sha256": "54bf055820b3986036d59c53ee6930d03462daf937d558ea91d310d711af1bb3",
+      "bytes": 3663
+    },
+    {
+      "path": "portraits/Original Cropped Edits/01-black-shirt-glasses-avatar.png",
+      "sha256": "59c11fe0f18d2ff4264ad81015218e534597a01022c3e5be45ebaaa0c3a53640",
+      "bytes": 1692719,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/01-black-shirt-glasses-portrait.png",
+      "sha256": "22d5218929ea552604603375f911504c3df8dbf40aa5dd50ed7a3f0ffec029f2",
+      "bytes": 1770609,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/02-black-shirt-no-glasses-avatar.png",
+      "sha256": "4924acb8ea39620e4e5deaa8a2b94cb5bc577abe198edec5fd3e533414d7659f",
+      "bytes": 1748200,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/02-black-shirt-no-glasses-portrait.png",
+      "sha256": "3d7c2c7edca0bef556600e8c012292a7c9e80dffa55f35d285ab0a8e513a147b",
+      "bytes": 1788869,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/03-camouflage-shirt-avatar.png",
+      "sha256": "32b0b136960ac5a46a2760b00730a935223f6bf762e022a18229dee6cda46e6b",
+      "bytes": 1848346,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/03-camouflage-shirt-portrait.png",
+      "sha256": "505e36eef2e5b483e02482562563e79b16e06612e339cd3071cf0edb9f7a941e",
+      "bytes": 1977881,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/04-striped-shirt-avatar.png",
+      "sha256": "addf1890451a7e02757e8c928859a10b8981f33c2b861ec5c05148311626ad13",
+      "bytes": 1717250,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/04-striped-shirt-portrait.png",
+      "sha256": "02ff8f5c97316a6f1f4aa88f50740fd9b2f8e2bca3d6e61f66efdff069887690",
+      "bytes": 1853307,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/05-hoodie-peace-sign-avatar.png",
+      "sha256": "cc8084b77ec759f185482f1917e77bf9113e55943cad41ab0ee48d844b2b97df",
+      "bytes": 1907225,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/05-hoodie-peace-sign-portrait.png",
+      "sha256": "deb831ac0492b72567b74e76fb30cd4ddb240a0858193c14c8e838dca53a748e",
+      "bytes": 2083703,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/06-black-shirt-square-natural-avatar.png",
+      "sha256": "819a1cf4419add471f5314dbee97e637f86869a8d47f50c9482e9eaeaa51f9e9",
+      "bytes": 1749557,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/06-black-shirt-square-natural-portrait.png",
+      "sha256": "f63b089814cd363ce54a66ad3e21f90ff5a1d380a824f5e8e6f3670b366a731a",
+      "bytes": 1842919,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/07-black-shirt-square-warm-avatar.png",
+      "sha256": "085dda6ec311dff14e5db28caa48b7fd05646c552b3a685061e808fec8c863aa",
+      "bytes": 1935720,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/07-black-shirt-square-warm-portrait.png",
+      "sha256": "679d1424c62972ddb1b67778adefbdb9eb86964bc14b83c8daccf867fd1cb5e0",
+      "bytes": 1830356,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Original Cropped Edits/avatar-edits.json",
+      "sha256": "c8444dc98197f748939e946f03dcf71b16b992f37c5c2f4f725c040a3373a02b",
+      "bytes": 6733
+    },
+    {
+      "path": "portraits/Original Cropped Edits/portrait-edits.json",
+      "sha256": "0a5ba3a977024dfa4711a2d4ce04c45b6fa8ddb860af22d000b5a9316bfa74c6",
+      "bytes": 7299
+    },
+    {
+      "path": "portraits/Original Cropped Edits/sources.json",
+      "sha256": "52e2d861f56545bd5929cbeb3abb89e21be1bd335dcbf86cc41f8bcee79a77a8",
+      "bytes": 1213
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/01-black-shirt-glasses-avatar-clean.png",
+      "sha256": "0ddb9a491b48009bc4c555109a47bcf204a96c16bd9919e5ae1c1599529cb59c",
+      "bytes": 1718955,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/01-black-shirt-glasses-portrait-clean.png",
+      "sha256": "61171264419d4d27dfc4986bf7fef0b081c51e783989a32bd0f94425edd3af01",
+      "bytes": 1735437,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/02-black-shirt-no-glasses-avatar-clean.png",
+      "sha256": "8b63fe4dbe552b9cc07764a160500bb3761a567696ff3f54b23b746b8e0018ee",
+      "bytes": 1815944,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/02-black-shirt-no-glasses-portrait-clean.png",
+      "sha256": "882a9e8c2861d49584c82e5ff56f08e6b982c341b72cb453e7c5c0c90509b6d0",
+      "bytes": 1855531,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/03-camouflage-shirt-avatar-clean-scaled.png",
+      "sha256": "2de396e4974d72c7b1e030b4ca492c386296016679e8765304ecaf3ebffc6be9",
+      "bytes": 788373,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/03-camouflage-shirt-avatar-clean.png",
+      "sha256": "eaf9f7bb508f57140c58dc93575628d8ebff8222c7fb0c1f2cddb29ea67297ee",
+      "bytes": 1941810,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/03-camouflage-shirt-portrait-clean.png",
+      "sha256": "cba25ba975d3e3fb95727ac3fa92e070bb8d941372a042c580fe710d05525b39",
+      "bytes": 2099844,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/04-striped-shirt-avatar-clean.png",
+      "sha256": "724ce9785ca8b3599ea15976a03399342720360f9636b94f6aacce36abae58a7",
+      "bytes": 1902148,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/04-striped-shirt-portrait-clean.png",
+      "sha256": "0b96dd37dd0f2794b113787069b161fc67793c408344203c709dff75f65f2386",
+      "bytes": 1899188,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/05-hoodie-peace-sign-avatar-clean.png",
+      "sha256": "91421e913dce489543a06d12eafe702a5ab5f77822bebda19051fa1dd6e48dc6",
+      "bytes": 2041777,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/05-hoodie-peace-sign-portrait-clean.png",
+      "sha256": "d00a7a9811b78896460cb8ad0f9ccb8f0270139d5eb13f1b30674beaba429a86",
+      "bytes": 2141941,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/06-black-shirt-square-natural-avatar-clean.png",
+      "sha256": "2753dee1a043ce9f0993a48803b922f71c68d27380a2b8dc8c307377cd1d9f74",
+      "bytes": 1769749,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/06-black-shirt-square-natural-portrait-clean.png",
+      "sha256": "3efb4e3bc7552a1819c2be4637541db9dcdd5cd6b840ab2393499a2bd1ed8a73",
+      "bytes": 1757285,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/07-black-shirt-square-warm-avatar-clean.png",
+      "sha256": "e9af47294056ce653a9848e568204ae925cee7070c871fb89467d805d8eabd28",
+      "bytes": 1822622,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/07-black-shirt-square-warm-portrait-clean.png",
+      "sha256": "85d7025c458c6970412f1c586808a985d5f2adf66a54195380909b277ca0be94",
+      "bytes": 1822926,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/avatar-prompts.json",
+      "sha256": "151f3bb0cce869bb00498d124356d489370ee80eb2b4c3c7b17bb85ba56971d2",
+      "bytes": 8749
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/portrait-prompts.json",
+      "sha256": "8355f5bab4f7bc26534a98a5f82428de539ec4a2d00ca457540150b0f36c6e8b",
+      "bytes": 9031
+    },
+    {
+      "path": "portraits/Phone-Free Studio Edits/source-edits.json",
+      "sha256": "d960d58398ea1eeb65b66a3da4fbeafaeb02aefd2c54616e00c032e9f8601959",
+      "bytes": 3243
+    },
+    {
+      "path": "portraits/README.md",
+      "sha256": "701227b07fbb098748b4f3ca1c8fa17588df410830085ba74f35a61d24fb58bc",
+      "bytes": 1493
+    },
+    {
+      "path": "portraits/collection-contact-sheet.jpg",
+      "sha256": "8ec31ffc7f80e8826fd399514e2e001e7d3f1416587f287916a7d59d5981e321",
+      "bytes": 491848
+    },
+    {
+      "path": "portraits/github-selection/professional-outdoor-avatar.jpg",
+      "sha256": "1c9d087f301bdc6623f77469508ac0742d09b9508ab22be0cd1e3d2a0adafda9",
+      "bytes": 252036
+    },
+    {
+      "path": "portraits/github-selection/professional-outdoor-avatar.png",
+      "sha256": "dfb32d6746ae945b5273954d2fa0b105a69678f012f5e8063f29736c40c46f15",
+      "bytes": 2086604,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "path": "portraits/github-selection/professional-outdoor-source.jpg",
+      "sha256": "653a0a9d4513b951b7a99ba0f17c69b855b2ea2e1e7baa600c1eb56e5f84568c",
+      "bytes": 5287357
+    },
+    {
+      "path": "portraits/github-selection/selection.json",
+      "sha256": "6c138524ab5bc01346dfbed52e1768bc06316ea9aa0f4ad2b68449f30f8bcf46",
+      "bytes": 1133
+    },
+    {
+      "path": "portraits/index.html",
+      "sha256": "200eeb593b0b476fbd5385487f4bb635933389ab72e54c63319cc3668b64df49",
+      "bytes": 16233
+    },
+    {
+      "path": "portraits/manifest.json",
+      "sha256": "b5f7f31cfe5aacc0e08b942614a0c071031b09c7a2ce806084993ef6ac313046",
+      "bytes": 32222
+    },
+    {
+      "path": "social/banner-linkedin.png",
+      "sha256": "04626edf7259a501812b19fc868303d6e3f594a6370d2a030746eb260a4ec20e",
+      "bytes": 40070,
+      "width": 1584,
+      "height": 396,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/banner-linkedin.svg",
+      "sha256": "3dd5a151655ffb5e0a810006eff6aee728b503585a8521b7d27203a7b5be7658",
+      "bytes": 894
+    },
+    {
+      "path": "social/banner-youtube-mobile-preview.png",
+      "sha256": "3104bfc524b25a1d2c2458f6a2abf5c8a08038ac6dd34c3409a1b44c8613828b",
+      "bytes": 49771,
+      "width": 1544,
+      "height": 422,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/banner-youtube.png",
+      "sha256": "71f7623ef8ed504508c8e4a862b1a3c41aeb83ee9e3887f591ddc7de7302b1ce",
+      "bytes": 65880,
+      "width": 2560,
+      "height": 1440,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/banner-youtube.svg",
+      "sha256": "e73aeae064bbe1e5bc62d7d01ed261ad0e0e8bf0199f5d67c0cc5d27ebd7422a",
+      "bytes": 7367
+    },
+    {
+      "path": "social/twitch-offline.png",
+      "sha256": "50c59dd07e5b83ca0875851b744a7d997709ae03d6100c01669f7623cbf604e5",
+      "bytes": 77813,
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/twitch-offline.svg",
+      "sha256": "179fbc0fe075c26d760aa2676d719a9eabdffc76ed12977ddb8f6b09a8437903",
+      "bytes": 7402
+    },
+    {
+      "path": "social/twitch-panel-channel-rules.png",
+      "sha256": "574fda1a8935ce817f464f1093da644ddd5b57b87f29c1cff112bc3e8db0d5c0",
+      "bytes": 4855,
+      "width": 320,
+      "height": 96,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/twitch-panel-channel-rules.svg",
+      "sha256": "cd340b642693f3ca4f3e11d65435c2ec098fe1ecd1ab3d5fd39b7276fff29161",
+      "bytes": 493
+    },
+    {
+      "path": "social/twitch-panel-discord.png",
+      "sha256": "de87950dbbe0d5a0d748481a8f8f1c99709707c5b8997745ea059fd0fd6f1ad7",
+      "bytes": 4257,
+      "width": 320,
+      "height": 96,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/twitch-panel-discord.svg",
+      "sha256": "dfa96509e4f05388f996c2be9a6930febe61a7da807466214363a8d3e31fd3e4",
+      "bytes": 481
+    },
+    {
+      "path": "social/twitch-panel-setup.png",
+      "sha256": "b4decbaf15bf365d36062c83255ca3054bc5e413f7e410775a9f399120537264",
+      "bytes": 3055,
+      "width": 320,
+      "height": 96,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/twitch-panel-setup.svg",
+      "sha256": "e9ccf409065441118c4db5760a80860393f215484d4a8e88bf1e57f855bde003",
+      "bytes": 477
+    },
+    {
+      "path": "social/twitch-panel-socials.png",
+      "sha256": "69397adc69faf4d992ba2b3629dab273340b1b3e07f210f703034db607c366c9",
+      "bytes": 4428,
+      "width": 320,
+      "height": 96,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/twitch-panel-socials.svg",
+      "sha256": "7df79ac57e175cd150d046d5966ab55837664fb6b01c55ed1da72d98ab2315a3",
+      "bytes": 481
+    },
+    {
+      "path": "social/twitch-panel-support.png",
+      "sha256": "ae062b561b233833906f7ba9b249305be19e876d7144e3553a2a9eead0a62dfe",
+      "bytes": 3945,
+      "width": 320,
+      "height": 96,
+      "mode": "RGBA"
+    },
+    {
+      "path": "social/twitch-panel-support.svg",
+      "sha256": "b4e17e641c09068941af244cfa64c170144c59cc2934cb3b239c89e1ac77ddc1",
+      "bytes": 481
     }
   ]
 }

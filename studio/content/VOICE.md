@@ -127,7 +127,7 @@ A page may use one of these when it is the best way to say the thing. Two produc
 
 **Sounds like:** liner notes crossed with a plugin changelog. Sensory in the headline, numeric in the body: layer names, formats, resolutions. It can be loud for one line and then gets specific.
 
-**Does:** name the actual parts: Milkdrop, spectrum, VU meters, LRC, SRT and VTT lyrics, 16:9, 9:16, 1:1, H.264 MP4. Says rendering happens in the browser and that performance depends on the device.
+**Does:** name the actual parts: Milkdrop, spectrum, VU meters, LRC, SRT and VTT lyrics, 16:9, 9:16, 1:1, H.264 MP4. Says rendering happens in the browser. Product pages also say performance depends on the device; social posts leave that out.
 
 **Avoids:** "bring your music to life", "stunning visuals", guaranteed speed, purchasable cloud plans (live billing is off).
 
@@ -211,9 +211,11 @@ A page may use one of these when it is the best way to say the thing. Two produc
 
 **Who is talking:** Patrick, first person singular.
 
-**Sounds like:** a working note from someone who writes software and makes music and does not separate the two. Plain, a bit self-deprecating, specific about tools. "Software. Sound. Culture." stays as the identity line.
+**Sounds like:** someone who writes software and makes music and does not separate the two, showing people what he made the way he would share a new track. Plain, warm, a bit self-deprecating. "Software. Sound. Culture." stays as the identity line.
 
-**Avoids:** founder voice, third-person bio, "passionate about".
+**Does:** say what he made, who it is for and where to try it. Patrick writes most of his own posts; prepared drafts for his account are few and personal.
+
+**Avoids:** founder voice, third-person bio, "passionate about", technical explainers, invented reasons or feelings.
 
 ## Chatty Cat
 

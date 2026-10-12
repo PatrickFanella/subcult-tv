@@ -107,6 +107,9 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 
 		api.Get("/stats", h.Stats)
 		api.Post("/posting-preparation", h.IngestPublications)
+		api.Post("/posting-preparation/rerolls/claim", h.ClaimRerolls)
+		api.Post("/posting-preparation/rerolls/{id}", h.FinishReroll)
+		api.Get("/posting-preparation/feedback", h.PreparationFeedback)
 		api.Get("/posting-media/{id}", h.PostingMedia)
 
 		api.With(middleware.RateLimit(publicFormLimiter)).Post("/newsletter/subscribe", h.Subscribe)
@@ -130,8 +133,17 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 			admin.Get("/admin/studio/review/{id}/media", h.ReviewDraftMedia)
 			admin.Post("/admin/studio/review/{id}/approve", h.ApproveReviewDraft)
 			admin.Post("/admin/studio/review/{id}/decision", h.RecordDraftDecision)
+			admin.Put("/admin/studio/review/{id}/schedule", h.EditScheduledDraft)
+			admin.Post("/admin/studio/review/{id}/reroll", h.RequestReroll)
+			admin.Get("/admin/studio/rerolls", h.Rerolls)
 			admin.Get("/admin/studio/decisions", h.DraftDecisions)
 			admin.Get("/admin/studio/delivery", h.SocialDelivery)
+			admin.Get("/admin/studio/bluesky", h.BlueskyDelivery)
+			admin.Post("/admin/studio/bluesky/{id}/approve", h.ApproveBlueskyDraft)
+			admin.Get("/admin/studio/buffer", h.BufferDelivery)
+			admin.Get("/admin/studio/buffer/history", h.BufferHistory)
+			admin.Post("/admin/studio/buffer/{id}/approve", h.ApproveBufferDraft)
+			admin.Put("/admin/studio/buffer/{id}/schedule", h.EditBufferDraft)
 			admin.Post("/admin/studio/delivery", h.ApproveSchedule)
 			admin.Get("/admin/studio/assets/{id}", h.StudioAsset)
 			admin.Get("/admin/studio/references", h.ListStudioReferences)
@@ -164,6 +176,7 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 
 			// Newsletter management
 			admin.Get("/newsletter/subscribers", h.ListSubscribers)
+			admin.Post("/newsletter/subscribers/sync", h.SyncSubscribers)
 		})
 	})
 

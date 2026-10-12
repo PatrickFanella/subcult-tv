@@ -10,7 +10,7 @@ Tadooer is a private, self-hosted task and calendar planner for one owner: a web
 
 ### Status
 
-Studio proposed this promotional direction, The plan and the one thing now, on October 2, 2026 from the product's own design system. The owner has not reviewed the artwork. The headline and all supporting copy are sample text to be replaced.
+Studio proposed this promotional direction, The plan and the one thing now, on October 2, 2026 from the product's own design system. The owner approved all pack assets, including the headline and supporting copy, on October 10, 2026. Approval covers the artwork, not publication; a changed asset needs a fresh review.
 
 ### Mark and wordmark
 
@@ -41,7 +41,7 @@ Tadooer has no public domain and no sign-up. Artwork must not suggest a public s
 
 ## Voice
 
-The planner speaks for itself, quietly: one short sentence at a time, present tense. It is a private tool for one owner, so copy never recruits. Avoid "get more done", "supercharge", streaks, hustle, a URL and any sign-up invitation. Promotional copy in this pack stays labelled sample text until the owner reviews it.
+The planner speaks for itself, quietly: one short sentence at a time, present tense. It is a private tool for one owner, so copy never recruits. Avoid "get more done", "supercharge", streaks, hustle, a URL and any sign-up invitation. The owner approved this pack's promotional copy on October 10, 2026; edited copy needs a fresh review.
 
 The full voice and its sample lines are in [the voice guide](../../content/VOICE.md).
 
@@ -109,4 +109,4 @@ Use verified product claims and exact approved copy. Each product has its own vo
 
 Alt text describes the finished image, including the words visible in it. Do not describe a screenshot placeholder as a working feature. `alt-text.md` has starter descriptions for the sample artwork.
 
-Reference: Tadooer design system docs/design/ in subculture-collective/productivity-suite (branch wave/tadooer-brand, head 17d7bee, committed), mark from apps/web/public/suite-icon.svg; copied 2026-10-02. Promotional direction proposed by Studio; the owner has not reviewed the artwork.. Where an observation date was recorded, it is in the reference above. Original files in the legacy library are preserved. The inventory's hashes identify bytes. They do not establish permission to publish third-party material.
+Reference: Tadooer design system docs/design/ in subculture-collective/productivity-suite (branch wave/tadooer-brand, head 17d7bee, committed), mark from apps/web/public/suite-icon.svg; copied 2026-10-02. Promotional direction proposed by Studio; the owner approved all pack assets on October 10, 2026.. Where an observation date was recorded, it is in the reference above. Original files in the legacy library are preserved. The inventory's hashes identify bytes. They do not establish permission to publish third-party material.

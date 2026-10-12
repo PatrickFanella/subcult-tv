@@ -1,4 +1,4 @@
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import PostEditor from '@/pages/admin/PostEditor';
@@ -10,6 +10,9 @@ import {
   getPublications,
   getReviewDrafts,
   getSocialDelivery,
+  getBufferDelivery,
+  getBufferHistory,
+  savePublication,
   type PostingDraft,
   getDraftDecisions,
 } from '@/lib/api';
@@ -19,6 +22,8 @@ vi.mock('@/lib/api', () => ({
   getPostingDashboard: vi.fn(),
   getReviewDrafts: vi.fn(),
   getSocialDelivery: vi.fn(),
+  getBufferDelivery: vi.fn(),
+  getBufferHistory: vi.fn(),
   getPublications: vi.fn(),
   getDashboardStats: vi.fn(),
   saveReviewDraft: vi.fn(),
@@ -60,6 +65,8 @@ const snapshot = (drafts: PostingDraft[]) => ({
 
 afterEach(cleanup);
 beforeEach(() => {
+  vi.mocked(getBufferDelivery).mockResolvedValue({ configured: false, channels: [], receipts: [] });
+  vi.mocked(getBufferHistory).mockResolvedValue({ configured: false, posts: [] });
   vi.resetAllMocks();
   vi.mocked(getDraftDecisions).mockResolvedValue([]);
 });
@@ -137,6 +144,41 @@ describe('platform boundaries', () => {
     await screen.findByText('We shipped the clip stack.');
     expect(screen.queryByText(/Draft for human review/)).not.toBeInTheDocument();
   });
+  it('edits a missed edition in place, moves its time forward and keeps edits when saving fails', async () => {
+    const missed = new Date(Date.now() - 30 * 3600000).toISOString();
+    vi.mocked(getPublications).mockResolvedValue({
+      drafts: [
+        {
+          id: 'daily-2026-10-05-website',
+          platform: 'website',
+          title: 'Daily log',
+          body: 'We shipped the clip stack.',
+          excerpt: '',
+          due_at: missed,
+          audience: '',
+          version: 1,
+          status: 'draft',
+          provider_url: '',
+          source: {},
+        },
+      ],
+      patreon_connected: false,
+      minimum_lead_hours: 24,
+    });
+    vi.mocked(savePublication).mockRejectedValue(new Error('Draft changed'));
+    render(<PublicationReview platform="website" />, { wrapper: MemoryRouter });
+    expect(await screen.findByText('Missed its publish time')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Edit' }));
+    const form = screen.getByRole('form', { name: 'Edit publication draft' });
+    expect(form.closest('article')).toHaveClass('posting-review-card-editing');
+    expect(screen.getByText(/is past or less than 24 hours away/)).toBeInTheDocument();
+    fireEvent.change(screen.getByLabelText('Post body'), { target: { value: 'Edited body' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Save changes' }));
+    expect(await screen.findByText(/Not saved: Draft changed/)).toBeInTheDocument();
+    expect(screen.getByLabelText('Post body')).toHaveValue('Edited body');
+    const sent = vi.mocked(savePublication).mock.calls[0][0];
+    expect(new Date(sent.due_at).valueOf()).toBeGreaterThan(Date.now() + 24 * 3600000);
+  });
   it('counts prepared, unexpired drafts per platform on the dashboard', async () => {
     vi.mocked(getDashboardStats).mockResolvedValue({
       total_projects: 0,
@@ -176,8 +218,6 @@ describe('platform boundaries', () => {
     render(<AdminDashboard />, { wrapper: MemoryRouter });
     const instagram = await screen.findByText('Instagram drafts to review');
     expect(instagram.previousElementSibling).toHaveTextContent('2');
-    expect(
-      screen.getByText('X drafts to post via Buffer').previousElementSibling,
-    ).toHaveTextContent('1');
+    expect(screen.getByText('X drafts to review').previousElementSibling).toHaveTextContent('1');
   });
 });

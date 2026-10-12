@@ -10,4 +10,4 @@ TimeoutStartSec=40min
 KillMode=control-group
 UMask=0077
 Environment=PATH=/home/onnwee/.local/bin:/usr/local/bin:/usr/bin:/bin
-UnsetEnvironment=OPENAI_API_KEY CODEX_API_KEY OPENAI_BASE_URL
+UnsetEnvironment=OPENAI_API_KEY CODEX_API_KEY OPENAI_BASE_URL DISPLAY WAYLAND_DISPLAY HYPRLAND_INSTANCE_SIGNATURE XDG_CURRENT_DESKTOP

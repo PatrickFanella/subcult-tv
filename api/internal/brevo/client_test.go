@@ -102,3 +102,21 @@ func TestErrorIncludesStatusAndDetail(t *testing.T) {
 		t.Fatalf("expected HTTP 400 error with detail, got %v", err)
 	}
 }
+
+func TestNewsletterMembersSkipsListUnsubscribes(t *testing.T) {
+	var path string
+	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		path = r.URL.Path
+		_, _ = w.Write([]byte(`{"count":2,"contacts":[{"email":"Ada@Example.com","listUnsubscribed":[]},{"email":"gone@example.com","listUnsubscribed":[7]}]}`))
+	}))
+	t.Cleanup(srv.Close)
+	c := New("test-key", Newsletter{ListID: 7, TemplateID: 3, RedirectURL: "https://subcult.tv/x"})
+	c.baseURL = srv.URL
+	members, err := c.NewsletterMembers(context.Background())
+	if err != nil {
+		t.Fatalf("NewsletterMembers: %v", err)
+	}
+	if path != "/contacts/lists/7/contacts" || len(members) != 1 || members[0] != "ada@example.com" {
+		t.Fatalf("path %q members %v", path, members)
+	}
+}

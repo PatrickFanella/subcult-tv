@@ -105,6 +105,6 @@ Ignore: impressions alone, follower totals without a source of growth, GitHub st
 
 - "Post every day or the algorithm forgets you." No platform documents this; Buffer's data show gains from 1–2 posts a week over zero. *[folklore/unverified]*
 - "Hashtags grow reach." Instagram says hashtags help search, not reach; X recommends at most two. *[platform-documented]*
-- "Put links in replies on X." X says the penalty ended about mid-2025. *[platform-documented as reported]*
+- "Always put links in replies on X" or "link placement never matters." Link posts underperform on engagement in observational samples, while X leadership reportedly says the explicit penalty ended. Test placement by account and goal; measure visits and conversions separately from engagement. *[practitioner guidance; universal effect unverified]*
 - "Going viral is how small projects grow." Most indie-game wishlists come from other channels; Zukowski argues viral posts are hard to plan. *[practitioner consensus]* ([Is going viral all luck?](https://howtomarketagame.com/2022/01/17/is-going-viral-all-luck/))
 - "Reddit's 10% rule is policy." It is informal; each community sets its own rules. *[practitioner consensus]*

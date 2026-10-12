@@ -52,7 +52,19 @@ Evidence: long unbroken names expanded a 360px view and pushed the Close button 
 
 Why it works: an absurd, exact number from the evidence does all the work. The ending is a dry aside that is true by observation, not a moral.
 
-## 5. Before and after the same caption
+## 5. The product, not the menu (subcult, Undertow)
+
+> Your track is finished. Undertow turns it into a visualizer video.
+>
+> We built it as a layered music visualizer editor, with six templates to start from.
+>
+> The public editor runs in your browser. You work on the video’s layers and export an MP4 on your own machine.
+
+Evidence: the claims register's Undertow row (layered editor, six templates, browser rendering, local MP4 export). The owner approved this caption on October 10, 2026, and rejected one from the same product the next day that opened "Adding a visual layer in Undertow could open a menu taller than its own panel" and went on to measure the menu in pixels.
+
+Why it works: the first line is the reader's moment. Every sentence after it is something the reader gets. There is no bug, no before, and the maturity is carried by "public editor". The rejected caption was accurate and still worthless to a stranger, because its subject was a repair.
+
+## 6. Before and after the same caption
 
 Before (changelog): "We're working on how Patchwork shows the neighborhood. The revised home replaces an explainer card with an excerpt of nearby places and open requests when any exist. These interface changes are merged, with a live check still due."
 
