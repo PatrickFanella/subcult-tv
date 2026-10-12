@@ -5225,8 +5225,8 @@
   },
   {
     "path": "brand-tools/brands.json",
-    "sha256": "770893d1ea53dc68b91d3a585786f087403292c3292d83ba0af659ec3b1f9824",
-    "bytes": 14157
+    "sha256": "ae2a82ed7bec59a5384567c095a64fb602ffdc20a0dfd4f05ffd3e0824962db2",
+    "bytes": 14214
   },
   {
     "path": "brand-tools/build_packs.py",
@@ -6505,8 +6505,8 @@
   },
   {
     "path": "brands/index.html",
-    "sha256": "39be296ed30b61b9c1c02ce6ff6c62bbe06e89336f4ca1b6906f19a85cee850c",
-    "bytes": 21662
+    "sha256": "d3ef3b661a99c072995faa1ad06b37688a101e97a7e730fdca43f794b3991f91",
+    "bytes": 21719
   },
   {
     "path": "brand-tools/kork_launch_assets.py",

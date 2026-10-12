@@ -1,6 +1,6 @@
 {
   "owner": "SUBCULT Studio",
-  "direction": "B / Pixel cat: console phosphor; selected by the owner from four candidates on October 11, 2026 (studies/chatty-cat-directions); palette system requested",
+  "direction": "B / Pixel cat: console phosphor; selected by the owner from four candidates on October 11, 2026 (studies/chatty-cat-directions); palette system requested; owner approved the identity for application on October 11, 2026",
   "mark": "Original pixel-cat mark drawn from the pixels grid in this file; no Twitch artwork",
   "motif": "A merged chat log in bars, the rate sparkline, and the pixel cat with its cursor mouth",
   "lineage": "Rebuild of HasanAbi Chat Thing and Twitch Chat Relay by mxmilkiib, AGPL-3.0. The original Twitch-glyph PWA icon is retired; no Twitch artwork is reused.",
@@ -8,5 +8,5 @@
   "fonts": "Studio licensed font collection; OFL texts included. Cascadia Mono is bundled; Public Sans is in the Studio collection.",
   "palettes": "phosphor and amber are the two phosphor looks; the other fourteen are the app colours at their default shades, derived from web/src/palettes.css.",
   "claims": "content/social/Product Claims Register.md, entry C-CHAT; product README and docs/parity.md",
-  "publication": "local production pack v1; nothing here is approved for a post or a profile change"
+  "publication": "owner-approved identity, October 11, 2026; template layouts remain samples and are not approved social posts"
 }

@@ -1,12 +1,12 @@
 {
   "brand": "chatty-cat",
   "palette": "phosphor",
-  "status": "local production pack v1; nothing here is approved for a post or a profile change",
+  "status": "owner-approved identity, October 11, 2026; template layouts remain samples and are not approved social posts",
   "assets": [
     {
       "path": "GUIDE.md",
-      "sha256": "43c2ce9f3a50fc692394da23da34cfa8306aefb050ed2c163ea9ce8e29246fe2",
-      "bytes": 6916
+      "sha256": "5c02c2584a4edc343ea9bd3f92eb277aeffb0910dd7789aaa6173b7cba79a981",
+      "bytes": 6960
     },
     {
       "path": "WEBSITE.md",
@@ -38,8 +38,8 @@
     },
     {
       "path": "brand.json",
-      "sha256": "b1853c00da0bd6cdee99aaa9bc328117c2d4bdc7a45444714179b56c799517f3",
-      "bytes": 4087
+      "sha256": "ba70cdc195c9b417b5b9478be2fffb57e65154c5032ae37a31c7d91097b68bf0",
+      "bytes": 4723
     },
     {
       "path": "build.py",
@@ -1637,8 +1637,8 @@
     },
     {
       "path": "source-register.json",
-      "sha256": "5bfe48d594cab0fabd0c2f9faddb4b4f95fcd56558cc0c9932d9e65c5b30c493",
-      "bytes": 1219
+      "sha256": "1d6878fa7f8ee28f4932d1120c81d7fb9aa2f5e15e2bba92f69fa547f7665d3e",
+      "bytes": 1311
     },
     {
       "path": "tokens.css",
@@ -1647,8 +1647,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "decaff78766e6876c6b60ae21560e107ba987d86364b02fb7064f7ef87dec3d1",
-      "bytes": 8307
+      "sha256": "ff3971f6c210ea6fc6e16d4c7e19de9d7240a02f3b595dc031bb3c586a2d232e",
+      "bytes": 8399
     },
     {
       "path": "video/captions.ass",
