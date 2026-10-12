@@ -479,14 +479,14 @@ def main():
     for q in palettes.values():
         if q['contrast']['face'] < 3 or q['contrast']['cursor'] < 3:
             print(f'warning: palette {q["name"]} has face {q["contrast"]["face"]}:1 or cursor {q["contrast"]["cursor"]}:1 under 3:1')
+    for stale in ('logos', 'social', 'video', 'product', 'palettes', 'fonts'):
+        shutil.rmtree(ROOT / stale, ignore_errors=True)
     (ROOT / 'fonts').mkdir(exist_ok=True)
     for name in FONT_FILES:
         shutil.copyfile(FONT_SOURCE / name, ROOT / 'fonts' / name)
     catalog = json.loads((FONT_SOURCE / 'sources.json').read_text())
     save('fonts/sources.json', json.dumps([r for r in catalog if r['family'] in CONFIG['fonts'].values()], indent=2) + '\n')
     save('fontconfig.xml', f'<?xml version="1.0"?><!DOCTYPE fontconfig SYSTEM "fonts.dtd"><fontconfig><dir>{ROOT / "fonts"}</dir><cachedir>{ROOT / ".font-cache"}</cachedir></fontconfig>')
-    for stale in ('logos', 'social', 'video', 'product', 'palettes', 'fonts'):
-        shutil.rmtree(ROOT / stale, ignore_errors=True)
     build_tokens(p, palettes)
     build_palette_set(palettes)
     build_logos(p)

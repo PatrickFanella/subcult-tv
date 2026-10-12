@@ -40,7 +40,7 @@
     "wine": { "bg": "#2a1d27", "fg": "#fae9f5", "face": "#f0a868", "cursor": "#a0d080", "source": "app colour wine at its default shade 7" },
     "solarized": { "bg": "#052729", "fg": "#d8f5f6", "face": "#b58900", "cursor": "#859900", "source": "app colour solarized at its default shade 7" },
     "nord": { "bg": "#3b4a56", "fg": "#e1edf8", "face": "#88c0d0", "cursor": "#a3be8c", "source": "app colour nord at its default shade 6" },
-    "lavender": { "bg": "#dbd3ec", "fg": "#1a1029", "face": "#7a5fb5", "cursor": "#4a8a5a", "source": "app colour lavender at its default shade 2" },
+    "lavender": { "bg": "#dbd3ec", "fg": "#1a1029", "face": "#7a5fb5", "cursor": "#2e7d46", "source": "app colour lavender at its default shade 2; cursor darkened from the palette good colour to pass 3:1" },
     "sepia": { "bg": "#ebd3b4", "fg": "#231200", "face": "#9a6b12", "cursor": "#2e7d46", "source": "app colour sepia at its default shade 2" },
     "salmon": { "bg": "#fff1e5", "fg": "#0e0a07", "face": "#0f7680", "cursor": "#00754d", "source": "app colour salmon at its default shade 1" },
     "ice": { "bg": "#c9dbe0", "fg": "#04191e", "face": "#2a5fa8", "cursor": "#2e7d46", "source": "app colour ice at its default shade 2" },
