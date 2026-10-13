@@ -137,8 +137,8 @@
     "slug": "subcult-os",
     "name": "Subcult OS",
     "description": "Event planning, free ticket reservations and door check-in, in development.",
-    "longDescription": "subcult-os includes a web workspace for events, door operations, and run-of-show planning. Its React Native app gives hosts ticket scanning, invite management, and public event pages.",
-    "whyItExists": "Small live events need practical tools for the door, guest list, schedule, and tickets without piecing together unrelated apps.",
+    "longDescription": "Subcult OS is a run sheet for small shows: the event and its schedule, the crew and their roles, free ticket reservations, check-in at the door by name or ticket code on a phone, and a report when the night ends. It is in development; paid ticketing is not on offer.",
+    "whyItExists": "A small show keeps its plan, its staff, its list and its door in four different apps. Subcult OS keeps them on one sheet.",
     "status": "active",
     "type": [
       "software"
@@ -229,7 +229,7 @@
     "slug": "kork",
     "name": "Kork",
     "description": "Free link pages for socials, payment buttons and contact details.",
-    "longDescription": "Kork is a self-serve link-in-bio service. Build one themed page with 92 catalog services, links, embeds, QR codes, a contact card, and an email sign-up, then share a single link. Payment buttons go straight to the creator's own accounts, and analytics are anonymous daily totals.",
+    "longDescription": "Kork is a free, self-serve link page service. Build one themed page with 92 catalog services, links, embeds, QR codes, a contact card, and an email sign-up, then share a single link. Payment buttons go straight to the creator's own accounts, and analytics are anonymous daily totals.",
     "whyItExists": "A bio has room for one link. Kork puts the socials, tip jars, music, video, and contact details behind it on one page, without trackers and without taking a cut of tips or sales.",
     "status": "active",
     "type": [
@@ -290,9 +290,9 @@
   "subsets": {
     "slug": "subsets",
     "name": "Subsets",
-    "description": "Discover local agent skills, group them for a task, and preview and apply the set you need.",
-    "longDescription": "Subsets is a local CLI and terminal interface for agent skill collections. Discover supported user and project folders, explicitly adopt unmanaged folders, organize named groups, and preview changes before applying a selection. Inactive skills remain in a private library, with transaction history and checked rollback. The native npm edition is an alpha; Linux is tested and macOS remains unverified.",
-    "whyItExists": "A growing skill collection can become hard to manage. Subsets helps people choose the set for the work at hand while keeping folder ownership and recovery visible.",
+    "description": "Local agent skills grouped for a task, with the set previewed before it applies.",
+    "longDescription": "Subsets is a local CLI and terminal interface for a collection of agent skills. It reads supported user and project folders, adopts an unmanaged folder only when you say so, organizes named groups, and shows the change before applying a selection. Skills that are off the set wait in a private library, with a transaction history and checked rollback. The native npm edition is an alpha; Linux is tested and macOS remains unverified.",
+    "whyItExists": "A collection of skills grows past what one job needs. Subsets picks the set for the work at hand without taking over the folders.",
     "status": "incubating",
     "type": [
       "software",
@@ -385,7 +385,7 @@
     "slug": "backline",
     "name": "Backline",
     "description": "A Discord bot and dashboard for running a community: onboarding, moderation, tickets and feeds.",
-    "longDescription": "Backline runs a Discord server from one place: welcome and self-assigned roles, moderation with a case history, private tickets with expiring transcripts, feeds from Twitch, YouTube and RSS, and recovery snapshots. Twenty-three modules in five groups, each switched on per server. It is a release candidate in a private pilot; public installation is not open yet.",
+    "longDescription": "Backline is the bot and dashboard for the person running a Discord server: welcome and self-assigned roles, moderation with a case history, private tickets with expiring transcripts, feeds from Twitch, YouTube and RSS, and recovery snapshots. Twenty-three modules in five groups, each switched on per server. It is a release candidate in a private pilot; public installation is not open yet.",
     "whyItExists": "A small community needs the same tools as a large one, without stitching six bots together.",
     "status": "incubating",
     "type": [

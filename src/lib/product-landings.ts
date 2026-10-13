@@ -24,37 +24,40 @@ export interface LandingContent {
 export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
   subsets: {
     audience: 'For people building a collection of skills for their agents.',
-    introduction: 'Keep the collection. Choose the working set.',
+    introduction:
+      'A collection of skills is a toolbox. Subsets is how you pick the drawer for today, and put it back.',
     features: [
       {
-        title: 'Discover local skills',
+        title: 'What it finds',
         description:
-          'Scan supported user and project folders and see each skill’s location and owner.',
+          'Every skill in the supported user and project folders, with where it lives and who owns that folder. Reading is all it does until you say otherwise.',
       },
       {
-        title: 'Group them for the work',
+        title: 'Groups',
         description:
-          'Organize named groups for writing, development, or your own tasks. Keep everyday essentials in core.',
+          'A group for writing, a group for development, a group for whatever today is. Core stays in every set, so the essentials never go missing.',
       },
       {
-        title: 'Preview and recover',
+        title: 'The set goes on, and comes off',
         description:
-          'Inspect changes before applying a set. Inactive skills remain in a private library, with transaction history and checked rollback.',
+          'A preview shows the change before it applies. Skills that are off the set wait in a private library, and every apply is recorded so it can be rolled back and checked.',
       },
     ],
     steps: [
       {
-        title: 'Review your folders',
+        title: 'It reads before it touches',
         description:
-          'Discovery is read-only. Explicitly adopt an unmanaged folder before changing its selection.',
+          'Discovery is read-only. A folder nobody manages stays that way until you adopt it on purpose.',
       },
       {
-        title: 'Make a group',
-        description: 'Pick skills in the TUI or create a named group from the command line.',
+        title: 'Name a group',
+        description:
+          'Pick skills in the terminal interface, or create a named group from the command line.',
       },
       {
-        title: 'Preview, then apply',
-        description: 'Review the plan, apply the selection, and start a fresh agent session.',
+        title: 'Preview the set, then apply it',
+        description:
+          'Read the plan, apply the selection, and start a fresh agent session so it picks up the set.',
       },
     ],
     faqs: [
@@ -244,7 +247,8 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     closing: 'It isn’t ready for real requests. It is ready for you to look around.',
   },
   hasanara: {
-    audience: 'For viewers, researchers and anyone settling an argument about what was said.',
+    audience:
+      'For viewers with a quote to check, and for researchers who would rather cite a timestamp than a memory.',
     introduction:
       'Good evening. The record holds years of HasanAbi broadcasts, transcribed and searchable by phrase.',
     featuresLabel: 'IN THIS EDITION',
@@ -370,7 +374,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
   'subcult-os': {
     audience: 'For promoters, hosts and whoever ends up holding the list.',
     introduction:
-      'A show is a schedule and a list of names. Subcult OS keeps both where the whole team can read them. It is still in development.',
+      'The schedule and the list of names, on one sheet the whole team reads. Still in development.',
     featuresLabel: 'THE RUN SHEET',
     features: [
       {
@@ -428,7 +432,8 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     closing: 'Doors, show, close-out report. Stack the chairs.',
   },
   undertow: {
-    audience: 'For musicians, small labels and whoever got asked to make the visualizer.',
+    audience:
+      'For the musician who finished the track, and for the friend who got asked to make the visualizer.',
     introduction: 'Six templates if you’re in a hurry. Every layer is yours to move if you’re not.',
     featuresLabel: 'THE PARTS',
     features: [
@@ -697,7 +702,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
           'A web app, a Linux desktop client and an Android shell that exists in source without a built app yet. All of them talk to the same server.',
       },
     ],
-    closing: 'The plan, and the one thing now.',
+    closing: 'The rest can wait in the list.',
   },
   'chatty-cat': {
     audience: 'For viewers who keep more than one chat open and want their own settings to stick.',
@@ -758,8 +763,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     closing: 'New name, same cat.',
   },
   backline: {
-    audience:
-      'For the one person who runs the Discord server and would like to run it from one place.',
+    audience: 'For the one person who runs the Discord server and has six bots open to do it.',
     introduction: 'Onboarding, moderation, tickets and feeds, switched on per server.',
     features: [
       {
@@ -819,12 +823,13 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
           'There is an audio module. Radio, billing and pricing are outside what the pilot claims.',
       },
     ],
-    closing: 'Keep your people together.',
+    closing: 'Switch on the modules your server needs. The rest stay off.',
   },
   arkhiv: {
     audience:
-      'For readers, and for anyone who keeps a collection and wants the originals kept with it.',
-    introduction: 'Keep the original. Say what you know about it.',
+      'For readers first. Then for whoever keeps a collection and wants the originals kept with it.',
+    introduction:
+      'The file stays as it arrived. The catalogue says what is known about it, and what is not.',
     features: [
       {
         title: 'Original bytes, preserved',
@@ -940,7 +945,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
           'It can run in LAN or public exposure modes, which require the operator secret, overlay token and webhook secret to be set. Local mode is the default.',
       },
     ],
-    closing: 'Everything on air, on one screen.',
+    closing: 'When something degrades, the health page says which thing.',
   },
   pirs: {
     audience:
@@ -992,7 +997,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     closing: 'A pier is where things get attached.',
   },
   'tmux-popups': {
-    audience: 'For people who live in tmux and want popups without writing the bindings by hand.',
+    audience: 'For the tmux user who is tired of writing each popup binding by hand.',
     introduction: 'Add a row. Get a popup.',
     features: [
       {
@@ -1039,7 +1044,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
         answer: 'Bash and tmux. Python 3 only for rows that pass JSON arguments.',
       },
     ],
-    closing: 'One row in a table, one popup in tmux.',
+    closing: 'Bash and tmux. Nothing else to install.',
   },
   'omarchy-monitor-bar': {
     audience: 'For Omarchy desktops with more than one monitor.',
@@ -1085,7 +1090,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
         answer: 'Not yet. Some optional shell.json keys still need a text editor.',
       },
     ],
-    closing: 'Each monitor gets its own bar.',
+    closing: 'Pinned to one Omarchy release. When the pin moves, the plugin follows.',
   },
   'omarchy-superproductivity': {
     audience: 'For Omarchy users who run Super Productivity and want the current task in sight.',
@@ -1134,7 +1139,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
         answer: 'Yes. It reads and writes through the desktop app on the same machine.',
       },
     ],
-    closing: 'The task you are on, in the top bar.',
+    closing: 'It talks to the app on loopback. Nothing leaves the machine.',
   },
   'omarchy-plugin-spool': {
     audience: 'For an Omarchy desktop that could use some company while the agent works.',
@@ -1181,7 +1186,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
           'The Quickshell plugin API on Omarchy with Hyprland, where it was developed and is run.',
       },
     ],
-    closing: 'A cassette that knows what your agent is doing.',
+    closing: 'It is a cassette. It waves back.',
   },
   'omarchy-plugin-shelfish': {
     audience: 'For an Omarchy bar that has more widgets than attention.',
@@ -1222,7 +1227,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
           'It depends on an internal shell API, cannot restore the exact pre-group positions, and discovers status by polling every half second. Omarchy plugins run unsandboxed.',
       },
     ],
-    closing: 'Twelve widgets, three shelves.',
+    closing: 'Remove it and every widget goes back where it was.',
   },
   'obsidian-plugin-metronome-tuner': {
     audience: 'For anyone who practises with their notes open.',
@@ -1264,7 +1269,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
         answer: 'Yes. It supports Obsidian 1.7.2 and later on desktop and mobile.',
       },
     ],
-    closing: 'Count in. Tune up. Keep the notes open.',
+    closing: 'The microphone is yours to switch on. The audio stays on the device.',
   },
   'super-productivity-mcp': {
     audience:
@@ -1307,6 +1312,6 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
           'Super Productivity desktop 14 or later. Archive and restore need the optional local REST API; recurrence tools need a build whose plugin sandbox allows them.',
       },
     ],
-    closing: 'Add the task where you keep your tasks.',
+    closing: 'Broad writes run as a dry run first.',
   },
 };
