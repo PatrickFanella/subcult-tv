@@ -1,12 +1,12 @@
 {
-  "status": "proposed",
+  "status": "accepted",
   "brand": "Metronome + Tuner",
   "generator": "brand-tools/site_packs.py",
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "dbb1dd2aab816042efea744144fef3b8d1853f5766e17942bf7e974850debec9",
-      "bytes": 2199
+      "sha256": "5d1801a2b8b9fa28965cd87a96478fb0a9554d9b4d8efcd4d9da5d4ab2a3b81a",
+      "bytes": 2245
     },
     {
       "path": "alt-text.md",
@@ -179,8 +179,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "922adbc248488278cffaec1aacf8c3643497d49a1d5ce14a4b2956b2c7de615c",
-      "bytes": 1309
+      "sha256": "ff4174b7658ee28e30bb5d49815786c58174719101fb46ac4df7840bf1f92cdd",
+      "bytes": 1428
     }
   ]
 }

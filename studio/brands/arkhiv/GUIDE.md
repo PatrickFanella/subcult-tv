@@ -2,7 +2,7 @@
 
 Arkhiv: A zine archive: original files preserved, a catalogue with a reader and downloads.
 
-Status: Proposed identity, generated October 12, 2026 by the site agent from `site-packs.json`; the owner has not reviewed it. Sample layouts are not approved for publication.
+Status: Accepted identity: generated October 12, 2026 by the site agent from `site-packs.json` and accepted by the owner on October 13, 2026 for the product pages. Sample layouts still need their own review before a post.
 
 ## Mark
 

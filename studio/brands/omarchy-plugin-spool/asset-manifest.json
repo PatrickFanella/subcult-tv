@@ -1,12 +1,12 @@
 {
-  "status": "proposed",
+  "status": "accepted",
   "brand": "Spool",
   "generator": "brand-tools/site_packs.py",
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "3dcb4ff221d4bf10e5a261ace0fb6eadc8b8b40350d1af074720e4e0e57e4dad",
-      "bytes": 2176
+      "sha256": "c6dc1c829205034be86fefd165a97881fdaa26b23fb1deeb34b07c2c7f8a1cfe",
+      "bytes": 2222
     },
     {
       "path": "alt-text.md",
@@ -174,8 +174,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "6954cd390c0d3cfc701357e55694f60bb82b413ff785b1d6f8fcfd3ad7d99bbb",
-      "bytes": 1288
+      "sha256": "394c788b082e869afcfb1681ab18017918a4bc43a49ab5d38488cbe520212ca7",
+      "bytes": 1407
     }
   ]
 }

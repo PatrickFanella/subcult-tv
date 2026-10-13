@@ -1,12 +1,12 @@
 {
-  "status": "proposed",
+  "status": "accepted",
   "brand": "Arkhiv",
   "generator": "brand-tools/site_packs.py",
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "0975af4004591175b92f6e1eae34815639ffe6c8134d13d1d7490585872f772d",
-      "bytes": 2181
+      "sha256": "421c27eb0500285cd182139b7eec383392a8263b2392158b226756b0119ea579",
+      "bytes": 2227
     },
     {
       "path": "alt-text.md",
@@ -179,8 +179,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "5d1a58980a806509aa01e29abb9a622b1c21718d4bf04c6f21b06ebe72c3daf6",
-      "bytes": 1281
+      "sha256": "4791009498af357fea9c7188388592684ae7b55e55ed5ad1a58f756bccdfe7da",
+      "bytes": 1400
     }
   ]
 }

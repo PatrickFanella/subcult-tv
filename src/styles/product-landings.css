@@ -60,6 +60,34 @@
 .product-landing[data-product='subsets'] .landing-wordmark h1 {
   text-transform: lowercase;
 }
+.product-landing[data-product='transcript-create'] {
+  /* The fallback palette is Rekolekt's; the pack's fonts were missing. */
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Space Grotesk', sans-serif;
+  --lp-mono: 'JetBrains Mono', monospace;
+}
+.product-landing[data-product='tadooer'] {
+  /* Catppuccin Mocha surfaces and text, Dracula purple as the one action colour. */
+  --lp-bg: #1e1e2e;
+  --lp-panel: #252538;
+  --lp-text: #e2e6f6;
+  --lp-muted: #a6adc8;
+  --lp-line: #3a3a54;
+  --lp-accent: #bd93f9;
+  --lp-accent-text: #bd93f9;
+  --lp-on-accent: #11111b;
+  --lp-focus: #8be9fd;
+  --lp-radius: 8px;
+  --lp-body: 'Inter', sans-serif;
+  --lp-display: 'Inter', sans-serif;
+  --lp-mono: 'Atkinson Hyperlegible Mono', monospace;
+}
+.product-landing[data-product='tadooer'] .landing-wordmark h1 {
+  letter-spacing: -0.015em;
+}
+.product-landing[data-product='tadooer'] .landing-number {
+  font-variant-numeric: tabular-nums;
+}
 .product-landing[data-product='clpr'] {
   --lp-bg: #0e0c13;
   --lp-panel: #17141f;
@@ -85,6 +113,7 @@
   --lp-shadow: 4px 4px 0 rgb(23 32 25 / 16%);
   --lp-body: 'Public Sans', 'Segoe UI', sans-serif;
   --lp-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --lp-mono: 'JetBrains Mono', monospace;
 }
 .product-landing[data-product='hasanara'] {
   --lp-bg: #0f0f0f;
@@ -92,8 +121,8 @@
   --lp-text: #eeeae1;
   --lp-muted: #b5afa3;
   --lp-line: #2f2f2f;
-  --lp-accent: #ff5b52;
-  --lp-on-accent: #1a0403;
+  --lp-accent: #ff3333;
+  --lp-on-accent: #140303;
   --lp-radius: 2px;
   --lp-body: 'Inter Tight', system-ui, 'Segoe UI', sans-serif;
   --lp-display: 'Newsreader', 'Iowan Old Style', Georgia, serif;
@@ -181,7 +210,6 @@
   --lp-mono: 'Cascadia Mono', ui-monospace, monospace;
 }
 .product-landing[data-product='chatty-cat'] .landing-wordmark h1 {
-  text-transform: lowercase;
   letter-spacing: 0;
 }
 .product-landing[data-product='chatty-cat'] .landing-wordmark img {
@@ -221,7 +249,7 @@
   --lp-text: #1a1816;
   --lp-muted: #4e4a45;
   --lp-line: #c9c2b2;
-  --lp-accent: #d8262c;
+  --lp-accent: #b31f24;
   --lp-accent-text: #b31f24;
   --lp-on-accent: #f3efe4;
   --lp-focus: #2b59c3;
@@ -333,7 +361,7 @@
   --lp-line: #3b3156;
   --lp-accent: #8a5cff;
   --lp-accent-text: #b9ff3b;
-  --lp-on-accent: #f1ecff;
+  --lp-on-accent: #120f1c;
   --lp-focus: #b9ff3b;
   --lp-radius: 14px;
   --lp-body: 'Public Sans', sans-serif;
@@ -364,7 +392,7 @@
   --lp-text: #1d1a24;
   --lp-muted: #534d5e;
   --lp-line: #cfc8bf;
-  --lp-accent: #e04e7a;
+  --lp-accent: #b82e5a;
   --lp-accent-text: #b82e5a;
   --lp-on-accent: #fffdf9;
   --lp-focus: #2f6f73;
@@ -725,6 +753,9 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+/* The guide limits the chromatic offset to large titles. */
+.product-landing[data-product='undertow'] h1 {
   text-shadow:
     -1.5px 0 0 #9cecff,
     1.5px 0 0 #ff9fe0;
@@ -846,6 +877,10 @@
   padding-left: 0;
 }
 @media (max-width: 900px) {
+  /* The 23-product list took the first screen on phones; keep the directory link. */
+  .landing-product-nav > div {
+    display: none;
+  }
   .landing-hero {
     grid-template-columns: 1fr;
     gap: 40px;

@@ -1,12 +1,12 @@
 {
-  "status": "proposed",
+  "status": "accepted",
   "brand": "Super Productivity for Omarchy",
   "generator": "brand-tools/site_packs.py",
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "7f278ebc2449b01a755e7b457e7da81b2fc8e0b20d199b0dcb68f855a53f6510",
-      "bytes": 2232
+      "sha256": "1444b29b322fc14d335378dfb4f7ef073b93ab362dcf0787ce1fb7bec11611aa",
+      "bytes": 2278
     },
     {
       "path": "alt-text.md",
@@ -179,8 +179,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "67191437935b688a3fdd491c06900aef2ae1316773ce54199c68fe755392e356",
-      "bytes": 1321
+      "sha256": "3e1f27ba689aece44fe63243426b9f7209ffd44ed296712e4ec3232e0deae02a",
+      "bytes": 1440
     }
   ]
 }

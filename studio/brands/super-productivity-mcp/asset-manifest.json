@@ -1,12 +1,12 @@
 {
-  "status": "proposed",
+  "status": "accepted",
   "brand": "super-productivity-mcp",
   "generator": "brand-tools/site_packs.py",
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "8a4743525bd0985e2d06e62c3097ac9e71840feeed2070e119f4420d0f2f7e6f",
-      "bytes": 2177
+      "sha256": "61b39998a5b59123681d683b194a17fe83c1149f22326746dbde1c0d59402e95",
+      "bytes": 2223
     },
     {
       "path": "alt-text.md",
@@ -164,8 +164,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "c34eb0175434a65607bfd1e90f20bc89f27ee3f2b0cac51f1621b360b765c77c",
-      "bytes": 1301
+      "sha256": "48ad93decb635306337dc937208eeab8a0f87a6138c1d7fa78f7bd9e5114b963",
+      "bytes": 1420
     }
   ]
 }

@@ -141,7 +141,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         title: 'The bit',
         description:
-          'See what’s trending, or go straight to a creator, a topic or a tag. It beats scrolling up through chat for the link.',
+          'Start in the feed, or go straight to a creator, a topic or a tag. It beats scrolling up through chat for the link.',
       },
       {
         title: 'The one from last Tuesday',
@@ -161,7 +161,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     steps: [
       {
         title: 'Go looking',
-        description: 'Start with what’s trending, or pick a creator, a topic or a tag.',
+        description: 'Start in the feed, or pick a creator, a topic or a tag.',
       },
       {
         title: 'Keep what you find',
@@ -450,7 +450,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         title: 'H.264 MP4, 720p to 4K',
         description:
-          'Export several formats in one go, or render a 15-second preview first. Rendering happens in your browser, so speed depends on your device.',
+          'Export the landscape, vertical and square cuts from the one project, or render a 15-second preview first. Rendering happens in your browser, so speed depends on your device.',
       },
     ],
     stepsLabel: 'SIGNAL PATH',
@@ -510,7 +510,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         title: 'Your name as your username',
         description:
-          'Use a domain you own as your handle, such as @yourband.com, so people can tell the account is really you.',
+          'The plan is for a domain you own to work as your handle, such as @yourband.com, so people can tell the account is really you. That part is not switched on yet.',
       },
     ],
     stepsLabel: 'PROCEDURE',
@@ -542,7 +542,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         question: 'What happens to my account if I leave?',
         answer:
-          'Accounts on the open network can move to another host. We will document how before Prichal opens.',
+          'Accounts on the open network are designed to move between hosts. Moving one off Prichal has its own checks to pass, and we will document how before Prichal opens.',
       },
       {
         question: 'Can an organization bring its members?',
@@ -610,8 +610,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     faqs: [
       {
         question: 'What does Kork cost?',
-        answer:
-          'Nothing. Kork is free to use. A paid Kork Pro plan is planned, and its price has not been set.',
+        answer: 'Nothing. Kork is free to use.',
       },
       {
         question: 'Does Kork track my visitors?',
@@ -621,10 +620,6 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         question: 'Can I move my page from Linktree?',
         answer: 'Yes. Import it from Linktree or another link page.',
-      },
-      {
-        question: 'Can I use my own domain?',
-        answer: 'Not yet. Custom domain support is written but has not been rolled out.',
       },
       {
         question: 'Can I take my data with me?',
@@ -689,7 +684,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         question: 'What about my existing Super Productivity data?',
         answer:
-          'The import reads a Super Productivity backup and keeps projects, tags, tasks and tracked time. The project started as a port of that app and has grown past it.',
+          'The project started as a port of that app and has grown past it. Issue connections to GitHub and Gitea can import tasks today; a Super Productivity import is on the roadmap and not available yet.',
       },
       {
         question: 'Does it work offline?',
@@ -821,7 +816,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         question: 'Does it play music?',
         answer:
-          'There is an audio module with approved SomaFM stations. Radio, billing and pricing are outside what the pilot claims.',
+          'There is an audio module. Radio, billing and pricing are outside what the pilot claims.',
       },
     ],
     closing: 'Keep your people together.',

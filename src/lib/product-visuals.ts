@@ -10,6 +10,7 @@ export const SCREENSHOT_CAPTIONS: Record<string, string> = {
 
 // Products without a screenshot that show their Studio brand hero instead.
 export const BRAND_HEROES = new Map<string, string>([
+  ['left-field', 'Left Field: Where the field bends. LF mark on warm paper.'],
   ['overlaid', 'Overlaid brand mark: a tally lamp on an overlay card, with the name beside it'],
   [
     'pirs',

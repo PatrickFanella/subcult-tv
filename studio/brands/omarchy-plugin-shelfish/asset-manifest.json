@@ -1,12 +1,12 @@
 {
-  "status": "proposed",
+  "status": "accepted",
   "brand": "Shelfish",
   "generator": "brand-tools/site_packs.py",
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "064cc92101532729024d14906a08ad68f0e6ca7f3f9b50e8b8129ec57de5bec3",
-      "bytes": 2151
+      "sha256": "8f74d1330682870567abf0879fad67245078ea04fcfb04175db95611b5bed12b",
+      "bytes": 2197
     },
     {
       "path": "alt-text.md",
@@ -179,8 +179,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "cf44179dd847c7c9ad17445fa4d696d063c00b185c72ff09485b3d2489530ce6",
-      "bytes": 1291
+      "sha256": "b5b69fcf6936ba12978a61d162bc9c0806e56db07b75fa2e3ba3532e8bb6f88f",
+      "bytes": 1410
     }
   ]
 }
