@@ -159,6 +159,12 @@ Backline (October 4, 2026): the owner selected Poster Crew for the Discord commu
 
 Backline landing preview: [open the page](../brands/backline/landing.html), [read its website specification](../brands/backline/WEBSITE.md), or refresh from the product with `python brands/backline/build_landing.py --product-root /path/to/backline`. Source revision and hashes are retained in `landing-provenance.json`.
 
+### Site packs
+
+Added October 12, 2026. `site_packs.py` builds ten smaller packs for the site's project pages from `site-packs.json`: Overlaid, Pirs, tmux-popups, Arkhiv, Omarchy Multi-Monitor Bar, Super Productivity for Omarchy, Spool, Shelfish, Metronome + Tuner and super-productivity-mcp. Each mark is an original geometric drawing in code, one function per brand, and no pack reuses another product's motif. A pack holds the colour and two monochrome marks, a lockup, a 1440×900 hero, a 1200×630 link preview, a sample banner, square and avatar, the fonts it uses with their licences, tokens, a guide, alt text and a hash-bound `asset-manifest.json` with `status: proposed`. Text is converted to paths with Inkscape, so no SVG needs fonts, and contrast below 4.5:1 for text or 3:1 for the accent fails the build. These are proposals the owner has not reviewed; the sample layouts are not approved for publication.
+
+Rebuild all ten with `python3 studio/brand-tools/site_packs.py` from the repository root, or one with `--only <slug>`. A rebuild of an unchanged configuration writes identical bytes. The script also refreshes the rows for these packs, itself, its configuration, the two READMEs and the gallery in `../asset-manifest.json`; `--no-library-manifest` skips that step.
+
 ### Chatty Cat
 
 Added October 11, 2026 as Chat Thing; renamed the same day when the owner chose direction B, Pixel cat, from [four candidates](../studies/chatty-cat-directions/index.html) and asked for many palettes and easy customisation. Chatty Cat is the self-hosted Twitch chat client at chat.subcult.tv (`subculture-collective/chatty-cat`), the Go and TypeScript rebuild of mxmilkiib's HasanAbi Chat Thing.

@@ -6,9 +6,23 @@
     "longDescription": "clpr sorts Twitch clips by creator, topic and tag. Viewers save clips to playlists and share them.",
     "whyItExists": "Twitch makes a clip easy to create and hard to find a week later. clpr is where to look.",
     "status": "active",
-    "type": ["software", "media", "social"],
-    "stack": ["Go", "TypeScript", "React", "Twitch API"],
-    "topics": ["twitch", "clips", "curation", "social"],
+    "type": [
+      "software",
+      "media",
+      "social"
+    ],
+    "stack": [
+      "Go",
+      "TypeScript",
+      "React",
+      "Twitch API"
+    ],
+    "topics": [
+      "twitch",
+      "clips",
+      "curation",
+      "social"
+    ],
     "url": "https://clpr.tv",
     "repoUrl": "https://git.subcult.tv/subculture-collective/clpr",
     "lastUpdated": "2026-08-18T00:00:00Z",
@@ -26,9 +40,21 @@
     "whyItExists": "Patchwork makes mutual aid requests searchable and moderatable while keeping the network on an open protocol.",
     "status": "active",
     "url": "https://patchwork.subcult.tv",
-    "type": ["software", "social"],
-    "stack": ["TypeScript", "AT Protocol", "Ingestion", "Moderation"],
-    "topics": ["mutual-aid", "atproto", "moderation"],
+    "type": [
+      "software",
+      "social"
+    ],
+    "stack": [
+      "TypeScript",
+      "AT Protocol",
+      "Ingestion",
+      "Moderation"
+    ],
+    "topics": [
+      "mutual-aid",
+      "atproto",
+      "moderation"
+    ],
     "repoUrl": "https://git.subcult.tv/subculture-collective/patchwork",
     "lastUpdated": "2026-08-18T00:00:00Z",
     "screenshot": "/screenshots/patchwork-home-1440.webp",
@@ -44,7 +70,11 @@
     "longDescription": "HasanAra is a searchable video and transcript archive built on Rekolekt. Find a passage, return to its timestamp in the original recording, and save or share it with its source context.",
     "whyItExists": "Years of broadcasts are hard to search or cite. HasanAra turns the speech into timestamped text that people can find and link. Transcripts are automatic and need checking against the recording before quoting.",
     "status": "active",
-    "type": ["software", "media", "social"],
+    "type": [
+      "software",
+      "media",
+      "social"
+    ],
     "stack": [
       "Python",
       "FastAPI",
@@ -56,7 +86,13 @@
       "Vite",
       "OpenSearch"
     ],
-    "topics": ["transcription", "youtube", "search", "archives", "whisper"],
+    "topics": [
+      "transcription",
+      "youtube",
+      "search",
+      "archives",
+      "whisper"
+    ],
     "url": "https://hasanara.tv",
     "repoUrl": "https://git.subcult.tv/subculture-collective/hasanara",
     "lastUpdated": "2026-08-18T00:00:00Z",
@@ -73,12 +109,26 @@
     "longDescription": "Rekolekt is the shared transcript archive application behind HasanAra. Turn long-form recordings into timestamped, searchable text, browse the archive, and save or share passages with their source context. Each archive can use its own identity and branding while running the same application core.",
     "whyItExists": "Recorded conversations need searchable text and links back to their sources. The shared application lets different archives use those tools with their own identity.",
     "status": "active",
-    "type": ["software", "tools", "media"],
-    "stack": ["Python", "FastAPI", "PostgreSQL", "React"],
-    "topics": ["transcription", "archives", "search", "self-hosting"],
+    "type": [
+      "software",
+      "tools",
+      "media"
+    ],
+    "stack": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "React"
+    ],
+    "topics": [
+      "transcription",
+      "archives",
+      "search",
+      "self-hosting"
+    ],
     "repoUrl": "https://git.subcult.tv/subculture-collective/rekolekt",
     "lastUpdated": "2026-10-01T00:00:00Z",
-    "featured": true,
+    "featured": false,
     "order": 3,
     "coverColor": "#b8df72",
     "coverPattern": "waves"
@@ -90,12 +140,24 @@
     "longDescription": "subcult-os includes a web workspace for events, door operations, and run-of-show planning. Its React Native app gives hosts ticket scanning, invite management, and public event pages.",
     "whyItExists": "Small live events need practical tools for the door, guest list, schedule, and tickets without piecing together unrelated apps.",
     "status": "active",
-    "type": ["software"],
-    "stack": ["Vite", "React", "TypeScript", "Expo", "React Native"],
-    "topics": ["events", "ticketing", "mobile"],
+    "type": [
+      "software"
+    ],
+    "stack": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "Expo",
+      "React Native"
+    ],
+    "topics": [
+      "events",
+      "ticketing",
+      "mobile"
+    ],
     "repoUrl": "https://git.subcult.tv/subculture-collective/subcult-os",
     "lastUpdated": "2026-08-18T00:00:00Z",
-    "featured": true,
+    "featured": false,
     "order": 4,
     "coverColor": "#00ffff",
     "coverPattern": "sigil"
@@ -107,9 +169,22 @@
     "longDescription": "Undertow combines audio-reactive visualizers, artwork, text, timed lyrics, and video backgrounds in a layered editor. Create landscape, portrait, and square layouts, then export MP4 videos locally in the browser. Accounts are optional and save projects. Cloud rendering is being tested with live billing disabled.",
     "whyItExists": "A finished track still needs video for each platform. Undertow puts the audio, artwork, lyrics and export in one editor that renders on the musician's own machine.",
     "status": "active",
-    "type": ["software", "media"],
-    "stack": ["TypeScript", "React", "WebCodecs", "Butterchurn"],
-    "topics": ["music", "visualizers", "video", "browser"],
+    "type": [
+      "software",
+      "media"
+    ],
+    "stack": [
+      "TypeScript",
+      "React",
+      "WebCodecs",
+      "Butterchurn"
+    ],
+    "topics": [
+      "music",
+      "visualizers",
+      "video",
+      "browser"
+    ],
     "repoUrl": "https://git.subcult.tv/subculture-collective/undertow",
     "lastUpdated": "2026-10-01T00:00:00Z",
     "screenshot": "/screenshots/undertow-editor-1440.webp",
@@ -125,14 +200,27 @@
     "longDescription": "Prichal runs a personal data server (PDS) for your account on the open network Bluesky runs on: your posts, media and identity live on a server that is yours, and Prichal keeps it running. It is a private preview and not open for sign-up yet.",
     "whyItExists": "Running your own server on the open network means keeping a machine online and up to date. Prichal does that work so creators and organizations can own their place on the network without administering it.",
     "status": "incubating",
-    "type": ["software", "social"],
-    "stack": ["Go", "PostgreSQL", "React", "AT Protocol"],
-    "topics": ["at-protocol", "bluesky", "hosting", "identity"],
+    "type": [
+      "software",
+      "social"
+    ],
+    "stack": [
+      "Go",
+      "PostgreSQL",
+      "React",
+      "AT Protocol"
+    ],
+    "topics": [
+      "at-protocol",
+      "bluesky",
+      "hosting",
+      "identity"
+    ],
     "url": "https://prichal.subcult.tv",
     "repoUrl": "https://git.subcult.tv/subculture-collective/prichal",
     "lastUpdated": "2026-10-02T00:00:00Z",
     "screenshot": "/screenshots/prichal-home-1440.webp",
-    "featured": true,
+    "featured": false,
     "order": 6,
     "coverColor": "#b23a26",
     "coverPattern": "circuit"
@@ -144,9 +232,22 @@
     "longDescription": "Kork is a self-serve link-in-bio service. Build one themed page with 92 catalog services, links, embeds, QR codes, a contact card, and an email sign-up, then share a single link. Payment buttons go straight to the creator's own accounts, and analytics are anonymous daily totals.",
     "whyItExists": "A bio has room for one link. Kork puts the socials, tip jars, music, video, and contact details behind it on one page, without trackers and without taking a cut of tips or sales.",
     "status": "active",
-    "type": ["software"],
-    "stack": ["Go", "PostgreSQL", "React", "TypeScript", "Vite"],
-    "topics": ["link-in-bio", "link-pages", "creators", "privacy"],
+    "type": [
+      "software"
+    ],
+    "stack": [
+      "Go",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+      "Vite"
+    ],
+    "topics": [
+      "link-in-bio",
+      "link-pages",
+      "creators",
+      "privacy"
+    ],
     "url": "https://kork.subcult.tv",
     "repoUrl": "https://git.subcult.tv/subculture-collective/kork",
     "lastUpdated": "2026-10-02T00:00:00Z",
@@ -163,12 +264,25 @@
     "longDescription": "Left Field organizes election, incumbent, campaign-finance and geography evidence into seat records, priority briefs and a source ledger. Scores are versioned and provisional; missing evidence stays visible.",
     "whyItExists": "Election research is scattered across agencies and reports. Left Field brings seat records and their source context together for inspection.",
     "status": "incubating",
-    "type": ["software", "tools"],
-    "stack": ["Next.js", "TypeScript", "PostgreSQL", "PostGIS"],
-    "topics": ["elections", "research", "public-data", "provenance"],
+    "type": [
+      "software",
+      "tools"
+    ],
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "PostGIS"
+    ],
+    "topics": [
+      "elections",
+      "research",
+      "public-data",
+      "provenance"
+    ],
     "repoUrl": "https://git.subcult.tv/subculture-collective/left-field",
     "lastUpdated": "2026-10-02T00:00:00Z",
-    "featured": true,
+    "featured": false,
     "order": 8,
     "coverColor": "#a33c26",
     "coverPattern": "grid"
@@ -180,13 +294,26 @@
     "longDescription": "Subsets is a local CLI and terminal interface for agent skill collections. Discover supported user and project folders, explicitly adopt unmanaged folders, organize named groups, and preview changes before applying a selection. Inactive skills remain in a private library, with transaction history and checked rollback. The native npm edition is an alpha; Linux is tested and macOS remains unverified.",
     "whyItExists": "A growing skill collection can become hard to manage. Subsets helps people choose the set for the work at hand while keeping folder ownership and recovery visible.",
     "status": "incubating",
-    "type": ["software", "tools"],
-    "stack": ["TypeScript", "Node.js", "Ink", "React"],
-    "topics": ["agent-skills", "cli", "tui", "local-tools"],
+    "type": [
+      "software",
+      "tools"
+    ],
+    "stack": [
+      "TypeScript",
+      "Node.js",
+      "Ink",
+      "React"
+    ],
+    "topics": [
+      "agent-skills",
+      "cli",
+      "tui",
+      "local-tools"
+    ],
     "url": "https://subsets.subcult.tv",
     "repoUrl": "https://git.subcult.tv/subculture-collective/subsets",
     "lastUpdated": "2026-10-04T00:00:00Z",
-    "featured": true,
+    "featured": false,
     "order": 9,
     "coverColor": "#94f7b7",
     "coverPattern": "grid"
@@ -198,9 +325,23 @@
     "longDescription": "Tadooer is a private, self-hosted task and calendar planner for one owner. Tasks sit beside the calendar on one time grid in the Planner, boards group them by filters you choose, and a focus session runs on one controlling device at a time with time landing in the worklog. A Baikal CalDAV server, bundled or one you already run, is the calendar authority, and Google Calendar connects as well. There is a web app, a Linux desktop client and an Android shell that exists in source only. There is no hosted service and no sign-up.",
     "whyItExists": "A planner for one person should run on that person's own server, keep the calendar honest, and show the day and the one thing being done now on one screen.",
     "status": "active",
-    "type": ["software", "tools"],
-    "stack": ["TypeScript", "React", "Node.js", "SQLite", "CalDAV"],
-    "topics": ["planner", "tasks", "calendar", "self-hosted"],
+    "type": [
+      "software",
+      "tools"
+    ],
+    "stack": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "SQLite",
+      "CalDAV"
+    ],
+    "topics": [
+      "planner",
+      "tasks",
+      "calendar",
+      "self-hosted"
+    ],
     "repoUrl": "https://git.subcult.tv/subculture-collective/tadooer",
     "lastUpdated": "2026-10-12T00:00:00Z",
     "screenshot": "/screenshots/tadooer-today-1280.webp",
@@ -208,5 +349,355 @@
     "order": 10,
     "coverColor": "#bd93f9",
     "coverPattern": "grid"
+  },
+  "chatty-cat": {
+    "slug": "chatty-cat",
+    "name": "Chatty Cat",
+    "description": "A self-hosted Twitch chat client that merges up to six channels into one scrollback.",
+    "longDescription": "Chatty Cat rebuilds HasanAbi Chat Thing by mxmilkiib in Go and TypeScript so SUBCULT can host it. Anonymous viewing merges up to six channels, reconnects and restores public backfill, and keeps the original palettes, fonts, filters and saved slots. The original app stays up until every parity gate passes.",
+    "whyItExists": "Viewers who follow several streams want one log with their own settings, on a server they can trust.",
+    "status": "active",
+    "type": [
+      "software",
+      "media",
+      "social"
+    ],
+    "stack": [
+      "Go",
+      "TypeScript",
+      "Vite"
+    ],
+    "topics": [
+      "twitch",
+      "chat",
+      "self-hosting"
+    ],
+    "url": "https://chat.subcult.tv",
+    "repoUrl": "https://git.subcult.tv/subculture-collective/chatty-cat",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "screenshot": "/screenshots/chatty-cat-home-1440.webp",
+    "featured": true,
+    "order": 11,
+    "coverColor": "#7dff9a",
+    "coverPattern": "grid"
+  },
+  "backline": {
+    "slug": "backline",
+    "name": "Backline",
+    "description": "A Discord bot and dashboard for running a community: onboarding, moderation, tickets and feeds.",
+    "longDescription": "Backline runs a Discord server from one place: welcome and self-assigned roles, moderation with a case history, private tickets with expiring transcripts, feeds from Twitch, YouTube and RSS, and recovery snapshots. Twenty-three modules in five groups, each switched on per server. It is a release candidate in a private pilot; public installation is not open yet.",
+    "whyItExists": "A small community needs the same tools as a large one, without stitching six bots together.",
+    "status": "incubating",
+    "type": [
+      "software",
+      "social"
+    ],
+    "stack": [
+      "TypeScript",
+      "Node",
+      "discord.js",
+      "PostgreSQL",
+      "React"
+    ],
+    "topics": [
+      "discord",
+      "moderation",
+      "community"
+    ],
+    "url": "https://backline.subcult.tv",
+    "repoUrl": "https://git.subcult.tv/subculture-collective/backline",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "screenshot": "/screenshots/backline-home-1440.webp",
+    "featured": false,
+    "order": 12,
+    "coverColor": "#8b5cf6",
+    "coverPattern": "sigil"
+  },
+  "arkhiv": {
+    "slug": "arkhiv",
+    "name": "Arkhiv",
+    "description": "A zine archive: original files preserved, a catalogue with a reader and downloads.",
+    "longDescription": "Arkhiv acquires explicitly selected document files, preserves their original bytes and serves a catalogue with local PDF reading and downloads. The first public collection is the Anarchist Zine Archive at arkhiv.subcult.tv, with 699 documents. Rights are unknown for most of them, so nothing is offered under a reuse license.",
+    "whyItExists": "Zines were made to be copied and handed on. An archive should keep the original and say what it knows about it.",
+    "status": "active",
+    "type": [
+      "software",
+      "media"
+    ],
+    "stack": [
+      "Go",
+      "React",
+      "PostgreSQL",
+      "pdf.js"
+    ],
+    "topics": [
+      "archives",
+      "zines",
+      "preservation"
+    ],
+    "url": "https://arkhiv.subcult.tv",
+    "repoUrl": "https://git.subcult.tv/subculture-collective/arkhiv",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "screenshot": "/screenshots/arkhiv-home-1440.webp",
+    "featured": true,
+    "order": 13,
+    "coverColor": "#d8262c",
+    "coverPattern": "dots"
+  },
+  "overlaid": {
+    "slug": "overlaid",
+    "name": "Overlaid",
+    "description": "OBS overlays, a Twitch bot and an operator desk for live streams.",
+    "longDescription": "Overlaid is an operator desk for a stream: alerts, chat, ticker, goals, now-playing and starting, BRB and ending overlays for OBS, Twitch events fed into them, a chat bot with commands, timers and moderation, OBS scene controls, rehearsal sessions and a health page. It runs on your own machine beside OBS. It is in development with no public instance.",
+    "whyItExists": "One person running a stream needs the overlays, the bot and the health check on one screen.",
+    "status": "incubating",
+    "type": [
+      "software",
+      "media"
+    ],
+    "stack": [
+      "Go",
+      "TypeScript",
+      "React",
+      "PostgreSQL",
+      "OBS WebSocket"
+    ],
+    "topics": [
+      "streaming",
+      "obs",
+      "twitch"
+    ],
+    "repoUrl": "https://git.subcult.tv/subculture-collective/overlaid",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "featured": false,
+    "order": 14,
+    "coverColor": "#ff3b4e",
+    "coverPattern": "waves"
+  },
+  "pirs": {
+    "slug": "pirs",
+    "name": "Pirs",
+    "description": "An experimental AT Protocol personal data server with plugin hook points.",
+    "longDescription": "Pirs forks the Bluesky PDS distribution to make it extensible: a draft hook-point specification, a status endpoint, a smoke test that boots a throwaway server, and a planned plugin host that never receives signing keys. It is not production software and no plugin runs yet.",
+    "whyItExists": "A personal data server should be something its operator can extend without patching the upstream.",
+    "status": "incubating",
+    "type": [
+      "software",
+      "tools"
+    ],
+    "stack": [
+      "TypeScript",
+      "Node",
+      "AT Protocol"
+    ],
+    "topics": [
+      "atproto",
+      "pds",
+      "plugins"
+    ],
+    "repoUrl": "https://git.subcult.tv/subculture-collective/pirs",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "featured": false,
+    "order": 15,
+    "coverColor": "#ffb347",
+    "coverPattern": "circuit"
+  },
+  "tmux-popups": {
+    "slug": "tmux-popups",
+    "name": "tmux-popups",
+    "description": "A tmux popup toolkit: a quick menu and bindings generated from a TSV registry.",
+    "longDescription": "tmux-popups adds a Prefix+Enter quick menu and direct bindings to tmux, all generated from one popups.tsv registry. Local overrides, dependency checks in the help screen, a doctor script for tmux and TPM problems, and small or full profiles. Bash only, no build step.",
+    "whyItExists": "Popups in tmux are useful and tedious to wire by hand. A registry makes each one a row.",
+    "status": "active",
+    "type": [
+      "tools"
+    ],
+    "stack": [
+      "Bash",
+      "tmux"
+    ],
+    "topics": [
+      "tmux",
+      "terminal",
+      "dotfiles"
+    ],
+    "repoUrl": "https://git.subcult.tv/PatrickFanella/tmux-popups",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "screenshot": "/screenshots/tmux-popups-menu-1440.webp",
+    "featured": false,
+    "order": 16,
+    "coverColor": "#5ad1a5",
+    "coverPattern": "grid"
+  },
+  "omarchy-monitor-bar": {
+    "slug": "omarchy-monitor-bar",
+    "name": "Omarchy Multi-Monitor Bar",
+    "description": "A separate Omarchy bar layout for each connected monitor.",
+    "longDescription": "Give each monitor its own bar: Full, Minimal or Hidden, with the primary monitor locked to Full. Minimal bars show a glyph and the workspace list. A settings panel validates changes and checks the plugin against the stock Omarchy bar files it is pinned to. Ten languages.",
+    "whyItExists": "Two monitors do not need two copies of the same bar.",
+    "status": "active",
+    "type": [
+      "software",
+      "tools"
+    ],
+    "stack": [
+      "QML",
+      "Quickshell",
+      "Python"
+    ],
+    "topics": [
+      "omarchy",
+      "hyprland",
+      "desktop"
+    ],
+    "repoUrl": "https://git.subcult.tv/PatrickFanella/omarchy-monitor-bar",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "screenshot": "/screenshots/omarchy-monitor-bar-preview-1440.webp",
+    "featured": false,
+    "order": 17,
+    "coverColor": "#4cc9f0",
+    "coverPattern": "grid"
+  },
+  "omarchy-superproductivity": {
+    "slug": "omarchy-superproductivity",
+    "name": "Super Productivity for Omarchy",
+    "description": "The current Super Productivity task and its timer in the Omarchy top bar.",
+    "longDescription": "Shows the current Super Productivity task in the Omarchy bar with a live countdown and overtime, Stop, Complete and Extend controls, a Today list, quick add with +project, @schedule and #tag, and alerts with sound when a task expires or is due to start. It talks to the desktop app over its local REST API on loopback.",
+    "whyItExists": "The task you are on should be visible without switching windows.",
+    "status": "active",
+    "type": [
+      "software",
+      "tools"
+    ],
+    "stack": [
+      "QML",
+      "Quickshell",
+      "Python"
+    ],
+    "topics": [
+      "omarchy",
+      "super-productivity",
+      "tasks"
+    ],
+    "repoUrl": "https://git.subcult.tv/PatrickFanella/omarchy-superproductivity",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "screenshot": "/screenshots/omarchy-superproductivity-panel-1440.webp",
+    "featured": false,
+    "order": 18,
+    "coverColor": "#a78bfa",
+    "coverPattern": "dots"
+  },
+  "omarchy-plugin-spool": {
+    "slug": "omarchy-plugin-spool",
+    "name": "Spool",
+    "description": "An animated cassette companion for the Omarchy desktop that follows agent activity.",
+    "longDescription": "Spool is a violet cassette with acid-green limbs that lives on the Omarchy desktop. Drag it, make it jump or wave, let it wander, and watch its eyes follow the pointer. A bridge reads desktop agent activity from T3 Code and Codex and plays working, waiting, failure and review animations with a badge.",
+    "whyItExists": "A desktop agent works in the background. Spool shows what it is doing without a window.",
+    "status": "active",
+    "type": [
+      "software"
+    ],
+    "stack": [
+      "QML",
+      "Quickshell",
+      "Python"
+    ],
+    "topics": [
+      "omarchy",
+      "desktop",
+      "pets"
+    ],
+    "repoUrl": "https://git.subcult.tv/subculture-collective/omarchy-plugin-spool",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "screenshot": "/screenshots/omarchy-plugin-spool-preview-1440.webp",
+    "featured": false,
+    "order": 19,
+    "coverColor": "#8a5cff",
+    "coverPattern": "sigil"
+  },
+  "omarchy-plugin-shelfish": {
+    "slug": "omarchy-plugin-shelfish",
+    "name": "Shelfish",
+    "description": "Collapsible, named groups of Omarchy bar widgets.",
+    "longDescription": "Shelfish organises existing Omarchy bar widgets into named, ordered, collapsible groups with an icon and direction. A group reveals itself when a member’s watched status changes, with per-widget reveal policies, and restores every widget before removal. Ten languages, no runtime dependencies.",
+    "whyItExists": "A bar with twelve widgets is a bar nobody reads.",
+    "status": "active",
+    "type": [
+      "software",
+      "tools"
+    ],
+    "stack": [
+      "QML",
+      "Quickshell"
+    ],
+    "topics": [
+      "omarchy",
+      "desktop",
+      "bar"
+    ],
+    "repoUrl": "https://git.subcult.tv/PatrickFanella/omarchy-plugin-shelfish",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "screenshot": "/screenshots/omarchy-plugin-shelfish-preview-1440.webp",
+    "featured": false,
+    "order": 20,
+    "coverColor": "#ffb86b",
+    "coverPattern": "grid"
+  },
+  "obsidian-plugin-metronome-tuner": {
+    "slug": "obsidian-plugin-metronome-tuner",
+    "name": "Metronome + Tuner",
+    "description": "A metronome and chromatic tuner inside Obsidian.",
+    "longDescription": "A metronome from 30 to 300 BPM with tap tempo, time signatures, accents and seven click sounds, and a chromatic tuner that shows frequency, cents and the nearest note with an adjustable A4 reference. The microphone is used only after you opt in, and the audio is analysed locally. Desktop and mobile.",
+    "whyItExists": "Practice notes and the practice tools belong in the same window.",
+    "status": "active",
+    "type": [
+      "software",
+      "tools"
+    ],
+    "stack": [
+      "TypeScript",
+      "Obsidian API",
+      "Web Audio"
+    ],
+    "topics": [
+      "obsidian",
+      "music",
+      "practice"
+    ],
+    "repoUrl": "https://git.subcult.tv/PatrickFanella/obsidian-plugin-metronome-tuner",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "screenshot": "/screenshots/obsidian-plugin-metronome-tuner-view-1440.webp",
+    "featured": false,
+    "order": 21,
+    "coverColor": "#e04e7a",
+    "coverPattern": "waves"
+  },
+  "super-productivity-mcp": {
+    "slug": "super-productivity-mcp",
+    "name": "super-productivity-mcp",
+    "description": "An MCP server, plugin bridge and quick-add launcher for Super Productivity.",
+    "longDescription": "Lets an MCP client create and list tasks and projects, add time, and manage schedules and recurrence in Super Productivity through a plugin bridge with a file-based inbox and outbox. A quick-add launcher runs through Walker or a GTK popup on Omarchy. Broad writes are dry-run first.",
+    "whyItExists": "An assistant should be able to add the task where you actually keep your tasks.",
+    "status": "active",
+    "type": [
+      "tools",
+      "software"
+    ],
+    "stack": [
+      "Go",
+      "JavaScript",
+      "MCP"
+    ],
+    "topics": [
+      "mcp",
+      "super-productivity",
+      "agents"
+    ],
+    "repoUrl": "https://git.subcult.tv/PatrickFanella/super-productivity-mcp",
+    "lastUpdated": "2026-10-12T00:00:00Z",
+    "featured": false,
+    "order": 22,
+    "coverColor": "#34d399",
+    "coverPattern": "circuit"
   }
 }

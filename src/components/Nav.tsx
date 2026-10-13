@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { getProductPath } from '@/lib/product-paths';
+import { getFeaturedProducts } from '@/lib/showcase';
 import { useEffects } from '@/context/useEffects';
 
 const NAV_LINKS = [
@@ -84,7 +85,7 @@ export default function Nav() {
 
       {pathname !== '/products' && (
         <div className="product-shortcuts" aria-label="Product shortcuts">
-          {products.map(({ project }) => (
+          {getFeaturedProducts(products).map(({ project }) => (
             <NavLink
               key={project.slug}
               to={getProductPath(project.slug)}
@@ -93,6 +94,9 @@ export default function Nav() {
               {project.name}
             </NavLink>
           ))}
+          <NavLink to="/products" onClick={() => setMobileOpen(false)}>
+            All {products.length} →
+          </NavLink>
         </div>
       )}
       {/* Mobile dropdown */}

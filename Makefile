@@ -88,6 +88,9 @@ test-studio: check-studio check-studio-automation ## Run Studio tests
 studio-export: ## Export the private bundle and approved public SUBCULT assets
 	python3 studio/scripts/export_studio.py --site-root "$(CURDIR)"
 
+studio-export-site-brands: ## Export the selected marks, heroes and social images for the October 12 product pages
+	rtk proxy python3 studio/scripts/export_site_brands.py
+
 studio-export-left-field: ## Export approved public Left Field assets
 	python3 studio/scripts/export_left_field.py --site-root "$(CURDIR)"
 

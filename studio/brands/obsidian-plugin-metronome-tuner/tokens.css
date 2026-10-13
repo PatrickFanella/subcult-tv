@@ -1,0 +1,9 @@
+:root {
+  --obsidian-plugin-metronome-tuner-bg: #f6f3ee;
+  --obsidian-plugin-metronome-tuner-text: #1d1a24;
+  --obsidian-plugin-metronome-tuner-accent: #e04e7a;
+  --obsidian-plugin-metronome-tuner-secondary: #2f6f73;
+  --obsidian-plugin-metronome-tuner-font-display: "Fraunces";
+  --obsidian-plugin-metronome-tuner-font-body: "Public Sans";
+  --obsidian-plugin-metronome-tuner-font-label: "IBM Plex Mono";
+}

@@ -9,7 +9,9 @@
  *
  * public/og/left-field.jpg is not captured: it is a Studio export written by
  * `make studio-export-left-field` and its hash is recorded in
- * docs/left-field-brand-provenance.json.
+ * docs/left-field-brand-provenance.json. The products added on October 12,
+ * 2026 use their pack's own social image, exported by
+ * studio/scripts/export_site_brands.py into docs/site-brand-provenance.json.
  *
  * Usage:
  *   npm run build && npm run preview          # serves on :4173
@@ -28,7 +30,22 @@ const BASE_URL = process.env.BASE_URL ?? 'http://localhost:4173';
 const PUBLIC_DIR = join(process.cwd(), 'public');
 
 // Share images owned by a Studio export; capturing would break their provenance hash.
-const STUDIO_EXPORTED = new Set(['left-field']);
+const STUDIO_EXPORTED = new Set([
+  'left-field',
+  // Exported from their Studio packs by studio/scripts/export_site_brands.py.
+  'chatty-cat',
+  'backline',
+  'arkhiv',
+  'overlaid',
+  'pirs',
+  'tmux-popups',
+  'omarchy-monitor-bar',
+  'omarchy-superproductivity',
+  'omarchy-plugin-spool',
+  'omarchy-plugin-shelfish',
+  'obsidian-plugin-metronome-tuner',
+  'super-productivity-mcp',
+]);
 
 // Hide site chrome and tighten the hero so it fills the 1200×630 frame.
 const FRAME_CSS = `

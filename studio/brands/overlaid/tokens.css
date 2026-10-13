@@ -1,0 +1,9 @@
+:root {
+  --overlaid-bg: #0d0d12;
+  --overlaid-text: #f3f0ff;
+  --overlaid-accent: #ff3b4e;
+  --overlaid-secondary: #ffd166;
+  --overlaid-font-display: "Inter Tight";
+  --overlaid-font-body: "Public Sans";
+  --overlaid-font-label: "Space Mono";
+}

@@ -1,0 +1,116 @@
+{
+  "generated": "October 12, 2026",
+  "fonts": {
+    "Inter Tight": {"files": ["Inter-Tight-0.ttf", "Inter-Tight-1.ttf"], "license": "intertight-OFL.txt", "bold": "Inter-Tight-1.ttf", "regular": "Inter-Tight-0.ttf"},
+    "Public Sans": {"files": ["Public-Sans-0.ttf", "Public-Sans-1.ttf"], "license": "publicsans-OFL.txt", "bold": "Public-Sans-1.ttf", "regular": "Public-Sans-0.ttf"},
+    "Space Mono": {"files": ["Space-Mono-0.ttf", "Space-Mono-1.ttf"], "license": "spacemono-OFL.txt", "bold": "Space-Mono-1.ttf", "regular": "Space-Mono-0.ttf"},
+    "Barlow": {"files": ["Barlow-0.ttf", "Barlow-1.ttf"], "license": "barlow-OFL.txt", "bold": "Barlow-1.ttf", "regular": "Barlow-0.ttf"},
+    "Barlow Condensed": {"files": ["Barlow-Condensed-0.ttf", "Barlow-Condensed-1.ttf"], "license": "barlowcondensed-OFL.txt", "bold": "Barlow-Condensed-1.ttf", "regular": "Barlow-Condensed-0.ttf"},
+    "IBM Plex Mono": {"files": ["IBM-Plex-Mono-0.ttf", "IBM-Plex-Mono-1.ttf"], "license": "ibmplexmono-OFL.txt", "bold": "IBM-Plex-Mono-1.ttf", "regular": "IBM-Plex-Mono-0.ttf"},
+    "Newsreader": {"files": ["Newsreader-0.ttf", "Newsreader-1.ttf"], "license": "newsreader-OFL.txt", "bold": "Newsreader-1.ttf", "regular": "Newsreader-0.ttf"},
+    "Archivo Black": {"files": ["ArchivoBlack-Regular.ttf"], "license": "archivoblack-OFL.txt", "bold": "ArchivoBlack-Regular.ttf", "regular": "ArchivoBlack-Regular.ttf"},
+    "Fraunces": {"files": ["Fraunces-0.ttf", "Fraunces-1.ttf"], "license": "fraunces-OFL.txt", "bold": "Fraunces-1.ttf", "regular": "Fraunces-0.ttf"}
+  },
+  "brands": [
+    {
+      "slug": "overlaid",
+      "name": "Overlaid",
+      "description": "OBS overlays, a Twitch bot and an operator desk for live streams.",
+      "direction": "Tally lamp",
+      "colors": {"bg": "#0d0d12", "text": "#f3f0ff", "accent": "#ff3b4e", "secondary": "#ffd166"},
+      "fonts": {"display": "Inter Tight", "display_weight": 700, "body": "Public Sans", "label": "Space Mono"},
+      "mark": "tally_lamp",
+      "mark_description": "A tally lamp: a rounded overlay card offset over a second card, with a lit red circle in the top corner of the front card."
+    },
+    {
+      "slug": "pirs",
+      "name": "Pirs",
+      "description": "An experimental, extensible AT Protocol personal data server: a fork of the Bluesky PDS with plugin hook points.",
+      "direction": "Pier",
+      "colors": {"bg": "#0e2a47", "text": "#e6eef7", "accent": "#ffb347", "secondary": "#7fb3d5"},
+      "fonts": {"display": "Barlow Condensed", "display_weight": 700, "body": "Barlow", "label": "IBM Plex Mono"},
+      "mark": "pier",
+      "mark_description": "A pier seen from the side: one long plank over three pilings, with one orange hook-point dot on the plank and thin blue construction lines."
+    },
+    {
+      "slug": "tmux-popups",
+      "name": "tmux-popups",
+      "description": "A tmux popup toolkit: a quick menu and bindings generated from a TSV registry.",
+      "direction": "Popup over pane",
+      "colors": {"bg": "#101418", "text": "#d9e0e6", "accent": "#5ad1a5", "secondary": "#f2c14e"},
+      "fonts": {"display": "Space Mono", "display_weight": 700, "body": "Space Mono", "label": "Space Mono"},
+      "mark": "popup",
+      "mark_description": "A popup over a pane: a thin-outlined rectangle with a smaller solid rectangle inset at its centre, carrying a thicker top bar and one green block cursor."
+    },
+    {
+      "slug": "arkhiv",
+      "name": "Arkhiv",
+      "description": "A zine archive: original files preserved, a catalogue with a reader and downloads.",
+      "direction": "Photocopy stack",
+      "colors": {"bg": "#f3efe4", "text": "#1a1816", "accent": "#d8262c", "secondary": "#2b59c3"},
+      "fonts": {"display": "Newsreader", "display_weight": 700, "body": "Public Sans", "label": "IBM Plex Mono"},
+      "mark": "photocopy_stack",
+      "mark_description": "Three stacked, slightly offset sheets with two staple marks on the top sheet; the top sheet's outline is misregistered in riso red and blue."
+    },
+    {
+      "slug": "omarchy-monitor-bar",
+      "name": "Omarchy Multi-Monitor Bar",
+      "description": "A separate Omarchy bar layout for each monitor.",
+      "direction": "Two monitors",
+      "colors": {"bg": "#14161c", "text": "#e9ecf1", "accent": "#4cc9f0", "secondary": "#8f9bb3"},
+      "fonts": {"display": "Inter Tight", "display_weight": 700, "body": "Public Sans", "label": "IBM Plex Mono"},
+      "mark": "two_monitors",
+      "mark_description": "Two monitor rectangles side by side, each with a bar strip along its top edge: full width on the left, minimal on the right."
+    },
+    {
+      "slug": "omarchy-superproductivity",
+      "name": "Super Productivity for Omarchy",
+      "description": "The current Super Productivity task and its timer in the Omarchy top bar.",
+      "direction": "Timer ring",
+      "colors": {"bg": "#15131c", "text": "#ece8f6", "accent": "#a78bfa", "secondary": "#5eead4"},
+      "fonts": {"display": "Inter Tight", "display_weight": 700, "body": "Public Sans", "label": "IBM Plex Mono"},
+      "mark": "timer_ring",
+      "mark_description": "A timer ring: a thin circle with a thick three-quarter progress arc, and a short horizontal bar beneath it."
+    },
+    {
+      "slug": "omarchy-plugin-spool",
+      "name": "Spool",
+      "description": "An animated cassette desktop companion for Omarchy that follows agent activity.",
+      "direction": "Cassette",
+      "colors": {"bg": "#120f1c", "text": "#f1ecff", "accent": "#8a5cff", "secondary": "#b9ff3b"},
+      "fonts": {"display": "Archivo Black", "display_weight": 400, "body": "Public Sans", "label": "Space Mono"},
+      "mark": "cassette",
+      "mark_description": "A cassette outline: a rounded rectangle with two reel circles joined by a tape window, and one green eye-dot in the left reel."
+    },
+    {
+      "slug": "omarchy-plugin-shelfish",
+      "name": "Shelfish",
+      "description": "Collapsible, named groups of Omarchy bar widgets.",
+      "direction": "Shelf",
+      "colors": {"bg": "#171410", "text": "#f2ebe0", "accent": "#ffb86b", "secondary": "#7aa2f7"},
+      "fonts": {"display": "Inter Tight", "display_weight": 700, "body": "Public Sans", "label": "IBM Plex Mono"},
+      "mark": "shelf",
+      "mark_description": "A shelf: a horizontal rule with two small boxes sitting on it and a chevron in the third place, for a collapsed group."
+    },
+    {
+      "slug": "obsidian-plugin-metronome-tuner",
+      "name": "Metronome + Tuner",
+      "description": "A metronome and chromatic tuner inside Obsidian.",
+      "direction": "Metronome",
+      "colors": {"bg": "#f6f3ee", "text": "#1d1a24", "accent": "#e04e7a", "secondary": "#2f6f73"},
+      "fonts": {"display": "Fraunces", "display_weight": 700, "body": "Public Sans", "label": "IBM Plex Mono"},
+      "mark": "metronome",
+      "mark_description": "A metronome: a tall trapezoid outline with a diagonal pendulum and a bob circle, and a short tick scale on its right side for the tuner."
+    },
+    {
+      "slug": "super-productivity-mcp",
+      "name": "super-productivity-mcp",
+      "description": "An MCP server, plugin bridge and quick-add launcher for Super Productivity.",
+      "direction": "Bridge",
+      "colors": {"bg": "#0f1a17", "text": "#e3efe9", "accent": "#34d399", "secondary": "#a78bfa"},
+      "fonts": {"display": "Space Mono", "display_weight": 700, "body": "Public Sans", "label": "Space Mono"},
+      "mark": "bridge",
+      "mark_description": "A bridge: two short vertical posts joined by an arc, with a dot at the arc's apex."
+    }
+  ]
+}

@@ -89,3 +89,38 @@
   font-display: swap;
   src: url('/brand/subsets/fonts/JetBrains-Mono-0.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Cascadia Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/brand/chatty-cat/fonts/CascadiaMono-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Backline Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/brand/backline/fonts/Oswald.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Backline Body';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(/brand/backline/fonts/Space-Grotesk.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Backline Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/brand/backline/fonts/JetBrains-Mono.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/brand/fonts/barlow-condensed-700.woff2) format('woff2');
+}

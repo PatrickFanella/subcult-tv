@@ -1,8 +1,8 @@
 [
   {
     "path": "brand-tools/README.md",
-    "sha256": "72bcb33f1eec8126eb783d171483320c8d4ebf1922ad7516d4851a021537a420",
-    "bytes": 18636
+    "sha256": "077e80c0522cf5775f78f3aa7cf09d92c1e3e1061cccc896d857e1d43e2f5cc0",
+    "bytes": 19923
   },
   {
     "path": "brand-tools/audit_patchwork_contrast.py",
@@ -6505,8 +6505,8 @@
   },
   {
     "path": "brands/index.html",
-    "sha256": "d3ef3b661a99c072995faa1ad06b37688a101e97a7e730fdca43f794b3991f91",
-    "bytes": 21719
+    "sha256": "ba38bf006f1f5bb1d4645b30c029734cf80521a88fd29681d76b22b44305b5c3",
+    "bytes": 31197
   },
   {
     "path": "brand-tools/kork_launch_assets.py",
@@ -7765,5 +7765,1810 @@
     "path": "brands/subcult-os/fonts/oswald-OFL.txt",
     "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652",
     "bytes": 4483
+  },
+  {
+    "path": "brand-tools/site-packs.json",
+    "sha256": "b5914167393cc3c2e0cc614e3da8f8ba3b13e6d13c4b871ec4981fd97678e662",
+    "bytes": 7574
+  },
+  {
+    "path": "brand-tools/site_packs.py",
+    "sha256": "9f99a749b95aae51bf4cbcded6a674d222c53dc4b4c2e8306d28aa0ceeb65fdc",
+    "bytes": 23704
+  },
+  {
+    "path": "brands/README.md",
+    "sha256": "2226e3398ae05653ddb7a79bcd0fff87c6f1fdf9a4117ebafd16789ef71d802a",
+    "bytes": 3239
+  },
+  {
+    "path": "brands/arkhiv/GUIDE.md",
+    "sha256": "0975af4004591175b92f6e1eae34815639ffe6c8134d13d1d7490585872f772d",
+    "bytes": 2181
+  },
+  {
+    "path": "brands/arkhiv/alt-text.md",
+    "sha256": "0b15226dcd9a1250576dc91d36828c21f87db98d20918b85a37f1bd74d80a3df",
+    "bytes": 1134
+  },
+  {
+    "path": "brands/arkhiv/asset-manifest.json",
+    "sha256": "a2966ab08cde2c80c05d42fe20f74da8ecc72b53caf4b95b9fa6836109bf78db",
+    "bytes": 5374
+  },
+  {
+    "path": "brands/arkhiv/fonts/IBM-Plex-Mono-0.ttf",
+    "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+    "bytes": 128812
+  },
+  {
+    "path": "brands/arkhiv/fonts/IBM-Plex-Mono-1.ttf",
+    "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+    "bytes": 131040
+  },
+  {
+    "path": "brands/arkhiv/fonts/Newsreader-0.ttf",
+    "sha256": "b8f5e0a8bdd6a12c722ca5635d9da87e77ccbb2d0172112e34e00c4e55f2cd5a",
+    "bytes": 109472
+  },
+  {
+    "path": "brands/arkhiv/fonts/Newsreader-1.ttf",
+    "sha256": "81d90be46eec4aefac9cf507352f96c4890dbbcb0f7a390091545c1df06f16c6",
+    "bytes": 111520
+  },
+  {
+    "path": "brands/arkhiv/fonts/Public-Sans-0.ttf",
+    "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+    "bytes": 56172
+  },
+  {
+    "path": "brands/arkhiv/fonts/Public-Sans-1.ttf",
+    "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+    "bytes": 56364
+  },
+  {
+    "path": "brands/arkhiv/fonts/ibmplexmono-OFL.txt",
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+    "bytes": 4456
+  },
+  {
+    "path": "brands/arkhiv/fonts/newsreader-OFL.txt",
+    "sha256": "fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8",
+    "bytes": 4394
+  },
+  {
+    "path": "brands/arkhiv/fonts/publicsans-OFL.txt",
+    "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+    "bytes": 4390
+  },
+  {
+    "path": "brands/arkhiv/logos/lockup.png",
+    "sha256": "e73630578745c5b5189e1a1bd02b7029394af3b2a3565803fb99693fbca73ef0",
+    "bytes": 11171,
+    "width": 704,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/arkhiv/logos/lockup.svg",
+    "sha256": "2478addf4b10c82329be579c4f83e3711760ecf43be863f2216da008e292afa3",
+    "bytes": 4680
+  },
+  {
+    "path": "brands/arkhiv/logos/mark-mono-dark.svg",
+    "sha256": "9a70f331124dfec876f773573d04c9ccd38aa2cef6ab7787ef29536525d29c71",
+    "bytes": 993
+  },
+  {
+    "path": "brands/arkhiv/logos/mark-mono-light.svg",
+    "sha256": "6b05f478e2b1156b441f030d5728c7aebb1db19d68851446f3ebf5ff15481320",
+    "bytes": 994
+  },
+  {
+    "path": "brands/arkhiv/logos/mark.png",
+    "sha256": "bfbec3b372c85f23d1be1e7284a5382ff5c91f7feef91bd5d748b592d10db97c",
+    "bytes": 2606,
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/arkhiv/logos/mark.svg",
+    "sha256": "bb09af00162e1d23a59cced52584beb8fa1c84271751742041e684633c5f710c",
+    "bytes": 1169
+  },
+  {
+    "path": "brands/arkhiv/pack-preview.png",
+    "sha256": "0d57a46e33110a8699f031a68941e223165e8332b13cfe77d0d71bbcfd70c8e9",
+    "bytes": 122793,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/arkhiv/pack-preview.svg",
+    "sha256": "e5268dbfab9d401e660ab1c6f579d83c6ec99f7b4b7812c320243759dd216618",
+    "bytes": 301463
+  },
+  {
+    "path": "brands/arkhiv/product/hero.png",
+    "sha256": "b7a5a9b843a3b657a641865215aca576493ed4629c4bcd982061088c0158ce35",
+    "bytes": 45374,
+    "width": 1440,
+    "height": 900,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/arkhiv/product/hero.svg",
+    "sha256": "1cf8ea756323f44800c3cf61495ad1b34447b1f4426d180f5b4b515ad7ff31e1",
+    "bytes": 43398
+  },
+  {
+    "path": "brands/arkhiv/product/mark.svg",
+    "sha256": "bb09af00162e1d23a59cced52584beb8fa1c84271751742041e684633c5f710c",
+    "bytes": 1169
+  },
+  {
+    "path": "brands/arkhiv/product/og.png",
+    "sha256": "22730e3549cd4df6327d2f6fe271f2dc0dea5161840bed0b5d1704791c47fc9a",
+    "bytes": 39683,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/arkhiv/product/og.svg",
+    "sha256": "d8cfd3502b1d67c6a445caff901fba2ef505b68003afcb54cf22e96d175c1290",
+    "bytes": 47060
+  },
+  {
+    "path": "brands/arkhiv/social/avatar.png",
+    "sha256": "121e53cc830b707425b9c0b3fce51d4d28f6a001a96a4750d356623d529222a2",
+    "bytes": 3130,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/arkhiv/social/banner.png",
+    "sha256": "defc33510d36fa5d997c81f7aa5b1e46d063487b988e497dabee1006a37637cd",
+    "bytes": 44067,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/arkhiv/social/banner.svg",
+    "sha256": "0bedcf28696a2821af3fef7b14ac12c126582f4950fdfef7909492492fcd0290",
+    "bytes": 50989
+  },
+  {
+    "path": "brands/arkhiv/social/square.png",
+    "sha256": "6c6d82fbdc0dc25c1ac1ba070078a9c5c3f1c7a1507b3df47d917861f5615a38",
+    "bytes": 48794,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/arkhiv/social/square.svg",
+    "sha256": "35735a2cb3a786e7f12d702afc1ce2bc76406244f38e8e9bb2a8d6b7346ca40c",
+    "bytes": 51015
+  },
+  {
+    "path": "brands/arkhiv/tokens.css",
+    "sha256": "59c24d51fa068511ad07f732e69cb1974b50e43e04176a6958589d3c5145a723",
+    "bytes": 235
+  },
+  {
+    "path": "brands/arkhiv/tokens.json",
+    "sha256": "5d1a58980a806509aa01e29abb9a622b1c21718d4bf04c6f21b06ebe72c3daf6",
+    "bytes": 1281
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/GUIDE.md",
+    "sha256": "dbb1dd2aab816042efea744144fef3b8d1853f5766e17942bf7e974850debec9",
+    "bytes": 2199
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/alt-text.md",
+    "sha256": "59c9ae8c04d0302ca0db184577a04cfc01f50d4cae2fdbb2eddc2a25babc3927",
+    "bytes": 1194
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/asset-manifest.json",
+    "sha256": "087a0bc143cf2c08b9a354eecdc537cb0e010e934c24425c8a6c01f54706f5ec",
+    "bytes": 5383
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/fonts/Fraunces-0.ttf",
+    "sha256": "3eb6cf0a14feb1876cc464fa093af4e0c5b05dc46dec65619c1d95f2a1ab5aa7",
+    "bytes": 71580
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/fonts/Fraunces-1.ttf",
+    "sha256": "f0a9d39b9f14079c55070189562da36c794f824cbcf514b50a0ad0ef20c69379",
+    "bytes": 71588
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/fonts/IBM-Plex-Mono-0.ttf",
+    "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+    "bytes": 128812
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/fonts/IBM-Plex-Mono-1.ttf",
+    "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+    "bytes": 131040
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/fonts/Public-Sans-0.ttf",
+    "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+    "bytes": 56172
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/fonts/Public-Sans-1.ttf",
+    "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+    "bytes": 56364
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/fonts/fraunces-OFL.txt",
+    "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b",
+    "bytes": 4391
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/fonts/ibmplexmono-OFL.txt",
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+    "bytes": 4456
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/fonts/publicsans-OFL.txt",
+    "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+    "bytes": 4390
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/logos/lockup.png",
+    "sha256": "05446dd324b3a569cd0038aa4c73b79092208badeaa08d10c474176a47f8f261",
+    "bytes": 32724,
+    "width": 1494,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/logos/lockup.svg",
+    "sha256": "7e493e0b8de476675a9c91192d973bc605b1925bfb3ecc53d5f94264de99837d",
+    "bytes": 14017
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/logos/mark-mono-dark.svg",
+    "sha256": "34c4af61d72a0593ce0f7a8f0a4b3cdf736be7deeee24349e460ca0d23ecc456",
+    "bytes": 1045
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/logos/mark-mono-light.svg",
+    "sha256": "51ba1e428812c1c4367f00ab2baa67871a208ec4838f1a2c3bd3eb30a42f887b",
+    "bytes": 1046
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/logos/mark.png",
+    "sha256": "0a362fefcae1f5bc609e6e97533b522e5f340f833dad5871464b19612a0b6087",
+    "bytes": 16166,
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/logos/mark.svg",
+    "sha256": "f59e2285810ba5a80586c0f8786aa17d05e9e49a1c9c24cbbeed352c5c7a4fc0",
+    "bytes": 1034
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/pack-preview.png",
+    "sha256": "dbfaed43fd0ff2bec6dd54aa03df1f6e85536989c31a43760ba33d8a8be01062",
+    "bytes": 161171,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/pack-preview.svg",
+    "sha256": "84058a1abbb64cba0c4f435eff98cd890c205c1761ba7d444df9b7aadb8ad974",
+    "bytes": 315534
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/product/hero.png",
+    "sha256": "f02f482b25ad47e32f4a4f9caa1be76c0fc5fd43be08ceaccc37abfecc8c661a",
+    "bytes": 57170,
+    "width": 1440,
+    "height": 900,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/product/hero.svg",
+    "sha256": "87af602a1e98d6d78d8135cef7937d7706712ca7fb0d0e882c9553893794f0d2",
+    "bytes": 43839
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/product/mark.svg",
+    "sha256": "f59e2285810ba5a80586c0f8786aa17d05e9e49a1c9c24cbbeed352c5c7a4fc0",
+    "bytes": 1034
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/product/og.png",
+    "sha256": "00f6aba66a5e6c85a30bb8ceed311b2c45c241070d27214e9a64c39ad1a2ddad",
+    "bytes": 46839,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/product/og.svg",
+    "sha256": "6688189256d94613973c5bb9765ae8c8f8bca0221a092617c26df0617e692f3d",
+    "bytes": 47189
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/social/avatar.png",
+    "sha256": "eadbd7b631810d75306cad49c8ab4b7c06ef547ccccba486d459c9f62819bdd1",
+    "bytes": 10918,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/social/banner.png",
+    "sha256": "c4bfe6a59e129c55f28f9be5dd5b2907268bffe5c44021b723e1b79909767fed",
+    "bytes": 50040,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/social/banner.svg",
+    "sha256": "d05bcbcc1e4fda4298d9e461bdb17108ea6ebdd20c39109c15137070ea0c6a16",
+    "bytes": 51812
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/social/square.png",
+    "sha256": "89a54b3db071ffaf8017453562d7a7c0fb4dfb7779490b692f94bb851a213fa7",
+    "bytes": 54934,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/social/square.svg",
+    "sha256": "2ff6d58cfd755dba9cbf618c49bb63bd0d9f76c98ebfd7a38725c067b87570c1",
+    "bytes": 50962
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/tokens.css",
+    "sha256": "fd8fcbda8b0335864f9c0b47d533ca91c07321601a5935ba08a6b56444d909d3",
+    "bytes": 408
+  },
+  {
+    "path": "brands/obsidian-plugin-metronome-tuner/tokens.json",
+    "sha256": "922adbc248488278cffaec1aacf8c3643497d49a1d5ce14a4b2956b2c7de615c",
+    "bytes": 1309
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/GUIDE.md",
+    "sha256": "e1170f1dc233164dcc88d9122a5f9357fdcff8271d0fa4cd6fac57a5c930aa17",
+    "bytes": 2201
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/alt-text.md",
+    "sha256": "38758e6a93bbcd81341c5f20e61923c5d911ce2614a96fccbf7b0b1867bc5e11",
+    "bytes": 1276
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/asset-manifest.json",
+    "sha256": "119aa86286e94790d12e058377ce0eebf860ddc086fbc0c1331a9f209da94b12",
+    "bytes": 5395
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/fonts/IBM-Plex-Mono-0.ttf",
+    "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+    "bytes": 128812
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/fonts/IBM-Plex-Mono-1.ttf",
+    "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+    "bytes": 131040
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/fonts/Inter-Tight-0.ttf",
+    "sha256": "27350bc95b961b9b4e1a80d872f49e903fe727f290f6b2a079e67ceb1685fb1f",
+    "bytes": 298260
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/fonts/Inter-Tight-1.ttf",
+    "sha256": "98272f3512338c52940816f5db61966ca1cdbc3cdb3c0d981da22612723da59e",
+    "bytes": 302808
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/fonts/Public-Sans-0.ttf",
+    "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+    "bytes": 56172
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/fonts/Public-Sans-1.ttf",
+    "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+    "bytes": 56364
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/fonts/ibmplexmono-OFL.txt",
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+    "bytes": 4456
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/fonts/intertight-OFL.txt",
+    "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58",
+    "bytes": 4383
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/fonts/publicsans-OFL.txt",
+    "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+    "bytes": 4390
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/logos/lockup.png",
+    "sha256": "c16d872c37068fd1677cc12a309ef08b3989cd73d694a2316203d30b9e8b9a7d",
+    "bytes": 31976,
+    "width": 1810,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/logos/lockup.svg",
+    "sha256": "b3bea2dbbff353c1690764b0c94e0f21f1ba3d37bb833cb2d7818872c142ad06",
+    "bytes": 13658
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/logos/mark-mono-dark.svg",
+    "sha256": "42d77f098a7ff7a6ccc3f16f39028dc677d94ba66eb3a0b40df9ef41a699ff63",
+    "bytes": 748
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/logos/mark-mono-light.svg",
+    "sha256": "36e47646edf5be0bb2f2a8290db68dc32263f780c2313eb6b5a4f9b151851ab7",
+    "bytes": 749
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/logos/mark.png",
+    "sha256": "b9396466c497422f6fcd86189c527615ce75782c7ed0e4052e8c76fa86a44c03",
+    "bytes": 3753,
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/logos/mark.svg",
+    "sha256": "8e1209f9f1ddacf441d9cc7b94d2d98167b2c5f0e01f234f10ba345d85a9aa5c",
+    "bytes": 737
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/pack-preview.png",
+    "sha256": "6e509e7d36599f8e9a6757935c69b08cf48e09315fac1a97a7f4e78d9f2c941d",
+    "bytes": 143454,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/pack-preview.svg",
+    "sha256": "a01b0ba086626b9827e6bba9867aeb955a5cac520ca5523846db7debfc21ae65",
+    "bytes": 317890
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/product/hero.png",
+    "sha256": "04ada5cbb292519b29e4a5df6129f7de0f09f8fc682a2eb630deff6aa5e179a9",
+    "bytes": 51588,
+    "width": 1440,
+    "height": 900,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/product/hero.svg",
+    "sha256": "4864849fb88e73da48093ba17310334def31f403ffdc5b675cb6b31eed3f03fd",
+    "bytes": 44573
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/product/mark.svg",
+    "sha256": "8e1209f9f1ddacf441d9cc7b94d2d98167b2c5f0e01f234f10ba345d85a9aa5c",
+    "bytes": 737
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/product/og.png",
+    "sha256": "9da0daf9b63ced12f079573e37cdc0659007c3c976855feea33a73e96fcae3c7",
+    "bytes": 42401,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/product/og.svg",
+    "sha256": "e3baf8b2451f295406a9deb3877dc163c5d4b8be34df2a03014611b0b126ce24",
+    "bytes": 47110
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/social/avatar.png",
+    "sha256": "37f706773cf1cba8c432d24134b216b80592438919a0ec9f7bbb7893f4185549",
+    "bytes": 3516,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/social/banner.png",
+    "sha256": "4df248f2e07574a1e901ca60403af9c6d2c9e9e0e59f11d1861760f4f08a7e18",
+    "bytes": 47443,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/social/banner.svg",
+    "sha256": "6455b126e973a5b4d9698487aaad2ccf40dd63232eadc0b3052689444556621e",
+    "bytes": 52489
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/social/square.png",
+    "sha256": "7b738aad3cb8ef93494e4d0728c92725dd88e4b0968b1fc5b29e68b037fed4a7",
+    "bytes": 51564,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/social/square.svg",
+    "sha256": "010d33fc0f7465f01abcf7eee23b79243ab662e65f0b2252bb4f38dcbbcedf33",
+    "bytes": 52047
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/tokens.css",
+    "sha256": "814136f06ffd6197e948e7133dad9ced117ebb7cbbdc8afd96493f481b57f3d7",
+    "bytes": 327
+  },
+  {
+    "path": "brands/omarchy-monitor-bar/tokens.json",
+    "sha256": "95a0b08a3c63c76eff677353026dfbaafa3f96ffa7734a2eb1f1c064b420e183",
+    "bytes": 1310
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/GUIDE.md",
+    "sha256": "064cc92101532729024d14906a08ad68f0e6ca7f3f9b50e8b8129ec57de5bec3",
+    "bytes": 2151
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/alt-text.md",
+    "sha256": "0f2e60039e203da235a68c831ffa2b4a2df594a7d9b58443a6ab8b55396d3745",
+    "bytes": 1070
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/asset-manifest.json",
+    "sha256": "f7b376ac81502c3d6685b73ba8d0722f77f8c1e7691aeb1503e7d1a1b66d4333",
+    "bytes": 5376
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/fonts/IBM-Plex-Mono-0.ttf",
+    "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+    "bytes": 128812
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/fonts/IBM-Plex-Mono-1.ttf",
+    "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+    "bytes": 131040
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/fonts/Inter-Tight-0.ttf",
+    "sha256": "27350bc95b961b9b4e1a80d872f49e903fe727f290f6b2a079e67ceb1685fb1f",
+    "bytes": 298260
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/fonts/Inter-Tight-1.ttf",
+    "sha256": "98272f3512338c52940816f5db61966ca1cdbc3cdb3c0d981da22612723da59e",
+    "bytes": 302808
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/fonts/Public-Sans-0.ttf",
+    "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+    "bytes": 56172
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/fonts/Public-Sans-1.ttf",
+    "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+    "bytes": 56364
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/fonts/ibmplexmono-OFL.txt",
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+    "bytes": 4456
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/fonts/intertight-OFL.txt",
+    "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58",
+    "bytes": 4383
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/fonts/publicsans-OFL.txt",
+    "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+    "bytes": 4390
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/logos/lockup.png",
+    "sha256": "0addfea88bafe075911e6c3c1a98c90a5ae3c7a2f15fcd0a0e834cb9970c9bab",
+    "bytes": 13813,
+    "width": 756,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/logos/lockup.svg",
+    "sha256": "3f6c2b634f259b2df501ea0d91b4339d44f9d2141db2c210f8512ea414bf2149",
+    "bytes": 6174
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/logos/mark-mono-dark.svg",
+    "sha256": "3515ea93d26d3ab3c996c06342e74a70a0c78696214905f2cc55b7e60c2d5f47",
+    "bytes": 655
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/logos/mark-mono-light.svg",
+    "sha256": "48c0d6ef4088264df69bb724e31879b41cf38b1008dc4d5c69a556d8fa461a6f",
+    "bytes": 656
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/logos/mark.png",
+    "sha256": "2db1c50cf311a78ed4f3867e8cc340c22b6cdec1058f9ff9b11f7cfde9c2f5f7",
+    "bytes": 5537,
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/logos/mark.svg",
+    "sha256": "1685b23936a0e36592af1c75a543bc20099e8a7de9b8ebb4327a9f0783676840",
+    "bytes": 644
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/pack-preview.png",
+    "sha256": "767a6ea3a3e57358c972035381427b33e5ca9ce843914a7aeaa890f6bb94aa78",
+    "bytes": 117738,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/pack-preview.svg",
+    "sha256": "bf3cb46800419142a1f0c53a79b6996942253c2199904552ecbf4678ff0326c1",
+    "bytes": 261285
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/product/hero.png",
+    "sha256": "003246782335ae7eed5bbe45b39d1b0957a9166eefd4eae8bbc7ce27d16bcad6",
+    "bytes": 40409,
+    "width": 1440,
+    "height": 900,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/product/hero.svg",
+    "sha256": "02605eaef9e0369fcf06996f7fc25d80a24bb5fef8fd16d297059534f7d7d984",
+    "bytes": 35690
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/product/mark.svg",
+    "sha256": "1685b23936a0e36592af1c75a543bc20099e8a7de9b8ebb4327a9f0783676840",
+    "bytes": 644
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/product/og.png",
+    "sha256": "b000af027259877553a497408c4abd1ffa0a53597dc1b3957131de6cd2f15300",
+    "bytes": 34951,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/product/og.svg",
+    "sha256": "0e584ead0129c210a948fb4eabf0e7bd6dfc3c62311bfaf8763fe87fb7f5be52",
+    "bytes": 38840
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/social/avatar.png",
+    "sha256": "419f17b8774b6930f0920944e471a6f62a18570606f5565501cb86ed7dfefd1c",
+    "bytes": 5400,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/social/banner.png",
+    "sha256": "d384f9969d1832e446bc64a87e0f020b334b88c8e25d334b1cbf7087b0afac5d",
+    "bytes": 38021,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/social/banner.svg",
+    "sha256": "c7fff67f8bf7df4cf73432d03f30940ba47ae8ccedc3040f821fc121b98f628c",
+    "bytes": 43695
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/social/square.png",
+    "sha256": "31eed1e301357191bdbbc229b6aa7a0d8f956461c9580a24b566846caf6a7b30",
+    "bytes": 42077,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/social/square.svg",
+    "sha256": "215de0c1c16ea22d03a8792b1e8eaa2defeaeab6c5ce2e7fbe8c78bad1a0dc05",
+    "bytes": 43133
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/tokens.css",
+    "sha256": "2cf0b91ddad95c8a2d998046aa4e3f9a1be828bf5db417253efd68085dc1468a",
+    "bytes": 355
+  },
+  {
+    "path": "brands/omarchy-plugin-shelfish/tokens.json",
+    "sha256": "cf44179dd847c7c9ad17445fa4d696d063c00b185c72ff09485b3d2489530ce6",
+    "bytes": 1291
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/GUIDE.md",
+    "sha256": "3dcb4ff221d4bf10e5a261ace0fb6eadc8b8b40350d1af074720e4e0e57e4dad",
+    "bytes": 2176
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/alt-text.md",
+    "sha256": "e5aea63c8560d58db0f61c0ffdc4a3a2f437905a2803c240e807efc051d6e224",
+    "bytes": 1102
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/asset-manifest.json",
+    "sha256": "9c2dba574d29b11b6bcf9438af39054042e9bcbda868f1b709031f7da2f418e0",
+    "bytes": 5213
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/fonts/ArchivoBlack-Regular.ttf",
+    "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+    "bytes": 90988
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/fonts/Public-Sans-0.ttf",
+    "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+    "bytes": 56172
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/fonts/Public-Sans-1.ttf",
+    "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+    "bytes": 56364
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/fonts/Space-Mono-0.ttf",
+    "sha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18",
+    "bytes": 99356
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/fonts/Space-Mono-1.ttf",
+    "sha256": "405e73d41afb7e5906efce206a326af5c956f38e255f35421c260e861e599c59",
+    "bytes": 98232
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/fonts/archivoblack-OFL.txt",
+    "sha256": "3173acd82f8c6159b5b1037b539fcbd4edff68e65c2ea8b9412b5a5ca97b08ff",
+    "bytes": 4492
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/fonts/publicsans-OFL.txt",
+    "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+    "bytes": 4390
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/fonts/spacemono-OFL.txt",
+    "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+    "bytes": 4392
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/logos/lockup.png",
+    "sha256": "9674b94aba98e5a3cf05b77be924a91d858c2427d6b43e7904cedca23df405d2",
+    "bytes": 13489,
+    "width": 675,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/logos/lockup.svg",
+    "sha256": "9137bf363d79e94d489af37d157988ec906a0e25874c450652a393b91b2497a0",
+    "bytes": 2985
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/logos/mark-mono-dark.svg",
+    "sha256": "22d54d88d160b0c7c5dbff83ca06a38e94bc0baab69fcbf0b01442b01b96648d",
+    "bytes": 595
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/logos/mark-mono-light.svg",
+    "sha256": "a7a648223247540ca9eaa4de82be14ffa6c10617511b16d8a8f5a1ede2576965",
+    "bytes": 596
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/logos/mark.png",
+    "sha256": "b64b409bb43992c76524ab6c529a89b29845077dd82b8afd427b9ba3307da3c3",
+    "bytes": 13520,
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/logos/mark.svg",
+    "sha256": "fc44b0f3e423558b81e3478f4c92fcd7236d54ad5e08462951e2645ce34b8de7",
+    "bytes": 584
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/pack-preview.png",
+    "sha256": "1212f86d377ff9a944422bf6835e0bfd5552b71ab51f04468ed91b18194ec842",
+    "bytes": 159149,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/pack-preview.svg",
+    "sha256": "aec87a76056826d47cd643c4c2523ee8fb199b0c0b9eb9ae58b290ac1e607d36",
+    "bytes": 285826
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/product/hero.png",
+    "sha256": "bbd90d4cad2f04878c1a48859c787633d5465c5da31c75e83cb4e57a1005de15",
+    "bytes": 57104,
+    "width": 1440,
+    "height": 900,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/product/hero.svg",
+    "sha256": "c5799142cb1df23ad29e34470dd89fc19fb84f52c29e61002f4ffc6aa1d0aaa3",
+    "bytes": 42729
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/product/mark.svg",
+    "sha256": "fc44b0f3e423558b81e3478f4c92fcd7236d54ad5e08462951e2645ce34b8de7",
+    "bytes": 584
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/product/og.png",
+    "sha256": "9659dd24b7056b76707b8665fcefb015aab243b84aba1eca41697ef8abce7383",
+    "bytes": 49413,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/product/og.svg",
+    "sha256": "0780294ca1c939c2f1e288660f252f327124c4865dc68a36aa675c5985c7b3c7",
+    "bytes": 45865
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/social/avatar.png",
+    "sha256": "3ea9d419e6616fc17927ad30f2ee46c80e24db2c5ebb9f63586b57132b003dae",
+    "bytes": 10483,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/social/banner.png",
+    "sha256": "541e2bbdb0136b9aba3e3500433436b730a6ae6cf540a7fe442a57b8b8692326",
+    "bytes": 54457,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/social/banner.svg",
+    "sha256": "9e586d293fbad464669bc28f864e369b700bd1868ce44763b1bdbaf1cea6c77c",
+    "bytes": 48424
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/social/square.png",
+    "sha256": "c00d0a411ac0d3c2f970424fdf48e6692e42e4e31b0478bac1f2009f3060c016",
+    "bytes": 59283,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/social/square.svg",
+    "sha256": "b147fe17c9efc5c6dbf31041b8136e43c49e18f47c2a8aaae929f81e0a842d36",
+    "bytes": 49379
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/tokens.css",
+    "sha256": "c2c553e5862a7d477421022ca517d0de9249f894e3d83459fea46ce84b33624b",
+    "bytes": 333
+  },
+  {
+    "path": "brands/omarchy-plugin-spool/tokens.json",
+    "sha256": "6954cd390c0d3cfc701357e55694f60bb82b413ff785b1d6f8fcfd3ad7d99bbb",
+    "bytes": 1288
+  },
+  {
+    "path": "brands/omarchy-superproductivity/GUIDE.md",
+    "sha256": "7f278ebc2449b01a755e7b457e7da81b2fc8e0b20d199b0dcb68f855a53f6510",
+    "bytes": 2232
+  },
+  {
+    "path": "brands/omarchy-superproductivity/alt-text.md",
+    "sha256": "c751e22dd293934b0c4f55af663cfda009c7d82bb036c6f5f5094327582e5c95",
+    "bytes": 1371
+  },
+  {
+    "path": "brands/omarchy-superproductivity/asset-manifest.json",
+    "sha256": "cd59dd51a1ce172d1dcec7c52e29dc6cb8fe29cf3b21e590ec5d598b62be0fea",
+    "bytes": 5402
+  },
+  {
+    "path": "brands/omarchy-superproductivity/fonts/IBM-Plex-Mono-0.ttf",
+    "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+    "bytes": 128812
+  },
+  {
+    "path": "brands/omarchy-superproductivity/fonts/IBM-Plex-Mono-1.ttf",
+    "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+    "bytes": 131040
+  },
+  {
+    "path": "brands/omarchy-superproductivity/fonts/Inter-Tight-0.ttf",
+    "sha256": "27350bc95b961b9b4e1a80d872f49e903fe727f290f6b2a079e67ceb1685fb1f",
+    "bytes": 298260
+  },
+  {
+    "path": "brands/omarchy-superproductivity/fonts/Inter-Tight-1.ttf",
+    "sha256": "98272f3512338c52940816f5db61966ca1cdbc3cdb3c0d981da22612723da59e",
+    "bytes": 302808
+  },
+  {
+    "path": "brands/omarchy-superproductivity/fonts/Public-Sans-0.ttf",
+    "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+    "bytes": 56172
+  },
+  {
+    "path": "brands/omarchy-superproductivity/fonts/Public-Sans-1.ttf",
+    "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+    "bytes": 56364
+  },
+  {
+    "path": "brands/omarchy-superproductivity/fonts/ibmplexmono-OFL.txt",
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+    "bytes": 4456
+  },
+  {
+    "path": "brands/omarchy-superproductivity/fonts/intertight-OFL.txt",
+    "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58",
+    "bytes": 4383
+  },
+  {
+    "path": "brands/omarchy-superproductivity/fonts/publicsans-OFL.txt",
+    "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+    "bytes": 4390
+  },
+  {
+    "path": "brands/omarchy-superproductivity/logos/lockup.png",
+    "sha256": "def3e6510c99c65392c3c62c7810dfc24aa85efb14f35e87b099b07b1357c31c",
+    "bytes": 44611,
+    "width": 2041,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/omarchy-superproductivity/logos/lockup.svg",
+    "sha256": "46aab4b7ee0e61f45d11c9b4b7acf3a16da290e919d5048d5d53d3aa739a3cfe",
+    "bytes": 16734
+  },
+  {
+    "path": "brands/omarchy-superproductivity/logos/mark-mono-dark.svg",
+    "sha256": "59cc4b3ccdea03a55653613812a92a1ea481877c30431bf5c4618354f4ba468a",
+    "bytes": 443
+  },
+  {
+    "path": "brands/omarchy-superproductivity/logos/mark-mono-light.svg",
+    "sha256": "7ff79902d4e286d35ac8bf961fd6d5234b854c55599f336d9643ccc0baffb09b",
+    "bytes": 444
+  },
+  {
+    "path": "brands/omarchy-superproductivity/logos/mark.png",
+    "sha256": "277d5d9203c666b75a37fff2f64f52f96bc04501568b63dec17616f472e98470",
+    "bytes": 15893,
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/omarchy-superproductivity/logos/mark.svg",
+    "sha256": "fb70032e6831ebe08456293c45967169fcc4ba6208c3df08acaf146ce37ef8a7",
+    "bytes": 432
+  },
+  {
+    "path": "brands/omarchy-superproductivity/pack-preview.png",
+    "sha256": "dd8ffefc28fedf228d483dc126cdfc691a7d9044741b28dde636b67e118c34cc",
+    "bytes": 195316,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-superproductivity/pack-preview.svg",
+    "sha256": "15a06de9fafaf9aa4d7c6895dd53797a06228d0bfb54f61e3b97b62b19a64140",
+    "bytes": 387873
+  },
+  {
+    "path": "brands/omarchy-superproductivity/product/hero.png",
+    "sha256": "0ef09de94eb586efbdca741fa541237786feb66fa786dff4eb19d58dcbe2eea5",
+    "bytes": 72080,
+    "width": 1440,
+    "height": 900,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-superproductivity/product/hero.svg",
+    "sha256": "43d3472722115d510ea4c885bd3cf8eb4c9df18d534d1cc4322010047fb7871c",
+    "bytes": 57205
+  },
+  {
+    "path": "brands/omarchy-superproductivity/product/mark.svg",
+    "sha256": "fb70032e6831ebe08456293c45967169fcc4ba6208c3df08acaf146ce37ef8a7",
+    "bytes": 432
+  },
+  {
+    "path": "brands/omarchy-superproductivity/product/og.png",
+    "sha256": "7be6a242fcc70f57d1d3e27961b7b1ced1b931c9b38e518eb437827855372db0",
+    "bytes": 60072,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-superproductivity/product/og.svg",
+    "sha256": "ca7ec84dbe6e77f0c9a6e3c99c3117b8db65285cd825a0f3095ffafbe4407239",
+    "bytes": 59107
+  },
+  {
+    "path": "brands/omarchy-superproductivity/social/avatar.png",
+    "sha256": "065d711ae1dcfe94bc48027cd57d2bd1c924239ff9f00ed0301b1386127a226c",
+    "bytes": 11260,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-superproductivity/social/banner.png",
+    "sha256": "a7e5b184ff757916b6d1450ea7372da61749bd20714853387dad4946fdab5f8d",
+    "bytes": 64121,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-superproductivity/social/banner.svg",
+    "sha256": "72be2746161ac30eb67e83fe32d21058c53503bdda3031ff90500a5a6aa4ddbc",
+    "bytes": 64941
+  },
+  {
+    "path": "brands/omarchy-superproductivity/social/square.png",
+    "sha256": "93c5b7ea91bdabf181d787effa80f45357861530dc185dbe506683433cce642a",
+    "bytes": 70177,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/omarchy-superproductivity/social/square.svg",
+    "sha256": "8ea13024472bb9f28741aef5cfc4b6935b4784f5d2d29a738c617b05c60c891e",
+    "bytes": 64682
+  },
+  {
+    "path": "brands/omarchy-superproductivity/tokens.css",
+    "sha256": "d49489ed03a94113c6b043a35f9ee32e293c0b3ae3df05a9d9877890499987f1",
+    "bytes": 369
+  },
+  {
+    "path": "brands/omarchy-superproductivity/tokens.json",
+    "sha256": "67191437935b688a3fdd491c06900aef2ae1316773ce54199c68fe755392e356",
+    "bytes": 1321
+  },
+  {
+    "path": "brands/overlaid/GUIDE.md",
+    "sha256": "7ea6f5e9695fbcd4dc9c5cc21fcb9f327ba97853c56b8f63c4f6826f056cd131",
+    "bytes": 2153
+  },
+  {
+    "path": "brands/overlaid/alt-text.md",
+    "sha256": "2de3beece5d9c2ff313b1bd5ed53b64ceec3984857081d884d3a8230437dcf35",
+    "bytes": 1106
+  },
+  {
+    "path": "brands/overlaid/asset-manifest.json",
+    "sha256": "72d54cf91614926718942642cef4f8b15d3148ac5f3ff8d8c2f734fa35ced2f2",
+    "bytes": 5366
+  },
+  {
+    "path": "brands/overlaid/fonts/Inter-Tight-0.ttf",
+    "sha256": "27350bc95b961b9b4e1a80d872f49e903fe727f290f6b2a079e67ceb1685fb1f",
+    "bytes": 298260
+  },
+  {
+    "path": "brands/overlaid/fonts/Inter-Tight-1.ttf",
+    "sha256": "98272f3512338c52940816f5db61966ca1cdbc3cdb3c0d981da22612723da59e",
+    "bytes": 302808
+  },
+  {
+    "path": "brands/overlaid/fonts/Public-Sans-0.ttf",
+    "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+    "bytes": 56172
+  },
+  {
+    "path": "brands/overlaid/fonts/Public-Sans-1.ttf",
+    "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+    "bytes": 56364
+  },
+  {
+    "path": "brands/overlaid/fonts/Space-Mono-0.ttf",
+    "sha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18",
+    "bytes": 99356
+  },
+  {
+    "path": "brands/overlaid/fonts/Space-Mono-1.ttf",
+    "sha256": "405e73d41afb7e5906efce206a326af5c956f38e255f35421c260e861e599c59",
+    "bytes": 98232
+  },
+  {
+    "path": "brands/overlaid/fonts/intertight-OFL.txt",
+    "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58",
+    "bytes": 4383
+  },
+  {
+    "path": "brands/overlaid/fonts/publicsans-OFL.txt",
+    "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+    "bytes": 4390
+  },
+  {
+    "path": "brands/overlaid/fonts/spacemono-OFL.txt",
+    "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+    "bytes": 4392
+  },
+  {
+    "path": "brands/overlaid/logos/lockup.png",
+    "sha256": "2f40bc04e7ad8d6b236bd65a140708e00445df5dcbb1f807c3c4acca3b64a534",
+    "bytes": 14487,
+    "width": 770,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/overlaid/logos/lockup.svg",
+    "sha256": "f2f6316f5797ea24d6e0c20620b2904c67acd0e16f3a1b11e6cf6f8fba77bbfe",
+    "bytes": 6252
+  },
+  {
+    "path": "brands/overlaid/logos/mark-mono-dark.svg",
+    "sha256": "1260173d8e9d412aff0ce6125ba07a8aa327b536bc4681af5808eedf889d56f4",
+    "bytes": 583
+  },
+  {
+    "path": "brands/overlaid/logos/mark-mono-light.svg",
+    "sha256": "4382f04af8bf98fc4a543fcd8a9e048b3dcb8fd7fce1c6ccc45ef1124dbd2f5f",
+    "bytes": 584
+  },
+  {
+    "path": "brands/overlaid/logos/mark.png",
+    "sha256": "1da1f1b2aa6663e3fcbe68cc397e4debb8e74fa362b596bcc61552350f0a943a",
+    "bytes": 7954,
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/overlaid/logos/mark.svg",
+    "sha256": "74de7324fd3ab69550a373ad60d2234624ecc0e7193998362a34d20e355c5a5d",
+    "bytes": 572
+  },
+  {
+    "path": "brands/overlaid/pack-preview.png",
+    "sha256": "f74ab77ea4970bcf9ec84a369e1e8f3993de59eb84bee904b1ff3fd6e1da88aa",
+    "bytes": 132146,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/overlaid/pack-preview.svg",
+    "sha256": "3e10ebd26f057b7eabfe086cf2dddb629263036a493bc085bcfbe93292292fd6",
+    "bytes": 262533
+  },
+  {
+    "path": "brands/overlaid/product/hero.png",
+    "sha256": "5c8dfe90d2bc5b04819646fe352343a90753d94300d48913235b94079b01a679",
+    "bytes": 47861,
+    "width": 1440,
+    "height": 900,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/overlaid/product/hero.svg",
+    "sha256": "cfbcc2a1cde3725751773c0178a3713581c79161f4e998e564541351c0c096a5",
+    "bytes": 37645
+  },
+  {
+    "path": "brands/overlaid/product/mark.svg",
+    "sha256": "74de7324fd3ab69550a373ad60d2234624ecc0e7193998362a34d20e355c5a5d",
+    "bytes": 572
+  },
+  {
+    "path": "brands/overlaid/product/og.png",
+    "sha256": "13367308ade2f48ad9e6a7dc9bfe21340f0ecfc793c2d145197ad107103bc5fd",
+    "bytes": 40985,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/overlaid/product/og.svg",
+    "sha256": "eedcd36cc1beb8741e8d77504cc383bc47789d86e2e3157ead3a786d35e9c75e",
+    "bytes": 40299
+  },
+  {
+    "path": "brands/overlaid/social/avatar.png",
+    "sha256": "5ff59cc8e2c0e4b2ab122b5f68a6bfbb95b7bdd973555c41d6cc5ed42aab2de8",
+    "bytes": 6420,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/overlaid/social/banner.png",
+    "sha256": "c4b627399b90c164e65299e5981a0e99b73b93f6c5bbc40fc48f1b75564b53c7",
+    "bytes": 46443,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/overlaid/social/banner.svg",
+    "sha256": "120762845f69763db536935351f4847e6f7060a41f076c9b947e9ffb0b24399c",
+    "bytes": 43570
+  },
+  {
+    "path": "brands/overlaid/social/square.png",
+    "sha256": "d5b19d7b4a6b89eeeb3115ac864d2c75e135a5cf7f806c5808b70814bfecd7b4",
+    "bytes": 51816,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/overlaid/social/square.svg",
+    "sha256": "204f355fce356587a990a67acfc47fb954d27eba71072dbeb0eb4420ac8868f6",
+    "bytes": 44155
+  },
+  {
+    "path": "brands/overlaid/tokens.css",
+    "sha256": "95d2604a8d50ea0c9a840db0076348ad6e0a1ba662535f4d5b6379a8cf322347",
+    "bytes": 247
+  },
+  {
+    "path": "brands/overlaid/tokens.json",
+    "sha256": "d00a0569a87af07482ca042595895e484a713825938f857d0d0ca319717d972c",
+    "bytes": 1279
+  },
+  {
+    "path": "brands/pirs/GUIDE.md",
+    "sha256": "cf8281f7e0faea1566437e7191e9e0b6f8a28823ab508bc5b2b31777ba5c3438",
+    "bytes": 2203
+  },
+  {
+    "path": "brands/pirs/alt-text.md",
+    "sha256": "337828feeaa8266e77a74f0543f52690bc37521bd2dfe16fc4e8ed6f920d56f8",
+    "bytes": 1169
+  },
+  {
+    "path": "brands/pirs/asset-manifest.json",
+    "sha256": "b3be31e7e902045c3d2d629f9747d40579bd8e3069eeb9d55bd4bc4b4e2c00e0",
+    "bytes": 5370
+  },
+  {
+    "path": "brands/pirs/fonts/Barlow-0.ttf",
+    "sha256": "a35caa4687f434d66453c1fe423d7074cfa9fd7ab80c19b0780f3862887d2fc9",
+    "bytes": 82624
+  },
+  {
+    "path": "brands/pirs/fonts/Barlow-1.ttf",
+    "sha256": "74103fd6d41bc32c63aa2e6eb3db619ddb80ce9ca1b1420d5548a23b8ee5d154",
+    "bytes": 85776
+  },
+  {
+    "path": "brands/pirs/fonts/Barlow-Condensed-0.ttf",
+    "sha256": "c82d65280835cb3cd1b499863cf68cae8c6193c45ffae9495d28d01f749a9ae2",
+    "bytes": 80968
+  },
+  {
+    "path": "brands/pirs/fonts/Barlow-Condensed-1.ttf",
+    "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7",
+    "bytes": 87120
+  },
+  {
+    "path": "brands/pirs/fonts/IBM-Plex-Mono-0.ttf",
+    "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+    "bytes": 128812
+  },
+  {
+    "path": "brands/pirs/fonts/IBM-Plex-Mono-1.ttf",
+    "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+    "bytes": 131040
+  },
+  {
+    "path": "brands/pirs/fonts/barlow-OFL.txt",
+    "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+    "bytes": 4377
+  },
+  {
+    "path": "brands/pirs/fonts/barlowcondensed-OFL.txt",
+    "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+    "bytes": 4377
+  },
+  {
+    "path": "brands/pirs/fonts/ibmplexmono-OFL.txt",
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+    "bytes": 4456
+  },
+  {
+    "path": "brands/pirs/logos/lockup.png",
+    "sha256": "def4d878e4c56cb4657155f96eaaba4d9c5b14760c1502e93687a43e0a4860b9",
+    "bytes": 5868,
+    "width": 478,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/pirs/logos/lockup.svg",
+    "sha256": "aa276bca7b4d014d60842f7eda0788e1635a3e48f1e706971dba1f86102350b0",
+    "bytes": 3729
+  },
+  {
+    "path": "brands/pirs/logos/mark-mono-dark.svg",
+    "sha256": "317521dc7f4e82b19d77dea022dd0ee37c4f15d046cf6b61ec9aed83114195a3",
+    "bytes": 799
+  },
+  {
+    "path": "brands/pirs/logos/mark-mono-light.svg",
+    "sha256": "efdd886a3d814451efbfd98a234a547392db51c68ed802dab22631fab12753e2",
+    "bytes": 800
+  },
+  {
+    "path": "brands/pirs/logos/mark.png",
+    "sha256": "7e013ef989e15fb701fa3617bec142842079deee2db6392169e8a1a0695e87a6",
+    "bytes": 3901,
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/pirs/logos/mark.svg",
+    "sha256": "4ac00db6335a429ee14eced96c120080f3295e30b49c30169a69c706f0a61b53",
+    "bytes": 788
+  },
+  {
+    "path": "brands/pirs/pack-preview.png",
+    "sha256": "eb0ef15e47a3485aa473369421df4b8eba6e9fb36b2f50076fb1853c34d26748",
+    "bytes": 121341,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/pirs/pack-preview.svg",
+    "sha256": "f7c289d40f69eda25635e3a28efde592db897b361fa921a36731e864c230d592",
+    "bytes": 395293
+  },
+  {
+    "path": "brands/pirs/product/hero.png",
+    "sha256": "1f78e0a75ed092c676c714f41cc85123c113879c492fc3894bbd888a2b24baad",
+    "bytes": 47728,
+    "width": 1440,
+    "height": 900,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/pirs/product/hero.svg",
+    "sha256": "26eb5877b4a81794226b55a509fe142bac997516712e7bedcff677f7175daedf",
+    "bytes": 62786
+  },
+  {
+    "path": "brands/pirs/product/mark.svg",
+    "sha256": "4ac00db6335a429ee14eced96c120080f3295e30b49c30169a69c706f0a61b53",
+    "bytes": 788
+  },
+  {
+    "path": "brands/pirs/product/og.png",
+    "sha256": "2d84a0445aa673251767a95136b72f7da0b93ff42589b28b2cc7c2f76369cb7e",
+    "bytes": 41075,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/pirs/product/og.svg",
+    "sha256": "772dce99f650bc976600e54533ccef7bb90f223c1d6f003aad60c3d490f9bc3d",
+    "bytes": 66398
+  },
+  {
+    "path": "brands/pirs/social/avatar.png",
+    "sha256": "8393ad19ff219000b221023c84f0b1040d177da4ca939e6172198f77124d756b",
+    "bytes": 3412,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/pirs/social/banner.png",
+    "sha256": "5bc303833a78ad88bdf8894309e686c8c7422ff073e6106dbbd2b41fb91c83c2",
+    "bytes": 44747,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/pirs/social/banner.svg",
+    "sha256": "c341e72afd9bde75332f88c876a1caec1db1facbc0f06ad04e2a3203b7db7b08",
+    "bytes": 65004
+  },
+  {
+    "path": "brands/pirs/social/square.png",
+    "sha256": "09b066e04ba3f6007ae1b9a3352f27b7675af7b1d71b0aba297011c7d7f0a9f6",
+    "bytes": 51383,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/pirs/social/square.svg",
+    "sha256": "24a888177287240d34e12614902925e14d44ac94bbc90c326e1048967662c41d",
+    "bytes": 69981
+  },
+  {
+    "path": "brands/pirs/tokens.css",
+    "sha256": "4cdf578f75e6a9b385d652bd461a59c0035bd1278a2042c6fa0cff3abc628573",
+    "bytes": 222
+  },
+  {
+    "path": "brands/pirs/tokens.json",
+    "sha256": "a04024df39643c6fb7f2493e319ed3871158f6760448a3124b9a698b132c77ad",
+    "bytes": 1267
+  },
+  {
+    "path": "brands/super-productivity-mcp/GUIDE.md",
+    "sha256": "8a4743525bd0985e2d06e62c3097ac9e71840feeed2070e119f4420d0f2f7e6f",
+    "bytes": 2177
+  },
+  {
+    "path": "brands/super-productivity-mcp/alt-text.md",
+    "sha256": "bc260145c029b66ea955ee5028896e68e2a96961e29d2f24e045c60de8ba95ad",
+    "bytes": 1254
+  },
+  {
+    "path": "brands/super-productivity-mcp/asset-manifest.json",
+    "sha256": "dfa3cc97ec7c5d57b1db21780119ebecb5935bf1d75d72536294530aab5badab",
+    "bytes": 4902
+  },
+  {
+    "path": "brands/super-productivity-mcp/fonts/Public-Sans-0.ttf",
+    "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+    "bytes": 56172
+  },
+  {
+    "path": "brands/super-productivity-mcp/fonts/Public-Sans-1.ttf",
+    "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+    "bytes": 56364
+  },
+  {
+    "path": "brands/super-productivity-mcp/fonts/Space-Mono-0.ttf",
+    "sha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18",
+    "bytes": 99356
+  },
+  {
+    "path": "brands/super-productivity-mcp/fonts/Space-Mono-1.ttf",
+    "sha256": "405e73d41afb7e5906efce206a326af5c956f38e255f35421c260e861e599c59",
+    "bytes": 98232
+  },
+  {
+    "path": "brands/super-productivity-mcp/fonts/publicsans-OFL.txt",
+    "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+    "bytes": 4390
+  },
+  {
+    "path": "brands/super-productivity-mcp/fonts/spacemono-OFL.txt",
+    "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+    "bytes": 4392
+  },
+  {
+    "path": "brands/super-productivity-mcp/logos/lockup.png",
+    "sha256": "0d34f1c7fa272bd789a294ccfd3f71f92db9bae079a940e5f674c3424b36a96b",
+    "bytes": 31233,
+    "width": 1924,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/super-productivity-mcp/logos/lockup.svg",
+    "sha256": "17f2274b0672568fb5a811ccefb9517c6cb3fe90f3d7c1013d6c3167d559782d",
+    "bytes": 8745
+  },
+  {
+    "path": "brands/super-productivity-mcp/logos/mark-mono-dark.svg",
+    "sha256": "7defc9a3fbba419f4af0d75342e9be6b8ff1584a62d6d1a9218d73dc417cbe31",
+    "bytes": 539
+  },
+  {
+    "path": "brands/super-productivity-mcp/logos/mark-mono-light.svg",
+    "sha256": "793f8df2c8164fe31a12ebaea4ad9df7f6c24d25b326fdf31663666593da27b3",
+    "bytes": 540
+  },
+  {
+    "path": "brands/super-productivity-mcp/logos/mark.png",
+    "sha256": "e6898aa9e61a90274728bb53533df8cc31615b45b0b68d2e4f7e669741f4c96c",
+    "bytes": 9369,
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/super-productivity-mcp/logos/mark.svg",
+    "sha256": "1f0a28e2dbcf0550ca02dea825bec7198e7bc0c715652d55b9ee948f5d9bdf08",
+    "bytes": 528
+  },
+  {
+    "path": "brands/super-productivity-mcp/pack-preview.png",
+    "sha256": "070e314ff72b025f312116445be81e8860dab2071b5504664a9c2362af55badc",
+    "bytes": 157432,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/super-productivity-mcp/pack-preview.svg",
+    "sha256": "a4f3490aaa70dcfb64d4b163fd3ace5af9e6b666a2001f8fb5fa3e2990478a10",
+    "bytes": 319635
+  },
+  {
+    "path": "brands/super-productivity-mcp/product/hero.png",
+    "sha256": "46e5837fedf1d9fac2071d54a036302b1fed66c3eb8ae072a6bde13d386e71d8",
+    "bytes": 55855,
+    "width": 1440,
+    "height": 900,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/super-productivity-mcp/product/hero.svg",
+    "sha256": "262fd825f57c1bd357e8e61321513ad97f7889c158379a95f2e8d762b7f35c15",
+    "bytes": 46459
+  },
+  {
+    "path": "brands/super-productivity-mcp/product/mark.svg",
+    "sha256": "1f0a28e2dbcf0550ca02dea825bec7198e7bc0c715652d55b9ee948f5d9bdf08",
+    "bytes": 528
+  },
+  {
+    "path": "brands/super-productivity-mcp/product/og.png",
+    "sha256": "65b91489a57a084bbf415198c448537b06362028b5db552fe98a922ab1bae61f",
+    "bytes": 51868,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/super-productivity-mcp/product/og.svg",
+    "sha256": "79e76b449f4aba1166c5bd74ddb92854f19c7230a198f9b916a29e11a171415a",
+    "bytes": 51462
+  },
+  {
+    "path": "brands/super-productivity-mcp/social/avatar.png",
+    "sha256": "d503ba35d67ab4acc71f21dd08bc0ba6e91922206c8a94f79720fc4f8b7b513d",
+    "bytes": 7196,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/super-productivity-mcp/social/banner.png",
+    "sha256": "1491c6fe7cd8a475f96720270f840cddb03b65b3b5be8e75e61133d47703b33b",
+    "bytes": 61323,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/super-productivity-mcp/social/banner.svg",
+    "sha256": "bef5795b606dee686db62195054c88559a24dd7ee572aa32f5c12fd4cf220bad",
+    "bytes": 53173
+  },
+  {
+    "path": "brands/super-productivity-mcp/social/square.png",
+    "sha256": "63c3d9a9a3da58249e5881e710cfd63edaf01b15b31636afeabfd16a962a34d6",
+    "bytes": 64920,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/super-productivity-mcp/social/square.svg",
+    "sha256": "f0cc8caf263cb6164d4e84976673ac32a32897a7d830de7c90efdde218c606c2",
+    "bytes": 54943
+  },
+  {
+    "path": "brands/super-productivity-mcp/tokens.css",
+    "sha256": "70412159e6104656e20d03860ff8ca4b3e95429301b40a6819522f8e0a010190",
+    "bytes": 344
+  },
+  {
+    "path": "brands/super-productivity-mcp/tokens.json",
+    "sha256": "c34eb0175434a65607bfd1e90f20bc89f27ee3f2b0cac51f1621b360b765c77c",
+    "bytes": 1301
+  },
+  {
+    "path": "brands/tmux-popups/GUIDE.md",
+    "sha256": "22d32b2afaf8c07d1395ac095d3969e8ec6dcf39cc64dd91b170199cfa46e96f",
+    "bytes": 2207
+  },
+  {
+    "path": "brands/tmux-popups/alt-text.md",
+    "sha256": "284b8d1ddce517231958047bf68bb83bbdc4783f6d5f3e29f81ae323cd1d004b",
+    "bytes": 1199
+  },
+  {
+    "path": "brands/tmux-popups/asset-manifest.json",
+    "sha256": "01a664471a0232a0fa3f09d0c1239fa12ca24ebbc90143e304f33f84ca8b0fee",
+    "bytes": 4414
+  },
+  {
+    "path": "brands/tmux-popups/fonts/Space-Mono-0.ttf",
+    "sha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18",
+    "bytes": 99356
+  },
+  {
+    "path": "brands/tmux-popups/fonts/Space-Mono-1.ttf",
+    "sha256": "405e73d41afb7e5906efce206a326af5c956f38e255f35421c260e861e599c59",
+    "bytes": 98232
+  },
+  {
+    "path": "brands/tmux-popups/fonts/spacemono-OFL.txt",
+    "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+    "bytes": 4392
+  },
+  {
+    "path": "brands/tmux-popups/logos/lockup.png",
+    "sha256": "a2b26832cf9560ae155f80317ce2b4238c5c18e02e7922cbfbf8d2517b0ba195",
+    "bytes": 16773,
+    "width": 1116,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/tmux-popups/logos/lockup.svg",
+    "sha256": "b9a5380c3224065d0446c4b6fbaf909a1f560790beffc16cb79e7ae678c88a93",
+    "bytes": 5480
+  },
+  {
+    "path": "brands/tmux-popups/logos/mark-mono-dark.svg",
+    "sha256": "456cfa2407664a4d969f5a8ec5658d0b2075a7895ce625cf97a6a30b100ddfa3",
+    "bytes": 631
+  },
+  {
+    "path": "brands/tmux-popups/logos/mark-mono-light.svg",
+    "sha256": "5cddcc8c525ce277e5fd46fef4f2e03ec6f28867e87d9b49bbecfe3e9a301dca",
+    "bytes": 632
+  },
+  {
+    "path": "brands/tmux-popups/logos/mark.png",
+    "sha256": "71e74146081039b6896fe3ed6792652fe5818bc4c64fffd6d8ba03de89e37ef9",
+    "bytes": 3918,
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "path": "brands/tmux-popups/logos/mark.svg",
+    "sha256": "31d49ef5a06884b87451f9148e97b7e61c8530278b28926f729f9f94a7239010",
+    "bytes": 620
+  },
+  {
+    "path": "brands/tmux-popups/pack-preview.png",
+    "sha256": "eea4a7193aaf327375133ede5ed38c4e7e1bd528729df0eb531eaa4a1027ec06",
+    "bytes": 132715,
+    "width": 1600,
+    "height": 1800,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/tmux-popups/pack-preview.svg",
+    "sha256": "30ec865a1caf5876ddea38f2b59d6f41674e9028669695cf66bcc9202ce4bc9e",
+    "bytes": 278824
+  },
+  {
+    "path": "brands/tmux-popups/product/hero.png",
+    "sha256": "d7badf2642e290826d6a0ff06fdcfc8c520dc27c9319515c2b1501379d191f44",
+    "bytes": 51886,
+    "width": 1440,
+    "height": 900,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/tmux-popups/product/hero.svg",
+    "sha256": "63175723c5ba4a50ca8cc0a0ecf5d3862242e9f5896c79ef3438a20948c0cb01",
+    "bytes": 41552
+  },
+  {
+    "path": "brands/tmux-popups/product/mark.svg",
+    "sha256": "31d49ef5a06884b87451f9148e97b7e61c8530278b28926f729f9f94a7239010",
+    "bytes": 620
+  },
+  {
+    "path": "brands/tmux-popups/product/og.png",
+    "sha256": "e7e66972e8e41d88dc73fc3f0de5caf874149869b7f6a7564074090a30d7da39",
+    "bytes": 44392,
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/tmux-popups/product/og.svg",
+    "sha256": "334ef12a30bd1fea5ac18070e4a2be9cc4236fca371d12ddf5e9b22247b214c5",
+    "bytes": 44560
+  },
+  {
+    "path": "brands/tmux-popups/social/avatar.png",
+    "sha256": "ada2472fd366af3e2c0d4dea493f14b0ea9fcc480eb382800ccd7e21875f9268",
+    "bytes": 3334,
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/tmux-popups/social/banner.png",
+    "sha256": "faab86b8f28aaa07fd900e035a3082e5882fd65a7a879056286642948f83cfae",
+    "bytes": 50967,
+    "width": 1500,
+    "height": 500,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/tmux-popups/social/banner.svg",
+    "sha256": "830d19f724e3176a946e112904d5de9f00052896fe7720d64919882d7b4dda65",
+    "bytes": 44983
+  },
+  {
+    "path": "brands/tmux-popups/social/square.png",
+    "sha256": "5e0eb274329c64409ea37fd3e21411fe07ff6171a63624513a694e96f6039b8f",
+    "bytes": 56234,
+    "width": 1080,
+    "height": 1080,
+    "mode": "RGB"
+  },
+  {
+    "path": "brands/tmux-popups/social/square.svg",
+    "sha256": "91adcc47a007c348187e16b51bec7f4002157a250d9f72368552a1df0c6758ea",
+    "bytes": 47514
+  },
+  {
+    "path": "brands/tmux-popups/tokens.css",
+    "sha256": "3e146b928af0e42c99db6f8e4c5c5ab444e79499d0a883f08ead9407f805671e",
+    "bytes": 266
+  },
+  {
+    "path": "brands/tmux-popups/tokens.json",
+    "sha256": "9fec595dc8d0655ca9bd1a16a5d5d9aac034e8e825b5ad65fa6799e63e469d31",
+    "bytes": 1288
   }
 ]
