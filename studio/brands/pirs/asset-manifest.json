@@ -1,12 +1,12 @@
 {
-  "status": "proposed",
+  "status": "accepted",
   "brand": "Pirs",
   "generator": "brand-tools/site_packs.py",
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "cf8281f7e0faea1566437e7191e9e0b6f8a28823ab508bc5b2b31777ba5c3438",
-      "bytes": 2203
+      "sha256": "eb166d4d66d8af46d14386c07ac81fbd66bfd8e3a511292a10102f3708c00766",
+      "bytes": 2249
     },
     {
       "path": "alt-text.md",
@@ -179,8 +179,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "a04024df39643c6fb7f2493e319ed3871158f6760448a3124b9a698b132c77ad",
-      "bytes": 1267
+      "sha256": "5853917c6729bab5de19b2e17d08cf5858262cabf2d9b3b7ae2d19a81ec221ed",
+      "bytes": 1386
     }
   ]
 }

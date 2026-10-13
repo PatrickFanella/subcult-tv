@@ -3,7 +3,7 @@ title: Product Claims Register
 type: documentation
 status: active
 created: 2026-09-30
-updated: 2026-10-12
+updated: 2026-10-13
 tags:
 - topic/publishing
 ---
@@ -171,3 +171,53 @@ Source: `PatrickFanella/super-productivity-mcp` (README).
 - C-SPMCP-01: an MCP server (`sp-mcp`), a Super Productivity plugin bridge over file IPC (inbox, outbox, dead letter), a desktop quick-add launcher through Walker or a GTK popup, and a tool catalogue in one JSON file; broad writes are dry-run first. Requires Super Productivity desktop 14+; archive/restore needs the optional local REST API; recurrence tools need a build whose plugin sandbox allows them. MIT.
 
 Riot grrrl archive, Dedhed, Patrick__Eff and the teasers are not on the product pages and gain no claim here.
+
+## Landing audit corrections — October 13, 2026
+
+Source: the October 13 landing audit (`studio/studies/reviews/featured-landings-2026-10-13/`), checked against local checkouts and the current Gitea README where noted. Live sites were not browsed.
+
+### Undertow, additions to C-UNDERTOW
+
+Source: `subculture-collective/undertow` README at `077af66` (October 11, 2026).
+
+- C-UNDERTOW-02: layers are Milkdrop presets, spectrum, waveform, VU meters, particles, artwork and logos, text, socials and looping video backgrounds; enhanced LRC word timings give word-by-word karaoke; six templates (Classic, Vinyl, Karaoke, Neon, Poster, Video loop).
+- C-UNDERTOW-03: local export renders the whole song or a 15-second preview as MP4 from 720p to 4K at 24, 30 or 60 frames per second; the exporter asks for H.264 and falls back to HEVC, VP9 or AV1. 4K is offered everywhere but not every device can encode it, so copy may name the range and must not promise it on a given machine.
+
+### clpr, correction
+
+The README at `4850edd` (October 3, 2026) describes browse and search by creator, topic, tag or Twitch category and a feed moved by upvotes and comments. It does not describe a trending view; landing copy now says "the feed".
+
+### Rekolekt, source record
+
+The product source is now `subculture-collective/rekolekt` (pack guide and landing FAQ agree); `transcript-create` remains the catalog slug and contact route. The source record above predates the move.
+
+### Backline, correction
+
+C-BACKLINE-01 supports an audio module, not a station list. The SomaFM sentence was removed from the landing.
+
+### Tadooer — October 13, 2026
+
+Source: `subculture-collective/tadooer` README at `ca6593f` (October 12, 2026) from Gitea; `DEVELOPMENT.md` and `docs/STATUS.md` at the same revision. The September 20 local checkout was not used for the current claims.
+
+- C-TADOOER-01: a private, self-hosted task and calendar planner for one owner; no public service or sign-up. Web app, a Linux desktop client, and an Android shell that exists in source with no built APK or device qualification claimed.
+- C-TADOOER-02: tasks placed beside the calendar; Baikal CalDAV (bundled or existing) as the calendar authority; Google Calendar read scopes qualified against a real grant on 2026-08-07, with explicit write consent per calendar; connected calendars show freshness and conflicting edits ask for a decision.
+- C-TADOOER-03: one server-authoritative focus session; another client can follow or explicitly take over; core task edits queue while a browser is temporarily offline; calendar and focus commands need a connection; a closed app receives no background updates.
+- C-TADOOER-04: SQLite on the owner's server, encrypted connector credentials, documented backup and restore. GitHub and Gitea issue connections support selective task import. A Super Productivity import is listed under remaining import adapters in `docs/STATUS.md` and is not claimed as available. The pack's promotional artwork and copy were owner-approved on October 10, 2026; the README still labels its own banner as pending review.
+
+### Prichal — October 13, 2026
+
+Source: `subculture-collective/prichal` README at `c0b1335` (October 12, 2026).
+
+- C-PRICHAL-01: managed personal data servers on the open network Bluesky runs on; a private preview with public account hosting and sign-up not available. Approved lines: "Your server. We keep it running." and "Dock your account. We handle the rest."
+- C-PRICHAL-02: backups, recovery, public federation, domains and account migration each have their own qualification gates. Copy may describe a domain handle and moving between hosts as planned, not available.
+
+### Left Field — October 13, 2026
+
+Source: `subculture-collective/left-field` README at `a8e6378` (local alias `dsa-seats`, October 12, 2026).
+
+- C-LEFTFIELD-01: seat-level public election, geography and campaign-finance records beside their sources for U.S. House and Senate, governorships and state legislatures; each provisional score shows its inputs and version; missing information stays missing rather than becoming a zero.
+- C-LEFTFIELD-02: the research site is in active development at `left-field.subcult.tv`; voter files, inferred ideology and demographic targeting are outside scope; no DSA endorsement is implied. No public app beyond the research site is announced.
+
+### Kork, voice note
+
+The landing no longer mentions custom domains or a paid plan, following the voice guide; C-KORK still records both as not available if a reader asks.

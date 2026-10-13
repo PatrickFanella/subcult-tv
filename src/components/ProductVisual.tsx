@@ -44,18 +44,6 @@ export default function ProductVisual({
       />
     );
   }
-  if (project.slug === 'left-field') {
-    return (
-      <img
-        src="/brand/left-field/hero.svg"
-        alt="Left Field: Where the field bends. LF mark on warm paper."
-        loading={priority ? 'eager' : 'lazy'}
-        fetchPriority={priority ? 'high' : 'auto'}
-        decoding="async"
-        className="showcase-screenshot"
-      />
-    );
-  }
   const hero = BRAND_HEROES.get(project.slug);
   if (hero) {
     return (
@@ -90,7 +78,7 @@ export default function ProductVisual({
         <div className="archive-illustration">
           {project.slug === 'transcript-create' && (
             <div className="rekolekt-lockup">
-              <img src="/brand/rekolekt-mark.svg" alt="" />
+              <img src="/brand/rekolekt/mark.svg" alt="" />
               <div>
                 <strong>rekolekt</strong>
                 <span>BY SUBCULT</span>

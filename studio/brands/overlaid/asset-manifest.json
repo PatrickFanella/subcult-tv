@@ -1,12 +1,12 @@
 {
-  "status": "proposed",
+  "status": "accepted",
   "brand": "Overlaid",
   "generator": "brand-tools/site_packs.py",
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "7ea6f5e9695fbcd4dc9c5cc21fcb9f327ba97853c56b8f63c4f6826f056cd131",
-      "bytes": 2153
+      "sha256": "5fc37b05d905ad5cc979ba8b645a159fc5aa3e489bc99fbede845094d2ea9dd4",
+      "bytes": 2199
     },
     {
       "path": "alt-text.md",
@@ -179,8 +179,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "d00a0569a87af07482ca042595895e484a713825938f857d0d0ca319717d972c",
-      "bytes": 1279
+      "sha256": "63d6bd0a2ddfdb78ae114a35e2fae0956dc291bc73a20fd142e76c0e425873bb",
+      "bytes": 1398
     }
   ]
 }

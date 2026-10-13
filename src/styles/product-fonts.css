@@ -92,6 +92,13 @@
 @font-face {
   font-family: 'Cascadia Mono';
   font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/brand/chatty-cat/fonts/CascadiaMono-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cascadia Mono';
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url(/brand/chatty-cat/fonts/CascadiaMono-Bold.ttf) format('truetype');
@@ -123,4 +130,46 @@
   font-weight: 700;
   font-display: swap;
   src: url(/brand/fonts/barlow-condensed-700.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/brand/kork/fonts/AtkinsonHyperlegibleNext-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/brand/kork/fonts/AtkinsonHyperlegibleNext-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/brand/tadooer/fonts/Inter-0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/brand/tadooer/fonts/Inter-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/brand/tadooer/fonts/Atkinson-Hyperlegible-Mono-0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/brand/tadooer/fonts/Atkinson-Hyperlegible-Mono-1.ttf) format('truetype');
 }

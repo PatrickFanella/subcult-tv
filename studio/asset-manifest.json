@@ -7773,18 +7773,18 @@
   },
   {
     "path": "brand-tools/site_packs.py",
-    "sha256": "9f99a749b95aae51bf4cbcded6a674d222c53dc4b4c2e8306d28aa0ceeb65fdc",
-    "bytes": 23704
+    "sha256": "9f82fe222349f27606d0f0ff4cf707111736b5148cadbcafd86a2e6d68806b88",
+    "bytes": 23866
   },
   {
     "path": "brands/README.md",
-    "sha256": "2226e3398ae05653ddb7a79bcd0fff87c6f1fdf9a4117ebafd16789ef71d802a",
-    "bytes": 3239
+    "sha256": "c074358eb9ddadbde7f735cb29cf80b125ed34c82ca7ca20f91698ecd23fa044",
+    "bytes": 3340
   },
   {
     "path": "brands/arkhiv/GUIDE.md",
-    "sha256": "0975af4004591175b92f6e1eae34815639ffe6c8134d13d1d7490585872f772d",
-    "bytes": 2181
+    "sha256": "421c27eb0500285cd182139b7eec383392a8263b2392158b226756b0119ea579",
+    "bytes": 2227
   },
   {
     "path": "brands/arkhiv/alt-text.md",
@@ -7793,7 +7793,7 @@
   },
   {
     "path": "brands/arkhiv/asset-manifest.json",
-    "sha256": "a2966ab08cde2c80c05d42fe20f74da8ecc72b53caf4b95b9fa6836109bf78db",
+    "sha256": "9414c0d21fbb3de009ecc144a58c67670c83f764b17ebfbad3624ab8535142c4",
     "bytes": 5374
   },
   {
@@ -7962,13 +7962,13 @@
   },
   {
     "path": "brands/arkhiv/tokens.json",
-    "sha256": "5d1a58980a806509aa01e29abb9a622b1c21718d4bf04c6f21b06ebe72c3daf6",
-    "bytes": 1281
+    "sha256": "4791009498af357fea9c7188388592684ae7b55e55ed5ad1a58f756bccdfe7da",
+    "bytes": 1400
   },
   {
     "path": "brands/obsidian-plugin-metronome-tuner/GUIDE.md",
-    "sha256": "dbb1dd2aab816042efea744144fef3b8d1853f5766e17942bf7e974850debec9",
-    "bytes": 2199
+    "sha256": "5d1801a2b8b9fa28965cd87a96478fb0a9554d9b4d8efcd4d9da5d4ab2a3b81a",
+    "bytes": 2245
   },
   {
     "path": "brands/obsidian-plugin-metronome-tuner/alt-text.md",
@@ -7977,7 +7977,7 @@
   },
   {
     "path": "brands/obsidian-plugin-metronome-tuner/asset-manifest.json",
-    "sha256": "087a0bc143cf2c08b9a354eecdc537cb0e010e934c24425c8a6c01f54706f5ec",
+    "sha256": "b59ea908e2016bc02b2425849894a783ad17d3c637e1320389363f3e999d4cd3",
     "bytes": 5383
   },
   {
@@ -8146,13 +8146,13 @@
   },
   {
     "path": "brands/obsidian-plugin-metronome-tuner/tokens.json",
-    "sha256": "922adbc248488278cffaec1aacf8c3643497d49a1d5ce14a4b2956b2c7de615c",
-    "bytes": 1309
+    "sha256": "ff4174b7658ee28e30bb5d49815786c58174719101fb46ac4df7840bf1f92cdd",
+    "bytes": 1428
   },
   {
     "path": "brands/omarchy-monitor-bar/GUIDE.md",
-    "sha256": "e1170f1dc233164dcc88d9122a5f9357fdcff8271d0fa4cd6fac57a5c930aa17",
-    "bytes": 2201
+    "sha256": "1e134698c5c6fa92bf2f397a5d8c8d19ed265952e321e290f692f0f07df0f0dd",
+    "bytes": 2247
   },
   {
     "path": "brands/omarchy-monitor-bar/alt-text.md",
@@ -8161,7 +8161,7 @@
   },
   {
     "path": "brands/omarchy-monitor-bar/asset-manifest.json",
-    "sha256": "119aa86286e94790d12e058377ce0eebf860ddc086fbc0c1331a9f209da94b12",
+    "sha256": "871390a416693db4ac6952bd6192effc4dbeefb9e97c720d482c7d734332dd72",
     "bytes": 5395
   },
   {
@@ -8330,13 +8330,13 @@
   },
   {
     "path": "brands/omarchy-monitor-bar/tokens.json",
-    "sha256": "95a0b08a3c63c76eff677353026dfbaafa3f96ffa7734a2eb1f1c064b420e183",
-    "bytes": 1310
+    "sha256": "e6648e83c06abc17795ac829f8927f65a24e54639f105c835057a7361387986b",
+    "bytes": 1429
   },
   {
     "path": "brands/omarchy-plugin-shelfish/GUIDE.md",
-    "sha256": "064cc92101532729024d14906a08ad68f0e6ca7f3f9b50e8b8129ec57de5bec3",
-    "bytes": 2151
+    "sha256": "8f74d1330682870567abf0879fad67245078ea04fcfb04175db95611b5bed12b",
+    "bytes": 2197
   },
   {
     "path": "brands/omarchy-plugin-shelfish/alt-text.md",
@@ -8345,7 +8345,7 @@
   },
   {
     "path": "brands/omarchy-plugin-shelfish/asset-manifest.json",
-    "sha256": "f7b376ac81502c3d6685b73ba8d0722f77f8c1e7691aeb1503e7d1a1b66d4333",
+    "sha256": "5f02a821d7a751c54f6d9f4228110857fa668bfa9219433af9d48bc94f2b176f",
     "bytes": 5376
   },
   {
@@ -8514,13 +8514,13 @@
   },
   {
     "path": "brands/omarchy-plugin-shelfish/tokens.json",
-    "sha256": "cf44179dd847c7c9ad17445fa4d696d063c00b185c72ff09485b3d2489530ce6",
-    "bytes": 1291
+    "sha256": "b5b69fcf6936ba12978a61d162bc9c0806e56db07b75fa2e3ba3532e8bb6f88f",
+    "bytes": 1410
   },
   {
     "path": "brands/omarchy-plugin-spool/GUIDE.md",
-    "sha256": "3dcb4ff221d4bf10e5a261ace0fb6eadc8b8b40350d1af074720e4e0e57e4dad",
-    "bytes": 2176
+    "sha256": "c6dc1c829205034be86fefd165a97881fdaa26b23fb1deeb34b07c2c7f8a1cfe",
+    "bytes": 2222
   },
   {
     "path": "brands/omarchy-plugin-spool/alt-text.md",
@@ -8529,7 +8529,7 @@
   },
   {
     "path": "brands/omarchy-plugin-spool/asset-manifest.json",
-    "sha256": "9c2dba574d29b11b6bcf9438af39054042e9bcbda868f1b709031f7da2f418e0",
+    "sha256": "a0cf775f75c765f1edde475fa43a8a89c57d081f35be6e4ceb17753734b1d0a3",
     "bytes": 5213
   },
   {
@@ -8693,13 +8693,13 @@
   },
   {
     "path": "brands/omarchy-plugin-spool/tokens.json",
-    "sha256": "6954cd390c0d3cfc701357e55694f60bb82b413ff785b1d6f8fcfd3ad7d99bbb",
-    "bytes": 1288
+    "sha256": "394c788b082e869afcfb1681ab18017918a4bc43a49ab5d38488cbe520212ca7",
+    "bytes": 1407
   },
   {
     "path": "brands/omarchy-superproductivity/GUIDE.md",
-    "sha256": "7f278ebc2449b01a755e7b457e7da81b2fc8e0b20d199b0dcb68f855a53f6510",
-    "bytes": 2232
+    "sha256": "1444b29b322fc14d335378dfb4f7ef073b93ab362dcf0787ce1fb7bec11611aa",
+    "bytes": 2278
   },
   {
     "path": "brands/omarchy-superproductivity/alt-text.md",
@@ -8708,7 +8708,7 @@
   },
   {
     "path": "brands/omarchy-superproductivity/asset-manifest.json",
-    "sha256": "cd59dd51a1ce172d1dcec7c52e29dc6cb8fe29cf3b21e590ec5d598b62be0fea",
+    "sha256": "108d27deaab664b8d0488c624037d4a1d3440a94a20028a3bacd69749b6b4d48",
     "bytes": 5402
   },
   {
@@ -8877,13 +8877,13 @@
   },
   {
     "path": "brands/omarchy-superproductivity/tokens.json",
-    "sha256": "67191437935b688a3fdd491c06900aef2ae1316773ce54199c68fe755392e356",
-    "bytes": 1321
+    "sha256": "3e1f27ba689aece44fe63243426b9f7209ffd44ed296712e4ec3232e0deae02a",
+    "bytes": 1440
   },
   {
     "path": "brands/overlaid/GUIDE.md",
-    "sha256": "7ea6f5e9695fbcd4dc9c5cc21fcb9f327ba97853c56b8f63c4f6826f056cd131",
-    "bytes": 2153
+    "sha256": "5fc37b05d905ad5cc979ba8b645a159fc5aa3e489bc99fbede845094d2ea9dd4",
+    "bytes": 2199
   },
   {
     "path": "brands/overlaid/alt-text.md",
@@ -8892,7 +8892,7 @@
   },
   {
     "path": "brands/overlaid/asset-manifest.json",
-    "sha256": "72d54cf91614926718942642cef4f8b15d3148ac5f3ff8d8c2f734fa35ced2f2",
+    "sha256": "69002e21746043663e146f18721b713f9465e78f9d9530862b84f0b6e9c080ab",
     "bytes": 5366
   },
   {
@@ -9061,13 +9061,13 @@
   },
   {
     "path": "brands/overlaid/tokens.json",
-    "sha256": "d00a0569a87af07482ca042595895e484a713825938f857d0d0ca319717d972c",
-    "bytes": 1279
+    "sha256": "63d6bd0a2ddfdb78ae114a35e2fae0956dc291bc73a20fd142e76c0e425873bb",
+    "bytes": 1398
   },
   {
     "path": "brands/pirs/GUIDE.md",
-    "sha256": "cf8281f7e0faea1566437e7191e9e0b6f8a28823ab508bc5b2b31777ba5c3438",
-    "bytes": 2203
+    "sha256": "eb166d4d66d8af46d14386c07ac81fbd66bfd8e3a511292a10102f3708c00766",
+    "bytes": 2249
   },
   {
     "path": "brands/pirs/alt-text.md",
@@ -9076,7 +9076,7 @@
   },
   {
     "path": "brands/pirs/asset-manifest.json",
-    "sha256": "b3be31e7e902045c3d2d629f9747d40579bd8e3069eeb9d55bd4bc4b4e2c00e0",
+    "sha256": "bd630227522d44d8f238a778378fa806f37b42dbc82fe21c5f39b2e29d5ecccb",
     "bytes": 5370
   },
   {
@@ -9245,13 +9245,13 @@
   },
   {
     "path": "brands/pirs/tokens.json",
-    "sha256": "a04024df39643c6fb7f2493e319ed3871158f6760448a3124b9a698b132c77ad",
-    "bytes": 1267
+    "sha256": "5853917c6729bab5de19b2e17d08cf5858262cabf2d9b3b7ae2d19a81ec221ed",
+    "bytes": 1386
   },
   {
     "path": "brands/super-productivity-mcp/GUIDE.md",
-    "sha256": "8a4743525bd0985e2d06e62c3097ac9e71840feeed2070e119f4420d0f2f7e6f",
-    "bytes": 2177
+    "sha256": "61b39998a5b59123681d683b194a17fe83c1149f22326746dbde1c0d59402e95",
+    "bytes": 2223
   },
   {
     "path": "brands/super-productivity-mcp/alt-text.md",
@@ -9260,7 +9260,7 @@
   },
   {
     "path": "brands/super-productivity-mcp/asset-manifest.json",
-    "sha256": "dfa3cc97ec7c5d57b1db21780119ebecb5935bf1d75d72536294530aab5badab",
+    "sha256": "35d989e170e8b76da6087211cd0ad7b40580a3ba145fe0a709835f36affe73e4",
     "bytes": 4902
   },
   {
@@ -9414,13 +9414,13 @@
   },
   {
     "path": "brands/super-productivity-mcp/tokens.json",
-    "sha256": "c34eb0175434a65607bfd1e90f20bc89f27ee3f2b0cac51f1621b360b765c77c",
-    "bytes": 1301
+    "sha256": "48ad93decb635306337dc937208eeab8a0f87a6138c1d7fa78f7bd9e5114b963",
+    "bytes": 1420
   },
   {
     "path": "brands/tmux-popups/GUIDE.md",
-    "sha256": "22d32b2afaf8c07d1395ac095d3969e8ec6dcf39cc64dd91b170199cfa46e96f",
-    "bytes": 2207
+    "sha256": "0df3597166c194167db29cecff9b217ef9c546c35e0b035eb67bb472425bda82",
+    "bytes": 2253
   },
   {
     "path": "brands/tmux-popups/alt-text.md",
@@ -9429,7 +9429,7 @@
   },
   {
     "path": "brands/tmux-popups/asset-manifest.json",
-    "sha256": "01a664471a0232a0fa3f09d0c1239fa12ca24ebbc90143e304f33f84ca8b0fee",
+    "sha256": "12ec1a89a5e56bf175f5de4cb95fd0b83d3cc52c532bda192a749f27e3cd50c1",
     "bytes": 4414
   },
   {
@@ -9568,7 +9568,7 @@
   },
   {
     "path": "brands/tmux-popups/tokens.json",
-    "sha256": "9fec595dc8d0655ca9bd1a16a5d5d9aac034e8e825b5ad65fa6799e63e469d31",
-    "bytes": 1288
+    "sha256": "a066fe5c0717c65183234c456f7c716ed2864783a6ddaa273b085512e66a3a85",
+    "bytes": 1407
   }
 ]

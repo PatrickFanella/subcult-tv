@@ -1,8 +1,14 @@
-/** Brand marks served from public/brand, shown beside product names. Products without one use the name alone. */
+/** Brand marks served from public/brand, shown beside product names. Exported from each Studio pack by studio/scripts/export_site_brands.py. */
 export const PRODUCT_MARKS: Record<string, string> = {
   'left-field': '/brand/left-field/mark.svg',
-  'transcript-create': '/brand/rekolekt-mark.svg',
-  kork: '/brand/kork-mark.svg',
+  clpr: '/brand/clpr/mark.svg',
+  patchwork: '/brand/patchwork/mark.svg',
+  hasanara: '/brand/hasanara/mark.svg',
+  'transcript-create': '/brand/rekolekt/mark.svg',
+  'subcult-os': '/brand/subcult-os/mark.svg',
+  undertow: '/brand/undertow/mark.svg',
+  prichal: '/brand/prichal/mark.svg',
+  kork: '/brand/kork/mark.svg',
   subsets: '/brand/subsets/logos/mark-primary.svg',
   tadooer: '/brand/tadooer/mark.svg',
   'chatty-cat': '/brand/chatty-cat/mark.svg',

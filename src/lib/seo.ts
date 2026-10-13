@@ -108,7 +108,7 @@ const TITLE_PHRASES: Record<string, string> = {
   backline: 'A Discord bot for running a community',
   arkhiv: 'A zine archive with the originals kept',
   overlaid: 'An operator desk for live streams',
-  pirs: 'An extensible AT Protocol server',
+  pirs: 'An experimental AT Protocol server',
   'tmux-popups': 'Popups for tmux from one table',
   'omarchy-monitor-bar': 'A bar for each monitor',
   'omarchy-superproductivity': 'In the top bar',

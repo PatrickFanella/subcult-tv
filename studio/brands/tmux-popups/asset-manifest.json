@@ -1,12 +1,12 @@
 {
-  "status": "proposed",
+  "status": "accepted",
   "brand": "tmux-popups",
   "generator": "brand-tools/site_packs.py",
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "22d32b2afaf8c07d1395ac095d3969e8ec6dcf39cc64dd91b170199cfa46e96f",
-      "bytes": 2207
+      "sha256": "0df3597166c194167db29cecff9b217ef9c546c35e0b035eb67bb472425bda82",
+      "bytes": 2253
     },
     {
       "path": "alt-text.md",
@@ -149,8 +149,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "9fec595dc8d0655ca9bd1a16a5d5d9aac034e8e825b5ad65fa6799e63e469d31",
-      "bytes": 1288
+      "sha256": "a066fe5c0717c65183234c456f7c716ed2864783a6ddaa273b085512e66a3a85",
+      "bytes": 1407
     }
   ]
 }

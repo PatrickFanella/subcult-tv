@@ -35,6 +35,7 @@ const STUDIO_EXPORTED = new Set([
   // Exported from their Studio packs by studio/scripts/export_site_brands.py.
   'chatty-cat',
   'backline',
+  'tadooer',
   'arkhiv',
   'overlaid',
   'pirs',

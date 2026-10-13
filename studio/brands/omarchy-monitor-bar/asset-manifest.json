@@ -1,12 +1,12 @@
 {
-  "status": "proposed",
+  "status": "accepted",
   "brand": "Omarchy Multi-Monitor Bar",
   "generator": "brand-tools/site_packs.py",
   "files": [
     {
       "path": "GUIDE.md",
-      "sha256": "e1170f1dc233164dcc88d9122a5f9357fdcff8271d0fa4cd6fac57a5c930aa17",
-      "bytes": 2201
+      "sha256": "1e134698c5c6fa92bf2f397a5d8c8d19ed265952e321e290f692f0f07df0f0dd",
+      "bytes": 2247
     },
     {
       "path": "alt-text.md",
@@ -179,8 +179,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "95a0b08a3c63c76eff677353026dfbaafa3f96ffa7734a2eb1f1c064b420e183",
-      "bytes": 1310
+      "sha256": "e6648e83c06abc17795ac829f8927f65a24e54639f105c835057a7361387986b",
+      "bytes": 1429
     }
   ]
 }
