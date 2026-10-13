@@ -46,7 +46,7 @@ const ORGANIZATION = {
 // description written to that length instead of its longer showcase summary.
 const META_DESCRIPTIONS: Record<string, string> = {
   subsets:
-    'Discover local agent skills, group them for the work, and preview and apply a set. A local CLI and terminal interface by SUBCULT.',
+    'Subsets reads the agent skills on your computer, groups them for a task and previews the set before it applies. A local CLI and terminal interface by SUBCULT.',
   clpr: 'Twitch clips sorted by creator, topic and tag. Save the good ones to playlists and send them to whoever missed it live.',
   patchwork:
     'A neighborhood board for asking and offering help. Requests show an approximate area. Pre-alpha demonstration: please don’t arrange real help through it yet.',
@@ -93,7 +93,7 @@ const META_DESCRIPTIONS: Record<string, string> = {
 // Titles allow about 60 characters. These stand in where "name: headline"
 // would run long.
 const TITLE_PHRASES: Record<string, string> = {
-  subsets: 'All your skills. Only the set you need.',
+  subsets: 'Skill sets for the work at hand',
   clpr: 'Twitch clips by creator, topic and tag',
   patchwork: 'A neighborhood board for mutual aid',
   hasanara: 'Search what was said on stream',

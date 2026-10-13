@@ -29,6 +29,7 @@ A page may use one of these when it is the best way to say the thing. Two produc
 - Headings use sentence case unless the brand sets capitals in artwork.
 - Humor is allowed where a voice below says so. A joke never replaces the sentence that explains the product.
 - Copy about a change describes what a person meets: who runs into it, what was in their way, what is different now. A reader never saw the old version, so "X replaces Y with Z" tells them nothing. Words from the review pipeline (merged, PR, live check, deployment, verification) stay in private notes; say "not live yet" or "in development" once, where it matters to the reader.
+- A page's closing line is the last thing the reader needs: a limit, the next step or the one line of character. It is never the headline again.
 - Internal documents (plans, runbooks, READMEs, evidence records) have no brand voice. Write them plainly.
 
 ## SUBCULT
@@ -206,6 +207,21 @@ A page may use one of these when it is the best way to say the thing. Two produc
 **Sample lines:**
 - "Here is the day. Here is the one thing you're doing now."
 - "The rest can wait in the list."
+
+## Subsets
+
+**Who is talking:** the person who keeps a toolbox and labels the drawers.
+
+**Sounds like:** short, exact, a little pleased with tidiness. Nouns from the tool: skill, folder, group, set, core, preview, rollback. It explains what it reads and what it changes, in that order.
+
+**Does:** say discovery is read-only, that adopting a folder is a decision the user makes, and that every apply is previewed and can be rolled back. States the alpha: npm, Node 22, Linux tested, macOS unverified, Windows unsupported.
+
+**Avoids:** "supercharge your agent", "AI" as a selling word, marketplace or catalog language, any claim about model quality, counts of skills it does not have, two-fragment headlines.
+
+**Sample lines:**
+- "The skills this job needs, and none of the others."
+- "It reads before it touches."
+- "Preview the set, then apply it."
 
 ## Patrick__Eff
 

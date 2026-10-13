@@ -118,9 +118,9 @@ const selections = [
     slug: 'subsets',
     group: 'tools',
     category: 'Local agent tools / npm alpha',
-    headline: 'All your skills. Only the set you need.',
+    headline: 'The skills this job needs, and none of the others.',
     summary:
-      'Discover skills on your computer, group them for a task, and preview changes before applying a set. A local CLI and terminal interface, with explicit folder ownership and checked recovery.',
+      'Subsets reads the skills on your computer, lets you group them for a task, and shows the change before it applies the set. A local CLI and terminal interface. Folders stay owned by whoever put them there, and every apply can be rolled back.',
     highlights: ['Discover local skills', 'Group and preview', 'Apply your set'],
     liveLabel: 'Get the alpha',
   },
