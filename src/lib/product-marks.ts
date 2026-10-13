@@ -1,0 +1,20 @@
+/** Brand marks served from public/brand, shown beside product names. Products without one use the name alone. */
+export const PRODUCT_MARKS: Record<string, string> = {
+  'left-field': '/brand/left-field/mark.svg',
+  'transcript-create': '/brand/rekolekt-mark.svg',
+  kork: '/brand/kork-mark.svg',
+  subsets: '/brand/subsets/logos/mark-primary.svg',
+  tadooer: '/brand/tadooer/mark.svg',
+  'chatty-cat': '/brand/chatty-cat/mark.svg',
+  backline: '/brand/backline/mark.svg',
+  arkhiv: '/brand/arkhiv/mark.svg',
+  overlaid: '/brand/overlaid/mark.svg',
+  pirs: '/brand/pirs/mark.svg',
+  'tmux-popups': '/brand/tmux-popups/mark.svg',
+  'omarchy-monitor-bar': '/brand/omarchy-monitor-bar/mark.svg',
+  'omarchy-superproductivity': '/brand/omarchy-superproductivity/mark.svg',
+  'omarchy-plugin-spool': '/brand/omarchy-plugin-spool/mark.svg',
+  'omarchy-plugin-shelfish': '/brand/omarchy-plugin-shelfish/mark.svg',
+  'obsidian-plugin-metronome-tuner': '/brand/obsidian-plugin-metronome-tuner/mark.svg',
+  'super-productivity-mcp': '/brand/super-productivity-mcp/mark.svg',
+};

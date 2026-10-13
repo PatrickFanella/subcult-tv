@@ -704,4 +704,614 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     ],
     closing: 'The plan, and the one thing now.',
   },
+  'chatty-cat': {
+    audience: 'For viewers who keep more than one chat open and want their own settings to stick.',
+    introduction: 'Six rooms, one log, your display.',
+    features: [
+      {
+        title: 'Merge up to six channels',
+        description:
+          'Open the rooms you follow and read them as one scrollback. If the connection drops it reconnects and restores whatever public backfill Twitch still offers.',
+      },
+      {
+        title: 'Your settings, remembered',
+        description:
+          'The original palettes, fonts, filters, columns and header modes are all here, with saved slots. Pick a colour and a shade; the cat in the header follows.',
+      },
+      {
+        title: 'Sending, when the gate opens',
+        description:
+          'Signed-in sending, replies, whispers and moderation notices use tokens held on the server, never in the browser. Those parts are still behind release gates and are not promised yet.',
+      },
+    ],
+    stepsLabel: 'WHERE IT STANDS',
+    stepsHeading: 'A rebuild in progress',
+    steps: [
+      {
+        title: 'The original stays up',
+        description:
+          'Chatty Cat rebuilds HasanAbi Chat Thing and its Twitch relay by mxmilkiib, under AGPL-3.0. The original app remains the reference until every feature family reaches parity.',
+      },
+      {
+        title: 'A live test build',
+        description:
+          'chat.subcult.tv serves the current build for anonymous viewing. Sessions end when the service restarts.',
+      },
+      {
+        title: 'Host your own',
+        description:
+          'It is one Go service with a TypeScript front end. Build it from source, or run the container from the deploy notes, behind your own HTTPS proxy.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is this a Twitch product?',
+        answer:
+          'No. It is a viewer’s chat client that talks to Twitch. Twitch does not make or endorse it.',
+      },
+      {
+        question: 'What happened to Chat Thing?',
+        answer:
+          'Same log, same settings, our server. The code was rewritten so SUBCULT can host it; the name changed with the hosting. The lineage and license are in the repository’s NOTICE file.',
+      },
+      {
+        question: 'Can I moderate from it?',
+        answer:
+          'Moderation is built but not released. Real consent, posting and moderation on Twitch are release gates that have not passed, so the page does not claim them.',
+      },
+    ],
+    closing: 'New name, same cat.',
+  },
+  backline: {
+    audience:
+      'For the one person who runs the Discord server and would like to run it from one place.',
+    introduction: 'Onboarding, moderation, tickets and feeds, switched on per server.',
+    features: [
+      {
+        title: 'Welcome and roles',
+        description:
+          'A welcome flow and self-assigned roles so new members sort themselves. Pick a welcome channel and the rest follows.',
+      },
+      {
+        title: 'Moderation with a record',
+        description:
+          'Every action has a case in the history. Delivery is checked against the server’s current permissions, never assumed.',
+      },
+      {
+        title: 'Private tickets',
+        description:
+          'Members open a ticket in a private channel. Transcripts expire on a schedule you set.',
+      },
+      {
+        title: 'Feeds and recovery',
+        description:
+          'Twitch, YouTube and RSS feeds post into the channels you choose. Recovery snapshots restore a server’s configuration selectively.',
+      },
+    ],
+    stepsLabel: 'WHERE IT STANDS',
+    stepsHeading: 'A private pilot',
+    steps: [
+      {
+        title: 'Running in two SUBCULT servers',
+        description:
+          'Backline is a release candidate. All twenty-three modules are enabled in the pilot servers, where the dashboard, the bot and the feeds are being watched.',
+      },
+      {
+        title: 'Not open for installation',
+        description:
+          'There is no public install link yet. The landing page at backline.subcult.tv explains the pilot; it does not add the bot to your server.',
+      },
+      {
+        title: 'Self-hosting later',
+        description:
+          'The code is public under GPL-3.0 and runs from Docker Compose with PostgreSQL and Redis. A documented install for other operators is a separate step.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'When can I add it to my server?',
+        answer:
+          'Not yet. The pilot has to finish first. The newsletter is where that will be announced.',
+      },
+      {
+        question: 'What permissions does it need?',
+        answer:
+          'Manage Server to install, then the permissions each module asks for. The dashboard describes a missing permission instead of failing quietly.',
+      },
+      {
+        question: 'Does it play music?',
+        answer:
+          'There is an audio module with approved SomaFM stations. Radio, billing and pricing are outside what the pilot claims.',
+      },
+    ],
+    closing: 'Keep your people together.',
+  },
+  arkhiv: {
+    audience:
+      'For readers, and for anyone who keeps a collection and wants the originals kept with it.',
+    introduction: 'Keep the original. Say what you know about it.',
+    features: [
+      {
+        title: 'Original bytes, preserved',
+        description:
+          'Every document is acquired as a selected file and stored unchanged. The catalogue serves the file you can read, and the file as it arrived.',
+      },
+      {
+        title: 'A catalogue with a reader',
+        description:
+          'Browse by collection, medium and search, read the PDF in the browser, or download it. Text and covers are extracted for search and listing.',
+      },
+      {
+        title: 'Review before publication',
+        description:
+          'Nothing is public until an editor approves it, and approval can be revoked. Copies someone already downloaded cannot be recalled, and the archive says so.',
+      },
+    ],
+    stepsLabel: 'THE FIRST COLLECTION',
+    stepsHeading: 'The Anarchist Zine Archive',
+    steps: [
+      {
+        title: '699 documents',
+        description:
+          'The first public collection, at arkhiv.subcult.tv, is drawn from the Internet Archive in bounded, resumable runs.',
+      },
+      {
+        title: 'Rights stated, not assumed',
+        description:
+          'Most of these zines have unknown rights. They are available for reading and download with no asserted reuse license.',
+      },
+      {
+        title: 'Provisional titles',
+        description:
+          'Many titles are catalogue labels rather than researched bibliographic titles. Corrections are welcome.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I run an archive of my own?',
+        answer:
+          'Yes. Arkhiv is a Go service with a React front end and PostgreSQL, run from Docker Compose. A second archive, for riot grrrl zines, runs privately on the same code.',
+      },
+      {
+        question: 'Can I submit a zine?',
+        answer:
+          'Write to info@subcult.tv. Acquisition is explicit and reviewed; there is no public upload form.',
+      },
+      {
+        question: 'What license is the code under?',
+        answer: 'GPL-3.0. That covers the software, not the documents it stores.',
+      },
+    ],
+    closing: 'Made to be copied. Kept as it was.',
+  },
+  overlaid: {
+    audience:
+      'For one person running a stream who is also the producer, the moderator and the person who fixes it.',
+    introduction: 'On air, scenes, chat, overlays, health, settings, sessions.',
+    features: [
+      {
+        title: 'Ten overlays for OBS',
+        description:
+          'Alerts, chat, goals, now playing, ticker, camera, starting, BRB, ending and a debug view, each a browser source with a keyed URL. Add ?demo=1 to preview any of them with sample events.',
+      },
+      {
+        title: 'Twitch, into the overlays',
+        description:
+          'After you sign in, an EventSub worker turns chat, redemptions, subs, bits and follows into alert and ticker events.',
+      },
+      {
+        title: 'A bot with a record',
+        description:
+          'Commands, timers, counters and quotes, interaction rules for chat aliases and channel point rewards, moderation with an audit trail.',
+      },
+      {
+        title: 'Scenes and rehearsals',
+        description:
+          'OBS scene controls, quick-action presets and sequences, and rehearsal sessions that produce a report you can read afterwards.',
+      },
+      {
+        title: 'A health page',
+        description:
+          'Readiness that says which part is degraded: OBS, Twitch, EventSub, retained state or history. Open it first when something breaks.',
+      },
+    ],
+    stepsLabel: 'WHERE IT STANDS',
+    stepsHeading: 'In development',
+    steps: [
+      {
+        title: 'Runs on your machine',
+        description:
+          'Overlaid is a Go API and a React desk you run beside OBS, from Docker Compose, with PostgreSQL for history and sessions.',
+      },
+      {
+        title: 'No public instance',
+        description:
+          'There is nothing to sign up for. The code is public under GPL-3.0; live checks against a real Twitch channel and OBS are still part of the work.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does it replace OBS?',
+        answer:
+          'No. OBS still does the video. Overlaid talks to it over OBS WebSocket and supplies the browser sources.',
+      },
+      {
+        question: 'Does it work with other platforms?',
+        answer: 'Twitch only, for now.',
+      },
+      {
+        question: 'Can I run it on a server?',
+        answer:
+          'It can run in LAN or public exposure modes, which require the operator secret, overlay token and webhook secret to be set. Local mode is the default.',
+      },
+    ],
+    closing: 'Everything on air, on one screen.',
+  },
+  pirs: {
+    audience:
+      'For operators of a personal data server who want to extend it without patching the upstream.',
+    introduction: 'Hook points for a server that has none.',
+    features: [
+      {
+        title: 'A draft specification',
+        description:
+          'Hook points at four levels: observe, serve, act and decide. The spec is a working draft, and nothing in it is stable.',
+      },
+      {
+        title: 'A bridge and a smoke test',
+        description:
+          'A status endpoint counts sequencer events. The smoke test boots a throwaway server and checks that an event arrives.',
+      },
+      {
+        title: 'A plugin host, planned',
+        description:
+          'Plugins are meant to run in a separate wasmtime process that never receives signing keys. The host does not exist yet.',
+      },
+    ],
+    stepsLabel: 'WHERE IT STANDS',
+    stepsHeading: 'An experiment',
+    steps: [
+      {
+        title: 'A fork of the Bluesky PDS',
+        description:
+          'Pirs tracks the upstream distribution and adds its pieces on top, under the same MIT and Apache-2.0 terms.',
+      },
+      {
+        title: 'Not production software',
+        description:
+          'No plugin runs yet, and no milestone beyond the scaffold has started. Prichal, our managed hosting, stays on the unmodified upstream image.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is this what Prichal runs?',
+        answer:
+          'No. Prichal runs the upstream server as published. Pirs is where the extension idea is worked out.',
+      },
+      {
+        question: 'Can I try it?',
+        answer:
+          'Clone it and run the smoke test with Node 22 and pnpm. That is the whole demonstration today.',
+      },
+    ],
+    closing: 'A pier is where things get attached.',
+  },
+  'tmux-popups': {
+    audience: 'For people who live in tmux and want popups without writing the bindings by hand.',
+    introduction: 'Add a row. Get a popup.',
+    features: [
+      {
+        title: 'A registry, not a config',
+        description:
+          'Every popup is one row in popups.tsv: name, key, command, size. The quick menu and the direct bindings are generated from it.',
+      },
+      {
+        title: 'Prefix+Enter',
+        description:
+          'The quick menu lists every enabled popup with its key. Press the key to open it over the current pane.',
+      },
+      {
+        title: 'Overrides and a doctor',
+        description:
+          'A local override registry for your own rows, dependency checks in the help screen, and a doctor script for tmux and TPM problems.',
+      },
+    ],
+    stepsLabel: 'GETTING IT',
+    stepsHeading: 'Install with TPM',
+    steps: [
+      {
+        title: 'Add the plugin line',
+        description:
+          'set -g @plugin ‘PatrickFanella/tmux-popups’ in your tmux.conf, then install with TPM.',
+      },
+      {
+        title: 'Pick a profile',
+        description: 'Small or full. Enable or disable adapters individually.',
+      },
+      {
+        title: 'Check the dependencies',
+        description:
+          'Each popup needs its own tool. The help screen shows which are present; it checks presence, not credentials.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does it manage sessions?',
+        answer: 'No. Session switching is left to tmux-sessionx.',
+      },
+      {
+        question: 'What does it need?',
+        answer: 'Bash and tmux. Python 3 only for rows that pass JSON arguments.',
+      },
+    ],
+    closing: 'One row in a table, one popup in tmux.',
+  },
+  'omarchy-monitor-bar': {
+    audience: 'For Omarchy desktops with more than one monitor.',
+    introduction: 'A full bar where you work. A minimal one where you glance.',
+    features: [
+      {
+        title: 'Full, Minimal or Hidden',
+        description:
+          'Choose a mode per monitor. The primary monitor stays on Full. Minimal bars show a glyph and the workspace list.',
+      },
+      {
+        title: 'A settings panel that checks itself',
+        description:
+          'Changes are validated and conflicts handled. Check and Sync compare the plugin against the stock bar files it is pinned to.',
+      },
+      {
+        title: 'Ten languages',
+        description: 'The panel and labels are localized.',
+      },
+    ],
+    stepsLabel: 'GETTING IT',
+    stepsHeading: 'Install as an Omarchy plugin',
+    steps: [
+      {
+        title: 'One command',
+        description:
+          'omarchy plugin add https://github.com/PatrickFanella/omarchy-monitor-bar.git --enable --yes',
+      },
+      {
+        title: 'Match the Omarchy version',
+        description:
+          'The plugin is pinned to the exact stock bar files of one Omarchy release. Other versions are unsupported until the pin moves.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does it need elevated privileges or the network?',
+        answer:
+          'No. It does not request elevated privileges, use a network service or collect telemetry.',
+      },
+      {
+        question: 'Can I edit every bar option from the panel?',
+        answer: 'Not yet. Some optional shell.json keys still need a text editor.',
+      },
+    ],
+    closing: 'Each monitor gets its own bar.',
+  },
+  'omarchy-superproductivity': {
+    audience: 'For Omarchy users who run Super Productivity and want the current task in sight.',
+    introduction: 'The task, the time left, and the buttons, in the bar.',
+    features: [
+      {
+        title: 'The current task',
+        description:
+          'A live countdown, overtime when you run past the estimate, and Stop, Complete and Extend.',
+      },
+      {
+        title: 'Today',
+        description: 'The day’s list as parent and child blocks, each with Start and Complete.',
+      },
+      {
+        title: 'Quick add',
+        description: 'Type a task with +project, @schedule and #tag and it lands in the app.',
+      },
+      {
+        title: 'Alerts',
+        description: 'A sound when a task expires or a scheduled one is due to start.',
+      },
+    ],
+    stepsLabel: 'GETTING IT',
+    stepsHeading: 'Install as an Omarchy plugin',
+    steps: [
+      {
+        title: 'Turn on the local API',
+        description:
+          'In the Super Productivity desktop app, enable the local REST API. The plugin only talks to loopback addresses.',
+      },
+      {
+        title: 'One command',
+        description:
+          'omarchy plugin add https://github.com/patrickfanella/omarchy-superproductivity.git --enable',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can two edits collide?',
+        answer:
+          'Yes, rarely. The app’s API has no transactions or revision guards, so a change from the bar and a change in the app at the same moment can race. Recovery is best effort.',
+      },
+      {
+        question: 'Does it need the app running?',
+        answer: 'Yes. It reads and writes through the desktop app on the same machine.',
+      },
+    ],
+    closing: 'The task you are on, in the top bar.',
+  },
+  'omarchy-plugin-spool': {
+    audience: 'For an Omarchy desktop that could use some company while the agent works.',
+    introduction: 'Drag it, poke it, let it wander.',
+    features: [
+      {
+        title: 'A cassette with limbs',
+        description:
+          'Spool jumps, waves and follows the pointer with its eyes. Turn on wandering and it walks the bottom of the screen.',
+      },
+      {
+        title: 'Agent activity',
+        description:
+          'A bridge watches T3 Code and Codex desktop activity and plays working, waiting, failure and review animations, with a badge.',
+      },
+      {
+        title: 'A small menu',
+        description:
+          'Size, eyes, wander and which monitor it lives on, from a desktop control menu or over IPC.',
+      },
+    ],
+    stepsLabel: 'GETTING IT',
+    stepsHeading: 'Install from the checkout',
+    steps: [
+      {
+        title: 'Clone and run the installer',
+        description: 'Spool installs with its own ./install.sh rather than the plugin command.',
+      },
+      {
+        title: 'Expect the bridge to need updates',
+        description:
+          'The activity bridge adapts to an internal desktop interface, not an official event API. An app update may need an adapter update.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I reuse the artwork?',
+        answer:
+          'No. The sprite is the owner’s own and no redistribution license is assigned to it. The code is for running Spool, not for reusing the cassette.',
+      },
+      {
+        question: 'Which Omarchy does it need?',
+        answer:
+          'The Quickshell plugin API on Omarchy with Hyprland, where it was developed and is run.',
+      },
+    ],
+    closing: 'A cassette that knows what your agent is doing.',
+  },
+  'omarchy-plugin-shelfish': {
+    audience: 'For an Omarchy bar that has more widgets than attention.',
+    introduction: 'Name a shelf. Put the widgets on it. Fold it away.',
+    features: [
+      {
+        title: 'Named, ordered groups',
+        description: 'Each group has an icon and a direction. Members keep their own behaviour.',
+      },
+      {
+        title: 'Reveal on change',
+        description:
+          'A group opens when a member’s watched status changes, with a reveal policy per widget, so a quiet shelf stays folded and a busy one shows itself.',
+      },
+      {
+        title: 'Leaves things as it found them',
+        description: 'Every widget is restored before the plugin is removed.',
+      },
+    ],
+    stepsLabel: 'GETTING IT',
+    stepsHeading: 'Install as an Omarchy plugin',
+    steps: [
+      {
+        title: 'One command',
+        description:
+          'omarchy plugin add https://github.com/patrickfanella/omarchy-plugin-shelfish.git --enable',
+      },
+      {
+        title: 'Omarchy 4 with the Quattro shell',
+        description:
+          'A compatibility fallback covers 4.0.3. Ten languages, no third-party runtime dependencies.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What are the limits?',
+        answer:
+          'It depends on an internal shell API, cannot restore the exact pre-group positions, and discovers status by polling every half second. Omarchy plugins run unsandboxed.',
+      },
+    ],
+    closing: 'Twelve widgets, three shelves.',
+  },
+  'obsidian-plugin-metronome-tuner': {
+    audience: 'For anyone who practises with their notes open.',
+    introduction: 'Count in, tune up, keep the notes open.',
+    features: [
+      {
+        title: 'A metronome',
+        description:
+          '30 to 300 BPM with tap tempo, time signatures, an accent on the downbeat and seven click sounds.',
+      },
+      {
+        title: 'A chromatic tuner',
+        description:
+          'Frequency, confidence, cents and the nearest note. A4 adjustable from 415 to 466 Hz.',
+      },
+      {
+        title: 'Local audio',
+        description:
+          'The microphone is used only after you opt in. Audio is analysed on the device and never recorded, stored or sent anywhere.',
+      },
+    ],
+    stepsLabel: 'GETTING IT',
+    stepsHeading: 'Install in Obsidian',
+    steps: [
+      {
+        title: 'Community plugins',
+        description:
+          'Once the plugin is accepted into the Obsidian marketplace, install it from Community Plugins. Until then, copy main.js, manifest.json and styles.css from a release into your vault’s plugin folder.',
+      },
+      {
+        title: 'Open it from the command palette',
+        description:
+          'Commands for Open, Start metronome and Stop metronome. Everything is reachable from the keyboard.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does it work on mobile?',
+        answer: 'Yes. It supports Obsidian 1.7.2 and later on desktop and mobile.',
+      },
+    ],
+    closing: 'Count in. Tune up. Keep the notes open.',
+  },
+  'super-productivity-mcp': {
+    audience:
+      'For people who keep their tasks in Super Productivity and want an assistant to reach them.',
+    introduction: 'An MCP server, a bridge into the app, and a quick-add key.',
+    features: [
+      {
+        title: 'Tools for an assistant',
+        description:
+          'Create and list tasks and projects, add time, and manage schedules and recurrence. The tool catalogue is one JSON file, and broad writes run as a dry run first.',
+      },
+      {
+        title: 'A plugin bridge',
+        description:
+          'A Super Productivity plugin moves requests through a file inbox, outbox and dead-letter folder, so nothing needs the network.',
+      },
+      {
+        title: 'Quick add on the desktop',
+        description: 'A launcher through Walker or a GTK popup that follows the Omarchy theme.',
+      },
+    ],
+    stepsLabel: 'GETTING IT',
+    stepsHeading: 'Build and install',
+    steps: [
+      {
+        title: 'Clone and make install',
+        description:
+          'The Go binaries build locally. Upload the plugin zip under Settings, then Plugins, in Super Productivity.',
+      },
+      {
+        title: 'Point your client at it',
+        description:
+          'Claude Desktop, Cursor, VS Code and OpenCode configurations are in the README.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What does it need?',
+        answer:
+          'Super Productivity desktop 14 or later. Archive and restore need the optional local REST API; recurrence tools need a build whose plugin sandbox allows them.',
+      },
+    ],
+    closing: 'Add the task where you keep your tasks.',
+  },
 };

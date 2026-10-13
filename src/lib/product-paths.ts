@@ -10,6 +10,18 @@ export const PRODUCT_ROUTES: Record<string, string> = {
   subsets: 'subsets',
   'left-field': 'left-field',
   tadooer: 'tadooer',
+  'chatty-cat': 'chatty-cat',
+  backline: 'backline',
+  arkhiv: 'arkhiv',
+  overlaid: 'overlaid',
+  pirs: 'pirs',
+  'tmux-popups': 'tmux-popups',
+  'omarchy-monitor-bar': 'omarchy-monitor-bar',
+  'omarchy-superproductivity': 'omarchy-superproductivity',
+  'omarchy-plugin-spool': 'spool',
+  'omarchy-plugin-shelfish': 'shelfish',
+  'obsidian-plugin-metronome-tuner': 'metronome-tuner',
+  'super-productivity-mcp': 'super-productivity-mcp',
 };
 
 export function getProductPath(slug: string): string {

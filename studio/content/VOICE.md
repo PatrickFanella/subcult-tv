@@ -232,6 +232,108 @@ A page may use one of these when it is the best way to say the thing. Two produc
 - "Your palette, your font, your line height. It remembers."
 - "It is the old Chat Thing, rebuilt so we can host it. Same log, same settings, our server. New name, same cat."
 
+## Backline
+
+**Who is talking:** the person who runs the server, calm, with the admin panel open.
+
+**Sounds like:** short instructions and plain status: "Choose a welcome channel", "Three tickets need an owner", "Check channel permissions". It describes what a module does for the server, not what it does for engagement.
+
+**Does:** keep the selected line "Keep your people together." as positioning, not a promise. Says private pilot and that public installation is not open. Names modules by their job.
+
+**Avoids:** "community platform", growth or retention claims, "all-in-one", pricing, any claim that a feature works in a server where it has not been switched on.
+
+**Sample lines:**
+- "Twenty-three modules. Switch on the ones your server needs."
+- "Every moderation action has a case. Delivery is checked against the permissions you actually have."
+
+## Arkhiv
+
+**Who is talking:** the person at the zine library desk, who copied most of these by hand once.
+
+**Sounds like:** plain and careful about provenance. It says what is known about a document and what is not. Warm about zines, exact about rights.
+
+**Does:** say original bytes, catalogue, reader, download. States the rights position: unknown rights, no reuse license asserted. Says titles may be provisional. Names the collection (the Anarchist Zine Archive) and the count only from the live catalogue.
+
+**Avoids:** "digitize history", "democratize", any suggestion the archive licenses the documents, political framing beyond the collection's own name, "complete".
+
+**Sample lines:**
+- "The original file, and what we know about it."
+- "Most of these have unknown rights. We say so on every page."
+
+## Overlaid
+
+**Who is talking:** the producer in the headset, between scenes.
+
+**Sounds like:** a cue sheet for a stream. Names the overlays, the events and the health check. Dry when something breaks. It assumes one person is doing every job.
+
+**Does:** list the real surfaces: alerts, chat, ticker, goals, now playing, starting, BRB, ending. Says it runs beside OBS on your machine, is in development, and has no public instance.
+
+**Avoids:** "engage your audience", "professional broadcast", any claim about a platform other than Twitch, guaranteed uptime.
+
+**Sample lines:**
+- "Everything on air, on one screen."
+- "When something degrades, the health page says which thing."
+
+## Pirs
+
+**Who is talking:** an engineer leaving notes on a draft drawing.
+
+**Sounds like:** a design note. Tentative on purpose: draft, planned, not yet. Precise about what exists (a spec, a bridge, a smoke test) and what does not (the plugin host).
+
+**Does:** say it is a fork of the Bluesky personal data server, an experiment, and not production software. Says Prichal runs the unmodified upstream. Dock and pier are Prichal's words and this one's; use them sparingly.
+
+**Avoids:** "extensible platform", "ecosystem", roadmap promises, any suggestion that plugins run today.
+
+**Sample lines:**
+- "Hook points for a server that has none."
+- "No plugin runs yet. The spec is a working draft."
+
+## Desktop and editor plugins
+
+One voice for Omarchy Multi-Monitor Bar, Super Productivity for Omarchy, Shelfish and Metronome + Tuner. Spool has its own, below.
+
+**Who is talking:** the person who wrote the plugin for their own desktop and published it.
+
+**Sounds like:** a good README. States what it does, the one command to install it, which version it is pinned to and the known limits. Each product gets one plain line of character and no more.
+
+**Does:** name the host (Omarchy, Obsidian) and the version constraint. Gives the install command exactly. Lists limits the README lists: unsupported versions, internal APIs, polling, races.
+
+**Avoids:** "supercharge your workflow", "seamless", feature counts the README does not state, any claim about a marketplace listing before it exists.
+
+**Sample lines:**
+- "Each monitor gets its own bar."
+- "The task you are on, in the top bar."
+- "Twelve widgets, three shelves."
+- "Count in. Tune up. Keep the notes open."
+
+## Spool
+
+**Who is talking:** the person whose desktop Spool lives on, fond of it.
+
+**Sounds like:** a note about a pet. Light, specific about what it does (drag, jump, wave, wander, eyes follow the pointer), honest that the activity bridge adapts to an internal interface and may need updates.
+
+**Does:** say cassette, violet, acid green. Says the artwork is the owner's and carries no redistribution license. Says it installs from the checkout.
+
+**Avoids:** mascot language for SUBCULT as a whole, "AI companion", claims about official agent APIs.
+
+**Sample lines:**
+- "A cassette that knows what your agent is doing."
+- "Drag it, poke it, let it wander."
+
+## tmux-popups and super-productivity-mcp
+
+**Who is talking:** the author of the dotfiles, explaining one tool.
+
+**Sounds like:** terse. Nouns from the tool itself: registry, row, binding, inbox, outbox, dry run. One sentence of character per page, often in the headline.
+
+**Does:** state what the thing needs (bash and tmux; Super Productivity 14 and the plugin) and what it leaves to other tools. Install paths exactly as the README gives them.
+
+**Avoids:** "productivity", "automate everything", claims about clients or versions the README does not qualify.
+
+**Sample lines:**
+- "Add a row. Get a popup."
+- "Add the task where you keep your tasks."
+
 ## Support and Patreon
 
 **Who is talking:** the workshop, showing its ledger.

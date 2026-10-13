@@ -2,11 +2,14 @@ import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
 import ProductShowcase from '@/components/ProductShowcase';
+import ProductIndex from '@/components/ProductIndex';
 import Teasers from '@/components/Teasers';
 import { useShowcaseProducts } from '@/lib/use-showcase-products';
+import { getFeaturedProducts } from '@/lib/showcase';
 
 export default function Home() {
   const products = useShowcaseProducts();
+  const featured = getFeaturedProducts(products);
   return (
     <>
       <SEOHead path="/" />
@@ -29,11 +32,11 @@ export default function Home() {
             <div>
               <p className="text-bone text-lg leading-relaxed mb-6">
                 We make software for people who run things: a clip channel, an archive, a food run,
-                a Friday show. Eleven products so far. None of them wants your attention for longer
-                than the job takes.
+                a Friday show, a desktop with too many widgets. {products.length} products so far.
+                None of them wants your attention for longer than the job takes.
               </p>
               <Button as="a" href="#products" variant="secondary">
-                See all eleven ↓
+                See the products ↓
               </Button>
             </div>
           </div>
@@ -43,11 +46,14 @@ export default function Home() {
             className="showcase-index max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
             aria-label="Featured products"
           >
-            {products.map(({ project }, index) => (
+            {featured.map(({ project }, index) => (
               <a href={`#${project.slug}`} key={project.slug}>
                 <span>{String(index + 1).padStart(2, '0')}</span> {project.name}
               </a>
             ))}
+            <a href="#all-products">
+              <span>+{products.length - featured.length}</span> more
+            </a>
           </div>
         </div>
       </section>
@@ -60,7 +66,20 @@ export default function Home() {
           <h2 id="products-heading">The products</h2>
           <span className="font-mono text-xs text-bone">MEDIA / COMMUNITY / LIVE CULTURE</span>
         </div>
-        <ProductShowcase products={products} />
+        <ProductShowcase products={featured} />
+      </section>
+      <section
+        id="all-products"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-20"
+        aria-labelledby="all-products-heading"
+      >
+        <div className="showcase-section-heading">
+          <h2 id="all-products-heading">Everything we make</h2>
+          <span className="font-mono text-xs text-bone">
+            {products.length} PRODUCTS / APPS, PLUGINS, TOOLS
+          </span>
+        </div>
+        <ProductIndex products={products} />
         <Teasers headingId="home-teasers" />
       </section>
       <section className="border-t border-fog bg-soot">

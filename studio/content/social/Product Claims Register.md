@@ -3,7 +3,7 @@ title: Product Claims Register
 type: documentation
 status: active
 created: 2026-09-30
-updated: 2026-10-11
+updated: 2026-10-12
 tags:
 - topic/publishing
 ---
@@ -84,3 +84,90 @@ Source: `subculture-collective/chatty-cat` at the October 11 checkout (README, `
 - C-CHAT-04: every feature-family parity gate in `docs/parity.md` is open. Public copy says "in migration" or "rebuild in progress"; it does not say complete, launched or cut over.
 
 No claim that Chat Thing is a Twitch product, that moderation works on a given channel, or that the public callback and HTTPS routing have passed acceptance.
+
+## Products added to subcult.tv — October 12, 2026
+
+Source: the local checkouts listed below (README, docs and manifests), read October 12, 2026. Live sites were captured for screenshots the same day; no authenticated journey was exercised. These entries support the product pages added in subcult-tv on October 12; Chatty Cat's entries are above.
+
+### Backline
+
+Source: `subculture-collective/backline` (README, `docs/design/BACKLINE.md`).
+
+- C-BACKLINE-01: a Discord bot with a web dashboard; twenty-three modules in five groups: onboarding and roles, moderation with a case history, private tickets with expiring transcripts, leveling, giveaways, economy and audio, Twitch/YouTube/RSS feeds, workflows and recovery snapshots.
+- C-BACKLINE-02: "a release candidate in a private pilot with the SUBCULT community. Public installation is not open yet." `backline.subcult.tv` serves the landing page, not an install.
+- C-BACKLINE-03: self-hosted from Docker Compose with PostgreSQL and Redis; GPL-3.0-or-later. OAuth provider completion and production deployment remain separate verification.
+
+No claim about pricing, API tiers, retention or engagement.
+
+### Arkhiv
+
+Source: `subculture-collective/arkhiv` (README; the local alias `arkhiv-politik`) and `arkhiv-riot-grrrl`.
+
+- C-ARKHIV-01: acquires explicitly selected document files, preserves original bytes, and serves a catalogue with local PDF reading and downloads; editorial approve/revoke before publication.
+- C-ARKHIV-02: the Anarchist Zine Archive is live at `arkhiv.subcult.tv` with 699 documents and 700 PDF variants "with unknown rights … and no asserted reuse license". The live home page showed a larger item count on October 12; copy uses the README figure until the catalogue is rechecked.
+- C-ARKHIV-03: expansion titles are "provisional catalog labels"; downloaded copies cannot be recalled by revocation. The riot grrrl archive is private with no public ingress. Code is GPL-3.0-only; the license does not cover documents.
+
+### Overlaid
+
+Source: `subculture-collective/overlaid` (README, `docs/overlaid-notes.md`).
+
+- C-OVERLAID-01: ten OBS browser-source overlays (alerts, chat, goals, now playing, ticker, camera, starting, BRB, ending, debug) with `?demo=1` previews; Twitch EventSub into the overlays after OAuth; a chat bot with commands, timers, counters, quotes, interaction rules and moderation; OBS scene controls, quick actions, rehearsal sessions and a health page.
+- C-OVERLAID-02: runs beside OBS from Docker Compose; local, LAN and public exposure modes; GPL. No public instance exists; live Twitch/OBS checks are listed as remaining gates.
+
+No claim about platforms other than Twitch.
+
+### Pirs
+
+Source: `subculture-collective/pirs` (README, `docs/spec/hook-points.md`, roadmap).
+
+- C-PIRS-01: a fork of the Bluesky PDS distribution with a draft hook-point spec (observe, serve, act, decide), a `/_pirs/status` bridge counting sequencer events, and a smoke test that boots a throwaway PDS.
+- C-PIRS-02: "not production software and no plugin runs yet"; the plugin host "does not exist yet"; "No milestone has started beyond the scaffold". Prichal stays on the unmodified upstream image. MIT / Apache-2.0.
+
+### tmux-popups
+
+Source: `PatrickFanella/tmux-popups` (README).
+
+- C-TMUX-01: a Prefix+Enter quick menu and direct bindings generated from `popups.tsv`; local override registry; dependency status in help and CLI; a doctor script; small and full profiles; Bash only with Python 3 for JSON-argument rows. MIT. Session switching is left to tmux-sessionx. Dependency checks "establish presence, not provider credentials".
+
+### Omarchy Multi-Monitor Bar
+
+Source: `PatrickFanella/omarchy-monitor-bar` (README, manifest v1.0.0).
+
+- C-MONBAR-01: Full, Minimal or Hidden per monitor with the primary locked to Full; glyph and workspace list on Minimal bars; a settings panel with validation and Check/Sync against stock files; ten languages; no elevated privileges, network or telemetry. MIT.
+- C-MONBAR-02: pinned to the stock bar files of one Omarchy release (README: 4.0.4-1; the changelog still says 4.0.1-1); other versions unsupported. Some `shell.json` keys are not editable from the panel.
+
+### Super Productivity for Omarchy
+
+Source: `PatrickFanella/omarchy-superproductivity` (README, manifest v1.1.1).
+
+- C-SPOM-01: current task with countdown and overtime; Stop, Complete, Extend; a Today list with Start/Complete; quick add with `+project`, `@schedule`, `#tag`; expiry and scheduled-start alerts with sound; ten languages. Requires the desktop app's local REST API on loopback. MIT.
+- C-SPOM-02: the app's API has no transactions or revision guards, so a residual race between the bar and the app remains; recovery is best effort.
+
+### Spool
+
+Source: `subculture-collective/omarchy-plugin-spool` (README, manifest v0.2.0).
+
+- C-SPOOL-01: a violet cassette desktop companion with drag, jump, wave, optional wandering and pointer-following eyes; an IPC command set; a bridge that follows T3 Code and Codex desktop activity with working, waiting, failure and review animations and a badge.
+- C-SPOOL-02: installs with `./install.sh`; the bridge is "a local compatibility adapter to an internal desktop interface, not an official Pets event API". No LICENSE file; the artwork "is user-specific. No redistribution license is assigned".
+
+### Shelfish
+
+Source: `PatrickFanella/omarchy-plugin-shelfish` (README, manifest v1.1.1).
+
+- C-SHELF-01: named, ordered, collapsible groups of existing bar widgets with icon and direction; reveal on a member's watched status change with per-widget policies; `restoreAll` before removal; ten languages; no third-party runtime dependencies. MIT.
+- C-SHELF-02: depends on the shell's internal `moduleSlots` API; cannot restore pre-group positions; polls status every 500 ms; plugins run unsandboxed. Marketplace submission is planned, not done.
+
+### Metronome + Tuner
+
+Source: `PatrickFanella/obsidian-plugin-metronome-tuner` (README, manifest v1.0.1).
+
+- C-METRO-01: metronome 30 to 300 BPM with tap tempo, time signatures, accent and seven click sounds; chromatic tuner with frequency, confidence, cents and note; A4 from 415 to 466 Hz; keyboard-accessible; Obsidian 1.7.2+ on desktop and mobile. Microphone only after opt-in, analysed locally, never recorded, stored or transmitted. MIT.
+- C-METRO-02: community-plugin availability is conditional on marketplace acceptance; until then, manual install from a release. Do not say "precise" without a measurement.
+
+### super-productivity-mcp
+
+Source: `PatrickFanella/super-productivity-mcp` (README).
+
+- C-SPMCP-01: an MCP server (`sp-mcp`), a Super Productivity plugin bridge over file IPC (inbox, outbox, dead letter), a desktop quick-add launcher through Walker or a GTK popup, and a tool catalogue in one JSON file; broad writes are dry-run first. Requires Super Productivity desktop 14+; archive/restore needs the optional local REST API; recurrence tools need a build whose plugin sandbox allows them. MIT.
+
+Riot grrrl archive, Dedhed, Patrick__Eff and the teasers are not on the product pages and gain no claim here.

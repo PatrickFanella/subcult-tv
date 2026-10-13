@@ -3,19 +3,12 @@ import ProductVisual from '@/components/ProductVisual';
 import SEOHead from '@/components/SEOHead';
 import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { PRODUCT_LANDINGS } from '@/lib/product-landings';
+import { BRAND_HEROES, SCREENSHOT_CAPTIONS } from '@/lib/product-visuals';
+import { PRODUCT_MARKS } from '@/lib/product-marks';
 import { getProductPath, PRODUCT_ROUTES } from '@/lib/product-paths';
 import NotFound from '@/pages/NotFound';
 import '@/styles/product-landings.css';
 import '@/styles/product-fonts.css';
-
-// Brand marks shown beside the product name; other products use the name alone.
-const PRODUCT_MARKS: Record<string, string> = {
-  'left-field': '/brand/left-field/mark.svg',
-  'transcript-create': '/brand/rekolekt-mark.svg',
-  kork: '/brand/kork-mark.svg',
-  subsets: '/brand/subsets/logos/mark-primary.svg',
-  tadooer: '/brand/tadooer/mark.svg',
-};
 
 export default function ProductLanding() {
   const { slug } = useParams<{ slug: string }>();
@@ -73,10 +66,12 @@ export default function ProductLanding() {
             <ProductVisual product={product} priority />
             <figcaption>
               {project.screenshot
-                ? `${project.name} interface`
+                ? (SCREENSHOT_CAPTIONS[project.slug] ?? `${project.name} interface`)
                 : project.slug === 'subsets'
                   ? 'Actual Subsets TUI render / sample skill collection'
-                  : `${project.name} / concept illustration`}
+                  : BRAND_HEROES.has(project.slug)
+                    ? `${project.name} / brand mark`
+                    : `${project.name} / concept illustration`}
             </figcaption>
           </figure>
         </section>

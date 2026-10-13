@@ -1,0 +1,86 @@
+{
+  "generated": "2026-10-12",
+  "files": [
+    {
+      "target": "public/screenshots/chatty-cat-home-1440.webp",
+      "kind": "live-capture",
+      "source": "https://chat.subcult.tv/",
+      "capturedAt": "2026-10-13T04:46:43Z",
+      "transform": "Puppeteer, system Chromium, 1440x900 viewport, prefers-reduced-motion, networkidle2, 6 s extra wait, WebP quality 82",
+      "sha256": "d4929f7c052f62fed41a315fec68e084a6c774341c12a319d27635834733beff",
+      "suggestedAlt": "Chatty Cat chat client showing the #hasanabi channel log with timestamped messages, a Twitch offline player and emote search panel on the right, and channel, workspace and privacy controls across the top."
+    },
+    {
+      "target": "public/screenshots/arkhiv-home-1440.webp",
+      "kind": "live-capture",
+      "source": "https://arkhiv.subcult.tv/",
+      "capturedAt": "2026-10-13T04:46:46Z",
+      "transform": "Puppeteer, system Chromium, 1440x900 viewport, prefers-reduced-motion, networkidle2, 1.5 s extra wait, WebP quality 82",
+      "sha256": "cad962c646015e5841c5ba61b72c7f17e40a46526feddbb4b2f6cf97518ee3ba",
+      "suggestedAlt": "Arkhiv home page with the heading An archive across formats, collection, media and search filters, a 6707-item count, and a grid of print items such as Interview with Iranian Anarchists with Read buttons."
+    },
+    {
+      "target": "public/screenshots/backline-home-1440.webp",
+      "kind": "live-capture",
+      "source": "https://backline.subcult.tv/",
+      "capturedAt": "2026-10-13T04:46:48Z",
+      "transform": "Puppeteer, system Chromium, 1440x900 viewport, prefers-reduced-motion, networkidle2, 1.5 s extra wait, WebP quality 82",
+      "sha256": "5b71faa6b45a74f59e3ca21b9213264f5495fbe399279b600c1c1995bc80de88",
+      "suggestedAlt": "Backline landing page on a purple background with the headline Keep your people together, an Explore the tools button, and an illustrated workflow card showing welcome, moderation and support ticket steps."
+    },
+    {
+      "target": "public/screenshots/omarchy-monitor-bar-preview-1440.webp",
+      "kind": "repository-image",
+      "source": "omarchy-monitor-bar preview.png (1536x1024)",
+      "sourceSha256": "6f1253677f53215a876f8e6eec98a0eb260d7ed7955331e57a229a0ce78caddb",
+      "transform": "Centre-crop to 1536x960 (16:10, 32 px removed top and bottom), Lanczos resize to 1440x900, WebP quality 82",
+      "sha256": "e42cd636ffa07804d96286c3b982fedb6d7b28390e9ddeaf42a62cea87544193",
+      "suggestedAlt": "Omarchy Multi-Monitor Bar settings window with position buttons, a transparent toggle, a monitor list showing DP-1 primary full and DP-3 and HDMI-A-1 minimal, and Full, Minimal and Hidden mode buttons for DP-1."
+    },
+    {
+      "target": "public/screenshots/omarchy-plugin-shelfish-preview-1440.webp",
+      "kind": "repository-image",
+      "source": "omarchy-plugin-shelfish preview.png (1600x900)",
+      "sourceSha256": "12d633a183dc953179fa875eaf6e714b00dfe56bc9faaebaaee95f0ffa8c11b0",
+      "transform": "Lanczos downscale 1600x900 to 1440x810, letterboxed 45 px top and bottom on #171410 so no labels are cropped",
+      "sha256": "6cb23f79097d4b0629d678261774c53d7fb009f4aa82411897b00b5826f65527",
+      "suggestedAlt": "Shelfish settings panel under the Omarchy top bar with a Utilities group, a group name field, position dropdown, a grid of group icons, and Available plugins and Selected group members lists."
+    },
+    {
+      "target": "public/screenshots/omarchy-superproductivity-panel-1440.webp",
+      "kind": "repository-image",
+      "source": "omarchy-superproductivity assets/screenshots/panel.png (960x720, synthetic data per README; live-panel.png is 844x1305 and does not fit at 1:1)",
+      "sourceSha256": "52b97ce3a6b805c501e79a44e7e30031857cb2458464f70cc81bbc7416a3c2ff",
+      "transform": "Placed at 1:1 scale centred on a 1440x900 canvas filled with #15131c, alpha composited, WebP quality 82",
+      "sha256": "73904f2481235f9434ef5046a8a9f04c02223ba634dc0841b89ada7a318f3345",
+      "suggestedAlt": "Super Productivity panel for Omarchy showing an overtime task Draft release notes with estimate and spent timers, Stop and Complete buttons, a Quick Add field, and a Today list with Plan launch and the current task."
+    },
+    {
+      "target": "public/screenshots/omarchy-plugin-spool-preview-1440.webp",
+      "kind": "repository-image",
+      "source": "omarchy-plugin-spool preview.png (260x500) and activity-preview.png (260x320)",
+      "sourceSha256": "6d3d9c3b28be043a29c992a4a4a7023ddbb9a634b704676c2d75a682c130f8c0 (preview.png); e3411f442c61a6a0a0c94abefca2830c281016da0589f23b42991b99d4ae32cc (activity-preview.png)",
+      "transform": "Both scaled uniformly by 1.52 with Lanczos (smooth anti-aliased art, not pixel art) to 395x760 and 395x486, placed side by side with an 80 px gap, centred on a 1440x900 canvas filled with #120f1c, WebP quality 82",
+      "sha256": "c7db07b392671f210970688e96fb2ccc0233875a86969114acdc2183d268482d",
+      "suggestedAlt": "Two Spool desktop pet previews: a Spool / SUBCULT menu with Wave, Jump, size, eyes, wander and monitor options above a purple cassette character, and the same character beside a Thinking status bubble."
+    },
+    {
+      "target": "public/screenshots/obsidian-plugin-metronome-tuner-view-1440.webp",
+      "kind": "repository-image",
+      "source": "obsidian-plugin-metronome-tuner docs/metronome-view.png (924x1920)",
+      "sourceSha256": "130a7379d1df74c25222cbc7a7249e8a525adb1681f294450d474c8c67a08b51",
+      "transform": "Crop the top 924x900 region (title through the tempo slider; no chrome to skip), centred on a 1440x900 canvas filled with #f6f3ee, WebP quality 82",
+      "sha256": "59adf4a5c6a547e6ceb91b35635f10a018c18a7b088182ec826145a9eea12c16",
+      "suggestedAlt": "Tempo & Tune Obsidian view with the Metronome tab selected, a large 240 BPM readout with four beat indicators, a Start metronome button, and tempo minus, plus and slider controls."
+    },
+    {
+      "target": "public/screenshots/tmux-popups-menu-1440.webp",
+      "kind": "video-frame",
+      "source": "tmux-popups assets/demo.gif (1280x720, 10.08 s), frame at t=2.0 s",
+      "sourceSha256": "fe526a59213e61dbbe461f95b28819c1d4fb06a0b180b6c26289ca191713feb3",
+      "transform": "ffmpeg -ss 2 single-frame extract, Lanczos resize to 1440x810, letterboxed 45 px top and bottom on #101418 to 1440x900, WebP quality 82",
+      "sha256": "8f39af520ee9f6911c536c6d1ef494077e64a184e0b64a123274e7ad9e23cdf9",
+      "suggestedAlt": "A tmux session with a Neovim shell script buffer and file tree, with the tmux-popups Quick Menu open in the centre listing entries such as popup help, quick chat, shell, tasks, notes, calendar and lazygit with their key bindings."
+    }
+  ]
+}

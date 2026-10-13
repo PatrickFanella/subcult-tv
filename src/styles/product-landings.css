@@ -164,6 +164,235 @@
   background-image: radial-gradient(rgb(27 19 12 / 16%) 1px, transparent 1.5px);
   background-size: 22px 22px;
 }
+/* Products added October 12, 2026. Tokens come from each pack's tokens.json in studio/brands. */
+.product-landing[data-product='chatty-cat'] {
+  --lp-bg: #0b0f0c;
+  --lp-panel: #141a16;
+  --lp-text: #cfeedd;
+  --lp-muted: #9fbfae;
+  --lp-line: #2f4a3a;
+  --lp-accent: #7dff9a;
+  --lp-accent-text: #7dff9a;
+  --lp-on-accent: #0b0f0c;
+  --lp-focus: #e8a33d;
+  --lp-radius: 6px;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Cascadia Mono', ui-monospace, monospace;
+  --lp-mono: 'Cascadia Mono', ui-monospace, monospace;
+}
+.product-landing[data-product='chatty-cat'] .landing-wordmark h1 {
+  text-transform: lowercase;
+  letter-spacing: 0;
+}
+.product-landing[data-product='chatty-cat'] .landing-wordmark img {
+  image-rendering: pixelated;
+}
+.product-landing[data-product='backline'] {
+  --lp-bg: #f0ece4;
+  --lp-panel: #ffffff;
+  --lp-text: #100b19;
+  --lp-muted: #4a4358;
+  --lp-line: #100b19;
+  --lp-accent: #8b5cf6;
+  --lp-accent-text: #5944ab;
+  --lp-on-accent: #100b19;
+  --lp-focus: #5944ab;
+  --lp-radius: 0px;
+  --lp-shadow: 4px 4px 0 #100b19;
+  --lp-body: 'Backline Body', 'Space Grotesk', sans-serif;
+  --lp-display: 'Backline Display', 'Oswald', 'Arial Narrow', sans-serif;
+  --lp-mono: 'Backline Mono', 'JetBrains Mono', monospace;
+}
+.product-landing[data-product='backline'] :is(h1, h2, h3) {
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+.product-landing[data-product='backline'] :is(.landing-visual, .landing-features article) {
+  border: 2px solid #100b19;
+}
+.product-landing[data-product='backline'] .landing-button {
+  background: #00ff88;
+  color: #100b19;
+  border: 2px solid #100b19;
+}
+.product-landing[data-product='arkhiv'] {
+  --lp-bg: #f3efe4;
+  --lp-panel: #fbf9f3;
+  --lp-text: #1a1816;
+  --lp-muted: #4e4a45;
+  --lp-line: #c9c2b2;
+  --lp-accent: #d8262c;
+  --lp-accent-text: #b31f24;
+  --lp-on-accent: #f3efe4;
+  --lp-focus: #2b59c3;
+  --lp-radius: 0px;
+  --lp-shadow: 3px 3px 0 #2b59c3;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --lp-mono: 'IBM Plex Mono', monospace;
+}
+.product-landing[data-product='arkhiv'] .landing-features article {
+  border-top: 3px solid var(--lp-accent);
+}
+.product-landing[data-product='overlaid'] {
+  --lp-bg: #0d0d12;
+  --lp-panel: #16161e;
+  --lp-text: #f3f0ff;
+  --lp-muted: #b4afc8;
+  --lp-line: #353546;
+  --lp-accent: #ff3b4e;
+  --lp-accent-text: #ff6b79;
+  --lp-on-accent: #0d0d12;
+  --lp-focus: #ffd166;
+  --lp-radius: 4px;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Inter Tight', system-ui, sans-serif;
+  --lp-mono: 'Space Mono', monospace;
+}
+.product-landing[data-product='pirs'] {
+  --lp-bg: #0e2a47;
+  --lp-panel: #15365a;
+  --lp-text: #e6eef7;
+  --lp-muted: #b3c6da;
+  --lp-line: #3a5f87;
+  --lp-accent: #ffb347;
+  --lp-accent-text: #ffb347;
+  --lp-on-accent: #0e2a47;
+  --lp-focus: #7fb3d5;
+  --lp-radius: 0px;
+  --lp-body: 'Barlow', sans-serif;
+  --lp-display: 'Barlow Condensed', sans-serif;
+  --lp-mono: 'IBM Plex Mono', monospace;
+  background-image:
+    linear-gradient(rgb(127 179 213 / 10%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(127 179 213 / 10%) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.product-landing[data-product='pirs'] :is(h1, h2) {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.product-landing[data-product='tmux-popups'] {
+  --lp-bg: #101418;
+  --lp-panel: #181e24;
+  --lp-text: #d9e0e6;
+  --lp-muted: #9aa6b2;
+  --lp-line: #2d3741;
+  --lp-accent: #5ad1a5;
+  --lp-accent-text: #5ad1a5;
+  --lp-on-accent: #101418;
+  --lp-focus: #f2c14e;
+  --lp-radius: 2px;
+  --lp-body: 'Space Mono', monospace;
+  --lp-display: 'Space Mono', monospace;
+  --lp-mono: 'Space Mono', monospace;
+}
+.product-landing[data-product='tmux-popups'] .landing-wordmark h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  letter-spacing: -0.02em;
+}
+.product-landing[data-product='tmux-popups'] .landing-wordmark h1::after {
+  content: '_';
+  color: var(--lp-accent);
+}
+.product-landing[data-product='omarchy-monitor-bar'] {
+  --lp-bg: #14161c;
+  --lp-panel: #1d2028;
+  --lp-text: #e9ecf1;
+  --lp-muted: #aab2c2;
+  --lp-line: #353b49;
+  --lp-accent: #4cc9f0;
+  --lp-accent-text: #4cc9f0;
+  --lp-on-accent: #14161c;
+  --lp-focus: #4cc9f0;
+  --lp-radius: 10px;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Inter Tight', system-ui, sans-serif;
+  --lp-mono: 'IBM Plex Mono', monospace;
+}
+.product-landing[data-product='omarchy-superproductivity'] {
+  --lp-bg: #15131c;
+  --lp-panel: #1e1b28;
+  --lp-text: #ece8f6;
+  --lp-muted: #b3accb;
+  --lp-line: #3a3450;
+  --lp-accent: #a78bfa;
+  --lp-accent-text: #c4b5fd;
+  --lp-on-accent: #15131c;
+  --lp-focus: #5eead4;
+  --lp-radius: 10px;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Inter Tight', system-ui, sans-serif;
+  --lp-mono: 'IBM Plex Mono', monospace;
+}
+.product-landing[data-product='omarchy-plugin-spool'] {
+  --lp-bg: #120f1c;
+  --lp-panel: #1b1628;
+  --lp-text: #f1ecff;
+  --lp-muted: #b8aed6;
+  --lp-line: #3b3156;
+  --lp-accent: #8a5cff;
+  --lp-accent-text: #b9ff3b;
+  --lp-on-accent: #f1ecff;
+  --lp-focus: #b9ff3b;
+  --lp-radius: 14px;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Archivo Black', 'Arial Black', sans-serif;
+  --lp-mono: 'Space Mono', monospace;
+}
+.product-landing[data-product='omarchy-plugin-spool'] :is(h1, h2, h3) {
+  letter-spacing: 0;
+}
+.product-landing[data-product='omarchy-plugin-shelfish'] {
+  --lp-bg: #171410;
+  --lp-panel: #201c16;
+  --lp-text: #f2ebe0;
+  --lp-muted: #bfb3a3;
+  --lp-line: #3f382f;
+  --lp-accent: #ffb86b;
+  --lp-accent-text: #ffb86b;
+  --lp-on-accent: #171410;
+  --lp-focus: #7aa2f7;
+  --lp-radius: 10px;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Inter Tight', system-ui, sans-serif;
+  --lp-mono: 'IBM Plex Mono', monospace;
+}
+.product-landing[data-product='obsidian-plugin-metronome-tuner'] {
+  --lp-bg: #f6f3ee;
+  --lp-panel: #fffdf9;
+  --lp-text: #1d1a24;
+  --lp-muted: #534d5e;
+  --lp-line: #cfc8bf;
+  --lp-accent: #e04e7a;
+  --lp-accent-text: #b82e5a;
+  --lp-on-accent: #fffdf9;
+  --lp-focus: #2f6f73;
+  --lp-radius: 8px;
+  --lp-shadow: 0 2px 0 #cfc8bf;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --lp-mono: 'IBM Plex Mono', monospace;
+}
+.product-landing[data-product='super-productivity-mcp'] {
+  --lp-bg: #0f1a17;
+  --lp-panel: #16221e;
+  --lp-text: #e3efe9;
+  --lp-muted: #a9bfb5;
+  --lp-line: #2f4a41;
+  --lp-accent: #34d399;
+  --lp-accent-text: #34d399;
+  --lp-on-accent: #0f1a17;
+  --lp-focus: #a78bfa;
+  --lp-radius: 4px;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Space Mono', monospace;
+  --lp-mono: 'Space Mono', monospace;
+}
+.product-landing[data-product='super-productivity-mcp'] .landing-wordmark h1 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  letter-spacing: -0.03em;
+}
 .landing-container {
   max-width: 1280px;
   padding: 0 32px;

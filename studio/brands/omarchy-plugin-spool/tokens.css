@@ -1,0 +1,9 @@
+:root {
+  --omarchy-plugin-spool-bg: #120f1c;
+  --omarchy-plugin-spool-text: #f1ecff;
+  --omarchy-plugin-spool-accent: #8a5cff;
+  --omarchy-plugin-spool-secondary: #b9ff3b;
+  --omarchy-plugin-spool-font-display: "Archivo Black";
+  --omarchy-plugin-spool-font-body: "Public Sans";
+  --omarchy-plugin-spool-font-label: "Space Mono";
+}

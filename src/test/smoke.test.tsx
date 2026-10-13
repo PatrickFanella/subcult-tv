@@ -49,7 +49,7 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('showcases all eleven products and connects HasanAra to its shared application', async () => {
+  it('showcases the featured products, lists all twenty-three, and connects HasanAra to its shared application', async () => {
     const user = userEvent.setup();
     renderApp('/');
     const showcase = await screen.findByRole('region', { name: 'The products' });
@@ -58,17 +58,22 @@ describe('smoke: app shell', () => {
       'clpr',
       'Patchwork',
       'HasanAra',
-      'Rekolekt',
-      'Subcult OS',
       'Undertow',
-      'Prichal',
       'Kork',
-      'Left Field',
-      'Subsets',
+      'Chatty Cat',
+      'Arkhiv',
       'Tadooer',
     ]) {
       expect(products.getByRole('heading', { name })).toBeInTheDocument();
     }
+    expect(products.queryByRole('heading', { name: 'Rekolekt' })).not.toBeInTheDocument();
+    const index = within(screen.getByRole('region', { name: 'Everything we make' }));
+    expect(index.getAllByRole('listitem')).toHaveLength(23);
+    expect(index.getByRole('link', { name: /Spool/ })).toHaveAttribute('href', '/products/spool');
+    expect(index.getByRole('link', { name: /Rekolekt/ })).toHaveAttribute(
+      'href',
+      '/products/rekolekt',
+    );
     expect(products.getByRole('link', { name: 'Explore clpr ↗' })).toHaveAttribute(
       'href',
       'https://clpr.tv',
@@ -94,10 +99,10 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('opens Prichal from its showcase with the preview and repository destinations', async () => {
+  it('opens Prichal from the directory with the preview and repository destinations', async () => {
     const user = userEvent.setup();
-    renderApp('/');
-    await user.click(await screen.findByRole('link', { name: 'About Prichal' }));
+    renderApp('/products');
+    await user.click(await screen.findByRole('link', { name: 'About Prichal →' }));
     expect(await screen.findByRole('heading', { name: 'Prichal', level: 1 })).toBeInTheDocument();
     for (const link of screen.getAllByRole('link', { name: /See the preview/i })) {
       expect(link).toHaveAttribute('href', 'https://prichal.subcult.tv');
@@ -132,13 +137,19 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('redirects the old catalog to the eleven-product directory', async () => {
+  it('redirects the old catalog to the grouped twenty-three-product directory', async () => {
     renderApp('/projects');
     await screen.findByRole('heading', { name: 'Products', level: 1 });
     const main = within(screen.getByRole('main'));
     const teasers = within(main.getByRole('region', { name: 'In development' }));
     const articles = main.getAllByRole('article');
-    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(11);
+    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(23);
+    const plugins = within(main.getByRole('region', { name: 'Desktop and editor plugins' }));
+    expect(plugins.getAllByRole('article')).toHaveLength(5);
+    expect(plugins.getByRole('link', { name: 'Explore Shelfish' })).toHaveAttribute(
+      'href',
+      '/products/shelfish',
+    );
     expect(teasers.getAllByRole('article')).toHaveLength(2);
     expect(main.getByRole('link', { name: 'Explore Rekolekt' })).toHaveAttribute(
       'href',
@@ -148,6 +159,35 @@ describe('smoke: app shell', () => {
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
       'href',
       'https://subcult.tv/products',
+    );
+  });
+
+  it('opens a new product page with its brand mark, repository and metadata', async () => {
+    renderApp('/products/metronome-tuner');
+    expect(
+      await screen.findByRole('heading', { name: 'Metronome + Tuner', level: 1 }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /View repository/ })).toHaveAttribute(
+      'href',
+      'https://git.subcult.tv/PatrickFanella/obsidian-plugin-metronome-tuner',
+    );
+    expect(screen.getByRole('link', { name: 'Explore the code ↗' })).toBeInTheDocument();
+    expect(document.querySelector('meta[property="og:image"]')).toHaveAttribute(
+      'content',
+      'https://subcult.tv/og/obsidian-plugin-metronome-tuner.jpg',
+    );
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
+      'href',
+      'https://subcult.tv/products/metronome-tuner',
+    );
+  });
+
+  it('shows the brand hero for a product without a screenshot', async () => {
+    renderApp('/products/overlaid');
+    await screen.findByRole('heading', { name: 'Overlaid', level: 1 });
+    expect(screen.getByRole('img', { name: /Overlaid brand mark/ })).toHaveAttribute(
+      'src',
+      '/brand/overlaid/hero.svg',
     );
   });
 
@@ -305,7 +345,7 @@ describe('smoke: app shell', () => {
     expect(await screen.findByRole('heading', { name: 'SIGNAL LOST' })).toBeInTheDocument();
   });
 
-  it('makes every product available from the shared navigation and footer', async () => {
+  it('shortcuts the featured products in the navigation and lists every product in the footer', async () => {
     renderApp('/about');
     await screen.findByRole('heading', { name: 'Software for independent culture.' });
     const nav = within(screen.getByRole('navigation', { name: 'Main navigation' }));
@@ -315,16 +355,33 @@ describe('smoke: app shell', () => {
       ['clpr', 'clpr'],
       ['Patchwork', 'patchwork'],
       ['HasanAra', 'hasanara'],
-      ['Rekolekt', 'rekolekt'],
-      ['Subcult OS', 'subcult-os'],
       ['Undertow', 'undertow'],
-      ['Prichal', 'prichal'],
       ['Kork', 'kork'],
-      ['Left Field', 'left-field'],
-      ['Subsets', 'subsets'],
       ['Tadooer', 'tadooer'],
+      ['Chatty Cat', 'chatty-cat'],
+      ['Arkhiv', 'arkhiv'],
     ]) {
       expect(nav.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
+    }
+    expect(nav.getByRole('link', { name: 'All 23 →' })).toHaveAttribute('href', '/products');
+    expect(nav.queryByRole('link', { name: 'Rekolekt' })).not.toBeInTheDocument();
+    for (const [name, slug] of [
+      ['Rekolekt', 'rekolekt'],
+      ['Subcult OS', 'subcult-os'],
+      ['Prichal', 'prichal'],
+      ['Left Field', 'left-field'],
+      ['Subsets', 'subsets'],
+      ['Backline', 'backline'],
+      ['Overlaid', 'overlaid'],
+      ['Pirs', 'pirs'],
+      ['tmux-popups', 'tmux-popups'],
+      ['Omarchy Multi-Monitor Bar', 'omarchy-monitor-bar'],
+      ['Super Productivity for Omarchy', 'omarchy-superproductivity'],
+      ['Spool', 'spool'],
+      ['Shelfish', 'shelfish'],
+      ['Metronome + Tuner', 'metronome-tuner'],
+      ['super-productivity-mcp', 'super-productivity-mcp'],
+    ]) {
       expect(footer.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
     }
   });

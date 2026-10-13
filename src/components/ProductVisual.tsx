@@ -1,8 +1,27 @@
 import type { ShowcaseProduct } from '@/lib/showcase';
+import { BRAND_HEROES } from '@/lib/product-visuals';
 
 // Screenshot descriptions for products whose capture shows more than the interface name conveys.
 const SCREENSHOT_ALT: Record<string, string> = {
   tadooer: 'Tadooer Today view with sample tasks',
+  'chatty-cat':
+    'Chatty Cat showing one channel log with timestamped messages, an offline Twitch player and the emote panel, with channel, workspace and privacy controls across the top',
+  arkhiv:
+    'Arkhiv home page with collection, media and search filters, an item count, and a grid of print items with Read buttons',
+  backline:
+    'Backline landing page on purple with the headline Keep your people together and an illustrated workflow card for welcome, moderation and support tickets',
+  'omarchy-monitor-bar':
+    'Omarchy Multi-Monitor Bar settings window listing three monitors, one primary on Full and two on Minimal, with Full, Minimal and Hidden buttons',
+  'omarchy-plugin-shelfish':
+    'Shelfish settings panel under the Omarchy top bar with a Utilities group, group icons, and lists of available plugins and selected group members',
+  'omarchy-superproductivity':
+    'Super Productivity panel for Omarchy showing a task in overtime with estimate and spent timers, Stop and Complete buttons, a Quick Add field and a Today list (sample data)',
+  'omarchy-plugin-spool':
+    'Two Spool previews: the Spool menu with Wave, Jump, size, eyes, wander and monitor options above a purple cassette character, and the same character beside a Thinking bubble',
+  'obsidian-plugin-metronome-tuner':
+    'Metronome + Tuner view in Obsidian with the Metronome tab selected, a 240 BPM readout with four beat indicators, a Start button and tempo controls',
+  'tmux-popups':
+    'A tmux session with Neovim open and the tmux-popups Quick Menu in the centre listing popups such as help, shell, tasks, notes, calendar and lazygit with their key bindings',
 };
 
 export default function ProductVisual({
@@ -30,6 +49,19 @@ export default function ProductVisual({
       <img
         src="/brand/left-field/hero.svg"
         alt="Left Field: Where the field bends. LF mark on warm paper."
+        loading={priority ? 'eager' : 'lazy'}
+        fetchPriority={priority ? 'high' : 'auto'}
+        decoding="async"
+        className="showcase-screenshot"
+      />
+    );
+  }
+  const hero = BRAND_HEROES.get(project.slug);
+  if (hero) {
+    return (
+      <img
+        src={`/brand/${project.slug}/hero.svg`}
+        alt={hero}
         loading={priority ? 'eager' : 'lazy'}
         fetchPriority={priority ? 'high' : 'auto'}
         decoding="async"

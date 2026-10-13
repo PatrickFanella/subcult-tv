@@ -65,6 +65,29 @@ const META_DESCRIPTIONS: Record<string, string> = {
     'Seat-level public records beside their sources and gaps. Scores are provisional, versioned research notes, not forecasts. In active development.',
   tadooer:
     'A private, self-hosted task and calendar planner for one owner. Tasks beside the calendar on one grid, one focus session at a time, your server, no sign-up.',
+  'chatty-cat':
+    'A self-hosted Twitch chat client that merges up to six channels into one scrollback and keeps your display settings. A rebuild of Chat Thing, in migration.',
+  backline:
+    'A Discord bot and dashboard for running a community: onboarding, moderation with a case history, private tickets and feeds. In a private pilot; not open yet.',
+  arkhiv:
+    'A zine archive that keeps the original files and serves a catalogue with a reader and downloads. The Anarchist Zine Archive is the first public collection.',
+  overlaid:
+    'OBS overlays, Twitch events, a chat bot, scene controls and a health page for one person running a stream. Runs beside OBS on your machine. In development.',
+  pirs: 'An experimental fork of the Bluesky personal data server with plugin hook points: a draft spec, a status endpoint and a smoke test. No plugin runs yet.',
+  'tmux-popups':
+    'A tmux popup toolkit: a Prefix+Enter quick menu and bindings generated from one TSV registry, with overrides, dependency checks and a doctor script. Bash only.',
+  'omarchy-monitor-bar':
+    'An Omarchy plugin that gives each monitor its own bar layout: Full, Minimal or Hidden, with a settings panel pinned to the stock bar files. Ten languages.',
+  'omarchy-superproductivity':
+    'An Omarchy plugin that shows the current Super Productivity task in the top bar with a countdown, Stop, Complete and Extend controls and a Today list.',
+  'omarchy-plugin-spool':
+    'Spool is an animated cassette companion for the Omarchy desktop. Drag it, make it wave, and watch it react to what your coding agent is doing.',
+  'omarchy-plugin-shelfish':
+    'Shelfish groups existing Omarchy bar widgets into named, collapsible shelves that open when a member’s status changes. Ten languages, no runtime dependencies.',
+  'obsidian-plugin-metronome-tuner':
+    'A metronome (30 to 300 BPM, tap tempo, seven clicks) and a chromatic tuner with adjustable A4 inside Obsidian. Microphone only after opt-in, analysed locally.',
+  'super-productivity-mcp':
+    'An MCP server, plugin bridge and quick-add launcher for Super Productivity, so an assistant can create tasks, add time and manage schedules where you keep them.',
 };
 
 // Titles allow about 60 characters. These stand in where "name: headline"
@@ -81,6 +104,18 @@ const TITLE_PHRASES: Record<string, string> = {
   kork: 'A free page for every link',
   'left-field': 'Sourced seat research',
   tadooer: 'A private planner for one owner',
+  'chatty-cat': 'Six Twitch channels, one scrollback',
+  backline: 'A Discord bot for running a community',
+  arkhiv: 'A zine archive with the originals kept',
+  overlaid: 'An operator desk for live streams',
+  pirs: 'An extensible AT Protocol server',
+  'tmux-popups': 'Popups for tmux from one table',
+  'omarchy-monitor-bar': 'A bar for each monitor',
+  'omarchy-superproductivity': 'In the top bar',
+  'omarchy-plugin-spool': 'A cassette companion for Omarchy',
+  'omarchy-plugin-shelfish': 'Collapsible Omarchy bar groups',
+  'obsidian-plugin-metronome-tuner': 'Practice tools inside Obsidian',
+  'super-productivity-mcp': 'MCP for Super Productivity',
 };
 
 // schema.org applicationCategory for each product.
@@ -96,6 +131,32 @@ const APPLICATION_CATEGORY: Record<string, string> = {
   kork: 'SocialNetworkingApplication',
   subsets: 'DeveloperApplication',
   tadooer: 'BusinessApplication',
+  'chatty-cat': 'SocialNetworkingApplication',
+  backline: 'SocialNetworkingApplication',
+  arkhiv: 'ReferenceApplication',
+  overlaid: 'MultimediaApplication',
+  pirs: 'SocialNetworkingApplication',
+  'tmux-popups': 'DeveloperApplication',
+  'omarchy-monitor-bar': 'DesktopEnhancementApplication',
+  'omarchy-superproductivity': 'DesktopEnhancementApplication',
+  'omarchy-plugin-spool': 'DesktopEnhancementApplication',
+  'omarchy-plugin-shelfish': 'DesktopEnhancementApplication',
+  'obsidian-plugin-metronome-tuner': 'MultimediaApplication',
+  'super-productivity-mcp': 'DeveloperApplication',
+};
+
+// schema.org operatingSystem; products not listed run in a web browser.
+const OPERATING_SYSTEM: Record<string, string> = {
+  subsets: 'Linux, macOS (unverified)',
+  'tmux-popups': 'Linux, macOS (tmux)',
+  'omarchy-monitor-bar': 'Linux (Omarchy)',
+  'omarchy-superproductivity': 'Linux (Omarchy)',
+  'omarchy-plugin-spool': 'Linux (Omarchy)',
+  'omarchy-plugin-shelfish': 'Linux (Omarchy)',
+  'obsidian-plugin-metronome-tuner': 'Obsidian desktop and mobile',
+  'super-productivity-mcp': 'Linux',
+  pirs: 'Linux (Node.js)',
+  overlaid: 'Linux, macOS, Windows (self-hosted, beside OBS)',
 };
 
 function fullTitle(title: string) {
@@ -107,7 +168,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/',
     title: 'SUBCULT | Tools for independent culture',
     description:
-      'Eleven tools from SUBCULT for clips, archives, mutual aid, shows, music video, hosting, link pages, seat research, local agent skills, and a private planner.',
+      'Twenty-three tools from SUBCULT: clips, archives, chat, mutual aid, shows, streams, music video, link pages, a Discord bot, desktop plugins and agent tools.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [
@@ -125,7 +186,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/products',
     title: fullTitle('Products'),
     description:
-      'Explore eleven SUBCULT products, including Tadooer, a private planner for one owner. Each page explains what is available and how to get started.',
+      'All twenty-three SUBCULT products: apps and services, desktop and editor plugins, and developer and agent tools. Each page says how finished it is.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -133,7 +194,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/about',
     title: fullTitle('Studio'),
     description:
-      'SUBCULT is the independent studio behind clpr, Patchwork, HasanAra, Rekolekt, Subcult OS, Undertow, Prichal, Kork, Left Field, Subsets and Tadooer.',
+      'SUBCULT is the independent studio behind clpr, Patchwork, HasanAra, Undertow, Kork, Arkhiv, Chatty Cat, Tadooer and fifteen more tools and plugins.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [ORGANIZATION],
@@ -207,7 +268,7 @@ function productMeta({ project, headline, summary }: ShowcaseProduct): PageMeta 
         mainEntityOfPage: `${SITE_URL}${path}`,
         image: `${SITE_URL}${image}`,
         applicationCategory: APPLICATION_CATEGORY[project.slug],
-        operatingSystem: project.slug === 'subsets' ? 'Linux, macOS (unverified)' : 'Web',
+        operatingSystem: OPERATING_SYSTEM[project.slug] ?? 'Web',
         publisher: { '@id': ORGANIZATION['@id'] },
       },
       ORGANIZATION,

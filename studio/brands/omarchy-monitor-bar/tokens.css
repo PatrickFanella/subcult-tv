@@ -1,0 +1,9 @@
+:root {
+  --omarchy-monitor-bar-bg: #14161c;
+  --omarchy-monitor-bar-text: #e9ecf1;
+  --omarchy-monitor-bar-accent: #4cc9f0;
+  --omarchy-monitor-bar-secondary: #8f9bb3;
+  --omarchy-monitor-bar-font-display: "Inter Tight";
+  --omarchy-monitor-bar-font-body: "Public Sans";
+  --omarchy-monitor-bar-font-label: "IBM Plex Mono";
+}

@@ -1,0 +1,9 @@
+:root {
+  --tmux-popups-bg: #101418;
+  --tmux-popups-text: #d9e0e6;
+  --tmux-popups-accent: #5ad1a5;
+  --tmux-popups-secondary: #f2c14e;
+  --tmux-popups-font-display: "Space Mono";
+  --tmux-popups-font-body: "Space Mono";
+  --tmux-popups-font-label: "Space Mono";
+}

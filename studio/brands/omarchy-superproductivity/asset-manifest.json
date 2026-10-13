@@ -1,0 +1,186 @@
+{
+  "status": "proposed",
+  "brand": "Super Productivity for Omarchy",
+  "generator": "brand-tools/site_packs.py",
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "7f278ebc2449b01a755e7b457e7da81b2fc8e0b20d199b0dcb68f855a53f6510",
+      "bytes": 2232
+    },
+    {
+      "path": "alt-text.md",
+      "sha256": "c751e22dd293934b0c4f55af663cfda009c7d82bb036c6f5f5094327582e5c95",
+      "bytes": 1371
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-0.ttf",
+      "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+      "bytes": 128812
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-1.ttf",
+      "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+      "bytes": 131040
+    },
+    {
+      "path": "fonts/Inter-Tight-0.ttf",
+      "sha256": "27350bc95b961b9b4e1a80d872f49e903fe727f290f6b2a079e67ceb1685fb1f",
+      "bytes": 298260
+    },
+    {
+      "path": "fonts/Inter-Tight-1.ttf",
+      "sha256": "98272f3512338c52940816f5db61966ca1cdbc3cdb3c0d981da22612723da59e",
+      "bytes": 302808
+    },
+    {
+      "path": "fonts/Public-Sans-0.ttf",
+      "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+      "bytes": 56172
+    },
+    {
+      "path": "fonts/Public-Sans-1.ttf",
+      "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+      "bytes": 56364
+    },
+    {
+      "path": "fonts/ibmplexmono-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "bytes": 4456
+    },
+    {
+      "path": "fonts/intertight-OFL.txt",
+      "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58",
+      "bytes": 4383
+    },
+    {
+      "path": "fonts/publicsans-OFL.txt",
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+      "bytes": 4390
+    },
+    {
+      "path": "logos/lockup.png",
+      "sha256": "def3e6510c99c65392c3c62c7810dfc24aa85efb14f35e87b099b07b1357c31c",
+      "bytes": 44611,
+      "width": 2041,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "logos/lockup.svg",
+      "sha256": "46aab4b7ee0e61f45d11c9b4b7acf3a16da290e919d5048d5d53d3aa739a3cfe",
+      "bytes": 16734
+    },
+    {
+      "path": "logos/mark-mono-dark.svg",
+      "sha256": "59cc4b3ccdea03a55653613812a92a1ea481877c30431bf5c4618354f4ba468a",
+      "bytes": 443
+    },
+    {
+      "path": "logos/mark-mono-light.svg",
+      "sha256": "7ff79902d4e286d35ac8bf961fd6d5234b854c55599f336d9643ccc0baffb09b",
+      "bytes": 444
+    },
+    {
+      "path": "logos/mark.png",
+      "sha256": "277d5d9203c666b75a37fff2f64f52f96bc04501568b63dec17616f472e98470",
+      "bytes": 15893,
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "logos/mark.svg",
+      "sha256": "fb70032e6831ebe08456293c45967169fcc4ba6208c3df08acaf146ce37ef8a7",
+      "bytes": 432
+    },
+    {
+      "path": "pack-preview.png",
+      "sha256": "dd8ffefc28fedf228d483dc126cdfc691a7d9044741b28dde636b67e118c34cc",
+      "bytes": 195316,
+      "width": 1600,
+      "height": 1800,
+      "mode": "RGB"
+    },
+    {
+      "path": "pack-preview.svg",
+      "sha256": "15a06de9fafaf9aa4d7c6895dd53797a06228d0bfb54f61e3b97b62b19a64140",
+      "bytes": 387873
+    },
+    {
+      "path": "product/hero.png",
+      "sha256": "0ef09de94eb586efbdca741fa541237786feb66fa786dff4eb19d58dcbe2eea5",
+      "bytes": 72080,
+      "width": 1440,
+      "height": 900,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/hero.svg",
+      "sha256": "43d3472722115d510ea4c885bd3cf8eb4c9df18d534d1cc4322010047fb7871c",
+      "bytes": 57205
+    },
+    {
+      "path": "product/mark.svg",
+      "sha256": "fb70032e6831ebe08456293c45967169fcc4ba6208c3df08acaf146ce37ef8a7",
+      "bytes": 432
+    },
+    {
+      "path": "product/og.png",
+      "sha256": "7be6a242fcc70f57d1d3e27961b7b1ced1b931c9b38e518eb437827855372db0",
+      "bytes": 60072,
+      "width": 1200,
+      "height": 630,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/og.svg",
+      "sha256": "ca7ec84dbe6e77f0c9a6e3c99c3117b8db65285cd825a0f3095ffafbe4407239",
+      "bytes": 59107
+    },
+    {
+      "path": "social/avatar.png",
+      "sha256": "065d711ae1dcfe94bc48027cd57d2bd1c924239ff9f00ed0301b1386127a226c",
+      "bytes": 11260,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner.png",
+      "sha256": "a7e5b184ff757916b6d1450ea7372da61749bd20714853387dad4946fdab5f8d",
+      "bytes": 64121,
+      "width": 1500,
+      "height": 500,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner.svg",
+      "sha256": "72be2746161ac30eb67e83fe32d21058c53503bdda3031ff90500a5a6aa4ddbc",
+      "bytes": 64941
+    },
+    {
+      "path": "social/square.png",
+      "sha256": "93c5b7ea91bdabf181d787effa80f45357861530dc185dbe506683433cce642a",
+      "bytes": 70177,
+      "width": 1080,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/square.svg",
+      "sha256": "8ea13024472bb9f28741aef5cfc4b6935b4784f5d2d29a738c617b05c60c891e",
+      "bytes": 64682
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "d49489ed03a94113c6b043a35f9ee32e293c0b3ae3df05a9d9877890499987f1",
+      "bytes": 369
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "67191437935b688a3fdd491c06900aef2ae1316773ce54199c68fe755392e356",
+      "bytes": 1321
+    }
+  ]
+}
