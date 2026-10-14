@@ -160,7 +160,8 @@
     "featured": false,
     "order": 4,
     "coverColor": "#00ffff",
-    "coverPattern": "sigil"
+    "coverPattern": "sigil",
+    "url": "https://os.subcult.tv/discover"
   },
   "undertow": {
     "slug": "undertow",
@@ -286,7 +287,8 @@
     "featured": false,
     "order": 8,
     "coverColor": "#a33c26",
-    "coverPattern": "grid"
+    "coverPattern": "grid",
+    "url": "https://left-field.subcult.tv"
   },
   "subsets": {
     "slug": "subsets",
@@ -417,9 +419,9 @@
   "arkhiv": {
     "slug": "arkhiv",
     "name": "Arkhiv",
-    "description": "A zine archive: original files preserved, a catalogue with a reader and downloads.",
-    "longDescription": "Arkhiv acquires explicitly selected document files, preserves their original bytes and serves a catalogue with local PDF reading and downloads. The first public collection is the Anarchist Zine Archive at arkhiv.subcult.tv, with 699 documents. Rights are unknown for most of them, so nothing is offered under a reuse license.",
-    "whyItExists": "Zines were made to be copied and handed on. An archive should keep the original and say what it knows about it.",
+    "description": "An archive across print, audio and video, with source context beside each item.",
+    "longDescription": "Arkhiv is an archive platform for print, audio and video. Browse collections, read documents and play recordings through independently owned interfaces. Source metadata, file variants and delivery policies stay with each item. Access to a recording or document does not imply a reuse license.",
+    "whyItExists": "An archive should keep a work with the context needed to understand where it came from.",
     "status": "active",
     "type": [
       "software",
@@ -433,12 +435,14 @@
     ],
     "topics": [
       "archives",
-      "zines",
-      "preservation"
+      "print",
+      "audio",
+      "video",
+      "provenance"
     ],
     "url": "https://arkhiv.subcult.tv",
     "repoUrl": "https://git.subcult.tv/subculture-collective/arkhiv",
-    "lastUpdated": "2026-10-12T00:00:00Z",
+    "lastUpdated": "2026-10-14T00:00:00Z",
     "screenshot": "/screenshots/arkhiv-home-1440.webp",
     "featured": true,
     "order": 13,

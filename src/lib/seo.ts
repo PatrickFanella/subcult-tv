@@ -70,7 +70,7 @@ const META_DESCRIPTIONS: Record<string, string> = {
   backline:
     'A Discord bot and dashboard for running a community: onboarding, moderation with a case history, private tickets and feeds. In a private pilot; not open yet.',
   arkhiv:
-    'A zine archive that keeps the original files and serves a catalogue with a reader and downloads. The Anarchist Zine Archive is the first public collection.',
+    'Browse print, audio and video collections, read documents and play recordings. Arkhiv keeps source context, file variants and delivery policies visible.',
   overlaid:
     'OBS overlays, Twitch events, a chat bot, scene controls and a health page for one person running a stream. Runs beside OBS on your machine. In development.',
   pirs: 'An experimental fork of the Bluesky personal data server with plugin hook points: a draft spec, a status endpoint and a smoke test. No plugin runs yet.',
@@ -106,7 +106,7 @@ const TITLE_PHRASES: Record<string, string> = {
   tadooer: 'A private planner for one owner',
   'chatty-cat': 'Six Twitch channels, one scrollback',
   backline: 'A Discord bot for running a community',
-  arkhiv: 'A zine archive with the originals kept',
+  arkhiv: 'Print, audio and video with their source context',
   overlaid: 'An operator desk for live streams',
   pirs: 'An experimental AT Protocol server',
   'tmux-popups': 'Popups for tmux from one table',

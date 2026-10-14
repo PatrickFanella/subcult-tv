@@ -157,11 +157,11 @@ const selections = [
   {
     slug: 'arkhiv',
     group: 'apps',
-    category: 'Zine archive',
-    headline: 'The original file, and what we know about it.',
+    category: 'Print, audio and video archive',
+    headline: 'An archive across formats.',
     summary:
-      'Arkhiv keeps selected zines as the bytes they arrived in and serves a catalogue you can read in the browser or download. The first public collection is the Anarchist Zine Archive: 699 documents, most with unknown rights, so the archive offers no reuse license and says so.',
-    highlights: ['699 documents', 'Original bytes', 'Reader and downloads', 'Rights stated'],
+      'Browse collections, read documents and play recordings. Arkhiv keeps source metadata and file variants beside each item, with delivery policies and rights stated rather than assumed.',
+    highlights: ['Print', 'Audio', 'Video', 'Source context'],
     liveLabel: 'Browse the archive',
   },
   {
