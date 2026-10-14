@@ -305,7 +305,7 @@ describe('smoke: app shell', () => {
       'href',
       'https://left-field.subcult.tv',
     );
-    expect(screen.getByRole('link', { name: 'Discuss using it →' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Open Left Field →' })).toHaveAttribute(
       'href',
       '/contact?product=left-field',
     );
