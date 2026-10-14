@@ -106,7 +106,7 @@ const TITLE_PHRASES: Record<string, string> = {
   tadooer: 'A private planner for one owner',
   'chatty-cat': 'Six Twitch channels, one scrollback',
   backline: 'A Discord bot for running a community',
-  arkhiv: 'Print, audio and video with their source context',
+  arkhiv: 'Print, audio and video archives',
   overlaid: 'An operator desk for live streams',
   pirs: 'An experimental AT Protocol server',
   'tmux-popups': 'Popups for tmux from one table',

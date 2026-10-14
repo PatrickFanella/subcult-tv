@@ -298,12 +298,12 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('presents Left Field with approved artwork, source links, and research limits', async () => {
+  it('presents Left Field with approved artwork, public research links, and research limits', async () => {
     renderApp('/products/left-field');
     await screen.findByRole('heading', { name: 'Left Field', level: 1 });
-    expect(screen.getByRole('link', { name: 'Explore the code ↗' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Open Left Field ↗' })).toHaveAttribute(
       'href',
-      'https://git.subcult.tv/subculture-collective/left-field',
+      'https://left-field.subcult.tv',
     );
     expect(screen.getByRole('link', { name: 'Discuss using it →' })).toHaveAttribute(
       'href',
