@@ -101,11 +101,11 @@ No claim about pricing, API tiers, retention or engagement.
 
 ### Arkhiv
 
-Source: `subculture-collective/arkhiv` (README; the local alias `arkhiv-politik`) and `arkhiv-riot-grrrl`.
+Source: `subculture-collective/arkhiv` ROADMAP, multimedia design and current public profile; live catalogue rechecked on 2026-10-14.
 
-- C-ARKHIV-01: acquires explicitly selected document files, preserves original bytes, and serves a catalogue with local PDF reading and downloads; editorial approve/revoke before publication.
-- C-ARKHIV-02: the Anarchist Zine Archive is live at `arkhiv.subcult.tv` with 699 documents and 700 PDF variants "with unknown rights … and no asserted reuse license". The live home page showed a larger item count on October 12; copy uses the README figure until the catalogue is rechecked.
-- C-ARKHIV-03: expansion titles are "provisional catalog labels"; downloaded copies cannot be recalled by revocation. The riot grrrl archive is private with no public ingress. Code is GPL-3.0-only; the license does not cover documents.
+- C-ARKHIV-01: the shared platform covers print, audio and video, exposes a versioned HTTP API, and supports independently owned frontends. Source metadata, variants and editorial decisions remain distinct.
+- C-ARKHIV-02: `arkhiv.subcult.tv` now serves the mixed catalogue. The October 14 anonymous browser showed print material, Bill Nye and Democracy Now! collections. Counts are time-sensitive and are omitted from marketing copy. The older 699-document zine description refers to the print deployment, not the current mixed home.
+- C-ARKHIV-03: Democracy Now! remains source-streaming only. Local preservation is separately reviewed and bounded. Access does not grant a reuse license; GPL-3.0 covers platform code, not collection media.
 
 ### Overlaid
 

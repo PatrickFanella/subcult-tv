@@ -826,63 +826,63 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     closing: 'Switch on the modules your server needs. The rest stay off.',
   },
   arkhiv: {
-    audience:
-      'For readers first. Then for whoever keeps a collection and wants the originals kept with it.',
+    audience: 'For readers, listeners, viewers and the people who keep their collections.',
     introduction:
-      'The file stays as it arrived. The catalogue says what is known about it, and what is not.',
+      'Browse collections, read documents and play recordings. Each item keeps its source context.',
     features: [
       {
-        title: 'Original bytes, preserved',
+        title: 'Print, audio and video',
         description:
-          'Every document is acquired as a selected file and stored unchanged. The catalogue serves the file you can read, and the file as it arrived.',
+          'A shared catalogue brings different media together. Each item keeps its file variants and the controls appropriate to its format.',
       },
       {
-        title: 'A catalogue with a reader',
+        title: 'Source context beside the work',
         description:
-          'Browse by collection, medium and search, read the PDF in the browser, or download it. Text and covers are extracted for search and listing.',
+          'Source metadata and editorial corrections remain distinct. Original dates, partial dates and unknown fields stay visible.',
       },
       {
-        title: 'Review before publication',
+        title: 'Delivery policies, kept explicit',
         description:
-          'Nothing is public until an editor approves it, and approval can be revoked. Copies someone already downloaded cannot be recalled, and the archive says so.',
+          'Some reviewed files are preserved locally; others play directly from their source. Democracy Now! remains source-streaming only.',
       },
     ],
-    stepsLabel: 'THE FIRST COLLECTION',
-    stepsHeading: 'The Anarchist Zine Archive',
+    stepsLabel: 'THE PUBLIC CATALOGUE',
+    stepsHeading: 'Collections across formats',
     steps: [
       {
-        title: '699 documents',
+        title: 'Browse by collection and medium',
         description:
-          'The first public collection, at arkhiv.subcult.tv, is drawn from the Internet Archive in bounded, resumable runs.',
+          'The public catalogue includes print material, Bill Nye episodes and Democracy Now! recordings. Search coverage is described rather than assumed.',
+      },
+      {
+        title: 'Read or play the selected item',
+        description:
+          'Open a document or recording through its own viewer. File variants and source identity remain attached to the item.',
       },
       {
         title: 'Rights stated, not assumed',
         description:
-          'Most of these zines have unknown rights. They are available for reading and download with no asserted reuse license.',
-      },
-      {
-        title: 'Provisional titles',
-        description:
-          'Many titles are catalogue labels rather than researched bibliographic titles. Corrections are welcome.',
+          'Reading, playback or download access does not grant a reuse license. Consult the item’s source and rights context.',
       },
     ],
     faqs: [
       {
         question: 'Can I run an archive of my own?',
         answer:
-          'Yes. Arkhiv is a Go service with a React front end and PostgreSQL, run from Docker Compose. A second archive, for riot grrrl zines, runs privately on the same code.',
+          'Yes. Arkhiv provides a Go engine and versioned HTTP API. Its reference React interface is optional; each deployment can own its frontend.',
       },
       {
-        question: 'Can I submit a zine?',
+        question: 'Does Arkhiv download every recording?',
         answer:
-          'Write to info@subcult.tv. Acquisition is explicit and reviewed; there is no public upload form.',
+          'No. Delivery policy belongs to each collection. Democracy Now! streams from its source, and local preservation requires a separately reviewed collection and storage budget.',
       },
       {
         question: 'What license is the code under?',
-        answer: 'GPL-3.0. That covers the software, not the documents it stores.',
+        answer:
+          'GPL-3.0 covers the platform software, not the documents or recordings in its collections.',
       },
     ],
-    closing: 'Made to be copied. Kept as it was.',
+    closing: 'Keep the work, and where it came from.',
   },
   overlaid: {
     audience:
