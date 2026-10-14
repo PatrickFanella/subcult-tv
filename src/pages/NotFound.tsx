@@ -1,7 +1,9 @@
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
+import { useLocation } from 'react-router-dom';
 
 export default function NotFound() {
+  const { pathname } = useLocation();
   return (
     <>
       <SEOHead path="/404" notFound />
@@ -14,7 +16,7 @@ export default function NotFound() {
           start again from the homepage.
         </p>
         <div className="font-mono text-sm text-bone mb-8 space-y-1">
-          <p>&gt; attempted route: {window.location.pathname}</p>
+          <p>&gt; attempted route: {pathname}</p>
           <p>&gt; status: NOT_FOUND</p>
           <p>&gt; suggestion: return home</p>
         </div>

@@ -169,6 +169,7 @@
     "longDescription": "Undertow combines audio-reactive visualizers, artwork, text, timed lyrics, and video backgrounds in a layered editor. Create landscape, portrait, and square layouts, then export MP4 videos locally in the browser. Accounts are optional and save projects. Cloud rendering is being tested with live billing disabled.",
     "whyItExists": "A finished track still needs video for each platform. Undertow puts the audio, artwork, lyrics and export in one editor that renders on the musician's own machine.",
     "status": "active",
+    "url": "https://undertow.subcult.tv",
     "type": [
       "software",
       "media"

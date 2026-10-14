@@ -10,6 +10,8 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import path from 'path';
 
 export default defineConfig({
+  // Static HTML uses the same page styles before JavaScript loads.
+  build: { cssCodeSplit: false },
   plugins: [
     mdx({
       remarkPlugins: [remarkGfm, remarkFrontmatter],

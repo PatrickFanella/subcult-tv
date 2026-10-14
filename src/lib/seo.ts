@@ -93,16 +93,16 @@ const META_DESCRIPTIONS: Record<string, string> = {
 // Titles allow about 60 characters. These stand in where "name: headline"
 // would run long.
 const TITLE_PHRASES: Record<string, string> = {
-  subsets: 'Skill sets for the work at hand',
+  subsets: 'Local agent skills, grouped for a task',
   clpr: 'Twitch clips by creator, topic and tag',
   patchwork: 'A neighborhood board for mutual aid',
-  hasanara: 'Search what was said on stream',
+  hasanara: 'Search HasanAbi broadcast transcripts',
   'transcript-create': 'Searchable recording archives',
-  'subcult-os': 'A run sheet for small shows',
-  undertow: 'Give the track something to look at',
+  'subcult-os': 'Event run sheets and door check-in',
+  undertow: 'Music visualizer and video editor',
   prichal: 'Your server. We keep it running',
-  kork: 'A free page for every link',
-  'left-field': 'Sourced seat research',
+  kork: 'Free link pages for creators',
+  'left-field': 'Sourced election and seat research',
   tadooer: 'A private planner for one owner',
   'chatty-cat': 'Six Twitch channels, one scrollback',
   backline: 'A Discord bot for running a community',
@@ -251,6 +251,8 @@ function productMeta({ project, headline, summary }: ShowcaseProduct): PageMeta 
   const path = getProductPath(project.slug);
   const description = META_DESCRIPTIONS[project.slug] ?? summary;
   const image = productImage(project.slug);
+  const pageUrl = `${SITE_URL}${path}`;
+  const applicationId = `${pageUrl}#application`;
   return {
     path,
     title: fullTitle(
@@ -262,6 +264,7 @@ function productMeta({ project, headline, summary }: ShowcaseProduct): PageMeta 
     jsonLd: [
       {
         '@type': 'SoftwareApplication',
+        '@id': applicationId,
         name: project.name,
         description,
         url: project.url ?? `${SITE_URL}${path}`,
@@ -272,6 +275,32 @@ function productMeta({ project, headline, summary }: ShowcaseProduct): PageMeta 
         publisher: { '@id': ORGANIZATION['@id'] },
       },
       ORGANIZATION,
+      {
+        '@type': 'WebPage',
+        '@id': `${pageUrl}#webpage`,
+        url: pageUrl,
+        name: project.name,
+        description,
+        mainEntity: { '@id': applicationId },
+        breadcrumb: { '@id': `${pageUrl}#breadcrumbs` },
+        isPartOf: { '@id': `${SITE_URL}/#website` },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${pageUrl}#breadcrumbs`,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: SITE_NAME, item: `${SITE_URL}/` },
+          { '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE_URL}/products` },
+          { '@type': 'ListItem', position: 3, name: project.name, item: pageUrl },
+        ],
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${SITE_URL}/#website`,
+        name: SITE_NAME,
+        url: SITE_URL,
+        publisher: { '@id': ORGANIZATION['@id'] },
+      },
     ],
   };
 }

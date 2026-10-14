@@ -6,7 +6,7 @@
   "description": "subcult.tv \u2014 product showcase for SUBCULT",
   "scripts": {
     "dev": "vite --port 5175",
-    "build": "tsc -b && npm run generate-sitemap && vite build && npm run prerender-meta",
+    "build": "tsc -b && npm run generate-sitemap && vite build && vite build --ssr src/entry-prerender.tsx --outDir dist-ssr && npm run prerender-meta",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,md,mdx}\"",
