@@ -16,12 +16,14 @@
 
 import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
+import { pathToFileURL } from 'url';
 import {
   absoluteUrl,
   getAllPageMeta,
   getPageMeta,
   jsonLdDocument,
   metaTags,
+  NOT_FOUND_META,
   type PageMeta,
 } from '@/lib/seo';
 
@@ -69,10 +71,20 @@ if (process.argv.includes('--sync-index')) {
 } else {
   const dist = join(root, 'dist');
   const shell = readFileSync(join(dist, 'index.html'), 'utf8');
-  for (const meta of getAllPageMeta()) {
+  const { render } = await import(pathToFileURL(join(root, 'dist-ssr/entry-prerender.js')).href);
+  for (const meta of [...getAllPageMeta(), NOT_FOUND_META]) {
     const dir = meta.path === '/' ? dist : join(dist, meta.path);
     mkdirSync(dir, { recursive: true });
-    writeFileSync(join(dir, 'index.html'), withBlock(shell, meta));
+    const body = render(meta.path) as string;
+    if (!body.includes('<h1') || !body.includes('id="main-content"')) {
+      throw new Error(`Missing public content for ${meta.path}`);
+    }
+    const html = withBlock(shell, meta).replace(
+      '<div id="root"></div>',
+      () => `<div id="root">${body}</div>`,
+    );
+    if (!html.includes(body)) throw new Error('index.html is missing its root element');
+    writeFileSync(join(dir, 'index.html'), html);
     console.log(`✓ ${meta.path}`);
   }
 }

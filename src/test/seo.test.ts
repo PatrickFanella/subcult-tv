@@ -34,6 +34,10 @@ describe('page metadata', () => {
       expect(meta.image).toMatch(/^\/og\/.+\.jpg$/);
       const ld = JSON.parse(jsonLdDocument(meta)!);
       expect(ld['@graph'][0]['@type']).toBe('SoftwareApplication');
+      const breadcrumbs = ld['@graph'].find(
+        (entry: Record<string, unknown>) => entry['@type'] === 'BreadcrumbList',
+      );
+      expect(breadcrumbs.itemListElement.at(-1).item).toBe(`https://subcult.tv${meta.path}`);
       const tags = metaTags(meta);
       expect(tags.find((tag) => tag.key === 'og:image:type')?.content).toBe('image/jpeg');
     }

@@ -236,7 +236,7 @@ describe('smoke: app shell', () => {
   it('sets product metadata and structured data on a landing page', async () => {
     renderApp('/products/hasanara');
     await screen.findByRole('heading', { name: 'HasanAra', level: 1 });
-    expect(document.title).toBe('HasanAra: Search what was said on stream | SUBCULT');
+    expect(document.title).toBe('HasanAra: Search HasanAbi broadcast transcripts | SUBCULT');
     expect(document.querySelector('meta[property="og:image"]')).toHaveAttribute(
       'content',
       'https://subcult.tv/og/hasanara.jpg',
