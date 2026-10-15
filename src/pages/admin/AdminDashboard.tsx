@@ -100,12 +100,14 @@ export default function AdminDashboard() {
     (d) => !isExpired(d, now) && !hiddenReason(d, latest, superseded, now),
   );
   const submitted = new Set(
-    (reviews ?? []).filter((r) => r.status !== 'draft').map((r) => r.draft_id),
+    [...(reviews ?? []).filter((r) => r.status !== 'draft'), ...(buffer?.receipts ?? [])].map(
+      (r) => r.draft_id,
+    ),
   );
   const instagramWaiting = current.filter(
     (d) => draftPlatform(d) === 'instagram' && !submitted.has(d.id),
   ).length;
-  const xWaiting = current.filter((d) => draftPlatform(d) === 'x').length;
+  const xWaiting = current.filter((d) => draftPlatform(d) === 'x' && !submitted.has(d.id)).length;
   const uncertain = [
     ...(reviews ?? []),
     ...(publications?.drafts ?? []),
@@ -192,11 +194,11 @@ export default function AdminDashboard() {
           <h2>Needs your attention</h2>
           <div className="dashboard-action-list">
             <Link to="/admin/posts">
-              <strong>{posting ? instagramWaiting : '—'}</strong>
+              <strong>{posting && reviews ? instagramWaiting : '—'}</strong>
               <span>Instagram drafts to review</span>
             </Link>
             <Link to="/admin/posts?tab=x">
-              <strong>{posting ? xWaiting : '—'}</strong>
+              <strong>{posting && reviews && buffer ? xWaiting : '—'}</strong>
               <span>X drafts to review</span>
             </Link>
             <Link to="/admin/posts/articles">

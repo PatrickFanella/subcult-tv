@@ -1,0 +1,9 @@
+[Unit]
+Description=Prepare tweets requested from the X review page
+
+[Service]
+Type=oneshot
+UMask=0077
+Nice=10
+TimeoutStartSec=100min
+ExecStart=/usr/bin/python3 /home/onnwee/.local/share/posting-dashboard/changemaker/studio/automation/social-posting/tweets.py --source-root /home/onnwee/Work/Subcult/subcult-tv/studio --state /home/onnwee/.local/state/social-posting --ingest-env /home/onnwee/.config/posting-dashboard/preparation.env

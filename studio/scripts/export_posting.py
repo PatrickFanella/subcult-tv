@@ -145,7 +145,7 @@ def snapshot(state=None, source_root=None, media_files=None):
     receipts = {}
     for path in candidates:
         receipt = read(path, 64_000)
-        if not isinstance(receipt, dict) or receipt.get('mode') not in ('plan','radar','review','changemaker'):
+        if not isinstance(receipt, dict) or receipt.get('mode') not in ('plan','radar','review','changemaker','ondemand'):
             continue
         if not path.resolve().is_relative_to(state):
             continue

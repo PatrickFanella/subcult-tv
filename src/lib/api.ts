@@ -565,6 +565,24 @@ export interface PostingDashboard {
 }
 export const getPostingDashboard = () => apiFetch<PostingDashboard>('/api/v1/admin/studio/posting');
 
+export interface TweetRequest {
+  id: number;
+  account: string;
+  note: string;
+  status: 'pending' | 'running' | 'done' | 'failed';
+  attempts: number;
+  error: string;
+  result_draft_id: string;
+  requested_at: string;
+  finished_at: string | null;
+}
+export const getTweetRequests = () => apiFetch<TweetRequest[]>('/api/v1/admin/studio/tweets');
+export const requestTweet = (account: string, note: string) =>
+  apiFetch<TweetRequest>('/api/v1/admin/studio/tweets', {
+    method: 'POST',
+    body: JSON.stringify({ account, note }),
+  });
+
 // Prepared review JPEGs are private and immutable by hash; keep a small
 // per-session cache so rows and the review sheet share one download.
 const preparedCache = new Map<string, Promise<Blob>>();

@@ -65,9 +65,9 @@ const snapshot = (drafts: PostingDraft[]) => ({
 
 afterEach(cleanup);
 beforeEach(() => {
+  vi.resetAllMocks();
   vi.mocked(getBufferDelivery).mockResolvedValue({ configured: false, channels: [], receipts: [] });
   vi.mocked(getBufferHistory).mockResolvedValue({ configured: false, posts: [] });
-  vi.resetAllMocks();
   vi.mocked(getDraftDecisions).mockResolvedValue([]);
 });
 
@@ -212,12 +212,36 @@ describe('platform boundaries', () => {
         draft({ id: 'ig-sent' }),
         draft({ id: 'ig-old', expires_at: '2020-01-01T00:00:00Z' }),
         draft({ id: 'x1', mode: 'plan', expires_at: '' }),
+        draft({ id: 'x-scheduled', mode: 'plan' }),
+        draft({ id: 'x-submitting', mode: 'plan' }),
+        draft({ id: 'x-uncertain', mode: 'plan' }),
         draft({ id: 'x-old', mode: 'plan', expires_at: '', due_at: '2020-01-01T00:00:00Z' }),
       ]),
     );
+    vi.mocked(getBufferDelivery).mockResolvedValue({
+      configured: true,
+      channels: [],
+      receipts: (['scheduled', 'submitting', 'uncertain'] as const).map((status) => ({
+        draft_id: `x-${status}`,
+        status,
+        version: 1,
+        channel_id: 'channel',
+        caption: 'Approved text',
+        due_at: future(),
+        post_id: '',
+      })),
+    });
     render(<AdminDashboard />, { wrapper: MemoryRouter });
     const instagram = await screen.findByText('Instagram drafts to review');
     expect(instagram.previousElementSibling).toHaveTextContent('2');
     expect(screen.getByText('X drafts to review').previousElementSibling).toHaveTextContent('1');
+  });
+  it('does not claim an X review count when scheduling receipts cannot be read', async () => {
+    vi.mocked(getPostingDashboard).mockResolvedValue(snapshot([draft({ mode: 'plan' })]));
+    vi.mocked(getReviewDrafts).mockResolvedValue([]);
+    vi.mocked(getBufferDelivery).mockRejectedValue(new Error('Scheduling receipts unavailable'));
+    render(<AdminDashboard />, { wrapper: MemoryRouter });
+    expect(await screen.findByRole('alert')).toHaveTextContent('Scheduling receipts unavailable');
+    expect(screen.getByText('X drafts to review').previousElementSibling).toHaveTextContent('—');
   });
 });

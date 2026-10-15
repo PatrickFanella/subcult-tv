@@ -20,6 +20,7 @@ import {
   type PostingDraft,
   getDraftDecisions,
   getRerolls,
+  getTweetRequests,
   requestReroll,
   editScheduledDraft,
 } from '@/lib/api';
@@ -47,6 +48,8 @@ vi.mock('@/lib/api', () => ({
   getBufferDelivery: vi.fn(),
   getBufferHistory: vi.fn(),
   getRerolls: vi.fn(),
+  getTweetRequests: vi.fn(),
+  requestTweet: vi.fn(),
   requestReroll: vi.fn(),
   editScheduledDraft: vi.fn(),
 }));
@@ -171,6 +174,7 @@ beforeEach(() => {
   vi.mocked(getReviewDrafts).mockResolvedValue([]);
   vi.mocked(getDraftDecisions).mockResolvedValue([]);
   vi.mocked(getRerolls).mockResolvedValue([]);
+  vi.mocked(getTweetRequests).mockResolvedValue([]);
   vi.mocked(getSocialDelivery).mockResolvedValue(delivery);
   vi.mocked(getPreparedMedia).mockResolvedValue(new Blob(['jpeg'], { type: 'image/jpeg' }));
   vi.mocked(saveReviewDraft).mockResolvedValue({ version: 1 });

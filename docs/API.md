@@ -31,6 +31,7 @@ Admin requests require `Authorization: Bearer <token>`.
 | GET | `/api/v1/admin/studio` | Private asset catalog |
 | GET | `/api/v1/admin/studio/jobs` | Bounded historical runner status |
 | GET | `/api/v1/admin/studio/posting` | Preparation queue and receipt snapshot |
+| GET / POST | `/api/v1/admin/studio/tweets` | List tweet requests / request one account's unapproved draft with `account` and optional `note` |
 | GET | `/api/v1/admin/studio/assets/{id}` | Allowlisted private asset |
 | GET | `/api/v1/admin/studio/references` | Paginated reference search |
 | GET | `/api/v1/admin/studio/references/facets` | Reference filters |
@@ -45,6 +46,8 @@ Admin requests require `Authorization: Bearer <token>`.
 | GET | `/api/v1/newsletter/subscribers` | List subscribers |
 
 The Studio posting snapshot observes preparation data and keeps every prepared draft unapproved. `GET /api/v1/admin/studio/delivery` observes live PostyBirb accounts and posts for the configured account IDs. Admin-only `POST /api/v1/admin/studio/delivery` accepts multipart `request_id`, `account_id`, `caption`, `due_at` (RFC3339), `approved=true` and a JPEG `media` file. It requires 24 hours of lead time and records approval before submitting a schedule. Request IDs prevent repeat dispatch, including after uncertain responses. PostyBirb receives the approved JPEG privately; the legacy `GET /api/v1/posting-media/{random-id}.jpg` endpoint remains for retained approvals. The private Studio library retains its authentication and catalog allowlist. Site article CRUD remains separate. See [Studio configuration and recovery](STUDIO.md).
+
+The preparation worker uses the server-only preparation key, separately from admin sessions. `POST /api/v1/posting-preparation/tweets/claim` leases one request. `POST /api/v1/posting-preparation/tweets/{id}` records `status` (`done` or `failed`), the claimed `attempts` number, and either `result_draft_id` or `error`. Completion requires the generated draft to be present in the private snapshot for the requested X account. These endpoints do not approve or schedule a post.
 
 ## Configuration
 
