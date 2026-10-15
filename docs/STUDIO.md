@@ -60,6 +60,16 @@ Automatic approval is not enabled. A future automatic mode requires a separately
 
 The X/Bluesky preparation units run from `studio/automation/social-posting/` in the Kvant checkout; the Instagram and website/Patreon jobs run from release bundles copied from it. Source changes do not change schedules, locks, SQLite state or provider credentials. The preparation runner cannot dispatch provider posts; dashboard scheduling requires human approval. Website Development imports publish immediately when the API owner enables `DEVELOPMENT_AUTO_PUBLISH`.
 
+## Requested tweets
+
+The X review tab includes **Generate a tweet**. Choose one preparation account and optionally supply a topic or direction. The request creates one text-only draft using the account voice, source documents, claims register and recent owner feedback. An empty topic lets the writer choose from those sources. The draft appears in the existing X review queue, where editing and Buffer approval remain separate actions.
+
+Migration `018_tweet_requests` stores requests and progress. Admin sessions create and list requests at `/api/v1/admin/studio/tweets`. The preparation key leases one request at `/api/v1/posting-preparation/tweets/claim` and finishes it at `/api/v1/posting-preparation/tweets/{id}`. One request per account may be pending or running. Claims expire after two hours and stop after three attempts; a stale attempt cannot finish a newer claim. A retry reuses its completed local run. Completion requires a synced X draft for the requested account.
+
+The worker is `studio/automation/social-posting/tweets.py`. It shares `runner.lock` with weekly and timely preparation, writes a separate `ondemand` run, and starts the existing dashboard sync before reporting completion. A sync failure leaves the claim open for retry. The UI polls active requests every ten seconds. The prepared time is a suggestion 48 hours ahead, with a seven-day review window; it does not schedule a post. Model output and its source references still need human review.
+
+Activation requires the website/API release with migration 018, an installed worker bundle containing `tweets.py` and `craft/tweet.*`, and an installed snapshot exporter that accepts `ondemand` receipts. Inspect the effective `posting-dashboard-sync.service` command and its selected exporter before switching it. The maintained `tweet-preparation.service` and `.timer` live under `studio/automation/postiz-dashboard/`; the timer checks every two minutes. Install and enable that pair only after the worker and exporter are updated. Source changes alone do not activate them. Preserve prior bundles, the existing state directory and all request records. To stop generation, disable only `tweet-preparation.timer`; roll back the website and bundle as needed while retaining migration 018 and its records.
+
 ## Rollback
 
 Keep the previous application revision and private bundle. Where bundle/database formats differ, roll back the application before removing new reference tables. Changing a bundle does not delete indexed database records. Preserve assets still referenced by retained records. Reverting this source integration does not require restoring preparation state, since it has not switched installed consumers.

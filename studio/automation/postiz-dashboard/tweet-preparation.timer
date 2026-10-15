@@ -1,0 +1,10 @@
+[Unit]
+Description=Check for requested tweets every two minutes
+
+[Timer]
+OnCalendar=*:0/2
+Persistent=false
+Unit=tweet-preparation.service
+
+[Install]
+WantedBy=timers.target

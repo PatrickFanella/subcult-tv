@@ -48,7 +48,13 @@ export function platformLabel(platform: PostingPlatform) {
 }
 
 export function laneLabel(mode: string) {
-  return mode === 'changemaker' ? 'Changemaker' : mode === 'radar' ? 'Timely' : 'Weekly';
+  return mode === 'changemaker'
+    ? 'Changemaker'
+    : mode === 'radar'
+      ? 'Timely'
+      : mode === 'ondemand'
+        ? 'On demand'
+        : 'Weekly';
 }
 
 /** What a re-roll regenerates, for messages: "caption", "image" or "caption and image". */
@@ -290,6 +296,7 @@ export function metricSummary(post: Pick<BufferHistoryPost, 'metrics'>) {
 }
 
 const LANE_NAMES: Record<string, string> = {
+  ondemand: 'Requested tweet',
   plan: 'Weekly X plan',
   radar: 'Timely X check',
   review: 'Weekly delivery review',

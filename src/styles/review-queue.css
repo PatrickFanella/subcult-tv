@@ -137,6 +137,43 @@
 }
 
 /* Compact rows that expand into the review sheet. */
+.tweet-generator {
+  margin-block: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--color-fog);
+  background: var(--color-soot);
+}
+.tweet-generator h2 {
+  font-size: 1.5rem;
+}
+.tweet-generator-form {
+  display: grid;
+  gap: 0.75rem;
+  margin-block: 1rem;
+}
+.tweet-generator-form label {
+  display: grid;
+  gap: 0.35rem;
+}
+.tweet-generator-form textarea {
+  width: 100%;
+  min-height: 5rem;
+  padding: 0.6rem;
+  background: var(--color-void);
+  color: var(--color-chalk);
+  border: 1px solid var(--color-fog);
+}
+.tweet-generator-form button {
+  justify-self: start;
+}
+.tweet-request-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.tweet-request-list button {
+  margin-left: 0.75rem;
+}
 .review-list {
   display: grid;
   gap: 0.5rem;

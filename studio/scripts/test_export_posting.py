@@ -6,6 +6,18 @@ from export_posting import snapshot
 
 
 class PostingExportTests(unittest.TestCase):
+    def test_requested_tweets_export_without_replacing_the_weekly_plan(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            for mode in ('plan', 'ondemand'):
+                run = state/'runs'/mode
+                run.mkdir(parents=True)
+                (run/'receipt.json').write_text(json.dumps({'mode':mode,'status':'success','run_id':mode,'week':'2026-W41','draft_count':1}))
+                (run/'result.json').write_text(json.dumps({'drafts':[{'account':'clpr','text':mode,'platform':'x'}]}))
+            data = snapshot(state)
+            self.assertEqual({d['text'] for d in data['drafts']}, {'plan','ondemand'})
+            self.assertTrue(all(d['approval']=='unapproved' for d in data['drafts']))
+
     def test_no_state_is_explicit(self):
         data = snapshot()
         self.assertFalse(data['connected'])

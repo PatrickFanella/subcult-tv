@@ -109,6 +109,8 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 		api.Post("/posting-preparation", h.IngestPublications)
 		api.Post("/posting-preparation/rerolls/claim", h.ClaimRerolls)
 		api.Post("/posting-preparation/rerolls/{id}", h.FinishReroll)
+		api.Post("/posting-preparation/tweets/claim", h.ClaimTweetRequests)
+		api.Post("/posting-preparation/tweets/{id}", h.FinishTweetRequest)
 		api.Get("/posting-preparation/feedback", h.PreparationFeedback)
 		api.Get("/posting-media/{id}", h.PostingMedia)
 
@@ -136,6 +138,8 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 			admin.Put("/admin/studio/review/{id}/schedule", h.EditScheduledDraft)
 			admin.Post("/admin/studio/review/{id}/reroll", h.RequestReroll)
 			admin.Get("/admin/studio/rerolls", h.Rerolls)
+			admin.Get("/admin/studio/tweets", h.TweetRequests)
+			admin.Post("/admin/studio/tweets", h.RequestTweet)
 			admin.Get("/admin/studio/decisions", h.DraftDecisions)
 			admin.Get("/admin/studio/delivery", h.SocialDelivery)
 			admin.Get("/admin/studio/bluesky", h.BlueskyDelivery)

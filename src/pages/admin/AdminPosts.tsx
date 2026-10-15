@@ -36,6 +36,7 @@ import InstagramReview from './InstagramReview';
 import DecisionControls from './DecisionControls';
 import RerollControls from './RerollControls';
 import ReviewRow from './ReviewRow';
+import TweetGenerator from './TweetGenerator';
 import { useReveal } from './useReveal';
 import '@/styles/review-queue.css';
 
@@ -358,6 +359,25 @@ export default function AdminPosts() {
               </button>
             ))}
           </div>
+          {tab === 'x' && (
+            <TweetGenerator
+              accounts={data.accounts.map((a) => a.account)}
+              reviewableDrafts={data.drafts
+                .filter(
+                  (d) => draftPlatform(d) === 'x' && !submitted(d.id) && !expired(d) && !hidden(d),
+                )
+                .map((d) => d.id)}
+              onPrepared={() => setRevision((v) => v + 1)}
+              onReady={(id) => {
+                setAccount('all');
+                setLane('all');
+                setQuery('');
+                setIncludeExpired(false);
+                setOpen(id);
+                setRevision((v) => v + 1);
+              }}
+            />
+          )}
           <ul className="review-list" aria-label={`${platformLabel(tab)} drafts`}>
             {drafts.map((d) => {
               const edit = editFor(d.id);
@@ -570,6 +590,7 @@ export default function AdminPosts() {
                   <option value="all">All lanes</option>
                   <option value="plan">Weekly</option>
                   <option value="radar">Timely</option>
+                  <option value="ondemand">On demand</option>
                 </select>
               </label>
             )}
