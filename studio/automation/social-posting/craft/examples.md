@@ -1,6 +1,6 @@
 # Reference captions
 
-These show the register we want. Each is built only from facts in a real merged change, listed under it. They teach voice and structure. Never reuse their facts, numbers or wording in a new post: a new post uses only its own evidence.
+These show the register we want. Each lists its evidence, from a change or the claims register. They teach voice and structure. Never reuse their facts, numbers or wording in a new post: a new post uses only its own evidence.
 
 ## 1. The promise the app couldn't keep (subcult, Subcult OS)
 
@@ -71,3 +71,17 @@ Before (changelog): "We're working on how Patchwork shows the neighborhood. The 
 After: "Open Patchwork and the first thing you should see is your neighbors, not a card explaining the idea. The home page now leads with nearby places and open requests. It's still a demo, so please don't arrange real help through it yet. Requests show approximate areas; only approved public resources show an address."
 
 What changed: the reader's experience replaced the diff; review words disappeared; the demo warning and location rule stayed, in plain words.
+
+## 7. One address (subcult, Kork)
+
+> Someone asks where to hear your music and when you’re playing next. Give them one address.
+>
+> We built Kork as a free link page where your music player can sit beside your tour dates.
+>
+> Kork is still early, with rough edges. You can build right away; new accounts wait 24 hours before publishing.
+>
+> Start your page at kork.subcult.tv.
+
+Evidence: C-KORK supports free link pages, music embeds, events and tour dates, early status and the 24-hour publishing wait. The owner approved this wording on October 15, 2026, changing only line endings.
+
+Why it works: a familiar request leads directly to a supported use, with the early status and publishing wait kept brief.
