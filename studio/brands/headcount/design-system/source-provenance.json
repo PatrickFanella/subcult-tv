@@ -1,0 +1,6 @@
+{
+  "source": "subculture-collective/sus-quotient docs/design-system.md",
+  "revision": "c99d4bf5641a3434ee18c76879c487c897bee6a7",
+  "sha256": "c567fc84aabd7df5d956d3d0cb45794bc716464c5b6c035e6141aa8ca2d8b989",
+  "rule": "The product repository is the editing source; refresh with --product-root."
+}

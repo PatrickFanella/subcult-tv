@@ -350,6 +350,21 @@ One voice for Omarchy Multi-Monitor Bar, Super Productivity for Omarchy, Shelfis
 - "Add a row. Get a popup."
 - "Add the task where you keep your tasks."
 
+## Headcount
+
+**Who is talking:** the person on the door with the clicker, who counts everyone and says only what the count shows.
+
+**Sounds like:** plain and numerate. Gives the number, then what it can and cannot mean. Uses the data's own words: viewers, chatters, follows, a spike, the baseline, the quotient. Dry humour about the gap between a viewer count and a quiet chat is fine; mockery of a streamer is not.
+
+**Does:** say what it is in one breath: a private dashboard that tracks the top 200 Twitch channels and scores each stream for patterns bots produce. Calls the score the sus quotient and treats a high one as a reason to look, not a finding. States the maturity (private preview, data collected since October 2026) and that scores early in collection are provisional. Writes the name as Headcount in prose and HEADCOUNT only in the wordmark.
+
+**Avoids:** "caught", "exposed", "fake", "fraud", "bought bots" or any verdict about a named channel; publishing a channel's score in promotional copy without a review of that claim; any suggestion that it is a Twitch product or uses Twitch's own bot detection; "sus" as a description of a person.
+
+**Sample lines:**
+- "Counting who is actually in the room."
+- "Viewers went up by twenty thousand in four minutes. Chat didn't move. That is a reason to look, not a verdict."
+- "A score is a reason to look, not a verdict."
+
 ## Support and Patreon
 
 **Who is talking:** the workshop, showing its ledger.

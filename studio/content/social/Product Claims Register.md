@@ -3,7 +3,7 @@ title: Product Claims Register
 type: documentation
 status: active
 created: 2026-09-30
-updated: 2026-10-13
+updated: 2026-10-19
 tags:
 - topic/publishing
 ---
@@ -84,6 +84,16 @@ Source: `subculture-collective/chatty-cat` at the October 11 checkout (README, `
 - C-CHAT-04: every feature-family parity gate in `docs/parity.md` is open. Public copy says "in migration" or "rebuild in progress"; it does not say complete, launched or cut over.
 
 No claim that Chat Thing is a Twitch product, that moderation works on a given channel, or that the public callback and HTTPS routing have passed acceptance.
+
+## Headcount (working name sus quotient) — October 19, 2026
+
+Source: `subculture-collective/sus-quotient` at `c99d4bf` (README, `docs/design-system.md`) and the deployed private dashboard on Kvant, checked October 19, 2026. There is no public address.
+
+- C-HEAD-01: Headcount is a private dashboard by SUBCULT that tracks Twitch channels once they reach the global top 200 and scores each stream for patterns that view-bots, follow-bots and chat-bots produce. The score is the sus quotient, 0 to 100.
+- C-HEAD-02: a high quotient means the data has patterns bots produce; it does not prove a streamer bought bots. Collection began in October 2026, so early scores are provisional and change often.
+- C-HEAD-03: views include a leaderboard, live channels, an engagement map of audience size against chat, per-stream charts of viewers, chatters and follows, and channel and category search.
+
+No claim that a named channel uses bots, no published scores in promotional copy without a reviewed claim, no claim of Twitch affiliation or access to Twitch's own detection, and no public availability until a public route is approved.
 
 ## Products added to subcult.tv — October 12, 2026
 

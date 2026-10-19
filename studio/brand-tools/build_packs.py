@@ -477,6 +477,9 @@ for d in BRANDS:
  if d['slug']=='subsets':
   subprocess.run([sys.executable,str(R.parent/'brands/subsets/build.py')],check=True)
   continue
+ if d['slug']=='headcount':
+  subprocess.run([sys.executable,str(R.parent/'brands/headcount/build.py')],check=True)
+  continue
  if d['slug']=='chatty-cat':
   subprocess.run([sys.executable,str(R.parent/'brands/chatty-cat/build.py')],check=True)
   continue
