@@ -215,6 +215,26 @@
 .product-landing[data-product='chatty-cat'] .landing-wordmark img {
   image-rendering: pixelated;
 }
+.product-landing[data-product='headcount'] {
+  --lp-bg: #121316;
+  --lp-panel: #1b1d22;
+  --lp-text: #ecebe6;
+  --lp-muted: #9c9a92;
+  --lp-line: #2e3138;
+  --lp-accent: #f2b53a;
+  --lp-accent-text: #f2b53a;
+  --lp-on-accent: #121316;
+  --lp-focus: #f2b53a;
+  --lp-radius: 6px;
+  --lp-body: 'Public Sans', sans-serif;
+  --lp-display: 'Barlow Condensed', sans-serif;
+  --lp-mono: 'Headcount Mono', ui-monospace, monospace;
+}
+.product-landing[data-product='headcount'] .landing-wordmark h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #f2b53a;
+}
 .product-landing[data-product='backline'] {
   --lp-bg: #f0ece4;
   --lp-panel: #ffffff;

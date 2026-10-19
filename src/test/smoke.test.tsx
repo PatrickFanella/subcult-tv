@@ -49,7 +49,7 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('showcases the featured products, lists all twenty-three, and connects HasanAra to its shared application', async () => {
+  it('showcases the featured products, lists all twenty-four, and connects HasanAra to its shared application', async () => {
     const user = userEvent.setup();
     renderApp('/');
     const showcase = await screen.findByRole('region', { name: 'The products' });
@@ -68,7 +68,7 @@ describe('smoke: app shell', () => {
     }
     expect(products.queryByRole('heading', { name: 'Rekolekt' })).not.toBeInTheDocument();
     const index = within(screen.getByRole('region', { name: 'Everything we make' }));
-    expect(index.getAllByRole('listitem')).toHaveLength(23);
+    expect(index.getAllByRole('listitem')).toHaveLength(24);
     expect(index.getByRole('link', { name: /Spool/ })).toHaveAttribute('href', '/products/spool');
     expect(index.getByRole('link', { name: /Rekolekt/ })).toHaveAttribute(
       'href',
@@ -137,13 +137,13 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('redirects the old catalog to the grouped twenty-three-product directory', async () => {
+  it('redirects the old catalog to the grouped twenty-four-product directory', async () => {
     renderApp('/projects');
     await screen.findByRole('heading', { name: 'Products', level: 1 });
     const main = within(screen.getByRole('main'));
     const teasers = within(main.getByRole('region', { name: 'In development' }));
     const articles = main.getAllByRole('article');
-    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(23);
+    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(24);
     const plugins = within(main.getByRole('region', { name: 'Desktop and editor plugins' }));
     expect(plugins.getAllByRole('article')).toHaveLength(5);
     expect(plugins.getByRole('link', { name: 'Explore Shelfish' })).toHaveAttribute(
@@ -277,6 +277,7 @@ describe('smoke: app shell', () => {
     ['left-field', 'Left Field'],
     ['subsets', 'Subsets'],
     ['tadooer', 'Tadooer'],
+    ['headcount', 'Headcount'],
   ])('renders the %s landing page with product details and working FAQs', async (slug, name) => {
     const user = userEvent.setup();
     renderApp(`/products/${slug}`);
@@ -363,7 +364,7 @@ describe('smoke: app shell', () => {
     ]) {
       expect(nav.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
     }
-    expect(nav.getByRole('link', { name: 'All 23 →' })).toHaveAttribute('href', '/products');
+    expect(nav.getByRole('link', { name: 'All 24 →' })).toHaveAttribute('href', '/products');
     expect(nav.queryByRole('link', { name: 'Rekolekt' })).not.toBeInTheDocument();
     for (const [name, slug] of [
       ['Rekolekt', 'rekolekt'],
@@ -372,6 +373,7 @@ describe('smoke: app shell', () => {
       ['Left Field', 'left-field'],
       ['Subsets', 'subsets'],
       ['Backline', 'backline'],
+      ['Headcount', 'headcount'],
       ['Overlaid', 'overlaid'],
       ['Pirs', 'pirs'],
       ['tmux-popups', 'tmux-popups'],

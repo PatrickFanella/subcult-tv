@@ -21,6 +21,7 @@ workshop behind them.
 | [Subcult OS](https://subcult.tv/products/subcult-os) | Prepare the crew, reserve free tickets, run the door and close out. | Alpha development |
 | [Prichal](https://subcult.tv/products/prichal) | Account hosting for the open social web. | Private preview; no sign-up |
 | [Left Field](https://left-field.subcult.tv/) | Read seat-level public records, provisional scores and source gaps. | Research site in active development |
+| [Headcount](https://headcount.subcult.tv/) | Check Twitch top-200 streams for patterns that bots produce. | Public and read-only; early scores are provisional |
 
 Dedhed is our private concert-tape pilot. Tadooer is a private planner for one
 owner. Neither has a public sign-up or listening address.

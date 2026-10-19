@@ -67,6 +67,8 @@ const META_DESCRIPTIONS: Record<string, string> = {
     'A private, self-hosted task and calendar planner for one owner. Tasks beside the calendar on one grid, one focus session at a time, your server, no sign-up.',
   'chatty-cat':
     'A self-hosted Twitch chat client that merges up to six channels into one scrollback and keeps your display settings. A rebuild of Chat Thing, in migration.',
+  headcount:
+    'Headcount scores Twitch top-200 streams for patterns that view-bots, follow-bots and chat-bots produce. A high score is a reason to look, not proof.',
   backline:
     'A Discord bot and dashboard for running a community: onboarding, moderation with a case history, private tickets and feeds. In a private pilot; not open yet.',
   arkhiv:
@@ -105,6 +107,7 @@ const TITLE_PHRASES: Record<string, string> = {
   'left-field': 'Sourced election and seat research',
   tadooer: 'A private planner for one owner',
   'chatty-cat': 'Six Twitch channels, one scrollback',
+  headcount: 'Bot signals for the Twitch top 200',
   backline: 'A Discord bot for running a community',
   arkhiv: 'Print, audio and video archives',
   overlaid: 'An operator desk for live streams',
@@ -132,6 +135,7 @@ const APPLICATION_CATEGORY: Record<string, string> = {
   subsets: 'DeveloperApplication',
   tadooer: 'BusinessApplication',
   'chatty-cat': 'SocialNetworkingApplication',
+  headcount: 'ReferenceApplication',
   backline: 'SocialNetworkingApplication',
   arkhiv: 'ReferenceApplication',
   overlaid: 'MultimediaApplication',
@@ -168,7 +172,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/',
     title: 'SUBCULT | Tools for independent culture',
     description:
-      'Twenty-three tools from SUBCULT: clips, archives, chat, mutual aid, shows, streams, music video, link pages, a Discord bot, desktop plugins and agent tools.',
+      'Twenty-four tools from SUBCULT: clips, archives, chat, mutual aid, shows, streams, music video, link pages, a Discord bot, desktop plugins and agent tools.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [
@@ -186,7 +190,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/products',
     title: fullTitle('Products'),
     description:
-      'All twenty-three SUBCULT products: apps and services, desktop and editor plugins, and developer and agent tools. Each page says how finished it is.',
+      'All twenty-four SUBCULT products: apps and services, desktop and editor plugins, and developer and agent tools. Each page says how finished it is.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -194,7 +198,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/about',
     title: fullTitle('Studio'),
     description:
-      'SUBCULT is the independent studio behind clpr, Patchwork, HasanAra, Undertow, Kork, Arkhiv, Chatty Cat, Tadooer and fifteen more tools and plugins.',
+      'SUBCULT is the independent studio behind clpr, Patchwork, HasanAra, Undertow, Kork, Arkhiv, Chatty Cat, Tadooer and sixteen more tools and plugins.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [ORGANIZATION],

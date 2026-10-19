@@ -762,6 +762,70 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     ],
     closing: 'New name, same cat.',
   },
+  headcount: {
+    audience:
+      'For viewers, streamers and researchers who want to check a Twitch viewer count against the chat and follows behind it.',
+    introduction: 'Viewers, chatters and follows, side by side.',
+    features: [
+      {
+        title: 'Every top-200 channel, every minute',
+        description:
+          'Once a channel reaches the Twitch top 200, Headcount keeps tracking it: viewers and category each minute, chat as it happens, and the follower total.',
+      },
+      {
+        title: 'One score per stream',
+        description:
+          'When a stream ends, twelve detectors each rate one kind of evidence, such as chat that stays flat while viewers spike or follows that arrive in bursts. They combine into a sus quotient from 0 to 100. Live streams get a provisional score after an hour.',
+      },
+      {
+        title: 'The engagement map',
+        description:
+          'Every recent stream, placed by audience size against how many of its viewers chat, with a band for what is typical at that size. Filter by window, language or category.',
+      },
+      {
+        title: 'Search and categories',
+        description:
+          'Look up a channel or a category, and compare a stream with others in the same category.',
+      },
+    ],
+    stepsLabel: 'HOW TO READ IT',
+    stepsHeading: 'A reason to look, not a verdict',
+    steps: [
+      {
+        title: 'Start with the leaderboard',
+        description:
+          'Channels are ordered by sus quotient, with live viewers, the last three hours of viewers and the current category beside each one.',
+      },
+      {
+        title: 'Open a stream',
+        description:
+          'A stream page charts viewers, chatters and follows across the stream and shows how each detector rated it.',
+      },
+      {
+        title: 'Weigh the caveats',
+        description:
+          'Chat can be quiet for ordinary reasons: restricted chat, an audience that watches without typing, embedded or muted players. The weights are set by hand and have not been calibrated against confirmed cases.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is this a Twitch product?',
+        answer:
+          'No. Headcount reads public data through the Twitch API and anonymous chat. Twitch does not make or endorse it.',
+      },
+      {
+        question: 'Does a high score mean a channel bought viewers?',
+        answer:
+          'No. It means the stream has patterns that view-bots, follow-bots and chat-bots produce. Someone else can send bots to a channel, and some honest streams look unusual. Treat a high score as a reason to look closer.',
+      },
+      {
+        question: 'Why do scores change?',
+        answer:
+          'Collection began in October 2026. A channel’s score averages its last ten streams and is pulled towards zero when there are only a few, so early values are provisional and move often.',
+      },
+    ],
+    closing: 'Check the count yourself.',
+  },
   backline: {
     audience: 'For the one person who runs the Discord server and has six bots open to do it.',
     introduction: 'Onboarding, moderation, tickets and feeds, switched on per server.',

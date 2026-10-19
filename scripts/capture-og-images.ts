@@ -34,6 +34,7 @@ const STUDIO_EXPORTED = new Set([
   'left-field',
   // Exported from their Studio packs by studio/scripts/export_site_brands.py.
   'chatty-cat',
+  'headcount',
   'backline',
   'tadooer',
   'arkhiv',

@@ -6,6 +6,8 @@ const SCREENSHOT_ALT: Record<string, string> = {
   tadooer: 'Tadooer Today view with sample tasks',
   'chatty-cat':
     'Chatty Cat showing one channel log with timestamped messages, an offline Twitch player and the emote panel, with channel, workspace and privacy controls across the top',
+  headcount:
+    'Headcount engagement map: about a thousand recent streams plotted by median viewers against chatters per 1,000 viewers, with a grey line and band for what is typical at each audience size, coloured from grey to amber by sus quotient',
   arkhiv:
     'Arkhiv home page with collection, media and search filters, an item count, and a grid of print items with Read buttons',
   backline:

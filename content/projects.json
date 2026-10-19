@@ -704,5 +704,35 @@
     "order": 22,
     "coverColor": "#34d399",
     "coverPattern": "circuit"
+  },
+  "headcount": {
+    "slug": "headcount",
+    "name": "Headcount",
+    "description": "A public dashboard that scores Twitch top-200 streams for patterns that view-bots, follow-bots and chat-bots produce.",
+    "longDescription": "Headcount tracks every Twitch channel once it reaches the global top 200 and records its viewers, chat and follower total each minute. When a stream ends, twelve detectors rate the evidence and combine into a sus quotient from 0 to 100. A high quotient means the data has patterns bots produce; it does not prove a streamer bought bots. Collection began in October 2026, so early scores are provisional and change often.",
+    "whyItExists": "A viewer count is easy to inflate and hard to check from outside. Headcount puts each stream’s viewers beside its chatters and follows so anyone can look.",
+    "status": "incubating",
+    "type": [
+      "software",
+      "media"
+    ],
+    "stack": [
+      "Go",
+      "PostgreSQL",
+      "TimescaleDB"
+    ],
+    "topics": [
+      "twitch",
+      "bots",
+      "analytics"
+    ],
+    "url": "https://headcount.subcult.tv",
+    "repoUrl": "https://git.subcult.tv/subculture-collective/headcount",
+    "lastUpdated": "2026-10-19T00:00:00Z",
+    "screenshot": "/screenshots/headcount-engagement-1440.webp",
+    "featured": false,
+    "order": 23,
+    "coverColor": "#f2b53a",
+    "coverPattern": "grid"
   }
 }
