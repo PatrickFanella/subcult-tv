@@ -4,51 +4,6 @@
   "status": "owner-selected identity, October 19, 2026; template layouts are samples and are not approved social posts",
   "files": [
     {
-      "path": ".font-cache/9e61153252cf4b4bc179b686cafc4bf2-le64.cache-10",
-      "sha256": "e2d17bbd4d67adb4f8446bee06b86a486858279bddaa357d9187b00b021c9723",
-      "bytes": 128
-    },
-    {
-      "path": ".font-cache/9e61153252cf4b4bc179b686cafc4bf2-le64.cache-11",
-      "sha256": "e2d17bbd4d67adb4f8446bee06b86a486858279bddaa357d9187b00b021c9723",
-      "bytes": 128
-    },
-    {
-      "path": ".font-cache/9e61153252cf4b4bc179b686cafc4bf2-le64.cache-12",
-      "sha256": "e2d17bbd4d67adb4f8446bee06b86a486858279bddaa357d9187b00b021c9723",
-      "bytes": 128
-    },
-    {
-      "path": ".font-cache/9e61153252cf4b4bc179b686cafc4bf2-le64.cache-9",
-      "sha256": "e2d17bbd4d67adb4f8446bee06b86a486858279bddaa357d9187b00b021c9723",
-      "bytes": 128
-    },
-    {
-      "path": ".font-cache/CACHEDIR.TAG",
-      "sha256": "05e7633fb31bf1f6f8d89020c16b9f24587fdf7638e951c9745b192f5fc3b682",
-      "bytes": 200
-    },
-    {
-      "path": ".font-cache/b25ee0ba4acb717d9987017c27682323-le64.cache-10",
-      "sha256": "c1d8af707f4088c62a15f267241c2ceaa322189d2c0aa433acce00544946c7f9",
-      "bytes": 92024
-    },
-    {
-      "path": ".font-cache/b25ee0ba4acb717d9987017c27682323-le64.cache-11",
-      "sha256": "c1d8af707f4088c62a15f267241c2ceaa322189d2c0aa433acce00544946c7f9",
-      "bytes": 92024
-    },
-    {
-      "path": ".font-cache/b25ee0ba4acb717d9987017c27682323-le64.cache-12",
-      "sha256": "c1d8af707f4088c62a15f267241c2ceaa322189d2c0aa433acce00544946c7f9",
-      "bytes": 92024
-    },
-    {
-      "path": ".font-cache/b25ee0ba4acb717d9987017c27682323-le64.cache-9",
-      "sha256": "c1d8af707f4088c62a15f267241c2ceaa322189d2c0aa433acce00544946c7f9",
-      "bytes": 92024
-    },
-    {
       "path": "brand-board.png",
       "sha256": "99b9403abcf4576f8e3c40b1480c9c0c5e721133aa93ce8f01405c74bbc5064a",
       "bytes": 125273,
@@ -68,8 +23,8 @@
     },
     {
       "path": "build.py",
-      "sha256": "751b07a91b1cf9f869810355b81eb0ebc1c0eacd733d5b0b5a1b6689f29d4eba",
-      "bytes": 28203
+      "sha256": "b77f1f180f52ee8222a21af35a571642254bed0ee088353cbdaa996df677c0b1",
+      "bytes": 28255
     },
     {
       "path": "fonts/Barlow-Condensed-0.ttf",

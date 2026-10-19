@@ -409,7 +409,8 @@ def manifest():
     rank = {p: i for i, p in enumerate(previous)}
     from PIL import Image
     entries = []
-    files = [p for p in HERE.rglob('*') if p.is_file() and p.name != 'asset-manifest.json' and '__pycache__' not in p.parts]
+    files = [p for p in HERE.rglob('*') if p.is_file() and p.name != 'asset-manifest.json'
+             and not {'__pycache__', '.font-cache'} & set(p.relative_to(HERE).parts)]
     for p in sorted(files, key=lambda p: (rank.get(str(p.relative_to(HERE)), len(rank)), str(p.relative_to(HERE)))):
         e = {'path': str(p.relative_to(HERE)), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest(), 'bytes': p.stat().st_size}
         if p.suffix == '.png':
