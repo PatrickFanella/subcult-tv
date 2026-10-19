@@ -175,7 +175,7 @@ The generator is standalone, `../brands/chatty-cat/build.py`, in the Subsets pat
 
 ### Headcount
 
-Added October 19, 2026. Headcount is the product name of the Twitch bot-signal dashboard (`subculture-collective/sus-quotient`; the repository, service and score keep the sus quotient name). The owner chose A, the door clicker, from [four named directions](../studies/sus-quotient-directions/index.html).
+Added October 19, 2026. Headcount is the product name of the Twitch bot-signal dashboard (`subculture-collective/headcount`, public at https://headcount.subcult.tv/; the score keeps the sus quotient name). The owner chose A, the door clicker, from [four named directions](../studies/sus-quotient-directions/index.html).
 
 The mark is a door tally: two solid strokes, two hollow ones and an amber slash, with a three-stroke small glyph for 32px and under. Night ink and amber, Barlow Condensed for the wordmark and numbers, Public Sans body and JetBrains Mono labels, all already in `fonts/`. The pack has dark and light themes and a quotient ramp from warm grey into amber; the build refuses either theme if text, chart series or ramp steps fall under their contrast floors.
 

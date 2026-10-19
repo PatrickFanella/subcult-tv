@@ -1,6 +1,6 @@
 # Headcount design system
 
-Headcount is the product name of this dashboard. The repository, service, database and images stay `sus-quotient`. The score is still called the **sus quotient**: the product counts, and the quotient is the one number it gives each stream.
+Headcount is the product name of this dashboard, and the repository, module and images use it. The database keeps its original `susq` names. The score is still called the **sus quotient**: the product counts, and the quotient is the one number it gives each stream.
 
 The identity was selected on October 19, 2026 from four directions (`studio/studies/sus-quotient-directions` in subcult-tv). The brand pack in `studio/brands/headcount` owns the mark, colours, fonts and promotional layouts. This document owns how the dashboard uses them.
 
@@ -17,7 +17,7 @@ The identity was selected on October 19, 2026 from four directions (`studio/stud
 Files under `web/static/brand/` are generated. To change a colour or a font, edit the pack and export again from the Studio root on Kvant:
 
 ```sh
-python3 brands/headcount/build.py --export /path/to/sus-quotient/web/static/brand
+python3 brands/headcount/build.py --export /path/to/headcount/web/static/brand
 ```
 
 `brand-export.json` records the hash of every exported file.

@@ -16,4 +16,6 @@ studio/brands/subsets/fonts/*-OFL.txt -text whitespace=-blank-at-eol,-blank-at-e
 public/brand/chatty-cat/fonts/*.ttf filter=lfs diff=lfs merge=lfs -text
 public/brand/chatty-cat/fonts/*-OFL.txt -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 public/brand/backline/fonts/*.woff2 filter=lfs diff=lfs merge=lfs -text
+public/brand/headcount/fonts/*.ttf filter=lfs diff=lfs merge=lfs -text
+public/brand/headcount/fonts/*-OFL.txt -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 public/brand/backline/fonts/*-OFL.txt -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

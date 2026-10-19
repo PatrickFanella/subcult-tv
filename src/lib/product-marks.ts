@@ -12,6 +12,7 @@ export const PRODUCT_MARKS: Record<string, string> = {
   subsets: '/brand/subsets/logos/mark-primary.svg',
   tadooer: '/brand/tadooer/mark.svg',
   'chatty-cat': '/brand/chatty-cat/mark.svg',
+  headcount: '/brand/headcount/mark.svg',
   backline: '/brand/backline/mark.svg',
   arkhiv: '/brand/arkhiv/mark.svg',
   overlaid: '/brand/overlaid/mark.svg',

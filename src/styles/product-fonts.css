@@ -104,6 +104,13 @@
   src: url(/brand/chatty-cat/fonts/CascadiaMono-Bold.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Headcount Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/brand/headcount/fonts/JetBrains-Mono-0.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Backline Display';
   font-style: normal;
   font-weight: 700;

@@ -409,7 +409,8 @@ def manifest():
     rank = {p: i for i, p in enumerate(previous)}
     from PIL import Image
     entries = []
-    files = [p for p in HERE.rglob('*') if p.is_file() and p.name != 'asset-manifest.json' and '__pycache__' not in p.parts]
+    files = [p for p in HERE.rglob('*') if p.is_file() and p.name != 'asset-manifest.json'
+             and not {'__pycache__', '.font-cache'} & set(p.relative_to(HERE).parts)]
     for p in sorted(files, key=lambda p: (rank.get(str(p.relative_to(HERE)), len(rank)), str(p.relative_to(HERE)))):
         e = {'path': str(p.relative_to(HERE)), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest(), 'bytes': p.stat().st_size}
         if p.suffix == '.png':
@@ -461,7 +462,7 @@ def product_copy(root):
     shutil.copy2(src, dest / 'README.md')
     rev = subprocess.run(['git', '-C', str(root), 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
     (dest / 'source-provenance.json').write_text(json.dumps({
-        'source': 'subculture-collective/sus-quotient docs/design-system.md', 'revision': rev,
+        'source': 'subculture-collective/headcount docs/design-system.md', 'revision': rev,
         'sha256': hashlib.sha256(src.read_bytes()).hexdigest(),
         'rule': 'The product repository is the editing source; refresh with --product-root.'}, indent=2) + '\n')
 
@@ -470,7 +471,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--export', type=Path, help='copy the product web assets and WOFF2 fonts here')
     ap.add_argument('--skip-build', action='store_true', help='export the committed pack without rebuilding')
-    ap.add_argument('--product-root', type=Path, help='sus-quotient checkout to copy docs/design-system.md from')
+    ap.add_argument('--product-root', type=Path, help='headcount checkout to copy docs/design-system.md from')
     a = ap.parse_args()
     if a.product_root:
         product_copy(a.product_root.resolve())

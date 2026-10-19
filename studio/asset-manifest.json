@@ -1,8 +1,8 @@
 [
   {
     "path": "brand-tools/README.md",
-    "sha256": "3b6d60376af2e6dfffd18bba77c8438f0a8dc955ea66f2bc2aef4ed62c63658f",
-    "bytes": 21263
+    "sha256": "ffd530a147071af59c8997636de5c2b042cdb664535ff413d31cbcd89f0c3b33",
+    "bytes": 21278
   },
   {
     "path": "brand-tools/audit_patchwork_contrast.py",

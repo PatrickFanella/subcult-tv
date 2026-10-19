@@ -81,6 +81,15 @@
       "transform": "ffmpeg -ss 2 single-frame extract, Lanczos resize to 1440x810, letterboxed 45 px top and bottom on #101418 to 1440x900, WebP quality 82",
       "sha256": "8f39af520ee9f6911c536c6d1ef494077e64a184e0b64a123274e7ad9e23cdf9",
       "suggestedAlt": "A tmux session with a Neovim shell script buffer and file tree, with the tmux-popups Quick Menu open in the centre listing entries such as popup help, quick chat, shell, tasks, notes, calendar and lazygit with their key bindings."
+    },
+    {
+      "target": "public/screenshots/headcount-engagement-1440.webp",
+      "kind": "live-capture",
+      "source": "https://headcount.subcult.tv/#/engagement",
+      "capturedAt": "2026-10-19T19:20:00Z",
+      "transform": "Headless Google Chrome (macOS), 1440x900 window, dark colour scheme, prefers-reduced-motion, 8 s virtual-time budget, PNG converted to WebP quality 82 with Pillow",
+      "sha256": "3cb67ad3a10b1842ee8bab4ed4b2f19453a066aaf7d1e48a03425129a6657cd7",
+      "suggestedAlt": "Headcount engagement map: about a thousand recent streams plotted by median viewers against chatters per 1,000 viewers, with a grey line and band for what is typical at each audience size, coloured from grey to amber by sus quotient."
     }
   ]
 }

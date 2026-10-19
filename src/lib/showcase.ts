@@ -145,6 +145,15 @@ const selections = [
     liveLabel: 'Open the chat',
   },
   {
+    slug: 'headcount',
+    group: 'apps',
+    category: 'Twitch bot signals / early data',
+    headline: 'Who is actually in the room?',
+    summary:
+      'Headcount follows every channel that reaches the Twitch top 200 and puts each stream’s viewers beside its chatters and follows. Twelve detectors turn that into one number, the sus quotient. A high score says the data looks like bots, not who sent them. Collection began in October 2026, so scores are still provisional.',
+    highlights: ['Twitch top 200', 'Every minute', '12 detectors', 'Read-only'],
+  },
+  {
     slug: 'backline',
     group: 'apps',
     category: 'Discord community bot / private pilot',

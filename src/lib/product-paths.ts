@@ -11,6 +11,7 @@ export const PRODUCT_ROUTES: Record<string, string> = {
   'left-field': 'left-field',
   tadooer: 'tadooer',
   'chatty-cat': 'chatty-cat',
+  headcount: 'headcount',
   backline: 'backline',
   arkhiv: 'arkhiv',
   overlaid: 'overlaid',
