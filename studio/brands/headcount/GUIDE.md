@@ -2,7 +2,7 @@
 
 Direction: **A / Headcount: the door clicker**, selected by the owner on October 19, 2026 from [four candidates](../../studies/sus-quotient-directions/index.html). Status: selected identity, applied to the dashboard the same day. Template layouts are samples; a post or a profile change still needs its own review.
 
-Headcount is a private dashboard that tracks every Twitch channel once it reaches the global top 200 and scores each stream for patterns that view-bots, follow-bots and chat-bots produce. The score is the **sus quotient**, 0 to 100. The repository, service and database keep the working name `sus-quotient` (`subculture-collective/sus-quotient`). It has no public address yet, and nothing here may suggest a public service or a Twitch product.
+Headcount is a public, read-only dashboard at https://headcount.subcult.tv/ that tracks every Twitch channel once it reaches the global top 200 and scores each stream for patterns that view-bots, follow-bots and chat-bots produce. The score is the **sus quotient**, 0 to 100. The repository, Go module and service are `headcount` (`subculture-collective/headcount`); the database keeps its working name `susq`. Nothing here may suggest a Twitch product.
 
 ## The mark
 
@@ -64,8 +64,8 @@ Headcount sounds like the person on the door with the clicker: plain, numerate, 
 From the Studio root on Kvant:
 
 ```sh
-python3 brands/headcount/build.py --product-root /path/to/sus-quotient
-python3 brands/headcount/build.py --skip-build --export /path/to/sus-quotient/web/static/brand
+python3 brands/headcount/build.py --product-root /path/to/headcount
+python3 brands/headcount/build.py --skip-build --export /path/to/headcount/web/static/brand
 ```
 
 The generator needs rsvg-convert, Inkscape, fontconfig with the bundled fonts, Pillow and fontTools. `--export` copies the product's web assets and WOFF2 fonts and writes `brand-export.json` beside them; the product does not edit those copies. The shared `build_packs.py` delegates to this script for the `headcount` slug.

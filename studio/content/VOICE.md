@@ -356,7 +356,7 @@ One voice for Omarchy Multi-Monitor Bar, Super Productivity for Omarchy, Shelfis
 
 **Sounds like:** plain and numerate. Gives the number, then what it can and cannot mean. Uses the data's own words: viewers, chatters, follows, a spike, the baseline, the quotient. Dry humour about the gap between a viewer count and a quiet chat is fine; mockery of a streamer is not.
 
-**Does:** say what it is in one breath: a private dashboard that tracks the top 200 Twitch channels and scores each stream for patterns bots produce. Calls the score the sus quotient and treats a high one as a reason to look, not a finding. States the maturity (private preview, data collected since October 2026) and that scores early in collection are provisional. Writes the name as Headcount in prose and HEADCOUNT only in the wordmark.
+**Does:** say what it is in one breath: a read-only public dashboard that tracks the top 200 Twitch channels and scores each stream for patterns bots produce. Calls the score the sus quotient and treats a high one as a reason to look, not a finding. States the maturity (data collected since October 2026) and that scores early in collection are provisional. Writes the name as Headcount in prose and HEADCOUNT only in the wordmark.
 
 **Avoids:** "caught", "exposed", "fake", "fraud", "bought bots" or any verdict about a named channel; publishing a channel's score in promotional copy without a review of that claim; any suggestion that it is a Twitch product or uses Twitch's own bot detection; "sus" as a description of a person.
 

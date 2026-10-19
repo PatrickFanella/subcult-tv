@@ -461,7 +461,7 @@ def product_copy(root):
     shutil.copy2(src, dest / 'README.md')
     rev = subprocess.run(['git', '-C', str(root), 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
     (dest / 'source-provenance.json').write_text(json.dumps({
-        'source': 'subculture-collective/sus-quotient docs/design-system.md', 'revision': rev,
+        'source': 'subculture-collective/headcount docs/design-system.md', 'revision': rev,
         'sha256': hashlib.sha256(src.read_bytes()).hexdigest(),
         'rule': 'The product repository is the editing source; refresh with --product-root.'}, indent=2) + '\n')
 
@@ -470,7 +470,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--export', type=Path, help='copy the product web assets and WOFF2 fonts here')
     ap.add_argument('--skip-build', action='store_true', help='export the committed pack without rebuilding')
-    ap.add_argument('--product-root', type=Path, help='sus-quotient checkout to copy docs/design-system.md from')
+    ap.add_argument('--product-root', type=Path, help='headcount checkout to copy docs/design-system.md from')
     a = ap.parse_args()
     if a.product_root:
         product_copy(a.product_root.resolve())
