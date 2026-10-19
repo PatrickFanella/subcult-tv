@@ -1,0 +1,486 @@
+{
+  "study": "sus-quotient-directions",
+  "date": "2026-10-19",
+  "status": "proposed; no direction selected",
+  "directions": [
+    {
+      "key": "a-headcount",
+      "name": "Headcount",
+      "title": "A / Headcount: the door clicker",
+      "colors": {
+        "bg": "#121316",
+        "panel": "#1b1d22",
+        "fg": "#ecebe6",
+        "accent": "#f2b53a",
+        "secondary": "#5fc4b8",
+        "muted": "#9c9a92"
+      },
+      "quotient_ramp": [
+        "#4d4126",
+        "#8a6d26",
+        "#d39a2c",
+        "#ffd77a"
+      ],
+      "fonts": {
+        "display": "Barlow Condensed",
+        "body": "Public Sans",
+        "label": "JetBrains Mono",
+        "wordmark": "Barlow Condensed"
+      },
+      "contrast": {
+        "text": 15.56,
+        "accent": 10.13,
+        "secondary": 8.91,
+        "muted": 6.59,
+        "muted_on_panel": 5.98,
+        "ramp_vs_panel": [
+          1.69,
+          3.45,
+          6.77,
+          12.25
+        ]
+      }
+    },
+    {
+      "key": "b-papered",
+      "name": "Papered",
+      "title": "B / Papered: the house that was papered",
+      "colors": {
+        "bg": "#f4efe6",
+        "panel": "#fffdf8",
+        "fg": "#1d1a1f",
+        "accent": "#b3261e",
+        "secondary": "#7a5c14",
+        "muted": "#655e66"
+      },
+      "quotient_ramp": [
+        "#f0c4b6",
+        "#cf6a52",
+        "#b3261e",
+        "#6b1410"
+      ],
+      "fonts": {
+        "display": "Fraunces",
+        "body": "Public Sans",
+        "label": "IBM Plex Mono",
+        "wordmark": "Fraunces"
+      },
+      "contrast": {
+        "text": 15.03,
+        "accent": 5.71,
+        "secondary": 5.44,
+        "muted": 5.48,
+        "muted_on_panel": 6.17,
+        "ramp_vs_panel": [
+          1.56,
+          3.54,
+          6.43,
+          11.92
+        ]
+      }
+    },
+    {
+      "key": "c-sus-quotient",
+      "name": "Sus Quotient",
+      "title": "C / Sus Quotient: the gauge",
+      "colors": {
+        "bg": "#0f1115",
+        "panel": "#171a20",
+        "fg": "#e9edf2",
+        "accent": "#ff6b5a",
+        "secondary": "#5ccfe6",
+        "muted": "#99a1ad"
+      },
+      "quotient_ramp": [
+        "#4a2c2b",
+        "#b04a40",
+        "#ef6a5b",
+        "#ffb3a8"
+      ],
+      "fonts": {
+        "display": "Space Grotesk",
+        "body": "Inter",
+        "label": "JetBrains Mono",
+        "wordmark": "Space Grotesk"
+      },
+      "contrast": {
+        "text": 16.07,
+        "accent": 6.75,
+        "secondary": 10.37,
+        "muted": 7.25,
+        "muted_on_panel": 6.69,
+        "ramp_vs_panel": [
+          1.4,
+          3.24,
+          5.71,
+          10.18
+        ]
+      }
+    },
+    {
+      "key": "d-ghostcount",
+      "name": "Ghostcount",
+      "title": "D / Ghostcount: the crowd with holes in it",
+      "colors": {
+        "bg": "#16131c",
+        "panel": "#1f1b27",
+        "fg": "#ece8f2",
+        "accent": "#c6f16b",
+        "secondary": "#8fb8ff",
+        "muted": "#a39cb0"
+      },
+      "quotient_ramp": [
+        "#3a4523",
+        "#677f2b",
+        "#a3cf43",
+        "#dcff8f"
+      ],
+      "fonts": {
+        "display": "Inter Tight",
+        "body": "Inter",
+        "label": "IBM Plex Mono",
+        "wordmark": "Inter Tight"
+      },
+      "contrast": {
+        "text": 15.2,
+        "accent": 14.16,
+        "secondary": 9.15,
+        "muted": 6.94,
+        "muted_on_panel": 6.38,
+        "ramp_vs_panel": [
+          1.65,
+          3.73,
+          9.29,
+          15.06
+        ]
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": ".font-cache/CACHEDIR.TAG",
+      "sha256": "05e7633fb31bf1f6f8d89020c16b9f24587fdf7638e951c9745b192f5fc3b682",
+      "bytes": 200
+    },
+    {
+      "path": ".font-cache/b25ee0ba4acb717d9987017c27682323-le64.cache-10",
+      "sha256": "c1d8af707f4088c62a15f267241c2ceaa322189d2c0aa433acce00544946c7f9",
+      "bytes": 92024
+    },
+    {
+      "path": ".font-cache/b25ee0ba4acb717d9987017c27682323-le64.cache-11",
+      "sha256": "c1d8af707f4088c62a15f267241c2ceaa322189d2c0aa433acce00544946c7f9",
+      "bytes": 92024
+    },
+    {
+      "path": ".font-cache/b25ee0ba4acb717d9987017c27682323-le64.cache-12",
+      "sha256": "c1d8af707f4088c62a15f267241c2ceaa322189d2c0aa433acce00544946c7f9",
+      "bytes": 92024
+    },
+    {
+      "path": ".font-cache/b25ee0ba4acb717d9987017c27682323-le64.cache-9",
+      "sha256": "c1d8af707f4088c62a15f267241c2ceaa322189d2c0aa433acce00544946c7f9",
+      "bytes": 92024
+    },
+    {
+      "path": "a-headcount/logos/lockup-primary.png",
+      "sha256": "014e4ab0290b993d3aba8c83c58052f40829ded4a2180b82b199e7ed30988048",
+      "bytes": 16678
+    },
+    {
+      "path": "a-headcount/logos/lockup-primary.svg",
+      "sha256": "553d80f1c9d26ed6f569e7ddbec3765d8814e25f31fd7efc9865b27acf5992a6",
+      "bytes": 912
+    },
+    {
+      "path": "a-headcount/logos/mark-16.png",
+      "sha256": "40cc35ff975ca57f7f8dcd564a91ac7dc8572a262bae7e726e4602cdb9246c79",
+      "bytes": 1697
+    },
+    {
+      "path": "a-headcount/logos/mark-16.svg",
+      "sha256": "5a1d71c31a5dc524da34e01f616fb2ee6493c99009a6f5903f83091c035f7f46",
+      "bytes": 760
+    },
+    {
+      "path": "a-headcount/logos/mark-mono.png",
+      "sha256": "a6ffe173a90eb7cc0629d42cf1ec9fc37e76548c4d6f64121e82641758154f91",
+      "bytes": 9392
+    },
+    {
+      "path": "a-headcount/logos/mark-mono.svg",
+      "sha256": "a2c2e841d7e7ee7b6122d304d2cb78c6c2c1faf68162d71bbc3e5cc8e5290464",
+      "bytes": 682
+    },
+    {
+      "path": "a-headcount/logos/mark-primary.png",
+      "sha256": "a8b027a2e91bf7bb143c429afe0bf3fffead768792162d3b5124b1eec0562d14",
+      "bytes": 11197
+    },
+    {
+      "path": "a-headcount/logos/mark-primary.svg",
+      "sha256": "8e61f27efae4528ee4b8fd4d475081f5a11aa8173b2c0c1e6ed74a32ba4de883",
+      "bytes": 750
+    },
+    {
+      "path": "a-headcount/product/dashboard.png",
+      "sha256": "cff8f8ef9b25dea3649c0e054b4502df850b9e009261831ba34b3abb6db48e34",
+      "bytes": 82166
+    },
+    {
+      "path": "a-headcount/product/dashboard.svg",
+      "sha256": "652c1fcc9d52a926c9a2794550684f6d3c5e24376a9f3bd94335a26a44955b91",
+      "bytes": 12959
+    },
+    {
+      "path": "a-headcount/social/avatar.png",
+      "sha256": "a8b027a2e91bf7bb143c429afe0bf3fffead768792162d3b5124b1eec0562d14",
+      "bytes": 11197
+    },
+    {
+      "path": "a-headcount/social/avatar.svg",
+      "sha256": "2a63287911178d5f5c3da7844f2291aabe9617d7231a3f6333ccc62c392806e5",
+      "bytes": 755
+    },
+    {
+      "path": "a-headcount/social/banner-x-bluesky.png",
+      "sha256": "cf7be9421b1f7ace059d61a15c80a2147aff37de75b0620f410306fd4041c98b",
+      "bytes": 64187
+    },
+    {
+      "path": "a-headcount/social/banner-x-bluesky.svg",
+      "sha256": "a11600a2606951b5c71692f439de4094c9c6ffc09949f20f21fc11c264b73f21",
+      "bytes": 4461
+    },
+    {
+      "path": "b-papered/logos/lockup-primary.png",
+      "sha256": "36231af9df23bfe5b3facfac97bf33fd1310b12bc3604afe8f50153717d99227",
+      "bytes": 20825
+    },
+    {
+      "path": "b-papered/logos/lockup-primary.svg",
+      "sha256": "f21cdfa7dacc8c5e452ba0876099aab9dae43330c0f41b8c0e357e0c37bb540e",
+      "bytes": 1036
+    },
+    {
+      "path": "b-papered/logos/mark-16.png",
+      "sha256": "f6eb99b488f227ebb4073e6bcb2fb3cb4f129fad789a609dd471d0ca1070b9ce",
+      "bytes": 1578
+    },
+    {
+      "path": "b-papered/logos/mark-16.svg",
+      "sha256": "f1cc7a2c793d9a674660d22569d301a45dbe42e01d8170fe91a5d80a78a2e9bf",
+      "bytes": 893
+    },
+    {
+      "path": "b-papered/logos/mark-mono.png",
+      "sha256": "b75eaf6f637c834b6271120dc13d891aebb6d809d71b1bb45b49d86743ee13cc",
+      "bytes": 9688
+    },
+    {
+      "path": "b-papered/logos/mark-mono.svg",
+      "sha256": "4e1d59971dfd477e461fd4d93e3b693ff996b86a4e8643a3c67afc09dd8dd7fa",
+      "bytes": 815
+    },
+    {
+      "path": "b-papered/logos/mark-primary.png",
+      "sha256": "f8718d37957562aefb0c8066172c994d10276d023ca74fbbe36af6d7ca6de830",
+      "bytes": 9157
+    },
+    {
+      "path": "b-papered/logos/mark-primary.svg",
+      "sha256": "674a91daaf6b51831c14b62da786700665c78cfa2c4f38ca611a085a5bf36df4",
+      "bytes": 883
+    },
+    {
+      "path": "b-papered/product/dashboard.png",
+      "sha256": "e3423a3d97c17bd0fc4340f8332bd241f66b951bce5a112b31ed19d5131f4629",
+      "bytes": 90830
+    },
+    {
+      "path": "b-papered/product/dashboard.svg",
+      "sha256": "07178f97b3c91cae464ec3cf006a1ef061ed059c0cfff4859e38f45a0e23a98e",
+      "bytes": 12992
+    },
+    {
+      "path": "b-papered/social/avatar.png",
+      "sha256": "f8718d37957562aefb0c8066172c994d10276d023ca74fbbe36af6d7ca6de830",
+      "bytes": 9157
+    },
+    {
+      "path": "b-papered/social/avatar.svg",
+      "sha256": "4eef023421b1bbbce9937c5ac548358bafab9675b09e77c7d1325e68092b418d",
+      "bytes": 888
+    },
+    {
+      "path": "b-papered/social/banner-x-bluesky.png",
+      "sha256": "0fb2bb60a4c92672b65b715e352d04c957e8173f4719884f7b207f09de12900d",
+      "bytes": 71639
+    },
+    {
+      "path": "b-papered/social/banner-x-bluesky.svg",
+      "sha256": "3f4be962f41b3be19eae968b9303a355b67ad8d47a16713745563f86e73efdfb",
+      "bytes": 4568
+    },
+    {
+      "path": "c-sus-quotient/logos/lockup-primary.png",
+      "sha256": "7f4d6fdef661dc52c57fd5c0eda2ae4202bc65ad9f847b2c770253463ec05c70",
+      "bytes": 21711
+    },
+    {
+      "path": "c-sus-quotient/logos/lockup-primary.svg",
+      "sha256": "d802408a36626bd685235b80d6cd6b7cb674995ab7621f28340c27399fa29112",
+      "bytes": 944
+    },
+    {
+      "path": "c-sus-quotient/logos/mark-16.png",
+      "sha256": "3e09a3456bb8d17a3766a73f29740bb0a7d841e4e9a770607ba2e502c1ecf45e",
+      "bytes": 1670
+    },
+    {
+      "path": "c-sus-quotient/logos/mark-16.svg",
+      "sha256": "f42750782c209035898e6bab063dd72d8343d310fe5240e16a48194961606e59",
+      "bytes": 791
+    },
+    {
+      "path": "c-sus-quotient/logos/mark-mono.png",
+      "sha256": "7dc322ec86b8ef528ccf78d58273851b6f4181acd304ab4b93f3aea65b8c69c7",
+      "bytes": 11334
+    },
+    {
+      "path": "c-sus-quotient/logos/mark-mono.svg",
+      "sha256": "a661387124a28600b5d13b97c036dab3862be25ebf0af8cbb9d05bcaa561929c",
+      "bytes": 707
+    },
+    {
+      "path": "c-sus-quotient/logos/mark-primary.png",
+      "sha256": "173db19d8a13586728da0cd04b96774f0c26536a9b31f39604394f93284830ef",
+      "bytes": 12610
+    },
+    {
+      "path": "c-sus-quotient/logos/mark-primary.svg",
+      "sha256": "8d426cff40402142b932958a2f971d903b252393637cfa02e4d3456e375aa1ce",
+      "bytes": 781
+    },
+    {
+      "path": "c-sus-quotient/product/dashboard.png",
+      "sha256": "ebf0a3f12b30e40d81406de5375f4fcff4bfd135f02eec2a852615209a0dd845",
+      "bytes": 87824
+    },
+    {
+      "path": "c-sus-quotient/product/dashboard.svg",
+      "sha256": "56c1361b8d000d6336b51b9814b066a1ff81793c2ec26d3a2e5b3d33813f2660",
+      "bytes": 12958
+    },
+    {
+      "path": "c-sus-quotient/social/avatar.png",
+      "sha256": "173db19d8a13586728da0cd04b96774f0c26536a9b31f39604394f93284830ef",
+      "bytes": 12610
+    },
+    {
+      "path": "c-sus-quotient/social/avatar.svg",
+      "sha256": "e86187099d03a5049381f82d82ac0be826a79645aa2959012e9abe313b7904e6",
+      "bytes": 786
+    },
+    {
+      "path": "c-sus-quotient/social/banner-x-bluesky.png",
+      "sha256": "4ec46c0fcf0269f955cae2d670cd444831078b1ccd92f85dfd6c113170af72bf",
+      "bytes": 69893
+    },
+    {
+      "path": "c-sus-quotient/social/banner-x-bluesky.svg",
+      "sha256": "ea188a2e695784c0cbc3a310a204c95f2487e20edb89e59a79616f31eb54bc66",
+      "bytes": 4470
+    },
+    {
+      "path": "comparison.png",
+      "sha256": "c349778b4ec4753915e6ae15d474a5fb7fff3bab1bf7d8186c34bbeed5eb40ac",
+      "bytes": 496092
+    },
+    {
+      "path": "comparison.svg",
+      "sha256": "7fe8e95573a4255dd0b961db556f30d6967a43c7a189b1407768e0cf0fdd03e0",
+      "bytes": 109693
+    },
+    {
+      "path": "d-ghostcount/logos/lockup-primary.png",
+      "sha256": "50f71aae5c1a3be2c1938d6668f88c62d4b6be1d5edd7429361db0692d059667",
+      "bytes": 26872
+    },
+    {
+      "path": "d-ghostcount/logos/lockup-primary.svg",
+      "sha256": "3e2d59ea0d85079f4c6ab93bda10fb9ab56cf7671067eb531b8a18ba0e851174",
+      "bytes": 1485
+    },
+    {
+      "path": "d-ghostcount/logos/mark-16.png",
+      "sha256": "ef5abb217d27959102666e103b3c9a76a7046d7a4872d4f6d387a5e43488c2e3",
+      "bytes": 2548
+    },
+    {
+      "path": "d-ghostcount/logos/mark-16.svg",
+      "sha256": "3b4aacf0b727a716829f61dead469ca527dc6e4be45cd6b639dbc993c4753b14",
+      "bytes": 1336
+    },
+    {
+      "path": "d-ghostcount/logos/mark-mono.png",
+      "sha256": "2f22b35247ddf0a718f37dcf9de8212c6a255b500856470baf1c4f0544c77bdc",
+      "bytes": 13612
+    },
+    {
+      "path": "d-ghostcount/logos/mark-mono.svg",
+      "sha256": "6519d120ed9e3b82d4c757ea2c16dacf51a68c90df2034e3e36d1e2ee847e0a6",
+      "bytes": 1258
+    },
+    {
+      "path": "d-ghostcount/logos/mark-primary.png",
+      "sha256": "98f0bbebf0bd05059da13146cee77c805c1674de634818258c53971aeb7bf3b4",
+      "bytes": 16965
+    },
+    {
+      "path": "d-ghostcount/logos/mark-primary.svg",
+      "sha256": "30eb5f0cae0adfbfd093cbfbce3a09143188d860cf1aa7d0950d397d5539faca",
+      "bytes": 1326
+    },
+    {
+      "path": "d-ghostcount/product/dashboard.png",
+      "sha256": "83ee808f6b979b672451d470dd3205ab9c48c0115024e3c3b112c81392d3090e",
+      "bytes": 90288
+    },
+    {
+      "path": "d-ghostcount/product/dashboard.svg",
+      "sha256": "a82d8fd1e0915a9e824311eb8ec634c9e9c1d9cba20ff30d7a9dfeacfe323c62",
+      "bytes": 13450
+    },
+    {
+      "path": "d-ghostcount/social/avatar.png",
+      "sha256": "98f0bbebf0bd05059da13146cee77c805c1674de634818258c53971aeb7bf3b4",
+      "bytes": 16965
+    },
+    {
+      "path": "d-ghostcount/social/avatar.svg",
+      "sha256": "9127b15c932c774d15c0e1f3101745a15942b5d03eb083c649156dc0486379cf",
+      "bytes": 1331
+    },
+    {
+      "path": "d-ghostcount/social/banner-x-bluesky.png",
+      "sha256": "79f4c04573f64d76e1ce2dde31f17e98b1fc60090d41c814d49b72cbe57dacf1",
+      "bytes": 72922
+    },
+    {
+      "path": "d-ghostcount/social/banner-x-bluesky.svg",
+      "sha256": "e914fbca931100c2a997623d8179ee2f5a1f784e3c0592a1ace38949b67b6d4e",
+      "bytes": 5004
+    },
+    {
+      "path": "index.html",
+      "sha256": "ed691ec395e93f26ed8e22b7a4cf6964bab2469a7fea2d861dbcf88d0e4ae7dd",
+      "bytes": 7776
+    },
+    {
+      "path": "sus_quotient_directions.py",
+      "sha256": "97311a29821e5318285b2bbbdf95b9d1769b9dd089b472d9f08022722f52f2a2",
+      "bytes": 21139
+    }
+  ]
+}
