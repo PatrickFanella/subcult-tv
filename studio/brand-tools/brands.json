@@ -415,5 +415,31 @@
     "slug": "chatty-cat",
     "selected_by_user": true,
     "direction_selection": "user"
+  },
+  {
+    "id": "headcount-a",
+    "brand": "Headcount",
+    "variant": "A",
+    "name": "The door clicker",
+    "bg": "#121316",
+    "fg": "#ecebe6",
+    "accent": "#f2b53a",
+    "secondary": "#5fc4b8",
+    "display": "Barlow Condensed",
+    "body": "Public Sans",
+    "label": "JetBrains Mono",
+    "safe_label": "#9c9a92",
+    "headline": [
+      "Counting who is",
+      "actually in the room."
+    ],
+    "tag": "TWITCH TOP 200 / BY SUBCULT",
+    "description": "A door tally on night ink: four strokes, two of them hollow, crossed by an amber slash. Dark and light themes, with a quotient ramp from warm grey into amber for the dashboard's charts.",
+    "mode": "door-clicker",
+    "url": "",
+    "source": "Owner selected direction A from studies/sus-quotient-directions on October 19, 2026; applied to the sus-quotient dashboard the same day. Brand masters in brands/headcount/build.py.",
+    "slug": "headcount",
+    "selected_by_user": true,
+    "direction_selection": "user"
   }
 ]

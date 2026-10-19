@@ -1,0 +1,151 @@
+{
+  "brand": "Headcount",
+  "slug": "headcount",
+  "wordmark": "HEADCOUNT",
+  "direction": "A / Headcount: the door clicker",
+  "status": "owner-selected identity, October 19, 2026; template layouts are samples and are not approved social posts",
+  "direction_selection": "selected by the owner from four candidates on October 19, 2026 (studies/sus-quotient-directions)",
+  "repository": "subculture-collective/sus-quotient",
+  "score_name": "sus quotient",
+  "tag": "TWITCH TOP 200 / BY SUBCULT",
+  "headline": "Counting who is actually in the room.",
+  "support": [
+    "Viewbot, follow-bot and chat-bot signals for the top 200",
+    "Twitch channels. Private preview."
+  ],
+  "themes": {
+    "dark": {
+      "bg": "#121316",
+      "panel": "#1b1d22",
+      "raised": "#24272d",
+      "line": "#2e3138",
+      "fg": "#ecebe6",
+      "muted": "#9c9a92",
+      "accent": "#f2b53a",
+      "accent_ink": "#f2b53a",
+      "secondary": "#5fc4b8",
+      "critical": "#ff7a6b",
+      "ramp": [
+        "#5d5a51",
+        "#8a6d26",
+        "#d39a2c",
+        "#ffd77a"
+      ],
+      "wordmark": "#f2b53a",
+      "tertiary": "#a3adff"
+    },
+    "light": {
+      "bg": "#f5f4f0",
+      "panel": "#ffffff",
+      "raised": "#ecebe6",
+      "line": "#dcdad3",
+      "fg": "#121316",
+      "muted": "#5f5d57",
+      "accent": "#f2b53a",
+      "accent_ink": "#8a5a00",
+      "secondary": "#1f7a70",
+      "critical": "#c4262e",
+      "ramp": [
+        "#bab3a1",
+        "#be8118",
+        "#875606",
+        "#4f3504"
+      ],
+      "wordmark": "#121316",
+      "tertiary": "#4a55c4"
+    }
+  },
+  "fonts": {
+    "display": "Barlow Condensed",
+    "body": "Public Sans",
+    "label": "JetBrains Mono",
+    "files": {
+      "Barlow Condensed": [
+        "Barlow-Condensed-0.ttf",
+        "Barlow-Condensed-1.ttf",
+        "barlowcondensed-OFL.txt"
+      ],
+      "Public Sans": [
+        "Public-Sans-0.ttf",
+        "Public-Sans-1.ttf",
+        "publicsans-OFL.txt"
+      ],
+      "JetBrains Mono": [
+        "JetBrains-Mono-0.ttf",
+        "JetBrains-Mono-1.ttf",
+        "jetbrainsmono-OFL.txt"
+      ]
+    }
+  },
+  "mark": {
+    "unit": 24,
+    "strokes_x": [
+      4,
+      8.4,
+      12.8,
+      17.2
+    ],
+    "solid": 2,
+    "stroke": {
+      "y": 3.5,
+      "w": 2.6,
+      "h": 17
+    },
+    "hollow_line": 1.2,
+    "slash": {
+      "from": [
+        2,
+        17.2
+      ],
+      "to": [
+        22,
+        7.6
+      ],
+      "width": 2.8
+    }
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96
+  ],
+  "radii": {
+    "tile": "5/24 of width",
+    "panel": 6,
+    "control": 4,
+    "chip": 2
+  },
+  "mark_clear_space": "25% of mark height",
+  "mark_min_width_px": 33,
+  "lockup_min_width_px": 140,
+  "small_mark": {
+    "strokes_x": [
+      3.5,
+      9.5,
+      15.5
+    ],
+    "solid": 2,
+    "y": 3,
+    "w": 4.4,
+    "h": 18,
+    "hollow_line": 1.8,
+    "slash": {
+      "from": [
+        1.5,
+        17.5
+      ],
+      "to": [
+        22.5,
+        7
+      ],
+      "width": 3.4
+    }
+  },
+  "small_mark_note": "At 32px and below use the three-stroke small glyph (logos/mark-small.svg); the favicon uses it."
+}

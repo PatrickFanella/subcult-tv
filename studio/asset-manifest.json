@@ -1,8 +1,8 @@
 [
   {
     "path": "brand-tools/README.md",
-    "sha256": "20dfbc81b13c98adf497f6155ca7804e4b916e674956779e66c75e62db68a7bd",
-    "bytes": 19975
+    "sha256": "3b6d60376af2e6dfffd18bba77c8438f0a8dc955ea66f2bc2aef4ed62c63658f",
+    "bytes": 21263
   },
   {
     "path": "brand-tools/audit_patchwork_contrast.py",
@@ -5225,13 +5225,13 @@
   },
   {
     "path": "brand-tools/brands.json",
-    "sha256": "3b675bdf36d469fc3464b27ef88a946339001e9bf50be2f47bc06117a3c2fb65",
-    "bytes": 14235
+    "sha256": "255d25bafcc7a6b6de4454e18b255ef9f76e7a2cd7f398850d92567083697369",
+    "bytes": 15224
   },
   {
     "path": "brand-tools/build_packs.py",
-    "sha256": "3a02c6b03313bd729f3e71e8598818edfe199019641c8f48b93d63bc0583f2ce",
-    "bytes": 56412
+    "sha256": "32a8e2144aa57b0f47c35dce9e8a96f44271f2aefc7e1bd75f6b3b299d936047",
+    "bytes": 56539
   },
   {
     "path": "studies/clpr-directions/comparison.png",
@@ -6505,8 +6505,8 @@
   },
   {
     "path": "brands/index.html",
-    "sha256": "ba38bf006f1f5bb1d4645b30c029734cf80521a88fd29681d76b22b44305b5c3",
-    "bytes": 31197
+    "sha256": "43acf35382265f4ae9dce13d278515bd5990242940d898c7cf62d1190a16ed77",
+    "bytes": 32429
   },
   {
     "path": "brand-tools/kork_launch_assets.py",
@@ -6810,8 +6810,8 @@
   },
   {
     "path": "brand-tools/render_video_previews.py",
-    "sha256": "52af8b0c3ca5ede5a45cbde9bcd472d951a1e77fe2d5c30303ac769a2eb7a08e",
-    "bytes": 1033
+    "sha256": "349d6348298e08e0f01ad77fa3531fcee2651b7067fc93e233dc08b221c2a38e",
+    "bytes": 1144
   },
   {
     "path": "brand-tools/selected-directions.json",
@@ -7778,8 +7778,8 @@
   },
   {
     "path": "brands/README.md",
-    "sha256": "c074358eb9ddadbde7f735cb29cf80b125ed34c82ca7ca20f91698ecd23fa044",
-    "bytes": 3340
+    "sha256": "39a1a8547a5b8751a834384a47e133bbae8dc97de7dacabd0fae355181669a09",
+    "bytes": 3407
   },
   {
     "path": "brands/arkhiv/GUIDE.md",
