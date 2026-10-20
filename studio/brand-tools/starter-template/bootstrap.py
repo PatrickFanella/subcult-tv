@@ -42,7 +42,11 @@ for name,(w,h) in formats.items():
 (a.output/'brand.json').write_text(json.dumps(b,indent=2));(a.output/'tokens.json').write_text(json.dumps({'colors':c,'fonts':f,'spacing':[8,16,24,32,48,64,96],'text_contrast':round(ratio(c['text'],c['background']),2)},indent=2))
 (a.output/'tokens.css').write_text(':root {\n'+''.join('  --brand-'+k+': '+v+';\n' for k,v in c.items())+'}\n')
 (a.output/'source-register.json').write_text(json.dumps({'status':'starter','mark':b['mark_status'],'assets':[],'required_fields':['path','source','creator','rights','verified_at','intended_use']},indent=2))
-(a.output/'GUIDE.md').write_text('# '+b['name']+' starter\n\nReplace the temporary initials with an original mark. Set clear space and minimum sizes. Check all layouts for text fitting, crop behavior and contrast before export. Keep product claims and source records with their assets. Add alt text to finished images.\n\nSuggested minimum mark width: 32 pixels; clear space: one quarter of the mark height. Story content stays between y=250 and y=1670. Video templates use a 96-pixel outer margin.\n')
+(a.output/'GUIDE.md').write_text('# '+b['name']+' starter\n\nReplace the temporary initials with an original mark. Set clear space and minimum sizes. Check all layouts for text fitting, crop behavior and contrast before export. Keep product claims and source records with their assets. Add alt text to finished images.\n\nComplete the [marketing starter](marketing/README.md) alongside the visual identity. Product name and destination are prefilled; research, claims, pricing and campaign decisions still need evidence.\n\nSuggested minimum mark width: 32 pixels; clear space: one quarter of the mark height. Story content stays between y=250 and y=1670. Video templates use a 96-pixel outer margin.\n')
+shutil.copytree(src/'marketing',a.output/'marketing')
+for q in (a.output/'marketing').glob('*.md'):
+ body=q.read_text().replace('{{PRODUCT}}',b['name']).replace('{{NAME_AND_URL}}',b['name']+' — '+b['website']).replace('{{BRAND_TOKEN_REFERENCE}}','../tokens.json')
+ q.write_text(body)
 files=[]
 for q in a.output.rglob('*'):
  if q.is_file() and '.font-cache' not in q.parts:files.append({'path':str(q.relative_to(a.output)),'sha256':hashlib.sha256(q.read_bytes()).hexdigest(),'bytes':q.stat().st_size})

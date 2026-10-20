@@ -8,6 +8,7 @@ Studio is the private production area of the combined `subcult-tv` repository. I
 | --- | --- |
 | [Brands](brands/README.md) | One production pack per brand: guide, tokens, logos, layouts, fonts and manifest |
 | [Brand tools](brand-tools/README.md) | Pack generators, shared fonts, editable masters and the starter kit |
+| [Marketing starter](brand-tools/starter-template/marketing/README.md) | Product context, claim evidence, copy, demo and campaign worksheets, and seven drafting prompts; included with the brand starter |
 | [Patrick source](brand-tools/patrick/README.md) | Selected Patch design system, generator and seven approved waveform treatments |
 | `media/` | Original captures, generated artwork, edits, recipes and hash-bound catalog |
 | [Design references](references/USAGE.md) | Curated observations and 590 searchable reference records |

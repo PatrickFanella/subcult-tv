@@ -12,5 +12,6 @@ package:
 
 check-studio:
 	python scripts/check_studio.py
+	python -m unittest discover -s scripts -p 'test_bootstrap_marketing.py'
 	python -m unittest discover -s scripts -p 'test_export_posting.py'
 	python -m unittest discover -s scripts -p 'test_sync_posting_dashboard.py'

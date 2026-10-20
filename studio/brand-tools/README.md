@@ -42,7 +42,7 @@ The pack builder needs Python 3 with Pillow, Inkscape, rsvg-convert and fontconf
 
 Re-render selected library assets from the builder. Do not change PNG exports separately.
 
-The starter kit creates a new brand from `brand.json` without copying any existing product's mark. See `starter-template/README.md`. It creates fourteen editable layouts, tokens, a source register and a manifest, and optional rendering produces PNGs. It rejects invalid colors, text contrast below 4.5:1 and existing output directories.
+The [starter kit](starter-template/README.md) creates a new brand from `brand.json` without copying any existing product's mark. It creates fourteen editable layouts, tokens, a source register, a [marketing packet](starter-template/marketing/README.md), and a manifest; optional rendering produces PNGs. It rejects invalid colors, text contrast below 4.5:1 and existing output directories.
 
 ### Headline revision, October 3, 2026
 
