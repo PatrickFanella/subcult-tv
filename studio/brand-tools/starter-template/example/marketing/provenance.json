@@ -1,0 +1,23 @@
+{
+  "repository": "subculture-collective/codex-skills",
+  "revision": "c70823b3494d4281a450859facb77264bdf155d9",
+  "status": "Selected Studio companion snapshot of original Subcult templates and prompts; no third-party skill library included.",
+  "files": [
+    {
+      "source": "shared/marketing-packet/assets/starter-template/context.md",
+      "target": "context.md",
+      "sha256": "40ec6c2f5731fb7da9554fe5acc0018a5f5d981abd4f7e135e7593d1641aa1fd"
+    },
+    {
+      "source": "shared/marketing-packet/assets/starter-template/packet.md",
+      "target": "packet.md",
+      "sha256": "3e66aa3b01bb70edf07e47071d72da9c218e5b9d9b5a26ca3706f4058b3bcdc1"
+    },
+    {
+      "source": "shared/marketing-packet/assets/prompts.md",
+      "target": "prompts.md",
+      "sha256": "f8ed0dbf15319907481d6699d268168b5f3e8fe66b4907c8b95696c0d824aaed"
+    }
+  ],
+  "adaptation": "Studio README describes the local brand-template workflow. Bootstrap fills product name, URL, and brand-token reference; all other research and evidence fields remain explicit placeholders."
+}

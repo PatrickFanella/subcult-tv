@@ -29,8 +29,8 @@
     },
     {
       "path": "GUIDE.md",
-      "sha256": "603403ae14c48e2ac9e6c19ef11a074cfbb89b0b9ec71237c80089ab3798f17f",
-      "bytes": 457
+      "sha256": "f9052cb092f8416092555ce407bb93e9a6bc9a2a64030efaf2dd42000653a07f",
+      "bytes": 657
     },
     {
       "path": "fonts/Space-Grotesk-0.ttf",
@@ -216,6 +216,31 @@
       "path": "video/lower-third.png",
       "sha256": "0ee21a593a1d557c9a8b0cb0d995dd900b73323c7c84d8a71a28f3a7f8b29309",
       "bytes": 21965
+    },
+    {
+      "path": "marketing/README.md",
+      "sha256": "124f0d4c0cefd6bf12b0accefc9a91349c8d8dcdda21dcf935c137d0319ac4f9",
+      "bytes": 2490
+    },
+    {
+      "path": "marketing/context.md",
+      "sha256": "86f925bf59be1f0c0232a47601d3d8a704ac5acb580eba8d136d6b87d8c6ab81",
+      "bytes": 2915
+    },
+    {
+      "path": "marketing/packet.md",
+      "sha256": "86de6c9a7aa034d4876ded443655d30d525c930dd12e489aa3a70ff1f666d9f3",
+      "bytes": 4579
+    },
+    {
+      "path": "marketing/prompts.md",
+      "sha256": "f8ed0dbf15319907481d6699d268168b5f3e8fe66b4907c8b95696c0d824aaed",
+      "bytes": 4591
+    },
+    {
+      "path": "marketing/provenance.json",
+      "sha256": "164c2352f62d44d4e99622761145c6aaa03838a9824b4a1f89620d9c543a668c",
+      "bytes": 1066
     }
   ]
 }

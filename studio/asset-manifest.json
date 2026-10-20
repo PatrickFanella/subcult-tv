@@ -1,8 +1,8 @@
 [
   {
     "path": "brand-tools/README.md",
-    "sha256": "ffd530a147071af59c8997636de5c2b042cdb664535ff413d31cbcd89f0c3b33",
-    "bytes": 21278
+    "sha256": "bd9b270415a60ae4b68febf45ad0d646c4fb840f6070a728b1210417d3acf20f",
+    "bytes": 21331
   },
   {
     "path": "brand-tools/audit_patchwork_contrast.py",
@@ -6820,13 +6820,13 @@
   },
   {
     "path": "brand-tools/starter-template/README.md",
-    "sha256": "4fbff4a71003e11f8ecb17c476c3a576a7219215aae16dedbedbbc1b30c691d7",
-    "bytes": 1470
+    "sha256": "a2733d7c45927ca25bcc7ffa62733f0bd5e667aba7abef32e9929e659e85b1ae",
+    "bytes": 1989
   },
   {
     "path": "brand-tools/starter-template/bootstrap.py",
-    "sha256": "af1b00ac8d8c4df7669669eef469a7a462eee08951ed5856517a8d2a79c5f473",
-    "bytes": 5545
+    "sha256": "10deb7c2bddbdd41f94d93cf6cb425609b8a9f2b909feaab39fa61a84f739c49",
+    "bytes": 6033
   },
   {
     "path": "brand-tools/starter-template/brand.json",
@@ -6835,13 +6835,13 @@
   },
   {
     "path": "brand-tools/starter-template/example/GUIDE.md",
-    "sha256": "603403ae14c48e2ac9e6c19ef11a074cfbb89b0b9ec71237c80089ab3798f17f",
-    "bytes": 457
+    "sha256": "f9052cb092f8416092555ce407bb93e9a6bc9a2a64030efaf2dd42000653a07f",
+    "bytes": 657
   },
   {
     "path": "brand-tools/starter-template/example/asset-manifest.json",
-    "sha256": "72d3582500b43b90d7ff68f5d92955345505815d7e36dd4385b1a808a03409bb",
-    "bytes": 6712
+    "sha256": "9a5400c14393ba04d38bc51adeb6baca916a93cd6600f128a7ba491207c80672",
+    "bytes": 7490
   },
   {
     "path": "brand-tools/starter-template/example/brand.json",
@@ -9570,5 +9570,55 @@
     "path": "brands/tmux-popups/tokens.json",
     "sha256": "a066fe5c0717c65183234c456f7c716ed2864783a6ddaa273b085512e66a3a85",
     "bytes": 1407
+  },
+  {
+    "path": "brand-tools/starter-template/example/marketing/README.md",
+    "sha256": "124f0d4c0cefd6bf12b0accefc9a91349c8d8dcdda21dcf935c137d0319ac4f9",
+    "bytes": 2490
+  },
+  {
+    "path": "brand-tools/starter-template/example/marketing/context.md",
+    "sha256": "86f925bf59be1f0c0232a47601d3d8a704ac5acb580eba8d136d6b87d8c6ab81",
+    "bytes": 2915
+  },
+  {
+    "path": "brand-tools/starter-template/example/marketing/packet.md",
+    "sha256": "86de6c9a7aa034d4876ded443655d30d525c930dd12e489aa3a70ff1f666d9f3",
+    "bytes": 4579
+  },
+  {
+    "path": "brand-tools/starter-template/example/marketing/prompts.md",
+    "sha256": "f8ed0dbf15319907481d6699d268168b5f3e8fe66b4907c8b95696c0d824aaed",
+    "bytes": 4591
+  },
+  {
+    "path": "brand-tools/starter-template/example/marketing/provenance.json",
+    "sha256": "164c2352f62d44d4e99622761145c6aaa03838a9824b4a1f89620d9c543a668c",
+    "bytes": 1066
+  },
+  {
+    "path": "brand-tools/starter-template/marketing/README.md",
+    "sha256": "124f0d4c0cefd6bf12b0accefc9a91349c8d8dcdda21dcf935c137d0319ac4f9",
+    "bytes": 2490
+  },
+  {
+    "path": "brand-tools/starter-template/marketing/context.md",
+    "sha256": "40ec6c2f5731fb7da9554fe5acc0018a5f5d981abd4f7e135e7593d1641aa1fd",
+    "bytes": 2921
+  },
+  {
+    "path": "brand-tools/starter-template/marketing/packet.md",
+    "sha256": "3e66aa3b01bb70edf07e47071d72da9c218e5b9d9b5a26ca3706f4058b3bcdc1",
+    "bytes": 4583
+  },
+  {
+    "path": "brand-tools/starter-template/marketing/prompts.md",
+    "sha256": "f8ed0dbf15319907481d6699d268168b5f3e8fe66b4907c8b95696c0d824aaed",
+    "bytes": 4591
+  },
+  {
+    "path": "brand-tools/starter-template/marketing/provenance.json",
+    "sha256": "164c2352f62d44d4e99622761145c6aaa03838a9824b4a1f89620d9c543a668c",
+    "bytes": 1066
   }
 ]

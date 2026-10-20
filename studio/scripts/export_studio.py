@@ -75,7 +75,7 @@ def export(destination, site=None, posting_state=None):
         record["asset"] = asset(source)
         media.append(record)
     documents = []
-    text_roots = [(ROOT / "content", "Studio"), (REPOSITORY_ROOT / "content/posts", "Articles"), (REPOSITORY_ROOT / "content/posts-ii", "Articles")]
+    text_roots = [(ROOT / "content", "Studio"), (REPOSITORY_ROOT / "content/posts", "Articles"), (REPOSITORY_ROOT / "content/posts-ii", "Articles"), (PACK / "starter-template/marketing", "Marketing starter")]
     for source_root, section in text_roots:
         for source in sorted(source_root.rglob("*")):
             if not source.is_file() or source.suffix.lower() not in (".md", ".mdx"):

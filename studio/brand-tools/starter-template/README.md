@@ -16,6 +16,7 @@ The kit supplies:
 - a screenshot frame
 - video title, thumbnail, end-card and transparent lower-third layouts
 - Space Grotesk, Public Sans and JetBrains Mono, with their OFL licenses
+- a [marketing packet starter](marketing/README.md) with context, evidence, copy, a demo brief, a campaign plan, and seven drafting prompts
 
 The initials are temporary artwork, not a finished identity.
 
@@ -28,4 +29,6 @@ The initials are temporary artwork, not a finished identity.
 5. Record the source and publication rights for photos, screenshots, quotations and footage.
 6. Before publication, replace placeholder copy, verify claims and write alt text.
 
-The guides under `../brands/` show completed systems. Each product's voice is in [the voice guide](../../content/VOICE.md).
+The generated pack includes `marketing/` beside the visual assets. The bootstrap fills its product name, destination, and token reference from `brand.json`. Complete the remaining fields using current product evidence. The starter is also included in `starter-template.zip`; its documents are available in the authenticated Studio text library under “Marketing starter.”
+
+The guides under `../../brands/` show completed systems. Each product's voice is in [the voice guide](../../content/VOICE.md).

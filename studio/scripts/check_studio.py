@@ -117,6 +117,16 @@ class StudioExportChecks(unittest.TestCase):
             with self.subTest(destination=destination), self.assertRaises(ValueError):
                 export(destination)
 
+    def test_marketing_starter_is_available_only_in_the_private_text_catalog(self):
+        documents = [d for d in self.catalog['documents'] if d['section'] == 'Marketing starter']
+        self.assertEqual({d['name'] for d in documents}, {'README.md', 'context.md', 'packet.md', 'prompts.md'})
+        for document in documents:
+            source = PACK/'starter-template/marketing'/document['name']
+            self.assertEqual(document['body'], source.read_text())
+            asset = self.catalog['files'][document['asset']]
+            self.assertEqual(asset['sha256'], hashlib.sha256(source.read_bytes()).hexdigest())
+            self.assertTrue(asset['path'].startswith('assets/'))
+
 
 if __name__ == '__main__':
     unittest.main()
