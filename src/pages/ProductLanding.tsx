@@ -7,6 +7,7 @@ import { BRAND_HEROES, SCREENSHOT_CAPTIONS } from '@/lib/product-visuals';
 import { PRODUCT_MARKS } from '@/lib/product-marks';
 import { getProductPath, PRODUCT_ROUTES } from '@/lib/product-paths';
 import NotFound from '@/pages/NotFound';
+import { PRODUCT_SUPPORT } from '@/lib/product-support';
 import '@/styles/product-landings.css';
 import '@/styles/product-fonts.css';
 
@@ -145,9 +146,7 @@ export default function ProductLanding() {
             <p className="landing-eyebrow">MADE IN THE OPEN</p>
             <h2 id="support-title">{project.name} is made by SUBCULT.</h2>
             <p>
-              Patreon pays for the hours and the hosting. Paid members get private channels in our
-              Discord and supporter posts, which show up when we have something to share. The
-              monthly newsletter is free.
+              {PRODUCT_SUPPORT[project.slug] ?? 'Support SUBCULT, the studio behind this project.'}
             </p>
           </div>
           <div className="landing-actions">

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import SupportCallout from '@/components/SupportCallout';
 import SocialLinks from '@/components/SocialLinks';
 import NewsletterSignup from '@/components/NewsletterSignup';
@@ -7,10 +7,12 @@ import { getProductPath } from '@/lib/product-paths';
 
 export default function Footer() {
   const products = useShowcaseProducts();
+  const { pathname } = useLocation();
+  const showCallout = ['/', '/products', '/about', '/development', '/contact'].includes(pathname);
   return (
     <footer className="border-t border-fog bg-soot" role="contentinfo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <SupportCallout />
+        {showCallout && <SupportCallout />}
         <div className="grid md:grid-cols-2 lg:grid-cols-[1fr_1fr_1.5fr] gap-10">
           <div>
             <Link
@@ -28,6 +30,9 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/contact">Contact</Link>
+              </li>
+              <li>
+                <Link to="/support">Support SUBCULT</Link>
               </li>
             </ul>
             <SocialLinks />

@@ -1,6 +1,6 @@
 # How SUBCULT sites present support
 
-Proposed policy, October 2, 2026. Activate after the Patreon offer is published and verified. Existing sites were not modified by this draft.
+Original proposal: October 2, 2026. Support-link implementation baseline reviewed October 20, 2026 at the owner’s request. The public offer now matches the revised tier descriptions; checkout and Discord entitlement remain separate verification gates. See the dated coverage section below.
 
 ## Shared message
 
@@ -84,3 +84,36 @@ Link to the central Support page only if that page accurately describes the curr
 6. Record the source revision and deployment evidence per repository. Never call a local preview a live rollout.
 
 Measure support-link clicks with existing first-party, consent-aware analytics where configured. Count site visits/clicks separately from Patreon joins; a click is not a conversion. Do not add third-party pixels, member identifiers or personal email addresses to link parameters. Source labels, if needed, should be coarse site names and must survive a tested redirect; do not assume arbitrary campaign parameters work on the custom domain.
+
+## October 20 coverage and review baseline
+
+The owner requested a cross-project audit and reviewable fixes on October 20, 2026. Use the placement, destination and recipient rules above as the implementation baseline. The public branded Patreon destination and its five paid tier descriptions were read back on that date: Supporter $5, Backer $10, Patron $25, Groceries $400 and Rent $1,500 per month, with shared access and no fixed schedule. This observation does not prove checkout, Discord entitlement or access removal. Retain those separate activation checks.
+
+The public catalog had 23 products during the audit; current source also includes Headcount. Product landings use one contextual support block plus a quiet footer link. The shared promotional footer block is suppressed on individual product landings and the Support page. Each product names SUBCULT as recipient and explains its own payment or ownership boundary; prices and reward descriptions remain centralized.
+
+### Additional owned properties
+
+| Property | Placement and boundary |
+| --- | --- |
+| Headcount | Quiet footer or methodology/About. Support goes to SUBCULT, not channels, and cannot change a score. |
+| Commons | Platform footer/About. Contributions support SUBCULT, not a listed project or builder; preserve their own funding links. |
+| Chatty Cat | Help/About or quiet application footer. Separate studio support from Twitch subscriptions and channel tips. |
+| Backline | Public pilot landing footer and dashboard About. Membership does not grant installation, pilot access or moderation services. |
+| Subsets | Standalone landing footer. Support is optional and separate from local folder ownership. |
+| Tadooer | Public product landing. Private owner installations need no promotional ask; an operator may choose an About link. |
+| Arkhiv | Platform footer/About. Support software maintenance; do not sell access to collections or imply a reuse license. |
+| Lineage | About/credits or platform footer only if compatible with each recording policy. Name SUBCULT; preserve taper/source credits. |
+| Anarchist Archive and Riot Grrrl Archive | Quiet platform footer/About. Explain studio software support, with no purchase or licensing of documents. |
+| Bill Nye TV and Democracy Now archive viewers | Preserve source and rights context. Do not add a competing funding ask beside third-party programming; use the Arkhiv product landing for studio support. |
+| Dedhed | Deliberate exception: no support solicitation. Preserve its free, noncommercial audience-recording policy and source credits. |
+| Overlaid | Public product landing; optional operator About. No asks in browser-source overlays, failures or live controls. |
+| Signed & Sent / envelope editor | Quiet footer naming SUBCULT and linking to the central page. Keep export controls primary. |
+| Clustr | Quiet footer or field guide, outside the visualization. Contributions support SUBCULT, not communities represented in the graph. |
+| Desktop/editor plugins and developer tools | Public product landing; optional Help/About in the tool. No payment prompt in a task, microphone permission, recovery or failed command. |
+| Patrick Fanella portfolio | Quiet footer in first person. Support goes to SUBCULT; keep role inquiries and case studies primary. |
+
+Private infrastructure, login gates, client properties and unannounced creative projects are outside automatic rollout. SUBCORP and Edda need an operator/status review before adding a support ask; public reachability alone does not establish inclusion. Creator-owned Kork pages and Commons listings keep their creators own payment destinations.
+
+### HTML metadata and discovery
+
+For public pages, inspect initial HTML as well as the rendered DOM: descriptive titles and descriptions, canonical URLs, accurate social metadata, existing images that return the expected media type, and valid crawler endpoints. A JavaScript-updated title is not the initial HTML. A 200 response containing the app shell is not a robots file or sitemap. List only public canonical pages in a sitemap. Private account, operator, preview and recovery routes keep their indexing boundaries. Do not remove an intentional noindex rule to improve a checklist score. Schema data describes only visible, supported claims; no invented ratings, prices, authorship or launch status.
