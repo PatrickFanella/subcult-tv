@@ -1,3 +1,4 @@
+import CampaignContext from './CampaignContext';
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import {
   approveReviewDraft,
@@ -323,6 +324,7 @@ export default function InstagramReview({
         </label>
       </div>
       <div className="review-sheet-controls">
+      <CampaignContext draft={draft} />
         {draft.craft?.angle && (
           <section aria-label="Why this post">
             <h3>Why this post</h3>

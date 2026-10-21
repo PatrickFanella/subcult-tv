@@ -2,6 +2,8 @@
 
 Prepared October 21, 2026. Working direction for preparation and owner review. Audience descriptions are hypotheses to test. This does not approve copy, outreach, schedules or publication.
 
+Packet ownership, revision loading, evidence registration and review decisions are documented in [OPERATING.md](OPERATING.md). The selected packet registry is [packets.json](packets.json).
+
 The maintained runtime input is [strategies.json](strategies.json). It covers the 24 projects in the website catalogue and The Common House. Product repositories own technical claims; Studio owns campaign direction, voice and media. The [claims register](../social/Product%20Claims%20Register.md) remains the fact boundary and [VOICE](../VOICE.md) remains the voice owner.
 
 ## How preparation changes

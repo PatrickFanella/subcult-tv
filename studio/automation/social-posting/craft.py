@@ -33,13 +33,16 @@ def read(path, default=''):
 
 def guidance(cfg):
     """Shared, read-only context every stage receives."""
+    pack = strategy.context(cfg)
     return {
+        'demonstration_evidence': [asset for project in pack.get('campaign_review', {}).get('projects', {}).values()
+            for theme in project.get('themes', []) for asset in theme.get('assets', []) if asset.get('passed')],
         'voice': read(STUDIO/'content/VOICE.md'),
         'style': read(Path.home()/'.codex/skills/unslop/SKILL.md'),
         'research': read(RESEARCH/'DIGEST.md'),
         'patterns': read(RESEARCH/'post-patterns.md')[:60000],
         'examples': read(CRAFT/'examples.md'),
-        'marketing_strategies': strategy.context(cfg),
+        'marketing_strategies': pack,
     }
 
 
@@ -264,7 +267,8 @@ def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change'
                     'craft': {'reader': item.get('reader', ''), 'reason': item.get('reason', ''),
                               'pattern': next((a['pattern'] for a in item.get('angles', [])[:1]), ''),
                               'scores': scores[0] if scores else {}, 'alternatives': alternatives,
-                              'campaign': shared.get('campaign', {})}})
+                              'campaign': (shared.get('campaign') or {}).get('review_metadata') or
+                                  strategy.metadata(cfg, draft['product'], theme=draft.get('angle', ''))}})
     return {'drafts': out, 'open_checks': final['open_checks'] +
             [f"Skipped {', '.join(s['source_ids'])}: {s['why']}" for s in brief['skipped']]}
 
@@ -275,8 +279,11 @@ URL = re.compile(r'https?://\S+')
 def polish_short(cfg, drafts, directory, limit=280, owner=()):
     """Critique and rewrite short X/Bluesky drafts in place; keep any rewrite that fails a check.
 
-    Returns the private polish record. Never raises: the original drafts stay valid.
+    Returns the private polish record. Editor failures preserve the original text;
+    an invalid selected packet stops preparation before the editor call.
     """
+    for draft in drafts:
+        strategy.attach(cfg, draft)
     try:
         payload = {**guidance(cfg), 'drafts': [{'index': n, 'account': d.get('account', ''), 'kind': d.get('kind', ''),
                                                 'text': d.get('text', ''), 'evidence': d.get('evidence', '')}
@@ -288,7 +295,10 @@ def polish_short(cfg, drafts, directory, limit=280, owner=()):
     record = {'status': 'ok', 'changes': []}
     for edit in result['drafts']:
         n = edit['index']
-        if not 0 <= n < len(drafts) or not edit['changed']:
+        if not 0 <= n < len(drafts):
+            continue
+        strategy.attach(cfg, drafts[n], edit.get('project', ''), edit.get('pillar_id', ''), reader_action=edit.get('reader_action'))
+        if not edit['changed']:
             continue
         old, new = drafts[n].get('text', ''), edit['text'].strip()
         if not new or len(new) > limit or set(URL.findall(old)) - set(URL.findall(new)):

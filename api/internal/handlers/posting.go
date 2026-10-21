@@ -40,14 +40,32 @@ type postingMedia struct {
 	Image      *postingImage  `json:"image,omitempty"`
 	Candidates []postingImage `json:"candidates,omitempty"`
 }
+type postingCampaign struct {
+	ReviewDecision string   `json:"review_decision"`
+	AssetIDs       []string `json:"asset_ids"`
+	ResultIDs      []string `json:"result_ids"`
+	Status         string   `json:"status"`
+	Project        string   `json:"project"`
+	ProjectName    string   `json:"project_name"`
+	PacketRevision string   `json:"packet_revision"`
+	PacketSHA256   string   `json:"packet_sha256"`
+	PillarID       string   `json:"pillar_id"`
+	Theme          string   `json:"theme"`
+	ReaderAction   string   `json:"reader_action"`
+	Destination    string   `json:"destination"`
+	Measurement    string   `json:"measurement"`
+	AssetTask      string   `json:"asset_task"`
+	Flags          []string `json:"flags"`
+}
 type postingCraft struct {
-	Angle        string         `json:"angle"`
-	Reader       string         `json:"reader"`
-	Reason       string         `json:"reason"`
-	Pattern      string         `json:"pattern"`
-	Predicted    string         `json:"predicted"`
-	Scores       map[string]int `json:"scores"`
-	Alternatives []string       `json:"alternatives"`
+	Campaign     *postingCampaign `json:"campaign,omitempty"`
+	Angle        string           `json:"angle"`
+	Reader       string           `json:"reader"`
+	Reason       string           `json:"reason"`
+	Pattern      string           `json:"pattern"`
+	Predicted    string           `json:"predicted"`
+	Scores       map[string]int   `json:"scores"`
+	Alternatives []string         `json:"alternatives"`
 }
 type postingDraft struct {
 	ID         string        `json:"id"`
