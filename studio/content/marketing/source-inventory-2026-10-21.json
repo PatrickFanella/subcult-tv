@@ -1,0 +1,179 @@
+{
+  "observed_at": "2026-10-21T23:26:23.514609+00:00",
+  "projects": {
+    "clpr": {
+      "status": "inspected",
+      "repository": "subculture-collective/clpr",
+      "default_branch": "main",
+      "marketing_documents": [
+        "docs/marketing/README.md",
+        "docs/marketing/clpr/context.md",
+        "docs/marketing/clpr/launch-plan.md",
+        "docs/marketing/clpr/packet.md",
+        "docs/marketing/prompts.md",
+        "docs/marketing/sources/README.md",
+        "docs/marketing/starter-template/README.md",
+        "docs/marketing/starter-template/context.md",
+        "docs/marketing/starter-template/packet.md"
+      ],
+      "tree_sha": "0ed0e930b6e4a2cd4225614c795b1781b072a71c"
+    },
+    "patchwork": {
+      "status": "inspected",
+      "repository": "subculture-collective/patchwork",
+      "default_branch": "main",
+      "marketing_documents": [],
+      "tree_sha": "ad1f1974627406086dccba8953061571757da2b2"
+    },
+    "hasanara": {
+      "status": "inspected",
+      "repository": "subculture-collective/hasanara",
+      "marketing_documents": [],
+      "tree_sha": "bc8b47e8f1d97aa13c346fcec2a9e0240a70864e"
+    },
+    "rekolekt": {
+      "status": "inspected",
+      "repository": "subculture-collective/rekolekt",
+      "marketing_documents": [],
+      "tree_sha": "65901ad91bdc0488323305a5c1b81fe49188f471"
+    },
+    "subcult-os": {
+      "status": "inspected",
+      "repository": "subculture-collective/subcult-os",
+      "marketing_documents": [],
+      "tree_sha": "4d426b499cf67039af9b008fe02988b3c8b3e304"
+    },
+    "undertow": {
+      "status": "inspected",
+      "repository": "subculture-collective/undertow",
+      "marketing_documents": [],
+      "tree_sha": "f6331521fcaa6d597bc29c8f5d8c5768b3bc8a96"
+    },
+    "prichal": {
+      "status": "inspected",
+      "repository": "subculture-collective/prichal",
+      "marketing_documents": [],
+      "tree_sha": "5e4bb7353ad9729f7d1e210f0304794b128ba6d9"
+    },
+    "kork": {
+      "status": "inspected",
+      "repository": "subculture-collective/kork",
+      "marketing_documents": [],
+      "tree_sha": "73dcb67b32d361757f2996466141e9c048c81528"
+    },
+    "left-field": {
+      "status": "inspected",
+      "repository": "subculture-collective/left-field",
+      "default_branch": "main",
+      "marketing_documents": [],
+      "tree_sha": "c6afe9f66ccb15b4cfe2e3cada4ee7e1b0a48b90"
+    },
+    "subsets": {
+      "status": "inspected",
+      "repository": "subculture-collective/subsets",
+      "marketing_documents": [
+        "docs/marketing/README.md",
+        "docs/marketing/context.md",
+        "docs/marketing/launch-plan.md",
+        "docs/marketing/packet.md",
+        "docs/marketing/prompts.md"
+      ],
+      "tree_sha": "a512449e4ed63bd9882e6e8e677664c5937be998"
+    },
+    "tadooer": {
+      "status": "inspected",
+      "repository": "subculture-collective/tadooer",
+      "default_branch": "main",
+      "marketing_documents": [],
+      "tree_sha": "fee1c0f68d2d6ca3bbaadc0c66405ac6416cd728"
+    },
+    "chatty-cat": {
+      "status": "inspected",
+      "repository": "subculture-collective/chatty-cat",
+      "default_branch": "main",
+      "marketing_documents": [],
+      "tree_sha": "b612807441f9d1d715e05fc2ea3758ebf3d7a4c6"
+    },
+    "headcount": {
+      "status": "inspected",
+      "repository": "subculture-collective/headcount",
+      "marketing_documents": [],
+      "tree_sha": "03d8112b1ed48ba6155b03b880a65dce828f8863"
+    },
+    "backline": {
+      "status": "inspected",
+      "repository": "subculture-collective/backline",
+      "default_branch": "main",
+      "marketing_documents": [],
+      "tree_sha": "84883c1524a862d43acfce9ab696a713a2c82dab"
+    },
+    "arkhiv": {
+      "status": "inspected",
+      "repository": "subculture-collective/arkhiv",
+      "marketing_documents": [],
+      "tree_sha": "51c44f4402c0c2d5bcbc1ac3e976219ab92ae407"
+    },
+    "overlaid": {
+      "status": "inspected",
+      "repository": "subculture-collective/overlaid",
+      "default_branch": "main",
+      "marketing_documents": [],
+      "tree_sha": "af2ea9bc782bc7373e462a30c50220fdcd556355"
+    },
+    "pirs": {
+      "status": "inspected",
+      "repository": "subculture-collective/pirs",
+      "marketing_documents": [],
+      "tree_sha": "f90e80b8978e82e989bb50b5ae35aab7f40bcba8"
+    },
+    "tmux-popups": {
+      "status": "inspected",
+      "repository": "PatrickFanella/tmux-popups",
+      "marketing_documents": [],
+      "tree_sha": "df2d70710e85bc58348e9c267489f1646578fb61"
+    },
+    "omarchy-monitor-bar": {
+      "status": "inspected",
+      "repository": "PatrickFanella/omarchy-monitor-bar",
+      "marketing_documents": [],
+      "tree_sha": "761740b29e58668a11d9d5984c12d9c65c238ca3"
+    },
+    "omarchy-superproductivity": {
+      "status": "inspected",
+      "repository": "PatrickFanella/omarchy-superproductivity",
+      "marketing_documents": [],
+      "tree_sha": "bafa5a44285c09f48c9f3696a3549352ab64a6e0"
+    },
+    "omarchy-plugin-spool": {
+      "status": "inspected",
+      "repository": "subculture-collective/omarchy-plugin-spool",
+      "marketing_documents": [],
+      "tree_sha": "f205f3137296f219be78fff6f868424163a8704c"
+    },
+    "omarchy-plugin-shelfish": {
+      "status": "inspected",
+      "repository": "PatrickFanella/omarchy-plugin-shelfish",
+      "marketing_documents": [],
+      "tree_sha": "3e3de61302d1aa6b08375f8de7688af77ce0b328"
+    },
+    "obsidian-plugin-metronome-tuner": {
+      "status": "inspected",
+      "repository": "PatrickFanella/obsidian-plugin-metronome-tuner",
+      "marketing_documents": [],
+      "tree_sha": "2c94857176d30929e1606d8b96da4f43e2e2805f"
+    },
+    "super-productivity-mcp": {
+      "status": "inspected",
+      "repository": "PatrickFanella/super-productivity-mcp",
+      "marketing_documents": [],
+      "tree_sha": "7d99f9c19e16ff8667d4e155f7406e2377ef6d5f"
+    },
+    "the-common-house": {
+      "status": "inspected",
+      "repository": "subculture-collective/the-common-house",
+      "commit": "4266381d265725a5bd6877228892afad4c9d9311",
+      "marketing_documents": []
+    }
+  },
+  "note": "Read-only current main tree inventory; unavailable refs are not evidence that a packet is absent."
+}

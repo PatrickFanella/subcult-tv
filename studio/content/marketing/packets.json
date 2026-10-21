@@ -2,7 +2,7 @@
   "version": 1,
   "projects": {
     "clpr": {
-      "owner": "Studio campaign direction; product repository owns technical claims",
+      "owner": "clpr owns the upstream marketing packet and technical claims; Studio owns campaign adaptations.",
       "review_after": "2026-11-20",
       "files": [
         {
@@ -120,12 +120,40 @@
       ]
     },
     "subsets": {
-      "owner": "Studio campaign direction; product repository owns technical claims",
+      "owner": "subsets owns the upstream marketing packet and technical claims; Studio owns campaign adaptations.",
       "review_after": "2026-11-20",
       "files": [
         {
           "path": "packets/subsets/packet.md",
           "sha256": "177c7864ad657fe90d805e7109e3c2ecdff8822db089469267433819e9232884"
+        }
+      ],
+      "upstream": {
+        "checkout": "/home/onnwee/Work/Tools/subsets",
+        "remote": "origin",
+        "ref": "main",
+        "documents": [
+          "docs/marketing/context.md",
+          "docs/marketing/packet.md",
+          "docs/marketing/launch-plan.md"
+        ]
+      },
+      "captured_revision": "9e6754abe1b7f4a1eb004a77a211da4882393d80",
+      "fallback": [
+        {
+          "path": "sources/subsets-context.md",
+          "sha256": "0900b16b5a6e7474040b0ab39c98906fa81de4e1444c351e3dc8a789656aaa9b",
+          "original_path": "docs/marketing/context.md"
+        },
+        {
+          "path": "sources/subsets-packet.md",
+          "sha256": "f3ebace8c94913a18f4f70c17df6a89310cd75799001c67c2675733f1ce94ddd",
+          "original_path": "docs/marketing/packet.md"
+        },
+        {
+          "path": "sources/subsets-launch-plan.md",
+          "sha256": "ed6837d7ae4574ff6eb45ef9235672c436a591df935ecba454ebab0f2502e80e",
+          "original_path": "docs/marketing/launch-plan.md"
         }
       ]
     },

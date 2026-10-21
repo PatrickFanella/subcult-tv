@@ -22,6 +22,20 @@ class MarketingStrategies(unittest.TestCase):
                     self.assertTrue(project[key])
                 self.assertEqual(len({p['id'] for p in project['pillars']}), len(project['pillars']))
 
+    def test_every_strategy_has_a_selected_packet_and_complete_source_inventory(self):
+        root = STUDIO/'content/marketing'
+        projects = json.loads((root/'strategies.json').read_text())['projects']
+        selected = json.loads((root/'packets.json').read_text())['projects']
+        inventory = json.loads((root/'source-inventory-2026-10-21.json').read_text())['projects']
+        self.assertEqual(set(projects), set(selected))
+        self.assertEqual(set(projects), set(inventory))
+        self.assertTrue(all(r['status'] == 'inspected' for r in inventory.values()))
+        for entry in selected.values():
+            for record in entry['files'] + entry.get('fallback', []):
+                self.assertEqual(hashlib.sha256((root/record['path']).read_bytes()).hexdigest(), record['sha256'])
+        self.assertIn('upstream', selected['clpr'])
+        self.assertIn('upstream', selected['subsets'])
+
     def test_selected_packet_sources_keep_their_exact_bytes(self):
         root = STUDIO/'content/marketing/sources'
         for source in json.loads((root/'manifest.json').read_text()):
