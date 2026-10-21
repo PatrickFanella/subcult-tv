@@ -8,6 +8,23 @@ from datetime import datetime, timezone
 import changemaker_publications as producer
 
 class PublicationPreparationTests(unittest.TestCase):
+    def test_no_story_and_crashes_both_write_health_receipts(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            with patch.object(producer, '_execute', return_value={'status': 'no_user_facing_change', 'draft_count': 0, 'publishing_enabled': False}):
+                producer.execute(state, state)
+            receipt = json.loads(next((state/'runs').glob('*/receipt.json')).read_text())
+            self.assertEqual(receipt['mode'], 'publications')
+            self.assertEqual(receipt['status'], 'no_user_facing_change')
+            self.assertTrue((state/'runs'/receipt['run_id']/'receipt.json').exists())
+            with patch.object(producer, '_execute', side_effect=OSError('private detail')):
+                with self.assertRaises(OSError):
+                    producer.execute(state, state)
+            receipts = [json.loads(p.read_text()) for p in (state/'runs').glob('*/receipt.json')]
+            failed = next(r for r in receipts if r['status'] == 'failed')
+            self.assertEqual(failed['error'], 'OSError')
+            self.assertNotIn('private detail', json.dumps(failed))
+
     def test_skips_incomplete_newest_digest_without_accepting_partial_evidence(self):
         from sources import complete_changemaker_digest
         partial = {'evidence': {'status': 'partial', 'failed_source_count': 2, 'items': []}}

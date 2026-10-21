@@ -26,6 +26,7 @@ import {
   laneName,
   latestDecisions,
   runStatusLabel,
+  publicationPreparationProblem,
 } from '@/lib/review-queue';
 
 export default function AdminDashboard() {
@@ -125,12 +126,12 @@ export default function AdminDashboard() {
       p.status === 'error' ||
       (p.status === 'scheduled' && new Date(p.dueAt).valueOf() < now - 15 * 60000),
   );
-  const newestDaily = /\d{4}-\d{2}-\d{2}/.exec(
-    [...(publications?.drafts ?? [])].sort((a, b) => b.id.localeCompare(a.id))[0]?.id ?? '',
-  )?.[0];
-  const dailyAge = newestDaily
-    ? Math.floor((now - new Date(`${newestDaily}T12:00:00`).valueOf()) / 86400000)
-    : null;
+  const publicationRun = [...(posting?.runs ?? [])]
+    .filter((r) => r.mode === 'publications')
+    .sort((a, b) =>
+      (b.checked_at || b.observed_at).localeCompare(a.checked_at || a.observed_at),
+    )[0];
+  const publicationProblem = publicationPreparationProblem(publicationRun, now);
   const problems = [
     failedX.length > 0 && {
       to: '/admin/posts/delivery',
@@ -148,11 +149,10 @@ export default function AdminDashboard() {
       to: '/admin/posts/articles',
       text: `${missedArticles.length} website or Patreon ${missedArticles.length === 1 ? 'draft' : 'drafts'} passed the publish time without approval`,
     },
-    dailyAge !== null &&
-      dailyAge > 2 && {
-        to: '/admin/posts/automation',
-        text: `No new daily website/Patreon draft for ${dailyAge} days (latest ${newestDaily}); the daily preparation job may be failing`,
-      },
+    publicationProblem && {
+      to: '/admin/posts/automation',
+      text: publicationProblem,
+    },
   ].filter((p): p is { to: string; text: string } => Boolean(p));
   return (
     <section className="admin-dashboard">
@@ -233,6 +233,11 @@ export default function AdminDashboard() {
         </section>
         <section>
           <h2>Preparation and accounts</h2>
+          <p>
+            {publicationRun
+              ? `Website/Patreon: ${runStatusLabel(publicationRun.status)} · ${new Date(publicationRun.checked_at || publicationRun.observed_at).toLocaleString()}.`
+              : 'Website/Patreon preparation status is not yet recorded. The age of its drafts does not establish job health.'}
+          </p>
           <p>
             {posting
               ? !posting.connected

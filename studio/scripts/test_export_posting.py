@@ -6,6 +6,18 @@ from export_posting import snapshot
 
 
 class PostingExportTests(unittest.TestCase):
+    def test_publication_no_story_run_is_visible_without_private_error_data(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            run = state/'runs'/'publication-check'; run.mkdir(parents=True)
+            (run/'receipt.json').write_text(json.dumps({'mode':'publications','status':'no_user_facing_change',
+                'run_id':'publication-check','draft_count':0,'checked_at':'2026-10-21T12:00:00Z','error':'private detail'}))
+            data = snapshot(state)
+            self.assertEqual(data['runs'][0]['status'], 'no_user_facing_change')
+            self.assertEqual(data['runs'][0]['mode'], 'publications')
+            self.assertNotIn('private detail', json.dumps(data))
+            self.assertEqual(data['drafts'], [])
+
     def test_requested_tweets_export_without_replacing_the_weekly_plan(self):
         with tempfile.TemporaryDirectory() as tmp:
             state = Path(tmp)

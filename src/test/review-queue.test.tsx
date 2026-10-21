@@ -16,7 +16,35 @@ import {
   type PostingDraft,
   getDraftDecisions,
 } from '@/lib/api';
-import { draftPlatform, isExpired, stripReviewPrefix, xLength } from '@/lib/review-queue';
+import {
+  draftPlatform,
+  isExpired,
+  stripReviewPrefix,
+  xLength,
+  publicationPreparationProblem,
+} from '@/lib/review-queue';
+
+it('uses actual publication run health rather than the age of its last draft', () => {
+  const now = Date.now();
+  const run = {
+    mode: 'publications',
+    status: 'no_user_facing_change',
+    checked_at: new Date(now).toISOString(),
+    observed_at: '',
+    week: '',
+    run_id: 'checked',
+    draft_count: 0,
+  };
+  expect(publicationPreparationProblem(run, now)).toBeNull();
+  expect(publicationPreparationProblem(undefined, now)).toBeNull();
+  expect(publicationPreparationProblem({ ...run, status: 'failed' }, now)).toContain('failed');
+  expect(
+    publicationPreparationProblem(
+      { ...run, checked_at: new Date(now - 48 * 3600000).toISOString() },
+      now,
+    ),
+  ).toContain('No recent');
+});
 
 vi.mock('@/lib/api', () => ({
   getPostingDashboard: vi.fn(),

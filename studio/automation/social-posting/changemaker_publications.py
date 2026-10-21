@@ -58,7 +58,7 @@ def ingest(payload, env_file):
         return json.loads(response.read(4096))
 
 
-def execute(source_root, state, ingest_env=None):
+def _execute(source_root, state, ingest_env=None):
     os.umask(0o077)
     state.mkdir(parents=True, exist_ok=True)
     cfg = json.loads((source_root/'automation/social-posting/config.json').read_text())
@@ -132,7 +132,26 @@ def execute(source_root, state, ingest_env=None):
                 return {'status': 'already_prepared', 'draft_count': 2, 'publishing_enabled': False}
             result = ingest(payload, ingest_env)
             atomic_write(receipt, json.dumps({'checked_at': now.isoformat(), **result})+'\n')
-        return {'status': 'drafts_prepared', 'draft_count': 2, 'publishing_enabled': False}
+    return {'status': 'drafts_prepared', 'draft_count': 2, 'publishing_enabled': False}
+
+
+def execute(source_root, state, ingest_env=None):
+    """Record every outcome, including deliberate no-draft runs and failures."""
+    os.umask(0o077)
+    started = datetime.now(timezone.utc)
+    run_id = started.strftime('%Y%m%dT%H%M%S.%fZ')+'-publications'
+    directory = state/'runs'/run_id
+    directory.mkdir(parents=True, mode=0o700)
+    receipt = {'mode': 'publications', 'run_id': run_id, 'draft_count': 0, 'publishing_enabled': False}
+    try:
+        result = _execute(source_root, state, ingest_env)
+    except Exception as error:
+        receipt.update(status='failed', error=type(error).__name__, checked_at=datetime.now(timezone.utc).isoformat())
+        atomic_write(directory/'receipt.json', json.dumps(receipt, indent=2)+'\n')
+        raise
+    receipt.update(result, checked_at=datetime.now(timezone.utc).isoformat())
+    atomic_write(directory/'receipt.json', json.dumps(receipt, indent=2)+'\n')
+    return result
 
 
 if __name__ == '__main__':

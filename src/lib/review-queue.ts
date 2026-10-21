@@ -1,5 +1,11 @@
 // Pure helpers for the private social review queue. No network access here.
-import type { BufferHistoryPost, DraftDecision, PostingDraft, PostingPlatform } from './api';
+import type {
+  BufferHistoryPost,
+  DraftDecision,
+  PostingDraft,
+  PostingPlatform,
+  PostingRun,
+} from './api';
 
 /** Older snapshots lack `platform`: Changemaker prepares Instagram, plan/radar prepare X. */
 export function draftPlatform(draft: Pick<PostingDraft, 'platform' | 'mode'>): PostingPlatform {
@@ -301,6 +307,7 @@ const LANE_NAMES: Record<string, string> = {
   radar: 'Timely X check',
   review: 'Weekly delivery review',
   changemaker: 'Instagram draft from Changemaker',
+  publications: 'Website/Patreon preparation',
 };
 
 /** What a preparation lane does, in words. */
@@ -311,7 +318,23 @@ export function laneName(mode: string) {
 const RUN_STATUS: Record<string, string> = {
   success: 'Drafts prepared',
   no_fresh_sources: 'Nothing new to draft',
+  no_user_facing_change: 'Checked; no suitable product story',
+  no_new_sources: 'Checked; no new sources',
+  empty: 'Checked; no changes found',
+  drafts_prepared: 'Drafts prepared',
+  already_prepared: 'Drafts already prepared',
 };
+
+/** Draft age is not job health: an editor may deliberately produce no copy. */
+export function publicationPreparationProblem(run: PostingRun | undefined, now: number) {
+  if (!run) return null;
+  if (['failed', 'partial', 'unavailable'].includes(run.status))
+    return 'The website/Patreon preparation job failed; inspect its latest run';
+  const checked = new Date(run.checked_at || run.observed_at).valueOf();
+  if (!Number.isFinite(checked) || now - checked > 36 * HOUR)
+    return 'No recent website/Patreon preparation receipt; check the daily job';
+  return null;
+}
 
 export function runStatusLabel(status: string) {
   return RUN_STATUS[status] || status.replaceAll('_', ' ');
