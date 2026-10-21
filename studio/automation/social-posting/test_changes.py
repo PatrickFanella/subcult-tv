@@ -2,6 +2,7 @@ import hashlib
 import json
 import subprocess
 import unittest
+import urllib.error
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
@@ -21,6 +22,38 @@ def pull(number, merged_at, title='feat: a thing', body='## Why\n\nPeople wanted
 
 
 class Collection(unittest.TestCase):
+    def test_transient_get_failure_retries_without_retrying_authentication(self):
+        response = unittest.mock.MagicMock()
+        response.__enter__.return_value.read.return_value = b'[]'
+        opener = unittest.mock.Mock()
+        opener.open.side_effect = [urllib.error.HTTPError('https://git.example', 503, 'busy', {}, None), response]
+        with patch.object(changes.urllib.request, 'build_opener', return_value=opener), patch.object(changes.time, 'sleep') as sleep:
+            self.assertEqual(changes.get_gitea('https://git.example', 'private'), [])
+            self.assertEqual(opener.open.call_count, 2)
+            sleep.assert_called_once_with(2)
+        opener.open.reset_mock()
+        opener.open.side_effect = urllib.error.HTTPError('https://git.example', 401, 'auth', {}, None)
+        with patch.object(changes.urllib.request, 'build_opener', return_value=opener), patch.object(changes.time, 'sleep') as sleep:
+            with self.assertRaises(urllib.error.HTTPError):
+                changes.get_gitea('https://git.example', 'private')
+            self.assertEqual(opener.open.call_count, 1)
+            sleep.assert_not_called()
+
+    def test_repeated_connection_failures_stop_after_three_reads(self):
+        opener = unittest.mock.Mock()
+        opener.open.side_effect = urllib.error.URLError('unreachable')
+        with patch.object(changes.urllib.request, 'build_opener', return_value=opener), patch.object(changes.time, 'sleep'):
+            with self.assertRaises(urllib.error.URLError):
+                changes.get_gitea('https://git.example', 'private')
+        self.assertEqual(opener.open.call_count, 3)
+
+    def test_api_error_object_is_not_treated_as_an_empty_repository(self):
+        with patch.object(changes, 'gitea_token', return_value='secret'), \
+             patch.object(changes, 'get_gitea', return_value={'message': 'unavailable'}):
+            result = changes.changes_context(CFG, NOW)
+        self.assertEqual(result['status'], 'partial')
+        self.assertEqual(result['drafts'][0]['evidence']['failed_source_count'], 2)
+
     def test_keeps_only_pulls_merged_inside_the_window_in_merge_order(self):
         chicago = timezone(timedelta(hours=-5))
         inside_late = pull(22, datetime(2026, 10, 10, 19, 8, 49, tzinfo=chicago), body='x'*40)

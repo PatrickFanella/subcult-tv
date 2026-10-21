@@ -19,7 +19,7 @@ HERE = Path(__file__).resolve().parent
 
 def execute(product, source_root, state):
     os.umask(0o077)
-    cfg = json.loads((HERE/'config.json').read_text())
+    cfg = json.loads((source_root/'automation/social-posting/config.json').read_text())
     if product not in craft.ART or product == 'subcult':
         raise SystemExit('Unknown product: choose one of '+', '.join(p for p in craft.ART if p != 'subcult'))
     now = datetime.now(timezone.utc)

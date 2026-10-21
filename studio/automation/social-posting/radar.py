@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Prepare fresh discoveries and quote-post candidates; never publish."""
 from datetime import datetime, timedelta, timezone
-import fcntl
+from preparation_lock import acquire
 import hashlib
 import json
 import os
@@ -105,10 +105,7 @@ def execute(cfg):
     state = Path(cfg['state'])
     now = datetime.now(timezone.utc)
     with (state/'runner.lock').open('w') as lock:
-        try:
-            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        except BlockingIOError:
-            return {'status':'already_running', 'mode':'radar'}
+        acquire(lock)
         with sqlite3.connect(state/'runs.sqlite3') as db:
             db.execute('CREATE TABLE IF NOT EXISTS timely_seen (source_id TEXT PRIMARY KEY, run_id TEXT, prepared_at TEXT)')
             db.execute('CREATE TABLE IF NOT EXISTS timely_slots (run_id TEXT, account TEXT, due_at TEXT, expires_at TEXT, PRIMARY KEY(run_id,account,due_at))')
@@ -127,6 +124,7 @@ def execute(cfg):
             context['media_library'] = runner.media.context(cfg)
             context['posting_guidance'] = (runner.paths.root(cfg)/cfg['editorial_guide']).read_text()
             context['claims_register'] = claims.read_text()
+            context['marketing_strategies'] = runner.strategy.context(cfg)
             context['owner_feedback'] = runner.feedback.owner_feedback(Path(cfg['state']), ('x', 'bluesky'), 30)
             context['editorial_style'] = (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()
             context['weekly_plan'] = weekly.read_text() if weekly.exists() else 'No current-week plan.'

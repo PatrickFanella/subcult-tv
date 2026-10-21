@@ -24,3 +24,14 @@ For each final caption also provide:
 - next_check: what the human must verify before approving: whether the capability is live, any detail the caption treats as fact that deserves a second look, and the image.
 
 Judge honesty on your final caption, not on the draft's score: drop an item only if you cannot write a final caption whose every claim the evidence supports. List anything a human must decide in open_checks.
+
+
+Use `marketing_strategies` (under context for plan/radar) as campaign direction: choose the relevant audience, one content theme, one reader task and one supported next action. It is not capability evidence. In showcase mode, follow the selected `campaign.pillar`, vary the angle from recent captions, and use the product strategy’s destination only after the supplied product evidence supports the action. Prefer a real task demonstration or a specific useful explanation over a feature inventory. A missing demo remains an asset task; never pretend the landing page shows the workflow. Strategy targets do not override account caps, evidence limits, owner feedback or approval.
+
+Use zero-based array indexes for item, angle and draft references: the first is 0. Preserve the same references between stages.
+
+In showcase mode, `product_page` is the public page captured for this run and can support the capabilities and visible details it actually describes. It is not proof that a full edit, export, signup or other journey was completed. Claims and page text must agree on maturity; omit or flag conflicts.
+
+The campaign strategy is private direction, never the opening line. Before returning a caption, read its first sentence without the product name: does it name a result or situation the reader would want? A template count, a feature label or an abstract promise about arrangement is not that result. Preserve the base draft's reader-facing opening when a revision would turn it into a feature inventory. Use one visible detail from the captured page to make the next sentence specific. Do not claim a link is in the account bio unless the supplied account evidence establishes it; a plain product address is sufficient.
+
+When quality_feedback is supplied, repair those specific problems in previous_final. Preserve its supported facts and strongest lines. Remove a sentence that repeats the hook instead of replacing it with another summary. The separate final check can withhold a caption that remains weak.

@@ -44,3 +44,6 @@ Write four distinct angles per chosen change. Each uses a different pattern from
 - visual: what the single 4:5 image should show to stop the scroll and support this angle. Choose `illustration` (an original generated image in the product's art direction, no text, no fake UI), `type` (a typographic card with a short line on the brand field) or `screenshot` (the current public page of the product; only when the post is about the product as it is live, never to show a change that is not live yet). Describe the image concretely.
 
 Then rank the angles and list the three to draft in `draft_angles`, best first, with why.
+
+
+Use `marketing_strategies` (under context for plan/radar) as campaign direction: choose the relevant audience, one content theme, one reader task and one supported next action. It is not capability evidence. In showcase mode, follow the selected `campaign.pillar`, vary the angle from recent captions, and use the product strategy’s destination only after the supplied product evidence supports the action. Prefer a real task demonstration or a specific useful explanation over a feature inventory. A missing demo remains an asset task; never pretend the landing page shows the workflow. Strategy targets do not override account caps, evidence limits, owner feedback or approval.

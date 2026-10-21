@@ -2,7 +2,7 @@
 """Prepare daily website and Patreon review drafts; this key cannot publish."""
 import argparse
 from datetime import datetime, timedelta, timezone
-import fcntl
+from preparation_lock import acquire
 import json
 import os
 from pathlib import Path
@@ -13,6 +13,7 @@ import urllib.request
 
 from runner import atomic_write
 from changes import changes_context
+import strategy
 from sources import NoRedirect, complete_changemaker_digest, public_url
 
 HERE = Path(__file__).resolve().parent
@@ -62,7 +63,7 @@ def execute(source_root, state, ingest_env=None):
     state.mkdir(parents=True, exist_ok=True)
     cfg = json.loads((source_root/'automation/social-posting/config.json').read_text())
     with (state/'publications.lock').open('a') as lock:
-        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        acquire(lock)
         now = datetime.now(timezone.utc)
         context = changes_context(cfg, now)
         if not context['drafts']:
@@ -95,7 +96,7 @@ def execute(source_root, state, ingest_env=None):
                     result = None
             if result is None:
                 prompt = (HERE/'changemaker-publications-prompt.md').read_text()+'\n'+json.dumps({
-                    'evidence': proof, 'digest': digest['draft'], 'claims': claims,
+                    'evidence': proof, 'digest': digest['draft'], 'claims': claims, 'marketing_strategies': strategy.context(cfg),
                     'voice': (HERE.parents[1]/'content/VOICE.md').read_text()})
                 command = [cfg['codex'], 'exec', '--ignore-user-config', '--ephemeral', '--skip-git-repo-check',
                            '-s', 'read-only', '-m', cfg['model'], '--json', '--output-schema',

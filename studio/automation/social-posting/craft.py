@@ -15,6 +15,7 @@ import subprocess
 import time
 
 import render
+import strategy
 
 HERE = Path(__file__).resolve().parent
 CRAFT = HERE/'craft'
@@ -38,6 +39,7 @@ def guidance(cfg):
         'research': read(RESEARCH/'DIGEST.md'),
         'patterns': read(RESEARCH/'post-patterns.md')[:60000],
         'examples': read(CRAFT/'examples.md'),
+        'marketing_strategies': strategy.context(cfg),
     }
 
 
@@ -65,11 +67,13 @@ def codex(cfg, prompt, directory, name, schema=None, effort='medium', images=(),
         with (directory/f'{name}.events.jsonl').open('w') as events, (directory/f'{name}.stderr.log').open('w') as err:
             done = subprocess.run(command, input=prompt, text=True, stdout=events, stderr=err,
                                   cwd=directory, env=clean_env(), timeout=timeout)
-        if not done.returncode and out.is_file():
-            break
         failed_turn = 'turn.failed' in (directory/f'{name}.events.jsonl').read_text()
+        if not done.returncode and not failed_turn and out.is_file():
+            break
         if not (done.returncode or failed_turn) or attempt == 2:
             raise ValueError(f'Stage {name} failed; inspect private run evidence')
+        for suffix in ('events.jsonl', 'stderr.log'):
+            shutil.copyfile(directory/f'{name}.{suffix}', directory/f'{name}.attempt-{attempt+1}.{suffix}')
         # Provider capacity and other transient failures: wait and retry the same stage.
         time.sleep((30, 120)[attempt])
     else:
@@ -137,7 +141,7 @@ def make_media(cfg, draft, directory, n):
         check = visual_check(cfg, jpeg, {**draft, 'media': media}, directory, f'visual-{n}-{attempt}')
         record['checks'].append({'attempt': attempt, **check})
         if check['pass']:
-            record.update(kind=media['kind'], headline=media['headline'])
+            record.update(kind=media['kind'], headline=media['headline'], alt_text=check['alt_text'])
             return jpeg, record
         if check['fix'] == 'regenerate_art' and media['kind'] == 'illustration':
             media['image_prompt'] += '\n\nCorrection: '+check['art_prompt_change']
@@ -147,7 +151,8 @@ def make_media(cfg, draft, directory, n):
         elif check['fix'] == 'switch_to_type':
             media['kind'] = 'type'
     record['unresolved'] = True
-    return (directory/f'post-{n}.jpg' if (directory/f'post-{n}.jpg').is_file() else None), record
+    # A failed visual must not appear as a ready image in the review dashboard.
+    return None, record
 
 
 ART = json.loads(read(CRAFT/'art-direction.json', '{}'))
@@ -172,7 +177,7 @@ def picture(cfg, text, product, directory, n, recent_kinds=(), extra=None):
                                                'art_direction': {product: ART.get(product, {})}, **(extra or {})}),
                  directory, f'picture-{n}', 'picture', effort='medium')
     jpeg, record = make_media(cfg, {'text': text, 'product': product, 'media': plan['media']}, directory, n)
-    return jpeg, record, plan['alt_text']
+    return jpeg, record, record.get('alt_text', '')
 
 
 def reroll_caption(cfg, draft, evidence, claims, directory, note='', image=None, recent=()):
@@ -191,18 +196,38 @@ def reroll_caption(cfg, draft, evidence, claims, directory, note='', image=None,
                  images=[image] if image else ())
 
 
+def checked_final(cfg, payload, directory):
+    """Check the final rewrite itself, allow one repair, then withhold weak copy."""
+    feedback = []
+    for attempt in range(2):
+        final = codex(cfg, stage_prompt('final', {**payload, 'quality_feedback': feedback}),
+                      directory, f'4-final-{attempt}', 'final', effort='high')
+        if not final['drafts']:
+            return final
+        check = codex(cfg, stage_prompt('check-final', {**payload, 'final': final}),
+                      directory, f'5-check-{attempt}', 'check-final', effort='high')
+        if check['pass']:
+            return final
+        feedback = check['issues']
+        payload = {**payload, 'previous_final': final}
+    return {'drafts': [], 'open_checks': ['Final caption withheld after one revision: '+x for x in feedback]}
+
+
 def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change', extra=None):
     """Run the four writing stages and the media stage; return schema-shaped drafts."""
     shared = {**guidance(cfg), 'claims': claims, 'evidence': evidence, 'digest': digest, 'recent_captions': list(recent), 'mode': mode, **(extra or {})}
+    products = {shared.get('product', '')} | {REPO_BRAND.get(i.get('source', '').split('/')[-1], '') for i in evidence.get('items', [])}
+    pack = shared['marketing_strategies']
+    if pack and any(products):
+        shared['marketing_strategies'] = {**pack, 'projects': {k: v for k, v in pack['projects'].items() if k in products}}
     first = {'showcase': 'showcase', 'weekly': 'weekly'}.get(mode, 'brief')
     brief = codex(cfg, stage_prompt(first, shared), directory, '1-brief', 'brief', effort='high')
     if not brief['items']:
         return {'drafts': [], 'open_checks': [f"Skipped {', '.join(s['source_ids'])}: {s['why']}" for s in brief['skipped']]}
     drafts = codex(cfg, stage_prompt('draft', {**shared, 'brief': brief}), directory, '2-draft', 'draft', effort='medium')
     review = codex(cfg, stage_prompt('review', {**shared, 'brief': brief, 'drafts': drafts}), directory, '3-review', 'review', effort='high')
-    final = codex(cfg, stage_prompt('final', {**shared, 'brief': brief, 'drafts': drafts, 'review': review,
-                                              'draft_rules': read(CRAFT/'draft.md'),
-                                              'art_direction': ART}), directory, '4-final', 'final', effort='high')
+    final = checked_final(cfg, {**shared, 'brief': brief, 'drafts': drafts, 'review': review,
+                               'draft_rules': read(CRAFT/'draft.md'), 'art_direction': ART}, directory)
     by_item = {r['item']: r for r in review['reviews']}
     out = []
     valid, used = {i['id'] for i in evidence.get('items', [])}, set()
@@ -218,10 +243,18 @@ def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change'
                 kept.append(draft)
         final['drafts'] = kept
     for n, draft in enumerate(final['drafts']):
-        item = brief['items'][draft['item']] if 0 <= draft['item'] < len(brief['items']) else {}
+        # Resolve by product/source identity as well as index: older stage
+        # outputs used both zero- and one-based references.
+        matches = [i for i in brief['items'] if i['product'] == draft['product']
+                   and set(draft['source_ids']) <= set(i['source_ids'])]
+        item = matches[0] if len(matches) == 1 else (
+            brief['items'][draft['item']] if 0 <= draft['item'] < len(brief['items']) else {})
         repos = [next((i['source'].split('/')[-1] for i in evidence['items'] if i['id'] == sid), '') for sid in draft['source_ids']]
         draft['product'] = brand_for(draft['product'], repos)
         jpeg, record = make_media(cfg, draft, directory, n)
+        draft['alt_text'] = record.get('alt_text', '')
+        if record.get('unresolved'):
+            draft['next_check'] = (draft['next_check'].rstrip()+' Image review failed; prepare and inspect a matching asset before approval.').strip()
         if record.get('kind') == 'screenshot':
             draft['next_check'] = (draft['next_check'].rstrip()+' The image is a capture of the live page, which can show third-party names, thumbnails or clips; check rights before posting.').strip()
         reviewed = by_item.get(draft['item'], {})
@@ -230,7 +263,8 @@ def instagram(cfg, evidence, digest, claims, directory, recent=(), mode='change'
         out.append({**draft, 'image': str(jpeg) if jpeg else '', 'media_record': record,
                     'craft': {'reader': item.get('reader', ''), 'reason': item.get('reason', ''),
                               'pattern': next((a['pattern'] for a in item.get('angles', [])[:1]), ''),
-                              'scores': scores[0] if scores else {}, 'alternatives': alternatives}})
+                              'scores': scores[0] if scores else {}, 'alternatives': alternatives,
+                              'campaign': shared.get('campaign', {})}})
     return {'drafts': out, 'open_checks': final['open_checks'] +
             [f"Skipped {', '.join(s['source_ids'])}: {s['why']}" for s in brief['skipped']]}
 
@@ -303,5 +337,8 @@ def showcase(cfg, product, claims, directory, recent=()):
         page = page_text(url)
     except (subprocess.SubprocessError, OSError):
         page = ''
+    if not page:
+        raise ValueError('Showcase public page unavailable; no current product evidence')
+    campaign = strategy.campaign(cfg, product, Path(directory).parents[2])
     return instagram(cfg, {'items': []}, '', claims, directory, recent, mode='showcase',
-                     extra={'product': product, 'product_page': page, 'product_url': url})
+                     extra={'product': product, 'product_page': page, 'product_url': url, 'campaign': campaign})

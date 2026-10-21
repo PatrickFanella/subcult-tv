@@ -6,7 +6,8 @@
   "issues",
   "fix",
   "new_headline",
-  "art_prompt_change"
+  "art_prompt_change",
+  "alt_text"
  ],
  "properties": {
   "pass": {
@@ -31,6 +32,9 @@
    "type": "string"
   },
   "art_prompt_change": {
+   "type": "string"
+  },
+  "alt_text": {
    "type": "string"
   }
  }
