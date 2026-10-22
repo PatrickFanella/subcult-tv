@@ -6,6 +6,32 @@ from export_posting import snapshot
 
 
 class PostingExportTests(unittest.TestCase):
+    def test_campaign_provenance_is_bounded_without_packet_documents(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp); run = state/'runs'/'campaign'; run.mkdir(parents=True)
+            (run/'receipt.json').write_text(json.dumps({'mode':'ondemand','status':'success','run_id':'campaign'}))
+            campaign = {'project':'clpr','theme':'Find a clip','packet_revision':'abc123',
+                        'packet_sha256':'a'*64,'flags':['Check destination'], 'documents':{'private':'DO NOT EXPORT'},
+                        'asset_ids':['capture1'],'result_ids':['result1'],'local_path':'/private/source'}
+            (run/'result.json').write_text(json.dumps({'drafts':[{'account':'clpr','text':'Review', 'craft':{'campaign':campaign}}]}))
+            exported = snapshot(state)['drafts'][0]['craft']['campaign']
+            self.assertEqual(exported['packet_revision'], 'abc123')
+            self.assertEqual(exported['asset_ids'], ['capture1'])
+            self.assertNotIn('DO NOT EXPORT', json.dumps(exported))
+            self.assertNotIn('/private/source', json.dumps(exported))
+
+    def test_publication_no_story_run_is_visible_without_private_error_data(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            run = state/'runs'/'publication-check'; run.mkdir(parents=True)
+            (run/'receipt.json').write_text(json.dumps({'mode':'publications','status':'no_user_facing_change',
+                'run_id':'publication-check','draft_count':0,'checked_at':'2026-10-21T12:00:00Z','error':'private detail'}))
+            data = snapshot(state)
+            self.assertEqual(data['runs'][0]['status'], 'no_user_facing_change')
+            self.assertEqual(data['runs'][0]['mode'], 'publications')
+            self.assertNotIn('private detail', json.dumps(data))
+            self.assertEqual(data['drafts'], [])
+
     def test_requested_tweets_export_without_replacing_the_weekly_plan(self):
         with tempfile.TemporaryDirectory() as tmp:
             state = Path(tmp)

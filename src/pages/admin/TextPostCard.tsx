@@ -1,3 +1,4 @@
+import CampaignContext from './CampaignContext';
 import { useState, type ReactNode } from 'react';
 import type { PostingDraft } from '@/lib/api';
 import { draftPlatform, laneLabel, X_LIMIT, xLength } from '@/lib/review-queue';
@@ -86,6 +87,7 @@ export default function TextPostCard({
             ? 'Schedule below after approving.'
             : 'Copy into Buffer to schedule.'}
       </p>
+      <CampaignContext draft={draft} />
       {draft.craft?.angle && (
         <p>
           <strong>Why this post:</strong> {draft.craft.angle}

@@ -2,7 +2,7 @@
 """Prepare private Instagram drafts from verified Changemaker evidence; never dispatch."""
 import argparse
 from datetime import datetime, timedelta, timezone
-import fcntl
+from preparation_lock import acquire
 import hashlib
 import json
 import os
@@ -14,6 +14,7 @@ from changes import changes_context
 from sources import complete_changemaker_digest
 from runner import atomic_write
 from feedback import owner_feedback
+import strategy
 
 HERE = Path(__file__).resolve().parent
 
@@ -123,10 +124,34 @@ def showcase_product(cfg, state, now):
     return max(products, key=lambda p: featured.index(p))
 
 
+def showcase_fallback(cfg, source_root, state, now):
+    product = showcase_product(cfg, state, now)
+    if not product:
+        return None
+    import showcase
+    try:
+        fallback = showcase.execute(product, source_root, state)
+        return {'product': product, 'run_id': fallback['run_id'], 'draft_count': fallback['draft_count']}
+    except Exception as error:
+        return {'product': product, 'error': type(error).__name__+': '+str(error)[:300]}
+
+
+def no_change_result(cfg, source_root, state, now, status):
+    result = {'status': status, 'mode': 'changemaker', 'publishing_enabled': False}
+    # An unavailable collection is not evidence that there were no changes.
+    # Evergreen work has its own claims and public-page evidence. A failed
+    # change feed must not block it or be presented as an empty change feed.
+    if status in ('empty', 'no_new_sources', 'partial', 'unavailable'):
+        fallback = showcase_fallback(cfg, source_root, state, now)
+        if fallback:
+            result['showcase'] = fallback
+    return result
+
+
 def single_pass(cfg, source_root, selected, digest, claims, directory):
     """The original one-call caption prompt, kept as the fallback path."""
     prompt = (HERE/'changemaker-instagram-prompt.md').read_text()+'\n'+json.dumps({
-        'evidence': selected, 'digest': digest['draft'], 'claims': claims,
+        'evidence': selected, 'digest': digest['draft'], 'claims': claims, 'marketing_strategies': strategy.context(cfg),
         'voice': (HERE.parents[1]/'content/VOICE.md').read_text(),
         'style': (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()})
     command = [cfg['codex'], 'exec', '--ignore-user-config', '--ephemeral', '--skip-git-repo-check',
@@ -204,21 +229,44 @@ def execute(source_root, state):
     state.mkdir(parents=True, exist_ok=True)
     cfg = json.loads((source_root/'automation/social-posting/config.json').read_text())
     with (state/'runner.lock').open('a') as lock:
-        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        acquire(lock)
         now = datetime.now(timezone.utc)
-        context = changes_context(cfg, now)
+        run_id = now.strftime('%Y%m%dT%H%M%S.%fZ')+'-changemaker'
+        directory = state/'runs'/run_id
+        directory.mkdir(parents=True, mode=0o700)
+        try:
+            context = changes_context(cfg, now)
+        except Exception as error:
+            context = {'status': 'unavailable', 'drafts': [], 'error': type(error).__name__}
+        atomic_write(directory/'collection.json', json.dumps(context, indent=2)+'\n')
+
+        def finish(status):
+            receipt = {**no_change_result(cfg, source_root, state, now, status),
+                       'run_id': run_id, 'checked_at': now.isoformat(), 'draft_count': 0,
+                       'collection_status': context.get('status', status)}
+            fallback = receipt.get('showcase') or {}
+            if fallback.get('error'):
+                receipt['status'] = 'failed'
+            elif fallback.get('draft_count'):
+                receipt['status'] = 'success'
+            atomic_write(directory/'receipt.json', json.dumps(receipt, indent=2)+'\n')
+            if status in ('partial', 'unavailable') and not fallback.get('draft_count'):
+                raise ValueError('Change collection unavailable and no evergreen draft prepared; inspect collection.json')
+            if fallback.get('error'):
+                raise ValueError('Evergreen preparation failed; inspect receipt.json')
+            return receipt
+
+        if context.get('status') in ('partial', 'unavailable'):
+            return finish(context['status'])
         if not context['drafts']:
-            return {'status': context['status'], 'mode': 'changemaker', 'publishing_enabled': False}
+            return finish(context['status'])
         digest = complete_changemaker_digest(context)
         evidence = digest['evidence']
         used = used_sources(state)
         items = {i['id']: i for i in evidence['items']
                  if i.get('kind') == 'pull request' and i.get('state') == 'merged' and identity(i) not in used}
         if not items:
-            return {'status': 'no_new_sources', 'mode': 'changemaker', 'publishing_enabled': False}
-        run_id = now.strftime('%Y%m%dT%H%M%S.%fZ')+'-changemaker'
-        directory = state/'runs'/run_id
-        directory.mkdir(parents=True, mode=0o700)
+            return finish('no_new_sources')
         selected = {'run_id': digest['run_id'], 'evidence_sha256': digest['evidence_sha256'],
                     'draft_sha256': digest['draft_sha256'], 'items': list(items.values())}
         atomic_write(directory/'sources.json', json.dumps(selected, indent=2)+'\n')
@@ -283,15 +331,12 @@ def execute(source_root, state):
                    'publishing_enabled': False}
         if not drafts:
             # The day's changes gave a stranger nothing to want; show a live product instead.
-            product = showcase_product(cfg, state, now)
-            if product:
-                import showcase
-                try:
-                    fallback = showcase.execute(product, source_root, state)
-                    receipt['showcase'] = {'product': product, 'run_id': fallback['run_id'], 'draft_count': fallback['draft_count']}
-                except Exception as error:
-                    receipt['showcase'] = {'product': product, 'error': type(error).__name__+': '+str(error)[:300]}
+            fallback = showcase_fallback(cfg, source_root, state, now)
+            if fallback:
+                receipt['showcase'] = fallback
         atomic_write(directory/'receipt.json', json.dumps(receipt, indent=2)+'\n')
+        if (receipt.get('showcase') or {}).get('error'):
+            raise ValueError('Evergreen preparation failed; inspect receipt.json')
         return receipt
 
 

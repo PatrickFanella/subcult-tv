@@ -74,6 +74,8 @@ def generate(cfg, source_root, state, job, now):
     sources = {f'note:{name}': {'title': name, 'text': text} for name, text in context['notes'].items()}
     sources.update({f"repository:{r['product']}": {'title': r['product'], 'revision': r['revision'],
                                                  'documents': r['documents']} for r in context['repositories']})
+    sources.update({'demonstration:'+r['id']: {'title': r['journey'], 'evidence': r}
+                    for r in context.get('demonstration_evidence', [])})
     owner = feedback.owner_feedback(state, ('x',), 30)
     recent = recent_tweets(state)
     payload = {**craft.guidance(cfg), 'account': account, 'owner_direction': job.get('note', ''),

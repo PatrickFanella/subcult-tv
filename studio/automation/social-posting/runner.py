@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 import argparse
+import strategy
 from datetime import date, datetime, timezone
-import fcntl
+from preparation_lock import acquire
 import hashlib
 import json
 import os
@@ -126,7 +127,12 @@ def source_context(cfg: dict, directory: Path) -> dict:
                 raise ValueError('Scope document missing for '+repo['product']+': '+document)
             docs[document] = result.stdout[:10000]
         snapshots.append({'product': repo['product'], 'revision': sha, 'documents': docs})
-    context = {'notes': notes, 'repositories': snapshots}
+    context = {'notes': notes, 'repositories': snapshots, 'marketing_strategies': strategy.context(cfg)}
+    pack = context['marketing_strategies']
+    context['demonstration_evidence'] = [asset for p in pack.get('campaign_review', {}).get('projects', {}).values()
+        for theme in p.get('themes', []) for asset in theme.get('assets', []) if asset.get('passed')]
+    context['packet_checks'] = [p.get('name', key)+': '+flag
+        for key, p in pack.get('projects', {}).items() for flag in p.get('packet', {}).get('flags', [])]
     context['media_library'] = media.context(cfg)
     context['posting_guidance'] = (vault/cfg['editorial_guide']).read_text()
     context['editorial_style'] = (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()
@@ -244,10 +250,7 @@ def render_result(result: dict, run_id: str, mode: str) -> str:
 def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
     state = Path(cfg['state']);state.mkdir(parents=True, exist_ok=True);state.chmod(0o700)
     with (state/'runner.lock').open('w') as lock:
-        try:
-            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        except BlockingIOError:
-            return {'status': 'already_running'}
+        acquire(lock)
         database = sqlite3.connect(state/'runs.sqlite3')
         database.execute('CREATE TABLE IF NOT EXISTS runs (id TEXT PRIMARY KEY, mode TEXT, week TEXT, status TEXT, started TEXT, detail TEXT)')
         database.execute('CREATE TABLE IF NOT EXISTS sections (mode TEXT, week TEXT, hash TEXT, PRIMARY KEY(mode,week))')
@@ -305,6 +308,8 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
                 raise ValueError('Codex job failed; inspect the private run directory')
             events = [json.loads(line) for line in (directory/'events.jsonl').read_text().splitlines() if line.strip()]
             evidence = verify_evidence(events, cfg)
+            import campaign_metrics
+            campaign_metrics.from_events(state, events)
             result = json.loads((directory/'result.json').read_text())
             bank = context['notes'][next(x for x in cfg['notes'] if x.endswith('SUBCULT Social Content Idea Pool.md'))]
             originals = [draft.get('text') for draft in result['drafts']]
@@ -318,6 +323,7 @@ def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
                 for draft, text in zip(result['drafts'], originals):
                     draft['text'] = text
                 validate_result(result, cfg, week, bank, context.get('prepared_slots', []), now if mode == 'plan' else None)
+            result['open_checks'].extend(context.get('packet_checks', []))
             catalog = media.context(cfg)
             for draft in result['drafts']:
                 media.validate_choice(draft.get('media'), catalog, draft['account'])

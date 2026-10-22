@@ -8,7 +8,7 @@ The draft lands beside the Changemaker drafts so the review dashboard shows it.
 """
 import argparse
 from datetime import datetime, timedelta, timezone
-import fcntl
+from preparation_lock import acquire
 import json
 import os
 from pathlib import Path
@@ -99,7 +99,7 @@ def execute(source_root, state, now=None):
     cfg = json.loads((HERE/'config.json').read_text())
     weekly = cfg['weekly_cta']
     with (state/'runner.lock').open('a') as lock:
-        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        acquire(lock)
         now = now or datetime.now(timezone.utc)
         slot = next_slot(cfg, now)
         week, cta = week_of(slot), call_to_action(cfg, slot)

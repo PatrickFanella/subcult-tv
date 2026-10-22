@@ -3,20 +3,20 @@ title: SUBCULT Social Content Idea Pool
 type: documentation
 status: active
 created: 2026-09-30
-updated: 2026-10-02
+updated: 2026-10-21
 tags:
 - topic/publishing
 ---
 
 # SUBCULT Social Content Idea Pool
 
-This is the single candidate bank for the seven product lanes and occasional Common House teasers. Every entry below is `candidate`: no final copy, media or scheduling approval is implied. Each premise is written in its product's voice ([voice guide](../../VOICE.md)); the posting account still decides who is speaking. Use [[Product Claims Register]] before drafting and [[Social Posting Automation Plan]] for account routing.
+This is the candidate bank for the seven active product lanes and occasional Common House teasers. Use the [project marketing strategies](../../marketing/README.md) to choose an audience, theme, action and demonstration; a candidate is a possible story within that strategy. Every entry below is `candidate`: no final copy, media or scheduling approval is implied. Each premise is written in its product's voice ([voice guide](../../VOICE.md)); the posting account still decides who is speaking. Use [[Product Claims Register]] before drafting and [[Social Posting Automation Plan]] for account routing.
 
 | ID | Product | Claim source | Premise | Required proof / asset |
 | --- | --- | --- | --- | --- |
 | CLPR-01 | clpr | C-CLPR | You remember who it was, or what it was about. Start from either. | A short live browsing recording; avoid unverified speed claims. |
 | CLPR-02 | clpr | C-CLPR | The clips you keep sending people, saved as one playlist you can share. | Repeat authenticated save and playlist sharing before recording; preserve creator attribution. |
-| CLPR-03 | clpr | C-CLPR | No watch parties, no live feed, no clipping from the stream at launch. Name one that is switched off and say why. | Explain one release-scope decision from the current feature inventory. |
+| CLPR-03 | clpr | C-CLPR | Build a collection around the bit you keep trying to describe to friends. | Check an actual public playlist and anonymous access; do not imply unsupported ingestion or live feed. |
 | PATCHWORK-01 | Patchwork | C-PATCHWORK | Walk the demo map like a block: what someone asked for, what someone offered, what is nearby. Say it is a demo. | Use a labeled pre-alpha demo; inspect a current map view, no real-person request. |
 | PATCHWORK-02 | Patchwork | C-PATCHWORK | A request shows an approximate area. An approved public resource can show its address. Put both on one map. | Use a synthetic example to explain approximate requests versus approved public addresses. |
 | PATCHWORK-03 | Patchwork | C-PATCHWORK | An open protocol still has to decide what a record shows. Say in plain words what one shows and what it holds back. | Explain one implemented AT record/privacy boundary without declaring operational readiness. |

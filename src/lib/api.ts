@@ -510,7 +510,25 @@ export interface PreparedImage {
   height: number;
   bytes: number;
 }
+export interface PostingCampaign {
+  review_decision?: string;
+  asset_ids?: string[];
+  result_ids?: string[];
+  status: string;
+  project: string;
+  project_name: string;
+  packet_revision: string;
+  packet_sha256: string;
+  pillar_id: string;
+  theme: string;
+  reader_action: string;
+  destination: string;
+  measurement: string;
+  asset_task: string;
+  flags: string[];
+}
 export interface PostingCraft {
+  campaign?: PostingCampaign;
   angle: string;
   reader: string;
   reason: string;

@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "projects": {
+    "clpr": {
+      "owner": "clpr owns the upstream marketing packet and technical claims; Studio owns campaign adaptations.",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/clpr/packet.md",
+          "sha256": "1cbc91632e5219493b2ce48a93174c486adbae7cb8b9ce12511e1ca3f0e449fa"
+        }
+      ],
+      "upstream": {
+        "checkout": "/home/onnwee/Work/Subcult/clpr",
+        "remote": "origin",
+        "ref": "main",
+        "documents": [
+          "docs/marketing/clpr/context.md",
+          "docs/marketing/clpr/packet.md",
+          "docs/marketing/clpr/launch-plan.md"
+        ]
+      },
+      "captured_revision": "d1801962bb2352485d2306d82733452c5fedc8da",
+      "fallback": [
+        {
+          "path": "sources/clpr-context.md",
+          "sha256": "fb133e031e9b0e05ae14f7067e139eaf834fdef5599527b6492628b1b73b4476",
+          "original_path": "docs/marketing/clpr/context.md"
+        },
+        {
+          "path": "sources/clpr-packet.md",
+          "sha256": "b66c32b7a4e82e0408a6374afdc30ef8ae8e91204c316d7b9fd0a440db496534",
+          "original_path": "docs/marketing/clpr/packet.md"
+        },
+        {
+          "path": "sources/clpr-launch-plan.md",
+          "sha256": "69242a273c7d274f5b9f4b09c423236a8d8bbfec9492f644331c3d2080c6a7b2",
+          "original_path": "docs/marketing/clpr/launch-plan.md"
+        }
+      ]
+    },
+    "patchwork": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/patchwork/packet.md",
+          "sha256": "727d74567406621ddc3d3579a181426b2cce1477a34d154dbc96cc527901b595"
+        }
+      ]
+    },
+    "hasanara": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/hasanara/packet.md",
+          "sha256": "8684f3e839aefb9d6a7e555d3a66586ce51a080084d6f30e759ebdb61724c569"
+        }
+      ]
+    },
+    "rekolekt": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/rekolekt/packet.md",
+          "sha256": "850bdf845a54e14049f9efea60311ae261bfbabafa2a45a673a0e6cca9523656"
+        }
+      ]
+    },
+    "subcult-os": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/subcult-os/packet.md",
+          "sha256": "594293b98f8986996ef0ea8bc17e5721dbb62767df36e5861b38c9306c0fe197"
+        }
+      ]
+    },
+    "undertow": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/undertow/packet.md",
+          "sha256": "1b32ba35d577ce78c87c2c316266de16b6fa06d34513de8c790a36bcd398caac"
+        }
+      ]
+    },
+    "prichal": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/prichal/packet.md",
+          "sha256": "0fcfe31a9d25a89aa28b1239cd92702313d1158ac08eb78ec4bc5bfc35478227"
+        }
+      ]
+    },
+    "kork": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/kork/packet.md",
+          "sha256": "872a527ae60f7bab3e808a3ddfc53561a077cb6c97b1a7570ead1885a57e270b"
+        }
+      ]
+    },
+    "left-field": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/left-field/packet.md",
+          "sha256": "29555b840c21fb8715a2187f240510f860c21b659aaef20b47e9b668bac61fdb"
+        }
+      ]
+    },
+    "subsets": {
+      "owner": "subsets owns the upstream marketing packet and technical claims; Studio owns campaign adaptations.",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/subsets/packet.md",
+          "sha256": "177c7864ad657fe90d805e7109e3c2ecdff8822db089469267433819e9232884"
+        }
+      ],
+      "upstream": {
+        "checkout": "/home/onnwee/Work/Tools/subsets",
+        "remote": "origin",
+        "ref": "main",
+        "documents": [
+          "docs/marketing/context.md",
+          "docs/marketing/packet.md",
+          "docs/marketing/launch-plan.md"
+        ]
+      },
+      "captured_revision": "9e6754abe1b7f4a1eb004a77a211da4882393d80",
+      "fallback": [
+        {
+          "path": "sources/subsets-context.md",
+          "sha256": "0900b16b5a6e7474040b0ab39c98906fa81de4e1444c351e3dc8a789656aaa9b",
+          "original_path": "docs/marketing/context.md"
+        },
+        {
+          "path": "sources/subsets-packet.md",
+          "sha256": "f3ebace8c94913a18f4f70c17df6a89310cd75799001c67c2675733f1ce94ddd",
+          "original_path": "docs/marketing/packet.md"
+        },
+        {
+          "path": "sources/subsets-launch-plan.md",
+          "sha256": "ed6837d7ae4574ff6eb45ef9235672c436a591df935ecba454ebab0f2502e80e",
+          "original_path": "docs/marketing/launch-plan.md"
+        }
+      ]
+    },
+    "tadooer": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/tadooer/packet.md",
+          "sha256": "f87fed696d86e834b369f676160e958b6347307d82f2dbaccac8fc743288eea9"
+        }
+      ]
+    },
+    "chatty-cat": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/chatty-cat/packet.md",
+          "sha256": "0ca18e224415a0e0adb9151aaf196acdcb160ef55d30b9d564fe00569f7d989b"
+        }
+      ]
+    },
+    "headcount": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/headcount/packet.md",
+          "sha256": "d8e1b27def9984d248436c212b36f2c9b09843046e34514315bdddab6832e01e"
+        }
+      ]
+    },
+    "backline": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/backline/packet.md",
+          "sha256": "94df12d493705a8f20bc453ffffe1b620ea49592a88d58f17f24c361ba6b40ca"
+        }
+      ]
+    },
+    "arkhiv": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/arkhiv/packet.md",
+          "sha256": "928b5ac68ed3c445892d184f3d0697467645d6ce4fc9a18b26e20fe1e40e5e10"
+        }
+      ]
+    },
+    "overlaid": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/overlaid/packet.md",
+          "sha256": "e8a68b44add8b39ed092cc50a98f1cae605075bae162e7e4a99a3311290a47b1"
+        }
+      ]
+    },
+    "pirs": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/pirs/packet.md",
+          "sha256": "2b6964b79c7b8444f3753f041fc244c8260f16a6214652ee4dd94fec2807a020"
+        }
+      ]
+    },
+    "tmux-popups": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/tmux-popups/packet.md",
+          "sha256": "c6d05ff852b22a312e900bfd6fab2605be8f9ed1ea7798bda3dc9284d1e6dcd5"
+        }
+      ]
+    },
+    "omarchy-monitor-bar": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/omarchy-monitor-bar/packet.md",
+          "sha256": "d7691a0eba1f90b1201cc3113ae7b8f2bdc38a66d56c13c0b796fa6c51a28baa"
+        }
+      ]
+    },
+    "omarchy-superproductivity": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/omarchy-superproductivity/packet.md",
+          "sha256": "d0aacb69235624cbbe2d45258f30dd80aa814a7bb0632424c949f4de1d3115ff"
+        }
+      ]
+    },
+    "omarchy-plugin-spool": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/omarchy-plugin-spool/packet.md",
+          "sha256": "d82857291b1ba021740dbccb135a7aeb27c49a857e559e5c3eeeb053471c17eb"
+        }
+      ]
+    },
+    "omarchy-plugin-shelfish": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/omarchy-plugin-shelfish/packet.md",
+          "sha256": "b11d2361862f624251849ba6c40aa0a337a8efa1680d90c1ada6bdb654f7e5ed"
+        }
+      ]
+    },
+    "obsidian-plugin-metronome-tuner": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/obsidian-plugin-metronome-tuner/packet.md",
+          "sha256": "c5b4d223640b9e94dbd1f9e757a5c9e685fdde583f2bbffcc48b7884c8eec389"
+        }
+      ]
+    },
+    "super-productivity-mcp": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/super-productivity-mcp/packet.md",
+          "sha256": "4b0a66fe304780b4248da1aa73f7943731737790ed80100146b613f036dc89e6"
+        }
+      ]
+    },
+    "the-common-house": {
+      "owner": "Studio campaign direction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/the-common-house/packet.md",
+          "sha256": "51f78be9b88a0445ab967031ff0aebc15d14fbb47a17097998ab826f84837d34"
+        }
+      ]
+    }
+  }
+}

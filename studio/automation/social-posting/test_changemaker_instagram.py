@@ -10,6 +10,38 @@ import changemaker_instagram as importer
 
 
 class ChangemakerInstagramTests(unittest.TestCase):
+    def test_partial_collection_is_saved_and_does_not_block_independent_showcase(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)/'studio'; state = Path(tmp)/'state'
+            config = root/'automation/social-posting'; config.mkdir(parents=True)
+            (config/'config.json').write_text('{}')
+            context = {'status': 'partial', 'drafts': [{'evidence': {'status': 'partial',
+                       'failures': [{'repository': 'org/kork', 'error': 'HTTPError 503'}]}}]}
+            fallback = {'product': 'undertow', 'run_id': 'independent', 'draft_count': 1}
+            with patch.object(importer, 'changes_context', return_value=context), \
+                 patch.object(importer, 'showcase_fallback', return_value=fallback):
+                receipt = importer.execute(root, state)
+            self.assertEqual(receipt['collection_status'], 'partial')
+            self.assertFalse(receipt['publishing_enabled'])
+            directory = state/'runs'/receipt['run_id']
+            self.assertEqual(json.loads((directory/'collection.json').read_text()), context)
+            self.assertEqual(json.loads((directory/'receipt.json').read_text())['showcase'], fallback)
+
+    def test_unavailable_collection_without_evergreen_output_is_visible_failure(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)/'studio'; state = Path(tmp)/'state'
+            config = root/'automation/social-posting'; config.mkdir(parents=True)
+            (config/'config.json').write_text('{}')
+            with patch.object(importer, 'changes_context', side_effect=OSError('private detail')), \
+                 patch.object(importer, 'showcase_fallback', return_value=None):
+                with self.assertRaisesRegex(ValueError, 'collection unavailable'):
+                    importer.execute(root, state)
+            receipt = json.loads(next((state/'runs').glob('*/receipt.json')).read_text())
+            self.assertEqual(receipt['status'], 'unavailable')
+            evidence = json.loads(next((state/'runs').glob('*/collection.json')).read_text())
+            self.assertEqual(evidence['error'], 'OSError')
+            self.assertNotIn('private detail', json.dumps(evidence))
+
     def setUp(self):
         self.items = {'S1': {'url': 'https://git.subcult.tv/a/b/pulls/1', 'updated_at': '2026-10-03T09:00:00Z'}}
         self.draft = {'account':'subcult','text':'Work in progress on a clearer reading experience.',

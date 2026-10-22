@@ -63,13 +63,16 @@ func TestStudioAccessAndContainment(t *testing.T) {
 	if response := request("/api/v1/admin/studio/assets/"+id, true); response.Code != 404 {
 		t.Fatal("symlink escape exposed")
 	}
-	os.WriteFile(filepath.Join(root, "posting.json"), []byte(`{"version":1,"generated_at":"2020-01-01T00:00:00Z","connected":true,"publishing_enabled":true,"provider_evidence":{"secret":"hidden"},"drafts":[{"text":"Review copy","approval":"approved","token":"hidden"}]}`), 0600)
+	os.WriteFile(filepath.Join(root, "posting.json"), []byte(`{"version":1,"generated_at":"2020-01-01T00:00:00Z","connected":true,"publishing_enabled":true,"provider_evidence":{"secret":"hidden"},"drafts":[{"text":"Review copy","approval":"approved","token":"hidden","craft":{"campaign":{"project":"clpr","packet_revision":"observed-revision","documents":"hidden"}}}]}`), 0600)
 	if response := request("/api/v1/admin/studio/posting", false); response.Code != 401 {
 		t.Fatal("anonymous posting access")
 	}
 	posting := request("/api/v1/admin/studio/posting", true)
 	if posting.Code != 200 || !strings.Contains(posting.Body.String(), `"stale":true`) || !strings.Contains(posting.Body.String(), `"approval":"unapproved"`) || !strings.Contains(posting.Body.String(), `"publishing_enabled":false`) {
 		t.Fatalf("invalid posting boundary: %s", posting.Body.String())
+	}
+	if !strings.Contains(posting.Body.String(), `"packet_revision":"observed-revision"`) {
+		t.Fatal("campaign provenance was lost")
 	}
 	if strings.Contains(posting.Body.String(), "hidden") {
 		t.Fatal("posting snapshot leaked private fields")

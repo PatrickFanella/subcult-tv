@@ -1,0 +1,47 @@
+# HasanAra campaign packet
+
+Prepared 2026-10-21. Studio owns this campaign direction. Product claims remain with the product repository and the claims register. Audience and positioning are working hypotheses, not audience research.
+
+## Audience and task
+
+A viewer or researcher trying to relocate a phrase from a long broadcast.
+
+A remembered phrase can lead back to the recording at its timestamp.
+
+## Voice and offer
+
+Use `studio/content/VOICE.md` for the account and product voice. Explain the supported task in plain words. State maturity once. Do not invent users, results, scarcity or a completed demonstration.
+
+Action: Search the archive — https://hasanara.tv/
+
+Evidence anchors: C-HASANARA. Recheck the exact action and its destination before approval.
+
+Limits: Automatic transcripts can be wrong; no complete-coverage promise or unverified quotation.
+
+## Campaign priorities
+
+- hasanara-1: Find a phrase and return to the recording
+- hasanara-2: Read surrounding transcript context
+- hasanara-3: Check an automatic transcript against the tape
+
+## Demonstration brief
+
+Search an allowed example phrase → open passage → check the recording.
+
+Capture a real permitted workflow with synthetic data where appropriate. Record the source revision, capture date, asset hash, rights and inspected result in the campaign asset register. This brief is not evidence that the task has been completed. Until a checked capture exists, use supported explanatory copy or an explicitly conceptual card.
+
+## Channel adaptations
+
+X: one useful point and one supported next action; original copy for each account. Images are optional. Instagram: show the task in an inspected image or short sequence; write a distinct caption and meaningful alt text. Keep a missing bio destination as a review task. Other placements require their own format and readiness check.
+
+Selected channels: x, bluesky, instagram. Preparation scope: existing showcase lane.
+
+## Measures and decision
+
+Search sessions followed by a passage open / search sessions; manual recording-link success.
+
+Unavailable; establish from the first two comparable approved pieces and manual journey checks.
+
+After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.
+
+Use dated results tied to actual posts, with source, observation window and denominators. Owner edits inform voice; impressions alone do not establish adoption. Fix a failed journey before increasing distribution.

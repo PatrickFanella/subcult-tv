@@ -96,6 +96,14 @@ def optional_fields(draft, media, state, media_files):
             'predicted': text(craft.get('predicted'), 400),
             'scores': {k: scores[k] for k in SCORE_KEYS if isinstance(scores.get(k), int) and 1 <= scores[k] <= 5},
             'alternatives': strings(craft.get('alternatives'), 4, 2200)}
+    campaign = craft.get('campaign') if isinstance(craft, dict) else None
+    if isinstance(campaign, dict):
+        record['craft']['campaign'] = {k: text(campaign.get(k), 600) for k in
+            ('status', 'project', 'project_name', 'packet_revision', 'packet_sha256', 'pillar_id',
+             'theme', 'reader_action', 'destination', 'measurement', 'asset_task', 'review_decision')}
+        for key in ('asset_ids', 'result_ids'):
+            record['craft']['campaign'][key] = strings(campaign.get(key), 20, 200)
+        record['craft']['campaign']['flags'] = strings(campaign.get('flags'), 8, 400)
     replies = strings(draft.get('replies'), 3, 280)
     if replies:
         record['replies'] = replies
@@ -145,7 +153,7 @@ def snapshot(state=None, source_root=None, media_files=None):
     receipts = {}
     for path in candidates:
         receipt = read(path, 64_000)
-        if not isinstance(receipt, dict) or receipt.get('mode') not in ('plan','radar','review','changemaker','ondemand'):
+        if not isinstance(receipt, dict) or receipt.get('mode') not in ('plan','radar','review','changemaker','ondemand','publications'):
             continue
         if not path.resolve().is_relative_to(state):
             continue

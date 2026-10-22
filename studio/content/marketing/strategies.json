@@ -1,0 +1,1026 @@
+{
+  "version": 1,
+  "prepared_at": "2026-10-21",
+  "status": "Working campaign direction; audience hypotheses, not measured segments. No publication authorization.",
+  "sources": [
+    "../VOICE.md",
+    "../social/Product Claims Register.md",
+    "../../../src/lib/showcase.ts",
+    "sources/clpr-context.md",
+    "sources/clpr-launch-plan.md"
+  ],
+  "rules": [
+    "Strategy guides selection and wording; only dated claims and current product evidence establish facts.",
+    "Choose a reader task and one call to action. Fresh code changes are optional evidence, not a requirement for an evergreen post.",
+    "Rotate content themes and products using recent prepared copy. Preparation history is not publication history.",
+    "Respect existing account caps and reserved slots. Do not multiply a quota by the number of projects.",
+    "Use owned channels first. Community introductions, personal outreach, paid placement, and publication require separate authorization.",
+    "Recheck the exact destination and journey before approval. Missing measures are unavailable, not zero."
+  ],
+  "projects": {
+    "clpr": {
+      "name": "clpr",
+      "audience_hypothesis": "A viewer trying to find a clip they remember and send it to a friend.",
+      "positioning": "Find the clip, keep the collection, send one link.",
+      "claim_ids": [
+        "C-CLPR"
+      ],
+      "cta": {
+        "action": "Explore clips",
+        "url": "https://clpr.tv/"
+      },
+      "pillars": [
+        {
+          "id": "clpr-1",
+          "story": "Find a clip by creator and topic",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "clpr-2",
+          "story": "Build a playlist around one shared interest",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "clpr-3",
+          "story": "Share a collection with someone who missed the stream",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Search → open clip → save to playlist → open its public link in another session.",
+      "limits": "No completeness, ingestion-speed, ranking or native-app claims; repeat authenticated playlist sharing.",
+      "measurement": "Search sessions followed by a clip open / search sessions; completed saves / save attempts.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "automation": "existing showcase lane",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "clpr"
+    },
+    "patchwork": {
+      "name": "Patchwork",
+      "audience_hypothesis": "A neighborhood organizer evaluating a tool for local requests and offers.",
+      "positioning": "Show how a request and an offer could meet, using a clearly labeled demonstration.",
+      "claim_ids": [
+        "C-PATCHWORK"
+      ],
+      "cta": {
+        "action": "Explore the demonstration",
+        "url": "https://patchwork.subcult.tv/"
+      },
+      "pillars": [
+        {
+          "id": "patchwork-1",
+          "story": "A hypothetical ride request and an offer",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "patchwork-2",
+          "story": "Approximate request areas versus approved resource addresses",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "patchwork-3",
+          "story": "How an organizer would review a neighborhood board",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Synthetic request → approximate location → matching offer; no real aid coordination.",
+      "limits": "Pre-alpha demo; never invite real requests or imply help is guaranteed.",
+      "measurement": "Willing demo testers completing a synthetic task / testers attempting it.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "patchwork"
+    },
+    "hasanara": {
+      "name": "HasanAra",
+      "audience_hypothesis": "A viewer or researcher trying to relocate a phrase from a long broadcast.",
+      "positioning": "A remembered phrase can lead back to the recording at its timestamp.",
+      "claim_ids": [
+        "C-HASANARA"
+      ],
+      "cta": {
+        "action": "Search the archive",
+        "url": "https://hasanara.tv/"
+      },
+      "pillars": [
+        {
+          "id": "hasanara-1",
+          "story": "Find a phrase and return to the recording",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "hasanara-2",
+          "story": "Read surrounding transcript context",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "hasanara-3",
+          "story": "Check an automatic transcript against the tape",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Search an allowed example phrase → open passage → check the recording.",
+      "limits": "Automatic transcripts can be wrong; no complete-coverage promise or unverified quotation.",
+      "measurement": "Search sessions followed by a passage open / search sessions; manual recording-link success.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "automation": "existing showcase lane",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "hasanara"
+    },
+    "rekolekt": {
+      "name": "Rekolekt",
+      "audience_hypothesis": "An archivist maintaining a collection of long recordings.",
+      "positioning": "Turn a recording collection into timestamped, searchable passages under its own identity.",
+      "claim_ids": [
+        "C-REKOLEKT"
+      ],
+      "cta": {
+        "action": "Read about the archive software",
+        "url": "https://subcult.tv/products/transcript-create"
+      },
+      "pillars": [
+        {
+          "id": "rekolekt-1",
+          "story": "From recording to indexed passage",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "rekolekt-2",
+          "story": "An archive keeps its own name",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "rekolekt-3",
+          "story": "HasanAra as a running example, with limits",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Follow one permitted recording through transcript, search and source timestamp.",
+      "limits": "Software to deploy; no hosted upload service or instant onboarding promise.",
+      "measurement": "Qualified deployment questions / distinct campaign respondents; journey success recorded manually.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "transcript-create"
+    },
+    "subcult-os": {
+      "name": "Subcult OS",
+      "audience_hypothesis": "The person planning crew, the guest list and close-out for a small show.",
+      "positioning": "One rehearsal follows the night from load-in to the final report.",
+      "claim_ids": [
+        "C-OS"
+      ],
+      "cta": {
+        "action": "See the development project",
+        "url": "https://subcult.tv/products/subcult-os"
+      },
+      "pillars": [
+        {
+          "id": "subcult-os-1",
+          "story": "Crew and run sheet before doors",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "subcult-os-2",
+          "story": "Free reservations and door check-in",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "subcult-os-3",
+          "story": "End-of-night report from a synthetic rehearsal",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Synthetic event → free reservation → check-in → close-out report.",
+      "limits": "In development; no production event, paid ticketing, payouts or app-store promises.",
+      "measurement": "Rehearsal tasks completed / attempted; distinct organizer feedback, no real-event adoption claim.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "subcult-os"
+    },
+    "undertow": {
+      "name": "Undertow",
+      "audience_hypothesis": "A musician with a finished track who needs a visualizer for release posts.",
+      "positioning": "Show a track becoming a video through real editable layers and local export.",
+      "claim_ids": [
+        "C-UNDERTOW"
+      ],
+      "cta": {
+        "action": "Open the visualizer editor",
+        "url": "https://undertow.subcult.tv/"
+      },
+      "pillars": [
+        {
+          "id": "undertow-1",
+          "story": "Start from a template and make it yours",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "undertow-2",
+          "story": "Put timed lyrics on screen",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "undertow-3",
+          "story": "Compose portrait, square and landscape versions",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Permitted audio → template → edit one layer → export a short local MP4 and inspect it.",
+      "limits": "No guaranteed export speed or device support; live paid cloud billing is off.",
+      "measurement": "Successful inspected exports / attempted exports on named devices; visits alone are not exports.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "automation": "existing showcase lane",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "undertow"
+    },
+    "prichal": {
+      "name": "Prichal",
+      "audience_hypothesis": "A Bluesky account owner considering who maintains their account server.",
+      "positioning": "Explain the maintenance job in plain words before asking anyone to move.",
+      "claim_ids": [
+        "catalog:prichal"
+      ],
+      "cta": {
+        "action": "Read about the private preview",
+        "url": "https://subcult.tv/products/prichal"
+      },
+      "pillars": [
+        {
+          "id": "prichal-1",
+          "story": "What an account server does",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "prichal-2",
+          "story": "The boundary between account ownership and maintenance",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "prichal-3",
+          "story": "A labeled preview of the operator workflow",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Document a preview walkthrough and its remaining owner acceptance gates.",
+      "limits": "Private preview; no public signup, availability, migration guarantee or privacy claim.",
+      "measurement": "Distinct qualified preview questions / respondents; no signup conversion while signup is closed.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "prichal"
+    },
+    "kork": {
+      "name": "Kork",
+      "audience_hypothesis": "A musician or independent creator with links scattered across services.",
+      "positioning": "One page points people to the creator’s own work and accounts.",
+      "claim_ids": [
+        "C-KORK"
+      ],
+      "cta": {
+        "action": "Build a link page",
+        "url": "https://kork.subcult.tv/"
+      },
+      "pillars": [
+        {
+          "id": "kork-1",
+          "story": "A release page with music and video",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "kork-2",
+          "story": "Tip buttons open your own accounts",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "kork-3",
+          "story": "Update links and share the same page",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Use synthetic handles → create page → check links and the publication waiting period.",
+      "limits": "Early product; new accounts wait 24 hours; no custom domains, paid plans or invented audience counts.",
+      "measurement": "Published pages / eligible accounts attempting publication; track the waiting-period cohort separately.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "x",
+        "bluesky",
+        "instagram"
+      ],
+      "automation": "existing showcase lane",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "kork"
+    },
+    "left-field": {
+      "name": "Left Field",
+      "audience_hypothesis": "A researcher comparing seat-level election records and their gaps.",
+      "positioning": "Explain a sourced research note without turning its score into a forecast.",
+      "claim_ids": [
+        "catalog:left-field"
+      ],
+      "cta": {
+        "action": "Read the development overview",
+        "url": "https://subcult.tv/products/left-field"
+      },
+      "pillars": [
+        {
+          "id": "left-field-1",
+          "story": "A record beside its source",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "left-field-2",
+          "story": "What a provisional score leaves unknown",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "left-field-3",
+          "story": "How a versioned research note changes",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Selected public record → cited source → explicit gap; label the development demonstration.",
+      "limits": "No public app announced; no forecast accuracy or political outcome claims.",
+      "measurement": "Source-following tasks completed / attempted; distinct research questions.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "left-field"
+    },
+    "subsets": {
+      "name": "Subsets",
+      "audience_hypothesis": "A developer who wants a manageable set of local agent skills for a task.",
+      "positioning": "Read the folders, preview a set, then apply it with a recovery record.",
+      "claim_ids": [
+        "C-SUBSETS"
+      ],
+      "cta": {
+        "action": "Read the alpha instructions",
+        "url": "https://subsets.subcult.tv/"
+      },
+      "pillars": [
+        {
+          "id": "subsets-1",
+          "story": "Discover what is actually installed",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "subsets-2",
+          "story": "Preview a task-specific group",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "subsets-3",
+          "story": "Apply and inspect a checked rollback",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Disposable skill folders → discovery → preview → apply → rollback.",
+      "limits": "Check current registry/install availability; no model-quality gains, automatic task detection or unsupported platforms.",
+      "measurement": "Successful disposable apply-and-rollback journeys / attempted journeys.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "subsets"
+    },
+    "tadooer": {
+      "name": "Tadooer",
+      "audience_hypothesis": "A self-hosting individual choosing one task alongside their calendar.",
+      "positioning": "A day plan and one current focus, owned by one person.",
+      "claim_ids": [
+        "catalog:tadooer"
+      ],
+      "cta": {
+        "action": "Read the self-hosted project",
+        "url": "https://subcult.tv/products/tadooer"
+      },
+      "pillars": [
+        {
+          "id": "tadooer-1",
+          "story": "Tasks beside calendar blocks",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "tadooer-2",
+          "story": "Choose one focus for the next session",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "tadooer-3",
+          "story": "A personal workflow with synthetic tasks",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Synthetic day → calendar block → choose focus → complete task.",
+      "limits": "Self-hosted single-owner planner; no hosted signup or unverified cross-device guarantee.",
+      "measurement": "Completed synthetic planning journeys / attempts; qualified self-hosting questions.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "tadooer"
+    },
+    "chatty-cat": {
+      "name": "Chatty Cat",
+      "audience_hypothesis": "A Twitch viewer reading several channels and adjusting their chat display.",
+      "positioning": "Show several channels in one scrollback with the viewer’s own display settings.",
+      "claim_ids": [
+        "C-CHAT"
+      ],
+      "cta": {
+        "action": "Read about the rebuild",
+        "url": "https://subcult.tv/products/chatty-cat"
+      },
+      "pillars": [
+        {
+          "id": "chatty-cat-1",
+          "story": "Several channels in one log",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "chatty-cat-2",
+          "story": "Palette, font and line height choices",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "chatty-cat-3",
+          "story": "What the migration preserves from Chat Thing",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Anonymous viewing → add channels → change display → revisit settings.",
+      "limits": "Rebuild in migration; no parity, moderation, whispers or extension acceptance claim without fresh qualification.",
+      "measurement": "Viewing and settings journeys passed / attempted; migration feedback by feature family.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "chatty-cat"
+    },
+    "headcount": {
+      "name": "Headcount",
+      "audience_hypothesis": "A researcher comparing Twitch audience, chat and follow patterns.",
+      "positioning": "Show the measurements and uncertainty behind a bot-like pattern score.",
+      "claim_ids": [
+        "C-HEAD"
+      ],
+      "cta": {
+        "action": "Explore the measurements",
+        "url": "https://headcount.subcult.tv/"
+      },
+      "pillars": [
+        {
+          "id": "headcount-1",
+          "story": "Viewers and chatters on the same timeline",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "headcount-2",
+          "story": "A signal with plausible alternative explanations",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "headcount-3",
+          "story": "How provisional data changes",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Open a chart → inspect coverage and timeline → read score limits; avoid naming accused channels.",
+      "limits": "A high score is not proof of bot purchase or detector accuracy; no promotional accusation or unreviewed numeric score.",
+      "measurement": "Readers correctly explaining a score’s limits / willing readers asked; chart interactions if available.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "headcount"
+    },
+    "backline": {
+      "name": "Backline",
+      "audience_hypothesis": "The volunteer who handles roles, moderation and private tickets in a Discord server.",
+      "positioning": "Show one operator job in the private pilot rather than a catalogue of modules.",
+      "claim_ids": [
+        "C-BACKLINE"
+      ],
+      "cta": {
+        "action": "Read about the private pilot",
+        "url": "https://subcult.tv/products/backline"
+      },
+      "pillars": [
+        {
+          "id": "backline-1",
+          "story": "Welcome and self-assigned roles",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "backline-2",
+          "story": "A moderation case history",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "backline-3",
+          "story": "A private ticket and its transcript expiry",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Pilot test server → one permitted task → permission check → visible result.",
+      "limits": "Private pilot; public installation closed; no engagement or retention claims.",
+      "measurement": "Pilot tasks completed / attempted in a named test server; distinct operator feedback.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "backline"
+    },
+    "arkhiv": {
+      "name": "Arkhiv",
+      "audience_hypothesis": "A reader looking through print, audio and video collections with source context.",
+      "positioning": "A catalogue entry says what the item is, where it came from and how it can be accessed.",
+      "claim_ids": [
+        "C-ARKHIV"
+      ],
+      "cta": {
+        "action": "Browse the archive",
+        "url": "https://arkhiv.subcult.tv/"
+      },
+      "pillars": [
+        {
+          "id": "arkhiv-1",
+          "story": "Read a document with its provenance",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "arkhiv-2",
+          "story": "Explore recordings without implying reuse rights",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "arkhiv-3",
+          "story": "Why variants and delivery policies remain visible",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Selected rights-reviewed item → catalogue entry → reader/player → source and rights panel.",
+      "limits": "Unknown rights grant no reuse license; source streaming is not local preservation.",
+      "measurement": "Successful permitted item opens / attempted opens; manual rights-panel comprehension.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "arkhiv"
+    },
+    "overlaid": {
+      "name": "Overlaid",
+      "audience_hypothesis": "A solo Twitch streamer rehearsing OBS scenes and overlays.",
+      "positioning": "One rehearsal keeps the producer’s controls and service health in view.",
+      "claim_ids": [
+        "C-OVERLAID"
+      ],
+      "cta": {
+        "action": "Read the development overview",
+        "url": "https://subcult.tv/products/overlaid"
+      },
+      "pillars": [
+        {
+          "id": "overlaid-1",
+          "story": "A labeled overlay rehearsal",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "overlaid-2",
+          "story": "Scene changes and operator controls",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "overlaid-3",
+          "story": "A health page explaining one degraded component",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Synthetic Twitch event → demo overlay → rehearsal scene; label each simulated input.",
+      "limits": "In development; no public instance, full Newsroom parity or live Twitch/OBS qualification claim.",
+      "measurement": "Synthetic rehearsal steps passed / attempted; real-provider gates reported separately.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "overlaid"
+    },
+    "pirs": {
+      "name": "Pirs",
+      "audience_hypothesis": "A protocol developer evaluating a draft extension design for a personal data server.",
+      "positioning": "A design note invites technical review of hook boundaries, not plugin installation.",
+      "claim_ids": [
+        "C-PIRS"
+      ],
+      "cta": {
+        "action": "Read the experiment",
+        "url": "https://subcult.tv/products/pirs"
+      },
+      "pillars": [
+        {
+          "id": "pirs-1",
+          "story": "What the draft hook points observe",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "pirs-2",
+          "story": "A status bridge on a throwaway server",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "pirs-3",
+          "story": "The proposed isolation boundary and its open questions",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Draft spec → disposable server smoke evidence → explicit unimplemented plugin-host boundary.",
+      "limits": "Experiment; no plugin runs, no production suitability, and Prichal uses upstream.",
+      "measurement": "Specific design objections resolved / distinct review objections; no adoption metric yet.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "pirs"
+    },
+    "tmux-popups": {
+      "name": "tmux-popups",
+      "audience_hypothesis": "A tmux user tired of remembering separate popup bindings.",
+      "positioning": "A registry row produces a menu entry and a direct popup binding.",
+      "claim_ids": [
+        "C-TMUX"
+      ],
+      "cta": {
+        "action": "Read the install and doctor instructions",
+        "url": "https://subcult.tv/products/tmux-popups"
+      },
+      "pillars": [
+        {
+          "id": "tmux-popups-1",
+          "story": "One registry row to one popup",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "tmux-popups-2",
+          "story": "A small profile before a full setup",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "tmux-popups-3",
+          "story": "Doctor output that distinguishes missing dependencies",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Disposable tmux config → add row → open menu → invoke popup → run doctor.",
+      "limits": "Bash and named dependencies; presence checks do not prove provider credentials.",
+      "measurement": "Successful documented popup journeys / installation attempts on the supported shell.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "tmux-popups"
+    },
+    "omarchy-monitor-bar": {
+      "name": "Omarchy Multi-Monitor Bar",
+      "audience_hypothesis": "An Omarchy user deciding which monitors need a full bar.",
+      "positioning": "Show the same desk with a deliberate bar role on each screen.",
+      "claim_ids": [
+        "C-MONBAR"
+      ],
+      "cta": {
+        "action": "Check supported release and setup",
+        "url": "https://subcult.tv/products/omarchy-monitor-bar"
+      },
+      "pillars": [
+        {
+          "id": "omarchy-monitor-bar-1",
+          "story": "Full on primary, minimal on secondary",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "omarchy-monitor-bar-2",
+          "story": "Change one monitor in settings",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "omarchy-monitor-bar-3",
+          "story": "Check the pinned stock-file compatibility",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Supported Omarchy release → per-monitor role → Check/Sync → inspect both monitors.",
+      "limits": "Version-pinned compatibility; no broad current-Omarchy support without checking release.",
+      "measurement": "Supported-release configuration journeys passed / attempted.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "omarchy-monitor-bar"
+    },
+    "omarchy-superproductivity": {
+      "name": "Super Productivity for Omarchy",
+      "audience_hypothesis": "An Omarchy user who wants the current task visible without reopening the planner.",
+      "positioning": "Keep the current task and timer within reach in the bar.",
+      "claim_ids": [
+        "C-SPOM"
+      ],
+      "cta": {
+        "action": "Read the local API setup",
+        "url": "https://subcult.tv/products/omarchy-superproductivity"
+      },
+      "pillars": [
+        {
+          "id": "omarchy-superproductivity-1",
+          "story": "Task countdown in the bar",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "omarchy-superproductivity-2",
+          "story": "Quick add with project, schedule and tag",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "omarchy-superproductivity-3",
+          "story": "Complete a task from the Today list",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Desktop REST API ready → synthetic task → start → extend → complete.",
+      "limits": "Requires desktop local API; no race-free synchronization promise.",
+      "measurement": "Successful task-control actions / attempted actions with API prerequisites recorded.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "omarchy-superproductivity"
+    },
+    "omarchy-plugin-spool": {
+      "name": "Spool",
+      "audience_hypothesis": "A desktop tinkerer interested in a cassette companion reacting to agent activity.",
+      "positioning": "Show the actual animation and the local activity bridge.",
+      "claim_ids": [
+        "C-SPOOL"
+      ],
+      "cta": {
+        "action": "Read the companion’s scope",
+        "url": "https://subcult.tv/products/omarchy-plugin-spool"
+      },
+      "pillars": [
+        {
+          "id": "omarchy-plugin-spool-1",
+          "story": "Working and waiting animations",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "omarchy-plugin-spool-2",
+          "story": "Pointer-following eyes and movement",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "omarchy-plugin-spool-3",
+          "story": "Local compatibility adapter boundaries",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Selected original artwork → local bridge event → observed animation.",
+      "limits": "Artwork is user-specific with no redistribution license; no official Pets event API claim.",
+      "measurement": "Local state-to-animation checks passed / attempted; no redistribution campaign.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "omarchy-plugin-spool"
+    },
+    "omarchy-plugin-shelfish": {
+      "name": "Shelfish",
+      "audience_hypothesis": "An Omarchy user with a crowded bar who wants related widgets grouped.",
+      "positioning": "Put existing widgets into shelves that can open when attention is needed.",
+      "claim_ids": [
+        "C-SHELF"
+      ],
+      "cta": {
+        "action": "Check compatibility and setup",
+        "url": "https://subcult.tv/products/omarchy-plugin-shelfish"
+      },
+      "pillars": [
+        {
+          "id": "omarchy-plugin-shelfish-1",
+          "story": "A named group replaces scattered widgets",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "omarchy-plugin-shelfish-2",
+          "story": "Reveal on a member’s status change",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "omarchy-plugin-shelfish-3",
+          "story": "Restore widgets before removing the plugin",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Supported shell → group synthetic widgets → trigger reveal → restoreAll.",
+      "limits": "Internal shell API; no promise of pre-group positions or marketplace availability.",
+      "measurement": "Group/reveal/restore journeys passed / attempted on a named shell version.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "omarchy-plugin-shelfish"
+    },
+    "obsidian-plugin-metronome-tuner": {
+      "name": "Metronome + Tuner",
+      "audience_hypothesis": "A musician keeping practice notes in Obsidian.",
+      "positioning": "Count in and tune while the practice note stays open.",
+      "claim_ids": [
+        "C-METRO"
+      ],
+      "cta": {
+        "action": "Read release installation instructions",
+        "url": "https://subcult.tv/products/obsidian-plugin-metronome-tuner"
+      },
+      "pillars": [
+        {
+          "id": "obsidian-plugin-metronome-tuner-1",
+          "story": "Tap tempo beside practice notes",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "obsidian-plugin-metronome-tuner-2",
+          "story": "Opt in to the local tuner",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "obsidian-plugin-metronome-tuner-3",
+          "story": "Choose accents and a click sound",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Supported Obsidian → tap tempo → microphone opt-in → inspect note/cents display.",
+      "limits": "Check marketplace acceptance; no measured precision or undocumented platform guarantee.",
+      "measurement": "Completed practice-tool tasks / attempts by supported platform.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "obsidian-plugin-metronome-tuner"
+    },
+    "super-productivity-mcp": {
+      "name": "super-productivity-mcp",
+      "audience_hypothesis": "A Super Productivity user connecting task operations to an assistant.",
+      "positioning": "Show a previewed task operation reaching the same desktop task list.",
+      "claim_ids": [
+        "C-SPMCP"
+      ],
+      "cta": {
+        "action": "Read bridge setup and requirements",
+        "url": "https://subcult.tv/products/super-productivity-mcp"
+      },
+      "pillars": [
+        {
+          "id": "super-productivity-mcp-1",
+          "story": "Quick add reaches the task list",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "super-productivity-mcp-2",
+          "story": "Preview a broad write",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "super-productivity-mcp-3",
+          "story": "Inspect the bridge inbox and recovery path",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Disposable tasks → dry-run broad change → explicit apply → verify desktop state.",
+      "limits": "Desktop/plugin/API version prerequisites apply; no blanket recurrence or write-safety guarantee.",
+      "measurement": "Verified intended task changes / attempted authorized changes, with dry-run results separate.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "super-productivity-mcp"
+    },
+    "the-common-house": {
+      "name": "The Common House",
+      "audience_hypothesis": "A player curious about a narrative investigation game in development.",
+      "positioning": "A selected piece of original work introduces the shared house and its radio.",
+      "claim_ids": [
+        "C-HOUSE"
+      ],
+      "cta": {
+        "action": "Read about the studio’s work",
+        "url": "https://subcult.tv/"
+      },
+      "pillars": [
+        {
+          "id": "the-common-house-1",
+          "story": "A source medium in an investigation",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "the-common-house-2",
+          "story": "An original environment study",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        },
+        {
+          "id": "the-common-house-3",
+          "story": "A labeled work-in-progress radio scene",
+          "asset": "A real task capture or an explicitly labeled conceptual type card; never substitute a landing page for a feature demonstration."
+        }
+      ],
+      "first_use_check": "Explicitly selected original still or recorded development scene, with provenance.",
+      "limits": "No public build, release date, final names or invented mechanics.",
+      "measurement": "Distinct feedback on a selected work-in-progress asset; no sales or playable-build conversion.",
+      "baseline": "Unavailable; establish from the first two comparable approved pieces and manual journey checks.",
+      "channels": [
+        "studio roundup",
+        "project demonstration"
+      ],
+      "automation": "manual evidence review before automatic showcase",
+      "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
+      "catalog_slug": "the-common-house"
+    }
+  }
+}

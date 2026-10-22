@@ -14,3 +14,8 @@ Produce exactly one item for `product`:
 - account: subcult unless the post is a maker's note.
 
 Write four angles as for a change, with a payoff for a stranger, and choose `screenshot` as the visual for at least two of them (the live page is the honest proof). Rank them and list the top three in `draft_angles`.
+
+
+Use `marketing_strategies` (under context for plan/radar) as campaign direction: choose the relevant audience, one content theme, one reader task and one supported next action. It is not capability evidence. In showcase mode, follow the selected `campaign.pillar`, vary the angle from recent captions, and use the product strategy’s destination only after the supplied product evidence supports the action. Prefer a real task demonstration or a specific useful explanation over a feature inventory. A missing demo remains an asset task; never pretend the landing page shows the workflow. Strategy targets do not override account caps, evidence limits, owner feedback or approval.
+
+`demonstration_evidence` contains inspected, hash-bound observations with dates and scope limits. Use only the recorded task and result as evidence; a synthetic demonstration is not a customer story, a general device guarantee or a campaign performance result. The matching asset still needs placement and rights review before public use. Campaign results guide the next experiment; missing metrics stay unavailable. If a journey is marked `fix_journey_before_distribution`, do not draft a promotion asking readers to use that failed journey.

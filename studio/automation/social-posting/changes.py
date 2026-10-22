@@ -17,6 +17,8 @@ from datetime import datetime, timedelta, timezone
 import hashlib
 import json
 import subprocess
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -64,8 +66,24 @@ def gitea_token(options: dict) -> str:
 def get_gitea(url: str, token: str) -> list | dict:
     request = urllib.request.Request(url, headers={'Authorization': 'token '+token,
                                                    'User-Agent': 'SUBCULT-studio-changes/1.0'}, method='GET')
-    with urllib.request.build_opener(NoRedirect).open(request, timeout=20) as response:
-        data = response.read(2_000_001)
+    for attempt in range(3):
+        try:
+            with urllib.request.build_opener(NoRedirect).open(request, timeout=20) as response:
+                data = response.read(2_000_001)
+            break
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as error:
+            # Retry reads only. Authentication, missing repositories and malformed
+            # data require attention rather than repeated requests.
+            if isinstance(error, urllib.error.HTTPError) and error.code not in (429, 500, 502, 503, 504):
+                raise
+            if attempt == 2:
+                raise
+            delay = (2, 5)[attempt]
+            if isinstance(error, urllib.error.HTTPError):
+                value = (error.headers or {}).get('Retry-After', '')
+                if value.isdigit():
+                    delay = min(max(delay, int(value)), 30)
+            time.sleep(delay)
     if len(data) > 2_000_000:
         raise ValueError('Gitea response exceeds the read budget')
     return json.loads(data)
@@ -88,7 +106,9 @@ def merged_pulls(options: dict, token: str, repository: str, start: datetime, en
         query = urllib.parse.urlencode({'state': 'closed', 'sort': 'recentupdate',
                                         'limit': options['page_size'], 'page': page})
         pulls = get_gitea(f"{options['base_url']}/api/v1/repos/{repository}/pulls?{query}", token)
-        if not isinstance(pulls, list) or not pulls:
+        if not isinstance(pulls, list):
+            raise ValueError('Invalid Gitea pull response')
+        if not pulls:
             break
         for pull in pulls:
             if not pull.get('merged') or not pull.get('merged_at'):
@@ -164,7 +184,7 @@ def changes_context(cfg: dict, now: datetime, days: int = 1) -> dict:
     evidence_bytes = json.dumps(evidence['items'], sort_keys=True, separators=(',', ':')).encode()
     note = collection_note(evidence)
     run_id = 'changes-'+now.strftime('%Y%m%dT%H%M%SZ')
-    context['status'] = 'available' if evidence['items'] else 'empty'
+    context['status'] = 'partial' if evidence['failures'] else 'available' if evidence['items'] else 'empty'
     context['drafts'].append({
         'thread_id': run_id, 'run_id': run_id, 'version': 1, 'state': 'collected',
         'draft': note, 'draft_sha256': hashlib.sha256(note.encode()).hexdigest(),

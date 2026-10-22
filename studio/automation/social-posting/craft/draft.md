@@ -35,3 +35,10 @@ When `mode` is `weekly`, this is a marketing post about one product, not a recap
 - Do not use: "not just X, but Y", "the result?", "game-changer", "seamless", "powerful", "effortless", "unlock", "empower", "elevate", "streamline", "reimagine", "useful", "important", "matters", "revised", "improved". No private URLs, PR numbers, internal names or citation markers.
 
 Each caption lists the source IDs it relies on.
+
+
+Use `marketing_strategies` (under context for plan/radar) as campaign direction: choose the relevant audience, one content theme, one reader task and one supported next action. It is not capability evidence. In showcase mode, follow the selected `campaign.pillar`, vary the angle from recent captions, and use the product strategy’s destination only after the supplied product evidence supports the action. Prefer a real task demonstration or a specific useful explanation over a feature inventory. A missing demo remains an asset task; never pretend the landing page shows the workflow. Strategy targets do not override account caps, evidence limits, owner feedback or approval.
+
+Use zero-based array indexes for item, angle and draft references: the first is 0. Preserve the same references between stages.
+
+In showcase mode, `product_page` is the public page captured for this run and can support the capabilities and visible details it actually describes. It is not proof that a full edit, export, signup or other journey was completed. Claims and page text must agree on maturity; omit or flag conflicts.
