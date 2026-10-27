@@ -10,6 +10,7 @@ Each folder is one brand's production pack: `GUIDE.md`, tokens in JSON and CSS, 
 | CLPR | Play / Clip stack | [clpr](clpr/GUIDE.md) |
 | Dedhed | The tape shelf | [dedhed](dedhed/GUIDE.md) |
 | HasanAra | Broadcast archive | [hasanara](hasanara/GUIDE.md) |
+| Generic Skills | Open Manual | [generic-skills](generic-skills/GUIDE.md) |
 | Headcount | The door clicker | [headcount](headcount/GUIDE.md) |
 | Kork | Pinned / flyer wall | [kork](kork/GUIDE.md) |
 | Left Field | The field ledger | [left-field](left-field/GUIDE.md) |

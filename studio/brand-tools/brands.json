@@ -441,5 +441,29 @@
     "slug": "headcount",
     "selected_by_user": true,
     "direction_selection": "user"
+  },
+  {
+    "id": "generic-skills-a",
+    "brand": "Generic Skills",
+    "variant": "A",
+    "name": "Open Manual",
+    "slug": "generic-skills",
+    "bg": "#f3f1e9",
+    "fg": "#152b35",
+    "accent": "#d6532e",
+    "secondary": "#52636a",
+    "display": "Space Grotesk",
+    "body": "Public Sans",
+    "label": "JetBrains Mono",
+    "headline": [
+      "Generic Skills"
+    ],
+    "tag": "PORTABLE AGENT PROCEDURES",
+    "description": "A portable technical manual with an original open G and indexed corner.",
+    "mode": "generic-skills",
+    "url": "github.com/PatrickFanella/generic-skills",
+    "source": "Agent-selected repository identity under owner instruction, October 27, 2026. Masters in brands/generic-skills and brand-tools/repository_identity.py.",
+    "selected_by_user": false,
+    "direction_selection": "agent-selected under owner publication request"
   }
 ]

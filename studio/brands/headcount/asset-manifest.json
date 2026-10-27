@@ -582,6 +582,31 @@
       "path": "video/thumbnail.svg",
       "sha256": "7863091da4b0e36c8defc0a56de9ce66a58960caab02fa25a98eab831d1754c8",
       "bytes": 3301
+    },
+    {
+      "path": "repository/avatar.png",
+      "sha256": "c5b9b50686c6ce7e371bb88c97b95d43735f1c195f3b30dc9b6777142a319303",
+      "bytes": 10695
+    },
+    {
+      "path": "repository/avatar.svg",
+      "sha256": "207d8e4f0a975425e380cb22b64fd5f697f680bc317bbf318023ac0c98f6f94c",
+      "bytes": 1194
+    },
+    {
+      "path": "repository/banner.png",
+      "sha256": "cee17f8990ca230decb31dee57341fc30106e35562bbec8e711b59c0bcbe5828",
+      "bytes": 52818
+    },
+    {
+      "path": "repository/banner.svg",
+      "sha256": "4c54b28798faffc119bd2495e4ac35b97c5d4dc07697985e7762b5ef97bdf8ad",
+      "bytes": 42181
+    },
+    {
+      "path": "repository/source-map.json",
+      "sha256": "08db3a6cfc1302041312bcb2f88288e810a9aff5b6ea60ffee44273378596322",
+      "bytes": 429
     }
   ]
 }

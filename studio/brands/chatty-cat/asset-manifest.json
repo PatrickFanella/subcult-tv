@@ -1726,6 +1726,31 @@
         "width": 1920.0,
         "height": 1080.0
       }
+    },
+    {
+      "path": "repository/avatar.png",
+      "sha256": "96e8c81c5d20ffad902e1fa6299f39152a598b49d7a3f0672d72210e8bb44ac3",
+      "bytes": 2057
+    },
+    {
+      "path": "repository/avatar.svg",
+      "sha256": "4ee6583ce2df07cde361ca96c74b691f55cdbbc4c1f69b2618b3415265c95ea6",
+      "bytes": 2863
+    },
+    {
+      "path": "repository/banner.png",
+      "sha256": "e39fc9335ed3c7ce439b37de07e9f832e7963a959ef2ec689fa5e1e90e39638f",
+      "bytes": 55842
+    },
+    {
+      "path": "repository/banner.svg",
+      "sha256": "e986dd9741afdb2e78407b33696accd0372c74a22a0ef4aed7f1f2652ab0b1c0",
+      "bytes": 40467
+    },
+    {
+      "path": "repository/source-map.json",
+      "sha256": "78913031b3ee9f8f6dab7895d92f3d71bfaef86e356aa7dd6c055a85269ac919",
+      "bytes": 431
     }
   ]
 }

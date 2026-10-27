@@ -1,0 +1,128 @@
+{
+  "brand": "generic-skills",
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "6e8f159a27f70535326b42bf5765be50e957cc4d1889c73c005493ff763f5961",
+      "bytes": 2434
+    },
+    {
+      "path": "alt-text.md",
+      "sha256": "ea850ca0c76d2e5d956e60f3cbf5dfc49c48732d86a211a09de4655e533d7fe1",
+      "bytes": 227
+    },
+    {
+      "path": "brand.json",
+      "sha256": "566c095cd3306aed25bf93f03a25248f738b1eb016768f3098fe957e15b70699",
+      "bytes": 785
+    },
+    {
+      "path": "directions.png",
+      "sha256": "925fe7809e986147cc96a11888a2fd53bf7a353e2cd3b1edcbb878f1137a70c7",
+      "bytes": 107725
+    },
+    {
+      "path": "directions.svg",
+      "sha256": "5d5e314fb7244a75dddb3cf070e2f2184592bd2fe6a987ea47970660ee2855f2",
+      "bytes": 95269
+    },
+    {
+      "path": "fonts/jetbrainsmono-OFL.txt",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+      "bytes": 4399
+    },
+    {
+      "path": "fonts/publicsans-OFL.txt",
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+      "bytes": 4390
+    },
+    {
+      "path": "fonts/spacegrotesk-OFL.txt",
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+      "bytes": 4495
+    },
+    {
+      "path": "logos/lockup-primary-outlined.png",
+      "sha256": "98e54fdc414c7fbe6f6f64f7d03d7558239619b3d6f8b4000650e16b2acc13af",
+      "bytes": 10972
+    },
+    {
+      "path": "logos/lockup-primary-outlined.svg",
+      "sha256": "2421e883c77dcd096aeef88570556d4b917ad7f48ddf4eb9b66e025abafc1a35",
+      "bytes": 4531
+    },
+    {
+      "path": "logos/mark-mono.png",
+      "sha256": "4a55a4538f2df65cefc9e307073bb99e7627189c54a3ac07c4bb012e28fb7321",
+      "bytes": 801
+    },
+    {
+      "path": "logos/mark-mono.svg",
+      "sha256": "7261f20d72bfb99c456951c5c23149eab4ab9a3b662f802a2517b66d2ecbbe07",
+      "bytes": 303
+    },
+    {
+      "path": "logos/mark-primary.png",
+      "sha256": "d88fa390b9c317d24ee7173fc68b9328d6f35151ad42e760fef4bfcdda7b02b2",
+      "bytes": 814
+    },
+    {
+      "path": "logos/mark-primary.svg",
+      "sha256": "8955bee3db2712827d5573308614a02d6bb2bae7e260b00bd52d5db99f98c428",
+      "bytes": 304
+    },
+    {
+      "path": "pack-preview.png",
+      "sha256": "4867e6154102fd6bc1f650ee25af0412157836a07b07c4c7c243d80b254cfecb",
+      "bytes": 55362
+    },
+    {
+      "path": "repository/avatar.png",
+      "sha256": "149c9cf219909ba09cbee5c6c7d32fdb81e0b55ec53d6202d0a795af40346a18",
+      "bytes": 3251
+    },
+    {
+      "path": "repository/avatar.svg",
+      "sha256": "70c168060fc4ef99cd3dd0f9422cf3a9ec7208bab96bde1e8737087d08209ba4",
+      "bytes": 409
+    },
+    {
+      "path": "repository/banner.png",
+      "sha256": "4867e6154102fd6bc1f650ee25af0412157836a07b07c4c7c243d80b254cfecb",
+      "bytes": 55362
+    },
+    {
+      "path": "repository/banner.svg",
+      "sha256": "989e4ea16c0a95413ce8c4b0b437ecdc3f8c769b61da368fed2866fc22da9ef7",
+      "bytes": 37487
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "a9870e7db17bee883795baa5064bee419f12cc2bd52043385c25c993147b008b",
+      "bytes": 109
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "a46a1d2f3be5054f891e47ed60f8437a17a6a5b2d78a086cd1be12fa13ef71e3",
+      "bytes": 372
+    }
+  ],
+  "sources": [
+    {
+      "path": "brand-tools/repository_identity.py",
+      "sha256": "323fdcbd364fbe7ca8eed0c8ffeb04eb2416dbd90dffb0ced927a322f8d81138"
+    },
+    {
+      "path": "brand-tools/fonts/Space-Grotesk-1.ttf",
+      "sha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85"
+    },
+    {
+      "path": "brand-tools/fonts/Public-Sans-0.ttf",
+      "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546"
+    },
+    {
+      "path": "brand-tools/fonts/JetBrains-Mono-0.ttf",
+      "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+    }
+  ]
+}

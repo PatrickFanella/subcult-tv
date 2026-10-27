@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "path": "brands/chatty-cat/logos/lockup-primary-outlined.svg",
+      "sha256": "30d506415b348d26c823d60ba40275cb262ef5e519cd0d3f55b12329b49265e7"
+    },
+    {
+      "path": "brands/chatty-cat/social/avatar.svg",
+      "sha256": "3b9526f24c706c6641302e7032178f3c24c0d1c15b0c45edc297dec43349295e"
+    }
+  ],
+  "scope": "Repository banner and avatar only; approved identity masters retained unchanged."
+}

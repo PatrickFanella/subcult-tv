@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "path": "brands/headcount/logos/lockup-primary-outlined.svg",
+      "sha256": "4dc93239fcff8c7e7495f8c2c404fde381ba71937e410827e963a514ffed8091"
+    },
+    {
+      "path": "brands/headcount/social/avatar.svg",
+      "sha256": "b37186b579c9c75a529327b37a93718fd643bbf2ceb79d79ea4370d7c3c25e31"
+    }
+  ],
+  "scope": "Repository banner and avatar only; approved identity masters retained unchanged."
+}
