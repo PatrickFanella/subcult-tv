@@ -1,8 +1,8 @@
 [
   {
     "path": "brand-tools/README.md",
-    "sha256": "bd9b270415a60ae4b68febf45ad0d646c4fb840f6070a728b1210417d3acf20f",
-    "bytes": 21331
+    "sha256": "d741b847d53595407235b1cf08ca6ba0ea3a1da9277c593d9356d88ea864e587",
+    "bytes": 21670
   },
   {
     "path": "brand-tools/audit_patchwork_contrast.py",
@@ -5225,8 +5225,8 @@
   },
   {
     "path": "brand-tools/brands.json",
-    "sha256": "255d25bafcc7a6b6de4454e18b255ef9f76e7a2cd7f398850d92567083697369",
-    "bytes": 15224
+    "sha256": "231734e6bbdcacece6512113c3891de55b1b7d6ff2177c777fafdde7dfab6b18",
+    "bytes": 16098
   },
   {
     "path": "brand-tools/build_packs.py",
@@ -7778,8 +7778,8 @@
   },
   {
     "path": "brands/README.md",
-    "sha256": "39a1a8547a5b8751a834384a47e133bbae8dc97de7dacabd0fae355181669a09",
-    "bytes": 3407
+    "sha256": "907c38d085903703fb4150a62f428883f13b6a5c5327969e082b933d122e662d",
+    "bytes": 3484
   },
   {
     "path": "brands/arkhiv/GUIDE.md",
