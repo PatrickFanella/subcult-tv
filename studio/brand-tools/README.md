@@ -180,3 +180,11 @@ Added October 19, 2026. Headcount is the product name of the Twitch bot-signal d
 The mark is a door tally: two solid strokes, two hollow ones and an amber slash, with a three-stroke small glyph for 32px and under. Night ink and amber, Barlow Condensed for the wordmark and numbers, Public Sans body and JetBrains Mono labels, all already in `fonts/`. The pack has dark and light themes and a quotient ramp from warm grey into amber; the build refuses either theme if text, chart series or ramp steps fall under their contrast floors.
 
 The generator is standalone, `../brands/headcount/build.py`, in the Subsets and Chatty Cat pattern, and `build_packs.py` delegates to it. It needs rsvg-convert, Inkscape, ffmpeg, Pillow and fontTools, so it runs on Kvant. `--product-root` copies the product's `docs/design-system.md` into `design-system/` with its hash; `--export` writes the favicon, icons, link preview, themed mark, `tokens.css` and WOFF2 fonts with a `brand-export.json` receipt. The dashboard has carried the export since October 19, 2026.
+
+
+## Repository identities
+
+`python3 studio/brand-tools/repository_identity.py` from the repository root builds
+the Generic Skills identity and the Headcount/Chatty Cat repository banners and
+avatars. The latter preserve their selected logo masters. Only these three
+repository exports are rebuilt; broader product packs remain unchanged.
