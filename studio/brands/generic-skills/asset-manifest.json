@@ -110,7 +110,7 @@
   "sources": [
     {
       "path": "brand-tools/repository_identity.py",
-      "sha256": "323fdcbd364fbe7ca8eed0c8ffeb04eb2416dbd90dffb0ced927a322f8d81138"
+      "sha256": "7df992a27d6b2e8d9b9fb5249d8f065f032ef16a09bfe976d45ea657750069e0"
     },
     {
       "path": "brand-tools/fonts/Space-Grotesk-1.ttf",

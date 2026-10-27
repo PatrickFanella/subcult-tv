@@ -141,6 +141,9 @@ def build_existing(slug):
     folder = BRANDS / slug
     lockup, avatar = folder / 'logos/lockup-primary-outlined.svg', folder / 'social/avatar.svg'
     if slug == 'headcount':
+        # Repository avatars are displayed at 32px in sidebars. Follow the
+        # selected pack's compact-mark rule instead of shrinking the full mark.
+        avatar = folder / 'logos/mark-small.svg'
         bg, fg, accent = '#121316', '#ecebe6', '#f2b53a'
         title, subtitle, label = 'Twitch signals, in context.', 'Viewer, follower and chat patterns. Evidence before conclusions.', 'HEADCOUNT / SUS QUOTIENT'
         label_font = 'JetBrains-Mono-0.ttf'
@@ -155,7 +158,9 @@ def build_existing(slug):
     body += text(112, 412, subtitle, 28, fg, 'Public-Sans-0.ttf')
     body += text(112, 500, label, 20, accent, label_font, 1)
     render(folder / 'repository/banner.svg', 1600, 560, body, title)
-    render(folder / 'repository/avatar.svg', 512, 512, embed(avatar, 0, 0, 512, 512), slug + ' repository avatar')
+    avatar_body = (rect(0, 0, 512, 512, bg) + embed(avatar, 64, 64, 384, 384)
+                   if slug == 'headcount' else embed(avatar, 0, 0, 512, 512))
+    render(folder / 'repository/avatar.svg', 512, 512, avatar_body, slug + ' repository avatar')
     (folder / 'repository/source-map.json').write_text(json.dumps({
         'sources': [{'path': str(p.relative_to(STUDIO)), 'sha256': digest(p)} for p in [lockup, avatar]],
         'scope': 'Repository banner and avatar only; approved identity masters retained unchanged.'}, indent=2) + '\n')
