@@ -40,17 +40,19 @@ Evidence: the same instant displayed 3:00 PM with both Chicago and Tokyo labels;
 
 Why it works: the exact numbers are the hook. The fix is shown, not described. "Run sheets live and die by the clock" carries the product's run-sheet register without claiming anything.
 
-## 4. 3,400 pixels (subcult, Subcult OS)
+## 4. Start with the creator (subcult, clpr)
 
-> A long enough event name could push the Close button 3,400 pixels to the right. On a phone screen 360 pixels wide.
+> You remember the Twitch streamer. The clip title, less so.
 >
-> Names and locations wrap now, and the Close button keeps its place beside the heading. You can still read the whole name by scrolling.
+> The link could be halfway up an old group chat by now. You just want to watch that one bit again.
 >
-> Small venues have long show titles. Subcult OS is in development.
+> We built clpr so you can browse Twitch clips by creator.
+>
+> At clpr.tv, start with the creator you remember.
 
-Evidence: long unbroken names expanded a 360px view and pushed the Close button beyond x=3400; text now wraps and the heading shrinks beside a non-shrinking Close control.
+Evidence: C-CLPR supports browsing Twitch clips by creator at clpr.tv. The owner approved this wording on October 19, 2026, changing only line endings. The group chat is a possible reader situation, not a reported incident or a promise that clpr has the clip.
 
-Why it works: an absurd, exact number from the evidence does all the work. The ending is a dry aside that is true by observation, not a moral.
+Why it works: the remembered creator supplies both the hook and a concrete next step, with one supported capability between them.
 
 ## 5. The product, not the menu (subcult, Undertow)
 
