@@ -1,32 +1,39 @@
 import { useContext } from 'react';
 import { ProjectCatalogContext } from '@/context/ProjectCatalogContext';
-import { getShowcaseProducts } from './showcase';
+import { getShowcaseProducts, type ShowcaseProduct } from './showcase';
+import type { APIProject } from '@/lib/api';
 import type { Project } from '@/types';
+
+const STATUSES: Project['status'][] = ['active', 'incubating', 'archived'];
+
+/**
+ * The source catalog (content/projects.json and src/lib/showcase.ts) owns a
+ * product's name, summary, featured flag and copy. The approved API snapshot
+ * only updates what changes between releases: its status and live URL, and
+ * only when the snapshot actually has a value.
+ */
+export function applyApprovedSnapshot(
+  product: ShowcaseProduct,
+  snapshot: APIProject | undefined,
+): ShowcaseProduct {
+  if (!snapshot) return product;
+  const status = STATUSES.find((s) => s === snapshot.status) ?? product.project.status;
+  const homepage = snapshot.homepage?.trim() || undefined;
+  const project: Project = {
+    ...product.project,
+    status,
+    homepage: homepage ?? product.project.homepage,
+    url: homepage ?? product.project.url,
+  };
+  return { ...product, project };
+}
 
 export function useShowcaseProducts() {
   const approved = useContext(ProjectCatalogContext);
-  return getShowcaseProducts().map((product) => {
-    const snapshot = approved.find((p) => p.slug === product.project.slug);
-    if (!snapshot) return product;
-    const project: Project = {
-      ...product.project,
-      name: snapshot.name,
-      description: snapshot.description,
-      longDescription: snapshot.long_description,
-      whyItExists: snapshot.why_it_exists,
-      stack: snapshot.stack,
-      topics: snapshot.topics,
-      status: snapshot.status as Project['status'],
-      repoUrl: snapshot.repo_url ?? product.project.repoUrl,
-      homepage: snapshot.homepage,
-      url: snapshot.homepage || undefined,
-      coverColor: snapshot.cover_color ?? product.project.coverColor,
-      coverPattern: ['circuit', 'grid', 'waves', 'dots', 'sigil'].includes(snapshot.cover_pattern)
-        ? (snapshot.cover_pattern as Project['coverPattern'])
-        : product.project.coverPattern,
-      featured: snapshot.featured,
-      order: snapshot.sort_order,
-    };
-    return { ...product, project, summary: snapshot.description };
-  });
+  return getShowcaseProducts().map((product) =>
+    applyApprovedSnapshot(
+      product,
+      approved.find((p) => p.slug === product.project.slug),
+    ),
+  );
 }

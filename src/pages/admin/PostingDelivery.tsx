@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import {
   getBlueskyDelivery,
@@ -18,7 +18,13 @@ import {
   type ReviewDraft,
   type SocialDelivery as Delivery,
 } from '@/lib/api';
-import { favoritedDrafts, firstLine, metricSummary, slotLabel } from '@/lib/review-queue';
+import {
+  favoritedDrafts,
+  firstLine,
+  metricSummary,
+  slotLabel,
+  splitLoadFailures,
+} from '@/lib/review-queue';
 import PostingShell from './PostingShell';
 import ReviewRow from './ReviewRow';
 import QueuedPostEditor from './QueuedPostEditor';
@@ -75,9 +81,12 @@ export default function PostingDelivery() {
   const [social, setSocial] = useState<Delivery | null>(null);
   const [decisions, setDecisions] = useState<DraftDecision[]>([]);
   const [errors, setErrors] = useState<string[]>([]);
+  const [unconfigured, setUnconfigured] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [revision, setRevision] = useState(0);
-  const [refreshBuffer, setRefreshBuffer] = useState(false);
+  // Set by the Refresh button for the next load only; a forced Buffer history
+  // fetch must not repeat on every later refresh.
+  const forceBuffer = useRef(false);
   const [busy, setBusy] = useState('');
   const [notice, setNotice] = useState('');
   const [open, setOpen] = useState('');
@@ -94,7 +103,7 @@ export default function PostingDelivery() {
       getPostingDashboard(),
       getReviewDrafts(),
       getBufferDelivery(),
-      getBufferHistory(refreshBuffer),
+      getBufferHistory(forceBuffer.current),
       getSocialDelivery(),
       getBlueskyDelivery(),
       getDraftDecisions(new Date(Date.now() - 60 * 86400000).toISOString()),
@@ -115,22 +124,20 @@ export default function PostingDelivery() {
         'PostyBirb',
         'Bluesky',
       ];
-      setErrors(
-        [p, r, b, h, s, sky].flatMap((result, i) =>
-          result.status === 'rejected'
-            ? [
-                `${names[i]}: ${result.reason instanceof Error ? result.reason.message : 'unavailable'}`,
-              ]
-            : [],
-        ),
+      const failures = splitLoadFailures(
+        [p, r, b, h, s, sky].map((result, i) => ({ name: names[i], result })),
       );
+      setErrors(failures.errors);
+      setUnconfigured(failures.unconfigured);
       setNow(Date.now());
       setLoading(false);
     });
+    // The forced read has been requested; later loads use Buffer's cached history.
+    forceBuffer.current = false;
     return () => {
       active = false;
     };
-  }, [revision, refreshBuffer]);
+  }, [revision]);
 
   const timeZone = posting?.timezone || 'America/Chicago';
   const favorites = favoritedDrafts(decisions);
@@ -224,6 +231,8 @@ export default function PostingDelivery() {
     const post = bluesky?.posts.find((p) => p.id === receipt.post_id);
     if (post?.state === 'PUBLISHED') continue;
     const due = new Date(receipt.due_at).valueOf();
+    // Older than PostyBirb's 30-day history window: long since delivered.
+    if (!post && due < now - 30 * 86400000) continue;
     const account =
       bluesky?.accounts.find((a) => a.id === receipt.account_id)?.profile || 'Bluesky';
     const draft =
@@ -382,7 +391,7 @@ export default function PostingDelivery() {
           disabled={loading}
           onClick={() => {
             setLoading(true);
-            setRefreshBuffer(true);
+            forceBuffer.current = true;
             setRevision((v) => v + 1);
           }}
         >
@@ -397,6 +406,11 @@ export default function PostingDelivery() {
           </p>
         )}
       </div>
+      {unconfigured.map((message) => (
+        <p key={message} role="status" className="studio-note">
+          {message}.
+        </p>
+      ))}
       {errors.length > 0 && (
         <div className="admin-alert admin-alert-warning" role="alert">
           <strong>Some sources could not be checked.</strong>

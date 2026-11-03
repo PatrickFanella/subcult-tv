@@ -134,6 +134,16 @@
     "path": "mark-fisheye-circle.png",
     "source": "reviews/subcult-logo-fisheye/fisheye-circle-flat-purple.png",
     "sha256": "748aaaa135865825f8ada74b4fed74e5c6531c132561523a25b9fcd8eafe8a94",
-    "scope": "User-approved flat purple fill correction on 2026-10-04; preserve fisheye geometry, ink, green underscore and transparency."
+    "scope": "User-approved flat purple fill correction on 2026-10-04; preserve fisheye geometry, ink, green underscore and transparency.",
+    "derived": [
+      {
+        "path": "mark-fisheye-circle-132.png",
+        "width": 132,
+        "height": 132,
+        "method": "Pillow Lanczos downscale of the approved raster; no redraw or recolor.",
+        "use": "Navigation marks displayed at 44 CSS pixels or smaller.",
+        "sha256": "cbaa3aa45c7a4d1fdc4484b725009dff0ce18b336fd517fce38fb92c908fc666"
+      }
+    ]
   }
 }

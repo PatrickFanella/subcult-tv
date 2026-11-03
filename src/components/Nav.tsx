@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
+import { normalizePath } from '@/lib/normalize-path';
 import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { getProductPath } from '@/lib/product-paths';
 import { getFeaturedProducts } from '@/lib/showcase';
@@ -7,7 +8,7 @@ import { useEffects } from '@/context/useEffects';
 
 const NAV_LINKS = [
   { to: '/products', label: 'Products' },
-  { to: '/about', label: 'Studio' },
+  { to: '/about', label: 'About' },
   { to: '/support', label: 'Support' },
   { to: '/development', label: 'Development' },
   { to: '/contact', label: 'Contact' },
@@ -15,9 +16,41 @@ const NAV_LINKS = [
 
 export default function Nav() {
   const products = useShowcaseProducts();
-  const { pathname } = useLocation();
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = normalizePath(useLocation().pathname);
+  // The menu remembers the path it was opened on, so a route change closes it
+  // without an effect.
+  const [openPath, setOpenPath] = useState<string | null>(null);
+  const mobileOpen = openPath === pathname;
   const { vhs, toggleVhs } = useEffects();
+  const menuId = useId();
+  const toggleRef = useRef<HTMLButtonElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  // Set when the visitor closes the menu themselves, so focus returns to the
+  // toggle; a route change closes it without moving focus.
+  const returnFocus = useRef(false);
+
+  const closeMenu = (restoreFocus: boolean) => {
+    returnFocus.current = restoreFocus;
+    setOpenPath(null);
+  };
+
+  useEffect(() => {
+    if (mobileOpen) {
+      menuRef.current?.querySelector<HTMLElement>('a, button')?.focus();
+      const onKeyDown = (event: KeyboardEvent) => {
+        if (event.key === 'Escape') {
+          returnFocus.current = true;
+          setOpenPath(null);
+        }
+      };
+      document.addEventListener('keydown', onKeyDown);
+      return () => document.removeEventListener('keydown', onKeyDown);
+    }
+    if (returnFocus.current) {
+      returnFocus.current = false;
+      toggleRef.current?.focus();
+    }
+  }, [mobileOpen]);
 
   return (
     <nav
@@ -34,9 +67,11 @@ export default function Nav() {
             className="subcult-nav-brand font-display text-xl font-bold tracking-[0.2em] text-glow hover:text-signal transition-colors no-underline"
           >
             <img
-              src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004"
+              src="/brand/subcult/fisheye-circle-132.png?v=fisheye-flat-20261004"
               className="subcult-nav-mark"
               alt=""
+              width={44}
+              height={44}
             />
             <span>SUBCULT</span>
           </Link>
@@ -73,9 +108,12 @@ export default function Nav() {
 
           {/* Mobile menu button */}
           <button
-            onClick={() => setMobileOpen(!mobileOpen)}
+            ref={toggleRef}
+            type="button"
+            onClick={() => (mobileOpen ? closeMenu(true) : setOpenPath(pathname))}
             className="md:hidden font-mono text-sm text-bone hover:text-signal p-2 cursor-pointer"
             aria-expanded={mobileOpen}
+            aria-controls={menuId}
             aria-label="Toggle navigation menu"
           >
             {mobileOpen ? '[CLOSE]' : '[MENU]'}
@@ -86,28 +124,21 @@ export default function Nav() {
       {pathname !== '/products' && (
         <div className="product-shortcuts" aria-label="Product shortcuts">
           {getFeaturedProducts(products).map(({ project }) => (
-            <NavLink
-              key={project.slug}
-              to={getProductPath(project.slug)}
-              onClick={() => setMobileOpen(false)}
-            >
+            <NavLink key={project.slug} to={getProductPath(project.slug)}>
               {project.name}
             </NavLink>
           ))}
-          <NavLink to="/products" onClick={() => setMobileOpen(false)}>
-            All {products.length} →
-          </NavLink>
+          <NavLink to="/products">All {products.length} →</NavLink>
         </div>
       )}
       {/* Mobile dropdown */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-fog bg-soot">
+        <div id={menuId} ref={menuRef} className="md:hidden border-t border-fog bg-soot">
           <div className="px-4 py-4 space-y-3">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
-                onClick={() => setMobileOpen(false)}
                 className={({ isActive }) =>
                   `block font-mono text-sm uppercase tracking-wider no-underline ${
                     isActive ? 'text-signal' : 'text-bone hover:text-glow'

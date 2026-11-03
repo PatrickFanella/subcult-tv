@@ -83,10 +83,12 @@ func (rl *RateLimiter) Allow(ip string) bool {
 func RateLimit(limiter *RateLimiter) func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			// chi's RealIP middleware (installed first in router.go) already rewrites
-			// RemoteAddr from trusted proxy headers. Trusting X-Forwarded-For directly
-			// here would let clients spoof their IP and bypass the limit.
-			ip := r.RemoteAddr
+			// The ClientIP middleware (installed first in router.go) derives the
+			// client address from RemoteAddr and, only behind a trusted proxy, the
+			// right-most untrusted X-Forwarded-For hop. The key is the host alone so
+			// every connection from one client shares a bucket and no client-sent
+			// header can open a fresh one.
+			ip := ClientIPFrom(r)
 
 			if !limiter.Allow(ip) {
 				w.Header().Set("Content-Type", "application/json")

@@ -1,42 +1,89 @@
 import { useState, useEffect, useId, type FormEvent } from 'react';
-import { listPosts, createPost, updatePost, deletePost, type APIPost } from '@/lib/api';
+import { Link } from 'react-router-dom';
+import {
+  listPosts,
+  createPost,
+  updatePost,
+  deletePost,
+  getPublications,
+  type APIPost,
+} from '@/lib/api';
+import { managedSlugs } from '@/lib/review-queue';
 import { Field } from '@/components/admin/FormFields';
 import LibraryMarkdown from '@/components/admin/LibraryMarkdown';
-import { AdminHeader, AdminError } from '@/components/admin/crud';
+import { AdminCount, AdminHeader, AdminError, AdminPagination } from '@/components/admin/crud';
 import PostingNav from './PostingNav';
 
 type PostForm = Omit<APIPost, 'id' | 'created_at' | 'updated_at'>;
 
-const emptyForm: PostForm = {
+const PER_PAGE = 25;
+
+/** Today's date in the browser's time zone as YYYY-MM-DD, read when the form opens. */
+function localDateToday(now = new Date()): string {
+  const offset = now.getTimezoneOffset() * 60000;
+  return new Date(now.valueOf() - offset).toISOString().slice(0, 10);
+}
+
+const emptyForm = (): PostForm => ({
   slug: '',
   title: '',
   excerpt: '',
   content: '',
   tags: [],
   published: false,
-  date: new Date().toISOString().slice(0, 10),
-};
+  date: localDateToday(),
+});
 
 export default function AdminPosts() {
   const [posts, setPosts] = useState<APIPost[]>([]);
+  const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(0);
+  const [totalPages, setTotalPages] = useState(1);
   const id = useId();
   const [editing, setEditing] = useState<APIPost | null>(null);
   const [showForm, setShowForm] = useState(false);
   const [form, setForm] = useState<PostForm>(emptyForm);
   const [error, setError] = useState('');
   const [saving, setSaving] = useState(false);
+  const [managed, setManaged] = useState<Set<string>>(() => new Set());
 
-  const load = () => {
-    listPosts({ all: true, perPage: 100 })
-      .then((res) => setPosts(res.data))
+  const load = (p: number) => {
+    listPosts({ all: true, page: p, perPage: PER_PAGE })
+      .then((res) => {
+        const pages = res.total_pages ?? 1;
+        // Deleting the last article on the last page leaves it empty; step back.
+        if (p > 1 && pages < p) {
+          setPage(Math.max(1, pages));
+          return;
+        }
+        setPosts(res.data);
+        setTotal(res.total ?? res.data.length);
+        setTotalPages(Math.max(1, pages));
+      })
       .catch((err) => setError(err.message));
   };
 
-  useEffect(load, []);
+  useEffect(() => {
+    load(page);
+  }, [page]);
+  useEffect(() => {
+    let active = true;
+    // The review list is advisory here; the article table works without it.
+    getPublications()
+      .then((value) => {
+        if (active) setManaged(managedSlugs(value.drafts));
+      })
+      .catch(() => {
+        if (active) setManaged(new Set());
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const openNew = () => {
     setEditing(null);
-    setForm(emptyForm);
+    setForm(emptyForm());
     setShowForm(true);
   };
 
@@ -66,7 +113,7 @@ export default function AdminPosts() {
         await createPost(form);
       }
       setShowForm(false);
-      load();
+      load(page);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not save the post.');
     } finally {
@@ -78,7 +125,7 @@ export default function AdminPosts() {
     if (!confirm('Delete this post?')) return;
     try {
       await deletePost(id);
-      load();
+      load(page);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not delete the post.');
     }
@@ -98,6 +145,12 @@ export default function AdminPosts() {
         nav={<PostingNav />}
       />
       <AdminError error={error} />
+      {total > 0 && (
+        <AdminCount>
+          {total} {total === 1 ? 'article' : 'articles'}
+          {totalPages > 1 ? ` · page ${page} of ${totalPages}` : ''}
+        </AdminCount>
+      )}
 
       {/* ── Form ────────────────────────────────────────────── */}
       {showForm && (
@@ -214,6 +267,13 @@ export default function AdminPosts() {
                   <span className={`admin-status ${p.published ? 'is-live' : 'is-muted'}`}>
                     {p.published ? 'Live' : 'Draft'}
                   </span>
+                  {managed.has(p.slug) && (
+                    <div className="admin-cell-sub">
+                      <span className="admin-status is-warn">
+                        Managed by the Development log review
+                      </span>
+                    </div>
+                  )}
                 </td>
                 <td data-label="Tags">
                   <div className="admin-tags">
@@ -224,10 +284,21 @@ export default function AdminPosts() {
                 </td>
                 <td data-label="Actions">
                   <div className="admin-row-actions">
+                    {managed.has(p.slug) ? (
+                      <Link
+                        to="/admin/posts/articles"
+                        className="admin-button admin-button-small"
+                        aria-label={`Review ${p.title} in the Development log`}
+                      >
+                        Review in Development log
+                      </Link>
+                    ) : null}
                     <button
                       type="button"
                       className="admin-button admin-button-small"
                       onClick={() => openEdit(p)}
+                      disabled={managed.has(p.slug)}
+                      aria-label={`Edit ${p.title}`}
                     >
                       Edit
                     </button>
@@ -235,6 +306,8 @@ export default function AdminPosts() {
                       type="button"
                       className="admin-button admin-button-small admin-button-danger"
                       onClick={() => handleDelete(p.id)}
+                      disabled={managed.has(p.slug)}
+                      aria-label={`Delete ${p.title}`}
                     >
                       Delete
                     </button>
@@ -253,6 +326,7 @@ export default function AdminPosts() {
           </tbody>
         </table>
       </div>
+      <AdminPagination page={page} totalPages={totalPages} onChange={setPage} />
     </div>
   );
 }

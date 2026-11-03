@@ -314,9 +314,11 @@ describe('smoke: app shell', () => {
       'src',
       '/brand/left-field/hero.svg',
     );
+    // The tagline under the h1 is a paragraph, not a second heading level.
     expect(
-      screen.getByRole('heading', { name: 'A score here is a research note, not a forecast.' }),
-    ).toBeInTheDocument();
+      screen.getByText('A score here is a research note, not a forecast.'),
+    ).not.toHaveAttribute('role');
+    expect(screen.getByText('A score here is a research note, not a forecast.').tagName).toBe('P');
     expect(screen.getByRole('heading', { name: 'Where the field bends' })).toBeInTheDocument();
     expect(screen.getByText(/Every score is provisional and versioned/)).toBeInTheDocument();
     expect(document.querySelector('.product-landing')).toHaveAttribute(

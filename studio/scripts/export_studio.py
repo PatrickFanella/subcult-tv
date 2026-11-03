@@ -123,11 +123,12 @@ def export(destination, site=None, posting_state=None):
             "public/brand/subcult/master.svg": BRANDS / "subcult/logos/master.svg",
             "public/brand/subcult/compact.svg": BRANDS / "subcult/logos/mark-compact-primary-outlined.svg",
             "public/brand/subcult/fisheye-circle.png": BRANDS / "subcult/logos/mark-fisheye-circle.png",
+            "public/brand/subcult/fisheye-circle-132.png": BRANDS / "subcult/logos/mark-fisheye-circle-132.png",
             "public/brand/subcult/mark.png": BRANDS / "subcult/logos/mark-light.png",
             "public/apple-touch-icon.png": BRANDS / "subcult/logos/mark-compact-primary.png",
             "public/favicon.svg": BRANDS / "subcult/logos/mark-compact-primary-outlined.svg",
         }
-        for source in (BRANDS / "subcult/fonts").iterdir():
+        for source in sorted((BRANDS / "subcult/fonts").iterdir()):
             selected["public/brand/subcult/fonts/" + source.name] = source
         provenance = []
         for target, source in selected.items():

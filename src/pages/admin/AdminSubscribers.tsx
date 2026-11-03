@@ -22,7 +22,14 @@ export default function AdminSubscribers() {
 
   const load = (p: number) => {
     listSubscribers({ page: p, perPage: 30 })
-      .then(setSubscribers)
+      .then((res) => {
+        // A sync can shrink the list below the current page; step back.
+        if (p > 1 && res.total_pages < p) {
+          setPage(Math.max(1, res.total_pages));
+          return;
+        }
+        setSubscribers(res);
+      })
       .catch((err) => setError(err.message));
   };
 

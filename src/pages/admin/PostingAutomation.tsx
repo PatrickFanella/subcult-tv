@@ -1,6 +1,14 @@
 import { useEffect, useState } from 'react';
 import { getPostingDashboard, type PostingDashboard } from '@/lib/api';
-import { describeCalendar, laneName, runLabel, runStatusLabel } from '@/lib/review-queue';
+import {
+  chicagoTime,
+  describeCalendar,
+  jobName,
+  jobStatusLabel,
+  laneName,
+  runLabel,
+  runStatusLabel,
+} from '@/lib/review-queue';
 import PostingShell from './PostingShell';
 
 function readable(value: string) {
@@ -90,6 +98,50 @@ export default function PostingAutomation() {
               The daily website and Patreon drafts run as a separate job and are not listed here
               yet.
             </p>
+          </section>
+          <section className="posting-section" id="job-health">
+            <h2>Preparation jobs</h2>
+            {data.job_status && data.job_status.length > 0 ? (
+              <div className="posting-history">
+                <table className="stack-table">
+                  <caption className="sr-only">Last outcome of each preparation job</caption>
+                  <thead>
+                    <tr>
+                      <th>Job</th>
+                      <th>Last status</th>
+                      <th>Finished (Chicago)</th>
+                      <th>Reason</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {data.job_status.map((j) => (
+                      <tr key={j.job} data-job-status={j.status}>
+                        <td data-label="Job">{jobName(j.job)}</td>
+                        <td data-label="Last status">
+                          <span
+                            className={`admin-status ${j.status === 'failed' ? 'is-warn' : j.status === 'success' ? 'is-live' : 'is-muted'}`}
+                          >
+                            {jobStatusLabel(j.status)}
+                          </span>
+                        </td>
+                        <td data-label="Finished (Chicago)">{chicagoTime(j.finished)}</td>
+                        <td data-label="Reason">{j.reason || '—'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <p className="studio-note">
+                  Each job records its own outcome when it exits. A failed run names the error type;
+                  the log on Kvant has the details. Success means drafts were prepared or nothing
+                  needed drafting, never that anything was posted.
+                </p>
+              </div>
+            ) : (
+              <p className="studio-note">
+                This snapshot has no job health yet. It appears after the jobs run with the current
+                Studio export.
+              </p>
+            )}
           </section>
           <section className="posting-section" id="run-notes">
             <h2>Notes from the drafting runs</h2>

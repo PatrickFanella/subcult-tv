@@ -70,7 +70,8 @@ export default function AdminLayout() {
     }
   });
 
-  const { pathname } = useLocation();
+  const location = useLocation();
+  const { pathname } = location;
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuPath, setMenuPath] = useState(pathname);
   const menuButton = useRef<HTMLButtonElement>(null);
@@ -125,7 +126,14 @@ export default function AdminLayout() {
   }
 
   if (!isAuthenticated) {
-    return <Navigate to="/admin/login" replace />;
+    // Remember where the session ended so sign-in can return there.
+    return (
+      <Navigate
+        to="/admin/login"
+        replace
+        state={{ from: `${location.pathname}${location.search}${location.hash}` }}
+      />
+    );
   }
 
   return (
@@ -138,7 +146,7 @@ export default function AdminLayout() {
           className="subcult-nav-brand font-display text-xl text-glow tracking-wider no-underline"
         >
           <img
-            src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004"
+            src="/brand/subcult/fisheye-circle-132.png?v=fisheye-flat-20261004"
             className="subcult-nav-mark"
             alt=""
           />
@@ -171,7 +179,7 @@ export default function AdminLayout() {
               className="subcult-nav-brand font-display text-xl text-glow tracking-wider no-underline"
             >
               <img
-                src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004"
+                src="/brand/subcult/fisheye-circle-132.png?v=fisheye-flat-20261004"
                 className="subcult-nav-mark"
                 alt=""
               />

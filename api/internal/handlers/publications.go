@@ -5,6 +5,7 @@ import (
 	"crypto/subtle"
 	"encoding/json"
 	"io"
+	"log/slog"
 	"net/http"
 	"regexp"
 	"strings"
@@ -194,7 +195,9 @@ func (h *Handler) Publications(w http.ResponseWriter, r *http.Request) {
 			for _, d := range checks {
 				ok, link, e := h.PatreonPosting.Receipt(checkCtx, d.provider)
 				if e == nil && ok {
-					h.DB.Exec(r.Context(), `UPDATE publication_review SET status='scheduled',provider_url=$2,updated_at=NOW() WHERE id=$1 AND status='submitting'`, d.id, link)
+					if _, execErr := h.DB.Exec(r.Context(), `UPDATE publication_review SET status='scheduled',provider_url=$2,updated_at=NOW() WHERE id=$1 AND status='submitting'`, d.id, link); execErr != nil {
+						slog.Error("publication receipt status update failed", "id", d.id, "error", execErr)
+					}
 				}
 			}
 		}
@@ -383,7 +386,9 @@ func (h *Handler) ApprovePublication(w http.ResponseWriter, r *http.Request) {
 			e = h.PatreonPosting.Start(r.Context(), providerID)
 		}
 		if e != nil {
-			h.DB.Exec(r.Context(), `UPDATE publication_review SET status='uncertain',updated_at=NOW() WHERE id=$1`, id)
+			if _, execErr := h.DB.Exec(r.Context(), `UPDATE publication_review SET status='uncertain',updated_at=NOW() WHERE id=$1`, id); execErr != nil {
+				slog.Error("publication uncertain status update failed", "id", id, "error", execErr)
+			}
 			writeError(w, 502, "Patreon scheduling could not be confirmed. Check PostyBirb before retrying; this approval will not submit twice")
 			return
 		}

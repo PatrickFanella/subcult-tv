@@ -1,6 +1,8 @@
+import { useEffect, useRef } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import ProductVisual from '@/components/ProductVisual';
 import SEOHead from '@/components/SEOHead';
+import StatusBadge from '@/components/StatusBadge';
 import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { PRODUCT_LANDINGS } from '@/lib/product-landings';
 import { BRAND_HEROES, SCREENSHOT_CAPTIONS } from '@/lib/product-visuals';
@@ -15,6 +17,19 @@ export default function ProductLanding() {
   const { slug } = useParams<{ slug: string }>();
   const products = useShowcaseProducts();
   const product = products.find(({ project }) => PRODUCT_ROUTES[project.slug] === slug);
+  const productNavRef = useRef<HTMLDivElement>(null);
+  // On phones the product list is one scrolling line; bring the current
+  // product into view after mount when it sits outside the visible part.
+  useEffect(() => {
+    const list = productNavRef.current;
+    const current = list?.querySelector<HTMLElement>('a[aria-current="page"]');
+    if (!list || !current || typeof current.scrollIntoView !== 'function') return;
+    if (list.scrollWidth <= list.clientWidth) return;
+    const listRect = list.getBoundingClientRect();
+    const rect = current.getBoundingClientRect();
+    if (rect.left >= listRect.left && rect.right <= listRect.right) return;
+    current.scrollIntoView({ inline: 'nearest', block: 'nearest' });
+  }, [slug]);
   if (slug === 'transcript-create') return <Navigate to="/products/rekolekt" replace />;
   if (!product) return <NotFound />;
   const { project } = product;
@@ -27,7 +42,7 @@ export default function ProductLanding() {
       <div className="landing-container">
         <nav className="landing-product-nav" aria-label="Product navigation">
           <Link to="/products">All products</Link>
-          <div>
+          <div ref={productNavRef}>
             {products.map(({ project: other }) => (
               <Link
                 key={other.slug}
@@ -41,12 +56,15 @@ export default function ProductLanding() {
         </nav>
         <section className="landing-hero" aria-labelledby="product-title">
           <div className="landing-hero-copy">
-            <p className="landing-eyebrow">{product.category}</p>
+            <p className="landing-eyebrow landing-eyebrow-status">
+              <span>{product.category}</span>
+              <StatusBadge status={project.status} />
+            </p>
             <div className="landing-wordmark">
               {PRODUCT_MARKS[project.slug] && <img src={PRODUCT_MARKS[project.slug]} alt="" />}
               <h1 id="product-title">{project.name}</h1>
             </div>
-            <h2 className="landing-headline">{product.headline}</h2>
+            <p className="landing-headline">{product.headline}</p>
             <p className="landing-summary">{product.summary}</p>
             <div className="landing-actions">
               <a

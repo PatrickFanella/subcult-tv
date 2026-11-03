@@ -99,7 +99,7 @@ func TestStudioAssetBudgetIsSeparateAndStillProtected(t *testing.T) {
 	}
 	cfg := &config.Config{JWTSecret: "test-asset-budget"}
 	r := New(cfg, &handlers.Handler{StudioRoot: root})
-	token, _ := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{"sub": "test", "exp": time.Now().Add(time.Hour).Unix()}).SignedString([]byte(cfg.JWTSecret))
+	token, _ := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{"sub": "test", "role": "admin", "exp": time.Now().Add(time.Hour).Unix()}).SignedString([]byte(cfg.JWTSecret))
 	request := func(method, path string, auth bool) int {
 		req := httptest.NewRequest(method, path, nil)
 		if auth {

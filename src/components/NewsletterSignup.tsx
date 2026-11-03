@@ -3,7 +3,12 @@ import { useId, useState, type FormEvent } from 'react';
 import { subscribe } from '@/lib/api';
 import { trackCampaignEvent } from '@/lib/analytics';
 
-export default function NewsletterSignup() {
+interface NewsletterSignupProps {
+  /** Heading level that fits the page outline: h3 in the footer, h2 on /newsletter. */
+  headingLevel?: 'h2' | 'h3';
+}
+
+export default function NewsletterSignup({ headingLevel: Heading = 'h3' }: NewsletterSignupProps) {
   const emailInputId = useId();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -11,6 +16,7 @@ export default function NewsletterSignup() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (status === 'loading') return;
     setStatus('loading');
     try {
       const res = await subscribe(email);
@@ -30,7 +36,7 @@ export default function NewsletterSignup() {
 
   if (status === 'success') {
     return (
-      <div className="bg-ash border border-static p-6 text-center">
+      <div role="status" className="bg-ash border border-static p-6 text-center">
         <div className="font-mono text-sm text-static mb-1">✓ REQUEST RECEIVED</div>
         <p className="font-mono text-xs text-dust">{message}</p>
       </div>
@@ -41,7 +47,7 @@ export default function NewsletterSignup() {
     <div className="bg-ash border border-fog p-6">
       <div className="text-center mb-4">
         <p className="font-mono text-xs text-dust mb-2">SUBCULT / MONTHLY NEWSLETTER</p>
-        <h3 className="text-lg mb-1">One email a month</h3>
+        <Heading className="text-lg mb-1">One email a month</Heading>
         <p className="text-sm text-bone">Releases, and what we’re working on.</p>
       </div>
 
@@ -55,6 +61,7 @@ export default function NewsletterSignup() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          disabled={status === 'loading'}
           placeholder="you@example.com"
           className={`min-w-0 flex-1 ${inputClass}`}
         />
@@ -69,10 +76,12 @@ export default function NewsletterSignup() {
       </form>
 
       {status === 'error' && (
-        <p className="font-mono text-xs text-signal text-center mt-2">Not subscribed. {message}</p>
+        <p role="alert" className="font-mono text-xs text-signal text-center mt-2">
+          Not subscribed. {message}
+        </p>
       )}
 
-      <p className="font-mono text-xs text-fog text-center mt-3">
+      <p className="font-mono text-xs text-dust text-center mt-3">
         Every email has an unsubscribe link.
       </p>
     </div>

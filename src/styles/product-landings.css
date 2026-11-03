@@ -251,7 +251,7 @@
   --lp-display: 'Backline Display', 'Oswald', 'Arial Narrow', sans-serif;
   --lp-mono: 'Backline Mono', 'JetBrains Mono', monospace;
 }
-.product-landing[data-product='backline'] :is(h1, h2, h3) {
+.product-landing[data-product='backline'] :is(h1, h2, h3, .landing-headline) {
   text-transform: uppercase;
   letter-spacing: 0.01em;
 }
@@ -316,7 +316,7 @@
     linear-gradient(90deg, rgb(127 179 213 / 10%) 1px, transparent 1px);
   background-size: 48px 48px;
 }
-.product-landing[data-product='pirs'] :is(h1, h2) {
+.product-landing[data-product='pirs'] :is(h1, h2, .landing-headline) {
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
@@ -388,7 +388,7 @@
   --lp-display: 'Archivo Black', 'Arial Black', sans-serif;
   --lp-mono: 'Space Mono', monospace;
 }
-.product-landing[data-product='omarchy-plugin-spool'] :is(h1, h2, h3) {
+.product-landing[data-product='omarchy-plugin-spool'] :is(h1, h2, h3, .landing-headline) {
   letter-spacing: 0;
 }
 .product-landing[data-product='omarchy-plugin-shelfish'] {
@@ -469,7 +469,7 @@
 .product-landing[data-product='left-field'] .landing-features article {
   border-top: 4px solid var(--lp-accent);
 }
-.product-landing :is(h1, h2, h3) {
+.product-landing :is(h1, h2, h3, .landing-headline) {
   color: var(--lp-text);
   font-family: var(--lp-display);
   text-transform: none;
@@ -540,10 +540,21 @@
   line-height: 1;
   overflow-wrap: anywhere;
 }
+/* A paragraph styled like the page's h2: the product name above it is the h1. */
 .landing-headline {
-  font-size: clamp(1.6rem, 3vw, 2.7rem);
+  font-weight: 600;
   line-height: 1.18;
+  font-size: clamp(1.6rem, 3vw, 2.7rem);
   margin-bottom: 24px;
+}
+.landing-eyebrow-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+}
+.landing-eyebrow-status > span:last-child:not(:first-child) {
+  font-size: inherit;
+  letter-spacing: inherit;
 }
 .landing-summary {
   font-size: 18px;
@@ -795,7 +806,7 @@
 }
 /* Kork "Pinned card": paper cards with ink borders and cobalt pins on a cork field.
    Cobalt is 3.2:1 on cork, so it is used only for pins and large controls. */
-.product-landing[data-product='kork'] :is(h1, h2, h3) {
+.product-landing[data-product='kork'] :is(h1, h2, h3, .landing-headline) {
   font-weight: 400;
   letter-spacing: -0.01em;
 }
@@ -849,7 +860,7 @@
   transform: rotate(1deg);
 }
 /* CLPR "Tally": uppercase condensed headings and controls. */
-.product-landing[data-product='clpr'] :is(h2, h3) {
+.product-landing[data-product='clpr'] :is(h2, h3, .landing-headline) {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0;
@@ -867,7 +878,7 @@
 }
 /* Subcult OS: terminal foundations with the ticket-stub display layer. Oswald capitals for
    headings, Space Mono for the wordmark and everything read or pressed, 8 px corners. */
-.product-landing[data-product='subcult-os'] :is(h1, h2, h3) {
+.product-landing[data-product='subcult-os'] :is(h1, h2, h3, .landing-headline) {
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -897,9 +908,27 @@
   padding-left: 0;
 }
 @media (max-width: 900px) {
-  /* The 23-product list took the first screen on phones; keep the directory link. */
+  /* The product list took the first screen on phones; show it as one scrolling line. */
+  .landing-product-nav {
+    flex-wrap: nowrap;
+  }
+  .landing-product-nav > a {
+    flex: none;
+  }
   .landing-product-nav > div {
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    min-width: 0;
+    overflow-x: auto;
+    scroll-padding-inline: 8px;
+    scrollbar-width: none;
+  }
+  .landing-product-nav > div::-webkit-scrollbar {
     display: none;
+  }
+  .landing-product-nav > div a {
+    flex: none;
+    white-space: nowrap;
   }
   .landing-hero {
     grid-template-columns: 1fr;

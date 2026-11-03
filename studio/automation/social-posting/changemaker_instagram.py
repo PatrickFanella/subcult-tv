@@ -10,13 +10,15 @@ from pathlib import Path
 import re
 import subprocess
 
-from changes import changes_context
+from changes import changes_context, previous_window_end
 from sources import complete_changemaker_digest
+import job_status
 from runner import atomic_write
 from feedback import owner_feedback
 import strategy
 
 HERE = Path(__file__).resolve().parent
+JOB = 'changemaker-instagram'
 
 
 def identity(item):
@@ -112,7 +114,9 @@ def showcase_product(cfg, state, now):
     `daily_showcase.gap_days`. Otherwise the configured product spotlighted least recently.
     """
     options = cfg.get('daily_showcase') or {}
-    products = list(options.get('products') or [])
+    import craft
+    # Only products the showcase stage knows; a typo in config must not kill the daily job.
+    products = [p for p in (options.get('products') or []) if p in craft.ART and p != 'subcult']
     if not options.get('enabled') or not products:
         return None
     if recent_showcase(state, now, options.get('gap_days', 2)):
@@ -228,116 +232,143 @@ def execute(source_root, state):
     os.umask(0o077)
     state.mkdir(parents=True, exist_ok=True)
     cfg = json.loads((source_root/'automation/social-posting/config.json').read_text())
+    started = datetime.now(timezone.utc)
     with (state/'runner.lock').open('a') as lock:
-        acquire(lock)
+        try:
+            acquire(lock)
+        except TimeoutError as error:
+            job_status.write(state, JOB, 'failed', started=started, reason='Lock timeout: '+str(error)[:200])
+            raise
         now = datetime.now(timezone.utc)
         run_id = now.strftime('%Y%m%dT%H%M%S.%fZ')+'-changemaker'
         directory = state/'runs'/run_id
         directory.mkdir(parents=True, mode=0o700)
         try:
-            context = changes_context(cfg, now)
+            receipt = _execute(cfg, source_root, state, now, run_id, directory)
         except Exception as error:
-            context = {'status': 'unavailable', 'drafts': [], 'error': type(error).__name__}
-        atomic_write(directory/'collection.json', json.dumps(context, indent=2)+'\n')
+            if not (directory/'receipt.json').exists():
+                # An unexpected failure still leaves a receipt, so the run is visible and consumes nothing.
+                failed = {'mode': 'changemaker', 'status': 'failed', 'run_id': run_id, 'draft_count': 0,
+                          'checked_at': now.isoformat(), 'error': type(error).__name__,
+                          'source_identities': [], 'publishing_enabled': False}
+                atomic_write(directory/'receipt.json', json.dumps(failed, indent=2)+'\n')
+            job_status.write(state, JOB, 'failed', run_id=run_id, started=started, reason=type(error).__name__)
+            raise
+    status = 'success' if receipt.get('status') == 'success' else 'skipped'
+    job_status.write(state, JOB, status, run_id=run_id, started=started,
+                     reason=receipt.get('status', '')+f", {receipt.get('draft_count', 0)} draft(s)")
+    return receipt
 
-        def finish(status):
-            receipt = {**no_change_result(cfg, source_root, state, now, status),
-                       'run_id': run_id, 'checked_at': now.isoformat(), 'draft_count': 0,
-                       'collection_status': context.get('status', status)}
-            fallback = receipt.get('showcase') or {}
-            if fallback.get('error'):
-                receipt['status'] = 'failed'
-            elif fallback.get('draft_count'):
-                receipt['status'] = 'success'
-            atomic_write(directory/'receipt.json', json.dumps(receipt, indent=2)+'\n')
-            if status in ('partial', 'unavailable') and not fallback.get('draft_count'):
-                raise ValueError('Change collection unavailable and no evergreen draft prepared; inspect collection.json')
-            if fallback.get('error'):
-                raise ValueError('Evergreen preparation failed; inspect receipt.json')
-            return receipt
 
-        if context.get('status') in ('partial', 'unavailable'):
-            return finish(context['status'])
-        if not context['drafts']:
-            return finish(context['status'])
-        digest = complete_changemaker_digest(context)
-        evidence = digest['evidence']
-        used = used_sources(state)
-        items = {i['id']: i for i in evidence['items']
-                 if i.get('kind') == 'pull request' and i.get('state') == 'merged' and identity(i) not in used}
-        if not items:
-            return finish('no_new_sources')
-        selected = {'run_id': digest['run_id'], 'evidence_sha256': digest['evidence_sha256'],
-                    'draft_sha256': digest['draft_sha256'], 'items': list(items.values())}
-        atomic_write(directory/'sources.json', json.dumps(selected, indent=2)+'\n')
-        claims = (source_root/'content/social/Product Claims Register.md').read_text()
-        result, crafted = None, False
-        if cfg.get('craft', True):
-            try:
-                import craft
-                staged = craft.instagram(cfg, selected, digest['draft'], claims, directory/'craft', recent=recent_captions(state, now),
-                                         extra={'owner_feedback': owner_feedback(state)})
-                result = {'drafts': [{**d, 'media_brief': d['media']['kind']+': '+(d['media']['headline'] or d['angle']),
-                                      'next_check': d['next_check']} for d in staged['drafts']],
-                          'open_checks': staged['open_checks']}
-                validate(result, items)
-                crafted = True
-            except Exception as error:  # fall back to the single-pass prompt
-                (directory/'craft-error.txt').write_text(type(error).__name__+': '+str(error)[:2000]+'\n')
-                result = None
-        if result is None:
-            result = single_pass(cfg, source_root, selected, digest, claims, directory)
-            validate(result, items)
-        drafts = []
-        identities = set()
-        slots = posting_slots(cfg, now, len(result['drafts']), taken_slots(state, now))
-        for n, draft in enumerate(result['drafts']):
-            bound = [items[s] for s in draft['source_ids']]
-            identities.update(identity(i) for i in bound)
-            proof = 'Collection '+digest['run_id']+'; evidence SHA-256 '+digest['evidence_sha256']+'\n'
-            proof += '\n'.join(i['id']+': '+i['title']+' — '+i['url'] for i in bound)
-            media = {'mode': 'capture', 'asset_ids': [], 'brief': draft['media_brief'], 'alt_text': draft.get('alt_text', '')}
-            record = {'account': draft['account'], 'platform': 'instagram', 'text': draft['text'],
-                'due_at': slots[n].isoformat(), 'expires_at': (now+timedelta(days=7)).isoformat(), 'evidence': proof,
-                'next_check': draft['next_check'], 'checklist': checklist(draft['next_check']), 'media': media}
-            if not crafted and cfg.get('craft', True):
-                # The single-pass caption has no image yet; plan and render one so review always has a picture.
-                try:
-                    import craft
-                    repos = [i.get('source', '').split('/')[-1] for i in bound]
-                    image, made, alt = craft.picture(cfg, draft['text'], craft.brand_for('', repos), directory/'craft', n,
-                                                     recent_kinds=[d['media'].get('kind') for d in drafts])
-                    media.update(kind=made.get('kind', ''), headline=made.get('headline', ''))
-                    if image and Path(image).is_file() and Path(image).resolve().is_relative_to(state.resolve()):
-                        media['image'] = image_record(Path(image), state)
-                    if alt and not media['alt_text']:
-                        media['alt_text'] = alt
-                except Exception as error:
-                    (directory/f'picture-error-{n}.txt').write_text(type(error).__name__+': '+str(error)[:2000]+'\n')
-            if crafted:
-                plan = draft['media']
-                media.update(mode='generate' if plan['kind'] == 'illustration' else 'capture' if plan['kind'] == 'screenshot' else 'library',
-                             kind=draft['media_record'].get('kind', plan['kind']), headline=draft['media_record'].get('headline', plan['headline']))
-                image = Path(draft['image']) if draft['image'] else None
-                if image and image.is_file() and image.resolve().is_relative_to(state.resolve()):
-                    media['image'] = image_record(image, state)
-                record['craft'] = {**draft['craft'], 'angle': draft['angle'], 'product': draft['product'],
-                                   'visual_checks': draft['media_record'].get('checks', [])[-1:]}
-            drafts.append(record)
-        atomic_write(directory/'result.json', json.dumps({'drafts': drafts, 'open_checks': result['open_checks']}, indent=2)+'\n')
-        receipt = {'mode': 'changemaker', 'status': 'success', 'run_id': run_id,
-                   'draft_count': len(drafts), 'checked_at': now.isoformat(),
-                   'source_identities': sorted(identities if drafts else {identity(i) for i in items.values()}),
-                   'publishing_enabled': False}
-        if not drafts:
-            # The day's changes gave a stranger nothing to want; show a live product instead.
-            fallback = showcase_fallback(cfg, source_root, state, now)
-            if fallback:
-                receipt['showcase'] = fallback
+def _execute(cfg, source_root, state, now, run_id, directory):
+    try:
+        # Continue from the previous complete collection so an early manual run leaves no gap.
+        context = changes_context(cfg, now, since=previous_window_end(state, 'changemaker', now))
+    except Exception as error:
+        context = {'status': 'unavailable', 'drafts': [], 'error': type(error).__name__}
+    atomic_write(directory/'collection.json', json.dumps(context, indent=2)+'\n')
+    def finish(status):
+        receipt = {**no_change_result(cfg, source_root, state, now, status),
+                   'run_id': run_id, 'checked_at': now.isoformat(), 'draft_count': 0,
+                   'collection_status': context.get('status', status)}
+        fallback = receipt.get('showcase') or {}
+        if fallback.get('error'):
+            receipt['status'] = 'failed'
+        elif fallback.get('draft_count'):
+            receipt['status'] = 'success'
         atomic_write(directory/'receipt.json', json.dumps(receipt, indent=2)+'\n')
-        if (receipt.get('showcase') or {}).get('error'):
+        if status in ('partial', 'unavailable') and not fallback.get('draft_count'):
+            raise ValueError('Change collection unavailable and no evergreen draft prepared; inspect collection.json')
+        if fallback.get('error'):
             raise ValueError('Evergreen preparation failed; inspect receipt.json')
         return receipt
+
+    if context.get('status') in ('partial', 'unavailable'):
+        return finish(context['status'])
+    if not context['drafts']:
+        return finish(context['status'])
+    digest = complete_changemaker_digest(context)
+    evidence = digest['evidence']
+    used = used_sources(state)
+    items = {i['id']: i for i in evidence['items']
+             if i.get('kind') == 'pull request' and i.get('state') == 'merged' and identity(i) not in used}
+    if not items:
+        return finish('no_new_sources')
+    selected = {'run_id': digest['run_id'], 'evidence_sha256': digest['evidence_sha256'],
+                'draft_sha256': digest['draft_sha256'], 'items': list(items.values())}
+    atomic_write(directory/'sources.json', json.dumps(selected, indent=2)+'\n')
+    claims = (source_root/'content/social/Product Claims Register.md').read_text()
+    result, crafted = None, False
+    if cfg.get('craft', True):
+        try:
+            import craft
+            staged = craft.instagram(cfg, selected, digest['draft'], claims, directory/'craft', recent=recent_captions(state, now),
+                                     extra={'owner_feedback': owner_feedback(state)})
+            result = {'drafts': [{**d, 'media_brief': d['media']['kind']+': '+(d['media']['headline'] or d['angle']),
+                                  'next_check': d['next_check']} for d in staged['drafts']],
+                      'open_checks': staged['open_checks']}
+            validate(result, items)
+            crafted = True
+        except Exception as error:  # fall back to the single-pass prompt
+            (directory/'craft-error.txt').write_text(type(error).__name__+': '+str(error)[:2000]+'\n')
+            result = None
+    if result is None:
+        result = single_pass(cfg, source_root, selected, digest, claims, directory)
+        validate(result, items)
+    drafts = []
+    identities = set()
+    slots = posting_slots(cfg, now, len(result['drafts']), taken_slots(state, now))
+    for n, draft in enumerate(result['drafts']):
+        bound = [items[s] for s in draft['source_ids']]
+        identities.update(identity(i) for i in bound)
+        proof = 'Collection '+digest['run_id']+'; evidence SHA-256 '+digest['evidence_sha256']+'\n'
+        proof += '\n'.join(i['id']+': '+i['title']+' — '+i['url'] for i in bound)
+        media = {'mode': 'capture', 'asset_ids': [], 'brief': draft['media_brief'], 'alt_text': draft.get('alt_text', '')}
+        record = {'account': draft['account'], 'platform': 'instagram', 'text': draft['text'],
+            'due_at': slots[n].isoformat(), 'expires_at': (now+timedelta(days=7)).isoformat(), 'evidence': proof,
+            'next_check': draft['next_check'], 'checklist': checklist(draft['next_check']), 'media': media}
+        if not crafted and cfg.get('craft', True):
+            # The single-pass caption has no image yet; plan and render one so review always has a picture.
+            try:
+                import craft
+                repos = [i.get('source', '').split('/')[-1] for i in bound]
+                image, made, alt = craft.picture(cfg, draft['text'], craft.brand_for('', repos), directory/'craft', n,
+                                                 recent_kinds=[d['media'].get('kind') for d in drafts])
+                media.update(kind=made.get('kind', ''), headline=made.get('headline', ''))
+                if image and Path(image).is_file() and Path(image).resolve().is_relative_to(state.resolve()):
+                    media['image'] = image_record(Path(image), state)
+                if alt and not media['alt_text']:
+                    media['alt_text'] = alt
+            except Exception as error:
+                (directory/f'picture-error-{n}.txt').write_text(type(error).__name__+': '+str(error)[:2000]+'\n')
+        if crafted:
+            plan = draft['media']
+            media.update(mode='generate' if plan['kind'] == 'illustration' else 'capture' if plan['kind'] == 'screenshot' else 'library',
+                         kind=draft['media_record'].get('kind', plan['kind']), headline=draft['media_record'].get('headline', plan['headline']))
+            image = Path(draft['image']) if draft['image'] else None
+            if image and image.is_file() and image.resolve().is_relative_to(state.resolve()):
+                media['image'] = image_record(image, state)
+            record['craft'] = {**draft['craft'], 'angle': draft['angle'], 'product': draft['product'],
+                               'visual_checks': draft['media_record'].get('checks', [])[-1:]}
+        drafts.append(record)
+    atomic_write(directory/'result.json', json.dumps({'drafts': drafts, 'open_checks': result['open_checks']}, indent=2)+'\n')
+    receipt = {'mode': 'changemaker', 'status': 'success', 'run_id': run_id,
+               'draft_count': len(drafts), 'checked_at': now.isoformat(),
+               'source_identities': sorted(identities if drafts else {identity(i) for i in items.values()}),
+               'publishing_enabled': False}
+    if not drafts:
+        # The day's changes gave a stranger nothing to want; show a live product instead.
+        fallback = showcase_fallback(cfg, source_root, state, now)
+        if fallback:
+            receipt['showcase'] = fallback
+            if fallback.get('error'):
+                # Decide the status before the receipt is written: a failed fallback is a
+                # failed run, and the skipped changes stay available for the next run.
+                receipt.update(status='failed', source_identities=[])
+    atomic_write(directory/'receipt.json', json.dumps(receipt, indent=2)+'\n')
+    if receipt['status'] == 'failed':
+        raise ValueError('Evergreen preparation failed; inspect receipt.json')
+    return receipt
 
 
 if __name__ == '__main__':

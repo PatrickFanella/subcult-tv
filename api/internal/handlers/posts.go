@@ -35,6 +35,12 @@ func scanPost(s scanner) (models.Post, error) {
 	return p, err
 }
 
+// validPostDate accepts a non-empty calendar date in YYYY-MM-DD form.
+func validPostDate(value string) bool {
+	_, err := time.Parse("2006-01-02", value)
+	return value != "" && err == nil
+}
+
 // Public queries expose approved website entries only at their scheduled time.
 const visiblePost = `(published = true OR EXISTS(SELECT 1 FROM publication_review v WHERE v.post_id=posts.id AND v.platform='website' AND v.status='scheduled' AND v.due_at<=NOW()))`
 
@@ -159,6 +165,10 @@ func (h *Handler) CreatePost(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusBadRequest, "slug and title are required")
 		return
 	}
+	if !validPostDate(req.Date) {
+		writeError(w, http.StatusBadRequest, "date is required as YYYY-MM-DD")
+		return
+	}
 	if req.Tags == nil {
 		req.Tags = []string{}
 	}
@@ -174,7 +184,7 @@ func (h *Handler) CreatePost(w http.ResponseWriter, r *http.Request) {
 	)
 	p, err := scanPost(row)
 	if err != nil {
-		writeError(w, http.StatusInternalServerError, "failed to create post: "+err.Error())
+		writeDBError(w, err, "post not found")
 		return
 	}
 
@@ -190,7 +200,7 @@ func (h *Handler) UpdatePost(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
 	var managed bool
 	if err := h.DB.QueryRow(r.Context(), `SELECT EXISTS(SELECT 1 FROM publication_review WHERE post_id=$1)`, id).Scan(&managed); err != nil {
-		writeError(w, 503, "Article could not be checked")
+		writeDBError(w, err, "post not found")
 		return
 	}
 	if managed {
@@ -201,6 +211,10 @@ func (h *Handler) UpdatePost(w http.ResponseWriter, r *http.Request) {
 	var req models.UpdatePostRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 		writeError(w, http.StatusBadRequest, "invalid request body")
+		return
+	}
+	if !validPostDate(req.Date) {
+		writeError(w, http.StatusBadRequest, "date is required as YYYY-MM-DD")
 		return
 	}
 	if req.Tags == nil {
@@ -220,7 +234,7 @@ func (h *Handler) UpdatePost(w http.ResponseWriter, r *http.Request) {
 	)
 	p, err := scanPost(row)
 	if err != nil {
-		writeError(w, http.StatusInternalServerError, "failed to update post: "+err.Error())
+		writeDBError(w, err, "post not found")
 		return
 	}
 

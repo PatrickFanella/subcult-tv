@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { groupProducts, type ShowcaseProduct } from '@/lib/showcase';
 import { getProductPath } from '@/lib/product-paths';
 import { PRODUCT_MARKS } from '@/lib/product-marks';
+import StatusBadge from '@/components/StatusBadge';
 
 /** Every product in three groups: name, mark, one line and a link to its page. */
 export default function ProductIndex({ products }: { products: ShowcaseProduct[] }) {
@@ -28,7 +29,10 @@ export default function ProductIndex({ products }: { products: ShowcaseProduct[]
                     )}
                   </span>
                   <span className="product-index-copy">
-                    <strong>{project.name}</strong>
+                    <span className="product-index-name">
+                      <strong>{project.name}</strong>
+                      <StatusBadge status={project.status} />
+                    </span>
                     <span className="product-index-category">{category}</span>
                     <span className="product-index-line">{project.description}</span>
                   </span>

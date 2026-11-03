@@ -10,6 +10,7 @@ export function Field({
   textarea,
   rows,
   type = 'text',
+  inputMode,
 }: {
   label: string;
   value: string;
@@ -18,6 +19,7 @@ export function Field({
   textarea?: boolean;
   rows?: number;
   type?: string;
+  inputMode?: 'numeric' | 'decimal' | 'text' | 'email' | 'url' | 'tel' | 'search';
 }) {
   const id = useId();
   return (
@@ -38,6 +40,7 @@ export function Field({
         <input
           id={id}
           type={type}
+          inputMode={inputMode}
           value={value}
           onChange={(e) => onChange(e.target.value)}
           required={required}

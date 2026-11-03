@@ -99,8 +99,18 @@ func TestRerollQueueIntegration(t *testing.T) {
 	if w := prep("/prep/claim", "", key); w.Code != 200 || strings.TrimSpace(w.Body.String()) != "[]" {
 		t.Fatal("running request claimed twice", w.Body.String())
 	}
-	done := `{"status":"done","result_draft_id":"20261006T094000.000000Z-changemaker:0"}`
+	if claimed[0].Attempts != 1 {
+		t.Fatalf("claim must report the attempt it holds: %+v", claimed[0])
+	}
 	id := "/prep/" + jsonNumber(claimed[0].ID)
+	// A worker echoing a stale attempt number cannot finish the job.
+	if w := prep(id, `{"status":"done","attempts":2,"result_draft_id":"20261006T094000.000000Z-changemaker:0"}`, key); w.Code != 409 {
+		t.Fatal("stale attempt finished the job", w.Code, w.Body.String())
+	}
+	if w := prep(id, `{"status":"done","attempts":-1,"result_draft_id":"x"}`, key); w.Code != 400 {
+		t.Fatal("negative attempts accepted", w.Code)
+	}
+	done := `{"status":"done","attempts":1,"result_draft_id":"20261006T094000.000000Z-changemaker:0"}`
 	if w := prep(id, done, key); w.Code != 200 {
 		t.Fatal(w.Code, w.Body.String())
 	}

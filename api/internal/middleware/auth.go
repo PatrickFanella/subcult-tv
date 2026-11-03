@@ -84,3 +84,19 @@ func Auth(secret string, revoked func(userID string, iat int64) bool) func(http.
 		})
 	}
 }
+
+// RequireRole rejects authenticated requests whose role claim is not role.
+// Install it after Auth; handlers keep their own checks as defense in depth.
+func RequireRole(role string) func(http.Handler) http.Handler {
+	return func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			if current, _ := r.Context().Value(RoleKey).(string); current != role {
+				w.Header().Set("Content-Type", "application/json")
+				w.WriteHeader(http.StatusForbidden)
+				w.Write([]byte(`{"error":"Admin access required","code":403}`))
+				return
+			}
+			next.ServeHTTP(w, r)
+		})
+	}
+}

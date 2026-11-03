@@ -54,6 +54,14 @@ class FeedbackTests(unittest.TestCase):
         (self.state/feedback.FILE).write_text('not json')
         self.assertEqual(feedback.owner_feedback(self.state), [])
 
+    def test_ordering_compares_instants_not_timestamp_spellings(self):
+        payload = {'decisions': [
+            {'decision': 'rejected', 'draft_id': 'a:0', 'decided_at': '2026-10-08T19:00:00+00:00', 'note': 'older'},
+            {'decision': 'rejected', 'draft_id': 'a:1', 'decided_at': '2026-10-08T20:00:00Z', 'note': 'newer'},
+            {'decision': 'rejected', 'draft_id': 'a:2', 'decided_at': '', 'note': 'undated'}]}
+        self.assertEqual([r['note'] for r in feedback.records(payload, self.state)], ['newer', 'older', 'undated'])
+        self.assertEqual(feedback.when('2026-10-08T20:00:00Z'), feedback.when('2026-10-08T20:00:00+00:00'))
+
     def test_unknown_draft_ids_resolve_to_no_text(self):
         self.assertEqual(feedback.draft_text(self.state, '../../etc:0'), '')
         self.assertEqual(feedback.draft_text(self.state, '20261007T042001.203422Z-changemaker:5'), '')

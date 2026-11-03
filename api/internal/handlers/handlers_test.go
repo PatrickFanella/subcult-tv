@@ -3,9 +3,14 @@ package handlers
 import (
 	"bytes"
 	"encoding/json"
+	"errors"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+	"time"
+
+	"github.com/jackc/pgx/v5"
+	"github.com/jackc/pgx/v5/pgconn"
 )
 
 // Helper to create a test request with JSON body.
@@ -126,6 +131,8 @@ func TestPagination(t *testing.T) {
 		{"page 3 with per_page 10", "page=3&per_page=10", 3, 10, 20},
 		{"invalid page defaults to 1", "page=-1", 1, 20, 0},
 		{"per_page capped at 100", "per_page=500", 1, 20, 0},
+		{"page clamped to MaxPage", "page=9223372036854775807&per_page=100", MaxPage, 100, (MaxPage - 1) * 100},
+		{"overflowing page is not negative", "page=9223372036854775807", MaxPage, 20, (MaxPage - 1) * 20},
 	}
 
 	for _, tt := range tests {
@@ -140,6 +147,72 @@ func TestPagination(t *testing.T) {
 			}
 			if offset != tt.expectedOffset {
 				t.Errorf("expected offset %d, got %d", tt.expectedOffset, offset)
+			}
+		})
+	}
+}
+
+// TestTokenRevokedSameSecond covers a logout followed by a token issued in the
+// same second: the logout wins unless Login cleared the cut-off first.
+func TestTokenRevokedSameSecond(t *testing.T) {
+	h := &Handler{}
+	now := time.Now().Unix()
+	if h.TokenRevoked("u1", now) {
+		t.Fatal("no logout recorded yet")
+	}
+	h.logoutBefore.Store("u1", now)
+	if !h.TokenRevoked("u1", now) {
+		t.Fatal("token issued in the logout second must be revoked")
+	}
+	if !h.TokenRevoked("u1", now-1) {
+		t.Fatal("earlier token must be revoked")
+	}
+	if h.TokenRevoked("u1", now+1) {
+		t.Fatal("later token must stay valid")
+	}
+	if h.TokenRevoked("u1", 0) {
+		t.Fatal("absent iat is never revoked")
+	}
+	// Login deletes the cut-off before issuing, so a same-second fresh login is valid.
+	h.logoutBefore.Delete("u1")
+	if h.TokenRevoked("u1", now) {
+		t.Fatal("fresh login after logout must be valid")
+	}
+}
+
+// TestWriteDBError maps driver errors to safe client responses.
+func TestWriteDBError(t *testing.T) {
+	cases := []struct {
+		name string
+		err  error
+		code int
+	}{
+		{"no rows", pgx.ErrNoRows, 404},
+		{"unique violation", &pgconn.PgError{Code: "23505", Message: `duplicate key value violates unique constraint "posts_slug_key"`}, 409},
+		{"invalid uuid", &pgconn.PgError{Code: "22P02", Message: "invalid input syntax for type uuid"}, 400},
+		{"bad date", &pgconn.PgError{Code: "22007", Message: "invalid input syntax for type date"}, 400},
+		{"date overflow", &pgconn.PgError{Code: "22008"}, 400},
+		{"too long", &pgconn.PgError{Code: "22001"}, 400},
+		{"other pg error", &pgconn.PgError{Code: "42P01", Message: `relation "secret_table" does not exist`}, 500},
+		{"plain error", errors.New("dial tcp: connection refused to db-host"), 500},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			rec := httptest.NewRecorder()
+			writeDBError(rec, tc.err, "post not found")
+			if rec.Code != tc.code {
+				t.Fatalf("got %d want %d", rec.Code, tc.code)
+			}
+			var body map[string]any
+			json.Unmarshal(rec.Body.Bytes(), &body)
+			msg, _ := body["error"].(string)
+			for _, leak := range []string{"posts_slug_key", "secret_table", "db-host", "invalid input syntax"} {
+				if bytes.Contains([]byte(msg), []byte(leak)) {
+					t.Fatalf("response leaked driver text: %q", msg)
+				}
+			}
+			if tc.code == 404 && msg != "post not found" {
+				t.Fatalf("unexpected not-found message %q", msg)
 			}
 		})
 	}

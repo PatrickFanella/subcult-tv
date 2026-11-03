@@ -146,13 +146,20 @@ def make_media(cfg, draft, directory, n):
         if check['pass']:
             record.update(kind=media['kind'], headline=media['headline'], alt_text=check['alt_text'])
             return jpeg, record
-        if check['fix'] == 'regenerate_art' and media['kind'] == 'illustration':
+        if check['fix'] == 'regenerate_art' and media['kind'] == 'illustration' and check.get('art_prompt_change', '').strip():
             media['image_prompt'] += '\n\nCorrection: '+check['art_prompt_change']
             art = None
-        elif check['fix'] == 'shorten_headline' and check['new_headline'].strip():
+        elif check['fix'] == 'shorten_headline' and check.get('new_headline', '').strip() \
+                and check['new_headline'].strip() != media['headline']:
             media['headline'] = check['new_headline'].strip()
-        elif check['fix'] == 'switch_to_type':
+        elif check['fix'] == 'switch_to_type' and media['kind'] != 'type':
             media['kind'] = 'type'
+        elif media['kind'] != 'type':
+            # The suggested fix changes nothing; re-rendering the same image would repeat the
+            # same verdict, so fall back to the type card instead of paying for an identical attempt.
+            media['kind'] = 'type'
+        else:
+            break
     record['unresolved'] = True
     # A failed visual must not appear as a ready image in the review dashboard.
     return None, record

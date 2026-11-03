@@ -18,6 +18,7 @@ import urllib.request
 
 from changemaker_instagram import image_record, posting_slots, recent_captions, taken_slots
 from changemaker_publications import preparation_settings
+import job_status
 from runner import atomic_write
 from sources import NoRedirect
 
@@ -25,6 +26,12 @@ HERE = Path(__file__).resolve().parent
 DRAFT_ID = re.compile(r'^([0-9]{8}T[0-9]{6}(?:\.[0-9]{1,6})?Z-changemaker):([0-9]{1,2})$')
 SHA256 = re.compile(r'^[a-f0-9]{64}$')
 MODES = ('text', 'image', 'both')
+JOB = 'changemaker-reroll'
+GENERIC_ERROR = 'Re-roll failed. Try again or check the preparation job.'
+
+
+class RerollPreparationError(ValueError):
+    """A bounded, owner-facing re-roll failure without provider or path details."""
 
 
 def call(settings, path, payload=None):
@@ -47,14 +54,14 @@ def original(state, draft_id):
     """The prepared draft and its run's evidence, read from local state only."""
     match = DRAFT_ID.match(draft_id or '')
     if not match:
-        raise ValueError('Only prepared Instagram drafts can be re-rolled')
+        raise RerollPreparationError('Only prepared Instagram drafts can be re-rolled')
     directory = state/'runs'/match.group(1)
     if not directory.resolve().is_relative_to(state.resolve()):
         raise ValueError('Invalid draft run')
     drafts = read_json(directory/'result.json').get('drafts', [])
     index = int(match.group(2))
     if index >= len(drafts) or drafts[index].get('platform', 'instagram') != 'instagram':
-        raise ValueError('The prepared draft is no longer available')
+        raise RerollPreparationError('The prepared draft is no longer available')
     sources = read_json(directory/'sources.json') if (directory/'sources.json').is_file() else {'items': []}
     return drafts[index], sources
 
@@ -75,7 +82,7 @@ def kept_image(draft, sha, state):
 
 def validate_caption(text):
     if not isinstance(text, str) or not text.strip() or len(text) > 2200 or 'git.subcult.tv' in text.casefold():
-        raise ValueError('The regenerated caption is invalid')
+        raise RerollPreparationError('The regenerated caption is invalid')
     return text.strip()
 
 
@@ -94,7 +101,7 @@ def finished_run(state, request_id):
 def regenerate(cfg, source_root, state, job, now):
     """Write one replacement run and return its draft ID."""
     if job.get('mode') not in MODES:
-        raise ValueError('Unknown re-roll mode')
+        raise RerollPreparationError('Unknown re-roll mode')
     existing = finished_run(state, job['id'])
     if existing:
         return existing
@@ -129,7 +136,7 @@ def regenerate(cfg, source_root, state, job, now):
                                         extra={'owner_note': note,
                                                'previous_image': {'kind': media.get('kind', ''), 'headline': media.get('headline', '')}})
         if not jpeg or not Path(jpeg).is_file():
-            raise ValueError('Image generation did not produce a usable picture')
+            raise RerollPreparationError('Image generation did not produce a usable picture')
         media.pop('candidates', None)
         media.update(kind=made.get('kind', ''), headline=made.get('headline', ''), image=image_record(Path(jpeg), state),
                      alt_text=alt or media.get('alt_text', ''),
@@ -175,34 +182,55 @@ def execute(source_root, state, ingest_env, sync=sync_dashboard):
     state.mkdir(parents=True, exist_ok=True)
     cfg = json.loads((source_root/'automation/social-posting/config.json').read_text())
     settings = preparation_settings(ingest_env)
-    with (state/'reroll.lock').open('a') as lock:
+    started = datetime.now(timezone.utc)
+    # Re-rolls write `*-changemaker` runs and take posting slots like the Instagram,
+    # weekly, showcase and tweet jobs, so they share the same lock; a busy lock is a skip.
+    with (state/'runner.lock').open('a') as lock:
         try:
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
-            return {'status': 'busy'}
-        # One request at a time: each result is reported before the next claim,
-        # so an interruption leaves at most one request to retry.
-        done = failed = 0
-        synced = None
-        for _ in range(3):
-            jobs = call(settings, '/rerolls/claim')
-            if not jobs:
-                break
-            job = jobs[0]
-            try:
-                result = {'status': 'done', 'result_draft_id': regenerate(cfg, source_root, state, job, datetime.now(timezone.utc))}
-            except Exception as error:  # report every failure to the owner instead of retrying silently
-                with (state/'reroll-errors.log').open('a') as log:
-                    log.write(f"{datetime.now(timezone.utc).isoformat()} {job.get('id')} {type(error).__name__}: {str(error)[:1000]}\n")
-                result = {'status': 'failed', 'error': str(error)[:300] or type(error).__name__}
-            if result['status'] == 'done':
-                # Deliver the replacement before the owner is told it is ready. If
-                # this sync fails, the five-minute timer still delivers it.
-                synced = sync()
-            call(settings, f"/rerolls/{int(job['id'])}", result)
-            done += result['status'] == 'done'
-            failed += result['status'] == 'failed'
-        return {'status': 'success', 'done': done, 'failed': failed, 'synced': synced, 'publishing_enabled': False}
+            job_status.write(state, JOB, 'busy', started=started, reason='Another preparation job holds runner.lock')
+            return {'status': 'busy', 'publishing_enabled': False}
+        try:
+            receipt = _claim_and_regenerate(cfg, source_root, state, settings, sync)
+        except Exception as error:
+            job_status.write(state, JOB, 'failed', started=started, reason=type(error).__name__)
+            raise
+    job_status.write(state, JOB, 'success', started=started,
+                     reason=f"{receipt['done']} re-rolled, {receipt['failed']} failed")
+    return receipt
+
+
+def _claim_and_regenerate(cfg, source_root, state, settings, sync):
+    # One request at a time: each result is reported before the next claim,
+    # so an interruption leaves at most one request to retry.
+    done = failed = 0
+    synced = None
+    for _ in range(3):
+        jobs = call(settings, '/rerolls/claim')
+        if not jobs:
+            break
+        job = jobs[0]
+        try:
+            result = {'status': 'done', 'result_draft_id': regenerate(cfg, source_root, state, job, datetime.now(timezone.utc))}
+        except Exception as error:  # report every failure to the owner instead of retrying silently
+            with (state/'reroll-errors.log').open('a') as log:
+                log.write(f"{datetime.now(timezone.utc).isoformat()} {job.get('id')} {type(error).__name__}: {str(error)[:1000]}\n")
+            # Raw provider errors and local paths belong only in the private log.
+            message = str(error) if isinstance(error, RerollPreparationError) else GENERIC_ERROR
+            result = {'status': 'failed', 'error': message}
+        if result['status'] == 'done':
+            # Deliver the replacement before the owner is told it is ready. If
+            # this sync fails, the five-minute timer still delivers it.
+            synced = sync()
+        # Echo the claimed attempt so the server finishes only the job this worker still owns;
+        # older servers send no `attempts`, and the finish body then omits it.
+        if isinstance(job.get('attempts'), int):
+            result['attempts'] = job['attempts']
+        call(settings, f"/rerolls/{int(job['id'])}", result)
+        done += result['status'] == 'done'
+        failed += result['status'] == 'failed'
+    return {'status': 'success', 'done': done, 'failed': failed, 'synced': synced, 'publishing_enabled': False}
 
 
 if __name__ == '__main__':

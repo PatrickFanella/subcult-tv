@@ -1,6 +1,8 @@
 import importlib.util
 import json
+import sys
 from datetime import datetime
+from unittest.mock import patch
 from pathlib import Path
 import tempfile
 import unittest
@@ -126,6 +128,21 @@ class RunnerTests(unittest.TestCase):
         self.assertIn('features.shell_tool=false',command)
         self.assertNotIn('super-productivity', ' '.join(command))
         self.assertNotIn('sp-mcp', ' '.join(command))
+
+    def test_lock_timeout_is_recorded_in_latest_and_status(self):
+        with tempfile.TemporaryDirectory() as directory:
+            state = Path(directory)/'state'
+            config = Path(directory)/'config.json'
+            config.write_text(json.dumps({**CFG, 'state': str(state)}))
+            with patch.object(runner, 'acquire', side_effect=TimeoutError('Social preparation lock remained busy')), \
+                    patch.object(sys, 'argv', ['runner.py', 'plan', '--config', str(config), '--week', '2026-W41']):
+                self.assertEqual(runner.main(), 1)
+            latest = json.loads((state/'latest.json').read_text())
+            self.assertEqual((latest['status'], latest['mode'], latest['week']), ('failed', 'plan', '2026-W41'))
+            self.assertIn('busy', latest['error'])
+            status = json.loads((state/'status.json').read_text())['jobs']['social-posting-plan']
+            self.assertEqual(status['status'], 'failed')
+            self.assertIn('Lock timeout', status['reason'])
 
     def test_atomic_write_permissions(self):
         with tempfile.TemporaryDirectory() as directory:

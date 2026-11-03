@@ -24,8 +24,7 @@ export default function Home() {
             <div>
               <p className="showcase-eyebrow">SUBCULTURE COLLECTIVE / INDEPENDENT SOFTWARE</p>
               <h1 className="showcase-title">
-                Tools for the culture
-                <br />
+                Tools for the culture <br />
                 <span>we build together.</span>
               </h1>
             </div>
@@ -35,9 +34,14 @@ export default function Home() {
                 a Friday show, a desktop with too many widgets. {products.length} products so far.
                 None of them wants your attention for longer than the job takes.
               </p>
-              <Button as="a" href="#products" variant="secondary">
-                See the products ↓
-              </Button>
+              <div className="flex flex-wrap items-center gap-4">
+                <Button as="link" to="/products" className="support-primary">
+                  All {products.length} products →
+                </Button>
+                <Button as="a" href="#products" variant="secondary">
+                  See the products ↓
+                </Button>
+              </div>
             </div>
           </div>
         </div>

@@ -81,7 +81,7 @@ if (process.argv.includes('--sync-index')) {
     }
     const html = withBlock(shell, meta).replace(
       '<div id="root"></div>',
-      () => `<div id="root">${body}</div>`,
+      () => `<div id="root" data-prerendered="${escapeAttr(meta.path)}">${body}</div>`,
     );
     if (!html.includes(body)) throw new Error('index.html is missing its root element');
     writeFileSync(join(dir, 'index.html'), html);

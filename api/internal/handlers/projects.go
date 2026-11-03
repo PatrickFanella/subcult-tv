@@ -9,6 +9,33 @@ import (
 	"github.com/subculture-collective/subcult-tv/api/internal/models"
 )
 
+// Allowed registry values. Statuses match the set accepted at approval and
+// types match the site's project type union.
+var (
+	projectStatuses = map[string]bool{"active": true, "incubating": true, "archived": true}
+	projectTypes    = map[string]bool{"software": true, "media": true, "tools": true, "social": true}
+)
+
+// validateProjectRequest returns a client-facing message for an invalid
+// status or type, or "" when both are acceptable.
+func validateProjectRequest(req models.CreateProjectRequest) string {
+	if req.Slug == "" || req.Name == "" {
+		return "slug and name are required"
+	}
+	if len(req.Type) == 0 {
+		return "at least one project type is required"
+	}
+	for _, t := range req.Type {
+		if !projectTypes[t] {
+			return "type must be one of software, media, tools, social"
+		}
+	}
+	if !projectStatuses[req.Status] {
+		return "status must be one of active, incubating, archived"
+	}
+	return ""
+}
+
 // scanner is implemented by both *pgx.Row and *pgx.Rows.
 type scanner interface {
 	Scan(dest ...interface{}) error
@@ -109,12 +136,8 @@ func (h *Handler) CreateProject(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if req.Slug == "" || req.Name == "" {
-		writeError(w, http.StatusBadRequest, "slug and name are required")
-		return
-	}
-	if len(req.Type) == 0 {
-		writeError(w, http.StatusBadRequest, "at least one project type is required")
+	if msg := validateProjectRequest(req); msg != "" {
+		writeError(w, http.StatusBadRequest, msg)
 		return
 	}
 	if req.Stack == nil {
@@ -140,7 +163,7 @@ func (h *Handler) CreateProject(w http.ResponseWriter, r *http.Request) {
 	)
 	p, err := scanProject(row)
 	if err != nil {
-		writeError(w, http.StatusInternalServerError, "failed to create project: "+err.Error())
+		writeDBError(w, err, "project not found")
 		return
 	}
 
@@ -156,8 +179,8 @@ func (h *Handler) UpdateProject(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusBadRequest, "invalid request body")
 		return
 	}
-	if len(req.Type) == 0 {
-		writeError(w, http.StatusBadRequest, "at least one project type is required")
+	if msg := validateProjectRequest(req); msg != "" {
+		writeError(w, http.StatusBadRequest, msg)
 		return
 	}
 	if req.Stack == nil {
@@ -184,7 +207,7 @@ func (h *Handler) UpdateProject(w http.ResponseWriter, r *http.Request) {
 	)
 	p, err := scanProject(row)
 	if err != nil {
-		writeError(w, http.StatusInternalServerError, "failed to update project: "+err.Error())
+		writeDBError(w, err, "project not found")
 		return
 	}
 

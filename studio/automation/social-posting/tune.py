@@ -45,8 +45,10 @@ def useful(record):
 
 def select(records, cursor):
     """New useful feedback after the cursor, and an older sample for context."""
-    fresh = [r for r in records if r.get('decided_at', '') > cursor and useful(r)]
-    earlier = [r for r in records if r.get('decided_at', '') <= cursor and useful(r)][:20]
+    # Timestamps arrive as `Z` or `+00:00`; compare instants, not strings.
+    edge = feedback.when(cursor)
+    fresh = [r for r in records if feedback.when(r.get('decided_at', '')) > edge and useful(r)]
+    earlier = [r for r in records if feedback.when(r.get('decided_at', '')) <= edge and useful(r)][:20]
     return fresh, earlier
 
 
@@ -144,7 +146,7 @@ def execute(cfg, state, ingest_env, now=None, minimum=5):
         outside = [f for f in changed_files(clone) if f not in ALLOWED]
         if outside:
             return {**receipt, 'files': changed_files(clone), 'status': 'rejected_changes', 'outside_allowlist': outside}
-        newest = max(r['decided_at'] for r in fresh)
+        newest = max((r['decided_at'] for r in fresh), key=feedback.when)
         receipt['lessons'] = record_lessons(clone, result.get('lessons', []), newest[:10])
         files = changed_files(clone)
         receipt['files'] = files

@@ -1,6 +1,8 @@
 import hashlib
 import json
+from pathlib import Path
 import subprocess
+import tempfile
 import unittest
 import urllib.error
 from datetime import datetime, timedelta, timezone
@@ -129,6 +131,43 @@ class Collection(unittest.TestCase):
         self.assertIn('subculture-collective/rekolekt', changes.settings({'changes': {}})['repositories'])
         with self.assertRaises(ValueError):
             changes.collect_changes({'changes': {'repositories': []}}, NOW)
+
+    def test_window_continues_from_the_previous_collection_within_bounds(self):
+        day = timedelta(days=1)
+        self.assertEqual(changes.window_start(NOW, 1, None), NOW-day)
+        # An early manual run yesterday closed its window early; today's run reopens there.
+        self.assertEqual(changes.window_start(NOW, 1, NOW-timedelta(hours=30)), NOW-timedelta(hours=30))
+        # A later window end never narrows the default day, and the catch-up is bounded.
+        self.assertEqual(changes.window_start(NOW, 1, NOW-timedelta(hours=3)), NOW-day)
+        self.assertEqual(changes.window_start(NOW, 1, NOW-timedelta(days=30)), NOW-timedelta(days=changes.MAX_CATCH_UP_DAYS))
+        self.assertEqual(changes.window_start(NOW, 1, NOW+day), NOW-day)
+        with patch.object(changes, 'gitea_token', return_value='secret'), patch.object(changes, 'get_gitea', return_value=[]):
+            context = changes.changes_context(CFG, NOW, since=NOW-timedelta(hours=30))
+        self.assertEqual((context['window_start'], context['window_end']), ('2026-10-10T03:20:00Z', '2026-10-11T09:20:00Z'))
+        self.assertEqual(context['drafts'], [])
+
+    def test_previous_window_end_uses_only_complete_recorded_collections(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            self.assertIsNone(changes.previous_window_end(state, 'changemaker', NOW))
+            def run(name, receipt, collection=None):
+                directory = state/'runs'/name
+                directory.mkdir(parents=True)
+                (directory/'receipt.json').write_text(json.dumps(receipt))
+                if collection is not None:
+                    (directory/'collection.json').write_text(json.dumps(collection))
+            run('20261008T090000.000000Z-changemaker', {'status': 'empty'}, {'status': 'empty', 'window_end': '2026-10-08T09:00:00Z'})
+            run('20261009T090000.000000Z-changemaker', {'status': 'unavailable'}, {'status': 'unavailable', 'window_end': '2026-10-09T09:00:00Z'})
+            run('20261010T090000.000000Z-changemaker', {'status': 'failed'}, {'status': 'available', 'window_end': '2026-10-10T09:00:00Z'})
+            run('20261010T120000.000000Z-changemaker', {'status': 'success', 'kind': 'showcase'})  # no collection
+            run('20261010T130000.000000Z-publications', {'status': 'drafts_prepared'}, {'status': 'available', 'window_end': '2026-10-10T13:00:00Z'})
+            self.assertEqual(changes.previous_window_end(state, 'changemaker', NOW), datetime(2026, 10, 8, 9, 0, tzinfo=timezone.utc))
+            self.assertEqual(changes.previous_window_end(state, 'publications', NOW), datetime(2026, 10, 10, 13, 0, tzinfo=timezone.utc))
+
+    def test_identity_matches_the_instagram_ledger(self):
+        import changemaker_instagram
+        item = {'url': 'https://git.example/o/r/pulls/1', 'updated_at': '2026-10-11T00:00:00Z'}
+        self.assertEqual(changes.identity(item), changemaker_instagram.identity(item))
 
 
 if __name__ == '__main__':

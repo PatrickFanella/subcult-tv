@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Prepare fresh discoveries and quote-post candidates; never publish."""
+from contextlib import closing
 from datetime import datetime, timedelta, timezone
 from preparation_lock import acquire
 import hashlib
@@ -13,7 +14,10 @@ from zoneinfo import ZoneInfo
 
 import runner
 from changes import changes_context
+import job_status
 from sources import discovery_inputs
+
+JOB = 'social-posting-radar'
 
 
 def candidates(cfg, now):
@@ -105,95 +109,112 @@ def execute(cfg):
     state = Path(cfg['state'])
     now = datetime.now(timezone.utc)
     with (state/'runner.lock').open('w') as lock:
-        acquire(lock)
-        with sqlite3.connect(state/'runs.sqlite3') as db:
-            db.execute('CREATE TABLE IF NOT EXISTS timely_seen (source_id TEXT PRIMARY KEY, run_id TEXT, prepared_at TEXT)')
-            db.execute('CREATE TABLE IF NOT EXISTS timely_slots (run_id TEXT, account TEXT, due_at TEXT, expires_at TEXT, PRIMARY KEY(run_id,account,due_at))')
-            context = candidates(cfg, now)
-            context['items'] = [i for i in context['items'] if not db.execute('SELECT 1 FROM timely_seen WHERE source_id=?',(i['id'],)).fetchone()]
-            if not context['items']:
-                receipt = {'status':'no_fresh_sources', 'mode':'radar', 'checked_at':now.isoformat(),
-                    'changemaker_status':context['changemaker']['status'], 'warnings':context['warnings'], 'publishing_enabled':False}
-                runner.atomic_write(state/'radar-latest.json', json.dumps(receipt,indent=2)+'\n')
-                return receipt
-            run_id = now.strftime('%Y%m%dT%H%M%S.%fZ')+'-radar'
-            directory = state/'runs'/run_id;directory.mkdir(mode=0o700)
-            claims = runner.paths.social(cfg)/'Product Claims Register.md'
-            week = now.astimezone(ZoneInfo(cfg['timezone'])).strftime('%G-W%V')
-            weekly = runner.paths.drafts(cfg)/(week+' Content Posts.md')
-            context['media_library'] = runner.media.context(cfg)
-            context['posting_guidance'] = (runner.paths.root(cfg)/cfg['editorial_guide']).read_text()
-            context['claims_register'] = claims.read_text()
-            context['marketing_strategies'] = runner.strategy.context(cfg)
-            context['owner_feedback'] = runner.feedback.owner_feedback(Path(cfg['state']), ('x', 'bluesky'), 30)
-            context['editorial_style'] = (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()
-            context['weekly_plan'] = weekly.read_text() if weekly.exists() else 'No current-week plan.'
-            timely_folder = runner.paths.drafts(cfg)/'Timely Drafts'
-            context['recent_timely_notes'] = {p.name:p.read_text()[:6000]
-                for p in sorted(timely_folder.glob('*.md'))[-12:]}
-            context['prepared_slots'] = [{'account':account,'due_at':due}
-                for account,due,expiry in db.execute('SELECT account,due_at,expires_at FROM timely_slots')
-                if datetime.fromisoformat(expiry) > now]
-            context['prepared_slots'] += [{'account':account,'due_at':due}
-                for account,due in re.findall(r'#### [^\n]+ / (patrick|subcult|clpr)\s+Intended time: ([^ .]+)',context['weekly_plan'])
-                if datetime.fromisoformat(due) > now]
-            runner.atomic_write(directory/'sources.json',json.dumps(context,indent=2)+'\n')
-            prompt=(runner.HERE/'radar-prompt.md').read_text()+'\n\n'+json.dumps({'now':now.isoformat(),
-                'timezone':cfg['timezone'],'channels':cfg['channels'],'organization_id':cfg['organization_id'],
-                'cadence':cfg['cadence'],'context':context})
-            runner.atomic_write(directory/'request.txt',prompt)
-            command = runner.codex_command(cfg,directory)
-            command[command.index('--output-schema')+1] = str(runner.HERE/'radar.schema.json')
-            # Native web search is discovery/verification only; write tools remain unavailable.
-            command[command.index('web_search="disabled"')] = 'web_search="live"'
-            env = dict(os.environ)
-            for key in ['OPENAI_API_KEY','CODEX_API_KEY','OPENAI_BASE_URL']:
-                env.pop(key,None)
-            with (directory/'events.jsonl').open('w') as out, (directory/'stderr.log').open('w') as err:
-                result = subprocess.run(command,input=prompt,text=True,stdout=out,stderr=err,env=env,cwd=directory,timeout=900)
-            if result.returncode:
-                raise ValueError('Timely draft preparation failed; inspect private run evidence')
-            events=[json.loads(line) for line in (directory/'events.jsonl').read_text().splitlines() if line.strip()]
-            proof=runner.verify_evidence(events,cfg)
-            result=json.loads((directory/'result.json').read_text())
-            originals=[draft.get('text') for draft in result['drafts']]
-            if result['drafts'] and cfg.get('polish', True):
-                import craft
-                craft.polish_short(cfg, result['drafts'], directory, owner=context['owner_feedback'])
-            try:
-                validate(result,context,cfg,now)
-            except ValueError:
-                for draft,text in zip(result['drafts'],originals):
-                    draft['text']=text
-                validate(result,context,cfg,now)
-            catalog = runner.media.context(cfg)
-            for draft in result['drafts']:
-                runner.media.validate_choice(draft.get('media'), catalog, draft['account'])
-            runner.media.save_requests(directory, result)
-            runner.bluesky.save(directory, result, cfg)
-            folder=runner.paths.drafts(cfg)/'Timely Drafts'
-            target=folder/(now.astimezone(ZoneInfo(cfg['timezone'])).strftime('%Y-%m-%d %H-%M-%S')+' '+run_id+' Timely Drafts.md')
-            lines=['---','type: work','status: active','stage: draft','---','', '# Timely drafts', '',
-                '[[Timely Posting Plan]] · [[Social Posts Workbench]]','',
-                f'Run: `{run_id}`. All copy unapproved. No posts submitted. Trend-driven material requires a deliberate human posting decision.', '',result['summary'],'']
-            for draft in result['drafts']:
-                lines += [f'## {draft["kind"]} / {draft["account"]}', '',draft['text'],'',
-                    f'Proposed: {draft["due_at"]}. Expires: {draft["expires_at"]}.', '',
-                    'Sources: '+', '.join(draft['source_ids']), '', 'Evidence: '+draft['evidence'], '',
-                    'Before posting: '+draft['next_check'], '']
-                lines += runner.media.render_choice(draft.get('media'))
-            lines += ['## Open checks','']+['- '+item for item in result['open_checks']]
-            runner.atomic_write(target,'\n'.join(lines)+'\n')
-            for draft in result['drafts']:
-                db.executemany('INSERT OR IGNORE INTO timely_seen VALUES (?,?,?)',[(s,run_id,now.isoformat()) for s in draft['source_ids']])
-                db.execute('INSERT INTO timely_slots VALUES (?,?,?,?)',(run_id,draft['account'],draft['due_at'],draft['expires_at']))
-            db.commit()
-            receipt={'status':'success','mode':'radar','run_id':run_id,'note':str(target),
-                'draft_count':len(result['drafts']),'provider_evidence':proof,'changemaker_status':context['changemaker']['status'],
-                'checked_at':now.isoformat(),'publishing_enabled':False}
-            runner.atomic_write(directory/'receipt.json',json.dumps(receipt,indent=2)+'\n')
-            runner.atomic_write(state/'radar-latest.json',json.dumps(receipt,indent=2)+'\n')
+        try:
+            acquire(lock)
+        except TimeoutError as error:
+            job_status.write(state, JOB, 'failed', started=now, reason='Lock timeout: '+str(error)[:200])
+            raise
+        try:
+            receipt = _execute(cfg, state, now)
+        except Exception as error:
+            job_status.write(state, JOB, 'failed', started=now, reason=type(error).__name__)
+            raise
+    status = 'success' if receipt['status'] == 'success' else 'skipped'
+    job_status.write(state, JOB, status, run_id=receipt.get('run_id'), started=now,
+                     reason=receipt['status']+f", {receipt.get('draft_count', 0)} draft(s)")
+    return receipt
+
+
+def _execute(cfg, state, now):
+    # `with sqlite3.connect(...)` only manages the transaction; closing() releases the handle.
+    with closing(sqlite3.connect(state/'runs.sqlite3')) as db:
+        db.execute('CREATE TABLE IF NOT EXISTS timely_seen (source_id TEXT PRIMARY KEY, run_id TEXT, prepared_at TEXT)')
+        db.execute('CREATE TABLE IF NOT EXISTS timely_slots (run_id TEXT, account TEXT, due_at TEXT, expires_at TEXT, PRIMARY KEY(run_id,account,due_at))')
+        context = candidates(cfg, now)
+        context['items'] = [i for i in context['items'] if not db.execute('SELECT 1 FROM timely_seen WHERE source_id=?',(i['id'],)).fetchone()]
+        if not context['items']:
+            receipt = {'status':'no_fresh_sources', 'mode':'radar', 'checked_at':now.isoformat(),
+                'changemaker_status':context['changemaker']['status'], 'warnings':context['warnings'], 'publishing_enabled':False}
+            runner.atomic_write(state/'radar-latest.json', json.dumps(receipt,indent=2)+'\n')
             return receipt
+        run_id = now.strftime('%Y%m%dT%H%M%S.%fZ')+'-radar'
+        directory = state/'runs'/run_id;directory.mkdir(parents=True, mode=0o700)
+        claims = runner.paths.social(cfg)/'Product Claims Register.md'
+        week = now.astimezone(ZoneInfo(cfg['timezone'])).strftime('%G-W%V')
+        weekly = runner.paths.drafts(cfg)/(week+' Content Posts.md')
+        context['media_library'] = runner.media.context(cfg)
+        context['posting_guidance'] = (runner.paths.root(cfg)/cfg['editorial_guide']).read_text()
+        context['claims_register'] = claims.read_text()
+        context['marketing_strategies'] = runner.strategy.context(cfg)
+        context['owner_feedback'] = runner.feedback.owner_feedback(Path(cfg['state']), ('x', 'bluesky'), 30)
+        context['editorial_style'] = (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()
+        context['weekly_plan'] = weekly.read_text() if weekly.exists() else 'No current-week plan.'
+        timely_folder = runner.paths.drafts(cfg)/'Timely Drafts'
+        context['recent_timely_notes'] = {p.name:p.read_text()[:6000]
+            for p in sorted(timely_folder.glob('*.md'))[-12:]}
+        context['prepared_slots'] = [{'account':account,'due_at':due}
+            for account,due,expiry in db.execute('SELECT account,due_at,expires_at FROM timely_slots')
+            if datetime.fromisoformat(expiry) > now]
+        context['prepared_slots'] += [{'account':account,'due_at':due}
+            for account,due in re.findall(r'#### [^\n]+ / (patrick|subcult|clpr)\s+Intended time: ([^ .]+)',context['weekly_plan'])
+            if datetime.fromisoformat(due) > now]
+        runner.atomic_write(directory/'sources.json',json.dumps(context,indent=2)+'\n')
+        prompt=(runner.HERE/'radar-prompt.md').read_text()+'\n\n'+json.dumps({'now':now.isoformat(),
+            'timezone':cfg['timezone'],'channels':cfg['channels'],'organization_id':cfg['organization_id'],
+            'cadence':cfg['cadence'],'context':context})
+        runner.atomic_write(directory/'request.txt',prompt)
+        command = runner.codex_command(cfg,directory)
+        command[command.index('--output-schema')+1] = str(runner.HERE/'radar.schema.json')
+        # Native web search is discovery/verification only; write tools remain unavailable.
+        command[command.index('web_search="disabled"')] = 'web_search="live"'
+        env = dict(os.environ)
+        for key in ['OPENAI_API_KEY','CODEX_API_KEY','OPENAI_BASE_URL']:
+            env.pop(key,None)
+        with (directory/'events.jsonl').open('w') as out, (directory/'stderr.log').open('w') as err:
+            result = subprocess.run(command,input=prompt,text=True,stdout=out,stderr=err,env=env,cwd=directory,timeout=900)
+        if result.returncode:
+            raise ValueError('Timely draft preparation failed; inspect private run evidence')
+        events=[json.loads(line) for line in (directory/'events.jsonl').read_text().splitlines() if line.strip()]
+        proof=runner.verify_evidence(events,cfg)
+        result=json.loads((directory/'result.json').read_text())
+        originals=[draft.get('text') for draft in result['drafts']]
+        if result['drafts'] and cfg.get('polish', True):
+            import craft
+            craft.polish_short(cfg, result['drafts'], directory, owner=context['owner_feedback'])
+        try:
+            validate(result,context,cfg,now)
+        except ValueError:
+            for draft,text in zip(result['drafts'],originals):
+                draft['text']=text
+            validate(result,context,cfg,now)
+        catalog = runner.media.context(cfg)
+        for draft in result['drafts']:
+            runner.media.validate_choice(draft.get('media'), catalog, draft['account'])
+        runner.media.save_requests(directory, result)
+        runner.bluesky.save(directory, result, cfg)
+        folder=runner.paths.drafts(cfg)/'Timely Drafts'
+        target=folder/(now.astimezone(ZoneInfo(cfg['timezone'])).strftime('%Y-%m-%d %H-%M-%S')+' '+run_id+' Timely Drafts.md')
+        lines=['---','type: work','status: active','stage: draft','---','', '# Timely drafts', '',
+            '[[Timely Posting Plan]] · [[Social Posts Workbench]]','',
+            f'Run: `{run_id}`. All copy unapproved. No posts submitted. Trend-driven material requires a deliberate human posting decision.', '',result['summary'],'']
+        for draft in result['drafts']:
+            lines += [f'## {draft["kind"]} / {draft["account"]}', '',draft['text'],'',
+                f'Proposed: {draft["due_at"]}. Expires: {draft["expires_at"]}.', '',
+                'Sources: '+', '.join(draft['source_ids']), '', 'Evidence: '+draft['evidence'], '',
+                'Before posting: '+draft['next_check'], '']
+            lines += runner.media.render_choice(draft.get('media'))
+        lines += ['## Open checks','']+['- '+item for item in result['open_checks']]
+        runner.atomic_write(target,'\n'.join(lines)+'\n')
+        for draft in result['drafts']:
+            db.executemany('INSERT OR IGNORE INTO timely_seen VALUES (?,?,?)',[(s,run_id,now.isoformat()) for s in draft['source_ids']])
+            db.execute('INSERT INTO timely_slots VALUES (?,?,?,?)',(run_id,draft['account'],draft['due_at'],draft['expires_at']))
+        db.commit()
+        receipt={'status':'success','mode':'radar','run_id':run_id,'note':str(target),
+            'draft_count':len(result['drafts']),'provider_evidence':proof,'changemaker_status':context['changemaker']['status'],
+            'checked_at':now.isoformat(),'publishing_enabled':False}
+        runner.atomic_write(directory/'receipt.json',json.dumps(receipt,indent=2)+'\n')
+        runner.atomic_write(state/'radar-latest.json',json.dumps(receipt,indent=2)+'\n')
+        return receipt
 
 
 if __name__ == '__main__':

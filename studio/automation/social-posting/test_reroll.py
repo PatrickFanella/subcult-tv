@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta, timezone
+import fcntl
 import hashlib
 import json
 from pathlib import Path
@@ -157,6 +158,53 @@ class RerollTests(unittest.TestCase):
             second = reroll.regenerate({}, self.root, self.state, self.job('text'), self.now+timedelta(hours=3))
         self.assertEqual(first, second)
         self.assertEqual(caption.call_count, 1)
+
+    def test_shares_the_preparation_lock_and_reports_busy(self):
+        self.state.mkdir(parents=True, exist_ok=True)
+        with (self.state/'runner.lock').open('a') as held, patch.object(reroll, 'call') as api:
+            fcntl.flock(held, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            receipt = reroll.execute(self.root, self.state, self.env)
+        api.assert_not_called()
+        self.assertEqual(receipt, {'status': 'busy', 'publishing_enabled': False})
+        self.assertFalse((self.state/'reroll.lock').exists())
+        status = json.loads((self.state/'status.json').read_text())['jobs']['changemaker-reroll']
+        self.assertEqual(status['status'], 'busy')
+
+    def test_unexpected_errors_reach_the_owner_as_a_fixed_message(self):
+        queue = [self.job('text'), {**self.job('text'), 'id': 9}]
+        reported = []
+        def api(settings, path, payload=None):
+            if path == '/rerolls/claim':
+                return [queue.pop(0)] if queue else []
+            reported.append(payload)
+            return {}
+        failures = [OSError('/home/onnwee/private/path: disk full'), reroll.RerollPreparationError('The regenerated caption is invalid')]
+        with patch.object(reroll, 'call', side_effect=api), patch.object(reroll, 'regenerate', side_effect=failures):
+            receipt = reroll.execute(self.root, self.state, self.env, sync=lambda: True)
+        self.assertEqual(receipt['failed'], 2)
+        self.assertEqual(reported[0]['error'], reroll.GENERIC_ERROR)
+        self.assertEqual(reported[1]['error'], 'The regenerated caption is invalid')
+        self.assertNotIn('/home/onnwee', json.dumps(reported))
+        self.assertIn('/home/onnwee/private/path', (self.state/'reroll-errors.log').read_text())
+        status = json.loads((self.state/'status.json').read_text())['jobs']['changemaker-reroll']
+        self.assertEqual(status['status'], 'success')
+        self.assertIn('2 failed', status['reason'])
+
+    def test_finish_echoes_the_claimed_attempt_and_tolerates_its_absence(self):
+        queue = [{**self.job('text'), 'attempts': 2}, {**self.job('text', draft_id='nope'), 'id': 8, 'attempts': 1},
+                 {**self.job('text'), 'id': 9}]
+        reported = {}
+        def api(settings, path, payload=None):
+            if path == '/rerolls/claim':
+                return [queue.pop(0)] if queue else []
+            reported[path] = payload
+            return {}
+        with patch.object(reroll, 'call', side_effect=api), \
+             patch.object(craft, 'reroll_caption', return_value={'text': 'New.', 'angle': '', 'changed': ''}):
+            reroll.execute(self.root, self.state, self.env, sync=lambda: True)
+        self.assertEqual((reported['/rerolls/7']['status'], reported['/rerolls/7']['attempts']), ('done', 2))
+        self.assertEqual((reported['/rerolls/8']['status'], reported['/rerolls/8']['attempts']), ('failed', 1))
+        self.assertNotIn('attempts', reported['/rerolls/9'])
 
     def test_refuses_an_unexpected_endpoint(self):
         self.env.write_text('POSTING_INGEST_URL=https://example.test/x\nPOSTING_PREPARATION_KEY='+'k'*40+'\n')

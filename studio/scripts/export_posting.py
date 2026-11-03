@@ -6,6 +6,10 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
+RECENT_RUNS = 30          # newest runs always shown
+MAX_RUNS = 120            # safety cap, including older runs kept for unexpired drafts
+MAX_RECEIPT_FILES = 400
+JOB_STATUSES = ('success', 'failed', 'busy', 'skipped')
 
 
 def read(path, limit=2_000_000):
@@ -31,6 +35,46 @@ def derived_platform(mode):
 
 def text(value, limit):
     return value[:limit] if isinstance(value, str) else ''
+
+
+def redacted_evidence(value, limit=4000):
+    """Evidence travels without URLs: Gitea links and other private addresses stay on Kvant."""
+    if not isinstance(value, str):
+        return ''
+    lines = [URL.sub('', line).rstrip(' -—:') for line in value.splitlines()]
+    return '\n'.join(lines)[:limit]
+
+
+def expired(draft, now):
+    """True when a draft's review window has closed.
+
+    Like the sync script, `due_at` stands in when a draft has no `expires_at`;
+    a draft with neither never expires here."""
+    value = (draft.get('expires_at') or draft.get('due_at')) if isinstance(draft, dict) else None
+    if not isinstance(value, str) or not value:
+        return False
+    try:
+        moment = datetime.fromisoformat(value.replace('Z', '+00:00'))
+    except ValueError:
+        return True
+    if moment.tzinfo is None:
+        moment = moment.replace(tzinfo=timezone.utc)
+    return moment <= now
+
+
+def job_status(state):
+    """Last-run health per job from `status.json`, bounded; reasons are already owner-facing."""
+    path = state/'status.json'
+    data = read(path, 256_000)
+    jobs = data.get('jobs') if isinstance(data, dict) and isinstance(data.get('jobs'), dict) else {}
+    out = []
+    for name, entry in sorted(jobs.items())[:40]:
+        if not isinstance(entry, dict) or entry.get('status') not in JOB_STATUSES:
+            continue
+        out.append({'job': text(name, 80), 'status': entry['status'], 'run_id': text(entry.get('run_id'), 120),
+                    'started': text(entry.get('started'), 40), 'finished': text(entry.get('finished'), 40),
+                    'reason': text(entry.get('reason'), 300)})
+    return out
 
 
 def strings(value, count, limit):
@@ -128,10 +172,15 @@ def optional_fields(draft, media, state, media_files):
     return record
 
 
-def snapshot(state=None, source_root=None, media_files=None):
+def snapshot(state=None, source_root=None, media_files=None, now=None):
     """Return the redacted snapshot. When media_files is a dict, it receives
-    sha256 -> Path for each prepared JPEG referenced by an exported draft."""
+    sha256 -> Path for each prepared JPEG referenced by an exported draft.
+
+    The newest RECENT_RUNS runs are always exported. Older runs stay only while they
+    hold an unexpired draft, and then only those drafts, so a seven-day Instagram
+    draft or a fourteen-day showcase does not fall out of review on a busy week."""
     source_root = source_root or ROOT
+    now = now or datetime.now(timezone.utc)
     cfg = json.loads((source_root/'automation/social-posting/config.json').read_text())
     schedules = []
     for mode in ('plan', 'radar', 'review'):
@@ -143,12 +192,13 @@ def snapshot(state=None, source_root=None, media_files=None):
             'connected': bool(state and state.is_dir()), 'publishing_enabled':False,
             'timezone':cfg['timezone'], 'first_week':cfg['first_week'], 'schedules':schedules,
             'accounts':[{'account':account,'times':lane['times'],'weekly_cap':lane['weekly_cap']} for account,lane in cfg['cadence'].items()],
-            'runs':[], 'drafts':[], 'checks':[]}
+            'runs':[], 'drafts':[], 'checks':[], 'job_status':[]}
     if not data['connected']:
         return data
     state = state.resolve()
+    data['job_status'] = job_status(state)
     # Only receipt-bearing completed runs qualify. Prompts, events and SQLite stay local.
-    candidates = sorted((state/'runs').glob('*/receipt.json'), reverse=True)[:60]
+    candidates = sorted((state/'runs').glob('*/receipt.json'), reverse=True)[:MAX_RECEIPT_FILES]
     candidates += [state/'latest.json', state/'radar-latest.json']
     receipts = {}
     for path in candidates:
@@ -160,9 +210,11 @@ def snapshot(state=None, source_root=None, media_files=None):
         observed = datetime.fromtimestamp(path.stat().st_mtime, timezone.utc).isoformat()
         key = receipt.get('run_id') or receipt['mode']+'-'+observed
         receipts[key] = {**{k:receipt.get(k) for k in ('mode','status','week','run_id','draft_count','checked_at')},'observed_at':observed}
-    data['runs'] = sorted(receipts.values(), key=lambda r:r['observed_at'], reverse=True)[:30]
+    ordered = sorted(receipts.values(), key=lambda r:r['observed_at'], reverse=True)
+    data['runs'] = ordered[:RECENT_RUNS]
     seen_plans = set()
-    for run in data['runs']:
+    for position, run in enumerate(ordered[:MAX_RUNS]):
+        recent = position < RECENT_RUNS
         run_id = run.get('run_id')
         if run['status'] != 'success' or not isinstance(run_id,str) or run_id in ('.','..') or '/' in run_id or '\\' in run_id:
             continue
@@ -173,13 +225,21 @@ def snapshot(state=None, source_root=None, media_files=None):
         if not result_path.resolve().is_relative_to(state):continue
         result = read(result_path)
         if not isinstance(result,dict):continue
+        drafts = [d for d in result.get('drafts',[])[:30] if isinstance(d,dict)]
+        if not recent:
+            # An older run earns its place only through drafts still open for review.
+            if not any(not expired(d, now) for d in drafts):
+                continue
+            data['runs'].append(run)
         for check in result.get('open_checks',[])[:30]:
             if isinstance(check,str):data['checks'].append({'run_id':run_id,'text':check[:4000]})
         variants = read(result_path.parent/'bluesky-drafts.json')
         variants = variants[:30] if isinstance(variants, list) else []
         for i,draft in enumerate(result.get('drafts',[])[:30]):
             if not isinstance(draft,dict) or draft.get('account') not in cfg['cadence']:continue
-            record = {key:draft.get(key,'') for key in ('account','text','due_at','expires_at','evidence','next_check')}
+            if not recent and expired(draft, now):continue
+            record = {key:draft.get(key,'') for key in ('account','text','due_at','expires_at','next_check')}
+            record['evidence'] = redacted_evidence(draft.get('evidence'))
             record.update(id=f'{run_id}:{i}',run_id=run_id,mode=run['mode'],week=run.get('week') or '',approval='unapproved')
             record['platform'] = draft.get('platform') if draft.get('platform') in PLATFORMS else derived_platform(run['mode'])
             media = draft.get('media') or {}

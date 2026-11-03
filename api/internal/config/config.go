@@ -9,10 +9,13 @@ import (
 
 // Config holds all application configuration.
 type Config struct {
-	Port              string
-	DatabaseURL       string
-	JWTSecret         string
-	CORSOrigins       []string
+	Port        string
+	DatabaseURL string
+	JWTSecret   string
+	CORSOrigins []string
+	// TrustedProxyCIDRs are the reverse-proxy networks whose X-Forwarded-For
+	// is honored when deriving the client IP. Empty means the built-in private defaults.
+	TrustedProxyCIDRs []string
 	UmamiURL          string
 	PatreonToken      string
 	PatreonCampaignID string
@@ -56,11 +59,21 @@ func Load() (*Config, error) {
 		origins = []string{"http://localhost:5175"}
 	}
 
+	var trustedProxies []string
+	if raw := strings.TrimSpace(os.Getenv("TRUSTED_PROXY_CIDRS")); raw != "" {
+		for _, cidr := range strings.Split(raw, ",") {
+			if cidr = strings.TrimSpace(cidr); cidr != "" {
+				trustedProxies = append(trustedProxies, cidr)
+			}
+		}
+	}
+
 	return &Config{
 		Port:              port,
 		DatabaseURL:       dbURL,
 		JWTSecret:         jwtSecret,
 		CORSOrigins:       origins,
+		TrustedProxyCIDRs: trustedProxies,
 		UmamiURL:          os.Getenv("UMAMI_URL"),
 		PatreonToken:      os.Getenv("PATREON_TOKEN"),
 		PatreonCampaignID: os.Getenv("PATREON_CAMPAIGN_ID"),

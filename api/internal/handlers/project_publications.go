@@ -112,8 +112,13 @@ func (h *Handler) UnpublishProject(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 403, "admin approval required")
 		return
 	}
-	if _, err := h.DB.Exec(r.Context(), `DELETE FROM project_publications WHERE project_id=$1`, chi.URLParam(r, "id")); err != nil {
+	tag, err := h.DB.Exec(r.Context(), `DELETE FROM project_publications WHERE project_id=$1`, chi.URLParam(r, "id"))
+	if err != nil {
 		writeError(w, 500, "could not remove published update")
+		return
+	}
+	if tag.RowsAffected() == 0 {
+		writeError(w, 404, "published project not found")
 		return
 	}
 	w.WriteHeader(http.StatusNoContent)

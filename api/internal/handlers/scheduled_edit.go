@@ -7,6 +7,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"io"
+	"log/slog"
 	"net/http"
 	"net/url"
 	"strconv"
@@ -180,7 +181,9 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 	ctx, cancel := context.WithTimeout(context.WithoutCancel(r.Context()), editTimeout)
 	defer cancel()
 	setStatus := func(value string) {
-		h.DB.Exec(ctx, `UPDATE social_schedules SET status=$2 WHERE request_id=$1`, requestID, value)
+		if _, execErr := h.DB.Exec(ctx, `UPDATE social_schedules SET status=$2 WHERE request_id=$1`, requestID, value); execErr != nil {
+			slog.Error("schedule status update failed", "request_id", requestID, "status", value, "error", execErr)
+		}
 	}
 	if recoverFailed {
 		err = h.recoverFailedInstagram(ctx, requestID, providerID, oldAccount, account, caption, media, due, retryNow, &providerID)
@@ -260,7 +263,9 @@ func (h *Handler) EditScheduledDraft(w http.ResponseWriter, r *http.Request) {
 // and replacement receipt prevent another request from dispatching it twice.
 func (h *Handler) recoverFailedInstagram(ctx context.Context, requestID, failedID, oldAccount, account, caption string, media []byte, due time.Time, immediate bool, providerID *string) error {
 	setStatus := func(value string) {
-		h.DB.Exec(ctx, `UPDATE social_schedules SET status=$2 WHERE request_id=$1`, requestID, value)
+		if _, execErr := h.DB.Exec(ctx, `UPDATE social_schedules SET status=$2 WHERE request_id=$1`, requestID, value); execErr != nil {
+			slog.Error("schedule status update failed", "request_id", requestID, "status", value, "error", execErr)
+		}
 	}
 	replacement, err := h.SocialPosting.CreateInstagram(ctx, account, caption, media)
 	if err == nil {

@@ -1,10 +1,15 @@
 import { inputClass } from '@/components/ui/TextInput';
 import { useState, useId, type FormEvent } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useLocation } from 'react-router-dom';
 import { useAuth } from '@/context/useAuth';
 
 export default function AdminLogin() {
   const { login, isAuthenticated, loading } = useAuth();
+  const location = useLocation();
+  // AdminLayout records the page an expired session left; return there.
+  const state = location.state as { from?: unknown } | null;
+  const from =
+    typeof state?.from === 'string' && state.from.startsWith('/admin') ? state.from : '/admin';
   const id = useId();
   const usernameInputId = `${id}-username`;
   const passwordInputId = `${id}-password`;
@@ -14,7 +19,7 @@ export default function AdminLogin() {
   const [submitting, setSubmitting] = useState(false);
 
   if (loading) return null;
-  if (isAuthenticated) return <Navigate to="/admin" replace />;
+  if (isAuthenticated) return <Navigate to={from} replace />;
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();

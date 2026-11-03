@@ -239,13 +239,18 @@ export default function InstagramReview({
   async function approve() {
     setBusy(draft.id);
     onError('');
+    let saved: { version: number } | null = null;
     try {
       // The same server validation applies to prepared images and uploads.
-      const saved = await saveReviewDraft(draft.id, reviewedForm());
+      saved = await saveReviewDraft(draft.id, reviewedForm());
       const result = await approveReviewDraft(draft.id, saved.version, checklistState);
       onApproved(result);
     } catch (e) {
-      onError(e instanceof Error ? e.message : 'Scheduling could not be confirmed');
+      const message = e instanceof Error ? e.message : 'Scheduling could not be confirmed';
+      // The save went through and bumped the version; refresh the saved edit so a
+      // retry sends the current version instead of a stale one (409).
+      if (saved) onSaved?.(`Saved, but not queued: ${message} Try approving again.`);
+      else onError(message);
     } finally {
       setBusy('');
     }
@@ -324,7 +329,7 @@ export default function InstagramReview({
         </label>
       </div>
       <div className="review-sheet-controls">
-      <CampaignContext draft={draft} />
+        <CampaignContext draft={draft} />
         {draft.craft?.angle && (
           <section aria-label="Why this post">
             <h3>Why this post</h3>

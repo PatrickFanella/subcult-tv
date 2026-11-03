@@ -19,7 +19,7 @@ func Logger(next http.Handler) http.Handler {
 			"path", r.URL.Path,
 			"status", rw.status,
 			"duration", time.Since(start).String(),
-			"ip", r.RemoteAddr,
+			"ip", ClientIPFrom(r),
 		)
 	})
 }

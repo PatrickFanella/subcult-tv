@@ -6,6 +6,7 @@ import (
 	"errors"
 	"image/jpeg"
 	"io"
+	"log/slog"
 	"net/http"
 	"net/url"
 	"strings"
@@ -262,7 +263,9 @@ func (h *Handler) ApproveBlueskyDraft(w http.ResponseWriter, r *http.Request) {
 		err = h.SocialPosting.QueueBluesky(ctx, providerID, account, caption, alt, len(media) > 0, due)
 	}
 	if err != nil {
-		h.DB.Exec(ctx, `UPDATE bluesky_schedules SET status='uncertain',updated_at=NOW() WHERE draft_id=$1`, id)
+		if _, execErr := h.DB.Exec(ctx, `UPDATE bluesky_schedules SET status='uncertain',updated_at=NOW() WHERE draft_id=$1`, id); execErr != nil {
+			slog.Error("bluesky uncertain status update failed", "draft_id", id, "error", execErr)
+		}
 		writeError(w, 502, "Bluesky scheduling could not be confirmed. Check PostyBirb before retrying")
 		return
 	}

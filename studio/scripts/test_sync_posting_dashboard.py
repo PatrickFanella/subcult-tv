@@ -118,7 +118,8 @@ class SyncTests(unittest.TestCase):
         outside = self.dir/'outside'
         outside.mkdir()
         (root/'posting-media').symlink_to(outside)
-        with self.assertRaises(AssertionError):
+        # Explicit checks raise ValueError (not assert, which python -O would drop).
+        with self.assertRaises(ValueError):
             remote()(root, io.BytesIO(body))
         self.assertEqual(list(outside.iterdir()), [])
 
