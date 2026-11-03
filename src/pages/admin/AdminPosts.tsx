@@ -74,6 +74,8 @@ export default function AdminPosts() {
   const [busy, setBusy] = useState('');
   const [notice, setNotice] = useState('');
   const [open, setOpen] = useState<string>('');
+  // The row opened by the queue itself after a decision, which also takes focus.
+  const [focusId, setFocusId] = useState('');
   const seen = useRef(new Map<number, string>());
   const noticeRef = useReveal<HTMLDivElement>(notice);
   const [now, setNow] = useState(() => Date.now());
@@ -176,7 +178,10 @@ export default function AdminPosts() {
   const latestReroll = (id: string) => rerolls.find((r) => r.draft_id === id);
   const rerolledFrom = (id: string) => rerolls.find((r) => r.result_draft_id === id);
   const current = open;
-  const toggle = (id: string) => setOpen(current === id ? '' : id);
+  const toggle = (id: string) => {
+    setFocusId('');
+    setOpen(current === id ? '' : id);
+  };
   useEffect(() => {
     if (tab !== 'x') return;
     let active = true;
@@ -265,9 +270,20 @@ export default function AdminPosts() {
     ...new Set(all.filter((d) => draftPlatform(d) === tab).map((d) => d.account)),
   ];
   const cadence = (name: string) => data?.accounts.find((a) => a.account === name)?.times ?? [];
+  /**
+   * After a decision or approval, close the finished row and open the next
+   * draft still waiting in the visible list, moving focus to its header so the
+   * reviewer can keep going without the mouse. Approval stays a click on it.
+   */
+  const advanceFrom = (id: string) => {
+    const index = drafts.findIndex((d) => d.id === id);
+    const next = drafts.slice(index + 1).find((d) => !hidden(d));
+    setOpen(next?.id ?? '');
+    setFocusId(next?.id ?? '');
+  };
   const recorded = (message: string, keepOpen = false) => {
     setNotice(message);
-    if (!keepOpen) setOpen('');
+    if (!keepOpen) advanceFrom(current);
     setRevision((v) => v + 1);
   };
   const hiddenLabel: Record<string, string> = {
@@ -407,6 +423,7 @@ export default function AdminPosts() {
                           : 'Needs approval'
                     }
                     expanded={current === d.id}
+                    focusHeader={focusId === d.id}
                     onToggle={() => toggle(d.id)}
                   >
                     {hidden(d) ? (
@@ -467,6 +484,7 @@ export default function AdminPosts() {
                   when={when}
                   state={instagramState(d)}
                   expanded={current === d.id}
+                  focusHeader={focusId === d.id}
                   onToggle={() => toggle(d.id)}
                 >
                   {hidden(d) ? (
@@ -524,7 +542,7 @@ export default function AdminPosts() {
                         setNotice(
                           `Scheduled in PostyBirb · ${result.post_id}. Publication is pending.`,
                         );
-                        setOpen('');
+                        advanceFrom(d.id);
                         setRevision((v) => v + 1);
                       }}
                     />

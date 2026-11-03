@@ -195,9 +195,7 @@ describe('navigation', () => {
     expect(toggle).toHaveFocus();
 
     await user.click(toggle);
-    await user.click(
-      within(document.getElementById(menuId)!).getByRole('link', { name: 'Studio' }),
-    );
+    await user.click(within(document.getElementById(menuId)!).getByRole('link', { name: 'About' }));
     expect(
       await screen.findByRole('heading', { name: /Software for independent culture/ }),
     ).toBeInTheDocument();

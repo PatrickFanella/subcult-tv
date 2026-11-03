@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { leadProblem } from '@/lib/review-queue';
+import { isProviderUnconfigured, leadProblem } from '@/lib/review-queue';
 import {
   approveSocialSchedule,
   getSocialDelivery,
@@ -19,6 +19,7 @@ export default function SocialDelivery({
 }) {
   const [data, setData] = useState<Delivery | null>(null);
   const [error, setError] = useState('');
+  const [unconfigured, setUnconfigured] = useState('');
   const [receipt, setReceipt] = useState('');
   const [account, setAccount] = useState('');
   const [caption, setCaption] = useState(draft?.text || '');
@@ -49,12 +50,19 @@ export default function SocialDelivery({
           if (active) {
             setData(result);
             setError('');
+            setUnconfigured('');
           }
         })
         .catch((err) => {
           if (active) {
             setData(null);
-            setError(err.message);
+            if (isProviderUnconfigured(err)) {
+              setUnconfigured(err.message);
+              setError('');
+            } else {
+              setError(err.message);
+              setUnconfigured('');
+            }
           }
         });
     void refresh();
@@ -111,6 +119,11 @@ export default function SocialDelivery({
           Every post requires your approval. Choose any future publish time within 90 days.
           Displayed times use your browser’s timezone:{' '}
           {Intl.DateTimeFormat().resolvedOptions().timeZone}.
+        </p>
+      )}
+      {unconfigured && !historyOnly && (
+        <p role="status" className="studio-note">
+          {unconfigured.replace(/\.?$/, '.')}
         </p>
       )}
       {error && (

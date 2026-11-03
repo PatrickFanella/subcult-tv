@@ -27,12 +27,12 @@ const AdminReferences = lazy(() => import('@/pages/admin/AdminReferences'));
 const AdminDashboard = lazy(() => import('@/pages/admin/AdminDashboard'));
 const AdminProjects = lazy(() => import('@/pages/admin/AdminProjects'));
 const AdminPosts = lazy(() => import('@/pages/admin/AdminPosts'));
-const PostEditor = lazy(() => import('@/pages/admin/PostEditor'));
 const PostingDelivery = lazy(() => import('@/pages/admin/PostingDelivery'));
 const PostingAutomation = lazy(() => import('@/pages/admin/PostingAutomation'));
 const AdminBlogPosts = lazy(() => import('@/pages/admin/AdminBlogPosts'));
 const AdminContacts = lazy(() => import('@/pages/admin/AdminContacts'));
 const AdminSubscribers = lazy(() => import('@/pages/admin/AdminSubscribers'));
+const AdminNotFound = lazy(() => import('@/pages/admin/AdminNotFound'));
 
 export default function App() {
   return (
@@ -66,7 +66,6 @@ export default function App() {
             <Route path="studio/references/:section" element={<AdminReferences />} />
             <Route path="projects" element={<AdminProjects />} />
             <Route path="posts" element={<AdminPosts />} />
-            <Route path="posts/edit" element={<PostEditor />} />
             <Route path="posts/delivery" element={<PostingDelivery />} />
             <Route path="posts/automation" element={<PostingAutomation />} />
             <Route path="posts/articles" element={<PublicationReview platform="website" />} />
@@ -74,6 +73,7 @@ export default function App() {
             <Route path="posts/articles/manage" element={<AdminBlogPosts />} />
             <Route path="contacts" element={<AdminContacts />} />
             <Route path="subscribers" element={<AdminSubscribers />} />
+            <Route path="*" element={<AdminNotFound />} />
           </Route>
         </Routes>
       </Suspense>

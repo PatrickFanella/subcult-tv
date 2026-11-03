@@ -119,6 +119,17 @@ func (d postingDraft) expired(now time.Time) bool {
 	return err != nil || !at.After(now)
 }
 
+// postingJobStatus is the last recorded outcome of one preparation job, as the
+// Studio export writes it from `state/status.json`. Reasons are owner-facing text.
+type postingJobStatus struct {
+	Job      string `json:"job"`
+	Status   string `json:"status"`
+	RunID    string `json:"run_id"`
+	Started  string `json:"started"`
+	Finished string `json:"finished"`
+	Reason   string `json:"reason"`
+}
+
 type postingDashboard struct {
 	Version           int    `json:"version"`
 	Connected         bool   `json:"connected"`
@@ -142,6 +153,8 @@ type postingDashboard struct {
 		RunID string `json:"run_id"`
 		Text  string `json:"text"`
 	} `json:"checks"`
+	// Optional: older snapshots have no job health and the dashboard keeps its wording.
+	JobStatus []postingJobStatus `json:"job_status,omitempty"`
 }
 
 // PostingDashboard serves the explicit private export, never raw runtime files.

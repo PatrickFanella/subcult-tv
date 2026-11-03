@@ -8,7 +8,7 @@ import { useEffects } from '@/context/useEffects';
 
 const NAV_LINKS = [
   { to: '/products', label: 'Products' },
-  { to: '/about', label: 'Studio' },
+  { to: '/about', label: 'About' },
   { to: '/support', label: 'Support' },
   { to: '/development', label: 'Development' },
   { to: '/contact', label: 'Contact' },

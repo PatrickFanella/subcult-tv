@@ -908,9 +908,27 @@
   padding-left: 0;
 }
 @media (max-width: 900px) {
-  /* The 23-product list took the first screen on phones; keep the directory link. */
+  /* The product list took the first screen on phones; show it as one scrolling line. */
+  .landing-product-nav {
+    flex-wrap: nowrap;
+  }
+  .landing-product-nav > a {
+    flex: none;
+  }
   .landing-product-nav > div {
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    min-width: 0;
+    overflow-x: auto;
+    scroll-padding-inline: 8px;
+    scrollbar-width: none;
+  }
+  .landing-product-nav > div::-webkit-scrollbar {
     display: none;
+  }
+  .landing-product-nav > div a {
+    flex: none;
+    white-space: nowrap;
   }
   .landing-hero {
     grid-template-columns: 1fr;

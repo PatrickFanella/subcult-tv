@@ -112,14 +112,24 @@
   outline: 3px solid #100b19;
   outline-offset: 5px;
 }
-.showcase-hero a[href='#products'] {
+/* Hero actions: the directory link is the green primary, the in-page anchor the ink outline. */
+.showcase-hero .support-primary {
   color: #100b19;
   border-color: #100b19;
   background: #00ff88;
   box-shadow: 4px 4px 0 #100b19;
 }
-.showcase-hero a[href='#products']:hover {
+.showcase-hero .support-primary:hover {
   background: #f0ece4;
+}
+.showcase-hero a[href='#products'] {
+  color: #100b19;
+  border-color: #100b19;
+  background: transparent;
+}
+.showcase-hero a[href='#products']:hover {
+  background: #100b19;
+  color: #f0ece4;
 }
 .showcase-section-heading {
   border-bottom: 3px solid #8b5cf6;

@@ -9,6 +9,9 @@ import { developmentPostMeta } from '@/lib/seo';
 
 type LoadError = 'missing' | 'unavailable';
 
+const PAGER_BUTTON =
+  'text-signal hover:text-glow cursor-pointer disabled:text-dust disabled:cursor-default disabled:opacity-50';
+
 export default function DevelopmentLog() {
   const { slug } = useParams();
   return <DevelopmentLogContent key={slug || 'index'} slug={slug} />;
@@ -141,32 +144,39 @@ function DevelopmentLogContent({ slug }: { slug?: string }) {
           </p>
         </div>
       )}
-      {!slug && pages > 1 && (
-        <div className="flex gap-6 mt-8">
+      {!slug && !loading && pages > 1 && (
+        <nav
+          aria-label="Development log pages"
+          className="flex items-center justify-between gap-6 border-t border-fog mt-8 pt-6 font-mono text-sm"
+        >
           <button
+            type="button"
             disabled={page === 1}
             onClick={() => {
               setError(null);
               setLoading(true);
               setPage((p) => p - 1);
             }}
+            className={PAGER_BUTTON}
           >
-            Previous
+            ← Previous
           </button>
-          <span>
+          <span className="text-dust">
             Page {page} of {pages}
           </span>
           <button
+            type="button"
             disabled={page >= pages}
             onClick={() => {
               setError(null);
               setLoading(true);
               setPage((p) => p + 1);
             }}
+            className={PAGER_BUTTON}
           >
-            Next
+            Next →
           </button>
-        </div>
+        </nav>
       )}
     </div>
   );

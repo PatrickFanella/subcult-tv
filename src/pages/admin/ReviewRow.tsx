@@ -1,9 +1,10 @@
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import type { PostingDraft, ReviewDraft } from '@/lib/api';
 import { draftPlatform, firstLine, platformLabel } from '@/lib/review-queue';
 import { usePreparedImage } from './usePreparedImage';
 import { useSavedImage } from './useSavedImage';
 import { useReveal } from './useReveal';
+import { moveBetweenRows } from './reviewListKeys';
 
 function RowThumbnail({ draft, edit }: { draft: PostingDraft; edit?: ReviewDraft }) {
   const saved = useSavedImage(edit?.has_media ? edit.draft_id : undefined, edit?.version);
@@ -26,6 +27,7 @@ export default function ReviewRow({
   state,
   attention = false,
   expanded,
+  focusHeader = false,
   onToggle,
   children,
 }: {
@@ -37,18 +39,27 @@ export default function ReviewRow({
   /** Marks a missed or failed post. */
   attention?: boolean;
   expanded: boolean;
+  /** Move keyboard focus to the header when this row is opened for the reviewer. */
+  focusHeader?: boolean;
   onToggle: () => void;
   children: ReactNode;
 }) {
   const sheet = `review-sheet-${draft.id.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
   // Opening a row scrolls it to the top so the sheet is in view.
   const ref = useReveal<HTMLLIElement>(expanded, 'start');
+  useEffect(() => {
+    if (!expanded || !focusHeader) return;
+    ref.current
+      ?.querySelector<HTMLButtonElement>('.review-row-summary')
+      ?.focus({ preventScroll: true });
+  }, [expanded, focusHeader, ref]);
   return (
     <li
       ref={ref}
       className="review-row"
       data-expanded={expanded || undefined}
       data-attention={attention || undefined}
+      onKeyDown={moveBetweenRows}
     >
       <button
         type="button"

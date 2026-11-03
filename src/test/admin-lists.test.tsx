@@ -99,6 +99,19 @@ afterEach(cleanup);
 beforeEach(() => {
   vi.resetAllMocks();
   vi.stubGlobal('confirm', () => true);
+  // Contacts and articles read these for totals and managed-article badges.
+  vi.mocked(getDashboardStats).mockResolvedValue({
+    total_projects: 0,
+    total_posts: 0,
+    total_contacts: 2,
+    unread_contacts: 1,
+    total_subscribers: 0,
+  });
+  vi.mocked(getPublications).mockResolvedValue({
+    drafts: [],
+    patreon_connected: false,
+    minimum_lead_hours: 24,
+  });
 });
 
 describe('contact list', () => {
@@ -118,7 +131,7 @@ describe('contact list', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Delete' }));
     await waitFor(() => expect(listContacts).toHaveBeenLastCalledWith({ page: 1, perPage: 20 }));
     await screen.findByText('Person a');
-    expect(screen.getByText(/^2 messages/)).toBeInTheDocument();
+    expect(screen.getByText(/^1 unread of 2 total/)).toBeInTheDocument();
   });
 });
 

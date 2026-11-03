@@ -1,5 +1,14 @@
 import { useState, useEffect, useId, type FormEvent } from 'react';
-import { listPosts, createPost, updatePost, deletePost, type APIPost } from '@/lib/api';
+import { Link } from 'react-router-dom';
+import {
+  listPosts,
+  createPost,
+  updatePost,
+  deletePost,
+  getPublications,
+  type APIPost,
+} from '@/lib/api';
+import { managedSlugs } from '@/lib/review-queue';
 import { Field } from '@/components/admin/FormFields';
 import LibraryMarkdown from '@/components/admin/LibraryMarkdown';
 import { AdminCount, AdminHeader, AdminError, AdminPagination } from '@/components/admin/crud';
@@ -36,6 +45,7 @@ export default function AdminPosts() {
   const [form, setForm] = useState<PostForm>(emptyForm);
   const [error, setError] = useState('');
   const [saving, setSaving] = useState(false);
+  const [managed, setManaged] = useState<Set<string>>(() => new Set());
 
   const load = (p: number) => {
     listPosts({ all: true, page: p, perPage: PER_PAGE })
@@ -56,6 +66,20 @@ export default function AdminPosts() {
   useEffect(() => {
     load(page);
   }, [page]);
+  useEffect(() => {
+    let active = true;
+    // The review list is advisory here; the article table works without it.
+    getPublications()
+      .then((value) => {
+        if (active) setManaged(managedSlugs(value.drafts));
+      })
+      .catch(() => {
+        if (active) setManaged(new Set());
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const openNew = () => {
     setEditing(null);
@@ -243,6 +267,13 @@ export default function AdminPosts() {
                   <span className={`admin-status ${p.published ? 'is-live' : 'is-muted'}`}>
                     {p.published ? 'Live' : 'Draft'}
                   </span>
+                  {managed.has(p.slug) && (
+                    <div className="admin-cell-sub">
+                      <span className="admin-status is-warn">
+                        Managed by the Development log review
+                      </span>
+                    </div>
+                  )}
                 </td>
                 <td data-label="Tags">
                   <div className="admin-tags">
@@ -253,10 +284,21 @@ export default function AdminPosts() {
                 </td>
                 <td data-label="Actions">
                   <div className="admin-row-actions">
+                    {managed.has(p.slug) ? (
+                      <Link
+                        to="/admin/posts/articles"
+                        className="admin-button admin-button-small"
+                        aria-label={`Review ${p.title} in the Development log`}
+                      >
+                        Review in Development log
+                      </Link>
+                    ) : null}
                     <button
                       type="button"
                       className="admin-button admin-button-small"
                       onClick={() => openEdit(p)}
+                      disabled={managed.has(p.slug)}
+                      aria-label={`Edit ${p.title}`}
                     >
                       Edit
                     </button>
@@ -264,6 +306,8 @@ export default function AdminPosts() {
                       type="button"
                       className="admin-button admin-button-small admin-button-danger"
                       onClick={() => handleDelete(p.id)}
+                      disabled={managed.has(p.slug)}
+                      aria-label={`Delete ${p.title}`}
                     >
                       Delete
                     </button>

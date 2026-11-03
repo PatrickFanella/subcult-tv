@@ -3,6 +3,7 @@ import type {
   BufferHistoryPost,
   DraftDecision,
   PostingDraft,
+  PostingJobStatus,
   PostingPlatform,
   PostingRun,
 } from './api';
@@ -340,6 +341,81 @@ export function runStatusLabel(status: string) {
   return RUN_STATUS[status] || status.replaceAll('_', ' ');
 }
 
+const JOB_NAMES: Record<string, string> = {
+  'changemaker-instagram': 'Daily Instagram draft',
+  'changemaker-weekly': 'Weekly Instagram post',
+  'changemaker-showcase': 'Instagram product showcase',
+  'changemaker-reroll': 'Instagram re-roll',
+  'changemaker-publications': 'Website/Patreon preparation',
+  'social-posting-plan': 'Weekly X plan',
+  'social-posting-radar': 'Timely X check',
+  'social-posting-review': 'Weekly delivery review',
+  'tweet-preparation': 'Requested tweets',
+};
+
+/** The installed job's name in words; unknown jobs keep their unit name. */
+export function jobName(job: string) {
+  return JOB_NAMES[job] || job;
+}
+
+const JOB_STATUS: Record<string, string> = {
+  success: 'succeeded',
+  failed: 'failed',
+  busy: 'waited: another job held the lock',
+  skipped: 'skipped',
+};
+
+export function jobStatusLabel(status: string) {
+  return JOB_STATUS[status] || status.replaceAll('_', ' ');
+}
+
+/** Most recently finished job entry, or undefined when none has a readable time. */
+export function latestJobStatus(jobs: PostingJobStatus[] | undefined) {
+  return [...(jobs ?? [])]
+    .filter((j) => Number.isFinite(new Date(j.finished || j.started).valueOf()))
+    .sort(
+      (a, b) =>
+        new Date(b.finished || b.started).valueOf() - new Date(a.finished || a.started).valueOf(),
+    )[0];
+}
+
+/**
+ * One line of job health for the dashboard: the latest finished job and, when
+ * any job's last run failed, which ones and why. Empty when nothing is recorded.
+ */
+export function jobStatusSummary(jobs: PostingJobStatus[] | undefined, now: number) {
+  const latest = latestJobStatus(jobs);
+  if (!latest) return '';
+  const when = relativeTime(new Date(latest.finished || latest.started).valueOf(), now);
+  const parts = [
+    `Last ${jobName(latest.job).replace(/^./, (c) => c.toLowerCase())} run: ${jobStatusLabel(latest.status)} ${when}` +
+      (latest.status === 'failed' && latest.reason ? ` (${latest.reason})` : '') +
+      '.',
+  ];
+  const failed = (jobs ?? []).filter((j) => j.status === 'failed' && j.job !== latest.job);
+  if (failed.length)
+    parts.push(
+      `Also failed: ${failed
+        .map((j) => `${jobName(j.job)}${j.reason ? ` (${j.reason})` : ''}`)
+        .join(', ')}.`,
+    );
+  return parts.join(' ');
+}
+
+/** A job time as the Kvant jobs see it, in America/Chicago. */
+export function chicagoTime(value: string) {
+  const date = new Date(value);
+  if (!value || Number.isNaN(date.valueOf())) return '—';
+  return date.toLocaleString('en-US', {
+    timeZone: 'America/Chicago',
+    month: 'short',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+    timeZoneName: 'short',
+  });
+}
+
 const WEEKDAYS: Record<string, string> = {
   Mon: 'Mondays',
   Tue: 'Tuesdays',
@@ -414,4 +490,16 @@ export function splitLoadFailures(
     else errors.push(`${name}: ${reason instanceof Error ? reason.message : 'Unavailable'}`);
   }
   return { errors, unconfigured };
+}
+
+/**
+ * Website editions imported by the daily preparation job create their article
+ * with the edition id minus `-website` as the slug (publications.go). The admin
+ * list has no flag, so this is how the page tells those articles apart; the
+ * API refuses direct edits to them with a 409.
+ */
+export function managedSlugs(drafts: { id: string; platform: string }[]) {
+  return new Set(
+    drafts.filter((d) => d.platform === 'website').map((d) => d.id.replace(/-website$/, '')),
+  );
 }

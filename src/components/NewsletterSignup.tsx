@@ -16,6 +16,7 @@ export default function NewsletterSignup({ headingLevel: Heading = 'h3' }: Newsl
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (status === 'loading') return;
     setStatus('loading');
     try {
       const res = await subscribe(email);
@@ -35,7 +36,7 @@ export default function NewsletterSignup({ headingLevel: Heading = 'h3' }: Newsl
 
   if (status === 'success') {
     return (
-      <div className="bg-ash border border-static p-6 text-center">
+      <div role="status" className="bg-ash border border-static p-6 text-center">
         <div className="font-mono text-sm text-static mb-1">✓ REQUEST RECEIVED</div>
         <p className="font-mono text-xs text-dust">{message}</p>
       </div>
@@ -60,6 +61,7 @@ export default function NewsletterSignup({ headingLevel: Heading = 'h3' }: Newsl
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          disabled={status === 'loading'}
           placeholder="you@example.com"
           className={`min-w-0 flex-1 ${inputClass}`}
         />
@@ -74,7 +76,9 @@ export default function NewsletterSignup({ headingLevel: Heading = 'h3' }: Newsl
       </form>
 
       {status === 'error' && (
-        <p className="font-mono text-xs text-signal text-center mt-2">Not subscribed. {message}</p>
+        <p role="alert" className="font-mono text-xs text-signal text-center mt-2">
+          Not subscribed. {message}
+        </p>
       )}
 
       <p className="font-mono text-xs text-dust text-center mt-3">

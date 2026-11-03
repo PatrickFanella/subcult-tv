@@ -1,7 +1,6 @@
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import PostEditor from '@/pages/admin/PostEditor';
 import PublicationReview from '@/pages/admin/PublicationReview';
 import AdminDashboard from '@/pages/admin/AdminDashboard';
 import {
@@ -9,7 +8,6 @@ import {
   getPostingDashboard,
   getPublications,
   getReviewDrafts,
-  getSocialDelivery,
   getBufferDelivery,
   getBufferHistory,
   savePublication,
@@ -130,24 +128,6 @@ describe('review queue helpers', () => {
 });
 
 describe('platform boundaries', () => {
-  it('refuses to open an X draft in the Instagram editor', async () => {
-    vi.mocked(getPostingDashboard).mockResolvedValue(snapshot([draft({ id: 'x1', mode: 'plan' })]));
-    vi.mocked(getReviewDrafts).mockResolvedValue([]);
-    vi.mocked(getSocialDelivery).mockResolvedValue({
-      accounts: [],
-      posts: [],
-      checked_at: '',
-      approval_mode: 'manual',
-      minimum_lead_hours: 24,
-    });
-    render(
-      <MemoryRouter initialEntries={['/admin/posts/edit?draft=x1']}>
-        <PostEditor />
-      </MemoryRouter>,
-    );
-    await screen.findByText(/This draft is for X. Copy it into Buffer/);
-    expect(screen.queryByLabelText('Instagram caption')).not.toBeInTheDocument();
-  });
   it('never shows the reviewer note in website or Patreon editions', async () => {
     vi.mocked(getPublications).mockResolvedValue({
       drafts: [

@@ -598,6 +598,16 @@ export interface PostingDraft {
   sources?: string[];
   supersedes?: string;
 }
+/** Last recorded outcome of one preparation job, from the Studio export. */
+export interface PostingJobStatus {
+  job: string;
+  status: 'success' | 'failed' | 'busy' | 'skipped' | string;
+  run_id: string;
+  started: string;
+  finished: string;
+  /** Owner-facing text or an exception type name; never raw error output. */
+  reason: string;
+}
 export interface PostingDashboard {
   connected: boolean;
   generated_at: string;
@@ -610,6 +620,8 @@ export interface PostingDashboard {
   runs: PostingRun[];
   drafts: PostingDraft[];
   checks: { run_id: string; text: string }[];
+  /** Absent in snapshots exported before job health was recorded. */
+  job_status?: PostingJobStatus[];
 }
 export const getPostingDashboard = () => apiFetch<PostingDashboard>('/api/v1/admin/studio/posting');
 

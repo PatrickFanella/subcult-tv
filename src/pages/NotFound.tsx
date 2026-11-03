@@ -1,6 +1,6 @@
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useHydrated } from '@/lib/use-hydrated';
 
 export default function NotFound() {
@@ -27,6 +27,20 @@ export default function NotFound() {
         <Button as="link" to="/" size="lg">
           ← Back to the homepage
         </Button>
+        <nav
+          aria-label="Useful pages"
+          className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 font-mono text-xs uppercase tracking-wider"
+        >
+          <Link to="/products" className="text-bone hover:text-glow no-underline">
+            All products →
+          </Link>
+          <Link to="/development" className="text-bone hover:text-glow no-underline">
+            Development log →
+          </Link>
+          <Link to="/contact" className="text-bone hover:text-glow no-underline">
+            Contact →
+          </Link>
+        </nav>
       </div>
     </>
   );

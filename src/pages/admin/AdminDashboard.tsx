@@ -23,6 +23,7 @@ import {
   draftPlatform,
   hiddenReason,
   isExpired,
+  jobStatusSummary,
   laneName,
   latestDecisions,
   runStatusLabel,
@@ -243,11 +244,12 @@ export default function AdminDashboard() {
           </p>
           <p>
             {posting
-              ? !posting.connected
-                ? 'Preparation receipts are not connected.'
-                : posting.stale
-                  ? 'Preparation receipts are stale.'
-                  : 'Preparation receipts are connected.'
+              ? jobStatusSummary(posting.job_status, now) ||
+                (!posting.connected
+                  ? 'Preparation receipts are not connected.'
+                  : posting.stale
+                    ? 'Preparation receipts are stale.'
+                    : 'Preparation receipts are connected.')
               : 'Preparation status is unavailable.'}
           </p>
           {posting?.connected && (

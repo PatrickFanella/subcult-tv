@@ -43,6 +43,7 @@ function Probe() {
   return (
     <div>
       <p data-testid="where">{location.pathname}</p>
+      <p data-testid="full">{`${location.pathname}${location.search}${location.hash}`}</p>
       <button
         type="button"
         onClick={() => api.getDashboardStats().catch((e) => setError(e.message))}
@@ -64,6 +65,7 @@ function renderAdmin(entry: string) {
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<Probe />} />
             <Route path="contacts" element={<Probe />} />
+            <Route path="posts" element={<Probe />} />
           </Route>
         </Routes>
         <Outlet />
@@ -109,6 +111,24 @@ describe('expired admin sessions', () => {
     fireEvent.click(screen.getByRole('button', { name: 'SIGN IN' }));
     expect(await screen.findByTestId('where')).toHaveTextContent('/admin/contacts');
     expect(store.get('subcult-token')).toBe('fresh');
+  });
+
+  it('returns to the same tab and anchor after signing in again', async () => {
+    store.set('subcult-token', 'stale');
+    replies.set('GET /api/v1/auth/me', { status: 200, body: admin });
+    replies.set('GET /api/v1/admin/stats', { status: 401, body: { error: 'Token expired' } });
+    replies.set('POST /api/v1/auth/login', {
+      status: 200,
+      body: { token: 'fresh', user: admin },
+    });
+    renderAdmin('/admin/posts?tab=x#run-notes');
+    expect(await screen.findByTestId('full')).toHaveTextContent('/admin/posts?tab=x#run-notes');
+    fireEvent.click(screen.getByRole('button', { name: 'Load stats' }));
+    await screen.findByText('Admin sign-in');
+    fireEvent.change(screen.getByLabelText('Username'), { target: { value: 'owner' } });
+    fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'pw' } });
+    fireEvent.click(screen.getByRole('button', { name: 'SIGN IN' }));
+    expect(await screen.findByTestId('full')).toHaveTextContent('/admin/posts?tab=x#run-notes');
   });
 
   it('does not treat a failed sign-in as an expired session', async () => {

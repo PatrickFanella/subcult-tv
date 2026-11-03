@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import {
   getBlueskyDelivery,
@@ -84,7 +84,9 @@ export default function PostingDelivery() {
   const [unconfigured, setUnconfigured] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [revision, setRevision] = useState(0);
-  const [refreshBuffer, setRefreshBuffer] = useState(false);
+  // Set by the Refresh button for the next load only; a forced Buffer history
+  // fetch must not repeat on every later refresh.
+  const forceBuffer = useRef(false);
   const [busy, setBusy] = useState('');
   const [notice, setNotice] = useState('');
   const [open, setOpen] = useState('');
@@ -101,7 +103,7 @@ export default function PostingDelivery() {
       getPostingDashboard(),
       getReviewDrafts(),
       getBufferDelivery(),
-      getBufferHistory(refreshBuffer),
+      getBufferHistory(forceBuffer.current),
       getSocialDelivery(),
       getBlueskyDelivery(),
       getDraftDecisions(new Date(Date.now() - 60 * 86400000).toISOString()),
@@ -130,10 +132,12 @@ export default function PostingDelivery() {
       setNow(Date.now());
       setLoading(false);
     });
+    // The forced read has been requested; later loads use Buffer's cached history.
+    forceBuffer.current = false;
     return () => {
       active = false;
     };
-  }, [revision, refreshBuffer]);
+  }, [revision]);
 
   const timeZone = posting?.timezone || 'America/Chicago';
   const favorites = favoritedDrafts(decisions);
@@ -387,7 +391,7 @@ export default function PostingDelivery() {
           disabled={loading}
           onClick={() => {
             setLoading(true);
-            setRefreshBuffer(true);
+            forceBuffer.current = true;
             setRevision((v) => v + 1);
           }}
         >
