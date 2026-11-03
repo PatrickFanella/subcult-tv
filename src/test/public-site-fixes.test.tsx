@@ -161,7 +161,7 @@ describe('navigation', () => {
     renderApp('/');
     const nav = await screen.findByRole('navigation', { name: 'Main navigation' });
     const mark = nav.querySelector('img.subcult-nav-mark')!;
-    expect(mark.getAttribute('src')).toMatch(/^\/brand\/subcult\/fisheye-circle\.png/);
+    expect(mark.getAttribute('src')).toMatch(/^\/brand\/subcult\/fisheye-circle-132\.png/);
     expect(mark).toHaveAttribute('width', '44');
     expect(mark).toHaveAttribute('height', '44');
   });

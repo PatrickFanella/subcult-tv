@@ -24,7 +24,7 @@ White artwork outlines or removes the green block. Use dark ink marks on purple 
 
 ### Circle logo
 
-The user approved `logos/mark-fisheye-circle.png` in place of the purple-circle logo treatments: solid SC lettering and a green underscore on a purple circle, with a fisheye distortion on the SC_. It uses the approved fisheye geometry with the purple fill corrected to flat `#8b5cf6` on October 4, 2026. Preserve the selected raster bytes; do not redraw it. The public site uses the same file as `public/brand/subcult/fisheye-circle.png`. The source study and its generation prompt are in [the fisheye review](../../studies/reviews/subcult-logo-fisheye/README.md).
+The user approved `logos/mark-fisheye-circle.png` in place of the purple-circle logo treatments: solid SC lettering and a green underscore on a purple circle, with a fisheye distortion on the SC_. It uses the approved fisheye geometry with the purple fill corrected to flat `#8b5cf6` on October 4, 2026. Preserve the selected raster bytes; do not redraw it. The public site uses the same file as `public/brand/subcult/fisheye-circle.png`. Marks drawn at 44 CSS pixels or smaller (the public and admin navigation) use `logos/mark-fisheye-circle-132.png`, published as `public/brand/subcult/fisheye-circle-132.png`: a 132 px Lanczos downscale of the approved raster that `brand-tools/subcult_assets.py` regenerates, recorded under `circle.derived` in `logo-selection.json`. It is not a redraw; larger placements keep the full raster. The source study and its generation prompt are in [the fisheye review](../../studies/reviews/subcult-logo-fisheye/README.md).
 
 ### Color
 

@@ -93,6 +93,26 @@ def selected_svg(style='c-solid', ink='#100b19', accent='#00ff88', mono=False):
     return ET.tostring(root, encoding='unicode')
 
 
+NAV_MARK_PIXELS = 132  # three times the 44 px navigation slot
+
+
+def build_fisheye_nav(fisheye, destination):
+    """Write the navigation rendition of the approved fisheye raster.
+
+    The approved file stays byte-for-byte; this is a Lanczos downscale of it for
+    marks drawn at 44 CSS pixels or smaller, where the 1254 px master is wasted weight.
+    """
+    from PIL import Image  # Pillow is only needed when regenerating brand files.
+
+    path = Path(destination) / f'mark-fisheye-circle-{NAV_MARK_PIXELS}.png'
+    with Image.open(fisheye) as master:
+        master.convert('RGBA').resize((NAV_MARK_PIXELS, NAV_MARK_PIXELS), Image.Resampling.LANCZOS).save(path, optimize=True)
+    return {'path': path.name, 'width': NAV_MARK_PIXELS, 'height': NAV_MARK_PIXELS,
+            'method': 'Pillow Lanczos downscale of the approved raster; no redraw or recolor.',
+            'use': 'Navigation marks displayed at 44 CSS pixels or smaller.',
+            'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
+
+
 def build_selected(destination):
     destination = Path(destination)
     destination.mkdir(parents=True, exist_ok=True)
@@ -119,5 +139,6 @@ def build_selected(destination):
     selection['circle'] = {'approved_by': 'user', 'path': 'mark-fisheye-circle.png',
                            'source': str(fisheye.relative_to(ROOT.parent)),
                            'sha256': hashlib.sha256(fisheye.read_bytes()).hexdigest(),
-                           'scope': 'User-approved flat purple fill correction on 2026-10-04; preserve fisheye geometry, ink, green underscore and transparency.'}
+                           'scope': 'User-approved flat purple fill correction on 2026-10-04; preserve fisheye geometry, ink, green underscore and transparency.',
+                           'derived': [build_fisheye_nav(fisheye, destination)]}
     (destination.parent / 'logo-selection.json').write_text(json.dumps(selection, indent=2)+'\n')
