@@ -2,7 +2,9 @@
 Description=Check for owner re-roll requests every two minutes
 
 [Timer]
-OnCalendar=*:0/2
+# Odd minutes: tweet-preparation runs on even minutes and both take runner.lock,
+# which a busy re-roll skips. Starting together, re-roll lost the lock every time.
+OnCalendar=*:1/2
 Persistent=false
 Unit=changemaker-reroll.service
 
