@@ -9,13 +9,30 @@ describe('Campaign context', () => {
     expect(screen.getByText(/Prepared before packet tracking/)).toBeInTheDocument();
   });
   it('shows the selected revision, reader action and readiness flags', () => {
-    render(<CampaignContext draft={{ craft: { campaign: {
-      project: 'undertow', project_name: 'Undertow', status: 'needs_review',
-      packet_revision: 'abc123', packet_sha256: 'def456', theme: 'Timed lyrics',
-      pillar_id: 'undertow-2', reader_action: 'Open the editor', destination: 'https://undertow.subcult.tv/',
-      measurement: 'Successful exports / attempts', asset_task: 'Inspect a local export',
-      flags: ['No inspected demonstration recorded'],
-    } } } as PostingDraft} />);
+    render(
+      <CampaignContext
+        draft={
+          {
+            craft: {
+              campaign: {
+                project: 'undertow',
+                project_name: 'Undertow',
+                status: 'needs_review',
+                packet_revision: 'abc123',
+                packet_sha256: 'def456',
+                theme: 'Timed lyrics',
+                pillar_id: 'undertow-2',
+                reader_action: 'Open the editor',
+                destination: 'https://undertow.subcult.tv/',
+                measurement: 'Successful exports / attempts',
+                asset_task: 'Inspect a local export',
+                flags: ['No inspected demonstration recorded'],
+              },
+            },
+          } as PostingDraft
+        }
+      />,
+    );
     expect(screen.getByText(/Campaign: Undertow/)).toBeInTheDocument();
     expect(screen.getByText(/abc123/)).toBeInTheDocument();
     expect(screen.getByText(/No inspected demonstration recorded/)).toBeInTheDocument();
