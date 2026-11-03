@@ -10,10 +10,14 @@ import re
 
 import craft
 import feedback
+import job_status
 from runner import atomic_write, source_context
 from reroll import call, read_json, sync_dashboard
 from changemaker_publications import preparation_settings
 from sources import public_url
+
+
+JOB = 'tweet-preparation'
 
 
 class TweetPreparationError(ValueError):
@@ -110,36 +114,48 @@ def execute(source_root, state, ingest_env, sync=sync_dashboard):
     cfg['content_root'] = str(source_root.resolve())
     cfg['state'] = str(state.resolve())
     settings = preparation_settings(ingest_env)
+    started = datetime.now(timezone.utc)
     # Serialize source collection and generation with the weekly and radar jobs.
     with (state/'runner.lock').open('a') as lock:
         try:
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
+            job_status.write(state, JOB, 'busy', started=started, reason='Another preparation job holds runner.lock')
             return {'status': 'busy', 'publishing_enabled': False}
-        done = failed = 0
-        for _ in range(3):
-            jobs = call(settings, '/tweets/claim')
-            if not jobs:
-                break
-            job = jobs[0]
-            try:
-                draft_id = generate(cfg, source_root, state, job, datetime.now(timezone.utc))
-            except Exception as error:
-                with (state/'tweet-errors.log').open('a') as log:
-                    log.write(f"{datetime.now(timezone.utc).isoformat()} {job.get('id')} {type(error).__name__}: {str(error)[:1000]}\n")
-                # Raw provider errors and local paths belong only in the private log.
-                message = str(error) if isinstance(error, TweetPreparationError) else 'Tweet preparation failed. Try again or check the preparation job.'
-                result = {'status': 'failed', 'error': message}
-                failed += 1
-            else:
-                if not sync():
-                    # Keep the claim: after lease expiry, reuse the completed run and
-                    # retry its sync. Never report a draft as ready before it arrives.
-                    raise RuntimeError('Tweet generated; review snapshot sync must be retried')
-                result = {'status': 'done', 'result_draft_id': draft_id}
-                done += 1
-            call(settings, f"/tweets/{int(job['id'])}", {**result, 'attempts': job['attempts']})
-        return {'status': 'success', 'done': done, 'failed': failed, 'publishing_enabled': False}
+        try:
+            receipt = _claim_and_prepare(cfg, source_root, state, settings, sync)
+        except Exception as error:
+            job_status.write(state, JOB, 'failed', started=started, reason=type(error).__name__)
+            raise
+    job_status.write(state, JOB, 'success', started=started, reason=f"{receipt['done']} prepared, {receipt['failed']} failed")
+    return receipt
+
+
+def _claim_and_prepare(cfg, source_root, state, settings, sync):
+    done = failed = 0
+    for _ in range(3):
+        jobs = call(settings, '/tweets/claim')
+        if not jobs:
+            break
+        job = jobs[0]
+        try:
+            draft_id = generate(cfg, source_root, state, job, datetime.now(timezone.utc))
+        except Exception as error:
+            with (state/'tweet-errors.log').open('a') as log:
+                log.write(f"{datetime.now(timezone.utc).isoformat()} {job.get('id')} {type(error).__name__}: {str(error)[:1000]}\n")
+            # Raw provider errors and local paths belong only in the private log.
+            message = str(error) if isinstance(error, TweetPreparationError) else 'Tweet preparation failed. Try again or check the preparation job.'
+            result = {'status': 'failed', 'error': message}
+            failed += 1
+        else:
+            if not sync():
+                # Keep the claim: after lease expiry, reuse the completed run and
+                # retry its sync. Never report a draft as ready before it arrives.
+                raise RuntimeError('Tweet generated; review snapshot sync must be retried')
+            result = {'status': 'done', 'result_draft_id': draft_id}
+            done += 1
+        call(settings, f"/tweets/{int(job['id'])}", {**result, 'attempts': job['attempts']})
+    return {'status': 'success', 'done': done, 'failed': failed, 'publishing_enabled': False}
 
 
 if __name__ == '__main__':

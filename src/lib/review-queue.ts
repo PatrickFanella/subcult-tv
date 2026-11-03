@@ -390,3 +390,28 @@ export function runLabel(runId: string) {
   }).format(at);
   return `${when} · ${laneName(mode)}`;
 }
+
+/**
+ * The API answers 503 with "<provider> is not configured" when an optional
+ * provider (PostyBirb, Buffer, Brevo) has no server connection. That is a
+ * status, not a failure; genuine errors keep their own status codes.
+ */
+export function isProviderUnconfigured(error: unknown): boolean {
+  if (!(error instanceof Error) || !/not configured/i.test(error.message)) return false;
+  return !('status' in error) || Number(error.status) === 503;
+}
+
+/** Split load failures into neutral "not configured" notes and real errors. */
+export function splitLoadFailures(
+  results: { name: string; result: PromiseSettledResult<unknown> }[],
+): { errors: string[]; unconfigured: string[] } {
+  const errors: string[] = [];
+  const unconfigured: string[] = [];
+  for (const { name, result } of results) {
+    if (result.status !== 'rejected') continue;
+    const reason = result.reason;
+    if (isProviderUnconfigured(reason)) unconfigured.push((reason as Error).message);
+    else errors.push(`${name}: ${reason instanceof Error ? reason.message : 'Unavailable'}`);
+  }
+  return { errors, unconfigured };
+}

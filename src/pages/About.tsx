@@ -25,7 +25,12 @@ export default function About() {
           </div>
           <div className="studio-public-poster" aria-hidden="true">
             <span>SUBCULT.TV / OPEN WORKSHOP</span>
-            <img src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004" alt="" />
+            <img
+              src="/brand/subcult/fisheye-circle.png?v=fisheye-flat-20261004"
+              alt=""
+              width={256}
+              height={256}
+            />
             <strong>
               MAKE IT.
               <br />

@@ -6,7 +6,10 @@ import (
 	"fmt"
 	"log/slog"
 	"net/http"
+	"net/mail"
+	"strings"
 	"time"
+	"unicode/utf8"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/subculture-collective/subcult-tv/api/internal/brevo"
@@ -21,8 +24,8 @@ func (h *Handler) SubmitContact(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if req.Name == "" || req.Email == "" || req.Message == "" {
-		writeError(w, http.StatusBadRequest, "Name, email and message are required.")
+	if msg := validateContact(&req); msg != "" {
+		writeError(w, http.StatusBadRequest, msg)
 		return
 	}
 
@@ -44,6 +47,50 @@ func (h *Handler) SubmitContact(w http.ResponseWriter, r *http.Request) {
 		"message": "Message received.",
 		"id":      c.ID,
 	})
+}
+
+// Contact field limits match the contacts table (name VARCHAR(200),
+// email VARCHAR(255), subject VARCHAR(300)); message is bounded here.
+const (
+	contactNameMax    = 200
+	contactEmailMax   = 254
+	contactSubjectMax = 300
+	contactMessageMax = 10000
+)
+
+// validateContact trims the submission in place and returns a friendly
+// message for the first problem, or "" when the submission is acceptable.
+func validateContact(req *models.CreateContactRequest) string {
+	req.Name = strings.TrimSpace(req.Name)
+	req.Email = strings.TrimSpace(req.Email)
+	req.Message = strings.TrimSpace(req.Message)
+	if req.Subject != nil {
+		trimmed := strings.TrimSpace(*req.Subject)
+		if trimmed == "" {
+			req.Subject = nil
+		} else {
+			req.Subject = &trimmed
+		}
+	}
+	if req.Name == "" || req.Email == "" || req.Message == "" {
+		return "Name, email and message are required."
+	}
+	if utf8.RuneCountInString(req.Name) > contactNameMax {
+		return "Name must be 200 characters or fewer."
+	}
+	if utf8.RuneCountInString(req.Email) > contactEmailMax {
+		return "Enter a valid email address."
+	}
+	if addr, err := mail.ParseAddress(req.Email); err != nil || addr.Name != "" || addr.Address != req.Email {
+		return "Enter a valid email address."
+	}
+	if req.Subject != nil && utf8.RuneCountInString(*req.Subject) > contactSubjectMax {
+		return "Subject must be 300 characters or fewer."
+	}
+	if utf8.RuneCountInString(req.Message) > contactMessageMax {
+		return "Message must be 10,000 characters or fewer."
+	}
+	return ""
 }
 
 // ListContacts returns all contact submissions (admin only).
@@ -74,6 +121,10 @@ func (h *Handler) ListContacts(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		contacts = append(contacts, c)
+	}
+	if err := rows.Err(); err != nil {
+		writeError(w, http.StatusInternalServerError, "failed to read contacts")
+		return
 	}
 
 	if contacts == nil {

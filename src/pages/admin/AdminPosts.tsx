@@ -21,6 +21,7 @@ import {
   draftPlatform,
   firstLine,
   hiddenReason,
+  isProviderUnconfigured,
   favoritedDrafts,
   latestDecisions,
   isExpired,
@@ -55,6 +56,7 @@ export default function AdminPosts() {
   const [showHidden, setShowHidden] = useState(false);
   const [error, setError] = useState('');
   const [deliveryError, setDeliveryError] = useState('');
+  const [deliveryUnconfigured, setDeliveryUnconfigured] = useState(false);
   const [accountRevision, setAccountRevision] = useState(0);
   const [checkingAccounts, setCheckingAccounts] = useState(false);
   const [revision, setRevision] = useState(0);
@@ -145,6 +147,7 @@ export default function AdminPosts() {
         if (active) {
           setDelivery(null);
           setDeliveryError(e instanceof Error ? e.message : 'Instagram accounts are unavailable.');
+          setDeliveryUnconfigured(isProviderUnconfigured(e));
         }
       } finally {
         pending = false;
@@ -321,11 +324,17 @@ export default function AdminPosts() {
           </button>
         </div>
       )}
-      {deliveryError && tab === 'instagram' && (
-        <p role="alert" className="admin-alert admin-alert-warning">
-          {deliveryError}
-        </p>
-      )}
+      {deliveryError &&
+        tab === 'instagram' &&
+        (deliveryUnconfigured ? (
+          <p role="status" className="studio-note">
+            {deliveryError}.
+          </p>
+        ) : (
+          <p role="alert" className="admin-alert admin-alert-warning">
+            {deliveryError}
+          </p>
+        ))}
       <div ref={noticeRef}>
         {notice && (
           <p role="status" className="admin-alert admin-alert-notice">
@@ -400,7 +409,12 @@ export default function AdminPosts() {
                     expanded={current === d.id}
                     onToggle={() => toggle(d.id)}
                   >
-                    {tab === 'x' ? (
+                    {hidden(d) ? (
+                      <p className="studio-note">
+                        {hiddenLabel[hidden(d)]}
+                        {latest.get(d.id)?.note ? `: ${latest.get(d.id)?.note}` : '.'}
+                      </p>
+                    ) : tab === 'x' ? (
                       <XPostReview
                         key={`${d.id}:${bufferFor(d.id)?.version ?? 0}:${bufferDelivery?.configured ?? false}`}
                         draft={d}
@@ -409,21 +423,22 @@ export default function AdminPosts() {
                         now={now}
                         onSaved={() => setRevision((v) => v + 1)}
                       >
-                        {!hidden(d) && (
-                          <DecisionControls
-                            draftId={d.id}
-                            label={`${d.account} X post: ${firstLine(d.text, 48)}`}
-                            busy={busy}
-                            setBusy={setBusy}
-                            favorited={favorites.has(d.id)}
-                            goodOnly={Boolean(bufferFor(d.id))}
-                            onRecorded={recorded}
-                          />
-                        )}
+                        <DecisionControls
+                          draftId={d.id}
+                          label={`${d.account} X post: ${firstLine(d.text, 48)}`}
+                          busy={busy}
+                          setBusy={setBusy}
+                          favorited={favorites.has(d.id)}
+                          goodOnly={Boolean(bufferFor(d.id))}
+                          onRecorded={recorded}
+                        />
                       </XPostReview>
                     ) : (
+                      // Keyed on the receipt and connection, not checked_at: the
+                      // server stamps checked_at on every poll, which would reset
+                      // typed edits each refresh.
                       <BlueskyPostReview
-                        key={`${d.id}:${blueskyDelivery?.checked_at ?? ''}`}
+                        key={`${d.id}:${blueskyFor(d.id)?.post_id ?? ''}:${blueskyDelivery?.configured ?? false}`}
                         draft={d}
                         delivery={blueskyDelivery}
                         now={now}
@@ -431,16 +446,14 @@ export default function AdminPosts() {
                           recorded('Scheduled in PostyBirb. Bluesky delivery is pending.')
                         }
                       >
-                        {!hidden(d) && (
-                          <DecisionControls
-                            draftId={d.id}
-                            label={`${d.account} ${platformLabel(tab)} post: ${firstLine(d.text, 48)}`}
-                            busy={busy}
-                            setBusy={setBusy}
-                            favorited={favorites.has(d.id)}
-                            onRecorded={recorded}
-                          />
-                        )}
+                        <DecisionControls
+                          draftId={d.id}
+                          label={`${d.account} ${platformLabel(tab)} post: ${firstLine(d.text, 48)}`}
+                          busy={busy}
+                          setBusy={setBusy}
+                          favorited={favorites.has(d.id)}
+                          onRecorded={recorded}
+                        />
                       </BlueskyPostReview>
                     )}
                   </ReviewRow>

@@ -3,7 +3,12 @@ import { useId, useState, type FormEvent } from 'react';
 import { subscribe } from '@/lib/api';
 import { trackCampaignEvent } from '@/lib/analytics';
 
-export default function NewsletterSignup() {
+interface NewsletterSignupProps {
+  /** Heading level that fits the page outline: h3 in the footer, h2 on /newsletter. */
+  headingLevel?: 'h2' | 'h3';
+}
+
+export default function NewsletterSignup({ headingLevel: Heading = 'h3' }: NewsletterSignupProps) {
   const emailInputId = useId();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -41,7 +46,7 @@ export default function NewsletterSignup() {
     <div className="bg-ash border border-fog p-6">
       <div className="text-center mb-4">
         <p className="font-mono text-xs text-dust mb-2">SUBCULT / MONTHLY NEWSLETTER</p>
-        <h3 className="text-lg mb-1">One email a month</h3>
+        <Heading className="text-lg mb-1">One email a month</Heading>
         <p className="text-sm text-bone">Releases, and what we’re working on.</p>
       </div>
 
@@ -72,7 +77,7 @@ export default function NewsletterSignup() {
         <p className="font-mono text-xs text-signal text-center mt-2">Not subscribed. {message}</p>
       )}
 
-      <p className="font-mono text-xs text-fog text-center mt-3">
+      <p className="font-mono text-xs text-dust text-center mt-3">
         Every email has an unsubscribe link.
       </p>
     </div>

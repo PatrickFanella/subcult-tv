@@ -220,6 +220,14 @@ const STATIC_PAGES: PageMeta[] = [
     imageAlt: DEFAULT_IMAGE_ALT,
   },
   {
+    path: '/development',
+    title: fullTitle('Development log'),
+    description:
+      'Updates from the SUBCULT workshop: what changed in the products, what broke and what we’re working on next.',
+    image: DEFAULT_IMAGE,
+    imageAlt: DEFAULT_IMAGE_ALT,
+  },
+  {
     path: '/newsletter',
     title: fullTitle('Newsletter'),
     description:
@@ -316,6 +324,22 @@ export function getAllPageMeta(): PageMeta[] {
 
 export function getPageMeta(path: string): PageMeta | undefined {
   return getAllPageMeta().find((meta) => meta.path === path);
+}
+
+/** Metadata for one development log entry, or a noindex placeholder while it loads. */
+export function developmentPostMeta(
+  slug: string,
+  post?: { title: string; excerpt: string } | null,
+): PageMeta {
+  const base = getPageMeta('/development')!;
+  const path = `/development/${slug}`;
+  if (!post) return { ...base, path, noIndex: true };
+  return {
+    ...base,
+    path,
+    title: fullTitle(post.title),
+    description: post.excerpt || base.description,
+  };
 }
 
 export function absoluteUrl(pathOrUrl: string) {

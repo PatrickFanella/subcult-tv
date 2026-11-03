@@ -21,7 +21,14 @@ export default function AdminContacts() {
 
   const load = (p: number) => {
     listContacts({ page: p, perPage: 20 })
-      .then(setContactsPage)
+      .then((res) => {
+        // Deleting the last item on the last page leaves this page empty; step back.
+        if (p > 1 && res.total_pages < p) {
+          setPage(Math.max(1, res.total_pages));
+          return;
+        }
+        setContactsPage(res);
+      })
       .catch((err) => setError(err.message));
   };
 
@@ -73,7 +80,12 @@ export default function AdminContacts() {
           <article key={c.id} className="contact-card" data-unread={!c.read || undefined}>
             <div className="contact-card-body">
               <div className="contact-card-head">
-                {!c.read && <span className="contact-unread-dot" aria-label="Unread" />}
+                {!c.read && (
+                  <>
+                    <span className="contact-unread-dot" aria-hidden="true" />
+                    <span className="admin-status is-live">Unread</span>
+                  </>
+                )}
                 <strong>{c.name}</strong>
                 <a href={`mailto:${c.email}`} className="contact-email">
                   {c.email}

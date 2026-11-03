@@ -1009,3 +1009,183 @@ describe('Bluesky queue and delivery', () => {
     expect(screen.getByRole('link', { name: 'Open PostyBirb ↗' })).toBeInTheDocument();
   });
 });
+
+describe('review queue regressions', () => {
+  const connection = {
+    configured: true,
+    accounts: [
+      {
+        id: 'sky-subcult',
+        name: '@subcult.tv',
+        identifier: 'bluesky',
+        profile: 'subcult',
+        disabled: false,
+      },
+    ],
+    receipts: [],
+    posts: [],
+    checked_at: new Date().toISOString(),
+  };
+  const sky = draft({
+    id: 'plan:bluesky:0',
+    platform: 'bluesky',
+    mode: 'plan',
+    account: 'subcult',
+    text: 'A Bluesky post',
+  });
+
+  it('keeps typed Bluesky edits across a refresh that only changes checked_at', async () => {
+    vi.mocked(getPostingDashboard).mockResolvedValue(snapshot([sky]));
+    vi.mocked(getBlueskyDelivery).mockResolvedValue(connection);
+    render(
+      <MemoryRouter initialEntries={['/admin/posts?tab=bluesky']}>
+        <AdminPosts />
+      </MemoryRouter>,
+    );
+    await openFirst(/A Bluesky post/);
+    fireEvent.change(screen.getByLabelText('Post text'), { target: { value: 'Edited copy' } });
+    vi.mocked(getBlueskyDelivery).mockResolvedValue({
+      ...connection,
+      checked_at: new Date(Date.now() + 1000).toISOString(),
+    });
+    fireEvent.click(screen.getByRole('button', { name: 'Refresh drafts' }));
+    await waitFor(() => expect(getBlueskyDelivery).toHaveBeenCalledTimes(2));
+    expect(screen.getByLabelText('Post text')).toHaveValue('Edited copy');
+  });
+
+  it('hides approval for rejected X and Bluesky drafts and shows the reason instead', async () => {
+    const x = draft({ id: 'plan:x:0', platform: 'x', mode: 'plan', text: 'An X post' });
+    vi.mocked(getPostingDashboard).mockResolvedValue(snapshot([x, sky]));
+    vi.mocked(getBlueskyDelivery).mockResolvedValue(connection);
+    vi.mocked(getBufferDelivery).mockResolvedValue({
+      configured: true,
+      channels: [
+        {
+          id: 'ch',
+          name: 'subcult',
+          service: 'twitter',
+          isDisconnected: false,
+          isLocked: false,
+          isQueuePaused: false,
+        },
+      ],
+      receipts: [],
+    });
+    vi.mocked(getDraftDecisions).mockResolvedValue([
+      decision({ id: 1, draft_id: x.id, platform: 'x', note: 'Too dull' }),
+      decision({
+        id: 2,
+        draft_id: sky.id,
+        platform: 'bluesky',
+        decision: 'revision_requested',
+        note: 'Shorter',
+      }),
+    ]);
+    render(
+      <MemoryRouter initialEntries={['/admin/posts?tab=x']}>
+        <AdminPosts />
+      </MemoryRouter>,
+    );
+    fireEvent.click(await screen.findByLabelText(/Show 1 rejected, snoozed or replaced draft/));
+    await openFirst(/An X post/);
+    expect(screen.getByText('Rejected: Too dull')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Approve/ })).not.toBeInTheDocument();
+    // The show-hidden toggle stays on across tabs.
+    fireEvent.click(screen.getByRole('tab', { name: /Bluesky/ }));
+    await openFirst(/A Bluesky post/);
+    expect(screen.getByText('Revision requested: Shorter')).toBeInTheDocument();
+    expect(screen.queryByLabelText(/I approve this exact Bluesky/)).not.toBeInTheDocument();
+  });
+
+  it('retries an Instagram approval with the saved version after the approve step fails', async () => {
+    vi.mocked(saveReviewDraft).mockResolvedValue({ version: 1 });
+    vi.mocked(approveReviewDraft).mockRejectedValueOnce(
+      Object.assign(new Error('Draft changed. Refresh before approving.'), { status: 409 }),
+    );
+    vi.mocked(getReviewDrafts)
+      .mockResolvedValueOnce([])
+      .mockResolvedValue([
+        {
+          draft_id: 'cm:0',
+          version: 1,
+          account_id: 'pb-patrick',
+          caption: draft().text,
+          due_at: future(48),
+          has_media: true,
+          status: 'draft',
+          post_id: '',
+          updated_at: '',
+        },
+      ]);
+    renderQueue();
+    await openFirst();
+    tickChecklist();
+    const approve = screen.getByRole('button', { name: /^Approve & queue/ });
+    fireEvent.click(approve);
+    await screen.findByText(/Saved, but not queued: Draft changed/);
+    await waitFor(() => expect(getReviewDrafts).toHaveBeenCalledTimes(2));
+    vi.mocked(saveReviewDraft).mockResolvedValue({ version: 2 });
+    await waitFor(() =>
+      expect(screen.getByRole('button', { name: /^Approve & queue/ })).toBeEnabled(),
+    );
+    fireEvent.click(screen.getByRole('button', { name: /^Approve & queue/ }));
+    await screen.findByText(/Scheduled in PostyBirb · pb-post/);
+    expect(vi.mocked(saveReviewDraft).mock.calls[0][1].get('version')).toBe('0');
+    expect(vi.mocked(saveReviewDraft).mock.calls[1][1].get('version')).toBe('1');
+    expect(vi.mocked(approveReviewDraft).mock.calls[1][1]).toBe(2);
+  });
+
+  it('drops Bluesky receipts older than the 30-day history window', async () => {
+    vi.mocked(getPostingDashboard).mockResolvedValue(snapshot([]));
+    vi.mocked(getBlueskyDelivery).mockResolvedValue({
+      ...connection,
+      receipts: [
+        {
+          draft_id: 'old',
+          account_id: 'sky-subcult',
+          caption: 'Long since delivered',
+          alt_text: '',
+          has_media: false,
+          due_at: future(-24 * 40),
+          status: 'scheduled',
+          post_id: 'gone',
+        },
+        {
+          draft_id: 'recent',
+          account_id: 'sky-subcult',
+          caption: 'Recently overdue',
+          alt_text: '',
+          has_media: false,
+          due_at: future(-2),
+          status: 'scheduled',
+          post_id: 'still-there',
+        },
+      ],
+    });
+    renderDelivery();
+    await screen.findByRole('button', { name: /Recently overdue/ });
+    expect(screen.queryByText(/Long since delivered/)).not.toBeInTheDocument();
+  });
+
+  it('shows an unconfigured provider as a status line, not a load error', async () => {
+    vi.mocked(getPostingDashboard).mockResolvedValue(snapshot([]));
+    vi.mocked(getSocialDelivery).mockRejectedValue(
+      Object.assign(new Error('PostyBirb delivery is not configured'), { status: 503 }),
+    );
+    vi.mocked(getBufferHistory).mockRejectedValue(
+      Object.assign(new Error('Buffer timed out'), { status: 502 }),
+    );
+    renderDelivery();
+    const alerts = await screen.findAllByRole('alert');
+    const alert = alerts.find((a) => a.textContent?.includes('Some sources'));
+    expect(alert).toHaveTextContent('Buffer history: Buffer timed out');
+    expect(alert).not.toHaveTextContent('not configured');
+    expect(
+      screen.getByText('PostyBirb delivery is not configured.', { selector: '[role="status"]' }),
+    ).toBeInTheDocument();
+    cleanup();
+    renderQueue();
+    await screen.findByText('PostyBirb delivery is not configured.');
+    expect(screen.queryByRole('alert')).not.toBeInTheDocument();
+  });
+});

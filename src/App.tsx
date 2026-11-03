@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import Layout from '@/components/Layout';
+import { RouteFallback } from '@/components/RouteFallback';
 
 // Public pages (code-split)
 const DevelopmentLog = lazy(() => import('@/pages/DevelopmentLog'));
@@ -33,18 +34,10 @@ const AdminBlogPosts = lazy(() => import('@/pages/admin/AdminBlogPosts'));
 const AdminContacts = lazy(() => import('@/pages/admin/AdminContacts'));
 const AdminSubscribers = lazy(() => import('@/pages/admin/AdminSubscribers'));
 
-function RouteFallback() {
-  return (
-    <div className="min-h-[40vh] flex items-center justify-center">
-      <span className="font-mono text-dust text-sm cursor-blink">&gt; loading signal...</span>
-    </div>
-  );
-}
-
 export default function App() {
   return (
     <ErrorBoundary>
-      <Suspense fallback={<RouteFallback />}>
+      <Suspense fallback={<RouteFallback label="loading signal" />}>
         <Routes>
           {/* Public site */}
           <Route element={<Layout />}>

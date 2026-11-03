@@ -39,6 +39,8 @@ export default function AdminProjects() {
   const [loading, setLoading] = useState(true);
   const [published, setPublished] = useState<APIProject[]>([]);
   const [reviewing, setReviewing] = useState<APIProject | null>(null);
+  // The sort order stays a string while typing so an emptied field is not forced to 0.
+  const [sortOrder, setSortOrder] = useState('0');
   const [notice, setNotice] = useState('');
   const [saving, setSaving] = useState(false);
 
@@ -47,6 +49,12 @@ export default function AdminProjects() {
       .then(([items, live]) => {
         setProjects(items);
         setPublished(live);
+        // The review panel shows the row captured on click; after a save or
+        // reload, show the current record (or close it if the row is gone) so
+        // approval sends the current updated_at.
+        setReviewing((current) =>
+          current ? (items.find((p) => p.id === current.id) ?? null) : current,
+        );
       })
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
@@ -57,6 +65,7 @@ export default function AdminProjects() {
   const openNew = () => {
     setEditing(null);
     setForm(emptyForm);
+    setSortOrder(String(emptyForm.sort_order));
     setShowForm(true);
   };
 
@@ -79,6 +88,7 @@ export default function AdminProjects() {
       featured: p.featured,
       sort_order: p.sort_order,
     });
+    setSortOrder(String(p.sort_order));
     setShowForm(true);
   };
 
@@ -87,10 +97,12 @@ export default function AdminProjects() {
     setSaving(true);
     setError('');
     try {
+      const parsed = Number.parseInt(sortOrder, 10);
+      const data = { ...form, sort_order: Number.isNaN(parsed) ? 0 : parsed };
       if (editing) {
-        await updateProject(editing.id, form);
+        await updateProject(editing.id, data);
       } else {
-        await createProject(form);
+        await createProject(data);
       }
       setShowForm(false);
       load();
@@ -367,8 +379,10 @@ export default function AdminProjects() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               <Field
                 label="Sort order"
-                value={String(form.sort_order)}
-                onChange={(v) => setForm({ ...form, sort_order: parseInt(v) || 0 })}
+                type="number"
+                inputMode="numeric"
+                value={sortOrder}
+                onChange={setSortOrder}
               />
               <Field
                 label="Cover color"
@@ -438,11 +452,16 @@ export default function AdminProjects() {
                   </td>
                   <td data-label="Featured">
                     {p.featured ? (
-                      <span aria-label="Featured">★</span>
-                    ) : (
-                      <span className="admin-cell-sub" aria-label="Not featured">
-                        —
+                      <span role="img" aria-label="Featured">
+                        ★
                       </span>
+                    ) : (
+                      <>
+                        <span className="admin-cell-sub" aria-hidden="true">
+                          —
+                        </span>
+                        <span className="sr-only">Not featured</span>
+                      </>
                     )}
                   </td>
                   <td data-label="Order" className="font-mono">

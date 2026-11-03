@@ -1,8 +1,10 @@
+from datetime import datetime, timedelta, timezone
 import json
+import os
 from pathlib import Path
 import tempfile
 import unittest
-from export_posting import snapshot
+from export_posting import RECENT_RUNS, snapshot
 
 
 class PostingExportTests(unittest.TestCase):
@@ -179,5 +181,62 @@ class PostingExportTests(unittest.TestCase):
             d=snapshot(state)['drafts'][0]
             self.assertEqual(d['sources'],['Release notes','Plain title'])
             self.assertNotIn('git.subcult.tv',json.dumps(d))
+
+    def test_evidence_is_exported_without_urls(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state=Path(tmp);run=state/'runs'/'cm';run.mkdir(parents=True)
+            (run/'receipt.json').write_text(json.dumps({'mode':'changemaker','status':'success','run_id':'cm','draft_count':1}))
+            evidence='Collection changes-1; evidence SHA-256 abc\nS1: Add the clip stack — https://git.subcult.tv/subculture-collective/clpr/pulls/9\nSee https://example.test/x for more'
+            (run/'result.json').write_text(json.dumps({'drafts':[{'account':'subcult','text':'Caption','platform':'instagram','evidence':evidence}]}))
+            data=snapshot(state)
+            d=data['drafts'][0]
+            self.assertEqual(d['evidence'],'Collection changes-1; evidence SHA-256 abc\nS1: Add the clip stack\nSee  for more')
+            self.assertEqual(d['sources'],['Add the clip stack'])
+            self.assertNotIn('git.subcult.tv',json.dumps(data))
+            self.assertNotIn('example.test',json.dumps(data))
+
+    def test_older_runs_with_unexpired_drafts_stay_in_review(self):
+        now=datetime(2026,10,20,12,0,tzinfo=timezone.utc)
+        with tempfile.TemporaryDirectory() as tmp:
+            state=Path(tmp)
+            def run(name,drafts,mode='changemaker'):
+                directory=state/'runs'/name;directory.mkdir(parents=True)
+                (directory/'receipt.json').write_text(json.dumps({'mode':mode,'status':'success','run_id':name,'draft_count':len(drafts)}))
+                (directory/'result.json').write_text(json.dumps({'drafts':drafts,'open_checks':['Check '+name]}))
+                # Runs are ordered by receipt time; date each receipt like the real jobs do.
+                stamp=datetime.strptime(name[:15],'%Y%m%dT%H%M%S').replace(tzinfo=timezone.utc).timestamp()
+                os.utime(directory/'receipt.json',(stamp,stamp))
+            # Two old runs: one still holds a showcase draft open for review, one is fully expired.
+            run('20261010T000000.000000Z-changemaker',[
+                {'account':'subcult','text':'Showcase still open','platform':'instagram','expires_at':(now+timedelta(days=4)).isoformat()},
+                {'account':'subcult','text':'Already expired sibling','platform':'instagram','expires_at':(now-timedelta(days=1)).isoformat()}])
+            run('20261011T000000.000000Z-changemaker',[
+                {'account':'subcult','text':'Expired draft','platform':'instagram','expires_at':(now-timedelta(hours=1)).isoformat()}])
+            for n in range(RECENT_RUNS+5):
+                run(f'202610{12+n//10:02d}T{n%10:02d}0000.000000Z-ondemand',
+                    [{'account':'clpr','text':f'tweet {n}','platform':'x','due_at':(now-timedelta(days=1)).isoformat()}],'ondemand')
+            data=snapshot(state,now=now)
+            texts={d['text'] for d in data['drafts']}
+            self.assertIn('Showcase still open',texts)
+            self.assertNotIn('Already expired sibling',texts)
+            self.assertNotIn('Expired draft',texts)
+            self.assertEqual(len(data['runs']),RECENT_RUNS+1)
+            self.assertIn('20261010T000000.000000Z-changemaker',[r['run_id'] for r in data['runs']])
+            self.assertNotIn('20261011T000000.000000Z-changemaker',[r['run_id'] for r in data['runs']])
+            # The newest runs keep every draft, expired or not, as before; older past-due tweets drop.
+            self.assertEqual(sum(d['platform']=='x' for d in data['drafts']),RECENT_RUNS)
+
+    def test_job_status_is_exported_bounded(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state=Path(tmp);(state/'runs').mkdir()
+            (state/'status.json').write_text(json.dumps({'version':1,'jobs':{
+                'changemaker-instagram':{'job':'changemaker-instagram','status':'failed','run_id':'r1','started':'2026-10-20T09:20:00+00:00',
+                                         'finished':'2026-10-20T09:25:00+00:00','reason':'ValueError','private':'/home/onnwee/secret'},
+                'bad':{'status':'running'}}}))
+            data=snapshot(state)
+            self.assertEqual(data['job_status'],[{'job':'changemaker-instagram','status':'failed','run_id':'r1',
+                'started':'2026-10-20T09:20:00+00:00','finished':'2026-10-20T09:25:00+00:00','reason':'ValueError'}])
+            self.assertNotIn('/home/onnwee',json.dumps(data))
+            self.assertEqual(snapshot()['job_status'],[])
 
 if __name__=='__main__':unittest.main()

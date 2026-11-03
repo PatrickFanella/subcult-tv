@@ -13,14 +13,16 @@ interface SEOHeadProps {
   path: string;
   /** Use the not-found metadata (noindex) instead of the route's. */
   notFound?: boolean;
+  /** Complete metadata for a page that is not in the static list (API-backed entries). */
+  meta?: PageMeta;
 }
 
 /**
  * Applies a route's metadata to the document head on navigation. The same
  * tags are written into static HTML at build time (scripts/prerender-meta.ts).
  */
-export default function SEOHead({ path, notFound = false }: SEOHeadProps) {
-  const meta: PageMeta = (!notFound && getPageMeta(path)) || NOT_FOUND_META;
+export default function SEOHead({ path, notFound = false, meta: override }: SEOHeadProps) {
+  const meta: PageMeta = (!notFound && (override ?? getPageMeta(path))) || NOT_FOUND_META;
 
   useEffect(() => {
     document.title = meta.title;

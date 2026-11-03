@@ -180,7 +180,7 @@ export default function Contact() {
                   {submitting ? 'Sending...' : 'Send message'}
                 </Button>
 
-                <p className="font-mono text-xs text-fog text-center mt-2">
+                <p className="font-mono text-xs text-dust text-center mt-2">
                   Your message goes to SUBCULT.
                 </p>
               </form>

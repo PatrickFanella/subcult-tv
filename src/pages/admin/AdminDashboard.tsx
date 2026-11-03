@@ -27,6 +27,7 @@ import {
   latestDecisions,
   runStatusLabel,
   publicationPreparationProblem,
+  splitLoadFailures,
 } from '@/lib/review-queue';
 
 export default function AdminDashboard() {
@@ -39,6 +40,7 @@ export default function AdminDashboard() {
   const [buffer, setBuffer] = useState<BufferDelivery | null>(null);
   const [bufferHistory, setBufferHistory] = useState<BufferHistory | null>(null);
   const [errors, setErrors] = useState<string[]>([]);
+  const [unconfigured, setUnconfigured] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [revision, setRevision] = useState(0);
   const [checked, setChecked] = useState('');
@@ -73,15 +75,11 @@ export default function AdminDashboard() {
         'Buffer',
         'Buffer history',
       ];
-      setErrors(
-        [s, p, r, u, ig, x, xh].flatMap((result, index) =>
-          result.status === 'rejected'
-            ? [
-                `${names[index]}: ${result.reason instanceof Error ? result.reason.message : 'Unavailable'}`,
-              ]
-            : [],
-        ),
+      const failures = splitLoadFailures(
+        [s, p, r, u, ig, x, xh].map((result, index) => ({ name: names[index], result })),
       );
+      setErrors(failures.errors);
+      setUnconfigured(failures.unconfigured);
       setChecked(new Date().toLocaleString());
       setReadAt(Date.now());
       setLoading(false);
@@ -179,6 +177,11 @@ export default function AdminDashboard() {
           Loading the workshop…
         </p>
       )}
+      {unconfigured.map((message) => (
+        <p key={message} role="status" className="studio-note">
+          {message}.
+        </p>
+      ))}
       {errors.length > 0 && (
         <div className="admin-alert admin-alert-warning" role="alert">
           <strong>Some records could not be loaded.</strong>

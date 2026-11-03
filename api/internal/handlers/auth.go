@@ -11,6 +11,11 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
+// dummyPasswordHash is compared against when the username does not exist, so
+// an unknown username costs the same bcrypt work as a wrong password and the
+// response time does not reveal which usernames are valid.
+var dummyPasswordHash, _ = bcrypt.GenerateFromPassword([]byte("subcult-unknown-user-timing-equalizer"), bcrypt.DefaultCost)
+
 // Login authenticates an admin user and returns a JWT.
 func (h *Handler) Login(w http.ResponseWriter, r *http.Request) {
 	var req models.LoginRequest
@@ -30,6 +35,7 @@ func (h *Handler) Login(w http.ResponseWriter, r *http.Request) {
 		 FROM users WHERE username = $1`, req.Username,
 	).Scan(&user.ID, &user.Username, &user.Email, &user.PasswordHash, &user.Role, &user.CreatedAt, &user.UpdatedAt)
 	if err != nil {
+		_ = bcrypt.CompareHashAndPassword(dummyPasswordHash, []byte(req.Password))
 		writeError(w, http.StatusUnauthorized, "invalid credentials")
 		return
 	}

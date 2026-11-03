@@ -20,6 +20,7 @@ import paths
 import media
 import bluesky
 import feedback
+import job_status
 
 HERE = Path(__file__).resolve().parent
 BEGIN = '<!-- social-posting-runner:begin -->'
@@ -249,108 +250,128 @@ def render_result(result: dict, run_id: str, mode: str) -> str:
 
 def execute(cfg: dict, mode: str, week: str, force: bool = False) -> dict:
     state = Path(cfg['state']);state.mkdir(parents=True, exist_ok=True);state.chmod(0o700)
+    started = datetime.now(timezone.utc)
     with (state/'runner.lock').open('w') as lock:
-        acquire(lock)
-        database = sqlite3.connect(state/'runs.sqlite3')
-        database.execute('CREATE TABLE IF NOT EXISTS runs (id TEXT PRIMARY KEY, mode TEXT, week TEXT, status TEXT, started TEXT, detail TEXT)')
-        database.execute('CREATE TABLE IF NOT EXISTS sections (mode TEXT, week TEXT, hash TEXT, PRIMARY KEY(mode,week))')
-        previous = database.execute('SELECT status FROM runs WHERE mode=? AND week=? ORDER BY started DESC LIMIT 1', (mode, week)).fetchone()
-        if previous and previous[0] == 'success' and not force:
-            return {'status': 'already_complete', 'mode': mode, 'week': week}
-        vault = paths.root(cfg);folder = paths.drafts(cfg)
-        target = folder/(week+' Content Posts.md') if mode == 'plan' else folder/(week+' Publishing Review.md')
-        if mode == 'review' and not (folder/(week+' Content Posts.md')).exists():
-            return {'status': 'no_weekly_plan', 'mode': mode, 'week': week}
-        year, number = map(int, week.split('-W'))
-        if mode == 'review' and datetime.now(ZoneInfo(cfg['timezone'])).date() < date.fromisocalendar(year, number, 1):
-            return {'status': 'pilot_not_started', 'mode': mode, 'week': week}
-        now = datetime.now(timezone.utc);run_id = now.strftime('%Y%m%dT%H%M%S.%fZ')+'-'+mode
-        directory = state/'runs'/run_id;directory.mkdir(parents=True);directory.chmod(0o700)
-        database.execute('INSERT INTO runs VALUES (?,?,?,?,?,?)', (run_id,mode,week,'running',now.isoformat(),''));database.commit()
         try:
-            original = target.read_text() if target.exists() else f'---\ntitle: {week} '+('Content Posts' if mode == 'plan' else 'Publishing Review')+'\ntype: work\nstatus: active\nstage: draft\nweek-of: '+week+'\n---\n\n# '+week+' '+('Content Posts' if mode == 'plan' else 'Publishing Review')+'\n\n[[Social Posts Workbench]] · [[Social Posting Automation Plan]]\n'
-            expected = database.execute('SELECT hash FROM sections WHERE mode=? AND week=?', (mode,week)).fetchone()
-            # Check edits before paying for another model run.
-            managed_update(original, 'preflight', expected[0] if expected else None)
-            context = source_context(cfg, directory)
-            if mode == 'plan':
-                context['existing_weekly_note'] = original
-                context['owner_feedback'] = feedback.owner_feedback(Path(cfg['state']), ('x', 'bluesky'), 30)
-                has_slots = database.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='timely_slots'").fetchone()
-                context['prepared_slots'] = [{'account':account, 'due_at':due}
-                    for account,due,expiry in database.execute('SELECT account,due_at,expires_at FROM timely_slots')
-                    if datetime.fromisoformat(expiry) > now] if has_slots else []
-            try:
-                context['changemaker'] = changes_context(cfg, now, days=3)
-            except Exception as error:
-                context['changemaker'] = {'status':'unavailable', 'reason':type(error).__name__, 'drafts':[]}
-            context['recent_weekly_notes'] = {p.name: p.read_text()[:6000]
-                for p in sorted(folder.glob('* Content Posts.md'), reverse=True)
-                if re.fullmatch(r'\d{4}-W\d{2} Content Posts\.md', p.name)
-                and p.name[:8] < week}
-            context['recent_weekly_notes'] = dict(list(context['recent_weekly_notes'].items())[:6])
-            if mode == 'review':
-                context['weekly_note'] = (folder/(week+' Content Posts.md')).read_text()
-                context['timely_notes'] = {p.name:p.read_text()[:6000]
-                    for p in sorted((folder/'Timely Drafts').glob('*.md'))[-21:]
-                    if date.fromisoformat(p.name[:10]).strftime('%G-W%V') == week}
-            prompt = (HERE/'prompt.md').read_text()+'\n\n'+json.dumps({'mode':mode,'week':week,'now':now.isoformat(),
-                'organization_id':cfg['organization_id'],'channels':cfg['channels'],
-                'cadence':cfg['cadence'], 'context':context})
-            atomic_write(directory/'request.txt', prompt)
-            environment = dict(os.environ)
-            for name in ['OPENAI_API_KEY', 'CODEX_API_KEY', 'OPENAI_BASE_URL']:
-                environment.pop(name, None)
-            with (directory/'events.jsonl').open('w') as events_out, (directory/'stderr.log').open('w') as errors:
-                completed = subprocess.run(codex_command(cfg, directory), input=prompt, stdout=events_out,
-                    stderr=errors, text=True, cwd=directory, env=environment, timeout=900)
-            if completed.returncode:
-                raise ValueError('Codex job failed; inspect the private run directory')
-            events = [json.loads(line) for line in (directory/'events.jsonl').read_text().splitlines() if line.strip()]
-            evidence = verify_evidence(events, cfg)
-            import campaign_metrics
-            campaign_metrics.from_events(state, events)
-            result = json.loads((directory/'result.json').read_text())
-            bank = context['notes'][next(x for x in cfg['notes'] if x.endswith('SUBCULT Social Content Idea Pool.md'))]
-            originals = [draft.get('text') for draft in result['drafts']]
-            if mode == 'plan' and result['drafts'] and cfg.get('polish', True):
-                import craft
-                craft.polish_short(cfg, result['drafts'], directory, owner=context['owner_feedback'])
-            try:
-                validate_result(result, cfg, week, bank, context.get('prepared_slots', []), now if mode == 'plan' else None)
-            except ValueError:
-                # A polished rewrite must never cost the run its valid drafts.
-                for draft, text in zip(result['drafts'], originals):
-                    draft['text'] = text
-                validate_result(result, cfg, week, bank, context.get('prepared_slots', []), now if mode == 'plan' else None)
-            result['open_checks'].extend(context.get('packet_checks', []))
-            catalog = media.context(cfg)
-            for draft in result['drafts']:
-                media.validate_choice(draft.get('media'), catalog, draft['account'])
-            media.save_requests(directory, result)
-            bluesky.save(directory, result, cfg)
-            if mode == 'review' and result['drafts']:
-                raise ValueError('A delivery review cannot create new drafts')
-            section = render_result(result, run_id, mode)
-            updated = managed_update(original, section, expected[0] if expected else None)
-            if target.exists() and target.read_text() != original:
-                raise ValueError('Weekly note changed during run; preserving human edits')
-            atomic_write(target, updated)
-            section_hash = digest(BEGIN+'\n'+section.strip()+'\n'+END)
-            database.execute('INSERT OR REPLACE INTO sections VALUES (?,?,?)', (mode,week,section_hash))
-            receipt = {'status':'success','mode':mode,'week':week,'run_id':run_id,'note':str(target),'draft_count':len(result['drafts']),
-                       'provider_evidence':evidence,'publishing_enabled':False,'checked_at':now.isoformat()}
-            atomic_write(directory/'receipt.json',json.dumps(receipt,indent=2)+'\n')
-            database.execute('UPDATE runs SET status=?, detail=? WHERE id=?', ('success',json.dumps(receipt),run_id));database.commit()
+            acquire(lock)
+        except TimeoutError as error:
+            # The lock wait is bounded; a stuck runner is a visible failure, not a silent skip.
+            receipt = {'status':'failed','mode':mode,'week':week,'error':str(error),'publishing_enabled':False}
             atomic_write(state/'latest.json',json.dumps(receipt,indent=2)+'\n')
-            return receipt
-        except Exception as error:
-            receipt = {'status':'failed','mode':mode,'week':week,'run_id':run_id,'error':str(error),'publishing_enabled':False}
-            database.execute('UPDATE runs SET status=?, detail=? WHERE id=?', ('failed',json.dumps(receipt),run_id));database.commit()
-            atomic_write(state/'latest.json',json.dumps(receipt,indent=2)+'\n')
+            job_status.write(state, 'social-posting-'+mode, 'failed', started=started, reason='Lock timeout: '+str(error)[:200])
             raise
-        finally:
-            database.close()
+        try:
+            result = _execute(cfg, mode, week, force, state, started)
+        except Exception as error:
+            job_status.write(state, 'social-posting-'+mode, 'failed', started=started, reason=type(error).__name__)
+            raise
+        status = 'success' if result.get('status') == 'success' else 'skipped'
+        job_status.write(state, 'social-posting-'+mode, status, run_id=result.get('run_id'), started=started,
+                         reason=result.get('status', '')+f", {result.get('draft_count', 0)} draft(s)")
+        return result
+
+
+def _execute(cfg: dict, mode: str, week: str, force: bool, state: Path, started: datetime) -> dict:
+    database = sqlite3.connect(state/'runs.sqlite3')
+    database.execute('CREATE TABLE IF NOT EXISTS runs (id TEXT PRIMARY KEY, mode TEXT, week TEXT, status TEXT, started TEXT, detail TEXT)')
+    database.execute('CREATE TABLE IF NOT EXISTS sections (mode TEXT, week TEXT, hash TEXT, PRIMARY KEY(mode,week))')
+    previous = database.execute('SELECT status FROM runs WHERE mode=? AND week=? ORDER BY started DESC LIMIT 1', (mode, week)).fetchone()
+    if previous and previous[0] == 'success' and not force:
+        return {'status': 'already_complete', 'mode': mode, 'week': week}
+    vault = paths.root(cfg);folder = paths.drafts(cfg)
+    target = folder/(week+' Content Posts.md') if mode == 'plan' else folder/(week+' Publishing Review.md')
+    if mode == 'review' and not (folder/(week+' Content Posts.md')).exists():
+        return {'status': 'no_weekly_plan', 'mode': mode, 'week': week}
+    year, number = map(int, week.split('-W'))
+    if mode == 'review' and datetime.now(ZoneInfo(cfg['timezone'])).date() < date.fromisocalendar(year, number, 1):
+        return {'status': 'pilot_not_started', 'mode': mode, 'week': week}
+    now = datetime.now(timezone.utc);run_id = now.strftime('%Y%m%dT%H%M%S.%fZ')+'-'+mode
+    directory = state/'runs'/run_id;directory.mkdir(parents=True);directory.chmod(0o700)
+    database.execute('INSERT INTO runs VALUES (?,?,?,?,?,?)', (run_id,mode,week,'running',now.isoformat(),''));database.commit()
+    try:
+        original = target.read_text() if target.exists() else f'---\ntitle: {week} '+('Content Posts' if mode == 'plan' else 'Publishing Review')+'\ntype: work\nstatus: active\nstage: draft\nweek-of: '+week+'\n---\n\n# '+week+' '+('Content Posts' if mode == 'plan' else 'Publishing Review')+'\n\n[[Social Posts Workbench]] · [[Social Posting Automation Plan]]\n'
+        expected = database.execute('SELECT hash FROM sections WHERE mode=? AND week=?', (mode,week)).fetchone()
+        # Check edits before paying for another model run.
+        managed_update(original, 'preflight', expected[0] if expected else None)
+        context = source_context(cfg, directory)
+        if mode == 'plan':
+            context['existing_weekly_note'] = original
+            context['owner_feedback'] = feedback.owner_feedback(Path(cfg['state']), ('x', 'bluesky'), 30)
+            has_slots = database.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='timely_slots'").fetchone()
+            context['prepared_slots'] = [{'account':account, 'due_at':due}
+                for account,due,expiry in database.execute('SELECT account,due_at,expires_at FROM timely_slots')
+                if datetime.fromisoformat(expiry) > now] if has_slots else []
+        try:
+            context['changemaker'] = changes_context(cfg, now, days=3)
+        except Exception as error:
+            context['changemaker'] = {'status':'unavailable', 'reason':type(error).__name__, 'drafts':[]}
+        context['recent_weekly_notes'] = {p.name: p.read_text()[:6000]
+            for p in sorted(folder.glob('* Content Posts.md'), reverse=True)
+            if re.fullmatch(r'\d{4}-W\d{2} Content Posts\.md', p.name)
+            and p.name[:8] < week}
+        context['recent_weekly_notes'] = dict(list(context['recent_weekly_notes'].items())[:6])
+        if mode == 'review':
+            context['weekly_note'] = (folder/(week+' Content Posts.md')).read_text()
+            context['timely_notes'] = {p.name:p.read_text()[:6000]
+                for p in sorted((folder/'Timely Drafts').glob('*.md'))[-21:]
+                if date.fromisoformat(p.name[:10]).strftime('%G-W%V') == week}
+        prompt = (HERE/'prompt.md').read_text()+'\n\n'+json.dumps({'mode':mode,'week':week,'now':now.isoformat(),
+            'organization_id':cfg['organization_id'],'channels':cfg['channels'],
+            'cadence':cfg['cadence'], 'context':context})
+        atomic_write(directory/'request.txt', prompt)
+        environment = dict(os.environ)
+        for name in ['OPENAI_API_KEY', 'CODEX_API_KEY', 'OPENAI_BASE_URL']:
+            environment.pop(name, None)
+        with (directory/'events.jsonl').open('w') as events_out, (directory/'stderr.log').open('w') as errors:
+            completed = subprocess.run(codex_command(cfg, directory), input=prompt, stdout=events_out,
+                stderr=errors, text=True, cwd=directory, env=environment, timeout=900)
+        if completed.returncode:
+            raise ValueError('Codex job failed; inspect the private run directory')
+        events = [json.loads(line) for line in (directory/'events.jsonl').read_text().splitlines() if line.strip()]
+        evidence = verify_evidence(events, cfg)
+        import campaign_metrics
+        campaign_metrics.from_events(state, events)
+        result = json.loads((directory/'result.json').read_text())
+        bank = context['notes'][next(x for x in cfg['notes'] if x.endswith('SUBCULT Social Content Idea Pool.md'))]
+        originals = [draft.get('text') for draft in result['drafts']]
+        if mode == 'plan' and result['drafts'] and cfg.get('polish', True):
+            import craft
+            craft.polish_short(cfg, result['drafts'], directory, owner=context['owner_feedback'])
+        try:
+            validate_result(result, cfg, week, bank, context.get('prepared_slots', []), now if mode == 'plan' else None)
+        except ValueError:
+            # A polished rewrite must never cost the run its valid drafts.
+            for draft, text in zip(result['drafts'], originals):
+                draft['text'] = text
+            validate_result(result, cfg, week, bank, context.get('prepared_slots', []), now if mode == 'plan' else None)
+        result['open_checks'].extend(context.get('packet_checks', []))
+        catalog = media.context(cfg)
+        for draft in result['drafts']:
+            media.validate_choice(draft.get('media'), catalog, draft['account'])
+        media.save_requests(directory, result)
+        bluesky.save(directory, result, cfg)
+        if mode == 'review' and result['drafts']:
+            raise ValueError('A delivery review cannot create new drafts')
+        section = render_result(result, run_id, mode)
+        updated = managed_update(original, section, expected[0] if expected else None)
+        if target.exists() and target.read_text() != original:
+            raise ValueError('Weekly note changed during run; preserving human edits')
+        atomic_write(target, updated)
+        section_hash = digest(BEGIN+'\n'+section.strip()+'\n'+END)
+        database.execute('INSERT OR REPLACE INTO sections VALUES (?,?,?)', (mode,week,section_hash))
+        receipt = {'status':'success','mode':mode,'week':week,'run_id':run_id,'note':str(target),'draft_count':len(result['drafts']),
+                   'provider_evidence':evidence,'publishing_enabled':False,'checked_at':now.isoformat()}
+        atomic_write(directory/'receipt.json',json.dumps(receipt,indent=2)+'\n')
+        database.execute('UPDATE runs SET status=?, detail=? WHERE id=?', ('success',json.dumps(receipt),run_id));database.commit()
+        atomic_write(state/'latest.json',json.dumps(receipt,indent=2)+'\n')
+        return receipt
+    except Exception as error:
+        receipt = {'status':'failed','mode':mode,'week':week,'run_id':run_id,'error':str(error),'publishing_enabled':False}
+        database.execute('UPDATE runs SET status=?, detail=? WHERE id=?', ('failed',json.dumps(receipt),run_id));database.commit()
+        atomic_write(state/'latest.json',json.dumps(receipt,indent=2)+'\n')
+        raise
+    finally:
+        database.close()
 
 
 def main() -> int:
@@ -368,6 +389,9 @@ def main() -> int:
     try:
         result = execute(cfg,args.mode,week,args.refresh)
         print(json.dumps(result));return 0
+    except TimeoutError as error:
+        # execute() already recorded the busy lock in latest.json and status.json.
+        print(json.dumps({'status':'failed','mode':args.mode,'week':week,'error':str(error)}));return 1
     except (ValueError, OSError, subprocess.SubprocessError) as error:
         print(json.dumps({'status':'failed','error':str(error)}));return 1
 

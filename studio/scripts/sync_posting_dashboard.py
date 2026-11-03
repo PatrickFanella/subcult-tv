@@ -19,7 +19,7 @@ MAX_MEDIA_TOTAL = 40 * 1024 * 1024
 MAX_IMAGES = 120
 
 # The remote side runs on the website host. STORE is importable for tests;
-# MAIN locates the live studio bundle and keeps the original safety assertions.
+# MAIN locates the live studio bundle and applies the same explicit checks.
 STORE = '''
 from pathlib import Path
 import hashlib,json,os,re,tempfile
@@ -28,9 +28,14 @@ MAX_IMAGE=900*1024
 MAX_MEDIA_TOTAL=40*1024*1024
 MAX_IMAGES=120
 NAME=re.compile(r'^[a-f0-9]{64}\\.jpg$')
+class TransferError(ValueError):
+ pass
+def check(condition,message):
+ # Explicit checks: `assert` disappears under python -O, and these guard every write.
+ if not condition:raise TransferError(message)
 def read_exact(stream,size):
  data=stream.read(size)
- assert len(data)==size,'truncated transfer'
+ check(len(data)==size,'truncated transfer')
  return data
 def atomic(directory,target,data):
  fd,name=tempfile.mkstemp(prefix='.posting-',dir=directory)
@@ -43,27 +48,27 @@ def store(root,stream):
  header=json.loads(stream.readline(65_537))
  snapshot_size=header['snapshot']
  media=header['media']
- assert isinstance(snapshot_size,int) and 0<snapshot_size<=MAX_SNAPSHOT
- assert isinstance(media,list) and len(media)<=MAX_IMAGES
- assert sum(item['bytes'] for item in media)<=MAX_MEDIA_TOTAL
+ check(isinstance(snapshot_size,int) and 0<snapshot_size<=MAX_SNAPSHOT,'snapshot size out of bounds')
+ check(isinstance(media,list) and len(media)<=MAX_IMAGES,'too many media entries')
+ check(all(isinstance(item.get('bytes'),int) for item in media) and sum(item['bytes'] for item in media)<=MAX_MEDIA_TOTAL,'media total out of bounds')
  data=read_exact(stream,snapshot_size)
  value=json.loads(data)
- assert value['version']==1 and value['publishing_enabled'] is False
+ check(value['version']==1 and value['publishing_enabled'] is False,'snapshot contract mismatch')
  images={}
  for item in media:
   sha,size=item['sha256'],item['bytes']
-  assert isinstance(sha,str) and NAME.match(sha+'.jpg') and isinstance(size,int) and 0<size<=MAX_IMAGE
+  check(isinstance(sha,str) and NAME.match(sha+'.jpg') and isinstance(size,int) and 0<size<=MAX_IMAGE,'invalid media entry')
   image=read_exact(stream,size)
-  assert hashlib.sha256(image).hexdigest()==sha and image[:3]==b'\\xff\\xd8\\xff'
+  check(hashlib.sha256(image).hexdigest()==sha and image[:3]==b'\\xff\\xd8\\xff','media hash or format mismatch')
   images[sha]=image
- assert stream.read(1)==b'','unexpected trailing data'
+ check(stream.read(1)==b'','unexpected trailing data')
  # Everything is verified before anything is written.
  target=root/'posting.json'
- assert target.is_file() and not target.is_symlink()
+ check(target.is_file() and not target.is_symlink(),'posting.json missing or a symlink')
  directory=root/'posting-media'
  if not directory.exists() and not directory.is_symlink():directory.mkdir(mode=0o700)
- assert directory.is_dir() and not directory.is_symlink()
- assert directory.resolve()==root/'posting-media'
+ check(directory.is_dir() and not directory.is_symlink(),'posting-media missing or a symlink')
+ check(directory.resolve()==root/'posting-media','posting-media resolves elsewhere')
  kept=set()
  for sha,image in images.items():
   path=directory/(sha+'.jpg')
@@ -82,9 +87,9 @@ MAIN = '''
 import subprocess,sys
 container=json.loads(subprocess.check_output(['docker','inspect','subcult-tv-api']))[0]
 mounts=[m for m in container['Mounts'] if m['Destination']=='/studio']
-assert len(mounts)==1
+check(len(mounts)==1,'expected exactly one /studio mount')
 root=Path(mounts[0]['Source']).resolve()
-assert root.is_relative_to(Path('/home/onnwee/.local/share/subcult-tv/studio-bundles'))
+check(root.is_relative_to(Path('/home/onnwee/.local/share/subcult-tv/studio-bundles')),'studio bundle outside the expected root')
 print(json.dumps(store(root,sys.stdin.buffer)))
 '''
 
@@ -142,7 +147,8 @@ def select_media(data, files, now=None):
 
 def payload(data, images):
     snapshot = json.dumps(data, indent=2).encode() + b'\n'
-    assert len(snapshot) <= MAX_SNAPSHOT
+    if len(snapshot) > MAX_SNAPSHOT:
+        raise ValueError('Posting snapshot exceeds the transfer limit')
     header = {'snapshot': len(snapshot), 'media': [{'sha256': sha, 'bytes': len(b)} for sha, b in images.items()]}
     return json.dumps(header).encode() + b'\n' + snapshot + b''.join(images.values()), snapshot
 
@@ -153,7 +159,8 @@ def main():
     parser.add_argument('--state', type=Path, required=True)
     parser.add_argument('--exporter', type=Path)
     args = parser.parse_args()
-    assert args.state.is_dir(), 'Runner state is unavailable'
+    if not args.state.is_dir():
+        raise SystemExit('Runner state is unavailable')
     spec = importlib.util.spec_from_file_location('export_posting', args.exporter or args.source_root/'scripts/export_posting.py')
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -169,8 +176,10 @@ def main():
     import shlex
     result = subprocess.run(['ssh', 'nuc', 'python3 -c ' + shlex.quote(REMOTE)], input=body, stdout=subprocess.PIPE, check=True)
     receipt = json.loads(result.stdout)
-    assert receipt['sha256'] == hashlib.sha256(snapshot).hexdigest()
-    assert receipt['media'] == sorted(images)
+    if receipt.get('sha256') != hashlib.sha256(snapshot).hexdigest():
+        raise ValueError('Remote snapshot hash does not match the sent snapshot')
+    if receipt.get('media') != sorted(images):
+        raise ValueError('Remote media inventory does not match the sent images')
     print(json.dumps(receipt))
 
 

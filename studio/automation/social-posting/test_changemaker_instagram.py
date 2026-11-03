@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
 import tempfile
@@ -235,6 +235,84 @@ class ChangemakerInstagramTests(unittest.TestCase):
             self.assertEqual(receipt['source_identities'],[importer.identity(item)])
             result=json.loads((state/'runs'/receipt['run_id']/'result.json').read_text())
             self.assertIn('small layout fix',result['open_checks'][0])
+
+    def test_unknown_showcase_product_is_a_recorded_failure_not_a_crash(self):
+        import showcase
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)/'studio';state=Path(tmp)/'state';state.mkdir()
+            (root/'automation/social-posting').mkdir(parents=True)
+            (root/'automation/social-posting/config.json').write_text('{}')
+            with self.assertRaises(ValueError):
+                showcase.execute('not-a-product', root, state)
+            # Config typos are filtered before rotation, so the daily job never asks for them.
+            cfg = {'daily_showcase': {'enabled': True, 'gap_days': 2, 'products': ['not-a-product', 'clpr']}}
+            (state/'runs').mkdir()
+            self.assertEqual(importer.showcase_product(cfg, state, datetime.now(timezone.utc)), 'clpr')
+            self.assertIsNone(importer.showcase_product({'daily_showcase': {'enabled': True, 'products': ['subcult', 'nope']}}, state, datetime.now(timezone.utc)))
+            with patch.object(importer, 'showcase_product', return_value='not-a-product'):
+                fallback = importer.showcase_fallback({}, root, state, datetime.now(timezone.utc))
+            self.assertTrue(fallback['error'].startswith('ValueError'))
+
+    def test_failed_fallback_is_a_failed_receipt_that_consumes_no_sources(self):
+        import craft
+        import showcase
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)/'studio';state=Path(tmp)/'state'
+            (root/'automation/social-posting').mkdir(parents=True)
+            (root/'content/social').mkdir(parents=True)
+            (root/'automation/social-posting/config.json').write_text(json.dumps(
+                {'codex':'unused','model':'configured','switchyard':{},'craft':True,
+                 'daily_showcase':{'enabled':True,'gap_days':2,'products':['clpr']}}))
+            (root/'content/social/Product Claims Register.md').write_text('Work in progress only.')
+            item={**self.items['S1'],'id':'S1','kind':'pull request','state':'merged','title':'Tidy a menu'}
+            context={'drafts':[{'run_id':'native-run','draft_sha256':'d'*64,'evidence_sha256':'e'*64,'draft':'Digest.',
+                               'evidence':{'status':'complete','items':[item]}}]}
+            with patch.object(importer,'HERE',root/'automation/social-posting'), patch.object(importer,'changes_context',return_value=context), \
+                 patch.object(craft,'instagram',return_value={'drafts':[],'open_checks':[]}), \
+                 patch.object(showcase,'execute',side_effect=OSError('/private/render failed')):
+                with self.assertRaisesRegex(ValueError, 'Evergreen'):
+                    importer.execute(root,state)
+            receipt=json.loads(next((state/'runs').glob('*/receipt.json')).read_text())
+            self.assertEqual(receipt['status'],'failed')
+            self.assertEqual(receipt['source_identities'],[])
+            self.assertEqual(importer.used_sources(state), set())
+            status=json.loads((state/'status.json').read_text())['jobs']['changemaker-instagram']
+            self.assertEqual((status['status'], status['run_id']), ('failed', receipt['run_id']))
+            self.assertNotIn('/private', json.dumps(status))
+
+    def test_unexpected_failure_after_collection_leaves_a_failed_receipt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)/'studio';state=Path(tmp)/'state'
+            (root/'automation/social-posting').mkdir(parents=True)
+            (root/'automation/social-posting/config.json').write_text('{}')
+            item={**self.items['S1'],'id':'S1','kind':'pull request','state':'merged','title':'x'}
+            context={'drafts':[{'run_id':'r','draft_sha256':'d'*64,'evidence_sha256':'e'*64,'draft':'D','evidence':{'status':'complete','items':[item]}}]}
+            with patch.object(importer,'changes_context',return_value=context), \
+                 patch.object(importer,'complete_changemaker_digest',side_effect=RuntimeError('/private detail')):
+                with self.assertRaises(RuntimeError):
+                    importer.execute(root,state)
+            receipt=json.loads(next((state/'runs').glob('*/receipt.json')).read_text())
+            self.assertEqual((receipt['status'], receipt['error'], receipt['source_identities']), ('failed', 'RuntimeError', []))
+            self.assertNotIn('/private', json.dumps(receipt))
+
+    def test_collection_continues_from_the_previous_complete_window(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)/'studio';state=Path(tmp)/'state'
+            (root/'automation/social-posting').mkdir(parents=True)
+            (root/'automation/social-posting/config.json').write_text('{}')
+            earlier=state/'runs'/'20261001T060000.000000Z-changemaker';earlier.mkdir(parents=True)
+            (earlier/'receipt.json').write_text(json.dumps({'mode':'changemaker','status':'empty','run_id':earlier.name}))
+            (earlier/'collection.json').write_text(json.dumps({'status':'empty','drafts':[],'window_end':'2026-10-01T06:00:00Z'}))
+            seen={}
+            def collect(cfg, now, days=1, since=None):
+                seen['since']=since
+                return {'status':'empty','drafts':[],'window_end':now.strftime('%Y-%m-%dT%H:%M:%SZ')}
+            with patch.object(importer,'changes_context',side_effect=collect), patch.object(importer,'showcase_fallback',return_value=None):
+                with patch.object(importer,'datetime') as clock:
+                    clock.now.return_value=datetime(2026,10,2,3,0,tzinfo=timezone.utc)
+                    clock.fromisoformat=datetime.fromisoformat
+                    importer.execute(root,state)
+            self.assertEqual(seen['since'], datetime(2026,10,1,6,0,tzinfo=timezone.utc))
 
 
 if __name__ == '__main__':

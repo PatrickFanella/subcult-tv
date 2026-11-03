@@ -54,7 +54,7 @@ export default function ReviewRow({
         type="button"
         className="review-row-summary"
         aria-expanded={expanded}
-        aria-controls={sheet}
+        aria-controls={expanded ? sheet : undefined}
         onClick={onToggle}
       >
         <RowThumbnail draft={draft} edit={edit} />

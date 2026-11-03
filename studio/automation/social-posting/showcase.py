@@ -12,20 +12,43 @@ from pathlib import Path
 
 import craft
 from changemaker_instagram import posting_slots, taken_slots, checklist, image_record, recent_captions
+import job_status
 from runner import atomic_write
 
 HERE = Path(__file__).resolve().parent
+JOB = 'changemaker-showcase'
+
+
+def products():
+    """Products the showcase can spotlight: every art-direction brand except the house brand."""
+    return [p for p in craft.ART if p != 'subcult']
 
 
 def execute(product, source_root, state):
+    """Prepare one showcase run; a failure after the run directory exists leaves a failed receipt."""
     os.umask(0o077)
     cfg = json.loads((source_root/'automation/social-posting/config.json').read_text())
-    if product not in craft.ART or product == 'subcult':
-        raise SystemExit('Unknown product: choose one of '+', '.join(p for p in craft.ART if p != 'subcult'))
+    if product not in products():
+        # A ValueError reaches the daily job's fallback handler; SystemExit would not.
+        raise ValueError('Unknown product: choose one of '+', '.join(products()))
     now = datetime.now(timezone.utc)
     run_id = now.strftime('%Y%m%dT%H%M%S.%fZ')+'-changemaker'
     directory = state/'runs'/run_id
     directory.mkdir(parents=True, mode=0o700)
+    try:
+        receipt = _prepare(cfg, product, source_root, state, now, run_id, directory)
+    except Exception as error:
+        failed = {'mode': 'changemaker', 'kind': 'showcase', 'product': product, 'status': 'failed', 'run_id': run_id,
+                  'draft_count': 0, 'checked_at': now.isoformat(), 'error': type(error).__name__,
+                  'source_identities': [], 'publishing_enabled': False}
+        atomic_write(directory/'receipt.json', json.dumps(failed, indent=2)+'\n')
+        job_status.write(state, JOB, 'failed', run_id=run_id, started=now, reason=type(error).__name__)
+        raise
+    job_status.write(state, JOB, 'success', run_id=run_id, started=now, reason=f"{receipt['draft_count']} draft(s) for {product}")
+    return receipt
+
+
+def _prepare(cfg, product, source_root, state, now, run_id, directory):
     claims = (source_root/'content/social/Product Claims Register.md').read_text()
     staged = craft.showcase(cfg, product, claims, directory/'craft', recent=recent_captions(state, now))
     drafts = []

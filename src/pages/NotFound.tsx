@@ -1,9 +1,13 @@
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
 import { useLocation } from 'react-router-dom';
+import { useHydrated } from '@/lib/use-hydrated';
 
 export default function NotFound() {
   const { pathname } = useLocation();
+  // The static 404 page is served at any unknown address, so the address is
+  // filled in after hydration instead of being baked into the markup.
+  const attempted = useHydrated() ? pathname : '';
   return (
     <>
       <SEOHead path="/404" notFound />
@@ -16,7 +20,7 @@ export default function NotFound() {
           start again from the homepage.
         </p>
         <div className="font-mono text-sm text-bone mb-8 space-y-1">
-          <p>&gt; attempted route: {pathname}</p>
+          <p>&gt; attempted route: {attempted}</p>
           <p>&gt; status: NOT_FOUND</p>
           <p>&gt; suggestion: return home</p>
         </div>

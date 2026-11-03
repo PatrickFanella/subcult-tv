@@ -37,6 +37,14 @@ class TuneTests(unittest.TestCase):
         self.assertEqual(len(fresh), 4)
         self.assertEqual(len(earlier), 1)
 
+    def test_cursor_comparison_survives_mixed_timestamp_spellings(self):
+        records = [record('favorited', '2026-10-09T04:00:00+00:00'), record('favorited', '2026-10-09T05:00:00Z'),
+                   record('favorited', '2026-10-09T03:00:00Z')]
+        # As strings, '+00:00' sorts after 'Z'; as instants only the 05:00 record is new.
+        fresh, earlier = tune.select(records, '2026-10-09T04:00:00Z')
+        self.assertEqual([r['decided_at'] for r in fresh], ['2026-10-09T05:00:00Z'])
+        self.assertEqual(len(earlier), 2)
+
     def test_waits_for_enough_feedback_without_calling_gitea(self):
         self.write([record('favorited', '2026-10-09T00:00:00Z')])
         with mock.patch.object(tune.feedback, 'pull', side_effect=OSError), mock.patch.object(tune, 'open_tuning_pr') as pr:

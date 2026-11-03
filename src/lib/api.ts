@@ -32,6 +32,32 @@ export function clearToken() {
   localStorage.removeItem('subcult-token');
 }
 
+// ── Session expiry ───────────────────────────────────────────
+// A 401 on any authenticated request means the stored token no longer works
+// (expired, revoked or the server restarted with a new secret). The token is
+// cleared and the auth provider is told so the admin shell can return to the
+// sign-in page instead of showing errors on every action.
+
+type UnauthorizedListener = () => void;
+const unauthorizedListeners = new Set<UnauthorizedListener>();
+
+/** Register a callback for an expired or revoked session; returns an unsubscribe. */
+export function onUnauthorized(listener: UnauthorizedListener): () => void {
+  unauthorizedListeners.add(listener);
+  return () => {
+    unauthorizedListeners.delete(listener);
+  };
+}
+
+const LOGIN_PATH = '/api/v1/auth/login';
+
+/** Clear the session after a 401 on an authenticated, non-login request. */
+function noteUnauthorized(path: string, status: number, token: string | null) {
+  if (status !== 401 || !token || path === LOGIN_PATH) return;
+  clearToken();
+  for (const listener of [...unauthorizedListeners]) listener();
+}
+
 // ── Fetch wrapper ────────────────────────────────────────────
 
 async function apiFetch<T>(path: string, options: RequestInit = {}): Promise<T> {
@@ -51,6 +77,7 @@ async function apiFetch<T>(path: string, options: RequestInit = {}): Promise<T> 
   });
 
   if (!res.ok) {
+    noteUnauthorized(path, res.status, token);
     const body = await res.json().catch(() => ({ error: res.statusText }));
     throw new APIError(body.error || res.statusText, res.status);
   }
@@ -443,7 +470,10 @@ export async function getStudioAsset(id: string, signal?: AbortSignal): Promise<
     headers: token ? { Authorization: `Bearer ${token}` } : {},
     signal,
   });
-  if (!response.ok) throw new APIError('Unable to load Studio asset', response.status);
+  if (!response.ok) {
+    noteUnauthorized('/api/v1/admin/studio/assets', response.status, token);
+    throw new APIError('Unable to load Studio asset', response.status);
+  }
   return response.blob();
 }
 
@@ -617,7 +647,10 @@ export function getPreparedMedia(sha256: string): Promise<Blob> {
     `${API_BASE}/api/v1/admin/studio/posting-media/${encodeURIComponent(sha256)}`,
     { headers: session ? { Authorization: `Bearer ${session}` } : {} },
   ).then((response) => {
-    if (!response.ok) throw new APIError('Prepared image unavailable', response.status);
+    if (!response.ok) {
+      noteUnauthorized('/api/v1/admin/studio/posting-media', response.status, session);
+      throw new APIError('Prepared image unavailable', response.status);
+    }
     return response.blob();
   });
   request.catch(() => preparedCache.delete(sha256));
@@ -655,8 +688,11 @@ export async function approveSocialSchedule(form: FormData) {
     headers: token ? { Authorization: `Bearer ${token}` } : {},
     body: form,
   });
-  const result = await response.json();
-  if (!response.ok) throw new APIError(result.error || 'Scheduling failed', response.status);
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    noteUnauthorized('/api/v1/admin/studio/delivery', response.status, token);
+    throw new APIError(result.error || 'Scheduling failed', response.status);
+  }
   return result as { status: string; post_id: string };
 }
 
@@ -679,8 +715,11 @@ export async function saveReviewDraft(id: string, form: FormData) {
     headers: token ? { Authorization: `Bearer ${token}` } : {},
     body: form,
   });
-  const result = await response.json();
-  if (!response.ok) throw new APIError(result.error || 'Saving failed', response.status);
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    noteUnauthorized('/api/v1/admin/studio/review', response.status, token);
+    throw new APIError(result.error || 'Saving failed', response.status);
+  }
   return result as { version: number };
 }
 /** Edit a queued post, or explicitly retry/reschedule a confirmed failed Instagram post. */
@@ -691,8 +730,10 @@ export async function editScheduledDraft(id: string, form: FormData) {
     { method: 'PUT', headers: token ? { Authorization: `Bearer ${token}` } : {}, body: form },
   );
   const result = await response.json().catch(() => ({}));
-  if (!response.ok)
+  if (!response.ok) {
+    noteUnauthorized('/api/v1/admin/studio/review/schedule', response.status, token);
     throw new APIError(result.error || 'The change could not be saved', response.status);
+  }
   return result as {
     status: string;
     post_id: string;
@@ -795,7 +836,10 @@ export async function getReviewDraftMedia(
       signal,
     },
   );
-  if (!response.ok) throw new APIError('Unable to load saved image', response.status);
+  if (!response.ok) {
+    noteUnauthorized('/api/v1/admin/studio/review/media', response.status, token);
+    throw new APIError('Unable to load saved image', response.status);
+  }
   return response.blob();
 }
 
@@ -823,10 +867,22 @@ export interface Publications {
   minimum_lead_hours: number;
 }
 export const getPublications = () => apiFetch<Publications>('/api/v1/admin/publications');
+/**
+ * Save a reviewed website/Patreon draft. Only the fields the server reads are
+ * sent; `source` and `provider_url` can push the whole record past its
+ * 60,000-byte body limit.
+ */
 export const savePublication = (draft: PublicationDraft) =>
   apiFetch<{ version: number }>(`/api/v1/admin/publications/${encodeURIComponent(draft.id)}`, {
     method: 'PUT',
-    body: JSON.stringify(draft),
+    body: JSON.stringify({
+      title: draft.title,
+      body: draft.body,
+      excerpt: draft.excerpt,
+      due_at: draft.due_at,
+      audience: draft.audience,
+      version: draft.version,
+    }),
   });
 export const approvePublication = (id: string, version: number) =>
   apiFetch<{ status: string }>(`/api/v1/admin/publications/${encodeURIComponent(id)}/approve`, {
@@ -948,10 +1004,12 @@ export async function approveBlueskyDraft(id: string, form: FormData) {
     },
   );
   const result = await response.json().catch(() => ({}));
-  if (!response.ok)
+  if (!response.ok) {
+    noteUnauthorized('/api/v1/admin/studio/bluesky', response.status, token);
     throw new APIError(
       result.error || 'Bluesky scheduling could not be confirmed',
       response.status,
     );
+  }
   return result as BlueskyReceipt;
 }

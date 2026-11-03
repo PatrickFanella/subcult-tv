@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { normalizePath } from '@/lib/normalize-path';
 import SupportCallout from '@/components/SupportCallout';
 import SocialLinks from '@/components/SocialLinks';
 import NewsletterSignup from '@/components/NewsletterSignup';
@@ -7,7 +8,7 @@ import { getProductPath } from '@/lib/product-paths';
 
 export default function Footer() {
   const products = useShowcaseProducts();
-  const { pathname } = useLocation();
+  const pathname = normalizePath(useLocation().pathname);
   const showCallout = ['/', '/products', '/about', '/development', '/contact'].includes(pathname);
   return (
     <footer className="border-t border-fog bg-soot" role="contentinfo">
@@ -52,7 +53,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-fog flex flex-col sm:flex-row justify-between gap-4 text-xs text-bone">
-          <p>© {new Date().getFullYear()} SUBCULT.</p>
+          <p suppressHydrationWarning>© {new Date().getFullYear()} SUBCULT.</p>
           <div className="flex gap-6 flex-wrap">
             <Link to="/products">All {products.length} products →</Link>
             <Link to="/admin">Admin</Link>

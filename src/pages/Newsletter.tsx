@@ -13,7 +13,7 @@ export default function Newsletter() {
           One email a month with releases and what we’re working on. You confirm by clicking the
           link in the first email, and every email has an unsubscribe link.
         </p>
-        <NewsletterSignup />
+        <NewsletterSignup headingLevel="h2" />
       </div>
     </>
   );

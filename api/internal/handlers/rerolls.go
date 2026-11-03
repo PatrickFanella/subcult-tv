@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"io"
+	"log/slog"
 	"net/http"
 	"net/url"
 	"strconv"
@@ -28,6 +29,7 @@ type draftReroll struct {
 	Status        string     `json:"status"`
 	Error         string     `json:"error"`
 	ResultDraftID string     `json:"result_draft_id"`
+	Attempts      int        `json:"attempts"`
 	RequestedAt   time.Time  `json:"requested_at"`
 	FinishedAt    *time.Time `json:"finished_at"`
 }
@@ -188,8 +190,10 @@ func (h *Handler) ClaimRerolls(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	// Claims abandoned three times stop retrying and report the failure.
-	h.DB.Exec(r.Context(), `UPDATE draft_rerolls SET status='failed',error='Preparation did not finish after three attempts',finished_at=NOW() WHERE status='running' AND attempts>=3 AND claimed_at < NOW()-INTERVAL '`+rerollLease+`'`)
-	rows, err := h.DB.Query(r.Context(), `UPDATE draft_rerolls SET status='running',claimed_at=NOW(),attempts=attempts+1 WHERE id IN (SELECT id FROM draft_rerolls WHERE status='pending' OR (status='running' AND attempts<3 AND claimed_at < NOW()-INTERVAL '`+rerollLease+`') ORDER BY requested_at LIMIT 1 FOR UPDATE SKIP LOCKED) RETURNING id,draft_id,mode,note,caption,image_sha256,status,error,result_draft_id,requested_at,finished_at`)
+	if _, err := h.DB.Exec(r.Context(), `UPDATE draft_rerolls SET status='failed',error='Preparation did not finish after three attempts',finished_at=NOW() WHERE status='running' AND attempts>=3 AND claimed_at < NOW()-INTERVAL '`+rerollLease+`'`); err != nil {
+		slog.Error("reroll abandonment sweep failed", "error", err)
+	}
+	rows, err := h.DB.Query(r.Context(), `UPDATE draft_rerolls SET status='running',claimed_at=NOW(),attempts=attempts+1 WHERE id IN (SELECT id FROM draft_rerolls WHERE status='pending' OR (status='running' AND attempts<3 AND claimed_at < NOW()-INTERVAL '`+rerollLease+`') ORDER BY requested_at LIMIT 1 FOR UPDATE SKIP LOCKED) RETURNING id,draft_id,mode,note,caption,image_sha256,status,error,result_draft_id,attempts,requested_at,finished_at`)
 	if err != nil {
 		writeError(w, 503, "Re-rolls are unavailable")
 		return
@@ -198,7 +202,7 @@ func (h *Handler) ClaimRerolls(w http.ResponseWriter, r *http.Request) {
 	result := []draftReroll{}
 	for rows.Next() {
 		var d draftReroll
-		if err = rows.Scan(&d.ID, &d.DraftID, &d.Mode, &d.Note, &d.Caption, &d.ImageSHA256, &d.Status, &d.Error, &d.ResultDraftID, &d.RequestedAt, &d.FinishedAt); err != nil {
+		if err = rows.Scan(&d.ID, &d.DraftID, &d.Mode, &d.Note, &d.Caption, &d.ImageSHA256, &d.Status, &d.Error, &d.ResultDraftID, &d.Attempts, &d.RequestedAt, &d.FinishedAt); err != nil {
 			writeError(w, 503, "Re-rolls are unavailable")
 			return
 		}
@@ -211,7 +215,10 @@ func (h *Handler) ClaimRerolls(w http.ResponseWriter, r *http.Request) {
 	writeJSON(w, 200, result)
 }
 
-// FinishReroll records the outcome of one claimed request.
+// FinishReroll records the outcome of one claimed request. When the worker
+// echoes the claimed `attempts`, the update is bound to it so a stale worker
+// cannot finish a job that a later attempt now owns. Workers that predate the
+// field omit it and keep the status-only check.
 func (h *Handler) FinishReroll(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Cache-Control", "private, no-store")
 	if !secretAuthorized(r, h.PostingPreparationKey) {
@@ -221,10 +228,11 @@ func (h *Handler) FinishReroll(w http.ResponseWriter, r *http.Request) {
 	id, err := strconv.ParseInt(chi.URLParam(r, "id"), 10, 64)
 	var input struct {
 		Status        string `json:"status"`
+		Attempts      int    `json:"attempts"`
 		ResultDraftID string `json:"result_draft_id"`
 		Error         string `json:"error"`
 	}
-	if err != nil || json.NewDecoder(io.LimitReader(r.Body, 8<<10)).Decode(&input) != nil {
+	if err != nil || json.NewDecoder(io.LimitReader(r.Body, 8<<10)).Decode(&input) != nil || input.Attempts < 0 {
 		writeError(w, 400, "Invalid re-roll result")
 		return
 	}
@@ -252,9 +260,9 @@ func (h *Handler) FinishReroll(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	var draftID string
-	err = h.DB.QueryRow(r.Context(), `UPDATE draft_rerolls SET status=$2,result_draft_id=$3,error=$4,finished_at=NOW() WHERE id=$1 AND status='running' RETURNING draft_id`, id, input.Status, input.ResultDraftID, input.Error).Scan(&draftID)
+	err = h.DB.QueryRow(r.Context(), `UPDATE draft_rerolls SET status=$2,result_draft_id=$3,error=$4,finished_at=NOW() WHERE id=$1 AND status='running' AND ($5=0 OR attempts=$5) RETURNING draft_id`, id, input.Status, input.ResultDraftID, input.Error, input.Attempts).Scan(&draftID)
 	if errors.Is(err, pgx.ErrNoRows) {
-		writeError(w, 409, "This re-roll is not running")
+		writeError(w, 409, "This re-roll is not running or is held by another attempt")
 		return
 	}
 	if err != nil {

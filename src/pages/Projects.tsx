@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import ProductVisual from '@/components/ProductVisual';
 import Teasers from '@/components/Teasers';
+import StatusBadge from '@/components/StatusBadge';
 import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { getProductPath } from '@/lib/product-paths';
 import { groupProducts } from '@/lib/showcase';
@@ -56,7 +57,10 @@ export default function Projects() {
                   >
                     <ProductVisual product={product} priority={groupIndex === 0 && index < 2} />
                   </Link>
-                  <p className="showcase-eyebrow mt-6">{product.category}</p>
+                  <p className="showcase-eyebrow mt-6 flex flex-wrap gap-x-4 gap-y-1">
+                    <span>{product.category}</span>
+                    <StatusBadge status={product.project.status} />
+                  </p>
                   <h3 id={`directory-${product.project.slug}`} className="mb-3">
                     <Link to={getProductPath(product.project.slug)}>{product.project.name}</Link>
                   </h3>

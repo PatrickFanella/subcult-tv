@@ -4,6 +4,7 @@ import { publishedTiers, type SupportTier } from '@/lib/patreon-tiers';
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
 import { PATREON_URL } from '@/lib/links';
+import { Link } from 'react-router-dom';
 
 const SUPPORT_OUTCOMES = [
   {
@@ -204,13 +205,16 @@ export default function Patreon() {
       <div className="support-page overflow-x-clip">
         <section className="showcase-hero support-hero">
           <div className={SHELL}>
-            <img src="/brand/subcult/master.svg?v=logo-bcd-20261003" alt="" className="subcult-hero-mark" />
+            <img
+              src="/brand/subcult/master.svg?v=logo-bcd-20261003"
+              alt=""
+              className="subcult-hero-mark"
+            />
             <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-20 items-end">
               <div className="min-w-0">
                 <p className="showcase-eyebrow">SUBCULT / THE WORKSHOP</p>
                 <h1 className="showcase-title">
-                  Support the workshop
-                  <br />
+                  Support the workshop <br />
                   <span>behind the products.</span>
                 </h1>
               </div>
@@ -231,9 +235,9 @@ export default function Patreon() {
                   >
                     Join on Patreon ↗
                   </Button>
-                  <a href="/products" className="support-secondary font-mono text-sm">
+                  <Link to="/products" className="support-secondary font-mono text-sm">
                     See the work first →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

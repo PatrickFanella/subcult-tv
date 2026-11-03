@@ -26,6 +26,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://subcult.tv/development</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://subcult.tv/newsletter</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>

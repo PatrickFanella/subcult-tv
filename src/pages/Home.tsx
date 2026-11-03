@@ -24,8 +24,7 @@ export default function Home() {
             <div>
               <p className="showcase-eyebrow">SUBCULTURE COLLECTIVE / INDEPENDENT SOFTWARE</p>
               <h1 className="showcase-title">
-                Tools for the culture
-                <br />
+                Tools for the culture <br />
                 <span>we build together.</span>
               </h1>
             </div>

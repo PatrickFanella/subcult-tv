@@ -1,4 +1,4 @@
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, screen, cleanup, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { afterEach, expect, it, vi } from 'vitest';
 import AdminDashboard from '@/pages/admin/AdminDashboard';
@@ -45,7 +45,11 @@ it('renders Markdown structure while suppressing executable HTML and remote imag
   expect(container.querySelector('script')).toBeNull();
   expect(container.querySelector('img')).toBeNull();
 });
-it('uses approved project snapshots on public products and retains the curated roster', () => {
+// The source catalog owns product names and copy; an approved API snapshot only
+// supplies status and the live URL (src/lib/use-showcase-products.ts). The
+// earlier version of this test expected the snapshot's name and description to
+// replace the curated ones, which swapped visible content after load.
+it('keeps curated product copy and takes only status and URL from approved snapshots', () => {
   const approved: APIProject[] = [
     {
       id: 'reviewed',
@@ -57,11 +61,12 @@ it('uses approved project snapshots on public products and retains the curated r
       name: 'Reviewed clip library',
       description: 'Reviewed public summary',
       type: ['software'],
-      status: 'active',
+      status: 'incubating',
       stack: [],
       topics: [],
       sort_order: 0,
-      featured: true,
+      featured: false,
+      homepage: 'https://clips.example.test',
     },
   ];
   render(
@@ -71,7 +76,9 @@ it('uses approved project snapshots on public products and retains the curated r
       </ProjectCatalogContext.Provider>
     </MemoryRouter>,
   );
-  expect(screen.getByRole('heading', { name: 'Reviewed clip library' })).toBeInTheDocument();
-  expect(screen.getByText('Reviewed public summary')).toBeInTheDocument();
+  expect(screen.queryByRole('heading', { name: 'Reviewed clip library' })).not.toBeInTheDocument();
+  expect(screen.queryByText('Reviewed public summary')).not.toBeInTheDocument();
+  const clpr = screen.getByRole('article', { name: 'clpr' });
+  expect(within(clpr).getByText('◐ INCUBATING')).toBeInTheDocument();
   expect(screen.getByRole('heading', { name: 'Patchwork' })).toBeInTheDocument();
 });

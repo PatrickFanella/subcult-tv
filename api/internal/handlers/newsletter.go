@@ -31,7 +31,20 @@ func (h *Handler) Subscribe(w http.ResponseWriter, r *http.Request) {
 	}
 
 	doubleOptIn := h.Mail != nil && h.Mail.NewsletterEnabled()
+	message := "Subscribed. The newsletter goes out once a month."
 	if doubleOptIn {
+		message = "Check your inbox for a confirmation link. You are not subscribed until you click it."
+		// A confirmed, active subscriber gets the normal reply without another
+		// confirmation email, so the endpoint cannot be used to flood an inbox.
+		// Unconfirmed or unsubscribed rows keep the double opt-in flow.
+		var confirmed, active bool
+		err := h.DB.QueryRow(r.Context(),
+			`SELECT confirmed, unsubscribed_at IS NULL FROM subscribers WHERE email = $1`, email,
+		).Scan(&confirmed, &active)
+		if err == nil && confirmed && active {
+			writeJSON(w, http.StatusCreated, map[string]string{"message": message})
+			return
+		}
 		ctx, cancel := context.WithTimeout(r.Context(), 20*time.Second)
 		defer cancel()
 		if err := h.Mail.RequestDoubleOptIn(ctx, email); err != nil {
@@ -55,10 +68,6 @@ func (h *Handler) Subscribe(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	message := "Subscribed. The newsletter goes out once a month."
-	if doubleOptIn {
-		message = "Check your inbox for a confirmation link. You are not subscribed until you click it."
-	}
 	writeJSON(w, http.StatusCreated, map[string]string{"message": message})
 }
 
@@ -167,6 +176,10 @@ func (h *Handler) ListSubscribers(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		subs = append(subs, s)
+	}
+	if err := rows.Err(); err != nil {
+		writeError(w, http.StatusInternalServerError, "failed to read subscribers")
+		return
 	}
 
 	if subs == nil {

@@ -16,6 +16,7 @@ from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 import hashlib
 import json
+from pathlib import Path
 import subprocess
 import time
 import urllib.error
@@ -132,10 +133,63 @@ def merged_pulls(options: dict, token: str, repository: str, start: datetime, en
     return found
 
 
-def collect_changes(cfg: dict, now: datetime, days: int = 1) -> dict:
-    """Merged pull requests from the configured repositories in the last `days`."""
+MAX_CATCH_UP_DAYS = 7
+
+
+def identity(item: dict) -> str:
+    """The ledger key of one collected item: its URL plus update time."""
+    return hashlib.sha256((str(item.get('url', ''))+'@'+str(item.get('updated_at', ''))).encode()).hexdigest()
+
+
+def window_start(now: datetime, days: int, since: datetime | None) -> datetime:
+    """Where the collection window opens.
+
+    Without a previous collection the window is the last `days`. With one, it opens
+    where that collection closed, so a manual early run leaves no permanent gap, but
+    never more than MAX_CATCH_UP_DAYS back and never later than the default start.
+    """
+    default = now-timedelta(days=days)
+    if since is None or since.tzinfo is None or since >= now:
+        return default
+    return max(min(since, default), now-timedelta(days=MAX_CATCH_UP_DAYS))
+
+
+def previous_window_end(state: Path, mode: str, now: datetime, limit: int = 60) -> datetime | None:
+    """The `window_end` of the newest complete collection a `*-<mode>` run recorded.
+
+    Failed runs and partial or unavailable collections do not close a window; the next
+    run collects the same period again. Anything unreadable is ignored.
+    """
+    runs = Path(state)/'runs'
+    if not runs.is_dir():
+        return None
+    for receipt_path in sorted(runs.glob(f'*-{mode}/receipt.json'), reverse=True)[:limit]:
+        collection_path = receipt_path.with_name('collection.json')
+        try:
+            if receipt_path.is_symlink() or receipt_path.stat().st_size > 64000 or not collection_path.is_file() \
+                    or collection_path.is_symlink() or collection_path.stat().st_size > 2_000_000:
+                continue
+            receipt = json.loads(receipt_path.read_text())
+            collection = json.loads(collection_path.read_text())
+        except (ValueError, OSError):
+            continue
+        if not isinstance(receipt, dict) or not isinstance(collection, dict) or receipt.get('status') == 'failed':
+            continue
+        if collection.get('status') in ('partial', 'unavailable') or not isinstance(collection.get('window_end'), str):
+            continue
+        try:
+            end = datetime.fromisoformat(collection['window_end'].replace('Z', '+00:00'))
+        except ValueError:
+            continue
+        if end.tzinfo is not None and end <= now:
+            return end
+    return None
+
+
+def collect_changes(cfg: dict, now: datetime, days: int = 1, since: datetime | None = None) -> dict:
+    """Merged pull requests from the configured repositories since `since` or in the last `days`."""
     options = settings(cfg)
-    start, end = now-timedelta(days=days), now
+    start, end = window_start(now, days, since), now
     token = gitea_token(options)
     items, failures, counts = [], [], {}
     for repository in options['repositories']:
@@ -173,10 +227,15 @@ def collection_note(evidence: dict) -> str:
     return '\n'.join(lines)+'\n'
 
 
-def changes_context(cfg: dict, now: datetime, days: int = 1) -> dict:
-    """Collection in the shape the jobs read: one hash-bound 'draft' holding the evidence."""
-    evidence = collect_changes(cfg, now, days)
-    context = {'status': 'empty', 'checked_at': now.isoformat(), 'drafts': [], 'adapter': evidence['adapter']}
+def changes_context(cfg: dict, now: datetime, days: int = 1, since: datetime | None = None) -> dict:
+    """Collection in the shape the jobs read: one hash-bound 'draft' holding the evidence.
+
+    `window_start`/`window_end` travel at the top level so a saved `collection.json`
+    tells the next run where to continue, even when nothing merged.
+    """
+    evidence = collect_changes(cfg, now, days, since)
+    context = {'status': 'empty', 'checked_at': now.isoformat(), 'drafts': [], 'adapter': evidence['adapter'],
+               'window_start': evidence['window_start'], 'window_end': evidence['window_end']}
     if not evidence['items'] and not evidence['failures']:
         return context
     # Hash the items, not the window: the same set of merged pull requests is the same

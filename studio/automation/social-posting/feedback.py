@@ -60,7 +60,16 @@ def records(payload, state):
                     'draft_id': r.get('draft_id', ''), 'original_text': draft_text(state, r.get('draft_id')),
                     'final_text': '', 'reasons': [], 'note': r.get('note', ''), 'mode': r.get('mode', ''),
                     'decided_at': r.get('requested_at', '')})
-    return sorted(out, key=lambda r: r['decided_at'], reverse=True)
+    return sorted(out, key=lambda r: when(r['decided_at']), reverse=True)
+
+
+def when(value):
+    """Parse an ISO timestamp for ordering; `Z` and `+00:00` compare equal, unreadable values sort first."""
+    try:
+        parsed = datetime.fromisoformat(str(value or '').replace('Z', '+00:00'))
+    except ValueError:
+        return datetime.min.replace(tzinfo=timezone.utc)
+    return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
 
 
 def pull(state, ingest_env, now=None):

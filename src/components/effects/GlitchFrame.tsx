@@ -1,4 +1,5 @@
 import { useEffects } from '@/context/useEffects';
+import { useHydrated } from '@/lib/use-hydrated';
 
 interface GlitchFrameProps {
   children: React.ReactNode;
@@ -16,8 +17,11 @@ export default function GlitchFrame({
   enableTracking = false,
 }: GlitchFrameProps) {
   const { effectLevel } = useEffects();
+  // The static HTML is rendered without effects; the visitor's saved VHS
+  // setting applies once React owns the DOM.
+  const hydrated = useHydrated();
 
-  if (effectLevel === 'clean') {
+  if (!hydrated || effectLevel === 'clean') {
     return <div className={className}>{children}</div>;
   }
 

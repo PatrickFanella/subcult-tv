@@ -1,6 +1,7 @@
 import { Link, Navigate, useParams } from 'react-router-dom';
 import ProductVisual from '@/components/ProductVisual';
 import SEOHead from '@/components/SEOHead';
+import StatusBadge from '@/components/StatusBadge';
 import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { PRODUCT_LANDINGS } from '@/lib/product-landings';
 import { BRAND_HEROES, SCREENSHOT_CAPTIONS } from '@/lib/product-visuals';
@@ -41,12 +42,15 @@ export default function ProductLanding() {
         </nav>
         <section className="landing-hero" aria-labelledby="product-title">
           <div className="landing-hero-copy">
-            <p className="landing-eyebrow">{product.category}</p>
+            <p className="landing-eyebrow landing-eyebrow-status">
+              <span>{product.category}</span>
+              <StatusBadge status={project.status} />
+            </p>
             <div className="landing-wordmark">
               {PRODUCT_MARKS[project.slug] && <img src={PRODUCT_MARKS[project.slug]} alt="" />}
               <h1 id="product-title">{project.name}</h1>
             </div>
-            <h2 className="landing-headline">{product.headline}</h2>
+            <p className="landing-headline">{product.headline}</p>
             <p className="landing-summary">{product.summary}</p>
             <div className="landing-actions">
               <a

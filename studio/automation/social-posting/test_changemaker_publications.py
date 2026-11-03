@@ -67,6 +67,19 @@ class PublicationPreparationTests(unittest.TestCase):
                 self.assertTrue(all('approved' not in d and 'status' not in d for d in payload))
                 self.assertGreaterEqual((datetime.fromisoformat(payload[0]['due_at'])-before).total_seconds(),48*3600)
                 producer.execute(root,state);self.assertEqual(run.call_count,1)
+                receipts=[json.loads(p.read_text()) for p in sorted((state/'runs').glob('*-publications/receipt.json'))]
+                self.assertEqual(receipts[0]['status'],'drafts_prepared')
+                self.assertEqual(receipts[0]['source_identities'],[producer.identity(item)])
+                self.assertEqual(json.loads((state/'runs'/receipts[0]['run_id']/'collection.json').read_text()),context)
+                # The ledger, not only the digest hash, keeps a read source from returning.
+                self.assertEqual(receipts[1]['status'],'no_new_sources')
+                self.assertEqual(json.loads((state/'status.json').read_text())['jobs']['changemaker-publications']['status'],'skipped')
+                fresh={**item,'id':'S1','url':'https://git.example/o/r/pulls/2','updated_at':'2026-10-12T00:00:00Z','title':'Faster export'}
+                later={'drafts':[{**context['drafts'][0],'evidence_sha256':'a'*64,'evidence':{'status':'complete','items':[fresh]}}]}
+                with patch.object(producer,'changes_context',return_value=later):
+                    self.assertEqual(producer.execute(root,state)['status'],'already_prepared_today')
+                self.assertEqual(run.call_count,1)
+                self.assertNotIn(producer.identity(fresh),producer.used_sources(state))
     def test_staged_edition_is_used_without_the_single_pass_call(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)/'studio';state=Path(tmp)/'state';here=root/'automation/social-posting'
@@ -112,6 +125,7 @@ class QuietDay(unittest.TestCase):
             with patch.object(producer,'HERE',here),patch.object(producer,'changes_context',return_value=context),patch.object(producer.subprocess,'run',side_effect=generate):
                 result=producer.execute(root,state)
             self.assertEqual(result,{'status':'no_user_facing_change','draft_count':0,'publishing_enabled':False})
+            self.assertEqual(producer.used_sources(state),{producer.identity(item)})
             folder=state/'publications'/('f'*64)
             self.assertFalse((folder/'drafts.json').exists())
             self.assertEqual(json.loads((folder/'skipped.json').read_text())['reason'],'Only a layout repair merged.')

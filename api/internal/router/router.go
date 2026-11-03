@@ -1,6 +1,8 @@
 package router
 
 import (
+	"log/slog"
+	"net"
 	"net/http"
 	"regexp"
 	"time"
@@ -36,6 +38,21 @@ func cspConnectOrigins(cfg *config.Config) []string {
 	return origins
 }
 
+// trustedProxies parses the configured reverse-proxy networks, falling back to
+// the private defaults. An invalid entry is logged and the defaults are used so
+// a typo cannot turn every forwarded header into a trusted one.
+func trustedProxies(cfg *config.Config) []*net.IPNet {
+	if len(cfg.TrustedProxyCIDRs) > 0 {
+		nets, err := middleware.ParseCIDRs(cfg.TrustedProxyCIDRs)
+		if err == nil {
+			return nets
+		}
+		slog.Error("invalid TRUSTED_PROXY_CIDRS; using private defaults", "error", err)
+	}
+	nets, _ := middleware.ParseCIDRs(middleware.DefaultTrustedProxyCIDRs)
+	return nets
+}
+
 // New creates a configured Chi router with all API routes.
 func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 	r := chi.NewRouter()
@@ -47,7 +64,10 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 	studioAssetLimiter := middleware.NewRateLimiter(StudioAssetRateLimit, RateLimitWindow)
 
 	// ── Global middleware ────────────────────────────────────
-	r.Use(chimw.RealIP)
+	// chi's RealIP is deliberately not used: it rewrites RemoteAddr from
+	// True-Client-IP, X-Real-IP or X-Forwarded-For sent by any client, which
+	// lets a caller choose its own rate-limit bucket per request.
+	r.Use(middleware.ClientIP(trustedProxies(cfg)))
 	r.Use(chimw.RequestID)
 	r.Use(middleware.Logger)
 	r.Use(chimw.Recoverer)
@@ -120,6 +140,7 @@ func New(cfg *config.Config, h *handlers.Handler) *chi.Mux {
 		// ── Protected (admin) routes ────────────────────────
 		api.Group(func(admin chi.Router) {
 			admin.Use(middleware.Auth(cfg.JWTSecret, h.TokenRevoked))
+			admin.Use(middleware.RequireRole("admin"))
 
 			admin.Get("/auth/me", h.Me)
 			admin.Post("/auth/logout", h.Logout)

@@ -21,8 +21,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
+  // An expired or revoked token answers 401 mid-session; drop the user so the
+  // admin shell returns to sign-in.
+  useEffect(() => api.onUnauthorized(() => setUser(null)), []);
+
   const login = useCallback(async (username: string, password: string) => {
     const res = await api.login(username, password);
+    if (res.user.role !== 'admin') {
+      api.clearToken();
+      throw new Error('This account is not an admin. Sign in with an admin account.');
+    }
     setUser(res.user);
   }, []);
 
