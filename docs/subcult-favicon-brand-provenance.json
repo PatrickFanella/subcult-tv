@@ -1,0 +1,13 @@
+{
+  "repository": "subculture-collective/subcult-tv",
+  "note": "Derived public icon. studio/scripts/export_studio.py rewrites subcult-brand-provenance.json from byte copies, so this entry lives in its own file.",
+  "files": [
+    {
+      "source": "studio/brands/subcult/logos/mark-compact-primary-outlined.svg",
+      "sourceSha256": "39d405daa88cb0bd2e464436374dc5b4a78817605fc23df24b404e8501865c54",
+      "transform": "rsvg-convert at 16, 32 and 48 px, combined into one ICO with ImageMagick (magick 16.png 32.png 48.png favicon.ico)",
+      "target": "public/favicon.ico",
+      "sha256": "b77db3a1f01c7dcf641fb6ef175a3440ba4135ddd8215ae31dd8e6c8e4b97a8f"
+    }
+  ]
+}
