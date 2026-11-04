@@ -15,6 +15,7 @@ Each folder is one brand's production pack: `GUIDE.md`, tokens in JSON and CSS, 
 | Kork | Pinned / flyer wall | [kork](kork/GUIDE.md) |
 | Left Field | The field ledger | [left-field](left-field/GUIDE.md) |
 | Patchwork | Neighbourhood fabric | [patchwork](patchwork/GUIDE.md) |
+| patstack | Rack / registration | [patstack](patstack/GUIDE.md) |
 | Patrick__Eff | Patch / routed signal | [patrick__eff](patrick__eff/GUIDE.md) |
 | Prichal | Docking node / engineering drawing | [prichal](prichal/GUIDE.md) |
 | Rekolekt | Index / original concept | [rekolekt](rekolekt/GUIDE.md) |

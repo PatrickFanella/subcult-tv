@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A3 Registration · documentation page</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#8b5cf6}
+a{color:#100b19}a:hover{color:#3b2470}
+a:focus-visible,button:focus-visible{outline:2px solid #100b19;outline-offset:2px}
+</style>
+</helmet>
+<div style="min-height: 100%; background: #8b5cf6; color: #100b19; font-family: 'Space Grotesk', sans-serif; display: flex; flex-direction: column">
+  <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 18px 32px; border-bottom: 2px solid #100b19">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #100b19">
+      <svg width="32" height="32" viewBox="0 0 72 72" role="img" aria-label="patstack mark">
+        <rect x="22" y="22" width="40" height="40" fill="#3b2470"></rect>
+        <rect x="14" y="14" width="40" height="40" fill="#00ff88"></rect>
+        <rect x="6" y="6" width="40" height="40" fill="#f0ece4" stroke="#100b19" stroke-width="3"></rect>
+        <g stroke="#100b19" stroke-width="2"><line x1="26" y1="16" x2="26" y2="36"></line><line x1="16" y1="26" x2="36" y2="26"></line></g>
+      </svg>
+      <span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0.04em; text-transform: uppercase">patstack</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #100b19; border: 1px solid #100b19; padding: 3px 7px">a SUBCULT tool</span>
+    </a>
+    <nav aria-label="Sections" style="display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase">
+      <a href="#registration" style="color: #100b19; text-decoration: none">Registration</a>
+      <a href="#catalog" style="color: #100b19; text-decoration: none">Catalog</a>
+      <a href="#install" style="color: #100b19; text-decoration: none">Install</a>
+      <a href="#states" style="color: #100b19; text-decoration: none">States</a>
+      <a href="https://git.subcult.tv/subculture-collective/patstack" style="color: #100b19; text-decoration: underline; text-underline-offset: 3px">Source</a>
+    </nav>
+  </header>
+
+  <main id="top" style="width: 100%; max-width: 1200px; margin: 32px auto; padding: 0 32px; box-sizing: border-box">
+    <div style="position: relative; background: #f0ece4; border: 2px solid #100b19; padding: 56px 48px; display: flex; flex-direction: column; gap: 64px">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" style="position: absolute; left: 10px; top: 10px"><g stroke="#100b19" stroke-width="1.5" fill="none"><line x1="11" y1="0" x2="11" y2="22"></line><line x1="0" y1="11" x2="22" y2="11"></line><circle cx="11" cy="11" r="5"></circle></g></svg>
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" style="position: absolute; right: 10px; top: 10px"><g stroke="#100b19" stroke-width="1.5" fill="none"><line x1="11" y1="0" x2="11" y2="22"></line><line x1="0" y1="11" x2="22" y2="11"></line><circle cx="11" cy="11" r="5"></circle></g></svg>
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" style="position: absolute; left: 10px; bottom: 10px"><g stroke="#100b19" stroke-width="1.5" fill="none"><line x1="11" y1="0" x2="11" y2="22"></line><line x1="0" y1="11" x2="22" y2="11"></line><circle cx="11" cy="11" r="5"></circle></g></svg>
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" style="position: absolute; right: 10px; bottom: 10px"><g stroke="#100b19" stroke-width="1.5" fill="none"><line x1="11" y1="0" x2="11" y2="22"></line><line x1="0" y1="11" x2="22" y2="11"></line><circle cx="11" cy="11" r="5"></circle></g></svg>
+
+      <section style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+        <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+          <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #5e5570">agent skill stack · private source · authored on kvant, installed everywhere</p>
+          <h1 style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 64px; line-height: 0.98; text-transform: uppercase; letter-spacing: 0.005em; color: #100b19">Author once.<br>Deploy guarded.</h1>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #100b19; max-width: 560px">Personal skills, shared skills, profiles and global agent instructions live in one repository. The installer plans against recorded hashes, applies with a journal and verified backups, and refuses to overwrite drift.</p>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <pre style="margin: 0; padding: 14px 16px; background: #100b19; color: #f0ece4; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; overflow-x: auto"><span style="color: #a89fb8">$ </span>python scripts/install.py plan &gt; /tmp/patstack-plan.json</pre>
+            <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: #5e5570">read-only · records source revision, destinations, expected and desired trees</p>
+          </div>
+          <a href="#install" style="align-self: flex-start; font-size: 15px; font-weight: 500; color: #100b19; text-decoration: underline; text-underline-offset: 4px">Read the full procedure</a>
+        </div>
+
+        <section id="registration" aria-labelledby="reg-h" style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #5e5570; border-bottom: 1px solid #100b19; padding-bottom: 8px">
+            <h2 id="reg-h" style="margin: 0; font: inherit; color: #100b19">Registration · three trees</h2>
+            <span>fig. 1</span>
+          </div>
+          <div style="position: relative; height: 250px" role="img" aria-label="Three plates offset like a misregistered print: installed tree at the back, plan in the middle, source tree in front, with a crosshair that aligns them">
+            <div style="position: absolute; left: 32px; top: 32px; width: 300px; height: 180px; background: #3b2470; display: flex; align-items: flex-end; padding: 10px 12px; box-sizing: border-box"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #f0ece4">installed tree · ~/.codex/skills</span></div>
+            <div style="position: absolute; left: 16px; top: 16px; width: 300px; height: 180px; background: #00ff88; display: flex; align-items: flex-end; padding: 10px 12px; box-sizing: border-box"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #100b19">plan · expected and desired</span></div>
+            <div style="position: absolute; left: 0; top: 0; width: 300px; height: 180px; background: #f0ece4; border: 2px solid #100b19; box-sizing: border-box; display: flex; align-items: flex-end; padding: 10px 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #100b19">source tree · e73d597</span></div>
+            <svg aria-hidden="true" width="34" height="34" viewBox="0 0 34 34" style="position: absolute; left: 283px; top: -17px"><g stroke="#100b19" stroke-width="2" fill="none"><line x1="17" y1="0" x2="17" y2="34"></line><line x1="0" y1="17" x2="34" y2="17"></line><circle cx="17" cy="17" r="8"></circle></g></svg>
+            <span style="position: absolute; left: 350px; top: 60px; font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 1.5; color: #5e5570; max-width: 120px">verify passes when all three agree</span>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #100b19">Registration is the guarantee: the installed tree matches the source snapshot when SHA-256 hashes, file modes and symlink targets agree across all three plates. A misaligned plate is a refused apply.</p>
+        </section>
+      </section>
+
+      <section id="catalog" aria-labelledby="catalog-h" style="display: flex; flex-direction: column; gap: 18px">
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 2px solid #100b19; padding-bottom: 10px">
+          <h2 id="catalog-h" style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 32px; text-transform: uppercase; letter-spacing: 0.02em">Catalog</h2>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #5e5570">52 curated · 5 shared · 326 library · 1 repository-local</span>
+        </div>
+        <div style="overflow-x: auto">
+          <table style="width: 100%; min-width: 720px; border-collapse: collapse; font-size: 14px">
+            <thead>
+              <tr style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #5e5570; text-align: left">
+                <th scope="col" style="padding: 8px 12px 8px 0; border-bottom: 1px solid #100b19; font-weight: 500">skill</th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #100b19; font-weight: 500">owner</th>
+                <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #100b19; font-weight: 500">retired name</th>
+                <th scope="col" style="padding: 8px 0 8px 12px; border-bottom: 1px solid #100b19; font-weight: 500">what it does</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">prose-unslop</td>
+                <td style="padding: 12px; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; color: #5e5570; white-space: nowrap">skills/</td>
+                <td style="padding: 12px; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; color: #5e5570; white-space: nowrap">unslop · 2026-11-03</td>
+                <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #c9c2d6">Required for user-facing prose and documentation edits: cut filler, keep facts, uncertainty and voice.</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">scope-grill</td>
+                <td style="padding: 12px; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; color: #5e5570; white-space: nowrap">shared/</td>
+                <td style="padding: 12px; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; color: #5e5570">—</td>
+                <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #c9c2d6">Interview modes for a requested grill-me or grill-with-docs; deeper rounds without turning ordinary tasks into interviews.</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">relay-baton</td>
+                <td style="padding: 12px; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; color: #5e5570; white-space: nowrap">shared/</td>
+                <td style="padding: 12px; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; color: #5e5570">—</td>
+                <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #c9c2d6">Handoff between sessions and agents.</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">voice-ledger</td>
+                <td style="padding: 12px; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; color: #5e5570; white-space: nowrap">shared/</td>
+                <td style="padding: 12px; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; color: #5e5570">—</td>
+                <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #c9c2d6">Define or review a written voice.</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">content-recaster</td>
+                <td style="padding: 12px; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; color: #5e5570; white-space: nowrap">shared/</td>
+                <td style="padding: 12px; border-bottom: 1px solid #c9c2d6; font-family: 'JetBrains Mono', monospace; color: #5e5570">—</td>
+                <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #c9c2d6">Adapt an actual source asset into selected channels.</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #100b19; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">launch-dossier</td>
+                <td style="padding: 12px; border-bottom: 1px solid #100b19; font-family: 'JetBrains Mono', monospace; color: #5e5570; white-space: nowrap">shared/</td>
+                <td style="padding: 12px; border-bottom: 1px solid #100b19; font-family: 'JetBrains Mono', monospace; color: #5e5570">—</td>
+                <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #100b19">Create or refresh a complete product packet from the Subcult starter and seven drafting prompts.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #5e5570">Six of 57 entrypoints shown. Retired names map to their owners in catalog/retired-names.json; none keeps a compatibility entrypoint.</p>
+      </section>
+
+      <section id="install" aria-labelledby="install-h" style="display: flex; flex-direction: column; gap: 18px">
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 2px solid #100b19; padding-bottom: 10px">
+          <h2 id="install-h" style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 32px; text-transform: uppercase; letter-spacing: 0.02em">Install</h2>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #5e5570">from a committed, reviewed checkout · Python 3 on Linux</span>
+        </div>
+        <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
+          <li style="display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: flex-start">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #100b19; width: 28px; padding-top: 14px; font-weight: 700">01</span>
+            <pre style="margin: 0; flex: 1 1 420px; min-width: 0; padding: 12px 16px; background: #100b19; color: #f0ece4; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; overflow-x: auto">python scripts/validate.py
+PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -v</pre>
+            <span style="flex: 1 1 220px; font-size: 13px; line-height: 1.5; color: #5e5570; padding-top: 10px">Validation needs PyYAML. The catalog and capability map must be complete before anything is installed.</span>
+          </li>
+          <li style="display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: flex-start">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #100b19; width: 28px; padding-top: 14px; font-weight: 700">02</span>
+            <pre style="margin: 0; flex: 1 1 420px; min-width: 0; padding: 12px 16px; background: #100b19; color: #f0ece4; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; overflow-x: auto">python scripts/install.py plan &gt; /tmp/patstack-plan.json</pre>
+            <span style="flex: 1 1 220px; font-size: 13px; line-height: 1.5; color: #5e5570; padding-top: 10px">Read-only. Review the changed destinations, ownership and retired names before applying.</span>
+          </li>
+          <li style="display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: flex-start">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #100b19; width: 28px; padding-top: 14px; font-weight: 700">03</span>
+            <pre style="margin: 0; flex: 1 1 420px; min-width: 0; padding: 12px 16px; background: #100b19; color: #f0ece4; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; overflow-x: auto">python scripts/install.py apply --through 1
+python scripts/install.py apply --resume &lt;run-path&gt; --through 2
+python scripts/install.py apply --resume &lt;run-path&gt; --through 3</pre>
+            <span style="flex: 1 1 220px; font-size: 13px; line-height: 1.5; color: #5e5570; padding-top: 10px">Three batches, one journal. Each writes verified original backups under the run directory.</span>
+          </li>
+          <li style="display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: flex-start">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #100b19; width: 28px; padding-top: 14px; font-weight: 700">04</span>
+            <pre style="margin: 0; flex: 1 1 420px; min-width: 0; padding: 12px 16px; background: #100b19; color: #f0ece4; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; overflow-x: auto">python scripts/install.py verify
+python scripts/install.py rollback --run &lt;run-path&gt;</pre>
+            <span style="flex: 1 1 220px; font-size: 13px; line-height: 1.5; color: #5e5570; padding-top: 10px">Verify compares hashes, modes and symlink targets. Rollback restores only that run's destinations and preserves later edits.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section id="states" aria-labelledby="states-h" style="display: flex; flex-direction: column; gap: 18px">
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 2px solid #100b19; padding-bottom: 10px">
+          <h2 id="states-h" style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 32px; text-transform: uppercase; letter-spacing: 0.02em">States</h2>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #5e5570">label and color agree with the installer's real result</span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px">
+          <div style="flex: 1 1 240px; min-width: 0; border: 1px solid #100b19; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+            <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #100b19"><span aria-hidden="true" style="width: 12px; height: 12px; background: #00ff88; border: 1px solid #100b19"></span>[ACTIVE]</span>
+            <p style="margin: 0; font-size: 13px; line-height: 1.5">The installed copy matches the source snapshot. Hashes, modes and symlink targets verified.</p>
+          </div>
+          <div style="flex: 1 1 240px; min-width: 0; border: 1px solid #100b19; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+            <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #100b19"><span aria-hidden="true" style="width: 12px; height: 12px; background: #f28c28; border: 1px solid #100b19"></span>[WARNING]</span>
+            <p style="margin: 0; font-size: 13px; line-height: 1.5">An external owner (OS, Codex system or Omarchy) changed since the baseline. Listed, never written.</p>
+          </div>
+          <div style="flex: 1 1 240px; min-width: 0; border: 1px solid #100b19; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+            <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #d52032"><span aria-hidden="true" style="width: 12px; height: 12px; background: #d52032; border: 1px solid #100b19"></span>[VETO]</span>
+            <p style="margin: 0; font-size: 13px; line-height: 1.5">Apply refused. A destination drifted from the recorded baseline or last installed snapshot. Nothing written.</p>
+          </div>
+          <div style="flex: 1 1 240px; min-width: 0; border: 1px solid #100b19; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+            <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #5e5570"><span aria-hidden="true" style="width: 12px; height: 12px; background: #5e5570; border: 1px solid #100b19"></span>[ARCHIVE]</span>
+            <p style="margin: 0; font-size: 13px; line-height: 1.5">A retired name. Mapped to its owner in retired-names.json; no compatibility entrypoint is created.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer style="margin-top: auto; border-top: 2px solid #100b19; padding: 18px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: #100b19">
+    <span>patstack · formerly codex-skills · source private until publication scope is reviewed</span>
+    <span>status labels follow the SUBCULT Visual Language</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1860}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

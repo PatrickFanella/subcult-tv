@@ -465,5 +465,31 @@
     "source": "Agent-selected repository identity under owner instruction, October 27, 2026. Masters in brands/generic-skills and brand-tools/repository_identity.py.",
     "selected_by_user": false,
     "direction_selection": "agent-selected under owner publication request"
+  },
+  {
+    "id": "patstack-a1a3",
+    "brand": "patstack",
+    "variant": "A1+A3",
+    "name": "Rack / registration",
+    "bg": "#100b19",
+    "fg": "#f0ece4",
+    "accent": "#00ff88",
+    "secondary": "#8b5cf6",
+    "display": "Oswald",
+    "body": "Space Grotesk",
+    "label": "JetBrains Mono",
+    "safe_label": "#a89fb8",
+    "headline": [
+      "Author once.",
+      "Deploy guarded."
+    ],
+    "tag": "AGENT SKILL STACK / A SUBCULT TOOL",
+    "description": "Ink ground, paper rack units with acid lamps for the fleet, registered plates for verify and drift, and a violet block as the SUBCULT lineage cue.",
+    "mode": "rack-registration",
+    "url": "git.subcult.tv/subculture-collective/patstack",
+    "source": "Owner chose the combination of A1 Rack and A3 Registration from studies/patstack-directions on November 3, 2026, after an originality audit of both. Brand masters in brands/patstack/build.py.",
+    "slug": "patstack",
+    "selected_by_user": true,
+    "direction_selection": "user"
   }
 ]

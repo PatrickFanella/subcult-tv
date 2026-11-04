@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A1 Rack · terminal session</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#100b19}
+a{color:#00ff88}a:hover{color:#f0ece4}
+</style>
+</helmet>
+<div style="width: 760px; height: 460px; box-sizing: border-box; background: #100b19; color: #f0ece4; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.65; padding: 0; display: flex; flex-direction: column; overflow: hidden">
+  <div style="display: flex; justify-content: space-between; padding: 10px 20px; border-bottom: 1px solid #3b2470; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #a89fb8">
+    <span>sputnik · ~/Work/Tools/patstack</span>
+    <span>proposed summary format · sample values</span>
+  </div>
+  <pre style="margin: 0; padding: 18px 20px; font: inherit; white-space: pre; overflow: hidden"><span style="color: #a89fb8">$ </span>python scripts/install.py plan &gt; /tmp/patstack-plan.json
+<span style="color: #8b5cf6; font-weight: 700">patstack</span>  plan  source <span style="color: #f0ece4">e73d597</span>  host <span style="color: #f0ece4">sputnik</span>  read-only
+<span style="color: #00ff88">[ACTIVE]</span>   54 personal entrypoints   ~/.codex/skills        unchanged
+<span style="color: #00ff88">[ACTIVE]</span>    5 shared                 ~/.agents/skills       unchanged
+<span style="color: #f28c28">[WARNING]</span>   2 external owners         omarchy, diagnose-crash  changed since baseline · never written
+<span style="color: #a89fb8">[ARCHIVE]</span> 218 retired names          catalog/retired-names.json  no entrypoints
+<span style="color: #a89fb8">plan written · nothing changed</span>
+
+<span style="color: #a89fb8">$ </span>python scripts/install.py apply --through 1
+<span style="color: #ff4055">[VETO]</span>     apply refused · ~/.agents/skills/scope-grill/SKILL.md differs from the installed snapshot
+           preserve the edit, review a reconciliation, plan again · nothing written</pre>
+  <div style="margin-top: auto; display: flex; justify-content: space-between; padding: 10px 20px; border-top: 1px solid #3b2470; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: #a89fb8">
+    <span>the same four labels as the page · acid, orange, red, muted</span>
+    <span>violet marks the tool, never a state</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":760,"height":460}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

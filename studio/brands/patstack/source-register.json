@@ -1,0 +1,14 @@
+{
+  "owner": "SUBCULT Studio",
+  "direction": "Owner chose the combination on November 3, 2026 from the nine candidates in studies/patstack-directions: the A1 Rack system with A3 Registration's plates as the diagram vocabulary.",
+  "audit": "The A1 and A3 tiles were reviewed with the ui-cliche-audit skill on November 3, 2026: web buttons became real commands, the left-stripe card became a rack unit, the decorative slot label became the fleet, the isometric stack became registered plates, and the canon state set was added.",
+  "mark": "Original rack mark authored in build.py: three paper units with one acid lamp lit, behind them a violet block tilted 3.6 degrees as the SUBCULT lineage cue. It does not reuse the SC_ master geometry.",
+  "motif": "Rack units (ears, slot number, lamp, label) for hosts and lists. Registered plates (source tree, plan, installed tree) with an ink or paper crosshair for diagrams about verify and drift. Status labels whose color and text agree with the installer's real result.",
+  "lineage": "SUBCULT lineage. Palette and type roles come from the selected SUBCULT C poster-press pack and the SUBCULT Visual Language; state colors come from the Omarchy subcult theme.",
+  "copy": "Headline and support lines are sample copy in the SUBCULT voice (content/VOICE.md). Facts come from the patstack README and docs/OPERATING-MODEL.md.",
+  "hosts": "States from the 2026-10-19 fleet deployment record (docs/MARKETING-TOOLS.md in patstack), not a live readout.",
+  "fonts": "Studio licensed font collection; OFL texts included for Oswald, Space Grotesk and JetBrains Mono.",
+  "claims": "patstack README (counts, installer behavior), docs/OPERATING-MODEL.md, docs/MARKETING-TOOLS.md (October 19, 2026 deployment record)",
+  "canvas": "https://claude.ai/artifact/L12uCteNUx37eWSZtmRFDn",
+  "publication": "Not performed. Owner selected the direction; pack files are local masters. Social publication and profile changes are separate actions."
+}

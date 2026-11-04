@@ -1,0 +1,441 @@
+{
+  "study": "patstack-directions",
+  "date": "2026-11-03",
+  "status": "owner selected: combination of A1 Rack and A3 Registration",
+  "selection": {
+    "status": "owner selected",
+    "date": "2026-11-03",
+    "selected": [
+      "a1-rack",
+      "a3-registration"
+    ],
+    "decision": "The owner first narrowed the nine to A1 or A3, both were reviewed with the ui-cliche-audit skill and expanded into a documentation page, a phone version, a terminal session and a poster, and the owner then chose the combination: the A1 Rack system with A3 Registration's plates as the diagram vocabulary.",
+    "pack": "../../brands/patstack/GUIDE.md"
+  },
+  "canvas": "https://claude.ai/artifact/L12uCteNUx37eWSZtmRFDn",
+  "audit": [
+    {
+      "tile": "Both",
+      "finding": "Web buttons implied a web app; patstack is a repository and a CLI.",
+      "replacement": "Real commands in code blocks and a documentation link."
+    },
+    {
+      "tile": "Both",
+      "finding": "The canon defines warning and critical colors with meaning; the tiles showed none.",
+      "replacement": "The state set [ACTIVE] [WARNING] [VETO] [ARCHIVE], each mapped to a real installer result."
+    },
+    {
+      "tile": "A1",
+      "finding": "The skill card used a left accent stripe, the stock left-border card.",
+      "replacement": "A rack unit with ears, slot number and lamp."
+    },
+    {
+      "tile": "A1",
+      "finding": "The slot label U01 meant nothing.",
+      "replacement": "The rack is the fleet: six hosts with state from the 2026-10-19 deployment record."
+    },
+    {
+      "tile": "A1",
+      "finding": "Scanlines were a fashionable texture.",
+      "replacement": "Kept on posters only; documentation is undecorated."
+    },
+    {
+      "tile": "A3",
+      "finding": "The isometric exploded stack is a stock dev-tool landing motif.",
+      "replacement": "Flat misregistered plates for source, plan and installed trees; registration means hashes, modes and symlink targets agree."
+    },
+    {
+      "tile": "A3",
+      "finding": "A full violet reading ground tires over a page.",
+      "replacement": "Violet field with a paper sheet; documentation reads on paper."
+    },
+    {
+      "tile": "A3",
+      "finding": "Acid crosshairs on violet are 3.16:1, decorative only.",
+      "replacement": "Ink crosshairs carry the motif at small sizes."
+    }
+  ],
+  "directions": [
+    {
+      "key": "a1-rack",
+      "id": "A1",
+      "title": "Rack",
+      "lineage": "SUBCULT lineage \u00b7 systems register",
+      "concept": "Ink canvas, paper rack units, acid status lamps, one violet registration block.",
+      "colors": {
+        "bg": "#100b19",
+        "fg": "#f0ece4",
+        "accent": "#00ff88",
+        "secondary": "#8b5cf6",
+        "muted": "#a89fb8"
+      },
+      "fonts": {
+        "display": "Oswald",
+        "body": "Space Grotesk",
+        "label": "JetBrains Mono"
+      },
+      "contrast": {
+        "text": 16.44,
+        "accent": 14.45,
+        "secondary": 4.58,
+        "muted": 7.67
+      },
+      "selected": true
+    },
+    {
+      "key": "a2-broadsheet",
+      "id": "A2",
+      "title": "Broadsheet",
+      "lineage": "SUBCULT lineage \u00b7 print register",
+      "concept": "The catalog as a printed sheet: paper, heavy ink rules, folios, violet fields.",
+      "colors": {
+        "bg": "#f0ece4",
+        "fg": "#100b19",
+        "accent": "#8b5cf6",
+        "secondary": "#00ff88",
+        "muted": "#5e5570"
+      },
+      "fonts": {
+        "display": "Oswald",
+        "body": "Space Grotesk",
+        "label": "JetBrains Mono"
+      },
+      "contrast": {
+        "text": 16.44,
+        "accent": 3.59,
+        "secondary": 1.14,
+        "muted": 5.92
+      },
+      "selected": false
+    },
+    {
+      "key": "a3-registration",
+      "id": "A3",
+      "title": "Registration",
+      "lineage": "SUBCULT lineage \u00b7 schematic register",
+      "concept": "The violet field with the stack drawn as registered plates in ink line.",
+      "colors": {
+        "bg": "#8b5cf6",
+        "fg": "#100b19",
+        "accent": "#00ff88",
+        "secondary": "#f0ece4",
+        "muted": "#100b19"
+      },
+      "fonts": {
+        "display": "Oswald",
+        "body": "Space Grotesk",
+        "label": "JetBrains Mono"
+      },
+      "contrast": {
+        "text": 4.58,
+        "accent": 3.16,
+        "secondary": 3.59,
+        "muted": 4.58
+      },
+      "selected": true
+    },
+    {
+      "key": "b1-patchbay",
+      "id": "B1",
+      "title": "Patchbay",
+      "lineage": "Patrick__Eff lineage \u00b7 systems register",
+      "concept": "Skills routed to hosts by cable on the Patch charcoal panel.",
+      "colors": {
+        "bg": "#282a36",
+        "fg": "#f8f8f2",
+        "accent": "#bd93f9",
+        "secondary": "#50fa7b",
+        "muted": "#a5a6b5"
+      },
+      "fonts": {
+        "display": "Space Grotesk",
+        "body": "Inter",
+        "label": "JetBrains Mono"
+      },
+      "contrast": {
+        "text": 13.36,
+        "accent": 5.9,
+        "secondary": 10.38,
+        "muted": 5.91
+      },
+      "selected": false
+    },
+    {
+      "key": "b2-liner-notes",
+      "id": "B2",
+      "title": "Liner Notes",
+      "lineage": "Patrick__Eff lineage \u00b7 print register",
+      "concept": "The Patch light treatment on a record sleeve; skills listed like tracks.",
+      "colors": {
+        "bg": "#f8f8f2",
+        "fg": "#282a36",
+        "accent": "#6f3fc4",
+        "secondary": "#bd93f9",
+        "muted": "#5c5e70"
+      },
+      "fonts": {
+        "display": "Space Grotesk",
+        "body": "Inter",
+        "label": "JetBrains Mono"
+      },
+      "contrast": {
+        "text": 13.36,
+        "accent": 6.19,
+        "secondary": 2.26,
+        "muted": 5.99
+      },
+      "selected": false
+    },
+    {
+      "key": "b3-spectrum",
+      "id": "B3",
+      "title": "Spectrum",
+      "lineage": "Patrick__Eff lineage \u00b7 schematic register",
+      "concept": "Spectrum bars turned sideways into a stack elevation, one accent per layer.",
+      "colors": {
+        "bg": "#282a36",
+        "fg": "#f8f8f2",
+        "accent": "#ff79c6",
+        "secondary": "#bd93f9",
+        "muted": "#a5a6b5"
+      },
+      "fonts": {
+        "display": "Space Grotesk",
+        "body": "Inter",
+        "label": "JetBrains Mono"
+      },
+      "contrast": {
+        "text": 13.36,
+        "accent": 5.97,
+        "secondary": 5.9,
+        "muted": 5.91
+      },
+      "selected": false
+    },
+    {
+      "key": "c1-ledger",
+      "id": "C1",
+      "title": "Ledger",
+      "lineage": "Standalone \u00b7 systems register",
+      "concept": "Amber phosphor on near-black, mono throughout; a journal of plan, apply, verify, rollback.",
+      "colors": {
+        "bg": "#0b0905",
+        "fg": "#e9e1cf",
+        "accent": "#ffb000",
+        "secondary": "#16120a",
+        "muted": "#a0937a"
+      },
+      "fonts": {
+        "display": "IBM Plex Mono",
+        "body": "IBM Plex Sans (not bundled)",
+        "label": "IBM Plex Mono"
+      },
+      "contrast": {
+        "text": 15.29,
+        "accent": 10.86,
+        "secondary": 1.07,
+        "muted": 6.58
+      },
+      "selected": false
+    },
+    {
+      "key": "c2-card-catalog",
+      "id": "C2",
+      "title": "Card Catalog",
+      "lineage": "Standalone \u00b7 print register",
+      "concept": "Cream stock, blue rules, typewriter entries, a red stamp; honest about retired names.",
+      "colors": {
+        "bg": "#f3eee2",
+        "fg": "#1d1b17",
+        "accent": "#2f5a99",
+        "secondary": "#b8321f",
+        "muted": "#6b655a"
+      },
+      "fonts": {
+        "display": "Libre Baskerville",
+        "body": "Libre Baskerville",
+        "label": "Courier Prime (not bundled)"
+      },
+      "contrast": {
+        "text": 14.85,
+        "accent": 5.96,
+        "secondary": 5.16,
+        "muted": 4.99
+      },
+      "selected": false
+    },
+    {
+      "key": "c3-manifest",
+      "id": "C3",
+      "title": "Manifest",
+      "lineage": "Standalone \u00b7 schematic register",
+      "concept": "Kraft ground, stencilled type, a white shipping label with contents and handling.",
+      "colors": {
+        "bg": "#d9c4a0",
+        "fg": "#1a1a1a",
+        "accent": "#f26b1d",
+        "secondary": "#f7f3ea",
+        "muted": "#4a3f2e"
+      },
+      "fonts": {
+        "display": "Saira Stencil One (not bundled)",
+        "body": "Archivo (not bundled)",
+        "label": "Archivo"
+      },
+      "contrast": {
+        "text": 10.24,
+        "accent": 1.79,
+        "secondary": 1.53,
+        "muted": 6.05
+      },
+      "selected": false
+    }
+  ],
+  "files": [
+    {
+      "path": ".font-cache/82890f0287b6dccf46ba258b94eef825-le64.cache-10",
+      "sha256": "6d9815213e62c651c65e6082823e0308e604d95ea62e41eec8a724c465a7cdb8",
+      "bytes": 91440
+    },
+    {
+      "path": ".font-cache/82890f0287b6dccf46ba258b94eef825-le64.cache-11",
+      "sha256": "6d9815213e62c651c65e6082823e0308e604d95ea62e41eec8a724c465a7cdb8",
+      "bytes": 91440
+    },
+    {
+      "path": ".font-cache/82890f0287b6dccf46ba258b94eef825-le64.cache-12",
+      "sha256": "6d9815213e62c651c65e6082823e0308e604d95ea62e41eec8a724c465a7cdb8",
+      "bytes": 91440
+    },
+    {
+      "path": ".font-cache/82890f0287b6dccf46ba258b94eef825-le64.cache-9",
+      "sha256": "6d9815213e62c651c65e6082823e0308e604d95ea62e41eec8a724c465a7cdb8",
+      "bytes": 91440
+    },
+    {
+      "path": ".font-cache/CACHEDIR.TAG",
+      "sha256": "05e7633fb31bf1f6f8d89020c16b9f24587fdf7638e951c9745b192f5fc3b682",
+      "bytes": 200
+    },
+    {
+      "path": "README.md",
+      "sha256": "1629586d3614b91a9c472b13dcb34f7fc87253deeed507ee73d483537ef47d33",
+      "bytes": 1998
+    },
+    {
+      "path": "canvas/A1-Page.dc.html",
+      "sha256": "102cf60fd67c68fff8f1315820b41614d3743042fcc00e36923e25a5ec63759a",
+      "bytes": 26408
+    },
+    {
+      "path": "canvas/A1-Phone.dc.html",
+      "sha256": "2853f36288faed7dc09f56f677ac938439168d5926045d347d51abbe406e7b52",
+      "bytes": 12907
+    },
+    {
+      "path": "canvas/A1-Poster.dc.html",
+      "sha256": "1b89e83fcd4fcef2b38619eda337529641f806564ce167b06144dec15b12017a",
+      "bytes": 4608
+    },
+    {
+      "path": "canvas/A1-Terminal.dc.html",
+      "sha256": "1c6e9a38b77cf49e29fe549643c4016e1bac0338c13e576a08e1f73efc79bb95",
+      "bytes": 2740
+    },
+    {
+      "path": "canvas/A2-Broadsheet.dc.html",
+      "sha256": "df0e760f48cfea46d5b3d1795f7d33785e683fbdddc4c9a59ad29f56672a8302",
+      "bytes": 8525
+    },
+    {
+      "path": "canvas/A3-Page.dc.html",
+      "sha256": "711cc09920e49c5b5f4c4267e5344c3a0ca30f6ea5103cf6f534ea9be01a653c",
+      "bytes": 23056
+    },
+    {
+      "path": "canvas/A3-Phone.dc.html",
+      "sha256": "9c1dd81bc5768751bb87d6ac8d5968732528e5d3178afe53aa6059dc9c787bc3",
+      "bytes": 10880
+    },
+    {
+      "path": "canvas/A3-Poster.dc.html",
+      "sha256": "717e3058fcd216c9657b6adb05d21ef1f808ed489735672847ea4d08c4817520",
+      "bytes": 4406
+    },
+    {
+      "path": "canvas/A3-Registration.dc.html",
+      "sha256": "53ed7cabc365d16d62e5cc1b3452302cc42dab62177d1ef736729d0e3a7a45e3",
+      "bytes": 9396
+    },
+    {
+      "path": "canvas/A3-Terminal.dc.html",
+      "sha256": "d45feed46834fe09a36912cb998f1bf43f431dec796738ab62a2f105dd029b46",
+      "bytes": 2671
+    },
+    {
+      "path": "canvas/B1-Patchbay.dc.html",
+      "sha256": "7a73122ee041516ad14a54b4f88530325b94fd6170a698329a26573c650b91ea",
+      "bytes": 9550
+    },
+    {
+      "path": "canvas/B2-Liner-Notes.dc.html",
+      "sha256": "90419d1d233381656a1986da8e69267310fc0fea4c21cde9a40258c6062fac54",
+      "bytes": 8885
+    },
+    {
+      "path": "canvas/B3-Spectrum.dc.html",
+      "sha256": "5b16eff894bf9f4d0d5d8cdfbb5e34461ec3233a2217baed54dca18d6ed8aecb",
+      "bytes": 9484
+    },
+    {
+      "path": "canvas/C1-Ledger.dc.html",
+      "sha256": "af3e659e57d136a65a81bf6b8434265407164d39dd8015154199ad45eb369fa0",
+      "bytes": 8997
+    },
+    {
+      "path": "canvas/C2-Card-Catalog.dc.html",
+      "sha256": "f750665e156834747d6fa2db940ac35ebe461b01a6ee0f7be1cb7ff3dfcee5a4",
+      "bytes": 8569
+    },
+    {
+      "path": "canvas/C3-Manifest.dc.html",
+      "sha256": "24cfcaf5e9b420f0694fcfa5868d40d3674650f77f4f99bda710f5308b62f864",
+      "bytes": 9055
+    },
+    {
+      "path": "canvas/Comparison.dc.html",
+      "sha256": "c2fe6f5412844dc84e6a6064ca42f53c833fbc4ff6ef7fa81582f829e0fce94e",
+      "bytes": 14610
+    },
+    {
+      "path": "canvas/Main.dc.html",
+      "sha256": "5cfcbdf118b2e714464fab31d795f67343ad7dd231c4702e47714566bcd92188",
+      "bytes": 8201
+    },
+    {
+      "path": "canvas/canvas.json",
+      "sha256": "83e707ea58ecf1679d66c74704a3c42ab64193fb015a48a349dbbd06871274d6",
+      "bytes": 5328
+    },
+    {
+      "path": "comparison.png",
+      "sha256": "36b13f6f4e9ca7a908f5774c970767054cd24f3237c7eaf8de57dc11dc68f9d9",
+      "bytes": 356018
+    },
+    {
+      "path": "comparison.svg",
+      "sha256": "64f3dd059857faf1b661368545e53ec6f31f454b8d2b98c19c4960c27a307c19",
+      "bytes": 31687
+    },
+    {
+      "path": "index.html",
+      "sha256": "8347dee9f4cee85cffeff5e3c80f80d27d02dacdd6f72bc06d70517b241f4b37",
+      "bytes": 7869
+    },
+    {
+      "path": "patstack_directions.py",
+      "sha256": "51a85096e2b4bcd1c95f6f1d2d98c3e9edb36f3467f617bb9bfcb0a2a13c2cc4",
+      "bytes": 15880
+    }
+  ]
+}

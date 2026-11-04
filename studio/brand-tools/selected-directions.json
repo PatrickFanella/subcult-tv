@@ -69,5 +69,14 @@
     "status": "proposed by Studio from the product's docs/design/ identity; awaits the owner's review",
     "basis": "subculture-collective/productivity-suite docs/design/ (wave/tadooer-brand, head 17d7bee) and apps/web/public/suite-icon.svg",
     "publication": "not performed; private, self-hosted planner with no public domain and no sign-up"
+  },
+  "patstack": {
+    "date": "2026-11-03",
+    "name": "patstack",
+    "direction": "A1 Rack + A3 Registration (combination)",
+    "direction_selected_by_user": true,
+    "basis": "Nine candidates in studies/patstack-directions (three lineages by three registers); the owner narrowed to A1 or A3, both were audited with ui-cliche-audit and expanded, and the owner chose the combination: the A1 Rack system with A3 Registration's plates as the diagram vocabulary.",
+    "alternatives": "patstack-directions/",
+    "publication": "not performed; private repository, no public domain"
   }
 }

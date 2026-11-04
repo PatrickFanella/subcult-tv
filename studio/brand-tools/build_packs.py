@@ -483,6 +483,9 @@ for d in BRANDS:
  if d['slug']=='chatty-cat':
   subprocess.run([sys.executable,str(R.parent/'brands/chatty-cat/build.py')],check=True)
   continue
+ if d['slug']=='patstack':
+  subprocess.run([sys.executable,str(R.parent/'brands/patstack/build.py')],check=True)
+  continue
  if d['slug']=='patrick__eff' and d.get('mode')=='patrick-patch':
   import patrick_patch
   patrick_patch.build(d)
