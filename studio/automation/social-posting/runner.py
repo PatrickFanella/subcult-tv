@@ -136,7 +136,7 @@ def source_context(cfg: dict, directory: Path) -> dict:
         for key, p in pack.get('projects', {}).items() for flag in p.get('packet', {}).get('flags', [])]
     context['media_library'] = media.context(cfg)
     context['posting_guidance'] = (vault/cfg['editorial_guide']).read_text()
-    context['editorial_style'] = (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()
+    context['editorial_style'] = (Path.home()/'.codex/skills/prose-unslop/SKILL.md').read_text()
     atomic_write(directory/'sources.json', json.dumps(context, indent=2)+'\n')
     return context
 

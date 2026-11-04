@@ -38,7 +38,7 @@ def guidance(cfg):
         'demonstration_evidence': [asset for project in pack.get('campaign_review', {}).get('projects', {}).values()
             for theme in project.get('themes', []) for asset in theme.get('assets', []) if asset.get('passed')],
         'voice': read(STUDIO/'content/VOICE.md'),
-        'style': read(Path.home()/'.codex/skills/unslop/SKILL.md'),
+        'style': read(Path.home()/'.codex/skills/prose-unslop/SKILL.md'),
         'research': read(RESEARCH/'DIGEST.md'),
         'patterns': read(RESEARCH/'post-patterns.md')[:60000],
         'examples': read(CRAFT/'examples.md'),

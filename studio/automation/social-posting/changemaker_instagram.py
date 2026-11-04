@@ -157,7 +157,7 @@ def single_pass(cfg, source_root, selected, digest, claims, directory):
     prompt = (HERE/'changemaker-instagram-prompt.md').read_text()+'\n'+json.dumps({
         'evidence': selected, 'digest': digest['draft'], 'claims': claims, 'marketing_strategies': strategy.context(cfg),
         'voice': (HERE.parents[1]/'content/VOICE.md').read_text(),
-        'style': (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()})
+        'style': (Path.home()/'.codex/skills/prose-unslop/SKILL.md').read_text()})
     command = [cfg['codex'], 'exec', '--ignore-user-config', '--ephemeral', '--skip-git-repo-check',
                '-s', 'read-only', '-m', cfg['model'], '--json',
                '--output-schema', str(HERE/'changemaker-instagram.schema.json'),

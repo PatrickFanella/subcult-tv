@@ -147,7 +147,7 @@ def _execute(cfg, state, now):
         context['claims_register'] = claims.read_text()
         context['marketing_strategies'] = runner.strategy.context(cfg)
         context['owner_feedback'] = runner.feedback.owner_feedback(Path(cfg['state']), ('x', 'bluesky'), 30)
-        context['editorial_style'] = (Path.home()/'.codex/skills/unslop/SKILL.md').read_text()
+        context['editorial_style'] = (Path.home()/'.codex/skills/prose-unslop/SKILL.md').read_text()
         context['weekly_plan'] = weekly.read_text() if weekly.exists() else 'No current-week plan.'
         timely_folder = runner.paths.drafts(cfg)/'Timely Drafts'
         context['recent_timely_notes'] = {p.name:p.read_text()[:6000]
