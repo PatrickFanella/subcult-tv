@@ -80,8 +80,8 @@ class ChangemakerInstagramTests(unittest.TestCase):
             (root/'content/VOICE.md').write_text('Plain product language.')
             (root/'automation/social-posting/changemaker-instagram-prompt.md').write_text('Prepare unapproved captions.')
             home=Path(tmp)/'home'
-            (home/'.codex/skills/unslop').mkdir(parents=True)
-            (home/'.codex/skills/unslop/SKILL.md').write_text('Preserve facts and uncertainty.')
+            (home/'.codex/skills/prose-unslop').mkdir(parents=True)
+            (home/'.codex/skills/prose-unslop/SKILL.md').write_text('Preserve facts and uncertainty.')
             item={**self.items['S1'],'id':'S1','kind':'pull request','state':'merged','title':'Improve reading'}
             context={'drafts':[{'run_id':'native-run','draft_sha256':'d'*64,'evidence_sha256':'e'*64,
                                'draft':'## What people notice\nReaders see the passage.',
@@ -115,8 +115,8 @@ class ChangemakerInstagramTests(unittest.TestCase):
             (root/'content/VOICE.md').write_text('Plain product language.')
             (root/'automation/social-posting/changemaker-instagram-prompt.md').write_text('Prepare unapproved captions.')
             home=Path(tmp)/'home'
-            (home/'.codex/skills/unslop').mkdir(parents=True)
-            (home/'.codex/skills/unslop/SKILL.md').write_text('Preserve facts.')
+            (home/'.codex/skills/prose-unslop').mkdir(parents=True)
+            (home/'.codex/skills/prose-unslop/SKILL.md').write_text('Preserve facts.')
             item={**self.items['S1'],'id':'S1','kind':'pull request','state':'merged','title':'Improve reading','source':'subculture-collective/kork'}
             context={'drafts':[{'run_id':'native-run','draft_sha256':'d'*64,'evidence_sha256':'e'*64,'draft':'Digest.',
                                'evidence':{'status':'complete','items':[item]}}]}
