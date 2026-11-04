@@ -8,7 +8,7 @@ rsvg-convert, Inkscape and fontconfig with the bundled fonts.
     python3 build.py                                  # rebuild the pack
     python3 build.py --export /path/to/patstack/brand  # copy the handoff selection with hashes
 
-Host rows are the fleet as recorded on 2026-10-19; they are not a live readout. Template
+Host rows are the fleet as recorded on the date in brand.json; they are not a live readout. Template
 layouts carry a visible sample marker and are not approved posts.
 """
 import argparse
@@ -175,7 +175,8 @@ def rack(x, y, w, rows, row_h=56, header=True, footnote=None, name_size=22):
     if header:
         out.append(rect(x, top, w, 36, C['surface'], C['line'], 1))
         out.append(label(x + 14, top + 23, 'FLEET · 6 HOSTS', 11, C['text']))
-        out.append(label(x + w - 14, top + 23, 'LAST RECORDED VERIFY · 2026-10-19', 11, C['muted'], anchor='end'))
+        if w >= 480:
+            out.append(label(x + w - 14, top + 23, f"LAST RECORDED VERIFY · {CONFIG['hosts_date']}", 11, C['muted'], anchor='end'))
         top += 36
     body = len(rows) * row_h
     out.append(rect(x, top, w, body, C['surface'], C['line'], 1))
@@ -324,7 +325,7 @@ def build_video():
 def build_product():
     rows = CONFIG['hosts']
     body = ground(1200, 630) + lockup(60, 52, 64) + headline(60, 290, 88) + label(60, 572, URL, 14)
-    body += rack(780, 52, 360, rows, row_h=48) + label(780, 420, 'RECORD OF 2026-10-19 · NOT LIVE', 11)
+    body += rack(780, 52, 360, rows, row_h=48) + label(780, 420, f"RECORD OF {CONFIG['hosts_date']} · NOT LIVE", 11)
     write('product/og', 1200, 630, body, 'patstack link preview: lockup, headline and the six-host rack')
     write('product/repo-avatar', 512, 512, ground(512, 512) + mark(76, 76, 360, **mark_variant('primary')), 'patstack repository avatar')
     body = ground(1280, 320) + lockup(64, 92, 120) + plates(880, 60, 300, 180, 24)
@@ -362,7 +363,7 @@ def build_board():
     for i, state in enumerate(('active', 'warning', 'veto', 'archive')):
         b += state_chip(760 + i * 150, 872, state, 12)
     b += rect(64, 900, 1312, 1, C['line'])
-    b += label(64, 932, 'ORIGINAL VECTOR MARK / LICENSED FONTS / SUBCULT STUDIO / HOST STATES FROM THE 2026-10-19 RECORD, NOT LIVE', 11)
+    b += label(64, 932, f"ORIGINAL VECTOR MARK / LICENSED FONTS / SUBCULT STUDIO / HOST STATES FROM THE {CONFIG['hosts_date']} RECORD, NOT LIVE", 11)
     write('brand-board', w, h, b, 'patstack brand board')
     shutil.copyfile(ROOT / 'brand-board.svg', ROOT / 'pack-preview.svg')
     shutil.copyfile(ROOT / 'brand-board.png', ROOT / 'pack-preview.png')
@@ -514,13 +515,16 @@ Facts come from the patstack README and `docs/OPERATING-MODEL.md`: 52 curated pe
 
 
 def write_alt_text():
-    save('alt-text.md', '''# patstack alt-text starters
+    states = {h[3] for h in CONFIG['hosts']}
+    RACK_STATES = (f"all read {STATE_LABEL[states.pop()]}" if len(states) == 1
+                   else '; '.join(f"{h[1]} reads {STATE_LABEL[h[3]]}" for h in CONFIG['hosts']))
+    save('alt-text.md', f'''# patstack alt-text starters
 
-Replace these when copy, states or imagery change. Describe the finished image, including the words in it. Host rows are the fleet record of 2026-10-19; say so when the image is shared outside the fleet.
+Replace these when copy, states or imagery change. Describe the finished image, including the words in it. Host rows are the fleet record of {CONFIG['hosts_date']}; say so when the image is shared outside the fleet.
 
 - **Mark**: Three horizontal paper bars stacked like rack units, the top one with a small acid-green lamp, in front of a violet block tilted slightly to the left.
 - **Lockup**: The rack mark beside the word PATSTACK in bold condensed capitals, with the small label AGENT SKILL STACK / A SUBCULT TOOL beneath.
-- **Banner**: Near-black banner. Left: the lockup and the headline AUTHOR ONCE. DEPLOY GUARDED. in large capitals, the repository address in small monospace. Right: a rack of six units named kvant, sputnik, soyuz, dozor, almaz and nuc, each with a role and a state label; almaz reads [WARNING] in orange, the others [ACTIVE] in green.
+- **Banner**: Near-black banner. Left: the lockup and the headline AUTHOR ONCE. DEPLOY GUARDED. in large capitals, the repository address in small monospace. Right: a rack of six units named kvant, sputnik, soyuz, dozor, almaz and nuc, each with a role and a state label: {RACK_STATES}.
 - **Square post**: Near-black square. The label AGENT SKILL STACK / A SUBCULT TOOL, the headline, the six-unit rack, and at the bottom right three small offset plates with a crosshair.
 - **Avatar and repository avatar**: The rack mark, large, on a near-black square.
 - **Link preview**: Near-black 1200×630 card with the lockup, the headline and a compact six-unit rack.
@@ -542,7 +546,7 @@ def write_register():
         'copy': 'Headline and support lines are sample copy in the SUBCULT voice (content/VOICE.md). Facts come from the patstack README and docs/OPERATING-MODEL.md.',
         'hosts': CONFIG['hosts_record'],
         'fonts': 'Studio licensed font collection; OFL texts included for Oswald, Space Grotesk and JetBrains Mono.',
-        'claims': 'patstack README (counts, installer behavior), docs/OPERATING-MODEL.md, docs/MARKETING-TOOLS.md (October 19, 2026 deployment record)',
+        'claims': 'patstack README (counts, installer behavior), docs/OPERATING-MODEL.md, and the fleet record named in hosts',
         'canvas': 'https://claude.ai/artifact/L12uCteNUx37eWSZtmRFDn',
         'publication': 'Not performed. Owner selected the direction; pack files are local masters. Social publication and profile changes are separate actions.',
     }, indent=2) + '\n')

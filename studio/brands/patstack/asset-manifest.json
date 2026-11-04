@@ -9,18 +9,18 @@
     },
     {
       "path": "GUIDE.md",
-      "sha256": "abdc016cf467e6fa6665c74ccfbcad1ff661ecf06433bf0272650d6674283848",
-      "bytes": 9099
+      "sha256": "3c9eda9cd2cfcc0a67860056420b0343d9c5a2200eb7d83e3907667d27c29cca",
+      "bytes": 9175
     },
     {
       "path": "alt-text.md",
-      "sha256": "6d98f17d56fe2bd8396dd535e74dc6ecafd6c4af30a55a25d667d7a09349440f",
-      "bytes": 1864
+      "sha256": "87c687015d61a9361e9eb027c725ee3597b8e0916e323cd2574558ac47e1209d",
+      "bytes": 1820
     },
     {
       "path": "brand-board.png",
-      "sha256": "729468e41b22a61fa566ed89631d7f2ac8070bc4a60ea0b1a99a98a8a0dc88e9",
-      "bytes": 139389,
+      "sha256": "9a5fe505d58869bd10bb35986b271bb32617626168c95e4617715bc8d5549def",
+      "bytes": 139388,
       "dimensions": {
         "width": 1440,
         "height": 960
@@ -28,7 +28,7 @@
     },
     {
       "path": "brand-board.svg",
-      "sha256": "7718990693ca701d728df8d4fd009f6ff4c1590bf6e107e310e2f9c4310ed725",
+      "sha256": "34d1b018fe7ce784a3217ae65d84a533ae0b276bf15f48003911a7eb2aa90352",
       "bytes": 15319,
       "dimensions": {
         "width": 1440.0,
@@ -37,13 +37,13 @@
     },
     {
       "path": "brand.json",
-      "sha256": "7f84f2f2eb3ac3beb98a3d1ca8047fa1b8dca06d56308ab91741e22273e11210",
-      "bytes": 2902
+      "sha256": "2202f05c05fb3264348565d5495bc10b62ac2a4a69e9e9a0c1ef840ed22adcb3",
+      "bytes": 3008
     },
     {
       "path": "build.py",
-      "sha256": "a47165b3a209f43d15fac9115aa3a82678e673065b758ca11f25cd02443cd669",
-      "bytes": 37607
+      "sha256": "5fa49e9558bb1a0fffbdb9a362667b3286947cc74b2f5b8959ea50084f27a505",
+      "bytes": 37844
     },
     {
       "path": "fontconfig.xml",
@@ -282,8 +282,8 @@
     },
     {
       "path": "pack-preview.png",
-      "sha256": "729468e41b22a61fa566ed89631d7f2ac8070bc4a60ea0b1a99a98a8a0dc88e9",
-      "bytes": 139389,
+      "sha256": "9a5fe505d58869bd10bb35986b271bb32617626168c95e4617715bc8d5549def",
+      "bytes": 139388,
       "dimensions": {
         "width": 1440,
         "height": 960
@@ -291,7 +291,7 @@
     },
     {
       "path": "pack-preview.svg",
-      "sha256": "7718990693ca701d728df8d4fd009f6ff4c1590bf6e107e310e2f9c4310ed725",
+      "sha256": "34d1b018fe7ce784a3217ae65d84a533ae0b276bf15f48003911a7eb2aa90352",
       "bytes": 15319,
       "dimensions": {
         "width": 1440.0,
@@ -318,8 +318,8 @@
     },
     {
       "path": "product/og.png",
-      "sha256": "d1d7d9d79ccb9a3894c5613510ec906255e7a2b239d04fc6953e9bc669046fb4",
-      "bytes": 62845,
+      "sha256": "f6a648500f03e0e5b3905f4bb85b77669a1d8b1e4042782ec7ed5890d540fde3",
+      "bytes": 59612,
       "dimensions": {
         "width": 1200,
         "height": 630
@@ -327,8 +327,8 @@
     },
     {
       "path": "product/og.svg",
-      "sha256": "0a3854af06b8dd1a8fc79513be23e3c79beba8dbdd5259d792614b17214eaa74",
-      "bytes": 6579,
+      "sha256": "4bc989f07cdc7dd61a66eab9df701a513c07b85e1b579f70d5976a5067beeebe",
+      "bytes": 6399,
       "dimensions": {
         "width": 1200.0,
         "height": 630.0
@@ -390,8 +390,8 @@
     },
     {
       "path": "social/banner-tall-master.png",
-      "sha256": "82ca5e2ab50554126afe6e88bb8710a95db8e63ecaaebae927bedaeb57fea9ef",
-      "bytes": 85702,
+      "sha256": "5b77d8cbe7c941a3a3b24b8eae60cafc32f73f41f6907bf60771e6ca0fa636e4",
+      "bytes": 82733,
       "dimensions": {
         "width": 1500,
         "height": 600
@@ -399,8 +399,8 @@
     },
     {
       "path": "social/banner-tall-master.svg",
-      "sha256": "e64e55834bdfe51eec31bf26611229ab2cf5bc4577754b5a873b4ef5d6f7b59d",
-      "bytes": 7445,
+      "sha256": "7891e2686788f768850605b51abacd1eaed5b0369302d7106b321acef75c72f4",
+      "bytes": 7418,
       "dimensions": {
         "width": 1500.0,
         "height": 600.0
@@ -408,8 +408,8 @@
     },
     {
       "path": "social/banner-x-bluesky.png",
-      "sha256": "c1c9e2df3d8b15a0e9153bf197e07d33a0862e67b26cc17577d3798a128bda5c",
-      "bytes": 81186,
+      "sha256": "8790b55b9e7fc45952080a28d9e4a1df4ee9f9bb5f624e69ce331da6caab1f76",
+      "bytes": 78360,
       "dimensions": {
         "width": 1500,
         "height": 500
@@ -417,8 +417,8 @@
     },
     {
       "path": "social/banner-x-bluesky.svg",
-      "sha256": "9029f7f67822daed3be029db61944b842d77f100a3295d5043c38cc97b449e8c",
-      "bytes": 7500,
+      "sha256": "957085f3ba1e0a18d69748deafa9251d0781a66c8f00d4a8edade86d6372fef1",
+      "bytes": 7473,
       "dimensions": {
         "width": 1500.0,
         "height": 500.0
@@ -498,8 +498,8 @@
     },
     {
       "path": "social/square-post.png",
-      "sha256": "d35ead2d7bce7a9d3ab59dc12c466e39589d803883cf347c876875991ce68c99",
-      "bytes": 85962,
+      "sha256": "24406599e3b51a367c2db05528796bf160664224f696e132a65c3736c0763bbb",
+      "bytes": 83141,
       "dimensions": {
         "width": 1080,
         "height": 1080
@@ -507,8 +507,8 @@
     },
     {
       "path": "social/square-post.svg",
-      "sha256": "0c13c4a96a8ad63a36cf79d2d78d566126aef0717ec499a48c6a3ccd5acd75a0",
-      "bytes": 7621,
+      "sha256": "83fb763731ad1eee92bad9fb43c12e7fe1f640049d2e6cc25b77ce4c58b75fb9",
+      "bytes": 7594,
       "dimensions": {
         "width": 1080.0,
         "height": 1080.0
@@ -516,8 +516,8 @@
     },
     {
       "path": "social/story-template.png",
-      "sha256": "f92494657cefd148e93892e948d8fe0162e168362ac090d09063cdd72c40b77f",
-      "bytes": 108660,
+      "sha256": "58a5952c20f3b0203ce2b5bd99d604468fbeb2977959a1bdad7dbcbdd3b85d69",
+      "bytes": 105951,
       "dimensions": {
         "width": 1080,
         "height": 1920
@@ -525,8 +525,8 @@
     },
     {
       "path": "social/story-template.svg",
-      "sha256": "91d868f2677336ef590dc45a54cf2526e4ddd98a07f65316b6d231cfd825486e",
-      "bytes": 8486,
+      "sha256": "cfaf93d7e80273d31a4fa2fc527ea5015af0dfe174c861cb4110cd80e5bd2a5e",
+      "bytes": 8459,
       "dimensions": {
         "width": 1080.0,
         "height": 1920.0
@@ -534,8 +534,8 @@
     },
     {
       "path": "source-register.json",
-      "sha256": "25bbc312a9610bca6e8d053387e5d793863d51f883f433c888d6a783fa462a8a",
-      "bytes": 1976
+      "sha256": "c15f69c40806d310bd6ca8251aa58b221190973974e57dc6a385773cd0ddb075",
+      "bytes": 2054
     },
     {
       "path": "tokens.css",
@@ -544,8 +544,8 @@
     },
     {
       "path": "tokens.json",
-      "sha256": "57688698a7eb49b16f2060896e8dca8f4333eb25a359113b12a59c6bd5d7ed0c",
-      "bytes": 4629
+      "sha256": "fe8d6af29546bfe6ea4ae3dd2565d29f135b416740e0d7b92f4d78c095636e0f",
+      "bytes": 4701
     },
     {
       "path": "video/captions.ass",
@@ -608,8 +608,8 @@
     },
     {
       "path": "video/title-card.png",
-      "sha256": "6245688f44ade5de8007f3fa7423cde0b26da5be3b3c069cf45153c4478396a0",
-      "bytes": 108142,
+      "sha256": "680d90579907e2b2168d26ad98b8c848305f42597257e2ceb63eb6bb8caafd52",
+      "bytes": 105222,
       "dimensions": {
         "width": 1920,
         "height": 1080
@@ -617,8 +617,8 @@
     },
     {
       "path": "video/title-card.svg",
-      "sha256": "0be7c8648b764bb893a54af164f5cde0bb8e6761376362f37f43a97092cc1f7d",
-      "bytes": 7663,
+      "sha256": "9a81087e815338cb1ed821c17f8e646a07c13a8cf514ff55d1ab98cc27381beb",
+      "bytes": 7636,
       "dimensions": {
         "width": 1920.0,
         "height": 1080.0
