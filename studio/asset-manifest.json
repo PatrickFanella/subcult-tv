@@ -5225,13 +5225,13 @@
   },
   {
     "path": "brand-tools/brands.json",
-    "sha256": "231734e6bbdcacece6512113c3891de55b1b7d6ff2177c777fafdde7dfab6b18",
-    "bytes": 16098
+    "sha256": "8d7e93f5ced17f796996cec4e6353f4667488c030656c5bb4d73c9c8dc0b29fb",
+    "bytes": 17106
   },
   {
     "path": "brand-tools/build_packs.py",
-    "sha256": "32a8e2144aa57b0f47c35dce9e8a96f44271f2aefc7e1bd75f6b3b299d936047",
-    "bytes": 56539
+    "sha256": "023f3590be6c4f110495c381ff2b482ee90f3d9f283cd39425e759a03a572538",
+    "bytes": 56664
   },
   {
     "path": "studies/clpr-directions/comparison.png",
@@ -6505,8 +6505,8 @@
   },
   {
     "path": "brands/index.html",
-    "sha256": "43acf35382265f4ae9dce13d278515bd5990242940d898c7cf62d1190a16ed77",
-    "bytes": 32429
+    "sha256": "14c669b9e7ef1c429d0587e42a538a70892d75490b58a6bbd946ae49307366c4",
+    "bytes": 33437
   },
   {
     "path": "brand-tools/kork_launch_assets.py",
@@ -6815,8 +6815,8 @@
   },
   {
     "path": "brand-tools/selected-directions.json",
-    "sha256": "bce9803e33842e4db111b688c5780f03a1331e4c3a38b821414630e5fb105bbd",
-    "bytes": 2621
+    "sha256": "03944b62ca0fcb4d839472b22a160d01e8493be578a519ed7080b0c296033ba3",
+    "bytes": 3207
   },
   {
     "path": "brand-tools/starter-template/README.md",
@@ -7786,8 +7786,8 @@
   },
   {
     "path": "brands/README.md",
-    "sha256": "907c38d085903703fb4150a62f428883f13b6a5c5327969e082b933d122e662d",
-    "bytes": 3484
+    "sha256": "5d4bc3a5306cb219ca4fc8062a088fd2019f0d489d8370ddd62db3869de34fca",
+    "bytes": 3551
   },
   {
     "path": "brands/arkhiv/GUIDE.md",
