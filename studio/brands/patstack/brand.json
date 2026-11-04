@@ -1,0 +1,50 @@
+{
+  "name": "patstack",
+  "slug": "patstack",
+  "wordmark": "PATSTACK",
+  "initials": "PS",
+  "tagline": "Author once. Deploy guarded.",
+  "headline": ["AUTHOR ONCE.", "DEPLOY GUARDED."],
+  "tag": "AGENT SKILL STACK / A SUBCULT TOOL",
+  "website": "git.subcult.tv/subculture-collective/patstack",
+  "repository": "subculture-collective/patstack",
+  "direction": "A1 Rack + A3 Registration",
+  "direction_selection": "Owner chose the combination on November 3, 2026 from the nine candidates in studies/patstack-directions: the A1 Rack system with A3 Registration's plates as the diagram vocabulary.",
+  "asset_status": "Owner-selected direction. Pack v1 built November 4, 2026. Template layouts are samples, not approved posts.",
+  "lineage": "SUBCULT lineage. Palette and type roles come from the selected SUBCULT C poster-press pack and the SUBCULT Visual Language; state colors come from the Omarchy subcult theme.",
+  "colors": {
+    "background": "#100b19",
+    "surface": "#1f1830",
+    "line": "#3b2470",
+    "text": "#f0ece4",
+    "muted": "#a89fb8",
+    "accent": "#00ff88",
+    "identity": "#8b5cf6",
+    "warning": "#f28c28",
+    "critical": "#ff4055",
+    "critical_on_paper": "#d52032",
+    "archive": "#a89fb8"
+  },
+  "fonts": {
+    "display": "Oswald",
+    "body": "Space Grotesk",
+    "label": "JetBrains Mono"
+  },
+  "hosts": [
+    ["U1", "kvant", "canonical checkout · deployer", "active"],
+    ["U2", "sputnik", "operator laptop", "active"],
+    ["U3", "soyuz", "macOS workstation", "active"],
+    ["U4", "dozor", "monitoring", "active"],
+    ["U5", "almaz", "public edge · Claude links not added", "warning"],
+    ["U6", "nuc", "internal apps", "active"]
+  ],
+  "hosts_record": "States from the 2026-10-19 fleet deployment record (docs/MARKETING-TOOLS.md in patstack), not a live readout.",
+  "states": {
+    "active": ["[ACTIVE]", "accent", "The installed copy matches the source snapshot. Hashes, modes and symlink targets verified."],
+    "warning": ["[WARNING]", "warning", "An external owner (OS, Codex system or Omarchy) changed since the baseline. Listed, never written."],
+    "veto": ["[VETO]", "critical", "Apply refused. A destination drifted from the recorded baseline or last installed snapshot. Nothing written."],
+    "archive": ["[ARCHIVE]", "archive", "A retired name. Mapped to its owner in catalog/retired-names.json; no compatibility entrypoint is created."]
+  },
+  "mark_status": "Original rack mark authored in build.py: three paper units with one acid lamp lit, behind them a violet block tilted 3.6 degrees as the SUBCULT lineage cue. It does not reuse the SC_ master geometry.",
+  "motif": "Rack units (ears, slot number, lamp, label) for hosts and lists. Registered plates (source tree, plan, installed tree) with an ink or paper crosshair for diagrams about verify and drift. Status labels whose color and text agree with the installer's real result."
+}

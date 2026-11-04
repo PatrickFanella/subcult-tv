@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>C1 Ledger</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0b0905}
+a{color:#ffb000}a:hover{color:#e9e1cf}
+</style>
+</helmet>
+<div style="width: 600px; height: 880px; box-sizing: border-box; background: #0b0905; color: #e9e1cf; font-family: 'IBM Plex Sans', sans-serif; padding: 32px; display: flex; flex-direction: column; gap: 18px; position: relative; overflow: hidden">
+  <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #a0937a">
+    <div style="display: flex; align-items: center; gap: 10px">
+      <span style="background: #ffb000; color: #0b0905; padding: 3px 7px; font-weight: 700">C1</span>
+      <span>standalone · systems register</span>
+    </div>
+    <span>proposed</span>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <h1 style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 48px; line-height: 1; letter-spacing: -0.03em; color: #e9e1cf">Ledger</h1>
+    <p style="margin: 0; font-size: 14px; line-height: 1.45; color: #a0937a">Amber phosphor on near-black, mono throughout. patstack as the thing it mostly is: a journal of what was planned, applied, verified and rolled back. Nothing decorative that is not also a record.</p>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 20px">
+    <svg width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="Ledger mark: three bars inside square brackets, the lowest bar amber">
+      <path d="M20 10 H8 V62 H20" fill="none" stroke="#ffb000" stroke-width="4"></path>
+      <path d="M52 10 H64 V62 H52" fill="none" stroke="#ffb000" stroke-width="4"></path>
+      <rect x="26" y="22" width="20" height="5" fill="#e9e1cf"></rect>
+      <rect x="26" y="33" width="20" height="5" fill="#e9e1cf"></rect>
+      <rect x="26" y="44" width="20" height="5" fill="#ffb000"></rect>
+    </svg>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 40px; line-height: 1; letter-spacing: -0.03em; color: #e9e1cf">patstack<span style="display: inline-block; width: 18px; height: 34px; background: #ffb000; vertical-align: -4px; margin-left: 4px"></span></div>
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #ffb000">agent skill stack · journaled</div>
+    </div>
+  </div>
+
+  <div style="background: #16120a; border-top: 3px solid #ffb000; padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 14px">
+    <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #a0937a">
+      <span>catalog · 52 curated · 5 shared · 326 library</span>
+      <span style="color: #ffb000">[active]</span>
+    </div>
+    <h2 style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em; color: #e9e1cf">Author once.<br>Deploy guarded.</h2>
+    <div style="display: flex; flex-direction: column; gap: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #e9e1cf">
+      <div style="display: flex; align-items: baseline; gap: 8px"><span>plan</span><span style="flex: 1 1 auto; border-bottom: 1px dotted #a0937a; transform: translateY(-4px)"></span><span style="color: #a0937a">read-only · records revision and destinations</span></div>
+      <div style="display: flex; align-items: baseline; gap: 8px"><span>apply</span><span style="flex: 1 1 auto; border-bottom: 1px dotted #a0937a; transform: translateY(-4px)"></span><span style="color: #a0937a">journaled · verified backups</span></div>
+      <div style="display: flex; align-items: baseline; gap: 8px"><span>verify</span><span style="flex: 1 1 auto; border-bottom: 1px dotted #a0937a; transform: translateY(-4px)"></span><span style="color: #a0937a">hashes · modes · symlink targets</span></div>
+      <div style="display: flex; align-items: baseline; gap: 8px"><span>rollback</span><span style="flex: 1 1 auto; border-bottom: 1px dotted #a0937a; transform: translateY(-4px)"></span><span style="color: #a0937a">by run · preserves later edits</span></div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 14px; background: #0b0905; border: 1px solid #a0937a">
+      <div style="display: flex; flex-direction: column; gap: 3px">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 700; color: #e9e1cf">prose-unslop</span>
+        <span style="font-size: 12px; color: #a0937a">Cut filler, keep facts, uncertainty and voice.</span>
+      </div>
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #ffb000; white-space: nowrap">skills/ · curated</span>
+    </div>
+    <div style="display: flex; gap: 10px; align-items: center">
+      <button style="font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 13px; padding: 12px 18px; background: #ffb000; color: #0b0905; border: 0; cursor: pointer">Plan install</button>
+      <button style="font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 13px; padding: 11px 18px; background: transparent; color: #e9e1cf; border: 1px solid #e9e1cf; cursor: pointer">View catalog</button>
+      <span style="margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #a0937a">run-* › installed.json</span>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px">
+    <div style="display: flex; flex-direction: column; gap: 6px"><div style="height: 40px; background: #0b0905; border: 1px solid #a0937a"></div><span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #a0937a">#0b0905 ground</span></div>
+    <div style="display: flex; flex-direction: column; gap: 6px"><div style="height: 40px; background: #16120a"></div><span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #a0937a">#16120a surface</span></div>
+    <div style="display: flex; flex-direction: column; gap: 6px"><div style="height: 40px; background: #e9e1cf"></div><span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #a0937a">#e9e1cf bone</span></div>
+    <div style="display: flex; flex-direction: column; gap: 6px"><div style="height: 40px; background: #ffb000"></div><span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #a0937a">#ffb000 amber</span></div>
+    <div style="display: flex; flex-direction: column; gap: 6px"><div style="height: 40px; background: #a0937a"></div><span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #a0937a">#a0937a muted</span></div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 8px 16px; align-items: baseline">
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #a0937a">display · Plex Mono 700</span>
+    <span style="font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 22px; line-height: 1.1; letter-spacing: -0.02em; color: #e9e1cf">Guarded deployment</span>
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #a0937a">body · Plex Sans</span>
+    <span style="font-size: 14px; line-height: 1.4; color: #e9e1cf">Apply rejects drift from the recorded baseline.</span>
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #a0937a">label · Plex Mono</span>
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #ffb000">[ACTIVE] catalog/proposed-catalog.json</span>
+  </div>
+
+  <div style="margin-top: auto; display: flex; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: #a0937a; border-top: 1px solid #a0937a; padding-top: 10px">
+    <span>dark · Plex Mono in Studio packs · Plex Sans is new (OFL)</span>
+    <span>amber on ground 10.9:1</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":600,"height":880}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

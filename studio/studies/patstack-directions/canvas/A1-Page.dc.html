@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A1 Rack · documentation page</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#100b19}
+a{color:#00ff88}a:hover{color:#f0ece4}
+a:focus-visible,button:focus-visible{outline:2px solid #00ff88;outline-offset:2px}
+</style>
+</helmet>
+<div style="min-height: 100%; background: #100b19; color: #f0ece4; font-family: 'Space Grotesk', sans-serif; display: flex; flex-direction: column">
+  <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 18px 32px; border-bottom: 1px solid #3b2470">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #f0ece4">
+      <svg width="32" height="32" viewBox="0 0 72 72" role="img" aria-label="patstack mark">
+        <rect x="14" y="10" width="50" height="52" fill="#8b5cf6" transform="rotate(-3.6 39 36)"></rect>
+        <rect x="6" y="18" width="48" height="11" fill="#f0ece4"></rect>
+        <rect x="6" y="32" width="48" height="11" fill="#f0ece4"></rect>
+        <rect x="6" y="46" width="48" height="11" fill="#f0ece4"></rect>
+        <rect x="46" y="21" width="5" height="5" fill="#00ff88"></rect>
+        <rect x="46" y="35" width="5" height="5" fill="#100b19"></rect>
+        <rect x="46" y="49" width="5" height="5" fill="#100b19"></rect>
+      </svg>
+      <span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0.04em; text-transform: uppercase">patstack</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8b5cf6; border: 1px solid #3b2470; padding: 3px 7px">a SUBCULT tool</span>
+    </a>
+    <nav aria-label="Sections" style="display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase">
+      <a href="#fleet" style="color: #f0ece4; text-decoration: none">Fleet</a>
+      <a href="#catalog" style="color: #f0ece4; text-decoration: none">Catalog</a>
+      <a href="#install" style="color: #f0ece4; text-decoration: none">Install</a>
+      <a href="#states" style="color: #f0ece4; text-decoration: none">States</a>
+      <a href="https://git.subcult.tv/subculture-collective/patstack" style="color: #00ff88; text-decoration: none">Source</a>
+    </nav>
+  </header>
+
+  <main id="top" style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 32px 48px; box-sizing: border-box; display: flex; flex-direction: column; gap: 64px">
+    <section style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; padding-top: 48px">
+      <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+        <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #a89fb8">agent skill stack · private source · authored on kvant, installed everywhere</p>
+        <h1 style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 64px; line-height: 0.98; text-transform: uppercase; letter-spacing: 0.005em; color: #f0ece4">Author once.<br>Deploy guarded.</h1>
+        <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #ddd6e8; max-width: 560px">Personal skills, shared skills, profiles and global agent instructions live in one repository. A guarded installer plans against recorded hashes, applies with a journal and verified backups, and refuses to overwrite drift.</p>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <pre style="margin: 0; padding: 14px 16px; background: #1f1830; border: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; color: #f0ece4; overflow-x: auto"><span style="color: #a89fb8">$ </span>python scripts/install.py plan &gt; /tmp/patstack-plan.json</pre>
+          <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: #a89fb8">read-only · records source revision, destinations, expected and desired trees</p>
+        </div>
+        <a href="#install" style="align-self: flex-start; font-size: 15px; font-weight: 500; color: #00ff88; text-decoration: underline; text-underline-offset: 4px">Read the full procedure</a>
+      </div>
+
+      <section id="fleet" aria-labelledby="fleet-h" style="flex: 1 1 420px; min-width: 0; background: #1f1830; border: 1px solid #3b2470; display: flex; flex-direction: column">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 12px 16px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #a89fb8">
+          <h2 id="fleet-h" style="margin: 0; font: inherit; color: #f0ece4">Fleet · 6 hosts</h2>
+          <span>last recorded verify · 2026-10-19</span>
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <div style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #3b2470">
+            <span aria-hidden="true" style="display: flex; flex-direction: column; gap: 6px"><span style="width: 6px; height: 6px; background: #100b19"></span><span style="width: 6px; height: 6px; background: #100b19"></span></span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #a89fb8; width: 22px">U1</span>
+            <span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 18px; text-transform: uppercase; letter-spacing: 0.03em; width: 92px">kvant</span>
+            <span style="flex: 1 1 auto; min-width: 0; font-size: 12px; color: #a89fb8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">development host · canonical checkout and deployer</span>
+            <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #00ff88"><span aria-hidden="true" style="width: 8px; height: 8px; background: #00ff88"></span>[ACTIVE]</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #3b2470">
+            <span aria-hidden="true" style="display: flex; flex-direction: column; gap: 6px"><span style="width: 6px; height: 6px; background: #100b19"></span><span style="width: 6px; height: 6px; background: #100b19"></span></span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #a89fb8; width: 22px">U2</span>
+            <span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 18px; text-transform: uppercase; letter-spacing: 0.03em; width: 92px">sputnik</span>
+            <span style="flex: 1 1 auto; min-width: 0; font-size: 12px; color: #a89fb8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">operator laptop · this host</span>
+            <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #00ff88"><span aria-hidden="true" style="width: 8px; height: 8px; background: #00ff88"></span>[ACTIVE]</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #3b2470">
+            <span aria-hidden="true" style="display: flex; flex-direction: column; gap: 6px"><span style="width: 6px; height: 6px; background: #100b19"></span><span style="width: 6px; height: 6px; background: #100b19"></span></span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #a89fb8; width: 22px">U3</span>
+            <span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 18px; text-transform: uppercase; letter-spacing: 0.03em; width: 92px">soyuz</span>
+            <span style="flex: 1 1 auto; min-width: 0; font-size: 12px; color: #a89fb8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">macOS operator workstation</span>
+            <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #00ff88"><span aria-hidden="true" style="width: 8px; height: 8px; background: #00ff88"></span>[ACTIVE]</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #3b2470">
+            <span aria-hidden="true" style="display: flex; flex-direction: column; gap: 6px"><span style="width: 6px; height: 6px; background: #100b19"></span><span style="width: 6px; height: 6px; background: #100b19"></span></span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #a89fb8; width: 22px">U4</span>
+            <span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 18px; text-transform: uppercase; letter-spacing: 0.03em; width: 92px">dozor</span>
+            <span style="flex: 1 1 auto; min-width: 0; font-size: 12px; color: #a89fb8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">monitoring and fallback DNS</span>
+            <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #00ff88"><span aria-hidden="true" style="width: 8px; height: 8px; background: #00ff88"></span>[ACTIVE]</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #3b2470">
+            <span aria-hidden="true" style="display: flex; flex-direction: column; gap: 6px"><span style="width: 6px; height: 6px; background: #100b19"></span><span style="width: 6px; height: 6px; background: #100b19"></span></span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #a89fb8; width: 22px">U5</span>
+            <span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 18px; text-transform: uppercase; letter-spacing: 0.03em; width: 92px">almaz</span>
+            <span style="flex: 1 1 auto; min-width: 0; font-size: 12px; color: #a89fb8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">public edge · Codex verified; Claude links not added, generated root preserved</span>
+            <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #f28c28"><span aria-hidden="true" style="width: 8px; height: 8px; background: #f28c28"></span>[WARNING]</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px; padding: 10px 12px">
+            <span aria-hidden="true" style="display: flex; flex-direction: column; gap: 6px"><span style="width: 6px; height: 6px; background: #100b19"></span><span style="width: 6px; height: 6px; background: #100b19"></span></span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #a89fb8; width: 22px">U6</span>
+            <span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 18px; text-transform: uppercase; letter-spacing: 0.03em; width: 92px">nuc</span>
+            <span style="flex: 1 1 auto; min-width: 0; font-size: 12px; color: #a89fb8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">internal apps and data</span>
+            <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #00ff88"><span aria-hidden="true" style="width: 8px; height: 8px; background: #00ff88"></span>[ACTIVE]</span>
+          </div>
+        </div>
+        <p style="margin: 0; padding: 10px 16px; border-top: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.04em; color: #a89fb8">States from the 2026-10-19 fleet deployment record, not a live readout.</p>
+      </section>
+    </section>
+
+    <section id="catalog" aria-labelledby="catalog-h" style="display: flex; flex-direction: column; gap: 18px">
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3b2470; padding-bottom: 10px">
+        <h2 id="catalog-h" style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 32px; text-transform: uppercase; letter-spacing: 0.02em">Catalog</h2>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #a89fb8">52 curated · 5 shared · 326 library · 1 repository-local</span>
+      </div>
+      <div style="overflow-x: auto">
+        <table style="width: 100%; min-width: 720px; border-collapse: collapse; font-size: 14px">
+          <thead>
+            <tr style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #a89fb8; text-align: left">
+              <th scope="col" style="padding: 8px 12px 8px 0; border-bottom: 1px solid #3b2470; font-weight: 500">skill</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #3b2470; font-weight: 500">owner</th>
+              <th scope="col" style="padding: 8px 12px; border-bottom: 1px solid #3b2470; font-weight: 500">retired name</th>
+              <th scope="col" style="padding: 8px 0 8px 12px; border-bottom: 1px solid #3b2470; font-weight: 500">what it does</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">prose-unslop</td>
+              <td style="padding: 12px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; color: #a89fb8; white-space: nowrap">skills/</td>
+              <td style="padding: 12px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; color: #a89fb8; white-space: nowrap">unslop · 2026-11-03</td>
+              <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #3b2470; color: #ddd6e8">Required for user-facing prose and documentation edits: cut filler, keep facts, uncertainty and voice.</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">scope-grill</td>
+              <td style="padding: 12px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; color: #a89fb8; white-space: nowrap">shared/</td>
+              <td style="padding: 12px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; color: #a89fb8">—</td>
+              <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #3b2470; color: #ddd6e8">Interview modes for a requested grill-me or grill-with-docs; deeper rounds without turning ordinary tasks into interviews.</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">relay-baton</td>
+              <td style="padding: 12px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; color: #a89fb8; white-space: nowrap">shared/</td>
+              <td style="padding: 12px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; color: #a89fb8">—</td>
+              <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #3b2470; color: #ddd6e8">Handoff between sessions and agents.</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">voice-ledger</td>
+              <td style="padding: 12px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; color: #a89fb8; white-space: nowrap">shared/</td>
+              <td style="padding: 12px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; color: #a89fb8">—</td>
+              <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #3b2470; color: #ddd6e8">Define or review a written voice.</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 12px 12px 0; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">content-recaster</td>
+              <td style="padding: 12px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; color: #a89fb8; white-space: nowrap">shared/</td>
+              <td style="padding: 12px; border-bottom: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; color: #a89fb8">—</td>
+              <td style="padding: 12px 0 12px 12px; border-bottom: 1px solid #3b2470; color: #ddd6e8">Adapt an actual source asset into selected channels.</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 12px 12px 0; font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap">launch-dossier</td>
+              <td style="padding: 12px; font-family: 'JetBrains Mono', monospace; color: #a89fb8; white-space: nowrap">shared/</td>
+              <td style="padding: 12px; font-family: 'JetBrains Mono', monospace; color: #a89fb8">—</td>
+              <td style="padding: 12px 0 12px 12px; color: #ddd6e8">Create or refresh a complete product packet from the Subcult starter and seven drafting prompts.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #a89fb8">Six of 57 entrypoints shown. Retired names map to their owners in catalog/retired-names.json; none keeps a compatibility entrypoint.</p>
+    </section>
+
+    <section id="install" aria-labelledby="install-h" style="display: flex; flex-direction: column; gap: 18px">
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3b2470; padding-bottom: 10px">
+        <h2 id="install-h" style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 32px; text-transform: uppercase; letter-spacing: 0.02em">Install</h2>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #a89fb8">from a committed, reviewed checkout · Python 3 on Linux</span>
+      </div>
+      <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
+        <li style="display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: flex-start">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #00ff88; width: 28px; padding-top: 14px">01</span>
+          <pre style="margin: 0; flex: 1 1 420px; min-width: 0; padding: 12px 16px; background: #1f1830; border: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; color: #f0ece4; overflow-x: auto">python scripts/validate.py
+PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -v</pre>
+          <span style="flex: 1 1 220px; font-size: 13px; line-height: 1.5; color: #a89fb8; padding-top: 10px">Validation needs PyYAML. The catalog and capability map must be complete before anything is installed.</span>
+        </li>
+        <li style="display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: flex-start">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #00ff88; width: 28px; padding-top: 14px">02</span>
+          <pre style="margin: 0; flex: 1 1 420px; min-width: 0; padding: 12px 16px; background: #1f1830; border: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; color: #f0ece4; overflow-x: auto">python scripts/install.py plan &gt; /tmp/patstack-plan.json</pre>
+          <span style="flex: 1 1 220px; font-size: 13px; line-height: 1.5; color: #a89fb8; padding-top: 10px">Read-only. Review the changed destinations, ownership and retired names before applying.</span>
+        </li>
+        <li style="display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: flex-start">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #00ff88; width: 28px; padding-top: 14px">03</span>
+          <pre style="margin: 0; flex: 1 1 420px; min-width: 0; padding: 12px 16px; background: #1f1830; border: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; color: #f0ece4; overflow-x: auto">python scripts/install.py apply --through 1
+python scripts/install.py apply --resume &lt;run-path&gt; --through 2
+python scripts/install.py apply --resume &lt;run-path&gt; --through 3</pre>
+          <span style="flex: 1 1 220px; font-size: 13px; line-height: 1.5; color: #a89fb8; padding-top: 10px">Three batches, one journal. Each writes verified original backups under the run directory.</span>
+        </li>
+        <li style="display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: flex-start">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #00ff88; width: 28px; padding-top: 14px">04</span>
+          <pre style="margin: 0; flex: 1 1 420px; min-width: 0; padding: 12px 16px; background: #1f1830; border: 1px solid #3b2470; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; color: #f0ece4; overflow-x: auto">python scripts/install.py verify
+python scripts/install.py rollback --run &lt;run-path&gt;</pre>
+          <span style="flex: 1 1 220px; font-size: 13px; line-height: 1.5; color: #a89fb8; padding-top: 10px">Verify compares hashes, modes and symlink targets. Rollback restores only that run's destinations and preserves later edits.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="states" aria-labelledby="states-h" style="display: flex; flex-direction: column; gap: 18px">
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3b2470; padding-bottom: 10px">
+        <h2 id="states-h" style="margin: 0; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 32px; text-transform: uppercase; letter-spacing: 0.02em">States</h2>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #a89fb8">label and color agree with the installer's real result</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        <div style="flex: 1 1 240px; min-width: 0; border: 1px solid #3b2470; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+          <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #00ff88"><span aria-hidden="true" style="width: 10px; height: 10px; background: #00ff88"></span>[ACTIVE]</span>
+          <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #ddd6e8">The installed copy matches the source snapshot. Hashes, modes and symlink targets verified.</p>
+        </div>
+        <div style="flex: 1 1 240px; min-width: 0; border: 1px solid #3b2470; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+          <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #f28c28"><span aria-hidden="true" style="width: 10px; height: 10px; background: #f28c28"></span>[WARNING]</span>
+          <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #ddd6e8">An external owner (OS, Codex system or Omarchy) changed since the baseline. Listed, never written.</p>
+        </div>
+        <div style="flex: 1 1 240px; min-width: 0; border: 1px solid #3b2470; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+          <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #ff4055"><span aria-hidden="true" style="width: 10px; height: 10px; background: #ff4055"></span>[VETO]</span>
+          <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #ddd6e8">Apply refused. A destination drifted from the recorded baseline or last installed snapshot. Nothing written.</p>
+        </div>
+        <div style="flex: 1 1 240px; min-width: 0; border: 1px solid #3b2470; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+          <span style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #a89fb8"><span aria-hidden="true" style="width: 10px; height: 10px; background: #a89fb8"></span>[ARCHIVE]</span>
+          <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #ddd6e8">A retired name. Mapped to its owner in retired-names.json; no compatibility entrypoint is created.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="margin-top: auto; border-top: 1px solid #3b2470; padding: 18px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: #a89fb8">
+    <span>patstack · formerly codex-skills · source private until publication scope is reviewed</span>
+    <span>status labels follow the SUBCULT Visual Language</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

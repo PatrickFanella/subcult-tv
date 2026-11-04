@@ -1,0 +1,16 @@
+:root {
+  --patstack-background: #100b19;
+  --patstack-surface: #1f1830;
+  --patstack-line: #3b2470;
+  --patstack-text: #f0ece4;
+  --patstack-muted: #a89fb8;
+  --patstack-accent: #00ff88;
+  --patstack-identity: #8b5cf6;
+  --patstack-warning: #f28c28;
+  --patstack-critical: #ff4055;
+  --patstack-critical-on-paper: #d52032;
+  --patstack-archive: #a89fb8;
+  --patstack-font-display: "Oswald", sans-serif;
+  --patstack-font-body: "Space Grotesk", sans-serif;
+  --patstack-font-label: "JetBrains Mono", monospace;
+}
