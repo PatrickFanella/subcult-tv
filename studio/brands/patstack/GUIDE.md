@@ -80,10 +80,10 @@ Original rack mark authored in build.py: three paper units with one acid lamp li
 | U2 | sputnik | operator laptop | [ACTIVE] |
 | U3 | soyuz | macOS workstation | [ACTIVE] |
 | U4 | dozor | monitoring | [ACTIVE] |
-| U5 | almaz | public edge · Claude links not added | [WARNING] |
+| U5 | almaz | public edge | [ACTIVE] |
 | U6 | nuc | internal apps | [ACTIVE] |
 
-States from the 2026-10-19 fleet deployment record (docs/MARKETING-TOOLS.md in patstack), not a live readout. Rebuild the pack after a verified fleet deployment and update `brand.json` so the rack stays true. A public post should check whether host names belong in it.
+States from the 2026-11-03 fleet deployment record (the Subsets category rebuild, patstack PR #26, deployed and verified on all six hosts; Machinum report Subsets category rebuild 2026-11-03), not a live readout. Rebuild the pack after a verified fleet deployment and update `brand.json` so the rack stays true. A public post should check whether host names belong in it.
 
 ## Surfaces
 

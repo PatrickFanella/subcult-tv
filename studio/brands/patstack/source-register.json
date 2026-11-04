@@ -6,9 +6,9 @@
   "motif": "Rack units (ears, slot number, lamp, label) for hosts and lists. Registered plates (source tree, plan, installed tree) with an ink or paper crosshair for diagrams about verify and drift. Status labels whose color and text agree with the installer's real result.",
   "lineage": "SUBCULT lineage. Palette and type roles come from the selected SUBCULT C poster-press pack and the SUBCULT Visual Language; state colors come from the Omarchy subcult theme.",
   "copy": "Headline and support lines are sample copy in the SUBCULT voice (content/VOICE.md). Facts come from the patstack README and docs/OPERATING-MODEL.md.",
-  "hosts": "States from the 2026-10-19 fleet deployment record (docs/MARKETING-TOOLS.md in patstack), not a live readout.",
+  "hosts": "States from the 2026-11-03 fleet deployment record (the Subsets category rebuild, patstack PR #26, deployed and verified on all six hosts; Machinum report Subsets category rebuild 2026-11-03), not a live readout.",
   "fonts": "Studio licensed font collection; OFL texts included for Oswald, Space Grotesk and JetBrains Mono.",
-  "claims": "patstack README (counts, installer behavior), docs/OPERATING-MODEL.md, docs/MARKETING-TOOLS.md (October 19, 2026 deployment record)",
+  "claims": "patstack README (counts, installer behavior), docs/OPERATING-MODEL.md, and the fleet record named in hosts",
   "canvas": "https://claude.ai/artifact/L12uCteNUx37eWSZtmRFDn",
   "publication": "Not performed. Owner selected the direction; pack files are local masters. Social publication and profile changes are separate actions."
 }

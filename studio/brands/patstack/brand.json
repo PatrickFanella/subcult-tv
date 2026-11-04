@@ -35,10 +35,11 @@
     ["U2", "sputnik", "operator laptop", "active"],
     ["U3", "soyuz", "macOS workstation", "active"],
     ["U4", "dozor", "monitoring", "active"],
-    ["U5", "almaz", "public edge · Claude links not added", "warning"],
+    ["U5", "almaz", "public edge", "active"],
     ["U6", "nuc", "internal apps", "active"]
   ],
-  "hosts_record": "States from the 2026-10-19 fleet deployment record (docs/MARKETING-TOOLS.md in patstack), not a live readout.",
+  "hosts_date": "2026-11-03",
+  "hosts_record": "States from the 2026-11-03 fleet deployment record (the Subsets category rebuild, patstack PR #26, deployed and verified on all six hosts; Machinum report Subsets category rebuild 2026-11-03), not a live readout.",
   "states": {
     "active": ["[ACTIVE]", "accent", "The installed copy matches the source snapshot. Hashes, modes and symlink targets verified."],
     "warning": ["[WARNING]", "warning", "An external owner (OS, Codex system or Omarchy) changed since the baseline. Listed, never written."],
