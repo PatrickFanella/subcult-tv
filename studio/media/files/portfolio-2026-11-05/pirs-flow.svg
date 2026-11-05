@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+<title id="title">Pirs: A separate experimental host</title>
+<desc id="desc">Standalone host and event-delivery research; production integration remains open. EXPERIMENTAL / NO SUPPORTED PRODUCTION PDS PLUGIN SYSTEM</desc>
+<rect width="1440" height="900" fill="#0e2a47"/>
+<path d="M80 112H1360M80 704H1360" stroke="#7fb3d5" stroke-width="2"/>
+<text xml:space="preserve" x="80" y="84" fill="#ffb347" font-family="Barlow Condensed" font-size="30" font-weight="700">Pirs</text>
+<text xml:space="preserve" x="80" y="188" fill="#7fb3d5" font-family="IBM Plex Mono" font-size="21" font-weight="400">IMPLEMENTATION DIAGRAM / NOVEMBER 2026</text>
+<text xml:space="preserve" x="80" y="260" fill="#e6eef7" font-family="Barlow Condensed" font-size="52" font-weight="700">A separate experimental host</text>
+<rect x="80.0" y="360" width="394.6666666666667" height="244" fill="none" stroke="#ffb347" stroke-width="2"/>
+<text xml:space="preserve" x="102.0" y="400" fill="#7fb3d5" font-family="IBM Plex Mono" font-size="21" font-weight="400">01</text>
+<text xml:space="preserve" x="102.0" y="450" fill="#e6eef7" font-family="Barlow Condensed" font-size="29" font-weight="700">PDS</text>
+<text xml:space="preserve" x="102.0" y="502" fill="#e6eef7" font-family="Barlow" font-size="21" font-weight="400">Sequencer events</text>
+<text xml:space="preserve" x="102.0" y="536" fill="#e6eef7" font-family="Barlow" font-size="21" font-weight="400">from the server</text>
+<path d="M482.6666666666667 482H514.6666666666667m-10 -8 10 8 -10 8" fill="none" stroke="#ffb347" stroke-width="3"/>
+<rect x="522.6666666666667" y="360" width="394.6666666666667" height="244" fill="none" stroke="#ffb347" stroke-width="2"/>
+<text xml:space="preserve" x="544.6666666666667" y="400" fill="#7fb3d5" font-family="IBM Plex Mono" font-size="21" font-weight="400">02</text>
+<text xml:space="preserve" x="544.6666666666667" y="450" fill="#e6eef7" font-family="Barlow Condensed" font-size="29" font-weight="700">Private bridge</text>
+<text xml:space="preserve" x="544.6666666666667" y="502" fill="#e6eef7" font-family="Barlow" font-size="21" font-weight="400">Retained event delivery</text>
+<text xml:space="preserve" x="544.6666666666667" y="536" fill="#e6eef7" font-family="Barlow" font-size="21" font-weight="400">Opt-in local socket</text>
+<path d="M925.3333333333335 482H957.3333333333335m-10 -8 10 8 -10 8" fill="none" stroke="#ffb347" stroke-width="3"/>
+<rect x="965.3333333333334" y="360" width="394.6666666666667" height="244" fill="none" stroke="#ffb347" stroke-width="2"/>
+<text xml:space="preserve" x="987.3333333333334" y="400" fill="#7fb3d5" font-family="IBM Plex Mono" font-size="21" font-weight="400">03</text>
+<text xml:space="preserve" x="987.3333333333334" y="450" fill="#e6eef7" font-family="Barlow Condensed" font-size="29" font-weight="700">Wasmtime host</text>
+<text xml:space="preserve" x="987.3333333333334" y="502" fill="#e6eef7" font-family="Barlow" font-size="21" font-weight="400">Bounded components</text>
+<text xml:space="preserve" x="987.3333333333334" y="536" fill="#e6eef7" font-family="Barlow" font-size="21" font-weight="400">Manifest permissions</text>
+<text xml:space="preserve" x="80" y="678" fill="#e6eef7" font-family="Barlow" font-size="24" font-weight="400">Standalone host and event-delivery research; production integration remains open.</text>
+<text xml:space="preserve" x="80" y="766" fill="#ffb347" font-family="IBM Plex Mono" font-size="20" font-weight="400">EXPERIMENTAL / NO SUPPORTED PRODUCTION PDS PLUGIN SYSTEM</text>
+<text xml:space="preserve" x="80" y="834" fill="#7fb3d5" font-family="IBM Plex Mono" font-size="17" font-weight="400">SUBCULT / WORKFLOW DIAGRAM / NOT AN APPLICATION SCREEN</text>
+</svg>

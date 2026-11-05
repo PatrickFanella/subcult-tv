@@ -120,7 +120,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         question: 'Is there a public app?',
         answer:
-          'Not yet. Left Field is in active development. This page links to its public source repository, and no public app has been announced.',
+          'Yes. The public research site is available, with its sources and methods. It remains in active development and its scores are provisional.',
       },
       {
         question: 'Do the scores predict an election result?',
@@ -148,7 +148,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       },
       {
         title: 'The one from last Tuesday',
-        description: 'Save a clip when you find it. Next time it comes up, you have it.',
+        description: 'Sign in to save a clip when you find it. Next time it comes up, you have it.',
       },
       {
         title: 'Playlists',
@@ -168,7 +168,8 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       },
       {
         title: 'Keep what you find',
-        description: 'Save it, drop it in a playlist, send the link.',
+        description:
+          'Sign in to save it or make a playlist. Share the link with whoever missed it.',
       },
     ],
     faqHeading: 'Quick answers',
@@ -256,7 +257,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         title: 'The record',
         description:
-          'Search the transcripts by topic or by exact phrase. The search runs across every transcript in the archive.',
+          'Search the archived, transcribed broadcasts by topic, whole word or exact phrase. Open a matching moment with its surrounding transcript and source recording.',
       },
       {
         title: 'Citations',
@@ -326,7 +327,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         title: 'Name and branding',
         description:
-          'Each deployment supplies its own public profile and assets, so every archive runs under its own name. Changing them does not require forking or rebuilding the application.',
+          'Each archive owns and builds its frontend against the Rekolekt API. HasanAra is one such frontend, with its own name and interface.',
       },
     ],
     stepsLabel: 'FOR A NEW ARCHIVE',
@@ -357,7 +358,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         question: 'Can an archive use its own branding?',
         answer:
-          'Yes. Each deployment supplies its own public profile and assets. Changing the branding does not require forking or rebuilding the application.',
+          'Yes. Each archive maintains its own frontend and branding. Rekolekt is the shared backend; it does not ship web pages.',
       },
       {
         question: 'Where can I see one running?',
@@ -388,7 +389,8 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       },
       {
         title: 'The list',
-        description: 'Guests reserve free tickets. Paid ticketing is not on offer.',
+        description:
+          'Manage reservations and the guest list. Paid sales and payouts are not offered as a public service.',
       },
       {
         title: '19:00 doors',
@@ -421,7 +423,8 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       },
       {
         question: 'Does it sell tickets?',
-        answer: 'It takes free reservations. We make no promises about paid ticketing or payouts.',
+        answer:
+          'The public reservation flow is for free tickets. Ticket-pricing support also exists in the software, but paid sales and payouts are not offered through the public service.',
       },
       {
         question: 'Who is it for?',
@@ -590,7 +593,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         title: 'Numbers without snooping',
         description:
-          'Daily totals of views, clicks, click-through, referrer domains and countries. No trackers, and no visitor IP addresses, cookies or user agents stored. There’s a weekly email if you want one.',
+          'Daily aggregate page, referrer-domain and country counts. The analytics records do not store visitor IP addresses, cookies or user-agent strings. There’s a weekly email if you want one.',
       },
     ],
     stepsLabel: 'FREE AND SELF-SERVE',
@@ -618,9 +621,14 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
         answer: 'Nothing. Kork is free to use.',
       },
       {
+        question: 'When can I publish?',
+        answer:
+          'You can build your page immediately. New accounts wait 24 hours before publishing to help limit spam.',
+      },
+      {
         question: 'Does Kork track my visitors?',
         answer:
-          'No. Analytics are anonymous daily totals of views, clicks, referrer domains and countries. Kork stores no visitor IP addresses, cookies or user agents.',
+          'Analytics records contain daily aggregate page, referrer-domain and country counts, without visitor IP addresses, cookies or user-agent strings. Signed-in account sessions use a separate cookie.',
       },
       {
         question: 'Can I move my page from Linktree?',
@@ -677,7 +685,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         title: 'Open it where you work',
         description:
-          'The web app, the Linux desktop client and your phone open the same planner over your server.',
+          'The web app and the desktop and mobile prerelease clients connect to the same planner on your server.',
       },
     ],
     faqs: [
@@ -699,19 +707,19 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         question: 'Which platforms?',
         answer:
-          'A web app, a Linux desktop client and an Android shell that exists in source without a built app yet. All of them talk to the same server.',
+          'The web app runs in a browser. Current prereleases include Linux and macOS desktop builds, an Android APK and an unsigned iOS build for development installation. They all connect to your server; these are prereleases, not app-store releases.',
       },
     ],
     closing: 'The rest can wait in the list.',
   },
   'chatty-cat': {
     audience: 'For viewers who keep more than one chat open and want their own settings to stick.',
-    introduction: 'Six rooms, one log, your display.',
+    introduction: 'Keep the rooms you follow together.',
     features: [
       {
-        title: 'Merge up to six channels',
+        title: 'Merged and independent panes',
         description:
-          'Open the rooms you follow and read them as one scrollback. If the connection drops it reconnects and restores whatever public backfill Twitch still offers.',
+          'Read channels in a merged scrollback or independent panes. A merged pane starts with six channels; configured workspaces can include up to 24. Reconnects restore whatever public backfill Twitch still offers.',
       },
       {
         title: 'Your settings, remembered',
@@ -719,23 +727,23 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
           'The original palettes, fonts, filters, columns and header modes are all here, with saved slots. Pick a colour and a shade; the cat in the header follows.',
       },
       {
-        title: 'Sending, when the gate opens',
+        title: 'Sending with your Twitch account',
         description:
-          'Signed-in sending, replies, whispers and moderation notices use tokens held on the server, never in the browser. Those parts are still behind release gates and are not promised yet.',
+          'Sending, replies and whispers use Twitch sign-in, with tokens held on the server. The commands available to you depend on your account and channel permissions; anonymous viewing stays read-only.',
       },
     ],
     stepsLabel: 'WHERE IT STANDS',
-    stepsHeading: 'A rebuild in progress',
+    stepsHeading: 'A browser client you can host',
     steps: [
       {
-        title: 'The original stays up',
+        title: 'The upstream lineage',
         description:
-          'Chatty Cat rebuilds HasanAbi Chat Thing and its Twitch relay by mxmilkiib, under AGPL-3.0. The original app remains the reference until every feature family reaches parity.',
+          'Chatty Cat rebuilds HasanAbi Chat Thing and its Twitch relay by mxmilkiib, under AGPL-3.0. The original app remains an attributed reference; current product decisions are not limited to reproducing its features.',
       },
       {
-        title: 'A live test build',
+        title: 'The public web client',
         description:
-          'chat.subcult.tv serves the current build for anonymous viewing. Sessions end when the service restarts.',
+          'chat.subcult.tv serves the browser client. Anonymous viewing needs no account; sending uses Twitch sign-in. Sessions end when the service restarts.',
       },
       {
         title: 'Host your own',
@@ -752,15 +760,15 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         question: 'What happened to Chat Thing?',
         answer:
-          'Same log, same settings, our server. The code was rewritten so SUBCULT can host it; the name changed with the hosting. The lineage and license are in the repository’s NOTICE file.',
+          'Chatty Cat grew from HasanAbi Chat Thing, with its lineage and AGPL attribution retained. The current client adds its own workspace and pane controls; it is not limited to reproducing the original feature set.',
       },
       {
         question: 'Can I moderate from it?',
         answer:
-          'Moderation is built but not released. Real consent, posting and moderation on Twitch are release gates that have not passed, so the page does not claim them.',
+          'Supported commands depend on your Twitch account and channel permissions. The client does not grant extra permissions; check its command and delivery feedback.',
       },
     ],
-    closing: 'New name, same cat.',
+    closing: 'Read anonymously. Sign in when you want to join in.',
   },
   headcount: {
     audience:
@@ -768,19 +776,19 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     introduction: 'Viewers, chatters and follows, side by side.',
     features: [
       {
-        title: 'Every top-200 channel, every minute',
+        title: 'Following the top 200',
         description:
           'Once a channel reaches the Twitch top 200, Headcount keeps tracking it: viewers and category each minute, chat as it happens, and the follower total.',
       },
       {
         title: 'One score per stream',
         description:
-          'When a stream ends, twelve detectors each rate one kind of evidence, such as chat that stays flat while viewers spike or follows that arrive in bursts. They combine into a sus quotient from 0 to 100. Live streams get a provisional score after an hour.',
+          'Detectors examine different kinds of evidence, such as chat that stays flat while viewers spike or follows that arrive in bursts. The sus quotient combines those signals. Scores remain provisional and should be read with their coverage and method notes.',
       },
       {
         title: 'The engagement map',
         description:
-          'Every recent stream, placed by audience size against how many of its viewers chat, with a band for what is typical at that size. Filter by window, language or category.',
+          'Recently scored streams, placed by audience size against how many of their viewers chat, with a band for what is typical at that size. Filter by window, language or category.',
       },
       {
         title: 'Search and categories',
@@ -855,9 +863,9 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     stepsHeading: 'A private pilot',
     steps: [
       {
-        title: 'Running in two SUBCULT servers',
+        title: 'Testing with SUBCULT',
         description:
-          'Backline is a release candidate. All twenty-three modules are enabled in the pilot servers, where the dashboard, the bot and the feeds are being watched.',
+          'Backline is in a private pilot with SUBCULT. Setup, Discord permissions and day-to-day use are being tested before installation opens to other communities.',
       },
       {
         title: 'Not open for installation',
@@ -1012,9 +1020,8 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
     closing: 'When something degrades, the health page says which thing.',
   },
   pirs: {
-    audience:
-      'For operators of a personal data server who want to extend it without patching the upstream.',
-    introduction: 'Hook points for a server that has none.',
+    audience: 'For developers investigating extensions to an AT Protocol personal data server.',
+    introduction: 'A separate host, with the integration still experimental.',
     features: [
       {
         title: 'A draft specification',
@@ -1027,9 +1034,9 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
           'A status endpoint counts sequencer events. The smoke test boots a throwaway server and checks that an event arrives.',
       },
       {
-        title: 'A plugin host, planned',
+        title: 'A separate component host',
         description:
-          'Plugins are meant to run in a separate wasmtime process that never receives signing keys. The host does not exist yet.',
+          'A separate Wasmtime process runs bounded WebAssembly components. Local tests cover event delivery, manifest limits and restricted outbound requests. This is experimental host research; no supported PDS plugin hook is available yet.',
       },
     ],
     stepsLabel: 'WHERE IT STANDS',
@@ -1043,7 +1050,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         title: 'Not production software',
         description:
-          'No plugin runs yet, and no milestone beyond the scaffold has started. Prichal, our managed hosting, stays on the unmodified upstream image.',
+          'The host and optional private event bridge have local qualification evidence. Pirs remains experimental; Prichal keeps managed hosting on the unmodified upstream image.',
       },
     ],
     faqs: [
@@ -1055,7 +1062,7 @@ export const PRODUCT_LANDINGS: Record<string, LandingContent> = {
       {
         question: 'Can I try it?',
         answer:
-          'Clone it and run the smoke test with Node 22 and pnpm. That is the whole demonstration today.',
+          'The development checks use Node 22 or newer and pnpm. The source also includes separate host and private-event checks. There is no supported public server installation offer.',
       },
     ],
     closing: 'A pier is where things get attached.',

@@ -6,6 +6,7 @@
 import { getShowcaseProducts, type ShowcaseProduct } from '@/lib/showcase';
 import { getProductPath } from '@/lib/product-paths';
 import { PATREON_URL } from '@/lib/links';
+import { PRODUCT_MARKS } from '@/lib/product-marks';
 
 export const SITE_URL = 'https://subcult.tv';
 export const SITE_NAME = 'SUBCULT';
@@ -47,7 +48,7 @@ const ORGANIZATION = {
 const META_DESCRIPTIONS: Record<string, string> = {
   subsets:
     'Subsets reads the agent skills on your computer, groups them for a task and previews the set before it applies. A local CLI and terminal interface by SUBCULT.',
-  clpr: 'Twitch clips sorted by creator, topic and tag. Save the good ones to playlists and send them to whoever missed it live.',
+  clpr: 'Browse Twitch clips by creator, topic and tag. Sign in to save clips and make playlists, then share them with whoever missed it live.',
   patchwork:
     'A neighborhood board for asking and offering help. Requests show an approximate area. Pre-alpha demonstration: please don’t arrange real help through it yet.',
   hasanara:
@@ -55,7 +56,7 @@ const META_DESCRIPTIONS: Record<string, string> = {
   'transcript-create':
     'Rekolekt transcribes recordings with timestamps, indexes the text and links each passage to its source. Software you deploy, not a hosted upload service.',
   'subcult-os':
-    'A run sheet for small shows: the plan, the crew, free ticket reservations, door check-in and an end-of-night report. Subcult OS is in development.',
+    'A run sheet for small shows: the plan, crew, reservations, door check-in and close-out report. Subcult OS remains in development.',
   undertow:
     'Layer Milkdrop, spectrum, VU meters, artwork and timed lyrics. Lay out 16:9, 9:16 and 1:1, then export H.264 MP4 in your browser.',
   prichal:
@@ -66,7 +67,7 @@ const META_DESCRIPTIONS: Record<string, string> = {
   tadooer:
     'A private, self-hosted task and calendar planner for one owner. Tasks beside the calendar on one grid, one focus session at a time, your server, no sign-up.',
   'chatty-cat':
-    'A self-hosted Twitch chat client that merges up to six channels into one scrollback and keeps your display settings. A rebuild of Chat Thing, in migration.',
+    'A self-hosted Twitch chat workspace with merged or independent panes, saved settings and Twitch sign-in for sending, replies and whispers.',
   headcount:
     'Headcount scores Twitch top-200 streams for patterns that view-bots, follow-bots and chat-bots produce. A high score is a reason to look, not proof.',
   backline:
@@ -75,7 +76,7 @@ const META_DESCRIPTIONS: Record<string, string> = {
     'Browse print, audio and video collections, read documents and play recordings. Arkhiv keeps source context, file variants and delivery policies visible.',
   overlaid:
     'OBS overlays, Twitch events, a chat bot, scene controls and a health page for one person running a stream. Runs beside OBS on your machine. In development.',
-  pirs: 'An experimental fork of the Bluesky personal data server with plugin hook points: a draft spec, a status endpoint and a smoke test. No plugin runs yet.',
+  pirs: 'Experimental AT Protocol server research with a separate WebAssembly host and private event bridge. No supported production plugin system or hosting offer.',
   'tmux-popups':
     'A tmux popup toolkit: a Prefix+Enter quick menu and bindings generated from one TSV registry, with overrides, dependency checks and a doctor script. Bash only.',
   'omarchy-monitor-bar':
@@ -106,7 +107,7 @@ const TITLE_PHRASES: Record<string, string> = {
   kork: 'Free link pages for creators',
   'left-field': 'Sourced election and seat research',
   tadooer: 'A private planner for one owner',
-  'chatty-cat': 'Six Twitch channels, one scrollback',
+  'chatty-cat': 'Twitch chat, in your own workspace',
   headcount: 'Bot signals for the Twitch top 200',
   backline: 'A Discord bot for running a community',
   arkhiv: 'Print, audio and video archives',
@@ -160,6 +161,11 @@ const OPERATING_SYSTEM: Record<string, string> = {
   'obsidian-plugin-metronome-tuner': 'Obsidian desktop and mobile',
   'super-productivity-mcp': 'Linux',
   pirs: 'Linux (Node.js)',
+  'clustr-galaxy': 'Linux (beta in development)',
+  'the-common-house': 'Linux (development prototype)',
+  ytclip: 'Linux (Bash, yt-dlp and ffmpeg)',
+  twitchdl: 'Linux (Go CLI)',
+  patstack: 'Local agent skills',
   overlaid: 'Linux, macOS, Windows (self-hosted, beside OBS)',
 };
 
@@ -172,7 +178,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/',
     title: 'SUBCULT | Tools for independent culture',
     description:
-      'Twenty-four tools from SUBCULT: clips, archives, chat, mutual aid, shows, streams, music video, link pages, a Discord bot, desktop plugins and agent tools.',
+      'Software for independent culture: make music videos, publish a link page, find clips, search broadcasts, explore archives and follow the workshop.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [
@@ -190,7 +196,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/products',
     title: fullTitle('Products'),
     description:
-      'All twenty-four SUBCULT products: apps and services, desktop and editor plugins, and developer and agent tools. Each page says how finished it is.',
+      'Explore SUBCULT apps, archive collections, self-hosted software, tools and work in progress, with access and maturity explained for each project.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -198,7 +204,7 @@ const STATIC_PAGES: PageMeta[] = [
     path: '/about',
     title: fullTitle('Studio'),
     description:
-      'SUBCULT is the independent studio behind clpr, Patchwork, HasanAra, Undertow, Kork, Arkhiv, Chatty Cat, Tadooer and sixteen more tools and plugins.',
+      'SUBCULT builds software for independent culture: clips, archives, music visuals, link pages, community tools and the people who run them.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     jsonLd: [ORGANIZATION],
@@ -208,6 +214,14 @@ const STATIC_PAGES: PageMeta[] = [
     title: fullTitle('Contact'),
     description:
       'Write to SUBCULT about a product, a bug or something you’re working on. Use the form or email info@subcult.tv.',
+    image: DEFAULT_IMAGE,
+    imageAlt: DEFAULT_IMAGE_ALT,
+  },
+  {
+    path: '/privacy',
+    title: fullTitle('Privacy'),
+    description:
+      'How SUBCULT handles contact messages, newsletter subscriptions, site preferences and analytics, and how to ask about your information.',
     image: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
   },
@@ -256,23 +270,25 @@ export const NOT_FOUND_META: PageMeta = {
 
 /** Social preview image for a product, captured from its landing page. */
 export function productImage(slug: string) {
-  return `/og/${slug}.jpg`;
+  return PRODUCT_MARKS[slug] ? `/og/${slug}.jpg` : DEFAULT_IMAGE;
 }
 
-function productMeta({ project, headline, summary }: ShowcaseProduct): PageMeta {
+function productMeta({ project, headline }: ShowcaseProduct): PageMeta {
   const path = getProductPath(project.slug);
-  const description = META_DESCRIPTIONS[project.slug] ?? summary;
+  const description = META_DESCRIPTIONS[project.slug] ?? project.description;
   const image = productImage(project.slug);
   const pageUrl = `${SITE_URL}${path}`;
   const applicationId = `${pageUrl}#application`;
   return {
     path,
     title: fullTitle(
-      `${project.name}: ${TITLE_PHRASES[project.slug] ?? headline.replace(/\.$/, '')}`,
+      TITLE_PHRASES[project.slug]
+        ? `${project.name}: ${TITLE_PHRASES[project.slug]}`
+        : project.name,
     ),
     description,
     image,
-    imageAlt: `${project.name}: ${headline}`,
+    imageAlt: image === DEFAULT_IMAGE ? DEFAULT_IMAGE_ALT : `${project.name}: ${headline}`,
     jsonLd: [
       {
         '@type': 'SoftwareApplication',
@@ -319,7 +335,7 @@ function productMeta({ project, headline, summary }: ShowcaseProduct): PageMeta 
 
 /** Metadata for every route that gets its own static HTML at build time. */
 export function getAllPageMeta(): PageMeta[] {
-  return [...STATIC_PAGES, ...getShowcaseProducts().map(productMeta)];
+  return [...STATIC_PAGES, ...getShowcaseProducts({ includeUnlisted: true }).map(productMeta)];
 }
 
 export function getPageMeta(path: string): PageMeta | undefined {

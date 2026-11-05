@@ -58,7 +58,7 @@ export default function AdminLogin() {
             {error && (
               <div
                 role="alert"
-                className="mb-4 p-3 bg-ash border border-signal font-mono text-xs text-signal"
+                className="mb-4 p-3 bg-ash border border-signal font-mono text-xs text-glow"
               >
                 {error}
               </div>

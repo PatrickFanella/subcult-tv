@@ -14,6 +14,7 @@ const ProductLanding = lazy(() => import('@/pages/ProductLanding'));
 const Patreon = lazy(() => import('@/pages/Patreon'));
 const About = lazy(() => import('@/pages/About'));
 const Contact = lazy(() => import('@/pages/Contact'));
+const Privacy = lazy(() => import('@/pages/Privacy'));
 const NotFound = lazy(() => import('@/pages/NotFound'));
 const Newsletter = lazy(() => import('@/pages/Newsletter'));
 const NewsletterConfirmed = lazy(() => import('@/pages/NewsletterConfirmed'));
@@ -51,6 +52,7 @@ export default function App() {
             <Route path="development/:slug" element={<DevelopmentLog />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="privacy" element={<Privacy />} />
             <Route path="newsletter" element={<Newsletter />} />
             <Route path="newsletter/confirmed" element={<NewsletterConfirmed />} />
             <Route path="*" element={<NotFound />} />

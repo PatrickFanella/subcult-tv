@@ -45,4 +45,26 @@ export const PRODUCT_SUPPORT: Record<string, string> = {
     'Support SUBCULT’s work on the popup toolkit. The code stays available under its existing license.',
   'super-productivity-mcp':
     'SUBCULT maintains the bridge and launcher. Support goes to the studio, separately from Super Productivity and the agent service you use.',
+  commons:
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
+  dedhed:
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
+  lineage:
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
+  'arkhiv-riot-grrrl':
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
+  'bill-nye-tv':
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
+  'democracy-now-tv':
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
+  patstack:
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
+  ytclip:
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
+  twitchdl:
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
+  'clustr-galaxy':
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
+  'the-common-house':
+    'Support goes to SUBCULT, the studio maintaining this work. It does not buy product access or grant rights to collection media.',
 };

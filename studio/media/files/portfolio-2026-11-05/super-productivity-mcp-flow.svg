@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+<title id="title">super-productivity-mcp: Connect an assistant to your task app</title>
+<desc id="desc">Run the local server and enable the companion plugin to connect the two. LOCAL INTEGRATION / BOTH SERVER AND PLUGIN ARE REQUIRED</desc>
+<rect width="1440" height="900" fill="#0f1a17"/>
+<path d="M80 112H1360M80 704H1360" stroke="#a78bfa" stroke-width="2"/>
+<text xml:space="preserve" x="80" y="84" fill="#34d399" font-family="Space Mono" font-size="30" font-weight="700">super-productivity-mcp</text>
+<text xml:space="preserve" x="80" y="188" fill="#a78bfa" font-family="Space Mono" font-size="21" font-weight="400">IMPLEMENTATION DIAGRAM / NOVEMBER 2026</text>
+<text xml:space="preserve" x="80" y="260" fill="#e3efe9" font-family="Space Mono" font-size="52" font-weight="700">Connect an assistant to your task app</text>
+<rect x="80.0" y="360" width="284.0" height="244" fill="none" stroke="#34d399" stroke-width="2"/>
+<text xml:space="preserve" x="102.0" y="400" fill="#a78bfa" font-family="Space Mono" font-size="21" font-weight="400">01</text>
+<text xml:space="preserve" x="102.0" y="450" fill="#e3efe9" font-family="Space Mono" font-size="29" font-weight="700">Assistant</text>
+<text xml:space="preserve" x="102.0" y="502" fill="#e3efe9" font-family="Public Sans" font-size="21" font-weight="400">An MCP client</text>
+<text xml:space="preserve" x="102.0" y="536" fill="#e3efe9" font-family="Public Sans" font-size="21" font-weight="400">on your computer</text>
+<path d="M372.0 482H404.0m-10 -8 10 8 -10 8" fill="none" stroke="#34d399" stroke-width="3"/>
+<rect x="412.0" y="360" width="284.0" height="244" fill="none" stroke="#34d399" stroke-width="2"/>
+<text xml:space="preserve" x="434.0" y="400" fill="#a78bfa" font-family="Space Mono" font-size="21" font-weight="400">02</text>
+<text xml:space="preserve" x="434.0" y="450" fill="#e3efe9" font-family="Space Mono" font-size="29" font-weight="700">MCP server</text>
+<text xml:space="preserve" x="434.0" y="502" fill="#e3efe9" font-family="Public Sans" font-size="21" font-weight="400">Task and project</text>
+<text xml:space="preserve" x="434.0" y="536" fill="#e3efe9" font-family="Public Sans" font-size="21" font-weight="400">commands and results</text>
+<path d="M704.0 482H736.0m-10 -8 10 8 -10 8" fill="none" stroke="#34d399" stroke-width="3"/>
+<rect x="744.0" y="360" width="284.0" height="244" fill="none" stroke="#34d399" stroke-width="2"/>
+<text xml:space="preserve" x="766.0" y="400" fill="#a78bfa" font-family="Space Mono" font-size="21" font-weight="400">03</text>
+<text xml:space="preserve" x="766.0" y="450" fill="#e3efe9" font-family="Space Mono" font-size="29" font-weight="700">Plugin bridge</text>
+<text xml:space="preserve" x="766.0" y="502" fill="#e3efe9" font-family="Public Sans" font-size="21" font-weight="400">Local file messages</text>
+<text xml:space="preserve" x="766.0" y="536" fill="#e3efe9" font-family="Public Sans" font-size="21" font-weight="400">Companion plugin</text>
+<path d="M1036.0 482H1068.0m-10 -8 10 8 -10 8" fill="none" stroke="#34d399" stroke-width="3"/>
+<rect x="1076.0" y="360" width="284.0" height="244" fill="none" stroke="#34d399" stroke-width="2"/>
+<text xml:space="preserve" x="1098.0" y="400" fill="#a78bfa" font-family="Space Mono" font-size="21" font-weight="400">04</text>
+<text xml:space="preserve" x="1098.0" y="450" fill="#e3efe9" font-family="Space Mono" font-size="29" font-weight="700">Task app</text>
+<text xml:space="preserve" x="1098.0" y="502" fill="#e3efe9" font-family="Public Sans" font-size="21" font-weight="400">Super Productivity</text>
+<text xml:space="preserve" x="1098.0" y="536" fill="#e3efe9" font-family="Public Sans" font-size="21" font-weight="400">Your tasks and plans</text>
+<text xml:space="preserve" x="80" y="678" fill="#e3efe9" font-family="Public Sans" font-size="24" font-weight="400">Run the local server and enable the companion plugin to connect the two.</text>
+<text xml:space="preserve" x="80" y="766" fill="#34d399" font-family="Space Mono" font-size="20" font-weight="400">LOCAL INTEGRATION / BOTH SERVER AND PLUGIN ARE REQUIRED</text>
+<text xml:space="preserve" x="80" y="834" fill="#a78bfa" font-family="Space Mono" font-size="17" font-weight="400">SUBCULT / WORKFLOW DIAGRAM / NOT AN APPLICATION SCREEN</text>
+</svg>

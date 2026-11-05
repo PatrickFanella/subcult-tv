@@ -69,20 +69,23 @@ export default function NewsletterSignup({ headingLevel: Heading = 'h3' }: Newsl
           type="submit"
           disabled={status === 'loading'}
           className="w-full sm:w-auto px-4 py-2 bg-signal text-void font-mono text-sm font-bold shrink-0
-                     hover:bg-signal-dim transition-colors cursor-pointer disabled:opacity-50"
+                     hover:bg-glow transition-colors cursor-pointer disabled:opacity-50"
         >
           {status === 'loading' ? '...' : 'SUBSCRIBE'}
         </button>
       </form>
 
       {status === 'error' && (
-        <p role="alert" className="font-mono text-xs text-signal text-center mt-2">
+        <p role="alert" className="font-mono text-xs text-glow text-center mt-2">
           Not subscribed. {message}
         </p>
       )}
 
       <p className="font-mono text-xs text-dust text-center mt-3">
-        Every email has an unsubscribe link.
+        Every email has an unsubscribe link.{' '}
+        <a href="/privacy#newsletter" className="underline underline-offset-4">
+          How we use your email
+        </a>
       </p>
     </div>
   );

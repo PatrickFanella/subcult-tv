@@ -1,0 +1,85 @@
+tmux-popups
+===========
+
+Popups
+------
+Bindings are generated from the merged registry:
+
+- Default: /tmp/subcult-current-review-20261105/terminal/tmux-popups/popups.tsv
+- Local:   /tmp/subcult-current-review-20261105/terminal/render-env/config/tmux-popups/popups.local.tsv
+
+Local rows override default rows with the same id. Reload tmux to regenerate.
+
+Direct binds
+------------
+Prefix + Enter       Quick Menu (configurable: @tmux-popups-menu-key)
+Prefix + R        reload tmux config (configurable: @tmux-popups-reload-key)
+
+Prefix + C-h     popup help         help           deps:tmux                   ok
+Prefix + T       shell              shell          deps:shell                  ok
+Prefix + C-b     tmux keys          keys           deps:tmux                   ok
+
+Quick Menu keys: Prefix + Enter, then key
+----------------------------------------------
+H       popup help         help           deps:tmux                   ok
+Enter   shell              shell          deps:shell                  ok
+N       notes              notes          deps:editor                 ok
+P       timer              timer          deps:sleep                  ok
+b       tmux keys          keys           deps:tmux                   ok
+v       vscode here        configurable: @tmux-popups-vscode-command
+R       reload tmux        source /tmp/subcult-current-review-20261105/terminal/render-env/home/.tmux.conf
+q       exit menu
+
+Optional adapters and disabled rows
+-----------------------------------
+help           popup help         tmux                     on/ok
+chat           quick chat         ocq node                 off/missing:ocq
+opencode       opencode           opencode                 off/missing:opencode
+shell          shell              shell                    on/ok
+tasks          tasks              task editor less         off/ok
+notes          notes              editor                   on/ok
+docs           docs               tldr|man                 off/ok
+calendar       calendar           khal|cal                 off/missing:khal|cal
+calc           calc               python3                  off/ok
+ssh            ssh                ssh fzf                  off/ok
+clipboard      clipboard          cliphist fzf wl-copy     off/missing:cliphist,wl-copy
+info           info               curl newsboat editor less off/missing:newsboat
+timer          timer              sleep                    on/ok
+logs           logs               journalctl tail          off/ok
+watch          watch              watch                    off/ok
+markdown       markdown           fzf glow|bat|less        off/ok
+lazygit        lazygit            lazygit                  off/missing:lazygit
+yazi           yazi               yazi                     off/missing:yazi
+ferrosonic     ferrosonic         ferrosonic               off/ok
+keys           tmux keys          tmux                     on/ok
+zshrc          dotfiles           editor                   off/ok
+tmux-local     tmux.local.conf    editor                   off/ok
+home           home               yazi                     off/missing:yazi
+projects       projects           yazi                     off/missing:yazi
+downloads      downloads          yazi                     off/missing:yazi
+Enable an adapter with @tmux-popups-<id>-enabled on, then reload.
+
+Helpers
+-------
+/tmp/subcult-current-review-20261105/terminal/tmux-popups/scripts/list-popups.sh --pretty
+/tmp/subcult-current-review-20261105/terminal/tmux-popups/scripts/list-popups.sh --deps
+/tmp/subcult-current-review-20261105/terminal/tmux-popups/scripts/doctor.sh
+
+Options
+-------
+@tmux-popups-menu-key
+@tmux-popups-reload-key
+@tmux-popups-config-file
+@tmux-popups-default-width
+@tmux-popups-default-height
+@tmux-popups-local-registry
+@tmux-popups-enable-vscode
+@tmux-popups-vscode-command
+
+Files
+-----
+Plugin: /tmp/subcult-current-review-20261105/terminal/tmux-popups
+Default registry: /tmp/subcult-current-review-20261105/terminal/tmux-popups/popups.tsv
+Local registry: /tmp/subcult-current-review-20261105/terminal/render-env/config/tmux-popups/popups.local.tsv
+Optional examples: /tmp/subcult-current-review-20261105/terminal/tmux-popups/examples/popups.optional.tsv
+Generated config: \/tmp/subcult-current-review-20261105/terminal/render-env/cache/tmux-popups/generated.conf

@@ -5,7 +5,7 @@ export const SCREENSHOT_CAPTIONS: Record<string, string> = {
   'tmux-popups': 'tmux-popups / frame from the demo recording',
   'chatty-cat': 'Chatty Cat / live test build at chat.subcult.tv',
   headcount: 'Headcount / engagement map at headcount.subcult.tv',
-  arkhiv: 'Arkhiv / Anarchist Zine Archive at arkhiv.subcult.tv',
+  arkhiv: 'Arkhiv / mixed archive catalogue capture',
   backline: 'Backline / landing page at backline.subcult.tv',
 };
 

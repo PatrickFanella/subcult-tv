@@ -330,21 +330,21 @@ describe('product copy ownership', () => {
   });
 });
 
-describe('status badges', () => {
-  it('marks incubating products on the directory and landing hero, not active ones', async () => {
+describe('product availability', () => {
+  it('distinguishes private previews from public apps in the directory', async () => {
     renderApp('/products');
     await screen.findByRole('heading', { name: 'Products', level: 1 });
-    const prichal = screen.getByRole('article', { name: 'Prichal' });
-    expect(within(prichal).getByText('◐ INCUBATING')).toBeInTheDocument();
-    const clpr = screen.getByRole('article', { name: 'clpr' });
+    const prichal = screen.getByText('Prichal').closest('a')!;
+    expect(within(prichal).getByText('Private preview / no sign-up')).toBeInTheDocument();
+    const clpr = screen.getByText('clpr').closest('a')!;
     expect(within(clpr).queryByText(/INCUBATING|ARCHIVED|ACTIVE/)).not.toBeInTheDocument();
   });
 
-  it('shows the badge in the landing hero for an incubating product', async () => {
+  it('states private-preview access in the landing hero', async () => {
     renderApp('/products/prichal');
     await screen.findByRole('heading', { name: 'Prichal', level: 1 });
     const hero = screen.getByRole('region', { name: 'Prichal' });
-    expect(within(hero).getByText('◐ INCUBATING')).toBeInTheDocument();
+    expect(within(hero).getByText('Private preview / no sign-up')).toBeInTheDocument();
   });
 
   it('shows no badge for a live product', async () => {

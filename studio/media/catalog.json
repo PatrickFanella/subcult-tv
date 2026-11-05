@@ -713,6 +713,856 @@
       "width": 1080,
       "height": 1920,
       "duration_seconds": 0.0
+    },
+    {
+      "id": "MEDIA-188441a01f30860d",
+      "title": "Undertow — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/undertow.png",
+      "sha256": "188441a01f30860d7709ba1b2180de23a00ae0c0be38fd6e7c0db986bed69f85",
+      "bytes": 284133,
+      "products": [
+        "Undertow"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://undertow.subcult.tv/",
+      "alt_text": "Undertow: Current editor with the Neon template, an original sample tone and a custom SUBCULT title.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Live editor / local sample project / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-0960edba4f99470c",
+      "title": "Kork — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/kork.png",
+      "sha256": "0960edba4f99470c870485b12723e115b51c6275f0c580a0c274dd37f15d9867",
+      "bytes": 361846,
+      "products": [
+        "Kork"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://kork.subcult.tv/",
+      "alt_text": "Kork: Public landing with the pinned-card identity and link-page features.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public Kork landing page / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-83393e037e146f6c",
+      "title": "clpr — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/clpr.png",
+      "sha256": "83393e037e146f6c1cb13269b95d775cef5db8d56f63927f5d384063df828f4f",
+      "bytes": 617807,
+      "products": [
+        "clpr"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://clpr.tv/",
+      "alt_text": "clpr: Populated trending clip feed with creators, playback, topics and tags.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public clip feed / optional cookies rejected / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-302823bb7dd7dac6",
+      "title": "HasanAra — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/hasanara.png",
+      "sha256": "302823bb7dd7dac69ea92563fb0b8b7824e7bb67d794c6629009db5716caa4db",
+      "bytes": 332555,
+      "products": [
+        "HasanAra"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://hasanara.tv/search?q=labor",
+      "alt_text": "HasanAra: Transcript search results for labor, grouped by broadcast with passages and timestamps.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public transcript search for “labor” / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-02281016ee411a96",
+      "title": "Commons — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/commons.png",
+      "sha256": "02281016ee411a96faeb1522724f8c978b51e0af30cc98b0c199dd8c88464198",
+      "bytes": 238012,
+      "products": [
+        "Commons"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://commons.subcult.tv/",
+      "alt_text": "Commons: Project discovery with curated references, categories and software-alternative links.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public project discovery / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-2c66f1e409795136",
+      "title": "Chatty Cat — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/chatty-cat.png",
+      "sha256": "2c66f1e40979513610f04ade1ccf762ed7a2d24ffceb9511faad805e49729b8a",
+      "bytes": 222703,
+      "products": [
+        "Chatty Cat"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://chat.subcult.tv/",
+      "alt_text": "Chatty Cat: Current anonymous workspace with the hasanabi chat log, emotes and sign-in controls.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public chat workspace / anonymous viewing / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-80bcedb7b9f1b4a1",
+      "title": "Headcount — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/headcount.png",
+      "sha256": "80bcedb7b9f1b4a110a3f0fa576829eaa467b09a592790d50c543f1e91636e70",
+      "bytes": 314143,
+      "products": [
+        "Headcount"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://headcount.subcult.tv/#/engagement",
+      "alt_text": "Headcount: Engagement map plotting recently scored streams by viewers and chatters, with a typical-range band.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public engagement map / provisional signals / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-a5e803c3a74f199e",
+      "title": "Left Field — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/left-field.png",
+      "sha256": "a5e803c3a74f199e759745f7bfd67c4bbde3e83672c0e0ca52de339ffa43540a",
+      "bytes": 241351,
+      "products": [
+        "Left Field"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://left-field.subcult.tv/",
+      "alt_text": "Left Field: Priority index with its model date, evidence filters, component scores and stated coverage.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public research index / provisional versioned scores / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-5618feb5f647d96d",
+      "title": "Arkhiv — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/arkhiv.png",
+      "sha256": "5618feb5f647d96d5103c0448adc6e0466a29a9c228a5d5213a230e7488bff18",
+      "bytes": 207305,
+      "products": [
+        "Arkhiv"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://arkhiv.subcult.tv/",
+      "alt_text": "Arkhiv: Populated mixed-format catalogue with collection, media, creator and date filters.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public mixed-format catalogue / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-e41f421a66a9f139",
+      "title": "Dedhed — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/dedhed.png",
+      "sha256": "e41f421a66a9f1394aa321f8f9e5183d518aa7097724a4fccf288e0f7fe38d1d",
+      "bytes": 205186,
+      "products": [
+        "Dedhed"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://dedhed.subcult.tv/",
+      "alt_text": "Dedhed: Two-tape public pilot with its tape rack, schedule and active muted replay player.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public listening pilot / scheduled replay selected / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-691eca27d42cd27f",
+      "title": "Lineage — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/lineage.png",
+      "sha256": "691eca27d42cd27f6943503c4d9a233954c12613b2c8022751f03a6561fd81ff",
+      "bytes": 193044,
+      "products": [
+        "Lineage"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://lineage.subcult.tv/",
+      "alt_text": "Lineage: Live-recording catalogue with artist discovery, metadata search and recording-credit context.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public catalogue preview / recording availability varies / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-8bed506569161ea1",
+      "title": "Riot Grrrl Zine Archive — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/arkhiv-riot-grrrl.png",
+      "sha256": "8bed506569161ea19de8f716e438d6dbb91f94ba4f5d3c1e1540cec42224bafc",
+      "bytes": 728174,
+      "products": [
+        "Riot Grrrl Zine Archive"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://riot-grrrl.subcult.tv/",
+      "alt_text": "Riot Grrrl Zine Archive: Pink collage interface with a featured zine and collection navigation.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public zine collection / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-fa5e50c7bd05ecff",
+      "title": "Bill Nye TV — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/bill-nye-tv.png",
+      "sha256": "fa5e50c7bd05ecff660e13802f3c8b4badb978b3413c7985bf705ca57755b01f",
+      "bytes": 390243,
+      "products": [
+        "Bill Nye TV"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://bill-nye.subcult.tv/",
+      "alt_text": "Bill Nye TV: Independent episode viewer with a science-TV frame and scheduled archive replay controls.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Independent archive viewer / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-d5c657271ffa4ec0",
+      "title": "Democracy Now! broadcast archive — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/democracy-now-tv.png",
+      "sha256": "d5c657271ffa4ec02b1f806d2d32467b9bbf78d76e7d072d5f3a2eebd5175a7c",
+      "bytes": 677872,
+      "products": [
+        "Democracy Now! broadcast archive"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://democracy-now.subcult.tv/",
+      "alt_text": "Democracy Now! broadcast archive: Independent broadcast archive with a source image and shared replay schedule.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Independent broadcast archive / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-f7bc0dd074f606a0",
+      "title": "Patchwork — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/patchwork.png",
+      "sha256": "f7bc0dd074f606a009a0706892e0db5552a8c562dbcad1288abbda98591fee8c",
+      "bytes": 594023,
+      "products": [
+        "Patchwork"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://patchwork.subcult.tv/",
+      "alt_text": "Patchwork: Pre-alpha landing with its demonstration notice and public-resource directory preview.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public pre-alpha demonstration / not for real requests / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-928accf7a5508cc7",
+      "title": "Backline — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/backline.png",
+      "sha256": "928accf7a5508cc72100908bd950484e73d462d55aeed085db9c33e671750ecc",
+      "bytes": 153489,
+      "products": [
+        "Backline"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://backline.subcult.tv/",
+      "alt_text": "Backline: Private-pilot landing with illustrative welcome, moderation and support workflows.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public pilot landing / illustrative workflows, not a dashboard / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-ca3a2009b5e597b5",
+      "title": "Prichal — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/prichal.png",
+      "sha256": "ca3a2009b5e597b5bf9069f860977bfed2dbbe24c76b4e1b408ca5964a3a1ba4",
+      "bytes": 155664,
+      "products": [
+        "Prichal"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://prichal.subcult.tv/",
+      "alt_text": "Prichal: Managed-hosting preview landing with an explicit public sign-up closure notice.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public preview landing / sign-up closed / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-e7119603748e2edb",
+      "title": "Subcult OS — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/subcult-os.png",
+      "sha256": "e7119603748e2edb4ba1fac73d4833b827013cbb1accf2dde9f1766a98a489a1",
+      "bytes": 153664,
+      "products": [
+        "Subcult OS"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "live-capture",
+      "source": "https://os.subcult.tv/discover",
+      "alt_text": "Subcult OS: Public event-discovery interface showing the current empty listings state.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Public event discovery / no published listings in this capture / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-6f64f7d0d127d566",
+      "title": "Tadooer — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/tadooer.png",
+      "sha256": "6f64f7d0d127d56634645a19bf9e6cfe7ad6d8ef2186441235df5ead6ccaec25",
+      "bytes": 129078,
+      "products": [
+        "Tadooer"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "local-fixture-capture",
+      "source": "http://127.0.0.1:4188/",
+      "alt_text": "Tadooer: Current Today view with synthetic tasks and calendar blocks in an isolated local instance.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Current Today view / isolated local instance with synthetic sample data / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-6dbf9814577d387a",
+      "title": "Subsets — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/subsets-terminal.svg",
+      "sha256": "6dbf9814577d387ae7b032b5c2fe043b66db511dec6faf6e0e6660b9a4a373ce",
+      "bytes": 4233,
+      "products": [
+        "Subsets"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "terminal-render",
+      "source": "Current source terminal render",
+      "alt_text": "Subsets: Actual terminal render from source 0.2.0-alpha.6, using six synthetic skills.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1440,
+      "height": 900,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Actual terminal render / sample skills / source 0.2.0-alpha.6"
+      }
+    },
+    {
+      "id": "MEDIA-e87c1d0f01ba18e6",
+      "title": "tmux-popups — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/tmux-help.svg",
+      "sha256": "e87c1d0f01ba18e6dc62d7d9a8dc8335bcc317e3adb661f458f0f59be575db35",
+      "bytes": 3891,
+      "products": [
+        "tmux-popups"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "terminal-render",
+      "source": "Current source terminal render",
+      "alt_text": "tmux-popups: Current generated CLI help excerpt, showing direct bindings and quick-menu keys.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1440,
+      "height": 900,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Actual CLI help excerpt / disposable small-profile environment / November 5, 2026"
+      }
+    },
+    {
+      "id": "MEDIA-130a7379d1df74c2",
+      "title": "Metronome + Tuner — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/obsidian-plugin-metronome-tuner.png",
+      "sha256": "130a7379d1df74c25222cbc7a7249e8a525adb1681f294450d474c8c67a08b51",
+      "bytes": 93293,
+      "products": [
+        "Metronome + Tuner"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "repository-image",
+      "source": "docs/metronome-view.png",
+      "alt_text": "Metronome documentation view, labeled Tempo & Tune, with a 240 BPM readout and tempo controls.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 924,
+      "height": 1920,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Repository documentation image / current source / not a fresh Obsidian capture"
+      }
+    },
+    {
+      "id": "MEDIA-13a3c59460009b3b",
+      "title": "Rekolekt — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/rekolekt-flow.svg",
+      "sha256": "13a3c59460009b3bafc632717fa45158b0787b65a7e99cf2cc3430010ce617fb",
+      "bytes": 4403,
+      "products": [
+        "Rekolekt"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "implementation-diagram",
+      "source": "studio/scripts/generate_portfolio_diagrams.py",
+      "alt_text": "Diagram: recordings pass through Rekolekt’s transcription and search API to timestamped passages and the independent HasanAra frontend.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1440,
+      "height": 900,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Archive backend and HasanAra frontend / new implementation diagram"
+      }
+    },
+    {
+      "id": "MEDIA-d1702d91896b8dd6",
+      "title": "Pirs — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/pirs-flow.svg",
+      "sha256": "d1702d91896b8dd621d2baa917ee996705bd3bc9bb392bb1038f3d5811f256b2",
+      "bytes": 3843,
+      "products": [
+        "Pirs"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "implementation-diagram",
+      "source": "studio/scripts/generate_portfolio_diagrams.py",
+      "alt_text": "Diagram of PDS events passing through an opt-in private bridge to a separate Wasmtime host. Production plugin support is not qualified.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1440,
+      "height": 900,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Experimental host architecture / new implementation diagram"
+      }
+    },
+    {
+      "id": "MEDIA-d73762201b73832a",
+      "title": "super-productivity-mcp — portfolio visual refresh",
+      "file": "files/portfolio-2026-11-05/super-productivity-mcp-flow.svg",
+      "sha256": "d73762201b73832abc01c078b0a14bb13e859b716a8a4772d0c7677a599b6f3e",
+      "bytes": 4404,
+      "products": [
+        "super-productivity-mcp"
+      ],
+      "accounts": [
+        "subcult"
+      ],
+      "platforms": [
+        "website"
+      ],
+      "rights": "Product UI capture or original diagram; embedded third-party media retains its original rights.",
+      "kind": "implementation-diagram",
+      "source": "studio/scripts/generate_portfolio_diagrams.py",
+      "alt_text": "Diagram of an assistant connecting through a local MCP server and companion plugin bridge to Super Productivity.",
+      "status": "selected",
+      "created_at": "2026-11-05",
+      "attribution": "SUBCULT",
+      "uses": [
+        "subcult.tv portfolio"
+      ],
+      "width": 1440,
+      "height": 900,
+      "duration_seconds": 0.0,
+      "visual_review": {
+        "checked_at": "2026-11-05",
+        "result": "Inspected the rendered source and selected it for the requested website refresh.",
+        "boundary": "Local MCP server and companion plugin / new integration diagram"
+      }
     }
   ]
 }

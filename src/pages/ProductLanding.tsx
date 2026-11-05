@@ -1,11 +1,14 @@
-import { useEffect, useRef } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import ProductVisual from '@/components/ProductVisual';
 import SEOHead from '@/components/SEOHead';
-import StatusBadge from '@/components/StatusBadge';
+import ProductOverview from '@/components/ProductOverview';
+import ProductRelationships from '@/components/ProductRelationships';
+import { getProductAction, getShowcaseProducts } from '@/lib/showcase';
+import { getPublicProjectSource } from '@/lib/project-utils';
 import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { PRODUCT_LANDINGS } from '@/lib/product-landings';
 import { BRAND_HEROES, SCREENSHOT_CAPTIONS } from '@/lib/product-visuals';
+import { CURRENT_PRODUCT_VISUALS } from '@/lib/current-visuals';
 import { PRODUCT_MARKS } from '@/lib/product-marks';
 import { getProductPath, PRODUCT_ROUTES } from '@/lib/product-paths';
 import NotFound from '@/pages/NotFound';
@@ -16,25 +19,18 @@ import '@/styles/product-fonts.css';
 export default function ProductLanding() {
   const { slug } = useParams<{ slug: string }>();
   const products = useShowcaseProducts();
-  const product = products.find(({ project }) => PRODUCT_ROUTES[project.slug] === slug);
-  const productNavRef = useRef<HTMLDivElement>(null);
-  // On phones the product list is one scrolling line; bring the current
-  // product into view after mount when it sits outside the visible part.
-  useEffect(() => {
-    const list = productNavRef.current;
-    const current = list?.querySelector<HTMLElement>('a[aria-current="page"]');
-    if (!list || !current || typeof current.scrollIntoView !== 'function') return;
-    if (list.scrollWidth <= list.clientWidth) return;
-    const listRect = list.getBoundingClientRect();
-    const rect = current.getBoundingClientRect();
-    if (rect.left >= listRect.left && rect.right <= listRect.right) return;
-    current.scrollIntoView({ inline: 'nearest', block: 'nearest' });
-  }, [slug]);
+  const product =
+    products.find(({ project }) => PRODUCT_ROUTES[project.slug] === slug) ??
+    getShowcaseProducts({ includeUnlisted: true }).find(
+      ({ project }) => PRODUCT_ROUTES[project.slug] === slug,
+    );
   if (slug === 'transcript-create') return <Navigate to="/products/rekolekt" replace />;
   if (!product) return <NotFound />;
   const { project } = product;
   const content = PRODUCT_LANDINGS[project.slug];
-  const related = products.find(({ project: other }) => other.slug === product.relatedSlug);
+  if (!content) return <ProductOverview product={product} />;
+  const action = getProductAction(product);
+  const source = getPublicProjectSource(project);
 
   return (
     <div className="product-landing" data-product={project.slug}>
@@ -42,23 +38,13 @@ export default function ProductLanding() {
       <div className="landing-container">
         <nav className="landing-product-nav" aria-label="Product navigation">
           <Link to="/products">All products</Link>
-          <div ref={productNavRef}>
-            {products.map(({ project: other }) => (
-              <Link
-                key={other.slug}
-                to={getProductPath(other.slug)}
-                aria-current={other.slug === project.slug ? 'page' : undefined}
-              >
-                {other.name}
-              </Link>
-            ))}
-          </div>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">{project.name}</span>
         </nav>
         <section className="landing-hero" aria-labelledby="product-title">
           <div className="landing-hero-copy">
             <p className="landing-eyebrow landing-eyebrow-status">
-              <span>{product.category}</span>
-              <StatusBadge status={project.status} />
+              <span>{product.availability}</span>
             </p>
             <div className="landing-wordmark">
               {PRODUCT_MARKS[project.slug] && <img src={PRODUCT_MARKS[project.slug]} alt="" />}
@@ -69,11 +55,11 @@ export default function ProductLanding() {
             <div className="landing-actions">
               <a
                 className="landing-button"
-                href={project.url || project.repoUrl}
+                href={action.href}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {project.url ? (product.liveLabel ?? `Open ${project.name}`) : 'Explore the code'} ↗
+                {action.label} ↗
               </a>
               <a className="landing-secondary" href="#features">
                 See what it does ↓
@@ -84,13 +70,25 @@ export default function ProductLanding() {
           <figure className="landing-visual">
             <ProductVisual product={product} priority />
             <figcaption>
-              {project.screenshot
-                ? (SCREENSHOT_CAPTIONS[project.slug] ?? `${project.name} interface`)
-                : project.slug === 'subsets'
-                  ? 'Actual Subsets TUI render / sample skill collection'
-                  : BRAND_HEROES.has(project.slug)
-                    ? `${project.name} / brand mark`
-                    : `${project.name} / concept illustration`}
+              {CURRENT_PRODUCT_VISUALS[project.slug]?.caption ??
+                (project.screenshot
+                  ? (SCREENSHOT_CAPTIONS[project.slug] ?? `${project.name} interface`)
+                  : project.slug === 'subsets'
+                    ? 'Actual Subsets TUI render / sample skill collection'
+                    : BRAND_HEROES.has(project.slug)
+                      ? `${project.name} / brand mark`
+                      : `${project.name} / concept illustration`)}
+              {CURRENT_PRODUCT_VISUALS[project.slug] && (
+                <>
+                  {' · '}
+                  <a
+                    className="underline underline-offset-4"
+                    href={CURRENT_PRODUCT_VISUALS[project.slug].src}
+                  >
+                    View full size ↗
+                  </a>
+                </>
+              )}
             </figcaption>
           </figure>
         </section>
@@ -98,9 +96,8 @@ export default function ProductLanding() {
           <p className="landing-eyebrow">{content.featuresLabel ?? 'WHAT YOU CAN DO'}</p>
           <h2 id="features-title">{content.introduction}</h2>
           <div className="landing-features" data-count={content.features.length}>
-            {content.features.map((feature, index) => (
+            {content.features.map((feature) => (
               <article key={feature.title}>
-                <span className="landing-number">0{index + 1}</span>
                 <h3>{feature.title}</h3>
                 <p>{feature.description}</p>
               </article>
@@ -121,30 +118,7 @@ export default function ProductLanding() {
             ))}
           </ol>
         </section>
-        {related && (
-          <section className="landing-related" aria-labelledby="related-title">
-            <div>
-              <p className="landing-eyebrow">
-                {project.slug === 'hasanara'
-                  ? 'THE SOFTWARE UNDERNEATH'
-                  : 'AN ARCHIVE BUILT WITH REKOLEKT'}
-              </p>
-              <h2 id="related-title">
-                {project.slug === 'hasanara'
-                  ? 'HasanAra runs on Rekolekt.'
-                  : 'HasanAra is one such archive.'}
-              </h2>
-              <p>
-                {project.slug === 'hasanara'
-                  ? 'Rekolekt is the shared software for searchable recording archives. Other collections can run it under their own names.'
-                  : 'It runs Rekolekt on an archive of HasanAbi broadcasts, under its own name and design.'}
-              </p>
-            </div>
-            <Link className="landing-button" to={getProductPath(related.project.slug)}>
-              Explore {related.project.name} →
-            </Link>
-          </section>
-        )}
+        <ProductRelationships product={product} />
         <section className="landing-section landing-faq" aria-labelledby="faq-title">
           <div>
             <p className="landing-eyebrow">{content.faqLabel ?? 'A FEW DETAILS'}</p>
@@ -161,7 +135,7 @@ export default function ProductLanding() {
         </section>
         <section className="landing-support" aria-labelledby="support-title">
           <div>
-            <p className="landing-eyebrow">MADE IN THE OPEN</p>
+            <p className="landing-eyebrow">BUILT BY SUBCULT</p>
             <h2 id="support-title">{project.name} is made by SUBCULT.</h2>
             <p>
               {PRODUCT_SUPPORT[project.slug] ?? 'Support SUBCULT, the studio behind this project.'}
@@ -190,14 +164,19 @@ export default function ProductLanding() {
                 {product.liveLabel ?? 'Visit the site'} ↗
               </a>
             )}
-            <a
-              className={project.url ? 'landing-secondary' : 'landing-button'}
-              href={project.repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View repository ↗
-            </a>
+            {source && (
+              <a
+                className={project.url ? 'landing-secondary' : 'landing-button'}
+                href={source}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {source.startsWith('https://git.subcult.tv/')
+                  ? 'View repository'
+                  : 'Download source'}{' '}
+                ↗
+              </a>
+            )}
             <Link className="landing-secondary" to={`/contact?product=${project.slug}`}>
               {project.url ? 'Talk to SUBCULT →' : 'Discuss using it →'}
             </Link>

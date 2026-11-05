@@ -1,0 +1,1245 @@
+{
+  "observedAt": "2026-11-05T18:34:59.659171+00:00",
+  "scope": "The owner-selected 30 portfolio entries; current source, configured hosted checks and explicitly listed browser/fixture observations. README is a routing aid, not final proof.",
+  "verificationLimits": "No production account login, payment, deployment, real aid request, Discord installation, Unity gameplay build, hardware audio test, or full archive playback qualification was performed. Current CI proves its configured checks only.",
+  "projects": [
+    {
+      "slug": "undertow",
+      "head": "003581277d5af8dd4269503925a0f6f58c0c7f2d",
+      "implemented": [
+        "browser editor",
+        "six templates",
+        "local video export",
+        "project working copy"
+      ],
+      "evidence": [
+        "src/App.tsx",
+        "src/templates.ts:32-199",
+        "src/export/exportVideo.ts",
+        "tests/templates.test.ts",
+        "tests/export-memory.test.ts"
+      ],
+      "ci": {
+        "state": "success",
+        "run": 18469
+      },
+      "availability": "Public browser editor; browser-checked by parent, deployment otherwise not inferred.",
+      "copy_recommendation": "Keep local-browser export; say that speed depends on the device and project.",
+      "currentHead": "003581277d5af8dd4269503925a0f6f58c0c7f2d",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "Reliability checks / check (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/undertow/actions/runs/18469/jobs/33343"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public editor: selected Neon, uploaded an original six-second tone, changed title, and exercised playback/pause locally without an account. Local landscape export completed and downloaded; ffprobe confirmed 1280x720 H.264 video at 30 fps with Opus audio, 6.02 seconds, 2,206,764 bytes. Cloud export was not tested.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/undertow-2026-11-05.webp",
+        "sha256": "90f281dfbeb56b4c6ac3104f0504e999aa2bc7b745fb1233cc190eba67e9d8fa",
+        "caption": "Live editor / local sample project / November 5, 2026"
+      },
+      "localExportCheck": {
+        "fixture": "Original six-second 220 Hz tone; Neon template; synthetic title; no account",
+        "format": "mp4",
+        "durationSeconds": 6.02,
+        "sizeBytes": 2206764,
+        "sha256": "6e2828451a0d1acdf51eab13be542edbf6ee5f296e2156c80c77ab1eaceb9df6",
+        "video": {
+          "codec": "h264",
+          "width": 1280,
+          "height": 720,
+          "framesPerSecond": 30
+        },
+        "audio": {
+          "codec": "opus"
+        },
+        "limit": "One short local-browser render; no cloud export or long-project qualification"
+      }
+    },
+    {
+      "slug": "kork",
+      "head": "7b0ce9bb2f65542cd09c166b1a400d6739bb13ec",
+      "implemented": [
+        "link-page catalog",
+        "block rendering",
+        "daily aggregate analytics",
+        "QR",
+        "import/export"
+      ],
+      "evidence": [
+        "internal/catalog/services.go:23-35",
+        "internal/blocks/render.go",
+        "internal/db/migrations/0005_analytics.sql:1-19",
+        "internal/store/analytics.go:20-43",
+        "internal/server/analytics_test.go:174-189",
+        "internal/server/server.go:30,322-326"
+      ],
+      "ci": {
+        "state": "success"
+      },
+      "availability": "Early public service; parent observed 92 services, ten themes and 24-hour publish wait.",
+      "copy_recommendation": "Do not imply instant publication. Supported analytics copy: 'Analytics stores daily aggregate page, referrer-domain and country counts—not visitor IP addresses, cookies or user-agent strings.' Remove or narrow 'no trackers': it is broader than this persistence evidence, and signed-in accounts use a session cookie.",
+      "currentHead": "7b0ce9bb2f65542cd09c166b1a400d6739bb13ec",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "CI / Test and build (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/kork/actions/runs/18747/jobs/33987"
+        },
+        {
+          "context": "CI / Deploy to NUC (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/kork/actions/runs/18747/jobs/33988"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Anonymous landing and signup destination present; 24-hour new-account publication wait displayed. No account/publication was created.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/kork-2026-11-05.webp",
+        "sha256": "3ab51d8046635d207c7db5311385fb33df1a68fe6628a1ca16bf8defbbb6919d",
+        "caption": "Public Kork landing page / November 5, 2026"
+      }
+    },
+    {
+      "slug": "clpr",
+      "head": "3b482affc0d8638089273d8bdf35557c53895c07",
+      "implemented": [
+        "public clip browsing",
+        "topic/tag routes",
+        "authenticated favorites and tags"
+      ],
+      "evidence": [
+        "backend/cmd/api/routes_clips.go:10-53",
+        "backend/internal/handlers/clip_handler_test.go",
+        "backend/internal/handlers/favorite_handler_test.go"
+      ],
+      "ci": {
+        "state": "success"
+      },
+      "availability": "Public web app; deployment unverified.",
+      "copy_recommendation": "Qualify saving/playlists as account-required.",
+      "currentHead": "3b482affc0d8638089273d8bdf35557c53895c07",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "Authoritative release gates / Documentation and OpenAPI gate (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/clpr/actions/runs/18473/jobs/33352"
+        },
+        {
+          "context": "Authoritative release gates / Secret history gate (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/clpr/actions/runs/18473/jobs/33351"
+        },
+        {
+          "context": "Authoritative release gates / Browser gate (Chromium, Firefox, WebKit) (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/clpr/actions/runs/18473/jobs/33353"
+        },
+        {
+          "context": "Authoritative release gates / Image scan and SBOM gate (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/clpr/actions/runs/18473/jobs/33354"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Anonymous trending feed populated, creator/topic/tag navigation present. Optional cookies rejected. Saved/playlists require account; no account writes performed.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/clpr-2026-11-05.webp",
+        "sha256": "dfeb4a44f1f814338ffd15e8ac466766b26e055418f37bea78d23519c5a967c4",
+        "caption": "Public clip feed / optional cookies rejected / November 5, 2026"
+      }
+    },
+    {
+      "slug": "hasanara",
+      "head": "40460af6f85a58334d03317fa0d60fa3fb804fc1",
+      "implemented": [
+        "search",
+        "timestamped passages",
+        "playback",
+        "saved/shareable moments"
+      ],
+      "evidence": [
+        "frontend/src/components/video/",
+        "frontend/src/tests/SearchPage.test.tsx",
+        "frontend/src/tests/TranscriptQualityNotice.test.tsx",
+        "e2e/tests/archive-smoke.spec.ts"
+      ],
+      "ci": {
+        "state": "in_progress"
+      },
+      "availability": "Public independent archive; current-head CI pending.",
+      "copy_recommendation": "Say archived and transcribed broadcasts, not every broadcast; retain automatic-transcript warning.",
+      "currentHead": "40460af6f85a58334d03317fa0d60fa3fb804fc1",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "Deployment validation / contract (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/hasanara/actions/runs/18779/jobs/34124"
+        },
+        {
+          "context": "Deployment validation / web-image (push)",
+          "status": "skipped",
+          "target_url": "/subculture-collective/hasanara/actions/runs/18779/jobs/34126"
+        },
+        {
+          "context": "Deployment validation / frontend (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/hasanara/actions/runs/18779/jobs/34125"
+        },
+        {
+          "context": "Deployment validation / validate (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/hasanara/actions/runs/18779/jobs/34127"
+        },
+        {
+          "context": "Deployment validation / publish (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/hasanara/actions/runs/18779/jobs/34128"
+        },
+        {
+          "context": "Deployment validation / Deploy verified frontend to Almaz (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/hasanara/actions/runs/18779/jobs/34129"
+        },
+        {
+          "context": "Deployment validation / Require production delivery (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/hasanara/actions/runs/18779/jobs/34130"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public archive populated. A labor query returned grouped transcript passages and timestamps; no OAuth or saved-search writes performed.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/hasanara-2026-11-05.webp",
+        "sha256": "a5d2c812060518746d5d36bd201c30eb78c6281fa48d921d3eec8175b0a41272",
+        "caption": "Public transcript search for “labor” / November 5, 2026"
+      }
+    },
+    {
+      "slug": "chatty-cat",
+      "head": "cd4d052d50a80d9c9afa5c92583e50c242e95da8",
+      "implemented": [
+        "public/auth chat flows",
+        "IRC relay",
+        "bounded multi-channel workspaces"
+      ],
+      "evidence": [
+        "internal/chatlimits/limits.go:14-45",
+        "internal/auth/public_test.go",
+        "internal/ircrelay/relay_test.go"
+      ],
+      "ci": {
+        "state": "success"
+      },
+      "availability": "Public web client; relay/account paths not production-proved.",
+      "copy_recommendation": "Replace hard six-channel cap: six is the initial pane, configured workspaces support up to 24.",
+      "currentHead": "cd4d052d50a80d9c9afa5c92583e50c242e95da8",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "Desktop / Browser companions (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/chatty-cat/actions/runs/18636/jobs/33721"
+        },
+        {
+          "context": "Verify / Go race and vet (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/chatty-cat/actions/runs/18637/jobs/33723"
+        },
+        {
+          "context": "Verify / Frontend tests and build (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/chatty-cat/actions/runs/18637/jobs/33724"
+        },
+        {
+          "context": "Verify / Deploy to production (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/chatty-cat/actions/runs/18637/jobs/33725"
+        },
+        {
+          "context": "Desktop / Linux app (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/chatty-cat/actions/runs/18636/jobs/33719"
+        },
+        {
+          "context": "Desktop / macOS app (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/chatty-cat/actions/runs/18636/jobs/33720"
+        },
+        {
+          "context": "Desktop / Publish release (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/chatty-cat/actions/runs/18636/jobs/33722"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Current anonymous workspace received real public chat, displayed reply context/emotes and required Twitch sign-in to send. No messages were sent.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/chatty-cat-2026-11-05.webp",
+        "sha256": "a8dcf13f5f66e95fe8b15286d2b1719bd2f2f04d4cb3a5b3416e1857042c5a52",
+        "caption": "Public chat workspace / anonymous viewing / November 5, 2026"
+      }
+    },
+    {
+      "slug": "commons",
+      "head": "c9e1a141886c39357d1944b7e00866b336e0b822",
+      "implemented": [
+        "catalog",
+        "community",
+        "accounts",
+        "repository data",
+        "public discovery UI"
+      ],
+      "evidence": [
+        "server/catalog.js",
+        "server/community.js",
+        "src/components/Catalog.jsx",
+        "src/components/ProjectCommunity.jsx",
+        "package.json:9-18"
+      ],
+      "ci": {
+        "state": "success"
+      },
+      "availability": "Public discovery/community hub; parent browser saw 15 curated references.",
+      "copy_recommendation": "Describe browsing, alternatives and discussion; reserve build/project creation claim until account path is checked.",
+      "currentHead": "c9e1a141886c39357d1944b7e00866b336e0b822",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "CI / verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/commons/actions/runs/18592/jobs/33610"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public discovery populated with curated references, category navigation, alternative-building links and account-bound contribution controls. No account was created.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/commons-2026-11-05.webp",
+        "sha256": "a8c12d0ee30fc712744661b2f21b809dc22d04f63a3d703b81565cae2846b058",
+        "caption": "Public project discovery / November 5, 2026"
+      }
+    },
+    {
+      "slug": "headcount",
+      "head": "184488f9ee272b97a488077f91116bea9c1cde4b",
+      "implemented": [
+        "detector signals",
+        "score combination",
+        "public pages"
+      ],
+      "evidence": [
+        "internal/detect/detectors.go:34-524",
+        "internal/api/pages.go",
+        "internal/detect/detectors_test.go",
+        "internal/score/replay_integration_test.go"
+      ],
+      "ci": {
+        "state": "success"
+      },
+      "availability": "Public research / provisional signals; deployment unverified.",
+      "copy_recommendation": "Use multiple detector signals rather than exact detector count unless public response is checked.",
+      "currentHead": "184488f9ee272b97a488077f91116bea9c1cde4b",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "CI / Verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/headcount/actions/runs/18477/jobs/33363"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public engagement map populated with recently scored streams, filters, typical-range band and provisional-score caveats.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/headcount-2026-11-05.webp",
+        "sha256": "33583f5a314f2ef1fa777257ac22c6389edc51d21ed93ede1881981e6d453767",
+        "caption": "Public engagement map / provisional signals / November 5, 2026"
+      }
+    },
+    {
+      "slug": "left-field",
+      "head": "f66f8ff7db135a325bf040c1e90fe600cbc1d6a2",
+      "repo_ownership": "The listed repository is the canonical application itself (package name dsa-seats), not data-only; retain the existing repo URL.",
+      "implemented": [
+        "Next.js priority-index UI",
+        "browse/map/sources/methodology routes",
+        "API/data repositories",
+        "versioned source receipts",
+        "provisional score projections",
+        "current geometry"
+      ],
+      "evidence": [
+        "src/app/priorities/page.tsx:21-157",
+        "src/app/browse/",
+        "src/app/map/",
+        "src/app/maps/",
+        "src/app/sources/",
+        "src/app/methodology/",
+        "src/repositories/",
+        "src/maps/",
+        "src/lib/priority-index-*",
+        "data/metadata/",
+        "data/geometry/current",
+        "package.json:6-19,123",
+        ".github/workflows/acceptance.yml:1-139"
+      ],
+      "ci": {
+        "state": "success",
+        "runs": "two push runs on current head, 2026-11-04 13:58 and 14:30 CST"
+      },
+      "availability": "Public research / in development; parent browser checked the published research app.",
+      "copy_recommendation": "Keep sources, gaps and provisional/versioned framing; the app is substantial, but do not overstate scope beyond its current model/data coverage.",
+      "currentHead": "f66f8ff7db135a325bf040c1e90fe600cbc1d6a2",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "static / static (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/left-field/actions/runs/18506/jobs/33409"
+        },
+        {
+          "context": "acceptance / acceptance (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/left-field/actions/runs/18505/jobs/33408"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public priority index displayed model v1.16 with publication/source dates, evidence filters, component scores and coverage limits.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/left-field-2026-11-05.webp",
+        "sha256": "5c708fe3e46195b6ba1e17a1e1aeccb3cf1f021e610e2faa3476a03a95632a03",
+        "caption": "Public research index / provisional versioned scores / November 5, 2026"
+      }
+    },
+    {
+      "slug": "arkhiv",
+      "repository": "subculture-collective/arkhiv",
+      "head": "485495a64a87a84425cd7ffa916a8d12e38d30c5",
+      "ci": "success",
+      "state": "implemented; runtime unverified",
+      "evidence": [
+        "web/src/MixedArchive.tsx:37-75",
+        "web/src/MixedArchive.tsx:105-135",
+        "packages/viewer/src/catalog.test.ts",
+        "packages/viewer/src/audio.test.tsx"
+      ],
+      "copy": "Use shared archive engine/API wording; do not claim a live public hub without runtime confirmation.",
+      "currentHead": "485495a64a87a84425cd7ffa916a8d12e38d30c5",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "curation / verify-curation (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/arkhiv/actions/runs/18593/jobs/33611"
+        },
+        {
+          "context": "verify / verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/arkhiv/actions/runs/18594/jobs/33612"
+        },
+        {
+          "context": "verify / image (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/arkhiv/actions/runs/18594/jobs/33613"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public mixed catalogue populated with filters, reviewed-access notices and source records. No broad media-playback conclusion inferred.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/arkhiv-2026-11-05.webp",
+        "sha256": "07f8bbd173a9b7c0eebe894cd6442bd6fac5bde4bd8b0a595ed51d1ac3521f89",
+        "caption": "Public mixed-format catalogue / November 5, 2026"
+      }
+    },
+    {
+      "slug": "dedhed",
+      "repository": "subculture-collective/dedhed",
+      "head": "f5514499bec365474b36eae2e175f5867156b08a",
+      "ci": "success",
+      "state": "implemented pilot interface; runtime unverified",
+      "evidence": [
+        "web/src/shows.tsx:56-100",
+        "web/src/radio.ts:1-62",
+        "web/src/radio.test.ts",
+        "backend/internal/catalog/catalog_test.go"
+      ],
+      "copy": "Remove the unsupported exact count of two recordings; retain reviewed-per-recording availability wording.",
+      "currentHead": "f5514499bec365474b36eae2e175f5867156b08a",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "verify / verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/dedhed/actions/runs/18733/jobs/33960"
+        },
+        {
+          "context": "verify / Deploy public frontend to Almaz (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/dedhed/actions/runs/18733/jobs/33961"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public pilot displayed two recordings. Muted scheduled replay audio reached readyState4 with currentTime advancing. This is a brief browser check, not long-duration listening qualification.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/dedhed-2026-11-05.webp",
+        "sha256": "642deb3c176564314c656b54764fca9208ae1c8612964dad8843014cca4ac34a",
+        "caption": "Public listening pilot / scheduled replay selected / November 5, 2026"
+      }
+    },
+    {
+      "slug": "lineage",
+      "repository": "PatrickFanella/arkhiv-live-music",
+      "head": "1c75cc8b84003e8fc365c3cf062eab5dbe741b4c",
+      "ci": "success",
+      "state": "implemented Arkhiv consumer; runtime unverified",
+      "evidence": [
+        "web/src/App.tsx:914-1000",
+        "web/src/App.tsx:1043-1088",
+        "web/src/StreamPlayer.tsx:7-41",
+        "web/src/browse.test.tsx"
+      ],
+      "copy": "Keep source/credits/lineage and indexed-versus-playable distinction.",
+      "currentHead": "1c75cc8b84003e8fc365c3cf062eab5dbe741b4c",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "template-check / verify (push)",
+          "status": "success",
+          "target_url": "/PatrickFanella/arkhiv-live-music/actions/runs/18706/jobs/33862"
+        },
+        {
+          "context": "template-check / Build frontend and deploy Dozor (push)",
+          "status": "success",
+          "target_url": "/PatrickFanella/arkhiv-live-music/actions/runs/18706/jobs/33863"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public catalogue populated with artist discovery and recording records. Page distinguished imported metadata from approved source streams. No broad playback qualification inferred.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/lineage-2026-11-05.webp",
+        "sha256": "63d7d1c748059c1ae4e209b5f9ea0153fd4ada1e49b5fd90b4833710b3c799b4",
+        "caption": "Public catalogue preview / recording availability varies / November 5, 2026"
+      }
+    },
+    {
+      "slug": "arkhiv-riot-grrrl",
+      "repository": "subculture-collective/arkhiv-riot-grrrl",
+      "head": "d6eb2f7d35ec9ac2e3bed822ed9fa909cc4af1d7",
+      "ci": "success",
+      "state": "implemented catalogue/reader; runtime unverified",
+      "evidence": [
+        "web/src/App.tsx:112-385",
+        "web/src/Reader.tsx:10-22",
+        "web/src/Catalog.tsx:27-321",
+        "backend/internal/app/browse_integration_test.go"
+      ],
+      "copy": "Each PDF variant is separately reviewed; do not infer collection population or access from UI alone.",
+      "currentHead": "d6eb2f7d35ec9ac2e3bed822ed9fa909cc4af1d7",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "verify / verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/arkhiv-riot-grrrl/actions/runs/18690/jobs/33825"
+        },
+        {
+          "context": "verify / Build images and deploy frontend (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/arkhiv-riot-grrrl/actions/runs/18690/jobs/33826"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public reviewed zine catalogue populated, with a featured document, source context and rights/variant notices.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/arkhiv-riot-grrrl-2026-11-05.webp",
+        "sha256": "b8d9e502abab178cc0ca0e367fe651fd8f1fad86e36ce1b2b4c7b63788a3c180",
+        "caption": "Public zine collection / November 5, 2026"
+      }
+    },
+    {
+      "slug": "bill-nye-tv",
+      "repository": "subculture-collective/bill-nye-tv",
+      "head": "e0140e9c72607d45055709b4fa69e73eaf063aad",
+      "ci": "success",
+      "state": "implemented consumer; runtime playback unverified",
+      "evidence": [
+        "web/src/App.tsx:1-45",
+        "web/src/ViewerTools.tsx:25-105",
+        "web/src/App.test.tsx"
+      ],
+      "copy": "Keep independent/unaffiliated and source-MP4 language; replay operation needs runtime proof.",
+      "currentHead": "e0140e9c72607d45055709b4fa69e73eaf063aad",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "verify / verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/bill-nye-tv/actions/runs/18688/jobs/33821"
+        },
+        {
+          "context": "verify / Build images and deploy frontend (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/bill-nye-tv/actions/runs/18688/jobs/33822"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public independent viewer populated with episode library and shared replay schedule. No complete playback session was checked.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/bill-nye-tv-2026-11-05.webp",
+        "sha256": "ed8b0f391215429fa3c09d68e0de6d52e48ae1ac233efebeec230013af1c0797",
+        "caption": "Independent archive viewer / November 5, 2026"
+      }
+    },
+    {
+      "slug": "democracy-now-tv",
+      "repository": "subculture-collective/democracy-now-tv",
+      "head": "9f15a5df95d24f978c844161bd21cc514886af24",
+      "ci": "success",
+      "state": "implemented consumer; runtime playback unverified",
+      "evidence": [
+        "web/src/App.tsx:1-28",
+        "web/src/ViewerTools.tsx:25-105",
+        "web/src/App.test.tsx",
+        "../arkhiv/web/src/MixedArchive.tsx:49-75"
+      ],
+      "copy": "Keep source-streaming and unaffiliated boundaries.",
+      "currentHead": "9f15a5df95d24f978c844161bd21cc514886af24",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "verify / verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/democracy-now-tv/actions/runs/18689/jobs/33823"
+        },
+        {
+          "context": "verify / Build images and deploy frontend (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/democracy-now-tv/actions/runs/18689/jobs/33824"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public independent viewer populated with dated archive entries and replay schedule. No complete playback session was checked.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/democracy-now-tv-2026-11-05.webp",
+        "sha256": "d8e3e53fd94e9ce1c236ba69f3ed1a7c3eed492b4c2a17029fe308b9e83f69df",
+        "caption": "Independent broadcast archive / November 5, 2026"
+      }
+    },
+    {
+      "slug": "transcript-create",
+      "display_name": "Rekolekt",
+      "repository": "subculture-collective/rekolekt",
+      "head": "3b7703eaa0dbedd81c75c7fc22fcf8e215051e4f",
+      "ci": "success",
+      "state": "implemented API/backend; runtime unverified",
+      "evidence": [
+        "app/main.py",
+        "app/transcripts/service.py",
+        "app/search/service.py",
+        "app/routes/passages.py",
+        "app/routes/jobs.py"
+      ],
+      "copy": "Describe as self-hosted/headless shared backend; HasanAra owns its frontend.",
+      "currentHead": "3b7703eaa0dbedd81c75c7fc22fcf8e215051e4f",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "Main verification / verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/rekolekt/actions/runs/18743/jobs/33979"
+        },
+        {
+          "context": "Main verification / Build landing image and deploy Almaz (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/rekolekt/actions/runs/18743/jobs/33980"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Source and hosted checks reviewed; no public usable interface/build was available or installed for this audit.",
+      "selectedVisual": {
+        "kind": "implementation-diagram",
+        "target": "public/diagrams/rekolekt-flow-2026-11-05.svg",
+        "sha256": "6fd76d1c340a9a5ce647ed1e2dd6913b14f24006540f6ad2f95306129e95230e",
+        "caption": "Archive backend and HasanAra frontend / new implementation diagram"
+      }
+    },
+    {
+      "slug": "tadooer",
+      "repo": "subculture-collective/tadooer",
+      "sha": "2223ff6190b5028093b911589fb341614cfc75c6",
+      "ci": "success (7 current checks)",
+      "availability": "pre-release artifacts, not a hosted signup service",
+      "copy": "Private, self-hosted planner for one owner. Current prereleases include Linux and macOS desktop builds plus Android and unsigned iOS artifacts.",
+      "evidence": [
+        "package.json scripts: package:desktop, package:desktop:mac:universal, android:release, test, verify",
+        "release v0.15.0-rc.13: Linux/macOS, Android APK, unsigned iOS IPA",
+        "apps/web, apps/desktop, apps/mobile; deploy/smoke.sh; docs/design/screenshots"
+      ],
+      "currentHead": "2223ff6190b5028093b911589fb341614cfc75c6",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "verify / verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/tadooer/actions/runs/18604/jobs/33633"
+        },
+        {
+          "context": "release / verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/tadooer/actions/runs/18608/jobs/33638"
+        },
+        {
+          "context": "release / desktop-linux (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/tadooer/actions/runs/18608/jobs/33640"
+        },
+        {
+          "context": "release / server (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/tadooer/actions/runs/18608/jobs/33639"
+        },
+        {
+          "context": "release / android (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/tadooer/actions/runs/18608/jobs/33642"
+        },
+        {
+          "context": "release / desktop-mac (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/tadooer/actions/runs/18608/jobs/33641"
+        },
+        {
+          "context": "release / ios (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/tadooer/actions/runs/18608/jobs/33643"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Current source built in a disposable loopback Docker stack. Health/readiness/build API passed; actual Today and Planner displayed only synthetic sample tasks and Baikal calendar blocks. No production owner data was used.",
+      "selectedVisual": {
+        "kind": "local-fixture-capture",
+        "target": "public/screenshots/tadooer-2026-11-05.webp",
+        "sha256": "2301987762fc22593b58de7f08b5332c17d89f34f2b778a0fb80111a2e6dbc9f",
+        "caption": "Current Today view / isolated local instance with synthetic sample data / November 5, 2026"
+      }
+    },
+    {
+      "slug": "subsets",
+      "repo": "subculture-collective/subsets",
+      "sha": "80e68ab00a2322cf3af13035d10faee66b59549e",
+      "ci": "success (Node quality, Python quality, Verify)",
+      "availability": "local CLI/TUI alpha; source is ahead of last public prerelease",
+      "copy": "Local CLI and terminal UI for inspecting skill folders, previewing an explicit selection, and keeping managed changes reversible. The current source offers an optional patstack package; the last release remains v0.2.0-alpha.3.",
+      "evidence": [
+        "package.json version 0.2.0-alpha.6; node/src/discovery.ts, manager.ts, tui.tsx",
+        "node/src/packs.ts names @subcult/patstack with 48 portable skills",
+        "node/tests/{core,discovery-files,package-smoke,packs,tui}.test.mjs; scripts/capture-tui.mjs"
+      ],
+      "currentHead": "80e68ab00a2322cf3af13035d10faee66b59549e",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "CI / Node quality (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/subsets/actions/runs/18734/jobs/33962"
+        },
+        {
+          "context": "CI / Python quality (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/subsets/actions/runs/18734/jobs/33963"
+        },
+        {
+          "context": "CI / Verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/subsets/actions/runs/18734/jobs/33964"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public landing available; current source0.2.0-alpha.6 built and its actual Ink capture generator ran with six synthetic skills. Published alpha remains separate.",
+      "selectedVisual": {
+        "kind": "terminal-render",
+        "target": "public/screenshots/subsets-2026-11-05.webp",
+        "sha256": "f37d35533b81122df5e7d2a56173b137c46b4dffea4a8f625bc36c7dbf9ca09a",
+        "caption": "Actual terminal render / sample skills / source 0.2.0-alpha.6"
+      }
+    },
+    {
+      "slug": "patstack",
+      "repo": "subculture-collective/patstack",
+      "sha": "a06844d9990bc01157ecc9a194c510a53c57611b",
+      "ci": "success (Source validation)",
+      "availability": "maintained skill collection; consumable through the optional Subsets pack",
+      "copy": "A maintained collection of agent skills and profiles. Subsets can obtain its optional @subcult/patstack pack; describe that packaged relationship without implying every repository skill is in the published alpha.",
+      "evidence": [
+        "library/skills and catalog/ source hierarchy",
+        ".gitea/workflows/validate.yaml current success",
+        "Subsets node/src/packs.ts is the independent integration evidence"
+      ],
+      "currentHead": "a06844d9990bc01157ecc9a194c510a53c57611b",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "Source validation / validate (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/patstack/actions/runs/18735/jobs/33965"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Source and hosted checks reviewed; no public usable interface/build was available or installed for this audit.",
+      "selectedVisual": null
+    },
+    {
+      "slug": "obsidian-plugin-metronome-tuner",
+      "repo": "PatrickFanella/obsidian-plugin-metronome-tuner",
+      "sha": "baa985252021e84e21b260fd77dac9d6460f9d22",
+      "ci": "success (CI/check)",
+      "availability": "Obsidian plugin source; no installed-plugin/runtime claim audited",
+      "copy": "An Obsidian metronome and local chromatic tuner: 30–300 BPM, tap tempo, accents, selectable click sounds, and adjustable A4. Microphone analysis stays in the browser/device after permission.",
+      "evidence": [
+        "src/metronome/{ClickSynth,MetronomeController,MetronomeScheduler,TapTempo,TonePresets}.ts",
+        "src/tuner/{NoteMath,TunerController,YinPitchDetector}.ts",
+        "tests/{MetronomeScheduler,TapTempo,NoteMath,YinPitchDetector,ControllerLifecycle}.test.ts; npm run check"
+      ],
+      "currentHead": "baa985252021e84e21b260fd77dac9d6460f9d22",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "CI / check (push)",
+          "status": "success",
+          "target_url": "/PatrickFanella/obsidian-plugin-metronome-tuner/actions/runs/18492/jobs/33380"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Source and hosted checks reviewed; no public usable interface/build was available or installed for this audit.",
+      "selectedVisual": {
+        "kind": "repository-image",
+        "target": "public/screenshots/obsidian-plugin-metronome-tuner-2026-11-05.webp",
+        "sha256": "6dca349f846f8316c4e9091fca2dd1ae6a236b7fc2801f470b9dcdd28deb4caa",
+        "caption": "Repository documentation image / current source / not a fresh Obsidian capture"
+      }
+    },
+    {
+      "slug": "super-productivity-mcp",
+      "repo": "PatrickFanella/super-productivity-mcp",
+      "sha": "cd736e7bf04dc0d0f18878e3cec7ba68afe05027",
+      "ci": "success (CI/test)",
+      "availability": "local MCP server plus plugin bridge; live bridge connection was not demonstrated",
+      "copy": "A local MCP server, Super Productivity plugin bridge, and quick-add tool. The bridge uses local file IPC; its source covers task, project, tag, schedule, recurrence, system, and issue-provider actions. Do not claim a connected live bridge unless it is separately verified.",
+      "evidence": [
+        "internal/mcpadapter/{server,handlers,wire}.go; internal/pluginipc/*",
+        "plugin/bridge/actions/{task-create,task-mutate,task-organize,task-recurrence,task-schedule,project,tag,system,issue-provider}.js",
+        "Makefile test via current CI; Go, plugin, IPC, quick-add tests"
+      ],
+      "currentHead": "cd736e7bf04dc0d0f18878e3cec7ba68afe05027",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "CI / test (push)",
+          "status": "success",
+          "target_url": "/PatrickFanella/super-productivity-mcp/actions/runs/18490/jobs/33378"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Source and hosted checks reviewed; no public usable interface/build was available or installed for this audit.",
+      "selectedVisual": {
+        "kind": "implementation-diagram",
+        "target": "public/diagrams/super-productivity-mcp-flow-2026-11-05.svg",
+        "sha256": "39162411dd36bba4b23fda07a616d6a1c0ff6599901e7c784c81b6e9cd5993e6",
+        "caption": "Local MCP server and companion plugin / new integration diagram"
+      }
+    },
+    {
+      "slug": "ytclip",
+      "repo": "PatrickFanella/ytclip",
+      "sha": "f58f8231e399e240c9a553530e4dc40ceb3f2374",
+      "ci": "success (Verify)",
+      "availability": "local Bash source install",
+      "copy": "A local Bash command for downloading a full YouTube video or cutting a timestamped clip, using yt-dlp and ffmpeg installed on the user’s machine.",
+      "evidence": [
+        "tests/test.sh",
+        ".gitea/workflows/ci.yml Verify success",
+        "repository CI is current at this SHA"
+      ],
+      "currentHead": "f58f8231e399e240c9a553530e4dc40ceb3f2374",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "CI / Verify (push)",
+          "status": "success",
+          "target_url": "/PatrickFanella/ytclip/actions/runs/17262/jobs/31469"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Source and hosted checks reviewed; no public usable interface/build was available or installed for this audit.",
+      "selectedVisual": null
+    },
+    {
+      "slug": "twitchdl",
+      "repo": "PatrickFanella/twitchdl",
+      "sha": "ad91c1b6304fc12a16da7f51c1a3eabef8c311ab",
+      "ci": "success (verify)",
+      "availability": "local Go CLI; no discovery, scheduler, or authenticated workflow command is present",
+      "copy": "A local Go command for downloading Twitch clips or VODs and recording a live channel. It accepts a URL/channel, has dependency diagnostics, and can wait for a stream; discovery and account-authenticated workflows are not current commands.",
+      "evidence": [
+        "internal/cli/cli.go exposes clip, vod, live, doctor, completion only",
+        "internal/backend/{streamlink,ytdlp}.go; internal/app/service.go",
+        "unit tests across app/backend/cli/domain/media/process plus tests/integration-local-hls.sh"
+      ],
+      "currentHead": "ad91c1b6304fc12a16da7f51c1a3eabef8c311ab",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "verify / verify (push)",
+          "status": "success",
+          "target_url": "/PatrickFanella/twitchdl/actions/runs/14796/jobs/27243"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Source and hosted checks reviewed; no public usable interface/build was available or installed for this audit.",
+      "selectedVisual": null
+    },
+    {
+      "slug": "tmux-popups",
+      "repo": "PatrickFanella/tmux-popups",
+      "sha": "fef6aa1f4510387f1966bcc49bf1e9719df91644",
+      "ci": "success (Launcher verification/shell)",
+      "availability": "source-installed tmux toolkit",
+      "copy": "A Bash-and-tmux popup toolkit. A TSV registry generates a quick menu and direct bindings; it includes local overrides, dependency-aware help, and a doctor script.",
+      "evidence": [
+        "popups.tsv; scripts/{generate-config,run-popup,popup-help,doctor,check}.sh",
+        "tests/run.sh and tests/test_{availability,bindings,clipboard,context,launcher,modes,quoting,registry,timer,user_scripts}.py",
+        ".gitea/workflows/ci.yml current success"
+      ],
+      "currentHead": "fef6aa1f4510387f1966bcc49bf1e9719df91644",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "Launcher verification / shell (push)",
+          "status": "success",
+          "target_url": "/PatrickFanella/tmux-popups/actions/runs/18493/jobs/33381"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Source and hosted checks reviewed; no public usable interface/build was available or installed for this audit.",
+      "selectedVisual": {
+        "kind": "terminal-render",
+        "target": "public/screenshots/tmux-popups-2026-11-05.webp",
+        "sha256": "f50a0aff7c1e3449c3f8e309ea8694d5939526cb254b9df1c3775914d46ea2ae",
+        "caption": "Actual CLI help excerpt / disposable small-profile environment / November 5, 2026"
+      }
+    },
+    {
+      "slug": "patchwork",
+      "head": "7afca6cb8ff14707f1cf98ad88c4150797b2bd2e",
+      "implemented": [
+        "requests/offers",
+        "maps",
+        "privacy/safety",
+        "groups/moderation"
+      ],
+      "evidence": [
+        "apps/web/src/features/data-mode.ts:19-22",
+        "apps/web/e2e/production-data-mode.spec.ts",
+        "apps/web/e2e/safety-actions.spec.ts",
+        "apps/web/e2e/exact-location.spec.ts"
+      ],
+      "ci": {
+        "state": "push_success_with_later_manual_failure"
+      },
+      "availability": "Pre-alpha public demonstration, not real-help service.",
+      "copy_recommendation": "Keep explicit do-not-rely-on-it boundary; do not market broad source features as live service.",
+      "currentHead": "4d38df4e6e11a860078ccc507471736d74437720",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "CI / quality-gates (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/patchwork/actions/runs/18786/jobs/34149"
+        },
+        {
+          "context": "CI / e2e-production (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/patchwork/actions/runs/18786/jobs/34150"
+        },
+        {
+          "context": "CI / deploy-staging (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/patchwork/actions/runs/18786/jobs/34151"
+        }
+      ],
+      "headDelta": "New Patchwork head changes Dockerfile image-layer packaging and its staging-compose test. The pre-alpha product and safety claims are unchanged.",
+      "deltaFiles": [
+        "Dockerfile",
+        "packages/shared/src/staging-compose.test.ts"
+      ],
+      "reviewedHead": "4d38df4e6e11a860078ccc507471736d74437720",
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public landing displayed a pre-alpha/no-real-requests notice and resource-directory preview; no real request/auth/handoff was created.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/patchwork-2026-11-05.webp",
+        "sha256": "276d0c943477e330cfd1b9f52752f0371e5fcfd8df907bb2067e660e7650fbac",
+        "caption": "Public pre-alpha demonstration / not for real requests / November 5, 2026"
+      }
+    },
+    {
+      "slug": "clustr-galaxy",
+      "repo": "subculture-collective/clustr-galaxy",
+      "sha": "4fcf811b96d7ac252bf62bce622506fb4789f8d7",
+      "ci": "failure (runner-availability and Unity Linux beta gates)",
+      "availability": "Unity development source; no qualified public beta",
+      "copy": "A controller-oriented Unity prototype for exploring community data as a galaxy. Linux builds and a public beta are not currently qualified: the head CI requires a native Unity 6000.4.10f1 runner that is not enabled.",
+      "evidence": [
+        "Assets/ClustrGalaxy/Runtime plus Presentation assets and Editor/GalaxyLinuxBetaBuilder.cs",
+        ".gitea/workflows/unity.yml requires UNITY_RUNNER_ENABLED=true and native unity-6000.4.10f1-linux",
+        "current head status failure; workflow calls scripts/validate.py and scripts/build.py only when runner is available"
+      ],
+      "currentHead": "4fcf811b96d7ac252bf62bce622506fb4789f8d7",
+      "currentCI": "failure",
+      "ciChecks": [
+        {
+          "context": "Linux beta gates / unity (push)",
+          "status": "skipped",
+          "target_url": "/subculture-collective/clustr-galaxy/actions/runs/14980/jobs/27539"
+        },
+        {
+          "context": "Linux beta gates / runner-availability (push)",
+          "status": "failure",
+          "target_url": "/subculture-collective/clustr-galaxy/actions/runs/14980/jobs/27538"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Source and hosted checks reviewed; no public usable interface/build was available or installed for this audit.",
+      "selectedVisual": null
+    },
+    {
+      "slug": "the-common-house",
+      "repo": "subculture-collective/the-common-house",
+      "sha": "939f91699b68ef0b400e7de1d8f5552789b8026e",
+      "ci": "success (Portable quality)",
+      "availability": "Unity game prototype; no public release or playtest demonstrated",
+      "copy": "A first-person narrative-investigation game prototype set at a communal radio outpost. The source includes authored world, character, aftermath, and art assets; public playtesting and release remain ahead.",
+      "evidence": [
+        "Assets/CommonHouse/Aftermath/{AftermathContent,AftermathHouseholdController,AftermathHouseholdOverlay,AftermathWorldTarget}.cs",
+        "Assets/CommonHouse/Art/Animations/Mixamo assets and Unity project structure",
+        "CI runs Python regressions, docs validation, binary-size and provenance checks; it does not establish a built playable release"
+      ],
+      "currentHead": "939f91699b68ef0b400e7de1d8f5552789b8026e",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "CI / Portable quality (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/the-common-house/actions/runs/17226/jobs/31410"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Source and hosted checks reviewed; no public usable interface/build was available or installed for this audit.",
+      "selectedVisual": null
+    },
+    {
+      "slug": "backline",
+      "repository": "subculture-collective/backline",
+      "head": "f9cd6f1e6ff90a815edd51f0deb7e4c984fec8c3",
+      "ci": "success",
+      "state": "implemented private-pilot product; runtime unverified",
+      "evidence": [
+        "backend/src/bot/commands.ts:164-211",
+        "frontend/src/lib/modules.ts:9-65",
+        "backend/src/routes/moderation.ts:17-56",
+        "backend/src/recovery/snapshots.ts:318-397"
+      ],
+      "copy": "Keep 23 modules/private pilot/closed installation wording; Discord operation is runtime evidence.",
+      "currentHead": "f9cd6f1e6ff90a815edd51f0deb7e4c984fec8c3",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "Security qualification / CodeQL analysis (GitHub only) (push)",
+          "status": "skipped",
+          "target_url": "/subculture-collective/backline/actions/runs/18520/jobs/33438"
+        },
+        {
+          "context": "Docker qualification / Build and inspect backend image (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/backline/actions/runs/18518/jobs/33434"
+        },
+        {
+          "context": "Security qualification / Backend dependency audit (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/backline/actions/runs/18520/jobs/33439"
+        },
+        {
+          "context": "Frontend CI / Frontend quality (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/backline/actions/runs/18519/jobs/33437"
+        },
+        {
+          "context": "Tests / E2E Tests (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/backline/actions/runs/18521/jobs/33443"
+        },
+        {
+          "context": "Docker qualification / Build and serve dashboard image (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/backline/actions/runs/18518/jobs/33435"
+        },
+        {
+          "context": "Docker qualification / Validate Compose definitions (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/backline/actions/runs/18518/jobs/33436"
+        },
+        {
+          "context": "Security qualification / Frontend dependency audit (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/backline/actions/runs/18520/jobs/33440"
+        },
+        {
+          "context": "Security qualification / Verified secrets scan (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/backline/actions/runs/18520/jobs/33441"
+        },
+        {
+          "context": "Tests / Backend Tests (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/backline/actions/runs/18521/jobs/33442"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public landing displayed private-pilot/install-closed language. Workflow graphics are explicitly illustrative; no pilot dashboard/Discord account was accessed.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/backline-2026-11-05.webp",
+        "sha256": "f33c53977285cb65e8337216cb8f724dcb91018736fe0cdb22bb58bff8a3f476",
+        "caption": "Public pilot landing / illustrative workflows, not a dashboard / November 5, 2026"
+      }
+    },
+    {
+      "slug": "prichal",
+      "repository": "subculture-collective/prichal",
+      "head": "29d9128f0cc2ce62bbadd13efa4d3c9e131bdfdd",
+      "ci": "success",
+      "state": "implemented controlled pilot; runtime unverified",
+      "evidence": [
+        "backend/internal/nodeagent/managed.go:89-202",
+        "backend/internal/auth/owner_admission_test.go",
+        "backend/internal/orgaccess/http.go:201"
+      ],
+      "copy": "Keep private preview/no public sign-up; frame managed hosting as controlled enrollment.",
+      "currentHead": "29d9128f0cc2ce62bbadd13efa4d3c9e131bdfdd",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "Verify local foundation / smoke (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/prichal/actions/runs/18468/jobs/33342"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public preview landing displayed explicit sign-up closure; no management account or provisioning was accessed.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/prichal-2026-11-05.webp",
+        "sha256": "bcf6ffe8f6ef4c033498f5f4d6de51e3b95e0f83ffc0c1e1c55c7784a1ddc30a",
+        "caption": "Public preview landing / sign-up closed / November 5, 2026"
+      }
+    },
+    {
+      "slug": "pirs",
+      "repository": "subculture-collective/pirs",
+      "head": "1dccd92acabd86fc767a9deece3a115e6ffdadf7",
+      "ci": "success",
+      "state": "separate host and bridge implemented; PDS plugin support not qualified",
+      "evidence": [
+        "service/pirs/host/runtime/src/main.rs",
+        "service/pirs/events/bridge-server.ts",
+        "docs/spec/hook-points.md:86-146",
+        "service/pirs/events/bridge.test.ts"
+      ],
+      "copy": "Replace extensible-PDS wording with experimental separate-host research; no production host or supported PDS hook.",
+      "currentHead": "1dccd92acabd86fc767a9deece3a115e6ffdadf7",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "PDS patch qualification / qualify (patched) (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/pirs/actions/runs/18485/jobs/33371"
+        },
+        {
+          "context": "Pirs smoke / smoke (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/pirs/actions/runs/18486/jobs/33373"
+        },
+        {
+          "context": "PDS patch qualification / qualify (stock) (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/pirs/actions/runs/18485/jobs/33372"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Source and hosted checks reviewed; no public usable interface/build was available or installed for this audit.",
+      "selectedVisual": {
+        "kind": "implementation-diagram",
+        "target": "public/diagrams/pirs-flow-2026-11-05.svg",
+        "sha256": "e19910530316d93e2ead1c578ff2daa38de6f8f8ff1b115427dcdbe2fdda516c",
+        "caption": "Experimental host architecture / new implementation diagram"
+      }
+    },
+    {
+      "slug": "subcult-os",
+      "head": "d64d66e0586add9ae6e375f21c28c6cdccb70cc9",
+      "implemented": [
+        "event lifecycle",
+        "ticket allocation/pricing model",
+        "door authority",
+        "reports/exports"
+      ],
+      "evidence": [
+        "backend/internal/app/event_lifecycle.go:27-101",
+        "backend/internal/app/door_authority_integration_test.go",
+        "backend/internal/app/ticket_journey_test.go",
+        "backend/internal/app/event_report_exports_integration_test.go"
+      ],
+      "ci": {
+        "state": "success"
+      },
+      "availability": "In development/contact to try; not general public SaaS.",
+      "copy_recommendation": "Current public flow is free reservations; code has pricing support, but do not claim paid sales/payouts are offered.",
+      "currentHead": "d64d66e0586add9ae6e375f21c28c6cdccb70cc9",
+      "currentCI": "success",
+      "ciChecks": [
+        {
+          "context": "subcult-os-check / verify (push)",
+          "status": "success",
+          "target_url": "/subculture-collective/subcult-os/actions/runs/17914/jobs/32299"
+        }
+      ],
+      "observedAt": "2026-11-05T18:34:59.659171+00:00",
+      "runtimeObservation": "Public event discovery rendered its current empty state; no ticket purchase or event operation was attempted.",
+      "selectedVisual": {
+        "kind": "live-capture",
+        "target": "public/screenshots/subcult-os-2026-11-05.webp",
+        "sha256": "127fd251b40e9af5f81f2cdea57556d5b4fd08365bd3e43a7bdc4ccc56c27ab3",
+        "caption": "Public event discovery / no published listings in this capture / November 5, 2026"
+      }
+    }
+  ]
+}

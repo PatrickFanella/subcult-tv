@@ -85,9 +85,6 @@
 .product-landing[data-product='tadooer'] .landing-wordmark h1 {
   letter-spacing: -0.015em;
 }
-.product-landing[data-product='tadooer'] .landing-number {
-  font-variant-numeric: tabular-nums;
-}
 .product-landing[data-product='clpr'] {
   --lp-bg: #0e0c13;
   --lp-panel: #17141f;
@@ -491,22 +488,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
+  padding: 16px 0;
   border-bottom: 1px solid var(--lp-line);
   font: 12px var(--lp-mono);
 }
-.landing-product-nav > div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+.landing-product-nav [aria-current] {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .landing-product-nav a {
   padding: 8px 0;
 }
-.landing-product-nav a:hover,
-.landing-product-nav a[aria-current] {
+.landing-product-nav a:hover {
   color: var(--lp-accent-text);
   text-decoration: underline;
   text-underline-offset: 6px;
@@ -661,12 +655,8 @@
   border-radius: var(--lp-radius);
   box-shadow: var(--lp-shadow);
 }
-.landing-number {
-  font: 12px var(--lp-mono);
-  color: var(--lp-accent-text);
-}
 .landing-features h3 {
-  margin: 24px 0 16px;
+  margin: 0 0 16px;
   font-size: 23px;
   line-height: 1.2;
 }
@@ -908,28 +898,6 @@
   padding-left: 0;
 }
 @media (max-width: 900px) {
-  /* The product list took the first screen on phones; show it as one scrolling line. */
-  .landing-product-nav {
-    flex-wrap: nowrap;
-  }
-  .landing-product-nav > a {
-    flex: none;
-  }
-  .landing-product-nav > div {
-    flex: 1 1 auto;
-    flex-wrap: nowrap;
-    min-width: 0;
-    overflow-x: auto;
-    scroll-padding-inline: 8px;
-    scrollbar-width: none;
-  }
-  .landing-product-nav > div::-webkit-scrollbar {
-    display: none;
-  }
-  .landing-product-nav > div a {
-    flex: none;
-    white-space: nowrap;
-  }
   .landing-hero {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -949,14 +917,14 @@
   }
 }
 @media (max-width: 480px) {
+  .landing-wordmark {
+    flex-wrap: wrap;
+  }
   .landing-container {
     padding: 0 20px;
   }
   .landing-product-nav {
     gap: 8px;
-  }
-  .landing-product-nav > div {
-    gap: 8px 16px;
   }
   .landing-section {
     padding: 40px 0;

@@ -61,6 +61,32 @@
   border-bottom: 8px solid #100b19;
   overflow: hidden;
 }
+.home-hero {
+  padding-bottom: 2rem;
+}
+@media (max-width: 639px) {
+  .home-hero {
+    padding-block: 1rem 1.5rem;
+  }
+  .home-hero .subcult-hero-mark {
+    width: 64px;
+    margin-bottom: 0.75rem;
+  }
+  .showcase-hero.home-hero .showcase-title {
+    font-size: clamp(2.25rem, 9vw, 3rem);
+  }
+  .home-hero .showcase-eyebrow {
+    font-size: 0.65rem;
+  }
+  .home-hero .text-bone {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .home-hero .grid {
+    gap: 1.25rem;
+  }
+}
 .subcult-hero-mark {
   width: clamp(96px, 10vw, 136px);
   height: auto;
@@ -82,11 +108,6 @@
 .showcase-hero .showcase-eyebrow {
   font-family: 'JetBrains Mono', monospace;
   margin-bottom: 0.65rem;
-}
-.subcult-product-bar {
-  margin-top: 2rem;
-  background: var(--color-void);
-  border-top: 1px solid var(--color-fog);
 }
 .showcase-hero .showcase-index {
   margin-top: 0;
@@ -112,7 +133,7 @@
   outline: 3px solid #100b19;
   outline-offset: 5px;
 }
-/* Hero actions: the directory link is the green primary, the in-page anchor the ink outline. */
+/* Hero action uses the selected green block and dark ink. */
 .showcase-hero .support-primary {
   color: #100b19;
   border-color: #100b19;
@@ -121,15 +142,6 @@
 }
 .showcase-hero .support-primary:hover {
   background: #f0ece4;
-}
-.showcase-hero a[href='#products'] {
-  color: #100b19;
-  border-color: #100b19;
-  background: transparent;
-}
-.showcase-hero a[href='#products']:hover {
-  background: #100b19;
-  color: #f0ece4;
 }
 .showcase-section-heading {
   border-bottom: 3px solid #8b5cf6;

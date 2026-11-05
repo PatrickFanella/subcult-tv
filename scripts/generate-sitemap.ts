@@ -42,6 +42,7 @@ const STATIC_ROUTES: SitemapEntry[] = [
   { loc: '/products', changefreq: 'weekly', priority: '0.9' },
   { loc: '/about', changefreq: 'monthly', priority: '0.6' },
   { loc: '/contact', changefreq: 'monthly', priority: '0.6' },
+  { loc: '/privacy', changefreq: 'yearly', priority: '0.3' },
   { loc: '/support', changefreq: 'monthly', priority: '0.5' },
   { loc: '/development', changefreq: 'weekly', priority: '0.5' },
   { loc: '/newsletter', changefreq: 'yearly', priority: '0.4' },

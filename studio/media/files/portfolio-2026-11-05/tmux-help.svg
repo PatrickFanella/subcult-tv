@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>tmux-popups: current generated help excerpt</title>
+<rect width="1440" height="900" fill="#101418"/>
+<text xml:space="preserve" x="64" y="88" fill="#e6edf3" font-family="JetBrains Mono" font-size="38" font-weight="700">tmux-popups / generated help</text>
+<path d="M64 128H1376M64 752H1376" stroke="#7faec7" stroke-width="2"/>
+<text xml:space="preserve" x="64" y="188" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">Direct binds</text>
+<text xml:space="preserve" x="64" y="211" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">------------</text>
+<text xml:space="preserve" x="64" y="234" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">Prefix + Enter       Quick Menu (configurable: @tmux-popups-menu-key)</text>
+<text xml:space="preserve" x="64" y="257" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">Prefix + R        reload tmux config (configurable: @tmux-popups-reload-key)</text>
+<text xml:space="preserve" x="64" y="280" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400"></text>
+<text xml:space="preserve" x="64" y="303" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">Prefix + C-h     popup help         help           deps:tmux                   ok</text>
+<text xml:space="preserve" x="64" y="326" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">Prefix + T       shell              shell          deps:shell                  ok</text>
+<text xml:space="preserve" x="64" y="349" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">Prefix + C-b     tmux keys          keys           deps:tmux                   ok</text>
+<text xml:space="preserve" x="64" y="372" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400"></text>
+<text xml:space="preserve" x="64" y="395" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">Quick Menu keys: Prefix + Enter, then key</text>
+<text xml:space="preserve" x="64" y="418" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">----------------------------------------------</text>
+<text xml:space="preserve" x="64" y="441" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">H       popup help         help           deps:tmux                   ok</text>
+<text xml:space="preserve" x="64" y="464" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">Enter   shell              shell          deps:shell                  ok</text>
+<text xml:space="preserve" x="64" y="487" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">N       notes              notes          deps:editor                 ok</text>
+<text xml:space="preserve" x="64" y="510" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">P       timer              timer          deps:sleep                  ok</text>
+<text xml:space="preserve" x="64" y="533" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">b       tmux keys          keys           deps:tmux                   ok</text>
+<text xml:space="preserve" x="64" y="556" fill="#d5e3eb" font-family="JetBrains Mono" font-size="18" font-weight="400">v       vscode here        configurable: @tmux-popups-vscode-command</text>
+<text xml:space="preserve" x="64" y="808" fill="#7faec7" font-family="JetBrains Mono" font-size="20" font-weight="400">ACTUAL CLI OUTPUT EXCERPT / DISPOSABLE SMALL-PROFILE ENVIRONMENT</text>
+<text xml:space="preserve" x="64" y="854" fill="#d5e3eb" font-family="JetBrains Mono" font-size="20" font-weight="400">Source fef6aa1f4510 / generated from the current registry</text>
+</svg>

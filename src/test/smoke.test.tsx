@@ -7,6 +7,9 @@ import { AuthProvider } from '@/context/AuthContext';
 import { EffectsProvider } from '@/context/EffectsContext';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import App from '@/App';
+import { getShowcaseProducts, PRODUCT_GROUPS } from '@/lib/showcase';
+import { getProductPath } from '@/lib/product-paths';
+import { getPublicProjectSource } from '@/lib/project-utils';
 
 // Deterministic localStorage for EffectsContext/AuthContext.
 const store = new Map<string, string>();
@@ -49,28 +52,22 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('showcases the featured products, lists all twenty-four, and connects HasanAra to its shared application', async () => {
+  it('showcases exactly the four leads, lists the selected projects, and connects HasanAra to Rekolekt', async () => {
     const user = userEvent.setup();
     renderApp('/');
     const showcase = await screen.findByRole('region', { name: 'The products' });
     const products = within(showcase);
-    for (const name of [
-      'clpr',
-      'Patchwork',
-      'HasanAra',
-      'Undertow',
-      'Kork',
-      'Chatty Cat',
-      'Arkhiv',
-      'Tadooer',
-    ]) {
+    expect(
+      products.getAllByRole('article').map((article) => article.getAttribute('aria-labelledby')),
+    ).toEqual(['undertow-heading', 'kork-heading', 'clpr-heading', 'hasanara-heading']);
+    for (const name of ['Undertow', 'Kork', 'clpr', 'HasanAra']) {
       expect(products.getByRole('heading', { name })).toBeInTheDocument();
     }
     expect(products.queryByRole('heading', { name: 'Rekolekt' })).not.toBeInTheDocument();
     const index = within(screen.getByRole('region', { name: 'Everything we make' }));
-    expect(index.getAllByRole('listitem')).toHaveLength(24);
-    expect(index.getByRole('link', { name: /Spool/ })).toHaveAttribute('href', '/products/spool');
-    expect(index.getByRole('link', { name: /Rekolekt/ })).toHaveAttribute(
+    expect(index.getAllByRole('listitem')).toHaveLength(getShowcaseProducts().length);
+    expect(index.queryByRole('link', { name: /Spool/ })).not.toBeInTheDocument();
+    expect(index.getByRole('link', { name: /^Rekolekt/ })).toHaveAttribute(
       'href',
       '/products/rekolekt',
     );
@@ -99,21 +96,18 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('opens Prichal from the directory with the preview and repository destinations', async () => {
+  it('opens Prichal as a closed preview without a private repository link', async () => {
     const user = userEvent.setup();
     renderApp('/products');
-    await user.click(await screen.findByRole('link', { name: 'About Prichal →' }));
+    await user.click(await screen.findByRole('link', { name: /^Prichal/ }));
     expect(await screen.findByRole('heading', { name: 'Prichal', level: 1 })).toBeInTheDocument();
     for (const link of screen.getAllByRole('link', { name: /See the preview/i })) {
       expect(link).toHaveAttribute('href', 'https://prichal.subcult.tv');
     }
-    expect(screen.getByRole('link', { name: /View repository/ })).toHaveAttribute(
-      'href',
-      'https://git.subcult.tv/subculture-collective/prichal',
-    );
+    expect(screen.queryByRole('link', { name: /View repository/ })).not.toBeInTheDocument();
   });
 
-  it('opens Kork from its showcase with the live service and repository', async () => {
+  it('opens Kork from its showcase with its public service and no private repository link', async () => {
     const user = userEvent.setup();
     renderApp('/');
     const showcase = within(await screen.findByRole('region', { name: 'The products' }));
@@ -127,35 +121,26 @@ describe('smoke: app shell', () => {
       'href',
       'https://kork.subcult.tv',
     );
-    expect(screen.getByRole('link', { name: /View repository/ })).toHaveAttribute(
-      'href',
-      'https://git.subcult.tv/subculture-collective/kork',
-    );
+    expect(screen.queryByRole('link', { name: /View repository/ })).not.toBeInTheDocument();
     expect(document.querySelector('meta[property="og:image"]')).toHaveAttribute(
       'content',
       'https://subcult.tv/og/kork.jpg',
     );
   });
 
-  it('redirects the old catalog to the grouped twenty-four-product directory', async () => {
+  it('redirects the old catalogue to every selected project in five groups', async () => {
     renderApp('/projects');
     await screen.findByRole('heading', { name: 'Products', level: 1 });
     const main = within(screen.getByRole('main'));
-    const teasers = within(main.getByRole('region', { name: 'In development' }));
-    const articles = main.getAllByRole('article');
-    expect(articles.filter((article) => !article.closest('.teasers'))).toHaveLength(24);
-    const plugins = within(main.getByRole('region', { name: 'Desktop and editor plugins' }));
-    expect(plugins.getAllByRole('article')).toHaveLength(5);
-    expect(plugins.getByRole('link', { name: 'Explore Shelfish' })).toHaveAttribute(
-      'href',
-      '/products/shelfish',
-    );
-    expect(teasers.getAllByRole('article')).toHaveLength(2);
-    expect(main.getByRole('link', { name: 'Explore Rekolekt' })).toHaveAttribute(
-      'href',
-      '/products/rekolekt',
-    );
-    expect(main.queryByText('clustr')).not.toBeInTheDocument();
+    for (const label of Object.values(PRODUCT_GROUPS)) {
+      expect(main.getByRole('region', { name: label })).toBeInTheDocument();
+    }
+    for (const { project } of getShowcaseProducts()) {
+      expect(main.getByText(project.name, { selector: 'strong' }).closest('a')).toHaveAttribute(
+        'href',
+        getProductPath(project.slug),
+      );
+    }
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
       'href',
       'https://subcult.tv/products',
@@ -171,7 +156,7 @@ describe('smoke: app shell', () => {
       'href',
       'https://git.subcult.tv/PatrickFanella/obsidian-plugin-metronome-tuner',
     );
-    expect(screen.getByRole('link', { name: 'Explore the code ↗' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Read the source ↗' })).toBeInTheDocument();
     expect(document.querySelector('meta[property="og:image"]')).toHaveAttribute(
       'content',
       'https://subcult.tv/og/obsidian-plugin-metronome-tuner.jpg',
@@ -220,6 +205,17 @@ describe('smoke: app shell', () => {
     expect(await screen.findByRole('heading', { name: 'The newsletter' })).toBeInTheDocument();
     expect(screen.getAllByLabelText('Email address').length).toBeGreaterThan(0);
     expect(document.title).toBe('Newsletter | SUBCULT');
+  });
+
+  it('links contact data handling to a working privacy page', async () => {
+    const user = userEvent.setup();
+    renderApp('/contact');
+    const notice = await screen.findByRole('link', { name: 'How we handle your message' });
+    expect(notice).toHaveAttribute('href', '/privacy');
+    await user.click(notice);
+    expect(await screen.findByRole('heading', { name: 'Privacy', level: 1 })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Contact messages' })).toBeInTheDocument();
+    expect(document.title).toBe('Privacy | SUBCULT');
   });
 
   it('keeps 404 pages out of search', async () => {
@@ -284,10 +280,13 @@ describe('smoke: app shell', () => {
     expect(await screen.findByRole('heading', { name, level: 1 })).toBeInTheDocument();
     expect(document.querySelector('#workflow-title')).toHaveTextContent(/\w/);
     expect(document.querySelectorAll('.landing-workflow li').length).toBeGreaterThanOrEqual(2);
-    expect(screen.getByRole('link', { name: /View repository/ })).toHaveAttribute(
-      'href',
-      expect.stringContaining('git.subcult.tv/'),
-    );
+    const product = getShowcaseProducts().find(
+      (p) => getProductPath(p.project.slug) === `/products/${slug}`,
+    )!;
+    const source = getPublicProjectSource(product.project);
+    if (source)
+      expect(screen.getByRole('link', { name: /View repository/ })).toHaveAttribute('href', source);
+    else expect(screen.queryByRole('link', { name: /View repository/ })).not.toBeInTheDocument();
     const question = document.querySelector('details summary')!;
     const details = question.closest('details')!;
     expect(details.open).toBe(false);
@@ -299,7 +298,7 @@ describe('smoke: app shell', () => {
     );
   });
 
-  it('presents Left Field with approved artwork, public research links, and research limits', async () => {
+  it('presents Left Field with a current research capture, public links, and research limits', async () => {
     renderApp('/products/left-field');
     await screen.findByRole('heading', { name: 'Left Field', level: 1 });
     expect(screen.getByRole('link', { name: 'Open Left Field ↗' })).toHaveAttribute(
@@ -310,9 +309,9 @@ describe('smoke: app shell', () => {
       'href',
       '/contact?product=left-field',
     );
-    expect(screen.getByRole('img', { name: /LF mark on warm paper/ })).toHaveAttribute(
+    expect(screen.getByRole('img', { name: /Priority index with its model date/ })).toHaveAttribute(
       'src',
-      '/brand/left-field/hero.svg',
+      '/screenshots/left-field-2026-11-05.webp',
     );
     // The tagline under the h1 is a paragraph, not a second heading level.
     expect(
@@ -348,52 +347,25 @@ describe('smoke: app shell', () => {
     expect(await screen.findByRole('heading', { name: 'SIGNAL LOST' })).toBeInTheDocument();
   });
 
-  it('shortcuts the featured products in the navigation and lists every product in the footer', async () => {
+  it('keeps navigation concise and links each catalogue group in the footer', async () => {
     renderApp('/about');
     await screen.findByRole('heading', { name: 'Software for independent culture.' });
     const nav = within(screen.getByRole('navigation', { name: 'Main navigation' }));
     const footer = within(screen.getByRole('contentinfo'));
-    expect(nav.getByRole('link', { name: 'Support' })).toHaveAttribute('href', '/support');
-    for (const [name, slug] of [
-      ['clpr', 'clpr'],
-      ['Patchwork', 'patchwork'],
-      ['HasanAra', 'hasanara'],
-      ['Undertow', 'undertow'],
-      ['Kork', 'kork'],
-      ['Tadooer', 'tadooer'],
-      ['Chatty Cat', 'chatty-cat'],
-      ['Arkhiv', 'arkhiv'],
-    ]) {
-      expect(nav.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
-    }
-    expect(nav.getByRole('link', { name: 'All 24 →' })).toHaveAttribute('href', '/products');
-    expect(nav.queryByRole('link', { name: 'Rekolekt' })).not.toBeInTheDocument();
-    for (const [name, slug] of [
-      ['Rekolekt', 'rekolekt'],
-      ['Subcult OS', 'subcult-os'],
-      ['Prichal', 'prichal'],
-      ['Left Field', 'left-field'],
-      ['Subsets', 'subsets'],
-      ['Backline', 'backline'],
-      ['Headcount', 'headcount'],
-      ['Overlaid', 'overlaid'],
-      ['Pirs', 'pirs'],
-      ['tmux-popups', 'tmux-popups'],
-      ['Omarchy Multi-Monitor Bar', 'omarchy-monitor-bar'],
-      ['Super Productivity for Omarchy', 'omarchy-superproductivity'],
-      ['Spool', 'spool'],
-      ['Shelfish', 'shelfish'],
-      ['Metronome + Tuner', 'metronome-tuner'],
-      ['super-productivity-mcp', 'super-productivity-mcp'],
-    ]) {
-      expect(footer.getByRole('link', { name })).toHaveAttribute('href', `/products/${slug}`);
+    expect(nav.getByRole('link', { name: 'Products' })).toHaveAttribute('href', '/products');
+    expect(footer.getByRole('link', { name: 'Privacy' })).toHaveAttribute('href', '/privacy');
+    for (const [group, name] of Object.entries(PRODUCT_GROUPS)) {
+      expect(footer.getByRole('link', { name })).toHaveAttribute(
+        'href',
+        `/products#group-${group}`,
+      );
     }
   });
 
   it('shows unnamed in-development teasers without links', async () => {
     renderApp('/');
     const teasers = within(await screen.findByRole('region', { name: 'In development' }));
-    expect(teasers.getByRole('heading', { name: 'Untitled game' })).toBeInTheDocument();
+    expect(teasers.queryByRole('heading', { name: 'Untitled game' })).not.toBeInTheDocument();
     expect(teasers.getByRole('heading', { name: 'Untitled audio show' })).toBeInTheDocument();
     expect(teasers.queryAllByRole('link')).toHaveLength(0);
   });
@@ -456,7 +428,7 @@ describe('smoke: contact', () => {
     await user.type(message, 'Can we discuss clpr?');
     await user.click(screen.getByRole('button', { name: 'Send message' }));
 
-    expect(await screen.findByText(/could not send your message/i)).toBeInTheDocument();
+    expect(await screen.findByRole('alert')).toHaveTextContent(/could not send your message/i);
     expect(name).toHaveValue('Ada Lovelace');
     expect(email).toHaveValue('ada@example.com');
     expect(subject).toHaveValue('Project question');

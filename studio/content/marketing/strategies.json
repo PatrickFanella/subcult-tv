@@ -1021,6 +1021,306 @@
       "automation": "manual evidence review before automatic showcase",
       "review_decision": "After two comparable approved pieces, review meaningful actions, distinct feedback, and preparation effort. Continue the useful theme, revise the confusing step, or pause it. No reach-only success claim.",
       "catalog_slug": "the-common-house"
+    },
+    "commons": {
+      "name": "Commons",
+      "catalog_slug": "commons",
+      "audience_hypothesis": "Builders comparing open software and looking for projects to help.",
+      "positioning": "Discover open projects, compare software alternatives and find work to help build.",
+      "claim_ids": [
+        "C-PORTFOLIO-COMMONS-20261105"
+      ],
+      "cta": {
+        "action": "Read the project introduction and its availability",
+        "url": "https://subcult.tv/products/commons"
+      },
+      "pillars": [
+        {
+          "id": "commons-current-work",
+          "story": "Show the current project, its purpose and how a visitor can use it.",
+          "asset": "Use the selected current capture with its evidence caption, or a clearly labeled source-based diagram. Do not substitute a landing screenshot for an authenticated feature demonstration."
+        }
+      ],
+      "first_use_check": "Open the project introduction, follow its bounded next action, and confirm the stated access before preparing a draft.",
+      "limits": "Describe browsing, alternatives and discussion; reserve build/project creation claim until account path is checked.",
+      "measurement": "Manual journey checks and concrete feedback. No analytics, audience size or conversion baseline is assumed.",
+      "baseline": "Unavailable; record observations before drawing a comparison.",
+      "channels": [
+        "studio roundup",
+        "project introduction"
+      ],
+      "automation": "manual evidence review before any automatic showcase",
+      "review_decision": "Draft only. Recheck current source and visitor access before an owner approves publication."
+    },
+    "dedhed": {
+      "name": "Dedhed",
+      "catalog_slug": "dedhed",
+      "audience_hypothesis": "Readers and listeners exploring this specific archive collection.",
+      "positioning": "A limited public pilot for concert-tape listening and a shared schedule.",
+      "claim_ids": [
+        "C-PORTFOLIO-DEDHED-20261105"
+      ],
+      "cta": {
+        "action": "Read the project introduction and its availability",
+        "url": "https://subcult.tv/products/dedhed"
+      },
+      "pillars": [
+        {
+          "id": "dedhed-current-work",
+          "story": "Show the current project, its purpose and how a visitor can use it.",
+          "asset": "Use the selected current capture with its evidence caption, or a clearly labeled source-based diagram. Do not substitute a landing screenshot for an authenticated feature demonstration."
+        }
+      ],
+      "first_use_check": "Open the project introduction, follow its bounded next action, and confirm the stated access before preparing a draft.",
+      "limits": "Remove the unsupported exact count of two recordings; retain reviewed-per-recording availability wording.",
+      "measurement": "Manual journey checks and concrete feedback. No analytics, audience size or conversion baseline is assumed.",
+      "baseline": "Unavailable; record observations before drawing a comparison.",
+      "channels": [
+        "studio roundup",
+        "project introduction"
+      ],
+      "automation": "manual evidence review before any automatic showcase",
+      "review_decision": "Draft only. Recheck current source and visitor access before an owner approves publication."
+    },
+    "lineage": {
+      "name": "Lineage",
+      "catalog_slug": "lineage",
+      "audience_hypothesis": "Readers and listeners exploring this specific archive collection.",
+      "positioning": "Browse live recordings with their source credits and recording lineage.",
+      "claim_ids": [
+        "C-PORTFOLIO-LINEAGE-20261105"
+      ],
+      "cta": {
+        "action": "Read the project introduction and its availability",
+        "url": "https://subcult.tv/products/lineage"
+      },
+      "pillars": [
+        {
+          "id": "lineage-current-work",
+          "story": "Show the current project, its purpose and how a visitor can use it.",
+          "asset": "Use the selected current capture with its evidence caption, or a clearly labeled source-based diagram. Do not substitute a landing screenshot for an authenticated feature demonstration."
+        }
+      ],
+      "first_use_check": "Open the project introduction, follow its bounded next action, and confirm the stated access before preparing a draft.",
+      "limits": "Keep source/credits/lineage and indexed-versus-playable distinction.",
+      "measurement": "Manual journey checks and concrete feedback. No analytics, audience size or conversion baseline is assumed.",
+      "baseline": "Unavailable; record observations before drawing a comparison.",
+      "channels": [
+        "studio roundup",
+        "project introduction"
+      ],
+      "automation": "manual evidence review before any automatic showcase",
+      "review_decision": "Draft only. Recheck current source and visitor access before an owner approves publication."
+    },
+    "arkhiv-riot-grrrl": {
+      "name": "Riot Grrrl Zine Archive",
+      "catalog_slug": "arkhiv-riot-grrrl",
+      "audience_hypothesis": "Readers and listeners exploring this specific archive collection.",
+      "positioning": "A reviewed zine collection with search and a public PDF reader.",
+      "claim_ids": [
+        "C-PORTFOLIO-ARKHIV-RIOT-GRRRL-20261105"
+      ],
+      "cta": {
+        "action": "Read the project introduction and its availability",
+        "url": "https://subcult.tv/products/arkhiv-riot-grrrl"
+      },
+      "pillars": [
+        {
+          "id": "arkhiv-riot-grrrl-current-work",
+          "story": "Show the current project, its purpose and how a visitor can use it.",
+          "asset": "Use the selected current capture with its evidence caption, or a clearly labeled source-based diagram. Do not substitute a landing screenshot for an authenticated feature demonstration."
+        }
+      ],
+      "first_use_check": "Open the project introduction, follow its bounded next action, and confirm the stated access before preparing a draft.",
+      "limits": "Each PDF variant is separately reviewed; do not infer collection population or access from UI alone.",
+      "measurement": "Manual journey checks and concrete feedback. No analytics, audience size or conversion baseline is assumed.",
+      "baseline": "Unavailable; record observations before drawing a comparison.",
+      "channels": [
+        "studio roundup",
+        "project introduction"
+      ],
+      "automation": "manual evidence review before any automatic showcase",
+      "review_decision": "Draft only. Recheck current source and visitor access before an owner approves publication."
+    },
+    "bill-nye-tv": {
+      "name": "Bill Nye TV",
+      "catalog_slug": "bill-nye-tv",
+      "audience_hypothesis": "Readers and listeners exploring this specific archive collection.",
+      "positioning": "An independent episode archive and scheduled science-TV replay viewer.",
+      "claim_ids": [
+        "C-PORTFOLIO-BILL-NYE-TV-20261105"
+      ],
+      "cta": {
+        "action": "Read the project introduction and its availability",
+        "url": "https://subcult.tv/products/bill-nye-tv"
+      },
+      "pillars": [
+        {
+          "id": "bill-nye-tv-current-work",
+          "story": "Show the current project, its purpose and how a visitor can use it.",
+          "asset": "Use the selected current capture with its evidence caption, or a clearly labeled source-based diagram. Do not substitute a landing screenshot for an authenticated feature demonstration."
+        }
+      ],
+      "first_use_check": "Open the project introduction, follow its bounded next action, and confirm the stated access before preparing a draft.",
+      "limits": "Keep independent/unaffiliated and source-MP4 language; replay operation needs runtime proof.",
+      "measurement": "Manual journey checks and concrete feedback. No analytics, audience size or conversion baseline is assumed.",
+      "baseline": "Unavailable; record observations before drawing a comparison.",
+      "channels": [
+        "studio roundup",
+        "project introduction"
+      ],
+      "automation": "manual evidence review before any automatic showcase",
+      "review_decision": "Draft only. Recheck current source and visitor access before an owner approves publication."
+    },
+    "democracy-now-tv": {
+      "name": "Democracy Now! broadcast archive",
+      "catalog_slug": "democracy-now-tv",
+      "audience_hypothesis": "Readers and listeners exploring this specific archive collection.",
+      "positioning": "An independent broadcast archive and replay viewer using source streams.",
+      "claim_ids": [
+        "C-PORTFOLIO-DEMOCRACY-NOW-TV-20261105"
+      ],
+      "cta": {
+        "action": "Read the project introduction and its availability",
+        "url": "https://subcult.tv/products/democracy-now-tv"
+      },
+      "pillars": [
+        {
+          "id": "democracy-now-tv-current-work",
+          "story": "Show the current project, its purpose and how a visitor can use it.",
+          "asset": "Use the selected current capture with its evidence caption, or a clearly labeled source-based diagram. Do not substitute a landing screenshot for an authenticated feature demonstration."
+        }
+      ],
+      "first_use_check": "Open the project introduction, follow its bounded next action, and confirm the stated access before preparing a draft.",
+      "limits": "Keep source-streaming and unaffiliated boundaries.",
+      "measurement": "Manual journey checks and concrete feedback. No analytics, audience size or conversion baseline is assumed.",
+      "baseline": "Unavailable; record observations before drawing a comparison.",
+      "channels": [
+        "studio roundup",
+        "project introduction"
+      ],
+      "automation": "manual evidence review before any automatic showcase",
+      "review_decision": "Draft only. Recheck current source and visitor access before an owner approves publication."
+    },
+    "patstack": {
+      "name": "patstack",
+      "catalog_slug": "patstack",
+      "audience_hypothesis": "People selecting maintained agent skills with Subsets.",
+      "positioning": "The maintained agent-skill collection used with Subsets.",
+      "claim_ids": [
+        "C-PORTFOLIO-PATSTACK-20261105"
+      ],
+      "cta": {
+        "action": "Read the project introduction and its availability",
+        "url": "https://subcult.tv/products/patstack"
+      },
+      "pillars": [
+        {
+          "id": "patstack-current-work",
+          "story": "Show the current project, its purpose and how a visitor can use it.",
+          "asset": "Use the selected current capture with its evidence caption, or a clearly labeled source-based diagram. Do not substitute a landing screenshot for an authenticated feature demonstration."
+        }
+      ],
+      "first_use_check": "Open the project introduction, follow its bounded next action, and confirm the stated access before preparing a draft.",
+      "limits": "A maintained collection of agent skills and profiles. Subsets can obtain its optional @subcult/patstack pack; describe that packaged relationship without implying every repository skill is in the published alpha.",
+      "measurement": "Manual journey checks and concrete feedback. No analytics, audience size or conversion baseline is assumed.",
+      "baseline": "Unavailable; record observations before drawing a comparison.",
+      "channels": [
+        "studio roundup",
+        "project introduction"
+      ],
+      "automation": "manual evidence review before any automatic showcase",
+      "review_decision": "Draft only. Recheck current source and visitor access before an owner approves publication."
+    },
+    "ytclip": {
+      "name": "ytclip",
+      "catalog_slug": "ytclip",
+      "audience_hypothesis": "People who use local command-line media tools.",
+      "positioning": "Download a YouTube video or a timestamped clip with a local command.",
+      "claim_ids": [
+        "C-PORTFOLIO-YTCLIP-20261105"
+      ],
+      "cta": {
+        "action": "Read the project introduction and its availability",
+        "url": "https://subcult.tv/products/ytclip"
+      },
+      "pillars": [
+        {
+          "id": "ytclip-current-work",
+          "story": "Show the current project, its purpose and how a visitor can use it.",
+          "asset": "Use the selected current capture with its evidence caption, or a clearly labeled source-based diagram. Do not substitute a landing screenshot for an authenticated feature demonstration."
+        }
+      ],
+      "first_use_check": "Open the project introduction, follow its bounded next action, and confirm the stated access before preparing a draft.",
+      "limits": "A local Bash command for downloading a full YouTube video or cutting a timestamped clip, using yt-dlp and ffmpeg installed on the user’s machine.",
+      "measurement": "Manual journey checks and concrete feedback. No analytics, audience size or conversion baseline is assumed.",
+      "baseline": "Unavailable; record observations before drawing a comparison.",
+      "channels": [
+        "studio roundup",
+        "project introduction"
+      ],
+      "automation": "manual evidence review before any automatic showcase",
+      "review_decision": "Draft only. Recheck current source and visitor access before an owner approves publication."
+    },
+    "twitchdl": {
+      "name": "twitchdl",
+      "catalog_slug": "twitchdl",
+      "audience_hypothesis": "People who use local command-line media tools.",
+      "positioning": "A local Go CLI for Twitch clip, VOD and live-stream downloads.",
+      "claim_ids": [
+        "C-PORTFOLIO-TWITCHDL-20261105"
+      ],
+      "cta": {
+        "action": "Read the project introduction and its availability",
+        "url": "https://subcult.tv/products/twitchdl"
+      },
+      "pillars": [
+        {
+          "id": "twitchdl-current-work",
+          "story": "Show the current project, its purpose and how a visitor can use it.",
+          "asset": "Use the selected current capture with its evidence caption, or a clearly labeled source-based diagram. Do not substitute a landing screenshot for an authenticated feature demonstration."
+        }
+      ],
+      "first_use_check": "Open the project introduction, follow its bounded next action, and confirm the stated access before preparing a draft.",
+      "limits": "A local Go command for downloading Twitch clips or VODs and recording a live channel. It accepts a URL/channel, has dependency diagnostics, and can wait for a stream; discovery and account-authenticated workflows are not current commands.",
+      "measurement": "Manual journey checks and concrete feedback. No analytics, audience size or conversion baseline is assumed.",
+      "baseline": "Unavailable; record observations before drawing a comparison.",
+      "channels": [
+        "studio roundup",
+        "project introduction"
+      ],
+      "automation": "manual evidence review before any automatic showcase",
+      "review_decision": "Draft only. Recheck current source and visitor access before an owner approves publication."
+    },
+    "clustr-galaxy": {
+      "name": "Clustr Galaxy",
+      "catalog_slug": "clustr-galaxy",
+      "audience_hypothesis": "People following a controller-oriented Unity prototype in development.",
+      "positioning": "A controller-first Unity client for exploring Clustr data as a flyable galaxy.",
+      "claim_ids": [
+        "C-PORTFOLIO-CLUSTR-GALAXY-20261105"
+      ],
+      "cta": {
+        "action": "Read the project introduction and its availability",
+        "url": "https://subcult.tv/products/clustr-galaxy"
+      },
+      "pillars": [
+        {
+          "id": "clustr-galaxy-current-work",
+          "story": "Show the current project, its purpose and how a visitor can use it.",
+          "asset": "Use the selected current capture with its evidence caption, or a clearly labeled source-based diagram. Do not substitute a landing screenshot for an authenticated feature demonstration."
+        }
+      ],
+      "first_use_check": "Open the project introduction, follow its bounded next action, and confirm the stated access before preparing a draft.",
+      "limits": "A controller-oriented Unity prototype for exploring community data as a galaxy. Linux builds and a public beta are not currently qualified: the head CI requires a native Unity 6000.4.10f1 runner that is not enabled.",
+      "measurement": "Manual journey checks and concrete feedback. No analytics, audience size or conversion baseline is assumed.",
+      "baseline": "Unavailable; record observations before drawing a comparison.",
+      "channels": [
+        "studio roundup",
+        "project introduction"
+      ],
+      "automation": "manual evidence review before any automatic showcase",
+      "review_decision": "Draft only. Recheck current source and visitor access before an owner approves publication."
     }
   }
 }

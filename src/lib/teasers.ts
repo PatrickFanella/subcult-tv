@@ -13,18 +13,6 @@ export interface Teaser {
 
 export const TEASERS: Teaser[] = [
   {
-    id: 'untitled-game',
-    label: 'Untitled game',
-    medium: 'Game / first-person mystery',
-    summary:
-      'After the collapse, the radio stays on all night. Log every call and initial it. Lately the calls keep leading back to the people who took you in.',
-    art: {
-      kind: 'image',
-      src: '/teasers/game-radio-desk.webp',
-      alt: 'A desk lamp lights an old radio set in a dark room. A note on the wall reads “Log every call. Initial it.”',
-    },
-  },
-  {
     id: 'untitled-audio',
     label: 'Untitled audio show',
     medium: 'Audio / monologue',

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { getAllPageMeta, jsonLdDocument, metaTags } from '@/lib/seo';
+import { getShowcaseProducts } from '@/lib/showcase';
 
 // Files in public/, keyed like '../../public/og/clpr.jpg'.
 const publicImages = new Set(
@@ -14,9 +15,19 @@ describe('page metadata', () => {
   it('covers the static pages and every product', () => {
     const paths = pages.map((meta) => meta.path);
     expect(paths).toEqual(
-      expect.arrayContaining(['/', '/products', '/about', '/contact', '/support', '/newsletter']),
+      expect.arrayContaining([
+        '/',
+        '/products',
+        '/about',
+        '/contact',
+        '/privacy',
+        '/support',
+        '/newsletter',
+      ]),
     );
-    expect(paths.filter((path) => path.startsWith('/products/'))).toHaveLength(24);
+    expect(paths.filter((path) => path.startsWith('/products/'))).toHaveLength(
+      getShowcaseProducts({ includeUnlisted: true }).length,
+    );
   });
 
   it.each(pages.map((meta) => [meta.path, meta] as const))(
@@ -29,9 +40,9 @@ describe('page metadata', () => {
     },
   );
 
-  it('gives each product its own social image and SoftwareApplication data', () => {
+  it('gives each product an existing social image and SoftwareApplication data', () => {
     for (const meta of pages.filter((page) => page.path.startsWith('/products/'))) {
-      expect(meta.image).toMatch(/^\/og\/.+\.jpg$/);
+      expect(publicImages.has(meta.image)).toBe(true);
       const ld = JSON.parse(jsonLdDocument(meta)!);
       expect(ld['@graph'][0]['@type']).toBe('SoftwareApplication');
       const breadcrumbs = ld['@graph'].find(
@@ -39,7 +50,9 @@ describe('page metadata', () => {
       );
       expect(breadcrumbs.itemListElement.at(-1).item).toBe(`https://subcult.tv${meta.path}`);
       const tags = metaTags(meta);
-      expect(tags.find((tag) => tag.key === 'og:image:type')?.content).toBe('image/jpeg');
+      expect(tags.find((tag) => tag.key === 'og:image:type')?.content).toBe(
+        meta.image.endsWith('.jpg') ? 'image/jpeg' : 'image/png',
+      );
     }
   });
 
