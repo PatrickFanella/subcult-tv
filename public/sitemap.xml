@@ -21,6 +21,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://subcult.tv/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://subcult.tv/support</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -39,7 +44,13 @@
     <loc>https://subcult.tv/products/arkhiv</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/products/arkhiv-riot-grrrl</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://subcult.tv/products/backline</loc>
@@ -48,16 +59,46 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://subcult.tv/products/bill-nye-tv</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://subcult.tv/products/chatty-cat</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://subcult.tv/products/clpr</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/products/clustr-galaxy</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/products/commons</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/products/dedhed</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/products/democracy-now-tv</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://subcult.tv/products/hasanara</loc>
@@ -81,6 +122,12 @@
     <loc>https://subcult.tv/products/left-field</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/products/lineage</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
@@ -123,7 +170,13 @@
     <loc>https://subcult.tv/products/patchwork</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/products/patstack</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://subcult.tv/products/pirs</loc>
@@ -159,7 +212,13 @@
     <loc>https://subcult.tv/products/tadooer</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/products/the-common-house</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://subcult.tv/products/tmux-popups</loc>
@@ -174,9 +233,21 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://subcult.tv/products/twitchdl</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://subcult.tv/products/undertow</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://subcult.tv/products/ytclip</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

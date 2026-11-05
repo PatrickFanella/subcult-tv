@@ -4,6 +4,8 @@ import { afterEach, expect, it, vi } from 'vitest';
 import AdminDashboard from '@/pages/admin/AdminDashboard';
 import LibraryMarkdown from '@/components/admin/LibraryMarkdown';
 import Projects from '@/pages/Projects';
+import { applyApprovedSnapshot } from '@/lib/use-showcase-products';
+import { getShowcaseProducts } from '@/lib/showcase';
 import { ProjectCatalogContext } from '@/context/ProjectCatalogContext';
 import type { APIProject } from '@/lib/api';
 vi.mock('@/lib/api', () => ({
@@ -78,7 +80,14 @@ it('keeps curated product copy and takes only status and URL from approved snaps
   );
   expect(screen.queryByRole('heading', { name: 'Reviewed clip library' })).not.toBeInTheDocument();
   expect(screen.queryByText('Reviewed public summary')).not.toBeInTheDocument();
-  const clpr = screen.getByRole('article', { name: 'clpr' });
-  expect(within(clpr).getByText('◐ INCUBATING')).toBeInTheDocument();
-  expect(screen.getByRole('heading', { name: 'Patchwork' })).toBeInTheDocument();
+  const clpr = screen.getByText('clpr').closest('a')!;
+  expect(within(clpr).getByText('Public web app')).toBeInTheDocument();
+  expect(screen.getByText('Patchwork')).toBeInTheDocument();
+  const applied = applyApprovedSnapshot(
+    getShowcaseProducts().find((p) => p.project.slug === 'clpr')!,
+    approved[0],
+  );
+  expect(applied.project.status).toBe('incubating');
+  expect(applied.project.url).toBe('https://clips.example.test');
+  expect(applied.availability).toBe('Public web app');
 });

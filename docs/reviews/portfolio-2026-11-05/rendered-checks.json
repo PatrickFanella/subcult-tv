@@ -1,0 +1,1671 @@
+{
+  "observedAt": "2026-11-05T18:50:56.911Z",
+  "server": "Local production build served with route-specific prerendered HTML",
+  "viewportWidths": [
+    320,
+    390,
+    1440
+  ],
+  "result": "PASS",
+  "pageChecks": [
+    {
+      "path": "/",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "TOOLS FOR THE CULTURE\nWE BUILD TOGETHER.",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/undertow-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Undertow: Current editor with the Neon template, an original sample tone and a custom SUBCULT title."
+        },
+        {
+          "src": "/screenshots/kork-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Kork: Public landing with the pinned-card identity and link-page features."
+        },
+        {
+          "src": "/screenshots/clpr-2026-11-05.webp",
+          "loaded": true,
+          "alt": "clpr: Populated trending clip feed with creators, playback, topics and tags."
+        },
+        {
+          "src": "/screenshots/hasanara-2026-11-05.webp",
+          "loaded": true,
+          "alt": "HasanAra: Transcript search results for labor, grouped by broadcast with passages and timestamps."
+        }
+      ],
+      "overflows": [],
+      "lazyLoadingCheck": "Scrolled the fourth lead into view; its lazy image decoded successfully."
+    },
+    {
+      "path": "/products",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "PRODUCTS",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/undertow",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "UNDERTOW",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/undertow-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Undertow: Current editor with the Neon template, an original sample tone and a custom SUBCULT title.",
+          "caption": "Live editor / local sample project / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/undertow-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/kork",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "kork",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/kork-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Kork: Public landing with the pinned-card identity and link-page features.",
+          "caption": "Public Kork landing page / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/kork-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/clpr",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "clpr",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/clpr-2026-11-05.webp",
+          "loaded": true,
+          "alt": "clpr: Populated trending clip feed with creators, playback, topics and tags.",
+          "caption": "Public clip feed / optional cookies rejected / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/clpr-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/hasanara",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "HasanAra",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/hasanara-2026-11-05.webp",
+          "loaded": true,
+          "alt": "HasanAra: Transcript search results for labor, grouped by broadcast with passages and timestamps.",
+          "caption": "Public transcript search for “labor” / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/hasanara-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/rekolekt",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "rekolekt",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/diagrams/rekolekt-flow-2026-11-05.svg",
+          "loaded": true,
+          "alt": "Diagram: recordings pass through Rekolekt’s transcription and search API to timestamped passages and the independent HasanAra frontend.",
+          "caption": "Archive backend and HasanAra frontend / new implementation diagram · View full size ↗",
+          "fullSizeHref": "/diagrams/rekolekt-flow-2026-11-05.svg"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/chatty-cat",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "Chatty Cat",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/chatty-cat-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Chatty Cat: Current anonymous workspace with the hasanabi chat log, emotes and sign-in controls.",
+          "caption": "Public chat workspace / anonymous viewing / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/chatty-cat-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/commons",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "COMMONS",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/commons-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Commons: Project discovery with curated references, categories and software-alternative links.",
+          "caption": "Public project discovery / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/commons-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/headcount",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "HEADCOUNT",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/headcount-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Headcount: Engagement map plotting recently scored streams by viewers and chatters, with a typical-range band.",
+          "caption": "Public engagement map / provisional signals / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/headcount-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/left-field",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "LEFT FIELD",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/left-field-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Left Field: Priority index with its model date, evidence filters, component scores and stated coverage.",
+          "caption": "Public research index / provisional versioned scores / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/left-field-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/arkhiv",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "Arkhiv",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/arkhiv-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Arkhiv: Populated mixed-format catalogue with collection, media, creator and date filters.",
+          "caption": "Public mixed-format catalogue / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/arkhiv-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/dedhed",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "DEDHED",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/dedhed-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Dedhed: Two-tape public pilot with its tape rack, schedule and active muted replay player.",
+          "caption": "Public listening pilot / scheduled replay selected / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/dedhed-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/lineage",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "LINEAGE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/lineage-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Lineage: Live-recording catalogue with artist discovery, metadata search and recording-credit context.",
+          "caption": "Public catalogue preview / recording availability varies / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/lineage-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/arkhiv-riot-grrrl",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "RIOT GRRRL ZINE ARCHIVE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/arkhiv-riot-grrrl-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Riot Grrrl Zine Archive: Pink collage interface with a featured zine and collection navigation.",
+          "caption": "Public zine collection / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/arkhiv-riot-grrrl-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/bill-nye-tv",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "BILL NYE TV",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/bill-nye-tv-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Bill Nye TV: Independent episode viewer with a science-TV frame and scheduled archive replay controls.",
+          "caption": "Independent archive viewer / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/bill-nye-tv-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/democracy-now-tv",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "DEMOCRACY NOW! BROADCAST ARCHIVE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/democracy-now-tv-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Democracy Now! broadcast archive: Independent broadcast archive with a source image and shared replay schedule.",
+          "caption": "Independent broadcast archive / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/democracy-now-tv-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/tadooer",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "Tadooer",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/tadooer-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Tadooer: Current Today view with synthetic tasks and calendar blocks in an isolated local instance.",
+          "caption": "Current Today view / isolated local instance with synthetic sample data / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/tadooer-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/subsets",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "subsets",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/subsets-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Subsets: Actual terminal render from source 0.2.0-alpha.6, using six synthetic skills.",
+          "caption": "Actual terminal render / sample skills / source 0.2.0-alpha.6 · View full size ↗",
+          "fullSizeHref": "/screenshots/subsets-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/patstack",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "PATSTACK",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/metronome-tuner",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "Metronome + Tuner",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/obsidian-plugin-metronome-tuner-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Metronome documentation view, labeled Tempo & Tune, with a 240 BPM readout and tempo controls.",
+          "caption": "Repository documentation image / current source / not a fresh Obsidian capture · View full size ↗",
+          "fullSizeHref": "/screenshots/obsidian-plugin-metronome-tuner-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/super-productivity-mcp",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "super-productivity-mcp",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/diagrams/super-productivity-mcp-flow-2026-11-05.svg",
+          "loaded": true,
+          "alt": "Diagram of an assistant connecting through a local MCP server and companion plugin bridge to Super Productivity.",
+          "caption": "Local MCP server and companion plugin / new integration diagram · View full size ↗",
+          "fullSizeHref": "/diagrams/super-productivity-mcp-flow-2026-11-05.svg"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/ytclip",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "YTCLIP",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/twitchdl",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "TWITCHDL",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/tmux-popups",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "tmux-popups",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/tmux-popups-2026-11-05.webp",
+          "loaded": true,
+          "alt": "tmux-popups: Current generated CLI help excerpt, showing direct bindings and quick-menu keys.",
+          "caption": "Actual CLI help excerpt / disposable small-profile environment / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/tmux-popups-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/patchwork",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "Patchwork",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/patchwork-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Patchwork: Pre-alpha landing with its demonstration notice and public-resource directory preview.",
+          "caption": "Public pre-alpha demonstration / not for real requests / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/patchwork-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/clustr-galaxy",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "CLUSTR GALAXY",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/the-common-house",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "THE COMMON HOUSE",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/backline",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "BACKLINE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/backline-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Backline: Private-pilot landing with illustrative welcome, moderation and support workflows.",
+          "caption": "Public pilot landing / illustrative workflows, not a dashboard / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/backline-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/prichal",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "PRICHAL",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/prichal-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Prichal: Managed-hosting preview landing with an explicit public sign-up closure notice.",
+          "caption": "Public preview landing / sign-up closed / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/prichal-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/pirs",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "PIRS",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/diagrams/pirs-flow-2026-11-05.svg",
+          "loaded": true,
+          "alt": "Diagram of PDS events passing through an opt-in private bridge to a separate Wasmtime host. Production plugin support is not qualified.",
+          "caption": "Experimental host architecture / new implementation diagram · View full size ↗",
+          "fullSizeHref": "/diagrams/pirs-flow-2026-11-05.svg"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/subcult-os",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "Subcult OS",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/subcult-os-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Subcult OS: Public event-discovery interface showing the current empty listings state.",
+          "caption": "Public event discovery / no published listings in this capture / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/subcult-os-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "TOOLS FOR THE CULTURE\nWE BUILD TOGETHER.",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/undertow-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Undertow: Current editor with the Neon template, an original sample tone and a custom SUBCULT title."
+        },
+        {
+          "src": "/screenshots/kork-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Kork: Public landing with the pinned-card identity and link-page features."
+        },
+        {
+          "src": "/screenshots/clpr-2026-11-05.webp",
+          "loaded": true,
+          "alt": "clpr: Populated trending clip feed with creators, playback, topics and tags."
+        },
+        {
+          "src": "/screenshots/hasanara-2026-11-05.webp",
+          "loaded": true,
+          "alt": "HasanAra: Transcript search results for labor, grouped by broadcast with passages and timestamps."
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "PRODUCTS",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/undertow",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "UNDERTOW",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/undertow-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Undertow: Current editor with the Neon template, an original sample tone and a custom SUBCULT title.",
+          "caption": "Live editor / local sample project / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/undertow-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/kork",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "kork",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/kork-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Kork: Public landing with the pinned-card identity and link-page features.",
+          "caption": "Public Kork landing page / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/kork-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/clpr",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "clpr",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/clpr-2026-11-05.webp",
+          "loaded": true,
+          "alt": "clpr: Populated trending clip feed with creators, playback, topics and tags.",
+          "caption": "Public clip feed / optional cookies rejected / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/clpr-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/hasanara",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "HasanAra",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/hasanara-2026-11-05.webp",
+          "loaded": true,
+          "alt": "HasanAra: Transcript search results for labor, grouped by broadcast with passages and timestamps.",
+          "caption": "Public transcript search for “labor” / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/hasanara-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/rekolekt",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "rekolekt",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/diagrams/rekolekt-flow-2026-11-05.svg",
+          "loaded": true,
+          "alt": "Diagram: recordings pass through Rekolekt’s transcription and search API to timestamped passages and the independent HasanAra frontend.",
+          "caption": "Archive backend and HasanAra frontend / new implementation diagram · View full size ↗",
+          "fullSizeHref": "/diagrams/rekolekt-flow-2026-11-05.svg"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/chatty-cat",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Chatty Cat",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/chatty-cat-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Chatty Cat: Current anonymous workspace with the hasanabi chat log, emotes and sign-in controls.",
+          "caption": "Public chat workspace / anonymous viewing / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/chatty-cat-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/commons",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "COMMONS",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/commons-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Commons: Project discovery with curated references, categories and software-alternative links.",
+          "caption": "Public project discovery / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/commons-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/headcount",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "HEADCOUNT",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/headcount-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Headcount: Engagement map plotting recently scored streams by viewers and chatters, with a typical-range band.",
+          "caption": "Public engagement map / provisional signals / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/headcount-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/left-field",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "LEFT FIELD",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/left-field-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Left Field: Priority index with its model date, evidence filters, component scores and stated coverage.",
+          "caption": "Public research index / provisional versioned scores / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/left-field-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/arkhiv",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Arkhiv",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/arkhiv-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Arkhiv: Populated mixed-format catalogue with collection, media, creator and date filters.",
+          "caption": "Public mixed-format catalogue / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/arkhiv-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/dedhed",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "DEDHED",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/dedhed-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Dedhed: Two-tape public pilot with its tape rack, schedule and active muted replay player.",
+          "caption": "Public listening pilot / scheduled replay selected / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/dedhed-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/lineage",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "LINEAGE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/lineage-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Lineage: Live-recording catalogue with artist discovery, metadata search and recording-credit context.",
+          "caption": "Public catalogue preview / recording availability varies / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/lineage-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/arkhiv-riot-grrrl",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "RIOT GRRRL ZINE ARCHIVE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/arkhiv-riot-grrrl-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Riot Grrrl Zine Archive: Pink collage interface with a featured zine and collection navigation.",
+          "caption": "Public zine collection / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/arkhiv-riot-grrrl-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/bill-nye-tv",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "BILL NYE TV",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/bill-nye-tv-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Bill Nye TV: Independent episode viewer with a science-TV frame and scheduled archive replay controls.",
+          "caption": "Independent archive viewer / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/bill-nye-tv-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/democracy-now-tv",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "DEMOCRACY NOW! BROADCAST ARCHIVE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/democracy-now-tv-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Democracy Now! broadcast archive: Independent broadcast archive with a source image and shared replay schedule.",
+          "caption": "Independent broadcast archive / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/democracy-now-tv-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/tadooer",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Tadooer",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/tadooer-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Tadooer: Current Today view with synthetic tasks and calendar blocks in an isolated local instance.",
+          "caption": "Current Today view / isolated local instance with synthetic sample data / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/tadooer-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/subsets",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "subsets",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/subsets-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Subsets: Actual terminal render from source 0.2.0-alpha.6, using six synthetic skills.",
+          "caption": "Actual terminal render / sample skills / source 0.2.0-alpha.6 · View full size ↗",
+          "fullSizeHref": "/screenshots/subsets-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/patstack",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "PATSTACK",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/metronome-tuner",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Metronome + Tuner",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/obsidian-plugin-metronome-tuner-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Metronome documentation view, labeled Tempo & Tune, with a 240 BPM readout and tempo controls.",
+          "caption": "Repository documentation image / current source / not a fresh Obsidian capture · View full size ↗",
+          "fullSizeHref": "/screenshots/obsidian-plugin-metronome-tuner-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/super-productivity-mcp",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "super-productivity-mcp",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/diagrams/super-productivity-mcp-flow-2026-11-05.svg",
+          "loaded": true,
+          "alt": "Diagram of an assistant connecting through a local MCP server and companion plugin bridge to Super Productivity.",
+          "caption": "Local MCP server and companion plugin / new integration diagram · View full size ↗",
+          "fullSizeHref": "/diagrams/super-productivity-mcp-flow-2026-11-05.svg"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/ytclip",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "YTCLIP",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/twitchdl",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "TWITCHDL",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/tmux-popups",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "tmux-popups",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/tmux-popups-2026-11-05.webp",
+          "loaded": true,
+          "alt": "tmux-popups: Current generated CLI help excerpt, showing direct bindings and quick-menu keys.",
+          "caption": "Actual CLI help excerpt / disposable small-profile environment / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/tmux-popups-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/patchwork",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Patchwork",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/patchwork-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Patchwork: Pre-alpha landing with its demonstration notice and public-resource directory preview.",
+          "caption": "Public pre-alpha demonstration / not for real requests / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/patchwork-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/clustr-galaxy",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "CLUSTR GALAXY",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/the-common-house",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "THE COMMON HOUSE",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/backline",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "BACKLINE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/backline-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Backline: Private-pilot landing with illustrative welcome, moderation and support workflows.",
+          "caption": "Public pilot landing / illustrative workflows, not a dashboard / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/backline-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/prichal",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "PRICHAL",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/prichal-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Prichal: Managed-hosting preview landing with an explicit public sign-up closure notice.",
+          "caption": "Public preview landing / sign-up closed / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/prichal-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/pirs",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "PIRS",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/diagrams/pirs-flow-2026-11-05.svg",
+          "loaded": true,
+          "alt": "Diagram of PDS events passing through an opt-in private bridge to a separate Wasmtime host. Production plugin support is not qualified.",
+          "caption": "Experimental host architecture / new implementation diagram · View full size ↗",
+          "fullSizeHref": "/diagrams/pirs-flow-2026-11-05.svg"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/subcult-os",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Subcult OS",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/subcult-os-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Subcult OS: Public event-discovery interface showing the current empty listings state.",
+          "caption": "Public event discovery / no published listings in this capture / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/subcult-os-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "TOOLS FOR THE CULTURE\nWE BUILD TOGETHER.",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/undertow-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Undertow: Current editor with the Neon template, an original sample tone and a custom SUBCULT title."
+        },
+        {
+          "src": "/screenshots/kork-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Kork: Public landing with the pinned-card identity and link-page features."
+        },
+        {
+          "src": "/screenshots/clpr-2026-11-05.webp",
+          "loaded": true,
+          "alt": "clpr: Populated trending clip feed with creators, playback, topics and tags."
+        },
+        {
+          "src": "/screenshots/hasanara-2026-11-05.webp",
+          "loaded": true,
+          "alt": "HasanAra: Transcript search results for labor, grouped by broadcast with passages and timestamps."
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "PRODUCTS",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/undertow",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "UNDERTOW",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/undertow-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Undertow: Current editor with the Neon template, an original sample tone and a custom SUBCULT title.",
+          "caption": "Live editor / local sample project / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/undertow-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/kork",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "kork",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/kork-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Kork: Public landing with the pinned-card identity and link-page features.",
+          "caption": "Public Kork landing page / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/kork-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/clpr",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "clpr",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/clpr-2026-11-05.webp",
+          "loaded": true,
+          "alt": "clpr: Populated trending clip feed with creators, playback, topics and tags.",
+          "caption": "Public clip feed / optional cookies rejected / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/clpr-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/hasanara",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "HasanAra",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/hasanara-2026-11-05.webp",
+          "loaded": true,
+          "alt": "HasanAra: Transcript search results for labor, grouped by broadcast with passages and timestamps.",
+          "caption": "Public transcript search for “labor” / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/hasanara-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/rekolekt",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "rekolekt",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/diagrams/rekolekt-flow-2026-11-05.svg",
+          "loaded": true,
+          "alt": "Diagram: recordings pass through Rekolekt’s transcription and search API to timestamped passages and the independent HasanAra frontend.",
+          "caption": "Archive backend and HasanAra frontend / new implementation diagram · View full size ↗",
+          "fullSizeHref": "/diagrams/rekolekt-flow-2026-11-05.svg"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/chatty-cat",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "Chatty Cat",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/chatty-cat-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Chatty Cat: Current anonymous workspace with the hasanabi chat log, emotes and sign-in controls.",
+          "caption": "Public chat workspace / anonymous viewing / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/chatty-cat-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/commons",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "COMMONS",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/commons-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Commons: Project discovery with curated references, categories and software-alternative links.",
+          "caption": "Public project discovery / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/commons-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/headcount",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "HEADCOUNT",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/headcount-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Headcount: Engagement map plotting recently scored streams by viewers and chatters, with a typical-range band.",
+          "caption": "Public engagement map / provisional signals / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/headcount-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/left-field",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "LEFT FIELD",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/left-field-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Left Field: Priority index with its model date, evidence filters, component scores and stated coverage.",
+          "caption": "Public research index / provisional versioned scores / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/left-field-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/arkhiv",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "Arkhiv",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/arkhiv-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Arkhiv: Populated mixed-format catalogue with collection, media, creator and date filters.",
+          "caption": "Public mixed-format catalogue / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/arkhiv-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/dedhed",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "DEDHED",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/dedhed-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Dedhed: Two-tape public pilot with its tape rack, schedule and active muted replay player.",
+          "caption": "Public listening pilot / scheduled replay selected / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/dedhed-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/lineage",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "LINEAGE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/lineage-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Lineage: Live-recording catalogue with artist discovery, metadata search and recording-credit context.",
+          "caption": "Public catalogue preview / recording availability varies / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/lineage-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/arkhiv-riot-grrrl",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "RIOT GRRRL ZINE ARCHIVE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/arkhiv-riot-grrrl-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Riot Grrrl Zine Archive: Pink collage interface with a featured zine and collection navigation.",
+          "caption": "Public zine collection / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/arkhiv-riot-grrrl-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/bill-nye-tv",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "BILL NYE TV",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/bill-nye-tv-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Bill Nye TV: Independent episode viewer with a science-TV frame and scheduled archive replay controls.",
+          "caption": "Independent archive viewer / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/bill-nye-tv-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/democracy-now-tv",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "DEMOCRACY NOW! BROADCAST ARCHIVE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/democracy-now-tv-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Democracy Now! broadcast archive: Independent broadcast archive with a source image and shared replay schedule.",
+          "caption": "Independent broadcast archive / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/democracy-now-tv-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/tadooer",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "Tadooer",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/tadooer-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Tadooer: Current Today view with synthetic tasks and calendar blocks in an isolated local instance.",
+          "caption": "Current Today view / isolated local instance with synthetic sample data / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/tadooer-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/subsets",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "subsets",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/subsets-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Subsets: Actual terminal render from source 0.2.0-alpha.6, using six synthetic skills.",
+          "caption": "Actual terminal render / sample skills / source 0.2.0-alpha.6 · View full size ↗",
+          "fullSizeHref": "/screenshots/subsets-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/patstack",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "PATSTACK",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/metronome-tuner",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "Metronome + Tuner",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/obsidian-plugin-metronome-tuner-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Metronome documentation view, labeled Tempo & Tune, with a 240 BPM readout and tempo controls.",
+          "caption": "Repository documentation image / current source / not a fresh Obsidian capture · View full size ↗",
+          "fullSizeHref": "/screenshots/obsidian-plugin-metronome-tuner-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/super-productivity-mcp",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "super-productivity-mcp",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/diagrams/super-productivity-mcp-flow-2026-11-05.svg",
+          "loaded": true,
+          "alt": "Diagram of an assistant connecting through a local MCP server and companion plugin bridge to Super Productivity.",
+          "caption": "Local MCP server and companion plugin / new integration diagram · View full size ↗",
+          "fullSizeHref": "/diagrams/super-productivity-mcp-flow-2026-11-05.svg"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/ytclip",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "YTCLIP",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/twitchdl",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "TWITCHDL",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/tmux-popups",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "tmux-popups",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/tmux-popups-2026-11-05.webp",
+          "loaded": true,
+          "alt": "tmux-popups: Current generated CLI help excerpt, showing direct bindings and quick-menu keys.",
+          "caption": "Actual CLI help excerpt / disposable small-profile environment / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/tmux-popups-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/patchwork",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "Patchwork",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/patchwork-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Patchwork: Pre-alpha landing with its demonstration notice and public-resource directory preview.",
+          "caption": "Public pre-alpha demonstration / not for real requests / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/patchwork-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/clustr-galaxy",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "CLUSTR GALAXY",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/the-common-house",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "THE COMMON HOUSE",
+      "broken": [],
+      "visuals": [],
+      "overflows": []
+    },
+    {
+      "path": "/products/backline",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "BACKLINE",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/backline-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Backline: Private-pilot landing with illustrative welcome, moderation and support workflows.",
+          "caption": "Public pilot landing / illustrative workflows, not a dashboard / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/backline-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/prichal",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "PRICHAL",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/prichal-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Prichal: Managed-hosting preview landing with an explicit public sign-up closure notice.",
+          "caption": "Public preview landing / sign-up closed / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/prichal-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/pirs",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "PIRS",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/diagrams/pirs-flow-2026-11-05.svg",
+          "loaded": true,
+          "alt": "Diagram of PDS events passing through an opt-in private bridge to a separate Wasmtime host. Production plugin support is not qualified.",
+          "caption": "Experimental host architecture / new implementation diagram · View full size ↗",
+          "fullSizeHref": "/diagrams/pirs-flow-2026-11-05.svg"
+        }
+      ],
+      "overflows": []
+    },
+    {
+      "path": "/products/subcult-os",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": "Subcult OS",
+      "broken": [],
+      "visuals": [
+        {
+          "src": "/screenshots/subcult-os-2026-11-05.webp",
+          "loaded": true,
+          "alt": "Subcult OS: Public event-discovery interface showing the current empty listings state.",
+          "caption": "Public event discovery / no published listings in this capture / November 5, 2026 · View full size ↗",
+          "fullSizeHref": "/screenshots/subcult-os-2026-11-05.webp"
+        }
+      ],
+      "overflows": []
+    }
+  ],
+  "assetChecks": [
+    {
+      "path": "/screenshots/undertow-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/kork-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/clpr-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/hasanara-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/commons-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/chatty-cat-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/headcount-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/left-field-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/arkhiv-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/dedhed-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/lineage-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/arkhiv-riot-grrrl-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/bill-nye-tv-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/democracy-now-tv-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/patchwork-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/backline-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/prichal-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/subcult-os-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/tadooer-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/subsets-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/tmux-popups-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/screenshots/obsidian-plugin-metronome-tuner-2026-11-05.webp",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/diagrams/rekolekt-flow-2026-11-05.svg",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/diagrams/pirs-flow-2026-11-05.svg",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "path": "/diagrams/super-productivity-mcp-flow-2026-11-05.svg",
+      "status": 200,
+      "hashMatches": true
+    }
+  ],
+  "limits": [
+    "Visual spot checks were performed separately; the overflow/image checks do not prove every feature of the underlying products.",
+    "Synthetic local fixtures and anonymous public interfaces only."
+  ]
+}

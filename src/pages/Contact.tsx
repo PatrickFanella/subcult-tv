@@ -2,7 +2,7 @@ import { inputClass } from '@/components/ui/TextInput';
 import { useState, type FormEvent } from 'react';
 import SEOHead from '@/components/SEOHead';
 import Button from '@/components/ui/Button';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useShowcaseProducts } from '@/lib/use-showcase-products';
 import { submitContact } from '@/lib/api';
 import { STUDIO_SOCIALS } from '@/lib/social-links';
@@ -49,6 +49,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (submitting) return;
     setSubmitting(true);
     setError('');
     try {
@@ -95,7 +96,7 @@ export default function Contact() {
                 <p className="text-bone">We have it. We’ll reply to the email address you gave.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4" aria-busy={submitting}>
                 <div>
                   <label
                     htmlFor="name"
@@ -168,7 +169,10 @@ export default function Contact() {
                 </div>
 
                 {error && !submitted && (
-                  <div className="p-3 bg-signal/10 border border-signal text-signal font-mono text-xs">
+                  <div
+                    role="alert"
+                    className="p-3 bg-ash border border-signal text-glow font-mono text-xs"
+                  >
                     <p>⚠ {error}</p>
                     <a href={mailtoUrl} className="inline-block mt-2 text-glow underline">
                       Open your message as an email draft
@@ -181,7 +185,10 @@ export default function Contact() {
                 </Button>
 
                 <p className="font-mono text-xs text-dust text-center mt-2">
-                  Your message goes to SUBCULT.
+                  Your message goes to SUBCULT.{' '}
+                  <Link to="/privacy" className="underline underline-offset-4">
+                    How we handle your message
+                  </Link>
                 </p>
               </form>
             )}

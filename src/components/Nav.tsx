@@ -1,9 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { normalizePath } from '@/lib/normalize-path';
-import { useShowcaseProducts } from '@/lib/use-showcase-products';
-import { getProductPath } from '@/lib/product-paths';
-import { getFeaturedProducts } from '@/lib/showcase';
 import { useEffects } from '@/context/useEffects';
 
 const NAV_LINKS = [
@@ -15,7 +12,6 @@ const NAV_LINKS = [
 ];
 
 export default function Nav() {
-  const products = useShowcaseProducts();
   const pathname = normalizePath(useLocation().pathname);
   // The menu remembers the path it was opened on, so a route change closes it
   // without an effect.
@@ -121,16 +117,6 @@ export default function Nav() {
         </div>
       </div>
 
-      {pathname !== '/products' && (
-        <div className="product-shortcuts" aria-label="Product shortcuts">
-          {getFeaturedProducts(products).map(({ project }) => (
-            <NavLink key={project.slug} to={getProductPath(project.slug)}>
-              {project.name}
-            </NavLink>
-          ))}
-          <NavLink to="/products">All {products.length} →</NavLink>
-        </div>
-      )}
       {/* Mobile dropdown */}
       {mobileOpen && (
         <div id={menuId} ref={menuRef} className="md:hidden border-t border-fog bg-soot">

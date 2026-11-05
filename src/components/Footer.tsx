@@ -4,7 +4,7 @@ import SupportCallout from '@/components/SupportCallout';
 import SocialLinks from '@/components/SocialLinks';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import { useShowcaseProducts } from '@/lib/use-showcase-products';
-import { getProductPath } from '@/lib/product-paths';
+import { groupProducts } from '@/lib/showcase';
 
 export default function Footer() {
   const products = useShowcaseProducts();
@@ -23,7 +23,7 @@ export default function Footer() {
               SUBCULT
             </Link>
             <p className="text-sm text-bone mt-4 mb-6">
-              Software for clips, archives, mutual aid and shows. The code is public.
+              Software for clips, archives, mutual aid and shows.
             </p>
             <ul className="space-y-2 text-sm">
               <li>
@@ -41,9 +41,9 @@ export default function Footer() {
           <div>
             <h2 className="font-mono text-xs text-bone uppercase tracking-wider mb-4">Products</h2>
             <ul className="space-y-3 text-sm">
-              {products.map(({ project }) => (
-                <li key={project.slug}>
-                  <Link to={getProductPath(project.slug)}>{project.name}</Link>
+              {groupProducts(products).map(({ group, label }) => (
+                <li key={group}>
+                  <a href={`/products#group-${group}`}>{label}</a>
                 </li>
               ))}
             </ul>
@@ -55,7 +55,8 @@ export default function Footer() {
         <div className="mt-10 pt-6 border-t border-fog flex flex-col sm:flex-row justify-between gap-4 text-xs text-bone">
           <p suppressHydrationWarning>© {new Date().getFullYear()} SUBCULT.</p>
           <div className="flex gap-6 flex-wrap">
-            <Link to="/products">All {products.length} products →</Link>
+            <Link to="/privacy">Privacy</Link>
+            <Link to="/products">Explore all projects →</Link>
             <Link to="/admin">Admin</Link>
           </div>
         </div>

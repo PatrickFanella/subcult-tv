@@ -23,6 +23,17 @@ export const PRODUCT_ROUTES: Record<string, string> = {
   'omarchy-plugin-shelfish': 'shelfish',
   'obsidian-plugin-metronome-tuner': 'metronome-tuner',
   'super-productivity-mcp': 'super-productivity-mcp',
+  commons: 'commons',
+  dedhed: 'dedhed',
+  lineage: 'lineage',
+  'arkhiv-riot-grrrl': 'arkhiv-riot-grrrl',
+  'bill-nye-tv': 'bill-nye-tv',
+  'democracy-now-tv': 'democracy-now-tv',
+  patstack: 'patstack',
+  ytclip: 'ytclip',
+  twitchdl: 'twitchdl',
+  'clustr-galaxy': 'clustr-galaxy',
+  'the-common-house': 'the-common-house',
 };
 
 export function getProductPath(slug: string): string {

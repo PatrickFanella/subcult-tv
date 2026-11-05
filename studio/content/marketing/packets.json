@@ -306,6 +306,106 @@
           "sha256": "51f78be9b88a0445ab967031ff0aebc15d14fbb47a17097998ab826f84837d34"
         }
       ]
+    },
+    "commons": {
+      "owner": "Studio introduction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/commons/packet.md",
+          "sha256": "e55292f5a865a0a42cfc119023daaf7edb8a3d50e3669f9ca5c935aa4d9f9ddc"
+        }
+      ]
+    },
+    "dedhed": {
+      "owner": "Studio introduction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/dedhed/packet.md",
+          "sha256": "68038b2a642ef8bbc85bbfe85c62ddb20de0edef5fb18870596c96cad766c1c3"
+        }
+      ]
+    },
+    "lineage": {
+      "owner": "Studio introduction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/lineage/packet.md",
+          "sha256": "b92c1d2a3a2fead8d6c4e8f4f471b7b1bb1b2bb43e5416db40732e0b23288914"
+        }
+      ]
+    },
+    "arkhiv-riot-grrrl": {
+      "owner": "Studio introduction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/arkhiv-riot-grrrl/packet.md",
+          "sha256": "6038e5eef3428d80cc8ce5ab8e829eb682de9949b99cf781ad3d30ebffbeacd8"
+        }
+      ]
+    },
+    "bill-nye-tv": {
+      "owner": "Studio introduction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/bill-nye-tv/packet.md",
+          "sha256": "e73829f16ce0b7642d173b3209721e0fae396dbda4e6226978afdf57c9c42713"
+        }
+      ]
+    },
+    "democracy-now-tv": {
+      "owner": "Studio introduction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/democracy-now-tv/packet.md",
+          "sha256": "648c71dab8b72c239bdc9967c711148516a843033dc3b534a7fb92aa610b0d74"
+        }
+      ]
+    },
+    "patstack": {
+      "owner": "Studio introduction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/patstack/packet.md",
+          "sha256": "5f951475e75089779ef306b7a2f8375dbcac0b432ca8a2eac5813d8d86ee09b8"
+        }
+      ]
+    },
+    "ytclip": {
+      "owner": "Studio introduction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/ytclip/packet.md",
+          "sha256": "e877f19deb4889a4ed5ff41b5809ddea2dfbd16db165c5460f7f33cb292c9a4b"
+        }
+      ]
+    },
+    "twitchdl": {
+      "owner": "Studio introduction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/twitchdl/packet.md",
+          "sha256": "c1e7e8687355b72b402e5efc3c91c90e480448cf44df4100de463a88b22f21d9"
+        }
+      ]
+    },
+    "clustr-galaxy": {
+      "owner": "Studio introduction; product repository owns technical claims",
+      "review_after": "2026-11-20",
+      "files": [
+        {
+          "path": "packets/clustr-galaxy/packet.md",
+          "sha256": "6952c53321d38defc0b0a2d913fdff8da6500f5acc703c9b1e439877da54cdfc"
+        }
+      ]
     }
   }
 }

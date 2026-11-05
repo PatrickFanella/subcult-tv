@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <SEOHead path="/" />
-      <section className="showcase-hero">
+      <section className="showcase-hero home-hero">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <img
             src="/brand/subcult/master.svg?v=logo-bcd-20261003"
@@ -31,33 +31,15 @@ export default function Home() {
             <div>
               <p className="text-bone text-lg leading-relaxed mb-6">
                 We make software for people who run things: a clip channel, an archive, a food run,
-                a Friday show, a desktop with too many widgets. {products.length} products so far.
-                None of them wants your attention for longer than the job takes.
+                a Friday show, a desktop with too many widgets. Start with four projects you can
+                open, then explore the rest of the workshop.
               </p>
               <div className="flex flex-wrap items-center gap-4">
-                <Button as="link" to="/products" className="support-primary">
-                  All {products.length} products →
-                </Button>
-                <Button as="a" href="#products" variant="secondary">
-                  See the products ↓
+                <Button as="a" href="#products" className="support-primary">
+                  Explore the projects ↓
                 </Button>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="subcult-product-bar">
-          <div
-            className="showcase-index max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-            aria-label="Featured products"
-          >
-            {featured.map(({ project }, index) => (
-              <a href={`#${project.slug}`} key={project.slug}>
-                <span>{String(index + 1).padStart(2, '0')}</span> {project.name}
-              </a>
-            ))}
-            <a href="#all-products">
-              <span>+{products.length - featured.length}</span> more
-            </a>
           </div>
         </div>
       </section>
@@ -80,7 +62,7 @@ export default function Home() {
         <div className="showcase-section-heading">
           <h2 id="all-products-heading">Everything we make</h2>
           <span className="font-mono text-xs text-bone">
-            {products.length} PRODUCTS / APPS, PLUGINS, TOOLS
+            APPS / ARCHIVES / TOOLS / WORK IN PROGRESS
           </span>
         </div>
         <ProductIndex products={products} />
@@ -90,10 +72,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-12">
           <div>
             <p className="showcase-eyebrow">BUILT BY SUBCULT</p>
-            <h2 className="mb-5">The code is public.</h2>
+            <h2 className="mb-5">Built by SUBCULT.</h2>
             <p className="text-bone max-w-lg mb-6">
-              Read it before you trust us. Every product page links to its repository, and each one
-              says how finished the thing is.
+              Open an app, read an archive or follow a project in development. Each page explains
+              how you can use it, with public source links where they are available.
             </p>
             <Link to="/about" className="showcase-text-link">
               Who we are →

@@ -15,6 +15,8 @@ export interface Project {
   topics: string[];
   url?: string;
   repoUrl: string;
+  /** Public source destination; null keeps an internal repository out of visitor actions. */
+  sourceUrl?: string | null;
   homepage?: string;
   lastUpdated: string;
   stars?: number;

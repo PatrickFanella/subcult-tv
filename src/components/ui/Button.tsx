@@ -30,8 +30,7 @@ type ButtonAsAnchor = ButtonBaseProps &
 type ButtonProps = ButtonAsButton | ButtonAsLink | ButtonAsAnchor;
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary:
-    'bg-signal text-void hover:bg-signal-dim border-2 border-signal hover:border-signal-dim shadow-hard',
+  primary: 'bg-signal text-void hover:bg-glow border-2 border-signal hover:border-glow shadow-hard',
   secondary: 'bg-transparent text-chalk border-2 border-chalk hover:bg-chalk hover:text-void',
   ghost: 'bg-transparent text-bone hover:text-glow border-2 border-transparent hover:border-fog',
   signal: 'bg-transparent text-signal border-2 border-signal hover:bg-signal hover:text-void',

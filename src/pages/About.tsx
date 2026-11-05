@@ -51,9 +51,10 @@ export default function About() {
           </div>
           <div className="studio-public-principles space-y-6 text-bone">
             <div>
-              <h3 className="text-glow mb-2">The code is public</h3>
+              <h3 className="text-glow mb-2">Read the work</h3>
               <p>
-                Each product links to its repository. You can see how it works and watch it change.
+                Project pages explain the current scope and link to public source where it is
+                available. Private previews and prototypes keep their limits visible.
               </p>
             </div>
             <div>

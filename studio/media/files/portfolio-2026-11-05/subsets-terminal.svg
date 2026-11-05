@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>Subsets: actual terminal render with sample skills</title>
+<rect width="1440" height="900" fill="#d9dedc"/>
+<rect x="64" y="152" width="1312" height="590" fill="#17201e" stroke="#64716c" stroke-width="2"/>
+<text xml:space="preserve" x="64" y="88" fill="#17201e" font-family="Space Grotesk" font-size="38" font-weight="700">subsets / terminal</text>
+<text xml:space="preserve" x="88" y="204" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> subsets  · by SUBCULT · discover / group / apply</text>
+<text xml:space="preserve" x="88" y="233" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> 1 Skills 2 Folders 3 Groups 4 Recovery / Search r Rescan q Quit</text>
+<text xml:space="preserve" x="88" y="262" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> Selected groups: core, creative-writing</text>
+<text xml:space="preserve" x="88" y="291" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> ┌────────────────────────────────────────────────────────────────────────────┐</text>
+<text xml:space="preserve" x="88" y="320" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> │ SKILLS · 6 entries                                                         │</text>
+<text xml:space="preserve" x="88" y="349" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> │ › [ ] editing · subsets                                                    │</text>
+<text xml:space="preserve" x="88" y="378" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> │   [ ] research · subsets                                                   │</text>
+<text xml:space="preserve" x="88" y="407" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> │   [ ] storytelling · subsets                                               │</text>
+<text xml:space="preserve" x="88" y="436" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> │   [ ] publishing · subsets                                                 │</text>
+<text xml:space="preserve" x="88" y="465" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> │   [ ] testing · subsets                                                    │</text>
+<text xml:space="preserve" x="88" y="494" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> │   [ ] typescript · subsets                                                 │</text>
+<text xml:space="preserve" x="88" y="523" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> └────────────────────────────────────────────────────────────────────────────┘</text>
+<text xml:space="preserve" x="88" y="552" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> Review structure, clarity and voice in a draft.</text>
+<text xml:space="preserve" x="88" y="581" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> Space Pick/toggle · g Create group · a Adopt folder · p Preview/apply · u</text>
+<text xml:space="preserve" x="88" y="610" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> Rollback</text>
+<text xml:space="preserve" x="88" y="639" fill="#e3efe9" font-family="JetBrains Mono" font-size="23" font-weight="400"> Choose skills or groups. Preview the changes before applying.</text>
+<text xml:space="preserve" x="64" y="808" fill="#17201e" font-family="JetBrains Mono" font-size="23" font-weight="400">ACTUAL INK RENDER / SIX SYNTHETIC SAMPLE SKILLS</text>
+<text xml:space="preserve" x="64" y="854" fill="#17201e" font-family="JetBrains Mono" font-size="20" font-weight="400">Source 80e68ab00a23 / 0.2.0-alpha.6</text>
+</svg>

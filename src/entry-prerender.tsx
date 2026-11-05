@@ -11,6 +11,7 @@ import Projects from '@/pages/Projects';
 import ProductLanding from '@/pages/ProductLanding';
 import About from '@/pages/About';
 import Contact from '@/pages/Contact';
+import Privacy from '@/pages/Privacy';
 import Patreon from '@/pages/Patreon';
 import Newsletter from '@/pages/Newsletter';
 import NewsletterConfirmed from '@/pages/NewsletterConfirmed';
@@ -33,6 +34,7 @@ export function render(path: string): string {
                 <Route path="products/:slug" element={<ProductLanding />} />
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="privacy" element={<Privacy />} />
                 <Route path="support" element={<Patreon />} />
                 <Route path="development" element={<DevelopmentLog />} />
                 <Route path="newsletter" element={<Newsletter />} />

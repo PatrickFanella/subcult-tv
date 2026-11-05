@@ -58,7 +58,7 @@ beforeEach(() => {
 afterEach(cleanup);
 
 describe('navigation clarity', () => {
-  it('labels the /about link About and keeps the directory link last in the shortcuts', () => {
+  it('keeps the main destinations without a second product shortcut row', () => {
     render(
       <MemoryRouter initialEntries={['/']}>
         <EffectsProvider>
@@ -72,15 +72,16 @@ describe('navigation clarity', () => {
       '/about',
     );
     expect(within(main).queryByRole('link', { name: 'Studio' })).not.toBeInTheDocument();
-    const shortcuts = main.querySelector('.product-shortcuts')!;
-    const links = within(shortcuts as HTMLElement).getAllByRole('link');
-    expect(links.at(-1)).toHaveTextContent(`All ${products.length} →`);
-    expect(links.at(-1)).toHaveAttribute('href', '/products');
+    expect(within(main).getByRole('link', { name: 'Products' })).toHaveAttribute(
+      'href',
+      '/products',
+    );
+    expect(main.querySelector('.product-shortcuts')).toBeNull();
   });
 });
 
 describe('home hero', () => {
-  it('offers the full directory as a primary link with the catalog count', () => {
+  it('leads with the four selected projects before the complete catalogue', () => {
     render(
       <MemoryRouter>
         <EffectsProvider>
@@ -88,99 +89,34 @@ describe('home hero', () => {
         </EffectsProvider>
       </MemoryRouter>,
     );
-    const link = screen.getByRole('link', { name: `All ${products.length} products →` });
-    expect(link).toHaveAttribute('href', '/products');
+    const link = screen.getByRole('link', { name: 'Explore the projects ↓' });
+    expect(link).toHaveAttribute('href', '#products');
     expect(link.className).toContain('support-primary');
-    expect(screen.getByRole('link', { name: 'See the products ↓' })).toHaveAttribute(
-      'href',
-      '#products',
-    );
+    const catalog = screen.getByRole('region', { name: 'Everything we make' });
+    const showcase = screen.getByRole('region', { name: 'The products' });
+    expect(within(catalog).getAllByRole('listitem')).toHaveLength(products.length);
+    expect(
+      showcase.compareDocumentPosition(catalog) & Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy();
   });
 });
 
-describe('directory status badges', () => {
-  it('marks non-active products and leaves active ones unlabelled', () => {
+describe('directory access labels', () => {
+  it('distinguishes public apps, self-hosted software and private previews', () => {
     render(
       <MemoryRouter>
         <ProductIndex products={products} />
       </MemoryRouter>,
     );
-    const incubating = products.filter(({ project }) => project.status === 'incubating');
-    const active = products.filter(({ project }) => project.status === 'active');
-    expect(incubating.length).toBeGreaterThan(0);
-    expect(screen.getAllByText('◐ INCUBATING')).toHaveLength(incubating.length);
-    expect(screen.queryByText('● ACTIVE')).not.toBeInTheDocument();
-    const activeItem = screen
-      .getByText(active[0].project.name)
-      .closest('.product-index-item') as HTMLElement;
-    expect(within(activeItem).queryByText(/INCUBATING|ARCHIVED/)).not.toBeInTheDocument();
+    expect(screen.getByText('Public web app')).toBeInTheDocument();
+    expect(screen.getByText('Self-hosted / single owner')).toBeInTheDocument();
+    expect(screen.getByText('Private preview / no sign-up')).toBeInTheDocument();
+    expect(screen.getByText('Unity prototype / no public build')).toBeInTheDocument();
   });
 });
 
-describe('product landing product-nav', () => {
-  it('marks the current product and scrolls it into view only when it is off screen', () => {
-    const scrollIntoView = vi.fn();
-    Element.prototype.scrollIntoView = scrollIntoView;
-    const current = products.find(({ project }) => project.slug === 'clpr')!;
-    // jsdom has no layout: fake an overflowing list whose current link sits past the right edge.
-    const widths = vi
-      .spyOn(HTMLElement.prototype, 'scrollWidth', 'get')
-      .mockImplementation(function (this: HTMLElement) {
-        return this.matches('.landing-product-nav > div') ? 2000 : 0;
-      });
-    const clientWidth = vi
-      .spyOn(HTMLElement.prototype, 'clientWidth', 'get')
-      .mockImplementation(function (this: HTMLElement) {
-        return this.matches('.landing-product-nav > div') ? 320 : 0;
-      });
-    const rects = vi.spyOn(Element.prototype, 'getBoundingClientRect').mockImplementation(function (
-      this: Element,
-    ) {
-      const offScreen = this.getAttribute('aria-current') === 'page';
-      const left = offScreen ? 600 : 0;
-      return {
-        left,
-        right: left + 100,
-        top: 0,
-        bottom: 0,
-        width: 100,
-        height: 0,
-        x: left,
-        y: 0,
-        toJSON: () => ({}),
-      } as DOMRect;
-    });
-    try {
-      render(
-        <MemoryRouter initialEntries={['/products/clpr']}>
-          <EffectsProvider>
-            <Routes>
-              <Route path="/products/:slug" element={<ProductLanding />} />
-            </Routes>
-          </EffectsProvider>
-        </MemoryRouter>,
-      );
-      const nav = screen.getByRole('navigation', { name: 'Product navigation' });
-      const marked = within(nav).getByRole('link', { name: current.project.name });
-      expect(marked).toHaveAttribute('aria-current', 'page');
-      expect(
-        within(nav)
-          .getAllByRole('link')
-          .filter((a) => a.hasAttribute('aria-current')),
-      ).toHaveLength(1);
-      expect(scrollIntoView).toHaveBeenCalledTimes(1);
-      expect(scrollIntoView.mock.instances[0]).toBe(marked);
-      expect(scrollIntoView).toHaveBeenCalledWith({ inline: 'nearest', block: 'nearest' });
-    } finally {
-      widths.mockRestore();
-      clientWidth.mockRestore();
-      rects.mockRestore();
-    }
-  });
-
-  it('does not scroll when the list fits', () => {
-    const scrollIntoView = vi.fn();
-    Element.prototype.scrollIntoView = scrollIntoView;
+describe('product landing navigation', () => {
+  it('offers the directory and identifies the current product without an overflowing list', () => {
     render(
       <MemoryRouter initialEntries={['/products/clpr']}>
         <EffectsProvider>
@@ -190,7 +126,13 @@ describe('product landing product-nav', () => {
         </EffectsProvider>
       </MemoryRouter>,
     );
-    expect(scrollIntoView).not.toHaveBeenCalled();
+    const nav = screen.getByRole('navigation', { name: 'Product navigation' });
+    expect(within(nav).getAllByRole('link')).toHaveLength(1);
+    expect(within(nav).getByRole('link', { name: 'All products' })).toHaveAttribute(
+      'href',
+      '/products',
+    );
+    expect(nav.querySelector('[aria-current="page"]')).toHaveTextContent('clpr');
   });
 });
 

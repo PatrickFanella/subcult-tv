@@ -7,7 +7,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 errors = []
 count = 0
-for manifest in sorted((ROOT / 'docs').glob('*brand-provenance.json')):
+manifests = [*(ROOT / 'docs').glob('*brand-provenance.json'),
+             ROOT / 'docs/portfolio-visual-provenance.json']
+for manifest in sorted(manifests):
     for entry in json.loads(manifest.read_text())['files']:
         for field in ('source', 'target'):
             path = (ROOT / entry[field]).resolve()
@@ -18,4 +20,4 @@ for manifest in sorted((ROOT / 'docs').glob('*brand-provenance.json')):
         count += 1
 if errors:
     raise SystemExit('\n'.join(errors))
-print(f'{count} selected public brand assets match their source and output hashes.')
+print(f'{count} selected public assets match their source and output hashes.')

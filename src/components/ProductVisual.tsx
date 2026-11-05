@@ -1,5 +1,6 @@
 import type { ShowcaseProduct } from '@/lib/showcase';
 import { BRAND_HEROES } from '@/lib/product-visuals';
+import { CURRENT_PRODUCT_VISUALS } from '@/lib/current-visuals';
 
 // Screenshot descriptions for products whose capture shows more than the interface name conveys.
 const SCREENSHOT_ALT: Record<string, string> = {
@@ -34,6 +35,19 @@ export default function ProductVisual({
   priority?: boolean;
 }) {
   const { project } = product;
+  const current = CURRENT_PRODUCT_VISUALS[project.slug];
+  if (current) {
+    return (
+      <img
+        src={current.src}
+        alt={current.alt}
+        loading={priority ? 'eager' : 'lazy'}
+        fetchPriority={priority ? 'high' : 'auto'}
+        decoding="async"
+        className="showcase-screenshot"
+      />
+    );
+  }
   if (project.slug === 'subsets') {
     return (
       <img

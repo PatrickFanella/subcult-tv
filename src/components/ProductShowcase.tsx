@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
-import type { ShowcaseProduct } from '@/lib/showcase';
+import { getProductAction, type ShowcaseProduct } from '@/lib/showcase';
 import { getCuratedProjectBySlug } from '@/lib/project-catalog';
 import ProductVisual from '@/components/ProductVisual';
 import { getProductPath } from '@/lib/product-paths';
@@ -10,7 +10,9 @@ export default function ProductShowcase({ products }: { products: ShowcaseProduc
     <div className="product-showcase">
       {products.map((product, index) => {
         const { project } = product;
-        const related = getCuratedProjectBySlug(product.relatedSlug);
+        const relationship = product.relationships?.[0];
+        const related = getCuratedProjectBySlug(relationship?.slug);
+        const action = getProductAction(product, `Explore ${project.name}`);
         return (
           <article
             id={project.slug}
@@ -35,25 +37,14 @@ export default function ProductShowcase({ products }: { products: ShowcaseProduc
                 ))}
               </ul>
               <div className="product-actions">
-                {project.url ? (
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="product-primary-link"
-                  >
-                    {product.liveLabel ?? `Explore ${project.name}`} ↗
-                  </a>
-                ) : (
-                  <a
-                    href={project.repoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="product-primary-link"
-                  >
-                    Explore the code ↗
-                  </a>
-                )}
+                <a
+                  href={action.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="product-primary-link"
+                >
+                  {action.label} ↗
+                </a>
                 <Link
                   to={getProductPath(project.slug)}
                   className="showcase-text-link"
@@ -64,7 +55,7 @@ export default function ProductShowcase({ products }: { products: ShowcaseProduc
               </div>
               {related && (
                 <p className="product-related">
-                  {project.slug === 'hasanara' ? 'Powered by ' : 'See it in practice: '}
+                  {relationship?.label}:
                   <Link to={getProductPath(related.slug)}>{related.name} →</Link>
                 </p>
               )}

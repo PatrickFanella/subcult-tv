@@ -173,7 +173,87 @@
       "repository": "subculture-collective/the-common-house",
       "commit": "4266381d265725a5bd6877228892afad4c9d9311",
       "marketing_documents": []
+    },
+    "commons": {
+      "status": "inspected",
+      "repository": "subculture-collective/commons",
+      "commit": "c9e1a141886c39357d1944b7e00866b336e0b822",
+      "inspected_at": "2026-11-05T18:34:59.659171+00:00",
+      "marketing_documents": [],
+      "evidence": "../../../docs/reviews/portfolio-2026-11-05/evidence.json"
+    },
+    "dedhed": {
+      "status": "inspected",
+      "repository": "subculture-collective/dedhed",
+      "commit": "f5514499bec365474b36eae2e175f5867156b08a",
+      "inspected_at": "2026-11-05T18:34:59.659171+00:00",
+      "marketing_documents": [],
+      "evidence": "../../../docs/reviews/portfolio-2026-11-05/evidence.json"
+    },
+    "lineage": {
+      "status": "inspected",
+      "repository": "PatrickFanella/arkhiv-live-music",
+      "commit": "1c75cc8b84003e8fc365c3cf062eab5dbe741b4c",
+      "inspected_at": "2026-11-05T18:34:59.659171+00:00",
+      "marketing_documents": [],
+      "evidence": "../../../docs/reviews/portfolio-2026-11-05/evidence.json"
+    },
+    "arkhiv-riot-grrrl": {
+      "status": "inspected",
+      "repository": "subculture-collective/arkhiv-riot-grrrl",
+      "commit": "d6eb2f7d35ec9ac2e3bed822ed9fa909cc4af1d7",
+      "inspected_at": "2026-11-05T18:34:59.659171+00:00",
+      "marketing_documents": [],
+      "evidence": "../../../docs/reviews/portfolio-2026-11-05/evidence.json"
+    },
+    "bill-nye-tv": {
+      "status": "inspected",
+      "repository": "subculture-collective/bill-nye-tv",
+      "commit": "e0140e9c72607d45055709b4fa69e73eaf063aad",
+      "inspected_at": "2026-11-05T18:34:59.659171+00:00",
+      "marketing_documents": [],
+      "evidence": "../../../docs/reviews/portfolio-2026-11-05/evidence.json"
+    },
+    "democracy-now-tv": {
+      "status": "inspected",
+      "repository": "subculture-collective/democracy-now-tv",
+      "commit": "9f15a5df95d24f978c844161bd21cc514886af24",
+      "inspected_at": "2026-11-05T18:34:59.659171+00:00",
+      "marketing_documents": [],
+      "evidence": "../../../docs/reviews/portfolio-2026-11-05/evidence.json"
+    },
+    "patstack": {
+      "status": "inspected",
+      "repository": "subculture-collective/patstack",
+      "commit": "a06844d9990bc01157ecc9a194c510a53c57611b",
+      "inspected_at": "2026-11-05T18:34:59.659171+00:00",
+      "marketing_documents": [],
+      "evidence": "../../../docs/reviews/portfolio-2026-11-05/evidence.json"
+    },
+    "ytclip": {
+      "status": "inspected",
+      "repository": "PatrickFanella/ytclip",
+      "commit": "f58f8231e399e240c9a553530e4dc40ceb3f2374",
+      "inspected_at": "2026-11-05T18:34:59.659171+00:00",
+      "marketing_documents": [],
+      "evidence": "../../../docs/reviews/portfolio-2026-11-05/evidence.json"
+    },
+    "twitchdl": {
+      "status": "inspected",
+      "repository": "PatrickFanella/twitchdl",
+      "commit": "ad91c1b6304fc12a16da7f51c1a3eabef8c311ab",
+      "inspected_at": "2026-11-05T18:34:59.659171+00:00",
+      "marketing_documents": [],
+      "evidence": "../../../docs/reviews/portfolio-2026-11-05/evidence.json"
+    },
+    "clustr-galaxy": {
+      "status": "inspected",
+      "repository": "subculture-collective/clustr-galaxy",
+      "commit": "4fcf811b96d7ac252bf62bce622506fb4789f8d7",
+      "inspected_at": "2026-11-05T18:34:59.659171+00:00",
+      "marketing_documents": [],
+      "evidence": "../../../docs/reviews/portfolio-2026-11-05/evidence.json"
     }
   },
-  "note": "Read-only current main tree inventory; unavailable refs are not evidence that a packet is absent."
+  "note": "Read-only current main tree inventory; unavailable refs are not evidence that a packet is absent. Entries added on November 5 carry their own inspected_at timestamp; prior October 21 observations retain their original meaning."
 }
