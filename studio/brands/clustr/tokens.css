@@ -1,0 +1,9 @@
+:root {
+  --clustr-bg: #030506;
+  --clustr-text: #e1ede8;
+  --clustr-accent: #b6ff62;
+  --clustr-secondary: #68dcff;
+  --clustr-font-display: "Inter Tight";
+  --clustr-font-body: "Public Sans";
+  --clustr-font-label: "IBM Plex Mono";
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "blacktower",
+  "name": "Blacktower",
+  "description": "An OpenCode plugin for specialist delegation, reviews and local workflows.",
+  "direction": "Dispatch tower",
+  "colors": {
+    "bg": "#15121d",
+    "text": "#f0eaf8",
+    "accent": "#b298e5",
+    "secondary": "#e5ba78"
+  },
+  "fonts": {
+    "display": "Barlow Condensed",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "dispatch_tower",
+  "mark_description": "A compact tower with three battlements and staggered signal windows connected to one base.",
+  "selection_status": "agent-selected-under-owner-delegation",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

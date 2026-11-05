@@ -188,3 +188,7 @@ The generator is standalone, `../brands/headcount/build.py`, in the Subsets and 
 the Generic Skills identity and the Headcount/Chatty Cat repository banners and
 avatars. The latter preserve their selected logo masters. Only these three
 repository exports are rebuilt; broader product packs remain unchanged.
+
+## Remaining products, November 4, 2026
+
+`remaining_site_packs.py --all` builds the fourteen packs in `remaining-site-packs.json`; `--only SLUG` rebuilds one after verifying its existing manifest. Product-owned identity snapshots and hashes live in `remaining-product-sources/`. Sora 600 is derived from Switchyard’s licensed variable font; its tool versions and weight are recorded beside the source. Existing packs are not regenerated. The new guides and manifests distinguish product-owned direction decisions from agent-selected work under the owner’s completion instruction.

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lineage">
+  <rect width="64" height="64" rx="4" fill="#f4efe4"/>
+  <rect x="8" y="14" width="48" height="8" fill="#c43a24"/>
+  <rect x="8" y="26" width="48" height="8" fill="#e0a52d"/>
+  <rect x="8" y="38" width="48" height="8" fill="#2f6b8f"/>
+  <rect x="8" y="50" width="30" height="3" fill="#1c1915"/>
+</svg>

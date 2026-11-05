@@ -1,0 +1,22 @@
+{
+  "slug": "edda",
+  "name": "Edda",
+  "description": "A workspace for preparing and running tabletop roleplaying campaigns.",
+  "direction": "Story folio",
+  "colors": {
+    "bg": "#171624",
+    "text": "#eee7d8",
+    "accent": "#bca5ea",
+    "secondary": "#e0b87b"
+  },
+  "fonts": {
+    "display": "Newsreader",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "story_folio",
+  "mark_description": "An open story folio with one branching path and a circular place marker above the pages.",
+  "selection_status": "agent-selected-under-owner-delegation",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

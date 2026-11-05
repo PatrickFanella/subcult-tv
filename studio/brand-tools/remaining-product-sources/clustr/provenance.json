@@ -1,0 +1,11 @@
+{
+  "repository": "https://git.subcult.tv/subculture-collective/clustr.git",
+  "revision": "a32174a388417d2b9a2cbf74f358c505b4bdd0f7",
+  "files": [
+    {
+      "source": "frontend/public/clustr.svg",
+      "snapshot": "clustr.svg",
+      "sha256": "e591d13095013fb82b25146677f250bcfead0d7d8b7277d1cc8388db51f28694"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "clustr",
+  "name": "Clustr",
+  "description": "Explore relationships between online communities as an interactive network.",
+  "direction": "Community universe",
+  "colors": {
+    "bg": "#030506",
+    "text": "#e1ede8",
+    "accent": "#b6ff62",
+    "secondary": "#68dcff"
+  },
+  "fonts": {
+    "display": "Inter Tight",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "product_master",
+  "mark_description": "The product-owned Clustr constellation: four differently sized community nodes joined by an irregular orbit.",
+  "selection_status": "product-owned",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

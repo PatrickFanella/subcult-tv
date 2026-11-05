@@ -1,0 +1,22 @@
+{
+  "slug": "arkhiv-riot-grrrl",
+  "name": "Riot Grrrl Zine Archive",
+  "description": "A catalog and reader for preserved Riot Grrrl zines, with source and rights notes retained.",
+  "direction": "Cut & Paste",
+  "colors": {
+    "bg": "#f5edea",
+    "text": "#23191e",
+    "accent": "#9b1459",
+    "secondary": "#705246"
+  },
+  "fonts": {
+    "display": "Archivo Black",
+    "display_weight": 400,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "cut_paste",
+  "mark_description": "Two overlapping cut-paper shapes crossed by an angled strip and two staple marks; no scanned zine artwork is reused.",
+  "selection_status": "product-owned",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

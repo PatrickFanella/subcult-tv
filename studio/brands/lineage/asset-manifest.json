@@ -1,0 +1,248 @@
+{
+  "status": "product-owned",
+  "brand": "Lineage",
+  "generator": "brand-tools/remaining_site_packs.py",
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "76931d97f4fe44daa908cb037e4a9918ec7a9fa908efa855ee8111f1c4acb5c8",
+      "bytes": 2599
+    },
+    {
+      "path": "WEBSITE.md",
+      "sha256": "108da59e3ca4d68a3b3d05ede66ab6c459fb98d1b9e4f117be15486008a11197",
+      "bytes": 889
+    },
+    {
+      "path": "alt-text.md",
+      "sha256": "d7911ea55e7e6559be4de5127a2722e4132a123bd4cc9c3ff0f270767d36fe7d",
+      "bytes": 1013
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-0.ttf",
+      "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+      "bytes": 128812
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-1.ttf",
+      "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+      "bytes": 131040
+    },
+    {
+      "path": "fonts/Public-Sans-0.ttf",
+      "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+      "bytes": 56172
+    },
+    {
+      "path": "fonts/Public-Sans-1.ttf",
+      "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+      "bytes": 56364
+    },
+    {
+      "path": "fonts/ibmplexmono-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "bytes": 4456
+    },
+    {
+      "path": "fonts/publicsans-OFL.txt",
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+      "bytes": 4390
+    },
+    {
+      "path": "logos/lockup-primary.svg",
+      "sha256": "0165363f4a14cb00bc1b698c978eb59e2d41865fd14ce0e7f927294fa5638bd1",
+      "bytes": 4727
+    },
+    {
+      "path": "logos/lockup.png",
+      "sha256": "9b624deff3c575f22e5a1eb46f0a1189ec5e858f5f75673d2dacacf06c295b08",
+      "bytes": 11158,
+      "width": 812,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "logos/lockup.svg",
+      "sha256": "0165363f4a14cb00bc1b698c978eb59e2d41865fd14ce0e7f927294fa5638bd1",
+      "bytes": 4727
+    },
+    {
+      "path": "logos/mark-mono-dark.svg",
+      "sha256": "f2cbf0010faa315685ddd554c20c3ee9a75e690df4a949aeb9a1dee4e9e24cef",
+      "bytes": 707
+    },
+    {
+      "path": "logos/mark-mono-light.svg",
+      "sha256": "c87d0eeff705c6ba16aa4a008659ce6531b9002db6ba1d5fe4b00c072aa17ded",
+      "bytes": 708
+    },
+    {
+      "path": "logos/mark.png",
+      "sha256": "1eb5520372fa0734c6b09302243acd126ff3c38dc209b1f03402d315f67093f4",
+      "bytes": 3863,
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "logos/mark.svg",
+      "sha256": "2b4f5cd6a5dad2fbc5f623a4ebcf99ad2d31352986a70df02a0965c04def1d55",
+      "bytes": 728
+    },
+    {
+      "path": "pack-preview.png",
+      "sha256": "19c16f03d2ab8add825efd6f480c1d540a397e9cab8ed4d150cc47ae23243e8c",
+      "bytes": 94087,
+      "width": 1600,
+      "height": 1800,
+      "mode": "RGB"
+    },
+    {
+      "path": "pack-preview.svg",
+      "sha256": "2bf69dfadd27228eb717c2941212b2686348ee5ac8bd57618be0b1f78cc5f977",
+      "bytes": 200512
+    },
+    {
+      "path": "product/apple-touch-icon.png",
+      "sha256": "dee276c42df5f72ebd1833b8e1e6dcbb09a25cfa8093a4e830a26abc0cebb7ae",
+      "bytes": 1061,
+      "width": 180,
+      "height": 180,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/favicon.ico",
+      "sha256": "a5977f7efbcbd2b0b71b2f973d5aee68ac646a005fa67c0c9917c3a69a2d1333",
+      "bytes": 1970
+    },
+    {
+      "path": "product/favicon.svg",
+      "sha256": "4f8d036705334845c7fc702b40d4ca6e228c2938856e61d419758fcf0477c28c",
+      "bytes": 844
+    },
+    {
+      "path": "product/hero.png",
+      "sha256": "4e30345a59b643dc3bdd71f78f0585afcef33ed71bab47d192a6df2adb82eae9",
+      "bytes": 30881,
+      "width": 1440,
+      "height": 900,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/hero.svg",
+      "sha256": "810f05aea5bfb0c7b03f01455dad4cad8dab796e8798fcd7895088373c66c273",
+      "bytes": 24403
+    },
+    {
+      "path": "product/icon-192.png",
+      "sha256": "a6df31f423f25a4db49eda3f992bbed2b7d5e88886fd6ab441f608c35a49cebe",
+      "bytes": 1009,
+      "width": 192,
+      "height": 192,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/icon-512.png",
+      "sha256": "0ad58bf9b0498e3ad44b47bf4f8c7e1c0dee20386b35c11d896f8aaf09753432",
+      "bytes": 2705,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/mark.svg",
+      "sha256": "2b4f5cd6a5dad2fbc5f623a4ebcf99ad2d31352986a70df02a0965c04def1d55",
+      "bytes": 728
+    },
+    {
+      "path": "product/og.png",
+      "sha256": "35e73e3398e18d59baaf45a5e78087b8ff51f66963168020b3b32e085ecfd5e6",
+      "bytes": 26769,
+      "width": 1200,
+      "height": 630,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/og.svg",
+      "sha256": "3d32e3f13babf46ea71aca2377865b7f88498ebebd398aa9d7fa5e6b8644acb7",
+      "bytes": 28001
+    },
+    {
+      "path": "product/readme-lockup.png",
+      "sha256": "dde747c528bfed39367d8c8abf5766388cfb567b52e8b155ab3e1b2aee349b5f",
+      "bytes": 10795,
+      "width": 812,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/readme-lockup.svg",
+      "sha256": "3aa921c08e23e8aacfb4e8033859e040a43ecc74ccbe33977f4161bec1b35922",
+      "bytes": 4831
+    },
+    {
+      "path": "selection.json",
+      "sha256": "14d054d610374106356f9b99a26215c015f7bc4534f65c3b7e88218afe830621",
+      "bytes": 690
+    },
+    {
+      "path": "social/avatar.png",
+      "sha256": "6964b0b83b2b53fc721ab53baa745e998142cba9b530b4e834350e373390ddc3",
+      "bytes": 2503,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner.png",
+      "sha256": "164d4ab1bad456a5787bf047ccdab48ba7c9ea3a73c6ac5bcbf1d32ea5f56c63",
+      "bytes": 30301,
+      "width": 1500,
+      "height": 500,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner.svg",
+      "sha256": "aab1649ff8ac77266d78718f2f32f0a40501c64dfceda5b3582fc9c33bf7cca0",
+      "bytes": 33028
+    },
+    {
+      "path": "social/square.png",
+      "sha256": "0d83a2fa340e642524b13853c516b08ec4c672d5c6ed9809aa53e4d2a09bbd64",
+      "bytes": 33816,
+      "width": 1080,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/square.svg",
+      "sha256": "acce0598b0190b8b2ccbc6581029086b0d4b86215339e2791dcf05eeacdc9375",
+      "bytes": 31707
+    },
+    {
+      "path": "source/brand.md",
+      "sha256": "977e3d887d2129198dc97777723c8ae4f0d125fecd69cca984635e3f33791ba2",
+      "bytes": 4931
+    },
+    {
+      "path": "source/favicon.svg",
+      "sha256": "66df6c17d4d51be86360cb6012ffc53ea0017b61693266fc5ea4bda39008f967",
+      "bytes": 395
+    },
+    {
+      "path": "source/provenance.json",
+      "sha256": "499838ef46f74dec4563d8b3cd26ea578c529c4d1ee86061d0a93f92ddb57632",
+      "bytes": 497
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "8cb5d35d89db81ca2a79eee4a26db2867f3799e44fbeaad13f1d28c6ab047a78",
+      "bytes": 245
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "e91eda8f74ba9251e0e6aa29327c76d37eef87265de90817d93e179c83fe5b0f",
+      "bytes": 1613
+    }
+  ]
+}

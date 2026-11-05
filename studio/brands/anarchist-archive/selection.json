@@ -1,0 +1,22 @@
+{
+  "slug": "anarchist-archive",
+  "name": "Anarchist Archive",
+  "description": "Preserved zines and pamphlets with source records, a catalog, reading and downloads.",
+  "direction": "Stapled pamphlet",
+  "colors": {
+    "bg": "#f2efe8",
+    "text": "#211e1a",
+    "accent": "#b8322f",
+    "secondary": "#4c5a55"
+  },
+  "fonts": {
+    "display": "Newsreader",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "pamphlet",
+  "mark_description": "An open pamphlet with a folded corner and two heavy red staple strokes at its spine.",
+  "selection_status": "agent-selected-under-owner-delegation",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

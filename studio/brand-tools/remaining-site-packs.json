@@ -1,0 +1,323 @@
+{
+  "date": "2026-11-04",
+  "fonts": {
+    "Sora": {
+      "files": [
+        "Sora-600.ttf"
+      ],
+      "license": "sora-OFL.txt",
+      "bold": "Sora-600.ttf",
+      "regular": "Sora-600.ttf"
+    }
+  },
+  "brands": [
+    {
+      "slug": "bill-nye-tv",
+      "name": "Bill Nye TV",
+      "description": "An independent archive of Bill Nye programs, with source links and scheduled replays.",
+      "direction": "Lab reel",
+      "colors": {
+        "bg": "#f3f0d3",
+        "text": "#172e24",
+        "accent": "#275b3f",
+        "secondary": "#73551d"
+      },
+      "fonts": {
+        "display": "Barlow Condensed",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "science_reel",
+      "mark_description": "A film frame enclosing a laboratory flask, with one measurement dot; an original archive mark, not the program logo.",
+      "selection_status": "agent-selected-under-owner-delegation",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "democracy-now-tv",
+      "name": "Democracy Now! archive",
+      "description": "An independent index of Democracy Now! broadcasts, with original dates and source context.",
+      "direction": "Broadcast ledger",
+      "colors": {
+        "bg": "#f3efe3",
+        "text": "#292621",
+        "accent": "#9e3029",
+        "secondary": "#4d5b63"
+      },
+      "fonts": {
+        "display": "Newsreader",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "broadcast_ledger",
+      "mark_description": "Three broadcast headline rules above a continuous source line, held in an open television frame.",
+      "selection_status": "agent-selected-under-owner-delegation",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "video-archive-template",
+      "name": "Video Archive Template",
+      "description": "A reusable frontend for independent video collections and scheduled replay.",
+      "direction": "Archive frame",
+      "colors": {
+        "bg": "#14191e",
+        "text": "#f5f2e9",
+        "accent": "#ebd59b",
+        "secondary": "#a4bac8"
+      },
+      "fonts": {
+        "display": "Barlow Condensed",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "archive_frame",
+      "mark_description": "A catalog frame with two indexed shelves and one play-shaped cutout.",
+      "selection_status": "agent-selected-under-owner-delegation",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "anarchist-archive",
+      "name": "Anarchist Archive",
+      "description": "Preserved zines and pamphlets with source records, a catalog, reading and downloads.",
+      "direction": "Stapled pamphlet",
+      "colors": {
+        "bg": "#f2efe8",
+        "text": "#211e1a",
+        "accent": "#b8322f",
+        "secondary": "#4c5a55"
+      },
+      "fonts": {
+        "display": "Newsreader",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "pamphlet",
+      "mark_description": "An open pamphlet with a folded corner and two heavy red staple strokes at its spine.",
+      "selection_status": "agent-selected-under-owner-delegation",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "arkhiv-riot-grrrl",
+      "name": "Riot Grrrl Zine Archive",
+      "description": "A catalog and reader for preserved Riot Grrrl zines, with source and rights notes retained.",
+      "direction": "Cut & Paste",
+      "colors": {
+        "bg": "#f5edea",
+        "text": "#23191e",
+        "accent": "#9b1459",
+        "secondary": "#705246"
+      },
+      "fonts": {
+        "display": "Archivo Black",
+        "display_weight": 400,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "cut_paste",
+      "mark_description": "Two overlapping cut-paper shapes crossed by an angled strip and two staple marks; no scanned zine artwork is reused.",
+      "selection_status": "product-owned",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "lineage",
+      "name": "Lineage",
+      "description": "Live recordings, with their lineage.",
+      "direction": "J-Card",
+      "colors": {
+        "bg": "#f4efe4",
+        "text": "#1c1915",
+        "accent": "#c43a24",
+        "secondary": "#2f6b8f"
+      },
+      "fonts": {
+        "display": "IBM Plex Mono",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "product_master",
+      "mark_description": "The product-owned J-Card icon: red, mustard and teal spine stripes above a short source-chain rule.",
+      "selection_status": "product-owned",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "clustr",
+      "name": "Clustr",
+      "description": "Explore relationships between online communities as an interactive network.",
+      "direction": "Community universe",
+      "colors": {
+        "bg": "#030506",
+        "text": "#e1ede8",
+        "accent": "#b6ff62",
+        "secondary": "#68dcff"
+      },
+      "fonts": {
+        "display": "Inter Tight",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "product_master",
+      "mark_description": "The product-owned Clustr constellation: four differently sized community nodes joined by an irregular orbit.",
+      "selection_status": "product-owned",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "commons",
+      "name": "Commons",
+      "description": "Find open software projects, share progress and build with other people.",
+      "direction": "Shared plots",
+      "colors": {
+        "bg": "#ece5d4",
+        "text": "#26201b",
+        "accent": "#33594e",
+        "secondary": "#87432d"
+      },
+      "fonts": {
+        "display": "Newsreader",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "product_master",
+      "mark_description": "The product-owned Commons lattice: shared plots with one claimed square.",
+      "selection_status": "product-owned",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "envelope-editor",
+      "name": "Signed & Sent",
+      "description": "Add handwriting to an envelope photo and download the finished image in your browser.",
+      "direction": "Fold and signature",
+      "colors": {
+        "bg": "#f2ede1",
+        "text": "#243b32",
+        "accent": "#345b45",
+        "secondary": "#835332"
+      },
+      "fonts": {
+        "display": "Fraunces",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "signed_envelope",
+      "mark_description": "An envelope fold above an original curved signature stroke, with a square stamp in the upper right.",
+      "selection_status": "agent-selected-under-owner-delegation",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "deadweb-relay",
+      "name": "Deadweb Relay",
+      "description": "A small old-web homepage with public notes, a guestbook, files and stable URLs.",
+      "direction": "Public terminal",
+      "colors": {
+        "bg": "#101c34",
+        "text": "#f1eed8",
+        "accent": "#7ee0de",
+        "secondary": "#f2ca72"
+      },
+      "fonts": {
+        "display": "Space Mono",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "relay_terminal",
+      "mark_description": "A squared terminal window with a block cursor relaying three visible packets toward a public connector.",
+      "selection_status": "agent-selected-under-owner-delegation",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "edda",
+      "name": "Edda",
+      "description": "A workspace for preparing and running tabletop roleplaying campaigns.",
+      "direction": "Story folio",
+      "colors": {
+        "bg": "#171624",
+        "text": "#eee7d8",
+        "accent": "#bca5ea",
+        "secondary": "#e0b87b"
+      },
+      "fonts": {
+        "display": "Newsreader",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "story_folio",
+      "mark_description": "An open story folio with one branching path and a circular place marker above the pages.",
+      "selection_status": "agent-selected-under-owner-delegation",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "switchyard",
+      "name": "Switchyard",
+      "description": "Route models, coordinate workflows and inspect execution in one operator runtime.",
+      "direction": "Signal Yard / E2",
+      "colors": {
+        "bg": "#111017",
+        "text": "#F2ECDE",
+        "accent": "#AD8AFF",
+        "secondary": "#F4C16B"
+      },
+      "fonts": {
+        "display": "Sora",
+        "display_weight": 600,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "product_master",
+      "mark_description": "The owner-selected E2 split-plate S: two separate angular plates imply an S across a horizontal channel.",
+      "selection_status": "product-owned",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "blacktower",
+      "name": "Blacktower",
+      "description": "An OpenCode plugin for specialist delegation, reviews and local workflows.",
+      "direction": "Dispatch tower",
+      "colors": {
+        "bg": "#15121d",
+        "text": "#f0eaf8",
+        "accent": "#b298e5",
+        "secondary": "#e5ba78"
+      },
+      "fonts": {
+        "display": "Barlow Condensed",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "dispatch_tower",
+      "mark_description": "A compact tower with three battlements and staggered signal windows connected to one base.",
+      "selection_status": "agent-selected-under-owner-delegation",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    },
+    {
+      "slug": "omarchy-plugin-ht3",
+      "name": "TOZO HT3 for Omarchy",
+      "description": "Headphone volume, noise modes and hardware EQ in an Omarchy bar widget.",
+      "direction": "Headphone controls",
+      "colors": {
+        "bg": "#151a20",
+        "text": "#edf0f5",
+        "accent": "#7ebbd3",
+        "secondary": "#e7bd7b"
+      },
+      "fonts": {
+        "display": "Inter Tight",
+        "display_weight": 700,
+        "body": "Public Sans",
+        "label": "IBM Plex Mono"
+      },
+      "mark": "headphones",
+      "mark_description": "A headphone arch enclosing three equalizer faders, with solid ear pads on either side.",
+      "selection_status": "agent-selected-under-owner-delegation",
+      "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+    }
+  ]
+}

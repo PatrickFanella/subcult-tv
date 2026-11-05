@@ -1,0 +1,22 @@
+{
+  "slug": "envelope-editor",
+  "name": "Signed & Sent",
+  "description": "Add handwriting to an envelope photo and download the finished image in your browser.",
+  "direction": "Fold and signature",
+  "colors": {
+    "bg": "#f2ede1",
+    "text": "#243b32",
+    "accent": "#345b45",
+    "secondary": "#835332"
+  },
+  "fonts": {
+    "display": "Fraunces",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "signed_envelope",
+  "mark_description": "An envelope fold above an original curved signature stroke, with a square stamp in the upper right.",
+  "selection_status": "agent-selected-under-owner-delegation",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

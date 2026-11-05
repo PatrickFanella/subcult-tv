@@ -1,0 +1,288 @@
+{
+  "status": "product-owned",
+  "brand": "Switchyard",
+  "generator": "brand-tools/remaining_site_packs.py",
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "88d2b20fb54ea0e0839a0b5ee8703a569fe91ba893d3e222768b6bbf7a133d78",
+      "bytes": 2653
+    },
+    {
+      "path": "WEBSITE.md",
+      "sha256": "b7c9762ad97a66ec96b9347982169b4e9eb369be907424d27a47af9ee8047bef",
+      "bytes": 892
+    },
+    {
+      "path": "alt-text.md",
+      "sha256": "e20677b4113ecf3c6d8f652e37d5268cddd4c5f5a5d9fd640369b5469e619ad9",
+      "bytes": 1144
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-0.ttf",
+      "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+      "bytes": 128812
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-1.ttf",
+      "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+      "bytes": 131040
+    },
+    {
+      "path": "fonts/Public-Sans-0.ttf",
+      "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+      "bytes": 56172
+    },
+    {
+      "path": "fonts/Public-Sans-1.ttf",
+      "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+      "bytes": 56364
+    },
+    {
+      "path": "fonts/Sora-600.ttf",
+      "sha256": "067732c21074ff0d9090896f3fd2fbdefb91c8010bfa45d6b6c12a408a0c9937",
+      "bytes": 58604
+    },
+    {
+      "path": "fonts/ibmplexmono-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "bytes": 4456
+    },
+    {
+      "path": "fonts/publicsans-OFL.txt",
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+      "bytes": 4390
+    },
+    {
+      "path": "fonts/sora-OFL.txt",
+      "sha256": "855bd3bf8c48eaa45d3c0bbc077a12c977f3ca9a8efb3124e049b9300d56837f",
+      "bytes": 4384
+    },
+    {
+      "path": "logos/lockup-primary.svg",
+      "sha256": "1bbd9c388f45b25378466bcdde59b6602d73c75b0b5708902d799f6f43cd10cf",
+      "bytes": 5356
+    },
+    {
+      "path": "logos/lockup.png",
+      "sha256": "4acbf7eab8116e4b735d75fa4eb1280061874722be0caeca2704115c1ac1663c",
+      "bytes": 19268,
+      "width": 1008,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "logos/lockup.svg",
+      "sha256": "1bbd9c388f45b25378466bcdde59b6602d73c75b0b5708902d799f6f43cd10cf",
+      "bytes": 5356
+    },
+    {
+      "path": "logos/mark-mono-dark.svg",
+      "sha256": "d61f432ef50ab67a2a7d28a2431e55f33697bfa7467fc43563b1bdc146b3c12d",
+      "bytes": 778
+    },
+    {
+      "path": "logos/mark-mono-light.svg",
+      "sha256": "a83f977027ed812b96dd87da01e3904f087dab1a844dc9e7df60ff40d60c055d",
+      "bytes": 779
+    },
+    {
+      "path": "logos/mark.png",
+      "sha256": "304ebe83df694168c2013728d982abd8123360c5b642685d321ce7f301d9963a",
+      "bytes": 3231,
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "logos/mark.svg",
+      "sha256": "0c3b22c4f0d9c265a2950fb311ba22b7c2aefd564e718a7eb4896d9511ba3084",
+      "bytes": 723
+    },
+    {
+      "path": "pack-preview.png",
+      "sha256": "319de70ea4fa57d15cb0cadf9206aca01586b939e0ed84be5f9cd62c2fb5a89e",
+      "bytes": 146191,
+      "width": 1600,
+      "height": 1800,
+      "mode": "RGB"
+    },
+    {
+      "path": "pack-preview.svg",
+      "sha256": "a0d61d822b7e72f6362be4e111c1f374b37d402a8ec19fc4c336b1a833990c58",
+      "bytes": 311563
+    },
+    {
+      "path": "product/apple-touch-icon.png",
+      "sha256": "db540fa396339616ef0f767960bc500b7bb8834965f97585986a152446cb2dfb",
+      "bytes": 1641,
+      "width": 180,
+      "height": 180,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/favicon.ico",
+      "sha256": "012919a3df428155f0e70686a2e116368d7eddf374e641a1ae3238c7355dec6f",
+      "bytes": 3049
+    },
+    {
+      "path": "product/favicon.svg",
+      "sha256": "9c355494353bbc37631350638ecba76b0543c1a34a94a4376be044577f30514a",
+      "bytes": 839
+    },
+    {
+      "path": "product/hero.png",
+      "sha256": "ea2eaf8cfde264b45205cab16f7bdcddfc89a6abf610b20a071868aaa034ce6f",
+      "bytes": 54777,
+      "width": 1440,
+      "height": 900,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/hero.svg",
+      "sha256": "5c8bb5df212dea3b01796c35d9203aafc305a90c61f1befad82d9bc97651354e",
+      "bytes": 45259
+    },
+    {
+      "path": "product/icon-192.png",
+      "sha256": "d504af952e2896da3cd1308a7ae4a6c205b47e33acc5e7883e1dd0092cfab79a",
+      "bytes": 2027,
+      "width": 192,
+      "height": 192,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/icon-512.png",
+      "sha256": "7e9c2c02e1889a44c6263202e160086671a1ccb0a3d59f88f8be8b38febf4f81",
+      "bytes": 4212,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/mark.svg",
+      "sha256": "0c3b22c4f0d9c265a2950fb311ba22b7c2aefd564e718a7eb4896d9511ba3084",
+      "bytes": 723
+    },
+    {
+      "path": "product/og.png",
+      "sha256": "bbf36cd5a9f3317856e6327a947c60cbbc7c2d5bbb7f8f11433b6cc988246b99",
+      "bytes": 46836,
+      "width": 1200,
+      "height": 630,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/og.svg",
+      "sha256": "90799344a462d027025125943c7a604d716f0289fd795bbb4c40dceee30e0382",
+      "bytes": 48819
+    },
+    {
+      "path": "product/readme-lockup.png",
+      "sha256": "c07e38c4864febb396500e9be7ecef5c31db802b95f022edb01772e77abc7c29",
+      "bytes": 18923,
+      "width": 1008,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/readme-lockup.svg",
+      "sha256": "11d1b38e8fbddbb7811dd05355c67734ebe3749c8c05899f529679e08373e6c6",
+      "bytes": 5461
+    },
+    {
+      "path": "selection.json",
+      "sha256": "45f089a6c3f1c73f9f8cba08009ba23c7e4ddc445e3472d8eb28643e76305005",
+      "bytes": 747
+    },
+    {
+      "path": "social/avatar.png",
+      "sha256": "ffb39c1a47618ba975dd678bc87d1014f80e03b181052ff885021f7023e00052",
+      "bytes": 3354,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner.png",
+      "sha256": "0f6170210a3b2cb52a42c3eedff720f081b5a22939d937163e3e9f701d340fa4",
+      "bytes": 50734,
+      "width": 1500,
+      "height": 500,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner.svg",
+      "sha256": "980cd00486cf42939ad28321c2926ec356f36f6a7dc6375ba002e64fe9a60136",
+      "bytes": 52879
+    },
+    {
+      "path": "social/square.png",
+      "sha256": "71a43b999f3b88b86a03bd12abab40442e9e00eaa7ae7f47cbd0733d853c6c6c",
+      "bytes": 54715,
+      "width": 1080,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/square.svg",
+      "sha256": "780fcefc72ff4bbec60b9444f4acc8574a69cb53ece6c68e017c933337a13eda",
+      "bytes": 52843
+    },
+    {
+      "path": "source/README.md",
+      "sha256": "e3a4a9921636bd4bd412d66533ae20930a5ce7fdfc77e085cda55f613457e541",
+      "bytes": 2650
+    },
+    {
+      "path": "source/font-derivation.json",
+      "sha256": "4de113fd74de022e812a2c913cf4f53e95dc8113adc8890f15b81511b3ea978f",
+      "bytes": 141
+    },
+    {
+      "path": "source/lockup.svg",
+      "sha256": "8dc476860749cdd68a3b706282ce0273ad5d35add1169c9c5fefc5d48abf6e5c",
+      "bytes": 561
+    },
+    {
+      "path": "source/mark.svg",
+      "sha256": "830000b964447b9724728dcfcf6764f1339c06270a6d3b83950d50a3be2f7792",
+      "bytes": 395
+    },
+    {
+      "path": "source/provenance.json",
+      "sha256": "21183bc9a69326e4f87457566279d97fe75dba6e39e4b6672cc41fdeb9481750",
+      "bytes": 1422
+    },
+    {
+      "path": "source/signal-yard.md",
+      "sha256": "ac52e9a6b5dee7a08e065e48382294ae842cf005cb29edc8fbf4afe7a9af4c6d",
+      "bytes": 13782
+    },
+    {
+      "path": "source/sora-OFL.txt",
+      "sha256": "855bd3bf8c48eaa45d3c0bbc077a12c977f3ca9a8efb3124e049b9300d56837f",
+      "bytes": 4384
+    },
+    {
+      "path": "source/sora-variable.woff2",
+      "sha256": "85f0527972baba20b77a0869d6a25c7f58f0e28255d17f3ce1d6acb6f47cb549",
+      "bytes": 49276
+    },
+    {
+      "path": "source/tokens.json",
+      "sha256": "4ff0d96f77f378acd9f3a3c758e63ab700cbdb31200b13adbc3433d6dbf0e156",
+      "bytes": 2490
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "8ffbc7a94119ca1f35a3d1bcb8155d8263b61e295fd35c61ae6b786ac1da3477",
+      "bytes": 257
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "404834ba3207dcff7346c351e50509e25f5e33a822d6bd0a2e9a179e08dc962c",
+      "bytes": 1622
+    }
+  ]
+}

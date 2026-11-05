@@ -1,0 +1,9 @@
+:root {
+  --envelope-editor-bg: #f2ede1;
+  --envelope-editor-text: #243b32;
+  --envelope-editor-accent: #345b45;
+  --envelope-editor-secondary: #835332;
+  --envelope-editor-font-display: "Fraunces";
+  --envelope-editor-font-body: "Public Sans";
+  --envelope-editor-font-label: "IBM Plex Mono";
+}

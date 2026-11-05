@@ -85,6 +85,9 @@ def lockup(slug, bg):
 def type_motif(slug, b, kicker):
     """Per-brand signature graphic for the typographic card: (html, headline css, text top)."""
     bg, fg, accent, secondary = b['bg'], b['fg'], b['accent'], b['secondary']
+    if b.get('mode') == 'site-pack':
+        mark = data_uri(BRANDS/slug/'logos/mark.svg')
+        return (f'<img alt="" src="{mark}" style="position:absolute;left:84px;top:84px;width:260px;height:260px">', '', 430)
     if slug == 'patchwork':
         return (f'<div style="position:absolute;right:-60px;top:70px;width:420px;height:300px;background:{secondary};'
                 f'border-radius:46px 18px 52px 22px;transform:rotate(-6deg);outline:6px dashed {bg};outline-offset:-26px"></div>'

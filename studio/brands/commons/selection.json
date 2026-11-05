@@ -1,0 +1,22 @@
+{
+  "slug": "commons",
+  "name": "Commons",
+  "description": "Find open software projects, share progress and build with other people.",
+  "direction": "Shared plots",
+  "colors": {
+    "bg": "#ece5d4",
+    "text": "#26201b",
+    "accent": "#33594e",
+    "secondary": "#87432d"
+  },
+  "fonts": {
+    "display": "Newsreader",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "product_master",
+  "mark_description": "The product-owned Commons lattice: shared plots with one claimed square.",
+  "selection_status": "product-owned",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

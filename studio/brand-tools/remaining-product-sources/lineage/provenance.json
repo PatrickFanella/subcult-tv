@@ -1,0 +1,16 @@
+{
+  "repository": "https://git.subcult.tv/PatrickFanella/arkhiv-live-music.git",
+  "revision": "139f89df27ba1ede047645eb3d94789a9cad01ab",
+  "files": [
+    {
+      "source": "web/public/favicon.svg",
+      "snapshot": "favicon.svg",
+      "sha256": "66df6c17d4d51be86360cb6012ffc53ea0017b61693266fc5ea4bda39008f967"
+    },
+    {
+      "source": "docs/reference/brand.md",
+      "snapshot": "brand.md",
+      "sha256": "977e3d887d2129198dc97777723c8ae4f0d125fecd69cca984635e3f33791ba2"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+:root {
+  --video-archive-template-bg: #14191e;
+  --video-archive-template-text: #f5f2e9;
+  --video-archive-template-accent: #ebd59b;
+  --video-archive-template-secondary: #a4bac8;
+  --video-archive-template-font-display: "Barlow Condensed";
+  --video-archive-template-font-body: "Public Sans";
+  --video-archive-template-font-label: "IBM Plex Mono";
+}
