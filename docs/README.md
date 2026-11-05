@@ -1,6 +1,7 @@
 # Maintained documentation
 
 - [Development](DEVELOPMENT.md): local services, ports, checks and lifecycle.
+- [Public-site CI deployment](CI-DEPLOYMENT.md): verified-main frontend delivery, public asset boundaries and image rollback.
 - [API contracts](API.md): routes and configuration mapped to the current router.
 - [Studio integration](STUDIO.md): private bundles, authenticated assets and reference indexing.
 - [Assets and artifacts](ASSETS.md): source ownership, manifests, packaging and retention.
