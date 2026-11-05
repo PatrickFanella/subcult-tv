@@ -13265,8 +13265,8 @@
   },
   {
     "path": "brands/remaining-products.html",
-    "sha256": "2ee6eca3c7bbc2eedb8fbb49d6f6c608e2b32a0fdc19bd6484da2caf06467693",
-    "bytes": 4944
+    "sha256": "f029dc42964ceee3f97970123d2f4efd144a00151b196fd22b30b8f68ea25cc2",
+    "bytes": 4932
   },
   {
     "path": "brands/switchyard/logos/lockup-primary.svg",
@@ -13280,7 +13280,7 @@
   },
   {
     "path": "scripts/export_remaining_brand.py",
-    "sha256": "67955a9505f341a36ebd2d34d3c70c8c00efe51db336bff524a886c40330ba71",
-    "bytes": 3718
+    "sha256": "568daf591c96f8dddcacf9b5658b0d69f16b3c52820297dbd20265a1053e1430",
+    "bytes": 3728
   }
 ]

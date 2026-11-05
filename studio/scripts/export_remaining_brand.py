@@ -46,7 +46,7 @@ def export(slug, root, check=False):
         # The shared Arkhiv source also serves its own identity: keep the collection
         # export namespaced and select it only in the Anarchist deployment profile.
         if slug != 'anarchist-archive':
-            for name in ['favicon.svg', 'favicon.ico', 'apple-touch-icon.png']:
+            for name in ['favicon.svg', 'favicon.ico', 'apple-touch-icon.png', 'og.png']:
                 selected['product/' + name + '#root'] = f'{public}/{name}'
     rows = []
     for source_name, target_name in selected.items():
