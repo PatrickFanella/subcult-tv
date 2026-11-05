@@ -53,22 +53,6 @@ def cut_paste(p, ink, accent, secondary):
             + pack.path('M176 128L184 176M240 120L248 168', stroke=accent, sw=20))
 
 
-def constellation(p, ink, accent, secondary):
-    return (pack.path('M104 120L256 256L408 120M256 256L136 400M256 256L400 392', stroke=ink, sw=20)
-            + pack.path('M104 120L64 224M408 120L448 224M136 400L232 432', stroke=secondary, sw=16)
-            + ''.join(pack.circle(x, y, rad, fill=color) for x, y, rad, color in
-                      [(104, 120, 42, accent), (408, 120, 42, secondary), (256, 256, 60, ink),
-                       (136, 400, 42, accent), (400, 392, 32, secondary), (64, 224, 20, accent),
-                       (448, 224, 20, secondary), (232, 432, 20, accent)]))
-
-
-def workbench(p, ink, accent, secondary):
-    return (pack.rect(72, 224, 368, 56, fill=ink, rx=12)
-            + pack.path('M112 280V424M400 280V424', stroke=ink, sw=28)
-            + ''.join(pack.path(f'M{x} 192V104H{x+64}V192', stroke=accent, sw=24) for x in (96, 224, 352))
-            + pack.path('M208 336H304', stroke=secondary, sw=24))
-
-
 def signed_envelope(p, ink, accent, secondary):
     return (pack.rect(48, 104, 416, 280, rx=16, stroke=ink, sw=24)
             + pack.path('M64 128L256 264L448 128', stroke=ink, sw=24)
@@ -126,7 +110,7 @@ def product_master(p, ink, accent, secondary):
 
 
 for fn in (science_reel, broadcast_ledger, archive_frame, pamphlet, cut_paste,
-           constellation, workbench, signed_envelope, relay_terminal, story_folio,
+           signed_envelope, relay_terminal, story_folio,
            dispatch_tower, headphones, product_master):
     pack.MARKS[fn.__name__] = fn
 

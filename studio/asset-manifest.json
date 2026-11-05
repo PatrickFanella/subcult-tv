@@ -13040,8 +13040,8 @@
   },
   {
     "path": "brand-tools/remaining_site_packs.py",
-    "sha256": "985ef4e820e5225dd559e6b7964b1fe0f3f41549f1f83fc041a94ad6916f5840",
-    "bytes": 12598
+    "sha256": "336bbfe26a6996b96e8ccce84b82f357e6b0cdb4050b0d52b3f2403860253ed2",
+    "bytes": 11629
   },
   {
     "path": "brand-tools/remaining-site-packs.json",
