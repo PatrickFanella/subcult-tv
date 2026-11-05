@@ -1,0 +1,248 @@
+{
+  "status": "agent-selected-under-owner-delegation",
+  "brand": "TOZO HT3 for Omarchy",
+  "generator": "brand-tools/remaining_site_packs.py",
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "80b0829d025f9466cdc0567a4c5ffff087691f0004791c64021d7c0f0df073d4",
+      "bytes": 2717
+    },
+    {
+      "path": "WEBSITE.md",
+      "sha256": "6aec6a634f56281a087b1d0501d5dad4b8bea948c13241996bab44fe6baa1c86",
+      "bytes": 902
+    },
+    {
+      "path": "alt-text.md",
+      "sha256": "5e9a2c28ec0299f1ba96a2ad68ded3619f736ec01c8742d538e7388f991fd78c",
+      "bytes": 1226
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-0.ttf",
+      "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+      "bytes": 128812
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-1.ttf",
+      "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+      "bytes": 131040
+    },
+    {
+      "path": "fonts/Inter-Tight-0.ttf",
+      "sha256": "27350bc95b961b9b4e1a80d872f49e903fe727f290f6b2a079e67ceb1685fb1f",
+      "bytes": 298260
+    },
+    {
+      "path": "fonts/Inter-Tight-1.ttf",
+      "sha256": "98272f3512338c52940816f5db61966ca1cdbc3cdb3c0d981da22612723da59e",
+      "bytes": 302808
+    },
+    {
+      "path": "fonts/Public-Sans-0.ttf",
+      "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+      "bytes": 56172
+    },
+    {
+      "path": "fonts/Public-Sans-1.ttf",
+      "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+      "bytes": 56364
+    },
+    {
+      "path": "fonts/ibmplexmono-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "bytes": 4456
+    },
+    {
+      "path": "fonts/intertight-OFL.txt",
+      "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58",
+      "bytes": 4383
+    },
+    {
+      "path": "fonts/publicsans-OFL.txt",
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+      "bytes": 4390
+    },
+    {
+      "path": "logos/lockup-primary.svg",
+      "sha256": "6edb29f7a697afa412646dd874dead967ceadb26bd22dc170810a2dd4d98aaf3",
+      "bytes": 11597
+    },
+    {
+      "path": "logos/lockup.png",
+      "sha256": "7c87674cdfca7875961f24b4f18dfdac1c8be8a2c26bc2a9821b039d6abd8ab8",
+      "bytes": 31189,
+      "width": 1602,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "logos/lockup.svg",
+      "sha256": "6edb29f7a697afa412646dd874dead967ceadb26bd22dc170810a2dd4d98aaf3",
+      "bytes": 11597
+    },
+    {
+      "path": "logos/mark-mono-dark.svg",
+      "sha256": "0dd27ac62f8b0dca42cf85d374f1357ce56a66cd3d874eba73b7c457d0727266",
+      "bytes": 985
+    },
+    {
+      "path": "logos/mark-mono-light.svg",
+      "sha256": "c81fd607a0bfee916204412420312657d0b7558342802f05acc8c13aa57c1bd9",
+      "bytes": 986
+    },
+    {
+      "path": "logos/mark.png",
+      "sha256": "3246076e20fda8e63548e7bb2ee8f81d56d3705059d32efaf20e50e73233f9ad",
+      "bytes": 11320,
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "logos/mark.svg",
+      "sha256": "8138ccc4637cfd5ba502a00d5c2ae513674c22e19e44f91a6c23d582b445765a",
+      "bytes": 974
+    },
+    {
+      "path": "pack-preview.png",
+      "sha256": "1d17b5cff826dcf0d11a4a98902ff92d786ff8832ffbe258227f51b94a09d6a7",
+      "bytes": 175484,
+      "width": 1600,
+      "height": 1800,
+      "mode": "RGB"
+    },
+    {
+      "path": "pack-preview.svg",
+      "sha256": "2f2b07b7c075d1c4ccf74e20b6371eca774e825ef737d4b425f4f41762753153",
+      "bytes": 358481
+    },
+    {
+      "path": "product/apple-touch-icon.png",
+      "sha256": "a4e805a6af06f00f8879e732c2b3e6a05bd3507b93c78d6cac401f403ec20755",
+      "bytes": 4324,
+      "width": 180,
+      "height": 180,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/favicon.ico",
+      "sha256": "7299704a2f35b2dd556776b6fe0a411262739dbf9f4a9d188e4b2beee31ece02",
+      "bytes": 4132
+    },
+    {
+      "path": "product/favicon.svg",
+      "sha256": "a2fe20eeaaf7551255188b46ae93ead1e308585a4caab7c36dad3efc26414bd5",
+      "bytes": 1090
+    },
+    {
+      "path": "product/hero.png",
+      "sha256": "bc37504ab194568882755466c524209ad6496366883e6a3c23b4c2520de942b5",
+      "bytes": 63749,
+      "width": 1440,
+      "height": 900,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/hero.svg",
+      "sha256": "ce786335f59a6884186df776af31b724af7fa1e344a075db9e0d39c1f633edc8",
+      "bytes": 52682
+    },
+    {
+      "path": "product/icon-192.png",
+      "sha256": "a79e1d71a1ea14b6817d72f65512c46ac78b2b73d1e24f1b9ca911cc3db806c4",
+      "bytes": 4328,
+      "width": 192,
+      "height": 192,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/icon-512.png",
+      "sha256": "4f43bdbc08c3b7792439fbbe5f3936b6e671107662c0dde44e79ccdbbc61b41e",
+      "bytes": 10496,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/mark.svg",
+      "sha256": "8138ccc4637cfd5ba502a00d5c2ae513674c22e19e44f91a6c23d582b445765a",
+      "bytes": 974
+    },
+    {
+      "path": "product/og.png",
+      "sha256": "c27301aafdb30a8c2c67dbb61819124a58e710038ec7030467d0d4882d5c6f49",
+      "bytes": 54258,
+      "width": 1200,
+      "height": 630,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/og.svg",
+      "sha256": "e48be43b6731504e039ab0f7d798e7c41eee7afd139beaab35d5f86cef01c616",
+      "bytes": 55414
+    },
+    {
+      "path": "product/readme-lockup.png",
+      "sha256": "9921c60dc53d19af0689da447ad3c3db80846590fe5a92d06f62fc2aa53fca01",
+      "bytes": 31087,
+      "width": 1602,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/readme-lockup.svg",
+      "sha256": "d20ef15be037b3292ffd54af6cf3d8d8fed7f0273836da254476221cd711ea80",
+      "bytes": 11702
+    },
+    {
+      "path": "selection.json",
+      "sha256": "0b666cba096dd3e025cdca6dcb4e52b64ad8359d4f1daf18b339c7ce48b1336c",
+      "bytes": 766
+    },
+    {
+      "path": "social/avatar.png",
+      "sha256": "231015e04c2f959a5ea4e1b827b451a324d2d2f228a1d0b0f65eb75274c98f0d",
+      "bytes": 8248,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner.png",
+      "sha256": "5e7ada4a4366041d1fa4e8a7da5dbbf83b0ad81f22d3bd15e91b6e0460908e42",
+      "bytes": 57683,
+      "width": 1500,
+      "height": 500,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner.svg",
+      "sha256": "fbfe1e9840773d60f1bb116e6877d0516b410a68ab04cfae50d02ed73590cbb6",
+      "bytes": 60167
+    },
+    {
+      "path": "social/square.png",
+      "sha256": "389423d26f66d95c563eebe8d34f6cefe56c7f0a1a228681cad889d39958320f",
+      "bytes": 63548,
+      "width": 1080,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/square.svg",
+      "sha256": "91d74270233afd26afe2d76512bf8b9ad3fb427163f0c591ec593a277629ab1b",
+      "bytes": 60227
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "434c2a76c90ee55052e83e736f9669964a3c3aada14370bc41fb22bde952f676",
+      "bytes": 320
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "4e597f4b7a9693783d6fd907ba8f914e1b5b9c5a60d6d3d15c9de420c9922770",
+      "bytes": 1672
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "switchyard",
+  "name": "Switchyard",
+  "description": "Route models, coordinate workflows and inspect execution in one operator runtime.",
+  "direction": "Signal Yard / E2",
+  "colors": {
+    "bg": "#111017",
+    "text": "#F2ECDE",
+    "accent": "#AD8AFF",
+    "secondary": "#F4C16B"
+  },
+  "fonts": {
+    "display": "Sora",
+    "display_weight": 600,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "product_master",
+  "mark_description": "The owner-selected E2 split-plate S: two separate angular plates imply an S across a horizontal channel.",
+  "selection_status": "product-owned",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "deadweb-relay",
+  "name": "Deadweb Relay",
+  "description": "A small old-web homepage with public notes, a guestbook, files and stable URLs.",
+  "direction": "Public terminal",
+  "colors": {
+    "bg": "#101c34",
+    "text": "#f1eed8",
+    "accent": "#7ee0de",
+    "secondary": "#f2ca72"
+  },
+  "fonts": {
+    "display": "Space Mono",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "relay_terminal",
+  "mark_description": "A squared terminal window with a block cursor relaying three visible packets toward a public connector.",
+  "selection_status": "agent-selected-under-owner-delegation",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

@@ -1,0 +1,248 @@
+{
+  "status": "agent-selected-under-owner-delegation",
+  "brand": "Bill Nye TV",
+  "generator": "brand-tools/remaining_site_packs.py",
+  "files": [
+    {
+      "path": "GUIDE.md",
+      "sha256": "407475ecf376757f5176e02fd2f3612b1d0f32815d6bd06b948f82f71e4f16d3",
+      "bytes": 2732
+    },
+    {
+      "path": "WEBSITE.md",
+      "sha256": "edecef1dabb77ca3403f202a89c97e35ac29ebba66cd51c781e304fe32239523",
+      "bytes": 893
+    },
+    {
+      "path": "alt-text.md",
+      "sha256": "1796b487d581e162eca2228ede6d15ea6c181a48b6f4fdf3478c11c132c199dd",
+      "bytes": 1176
+    },
+    {
+      "path": "fonts/Barlow-Condensed-0.ttf",
+      "sha256": "c82d65280835cb3cd1b499863cf68cae8c6193c45ffae9495d28d01f749a9ae2",
+      "bytes": 80968
+    },
+    {
+      "path": "fonts/Barlow-Condensed-1.ttf",
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7",
+      "bytes": 87120
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-0.ttf",
+      "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2",
+      "bytes": 128812
+    },
+    {
+      "path": "fonts/IBM-Plex-Mono-1.ttf",
+      "sha256": "5b2232ff598dd39860f606526399f64be06f0c286a638bad8a83e98c44c41ff6",
+      "bytes": 131040
+    },
+    {
+      "path": "fonts/Public-Sans-0.ttf",
+      "sha256": "d8a092f98db3ae7c7f01e73f8f23aaaec97f16c325765042ae5a052f4d8de546",
+      "bytes": 56172
+    },
+    {
+      "path": "fonts/Public-Sans-1.ttf",
+      "sha256": "0daaf804b064cf37990f38ff9ba89fc8029e879f8e64260e7bfa6ef739569c3a",
+      "bytes": 56364
+    },
+    {
+      "path": "fonts/barlowcondensed-OFL.txt",
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+      "bytes": 4377
+    },
+    {
+      "path": "fonts/ibmplexmono-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "bytes": 4456
+    },
+    {
+      "path": "fonts/publicsans-OFL.txt",
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+      "bytes": 4390
+    },
+    {
+      "path": "logos/lockup-primary.svg",
+      "sha256": "49855f3890003250c4c85d94ae682e77df0a4c2ffafba455674cb0e34ac0d109",
+      "bytes": 5290
+    },
+    {
+      "path": "logos/lockup.png",
+      "sha256": "e5626c65fe9844202be4e9913c0dfee9b91d3744cc11de8af730ad7e8e9e959a",
+      "bytes": 13652,
+      "width": 766,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "logos/lockup.svg",
+      "sha256": "49855f3890003250c4c85d94ae682e77df0a4c2ffafba455674cb0e34ac0d109",
+      "bytes": 5290
+    },
+    {
+      "path": "logos/mark-mono-dark.svg",
+      "sha256": "e4332395f93067224a01187a93b3e9da10ae9123e1a18bbaa3f594a919e8bbcd",
+      "bytes": 832
+    },
+    {
+      "path": "logos/mark-mono-light.svg",
+      "sha256": "f697924719092eefecccaa4f54b5822de8bfa0788b33ebd7166558556c1f2330",
+      "bytes": 833
+    },
+    {
+      "path": "logos/mark.png",
+      "sha256": "c60a47772097f83885de12eb7e73459aefbb272de1808dc4e8e669598a576199",
+      "bytes": 11827,
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "logos/mark.svg",
+      "sha256": "7b502b742b0c0e7fe9075f0d70e34e42e042162f4a2ffc1b6a2a5fd44a7ee7c5",
+      "bytes": 821
+    },
+    {
+      "path": "pack-preview.png",
+      "sha256": "21b3266300aaab9bf3712524c86bdfc392f45a56e30ca9c821ab95b5e5f8fa7e",
+      "bytes": 146469,
+      "width": 1600,
+      "height": 1800,
+      "mode": "RGB"
+    },
+    {
+      "path": "pack-preview.svg",
+      "sha256": "f9e4f0609dc77ce442eb413d04abcea0e5c014588454934a370c512026d890b3",
+      "bytes": 310832
+    },
+    {
+      "path": "product/apple-touch-icon.png",
+      "sha256": "98a3b4385db98a9ab912c7f42a62e0cf54eb60ce2c8d94ff8ed0401b1fac6c44",
+      "bytes": 3822,
+      "width": 180,
+      "height": 180,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/favicon.ico",
+      "sha256": "6a79a0703585db4c86bef1de35e78375ced3a163903269cfb8405b06896cef80",
+      "bytes": 3778
+    },
+    {
+      "path": "product/favicon.svg",
+      "sha256": "dc1226b297c1f25c386227633fc18c2ef8b23bbef4bc1a0d1a56a7ff49b6d505",
+      "bytes": 937
+    },
+    {
+      "path": "product/hero.png",
+      "sha256": "830c39a9879a43c255fa13e0761e2e7a3a905901bc6cbf0794b2dc761de5033e",
+      "bytes": 52977,
+      "width": 1440,
+      "height": 900,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/hero.svg",
+      "sha256": "5aebcbe1ea52586ef0dcb82f74620921aeaeabefaf4d529bc94d4f55b1cb0ddc",
+      "bytes": 45108
+    },
+    {
+      "path": "product/icon-192.png",
+      "sha256": "85596ff6c0b57189f9e61984bc4be63b96e0f72fdd9298f0cc47a2986da78f31",
+      "bytes": 3981,
+      "width": 192,
+      "height": 192,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/icon-512.png",
+      "sha256": "59cfad139d44a0c96f0270ec20bb824c0df86672c2b0690068be79c5ee261b79",
+      "bytes": 10596,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/mark.svg",
+      "sha256": "7b502b742b0c0e7fe9075f0d70e34e42e042162f4a2ffc1b6a2a5fd44a7ee7c5",
+      "bytes": 821
+    },
+    {
+      "path": "product/og.png",
+      "sha256": "4faee167ea930f7d4d1ceaac75906dde33669c7b5d957a0f8454756691d150e0",
+      "bytes": 45087,
+      "width": 1200,
+      "height": 630,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/og.svg",
+      "sha256": "f308741d18a29ce1e098f83a5c29f9fa1f47c109c8d522eb0b848f916547d7d8",
+      "bytes": 48740
+    },
+    {
+      "path": "product/readme-lockup.png",
+      "sha256": "a42d59d4e37bf8253355d5363659c14003ac4a01531f970c6ee4417d2ca2894d",
+      "bytes": 13445,
+      "width": 766,
+      "height": 256,
+      "mode": "RGB"
+    },
+    {
+      "path": "product/readme-lockup.svg",
+      "sha256": "029a35c71c56db87f35eed39cd46f03c8333ea81f257641fddad2a709ec530b8",
+      "bytes": 5394
+    },
+    {
+      "path": "selection.json",
+      "sha256": "af3c7e7e966c04b261710a2fbee00da35caf822fc286d6816aab5f8c56e2ab86",
+      "bytes": 791
+    },
+    {
+      "path": "social/avatar.png",
+      "sha256": "626bf3047b83800597f98ef3a847d0dcab62da964b66c3f710f97e992e416d61",
+      "bytes": 8185,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner.png",
+      "sha256": "548c8c12b9a0c2f03e8b51aae59ffb03b0bec69783d59c499afd1ce506a464b9",
+      "bytes": 48347,
+      "width": 1500,
+      "height": 500,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/banner.svg",
+      "sha256": "9330573295917ca10b073a5777941d4417412cbb8db90616a6ffb93ca84461b9",
+      "bytes": 52647
+    },
+    {
+      "path": "social/square.png",
+      "sha256": "a150427b48d7be4c23e720322d30c982d719fd895b958b323f0049a2726f9865",
+      "bytes": 54706,
+      "width": 1080,
+      "height": 1080,
+      "mode": "RGB"
+    },
+    {
+      "path": "social/square.svg",
+      "sha256": "ce4bd92d93ac89ce8a223a20fef4e8515d05ff9372abd956896bc8910084d406",
+      "bytes": 52728
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "af59c3f465924027e91abf2de6ab6abd08e9aa3c9455a0c5e5fabfe0bbcfd3ce",
+      "bytes": 276
+    },
+    {
+      "path": "tokens.json",
+      "sha256": "9bf82f177d58d7cea10e0c74ac9df6d882de5d8676f626bb1dedb8660677d856",
+      "bytes": 1651
+    }
+  ]
+}

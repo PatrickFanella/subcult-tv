@@ -1,0 +1,41 @@
+{
+  "repository": "https://git.subcult.tv/subculture-collective/switchyard.git",
+  "revision": "b89b7e0220a9c5013992173781d2524ea055dc62",
+  "files": [
+    {
+      "source": "docs/design/identity/mark.svg",
+      "snapshot": "mark.svg",
+      "sha256": "830000b964447b9724728dcfcf6764f1339c06270a6d3b83950d50a3be2f7792"
+    },
+    {
+      "source": "docs/design/identity/lockup.svg",
+      "snapshot": "lockup.svg",
+      "sha256": "8dc476860749cdd68a3b706282ce0273ad5d35add1169c9c5fefc5d48abf6e5c"
+    },
+    {
+      "source": "docs/design/identity/README.md",
+      "snapshot": "README.md",
+      "sha256": "e3a4a9921636bd4bd412d66533ae20930a5ce7fdfc77e085cda55f613457e541"
+    },
+    {
+      "source": "docs/design/tokens.json",
+      "snapshot": "tokens.json",
+      "sha256": "4ff0d96f77f378acd9f3a3c758e63ab700cbdb31200b13adbc3433d6dbf0e156"
+    },
+    {
+      "source": "docs/design/signal-yard.md",
+      "snapshot": "signal-yard.md",
+      "sha256": "ac52e9a6b5dee7a08e065e48382294ae842cf005cb29edc8fbf4afe7a9af4c6d"
+    },
+    {
+      "source": "web/public/brand/fonts/sora-variable.woff2",
+      "snapshot": "sora-variable.woff2",
+      "sha256": "85f0527972baba20b77a0869d6a25c7f58f0e28255d17f3ce1d6acb6f47cb549"
+    },
+    {
+      "source": "web/public/brand/fonts/sora-OFL.txt",
+      "snapshot": "sora-OFL.txt",
+      "sha256": "855bd3bf8c48eaa45d3c0bbc077a12c977f3ca9a8efb3124e049b9300d56837f"
+    }
+  ]
+}

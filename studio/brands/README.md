@@ -39,3 +39,22 @@ Copy follows [the voice guide](../content/VOICE.md), and facts come from [the cl
 Overlaid, Pirs, tmux-popups, Arkhiv, Omarchy Multi-Monitor Bar, Super Productivity for Omarchy, Spool, Shelfish, Metronome + Tuner and super-productivity-mcp are smaller site packs for the project pages: a mark, lockup, hero, link preview, sample social layouts, tokens and a guide, generated on October 12, 2026 from `brand-tools/site-packs.json` and accepted by the owner on October 13, 2026. Their sample social layouts still need their own review before a post.
 
 Packs are generated. Change a brand through its generator and masters in [brand tools](../brand-tools/README.md), then rebuild that brand alone; do not edit PNG exports by hand. Backline and Subsets build from the `build_assets.py` or `build.py` inside their own folders. Direction studies and reviews that led to these choices are in [studies](../studies/).
+
+## Remaining product packs, November 4, 2026
+
+[Open the fourteen-pack gallery](remaining-products.html). These packs follow existing product-owned identities where present; new directions were chosen under the owner’s instruction to complete the remaining branding. Social samples remain drafts.
+
+- [Bill Nye TV](bill-nye-tv/GUIDE.md): Lab reel.
+- [Democracy Now! archive](democracy-now-tv/GUIDE.md): Broadcast ledger.
+- [Video Archive Template](video-archive-template/GUIDE.md): Archive frame.
+- [Anarchist Archive](anarchist-archive/GUIDE.md): Stapled pamphlet.
+- [Riot Grrrl Zine Archive](arkhiv-riot-grrrl/GUIDE.md): Cut & Paste.
+- [Lineage](lineage/GUIDE.md): J-Card.
+- [Clustr](clustr/GUIDE.md): Community universe.
+- [Commons](commons/GUIDE.md): Shared plots.
+- [Signed & Sent](envelope-editor/GUIDE.md): Fold and signature.
+- [Deadweb Relay](deadweb-relay/GUIDE.md): Public terminal.
+- [Edda](edda/GUIDE.md): Story folio.
+- [Switchyard](switchyard/GUIDE.md): Signal Yard / E2.
+- [Blacktower](blacktower/GUIDE.md): Dispatch tower.
+- [TOZO HT3 for Omarchy](omarchy-plugin-ht3/GUIDE.md): Headphone controls.

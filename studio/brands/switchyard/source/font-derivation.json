@@ -1,0 +1,7 @@
+{
+  "source": "sora-variable.woff2",
+  "output": "../../fonts/Sora-600.ttf",
+  "weight": 600,
+  "fonttools": "4.68.0",
+  "brotli": "1.2.1"
+}

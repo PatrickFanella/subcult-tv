@@ -1,0 +1,22 @@
+{
+  "slug": "democracy-now-tv",
+  "name": "Democracy Now! archive",
+  "description": "An independent index of Democracy Now! broadcasts, with original dates and source context.",
+  "direction": "Broadcast ledger",
+  "colors": {
+    "bg": "#f3efe3",
+    "text": "#292621",
+    "accent": "#9e3029",
+    "secondary": "#4d5b63"
+  },
+  "fonts": {
+    "display": "Newsreader",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "broadcast_ledger",
+  "mark_description": "Three broadcast headline rules above a continuous source line, held in an open television frame.",
+  "selection_status": "agent-selected-under-owner-delegation",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

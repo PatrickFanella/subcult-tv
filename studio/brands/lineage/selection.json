@@ -1,0 +1,22 @@
+{
+  "slug": "lineage",
+  "name": "Lineage",
+  "description": "Live recordings, with their lineage.",
+  "direction": "J-Card",
+  "colors": {
+    "bg": "#f4efe4",
+    "text": "#1c1915",
+    "accent": "#c43a24",
+    "secondary": "#2f6b8f"
+  },
+  "fonts": {
+    "display": "IBM Plex Mono",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "product_master",
+  "mark_description": "The product-owned J-Card icon: red, mustard and teal spine stripes above a short source-chain rule.",
+  "selection_status": "product-owned",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

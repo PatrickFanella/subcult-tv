@@ -1,0 +1,22 @@
+{
+  "slug": "bill-nye-tv",
+  "name": "Bill Nye TV",
+  "description": "An independent archive of Bill Nye programs, with source links and scheduled replays.",
+  "direction": "Lab reel",
+  "colors": {
+    "bg": "#f3f0d3",
+    "text": "#172e24",
+    "accent": "#275b3f",
+    "secondary": "#73551d"
+  },
+  "fonts": {
+    "display": "Barlow Condensed",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "science_reel",
+  "mark_description": "A film frame enclosing a laboratory flask, with one measurement dot; an original archive mark, not the program logo.",
+  "selection_status": "agent-selected-under-owner-delegation",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}

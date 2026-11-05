@@ -1,0 +1,6 @@
+{
+  "output": "mark.svg",
+  "method": "Export unchanged Mark.jsx geometry, resolving --paper-2 #f7f2e7, --ink #2f2620 and --clay #b5552f from src/tokens.css",
+  "source_owner": "product",
+  "output_sha256": "2b471ece2e59b30df8662fa4dbbfa99ced5012dd9ac9513a92262aef174f4f6a"
+}

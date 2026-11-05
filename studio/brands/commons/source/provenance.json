@@ -1,0 +1,11 @@
+{
+  "repository": "https://git.subcult.tv/subculture-collective/commons.git",
+  "revision": "0a5121170b998a3b3969113c5f0c65a74c90a67c",
+  "files": [
+    {
+      "source": "src/components/Mark.jsx",
+      "snapshot": "Mark.jsx",
+      "sha256": "8a1652906a6f2d04fb180a12185dbe9783183a73a5f47cdc2f6fb5caf75ee5f5"
+    }
+  ]
+}

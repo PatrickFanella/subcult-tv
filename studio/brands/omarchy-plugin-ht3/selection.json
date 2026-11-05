@@ -1,0 +1,22 @@
+{
+  "slug": "omarchy-plugin-ht3",
+  "name": "TOZO HT3 for Omarchy",
+  "description": "Headphone volume, noise modes and hardware EQ in an Omarchy bar widget.",
+  "direction": "Headphone controls",
+  "colors": {
+    "bg": "#151a20",
+    "text": "#edf0f5",
+    "accent": "#7ebbd3",
+    "secondary": "#e7bd7b"
+  },
+  "fonts": {
+    "display": "Inter Tight",
+    "display_weight": 700,
+    "body": "Public Sans",
+    "label": "IBM Plex Mono"
+  },
+  "mark": "headphones",
+  "mark_description": "A headphone arch enclosing three equalizer faders, with solid ear pads on either side.",
+  "selection_status": "agent-selected-under-owner-delegation",
+  "selection_basis": "Owner request to complete all remaining branding; preserve existing product identity and controls."
+}
