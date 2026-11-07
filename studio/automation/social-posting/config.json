@@ -167,7 +167,7 @@
     {
       "product": "HasanAra",
       "path": "/home/onnwee/Work/Subcult/hasanara",
-      "remote": "gitea",
+      "remote": "origin",
       "documents": [
         "README.md"
       ]
